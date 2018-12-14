@@ -84,7 +84,7 @@
         <param name="required">The value of the Required attribute.</param>
         <param name="parameterType">The type of the parameter.</param>
         <summary>Adds a parameter to this parameter group, using the given name, type, and attributes.</summary>
-        <returns>Returns the new parameter.</returns>
+        <returns>The new parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a nonexistent condition, which is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>This does not allow conditions, so it should not be called.</summary>
-        <value>Throws an internal error and returns null.</value>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all parameters of this parameter group.</summary>
-        <value>Returns all parameters.</value>
+        <value>All parameters of this parameter group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

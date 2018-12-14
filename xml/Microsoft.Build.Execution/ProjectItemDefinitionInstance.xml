@@ -51,8 +51,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the metadata to retrieve.</param>
-        <summary>Get any metadata in this item definition with the given name.</summary>
-        <returns>Returns any metadata in this item definition with the given name. Returns null if no metadata exists with this name.</returns>
+        <summary>Gets any metadata in this item definition with the given name.</summary>
+        <returns>Any metadata in this item definition with the given name, or <see langword="null" /> if no metadata exists with this name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item type of this item definition.</summary>
-        <value>Returns the item type of this item definition.</value>
+        <value>The item type of this item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the metadata for this item definition. This is a read-only collection.</summary>
-        <value>Returns all the metadata for this item definition. If there is no metadata, returns empty collection.</value>
+        <value>All the metadata for this item definition. If there is no metadata, returns empty collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of pieces of metadata on this item definition.</summary>
-        <value>Returns the number of pieces of metadata on this item definition.</value>
+        <value>The number of pieces of metadata on this item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over the metadata names for this item definition. This is a read-only collection.</summary>
-        <value>Returns an enumerator over the metadata names for this item definition.</value>
+        <value>An enumerator over the metadata names for this item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

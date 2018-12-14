@@ -236,7 +236,7 @@
       <Docs>
         <param name="toolsVersion">The tools version to search for.</param>
         <summary>Determines whether a toolset is defined for the given tools version.</summary>
-        <returns>Returns true if there is a toolset defined for the given tools version; false otherwise.</returns>
+        <returns><see langword="true" /> if there is a toolset defined for the given tools version; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +257,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of projects currently loaded into this collection.</summary>
-        <value>Returns the number of projects currently loaded into this collection.</value>
+        <value>The number of projects currently loaded into this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the default tools version of this project collection.</summary>
-        <value>Returns the default tools version of this project collection, which is always defined.</value>
+        <value>The default tools version of this project collection, which is always defined.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -412,7 +412,7 @@
       <Docs>
         <param name="unescapedString">The string to be converted.</param>
         <summary>Converts special characters in a string to MSBuild escape format.</summary>
-        <returns>Returns the converted string.</returns>
+        <returns>The converted string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -443,8 +443,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the property to be retrieved.</param>
-        <summary>Get any global property on the project collection that has the specified name.</summary>
-        <returns>Returns any global property on the project collection that has the specified name; otherwise returns null.</returns>
+        <summary>Gets any global property on the project collection that has the specified name.</summary>
+        <returns>Any global property on the project collection that has the specified name; otherwise returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,7 +469,7 @@
       <Docs>
         <param name="fullPath">The path to a project file to be matched.</param>
         <summary>Gets all projects whose project path matches the given path.</summary>
-        <returns>Returns all projects whose project path matches the given path.</returns>
+        <returns>All projects whose project path matches the given path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -503,8 +503,8 @@
       </Parameters>
       <Docs>
         <param name="toolsVersion">The tools version to match.</param>
-        <summary>Get the toolset with the specified tools version.</summary>
-        <returns>Returns the toolset with the specified tools version. Returns null if no toolset matching this tools version exists.</returns>
+        <summary>Gets the toolset with the specified tools version.</summary>
+        <returns>The toolset with the specified tools version, or <see langword="null" /> if no toolset matching this tools version exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,7 +525,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the global project collection object.</summary>
-        <value>Returns the global project collection object. This is a singleton project collection with no global properties or loggers. Toolset information is obtained from the configuration file and registry.</value>
+        <value>The global project collection object. This is a singleton project collection with no global properties or loggers. Toolset information is obtained from the configuration file and registry.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -553,7 +553,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the read-only default global properties for all projects in this collection.</summary>
-        <value>Returns the read-only default global properties for all projects in this collection.</value>
+        <value>The read-only default global properties for all projects in this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -586,7 +586,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an object that provides host services to tasks during builds of projects contained in the project collection.</summary>
-        <value>Returns the host services object.</value>
+        <value>The host services object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -627,8 +627,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a property that selects by default whether the targets and tasks of projects in the project collection can be built.</summary>
-        <value>Gets or sets a property that selects by default whether the targets and tasks of projects in this project collection can be built.</value>
+        <summary>Gets or sets a value that indicates whether the targets and tasks of projects in the project collection can be built.</summary>
+        <value><see langword="true" /> if the targets and tasks of projects in this project collection can be built; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -656,7 +656,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the projects currently loaded into this collection.</summary>
-        <value>Returns all the projects currently loaded into this collection.</value>
+        <value>All the projects currently loaded into this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -746,7 +746,7 @@
       <Docs>
         <param name="xmlReader">Xml reader to read project source code from.</param>
         <summary>Evaluates a project from the source code read from the given XML reader. The source code is evaluated with the global properties and tools version of this project collection.</summary>
-        <returns>Returns the new project.</returns>
+        <returns>The new project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -825,7 +825,7 @@
         <param name="xmlReader">Xml reader to read project source code from.</param>
         <param name="toolsVersion">The tools version to use. May be null.</param>
         <summary>Evaluates a project from the source code read from the given XML reader. The source code is evaluated with the global properties of this project collection and the given tools version.</summary>
-        <returns>Returns the new project.</returns>
+        <returns>The new project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -898,7 +898,7 @@
         <param name="globalProperties">The global properties to use. May be null in which case the containing project collection's global properties will be used.</param>
         <param name="toolsVersion">The tools version. May be null.</param>
         <summary>Evaluates a project from the source code read from the given XML reader. The source code is evaluated with the given global properties and tools version.</summary>
-        <returns>Returns the new project.</returns>
+        <returns>The new project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -933,7 +933,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all loggers that projects in this collection can use for their builds.</summary>
-        <value>Returns all loggers that projects in this collection can use for their builds.</value>
+        <value>All loggers that projects in this collection can use for their builds.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -968,8 +968,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a switch that determines whether only critical events such as warnings and errors are logged.</summary>
-        <value>If true, only critical events such as warnings and errors are logged; false otherwise.</value>
+        <summary>Gets or sets a value that indicates whether only critical events such as warnings and errors are logged.</summary>
+        <value><see langword="true" /> if only critical events such as warnings and errors are logged; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1202,7 +1202,7 @@
       <Docs>
         <param name="name">The name of the default global property to remove.</param>
         <summary>Removes a global property from the set of default global properties.</summary>
-        <returns>Returns true if the global property is present before removal; false otherwise.</returns>
+        <returns><see langword="true" /> if the global property is present before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1227,7 +1227,7 @@
       <Docs>
         <param name="toolsVersion">The toolset to be removed.</param>
         <summary>Removes a toolset from the project collection.</summary>
-        <returns>Returns true if the toolset is present before removal; false otherwise.</returns>
+        <returns><see langword="true" /> if the toolset is present before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1288,8 +1288,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag the determines whether ReevaluateIfNecessary is temporarily disabled on projects in this collection. This is useful when the host expects to make a number of reads and writes to projects, and wants to temporarily sacrifice correctness for performance.</summary>
-        <value>Returns a flag the determines whether ReevaluateIfNecessary is temporarily disabled.</value>
+        <summary>Gets or sets a value the indicates whether ReevaluateIfNecessary is temporarily disabled on projects in this collection. This is useful when the host expects to make a number of reads and writes to projects, and wants to temporarily sacrifice correctness for performance.</summary>
+        <value>A flag that determines whether ReevaluateIfNecessary is temporarily disabled.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1318,7 +1318,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the locations used to find the toolsets.</summary>
-        <value>Returns the locations used to find the toolsets.</value>
+        <value>The locations used to find the toolsets.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1342,7 +1342,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the toolsets available to this project collection.</summary>
-        <value>Returns the toolsets available to this project collection.</value>
+        <value>The toolsets available to this project collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1366,7 +1366,7 @@
       <Docs>
         <param name="projectRootElement">The root element of the project to unload.</param>
         <summary>Attempts to remove a project from the collection.</summary>
-        <returns>Returns true if the project was unloaded.</returns>
+        <returns><see langword="true" /> if the project was unloaded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1391,7 +1391,7 @@
       <Docs>
         <param name="escapedString">The string to be converted.</param>
         <summary>Converts escaped characters in a string to MSBuild characters with special meaning.</summary>
-        <returns>Returns the converted string.</returns>
+        <returns>The converted string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1540,7 +1540,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the file version of the assembly file that contains the MSBuild engine.</summary>
-        <value>Returns the file version of the assembly file that contains the MSBuild engine.</value>
+        <value>The file version of the assembly file that contains the MSBuild engine.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

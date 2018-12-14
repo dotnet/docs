@@ -787,8 +787,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag indicating whether the task runs on a 32 bit platform.</summary>
-        <value>Returns the value of the flag.</value>
+        <summary>Gets or sets a value that indicates whether the task runs on a 32-bit platform.</summary>
+        <value><see langword="true" /> if the task runs on a 32-bit platform; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -902,7 +902,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the path to the SDK tools.</summary>
-        <value>Returns the path to the SDK tools.</value>
+        <value>The path to the SDK tools.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

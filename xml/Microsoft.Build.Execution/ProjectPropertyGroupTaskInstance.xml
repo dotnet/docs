@@ -48,7 +48,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Condition attribute of this property group.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child properties in this property group.</summary>
-        <value>Returns all child properties in this property group.</value>
+        <value>All child properties in this property group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

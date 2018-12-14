@@ -45,7 +45,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the property name.</summary>
-        <value>Returns the property name.</value>
+        <value>The property name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the unevaluated property value.</summary>
-        <value>Returns the unevaluated property value. Returns an empty string if the value is uninitialized.</value>
+        <value>The unevaluated property value, or an empty string if the value is uninitialized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

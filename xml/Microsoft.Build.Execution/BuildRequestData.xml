@@ -222,7 +222,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the tools version to use for the build.</summary>
-        <value>Returns the tools version to use for the build.</value>
+        <value>The tools version to use for the build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +248,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets additional flags for this build request.</summary>
-        <value>Returns the build request flags.</value>
+        <value>The build request flags.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,7 +269,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the global properties to use for this build request.</summary>
-        <value>Returns the global properties to use for this build request.</value>
+        <value>The global properties to use for this build request.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the host service for this build.</summary>
-        <value>Returns the host service for this build.</value>
+        <value>The host service for this build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,7 +324,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets of sets the path to the project file for this build.</summary>
-        <value>Returns the path to the project file for this build.</value>
+        <value>The path to the project file for this build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -350,7 +350,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets project instance for this build.</summary>
-        <value>The project instance, which may be null.</value>
+        <value>The project instance, which may be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -378,7 +378,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the list of properties to transfer to an out of process node for the build.</summary>
-        <value>Returns the list of properties.</value>
+        <value>The list of properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +404,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the names of the targets to build.</summary>
-        <value>Returns the names of the targets to build.</value>
+        <value>The names of the targets to build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

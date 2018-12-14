@@ -70,7 +70,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an ILogger instance from the data in this description.</summary>
-        <returns>Returns an ILogger instance from the data in this description.</returns>
+        <returns>An ILogger instance from the data in this description.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -103,7 +103,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the string of logger parameters.</summary>
-        <value>Returns the string of logger parameters.  Returns null if there are no parameters.</value>
+        <value>The string of logger parameters, or <see langword="null" /> if there are no parameters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -105,7 +105,7 @@
       <Docs>
         <param name="obj">The element location to compare to this element location.</param>
         <summary>Override Equals so that identical fields imply equal objects.</summary>
-        <returns>Returns  <see langword="true" /> if the objects are equal; otherwise, returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +157,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get reasonable hash code.</summary>
+        <summary>Gets reasonable hash code.</summary>
         <returns>Returns <see cref="T:System.Int32" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -47,7 +47,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the asynchronous context provided to <see cref="M:Microsoft.Build.Execution.BuildSubmission.ExecuteAsync(Microsoft.Build.Execution.BuildSubmissionCompleteCallback,System.Object)" />, if any.</summary>
-        <value>Returns the asynchronous context provided to <see cref="M:Microsoft.Build.Execution.BuildSubmission.ExecuteAsync(Microsoft.Build.Execution.BuildSubmissionCompleteCallback,System.Object)" />. Returns null if no context is provided.</value>
+        <value>The asynchronous context provided to <see cref="M:Microsoft.Build.Execution.BuildSubmission.ExecuteAsync(Microsoft.Build.Execution.BuildSubmissionCompleteCallback,System.Object)" />, or <see langword="null" /> if no context is provided.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +73,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the build manager this build submission is associated with.</summary>
-        <value>Returns the build manager this build submission is associated with.</value>
+        <value>The build manager this build submission is associated with.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the result of the build.</summary>
-        <value>Returns the result of the build.</value>
+        <value>The result of the build.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -131,7 +131,7 @@
       <Parameters />
       <Docs>
         <summary>Starts a build request synchronously and waits until results are available.</summary>
-        <returns>Returns the build request.</returns>
+        <returns>The build request.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The request has already been started or is already complete.</exception>
       </Docs>
@@ -185,7 +185,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether this build submission is complete.</summary>
-        <value>Returns true if this build submission is complete; false otherwise.</value>
+        <value><see langword="true" /> if this build submission is complete; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +211,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an ID uniquely identifying this build submission.</summary>
-        <value>Returns an ID uniquely identifying this build submission.</value>
+        <value>An ID uniquely identifying this build submission.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

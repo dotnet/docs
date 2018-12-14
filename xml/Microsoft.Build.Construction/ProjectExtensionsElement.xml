@@ -42,7 +42,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a nonexistent condition, which is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the arbitrary XML content of this project extension.</summary>
-        <value>Returns the arbitrary XML content of this project extension.</value>
+        <value>The arbitrary XML content of this project extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +114,7 @@
       <Docs>
         <param name="name">The name of the sub-element.</param>
         <summary>Gets or sets the content of the first sub-element with the given <paramref name="name" /> parameter.</summary>
-        <value>Returns the contents of the element.</value>
+        <value>The contents of the element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

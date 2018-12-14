@@ -57,7 +57,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Condition attribute of this target.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the Condition attribute.</summary>
-        <value>Returns the Condition attribute location.</value>
+        <value>The Condition attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the full path to the file from which this task originated.</summary>
-        <value>Returns the full path to the file from which this task originated. Returns an empty string if the task originated in a project that was not loaded and has never been given a path.</value>
+        <value>The full path to the file from which this task originated, or an empty string if the task originated in a project that was not loaded and has never been given a path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the element itself.</summary>
-        <value>Returns the element location.</value>
+        <value>The element location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

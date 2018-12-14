@@ -67,7 +67,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the separator to use in delineating individual values of this string list property</summary>
-        <value>Returns the separator.</value>
+        <value>The separator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -103,7 +103,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the UI rendering separator. This property is deprecated.</summary>
-        <value>Returns the UI rendering separator. This property is deprecated.</value>
+        <value>The UI rendering separator. This property is deprecated.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +132,7 @@
       </ReturnValue>
       <Docs>
         <summary>Qualifies this string property to give it a more specific classification.</summary>
-        <value>Returns the property subtype.</value>
+        <value>The property subtype.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

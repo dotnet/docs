@@ -121,7 +121,7 @@
         <param name="senderName">The source of the event.</param>
         <param name="projectFile">The project file name.</param>
         <param name="succeeded">
-          <see langword="true" /> to indicate that the project built successfully; otherwise false.</param>
+          <see langword="true" /> to indicate that the project built successfully; otherwise, <see langword="false" />.</param>
         <param name="eventTimestamp">The date and time the event was created.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.ExternalProjectFinishedEventArgs" /> class, with the specified values.</summary>
         <remarks>To be added.</remarks>

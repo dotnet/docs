@@ -95,7 +95,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.Category" />.</summary>
-        <value>Returns the description of this category.</value>
+        <value>The description of this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -131,7 +131,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a name that can be used by a prospective UI client to display this <see cref="T:Microsoft.Build.Framework.XamlTypes.Category" />.</summary>
-        <value>Returns the display name of this category.</value>
+        <value>The display name of this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -227,7 +227,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.Category" />.</summary>
-        <value>Returns the name of this category.</value>
+        <value>The name of this category.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

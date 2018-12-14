@@ -48,7 +48,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the unevaluated Condition attribute of this property.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +90,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the element itself.</summary>
-        <value>Returns the element location.</value>
+        <value>The element location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +119,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of this property.</summary>
-        <value>Returns the name of this property.</value>
+        <value>The name of this property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated value of this property.</summary>
-        <value>Returns the unevaluated value of this property.</value>
+        <value>The unevaluated value of this property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

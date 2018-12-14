@@ -93,7 +93,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a flag that determines whether default content type is available.</summary>
-        <value>Returns true if default content type is available.</value>
+        <value><see langword="true" /> if default content type is available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +125,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IContentType.DisplayName.</summary>
-        <value>Returns the serialized display name.</value>
+        <value>The serialized display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +171,7 @@
       <Docs>
         <param name="metadataName">The name of the metadata whose value is to be retrieved.</param>
         <summary>Gets the value of the given metadata name.</summary>
-        <returns>Returns the value of the given metadata name. Returns null if the name isn't found in the metadata.</returns>
+        <returns>The value of the given metadata name, or <see langword="null" /> if the name isn't found in the metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +206,7 @@
       <Docs>
         <param name="type">The type of static data to retrieve.</param>
         <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
-        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
+        <returns>An enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
-        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
+        <returns>An enumerator over all types of static data for the data-driven features that this node contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IContentType.DefaultContentTypeForItemType</summary>
-        <value>Returns the serialized default content type for the item type.</value>
+        <value>The serialized default content type for the item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,7 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IContentType.ItemType</summary>
-        <value>Returns the serialized item type.</value>
+        <value>The serialized item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,7 +329,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes content type's metadata.</summary>
-        <value>Returns the serialized metadata.</value>
+        <value>The serialized metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -365,7 +365,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IContentType.Name.</summary>
-        <value>Returns the serialized name.</value>
+        <value>The serialized name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

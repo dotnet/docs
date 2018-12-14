@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a <see href="https://msdn.microsoft.com/library/350f6fc2-86b3-45f2-a31e-ece0e6bd4dca">Target Element (MSBuild)</see> in an MSBuild project.</summary>
+    <summary>Represents a <see href="/visualstudio/msbuild/target-element-msbuild">Target element</see> in an MSBuild project.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       <Parameters />
       <Docs>
         <summary>Adds an item group after the last child.</summary>
-        <returns>Returns the added item group.</returns>
+        <returns>The added item group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -70,7 +70,7 @@
       <Parameters />
       <Docs>
         <summary>Adds a property group after the last child.</summary>
-        <returns>Returns the added property group.</returns>
+        <returns>The added property group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -102,7 +102,7 @@
       <Docs>
         <param name="taskName">The name of the task to add.</param>
         <summary>Adds a task to this target after any existing task.</summary>
-        <returns>Returns the added task.</returns>
+        <returns>The added task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -135,7 +135,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <c>AfterTargets</c> attribute value.</summary>
-        <value>Returns the <c>AfterTargets</c> attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The <c>AfterTargets</c> attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -162,8 +162,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the AfterTargets attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the AfterTargets attribute.</summary>
+        <value>The location of the AfterTargets attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,7 +189,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the BeforeTargets attribute value.</summary>
-        <value>Returns the BeforeTargets attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The BeforeTargets attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -216,8 +216,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the BeforeTargets attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the BeforeTargets attribute.</summary>
+        <value>The location of the BeforeTargets attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,8 +242,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the DependsOnTargets attribute value.  Returns empty string if it is not present. Removes the attribute if the value to set is empty.</summary>
-        <value>Returns the DependsOnTargets attribute value. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets or sets the DependsOnTargets attribute value. Returns empty string if it is not present. Removes the attribute if the value to set is empty.</summary>
+        <value>The DependsOnTargets attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -270,8 +270,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the DependsOnTargets attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the DependsOnTargets attribute.</summary>
+        <value>The location of the DependsOnTargets attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,8 +296,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Inputs attribute value.  Returns empty string if it is not present. Removes the attribute if the value to set is empty.</summary>
-        <value>Returns the Inputs attribute value. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets or sets the Inputs attribute value. Returns empty string if it is not present. Removes the attribute if the value to set is empty.</summary>
+        <value>The Inputs attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -324,8 +324,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the Inputs attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the Inputs attribute.</summary>
+        <value>The location of the Inputs attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,7 +346,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child item groups</summary>
-        <value>Returns all child item groups.</value>
+        <value>All child item groups.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,7 +372,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the TrimDuplicateOutputs attribute value.</summary>
-        <value>Returns the TrimDuplicateOutputs attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The TrimDuplicateOutputs attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -399,8 +399,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the TrimDuplicateOutputs attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the TrimDuplicateOutputs attribute.</summary>
+        <value>The location of the TrimDuplicateOutputs attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -446,8 +446,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the Name attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the Name attribute.</summary>
+        <value>The location of the Name attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,8 +467,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOnErrorElement&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get all child <see href="https://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc">OnError Element (MSBuild)</see>.</summary>
-        <value>Returns all child OnError elements.</value>
+        <summary>Gets all child <see href="/visualstudio/msbuild/onerror-element-msbuild">OnError elements</see>.</summary>
+        <value>All child OnError elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -493,13 +493,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Outputs attribute value.  Returns empty string if it is not present. Removes the attribute if the value to set is empty.</summary>
-        <value>Returns the Outputs attribute value. Returns an empty string if the attribute is not present.</value>
+        <summary>Gets or sets the Outputs attribute value. Returns an empty string if it is not present. Removes the attribute if the value to set is empty.</summary>
+        <value>The Outputs attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Removes the Outputs attribute if the value to set is set to null or an empty string.  
+ Removes the Outputs attribute if the value is set to null or an empty string.  
   
  ]]></format>
         </remarks>
@@ -521,8 +521,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the Outputs attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the Outputs attribute.</summary>
+        <value>The location of the Outputs attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,7 +543,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child property groups.</summary>
-        <value>Returns all child property groups.</value>
+        <value>All child property groups.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -569,7 +569,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Returns attribute value.</summary>
-        <value>Returns the returns attribute value; null if the attribute is not present</value>
+        <value>The Returns attribute value, or <see langword="null" /> if the attribute is not present</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -596,8 +596,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the Returns attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the Returns attribute.</summary>
+        <value>The location of the Returns attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,7 +618,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child tasks.</summary>
-        <value>Returns all child tasks.</value>
+        <value>All child tasks.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

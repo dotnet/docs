@@ -48,7 +48,7 @@
         <param name="key">The key used to retrieve the object.</param>
         <param name="lifetime">The lifetime of the object.</param>
         <summary>Retrieves a previously registered task object stored with the specified key.</summary>
-        <returns>Returns a registered object, or null if there is no object registered under that key or if the object has been discarded through early collection.</returns>
+        <returns>A registered object, or <see langword="null" /> if there is no object registered under that key or if the object has been discarded through early collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
         <param name="key">The key used to retrieve the object.</param>
         <param name="lifetime">The lifetime of the object.</param>
         <summary>Unregisters a previously registered task object.</summary>
-        <returns>Returns a previously registered object, or null if there is no object registered under that key or if the object has been discarded through early collection.</returns>
+        <returns>A previously registered object, or <see langword="null" /> if there is no object registered under that key or if the object has been discarded through early collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

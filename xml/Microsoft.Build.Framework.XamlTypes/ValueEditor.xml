@@ -90,7 +90,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the UI display name for the editor.</summary>
-        <value>Returns the display name.</value>
+        <value>The display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,7 +119,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets of sets the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.ValueEditor" />.</summary>
-        <value>Returns the name of the editor.</value>
+        <value>The name of the editor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -176,7 +176,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets additional attributes of the editor that are not generic enough to be made properties on this class.</summary>
-        <value>Returns the additional attributes.</value>
+        <value>The additional attributes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

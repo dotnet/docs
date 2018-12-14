@@ -35,7 +35,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project root element which was just changed.</summary>
-        <value>Never null.</value>
+        <value>The project root element which was just changed. Never <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +56,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the reason for the change.</summary>
-        <value>May be null.</value>
+        <value>The reason for the change. May be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

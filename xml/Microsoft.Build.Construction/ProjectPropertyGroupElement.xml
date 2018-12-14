@@ -46,7 +46,7 @@
         <param name="name">The property name.</param>
         <param name="unevaluatedValue">The property value.</param>
         <summary>Appends a new property to the property group.</summary>
-        <returns>Returns the new property.</returns>
+        <returns>The new property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -74,7 +74,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child properties.</summary>
-        <value>Returns all child properties.</value>
+        <value>All child properties.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +95,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child properties, starting with the last child.</summary>
-        <value>Returns all child properties, starting with the last child.</value>
+        <value>All child properties, starting with the last child.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
         <param name="name">The name of the property to be updated.</param>
         <param name="unevaluatedValue">The new property value.</param>
         <summary>Updates the value of the given property in the property group.</summary>
-        <returns>Returns the updated property.</returns>
+        <returns>The updated property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

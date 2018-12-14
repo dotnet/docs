@@ -79,7 +79,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the evaluated metadata value.</summary>
-        <value>Returns the evaluated metadata value, which is never null.</value>
+        <value>The evaluated metadata value, which is never <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -107,7 +107,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines if the metadata originated from an imported file.</summary>
-        <value>Returns true if the metadata originated from an imported file; false otherwise.</value>
+        <value><see langword="true" /> if the metadata originated from an imported file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +128,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item type of the containing item definition or item.</summary>
-        <value>Returns the item type of the containing item definition or item.</value>
+        <value>The item type of the containing item definition or item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,7 +149,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the element.</summary>
-        <value>Returns the element location.</value>
+        <value>The element location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +175,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the metadata.</summary>
-        <value>Returns the name of the metadata.</value>
+        <value>The name of the metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +204,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the last metadata (from an item definition or item) that was overridden by this metadata during evaluation.</summary>
-        <value>Returns the last metadata (from an item definition or item) whose value was overridden by this metadata during evaluation. Returns null if the metadata has not been overridden.</value>
+        <value>The last metadata (from an item definition or item) whose value was overridden by this metadata during evaluation, or <see langword="null" /> if the metadata has not been overridden.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -239,7 +239,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project that contains this metadata.</summary>
-        <value>Returns the project that contains this metadata, which is never null.</value>
+        <value>The project that contains this metadata, which is never <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +266,7 @@
       <Docs>
         <param name="other">The project metadata to be compared to.</param>
         <summary>Compares this project metadata with the given project metadata for equality.</summary>
-        <returns>Returns true if the project metadata are equal; false otherwise.</returns>
+        <returns><see langword="true" /> if the project metadata are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the unevaluated metadata value.</summary>
-        <value>Returns the unevaluated metadata value.</value>
+        <value>The unevaluated metadata value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -344,7 +344,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the associated project metadata element.</summary>
-        <value>Returns the associated project metadata element, which can never be null.</value>
+        <value>The associated project metadata element, which can never be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

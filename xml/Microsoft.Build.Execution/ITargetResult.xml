@@ -32,7 +32,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the exception generated when the target was built.</summary>
-        <value>Returns the exception generated when the target was built. Return null if no exception occurred.</value>
+        <value>The exception generated when the target was built, or <see langword="null" /> if no exception occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,7 +53,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the set of build items output by the target.</summary>
-        <value>Returns the set of build items output by the target.</value>
+        <value>The set of build items output by the target.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -81,7 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the result code returned when the target was built.</summary>
-        <value>Returns the result code returned when the target was built.</value>
+        <value>The result code returned when the target was built.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

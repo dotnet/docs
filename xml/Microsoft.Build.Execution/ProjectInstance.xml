@@ -306,7 +306,7 @@
         <param name="itemType">The item type of the item to be added.</param>
         <param name="evaluatedInclude">The evaluated Include attribute of the item.</param>
         <summary>Adds an item with no metadata to the project.</summary>
-        <returns>Returns the new item.</returns>
+        <returns>The new item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -385,7 +385,7 @@
       <Parameters />
       <Docs>
         <summary>Builds the default targets of the project with loggers of the project collection.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,7 +415,7 @@
       <Docs>
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <summary>Builds the default targets of the project with the given loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -454,7 +454,7 @@
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <summary>Builds the default targets of the project with the given loggers and remote loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -493,7 +493,7 @@
         <param name="target">The target to build. May be null.</param>
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <summary>Builds the given target of the project with the given loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -532,7 +532,7 @@
         <param name="targets">The targets to build. May be null.</param>
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <summary>Builds the given targets of the project with the given loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -568,7 +568,7 @@
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <summary>Builds the given target of the project with the given loggers and remote loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -609,7 +609,7 @@
         <param name="loggers">Enumerated list of loggers to use for building targets.</param>
         <param name="targetOutputs">Outputs of target builds.</param>
         <summary>Build a list of targets with specified loggers. Targets may be null. Loggers may be null.</summary>
-        <returns>Returns true on success, false on failure.</returns>
+        <returns><see langword="true" /> on success, false on failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -645,7 +645,7 @@
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <summary>Builds the given targets of the project with the given loggers and remote loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -688,7 +688,7 @@
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <param name="targetOutputs">The target outputs.</param>
         <summary>Builds the given targets with the given target outputs and with the given loggers and remote loggers.</summary>
-        <returns>Returns true if the build succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -751,7 +751,7 @@
       <Docs>
         <param name="isImmutable">Flag indicating clone mutability.</param>
         <summary>Creates an independent, deep clone of this project and everything in it, with specified mutability. Useful for compiling a single file or for keeping build results between builds.</summary>
-        <returns>Returns an independent, deep clone of this project, with specified mutability.</returns>
+        <returns>An independent, deep clone of this project, with specified mutability.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,7 +780,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the list of default targets for this project.</summary>
-        <value>Returns the list of default targets for this project.</value>
+        <value>The list of default targets for this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -819,7 +819,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project root directory. Used for evaluation of relative paths and setting the current directory during build. Is never null: projects not loaded from disk use the current directory from the time the build started.</summary>
-        <value>Returns the project root directory, which is never null. Projects not loaded from disk return the current directory at the time the build was started.</value>
+        <value>The project root directory, which is never null. Projects not loaded from disk return the current directory at the time the build was started.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -847,7 +847,7 @@
       <Docs>
         <param name="condition">The string to be expanded.</param>
         <summary>Evaluates the provided string as a condition by expanding items and properties, using the current items and properties available, then doing a logical evaluation.</summary>
-        <returns>Returns true if the string evaluates to true; false otherwise.</returns>
+        <returns><see langword="true" /> if the string evaluates to true; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -884,7 +884,7 @@
       <Docs>
         <param name="unexpandedValue">The string to be expanded.</param>
         <summary>Evaluates the provided string by expanding items and properties, using the current items and properties available.</summary>
-        <returns>Returns the expanded string value.</returns>
+        <returns>The expanded string value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -919,7 +919,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the full path to the project file. Used for logging.</summary>
-        <value>Returns the full path to the project file. Returns null if the project was never named.</value>
+        <value>The full path to the project file, or <see langword="null" /> if the project was never named.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -953,7 +953,7 @@
       <Docs>
         <param name="item">The item definition to be evaluated and escaped.</param>
         <summary>Gets the evaluated, escaped value of the Include attribute of the provided item definition.</summary>
-        <returns>Returns the evaluated, escaped value of the Include attribute of the provided item definition.</returns>
+        <returns>The evaluated, escaped value of the Include attribute of the provided item definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -978,7 +978,7 @@
       <Docs>
         <param name="item">The item to be evaluated and escaped.</param>
         <summary>Gets the evaluated, escaped value of the Include attribute of the provided item.</summary>
-        <returns>Returns the evaluated, escaped value of the Include attribute of the provided item.</returns>
+        <returns>The evaluated, escaped value of the Include attribute of the provided item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1006,7 +1006,7 @@
       <Docs>
         <param name="itemType">The item type of the items to be retrieved.</param>
         <summary>Gets all the items in this project of the specified type. This is a read-only list.</summary>
-        <returns>Returns all the items in this project of the specified type. Returns an empty list if there are none.</returns>
+        <returns>All the items in this project of the specified type. Returns an empty list if there are none.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1033,7 +1033,7 @@
         <param name="itemType">The item type of the items to be retrieved.</param>
         <param name="evaluatedInclude">The evaluated include value of the items to be retrieved</param>
         <summary>Gets all the items in this project of the specified type and evaluated include value. This is a read-only list.</summary>
-        <returns>Returns all the items in this project of the specified type and evaluated include value. Returns an empty collection if there are none.</returns>
+        <returns>All the items in this project of the specified type and evaluated include value. Returns an empty collection if there are none.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1067,7 +1067,7 @@
       <Docs>
         <param name="metadatum">The metadatum to be escaped.</param>
         <summary>Gets the escaped value of the provided metadatum.</summary>
-        <returns>Returns the escaped value of the provided metadatum.</returns>
+        <returns>The escaped value of the provided metadatum.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1094,7 +1094,7 @@
         <param name="item">The item definition to provide the metadatum value.</param>
         <param name="name">The name of the metadatum.</param>
         <summary>Gets the escaped value of the metadatum with the provided name of the provided item definition.</summary>
-        <returns>Returns the escaped value of the metadatum with the provided name of the provided item definition.</returns>
+        <returns>The escaped value of the metadatum with the provided name of the provided item definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1121,7 +1121,7 @@
         <param name="item">The item to provide the metadatum value.</param>
         <param name="name">The name of the metadatum.</param>
         <summary>Gets the escaped value of the metadatum with the provided name on the provided item.</summary>
-        <returns>Returns the escaped value of the metadatum with the provided name on the provided item.</returns>
+        <returns>The escaped value of the metadatum with the provided name on the provided item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1153,8 +1153,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the property to retrieve.</param>
-        <summary>Get the property with the given name.</summary>
-        <returns>Returns the property with the given name. Returns null if no property exists with that name.</returns>
+        <summary>Gets the property with the given name.</summary>
+        <returns>The property with the given name, or <see langword="null" /> if no property exists with that name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1178,8 +1178,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the property whose value is to be retrieved.</param>
-        <summary>Get the value of the property with the given name.</summary>
-        <returns>Returns the value of the property with the given name. Returns an empty string if no property exists with that name. The value returned has no escaped character sequences.</returns>
+        <summary>Gets the value of the property with the given name.</summary>
+        <returns>The value of the property with the given name, or an empty string if no property exists with that name. The value returned has no escaped character sequences.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1210,8 +1210,8 @@
       </Parameters>
       <Docs>
         <param name="property">The property to be escaped.</param>
-        <summary>Get the escaped value of the provided property.</summary>
-        <returns>Returns the escaped value of the provided property.</returns>
+        <summary>Gets the escaped value of the provided property.</summary>
+        <returns>The escaped value of the provided property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1237,7 +1237,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the dictionary of global properties this project was evaluated with, if any.</summary>
-        <value>Returns the dictionary of global properties this project was evaluated with.</value>
+        <value>The dictionary of global properties this project was evaluated with.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1277,7 +1277,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the list of initial targets for the project and all its imports, depth-first. These targets are built before any other targets.</summary>
-        <value>Returns the list of initial targets for the project and all its imports, depth-first.</value>
+        <value>The list of initial targets for the project and all its imports, depth-first.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1297,8 +1297,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a flag indicating that the project instance is immutable. This flag is set permanently when the instance is created.</summary>
-        <value>Returns the flag.</value>
+        <summary>Gets a value that indicates whether the project instance is immutable. This flag is set permanently when the instance is created.</summary>
+        <value><see langword="true" /> if the project instance is immutable; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1327,7 +1327,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a read-only dictionary of the item definitions in the project, keyed by item type.</summary>
-        <value>Returns a read-only dictionary of the item definitions in the project, keyed by item type.</value>
+        <value>A read-only dictionary of the item definitions in the project, keyed by item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1353,7 +1353,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all items in this project.</summary>
-        <value>Returns all items in this project.</value>
+        <value>All items in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1379,7 +1379,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all item types in this project.</summary>
-        <value>Returns all item types in this project.</value>
+        <value>All item types in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1400,7 +1400,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the originating file itself. Never null.</summary>
-        <value>Returns the location of the originating file. Never returns null.</value>
+        <value>The location of the originating file. Never returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1426,7 +1426,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all properties in this project.</summary>
-        <value>Returns all properties in this project.</value>
+        <value>All properties in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1451,7 +1451,7 @@
       <Docs>
         <param name="item">The item to be removed.</param>
         <summary>Removes an item from the project, if present. Returns true if it was present, false otherwise.</summary>
-        <returns>Returns true if the item was present before removal; false otherwise.</returns>
+        <returns><see langword="true" /> if the item was present before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1476,7 +1476,7 @@
       <Docs>
         <param name="name">The name of the property to be removed.</param>
         <summary>Removes a property with the given name. Returns true if the property had a value (possibly empty string), otherwise false.</summary>
-        <returns>Returns true if the property had a value (possibly an empty string) before removal; false otherwise.</returns>
+        <returns><see langword="true" /> if the property had a value (possibly an empty string) before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1503,7 +1503,7 @@
         <param name="name">The name of the property to add.</param>
         <param name="evaluatedValue">The evaluated value of the property to add.</param>
         <summary>Add a property with the specified name and value to the project. Overwrites any property with the same name already in the property collection.</summary>
-        <returns>Returns the new property.</returns>
+        <returns>The new property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1539,7 +1539,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all targets in this project. This collection is read-only.</summary>
-        <value>Returns an enumerator over all targets in this project.</value>
+        <value>An enumerator over all targets in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1560,7 +1560,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the tools version this project was evaluated with, if any.</summary>
-        <value>Returns the tools version this project was evaluated with, if any.</value>
+        <value>The tools version this project was evaluated with, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1589,7 +1589,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a ProjectRootElement from the contents of this ProjectInstance.</summary>
-        <returns>Returns a ProjectRootElement which represents this instance.</returns>
+        <returns>A ProjectRootElement which represents this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

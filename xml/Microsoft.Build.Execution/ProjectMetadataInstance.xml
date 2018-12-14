@@ -55,7 +55,7 @@
       <Parameters />
       <Docs>
         <summary>Copies the metadata to create a deep clone.</summary>
-        <returns>Returns the new metadata.</returns>
+        <returns>The new metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the evaluated value of the metadata.</summary>
-        <value>Returns the evaluated value of the metadata, which is never null.</value>
+        <value>The evaluated value of the metadata, which is never <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the metadata.</summary>
-        <value>Returns the name of the metadata.</value>
+        <value>The name of the metadata.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -147,7 +147,7 @@
       <Docs>
         <param name="other">The project metadata to be compared to.</param>
         <summary>Compares this project metadata with the given project metadata for equality.</summary>
-        <returns>Returns true if the project metadata are equal; false otherwise.</returns>
+        <returns><see langword="true" /> if the project metadata are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +169,7 @@
       <Parameters />
       <Docs>
         <summary>Gets a string representation of this metadata.</summary>
-        <returns>Returns a string representation of this metadata.</returns>
+        <returns>A string representation of this metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

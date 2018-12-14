@@ -44,7 +44,7 @@
       <Docs>
         <param name="project">The project to import.</param>
         <summary>Adds a new import after the last import in this import group.</summary>
-        <returns>Returns the new import.</returns>
+        <returns>The new import.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +72,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all properties in this project import.</summary>
-        <value>Returns all properties in this project import.</value>
+        <value>All properties in this project import.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

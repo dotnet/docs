@@ -77,7 +77,7 @@
         <param name="targetName">The name of the target.</param>
         <param name="taskName">The task name associated with the host service.</param>
         <summary>Gets the host service for the given task where the task appears within a target and project with the given names.</summary>
-        <returns>Returns the host service for the given task where the task appears within a target and project with the given names. If no host service exists, returns null.</returns>
+        <returns>The host service for the given task where the task appears within a target and project with the given names. If no host service exists, returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
       <Docs>
         <param name="projectFile">The project file associated with the node.</param>
         <summary>Gets the node affinity for the given project file.</summary>
-        <returns>Returns the node affinity for the given project file.</returns>
+        <returns>The node affinity for the given project file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

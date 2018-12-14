@@ -46,7 +46,7 @@
         <param name="name">Name of the metadata.</param>
         <param name="unevaluatedValue">Metadata to be added.</param>
         <summary>Adds metadata to this item definition. Appends the metadata to any existing metadata.</summary>
-        <returns>Returns the modified metadata.</returns>
+        <returns>The modified metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +67,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item definition element name.</summary>
-        <value>Returns the item definition element name.</value>
+        <value>The item definition element name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,7 +88,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child metadata definitions.</summary>
-        <value>Returns all child metadata definitions.</value>
+        <value>All child metadata definitions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

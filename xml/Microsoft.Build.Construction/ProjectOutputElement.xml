@@ -40,7 +40,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether this output element represents an output item, as opposed to an output property.</summary>
-        <value>Returns true if this output element represents an output item; false otherwise.</value>
+        <value><see langword="true" /> if this output element represents an output item; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +61,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether this output element represents an output property, as opposed to an output item.</summary>
-        <value>Returns true if this output element represents an output property; false otherwise.</value>
+        <value><see langword="true" /> if this output element represents an output property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the ItemType attribute value.</summary>
-        <value>Gets or sets the ItemType attribute value  Returns an empty string if the attribute is not present.</value>
+        <value>The ItemType attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -141,7 +141,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the PropertyName attribute value.</summary>
-        <value>Gets or sets the PropertyName attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The PropertyName attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -198,7 +198,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the TaskParameter attributevalue.</summary>
-        <value>Gets or sets the TaskParameter attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The TaskParameter attribute value, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

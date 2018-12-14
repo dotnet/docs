@@ -47,7 +47,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a nonexistent condition, which is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets any <see href="https://msdn.microsoft.com/library/de3997e9-1595-4263-a886-95530b56a319">Otherwise Element (MSBuild)</see> child.</summary>
-        <value>Returns any Otherwise child. Returns null if no Otherwise child exists.</value>
+        <value>Any Otherwise child, or <see langword="null" /> if no Otherwise child exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the <see href="https://msdn.microsoft.com/library/eb27de6f-4e71-4e87-87e2-d93f7bf5899c">When Element (MSBuild)</see> children.</summary>
-        <value>Returns all the When children. There is always at least one When child.</value>
+        <value>All the When children. There is always at least one When child.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

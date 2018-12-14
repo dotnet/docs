@@ -48,7 +48,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated Condition attribute value.</summary>
-        <value>Returns the unevaluated Condition attribute value.</value>
+        <value>The unevaluated Condition attribute value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -74,7 +74,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the condition attribute if any</summary>
-        <value>Returns the location of the condition attribute.</value>
+        <value>The location of the condition attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated Exclude attribute value.</summary>
-        <value>Returns the unevaluated Exclude attribute value.</value>
+        <value>The unevaluated Exclude attribute value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +129,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the exclude attribute, if any</summary>
-        <value>Returns the location of the exclude attribute.</value>
+        <value>The location of the exclude attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,7 +158,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated Include attribute value.</summary>
-        <value>Returns the unevaluated Include attribute value.</value>
+        <value>The unevaluated Include attribute value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,7 +184,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the include attribute, if any</summary>
-        <value>Returns the location of the include attribute.</value>
+        <value>The location of the include attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,8 +212,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the item type, for example "Compile".</summary>
-        <value>Returns the item type, for example "Compile".</value>
+        <summary>Gets the item type, for example "Compile".</summary>
+        <value>The item type, for example "Compile".</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated KeepDuplicates value.</summary>
-        <value>Returns the KeepDuplicates value.</value>
+        <value>The KeepDuplicates value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,7 +265,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the location of the KeepDuplicates attribute, if any.</summary>
-        <value>Returns the location of the KeepDuplicates attribute.</value>
+        <value>The location of the KeepDuplicates attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +291,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated KeepMetadata attribute value</summary>
-        <value>Returns the KeepMetadata value.</value>
+        <value>The KeepMetadata value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,7 +317,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the KeepMetadata attribute, if any.</summary>
-        <value>Returns the location of KeepMetadata.</value>
+        <value>The location of KeepMetadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the element</summary>
-        <value>Returns the element's location.</value>
+        <value>The element's location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +369,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an ordered collection of unevaluated metadata on the item.</summary>
-        <value>Returns an ordered collection of unevaluated metadata on the item.</value>
+        <value>An ordered collection of unevaluated metadata on the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -398,7 +398,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated Remove attribute value.</summary>
-        <value>Returns the unevaluated Remove attribute value.</value>
+        <value>The unevaluated Remove attribute value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,7 +424,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the remove attribute, if any</summary>
-        <value>Returns the location of the remove attribute.</value>
+        <value>The location of the remove attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -450,7 +450,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated RemoveMetadata value.</summary>
-        <value>Returns the RemoveMetadata value.</value>
+        <value>The RemoveMetadata value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -476,7 +476,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the RemoveMetadata attribute, if any.</summary>
-        <value>Returns the RemoveMetadata location.</value>
+        <value>The RemoveMetadata location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

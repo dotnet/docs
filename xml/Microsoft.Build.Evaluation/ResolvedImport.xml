@@ -40,7 +40,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets one of the imported projects.</summary>
-        <value>Returns a <see cref="T:Microsoft.Build.Construction.ProjectRootElement" /> representing the imported project.</value>
+        <value>The imported project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the element doing the import.</summary>
-        <value>Returns the <see cref="T:Microsoft.Build.Construction.ProjectImportElement" /> representing the element doing the import.</value>
+        <value>The element doing the import.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

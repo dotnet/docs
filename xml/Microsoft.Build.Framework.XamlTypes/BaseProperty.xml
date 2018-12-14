@@ -76,7 +76,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a list of arguments for this property.</summary>
-        <value>Returns the list of arguments for this property.</value>
+        <value>The list of arguments for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -133,7 +133,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the category to which this property belongs.</summary>
-        <value>Returns the name of the category to which this property belongs.</value>
+        <value>The name of the category to which this property belongs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -171,7 +171,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the <see cref="T:Microsoft.Build.Framework.XamlTypes.Rule" /> that contains this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
-        <value>Returns the rule that contains this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <value>The rule that contains this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +200,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the data source where the current value of this property is stored.</summary>
-        <value>Returns the data source where the current value of this property is stored.</value>
+        <value>The data source where the current value of this property is stored.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -241,7 +241,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the default value for this property.</summary>
-        <value>Returns the default value for this property.</value>
+        <value>The default value for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,7 +280,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> for use by a prospective UI client.</summary>
-        <value>Returns the description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <value>The description of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -316,7 +316,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a name that can be used by a prospective UI client to display this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
-        <value>Returns the display name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <value>The display name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -376,7 +376,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the keyword that is used to open the help page for this property.</summary>
-        <value>Returns the keyword that is used to open the help page for this property.</value>
+        <value>The keyword that is used to open the help page for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -414,7 +414,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Help context to use when the user presses F1.</summary>
-        <value>Returns the Help context to use when the user presses F1.</value>
+        <value>The Help context to use when the user presses F1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -455,7 +455,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Help file to use when the user presses F1.</summary>
-        <value>Returns the Help file to use when the user presses F1.</value>
+        <value>The Help file to use when the user presses F1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -496,7 +496,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the URL of the Help page for this property. The page is opened when the user presses F1.</summary>
-        <value>Returns the URL of the Help page for this property.</value>
+        <value>The URL of the Help page for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -534,7 +534,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a hint to the command-line constructor whether to include this property in the command line.</summary>
-        <value>Returns the hint to the command-line constructor.</value>
+        <value>The hint to the command-line constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -569,8 +569,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that indicates whether this property is required to have a value set.</summary>
-        <value>Returns a flag that indicates whether this property is required to have a value set.</value>
+        <summary>Gets or sets a value that indicates whether this property is required to have a value set.</summary>
+        <value><see langword="true" /> if this property is required to have a value set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +599,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets additional attributes of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
-        <value>Returns additional attributes of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <value>Additional attributes of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -636,8 +636,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a switch that specifies whether this property allows multiple values to be supplied/selected simultaneously.</summary>
-        <value>Returns a switch that specifies whether this property allows multiple values to be supplied/selected simultaneously. If true, multiple values may be selected.</value>
+        <summary>Gets or sets a value that indicates whether this property allows multiple values to be supplied/selected simultaneously.</summary>
+        <value><see langword="true" /> if this property allows multiple values to be supplied/selected simultaneously; otherwise, <see langword="false" />. If <see langword="true" />, multiple values may be selected.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -666,7 +666,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</summary>
-        <value>Returns the name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
+        <value>The name of this <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -701,8 +701,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag that indicates whether this property is read-only.</summary>
-        <value>Returns <see langword="true" /> if this is a read-only property; otherwise, <see langword="false" />.</value>
+        <summary>Gets or sets a value that indicates whether this property is read-only.</summary>
+        <value><see langword="true" /> if this is a read-only property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -738,7 +738,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the token used to separate a switch from its value.</summary>
-        <value>Returns the token used to separate a switch from its value.</value>
+        <value>The token used to separate a switch from its value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -776,7 +776,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the subcategory this property belongs to.</summary>
-        <value>Returns the subcategory this property belongs to.</value>
+        <value>The subcategory this property belongs to.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -805,7 +805,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the switch representation of this property when the property represents a tool parameter.</summary>
-        <value>Returns the switch representation of this property.</value>
+        <value>The switch representation of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -841,7 +841,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the prefix for the switch representation of this property when this property represents a tool parameter.</summary>
-        <value>Returns the prefix for the switch representation of this property.</value>
+        <value>The prefix for the switch representation of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -879,7 +879,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the list of value editors for this property.</summary>
-        <value>Returns the list of value editors for this property.</value>
+        <value>The list of value editors for this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -915,7 +915,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a hint to the UI client that tells it whether to display this property.</summary>
-        <value>Returns a hint to the UI client that tells it whether to display this property.</value>
+        <value>A hint to the UI client that tells it whether to display this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

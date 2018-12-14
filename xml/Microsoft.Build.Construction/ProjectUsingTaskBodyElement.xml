@@ -39,8 +39,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets null because the Condition attribute is nonexistent for this element and a nonexistent condition is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <summary>Always returns <see langword="null" /> because the Condition attribute is nonexistent for this element and a nonexistent condition is implicitly true.</summary>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +61,7 @@
       </ReturnValue>
       <Docs>
         <summary>Do not use. The Condition attribute is nonexistent for <see cref="T:Microsoft.Build.Construction.ProjectUsingTaskBodyElement" />. Get throws an internal error.</summary>
-        <value>Throws an internal error and returns null.</value>
+        <value>Throws an internal error and returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value of the Evaluate attribute.</summary>
-        <value>Returns the value of the Evaluate attribute, which is either "true" or "false". Returns "true" if the attribute is not present.</value>
+        <value>The value of the Evaluate attribute, which is either "true" or "false". Returns "true" if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -131,7 +131,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the unevaluated value of the contents of the inline task.</summary>
-        <value>Returns the unevaluated inner XML content of the inline task. Returns an empty string if no inline task body is present.</value>
+        <value>The unevaluated inner XML content of the inline task, or an empty string if no inline task body is present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

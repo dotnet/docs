@@ -47,7 +47,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the Condition attribute of this project element.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,7 +68,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the Condition attribute.</summary>
-        <value>Returns the Condition attribute location.</value>
+        <value>The Condition attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item type that the outputs go into.</summary>
-        <value>Returns the item type that the outputs go into.</value>
+        <value>The item type that the outputs go into.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the ItemType attribute.</summary>
-        <value>Returns the ItemType attribute location.</value>
+        <value>The ItemType attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the element itself.</summary>
-        <value>Returns the element location.</value>
+        <value>The element location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -162,7 +162,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the property of this class to retrieve the outputs from.</summary>
-        <value>Returns the property of this class to retrieve the outputs from.</value>
+        <value>The property of this class to retrieve the outputs from.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the TaskParameter attribute.</summary>
-        <value>Returns the TaskParameter attribute location.</value>
+        <value>The TaskParameter attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

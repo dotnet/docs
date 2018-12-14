@@ -52,7 +52,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the evaluated value of this property.</summary>
-        <value>Returns the evaluated value of this property.</value>
+        <value>The evaluated value of this property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of this property.</summary>
-        <value>Returns the name of this property.</value>
+        <value>The name of this property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -144,7 +144,7 @@
       <Docs>
         <param name="other">The project property to be compared to.</param>
         <summary>Compares this project property with the given project property for equality.</summary>
-        <returns>Returns true if the project property are equal; false otherwise.</returns>
+        <returns><see langword="true" /> if the project property are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@
       <Parameters />
       <Docs>
         <summary>Gets a string representation for this property.</summary>
-        <returns>Returns a string representation for this property.</returns>
+        <returns>A string representation for this property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

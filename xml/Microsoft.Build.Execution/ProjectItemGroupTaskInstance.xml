@@ -48,7 +48,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Condition attribute of this project element.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +95,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child items of this item definition.</summary>
-        <value>Returns all child items of this item definition.</value>
+        <value>All child items of this item definition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

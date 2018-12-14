@@ -57,7 +57,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the Condition attribute of this task.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>The location of the original Condition attribute, if any.</summary>
-        <value>Returns location of the condition, or null.</value>
+        <value>The location of the original Condition attribute, or <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the original element.</summary>
-        <value>Returns the location of the original element.</value>
+        <value>The location of the original element.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the TaskParameter attribute.</summary>
-        <value>Returns the TaskParameter location.</value>
+        <value>The TaskParameter location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

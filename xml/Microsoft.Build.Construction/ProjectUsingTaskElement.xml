@@ -44,7 +44,7 @@
       <Parameters />
       <Docs>
         <summary>Adds a new ParameterGroup element to this inline task.</summary>
-        <returns>Returns the new parameter group.</returns>
+        <returns>The new parameter group.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
         <param name="evaluate">A flag which, if true, expands the item and property values in the task body. This flag is true by default.</param>
         <param name="taskBody">The body of the task as a string.</param>
         <summary>Adds a new TaskBody element to this inline task.</summary>
-        <returns>Returns the new task body.</returns>
+        <returns>The new task body.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +134,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value of the AssemblyFile attribute, which selects the name of the assembly to load.</summary>
-        <value>The value of the AssemblyFile attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the AssemblyFile attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -183,7 +183,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the AssemblyName attribute.</summary>
-        <value>The value of the AssemblyName attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the AssemblyName attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -232,7 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets any ParameterGroup element for this inline task.</summary>
-        <value>The parameter group. Returns null if no parameter group exists.</value>
+        <value>The parameter group, or <see langword="null" /> if no parameter group exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,7 +253,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Runtime attribute of this inline task.</summary>
-        <value>The value of the Runtime attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the Runtime attribute, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,7 +295,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the inner XML content of this inline task.</summary>
-        <value>The inner XML content of the inline task. Returns null if no body exists.</value>
+        <value>The inner XML content of the inline task, or <see langword="null" /> if no body exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -323,7 +323,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the TaskFactory attribute of this inline task.</summary>
-        <value>The value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the TaskFactory attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -351,7 +351,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the TaskFactory attribute on this element, if any.</summary>
-        <value>The value of the TaskFactory attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the TaskFactory attribute, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,7 +372,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the TaskName attribute.</summary>
-        <value>The value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the TaskName attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -400,7 +400,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the TaskName attribute on this element, if any.</summary>
-        <value>The value of the TaskName attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the TaskName attribute, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

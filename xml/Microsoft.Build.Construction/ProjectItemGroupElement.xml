@@ -51,7 +51,7 @@
         <param name="itemType">Item element name of the item to be added.</param>
         <param name="include">Include attribute of the item to be added.</param>
         <summary>Adds a new item to the item group. Items are ordered first by item element name, and then by the Include attribute.</summary>
-        <returns>Returns the new item element.</returns>
+        <returns>The new item element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -87,7 +87,7 @@
         <param name="include">Include attribute of the item to be added.</param>
         <param name="metadata">Metadata to be added.</param>
         <summary>Adds a new item with metadata to the item group. Items are ordered first by item element name, and then by the Include attribute.</summary>
-        <returns>Returns the new item element.</returns>
+        <returns>The new item element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -115,7 +115,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child items.</summary>
-        <value>Returns all child items.</value>
+        <value>All child items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

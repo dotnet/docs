@@ -52,7 +52,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the AfterTargets attribute.</summary>
-        <value>Returns the AfterTargets attribute location.</value>
+        <value>The AfterTargets attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the BeforeTargets attribute.</summary>
-        <value>Returns the BeforeTargets attribute location.</value>
+        <value>The BeforeTargets attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,7 +107,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a list of the children of this target. The build iterates through this to get each task to execute.</summary>
-        <value>Returns a list of the children of this target.</value>
+        <value>A list of the children of this target.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -143,7 +143,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated Condition attribute of this target element.</summary>
-        <value>Returns the Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the Condition attribute.</summary>
-        <value>Returns the Condition attribute location.</value>
+        <value>The Condition attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an unevaluated semicolon-delimited list of targets that this target depends on.</summary>
-        <value>Returns an unevaluated semicolon-delimited list of targets that this target depends on. Returns an empty string if this target depends on no other targets.</value>
+        <value>An unevaluated semicolon-delimited list of targets that this target depends on, or an empty string if this target depends on no other targets.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +224,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the DependsOnTargets attribute.</summary>
-        <value>Returns the DependsOnTargets attribute location.</value>
+        <value>The DependsOnTargets attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,7 +245,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the full path to the file from which this target originated.</summary>
-        <value>Returns the full path to the file from which this target originated. Returns an empty string if this target originated in a project that was not loaded and has never been given a path.</value>
+        <value>The full path to the file from which this target originated, or an empty string if this target originated in a project that was not loaded and has never been given a path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +274,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated inputs on this target element.</summary>
-        <value>Returns the unevaluated inputs on this target element. Returns an empty string if this target has no inputs.</value>
+        <value>The unevaluated inputs on this target element, or an empty string if this target has no inputs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,7 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the Inputs attribute.</summary>
-        <value>Returns the Inputs attribute location.</value>
+        <value>The Inputs attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -329,7 +329,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an unevaluated condition which is used to delete duplicate outputs from this target.</summary>
-        <value>Returns an unevaluated condition which is used to delete duplicate outputs from this target. Returns an empty string if there is no condition.</value>
+        <value>An unevaluated condition which is used to delete duplicate outputs from this target, or an empty string if there is no condition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,7 +355,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the KeepDuplicateOutputs attribute.</summary>
-        <value>Returns the KeepDuplicateOutputs attribute location.</value>
+        <value>The KeepDuplicateOutputs attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,7 +381,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the element itself.</summary>
-        <value>Returns the element location.</value>
+        <value>The element location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,7 +410,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the target.</summary>
-        <value>Returns the name of the target.</value>
+        <value>The name of the target.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -475,7 +475,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated outputs on this target element May be empty string.</summary>
-        <value>Returns the unevaluated outputs on this target element Returns an empty string if there are no outputs.</value>
+        <value>The unevaluated outputs on this target element Returns an empty string if there are no outputs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,7 +501,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the Outputs attribute.</summary>
-        <value>Returns the Outputs attribute location.</value>
+        <value>The Outputs attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -530,7 +530,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated return values on the target element as a string.</summary>
-        <value>Returns the unevaluated return values on the target element as a string. Returns an empty string or null, if no return value is specified.</value>
+        <value>The unevaluated return values on the target element as a string, or an empty string or null, if no return value is specified.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -556,7 +556,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the location of the Returns attribute.</summary>
-        <value>Returns the Returns attribute location.</value>
+        <value>The Returns attribute location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -577,7 +577,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the tasks that are immediate children of this target.</summary>
-        <value>Returns all the tasks that are immediate children of this target.</value>
+        <value>All the tasks that are immediate children of this target.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

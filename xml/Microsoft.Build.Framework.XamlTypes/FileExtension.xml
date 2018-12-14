@@ -69,7 +69,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the corresponding content type.</summary>
-        <value>Returns the corresponding content type.</value>
+        <value>The corresponding content type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +104,7 @@
       <Docs>
         <param name="type">The type of static data to retrieve.</param>
         <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
-        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
+        <returns>An enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
-        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
+        <returns>An enumerator over all types of static data for the data-driven features that this node contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the file extension.</summary>
-        <value>Returns the name of the file extension.</value>
+        <value>The name of the file extension.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

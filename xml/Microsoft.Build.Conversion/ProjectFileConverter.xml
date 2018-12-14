@@ -244,7 +244,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />.</summary>
-        <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
+        <returns>The converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -287,7 +287,7 @@
       <Docs>
         <param name="engine">The <see cref="T:Microsoft.Build.BuildEngine.Engine" /> in which to create the new project.</param>
         <summary>Creates a new project in memory from the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />.</summary>
-        <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
+        <returns>The converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -322,7 +322,7 @@
         <param name="engine">The <see cref="T:Microsoft.Build.BuildEngine.Engine" /> in which to create the new project.</param>
         <param name="projectLoadSettings">A <see cref="T:Microsoft.Build.BuildEngine.ProjectLoadSettings" /> flag that determines whether the project ignores non-existent .target files when loading.</param>
         <summary>This is the entry point method, which performs the project file format conversion. This method will simply create a new MSBuild Project object in memory, instead of trying to write it to disk.</summary>
-        <returns>Returns the converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
+        <returns>The converted <see cref="T:Microsoft.Build.BuildEngine.Project" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +349,7 @@
         <summary>Performs conversions specific to F# projects (VS2008 CTP -&gt; VS2012) and (VS2010 -&gt; VS2012).  
   
  This involves: changing the location of FSharp targets, and for 2008CTP, adding explicit mscorlib and FSharp.Core references.</summary>
-        <returns>Returns true if anything was (would be) changed, false otherwise.</returns>
+        <returns><see langword="true" /> if anything was (would be) changed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

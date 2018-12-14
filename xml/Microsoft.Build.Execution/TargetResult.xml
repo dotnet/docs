@@ -50,7 +50,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the exception which aborted this target, if any.</summary>
-        <value>Returns the exception which aborted this target, if any.</value>
+        <value>The exception which aborted this target, if any.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,7 +82,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the items produced by this target.</summary>
-        <value>Returns the items produced by this target.</value>
+        <value>The items produced by this target.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -121,7 +121,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the result code for building this target.</summary>
-        <value>Returns the result code for building this target.</value>
+        <value>The result code for building this target.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -88,7 +88,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IItemType.ItemType.</summary>
-        <value>Returns the serialized default content type.</value>
+        <value>The serialized default content type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,7 +120,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IItemType.DisplayName</summary>
-        <value>Returns the serialized display name.</value>
+        <value>The serialized display name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,7 +176,7 @@
       <Docs>
         <param name="type">The type of static data to retrieve.</param>
         <summary>Returns an enumerator over all instances of static data that have the given type.</summary>
-        <returns>Returns an enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
+        <returns>An enumerator over all instances of static data that have the given type. Returns <see langword="Null" /> or Empty list if no objects of the given type are provided by this node.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,7 +209,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator over all types of static data for the data-driven features that this node contains.</summary>
-        <returns>Returns an enumerator over all types of static data for the data-driven features that this node contains.</returns>
+        <returns>An enumerator over all types of static data for the data-driven features that this node contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +238,7 @@
       </ReturnValue>
       <Docs>
         <summary>Serializes IItemType.Name</summary>
-        <value>Returns the serialized item type name.</value>
+        <value>The serialized item type name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,8 +266,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a switch that specifies whether item type serialization is included in an up-to-date check.</summary>
-        <value>Returns a switch that specifies whether item type serialization is included in an up-to-date check. If true, the serialization is included.</value>
+        <summary>Gets or sets a value that indicates whether item type serialization is included in an up-to-date check.</summary>
+        <value><see langword="true" /> if item type serialization is included in an up-to-date check; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

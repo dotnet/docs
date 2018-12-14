@@ -52,7 +52,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated Condition attribute value of this OnError element.</summary>
-        <value>Returns the unevaluated Condition attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The unevaluated Condition attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -99,7 +99,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unevaluated ExecuteTargets attribute value of this OnError element.</summary>
-        <value>Returns the unevaluated ExecuteTargets attribute value, which may be an empty string.</value>
+        <value>The unevaluated ExecuteTargets attribute value, which may be an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

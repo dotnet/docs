@@ -81,7 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the string of logger parameters.</summary>
-        <value>Returns a string list of the log parameters; <see langword="null" /> if there are none.</value>
+        <value>A string list of the log parameters, or <see langword="null" /> if there are none.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -129,7 +129,7 @@
         <param name="parameters">Build parameters.</param>
         <param name="requestData">Build request data.</param>
         <summary>Submits a lone build request and blocks until results are available.</summary>
-        <returns>Returns the build result.</returns>
+        <returns>The build result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -162,7 +162,7 @@
       <Docs>
         <param name="requestData">Build request.</param>
         <summary>Submits a build request and blocks until the results are available.</summary>
-        <returns>Returns the build result.</returns>
+        <returns>The build result.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -212,7 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the singleton instance of the Build Manager.</summary>
-        <value>Returns the singleton instance of the Build Manager.</value>
+        <value>The singleton instance of the Build Manager.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +310,7 @@
       <Docs>
         <param name="project">The project for which an instance should be retrieved.</param>
         <summary>Gets a matching ProjectInstance from the BuildManager cache of previously built projects.</summary>
-        <returns>Returns a matching ProjectInstance from the BuildManager cache of previously built projects. If none exist, a new project instance will be created from the specified project.</returns>
+        <returns>A matching ProjectInstance from the BuildManager cache of previously built projects. If none exist, a new project instance will be created from the specified project.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,7 +335,7 @@
       <Docs>
         <param name="requestData">Build request data.</param>
         <summary>Submits a build request to the current build but does not start it immediately. Allows the user to perform asynchronous execution or access the submission ID prior to executing the request.</summary>
-        <returns>Returns the submission that will be built.</returns>
+        <returns>The submission that will be built.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Thrown if StartBuild has not been called or if EndBuild has been called.</exception>
       </Docs>

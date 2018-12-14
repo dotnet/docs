@@ -705,7 +705,7 @@
         <param name="itemType">The item type of the added item.</param>
         <param name="unevaluatedInclude">Include attribute of the item to be added.</param>
         <summary>Adds an item with no metadata to the project.</summary>
-        <returns>Returns the added item.</returns>
+        <returns>The added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -743,7 +743,7 @@
         <param name="unevaluatedInclude">Include attribute of the item to be added.</param>
         <param name="metadata">The metadata of the added item.</param>
         <summary>Adds an item with the given metadata to the project.</summary>
-        <returns>Returns the added item.</returns>
+        <returns>The added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -793,7 +793,7 @@
         <param name="itemType">The item type to be added.</param>
         <param name="unevaluatedInclude">The unevaluated Include attribute to be added to the item.</param>
         <summary>Adds an item with no metadata to the project.  Makes no effort to see if an existing wildcard would already match the new item, unless it is the first item in an item group.  Makes no effort to locate the new item near similar items.</summary>
-        <returns>Returns a list of the project items added.</returns>
+        <returns>A list of the project items added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -835,7 +835,7 @@
         <param name="unevaluatedInclude">The unevaluated Include attribute to be added to the item.</param>
         <param name="metadata">The metadata to be added.</param>
         <summary>Adds an item with metadata to the project. Metadata may be null, indicating no metadata. Makes no effort to see if an existing wildcard would already match the new item, unless it is the first item in an item group. Makes no effort to locate the new item near similar items.</summary>
-        <returns>Returns a list of the project items added.</returns>
+        <returns>A list of the project items added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -869,7 +869,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all item definition metadata encountered during evaluation.</summary>
-        <value>Returns all item definition metadata encountered during evaluation. This does not include any elements whose conditions did not evaluate to true, nor any item definition metadata added since the last evaluation.</value>
+        <value>All item definition metadata encountered during evaluation. This does not include any elements whose conditions did not evaluate to true, nor any item definition metadata added since the last evaluation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -897,7 +897,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all items encountered during evaluation. These are read during the third evaluation pass.</summary>
-        <value>Returns an enumerator over all items encountered during evaluation. These are read during the third evaluation pass.</value>
+        <value>An enumerator over all items encountered during evaluation. These are read during the third evaluation pass.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -929,7 +929,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all properties encountered during evaluation.</summary>
-        <value>Returns all properties encountered during evaluation. This does not include any properties whose conditions did not evaluate to true, nor any properties added since the last evaluation.</value>
+        <value>All properties encountered during evaluation. This does not include any properties whose conditions did not evaluate to true, nor any properties added since the last evaluation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -972,7 +972,7 @@
       <Parameters />
       <Docs>
         <summary>Builds this project, using the default targets.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1004,7 +1004,7 @@
       <Docs>
         <param name="logger">The logger to be used during the build.</param>
         <summary>Builds this project, using the default targets and the given logger.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1041,7 +1041,7 @@
       <Docs>
         <param name="loggers">An enumerator over all loggers to be used during the build.</param>
         <summary>Builds this project, using the default targets and the given loggers.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1078,7 +1078,7 @@
       <Docs>
         <param name="target">The target to be built.</param>
         <summary>Builds this project, building the given target.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1115,7 +1115,7 @@
       <Docs>
         <param name="targets">An array of targets to be built.</param>
         <summary>Builds this project, building the given targets.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1154,7 +1154,7 @@
         <param name="loggers">The loggers to be used during the build.</param>
         <param name="remoteLoggers">The remote loggers to be used during the build.</param>
         <summary>Builds this project, using the default targets and the given loggers and remote loggers.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1193,7 +1193,7 @@
         <param name="target">The target to be built.</param>
         <param name="loggers">The loggers to be used during the build.</param>
         <summary>Builds this project, building the given target and using the given loggers.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1232,7 +1232,7 @@
         <param name="targets">The targets to be built.</param>
         <param name="loggers">The loggers to be used during the build.</param>
         <summary>Builds this project, building the given targets and using the given loggers.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1268,7 +1268,7 @@
         <param name="loggers">The loggers to be used during the build.</param>
         <param name="remoteLoggers">The remote loggers to be used during the build.</param>
         <summary>Builds this project, building the given target and using the given loggers and remote loggers.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1304,7 +1304,7 @@
         <param name="loggers">The loggers to be used during the build.</param>
         <param name="remoteLoggers">The remote loggers to be used during the build.</param>
         <summary>Builds this project, building the given targets and using the given loggers and remote loggers.</summary>
-        <returns>Returns true on success; false otherwise.</returns>
+        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1337,7 +1337,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of possible property values for properties used to evaluate conditions found on properties, property groups, imports, and whens.</summary>
-        <value>Returns a collection of possible property values for properties used to evaluate conditions found on properties, property groups, imports, and whens. The collection is in canonical form. The name of the entry is the name of the property to be evaluated, and the value is a list of possible property values.</value>
+        <value>A collection of possible property values for properties used to evaluate conditions found on properties, property groups, imports, and whens. The collection is in canonical form. The name of the entry is the name of the property to be evaluated, and the value is a list of possible property values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1383,7 +1383,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a project instance based on this project, but completely disconnected from it.</summary>
-        <returns>Returns the project instance.</returns>
+        <returns>The project instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1415,7 +1415,7 @@
       <Docs>
         <param name="settings">Determines whether created project instance is immutable and whether it contains a look up table to improve performance.</param>
         <summary>Creates a project instance based on this project, but completely disconnected from it.</summary>
-        <returns>Returns the project instance.</returns>
+        <returns>The project instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1448,7 +1448,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the root directory for this project.</summary>
-        <value>Returns the root directory for this project. The root directory is never null; in-memory projects use the current directory at the time of project load.</value>
+        <value>The root directory for this project. The root directory is never null; in-memory projects use the current directory at the time of project load.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1476,8 +1476,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag the determines whether <see cref="M:Microsoft.Build.Evaluation.Project.MarkDirty" /> is temporarily disabled. This allows, for example, a global property to be set without the project getting marked dirty for reevaluation as a consequence.</summary>
-        <value>Returns a flag the determines whether <see langword="MarkDirty" /> is temporarily disabled.</value>
+        <summary>Gets or sets a value that indicates whether <see cref="M:Microsoft.Build.Evaluation.Project.MarkDirty" /> is temporarily disabled. This allows, for example, a global property to be set without the project getting marked dirty for reevaluation as a consequence.</summary>
+        <value><see langword="true" /> to indicate <see langword="MarkDirty" /> is temporarily disabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1503,7 +1503,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a number that is incremented every time that project is re-evaluated.</summary>
-        <value>Returns the incremented value.</value>
+        <value>The incremented value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1535,7 +1535,7 @@
       <Docs>
         <param name="unexpandedValue">The string to be evaluated.</param>
         <summary>Evaluates the given string by expanding items and properties. The string is evaluated as if it were found at the very end of the project file.</summary>
-        <returns>Returns the evaluated string.</returns>
+        <returns>The evaluated string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1571,7 +1571,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the full path to the project source file.</summary>
-        <value>Returns the full path to the project source file. Returns an empty string if the project was not loaded from disk.</value>
+        <value>The full path to the project source file, or an empty string if the project was not loaded from disk.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1612,7 +1612,7 @@
       <Docs>
         <param name="item">The item to be evaluated and escaped.</param>
         <summary>Gets evaluated, escaped value of the Include attribute of the provided items.</summary>
-        <returns>Returns the evaluated, escaped value of the Include attribute of the provided items.</returns>
+        <returns>The evaluated, escaped value of the Include attribute of the provided items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1637,7 +1637,7 @@
       <Docs>
         <param name="item">The item definition to be evaluated and escaped.</param>
         <summary>Gets the evaluated, escaped value of the Include attribute of the provided item definition.</summary>
-        <returns>Returns the value of the Include attribute.</returns>
+        <returns>The value of the Include attribute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1662,7 +1662,7 @@
       <Docs>
         <param name="itemType">The item type to be retrieved.</param>
         <summary>Gets all the items in the project of the given item type. If there are none, returns an empty list. Use AddItem or RemoveItem to modify items in this project.</summary>
-        <returns>Returns all the items in the project of the given item type. Returns an empty list if there are no items with the given item name.</returns>
+        <returns>All the items in the project of the given item type, or an empty list if there are no items with the given item name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1694,7 +1694,7 @@
       <Docs>
         <param name="evaluatedInclude">The evaluated Include attribute.</param>
         <summary>Gets all items that have the given evaluated Include attribute.</summary>
-        <returns>Returns all items that have the given evaluated Include attribute.</returns>
+        <returns>All items that have the given evaluated Include attribute.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1726,7 +1726,7 @@
       <Docs>
         <param name="itemType">The item type to be retrieved.</param>
         <summary>Gets all the items in the project of the given type, whether or not their Condition attribute evaluates to true. This is a read-only list: use AddItem or RemoveItem to modify items in this project.</summary>
-        <returns>Returns all the items in the project of the given type, whether or not their Condition attribute evaluates to true.</returns>
+        <returns>All the items in the project of the given type, whether or not their Condition attribute evaluates to true.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1755,7 +1755,7 @@
       <Parameters />
       <Docs>
         <summary>Gets an enumerator over all the elements in the "logical project". The logical project is defined as the unevaluated project obtained from the single MSBuild file that is the result of inlining the text of all imports of the original MSBuild project manifest file.</summary>
-        <returns>Returns an enumerator over all the elements in the "logical project".</returns>
+        <returns>An enumerator over all the elements in the "logical project".</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1796,7 +1796,7 @@
       <Docs>
         <param name="metadatum">The metadatum to be escaped.</param>
         <summary>Gets the escaped value of the provided metadatum.</summary>
-        <returns>Gets the escaped value of the provided metadatum.</returns>
+        <returns>The escaped value of the provided metadatum.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1823,7 +1823,7 @@
         <param name="item">The item whose metadata is to be escaped.</param>
         <param name="name">The name of the metadata to be escaped.</param>
         <summary>Gets the escaped value of the metadatum with the provided name on the provided item.</summary>
-        <returns>Gets the escaped value of the metadatum with the provided name on the provided item.</returns>
+        <returns>The escaped value of the metadatum with the provided name on the provided item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1850,7 +1850,7 @@
         <param name="item">The item definition whose metadata is to be escaped.</param>
         <param name="name">The name of the metadata to be escaped.</param>
         <summary>Gets the escaped value of the metadatum with the provided name on the provided item definition.</summary>
-        <returns>Returns the escaped value of the metadatum with the provided name on the provided item definition.</returns>
+        <returns>The escaped value of the metadatum with the provided name on the provided item definition.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1880,7 +1880,7 @@
       <Docs>
         <param name="name">The name of the property to retrieve.</param>
         <summary>Gets any property in the project that has the specified name.</summary>
-        <returns>Returns any property in the project that has the specified name. Returns null if no property of that name exists.</returns>
+        <returns>Any property in the project that has the specified name, or <see langword="null" /> if no property of that name exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1905,7 +1905,7 @@
       <Docs>
         <param name="name">The name of the property whose value is retrieved.</param>
         <summary>Gets the value of the given property in this project.</summary>
-        <returns>Returns the value of the given property in this project. Return an empty string if no property of that name exists. Escape sequences are converted before returning the string.</returns>
+        <returns>The value of the given property in this project, or an empty string if no property of that name exists. Escape sequences are converted before returning the string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1936,8 +1936,8 @@
       </Parameters>
       <Docs>
         <param name="property">The property to be escaped.</param>
-        <summary>Get the escaped value of the provided property.</summary>
-        <returns>Returns the escaped value of the provided property.</returns>
+        <summary>Gets the escaped value of the provided property.</summary>
+        <returns>The escaped value of the provided property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1963,7 +1963,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a dictionary of the global properties used for the evaluation of this project.</summary>
-        <value>Returns a dictionary of the global properties used for the evaluation of this project.</value>
+        <value>A dictionary of the global properties used for the evaluation of this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1993,7 +1993,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a list of all the files that contributed to the evaluation of this project.</summary>
-        <value>Returns a list of all the files that contributed to the evaluation of this project.  
+        <value>A list of all the files that contributed to the evaluation of this project.  
   
  The name of each item is the Import element that caused the file to be imported. The value of each item is the project root of the imported project. Import elements whose Condition attribute evaluated to false are not included.</value>
         <remarks>
@@ -2023,7 +2023,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a list of duplicate imports if an import was imported multiple times. However, only the first import was used in evaluation.</summary>
-        <value>Returns a list of duplicate imports.</value>
+        <value>A list of duplicate imports.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2044,7 +2044,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a property that selects whether the targets and tasks of this project can be built.</summary>
-        <value>Returns true if the targets and tasks of this project can be built; false otherwise.</value>
+        <value><see langword="true" /> if the targets and tasks of this project can be built; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2071,8 +2071,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a property that indicates whether this project has been modified so that it must be reevaluated.</summary>
-        <value>Returns a property that indicates whether this project has been modified so that it must be reevaluated.</value>
+        <summary>Gets a value that indicates whether this project has been modified so that it must be reevaluated.</summary>
+        <value><see langword="true" /> if this project has been modified so that it must be reevaluated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2105,7 +2105,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a dictionary of item definitions in this project, keyed by item type.</summary>
-        <value>Returns a dictionary of item definitions in this project, keyed by item type.</value>
+        <value>A dictionary of item definitions in this project, keyed by item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2131,7 +2131,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all items in this project, ordered within groups of item types.</summary>
-        <value>Returns an enumerator over all items in this project, ordered within groups of item types.</value>
+        <value>An enumerator over all items in this project, ordered within groups of item types.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2157,7 +2157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all items in this project, ordered within groups of item types.</summary>
-        <value>Returns an enumerator over all items in this project, ordered within groups of item types, including items whose conditions evaluate to false, or are contained within item groups whose condition evaluates to false.</value>
+        <value>An enumerator over all items in this project, ordered within groups of item types, including items whose conditions evaluate to false, or are contained within item groups whose condition evaluates to <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2190,7 +2190,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all item types in this project.</summary>
-        <value>Returns an enumerator over all item types in this project. This is an ordered collection.</value>
+        <value>An enumerator over all item types in this project. This is an ordered collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2251,7 +2251,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project collection which contains this project.</summary>
-        <value>Returns the project collection which contains this project, which is never null.</value>
+        <value>The project collection that contains this project, which is never <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2272,7 +2272,7 @@
       </ReturnValue>
       <Docs>
         <summary>The location of the originating file itself, not any specific content within it. If the file has not been given a name, this is an empty location. This is a legitimate case of having no location.</summary>
-        <value>Returns the originating file location or an empty location.</value>
+        <value>The originating file location, or an empty location if the file has not been given a name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2298,7 +2298,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all properties in this project. This is an unordered collection.</summary>
-        <value>Returns an enumerator over all properties in this project. Since properties are evaluated as they appear, this is an unordered collection.</value>
+        <value>An enumerator over all properties in this project. Since properties are evaluated as they appear, this is an unordered collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2353,7 +2353,7 @@
       <Docs>
         <param name="name">The name of the global property to be removed.</param>
         <summary>Removes a global property and marks the project as modified.</summary>
-        <returns>Returns true if the value of the global property was set.</returns>
+        <returns><see langword="true" /> if the value of the global property was set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2378,7 +2378,7 @@
       <Docs>
         <param name="item">The item to be removed.</param>
         <summary>Removes an item from the project. The item to be removed must be present in the project, and must not originate from an imported file.</summary>
-        <returns>Returns true if the item is present in this evaluated project; otherwise false. Normally this method returns true, since if the requested item is not present, the method throws an exception. If the item is present only in the ItemsIgnoringCondition collection, however, the method returns false.</returns>
+        <returns><see langword="true" /> if the item is present in this evaluated project; otherwise, <see langword="false" />. Normally this method returns true, since if the requested item is not present, the method throws an exception. If the item is present only in the ItemsIgnoringCondition collection, however, the method returns false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2445,7 +2445,7 @@
       <Docs>
         <param name="property">The property to remove.</param>
         <summary>Removes an property from the project. The property to be removed must be present in the project, and must not originate from an imported file.</summary>
-        <returns>Returns true if the property is present in this evaluated project; otherwise false.</returns>
+        <returns><see langword="true" /> if the property is present in this evaluated project; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2631,7 +2631,7 @@
         <param name="name">The name of the global property to set.</param>
         <param name="escapedValue">The new value of the global property.</param>
         <summary>Sets a global property after the project has been evaluated. If the value changes, the project is marked to require reevaluation.</summary>
-        <returns>Returns <see langword="true" /> if the value changes, otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value changes; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2658,7 +2658,7 @@
         <param name="name">The name of the property to set.</param>
         <param name="unevaluatedValue">The new unevaluated value of the property.</param>
         <summary>Sets or adds a property with the given name and value to the project. Overwrites the value of a property with the same name if it did not originate in an imported file.</summary>
-        <returns>Returns the property.</returns>
+        <returns>The property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2697,8 +2697,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag the determines whether ReevaluateIfNecessary is temporarily disabled. This is useful when the host expects to make a number of reads and writes to the project, and wants to temporarily sacrifice correctness for performance.</summary>
-        <value>Returns a flag the determines whether ReevaluateIfNecessary is temporarily disabled.</value>
+        <summary>Gets or sets a value that indicates whether ReevaluateIfNecessary is temporarily disabled. This is useful when the host expects to make a number of reads and writes to the project, and wants to temporarily sacrifice correctness for performance.</summary>
+        <value>A flag that determines whether ReevaluateIfNecessary is temporarily disabled.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2719,7 +2719,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value of the SubToolsetVersion attribute, if any. This value was combined with the value of the ToolsVersion attribute to determine the toolset properties for this project.</summary>
-        <value>Returns the SubToolsetVersion attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The SubToolsetVersion attribute value, or an empty string if the attribute is not present.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2745,7 +2745,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a dictionary of all targets in this project, keyed by target name.</summary>
-        <value>Returns a dictionary of all targets in this project, keyed by target name. Overridden targets are not included in this collection. This dictionary is read-only.</value>
+        <value>A read-only dictionary of all targets in this project, keyed by target name. Overridden targets are not included in this collection. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2766,7 +2766,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the tools version that this project was evaluated with, if any.</summary>
-        <value>Gets the tools version that this project was evaluated with, if any.</value>
+        <value>The tools version that this project was evaluated with, if any.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2801,8 +2801,8 @@
         <ReturnType>Microsoft.Build.Construction.ProjectRootElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the root project associated with this project. Can never be null</summary>
-        <value>Returns the root project associated with this project, which can never be null.</value>
+        <summary>Gets the root project associated with this project. Can never be <see langword="null" />.</summary>
+        <value>The root project associated with this project, which can never be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

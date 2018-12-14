@@ -43,7 +43,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a nonexistent condition, which is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,7 +64,7 @@
       </ReturnValue>
       <Docs>
         <summary>Do not use. The Condition attribute is nonexistent for this element. Get throws an internal error.</summary>
-        <value>Throws an internal error and returns null.</value>
+        <value>Throws an internal error and returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the optional Output attribute of this inline task.</summary>
-        <value>Returns the value of the Output attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the Output attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -160,7 +160,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Type attribute of this inline task.</summary>
-        <value>Returns the value of the Type attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the Type attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -209,7 +209,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Required attribute</summary>
-        <value>Returns the value of the Required attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the Required attribute, or an empty string if the attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

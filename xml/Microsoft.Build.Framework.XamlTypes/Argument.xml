@@ -113,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates whether the <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> pointed to by <see cref="P:Microsoft.Build.Framework.XamlTypes.Argument.Property" /> must be defined so that the definition of the <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> that owns this argument makes sense.</summary>
-        <value>Returns <see langword="true" /> if the BaseProperty must be defined; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the BaseProperty must be defined; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -149,7 +149,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> that this argument refers to.</summary>
-        <value>Returns the name of the <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> that this argument refers to.</value>
+        <value>The name of the <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> that this argument refers to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -185,7 +185,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the string used to separate the argument value from the parent <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> switch in the command line.</summary>
-        <value>Returns the string used to separate the argument value from the parent <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> switch.</value>
+        <value>The string used to separate the argument value from the parent <see cref="T:Microsoft.Build.Framework.XamlTypes.BaseProperty" /> switch.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

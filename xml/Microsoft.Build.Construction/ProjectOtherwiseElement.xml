@@ -40,7 +40,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child Choose elements.</summary>
-        <value>Returns all child Choose elements.</value>
+        <value>All child Choose elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +61,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a nonexistent condition, which is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child item groups.</summary>
-        <value>Returns all child item groups.</value>
+        <value>All child item groups.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +124,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child property groups.</summary>
-        <value>Returns all child property groups.</value>
+        <value>All child property groups.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

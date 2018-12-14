@@ -45,7 +45,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the metadata name.</summary>
-        <value>Returns the metadata name.</value>
+        <value>The metadata name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the unevaluated metadata value.</summary>
-        <value>Returns the unevaluated metadata value. Returns an empty string if the value is uninitialized.</value>
+        <value>The unevaluated metadata value, or an empty string if the value is uninitialized.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

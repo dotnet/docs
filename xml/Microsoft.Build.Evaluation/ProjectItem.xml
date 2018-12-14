@@ -40,7 +40,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all item metadata.</summary>
-        <value>Returns an enumerator over all item metadata, which can never be null.</value>
+        <value>An enumerator over all item metadata, which can never be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -73,7 +73,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the count of metadata for this item.</summary>
-        <value>Returns the count of metadata for this item.</value>
+        <value>The count of metadata for this item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -109,7 +109,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the evaluated value of the Include attribute.</summary>
-        <value>Returns the evaluated value of the Include attribute.</value>
+        <value>The evaluated value of the Include attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -144,7 +144,7 @@
       <Docs>
         <param name="name">The name of the metadata whose value is retrieved.</param>
         <summary>Gets the evaluated value of the given metadata for this item.</summary>
-        <returns>Gets the evaluated value of the given metadata for this item. Returns null if no metadata exists with the given name.</returns>
+        <returns>The evaluated value of the given metadata for this item, or <see langword="null" /> if no metadata exists with the given name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -178,8 +178,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the metadata whose value is retrieved.</param>
-        <summary>Get the evaluated value of the given metadata for this item, including metadata originating from an item definition.</summary>
-        <returns>Returns the evaluated value of the given metadata for this item, including metadata originating from an item definition. Returns an empty string if no metadata exists with the given name.</returns>
+        <summary>Gets the evaluated value of the given metadata for this item, including metadata originating from an item definition.</summary>
+        <returns>The evaluated value of the given metadata for this item, including metadata originating from an item definition, or an empty string if no metadata exists with the given name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -213,7 +213,7 @@
       <Docs>
         <param name="name">The name of the metadata to be searched for.</param>
         <summary>Determines whether metadata with the given name is defined on this item.</summary>
-        <returns>Returns true if metadata with the given name is defined on this item; false otherwise.</returns>
+        <returns><see langword="true" /> if metadata with the given name is defined on this item; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -241,7 +241,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines if this item originates from an imported file.</summary>
-        <value>Return true if this item originates from an imported file; false otherwise.</value>
+        <value><see langword="true" /> if this item originates from an imported file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,7 +270,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of this item.</summary>
-        <value>Returns the item type.</value>
+        <value>The item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -299,7 +299,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the metadata for this item, including metadata originating from item definitions.</summary>
-        <value>Returns all the metadata for this item, including metadata originating from item definitions.</value>
+        <value>All the metadata for this item, including metadata originating from item definitions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -334,7 +334,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the count of metadata for this item, including any metadata originating from item definitions, and any built-in metadata.</summary>
-        <value>Returns the count of metadata for this item, including any metadata originating from item definitions, and any built-in metadata.</value>
+        <value>The count of metadata for this item, including any metadata originating from item definitions, and any built-in metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +369,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project that contains this project item.</summary>
-        <value>Returns the project that contains this project item.</value>
+        <value>The project that contains this project item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -401,7 +401,7 @@
       <Docs>
         <param name="name">The name of the metadata to remove.</param>
         <summary>Removes any metadata with the given name.</summary>
-        <returns>Returns true if metadata with the given name exists before removal; false otherwise.</returns>
+        <returns><see langword="true" /> if metadata with the given name exists before removal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -468,7 +468,7 @@
         <param name="name">The name of the metadata to add.</param>
         <param name="unevaluatedValue">The unevaluated value of the metadata to add.</param>
         <summary>Adds metadata with the given name and unevaluated value to the item.</summary>
-        <returns>Returns the new metadata. If metadata with the given name already exists, returns this metadata.</returns>
+        <returns>The new metadata. If metadata with the given name already exists, returns this metadata.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -508,7 +508,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the unevaluated value of the Include attribute.</summary>
-        <value>Returns the unevaluated value of the Include attribute.</value>
+        <value>The unevaluated value of the Include attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,7 +540,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item element that is associated with this item.</summary>
-        <value>Returns the item element that is associated with this item, which can never be null.</value>
+        <value>The item element that is associated with this item, which can never be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -44,7 +44,7 @@
       <Docs>
         <param name="itemType">Element name of item to be added.</param>
         <summary>Adds a new item definition after the last child in this item definition group.</summary>
-        <returns>Returns the new item definition.</returns>
+        <returns>The new item definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +72,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child item definitions.</summary>
-        <value>Returns all child item definitions.</value>
+        <value>All child item definitions.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

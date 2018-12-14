@@ -46,7 +46,7 @@
         <param name="name">Name of metadata.</param>
         <param name="unevaluatedValue">Metadata to be added.</param>
         <summary>Adds metadata to this item. Appends the metadata to any existing metadata.</summary>
-        <returns>Returns the modified metadata.</returns>
+        <returns>The modified metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Exclude attribute value.</summary>
-        <value>Returns the Exclude attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Exclude attribute value, or an empty string if the Exclude attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -99,8 +99,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the exclude attribute</summary>
-        <value>Returns <see cref="T:Microsoft.Build.Construction.ElementLocation" />.</value>
+        <summary>Gets the location of the exclude attribute.</summary>
+        <value>The location of the exclude attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,8 +120,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines if this item has any child metadata elements.</summary>
-        <value>Returns true if this item has child metadata elements; false otherwise.</value>
+        <summary>Gets a value that indicates whether this item has any child metadata elements.</summary>
+        <value><see langword="true" /> if this item has child metadata elements; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Include attribute value.</summary>
-        <value>Returns the Include attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Include attribute value, or an empty string if the Include attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -174,8 +174,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the include attribute</summary>
-        <value>Returns the include location</value>
+        <summary>Gets the location of the include attribute.</summary>
+        <value>The include location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +204,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item element's type.</summary>
-        <value>Returns the item element type.</value>
+        <value>The item element's type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,7 +230,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the KeepDuplicates value.</summary>
-        <value>Returns the value of KeepDuplicates, or returns empty string if it is not present.</value>
+        <value>The value of KeepDuplicates, or an empty string if it is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -258,7 +258,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Location of the KeepDuplicates attribute.</summary>
-        <value>Returns the location of the KeepDuplicates attribute.</value>
+        <value>The location of the KeepDuplicates attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,7 +284,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the KeepMetadata attribute value.</summary>
-        <value>Returns the value of the KeepMetadata attribute or returns an empty string if it is not present.</value>
+        <value>The value of the KeepMetadata attribute, or an empty string if it is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -312,7 +312,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the location of the KeepMetadata attribute.</summary>
-        <value>Returns the location of KeepMetadata.</value>
+        <value>The location of KeepMetadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -333,7 +333,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child metadata.</summary>
-        <value>Returns all child metadata.</value>
+        <value>All child metadata.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -359,7 +359,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Remove attribute value.</summary>
-        <value>Returns the Remove attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The Remove attribute value, or an empty string if the Remove attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -386,8 +386,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Location of the remove attribute</summary>
-        <value>Returns the remove attribute's location.</value>
+        <summary>Gets the location of the remove attribute</summary>
+        <value>The remove attribute's location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,7 +413,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the RemoveMetadata attribute.</summary>
-        <value>Returns the RemoveMetadata value or returns an empty string if it is not present.</value>
+        <value>The RemoveMetadata value, or an empty string if it is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -441,7 +441,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the location of the RemoveMetadata attribute.</summary>
-        <value>Returns the RemoveMetadata attribute's location.</value>
+        <value>The RemoveMetadata attribute's location.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

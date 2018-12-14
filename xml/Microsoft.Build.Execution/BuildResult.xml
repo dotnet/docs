@@ -86,7 +86,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a flag indicating whether a circular dependency was detected.</summary>
-        <value>Returns true if a circular dependency was detected; false otherwise.</value>
+        <value><see langword="true" /> if a circular dependency was detected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the configuration ID for this build result set.</summary>
-        <value>Returns the configuration ID for this build result set.</value>
+        <value>The configuration ID for this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +150,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the exception generated for this build result set.</summary>
-        <value>Returns the exception generated for this build result set. Returns false if no exception occurred.</value>
+        <value>The exception generated for this build result set. Returns false if no exception occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +179,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the build request id for this build result set.</summary>
-        <value>Returns the build request id for this build result set.</value>
+        <value>The build request id for this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +207,7 @@
       <Docs>
         <param name="target">The target whose results are retrieved.</param>
         <summary>Determines if there are any results for the given target.</summary>
-        <returns>Returns true if results exist; false otherwise.</returns>
+        <returns><see langword="true" /> if results exist; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,7 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the build request ID of the originating node.</summary>
-        <value>Returns the build request ID of the originating node.</value>
+        <value>The build request ID of the originating node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,7 +324,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the overall result for this build.</summary>
-        <value>Returns the overall result for this build.</value>
+        <value>The overall result for this build.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,7 +353,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the global build request ID which issued the request leading to this build result set.</summary>
-        <value>Returns the global build request ID which issued the request leading to this build result set.</value>
+        <value>The global build request ID which issued the request leading to this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,7 +374,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets <see cref="T:Microsoft.Build.Execution.ProjectInstance" /> state after the build.</summary>
-        <value>Returns the <see langword="ProjectInstance" /> object.</value>
+        <value>The <see langword="ProjectInstance" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -413,7 +413,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all target results in this build result set.</summary>
-        <value>Returns an enumerator over all target results in this build result set.</value>
+        <value>An enumerator over all target results in this build result set.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +442,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the build submission which this build result set is associated with.</summary>
-        <value>Returns the build submission which this build result set is associated with.</value>
+        <value>The build submission which this build result set is associated with.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

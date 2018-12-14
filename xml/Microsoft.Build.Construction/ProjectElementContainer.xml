@@ -40,7 +40,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a recursive depth-first enumerator over all child elements.</summary>
-        <value>Returns a recursive depth-first enumerator over all child elements.</value>
+        <value>A recursive depth-first enumerator over all child elements.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -104,7 +104,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child elements.</summary>
-        <value>Returns all child elements.</value>
+        <value>All child elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +130,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child elements, starting from the last child.</summary>
-        <value>Returns all child elements, starting from the last child.</value>
+        <value>All child elements, starting from the last child.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of child elements.</summary>
-        <value>Returns the number of child elements.</value>
+        <value>The number of child elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the first child element.</summary>
-        <value>Returns the first child element. Returns null if no child element exists.</value>
+        <value>The first child element, or <see langword="null" /> if no child element exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -300,7 +300,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the last child element.</summary>
-        <value>Returns the last child element. Returns null if no child element exists.</value>
+        <value>The last child element, or <see langword="null" /> if no child element exists.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -86,7 +86,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum allowed value for this property.</summary>
-        <value>Returns the maximum allowed value. Returns <see langword="null" /> when this property is not set.</value>
+        <value>The maximum allowed value, or <see langword="null" /> if this property is not set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -124,7 +124,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the minimum allowed value for this property.</summary>
-        <value>Returns the minimum allowed value. Returns <see langword="null" /> when this property is not set.</value>
+        <value>The minimum allowed value, or <see langword="null" /> if this property is not set.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

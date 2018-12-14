@@ -54,7 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of pieces of metadata on this item.</summary>
-        <value>Returns the number of pieces of metadata on this item.</value>
+        <value>The number of pieces of metadata on this item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +83,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the evaluated Include attribute value.</summary>
-        <value>Returns the evaluated Include attribute value, which may be empty string.</value>
+        <value>The evaluated Include attribute value, which may be empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,8 +110,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the metadata.</param>
-        <summary>Get the metadata with the given name, including metadata inherited from item definitions.</summary>
-        <returns>Returns the metadata with the given name. Returns null if no metadata exists with that name.</returns>
+        <summary>Gets the metadata with the given name, including metadata inherited from item definitions.</summary>
+        <returns>The metadata with the given name, or <see langword="null" /> if no metadata exists with that name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -146,7 +146,7 @@
       <Docs>
         <param name="name">The name of the metadata.</param>
         <summary>Gets the value of the metadata with the given name, including metadata inherited from item definitions.</summary>
-        <returns>Gets the value of the metadata with the given name, including metadata inherited from item definitions. Returns an empty string if no metadata exists with that name.</returns>
+        <returns>The value of the metadata with the given name, including metadata inherited from item definitions, or an empty string if no metadata exists with that name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -180,7 +180,7 @@
       <Docs>
         <param name="name">The name of the metadata.</param>
         <summary>Determines whether the metadata with the given name is defined on this item (even if its value is empty string).</summary>
-        <returns>Returns true if the metadata with the given name is defined on this item (even if its value is empty string); false otherwise.</returns>
+        <returns><see langword="true" /> if the metadata with the given name is defined on this item (even if its value is empty string); otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -218,8 +218,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item type, for example "Compile".</summary>
-        <value>Returns the item type, for example "Compile".</value>
+        <summary>Gets the item type. For example, "Compile".</summary>
+        <value>The item type. For example, "Compile".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -247,7 +247,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over the evaluated metadata of the item. This is a read-only collection.</summary>
-        <value>Returns an enumerator over the evaluated metadata of the item.</value>
+        <value>An enumerator over the evaluated metadata of the item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,7 +280,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of metadata entries, including metadata inherited from item definitions.</summary>
-        <value>Returns the number of metadata entries, including metadata inherited from item definitions</value>
+        <value>The number of metadata entries, including metadata inherited from item definitions</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -308,7 +308,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all metadata names of this item, including metadata inherited from item definitions.</summary>
-        <value>Returns all metadata names of this item, including metadata inherited from item definitions.</value>
+        <value>All metadata names of this item, including metadata inherited from item definitions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -559,7 +559,7 @@
       <Parameters />
       <Docs>
         <summary>ITaskItem2 implementation. Returns a clone of the metadata on this object.  Values returned are in their original escaped form.</summary>
-        <returns>Returns the cloned metadata, with values' escaping preserved.</returns>
+        <returns>The cloned metadata, with values' escaping preserved.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -588,7 +588,7 @@
       </ReturnValue>
       <Docs>
         <summary>ITaskItem2 implementation. Evaluated include value, escaped as necessary. May be empty string. Gets or sets the item include value e.g. for disk-based items this would be the file path.</summary>
-        <value>Returns the item include value.</value>
+        <value>The item include value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -622,7 +622,7 @@
       <Docs>
         <param name="name">The metadata to be queried.</param>
         <summary>ITaskItem2 implementation. Allows the values of metadata on the item to be queried.</summary>
-        <returns>Returns the escaped metadata value.</returns>
+        <returns>The escaped metadata value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -693,7 +693,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the owning project.</summary>
-        <value>Returns the owning project.</value>
+        <value>The owning project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -787,7 +787,7 @@
         <param name="name">The name of the metadata to add.</param>
         <param name="evaluatedValue">The evaluated value of the metadata to add.</param>
         <summary>Add metadata with the given name and value. Overwrites any metadata with the same name already in the collection.</summary>
-        <returns>Returns the new metadata.</returns>
+        <returns>The new metadata.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -808,8 +808,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a String that represents the current item.</summary>
-        <returns>Returns a String that represents the current item.</returns>
+        <summary>Gets a string that represents the current item.</summary>
+        <returns>A string that represents the current item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

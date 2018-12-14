@@ -60,7 +60,7 @@
       <Docs>
         <param name="taskFactoryLoggingHost">The logging host for the task factory.</param>
         <summary>Creates an instance of the task to be used in a batch. The task factory logging host will log messages in the context of the task.</summary>
-        <returns>Returns an instance of the task to be used in a batch.</returns>
+        <returns>An instance of the task to be used in a batch.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get the descriptions for all the task's parameters.</summary>
+        <summary>Gets the descriptions for all the task's parameters.</summary>
         <returns>A non-null array of property descriptions.</returns>
         <remarks>To be added.</remarks>
       </Docs>

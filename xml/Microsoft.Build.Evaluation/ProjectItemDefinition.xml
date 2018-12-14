@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the metadata to retrieve.</param>
-        <summary>Get any metadata in the item definition with the given name.</summary>
-        <returns>Get any metadata in the item definition with the given name. Returns null if no metadata exists with that name.</returns>
+        <summary>Gets any metadata in the item definition with the given name.</summary>
+        <returns>Any metadata in the item definition with the given name, or <see langword="null" /> if no metadata exists with that name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +85,8 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the item whose metadata value is to be retrieved.</param>
-        <summary>Get the value of any metadata in the item that has the specified name.</summary>
-        <returns>Returns the value of any metadata in the item that has the specified name; otherwise returns null.</returns>
+        <summary>Gets the value of any metadata in the item that has the specified name.</summary>
+        <returns>The value of any metadata in the item that has the specified name; otherwise returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +121,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the item type of this item definition.</summary>
-        <value>Returns the item type of this item definition.</value>
+        <value>The item type of this item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerator over all metadata for the item definition.</summary>
-        <value>Returns an enumerator over all metadata for the item definition.</value>
+        <value>An enumerator over all metadata for the item definition.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -170,7 +170,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the count of the metadata on the item definition.</summary>
-        <value>Returns the count of the metadata on the item definition.</value>
+        <value>The count of the metadata on the item definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,7 +205,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the project that contains this item definition.</summary>
-        <value>Returns the project that contains this item definition, which is never null.</value>
+        <value>The project that contains this item definition, which is never <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +232,7 @@
         <param name="name">The name of the metadata to set.</param>
         <param name="unevaluatedValue">The new unevaluated value of the metadata.</param>
         <summary>Sets the value of the given metadata in the item definition.</summary>
-        <returns>Returns the metadata with the given name.</returns>
+        <returns>The metadata with the given name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

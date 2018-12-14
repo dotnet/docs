@@ -149,7 +149,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the default sub toolset version for this toolset.</summary>
-        <value>Returns the default sub toolset version.</value>
+        <value>The default sub toolset version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -189,7 +189,7 @@
       <Parameters />
       <Docs>
         <summary>Creates the sub toolset version to be used with this toolset.</summary>
-        <returns>Returns the sub toolset version to be used with this toolset.</returns>
+        <returns>The sub toolset version to be used with this toolset.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -225,7 +225,7 @@
         <param name="overrideGlobalProperties">Set of global properties to use to create the sub toolset version. May be null.</param>
         <param name="solutionVersion">The solution version to use to create the sub toolset version.</param>
         <summary>Creates the sub toolset version to be used with this toolset.</summary>
-        <returns>Returns the sub toolset version.</returns>
+        <returns>The sub toolset version.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -263,9 +263,9 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property.</param>
-        <param name="subToolsetVersion">The sub toolset version of the sub toolset. May be null</param>
+        <param name="subToolsetVersion">The sub toolset version of the sub toolset. May be <see langword="null" />.</param>
         <summary>Gets property specified by the given property name and sub toolset version.</summary>
-        <returns>Returns the property specified, if it is found, otherwise returns null.</returns>
+        <returns>The property specified, or <see langword="null" /> if not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -295,7 +295,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the optional properties associated with the toolset.</summary>
-        <value>Returns the optional properties associated with the toolset.</value>
+        <value>The optional properties associated with the toolset.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +316,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the set of sub toolsets associated with this toolset.</summary>
-        <value>Returns the set of sub toolsets.</value>
+        <value>The set of sub toolsets.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,7 +342,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a path to the tasks and targets of this toolset.</summary>
-        <value>Returns a path to the tasks and targets of this toolset.</value>
+        <value>A path to the tasks and targets of this toolset.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -375,7 +375,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of this toolset.</summary>
-        <value>Returns the name of this toolset.</value>
+        <value>The name of this toolset.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

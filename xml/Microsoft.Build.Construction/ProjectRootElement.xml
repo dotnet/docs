@@ -54,7 +54,7 @@
       <Docs>
         <param name="project">The project to be imported.</param>
         <summary>Adds a project import to this project.</summary>
-        <returns>Returns the added project import.</returns>
+        <returns>The added project import.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -83,7 +83,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an import group at the end of this project.</summary>
-        <returns>Returns the import group created at the end of this project.</returns>
+        <returns>The import group created at the end of this project.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -131,7 +131,7 @@
         <param name="itemType">The item type of the item to be added.</param>
         <param name="include">The Include value of the item to be added.</param>
         <summary>Adds an item to this project.</summary>
-        <returns>Returns the added item.</returns>
+        <returns>The added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -169,7 +169,7 @@
         <param name="include">The Include value of the item to be added.</param>
         <param name="metadata">The metadata to be added.</param>
         <summary>Adds an item with metadata to this project.</summary>
-        <returns>Returns the added item.</returns>
+        <returns>The added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -201,7 +201,7 @@
       <Docs>
         <param name="itemType">The item type of the item definition to be added.</param>
         <summary>Adds an item definition to this project.</summary>
-        <returns>Returns the added item definition.</returns>
+        <returns>The added item definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -230,7 +230,7 @@
       <Parameters />
       <Docs>
         <summary>Adds an item definition group to this project.</summary>
-        <returns>Returns the added item definition group.</returns>
+        <returns>The added item definition group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -259,7 +259,7 @@
       <Parameters />
       <Docs>
         <summary>Creates and adds an item group to this project.</summary>
-        <returns>Returns the added item group.</returns>
+        <returns>The added item group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -293,7 +293,7 @@
         <param name="name">The name of the property to be updated or added.</param>
         <param name="value">The value of the property to be updated or added.</param>
         <summary>Updates or adds a property to this project.</summary>
-        <returns>Returns the updated or added property.</returns>
+        <returns>The updated or added property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -322,7 +322,7 @@
       <Parameters />
       <Docs>
         <summary>Adds a new property group to this project.</summary>
-        <returns>Returns the added property group.</returns>
+        <returns>The added property group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -354,7 +354,7 @@
       <Docs>
         <param name="name">The name of the target to be added.</param>
         <summary>Adds a target to the project.</summary>
-        <returns>Returns the added target.</returns>
+        <returns>The added target.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -390,7 +390,7 @@
         <param name="assemblyFile">The file path to the assembly.</param>
         <param name="assemblyName">The name of the assembly to load.</param>
         <summary>Adds a <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
-        <returns>Returns the added UsingTask element.</returns>
+        <returns>The added UsingTask element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -418,7 +418,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child <see href="https://msdn.microsoft.com/library/7b8b025a-d944-4f5c-9018-c89fc2ef146d">Choose Element (MSBuild)</see> in this project.</summary>
-        <value>Returns all child Choose elements.</value>
+        <value>All child Choose elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -438,8 +438,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets null because the Condition attribute is nonexistent for this element and a nonexistent condition is implicitly true.</summary>
-        <value>Returns a null.</value>
+        <summary>Always returns <see langword="null" /> because the Condition attribute is nonexistent for this element, and a nonexistent condition is implicitly <see langword="true" />.</summary>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -459,8 +459,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not use. The Condition attribute is nonexistent for <see cref="T:Microsoft.Build.Construction.ProjectRootElement" />. Get throws an internal error.</summary>
-        <value>Throws an internal error and returns null.</value>
+        <summary>Do not use. The Condition attribute is nonexistent for <see cref="T:Microsoft.Build.Construction.ProjectRootElement" />. </summary>
+        <value>Always returns <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -491,7 +491,7 @@
       <Parameters />
       <Docs>
         <summary>Creates and initializes an in-memory, empty ProjectRootElement instance and adds it to the global project collection.</summary>
-        <returns>Returns the new project root.</returns>
+        <returns>The new project root.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,7 +515,7 @@
       <Docs>
         <param name="projectCollection">The project collection to be added to.</param>
         <summary>Creates and initializes an in-memory, empty ProjectRootElement instance and adds it to the specified project collection.</summary>
-        <returns>Returns the new project root.</returns>
+        <returns>The new project root.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,7 +540,7 @@
       <Docs>
         <param name="path">The file path to the data used for initialization.</param>
         <summary>Creates and initializes an in-memory, empty ProjectRootElement instance and adds it to the global project collection. The new project root is initialized from data found at the specified file path.</summary>
-        <returns>Returns the new project root.</returns>
+        <returns>The new project root.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -564,7 +564,7 @@
       <Docs>
         <param name="xmlReader">The XML reader used for initialization.</param>
         <summary>Creates and initializes an in-memory, empty ProjectRootElement instance and adds it to the global project collection. The new project root is initialized from data read from the specified XmlReader.</summary>
-        <returns>Returns the new project root.</returns>
+        <returns>The new project root.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -597,7 +597,7 @@
         <param name="path">The file path to the data used for initialization.</param>
         <param name="projectCollection">The project collection to be added to.</param>
         <summary>Creates and initializes an in-memory, empty ProjectRootElement instance and adds it to the specified project collection. The new project root is initialized from data found at the specified file path.</summary>
-        <returns>Returns the new project root.</returns>
+        <returns>The new project root.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,7 +623,7 @@
         <param name="xmlReader">The XML reader used for initialization.</param>
         <param name="projectCollection">The project collection to be added to.</param>
         <summary>Creates and initializes an in-memory, empty ProjectRootElement instance and adds it to the specified project collection. The new project root is initialized from data read from the specified XmlReader.</summary>
-        <returns>Returns the new project root.</returns>
+        <returns>The new project root.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -684,7 +684,7 @@
       <Docs>
         <param name="project">The project to be imported.</param>
         <summary>Creates an <see href="https://msdn.microsoft.com/library/3bfecaf1-69fd-4008-b651-c9dafd4389d9">Import Element (MSBuild)</see>.</summary>
-        <returns>Returns the created Import element.</returns>
+        <returns>The created Import element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -713,7 +713,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an import group.</summary>
-        <returns>Returns the import group.</returns>
+        <returns>The import group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -745,7 +745,7 @@
       <Docs>
         <param name="itemType">The item type of the item definition.</param>
         <summary>Creates an item definition.</summary>
-        <returns>Returns the item definition.</returns>
+        <returns>The item definition.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -774,7 +774,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an item definition group.</summary>
-        <returns>Returns the item definition group.</returns>
+        <returns>The item definition group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -815,7 +815,7 @@
       <Docs>
         <param name="itemType">The item type of the item.</param>
         <summary>Creates an item.</summary>
-        <returns>Returns the item.</returns>
+        <returns>The item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -849,7 +849,7 @@
         <param name="itemType">The item type of the item.</param>
         <param name="include">The Include value of the item.</param>
         <summary>Creates an item with the specifed Include value.</summary>
-        <returns>Returns the item.</returns>
+        <returns>The item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -878,7 +878,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an item group.</summary>
-        <returns>Returns the item group.</returns>
+        <returns>The item group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -919,7 +919,7 @@
       <Docs>
         <param name="name">The name of the metadata.</param>
         <summary>Creates a metadata node with the specified name.</summary>
-        <returns>Returns the metadata node.</returns>
+        <returns>The metadata node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -953,7 +953,7 @@
         <param name="name">The name of the metadata.</param>
         <param name="unevaluatedValue">The value of the metadata.</param>
         <summary>Creates a metadata node with the specified name and value.</summary>
-        <returns>Returns the metadata element.</returns>
+        <returns>The metadata element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -985,7 +985,7 @@
       <Docs>
         <param name="executeTargets">The targets to execute if a task fails.</param>
         <summary>Creates an <see href="https://msdn.microsoft.com/library/765767d3-ecb7-4cd9-ba1e-d9468964dddc">OnError Element (MSBuild)</see>.</summary>
-        <returns>Returns the OnError element.</returns>
+        <returns>The OnError element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1014,7 +1014,7 @@
       <Parameters />
       <Docs>
         <summary>Creates an <see href="https://msdn.microsoft.com/library/de3997e9-1595-4263-a886-95530b56a319">Otherwise Element (MSBuild)</see>. Caller must add it to the location of choice in the project.</summary>
-        <returns>Returns the Otherwise element.</returns>
+        <returns>The Otherwise element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1050,7 +1050,7 @@
         <param name="itemType">The item that receives the task's output parameter value.</param>
         <param name="propertyName">The property that receives the task's output parameter value.</param>
         <summary>Creates an <see href="https://msdn.microsoft.com/library/34bc7cd1-efd3-4b57-b691-4584eeb6a0e9">Output Element (MSBuild)</see>.</summary>
-        <returns>Returns the Output element.</returns>
+        <returns>The Output element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1079,7 +1079,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a <see href="https://msdn.microsoft.com/library/f95f312f-ff92-41eb-9469-ad99e236a307">ProjectExtensions Element (MSBuild)</see>.</summary>
-        <returns>Returns the ProjectExtensions element.</returns>
+        <returns>The ProjectExtensions element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1111,7 +1111,7 @@
       <Docs>
         <param name="name">The name of the property.</param>
         <summary>Creates a property.</summary>
-        <returns>Returns the property.</returns>
+        <returns>The property.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1140,7 +1140,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a property group.</summary>
-        <returns>Returns the property group.</returns>
+        <returns>The property group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1172,7 +1172,7 @@
       <Docs>
         <param name="name">The name of the target.</param>
         <summary>Creates a target.</summary>
-        <returns>Returns the target.</returns>
+        <returns>The target.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1204,7 +1204,7 @@
       <Docs>
         <param name="name">The name of the task.</param>
         <summary>Creates a task.</summary>
-        <returns>Returns the task.</returns>
+        <returns>The task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1238,7 +1238,7 @@
         <param name="evaluate">The string to evaluate.</param>
         <param name="body">The body to add.</param>
         <summary>Creates a task to be referenced by a <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see>.</summary>
-        <returns>Returns the task.</returns>
+        <returns>The task.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1283,12 +1283,12 @@
         <param name="assemblyFile">The file path to the assembly.</param>
         <param name="assemblyName">The name of the assembly to load.</param>
         <summary>Adds a <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
-        <returns>Returns the UsingTask element.</returns>
+        <returns>The UsingTask element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Caller must add the UsingTask element to the location of choice in the project. Either the `assemblyName` or `assemblyFile` must be null, but not both.  
+The caller must add the UsingTask element to the location of choice in the project. Either the `assemblyName` or `assemblyFile` must be `null`, but not both.  
   
  ]]></format>
         </remarks>
@@ -1323,7 +1323,7 @@
         <param name="runtime">Optional runtime specifier.</param>
         <param name="architecture">Optional architecture specifier.</param>
         <summary>Adds a <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> to the project.</summary>
-        <returns>Returns the UsingTask element.</returns>
+        <returns>The UsingTask element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1361,7 +1361,7 @@
         <param name="required">A user-defined task parameter that contains the parameter value as its value.</param>
         <param name="parameterType">The type of the parameter.</param>
         <summary>Creates a parameter for use in a <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> parameter group.</summary>
-        <returns>Returns the parameter.</returns>
+        <returns>The parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1390,7 +1390,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a parameter group for a <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see>.</summary>
-        <returns>Returns the parameter group.</returns>
+        <returns>The parameter group.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1422,7 +1422,7 @@
       <Docs>
         <param name="condition">The value of the Condition attribute.</param>
         <summary>Creates a <see href="https://msdn.microsoft.com/library/eb27de6f-4e71-4e87-87e2-d93f7bf5899c">When Element (MSBuild)</see> with a specified Condition attribute.</summary>
-        <returns>Returns the When element.</returns>
+        <returns>The When element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1458,7 +1458,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the DefaultTargets attribute.</summary>
-        <value>Returns the value of the DefaultTargets attribute. Returns an empty string if the attribute is not present.</value>
+        <value>The value of the DefaultTargets attribute, or an empty string if the DefaultTargets attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1486,7 +1486,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the DefaultTargets attribute on this element, if any.</summary>
-        <value>Returns  the DefaultTargets attribute location. If there is no such attribute, returns null.</value>
+        <value>The DefaultTargets attribute location, or <see langword="null" /> if there is no DefaultTargets attribute.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1522,7 +1522,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the directory path to the project file.</summary>
-        <value>Returns the directory path, which is never null. If the project is not loaded from disk, returns the current-directory at the time the project was loaded.</value>
+        <value>The directory path, which is never <see langword="null" />. If the project is not loaded from disk, returns the current directory at the time the project was loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1549,8 +1549,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the character encoding that the project file is to be saved in.</summary>
-        <value>Returns the character encoding that the project file is to be saved in.</value>
+        <summary>Gets the character encoding that the project file is to be saved in.</summary>
+        <value>The character encoding that the project file is to be saved in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1578,7 +1578,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the full path to the project file.</summary>
-        <value>Returns the full path to the project file. If the project is not loaded from disk, returns null.</value>
+        <value>The full path to the project file, or <see langword="null" /> if the project is not loaded from disk.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1599,7 +1599,7 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether the project has been modified since it was last loaded or saved.</summary>
-        <value>Returns true if the project has been modified; false otherwise.</value>
+        <value><see langword="true" /> if the project has been modified; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1620,7 +1620,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child import groups in this project.</summary>
-        <value>Returns all the child import groups in this project.</value>
+        <value>All the child import groups in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1641,7 +1641,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child import groups in this project, starting with the last group.</summary>
-        <value>Returns all the child import groups in this project, starting with the last group.</value>
+        <value>All the child import groups in this project, starting with the last group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1662,7 +1662,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child import elements in this project.</summary>
-        <value>Gets all the child import elements in this project.</value>
+        <value>All the child import elements in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1691,7 +1691,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the InitialTargets attribute.</summary>
-        <value>Returns the InitialTargets attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The InitialTargets attribute value, or an empty string if the InitialTargets attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1719,7 +1719,7 @@
       </ReturnValue>
       <Docs>
         <summary>Location of the InitialTargets attribute on this element, if any.</summary>
-        <value>Returns InitialTargets attribute location. If there is no such attribute, returns null.</value>
+        <value>The location of the InitialTargets attribute, or <see langword="null" /> if there is no InitialTargets attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1740,7 +1740,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child item definition groups in this project.</summary>
-        <value>Returns all the child item definition groups in this project.</value>
+        <value>All the child item definition groups in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1761,7 +1761,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child item definition groups in this project, starting with the last group.</summary>
-        <value>Returns all the child item definition groups in this project, starting with the last group.</value>
+        <value>All the child item definition groups in this project, starting with the last group.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1803,7 +1803,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child item groups in this project.</summary>
-        <value>Returns all the child item groups in this project.</value>
+        <value>All the child item groups in this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1831,7 +1831,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child item groups present in this project, starting with the last group.</summary>
-        <value>Returns all the child item groups present in this project, starting with the last group.</value>
+        <value>All the child item groups present in this project, starting with the last group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1859,7 +1859,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child items in this project.</summary>
-        <value>Returns all child items in this project, even if they are contained by Choose elements.</value>
+        <value>All child items in this project, even if they are contained by Choose elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1888,7 +1888,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the last-write-time of the project file.</summary>
-        <value>Gets the last-write-time of the project file.</value>
+        <value>The last-write-time of the project file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1929,7 +1929,7 @@
       <Docs>
         <param name="path">The file path to the data.</param>
         <summary>Initializes a project root in the global project collection by loading data from the specified file path.</summary>
-        <returns>Returns the initialized project root.</returns>
+        <returns>The initialized project root.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1962,7 +1962,7 @@
         <param name="path">The file path to the data.</param>
         <param name="projectCollection">The project collection containing the project to be initialized.</param>
         <summary>Initializes a project root in the specified project collection by loading data from the specified file path.</summary>
-        <returns>Returns the initialized project root.</returns>
+        <returns>The initialized project root.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1989,8 +1989,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The location of the originating file itself, not any specific content within it. If the file has not been given a name, this is an empty location. This is a legitimate case of having no location.</summary>
-        <value>Returns the originating file location or an empty location.</value>
+        <summary>Gets the location of the originating file itself, not any specific content within it. If the file has not been given a name, this is an empty location. This is a legitimate case of having no location.</summary>
+        <value>The location of the originating file, or an empty location if the file has not been given a name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2011,7 +2011,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child properties in this project.</summary>
-        <value>Returns all child properties in this project, even if they are contained by Choose elements.</value>
+        <value>All child properties in this project, even if they are contained by Choose elements.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2032,7 +2032,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child property groups in this project.</summary>
-        <value>Returns all the child property groups in this project.</value>
+        <value>All the child property groups in this project.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2060,7 +2060,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child property groups present in this project, starting with the last group.</summary>
-        <value>Returns all the child property groups present in this project, starting with the last group.</value>
+        <value>All the child property groups present in this project, starting with the last group.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2088,7 +2088,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the XML content that represents this project.</summary>
-        <value>Returns the XML content that represents this project as a string.</value>
+        <value>The XML content that represents this project as a string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2278,7 +2278,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all the child targets in this project.</summary>
-        <value>Returns all the child targets in this project.</value>
+        <value>All the child targets in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2304,7 +2304,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the time that this project was last modified.</summary>
-        <value>Returns the time that this project was last modified. Returns null if the project hasn't been modified since being created or loaded.</value>
+        <value>The time that this project was last modified.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2333,7 +2333,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the ToolsVersion attribute.</summary>
-        <value>Returns the ToolsVersion attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The ToolsVersion attribute value, or an empty string if the ToolsVersion attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2360,8 +2360,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The location of the ToolsVersion attribute on this element, if any.</summary>
-        <value>Returns the ToolsVersion attribute location. If there is no such attribute, returns null.</value>
+        <summary>Gets the location of the ToolsVersion attribute on this element, if any.</summary>
+        <value>The location of the ToolsVersion attribute, or <see langword="null" /> if there is no ToolsVersion attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2390,7 +2390,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value of the TreatAsLocalProperty attribute.</summary>
-        <value>Returns the TreatAsLocalProperty attribute value. Returns an empty string if the attribute is not present.</value>
+        <value>The TreatAsLocalProperty attribute value, or an empty string if the TreatAsLocalProperty attribute is not present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2419,8 +2419,8 @@
         <ReturnType>Microsoft.Build.Construction.ElementLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The location of the TreatAsLocalProperty attribute on this element, if any.</summary>
-        <value>Returns the TreatAsLocalProperty attribute location. If there is no such attribute, returns null.</value>
+        <summary>Gets the location of the TreatAsLocalProperty attribute on this element, if any.</summary>
+        <value>The TreatAsLocalProperty attribute location, or <see langword="null" /> if there is no TreatAsLocalProperty attribute.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2430,7 +2430,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets the project root in the global project collection that was loaded into memory from the specified file path. or null if it is not currently in memory.</summary>
+        <summary>Gets the project root in the global project collection that was loaded into memory from the specified file path. or <see langword="null" /> if it is not currently in memory.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryOpen">
@@ -2452,9 +2452,9 @@
         <Parameter Name="path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="path">The path of the ProjectRootElement, cannot be null.</param>
-        <summary>Gets the project root in the global project collection that was loaded into memory from the specified file path. or null if it is not currently in memory.</summary>
-        <returns>Returns the project root. Returns null if no project was loaded into memory from the specified file path.</returns>
+        <param name="path">The path of the ProjectRootElement, cannot be <see langword="null" />.</param>
+        <summary>Gets the project root in the global project collection that was loaded into memory from the specified file path.</summary>
+        <returns>The project root, or <see langword="null" /> if no project was loaded into memory from the specified file path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2484,15 +2484,15 @@
         <Parameter Name="projectCollection" Type="Microsoft.Build.Evaluation.ProjectCollection" />
       </Parameters>
       <Docs>
-        <param name="path">The path of the ProjectRootElement, cannot be null.</param>
+        <param name="path">The path of the ProjectRootElement, cannot be <see langword="null" />.</param>
         <param name="projectCollection">The project collection to search for the project root.</param>
-        <summary>Gets the project root in the specified project collection that was loaded into memory from the specified file path. or null if it is not currently in memory.</summary>
-        <returns>Returns the project root. Returns null if no project was loaded into memory from the specified file path.</returns>
+        <summary>Gets the project root in the specified project collection that was loaded into memory from the specified file path.</summary>
+        <returns>The project root, or <see langword="null" /> if no project was loaded into memory from the specified file path.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- It is possible for ProjectRootElements to be brought into memory and discarded due to memory pressure. If TryOpen returns null it does not indicate that the project root has never been loaded, only that it is not currently in memory.  
+ It is possible for ProjectRootElements to be brought into memory and discarded due to memory pressure. If TryOpen returns `null` it does not indicate that the project root has never been loaded, only that it is not currently in memory.  
   
  ]]></format>
         </remarks>
@@ -2515,7 +2515,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets all child <see href="https://msdn.microsoft.com/library/20247902-9446-4a1f-8253-5c7a17e4fe43">UsingTask Element (MSBuild)</see> in this project.</summary>
-        <value>Returns all child UsingTask elements in this project.</value>
+        <value>All child UsingTask elements in this project.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2541,7 +2541,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the version number of this object.</summary>
-        <value>Returns the version number of this object.</value>
+        <value>The version number of this object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

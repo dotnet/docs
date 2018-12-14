@@ -145,7 +145,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the error code (if any) associated with the exception message.</summary>
-        <value>Returns the error code as a string; returns a null string if no error code exists.</value>
+        <value>The error code as a string, or a null string if no error code exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

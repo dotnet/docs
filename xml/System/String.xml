@@ -256,6 +256,8 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
 <a name="casing"></a>   
 ### Casing  
  Casing rules determine how to change the capitalization of a Unicode character; for example, from lowercase to uppercase. Often, a casing operation is performed before a string comparison. For example, a string might be converted to uppercase so that it can be compared with another uppercase string. You can convert the characters in a string to lowercase by calling the <xref:System.String.ToLower%2A> or <xref:System.String.ToLowerInvariant%2A> method, and you can convert them to uppercase by calling the <xref:System.String.ToUpper%2A> or <xref:System.String.ToUpperInvariant%2A> method. In addition, you can use the <xref:System.Globalization.TextInfo.ToTitleCase%2A?displayProperty=nameWithType> method to convert a string to title case.  
+
+[!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]  
   
  Casing operations can be based on the rules of the current culture, a specified culture, or the invariant culture. Because case mappings can vary depending on the culture used, the result of casing operations can vary based on culture. The actual differences in casing are of three kinds:  
   

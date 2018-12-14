@@ -56,7 +56,9 @@
 > [!NOTE]
 >  When possible, you should use string comparison methods that accept a <xref:System.Globalization.CompareOptions> value to specify the kind of comparison expected. As a general rule, user-facing comparisons are best served by the use of linguistic options (using the current culture), while security comparisons should specify `Ordinal` or `OrdinalIgnoreCase`.
   
-   
+### Notes on culture-sensitive sorts
+
+[!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]  
   
 ## Examples  
  The following code example shows how sorting with StringSort differs from sorting without StringSort.  

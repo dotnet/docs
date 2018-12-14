@@ -428,7 +428,7 @@ The following example demonstrates the properties and the <xref:System.StringCom
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/best-practices-strings.md">Best Practices for Using Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentCultureIgnoreCase">
@@ -462,15 +462,17 @@ The following example demonstrates the properties and the <xref:System.StringCom
       </ReturnValue>
       <Docs>
         <summary>Gets a <see cref="T:System.StringComparer" /> object that performs case-insensitive string comparisons using the word comparison rules of the current culture.</summary>
-        <value>A new <see cref="T:System.StringComparer" /> object.</value>
+        <value>A new object for string comparison.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The current culture is the <xref:System.Globalization.CultureInfo> object associated with the current thread.  
+ The current culture is the <xref:System.Globalization.CultureInfo> object associated with the current thread; it is returned by the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property.
   
  The <xref:System.StringComparer> returned by the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property can be used when strings are linguistically relevant but their case is not. For example, if strings are displayed to the user but case is unimportant, culture-sensitive, case-insensitive string comparison should be used to order the string data.  
-  
+
+[!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]  
+
  The <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property actually returns an instance of an anonymous class derived from the <xref:System.StringComparer> class.  
   
  Each call to the <xref:System.StringComparer.CurrentCultureIgnoreCase%2A> property `get` accessor returns a new <xref:System.StringComparer> object, as the following code shows.  
@@ -482,7 +484,7 @@ The following example demonstrates the properties and the <xref:System.StringCom
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/best-practices-strings.md">Best Practices for Using Strings in .NET</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Equals">
@@ -795,7 +797,7 @@ The following example demonstrates the properties and the <xref:System.StringCom
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/best-practices-strings.md">Best Practices for Using Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="InvariantCultureIgnoreCase">
@@ -839,7 +841,7 @@ The following example demonstrates the properties and the <xref:System.StringCom
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/best-practices-strings.md">Best Practices for Using Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="Ordinal">
@@ -893,7 +895,7 @@ The following example demonstrates the properties and the <xref:System.StringCom
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/best-practices-strings.md">Best Practices for Using Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="OrdinalIgnoreCase">
@@ -947,7 +949,7 @@ The following example demonstrates the properties and the <xref:System.StringCom
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7">Best Practices for Using Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/best-practices-strings.md">Best Practices for Using Strings in .NET</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IComparer.Compare">

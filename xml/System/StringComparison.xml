@@ -48,6 +48,8 @@
   
  An operation that uses word sort rules performs a culture-sensitive comparison wherein certain nonalphanumeric Unicode characters might have special weights assigned to them. Using word sort rules and the conventions of a specific culture, the hyphen ("-") might have a very small weight assigned to it so that "coop" and "co-op" appear next to each other in a sorted list.  
   
+[!INCLUDE[platform-note](~/includes/c-and-posix-cultures.md)]  
+  
  An operation that uses ordinal sort rules performs a comparison based on the numeric value (Unicode code point) of each <xref:System.Char> in the string. An ordinal comparison is fast but culture-insensitive. When you use ordinal sort rules to sort strings that start with Unicode characters (U+), the string U+xxxx comes before the string U+yyyy if the value of xxxx is numerically less than yyyy.  
   
  For more information about comparisons, see the <xref:System.String?displayProperty=nameWithType> class remarks. For more information about culture, see the <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> class remarks. For guidelines on when to use ordinal or culture-sensitive comparison rules or the rules of the invariant culture, see [Best Practices for Using Strings](~/docs/standard/base-types/best-practices-strings.md). For a set of text files that contain information on the character weights used in sorting and comparison operations for Windows operating systems, see [Sorting Weight Tables](https://www.microsoft.com/en-us/download/details.aspx?id=10921). For the sort weight table for Linux and macOS, see the [Default Unicode Collation Element Table](https://www.unicode.org/Public/UCA/latest/allkeys.txt).   

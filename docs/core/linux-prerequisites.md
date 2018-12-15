@@ -73,7 +73,7 @@ Ubuntu                        | 16.04+, 18.04+        | x64, ARM32\*, ARM64\*
 Linux Mint                    | 18                    | x64
 openSUSE                      | 42.3+                 | x64
 SUSE Enterprise Linux (SLES)  | 12 SP2+               | x64
-Alpine Linux                  | 3.8+                  | x64
+Alpine Linux                  | 3.8+                  | x64, ARM64
 
 \* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distros are not supported on ARM chips.
 

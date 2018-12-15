@@ -59,8 +59,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the object should be deleted when the association is set to null.</summary>
-        <value>If <see langword="true" />, the object is deleted when the association is set to null.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the object should be deleted when the association is set to <see langword="null" />.</summary>
+        <value><see langword="true" /> if the object is deleted when the association is set to <see langword="null" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +81,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the behavior when the child is deleted.</summary>
+        <summary>When overridden in a derived class, gets the behavior when the child is deleted.</summary>
         <value>The string representing the rule, or <see langword="null" /> if no action is specified on delete.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -110,8 +110,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the other type is the parent of this type.</summary>
-        <value>Returns <see langword="true" /> is the other type is the parent of this type.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the other type is the parent of this type.</summary>
+        <value><see langword="true" /> is the other type is the parent of this type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the association represents a one-to-many relationship.</summary>
-        <value>Returns <see langword="true" /> if the association represents a one-to-many relationship.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the association represents a one-to-many relationship.</summary>
+        <value><see langword="true" /> if the association represents a one-to-many relationship; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the association can be null.</summary>
-        <value>Returns <see langword="true" /> if the association can be null.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the association can be <see langword="null" />.</summary>
+        <value><see langword="true" /> if the association can be <see langword="null" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +176,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the association is unique.</summary>
-        <value>Returns <see langword="true" /> if the association is unique.</value>
+        <summary>When overridden in a derived class, gets a value that indicates whether the association is unique.</summary>
+        <value><see langword="true" /> if the association is unique; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -205,8 +205,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of members that represents the values on the other side of the association.</summary>
-        <value>Returns a collection representing values on the other side of the association.</value>
+        <summary>When overridden in a derived class, gets a list of members that represents the values on the other side of the association.</summary>
+        <value>A collection representing values on the other side of the association.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,9 +227,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the <see cref="P:System.Data.Linq.Mapping.MetaAssociation.OtherKey" /> forms the identity of the other type.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the <see cref="P:System.Data.Linq.Mapping.MetaAssociation.OtherKey" /> forms the identity of the other type.</summary>
         <value>
-          <see langword="true" /> if the <see cref="P:System.Data.Linq.Mapping.MetaAssociation.OtherKey" /> forms the identity (primary key) of the other type.</value>
+          <see langword="true" /> if the <see cref="P:System.Data.Linq.Mapping.MetaAssociation.OtherKey" /> forms the identity (primary key) of the other type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,8 +250,8 @@
         <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the member on the other side of this association that represents the reverse association.</summary>
-        <value>The member on the other side.</value>
+        <summary>When overridden in a derived class, gets the member on the other side of this association that represents the reverse association.</summary>
+        <value>The member on the other side of this association that represents the reverse association.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -279,8 +279,8 @@
         <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type on the other side of the association.</summary>
-        <value>The type.</value>
+        <summary>When overridden in a derived class, gets the type on the other side of the association.</summary>
+        <value>The type on the other side of the association.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -301,8 +301,8 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of members representing the values on this side of the association.</summary>
-        <value>A collection.</value>
+        <summary>When overridden in a derived class, gets a list of members representing the values on this side of the association.</summary>
+        <value>A collection representing the values on this side of the association.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -323,9 +323,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether <see cref="P:System.Data.Linq.Mapping.MetaAssociation.ThisKey" /> forms the identity of this type.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether <see cref="P:System.Data.Linq.Mapping.MetaAssociation.ThisKey" /> forms the identity of this type.</summary>
         <value>
-          <see langword="true" /> if <see cref="P:System.Data.Linq.Mapping.MetaAssociation.ThisKey" /> forms the identity (primary key) of the association.</value>
+          <see langword="true" /> if <see cref="P:System.Data.Linq.Mapping.MetaAssociation.ThisKey" /> forms the identity (primary key) of the association; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,8 +346,8 @@
         <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the member on this side that represents the association.</summary>
-        <value>The member.</value>
+        <summary>When overridden in a derived class, gets the member on this side that represents the association.</summary>
+        <value>The member on this side that represents the association.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

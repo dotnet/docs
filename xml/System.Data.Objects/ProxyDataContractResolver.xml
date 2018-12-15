@@ -69,7 +69,7 @@
         <param name="declaredType">The declared type.</param>
         <param name="knownTypeResolver">An instance of <see cref="T:System.Data.Objects.ProxyDataContractResolver" />.</param>
         <summary>During deserialization, maps any <see langword="xsi:type" /> information to the actual type of the [persistence-ignorant](https://msdn.microsoft.com/library/5e0fb82a-b6d1-41a1-b37b-c12db61629d3) object.</summary>
-        <returns>Returns the type that the <see langword="xsi:type" /> is mapped to. Returns <see langword="null" /> if no known type was found that matches the <see langword="xsi:type" />.</returns>
+        <returns>The type that the <see langword="xsi:type" /> is mapped to, or <see langword="null" /> if no known type was found that matches the <see langword="xsi:type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

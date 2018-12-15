@@ -563,7 +563,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">The <see cref="T:System.Object" /> value.</param>
         <summary>Determines whether the specified <see cref="T:System.Object" /> is in this <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> contains the value otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> contains the value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
@@ -1027,7 +1027,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> has a fixed size. Read-only.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> has a fixed size, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Working with Commands</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>

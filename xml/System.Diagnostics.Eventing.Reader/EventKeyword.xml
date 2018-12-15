@@ -48,7 +48,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the localized name of the keyword.</summary>
-        <value>Returns a string that contains a localized name for this keyword.</value>
+        <value>A string that contains a localized name for this keyword.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -72,7 +72,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the non-localized name of the keyword.</summary>
-        <value>Returns a string that contains the non-localized name of this keyword.</value>
+        <value>A string that contains the non-localized name of this keyword.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -101,7 +101,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the numeric value associated with the keyword.</summary>
-        <value>Returns a <see langword="long" /> value.</value>
+        <value>The numeric value associated with the keyword.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

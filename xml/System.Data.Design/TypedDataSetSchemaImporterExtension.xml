@@ -155,7 +155,7 @@
         <param name="options">The <see cref="T:System.Xml.Serialization.CodeGenerationOptions" /> that specifies various options to use when generating .NET Framework types for use with an XML Web service.</param>
         <param name="codeProvider">The language specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
         <summary>Generates internal type mapping information for an element defined in an XML schema document.</summary>
-        <returns>Returns a <see cref="T:System.String" /> representing the name of the typed dataset class.</returns>
+        <returns>A string representing the name of the typed dataset class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -207,7 +207,7 @@
         <param name="options">The <see cref="T:System.Xml.Serialization.CodeGenerationOptions" /> that specifies various options to use when generating .NET Framework types for use with an XML Web service.</param>
         <param name="codeProvider">The language specific <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> to use to generate the dataset.</param>
         <summary>Generates internal type mapping information for an element defined in an XML schema document.</summary>
-        <returns>Returns a <see cref="T:System.String" /> representing the name of the typed dataset class.</returns>
+        <returns>A <see cref="T:System.String" /> representing the name of the typed dataset class.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

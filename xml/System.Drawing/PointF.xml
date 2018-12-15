@@ -422,7 +422,7 @@
         <param name="pt">The <see cref="T:System.Drawing.PointF" /> to translate.</param>
         <param name="sz">A <see cref="T:System.Drawing.Size" /> that specifies the pair of numbers to add to the coordinates of <paramref name="pt" />.</param>
         <summary>Translates a <see cref="T:System.Drawing.PointF" /> by a given <see cref="T:System.Drawing.Size" />.</summary>
-        <returns>Returns the translated <see cref="T:System.Drawing.PointF" />.</returns>
+        <returns>The translated <see cref="T:System.Drawing.PointF" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

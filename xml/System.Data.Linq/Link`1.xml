@@ -140,7 +140,7 @@
       <Docs>
         <summary>Specifies whether the <see cref="T:System.Data.Linq.Link`1" /> has loaded or assigned a value.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Data.Linq.Link`1" /> has either loaded or assigned a value; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Data.Linq.Link`1" /> has either loaded or assigned a value; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -171,7 +171,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that specifies whether the source has a value.</summary>
-        <value>Returns <see langword="true" /> if the source has an assigned or loaded value (including null).</value>
+        <value><see langword="true" /> if the source has an assigned or loaded value (including null); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -54,7 +54,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of <see cref="T:System.Data.Linq.DataContext" /> type that this model describes.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.DataContext" /> type that this model describes.</summary>
         <value>The data context type.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,7 +76,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the database.</summary>
+        <summary>When overridden in a derived class, gets the name of the database.</summary>
         <value>The database name as a string.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +102,7 @@
       </Parameters>
       <Docs>
         <param name="method">The method defined on the <see cref="T:System.Data.Linq.DataContext" /> or subordinate class that represents the database function.</param>
-        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaFunction" /> that corresponds to a database function.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.Mapping.MetaFunction" /> that corresponds to a database function.</summary>
         <returns>The meta-function that corresponds to a database function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -132,7 +132,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumeration of all functions.</summary>
+        <summary>When overridden in a derived class, gets an enumeration of all functions.</summary>
         <returns>An enumeration that can be used to iterate through all functions.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +157,7 @@
       </Parameters>
       <Docs>
         <param name="type">The type for which the <see cref="T:System.Data.Linq.Mapping.MetaType" /> is sought.</param>
-        <summary>Discovers the <see cref="T:System.Data.Linq.Mapping.MetaType" /> for the specified <see cref="T:System.Type" />.</summary>
+        <summary>When overridden in a derived class, discovers the <see cref="T:System.Data.Linq.Mapping.MetaType" /> for the specified <see cref="T:System.Type" />.</summary>
         <returns>A meta-type that corresponds to the specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,7 +183,7 @@
       </Parameters>
       <Docs>
         <param name="rowType">The common language runtime (CLR) row type.</param>
-        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaTable" /> associated with a specified <see cref="T:System.Type" />.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.Mapping.MetaTable" /> associated with a specified <see cref="T:System.Type" />.</summary>
         <returns>A meta-table associated with the specified row type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,7 +206,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get an enumeration of all tables.</summary>
+        <summary>When overridden in a derived class, gets an enumeration of all tables.</summary>
         <returns>An enumerator that can be used to iterate over the tables.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +228,7 @@
         <ReturnType>System.Data.Linq.Mapping.MappingSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the mapping source that originated this model.</summary>
+        <summary>When overridden in a derived class, gets the mapping source that originated this model.</summary>
         <value>The originating mapping source.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -250,7 +250,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the provider type.</summary>
+        <summary>When overridden in a derived class, gets or sets the provider type.</summary>
         <value>The provider type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

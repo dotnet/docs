@@ -257,7 +257,7 @@
         <param name="targetString">The string being compared.</param>
         <param name="substring">The string to compare to.</param>
         <summary>Determines whether the end of one string matches another string.</summary>
-        <returns>Returns <see langword="true" /> when <paramref name="targetString" /> ends with <paramref name="substring" />; otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="targetString" /> ends with <paramref name="substring" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -292,7 +292,7 @@
         <param name="left">The first object to compare.</param>
         <param name="right">The second object to compare.</param>
         <summary>Determines whether the specified objects are considered equal.</summary>
-        <returns>A <see cref="T:System.Boolean" /> value of <see langword="true" /> when both objects are equal; otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if both objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,7 +318,7 @@
       <Docs>
         <param name="value">The <see cref="T:System.Decimal" /> or <see cref="T:System.Double" /> object to evaluate.</param>
         <summary>Returns the floor of the given value.</summary>
-        <returns>Returns the floor value for the given object.</returns>
+        <returns>The floor value for the given object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,7 +374,7 @@
         <param name="left">The first value.</param>
         <param name="right">The second value.</param>
         <summary>Determines whether the value of one object is greater than another object.</summary>
-        <returns>Returns <see langword="true" /> when the value of the first object is greater than that of the second object; otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value of the first object is greater than that of the second object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -402,7 +402,7 @@
         <param name="left">The first value.</param>
         <param name="right">The second value.</param>
         <summary>Determines whether the value of one object is greater than or equal to another object.</summary>
-        <returns>Returns <see langword="true" /> when the value of the first object is greater than or equal to that of the second object; otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value of the first object is greater than or equal to that of the second object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -456,7 +456,7 @@
         <param name="targetString">The target string.</param>
         <param name="substring">The substring to find.</param>
         <summary>Returns the index of a substring in the target string.</summary>
-        <returns>Returns the index of the location of <paramref name="substring" /> in the <paramref name="targetString" />.</returns>
+        <returns>The index of the location of <paramref name="substring" /> in the <paramref name="targetString" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -524,7 +524,7 @@
         <param name="left">The first value.</param>
         <param name="right">The second value.</param>
         <summary>Determines whether the value of one object is less than another object.</summary>
-        <returns>Returns <see langword="true" /> when the value of the first object is less than that of the second object; otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value of the first object is less than that of the second object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,7 +552,7 @@
         <param name="left">The first value.</param>
         <param name="right">The second value.</param>
         <summary>Determines whether the value of one object is less than or equal to another object.</summary>
-        <returns>Returns <see langword="true" /> when the value of the first object is less than or equal to that of the second object; otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value of the first object is less than or equal to that of the second object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,7 +747,7 @@
         <param name="left">The first value.</param>
         <param name="right">The second value.</param>
         <summary>Performs a logical comparison of the two values to determine if they are not equal.</summary>
-        <returns>A <see cref="T:System.Boolean" /> value of <see langword="true" /> when both objects are not equal; otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if both objects are not equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -885,7 +885,7 @@
         <param name="targetString">The string being compared.</param>
         <param name="substring">The substring that the <paramref name="targetString" /> might start with.</param>
         <summary>Checks whether the target string starts with the substring.</summary>
-        <returns>Returns <see langword="true" /> if the target string starts with the given substring, otherwise returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the target string starts with the given substring; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -995,7 +995,7 @@
         <param name="targetString">The string to search.</param>
         <summary>Determines whether a substring occurs in another string.</summary>
         <returns>
-          <see langword="true" /> when <paramref name="substring" /> occurs in <paramref name="targetString" />, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="substring" /> occurs in <paramref name="targetString" />, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1129,7 +1129,7 @@
         <param name="value">The value to check.</param>
         <param name="type">Resource type for which to check.</param>
         <summary>Checks the type of a specified value.</summary>
-        <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> when the value is of the specified resource type; otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value is of the specified resource type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

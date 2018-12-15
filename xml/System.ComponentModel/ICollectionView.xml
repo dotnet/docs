@@ -377,7 +377,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the end of the collection.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the end of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       </Docs>
@@ -400,7 +400,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the beginning of the collection.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the beginning of the collection; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="P:System.ComponentModel.ICollectionView.CurrentItem" /> of the view is beyond the beginning of the collection; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Data.CollectionView.IsCurrentBeforeFirst" />
       </Docs>

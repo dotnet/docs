@@ -136,7 +136,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the first line of the address.</summary>
-        <value>Returns the first line of the address. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The first line of the address. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the second line of the address.</summary>
-        <value>Returns the second line of the address. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The second line of the address. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,7 +194,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the building name or number.</summary>
-        <value>Returns the building name or number. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The building name or number. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,7 +223,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the city.</summary>
-        <value>Returns the name of the city. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The name of the city. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +252,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the country or region of the location.</summary>
-        <value>Returns the country or region code. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The country or region code. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -288,7 +288,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the floor level of the location.</summary>
-        <value>Returns a string that contains the floor level. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>A string that contains the floor level. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +349,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the postal code of the location.</summary>
-        <value>Returns the postal code of the location. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The postal code of the location. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -378,7 +378,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the state or province of the location.</summary>
-        <value>Returns the state or province of the location. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <value>The state or province of the location. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -339,7 +339,7 @@
       <Docs>
         <param name="obj">The <see cref="T:System.Object" /> to test.</param>
         <summary>Tests to see whether the specified object is a <see cref="T:System.Drawing.SizeF" /> structure with the same dimensions as this <see cref="T:System.Drawing.SizeF" /> structure.</summary>
-        <returns>This method returns <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Drawing.SizeF" /> and has the same width and height as this <see cref="T:System.Drawing.SizeF" />; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.Drawing.SizeF" /> and has the same width and height as this <see cref="T:System.Drawing.SizeF" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,7 +462,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this <see cref="T:System.Drawing.SizeF" /> structure has zero width and height.</summary>
-        <value>This property returns <see langword="true" /> when this <see cref="T:System.Drawing.SizeF" /> structure has both a width and height of zero; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> when this <see cref="T:System.Drawing.SizeF" /> structure has both a width and height of zero; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,7 +597,7 @@
         <param name="sz1">The <see cref="T:System.Drawing.SizeF" /> structure on the left side of the equality operator.</param>
         <param name="sz2">The <see cref="T:System.Drawing.SizeF" /> structure on the right of the equality operator.</param>
         <summary>Tests whether two <see cref="T:System.Drawing.SizeF" /> structures are equal.</summary>
-        <returns>This operator returns <see langword="true" /> if <paramref name="sz1" /> and <paramref name="sz2" /> have equal width and height; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="sz1" /> and <paramref name="sz2" /> have equal width and height; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -673,7 +673,7 @@
         <param name="sz1">The <see cref="T:System.Drawing.SizeF" /> structure on the left of the inequality operator.</param>
         <param name="sz2">The <see cref="T:System.Drawing.SizeF" /> structure on the right of the inequality operator.</param>
         <summary>Tests whether two <see cref="T:System.Drawing.SizeF" /> structures are different.</summary>
-        <returns>This operator returns <see langword="true" /> if <paramref name="sz1" /> and <paramref name="sz2" /> differ either in width or height; <see langword="false" /> if <paramref name="sz1" /> and <paramref name="sz2" /> are equal.</returns>
+        <returns><see langword="true" /> if <paramref name="sz1" /> and <paramref name="sz2" /> differ either in width or height; <see langword="false" /> if <paramref name="sz1" /> and <paramref name="sz2" /> are equal.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -856,7 +856,7 @@
       <Parameters />
       <Docs>
         <summary>Converts a <see cref="T:System.Drawing.SizeF" /> structure to a <see cref="T:System.Drawing.PointF" /> structure.</summary>
-        <returns>Returns a <see cref="T:System.Drawing.PointF" /> structure.</returns>
+        <returns>A <see cref="T:System.Drawing.PointF" /> structure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -890,7 +890,7 @@
       <Parameters />
       <Docs>
         <summary>Converts a <see cref="T:System.Drawing.SizeF" /> structure to a <see cref="T:System.Drawing.Size" /> structure.</summary>
-        <returns>Returns a <see cref="T:System.Drawing.Size" /> structure.</returns>
+        <returns>A <see cref="T:System.Drawing.Size" /> structure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

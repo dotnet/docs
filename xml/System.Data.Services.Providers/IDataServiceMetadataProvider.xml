@@ -147,7 +147,7 @@
         <param name="resourceType">A <see cref="T:System.Data.Services.Providers.ResourceType" /> object to evaluate.</param>
         <summary>Determines whether a resource type has derived types.</summary>
         <returns>
-          <see langword="true" /> when <paramref name="resourceType" /> represents an entity that has derived types; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="resourceType" /> represents an entity that has derived types; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,7 +220,7 @@
         <param name="resourceSet">Returns the resource set or a <see langword="null" /> value if a resource set with the given <paramref name="name" /> is not found.</param>
         <summary>Tries to get a resource set based on the specified name.</summary>
         <returns>
-          <see langword="true" /> when resource set with the given <paramref name="name" /> is found; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the resource set with the given <paramref name="name" /> is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,7 +249,7 @@
         <param name="resourceType">Returns the resource type or a <see langword="null" /> value if a resource type with the given <paramref name="name" /> is not found.</param>
         <summary>Tries to get a resource type based on the specified name.</summary>
         <returns>
-          <see langword="true" /> when resource type with the given <paramref name="name" /> is found; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the resource type with the given <paramref name="name" /> is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +278,7 @@
         <param name="serviceOperation">Returns the service operation or a <see langword="null" /> value if a service operation with the given <paramref name="name" /> is not found.</param>
         <summary>Tries to get a service operation based on the specified name.</summary>
         <returns>
-          <see langword="true" /> when service operation with the given <paramref name="name" /> is found; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the service operation with the given <paramref name="name" /> is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

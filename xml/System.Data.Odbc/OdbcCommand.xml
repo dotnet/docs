@@ -743,7 +743,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <Docs>
         <summary>Gets or sets a value that indicates whether the command object should be visible in a customized interface control.</summary>
         <value>
-          <see langword="true" />, if the command object should be visible in a control; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the command object should be visible in a control; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/40494916-c25a-4cb8-8f7c-fcb8d378464e">Executing a Command</related>
       </Docs>

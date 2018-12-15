@@ -272,7 +272,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.DataViewSettingCollection" /> is read-only.</summary>
-        <value>Returns <see langword="true" />.</value>
+        <value>Always returns <see langword="true" /> to indicate the collection is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

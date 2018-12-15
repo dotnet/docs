@@ -226,7 +226,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       <Docs>
         <param name="keyword">The key to locate in the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" />.</param>
         <summary>Determines whether the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> contains a specific key.</summary>
-        <returns>true if the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> contains an element that has the specified key; otherwise false.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -491,7 +491,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the value to be passed for the OLE DB Services key within the connection string.</summary>
-        <value>Returns the value corresponding to the OLE DB Services key within the connection string. By default, the value is -13.</value>
+        <value>The value corresponding to the OLE DB Services key within the connection string. By default, the value is -13.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -693,7 +693,7 @@ Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Sample.mdb;User ID="Admin;NewVal
         <param name="value">The value corresponding to <paramref name="keyword" />.</param>
         <summary>Retrieves a value corresponding to the supplied key from the <see cref="T:System.Data.OleDb.OleDbConnectionStringBuilder" /> instance.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyword" /> was found within the connection string; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="keyword" /> was found within the connection string; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -501,7 +501,7 @@
         <param name="type">
           <see cref="T:System.Data.Services.Providers.ResourceType" /> to compare with.</param>
         <summary>Determines if the value is of a specified type.</summary>
-        <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the value is of the specified type; otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the value is of the specified type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

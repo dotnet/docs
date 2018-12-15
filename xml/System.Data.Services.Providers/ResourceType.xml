@@ -170,9 +170,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get whether the corresponding instance type represents the CLR type of this entity.</summary>
+        <summary>Gets a value that indicates whether the corresponding instance type represents the CLR type of this entity.</summary>
         <value>
-          <see langword="true" /> if the instance type represents a CLR type; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the instance type represents a CLR type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,7 +335,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a Boolean value that indicates whether this is an abstract type.</summary>
-        <value>True if <see cref="T:System.Data.Services.Providers.ResourceType" /> is abstract.</value>
+        <value><see langword="true" /> if <see cref="T:System.Data.Services.Providers.ResourceType" /> is abstract; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,9 +394,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the resource type has open properties.</summary>
+        <summary>Gets a value that indicates whether the resource type has open properties.</summary>
         <value>
-          <see langword="true" /> if the resource type has open properties defined; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the resource type has open properties defined; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,7 +423,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a Boolean value that is true if this resource type has been set to read-only.</summary>
-        <value>True if this resource type has been set to read-only; otherwise false.</value>
+        <value><see langword="true" /> if this resource type has been set to read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

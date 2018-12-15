@@ -1656,7 +1656,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2187,7 +2187,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.IList" /> has a fixed size.</summary>
-        <value>true if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, false.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.IList" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2214,7 +2214,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value>true if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, false.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2539,7 +2539,7 @@
         <param name="value">The value of the element to remove from the list.</param>
         <param name="equalityComparer">The comparer to use to compare elements for equality.</param>
         <summary>Removes the element with the specified value from the list.</summary>
-        <returns>Returns a new <see cref="T:System.Collections.Immutable.ImmutableList`1" /> with the specified element removed.</returns>
+        <returns>A new <see cref="T:System.Collections.Immutable.ImmutableList`1" /> with the specified element removed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

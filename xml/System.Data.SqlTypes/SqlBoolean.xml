@@ -491,7 +491,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether they are equal.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
@@ -661,7 +661,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is greater than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance; otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -711,7 +711,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is greater than or equal to the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than or equal to the second instance; otherwise <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -809,7 +809,7 @@
       <Docs>
         <summary>Indicates whether this <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure is null.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure is null; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure is null; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -855,7 +855,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the current <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" />.</summary>
+        <summary>Gets a value that indicates whether the current <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" />.</summary>
         <value>
           <see langword="true" /> if <see langword="Value" /> is <see langword="true" />; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -910,7 +910,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance; otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -960,7 +960,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than or equal to the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance; otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1011,7 +1011,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> for equality.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>
@@ -1280,7 +1280,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> for equality.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.Equals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>.]]></format>
         </remarks>
@@ -1818,7 +1818,7 @@
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
         <summary>The false operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is false.</summary>
-        <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is false, <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is <see langword="false" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.False?displayProperty=nameWithType>.]]></format>
         </remarks>
@@ -1863,7 +1863,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> object.</param>
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether the first is greater than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than the second instance; otherwise, <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than the second instance; otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1913,7 +1913,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structures to determine whether the first is greater than or equal to the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is greater than or equal to the second instance; otherwise, <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is greater than or equal to the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2006,7 +2006,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" />.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether they are not equal.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.SqlTypes.SqlBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlString.NotEquals%28System.Data.SqlTypes.SqlString%2CSystem.Data.SqlTypes.SqlString%29?displayProperty=nameWithType>.]]></format>
         </remarks>
@@ -2051,7 +2051,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2101,7 +2101,7 @@
         <param name="x">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <param name="y">A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure.</param>
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether the first is less than or equal to the second.</summary>
-        <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see langword="true" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
+        <returns><see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2236,7 +2236,7 @@
       <Docs>
         <param name="x">The <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure to be tested.</param>
         <summary>The true operator can be used to test the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> to determine whether it is true.</summary>
-        <returns>Returns <see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is true, <see langword="false" /> otherwise.</returns>
+        <returns><see langword="true" /> if the supplied parameter is <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is <see langword="true" />; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.True?displayProperty=nameWithType>.]]></format>
         </remarks>
@@ -2925,7 +2925,7 @@
       <Docs>
         <summary>Gets the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> structure's value. This property is read-only.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" />; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.SqlTypes.SqlNullValueException">The property is set to null.</exception>
         <altmember cref="F:System.Data.SqlTypes.SqlBoolean.False" />

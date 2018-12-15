@@ -95,7 +95,7 @@
       <Docs>
         <param name="item">The specified conflict.</param>
         <summary>Specifies whether a given conflict is a member of the collection.</summary>
-        <returns>Returns true if the specified conflict is a member of the collection.</returns>
+        <returns><see langword="true" /> if the specified conflict is a member of the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,7 +238,7 @@
       <Docs>
         <param name="item">The conflict to remove.</param>
         <summary>Specifies whether the specified conflict is removed from the collection.</summary>
-        <returns>Returns true if the <see cref="T:System.Data.Linq.ObjectChangeConflict" /> is removed from the collection.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Data.Linq.ObjectChangeConflict" /> is removed from the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,7 +365,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
-        <value>Returns <see langword="true" /> if the collection is read-only.</value>
+        <value><see langword="true" /> if the collection is read-only.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -425,7 +425,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
-        <value>Returns <see langword="true" /> if access to the collection is synchronized (thread safe).</value>
+        <value><see langword="true" /> if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -457,7 +457,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.ICollection.IsSynchronized" />.</summary>
-        <value>Returns an object that can be used to synchronize access to the collection.</value>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

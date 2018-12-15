@@ -246,7 +246,7 @@
       <Parameters />
       <Docs>
         <summary>Returns whether serialization processes should serialize the effective value of the <see cref="P:System.ComponentModel.GroupDescription.GroupNames" /> property on instances of this class.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="P:System.ComponentModel.GroupDescription.GroupNames" /> property value should be serialized; otherwise, false.</returns>
+        <returns><see langword="true" /> if the <see cref="P:System.ComponentModel.GroupDescription.GroupNames" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

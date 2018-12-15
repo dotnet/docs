@@ -949,7 +949,7 @@
         <param name="assertPermissions">
           <see langword="true" /> to assert permissions; otherwise, <see langword="false" />.</param>
         <summary>Opens a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
-        <returns>Returns the <see cref="T:System.IO.Stream" /> object specified by <paramref name="streamName" />.</returns>
+        <returns>The object specified by <paramref name="streamName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1031,7 +1031,7 @@
         <param name="assertPermissions">
           <see langword="true" /> to assert permissions; otherwise, <see langword="false" />.</param>
         <summary>Opens a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
-        <returns>Returns the <see cref="T:System.IO.Stream" /> object specified by <paramref name="streamName" />.</returns>
+        <returns>The object specified by <paramref name="streamName" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1063,7 +1063,7 @@
       <Docs>
         <param name="configPath">A string representing the path of the application configuration file.</param>
         <param name="streamName">A string representing the name of the <see cref="T:System.IO.Stream" /> object performing I/O tasks on the configuration file.</param>
-        <summary>Returns a value indicating whether the entire configuration file could be read by a designated <see cref="T:System.IO.Stream" /> object.</summary>
+        <summary>Returns a value that indicates whether the entire configuration file could be read by a designated <see cref="T:System.IO.Stream" /> object.</summary>
         <returns>
           <see langword="true" /> if the entire configuration file could be read by the <see cref="T:System.IO.Stream" /> object designated by <paramref name="streamName" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

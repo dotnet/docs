@@ -59,7 +59,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaAssociation&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumeration of all the associations.</summary>
+        <summary>When overridden in a derived class, gets an enumeration of all the associations.</summary>
         <value>A collection of associations.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the underlying type can be instantiated as the result of a query.</summary>
+        <summary>When overridden in a derived class, gets whether the underlying type can be instantiated as the result of a query.</summary>
         <value>
           <see langword="true" /> if the underlying type can be instantiated as the result of a query; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -104,7 +104,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumeration of all the data members (fields and properties).</summary>
+        <summary>When overridden in a derived class, gets an enumeration of all the data members (fields and properties).</summary>
         <value>A collection of the data members.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +126,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the member that represents the auto-generated identity column.</summary>
+        <summary>When overridden in a derived class, gets the member that represents the auto-generated identity column.</summary>
         <value>The member that represents the auto-generated identity column, or <see langword="null" /> if there is no auto-generated identity column.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +148,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumeration of the immediate derived types in an inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets an enumeration of the immediate derived types in an inheritance hierarchy.</summary>
         <value>An enumeration of meta-types.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -170,7 +170,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the member that represents the inheritance discriminator column.</summary>
+        <summary>When overridden in a derived class, gets the member that represents the inheritance discriminator column.</summary>
         <value>The member that represents the inheritance discriminator column, or <see langword="null" /> if there is none.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +196,7 @@
       </Parameters>
       <Docs>
         <param name="member">The member for which the associated <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> is sought.</param>
-        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> associated with the specified member.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> associated with the specified member.</summary>
         <returns>The <see cref="T:System.Data.Linq.Mapping.MetaDataMember" /> if one is associated with the specified member; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,7 +221,7 @@
       </Parameters>
       <Docs>
         <param name="type">The subtype.</param>
-        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaType" /> for an inheritance subtype.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.Mapping.MetaType" /> for an inheritance subtype.</summary>
         <returns>The <see cref="T:System.Data.Linq.Mapping.MetaType" /> for an inheritance subtype.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,7 +247,7 @@
       </Parameters>
       <Docs>
         <param name="code">The inheritance code.</param>
-        <summary>Gets the meta-type associated with the specified inheritance code.</summary>
+        <summary>When overridden in a derived class, gets the meta-type associated with the specified inheritance code.</summary>
         <returns>The meta-type associated with the specified inheritance code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,7 +269,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the current <see cref="T:System.Data.Linq.Mapping.MetaType" /> or any of its bases types has an <c>OnLoaded</c> method.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the current <see cref="T:System.Data.Linq.Mapping.MetaType" /> or any of its bases types has an <c>OnLoaded</c> method.</summary>
         <value>
           <see langword="true" /> if the meta-type or any base meta-type has an <c>OnLoaded</c> method; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -292,7 +292,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the <see cref="T:System.Data.Linq.Mapping.MetaType" /> or any of its bases types has an <c>OnValidate</c> method.</summary>
+        <summary>When overridden in a derived class, gets a value that indicates whether the <see cref="T:System.Data.Linq.Mapping.MetaType" /> or any of its bases types has an <c>OnValidate</c> method.</summary>
         <value>
           <see langword="true" /> if the meta-type or any base meta-type has an <c>OnValidate</c> method; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -315,7 +315,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the type is part of a mapped inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether the type is part of a mapped inheritance hierarchy.</summary>
         <value>
           <see langword="true" /> if the type is part of a mapped inheritance hierarchy; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -338,7 +338,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this type defines an inheritance code.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether this type defines an inheritance code.</summary>
         <value>
           <see langword="true" /> if this type defines an inheritance code; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -361,7 +361,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the type has any persistent member that may require a test for optimistic concurrency conflicts.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether the type has any persistent member that may require a test for optimistic concurrency conflicts.</summary>
         <value>
           <see langword="true" /> if the type has any persistent member with an <see cref="T:System.Data.Linq.Mapping.UpdateCheck" /> policy other than <see cref="F:System.Data.Linq.Mapping.UpdateCheck.Never" />; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -384,7 +384,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an enumeration of all the data members that define the unique identity of the type.</summary>
+        <summary>When overridden in a derived class, gets an enumeration of all the data members that define the unique identity of the type.</summary>
         <value>An enumeration of members that define the unique identity of the type.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -406,7 +406,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the base meta-type in the inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets the base meta-type in the inheritance hierarchy.</summary>
         <value>The base meta-type for the current inheritance hierarchy.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,7 +428,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this type defines an inheritance code.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether this type defines an inheritance code.</summary>
         <value>
           <see langword="true" /> if this type defines an inheritance code; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -451,7 +451,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this type is used as the default of an inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether this type is used as the default of an inheritance hierarchy.</summary>
         <value>The metadata for the default type in the inheritance mapping.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -473,7 +473,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the root type of the inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets the root type of the inheritance hierarchy.</summary>
         <value>The root type.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -495,7 +495,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaType&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all types that are defined by an inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets a collection of all types that are defined by an inheritance hierarchy.</summary>
         <value>A collection of meta-types in the current inheritance hierarchy.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -517,7 +517,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Data.Linq.Mapping.MetaType" /> is an entity type.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether the <see cref="T:System.Data.Linq.Mapping.MetaType" /> is an entity type.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Linq.Mapping.MetaType" /> is an entity type; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -540,7 +540,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this type is used as the default of an inheritance hierarchy.</summary>
+        <summary>When overridden in a derived class, gets a value indicating whether this type is used as the default of an inheritance hierarchy.</summary>
         <value>
           <see langword="true" /> if this type is used as the default of an inheritance hierarchy; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -563,7 +563,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaModel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaModel" /> that contains this <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.Mapping.MetaModel" /> that contains this <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
         <value>The containing meta-model.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,7 +585,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
+        <summary>When overridden in a derived class, gets the name of the <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
         <value>The name of the current meta-type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -614,7 +614,7 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about the <c>OnLoaded</c> method contained by this meta-type.</summary>
+        <summary>When overridden in a derived class, gets information about the <c>OnLoaded</c> method contained by this meta-type.</summary>
         <value>A description of the <c>OnLoaded</c> method for this meta-type.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,7 +636,7 @@
         <ReturnType>System.Reflection.MethodInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets information about the <c>OnValidate</c> method contained by this meta-type.</summary>
+        <summary>When overridden in a derived class, gets information about the <c>OnValidate</c> method contained by this meta-type.</summary>
         <value>A description of the <c>OnValidate</c> method for this meta-type.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -658,7 +658,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Linq.Mapping.MetaDataMember&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of all the persistent data members.</summary>
+        <summary>When overridden in a derived class, gets a collection of all the persistent data members.</summary>
         <value>A collection of all the meta-data members in the current type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -687,7 +687,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Data.Linq.Mapping.MetaTable" /> that uses this <see cref="T:System.Data.Linq.Mapping.MetaType" /> for row definition.</summary>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Data.Linq.Mapping.MetaTable" /> that uses this <see cref="T:System.Data.Linq.Mapping.MetaType" /> for row definition.</summary>
         <value>A meta-table that uses the current meta-type for its row definition.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -709,7 +709,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the underlying common language runtime (CLR) type.</summary>
+        <summary>When overridden in a derived class, gets the underlying common language runtime (CLR) type.</summary>
         <value>The associated CLR type.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -731,7 +731,7 @@
         <ReturnType>System.Data.Linq.Mapping.MetaDataMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a row-version or timestamp column for this <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
+        <summary>When overridden in a derived class, gets a row-version or timestamp column for this <see cref="T:System.Data.Linq.Mapping.MetaType" />.</summary>
         <value>The meta-data member that represents the row-version or timestamp column for this meta-type, or <see langword="null" /> if there is none.</value>
         <remarks>To be added.</remarks>
       </Docs>

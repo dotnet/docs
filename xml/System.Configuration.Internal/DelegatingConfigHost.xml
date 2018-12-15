@@ -1170,7 +1170,7 @@
       <Docs>
         <param name="streamName">The name of a <see cref="T:System.IO.Stream" /> object performing I/O tasks on a configuration file.</param>
         <summary>Opens a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
-        <returns>Returns the <see cref="T:System.IO.Stream" /> object specified by <paramref name="streamName" />.</returns>
+        <returns>The object specified by <paramref name="streamName" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1208,7 +1208,7 @@
         <param name="assertPermissions">
           <see langword="true" /> to assert permissions; otherwise, <see langword="false" />.</param>
         <summary>Opens a <see cref="T:System.IO.Stream" /> object to read a configuration file.</summary>
-        <returns>Returns the <see cref="T:System.IO.Stream" /> object specified by <paramref name="streamName" />.</returns>
+        <returns>The object specified by <paramref name="streamName" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1298,7 +1298,7 @@
         <param name="assertPermissions">
           <see langword="true" /> to assert permissions; otherwise, <see langword="false" />.</param>
         <summary>Opens a <see cref="T:System.IO.Stream" /> object for writing to a configuration file. Allows a <see cref="T:System.IO.Stream" /> object to be designated as a template for copying file attributes.</summary>
-        <returns>Returns the <see cref="T:System.IO.Stream" /> object specified by the <paramref name="streamName" /> parameter.</returns>
+        <returns>The object specified by the <paramref name="streamName" /> parameter.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

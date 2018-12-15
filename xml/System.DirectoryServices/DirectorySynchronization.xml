@@ -214,7 +214,7 @@ foreach(SearchResult res in src.FindAll() )
       <Parameters />
       <Docs>
         <summary>Returns a copy of the current <see cref="T:System.DirectoryServices.DirectorySynchronization" /> instance.</summary>
-        <returns>Returns a <see cref="T:System.DirectoryServices.DirectorySynchronization" /> object.</returns>
+        <returns>A copy of the current <see cref="T:System.DirectoryServices.DirectorySynchronization" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

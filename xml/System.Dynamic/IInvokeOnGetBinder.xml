@@ -60,7 +60,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value indicating if this get member operation should invoke properties when they perform the get operation. The default value when this interface is not present is true.</summary>
-        <value>True if this get member operation should invoke properties when they perform the get operation; otherwise false.</value>
+        <value><see langword="true" /> if this get member operation should invoke properties when they perform the get operation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

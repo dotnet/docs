@@ -189,7 +189,7 @@
       <Docs>
         <param name="keyword">The key to locate in the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</param>
         <summary>Determines whether the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> contains a specific key.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/745c5f95-2f02-4674-b378-6d51a7ec2490">Connection Strings</related>
       </Docs>
@@ -212,7 +212,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> has a fixed size.</summary>
-        <value>Returns <see langword="true" /> in every case, because the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> supplies a fixed-size collection of keyword/value pairs.</value>
+        <value><see langword="true" /> in every case, because the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> supplies a fixed-size collection of keyword/value pairs.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +314,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the metadata locations in the connection string.</summary>
-        <value>Gets or sets the metadata locations in the connection string.</value>
+        <value>The metadata locations in the connection string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -474,7 +474,7 @@
       <Docs>
         <param name="keyword">The key of the keyword/value pair to be removed from the connection string in this <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</param>
         <summary>Removes the entry with the specified key from the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> instance.</summary>
-        <returns>Returns <see langword="true" /> if the key existed in the connection string and was removed; <see langword="false" /> if the key did not exist.</returns>
+        <returns><see langword="true" /> if the key existed in the connection string and was removed; <see langword="false" /> if the key did not exist.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -512,7 +512,7 @@
         <param name="keyword">The key of the item to retrieve.</param>
         <param name="value">The value corresponding to <paramref name="keyword" />.</param>
         <summary>Retrieves a value corresponding to the supplied key from this <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</summary>
-        <returns>Returns <see langword="true" /> if <paramref name="keyword" /> was found in the connection string; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="keyword" /> was found in the connection string; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

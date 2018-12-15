@@ -424,7 +424,7 @@ If you do not perform this conversion, the compiler assumes that you are trying 
         <param name="size">The length of the parameter.</param>
         <param name="direction">One of the <see cref="T:System.Data.ParameterDirection" /> values.</param>
         <param name="isNullable">
-          <see langword="true" /> if the value of the field can be null; otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the value of the field can be null; otherwise, <see langword="false" />.</param>
         <param name="precision">The total number of digits to the left and right of the decimal point to which <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> is resolved.</param>
         <param name="scale">The total number of decimal places to which <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> is resolved.</param>
         <param name="sourceColumn">The name of the source column (<see cref="P:System.Data.SqlClient.SqlParameter.SourceColumn" />) if this <see cref="T:System.Data.SqlClient.SqlParameter" /> is used in a call to <see cref="Overload:System.Data.Common.DbDataAdapter.Update" />.</param>
@@ -787,7 +787,7 @@ If you do not perform this conversion, the compiler assumes that you are trying 
       <Docs>
         <summary>Gets or sets a value that indicates whether the parameter accepts null values. <see cref="P:System.Data.SqlClient.SqlParameter.IsNullable" /> is not used to validate the parameter's value and will not prevent sending or receiving a null value when executing a command.</summary>
         <value>
-          <see langword="true" /> if null values are accepted; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if null values are accepted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -846,7 +846,7 @@ If you do not perform this conversion, the compiler assumes that you are trying 
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the locale identifier that determines conventions and language for a particular region.</summary>
-        <value>Returns the locale identifier associated with the parameter.</value>
+        <value>The locale identifier associated with the parameter.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

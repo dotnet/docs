@@ -259,7 +259,7 @@
       </ReturnValue>
       <Docs>
         <summary>Returns a reference to the internal buffer.</summary>
-        <value>Returns a reference to the internal buffer. For <see cref="T:System.Data.SqlTypes.SqlBytes" /> instances created on top of unmanaged pointers, it returns a managed copy of the internal buffer.</value>
+        <value>A reference to the internal buffer. For <see cref="T:System.Data.SqlTypes.SqlBytes" /> instances created on top of unmanaged pointers, it returns a managed copy of the internal buffer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -525,8 +525,8 @@
         <ReturnType>System.Data.SqlTypes.SqlBytes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a null instance of this <see cref="T:System.Data.SqlTypes.SqlBytes" />.</summary>
-        <value>Returns an instance in such a way that <see cref="P:System.Data.SqlTypes.SqlBytes.IsNull" /> returns <see langword="true" />.</value>
+        <summary>Gets a null instance of this <see cref="T:System.Data.SqlTypes.SqlBytes" />.</summary>
+        <value>An instance whose <see cref="P:System.Data.SqlTypes.SqlBytes.IsNull" /> property returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
       </Docs>

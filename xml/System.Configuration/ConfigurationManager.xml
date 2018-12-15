@@ -346,7 +346,7 @@ End Module
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Configuration.AppSettingsSection" /> data for the current application's default configuration.</summary>
-        <value>Returns a <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that contains the contents of the <see cref="T:System.Configuration.AppSettingsSection" /> object for the current application's default configuration.</value>
+        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that contains the contents of the <see cref="T:System.Configuration.AppSettingsSection" /> object for the current application's default configuration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -546,7 +546,7 @@ End Module
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Configuration.ConnectionStringsSection" /> data for the current application's default configuration.</summary>
-        <value>Returns a <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> object that contains the contents of the <see cref="T:System.Configuration.ConnectionStringsSection" /> object for the current application's default configuration.</value>
+        <value>A <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> object that contains the contents of the <see cref="T:System.Configuration.ConnectionStringsSection" /> object for the current application's default configuration.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

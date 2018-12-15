@@ -678,7 +678,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">The <see cref="T:System.Data.SqlClient.SqlParameter" /> value.</param>
         <summary>Determines whether the specified <see cref="T:System.Data.SqlClient.SqlParameter" /> is in this <see cref="T:System.Data.SqlClient.SqlParameterCollection" />.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> contains the value; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> contains the value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
@@ -725,7 +725,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">The <see cref="T:System.Object" /> value.</param>
         <summary>Determines whether the specified <see cref="T:System.Object" /> is in this <see cref="T:System.Data.SqlClient.SqlParameterCollection" />.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> contains the value; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> contains the value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
@@ -772,7 +772,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">The <see cref="T:System.String" /> value.</param>
         <summary>Determines whether the specified parameter name is in this <see cref="T:System.Data.SqlClient.SqlParameterCollection" />.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> contains the value; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> contains the value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
@@ -1319,7 +1319,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> has a fixed size.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> has a fixed size; otherwise <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
@@ -1354,7 +1354,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> is read-only.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> is read only; otherwise <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>
@@ -1387,7 +1387,7 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> is synchronized.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> is synchronized; otherwise <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlParameterCollection" /> is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/commands-and-parameters.md">Commands and Parameters (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">DataAdapter Parameters (ADO.NET)</related>

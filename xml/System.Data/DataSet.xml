@@ -463,7 +463,7 @@
       <Docs>
         <summary>Gets or sets a value indicating whether string comparisons within <see cref="T:System.Data.DataTable" /> objects are case-sensitive.</summary>
         <value>
-          <see langword="true" /> if string comparisons are case-sensitive; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if string comparisons are case-sensitive; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1074,7 +1074,7 @@
       <Docs>
         <summary>Gets or sets a value indicating whether constraint rules are followed when attempting any update operation.</summary>
         <value>
-          <see langword="true" /> if rules are enforced; otherwise <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if rules are enforced; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1892,7 +1892,7 @@ class Program {
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Data.DataSet" /> has changes, including new, deleted, or modified rows.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.DataSet" /> has changes; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Data.DataSet" /> has changes; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1941,7 +1941,7 @@ class Program {
         <param name="rowStates">One of the <see cref="T:System.Data.DataRowState" /> values.</param>
         <summary>Gets a value indicating whether the <see cref="T:System.Data.DataSet" /> has changes, including new, deleted, or modified rows, filtered by <see cref="T:System.Data.DataRowState" />.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Data.DataSet" /> has changes; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Data.DataSet" /> has changes; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1999,7 +1999,7 @@ class Program {
       <Docs>
         <summary>Gets a value indicating whether there are errors in any of the <see cref="T:System.Data.DataTable" /> objects within this <see cref="T:System.Data.DataSet" />.</summary>
         <value>
-          <see langword="true" /> if any table contains an error;otherwise <see langword="false" />.</value>
+          <see langword="true" /> if any table contains an error; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2339,7 +2339,7 @@ class Program {
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Data.DataSet" /> is initialized.</summary>
         <value>
-          <see langword="true" /> to indicate the component has completed initialization; otherwise <see langword="false" />.</value>
+          <see langword="true" /> to indicate the component has completed initialization; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2896,7 +2896,7 @@ class Program {
       <Docs>
         <param name="dataSet">The <see langword="DataSet" /> whose data and schema will be merged.</param>
         <param name="preserveChanges">
-          <see langword="true" /> to preserve changes in the current <see langword="DataSet" />; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to preserve changes in the current <see langword="DataSet" />; otherwise, <see langword="false" />.</param>
         <summary>Merges a specified <see cref="T:System.Data.DataSet" /> and its schema into the current <see langword="DataSet" />, preserving or discarding any changes in this <see langword="DataSet" /> according to the given argument.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2965,7 +2965,7 @@ class Program {
       <Docs>
         <param name="rows">The array of <see cref="T:System.Data.DataRow" /> objects to be merged into the <see langword="DataSet" />.</param>
         <param name="preserveChanges">
-          <see langword="true" /> to preserve changes in the <see langword="DataSet" />; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to preserve changes in the <see langword="DataSet" />; otherwise, <see langword="false" />.</param>
         <param name="missingSchemaAction">One of the <see cref="T:System.Data.MissingSchemaAction" /> values.</param>
         <summary>Merges an array of <see cref="T:System.Data.DataRow" /> objects into the current <see cref="T:System.Data.DataSet" />, preserving or discarding changes in the <see langword="DataSet" /> and handling an incompatible schema according to the given arguments.</summary>
         <remarks>
@@ -3027,7 +3027,7 @@ class Program {
       <Docs>
         <param name="dataSet">The <see langword="DataSet" /> whose data and schema will be merged.</param>
         <param name="preserveChanges">
-          <see langword="true" /> to preserve changes in the current <see langword="DataSet" />; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to preserve changes in the current <see langword="DataSet" />; otherwise, <see langword="false" />.</param>
         <param name="missingSchemaAction">One of the <see cref="T:System.Data.MissingSchemaAction" /> values.</param>
         <summary>Merges a specified <see cref="T:System.Data.DataSet" /> and its schema with the current <see langword="DataSet" />, preserving or discarding changes in the current <see langword="DataSet" /> and handling an incompatible schema according to the given arguments.</summary>
         <remarks>
@@ -3099,7 +3099,7 @@ class Program {
         <param name="table">The <see langword="DataTable" /> whose data and schema will be merged.</param>
         <param name="preserveChanges">One of the <see cref="T:System.Data.MissingSchemaAction" /> values.</param>
         <param name="missingSchemaAction">
-          <see langword="true" /> to preserve changes in the <see langword="DataSet" />; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to preserve changes in the <see langword="DataSet" />; otherwise, <see langword="false" />.</param>
         <summary>Merges a specified <see cref="T:System.Data.DataTable" /> and its schema into the current <see langword="DataSet" />, preserving or discarding changes in the <see langword="DataSet" /> and handling an incompatible schema according to the given arguments.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4519,7 +4519,7 @@ class Program {
         <ReturnType>System.Data.DataRelationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the collection of relations that link tables and allow navigation from parent tables to child tables.</summary>
+        <summary>Gets the collection of relations that link tables and allow navigation from parent tables to child tables.</summary>
         <value>A <see cref="T:System.Data.DataRelationCollection" /> that contains a collection of <see cref="T:System.Data.DataRelation" /> objects. An empty collection is returned if no <see cref="T:System.Data.DataRelation" /> objects exist.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4645,7 +4645,7 @@ class Program {
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a <see cref="T:System.Data.SchemaSerializationMode" /> for a <see cref="T:System.Data.DataSet" />.</summary>
-        <value>Gets or sets a <see cref="T:System.Data.SchemaSerializationMode" /> for a <see cref="T:System.Data.DataSet" />.</value>
+        <value>A <see cref="T:System.Data.SchemaSerializationMode" /> for a <see cref="T:System.Data.DataSet" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4696,7 +4696,7 @@ class Program {
       <Docs>
         <summary>Gets a value indicating whether <see cref="P:System.Data.DataSet.Relations" /> property should be persisted.</summary>
         <returns>
-          <see langword="true" /> if the property value has been changed from its default; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the property value has been changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4747,7 +4747,7 @@ class Program {
       <Docs>
         <summary>Gets a value indicating whether <see cref="P:System.Data.DataSet.Tables" /> property should be persisted.</summary>
         <returns>
-          <see langword="true" /> if the property value has been changed from its default; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the property value has been changed from its default; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

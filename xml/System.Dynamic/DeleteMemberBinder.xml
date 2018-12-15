@@ -240,7 +240,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value indicating if the string comparison should ignore the case of the member name.</summary>
-        <value>True if the string comparison should ignore the case, otherwise false.</value>
+        <value><see langword="true" /> if the string comparison should ignore case; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

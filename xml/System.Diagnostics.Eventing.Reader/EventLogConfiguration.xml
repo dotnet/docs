@@ -202,8 +202,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the flag that indicates if the event log is a classic event log. A classic event log is one that has its events defined in a .mc file instead of a manifest (.xml file) used by the event provider.</summary>
-        <value>Returns <see langword="true" /> if the event log is a classic log, and returns <see langword="false" /> if the event log is not a classic log.</value>
+        <summary>Gets a value that indicates whether the event log is a classic event log. A classic event log is one that has its events defined in an .mc file instead of a manifest (.xml file) used by the event provider.</summary>
+        <value><see langword="true" /> if the event log is a classic log; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -226,8 +226,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that determines whether the event log is enabled or disabled. An enabled log is one in which events can be logged, and a disabled log is one in which events cannot be logged.</summary>
-        <value>Returns <see langword="true" /> if the log is enabled, and returns <see langword="false" /> if the log is disabled.</value>
+        <summary>Gets or sets a value that indicates whether the event log is enabled or disabled. An enabled log is one in which events can be logged, and a disabled log is one in which events cannot be logged.</summary>
+        <value><see langword="true" /> if the log is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -258,7 +258,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the file directory path to the location of the file where the events are stored for the log.</summary>
-        <value>Returns a string that contains the path to the event log file.</value>
+        <value>A string that contains the path to the event log file.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -289,7 +289,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" /> value that specifies whether the event log is an application, system, or custom event log.</summary>
-        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" /> value.</value>
+        <value>One of the enumeration values.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -313,7 +313,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogMode" /> value that determines how events are handled when the event log becomes full.</summary>
-        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogMode" /> value.</value>
+        <value>One of the enumeration values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -349,7 +349,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the event log.</summary>
-        <value>Returns a string that contains the name of the event log.</value>
+        <value>The name of the event log.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -373,7 +373,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogType" /> value that determines the type of the event log.</summary>
-        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogType" /> value.</value>
+        <value>One of the enumeration values.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -397,7 +397,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum size, in bytes, that the event log file is allowed to be. When the file reaches this maximum size, it is considered full.</summary>
-        <value>Returns a long value that represents the maximum size, in bytes, that the event log file is allowed to be.</value>
+        <value>The maximum size, in bytes, that the event log file is allowed to be.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -428,7 +428,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the event provider that created this event log.</summary>
-        <value>Returns a string that contains the name of the event provider that created this event log.</value>
+        <value>The name of the event provider that created this event log.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -452,7 +452,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the size of the buffer that the event provider uses for publishing events to the log.</summary>
-        <value>Returns an integer value that can be null.</value>
+        <value>The size of the buffer that the event provider uses for publishing events to the log. It can be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -475,8 +475,8 @@
         <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control globally unique identifier (GUID) for the event log if the log is a debug log. If this log is not a debug log, this value will be null.</summary>
-        <value>Returns a GUID value or null.</value>
+        <summary>Gets the control globally unique identifier (GUID) for the event log if the log is a debug log. If this log is not a debug log, this value is <see langword="null" />.</summary>
+        <value>A GUID value, or <see langword="null" /> if the log is not a debug log.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -499,8 +499,8 @@
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets keyword mask used by the event provider.</summary>
-        <value>Returns a long value that can be null if the event provider did not define any keywords.</value>
+        <summary>Gets or sets the keyword mask used by the event provider.</summary>
+        <value>The keyword mask used by the event provider, or <see langword="null" /> if the event provider did not define any keywords.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -531,7 +531,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the maximum latency time used by the event provider when publishing events to the log.</summary>
-        <value>Returns an integer value that can be null if no latency time was specified by the event provider.</value>
+        <value>The maximum latency time used by the event provider when publishing events to the log, or <see langword="null" /> if no latency time was specified by the event provider.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -555,7 +555,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum event level (which defines the severity of the event) that is allowed to be logged in the event log. This value is defined by the event provider.</summary>
-        <value>Returns an integer value that can be null if the maximum event level was not defined in the event provider.</value>
+        <value>The maximum event level that is allowed to be logged in the event log, or <see langword="null" /> if the maximum event level was not defined in the event provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -586,7 +586,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the maximum number of buffers used by the event provider to publish events to the event log.</summary>
-        <value>Returns an integer value that is the maximum number of buffers used by the event provider to publish events to the event log. This value can be null.</value>
+        <value>The maximum number of buffers used by the event provider to publish events to the event log. This value can be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -610,7 +610,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the minimum number of buffers used by the event provider to publish events to the event log.</summary>
-        <value>Returns an integer value that is the minimum number of buffers used by the event provider to publish events to the event log. This value can be null.</value>
+        <value>The minimum number of buffers used by the event provider to publish events to the event log. This value can be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -634,7 +634,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an enumerable collection of the names of all the event providers that can publish events to this event log.</summary>
-        <value>Returns an enumerable collection of strings that contain the event provider names.</value>
+        <value>An enumerable collection of strings that contain the event provider names.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -682,7 +682,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the security descriptor of the event log. The security descriptor defines the users and groups of users that can read and write to the event log.</summary>
-        <value>Returns a string that contains the security descriptor for the event log.</value>
+        <value>A string that contains the security descriptor for the event log.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

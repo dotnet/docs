@@ -79,13 +79,13 @@
 |Static member name|Description|  
 |------------------------|-----------------|  
 |<xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method|Creates a custom time zone from application-supplied data.|  
-|<xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method|Instantiates a time zone defined in the system registry based on the zone's identifier.|  
+|<xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method|Instantiates a time zone based on its identifier.|  
 |<xref:System.TimeZoneInfo.FromSerializedString%2A> method|Deserializes a string value to re-create a previously serialized <xref:System.TimeZoneInfo> object.|  
 |<xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method|Returns an enumerable <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of <xref:System.TimeZoneInfo> objects that represents all time zones that are available on the local system.|  
 |<xref:System.TimeZoneInfo.Local%2A> property|Instantiates a <xref:System.TimeZoneInfo> object that represents the local time zone.|  
 |<xref:System.TimeZoneInfo.Utc%2A> property|Instantiates a <xref:System.TimeZoneInfo> object that represents the UTC zone.|  
   
- You can use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a time zone that is not defined in the local system registry. You can then use the <xref:System.TimeZoneInfo.ToSerializedString%2A> property to save the time zone object's information as a string, which can be stored in some form that is accessible to the application. You can use the <xref:System.TimeZoneInfo.FromSerializedString%2A> method to convert a serialized string back to a <xref:System.TimeZoneInfo> object.  
+ You can use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a time zone that is not defined in the local system registry on Windows systems or by the time zone classes in the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux or macOS. You can then use the <xref:System.TimeZoneInfo.ToSerializedString%2A> property to save the time zone object's information as a string, which can be stored in some form that is accessible to the application. You can use the <xref:System.TimeZoneInfo.FromSerializedString%2A> method to convert a serialized string back to a <xref:System.TimeZoneInfo> object.  
   
  ]]></format>
     </remarks>
@@ -193,11 +193,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Cached time zone data includes data on the local time zone, the Coordinated Universal Time (UTC) zone, and any time zones that are retrieved by using methods such as <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> and <xref:System.TimeZoneInfo.GetSystemTimeZones%2A>.  
+ Cached time zone data includes data on the local time zone and the Coordinated Universal Time (UTC) zone.  
   
- You might call the <xref:System.TimeZoneInfo.ClearCachedData%2A> method to reduce the memory devoted to the application's cache of time zone information or to reflect the fact that the local system's time zone has changed.  
+ You might call the `ClearCachedData` method to reduce the memory devoted to the application's cache of time zone information or to reflect the fact that the local system's time zone has changed.  
   
- Storing references to the local and UTC time zones is not recommended. After the call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method, these object variables will be undefined <xref:System.TimeZoneInfo> objects that are no longer references to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>. For example, in the following code, the second call to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method throws an <xref:System.ArgumentException> because the `local` variable is no longer considered equal to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.  
+ Storing references to the local and UTC time zones is not recommended. After the call to the `ClearCachedData` method, these object variables will be undefined <xref:System.TimeZoneInfo> objects that are no longer references to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType> or <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType>. For example, in the following code, the second call to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method throws an <xref:System.ArgumentException> because the `local` variable is no longer considered equal to <xref:System.TimeZoneInfo.Local%2A?displayProperty=nameWithType>.  
   
  [!code-csharp[System.TimeZone2.BestPractices#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.BestPractices/cs/System.TimeZone2.BestPractices.cs#1)]
  [!code-vb[System.TimeZone2.BestPractices#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.BestPractices/vb/System.TimeZone2.BestPractices.vb#1)]  
@@ -547,7 +547,7 @@
   
  If the conversion of `dateTime` results in a date and time value that is earlier than <xref:System.DateTime.MinValue?displayProperty=nameWithType> or later than <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, this method returns <xref:System.DateTime.MinValue?displayProperty=nameWithType> or <xref:System.DateTime.MaxValue?displayProperty=nameWithType>, respectively.  
   
- This method retrieves the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
+ This method retrieves information on the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry on Windows systems and from the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's identifier in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
   
  ]]></format>
         </remarks>
@@ -606,7 +606,7 @@
   
  Because the `dateTimeOffset` parameter represents a date and time together with that time's offset from Coordinated Universal Time (UTC), it cannot represent either an ambiguous time or an invalid time.  
   
- This method retrieves the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
+ This method retrieves the time zone whose identifier is specified by the `destinationTimeZoneId` parameter from the registry on Windows systems and from the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS. It cannot retrieve a time zone object that is created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. The `destinationTimeZoneId` parameter must correspond exactly to the time zone's identifier in length, but not in case, for a successful match to occur; that is, the comparison of `destinationTimeZoneId` with time zone identifiers is case-insensitive.  
   
  In converting the `dateTimeOffset` value to the time in the destination time zone, the method takes into account any adjustment rules in effect in the destination time zone.  
   
@@ -669,7 +669,7 @@
   
  Although it is similar to the <xref:System.TimeZoneInfo.ConvertTime%28System.DateTime%2CSystem.TimeZoneInfo%2CSystem.TimeZoneInfo%29?displayProperty=nameWithType> method, you can use <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%28System.DateTime%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> to specify the source and destination time zones using their identifiers instead of their <xref:System.TimeZoneInfo> objects. This method is most useful when you must convert a time without retrieving the time zone object that corresponds to it and you do not need to know whether the converted time is standard or daylight saving time.  
   
- This method retrieves the time zones whose identifiers are the `sourceTimeZoneId` and `destinationTimeZoneId` parameters from the registry. It cannot retrieve time zone objects that are created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method.  
+ This method retrieves the time zones whose identifiers are the `sourceTimeZoneId` and `destinationTimeZoneId` parameters from the registry on Windows systems and from the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS. It cannot retrieve time zone objects that are created using the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method.  
   
  The value of the <xref:System.DateTime.Kind%2A> property of the `dateTime` parameter must correspond to the `sourceTimeZoneId` parameter, as the following table shows.  
   
@@ -1321,7 +1321,7 @@
   
  A <xref:System.TimeZoneInfo.DaylightName%2A> property whose value is not <xref:System.String.Empty?displayProperty=nameWithType> or `null` does not necessarily indicate that the time zone supports daylight saving time. To determine whether the time zone supports daylight saving time, check the value of its <xref:System.TimeZoneInfo.SupportsDaylightSavingTime%2A> property.  
   
- In most cases, the <xref:System.TimeZoneInfo.DaylightName%2A> property of time zones defined in the registry is not <xref:System.String.Empty?displayProperty=nameWithType> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=nameWithType>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=nameWithType> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
+ In most cases, the `DaylightName` property of system-defined time zones is not <xref:System.String.Empty?displayProperty=nameWithType> or `null`. However, the <xref:System.TimeZoneInfo.DaylightName%2A> property of custom time zones can be set to <xref:System.String.Empty?displayProperty=nameWithType>. This occurs when custom time zones are created by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%29?displayProperty=nameWithType> or the <xref:System.TimeZoneInfo.CreateCustomTimeZone%28System.String%2CSystem.TimeSpan%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.TimeZoneInfo.AdjustmentRule%5B%5D%2CSystem.Boolean%29?displayProperty=nameWithType> overload and the `disableDaylightSavingTime` parameter is `true`. Therefore, your code should never assume that the value of the <xref:System.TimeZoneInfo.DaylightName%2A> property is not `null` or empty.  
   
  The <xref:System.TimeZoneInfo.DaylightName%2A> property is equivalent to the <xref:System.TimeZone.DaylightName%2A> property of the <xref:System.TimeZone> class.  
   
@@ -1586,17 +1586,17 @@
       </Parameters>
       <Docs>
         <param name="id">The time zone identifier, which corresponds to the <see cref="P:System.TimeZoneInfo.Id" /> property.</param>
-        <summary>Retrieves a <see cref="T:System.TimeZoneInfo" /> object from the registry based on its identifier.</summary>
+        <summary>Instantiates a new <see cref="T:System.TimeZoneInfo" /> object based on its identifier.</summary>
         <returns>An object whose identifier is the value of the <paramref name="id" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `id` parameter must correspond exactly to the time zone's registry key in length, but not in case, for a successful match to occur; that is, the comparison of `id` with time zone identifiers is case-insensitive. If you want to retrieve time zone objects based on partial matches, you can write custom procedures that work with the read-only collection of <xref:System.TimeZoneInfo> objects returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method.  
+ The `id` parameter must correspond exactly to the time zone's identifier in length, but not in case, for a successful match to occur; that is, the comparison of `id` with time zone identifiers is case-insensitive. If you want to retrieve time zone objects based on partial matches, you can write custom procedures that work with the read-only collection of <xref:System.TimeZoneInfo> objects returned by the <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method.  
   
- On Windows systems, <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> tries to match `id` to the subkey names of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones branch of the registry. This branch does not necessarily contain a comprehensive list of time zone identifiers. If required by an application, you can create a particular time zone either by calling one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method or by calling <xref:System.TimeZoneInfo.FromSerializedString%2A> to deserialize a <xref:System.TimeZoneInfo> object that represents the required time zone. However, time zones created by these method calls are not included in the registry and cannot be retrieved using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method. These custom time zones can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> or <xref:System.TimeZoneInfo.FromSerializedString%2A> method call.  
+ On Windows systems, `FindSystemTimeZoneById` tries to match `id` to the subkey names of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones branch of the registry. On Linux and macOS, it uses time zone information available in the [ICU Library](http://userguide.icu-project.org/datetime/timezone). If the registry or the library does not have the information for the time zone you desire, you can create a particular time zone either by calling one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method or by calling <xref:System.TimeZoneInfo.FromSerializedString%2A> to deserialize a <xref:System.TimeZoneInfo> object that represents the required time zone. However, time zones created by these method calls are not system-defined time and cannot be retrieved using the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method. These custom time zones can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> or <xref:System.TimeZoneInfo.FromSerializedString%2A> method call.  
   
-   
+This method returns a new <xref:System.TimeZoneInfo> instance for each method call; it does not return cached objects. This may impact performance in applications that call the  `FindSystemTimeZoneById` method repeatedly with the same identifier.   
   
 ## Examples  
  The following example uses the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to retrieve the Tokyo Standard Time zone. This <xref:System.TimeZoneInfo> object is then used to convert the local time to the time in Tokyo and to determine whether it is Tokyo Standard Time or Tokyo Daylight Time.  
@@ -1608,7 +1608,7 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">The system does not have enough memory to hold information about the time zone.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="id" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.TimeZoneNotFoundException">The time zone identifier specified by <paramref name="id" /> was not found. This means that a registry key whose name matches <paramref name="id" /> does not exist, or that the key exists but does not contain any time zone data.</exception>
+        <exception cref="T:System.TimeZoneNotFoundException">The time zone identifier specified by <paramref name="id" /> was not found. This means that a time zone identifier whose name matches <paramref name="id" /> does not exist, or that the identifier exists but does not contain any time zone data.</exception>
         <exception cref="T:System.Security.SecurityException">The process does not have the permissions required to read from the registry key that contains the time zone information.</exception>
         <exception cref="T:System.InvalidTimeZoneException">The time zone identifier was found, but the registry data is corrupted.</exception>
         <altmember cref="P:System.TimeZoneInfo.Id" />
@@ -1655,7 +1655,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There is an alternative to providing all the code required to create a time zone that is not found in the registry. You can define a custom time zone and either use the <xref:System.TimeZoneInfo.ToSerializedString%2A> method in a standalone executable or use an application's setup program to save the time zone as a string. The application can then retrieve this string from its storage location and instantiate it using the <xref:System.TimeZoneInfo.FromSerializedString%2A> method.  
+ There is an alternative to providing all the code required to create a time zone that is not found in the registry on Windows or in the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS. You can define a custom time zone and either use the <xref:System.TimeZoneInfo.ToSerializedString%2A> method in a standalone executable or use an application's setup program to save the time zone as a string. The application can then retrieve this string from its storage location and instantiate it using the <xref:System.TimeZoneInfo.FromSerializedString%2A> method.  
   
    
   
@@ -1973,10 +1973,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method retrieves all available time zone information from the subkeys of the registry's HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones key. If it is unable to successfully retrieve and parse values for particular string properties of individual <xref:System.TimeZoneInfo> objects, this method sets their value to an empty string ("").  
+ The <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method retrieves all available time zone information from the subkeys of the registry's HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zones key on Windows systems and from the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS. If it is unable to successfully retrieve and parse values for particular string properties of individual <xref:System.TimeZoneInfo> objects, this method sets their value to an empty string ("").  
   
 > [!IMPORTANT]
->  The <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method returns a collection of <xref:System.TimeZoneInfo> objects only for time zones defined in the registry. It does not include time zones created using the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. These are accessible only through the object reference returned by the time zone creation method.  
+>  The <xref:System.TimeZoneInfo.GetSystemTimeZones%2A> method returns a collection of <xref:System.TimeZoneInfo> objects only for time zones defined in the  or ICU library. It does not include time zones created using the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. These are accessible only through the object reference returned by the time zone creation method.  
   
  The collection returned by this method is sorted by UTC offset and, for time zones that have the same UTC offset, by the display name using the current culture. For information about the display name, see <xref:System.TimeZoneInfo.DisplayName%2A>.  
   
@@ -2171,7 +2171,7 @@
    
   
 ## Examples  
- Typically, a number of time zones defined in the registry have the same offset from Coordinated Universal Time (UTC) and the same adjustment rules. The following example displays a list of these time zones to the console.  
+ Typically, a number of time zones defined in the registry on Windows and the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS have the same offset from Coordinated Universal Time (UTC) and the same adjustment rules. The following example displays a list of these time zones to the console.  
   
  [!code-csharp[System.TimeZone2.HasSameRules#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.HasSameRules/cs/HasSameRules.cs#1)]
  [!code-vb[System.TimeZone2.HasSameRules#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.HasSameRules/vb/HasSameRules.vb#1)]  
@@ -2219,7 +2219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time zone identifier is a key string that uniquely identifies a particular time zone. On Windows systems, it corresponds to the subkeys of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zone branch of the registry. It can be passed as a parameter to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to retrieve a particular time zone from the registry.  
+ The time zone identifier is a key string that uniquely identifies a particular time zone. On Windows systems, it corresponds to the subkeys of the HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Time Zone branch of the registry on Windows systems and from the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS. It can be passed as a parameter to the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method to instantiate a <xref:System.TimeZoneInfo> object that represents a particular time zone.  
   
 > [!IMPORTANT]
 >  Although a key name in the Windows registry can be a maximum of 255 characters, we recommend that an identifier that you assign to a custom time zone be 32 characters or fewer. The longer the identifier, the greater the probability that an incorrect key name will be supplied when retrieving it.  
@@ -2910,11 +2910,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications that rely on time zones that are not typically defined in the registry of Windows systems can use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to instantiate the necessary time zones as <xref:System.TimeZoneInfo> objects. The application can then call the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to convert the time zone object to a string.  
+ Applications that rely on time zones that are not typically defined in the registry of Windows systems or the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOScan can use the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to instantiate the necessary time zones as <xref:System.TimeZoneInfo> objects. The application can then call the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to convert the time zone object to a string.  
   
  The <xref:System.TimeZoneInfo> object should also be stored in a location where the application can retrieve it when needed. Possible locations include:  
   
--   The registry.  
+-   The registry on Windows systems.  
   
 -   An application resource file.  
   
@@ -3021,7 +3021,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is a built-in object; information about this <xref:System.TimeZoneInfo> object is not retrieved from the registry.  
+ This is a built-in object; information about this <xref:System.TimeZoneInfo> object is not retrieved from the registry on Windows systems and from the [ICU Library](http://userguide.icu-project.org/datetime/timezone) on Linux and macOS.  
   
 > [!IMPORTANT]
 >  You should always access the Coordinated Universal Time (UTC) zone through the <xref:System.TimeZoneInfo.Utc%2A?displayProperty=nameWithType> property rather than assigning the UTC time zone to a <xref:System.TimeZoneInfo> object variable. This prevents the <xref:System.TimeZoneInfo> object variable from being invalidated by a call to the <xref:System.TimeZoneInfo.ClearCachedData%2A> method.  

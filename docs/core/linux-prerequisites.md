@@ -65,8 +65,8 @@ For download links and more information, see [.NET Core 3.0 downloads](https://d
 
 OS                            | Version               | Architectures  
 ------------------------------|-----------------------|----------------
-Red Hat Enterprise Linux      | 6, 7                  | x64
-CentOS<br>Oracle Linux        | 7                     | x64
+Red Hat Enterprise Linux      | 6                     | x64
+Red Hat Enterprise Linux<br>CentOS<br>Oracle Linux  | 7                     | x64
 Fedora                        | 28                    | x64
 Debian                        | 9                     | x64, ARM32\*, ARM64\*
 Ubuntu                        | 16.04+, 18.04+        | x64, ARM32\*, ARM64\*

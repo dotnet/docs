@@ -188,9 +188,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set a value that indicates whether Run commands are enqueued. This property is used internally by the SQL Workflow Instance Store and it should not be used in your applications.</summary>
+        <summary>Gets or sets a value that indicates whether Run commands are enqueued. This property is used internally by the SQL Workflow Instance Store and it should not be used in your applications.</summary>
         <value>
-          <see langword="true" /> if the Run commands are enqueued; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the Run commands are enqueued; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

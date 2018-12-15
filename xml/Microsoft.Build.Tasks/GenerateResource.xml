@@ -112,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an array of name-value pairs of environment variables that should be passed to the spawned resgen.exe, in addition to (or selectively overriding) the regular environment block.</summary>
-        <value>Returns an array of name-value pairs of environment variables.</value>
+        <value>An array of name-value pairs of environment variables.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -148,8 +148,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an array of items that specify paths from which tracked inputs will be ignored during Up to date checking.</summary>
-        <value>Returns an array of items that specify paths from which tracked inputs will be ignored during Up to date checking.</value>
+        <summary>Gets or sets an array of items that specify paths from which tracked inputs will be ignored during up to date checking.</summary>
+        <value>An array of items that specify paths from which tracked inputs will be ignored during up to date checking.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -228,8 +228,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag specifying whether this rule is generating .resources files or extracting .ResW files from assemblies.</summary>
-        <value>Returns the flag.</value>
+        <summary>Gets or sets a value that indicates whether this rule generates .resources files or extracts .ResW files from assemblies.</summary>
+        <value>The flag.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -296,8 +296,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a switch that specifies whether tracked incremental build will be used. If true, incremental build is turned on; otherwise, a rebuild will be forced.</summary>
-        <value>Returns a switch that specifies whether tracked incremental build will be used. If true, incremental build is turned on; otherwise, a rebuild will be forced.</value>
+        <summary>Gets or sets a value that indicates whether tracked incremental build will be used.</summary>
+        <value><see langword="true" /> if incremental build is turned on; <see langword="false" /> if a rebuild will be forced.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -361,7 +361,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value specifying where to extract .ResW files.</summary>
-        <value>Returns the value.</value>
+        <value>The value specifying where to extract .ResW files.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -833,7 +833,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an array of items that represent the read tracking logs.</summary>
-        <value>Returns an array of items that represent the read tracking logs.</value>
+        <value>An array of items that represents the read tracking logs.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -855,7 +855,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an array of items that represent the write tracking logs.</summary>
-        <value>Returns an array of items that represent the write tracking logs.</value>
+        <value>An array of items that represents the write tracking logs.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -942,7 +942,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the intermediate directory into which the tracking logs from running this task will be placed.</summary>
-        <value>Returns the intermediate directory into which the tracking logs from running this task will be placed.</value>
+        <value>The intermediate directory into which the tracking logs from running this task will be placed.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1001,8 +1001,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a switch that specifies whether we should be tracking file access patterns.</summary>
-        <value>True if we should be tracking file access patterns; false otherwise.</value>
+        <summary>Gets or sets a value that indicates whether file access patterns should be tracked.</summary>
+        <value><see langword="true" /> if file access patterns should be tracked; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

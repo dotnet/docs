@@ -205,7 +205,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the dependency table.</summary>
-        <value>Returns the dependency table.</value>
+        <value>The dependency table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <param name="sources">The sources to find outputs for.</param>
         <param name="searchForSubRootsInCompositeRootingMarkers">If true, search composite rooting markers for subroots.</param>
         <summary>This method determines the outputs for a source root (as in the contents of a rooting marker), optionally searching composite rooting markers for subroots that may contain output files.</summary>
-        <returns>Returns array of outputs for the source.</returns>
+        <returns>Array of outputs for the source.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -618,8 +618,8 @@
       <Docs>
         <param name="sourceRoot">The source root.</param>
         <param name="outputPathToRemove">The output path to be removed</param>
-        <summary>Remove the specified output from the dependency graph for the given source file.</summary>
-        <returns>Returns true of the output path was removed.</returns>
+        <summary>Removes the specified output from the dependency graph for the given source file.</summary>
+        <returns><see langword="true" /> if the output path was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

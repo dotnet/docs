@@ -2392,7 +2392,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       </ReturnValue>
       <Docs>
         <summary>The RFC 3490 compliant International Domain Name of the host, using Punycode as appropriate. This string, after being unescaped if necessary, is safe to use for DNS resolution.</summary>
-        <value>Returns the hostname, formatted with Punycode according to the IDN standard.<see cref="T:System.String" />.</value>
+        <value>The hostname, formatted with Punycode according to the IDN standard.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

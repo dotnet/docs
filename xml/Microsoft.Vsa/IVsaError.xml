@@ -45,7 +45,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a brief description of the error, in some instances returning a reference to the token in the source code that is causing the error.</summary>
-        <value>Returns a string literal description of the error.</value>
+        <value>A string literal description of the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +67,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the ending column number for the source text that caused the error, if available.</summary>
-        <value>Returns the ending column number for the source text that caused the error, if available.</value>
+        <value>The ending column number for the source text that caused the error, if available.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the line number on which an error occurs.</summary>
-        <value>Returns the line number on which the error has occurred.</value>
+        <value>The line number on which the error has occurred.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the text of the source code from the line that caused the error.</summary>
-        <value>Returns the string literal source code from the line that caused the error.</value>
+        <value>The string literal source code from the line that caused the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +133,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a number that uniquely identifies the error.</summary>
-        <value>Returns the number that uniquely identifies the error.</value>
+        <value>The number that uniquely identifies the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Sets the severity of the error.</summary>
-        <value>Returns an integer (0-4) that represents the error severity.</value>
+        <value>An integer (0-4) that represents the error severity.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +177,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the <see cref="T:Microsoft.Vsa.IVsaItem" /> object that generated the error.</summary>
-        <value>Returns a reference to the <see cref="T:Microsoft.Vsa.IVsaItem" /> object that generated the error.</value>
+        <value>A reference to the object that generated the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the fully qualified name of the source item that contained the error, in a format recognizable by the script engine.</summary>
-        <value>Returns the fully qualified name of the source item that contained the error.</value>
+        <value>The fully qualified name of the source item that contained the error.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +221,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the starting column number for the source text that caused the error, if available.</summary>
-        <value>Returns the starting column number for the source text that caused the error, if available.</value>
+        <value>The starting column number for the source text that caused the error, if available.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

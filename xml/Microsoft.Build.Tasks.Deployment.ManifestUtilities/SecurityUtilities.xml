@@ -56,7 +56,7 @@
         <param name="includedPermissionSet">A <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TrustInfo.PermissionSet" /> object containing the set of permissions to be explicitly included in the generated permission set. Permissions specified in this parameter will be included verbatim in the generated permission set, regardless of <paramref name="targetZone" /> or <paramref name="excludedPermissions" /> parameters.</param>
         <param name="excludedPermissions">An array of permission identity strings to be excluded from the zone default permission set. Permission identity strings can be computed using the <see cref="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.SecurityUtilities.PermissionSetToIdentityList(System.Security.PermissionSet)" /> method. This parameter is ignored if <paramref name="targetZone" /> is not <see langword="Internet" /> or <see langword="LocalIntranet" />.</param>
         <summary>Generates a permission set by computing the zone default permission set, removing any excluded permissions, and adding any included permissions.</summary>
-        <returns>Returns the generated permission set.</returns>
+        <returns>The generated permission set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +85,7 @@
       <Docs>
         <param name="ids">An array of permission identity strings.</param>
         <summary>Converts an array of permission identity strings to a permission set object.</summary>
-        <returns>Returns the converted permission set.</returns>
+        <returns>The converted permission set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
       <Docs>
         <param name="permissionSet">The input permission set to be converted.</param>
         <summary>Converts a permission set object to an array of permission identity strings.</summary>
-        <returns>Returns an array of permission identity strings.</returns>
+        <returns>An array of permission identity strings.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

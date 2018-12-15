@@ -65,7 +65,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a switch the specifies whether GetReferenceAssemblyPaths performs simple checks to ensure that certain runtime frameworks are installed depending on the target framework.</summary>
-        <value>Returns true if GetReferenceAssemblyPaths should not perform these simple checks; false otherwise.</value>
+        <value><see langword="true" /> if GetReferenceAssemblyPaths should not perform these simple checks; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,8 +86,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>If the target framework moniker is set, generate the correct Paths.</summary>
-        <returns>Returns true if paths were generated.</returns>
+        <summary>If the target framework moniker is set, generates the correct Paths.</summary>
+        <returns><see langword="true" /> if paths were generated; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the paths based on the passed in TargetFrameworkMoniker without considering the profile part of the moniker.</summary>
-        <value>Returns the paths based on the passed in TargetFrameworkMoniker without considering the profile part of the moniker. If the TargetFrameworkMoniker is null or empty no paths will be returned.</value>
+        <value>The paths based on the passed in TargetFrameworkMoniker without considering the profile part of the moniker. If the TargetFrameworkMoniker is <see langword="null" /> or empty, no paths will be returned.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
       </ReturnValue>
       <Docs>
         <summary>Returns the path based on the passed in TargetFrameworkMoniker. If the TargetFrameworkMoniker is null or empty this path will be null or empty.</summary>
-        <value>Returns the path.</value>
+        <value>The path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +168,7 @@
       </ReturnValue>
       <Docs>
         <summary>The root path to use to generate the reference assembly path</summary>
-        <value>Returns the root path.</value>
+        <value>The root path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +197,7 @@
       </ReturnValue>
       <Docs>
         <summary>The target framework moniker to get the reference assembly paths for</summary>
-        <value>Returns the framework moniker.</value>
+        <value>The framework moniker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,8 +228,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display name for the target tframework moniker.</summary>
-        <value>Returns the display name for the target tframework moniker.</value>
+        <summary>Gets or sets the display name for the target framework moniker.</summary>
+        <value>The display name for the target framework moniker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

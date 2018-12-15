@@ -111,7 +111,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that can iterate through the collection.</summary>
-        <returns>Returns an <see cref="T:System.Collections.IEnumerator" /> object that can iterate through the collection.</returns>
+        <returns>An enumerator that can iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
       <Docs>
         <param name="index">The zero-based index of the entry to get.</param>
         <summary>Gets the element at the specified index.</summary>
-        <value>Returns the file reference instance.</value>
+        <value>The file reference instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

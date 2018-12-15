@@ -184,8 +184,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the task in in process of compiling XAML markup.</summary>
-        <value>True if the task in in process of compiling XAML markup.; otherwise, false.</value>
+        <summary>Gets or sets whether the task is in process of compiling XAML markup.</summary>
+        <value><see langword="true" /> if the task is in the process of compiling XAML markup; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

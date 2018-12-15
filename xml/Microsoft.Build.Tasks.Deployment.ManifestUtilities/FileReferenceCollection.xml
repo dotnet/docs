@@ -65,7 +65,7 @@
       <Docs>
         <param name="file">The specified file reference to add.</param>
         <summary>Adds the specified file reference to the collection.</summary>
-        <returns>Returns the added file reference object.</returns>
+        <returns>The added file reference object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
       <Docs>
         <param name="path">The path of the specified file reference to add.</param>
         <summary>Adds the specified file reference to the collection.</summary>
-        <returns>Returns the added file reference object.</returns>
+        <returns>The added file reference object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +173,7 @@
       <Docs>
         <param name="targetPath">The specified target path.</param>
         <summary>Finds a file reference in the collection by the specified target path.</summary>
-        <returns>Returns the found file reference.</returns>
+        <returns>The found file reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
       <Docs>
         <param name="index">The zero-based index of the entry to get.</param>
         <summary>Returns the element at the specified index.</summary>
-        <value>Returns the file reference object.</value>
+        <value>The file reference object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

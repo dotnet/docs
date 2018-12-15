@@ -49,7 +49,7 @@
       <Docs>
         <param name="name">The name of the option to retrieve.</param>
         <summary>Gets implementation-specific options for a script engine.</summary>
-        <returns>Returns the value of the specified option.</returns>
+        <returns>The value of the specified option.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,7 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>Returns a value indicating whether the current in-memory representation of the item differs from the persisted representation.</summary>
-        <value>Returns true if the item is dirty, and thus requires saving; returns false if the item is not dirty.</value>
+        <value><see langword="true" /> if the item is dirty, and thus requires saving; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </ReturnValue>
       <Docs>
         <summary>Sets or gets the name of the item.</summary>
-        <value>Returns the string literal name of the item.</value>
+        <value>The string literal name of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

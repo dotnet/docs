@@ -1243,7 +1243,7 @@ Per-machine and per-user environment variables are not supported. A `target` val
       <Docs>
         <summary>Gets a value that indicates whether the current application domain is being unloaded or the common language runtime (CLR) is shutting down.</summary>
         <value>
-          <see langword="true" /> if the current application domain is being unloaded or the CLR is shutting down; otherwise, <see langword="false." /></value>
+          <see langword="true" /> if the current application domain is being unloaded or the CLR is shutting down; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

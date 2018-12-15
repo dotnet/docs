@@ -269,7 +269,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the dependency table.</summary>
-        <value>Returns the dependency table.</value>
+        <value>The dependency table.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,8 +293,8 @@
       </Parameters>
       <Docs>
         <param name="fileName">Full path of the file to test</param>
-        <summary>Test to see if the specified file is excluded from tracked dependency checking</summary>
-        <returns>Returns true of the file is excluded.</returns>
+        <summary>Tests if the specified file is excluded from tracked dependency checking.</summary>
+        <returns><see langword="true" /> if the file is excluded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

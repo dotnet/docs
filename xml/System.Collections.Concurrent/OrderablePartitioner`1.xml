@@ -331,7 +331,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether order keys are normalized.</summary>
-        <value>true if the keys are normalized; otherwise false.</value>
+        <value><see langword="true" /> if the keys are normalized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -372,7 +372,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether elements in an earlier partition always come before elements in a later partition.</summary>
-        <value>true if the elements in an earlier partition always come before elements in a later partition; otherwise false.</value>
+        <value><see langword="true" /> if the elements in an earlier partition always come before elements in a later partition; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -417,7 +417,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether elements in each partition are yielded in the order of increasing keys.</summary>
-        <value>true if the elements in each partition are yielded in the order of increasing keys; otherwise false.</value>
+        <value><see langword="true" /> if the elements in each partition are yielded in the order of increasing keys; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -122,7 +122,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> representation of this product.</summary>
-        <value>Returns a <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object that represents this product.</value>
+        <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object that represents this product.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -153,7 +153,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unique product identifier of this product.</summary>
-        <value>Returns a string that specifies the unique product identifier of this product.</value>
+        <value>A string that specifies the unique product identifier of this product.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

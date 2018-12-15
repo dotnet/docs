@@ -49,7 +49,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of items in the specified collection.</summary>
-        <value>Returns the integer value for the number of items in the collection.</value>
+        <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,7 +79,7 @@
         <param name="itemType">The type of item created, as defined in the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration.</param>
         <param name="itemFlag">The optional flag to specify the initial content of a Code item.</param>
         <summary>Creates a new instance of one of the <see cref="T:Microsoft.Vsa.IVsaItem" /> types, as defined in the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration.</summary>
-        <returns>Returns a reference to the <see cref="T:Microsoft.Vsa.IVsaItem" /> object created.</returns>
+        <returns>The object created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
       <Docs>
         <param name="index">A 0-based index of the retrievable items.</param>
         <summary>Gets an item from the collection by its index value.</summary>
-        <value>Returns the item at the specified index.</value>
+        <value>The item at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +131,7 @@
       <Docs>
         <param name="name">The name of the item to retrieve from the collection.</param>
         <summary>Gets an item from the collection by its name.</summary>
-        <value>Returns the item specified by name.</value>
+        <value>The item specified by name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

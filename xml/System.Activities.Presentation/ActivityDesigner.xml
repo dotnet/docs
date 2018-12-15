@@ -157,7 +157,7 @@ public sealed class First2of3 : NativeActivity
       <Parameters />
       <Docs>
         <summary>Returns a string of automation property/value pairs related to the <see cref="T:System.Activities.Presentation.ActivityDesigner" />.</summary>
-        <returns>Returns a <see cref="T:System.String" /> that contains the automation property/value pairs related to the <see cref="T:System.Activities.Presentation.ActivityDesigner" />.</returns>
+        <returns>A <see cref="T:System.String" /> that contains the automation property/value pairs related to the <see cref="T:System.Activities.Presentation.ActivityDesigner" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,7 +222,7 @@ public sealed class First2of3 : NativeActivity
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the icon associated with this <see cref="T:System.Activities.Presentation.ActivityDesigner" />.</summary>
-        <value>Returns a <see cref="T:System.Windows.Media.DrawingBrush" /> that represents the icon associated with this <see cref="T:System.Activities.Presentation.ActivityDesigner" />.</value>
+        <value>A <see cref="T:System.Windows.Media.DrawingBrush" /> that represents the icon associated with this <see cref="T:System.Activities.Presentation.ActivityDesigner" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

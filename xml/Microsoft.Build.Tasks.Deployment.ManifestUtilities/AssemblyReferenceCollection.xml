@@ -65,7 +65,7 @@
       <Docs>
         <param name="assembly">The assembly reference to add.</param>
         <summary>Adds the specified assembly reference to the collection.</summary>
-        <returns>Returns the added assembly reference instance.</returns>
+        <returns>The added assembly reference instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +94,7 @@
       <Docs>
         <param name="path">The path of the assembly to add.</param>
         <summary>Adds the specified assembly reference to the collection.</summary>
-        <returns>Returns the added assembly reference instance.</returns>
+        <returns>The added assembly reference instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +182,7 @@
       <Docs>
         <param name="identity">The specified assembly identity.</param>
         <summary>Finds an assembly reference in the collection by the specified assembly identity.</summary>
-        <returns>Returns the found assembly reference.</returns>
+        <returns>The found assembly reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +211,7 @@
       <Docs>
         <param name="name">The specified assembly simple name.</param>
         <summary>Finds an assembly reference in the collection by simple name.</summary>
-        <returns>Returns the found assembly reference.</returns>
+        <returns>The found assembly reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,7 +240,7 @@
       <Docs>
         <param name="targetPath">The specified target path.</param>
         <summary>Finds an assembly reference in the collection by the specified target path.</summary>
-        <returns>Returns the found assembly reference.</returns>
+        <returns>The found assembly reference.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -269,7 +269,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that can iterate through the collection.</summary>
-        <returns>Returns an enumerator (<see cref="T:System.Collections.IEnumerator" />).</returns>
+        <returns>An enumerator that can iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +298,7 @@
       <Docs>
         <param name="index">The zero-based index of the entry to get.</param>
         <summary>Gets the element at the specified index.</summary>
-        <value>Returns the assembly reference instance.</value>
+        <value>The assembly reference instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

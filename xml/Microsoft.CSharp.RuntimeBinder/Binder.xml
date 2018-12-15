@@ -56,7 +56,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp binary operation binder.</summary>
-        <returns>Returns a new CSharp binary operation binder.</returns>
+        <returns>A new CSharp binary operation binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -86,7 +86,7 @@
         <param name="type">The type to convert to.</param>
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <summary>Initializes a new CSharp convert binder.</summary>
-        <returns>Returns a new CSharp convert binder.</returns>
+        <returns>A new CSharp convert binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -117,7 +117,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp get index binder.</summary>
-        <returns>Returns a new CSharp get index binder.</returns>
+        <returns>A new CSharp get index binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -150,7 +150,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp get member binder.</summary>
-        <returns>Returns a new CSharp get member binder.</returns>
+        <returns>A new CSharp get member binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -181,7 +181,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp invoke binder.</summary>
-        <returns>Returns a new CSharp invoke binder.</returns>
+        <returns>A new CSharp invoke binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -212,7 +212,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp invoke constructor binder.</summary>
-        <returns>Returns a new CSharp invoke constructor binder.</returns>
+        <returns>A new CSharp invoke constructor binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -247,7 +247,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp invoke member binder.</summary>
-        <returns>Returns a new CSharp invoke member binder.</returns>
+        <returns>A new CSharp invoke member binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -278,7 +278,7 @@
         <param name="name">The name of the event to look for.</param>
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <summary>Initializes a new CSharp is event binder.</summary>
-        <returns>Returns a new CSharp is event binder.</returns>
+        <returns>A new CSharp is event binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -309,7 +309,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp set index binder.</summary>
-        <returns>Returns a new CSharp set index binder.</returns>
+        <returns>A new CSharp set index binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -342,7 +342,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp set member binder.</summary>
-        <returns>Returns a new CSharp set member binder.</returns>
+        <returns>A new CSharp set member binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -375,7 +375,7 @@
         <param name="context">The <see cref="T:System.Type" /> that indicates where this operation is used.</param>
         <param name="argumentInfo">The sequence of <see cref="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" /> instances for the arguments to this operation.</param>
         <summary>Initializes a new CSharp unary operation binder.</summary>
-        <returns>Returns a new CSharp unary operation binder.</returns>
+        <returns>A new CSharp unary operation binder.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

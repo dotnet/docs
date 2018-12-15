@@ -533,7 +533,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the <see cref="T:System.AggregateException" /> that is the root cause of this exception.</summary>
-        <returns>Returns the <see cref="T:System.AggregateException" /> that is the root cause of this exception.</returns>
+        <returns>The <see cref="T:System.AggregateException" /> that is the root cause of this exception.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -683,7 +683,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a read-only collection of the <see cref="T:System.Exception" /> instances that caused the current exception.</summary>
-        <value>Returns a read-only collection of the <see cref="T:System.Exception" /> instances that caused the current exception.</value>
+        <value>A read-only collection of the <see cref="T:System.Exception" /> instances that caused the current exception.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

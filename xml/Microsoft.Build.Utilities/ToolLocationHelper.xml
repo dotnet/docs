@@ -87,7 +87,7 @@
         <param name="osVersion">The targeted minimum and maximum OS versions in the registry. These values are used to return only directories for OS versions between the declared minimum and maximum. If this value is blank or null, no filtering is done.</param>
         <param name="platform">The targeted platform GUIDs. Used to return only directories which have a matching platform GUID. If this value is blank or null no filtering is done.</param>
         <param name="targetProcessorArchitecture">The targeted processor architecture. This determines which registry hives are searched and in which order.</param>
-        <summary>Gets a sorted list of <see cref="T:Microsoft.Build.Utilities.AssemblyFoldersExInfo" /> objects which contain information about the directories in which the third party assemblies are registered. This information is used at build and design time.</summary>
+        <summary>Gets a sorted list of <see cref="T:Microsoft.Build.Utilities.AssemblyFoldersExInfo" /> objects that contain information about the directories in which the third party assemblies are registered. This information is used at build and design time.</summary>
         <returns>Returns list of <see langword="AssemblyFoldersExInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -123,7 +123,7 @@
         <param name="targetFrameworkDirectory">The target framework directory.</param>
         <param name="frameworkName">The framework name.</param>
         <summary>Creates a display name given the target framework details.</summary>
-        <returns>Returns a display name given the target framework details.</returns>
+        <returns>A display name given the target framework details.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -207,7 +207,7 @@
       <Docs>
         <param name="version">The version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to target.</param>
         <summary>Gets the name of the value under the <see cref="M:Microsoft.Build.Utilities.ToolLocationHelper.GetDotNetFrameworkRootRegistryKey(Microsoft.Build.Utilities.TargetDotNetFrameworkVersion)" /> that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK installation path.</summary>
-        <returns>Returns a string containing the name of the registry key value under the <see cref="M:Microsoft.Build.Utilities.ToolLocationHelper.GetDotNetFrameworkRootRegistryKey(Microsoft.Build.Utilities.TargetDotNetFrameworkVersion)" /> that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK installation path.</returns>
+        <returns>A string containing the name of the registry key value under the <see cref="M:Microsoft.Build.Utilities.ToolLocationHelper.GetDotNetFrameworkRootRegistryKey(Microsoft.Build.Utilities.TargetDotNetFrameworkVersion)" /> that contains the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK installation path.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@
       <Docs>
         <param name="version">Version of the targeted .NET Framework</param>
         <summary>Returns the full name of the .NET Framework SDK root registry key.</summary>
-        <returns>Returns a string representation of the registry key root which indicates where to find the .NETFramework sdk.</returns>
+        <returns>A string representation of the registry key root which indicates where to find the .NETFramework sdk.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +330,7 @@
       <Docs>
         <param name="version">The version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to target.</param>
         <summary>Gets the prefix of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] folder.</summary>
-        <returns>Returns the prefix of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] folder.</returns>
+        <returns>The prefix of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] folder.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -411,7 +411,7 @@
         <param name="version">Version of the targeted .NET Framework</param>
         <param name="architecture">Desired architecture, or DotNetFrameworkArchitecture.Current for the architecture this process is currently running under.</param>
         <summary>Gets a fully qualified path to the framework's root directory.</summary>
-        <returns>Returns a fully qualified path to the framework's root directory.</returns>
+        <returns>A fully qualified path to the framework's root directory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,7 +499,7 @@
         <param name="version">Version of the targeted .NET Framework</param>
         <param name="architecture">Desired architecture, or DotNetFrameworkArchitecture.Current for the architecture this process is currently running under.</param>
         <summary>Gets a fully qualified path to a file in the frameworks root directory for the specified architecture.</summary>
-        <returns>Returns a fully qualified path to a file in the frameworks root directory.</returns>
+        <returns>A fully qualified path to a file in the frameworks root directory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -528,7 +528,7 @@
       <Docs>
         <param name="version">Version of the targeted .NET Framework</param>
         <summary>Returns the path to the reference assemblies location for the given framework version.</summary>
-        <returns>Returns a string containing the fully qualified path to the Reference Assemblies folder, or a null reference (Nothing in Visual Basic) if the targeted version of the .NET Framework is not installed.</returns>
+        <returns>A string containing the fully qualified path to the Reference Assemblies folder, or a null reference (Nothing in Visual Basic) if the targeted version of the .NET Framework is not installed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -688,7 +688,7 @@
         <param name="version">Version of the targeted .NET Framework</param>
         <param name="architecture">The required architecture of the requested file.</param>
         <summary>Gets a fully qualified path to a file in the .NET Framework SDK.</summary>
-        <returns>Returns a fully qualified path to a file in the .NET Framework SDK. Throws an error if the .NET Framework SDK can't be found.</returns>
+        <returns>A fully qualified path to a file in the .NET Framework SDK. Throws an error if the .NET Framework SDK can't be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -715,7 +715,7 @@
         <param name="fileName">File name to locate in the .NET Framework SDK directory</param>
         <param name="version">Version of the targeted .NET Framework</param>
         <param name="visualStudioVersion">Version of Visual Studio associated with the requested SDK.</param>
-        <summary>Get a fully qualified path to a file in the .NET Framework SDK. Error if the .NET Framework SDK can't be found.</summary>
+        <summary>Gets a fully qualified path to a file in the .NET Framework SDK. Error if the .NET Framework SDK can't be found.</summary>
         <returns>Path string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -745,7 +745,7 @@
         <param name="version">Version of the targeted .NET Framework</param>
         <param name="visualStudioVersion">Version of Visual Studio associated with the requested SDK.</param>
         <param name="architecture">The required architecture of the requested file.</param>
-        <summary>Get a fully qualified path to a file in the .NET Framework SDK. Error if the .NET Framework SDK can't be found.</summary>
+        <summary>Gets a fully qualified path to a file in the .NET Framework SDK. Error if the .NET Framework SDK can't be found.</summary>
         <returns>Path string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -779,7 +779,7 @@
       <Docs>
         <param name="frameworkName">The framework name.</param>
         <summary>Gets the paths to the reference assemblies location for the given target framework.</summary>
-        <returns>Returns the paths to the reference assemblies location.</returns>
+        <returns>The paths to the reference assemblies location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -813,7 +813,7 @@
         <param name="targetFrameworkRootPath">Root directory which will be used to calculate the reference assembly path. The references assembies will be generated in the following way TargetFrameworkRootPath\TargetFrameworkIdentifier\TargetFrameworkVersion\SubType\TargetFrameworkSubType.</param>
         <param name="frameworkName">A frameworkName class which represents a TargetFrameworkMoniker. This cannot be null.</param>
         <summary>Gets the paths to the reference assemblies location for the given framework version relative to a given targetFrameworkRoot.</summary>
-        <returns>Returns the paths to the reference assemblies location.</returns>
+        <returns>The paths to the reference assemblies location.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1203,7 +1203,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Get a list of SDK's installed on the machine for a given target platform.</summary>
+        <summary>Gets a list of SDK's installed on the machine for a given target platform.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetPlatformExtensionSDKLocations">
@@ -1228,7 +1228,7 @@
       <Docs>
         <param name="targetPlatformIdentifier">Targeted platform to find SDKs for</param>
         <param name="targetPlatformVersion">Targeted platform version to find SDKs for</param>
-        <summary>Get a list of SDK's installed on the machine for a given target platform</summary>
+        <summary>Gets a list of SDK's installed on the machine for a given target platform</summary>
         <returns>IDictionary of installed SDKS and their location. K:SDKName V:SDK installation location</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1259,7 +1259,7 @@
         <param name="registryRoot">Root registry location to look for sdks</param>
         <param name="targetPlatformIdentifier">Targeted platform to find SDKs for</param>
         <param name="targetPlatformVersion">Targeted platform version to find SDKs for</param>
-        <summary>Get a list of SDK's installed on the machine for a given target platform</summary>
+        <summary>Gets a list of SDK's installed on the machine for a given target platform</summary>
         <returns>IDictionary of installed SDKS and their location. K:SDKName V:SDK installation location</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1270,7 +1270,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Given a target platform identifier and a target platform version, search the default SDK locations for the platform SDK for that target platform.</summary>
+        <summary>Given a target platform identifier and a target platform version, searches the default SDK locations for the platform SDK for that target platform.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetPlatformSDKLocation">
@@ -1295,8 +1295,8 @@
       <Docs>
         <param name="targetPlatformIdentifier">Targeted platform for which to find SDK.</param>
         <param name="targetPlatformVersion">Targeted platform version for which to find SDK.</param>
-        <summary>Given a target platform identifier and a target platform version, search the default SDK locations for the platform SDK for that target platform.</summary>
-        <returns>Returns the location of the SDK if it is found, otherwise, returns an empty string if the SDK could not be found.</returns>
+        <summary>Given a target platform identifier and a target platform version, searches the default SDK locations for the platform SDK for that target platform.</summary>
+        <returns>The location of the SDK, or an empty string if the SDK could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1322,8 +1322,8 @@
       <Docs>
         <param name="targetPlatformIdentifier">Targeted platform for which to find SDK.</param>
         <param name="targetPlatformVersion">Targeted platform version for which to find SDK.</param>
-        <summary>Given a target platform identifier and a target platform version, search the default SDK locations for the platform SDK for that target platform.</summary>
-        <returns>Returns the location of the SDK if it is found, otherwise, returns an empty string if the SDK could not be found.</returns>
+        <summary>Given a target platform identifier and a target platform version, searches the default SDK locations for the platform SDK for that target platform.</summary>
+        <returns>The location of the SDK, or an empty string if the SDK could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1353,8 +1353,8 @@
         <param name="targetPlatformVersion">Targeted platform version for which to find SDK.</param>
         <param name="diskRoots">Array of disk roots within which to search for SDK.</param>
         <param name="registryRoot">Registry root within which to search for SDK.</param>
-        <summary>Given a target platform identifier and a target platform version, search the default SDK locations for the platform SDK for that target platform.</summary>
-        <returns>Returns the location of the SDK if it is found, otherwise, returns an empty string if the SDK could not be found.</returns>
+        <summary>Given a target platform identifier and a target platform version, searches the default SDK locations for the platform SDK for that target platform.</summary>
+        <returns>The location of the SDK, or an empty string if the SDK could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1384,8 +1384,8 @@
         <param name="targetPlatformVersion">Targeted platform version for which to find SDK.</param>
         <param name="diskRoots">Array of disk roots within which to search for SDK.</param>
         <param name="registryRoot">Registry root within which to search for SDK.</param>
-        <summary>Given a target platform identifier and a target platform version, search the default SDK locations for the platform SDK for that target platform.</summary>
-        <returns>Returns the location of the SDK if it is found, otherwise, returns an empty string if the SDK could not be found.</returns>
+        <summary>Given a target platform identifier and a target platform version, searches the default SDK locations for the platform SDK for that target platform.</summary>
+        <returns>The location of the SDK, or an empty string if the SDK could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1407,7 +1407,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the root location for the reference assembly directory under the program files directory.</summary>
-        <returns>Returns the root location for the reference assembly directory.</returns>
+        <returns>The root location for the reference assembly directory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1417,7 +1417,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Get the list of SDK folders which contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <summary>Gets the list of SDK folders that contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSDKDesignTimeFolders">
@@ -1440,8 +1440,8 @@
       </Parameters>
       <Docs>
         <param name="sdkRoot">The root folder for the SDK, must contain a design-time folder.</param>
-        <summary>Get the list of SDK folders which contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
-        <returns>Returns the list of folders to be used in searching for design-time files in the SDK, in the order that must be used for the search.</returns>
+        <summary>Gets the list of SDK folders that contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <returns>The list of folders to be used in searching for design-time files in the SDK, in the order that must be used for the search.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1469,8 +1469,8 @@
         <param name="sdkRoot">The root folder for the SDK, must contain a design-time folder.</param>
         <param name="targetConfiguration">The configuration the SDK is targeting. This is "Debug" or "Retail".</param>
         <param name="targetArchitecture">The architecture the SDK is targeting.</param>
-        <summary>Get the list of SDK folders which contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
-        <returns>Returns the list of folders to be used in searching for design-time files in the SDK, in the order that must be used for the search.</returns>
+        <summary>Gets the list of SDK folders that contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <returns>The list of folders to be used in searching for design-time files in the SDK, in the order that must be used for the search.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1480,7 +1480,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Get the list of SDK folders which contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <summary>Gets the list of SDK folders that contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSDKRedistFolders">
@@ -1503,8 +1503,8 @@
       </Parameters>
       <Docs>
         <param name="sdkRoot">The root folder for the SDK, must contain a redist folder.</param>
-        <summary>Get the list of SDK folders which contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
-        <returns>Returns the list of folders to be used in searching for redist files in the SDK, in the order that must be used for the search.</returns>
+        <summary>Gets the list of SDK folders that contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <returns>The list of folders to be used in searching for redist files in the SDK, in the order that must be used for the search.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1532,8 +1532,8 @@
         <param name="sdkRoot">The root folder for the SDK, must contain a redist folder.</param>
         <param name="targetConfiguration">The configuration the SDK is targeting. This is "Debug" or "Retail".</param>
         <param name="targetArchitecture">The architecture the SDK is targeting.</param>
-        <summary>Get the list of SDK folders which contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
-        <returns>Returns the list of folders to be used in searching for redist files in the SDK, in the order that must be used for the search.</returns>
+        <summary>Gets the list of SDK folders that contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <returns>The list of folders to be used in searching for redist files in the SDK, in the order that must be used for the search.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1543,7 +1543,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Get the list of SDK folders which contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <summary>Gets the list of SDK folders that contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetSDKReferenceFolders">
@@ -1566,8 +1566,8 @@
       </Parameters>
       <Docs>
         <param name="sdkRoot">The root folder for the SDK.</param>
-        <summary>Get the list of SDK folders which contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
-        <returns>Returns the list of folders to be used in searching for references in the SDK, in the order that must be used for the search.</returns>
+        <summary>Gets the list of SDK folders that contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <returns>The list of folders to be used in searching for references in the SDK, in the order that must be used for the search.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1595,8 +1595,8 @@
         <param name="sdkRoot">The root folder for the SDK.</param>
         <param name="targetConfiguration">The configuration the SDK is targeting. This is "Debug" or "Retail".</param>
         <param name="targetArchitecture">The architecture the SDK is targeting.</param>
-        <summary>Get the list of SDK folders which contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
-        <returns>Returns the list of folders to be used in searching for references in the SDK, in the order that must be used for the search.</returns>
+        <summary>Gets the list of SDK folders that contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
+        <returns>The list of folders to be used in searching for references in the SDK, in the order that must be used for the search.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1628,7 +1628,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Get a list of target platform SDKs on the machine.</summary>
+        <summary>Gets a list of target platform SDKs on the machine.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetTargetPlatformSdks">
@@ -1648,7 +1648,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get a list of target platform SDKs on the machine.</summary>
+        <summary>Gets a list of target platform SDKs on the machine.</summary>
         <returns>List of Target Platform SDKs, Item1: TargetPlatformName Item2: Version of SDK Item3: Path to sdk root</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1675,8 +1675,8 @@
       <Docs>
         <param name="diskRoots">List of disk locations to search for platform SDKs.</param>
         <param name="registryRoot">Registry root location to look for platform SDKs.</param>
-        <summary>Get a list of target platform SDKs on the machine.</summary>
-        <returns>Returns a list of target platform SDKs.</returns>
+        <summary>Gets a list of target platform SDKs on the machine.</summary>
+        <returns>A list of target platform SDKs.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1703,7 +1703,7 @@
         <param name="targetFrameworkRootDirectory">Target framework root directory.</param>
         <param name="frameworkIdentifier">Framework identifier.</param>
         <summary>Gets the highest version of a target framework moniker based on the identifier.</summary>
-        <returns>Returns the highest version of a target framework moniker based on the identifier. This method will only find full frameworks; no profiles will be returned.</returns>
+        <returns>The highest version of a target framework moniker based on the identifier. This method will only find full frameworks; no profiles will be returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

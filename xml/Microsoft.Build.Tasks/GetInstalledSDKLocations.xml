@@ -60,8 +60,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get the SDKs.</summary>
-        <returns>Returns <see langword="true" /> if the method succeeds; otherwise, returns <see langword="false" />.</returns>
+        <summary>Gets the SDKs.</summary>
+        <returns><see langword="true" /> if the method succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,7 +89,7 @@
         <summary>Gets or sets the set of items that represent all of the installed SDKs found in the SDKDirectory and SDKRegistry roots.  
   
  The itemspec is the SDK install location. There is a piece of metadata called SDKName which contains the name of the SDK.</summary>
-        <value>Returns the set of all installed SDKs found.</value>
+        <value>The set of all installed SDKs found.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the root directory on disk in which to look for SDKs.</summary>
-        <value>Returns the root directory.</value>
+        <value>The root directory.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +131,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the root registry root in which to look for SDKs.</summary>
-        <value>Returns the registry root.</value>
+        <value>The registry root.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the platform identifier we are targeting.</summary>
-        <value>Returns the target platform identifier.</value>
+        <value>The target platform identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,7 +183,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the platform version we are targeting.</summary>
-        <value>Returns the target platform version.</value>
+        <value>The target platform version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -164,7 +164,7 @@
       <Docs>
         <param name="productCode">The unique identifier of the product to get.</param>
         <summary>Retrieves the product with the specified product code.</summary>
-        <returns>The <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object with the specified product code. Returns null if the specified product code is not found.</returns>
+        <returns>The product with the specified product code, or <see langword="null" /> if the specified product code is not found.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

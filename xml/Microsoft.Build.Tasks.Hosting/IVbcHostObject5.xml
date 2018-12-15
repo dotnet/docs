@@ -112,7 +112,7 @@
       <Parameters />
       <Docs>
         <summary>Gets a free-threaded host object that allows for background threads to call directly. Avoids marshaling to the UI thread.</summary>
-        <returns>Returns the free-threaded host object.</returns>
+        <returns>The free-threaded host object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

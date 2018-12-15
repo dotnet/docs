@@ -865,7 +865,7 @@
       <Docs>
         <summary>Gets a value indicating whether this array was declared but not initialized.</summary>
         <value>
-          <see langword="true" /> to indicate the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is <see langword="null" />; otherwise, false.</value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is <see langword="null" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -895,7 +895,7 @@
       <Docs>
         <summary>Gets a value indicating whether this <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is empty or is not initialized.</summary>
         <value>
-          <see langword="true" /> to indicate the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is <see langword="null" /> or <see cref="F:System.Collections.Immutable.ImmutableArray`1.Empty" />; otherwise, false.</value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is <see langword="null" /> or <see cref="F:System.Collections.Immutable.ImmutableArray`1.Empty" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -925,7 +925,7 @@
       <Docs>
         <summary>Gets a value indicating whether this <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is empty.</summary>
         <value>
-          <see langword="true" /> to indicate the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is empty; otherwise, false.</value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2705,7 +2705,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an array with all the elements removed.</summary>
-        <returns>Returns an array with all the elements removed.</returns>
+        <returns>An array with all the elements removed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

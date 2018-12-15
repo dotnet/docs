@@ -243,7 +243,7 @@
       <Docs>
         <param name="submissionId">The submission ID of the logger to be removed.</param>
         <summary>Removes the specified logger from the MuxLogger.</summary>
-        <returns>Returns <see langword="true" /> if the method is successful in removing the logger, otherwise, returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the method is successful in removing the logger; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

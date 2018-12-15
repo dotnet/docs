@@ -49,7 +49,7 @@
       <Docs>
         <param name="name">The name of the code item to be loaded. This can be a null reference when loading the Project file.</param>
         <summary>Gets the source string previously saved using the SaveElement method.</summary>
-        <returns>Returns the contents of the source-code element associated with the name parameter.</returns>
+        <returns>The contents of the source-code element associated with the name parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

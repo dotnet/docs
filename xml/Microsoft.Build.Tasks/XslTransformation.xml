@@ -58,7 +58,7 @@
       <Parameters />
       <Docs>
         <summary>Executes the XslTransform task.</summary>
-        <returns>Returns <see langword="true" /> if the transformation succeeds; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the transformation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the output files for the XML transformation.</summary>
-        <value>Returns the output files for the XML transformation.</value>
+        <value>The output files for the XML transformation.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,7 +116,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the parameters to the XSLT Input document.</summary>
-        <value>Returns the parameters to the XSLT Input document.</value>
+        <value>The parameters to the XSLT Input document.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +145,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XML input as a string.</summary>
-        <value>Returns the XML input as a string.</value>
+        <value>The XML input as a string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +174,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XML input files.</summary>
-        <value>Returns the XML input files.</value>
+        <value>The XML input files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,7 +203,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the compiled XSLT.</summary>
-        <value>Returns the path of the compiled XSLT assembly.</value>
+        <value>The path of the compiled XSLT assembly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,7 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XSLT input as string.</summary>
-        <value>Returns the XSLT input as string.</value>
+        <value>The XSLT input as string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -261,7 +261,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XSLT input file.</summary>
-        <value>Returns the XSLT input file.</value>
+        <value>The XSLT input file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

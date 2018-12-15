@@ -106,7 +106,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the destination files that represent the destination of the matching source files.</summary>
-        <value>Returns an item that represents the destination files.</value>
+        <value>An item that represents the destination files.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +135,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the destination folder for the source files.</summary>
-        <value>Returns an item representing the destination folder.</value>
+        <value>An item representing the destination folder.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,7 +160,7 @@
       <Parameters />
       <Docs>
         <summary>Executes the move.</summary>
-        <returns>Returns true if the move is successful, false otherwise.</returns>
+        <returns><see langword="true" /> if the move is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,7 +189,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an item representing the files that were successfully moved.</summary>
-        <value>Returns an item representing the files that were successfully moved.</value>
+        <value>An item representing the files that were successfully moved.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +218,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a switch that selects whether files in the destination folder that have the read-only attribute set can be overwritten.</summary>
-        <value>Returns true if the files can be overwritten, false otherwise.</value>
+        <value><see langword="true" /> if the files can be overwritten, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -257,7 +257,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an item representing the list of files to move.</summary>
-        <value>Returns an item representing the list of files to move.</value>
+        <value>An item representing the list of files to move.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

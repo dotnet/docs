@@ -260,8 +260,8 @@
       <Docs>
         <param name="array">An array.</param>
         <param name="index">A location in the array.</param>
-        <summary>Retrieves the byte at a specified location in a specified array.</summary>
-        <returns>Returns the <paramref name="index" /> byte in the array.</returns>
+        <summary>Retrieves the byte at the specified location in the specified array.</summary>
+        <returns>The byte at the specified location in the array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

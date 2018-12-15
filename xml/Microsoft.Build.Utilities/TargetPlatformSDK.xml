@@ -80,7 +80,7 @@
       <Docs>
         <param name="other">Target platform SDK to compare to this element.</param>
         <summary>Ensures equality between target platform SDKs.</summary>
-        <returns>Returns <see langword="true" /> if items are equal, otherwise, returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if items are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
       <Docs>
         <param name="obj">Object to compare to this element.</param>
         <summary>Ensures equality between target platform SDK and object.</summary>
-        <returns>Returns <see langword="true" /> if items are equal, otherwise, returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if items are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,8 +126,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get hash code for the target platform SDK.</summary>
-        <returns>Returns a hash code.</returns>
+        <summary>Gets the hash code for the target platform SDK.</summary>
+        <returns>A hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the Path to the target platform SDK.</summary>
-        <value>Returns the path to the target platform SDK.</value>
+        <value>The path to the target platform SDK.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,7 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the target platform SDK identifier.</summary>
-        <value>Returns the target platform SDK identifier.</value>
+        <value>The target platform SDK identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +190,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the version of the target platform.</summary>
-        <value>Returns the target platform version.</value>
+        <value>The target platform version.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

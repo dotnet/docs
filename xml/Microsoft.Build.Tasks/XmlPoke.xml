@@ -58,7 +58,7 @@
       <Parameters />
       <Docs>
         <summary>Executes the XMLPoke task.</summary>
-        <returns>Returns true if transformation succeeds.</returns>
+        <returns><see langword="true" /> if the transformation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the namespaces for XPath query's prefixes.</summary>
-        <value>Returns the namespaces for XPath query's prefixes.</value>
+        <value>The namespaces for XPath query's prefixes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XPath Query.</summary>
-        <value>Returns the XPath Query.</value>
+        <value>The XPath Query.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the output file.</summary>
-        <value>Returns the output file.</value>
+        <value>The output file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,7 +168,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XML input as file path.</summary>
-        <value>Returns the XML input as file path.</value>
+        <value>The XML input as file path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -392,8 +392,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that specifies whether to use environment variables for INCLUDE and LIB paths.</summary>
-        <value>true if the **VCBuild** task will use environment variables for INCLUDE and LIB paths; otherwise, false.</value>
+        <summary>Gets or sets a value that indicates whether to use environment variables for INCLUDE and LIB paths.</summary>
+        <value><see langword="true" /> if the **VCBuild** task will use environment variables for INCLUDE and LIB paths; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

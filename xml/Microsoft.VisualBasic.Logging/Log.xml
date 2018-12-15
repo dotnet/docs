@@ -130,7 +130,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the file the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> object that underlies the <see langword="Log" /> object.</summary>
-        <value>Returns the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> object that underlies the <see langword="Log" /> object.</value>
+        <value>The <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> object that underlies the <see langword="Log" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -213,7 +213,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets to the <see cref="T:System.Diagnostics.TraceSource" /> object that underlies the <see langword="Log" /> object.</summary>
-        <value>Returns the <see cref="T:System.Diagnostics.TraceSource" /> object that underlies the <see langword="Log" /> object.</value>
+        <value>The <see cref="T:System.Diagnostics.TraceSource" /> object that underlies the <see langword="Log" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

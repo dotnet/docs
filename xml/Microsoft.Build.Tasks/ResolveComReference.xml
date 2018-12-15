@@ -112,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets an array of name-value pairs of environment variables that should be passed to the spawned tlbimp.exe and aximp.exe in addition to (or selectively overriding) the regular environment block.</summary>
-        <value>Returns an array of name-value pairs of environment variables.</value>
+        <value>An array of name-value pairs of environment variables.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -462,8 +462,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a flag specifying whether messages or warnings are logged. Default is <see langword="false" />, messages and warnings are logged.</summary>
-        <value>Returns the flag.</value>
+        <summary>Gets or sets a value that indicates whether messages or warnings are logged.</summary>
+        <value><see langword="true" /> if messages and warnings are not logged; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -554,7 +554,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the preferred target processor architecture, which is passed to the tlbimp.exe /machine flag after translation, for example x86, ia64, amd64 or msil.</summary>
-        <value>Returns the name of the preferred target processor architecture.</value>
+        <value>The name of the preferred target processor architecture.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

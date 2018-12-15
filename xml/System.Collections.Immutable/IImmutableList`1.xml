@@ -283,7 +283,7 @@
         <param name="value">The object to remove from the list.</param>
         <param name="equalityComparer">The equality comparer to use to locate <paramref name="value" />.</param>
         <summary>Removes the first occurrence of a specified object from this immutable list.</summary>
-        <returns>Returns a new list with the specified object removed.</returns>
+        <returns>A new list with the specified object removed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

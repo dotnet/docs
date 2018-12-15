@@ -90,7 +90,7 @@
       <Docs>
         <param name="loggingHost">The host that logs information from the task factory.</param>
         <summary>Create a <c>taskfactory</c> instance which contains the data that needs to be refreshed between task invocations.</summary>
-        <returns>Returns the new task.</returns>
+        <returns>The new task.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>The MSBuild engine uses this for logging.</summary>
-        <value>Returns the name of the task.</value>
+        <value>The name of the task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the type information for all task parameters.</summary>
-        <returns>Returns an array of the type information for all task parameters.</returns>
+        <returns>An array of the type information for all task parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,7 +173,7 @@
         <param name="taskElementContents">The element contents for the task.</param>
         <param name="taskFactoryLoggingHost">The logging host that gets information about tasks.</param>
         <summary>Initialzes the task factory.</summary>
-        <returns>Returns the new task factory.</returns>
+        <returns>The new task factory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
       </ReturnValue>
       <Docs>
         <summary>Represents the type of task.</summary>
-        <value>Returns the task type.</value>
+        <value>The task type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

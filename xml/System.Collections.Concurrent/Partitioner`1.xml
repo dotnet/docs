@@ -202,7 +202,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether additional partitions can be created dynamically.</summary>
-        <value>true if the <see cref="T:System.Collections.Concurrent.Partitioner`1" /> can create partitions dynamically as they are requested; false if the <see cref="T:System.Collections.Concurrent.Partitioner`1" /> can only allocate partitions statically.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.Concurrent.Partitioner`1" /> can create partitions dynamically as they are requested; <see langword="false" /> if the <see cref="T:System.Collections.Concurrent.Partitioner`1" /> can only allocate partitions statically.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

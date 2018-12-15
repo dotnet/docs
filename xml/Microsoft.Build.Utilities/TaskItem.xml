@@ -465,7 +465,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.Build.Framework.ITaskItem2" /> implementation which returns a clone of the metadata on this object. Values returned are in their original escaped form.</summary>
-        <returns>Returns the cloned metadata, with values' escaping preserved.</returns>
+        <returns>The cloned metadata, with values' escaping preserved.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,7 +490,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.Build.Framework.ITaskItem2" /> implementation which gets or sets the item include value.  For disk-based items this would be the file path.</summary>
-        <value>Returns the item include value.</value>
+        <value>The item include value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,7 +518,7 @@
         <param name="metadataName">The metadata to be queried</param>
         <summary>
           <see cref="T:Microsoft.Build.Framework.ITaskItem2" /> implementation which allows the values of metadata on the item to be queried.</summary>
-        <returns>Returns the escaped metadata value.</returns>
+        <returns>The escaped metadata value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

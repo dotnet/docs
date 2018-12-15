@@ -232,7 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets whether the compilation of XAML markup is in process.</summary>
-        <value>True if the compilation of XAML markup is in process; otherwise, false.</value>
+        <value><see langword="true" /> if the compilation of XAML markup is in process; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

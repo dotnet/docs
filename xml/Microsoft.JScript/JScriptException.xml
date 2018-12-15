@@ -230,7 +230,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the column in the code in which the error occurs.</summary>
-        <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
@@ -292,7 +292,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the column in the code in which the error ends.</summary>
-        <value>The column in the code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The column in the code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
@@ -323,7 +323,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the line of code in which the error ends.</summary>
-        <value>The line of code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The line of code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
@@ -420,7 +420,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the line of code in which the error occurs.</summary>
-        <value>The line of code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The line of code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
@@ -451,7 +451,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the text of the code in which the error occurs.</summary>
-        <value>The text of the code, or an empty string if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The text of the code, or an empty string if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
@@ -697,7 +697,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the source code item that caused the error.</summary>
-        <value>The source code item; or throws a <see cref="T:Microsoft.JScript.NoContextException" /> if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The source code item; or throws a <see cref="T:Microsoft.JScript.NoContextException" /> if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />
@@ -728,7 +728,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the source code file that contains the error.</summary>
-        <value>The name of the source code file, or the string literal "no source" if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
+        <value>The name of the source code file, or the string literal "no source" if the <see cref="T:Microsoft.JScript.Context" /> is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
         <altmember cref="T:System.ApplicationException" />

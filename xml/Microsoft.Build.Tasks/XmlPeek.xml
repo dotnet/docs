@@ -58,7 +58,7 @@
       <Parameters />
       <Docs>
         <summary>Executes the XMLPeek task.</summary>
-        <returns>Returns true if transformation succeeds; false otherwise.</returns>
+        <returns><see langword="true" /> if transformation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the namespaces for XPath query's prefixes.</summary>
-        <value>Returns the namespaces.</value>
+        <value>The namespaces.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XPath Query.</summary>
-        <value>Returns the XPath Query.</value>
+        <value>The XPath Query.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the results returned by this task.</summary>
-        <value>Returns the results.</value>
+        <value>The results.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,7 +171,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XML input as a string.</summary>
-        <value>Returns the XML input as a string.</value>
+        <value>The XML input as a string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +200,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the XML input as a file path.</summary>
-        <value>Returns the XML input as a file path.</value>
+        <value>The XML input as a file path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -76,7 +76,7 @@
       </ReturnValue>
       <Docs>
         <summary>Warning codes to disable</summary>
-        <value>Returns the warning codes to disable.</value>
+        <value>The warning codes to disable.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,8 +97,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The full path of the tool to execute.</summary>
-        <returns>Returns the full path of the tool to execute.</returns>
+        <summary>Returns the full path of the tool to execute.</summary>
+        <returns>The full path of the tool to execute.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Input documentation file</summary>
-        <value>Returns the input documentation file.</value>
+        <summary>Gets or sets the input documentation file.</summary>
+        <value>The input documentation file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Input PDB file</summary>
-        <value>Returns the input PDB file.</value>
+        <summary>Gets or sets the input PDB file.</summary>
+        <value>The input PDB file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,8 +160,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Output documentation file</summary>
-        <value>Returns the output documentation file.</value>
+        <summary>Gets or sets the output documentation file.</summary>
+        <value>The output documentation file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +181,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Output PDB file</summary>
-        <value>Returns the output PDB file.</value>
+        <summary>Gets or sets the output PDB file.</summary>
+        <value>The output PDB file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,8 +207,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Output windows metadata file .winmd</summary>
-        <value>Returns the output windows metadata file.</value>
+        <summary>Gets or sets the output windows metadata file .winmd.</summary>
+        <value>The output windows metadata file.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,8 +233,8 @@
         <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Set of references to pass to the winmdexp tool.</summary>
-        <value>Returnsthe set of references.</value>
+        <summary>Gets or sets a set of references to pass to the winmdexp tool.</summary>
+        <value>The set of references to pass to the winmdexp tool.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -254,8 +254,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Path to the SDK directory which contains this tool</summary>
-        <value>Returns the SDK directory path.</value>
+        <summary>Gets or sets the path to the SDK directory which contains this tool</summary>
+        <value>The SDK directory path.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,8 +276,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns true if task execution is not necessary. Executed after ValidateParameters</summary>
-        <returns>Returns the flag indicating whether task execution is skipped.</returns>
+        <summary>Returns a value that indicates whether task execution is necessary. Executed after ValidateParameters.</summary>
+        <returns><see langword="true" /> to skip task execution; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +298,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value which specifies the encoding of the captured task standard error stream.</summary>
-        <value>Returns the value specifying the error stream encoding.</value>
+        <value>The value specifying the error stream encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +319,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value which specifies the encoding of the captured task standard output stream.</summary>
-        <value>Returns the value specifying the output stream encoding.</value>
+        <value>The value specifying the output stream encoding.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,8 +339,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the tool to execute.</summary>
-        <value>Returns the tool name.</value>
+        <summary>Gets the name of the tool to execute.</summary>
+        <value>The tool name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -360,8 +360,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag indicating whether to treat warnings as errors.</summary>
-        <value>Returns the flag indicating whether to treat warnings as errors.</value>
+        <summary>Gets or sets a value that indicates whether to treat warnings as errors.</summary>
+        <value><see langword="true" /> if warnings should be treated as errors; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,8 +381,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the flag indicating whether to use UTF-8 output stream encoding.</summary>
-        <value>Returns the flag indicating UTF-8 output stream encoding.</value>
+        <summary>Gets or sets a value that indicates whether to use UTF-8 output stream encoding.</summary>
+        <value><see langword="true" /> if UTF-8 output stream encoding should be used; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,8 +403,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Validate parameters, log errors and warnings and return true if Execute should proceed.</summary>
-        <returns>Returns the flag indicating whether execute should proceed.</returns>
+        <summary>Validates parameters, logs errors and warnings, and returns <see langword="true" /> if Execute should proceed.</summary>
+        <returns><see langword="true" /> if execute should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,8 +429,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>WinMDModule to generate the WinMDFile for.</summary>
-        <value>Returns the WinMDModule.</value>
+        <summary>Gets or sets the WinMDModule to generate the WinMDFile for.</summary>
+        <value>The WinMDModule.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -102,7 +102,7 @@
       <Docs>
         <param name="taskFactoryLoggingHost">The task factory logging host that logs messages in the context of the task.</param>
         <summary>Creates an instance of the task to be used.</summary>
-        <returns>Returns the new task factory.</returns>
+        <returns>The new task factory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of this task factory, to be used in error messages. For example, Task "Mytask" failed to load from "FactoryName".</summary>
-        <value>Returns the name of this task factory</value>
+        <value>The name of this task factory</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +151,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the type information for the parameters of the task.</summary>
-        <returns>Returns the type information as an array of PropertyInfo.</returns>
+        <returns>The type information.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +211,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the contents of the UsingTask body.</summary>
-        <value>Returns the contents of the UsingTask body.</value>
+        <value>The contents of the UsingTask body.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -237,7 +237,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the task, pulled from the XAML.</summary>
-        <value>Returns the name of the task.</value>
+        <value>The name of the task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +263,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the namespace of the task, pulled from the XAML.</summary>
-        <value>Returns the namespace of the task.</value>
+        <value>The namespace of the task.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of the task, pulled from the XAML.</summary>
-        <value>Returns the task type.</value>
+        <value>The task type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

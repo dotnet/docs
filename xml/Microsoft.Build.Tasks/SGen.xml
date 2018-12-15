@@ -276,7 +276,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the compiler platform to use to generate the output assembly.</summary>
-        <value>Returns the compiler platform to use.</value>
+        <value>The compiler platform to use.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -324,7 +324,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the SDK Tools path.</summary>
-        <value>Returns the SDK Tools path.</value>
+        <value>The SDK Tools path.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -496,7 +496,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a list of specific types to generate serialization code for. <see langword="SGen" /> generates code only for these types.</summary>
-        <value>Returns a list of specific types.</value>
+        <value>A list of specific types.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

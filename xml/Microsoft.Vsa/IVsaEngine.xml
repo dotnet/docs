@@ -90,7 +90,7 @@
       <Parameters />
       <Docs>
         <summary>Causes the script engine to compile the existing source state.</summary>
-        <returns>Returns TRUE on successful compilation, indicating that the <see cref="M:Microsoft.Vsa.IVsaEngine.Run" /> method can be called on the newly compiled assembly. Returns FALSE if the compilation failed.</returns>
+        <returns><see langword="true" /> on successful compilation, indicating that the <see cref="M:Microsoft.Vsa.IVsaEngine.Run" /> method can be called on the newly compiled assembly. <see langword="false" /> if the compilation failed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,7 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>Provides evidence for the purpose of validating the current object's identity.</summary>
-        <value>Returns a reference to an Evidence object.</value>
+        <value>A reference to an Evidence object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +133,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets a Boolean value that signifies whether the script engine produces debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called.</summary>
+        <summary>Gets or sets a Boolean value that signifies whether the script engine produces debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +160,7 @@
       <Docs>
         <param name="name">The name of the option to get.</param>
         <summary>Gets implementation-specific options for a script engine.</summary>
-        <returns>Returns the value of the option.</returns>
+        <returns>The value of the option.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,8 +203,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>Returns TRUE if the script engine is set to produce debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called. Returns FALSE if the script engine will return no debug information.</value>
+        <summary>Gets a value that indicates whether the script engine is set to produce debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called.</summary>
+        <value><see langword="true" /> if the script engine is set to produce debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,8 +225,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a Boolean value that reports whether the script engine's source state has changed since the last save operation, or since the script engine was originally loaded.</summary>
-        <value>Returns true if the script engine is marked as modified (that is, "dirty"). Returns false if the script engine is not dirty. The default value for this property is false.</value>
+        <summary>Gets a value that indicates whether the script engine's source state has changed since the last save operation, or since the script engine was originally loaded.</summary>
+        <value><see langword="true" /> if the script engine is marked as modified (that is, "dirty"); otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,8 +247,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a Boolean value that reports whether the script engine is currently in run mode.</summary>
-        <value>Returns true if the script engine is running. Returns false if the script engine is not running. The default value for this property is false</value>
+        <summary>Gets a value that indicates whether the script engine is currently in run mode.</summary>
+        <value><see langword="true" /> if the script engine is running; otherwise, <see langword="false" />. The default value for this property is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +274,7 @@
       <Docs>
         <param name="identifier">A string value provided as identifier.</param>
         <summary>Checks whether the supplied identifier is valid for the script engine.</summary>
-        <returns>Returns true if the identifier is valid; otherwise, it returns false.</returns>
+        <returns><see langword="true" /> if the identifier is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,7 +296,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:Microsoft.Vsa.IVsaItems" /> collection of <see cref="T:Microsoft.Vsa.IVsaItem" /> objects, which represent all items added to the script engine using the CreateItem method, including code items, reference items, and global items.</summary>
-        <value>Returns a <see cref="T:Microsoft.Vsa.IVsaItems" /> collection.</value>
+        <value>A collection of all items added to the script engine using the CreateItem method, including code items, reference items, and global items.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,7 +318,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the non-localized name of the programming language supported by the script engine.</summary>
-        <value>Returns the English-language name of the programming language supported by the script engine.</value>
+        <value>The English-language name of the programming language supported by the script engine.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,7 +340,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the geographical locale and language in which to report exception messages.</summary>
-        <value>Returns an integer value representing the locale in which exception messages are to be reported.</value>
+        <value>An integer value representing the locale in which exception messages are to be reported.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,8 +386,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets the display name of the script engine that is used primarily for identifying individual script engines to users in a hosted environment.</summary>
-        <value>Returns the value of the script engine's Name property, which may be the empty string.</value>
+        <summary>Gets or sets the display name of the script engine that is used primarily for identifying individual script engines to users in a hosted environment.</summary>
+        <value>The value of the script engine's Name property, which may be the empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -452,8 +452,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets a script engine's root moniker.</summary>
-        <value>Returns the current value of the RootMoniker property.</value>
+        <summary>Gets or sets a script engine's root moniker.</summary>
+        <value>The current value of the RootMoniker property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -474,8 +474,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets the root namespace used by the script engine.</summary>
-        <value>Returns the string value of the root namespace.</value>
+        <summary>Gets or sets the root namespace used by the script engine.</summary>
+        <value>The string value of the root namespace.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -597,8 +597,8 @@
         <ReturnType>Microsoft.Vsa.IVsaSite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets or gets the host-implemented <see cref="T:Microsoft.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host.</summary>
-        <value>Returns a reference to the current <see cref="T:Microsoft.Vsa.IVsaSite" /> object.</value>
+        <summary>Gets or sets the host-implemented <see cref="T:Microsoft.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host.</summary>
+        <value>A reference to the current <see cref="T:Microsoft.Vsa.IVsaSite" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

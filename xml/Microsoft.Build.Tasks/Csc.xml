@@ -223,8 +223,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a Boolean value that indicates whether the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type.</summary>
-        <value>Gets or sets a Boolean value that indicates whether true if the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type.</value>
+        <summary>Gets or sets a value that indicates whether the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type.</summary>
+        <value><see langword="true" /> if the <c>Csc</c> task should cause an exception at run time for integer arithmetic that overflows the bounds of the data type; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -634,7 +634,7 @@ This property can have a value of **x86**, **x64**, or **anycpu**. Default is **
       </ReturnValue>
       <Docs>
         <summary>The name of the language passed to the "/preferreduilang" compiler option.</summary>
-        <value>Returns the name of the language.</value>
+        <value>The name of the language.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

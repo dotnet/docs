@@ -1177,7 +1177,7 @@
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
-### [Iris petals (clustering)](machine-learning/tutorials/iris-clustering.md)
+### [Iris flowers (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### [Apply categorical feature engineering ](machine-learning/how-to-guides/train-model-categorical-ml-net.md)
 ### [Apply textual feature engineering ](machine-learning/how-to-guides/train-model-textual-ml-net.md)

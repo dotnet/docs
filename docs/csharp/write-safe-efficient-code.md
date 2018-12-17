@@ -92,7 +92,7 @@ public struct Point3D
 {
     private static Point3D origin = new Point3D(0,0,0);
 
-    public ref readonly Point3D Origin => ref origin;
+    public static ref readonly Point3D Origin => ref origin;
 
     // other members removed for space
 }

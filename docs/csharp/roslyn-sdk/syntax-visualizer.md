@@ -26,7 +26,7 @@ Create a new project using the **File** > **New Project** command. You can creat
 
 # [C#](#tab/csharp)
 ![Visualizing a C# syntax tree](media/syntax-visualizer/visualize-csharp.png)
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 ![Visualizing a VB syntax tree](media/syntax-visualizer/visualize-visual-basic.png)
 
 ---
@@ -56,7 +56,7 @@ Right click on any item in the tree and click on **View Directed Syntax Graph**.
 The visualizer displays a graphical representation of the subtree rooted at the selected item. Try these steps for the **MethodDeclaration** node corresponding to the `Main()` method in the C# example. The visualizer displays a syntax graph that looks as follows:
 
 ![Viewing a C# syntax graph](media/syntax-visualizer/csharp-syntax-graph.png)
-# [Visual Basic](#tab/visual-basic)
+# [Visual Basic](#tab/vb)
 
 Try the same for the **SubBlock** node corresponding to the `Main()` method in the preceding VB example. The visualizer displays a syntax graph that looks as follows:
 

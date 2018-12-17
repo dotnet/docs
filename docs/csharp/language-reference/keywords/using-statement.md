@@ -1,5 +1,6 @@
 ---
-title: "using statement (C# Reference)"
+title: "using statement - C# Reference"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "using statement [C#]"

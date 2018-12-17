@@ -1,5 +1,6 @@
 ---
-title: "using static directive (C# Reference)"
+title: "using static directive - C# Reference"
+ms.custom: seodec18
 ms.date: 03/10/2017
 helpviewer_keywords: 
   - "using static directive [C#]"

@@ -3,7 +3,7 @@ title: Use ML.NET in a sentiment analysis binary classification scenario
 description: Discover how to use ML.NET in a binary classification scenario to understand how to use sentiment prediction to take the appropriate action.
 ms.date: 11/06/2018
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 # Tutorial: Use ML.NET in a sentiment analysis binary classification scenario
@@ -220,7 +220,7 @@ Add the following code to the `Train` method:
 
 ### Save and Return the model trained to use for evaluation
 
-At this point, you have a model of type <xref:Microsoft.ML.Runtime.Data.TransformerChain%601> that can be integrated into any of your existing or new .NET applications. Return the model at the end of the `Train` method.
+At this point, you have a model of type <xref:Microsoft.ML.Data.TransformerChain%601> that can be integrated into any of your existing or new .NET applications. Return the model at the end of the `Train` method.
 
 [!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#10 "Return the model")]
 
@@ -283,7 +283,7 @@ The `SaveModelAsFile` method executes the following tasks:
 
 * Saves the model as a .zip file.
 
-Next, create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Runtime.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. To save this as a zip file, you'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+Next, create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Data.TransformerChain%601.SaveTo(Microsoft.ML.Runtime.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. To save this as a zip file, you'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
 
 [!code-csharp[SaveToMethod](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#24 "Add the SaveTo Method")]
 

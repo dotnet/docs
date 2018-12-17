@@ -1,7 +1,7 @@
 ---
 title: Compiler Directives (F#)
 description: Learn about F# language preprocessor directives, conditional compilation directives, line directives, and compiler directives.
-ms.date: 05/16/2016
+ms.date: 12/10/2018
 ---
 # Compiler Directives
 
@@ -15,7 +15,7 @@ The following table lists the preprocessor directives that are available in F#.
 
 |Directive|Description|
 |---------|-----------|
-|`#if` *symbol*|Supports conditional compilation. Code in the section after the `#if` is included if the *symbol* is defined.|
+|`#if` *symbol*|Supports conditional compilation. Code in the section after the `#if` is included if the *symbol* is defined. The symbol can also be negated with `!`.|
 |`#else`|Supports conditional compilation. Marks a section of code to include if the symbol used with the previous `#if` is not defined.|
 |`#endif`|Supports conditional compilation. Marks the end of a conditional section of code.|
 |`#`[line] *int*,<br/>`#`[line] *int* *string*,<br/>`#`[line] *int* *verbatim-string*|Indicates the original source code line and file name, for debugging. This feature is provided for tools that generate F# source code.|
@@ -40,6 +40,16 @@ There is no `#define` preprocessor directive in F#. You must use the compiler op
 
 Conditional compilation directives can be nested. Indentation is not significant for preprocessor directives.
 
+You can also negate a symbol with `!`. In this example, a string's value is something only when _not_ debugging:
+
+```fsharp
+#if !DEBUG
+let str = "Not debugging!"
+#else
+let str = "Debugging!"
+#endif
+```
+
 ## Line Directives
 
 When building, the compiler reports errors in F# code by referencing line numbers on which each error occurs. These line numbers start at 1 for the first line in a file. However, if you are generating F# source code from another tool, the line numbers in the generated code are generally not of interest, because the errors in the generated F# code most likely arise from another source. The `#line` directive provides a way for authors of tools that generate F# source code to pass information about the original line numbers and source files to the generated F# code.
@@ -59,6 +69,7 @@ The following table lists the compiler directive that is available in F#.
 |Directive|Description|
 |---------|-----------|
 |`#light` ["on"&#124;"off"]|Enables or disables lightweight syntax, for compatibility with other versions of ML. By default, lightweight syntax is enabled. Verbose syntax is always enabled. Therefore, you can use both lightweight syntax and verbose syntax. The directive `#light` by itself is equivalent to `#light "on"`. If you specify `#light "off"`, you must use verbose syntax for all language constructs. Syntax in the documentation for F# is presented with the assumption that you are using lightweight syntax. For more information, see [Verbose Syntax](verbose-syntax.md).|
+
 For interpreter (fsi.exe) directives, see [Interactive Programming with F#](../tutorials/fsharp-interactive/index.md).
 
 ## See also

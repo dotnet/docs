@@ -40,14 +40,14 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
   
 1.  To select just one member of the source element, use the dot operation. In the following example, assume that a `Customer` object contains several public properties including a string named `City`. When executed, this query will produce an output sequence of strings.  
   
-    ```  
+    ```csharp
     var query = from cust in Customers  
                 select cust.City;  
     ```  
   
 2.  To create elements that contain more than one property from the source element, you can use an object initializer with either a named object or an anonymous type. The following example shows the use of an anonymous type to encapsulate two properties from each `Customer` element:  
   
-    ```  
+    ```csharp
     var query = from cust in Customer  
                 select new {Name = cust.Name, City = cust.City};  
     ```  

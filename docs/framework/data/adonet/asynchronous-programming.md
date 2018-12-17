@@ -123,7 +123,7 @@ class A {
   
          SqlDataReader reader = command.ExecuteReader();  
          while (reader.Read())  
-            Console.WriteLine(String.Format("{0}", reader[0]));  
+            Console.WriteLine(reader[0]);
       }  
    }  
 }  

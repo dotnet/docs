@@ -1,5 +1,7 @@
 ---
-title: "new operator (C# Reference)"
+title: "new operator - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/15/2018
 helpviewer_keywords: 
   - "new operator keyword [C#]"

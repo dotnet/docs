@@ -91,7 +91,7 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
     ```csharp  
     var length = await firstFinishedTask;  
-    resultsTextBox.Text += String.Format("\r\nLength of the downloaded website:  {0}\r\n", length);  
+    resultsTextBox.Text += $"\r\nLength of the downloaded website:  {length}\r\n";
     ```  
   
  Run the program several times to verify that different downloads finish first.  
@@ -191,7 +191,7 @@ namespace CancelAfterOneTask
             //    byte[] urlContents = await response.Content.ReadAsByteArrayAsync();  
   
             //    resultsTextBox.Text +=  
-            //        String.Format("\r\nLength of the downloaded string: {0}.\r\n", urlContents.Length);  
+            //        $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
             //}  
   
             // ***Create a query that, when executed, returns a collection of tasks.  
@@ -212,7 +212,7 @@ namespace CancelAfterOneTask
             // Run the program several times to demonstrate that different  
             // websites can finish first.  
             var length = await firstFinishedTask;  
-            resultsTextBox.Text += String.Format("\r\nLength of the downloaded website:  {0}\r\n", length);  
+            resultsTextBox.Text += $"\r\nLength of the downloaded website:  {length}\r\n";
         }  
   
         // ***Bundle the processing steps for a website into one async method.  

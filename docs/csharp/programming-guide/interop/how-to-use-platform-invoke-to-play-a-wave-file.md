@@ -1,5 +1,6 @@
 ---
-title: "How to: Use Platform Invoke to Play a Wave File (C# Programming Guide)"
+title: "How to: Use Platform Invoke to Play a Wave File - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "platform invoke, sound files"

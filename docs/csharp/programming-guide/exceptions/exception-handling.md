@@ -1,5 +1,6 @@
 ---
-title: "Exception Handling (C# Programming Guide)"
+title: "Exception Handling - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"

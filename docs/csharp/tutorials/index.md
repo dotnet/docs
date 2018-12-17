@@ -65,13 +65,9 @@ on your machine.
 The following tutorials enable you to build C# programs using [.NET Core](../../core/index.md):
 
 * [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and the basics of the task-based asynchronous programming model.
-
 * [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and object-oriented features in the C# language.
-
 * [Inheritance in C# and .NET](inheritance.md): demonstrates inheritance in C#, including the use of inheritance to define base classes, abstract base classes, and derived classes.
-
 * [Working with LINQ](working-with-linq.md): demonstrates many of the features of LINQ and the language elements that support it.
-
 * [String Interpolation](string-interpolation.md): demonstrates how to use string interpolation to create formatted strings in C#.
-
 * [Using Attributes](attributes.md): demonstrates how to create and use attributes in C#.
+* [Nullable reference types](nullable-reference-types.md): demonstrates how to use nullable reference types to express your intent for null references.

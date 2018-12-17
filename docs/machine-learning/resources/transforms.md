@@ -86,7 +86,7 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Legacy.Transforms.Dictionarizer> | Converts input values (words, numbers, etc.) to index in a dictionary. |
 | <xref:Microsoft.ML.Legacy.Transforms.LabelColumnKeyBooleanConverter> | Transforms the label to either key or bool (if needed) to make it suitable for classification. |
 | <xref:Microsoft.ML.Transforms.LabelConvertTransform> |  Converts labels. |
-| <xref:Microsoft.ML.Transforms.LabelIndicatorTransform> | Remaps multiclass labels to binary T,F labels, primarily for use with OVA.|
+| <xref:Microsoft.ML.Transforms.LabelIndicatorTransform> | Remaps multiclass labels to binary True, False labels, primarily for use with OVA.|
 | <xref:Microsoft.ML.Legacy.Transforms.LabelToFloatConverter> | Transforms the label to float to make it suitable for regression. |
 | <xref:Microsoft.ML.Legacy.Transforms.PredictedLabelColumnOriginalValueConverter> | Transforms a predicted label column to its original values, unless it is of type bool. |
 

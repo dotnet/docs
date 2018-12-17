@@ -1,8 +1,7 @@
 ---
 title: "!= Operator - C# Reference"
 ms.custom: seodec18
-
-ms.date: 07/20/2015
+ms.date: 12/14/2018
 f1_keywords: 
   - "!=_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,18 +11,24 @@ helpviewer_keywords:
 ms.assetid: eeff7a4e-ad6f-462d-9f8d-49e9b91c6c97
 ---
 # != Operator (C# Reference)
-The inequality operator (`!=`) returns false if its operands are equal, true otherwise. Inequality operators are predefined for all types, including string and object. User-defined types can overload the `!=` operator.  
-  
-## Remarks  
- For predefined value types, the inequality operator (`!=`) returns true if the values of its operands are different, false otherwise. For reference types other than `string`, `!=` returns true if its two operands refer to different objects. For the `string` type, `!=` compares the values of the strings.  
-  
- User-defined value types can overload the `!=` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). So can user-defined reference types, although by default `!=` behaves as described above for both predefined and user-defined reference types. If `!=` is overloaded, [==](../../../csharp/language-reference/operators/equality-comparison-operator.md) must also be overloaded. Operations on integral types are generally allowed on enumeration.  
-  
-## Example  
- [!code-csharp[csRefOperators#33](../../../csharp/language-reference/operators/codesnippet/CSharp/not-equal-operator_1.cs)]  
-  
-## See Also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)
+The inequality operator `!=` returns `true` if its operands are not equal, `true` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information, see the [== Operator](equality-comparison-operator.md) article.
+
+The following example demonstrates the usage of the `!=` operator:
+
+[!code-csharp-interactive[non-equality examples](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#NonEquality)]
+
+## Operator overloadability
+
+User-defined types can [overload](../keywords/operator.md) the `!=` operator. If a type overloads the inequality operator `!=`, it must also overload the [equality operator](equality-comparison-operator.md) `==`.
+
+## C# language specification
+
+For more information, see the [Relational and type-testing operators](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) section of the [C# language specification](../language-specification/index.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Operators](index.md)
+- [Equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md)

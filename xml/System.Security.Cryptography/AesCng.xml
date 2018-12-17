@@ -222,7 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.CreateDecryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor () As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor();" />
-      <MemberSignature Language="F#" Value="abstract member CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateDecryptor " />
+      <MemberSignature Language="F#" Value="override this.CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateDecryptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -262,7 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.CreateDecryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
-      <MemberSignature Language="F#" Value="abstract member CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateDecryptor (rgbKey, rgbIV)" />
+      <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateDecryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -334,7 +334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.CreateEncryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor () As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor();" />
-      <MemberSignature Language="F#" Value="abstract member CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateEncryptor " />
+      <MemberSignature Language="F#" Value="override this.CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateEncryptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -374,7 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.CreateEncryptor(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (rgbKey As Byte(), rgbIV As Byte()) As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ rgbKey, cli::array &lt;System::Byte&gt; ^ rgbIV);" />
-      <MemberSignature Language="F#" Value="abstract member CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateEncryptor (rgbKey, rgbIV)" />
+      <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCng.CreateEncryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -436,7 +436,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="aesCng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="aesCng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -471,7 +471,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.GenerateIV" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateIV ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateIV();" />
-      <MemberSignature Language="F#" Value="abstract member GenerateIV : unit -&gt; unit&#xA;override this.GenerateIV : unit -&gt; unit" Usage="aesCng.GenerateIV " />
+      <MemberSignature Language="F#" Value="override this.GenerateIV : unit -&gt; unit" Usage="aesCng.GenerateIV " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -503,7 +503,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCng.GenerateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey();" />
-      <MemberSignature Language="F#" Value="abstract member GenerateKey : unit -&gt; unit&#xA;override this.GenerateKey : unit -&gt; unit" Usage="aesCng.GenerateKey " />
+      <MemberSignature Language="F#" Value="override this.GenerateKey : unit -&gt; unit" Usage="aesCng.GenerateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>

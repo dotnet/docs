@@ -442,6 +442,9 @@
       <MemberSignature Language="VB.NET" Value="Function Deserialize (serializationData As Object) As ICollection Implements IDesignerSerializationService.Deserialize" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::ICollection ^ System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize(System::Object ^ serializationData) = System::ComponentModel::Design::Serialization::IDesignerSerializationService::Deserialize;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationService.Deserialize(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -469,6 +472,9 @@
       <MemberSignature Language="VB.NET" Value="Function Serialize (objects As ICollection) As Object Implements IDesignerSerializationService.Serialize" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize(System::Collections::ICollection ^ objects) = System::ComponentModel::Design::Serialization::IDesignerSerializationService::Serialize;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationService.Serialize(System.Collections.ICollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -495,6 +501,9 @@
       <MemberSignature Language="VB.NET" Value="Function CreateName (container As IContainer, dataType As Type) As String Implements INameCreationService.CreateName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System::ComponentModel::IContainer ^ container, Type ^ dataType) = System::ComponentModel::Design::Serialization::INameCreationService::CreateName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System.ComponentModel.IContainer,System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -524,6 +533,9 @@
       <MemberSignature Language="VB.NET" Value="Function IsValidName (name As String) As Boolean Implements INameCreationService.IsValidName" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System::String ^ name) = System::ComponentModel::Design::Serialization::INameCreationService::IsValidName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -552,6 +564,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ValidateName (name As String) Implements INameCreationService.ValidateName" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System::String ^ name) = System::ComponentModel::Design::Serialization::INameCreationService::ValidateName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

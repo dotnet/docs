@@ -1,10 +1,10 @@
 ﻿<Type Name="ScriptResourceMapping" FullName="System.Web.UI.ScriptResourceMapping">
-  <TypeSignature Language="C#" Value="public class ScriptResourceMapping : System.Web.UI.IScriptResourceMapping" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceMapping extends System.Object implements class System.Web.UI.IScriptResourceMapping" />
+  <TypeSignature Language="C#" Value="public class ScriptResourceMapping" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceMapping extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceMapping" />
-  <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceMapping&#xA;Implements IScriptResourceMapping" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceMapping : System::Web::UI::IScriptResourceMapping" />
-  <TypeSignature Language="F#" Value="type ScriptResourceMapping = class&#xA;    interface IScriptResourceMapping" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceMapping" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceMapping" />
+  <TypeSignature Language="F#" Value="type ScriptResourceMapping = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,11 +12,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.Web.UI.IScriptResourceMapping</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Provides location mapping support for script resources.</summary>
     <remarks>
@@ -285,6 +281,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetDefinition (name As String) As IScriptResourceDefinition Implements IScriptResourceMapping.GetDefinition" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Web::UI::IScriptResourceDefinition ^ System.Web.UI.IScriptResourceMapping.GetDefinition(System::String ^ name) = System::Web::UI::IScriptResourceMapping::GetDefinition;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptResourceMapping.GetDefinition(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -308,6 +307,9 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptResourceMapping.System#Web#UI#IScriptResourceMapping#GetDefinition(System.String,System.Reflection.Assembly)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Web::UI::IScriptResourceDefinition ^ System.Web.UI.IScriptResourceMapping.GetDefinition(System::String ^ name, System::Reflection::Assembly ^ assembly) = System::Web::UI::IScriptResourceMapping::GetDefinition;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptResourceMapping.GetDefinition(System.String,System.Reflection.Assembly)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

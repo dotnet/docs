@@ -4266,6 +4266,7 @@
     <Type Name="System.Runtime.InteropServices.CriticalHandle" Id="T:System.Runtime.InteropServices.CriticalHandle">
       <Member Id="F:System.Runtime.InteropServices.CriticalHandle.handle" />
       <Member Id="M:System.Runtime.InteropServices.CriticalHandle.#ctor(System.IntPtr)" />
+      <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Close" />
       <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Dispose" />
       <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Dispose(System.Boolean)" />
       <Member Id="M:System.Runtime.InteropServices.CriticalHandle.Finalize" />
@@ -4590,6 +4591,7 @@
     <Type Name="System.Runtime.InteropServices.SafeHandle" Id="T:System.Runtime.InteropServices.SafeHandle">
       <Member Id="F:System.Runtime.InteropServices.SafeHandle.handle" />
       <Member Id="M:System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)" />
+      <Member Id="M:System.Runtime.InteropServices.SafeHandle.Close" />
       <Member Id="M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)" />
       <Member Id="M:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle" />
       <Member Id="M:System.Runtime.InteropServices.SafeHandle.DangerousRelease" />

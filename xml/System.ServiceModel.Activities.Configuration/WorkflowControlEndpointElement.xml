@@ -129,7 +129,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint(class System.ServiceModel.Description.ContractDescription contractDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowControlEndpointElement.CreateServiceEndpoint(System.ServiceModel.Description.ContractDescription)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Description::ServiceEndpoint ^ CreateServiceEndpoint(System::ServiceModel::Description::ContractDescription ^ contractDescription);" />
-      <MemberSignature Language="F#" Value="abstract member CreateServiceEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.ServiceEndpoint&#xA;override this.CreateServiceEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowControlEndpointElement.CreateServiceEndpoint contractDescription" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="workflowControlEndpointElement.CreateServiceEndpoint contractDescription" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -183,7 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowControlEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ChannelEndpointElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Configuration::ChannelEndpointElement ^ channelEndpointElement);" />
-      <MemberSignature Language="F#" Value="abstract member OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit&#xA;override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnApplyConfiguration (endpoint, channelEndpointElement)" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnApplyConfiguration (endpoint, channelEndpointElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -208,7 +208,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowControlEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ServiceEndpointElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Configuration::ServiceEndpointElement ^ serviceEndpointElement);" />
-      <MemberSignature Language="F#" Value="abstract member OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit&#xA;override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnApplyConfiguration (endpoint, serviceEndpointElement)" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnApplyConfiguration (endpoint, serviceEndpointElement)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -242,7 +242,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowControlEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ChannelEndpointElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitializeAndValidate(System::ServiceModel::Configuration::ChannelEndpointElement ^ channelEndpointElement);" />
-      <MemberSignature Language="F#" Value="abstract member OnInitializeAndValidate : System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit&#xA;override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnInitializeAndValidate channelEndpointElement" />
+      <MemberSignature Language="F#" Value="override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnInitializeAndValidate channelEndpointElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -265,7 +265,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.WorkflowControlEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ServiceEndpointElement)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitializeAndValidate(System::ServiceModel::Configuration::ServiceEndpointElement ^ serviceEndpointElement);" />
-      <MemberSignature Language="F#" Value="abstract member OnInitializeAndValidate : System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit&#xA;override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnInitializeAndValidate serviceEndpointElement" />
+      <MemberSignature Language="F#" Value="override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="workflowControlEndpointElement.OnInitializeAndValidate serviceEndpointElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -875,7 +875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Export (contentType As X509ContentType, password As String) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Export(System::Security::Cryptography::X509Certificates::X509ContentType contentType, System::String ^ password);" />
-      <MemberSignature Language="F#" Value="abstract member Export : System.Security.Cryptography.X509Certificates.X509ContentType * string -&gt; byte[]&#xA;override this.Export : System.Security.Cryptography.X509Certificates.X509ContentType * string -&gt; byte[]" Usage="x509Certificate2.Export (contentType, password)" />
+      <MemberSignature Language="F#" Value="override this.Export : System.Security.Cryptography.X509Certificates.X509ContentType * string -&gt; byte[]" Usage="x509Certificate2.Export (contentType, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1251,7 +1251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (rawData As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(cli::array &lt;System::Byte&gt; ^ rawData);" />
-      <MemberSignature Language="F#" Value="abstract member Import : byte[] -&gt; unit&#xA;override this.Import : byte[] -&gt; unit" Usage="x509Certificate2.Import rawData" />
+      <MemberSignature Language="F#" Value="override this.Import : byte[] -&gt; unit" Usage="x509Certificate2.Import rawData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1297,7 +1297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(System::String ^ fileName);" />
-      <MemberSignature Language="F#" Value="abstract member Import : string -&gt; unit&#xA;override this.Import : string -&gt; unit" Usage="x509Certificate2.Import fileName" />
+      <MemberSignature Language="F#" Value="override this.Import : string -&gt; unit" Usage="x509Certificate2.Import fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1343,7 +1343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (rawData As Byte(), password As SecureString, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(cli::array &lt;System::Byte&gt; ^ rawData, System::Security::SecureString ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
-      <MemberSignature Language="F#" Value="abstract member Import : byte[] * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : byte[] * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (rawData, password, keyStorageFlags)" />
+      <MemberSignature Language="F#" Value="override this.Import : byte[] * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (rawData, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1402,7 +1402,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (rawData As Byte(), password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(cli::array &lt;System::Byte&gt; ^ rawData, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
-      <MemberSignature Language="F#" Value="abstract member Import : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (rawData, password, keyStorageFlags)" />
+      <MemberSignature Language="F#" Value="override this.Import : byte[] * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (rawData, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1469,7 +1469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (fileName As String, password As SecureString, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(System::String ^ fileName, System::Security::SecureString ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
-      <MemberSignature Language="F#" Value="abstract member Import : string * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : string * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (fileName, password, keyStorageFlags)" />
+      <MemberSignature Language="F#" Value="override this.Import : string * System.Security.SecureString * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (fileName, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1525,7 +1525,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Import (fileName As String, password As String, keyStorageFlags As X509KeyStorageFlags)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Import(System::String ^ fileName, System::String ^ password, System::Security::Cryptography::X509Certificates::X509KeyStorageFlags keyStorageFlags);" />
-      <MemberSignature Language="F#" Value="abstract member Import : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit&#xA;override this.Import : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (fileName, password, keyStorageFlags)" />
+      <MemberSignature Language="F#" Value="override this.Import : string * string * System.Security.Cryptography.X509Certificates.X509KeyStorageFlags -&gt; unit" Usage="x509Certificate2.Import (fileName, password, keyStorageFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1892,7 +1892,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
-      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="x509Certificate2.Reset " />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="x509Certificate2.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2146,7 +2146,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="x509Certificate2.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="x509Certificate2.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -2199,7 +2199,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString (verbose As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString(bool verbose);" />
-      <MemberSignature Language="F#" Value="abstract member ToString : bool -&gt; string&#xA;override this.ToString : bool -&gt; string" Usage="x509Certificate2.ToString verbose" />
+      <MemberSignature Language="F#" Value="override this.ToString : bool -&gt; string" Usage="x509Certificate2.ToString verbose" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

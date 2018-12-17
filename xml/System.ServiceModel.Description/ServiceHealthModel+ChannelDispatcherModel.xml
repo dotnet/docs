@@ -161,7 +161,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether the endpoint associated with the channel dispatcher is a system endpoint.</summary>
-        <value><paramref name="true" /> if the endpoint associated with the channel dispatcher is a system endpoint; <paramref name="false" /> if it is a user-defined endpoint. </value>
+        <value>
+          <paramref name="true" /> if the endpoint associated with the channel dispatcher is a system endpoint; <paramref name="false" /> if it is a user-defined endpoint. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

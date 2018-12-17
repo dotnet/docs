@@ -88,7 +88,8 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether the property originated from the environment variables.</summary>
-        <value><see langword="true" /> if the property originated from an environment variable; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the property originated from an environment variable; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +115,8 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether the property is a global property.</summary>
-        <value><see langword="true" /> if the property is a global property; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the property is a global property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +137,8 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether the property originates from an imported file.</summary>
-        <value><see langword="true" /> if the property originates from an imported file and not from an environment variable, a global property, or a reserved property; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the property originates from an imported file and not from an environment variable, a global property, or a reserved property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +164,8 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether the property is a reserved property, for example 'MSBuildProjectFile'.</summary>
-        <value><see langword="true" /> if the property is a reserved property; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the property is a reserved property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,13 +186,13 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,13 +256,13 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -293,7 +297,8 @@
       <Docs>
         <param name="other">The project property to be compared to</param>
         <summary>Compares this project property with the given project property for equality.</summary>
-        <returns><see langword="true" /> if the project properties are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the project properties are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -346,13 +351,13 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Diagnostics.DebuggerBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+          <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

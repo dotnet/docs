@@ -322,7 +322,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetService(Type ^ serviceType);" />
-      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="collectionForm.GetService serviceType" />
+      <MemberSignature Language="F#" Value="override this.GetService : Type -&gt; obj" Usage="collectionForm.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

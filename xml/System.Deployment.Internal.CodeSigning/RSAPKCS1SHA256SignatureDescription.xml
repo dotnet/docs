@@ -51,7 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription.CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDeformatter (key As AsymmetricAlgorithm) As AsymmetricSignatureDeformatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureDeformatter ^ CreateDeformatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
-      <MemberSignature Language="F#" Value="abstract member CreateDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter&#xA;override this.CreateDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter" Usage="rSAPKCS1SHA256SignatureDescription.CreateDeformatter key" />
+      <MemberSignature Language="F#" Value="override this.CreateDeformatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureDeformatter" Usage="rSAPKCS1SHA256SignatureDescription.CreateDeformatter key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -81,7 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription.CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFormatter (key As AsymmetricAlgorithm) As AsymmetricSignatureFormatter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureFormatter ^ CreateFormatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
-      <MemberSignature Language="F#" Value="abstract member CreateFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter&#xA;override this.CreateFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter" Usage="rSAPKCS1SHA256SignatureDescription.CreateFormatter key" />
+      <MemberSignature Language="F#" Value="override this.CreateFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.AsymmetricSignatureFormatter" Usage="rSAPKCS1SHA256SignatureDescription.CreateFormatter key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

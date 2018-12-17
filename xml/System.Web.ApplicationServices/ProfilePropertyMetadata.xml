@@ -151,6 +151,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ExtensionDataObject ^ ExtensionData { System::Runtime::Serialization::ExtensionDataObject ^ get(); void set(System::Runtime::Serialization::ExtensionDataObject ^ value); };" />
       <MemberSignature Language="F#" Value="member this.ExtensionData : System.Runtime.Serialization.ExtensionDataObject with get, set" Usage="System.Web.ApplicationServices.ProfilePropertyMetadata.ExtensionData" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

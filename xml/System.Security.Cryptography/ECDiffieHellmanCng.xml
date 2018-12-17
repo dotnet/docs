@@ -594,7 +594,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eCDiffieHellmanCng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eCDiffieHellmanCng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -702,7 +702,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXmlString (xmlString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXmlString(System::String ^ xmlString);" />
-      <MemberSignature Language="F#" Value="abstract member FromXmlString : string -&gt; unit&#xA;override this.FromXmlString : string -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString xmlString" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString xmlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -738,7 +738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXmlString (xml As String, format As ECKeyXmlFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXmlString(System::String ^ xml, System::Security::Cryptography::ECKeyXmlFormat format);" />
-      <MemberSignature Language="F#" Value="member this.FromXmlString : string * System.Security.Cryptography.ECKeyXmlFormat -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString (xml, format)" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string * System.Security.Cryptography.ECKeyXmlFormat -&gt; unit" Usage="eCDiffieHellmanCng.FromXmlString (xml, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1066,6 +1066,30 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="LegalKeySizes">
+      <MemberSignature Language="C#" Value="public override System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDiffieHellmanCng.LegalKeySizes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.ECDiffieHellmanCng.LegalKeySizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeySizes[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PublicKey">
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ECDiffieHellmanPublicKey PublicKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.ECDiffieHellmanPublicKey PublicKey" />
@@ -1241,7 +1265,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString (includePrivateParameters As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="abstract member ToXmlString : bool -&gt; string&#xA;override this.ToXmlString : bool -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString includePrivateParameters" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : bool -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1279,7 +1303,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDiffieHellmanCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXmlString (format As ECKeyXmlFormat) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToXmlString(System::Security::Cryptography::ECKeyXmlFormat format);" />
-      <MemberSignature Language="F#" Value="member this.ToXmlString : System.Security.Cryptography.ECKeyXmlFormat -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString format" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : System.Security.Cryptography.ECKeyXmlFormat -&gt; string" Usage="eCDiffieHellmanCng.ToXmlString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

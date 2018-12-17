@@ -59,7 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.CreateCompiler" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCompiler () As ICodeCompiler" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeCompiler ^ CreateCompiler();" />
-      <MemberSignature Language="F#" Value="abstract member CreateCompiler : unit -&gt; System.CodeDom.Compiler.ICodeCompiler&#xA;override this.CreateCompiler : unit -&gt; System.CodeDom.Compiler.ICodeCompiler" Usage="jScriptCodeProvider.CreateCompiler " />
+      <MemberSignature Language="F#" Value="override this.CreateCompiler : unit -&gt; System.CodeDom.Compiler.ICodeCompiler" Usage="jScriptCodeProvider.CreateCompiler " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -87,7 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptCodeProvider.CreateGenerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateGenerator () As ICodeGenerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeGenerator ^ CreateGenerator();" />
-      <MemberSignature Language="F#" Value="abstract member CreateGenerator : unit -&gt; System.CodeDom.Compiler.ICodeGenerator&#xA;override this.CreateGenerator : unit -&gt; System.CodeDom.Compiler.ICodeGenerator" Usage="jScriptCodeProvider.CreateGenerator " />
+      <MemberSignature Language="F#" Value="override this.CreateGenerator : unit -&gt; System.CodeDom.Compiler.ICodeGenerator" Usage="jScriptCodeProvider.CreateGenerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

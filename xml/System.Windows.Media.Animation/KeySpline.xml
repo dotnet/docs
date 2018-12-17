@@ -154,7 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.CloneCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -188,7 +188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -281,7 +281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="keySpline.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="keySpline.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,7 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -341,7 +341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="keySpline.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -408,7 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.OnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
-      <MemberSignature Language="F#" Value="abstract member OnChanged : unit -&gt; unit&#xA;override this.OnChanged : unit -&gt; unit" Usage="keySpline.OnChanged " />
+      <MemberSignature Language="F#" Value="override this.OnChanged : unit -&gt; unit" Usage="keySpline.OnChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -478,7 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="keySpline.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="keySpline.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -501,7 +501,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (formatProvider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ formatProvider);" />
-      <MemberSignature Language="F#" Value="member this.ToString : IFormatProvider -&gt; string" Usage="keySpline.ToString formatProvider" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="keySpline.ToString formatProvider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

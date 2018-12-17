@@ -49,7 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DialogResultConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (typeDescriptorContext As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, Type ^ sourceType);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dialogResultConverter.CanConvertFrom (typeDescriptorContext, sourceType)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dialogResultConverter.CanConvertFrom (typeDescriptorContext, sourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DialogResultConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (typeDescriptorContext As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dialogResultConverter.CanConvertTo (typeDescriptorContext, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dialogResultConverter.CanConvertTo (typeDescriptorContext, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,7 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DialogResultConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dialogResultConverter.ConvertFrom (typeDescriptorContext, cultureInfo, source)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dialogResultConverter.ConvertFrom (typeDescriptorContext, cultureInfo, source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,7 +141,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DialogResultConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ value, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="dialogResultConverter.ConvertTo (typeDescriptorContext, cultureInfo, value, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="dialogResultConverter.ConvertTo (typeDescriptorContext, cultureInfo, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

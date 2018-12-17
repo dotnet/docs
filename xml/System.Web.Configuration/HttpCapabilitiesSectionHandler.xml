@@ -71,6 +71,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ configurationContext, System::Xml::XmlNode ^ section);" />
       <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="httpCapabilitiesSectionHandler.Create (parent, configurationContext, section)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

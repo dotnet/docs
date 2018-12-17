@@ -1,10 +1,10 @@
 ﻿<Type Name="DurableOperationAttribute" FullName="System.ServiceModel.Description.DurableOperationAttribute">
-  <TypeSignature Language="C#" Value="public sealed class DurableOperationAttribute : Attribute, System.ServiceModel.Administration.IWmiInstanceProvider, System.ServiceModel.Description.IOperationBehavior" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DurableOperationAttribute extends System.Attribute implements class System.ServiceModel.Administration.IWmiInstanceProvider, class System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="C#" Value="public sealed class DurableOperationAttribute : Attribute, System.ServiceModel.Description.IOperationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DurableOperationAttribute extends System.Attribute implements class System.ServiceModel.Description.IOperationBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DurableOperationAttribute" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DurableOperationAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior, IWmiInstanceProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DurableOperationAttribute sealed : Attribute, System::ServiceModel::Administration::IWmiInstanceProvider, System::ServiceModel::Description::IOperationBehavior" />
-  <TypeSignature Language="F#" Value="type DurableOperationAttribute = class&#xA;    inherit Attribute&#xA;    interface IOperationBehavior&#xA;    interface IWmiInstanceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DurableOperationAttribute&#xA;Inherits Attribute&#xA;Implements IOperationBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DurableOperationAttribute sealed : Attribute, System::ServiceModel::Description::IOperationBehavior" />
+  <TypeSignature Language="F#" Value="type DurableOperationAttribute = class&#xA;    inherit Attribute&#xA;    interface IOperationBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -14,9 +14,6 @@
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Administration.IWmiInstanceProvider</InterfaceName>
-    </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.Description.IOperationBehavior</InterfaceName>
     </Interface>
@@ -208,6 +205,9 @@
       <MemberSignature Language="VB.NET" Value="Sub FillInstance (wmiInstance As IWmiInstance) Implements IWmiInstanceProvider.FillInstance" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System::ServiceModel::Administration::IWmiInstance ^ wmiInstance) = System::ServiceModel::Administration::IWmiInstanceProvider::FillInstance;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System.ServiceModel.Administration.IWmiInstance)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -232,6 +232,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetInstanceType () As String Implements IWmiInstanceProvider.GetInstanceType" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType() = System::ServiceModel::Administration::IWmiInstanceProvider::GetInstanceType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

@@ -167,7 +167,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer GetPeerFromPointCore(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridItemAutomationPeer.GetPeerFromPointCore(System.Windows.Point)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ GetPeerFromPointCore(System::Windows::Point point);" />
-      <MemberSignature Language="F#" Value="abstract member GetPeerFromPointCore : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer&#xA;override this.GetPeerFromPointCore : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridItemAutomationPeer.GetPeerFromPointCore point" />
+      <MemberSignature Language="F#" Value="override this.GetPeerFromPointCore : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridItemAutomationPeer.GetPeerFromPointCore point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -177,7 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
-      <MemberSignature Language="F#" Value="abstract member CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission&#xA;override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="entityProviderFactory.CreatePermission state" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="entityProviderFactory.CreatePermission state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -225,6 +225,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

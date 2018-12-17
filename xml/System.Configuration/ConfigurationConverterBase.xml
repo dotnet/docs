@@ -115,7 +115,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationConverterBase.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ ctx, Type ^ type);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="configurationConverterBase.CanConvertFrom (ctx, type)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="configurationConverterBase.CanConvertFrom (ctx, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -163,7 +163,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationConverterBase.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ ctx, Type ^ type);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="configurationConverterBase.CanConvertTo (ctx, type)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="configurationConverterBase.CanConvertTo (ctx, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -144,7 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.PropertyCollection.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
-      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="propertyCollection.Clone " />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="propertyCollection.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

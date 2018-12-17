@@ -63,7 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.ComparePosition(System.Int64,System.Int64)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ComparePosition (first As Long, second As Long) As XmlNodeOrder" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XmlNodeOrder ComparePosition(long first, long second);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member ComparePosition : int64 * int64 -&gt; System.Xml.XmlNodeOrder" Usage="seekableXPathNavigator.ComparePosition (first, second)" />
+      <MemberSignature Language="F#" Value="override this.ComparePosition : int64 * int64 -&gt; System.Xml.XmlNodeOrder" Usage="seekableXPathNavigator.ComparePosition (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -217,7 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.SeekableXPathNavigator.GetNamespace(System.Int64)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetNamespace (node_position As Long) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetNamespace(long node_position);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member GetNamespace : int64 -&gt; string" Usage="seekableXPathNavigator.GetNamespace node_position" />
+      <MemberSignature Language="F#" Value="override this.GetNamespace : int64 -&gt; string" Usage="seekableXPathNavigator.GetNamespace node_position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -156,7 +156,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates if the WebSocket client is authenticated.</summary>
-        <value><see langword="true" /> if the WebSocket client is authenticated; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the WebSocket client is authenticated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +193,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates if the WebSocket client connected from the local machine.</summary>
-        <value><see langword="true" /> if the WebSocket client connected from the local machine; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the WebSocket client connected from the local machine; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,7 +230,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates if the WebSocket connection is secured using Secure Sockets Layer (SSL).</summary>
-        <value><see langword="true" /> if the WebSocket connection is secured using SSL; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the WebSocket connection is secured using SSL; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

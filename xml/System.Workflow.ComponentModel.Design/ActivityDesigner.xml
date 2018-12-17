@@ -1,9 +1,9 @@
 ﻿<Type Name="ActivityDesigner" FullName="System.Workflow.ComponentModel.Design.ActivityDesigner">
-  <TypeSignature Language="C#" Value="public class ActivityDesigner : IDisposable, System.ComponentModel.Design.IDesignerFilter, System.Drawing.Design.IToolboxUser, System.Workflow.ComponentModel.Design.IPersistUIState, System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
+  <TypeSignature Language="C#" Value="public class ActivityDesigner : IDisposable, System.ComponentModel.Design.IDesignerFilter, System.ComponentModel.Design.IRootDesigner, System.Drawing.Design.IToolboxUser, System.Workflow.ComponentModel.Design.IPersistUIState, System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityDesigner extends System.Object implements class System.ComponentModel.Design.IDesigner, class System.ComponentModel.Design.IDesignerFilter, class System.ComponentModel.Design.IRootDesigner, class System.Drawing.Design.IToolboxUser, class System.IDisposable, class System.Workflow.ComponentModel.Design.IPersistUIState, class System.Workflow.ComponentModel.Design.IWorkflowRootDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />
-  <TypeSignature Language="VB.NET" Value="Public Class ActivityDesigner&#xA;Implements IDesignerFilter, IDisposable, IPersistUIState, IToolboxUser, IWorkflowRootDesigner" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesigner : IDisposable, System::ComponentModel::Design::IDesignerFilter, System::Drawing::Design::IToolboxUser, System::Workflow::ComponentModel::Design::IPersistUIState, System::Workflow::ComponentModel::Design::IWorkflowRootDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityDesigner&#xA;Implements IDesignerFilter, IDisposable, IPersistUIState, IRootDesigner, IToolboxUser, IWorkflowRootDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesigner : IDisposable, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::IRootDesigner, System::Drawing::Design::IToolboxUser, System::Workflow::ComponentModel::Design::IPersistUIState, System::Workflow::ComponentModel::Design::IWorkflowRootDesigner" />
   <TypeSignature Language="F#" Value="type ActivityDesigner = class&#xA;    interface IDisposable&#xA;    interface IDesignerFilter&#xA;    interface IDesigner&#xA;    interface IToolboxUser&#xA;    interface IPersistUIState&#xA;    interface IWorkflowRootDesigner&#xA;    interface IRootDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,19 +40,16 @@
     <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.ComponentModel.ToolboxItemFilter</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Workflow.ComponentModel.Design.ActivityDesignerTheme(typeof(System.Workflow.ComponentModel.Design.ActivityDesignerTheme))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.ToolboxItemFilter("Microsoft.Workflow.VSDesigner", System.ComponentModel.ToolboxItemFilterType.Require)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Workflow.ComponentModel.Design.ActivitySet", System.ComponentModel.ToolboxItemFilterType.Custom)</AttributeName>
     </Attribute>
   </Attributes>
@@ -441,6 +438,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DoDefaultAction();" />
       <MemberSignature Language="F#" Value="abstract member DoDefaultAction : unit -&gt; unit&#xA;override this.DoDefaultAction : unit -&gt; unit" Usage="activityDesigner.DoDefaultAction " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.DoDefaultAction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2767,6 +2767,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="activityDesigner.PostFilterAttributes attributes" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2792,6 +2795,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="activityDesigner.PostFilterEvents events" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2817,6 +2823,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="activityDesigner.PostFilterProperties properties" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2842,6 +2851,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="activityDesigner.PreFilterAttributes attributes" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2867,6 +2879,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="activityDesigner.PreFilterEvents events" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2892,6 +2907,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="activityDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3272,6 +3290,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::IComponent ^ System::ComponentModel::Design::IDesigner::Component { System::ComponentModel::IComponent ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IDesigner.Component" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.IDesigner.Component</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3300,6 +3321,9 @@
       <MemberSignature Language="VB.NET" Value="Sub DoDefaultAction () Implements IDesigner.DoDefaultAction" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesigner.DoDefaultAction() = System::ComponentModel::Design::IDesigner::DoDefaultAction;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.DoDefaultAction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3328,6 +3352,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Initialize (component As IComponent) Implements IDesigner.Initialize" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesigner.Initialize(System::ComponentModel::IComponent ^ component) = System::ComponentModel::Design::IDesigner::Initialize;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.Initialize(System.ComponentModel.IComponent)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3353,6 +3380,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::DesignerVerbCollection ^ System::ComponentModel::Design::IDesigner::Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IDesigner.Verbs" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.IDesigner.Verbs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3374,6 +3404,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterAttributes (attributes As IDictionary) Implements IDesignerFilter.PostFilterAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System::Collections::IDictionary ^ attributes) = System::ComponentModel::Design::IDesignerFilter::PostFilterAttributes;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3398,6 +3431,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterEvents (events As IDictionary) Implements IDesignerFilter.PostFilterEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System::Collections::IDictionary ^ events) = System::ComponentModel::Design::IDesignerFilter::PostFilterEvents;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3422,6 +3458,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterProperties (properties As IDictionary) Implements IDesignerFilter.PostFilterProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System::Collections::IDictionary ^ properties) = System::ComponentModel::Design::IDesignerFilter::PostFilterProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3446,6 +3485,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterAttributes (attributes As IDictionary) Implements IDesignerFilter.PreFilterAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System::Collections::IDictionary ^ attributes) = System::ComponentModel::Design::IDesignerFilter::PreFilterAttributes;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3470,6 +3512,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterEvents (events As IDictionary) Implements IDesignerFilter.PreFilterEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System::Collections::IDictionary ^ events) = System::ComponentModel::Design::IDesignerFilter::PreFilterEvents;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3494,6 +3539,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterProperties (properties As IDictionary) Implements IDesignerFilter.PreFilterProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System::Collections::IDictionary ^ properties) = System::ComponentModel::Design::IDesignerFilter::PreFilterProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3518,6 +3566,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetView (technology As ViewTechnology) As Object Implements IRootDesigner.GetView" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.IRootDesigner.GetView(System::ComponentModel::Design::ViewTechnology technology) = System::ComponentModel::Design::IRootDesigner::GetView;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3553,6 +3604,9 @@
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System::ComponentModel::Design::IRootDesigner::SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.IRootDesigner.SupportedTechnologies</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3580,6 +3634,9 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesigner.System#Drawing#Design#IToolboxUser#GetToolSupported(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxUser.GetToolSupported(System::Drawing::Design::ToolboxItem ^ toolboxItem) = System::Drawing::Design::IToolboxUser::GetToolSupported;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Drawing.Design.IToolboxUser.GetToolSupported(System.Drawing.Design.ToolboxItem)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -3612,6 +3669,9 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesigner.System#Drawing#Design#IToolboxUser#ToolPicked(System.Drawing.Design.ToolboxItem)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxUser.ToolPicked(System::Drawing::Design::ToolboxItem ^ toolboxItem) = System::Drawing::Design::IToolboxUser::ToolPicked;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Drawing.Design.IToolboxUser.ToolPicked(System.Drawing.Design.ToolboxItem)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

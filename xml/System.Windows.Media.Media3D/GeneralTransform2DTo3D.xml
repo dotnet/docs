@@ -37,7 +37,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform2DTo3D.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.CloneCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,7 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform2DTo3D.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,7 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform2DTo3D.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="generalTransform2DTo3D.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="generalTransform2DTo3D.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,7 +134,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform2DTo3D.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,7 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.GeneralTransform2DTo3D.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="generalTransform2DTo3D.GetCurrentValueAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

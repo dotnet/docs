@@ -73,7 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditComponent (context As ITypeDescriptorContext, component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component);" />
-      <MemberSignature Language="F#" Value="abstract member EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool&#xA;override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component)" />
+      <MemberSignature Language="F#" Value="override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -108,7 +108,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.Object,System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Function EditComponent (component As Object, owner As IWin32Window) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EditComponent(System::Object ^ component, System::Windows::Forms::IWin32Window ^ owner);" />
-      <MemberSignature Language="F#" Value="member this.EditComponent : obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (component, owner)" />
+      <MemberSignature Language="F#" Value="override this.EditComponent : obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (component, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,7 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EditComponent (context As ITypeDescriptorContext, component As Object, owner As IWin32Window) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, System::Windows::Forms::IWin32Window ^ owner);" />
-      <MemberSignature Language="F#" Value="abstract member EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool&#xA;override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component, owner)" />
+      <MemberSignature Language="F#" Value="override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

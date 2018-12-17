@@ -155,6 +155,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -680,6 +681,9 @@
         <Attribute FrameworkAlternate="netframework-4.6">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsIdentity/&lt;get_Claims&gt;d__1))</AttributeName>
         </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2">
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsIdentity/&lt;get_Claims&gt;d__79))</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt;</ReturnType>
@@ -759,6 +763,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2088,6 +2093,7 @@ public class ImpersonationDemo
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1866,7 +1866,8 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <param name="args">The event data.</param>
         <summary>Called by the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> to raise the <see cref="F:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent" /> event.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="args" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="args" /> is <see langword="null" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
       </Docs>
     </Member>

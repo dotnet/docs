@@ -40,7 +40,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpTransportElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
-      <MemberSignature Language="F#" Value="abstract member ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit&#xA;override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="udpTransportElement.ApplyConfiguration bindingElement" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="udpTransportElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -85,7 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpTransportElement.CreateDefaultBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultBindingElement () As TransportBindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::TransportBindingElement ^ CreateDefaultBindingElement();" />
-      <MemberSignature Language="F#" Value="abstract member CreateDefaultBindingElement : unit -&gt; System.ServiceModel.Channels.TransportBindingElement&#xA;override this.CreateDefaultBindingElement : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="udpTransportElement.CreateDefaultBindingElement " />
+      <MemberSignature Language="F#" Value="override this.CreateDefaultBindingElement : unit -&gt; System.ServiceModel.Channels.TransportBindingElement" Usage="udpTransportElement.CreateDefaultBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -135,7 +135,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.UdpTransportElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
-      <MemberSignature Language="F#" Value="abstract member InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit&#xA;override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="udpTransportElement.InitializeFrom bindingElement" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="udpTransportElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>

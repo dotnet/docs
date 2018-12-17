@@ -226,7 +226,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("sslProtocols", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

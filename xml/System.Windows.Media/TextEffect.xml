@@ -219,7 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TextEffect" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TextEffect ^ CloneCurrentValue();" />
-      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.TextEffect" Usage="textEffect.CloneCurrentValue " />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.TextEffect" Usage="textEffect.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,7 +251,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextEffect.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="textEffect.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="textEffect.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

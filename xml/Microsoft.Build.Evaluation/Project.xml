@@ -972,7 +972,8 @@
       <Parameters />
       <Docs>
         <summary>Builds this project, using the default targets.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1004,7 +1005,8 @@
       <Docs>
         <param name="logger">The logger to be used during the build.</param>
         <summary>Builds this project, using the default targets and the given logger.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1041,7 +1043,8 @@
       <Docs>
         <param name="loggers">An enumerator over all loggers to be used during the build.</param>
         <summary>Builds this project, using the default targets and the given loggers.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1078,7 +1081,8 @@
       <Docs>
         <param name="target">The target to be built.</param>
         <summary>Builds this project, building the given target.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1115,7 +1119,8 @@
       <Docs>
         <param name="targets">An array of targets to be built.</param>
         <summary>Builds this project, building the given targets.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1154,7 +1159,8 @@
         <param name="loggers">The loggers to be used during the build.</param>
         <param name="remoteLoggers">The remote loggers to be used during the build.</param>
         <summary>Builds this project, using the default targets and the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1193,7 +1199,8 @@
         <param name="target">The target to be built.</param>
         <param name="loggers">The loggers to be used during the build.</param>
         <summary>Builds this project, building the given target and using the given loggers.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1232,7 +1239,8 @@
         <param name="targets">The targets to be built.</param>
         <param name="loggers">The loggers to be used during the build.</param>
         <summary>Builds this project, building the given targets and using the given loggers.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1268,7 +1276,8 @@
         <param name="loggers">The loggers to be used during the build.</param>
         <param name="remoteLoggers">The remote loggers to be used during the build.</param>
         <summary>Builds this project, building the given target and using the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1304,7 +1313,8 @@
         <param name="loggers">The loggers to be used during the build.</param>
         <param name="remoteLoggers">The remote loggers to be used during the build.</param>
         <summary>Builds this project, building the given targets and using the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> on success; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1477,7 +1487,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether <see cref="M:Microsoft.Build.Evaluation.Project.MarkDirty" /> is temporarily disabled. This allows, for example, a global property to be set without the project getting marked dirty for reevaluation as a consequence.</summary>
-        <value><see langword="true" /> to indicate <see langword="MarkDirty" /> is temporarily disabled; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> to indicate <see langword="MarkDirty" /> is temporarily disabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2044,7 +2055,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a property that selects whether the targets and tasks of this project can be built.</summary>
-        <value><see langword="true" /> if the targets and tasks of this project can be built; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the targets and tasks of this project can be built; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2072,7 +2084,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this project has been modified so that it must be reevaluated.</summary>
-        <value><see langword="true" /> if this project has been modified so that it must be reevaluated; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this project has been modified so that it must be reevaluated; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2353,7 +2366,8 @@
       <Docs>
         <param name="name">The name of the global property to be removed.</param>
         <summary>Removes a global property and marks the project as modified.</summary>
-        <returns><see langword="true" /> if the value of the global property was set.</returns>
+        <returns>
+          <see langword="true" /> if the value of the global property was set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2378,7 +2392,8 @@
       <Docs>
         <param name="item">The item to be removed.</param>
         <summary>Removes an item from the project. The item to be removed must be present in the project, and must not originate from an imported file.</summary>
-        <returns><see langword="true" /> if the item is present in this evaluated project; otherwise, <see langword="false" />. Normally this method returns true, since if the requested item is not present, the method throws an exception. If the item is present only in the ItemsIgnoringCondition collection, however, the method returns false.</returns>
+        <returns>
+          <see langword="true" /> if the item is present in this evaluated project; otherwise, <see langword="false" />. Normally this method returns true, since if the requested item is not present, the method throws an exception. If the item is present only in the ItemsIgnoringCondition collection, however, the method returns false.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2445,7 +2460,8 @@
       <Docs>
         <param name="property">The property to remove.</param>
         <summary>Removes an property from the project. The property to be removed must be present in the project, and must not originate from an imported file.</summary>
-        <returns><see langword="true" /> if the property is present in this evaluated project; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the property is present in this evaluated project; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2631,7 +2647,8 @@
         <param name="name">The name of the global property to set.</param>
         <param name="escapedValue">The new value of the global property.</param>
         <summary>Sets a global property after the project has been evaluated. If the value changes, the project is marked to require reevaluation.</summary>
-        <returns><see langword="true" /> if the value changes; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the value changes; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

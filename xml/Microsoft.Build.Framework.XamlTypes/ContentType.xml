@@ -55,6 +55,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="contentType.BeginInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,7 +96,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a flag that determines whether default content type is available.</summary>
-        <value><see langword="true" /> if default content type is available; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if default content type is available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,6 +141,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="contentType.EndInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

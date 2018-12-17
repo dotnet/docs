@@ -65,7 +65,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageIndexConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="imageIndexConverter.ConvertFrom (context, culture, value)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="imageIndexConverter.ConvertFrom (context, culture, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,7 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageIndexConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="imageIndexConverter.ConvertTo (context, culture, value, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="imageIndexConverter.ConvertTo (context, culture, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,7 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageIndexConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="imageIndexConverter.GetStandardValues context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="imageIndexConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,7 +193,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageIndexConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageIndexConverter.GetStandardValuesExclusive context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageIndexConverter.GetStandardValuesExclusive context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,7 +234,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImageIndexConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageIndexConverter.GetStandardValuesSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageIndexConverter.GetStandardValuesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

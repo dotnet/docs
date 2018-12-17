@@ -55,7 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowDataContext.GetProperties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties () As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties();" />
-      <MemberSignature Language="F#" Value="abstract member GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="workflowDataContext.GetProperties " />
+      <MemberSignature Language="F#" Value="override this.GetProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="workflowDataContext.GetProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +79,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

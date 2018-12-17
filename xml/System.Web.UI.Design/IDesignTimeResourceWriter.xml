@@ -1,9 +1,9 @@
 ﻿<Type Name="IDesignTimeResourceWriter" FullName="System.Web.UI.Design.IDesignTimeResourceWriter">
-  <TypeSignature Language="C#" Value="public interface IDesignTimeResourceWriter : IDisposable, System.Resources.IResourceWriter" />
+  <TypeSignature Language="C#" Value="public interface IDesignTimeResourceWriter : System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignTimeResourceWriter implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDesignTimeResourceWriter" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IDesignTimeResourceWriter&#xA;Implements IDisposable, IResourceWriter" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IDesignTimeResourceWriter : IDisposable, System::Resources::IResourceWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignTimeResourceWriter&#xA;Implements IResourceWriter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignTimeResourceWriter : System::Resources::IResourceWriter" />
   <TypeSignature Language="F#" Value="type IDesignTimeResourceWriter = interface&#xA;    interface IResourceWriter&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>

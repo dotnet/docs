@@ -64,7 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add(System.Speech.Recognition.SrgsGrammar.SrgsRule[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray rules As SrgsRule())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Speech::Recognition::SrgsGrammar::SrgsRule ^&gt; ^ rules);" />
-      <MemberSignature Language="F#" Value="member this.Add : System.Speech.Recognition.SrgsGrammar.SrgsRule[] -&gt; unit" Usage="srgsRulesCollection.Add rules" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Speech.Recognition.SrgsGrammar.SrgsRule[] -&gt; unit" Usage="srgsRulesCollection.Add rules" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -98,7 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.GetKeyForItem(System.Speech.Recognition.SrgsGrammar.SrgsRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (rule As SrgsRule) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ rule);" />
-      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; string&#xA;override this.GetKeyForItem : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; string" Usage="srgsRulesCollection.GetKeyForItem rule" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; string" Usage="srgsRulesCollection.GetKeyForItem rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

@@ -1637,13 +1637,13 @@ This identifier is for use by UI automation providers.
       </ReturnValue>
       <Docs>
         <summary>Describes the ordinal location of an automation element within a set of elements that are considered to be siblings.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The `PositionInSetProperty` works in coordination with <xref:System.Windows.Automation.AutomationElementIdentifiers.SizeOfSetProperty> to describe the ordinal location in the set. This functionality is available starting with Windows 10.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessIdProperty">
@@ -1722,14 +1722,14 @@ The `PositionInSetProperty` works in coordination with <xref:System.Windows.Auto
       </ReturnValue>
       <Docs>
         <summary>Gets the count of automation elements in a group or set that are considered to be siblings.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 
 `SizeOfSetProperty` works in coordination with <xref:System.Windows.Automation.AutomationElementIdentifiers.PositionInSetProperty> property to describe the count of items in the set. This functionality is available starting with Windows 10.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StructureChangedEvent">

@@ -59,10 +59,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -91,7 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCopy () As SynchronizationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::SynchronizationContext ^ CreateCopy();" />
-      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.Threading.SynchronizationContext&#xA;override this.CreateCopy : unit -&gt; System.Threading.SynchronizationContext" Usage="windowsFormsSynchronizationContext.CreateCopy " />
+      <MemberSignature Language="F#" Value="override this.CreateCopy : unit -&gt; System.Threading.SynchronizationContext" Usage="windowsFormsSynchronizationContext.CreateCopy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,7 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Post (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="abstract member Post : System.Threading.SendOrPostCallback * obj -&gt; unit&#xA;override this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="windowsFormsSynchronizationContext.Post (d, state)" />
+      <MemberSignature Language="F#" Value="override this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="windowsFormsSynchronizationContext.Post (d, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,7 +184,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WindowsFormsSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Send (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Send(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="abstract member Send : System.Threading.SendOrPostCallback * obj -&gt; unit&#xA;override this.Send : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="windowsFormsSynchronizationContext.Send (d, state)" />
+      <MemberSignature Language="F#" Value="override this.Send : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="windowsFormsSynchronizationContext.Send (d, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

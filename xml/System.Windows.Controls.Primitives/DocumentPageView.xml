@@ -172,6 +172,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
       <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="documentPageView.GetService serviceType" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -324,7 +327,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentPageView.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpiScaleInfo As DpiScale, newDpiScaleInfo As DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpiScaleInfo, System::Windows::DpiScale newDpiScaleInfo);" />
-      <MemberSignature Language="F#" Value="abstract member OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit&#xA;override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="documentPageView.OnDpiChanged (oldDpiScaleInfo, newDpiScaleInfo)" />
+      <MemberSignature Language="F#" Value="override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="documentPageView.OnDpiChanged (oldDpiScaleInfo, newDpiScaleInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -607,6 +610,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

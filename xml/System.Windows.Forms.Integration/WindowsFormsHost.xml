@@ -1,9 +1,9 @@
 ﻿<Type Name="WindowsFormsHost" FullName="System.Windows.Forms.Integration.WindowsFormsHost">
-  <TypeSignature Language="C#" Value="public class WindowsFormsHost : System.Windows.Interop.HwndHost" />
+  <TypeSignature Language="C#" Value="public class WindowsFormsHost : System.Windows.Interop.HwndHost, System.Windows.Interop.IKeyboardInputSink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WindowsFormsHost extends System.Windows.Interop.HwndHost implements class System.Windows.Interop.IKeyboardInputSink" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.WindowsFormsHost" />
-  <TypeSignature Language="VB.NET" Value="Public Class WindowsFormsHost&#xA;Inherits HwndHost" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsHost : System::Windows::Interop::HwndHost" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowsFormsHost&#xA;Inherits HwndHost&#xA;Implements IKeyboardInputSink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsHost : System::Windows::Interop::HwndHost, System::Windows::Interop::IKeyboardInputSink" />
   <TypeSignature Language="F#" Value="type WindowsFormsHost = class&#xA;    inherit HwndHost&#xA;    interface IKeyboardInputSink" />
   <AssemblyInfo>
     <AssemblyName>WindowsFormsIntegration</AssemblyName>
@@ -1140,6 +1140,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TabInto(System::Windows::Input::TraversalRequest ^ request);" />
       <MemberSignature Language="F#" Value="abstract member TabInto : System.Windows.Input.TraversalRequest -&gt; bool&#xA;override this.TabInto : System.Windows.Input.TraversalRequest -&gt; bool" Usage="windowsFormsHost.TabInto request" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsFormsIntegration</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

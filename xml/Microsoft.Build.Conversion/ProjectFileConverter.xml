@@ -349,7 +349,8 @@
         <summary>Performs conversions specific to F# projects (VS2008 CTP -&gt; VS2012) and (VS2010 -&gt; VS2012).  
   
  This involves: changing the location of FSharp targets, and for 2008CTP, adding explicit mscorlib and FSharp.Core references.</summary>
-        <returns><see langword="true" /> if anything was (would be) changed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if anything was (would be) changed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

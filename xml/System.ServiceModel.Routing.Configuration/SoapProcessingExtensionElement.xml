@@ -74,7 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Routing.Configuration.SoapProcessingExtensionElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
-      <MemberSignature Language="F#" Value="abstract member CreateBehavior : unit -&gt; obj&#xA;override this.CreateBehavior : unit -&gt; obj" Usage="soapProcessingExtensionElement.CreateBehavior " />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="soapProcessingExtensionElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

@@ -24,7 +24,7 @@
       <AttributeName>System.ServiceModel.Activation.ServiceActivationBuildProvider</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.Compilation.BuildProviderAppliesTo</AttributeName>
+      <AttributeName>System.Web.Compilation.BuildProviderAppliesTo(System.Web.Compilation.BuildProviderAppliesTo.Web)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -48,7 +48,7 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -75,7 +75,7 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -94,7 +94,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
-      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit&#xA;override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="serviceBuildProvider.GenerateCode assemblyBuilder" />
+      <MemberSignature Language="F#" Value="override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="serviceBuildProvider.GenerateCode assemblyBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -104,7 +104,7 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -127,7 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetCodeCompileUnit(System.Collections.IDictionary@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCodeCompileUnit (ByRef linePragmasTable As IDictionary) As CodeCompileUnit" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::CodeDom::CodeCompileUnit ^ GetCodeCompileUnit([Runtime::InteropServices::Out] System::Collections::IDictionary ^ % linePragmasTable);" />
-      <MemberSignature Language="F#" Value="abstract member GetCodeCompileUnit :  -&gt; System.CodeDom.CodeCompileUnit&#xA;override this.GetCodeCompileUnit :  -&gt; System.CodeDom.CodeCompileUnit" Usage="serviceBuildProvider.GetCodeCompileUnit linePragmasTable" />
+      <MemberSignature Language="F#" Value="override this.GetCodeCompileUnit :  -&gt; System.CodeDom.CodeCompileUnit" Usage="serviceBuildProvider.GetCodeCompileUnit linePragmasTable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -155,7 +155,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomString (results As CompilerResults) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCustomString(System::CodeDom::Compiler::CompilerResults ^ results);" />
-      <MemberSignature Language="F#" Value="abstract member GetCustomString : System.CodeDom.Compiler.CompilerResults -&gt; string&#xA;override this.GetCustomString : System.CodeDom.Compiler.CompilerResults -&gt; string" Usage="serviceBuildProvider.GetCustomString results" />
+      <MemberSignature Language="F#" Value="override this.GetCustomString : System.CodeDom.Compiler.CompilerResults -&gt; string" Usage="serviceBuildProvider.GetCustomString results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -165,7 +165,7 @@
         <AssemblyName>System.ServiceModel</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-4.0">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -189,7 +189,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultFlags (results As CompilerResults) As BuildProviderResultFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Compilation::BuildProviderResultFlags GetResultFlags(System::CodeDom::Compiler::CompilerResults ^ results);" />
-      <MemberSignature Language="F#" Value="abstract member GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags&#xA;override this.GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags" Usage="serviceBuildProvider.GetResultFlags results" />
+      <MemberSignature Language="F#" Value="override this.GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags" Usage="serviceBuildProvider.GetResultFlags results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

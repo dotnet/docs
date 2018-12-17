@@ -52,7 +52,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
-      <MemberSignature Language="F#" Value="abstract member ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit&#xA;override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="discoveryClientElement.ApplyConfiguration bindingElement" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="discoveryClientElement.ApplyConfiguration bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -104,7 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
-      <MemberSignature Language="F#" Value="abstract member CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit&#xA;override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="discoveryClientElement.CopyFrom from" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="discoveryClientElement.CopyFrom from" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -128,7 +128,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.CreateBindingElement" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBindingElement () As BindingElement" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
-      <MemberSignature Language="F#" Value="abstract member CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement&#xA;override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="discoveryClientElement.CreateBindingElement " />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="discoveryClientElement.CreateBindingElement " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -201,7 +201,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
-      <MemberSignature Language="F#" Value="abstract member InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit&#xA;override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="discoveryClientElement.InitializeFrom bindingElement" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="discoveryClientElement.InitializeFrom bindingElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

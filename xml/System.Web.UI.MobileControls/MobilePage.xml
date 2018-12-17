@@ -136,10 +136,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -194,10 +191,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -220,7 +214,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddedControl(class System.Web.UI.Control control, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.AddedControl(System.Web.UI.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddedControl(System::Web::UI::Control ^ control, int index);" />
-      <MemberSignature Language="F#" Value="abstract member AddedControl : System.Web.UI.Control * int -&gt; unit&#xA;override this.AddedControl : System.Web.UI.Control * int -&gt; unit" Usage="mobilePage.AddedControl (control, index)" />
+      <MemberSignature Language="F#" Value="override this.AddedControl : System.Web.UI.Control * int -&gt; unit" Usage="mobilePage.AddedControl (control, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -256,7 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ o);" />
-      <MemberSignature Language="F#" Value="abstract member AddParsedSubObject : obj -&gt; unit&#xA;override this.AddParsedSubObject : obj -&gt; unit" Usage="mobilePage.AddParsedSubObject o" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="mobilePage.AddParsedSubObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -308,10 +302,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -370,10 +361,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -395,7 +383,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.CreateHtmlTextWriter(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateHtmlTextWriter (writer As TextWriter) As HtmlTextWriter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HtmlTextWriter ^ CreateHtmlTextWriter(System::IO::TextWriter ^ writer);" />
-      <MemberSignature Language="F#" Value="abstract member CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter&#xA;override this.CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="mobilePage.CreateHtmlTextWriter writer" />
+      <MemberSignature Language="F#" Value="override this.CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="mobilePage.CreateHtmlTextWriter writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -453,16 +441,10 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -484,7 +466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.DeterminePostBackMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DeterminePostBackMode () As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode();" />
-      <MemberSignature Language="F#" Value="abstract member DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="mobilePage.DeterminePostBackMode " />
+      <MemberSignature Language="F#" Value="override this.DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="mobilePage.DeterminePostBackMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -531,10 +513,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -609,10 +588,7 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -656,10 +632,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -923,10 +896,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -996,7 +966,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitOutputCache (duration As Integer, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitOutputCache(int duration, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
-      <MemberSignature Language="F#" Value="abstract member InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit&#xA;override this.InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByHeader, varyByCustom, location, varyByParam)" />
+      <MemberSignature Language="F#" Value="override this.InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByHeader, varyByCustom, location, varyByParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1038,7 +1008,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitOutputCache (duration As Integer, varyByContentEncoding As String, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitOutputCache(int duration, System::String ^ varyByContentEncoding, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
-      <MemberSignature Language="F#" Value="abstract member InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit&#xA;override this.InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByContentEncoding, varyByHeader, varyByCustom, location, varyByParam)" />
+      <MemberSignature Language="F#" Value="override this.InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByContentEncoding, varyByHeader, varyByCustom, location, varyByParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1081,7 +1051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function LoadPageStateFromPersistenceMedium () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ LoadPageStateFromPersistenceMedium();" />
-      <MemberSignature Language="F#" Value="abstract member LoadPageStateFromPersistenceMedium : unit -&gt; obj&#xA;override this.LoadPageStateFromPersistenceMedium : unit -&gt; obj" Usage="mobilePage.LoadPageStateFromPersistenceMedium " />
+      <MemberSignature Language="F#" Value="override this.LoadPageStateFromPersistenceMedium : unit -&gt; obj" Usage="mobilePage.LoadPageStateFromPersistenceMedium " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1114,7 +1084,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
-      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="mobilePage.LoadViewState savedState" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="mobilePage.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1201,16 +1171,10 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1275,7 +1239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnError(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnError (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnError(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnError : EventArgs -&gt; unit&#xA;override this.OnError : EventArgs -&gt; unit" Usage="mobilePage.OnError e" />
+      <MemberSignature Language="F#" Value="override this.OnError : EventArgs -&gt; unit" Usage="mobilePage.OnError e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1309,7 +1273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="mobilePage.OnInit e" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="mobilePage.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1343,7 +1307,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="mobilePage.OnLoad e" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="mobilePage.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1377,7 +1341,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnPreInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreInit(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnPreInit : EventArgs -&gt; unit&#xA;override this.OnPreInit : EventArgs -&gt; unit" Usage="mobilePage.OnPreInit e" />
+      <MemberSignature Language="F#" Value="override this.OnPreInit : EventArgs -&gt; unit" Usage="mobilePage.OnPreInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1410,7 +1374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="mobilePage.OnPreRender e" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="mobilePage.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1444,7 +1408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnUnload(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUnload (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUnload(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnUnload : EventArgs -&gt; unit&#xA;override this.OnUnload : EventArgs -&gt; unit" Usage="mobilePage.OnUnload e" />
+      <MemberSignature Language="F#" Value="override this.OnUnload : EventArgs -&gt; unit" Usage="mobilePage.OnUnload e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1595,7 +1559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RaisePostBackEvent (sourceControl As IPostBackEventHandler, eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RaisePostBackEvent(System::Web::UI::IPostBackEventHandler ^ sourceControl, System::String ^ eventArgument);" />
-      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit&#xA;override this.RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit" Usage="mobilePage.RaisePostBackEvent (sourceControl, eventArgument)" />
+      <MemberSignature Language="F#" Value="override this.RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit" Usage="mobilePage.RaisePostBackEvent (sourceControl, eventArgument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1730,7 +1694,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemovedControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RemovedControl(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemovedControl(System::Web::UI::Control ^ control);" />
-      <MemberSignature Language="F#" Value="abstract member RemovedControl : System.Web.UI.Control -&gt; unit&#xA;override this.RemovedControl : System.Web.UI.Control -&gt; unit" Usage="mobilePage.RemovedControl control" />
+      <MemberSignature Language="F#" Value="override this.RemovedControl : System.Web.UI.Control -&gt; unit" Usage="mobilePage.RemovedControl control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1766,7 +1730,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
-      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.Render writer" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1800,7 +1764,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RenderControl(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderControl (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
-      <MemberSignature Language="F#" Value="abstract member RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.RenderControl writer" />
+      <MemberSignature Language="F#" Value="override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.RenderControl writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1833,7 +1797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SavePageStateToPersistenceMedium (view As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SavePageStateToPersistenceMedium(System::Object ^ view);" />
-      <MemberSignature Language="F#" Value="abstract member SavePageStateToPersistenceMedium : obj -&gt; unit&#xA;override this.SavePageStateToPersistenceMedium : obj -&gt; unit" Usage="mobilePage.SavePageStateToPersistenceMedium view" />
+      <MemberSignature Language="F#" Value="override this.SavePageStateToPersistenceMedium : obj -&gt; unit" Usage="mobilePage.SavePageStateToPersistenceMedium view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1869,7 +1833,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
-      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="mobilePage.SaveViewState " />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="mobilePage.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1917,10 +1881,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1957,10 +1918,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1997,10 +1955,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2039,13 +1994,10 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2101,7 +2053,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="mobilePage.Validate " />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="mobilePage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -2123,7 +2075,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void VerifyRenderingInServerForm(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.VerifyRenderingInServerForm(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void VerifyRenderingInServerForm(System::Web::UI::Control ^ control);" />
-      <MemberSignature Language="F#" Value="abstract member VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit&#xA;override this.VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit" Usage="mobilePage.VerifyRenderingInServerForm control" />
+      <MemberSignature Language="F#" Value="override this.VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit" Usage="mobilePage.VerifyRenderingInServerForm control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -2132,10 +2084,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

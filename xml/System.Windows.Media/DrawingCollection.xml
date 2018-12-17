@@ -262,7 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingCollection.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.CloneCore source" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.CloneCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -287,7 +287,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingCollection.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As DrawingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::DrawingCollection ^ CloneCurrentValue();" />
-      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.DrawingCollection" Usage="drawingCollection.CloneCurrentValue " />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.DrawingCollection" Usage="drawingCollection.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,7 +319,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.CloneCurrentValueCore source" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.CloneCurrentValueCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -439,7 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingCollection.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="drawingCollection.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="drawingCollection.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -488,7 +488,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingCollection.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.GetAsFrozenCore source" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.GetAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -513,7 +513,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.DrawingCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.GetCurrentValueAsFrozenCore source" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="drawingCollection.GetCurrentValueAsFrozenCore source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

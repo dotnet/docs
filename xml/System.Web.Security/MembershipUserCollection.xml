@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUserCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MembershipUserCollection&#xA;Implements ICollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipUserCollection sealed : System::Collections::ICollection" />
-  <TypeSignature Language="F#" Value="type MembershipUserCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="F#" Value="type MembershipUserCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

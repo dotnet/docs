@@ -210,7 +210,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.CloneCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.CloneCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.CloneCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,7 +244,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.CloneCurrentValueCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member CloneCurrentValueCore : System.Windows.Freezable -&gt; unit&#xA;override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.CloneCurrentValueCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -308,7 +308,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="mediaPlayer.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="mediaPlayer.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -353,7 +353,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.GetAsFrozenCore(System.Windows.Freezable)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
-      <MemberSignature Language="F#" Value="abstract member GetAsFrozenCore : System.Windows.Freezable -&gt; unit&#xA;override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.GetAsFrozenCore sourceFreezable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -756,7 +756,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.ReadPreamble" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ReadPreamble ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReadPreamble();" />
-      <MemberSignature Language="F#" Value="member this.ReadPreamble : unit -&gt; unit" Usage="mediaPlayer.ReadPreamble " />
+      <MemberSignature Language="F#" Value="override this.ReadPreamble : unit -&gt; unit" Usage="mediaPlayer.ReadPreamble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -963,7 +963,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.WritePreamble" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WritePreamble ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePreamble();" />
-      <MemberSignature Language="F#" Value="member this.WritePreamble : unit -&gt; unit" Usage="mediaPlayer.WritePreamble " />
+      <MemberSignature Language="F#" Value="override this.WritePreamble : unit -&gt; unit" Usage="mediaPlayer.WritePreamble " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -759,7 +759,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
-      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="xmlSchemas.OnClear " />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="xmlSchemas.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -793,7 +793,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="xmlSchemas.OnInsert (index, value)" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="xmlSchemas.OnInsert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -832,7 +832,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="xmlSchemas.OnRemove (index, value)" />
+      <MemberSignature Language="F#" Value="override this.OnRemove : int * obj -&gt; unit" Usage="xmlSchemas.OnRemove (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -871,7 +871,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemas.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
-      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="xmlSchemas.OnSet (index, oldValue, newValue)" />
+      <MemberSignature Language="F#" Value="override this.OnSet : int * obj * obj -&gt; unit" Usage="xmlSchemas.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

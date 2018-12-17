@@ -190,7 +190,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to buffer the data read from the Internet resource for a <see cref="T:System.Net.WebClient" /> instance.</summary>
-        <value><see langword="true" /> to enable buffering of the data received from the Internet resource; <see langword="false" /> to disable buffering. The default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> to enable buffering of the data received from the Internet resource; <see langword="false" /> to disable buffering. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -238,7 +239,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to buffer the data written to the Internet resource for a <see cref="T:System.Net.WebClient" /> instance.</summary>
-        <value><see langword="true" /> to enable buffering of the data written to the Internet resource; <see langword="false" /> to disable buffering. The default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> to enable buffering of the data written to the Internet resource; <see langword="false" /> to disable buffering. The default is <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

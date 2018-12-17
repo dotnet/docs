@@ -74,7 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="fontConverter.CanConvertFrom (context, sourceType)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="fontConverter.CanConvertFrom (context, sourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -103,7 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="fontConverter.CanConvertTo (context, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="fontConverter.CanConvertTo (context, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -139,7 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="fontConverter.ConvertFrom (context, culture, value)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="fontConverter.ConvertFrom (context, culture, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -171,7 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="fontConverter.ConvertTo (context, culture, value, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="fontConverter.ConvertTo (context, culture, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -212,7 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateInstance (context As ITypeDescriptorContext, propertyValues As IDictionary) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ CreateInstance(System::ComponentModel::ITypeDescriptorContext ^ context, System::Collections::IDictionary ^ propertyValues);" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstance : System.ComponentModel.ITypeDescriptorContext * System.Collections.IDictionary -&gt; obj&#xA;override this.CreateInstance : System.ComponentModel.ITypeDescriptorContext * System.Collections.IDictionary -&gt; obj" Usage="fontConverter.CreateInstance (context, propertyValues)" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : System.ComponentModel.ITypeDescriptorContext * System.Collections.IDictionary -&gt; obj" Usage="fontConverter.CreateInstance (context, propertyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -243,7 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!FontConverter ()" />
-      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="fontConverter.Finalize " />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="fontConverter.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -266,7 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCreateInstanceSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetCreateInstanceSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetCreateInstanceSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetCreateInstanceSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontConverter.GetCreateInstanceSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetCreateInstanceSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontConverter.GetCreateInstanceSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -293,7 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
-      <MemberSignature Language="F#" Value="abstract member GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="fontConverter.GetProperties (context, value, attributes)" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="fontConverter.GetProperties (context, value, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -326,7 +326,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.FontConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontConverter.GetPropertiesSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontConverter.GetPropertiesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ value);" />
-      <MemberSignature Language="F#" Value="member this.Add : string -&gt; unit" Usage="commaDelimitedStringCollection.Add value" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="commaDelimitedStringCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -116,7 +116,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.AddRange(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (range As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::String ^&gt; ^ range);" />
-      <MemberSignature Language="F#" Value="member this.AddRange : string[] -&gt; unit" Usage="commaDelimitedStringCollection.AddRange range" />
+      <MemberSignature Language="F#" Value="override this.AddRange : string[] -&gt; unit" Usage="commaDelimitedStringCollection.AddRange range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -161,7 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
-      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="commaDelimitedStringCollection.Clear " />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="commaDelimitedStringCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -223,7 +223,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Insert(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ value);" />
-      <MemberSignature Language="F#" Value="member this.Insert : int * string -&gt; unit" Usage="commaDelimitedStringCollection.Insert (index, value)" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * string -&gt; unit" Usage="commaDelimitedStringCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -394,7 +394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ value);" />
-      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="commaDelimitedStringCollection.Remove value" />
+      <MemberSignature Language="F#" Value="override this.Remove : string -&gt; unit" Usage="commaDelimitedStringCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -473,7 +473,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.CommaDelimitedStringCollection.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="commaDelimitedStringCollection.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="commaDelimitedStringCollection.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

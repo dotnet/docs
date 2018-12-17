@@ -1161,6 +1161,9 @@
       <MemberSignature Language="VB.NET" Value="Function HasFocusWithin () As Boolean Implements IKeyboardInputSink.HasFocusWithin" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.HasFocusWithin() = System::Windows::Interop::IKeyboardInputSink::HasFocusWithin;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1197,6 +1200,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::Windows::Interop::IKeyboardInputSite ^ System::Windows::Interop::IKeyboardInputSink::KeyboardInputSite { System::Windows::Interop::IKeyboardInputSite ^ get(); void set(System::Windows::Interop::IKeyboardInputSite ^ value); };" />
       <MemberSignature Language="F#" Usage="System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1242,6 +1248,9 @@
       <MemberSignature Language="VB.NET" Value="Function OnMnemonic (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean Implements IKeyboardInputSink.OnMnemonic" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers) = System::Windows::Interop::IKeyboardInputSink::OnMnemonic;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1288,6 +1297,9 @@
       <MemberSignature Language="VB.NET" Value="Function RegisterKeyboardInputSink (sink As IKeyboardInputSink) As IKeyboardInputSite Implements IKeyboardInputSink.RegisterKeyboardInputSink" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Interop::IKeyboardInputSite ^ System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System::Windows::Interop::IKeyboardInputSink ^ sink) = System::Windows::Interop::IKeyboardInputSink::RegisterKeyboardInputSink;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1329,6 +1341,9 @@
       <MemberSignature Language="VB.NET" Value="Function TabInto (request As TraversalRequest) As Boolean Implements IKeyboardInputSink.TabInto" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.TabInto(System::Windows::Input::TraversalRequest ^ request) = System::Windows::Interop::IKeyboardInputSink::TabInto;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1363,6 +1378,9 @@
       <MemberSignature Language="VB.NET" Value="Function TranslateAccelerator (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean Implements IKeyboardInputSink.TranslateAccelerator" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers) = System::Windows::Interop::IKeyboardInputSink::TranslateAccelerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1410,6 +1428,9 @@
       <MemberSignature Language="VB.NET" Value="Function TranslateChar (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean Implements IKeyboardInputSink.TranslateChar" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Interop.IKeyboardInputSink.TranslateChar(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers) = System::Windows::Interop::IKeyboardInputSink::TranslateChar;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

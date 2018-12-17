@@ -53,6 +53,9 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequestFactory.System#Net#IWebRequestCreate#Create(System.Uri)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Net::WebRequest ^ System.Net.IWebRequestCreate.Create(Uri ^ uri) = System::Net::IWebRequestCreate::Create;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Net.IWebRequestCreate.Create(System.Uri)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

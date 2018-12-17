@@ -1,10 +1,10 @@
 ﻿<Type Name="DataPagerFieldItem" FullName="System.Web.UI.WebControls.DataPagerFieldItem">
-  <TypeSignature Language="C#" Value="public class DataPagerFieldItem : System.Web.UI.Control, System.Web.UI.INamingContainer, System.Web.UI.INonBindingContainer" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldItem extends System.Web.UI.Control implements class System.Web.UI.INamingContainer, class System.Web.UI.INonBindingContainer" />
+  <TypeSignature Language="C#" Value="public class DataPagerFieldItem : System.Web.UI.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldItem extends System.Web.UI.Control implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerFieldItem" />
-  <TypeSignature Language="VB.NET" Value="Public Class DataPagerFieldItem&#xA;Inherits Control&#xA;Implements INamingContainer, INonBindingContainer" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataPagerFieldItem : System::Web::UI::Control, System::Web::UI::INamingContainer, System::Web::UI::INonBindingContainer" />
-  <TypeSignature Language="F#" Value="type DataPagerFieldItem = class&#xA;    inherit Control&#xA;    interface INonBindingContainer&#xA;    interface INamingContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPagerFieldItem&#xA;Inherits Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPagerFieldItem : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type DataPagerFieldItem = class&#xA;    inherit Control&#xA;    interface INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -16,9 +16,6 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Web.UI.INonBindingContainer</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -79,7 +76,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnBubbleEvent : obj * EventArgs -&gt; bool&#xA;override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataPagerFieldItem.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataPagerFieldItem.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -671,7 +671,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertyValues (sc As SettingsContext, properties As SettingsPropertyCollection) As SettingsPropertyValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Configuration::SettingsPropertyValueCollection ^ GetPropertyValues(System::Configuration::SettingsContext ^ sc, System::Configuration::SettingsPropertyCollection ^ properties);" />
-      <MemberSignature Language="F#" Value="abstract member GetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; System.Configuration.SettingsPropertyValueCollection&#xA;override this.GetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; System.Configuration.SettingsPropertyValueCollection" Usage="sqlProfileProvider.GetPropertyValues (sc, properties)" />
+      <MemberSignature Language="F#" Value="override this.GetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; System.Configuration.SettingsPropertyValueCollection" Usage="sqlProfileProvider.GetPropertyValues (sc, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -715,7 +715,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
-      <MemberSignature Language="F#" Value="abstract member Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit&#xA;override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlProfileProvider.Initialize (name, config)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlProfileProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -766,7 +766,7 @@ aspnet_regsql.exe -A p
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.SqlProfileProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetPropertyValues (sc As SettingsContext, properties As SettingsPropertyValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetPropertyValues(System::Configuration::SettingsContext ^ sc, System::Configuration::SettingsPropertyValueCollection ^ properties);" />
-      <MemberSignature Language="F#" Value="abstract member SetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyValueCollection -&gt; unit&#xA;override this.SetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyValueCollection -&gt; unit" Usage="sqlProfileProvider.SetPropertyValues (sc, properties)" />
+      <MemberSignature Language="F#" Value="override this.SetPropertyValues : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyValueCollection -&gt; unit" Usage="sqlProfileProvider.SetPropertyValues (sc, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

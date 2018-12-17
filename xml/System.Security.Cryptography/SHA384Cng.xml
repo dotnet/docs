@@ -55,7 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA384Cng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="sHA384Cng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sHA384Cng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -85,7 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA384Cng.HashCore(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (array As Byte(), ibStart As Integer, cbSize As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ array, int ibStart, int cbSize);" />
-      <MemberSignature Language="F#" Value="abstract member HashCore : byte[] * int * int -&gt; unit&#xA;override this.HashCore : byte[] * int * int -&gt; unit" Usage="sHA384Cng.HashCore (array, ibStart, cbSize)" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="sHA384Cng.HashCore (array, ibStart, cbSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -119,7 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA384Cng.HashFinal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
-      <MemberSignature Language="F#" Value="abstract member HashFinal : unit -&gt; byte[]&#xA;override this.HashFinal : unit -&gt; byte[]" Usage="sHA384Cng.HashFinal " />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="sHA384Cng.HashFinal " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -147,7 +147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA384Cng.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
-      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="sHA384Cng.Initialize " />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="sHA384Cng.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

@@ -161,7 +161,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.WebServiceHost.OnOpening" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpening ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpening();" />
-      <MemberSignature Language="F#" Value="abstract member OnOpening : unit -&gt; unit&#xA;override this.OnOpening : unit -&gt; unit" Usage="webServiceHost.OnOpening " />
+      <MemberSignature Language="F#" Value="override this.OnOpening : unit -&gt; unit" Usage="webServiceHost.OnOpening " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

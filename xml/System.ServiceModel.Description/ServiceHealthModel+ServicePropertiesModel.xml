@@ -59,7 +59,8 @@
         <param name="serviceHost">The WCF service to monitor.</param>
         <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel.ServicePropertiesModel" /> class that provides property information for the specied WCF service.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BaseAddresses">
@@ -111,13 +112,13 @@
       <Docs>
         <summary>Gets the concurrency mode of the WCF service.</summary>
         <value>The concurrency mode of the service.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 A service's concurrency mode specifies whether it supports single- or multi-threaded modes of operation. For more information, see <xref:System.ServiceModel.ConcurrencyMode?displayProperty=nameWithType>.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InstanceContextMode">
@@ -143,13 +144,13 @@ A service's concurrency mode specifies whether it supports single- or multi-thre
       <Docs>
         <summary>Gets the instance context mode of the WCF service.</summary>
         <value>The instance context mode of the service.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 A service's instance context mode determines how service instances handle calls that are contained in incoming messages. For more information, see <xref:System.ServiceModel.InstanceContextMode?displayPrpoerty=nameWithtype>.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -227,13 +228,13 @@ A service's instance context mode determines how service instances handle calls 
       <Docs>
         <summary>Gets information about the service throttle of a WCF service.</summary>
         <value>An object that contains information about the service throttle of the service.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 For more information, see <xref:System.ServiceModel.Dispatcher.ServiceThrottle?displayProperty=nameWithType>.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ServiceTypeName">

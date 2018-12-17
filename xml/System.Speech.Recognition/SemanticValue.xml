@@ -1014,7 +1014,8 @@ newGrammar.SpeechRecognized +=
       <Docs>
         <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
         <summary>Removes the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> from the collection.</summary>
-        <returns><see langword="true" /> if the key/value pair was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the collection.</returns>
+        <returns>
+          <see langword="true" /> if the key/value pair was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1096,7 +1097,8 @@ newGrammar.SpeechRecognized +=
       <Docs>
         <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
         <summary>Removes the specified key and <see cref="T:System.Speech.Recognition.SemanticValue" /> from the dictionary.</summary>
-        <returns><see langword="true" /> if the key/value pair was successfully removed from the dictionary; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the dictionary.</returns>
+        <returns>
+          <see langword="true" /> if the key/value pair was successfully removed from the dictionary; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the key/value pair is not found in the dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1123,7 +1125,8 @@ newGrammar.SpeechRecognized +=
         <param name="key">A key for a <see cref="T:System.Speech.Recognition.SemanticValue" />.</param>
         <param name="value">The <see cref="T:System.Speech.Recognition.SemanticValue" /> to get.</param>
         <summary>Gets the <see cref="T:System.Speech.Recognition.SemanticValue" /> associated with the specified key.</summary>
-        <returns><see langword="true" /> if the dictionary contains a key/value pair with the specified key; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the dictionary contains a key/value pair with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

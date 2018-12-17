@@ -61,7 +61,8 @@
         <summary>Creates a service health section with the specified title and adds it to the current collection.</summary>
         <returns>The service health section.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="title" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="title" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateSection">
@@ -89,7 +90,8 @@
         <summary>Creates a service health section with the specified title and background color, and adds it to the current collection.</summary>
         <returns>The service health section.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="title" /> is <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="title" /> is <see langword="null" />.
 
 -or-
 
@@ -124,7 +126,8 @@
         <summary>Creates a service health section with the specified title, background color, and foreground color, and adds it to the current collection.</summary>
         <returns>The service health section.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="title" /> is <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="title" /> is <see langword="null" />.
 
 -or-
 

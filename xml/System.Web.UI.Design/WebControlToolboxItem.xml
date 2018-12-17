@@ -132,7 +132,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.CreateComponentsCore(System.ComponentModel.Design.IDesignerHost)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateComponentsCore (host As IDesignerHost) As IComponent()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ CreateComponentsCore(System::ComponentModel::Design::IDesignerHost ^ host);" />
-      <MemberSignature Language="F#" Value="abstract member CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]&#xA;override this.CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="webControlToolboxItem.CreateComponentsCore host" />
+      <MemberSignature Language="F#" Value="override this.CreateComponentsCore : System.ComponentModel.Design.IDesignerHost -&gt; System.ComponentModel.IComponent[]" Usage="webControlToolboxItem.CreateComponentsCore host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -167,7 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Deserialize (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Deserialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
-      <MemberSignature Language="F#" Value="abstract member Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webControlToolboxItem.Deserialize (info, context)" />
+      <MemberSignature Language="F#" Value="override this.Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webControlToolboxItem.Deserialize (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -287,7 +287,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.Initialize(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(Type ^ type);" />
-      <MemberSignature Language="F#" Value="abstract member Initialize : Type -&gt; unit&#xA;override this.Initialize : Type -&gt; unit" Usage="webControlToolboxItem.Initialize type" />
+      <MemberSignature Language="F#" Value="override this.Initialize : Type -&gt; unit" Usage="webControlToolboxItem.Initialize type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -313,7 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControlToolboxItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Serialize (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Serialize(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
-      <MemberSignature Language="F#" Value="abstract member Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webControlToolboxItem.Serialize (info, context)" />
+      <MemberSignature Language="F#" Value="override this.Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webControlToolboxItem.Serialize (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

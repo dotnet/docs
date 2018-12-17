@@ -1,10 +1,10 @@
 ﻿<Type Name="DurableServiceAttribute" FullName="System.ServiceModel.Description.DurableServiceAttribute">
-  <TypeSignature Language="C#" Value="public sealed class DurableServiceAttribute : Attribute, System.ServiceModel.Administration.IWmiInstanceProvider, System.ServiceModel.Description.IServiceBehavior, System.ServiceModel.IContextSessionProvider" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DurableServiceAttribute extends System.Attribute implements class System.ServiceModel.Administration.IWmiInstanceProvider, class System.ServiceModel.Description.IServiceBehavior, class System.ServiceModel.IContextSessionProvider" />
+  <TypeSignature Language="C#" Value="public sealed class DurableServiceAttribute : Attribute, System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DurableServiceAttribute extends System.Attribute implements class System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.DurableServiceAttribute" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DurableServiceAttribute&#xA;Inherits Attribute&#xA;Implements IContextSessionProvider, IServiceBehavior, IWmiInstanceProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DurableServiceAttribute sealed : Attribute, System::ServiceModel::Administration::IWmiInstanceProvider, System::ServiceModel::Description::IServiceBehavior, System::ServiceModel::IContextSessionProvider" />
-  <TypeSignature Language="F#" Value="type DurableServiceAttribute = class&#xA;    inherit Attribute&#xA;    interface IServiceBehavior&#xA;    interface IContextSessionProvider&#xA;    interface IWmiInstanceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DurableServiceAttribute&#xA;Inherits Attribute&#xA;Implements IServiceBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DurableServiceAttribute sealed : Attribute, System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type DurableServiceAttribute = class&#xA;    inherit Attribute&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -15,13 +15,7 @@
   </Base>
   <Interfaces>
     <Interface>
-      <InterfaceName>System.ServiceModel.Administration.IWmiInstanceProvider</InterfaceName>
-    </Interface>
-    <Interface>
       <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.ServiceModel.IContextSessionProvider</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -83,6 +77,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
       <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="durableServiceAttribute.AddBindingParameters (serviceDescription, serviceHostBase, endpoints, bindingParameters)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -113,6 +110,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
       <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit" Usage="durableServiceAttribute.ApplyDispatchBehavior (serviceDescription, serviceHostBase)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -171,6 +171,9 @@
       <MemberSignature Language="VB.NET" Value="Sub FillInstance (wmiInstance As IWmiInstance) Implements IWmiInstanceProvider.FillInstance" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System::ServiceModel::Administration::IWmiInstance ^ wmiInstance) = System::ServiceModel::Administration::IWmiInstanceProvider::FillInstance;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System.ServiceModel.Administration.IWmiInstance)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -195,6 +198,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetInstanceType () As String Implements IWmiInstanceProvider.GetInstanceType" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType() = System::ServiceModel::Administration::IWmiInstanceProvider::GetInstanceType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -246,6 +252,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
       <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit" Usage="durableServiceAttribute.Validate (serviceDescription, serviceHostBase)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

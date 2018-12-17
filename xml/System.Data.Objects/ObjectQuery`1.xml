@@ -1,9 +1,9 @@
 ﻿<Type Name="ObjectQuery&lt;T&gt;" FullName="System.Data.Objects.ObjectQuery&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public class ObjectQuery&lt;T&gt; : System.Data.Objects.ObjectQuery, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Linq.IOrderedQueryable&lt;T&gt;, System.Linq.IQueryable&lt;T&gt;" />
+  <TypeSignature Language="C#" Value="public class ObjectQuery&lt;T&gt; : System.Data.Objects.ObjectQuery, System.Collections.Generic.IEnumerable&lt;T&gt;, System.ComponentModel.IListSource, System.Linq.IOrderedQueryable&lt;T&gt;, System.Linq.IQueryable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectQuery`1&lt;T&gt; extends System.Data.Objects.ObjectQuery implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.ComponentModel.IListSource, class System.Linq.IOrderedQueryable, class System.Linq.IOrderedQueryable`1&lt;!T&gt;, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectQuery`1" />
-  <TypeSignature Language="VB.NET" Value="Public Class ObjectQuery(Of T)&#xA;Inherits ObjectQuery&#xA;Implements IEnumerable(Of T), IOrderedQueryable(Of T), IQueryable(Of T)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObjectQuery : System::Data::Objects::ObjectQuery, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Linq::IOrderedQueryable&lt;T&gt;, System::Linq::IQueryable&lt;T&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectQuery(Of T)&#xA;Inherits ObjectQuery&#xA;Implements IEnumerable(Of T), IListSource, IOrderedQueryable(Of T), IQueryable(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObjectQuery : System::Data::Objects::ObjectQuery, System::Collections::Generic::IEnumerable&lt;T&gt;, System::ComponentModel::IListSource, System::Linq::IOrderedQueryable&lt;T&gt;, System::Linq::IQueryable&lt;T&gt;" />
   <TypeSignature Language="F#" Value="type ObjectQuery&lt;'T&gt; = class&#xA;    inherit ObjectQuery&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable&lt;'T&gt;&#xA;    interface IQueryable&#xA;    interface IOrderedQueryable&lt;'T&gt;&#xA;    interface IOrderedQueryable&#xA;    interface IListSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>

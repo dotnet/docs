@@ -70,7 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsDesignerOptionService.PopulateOptionCollection(System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PopulateOptionCollection (options As DesignerOptionService.DesignerOptionCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PopulateOptionCollection(System::ComponentModel::Design::DesignerOptionService::DesignerOptionCollection ^ options);" />
-      <MemberSignature Language="F#" Value="abstract member PopulateOptionCollection : System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection -&gt; unit&#xA;override this.PopulateOptionCollection : System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection -&gt; unit" Usage="windowsFormsDesignerOptionService.PopulateOptionCollection options" />
+      <MemberSignature Language="F#" Value="override this.PopulateOptionCollection : System.ComponentModel.Design.DesignerOptionService.DesignerOptionCollection -&gt; unit" Usage="windowsFormsDesignerOptionService.PopulateOptionCollection options" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

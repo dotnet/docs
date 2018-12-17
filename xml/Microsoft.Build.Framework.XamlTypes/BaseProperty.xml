@@ -95,6 +95,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="baseProperty.BeginInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -335,6 +338,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="baseProperty.EndInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -570,7 +576,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether this property is required to have a value set.</summary>
-        <value><see langword="true" /> if this property is required to have a value set; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this property is required to have a value set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -637,7 +644,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether this property allows multiple values to be supplied/selected simultaneously.</summary>
-        <value><see langword="true" /> if this property allows multiple values to be supplied/selected simultaneously; otherwise, <see langword="false" />. If <see langword="true" />, multiple values may be selected.</value>
+        <value>
+          <see langword="true" /> if this property allows multiple values to be supplied/selected simultaneously; otherwise, <see langword="false" />. If <see langword="true" />, multiple values may be selected.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -702,7 +710,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether this property is read-only.</summary>
-        <value><see langword="true" /> if this is a read-only property; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this is a read-only property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

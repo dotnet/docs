@@ -2375,6 +2375,9 @@ Ribbon gallery in a combo box
       <MemberSignature Language="VB.NET" Value="Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean Implements IWeakEventListener.ReceiveWeakEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.IWeakEventListener.ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e) = System::Windows::IWeakEventListener::ReceiveWeakEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -368,7 +368,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
-      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.Clear " />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -750,7 +750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMappingCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
-      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.RemoveAt index" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="sqlBulkCopyColumnMappingCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

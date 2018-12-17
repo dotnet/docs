@@ -64,7 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificControlBuilder.AppendLiteralString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ text);" />
-      <MemberSignature Language="F#" Value="abstract member AppendLiteralString : string -&gt; unit&#xA;override this.AppendLiteralString : string -&gt; unit" Usage="deviceSpecificControlBuilder.AppendLiteralString text" />
+      <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="deviceSpecificControlBuilder.AppendLiteralString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -90,7 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attributes As IDictionary) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attributes);" />
-      <MemberSignature Language="F#" Value="abstract member GetChildControlType : string * System.Collections.IDictionary -&gt; Type&#xA;override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="deviceSpecificControlBuilder.GetChildControlType (tagName, attributes)" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="deviceSpecificControlBuilder.GetChildControlType (tagName, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

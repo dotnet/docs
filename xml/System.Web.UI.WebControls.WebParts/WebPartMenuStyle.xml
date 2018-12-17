@@ -178,16 +178,10 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -320,6 +314,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetAttributes () As AttributeCollection Implements ICustomTypeDescriptor.GetAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::AttributeCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetAttributes() = System::ComponentModel::ICustomTypeDescriptor::GetAttributes;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -343,6 +340,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetClassName () As String Implements ICustomTypeDescriptor.GetClassName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetClassName() = System::ComponentModel::ICustomTypeDescriptor::GetClassName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetClassName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -366,6 +366,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetComponentName () As String Implements ICustomTypeDescriptor.GetComponentName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetComponentName() = System::ComponentModel::ICustomTypeDescriptor::GetComponentName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -389,6 +392,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetConverter () As TypeConverter Implements ICustomTypeDescriptor.GetConverter" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::TypeConverter ^ System.ComponentModel.ICustomTypeDescriptor.GetConverter() = System::ComponentModel::ICustomTypeDescriptor::GetConverter;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetConverter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -412,6 +418,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetDefaultEvent () As EventDescriptor Implements ICustomTypeDescriptor.GetDefaultEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -435,6 +444,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetDefaultProperty () As PropertyDescriptor Implements ICustomTypeDescriptor.GetDefaultProperty" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultProperty;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -458,6 +470,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetEditor (editorBaseType As Type) As Object Implements ICustomTypeDescriptor.GetEditor" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type ^ editorBaseType) = System::ComponentModel::ICustomTypeDescriptor::GetEditor;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -494,6 +509,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetEvents () As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents() = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -517,6 +535,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetEvents (attributes As Attribute()) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -553,6 +574,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetProperties () As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties() = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -575,6 +599,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -600,6 +627,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetPropertyOwner (pd As PropertyDescriptor) As Object Implements ICustomTypeDescriptor.GetPropertyOwner" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd) = System::ComponentModel::ICustomTypeDescriptor::GetPropertyOwner;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

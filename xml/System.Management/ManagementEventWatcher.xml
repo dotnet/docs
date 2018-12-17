@@ -379,7 +379,7 @@
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementEventWatcher.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ManagementEventWatcher ()" />
-      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="managementEventWatcher.Finalize " />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="managementEventWatcher.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

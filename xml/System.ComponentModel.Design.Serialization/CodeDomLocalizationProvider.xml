@@ -151,6 +151,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetSerializer (manager As IDesignerSerializationManager, currentSerializer As Object, objectType As Type, serializerType As Type) As Object Implements IDesignerSerializationProvider.GetSerializer" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ currentSerializer, Type ^ objectType, Type ^ serializerType) = System::ComponentModel::Design::Serialization::IDesignerSerializationProvider::GetSerializer;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Type,System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

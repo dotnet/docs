@@ -122,7 +122,7 @@ Setting this property is optional. If it is not set, the default bindings are us
 
 Only bindings with inner binding elements that support <xref:System.ServiceModel.Channels.IReplyChannel> are supported. In addition, the <xref:System.ServiceModel.Channels.Binding.MessageVersion> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>.
 
-       ]]></format>    
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">In a set operation, the Url of the <see cref="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpGetUrl" /> argument must be relative or its scheme must be "HTTP".
 
@@ -165,7 +165,7 @@ If the `httpGetUrl` attribute is not specified, the address to which the metadat
 
 If this property is `false`, or if the address of the service is not based on HTTP or HTTPS, "?health" is ignored.
 
-       ]]></format>    
+       ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -196,7 +196,8 @@ If this property is `false`, or if the address of the service is not based on HT
         <summary>Gets or sets a Uri that specifes the address to which metadata is published for retrieval using an HTTP/Get request.</summary>
         <value>The address to which metadata is published for retrieval using an HTTP/Get request.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="value" /> must use the HTTP protocol or be a relative Uri.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> must use the HTTP protocol or be a relative Uri.</exception>
       </Docs>
     </Member>
     <Member MemberName="HttpsGetBinding">
@@ -226,7 +227,7 @@ Setting this property is optional. If it is not set, the default bindings are us
 
 Only bindings with inner binding elements that support <xref:System.ServiceModel.Channels.IReplyChannel> are supported. In addition, the <xref:System.ServiceModel.Channels.Binding.MessageVersion> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>.
 
-       ]]></format>    
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">In a set operation, the Url of the <see cref="P:System.ServiceModel.Description.ServiceHealthBehaviorBase.HttpsGetUrl" /> argument must be relative or its scheme must be "HTTPS:".
 
@@ -269,7 +270,7 @@ If the `httpsGetUrl` attribute is not specified, the address to which the metada
 
 If this property is `false`, or if the address of the service is not based on HTTP or HTTPS, "?health" is ignored.
 
-       ]]></format>    
+       ]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -300,7 +301,8 @@ If this property is `false`, or if the address of the service is not based on HT
         <summary>Gets or sets a Uri that specifes the address to which metadata is published for retrieval using an HTTPS/Get request.</summary>
         <value>The address to which metadata is published for retrieval using an HTTPS/Get request.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="value" /> must use the HTTPS protocol or be a relative Uri.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> must use the HTTPS protocol or be a relative Uri.</exception>
       </Docs>
     </Member>
     <Member MemberName="ServiceStartTime">
@@ -353,7 +355,8 @@ If this property is `false`, or if the address of the service is not based on HT
         <param name="parameters">A collection of custom objects to which binding elements have access.</param>
         <summary>Passes custom data to binding elements to support the contact implementation.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="parameters" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameters" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
@@ -381,7 +384,7 @@ If this property is `false`, or if the address of the service is not based on HT
         <param name="serviceHostBase">The service host that is currently being built.</param>
         <summary>Changes run-time property values or inserts custom extension objects such as error handlers, message or parameter interceptors, security extensions, and other custom extension objects.</summary>
         <remarks>To be added.</remarks>
-       <exception cref="T:System.ArgumentNullException">The channel dispatcher does not support the scheme.</exception>
+        <exception cref="T:System.ArgumentNullException">The channel dispatcher does not support the scheme.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">

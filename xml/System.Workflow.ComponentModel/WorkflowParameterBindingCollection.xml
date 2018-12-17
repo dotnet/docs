@@ -70,7 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
-      <MemberSignature Language="F#" Value="abstract member ClearItems : unit -&gt; unit&#xA;override this.ClearItems : unit -&gt; unit" Usage="workflowParameterBindingCollection.ClearItems " />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="workflowParameterBindingCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -118,7 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.GetKeyForItem(System.Workflow.ComponentModel.WorkflowParameterBinding)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As WorkflowParameterBinding) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Workflow::ComponentModel::WorkflowParameterBinding ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; string&#xA;override this.GetKeyForItem : System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; string" Usage="workflowParameterBindingCollection.GetKeyForItem item" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; string" Usage="workflowParameterBindingCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -144,7 +144,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.InsertItem(System.Int32,System.Workflow.ComponentModel.WorkflowParameterBinding)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As WorkflowParameterBinding)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Workflow::ComponentModel::WorkflowParameterBinding ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member InsertItem : int * System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; unit&#xA;override this.InsertItem : int * System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; unit" Usage="workflowParameterBindingCollection.InsertItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; unit" Usage="workflowParameterBindingCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -171,7 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
-      <MemberSignature Language="F#" Value="abstract member RemoveItem : int -&gt; unit&#xA;override this.RemoveItem : int -&gt; unit" Usage="workflowParameterBindingCollection.RemoveItem index" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="workflowParameterBindingCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -196,7 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBindingCollection.SetItem(System.Int32,System.Workflow.ComponentModel.WorkflowParameterBinding)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As WorkflowParameterBinding)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Workflow::ComponentModel::WorkflowParameterBinding ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; unit&#xA;override this.SetItem : int * System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; unit" Usage="workflowParameterBindingCollection.SetItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Workflow.ComponentModel.WorkflowParameterBinding -&gt; unit" Usage="workflowParameterBindingCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

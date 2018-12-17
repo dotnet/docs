@@ -227,13 +227,13 @@ The `JapaneseLuniSolarCalendar` class recognizes one era for every emperor's rei
         <param name="time">The <see cref="T:System.DateTime" /> to read.</param>
         <summary>Retrieves the era that corresponds to the specified <see cref="T:System.DateTime" />.</summary>
         <returns>An integer that represents the era specified in the <paramref name="time" /> parameter.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="JapaneseEra">

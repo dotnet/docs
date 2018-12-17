@@ -75,7 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataProviderNameConverter.GetStandardValues context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataProviderNameConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -114,7 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataProviderNameConverter.GetStandardValuesExclusive context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataProviderNameConverter.GetStandardValuesExclusive context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -152,7 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataProviderNameConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataProviderNameConverter.GetStandardValuesSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataProviderNameConverter.GetStandardValuesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

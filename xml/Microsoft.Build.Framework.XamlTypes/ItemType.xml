@@ -50,6 +50,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="itemType.BeginInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -132,6 +135,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="itemType.EndInit " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -267,7 +273,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether item type serialization is included in an up-to-date check.</summary>
-        <value><see langword="true" /> if item type serialization is included in an up-to-date check; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if item type serialization is included in an up-to-date check; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

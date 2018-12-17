@@ -63,7 +63,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyCollection.CopyTo(System.DirectoryServices.ResultPropertyValueCollection[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ResultPropertyValueCollection(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ResultPropertyValueCollection ^&gt; ^ array, int index);" />
-      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ResultPropertyValueCollection[] * int -&gt; unit" Usage="resultPropertyCollection.CopyTo (array, index)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.DirectoryServices.ResultPropertyValueCollection[] * int -&gt; unit" Usage="resultPropertyCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

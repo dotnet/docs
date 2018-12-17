@@ -380,7 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetLiveSettingCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLiveSettingCore () As AutomationLiveSetting" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::AutomationLiveSetting GetLiveSettingCore();" />
-      <MemberSignature Language="F#" Value="abstract member GetLiveSettingCore : unit -&gt; System.Windows.Automation.AutomationLiveSetting&#xA;override this.GetLiveSettingCore : unit -&gt; System.Windows.Automation.AutomationLiveSetting" Usage="itemAutomationPeer.GetLiveSettingCore " />
+      <MemberSignature Language="F#" Value="override this.GetLiveSettingCore : unit -&gt; System.Windows.Automation.AutomationLiveSetting" Usage="itemAutomationPeer.GetLiveSettingCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -497,7 +497,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetPositionInSetCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPositionInSetCore () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int GetPositionInSetCore();" />
-      <MemberSignature Language="F#" Value="abstract member GetPositionInSetCore : unit -&gt; int&#xA;override this.GetPositionInSetCore : unit -&gt; int" Usage="itemAutomationPeer.GetPositionInSetCore " />
+      <MemberSignature Language="F#" Value="override this.GetPositionInSetCore : unit -&gt; int" Usage="itemAutomationPeer.GetPositionInSetCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -509,7 +509,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the position of this item within a set.</summary>
-        <returns>The value of <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty"/> if it has been set, or its position relative to the parent <see cref="T:System.Windows.Controls.ItemsControl" /> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
+        <returns>The value of <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" /> if it has been set, or its position relative to the parent <see cref="T:System.Windows.Controls.ItemsControl" /> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -519,7 +519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetSizeOfSetCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSizeOfSetCore () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int GetSizeOfSetCore();" />
-      <MemberSignature Language="F#" Value="abstract member GetSizeOfSetCore : unit -&gt; int&#xA;override this.GetSizeOfSetCore : unit -&gt; int" Usage="itemAutomationPeer.GetSizeOfSetCore " />
+      <MemberSignature Language="F#" Value="override this.GetSizeOfSetCore : unit -&gt; int" Usage="itemAutomationPeer.GetSizeOfSetCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -531,7 +531,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the size of a set that contains this item.</summary>
-        <returns>The value of <see cref="F:System.Windows.Automation.AutomationProperties.SizeOfSetProperty"/> if it has been set, or the size of the parent <see cref="T:System.Windows.Controls.ItemsControl" /> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
+        <returns>The value of <see cref="F:System.Windows.Automation.AutomationProperties.SizeOfSetProperty" /> if it has been set, or the size of the parent <see cref="T:System.Windows.Controls.ItemsControl" /> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

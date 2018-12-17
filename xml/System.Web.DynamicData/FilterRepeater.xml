@@ -153,7 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterRepeater.DataBind" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
-      <MemberSignature Language="F#" Value="abstract member DataBind : unit -&gt; unit&#xA;override this.DataBind : unit -&gt; unit" Usage="filterRepeater.DataBind " />
+      <MemberSignature Language="F#" Value="override this.DataBind : unit -&gt; unit" Usage="filterRepeater.DataBind " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -305,7 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterRepeater.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="filterRepeater.OnInit e" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="filterRepeater.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -330,7 +330,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterRepeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemCreated (e As RepeaterItemEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemCreated(System::Web::UI::WebControls::RepeaterItemEventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnItemCreated : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit&#xA;override this.OnItemCreated : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit" Usage="filterRepeater.OnItemCreated e" />
+      <MemberSignature Language="F#" Value="override this.OnItemCreated : System.Web.UI.WebControls.RepeaterItemEventArgs -&gt; unit" Usage="filterRepeater.OnItemCreated e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

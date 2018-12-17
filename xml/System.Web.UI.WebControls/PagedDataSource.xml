@@ -511,6 +511,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberSignature Language="F#" Value="abstract member GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetItemProperties : System.ComponentModel.PropertyDescriptor[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="pagedDataSource.GetItemProperties listAccessors" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -549,6 +552,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors);" />
       <MemberSignature Language="F#" Value="abstract member GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string&#xA;override this.GetListName : System.ComponentModel.PropertyDescriptor[] -&gt; string" Usage="pagedDataSource.GetListName listAccessors" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

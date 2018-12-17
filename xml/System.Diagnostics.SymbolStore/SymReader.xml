@@ -249,6 +249,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolDocument ^ GetDocument(System::String ^ url, Guid language, Guid languageVendor, Guid documentType);" />
       <MemberSignature Language="F#" Value="abstract member GetDocument : string * Guid * Guid * Guid -&gt; System.Diagnostics.SymbolStore.ISymbolDocument&#xA;override this.GetDocument : string * Guid * Guid * Guid -&gt; System.Diagnostics.SymbolStore.ISymbolDocument" Usage="symReader.GetDocument (url, language, languageVendor, documentType)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetDocument(System.String,System.Guid,System.Guid,System.Guid)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -289,6 +292,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolDocument ^&gt; ^ GetDocuments();" />
       <MemberSignature Language="F#" Value="abstract member GetDocuments : unit -&gt; System.Diagnostics.SymbolStore.ISymbolDocument[]&#xA;override this.GetDocuments : unit -&gt; System.Diagnostics.SymbolStore.ISymbolDocument[]" Usage="symReader.GetDocuments " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetDocuments</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -314,6 +320,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetGlobalVariables();" />
       <MemberSignature Language="F#" Value="abstract member GetGlobalVariables : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]&#xA;override this.GetGlobalVariables : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="symReader.GetGlobalVariables " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetGlobalVariables</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -348,6 +357,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolMethod ^ GetMethod(System::Diagnostics::SymbolStore::SymbolToken method);" />
       <MemberSignature Language="F#" Value="abstract member GetMethod : System.Diagnostics.SymbolStore.SymbolToken -&gt; System.Diagnostics.SymbolStore.ISymbolMethod&#xA;override this.GetMethod : System.Diagnostics.SymbolStore.SymbolToken -&gt; System.Diagnostics.SymbolStore.ISymbolMethod" Usage="symReader.GetMethod method" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -375,6 +387,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolMethod ^ GetMethod(System::Diagnostics::SymbolStore::SymbolToken method, int version);" />
       <MemberSignature Language="F#" Value="abstract member GetMethod : System.Diagnostics.SymbolStore.SymbolToken * int -&gt; System.Diagnostics.SymbolStore.ISymbolMethod&#xA;override this.GetMethod : System.Diagnostics.SymbolStore.SymbolToken * int -&gt; System.Diagnostics.SymbolStore.ISymbolMethod" Usage="symReader.GetMethod (method, version)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetMethod(System.Diagnostics.SymbolStore.SymbolToken,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -404,6 +419,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolMethod ^ GetMethodFromDocumentPosition(System::Diagnostics::SymbolStore::ISymbolDocument ^ document, int line, int column);" />
       <MemberSignature Language="F#" Value="abstract member GetMethodFromDocumentPosition : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; System.Diagnostics.SymbolStore.ISymbolMethod&#xA;override this.GetMethodFromDocumentPosition : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; System.Diagnostics.SymbolStore.ISymbolMethod" Usage="symReader.GetMethodFromDocumentPosition (document, line, column)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetMethodFromDocumentPosition(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -435,6 +453,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolNamespace ^&gt; ^ GetNamespaces();" />
       <MemberSignature Language="F#" Value="abstract member GetNamespaces : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace[]&#xA;override this.GetNamespaces : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace[]" Usage="symReader.GetNamespaces " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetNamespaces</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -460,6 +481,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetSymAttribute(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name);" />
       <MemberSignature Language="F#" Value="abstract member GetSymAttribute : System.Diagnostics.SymbolStore.SymbolToken * string -&gt; byte[]&#xA;override this.GetSymAttribute : System.Diagnostics.SymbolStore.SymbolToken * string -&gt; byte[]" Usage="symReader.GetSymAttribute (parent, name)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -490,6 +514,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetVariables(System::Diagnostics::SymbolStore::SymbolToken parent);" />
       <MemberSignature Language="F#" Value="abstract member GetVariables : System.Diagnostics.SymbolStore.SymbolToken -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]&#xA;override this.GetVariables : System.Diagnostics.SymbolStore.SymbolToken -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="symReader.GetVariables parent" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolReader.GetVariables(System.Diagnostics.SymbolStore.SymbolToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -590,6 +617,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymReader.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Diagnostics::SymbolStore::SymbolToken UserEntryPoint { System::Diagnostics::SymbolStore::SymbolToken get(); };" />
       <MemberSignature Language="F#" Value="member this.UserEntryPoint : System.Diagnostics.SymbolStore.SymbolToken" Usage="System.Diagnostics.SymbolStore.SymReader.UserEntryPoint" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Diagnostics.SymbolStore.ISymbolReader.UserEntryPoint</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

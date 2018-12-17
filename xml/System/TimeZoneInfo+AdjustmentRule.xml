@@ -1,10 +1,10 @@
 ﻿<Type Name="TimeZoneInfo+AdjustmentRule" FullName="System.TimeZoneInfo+AdjustmentRule">
   <TypeSignature Language="C#" Value="public sealed class TimeZoneInfo.AdjustmentRule : IEquatable&lt;TimeZoneInfo.AdjustmentRule&gt;, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
-  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit TimeZoneInfo/AdjustmentRule extends System.Object implements class System.IEquatable`1&lt;class System.TimeZoneInfo/AdjustmentRule&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed beforefieldinit TimeZoneInfo/AdjustmentRule extends System.Object implements class System.IEquatable`1&lt;class System.TimeZoneInfo/AdjustmentRule&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo.AdjustmentRule" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimeZoneInfo.AdjustmentRule&#xA;Implements IDeserializationCallback, IEquatable(Of TimeZoneInfo.AdjustmentRule), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public: ref class TimeZoneInfo::AdjustmentRule sealed : IEquatable&lt;TimeZoneInfo::AdjustmentRule ^&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
-  <TypeSignature Language="F#" Value="type TimeZoneInfo.AdjustmentRule = class&#xA;    interface IEquatable&lt;TimeZoneInfo.AdjustmentRule&gt;&#xA;    interface IDeserializationCallback&#xA;    interface ISerializable" />
+  <TypeSignature Language="F#" Value="type TimeZoneInfo.AdjustmentRule = class&#xA;    interface IEquatable&lt;TimeZoneInfo.AdjustmentRule&gt;&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,8 +41,11 @@
     <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=2.0.5.0, Culture=Neutral, PublicKeyToken=7cec85d7bea7798e")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+    <Attribute FrameworkAlternate="netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
       <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -668,7 +671,7 @@ Comparing Central Standard Time rule for 1/1/0001 to 12/31/9999 with:
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netcore-2.0">
+        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

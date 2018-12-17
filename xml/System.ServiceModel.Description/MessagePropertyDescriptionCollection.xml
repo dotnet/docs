@@ -43,7 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessagePropertyDescriptionCollection.GetKeyForItem(System.ServiceModel.Description.MessagePropertyDescription)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As MessagePropertyDescription) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::ServiceModel::Description::MessagePropertyDescription ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.ServiceModel.Description.MessagePropertyDescription -&gt; string&#xA;override this.GetKeyForItem : System.ServiceModel.Description.MessagePropertyDescription -&gt; string" Usage="messagePropertyDescriptionCollection.GetKeyForItem item" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.ServiceModel.Description.MessagePropertyDescription -&gt; string" Usage="messagePropertyDescriptionCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -62,7 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder.AppendLiteralString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ text);" />
-      <MemberSignature Language="F#" Value="abstract member AppendLiteralString : string -&gt; unit&#xA;override this.AppendLiteralString : string -&gt; unit" Usage="deviceSpecificChoiceControlBuilder.AppendLiteralString text" />
+      <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="deviceSpecificChoiceControlBuilder.AppendLiteralString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,7 +88,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
-      <MemberSignature Language="F#" Value="abstract member AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit&#xA;override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="deviceSpecificChoiceControlBuilder.AppendSubBuilder subBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="deviceSpecificChoiceControlBuilder.AppendSubBuilder subBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -114,7 +114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attributes As IDictionary) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attributes);" />
-      <MemberSignature Language="F#" Value="abstract member GetChildControlType : string * System.Collections.IDictionary -&gt; Type&#xA;override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="deviceSpecificChoiceControlBuilder.GetChildControlType (tagName, attributes)" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="deviceSpecificChoiceControlBuilder.GetChildControlType (tagName, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -142,7 +142,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceControlBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Init(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attributes);" />
-      <MemberSignature Language="F#" Value="abstract member Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit&#xA;override this.Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit" Usage="deviceSpecificChoiceControlBuilder.Init (parser, parentBuilder, type, tagName, id, attributes)" />
+      <MemberSignature Language="F#" Value="override this.Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit" Usage="deviceSpecificChoiceControlBuilder.Init (parser, parentBuilder, type, tagName, id, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

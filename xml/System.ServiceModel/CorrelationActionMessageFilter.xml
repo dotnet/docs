@@ -75,7 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationActionMessageFilter.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (other As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ other);" />
-      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="correlationActionMessageFilter.Equals other" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="correlationActionMessageFilter.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -101,7 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationActionMessageFilter.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="correlationActionMessageFilter.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="correlationActionMessageFilter.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -139,7 +139,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationActionMessageFilter.Match(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
-      <MemberSignature Language="F#" Value="abstract member Match : System.ServiceModel.Channels.Message -&gt; bool&#xA;override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="correlationActionMessageFilter.Match message" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="correlationActionMessageFilter.Match message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -171,7 +171,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationActionMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer);" />
-      <MemberSignature Language="F#" Value="abstract member Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool&#xA;override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="correlationActionMessageFilter.Match messageBuffer" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="correlationActionMessageFilter.Match messageBuffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -204,7 +204,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.CorrelationActionMessageFilter.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="correlationActionMessageFilter.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="correlationActionMessageFilter.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

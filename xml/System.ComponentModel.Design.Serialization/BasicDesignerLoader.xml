@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.BeginLoad(System.ComponentModel.Design.Serialization.IDesignerLoaderHost)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub BeginLoad (host As IDesignerLoaderHost)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void BeginLoad(System::ComponentModel::Design::Serialization::IDesignerLoaderHost ^ host);" />
-      <MemberSignature Language="F#" Value="abstract member BeginLoad : System.ComponentModel.Design.Serialization.IDesignerLoaderHost -&gt; unit&#xA;override this.BeginLoad : System.ComponentModel.Design.Serialization.IDesignerLoaderHost -&gt; unit" Usage="basicDesignerLoader.BeginLoad host" />
+      <MemberSignature Language="F#" Value="override this.BeginLoad : System.ComponentModel.Design.Serialization.IDesignerLoaderHost -&gt; unit" Usage="basicDesignerLoader.BeginLoad host" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -125,7 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="basicDesignerLoader.Dispose " />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="basicDesignerLoader.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -187,7 +187,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
-      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="basicDesignerLoader.Flush " />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="basicDesignerLoader.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -758,6 +758,9 @@
       <MemberSignature Language="VB.NET" Value="Sub AddLoadDependency () Implements IDesignerLoaderService.AddLoadDependency" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency() = System::ComponentModel::Design::Serialization::IDesignerLoaderService::AddLoadDependency;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -787,6 +790,9 @@
       <MemberSignature Language="VB.NET" Value="Sub DependentLoadComplete (successful As Boolean, errorCollection As ICollection) Implements IDesignerLoaderService.DependentLoadComplete" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(bool successful, System::Collections::ICollection ^ errorCollection) = System::ComponentModel::Design::Serialization::IDesignerLoaderService::DependentLoadComplete;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(System.Boolean,System.Collections.ICollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -825,6 +831,9 @@
       <MemberSignature Language="VB.NET" Value="Function Reload () As Boolean Implements IDesignerLoaderService.Reload" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload() = System::ComponentModel::Design::Serialization::IDesignerLoaderService::Reload;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

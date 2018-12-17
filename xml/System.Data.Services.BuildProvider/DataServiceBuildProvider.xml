@@ -18,7 +18,7 @@
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</AttributeName>
+      <AttributeName>System.Web.Compilation.FolderLevelBuildProviderAppliesTo(System.Web.Compilation.FolderLevelBuildProviderAppliesTo.WebReferences)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -60,7 +60,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.BuildProvider.DataServiceBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
-      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit&#xA;override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="dataServiceBuildProvider.GenerateCode assemblyBuilder" />
+      <MemberSignature Language="F#" Value="override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="dataServiceBuildProvider.GenerateCode assemblyBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Design</AssemblyName>

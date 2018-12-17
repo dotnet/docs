@@ -443,7 +443,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As X509CertificateCollection.X509CertificateEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::X509Certificates::X509CertificateCollection::X509CertificateEnumerator ^ GetEnumerator();" />
-      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator" Usage="x509CertificateCollection.GetEnumerator " />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Security.Cryptography.X509Certificates.X509CertificateCollection.X509CertificateEnumerator" Usage="x509CertificateCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -480,7 +480,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="x509CertificateCollection.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="x509CertificateCollection.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

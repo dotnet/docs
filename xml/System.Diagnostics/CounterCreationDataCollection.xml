@@ -544,7 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.CounterCreationDataCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="counterCreationDataCollection.OnValidate value" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="counterCreationDataCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

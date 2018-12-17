@@ -63,13 +63,13 @@
       <Docs>
         <summary>Gets the number of completion port threads available to this health service process.</summary>
         <value>The number of available completion port threads for this health service process.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-completion-ports).
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AvailableWorkerThreads">
@@ -121,13 +121,13 @@ For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-com
       <Docs>
         <summary>Gets the maximum number of completion port threads available to this health service process.</summary>
         <value>The maximum number of completion port threads for this health service process.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-completion-ports).
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxWorkerThreads">
@@ -179,13 +179,13 @@ For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-com
       <Docs>
         <summary>Gets the minimum number of completion port threads available to this health service process.</summary>
         <value>The minimum number of completion port threads for this health service process.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 For more information, see [I/O Completion Ports](/windows/desktop/fileio/i-o-completion-ports).
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MinWorkerThreads">

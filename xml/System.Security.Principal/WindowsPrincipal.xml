@@ -109,6 +109,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -117,6 +118,9 @@
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.6">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsPrincipal/&lt;get_DeviceClaims&gt;d__1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2">
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsPrincipal/&lt;get_DeviceClaims&gt;d__10))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -496,6 +500,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -504,6 +509,9 @@
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.6">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsPrincipal/&lt;get_UserClaims&gt;d__1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2">
+          <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsPrincipal/&lt;get_UserClaims&gt;d__8))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

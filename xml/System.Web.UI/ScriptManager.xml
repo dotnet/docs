@@ -1,10 +1,10 @@
 ﻿<Type Name="ScriptManager" FullName="System.Web.UI.ScriptManager">
-  <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler, System.Web.UI.IScriptManager" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.IScriptManager" />
+  <TypeSignature Language="C#" Value="public class ScriptManager : System.Web.UI.Control, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ScriptManager extends System.Web.UI.Control implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManager" />
-  <TypeSignature Language="VB.NET" Value="Public Class ScriptManager&#xA;Inherits Control&#xA;Implements IPostBackDataHandler, IPostBackEventHandler, IScriptManager" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ScriptManager : System::Web::UI::Control, System::Web::UI::IPostBackDataHandler, System::Web::UI::IPostBackEventHandler, System::Web::UI::IScriptManager" />
-  <TypeSignature Language="F#" Value="type ScriptManager = class&#xA;    inherit Control&#xA;    interface IPostBackDataHandler&#xA;    interface IPostBackEventHandler&#xA;    interface IScriptManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptManager&#xA;Inherits Control&#xA;Implements IPostBackDataHandler, IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptManager : System::Web::UI::Control, System::Web::UI::IPostBackDataHandler, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type ScriptManager = class&#xA;    inherit Control&#xA;    interface IPostBackDataHandler&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -19,9 +19,6 @@
     </Interface>
     <Interface>
       <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Web.UI.IScriptManager</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -762,19 +759,13 @@
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -857,19 +848,13 @@
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1564,6 +1549,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDebuggingEnabled { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsDebuggingEnabled : bool" Usage="System.Web.UI.ScriptManager.IsDebuggingEnabled" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IScriptManager.IsDebuggingEnabled</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -1612,6 +1600,7 @@
       <MemberSignature Language="F#" Value="member this.IsInAsyncPostBack : bool" Usage="System.Web.UI.ScriptManager.IsInAsyncPostBack" />
       <MemberType>Property</MemberType>
       <Implements>
+        <InterfaceMember>P:System.Web.UI.IScriptManager.IsInAsyncPostBack</InterfaceMember>
         <InterfaceMember>P:System.Web.UI.IScriptManagerInternal.IsInAsyncPostBack</InterfaceMember>
       </Implements>
       <AssemblyInfo>
@@ -1691,6 +1680,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
       <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="scriptManager.LoadPostData (postDataKey, postCollection)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -1853,7 +1845,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="scriptManager.OnInit e" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="scriptManager.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1883,7 +1875,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="scriptManager.OnPreRender e" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="scriptManager.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1995,19 +1987,13 @@
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2046,6 +2032,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="scriptManager.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2076,6 +2065,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
       <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="scriptManager.RaisePostDataChangedEvent " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2114,6 +2106,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterArrayDeclaration(System::Web::UI::Control ^ control, System::String ^ arrayName, System::String ^ arrayValue);" />
       <MemberSignature Language="F#" Value="static member RegisterArrayDeclaration : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterArrayDeclaration (control, arrayName, arrayValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2271,6 +2266,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptBlock(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptBlock : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptBlock (control, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2389,6 +2387,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptInclude(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ url);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptInclude : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptInclude (control, type, key, url)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2514,6 +2515,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterClientScriptResource(System::Web::UI::Control ^ control, Type ^ type, System::String ^ resourceName);" />
       <MemberSignature Language="F#" Value="static member RegisterClientScriptResource : System.Web.UI.Control * Type * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterClientScriptResource (control, type, resourceName)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2734,6 +2738,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterDispose(System::Web::UI::Control ^ control, System::String ^ disposeScript);" />
       <MemberSignature Language="F#" Value="member this.RegisterDispose : System.Web.UI.Control * string -&gt; unit" Usage="scriptManager.RegisterDispose (control, disposeScript)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterDispose(System.Web.UI.Control,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2786,6 +2793,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterExpandoAttribute(System::Web::UI::Control ^ control, System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode);" />
       <MemberSignature Language="F#" Value="static member RegisterExpandoAttribute : System.Web.UI.Control * string * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterExpandoAttribute (control, controlId, attributeName, attributeValue, encode)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2918,6 +2928,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterHiddenField(System::Web::UI::Control ^ control, System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
       <MemberSignature Language="F#" Value="static member RegisterHiddenField : System.Web.UI.Control * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterHiddenField (control, hiddenFieldName, hiddenFieldInitialValue)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -3078,6 +3091,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterOnSubmitStatement(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script);" />
       <MemberSignature Language="F#" Value="static member RegisterOnSubmitStatement : System.Web.UI.Control * Type * string * string -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterOnSubmitStatement (control, type, key, script)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -3184,6 +3200,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="F#" Value="abstract member RegisterPostBackControl : System.Web.UI.Control -&gt; unit&#xA;override this.RegisterPostBackControl : System.Web.UI.Control -&gt; unit" Usage="scriptManager.RegisterPostBackControl control" />
       <MemberType>Method</MemberType>
       <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
         <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
@@ -3366,6 +3383,9 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterStartupScript(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags);" />
       <MemberSignature Language="F#" Value="static member RegisterStartupScript : System.Web.UI.Control * Type * string * string * bool -&gt; unit" Usage="System.Web.UI.ScriptManager.RegisterStartupScript (control, type, key, script, addScriptTags)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -3463,7 +3483,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
-      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="scriptManager.Render writer" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="scriptManager.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -3572,19 +3592,13 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3802,13 +3816,10 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.CollectionEditorBase, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3870,13 +3881,10 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.CollectionEditorBase, System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4054,6 +4062,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean Implements IPostBackDataHandler.LoadPostData" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IPostBackDataHandler.LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection) = System::Web::UI::IPostBackDataHandler::LoadPostData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4096,6 +4107,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Sub RaisePostDataChangedEvent () Implements IPostBackDataHandler.RaisePostDataChangedEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() = System::Web::UI::IPostBackDataHandler::RaisePostDataChangedEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4131,6 +4145,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4161,6 +4178,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::IScriptManager::IsSecureConnection { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.Web.UI.IScriptManager.IsSecureConnection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IScriptManager.IsSecureConnection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -4185,6 +4205,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterArrayDeclaration(System::Web::UI::Control ^ control, System::String ^ arrayName, System::String ^ arrayValue) = System::Web::UI::IScriptManager::RegisterArrayDeclaration;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterArrayDeclaration(System.Web.UI.Control,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4217,6 +4240,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterClientScriptBlock(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags) = System::Web::UI::IScriptManager::RegisterClientScriptBlock;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4253,6 +4279,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterClientScriptInclude(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ url) = System::Web::UI::IScriptManager::RegisterClientScriptInclude;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4287,6 +4316,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterClientScriptResource(System::Web::UI::Control ^ control, Type ^ type, System::String ^ resourceName) = System::Web::UI::IScriptManager::RegisterClientScriptResource;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4319,6 +4351,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterDispose(System.Web.UI.Control,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterDispose(System::Web::UI::Control ^ control, System::String ^ disposeScript) = System::Web::UI::IScriptManager::RegisterDispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterDispose(System.Web.UI.Control,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4349,6 +4384,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterExpandoAttribute(System::Web::UI::Control ^ control, System::String ^ controlId, System::String ^ attributeName, System::String ^ attributeValue, bool encode) = System::Web::UI::IScriptManager::RegisterExpandoAttribute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterExpandoAttribute(System.Web.UI.Control,System.String,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4385,6 +4423,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterHiddenField(System.Web.UI.Control,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterHiddenField(System::Web::UI::Control ^ control, System::String ^ hiddenFieldName, System::String ^ hiddenFieldValue) = System::Web::UI::IScriptManager::RegisterHiddenField;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4417,6 +4458,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterOnSubmitStatement(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script) = System::Web::UI::IScriptManager::RegisterOnSubmitStatement;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterOnSubmitStatement(System.Web.UI.Control,System.Type,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4452,7 +4496,7 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterPostBackControl(System::Web::UI::Control ^ control) = System::Web::UI::IScriptManager::RegisterPostBackControl;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.UI.IScriptManagerInternal.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterPostBackControl(System.Web.UI.Control)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -4482,6 +4526,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManager.System#Web#UI#IScriptManager#RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.RegisterStartupScript(System::Web::UI::Control ^ control, Type ^ type, System::String ^ key, System::String ^ script, bool addScriptTags) = System::Web::UI::IScriptManager::RegisterStartupScript;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4519,6 +4566,9 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
       <MemberSignature Language="VB.NET" Value="Sub SetFocusInternal (clientID As String) Implements IScriptManager.SetFocusInternal" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IScriptManager.SetFocusInternal(System::String ^ clientID) = System::Web::UI::IScriptManager::SetFocusInternal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IScriptManager.SetFocusInternal(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -4553,16 +4603,10 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

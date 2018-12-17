@@ -277,7 +277,7 @@ DbParameter parameter = newFactory.CreateParameter();
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleClientFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
-      <MemberSignature Language="F#" Value="abstract member CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission&#xA;override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="oracleClientFactory.CreatePermission state" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="oracleClientFactory.CreatePermission state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

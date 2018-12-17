@@ -1,9 +1,9 @@
 ﻿<Type Name="ContentLocatorBase" FullName="System.Windows.Annotations.ContentLocatorBase">
-  <TypeSignature Language="C#" Value="public abstract class ContentLocatorBase" />
+  <TypeSignature Language="C#" Value="public abstract class ContentLocatorBase : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContentLocatorBase extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorBase" />
-  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentLocatorBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorBase abstract" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ContentLocatorBase&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorBase abstract : System::ComponentModel::INotifyPropertyChanged" />
   <TypeSignature Language="F#" Value="type ContentLocatorBase = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +78,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>

@@ -137,7 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.EndpointDiscoveryElement.CreateBehavior" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
-      <MemberSignature Language="F#" Value="abstract member CreateBehavior : unit -&gt; obj&#xA;override this.CreateBehavior : unit -&gt; obj" Usage="endpointDiscoveryElement.CreateBehavior " />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="endpointDiscoveryElement.CreateBehavior " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

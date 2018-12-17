@@ -1,10 +1,10 @@
 ﻿<Type Name="Style" FullName="System.Windows.Style">
-  <TypeSignature Language="C#" Value="public class Style : System.Windows.Threading.DispatcherObject, System.Windows.ISealable, System.Windows.Markup.IAddChild, System.Windows.Markup.INameScope, System.Windows.Markup.IQueryAmbient" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi Style extends System.Windows.Threading.DispatcherObject implements class System.Windows.ISealable, class System.Windows.Markup.IAddChild, class System.Windows.Markup.INameScope, class System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="C#" Value="public class Style : System.Windows.Threading.DispatcherObject, System.Windows.Markup.IAddChild, System.Windows.Markup.INameScope, System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Style extends System.Windows.Threading.DispatcherObject implements class System.Windows.Markup.IAddChild, class System.Windows.Markup.INameScope, class System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Style" />
-  <TypeSignature Language="VB.NET" Value="Public Class Style&#xA;Inherits DispatcherObject&#xA;Implements IAddChild, INameScope, IQueryAmbient, ISealable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Style : System::Windows::Threading::DispatcherObject, System::Windows::ISealable, System::Windows::Markup::IAddChild, System::Windows::Markup::INameScope, System::Windows::Markup::IQueryAmbient" />
-  <TypeSignature Language="F#" Value="type Style = class&#xA;    inherit DispatcherObject&#xA;    interface INameScope&#xA;    interface IAddChild&#xA;    interface ISealable&#xA;    interface IQueryAmbient" />
+  <TypeSignature Language="VB.NET" Value="Public Class Style&#xA;Inherits DispatcherObject&#xA;Implements IAddChild, INameScope, IQueryAmbient" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Style : System::Windows::Threading::DispatcherObject, System::Windows::Markup::IAddChild, System::Windows::Markup::INameScope, System::Windows::Markup::IQueryAmbient" />
+  <TypeSignature Language="F#" Value="type Style = class&#xA;    inherit DispatcherObject&#xA;    interface INameScope&#xA;    interface IAddChild&#xA;    interface IQueryAmbient" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -14,9 +14,6 @@
     <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.Windows.ISealable</InterfaceName>
-    </Interface>
     <Interface>
       <InterfaceName>System.Windows.Markup.IAddChild</InterfaceName>
     </Interface>
@@ -244,7 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Style.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="style.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="style.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +266,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Windows.Style.IsSealed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.ISealable.IsSealed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -391,6 +391,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seal();" />
       <MemberSignature Language="F#" Value="member this.Seal : unit -&gt; unit" Usage="style.Seal " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.ISealable.Seal</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -419,10 +422,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
@@ -489,6 +489,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::Windows::ISealable::CanSeal { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.Windows.ISealable.CanSeal" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.ISealable.CanSeal</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -511,6 +514,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::Windows::ISealable::IsSealed { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.Windows.ISealable.IsSealed" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.ISealable.IsSealed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -537,6 +543,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Seal () Implements ISealable.Seal" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.ISealable.Seal() = System::Windows::ISealable::Seal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.ISealable.Seal</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -770,10 +779,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>

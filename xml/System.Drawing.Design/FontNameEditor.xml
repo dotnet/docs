@@ -57,7 +57,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.FontNameEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontNameEditor.GetPaintValueSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="fontNameEditor.GetPaintValueSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -85,7 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.FontNameEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaintValue (e As PaintValueEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit&#xA;override this.PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit" Usage="fontNameEditor.PaintValue e" />
+      <MemberSignature Language="F#" Value="override this.PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit" Usage="fontNameEditor.PaintValue e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

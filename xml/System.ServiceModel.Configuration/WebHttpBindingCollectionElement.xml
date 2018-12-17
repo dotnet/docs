@@ -54,7 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpBindingCollectionElement.GetDefault" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
-      <MemberSignature Language="F#" Value="abstract member GetDefault : unit -&gt; System.ServiceModel.Channels.Binding&#xA;override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="webHttpBindingCollectionElement.GetDefault " />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="webHttpBindingCollectionElement.GetDefault " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

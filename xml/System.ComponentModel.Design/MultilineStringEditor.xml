@@ -48,7 +48,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MultilineStringEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj&#xA;override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="multilineStringEditor.EditValue (context, provider, value)" />
+      <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="multilineStringEditor.EditValue (context, provider, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -78,7 +78,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MultilineStringEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (context As ITypeDescriptorContext) As UITypeEditorEditStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle&#xA;override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="multilineStringEditor.GetEditStyle context" />
+      <MemberSignature Language="F#" Value="override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="multilineStringEditor.GetEditStyle context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,7 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.MultilineStringEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="multilineStringEditor.GetPaintValueSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="multilineStringEditor.GetPaintValueSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

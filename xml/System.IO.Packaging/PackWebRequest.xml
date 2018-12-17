@@ -233,7 +233,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetRequestStream" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRequestStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetRequestStream();" />
-      <MemberSignature Language="F#" Value="abstract member GetRequestStream : unit -&gt; System.IO.Stream&#xA;override this.GetRequestStream : unit -&gt; System.IO.Stream" Usage="packWebRequest.GetRequestStream " />
+      <MemberSignature Language="F#" Value="override this.GetRequestStream : unit -&gt; System.IO.Stream" Usage="packWebRequest.GetRequestStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -265,7 +265,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetResponse" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponse () As WebResponse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::WebResponse ^ GetResponse();" />
-      <MemberSignature Language="F#" Value="abstract member GetResponse : unit -&gt; System.Net.WebResponse&#xA;override this.GetResponse : unit -&gt; System.Net.WebResponse" Usage="packWebRequest.GetResponse " />
+      <MemberSignature Language="F#" Value="override this.GetResponse : unit -&gt; System.Net.WebResponse" Usage="packWebRequest.GetResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

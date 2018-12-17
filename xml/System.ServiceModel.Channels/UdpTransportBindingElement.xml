@@ -1,10 +1,10 @@
 ﻿<Type Name="UdpTransportBindingElement" FullName="System.ServiceModel.Channels.UdpTransportBindingElement">
-  <TypeSignature Language="C#" Value="public class UdpTransportBindingElement : System.ServiceModel.Channels.TransportBindingElement, System.ServiceModel.Channels.ITransportPolicyImport, System.ServiceModel.Description.IPolicyExportExtension, System.ServiceModel.Description.IWsdlExportExtension" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UdpTransportBindingElement extends System.ServiceModel.Channels.TransportBindingElement implements class System.ServiceModel.Channels.ITransportPolicyImport, class System.ServiceModel.Description.IPolicyExportExtension, class System.ServiceModel.Description.IWsdlExportExtension" />
+  <TypeSignature Language="C#" Value="public class UdpTransportBindingElement : System.ServiceModel.Channels.TransportBindingElement, System.ServiceModel.Description.IPolicyExportExtension, System.ServiceModel.Description.IWsdlExportExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UdpTransportBindingElement extends System.ServiceModel.Channels.TransportBindingElement implements class System.ServiceModel.Description.IPolicyExportExtension, class System.ServiceModel.Description.IWsdlExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.UdpTransportBindingElement" />
-  <TypeSignature Language="VB.NET" Value="Public Class UdpTransportBindingElement&#xA;Inherits TransportBindingElement&#xA;Implements IPolicyExportExtension, ITransportPolicyImport, IWsdlExportExtension" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UdpTransportBindingElement : System::ServiceModel::Channels::TransportBindingElement, System::ServiceModel::Channels::ITransportPolicyImport, System::ServiceModel::Description::IPolicyExportExtension, System::ServiceModel::Description::IWsdlExportExtension" />
-  <TypeSignature Language="F#" Value="type UdpTransportBindingElement = class&#xA;    inherit TransportBindingElement&#xA;    interface IPolicyExportExtension&#xA;    interface ITransportPolicyImport&#xA;    interface IWsdlExportExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class UdpTransportBindingElement&#xA;Inherits TransportBindingElement&#xA;Implements IPolicyExportExtension, IWsdlExportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpTransportBindingElement : System::ServiceModel::Channels::TransportBindingElement, System::ServiceModel::Description::IPolicyExportExtension, System::ServiceModel::Description::IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type UdpTransportBindingElement = class&#xA;    inherit TransportBindingElement&#xA;    interface IPolicyExportExtension&#xA;    interface IWsdlExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,9 +13,6 @@
     <BaseTypeName>System.ServiceModel.Channels.TransportBindingElement</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Channels.ITransportPolicyImport</InterfaceName>
-    </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.Description.IPolicyExportExtension</InterfaceName>
     </Interface>
@@ -80,7 +77,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&#xA;override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="udpTransportBindingElement.BuildChannelListener context" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="udpTransportBindingElement.BuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -144,7 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.UdpTransportBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&#xA;override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="udpTransportBindingElement.CanBuildChannelListener context" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="udpTransportBindingElement.CanBuildChannelListener context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
@@ -362,7 +359,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -409,6 +406,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ImportPolicy (importer As MetadataImporter, policyContext As PolicyConversionContext) Implements ITransportPolicyImport.ImportPolicy" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Channels.ITransportPolicyImport.ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ policyContext) = System::ServiceModel::Channels::ITransportPolicyImport::ImportPolicy;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.ITransportPolicyImport.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -434,6 +434,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -459,6 +462,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ExportContract (exporter As WsdlExporter, context As WsdlContractConversionContext) Implements IWsdlExportExtension.ExportContract" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlContractConversionContext ^ context) = System::ServiceModel::Description::IWsdlExportExtension::ExportContract;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -484,6 +490,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ExportEndpoint (exporter As WsdlExporter, context As WsdlEndpointConversionContext) Implements IWsdlExportExtension.ExportEndpoint" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context) = System::ServiceModel::Description::IWsdlExportExtension::ExportEndpoint;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

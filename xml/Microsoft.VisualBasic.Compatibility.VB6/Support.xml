@@ -782,10 +782,10 @@
       </Docs>
     </Member>
     <Member MemberName="Format">
-      <MemberSignature Language="C#" Value="public static string Format (object Expression, string Style = &quot;&quot;, Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek = 1, Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear = 1);" />
+      <MemberSignature Language="C#" Value="public static string Format (object Expression, string Style = &quot;&quot;, Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Format(object Expression, string Style, valuetype Microsoft.VisualBasic.FirstDayOfWeek DayOfWeek, valuetype Microsoft.VisualBasic.FirstWeekOfYear WeekOfYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.Support.Format(System.Object,System.String,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Format (Expression As Object, Optional Style As String = &quot;&quot;, Optional DayOfWeek As FirstDayOfWeek = 1, Optional WeekOfYear As FirstWeekOfYear = 1) As String" />
+      <MemberSignature Language="VB.NET" Value="Public Function Format (Expression As Object, Optional Style As String = &quot;&quot;, Optional DayOfWeek As FirstDayOfWeek = Microsoft.VisualBasic.FirstDayOfWeek.Sunday, Optional WeekOfYear As FirstWeekOfYear = Microsoft.VisualBasic.FirstWeekOfYear.Jan1) As String" />
       <MemberSignature Language="F#" Value="static member Format : obj * string * Microsoft.VisualBasic.FirstDayOfWeek * Microsoft.VisualBasic.FirstWeekOfYear -&gt; string" Usage="Microsoft.VisualBasic.Compatibility.VB6.Support.Format (Expression, Style, DayOfWeek, WeekOfYear)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

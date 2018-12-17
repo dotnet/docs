@@ -15,10 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Web.Compilation.BuildProviderAppliesTo</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5">
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Web.Compilation.BuildProviderAppliesTo(System.Web.Compilation.BuildProviderAppliesTo.Code)</AttributeName>
     </Attribute>
   </Attributes>
@@ -62,7 +59,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
-      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit&#xA;override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="entityDesignerBuildProvider.GenerateCode assemblyBuilder" />
+      <MemberSignature Language="F#" Value="override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="entityDesignerBuildProvider.GenerateCode assemblyBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -94,7 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.AspNet.EntityDesignerBuildProvider.GetResultFlags(System.CodeDom.Compiler.CompilerResults)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultFlags (results As CompilerResults) As BuildProviderResultFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Compilation::BuildProviderResultFlags GetResultFlags(System::CodeDom::Compiler::CompilerResults ^ results);" />
-      <MemberSignature Language="F#" Value="abstract member GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags&#xA;override this.GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags" Usage="entityDesignerBuildProvider.GetResultFlags results" />
+      <MemberSignature Language="F#" Value="override this.GetResultFlags : System.CodeDom.Compiler.CompilerResults -&gt; System.Web.Compilation.BuildProviderResultFlags" Usage="entityDesignerBuildProvider.GetResultFlags results" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

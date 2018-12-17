@@ -136,13 +136,13 @@
       <Docs>
         <summary>Gets the name of the binding used by this service endpoint.</summary>
         <value>The name of the binding.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The value returned by this property corresponds to the [ServiceEndpoint.Binding.Name](xref:System.ServiceModel.Channels.Binding.Name) property.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContractName">

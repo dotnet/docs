@@ -316,7 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDelete (keys As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteDelete(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ oldValues);" />
-      <MemberSignature Language="F#" Value="abstract member ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="entityDataSourceView.ExecuteDelete (keys, oldValues)" />
+      <MemberSignature Language="F#" Value="override this.ExecuteDelete : System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="entityDataSourceView.ExecuteDelete (keys, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -344,7 +344,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceView.ExecuteInsert(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteInsert (values As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteInsert(System::Collections::IDictionary ^ values);" />
-      <MemberSignature Language="F#" Value="abstract member ExecuteInsert : System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteInsert : System.Collections.IDictionary -&gt; int" Usage="entityDataSourceView.ExecuteInsert values" />
+      <MemberSignature Language="F#" Value="override this.ExecuteInsert : System.Collections.IDictionary -&gt; int" Usage="entityDataSourceView.ExecuteInsert values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -370,7 +370,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteSelect (arguments As DataSourceSelectArguments) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IEnumerable ^ ExecuteSelect(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
-      <MemberSignature Language="F#" Value="abstract member ExecuteSelect : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable&#xA;override this.ExecuteSelect : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="entityDataSourceView.ExecuteSelect arguments" />
+      <MemberSignature Language="F#" Value="override this.ExecuteSelect : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="entityDataSourceView.ExecuteSelect arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -396,7 +396,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteUpdate (keys As IDictionary, values As IDictionary, oldValues As IDictionary) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteUpdate(System::Collections::IDictionary ^ keys, System::Collections::IDictionary ^ values, System::Collections::IDictionary ^ oldValues);" />
-      <MemberSignature Language="F#" Value="abstract member ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int&#xA;override this.ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="entityDataSourceView.ExecuteUpdate (keys, values, oldValues)" />
+      <MemberSignature Language="F#" Value="override this.ExecuteUpdate : System.Collections.IDictionary * System.Collections.IDictionary * System.Collections.IDictionary -&gt; int" Usage="entityDataSourceView.ExecuteUpdate (keys, values, oldValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -567,6 +567,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::IStateManager::IsTrackingViewState { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -589,6 +592,9 @@
       <MemberSignature Language="VB.NET" Value="Sub LoadViewState (savedState As Object) Implements IStateManager.LoadViewState" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ savedState) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -613,6 +619,9 @@
       <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -635,6 +644,9 @@
       <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

@@ -236,7 +236,8 @@
       <Docs>
         <param name="toolsVersion">The tools version to search for.</param>
         <summary>Determines whether a toolset is defined for the given tools version.</summary>
-        <returns><see langword="true" /> if there is a toolset defined for the given tools version; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if there is a toolset defined for the given tools version; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -628,7 +629,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the targets and tasks of projects in the project collection can be built.</summary>
-        <value><see langword="true" /> if the targets and tasks of projects in this project collection can be built; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the targets and tasks of projects in this project collection can be built; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -969,7 +971,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether only critical events such as warnings and errors are logged.</summary>
-        <value><see langword="true" /> if only critical events such as warnings and errors are logged; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if only critical events such as warnings and errors are logged; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1202,7 +1205,8 @@
       <Docs>
         <param name="name">The name of the default global property to remove.</param>
         <summary>Removes a global property from the set of default global properties.</summary>
-        <returns><see langword="true" /> if the global property is present before removal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the global property is present before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1227,7 +1231,8 @@
       <Docs>
         <param name="toolsVersion">The toolset to be removed.</param>
         <summary>Removes a toolset from the project collection.</summary>
-        <returns><see langword="true" /> if the toolset is present before removal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the toolset is present before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1366,7 +1371,8 @@
       <Docs>
         <param name="projectRootElement">The root element of the project to unload.</param>
         <summary>Attempts to remove a project from the collection.</summary>
-        <returns><see langword="true" /> if the project was unloaded; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the project was unloaded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

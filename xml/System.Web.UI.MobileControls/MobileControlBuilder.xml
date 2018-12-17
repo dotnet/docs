@@ -70,7 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlBuilder.AllowWhitespaceLiterals" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
-      <MemberSignature Language="F#" Value="abstract member AllowWhitespaceLiterals : unit -&gt; bool&#xA;override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="mobileControlBuilder.AllowWhitespaceLiterals " />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="mobileControlBuilder.AllowWhitespaceLiterals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -95,7 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attributes As IDictionary) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attributes);" />
-      <MemberSignature Language="F#" Value="abstract member GetChildControlType : string * System.Collections.IDictionary -&gt; Type&#xA;override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="mobileControlBuilder.GetChildControlType (tagName, attributes)" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="mobileControlBuilder.GetChildControlType (tagName, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

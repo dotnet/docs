@@ -1,9 +1,9 @@
 ﻿<Type Name="DirectoryServicesCOMException" FullName="System.DirectoryServices.DirectoryServicesCOMException">
-  <TypeSignature Language="C#" Value="public class DirectoryServicesCOMException : System.Runtime.InteropServices.COMException, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="C#" Value="public class DirectoryServicesCOMException : System.Runtime.InteropServices.COMException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DirectoryServicesCOMException extends System.Runtime.InteropServices.COMException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesCOMException" />
-  <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesCOMException&#xA;Inherits COMException&#xA;Implements ISerializable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesCOMException : System::Runtime::InteropServices::COMException, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesCOMException&#xA;Inherits COMException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesCOMException : System::Runtime::InteropServices::COMException" />
   <TypeSignature Language="F#" Value="type DirectoryServicesCOMException = class&#xA;    inherit COMException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -183,7 +183,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesCOMException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
-      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="directoryServicesCOMException.GetObjectData (serializationInfo, streamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="directoryServicesCOMException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>

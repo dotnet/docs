@@ -38,10 +38,10 @@
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netstandard-1.2">
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName>System.Obsolete("SafeBuffer may be unavailable in future releases.")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netstandard-1.2">
-      <AttributeName>System.Obsolete("SafeBuffer may be unavailable in future releases.")</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

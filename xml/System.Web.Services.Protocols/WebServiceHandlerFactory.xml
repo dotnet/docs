@@ -58,6 +58,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ verb, System::String ^ url, System::String ^ filePath);" />
       <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler&#xA;override this.GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="webServiceHandlerFactory.GetHandler (context, verb, url, filePath)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -91,6 +94,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
       <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit&#xA;override this.ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="webServiceHandlerFactory.ReleaseHandler handler" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

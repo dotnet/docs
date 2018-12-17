@@ -554,7 +554,8 @@
       <Parameters />
       <Docs>
         <summary>Returns a value that indicates if the WebSocket instance is targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)].</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)]; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)]; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -589,7 +590,8 @@
       <Docs>
         <param name="state">The current state of the WebSocket.</param>
         <summary>Returns a value that indicates if the state of the WebSocket instance is closed or aborted.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is closed or aborted; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Net.WebSockets.WebSocket" /> is closed or aborted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

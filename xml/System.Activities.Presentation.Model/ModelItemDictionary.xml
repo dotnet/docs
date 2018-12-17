@@ -172,6 +172,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -728,7 +731,8 @@
       <Docs>
         <param name="item">The key/value pair to find.</param>
         <summary>Determines whether the dictionary contains the given key/value pair.</summary>
-        <returns><see langword="true" /> if the dictionary contains the given key/value pair; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the dictionary contains the given key/value pair; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -780,7 +784,8 @@
       <Docs>
         <param name="item">The key/value pair to remove.</param>
         <summary>Removes the specified key/value pair from the dictionary.</summary>
-        <returns><see langword="true" /> if the item exists and is removed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the item exists and is removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

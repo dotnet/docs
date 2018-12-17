@@ -651,7 +651,8 @@ The expression produced by <paramref name="predicate" /> does not have a Boolean
         <summary>Creates a new <see cref="T:System.Data.Common.CommandTrees.DbRefExpression" /> that encodes a reference to a specific entity of a given type based on key values.</summary>
         <returns>A new DbRefExpression that references the element with the specified key values in the given entity set.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="entitySet" /> or <paramref name="entityType" /> is null, or <paramref name="keyValues" /> is null or contains null.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="entityType" /> is not from the same type hierarchy (a subtype, supertype, or the same type) as <paramref name="entitySet" />'s element type.
 

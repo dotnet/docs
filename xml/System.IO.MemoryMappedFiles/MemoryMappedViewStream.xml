@@ -53,7 +53,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="memoryMappedViewStream.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="memoryMappedViewStream.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -96,7 +96,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
-      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="memoryMappedViewStream.Flush " />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="memoryMappedViewStream.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -215,7 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedViewStream.SetLength(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
-      <MemberSignature Language="F#" Value="abstract member SetLength : int64 -&gt; unit&#xA;override this.SetLength : int64 -&gt; unit" Usage="memoryMappedViewStream.SetLength value" />
+      <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="memoryMappedViewStream.SetLength value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>

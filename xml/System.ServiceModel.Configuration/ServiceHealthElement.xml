@@ -124,8 +124,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that controls whether the service is allowed to display service details and information in the health page.</summary>
-        <value><see langword="true" /> if the health endpoint should return the service details, or <see langword="false" /> if the response should contain no content. Its default value is <see langword="true" />.</value>
-        <remarks>   
+        <value>
+          <see langword="true" /> if the health endpoint should return the service details, or <see langword="false" /> if the response should contain no content. Its default value is <see langword="true" />.</value>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -162,7 +163,7 @@ The `HealthDetailsEnabled` property corresponds to the value of the `HealthDetai
       <Docs>
         <summary>Gets or sets a string that represents the type of binding used for health retrieval via an HTTP/Get request.</summary>
         <value>A string that represents the binding used for health retrieval via an HTTP/Get request.</value>
-       <remarks>   
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -230,8 +231,9 @@ The binding name must be defined in the [\<bindings> section](~/docs/framework/c
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that controls whether the service publishes its health information at the address specified by the <see langword="HttpGetUrl" /> attribute.</summary>
-        <value><see langword="true" /> to publish health information at the address specified by the <see langword="HttpGetUrl" /> attribute; otherwise, <see langword="false" />.</value>
-      <remarks>   
+        <value>
+          <see langword="true" /> to publish health information at the address specified by the <see langword="HttpGetUrl" /> attribute; otherwise, <see langword="false" />.</value>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -265,7 +267,7 @@ The `HttpGetEnabled` property corresponds to the value of the `HttpGetEnabled` a
       <Docs>
         <summary>Gets or sets the location at which the service health information is published for retrieval using HTTP.</summary>
         <value>The location at which the service health information is published for retrieval using HTTP.</value>
-      <remarks>   
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -302,7 +304,7 @@ The `HttpGetUrl` property corresponds to the value of the `HttpGetUrl` attribute
       <Docs>
         <summary>Gets or sets a string that represents the type of binding used for health retrieval via an HTTPS/Get request.</summary>
         <value>A string that represents the binding used for health retrieval via an HTTPS/Get request.</value>
-       <remarks>   
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -370,8 +372,9 @@ The binding name must be defined in the [\<bindings> section](~/docs/framework/c
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that controls whether the service publishes its health information at the address specified by the <see langword="HttpsGetUrl" /> attribute.</summary>
-        <value><see langword="true" /> to publish health information at the address specified by the <see langword="HttpsGetUrl" /> attribute; otherwise, <see langword="false" />.</value>
-      <remarks>   
+        <value>
+          <see langword="true" /> to publish health information at the address specified by the <see langword="HttpsGetUrl" /> attribute; otherwise, <see langword="false" />.</value>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -405,7 +408,7 @@ The `HttpsGetEnabled` property corresponds to the value of the `HttpsGetEnabled`
       <Docs>
         <summary>Gets or sets the location at which the service health information is published for retrieval using HTTPS.</summary>
         <value>The location at which the service health information is published for retrieval using HTTPS.</value>
-      <remarks>   
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -434,13 +437,13 @@ The `HttpsGetUrl` property corresponds to the value of the `HttpsGetUrl` attribu
       <Docs>
         <summary>Gets the collection of properties for this configuration element.</summary>
         <value>The collection of properties for this configuration element.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The `Properties` property, also called the property bag, contains all the attributes that apply to the `<serviceHealth>` configuration element represented by this instance.  
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -264,6 +264,9 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRouteHandler.System#Web#Routing#IRouteHandler#GetHttpHandler(System.Web.Routing.RequestContext)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Web::IHttpHandler ^ System.Web.Routing.IRouteHandler.GetHttpHandler(System::Web::Routing::RequestContext ^ requestContext) = System::Web::Routing::IRouteHandler::GetHttpHandler;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.Routing.IRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

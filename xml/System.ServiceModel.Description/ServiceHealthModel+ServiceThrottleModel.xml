@@ -140,7 +140,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether service throttle information about the WCF service is available to this service throttle model.</summary>
-        <value><see langword="true" /> if service throttle information is available; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if service throttle information is available; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -195,7 +195,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="targetForm" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="targetForm" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadSettings">
@@ -289,8 +290,10 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="sourceToolStrip" /> or <paramref name="targetName" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="sourceToolStrip" /> or <paramref name="targetName" /> refer to the same <see cref="T:System.Windows.Forms.ToolStrip" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sourceToolStrip" /> or <paramref name="targetName" /> refer to the same <see cref="T:System.Windows.Forms.ToolStrip" />.</exception>
         <altmember cref="M:System.Windows.Forms.ToolStripManager.RevertMerge(System.Windows.Forms.ToolStrip)" />
       </Docs>
     </Member>
@@ -641,7 +644,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="sourceForm" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="sourceForm" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SaveSettings">

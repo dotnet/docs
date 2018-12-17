@@ -68,6 +68,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ node);" />
       <MemberSignature Language="F#" Value="member this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="mobileDeviceCapabilitiesSectionHandler.Create (parent, context, node)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -99,6 +102,9 @@
       <MemberSignature Language="VB.NET" Value="Function Create (parent As Object, context As Object, node As XmlNode) As Object Implements IConfigurationSectionHandler.Create" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Configuration.IConfigurationSectionHandler.Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ node) = System::Configuration::IConfigurationSectionHandler::Create;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.IConfigurationSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

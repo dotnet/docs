@@ -175,6 +175,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool GetToolSupported(System::Drawing::Design::ToolboxItem ^ tool);" />
       <MemberSignature Language="F#" Value="abstract member GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool&#xA;override this.GetToolSupported : System.Drawing.Design.ToolboxItem -&gt; bool" Usage="documentDesigner.GetToolSupported tool" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Drawing.Design.IToolboxUser.GetToolSupported(System.Drawing.Design.ToolboxItem)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -211,6 +214,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="documentDesigner.Initialize component" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.Initialize(System.ComponentModel.IComponent)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -386,6 +392,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetView (technology As ViewTechnology) As Object Implements IRootDesigner.GetView" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.IRootDesigner.GetView(System::ComponentModel::Design::ViewTechnology technology) = System::ComponentModel::Design::IRootDesigner::GetView;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -420,6 +429,9 @@
       <MemberSignature Language="C++ CLI" Value="property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ System::ComponentModel::Design::IRootDesigner::SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.IRootDesigner.SupportedTechnologies</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -448,6 +460,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetToolSupported (tool As ToolboxItem) As Boolean Implements IToolboxUser.GetToolSupported" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Drawing.Design.IToolboxUser.GetToolSupported(System::Drawing::Design::ToolboxItem ^ tool) = System::Drawing::Design::IToolboxUser::GetToolSupported;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Drawing.Design.IToolboxUser.GetToolSupported(System.Drawing.Design.ToolboxItem)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -487,6 +502,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ToolPicked (tool As ToolboxItem) Implements IToolboxUser.ToolPicked" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Drawing.Design.IToolboxUser.ToolPicked(System::Drawing::Design::ToolboxItem ^ tool) = System::Drawing::Design::IToolboxUser::ToolPicked;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Drawing.Design.IToolboxUser.ToolPicked(System.Drawing.Design.ToolboxItem)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -525,6 +543,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ToolPicked(System::Drawing::Design::ToolboxItem ^ tool);" />
       <MemberSignature Language="F#" Value="abstract member ToolPicked : System.Drawing.Design.ToolboxItem -&gt; unit&#xA;override this.ToolPicked : System.Drawing.Design.ToolboxItem -&gt; unit" Usage="documentDesigner.ToolPicked tool" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Drawing.Design.IToolboxUser.ToolPicked(System.Drawing.Design.ToolboxItem)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

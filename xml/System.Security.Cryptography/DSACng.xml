@@ -139,7 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.CreateSignature(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSignature (rgbHash As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateSignature(cli::array &lt;System::Byte&gt; ^ rgbHash);" />
-      <MemberSignature Language="F#" Value="abstract member CreateSignature : byte[] -&gt; byte[]&#xA;override this.CreateSignature : byte[] -&gt; byte[]" Usage="dSACng.CreateSignature rgbHash" />
+      <MemberSignature Language="F#" Value="override this.CreateSignature : byte[] -&gt; byte[]" Usage="dSACng.CreateSignature rgbHash" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -178,7 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dSACng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dSACng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -207,7 +207,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As DSAParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::DSAParameters ExportParameters(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.DSAParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.DSAParameters" Usage="dSACng.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.DSAParameters" Usage="dSACng.ExportParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -239,7 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
-      <MemberSignature Language="F#" Value="abstract member HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSACng.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSACng.HashData (data, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -270,7 +270,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
-      <MemberSignature Language="F#" Value="abstract member HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSACng.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSACng.HashData (data, offset, count, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -305,7 +305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.ImportParameters(System.Security.Cryptography.DSAParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As DSAParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::DSAParameters parameters);" />
-      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.DSAParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.DSAParameters -&gt; unit" Usage="dSACng.ImportParameters parameters" />
+      <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.DSAParameters -&gt; unit" Usage="dSACng.ImportParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -453,7 +453,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSACng.VerifySignature(System.Byte[],System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifySignature (rgbHash As Byte(), rgbSignature As Byte()) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifySignature(cli::array &lt;System::Byte&gt; ^ rgbHash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
-      <MemberSignature Language="F#" Value="abstract member VerifySignature : byte[] * byte[] -&gt; bool&#xA;override this.VerifySignature : byte[] * byte[] -&gt; bool" Usage="dSACng.VerifySignature (rgbHash, rgbSignature)" />
+      <MemberSignature Language="F#" Value="override this.VerifySignature : byte[] * byte[] -&gt; bool" Usage="dSACng.VerifySignature (rgbHash, rgbSignature)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

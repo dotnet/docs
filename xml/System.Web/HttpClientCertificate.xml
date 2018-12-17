@@ -196,7 +196,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpClientCertificate.Get(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (field As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(System::String ^ field);" />
-      <MemberSignature Language="F#" Value="abstract member Get : string -&gt; string&#xA;override this.Get : string -&gt; string" Usage="httpClientCertificate.Get field" />
+      <MemberSignature Language="F#" Value="override this.Get : string -&gt; string" Usage="httpClientCertificate.Get field" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

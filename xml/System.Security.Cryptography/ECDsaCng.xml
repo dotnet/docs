@@ -238,7 +238,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eCDsaCng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eCDsaCng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -357,7 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXmlString (xmlString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXmlString(System::String ^ xmlString);" />
-      <MemberSignature Language="F#" Value="abstract member FromXmlString : string -&gt; unit&#xA;override this.FromXmlString : string -&gt; unit" Usage="eCDsaCng.FromXmlString xmlString" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string -&gt; unit" Usage="eCDsaCng.FromXmlString xmlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -393,7 +393,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.FromXmlString(System.String,System.Security.Cryptography.ECKeyXmlFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FromXmlString (xml As String, format As ECKeyXmlFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXmlString(System::String ^ xml, System::Security::Cryptography::ECKeyXmlFormat format);" />
-      <MemberSignature Language="F#" Value="member this.FromXmlString : string * System.Security.Cryptography.ECKeyXmlFormat -&gt; unit" Usage="eCDsaCng.FromXmlString (xml, format)" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string * System.Security.Cryptography.ECKeyXmlFormat -&gt; unit" Usage="eCDsaCng.FromXmlString (xml, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -958,7 +958,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString (includePrivateParameters As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="abstract member ToXmlString : bool -&gt; string&#xA;override this.ToXmlString : bool -&gt; string" Usage="eCDsaCng.ToXmlString includePrivateParameters" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : bool -&gt; string" Usage="eCDsaCng.ToXmlString includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -996,7 +996,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToXmlString (format As ECKeyXmlFormat) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToXmlString(System::Security::Cryptography::ECKeyXmlFormat format);" />
-      <MemberSignature Language="F#" Value="member this.ToXmlString : System.Security.Cryptography.ECKeyXmlFormat -&gt; string" Usage="eCDsaCng.ToXmlString format" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : System.Security.Cryptography.ECKeyXmlFormat -&gt; string" Usage="eCDsaCng.ToXmlString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1022,6 +1022,72 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="format" /> specifies an invalid format. The only accepted value is <see cref="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryHashData">
+      <MemberSignature Language="C#" Value="protected override bool TryHashData (ReadOnlySpan&lt;byte&gt; source, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryHashData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryHashData (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryHashData(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryHashData : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName *  -&gt; bool" Usage="eCDsaCng.TryHashData (source, destination, hashAlgorithm, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySignHash">
+      <MemberSignature Language="C#" Value="public override bool TrySignHash (ReadOnlySpan&lt;byte&gt; source, Span&lt;byte&gt; destination, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TrySignHash(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; source, valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.TrySignHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TrySignHash (source As ReadOnlySpan(Of Byte), destination As Span(Of Byte), ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TrySignHash(ReadOnlySpan&lt;System::Byte&gt; source, Span&lt;System::Byte&gt; destination, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TrySignHash : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; *  -&gt; bool" Usage="eCDsaCng.TrySignHash (source, destination, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="VerifyData">
@@ -1236,6 +1302,36 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="hash" /> or <paramref name="signature" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyHash">
+      <MemberSignature Language="C#" Value="public override bool VerifyHash (ReadOnlySpan&lt;byte&gt; hash, ReadOnlySpan&lt;byte&gt; signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool VerifyHash(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsaCng.VerifyHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyHash (hash As ReadOnlySpan(Of Byte), signature As ReadOnlySpan(Of Byte)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyHash(ReadOnlySpan&lt;System::Byte&gt; hash, ReadOnlySpan&lt;System::Byte&gt; signature);" />
+      <MemberSignature Language="F#" Value="override this.VerifyHash : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; -&gt; bool" Usage="eCDsaCng.VerifyHash (hash, signature)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="signature" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

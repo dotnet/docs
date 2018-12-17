@@ -2110,7 +2110,7 @@ When view state is saved, the string object that was persisted after the save-st
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceView.Select(System.Web.UI.DataSourceSelectArguments)" />
       <MemberSignature Language="VB.NET" Value="Public Function Select (arguments As DataSourceSelectArguments) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ Select(System::Web::UI::DataSourceSelectArguments ^ arguments);" />
-      <MemberSignature Language="F#" Value="member this.Select : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="linqDataSourceView.Select arguments" />
+      <MemberSignature Language="F#" Value="override this.Select : System.Web.UI.DataSourceSelectArguments -&gt; System.Collections.IEnumerable" Usage="linqDataSourceView.Select arguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

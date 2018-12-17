@@ -1073,7 +1073,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteAttribute (attribute As String, value As String, encode As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAttribute(System::String ^ attribute, System::String ^ value, bool encode);" />
-      <MemberSignature Language="F#" Value="abstract member WriteAttribute : string * string * bool -&gt; unit&#xA;override this.WriteAttribute : string * string * bool -&gt; unit" Usage="xhtmlMobileTextWriter.WriteAttribute (attribute, value, encode)" />
+      <MemberSignature Language="F#" Value="override this.WriteAttribute : string * string * bool -&gt; unit" Usage="xhtmlMobileTextWriter.WriteAttribute (attribute, value, encode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1114,7 +1114,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteBeginTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBeginTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBeginTag(System::String ^ tag);" />
-      <MemberSignature Language="F#" Value="abstract member WriteBeginTag : string -&gt; unit&#xA;override this.WriteBeginTag : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteBeginTag tag" />
+      <MemberSignature Language="F#" Value="override this.WriteBeginTag : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteBeginTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1153,7 +1153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteBreak" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteBreak ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteBreak();" />
-      <MemberSignature Language="F#" Value="abstract member WriteBreak : unit -&gt; unit&#xA;override this.WriteBreak : unit -&gt; unit" Usage="xhtmlMobileTextWriter.WriteBreak " />
+      <MemberSignature Language="F#" Value="override this.WriteBreak : unit -&gt; unit" Usage="xhtmlMobileTextWriter.WriteBreak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1299,7 +1299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteEndTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndTag(System::String ^ tag);" />
-      <MemberSignature Language="F#" Value="abstract member WriteEndTag : string -&gt; unit&#xA;override this.WriteEndTag : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteEndTag tag" />
+      <MemberSignature Language="F#" Value="override this.WriteEndTag : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteEndTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1338,7 +1338,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteFullBeginTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullBeginTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullBeginTag(System::String ^ tag);" />
-      <MemberSignature Language="F#" Value="abstract member WriteFullBeginTag : string -&gt; unit&#xA;override this.WriteFullBeginTag : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteFullBeginTag tag" />
+      <MemberSignature Language="F#" Value="override this.WriteFullBeginTag : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteFullBeginTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1466,7 +1466,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : unit -&gt; unit&#xA;override this.WriteLine : unit -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine " />
+      <MemberSignature Language="F#" Value="override this.WriteLine : unit -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1492,7 +1492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(bool v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : bool -&gt; unit&#xA;override this.WriteLine : bool -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : bool -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1521,7 +1521,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(char v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : char -&gt; unit&#xA;override this.WriteLine : char -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : char -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1550,7 +1550,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Char[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Char())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : char[] -&gt; unit&#xA;override this.WriteLine : char[] -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : char[] -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1579,7 +1579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(double v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : double -&gt; unit&#xA;override this.WriteLine : double -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : double -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1608,7 +1608,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(int v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : int -&gt; unit&#xA;override this.WriteLine : int -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : int -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1637,7 +1637,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(long v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : int64 -&gt; unit&#xA;override this.WriteLine : int64 -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : int64 -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1666,7 +1666,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::Object ^ v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : obj -&gt; unit&#xA;override this.WriteLine : obj -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : obj -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1695,7 +1695,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (v As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(float v);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : single -&gt; unit&#xA;override this.WriteLine : single -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : single -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1724,7 +1724,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ s);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : string -&gt; unit&#xA;override this.WriteLine : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine s" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1753,7 +1753,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : string * obj -&gt; unit&#xA;override this.WriteLine : string * obj -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (format, arg)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (format, arg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1784,7 +1784,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : string * obj[] -&gt; unit&#xA;override this.WriteLine : string * obj[] -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (format, arg)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj[] -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (format, arg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1821,7 +1821,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : char[] * int * int -&gt; unit&#xA;override this.WriteLine : char[] * int * int -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (buffer, index, count)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : char[] * int * int -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1854,7 +1854,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine(System.String,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : string * obj * obj -&gt; unit&#xA;override this.WriteLine : string * obj * obj -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (format, arg0, arg1)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj -&gt; unit" Usage="xhtmlMobileTextWriter.WriteLine (format, arg0, arg1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -66,7 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.Add(System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As RuleCondition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Workflow::Activities::Rules::RuleCondition ^ item);" />
-      <MemberSignature Language="F#" Value="member this.Add : System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.Add item" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -125,7 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.GetKeyForItem(System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As RuleCondition) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Workflow::Activities::Rules::RuleCondition ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.Workflow.Activities.Rules.RuleCondition -&gt; string&#xA;override this.GetKeyForItem : System.Workflow.Activities.Rules.RuleCondition -&gt; string" Usage="ruleConditionCollection.GetKeyForItem item" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.Workflow.Activities.Rules.RuleCondition -&gt; string" Usage="ruleConditionCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -151,7 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.InsertItem(System.Int32,System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As RuleCondition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Workflow::Activities::Rules::RuleCondition ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member InsertItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit&#xA;override this.InsertItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.InsertItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -178,7 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
-      <MemberSignature Language="F#" Value="abstract member RemoveItem : int -&gt; unit&#xA;override this.RemoveItem : int -&gt; unit" Usage="ruleConditionCollection.RemoveItem index" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="ruleConditionCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -203,7 +203,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.SetItem(System.Int32,System.Workflow.Activities.Rules.RuleCondition)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As RuleCondition)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Workflow::Activities::Rules::RuleCondition ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit&#xA;override this.SetItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.SetItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

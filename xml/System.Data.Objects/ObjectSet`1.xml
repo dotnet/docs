@@ -1,9 +1,9 @@
 ﻿<Type Name="ObjectSet&lt;TEntity&gt;" FullName="System.Data.Objects.ObjectSet&lt;TEntity&gt;">
-  <TypeSignature Language="C#" Value="public class ObjectSet&lt;TEntity&gt; : System.Data.Objects.ObjectQuery&lt;TEntity&gt;, System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.Data.Objects.IObjectSet&lt;TEntity&gt; where TEntity : class" />
+  <TypeSignature Language="C#" Value="public class ObjectSet&lt;TEntity&gt; : System.Data.Objects.ObjectQuery&lt;TEntity&gt;, System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.Data.Objects.IObjectSet&lt;TEntity&gt;, System.Linq.IQueryable&lt;TEntity&gt; where TEntity : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectSet`1&lt;class TEntity&gt; extends System.Data.Objects.ObjectQuery`1&lt;!TEntity&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.IEnumerable, class System.Data.Objects.IObjectSet`1&lt;!TEntity&gt;, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!TEntity&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectSet`1" />
-  <TypeSignature Language="VB.NET" Value="Public Class ObjectSet(Of TEntity)&#xA;Inherits ObjectQuery(Of TEntity)&#xA;Implements IEnumerable(Of TEntity), IObjectSet(Of TEntity)" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class ObjectSet : System::Data::Objects::ObjectQuery&lt;TEntity&gt;, System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::Data::Objects::IObjectSet&lt;TEntity&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectSet(Of TEntity)&#xA;Inherits ObjectQuery(Of TEntity)&#xA;Implements IEnumerable(Of TEntity), IObjectSet(Of TEntity), IQueryable(Of TEntity)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TEntity&gt;&#xA; where TEntity : classpublic ref class ObjectSet : System::Data::Objects::ObjectQuery&lt;TEntity&gt;, System::Collections::Generic::IEnumerable&lt;TEntity&gt;, System::Data::Objects::IObjectSet&lt;TEntity&gt;, System::Linq::IQueryable&lt;TEntity&gt;" />
   <TypeSignature Language="F#" Value="type ObjectSet&lt;'Entity (requires 'Entity : null)&gt; = class&#xA;    inherit ObjectQuery&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IObjectSet&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IQueryable&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface seq&lt;'Entity (requires 'Entity : null)&gt;&#xA;    interface IEnumerable&#xA;    interface IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
@@ -23,6 +23,9 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Collections.Generic.IEnumerable&lt;TEntity&gt;</InterfaceName>
     </Interface>

@@ -401,6 +401,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::SerializationBinder ^ Binder { System::Runtime::Serialization::SerializationBinder ^ get(); void set(System::Runtime::Serialization::SerializationBinder ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Binder : System.Runtime.Serialization.SerializationBinder with get, set" Usage="System.Runtime.Serialization.NetDataContractSerializer.Binder" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Binder</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -431,6 +434,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::StreamingContext Context { System::Runtime::Serialization::StreamingContext get(); void set(System::Runtime::Serialization::StreamingContext value); };" />
       <MemberSignature Language="F#" Value="member this.Context : System.Runtime.Serialization.StreamingContext with get, set" Usage="System.Runtime.Serialization.NetDataContractSerializer.Context" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.IFormatter.Context</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -453,6 +459,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Deserialize(System::IO::Stream ^ stream);" />
       <MemberSignature Language="F#" Value="abstract member Deserialize : System.IO.Stream -&gt; obj&#xA;override this.Deserialize : System.IO.Stream -&gt; obj" Usage="netDataContractSerializer.Deserialize stream" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Deserialize(System.IO.Stream)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -773,6 +782,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Serialize(System::IO::Stream ^ stream, System::Object ^ graph);" />
       <MemberSignature Language="F#" Value="abstract member Serialize : System.IO.Stream * obj -&gt; unit&#xA;override this.Serialize : System.IO.Stream * obj -&gt; unit" Usage="netDataContractSerializer.Serialize (stream, graph)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IFormatter.Serialize(System.IO.Stream,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -801,6 +813,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ISurrogateSelector ^ SurrogateSelector { System::Runtime::Serialization::ISurrogateSelector ^ get(); void set(System::Runtime::Serialization::ISurrogateSelector ^ value); };" />
       <MemberSignature Language="F#" Value="member this.SurrogateSelector : System.Runtime.Serialization.ISurrogateSelector with get, set" Usage="System.Runtime.Serialization.NetDataContractSerializer.SurrogateSelector" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.IFormatter.SurrogateSelector</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

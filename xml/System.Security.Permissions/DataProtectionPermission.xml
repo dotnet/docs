@@ -135,7 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
-      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="dataProtectionPermission.Copy " />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="dataProtectionPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -219,7 +219,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (e As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ e);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="dataProtectionPermission.FromXml e" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="dataProtectionPermission.FromXml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -273,7 +273,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dataProtectionPermission.Intersect target" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dataProtectionPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -317,7 +317,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="dataProtectionPermission.IsSubsetOf target" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="dataProtectionPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -365,8 +365,11 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
-      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="dataProtectionPermission.IsUnrestricted " />
+      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="dataProtectionPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -405,7 +408,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
-      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="dataProtectionPermission.ToXml " />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="dataProtectionPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -447,7 +450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dataProtectionPermission.Union target" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dataProtectionPermission.Union target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

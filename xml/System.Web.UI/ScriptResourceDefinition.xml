@@ -1,10 +1,10 @@
 ﻿<Type Name="ScriptResourceDefinition" FullName="System.Web.UI.ScriptResourceDefinition">
-  <TypeSignature Language="C#" Value="public class ScriptResourceDefinition : System.Web.UI.IScriptResourceDefinition" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceDefinition extends System.Object implements class System.Web.UI.IScriptResourceDefinition" />
+  <TypeSignature Language="C#" Value="public class ScriptResourceDefinition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptResourceDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptResourceDefinition" />
-  <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceDefinition&#xA;Implements IScriptResourceDefinition" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceDefinition : System::Web::UI::IScriptResourceDefinition" />
-  <TypeSignature Language="F#" Value="type ScriptResourceDefinition = class&#xA;    interface IScriptResourceDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptResourceDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptResourceDefinition" />
+  <TypeSignature Language="F#" Value="type ScriptResourceDefinition = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,11 +12,7 @@
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.Web.UI.IScriptResourceDefinition</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Defines the location of a script resource.</summary>
     <remarks>
@@ -302,6 +298,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System::Web::UI::IScriptResourceDefinition::CdnDebugPathSecureConnection { System::String ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IScriptResourceDefinition.CdnDebugPathSecureConnection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -328,6 +327,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::String ^ System::Web::UI::IScriptResourceDefinition::CdnPathSecureConnection { System::String ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IScriptResourceDefinition.CdnPathSecureConnection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

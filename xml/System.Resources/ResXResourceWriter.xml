@@ -1,9 +1,9 @@
 ﻿<Type Name="ResXResourceWriter" FullName="System.Resources.ResXResourceWriter">
-  <TypeSignature Language="C#" Value="public class ResXResourceWriter : IDisposable, System.Resources.IResourceWriter" />
+  <TypeSignature Language="C#" Value="public class ResXResourceWriter : System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceWriter extends System.Object implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceWriter" />
-  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceWriter&#xA;Implements IDisposable, IResourceWriter" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceWriter : IDisposable, System::Resources::IResourceWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceWriter&#xA;Implements IResourceWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceWriter : System::Resources::IResourceWriter" />
   <TypeSignature Language="F#" Value="type ResXResourceWriter = class&#xA;    interface IResourceWriter&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -429,6 +429,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberSignature Language="F#" Value="abstract member AddResource : string * byte[] -&gt; unit&#xA;override this.AddResource : string * byte[] -&gt; unit" Usage="resXResourceWriter.AddResource (name, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.AddResource(System.String,System.Byte[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -471,6 +474,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member AddResource : string * obj -&gt; unit&#xA;override this.AddResource : string * obj -&gt; unit" Usage="resXResourceWriter.AddResource (name, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.AddResource(System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -516,6 +522,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, System::String ^ value);" />
       <MemberSignature Language="F#" Value="abstract member AddResource : string * string -&gt; unit&#xA;override this.AddResource : string * string -&gt; unit" Usage="resXResourceWriter.AddResource (name, value)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.AddResource(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -640,6 +649,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="resXResourceWriter.Close " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -808,6 +820,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Generate();" />
       <MemberSignature Language="F#" Value="abstract member Generate : unit -&gt; unit&#xA;override this.Generate : unit -&gt; unit" Usage="resXResourceWriter.Generate " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.Generate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

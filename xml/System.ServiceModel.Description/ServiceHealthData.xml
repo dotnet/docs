@@ -39,7 +39,8 @@
         <param name="values">A set of data items. </param>
         <summary>Initializes a new <see cref="T:System.ServiceModel.Description.ServiceHealthData" /> item that consists of a key and multiple values.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Key">

@@ -1825,6 +1825,9 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetc, System::Runtime::InteropServices::ComTypes::ADVF advf, System::Runtime::InteropServices::ComTypes::IAdviseSink ^ pAdvSink, [Runtime::InteropServices::Out] int % pdwConnection) = System::Runtime::InteropServices::ComTypes::IDataObject::DAdvise;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1868,6 +1871,9 @@
       <MemberSignature Language="VB.NET" Value="Sub DUnadvise (dwConnection As Integer) Implements IDataObject.DUnadvise" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(int dwConnection) = System::Runtime::InteropServices::ComTypes::IDataObject::DUnadvise;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1904,6 +1910,9 @@
       <MemberSignature Language="VB.NET" Value="Function EnumDAdvise (ByRef enumAdvise As IEnumSTATDATA) As Integer Implements IDataObject.EnumDAdvise" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % enumAdvise) = System::Runtime::InteropServices::ComTypes::IDataObject::EnumDAdvise;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1955,6 +1964,9 @@
       <MemberSignature Language="VB.NET" Value="Function EnumFormatEtc (dwDirection As DATADIR) As IEnumFORMATETC Implements IDataObject.EnumFormatEtc" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Runtime::InteropServices::ComTypes::IEnumFORMATETC ^ System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System::Runtime::InteropServices::ComTypes::DATADIR dwDirection) = System::Runtime::InteropServices::ComTypes::IDataObject::EnumFormatEtc;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2010,6 +2022,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetCanonicalFormatEtc (ByRef pformatetcIn As FORMATETC, ByRef pformatetcOut As FORMATETC) As Integer Implements IDataObject.GetCanonicalFormatEtc" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System::Runtime::InteropServices::ComTypes::FORMATETC % pformatetcIn, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FORMATETC % pformatetcOut) = System::Runtime::InteropServices::ComTypes::IDataObject::GetCanonicalFormatEtc;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2075,6 +2090,9 @@
       <MemberSignature Language="VB.NET" Value="Sub GetData (ByRef formatetc As FORMATETC, ByRef medium As STGMEDIUM) Implements IDataObject.GetData" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium) = System::Runtime::InteropServices::ComTypes::IDataObject::GetData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2113,6 +2131,9 @@
       <MemberSignature Language="VB.NET" Value="Sub GetDataHere (ByRef formatetc As FORMATETC, ByRef medium As STGMEDIUM) Implements IDataObject.GetDataHere" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium) = System::Runtime::InteropServices::ComTypes::IDataObject::GetDataHere;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2151,6 +2172,9 @@
       <MemberSignature Language="VB.NET" Value="Function QueryGetData (ByRef formatetc As FORMATETC) As Integer Implements IDataObject.QueryGetData" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc) = System::Runtime::InteropServices::ComTypes::IDataObject::QueryGetData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System.Runtime.InteropServices.ComTypes.FORMATETC@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -2218,6 +2242,9 @@
       <MemberSignature Language="VB.NET" Value="Sub SetData (ByRef pFormatetcIn As FORMATETC, ByRef pmedium As STGMEDIUM, fRelease As Boolean) Implements IDataObject.SetData" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetcIn, System::Runtime::InteropServices::ComTypes::STGMEDIUM % pmedium, bool fRelease) = System::Runtime::InteropServices::ComTypes::IDataObject::SetData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

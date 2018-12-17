@@ -66,6 +66,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IHttpModule.Dispose" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpModule.Dispose() = System::Web::IHttpModule::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -98,6 +101,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Init (application As HttpApplication) Implements IHttpModule.Init" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpModule.Init(System::Web::HttpApplication ^ application) = System::Web::IHttpModule::Init;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

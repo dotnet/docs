@@ -53,7 +53,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointNameMessageFilter.Match(System.ServiceModel.Channels.Message)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
-      <MemberSignature Language="F#" Value="abstract member Match : System.ServiceModel.Channels.Message -&gt; bool&#xA;override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="endpointNameMessageFilter.Match message" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="endpointNameMessageFilter.Match message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointNameMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (buffer As MessageBuffer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
-      <MemberSignature Language="F#" Value="abstract member Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool&#xA;override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="endpointNameMessageFilter.Match buffer" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="endpointNameMessageFilter.Match buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

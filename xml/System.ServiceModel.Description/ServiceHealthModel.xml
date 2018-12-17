@@ -59,7 +59,8 @@
         <param name="serviceHost">The service host that this health service behavior monitors.</param>
         <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> class that monitors a specified service host.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception> 
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -83,7 +84,8 @@
         <param name="serviceStartTime">The start date and time to be assigned to the service.</param>
         <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> class that monitors a specified service host and assigns its start date and time.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ChannelDispatchers">
@@ -155,13 +157,13 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the namespace URI of WCF health services.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The value of this field is `"http://schemas.microsoft.com/net/2018/08/health`.
 
          ]]></format>
-          </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProcessInformation">
@@ -185,7 +187,7 @@ The value of this field is `"http://schemas.microsoft.com/net/2018/08/health`.
         <ReturnType>System.ServiceModel.Description.ServiceHealthModel+ProcessInformationModel</ReturnType>
       </ReturnValue>
       <Docs>
-       <summary>Gets process information for the service that this health service behavior monitors.</summary>
+        <summary>Gets process information for the service that this health service behavior monitors.</summary>
         <value>An object that contains process information for the service that this health service monitors.</value>
         <remarks>To be added.</remarks>
       </Docs>

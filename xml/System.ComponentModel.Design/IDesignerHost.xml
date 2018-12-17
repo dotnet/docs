@@ -1,9 +1,9 @@
 ﻿<Type Name="IDesignerHost" FullName="System.ComponentModel.Design.IDesignerHost">
-  <TypeSignature Language="C#" Value="public interface IDesignerHost : System.ComponentModel.Design.IServiceContainer" />
+  <TypeSignature Language="C#" Value="public interface IDesignerHost : IServiceProvider, System.ComponentModel.Design.IServiceContainer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerHost implements class System.ComponentModel.Design.IServiceContainer, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerHost" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerHost&#xA;Implements IServiceContainer" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerHost : System::ComponentModel::Design::IServiceContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerHost&#xA;Implements IServiceContainer, IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerHost : IServiceProvider, System::ComponentModel::Design::IServiceContainer" />
   <TypeSignature Language="F#" Value="type IDesignerHost = interface&#xA;    interface IServiceContainer&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>

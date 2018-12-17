@@ -78,7 +78,7 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicQueryStringParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
-      <MemberSignature Language="F#" Value="abstract member Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj&#xA;override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="dynamicQueryStringParameter.Evaluate (context, control)" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="dynamicQueryStringParameter.Evaluate (context, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

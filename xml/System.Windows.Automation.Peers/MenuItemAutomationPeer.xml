@@ -224,7 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuItemAutomationPeer.GetPositionInSetCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetPositionInSetCore () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int GetPositionInSetCore();" />
-      <MemberSignature Language="F#" Value="abstract member GetPositionInSetCore : unit -&gt; int&#xA;override this.GetPositionInSetCore : unit -&gt; int" Usage="menuItemAutomationPeer.GetPositionInSetCore " />
+      <MemberSignature Language="F#" Value="override this.GetPositionInSetCore : unit -&gt; int" Usage="menuItemAutomationPeer.GetPositionInSetCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -236,7 +236,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the position of a <see cref="T:System.Windows.Controls.MenuItem" /> contained in a set.</summary>
-        <returns>The value of the <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" /> if it has been set, or its position relative to the parent <see cref="T:System.Windows.Controls.ItemsControl"/> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
+        <returns>The value of the <see cref="F:System.Windows.Automation.AutomationProperties.PositionInSetProperty" /> if it has been set, or its position relative to the parent <see cref="T:System.Windows.Controls.ItemsControl" /> or <see cref="T:System.Windows.Controls.GroupItem" /> control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,7 +246,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.MenuItemAutomationPeer.GetSizeOfSetCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSizeOfSetCore () As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int GetSizeOfSetCore();" />
-      <MemberSignature Language="F#" Value="abstract member GetSizeOfSetCore : unit -&gt; int&#xA;override this.GetSizeOfSetCore : unit -&gt; int" Usage="menuItemAutomationPeer.GetSizeOfSetCore " />
+      <MemberSignature Language="F#" Value="override this.GetSizeOfSetCore : unit -&gt; int" Usage="menuItemAutomationPeer.GetSizeOfSetCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

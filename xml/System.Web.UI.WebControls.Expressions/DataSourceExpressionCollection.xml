@@ -120,7 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.CopyTo(System.Web.UI.WebControls.Expressions.DataSourceExpression[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (expressionArray As DataSourceExpression(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::Expressions::DataSourceExpression ^&gt; ^ expressionArray, int index);" />
-      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.Expressions.DataSourceExpression[] * int -&gt; unit" Usage="dataSourceExpressionCollection.CopyTo (expressionArray, index)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.Expressions.DataSourceExpression[] * int -&gt; unit" Usage="dataSourceExpressionCollection.CopyTo (expressionArray, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -153,7 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
-      <MemberSignature Language="F#" Value="abstract member CreateKnownType : int -&gt; obj&#xA;override this.CreateKnownType : int -&gt; obj" Usage="dataSourceExpressionCollection.CreateKnownType index" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="dataSourceExpressionCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -178,7 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
-      <MemberSignature Language="F#" Value="abstract member GetKnownTypes : unit -&gt; Type[]&#xA;override this.GetKnownTypes : unit -&gt; Type[]" Usage="dataSourceExpressionCollection.GetKnownTypes " />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="dataSourceExpressionCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -350,7 +350,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.DataSourceExpressionCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
-      <MemberSignature Language="F#" Value="abstract member SetDirtyObject : obj -&gt; unit&#xA;override this.SetDirtyObject : obj -&gt; unit" Usage="dataSourceExpressionCollection.SetDirtyObject o" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="dataSourceExpressionCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

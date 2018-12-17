@@ -43,7 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (item As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Add(System::Object ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; int&#xA;override this.Add : obj -&gt; int" Usage="domainUpDownItemCollection.Add item" />
+      <MemberSignature Language="F#" Value="override this.Add : obj -&gt; int" Usage="domainUpDownItemCollection.Add item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,7 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Insert (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Insert(int index, System::Object ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member Insert : int * obj -&gt; unit&#xA;override this.Insert : int * obj -&gt; unit" Usage="domainUpDownItemCollection.Insert (index, item)" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * obj -&gt; unit" Usage="domainUpDownItemCollection.Insert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,10 +143,7 @@
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,7 +174,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Object ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="domainUpDownItemCollection.Remove item" />
+      <MemberSignature Language="F#" Value="override this.Remove : obj -&gt; unit" Usage="domainUpDownItemCollection.Remove item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -215,7 +212,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (item As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int item);" />
-      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="domainUpDownItemCollection.RemoveAt item" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="domainUpDownItemCollection.RemoveAt item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

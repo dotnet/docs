@@ -327,7 +327,8 @@ End Module
       <Docs>
         <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
-        <returns><see langword="true" /> if the collection contains a specific key and value; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the collection contains a specific key and value; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +443,8 @@ End Module
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -483,7 +485,8 @@ End Module
       <Docs>
         <param name="item">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure that represents the key and value to remove from the collection.</param>
         <summary>Removes a key and value from the collection.</summary>
-        <returns><see langword="true" /> if the key and value are successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the key and value are not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
+        <returns>
+          <see langword="true" /> if the key and value are successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if the key and value are not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -571,7 +574,8 @@ End Module
       <Docs>
         <param name="key">The key to locate in the dictionary.</param>
         <summary>Determines whether the dictionary contains the specified key.</summary>
-        <returns><see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the dictionary contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -692,7 +696,8 @@ End Module
       <Docs>
         <param name="key">The key of the element to remove.</param>
         <summary>Removes the element that has the specified key from the <see cref="T:System.Collections.IDictionary" />.</summary>
-        <returns><see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
+        <returns>
+          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -737,7 +742,8 @@ End Module
         <param name="key">The key of the value to get.</param>
         <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, contains the default value for the type of the <paramref name="value" /> parameter. This parameter is passed uninitialized.</param>
         <summary>Gets the value associated with the specified key.</summary>
-        <returns><see langword="true" /> if the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the object that implements <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -880,6 +886,7 @@ End Module
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>

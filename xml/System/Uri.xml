@@ -3075,7 +3075,8 @@ If you used an escaped string to construct this instance (for example, "http://[
         <param name="uriString">The string used to attempt to construct a <see cref="T:System.Uri" />.</param>
         <param name="uriKind">The type of the <see cref="T:System.Uri" /> in <paramref name="uriString" />.</param>
         <summary>Indicates whether the string is well-formed by attempting to construct a URI with the string and ensures that the string does not require further escaping.</summary>
-        <returns><see langword="true" /> if the string was well-formed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the string was well-formed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

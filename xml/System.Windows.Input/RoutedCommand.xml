@@ -247,6 +247,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ CanExecuteChanged;" />
       <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Windows.Input.ICommand.CanExecuteChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -440,6 +443,9 @@
       <MemberSignature Language="VB.NET" Value="Function CanExecute (parameter As Object) As Boolean Implements ICommand.CanExecute" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Input.ICommand.CanExecute(System::Object ^ parameter) = System::Windows::Input::ICommand::CanExecute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.CanExecute(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -479,6 +485,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Execute (parameter As Object) Implements ICommand.Execute" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Input.ICommand.Execute(System::Object ^ parameter) = System::Windows::Input::ICommand::Execute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.Execute(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

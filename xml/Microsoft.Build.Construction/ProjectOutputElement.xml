@@ -40,7 +40,8 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether this output element represents an output item, as opposed to an output property.</summary>
-        <value><see langword="true" /> if this output element represents an output item; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this output element represents an output item; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,7 +62,8 @@
       </ReturnValue>
       <Docs>
         <summary>Determines whether this output element represents an output property, as opposed to an output item.</summary>
-        <value><see langword="true" /> if this output element represents an output property; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if this output element represents an output property; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -59,7 +59,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.BindUITypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, serviceProvider As IServiceProvider, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ serviceProvider, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj&#xA;override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="bindUITypeEditor.EditValue (context, serviceProvider, value)" />
+      <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="bindUITypeEditor.EditValue (context, serviceProvider, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -91,7 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.BindUITypeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (typeDescriptorContext As ITypeDescriptorContext) As UITypeEditorEditStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext);" />
-      <MemberSignature Language="F#" Value="abstract member GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle&#xA;override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="bindUITypeEditor.GetEditStyle typeDescriptorContext" />
+      <MemberSignature Language="F#" Value="override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="bindUITypeEditor.GetEditStyle typeDescriptorContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

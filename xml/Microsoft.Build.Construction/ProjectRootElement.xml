@@ -1599,7 +1599,8 @@ The caller must add the UsingTask element to the location of choice in the proje
       </ReturnValue>
       <Docs>
         <summary>Determines whether the project has been modified since it was last loaded or saved.</summary>
-        <value><see langword="true" /> if the project has been modified; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the project has been modified; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

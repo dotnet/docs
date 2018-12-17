@@ -49,7 +49,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehaviorConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (td As ITypeDescriptorContext, t As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ td, Type ^ t);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="repeatBehaviorConverter.CanConvertFrom (td, t)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="repeatBehaviorConverter.CanConvertFrom (td, t)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,7 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehaviorConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="repeatBehaviorConverter.CanConvertTo (context, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="repeatBehaviorConverter.CanConvertTo (context, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,7 +120,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext td, class System.Globalization.CultureInfo cultureInfo, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehaviorConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ td, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="repeatBehaviorConverter.ConvertFrom (td, cultureInfo, value)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="repeatBehaviorConverter.ConvertFrom (td, cultureInfo, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,7 +149,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo cultureInfo, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.RepeatBehaviorConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ value, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="repeatBehaviorConverter.ConvertTo (context, cultureInfo, value, destinationType)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="repeatBehaviorConverter.ConvertTo (context, cultureInfo, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

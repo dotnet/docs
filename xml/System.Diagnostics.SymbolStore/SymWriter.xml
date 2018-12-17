@@ -152,6 +152,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="symWriter.Close " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -182,6 +185,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseMethod();" />
       <MemberSignature Language="F#" Value="abstract member CloseMethod : unit -&gt; unit&#xA;override this.CloseMethod : unit -&gt; unit" Usage="symWriter.CloseMethod " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.CloseMethod</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -212,6 +218,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseNamespace();" />
       <MemberSignature Language="F#" Value="abstract member CloseNamespace : unit -&gt; unit&#xA;override this.CloseNamespace : unit -&gt; unit" Usage="symWriter.CloseNamespace " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.CloseNamespace</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -235,6 +244,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CloseScope(int endOffset);" />
       <MemberSignature Language="F#" Value="abstract member CloseScope : int -&gt; unit&#xA;override this.CloseScope : int -&gt; unit" Usage="symWriter.CloseScope endOffset" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.CloseScope(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -268,6 +280,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ DefineDocument(System::String ^ url, Guid language, Guid languageVendor, Guid documentType);" />
       <MemberSignature Language="F#" Value="abstract member DefineDocument : string * Guid * Guid * Guid -&gt; System.Diagnostics.SymbolStore.ISymbolDocumentWriter&#xA;override this.DefineDocument : string * Guid * Guid * Guid -&gt; System.Diagnostics.SymbolStore.ISymbolDocumentWriter" Usage="symWriter.DefineDocument (url, language, languageVendor, documentType)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineDocument(System.String,System.Guid,System.Guid,System.Guid)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -301,6 +316,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineField(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberSignature Language="F#" Value="abstract member DefineField : System.Diagnostics.SymbolStore.SymbolToken * string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit&#xA;override this.DefineField : System.Diagnostics.SymbolStore.SymbolToken * string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit" Usage="symWriter.DefineField (parent, name, attributes, signature, addrKind, addr1, addr2, addr3)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -342,6 +360,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineGlobalVariable(System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberSignature Language="F#" Value="abstract member DefineGlobalVariable : string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit&#xA;override this.DefineGlobalVariable : string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit" Usage="symWriter.DefineGlobalVariable (name, attributes, signature, addrKind, addr1, addr2, addr3)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineGlobalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -381,6 +402,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineLocalVariable(System::String ^ name, System::Reflection::FieldAttributes attributes, cli::array &lt;System::Byte&gt; ^ signature, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3, int startOffset, int endOffset);" />
       <MemberSignature Language="F#" Value="abstract member DefineLocalVariable : string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int * int * int -&gt; unit&#xA;override this.DefineLocalVariable : string * System.Reflection.FieldAttributes * byte[] * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int * int * int -&gt; unit" Usage="symWriter.DefineLocalVariable (name, attributes, signature, addrKind, addr1, addr2, addr3, startOffset, endOffset)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -432,6 +456,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineParameter(System::String ^ name, System::Reflection::ParameterAttributes attributes, int sequence, System::Diagnostics::SymbolStore::SymAddressKind addrKind, int addr1, int addr2, int addr3);" />
       <MemberSignature Language="F#" Value="abstract member DefineParameter : string * System.Reflection.ParameterAttributes * int * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit&#xA;override this.DefineParameter : string * System.Reflection.ParameterAttributes * int * System.Diagnostics.SymbolStore.SymAddressKind * int * int * int -&gt; unit" Usage="symWriter.DefineParameter (name, attributes, sequence, addrKind, addr1, addr2, addr3)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -471,6 +498,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DefineSequencePoints(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ document, cli::array &lt;int&gt; ^ offsets, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns, cli::array &lt;int&gt; ^ endLines, cli::array &lt;int&gt; ^ endColumns);" />
       <MemberSignature Language="F#" Value="abstract member DefineSequencePoints : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int[] * int[] * int[] * int[] * int[] -&gt; unit&#xA;override this.DefineSequencePoints : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int[] * int[] * int[] * int[] * int[] -&gt; unit" Usage="symWriter.DefineSequencePoints (document, offsets, lines, columns, endLines, endColumns)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineSequencePoints(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -626,6 +656,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(IntPtr emitter, System::String ^ filename, bool fFullBuild);" />
       <MemberSignature Language="F#" Value="abstract member Initialize : nativeint * string * bool -&gt; unit&#xA;override this.Initialize : nativeint * string * bool -&gt; unit" Usage="symWriter.Initialize (emitter, filename, fFullBuild)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.Initialize(System.IntPtr,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -693,6 +726,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OpenMethod(System::Diagnostics::SymbolStore::SymbolToken method);" />
       <MemberSignature Language="F#" Value="abstract member OpenMethod : System.Diagnostics.SymbolStore.SymbolToken -&gt; unit&#xA;override this.OpenMethod : System.Diagnostics.SymbolStore.SymbolToken -&gt; unit" Usage="symWriter.OpenMethod method" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.OpenMethod(System.Diagnostics.SymbolStore.SymbolToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -726,6 +762,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OpenNamespace(System::String ^ name);" />
       <MemberSignature Language="F#" Value="abstract member OpenNamespace : string -&gt; unit&#xA;override this.OpenNamespace : string -&gt; unit" Usage="symWriter.OpenNamespace name" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.OpenNamespace(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -759,6 +798,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int OpenScope(int startOffset);" />
       <MemberSignature Language="F#" Value="abstract member OpenScope : int -&gt; int&#xA;override this.OpenScope : int -&gt; int" Usage="symWriter.OpenScope startOffset" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.OpenScope(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -795,6 +837,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetMethodSourceRange(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ startDoc, int startLine, int startColumn, System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ endDoc, int endLine, int endColumn);" />
       <MemberSignature Language="F#" Value="abstract member SetMethodSourceRange : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int * System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int -&gt; unit&#xA;override this.SetMethodSourceRange : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int * System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int -&gt; unit" Usage="symWriter.SetMethodSourceRange (startDoc, startLine, startColumn, endDoc, endLine, endColumn)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.SetMethodSourceRange(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -832,6 +877,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetScopeRange(int scopeID, int startOffset, int endOffset);" />
       <MemberSignature Language="F#" Value="abstract member SetScopeRange : int * int * int -&gt; unit&#xA;override this.SetScopeRange : int * int * int -&gt; unit" Usage="symWriter.SetScopeRange (scopeID, startOffset, endOffset)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.SetScopeRange(System.Int32,System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -862,6 +910,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetSymAttribute(System::Diagnostics::SymbolStore::SymbolToken parent, System::String ^ name, cli::array &lt;System::Byte&gt; ^ data);" />
       <MemberSignature Language="F#" Value="abstract member SetSymAttribute : System.Diagnostics.SymbolStore.SymbolToken * string * byte[] -&gt; unit&#xA;override this.SetSymAttribute : System.Diagnostics.SymbolStore.SymbolToken * string * byte[] -&gt; unit" Usage="symWriter.SetSymAttribute (parent, name, data)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.SetSymAttribute(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Byte[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -899,6 +950,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetUnderlyingWriter(IntPtr underlyingWriter);" />
       <MemberSignature Language="F#" Value="abstract member SetUnderlyingWriter : nativeint -&gt; unit&#xA;override this.SetUnderlyingWriter : nativeint -&gt; unit" Usage="symWriter.SetUnderlyingWriter underlyingWriter" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.SetUnderlyingWriter(System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -933,6 +987,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetUserEntryPoint(System::Diagnostics::SymbolStore::SymbolToken entryMethod);" />
       <MemberSignature Language="F#" Value="abstract member SetUserEntryPoint : System.Diagnostics.SymbolStore.SymbolToken -&gt; unit&#xA;override this.SetUserEntryPoint : System.Diagnostics.SymbolStore.SymbolToken -&gt; unit" Usage="symWriter.SetUserEntryPoint entryMethod" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.SetUserEntryPoint(System.Diagnostics.SymbolStore.SymbolToken)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -966,6 +1023,9 @@ Use the <xref:System.Diagnostics.SymbolStore.SymWriter.Finalize> method to relea
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UsingNamespace(System::String ^ fullName);" />
       <MemberSignature Language="F#" Value="abstract member UsingNamespace : string -&gt; unit&#xA;override this.UsingNamespace : string -&gt; unit" Usage="symWriter.UsingNamespace fullName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.SymbolStore.ISymbolWriter.UsingNamespace(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

@@ -385,7 +385,8 @@
       <Parameters />
       <Docs>
         <summary>Builds the default targets of the project with loggers of the project collection.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,7 +416,8 @@
       <Docs>
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <summary>Builds the default targets of the project with the given loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -454,7 +456,8 @@
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <summary>Builds the default targets of the project with the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -493,7 +496,8 @@
         <param name="target">The target to build. May be null.</param>
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <summary>Builds the given target of the project with the given loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -532,7 +536,8 @@
         <param name="targets">The targets to build. May be null.</param>
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <summary>Builds the given targets of the project with the given loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -568,7 +573,8 @@
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <summary>Builds the given target of the project with the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -609,7 +615,8 @@
         <param name="loggers">Enumerated list of loggers to use for building targets.</param>
         <param name="targetOutputs">Outputs of target builds.</param>
         <summary>Build a list of targets with specified loggers. Targets may be null. Loggers may be null.</summary>
-        <returns><see langword="true" /> on success, false on failure.</returns>
+        <returns>
+          <see langword="true" /> on success, false on failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -645,7 +652,8 @@
         <param name="loggers">The loggers to use for the build. May be null.</param>
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <summary>Builds the given targets of the project with the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -688,7 +696,8 @@
         <param name="remoteLoggers">The remote loggers to use for the build. May be null.</param>
         <param name="targetOutputs">The target outputs.</param>
         <summary>Builds the given targets with the given target outputs and with the given loggers and remote loggers.</summary>
-        <returns><see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the build succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -847,7 +856,8 @@
       <Docs>
         <param name="condition">The string to be expanded.</param>
         <summary>Evaluates the provided string as a condition by expanding items and properties, using the current items and properties available, then doing a logical evaluation.</summary>
-        <returns><see langword="true" /> if the string evaluates to true; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the string evaluates to true; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1298,7 +1308,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the project instance is immutable. This flag is set permanently when the instance is created.</summary>
-        <value><see langword="true" /> if the project instance is immutable; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the project instance is immutable; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1451,7 +1462,8 @@
       <Docs>
         <param name="item">The item to be removed.</param>
         <summary>Removes an item from the project, if present. Returns true if it was present, false otherwise.</summary>
-        <returns><see langword="true" /> if the item was present before removal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the item was present before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1476,7 +1488,8 @@
       <Docs>
         <param name="name">The name of the property to be removed.</param>
         <summary>Removes a property with the given name. Returns true if the property had a value (possibly empty string), otherwise false.</summary>
-        <returns><see langword="true" /> if the property had a value (possibly an empty string) before removal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the property had a value (possibly an empty string) before removal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

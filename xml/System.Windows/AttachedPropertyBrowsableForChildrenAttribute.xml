@@ -86,7 +86,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
-      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="attachedPropertyBrowsableForChildrenAttribute.Equals obj" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="attachedPropertyBrowsableForChildrenAttribute.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,7 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="attachedPropertyBrowsableForChildrenAttribute.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="attachedPropertyBrowsableForChildrenAttribute.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

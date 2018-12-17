@@ -1,9 +1,9 @@
 ﻿<Type Name="AnnotationResource" FullName="System.Windows.Annotations.AnnotationResource">
-  <TypeSignature Language="C#" Value="public sealed class AnnotationResource : System.Xml.Serialization.IXmlSerializable" />
+  <TypeSignature Language="C#" Value="public sealed class AnnotationResource : System.ComponentModel.INotifyPropertyChanged, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationResource extends System.Object implements class System.ComponentModel.INotifyPropertyChanged, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationResource" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnnotationResource&#xA;Implements IXmlSerializable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationResource sealed : System::Xml::Serialization::IXmlSerializable" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnnotationResource&#xA;Implements INotifyPropertyChanged, IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationResource sealed : System::ComponentModel::INotifyPropertyChanged, System::Xml::Serialization::IXmlSerializable" />
   <TypeSignature Language="F#" Value="type AnnotationResource = class&#xA;    interface IXmlSerializable&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
@@ -330,6 +330,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>

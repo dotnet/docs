@@ -91,7 +91,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTypeDescriptor (objectType As Type, instance As Object) As ICustomTypeDescriptor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::ICustomTypeDescriptor ^ GetTypeDescriptor(Type ^ objectType, System::Object ^ instance);" />
-      <MemberSignature Language="F#" Value="abstract member GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor&#xA;override this.GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="associatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor (objectType, instance)" />
+      <MemberSignature Language="F#" Value="override this.GetTypeDescriptor : Type * obj -&gt; System.ComponentModel.ICustomTypeDescriptor" Usage="associatedMetadataTypeTypeDescriptionProvider.GetTypeDescriptor (objectType, instance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

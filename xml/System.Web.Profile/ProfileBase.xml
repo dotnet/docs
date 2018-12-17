@@ -486,7 +486,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileBase.Initialize(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize (username As String, isAuthenticated As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::String ^ username, bool isAuthenticated);" />
-      <MemberSignature Language="F#" Value="member this.Initialize : string * bool -&gt; unit" Usage="profileBase.Initialize (username, isAuthenticated)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * bool -&gt; unit" Usage="profileBase.Initialize (username, isAuthenticated)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -759,7 +759,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileBase.Save" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Save();" />
-      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit&#xA;override this.Save : unit -&gt; unit" Usage="profileBase.Save " />
+      <MemberSignature Language="F#" Value="override this.Save : unit -&gt; unit" Usage="profileBase.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

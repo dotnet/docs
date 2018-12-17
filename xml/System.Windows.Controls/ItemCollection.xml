@@ -1,9 +1,9 @@
 ﻿<Type Name="ItemCollection" FullName="System.Windows.Controls.ItemCollection">
-  <TypeSignature Language="C#" Value="public sealed class ItemCollection : System.Windows.Data.CollectionView, System.Collections.IList, System.ComponentModel.ICollectionViewLiveShaping, System.ComponentModel.IEditableCollectionView, System.ComponentModel.IEditableCollectionViewAddNewItem, System.ComponentModel.IItemProperties, System.Windows.IWeakEventListener" />
+  <TypeSignature Language="C#" Value="public sealed class ItemCollection : System.Windows.Data.CollectionView, System.Collections.IList, System.ComponentModel.ICollectionViewLiveShaping, System.ComponentModel.IEditableCollectionViewAddNewItem, System.ComponentModel.IItemProperties, System.Windows.IWeakEventListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ItemCollection extends System.Windows.Data.CollectionView implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.ICollectionViewLiveShaping, class System.ComponentModel.IEditableCollectionView, class System.ComponentModel.IEditableCollectionViewAddNewItem, class System.ComponentModel.IItemProperties, class System.Windows.IWeakEventListener" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemCollection" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ItemCollection&#xA;Inherits CollectionView&#xA;Implements ICollectionViewLiveShaping, IEditableCollectionView, IEditableCollectionViewAddNewItem, IItemProperties, IList, IWeakEventListener" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ItemCollection sealed : System::Windows::Data::CollectionView, System::Collections::IList, System::ComponentModel::ICollectionViewLiveShaping, System::ComponentModel::IEditableCollectionView, System::ComponentModel::IEditableCollectionViewAddNewItem, System::ComponentModel::IItemProperties, System::Windows::IWeakEventListener" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ItemCollection&#xA;Inherits CollectionView&#xA;Implements ICollectionViewLiveShaping, IEditableCollectionViewAddNewItem, IItemProperties, IList, IWeakEventListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemCollection sealed : System::Windows::Data::CollectionView, System::Collections::IList, System::ComponentModel::ICollectionViewLiveShaping, System::ComponentModel::IEditableCollectionViewAddNewItem, System::ComponentModel::IItemProperties, System::Windows::IWeakEventListener" />
   <TypeSignature Language="F#" Value="type ItemCollection = class&#xA;    inherit CollectionView&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IEditableCollectionViewAddNewItem&#xA;    interface IEditableCollectionView&#xA;    interface ICollectionViewLiveShaping&#xA;    interface IItemProperties&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +123,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveFiltering { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanChangeLiveFiltering : bool" Usage="System.Windows.Controls.ItemCollection.CanChangeLiveFiltering" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveFiltering</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -145,6 +148,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveGrouping { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanChangeLiveGrouping : bool" Usage="System.Windows.Controls.ItemCollection.CanChangeLiveGrouping" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveGrouping</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -167,6 +173,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanChangeLiveSorting { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanChangeLiveSorting : bool" Usage="System.Windows.Controls.ItemCollection.CanChangeLiveSorting" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.CanChangeLiveSorting</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -779,6 +788,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveFiltering { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberSignature Language="F#" Value="member this.IsLiveFiltering : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Controls.ItemCollection.IsLiveFiltering" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveFiltering</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -801,6 +813,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveGrouping { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberSignature Language="F#" Value="member this.IsLiveGrouping : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Controls.ItemCollection.IsLiveGrouping" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveGrouping</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -823,6 +838,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsLiveSorting { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberSignature Language="F#" Value="member this.IsLiveSorting : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Controls.ItemCollection.IsLiveSorting" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.IsLiveSorting</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -876,6 +894,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveFilteringProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LiveFilteringProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Controls.ItemCollection.LiveFilteringProperties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.LiveFilteringProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -897,6 +918,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveGroupingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LiveGroupingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Controls.ItemCollection.LiveGroupingProperties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.LiveGroupingProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -918,6 +942,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ LiveSortingProperties { System::Collections::ObjectModel::ObservableCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.LiveSortingProperties : System.Collections.ObjectModel.ObservableCollection&lt;string&gt;" Usage="System.Windows.Controls.ItemCollection.LiveSortingProperties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionViewLiveShaping.LiveSortingProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1414,6 +1441,9 @@
       <MemberSignature Language="VB.NET" Value="Function AddNew () As Object Implements IEditableCollectionView.AddNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.IEditableCollectionView.AddNew() = System::ComponentModel::IEditableCollectionView::AddNew;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionView.AddNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1444,6 +1474,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::CanAddNew { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CanAddNew" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.CanAddNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1474,6 +1507,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::CanCancelEdit { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CanCancelEdit" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.CanCancelEdit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1503,6 +1539,9 @@
       <MemberSignature Language="VB.NET" Value="Sub CancelEdit () Implements IEditableCollectionView.CancelEdit" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IEditableCollectionView.CancelEdit() = System::ComponentModel::IEditableCollectionView::CancelEdit;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionView.CancelEdit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1531,6 +1570,9 @@
       <MemberSignature Language="VB.NET" Value="Sub CancelNew () Implements IEditableCollectionView.CancelNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IEditableCollectionView.CancelNew() = System::ComponentModel::IEditableCollectionView::CancelNew;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionView.CancelNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1560,6 +1602,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::CanRemove { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CanRemove" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.CanRemove</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1589,6 +1634,9 @@
       <MemberSignature Language="VB.NET" Value="Sub CommitEdit () Implements IEditableCollectionView.CommitEdit" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IEditableCollectionView.CommitEdit() = System::ComponentModel::IEditableCollectionView::CommitEdit;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionView.CommitEdit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1617,6 +1665,9 @@
       <MemberSignature Language="VB.NET" Value="Sub CommitNew () Implements IEditableCollectionView.CommitNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IEditableCollectionView.CommitNew() = System::ComponentModel::IEditableCollectionView::CommitNew;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionView.CommitNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1646,6 +1697,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::ComponentModel::IEditableCollectionView::CurrentAddItem { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CurrentAddItem" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.CurrentAddItem</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1675,6 +1729,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::ComponentModel::IEditableCollectionView::CurrentEditItem { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.CurrentEditItem" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.CurrentEditItem</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1703,6 +1760,9 @@
       <MemberSignature Language="VB.NET" Value="Sub EditItem (item As Object) Implements IEditableCollectionView.EditItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IEditableCollectionView.EditItem(System::Object ^ item) = System::ComponentModel::IEditableCollectionView::EditItem;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionView.EditItem(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1735,6 +1795,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::IsAddingNew { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.IsAddingNew" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.IsAddingNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1765,6 +1828,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionView::IsEditingItem { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.IsEditingItem" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.IsEditingItem</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1795,6 +1861,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::NewItemPlaceholderPosition System::ComponentModel::IEditableCollectionView::NewItemPlaceholderPosition { System::ComponentModel::NewItemPlaceholderPosition get(); void set(System::ComponentModel::NewItemPlaceholderPosition value); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionView.NewItemPlaceholderPosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1891,6 +1960,9 @@
       <MemberSignature Language="VB.NET" Value="Function AddNewItem (newItem As Object) As Object Implements IEditableCollectionViewAddNewItem.AddNewItem" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem(System::Object ^ newItem) = System::ComponentModel::IEditableCollectionViewAddNewItem::AddNewItem;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IEditableCollectionViewAddNewItem.AddNewItem(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1923,6 +1995,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IEditableCollectionViewAddNewItem::CanAddNewItem { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IEditableCollectionViewAddNewItem.CanAddNewItem</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1952,6 +2027,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ System::ComponentModel::IItemProperties::ItemProperties { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::ComponentModel::ItemPropertyInfo ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IItemProperties.ItemProperties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IItemProperties.ItemProperties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1980,6 +2058,9 @@
       <MemberSignature Language="VB.NET" Value="Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean Implements IWeakEventListener.ReceiveWeakEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.IWeakEventListener.ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e) = System::Windows::IWeakEventListener::ReceiveWeakEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

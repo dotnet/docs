@@ -872,7 +872,8 @@
       <Docs>
         <param name="value">The object to locate in the collection.</param>
         <summary>Checks whether the specified object exists in the collection.</summary>
-        <returns><see langword="true" /> if the object is located in the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the object is located in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not an object of the type contained in the collection.</exception>

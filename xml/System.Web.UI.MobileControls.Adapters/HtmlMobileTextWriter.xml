@@ -703,7 +703,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (c As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char c);" />
-      <MemberSignature Language="F#" Value="abstract member Write : char -&gt; unit&#xA;override this.Write : char -&gt; unit" Usage="htmlMobileTextWriter.Write c" />
+      <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="htmlMobileTextWriter.Write c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -729,7 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ text);" />
-      <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit&#xA;override this.Write : string -&gt; unit" Usage="htmlMobileTextWriter.Write text" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="htmlMobileTextWriter.Write text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -755,7 +755,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteBeginTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBeginTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBeginTag(System::String ^ tag);" />
-      <MemberSignature Language="F#" Value="abstract member WriteBeginTag : string -&gt; unit&#xA;override this.WriteBeginTag : string -&gt; unit" Usage="htmlMobileTextWriter.WriteBeginTag tag" />
+      <MemberSignature Language="F#" Value="override this.WriteBeginTag : string -&gt; unit" Usage="htmlMobileTextWriter.WriteBeginTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -781,7 +781,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteBreak" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteBreak ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBreak();" />
-      <MemberSignature Language="F#" Value="member this.WriteBreak : unit -&gt; unit" Usage="htmlMobileTextWriter.WriteBreak " />
+      <MemberSignature Language="F#" Value="override this.WriteBreak : unit -&gt; unit" Usage="htmlMobileTextWriter.WriteBreak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -806,7 +806,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteEncodedText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
-      <MemberSignature Language="F#" Value="abstract member WriteEncodedText : string -&gt; unit&#xA;override this.WriteEncodedText : string -&gt; unit" Usage="htmlMobileTextWriter.WriteEncodedText text" />
+      <MemberSignature Language="F#" Value="override this.WriteEncodedText : string -&gt; unit" Usage="htmlMobileTextWriter.WriteEncodedText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -832,7 +832,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteFullBeginTag(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteFullBeginTag (tag As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteFullBeginTag(System::String ^ tag);" />
-      <MemberSignature Language="F#" Value="abstract member WriteFullBeginTag : string -&gt; unit&#xA;override this.WriteFullBeginTag : string -&gt; unit" Usage="htmlMobileTextWriter.WriteFullBeginTag tag" />
+      <MemberSignature Language="F#" Value="override this.WriteFullBeginTag : string -&gt; unit" Usage="htmlMobileTextWriter.WriteFullBeginTag tag" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -895,7 +895,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter.WriteLine(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ text);" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : string -&gt; unit&#xA;override this.WriteLine : string -&gt; unit" Usage="htmlMobileTextWriter.WriteLine text" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="htmlMobileTextWriter.WriteLine text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

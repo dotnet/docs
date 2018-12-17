@@ -16,7 +16,7 @@
   <Docs>
     <summary>Provides a Windows Communication Foundation (WCF) service behavior that provides a health endpoint.</summary>
     <remarks>
-          <format type="text/markdown"><![CDATA[  
+      <format type="text/markdown"><![CDATA[  
 
 ## Remarks
 
@@ -66,7 +66,7 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
     host.Description.Behaviors.Add(healthBehavior);
     ```
 
-       ]]></format>    
+       ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -112,7 +112,8 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <param name="isXml">Defines the type of <see langWord="ContentType" /> header to write to the message. If <see langword="true" />, the <see langWord="ContentType" /> is <see langword="text/xml" /> content type; otherwise, the <see langWord="ContentType" /> is <see langword="text/sml" />. </param>
         <summary>Sets the content type and the HTTP status code for the response message.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="message" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="message" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EnsureHttpStatusCode">
@@ -136,7 +137,8 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
       <Docs>
         <param name="code">The HTTP status code.</param>
         <summary>Ensure that the HTTP status code is within the range of 200 and 599, inclusive.</summary>
-        <returns><see langword="true" /> if the HTTP status code is within the range of 200 to 599, inclusive; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the HTTP status code is within the range of 200 to 599, inclusive; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +167,8 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <summary>Parses the query string fields and returns its defined HTTP response code.</summary>
         <returns>The HTTP response code.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetServiceHealthSections">
@@ -191,7 +194,8 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <summary>Gets a collection of the <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> objects defined in the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" />.  </summary>
         <returns>A collection of the <see cref="T:System.ServiceModel.Description.ServiceHealthSection" /> objects defined in the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetXmlDocument">
@@ -217,7 +221,8 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <summary>Serializes the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> object associated with the specified <paramref name="serviceHost" /> and returns it in XML format.</summary>
         <returns>An XML document that corresponds to the serialized <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> object.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HandleHealthRequest">
@@ -247,14 +252,15 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <param name="queries">An array containing the field/value pairs of the query string.</param>
         <param name="replyMessage">When the method returns, the response message of the health behavior. This message has a content type of <see langword="text/html" /> or <see langword="text/xml" /> , depending on whether the request was for XML or HTML. </param>
         <summary>Returns the response message to a specified request.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 This method is invoked by the <xref:System.ServiceModel.Description.ServiceHealthBehaviorBase> instance and is reponsible for crafting the response message to the health endpoint.
 
          ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="serviceHost" /> is <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHost" /> is <see langword="null" />.
 
 -or-
 
@@ -314,15 +320,17 @@ This method is invoked by the <xref:System.ServiceModel.Description.ServiceHealt
         <param name="defaultValue">The value to be assigned to the <paramName name="result" /> argument if the parsing operation fails. </param>
         <param name="result">When the method returns, the value of the parsed Boolean argument.</param>
         <summary>Attempts to parse a Boolean query string parameter and returns a value that indicates whether the parsing operation succeeded.</summary>
-        <returns><see langword="true" /> if the parsing operation succeeded; otherwise, <see langword="false" />.</returns>
-        <remarks>  
+        <returns>
+          <see langword="true" /> if the parsing operation succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The method returns `true` if the value of the field was successfully parsed by the <xref:System.Boolean.TryParse%2A?displayProperty=nameWithType> method.
 
          ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="parameterName" /> is <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameterName" /> is <see langword="null" />.
         
 -or-
 
@@ -354,12 +362,14 @@ The method returns `true` if the value of the field was successfully parsed by t
       <Docs>
         <param name="parameterName">The name of the parameter whose value the method attempts to parse.</param>
         <param name="parameter">The field/value pair of the query string.</param>
-        <param name="defaultValue">The value to assign to the <paramName name="result" /> argument if the specified HTTP status code in the query string is not valid.</param>
+        <param name="defaultErrorCode">To be added.</param>
         <param name="result">When the method returns, the value of the parsed HTTP status code argument.</param>
         <summary>Attempts to parse the HTTP status code of a query string variable and returns a value that indicates whether the parsing operation succeeded.</summary>
-        <returns><see langword="true" /> if the parsing operation succeeded; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the parsing operation succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="parameterName" /> is <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameterName" /> is <see langword="null" />.
         
 -or-
 

@@ -118,7 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Advanced.SchemaImporterExtensionCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
-      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="schemaImporterExtensionCollection.Clear " />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="schemaImporterExtensionCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

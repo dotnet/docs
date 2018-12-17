@@ -311,7 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionWrapper.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
-      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="httpFileCollectionWrapper.GetObjectData (info, context)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="httpFileCollectionWrapper.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -461,7 +461,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpFileCollectionWrapper.OnDeserialization(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnDeserialization (sender As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnDeserialization(System::Object ^ sender);" />
-      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="httpFileCollectionWrapper.OnDeserialization sender" />
+      <MemberSignature Language="F#" Value="override this.OnDeserialization : obj -&gt; unit" Usage="httpFileCollectionWrapper.OnDeserialization sender" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

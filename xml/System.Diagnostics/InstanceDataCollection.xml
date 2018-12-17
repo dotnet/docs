@@ -133,7 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.CopyTo(System.Diagnostics.InstanceData[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (instances As InstanceData(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Diagnostics::InstanceData ^&gt; ^ instances, int index);" />
-      <MemberSignature Language="F#" Value="member this.CopyTo : System.Diagnostics.InstanceData[] * int -&gt; unit" Usage="instanceDataCollection.CopyTo (instances, index)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Diagnostics.InstanceData[] * int -&gt; unit" Usage="instanceDataCollection.CopyTo (instances, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,9 +1,9 @@
 ﻿<Type Name="GlobalScope" FullName="Microsoft.JScript.GlobalScope">
-  <TypeSignature Language="C#" Value="public class GlobalScope : Microsoft.JScript.ActivationObject, System.Reflection.IReflect, System.Runtime.InteropServices.Expando.IExpando" />
+  <TypeSignature Language="C#" Value="public class GlobalScope : Microsoft.JScript.ActivationObject, System.Runtime.InteropServices.Expando.IExpando" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlobalScope extends Microsoft.JScript.ActivationObject implements class System.Reflection.IReflect, class System.Runtime.InteropServices.Expando.IExpando" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.GlobalScope" />
-  <TypeSignature Language="VB.NET" Value="Public Class GlobalScope&#xA;Inherits ActivationObject&#xA;Implements IExpando, IReflect" />
-  <TypeSignature Language="C++ CLI" Value="public ref class GlobalScope : Microsoft::JScript::ActivationObject, System::Reflection::IReflect, System::Runtime::InteropServices::Expando::IExpando" />
+  <TypeSignature Language="VB.NET" Value="Public Class GlobalScope&#xA;Inherits ActivationObject&#xA;Implements IExpando" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GlobalScope : Microsoft::JScript::ActivationObject, System::Runtime::InteropServices::Expando::IExpando" />
   <TypeSignature Language="F#" Value="type GlobalScope = class&#xA;    inherit ActivationObject&#xA;    interface IExpando&#xA;    interface IReflect" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -72,6 +72,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ AddField(System::String ^ name);" />
       <MemberSignature Language="F#" Value="abstract member AddField : string -&gt; System.Reflection.FieldInfo&#xA;override this.AddField : string -&gt; System.Reflection.FieldInfo" Usage="globalScope.AddField name" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.AddField(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
@@ -399,6 +402,9 @@
       <MemberSignature Language="VB.NET" Value="Function AddMethod (name As String, method As Delegate) As MethodInfo Implements IExpando.AddMethod" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Reflection::MethodInfo ^ System.Runtime.InteropServices.Expando.IExpando.AddMethod(System::String ^ name, Delegate ^ method) = System::Runtime::InteropServices::Expando::IExpando::AddMethod;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.AddMethod(System.String,System.Delegate)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
@@ -429,6 +435,9 @@
       <MemberSignature Language="VB.NET" Value="Function AddProperty (name As String) As PropertyInfo Implements IExpando.AddProperty" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Reflection::PropertyInfo ^ System.Runtime.InteropServices.Expando.IExpando.AddProperty(System::String ^ name) = System::Runtime::InteropServices::Expando::IExpando::AddProperty;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.AddProperty(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>
@@ -457,6 +466,9 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveMember (m As MemberInfo) Implements IExpando.RemoveMember" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System::Reflection::MemberInfo ^ m) = System::Runtime::InteropServices::Expando::IExpando::RemoveMember;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.Expando.IExpando.RemoveMember(System.Reflection.MemberInfo)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>7.0.5000.0</AssemblyVersion>

@@ -172,7 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
-      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="xamlLoadPermission.Copy " />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="xamlLoadPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -201,7 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.FromXml(System.Security.SecurityElement)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (elem As SecurityElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ elem);" />
-      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="xamlLoadPermission.FromXml elem" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="xamlLoadPermission.FromXml elem" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -261,7 +261,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="xamlLoadPermission.Intersect target" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="xamlLoadPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -295,7 +295,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="xamlLoadPermission.IsSubsetOf target" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="xamlLoadPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -334,6 +334,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="xamlLoadPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -355,7 +358,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
-      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="xamlLoadPermission.ToXml " />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="xamlLoadPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -377,7 +380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Union(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
-      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="xamlLoadPermission.Union other" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="xamlLoadPermission.Union other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

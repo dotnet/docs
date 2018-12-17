@@ -1041,7 +1041,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Merge (baseMetadata As PropertyMetadata, dp As DependencyProperty)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Merge(System::Windows::PropertyMetadata ^ baseMetadata, System::Windows::DependencyProperty ^ dp);" />
-      <MemberSignature Language="F#" Value="abstract member Merge : System.Windows.PropertyMetadata * System.Windows.DependencyProperty -&gt; unit&#xA;override this.Merge : System.Windows.PropertyMetadata * System.Windows.DependencyProperty -&gt; unit" Usage="frameworkPropertyMetadata.Merge (baseMetadata, dp)" />
+      <MemberSignature Language="F#" Value="override this.Merge : System.Windows.PropertyMetadata * System.Windows.DependencyProperty -&gt; unit" Usage="frameworkPropertyMetadata.Merge (baseMetadata, dp)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1087,7 +1087,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApply (dp As DependencyProperty, targetType As Type)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApply(System::Windows::DependencyProperty ^ dp, Type ^ targetType);" />
-      <MemberSignature Language="F#" Value="abstract member OnApply : System.Windows.DependencyProperty * Type -&gt; unit&#xA;override this.OnApply : System.Windows.DependencyProperty * Type -&gt; unit" Usage="frameworkPropertyMetadata.OnApply (dp, targetType)" />
+      <MemberSignature Language="F#" Value="override this.OnApply : System.Windows.DependencyProperty * Type -&gt; unit" Usage="frameworkPropertyMetadata.OnApply (dp, targetType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

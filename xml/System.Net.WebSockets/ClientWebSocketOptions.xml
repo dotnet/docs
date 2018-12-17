@@ -423,7 +423,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a <see cref="T:System.Boolean" /> value that indicates if default credentials should be used during WebSocket handshake.</summary>
-        <value><see langword="true" /> if default credentials should be used during WebSocket handshake; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if default credentials should be used during WebSocket handshake; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -102,7 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="doubleAnimationUsingPath.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="doubleAnimationUsingPath.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -245,7 +245,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimationUsingPath.OnChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
-      <MemberSignature Language="F#" Value="abstract member OnChanged : unit -&gt; unit&#xA;override this.OnChanged : unit -&gt; unit" Usage="doubleAnimationUsingPath.OnChanged " />
+      <MemberSignature Language="F#" Value="override this.OnChanged : unit -&gt; unit" Usage="doubleAnimationUsingPath.OnChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

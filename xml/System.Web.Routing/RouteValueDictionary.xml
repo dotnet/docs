@@ -402,12 +402,12 @@
       </Docs>
     </Member>
     <Member MemberName="Keys">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary.KeyCollection&lt;string,object&gt; Keys { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt;.KeyCollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2/KeyCollection&lt;string, object&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Keys" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary.KeyCollection(Of String, Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ Keys { System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.Dictionary.KeyCollection&lt;string, obj&gt;" Usage="System.Web.Routing.RouteValueDictionary.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary(Of String, Object).KeyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::KeyCollection ^ Keys { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::KeyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.Dictionary&lt;string, obj&gt;.KeyCollection" Usage="System.Web.Routing.RouteValueDictionary.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,7 +418,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.Dictionary+KeyCollection&lt;System.String,System.Object&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;+KeyCollection</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a collection that contains the keys in the dictionary.</summary>
@@ -519,7 +519,8 @@
       <Docs>
         <param name="item">The key and value pair to locate in the dictionary.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />.</summary>
-        <returns><see langword="true" /> if <paramref name="item" /> is in the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -578,7 +579,8 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
-        <value><see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -610,7 +612,8 @@
       <Docs>
         <param name="item">The key of the element to remove.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />.</summary>
-        <returns><see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the collection.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the collection.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -781,12 +784,12 @@
       </Docs>
     </Member>
     <Member MemberName="Values">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary.ValueCollection&lt;string,object&gt; Values { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt;.ValueCollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2/ValueCollection&lt;string, object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Values" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary.ValueCollection(Of String, Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ Values { System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.Dictionary.ValueCollection&lt;string, obj&gt;" Usage="System.Web.Routing.RouteValueDictionary.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary(Of String, Object).ValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::ValueCollection ^ Values { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::ValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.Dictionary&lt;string, obj&gt;.ValueCollection" Usage="System.Web.Routing.RouteValueDictionary.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -797,7 +800,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.Dictionary+ValueCollection&lt;System.String,System.Object&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;+ValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a collection that contains the values in the dictionary.</summary>

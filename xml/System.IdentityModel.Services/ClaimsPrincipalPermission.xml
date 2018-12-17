@@ -1,9 +1,9 @@
 ﻿<Type Name="ClaimsPrincipalPermission" FullName="System.IdentityModel.Services.ClaimsPrincipalPermission">
-  <TypeSignature Language="C#" Value="public sealed class ClaimsPrincipalPermission : System.Security.IPermission, System.Security.ISecurityEncodable, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="C#" Value="public sealed class ClaimsPrincipalPermission : System.Security.IPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ClaimsPrincipalPermission extends System.Object implements class System.Security.IPermission, class System.Security.ISecurityEncodable, class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ClaimsPrincipalPermission" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClaimsPrincipalPermission&#xA;Implements IPermission, ISecurityEncodable, IUnrestrictedPermission" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsPrincipalPermission sealed : System::Security::IPermission, System::Security::ISecurityEncodable, System::Security::Permissions::IUnrestrictedPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClaimsPrincipalPermission&#xA;Implements IPermission, IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClaimsPrincipalPermission sealed : System::Security::IPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <TypeSignature Language="F#" Value="type ClaimsPrincipalPermission = class&#xA;    interface IPermission&#xA;    interface ISecurityEncodable&#xA;    interface IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -135,9 +135,6 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="">
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2103:ReviewImperativeSecurity", Justification="It is expected that the runtime's behavior would rely on changing data")</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2103:ReviewImperativeSecurity", Justification="It is expected that the runtime’s behavior would rely on changing data")</AttributeName>
         </Attribute>
@@ -186,14 +183,14 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Copy();" />
       <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="claimsPrincipalPermission.Copy " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Copy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="">
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2103:ReviewImperativeSecurity", Justification="It is expected that the runtime's behavior would rely on changing data")</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2103:ReviewImperativeSecurity", Justification="It is expected that the runtime’s behavior would rely on changing data")</AttributeName>
         </Attribute>
@@ -216,6 +213,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Demand();" />
       <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit&#xA;override this.Demand : unit -&gt; unit" Usage="claimsPrincipalPermission.Demand " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Demand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -261,6 +261,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ element);" />
       <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="claimsPrincipalPermission.FromXml element" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -295,6 +298,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="claimsPrincipalPermission.Intersect target" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Intersect(System.Security.IPermission)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -327,6 +333,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="claimsPrincipalPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.IsSubsetOf(System.Security.IPermission)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -360,6 +369,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="claimsPrincipalPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -383,6 +395,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
       <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="claimsPrincipalPermission.ToXml " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -412,6 +427,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="claimsPrincipalPermission.Union target" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.IPermission.Union(System.Security.IPermission)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

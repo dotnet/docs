@@ -1347,7 +1347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentReader.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpiScaleInfo As DpiScale, newDpiScaleInfo As DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpiScaleInfo, System::Windows::DpiScale newDpiScaleInfo);" />
-      <MemberSignature Language="F#" Value="abstract member OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit&#xA;override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="flowDocumentReader.OnDpiChanged (oldDpiScaleInfo, newDpiScaleInfo)" />
+      <MemberSignature Language="F#" Value="override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="flowDocumentReader.OnDpiChanged (oldDpiScaleInfo, newDpiScaleInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

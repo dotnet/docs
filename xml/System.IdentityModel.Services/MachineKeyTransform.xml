@@ -41,7 +41,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.MachineKeyTransform.Decode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decode (encoded As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decode(cli::array &lt;System::Byte&gt; ^ encoded);" />
-      <MemberSignature Language="F#" Value="abstract member Decode : byte[] -&gt; byte[]&#xA;override this.Decode : byte[] -&gt; byte[]" Usage="machineKeyTransform.Decode encoded" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; byte[]" Usage="machineKeyTransform.Decode encoded" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -66,7 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.MachineKeyTransform.Encode(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encode (value As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encode(cli::array &lt;System::Byte&gt; ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member Encode : byte[] -&gt; byte[]&#xA;override this.Encode : byte[] -&gt; byte[]" Usage="machineKeyTransform.Encode value" />
+      <MemberSignature Language="F#" Value="override this.Encode : byte[] -&gt; byte[]" Usage="machineKeyTransform.Encode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

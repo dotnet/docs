@@ -1,9 +1,9 @@
 ﻿<Type Name="ListViewItem" FullName="System.Web.UI.WebControls.ListViewItem">
-  <TypeSignature Language="C#" Value="public class ListViewItem : System.Web.UI.Control, System.Web.UI.IDataItemContainer, System.Web.UI.INamingContainer" />
+  <TypeSignature Language="C#" Value="public class ListViewItem : System.Web.UI.Control, System.Web.UI.IDataItemContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewItem extends System.Web.UI.Control implements class System.Web.UI.IDataItemContainer, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewItem" />
-  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem&#xA;Inherits Control&#xA;Implements IDataItemContainer, INamingContainer" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ListViewItem : System::Web::UI::Control, System::Web::UI::IDataItemContainer, System::Web::UI::INamingContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem&#xA;Inherits Control&#xA;Implements IDataItemContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewItem : System::Web::UI::Control, System::Web::UI::IDataItemContainer" />
   <TypeSignature Language="F#" Value="type ListViewItem = class&#xA;    inherit Control&#xA;    interface INamingContainer&#xA;    interface IDataItemContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -149,6 +149,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.ListViewItem.DataItemIndex" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IDataItemContainer.DataItemIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -170,6 +173,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DisplayIndex { int get(); };" />
       <MemberSignature Language="F#" Value="member this.DisplayIndex : int" Usage="System.Web.UI.WebControls.ListViewItem.DisplayIndex" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IDataItemContainer.DisplayIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -241,7 +247,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnBubbleEvent : obj * EventArgs -&gt; bool&#xA;override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="listViewItem.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="listViewItem.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

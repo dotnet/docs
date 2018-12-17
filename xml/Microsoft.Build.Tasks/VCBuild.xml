@@ -144,7 +144,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the <c>VCBuild</c> task outputs only clean build outputs.</summary>
-        <value><see langword="true" /> if the <c>VCBuild</c> task outputs only clean build outputs; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <c>VCBuild</c> task outputs only clean build outputs; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -211,7 +212,8 @@
       <Parameters />
       <Docs>
         <summary>Executes the <c>VCBuild</c> task.</summary>
-        <returns><see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -327,7 +329,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the task performs a clean build of outputs before performing a build.</summary>
-        <value><see langword="true" /> if the task performs a clean build of outputs before performing a build; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the task performs a clean build of outputs before performing a build; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -438,7 +441,8 @@
       <Parameters />
       <Docs>
         <summary>Validates input parameters and logs errors or warnings, if any. Returns a value that indicates whether task execution should proceed.</summary>
-        <returns><see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

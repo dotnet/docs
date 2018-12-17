@@ -5091,11 +5091,11 @@ The following example parses an array of date strings by using the conventions o
         <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts a memory span that contains string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="provider" /> and <paramref name="styles" />.</returns>
-        <remarks>To be added.</remarks>  
+        <remarks>To be added.</remarks>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> does not contain a valid string representation of a date and time.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="styles" /> contains an invalid combination of <see cref="T:System.Globalization.DateTimeStyles" /> values. For example, both <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" /> and <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />.</exception>  
+          <paramref name="styles" /> contains an invalid combination of <see cref="T:System.Globalization.DateTimeStyles" /> values. For example, both <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" /> and <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5195,7 +5195,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <Docs>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent. The format of the string representation must match a specified format exactly or an exception is thrown.</summary>
         <altmember cref="Overload:System.DateTime.TryParseExact" />
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
@@ -7949,13 +7949,13 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <Docs>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
         <altmember cref="Overload:System.DateTime.Parse" />
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="TryParse">
@@ -8248,13 +8248,13 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </AssemblyInfo>
       <Docs>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent. The format of the string representation must match a specified format exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 [!INCLUDE[japanese-era-note](~/includes/calendar-era.md)]
 
          ]]></format>
-         </remarks>
+        </remarks>
         <altmember cref="Overload:System.DateTime.ParseExact" />
       </Docs>
     </MemberGroup>

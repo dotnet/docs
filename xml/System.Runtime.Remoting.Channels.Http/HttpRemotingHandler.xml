@@ -98,6 +98,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReusable { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.IsReusable" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -122,6 +125,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="httpRemotingHandler.ProcessRequest context" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

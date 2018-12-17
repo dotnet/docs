@@ -239,7 +239,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.GroupNameFromItem(System.Object,System.Int32,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GroupNameFromItem (item As Object, level As Integer, culture As CultureInfo) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GroupNameFromItem(System::Object ^ item, int level, System::Globalization::CultureInfo ^ culture);" />
-      <MemberSignature Language="F#" Value="abstract member GroupNameFromItem : obj * int * System.Globalization.CultureInfo -&gt; obj&#xA;override this.GroupNameFromItem : obj * int * System.Globalization.CultureInfo -&gt; obj" Usage="propertyGroupDescription.GroupNameFromItem (item, level, culture)" />
+      <MemberSignature Language="F#" Value="override this.GroupNameFromItem : obj * int * System.Globalization.CultureInfo -&gt; obj" Usage="propertyGroupDescription.GroupNameFromItem (item, level, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,7 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.NamesMatch(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NamesMatch (groupName As Object, itemName As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NamesMatch(System::Object ^ groupName, System::Object ^ itemName);" />
-      <MemberSignature Language="F#" Value="abstract member NamesMatch : obj * obj -&gt; bool&#xA;override this.NamesMatch : obj * obj -&gt; bool" Usage="propertyGroupDescription.NamesMatch (groupName, itemName)" />
+      <MemberSignature Language="F#" Value="override this.NamesMatch : obj * obj -&gt; bool" Usage="propertyGroupDescription.NamesMatch (groupName, itemName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

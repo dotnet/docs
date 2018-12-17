@@ -61,7 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
-      <MemberSignature Language="F#" Value="abstract member GetElementKey : System.Configuration.ConfigurationElement -&gt; obj&#xA;override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="contractTypeNameElementCollection.GetElementKey element" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="contractTypeNameElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

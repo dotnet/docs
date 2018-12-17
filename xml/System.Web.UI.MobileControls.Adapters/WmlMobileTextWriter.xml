@@ -1750,7 +1750,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteAttribute (attribute As String, value As String, encode As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAttribute(System::String ^ attribute, System::String ^ value, bool encode);" />
-      <MemberSignature Language="F#" Value="abstract member WriteAttribute : string * string * bool -&gt; unit&#xA;override this.WriteAttribute : string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.WriteAttribute (attribute, value, encode)" />
+      <MemberSignature Language="F#" Value="override this.WriteAttribute : string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.WriteAttribute (attribute, value, encode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1782,7 +1782,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteBreak" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteBreak ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteBreak();" />
-      <MemberSignature Language="F#" Value="member this.WriteBreak : unit -&gt; unit" Usage="wmlMobileTextWriter.WriteBreak " />
+      <MemberSignature Language="F#" Value="override this.WriteBreak : unit -&gt; unit" Usage="wmlMobileTextWriter.WriteBreak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1807,7 +1807,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
-      <MemberSignature Language="F#" Value="abstract member WriteEncodedText : string -&gt; unit&#xA;override this.WriteEncodedText : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedText text" />
+      <MemberSignature Language="F#" Value="override this.WriteEncodedText : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1834,7 +1834,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedUrl (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedUrl(System::String ^ url);" />
-      <MemberSignature Language="F#" Value="abstract member WriteEncodedUrl : string -&gt; unit&#xA;override this.WriteEncodedUrl : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedUrl url" />
+      <MemberSignature Language="F#" Value="override this.WriteEncodedUrl : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

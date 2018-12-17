@@ -104,16 +104,13 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute.CreatePermission" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
-      <MemberSignature Language="F#" Value="abstract member CreatePermission : unit -&gt; System.Security.IPermission&#xA;override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="claimsPrincipalPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="claimsPrincipalPermissionAttribute.CreatePermission " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="">
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2103:ReviewImperativeSecurity", Justification="It is expected that the runtime's behavior would rely on changing data")</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security", "CA2103:ReviewImperativeSecurity", Justification="It is expected that the runtime’s behavior would rely on changing data")</AttributeName>
         </Attribute>

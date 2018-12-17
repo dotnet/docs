@@ -25,7 +25,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageMetadata.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As ImageMetadata" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageMetadata ^ Clone();" />
-      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Media.ImageMetadata" Usage="imageMetadata.Clone " />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.ImageMetadata" Usage="imageMetadata.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

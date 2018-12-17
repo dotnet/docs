@@ -548,12 +548,7 @@
       <Member Id="F:Microsoft.Win32.RegistryHive.Users" />
     </Type>
     <Type Name="Microsoft.Win32.RegistryKey" Id="T:Microsoft.Win32.RegistryKey">
-      <Member Id="M:Microsoft.Win32.RegistryKey.Close" />
       <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions,System.Security.AccessControl.RegistrySecurity)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,System.Security.AccessControl.RegistrySecurity)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.CreateSubKey(System.String,System.Boolean,Microsoft.Win32.RegistryOptions)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.DeleteSubKey(System.String)" />
@@ -566,8 +561,6 @@
       <Member Id="M:Microsoft.Win32.RegistryKey.Flush" />
       <Member Id="M:Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.FromHandle(Microsoft.Win32.SafeHandles.SafeRegistryHandle,Microsoft.Win32.RegistryView)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.GetAccessControl" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.GetAccessControl(System.Security.AccessControl.AccessControlSections)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.GetSubKeyNames" />
       <Member Id="M:Microsoft.Win32.RegistryKey.GetValue(System.String)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.GetValue(System.String,System.Object)" />
@@ -578,11 +571,8 @@
       <Member Id="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.OpenRemoteBaseKey(Microsoft.Win32.RegistryHive,System.String,Microsoft.Win32.RegistryView)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,System.Security.AccessControl.RegistryRights)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Boolean)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.OpenSubKey(System.String,System.Security.AccessControl.RegistryRights)" />
-      <Member Id="M:Microsoft.Win32.RegistryKey.SetAccessControl(System.Security.AccessControl.RegistrySecurity)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.SetValue(System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
       <Member Id="M:Microsoft.Win32.RegistryKey.ToString" />
@@ -591,11 +581,6 @@
       <Member Id="P:Microsoft.Win32.RegistryKey.SubKeyCount" />
       <Member Id="P:Microsoft.Win32.RegistryKey.ValueCount" />
       <Member Id="P:Microsoft.Win32.RegistryKey.View" />
-    </Type>
-    <Type Name="Microsoft.Win32.RegistryKeyPermissionCheck" Id="T:Microsoft.Win32.RegistryKeyPermissionCheck">
-      <Member Id="F:Microsoft.Win32.RegistryKeyPermissionCheck.Default" />
-      <Member Id="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree" />
-      <Member Id="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree" />
     </Type>
     <Type Name="Microsoft.Win32.RegistryOptions" Id="T:Microsoft.Win32.RegistryOptions">
       <Member Id="F:Microsoft.Win32.RegistryOptions.None" />
@@ -661,7 +646,6 @@
       <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.#ctor(System.IntPtr,System.Runtime.InteropServices.SafeHandle)" />
       <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseHandle" />
       <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptHandle.ReleaseNativeHandle" />
-      <Member Id="P:Microsoft.Win32.SafeHandles.SafeNCryptHandle.IsInvalid" />
     </Type>
     <Type Name="Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle" Id="T:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle">
       <Member Id="M:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle.#ctor" />
@@ -1002,7 +986,6 @@
       <Member Id="M:System.ArraySegment`1.#ctor(`0[],System.Int32,System.Int32)" />
       <Member Id="M:System.ArraySegment`1.CopyTo(`0[])" />
       <Member Id="M:System.ArraySegment`1.CopyTo(`0[],System.Int32)" />
-      <Member Id="M:System.ArraySegment`1.CopyTo(`0[],System.Int32)" />
       <Member Id="M:System.ArraySegment`1.CopyTo(System.ArraySegment{`0})" />
       <Member Id="M:System.ArraySegment`1.Equals(System.ArraySegment{`0})" />
       <Member Id="M:System.ArraySegment`1.Equals(System.Object)" />
@@ -1150,38 +1133,18 @@
       <Member Id="M:System.BitConverter.Int64BitsToDouble(System.Int64)" />
       <Member Id="M:System.BitConverter.SingleToInt32Bits(System.Single)" />
       <Member Id="M:System.BitConverter.ToBoolean(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToBoolean(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToChar(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToChar(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToDouble(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToDouble(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToInt16(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToInt16(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToInt32(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToInt32(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToInt64(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToInt64(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToSingle(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToSingle(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToString(System.Byte[])" />
       <Member Id="M:System.BitConverter.ToString(System.Byte[],System.Int32)" />
       <Member Id="M:System.BitConverter.ToString(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.BitConverter.ToUInt16(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToUInt16(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToUInt32(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToUInt32(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.BitConverter.ToUInt64(System.Byte[],System.Int32)" />
-      <Member Id="M:System.BitConverter.ToUInt64(System.ReadOnlySpan{System.Byte})" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Boolean)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Char)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Double)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Int16)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Int32)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Int64)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.Single)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.UInt16)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.UInt32)" />
-      <Member Id="M:System.BitConverter.TryWriteBytes(System.Span{System.Byte},System.UInt64)" />
     </Type>
     <Type Name="System.Boolean" Id="T:System.Boolean">
       <Member Id="F:System.Boolean.FalseString" />
@@ -1192,7 +1155,6 @@
       <Member Id="M:System.Boolean.Equals(System.Object)" />
       <Member Id="M:System.Boolean.GetHashCode" />
       <Member Id="M:System.Boolean.GetTypeCode" />
-      <Member Id="M:System.Boolean.Parse(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Boolean.Parse(System.String)" />
       <Member Id="M:System.Boolean.System#IConvertible#ToBoolean(System.IFormatProvider)" />
       <Member Id="M:System.Boolean.System#IConvertible#ToByte(System.IFormatProvider)" />
@@ -1211,8 +1173,6 @@
       <Member Id="M:System.Boolean.System#IConvertible#ToUInt64(System.IFormatProvider)" />
       <Member Id="M:System.Boolean.ToString" />
       <Member Id="M:System.Boolean.ToString(System.IFormatProvider)" />
-      <Member Id="M:System.Boolean.TryFormat(System.Span{System.Char},System.Int32@)" />
-      <Member Id="M:System.Boolean.TryParse(System.ReadOnlySpan{System.Char},System.Boolean@)" />
       <Member Id="M:System.Boolean.TryParse(System.String,System.Boolean@)" />
     </Type>
     <Type Name="System.Buffer" Id="T:System.Buffer">
@@ -1232,7 +1192,6 @@
       <Member Id="M:System.Byte.Equals(System.Object)" />
       <Member Id="M:System.Byte.GetHashCode" />
       <Member Id="M:System.Byte.GetTypeCode" />
-      <Member Id="M:System.Byte.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Byte.Parse(System.String)" />
       <Member Id="M:System.Byte.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Byte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -1256,9 +1215,6 @@
       <Member Id="M:System.Byte.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Byte.ToString(System.String)" />
       <Member Id="M:System.Byte.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Byte.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Byte.TryParse(System.ReadOnlySpan{System.Char},System.Byte@)" />
-      <Member Id="M:System.Byte.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Byte@)" />
       <Member Id="M:System.Byte.TryParse(System.String,System.Byte@)" />
       <Member Id="M:System.Byte.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Byte@)" />
     </Type>
@@ -1659,7 +1615,6 @@
       <Member Id="M:System.Convert.ToBase64String(System.Byte[],System.Base64FormattingOptions)" />
       <Member Id="M:System.Convert.ToBase64String(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.Convert.ToBase64String(System.Byte[],System.Int32,System.Int32,System.Base64FormattingOptions)" />
-      <Member Id="M:System.Convert.ToBase64String(System.ReadOnlySpan{System.Byte},System.Base64FormattingOptions)" />
       <Member Id="M:System.Convert.ToBoolean(System.Boolean)" />
       <Member Id="M:System.Convert.ToBoolean(System.Byte)" />
       <Member Id="M:System.Convert.ToBoolean(System.Char)" />
@@ -1956,9 +1911,6 @@
       <Member Id="M:System.Convert.ToUInt64(System.UInt16)" />
       <Member Id="M:System.Convert.ToUInt64(System.UInt32)" />
       <Member Id="M:System.Convert.ToUInt64(System.UInt64)" />
-      <Member Id="M:System.Convert.TryFromBase64Chars(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Int32@)" />
-      <Member Id="M:System.Convert.TryFromBase64String(System.String,System.Span{System.Byte},System.Int32@)" />
-      <Member Id="M:System.Convert.TryToBase64Chars(System.ReadOnlySpan{System.Byte},System.Span{System.Char},System.Int32@,System.Base64FormattingOptions)" />
     </Type>
     <Type Name="System.Converter`2" Id="T:System.Converter`2" />
     <Type Name="System.DataMisalignedException" Id="T:System.DataMisalignedException">
@@ -1969,7 +1921,6 @@
     <Type Name="System.DateTime" Id="T:System.DateTime">
       <Member Id="F:System.DateTime.MaxValue" />
       <Member Id="F:System.DateTime.MinValue" />
-      <Member Id="F:System.DateTime.UnixEpoch" />
       <Member Id="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32)" />
       <Member Id="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
       <Member Id="M:System.DateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
@@ -1993,7 +1944,6 @@
       <Member Id="M:System.DateTime.Compare(System.DateTime,System.DateTime)" />
       <Member Id="M:System.DateTime.CompareTo(System.DateTime)" />
       <Member Id="M:System.DateTime.CompareTo(System.Object)" />
-      <Member Id="M:System.DateTime.CompareTo(System.Object)" />
       <Member Id="M:System.DateTime.DaysInMonth(System.Int32,System.Int32)" />
       <Member Id="M:System.DateTime.Equals(System.DateTime)" />
       <Member Id="M:System.DateTime.Equals(System.DateTime,System.DateTime)" />
@@ -2008,7 +1958,6 @@
       <Member Id="M:System.DateTime.GetDateTimeFormats(System.IFormatProvider)" />
       <Member Id="M:System.DateTime.GetHashCode" />
       <Member Id="M:System.DateTime.GetTypeCode" />
-      <Member Id="M:System.DateTime.GetTypeCode" />
       <Member Id="M:System.DateTime.IsDaylightSavingTime" />
       <Member Id="M:System.DateTime.IsLeapYear(System.Int32)" />
       <Member Id="M:System.DateTime.op_Addition(System.DateTime,System.TimeSpan)" />
@@ -2020,12 +1969,9 @@
       <Member Id="M:System.DateTime.op_LessThanOrEqual(System.DateTime,System.DateTime)" />
       <Member Id="M:System.DateTime.op_Subtraction(System.DateTime,System.DateTime)" />
       <Member Id="M:System.DateTime.op_Subtraction(System.DateTime,System.TimeSpan)" />
-      <Member Id="M:System.DateTime.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <Member Id="M:System.DateTime.Parse(System.String)" />
       <Member Id="M:System.DateTime.Parse(System.String,System.IFormatProvider)" />
       <Member Id="M:System.DateTime.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)" />
-      <Member Id="M:System.DateTime.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)" />
-      <Member Id="M:System.DateTime.ParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <Member Id="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)" />
       <Member Id="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <Member Id="M:System.DateTime.ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)" />
@@ -2064,13 +2010,8 @@
       <Member Id="M:System.DateTime.ToString(System.String)" />
       <Member Id="M:System.DateTime.ToString(System.String,System.IFormatProvider)" />
       <Member Id="M:System.DateTime.ToUniversalTime" />
-      <Member Id="M:System.DateTime.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.DateTime.TryParse(System.ReadOnlySpan{System.Char},System.DateTime@)" />
-      <Member Id="M:System.DateTime.TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <Member Id="M:System.DateTime.TryParse(System.String,System.DateTime@)" />
       <Member Id="M:System.DateTime.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
-      <Member Id="M:System.DateTime.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
-      <Member Id="M:System.DateTime.TryParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <Member Id="M:System.DateTime.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <Member Id="M:System.DateTime.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime@)" />
       <Member Id="P:System.DateTime.Date" />
@@ -2098,7 +2039,6 @@
     <Type Name="System.DateTimeOffset" Id="T:System.DateTimeOffset">
       <Member Id="F:System.DateTimeOffset.MaxValue" />
       <Member Id="F:System.DateTimeOffset.MinValue" />
-      <Member Id="F:System.DateTimeOffset.UnixEpoch" />
       <Member Id="M:System.DateTimeOffset.#ctor(System.DateTime)" />
       <Member Id="M:System.DateTimeOffset.#ctor(System.DateTime,System.TimeSpan)" />
       <Member Id="M:System.DateTimeOffset.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.TimeSpan)" />
@@ -2134,12 +2074,9 @@
       <Member Id="M:System.DateTimeOffset.op_LessThanOrEqual(System.DateTimeOffset,System.DateTimeOffset)" />
       <Member Id="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.DateTimeOffset)" />
       <Member Id="M:System.DateTimeOffset.op_Subtraction(System.DateTimeOffset,System.TimeSpan)" />
-      <Member Id="M:System.DateTimeOffset.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <Member Id="M:System.DateTimeOffset.Parse(System.String)" />
       <Member Id="M:System.DateTimeOffset.Parse(System.String,System.IFormatProvider)" />
       <Member Id="M:System.DateTimeOffset.Parse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)" />
-      <Member Id="M:System.DateTimeOffset.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles)" />
-      <Member Id="M:System.DateTimeOffset.ParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <Member Id="M:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider)" />
       <Member Id="M:System.DateTimeOffset.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles)" />
       <Member Id="M:System.DateTimeOffset.ParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles)" />
@@ -2158,13 +2095,8 @@
       <Member Id="M:System.DateTimeOffset.ToUniversalTime" />
       <Member Id="M:System.DateTimeOffset.ToUnixTimeMilliseconds" />
       <Member Id="M:System.DateTimeOffset.ToUnixTimeSeconds" />
-      <Member Id="M:System.DateTimeOffset.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.DateTimeOffset.TryParse(System.ReadOnlySpan{System.Char},System.DateTimeOffset@)" />
-      <Member Id="M:System.DateTimeOffset.TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <Member Id="M:System.DateTimeOffset.TryParse(System.String,System.DateTimeOffset@)" />
       <Member Id="M:System.DateTimeOffset.TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
-      <Member Id="M:System.DateTimeOffset.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
-      <Member Id="M:System.DateTimeOffset.TryParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <Member Id="M:System.DateTimeOffset.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <Member Id="M:System.DateTimeOffset.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset@)" />
       <Member Id="P:System.DateTimeOffset.Date" />
@@ -2285,7 +2217,6 @@
       <Member Id="M:System.Decimal.op_Subtraction(System.Decimal,System.Decimal)" />
       <Member Id="M:System.Decimal.op_UnaryNegation(System.Decimal)" />
       <Member Id="M:System.Decimal.op_UnaryPlus(System.Decimal)" />
-      <Member Id="M:System.Decimal.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Decimal.Parse(System.String)" />
       <Member Id="M:System.Decimal.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Decimal.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -2328,9 +2259,6 @@
       <Member Id="M:System.Decimal.ToUInt32(System.Decimal)" />
       <Member Id="M:System.Decimal.ToUInt64(System.Decimal)" />
       <Member Id="M:System.Decimal.Truncate(System.Decimal)" />
-      <Member Id="M:System.Decimal.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Decimal.TryParse(System.ReadOnlySpan{System.Char},System.Decimal@)" />
-      <Member Id="M:System.Decimal.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Decimal@)" />
       <Member Id="M:System.Decimal.TryParse(System.String,System.Decimal@)" />
       <Member Id="M:System.Decimal.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Decimal@)" />
     </Type>
@@ -2391,21 +2319,16 @@
       <Member Id="M:System.Double.Equals(System.Object)" />
       <Member Id="M:System.Double.GetHashCode" />
       <Member Id="M:System.Double.GetTypeCode" />
-      <Member Id="M:System.Double.IsFinite(System.Double)" />
       <Member Id="M:System.Double.IsInfinity(System.Double)" />
       <Member Id="M:System.Double.IsNaN(System.Double)" />
-      <Member Id="M:System.Double.IsNegative(System.Double)" />
       <Member Id="M:System.Double.IsNegativeInfinity(System.Double)" />
-      <Member Id="M:System.Double.IsNormal(System.Double)" />
       <Member Id="M:System.Double.IsPositiveInfinity(System.Double)" />
-      <Member Id="M:System.Double.IsSubnormal(System.Double)" />
       <Member Id="M:System.Double.op_Equality(System.Double,System.Double)" />
       <Member Id="M:System.Double.op_GreaterThan(System.Double,System.Double)" />
       <Member Id="M:System.Double.op_GreaterThanOrEqual(System.Double,System.Double)" />
       <Member Id="M:System.Double.op_Inequality(System.Double,System.Double)" />
       <Member Id="M:System.Double.op_LessThan(System.Double,System.Double)" />
       <Member Id="M:System.Double.op_LessThanOrEqual(System.Double,System.Double)" />
-      <Member Id="M:System.Double.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Double.Parse(System.String)" />
       <Member Id="M:System.Double.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Double.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -2429,9 +2352,6 @@
       <Member Id="M:System.Double.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Double.ToString(System.String)" />
       <Member Id="M:System.Double.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Double.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Double.TryParse(System.ReadOnlySpan{System.Char},System.Double@)" />
-      <Member Id="M:System.Double.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Double@)" />
       <Member Id="M:System.Double.TryParse(System.String,System.Double@)" />
       <Member Id="M:System.Double.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Double@)" />
     </Type>
@@ -2456,7 +2376,6 @@
       <Member Id="M:System.Enum.GetHashCode" />
       <Member Id="M:System.Enum.GetName(System.Type,System.Object)" />
       <Member Id="M:System.Enum.GetNames(System.Type)" />
-      <Member Id="M:System.Enum.GetTypeCode" />
       <Member Id="M:System.Enum.GetTypeCode" />
       <Member Id="M:System.Enum.GetUnderlyingType(System.Type)" />
       <Member Id="M:System.Enum.GetValues(System.Type)" />
@@ -2741,7 +2660,6 @@
       <Member Id="M:System.Guid.#ctor(System.Byte[])" />
       <Member Id="M:System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)" />
       <Member Id="M:System.Guid.#ctor(System.Int32,System.Int16,System.Int16,System.Byte[])" />
-      <Member Id="M:System.Guid.#ctor(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Guid.#ctor(System.String)" />
       <Member Id="M:System.Guid.#ctor(System.UInt32,System.UInt16,System.UInt16,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)" />
       <Member Id="M:System.Guid.CompareTo(System.Guid)" />
@@ -2752,20 +2670,14 @@
       <Member Id="M:System.Guid.NewGuid" />
       <Member Id="M:System.Guid.op_Equality(System.Guid,System.Guid)" />
       <Member Id="M:System.Guid.op_Inequality(System.Guid,System.Guid)" />
-      <Member Id="M:System.Guid.Parse(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Guid.Parse(System.String)" />
-      <Member Id="M:System.Guid.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Guid.ParseExact(System.String,System.String)" />
       <Member Id="M:System.Guid.ToByteArray" />
       <Member Id="M:System.Guid.ToString" />
       <Member Id="M:System.Guid.ToString(System.String)" />
       <Member Id="M:System.Guid.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Guid.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char})" />
-      <Member Id="M:System.Guid.TryParse(System.ReadOnlySpan{System.Char},System.Guid@)" />
       <Member Id="M:System.Guid.TryParse(System.String,System.Guid@)" />
-      <Member Id="M:System.Guid.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Guid@)" />
       <Member Id="M:System.Guid.TryParseExact(System.String,System.String,System.Guid@)" />
-      <Member Id="M:System.Guid.TryWriteBytes(System.Span{System.Byte})" />
     </Type>
     <Type Name="System.HttpStyleUriParser" Id="T:System.HttpStyleUriParser">
       <Member Id="M:System.HttpStyleUriParser.#ctor" />
@@ -2843,7 +2755,6 @@
       <Member Id="M:System.Int16.Equals(System.Object)" />
       <Member Id="M:System.Int16.GetHashCode" />
       <Member Id="M:System.Int16.GetTypeCode" />
-      <Member Id="M:System.Int16.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Int16.Parse(System.String)" />
       <Member Id="M:System.Int16.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Int16.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -2867,9 +2778,6 @@
       <Member Id="M:System.Int16.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Int16.ToString(System.String)" />
       <Member Id="M:System.Int16.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Int16.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Int16.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Int16@)" />
-      <Member Id="M:System.Int16.TryParse(System.ReadOnlySpan{System.Char},System.Int16@)" />
       <Member Id="M:System.Int16.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int16@)" />
       <Member Id="M:System.Int16.TryParse(System.String,System.Int16@)" />
     </Type>
@@ -2882,7 +2790,6 @@
       <Member Id="M:System.Int32.Equals(System.Object)" />
       <Member Id="M:System.Int32.GetHashCode" />
       <Member Id="M:System.Int32.GetTypeCode" />
-      <Member Id="M:System.Int32.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Int32.Parse(System.String)" />
       <Member Id="M:System.Int32.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Int32.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -2906,9 +2813,6 @@
       <Member Id="M:System.Int32.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Int32.ToString(System.String)" />
       <Member Id="M:System.Int32.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Int32.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Int32.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Int32@)" />
-      <Member Id="M:System.Int32.TryParse(System.ReadOnlySpan{System.Char},System.Int32@)" />
       <Member Id="M:System.Int32.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int32@)" />
       <Member Id="M:System.Int32.TryParse(System.String,System.Int32@)" />
     </Type>
@@ -2921,7 +2825,6 @@
       <Member Id="M:System.Int64.Equals(System.Object)" />
       <Member Id="M:System.Int64.GetHashCode" />
       <Member Id="M:System.Int64.GetTypeCode" />
-      <Member Id="M:System.Int64.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Int64.Parse(System.String)" />
       <Member Id="M:System.Int64.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Int64.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -2945,9 +2848,6 @@
       <Member Id="M:System.Int64.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Int64.ToString(System.String)" />
       <Member Id="M:System.Int64.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Int64.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Int64.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Int64@)" />
-      <Member Id="M:System.Int64.TryParse(System.ReadOnlySpan{System.Char},System.Int64@)" />
       <Member Id="M:System.Int64.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int64@)" />
       <Member Id="M:System.Int64.TryParse(System.String,System.Int64@)" />
     </Type>
@@ -3074,14 +2974,10 @@
       <Member Id="M:System.Math.Abs(System.SByte)" />
       <Member Id="M:System.Math.Abs(System.Single)" />
       <Member Id="M:System.Math.Acos(System.Double)" />
-      <Member Id="M:System.Math.Acosh(System.Double)" />
       <Member Id="M:System.Math.Asin(System.Double)" />
-      <Member Id="M:System.Math.Asinh(System.Double)" />
       <Member Id="M:System.Math.Atan(System.Double)" />
       <Member Id="M:System.Math.Atan2(System.Double,System.Double)" />
-      <Member Id="M:System.Math.Atanh(System.Double)" />
       <Member Id="M:System.Math.BigMul(System.Int32,System.Int32)" />
-      <Member Id="M:System.Math.Cbrt(System.Double)" />
       <Member Id="M:System.Math.Ceiling(System.Decimal)" />
       <Member Id="M:System.Math.Ceiling(System.Double)" />
       <Member Id="M:System.Math.Clamp(System.Byte,System.Byte,System.Byte)" />
@@ -3417,7 +3313,6 @@
       <Member Id="M:System.Random.Next(System.Int32)" />
       <Member Id="M:System.Random.Next(System.Int32,System.Int32)" />
       <Member Id="M:System.Random.NextBytes(System.Byte[])" />
-      <Member Id="M:System.Random.NextBytes(System.Span{System.Byte})" />
       <Member Id="M:System.Random.NextDouble" />
       <Member Id="M:System.Random.Sample" />
     </Type>
@@ -3475,7 +3370,6 @@
       <Member Id="M:System.SByte.Equals(System.SByte)" />
       <Member Id="M:System.SByte.GetHashCode" />
       <Member Id="M:System.SByte.GetTypeCode" />
-      <Member Id="M:System.SByte.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.SByte.Parse(System.String)" />
       <Member Id="M:System.SByte.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.SByte.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -3499,9 +3393,6 @@
       <Member Id="M:System.SByte.ToString(System.IFormatProvider)" />
       <Member Id="M:System.SByte.ToString(System.String)" />
       <Member Id="M:System.SByte.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.SByte.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.SByte.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.SByte@)" />
-      <Member Id="M:System.SByte.TryParse(System.ReadOnlySpan{System.Char},System.SByte@)" />
       <Member Id="M:System.SByte.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.SByte@)" />
       <Member Id="M:System.SByte.TryParse(System.String,System.SByte@)" />
     </Type>
@@ -3521,21 +3412,16 @@
       <Member Id="M:System.Single.Equals(System.Single)" />
       <Member Id="M:System.Single.GetHashCode" />
       <Member Id="M:System.Single.GetTypeCode" />
-      <Member Id="M:System.Single.IsFinite(System.Single)" />
       <Member Id="M:System.Single.IsInfinity(System.Single)" />
       <Member Id="M:System.Single.IsNaN(System.Single)" />
-      <Member Id="M:System.Single.IsNegative(System.Single)" />
       <Member Id="M:System.Single.IsNegativeInfinity(System.Single)" />
-      <Member Id="M:System.Single.IsNormal(System.Single)" />
       <Member Id="M:System.Single.IsPositiveInfinity(System.Single)" />
-      <Member Id="M:System.Single.IsSubnormal(System.Single)" />
       <Member Id="M:System.Single.op_Equality(System.Single,System.Single)" />
       <Member Id="M:System.Single.op_GreaterThan(System.Single,System.Single)" />
       <Member Id="M:System.Single.op_GreaterThanOrEqual(System.Single,System.Single)" />
       <Member Id="M:System.Single.op_Inequality(System.Single,System.Single)" />
       <Member Id="M:System.Single.op_LessThan(System.Single,System.Single)" />
       <Member Id="M:System.Single.op_LessThanOrEqual(System.Single,System.Single)" />
-      <Member Id="M:System.Single.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Single.Parse(System.String)" />
       <Member Id="M:System.Single.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Single.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -3559,9 +3445,6 @@
       <Member Id="M:System.Single.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Single.ToString(System.String)" />
       <Member Id="M:System.Single.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Single.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Single.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Single@)" />
-      <Member Id="M:System.Single.TryParse(System.ReadOnlySpan{System.Char},System.Single@)" />
       <Member Id="M:System.Single.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Single@)" />
       <Member Id="M:System.Single.TryParse(System.String,System.Single@)" />
     </Type>
@@ -3580,7 +3463,6 @@
       <Member Id="M:System.String.#ctor(System.Char,System.Int32)" />
       <Member Id="M:System.String.#ctor(System.Char[])" />
       <Member Id="M:System.String.#ctor(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.String.#ctor(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.String.#ctor(System.SByte*)" />
       <Member Id="M:System.String.#ctor(System.SByte*,System.Int32,System.Int32)" />
       <Member Id="M:System.String.#ctor(System.SByte*,System.Int32,System.Int32,System.Text.Encoding)" />
@@ -3609,13 +3491,9 @@
       <Member Id="M:System.String.Concat(System.String,System.String,System.String,System.String)" />
       <Member Id="M:System.String.Concat(System.String[])" />
       <Member Id="M:System.String.Concat``1(System.Collections.Generic.IEnumerable{``0})" />
-      <Member Id="M:System.String.Contains(System.Char)" />
-      <Member Id="M:System.String.Contains(System.Char,System.StringComparison)" />
       <Member Id="M:System.String.Contains(System.String)" />
-      <Member Id="M:System.String.Contains(System.String,System.StringComparison)" />
       <Member Id="M:System.String.Copy(System.String)" />
       <Member Id="M:System.String.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.String.Create``1(System.Int32,``0,System.Buffers.SpanAction{System.Char,``0})" />
       <Member Id="M:System.String.EndsWith(System.Char)" />
       <Member Id="M:System.String.EndsWith(System.String)" />
       <Member Id="M:System.String.EndsWith(System.String,System.Boolean,System.Globalization.CultureInfo)" />
@@ -3640,7 +3518,6 @@
       <Member Id="M:System.String.IndexOf(System.Char)" />
       <Member Id="M:System.String.IndexOf(System.Char,System.Int32)" />
       <Member Id="M:System.String.IndexOf(System.Char,System.Int32,System.Int32)" />
-      <Member Id="M:System.String.IndexOf(System.Char,System.StringComparison)" />
       <Member Id="M:System.String.IndexOf(System.String)" />
       <Member Id="M:System.String.IndexOf(System.String,System.Int32)" />
       <Member Id="M:System.String.IndexOf(System.String,System.Int32,System.Int32)" />
@@ -3681,7 +3558,6 @@
       <Member Id="M:System.String.Normalize" />
       <Member Id="M:System.String.Normalize(System.Text.NormalizationForm)" />
       <Member Id="M:System.String.op_Equality(System.String,System.String)" />
-      <Member Id="M:System.String.op_Implicit(System.String)~System.ReadOnlySpan{System.Char}" />
       <Member Id="M:System.String.op_Inequality(System.String,System.String)" />
       <Member Id="M:System.String.PadLeft(System.Int32)" />
       <Member Id="M:System.String.PadLeft(System.Int32,System.Char)" />
@@ -3753,7 +3629,6 @@
       <Member Id="M:System.StringComparer.Compare(System.Object,System.Object)" />
       <Member Id="M:System.StringComparer.Compare(System.String,System.String)" />
       <Member Id="M:System.StringComparer.Create(System.Globalization.CultureInfo,System.Boolean)" />
-      <Member Id="M:System.StringComparer.Create(System.Globalization.CultureInfo,System.Globalization.CompareOptions)" />
       <Member Id="M:System.StringComparer.Equals(System.Object,System.Object)" />
       <Member Id="M:System.StringComparer.Equals(System.String,System.String)" />
       <Member Id="M:System.StringComparer.FromComparison(System.StringComparison)" />
@@ -3847,11 +3722,8 @@
       <Member Id="M:System.TimeSpan.op_Subtraction(System.TimeSpan,System.TimeSpan)" />
       <Member Id="M:System.TimeSpan.op_UnaryNegation(System.TimeSpan)" />
       <Member Id="M:System.TimeSpan.op_UnaryPlus(System.TimeSpan)" />
-      <Member Id="M:System.TimeSpan.Parse(System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
       <Member Id="M:System.TimeSpan.Parse(System.String)" />
       <Member Id="M:System.TimeSpan.Parse(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.TimeSpan.ParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.TimeSpanStyles)" />
-      <Member Id="M:System.TimeSpan.ParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles)" />
       <Member Id="M:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider)" />
       <Member Id="M:System.TimeSpan.ParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles)" />
       <Member Id="M:System.TimeSpan.ParseExact(System.String,System.String[],System.IFormatProvider)" />
@@ -3860,15 +3732,8 @@
       <Member Id="M:System.TimeSpan.ToString" />
       <Member Id="M:System.TimeSpan.ToString(System.String)" />
       <Member Id="M:System.TimeSpan.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.TimeSpan.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.TimeSpan.TryParse(System.ReadOnlySpan{System.Char},System.IFormatProvider,System.TimeSpan@)" />
-      <Member Id="M:System.TimeSpan.TryParse(System.ReadOnlySpan{System.Char},System.TimeSpan@)" />
       <Member Id="M:System.TimeSpan.TryParse(System.String,System.IFormatProvider,System.TimeSpan@)" />
       <Member Id="M:System.TimeSpan.TryParse(System.String,System.TimeSpan@)" />
-      <Member Id="M:System.TimeSpan.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)" />
-      <Member Id="M:System.TimeSpan.TryParseExact(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.IFormatProvider,System.TimeSpan@)" />
-      <Member Id="M:System.TimeSpan.TryParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)" />
-      <Member Id="M:System.TimeSpan.TryParseExact(System.ReadOnlySpan{System.Char},System.String[],System.IFormatProvider,System.TimeSpan@)" />
       <Member Id="M:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)" />
       <Member Id="M:System.TimeSpan.TryParseExact(System.String,System.String,System.IFormatProvider,System.TimeSpan@)" />
       <Member Id="M:System.TimeSpan.TryParseExact(System.String,System.String[],System.IFormatProvider,System.Globalization.TimeSpanStyles,System.TimeSpan@)" />
@@ -4231,16 +4096,11 @@
       <Member Id="M:System.Type.GetMembers" />
       <Member Id="M:System.Type.GetMembers(System.Reflection.BindingFlags)" />
       <Member Id="M:System.Type.GetMethod(System.String)" />
-      <Member Id="M:System.Type.GetMethod(System.String,System.Int32,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
-      <Member Id="M:System.Type.GetMethod(System.String,System.Int32,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])" />
-      <Member Id="M:System.Type.GetMethod(System.String,System.Int32,System.Type[])" />
-      <Member Id="M:System.Type.GetMethod(System.String,System.Int32,System.Type[],System.Reflection.ParameterModifier[])" />
       <Member Id="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags)" />
       <Member Id="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <Member Id="M:System.Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])" />
       <Member Id="M:System.Type.GetMethod(System.String,System.Type[])" />
       <Member Id="M:System.Type.GetMethod(System.String,System.Type[],System.Reflection.ParameterModifier[])" />
-      <Member Id="M:System.Type.GetMethodImpl(System.String,System.Int32,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <Member Id="M:System.Type.GetMethodImpl(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
       <Member Id="M:System.Type.GetMethods" />
       <Member Id="M:System.Type.GetMethods(System.Reflection.BindingFlags)" />
@@ -4298,7 +4158,6 @@
       <Member Id="M:System.Type.MakeArrayType" />
       <Member Id="M:System.Type.MakeArrayType(System.Int32)" />
       <Member Id="M:System.Type.MakeByRefType" />
-      <Member Id="M:System.Type.MakeGenericMethodParameter(System.Int32)" />
       <Member Id="M:System.Type.MakeGenericType(System.Type[])" />
       <Member Id="M:System.Type.MakePointerType" />
       <Member Id="M:System.Type.op_Equality(System.Type,System.Type)" />
@@ -4325,18 +4184,15 @@
       <Member Id="P:System.Type.IsAutoClass" />
       <Member Id="P:System.Type.IsAutoLayout" />
       <Member Id="P:System.Type.IsByRef" />
-      <Member Id="P:System.Type.IsByRefLike" />
       <Member Id="P:System.Type.IsClass" />
       <Member Id="P:System.Type.IsCOMObject" />
       <Member Id="P:System.Type.IsConstructedGenericType" />
       <Member Id="P:System.Type.IsContextful" />
       <Member Id="P:System.Type.IsEnum" />
       <Member Id="P:System.Type.IsExplicitLayout" />
-      <Member Id="P:System.Type.IsGenericMethodParameter" />
       <Member Id="P:System.Type.IsGenericParameter" />
       <Member Id="P:System.Type.IsGenericType" />
       <Member Id="P:System.Type.IsGenericTypeDefinition" />
-      <Member Id="P:System.Type.IsGenericTypeParameter" />
       <Member Id="P:System.Type.IsImport" />
       <Member Id="P:System.Type.IsInterface" />
       <Member Id="P:System.Type.IsLayoutSequential" />
@@ -4357,7 +4213,6 @@
       <Member Id="P:System.Type.IsSecuritySafeCritical" />
       <Member Id="P:System.Type.IsSecurityTransparent" />
       <Member Id="P:System.Type.IsSerializable" />
-      <Member Id="P:System.Type.IsSignatureType" />
       <Member Id="P:System.Type.IsSpecialName" />
       <Member Id="P:System.Type.IsSZArray" />
       <Member Id="P:System.Type.IsTypeDefinition" />
@@ -4438,7 +4293,6 @@
       <Member Id="M:System.UInt16.Equals(System.UInt16)" />
       <Member Id="M:System.UInt16.GetHashCode" />
       <Member Id="M:System.UInt16.GetTypeCode" />
-      <Member Id="M:System.UInt16.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.UInt16.Parse(System.String)" />
       <Member Id="M:System.UInt16.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.UInt16.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -4462,9 +4316,6 @@
       <Member Id="M:System.UInt16.ToString(System.IFormatProvider)" />
       <Member Id="M:System.UInt16.ToString(System.String)" />
       <Member Id="M:System.UInt16.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.UInt16.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.UInt16.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.UInt16@)" />
-      <Member Id="M:System.UInt16.TryParse(System.ReadOnlySpan{System.Char},System.UInt16@)" />
       <Member Id="M:System.UInt16.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.UInt16@)" />
       <Member Id="M:System.UInt16.TryParse(System.String,System.UInt16@)" />
     </Type>
@@ -4477,7 +4328,6 @@
       <Member Id="M:System.UInt32.Equals(System.UInt32)" />
       <Member Id="M:System.UInt32.GetHashCode" />
       <Member Id="M:System.UInt32.GetTypeCode" />
-      <Member Id="M:System.UInt32.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.UInt32.Parse(System.String)" />
       <Member Id="M:System.UInt32.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.UInt32.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -4501,9 +4351,6 @@
       <Member Id="M:System.UInt32.ToString(System.IFormatProvider)" />
       <Member Id="M:System.UInt32.ToString(System.String)" />
       <Member Id="M:System.UInt32.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.UInt32.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.UInt32.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.UInt32@)" />
-      <Member Id="M:System.UInt32.TryParse(System.ReadOnlySpan{System.Char},System.UInt32@)" />
       <Member Id="M:System.UInt32.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.UInt32@)" />
       <Member Id="M:System.UInt32.TryParse(System.String,System.UInt32@)" />
     </Type>
@@ -4516,7 +4363,6 @@
       <Member Id="M:System.UInt64.Equals(System.UInt64)" />
       <Member Id="M:System.UInt64.GetHashCode" />
       <Member Id="M:System.UInt64.GetTypeCode" />
-      <Member Id="M:System.UInt64.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.UInt64.Parse(System.String)" />
       <Member Id="M:System.UInt64.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.UInt64.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -4540,9 +4386,6 @@
       <Member Id="M:System.UInt64.ToString(System.IFormatProvider)" />
       <Member Id="M:System.UInt64.ToString(System.String)" />
       <Member Id="M:System.UInt64.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.UInt64.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.UInt64.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.UInt64@)" />
-      <Member Id="M:System.UInt64.TryParse(System.ReadOnlySpan{System.Char},System.UInt64@)" />
       <Member Id="M:System.UInt64.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.UInt64@)" />
       <Member Id="M:System.UInt64.TryParse(System.String,System.UInt64@)" />
     </Type>
@@ -4953,13 +4796,9 @@
       <Member Id="M:System.Version.op_Inequality(System.Version,System.Version)" />
       <Member Id="M:System.Version.op_LessThan(System.Version,System.Version)" />
       <Member Id="M:System.Version.op_LessThanOrEqual(System.Version,System.Version)" />
-      <Member Id="M:System.Version.Parse(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Version.Parse(System.String)" />
       <Member Id="M:System.Version.ToString" />
       <Member Id="M:System.Version.ToString(System.Int32)" />
-      <Member Id="M:System.Version.TryFormat(System.Span{System.Char},System.Int32,System.Int32@)" />
-      <Member Id="M:System.Version.TryFormat(System.Span{System.Char},System.Int32@)" />
-      <Member Id="M:System.Version.TryParse(System.ReadOnlySpan{System.Char},System.Version@)" />
       <Member Id="M:System.Version.TryParse(System.String,System.Version@)" />
       <Member Id="P:System.Version.Build" />
       <Member Id="P:System.Version.Major" />
@@ -6704,7 +6543,6 @@
       <Member Id="M:System.Collections.Generic.Dictionary`2.Clear" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.ContainsKey(`0)" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.ContainsValue(`1)" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.EnsureCapacity(System.Int32)" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.GetEnumerator" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.OnDeserialization(System.Object)" />
@@ -6721,8 +6559,6 @@
       <Member Id="M:System.Collections.Generic.Dictionary`2.System#Collections#IDictionary#GetEnumerator" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.System#Collections#IDictionary#Remove(System.Object)" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.System#Collections#IEnumerable#GetEnumerator" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.TrimExcess" />
-      <Member Id="M:System.Collections.Generic.Dictionary`2.TrimExcess(System.Int32)" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.TryAdd(`0,`1)" />
       <Member Id="M:System.Collections.Generic.Dictionary`2.TryGetValue(`0,`1@)" />
       <Member Id="P:System.Collections.Generic.Dictionary`2.Comparer" />
@@ -6822,7 +6658,6 @@
       <Member Id="M:System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32)" />
       <Member Id="M:System.Collections.Generic.HashSet`1.CopyTo(`0[],System.Int32,System.Int32)" />
       <Member Id="M:System.Collections.Generic.HashSet`1.CreateSetComparer" />
-      <Member Id="M:System.Collections.Generic.HashSet`1.EnsureCapacity(System.Int32)" />
       <Member Id="M:System.Collections.Generic.HashSet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})" />
       <Member Id="M:System.Collections.Generic.HashSet`1.GetEnumerator" />
       <Member Id="M:System.Collections.Generic.HashSet`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
@@ -11288,9 +11123,7 @@
       <Member Id="M:System.Configuration.AppSettingsSection.#ctor" />
       <Member Id="M:System.Configuration.AppSettingsSection.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
       <Member Id="M:System.Configuration.AppSettingsSection.GetRuntimeObject" />
-      <Member Id="M:System.Configuration.AppSettingsSection.IsModified" />
       <Member Id="M:System.Configuration.AppSettingsSection.Reset(System.Configuration.ConfigurationElement)" />
-      <Member Id="M:System.Configuration.AppSettingsSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" />
       <Member Id="P:System.Configuration.AppSettingsSection.File" />
       <Member Id="P:System.Configuration.AppSettingsSection.Properties" />
       <Member Id="P:System.Configuration.AppSettingsSection.Settings" />
@@ -11486,7 +11319,6 @@
       <Member Id="M:System.Configuration.ConfigurationErrorsException.GetLineNumber(System.Xml.XmlNode)" />
       <Member Id="M:System.Configuration.ConfigurationErrorsException.GetLineNumber(System.Xml.XmlReader)" />
       <Member Id="M:System.Configuration.ConfigurationErrorsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="P:System.Configuration.ConfigurationErrorsException.BareMessage" />
       <Member Id="P:System.Configuration.ConfigurationErrorsException.Errors" />
       <Member Id="P:System.Configuration.ConfigurationErrorsException.Filename" />
       <Member Id="P:System.Configuration.ConfigurationErrorsException.Line" />
@@ -11627,13 +11459,10 @@
       <Member Id="M:System.Configuration.ConfigurationSectionCollection.Get(System.String)" />
       <Member Id="M:System.Configuration.ConfigurationSectionCollection.GetEnumerator" />
       <Member Id="M:System.Configuration.ConfigurationSectionCollection.GetKey(System.Int32)" />
-      <Member Id="M:System.Configuration.ConfigurationSectionCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Configuration.ConfigurationSectionCollection.Remove(System.String)" />
       <Member Id="M:System.Configuration.ConfigurationSectionCollection.RemoveAt(System.Int32)" />
-      <Member Id="P:System.Configuration.ConfigurationSectionCollection.Count" />
       <Member Id="P:System.Configuration.ConfigurationSectionCollection.Item(System.Int32)" />
       <Member Id="P:System.Configuration.ConfigurationSectionCollection.Item(System.String)" />
-      <Member Id="P:System.Configuration.ConfigurationSectionCollection.Keys" />
     </Type>
     <Type Name="System.Configuration.ConfigurationSectionGroup" Id="T:System.Configuration.ConfigurationSectionGroup">
       <Member Id="M:System.Configuration.ConfigurationSectionGroup.#ctor" />
@@ -11656,13 +11485,10 @@
       <Member Id="M:System.Configuration.ConfigurationSectionGroupCollection.Get(System.String)" />
       <Member Id="M:System.Configuration.ConfigurationSectionGroupCollection.GetEnumerator" />
       <Member Id="M:System.Configuration.ConfigurationSectionGroupCollection.GetKey(System.Int32)" />
-      <Member Id="M:System.Configuration.ConfigurationSectionGroupCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Configuration.ConfigurationSectionGroupCollection.Remove(System.String)" />
       <Member Id="M:System.Configuration.ConfigurationSectionGroupCollection.RemoveAt(System.Int32)" />
-      <Member Id="P:System.Configuration.ConfigurationSectionGroupCollection.Count" />
       <Member Id="P:System.Configuration.ConfigurationSectionGroupCollection.Item(System.Int32)" />
       <Member Id="P:System.Configuration.ConfigurationSectionGroupCollection.Item(System.String)" />
-      <Member Id="P:System.Configuration.ConfigurationSectionGroupCollection.Keys" />
     </Type>
     <Type Name="System.Configuration.ConfigurationSettings" Id="T:System.Configuration.ConfigurationSettings">
       <Member Id="M:System.Configuration.ConfigurationSettings.GetConfig(System.String)" />
@@ -11972,7 +11798,6 @@
     <Type Name="System.Configuration.PropertyInformationCollection" Id="T:System.Configuration.PropertyInformationCollection">
       <Member Id="M:System.Configuration.PropertyInformationCollection.CopyTo(System.Configuration.PropertyInformation[],System.Int32)" />
       <Member Id="M:System.Configuration.PropertyInformationCollection.GetEnumerator" />
-      <Member Id="M:System.Configuration.PropertyInformationCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="P:System.Configuration.PropertyInformationCollection.Item(System.String)" />
     </Type>
     <Type Name="System.Configuration.PropertyValueOrigin" Id="T:System.Configuration.PropertyValueOrigin">
@@ -12049,7 +11874,6 @@
       <Member Id="M:System.Configuration.RsaProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)" />
       <Member Id="M:System.Configuration.RsaProtectedConfigurationProvider.ExportKey(System.String,System.Boolean)" />
       <Member Id="M:System.Configuration.RsaProtectedConfigurationProvider.ImportKey(System.String,System.Boolean)" />
-      <Member Id="M:System.Configuration.RsaProtectedConfigurationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <Member Id="P:System.Configuration.RsaProtectedConfigurationProvider.CspProviderName" />
       <Member Id="P:System.Configuration.RsaProtectedConfigurationProvider.KeyContainerName" />
       <Member Id="P:System.Configuration.RsaProtectedConfigurationProvider.RsaPublicKey" />
@@ -12137,6 +11961,7 @@
     <Type Name="System.Configuration.SettingsAttributeDictionary" Id="T:System.Configuration.SettingsAttributeDictionary">
       <Member Id="M:System.Configuration.SettingsAttributeDictionary.#ctor" />
       <Member Id="M:System.Configuration.SettingsAttributeDictionary.#ctor(System.Configuration.SettingsAttributeDictionary)" />
+      <Member Id="M:System.Configuration.SettingsAttributeDictionary.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
     </Type>
     <Type Name="System.Configuration.SettingsBase" Id="T:System.Configuration.SettingsBase">
       <Member Id="M:System.Configuration.SettingsBase.#ctor" />
@@ -12152,6 +11977,7 @@
     </Type>
     <Type Name="System.Configuration.SettingsContext" Id="T:System.Configuration.SettingsContext">
       <Member Id="M:System.Configuration.SettingsContext.#ctor" />
+      <Member Id="M:System.Configuration.SettingsContext.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
     </Type>
     <Type Name="System.Configuration.SettingsDescriptionAttribute" Id="T:System.Configuration.SettingsDescriptionAttribute">
       <Member Id="M:System.Configuration.SettingsDescriptionAttribute.#ctor(System.String)" />
@@ -13391,7 +13217,6 @@
       <Member Id="M:System.Data.DBConcurrencyException.CopyToRows(System.Data.DataRow[])" />
       <Member Id="M:System.Data.DBConcurrencyException.CopyToRows(System.Data.DataRow[],System.Int32)" />
       <Member Id="M:System.Data.DBConcurrencyException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
-      <Member Id="M:System.Data.DBConcurrencyException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="P:System.Data.DBConcurrencyException.Row" />
       <Member Id="P:System.Data.DBConcurrencyException.RowCount" />
     </Type>
@@ -14595,6 +14420,9 @@
       <Member Id="M:System.Data.Odbc.OdbcConnection.CreateCommand" />
       <Member Id="M:System.Data.Odbc.OdbcConnection.CreateDbCommand" />
       <Member Id="M:System.Data.Odbc.OdbcConnection.Dispose(System.Boolean)" />
+      <Member Id="M:System.Data.Odbc.OdbcConnection.GetSchema" />
+      <Member Id="M:System.Data.Odbc.OdbcConnection.GetSchema(System.String)" />
+      <Member Id="M:System.Data.Odbc.OdbcConnection.GetSchema(System.String,System.String[])" />
       <Member Id="M:System.Data.Odbc.OdbcConnection.Open" />
       <Member Id="M:System.Data.Odbc.OdbcConnection.ReleaseObjectPool" />
       <Member Id="M:System.Data.Odbc.OdbcConnection.System#ICloneable#Clone" />
@@ -14743,6 +14571,7 @@
       <Member Id="P:System.Data.Odbc.OdbcParameter.Direction" />
       <Member Id="P:System.Data.Odbc.OdbcParameter.IsNullable" />
       <Member Id="P:System.Data.Odbc.OdbcParameter.OdbcType" />
+      <Member Id="P:System.Data.Odbc.OdbcParameter.Offset" />
       <Member Id="P:System.Data.Odbc.OdbcParameter.ParameterName" />
       <Member Id="P:System.Data.Odbc.OdbcParameter.Precision" />
       <Member Id="P:System.Data.Odbc.OdbcParameter.Scale" />
@@ -15038,9 +14867,11 @@
       <Member Id="M:System.Data.SqlClient.SqlConnection.CreateCommand" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.CreateDbCommand" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.Dispose(System.Boolean)" />
+      <Member Id="M:System.Data.SqlClient.SqlConnection.EnlistTransaction(System.Transactions.Transaction)" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.GetSchema" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.GetSchema(System.String)" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.GetSchema(System.String,System.String[])" />
+      <Member Id="M:System.Data.SqlClient.SqlConnection.OnStateChange(System.Data.StateChangeEventArgs)" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.Open" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.Data.SqlClient.SqlConnection.ResetStatistics" />
@@ -15053,6 +14884,7 @@
       <Member Id="P:System.Data.SqlClient.SqlConnection.Credential" />
       <Member Id="P:System.Data.SqlClient.SqlConnection.Database" />
       <Member Id="P:System.Data.SqlClient.SqlConnection.DataSource" />
+      <Member Id="P:System.Data.SqlClient.SqlConnection.DbProviderFactory" />
       <Member Id="P:System.Data.SqlClient.SqlConnection.FireInfoMessageEventOnUserErrors" />
       <Member Id="P:System.Data.SqlClient.SqlConnection.PacketSize" />
       <Member Id="P:System.Data.SqlClient.SqlConnection.ServerVersion" />
@@ -15108,9 +14940,18 @@
       <Member Id="M:System.Data.SqlClient.SqlDataAdapter.#ctor(System.Data.SqlClient.SqlCommand)" />
       <Member Id="M:System.Data.SqlClient.SqlDataAdapter.#ctor(System.String,System.Data.SqlClient.SqlConnection)" />
       <Member Id="M:System.Data.SqlClient.SqlDataAdapter.#ctor(System.String,System.String)" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.AddToBatch(System.Data.IDbCommand)" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.ClearBatch" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.CreateRowUpdatedEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.ExecuteBatch" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.GetBatchedParameter(System.Int32,System.Int32)" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.GetBatchedRecordsAffected(System.Int32,System.Int32@,System.Exception@)" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.InitializeBatching" />
       <Member Id="M:System.Data.SqlClient.SqlDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)" />
       <Member Id="M:System.Data.SqlClient.SqlDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)" />
       <Member Id="M:System.Data.SqlClient.SqlDataAdapter.System#ICloneable#Clone" />
+      <Member Id="M:System.Data.SqlClient.SqlDataAdapter.TerminateBatching" />
       <Member Id="P:System.Data.SqlClient.SqlDataAdapter.DeleteCommand" />
       <Member Id="P:System.Data.SqlClient.SqlDataAdapter.InsertCommand" />
       <Member Id="P:System.Data.SqlClient.SqlDataAdapter.SelectCommand" />
@@ -15122,6 +14963,8 @@
       <Member Id="P:System.Data.SqlClient.SqlDataAdapter.UpdateCommand" />
     </Type>
     <Type Name="System.Data.SqlClient.SqlDataReader" Id="T:System.Data.SqlClient.SqlDataReader">
+      <Member Id="M:System.Data.SqlClient.SqlDataReader.Close" />
+      <Member Id="M:System.Data.SqlClient.SqlDataReader.Dispose(System.Boolean)" />
       <Member Id="M:System.Data.SqlClient.SqlDataReader.GetBoolean(System.Int32)" />
       <Member Id="M:System.Data.SqlClient.SqlDataReader.GetByte(System.Int32)" />
       <Member Id="M:System.Data.SqlClient.SqlDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
@@ -16772,7 +16615,6 @@
       <Member Id="M:System.Diagnostics.ProcessStartInfo.#ctor" />
       <Member Id="M:System.Diagnostics.ProcessStartInfo.#ctor(System.String)" />
       <Member Id="M:System.Diagnostics.ProcessStartInfo.#ctor(System.String,System.String)" />
-      <Member Id="P:System.Diagnostics.ProcessStartInfo.ArgumentList" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.Arguments" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.CreateNoWindow" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.Domain" />
@@ -16788,7 +16630,6 @@
       <Member Id="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.RedirectStandardOutput" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.StandardErrorEncoding" />
-      <Member Id="P:System.Diagnostics.ProcessStartInfo.StandardInputEncoding" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.StandardOutputEncoding" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.UserName" />
       <Member Id="P:System.Diagnostics.ProcessStartInfo.UseShellExecute" />
@@ -17436,7 +17277,6 @@
     </Type>
     <Type Name="System.Diagnostics.Tracing.EventCounter" Id="T:System.Diagnostics.Tracing.EventCounter">
       <Member Id="M:System.Diagnostics.Tracing.EventCounter.#ctor(System.String,System.Diagnostics.Tracing.EventSource)" />
-      <Member Id="M:System.Diagnostics.Tracing.EventCounter.Dispose" />
       <Member Id="M:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Single)" />
     </Type>
     <Type Name="System.Diagnostics.Tracing.EventDataAttribute" Id="T:System.Diagnostics.Tracing.EventDataAttribute">
@@ -17644,7 +17484,6 @@
       <Member Id="M:System.Drawing.Color.FromArgb(System.Int32,System.Drawing.Color)" />
       <Member Id="M:System.Drawing.Color.FromArgb(System.Int32,System.Int32,System.Int32)" />
       <Member Id="M:System.Drawing.Color.FromArgb(System.Int32,System.Int32,System.Int32,System.Int32)" />
-      <Member Id="M:System.Drawing.Color.FromKnownColor(System.Drawing.KnownColor)" />
       <Member Id="M:System.Drawing.Color.FromName(System.String)" />
       <Member Id="M:System.Drawing.Color.GetBrightness" />
       <Member Id="M:System.Drawing.Color.GetHashCode" />
@@ -17653,7 +17492,6 @@
       <Member Id="M:System.Drawing.Color.op_Equality(System.Drawing.Color,System.Drawing.Color)" />
       <Member Id="M:System.Drawing.Color.op_Inequality(System.Drawing.Color,System.Drawing.Color)" />
       <Member Id="M:System.Drawing.Color.ToArgb" />
-      <Member Id="M:System.Drawing.Color.ToKnownColor" />
       <Member Id="M:System.Drawing.Color.ToString" />
       <Member Id="P:System.Drawing.Color.A" />
       <Member Id="P:System.Drawing.Color.AliceBlue" />
@@ -17716,9 +17554,7 @@
       <Member Id="P:System.Drawing.Color.IndianRed" />
       <Member Id="P:System.Drawing.Color.Indigo" />
       <Member Id="P:System.Drawing.Color.IsEmpty" />
-      <Member Id="P:System.Drawing.Color.IsKnownColor" />
       <Member Id="P:System.Drawing.Color.IsNamedColor" />
-      <Member Id="P:System.Drawing.Color.IsSystemColor" />
       <Member Id="P:System.Drawing.Color.Ivory" />
       <Member Id="P:System.Drawing.Color.Khaki" />
       <Member Id="P:System.Drawing.Color.Lavender" />
@@ -17968,16 +17804,10 @@
       <Member Id="M:System.Drawing.Size.Equals(System.Object)" />
       <Member Id="M:System.Drawing.Size.GetHashCode" />
       <Member Id="M:System.Drawing.Size.op_Addition(System.Drawing.Size,System.Drawing.Size)" />
-      <Member Id="M:System.Drawing.Size.op_Division(System.Drawing.Size,System.Int32)" />
-      <Member Id="M:System.Drawing.Size.op_Division(System.Drawing.Size,System.Single)" />
       <Member Id="M:System.Drawing.Size.op_Equality(System.Drawing.Size,System.Drawing.Size)" />
       <Member Id="M:System.Drawing.Size.op_Explicit(System.Drawing.Size)~System.Drawing.Point" />
       <Member Id="M:System.Drawing.Size.op_Implicit(System.Drawing.Size)~System.Drawing.SizeF" />
       <Member Id="M:System.Drawing.Size.op_Inequality(System.Drawing.Size,System.Drawing.Size)" />
-      <Member Id="M:System.Drawing.Size.op_Multiply(System.Drawing.Size,System.Int32)" />
-      <Member Id="M:System.Drawing.Size.op_Multiply(System.Drawing.Size,System.Single)" />
-      <Member Id="M:System.Drawing.Size.op_Multiply(System.Int32,System.Drawing.Size)" />
-      <Member Id="M:System.Drawing.Size.op_Multiply(System.Single,System.Drawing.Size)" />
       <Member Id="M:System.Drawing.Size.op_Subtraction(System.Drawing.Size,System.Drawing.Size)" />
       <Member Id="M:System.Drawing.Size.Round(System.Drawing.SizeF)" />
       <Member Id="M:System.Drawing.Size.Subtract(System.Drawing.Size,System.Drawing.Size)" />
@@ -18008,12 +17838,9 @@
       <Member Id="M:System.Drawing.SizeF.Equals(System.Object)" />
       <Member Id="M:System.Drawing.SizeF.GetHashCode" />
       <Member Id="M:System.Drawing.SizeF.op_Addition(System.Drawing.SizeF,System.Drawing.SizeF)" />
-      <Member Id="M:System.Drawing.SizeF.op_Division(System.Drawing.SizeF,System.Single)" />
       <Member Id="M:System.Drawing.SizeF.op_Equality(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <Member Id="M:System.Drawing.SizeF.op_Explicit(System.Drawing.SizeF)~System.Drawing.PointF" />
       <Member Id="M:System.Drawing.SizeF.op_Inequality(System.Drawing.SizeF,System.Drawing.SizeF)" />
-      <Member Id="M:System.Drawing.SizeF.op_Multiply(System.Drawing.SizeF,System.Single)" />
-      <Member Id="M:System.Drawing.SizeF.op_Multiply(System.Single,System.Drawing.SizeF)" />
       <Member Id="M:System.Drawing.SizeF.op_Subtraction(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <Member Id="M:System.Drawing.SizeF.Subtract(System.Drawing.SizeF,System.Drawing.SizeF)" />
       <Member Id="M:System.Drawing.SizeF.ToPointF" />
@@ -18329,7 +18156,6 @@
       <Member Id="M:System.Globalization.CharUnicodeInfo.GetNumericValue(System.Char)" />
       <Member Id="M:System.Globalization.CharUnicodeInfo.GetNumericValue(System.String,System.Int32)" />
       <Member Id="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)" />
-      <Member Id="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Int32)" />
       <Member Id="M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)" />
     </Type>
     <Type Name="System.Globalization.ChineseLunisolarCalendar" Id="T:System.Globalization.ChineseLunisolarCalendar">
@@ -19074,8 +18900,6 @@
       <Member Id="M:System.IO.BinaryReader.Read" />
       <Member Id="M:System.IO.BinaryReader.Read(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.IO.BinaryReader.Read(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.BinaryReader.Read(System.Span{System.Byte})" />
-      <Member Id="M:System.IO.BinaryReader.Read(System.Span{System.Char})" />
       <Member Id="M:System.IO.BinaryReader.Read7BitEncodedInt" />
       <Member Id="M:System.IO.BinaryReader.ReadBoolean" />
       <Member Id="M:System.IO.BinaryReader.ReadByte" />
@@ -19119,8 +18943,6 @@
       <Member Id="M:System.IO.BinaryWriter.Write(System.Int16)" />
       <Member Id="M:System.IO.BinaryWriter.Write(System.Int32)" />
       <Member Id="M:System.IO.BinaryWriter.Write(System.Int64)" />
-      <Member Id="M:System.IO.BinaryWriter.Write(System.ReadOnlySpan{System.Byte})" />
-      <Member Id="M:System.IO.BinaryWriter.Write(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.BinaryWriter.Write(System.SByte)" />
       <Member Id="M:System.IO.BinaryWriter.Write(System.Single)" />
       <Member Id="M:System.IO.BinaryWriter.Write(System.String)" />
@@ -19162,15 +18984,12 @@
       <Member Id="M:System.IO.Directory.Delete(System.String,System.Boolean)" />
       <Member Id="M:System.IO.Directory.EnumerateDirectories(System.String)" />
       <Member Id="M:System.IO.Directory.EnumerateDirectories(System.String,System.String)" />
-      <Member Id="M:System.IO.Directory.EnumerateDirectories(System.String,System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.Directory.EnumerateDirectories(System.String,System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.Directory.EnumerateFiles(System.String)" />
       <Member Id="M:System.IO.Directory.EnumerateFiles(System.String,System.String)" />
-      <Member Id="M:System.IO.Directory.EnumerateFiles(System.String,System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.Directory.EnumerateFiles(System.String,System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.Directory.EnumerateFileSystemEntries(System.String)" />
       <Member Id="M:System.IO.Directory.EnumerateFileSystemEntries(System.String,System.String)" />
-      <Member Id="M:System.IO.Directory.EnumerateFileSystemEntries(System.String,System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.Directory.EnumerateFileSystemEntries(System.String,System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.Directory.Exists(System.String)" />
       <Member Id="M:System.IO.Directory.GetCreationTime(System.String)" />
@@ -19178,16 +18997,13 @@
       <Member Id="M:System.IO.Directory.GetCurrentDirectory" />
       <Member Id="M:System.IO.Directory.GetDirectories(System.String)" />
       <Member Id="M:System.IO.Directory.GetDirectories(System.String,System.String)" />
-      <Member Id="M:System.IO.Directory.GetDirectories(System.String,System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.Directory.GetDirectories(System.String,System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.Directory.GetDirectoryRoot(System.String)" />
       <Member Id="M:System.IO.Directory.GetFiles(System.String)" />
       <Member Id="M:System.IO.Directory.GetFiles(System.String,System.String)" />
-      <Member Id="M:System.IO.Directory.GetFiles(System.String,System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.Directory.GetFiles(System.String,System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.Directory.GetFileSystemEntries(System.String)" />
       <Member Id="M:System.IO.Directory.GetFileSystemEntries(System.String,System.String)" />
-      <Member Id="M:System.IO.Directory.GetFileSystemEntries(System.String,System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.Directory.GetFileSystemEntries(System.String,System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.Directory.GetLastAccessTime(System.String)" />
       <Member Id="M:System.IO.Directory.GetLastAccessTimeUtc(System.String)" />
@@ -19212,27 +19028,21 @@
       <Member Id="M:System.IO.DirectoryInfo.Delete(System.Boolean)" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateDirectories" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String)" />
-      <Member Id="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateFiles" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateFiles(System.String)" />
-      <Member Id="M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String)" />
-      <Member Id="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.DirectoryInfo.GetDirectories" />
       <Member Id="M:System.IO.DirectoryInfo.GetDirectories(System.String)" />
-      <Member Id="M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.DirectoryInfo.GetDirectories(System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.DirectoryInfo.GetFiles" />
       <Member Id="M:System.IO.DirectoryInfo.GetFiles(System.String)" />
-      <Member Id="M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.DirectoryInfo.GetFiles(System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.DirectoryInfo.GetFileSystemInfos" />
       <Member Id="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String)" />
-      <Member Id="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.EnumerationOptions)" />
       <Member Id="M:System.IO.DirectoryInfo.GetFileSystemInfos(System.String,System.IO.SearchOption)" />
       <Member Id="M:System.IO.DirectoryInfo.MoveTo(System.String)" />
       <Member Id="M:System.IO.DirectoryInfo.ToString" />
@@ -19484,8 +19294,6 @@
       <Member Id="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.Boolean)" />
       <Member Id="M:System.IO.FileStream.#ctor(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,System.Int32,System.IO.FileOptions)" />
       <Member Id="M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
-      <Member Id="M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
-      <Member Id="M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <Member Id="M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <Member Id="M:System.IO.FileStream.Dispose(System.Boolean)" />
       <Member Id="M:System.IO.FileStream.EndRead(System.IAsyncResult)" />
@@ -19610,18 +19418,14 @@
       <Member Id="M:System.IO.MemoryStream.FlushAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.MemoryStream.GetBuffer" />
       <Member Id="M:System.IO.MemoryStream.Read(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.MemoryStream.Read(System.Span{System.Byte})" />
       <Member Id="M:System.IO.MemoryStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.IO.MemoryStream.ReadAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.MemoryStream.ReadByte" />
       <Member Id="M:System.IO.MemoryStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <Member Id="M:System.IO.MemoryStream.SetLength(System.Int64)" />
       <Member Id="M:System.IO.MemoryStream.ToArray" />
       <Member Id="M:System.IO.MemoryStream.TryGetBuffer(System.ArraySegment{System.Byte}@)" />
       <Member Id="M:System.IO.MemoryStream.Write(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.MemoryStream.Write(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.IO.MemoryStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.IO.MemoryStream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.MemoryStream.WriteByte(System.Byte)" />
       <Member Id="M:System.IO.MemoryStream.WriteTo(System.IO.Stream)" />
       <Member Id="P:System.IO.MemoryStream.CanRead" />
@@ -19652,34 +19456,20 @@
       <Member Id="M:System.IO.Path.Combine(System.String,System.String,System.String)" />
       <Member Id="M:System.IO.Path.Combine(System.String,System.String,System.String,System.String)" />
       <Member Id="M:System.IO.Path.Combine(System.String[])" />
-      <Member Id="M:System.IO.Path.GetDirectoryName(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.GetDirectoryName(System.String)" />
-      <Member Id="M:System.IO.Path.GetExtension(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.GetExtension(System.String)" />
-      <Member Id="M:System.IO.Path.GetFileName(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.GetFileName(System.String)" />
-      <Member Id="M:System.IO.Path.GetFileNameWithoutExtension(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.GetFileNameWithoutExtension(System.String)" />
       <Member Id="M:System.IO.Path.GetFullPath(System.String)" />
-      <Member Id="M:System.IO.Path.GetFullPath(System.String,System.String)" />
       <Member Id="M:System.IO.Path.GetInvalidFileNameChars" />
       <Member Id="M:System.IO.Path.GetInvalidPathChars" />
-      <Member Id="M:System.IO.Path.GetPathRoot(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.GetPathRoot(System.String)" />
       <Member Id="M:System.IO.Path.GetRandomFileName" />
       <Member Id="M:System.IO.Path.GetRelativePath(System.String,System.String)" />
       <Member Id="M:System.IO.Path.GetTempFileName" />
       <Member Id="M:System.IO.Path.GetTempPath" />
-      <Member Id="M:System.IO.Path.HasExtension(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.HasExtension(System.String)" />
-      <Member Id="M:System.IO.Path.IsPathFullyQualified(System.ReadOnlySpan{System.Char})" />
-      <Member Id="M:System.IO.Path.IsPathFullyQualified(System.String)" />
-      <Member Id="M:System.IO.Path.IsPathRooted(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.Path.IsPathRooted(System.String)" />
-      <Member Id="M:System.IO.Path.Join(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
-      <Member Id="M:System.IO.Path.Join(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
-      <Member Id="M:System.IO.Path.TryJoin(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@)" />
-      <Member Id="M:System.IO.Path.TryJoin(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@)" />
     </Type>
     <Type Name="System.IO.PathTooLongException" Id="T:System.IO.PathTooLongException">
       <Member Id="M:System.IO.PathTooLongException.#ctor" />
@@ -19713,7 +19503,6 @@
       <Member Id="M:System.IO.Stream.CopyToAsync(System.IO.Stream)" />
       <Member Id="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)" />
       <Member Id="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Stream.CreateWaitHandle" />
       <Member Id="M:System.IO.Stream.Dispose" />
       <Member Id="M:System.IO.Stream.Dispose(System.Boolean)" />
@@ -19724,19 +19513,15 @@
       <Member Id="M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Stream.ObjectInvariant" />
       <Member Id="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.Stream.Read(System.Span{System.Byte})" />
       <Member Id="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.IO.Stream.ReadAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Stream.ReadByte" />
       <Member Id="M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <Member Id="M:System.IO.Stream.SetLength(System.Int64)" />
       <Member Id="M:System.IO.Stream.Synchronized(System.IO.Stream)" />
       <Member Id="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.Stream.Write(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
-      <Member Id="M:System.IO.Stream.WriteAsync(System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.Stream.WriteByte(System.Byte)" />
       <Member Id="P:System.IO.Stream.CanRead" />
       <Member Id="P:System.IO.Stream.CanSeek" />
@@ -19766,13 +19551,9 @@
       <Member Id="M:System.IO.StreamReader.Peek" />
       <Member Id="M:System.IO.StreamReader.Read" />
       <Member Id="M:System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamReader.Read(System.Span{System.Char})" />
       <Member Id="M:System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamReader.ReadAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamReader.ReadBlock(System.Span{System.Char})" />
       <Member Id="M:System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamReader.ReadBlockAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StreamReader.ReadLine" />
       <Member Id="M:System.IO.StreamReader.ReadLineAsync" />
       <Member Id="M:System.IO.StreamReader.ReadToEnd" />
@@ -19798,18 +19579,13 @@
       <Member Id="M:System.IO.StreamWriter.Write(System.Char)" />
       <Member Id="M:System.IO.StreamWriter.Write(System.Char[])" />
       <Member Id="M:System.IO.StreamWriter.Write(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamWriter.Write(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.StreamWriter.Write(System.String)" />
       <Member Id="M:System.IO.StreamWriter.WriteAsync(System.Char)" />
       <Member Id="M:System.IO.StreamWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StreamWriter.WriteAsync(System.String)" />
-      <Member Id="M:System.IO.StreamWriter.WriteLine(System.ReadOnlySpan{System.Char})" />
-      <Member Id="M:System.IO.StreamWriter.WriteLine(System.String)" />
       <Member Id="M:System.IO.StreamWriter.WriteLineAsync" />
       <Member Id="M:System.IO.StreamWriter.WriteLineAsync(System.Char)" />
       <Member Id="M:System.IO.StreamWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StreamWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StreamWriter.WriteLineAsync(System.String)" />
       <Member Id="P:System.IO.StreamWriter.AutoFlush" />
       <Member Id="P:System.IO.StreamWriter.BaseStream" />
@@ -19822,12 +19598,8 @@
       <Member Id="M:System.IO.StringReader.Peek" />
       <Member Id="M:System.IO.StringReader.Read" />
       <Member Id="M:System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StringReader.Read(System.Span{System.Char})" />
       <Member Id="M:System.IO.StringReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StringReader.ReadAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
-      <Member Id="M:System.IO.StringReader.ReadBlock(System.Span{System.Char})" />
       <Member Id="M:System.IO.StringReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StringReader.ReadBlockAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StringReader.ReadLine" />
       <Member Id="M:System.IO.StringReader.ReadLineAsync" />
       <Member Id="M:System.IO.StringReader.ReadToEnd" />
@@ -19845,16 +19617,12 @@
       <Member Id="M:System.IO.StringWriter.ToString" />
       <Member Id="M:System.IO.StringWriter.Write(System.Char)" />
       <Member Id="M:System.IO.StringWriter.Write(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StringWriter.Write(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.StringWriter.Write(System.String)" />
       <Member Id="M:System.IO.StringWriter.WriteAsync(System.Char)" />
       <Member Id="M:System.IO.StringWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StringWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StringWriter.WriteAsync(System.String)" />
-      <Member Id="M:System.IO.StringWriter.WriteLine(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.StringWriter.WriteLineAsync(System.Char)" />
       <Member Id="M:System.IO.StringWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.StringWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.StringWriter.WriteLineAsync(System.String)" />
       <Member Id="P:System.IO.StringWriter.Encoding" />
     </Type>
@@ -19867,13 +19635,9 @@
       <Member Id="M:System.IO.TextReader.Peek" />
       <Member Id="M:System.IO.TextReader.Read" />
       <Member Id="M:System.IO.TextReader.Read(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.TextReader.Read(System.Span{System.Char})" />
       <Member Id="M:System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.TextReader.ReadAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.TextReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.TextReader.ReadBlock(System.Span{System.Char})" />
       <Member Id="M:System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.TextReader.ReadBlockAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.TextReader.ReadLine" />
       <Member Id="M:System.IO.TextReader.ReadLineAsync" />
       <Member Id="M:System.IO.TextReader.ReadToEnd" />
@@ -19900,7 +19664,6 @@
       <Member Id="M:System.IO.TextWriter.Write(System.Int32)" />
       <Member Id="M:System.IO.TextWriter.Write(System.Int64)" />
       <Member Id="M:System.IO.TextWriter.Write(System.Object)" />
-      <Member Id="M:System.IO.TextWriter.Write(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.TextWriter.Write(System.Single)" />
       <Member Id="M:System.IO.TextWriter.Write(System.String)" />
       <Member Id="M:System.IO.TextWriter.Write(System.String,System.Object)" />
@@ -19912,7 +19675,6 @@
       <Member Id="M:System.IO.TextWriter.WriteAsync(System.Char)" />
       <Member Id="M:System.IO.TextWriter.WriteAsync(System.Char[])" />
       <Member Id="M:System.IO.TextWriter.WriteAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.TextWriter.WriteAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.TextWriter.WriteAsync(System.String)" />
       <Member Id="M:System.IO.TextWriter.WriteLine" />
       <Member Id="M:System.IO.TextWriter.WriteLine(System.Boolean)" />
@@ -19924,7 +19686,6 @@
       <Member Id="M:System.IO.TextWriter.WriteLine(System.Int32)" />
       <Member Id="M:System.IO.TextWriter.WriteLine(System.Int64)" />
       <Member Id="M:System.IO.TextWriter.WriteLine(System.Object)" />
-      <Member Id="M:System.IO.TextWriter.WriteLine(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.IO.TextWriter.WriteLine(System.Single)" />
       <Member Id="M:System.IO.TextWriter.WriteLine(System.String)" />
       <Member Id="M:System.IO.TextWriter.WriteLine(System.String,System.Object)" />
@@ -19937,7 +19698,6 @@
       <Member Id="M:System.IO.TextWriter.WriteLineAsync(System.Char)" />
       <Member Id="M:System.IO.TextWriter.WriteLineAsync(System.Char[])" />
       <Member Id="M:System.IO.TextWriter.WriteLineAsync(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.TextWriter.WriteLineAsync(System.ReadOnlyMemory{System.Char},System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.TextWriter.WriteLineAsync(System.String)" />
       <Member Id="P:System.IO.TextWriter.Encoding" />
       <Member Id="P:System.IO.TextWriter.FormatProvider" />
@@ -19997,13 +19757,11 @@
       <Member Id="M:System.IO.UnmanagedMemoryStream.Initialize(System.Byte*,System.Int64,System.Int64,System.IO.FileAccess)" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.Read(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.UnmanagedMemoryStream.Read(System.Span{System.Byte})" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.ReadByte" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.Seek(System.Int64,System.IO.SeekOrigin)" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.SetLength(System.Int64)" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.Write(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.IO.UnmanagedMemoryStream.Write(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
       <Member Id="M:System.IO.UnmanagedMemoryStream.WriteByte(System.Byte)" />
       <Member Id="P:System.IO.UnmanagedMemoryStream.CanRead" />
@@ -20105,7 +19863,6 @@
       <Member Id="M:System.IO.Compression.ZipArchiveEntry.ToString" />
       <Member Id="P:System.IO.Compression.ZipArchiveEntry.Archive" />
       <Member Id="P:System.IO.Compression.ZipArchiveEntry.CompressedLength" />
-      <Member Id="P:System.IO.Compression.ZipArchiveEntry.Crc32" />
       <Member Id="P:System.IO.Compression.ZipArchiveEntry.ExternalAttributes" />
       <Member Id="P:System.IO.Compression.ZipArchiveEntry.FullName" />
       <Member Id="P:System.IO.Compression.ZipArchiveEntry.LastWriteTime" />
@@ -20526,35 +20283,6 @@
       <Member Id="M:System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync" />
       <Member Id="M:System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync(System.Threading.CancellationToken)" />
     </Type>
-    <Type Name="System.IO.Pipes.PipeAccessRights" Id="T:System.IO.Pipes.PipeAccessRights">
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.AccessSystemSecurity" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.ChangePermissions" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.CreateNewInstance" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.Delete" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.FullControl" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.Read" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.ReadAttributes" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.ReadData" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.ReadExtendedAttributes" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.ReadPermissions" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.ReadWrite" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.Synchronize" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.TakeOwnership" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.Write" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.WriteAttributes" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.WriteData" />
-      <Member Id="F:System.IO.Pipes.PipeAccessRights.WriteExtendedAttributes" />
-    </Type>
-    <Type Name="System.IO.Pipes.PipeAccessRule" Id="T:System.IO.Pipes.PipeAccessRule">
-      <Member Id="M:System.IO.Pipes.PipeAccessRule.#ctor(System.Security.Principal.IdentityReference,System.IO.Pipes.PipeAccessRights,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="M:System.IO.Pipes.PipeAccessRule.#ctor(System.String,System.IO.Pipes.PipeAccessRights,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="P:System.IO.Pipes.PipeAccessRule.PipeAccessRights" />
-    </Type>
-    <Type Name="System.IO.Pipes.PipeAuditRule" Id="T:System.IO.Pipes.PipeAuditRule">
-      <Member Id="M:System.IO.Pipes.PipeAuditRule.#ctor(System.Security.Principal.IdentityReference,System.IO.Pipes.PipeAccessRights,System.Security.AccessControl.AuditFlags)" />
-      <Member Id="M:System.IO.Pipes.PipeAuditRule.#ctor(System.String,System.IO.Pipes.PipeAccessRights,System.Security.AccessControl.AuditFlags)" />
-      <Member Id="P:System.IO.Pipes.PipeAuditRule.PipeAccessRights" />
-    </Type>
     <Type Name="System.IO.Pipes.PipeDirection" Id="T:System.IO.Pipes.PipeDirection">
       <Member Id="F:System.IO.Pipes.PipeDirection.In" />
       <Member Id="F:System.IO.Pipes.PipeDirection.InOut" />
@@ -20562,29 +20290,8 @@
     </Type>
     <Type Name="System.IO.Pipes.PipeOptions" Id="T:System.IO.Pipes.PipeOptions">
       <Member Id="F:System.IO.Pipes.PipeOptions.Asynchronous" />
-      <Member Id="F:System.IO.Pipes.PipeOptions.CurrentUserOnly" />
       <Member Id="F:System.IO.Pipes.PipeOptions.None" />
       <Member Id="F:System.IO.Pipes.PipeOptions.WriteThrough" />
-    </Type>
-    <Type Name="System.IO.Pipes.PipeSecurity" Id="T:System.IO.Pipes.PipeSecurity">
-      <Member Id="M:System.IO.Pipes.PipeSecurity.#ctor" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.AddAccessRule(System.IO.Pipes.PipeAccessRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.AddAuditRule(System.IO.Pipes.PipeAuditRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.Persist(System.Runtime.InteropServices.SafeHandle)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.Persist(System.String)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.RemoveAccessRule(System.IO.Pipes.PipeAccessRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.RemoveAccessRuleSpecific(System.IO.Pipes.PipeAccessRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.RemoveAuditRule(System.IO.Pipes.PipeAuditRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.RemoveAuditRuleAll(System.IO.Pipes.PipeAuditRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific(System.IO.Pipes.PipeAuditRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.ResetAccessRule(System.IO.Pipes.PipeAccessRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.SetAccessRule(System.IO.Pipes.PipeAccessRule)" />
-      <Member Id="M:System.IO.Pipes.PipeSecurity.SetAuditRule(System.IO.Pipes.PipeAuditRule)" />
-      <Member Id="P:System.IO.Pipes.PipeSecurity.AccessRightType" />
-      <Member Id="P:System.IO.Pipes.PipeSecurity.AccessRuleType" />
-      <Member Id="P:System.IO.Pipes.PipeSecurity.AuditRuleType" />
     </Type>
     <Type Name="System.IO.Pipes.PipeStream" Id="T:System.IO.Pipes.PipeStream">
       <Member Id="M:System.IO.Pipes.PipeStream.#ctor(System.IO.Pipes.PipeDirection,System.Int32)" />
@@ -22657,55 +22364,40 @@
     </Type>
     <Type Name="System.Net.HttpStatusCode" Id="T:System.Net.HttpStatusCode">
       <Member Id="F:System.Net.HttpStatusCode.Accepted" />
-      <Member Id="F:System.Net.HttpStatusCode.AlreadyReported" />
       <Member Id="F:System.Net.HttpStatusCode.Ambiguous" />
       <Member Id="F:System.Net.HttpStatusCode.BadGateway" />
       <Member Id="F:System.Net.HttpStatusCode.BadRequest" />
       <Member Id="F:System.Net.HttpStatusCode.Conflict" />
       <Member Id="F:System.Net.HttpStatusCode.Continue" />
       <Member Id="F:System.Net.HttpStatusCode.Created" />
-      <Member Id="F:System.Net.HttpStatusCode.EarlyHints" />
       <Member Id="F:System.Net.HttpStatusCode.ExpectationFailed" />
-      <Member Id="F:System.Net.HttpStatusCode.FailedDependency" />
       <Member Id="F:System.Net.HttpStatusCode.Forbidden" />
       <Member Id="F:System.Net.HttpStatusCode.Found" />
       <Member Id="F:System.Net.HttpStatusCode.GatewayTimeout" />
       <Member Id="F:System.Net.HttpStatusCode.Gone" />
       <Member Id="F:System.Net.HttpStatusCode.HttpVersionNotSupported" />
-      <Member Id="F:System.Net.HttpStatusCode.IMUsed" />
-      <Member Id="F:System.Net.HttpStatusCode.InsufficientStorage" />
       <Member Id="F:System.Net.HttpStatusCode.InternalServerError" />
       <Member Id="F:System.Net.HttpStatusCode.LengthRequired" />
-      <Member Id="F:System.Net.HttpStatusCode.Locked" />
-      <Member Id="F:System.Net.HttpStatusCode.LoopDetected" />
       <Member Id="F:System.Net.HttpStatusCode.MethodNotAllowed" />
-      <Member Id="F:System.Net.HttpStatusCode.MisdirectedRequest" />
       <Member Id="F:System.Net.HttpStatusCode.Moved" />
       <Member Id="F:System.Net.HttpStatusCode.MovedPermanently" />
       <Member Id="F:System.Net.HttpStatusCode.MultipleChoices" />
-      <Member Id="F:System.Net.HttpStatusCode.MultiStatus" />
-      <Member Id="F:System.Net.HttpStatusCode.NetworkAuthenticationRequired" />
       <Member Id="F:System.Net.HttpStatusCode.NoContent" />
       <Member Id="F:System.Net.HttpStatusCode.NonAuthoritativeInformation" />
       <Member Id="F:System.Net.HttpStatusCode.NotAcceptable" />
-      <Member Id="F:System.Net.HttpStatusCode.NotExtended" />
       <Member Id="F:System.Net.HttpStatusCode.NotFound" />
       <Member Id="F:System.Net.HttpStatusCode.NotImplemented" />
       <Member Id="F:System.Net.HttpStatusCode.NotModified" />
       <Member Id="F:System.Net.HttpStatusCode.OK" />
       <Member Id="F:System.Net.HttpStatusCode.PartialContent" />
       <Member Id="F:System.Net.HttpStatusCode.PaymentRequired" />
-      <Member Id="F:System.Net.HttpStatusCode.PermanentRedirect" />
       <Member Id="F:System.Net.HttpStatusCode.PreconditionFailed" />
-      <Member Id="F:System.Net.HttpStatusCode.PreconditionRequired" />
-      <Member Id="F:System.Net.HttpStatusCode.Processing" />
       <Member Id="F:System.Net.HttpStatusCode.ProxyAuthenticationRequired" />
       <Member Id="F:System.Net.HttpStatusCode.Redirect" />
       <Member Id="F:System.Net.HttpStatusCode.RedirectKeepVerb" />
       <Member Id="F:System.Net.HttpStatusCode.RedirectMethod" />
       <Member Id="F:System.Net.HttpStatusCode.RequestedRangeNotSatisfiable" />
       <Member Id="F:System.Net.HttpStatusCode.RequestEntityTooLarge" />
-      <Member Id="F:System.Net.HttpStatusCode.RequestHeaderFieldsTooLarge" />
       <Member Id="F:System.Net.HttpStatusCode.RequestTimeout" />
       <Member Id="F:System.Net.HttpStatusCode.RequestUriTooLong" />
       <Member Id="F:System.Net.HttpStatusCode.ResetContent" />
@@ -22713,15 +22405,11 @@
       <Member Id="F:System.Net.HttpStatusCode.ServiceUnavailable" />
       <Member Id="F:System.Net.HttpStatusCode.SwitchingProtocols" />
       <Member Id="F:System.Net.HttpStatusCode.TemporaryRedirect" />
-      <Member Id="F:System.Net.HttpStatusCode.TooManyRequests" />
       <Member Id="F:System.Net.HttpStatusCode.Unauthorized" />
-      <Member Id="F:System.Net.HttpStatusCode.UnavailableForLegalReasons" />
-      <Member Id="F:System.Net.HttpStatusCode.UnprocessableEntity" />
       <Member Id="F:System.Net.HttpStatusCode.UnsupportedMediaType" />
       <Member Id="F:System.Net.HttpStatusCode.Unused" />
       <Member Id="F:System.Net.HttpStatusCode.UpgradeRequired" />
       <Member Id="F:System.Net.HttpStatusCode.UseProxy" />
-      <Member Id="F:System.Net.HttpStatusCode.VariantAlsoNegotiates" />
     </Type>
     <Type Name="System.Net.HttpVersion" Id="T:System.Net.HttpVersion">
       <Member Id="F:System.Net.HttpVersion.Unknown" />
@@ -22847,8 +22535,6 @@
       <Member Id="M:System.Net.IPAddress.#ctor(System.Byte[])" />
       <Member Id="M:System.Net.IPAddress.#ctor(System.Byte[],System.Int64)" />
       <Member Id="M:System.Net.IPAddress.#ctor(System.Int64)" />
-      <Member Id="M:System.Net.IPAddress.#ctor(System.ReadOnlySpan{System.Byte})" />
-      <Member Id="M:System.Net.IPAddress.#ctor(System.ReadOnlySpan{System.Byte},System.Int64)" />
       <Member Id="M:System.Net.IPAddress.Equals(System.Object)" />
       <Member Id="M:System.Net.IPAddress.GetAddressBytes" />
       <Member Id="M:System.Net.IPAddress.GetHashCode" />
@@ -22861,13 +22547,9 @@
       <Member Id="M:System.Net.IPAddress.NetworkToHostOrder(System.Int16)" />
       <Member Id="M:System.Net.IPAddress.NetworkToHostOrder(System.Int32)" />
       <Member Id="M:System.Net.IPAddress.NetworkToHostOrder(System.Int64)" />
-      <Member Id="M:System.Net.IPAddress.Parse(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Net.IPAddress.Parse(System.String)" />
       <Member Id="M:System.Net.IPAddress.ToString" />
-      <Member Id="M:System.Net.IPAddress.TryFormat(System.Span{System.Char},System.Int32@)" />
-      <Member Id="M:System.Net.IPAddress.TryParse(System.ReadOnlySpan{System.Char},System.Net.IPAddress@)" />
       <Member Id="M:System.Net.IPAddress.TryParse(System.String,System.Net.IPAddress@)" />
-      <Member Id="M:System.Net.IPAddress.TryWriteBytes(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Net.IPAddress.Address" />
       <Member Id="P:System.Net.IPAddress.AddressFamily" />
       <Member Id="P:System.Net.IPAddress.IsIPv4MappedToIPv6" />
@@ -23491,10 +23173,6 @@
       <Member Id="M:System.Net.Http.HttpClient.GetStreamAsync(System.Uri)" />
       <Member Id="M:System.Net.Http.HttpClient.GetStringAsync(System.String)" />
       <Member Id="M:System.Net.Http.HttpClient.GetStringAsync(System.Uri)" />
-      <Member Id="M:System.Net.Http.HttpClient.PatchAsync(System.String,System.Net.Http.HttpContent)" />
-      <Member Id="M:System.Net.Http.HttpClient.PatchAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)" />
-      <Member Id="M:System.Net.Http.HttpClient.PatchAsync(System.Uri,System.Net.Http.HttpContent)" />
-      <Member Id="M:System.Net.Http.HttpClient.PatchAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent)" />
       <Member Id="M:System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)" />
@@ -23587,7 +23265,6 @@
       <Member Id="P:System.Net.Http.HttpMethod.Head" />
       <Member Id="P:System.Net.Http.HttpMethod.Method" />
       <Member Id="P:System.Net.Http.HttpMethod.Options" />
-      <Member Id="P:System.Net.Http.HttpMethod.Patch" />
       <Member Id="P:System.Net.Http.HttpMethod.Post" />
       <Member Id="P:System.Net.Http.HttpMethod.Put" />
       <Member Id="P:System.Net.Http.HttpMethod.Trace" />
@@ -24319,12 +23996,10 @@
     </Type>
     <Type Name="System.Net.Mime.MediaTypeNames" Id="T:System.Net.Mime.MediaTypeNames" />
     <Type Name="System.Net.Mime.MediaTypeNames/Application" Id="T:System.Net.Mime.MediaTypeNames.Application">
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Json" />
       <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Octet" />
       <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Pdf" />
       <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Rtf" />
       <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Soap" />
-      <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Xml" />
       <Member Id="F:System.Net.Mime.MediaTypeNames.Application.Zip" />
     </Type>
     <Type Name="System.Net.Mime.MediaTypeNames/Image" Id="T:System.Net.Mime.MediaTypeNames.Image">
@@ -25033,14 +24708,12 @@
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClient(System.String)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClient(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Boolean)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClient(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Authentication.SslProtocols,System.Boolean)" />
-      <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.Net.Security.SslClientAuthenticationOptions,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.String)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Boolean)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Authentication.SslProtocols,System.Boolean)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Boolean)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean)" />
-      <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Net.Security.SslServerAuthenticationOptions,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Boolean)" />
       <Member Id="M:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean)" />
@@ -25083,7 +24756,6 @@
       <Member Id="P:System.Net.Security.SslStream.KeyExchangeStrength" />
       <Member Id="P:System.Net.Security.SslStream.Length" />
       <Member Id="P:System.Net.Security.SslStream.LocalCertificate" />
-      <Member Id="P:System.Net.Security.SslStream.NegotiatedApplicationProtocol" />
       <Member Id="P:System.Net.Security.SslStream.Position" />
       <Member Id="P:System.Net.Security.SslStream.ReadTimeout" />
       <Member Id="P:System.Net.Security.SslStream.RemoteCertificate" />
@@ -25377,9 +25049,6 @@
       <Member Id="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}})" />
       <Member Id="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
       <Member Id="M:System.Net.Sockets.Socket.Receive(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
-      <Member Id="M:System.Net.Sockets.Socket.Receive(System.Span{System.Byte})" />
-      <Member Id="M:System.Net.Sockets.Socket.Receive(System.Span{System.Byte},System.Net.Sockets.SocketFlags)" />
-      <Member Id="M:System.Net.Sockets.Socket.Receive(System.Span{System.Byte},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <Member Id="M:System.Net.Sockets.Socket.ReceiveAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
       <Member Id="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
       <Member Id="M:System.Net.Sockets.Socket.ReceiveFrom(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@)" />
@@ -25397,9 +25066,6 @@
       <Member Id="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}})" />
       <Member Id="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
       <Member Id="M:System.Net.Sockets.Socket.Send(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
-      <Member Id="M:System.Net.Sockets.Socket.Send(System.ReadOnlySpan{System.Byte})" />
-      <Member Id="M:System.Net.Sockets.Socket.Send(System.ReadOnlySpan{System.Byte},System.Net.Sockets.SocketFlags)" />
-      <Member Id="M:System.Net.Sockets.Socket.Send(System.ReadOnlySpan{System.Byte},System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError@)" />
       <Member Id="M:System.Net.Sockets.Socket.SendAsync(System.Net.Sockets.SocketAsyncEventArgs)" />
       <Member Id="M:System.Net.Sockets.Socket.SendFile(System.String)" />
       <Member Id="M:System.Net.Sockets.Socket.SendFile(System.String,System.Byte[],System.Byte[],System.Net.Sockets.TransmitFileOptions)" />
@@ -25451,7 +25117,6 @@
       <Member Id="M:System.Net.Sockets.SocketAsyncEventArgs.OnCompleted(System.Net.Sockets.SocketAsyncEventArgs)" />
       <Member Id="M:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Int32,System.Int32)" />
-      <Member Id="M:System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(System.Memory{System.Byte})" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.AcceptSocket" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.Buffer" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" />
@@ -25461,7 +25126,6 @@
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.Count" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.DisconnectReuseSocket" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.LastOperation" />
-      <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.MemoryBuffer" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.Offset" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.ReceiveMessageFromPacketInfo" />
       <Member Id="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" />
@@ -25641,12 +25305,10 @@
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.ConnectAsync(System.Net.Sockets.Socket,System.String,System.Int32)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.ReceiveAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.ReceiveAsync(System.Net.Sockets.Socket,System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
-      <Member Id="M:System.Net.Sockets.SocketTaskExtensions.ReceiveAsync(System.Net.Sockets.Socket,System.Memory{System.Byte},System.Net.Sockets.SocketFlags,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.ReceiveFromAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.ReceiveMessageFromAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.SendAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.SendAsync(System.Net.Sockets.Socket,System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
-      <Member Id="M:System.Net.Sockets.SocketTaskExtensions.SendAsync(System.Net.Sockets.Socket,System.ReadOnlyMemory{System.Byte},System.Net.Sockets.SocketFlags,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.Sockets.SocketTaskExtensions.SendToAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
     </Type>
     <Type Name="System.Net.Sockets.SocketType" Id="T:System.Net.Sockets.SocketType">
@@ -25801,7 +25463,6 @@
       <Member Id="P:System.Net.WebSockets.ClientWebSocketOptions.Credentials" />
       <Member Id="P:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" />
       <Member Id="P:System.Net.WebSockets.ClientWebSocketOptions.Proxy" />
-      <Member Id="P:System.Net.WebSockets.ClientWebSocketOptions.RemoteCertificateValidationCallback" />
       <Member Id="P:System.Net.WebSockets.ClientWebSocketOptions.UseDefaultCredentials" />
     </Type>
     <Type Name="System.Net.WebSockets.HttpListenerWebSocketContext" Id="T:System.Net.WebSockets.HttpListenerWebSocketContext">
@@ -25825,16 +25486,13 @@
       <Member Id="M:System.Net.WebSockets.WebSocket.CloseOutputAsync(System.Net.WebSockets.WebSocketCloseStatus,System.String,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.CreateClientBuffer(System.Int32,System.Int32)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.CreateClientWebSocket(System.IO.Stream,System.String,System.Int32,System.Int32,System.TimeSpan,System.Boolean,System.ArraySegment{System.Byte})" />
-      <Member Id="M:System.Net.WebSockets.WebSocket.CreateFromStream(System.IO.Stream,System.Boolean,System.String,System.TimeSpan)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.CreateServerBuffer(System.Int32)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.Dispose" />
       <Member Id="M:System.Net.WebSockets.WebSocket.IsApplicationTargeting45" />
       <Member Id="M:System.Net.WebSockets.WebSocket.IsStateTerminal(System.Net.WebSockets.WebSocketState)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.ReceiveAsync(System.ArraySegment{System.Byte},System.Threading.CancellationToken)" />
-      <Member Id="M:System.Net.WebSockets.WebSocket.ReceiveAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.RegisterPrefixes" />
       <Member Id="M:System.Net.WebSockets.WebSocket.SendAsync(System.ArraySegment{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)" />
-      <Member Id="M:System.Net.WebSockets.WebSocket.SendAsync(System.ReadOnlyMemory{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)" />
       <Member Id="M:System.Net.WebSockets.WebSocket.ThrowOnInvalidState(System.Net.WebSockets.WebSocketState,System.Net.WebSockets.WebSocketState[])" />
       <Member Id="P:System.Net.WebSockets.WebSocket.CloseStatus" />
       <Member Id="P:System.Net.WebSockets.WebSocket.CloseStatusDescription" />
@@ -25931,7 +25589,6 @@
       <Member Id="M:System.Numerics.BigInteger.#ctor(System.Double)" />
       <Member Id="M:System.Numerics.BigInteger.#ctor(System.Int32)" />
       <Member Id="M:System.Numerics.BigInteger.#ctor(System.Int64)" />
-      <Member Id="M:System.Numerics.BigInteger.#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Boolean)" />
       <Member Id="M:System.Numerics.BigInteger.#ctor(System.Single)" />
       <Member Id="M:System.Numerics.BigInteger.#ctor(System.UInt32)" />
       <Member Id="M:System.Numerics.BigInteger.#ctor(System.UInt64)" />
@@ -25948,7 +25605,6 @@
       <Member Id="M:System.Numerics.BigInteger.Equals(System.Numerics.BigInteger)" />
       <Member Id="M:System.Numerics.BigInteger.Equals(System.Object)" />
       <Member Id="M:System.Numerics.BigInteger.Equals(System.UInt64)" />
-      <Member Id="M:System.Numerics.BigInteger.GetByteCount(System.Boolean)" />
       <Member Id="M:System.Numerics.BigInteger.GetHashCode" />
       <Member Id="M:System.Numerics.BigInteger.GreatestCommonDivisor(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <Member Id="M:System.Numerics.BigInteger.Log(System.Numerics.BigInteger)" />
@@ -26026,7 +25682,6 @@
       <Member Id="M:System.Numerics.BigInteger.op_Subtraction(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <Member Id="M:System.Numerics.BigInteger.op_UnaryNegation(System.Numerics.BigInteger)" />
       <Member Id="M:System.Numerics.BigInteger.op_UnaryPlus(System.Numerics.BigInteger)" />
-      <Member Id="M:System.Numerics.BigInteger.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <Member Id="M:System.Numerics.BigInteger.Parse(System.String)" />
       <Member Id="M:System.Numerics.BigInteger.Parse(System.String,System.Globalization.NumberStyles)" />
       <Member Id="M:System.Numerics.BigInteger.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
@@ -26035,17 +25690,12 @@
       <Member Id="M:System.Numerics.BigInteger.Remainder(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <Member Id="M:System.Numerics.BigInteger.Subtract(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <Member Id="M:System.Numerics.BigInteger.ToByteArray" />
-      <Member Id="M:System.Numerics.BigInteger.ToByteArray(System.Boolean,System.Boolean)" />
       <Member Id="M:System.Numerics.BigInteger.ToString" />
       <Member Id="M:System.Numerics.BigInteger.ToString(System.IFormatProvider)" />
       <Member Id="M:System.Numerics.BigInteger.ToString(System.String)" />
       <Member Id="M:System.Numerics.BigInteger.ToString(System.String,System.IFormatProvider)" />
-      <Member Id="M:System.Numerics.BigInteger.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
-      <Member Id="M:System.Numerics.BigInteger.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Numerics.BigInteger@)" />
-      <Member Id="M:System.Numerics.BigInteger.TryParse(System.ReadOnlySpan{System.Char},System.Numerics.BigInteger@)" />
       <Member Id="M:System.Numerics.BigInteger.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Numerics.BigInteger@)" />
       <Member Id="M:System.Numerics.BigInteger.TryParse(System.String,System.Numerics.BigInteger@)" />
-      <Member Id="M:System.Numerics.BigInteger.TryWriteBytes(System.Span{System.Byte},System.Int32@,System.Boolean,System.Boolean)" />
       <Member Id="P:System.Numerics.BigInteger.IsEven" />
       <Member Id="P:System.Numerics.BigInteger.IsOne" />
       <Member Id="P:System.Numerics.BigInteger.IsPowerOfTwo" />
@@ -26618,7 +26268,6 @@
       <Member Id="M:System.Reflection.Assembly.GetFile(System.String)" />
       <Member Id="M:System.Reflection.Assembly.GetFiles" />
       <Member Id="M:System.Reflection.Assembly.GetFiles(System.Boolean)" />
-      <Member Id="M:System.Reflection.Assembly.GetForwardedTypes" />
       <Member Id="M:System.Reflection.Assembly.GetHashCode" />
       <Member Id="M:System.Reflection.Assembly.GetLoadedModules" />
       <Member Id="M:System.Reflection.Assembly.GetLoadedModules(System.Boolean)" />
@@ -26833,7 +26482,6 @@
       <Member Id="F:System.Reflection.BindingFlags.CreateInstance" />
       <Member Id="F:System.Reflection.BindingFlags.DeclaredOnly" />
       <Member Id="F:System.Reflection.BindingFlags.Default" />
-      <Member Id="F:System.Reflection.BindingFlags.DoNotWrapExceptions" />
       <Member Id="F:System.Reflection.BindingFlags.ExactBinding" />
       <Member Id="F:System.Reflection.BindingFlags.FlattenHierarchy" />
       <Member Id="F:System.Reflection.BindingFlags.GetField" />
@@ -27166,7 +26814,6 @@
       <Member Id="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)" />
       <Member Id="M:System.Reflection.MemberInfo.GetCustomAttributesData" />
       <Member Id="M:System.Reflection.MemberInfo.GetHashCode" />
-      <Member Id="M:System.Reflection.MemberInfo.HasSameMetadataDefinitionAs(System.Reflection.MemberInfo)" />
       <Member Id="M:System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)" />
       <Member Id="M:System.Reflection.MemberInfo.op_Equality(System.Reflection.MemberInfo,System.Reflection.MemberInfo)" />
       <Member Id="M:System.Reflection.MemberInfo.op_Inequality(System.Reflection.MemberInfo,System.Reflection.MemberInfo)" />
@@ -27239,7 +26886,6 @@
       <Member Id="P:System.Reflection.MethodBase.ContainsGenericParameters" />
       <Member Id="P:System.Reflection.MethodBase.IsAbstract" />
       <Member Id="P:System.Reflection.MethodBase.IsAssembly" />
-      <Member Id="P:System.Reflection.MethodBase.IsConstructedGenericMethod" />
       <Member Id="P:System.Reflection.MethodBase.IsConstructor" />
       <Member Id="P:System.Reflection.MethodBase.IsFamily" />
       <Member Id="P:System.Reflection.MethodBase.IsFamilyAndAssembly" />
@@ -27661,10 +27307,7 @@
       <Member Id="P:System.Reflection.TypeDelegator.BaseType" />
       <Member Id="P:System.Reflection.TypeDelegator.FullName" />
       <Member Id="P:System.Reflection.TypeDelegator.GUID" />
-      <Member Id="P:System.Reflection.TypeDelegator.IsByRefLike" />
       <Member Id="P:System.Reflection.TypeDelegator.IsConstructedGenericType" />
-      <Member Id="P:System.Reflection.TypeDelegator.IsGenericMethodParameter" />
-      <Member Id="P:System.Reflection.TypeDelegator.IsGenericTypeParameter" />
       <Member Id="P:System.Reflection.TypeDelegator.IsSZArray" />
       <Member Id="P:System.Reflection.TypeDelegator.IsTypeDefinition" />
       <Member Id="P:System.Reflection.TypeDelegator.IsVariableBoundArray" />
@@ -27862,7 +27505,6 @@
       <Member Id="P:System.Reflection.Emit.EnumBuilder.DeclaringType" />
       <Member Id="P:System.Reflection.Emit.EnumBuilder.FullName" />
       <Member Id="P:System.Reflection.Emit.EnumBuilder.GUID" />
-      <Member Id="P:System.Reflection.Emit.EnumBuilder.IsByRefLike" />
       <Member Id="P:System.Reflection.Emit.EnumBuilder.IsConstructedGenericType" />
       <Member Id="P:System.Reflection.Emit.EnumBuilder.IsSZArray" />
       <Member Id="P:System.Reflection.Emit.EnumBuilder.IsTypeDefinition" />
@@ -27970,7 +27612,6 @@
       <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.GenericParameterAttributes" />
       <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.GenericParameterPosition" />
       <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.GUID" />
-      <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsByRefLike" />
       <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsConstructedGenericType" />
       <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsGenericParameter" />
       <Member Id="P:System.Reflection.Emit.GenericTypeParameterBuilder.IsGenericType" />
@@ -28065,7 +27706,6 @@
       <Member Id="P:System.Reflection.Emit.MethodBuilder.ContainsGenericParameters" />
       <Member Id="P:System.Reflection.Emit.MethodBuilder.DeclaringType" />
       <Member Id="P:System.Reflection.Emit.MethodBuilder.InitLocals" />
-      <Member Id="P:System.Reflection.Emit.MethodBuilder.IsConstructedGenericMethod" />
       <Member Id="P:System.Reflection.Emit.MethodBuilder.IsGenericMethod" />
       <Member Id="P:System.Reflection.Emit.MethodBuilder.IsGenericMethodDefinition" />
       <Member Id="P:System.Reflection.Emit.MethodBuilder.MethodHandle" />
@@ -28561,7 +28201,6 @@
       <Member Id="P:System.Reflection.Emit.TypeBuilder.GenericParameterAttributes" />
       <Member Id="P:System.Reflection.Emit.TypeBuilder.GenericParameterPosition" />
       <Member Id="P:System.Reflection.Emit.TypeBuilder.GUID" />
-      <Member Id="P:System.Reflection.Emit.TypeBuilder.IsByRefLike" />
       <Member Id="P:System.Reflection.Emit.TypeBuilder.IsConstructedGenericType" />
       <Member Id="P:System.Reflection.Emit.TypeBuilder.IsGenericParameter" />
       <Member Id="P:System.Reflection.Emit.TypeBuilder.IsGenericType" />
@@ -31976,7 +31615,6 @@
     <Type Name="System.Runtime.CompilerServices.RuntimeHelpers/CleanupCode" Id="T:System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode" />
     <Type Name="System.Runtime.CompilerServices.RuntimeHelpers/TryCode" Id="T:System.Runtime.CompilerServices.RuntimeHelpers.TryCode" />
     <Type Name="System.Runtime.CompilerServices.RuntimeWrappedException" Id="T:System.Runtime.CompilerServices.RuntimeWrappedException">
-      <Member Id="M:System.Runtime.CompilerServices.RuntimeWrappedException.#ctor(System.Object)" />
       <Member Id="M:System.Runtime.CompilerServices.RuntimeWrappedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="P:System.Runtime.CompilerServices.RuntimeWrappedException.WrappedException" />
     </Type>
@@ -34153,7 +33791,12 @@
       <Member Id="M:System.Security.AccessControl.AuthorizationRuleCollection.#ctor" />
       <Member Id="M:System.Security.AccessControl.AuthorizationRuleCollection.AddRule(System.Security.AccessControl.AuthorizationRule)" />
       <Member Id="M:System.Security.AccessControl.AuthorizationRuleCollection.CopyTo(System.Security.AccessControl.AuthorizationRule[],System.Int32)" />
+      <Member Id="M:System.Security.AccessControl.AuthorizationRuleCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <Member Id="M:System.Security.AccessControl.AuthorizationRuleCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:System.Security.AccessControl.AuthorizationRuleCollection.Count" />
       <Member Id="P:System.Security.AccessControl.AuthorizationRuleCollection.Item(System.Int32)" />
+      <Member Id="P:System.Security.AccessControl.AuthorizationRuleCollection.System#Collections#ICollection#IsSynchronized" />
+      <Member Id="P:System.Security.AccessControl.AuthorizationRuleCollection.System#Collections#ICollection#SyncRoot" />
     </Type>
     <Type Name="System.Security.AccessControl.CommonAce" Id="T:System.Security.AccessControl.CommonAce">
       <Member Id="M:System.Security.AccessControl.CommonAce.#ctor(System.Security.AccessControl.AceFlags,System.Security.AccessControl.AceQualifier,System.Int32,System.Security.Principal.SecurityIdentifier,System.Boolean,System.Byte[])" />
@@ -34594,7 +34237,6 @@
       <Member Id="M:System.Security.AccessControl.PrivilegeNotHeldException.#ctor" />
       <Member Id="M:System.Security.AccessControl.PrivilegeNotHeldException.#ctor(System.String)" />
       <Member Id="M:System.Security.AccessControl.PrivilegeNotHeldException.#ctor(System.String,System.Exception)" />
-      <Member Id="M:System.Security.AccessControl.PrivilegeNotHeldException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="P:System.Security.AccessControl.PrivilegeNotHeldException.PrivilegeName" />
     </Type>
     <Type Name="System.Security.AccessControl.PropagationFlags" Id="T:System.Security.AccessControl.PropagationFlags">
@@ -34632,18 +34274,6 @@
       <Member Id="P:System.Security.AccessControl.RawSecurityDescriptor.ResourceManagerControl" />
       <Member Id="P:System.Security.AccessControl.RawSecurityDescriptor.SystemAcl" />
     </Type>
-    <Type Name="System.Security.AccessControl.RegistryAccessRule" Id="T:System.Security.AccessControl.RegistryAccessRule">
-      <Member Id="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.String,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="M:System.Security.AccessControl.RegistryAccessRule.#ctor(System.String,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="P:System.Security.AccessControl.RegistryAccessRule.RegistryRights" />
-    </Type>
-    <Type Name="System.Security.AccessControl.RegistryAuditRule" Id="T:System.Security.AccessControl.RegistryAuditRule">
-      <Member Id="M:System.Security.AccessControl.RegistryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
-      <Member Id="M:System.Security.AccessControl.RegistryAuditRule.#ctor(System.String,System.Security.AccessControl.RegistryRights,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
-      <Member Id="P:System.Security.AccessControl.RegistryAuditRule.RegistryRights" />
-    </Type>
     <Type Name="System.Security.AccessControl.RegistryRights" Id="T:System.Security.AccessControl.RegistryRights">
       <Member Id="F:System.Security.AccessControl.RegistryRights.ChangePermissions" />
       <Member Id="F:System.Security.AccessControl.RegistryRights.CreateLink" />
@@ -34659,25 +34289,6 @@
       <Member Id="F:System.Security.AccessControl.RegistryRights.SetValue" />
       <Member Id="F:System.Security.AccessControl.RegistryRights.TakeOwnership" />
       <Member Id="F:System.Security.AccessControl.RegistryRights.WriteKey" />
-    </Type>
-    <Type Name="System.Security.AccessControl.RegistrySecurity" Id="T:System.Security.AccessControl.RegistrySecurity">
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.#ctor" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.AddAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.AddAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleAll(System.Security.AccessControl.RegistryAccessRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.RegistryAccessRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRuleAll(System.Security.AccessControl.RegistryAuditRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.RegistryAuditRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.ResetAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.SetAccessRule(System.Security.AccessControl.RegistryAccessRule)" />
-      <Member Id="M:System.Security.AccessControl.RegistrySecurity.SetAuditRule(System.Security.AccessControl.RegistryAuditRule)" />
-      <Member Id="P:System.Security.AccessControl.RegistrySecurity.AccessRightType" />
-      <Member Id="P:System.Security.AccessControl.RegistrySecurity.AccessRuleType" />
-      <Member Id="P:System.Security.AccessControl.RegistrySecurity.AuditRuleType" />
     </Type>
     <Type Name="System.Security.AccessControl.ResourceType" Id="T:System.Security.AccessControl.ResourceType">
       <Member Id="F:System.Security.AccessControl.ResourceType.DSObject" />
@@ -34787,6 +34398,7 @@
       <Member Id="M:System.Security.HostProtectionException.#ctor(System.String)" />
       <Member Id="M:System.Security.HostProtectionException.#ctor(System.String,System.Exception)" />
       <Member Id="M:System.Security.HostProtectionException.#ctor(System.String,System.Security.Permissions.HostProtectionResource,System.Security.Permissions.HostProtectionResource)" />
+      <Member Id="M:System.Security.HostProtectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Security.HostProtectionException.ToString" />
       <Member Id="P:System.Security.HostProtectionException.DemandedResources" />
       <Member Id="P:System.Security.HostProtectionException.ProtectedResources" />
@@ -35691,12 +35303,8 @@
     <Type Name="System.Security.Cryptography.CryptoStream" Id="T:System.Security.Cryptography.CryptoStream">
       <Member Id="M:System.Security.Cryptography.CryptoStream.#ctor(System.IO.Stream,System.Security.Cryptography.ICryptoTransform,System.Security.Cryptography.CryptoStreamMode)" />
       <Member Id="M:System.Security.Cryptography.CryptoStream.#ctor(System.IO.Stream,System.Security.Cryptography.ICryptoTransform,System.Security.Cryptography.CryptoStreamMode,System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.CryptoStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
-      <Member Id="M:System.Security.Cryptography.CryptoStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
       <Member Id="M:System.Security.Cryptography.CryptoStream.Clear" />
       <Member Id="M:System.Security.Cryptography.CryptoStream.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.CryptoStream.EndRead(System.IAsyncResult)" />
-      <Member Id="M:System.Security.Cryptography.CryptoStream.EndWrite(System.IAsyncResult)" />
       <Member Id="M:System.Security.Cryptography.CryptoStream.Flush" />
       <Member Id="M:System.Security.Cryptography.CryptoStream.FlushAsync(System.Threading.CancellationToken)" />
       <Member Id="M:System.Security.Cryptography.CryptoStream.FlushFinalBlock" />
@@ -35802,15 +35410,10 @@
       <Member Id="M:System.Security.Cryptography.DSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.DSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.DSA.ToXmlString(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.DSA.TryCreateSignature(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.DSA.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.DSA.TrySignData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
       <Member Id="M:System.Security.Cryptography.DSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.DSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.DSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
-      <Member Id="M:System.Security.Cryptography.DSA.VerifyData(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.DSA.VerifySignature(System.Byte[],System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.DSA.VerifySignature(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
     </Type>
     <Type Name="System.Security.Cryptography.DSACryptoServiceProvider" Id="T:System.Security.Cryptography.DSACryptoServiceProvider">
       <Member Id="M:System.Security.Cryptography.DSACryptoServiceProvider.#ctor" />
@@ -35914,12 +35517,9 @@
       <Member Id="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP521" />
     </Type>
     <Type Name="System.Security.Cryptography.ECDiffieHellmanPublicKey" Id="T:System.Security.Cryptography.ECDiffieHellmanPublicKey">
-      <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.#ctor" />
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.#ctor(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose" />
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.ExportExplicitParameters" />
-      <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.ExportParameters" />
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToByteArray" />
       <Member Id="M:System.Security.Cryptography.ECDiffieHellmanPublicKey.ToXmlString" />
     </Type>
@@ -35941,15 +35541,10 @@
       <Member Id="M:System.Security.Cryptography.ECDsa.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.ECDsa.SignHash(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDsa.ToXmlString(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.ECDsa.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.ECDsa.TrySignData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.ECDsa.TrySignHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
       <Member Id="M:System.Security.Cryptography.ECDsa.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.ECDsa.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.ECDsa.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
-      <Member Id="M:System.Security.Cryptography.ECDsa.VerifyData(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.ECDsa.VerifyHash(System.Byte[],System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.ECDsa.VerifyHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
       <Member Id="P:System.Security.Cryptography.ECDsa.KeyExchangeAlgorithm" />
       <Member Id="P:System.Security.Cryptography.ECDsa.SignatureAlgorithm" />
     </Type>
@@ -35971,10 +35566,13 @@
       <Member Id="M:System.Security.Cryptography.ECDsaCng.SignData(System.IO.Stream)" />
       <Member Id="M:System.Security.Cryptography.ECDsaCng.SignHash(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDsaCng.ToXmlString(System.Security.Cryptography.ECKeyXmlFormat)" />
+      <Member Id="M:System.Security.Cryptography.ECDsaCng.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
+      <Member Id="M:System.Security.Cryptography.ECDsaCng.TrySignHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
       <Member Id="M:System.Security.Cryptography.ECDsaCng.VerifyData(System.Byte[],System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDsaCng.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDsaCng.VerifyData(System.IO.Stream,System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.ECDsaCng.VerifyHash(System.Byte[],System.Byte[])" />
+      <Member Id="M:System.Security.Cryptography.ECDsaCng.VerifyHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})" />
       <Member Id="P:System.Security.Cryptography.ECDsaCng.HashAlgorithm" />
       <Member Id="P:System.Security.Cryptography.ECDsaCng.Key" />
       <Member Id="P:System.Security.Cryptography.ECDsaCng.KeySize" />
@@ -36025,13 +35623,10 @@
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.Dispose" />
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HashAlgorithm.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.Initialize" />
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <Member Id="M:System.Security.Cryptography.HashAlgorithm.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HashAlgorithm.TryComputeHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.HashAlgorithm.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HashAlgorithm.CanReuseTransform" />
       <Member Id="P:System.Security.Cryptography.HashAlgorithm.CanTransformMultipleBlocks" />
       <Member Id="P:System.Security.Cryptography.HashAlgorithm.Hash" />
@@ -36060,10 +35655,8 @@
       <Member Id="M:System.Security.Cryptography.HMAC.Create(System.String)" />
       <Member Id="M:System.Security.Cryptography.HMAC.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMAC.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HMAC.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HMAC.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HMAC.Initialize" />
-      <Member Id="M:System.Security.Cryptography.HMAC.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HMAC.BlockSizeValue" />
       <Member Id="P:System.Security.Cryptography.HMAC.HashName" />
       <Member Id="P:System.Security.Cryptography.HMAC.Key" />
@@ -36073,10 +35666,8 @@
       <Member Id="M:System.Security.Cryptography.HMACMD5.#ctor(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.HMACMD5.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMACMD5.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HMACMD5.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HMACMD5.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HMACMD5.Initialize" />
-      <Member Id="M:System.Security.Cryptography.HMACMD5.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HMACMD5.Key" />
     </Type>
     <Type Name="System.Security.Cryptography.HMACSHA1" Id="T:System.Security.Cryptography.HMACSHA1">
@@ -36085,10 +35676,8 @@
       <Member Id="M:System.Security.Cryptography.HMACSHA1.#ctor(System.Byte[],System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMACSHA1.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMACSHA1.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA1.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HMACSHA1.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HMACSHA1.Initialize" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA1.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HMACSHA1.Key" />
     </Type>
     <Type Name="System.Security.Cryptography.HMACSHA256" Id="T:System.Security.Cryptography.HMACSHA256">
@@ -36096,10 +35685,8 @@
       <Member Id="M:System.Security.Cryptography.HMACSHA256.#ctor(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.HMACSHA256.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMACSHA256.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA256.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HMACSHA256.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HMACSHA256.Initialize" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA256.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HMACSHA256.Key" />
     </Type>
     <Type Name="System.Security.Cryptography.HMACSHA384" Id="T:System.Security.Cryptography.HMACSHA384">
@@ -36107,10 +35694,8 @@
       <Member Id="M:System.Security.Cryptography.HMACSHA384.#ctor(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.HMACSHA384.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMACSHA384.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA384.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HMACSHA384.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HMACSHA384.Initialize" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA384.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HMACSHA384.Key" />
       <Member Id="P:System.Security.Cryptography.HMACSHA384.ProduceLegacyHmacValues" />
     </Type>
@@ -36119,10 +35704,8 @@
       <Member Id="M:System.Security.Cryptography.HMACSHA512.#ctor(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.HMACSHA512.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.HMACSHA512.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA512.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.HMACSHA512.HashFinal" />
       <Member Id="M:System.Security.Cryptography.HMACSHA512.Initialize" />
-      <Member Id="M:System.Security.Cryptography.HMACSHA512.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.HMACSHA512.Key" />
       <Member Id="P:System.Security.Cryptography.HMACSHA512.ProduceLegacyHmacValues" />
     </Type>
@@ -36142,12 +35725,10 @@
     <Type Name="System.Security.Cryptography.IncrementalHash" Id="T:System.Security.Cryptography.IncrementalHash">
       <Member Id="M:System.Security.Cryptography.IncrementalHash.AppendData(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.IncrementalHash.AppendData(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.IncrementalHash.AppendData(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.IncrementalHash.CreateHash(System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.IncrementalHash.CreateHMAC(System.Security.Cryptography.HashAlgorithmName,System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.IncrementalHash.Dispose" />
       <Member Id="M:System.Security.Cryptography.IncrementalHash.GetHashAndReset" />
-      <Member Id="M:System.Security.Cryptography.IncrementalHash.TryGetHashAndReset(System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.IncrementalHash.AlgorithmName" />
     </Type>
     <Type Name="System.Security.Cryptography.KeyedHashAlgorithm" Id="T:System.Security.Cryptography.KeyedHashAlgorithm">
@@ -36265,12 +35846,9 @@
       <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.Create(System.String)" />
       <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.Dispose" />
       <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.Dispose(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.Fill(System.Span{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[])" />
       <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.GetBytes(System.Span{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.GetNonZeroBytes(System.Byte[])" />
-      <Member Id="M:System.Security.Cryptography.RandomNumberGenerator.GetNonZeroBytes(System.Span{System.Byte})" />
     </Type>
     <Type Name="System.Security.Cryptography.RC2" Id="T:System.Security.Cryptography.RC2">
       <Member Id="F:System.Security.Cryptography.RC2.EffectiveKeySizeValue" />
@@ -36357,17 +35935,10 @@
       <Member Id="M:System.Security.Cryptography.RSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="M:System.Security.Cryptography.RSA.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="M:System.Security.Cryptography.RSA.ToXmlString(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.RSA.TryDecrypt(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.RSAEncryptionPadding,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.RSA.TryEncrypt(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.RSAEncryptionPadding,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.RSA.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.RSA.TrySignData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding,System.Int32@)" />
-      <Member Id="M:System.Security.Cryptography.RSA.TrySignHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding,System.Int32@)" />
       <Member Id="M:System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="M:System.Security.Cryptography.RSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="M:System.Security.Cryptography.RSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
-      <Member Id="M:System.Security.Cryptography.RSA.VerifyData(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="M:System.Security.Cryptography.RSA.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
-      <Member Id="M:System.Security.Cryptography.RSA.VerifyHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="P:System.Security.Cryptography.RSA.KeyExchangeAlgorithm" />
       <Member Id="P:System.Security.Cryptography.RSA.SignatureAlgorithm" />
     </Type>
@@ -36383,7 +35954,12 @@
       <Member Id="M:System.Security.Cryptography.RSACng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.RSACng.ImportParameters(System.Security.Cryptography.RSAParameters)" />
       <Member Id="M:System.Security.Cryptography.RSACng.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
+      <Member Id="M:System.Security.Cryptography.RSACng.TryDecrypt(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.RSAEncryptionPadding,System.Int32@)" />
+      <Member Id="M:System.Security.Cryptography.RSACng.TryEncrypt(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.RSAEncryptionPadding,System.Int32@)" />
+      <Member Id="M:System.Security.Cryptography.RSACng.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
+      <Member Id="M:System.Security.Cryptography.RSACng.TrySignHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding,System.Int32@)" />
       <Member Id="M:System.Security.Cryptography.RSACng.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
+      <Member Id="M:System.Security.Cryptography.RSACng.VerifyHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <Member Id="P:System.Security.Cryptography.RSACng.Key" />
       <Member Id="P:System.Security.Cryptography.RSACng.LegalKeySizes" />
     </Type>
@@ -36531,10 +36107,8 @@
       <Member Id="M:System.Security.Cryptography.SHA1Managed.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA1Managed.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.SHA1Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.SHA1Managed.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.SHA1Managed.HashFinal" />
       <Member Id="M:System.Security.Cryptography.SHA1Managed.Initialize" />
-      <Member Id="M:System.Security.Cryptography.SHA1Managed.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
     </Type>
     <Type Name="System.Security.Cryptography.SHA256" Id="T:System.Security.Cryptography.SHA256">
       <Member Id="M:System.Security.Cryptography.SHA256.#ctor" />
@@ -36552,10 +36126,8 @@
       <Member Id="M:System.Security.Cryptography.SHA256Managed.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA256Managed.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.SHA256Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.SHA256Managed.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.SHA256Managed.HashFinal" />
       <Member Id="M:System.Security.Cryptography.SHA256Managed.Initialize" />
-      <Member Id="M:System.Security.Cryptography.SHA256Managed.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
     </Type>
     <Type Name="System.Security.Cryptography.SHA384" Id="T:System.Security.Cryptography.SHA384">
       <Member Id="M:System.Security.Cryptography.SHA384.#ctor" />
@@ -36573,10 +36145,8 @@
       <Member Id="M:System.Security.Cryptography.SHA384Managed.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA384Managed.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.SHA384Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.SHA384Managed.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.SHA384Managed.HashFinal" />
       <Member Id="M:System.Security.Cryptography.SHA384Managed.Initialize" />
-      <Member Id="M:System.Security.Cryptography.SHA384Managed.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
     </Type>
     <Type Name="System.Security.Cryptography.SHA512" Id="T:System.Security.Cryptography.SHA512">
       <Member Id="M:System.Security.Cryptography.SHA512.#ctor" />
@@ -36594,10 +36164,8 @@
       <Member Id="M:System.Security.Cryptography.SHA512Managed.#ctor" />
       <Member Id="M:System.Security.Cryptography.SHA512Managed.Dispose(System.Boolean)" />
       <Member Id="M:System.Security.Cryptography.SHA512Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Security.Cryptography.SHA512Managed.HashCore(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Security.Cryptography.SHA512Managed.HashFinal" />
       <Member Id="M:System.Security.Cryptography.SHA512Managed.Initialize" />
-      <Member Id="M:System.Security.Cryptography.SHA512Managed.TryHashFinal(System.Span{System.Byte},System.Int32@)" />
     </Type>
     <Type Name="System.Security.Cryptography.SignatureDescription" Id="T:System.Security.Cryptography.SignatureDescription">
       <Member Id="M:System.Security.Cryptography.SignatureDescription.#ctor" />
@@ -36977,9 +36545,7 @@
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.FormatDate(System.DateTime)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHash(System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetCertHashString(System.Security.Cryptography.HashAlgorithmName)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetEffectiveDateString" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetExpirationDateString" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.GetFormat" />
@@ -37006,7 +36572,6 @@
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.ToString" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.ToString(System.Boolean)" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509Certificate.TryGetCertHash(System.Security.Cryptography.HashAlgorithmName,System.Span{System.Byte},System.Int32@)" />
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509Certificate.Handle" />
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509Certificate.Issuer" />
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509Certificate.Subject" />
@@ -37099,7 +36664,6 @@
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.GetHashCode" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.IndexOf(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.Insert(System.Int32,System.Security.Cryptography.X509Certificates.X509Certificate)" />
-      <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.OnValidate(System.Object)" />
       <Member Id="M:System.Security.Cryptography.X509Certificates.X509CertificateCollection.Remove(System.Security.Cryptography.X509Certificates.X509Certificate)" />
       <Member Id="P:System.Security.Cryptography.X509Certificates.X509CertificateCollection.Item(System.Int32)" />
     </Type>
@@ -39286,15 +38850,12 @@
       <Member Id="M:System.Text.Decoder.#ctor" />
       <Member Id="M:System.Text.Decoder.Convert(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <Member Id="M:System.Text.Decoder.Convert(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
-      <Member Id="M:System.Text.Decoder.Convert(System.ReadOnlySpan{System.Byte},System.Span{System.Char},System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <Member Id="M:System.Text.Decoder.GetCharCount(System.Byte*,System.Int32,System.Boolean)" />
       <Member Id="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32,System.Boolean)" />
-      <Member Id="M:System.Text.Decoder.GetCharCount(System.ReadOnlySpan{System.Byte},System.Boolean)" />
       <Member Id="M:System.Text.Decoder.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean)" />
       <Member Id="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
       <Member Id="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Boolean)" />
-      <Member Id="M:System.Text.Decoder.GetChars(System.ReadOnlySpan{System.Byte},System.Span{System.Char},System.Boolean)" />
       <Member Id="M:System.Text.Decoder.Reset" />
       <Member Id="P:System.Text.Decoder.Fallback" />
       <Member Id="P:System.Text.Decoder.FallbackBuffer" />
@@ -39357,13 +38918,10 @@
       <Member Id="M:System.Text.Encoder.#ctor" />
       <Member Id="M:System.Text.Encoder.Convert(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <Member Id="M:System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
-      <Member Id="M:System.Text.Encoder.Convert(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
       <Member Id="M:System.Text.Encoder.GetByteCount(System.Char*,System.Int32,System.Boolean)" />
       <Member Id="M:System.Text.Encoder.GetByteCount(System.Char[],System.Int32,System.Int32,System.Boolean)" />
-      <Member Id="M:System.Text.Encoder.GetByteCount(System.ReadOnlySpan{System.Char},System.Boolean)" />
       <Member Id="M:System.Text.Encoder.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32,System.Boolean)" />
       <Member Id="M:System.Text.Encoder.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Boolean)" />
-      <Member Id="M:System.Text.Encoder.GetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte},System.Boolean)" />
       <Member Id="M:System.Text.Encoder.Reset" />
       <Member Id="P:System.Text.Encoder.Fallback" />
       <Member Id="P:System.Text.Encoder.FallbackBuffer" />
@@ -39438,26 +38996,22 @@
       <Member Id="M:System.Text.Encoding.GetByteCount(System.Char*,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetByteCount(System.Char[])" />
       <Member Id="M:System.Text.Encoding.GetByteCount(System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.Encoding.GetByteCount(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Text.Encoding.GetByteCount(System.String)" />
       <Member Id="M:System.Text.Encoding.GetByteCount(System.String,System.Int32,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.Char[])" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
-      <Member Id="M:System.Text.Encoding.GetBytes(System.ReadOnlySpan{System.Char},System.Span{System.Byte})" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.String)" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetCharCount(System.Byte*,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetCharCount(System.Byte[])" />
       <Member Id="M:System.Text.Encoding.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.Encoding.GetCharCount(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Text.Encoding.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetChars(System.Byte[])" />
       <Member Id="M:System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
-      <Member Id="M:System.Text.Encoding.GetChars(System.ReadOnlySpan{System.Byte},System.Span{System.Char})" />
       <Member Id="M:System.Text.Encoding.GetDecoder" />
       <Member Id="M:System.Text.Encoding.GetEncoder" />
       <Member Id="M:System.Text.Encoding.GetEncoding(System.Int32)" />
@@ -39472,7 +39026,6 @@
       <Member Id="M:System.Text.Encoding.GetString(System.Byte*,System.Int32)" />
       <Member Id="M:System.Text.Encoding.GetString(System.Byte[])" />
       <Member Id="M:System.Text.Encoding.GetString(System.Byte[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.Encoding.GetString(System.ReadOnlySpan{System.Byte})" />
       <Member Id="M:System.Text.Encoding.IsAlwaysNormalized" />
       <Member Id="M:System.Text.Encoding.IsAlwaysNormalized(System.Text.NormalizationForm)" />
       <Member Id="M:System.Text.Encoding.RegisterProvider(System.Text.EncodingProvider)" />
@@ -39491,7 +39044,6 @@
       <Member Id="P:System.Text.Encoding.IsMailNewsSave" />
       <Member Id="P:System.Text.Encoding.IsReadOnly" />
       <Member Id="P:System.Text.Encoding.IsSingleByte" />
-      <Member Id="P:System.Text.Encoding.Preamble" />
       <Member Id="P:System.Text.Encoding.Unicode" />
       <Member Id="P:System.Text.Encoding.UTF32" />
       <Member Id="P:System.Text.Encoding.UTF7" />
@@ -39540,13 +39092,10 @@
       <Member Id="M:System.Text.StringBuilder.Append(System.Int32)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.Int64)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.Object)" />
-      <Member Id="M:System.Text.StringBuilder.Append(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Text.StringBuilder.Append(System.SByte)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.Single)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.String)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.String,System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.StringBuilder.Append(System.Text.StringBuilder)" />
-      <Member Id="M:System.Text.StringBuilder.Append(System.Text.StringBuilder,System.Int32,System.Int32)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.UInt16)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.UInt32)" />
       <Member Id="M:System.Text.StringBuilder.Append(System.UInt64)" />
@@ -39568,9 +39117,7 @@
       <Member Id="M:System.Text.StringBuilder.AppendLine(System.String)" />
       <Member Id="M:System.Text.StringBuilder.Clear" />
       <Member Id="M:System.Text.StringBuilder.CopyTo(System.Int32,System.Char[],System.Int32,System.Int32)" />
-      <Member Id="M:System.Text.StringBuilder.CopyTo(System.Int32,System.Span{System.Char},System.Int32)" />
       <Member Id="M:System.Text.StringBuilder.EnsureCapacity(System.Int32)" />
-      <Member Id="M:System.Text.StringBuilder.Equals(System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Text.StringBuilder.Equals(System.Text.StringBuilder)" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.Boolean)" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.Byte)" />
@@ -39583,7 +39130,6 @@
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.Int32)" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.Int64)" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.Object)" />
-      <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.ReadOnlySpan{System.Char})" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.SByte)" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.Single)" />
       <Member Id="M:System.Text.StringBuilder.Insert(System.Int32,System.String)" />
@@ -39817,9 +39363,6 @@
       <Member Id="M:System.Text.RegularExpressions.Regex.#ctor(System.String)" />
       <Member Id="M:System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions)" />
       <Member Id="M:System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />
-      <Member Id="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" />
-      <Member Id="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName,System.Reflection.Emit.CustomAttributeBuilder[])" />
-      <Member Id="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName,System.Reflection.Emit.CustomAttributeBuilder[],System.String)" />
       <Member Id="M:System.Text.RegularExpressions.Regex.Escape(System.String)" />
       <Member Id="M:System.Text.RegularExpressions.Regex.GetGroupNames" />
       <Member Id="M:System.Text.RegularExpressions.Regex.GetGroupNumbers" />
@@ -40030,7 +39573,6 @@
       <Member Id="M:System.Threading.CancellationTokenRegistration.GetHashCode" />
       <Member Id="M:System.Threading.CancellationTokenRegistration.op_Equality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)" />
       <Member Id="M:System.Threading.CancellationTokenRegistration.op_Inequality(System.Threading.CancellationTokenRegistration,System.Threading.CancellationTokenRegistration)" />
-      <Member Id="P:System.Threading.CancellationTokenRegistration.Token" />
     </Type>
     <Type Name="System.Threading.CancellationTokenSource" Id="T:System.Threading.CancellationTokenSource">
       <Member Id="M:System.Threading.CancellationTokenSource.#ctor" />
@@ -40394,7 +39936,6 @@
       <Member Id="M:System.Threading.Thread.FreeNamedDataSlot(System.String)" />
       <Member Id="M:System.Threading.Thread.GetApartmentState" />
       <Member Id="M:System.Threading.Thread.GetCompressedStack" />
-      <Member Id="M:System.Threading.Thread.GetCurrentProcessorId" />
       <Member Id="M:System.Threading.Thread.GetData(System.LocalDataStoreSlot)" />
       <Member Id="M:System.Threading.Thread.GetDomain" />
       <Member Id="M:System.Threading.Thread.GetDomainID" />
@@ -40493,7 +40034,6 @@
       <Member Id="M:System.Threading.ThreadPool.GetMinThreads(System.Int32@,System.Int32@)" />
       <Member Id="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)" />
       <Member Id="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)" />
-      <Member Id="M:System.Threading.ThreadPool.QueueUserWorkItem``1(System.Action{``0},``0,System.Boolean)" />
       <Member Id="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)" />
       <Member Id="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)" />
       <Member Id="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)" />
@@ -40829,7 +40369,6 @@
       <Member Id="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <Member Id="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String)" />
       <Member Id="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception)" />
-      <Member Id="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.String,System.Exception,System.Threading.CancellationToken)" />
       <Member Id="M:System.Threading.Tasks.TaskCanceledException.#ctor(System.Threading.Tasks.Task)" />
       <Member Id="P:System.Threading.Tasks.TaskCanceledException.Task" />
     </Type>

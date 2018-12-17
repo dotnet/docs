@@ -72,7 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
-      <MemberSignature Language="F#" Value="abstract member Add : System.Configuration.Provider.ProviderBase -&gt; unit&#xA;override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="profileProviderCollection.Add provider" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="profileProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

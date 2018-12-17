@@ -154,7 +154,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MeshGeometry3D.CreateInstanceCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
-      <MemberSignature Language="F#" Value="abstract member CreateInstanceCore : unit -&gt; System.Windows.Freezable&#xA;override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="meshGeometry3D.CreateInstanceCore " />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="meshGeometry3D.CreateInstanceCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,7 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.MeshGeometry3D.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
-      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="meshGeometry3D.OnPropertyChanged e" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="meshGeometry3D.OnPropertyChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

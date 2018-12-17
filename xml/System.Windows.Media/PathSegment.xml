@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.PathSegment.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PathSegment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathSegment ^ CloneCurrentValue();" />
-      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.PathSegment" Usage="pathSegment.CloneCurrentValue " />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.PathSegment" Usage="pathSegment.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -95,7 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfigElements As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfigElements);" />
-      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="membershipUserNameSecurityTokenHandler.LoadCustomConfiguration customConfigElements" />
+      <MemberSignature Language="F#" Value="override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="membershipUserNameSecurityTokenHandler.LoadCustomConfiguration customConfigElements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -141,7 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
-      <MemberSignature Language="F#" Value="abstract member ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;&#xA;override this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="membershipUserNameSecurityTokenHandler.ValidateToken token" />
+      <MemberSignature Language="F#" Value="override this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="membershipUserNameSecurityTokenHandler.ValidateToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

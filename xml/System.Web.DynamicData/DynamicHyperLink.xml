@@ -1,9 +1,9 @@
 ﻿<Type Name="DynamicHyperLink" FullName="System.Web.DynamicData.DynamicHyperLink">
-  <TypeSignature Language="C#" Value="public class DynamicHyperLink : System.Web.UI.WebControls.HyperLink, System.Web.UI.IAttributeAccessor" />
+  <TypeSignature Language="C#" Value="public class DynamicHyperLink : System.Web.UI.WebControls.HyperLink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicHyperLink extends System.Web.UI.WebControls.HyperLink implements class System.Web.UI.IAttributeAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicHyperLink" />
-  <TypeSignature Language="VB.NET" Value="Public Class DynamicHyperLink&#xA;Inherits HyperLink&#xA;Implements IAttributeAccessor" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DynamicHyperLink : System::Web::UI::WebControls::HyperLink, System::Web::UI::IAttributeAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicHyperLink&#xA;Inherits HyperLink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicHyperLink : System::Web::UI::WebControls::HyperLink" />
   <TypeSignature Language="F#" Value="type DynamicHyperLink = class&#xA;    inherit HyperLink&#xA;    interface IAttributeAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -218,7 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicHyperLink.OnDataBinding(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnDataBinding : EventArgs -&gt; unit&#xA;override this.OnDataBinding : EventArgs -&gt; unit" Usage="dynamicHyperLink.OnDataBinding e" />
+      <MemberSignature Language="F#" Value="override this.OnDataBinding : EventArgs -&gt; unit" Usage="dynamicHyperLink.OnDataBinding e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -255,7 +255,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicHyperLink.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="dynamicHyperLink.OnPreRender e" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="dynamicHyperLink.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -289,6 +289,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetAttribute (key As String) As String Implements IAttributeAccessor.GetAttribute" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ key) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -314,6 +317,9 @@
       <MemberSignature Language="VB.NET" Value="Sub SetAttribute (key As String, value As String) Implements IAttributeAccessor.SetAttribute" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ key, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

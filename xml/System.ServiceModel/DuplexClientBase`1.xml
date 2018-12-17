@@ -103,7 +103,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,7 +146,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -173,7 +175,8 @@
         <param name="endpoint">The service endpoint.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class with the specified callback object and service endpoint.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" /> or <paramref name="endpoint" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="endpoint" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -209,7 +212,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -242,7 +246,8 @@
         <param name="endpoint">The service endpoint.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class with the specified callback object and service endpoint.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" /> or <paramref name="endpoint" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="endpoint" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -286,7 +291,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" /> or <paramref name="endpointConfigurationName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -323,7 +329,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" />, <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" />, <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -361,7 +368,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" />, <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" />, <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -451,7 +459,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" />, <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" />, <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -495,7 +504,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" />, the configuration name or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" />, the configuration name or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -547,7 +557,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="callbackInstance" />, <paramref name="endpointConfigurationName" />, or the adress is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="callbackInstance" />, <paramref name="endpointConfigurationName" />, or the adress is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateChannel">

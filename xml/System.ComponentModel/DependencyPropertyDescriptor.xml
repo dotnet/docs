@@ -34,7 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddValueChanged (component As Object, handler As EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddValueChanged(System::Object ^ component, EventHandler ^ handler);" />
-      <MemberSignature Language="F#" Value="abstract member AddValueChanged : obj * EventHandler -&gt; unit&#xA;override this.AddValueChanged : obj * EventHandler -&gt; unit" Usage="dependencyPropertyDescriptor.AddValueChanged (component, handler)" />
+      <MemberSignature Language="F#" Value="override this.AddValueChanged : obj * EventHandler -&gt; unit" Usage="dependencyPropertyDescriptor.AddValueChanged (component, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -83,7 +83,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.CanResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanResetValue (component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanResetValue(System::Object ^ component);" />
-      <MemberSignature Language="F#" Value="abstract member CanResetValue : obj -&gt; bool&#xA;override this.CanResetValue : obj -&gt; bool" Usage="dependencyPropertyDescriptor.CanResetValue component" />
+      <MemberSignature Language="F#" Value="override this.CanResetValue : obj -&gt; bool" Usage="dependencyPropertyDescriptor.CanResetValue component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -356,7 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
-      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool&#xA;override this.Equals : obj -&gt; bool" Usage="dependencyPropertyDescriptor.Equals obj" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dependencyPropertyDescriptor.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -543,7 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildProperties (instance As Object, filter As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(System::Object ^ instance, cli::array &lt;Attribute ^&gt; ^ filter);" />
-      <MemberSignature Language="F#" Value="abstract member GetChildProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetChildProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="dependencyPropertyDescriptor.GetChildProperties (instance, filter)" />
+      <MemberSignature Language="F#" Value="override this.GetChildProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="dependencyPropertyDescriptor.GetChildProperties (instance, filter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -578,7 +578,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetEditor(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditor (editorBaseType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEditor(Type ^ editorBaseType);" />
-      <MemberSignature Language="F#" Value="abstract member GetEditor : Type -&gt; obj&#xA;override this.GetEditor : Type -&gt; obj" Usage="dependencyPropertyDescriptor.GetEditor editorBaseType" />
+      <MemberSignature Language="F#" Value="override this.GetEditor : Type -&gt; obj" Usage="dependencyPropertyDescriptor.GetEditor editorBaseType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -611,7 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int&#xA;override this.GetHashCode : unit -&gt; int" Usage="dependencyPropertyDescriptor.GetHashCode " />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dependencyPropertyDescriptor.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -641,7 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (component As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ component);" />
-      <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj&#xA;override this.GetValue : obj -&gt; obj" Usage="dependencyPropertyDescriptor.GetValue component" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj -&gt; obj" Usage="dependencyPropertyDescriptor.GetValue component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -859,7 +859,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveValueChanged (component As Object, handler As EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveValueChanged(System::Object ^ component, EventHandler ^ handler);" />
-      <MemberSignature Language="F#" Value="abstract member RemoveValueChanged : obj * EventHandler -&gt; unit&#xA;override this.RemoveValueChanged : obj * EventHandler -&gt; unit" Usage="dependencyPropertyDescriptor.RemoveValueChanged (component, handler)" />
+      <MemberSignature Language="F#" Value="override this.RemoveValueChanged : obj * EventHandler -&gt; unit" Usage="dependencyPropertyDescriptor.RemoveValueChanged (component, handler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -893,7 +893,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.ResetValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetValue (component As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetValue(System::Object ^ component);" />
-      <MemberSignature Language="F#" Value="abstract member ResetValue : obj -&gt; unit&#xA;override this.ResetValue : obj -&gt; unit" Usage="dependencyPropertyDescriptor.ResetValue component" />
+      <MemberSignature Language="F#" Value="override this.ResetValue : obj -&gt; unit" Usage="dependencyPropertyDescriptor.ResetValue component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -925,7 +925,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.SetValue(System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (component As Object, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ component, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit&#xA;override this.SetValue : obj * obj -&gt; unit" Usage="dependencyPropertyDescriptor.SetValue (component, value)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj -&gt; unit" Usage="dependencyPropertyDescriptor.SetValue (component, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -959,7 +959,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.ShouldSerializeValue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerializeValue (component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerializeValue(System::Object ^ component);" />
-      <MemberSignature Language="F#" Value="abstract member ShouldSerializeValue : obj -&gt; bool&#xA;override this.ShouldSerializeValue : obj -&gt; bool" Usage="dependencyPropertyDescriptor.ShouldSerializeValue component" />
+      <MemberSignature Language="F#" Value="override this.ShouldSerializeValue : obj -&gt; bool" Usage="dependencyPropertyDescriptor.ShouldSerializeValue component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1018,7 +1018,7 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="dependencyPropertyDescriptor.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dependencyPropertyDescriptor.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -278,7 +278,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.BindingGroup.GetValue(System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (item As Object, propertyName As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Object ^ item, System::String ^ propertyName);" />
-      <MemberSignature Language="F#" Value="member this.GetValue : obj * string -&gt; obj" Usage="bindingGroup.GetValue (item, propertyName)" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj * string -&gt; obj" Usage="bindingGroup.GetValue (item, propertyName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

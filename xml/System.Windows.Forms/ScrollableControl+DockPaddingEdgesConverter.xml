@@ -52,7 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
-      <MemberSignature Language="F#" Value="abstract member GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="dockPaddingEdgesConverter.GetProperties (context, value, attributes)" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="dockPaddingEdgesConverter.GetProperties (context, value, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,7 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dockPaddingEdgesConverter.GetPropertiesSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dockPaddingEdgesConverter.GetPropertiesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -115,6 +115,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanFilter { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanFilter : bool" Usage="System.Windows.Data.CollectionView.CanFilter" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.CanFilter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -145,6 +148,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanGroup { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanGroup : bool" Usage="System.Windows.Data.CollectionView.CanGroup" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.CanGroup</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -175,6 +181,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Windows.Data.CollectionView.CanSort" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.CanSort</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -254,6 +263,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -298,6 +310,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ item);" />
       <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="collectionView.Contains item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -364,6 +379,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Globalization::CultureInfo ^ Culture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Data.CollectionView.Culture" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.Culture</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -394,6 +412,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ CurrentChanged;" />
       <MemberSignature Language="F#" Value="member this.CurrentChanged : EventHandler " Usage="member this.CurrentChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.ICollectionView.CurrentChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -419,6 +440,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::CurrentChangingEventHandler ^ CurrentChanging;" />
       <MemberSignature Language="F#" Value="member this.CurrentChanging : System.ComponentModel.CurrentChangingEventHandler " Usage="member this.CurrentChanging : System.ComponentModel.CurrentChangingEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.ICollectionView.CurrentChanging</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -444,6 +468,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ CurrentItem { System::Object ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrentItem : obj" Usage="System.Windows.Data.CollectionView.CurrentItem" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.CurrentItem</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -480,6 +507,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CurrentPosition { int get(); };" />
       <MemberSignature Language="F#" Value="member this.CurrentPosition : int" Usage="System.Windows.Data.CollectionView.CurrentPosition" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.CurrentPosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -505,6 +535,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IDisposable ^ DeferRefresh();" />
       <MemberSignature Language="F#" Value="abstract member DeferRefresh : unit -&gt; IDisposable&#xA;override this.DeferRefresh : unit -&gt; IDisposable" Usage="collectionView.DeferRefresh " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.DeferRefresh</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -563,6 +596,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Predicate&lt;System::Object ^&gt; ^ Filter { Predicate&lt;System::Object ^&gt; ^ get(); void set(Predicate&lt;System::Object ^&gt; ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Filter : Predicate&lt;obj&gt; with get, set" Usage="System.Windows.Data.CollectionView.Filter" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.Filter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -665,6 +701,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ GroupDescriptions { System::Collections::ObjectModel::ObservableCollection&lt;System::ComponentModel::GroupDescription ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.GroupDescriptions : System.Collections.ObjectModel.ObservableCollection&lt;System.ComponentModel.GroupDescription&gt;" Usage="System.Windows.Data.CollectionView.GroupDescriptions" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.GroupDescriptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -696,6 +735,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ Groups { System::Collections::ObjectModel::ReadOnlyObservableCollection&lt;System::Object ^&gt; ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Groups : System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;obj&gt;" Usage="System.Windows.Data.CollectionView.Groups" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.Groups</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -761,6 +803,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCurrentAfterLast { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsCurrentAfterLast : bool" Usage="System.Windows.Data.CollectionView.IsCurrentAfterLast" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.IsCurrentAfterLast</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -792,6 +837,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCurrentBeforeFirst { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsCurrentBeforeFirst : bool" Usage="System.Windows.Data.CollectionView.IsCurrentBeforeFirst" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.IsCurrentBeforeFirst</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -874,6 +922,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Windows.Data.CollectionView.IsEmpty" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.IsEmpty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -945,6 +996,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveCurrentTo(System::Object ^ item);" />
       <MemberSignature Language="F#" Value="abstract member MoveCurrentTo : obj -&gt; bool&#xA;override this.MoveCurrentTo : obj -&gt; bool" Usage="collectionView.MoveCurrentTo item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.MoveCurrentTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -992,6 +1046,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveCurrentToFirst();" />
       <MemberSignature Language="F#" Value="abstract member MoveCurrentToFirst : unit -&gt; bool&#xA;override this.MoveCurrentToFirst : unit -&gt; bool" Usage="collectionView.MoveCurrentToFirst " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.MoveCurrentToFirst</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1024,6 +1081,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveCurrentToLast();" />
       <MemberSignature Language="F#" Value="abstract member MoveCurrentToLast : unit -&gt; bool&#xA;override this.MoveCurrentToLast : unit -&gt; bool" Usage="collectionView.MoveCurrentToLast " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.MoveCurrentToLast</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1056,6 +1116,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveCurrentToNext();" />
       <MemberSignature Language="F#" Value="abstract member MoveCurrentToNext : unit -&gt; bool&#xA;override this.MoveCurrentToNext : unit -&gt; bool" Usage="collectionView.MoveCurrentToNext " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.MoveCurrentToNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1088,6 +1151,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveCurrentToPosition(int position);" />
       <MemberSignature Language="F#" Value="abstract member MoveCurrentToPosition : int -&gt; bool&#xA;override this.MoveCurrentToPosition : int -&gt; bool" Usage="collectionView.MoveCurrentToPosition position" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.MoveCurrentToPosition(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1122,6 +1188,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveCurrentToPrevious();" />
       <MemberSignature Language="F#" Value="abstract member MoveCurrentToPrevious : unit -&gt; bool&#xA;override this.MoveCurrentToPrevious : unit -&gt; bool" Usage="collectionView.MoveCurrentToPrevious " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.MoveCurrentToPrevious</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1572,6 +1641,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1594,6 +1666,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Refresh();" />
       <MemberSignature Language="F#" Value="abstract member Refresh : unit -&gt; unit&#xA;override this.Refresh : unit -&gt; unit" Usage="collectionView.Refresh " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ICollectionView.Refresh</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1748,6 +1823,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::SortDescriptionCollection ^ SortDescriptions { System::ComponentModel::SortDescriptionCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.SortDescriptionCollection" Usage="System.Windows.Data.CollectionView.SortDescriptions" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.SortDescriptions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1783,6 +1861,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IEnumerable ^ SourceCollection { System::Collections::IEnumerable ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SourceCollection : System.Collections.IEnumerable" Usage="System.Windows.Data.CollectionView.SourceCollection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.ICollectionView.SourceCollection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -1844,6 +1925,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedEventHandler</ReturnType>
@@ -1865,6 +1947,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>

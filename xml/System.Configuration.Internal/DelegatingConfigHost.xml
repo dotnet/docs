@@ -545,6 +545,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasLocalConfig { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasLocalConfig : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.HasLocalConfig" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHostPaths.HasLocalConfig</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -569,6 +572,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRoamingConfig { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.HasRoamingConfig : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.HasRoamingConfig" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHostPaths.HasRoamingConfig</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -791,6 +797,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAppConfigHttp { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsAppConfigHttp : bool" Usage="System.Configuration.Internal.DelegatingConfigHost.IsAppConfigHttp" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Configuration.Internal.IInternalConfigHostPaths.IsAppConfigHttp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1455,6 +1464,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RefreshConfigPaths();" />
       <MemberSignature Language="F#" Value="abstract member RefreshConfigPaths : unit -&gt; unit&#xA;override this.RefreshConfigPaths : unit -&gt; unit" Usage="delegatingConfigHost.RefreshConfigPaths " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Configuration.Internal.IInternalConfigHostPaths.RefreshConfigPaths</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>

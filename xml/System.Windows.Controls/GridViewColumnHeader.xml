@@ -544,7 +544,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumnHeader.ShouldSerializeProperty(System.Windows.DependencyProperty)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ShouldSerializeProperty (dp As DependencyProperty) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ShouldSerializeProperty(System::Windows::DependencyProperty ^ dp);" />
-      <MemberSignature Language="F#" Value="abstract member ShouldSerializeProperty : System.Windows.DependencyProperty -&gt; bool&#xA;override this.ShouldSerializeProperty : System.Windows.DependencyProperty -&gt; bool" Usage="gridViewColumnHeader.ShouldSerializeProperty dp" />
+      <MemberSignature Language="F#" Value="override this.ShouldSerializeProperty : System.Windows.DependencyProperty -&gt; bool" Usage="gridViewColumnHeader.ShouldSerializeProperty dp" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

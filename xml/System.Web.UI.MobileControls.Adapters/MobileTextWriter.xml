@@ -310,7 +310,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterStyle(System::Web::UI::MobileControls::Style ^ style);" />
-      <MemberSignature Language="F#" Value="member this.EnterStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterStyle style" />
+      <MemberSignature Language="F#" Value="override this.EnterStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -492,7 +492,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitStyle(System::Web::UI::MobileControls::Style ^ style);" />
-      <MemberSignature Language="F#" Value="member this.ExitStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitStyle style" />
+      <MemberSignature Language="F#" Value="override this.ExitStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

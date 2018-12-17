@@ -125,7 +125,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CloneNode(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CloneNode (deep As Boolean) As XmlNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ CloneNode(bool deep);" />
-      <MemberSignature Language="F#" Value="abstract member CloneNode : bool -&gt; System.Xml.XmlNode&#xA;override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlDataDocument.CloneNode deep" />
+      <MemberSignature Language="F#" Value="override this.CloneNode : bool -&gt; System.Xml.XmlNode" Usage="xmlDataDocument.CloneNode deep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -178,7 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CreateElement(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateElement (prefix As String, localName As String, namespaceURI As String) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ CreateElement(System::String ^ prefix, System::String ^ localName, System::String ^ namespaceURI);" />
-      <MemberSignature Language="F#" Value="abstract member CreateElement : string * string * string -&gt; System.Xml.XmlElement&#xA;override this.CreateElement : string * string * string -&gt; System.Xml.XmlElement" Usage="xmlDataDocument.CreateElement (prefix, localName, namespaceURI)" />
+      <MemberSignature Language="F#" Value="override this.CreateElement : string * string * string -&gt; System.Xml.XmlElement" Usage="xmlDataDocument.CreateElement (prefix, localName, namespaceURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -228,7 +228,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CreateEntityReference(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEntityReference (name As String) As XmlEntityReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlEntityReference ^ CreateEntityReference(System::String ^ name);" />
-      <MemberSignature Language="F#" Value="abstract member CreateEntityReference : string -&gt; System.Xml.XmlEntityReference&#xA;override this.CreateEntityReference : string -&gt; System.Xml.XmlEntityReference" Usage="xmlDataDocument.CreateEntityReference name" />
+      <MemberSignature Language="F#" Value="override this.CreateEntityReference : string -&gt; System.Xml.XmlEntityReference" Usage="xmlDataDocument.CreateEntityReference name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -264,7 +264,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.CreateNavigator(System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNavigator (node As XmlNode) As XPathNavigator" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Xml::XPath::XPathNavigator ^ CreateNavigator(System::Xml::XmlNode ^ node);" />
-      <MemberSignature Language="F#" Value="abstract member CreateNavigator : System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator&#xA;override this.CreateNavigator : System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlDataDocument.CreateNavigator node" />
+      <MemberSignature Language="F#" Value="override this.CreateNavigator : System.Xml.XmlNode -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlDataDocument.CreateNavigator node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -357,7 +357,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.GetElementById(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetElementById (elemId As String) As XmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetElementById(System::String ^ elemId);" />
-      <MemberSignature Language="F#" Value="abstract member GetElementById : string -&gt; System.Xml.XmlElement&#xA;override this.GetElementById : string -&gt; System.Xml.XmlElement" Usage="xmlDataDocument.GetElementById elemId" />
+      <MemberSignature Language="F#" Value="override this.GetElementById : string -&gt; System.Xml.XmlElement" Usage="xmlDataDocument.GetElementById elemId" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -436,7 +436,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.GetElementsByTagName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetElementsByTagName (name As String) As XmlNodeList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNodeList ^ GetElementsByTagName(System::String ^ name);" />
-      <MemberSignature Language="F#" Value="abstract member GetElementsByTagName : string -&gt; System.Xml.XmlNodeList&#xA;override this.GetElementsByTagName : string -&gt; System.Xml.XmlNodeList" Usage="xmlDataDocument.GetElementsByTagName name" />
+      <MemberSignature Language="F#" Value="override this.GetElementsByTagName : string -&gt; System.Xml.XmlNodeList" Usage="xmlDataDocument.GetElementsByTagName name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -543,7 +543,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Load (inStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::IO::Stream ^ inStream);" />
-      <MemberSignature Language="F#" Value="abstract member Load : System.IO.Stream -&gt; unit&#xA;override this.Load : System.IO.Stream -&gt; unit" Usage="xmlDataDocument.Load inStream" />
+      <MemberSignature Language="F#" Value="override this.Load : System.IO.Stream -&gt; unit" Usage="xmlDataDocument.Load inStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -580,7 +580,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.IO.TextReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Load (txtReader As TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::IO::TextReader ^ txtReader);" />
-      <MemberSignature Language="F#" Value="abstract member Load : System.IO.TextReader -&gt; unit&#xA;override this.Load : System.IO.TextReader -&gt; unit" Usage="xmlDataDocument.Load txtReader" />
+      <MemberSignature Language="F#" Value="override this.Load : System.IO.TextReader -&gt; unit" Usage="xmlDataDocument.Load txtReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -617,7 +617,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Load (filename As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::String ^ filename);" />
-      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; unit&#xA;override this.Load : string -&gt; unit" Usage="xmlDataDocument.Load filename" />
+      <MemberSignature Language="F#" Value="override this.Load : string -&gt; unit" Usage="xmlDataDocument.Load filename" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -654,7 +654,7 @@ class MyXmlDataDocument : XmlDataDocument {
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDataDocument.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Load (reader As XmlReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Load(System::Xml::XmlReader ^ reader);" />
-      <MemberSignature Language="F#" Value="abstract member Load : System.Xml.XmlReader -&gt; unit&#xA;override this.Load : System.Xml.XmlReader -&gt; unit" Usage="xmlDataDocument.Load reader" />
+      <MemberSignature Language="F#" Value="override this.Load : System.Xml.XmlReader -&gt; unit" Usage="xmlDataDocument.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

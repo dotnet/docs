@@ -302,7 +302,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As XmlSchemaObjectEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Schema::XmlSchemaObjectEnumerator ^ GetEnumerator();" />
-      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Xml.Schema.XmlSchemaObjectEnumerator" Usage="xmlSchemaObjectCollection.GetEnumerator " />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Xml.Schema.XmlSchemaObjectEnumerator" Usage="xmlSchemaObjectCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -465,7 +465,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnClear" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
-      <MemberSignature Language="F#" Value="abstract member OnClear : unit -&gt; unit&#xA;override this.OnClear : unit -&gt; unit" Usage="xmlSchemaObjectCollection.OnClear " />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="xmlSchemaObjectCollection.OnClear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -499,7 +499,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnInsert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member OnInsert : int * obj -&gt; unit&#xA;override this.OnInsert : int * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnInsert (index, item)" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnInsert (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -538,7 +538,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnRemove(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, item As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member OnRemove : int * obj -&gt; unit&#xA;override this.OnRemove : int * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnRemove (index, item)" />
+      <MemberSignature Language="F#" Value="override this.OnRemove : int * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnRemove (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -577,7 +577,7 @@ schema.Includes.Add(include);
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaObjectCollection.OnSet(System.Int32,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
-      <MemberSignature Language="F#" Value="abstract member OnSet : int * obj * obj -&gt; unit&#xA;override this.OnSet : int * obj * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnSet (index, oldValue, newValue)" />
+      <MemberSignature Language="F#" Value="override this.OnSet : int * obj * obj -&gt; unit" Usage="xmlSchemaObjectCollection.OnSet (index, oldValue, newValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

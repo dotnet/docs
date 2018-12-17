@@ -70,6 +70,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider);" />
       <MemberSignature Language="F#" Value="abstract member AddSerializationProvider : System.ComponentModel.Design.Serialization.IDesignerSerializationProvider -&gt; unit&#xA;override this.AddSerializationProvider : System.ComponentModel.Design.Serialization.IDesignerSerializationProvider -&gt; unit" Usage="activityCodeDomSerializationManager.AddSerializationProvider provider" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.AddSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -95,6 +98,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ContextStack ^ Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Context : System.ComponentModel.Design.Serialization.ContextStack" Usage="System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.Context" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -123,6 +129,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ CreateInstance(Type ^ type, System::Collections::ICollection ^ arguments, System::String ^ name, bool addToContainer);" />
       <MemberSignature Language="F#" Value="abstract member CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj&#xA;override this.CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj" Usage="activityCodeDomSerializationManager.CreateInstance (type, arguments, name, addToContainer)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -167,6 +176,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetInstance(System::String ^ name);" />
       <MemberSignature Language="F#" Value="abstract member GetInstance : string -&gt; obj&#xA;override this.GetInstance : string -&gt; obj" Usage="activityCodeDomSerializationManager.GetInstance name" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetInstance(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -200,6 +212,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetName(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="abstract member GetName : obj -&gt; string&#xA;override this.GetName : obj -&gt; string" Usage="activityCodeDomSerializationManager.GetName value" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetName(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -235,6 +250,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetSerializer(Type ^ objectType, Type ^ serializerType);" />
       <MemberSignature Language="F#" Value="abstract member GetSerializer : Type * Type -&gt; obj&#xA;override this.GetSerializer : Type * Type -&gt; obj" Usage="activityCodeDomSerializationManager.GetSerializer (objectType, serializerType)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer(System.Type,System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -270,6 +288,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="activityCodeDomSerializationManager.GetService serviceType" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -296,6 +317,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetType(System::String ^ typeName);" />
       <MemberSignature Language="F#" Value="override this.GetType : string -&gt; Type" Usage="activityCodeDomSerializationManager.GetType typeName" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetType(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -329,6 +353,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::PropertyDescriptorCollection ^ Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Properties : System.ComponentModel.PropertyDescriptorCollection" Usage="System.Workflow.ComponentModel.Serialization.ActivityCodeDomSerializationManager.Properties" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -360,6 +387,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider);" />
       <MemberSignature Language="F#" Value="abstract member RemoveSerializationProvider : System.ComponentModel.Design.Serialization.IDesignerSerializationProvider -&gt; unit&#xA;override this.RemoveSerializationProvider : System.ComponentModel.Design.Serialization.IDesignerSerializationProvider -&gt; unit" Usage="activityCodeDomSerializationManager.RemoveSerializationProvider provider" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.RemoveSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -394,6 +424,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReportError(System::Object ^ errorInformation);" />
       <MemberSignature Language="F#" Value="abstract member ReportError : obj -&gt; unit&#xA;override this.ReportError : obj -&gt; unit" Usage="activityCodeDomSerializationManager.ReportError errorInformation" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ReportError(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -430,6 +463,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::Design::Serialization::ResolveNameEventHandler ^ ResolveName;" />
       <MemberSignature Language="F#" Value="member this.ResolveName : System.ComponentModel.Design.Serialization.ResolveNameEventHandler " Usage="member this.ResolveName : System.ComponentModel.Design.Serialization.ResolveNameEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -458,6 +494,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ SerializationComplete;" />
       <MemberSignature Language="F#" Value="member this.SerializationComplete : EventHandler " Usage="member this.SerializationComplete : System.EventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -515,6 +554,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetName(System::Object ^ instance, System::String ^ name);" />
       <MemberSignature Language="F#" Value="abstract member SetName : obj * string -&gt; unit&#xA;override this.SetName : obj * string -&gt; unit" Usage="activityCodeDomSerializationManager.SetName (instance, name)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName(System.Object,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

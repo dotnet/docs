@@ -424,7 +424,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
-      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="rolePrincipal.GetObjectData (info, context)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="rolePrincipal.GetObjectData (info, context)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
@@ -543,7 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RolePrincipal.IsInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsInRole (role As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsInRole(System::String ^ role);" />
-      <MemberSignature Language="F#" Value="abstract member IsInRole : string -&gt; bool&#xA;override this.IsInRole : string -&gt; bool" Usage="rolePrincipal.IsInRole role" />
+      <MemberSignature Language="F#" Value="override this.IsInRole : string -&gt; bool" Usage="rolePrincipal.IsInRole role" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

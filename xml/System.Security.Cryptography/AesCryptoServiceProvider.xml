@@ -122,7 +122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor () As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor();" />
-      <MemberSignature Language="F#" Value="abstract member CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateDecryptor " />
+      <MemberSignature Language="F#" Value="override this.CreateDecryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateDecryptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -168,7 +168,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateDecryptor(unsigned int8[] key, unsigned int8[] iv) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDecryptor (key As Byte(), iv As Byte()) As ICryptoTransform" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateDecryptor(cli::array &lt;System::Byte&gt; ^ key, cli::array &lt;System::Byte&gt; ^ iv);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="F#" Value="abstract member CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateDecryptor (rgbKey, rgbIV)" />
+      <MemberSignature Language="F#" Value="override this.CreateDecryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateDecryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -242,7 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor () As ICryptoTransform" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor();" />
-      <MemberSignature Language="F#" Value="abstract member CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateEncryptor " />
+      <MemberSignature Language="F#" Value="override this.CreateEncryptor : unit -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateEncryptor " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -287,7 +287,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform CreateEncryptor(unsigned int8[] key, unsigned int8[] iv) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateEncryptor (key As Byte(), iv As Byte()) As ICryptoTransform" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ CreateEncryptor(cli::array &lt;System::Byte&gt; ^ key, cli::array &lt;System::Byte&gt; ^ iv);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-3.5;netframework-4.0;netframework-4.8" />
-      <MemberSignature Language="F#" Value="abstract member CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform&#xA;override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateEncryptor (rgbKey, rgbIV)" />
+      <MemberSignature Language="F#" Value="override this.CreateEncryptor : byte[] * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="aesCryptoServiceProvider.CreateEncryptor (rgbKey, rgbIV)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -355,7 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="aesCryptoServiceProvider.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="aesCryptoServiceProvider.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -428,7 +428,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.GenerateIV" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateIV ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateIV();" />
-      <MemberSignature Language="F#" Value="abstract member GenerateIV : unit -&gt; unit&#xA;override this.GenerateIV : unit -&gt; unit" Usage="aesCryptoServiceProvider.GenerateIV " />
+      <MemberSignature Language="F#" Value="override this.GenerateIV : unit -&gt; unit" Usage="aesCryptoServiceProvider.GenerateIV " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -469,7 +469,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.AesCryptoServiceProvider.GenerateKey" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateKey ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateKey();" />
-      <MemberSignature Language="F#" Value="abstract member GenerateKey : unit -&gt; unit&#xA;override this.GenerateKey : unit -&gt; unit" Usage="aesCryptoServiceProvider.GenerateKey " />
+      <MemberSignature Language="F#" Value="override this.GenerateKey : unit -&gt; unit" Usage="aesCryptoServiceProvider.GenerateKey " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

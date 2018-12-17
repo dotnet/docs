@@ -1,9 +1,9 @@
 ﻿<Type Name="SoapClientFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.SoapClientFormatterSinkProvider">
-  <TypeSignature Language="C#" Value="public class SoapClientFormatterSinkProvider : System.Runtime.Remoting.Channels.IClientChannelSinkProvider, System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
+  <TypeSignature Language="C#" Value="public class SoapClientFormatterSinkProvider : System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapClientFormatterSinkProvider extends System.Object implements class System.Runtime.Remoting.Channels.IClientChannelSinkProvider, class System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.SoapClientFormatterSinkProvider" />
-  <TypeSignature Language="VB.NET" Value="Public Class SoapClientFormatterSinkProvider&#xA;Implements IClientChannelSinkProvider, IClientFormatterSinkProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SoapClientFormatterSinkProvider : System::Runtime::Remoting::Channels::IClientChannelSinkProvider, System::Runtime::Remoting::Channels::IClientFormatterSinkProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapClientFormatterSinkProvider&#xA;Implements IClientFormatterSinkProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapClientFormatterSinkProvider : System::Runtime::Remoting::Channels::IClientFormatterSinkProvider" />
   <TypeSignature Language="F#" Value="type SoapClientFormatterSinkProvider = class&#xA;    interface IClientFormatterSinkProvider&#xA;    interface IClientChannelSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -112,6 +112,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Channels::IClientChannelSink ^ CreateSink(System::Runtime::Remoting::Channels::IChannelSender ^ channel, System::String ^ url, System::Object ^ remoteChannelData);" />
       <MemberSignature Language="F#" Value="abstract member CreateSink : System.Runtime.Remoting.Channels.IChannelSender * string * obj -&gt; System.Runtime.Remoting.Channels.IClientChannelSink&#xA;override this.CreateSink : System.Runtime.Remoting.Channels.IChannelSender * string * obj -&gt; System.Runtime.Remoting.Channels.IClientChannelSink" Usage="soapClientFormatterSinkProvider.CreateSink (channel, url, remoteChannelData)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientChannelSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelSender,System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -150,6 +153,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ Next { System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ get(); void set(System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Next : System.Runtime.Remoting.Channels.IClientChannelSinkProvider with get, set" Usage="System.Runtime.Remoting.Channels.SoapClientFormatterSinkProvider.Next" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Remoting.Channels.IClientChannelSinkProvider.Next</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

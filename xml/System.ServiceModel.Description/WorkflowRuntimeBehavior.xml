@@ -1,10 +1,10 @@
 ﻿<Type Name="WorkflowRuntimeBehavior" FullName="System.ServiceModel.Description.WorkflowRuntimeBehavior">
-  <TypeSignature Language="C#" Value="public class WorkflowRuntimeBehavior : System.ServiceModel.Administration.IWmiInstanceProvider, System.ServiceModel.Description.IServiceBehavior" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowRuntimeBehavior extends System.Object implements class System.ServiceModel.Administration.IWmiInstanceProvider, class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="C#" Value="public class WorkflowRuntimeBehavior : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowRuntimeBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WorkflowRuntimeBehavior" />
-  <TypeSignature Language="VB.NET" Value="Public Class WorkflowRuntimeBehavior&#xA;Implements IServiceBehavior, IWmiInstanceProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeBehavior : System::ServiceModel::Administration::IWmiInstanceProvider, System::ServiceModel::Description::IServiceBehavior" />
-  <TypeSignature Language="F#" Value="type WorkflowRuntimeBehavior = class&#xA;    interface IServiceBehavior&#xA;    interface IWmiInstanceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowRuntimeBehavior&#xA;Implements IServiceBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntimeBehavior : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -14,9 +14,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
-      <InterfaceName>System.ServiceModel.Administration.IWmiInstanceProvider</InterfaceName>
-    </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
     </Interface>
@@ -70,6 +67,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
       <MemberSignature Language="F#" Value="abstract member AddBindingParameters : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit&#xA;override this.AddBindingParameters : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase * System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; * System.ServiceModel.Channels.BindingParameterCollection -&gt; unit" Usage="workflowRuntimeBehavior.AddBindingParameters (serviceDescription, serviceHostBase, endpoints, bindingParameters)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -100,6 +100,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
       <MemberSignature Language="F#" Value="abstract member ApplyDispatchBehavior : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.ApplyDispatchBehavior : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit" Usage="workflowRuntimeBehavior.ApplyDispatchBehavior (serviceDescription, serviceHostBase)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -155,6 +158,9 @@
       <MemberSignature Language="VB.NET" Value="Sub FillInstance (wmiInstance As IWmiInstance) Implements IWmiInstanceProvider.FillInstance" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System::ServiceModel::Administration::IWmiInstance ^ wmiInstance) = System::ServiceModel::Administration::IWmiInstanceProvider::FillInstance;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Administration.IWmiInstanceProvider.FillInstance(System.ServiceModel.Administration.IWmiInstance)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -179,6 +185,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetInstanceType () As String Implements IWmiInstanceProvider.GetInstanceType" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType() = System::ServiceModel::Administration::IWmiInstanceProvider::GetInstanceType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Administration.IWmiInstanceProvider.GetInstanceType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -201,6 +210,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
       <MemberSignature Language="F#" Value="abstract member Validate : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit&#xA;override this.Validate : System.ServiceModel.Description.ServiceDescription * System.ServiceModel.ServiceHostBase -&gt; unit" Usage="workflowRuntimeBehavior.Validate (serviceDescription, serviceHostBase)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

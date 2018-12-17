@@ -35,7 +35,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
-      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="httpWriter.Close " />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="httpWriter.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,7 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.Flush" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
-      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit&#xA;override this.Flush : unit -&gt; unit" Usage="httpWriter.Flush " />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="httpWriter.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,7 +142,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.Write(System.Char)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (ch As Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(char ch);" />
-      <MemberSignature Language="F#" Value="abstract member Write : char -&gt; unit&#xA;override this.Write : char -&gt; unit" Usage="httpWriter.Write ch" />
+      <MemberSignature Language="F#" Value="override this.Write : char -&gt; unit" Usage="httpWriter.Write ch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,7 +169,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.Write(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::Object ^ obj);" />
-      <MemberSignature Language="F#" Value="abstract member Write : obj -&gt; unit&#xA;override this.Write : obj -&gt; unit" Usage="httpWriter.Write obj" />
+      <MemberSignature Language="F#" Value="override this.Write : obj -&gt; unit" Usage="httpWriter.Write obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,7 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.Write(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (s As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ s);" />
-      <MemberSignature Language="F#" Value="abstract member Write : string -&gt; unit&#xA;override this.Write : string -&gt; unit" Usage="httpWriter.Write s" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="httpWriter.Write s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,7 +222,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.Write(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Char(), index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
-      <MemberSignature Language="F#" Value="abstract member Write : char[] * int * int -&gt; unit&#xA;override this.Write : char[] * int * int -&gt; unit" Usage="httpWriter.Write (buffer, index, count)" />
+      <MemberSignature Language="F#" Value="override this.Write : char[] * int * int -&gt; unit" Usage="httpWriter.Write (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,7 +297,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.HttpWriter.WriteLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine();" />
-      <MemberSignature Language="F#" Value="abstract member WriteLine : unit -&gt; unit&#xA;override this.WriteLine : unit -&gt; unit" Usage="httpWriter.WriteLine " />
+      <MemberSignature Language="F#" Value="override this.WriteLine : unit -&gt; unit" Usage="httpWriter.WriteLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

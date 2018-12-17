@@ -139,7 +139,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPage (document As PrintDocument, e As PrintPageEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnEndPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; unit&#xA;override this.OnEndPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnEndPage (document, e)" />
+      <MemberSignature Language="F#" Value="override this.OnEndPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnEndPage (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,7 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPrint (document As PrintDocument, e As PrintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnEndPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit&#xA;override this.OnEndPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnEndPrint (document, e)" />
+      <MemberSignature Language="F#" Value="override this.OnEndPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnEndPrint (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,7 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function OnStartPage (document As PrintDocument, e As PrintPageEventArgs) As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Graphics ^ OnStartPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnStartPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; System.Drawing.Graphics&#xA;override this.OnStartPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; System.Drawing.Graphics" Usage="printControllerWithStatusDialog.OnStartPage (document, e)" />
+      <MemberSignature Language="F#" Value="override this.OnStartPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; System.Drawing.Graphics" Usage="printControllerWithStatusDialog.OnStartPage (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,7 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnStartPrint (document As PrintDocument, e As PrintEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnStartPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnStartPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit&#xA;override this.OnStartPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnStartPrint (document, e)" />
+      <MemberSignature Language="F#" Value="override this.OnStartPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnStartPrint (document, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

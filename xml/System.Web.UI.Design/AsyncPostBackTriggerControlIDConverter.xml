@@ -66,7 +66,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="asyncPostBackTriggerControlIDConverter.GetStandardValues context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="asyncPostBackTriggerControlIDConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -92,7 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="asyncPostBackTriggerControlIDConverter.GetStandardValuesExclusive context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="asyncPostBackTriggerControlIDConverter.GetStandardValuesExclusive context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -119,7 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.AsyncPostBackTriggerControlIDConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="asyncPostBackTriggerControlIDConverter.GetStandardValuesSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="asyncPostBackTriggerControlIDConverter.GetStandardValuesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

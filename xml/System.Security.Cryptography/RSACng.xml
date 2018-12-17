@@ -180,7 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Decrypt (data As Byte(), padding As RSAEncryptionPadding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decrypt(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::RSAEncryptionPadding ^ padding);" />
-      <MemberSignature Language="F#" Value="abstract member Decrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]&#xA;override this.Decrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACng.Decrypt (data, padding)" />
+      <MemberSignature Language="F#" Value="override this.Decrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACng.Decrypt (data, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -230,7 +230,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.DecryptValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptValue (rgb As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptValue(cli::array &lt;System::Byte&gt; ^ rgb);" />
-      <MemberSignature Language="F#" Value="abstract member DecryptValue : byte[] -&gt; byte[]&#xA;override this.DecryptValue : byte[] -&gt; byte[]" Usage="rSACng.DecryptValue rgb" />
+      <MemberSignature Language="F#" Value="override this.DecryptValue : byte[] -&gt; byte[]" Usage="rSACng.DecryptValue rgb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -259,7 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="rSACng.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="rSACng.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -293,7 +293,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.Encrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Encrypt (data As Byte(), padding As RSAEncryptionPadding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encrypt(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::RSAEncryptionPadding ^ padding);" />
-      <MemberSignature Language="F#" Value="abstract member Encrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]&#xA;override this.Encrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACng.Encrypt (data, padding)" />
+      <MemberSignature Language="F#" Value="override this.Encrypt : byte[] * System.Security.Cryptography.RSAEncryptionPadding -&gt; byte[]" Usage="rSACng.Encrypt (data, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -343,7 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.EncryptValue(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptValue (rgb As Byte()) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptValue(cli::array &lt;System::Byte&gt; ^ rgb);" />
-      <MemberSignature Language="F#" Value="abstract member EncryptValue : byte[] -&gt; byte[]&#xA;override this.EncryptValue : byte[] -&gt; byte[]" Usage="rSACng.EncryptValue rgb" />
+      <MemberSignature Language="F#" Value="override this.EncryptValue : byte[] -&gt; byte[]" Usage="rSACng.EncryptValue rgb" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -372,7 +372,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.ExportParameters(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As RSAParameters" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::RSAParameters ExportParameters(bool includePrivateParameters);" />
-      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.RSAParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.RSAParameters" Usage="rSACng.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.RSAParameters" Usage="rSACng.ExportParameters includePrivateParameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -414,7 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
-      <MemberSignature Language="F#" Value="abstract member HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACng.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACng.HashData (data, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -451,7 +451,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
-      <MemberSignature Language="F#" Value="abstract member HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACng.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="rSACng.HashData (data, offset, count, hashAlgorithm)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -492,7 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.ImportParameters(System.Security.Cryptography.RSAParameters)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As RSAParameters)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::RSAParameters parameters);" />
-      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.RSAParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.RSAParameters -&gt; unit" Usage="rSACng.ImportParameters parameters" />
+      <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.RSAParameters -&gt; unit" Usage="rSACng.ImportParameters parameters" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -668,7 +668,7 @@
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.SignHash(System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SignHash (hash As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ SignHash(cli::array &lt;System::Byte&gt; ^ hash, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
-      <MemberSignature Language="F#" Value="abstract member SignHash : byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; byte[]&#xA;override this.SignHash : byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; byte[]" Usage="rSACng.SignHash (hash, hashAlgorithm, padding)" />
+      <MemberSignature Language="F#" Value="override this.SignHash : byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; byte[]" Usage="rSACng.SignHash (hash, hashAlgorithm, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -715,13 +715,151 @@
           <paramref name="padding" /> does not equal <see cref="P:System.Security.Cryptography.RSASignaturePadding.Pkcs1" /> or <see cref="P:System.Security.Cryptography.RSASignaturePadding.Pss" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="TryDecrypt">
+      <MemberSignature Language="C#" Value="public override bool TryDecrypt (ReadOnlySpan&lt;byte&gt; data, Span&lt;byte&gt; destination, System.Security.Cryptography.RSAEncryptionPadding padding, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryDecrypt(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, valuetype System.Span`1&lt;unsigned int8&gt; destination, class System.Security.Cryptography.RSAEncryptionPadding padding, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.TryDecrypt(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.RSAEncryptionPadding,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryDecrypt (data As ReadOnlySpan(Of Byte), destination As Span(Of Byte), padding As RSAEncryptionPadding, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryDecrypt(ReadOnlySpan&lt;System::Byte&gt; data, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::RSAEncryptionPadding ^ padding, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryDecrypt : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * System.Security.Cryptography.RSAEncryptionPadding *  -&gt; bool" Usage="rSACng.TryDecrypt (data, destination, padding, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSAEncryptionPadding" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="padding">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryEncrypt">
+      <MemberSignature Language="C#" Value="public override bool TryEncrypt (ReadOnlySpan&lt;byte&gt; data, Span&lt;byte&gt; destination, System.Security.Cryptography.RSAEncryptionPadding padding, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryEncrypt(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, valuetype System.Span`1&lt;unsigned int8&gt; destination, class System.Security.Cryptography.RSAEncryptionPadding padding, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.TryEncrypt(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.RSAEncryptionPadding,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TryEncrypt (data As ReadOnlySpan(Of Byte), destination As Span(Of Byte), padding As RSAEncryptionPadding, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TryEncrypt(ReadOnlySpan&lt;System::Byte&gt; data, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::RSAEncryptionPadding ^ padding, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryEncrypt : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * System.Security.Cryptography.RSAEncryptionPadding *  -&gt; bool" Usage="rSACng.TryEncrypt (data, destination, padding, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSAEncryptionPadding" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="padding">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryHashData">
+      <MemberSignature Language="C#" Value="protected override bool TryHashData (ReadOnlySpan&lt;byte&gt; data, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryHashData(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; data, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.TryHashData(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryHashData (data As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryHashData(ReadOnlySpan&lt;System::Byte&gt; data, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TryHashData : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName *  -&gt; bool" Usage="rSACng.TryHashData (data, destination, hashAlgorithm, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySignHash">
+      <MemberSignature Language="C#" Value="public override bool TrySignHash (ReadOnlySpan&lt;byte&gt; hash, Span&lt;byte&gt; destination, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.RSASignaturePadding padding, out int bytesWritten);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TrySignHash(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, valuetype System.Span`1&lt;unsigned int8&gt; destination, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.RSASignaturePadding padding, [out] int32&amp; bytesWritten) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.TrySignHash(System.ReadOnlySpan{System.Byte},System.Span{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TrySignHash (hash As ReadOnlySpan(Of Byte), destination As Span(Of Byte), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding, ByRef bytesWritten As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool TrySignHash(ReadOnlySpan&lt;System::Byte&gt; hash, Span&lt;System::Byte&gt; destination, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding, [Runtime::InteropServices::Out] int % bytesWritten);" />
+      <MemberSignature Language="F#" Value="override this.TrySignHash : ReadOnlySpan&lt;byte&gt; * Span&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding *  -&gt; bool" Usage="rSACng.TrySignHash (hash, destination, hashAlgorithm, padding, bytesWritten)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSASignaturePadding" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="padding">To be added.</param>
+        <param name="bytesWritten">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="VerifyHash">
       <MemberSignature Language="C#" Value="public override bool VerifyHash (byte[] hash, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.RSASignaturePadding padding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool VerifyHash(unsigned int8[] hash, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.RSASignaturePadding padding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.VerifyHash(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyHash (hash As Byte(), signature As Byte(), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyHash(cli::array &lt;System::Byte&gt; ^ hash, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
-      <MemberSignature Language="F#" Value="abstract member VerifyHash : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool&#xA;override this.VerifyHash : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool" Usage="rSACng.VerifyHash (hash, signature, hashAlgorithm, padding)" />
+      <MemberSignature Language="F#" Value="override this.VerifyHash : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool" Usage="rSACng.VerifyHash (hash, signature, hashAlgorithm, padding)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -777,6 +915,40 @@
  -or-  
   
  The signature is badly formatted. (In the [!INCLUDE[net_v46](~/includes/net-v46-md.md)] and 4.6.1 only; starting with the [!INCLUDE[net_v462](~/includes/net-v462-md.md)], the method returns <see langword="false" /> if a signature is badly formatted.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VerifyHash">
+      <MemberSignature Language="C#" Value="public override bool VerifyHash (ReadOnlySpan&lt;byte&gt; hash, ReadOnlySpan&lt;byte&gt; signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm, System.Security.Cryptography.RSASignaturePadding padding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool VerifyHash(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; hash, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm, class System.Security.Cryptography.RSASignaturePadding padding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSACng.VerifyHash(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.RSASignaturePadding)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifyHash (hash As ReadOnlySpan(Of Byte), signature As ReadOnlySpan(Of Byte), hashAlgorithm As HashAlgorithmName, padding As RSASignaturePadding) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifyHash(ReadOnlySpan&lt;System::Byte&gt; hash, ReadOnlySpan&lt;System::Byte&gt; signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm, System::Security::Cryptography::RSASignaturePadding ^ padding);" />
+      <MemberSignature Language="F#" Value="override this.VerifyHash : ReadOnlySpan&lt;byte&gt; * ReadOnlySpan&lt;byte&gt; * System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.RSASignaturePadding -&gt; bool" Usage="rSACng.VerifyHash (hash, signature, hashAlgorithm, padding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hash" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="signature" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="hashAlgorithm" Type="System.Security.Cryptography.HashAlgorithmName" />
+        <Parameter Name="padding" Type="System.Security.Cryptography.RSASignaturePadding" />
+      </Parameters>
+      <Docs>
+        <param name="hash">To be added.</param>
+        <param name="signature">To be added.</param>
+        <param name="hashAlgorithm">To be added.</param>
+        <param name="padding">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

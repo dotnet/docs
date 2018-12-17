@@ -1,9 +1,9 @@
 ﻿<Type Name="BindingExpression" FullName="System.Windows.Data.BindingExpression">
-  <TypeSignature Language="C#" Value="public sealed class BindingExpression : System.Windows.Data.BindingExpressionBase" />
+  <TypeSignature Language="C#" Value="public sealed class BindingExpression : System.Windows.Data.BindingExpressionBase, System.Windows.IWeakEventListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindingExpression extends System.Windows.Data.BindingExpressionBase implements class System.Windows.IWeakEventListener" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.BindingExpression" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindingExpression&#xA;Inherits BindingExpressionBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BindingExpression sealed : System::Windows::Data::BindingExpressionBase" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindingExpression&#xA;Inherits BindingExpressionBase&#xA;Implements IWeakEventListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingExpression sealed : System::Windows::Data::BindingExpressionBase, System::Windows::IWeakEventListener" />
   <TypeSignature Language="F#" Value="type BindingExpression = class&#xA;    inherit BindingExpressionBase&#xA;    interface IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,6 +144,9 @@
       <MemberSignature Language="VB.NET" Value="Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean Implements IWeakEventListener.ReceiveWeakEvent" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.IWeakEventListener.ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e) = System::Windows::IWeakEventListener::ReceiveWeakEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>

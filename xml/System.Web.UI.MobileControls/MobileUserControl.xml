@@ -72,7 +72,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileUserControl.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ o);" />
-      <MemberSignature Language="F#" Value="abstract member AddParsedSubObject : obj -&gt; unit&#xA;override this.AddParsedSubObject : obj -&gt; unit" Usage="mobileUserControl.AddParsedSubObject o" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="mobileUserControl.AddParsedSubObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

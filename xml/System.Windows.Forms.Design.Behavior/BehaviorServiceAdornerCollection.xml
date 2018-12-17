@@ -243,7 +243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As BehaviorServiceAdornerCollectionEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Design::Behavior::BehaviorServiceAdornerCollectionEnumerator ^ GetEnumerator();" />
-      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator" Usage="behaviorServiceAdornerCollection.GetEnumerator " />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollectionEnumerator" Usage="behaviorServiceAdornerCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -47,6 +47,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpModuleBase.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -97,6 +100,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Init(System::Web::HttpApplication ^ context);" />
       <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="httpModuleBase.Init context" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

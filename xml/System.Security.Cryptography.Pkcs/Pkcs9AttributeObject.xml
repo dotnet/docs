@@ -173,7 +173,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Security.Cryptography.AsnEncodedData asnEncodedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject.CopyFrom(System.Security.Cryptography.AsnEncodedData)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Security::Cryptography::AsnEncodedData ^ asnEncodedData);" />
-      <MemberSignature Language="F#" Value="abstract member CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit&#xA;override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="pkcs9AttributeObject.CopyFrom asnEncodedData" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Security.Cryptography.AsnEncodedData -&gt; unit" Usage="pkcs9AttributeObject.CopyFrom asnEncodedData" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>

@@ -473,6 +473,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Add(T item);" />
       <MemberSignature Language="F#" Value="abstract member Add : 'T -&gt; bool&#xA;override this.Add : 'T -&gt; bool" Usage="hashSet.Add item" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -999,6 +1002,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member ExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.ExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.ExceptWith other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.ExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1169,6 +1175,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void IntersectWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member IntersectWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.IntersectWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.IntersectWith other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IntersectWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1220,6 +1229,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsProperSubsetOf other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1285,6 +1297,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsProperSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsProperSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsProperSupersetOf other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsProperSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1350,6 +1365,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubsetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member IsSubsetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSubsetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsSubsetOf other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1415,6 +1433,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSupersetOf(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member IsSupersetOf : seq&lt;'T&gt; -&gt; bool&#xA;override this.IsSupersetOf : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.IsSupersetOf other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.IsSupersetOf(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1521,6 +1542,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Overlaps(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member Overlaps : seq&lt;'T&gt; -&gt; bool&#xA;override this.Overlaps : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.Overlaps other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.Overlaps(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1691,6 +1715,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SetEquals(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member SetEquals : seq&lt;'T&gt; -&gt; bool&#xA;override this.SetEquals : seq&lt;'T&gt; -&gt; bool" Usage="hashSet.SetEquals other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.SetEquals(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1754,6 +1781,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SymmetricExceptWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.SymmetricExceptWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.SymmetricExceptWith other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.SymmetricExceptWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2120,6 +2150,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnionWith(System::Collections::Generic::IEnumerable&lt;T&gt; ^ other);" />
       <MemberSignature Language="F#" Value="abstract member UnionWith : seq&lt;'T&gt; -&gt; unit&#xA;override this.UnionWith : seq&lt;'T&gt; -&gt; unit" Usage="hashSet.UnionWith other" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ISet`1.UnionWith(System.Collections.Generic.IEnumerable{`0})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

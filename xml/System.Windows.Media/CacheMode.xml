@@ -54,7 +54,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CacheMode.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As CacheMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::CacheMode ^ CloneCurrentValue();" />
-      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.CacheMode" Usage="cacheMode.CloneCurrentValue " />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.CacheMode" Usage="cacheMode.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

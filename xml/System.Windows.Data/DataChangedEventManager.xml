@@ -98,7 +98,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.NewListenerList" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function NewListenerList () As WeakEventManager.ListenerList" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::WeakEventManager::ListenerList ^ NewListenerList();" />
-      <MemberSignature Language="F#" Value="abstract member NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList&#xA;override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="dataChangedEventManager.NewListenerList " />
+      <MemberSignature Language="F#" Value="override this.NewListenerList : unit -&gt; System.Windows.WeakEventManager.ListenerList" Usage="dataChangedEventManager.NewListenerList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,7 +177,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StartListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StartListening(System::Object ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="dataChangedEventManager.StartListening source" />
+      <MemberSignature Language="F#" Value="override this.StartListening : obj -&gt; unit" Usage="dataChangedEventManager.StartListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -205,7 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataChangedEventManager.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub StopListening (source As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void StopListening(System::Object ^ source);" />
-      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="dataChangedEventManager.StopListening source" />
+      <MemberSignature Language="F#" Value="override this.StopListening : obj -&gt; unit" Usage="dataChangedEventManager.StopListening source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -137,6 +137,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Web.ClientServices.ClientFormsIdentity.AuthenticationType" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Principal.IIdentity.AuthenticationType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -273,6 +276,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.ClientServices.ClientFormsIdentity.IsAuthenticated" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Principal.IIdentity.IsAuthenticated</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -325,6 +331,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.ClientServices.ClientFormsIdentity.Name" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Principal.IIdentity.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

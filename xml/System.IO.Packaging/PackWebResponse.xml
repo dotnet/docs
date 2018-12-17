@@ -36,7 +36,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebResponse.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
-      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="packWebResponse.Close " />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="packWebResponse.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,7 +138,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebResponse.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="packWebResponse.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="packWebResponse.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,7 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebResponse.GetResponseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponseStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetResponseStream();" />
-      <MemberSignature Language="F#" Value="abstract member GetResponseStream : unit -&gt; System.IO.Stream&#xA;override this.GetResponseStream : unit -&gt; System.IO.Stream" Usage="packWebResponse.GetResponseStream " />
+      <MemberSignature Language="F#" Value="override this.GetResponseStream : unit -&gt; System.IO.Stream" Usage="packWebResponse.GetResponseStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

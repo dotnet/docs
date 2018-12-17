@@ -219,7 +219,7 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.ControlPropertiesValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
-      <MemberSignature Language="F#" Value="abstract member ControlPropertiesValid : unit -&gt; bool&#xA;override this.ControlPropertiesValid : unit -&gt; bool" Usage="dynamicValidator.ControlPropertiesValid " />
+      <MemberSignature Language="F#" Value="override this.ControlPropertiesValid : unit -&gt; bool" Usage="dynamicValidator.ControlPropertiesValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -250,7 +250,7 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.EvaluateIsValid" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
-      <MemberSignature Language="F#" Value="abstract member EvaluateIsValid : unit -&gt; bool&#xA;override this.EvaluateIsValid : unit -&gt; bool" Usage="dynamicValidator.EvaluateIsValid " />
+      <MemberSignature Language="F#" Value="override this.EvaluateIsValid : unit -&gt; bool" Usage="dynamicValidator.EvaluateIsValid " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -274,7 +274,7 @@ public class MyDynamicValidator : DynamicValidator {
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicValidator.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="dynamicValidator.OnInit e" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="dynamicValidator.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

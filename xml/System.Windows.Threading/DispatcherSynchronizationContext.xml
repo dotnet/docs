@@ -104,7 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCopy () As SynchronizationContext" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::SynchronizationContext ^ CreateCopy();" />
-      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.Threading.SynchronizationContext&#xA;override this.CreateCopy : unit -&gt; System.Threading.SynchronizationContext" Usage="dispatcherSynchronizationContext.CreateCopy " />
+      <MemberSignature Language="F#" Value="override this.CreateCopy : unit -&gt; System.Threading.SynchronizationContext" Usage="dispatcherSynchronizationContext.CreateCopy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -127,7 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Post (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="abstract member Post : System.Threading.SendOrPostCallback * obj -&gt; unit&#xA;override this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="dispatcherSynchronizationContext.Post (d, state)" />
+      <MemberSignature Language="F#" Value="override this.Post : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="dispatcherSynchronizationContext.Post (d, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -165,7 +165,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Send (d As SendOrPostCallback, state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Send(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
-      <MemberSignature Language="F#" Value="abstract member Send : System.Threading.SendOrPostCallback * obj -&gt; unit&#xA;override this.Send : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="dispatcherSynchronizationContext.Send (d, state)" />
+      <MemberSignature Language="F#" Value="override this.Send : System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="dispatcherSynchronizationContext.Send (d, state)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -201,7 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Wait (waitHandles As IntPtr(), waitAll As Boolean, millisecondsTimeout As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Wait(cli::array &lt;IntPtr&gt; ^ waitHandles, bool waitAll, int millisecondsTimeout);" />
-      <MemberSignature Language="F#" Value="abstract member Wait : nativeint[] * bool * int -&gt; int&#xA;override this.Wait : nativeint[] * bool * int -&gt; int" Usage="dispatcherSynchronizationContext.Wait (waitHandles, waitAll, millisecondsTimeout)" />
+      <MemberSignature Language="F#" Value="override this.Wait : nativeint[] * bool * int -&gt; int" Usage="dispatcherSynchronizationContext.Wait (waitHandles, waitAll, millisecondsTimeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

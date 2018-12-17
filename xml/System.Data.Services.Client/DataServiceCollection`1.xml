@@ -340,7 +340,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.Clear(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear (stopTracking As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear(bool stopTracking);" />
-      <MemberSignature Language="F#" Value="member this.Clear : bool -&gt; unit" Usage="dataServiceCollection.Clear stopTracking" />
+      <MemberSignature Language="F#" Value="override this.Clear : bool -&gt; unit" Usage="dataServiceCollection.Clear stopTracking" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -455,7 +455,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.InsertItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, T item);" />
-      <MemberSignature Language="F#" Value="abstract member InsertItem : int * 'T -&gt; unit&#xA;override this.InsertItem : int * 'T -&gt; unit" Usage="dataServiceCollection.InsertItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="dataServiceCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>

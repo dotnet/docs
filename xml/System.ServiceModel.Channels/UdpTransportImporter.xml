@@ -50,6 +50,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeforeImport(System::Web::Services::Description::ServiceDescriptionCollection ^ wsdlDocuments, System::Xml::Schema::XmlSchemaSet ^ xmlSchemas, System::Collections::Generic::ICollection&lt;System::Xml::XmlElement ^&gt; ^ policy);" />
       <MemberSignature Language="F#" Value="abstract member BeforeImport : System.Web.Services.Description.ServiceDescriptionCollection * System.Xml.Schema.XmlSchemaSet * System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt; -&gt; unit&#xA;override this.BeforeImport : System.Web.Services.Description.ServiceDescriptionCollection * System.Xml.Schema.XmlSchemaSet * System.Collections.Generic.ICollection&lt;System.Xml.XmlElement&gt; -&gt; unit" Usage="udpTransportImporter.BeforeImport (wsdlDocuments, xmlSchemas, policy)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport(System.Web.Services.Description.ServiceDescriptionCollection,System.Xml.Schema.XmlSchemaSet,System.Collections.Generic.ICollection{System.Xml.XmlElement})</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +81,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportContract(System::ServiceModel::Description::WsdlImporter ^ importer, System::ServiceModel::Description::WsdlContractConversionContext ^ context);" />
       <MemberSignature Language="F#" Value="abstract member ImportContract : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit&#xA;override this.ImportContract : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlContractConversionContext -&gt; unit" Usage="udpTransportImporter.ImportContract (importer, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.ImportContract(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,6 +110,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportEndpoint(System::ServiceModel::Description::WsdlImporter ^ importer, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context);" />
       <MemberSignature Language="F#" Value="abstract member ImportEndpoint : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit&#xA;override this.ImportEndpoint : System.ServiceModel.Description.WsdlImporter * System.ServiceModel.Description.WsdlEndpointConversionContext -&gt; unit" Usage="udpTransportImporter.ImportEndpoint (importer, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint(System.ServiceModel.Description.WsdlImporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -130,6 +139,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ context);" />
       <MemberSignature Language="F#" Value="abstract member ImportPolicy : System.ServiceModel.Description.MetadataImporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit&#xA;override this.ImportPolicy : System.ServiceModel.Description.MetadataImporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit" Usage="udpTransportImporter.ImportPolicy (importer, context)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

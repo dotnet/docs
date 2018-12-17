@@ -1,9 +1,9 @@
 ﻿<Type Name="ContentLocatorPart" FullName="System.Windows.Annotations.ContentLocatorPart">
-  <TypeSignature Language="C#" Value="public sealed class ContentLocatorPart" />
+  <TypeSignature Language="C#" Value="public sealed class ContentLocatorPart : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentLocatorPart extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorPart" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentLocatorPart" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorPart sealed" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentLocatorPart&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentLocatorPart sealed : System::ComponentModel::INotifyPropertyChanged" />
   <TypeSignature Language="F#" Value="type ContentLocatorPart = class&#xA;    interface INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +206,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>

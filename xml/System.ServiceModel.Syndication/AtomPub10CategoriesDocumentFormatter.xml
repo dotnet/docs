@@ -30,8 +30,11 @@
     <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Xml.Serialization.XmlRoot("categories", Namespace="http://www.w3.org/2007/app")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5">
+    <Attribute FrameworkAlternate="netframework-3.5;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Xml.Serialization.XmlRoot(ElementName="categories", Namespace="http://www.w3.org/2007/app")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>

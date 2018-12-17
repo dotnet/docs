@@ -293,7 +293,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -800,16 +800,16 @@ End Module
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
-      <MemberSignature Language="C#" Value="public static void ChangePassword (string connectionString, System.Data.SqlClient.SqlCredential credential, System.Security.SecureString newPassword);" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ChangePassword(string connectionString, class System.Data.SqlClient.SqlCredential credential, class System.Security.SecureString newPassword) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="C#" Value="public static void ChangePassword (string connectionString, System.Data.SqlClient.SqlCredential credential, System.Security.SecureString newPassword);" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ChangePassword(string connectionString, class System.Data.SqlClient.SqlCredential credential, class System.Security.SecureString newPassword) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.2" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.ChangePassword(System.String,System.Data.SqlClient.SqlCredential,System.Security.SecureString)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.1;netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangePassword (connectionString As String, credential As SqlCredential, newPassword As SecureString)" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangePassword(System::String ^ connectionString, System::Data::SqlClient::SqlCredential ^ credential, System::Security::SecureString ^ newPassword);" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangePassword (connectionString As String, credential As SqlCredential, newPassword As SecureString)" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangePassword(System::String ^ connectionString, System::Data::SqlClient::SqlCredential ^ credential, System::Security::SecureString ^ newPassword);" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.2" />
       <MemberSignature Language="F#" Value="static member ChangePassword : string * System.Data.SqlClient.SqlCredential * System.Security.SecureString -&gt; unit" Usage="System.Data.SqlClient.SqlConnection.ChangePassword (connectionString, credential, newPassword)" FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.1;netcore-2.0;netcore-2.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
-      <MemberSignature Language="C#" Value="public static void ChangePassword (string connectionString, System.Data.SqlClient.SqlCredential credential, System.Security.SecureString newSecurePassword);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ChangePassword(string connectionString, class System.Data.SqlClient.SqlCredential credential, class System.Security.SecureString newSecurePassword) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangePassword (connectionString As String, credential As SqlCredential, newSecurePassword As SecureString)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangePassword(System::String ^ connectionString, System::Data::SqlClient::SqlCredential ^ credential, System::Security::SecureString ^ newSecurePassword);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C#" Value="public static void ChangePassword (string connectionString, System.Data.SqlClient.SqlCredential credential, System.Security.SecureString newSecurePassword);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ChangePassword(string connectionString, class System.Data.SqlClient.SqlCredential credential, class System.Security.SecureString newSecurePassword) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ChangePassword (connectionString As String, credential As SqlCredential, newSecurePassword As SecureString)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChangePassword(System::String ^ connectionString, System::Data::SqlClient::SqlCredential ^ credential, System::Security::SecureString ^ newSecurePassword);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -826,8 +826,8 @@ End Module
       <Parameters>
         <Parameter Name="connectionString" Type="System.String" Index="0" />
         <Parameter Name="credential" Type="System.Data.SqlClient.SqlCredential" Index="1" />
-        <Parameter Name="newPassword" Type="System.Security.SecureString" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.2;dotnet-plat-ext-2.2" />
-        <Parameter Name="newSecurePassword" Type="System.Security.SecureString" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="newPassword" Type="System.Security.SecureString" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;netcore-1.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;dotnet-plat-ext-2.2" />
+        <Parameter Name="newSecurePassword" Type="System.Security.SecureString" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>
         <param name="connectionString">The connection string that contains enough information to connect to a server. The connection string should not use any of the following connection string keywords: <see langword="Integrated Security = true" />, <see langword="UserId" />, or <see langword="Password" />; or <see langword="ContextConnection = true" />.</param>
@@ -973,7 +973,7 @@ The connection string contains <see langword="Context Connection=true" />.
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1201,13 +1201,10 @@ The connection string contains <see langword="Context Connection=true" />.
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.ComponentModel.RecommendedAsConfigurable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.SQL.Design.SqlConnectionStringEditor, Microsoft.VSDesigner, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -1378,10 +1375,7 @@ The connection string contains <see langword="Context Connection=true" />.
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -1519,7 +1513,7 @@ The connection string contains <see langword="Context Connection=true" />.
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1608,10 +1602,7 @@ The connection string contains <see langword="Context Connection=true" />.
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -1675,10 +1666,7 @@ The connection string contains <see langword="Context Connection=true" />.
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -1729,6 +1717,7 @@ The connection string contains <see langword="Context Connection=true" />.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.DbProviderFactory</ReturnType>
@@ -1745,7 +1734,7 @@ The connection string contains <see langword="Context Connection=true" />.
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="sqlConnection.Dispose disposing" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sqlConnection.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1833,6 +1822,7 @@ The connection string contains <see langword="Context Connection=true" />.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2336,6 +2326,33 @@ class Program {
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
+    <Member MemberName="OnStateChange">
+      <MemberSignature Language="C#" Value="protected override void OnStateChange (System.Data.StateChangeEventArgs stateChange);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStateChange(class System.Data.StateChangeEventArgs stateChange) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlConnection.OnStateChange(System.Data.StateChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStateChange (stateChange As StateChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStateChange(System::Data::StateChangeEventArgs ^ stateChange);" />
+      <MemberSignature Language="F#" Value="override this.OnStateChange : System.Data.StateChangeEventArgs -&gt; unit" Usage="sqlConnection.OnStateChange stateChange" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateChange" Type="System.Data.StateChangeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="stateChange">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Open">
       <MemberSignature Language="C#" Value="public override void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Open() cil managed" />
@@ -2491,10 +2508,7 @@ class Program {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -2675,10 +2689,7 @@ class Program {
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -2749,10 +2760,7 @@ class Program {
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -3021,10 +3029,7 @@ Once the transaction has completed, you must explicitly commit or roll back the 
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">

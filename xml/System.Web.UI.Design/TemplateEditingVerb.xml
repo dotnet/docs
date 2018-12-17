@@ -236,7 +236,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateEditingVerb.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!TemplateEditingVerb ()" />
-      <MemberSignature Language="F#" Value="abstract member Finalize : unit -&gt; unit&#xA;override this.Finalize : unit -&gt; unit" Usage="templateEditingVerb.Finalize " />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="templateEditingVerb.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1100,7 +1100,8 @@
       <Docs>
         <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
-        <returns><see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
@@ -1138,7 +1139,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.SortedDictionary`2" />, this property always returns <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.SortedDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1178,7 +1180,8 @@
       <Docs>
         <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to remove from the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         <summary>Removes the first occurrence of the specified element from the <see cref="T:System.Collections.Generic.ICollection`1" />.</summary>
-        <returns><see langword="true" /> if <paramref name="keyValuePair" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="keyValuePair" /> was not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="keyValuePair" /> was successfully removed from the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="keyValuePair" /> was not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

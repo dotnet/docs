@@ -211,6 +211,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReportEvent(System::Runtime::InteropServices::ExporterEventKind kind, int code, System::String ^ msg);" />
       <MemberSignature Language="F#" Value="abstract member ReportEvent : System.Runtime.InteropServices.ExporterEventKind * int * string -&gt; unit&#xA;override this.ReportEvent : System.Runtime.InteropServices.ExporterEventKind * int * string -&gt; unit" Usage="registerAssembly.ReportEvent (kind, code, msg)" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent(System.Runtime.InteropServices.ExporterEventKind,System.Int32,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -244,6 +247,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ResolveRef(System::Reflection::Assembly ^ assemblyToResolve);" />
       <MemberSignature Language="F#" Value="abstract member ResolveRef : System.Reflection.Assembly -&gt; obj&#xA;override this.ResolveRef : System.Reflection.Assembly -&gt; obj" Usage="registerAssembly.ResolveRef assemblyToResolve" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ResolveRef(System.Reflection.Assembly)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

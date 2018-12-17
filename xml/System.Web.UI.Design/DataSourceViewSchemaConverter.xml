@@ -79,7 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
-      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dataSourceViewSchemaConverter.CanConvertFrom (context, sourceType)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dataSourceViewSchemaConverter.CanConvertFrom (context, sourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,7 +119,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dataSourceViewSchemaConverter.ConvertFrom (context, culture, value)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dataSourceViewSchemaConverter.ConvertFrom (context, culture, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -172,7 +172,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceViewSchemaConverter.GetStandardValues context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceViewSchemaConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -218,7 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStandardValues (context As ITypeDescriptorContext, typeFilter As Type) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ typeFilter);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext * Type -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext * Type -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceViewSchemaConverter.GetStandardValues (context, typeFilter)" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext * Type -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceViewSchemaConverter.GetStandardValues (context, typeFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -248,7 +248,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataSourceViewSchemaConverter.GetStandardValuesExclusive context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataSourceViewSchemaConverter.GetStandardValuesExclusive context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -285,7 +285,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
-      <MemberSignature Language="F#" Value="abstract member GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataSourceViewSchemaConverter.GetStandardValuesSupported context" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataSourceViewSchemaConverter.GetStandardValuesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

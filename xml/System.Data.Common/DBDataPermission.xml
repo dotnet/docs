@@ -79,66 +79,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Data.Common.DBDataPermission permission);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DBDataPermission permission) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermission)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (permission As DBDataPermission)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermission ^ permission);" />
-      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermission -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission permission" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="permission" Type="System.Data.Common.DBDataPermission" />
-      </Parameters>
-      <Docs>
-        <param name="permission">An existing <see langword="DBDataPermission" /> used to create a new <see langword="DBDataPermission" />.</param>
-        <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class using an existing <see langword="DBDataPermission" />.</summary>
-        <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Data.Common.DBDataPermissionAttribute permissionAttribute);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DBDataPermissionAttribute permissionAttribute) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermissionAttribute)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (permissionAttribute As DBDataPermissionAttribute)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermissionAttribute ^ permissionAttribute);" />
-      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermissionAttribute -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission permissionAttribute" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Permissions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="permissionAttribute" Type="System.Data.Common.DBDataPermissionAttribute" />
-      </Parameters>
-      <Docs>
-        <param name="permissionAttribute">A security action associated with a custom security attribute.</param>
-        <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see langword="DBDataPermissionAttribute" />.</summary>
-        <remarks>To be added.</remarks>
-        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DBDataPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Security.Permissions.PermissionState)" />
@@ -169,12 +109,94 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Security.Permissions.PermissionState state, bool allowBlankPassword);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state, bool allowBlankPassword) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
-      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission (state, allowBlankPassword)" />
+      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Data.Common.DBDataPermission permission);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DBDataPermission permission) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermission)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (permission As DBDataPermission)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermission ^ permission);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermission -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission permission" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Data.Common.DBDataPermission dataPermission);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DBDataPermission dataPermission) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermission)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (dataPermission As DBDataPermission)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermission ^ dataPermission);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermission -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission dataPermission" FrameworkAlternate="netcore-2.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="permission" Type="System.Data.Common.DBDataPermission" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="dataPermission" Type="System.Data.Common.DBDataPermission" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      </Parameters>
+      <Docs>
+        <param name="permission">An existing <see langword="DBDataPermission" /> used to create a new <see langword="DBDataPermission" />.</param>
+        <param name="dataPermission">To be added.</param>
+        <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class using an existing <see langword="DBDataPermission" />.</summary>
+        <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Data.Common.DBDataPermissionAttribute permissionAttribute);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DBDataPermissionAttribute permissionAttribute) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermissionAttribute)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (permissionAttribute As DBDataPermissionAttribute)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermissionAttribute ^ permissionAttribute);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermissionAttribute -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission permissionAttribute" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Data.Common.DBDataPermissionAttribute attribute);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DBDataPermissionAttribute attribute) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Data.Common.DBDataPermissionAttribute)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (attribute As DBDataPermissionAttribute)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Data::Common::DBDataPermissionAttribute ^ attribute);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Data.Common.DBDataPermissionAttribute -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission attribute" FrameworkAlternate="netcore-2.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="permissionAttribute" Type="System.Data.Common.DBDataPermissionAttribute" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="attribute" Type="System.Data.Common.DBDataPermissionAttribute" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      </Parameters>
+      <Docs>
+        <param name="permissionAttribute">A security action associated with a custom security attribute.</param>
+        <param name="attribute">To be added.</param>
+        <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see langword="DBDataPermissionAttribute" />.</summary>
+        <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Security.Permissions.PermissionState state, bool allowBlankPassword);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state, bool allowBlankPassword) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState, allowBlankPassword As Boolean)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission (state, allowBlankPassword)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="protected DBDataPermission (System.Security.Permissions.PermissionState state, bool blankPassword);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state, bool blankPassword) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState, blankPassword As Boolean)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DBDataPermission(System::Security::Permissions::PermissionState state, bool blankPassword);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DBDataPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.Common.DBDataPermission" Usage="new System.Data.Common.DBDataPermission (state, blankPassword)" FrameworkAlternate="netcore-2.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -194,12 +216,14 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
-        <Parameter Name="allowBlankPassword" Type="System.Boolean" />
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" Index="0" />
+        <Parameter Name="allowBlankPassword" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="blankPassword" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>
         <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
         <param name="allowBlankPassword">Indicates whether a blank password is allowed.</param>
+        <param name="blankPassword">To be added.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" /> value, and a value indicating whether a blank password is allowed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -338,7 +362,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
-      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.IPermission&#xA;override this.Copy : unit -&gt; System.Security.IPermission" Usage="dBDataPermission.Copy " />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="dBDataPermission.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -402,11 +426,17 @@
       </Docs>
     </Member>
     <Member MemberName="FromXml">
-      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.FromXml(System.Security.SecurityElement)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
-      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="dBDataPermission.FromXml securityElement" />
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="dBDataPermission.FromXml securityElement" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement elem);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement elem) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.FromXml(System.Security.SecurityElement)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (elem As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ elem);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="dBDataPermission.FromXml elem" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -424,10 +454,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
+        <Parameter Name="securityElement" Type="System.Security.SecurityElement" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="elem" Type="System.Security.SecurityElement" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>
         <param name="securityElement">The XML encoding to use to reconstruct the security object.</param>
+        <param name="elem">To be added.</param>
         <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -446,7 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Intersect(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member Intersect : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Intersect target" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Intersect target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -488,7 +520,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.IsSubsetOf(System.Security.IPermission)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member IsSubsetOf : System.Security.IPermission -&gt; bool&#xA;override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="dBDataPermission.IsSubsetOf target" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="dBDataPermission.IsSubsetOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -531,8 +563,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.IsUnrestricted" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
-      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="dBDataPermission.IsUnrestricted " />
+      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="dBDataPermission.IsUnrestricted " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -563,7 +598,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.ToXml" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
-      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="dBDataPermission.ToXml " />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="dBDataPermission.ToXml " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -596,12 +631,18 @@
       </Docs>
     </Member>
     <Member MemberName="Union">
-      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Union(System.Security.IPermission)" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
-      <MemberSignature Language="F#" Value="abstract member Union : System.Security.IPermission -&gt; System.Security.IPermission&#xA;override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Union target" />
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Union(System.Security.IPermission)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Union target" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission other);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission other) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DBDataPermission.Union(System.Security.IPermission)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="dBDataPermission.Union other" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -619,10 +660,12 @@
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="target" Type="System.Security.IPermission" />
+        <Parameter Name="target" Type="System.Security.IPermission" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="other" Type="System.Security.IPermission" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>
         <param name="target">A permission object to combine with the current permission object. It must be of the same type as the current permission object.</param>
+        <param name="other">To be added.</param>
         <summary>Returns a new permission object that is the union of the current and specified permission objects.</summary>
         <returns>A new permission object that represents the union of the current permission object and the specified permission object.</returns>
         <remarks>

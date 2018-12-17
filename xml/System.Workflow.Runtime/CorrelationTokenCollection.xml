@@ -64,7 +64,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationTokenCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
-      <MemberSignature Language="F#" Value="abstract member ClearItems : unit -&gt; unit&#xA;override this.ClearItems : unit -&gt; unit" Usage="correlationTokenCollection.ClearItems " />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="correlationTokenCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -171,7 +171,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationTokenCollection.GetKeyForItem(System.Workflow.Runtime.CorrelationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As CorrelationToken) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Workflow::Runtime::CorrelationToken ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.Workflow.Runtime.CorrelationToken -&gt; string&#xA;override this.GetKeyForItem : System.Workflow.Runtime.CorrelationToken -&gt; string" Usage="correlationTokenCollection.GetKeyForItem item" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.Workflow.Runtime.CorrelationToken -&gt; string" Usage="correlationTokenCollection.GetKeyForItem item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -197,7 +197,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationTokenCollection.InsertItem(System.Int32,System.Workflow.Runtime.CorrelationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As CorrelationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Workflow::Runtime::CorrelationToken ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member InsertItem : int * System.Workflow.Runtime.CorrelationToken -&gt; unit&#xA;override this.InsertItem : int * System.Workflow.Runtime.CorrelationToken -&gt; unit" Usage="correlationTokenCollection.InsertItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Workflow.Runtime.CorrelationToken -&gt; unit" Usage="correlationTokenCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -224,7 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationTokenCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
-      <MemberSignature Language="F#" Value="abstract member RemoveItem : int -&gt; unit&#xA;override this.RemoveItem : int -&gt; unit" Usage="correlationTokenCollection.RemoveItem index" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="correlationTokenCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -249,7 +249,7 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.CorrelationTokenCollection.SetItem(System.Int32,System.Workflow.Runtime.CorrelationToken)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As CorrelationToken)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Workflow::Runtime::CorrelationToken ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.Workflow.Runtime.CorrelationToken -&gt; unit&#xA;override this.SetItem : int * System.Workflow.Runtime.CorrelationToken -&gt; unit" Usage="correlationTokenCollection.SetItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Workflow.Runtime.CorrelationToken -&gt; unit" Usage="correlationTokenCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

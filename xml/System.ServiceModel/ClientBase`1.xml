@@ -220,7 +220,8 @@
         <param name="remoteAddress">The address of the service endpoint.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the specified binding and target address.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binding" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,7 +310,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
       </Docs>
     </Member>
@@ -349,7 +351,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpointConfigurationName" /> or <paramref name="remoteAddress" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The endpoint cannot be found or the endpoint contract is not valid.</exception>
         <altmember cref="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       </Docs>

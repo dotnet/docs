@@ -285,10 +285,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -313,6 +310,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.IBindingList.ListChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1086,6 +1086,9 @@
       <MemberSignature Language="VB.NET" Value="Sub AddIndex (property As PropertyDescriptor) Implements IBindingList.AddIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.AddIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::AddIndex;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1128,6 +1131,9 @@
       <MemberSignature Language="VB.NET" Value="Function AddNew () As Object Implements IBindingList.AddNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.IBindingList.AddNew() = System::ComponentModel::IBindingList::AddNew;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IBindingList.AddNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1169,6 +1175,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::AllowEdit { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.AllowEdit" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowEdit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1208,6 +1217,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::AllowNew { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.AllowNew" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowNew</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1247,6 +1259,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::AllowRemove { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.AllowRemove" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowRemove</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1285,6 +1300,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ApplySort (property As PropertyDescriptor, direction As ListSortDirection) Implements IBindingList.ApplySort" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection direction) = System::ComponentModel::IBindingList::ApplySort;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1329,6 +1347,9 @@
       <MemberSignature Language="VB.NET" Value="Function Find (property As PropertyDescriptor, key As Object) As Integer Implements IBindingList.Find" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.ComponentModel.IBindingList.Find(System::ComponentModel::PropertyDescriptor ^ property, System::Object ^ key) = System::ComponentModel::IBindingList::Find;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1375,6 +1396,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::IsSorted { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.IsSorted" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.IsSorted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1413,6 +1437,9 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveIndex (property As PropertyDescriptor) Implements IBindingList.RemoveIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::RemoveIndex;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1455,6 +1482,9 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveSort () Implements IBindingList.RemoveSort" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveSort() = System::ComponentModel::IBindingList::RemoveSort;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveSort</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1495,6 +1525,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::ListSortDirection System::ComponentModel::IBindingList::SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SortDirection" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.SortDirection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1534,6 +1567,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptor ^ System::ComponentModel::IBindingList::SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SortProperty" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.SortProperty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1573,6 +1609,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::SupportsChangeNotification { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SupportsChangeNotification" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsChangeNotification</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1612,6 +1651,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::SupportsSearching { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SupportsSearching" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSearching</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1651,6 +1693,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::IBindingList::SupportsSorting { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.IBindingList.SupportsSorting" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSorting</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1689,6 +1734,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetItemProperties (listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ITypedList.GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors) = System::ComponentModel::ITypedList::GetItemProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1732,6 +1780,9 @@
       <MemberSignature Language="VB.NET" Value="Function GetListName (listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ITypedList.GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors) = System::ComponentModel::ITypedList::GetListName;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

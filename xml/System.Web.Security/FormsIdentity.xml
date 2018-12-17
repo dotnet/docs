@@ -151,7 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsIdentity.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As ClaimsIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Claims::ClaimsIdentity ^ Clone();" />
-      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Security.Claims.ClaimsIdentity&#xA;override this.Clone : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="formsIdentity.Clone " />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="formsIdentity.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

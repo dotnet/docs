@@ -1,10 +1,10 @@
 ﻿<Type Name="TimeZoneInfo+TransitionTime" FullName="System.TimeZoneInfo+TransitionTime">
   <TypeSignature Language="C#" Value="public struct TimeZoneInfo.TransitionTime : IEquatable&lt;TimeZoneInfo.TransitionTime&gt;, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
-  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit TimeZoneInfo/TransitionTime extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.TimeZoneInfo/TransitionTime&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi serializable sealed beforefieldinit TimeZoneInfo/TransitionTime extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.TimeZoneInfo/TransitionTime&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo.TransitionTime" />
   <TypeSignature Language="VB.NET" Value="Public Structure TimeZoneInfo.TransitionTime&#xA;Implements IDeserializationCallback, IEquatable(Of TimeZoneInfo.TransitionTime), ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public: value class TimeZoneInfo::TransitionTime : IEquatable&lt;TimeZoneInfo::TransitionTime&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
-  <TypeSignature Language="F#" Value="type TimeZoneInfo.TransitionTime = struct&#xA;    interface IDeserializationCallback&#xA;    interface ISerializable" />
+  <TypeSignature Language="F#" Value="type TimeZoneInfo.TransitionTime = struct&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,14 +38,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=2.0.5.0, Culture=Neutral, PublicKeyToken=7cec85d7bea7798e")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+    <Attribute FrameworkAlternate="netframework-3.5;xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
       <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -791,7 +794,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netcore-2.0">
+        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

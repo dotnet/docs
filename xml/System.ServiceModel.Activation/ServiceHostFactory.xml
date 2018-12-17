@@ -92,7 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.String,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
-      <MemberSignature Language="F#" Value="abstract member CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase&#xA;override this.CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="serviceHostFactory.CreateServiceHost (constructorString, baseAddresses)" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="serviceHostFactory.CreateServiceHost (constructorString, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>
@@ -136,7 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateServiceHost (serviceType As Type, baseAddresses As Uri()) As ServiceHost" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::ServiceHost ^ CreateServiceHost(Type ^ serviceType, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
-      <MemberSignature Language="F#" Value="abstract member CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost&#xA;override this.CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="serviceHostFactory.CreateServiceHost (serviceType, baseAddresses)" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : Type * Uri[] -&gt; System.ServiceModel.ServiceHost" Usage="serviceHostFactory.CreateServiceHost (serviceType, baseAddresses)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activation</AssemblyName>

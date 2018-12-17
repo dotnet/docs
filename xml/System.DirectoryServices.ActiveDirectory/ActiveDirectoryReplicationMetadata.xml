@@ -81,7 +81,7 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata.CopyTo(System.DirectoryServices.ActiveDirectory.AttributeMetadata[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As AttributeMetadata(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::AttributeMetadata ^&gt; ^ array, int index);" />
-      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.AttributeMetadata[] * int -&gt; unit" Usage="activeDirectoryReplicationMetadata.CopyTo (array, index)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.DirectoryServices.ActiveDirectory.AttributeMetadata[] * int -&gt; unit" Usage="activeDirectoryReplicationMetadata.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

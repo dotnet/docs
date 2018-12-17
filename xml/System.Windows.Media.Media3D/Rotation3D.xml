@@ -61,7 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rotation3D.CloneCurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Rotation3D" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Rotation3D ^ CloneCurrentValue();" />
-      <MemberSignature Language="F#" Value="member this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.Rotation3D" Usage="rotation3D.CloneCurrentValue " />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.Rotation3D" Usage="rotation3D.CloneCurrentValue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,7 +167,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rotation3D.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="rotation3D.ToString " />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rotation3D.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,7 +190,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Rotation3D.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
-      <MemberSignature Language="F#" Value="member this.ToString : IFormatProvider -&gt; string" Usage="rotation3D.ToString provider" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="rotation3D.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

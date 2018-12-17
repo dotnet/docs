@@ -78,6 +78,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsReusable { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.Handlers.ScriptResourceHandler.IsReusable" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -101,6 +104,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="scriptResourceHandler.ProcessRequest context" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -131,6 +137,9 @@
       <MemberSignature Language="C++ CLI" Value="property bool System::Web::IHttpHandler::IsReusable { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.Web.IHttpHandler.IsReusable" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -165,6 +174,9 @@
       <MemberSignature Language="VB.NET" Value="Sub ProcessRequest (context As HttpContext) Implements IHttpHandler.ProcessRequest" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpHandler.ProcessRequest(System::Web::HttpContext ^ context) = System::Web::IHttpHandler::ProcessRequest;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

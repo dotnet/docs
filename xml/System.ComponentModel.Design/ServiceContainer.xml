@@ -1,9 +1,9 @@
 ﻿<Type Name="ServiceContainer" FullName="System.ComponentModel.Design.ServiceContainer">
-  <TypeSignature Language="C#" Value="public class ServiceContainer : IDisposable, System.ComponentModel.Design.IServiceContainer" />
+  <TypeSignature Language="C#" Value="public class ServiceContainer : IDisposable, IServiceProvider, System.ComponentModel.Design.IServiceContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceContainer extends System.Object implements class System.ComponentModel.Design.IServiceContainer, class System.IDisposable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ServiceContainer" />
-  <TypeSignature Language="VB.NET" Value="Public Class ServiceContainer&#xA;Implements IDisposable, IServiceContainer" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ServiceContainer : IDisposable, System::ComponentModel::Design::IServiceContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceContainer&#xA;Implements IDisposable, IServiceContainer, IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceContainer : IDisposable, IServiceProvider, System::ComponentModel::Design::IServiceContainer" />
   <TypeSignature Language="F#" Value="type ServiceContainer = class&#xA;    interface IServiceContainer&#xA;    interface IDisposable&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -548,6 +548,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="serviceContainer.GetService serviceType" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

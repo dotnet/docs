@@ -126,7 +126,7 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarBlackoutDatesCollection.ClearItems" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
-      <MemberSignature Language="F#" Value="abstract member ClearItems : unit -&gt; unit&#xA;override this.ClearItems : unit -&gt; unit" Usage="calendarBlackoutDatesCollection.ClearItems " />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="calendarBlackoutDatesCollection.ClearItems " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -156,7 +156,7 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarBlackoutDatesCollection.Contains(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (date As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(DateTime date);" />
-      <MemberSignature Language="F#" Value="member this.Contains : DateTime -&gt; bool" Usage="calendarBlackoutDatesCollection.Contains date" />
+      <MemberSignature Language="F#" Value="override this.Contains : DateTime -&gt; bool" Usage="calendarBlackoutDatesCollection.Contains date" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,7 +182,7 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarBlackoutDatesCollection.Contains(System.DateTime,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (start As DateTime, end As DateTime) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(DateTime start, DateTime end);" />
-      <MemberSignature Language="F#" Value="member this.Contains : DateTime * DateTime -&gt; bool" Usage="calendarBlackoutDatesCollection.Contains (start, end)" />
+      <MemberSignature Language="F#" Value="override this.Contains : DateTime * DateTime -&gt; bool" Usage="calendarBlackoutDatesCollection.Contains (start, end)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -236,7 +236,7 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarBlackoutDatesCollection.InsertItem(System.Int32,System.Windows.Controls.CalendarDateRange)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As CalendarDateRange)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Windows::Controls::CalendarDateRange ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member InsertItem : int * System.Windows.Controls.CalendarDateRange -&gt; unit&#xA;override this.InsertItem : int * System.Windows.Controls.CalendarDateRange -&gt; unit" Usage="calendarBlackoutDatesCollection.InsertItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Windows.Controls.CalendarDateRange -&gt; unit" Usage="calendarBlackoutDatesCollection.InsertItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -262,7 +262,7 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarBlackoutDatesCollection.RemoveItem(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
-      <MemberSignature Language="F#" Value="abstract member RemoveItem : int -&gt; unit&#xA;override this.RemoveItem : int -&gt; unit" Usage="calendarBlackoutDatesCollection.RemoveItem index" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="calendarBlackoutDatesCollection.RemoveItem index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,7 +286,7 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CalendarBlackoutDatesCollection.SetItem(System.Int32,System.Windows.Controls.CalendarDateRange)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As CalendarDateRange)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Windows::Controls::CalendarDateRange ^ item);" />
-      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.Windows.Controls.CalendarDateRange -&gt; unit&#xA;override this.SetItem : int * System.Windows.Controls.CalendarDateRange -&gt; unit" Usage="calendarBlackoutDatesCollection.SetItem (index, item)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Windows.Controls.CalendarDateRange -&gt; unit" Usage="calendarBlackoutDatesCollection.SetItem (index, item)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

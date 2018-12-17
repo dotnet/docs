@@ -112,7 +112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.GetDefaultReader" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultReader () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetDefaultReader();" />
-      <MemberSignature Language="F#" Value="abstract member GetDefaultReader : unit -&gt; Type&#xA;override this.GetDefaultReader : unit -&gt; Type" Usage="resXResourceSet.GetDefaultReader " />
+      <MemberSignature Language="F#" Value="override this.GetDefaultReader : unit -&gt; Type" Usage="resXResourceSet.GetDefaultReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,7 +141,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.GetDefaultWriter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultWriter () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetDefaultWriter();" />
-      <MemberSignature Language="F#" Value="abstract member GetDefaultWriter : unit -&gt; Type&#xA;override this.GetDefaultWriter : unit -&gt; Type" Usage="resXResourceSet.GetDefaultWriter " />
+      <MemberSignature Language="F#" Value="override this.GetDefaultWriter : unit -&gt; Type" Usage="resXResourceSet.GetDefaultWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

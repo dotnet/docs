@@ -57,6 +57,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose();" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="scriptModule.Dispose " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -84,13 +87,16 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.ScriptModule.Init(System.Web.HttpApplication)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Init (context As HttpApplication)" FrameworkAlternate="netframework-3.5" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Init(System::Web::HttpApplication ^ context);" FrameworkAlternate="netframework-3.5" />
-      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init context" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init context" FrameworkAlternate="netframework-4.0" />
       <MemberSignature Language="C#" Value="protected virtual void Init (System.Web.HttpApplication app);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Init(class System.Web.HttpApplication app) cil managed" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Init (app As HttpApplication)" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Init(System::Web::HttpApplication ^ app);" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init app" FrameworkAlternate="netframework-4.0" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Web.HttpApplication -&gt; unit&#xA;override this.Init : System.Web.HttpApplication -&gt; unit" Usage="scriptModule.Init app" FrameworkAlternate="netframework-3.5;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -124,6 +130,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IHttpModule.Dispose" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpModule.Dispose() = System::Web::IHttpModule::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -150,6 +159,9 @@
       <MemberSignature Language="VB.NET" Value="Sub Init (context As HttpApplication) Implements IHttpModule.Init" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpModule.Init(System::Web::HttpApplication ^ context) = System::Web::IHttpModule::Init;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpModule.Init(System.Web.HttpApplication)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>

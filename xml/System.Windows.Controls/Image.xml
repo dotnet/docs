@@ -299,7 +299,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Image.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpi As DpiScale, newDpi As DpiScale)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpi, System::Windows::DpiScale newDpi);" />
-      <MemberSignature Language="F#" Value="abstract member OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit&#xA;override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="image.OnDpiChanged (oldDpi, newDpi)" />
+      <MemberSignature Language="F#" Value="override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="image.OnDpiChanged (oldDpi, newDpi)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -18,13 +18,13 @@
   <Interfaces />
   <Docs>
     <summary>Represents a section of a Service Health Behavior HTML page.</summary>
-        <remarks>  
-          <format type="text/markdown"><![CDATA[  
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
 
 The Service Health Behavior HTML page is accessed by adding the `?health` query string to the URL of the WCF service that the health behavior is monitoring.
 
          ]]></format>
-          </remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,14 +83,14 @@ The Service Health Behavior HTML page is accessed by adding the `?health` query 
       <Docs>
         <summary>Gets or sets the background color of the section.</summary>
         <value>A string that represents the background color of the section. </value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The value of the `BackgroundColor` property is a hexadecimal color string. The default value is ""#ffffff", or <xref:System.Drawing.Color.Transparent?displayProperty=nameWithType>.
 
          ]]></format>
-          </remarks>
-          <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateElementsCollection">
@@ -133,14 +133,14 @@ The value of the `BackgroundColor` property is a hexadecimal color string. The d
       <Docs>
         <summary>Gets or sets the foreground color of the section.</summary>
         <value>A string that represents the foreground color of the section. </value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The value of the `ForegroundColor` property is a hexadecimal color string. The default value is "#000000", or <xref:System.Drawing.Color.Black?displayProperty=nameWithType>.
 
          ]]></format>
-          </remarks>
-          <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -162,7 +162,7 @@ The value of the `ForegroundColor` property is a hexadecimal color string. The d
         <summary>Gets or sets the section title.</summary>
         <value>The section title.</value>
         <remarks>To be added.</remarks>
-          <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
+        <exception cref="T:System.ArgumentNullException">The string in a set operation is <see langword="null" />, <see cref="F:System.String.Empty" />, or consists only of whitespace characters.</exception>
       </Docs>
     </Member>
   </Members>

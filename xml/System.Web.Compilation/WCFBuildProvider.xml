@@ -62,7 +62,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.WCFBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
-      <MemberSignature Language="F#" Value="abstract member GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit&#xA;override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="wCFBuildProvider.GenerateCode assemblyBuilder" />
+      <MemberSignature Language="F#" Value="override this.GenerateCode : System.Web.Compilation.AssemblyBuilder -&gt; unit" Usage="wCFBuildProvider.GenerateCode assemblyBuilder" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

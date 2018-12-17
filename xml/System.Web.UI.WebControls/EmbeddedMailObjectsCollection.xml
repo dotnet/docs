@@ -374,7 +374,7 @@ myObject = myCollection.Item[index];
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member OnValidate : obj -&gt; unit&#xA;override this.OnValidate : obj -&gt; unit" Usage="embeddedMailObjectsCollection.OnValidate value" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="embeddedMailObjectsCollection.OnValidate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

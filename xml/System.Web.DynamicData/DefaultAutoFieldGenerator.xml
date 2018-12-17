@@ -106,6 +106,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ICollection ^ GenerateFields(System::Web::UI::Control ^ control);" />
       <MemberSignature Language="F#" Value="abstract member GenerateFields : System.Web.UI.Control -&gt; System.Collections.ICollection&#xA;override this.GenerateFields : System.Web.UI.Control -&gt; System.Collections.ICollection" Usage="defaultAutoFieldGenerator.GenerateFields control" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAutoFieldGenerator.GenerateFields(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

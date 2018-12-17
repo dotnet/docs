@@ -45,7 +45,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.Add(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::String ^ value);" />
-      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; unit" Usage="serviceHealthDataCollection.Add (key, value)" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string -&gt; unit" Usage="serviceHealthDataCollection.Add (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,7 +63,8 @@
         <param name="value">The data.</param>
         <summary>Adds a new key and value pair to the collection.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -72,7 +73,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.Add(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, values As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, cli::array &lt;System::String ^&gt; ^ values);" />
-      <MemberSignature Language="F#" Value="member this.Add : string * string[] -&gt; unit" Usage="serviceHealthDataCollection.Add (key, values)" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string[] -&gt; unit" Usage="serviceHealthDataCollection.Add (key, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,7 +91,8 @@
         <param name="values">An array of values that are associated with <paramref name="key" />.</param>
         <summary>Adds a new key and array of values to the collection.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">
@@ -99,7 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceHealthDataCollection.GetKeyForItem(System.ServiceModel.Description.ServiceHealthData)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (element As ServiceHealthData) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::ServiceModel::Description::ServiceHealthData ^ element);" />
-      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.ServiceModel.Description.ServiceHealthData -&gt; string&#xA;override this.GetKeyForItem : System.ServiceModel.Description.ServiceHealthData -&gt; string" Usage="serviceHealthDataCollection.GetKeyForItem element" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.ServiceModel.Description.ServiceHealthData -&gt; string" Usage="serviceHealthDataCollection.GetKeyForItem element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

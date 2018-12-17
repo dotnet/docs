@@ -1,9 +1,9 @@
 ﻿<Type Name="ComponentDesigner" FullName="System.ComponentModel.Design.ComponentDesigner">
-  <TypeSignature Language="C#" Value="public class ComponentDesigner : IDisposable, System.ComponentModel.Design.IComponentInitializer, System.ComponentModel.Design.IDesigner, System.ComponentModel.Design.IDesignerFilter, System.ComponentModel.Design.ITreeDesigner" />
+  <TypeSignature Language="C#" Value="public class ComponentDesigner : IDisposable, System.ComponentModel.Design.IComponentInitializer, System.ComponentModel.Design.IDesignerFilter, System.ComponentModel.Design.ITreeDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentDesigner extends System.Object implements class System.ComponentModel.Design.IComponentInitializer, class System.ComponentModel.Design.IDesigner, class System.ComponentModel.Design.IDesignerFilter, class System.ComponentModel.Design.ITreeDesigner, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentDesigner" />
-  <TypeSignature Language="VB.NET" Value="Public Class ComponentDesigner&#xA;Implements IComponentInitializer, IDesigner, IDesignerFilter, IDisposable, ITreeDesigner" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ComponentDesigner : IDisposable, System::ComponentModel::Design::IComponentInitializer, System::ComponentModel::Design::IDesigner, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::ITreeDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentDesigner&#xA;Implements IComponentInitializer, IDesignerFilter, IDisposable, ITreeDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentDesigner : IDisposable, System::ComponentModel::Design::IComponentInitializer, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::ITreeDesigner" />
   <TypeSignature Language="F#" Value="type ComponentDesigner = class&#xA;    interface ITreeDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable&#xA;    interface IDesignerFilter&#xA;    interface IComponentInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
@@ -157,6 +157,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Component : System.ComponentModel.IComponent" Usage="System.ComponentModel.Design.ComponentDesigner.Component" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.IDesigner.Component</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -284,6 +287,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoDefaultAction();" />
       <MemberSignature Language="F#" Value="abstract member DoDefaultAction : unit -&gt; unit&#xA;override this.DoDefaultAction : unit -&gt; unit" Usage="componentDesigner.DoDefaultAction " />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.DoDefaultAction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -440,6 +446,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberSignature Language="F#" Value="abstract member Initialize : System.ComponentModel.IComponent -&gt; unit&#xA;override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="componentDesigner.Initialize component" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.Initialize(System.ComponentModel.IComponent)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -475,6 +484,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeExistingComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberSignature Language="F#" Value="abstract member InitializeExistingComponent : System.Collections.IDictionary -&gt; unit&#xA;override this.InitializeExistingComponent : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.InitializeExistingComponent defaultValues" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -516,6 +528,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeNewComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberSignature Language="F#" Value="abstract member InitializeNewComponent : System.Collections.IDictionary -&gt; unit&#xA;override this.InitializeNewComponent : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.InitializeNewComponent defaultValues" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -689,6 +704,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterAttributes attributes" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -729,6 +747,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterEvents events" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -769,6 +790,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterProperties properties" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -810,6 +834,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterAttributes attributes" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -850,6 +877,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterEvents events" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -890,6 +920,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1026,6 +1059,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterAttributes (attributes As IDictionary) Implements IDesignerFilter.PostFilterAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System::Collections::IDictionary ^ attributes) = System::ComponentModel::Design::IDesignerFilter::PostFilterAttributes;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1063,6 +1099,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterEvents (events As IDictionary) Implements IDesignerFilter.PostFilterEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System::Collections::IDictionary ^ events) = System::ComponentModel::Design::IDesignerFilter::PostFilterEvents;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1100,6 +1139,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterProperties (properties As IDictionary) Implements IDesignerFilter.PostFilterProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System::Collections::IDictionary ^ properties) = System::ComponentModel::Design::IDesignerFilter::PostFilterProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1137,6 +1179,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterAttributes (attributes As IDictionary) Implements IDesignerFilter.PreFilterAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System::Collections::IDictionary ^ attributes) = System::ComponentModel::Design::IDesignerFilter::PreFilterAttributes;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1174,6 +1219,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterEvents (events As IDictionary) Implements IDesignerFilter.PreFilterEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System::Collections::IDictionary ^ events) = System::ComponentModel::Design::IDesignerFilter::PreFilterEvents;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1211,6 +1259,9 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterProperties (properties As IDictionary) Implements IDesignerFilter.PreFilterProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System::Collections::IDictionary ^ properties) = System::ComponentModel::Design::IDesignerFilter::PreFilterProperties;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1249,6 +1300,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::ComponentModel::Design::ITreeDesigner::Children { System::Collections::ICollection ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.ITreeDesigner.Children" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.ITreeDesigner.Children</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1278,6 +1332,9 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::IDesigner ^ System::ComponentModel::Design::ITreeDesigner::Parent { System::ComponentModel::Design::IDesigner ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.ITreeDesigner.Parent" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.ITreeDesigner.Parent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1307,6 +1364,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.ComponentModel.Design.ComponentDesigner.Verbs" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.Design.IDesigner.Verbs</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>

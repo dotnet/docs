@@ -133,7 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.GetRouteData(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
-      <MemberSignature Language="F#" Value="abstract member GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData&#xA;override this.GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData" Usage="dynamicDataRoute.GetRouteData httpContext" />
+      <MemberSignature Language="F#" Value="override this.GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData" Usage="dynamicDataRoute.GetRouteData httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -191,7 +191,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicDataRoute.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
-      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData&#xA;override this.GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="dynamicDataRoute.GetVirtualPath (requestContext, values)" />
+      <MemberSignature Language="F#" Value="override this.GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="dynamicDataRoute.GetVirtualPath (requestContext, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

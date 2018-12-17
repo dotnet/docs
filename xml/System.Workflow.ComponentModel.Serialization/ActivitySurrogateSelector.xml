@@ -80,7 +80,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Runtime.Serialization.ISerializationSurrogate GetSurrogate(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context, [out] class System.Runtime.Serialization.ISurrogateSelector&amp; selector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivitySurrogateSelector.GetSurrogate(System.Type,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector@)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Runtime::Serialization::ISerializationSurrogate ^ GetSurrogate(Type ^ type, System::Runtime::Serialization::StreamingContext context, [Runtime::InteropServices::Out] System::Runtime::Serialization::ISurrogateSelector ^ % selector);" />
-      <MemberSignature Language="F#" Value="abstract member GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate&#xA;override this.GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="activitySurrogateSelector.GetSurrogate (type, context, selector)" />
+      <MemberSignature Language="F#" Value="override this.GetSurrogate : Type * System.Runtime.Serialization.StreamingContext *  -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="activitySurrogateSelector.GetSurrogate (type, context, selector)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

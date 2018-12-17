@@ -33,7 +33,7 @@ Large enterprises often require that applications are developed in compliance wi
   
 1.  Install the endpoint validator using the appropriate mechanism. In an enterprise, this can be using Group Policy and Systems Management Server (SMS).  
   
-2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](https://msdn.microsoft.com/library/ex0ss12c\(v=vs.110\).aspx).  
+2.  Install the strongly-named assembly into the global assembly cache using the [Gacutil.exe (Global Assembly Cache Tool)](../../../../docs/framework/tools/gacutil-exe-gac-tool.md).  
   
 3.  Use the <xref:System.Configuration?displayProperty=nameWithType> namespace types to:  
   

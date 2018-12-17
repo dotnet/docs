@@ -13,7 +13,7 @@ The Service Description sample demonstrates how a service can retrieve its servi
   
  This sample has a modified version of the calculator contract called `IServiceDescriptionCalculator`. The contract defines an additional service operation named `GetServiceDescriptionInfo` that returns a multi-line string to the client that describes the base address or addresses and service endpoint or endpoints for the service.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IServiceDescriptionCalculator  
 {  
@@ -32,7 +32,7 @@ public interface IServiceDescriptionCalculator
   
  The implementation code for `GetServiceDescriptionInfo` uses the <xref:System.ServiceModel.Description.ServiceDescription> to list the service endpoints. Because service endpoints can have relative addresses, it first lists the base addresses for the service. To get all of this information, the code obtains its operation context using <xref:System.ServiceModel.OperationContext.Current%2A>. The <xref:System.ServiceModel.ServiceHost> and its <xref:System.ServiceModel.Description.ServiceDescription> object are retrieved from the operation context. To list the base endpoints for the service, the code iterates through the service host's <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A> collection. To list the service endpoints for the service, the code iterates through the service description's endpoints collection.  
   
-```  
+```csharp
 public string GetServiceDescriptionInfo()  
 {  
     string info = "";  
@@ -59,7 +59,7 @@ public string GetServiceDescriptionInfo()
   
  When you run the sample, you see the calculator operations and then the service information returned by the `GetServiceDescriptionInfo` operation. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  

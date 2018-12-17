@@ -11,7 +11,7 @@ This sample demonstrates how to define a <<!--zz xref:System.ServiceModel.WsHttp
   
  The following code demonstrates how to define a binding imperatively in code.  
   
-```  
+```csharp
 public static void Main()  
 {  
     WSHttpBinding binding = new WSHttpBinding();  
@@ -46,7 +46,7 @@ public static void Main()
   
  The client creates a channel to communicate with the service as shown in the following sample code.  
   
-```  
+```csharp
 WSHttpBinding binding = new WSHttpBinding();  
 binding.Name = "binding1";  
 binding.HostNameComparisonMode = HostNameComparisonMode.StrongWildcard;  
@@ -62,7 +62,7 @@ ICalculator channel = channelFactory.CreateChannel();
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

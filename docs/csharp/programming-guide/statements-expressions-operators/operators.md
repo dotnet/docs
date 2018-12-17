@@ -1,5 +1,6 @@
 ---
-title: "Operators (C# Programming Guide)"
+title: "Operators - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [C#]"
@@ -105,8 +106,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |Category|Expression|Description|  
 |--------------|----------------|-----------------|  
 |Logical AND|x [&](../../../csharp/language-reference/operators/and-operator.md) y|Integer bitwise AND, Boolean logical AND|  
-|Logical XOR|x [^](../../../csharp/language-reference/operators/xor-operator.md) y|Integer bitwise XOR, boolean logical XOR|  
-|Logical OR|x [&#124;](../../../csharp/language-reference/operators/or-operator.md) y|Integer bitwise OR, boolean logical OR|  
+|Logical XOR|x [^](../../../csharp/language-reference/operators/xor-operator.md) y|Integer bitwise XOR, Boolean logical XOR|  
+|Logical OR|x [&#124;](../../../csharp/language-reference/operators/or-operator.md) y|Integer bitwise OR, Boolean logical OR|  
 |Conditional AND|x [&&](../../../csharp/language-reference/operators/conditional-and-operator.md) y|Evaluates y only if x is true|  
 |Conditional OR|x [&#124;&#124;](../../../csharp/language-reference/operators/conditional-or-operator.md) y|Evaluates y only if x is false|  
 |Null coalescing|x [??](../../../csharp/language-reference/operators/null-coalescing-operator.md) y|Evaluates to y if x is null, to x otherwise|  

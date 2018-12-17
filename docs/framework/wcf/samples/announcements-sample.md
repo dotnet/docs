@@ -9,7 +9,7 @@ This sample shows how to use the Announcement functionality of the Discovery fea
 ## Service  
  This project contains a self-hosted calculator service. In the `Main` method, a service host is created and a service endpoint is added to it. Next, a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is created. To enable announcements, an announcement endpoint must be added to the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>. In this case a standard endpoint, using UDP multicast is added as the announcement endpoint. This broadcasts the announcements over a well-known UDP address.  
   
-```  
+```csharp
 Uri baseAddress = new Uri("http://localhost:8000/" + Guid.NewGuid().ToString());  
   
 // Create a ServiceHost for the CalculatorService type.  
@@ -33,7 +33,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
 ## Client  
  In this project, note that the client hosts an <xref:System.ServiceModel.Discovery.AnnouncementService>. Furthermore, two delegates are registered with events. These events dictate what the client does when online and offline announcements are received.  
   
-```  
+```csharp
 // Create an AnnouncementService instance  
 AnnouncementService announcementService = new AnnouncementService();  
   
@@ -44,7 +44,7 @@ announcementService.OfflineAnnouncementReceived += OnOfflineEvent;
   
  The `OnOnlineEvent` and `OnOfflineEvent` methods handle the hello and bye announcement messages respectively.  
   
-```  
+```csharp
 static void OnOnlineEvent(object sender, AnnouncementEventArgs e)  
 {  
     Console.WriteLine();              

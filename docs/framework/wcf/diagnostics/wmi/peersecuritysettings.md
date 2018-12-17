@@ -2,14 +2,13 @@
 title: "PeerSecuritySettings"
 ms.date: "03/30/2017"
 ms.assetid: 24ae0d35-f3a3-419b-afd6-686e22aae27b
-author: "BrucePerlerMS"
 ---
 # PeerSecuritySettings
 PeerSecuritySettings  
   
 ## Syntax  
   
-```  
+```csharp
 class PeerSecuritySettings  
 {  
   string Mode;  

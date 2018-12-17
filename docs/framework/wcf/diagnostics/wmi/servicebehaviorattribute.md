@@ -8,7 +8,7 @@ ServiceBehaviorAttribute
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceBehaviorAttribute : Behavior  
 {  
   boolean AutomaticSessionShutdown;  

@@ -84,7 +84,7 @@ For more information on developing apps that target the .NET Framework, see the 
 
 ## See also
 
-[.NET Framework Guide](../../../docs/framework/index.md)   
-[What's New](../../../docs/framework/whats-new/index.md)   
-[.NET API Browser](/dotnet/api/)   
-[Development Guide](../../../docs/framework/development-guide.md)
+- [.NET Framework Guide](../../../docs/framework/index.md)   
+- [What's New](../../../docs/framework/whats-new/index.md)   
+- [.NET API Browser](/dotnet/api/)   
+- [Development Guide](../../../docs/framework/development-guide.md)

@@ -24,7 +24,7 @@ The Instancing sample demonstrates the instancing behavior setting, which contro
   
  The service class specifies instancing behavior with the `[ServiceBehavior(InstanceContextMode=<setting>)]` attribute as shown in the code sample that follows. By changing which lines are commented out, you can observe the behavior of each of the instance modes. Remember to rebuild the service after changing the instancing mode. There are no instancing-related settings to specify on the client.  
   
-```  
+```csharp
 // Enable one of the following instance modes to compare instancing behaviors.  
  [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]  
   

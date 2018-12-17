@@ -8,7 +8,7 @@ Service
   
 ## Syntax  
   
-```  
+```csharp
 class Service  
 {  
   string BaseAddresses[];  

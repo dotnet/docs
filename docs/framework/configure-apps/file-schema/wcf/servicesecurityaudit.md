@@ -2,7 +2,6 @@
 title: "&lt;serviceSecurityAudit&gt;"
 ms.date: "03/30/2017"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-author: "BrucePerlerMS"
 ---
 # &lt;serviceSecurityAudit&gt;
 Specifies settings that enable auditing of security events during service operations.  
@@ -45,7 +44,7 @@ Specifies settings that enable auditing of security events during service operat
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
- This configuraton element is used to audit Windows Communication Foundation (WCF) authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
+ This configuration element is used to audit Windows Communication Foundation (WCF) authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
   
  For a detailed example of using this configuration element, see [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md).  
   

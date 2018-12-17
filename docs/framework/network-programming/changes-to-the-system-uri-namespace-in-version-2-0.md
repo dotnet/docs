@@ -2,8 +2,6 @@
 title: "Changes to the System.Uri namespace in version 2.0"
 ms.date: "03/30/2017"
 ms.assetid: 35883fe9-2d09-4d8b-80ca-cf23a941e459
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Changes to the System.Uri namespace in version 2.0
 

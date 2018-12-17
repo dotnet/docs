@@ -3,10 +3,10 @@
         SampleClass obj = new SampleClass();
         //obj.Paint();  // Compiler error.
 
-        IControl c = (IControl)obj;
+        IControl c = obj;
         c.Paint();  // Calls IControl.Paint on SampleClass.
 
-        ISurface s = (ISurface)obj;
+        ISurface s = obj;
         s.Paint(); // Calls ISurface.Paint on SampleClass.
 
         // Output:

@@ -68,7 +68,7 @@ Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-s
 > - **Angular**  
 >   <https://angular.io>
 > - **Comparison of JavaScript Frameworks**  
->   <https://javascriptreport.com/the-ultimate-guide-to-javascript-frameworks/>
+>   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
 
 **Your application must already expose an API for other (internal or public) clients**
 
@@ -86,5 +86,5 @@ The following decision table summarizes some of the basic factors to consider wh
 | Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             |
 
 >[!div class="step-by-step"]
-[Previous](modern-web-applications-characteristics.md)
-[Next](architectural-principles.md)
+>[Previous](modern-web-applications-characteristics.md)
+>[Next](architectural-principles.md)

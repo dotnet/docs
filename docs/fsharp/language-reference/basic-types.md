@@ -28,8 +28,8 @@ This topic lists the basic types that are defined in the F# language. These type
 |`float32`, `single`|<xref:System.Single>|A 32-bit floating point type.|
 |`float`, `double`|<xref:System.Double>|A 64-bit floating point type.|
 
->[!NOTE]
-You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) type. `bigint` is not considered a basic type; it is an abbreviation for `System.Numerics.BigInteger`.
+> [!NOTE]
+> You can perform computations with integers too big for the 64-bit integer type by using the [bigint](https://msdn.microsoft.com/library/dc8be18d-4042-46c4-b136-2f21a84f6efa) type. `bigint` is not considered a basic type; it is an abbreviation for `System.Numerics.BigInteger`.
 
 ## See also
 

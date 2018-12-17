@@ -3,7 +3,7 @@ title: Versioning and .NET libraries
 description: Best practice recommendations for versioning .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 12/10/2018
 ---
 # Versioning
 
@@ -75,6 +75,10 @@ The assembly file version is used to display a file version in Windows and has n
 
 > For example, you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
 
+**✔️ DO** use the format `Major.Minor.Build.Revision` for file version.
+
+> While the file version is never used by .NET, [Windows expects the file version](/windows/desktop/menurc/versioninfo-resource) to be in the `Major.Minor.Build.Revision` format. A warning is raised if the version doesn't follow this format.
+
 ### Assembly informational version
 
 The assembly informational version is used to record additional version information and has no effect on runtime behavior. Setting this version is optional. If you're using SourceLink, this version will be set on build with the NuGet package version plus a source control version. For example, `1.0.0-beta1+204ff0a` includes the commit hash of the source code the assembly was built from. For more information, see [SourceLink](./sourcelink.md).
@@ -84,12 +88,12 @@ The assembly informational version is used to record additional version informat
 ```
 
 > [!NOTE]
-> An innocuous build warning is raised if this version does not follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
+> Older versions of Visual Studio raise a build warning if this version doesn't follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
 
 **❌ AVOID** setting the assembly informational version yourself.
 
 > Allow SourceLink to automatically generate the version containing NuGet and source control metadata.
 
 >[!div class="step-by-step"]
-[Previous](./publish-nuget-package.md)
-[Next](./breaking-changes.md)
+>[Previous](publish-nuget-package.md)
+>[Next](breaking-changes.md)

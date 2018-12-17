@@ -1,5 +1,6 @@
 ---
-title: "Arrays as Objects (C# Programming Guide)"
+title: "Arrays as Objects - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arrays [C#], as objects"

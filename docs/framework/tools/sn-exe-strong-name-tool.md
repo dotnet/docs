@@ -22,9 +22,9 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../..
  For more information on strong naming and strong-named assemblies, see [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md) and [How to: Sign an Assembly with a Strong Name](../../../docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
   
  The Strong Name tool is automatically installed with Visual Studio. To start the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
-  
+
 > [!NOTE]
->  On 64-bit computers, run the 32-bit version of Sn.exe by using the Visual Studio Command Prompt and the 64-bit version by using the Visual Studio x64 Win64 Command Prompt.  
+>  On 64-bit computers, run the 32-bit version of Sn.exe by using the Visual Studio Command Prompt and the 64-bit version by using the Visual Studio x64 Win64 Command Prompt. 
   
  At the command prompt, type the following:  
   
@@ -79,6 +79,8 @@ sn [-quiet][option [parameter(s)]]
 > [!NOTE]
 >  For parameters (for example, –**Vr)** that write to protected resources such as the registry, run SN.exe as an administrator.  
   
+The Strong Name tool assumes that public/private key pairs are generated with the `AT_SIGNATURE` algorithm identifier. Public/private key pairs generated with the `AT_KEYEXCHANGE` algorithm generate an error. 
+
 ## Examples  
  The following command creates a new, random key pair and stores it in `keyPair.snk`.  
   

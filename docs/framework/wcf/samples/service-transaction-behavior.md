@@ -13,7 +13,7 @@ This sample demonstrates the use of a client-coordinated transaction and the set
   
  The contract for the service defines that all of the operations require a transaction to be flowed with requests:  
   
-```  
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples",  
                     SessionMode = SessionMode.Required)]  
 public interface ICalculator  
@@ -45,7 +45,7 @@ public interface ICalculator
   
  After initiating both a connection to the service and a transaction, the client accesses several service operations within the scope of that transaction and then completes the transaction and closes the connection:  
   
-```  
+```csharp
 // Create a client  
 CalculatorClient client = new CalculatorClient();  
   
@@ -108,7 +108,7 @@ client.Close();
   
  The attributed service implementation is as follows:  
   
-```  
+```csharp
 [ServiceBehavior(  
     TransactionIsolationLevel = System.Transactions.IsolationLevel.Serializable,  
     TransactionTimeout = "00:00:30",  
@@ -162,7 +162,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Starting transaction  
 Performing calculations...  
   Adding 100, running total=100  
@@ -176,7 +176,7 @@ Press <ENTER> to terminate client.
   
  The logging of the service operation requests are displayed in the service's console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Press <ENTER> to terminate service.  
 Creating new service instance...  
   Writing row 1 to database: Adding 100 to 0  

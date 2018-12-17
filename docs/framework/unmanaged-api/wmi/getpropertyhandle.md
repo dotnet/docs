@@ -46,7 +46,7 @@ HRESULT GetPropertyHandle (
 [in] A null-terminated string of UTF16-encoded characaters that contains the property name.   
 
 `pType`  
-[out] A pointer to a [`CIMTYPE`](https://msdn.microsoft.com/library/aa386309(v=vs.85).aspx) enumeration member that represents the CIM type of the property.
+[out] A pointer to a [`CIMTYPE`](/windows/desktop/api/wbemcli/ne-wbemcli-tag_cimtype_enumeration) enumeration member that represents the CIM type of the property.
 
 `pHandle`   
 [out] A pointer to an integer that contains the property handle.

@@ -251,7 +251,7 @@ Where Col1 + Col2 > 4
 ```  
   
 ## Performance Issues  
- Accounting for some SQL Server-CLR type differences may resut in a decrease in performance when crossing between the CLR and SQL Server type systems. Examples of scenarios impacting performance include the following:  
+ Accounting for some SQL Server-CLR type differences may result in a decrease in performance when crossing between the CLR and SQL Server type systems. Examples of scenarios impacting performance include the following:  
   
 -   Forced order of evaluation for logical and/or operators  
   

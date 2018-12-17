@@ -3,7 +3,7 @@ title: Strong naming and .NET libraries
 description: Best practice recommendations for strong naming .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 10/16/2018
 ---
 # Strong naming
 
@@ -39,27 +39,31 @@ The benefits of strong naming are:
 You should strong name your open-source .NET libraries. Strong naming an assembly ensures the most people can use it, and strict assembly loading only affects the .NET Framework.
 
 > [!NOTE]
-> This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org.
->
-> Strong naming is not required by most .NET applications and should not be done by default.
+> This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.
 
 **✔️ CONSIDER** strong naming your library's assemblies.
 
-**✔️ CONSIDER** checking in the key used to strong name into your source control system.
+**✔️ CONSIDER** adding the strong naming key to your source control system.
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
+> 
+> You shouldn't make the strong naming key public if it has been used in the past to give special permissions in [partial-trust scenarios](/dotnet/framework/misc/using-libraries-from-partially-trusted-code). Otherwise, you might compromise existing environments.
 
 > [!IMPORTANT]
-> When a cryptographic identity is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Strong naming should not be used for security considerations.
+> When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.
 
 **✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 
 > Read more about [versioning and the assembly version](./versioning.md#assembly-version).
+
+**❌ DO NOT** add, remove, or change the strong naming key.
+
+> Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./breaking-changes.md#binary-breaking-change).
 
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also, if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 
 >[!div class="step-by-step"]
-[Previous](./cross-platform-targeting.md)
-[Next](./nuget.md)
+>[Previous](cross-platform-targeting.md)
+>[Next](nuget.md)

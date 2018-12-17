@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "authenticationModules element"
   - "<authenticationModules> element"
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;authenticationModules&gt; Element (Network Settings)
 Specifies modules used to authenticate network requests.  
@@ -66,6 +64,6 @@ Specifies modules used to authenticate network requests.
 ```  
   
 ## See Also  
- <xref:System.Net.IAuthenticationModule>  
- <xref:System.Net.AuthenticationManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.IAuthenticationModule>  
+- <xref:System.Net.AuthenticationManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

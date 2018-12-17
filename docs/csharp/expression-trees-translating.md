@@ -89,7 +89,7 @@ same node can be reused whenever its needed.
 
 Let's verify this by building a second visitor that walks the tree
 of addition nodes and computes the result. You can do this by
-making a couple modifications to the vistor that you've seen so
+making a couple modifications to the visitor that you've seen so
 far. In this new version, the visitor will return the partial sum
 of the addition operation up to this point. For a constant expression,
 that is simply the value of the constant expression. For an addition

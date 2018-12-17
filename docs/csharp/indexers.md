@@ -15,7 +15,7 @@ of values.
 
 ## Indexer Syntax
 
-You access an indexer through a variable name and square brackets . You place the indexer
+You access an indexer through a variable name and square brackets. You place the indexer
 arguments inside the brackets:
 
 ```csharp
@@ -40,7 +40,7 @@ for properties and for indexers. This analogy carries through most of the
 syntax rules for indexers. Indexers can have any valid access modifiers
 (public, protected internal, protected, internal, private or private protected). They may
 be sealed, virtual, or abstract. As with properties, you can specify
-different access modifiers for the get and set accesssors in an indexer.
+different access modifiers for the get and set accessors in an indexer.
 You may also specify read-only indexers (by omitting the set accessor),
 or write-only indexers (by omitting the get accessor).
 

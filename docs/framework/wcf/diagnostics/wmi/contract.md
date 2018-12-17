@@ -8,7 +8,7 @@ Contract
   
 ## Syntax  
   
-```  
+```csharp
 class Contract  
 {  
   sint32 AppDomainId;  

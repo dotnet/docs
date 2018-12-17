@@ -328,6 +328,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
  **Please enter a number between 1 and 10**  
 **Your guess is too high.**   
 **Please enter a number between 1 and 10**    
+
     > [!NOTE]
     >  This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).  
   

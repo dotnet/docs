@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
-author: "BrucePerlerMS"
 ---
 # Security Considerations for Data
 When dealing with data in Windows Communication Foundation (WCF), you must consider a number of threat categories. The following table lists the most important threat classes that relate to data processing. WCF provides tools to mitigate these threats.  

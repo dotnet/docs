@@ -23,6 +23,7 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
 
      You should see the following output:
 
+    ```console
      Add(100,15.99) = 115.99
 
      Subtract(145,76.54) = 68.46
@@ -30,6 +31,7 @@ This sample demonstrates the Windows Communication Foundation (WCF) Routing Serv
      Multiply(9,81.25) = 731.25
 
      Divide(22,7) = 3.14285714285714
+    ```
 
 ## Configurable via Code or App.Config
  The sample ships configured to use an App.config file to define the router’s behavior. You can also change the name of the App.config file to something else so that it is not recognized and uncomment the method call to ConfigureRouterViaCode(). Either method results in the same behavior from the router.

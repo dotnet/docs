@@ -133,5 +133,5 @@ certmgr /put /c /s my newFile
   
 ## See Also  
  [Tools](../../../docs/framework/tools/index.md)  
- [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)  
+ [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

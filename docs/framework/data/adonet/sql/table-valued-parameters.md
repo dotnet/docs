@@ -1,6 +1,6 @@
 ---
 title: "Table-Valued Parameters"
-ms.date: "03/30/2017"
+ms.date: "10/12/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -81,7 +81,9 @@ INSERT INTO dbo.Categories (CategoryID, CategoryName)
   
 ## Configuring a SqlParameter Example  
  <xref:System.Data.SqlClient> supports populating table-valued parameters from <xref:System.Data.DataTable>, <xref:System.Data.Common.DbDataReader> or <xref:System.Collections.Generic.IEnumerable%601> \ <xref:Microsoft.SqlServer.Server.SqlDataRecord> objects. You must specify a type name for the table-valued parameter by using the <xref:System.Data.SqlClient.SqlParameter.TypeName%2A> property of a <xref:System.Data.SqlClient.SqlParameter>. The `TypeName` must match the name of a compatible type previously created on the server. The following code fragment demonstrates how to configure <xref:System.Data.SqlClient.SqlParameter> to insert data.  
-  
+ 
+In the following example, the `addedCategories` variable contains a <xref:System.Data.DataTable>. To see how the variable is populated, see the examples in the next section, [Passing a Table-Valued Parameter to a Stored Procedure](#passing).
+
 ```csharp  
 // Configure the command and parameter.  
 SqlCommand insertCommand = new SqlCommand(sqlInsert, connection);  
@@ -120,7 +122,7 @@ Dim tvpParam As SqlParameter = _
 tvpParam.SqlDbType = SqlDbType.Structured  
 ```  
   
-## Passing a Table-Valued Parameter to a Stored Procedure  
+## <a name="passing"></a> Passing a Table-Valued Parameter to a Stored Procedure  
  This example demonstrates how to pass table-valued parameter data to a stored procedure. The code extracts added rows into a new <xref:System.Data.DataTable> by using the <xref:System.Data.DataTable.GetChanges%2A> method. The code then defines a <xref:System.Data.SqlClient.SqlCommand>, setting the <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> property to <xref:System.Data.CommandType.StoredProcedure>. The <xref:System.Data.SqlClient.SqlParameter> is populated by using the <xref:System.Data.SqlClient.SqlParameterCollection.AddWithValue%2A> method and the <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> is set to `Structured`. The <xref:System.Data.SqlClient.SqlCommand> is then executed by using the <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> method.  
   
 ```csharp  

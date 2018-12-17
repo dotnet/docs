@@ -23,7 +23,7 @@ dividend / divisor
  The data type that results from the implicit type promotion of the two arguments. For more information about implicit type promotion, see [Type System](../../../../../../docs/framework/data/adonet/ef/language-reference/type-system-entity-sql.md).  
   
 ## Example  
- The following Entity SQL query uses the / arithmetic operator to divide one numer by another. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
+ The following Entity SQL query uses the / arithmetic operator to divide one number by another. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
   

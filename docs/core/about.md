@@ -2,7 +2,6 @@
 title: About .NET Core
 description: Learn about .NET Core.
 author: richlander
-ms.author: mairaw
 ms.date: 08/01/2018
 ---
 # About .NET Core
@@ -11,7 +10,7 @@ ms.date: 08/01/2018
 
 - **Cross-platform:** Runs on Windows, macOS and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
 - **Consistent across architectures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
-- **Command-line tools:**  Includes easy-to-use command-line tools that be used for local development and in continuous-integration scenarios.
+- **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and in continuous-integration scenarios.
 - **Flexible deployment:** Can be included in your app or installed side-by-side user- or machine-wide. Can be used with [Docker containers](docker/index.md).
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin and Mono, via [.NET Standard](../standard/net-standard.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
@@ -25,18 +24,13 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
-- Primitive types, such as [bool][bool] and [int][int].
+- Primitive types, such as [bool](../csharp/language-reference/keywords/bool.md) and [int](../csharp/language-reference/keywords/int.md).
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
-- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet][dbset].
-- High performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines][pipelines].
+- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/).
+- High performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/).
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
-
-[bool]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool
-[int]: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int
-[pipelines]: https://blogs.msdn.microsoft.com/dotnet/2018/07/09/system-io-pipelines-high-performance-io-in-net/
-[dbset]: https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 
 ## Frameworks
 

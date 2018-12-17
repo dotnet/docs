@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "<remove> element, webRequestModules"
   - "<webRequestModules>, remove element"
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;remove&gt; Element for webRequestModules (Network Settings)
 Removes a custom Web request module from the application.  
@@ -74,5 +72,5 @@ The following example removes the existing Web request module for HTTP and then 
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

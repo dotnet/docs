@@ -8,7 +8,7 @@ XmlDictionaryReaderQuotas
   
 ## Syntax  
   
-```  
+```csharp
 class XmlDictionaryReaderQuotas  
 {  
   sint32 MaxArrayLength;  

@@ -111,5 +111,5 @@ If you encounter problems in getting your application to run with the correct ve
     ```  
   
 ## See Also  
- [Deployment](../../../docs/framework/deployment/index.md)  
- [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+- [Deployment](../../../docs/framework/deployment/index.md)  
+- [How to: Configure an App to Support .NET Framework 4 or 4.5](../../../docs/framework/migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)

@@ -40,7 +40,7 @@ HRESULT GetMetaData(
  [in] A null-terminated string that represents the full path to the file. If the full path is not available, the name and extension of the file (*filename*.*extension*).  
   
  `dwImageTimeStamp`  
- [in] The time stamp from the image's PE file headers. This parameter can potentially be used for a symbol server ([SymSrv](https://msdn.microsoft.com/library/cc266470.aspx)) lookup.  
+ [in] The time stamp from the image's PE file headers. This parameter can potentially be used for a symbol server ([SymSrv](/windows/desktop/debug/using-symsrv)) lookup.  
   
  `dwImageSize`  
  [in] The image size from PE file headers. This parameter can potentially be used for a SymSrv lookup.  

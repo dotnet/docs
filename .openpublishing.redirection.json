@@ -245,6 +245,10 @@
             "redirect_url": "https://www.microsoft.com/net/Support/Policy"
         },
         {
+            "source_path": "docs/core/versions/install-management.md",
+            "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
+        },
+        {
             "source_path": "docs/csharp/csharp-6.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-6",
             "redirect_document_id": true
@@ -454,6 +458,18 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/add-ins/index.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/add-ins/pipeline-development.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb384201(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/add-ins/walkthrough-create-extensible-app.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
+        },
+        {
             "source_path": "docs/framework/deployment/repair.md",
             "redirect_url": "/dotnet/framework/install/repair"
         },
@@ -625,6 +641,10 @@
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
+        },
+        {
+            "source_path": "docs/standard/design-guidelines/dispose-pattern.md",
+             "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
         },
         {
             "source_path": "docs/framework/wcf/extending/extending-wcf.md",
@@ -1515,6 +1535,14 @@
             "redirect_url":"/dotnet/standard/threading/overview-of-synchronization-primitives"
         },
         {
+            "source_path":"docs/csharp/programming-guide/concepts/threading/index.md",
+            "redirect_url":"/dotnet/standard/threading/"
+        },
+        {
+            "source_path":"docs/visual-basic/programming-guide/concepts/threading/index.md",
+            "redirect_url":"/dotnet/standard/threading/"
+        },
+        {
             "source_path":"docs/framework/windows-workflow-foundation/samples/absolute-delay.md",
             "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff522352(v%3dvs.100)"
         },
@@ -2029,6 +2057,110 @@
         {
             "source_path":"docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
             "redirect_url":"/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
+        },
+        {
+            "source_path":"docs/fsharp/introduction-to-functional-programming/functions-as-first-class-values.md",
+            "redirect_url":"/dotnet/fsharp/introduction-to-functional-programming/first-class-functions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path":"docs/csharp/reference-semantics-with-value-types.md",
+            "redirect_url":"/dotnet/csharp/write-safe-efficient-code"
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/arrays-and-collections.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/arrays-and-collections",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/branches-and-loops-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops-local",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/branches-and-loops.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/hello-world.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/index.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings-local",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/list-collection.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/local-environment.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/local-environment",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/numbers-in-csharp-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/numbers-in-csharp.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path":"docs/standard/threading/interlocked-operations.md",
+            "redirect_url":"/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path":"docs/standard/threading/reader-writer-locks.md",
+            "redirect_url":"/dotnet/api/system.threading.readerwriterlockslim"
+        },
+        {
+            "source_path": "docs/machine-learning/resources/basics.md",
+            "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md",
+            "redirect_url": "/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/tutorials/microservices.md",
+            "redirect_url": "/dotnet/core/docker/",
+            "redirect_document_id": false
+        },
+        {
+            "source_path":"docs/csharp/language-reference/keywords/true-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/keywords/true-false-operators"
+        },
+        {
+            "source_path":"docs/csharp/language-reference/keywords/false-operator.md",
+            "redirect_url":"/dotnet/csharp/language-reference/keywords/true-false-operators"
+        },
+        {
+            "source_path":"docs/core/versions/version-history.md",
+            "redirect_url":"/dotnet/core/versions/selection"
         }
     ]
 }

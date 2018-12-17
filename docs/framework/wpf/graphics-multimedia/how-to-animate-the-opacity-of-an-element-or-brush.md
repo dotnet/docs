@@ -17,4 +17,4 @@ To make a framework element fade in and out of view, you can animate its <xref:S
 ## Example  
  [!code-xaml[timingbehaviors_snip#10](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/OpacityAnimationExample.xaml#10)]  
   
- Code has been omitted from this example. The full sample also shows how to animate the opacity of a <xref:System.Windows.Media.Color> within a <xref:System.Windows.Media.LinearGradientBrush>.  For the full sample, see the [Animating the Opacity of an Element Sample](https://go.microsoft.com/fwlink/?LinkID=159968).
+ Code has been omitted from this example. The full sample also shows how to animate the opacity of a <xref:System.Windows.Media.Color> within a <xref:System.Windows.Media.LinearGradientBrush>.  For the full sample, see the [Animating the Opacity of an Element Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/OpacityAnimation).

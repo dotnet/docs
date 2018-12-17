@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Enhanced Strong Naming"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -128,4 +128,4 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
     ```  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)
+- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)

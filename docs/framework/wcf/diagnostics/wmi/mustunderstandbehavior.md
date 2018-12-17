@@ -8,7 +8,7 @@ MustUnderstandBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class MustUnderstandBehavior : Behavior  
 {  
   boolean ValidateMustUnderstand;  

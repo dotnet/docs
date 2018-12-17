@@ -1,5 +1,5 @@
 ---
-title: "Application Domains"
+title: "Application domains"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "process boundaries for isolation"
@@ -15,21 +15,14 @@ ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Application Domains
+# Application domains
+
 Operating systems and runtime environments typically provide some form of isolation between applications. For example, Windows uses processes to isolate applications. This isolation is necessary to ensure that code running in one application cannot adversely affect other, unrelated applications.  
   
  Application domains provide an isolation boundary for security, reliability, and versioning, and for unloading assemblies. Application domains are typically created by runtime hosts, which are responsible for bootstrapping the common language runtime before an application is run.  
   
- The topics in this section of the documentation explain how to use application domains to provide isolation between assemblies.  
-  
- This overview contains the following sections:  
-  
--   [The Benefits of Isolating Applications](#benefits)  
-  
--   [Reference](#reference)  
-  
-<a name="benefits"></a>   
-## The Benefits of Isolating Applications  
+## The benefits of isolating applications
+
  Historically, process boundaries have been used to isolate applications running on the same computer. Each application is loaded into a separate process, which isolates the application from other applications running on the same computer.  
   
  The applications are isolated because memory addresses are process-relative; a memory pointer passed from one process to another cannot be used in any meaningful way in the target process. In addition, you cannot make direct calls between two processes. Instead, you must use proxies, which provide a level of indirection.  
@@ -55,9 +48,9 @@ Operating systems and runtime environments typically provide some form of isolat
   
 -   Permissions granted to code can be controlled by the application domain in which the code is running.  
   
-  
-## Application Domains and Assemblies  
- This topic describes the relationship between application domains and assemblies. You must load an assembly into an application domain before you can execute the code it contains. Running a typical application causes several assemblies to be loaded into an application domain.  
+## Application domains and assemblies
+
+ This section describes the relationship between application domains and assemblies. You must load an assembly into an application domain before you can execute the code it contains. Running a typical application causes several assemblies to be loaded into an application domain.  
   
  The way an assembly is loaded determines whether its just-in-time (JIT) compiled code can be shared by multiple application domains in the process, and whether the assembly can be unloaded from the process.  
   
@@ -89,21 +82,24 @@ Operating systems and runtime environments typically provide some form of isolat
   
 -   All the dependencies of an assembly must be located and loaded when the assembly is loaded domain-neutral, because a dependency that cannot be loaded domain-neutral prevents the assembly from being loaded domain-neutral.  
   
-## Application Domains and Threads  
+## Application domains and threads
+
  An application domain forms an isolation boundary for security, versioning, reliability, and unloading of managed code. A thread is the operating system construct used by the common language runtime to execute code. At run time, all managed code is loaded into an application domain and is run by one or more managed threads.  
   
  There is not a one-to-one correlation between application domains and threads. Several threads can execute in a single application domain at any given time, and a particular thread is not confined to a single application domain. That is, threads are free to cross application domain boundaries; a new thread is not created for each application domain.  
   
- At any given time, every thread executes in an application domain. Zero, one, or multiple threads might be executing in any given application domain. The run time keeps track of which threads are running in which application domains. You can locate the domain in which a thread is executing at any time by calling the <xref:System.Threading.Thread.GetDomain%2A?displayProperty=nameWithType> method.  
-  
-### Application Domains and Cultures  
+ At any given time, every thread executes in an application domain. Zero, one, or multiple threads might be executing in any given application domain. The runtime keeps track of which threads are running in which application domains. You can locate the domain in which a thread is executing at any time by calling the <xref:System.Threading.Thread.GetDomain%2A?displayProperty=nameWithType> method.
+
+### Application domains and cultures
+
  Culture, which is represented by a <xref:System.Globalization.CultureInfo> object, is associated with threads. You can get the culture that is associated with the currently executing thread by using the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, and you can get or set the culture that is associated with the currently executing thread by using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property. If the culture that is associated with a thread has been explicitly set by using the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> property, it continues to be associated with that thread when the thread crosses application domain boundaries. Otherwise, the culture that is associated with the thread at any given time is determined by the value of the <xref:System.Globalization.CultureInfo.DefaultThreadCurrentCulture%2A?displayProperty=nameWithType> property in the application domain in which the thread is executing:  
   
 -   If the value of the property is not `null`, the culture that is returned by the property is associated with the thread (and therefore returned by the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> and <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> properties).  
   
 -   If the value of the property is `null`, the current system culture is associated with the thread.  
   
-## Programming with Application Domains  
+## Programming with application domains
+
  Application domains are usually created and manipulated programmatically by runtime hosts. However, sometimes an application program might also want to work with application domains. For example, an application program could load an application component into a domain to be able to unload the domain (and the component) without having to stop the entire application.  
   
  The <xref:System.AppDomain> is the programmatic interface to application domains. This class includes methods to create and unload domains, to create instances of types in domains, and to register for various notifications such as application domain unloading. The following table lists commonly used <xref:System.AppDomain> methods.  
@@ -120,7 +116,8 @@ Operating systems and runtime environments typically provide some form of isolat
   
  The unmanaged interfaces described in the common language runtime Hosting Interfaces Specification also provide access to application domains. Runtime hosts can use interfaces from unmanaged code to create and gain access to the application domains within a process.  
   
-## COMPLUS_LoaderOptimization Environment Variable  
+## The COMPLUS_LoaderOptimization environment variable
+
  An environment variable that sets the default loader optimization policy of an executable application.  
   
 ### Syntax  
@@ -129,7 +126,8 @@ Operating systems and runtime environments typically provide some form of isolat
 COMPLUS_LoaderOptimization = 1  
 ```  
   
-### Remarks  
+### Remarks
+
  A typical application loads several assemblies into an application domain before the code they contain can be executed.  
   
  The way the assembly is loaded determines whether its just-in-time (JIT) compiled code can be shared by multiple application domains in the process.  
@@ -143,7 +141,8 @@ COMPLUS_LoaderOptimization = 1
 > [!CAUTION]
 >  The COMPLUS_LoaderOptimization environment flag was designed to be used in diagnostic and test scenarios. Having the flag turned on can cause severe slow-down and increase in memory usage.  
   
-### Code Example  
+### Code example
+
  To force all assemblies not to be loaded as domain-neutral for the IISADMIN service can be achieved by appending `COMPLUS_LoaderOptimization=1` to the Environment’s Multi-String Value in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN key.  
   
 ```  
@@ -153,6 +152,9 @@ Type = REG_MULTI_SZ
 Value (to append) = COMPLUS_LoaderOptimization=1  
 ```  
   
-<a name="reference"></a>   
-## Reference  
- <xref:System.MarshalByRefObject?displayProperty=nameWithType>
+## See also
+
+- <xref:System.AppDomain?displayProperty=nameWithType>
+- <xref:System.MarshalByRefObject?displayProperty=nameWithType>
+- [Programming with Application Domains and Assemblies](index.md)
+- [Using Application Domains](use.md)

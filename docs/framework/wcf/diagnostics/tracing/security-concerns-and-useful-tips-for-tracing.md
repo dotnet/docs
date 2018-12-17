@@ -2,7 +2,6 @@
 title: "Security Concerns and Useful Tips for Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
-author: "BrucePerlerMS"
 ---
 # Security Concerns and Useful Tips for Tracing
 This topic describes how you can protect sensitive information from being exposed, as well as useful tips when using WebHost.  

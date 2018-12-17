@@ -1,5 +1,6 @@
 ---
-title: "Creating and Throwing Exceptions (C# Programming Guide)"
+title: "Creating and Throwing Exceptions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "catching exceptions [C#]"
@@ -35,7 +36,7 @@ Exceptions are used to indicate that an error has occurred while running the pro
   
  All exceptions contain a property named <xref:System.Exception.Message%2A>. This string should be set to explain the reason for the exception. Note that information that is sensitive to security should not be put in the message text. In addition to <xref:System.Exception.Message%2A>, <xref:System.ArgumentException> contains a property named <xref:System.ArgumentException.ParamName%2A> that should be set to the name of the argument that caused the exception to be thrown. In the case of a property setter, <xref:System.ArgumentException.ParamName%2A> should be set to `value`.  
   
- Public and protected methods members should throw exceptions whenever they cannot complete their intended functions. The exception class that is thrown should be the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.  
+ Public and protected methods should throw exceptions whenever they cannot complete their intended functions. The exception class that is thrown should be the most specific exception available that fits the error conditions. These exceptions should be documented as part of the class functionality, and derived classes or updates to the original class should retain the same behavior for backward compatibility.  
   
 ## Things to Avoid When Throwing Exceptions  
  The following list identifies practices to avoid when throwing exceptions:  
@@ -56,11 +57,12 @@ Exceptions are used to indicate that an error has occurred while running the pro
  New properties should only be added to the exception class when the data they provide is useful to resolving the exception. If new properties are added to the derived exception class, `ToString()` should be overridden to return the added information.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) and [The throw statement](~/_csharplang/spec/statements.md#the-throw-statement) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
-- [Exception Hierarchy](https://msdn.microsoft.com/library/f7d68675-be06-40fb-a555-05f0c5a6f66b)  
+- [Exception Hierarchy](../../../standard/exceptions/index.md)  
 - [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)

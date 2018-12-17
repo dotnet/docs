@@ -2,7 +2,6 @@
 title: "HTTP Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: d3439262-c58e-4d30-9f2b-a160170582bb
-author: "BrucePerlerMS"
 ---
 # HTTP Transport Security
 When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how SSL works and how it is implemented in Windows Communication Foundation (WCF).  

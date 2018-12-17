@@ -35,7 +35,7 @@ You can use a variety of patterns to filter on the exception type and other cond
 |:? *exception-type*|Matches the specified .NET exception type.|
 |:? *exception-type* as *identifier*|Matches the specified .NET exception type, but gives the exception a named value.|
 |*exception-name*(*arguments*)|Matches an F# exception type and binds the arguments.|
-|*identifier*|Matches any exception and binds the name to the exception object. Equivalent to **:? System.Exception as***identifier*|
+|*identifier*|Matches any exception and binds the name to the exception object. Equivalent to **:? System.Exception as**_identifier_|
 |*identifier* when *condition*|Matches any exception if the condition is true.|
 
 ## Examples
@@ -44,11 +44,11 @@ The following code examples illustrate the use of the various exception handler 
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-2/snippet5602.fs)]
 
->[!NOTE]
-The `try...with` construct is a separate expression from the `try...finally` expression. Therefore, if your code requires both a `with` block and a `finally` block, you will have to nest the two expressions.
+> [!NOTE]
+> The `try...with` construct is a separate expression from the `try...finally` expression. Therefore, if your code requires both a `with` block and a `finally` block, you will have to nest the two expressions.
 
->[!NOTE]
-You can use `try...with` in asynchronous workflows and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Asynchronous Workflows](../asynchronous-workflows.md), and [Computation Expressions](../computation-expressions.md).
+> [!NOTE]
+> You can use `try...with` in asynchronous workflows and other computation expressions, in which case a customized version of the `try...with` expression is used. For more information, see [Asynchronous Workflows](../asynchronous-workflows.md), and [Computation Expressions](../computation-expressions.md).
 
 ## See also
 

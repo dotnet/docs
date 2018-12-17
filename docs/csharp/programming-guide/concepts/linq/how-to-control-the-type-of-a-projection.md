@@ -32,7 +32,7 @@ public class Customer
   
     public override string ToString()  
     {  
-        return String.Format("{0}:{1}:{2}", this.customerID, this.companyName, this.contactName);  
+        return $"{this.customerID}:{this.companyName}:{this.contactName}";
     }  
 }  
   

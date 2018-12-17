@@ -2,8 +2,6 @@
 title: "PNRP in Application Development"
 ms.date: "03/30/2017"
 ms.assetid: 265615d6-4423-4b5d-8626-752e456f4f4e
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # PNRP in Application Development
 In Windows Vista, networking applications can access name publication and resolution functions through a simplified PNRP application programming interface (API).  

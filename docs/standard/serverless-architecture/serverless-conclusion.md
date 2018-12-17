@@ -24,4 +24,4 @@ The following key takeaways are the most important conclusions from this guide.
 **Serverless as a tool, not the toolbox.** Serverless is not the exclusive solution to application architecture. It is a tool that can be leveraged as part of a hybrid application that may contain traditional tiers, monolith back ends, and containers. Serverless can be used to enhance existing solutions and is not an all-or-nothing approach to application development.
 
 >[!div class="step-by-step"]
-[Previous](serverless-business-scenarios.md)
+>[Previous](serverless-business-scenarios.md)

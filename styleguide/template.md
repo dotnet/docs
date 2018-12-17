@@ -34,12 +34,13 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
 - **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading, and it should contain 60 characters or less.
 - **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.
-- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases.
-- **ms.topic**: The topic type. The most common value is `article`. Other common values used are `get-started-article`, `managed-reference`, and `reference`.
-- **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb, powershell and xml.
-- **ms.prod**: Product identification used for BI purposes. Possible values are `.net-core` for topics on the .NET Core Guide, `.net-framework` for topics on the .NET Framework Guide and `.net` for all other topics.
+- **author** and **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The **ms.author** field, on the other hand, should contain a Microsoft alias and indicates the person responsible for maintaining the article.
+- **ms.topic**: The topic type. The most common value is `conceptual` and is set at a global level. Other common values used are `tutorial`, `overview`, and `reference`.
+- **ms.devlang** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
+- **ms.prod**: Product identification used for BI purposes. They're usually set at a global level, so they don't usually appear in the metadata block of each article.
 - **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
 - **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
+- **f1_keywords**: Connects the article to the F1 key (functionality in Visual Studio).
 
 ## Basic Markdown, GFM, and special characters
 
@@ -102,32 +103,36 @@ Use for inline code, language keywords, NuGet package names, command-line comman
 To link to a header in the same Markdown file (also known as anchor links), you'll need to find out the id of the header you're trying to link to. To confirm the ID, view the source of the rendered article, find the id of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
 The id is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the id would look like this `id="step-2"`.
 
-- Example: [Chapter 1](#chapter-1)
+- Example: `[Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier)` produces [Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier).
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
-- Example: [Readme file](../readme.md)
-- Example: [Welcome to .NET](../docs/welcome.md)
+- Example: `[Readme file](../README.md)` produces [Readme file](../README.md). (Note that links are case-sensitive.)
+- Example: `[Welcome to .NET](../docs/welcome.md)` produces [Welcome to .NET](../docs/welcome.md).
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: [.NET Community](../docs/welcome.md#community)
+- Example: `[.NET Community](../docs/welcome.md#open-source)` produces [.NET Community](../docs/welcome.md#open-source).
 
-The C# language specification and the Visual Basic language specification are included in the .NET docs by including the source from the language repositories. The markdown sources are managed in the [csharplang](../csharplang) and [visual basic](../vblang) repositories.
+In most cases, we use the relative links and discourage the use of `~/` in links because relative links resolve in the source on GitHub. However, whenever we link to a file in a dependent repo, we'll use the `~/` character to provide the path. Because the files in the dependent repo are in a different location in GitHub the links won't resolve correctly with relative links regardless of how they were written.
+
+The C# language specification and the Visual Basic language specification are included in the .NET docs by including the source from the language repositories. The markdown sources are managed in the [csharplang](https://github.com/dotnet/csharplang) and [visual basic](https://github.com/dotnet/vblang) repositories.
 
 Links to the spec must point to the source directories where those specs are included. For C#, it's **~/_csharplang/spec** and for VB, it's **~/_vblang/spec**.
 
-- Example: [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+- Example: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)` produces [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions).
 
 ### External Links
 
 To link to an external file, use the full URL as the link.
 
-- Example: [GitHub](http://www.github.com)
+- Example: `[GitHub](https://www.github.com)` produces [GitHub](https://www.github.com).
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: <http://www.github.com>
+- Example: `<https://www.github.com>` produces <https://www.github.com>.
+
+Prefer the `https` protocol for external links. Only use `http` links for sites that do not support `https`.
 
 ### Links to APIs
 
@@ -454,7 +459,7 @@ You can see an example of checked lists in action in the [.NET Core docs](https:
 ### Buttons
 
 > [!div class="button"]
-[button links](../docs/core/index.md)
+> [button links](../docs/core/index.md)
 
 You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
@@ -469,7 +474,7 @@ You can see an example of selectors in action at the [Azure docs](https://docs.m
 ### Step-By-Steps
 
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+>[Previous](../docs/csharp/expression-trees-interpreting.md)
+>[Next](../docs/csharp/expression-trees-translating.md)
 
 You can see an example of step-by-steps in action at the [C# Guide](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

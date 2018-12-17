@@ -7,15 +7,13 @@ ms.assetid: 9ccc2770-a20e-4dff-9970-f56ad8aec2b5
 PeerCustomResolverBindingElement  
   
 ## Syntax  
- `class PeerCustomResolverBindingElement : PeerResolverBindingElement`  
-  
- `{`  
-  
- `string Address;`  
-  
- `string Binding;`  
-  
- `};`  
+```csharp
+class PeerCustomResolverBindingElement : PeerResolverBindingElement
+{  
+    string Address;
+    string Binding;
+};
+```  
   
 ## Methods  
  The PeerCustomResolverBindingElement class does not define any methods.  

@@ -19,7 +19,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # ISymUnmanagedBinder::GetReaderForFile Method
-Given a metadata interface and a file name, returns the correct <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> structure that will read the debugging symbols associated with the module.  
+Given a metadata interface and a file name, returns the correct [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface that will read the debugging symbols associated with the module.  
   
  This method will open the program database (PDB) file only if it is next to the executable file. This change has been made for security purposes. If you need a more extensive search for the PDB file, use the [ISymUnmanagedBinder2::GetReaderForFile2](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder2-getreaderforfile2-method.md) method.  
   
@@ -33,7 +33,7 @@ HRESULT GetReaderForFile(
     [out, retval] ISymUnmanagedReader  **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] A pointer to the metadata import interface.  
   
@@ -44,7 +44,7 @@ HRESULT GetReaderForFile(
  [in] A pointer to the search path.  
   
  `pRetVal`  
- [out] A pointer that is set to the returned <<!--zz xref:ISymUnmanagedReader --> `ISymUnmanagedReader`> interface.  
+ [out] A pointer that is set to the returned [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  

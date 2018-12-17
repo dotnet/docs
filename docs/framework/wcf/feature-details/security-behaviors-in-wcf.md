@@ -2,7 +2,6 @@
 title: "Security Behaviors in WCF"
 ms.date: "03/30/2017"
 ms.assetid: 513232c0-39fd-4409-bda6-5ebd5e0ea7b0
-author: "BrucePerlerMS"
 ---
 # Security Behaviors in WCF
 In Windows Communication Foundation (WCF), behaviors modify run-time behavior at the service level or at the endpoint level. (For more information about behaviors in general, see [Specifying Service Run-Time Behavior](../../../../docs/framework/wcf/specifying-service-run-time-behavior.md).) *Security behaviors* allow control over credentials, authentication, authorization, and auditing logs. You can use behaviors either by programming or through configuration. This topic focuses on configuring the following behaviors related to security functions:  

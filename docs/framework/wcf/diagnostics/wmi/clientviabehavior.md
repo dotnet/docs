@@ -8,7 +8,7 @@ ClientViaBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ClientViaBehavior : Behavior  
 {  
   string Uri;  

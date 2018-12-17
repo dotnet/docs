@@ -14,12 +14,11 @@
             // Create the query.
             var studentsToXML = new XElement("Root",
                 from student in students
-                let x = String.Format("{0},{1},{2},{3}", student.Scores[0],
-                        student.Scores[1], student.Scores[2], student.Scores[3])
+                let scores = string.Join(",", student.Scores)
                 select new XElement("student",
                            new XElement("First", student.First),
                            new XElement("Last", student.Last),
-                           new XElement("Scores", x)
+                           new XElement("Scores", scores)
                         ) // end "student"
                     ); // end "Root"
 

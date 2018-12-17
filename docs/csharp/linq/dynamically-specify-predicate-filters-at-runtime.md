@@ -38,7 +38,7 @@ In some cases, you don't know until run time how many predicates you have to app
 
 8. The next step is to run the project again, this time by using input entered at run time instead of array `ids`. Change `QueryByID(ids)` to `QueryByID(args)` in the `Main` method.
 
-9. Run the project with the command line arguments `122 117 120 115`. When the project is run, those values become elements of `args`, the parameter of the `Main` method..
+9. Run the project with the command line arguments `122 117 120 115`. When the project is run, those values become elements of `args`, the parameter of the `Main` method.
 
 10. The following output is displayed in a console window:
 

@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d32b7f35-29d8-4fb7-ad71-d219edc5e359
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Request a Web Page and Retrieve the Results as a Stream
 This example shows how to request a Web page and retrieve the results in a stream.  

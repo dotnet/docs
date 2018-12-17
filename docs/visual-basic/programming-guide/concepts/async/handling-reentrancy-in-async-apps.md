@@ -641,14 +641,14 @@ End Function
         Private Function SetUpURLList() As List(Of String)  
             Dim urls = New List(Of String) From  
             {  
-                "http://msdn.microsoft.com/library/hh191443.aspx",  
-                "http://msdn.microsoft.com/library/aa578028.aspx",  
-                "http://msdn.microsoft.com/library/jj155761.aspx",  
-                "http://msdn.microsoft.com/library/hh290140.aspx",  
-                "http://msdn.microsoft.com/library/hh524395.aspx",  
-                "http://msdn.microsoft.com/library/ms404677.aspx",  
-                "http://msdn.microsoft.com",  
-                "http://msdn.microsoft.com/library/ff730837.aspx"  
+                "https://msdn.microsoft.com/library/hh191443.aspx",  
+                "https://msdn.microsoft.com/library/aa578028.aspx",  
+                "https://msdn.microsoft.com/library/jj155761.aspx",  
+                "https://msdn.microsoft.com/library/hh290140.aspx",  
+                "https://msdn.microsoft.com/library/hh524395.aspx",  
+                "https://msdn.microsoft.com/library/ms404677.aspx",  
+                "https://msdn.microsoft.com",  
+                "https://msdn.microsoft.com/library/ff730837.aspx"  
             }  
             Return urls  
         End Function  
@@ -659,7 +659,7 @@ End Function
             ' Global Monospace.  
   
             ' Strip off the "http:'".  
-            Dim displayURL = url.Replace("http://", "")  
+            Dim displayURL = url.Replace("https://", "")  
             ' Display position in the URL list, the URL, and the number of bytes.  
             ResultsTextBox.Text &= String.Format(vbCrLf & "{0}. {1,-58} {2,8}", pos, displayURL, content.Length)  
         End Sub  

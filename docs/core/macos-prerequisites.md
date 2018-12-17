@@ -2,8 +2,8 @@
 title: Prerequisites for .NET Core on Mac
 description: Supported macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on macOS machines.
 author: guardrex
-ms.author: mairaw
-ms.date: 10/03/2018
+ms.author: adegeo
+ms.date: 12/03/2018
 ---
 # Prerequisites for .NET Core on macOS
 
@@ -17,7 +17,10 @@ This article shows you the supported macOS versions and .NET Core dependencies t
 
 * macOS 10.12 "Sierra" and later versions
 
-See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.x supported operating systems, out of support OS versions, and lifecycle policy links.
+See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) and [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.1 and .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
+For download links and more information, see [.NET Core 2.2 downloads](https://www.microsoft.com/net/download/dotnet-core/2.2) or [.NET Core 2.1 downloads](https://www.microsoft.com/net/download/dotnet-core/2.1).
+
 
 # [.NET Core 1.x](#tab/netcore1x)
 
@@ -26,7 +29,9 @@ See [.NET Core 2.x Supported OS Versions](https://github.com/dotnet/core/blob/ma
 * macOS 10.12 "Sierra"
 * macOS 10.11 "El Capitan"
 
-See [.NET Core 1.x Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.x supported operating systems, out of support OS versions, and lifecycle policy links.
+See [.NET Core 1.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.1/1.1.md) and [.NET Core 1.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md) for the complete list of .NET Core 1.1 and .NET Core 1.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
+For download links and more information, see [.NET Core 1.1 downloads](https://www.microsoft.com/net/download/dotnet-core/1.1) or [.NET Core 1.0 downloads](https://www.microsoft.com/net/download/dotnet-core/1.0).
 
 ---
 
@@ -88,9 +93,9 @@ You can increase this limit by following these steps:
 
 2. In a terminal window, run the following command:
 
-```console
-echo 'ulimit -n 2048' | sudo tee -a /etc/profile
-```
+   ```console
+   echo 'ulimit -n 2048' | sudo tee -a /etc/profile
+   ```
 
 3. Reboot your Mac to apply these settings.
 

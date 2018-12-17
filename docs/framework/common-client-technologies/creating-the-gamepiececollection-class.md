@@ -11,7 +11,7 @@ The **GamePieceCollection** class derives from the generic List class, and intro
   
  [!code-csharp[ManipulationXNA#_GamePieceCollection_PrivateMembersAndConstructor](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiececollection.cs#_gamepiececollection_privatemembersandconstructor)]  
   
- The **ProcessInertia** and the **Draw** methods simplify the code needed in the game [Game.Update](/previous-versions/windows/xna/bb199616%28v%3dxnagamestudio.41%29) and [Game.Draw](/previous-versions/windows/xna/bb196422%28v%3dxnagamestudio.41%29) methods by enumerating all of the game pieces in the collection and calling the respective method on each **GamePiece** object.  
+ The **ProcessInertia** and the **Draw** methods simplify the code needed in the game [Game.Update](https://docs.microsoft.com/previous-versions/windows/xna/bb199616%28v%3dxnagamestudio.41%29) and [Game.Draw](https://docs.microsoft.com/previous-versions/windows/xna/bb196422%28v%3dxnagamestudio.41%29) methods by enumerating all of the game pieces in the collection and calling the respective method on each **GamePiece** object.  
   
  [!code-csharp[ManipulationXNA#_GamePieceCollection_ProcessInertiaAndDraw](../../../samples/snippets/csharp/VS_Snippets_Misc/manipulationxna/cs/gamepiececollection.cs#_gamepiececollection_processinertiaanddraw)]  
   

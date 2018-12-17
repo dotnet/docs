@@ -87,5 +87,5 @@ Build, debug, update, and refresh apps in a local Docker container: [https://doc
 Deploy an ASP.NET Core Docker container to a container registry: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 >[!div class="step-by-step"]
-[Previous](docker-apps-inner-loop-workflow.md)
-[Next](set-up-windows-containers-with-powershell.md)
+>[Previous](docker-apps-inner-loop-workflow.md)
+>[Next](set-up-windows-containers-with-powershell.md)

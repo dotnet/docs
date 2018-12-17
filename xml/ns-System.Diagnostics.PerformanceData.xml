@@ -37,13 +37,13 @@
   
     4.  Use the <xref:System.Diagnostics.PerformanceData.CounterSetInstance.Counters%2A?displayProperty=nameWithType> property to access and set the counter data for the counter.  
   
-4.  After you finish your provider, use the LodCtr tool to register the counters on the computer. For example,  
+4.  After you finish your provider, use the [LodCtr](https://docs.microsoft.com/windows/desktop/perfctrs/adding-counter-names-and-descriptions-to-the-registry#running-the-lodctr-tool) tool to register the counters on the computer. For example,  
   
     ```console  
     lodctr /m:provider.man  
     ```  
   
-     The example assumes the manifest and executable file are in the current directory. For complete details on using the LodCtr, see [Microsoft Technet](https://Go.Microsoft.Com/FWLink/?LinkId=84000).  
+     The example assumes the manifest and executable file are in the current directory.  
   
  You can use the classes in this namespace on computers that run the Windows Vista and later operating systems.  
   

@@ -165,7 +165,7 @@
   
 -   The framework will not produce signed-only payloads. Forms authentication tickets will always be both encrypted and signed, regardless of how the `protection` attribute of the `forms` element is set in the Web.config file. View state will always be both encrypted and signed if either `EnableViewStateMac` or `RequireViewStateEncryption` is set for a given page.  
   
- As a result of the security update that is described in [Microsoft security bulletin MS10-070](https://technet.microsoft.com/security/bulletin/MS10-070), the default encryption behavior is the same for the `Framework20SP1` and `Framework20SP2` settings. Changing the default behavior is not recommended, but if you want to do that, see [How to configure legacy encryption mode in ASP.NET](https://support.microsoft.com/kb/2425938).  
+ As a result of the security update that is described in [Microsoft security bulletin MS10-070](https://docs.microsoft.com/security-updates/SecurityBulletins/2010/ms10-070), the default encryption behavior is the same for the `Framework20SP1` and `Framework20SP2` settings. Changing the default behavior is not recommended, but if you want to do that, see [How to configure legacy encryption mode in ASP.NET](https://support.microsoft.com/kb/2425938).  
   
  ]]></format>
         </remarks>

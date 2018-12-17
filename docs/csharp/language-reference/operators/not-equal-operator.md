@@ -12,7 +12,7 @@ ms.assetid: eeff7a4e-ad6f-462d-9f8d-49e9b91c6c97
 ---
 # != Operator (C# Reference)
 
-The inequality operator `!=` returns `true` if its operands are not equal, `true` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information, see the [== Operator](equality-comparison-operator.md) article.
+The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information, see the [== Operator](equality-comparison-operator.md) article.
 
 The following example demonstrates the usage of the `!=` operator:
 

@@ -1434,8 +1434,24 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Provides a process-wide memory barrier that ensures that reads and writes from any CPU cannot move across the barrier.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `MemoryBarrierProcessWide` method differs from the "normal" <xref:System.Threading.Interlocked.MemoryBarrier%2A> method as follows:
+
+- The normal memory barrier ensures that the reads and writes from the current CPU can't move across the barrier. The process-wide memory barrier ensures that any read or write from any CPU being used in the process can't move across the barrier.
+
+- The normal memory barrier allows reasonable shared access if *every* thread accessing the data uses barriers. The process-wide memory barrier forces *other CPUs* to synchronize with process memory (for example, to flush write buffers and synchronize read buffers). This allows for non-interlocked operations on some threads and still have reasonable shared access. 
+
+- The normal memory barrier imposes very little overhead; normal interlocked operations probably cost fewer than a hundred cycles. The process-wide memory barrier is very expensive. It has to force every CPU in the process do to something, at a probable cost of thousands of cycles. 
+
+The `MemoryBarrierProcessWide` method also suffers from all the subtleties of lock-free programming. Nevertheless, this method can be extremely useful when you actually need to call it, which should be rare.
+
+This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-flushprocesswritebuffers) on Windows and [sys_membarrier](https://lore.kernel.org/patchwork/patch/188708/) on Linux.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">

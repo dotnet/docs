@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the data sent by the workflow runtime to tracking participants when <see cref="M:System.Activities.ActivityExecutionContext.CancelChild" /> or <see cref="M:System.Activities.ActivityExecutionContext.CancelChildren" /> is called.</summary>
+    <summary>Represents the data sent by the workflow runtime to tracking participants when <see cref="M:System.Activities.NativeActivityContext.CancelChild(System.Activities.ActivityInstance)" /> or <see cref="M:System.Activities.NativeActivityContext.CancelChildren" /> is called.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

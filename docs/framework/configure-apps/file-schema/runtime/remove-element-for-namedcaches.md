@@ -47,4 +47,4 @@ Removes a named cache entry from the `namedCaches` collection for a memory cache
  The `remove` element removes a `namedCache` entry from the named cache collection for a memory cache.  
   
 ## See Also  
- [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)
+- [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)

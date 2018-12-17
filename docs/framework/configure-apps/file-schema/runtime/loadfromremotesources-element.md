@@ -111,8 +111,8 @@ The following example shows how to grant full trust to assemblies loaded from re
 
 ## See also
 
-[More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
-[How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
-[Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-[Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
+- [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
+- [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  

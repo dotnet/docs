@@ -32,4 +32,4 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 - [C# Operators](index.md)
 - [> Operator](greater-than-operator.md)
 - [== Operator](equality-comparison-operator.md)
-- <xref:System.IComparable%601displayProperty=nameWithType>
+- <xref:System.IComparable%601?displayProperty=nameWithType>

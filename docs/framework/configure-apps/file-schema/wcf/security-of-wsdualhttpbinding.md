@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;wsDualHttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;wsDualHttpBinding&gt;
 Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  

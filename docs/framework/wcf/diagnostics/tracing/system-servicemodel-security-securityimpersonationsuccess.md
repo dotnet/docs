@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityImpersonationSuccess"
 ms.date: "03/30/2017"
 ms.assetid: e344c7a9-baae-4ffc-a851-85d2e8571d83
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityImpersonationSuccess
 System.ServiceModel.Security.SecurityImpersonationSuccess  

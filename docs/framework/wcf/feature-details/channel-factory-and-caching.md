@@ -32,7 +32,7 @@ WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> cl
   
  The following code snippets illustrate how to use the <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property.  
   
-```  
+```csharp  
 class Program   
 {   
    static void Main(string[] args)   
@@ -55,7 +55,7 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest { }
   
  In the above code, all instances of `TestClient` will use the same channel factory.  
   
-```  
+```csharp  
 class Program   
 {   
    static void Main(string[] args)   
@@ -83,7 +83,7 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
   
  In the example above, all instances of `TestClient` would use the same channel factory except instance #4. Instance #4 would use a channel factory that is created specifically for its use. This setting would work for scenarios where a particular endpoint needs different security settings from the other endpoints of the same channel factory type (in this case `ITest`).  
   
-```  
+```csharp  
 class Program   
 {   
    static void Main(string[] args)   

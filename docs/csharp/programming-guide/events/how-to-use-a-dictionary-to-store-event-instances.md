@@ -1,5 +1,6 @@
 ---
-title: "How to: Use a Dictionary to Store Event Instances (C# Programming Guide)"
+title: "How to: Use a Dictionary to Store Event Instances - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [C#], storing instances in a Dictionary"

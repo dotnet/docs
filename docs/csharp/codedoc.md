@@ -14,7 +14,7 @@ XML documentation comments, like all other comments, are ignored by the compiler
 
 You can generate the XML file at compile time by doing one of the following:
 
-- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the assembly:
+- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the assembly:
 
    ```xml
    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
@@ -194,7 +194,7 @@ And there you have it: our code is back to being readable, and no documentation 
 
 The `filename` attribute represents the name of the XML file containing the documentation.
 
-The `path` attribute represents an [XPath](https://msdn.microsoft.com/library/ms256115.aspx) query to the `tag name` present in the specified `filename`.
+The `path` attribute represents an [XPath](../standard/data/xml/xpath-queries-and-namespaces.md) query to the `tag name` present in the specified `filename`.
 
 The `name` attribute represents the name specifier in the tag that precedes the comments.
 

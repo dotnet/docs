@@ -87,6 +87,6 @@ Defines an element that is used to configure a cache that is based on the <xref:
 ```  
   
 ## See Also  
- <xref:System.Runtime.Caching.MemoryCache>  
- [\<system.runtime.caching> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md)  
- [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)
+- <xref:System.Runtime.Caching.MemoryCache>  
+- [\<system.runtime.caching> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md)  
+- [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)

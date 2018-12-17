@@ -1,5 +1,6 @@
 ---
-title: "Character Encoding in .NET"
+title: Character Encoding in .NET
+description: Learn about character encoding and decoding in .NET.
 ms.date: "12/22/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -12,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Character Encoding in .NET
 Characters are abstract entities that can be represented in many different ways. A character encoding is a system that pairs each character in a supported character set with some value that represents that character. For example, Morse code is a character encoding that pairs each character in the Roman alphabet with a pattern of dots and dashes that are suitable for transmission over telegraph lines. A character encoding for computers pairs each character in a supported character set with a numeric value that represents that character. A character encoding has two distinct components:  

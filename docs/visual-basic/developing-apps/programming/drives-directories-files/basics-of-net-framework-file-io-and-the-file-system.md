@@ -26,7 +26,7 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
 ## Stream Operations  
  The data contained in the stream may come from memory, a file, or a TCP/IP socket. Streams have fundamental operations that can be applied to them:  
   
--   Reading. You can read from a stream, transferring data from the stream into a data structure, such as a string or an array of bytes.  
+-   **Reading**. You can read from a stream, transferring data from the stream into a data structure, such as a string or an array of bytes.  
   
 -   **Writing**. You can write to a stream, transferring data from a data source into the stream.  
   

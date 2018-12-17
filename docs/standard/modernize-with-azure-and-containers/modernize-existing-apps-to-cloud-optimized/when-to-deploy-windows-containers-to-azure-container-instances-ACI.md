@@ -31,5 +31,5 @@ The main benefits of Azure Container Instances (ACI) are:
 In short, with ACI you can develop apps fast without managing virtual machines or having to learn new tools. It's just your application, in a container, running in the cloud.
 
 >[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
-[Next](when-to-deploy-windows-containers-to-service-fabric.md)
+>[Previous](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
+>[Next](when-to-deploy-windows-containers-to-service-fabric.md)

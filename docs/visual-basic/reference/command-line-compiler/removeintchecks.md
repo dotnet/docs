@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "/removeintchecks compiler option [Visual Basic]"
   - "-removeintchecks compiler option [Visual Basic]"
 ms.assetid: c1835bd5-1e38-4fba-bd2f-6984774765d4
-author: rpetrusha
-ms.author: ronpet
 ---
 # -removeintchecks
 Turns overflow-error checking for integer operations on or off.  

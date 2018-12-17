@@ -2,7 +2,6 @@
 title: "Securing Messages Using Message Security"
 ms.date: "03/30/2017"
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
-author: "BrucePerlerMS"
 ---
 # Securing Messages Using Message Security
 This section discusses WCF message security when using <xref:System.ServiceModel.NetMsmqBinding>.  

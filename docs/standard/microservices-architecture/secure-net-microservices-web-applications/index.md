@@ -242,7 +242,6 @@ The JWT bearer authentication middleware can also support more advanced scenario
 -   **IdentityServer4. Official documentation**
     [*https://identityserver4.readthedocs.io/en/release/*](https://identityserver4.readthedocs.io/en/release/)
 
-
 >[!div class="step-by-step"]
-[Previous](../implement-resilient-applications/monitor-app-health.md)
-[Next](authorization-net-microservices-web-applications.md)
+>[Previous](../implement-resilient-applications/monitor-app-health.md)
+>[Next](authorization-net-microservices-web-applications.md)

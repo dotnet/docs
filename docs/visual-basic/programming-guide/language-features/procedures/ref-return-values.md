@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "ref return values [Visual Basic]"
   - "ref returns [Visual Basic]"
 ms.assetid: 5ef0cc69-eb3a-4a67-92a2-78585f223cb5
-author: rpetrusha
-ms.author: ronpet
 ---
 # Support for reference return values (Visual Basic)
 

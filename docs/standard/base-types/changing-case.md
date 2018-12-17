@@ -1,5 +1,6 @@
 ---
-title: "Changing Case in the .NET Framework"
+title: "Changing Case in .NET"
+description: Learn how to change in the case of strings in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -15,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 6805f81b-e9ad-4387-9f4c-b9bdb21b87c0
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Changing Case in .NET
 If you write an application that accepts input from a user, you can never be sure what case he or she will use to enter the data. Often, you want strings to be cased consistently, particularly if you are displaying them in the user interface. The following table describes three case-changing methods. The first two methods provide an overload that accepts a culture.  

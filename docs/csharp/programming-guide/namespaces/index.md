@@ -1,5 +1,6 @@
 ---
-title: "Namespaces (C# Programming Guide)"
+title: "Namespaces - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords: 
   - "C# language, namespaces"
@@ -32,8 +33,8 @@ Namespaces have the following properties:
   
 - They organize large code projects.  
 - They are delimited by using the `.` operator.  
-- The `using directive` obviates the requirement to specify the name of the namespace for every class.  
-- The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET Framework namespace `System`.  
+- The `using` directive obviates the requirement to specify the name of the namespace for every class.  
+- The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET <xref:System> namespace.  
 
 ## C# Language Specification
 
@@ -50,4 +51,3 @@ Namespaces have the following properties:
 - [using Directive](../../language-reference/keywords/using-directive.md)  
 - [:: Operator](../../language-reference/operators/namespace-alias-qualifer.md)  
 - [. Operator](../../language-reference/operators/member-access-operator.md)
->>>>>>> add identifier naming rules

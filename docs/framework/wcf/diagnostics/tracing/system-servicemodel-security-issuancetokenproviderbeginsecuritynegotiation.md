@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.IssuanceTokenProviderBeginSecurityNegotiation"
 ms.date: "03/30/2017"
 ms.assetid: fc7a8357-4993-4488-9e4a-e544fbd45e3d
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.IssuanceTokenProviderBeginSecurityNegotiation
 System.ServiceModel.Security.IssuanceTokenProviderBeginSecurityNegotiation  

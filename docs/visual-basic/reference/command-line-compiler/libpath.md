@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "/libpath compiler option [Visual Basic]"
   - "-libpath compiler option [Visual Basic]"
 ms.assetid: 5f1c26c9-3455-4e89-bdf3-b12d6c2e655b
-author: rpetrusha
-ms.author: ronpet
 ---
 # -libpath
 Specifies the location of referenced assemblies.  

@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Events
 
 > [!NOTE]
-The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Events enable you to associate function calls with user actions and are important in GUI programming. Events can also be triggered by your applications or by the operating system.
 

@@ -1,6 +1,6 @@
 ---
 title: "COM Callable Wrapper"
-ms.date: "03/30/2017"
+ms.date: "10/23/2018"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -56,7 +56,7 @@ COM interfaces and the COM callable wrapper
 |Interface|Description|  
 |---------------|-----------------|  
 |The (\_*classname*) class interface|Interface, exposed by the runtime and not explicitly defined, that exposes all public interfaces, methods, properties, and fields that are explicitly exposed on a managed object.|  
-|**IConnectionPoint** and **IconnectionPointContainer**|Interface for objects that source delegate-based events (an interface for registering event subscribers).|  
+|**IConnectionPoint** and **IConnectionPointContainer**|Interface for objects that source delegate-based events (an interface for registering event subscribers).|  
 |**IdispatchEx**|Interface supplied by the runtime if the class implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|  
 |**IEnumVARIANT**|Interface for collection-type classes, which enumerates the objects in the collection if the class implements **IEnumerable**.|  
   
@@ -78,17 +78,17 @@ Public Class Mammal
 End Class  
 ```  
   
-```csharp  
-// Applies the ClassInterfaceAttribute to set the interface to dual.  
-[ClassInterface(ClassInterfaceType.AutoDual)]  
-// Implicitly extends System.Object.  
-public class Mammal  
-{  
-    void  Eat();  
-    void  Breathe():  
-    void  Sleep();  
-}  
-```  
+```csharp
+// Applies the ClassInterfaceAttribute to set the interface to dual.
+[ClassInterface(ClassInterfaceType.AutoDual)]
+// Implicitly extends System.Object.
+public class Mammal
+{
+    public void Eat() {}
+    public void Breathe() {}
+    public void Sleep() {}
+}
+```
   
  The COM client can obtain a pointer to a class interface named `_Mammal`, which is described in the type library that the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md) tool generates. If the `Mammal` class implemented one or more interfaces, the interfaces would appear under the coclass.  
   
@@ -133,12 +133,13 @@ coclass Mammal
 End Class  
 ```  
   
-```csharp  
-[ClassInterface(ClassInterfaceType.None)]  
-public class LoanApp : IExplicit {  
-    void M();  
-}  
-```  
+```csharp
+[ClassInterface(ClassInterfaceType.None)]
+public class LoanApp : IExplicit
+{
+    int IExplicit.M() { return 0; }
+}
+```
   
  The **ClassInterfaceType.None** value prevents the class interface from being generated when the class metadata is exported to a type library. In the preceding example, COM clients can access the `LoanApp` class only through the `IExplicit` interface.  
   
@@ -157,20 +158,31 @@ public class LoanApp : IExplicit {
 End Class  
 ```  
   
-```csharp  
-[ClassInterface(ClassInterfaceType.AutoDispatch]  
-public class LoanApp : IAnother {  
-    void M();  
-}  
-```  
+```csharp
+[ClassInterface(ClassInterfaceType.AutoDispatch)]
+public class LoanApp
+{
+    public int M() { return 0; }
+}
+```
   
  To get the DispId of an interface member at run time, COM clients can call **IDispatch.GetIdsOfNames**. To invoke a method on the interface, pass the returned DispId as an argument to **IDispatch.Invoke**.  
   
 ### Restrict using the dual interface option for the class interface.  
  Dual interfaces enable early and late binding to interface members by COM clients. At design time and during testing, you might find it useful to set the class interface to dual. For a managed class (and its base classes) that will never be modified, this option is also acceptable. In all other cases, avoid setting the class interface to dual.  
   
- An automatically generated dual interface might be appropriate in rare cases; however, more often it creates version-related complexity. For example, COM clients using the class interface of a derived class can easily break with changes to the base class. When a third party provides the base class, the layout of the class interface is out of your control. Further, unlike a dispatch-only interface, a dual interface (**ClassInterface.AutoDual**) provides a description of the class interface in the exported type library. Such a description encourages late-bound clients to cache DispIds at run time.  
+ An automatically generated dual interface might be appropriate in rare cases; however, more often it creates version-related complexity. For example, COM clients using the class interface of a derived class can easily break with changes to the base class. When a third party provides the base class, the layout of the class interface is out of your control. Further, unlike a dispatch-only interface, a dual interface (**ClassInterfaceType.AutoDual**) provides a description of the class interface in the exported type library. Such a description encourages late-bound clients to cache DispIds at run time.  
   
+### Ensure that all COM event notifications are late-bound.
+
+By default, COM type information is embedded directly into managed assemblies, which eliminates the need for primary interop assemblies (PIAs). However, one of the limitations of embedded type information is that it does not supported delivery of COM event notiifcations by early-bound vtable calls, but only supports late-bound `IDispatch::Invoke` calls.
+
+If your application requires early-bound calls to COM event interface methods, you can set the **Embed Interop Types** property in Visual Studio to `true`, or include the following element in your project file:
+
+```xml
+<EmbedInteropTypes>True</EmbedInteropTypes>
+```
+
 ## See Also  
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
  [COM Wrappers](com-wrappers.md)  

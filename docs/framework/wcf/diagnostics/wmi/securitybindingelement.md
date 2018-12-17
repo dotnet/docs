@@ -2,7 +2,6 @@
 title: "SecurityBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: ef93b6e6-3524-48a8-94d3-c8837f1872f9
-author: "BrucePerlerMS"
 ---
 # SecurityBindingElement
 SecurityBindingElement  

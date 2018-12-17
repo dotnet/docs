@@ -1,10 +1,9 @@
 ---
 title: "Message Security Anonymous"
 ms.date: "03/30/2017"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "WS Security"
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
-author: "BrucePerlerMS"
 ---
 # Message Security Anonymous
 The Message Security Anonymous sample demonstrates how to implement a Windows Communication Foundation (WCF) application that uses message-level security with no client authentication but that requires server authentication using the server's X.509 certificate. All application messages between the client and server are signed and encrypted. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) sample. This sample consists of a client console program (.exe) and a service library (.dll) hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.

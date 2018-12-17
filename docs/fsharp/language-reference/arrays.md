@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 # Arrays
 
 > [!NOTE]
-The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 

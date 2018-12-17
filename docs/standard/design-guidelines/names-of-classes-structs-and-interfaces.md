@@ -1,6 +1,6 @@
 ---
 title: "Names of Classes, Structs, and Interfaces"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 helpviewer_keywords: 
   - "type names, guidelines"
   - "classes [.NET Framework], names"
@@ -12,8 +12,7 @@ helpviewer_keywords:
   - "interfaces [.NET Framework], names"
   - "generic type parameters"
 ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Names of Classes, Structs, and Interfaces
 The naming guidelines that follow apply to general type naming.  

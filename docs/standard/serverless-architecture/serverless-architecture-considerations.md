@@ -76,5 +76,5 @@ For more information, see [Implementing the Circuit Breaker pattern](../microser
 A major benefit of serverless is the ability to upgrade a specific function without having to redeploy the entire application. For upgrades to be successful, functions must be versioned so that services calling them are routed to the correct version of code. A strategy for deploying new versions is also important. A common approach is to use "green/blue deployments." The green deployment is the current function. A new "blue" version is deployed to production and tested. When testing passes, the green and blue versions are swapped so the new version comes live. If any issues are encountered, they can be swapped back. Supporting versioning and green/blue deployments requires a combination of authoring the functions to accommodate version changes and working with the serverless platform to handle deployments. One possible approach is to use proxies, which are described in the [Azure serverless platform](azure-functions.md#proxies) chapter.
 
 >[!div class="step-by-step"]
-[Previous](serverless-architecture.md)
-[Next](serverless-design-examples.md)
+>[Previous](serverless-architecture.md)
+>[Next](serverless-design-examples.md)

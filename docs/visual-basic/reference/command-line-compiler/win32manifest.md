@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "win32manifest compiler option [Visual Basic]"
   - "-win32manifest compiler option [Visual Basic]"
 ms.assetid: 9e3191b4-90db-41c8-966a-28036fd20005
-author: rpetrusha
-ms.author: ronpet
 ---
 # -win32manifest (Visual Basic)
 Identifies a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.  

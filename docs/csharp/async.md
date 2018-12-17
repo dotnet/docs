@@ -103,7 +103,7 @@ Here are two questions you should ask before you write any code:
     
 If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../standard/async-in-depth.md).
 
-If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the Task Parallel Library.
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
 
 Additionally, you should always measure the execution of your code.  For example, you may find yourself in a situation where your CPU-bound work is not costly enough compared with the overhead of context switches when multithreading.  Every choice has its tradeoff, and you should pick the correct tradeoff for your situation.
 

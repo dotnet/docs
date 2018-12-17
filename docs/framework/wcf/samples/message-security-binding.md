@@ -2,7 +2,6 @@
 title: "Message Security Binding"
 ms.date: "03/30/2017"
 ms.assetid: a4570ce7-864e-461b-85d8-0f7bcc53c2c8
-author: "BrucePerlerMS"
 ---
 # Message Security Binding
 This section contains samples that demonstrate message security binding in Windows Services in WCF.  

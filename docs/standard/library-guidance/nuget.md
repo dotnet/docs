@@ -32,8 +32,6 @@ The older way of creating a NuGet package is with a `*.nuspec` file and the `nug
 
 **✔️ CONSIDER** using an SDK-style project file to create the NuGet package.
 
-**✔️ CONSIDER** setting up SourceLink to add source control metadata to your assemblies and NuGet package.
-
 ## Package dependencies
 
 NuGet package dependencies are covered in detail in the [Dependencies](./dependencies.md) article.
@@ -67,6 +65,12 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 **✔️ DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
 
+**✔️ CONSIDER** setting up [SourceLink](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
+
+> SourceLink automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package.
+> SourceLink also adds information about the exact source code the package was built from.
+> For example, a package created from a Git repository will have the commit hash added as metadata.
+
 ## Pre-release packages
 
 NuGet packages with a version suffix are considered [pre-release](/nuget/create-packages/prerelease-packages). By default, the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
@@ -86,14 +90,30 @@ NuGet packages with a version suffix are considered [pre-release](/nuget/create-
 
 ## Symbol packages
 
-NuGet supports [generating a separate symbol package](/nuget/create-packages/symbol-packages) containing debug PDB files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
+Symbol files (`*.pdb`) are produced by the .NET compiler alongside assemblies. Symbol files map execution locations to the original source code so you can step through source code as it is running using a debugger. NuGet supports [generating a separate symbol package (`*.snupkg`)](/nuget/create-packages/symbol-packages-snupkg) containing symbol files alongside the main package containing .NET assemblies. The idea of symbol packages is they're hosted on a symbol server and are only downloaded by a tool like Visual Studio on demand.
 
-Currently the main public host for symbols - [SymbolSource](http://www.symbolsource.org/) - doesn't support the portable PDBs created by SDK-style projects and symbol packages aren't useful.
+NuGet.org hosts its own [symbols server repository](/nuget/create-packages/symbol-packages-snupkg#nugetorg-symbol-server). Developers can use the symbols published to the NuGet.org symbol server by adding `https://symbols.nuget.org/download/symbols` to their [symbol sources in Visual Studio](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).
 
-**✔️ CONSIDER** embedding PDBs in the main NuGet package.
+> [!IMPORTANT]
+> The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
 
-**❌ AVOID** creating a symbols package containing PDBs.
+An alternative to creating a symbol package is embedding symbol files in the main NuGet package. The main NuGet package will be larger, but the embedded symbol files means developers don't need to configure the NuGet.org symbol server. If you're building your NuGet package using an SDK-style project, then you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+    <!-- Include symbol files (*.pdb) in the built .nupkg -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+</Project>
+```
+
+**✔️ CONSIDER** embedding symbol files in the main NuGet package.
+
+> Embedding symbol files in the main NuGet package gives developers a better debugging experience by default. They don't need to find and configure the NuGet symbol server in their IDE to get symbol files.
+>
+> The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
 >[!div class="step-by-step"]
-[Previous](./strong-naming.md)
-[Next](./dependencies.md)
+>[Previous](strong-naming.md)
+>[Next](dependencies.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "/main compiler option [Visual Basic]"
   - "-main compiler option [Visual Basic]"
 ms.assetid: 83fc339d-6652-415d-b205-b5133319b5b0
-author: rpetrusha
-ms.author: ronpet
 ---
 # -main
 Specifies the class or module that contains the `Sub Main` procedure.  

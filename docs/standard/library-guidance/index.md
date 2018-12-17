@@ -1,5 +1,5 @@
 ---
-title: Open-source library guidance
+title: Open-source .NET library guidance
 description: Best practice recommendations for developers to create high quality .NET libraries.
 author: jamesnk
 ms.author: mairaw
@@ -12,7 +12,7 @@ This guidance provides recommendations for developers to create high-quality .NE
 Aspects of high-quality open-source .NET libraries:
 
 > [!div class="checklist"]
-> * **Inclusive** - Good .NET libraries strive to support many platforms and applications.
+> * **Inclusive** - Good .NET libraries strive to support many platforms, programming languages, and applications.
 > * **Stable** - Good .NET libraries coexist in the .NET ecosystem, running in applications built with many libraries.
 > * **Designed to evolve** - .NET libraries should improve and evolve over time, while supporting existing users.
 > * **Debuggable** - .NET libraries should use the latest tools to create a great debugging experience for users.
@@ -42,4 +42,4 @@ And finally, **Do not** recommendations indicate something you should almost nev
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 >[!div class="step-by-step"]
-[Next](./get-started.md)
+>[Next](get-started.md)

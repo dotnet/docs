@@ -2,7 +2,6 @@
 title: "Security Protocols version 1.0"
 ms.date: "03/30/2017"
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
-author: "BrucePerlerMS"
 ---
 # Security Protocols version 1.0
 The Web Services Security Protocols provide Web services security mechanisms that cover all existing enterprise messaging security requirements. This section describes the Windows Communication Foundation (WCF) version 1.0 details (implemented in the <xref:System.ServiceModel.Channels.SecurityBindingElement>) for the following Web services security protocols.  

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<socket> element"
   - "socket element"
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;socket&gt; Element (Network Settings)
 Specifies whether socket operations use completion ports.  
@@ -100,9 +98,9 @@ Specifies whether socket operations use completion ports.
 ```  
   
 ## See Also  
- <xref:System.Net?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>  
- <xref:System.Net.Sockets?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>  
+- <xref:System.Net.Sockets?displayProperty=nameWithType>  
+- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
+- <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

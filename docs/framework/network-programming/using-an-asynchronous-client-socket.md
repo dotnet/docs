@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "client sockets"
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Using an Asynchronous Client Socket
 An asynchronous client socket does not suspend the application while waiting for network operations to complete. Instead, it uses the standard .NET Framework asynchronous programming model to process the network connection on one thread while the application continues to run on the original thread. Asynchronous sockets are appropriate for applications that make heavy use of the network or that cannot wait for network operations to complete before continuing.  

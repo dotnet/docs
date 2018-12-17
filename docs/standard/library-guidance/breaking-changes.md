@@ -88,6 +88,10 @@ public class Document
 }
 ```
 
+**✔️ CONSIDER** keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
+
+> Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
+
 ## See also
 
 * [Version and update considerations for C# developers](../../csharp/whats-new/version-update-considerations.md)
@@ -95,4 +99,4 @@ public class Document
 * [CoreFX Breaking Change Rules](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
-[Previous](./versioning.md)
+>[Previous](versioning.md)

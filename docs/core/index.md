@@ -2,7 +2,6 @@
 title: .NET Core Guide
 description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
 author: richlander
-ms.author: mairaw
 ms.date: 08/01/2018
 ms.custom: "updateeachrelease"
 ---
@@ -12,7 +11,7 @@ ms.custom: "updateeachrelease"
 
 See [About .NET Core](about.md) to learn more about .NET Core, including its characteristics, supported languages and frameworks, and key APIs.
 
-Check out [.NET Core Tutorials](tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running. If you want to try .NET Core in your browser, look at the [Numbers in C#](../csharp/quick-starts/numbers-in-csharp.yml) quickstart.
+Check out [.NET Core Tutorials](tutorials/index.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running. If you want to try .NET Core in your browser, look at the [Numbers in C#](../csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml) online tutorial.
 
 ## Download .NET Core 2.1
 

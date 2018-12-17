@@ -2,7 +2,6 @@
 title: "Security Exceptions"
 ms.date: "03/30/2017"
 ms.assetid: 76d5e5cd-e4f4-404f-9a5a-ec3522494ad8
-author: "BrucePerlerMS"
 ---
 # Security Exceptions
 This topic lists all security exceptions.  

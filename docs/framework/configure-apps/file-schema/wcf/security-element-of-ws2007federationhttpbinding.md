@@ -2,7 +2,6 @@
 title: "&lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;
 Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) element.  

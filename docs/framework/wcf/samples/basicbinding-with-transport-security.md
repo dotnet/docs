@@ -2,7 +2,6 @@
 title: "BasicBinding with Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
-author: "BrucePerlerMS"
 ---
 # BasicBinding with Transport Security
 This sample demonstrates the use of SSL transport security with the basic binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  

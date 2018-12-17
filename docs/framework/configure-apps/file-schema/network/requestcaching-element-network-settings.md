@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "requestCaching element"
   - "<requestCaching> element"
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;requestCaching&gt; Element (Network Settings)
 Controls the caching mechanism for network requests.  
@@ -83,5 +81,5 @@ Controls the caching mechanism for network requests.
 ```  
   
 ## See Also  
- <xref:System.Net.Cache?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Cache?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

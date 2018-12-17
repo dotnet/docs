@@ -21,7 +21,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
   
  The following command adds a net.tcp site binding to the default Web site using appcmd.exe (this command is entered as a single line).  
   
-```  
+```console  
 appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']  
 ```  
   
@@ -42,7 +42,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
 ## Enabling an Application to Use Non-HTTP Protocols  
  You can enable or disable individual network protocolsat the application level. The following command illustrates how to enable both the HTTP and net.tcp protocols for an application that runs in the `Default Web Site`.  
   
-```  
+```console  
 appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp  
 ```  
   
@@ -79,7 +79,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
   
  If you attempt to activate a service using WAS for Non-HTTP activation and you have not installed and configured WAS you may see the following error:  
   
-```Output  
+```output  
 [InvalidOperationException: The protocol 'net.tcp' does not have an implementation of HostedTransportConfiguration type registered.]   System.ServiceModel.AsyncResult.End(IAsyncResult result) +15778592   System.ServiceModel.Activation.HostedHttpRequestAsyncResult.End(IAsyncResult result) +15698937   System.ServiceModel.Activation.HostedHttpRequestAsyncResult.ExecuteSynchronous(HttpApplication context, Boolean flowContext) +265   System.ServiceModel.Activation.HttpModule.ProcessRequest(Object sender, EventArgs e) +227   System.Web.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +80   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously) +171  
 ```  
   

@@ -1,11 +1,12 @@
 ---
-title: Unit testing F# libraries in .NET Core using dotnet test and MSTest
+title: Unit testing F# in .NET Core with dotnet test and MSTest
 description: Learn unit test concepts for F# in .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and MSTest.
 author: billwagner
 ms.author: wiwagn
 ms.date: 08/30/2017
 dev_langs: 
   - "fsharp"
+ms.custom: "seodec18"
 ---
 # Unit testing F# libraries in .NET Core using dotnet test and MSTest
 

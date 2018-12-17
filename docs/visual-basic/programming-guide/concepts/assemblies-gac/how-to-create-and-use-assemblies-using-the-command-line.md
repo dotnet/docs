@@ -2,8 +2,6 @@
 title: "How to: Create and Use Assemblies Using the Command Line (Visual Basic)"
 ms.date: 03/14/2018
 ms.assetid: 229ff9fb-1bd1-403b-946b-526104864c60
-author: rpetrusha
-ms.author: ronpet
 ---
 # How to: Create and Use Assemblies Using the Command Line (Visual Basic)
 An assembly, or a dynamic linking library (DLL), is linked to your program at run time. To demonstrate building and using a DLL, consider the following scenario:  

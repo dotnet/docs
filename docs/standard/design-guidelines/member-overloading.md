@@ -1,6 +1,6 @@
 ---
 title: "Member Overloading"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "default arguments"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "overloaded members"
   - "signatures, members"
 ms.assetid: 964ba19e-8b94-4b5b-b1e3-5a0b531a0bb1
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Member Overloading
 Member overloading means creating two or more members on the same type that differ only in the number or type of parameters but have the same name. For example, in the following, the `WriteLine` method is overloaded:  

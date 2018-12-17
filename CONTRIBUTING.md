@@ -69,6 +69,8 @@ Be sure to follow the proper Markdown syntax. For more information, see the [sty
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
+Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description. That way, the issue is automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
@@ -85,9 +87,9 @@ On a certain cadence, we push all commits from master branch into the live branc
 
 We make the following distinction for code that exists in our repository:
 
-- samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
+- Samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
 
-- snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
+- Snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
 Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository. We are working toward a model where our samples folder structure matches our docs folder structure. Standards that we follow are:
 

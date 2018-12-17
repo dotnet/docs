@@ -27,5 +27,6 @@ You install Roslyn-based analyzers as NuGet packages in your project. The config
 
 The following analyzers are covered in this section:
 
-[API Analyzer](api-analyzer.md): This analyzer examines your code for potential compatibility risks or uses of deprecated APIs.    
-[Framework Analyzer](framework-analyzer.md): This analyzer examines your code to ensure it follows the guidelines for .NET Framework applications. These rules include several security-based recommendations.
+* [API Analyzer](api-analyzer.md): This analyzer examines your code for potential compatibility risks or uses of deprecated APIs.    
+* [Framework Analyzer](framework-analyzer.md): This analyzer examines your code to ensure it follows the guidelines for .NET Framework applications. These rules include several security-based recommendations.
+* [.NET Portability Analyzer](portability-analyzer.md): This analyzer examines your code to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac. 

@@ -1,25 +1,27 @@
 ---
 title: Namespaces (F#)
 description: Learn how an F# namespace allows you to organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.
-ms.date: 04/24/2017
+ms.date: 12/08/2018
 ---
 # Namespaces
 
-A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.
+A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of F# program elements. Namespaces are typically top-level elements in F# files.
 
 ## Syntax
 
 ```fsharp
-namespace [parent-namespaces.]identifier
+namespace [rec] [parent-namespaces.]identifier
 ```
 
 ## Remarks
 
-If you want to put code in a namespace, the first declaration in the file must declare the namespace. The contents of the entire file then become part of the namespace.
+If you want to put code in a namespace, the first declaration in the file must declare the namespace. The contents of the entire file then become part of the namespace, provided no other namespaces declaration exists further in the file. If that is the case, then all code up until the next namespace declaration is considered to be within the first namespace.
 
 Namespaces cannot directly contain values and functions. Instead, values and functions must be included in modules, and modules are included in namespaces. Namespaces can contain types, modules.
 
-Namespaces can be declared explicitly with the namespace keyword, or implicitly when declaring a module. To declare a namespace explicitly, use the namespace keyword followed by the namespace name. The following example shows a code file that declares a namespace Widgets with a type and a module included in that namespace.
+XML doc comments can be declared above a namespace, but they're ignored. Compiler directives can also be declared above a namespace.
+
+Namespaces can be declared explicitly with the namespace keyword, or implicitly when declaring a module. To declare a namespace explicitly, use the namespace keyword followed by the namespace name. The following example shows a code file that declares a namespace `Widgets` with a type and a module included in that namespace.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6406.fs)]
 
@@ -68,7 +70,7 @@ You can also use global to reference the top-level .NET namespace, for example, 
 
 ## Recursive namespaces
 
-F# 4.1 introduces the notion of namespaces which allow for all contained code to be mutually recursive.  This is done via `namespace rec`.  Use of `namespace rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
+Namespaces can also be declared as recursive to allow for all contained code to be mutually recursive.  This is done via `namespace rec`. Use of `namespace rec` can alleviate some pains in not being able to write mutually referential code between types and modules. The following is an example of this:
 
 ```fsharp
 namespace rec MutualReferences
@@ -109,9 +111,9 @@ module BananaHelpers =
         | Down -> b |> peelSides
 ```
 
-Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other.  This would not be possible to express in F# if you removed the `rec` keyword from the `MutualReferences` namespace.
+Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other. This wouldn't be possible to express in F# if you removed the `rec` keyword from the `MutualReferences` namespace.
 
-This feature is also available for top-level [Modules](modules.md) in F# 4.1 or higher.
+This feature is also available for top-level [Modules](modules.md).
 
 ## See also
 

@@ -1,6 +1,5 @@
 ---
 title: Null Values
-ms.custom: seodec18
 description: Learn how the null value is used in the F# programming language.
 ms.date: 05/16/2016
 ---

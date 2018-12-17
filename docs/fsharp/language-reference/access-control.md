@@ -1,6 +1,5 @@
 ---
 title: Access Control
-ms.custom: seodec18
 description: Learn how to control access to programming elements, such as types, methods, and functions, in the F# programming language.
 ms.date: 05/16/2016
 ---

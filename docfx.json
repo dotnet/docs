@@ -215,6 +215,10 @@
         "docs/core/tools/**.md": ".NET Core CLI",
         "docs/core/tutorials/**.md": ".NET Core",
         "docs/core/versions/**.md": ".NET Core"
+      },
+      "ms.custom": {
+        "docs/fsharp/tutorials/**/**.md": "seodec18",
+        "docs/fsharp/language-reference/**/**.md": "seodec18"
       }
     },
     "dest": "_site",

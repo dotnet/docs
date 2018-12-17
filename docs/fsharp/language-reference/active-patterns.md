@@ -1,6 +1,5 @@
 ---
 title: Active Patterns
-ms.custom: seodec18
 description: Learn how to use active patterns to define named partitions that subdivide input data in the F# programming language.
 ms.date: 05/16/2016
 ---

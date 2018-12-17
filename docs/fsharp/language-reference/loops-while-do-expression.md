@@ -1,6 +1,5 @@
 ---
 title: "Loops: while...do Expression"
-ms.custom: seodec18
 description: See how the while...do expression is used to perform iterative execution (looping) while a specified test condition is true.
 ms.date: 05/16/2016
 ---

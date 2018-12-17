@@ -1,6 +1,5 @@
 ---
 title: Basic Types
-ms.custom: seodec18
 description: Discover the fundamental basic types that are used in the F# language.
 ms.date: 07/09/2018
 ---

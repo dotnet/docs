@@ -1,6 +1,5 @@
 ---
 title: Nullable Operators
-ms.custom: seodec18
 description: Learn about the nullable operators that are available in the F# programming language.
 ms.date: 05/16/2016
 ---

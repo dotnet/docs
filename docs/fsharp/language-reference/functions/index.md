@@ -1,6 +1,5 @@
 ---
 title: Functions
-ms.custom: seodec18
 description: Learn about functions in F# and how F# supports common functional programming constructs.
 ms.date: 05/16/2016
 ---

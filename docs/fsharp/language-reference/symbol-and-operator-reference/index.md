@@ -1,6 +1,5 @@
 ---
 title: Symbol and Operator Reference
-ms.custom: seodec18
 description: Learn about the symbols and operators that are used in the F# programming language.
 ms.date: 04/04/2018
 ---

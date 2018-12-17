@@ -1,6 +1,5 @@
 ---
 title: Unit Type
-ms.custom: seodec18
 description: Learn how the F# 'unit' type is often used to hold the place where a value is required by the language syntax when no value is needed or desired.
 ms.date: 05/16/2016
 ---

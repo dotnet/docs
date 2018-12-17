@@ -1,6 +1,5 @@
 ---
 title: Casting and Conversions
-ms.custom: seodec18
 description: Learn how the F# programming language provides conversion operators for arithmetic conversions between various primitive types.
 ms.date: 05/16/2016
 ---

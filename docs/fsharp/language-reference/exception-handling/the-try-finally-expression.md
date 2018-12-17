@@ -1,6 +1,5 @@
 ---
 title: "Exceptions: The try...finally Expression"
-ms.custom: seodec18
 description: Learn how the F# 'try...finally' expression enables you to execute clean-up code even if a block of code throws an exception.
 ms.date: 05/16/2016
 ---

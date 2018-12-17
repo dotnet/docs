@@ -1,6 +1,5 @@
 ---
 title: Records
-ms.custom: seodec18
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
 ms.date: 05/16/2016
 ---

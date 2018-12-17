@@ -1,6 +1,5 @@
 ---
 title: Verbose Syntax
-ms.custom: seodec18
 description: Learn the difference between verbose and lightweight syntax in the F# programming language.
 ms.date: 05/16/2016
 ---

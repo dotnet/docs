@@ -1,6 +1,5 @@
 ---
 title: Source Line, File, and Path Identifiers
-ms.custom: seodec18
 description: Learn how to use built-in F# identifier values that enable you to access the source line number, directory, and file name in your code.
 ms.date: 05/16/2016
 ---

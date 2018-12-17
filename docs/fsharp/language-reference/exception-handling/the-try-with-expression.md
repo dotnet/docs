@@ -1,6 +1,5 @@
 ---
 title: "Exceptions: The try...with Expression"
-ms.custom: seodec18
 description: Learn how to use the F# 'try...with' expression for exception handling.
 ms.date: 05/16/2016
 ---

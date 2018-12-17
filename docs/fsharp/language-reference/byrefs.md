@@ -1,6 +1,5 @@
 ---
 title: Byrefs
-ms.custom: seodec18
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
 ms.date: 09/02/2018
 ---

@@ -1,6 +1,5 @@
 ---
 title: Modules
-ms.custom: seodec18
 description: Learn how an F# module is a grouping of F# code, such as values, types, and function values, in an F# program.
 ms.date: 04/24/2017
 ---

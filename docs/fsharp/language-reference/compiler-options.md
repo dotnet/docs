@@ -1,6 +1,5 @@
 ---
 title: Compiler Options
-ms.custom: seodec18
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
 ms.date: 12/10/2018
 ---

@@ -1,6 +1,5 @@
 ---
 title: "Lambda Expressions: The fun Keyword"
-ms.custom: seodec18
 description: Learn how to use the F# 'fun' keyword to define a lambda expression, which is an anonymous function.
 ms.date: 05/16/2016
 ---

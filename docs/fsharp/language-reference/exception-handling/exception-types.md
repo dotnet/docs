@@ -1,6 +1,5 @@
 ---
 title: Exception Types
-ms.custom: seodec18
 description: Learn how to define and use F# exception types.
 ms.date: 05/16/2016
 ---

@@ -1,6 +1,5 @@
 ---
 title: Members
-ms.custom: seodec18
 description: Learn about object members in the F# programming language.
 ms.date: 05/16/2016
 ---

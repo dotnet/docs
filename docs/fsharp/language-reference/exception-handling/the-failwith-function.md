@@ -1,6 +1,5 @@
 ---
 title: "Exceptions: The failwith Function"
-ms.custom: seodec18
 description: Learn how the 'failwith' function generates an F# exception.
 ms.date: 05/16/2016
 ---

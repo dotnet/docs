@@ -1,6 +1,5 @@
 ---
 title: Bitwise Operators
-ms.custom: seodec18
 description: Learn about the bitwise operators that are available in the F# programming language.
 ms.date: 07/20/2018
 ---

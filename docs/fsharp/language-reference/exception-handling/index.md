@@ -1,6 +1,5 @@
 ---
 title: Exception Handling
-ms.custom: seodec18
 description: Learn the basics of exception handling in F# and find links to exception handling expressions and functions.
 ms.date: 05/16/2016
 ---

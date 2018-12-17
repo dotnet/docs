@@ -1,6 +1,5 @@
 ---
 title: "Exceptions: The invalidArg Function"
-ms.custom: seodec18
 description: Learn how the F# 'invalidArg' function generates an argument exception.
 ms.date: 05/16/2016
 ---

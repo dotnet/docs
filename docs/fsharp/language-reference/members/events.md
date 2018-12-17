@@ -1,6 +1,5 @@
 ---
 title: Events
-ms.custom: seodec18
 description: Learn how F# events enable you to associate function calls with user actions, which are important in GUI programming.
 ms.date: 05/16/2016
 ---

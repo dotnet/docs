@@ -1,6 +1,5 @@
 ---
 title: Indexed Properties
-ms.custom: seodec18
 description: Learn about indexed properties in F#, which allow for array-like access to ordered data.
 ms.date: 10/17/2018
 ---

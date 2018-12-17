@@ -1,6 +1,5 @@
 ---
 title: Type Abbreviations
-ms.custom: seodec18
 description: Learn about F# type abbreviations to give a type a more meaningful name in order to make code easier to read.
 ms.date: 05/16/2016
 ---

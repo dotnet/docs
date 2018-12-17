@@ -1,6 +1,5 @@
 ---
 title: Match expressions
-ms.custom: seodec18
 description: Learn how the F# match expression provides branching control that is based on the comparison of an expression with a set of patterns.
 ms.date: 04/19/2018
 ---

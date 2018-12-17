@@ -1,6 +1,5 @@
 ---
 title: Strings
-ms.custom: seodec18
 description: Learn how the F# 'string' type represents immutable text as a sequence of Unicode characters.
 ms.date: 05/16/2016
 ---

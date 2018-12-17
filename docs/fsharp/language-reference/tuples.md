@@ -1,6 +1,5 @@
 ---
 title: Tuples
-ms.custom: seodec18
 description: Learn about the F# tuple, a grouping of unnamed but ordered values, possibly of different types.
 ms.date: 05/16/2016
 ---

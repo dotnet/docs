@@ -91,7 +91,8 @@
         <param name="returnType">Out parameter returning a string containing the return type of the function named in the input, or the empty string if the return type was missing or the input string was not well formed.</param>
         <param name="offset">Unsigned long integer giving the IL offset from the input string, or zero if there was no IL offset or the string was not well formed.</param>
         <summary>When implemented in a class, parses strings and returns the parsed-out information. This method is typically called by a debugger that needs to parse information about a breakpoint that is represented as a <see langword="string" />. The debugger might have a breakpoint typed in by the user in the form *functionname-arguments-ILoffset*. A named breakpoint string can have a complex format, for example, <c>F.B(C.D[], int, arg : double ) : C.Abc + 123.</c> The parameter list is optional, as is the IL offset.</summary>
-        <returns><see langword="true" /> if the named breakpoint is successfully parsed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the named breakpoint is successfully parsed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

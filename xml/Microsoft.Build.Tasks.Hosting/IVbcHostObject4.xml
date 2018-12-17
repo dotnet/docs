@@ -60,7 +60,8 @@
       <Docs>
         <param name="VBRuntime">The name of the Visual Basic Runtime Library.</param>
         <summary>Defines an interface for the Vbc task to communicate with the IDE. In particular, the Vbc task will delegate the actual compilation to the IDE, rather than shelling out to the command line compiler.</summary>
-        <returns><see langword="true" /> if the method succeeds; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the method succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

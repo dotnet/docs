@@ -457,7 +457,8 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates if the type of the entities contained in this <see cref="T:System.Data.Linq.ITable" /> instance has a primary key.</summary>
-        <value><see langword="true" /> if the entity type does not have a primary key; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the entity type does not have a primary key; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -154,7 +154,8 @@
       <Docs>
         <param name="error">The <see cref="T:Microsoft.JScript.Vsa.IJSVsaError" /> object representing the offending error.</param>
         <summary>Notifies the host about how to respond to compiler errors encountered by the script engine.</summary>
-        <returns><see langword="true" /> if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.JScript.Vsa.IJSVsaSite" /> object; <see langword="false" /> if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
+        <returns>
+          <see langword="true" /> if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.JScript.Vsa.IJSVsaSite" /> object; <see langword="false" /> if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

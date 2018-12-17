@@ -61,7 +61,8 @@
       <Docs>
         <param name="moduleAssemblyName">A string representing the name of the module file.</param>
         <summary>Specifies the name of the module file.</summary>
-        <returns><see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +88,8 @@
         <param name="optionInfer">
           <see langword="true" /> to require the explicit declaration of variable types; otherwise, <see langword="false" />.</param>
         <summary>Specifies a value indicating whether variable types must be explicitly declared.</summary>
-        <returns><see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the method was successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

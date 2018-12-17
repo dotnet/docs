@@ -353,7 +353,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that determines how dependencies are determined, and whether or not a dependency is copied locally.</summary>
-        <value><see langword="true" /> if, when determining if a dependency should be copied locally, one of the checks done is to see if the parent reference in the project file has the Private metadata set. If that metadata is set, we will use that for the dependency as well.  
+        <value>
+          <see langword="true" /> if, when determining if a dependency should be copied locally, one of the checks done is to see if the parent reference in the project file has the Private metadata set. If that metadata is set, we will use that for the dependency as well.  
   
  If the metadata is not set then the dependency will go through the same checks as the parent reference. One of these checks is to see if the reference is in the GAC. If a reference is in the GAC then we will not copy it locally as it is assumed it will be in the gac on the target machine as well. However this only applies to that specific reference and not its dependencies.  
   
@@ -829,7 +830,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to ignore the framework attribute when checking if an assembly is compatible with the targeted framework.</summary>
-        <value><see langword="true" /> to ignore the framework attribute; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> to ignore the framework attribute; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -851,7 +853,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to ignore the version information on the framework assembly and actually resolve the framework assembly from the currently targeted framework. The flag applies if the primary reference is a framework assembly.</summary>
-        <value><see langword="true" /> to ignore the version information; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> to ignore the version information; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

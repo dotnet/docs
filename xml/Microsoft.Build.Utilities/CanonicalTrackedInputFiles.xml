@@ -294,7 +294,8 @@
       <Docs>
         <param name="fileName">Full path of the file to test</param>
         <summary>Tests if the specified file is excluded from tracked dependency checking.</summary>
-        <returns><see langword="true" /> if the file is excluded; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the file is excluded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

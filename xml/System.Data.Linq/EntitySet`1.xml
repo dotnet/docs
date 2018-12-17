@@ -424,7 +424,8 @@ customer.Orders.CopyTo(orderArray, 0)
       </ReturnValue>
       <Docs>
         <summary>Specifies whether the <see cref="T:System.Data.Linq.EntitySet`1" /> has loaded or assigned a value.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Data.Linq.EntitySet`1" /> has either loaded or assigned a value; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.Linq.EntitySet`1" /> has either loaded or assigned a value; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

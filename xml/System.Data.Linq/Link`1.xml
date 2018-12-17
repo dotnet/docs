@@ -171,7 +171,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that specifies whether the source has a value.</summary>
-        <value><see langword="true" /> if the source has an assigned or loaded value (including null); otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the source has an assigned or loaded value (including null); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

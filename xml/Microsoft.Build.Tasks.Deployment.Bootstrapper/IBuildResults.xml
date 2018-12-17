@@ -150,7 +150,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the bootstrapper build was successful.</summary>
-        <value><see langword="true" /> if the bootstrapper build was successful; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the bootstrapper build was successful; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

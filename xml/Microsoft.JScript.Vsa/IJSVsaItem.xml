@@ -71,7 +71,8 @@
       </ReturnValue>
       <Docs>
         <summary>Returns a value indicating whether the current in-memory representation of the item differs from the persisted representation.</summary>
-        <value><see langword="true" /> if the item is dirty, and thus requires saving; <see langword="false" /> if the item is not dirty.</value>
+        <value>
+          <see langword="true" /> if the item is dirty, and thus requires saving; <see langword="false" /> if the item is not dirty.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

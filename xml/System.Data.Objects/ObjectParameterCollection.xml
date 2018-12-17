@@ -168,7 +168,8 @@
       <Docs>
         <param name="parameter">The <see cref="T:System.Data.Objects.ObjectParameter" /> to find in the collection.</param>
         <summary>Checks for the existence of a specified <see cref="T:System.Data.Objects.ObjectParameter" /> in the collection by reference.</summary>
-        <returns><see langword="true" /> if the parameter object was found in the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the parameter object was found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -202,7 +203,8 @@
       <Docs>
         <param name="name">The name of the parameter to look for in the collection. This name should not include the "\@" parameter marker that is used in the Entity SQL statements, only the actual name.</param>
         <summary>Determines whether an <see cref="T:System.Data.Objects.ObjectParameter" /> with the specified name is in the collection.</summary>
-        <returns><see langword="true" /> if a parameter with the specified name was found in the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if a parameter with the specified name was found in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -342,7 +344,8 @@
       <Docs>
         <param name="parameter">An object to remove from the collection.</param>
         <summary>Removes an instance of an <see cref="T:System.Data.Objects.ObjectParameter" /> from the collection by reference if it exists in the collection.</summary>
-        <returns><see langword="true" /> if the parameter object was found and removed from the collection; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the parameter object was found and removed from the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

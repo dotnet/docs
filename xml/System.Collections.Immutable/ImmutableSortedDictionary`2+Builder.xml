@@ -769,7 +769,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
-        <value><see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -938,7 +939,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IDictionary" /> object has a fixed size.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -965,7 +967,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1256,6 +1259,36 @@
       <Docs>
         <summary>Gets or sets the value comparer.</summary>
         <value>The value comparer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueRef">
+      <MemberSignature Language="C#" Value="public TValue&amp; ValueRef (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance TValue&amp; modreq(System.Runtime.InteropServices.InAttribute) ValueRef(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedDictionary`2.Builder.ValueRef(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValueRef (key As TKey) As TValue&amp;" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue&amp; ^ ValueRef(TKey key);" />
+      <MemberSignature Language="F#" Value="member this.ValueRef : 'Key -&gt; TValue&amp;" Usage="builder.ValueRef key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>TValue</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="netcore-2.1">
+            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

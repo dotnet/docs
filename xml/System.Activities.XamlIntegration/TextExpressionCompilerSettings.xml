@@ -137,7 +137,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets whether the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> is for implementation.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> is for implementation; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> is for implementation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

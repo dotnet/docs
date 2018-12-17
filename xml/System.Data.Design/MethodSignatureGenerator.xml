@@ -219,7 +219,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the signature generated needs to return a <see cref="T:System.Data.DataTable" /> object.</summary>
-        <value><see langword="true" /> if the signature generated needs to return a data table; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the signature generated needs to return a data table; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

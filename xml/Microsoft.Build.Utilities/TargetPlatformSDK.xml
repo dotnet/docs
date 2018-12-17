@@ -80,7 +80,8 @@
       <Docs>
         <param name="other">Target platform SDK to compare to this element.</param>
         <summary>Ensures equality between target platform SDKs.</summary>
-        <returns><see langword="true" /> if items are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if items are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +106,8 @@
       <Docs>
         <param name="obj">Object to compare to this element.</param>
         <summary>Ensures equality between target platform SDK and object.</summary>
-        <returns><see langword="true" /> if items are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if items are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

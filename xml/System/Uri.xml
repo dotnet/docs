@@ -2489,7 +2489,8 @@ If you used an escaped string to construct this instance (for example, "http://[
       <Docs>
         <param name="character">The <see cref="T:System.Char" /> to test.</param>
         <summary>Gets whether a character is invalid in a file system name.</summary>
-        <returns><see langword="true" /> if the specified character is invalid; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the specified character is invalid; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2751,7 +2752,8 @@ If you used an escaped string to construct this instance (for example, "http://[
       <Docs>
         <param name="character">The character to validate.</param>
         <summary>Determines whether a specified character is a valid hexadecimal digit.</summary>
-        <returns><see langword="true" /> if the character is a valid hexadecimal digit; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the character is a valid hexadecimal digit; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -90,7 +90,8 @@
       <Parameters />
       <Docs>
         <summary>Causes the script engine to compile the existing source state.</summary>
-        <returns><see langword="true" /> on successful compilation, indicating that the <see cref="M:Microsoft.Vsa.IVsaEngine.Run" /> method can be called on the newly compiled assembly. <see langword="false" /> if the compilation failed.</returns>
+        <returns>
+          <see langword="true" /> on successful compilation, indicating that the <see cref="M:Microsoft.Vsa.IVsaEngine.Run" /> method can be called on the newly compiled assembly. <see langword="false" /> if the compilation failed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -204,7 +205,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the script engine is set to produce debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called.</summary>
-        <value><see langword="true" /> if the script engine is set to produce debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the script engine is set to produce debug information when the <see cref="M:Microsoft.Vsa.IVsaEngine.Compile" /> method is called; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,7 +228,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the script engine's source state has changed since the last save operation, or since the script engine was originally loaded.</summary>
-        <value><see langword="true" /> if the script engine is marked as modified (that is, "dirty"); otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the script engine is marked as modified (that is, "dirty"); otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,7 +251,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the script engine is currently in run mode.</summary>
-        <value><see langword="true" /> if the script engine is running; otherwise, <see langword="false" />. The default value for this property is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the script engine is running; otherwise, <see langword="false" />. The default value for this property is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +278,8 @@
       <Docs>
         <param name="identifier">A string value provided as identifier.</param>
         <summary>Checks whether the supplied identifier is valid for the script engine.</summary>
-        <returns><see langword="true" /> if the identifier is valid; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the identifier is valid; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

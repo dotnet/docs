@@ -65,7 +65,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a switch the specifies whether GetReferenceAssemblyPaths performs simple checks to ensure that certain runtime frameworks are installed depending on the target framework.</summary>
-        <value><see langword="true" /> if GetReferenceAssemblyPaths should not perform these simple checks; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if GetReferenceAssemblyPaths should not perform these simple checks; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,7 +88,8 @@
       <Parameters />
       <Docs>
         <summary>If the target framework moniker is set, generates the correct Paths.</summary>
-        <returns><see langword="true" /> if paths were generated; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if paths were generated; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

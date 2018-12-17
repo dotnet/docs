@@ -261,7 +261,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether command line echoing is turned off.</summary>
-        <value><see langword="true" /> if command line echo is off; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if command line echo is off; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1514,7 +1515,8 @@ abstract class CustomToolTask : ToolTask
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the tool task will create a batch file for the command-line and execute that using the command-processor, rather than executing the command directly.</summary>
-        <value><see langword="true" /> if the tool task will create a batch file for the command-line and execute that using the command-processor; <see langword="false" /> if the tool task will execute the command directly.</value>
+        <value>
+          <see langword="true" /> if the tool task will create a batch file for the command-line and execute that using the command-processor; <see langword="false" /> if the tool task will execute the command directly.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1574,7 +1576,8 @@ abstract class CustomToolTask : ToolTask
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the task will yield the node during tool execution.</summary>
-        <value><see langword="true" /> if the task will yield the node during tool execution; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the task will yield the node during tool execution; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

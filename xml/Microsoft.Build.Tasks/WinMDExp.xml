@@ -277,7 +277,8 @@
       <Parameters />
       <Docs>
         <summary>Returns a value that indicates whether task execution is necessary. Executed after ValidateParameters.</summary>
-        <returns><see langword="true" /> to skip task execution; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> to skip task execution; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,7 +362,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to treat warnings as errors.</summary>
-        <value><see langword="true" /> if warnings should be treated as errors; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if warnings should be treated as errors; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,7 +384,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether to use UTF-8 output stream encoding.</summary>
-        <value><see langword="true" /> if UTF-8 output stream encoding should be used; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if UTF-8 output stream encoding should be used; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,7 +407,8 @@
       <Parameters />
       <Docs>
         <summary>Validates parameters, logs errors and warnings, and returns <see langword="true" /> if Execute should proceed.</summary>
-        <returns><see langword="true" /> if execute should proceed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if execute should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

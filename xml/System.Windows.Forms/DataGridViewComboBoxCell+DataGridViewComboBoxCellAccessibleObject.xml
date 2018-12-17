@@ -12,6 +12,11 @@
     <BaseTypeName>System.Windows.Forms.DataGridViewCell+DataGridViewCellAccessibleObject</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.8">
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the accessibility object for the current <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> object.</summary>
     <remarks>To be added.</remarks>

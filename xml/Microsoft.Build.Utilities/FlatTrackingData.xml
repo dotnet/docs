@@ -326,7 +326,8 @@
         <param name="readTLogNames">The array of read tlogs</param>
         <param name="writeTLogNames">The array of write tlogs</param>
         <summary>Checks if the tracking data indicates that everything is up to date according to UpToDateCheckType.</summary>
-        <returns><see langword="true" /> if everything is up to date; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if everything is up to date; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -363,7 +364,8 @@
         <param name="inputs">FlatTrackingData structure containing the inputs</param>
         <param name="outputs">FlatTrackingData structure containing the outputs</param>
         <summary>Checks if state is up-to-date state according to the tracking data and the UpToDateCheckType.</summary>
-        <returns><see langword="true" /> if everything is up to date; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if everything is up to date; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -715,7 +717,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether files in the TLog that no longer exist should be skipped or recorded.</summary>
-        <value><see langword="true" /> to skip missing files; <see langword="false" /> to record them.</value>
+        <value>
+          <see langword="true" /> to skip missing files; <see langword="false" /> to record them.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,7 +776,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether all the TLogs that were passed are available on disk.</summary>
-        <value><see langword="true" /> if all the TLogs that were passed are available on disk; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if all the TLogs that were passed are available on disk; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

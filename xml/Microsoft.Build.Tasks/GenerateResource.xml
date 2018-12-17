@@ -297,7 +297,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether tracked incremental build will be used.</summary>
-        <value><see langword="true" /> if incremental build is turned on; <see langword="false" /> if a rebuild will be forced.</value>
+        <value>
+          <see langword="true" /> if incremental build is turned on; <see langword="false" /> if a rebuild will be forced.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1002,7 +1003,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether file access patterns should be tracked.</summary>
-        <value><see langword="true" /> if file access patterns should be tracked; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if file access patterns should be tracked; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -463,7 +463,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether messages or warnings are logged.</summary>
-        <value><see langword="true" /> if messages and warnings are not logged; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if messages and warnings are not logged; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

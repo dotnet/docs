@@ -2426,5 +2426,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScaleArrowOffsetsIfNeeded">
+      <MemberSignature Language="C#" Value="protected static void ScaleArrowOffsetsIfNeeded (int dpi);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void ScaleArrowOffsetsIfNeeded(int32 dpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripRenderer.ScaleArrowOffsetsIfNeeded(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub ScaleArrowOffsetsIfNeeded (dpi As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void ScaleArrowOffsetsIfNeeded(int dpi);" />
+      <MemberSignature Language="F#" Value="static member ScaleArrowOffsetsIfNeeded : int -&gt; unit" Usage="System.Windows.Forms.ToolStripRenderer.ScaleArrowOffsetsIfNeeded dpi" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dpi" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dpi">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

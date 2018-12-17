@@ -160,7 +160,8 @@
       <Parameters />
       <Docs>
         <summary>Executes the move.</summary>
-        <returns><see langword="true" /> if the move is successful; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the move is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,7 +219,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a switch that selects whether files in the destination folder that have the read-only attribute set can be overwritten.</summary>
-        <value><see langword="true" /> if the files can be overwritten, otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the files can be overwritten, otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

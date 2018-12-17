@@ -60,7 +60,8 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a derived class, gets a value that indicates whether the object should be deleted when the association is set to <see langword="null" />.</summary>
-        <value><see langword="true" /> if the object is deleted when the association is set to <see langword="null" />; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the object is deleted when the association is set to <see langword="null" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,7 +112,8 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a derived class, gets a value that indicates whether the other type is the parent of this type.</summary>
-        <value><see langword="true" /> is the other type is the parent of this type; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> is the other type is the parent of this type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +135,8 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a derived class, gets a value that indicates whether the association represents a one-to-many relationship.</summary>
-        <value><see langword="true" /> if the association represents a one-to-many relationship; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the association represents a one-to-many relationship; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +158,8 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a derived class, gets a value that indicates whether the association can be <see langword="null" />.</summary>
-        <value><see langword="true" /> if the association can be <see langword="null" />; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the association can be <see langword="null" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +181,8 @@
       </ReturnValue>
       <Docs>
         <summary>When overridden in a derived class, gets a value that indicates whether the association is unique.</summary>
-        <value><see langword="true" /> if the association is unique; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the association is unique; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

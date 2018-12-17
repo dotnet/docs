@@ -157,7 +157,8 @@
       <Docs>
         <param name="error">The <see cref="T:Microsoft.Vsa.IVsaError" /> object representing the offending error.</param>
         <summary>Notifies the host about how to respond to compiler errors encountered by the script engine.</summary>
-        <returns><see langword="true" /> if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.Vsa.IVsaSite" /> object; <see langword="false" /> if the compiler is directed to stop reporting further errors to the IVsaSite object.</returns>
+        <returns>
+          <see langword="true" /> if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.Vsa.IVsaSite" /> object; <see langword="false" /> if the compiler is directed to stop reporting further errors to the IVsaSite object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

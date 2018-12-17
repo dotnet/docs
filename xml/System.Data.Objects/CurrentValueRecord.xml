@@ -787,7 +787,8 @@
       <Docs>
         <param name="ordinal">The ordinal of the field.</param>
         <summary>Returns a value that indicates whether the specified field is set to <see langword="null" />.</summary>
-        <returns><see langword="true" /> if the field is set to <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the field is set to <see langword="null" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -180,7 +180,8 @@
       <Docs>
         <param name="fileName">Full path of the file to test</param>
         <summary>Checks if the specified file is excluded from tracked dependencies.</summary>
-        <returns><see langword="true" /> if the file is excluded; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the file is excluded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +208,8 @@
         <param name="fileName">Full path of the file to test</param>
         <param name="path">The path that might contain the file.</param>
         <summary>Checks if the specified file is under the specified path</summary>
-        <returns><see langword="true" /> if the file is under the path; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the file is under the path; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -203,7 +203,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the event log is a classic event log. A classic event log is one that has its events defined in an .mc file instead of a manifest (.xml file) used by the event provider.</summary>
-        <value><see langword="true" /> if the event log is a classic log; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the event log is a classic log; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -227,7 +228,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the event log is enabled or disabled. An enabled log is one in which events can be logged, and a disabled log is one in which events cannot be logged.</summary>
-        <value><see langword="true" /> if the log is enabled; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the log is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

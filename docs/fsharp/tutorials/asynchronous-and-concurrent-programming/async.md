@@ -59,7 +59,7 @@ In the example, the `countFileBytes` function is of type `string -> Async<unit>`
 
 The `Async.Start` function is used to start the computation.
 
-Additionally, `Async.AwaitTask` is called in the `countFileBytes` function. This creates an `Async<'T>` that runs <xref:System.IO.File.ReadAllBytesAsync> (which returns a `Task<byte[]>`) and returns its result.
+Additionally, `Async.AwaitTask` is called in the `countFileBytes` function. This creates an `Async<'T>` that runs <xref:system.io.file.WriteAllBytesAsync%2A> (which returns a `Task<byte[]>`) and returns its result.
 
 This is a key difference with the C#/VB style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work very easily.
 
@@ -199,7 +199,7 @@ What to watch out for:
 
 ### Async.StartAsTask
 
-Executes a computation in the thread pool. Returns a <xref:System.Threading.Task%601> that will be completed in the corresponding state once the computation terminates (produces the result, throws exception or gets canceled). If no cancellation token is provided, then the default cancellation token is used.
+Executes a computation in the thread pool. Returns a <xref:System.Threading.Tasks.Task%601> that will be completed in the corresponding state once the computation terminates (produces the result, throws exception or gets canceled). If no cancellation token is provided, then the default cancellation token is used.
 
 Signature:
 
@@ -209,7 +209,7 @@ computation: Async<'T> * taskCreationOptions: ?TaskCreationOptions * cancellatio
 
 When to use:
 
-* When you need to call into a .NET API that expects a <xref:System.Threading.Task%601> to represent the result of an asynchronous computation
+* When you need to call into a .NET API that expects a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation
 
 What to watch out for:
 

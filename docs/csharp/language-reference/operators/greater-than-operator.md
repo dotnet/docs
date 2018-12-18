@@ -13,6 +13,9 @@ ms.assetid: 26d3cb69-9c0b-4cc5-858b-5be1abd6659d
 
 The "greater than" relational operator `>` returns `true` if its first operand is greater than its second operand, `false` otherwise. All numeric and enumeration types support the `>` operator. For operands of the same [enum](../keywords/enum.md) type, the corresponding values of the underlying integral type are compared.
 
+> [!NOTE]
+> For relational operators `==`, `>`, `<`, `>=`, and `<=`, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>) the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
+
 The following example demonstrates the usage of the `>` operator:
 
 [!code-csharp-interactive[greater than example](~/samples/snippets/csharp/language-reference/operators/GreaterAndLessOperatorsExamples.cs#Greater)]

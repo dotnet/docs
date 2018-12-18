@@ -1146,8 +1146,14 @@ The `LiveSetting` attached property gets or sets a value of type <xref:System.Wi
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Describes the ordinal location of this element within a set of elements that are considered to be siblings.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The `PositionInSet` attached property works in coordination with the <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> dependency property to describe the ordinal position of this element in the set.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="PositionInSetProperty">

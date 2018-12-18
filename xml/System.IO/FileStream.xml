@@ -1567,14 +1567,20 @@
         <Parameter Name="stateObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="numBytes">To be added.</param>
-        <param name="userCallback">To be added.</param>
-        <param name="stateObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="array">The buffer to read data into.</param>
+        <param name="offset">The byte offset in <paramref name="array" /> at which to begin reading.</param>
+        <param name="numBytes">The maximum number of bytes to read.</param>
+        <param name="userCallback">The method to be called when the asynchronous read operation is completed.</param>
+        <param name="stateObject">A user-provided object that distinguishes this particular asynchronous read request from other requests.</param>
+        <summary>Begins an asynchronous read operation. Consider using <see cref="M:System.IO.FileStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead.</summary>
+        <returns>An object that references the asynchronous read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The array length minus <paramref name="offset" /> is less than <paramref name="numBytes" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="numBytes" /> is negative.</exception>
+        <exception cref="T:System.IO.IOException">An asynchronous read was attempted past the end of the file.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginWrite">
@@ -1618,14 +1624,23 @@
         <Parameter Name="stateObject" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="offset">To be added.</param>
-        <param name="numBytes">To be added.</param>
-        <param name="userCallback">To be added.</param>
-        <param name="stateObject">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="array">The buffer containing data to write to the current stream.</param>
+        <param name="offset">The zero-based byte offset in <paramref name="array" /> at which to begin copying bytes to the current stream.</param>
+        <param name="numBytes">The maximum number of bytes to write.</param>
+        <param name="userCallback">The method to be called when the asynchronous write operation is completed.</param>
+        <param name="stateObject">A user-provided object that distinguishes this particular asynchronous write request from other requests.</param>
+        <summary>Begins an asynchronous write operation. Consider using <see cref="M:System.IO.FileStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" /> instead.</summary>
+        <returns>An object that references the asynchronous write.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> length minus <paramref name="offset" /> is less than <paramref name="numBytes" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> or <paramref name="numBytes" /> is negative.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support writing.</exception>
+        <exception cref="T:System.ObjectDisposedException">The stream is closed.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred. </exception>
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -1660,7 +1675,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current stream supports reading.</summary>
+        <summary>Gets a value that indicates whether the current stream supports reading.</summary>
         <value>
           <see langword="true" /> if the stream supports reading; <see langword="false" /> if the stream is closed or was opened with write-only access.</value>
         <remarks>
@@ -1719,7 +1734,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current stream supports seeking.</summary>
+        <summary>Gets a value that indicates whether the current stream supports seeking.</summary>
         <value>
           <see langword="true" /> if the stream supports seeking; <see langword="false" /> if the stream is closed or if the <see langword="FileStream" /> was constructed from an operating-system handle such as a pipe or output to the console.</value>
         <remarks>
@@ -1778,7 +1793,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current stream supports writing.</summary>
+        <summary>Gets a value that indicates whether the current stream supports writing.</summary>
         <value>
           <see langword="true" /> if the stream supports writing; <see langword="false" /> if the stream is closed or was opened with read-only access.</value>
         <remarks>
@@ -2458,7 +2473,7 @@ Closes the current stream and releases any resources (such as sockets and file h
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see langword="FileStream" /> was opened asynchronously or synchronously.</summary>
+        <summary>Gets a value that indicates whether the <see langword="FileStream" /> was opened asynchronously or synchronously.</summary>
         <value>
           <see langword="true" /> if the <see langword="FileStream" /> was opened asynchronously; otherwise, <see langword="false" />.</value>
         <remarks>

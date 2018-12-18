@@ -1448,9 +1448,11 @@
         <Parameter Name="keyValuePair" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyValuePair">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure representing the key and value to add to the <see cref="T:System.Collections.Generic.Dictionary`2" />.</param>
+        <summary>Adds the specified value to the <see cref="T:System.Collections.Generic.ICollection`1" /> with the specified key.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The key of <paramref name="keyValuePair" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Contains">
@@ -1487,9 +1489,9 @@
         <Parameter Name="keyValuePair" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyValuePair">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+        <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
+        <returns><see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1525,10 +1527,15 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" /> that is the destination of the <see cref="T:System.Collections.Generic.KeyValuePair`2" /> elements copied from the <see cref="T:System.Collections.Generic.ICollection`1" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.Generic.ICollection`1" /> to an array of type <see cref="T:System.Collections.Generic.KeyValuePair`2" />, starting at the specified array index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.</exception>
+        <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.ICollection`1" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly">
@@ -1563,8 +1570,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1602,9 +1609,9 @@
         <Parameter Name="keyValuePair" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyValuePair">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure representing the key and value to remove from the <see cref="T:System.Collections.Generic.Dictionary`2" />.</param>
+        <summary>Removes a key and value from the dictionary.</summary>
+        <returns><see langword="true" /> if the key and value represented by <paramref name="keyValuePair" /> is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if <paramref name="keyValuePair" /> is not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1714,8 +1721,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1893,7 +1900,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
         <value>
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>
@@ -2238,7 +2245,7 @@ finally {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IDictionary" /> has a fixed size.</summary>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IDictionary" /> has a fixed size.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> has a fixed size; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>
@@ -2287,7 +2294,7 @@ finally {
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.IDictionary" /> is read-only.</summary>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.IDictionary" /> is read-only.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.IDictionary" /> is read-only; otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>

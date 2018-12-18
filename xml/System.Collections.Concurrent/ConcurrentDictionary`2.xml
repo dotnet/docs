@@ -1104,8 +1104,8 @@
         <Parameter Name="keyValuePair" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyValuePair">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to add to the dictionary.</param>
+        <summary>Adds an item to the collection.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
@@ -1143,8 +1143,8 @@
         <Parameter Name="keyValuePair" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyValuePair">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="keyValuePair">The key to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
+        <summary>Gets whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
@@ -1181,9 +1181,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the <see cref="T:System.Collections.ICollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an array, starting at the specified array index.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
@@ -1219,8 +1219,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.ICollection" /> is read-only.</summary>
+        <value><see langword="true" /> if the <see cref="T:System.Collections.ICollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
@@ -1258,9 +1258,9 @@
         <Parameter Name="keyValuePair" Type="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="keyValuePair">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to remove.</param>
+        <summary>Removes the specified key/value pair from the collection.</summary>
+        <returns><see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns false if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
@@ -1299,10 +1299,14 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="key">The object to use as the key of the element to add.</param>
+        <param name="value">The object to use as the value of the element to add.</param>
+        <summary>Adds the specified key and value to the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</exception>
+        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
@@ -1339,10 +1343,13 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
+        <returns>
+          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
@@ -1495,7 +1502,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized with the SyncRoot.</summary>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized with the SyncRoot.</summary>
         <value>
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1628,7 +1635,7 @@
       </Parameters>
       <Docs>
         <param name="key">The key to locate in the <see cref="T:System.Collections.Generic.IDictionary`2" />.</param>
-        <summary>Gets whether the <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element with the specified key.</summary>
+        <summary>Gets a value that indicates the <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element with the specified key.</summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -1705,7 +1712,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.IDictionary`2" /> has a fixed size.</summary>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.Generic.IDictionary`2" /> has a fixed size.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> has a fixed size; otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1743,7 +1750,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</summary>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only.</summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only; otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>

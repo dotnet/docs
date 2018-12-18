@@ -283,8 +283,8 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> containing the number of elements in a collection. Read-only.</summary>
-        <value>Returns an <see langword="Integer" /> containing the number of elements in a collection. Read-only.</value>
+        <summary>Gets the number of elements in a collection.</summary>
+        <value>The number of elements in a collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -324,8 +324,8 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a reference to an enumerator object, which is used to iterate over a <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
-        <returns>Returns a reference to an enumerator object, which is used to iterate over a <see cref="T:Microsoft.VisualBasic.Collection" /> object.</returns>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -359,7 +359,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
+        <summary>Gets a specific element of a <see langword="Collection" /> object either by position or by key.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -383,9 +383,9 @@ Dim coll As New Microsoft.VisualBasic.Collection()
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">(A) A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
-        <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
-        <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
+        <param name="Index">A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
+        <summary>Gets a specific element of a <see langword="Collection" /> object either by position or by key.</summary>
+        <value>A specific element of a <see langword="Collection" /> object either by position or by key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -394,7 +394,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
   
  The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
   
-```  
+```vb
 MsgBox(CStr(customers.Item(1)))  
 MsgBox(CStr(customers(1)))  
 ```  
@@ -439,9 +439,9 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">(A) A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
-        <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
-        <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
+        <param name="Index">A numeric expression that specifies the position of an element of the collection. <paramref name="Index" /> must be a number from 1 through the value of the collection's <see cref="P:Microsoft.VisualBasic.Collection.Count" /> property. Or (B) An <see langword="Object" /> expression that specifies the position or key string of an element of the collection.</param>
+        <summary>Gets a specific element of a <see langword="Collection" /> object either by position or by key.</summary>
+        <value>A specific element of a <see langword="Collection" /> object either by position or by key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -450,7 +450,7 @@ MsgBox(CStr(customers(1)))
   
  The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
   
-```  
+```vb
 MsgBox(CStr(customers.Item(1)))  
 MsgBox(CStr(customers(1)))  
 ```  
@@ -490,8 +490,8 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="Key">A unique <see langword="String" /> expression that specifies a key string that can be used, instead of a positional index, to access an element of the collection. <paramref name="Key" /> must correspond to the <paramref name="Key" /> argument specified when the element was added to the collection.</param>
-        <summary>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</summary>
-        <value>Returns a specific element of a <see langword="Collection" /> object either by position or by key. Read-only.</value>
+        <summary>Gets a specific element of a <see langword="Collection" /> object either by position or by key.</summary>
+        <value>A specific element of a <see langword="Collection" /> object either by position or by key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -500,7 +500,7 @@ MsgBox(CStr(customers(1)))
   
  The `Item` property is the default property for a collection. Therefore, the following lines of code are equivalent.  
   
-```  
+```vb
 MsgBox(CStr(customers.Item(1)))  
 MsgBox(CStr(customers(1)))  
 ```  
@@ -648,7 +648,7 @@ MsgBox(CStr(customers(1)))
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:Microsoft.VisualBasic.Collection" /> object. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
         <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
-        <summary>Copies the elements of the <see cref="T:Microsoft.VisualBasic.Collection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index. Implements the <see cref="T:System.Collections.ICollection" /> interface.</summary>
+        <summary>Copies the elements of the <see cref="T:Microsoft.VisualBasic.Collection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -694,8 +694,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of items in this collection.</summary>
+        <value>The number of items in this collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,8 +717,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the <see cref="T:Microsoft.VisualBasic.Collection" /> object is synchronized (thread-safe).</summary>
+        <value><see langword="true" /> if access to the <see cref="T:Microsoft.VisualBasic.Collection" /> object is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -740,8 +740,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -768,7 +768,7 @@ MsgBox(CStr(customers(1)))
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that iterates through the collection. Implements the <see cref="T:System.Collections.ICollection" /> interface.</summary>
+        <summary>Gets an enumerator that iterates through the collection.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -823,9 +823,9 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
-        <param name="Item">To be added.</param>
-        <summary>Adds an item to the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <param name="value">The object to add to the collection.</param>
+        <param name="Item">The object to add to the collection.</param>
+        <summary>Adds an item to the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <returns>The position into which the new element was inserted.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -869,7 +869,7 @@ MsgBox(CStr(customers(1)))
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <summary>Removes all items from the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -905,7 +905,7 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
-        <summary>Determines whether the <see cref="T:Microsoft.VisualBasic.Collection" /> object contains a specific value. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <summary>Determines whether the <see cref="T:Microsoft.VisualBasic.Collection" /> object contains a specific value.</summary>
         <returns>Returns <see langword="True" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:Microsoft.VisualBasic.Collection" /> object; otherwise, <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -941,7 +941,7 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
-        <summary>Determines the index of a specific item in the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <summary>Determines the index of a specific item in the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -979,7 +979,7 @@ MsgBox(CStr(customers(1)))
       <Docs>
         <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
-        <summary>Inserts an item to the <see cref="T:Microsoft.VisualBasic.Collection" /> object at the specified index. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <summary>Inserts an item to the <see cref="T:Microsoft.VisualBasic.Collection" /> object at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1022,8 +1022,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:Microsoft.VisualBasic.Collection" /> object has a fixed size.</summary>
+        <value><see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Collection" /> object has a fixed size; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1045,8 +1045,8 @@ MsgBox(CStr(customers(1)))
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:Microsoft.VisualBasic.Collection" /> object is.</summary>
+        <returns><see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Collection" /> object is read-only; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1076,10 +1076,14 @@ MsgBox(CStr(customers(1)))
         <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <param name="Index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:Microsoft.VisualBasic.Collection" /> object is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Remove" ExplicitInterfaceMemberName="IListRemove">
@@ -1103,7 +1107,7 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
-        <summary>Removes the first occurrence of a specific object from the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <summary>Removes the first occurrence of a specific object from the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1143,7 +1147,7 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes the <see cref="T:Microsoft.VisualBasic.Collection" /> object item at the specified index. Implements the <see cref="T:System.Collections.IList" /> interface.</summary>
+        <summary>Removes the <see cref="T:Microsoft.VisualBasic.Collection" /> object item at the specified index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1187,7 +1191,7 @@ MsgBox(CStr(customers(1)))
       </Parameters>
       <Docs>
         <param name="sender">The object that initiated the callback.</param>
-        <summary>Runs after the entire <see cref="T:Microsoft.VisualBasic.Collection" /> object graph has been deserialized. Implements the <see cref="T:System.Runtime.Serialization.IDeserializationCallback" /> interface.</summary>
+        <summary>Runs after the entire <see cref="T:Microsoft.VisualBasic.Collection" /> object graph has been deserialized.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1231,7 +1235,7 @@ MsgBox(CStr(customers(1)))
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object containing the information required to serialize the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
         <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> object containing the source and destination of the serialized stream associated with the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</param>
-        <summary>Returns the data needed to serialize the <see cref="T:Microsoft.VisualBasic.Collection" /> object. Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface.</summary>
+        <summary>Returns the data needed to serialize the <see cref="T:Microsoft.VisualBasic.Collection" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

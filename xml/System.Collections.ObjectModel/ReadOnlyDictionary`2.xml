@@ -530,8 +530,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
+        <value>Always returns <see langword="true" /> to indicate the dictionary is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

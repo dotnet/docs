@@ -1,11 +1,11 @@
 ---
-title: Asynchronous programming
+title: Asynchronous programming - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: cartermp
 ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
+ms.custom: seodec18
 ---
-
 # Asynchronous programming
 
 If you have any I/O-bound needs (such as requesting data from a network or accessing a database), you'll want to utilize asynchronous programming.  You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
@@ -259,5 +259,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 ## Other Resources
 
 * [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
-* [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
+* [Asynchronous programming with async and await (C#)](./programming-guide/concepts/async/index.md)
 * Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) are a wonderful resource for async programming

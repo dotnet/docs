@@ -355,7 +355,8 @@ public Symbol FindMatchingSymbol(string name)
  This code doesn’t use LINQ extension methods, lambdas, or enumerators, and it incurs no allocations. There are no allocations because the compiler can see that the `symbols` collection is a <xref:System.Collections.Generic.List%601> and can bind the resulting enumerator (a structure) to a local variable with the right type to avoid boxing. The original version of this function was a great example of the expressive power of C# and the productivity of the .NET Framework. This new and more efficient version preserves those qualities without adding any complex code to maintain. 
   
 ### Async method caching  
- The next example shows a common problem when you try to use cached results in an [async](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) method. 
+
+The next example shows a common problem when you try to use cached results in an [async](../../csharp/programming-guide/concepts/async/index.md) method.
   
  **Example 6: caching in async methods**  
   

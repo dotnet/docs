@@ -329,10 +329,10 @@ Workflow tracking provides visibility into the status of workflow execution. The
 **Your guess is too high.**   
 **Please enter a number between 1 and 10**    
 
-    > [!NOTE]
-    >  This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).  
-  
-     Make a note of the workflow instance id, and play the game through to its completion.  
+> [!NOTE]
+>  This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).  
+
+Make a note of the workflow instance id, and play the game through to its completion.  
   
 4.  Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings). Note that in addition to the project executable files there are files with guid filenames. Identify the one that corresponds to the workflow instance id from the completed workflow in the previous step and open it in Notepad. The tracking information contains information similar to the following.  
   

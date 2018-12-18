@@ -64,7 +64,7 @@
       <Docs>
         <param name="other">The object to compare against.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> to the specified object.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />

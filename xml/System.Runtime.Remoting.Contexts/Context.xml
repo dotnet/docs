@@ -426,7 +426,7 @@
       <Docs>
         <param name="slot">The data slot that contains the data.</param>
         <summary>Retrieves the value from the specified slot on the current context.</summary>
-        <returns>Returns the data associated with <paramref name="slot" />.</returns>
+        <returns>The data associated with <paramref name="slot" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -460,7 +460,7 @@
       <Docs>
         <param name="name">The data slot name.</param>
         <summary>Looks up a named data slot.</summary>
-        <returns>Returns a local data slot.</returns>
+        <returns>A local data slot.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

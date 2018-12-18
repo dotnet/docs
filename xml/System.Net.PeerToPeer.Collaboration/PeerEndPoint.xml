@@ -301,7 +301,7 @@
       <Docs>
         <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance to test for equality.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance provided has matching data, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instance provided has matching data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">This <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
@@ -328,7 +328,7 @@
       <Docs>
         <param name="obj">The <see cref="T:System.Object" /> to test for equality.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to the specified <see cref="T:System.Object" />.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> is equal to the specified object instance, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> is equal to the specified object instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,7 +356,7 @@
         <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to compare.</param>
         <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> to compare.</param>
         <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> objects are considered equal.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instances provided have matching data, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> instances provided have matching data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

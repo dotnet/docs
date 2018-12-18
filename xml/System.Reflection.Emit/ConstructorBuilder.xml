@@ -82,7 +82,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.Emit.ConstructorBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +176,8 @@
         <ReturnType>System.Reflection.MethodAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the attributes for this constructor.</summary>
-        <value>Returns the attributes for this constructor.</value>
+        <summary>Gets the attributes for this constructor.</summary>
+        <value>The attributes for this constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -247,8 +247,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves a reference to the <see cref="T:System.Type" /> object for the type that declares this member.</summary>
-        <value>Returns the <see cref="T:System.Type" /> object for the type that declares this member.</value>
+        <summary>Gets a reference to the <see cref="T:System.Type" /> object for the type that declares this member.</summary>
+        <value>The type that declares this member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -299,7 +299,7 @@
         <param name="attributes">The attributes of the parameter.</param>
         <param name="strParamName">The name of the parameter. The name can be the null string.</param>
         <summary>Defines a parameter of this constructor.</summary>
-        <returns>Returns a <see langword="ParameterBuilder" /> object that represents the new parameter of this constructor.</returns>
+        <returns>An object that represents the new parameter of this constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -352,7 +352,7 @@
       <Docs>
         <param name="inherit">Controls inheritance of custom attributes from base classes. This parameter is ignored.</param>
         <summary>Returns all the custom attributes defined for this constructor.</summary>
-        <returns>Returns an array of objects representing all the custom attributes of the constructor represented by this <see cref="T:System.Reflection.Emit.ConstructorBuilder" /> instance.</returns>
+        <returns>An array of objects representing all the custom attributes of the constructor represented by this <see cref="T:System.Reflection.Emit.ConstructorBuilder" /> instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -397,7 +397,7 @@
         <param name="attributeType">The custom attribute type.</param>
         <param name="inherit">Controls inheritance of custom attributes from base classes. This parameter is ignored.</param>
         <summary>Returns the custom attributes identified by the given type.</summary>
-        <returns>Returns an array of type <see cref="T:System.Object" /> representing the attributes of this constructor.</returns>
+        <returns>An object array that represents the attributes of this constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -448,7 +448,7 @@
       <Parameters />
       <Docs>
         <summary>Gets an <see cref="T:System.Reflection.Emit.ILGenerator" /> for this constructor.</summary>
-        <returns>Returns an <see cref="T:System.Reflection.Emit.ILGenerator" /> object for this constructor.</returns>
+        <returns>An <see cref="T:System.Reflection.Emit.ILGenerator" /> object for this constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -625,7 +625,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the parameters of this constructor.</summary>
-        <returns>Returns an array of <see cref="T:System.Reflection.ParameterInfo" /> objects that represent the parameters of this constructor.</returns>
+        <returns>An array that represents the parameters of this constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -673,7 +673,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the <see cref="T:System.Reflection.Emit.MethodToken" /> that represents the token for this constructor.</summary>
-        <returns>Returns the <see cref="T:System.Reflection.Emit.MethodToken" /> of this constructor.</returns>
+        <returns>The <see cref="T:System.Reflection.Emit.MethodToken" /> of this constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -761,8 +761,8 @@
         <param name="binder">An object that enables the binding, coercion of argument types, invocation of members, and retrieval of <see langword="MemberInfo" /> objects using reflection. If binder is <see langword="null" />, the default binder is used. See <see cref="T:System.Reflection.Binder" />.</param>
         <param name="parameters">An argument list. This is an array of arguments with the same number, order, and type as the parameters of the constructor to be invoked. If there are no parameters this should be <see langword="null" />.</param>
         <param name="culture">An instance of <see cref="T:System.Globalization.CultureInfo" /> used to govern the coercion of types. If this is null, the <see cref="T:System.Globalization.CultureInfo" /> for the current thread is used. (For example, this is necessary to convert a <see cref="T:System.String" /> that represents 1000 to a <see cref="T:System.Double" /> value, since 1000 is represented differently by different cultures.)</param>
-        <summary>Invokes the constructor dynamically reflected by this instance on the given object, passing along the specified parameters, and under the constraints of the given binder.</summary>
-        <returns>Returns an <see cref="T:System.Object" /> that is the return value of the invoked constructor.</returns>
+        <summary>Dynamically invokes the constructor represented by this instance on the given object, passing along the specified parameters, and under the constraints of the given binder.</summary>
+        <returns>The value returned by the invoked constructor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -903,8 +903,8 @@
         <ReturnType>System.RuntimeMethodHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retrieves the internal handle for the method. Use this handle to access the underlying metadata handle.</summary>
-        <value>Returns the internal handle for the method. Use this handle to access the underlying metadata handle.</value>
+        <summary>Gets the internal handle for the method. Use this handle to access the underlying metadata handle.</summary>
+        <value>The internal handle for the method. Use this handle to access the underlying metadata handle.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is not supported on this class.</exception>
       </Docs>
@@ -928,8 +928,8 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the <see cref="T:System.Reflection.MethodImplAttributes" /> flags that specify the attributes of a method implementation.</summary>
+        <value>The method implementation flags.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -995,7 +995,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retrieves the name of this constructor.</summary>
-        <value>Returns the name of this constructor.</value>
+        <value>The name of this constructor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1035,7 +1035,7 @@
       </ReturnValue>
       <Docs>
         <summary>Holds a reference to the <see cref="T:System.Type" /> object from which this object was obtained.</summary>
-        <value>Returns the <see langword="Type" /> object from which this object was obtained.</value>
+        <value>The <see langword="Type" /> object from which this object was obtained.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1375,7 +1375,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retrieves the signature of the field in the form of a string.</summary>
-        <value>Returns the signature of the field.</value>
+        <value>The signature of the field.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1592,7 +1592,7 @@
       <Parameters />
       <Docs>
         <summary>Returns this <see cref="T:System.Reflection.Emit.ConstructorBuilder" /> instance as a <see cref="T:System.String" />.</summary>
-        <returns>Returns a <see cref="T:System.String" /> containing the name, attributes, and exceptions of this constructor, followed by the current Microsoft intermediate language (MSIL) stream.</returns>
+        <returns>A string containing the name, attributes, and exceptions of this constructor, followed by the current Microsoft intermediate language (MSIL) stream.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

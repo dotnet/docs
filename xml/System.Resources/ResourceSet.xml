@@ -417,7 +417,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the preferred resource reader class for this kind of <see cref="T:System.Resources.ResourceSet" />.</summary>
-        <returns>Returns the <see cref="T:System.Type" /> for the preferred resource reader for this kind of <see cref="T:System.Resources.ResourceSet" />.</returns>
+        <returns>The <see cref="T:System.Type" /> for the preferred resource reader for this kind of <see cref="T:System.Resources.ResourceSet" />.</returns>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>Derived classes of <see cref="T:System.Resources.ResourceSet" /> using their own resource reader should override <see cref="M:System.Resources.ResourceSet.GetDefaultReader" />, and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" />.</para>
@@ -455,7 +455,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the preferred resource writer class for this kind of <see cref="T:System.Resources.ResourceSet" />.</summary>
-        <returns>Returns the <see cref="T:System.Type" /> for the preferred resource writer for this kind of <see cref="T:System.Resources.ResourceSet" />.</returns>
+        <returns>The <see cref="T:System.Type" /> for the preferred resource writer for this kind of <see cref="T:System.Resources.ResourceSet" />.</returns>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>Derived classes of <see cref="T:System.Resources.ResourceSet" /> using their own resource reader should override <see cref="M:System.Resources.ResourceSet.GetDefaultReader" />, and <see cref="M:System.Resources.ResourceSet.GetDefaultWriter" />.</para>

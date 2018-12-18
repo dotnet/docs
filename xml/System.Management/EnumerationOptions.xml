@@ -159,7 +159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the block size for block operations. When enumerating through a collection, WMI will return results in groups of the specified size.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> value used for the block size in block operations.</value>
+        <value>The block size in block operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -236,7 +236,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether *direct access* to the WMI provider is requested for the specified class, without any regard to its super class or derived classes.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether *direct access* to the WMI provider is requested for the specified class.</value>
+        <value><see langword="true" /> if *direct access* to the WMI provider is requested for the specified class; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -279,7 +279,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether to the objects returned should have locatable information in them. This ensures that the system properties, such as **__PATH**, **__RELPATH**, and **__SERVER**, are non-NULL. This flag can only be used in queries, and is ignored in enumerations.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned should have locatable information in them.</value>
+        <value><see langword="true" /> if the objects returned should have locatable information in them; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -314,7 +314,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether recursive enumeration is requested into all classes derived from the specified superclass. If <see langword="false" />, only immediate derived class members are returned.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether recursive enumeration is requested into all classes derived from the specified superclass.</value>
+        <value><see langword="true" /> if recursive enumeration is requested into all classes derived from the specified superclass; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -357,7 +357,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the query should return a prototype of the result set instead of the actual results. This flag is used for prototyping.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the query should return a prototype of the result set instead of the actual results.</value>
+        <value><see langword="true" /> if the query should return a prototype of the result set instead of the actual results; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -392,7 +392,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the invoked operation should be performed in a synchronous or semisynchronous fashion. If this property is set to <see langword="true" />, the enumeration is invoked and the call returns immediately. The actual retrieval of the results will occur when the resulting collection is walked.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the invoked operation should be performed in a synchronous or semisynchronous fashion.</value>
+        <value><see langword="true" /> if the invoked operation should be performed in a synchronous or semisynchronous fashion; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -427,7 +427,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the collection is assumed to be rewindable. If <see langword="true" />, the objects in the collection will be kept available for multiple enumerations. If <see langword="false" />, the collection can only be enumerated one time.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the collection is assumed to be rewindable.</value>
+        <value><see langword="true" /> if the collection is assumed to be rewindable; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -462,7 +462,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the objects returned from WMI should contain amended information. Typically, amended information is localizable information attached to the WMI object, such as object and property descriptions.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the objects returned from WMI should contain amended information.</value>
+        <value><see langword="true" /> if the objects returned from WMI should contain amended information; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

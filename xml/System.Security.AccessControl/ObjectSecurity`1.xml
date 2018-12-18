@@ -461,7 +461,7 @@
         <param name="propagationFlags">Specifies how to propagate Access Control Entries (ACEs) to child objects.</param>
         <param name="flags">Describes the type of auditing to perform.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.AuditRule" /> class representing the specified audit rule for the specified user.</summary>
-        <returns>Returns the specified audit rule for the specified user.</returns>
+        <returns>The specified audit rule for the specified user.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -607,7 +607,7 @@
       <Docs>
         <param name="rule">The rule to remove.</param>
         <summary>Removes access rules that contain the same security identifier and access mask as the specified access rule from the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object.</summary>
-        <returns>Returns <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,7 +704,7 @@
       <Docs>
         <param name="rule">The audit rule to remove</param>
         <summary>Removes audit rules that contain the same security identifier and access mask as the specified audit rule from the System Access Control List (SACL) associated with this ObjectSecurity`1 object.</summary>
-        <returns>Returns <see langword="true" /> if the object was removed; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the object was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

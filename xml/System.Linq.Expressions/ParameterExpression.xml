@@ -134,7 +134,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that this <c>ParameterExpression</c> is to be treated as a <see langword="ByRef" /> parameter.</summary>
-        <value>True if this <c>ParameterExpression</c> is a <see langword="ByRef" /> parameter, otherwise false.</value>
+        <value><see langword="true" /> if this <c>ParameterExpression</c> is a <see langword="ByRef" /> parameter; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

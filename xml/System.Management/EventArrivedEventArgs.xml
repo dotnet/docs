@@ -49,7 +49,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the WMI event that was delivered.</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementBaseObject" /> that contains the delivered WMI event.</value>
+        <value>The delivered WMI event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

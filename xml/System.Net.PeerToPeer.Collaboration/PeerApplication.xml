@@ -415,7 +415,7 @@
       <Docs>
         <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance to test for equality.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance provided has matching data, else <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="other" /> is <see langword="null" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance provided has matching data; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -452,7 +452,7 @@
       <Docs>
         <param name="obj">The <see cref="T:System.Object" /> to test for equality.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to the specified <see cref="T:System.Object" />.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> is equal to the specified object instance, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> is equal to the specified object instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Object" /> has been disposed.</exception>
         <altmember cref="T:System.Guid" />
@@ -484,7 +484,7 @@
         <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to compare.</param>
         <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> to compare.</param>
         <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects are considered equal.</summary>
-        <returns>Returns <see langword="true" /> if the specified objects have the same globally unique application <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" /> and <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Description" />, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the specified objects have the same globally unique application <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Id" /> and <see cref="P:System.Net.PeerToPeer.Collaboration.PeerApplication.Description" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" />
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" />

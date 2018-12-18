@@ -1142,7 +1142,7 @@
       <Docs>
         <param name="source">The source sequence.</param>
         <summary>Computes in parallel the average of a sequence of values.</summary>
-        <returns>Returns the average of the sequence of values.</returns>
+        <returns>The average of the sequence of values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.ArgumentNullException">A sequence of values that are used to calculate an average.The average of the sequence of values.<paramref name="source" /> is a null reference (Nothing in Visual Basic).</exception>

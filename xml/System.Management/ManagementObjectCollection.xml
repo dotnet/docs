@@ -138,7 +138,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating the number of objects in the collection.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> value indicating the number of objects in the collection.</value>
+        <value>The number of objects in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -283,8 +283,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the object is synchronized.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the object is synchronized.</value>
+        <summary>Gets a value that indicates whether the object is synchronized (thread-safe).</summary>
+        <value><see langword="true" /> if the object is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -323,7 +323,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the object to be used for synchronization.</summary>
-        <value>Returns an <see cref="T:System.Object" /> value that represents the object to be used for synchronization.</value>
+        <value>An object that can be used for synchronization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

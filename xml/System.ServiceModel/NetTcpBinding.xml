@@ -383,7 +383,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of queued connection requests that can be pending.</summary>
-        <value>Returns the maximum number of pending queued connection requests. The default is 10.</value>
+        <value>The maximum number of pending queued connection requests. The default is 10.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

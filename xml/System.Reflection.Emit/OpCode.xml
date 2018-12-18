@@ -188,7 +188,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the generated hash code for this <see langword="Opcode" />.</summary>
-        <returns>Returns the hash code for this instance.</returns>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -518,7 +518,7 @@
       <Parameters />
       <Docs>
         <summary>Returns this <see langword="Opcode" /> as a <see cref="T:System.String" />.</summary>
-        <returns>Returns a <see cref="T:System.String" /> containing the name of this <see langword="Opcode" />.</returns>
+        <returns>A string containing the name of this <see langword="Opcode" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

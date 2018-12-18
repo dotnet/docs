@@ -263,7 +263,7 @@
       </ReturnValue>
       <Docs>
         <summary>Contains information about the instance key.</summary>
-        <value>The information about the instance key. Return null if the instance key is not known.</value>
+        <value>The information about the instance key, or <see langword="null" /> if the instance key is not known.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

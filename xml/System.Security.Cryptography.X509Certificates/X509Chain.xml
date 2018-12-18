@@ -738,7 +738,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a safe handle for this <see cref="T:System.Security.Cryptography.X509Certificates.X509Chain" /> instance.</summary>
-        <value>Returns the <see cref="T:Microsoft.Win32.SafeHandles.SafeX509ChainHandle" />.</value>
+        <value>The safe handle for this <see cref="T:System.Security.Cryptography.X509Certificates.X509Chain" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

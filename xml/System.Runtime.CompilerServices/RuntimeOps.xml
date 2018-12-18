@@ -139,7 +139,7 @@
         <param name="expando">The Expando object.</param>
         <param name="version">The version to check.</param>
         <summary>Checks the version of the Expando object.</summary>
-        <returns>Returns true if the version is equal; otherwise, false.</returns>
+        <returns><see langword="true" /> if the version is equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -310,7 +310,7 @@
         <param name="name">The name of the member.</param>
         <param name="ignoreCase">true if the name should be matched ignoring case; false otherwise.</param>
         <summary>Sets the value of an item in an expando object.</summary>
-        <returns>Returns the index for the set member.</returns>
+        <returns>The index for the set member.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

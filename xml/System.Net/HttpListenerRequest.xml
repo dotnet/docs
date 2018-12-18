@@ -1003,7 +1003,7 @@
         <ReturnType>System.Net.IPEndPoint</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the server IP address and port number to which the request is directed.</summary>
+        <summary>Gets the server IP address and port number to which the request is directed.</summary>
         <value>An <see cref="T:System.Net.IPEndPoint" /> that represents the IP address that the request is sent to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

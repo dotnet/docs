@@ -2007,7 +2007,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the algorithm used to create the signature of a certificate.</summary>
-        <value>Returns the object identifier (<see cref="T:System.Security.Cryptography.Oid" />) of the signature algorithm.</value>
+        <value>The object identifier of the signature algorithm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

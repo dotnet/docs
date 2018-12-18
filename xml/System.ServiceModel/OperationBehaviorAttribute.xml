@@ -116,9 +116,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether parameters are to be automatically disposed.</summary>
+        <summary>Gets or sets a value that indicates whether parameters are to be automatically disposed.</summary>
         <value>
-          <see langword="true" /> if the parameters are to be automatically disposed; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the parameters are to be automatically disposed; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

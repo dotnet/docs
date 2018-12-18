@@ -82,7 +82,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> from which the current object is deserialized.</param>
         <summary>Returns the real object that should be deserialized, rather than the object that the serialized stream specifies.</summary>
-        <returns>Returns the actual object that is put into the graph.</returns>
+        <returns>The actual object that is put into the graph.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

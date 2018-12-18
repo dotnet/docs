@@ -118,7 +118,7 @@
         <param name="operationContext">The <see cref="T:System.ServiceModel.OperationContext" />.</param>
         <summary>Checks authorization for the given operation context.</summary>
         <returns>
-          <see langword="true" /> if access is granted; otherwise; otherwise <see langword="false" />. The default is <see langword="true" />.</returns>
+          <see langword="true" /> if access is granted; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -170,7 +170,7 @@
         <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" /> to be examined to determine authorization.</param>
         <summary>Checks authorization for the given operation context when access to a message is required.</summary>
         <returns>
-          <see langword="true" /> if access is granted; otherwise; otherwise <see langword="false" />. The default is <see langword="true" />.</returns>
+          <see langword="true" /> if access is granted; otherwise, <see langword="false" />. The default is <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

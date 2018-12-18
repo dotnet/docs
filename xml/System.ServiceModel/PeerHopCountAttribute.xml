@@ -85,8 +85,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header.</summary>
-        <value>True if the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header; otherwise, false.</value>
+        <summary>Gets a value that indicates whether the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header.</summary>
+        <value><see langword="true" /> if the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +153,9 @@
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the peer hop count member is to be transmitted as-is, signed, or signed and encrypted.</summary>
+        <summary>Gets a value that indicates whether the peer hop count member is to be transmitted as-is, signed, or signed and encrypted.</summary>
         <value>
-          <see cref="T:System.Net.Security.ProtectionLevel" /> enumeration value that indicates the security protection level. The default value is <see cref="F:System.Net.Security.ProtectionLevel.None" />.</value>
+          One of the enumeration values that indicates the security protection level. The default value is <see cref="F:System.Net.Security.ProtectionLevel.None" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -176,8 +176,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether this peer hop count is relayed to downstream nodes.</summary>
-        <value>True if the peer hop count is relayed to downstream nodes; false if it is not.</value>
+        <summary>Gets a value that indicates whether this peer hop count is relayed to downstream nodes.</summary>
+        <value><see langword="true" /> if the peer hop count is relayed to downstream nodes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -79,7 +79,7 @@
         <param name="msg">The message to process.</param>
         <param name="replySink">The reply sink for the reply message.</param>
         <summary>Asynchronously processes the given message.</summary>
-        <returns>Returns an <see cref="T:System.Runtime.Remoting.Messaging.IMessageCtrl" /> interface that provides a way to control asynchronous messages after they have been dispatched.</returns>
+        <returns>An <see cref="T:System.Runtime.Remoting.Messaging.IMessageCtrl" /> interface that provides a way to control asynchronous messages after they have been dispatched.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

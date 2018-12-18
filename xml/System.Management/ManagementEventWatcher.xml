@@ -424,7 +424,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the options used to watch for events.</summary>
-        <value>Returns an <see cref="T:System.Management.EventWatcherOptions" /> that contains the event options used to watch for events.</value>
+        <value>The event options used to watch for events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -467,7 +467,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the criteria to apply to events.</summary>
-        <value>Returns an <see cref="T:System.Management.EventQuery" /> that contains the query to apply to events.</value>
+        <value>The query to apply to events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -510,7 +510,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the scope in which to watch for events (namespace or scope).</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementScope" /> that contains the scope the in which to watch for events.</value>
+        <value>The scope in which to watch for events.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

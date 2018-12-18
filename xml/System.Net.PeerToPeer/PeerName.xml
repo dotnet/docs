@@ -357,7 +357,7 @@
       <Docs>
         <param name="other">The peer name to compare with this <see cref="T:System.Net.PeerToPeer.PeerName" />.</param>
         <summary>Performs a case-sensitive comparison of the current <see cref="T:System.Net.PeerToPeer.PeerName" /> and the specified peer name.</summary>
-        <returns>Returns <see langword="true" /> if the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> identifies the same resource as the current peer name object; otherwise, <see langword="false" />.  
+        <returns><see langword="true" /> if the specified <see cref="T:System.Net.PeerToPeer.PeerName" /> identifies the same resource as the current peer name object; otherwise, <see langword="false" />.  
   
  This method also returns <see langword="false" /> if <paramref name="other" /> is set to <see langword="null" />.</returns>
         <remarks>

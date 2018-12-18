@@ -645,7 +645,7 @@
         <ReturnType>System.IServiceProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set a reference to a managed hosting environment that is available to <see cref="T:System.Runtime.Caching.ObjectCache" /> implementations and that can provide host-specific services to <see cref="T:System.Runtime.Caching.ObjectCache" /> implementations.</summary>
+        <summary>Gets or sets a reference to a managed hosting environment that is available to <see cref="T:System.Runtime.Caching.ObjectCache" /> implementations and that can provide host-specific services to <see cref="T:System.Runtime.Caching.ObjectCache" /> implementations.</summary>
         <value>A reference to a cache-aware managed hosting environment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

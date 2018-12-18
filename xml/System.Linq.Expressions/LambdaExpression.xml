@@ -494,7 +494,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value that indicates if the lambda expression will be compiled with the tail call optimization.</summary>
-        <value>True if the lambda expression will be compiled with the tail call optimization, otherwise false.</value>
+        <value><see langword="true" /> if the lambda expression will be compiled with the tail call optimization; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

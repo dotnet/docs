@@ -113,7 +113,7 @@
         <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the credentials used for encrypting the name identifier in an EncryptedID element.</summary>
+        <summary>Gets or sets the credentials used for encrypting the name identifier in an EncryptedID element.</summary>
         <value>A <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> that represents the credentials used to encrypt the name identifier.</value>
         <remarks>To be added.</remarks>
       </Docs>

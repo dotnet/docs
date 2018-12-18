@@ -350,7 +350,7 @@
         <Parameter Name="inherit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="inherit">true to search this member's inheritance chain to find the attributes; otherwise false.</param>
+        <param name="inherit"><see langword="true" /> to search this member's inheritance chain to find the attributes; otherwise, <see langword="false" />.</param>
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Boolean)" /> method.</summary>
         <returns>An array that contains all the custom attributes, or an array with zero elements if no attributes are defined.</returns>
         <remarks>
@@ -389,7 +389,7 @@
       </Parameters>
       <Docs>
         <param name="attributeType">The type of attribute to search for. Only attributes that are assignable to this type are returned.</param>
-        <param name="inherit">true to search this member's inheritance chain to find the attributes; otherwise false.</param>
+        <param name="inherit"><see langword="true" /> to search this member's inheritance chain to find the attributes; otherwise, <see langword="false" />.</param>
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.MemberInfo.GetCustomAttributes(System.Type,System.Boolean)" /> method.</summary>
         <returns>An array of custom attributes applied to this member, or an array with zero (0) elements if no attributes have been applied.</returns>
         <remarks>
@@ -1003,7 +1003,7 @@
       </Parameters>
       <Docs>
         <param name="attributeType">The <see cref="T:System.Type" /> object to which the custom attributes are applied.</param>
-        <param name="inherit">true to search this member's inheritance chain to find the attributes; otherwise false.</param>
+        <param name="inherit"><see langword="true" /> to search this member's inheritance chain to find the attributes; otherwise, <see langword="false" />.</param>
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.MemberInfo.IsDefined(System.Type,System.Boolean)" /> method.</summary>
         <returns>
           <see langword="true" /> if one or more instances of the <paramref name="attributeType" /> parameter are applied to this member; otherwise, <see langword="false" />.</returns>

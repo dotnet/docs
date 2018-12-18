@@ -397,7 +397,7 @@
       <Parameters />
       <Docs>
         <summary>Creates and returns a hash code for this instance.</summary>
-        <returns>Returns the hash code based on the name.</returns>
+        <returns>The hash code based on the name.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -974,7 +974,7 @@
       <Parameters />
       <Docs>
         <summary>Adds the end token to the signature and marks the signature as finished, so no further tokens can be added.</summary>
-        <returns>Returns a byte array made up of the full signature.</returns>
+        <returns>A byte array made up of the full signature.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1190,7 +1190,7 @@
       <Parameters />
       <Docs>
         <summary>Returns a string representing the signature arguments.</summary>
-        <returns>Returns a string representing the arguments of this signature.</returns>
+        <returns>A string representing the arguments of this signature.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

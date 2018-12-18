@@ -341,7 +341,7 @@
       <Docs>
         <param name="o">The object to be compared with the current instance.</param>
         <summary>Tests whether the given object is an instance of <see langword="EventToken" /> and is equal to the current instance.</summary>
-        <returns>Returns <see langword="true" /> if <paramref name="o" /> is an instance of <see langword="EventToken" /> and equals the current instance; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="o" /> is an instance of <see langword="EventToken" /> and equals the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

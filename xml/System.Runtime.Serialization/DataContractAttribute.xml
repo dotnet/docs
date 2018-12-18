@@ -148,7 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether <see cref="P:System.Runtime.Serialization.DataContractAttribute.Name" /> has been explicitly set.</summary>
-        <value>Returns <see langword="true" /> if the name has been explicitly set; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the name has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,7 +180,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether <see cref="P:System.Runtime.Serialization.DataContractAttribute.Namespace" /> has been explicitly set.</summary>
-        <value>Returns <see langword="true" /> if the namespace has been explicitly set; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the namespace has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

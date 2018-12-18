@@ -50,7 +50,7 @@
         <param name="context">The designer's editing context.</param>
         <param name="item">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> to clone.</param>
         <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> by creating a deep copy of the instance provided.</summary>
-        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <returns>The newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,7 +90,7 @@
         <param name="itemType">The type of the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> to create.</param>
         <param name="arguments">An optional array of arguments that should be passed to the constructor of the item.</param>
         <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for the given item type.</summary>
-        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <returns>The newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +127,7 @@
         <param name="options">A set of options used when creating the item.</param>
         <param name="arguments">An optional array of arguments that should be passed to the constructor of the item.</param>
         <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for the given item type.</summary>
-        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <returns>The newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,7 +155,7 @@
         <param name="type">The type that contains the static member being referenced.</param>
         <param name="memberName">The name of the static member being referenced.</param>
         <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the value of a static member of the given class.</summary>
-        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <returns>The newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

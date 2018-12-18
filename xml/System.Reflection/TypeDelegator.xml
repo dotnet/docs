@@ -659,7 +659,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an array of <see cref="T:System.Reflection.EventInfo" /> objects representing all the public events declared or inherited by the current <see langword="TypeDelegator" />.</summary>
-        <returns>Returns an array of type <see langword="EventInfo" /> containing all the events declared or inherited by the current type. If there are no events, an empty array is returned.</returns>
+        <returns>An array that contains all the events declared or inherited by the current type. If there are no events, an empty array is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -312,7 +312,7 @@
       </ReturnValue>
       <Docs>
         <summary>Returns the count of items in the collection.</summary>
-        <value>Returns the <see cref="T:System.Int32" /> count of items in the collection.</value>
+        <value>The count of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -344,7 +344,7 @@
       <Parameters />
       <Docs>
         <summary>Gets an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
-        <returns>Returns an <see cref="T:System.Collections.Generic.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</returns>
+        <returns>An enumerator for the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -723,7 +723,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an object that can be used to synchronize access to the collection.</summary>
-        <value>Returns an <see cref="T:System.Object" />.</value>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -779,7 +779,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of elements contained in the collection.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> value that is the number of elements contained in the collection.</value>
+        <value>The number of elements contained in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -838,7 +838,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
-        <value>Returns an <see cref="T:System.Object" /> that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -870,7 +870,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that iterates through a collection.</summary>
-        <returns>Returns an <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -897,7 +897,7 @@
       <Docs>
         <param name="value">The object to add to the collection.</param>
         <summary>Adds a model item to the end of the <see cref="T:System.Activities.Presentation.Model.ModelItemCollection" />.</summary>
-        <returns>Returns the index of the newly added object.</returns>
+        <returns>The index of the newly added object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -987,7 +987,7 @@
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Collections.IList" />.</param>
         <summary>Determines the index of a specific item in the <see cref="T:System.Collections.IList" />.</summary>
-        <returns>Returns the <see cref="T:System.Int32" /> index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -164,7 +164,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the action that the subject of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> can perform on the specified resource.</summary>
-        <value>Gets or sets the action that the subject of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token seeks to perform on the specified resource.</value>
+        <value>The action that the subject of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token seeks to perform on the specified resource.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

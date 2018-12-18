@@ -713,7 +713,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the client credentials used to call an operation.</summary>
-        <value>Returns a <see cref="T:System.ServiceModel.Description.ClientCredentials" /> that represents the proof of identity presented by the client.</value>
+        <value>The proof of identity presented by the client.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

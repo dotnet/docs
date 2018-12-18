@@ -40,8 +40,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the instance has network connectivity and is connected to a resource.</summary>
-        <value>True if the current instance is available on the network; false if it is not.</value>
+        <summary>Gets a value that indicates whether the instance has network connectivity and is connected to a resource.</summary>
+        <value><see langword="true" /> if the current instance is available on the network; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

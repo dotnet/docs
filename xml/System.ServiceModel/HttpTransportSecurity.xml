@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of client credential to be used for authentication.</summary>
-        <value>Returns the <see cref="T:System.ServiceModel.HttpClientCredentialType" />.</value>
+        <value>One of the enumeration values that indicates the type of client credential to be used for authentication.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -178,7 +178,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the type of client credential to be used for authentication against the proxy.</summary>
-        <value>Returns the <see cref="T:System.ServiceModel.HttpProxyCredentialType" />.</value>
+        <value>One of the enumeration values that indicates the type of client credential to be used for authentication against the proxy.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

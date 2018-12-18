@@ -86,7 +86,7 @@
       <Docs>
         <param name="obj">The object to compare to this <see langword="FieldToken" />.</param>
         <summary>Determines if an object is an instance of <see langword="FieldToken" /> and is equal to this instance.</summary>
-        <returns>Returns <see langword="true" /> if <paramref name="obj" /> is an instance of <see langword="FieldToken" /> and is equal to this object; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="obj" /> is an instance of <see langword="FieldToken" /> and is equal to this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
       <Parameters />
       <Docs>
         <summary>Generates the hash code for this field.</summary>
-        <returns>Returns the hash code for this instance.</returns>
+        <returns>The hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

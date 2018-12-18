@@ -73,7 +73,7 @@
       <Docs>
         <param name="obj">The object to compare with this <see langword="Label" /> instance.</param>
         <summary>Checks if the given object is an instance of <see langword="Label" /> and is equal to this instance.</summary>
-        <returns>Returns <see langword="true" /> if <paramref name="obj" /> is an instance of <see langword="Label" /> and is equal to this object; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if <paramref name="obj" /> is an instance of <see langword="Label" /> and is equal to this object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
       <Parameters />
       <Docs>
         <summary>Generates a hash code for this instance.</summary>
-        <returns>Returns a hash code for this instance.</returns>
+        <returns>A hash code for this instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

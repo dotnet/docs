@@ -87,7 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>When implemented in a derived class, gets a description of the change.</summary>
-        <value>Returns a <see cref="T:System.String" /> that contains a description of the change.</value>
+        <value>A string that contains a description of the change.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +109,7 @@
       <Parameters />
       <Docs>
         <summary>When implemented in a derived class, retrieves the inverse of the change.</summary>
-        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.Change" /> that contains the inverse of the current instance.</returns>
+        <returns>The inverse of the current instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

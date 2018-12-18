@@ -38,11 +38,11 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether instances of classes that implement this interface are visible through management instrumentation.</summary>
-        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether instances of classes that implement this interface are visible through management instrumentation.</value>
+        <value><see langword="true" /> if instances of classes that implement this interface are visible through management instrumentation; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks   
   
 ## Property Value  
  `true`, if the instance is visible through management instrumentation; otherwise, `false`  

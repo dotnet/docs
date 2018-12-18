@@ -323,7 +323,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates if the HTTP response was successful.</summary>
-        <value>A value that indicates if the HTTP response was successful. <see langword="true" /> if <see cref="P:System.Net.Http.HttpResponseMessage.StatusCode" /> was in the range 200-299; otherwise <see langword="false" />.</value>
+        <value><see langword="true" /> if <see cref="P:System.Net.Http.HttpResponseMessage.StatusCode" /> was in the range 200-299; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

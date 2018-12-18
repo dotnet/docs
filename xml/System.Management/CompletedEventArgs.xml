@@ -49,7 +49,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the completion status of the operation.</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementStatus" /> enumeration value.</value>
+        <value>One of the enumeration values that indicates the completion status of the operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -83,8 +83,8 @@
         <ReturnType>System.Management.ManagementBaseObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets additional status information within a WMI object. This may be null.</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementBaseObject" /> that contains status information about the completion of an operation.</value>
+        <summary>Gets additional status information within a WMI object. This may be <see langword="null" />.</summary>
+        <value>Additional status information about the completion of an operation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

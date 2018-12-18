@@ -1807,7 +1807,7 @@ public class ImpersonationDemo
         <param name="safeAccessTokenHandle">The SafeAccessTokenHandle of the impersonated Windows identity.</param>
         <param name="func">The System.Func to run.</param>
         <summary>Runs the specified function as the impersonated Windows identity. Instead of using an impersonated method call and running your function in <see cref="T:System.Security.Principal.WindowsImpersonationContext" />, you can use <see cref="M:System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)" /> and provide your function directly as a parameter.</summary>
-        <returns>Returns the result of the function.</returns>
+        <returns>The result of the function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

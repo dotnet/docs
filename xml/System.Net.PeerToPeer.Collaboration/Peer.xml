@@ -165,7 +165,7 @@
       <Docs>
         <param name="other">A <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> instance to compare to this instance.</param>
         <summary>Performs a case-sensitive comparison of the current <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> and the specified peer.</summary>
-        <returns>Returns <see langword="true" /> if the supplied <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> instance has the same <see cref="P:System.Net.PeerToPeer.Collaboration.Peer.PeerEndPoints" /> as this peer instance, otherwise <see langword="false" />. This method also returns <see langword="false" /> if the peer parameter is <see langword="null" />.</returns>
+        <returns><see langword="true" /> if the supplied <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> instance has the same <see cref="P:System.Net.PeerToPeer.Collaboration.Peer.PeerEndPoints" /> as this peer instance, otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the peer parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -355,7 +355,7 @@
       <Docs>
         <param name="peerEndPoint">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> for which to retrieve presence information.</param>
         <summary>Gets the available presence information for a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</summary>
-        <returns>Returns a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" /> object which contains presence information for an available endpoint if it is available; otherwise it is <see langword="null" />.</returns>
+        <returns>A <see cref="T:System.Net.PeerToPeer.Collaboration.PeerPresenceInfo" /> object which contains presence information for an available endpoint if it is available; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -665,7 +665,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value specifying if the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> is currently 'online'.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> is online at any of the endpoints associated with it; otherwise <see langword="false" />.  
+        <value><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> is online at any of the endpoints associated with it; otherwise, <see langword="false" />.  
   
  Unless specified, the default value for this property is <see langword="null" />.</value>
         <remarks>To be added.</remarks>

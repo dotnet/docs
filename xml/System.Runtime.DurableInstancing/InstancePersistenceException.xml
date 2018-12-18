@@ -252,7 +252,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name of the command.</summary>
-        <value>The name of the command. Returns null if the command is not known.</value>
+        <value>The name of the command, or <see langword="null" /> if the command is not known.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

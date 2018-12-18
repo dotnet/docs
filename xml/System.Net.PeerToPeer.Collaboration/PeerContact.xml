@@ -293,7 +293,7 @@
       <Docs>
         <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance to test for equality.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance provided has matching data, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance provided has matching data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -327,7 +327,7 @@
       <Docs>
         <param name="obj">Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance to the specified object.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance to the specified object.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance provided has matching data, else <see langword="false" />. This method also returns <see langword="false" /> if the passed parameter is <see langword="null" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instance provided has matching data; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the passed parameter is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -365,7 +365,7 @@
         <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> to compare.</param>
         <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> to compare.</param>
         <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instances are considered equal.</summary>
-        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instances provided have matching data, else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerContact" /> instances provided have matching data; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

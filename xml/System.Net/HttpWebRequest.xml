@@ -2073,7 +2073,7 @@ Both <xref:System.Net.HttpWebRequest> constructors are obsolete and should not b
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or set the <see langword="Date" /> HTTP header value to use in an HTTP request.</summary>
+        <summary>Gets or sets the <see langword="Date" /> HTTP header value to use in an HTTP request.</summary>
         <value>The Date header value in the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3087,7 +3087,7 @@ The GetHashCode method returns a hash code of the web request. This value can be
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or set the Host header value to use in an HTTP request independent from the request URI.</summary>
+        <summary>Gets or sets the Host header value to use in an HTTP request independent from the request URI.</summary>
         <value>The Host header value in the HTTP request.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4426,7 +4426,7 @@ The GetHashCode method returns a hash code of the web request. This value can be
       <Docs>
         <summary>Gets or sets a <see cref="T:System.Boolean" /> value that controls whether default credentials are sent with requests.</summary>
         <value>
-          <see langword="true" /> if the default credentials are used; otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
+          <see langword="true" /> if the default credentials are used; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

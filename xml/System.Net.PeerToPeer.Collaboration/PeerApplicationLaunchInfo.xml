@@ -82,7 +82,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or set a message associated with the response to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation.</summary>
+        <summary>Gets or sets a message associated with the response to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation.</summary>
         <value>A text message associated with the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse" /> to the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerCollaboration" /> invitation.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

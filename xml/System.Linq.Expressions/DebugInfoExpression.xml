@@ -218,7 +218,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the value to indicate if the <see cref="T:System.Linq.Expressions.DebugInfoExpression" /> is for clearing a sequence point.</summary>
-        <value>True if the <see cref="T:System.Linq.Expressions.DebugInfoExpression" /> is for clearing a sequence point, otherwise false.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Linq.Expressions.DebugInfoExpression" /> is for clearing a sequence point; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

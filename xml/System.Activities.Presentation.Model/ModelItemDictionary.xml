@@ -133,7 +133,7 @@
         <param name="key">The key in the key/value pair to be added.</param>
         <param name="value">The value in the key/value pair to be added.</param>
         <summary>Adds the value to the dictionary under the given key. This method wraps the key and value in a set of <see cref="T:System.Activities.Presentation.Model.ModelItem" /> objects.</summary>
-        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the key.</returns>
+        <returns>A <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the key.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">If <paramref name="key" /> or <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">If the <see cref="T:System.Activities.Presentation.Model.ModelItemDictionary" /> is read-only.</exception>

@@ -351,7 +351,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set a value that indicates whether a connection has been made.</summary>
+        <summary>Gets or sets a value that indicates whether a connection has been made.</summary>
         <value>
           <see langword="true" /> if the connection has been made; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1672,7 +1672,7 @@ The `GetStream` method returns a <xref:System.Net.Sockets.NetworkStream> that yo
       <Docs>
         <summary>Gets or sets a value that disables a delay when send or receive buffers are not full.</summary>
         <value>
-          <see langword="true" /> if the delay is disabled, otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
+          <see langword="true" /> if the delay is disabled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

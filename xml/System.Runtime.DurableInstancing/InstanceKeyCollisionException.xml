@@ -299,7 +299,7 @@
       </ReturnValue>
       <Docs>
         <summary>Contains information about the instance key.</summary>
-        <value>The instance key information. Returns null if the conflicting instance key is not known.</value>
+        <value>The instance key information, or <see langword="null" /> if the conflicting instance key is not known.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

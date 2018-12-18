@@ -1451,7 +1451,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a collection that contains a <see cref="T:System.Printing.PrintSystemJobInfo" /> object for each job in the queue.</summary>
-        <returns>Returns a <see cref="T:System.Printing.PrintJobInfoCollection" /> of <see cref="T:System.Printing.PrintSystemJobInfo" /> objects. There is one for each job in the queue.</returns>
+        <returns>A collection of <see cref="T:System.Printing.PrintSystemJobInfo" /> objects. There is one for each job in the queue.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

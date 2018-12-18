@@ -269,7 +269,7 @@
       <Docs>
         <param name="site">An instance of the dynamic call site.</param>
         <summary>Checks whether the executed rule matched</summary>
-        <returns>true if rule matched, false otherwise.</returns>
+        <returns><see langword="true" /> if the rule matched; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -436,7 +436,7 @@
       <Docs>
         <param name="site">An instance of the dynamic call site.</param>
         <summary>Checks if a dynamic site requires an update.</summary>
-        <returns>true if rule does not need updating, false otherwise.</returns>
+        <returns><see langword="true" /> if the rule does not need updating; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

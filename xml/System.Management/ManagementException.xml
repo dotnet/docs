@@ -172,7 +172,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the error code reported by WMI, which caused this exception.</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementStatus" /> enumeration value that contains the error code.</value>
+        <value>One of the enumeration values that indicates the error code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -207,7 +207,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the extended error object provided by WMI.</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementBaseObject" /> that contains extended error information.</value>
+        <value>The extended error information.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

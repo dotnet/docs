@@ -146,10 +146,9 @@ End Module
 **Step 5** – Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. Notice the code waits for the user to hit enter. If you do not do this, the app will close immediately and the service will shut down.Also notice a  try/catch block used. After the <xref:System.ServiceModel.ServiceHost> has been instantiated, all other code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)
 
 > [!IMPORTANT]
-> Edit App.config in GettingStartedLib to reflect the changes made in code:
-> 1. Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
-> 2. Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
-> 3. Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
+> When you add a WCF Service Library, Visual Studio can host it for you when you debug by starting a service host. To avoid conflicts you can disable this. 
+> 1. Open Project Properties for GettingStartedLib.
+> 2. Go to **WCF Options** and uncheck **Start WCF Service Host when debugging**.
 
 ## Verify the service is working
 

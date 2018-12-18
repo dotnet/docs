@@ -149,6 +149,8 @@ public MainWindow()
 }
 ```
 
+The `+=` operator in this context is used to subscribe to an [event](../../docs/csharp/language-reference/keywords/event.md). For more information, see [How to: Subscribe to and Unsubscribe from Events](../../docs/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+
 ## Further reading and resources
 
 *   [Delegates](../../docs/csharp/programming-guide/delegates/index.md)

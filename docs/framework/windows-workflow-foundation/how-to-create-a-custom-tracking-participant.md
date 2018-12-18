@@ -12,17 +12,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
 > [!NOTE]
 >  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete the previous topics. To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
-## In this topic  
-  
--   [To create the custom tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_CustomTrackingParticipant)  
-  
--   [To create the tracking profile and register the tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_TrackingProfile)  
-  
--   [To display the tracking information](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_DisplayTracking)  
-  
--   [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_BuildAndRun)  
-  
-###  <a name="BKMK_CustomTrackingParticipant"></a> To create the custom tracking participant  
+## To create the custom tracking participant  
   
 1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Class**. Type `StatusTrackingParticipant` into the **Name** box, and click **Add**.  
   
@@ -98,7 +88,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
      When no tracking profile is specified, the default tracking profile is used. When the default tracking profile is used, tracking records are emitted for all `ActivityStates`. Because we only need to capture the text one time during the lifecycle of the `WriteLine` activity, we only extract the text from the `ActivityStates.Executing` state. In [To create the tracking profile and register the tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_TrackingProfile), a tracking profile is created that specifies that only `WriteLine` `ActivityStates.Executing` tracking records are emitted.  
   
-###  <a name="BKMK_TrackingProfile"></a> To create the tracking profile and register the tracking participant  
+## To create the tracking profile and register the tracking participant  
   
 1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
@@ -219,7 +209,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
         // Workflow lifecycle handlers...  
     ```  
   
-###  <a name="BKMK_DisplayTracking"></a> To display the tracking information  
+## To display the tracking information  
   
 1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
@@ -314,7 +304,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     }  
     ```  
   
-###  <a name="BKMK_BuildAndRun"></a> To build and run the application  
+## To build and run the application  
   
 1.  Press Ctrl+Shift+B to build the application.  
   

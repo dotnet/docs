@@ -323,16 +323,18 @@ Workflow tracking provides visibility into the status of workflow execution. The
 3.  Select a range for the guessing game and the type of workflow to start, and click **New Game**. Enter a guess in the **Guess** box and click **Go** to submit your guess. Note that the status of the workflow is displayed in the status window. This output is captured from the `WriteLine` activities. Switch to a different workflow by selecting one from the **Workflow Instance Id** combo box and note that the status of the current workflow is removed. Switch back to the previous workflow and note that the status is restored, similar to the following example.  
   
     > [!NOTE]
-    >  If you switch to a workflow that was started before tracking was enabled no status is displayed. However if you make additional guesses, their status is saved because tracking is now enabled.  
+    > If you switch to a workflow that was started before tracking was enabled no status is displayed. However if you make additional guesses, their status is saved because tracking is now enabled.  
   
- **Please enter a number between 1 and 10**  
-**Your guess is too high.**   
-**Please enter a number between 1 and 10**    
+    ```output
+    Please enter a number between 1 and 10
+    Your guess is too high.
+    Please enter a number between 1 and 10
+    ```
+    
+    > [!NOTE]
+    > This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
 
-> [!NOTE]
->  This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).  
-
-Make a note of the workflow instance id, and play the game through to its completion.  
+    Make a note of the workflow instance id, and play the game through to its completion.
   
 4.  Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings). Note that in addition to the project executable files there are files with guid filenames. Identify the one that corresponds to the workflow instance id from the completed workflow in the previous step and open it in Notepad. The tracking information contains information similar to the following.  
   

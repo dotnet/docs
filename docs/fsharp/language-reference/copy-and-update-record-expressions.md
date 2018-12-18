@@ -1,5 +1,5 @@
 ---
-title: Copy and Update Record Expressions (F#)
+title: Copy and Update Record Expressions
 description: Learn how to write a 'copy and update record expression' that copies an existing record, updates specified fields, and returns the updated record.
 author: ChrSteinert
 ms.date: 06/04/2016

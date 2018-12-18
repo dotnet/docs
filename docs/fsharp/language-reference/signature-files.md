@@ -1,5 +1,5 @@
 ---
-title: Signature files (F#)
+title: Signature files
 description: Learn how to use F# signature files to hold information about the public signatures of a set of F# program elements, such as types, namespaces, and modules.
 ms.date: 06/15/2018
 ---

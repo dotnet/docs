@@ -59,7 +59,7 @@ In the example, the `countFileBytes` function is of type `string -> Async<unit>`
 
 The `Async.Start` function is used to start the computation.
 
-Additionally, `Async.AwaitTask` is called in the `countFileBytes` function. This creates an `Async<'T>` that runs <xref:system.io.file.WriteAllBytesAsync%2A> (which returns a `Task<byte[]>`) and returns its result.
+Additionally, `Async.AwaitTask` is called in the `countFileBytes` function. This creates an `Async<'T>` that runs <xref:System.IO.File.WriteAllBytesAsync%2A> (which returns a `Task<byte[]>`) and returns its result.
 
 This is a key difference with the C#/VB style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work very easily.
 

@@ -73,5 +73,5 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

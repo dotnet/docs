@@ -1,5 +1,5 @@
 ---
-title: do Bindings in Classes (F#)
+title: do Bindings in Classes
 description: Learn how to use an F# 'do' binding in a class definition, which performs actions when the object is constructed or when the type is first used.
 ms.date: 05/16/2016
 ---

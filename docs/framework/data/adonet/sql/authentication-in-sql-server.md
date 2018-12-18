@@ -13,7 +13,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 > [!IMPORTANT]
 >  We recommend using Windows authentication wherever possible. Windows authentication uses a series of encrypted messages to authenticate users in SQL Server. When SQL Server logins are used, SQL Server login names and encrypted passwords are passed across the network, which makes them less secure.  
   
- With Windows authentication, users are already logged onto Windows and do not have to log on separately to SQL Server. The following `SqlConnection.ConnectionString` specifies Windows authentication without requiring the a user name or password.  
+ With Windows authentication, users are already logged onto Windows and do not have to log on separately to SQL Server. The following `SqlConnection.ConnectionString` specifies Windows authentication without requiring users to provide a user name or password.  
   
 ```  
 "Server=MSSQL1;Database=AdventureWorks;Integrated Security=true;  

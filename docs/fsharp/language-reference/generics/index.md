@@ -1,5 +1,5 @@
 ---
-title: Generics (F#)
+title: Generics
 description: Learn how to use F# generic functions and types, which enable you to write code that works with a variety of types without repeating code.
 ms.date: 05/16/2016
 ---

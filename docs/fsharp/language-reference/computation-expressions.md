@@ -1,5 +1,5 @@
 ---
-title: Computation Expressions (F#)
+title: Computation Expressions
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
 ms.date: 07/27/2018
 ---

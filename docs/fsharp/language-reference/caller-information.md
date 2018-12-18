@@ -1,5 +1,5 @@
 ---
-title: Caller information (F#)
+title: Caller information
 description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
 ms.date: 04/25/2017
 ---
@@ -66,6 +66,6 @@ The following chart shows the member names that are returned when you use the Ca
 
 ## See also
 
-- [Attributes](attributes.md)  
-- [Named arguments](parameters-and-arguments.md#named-arguments)  
-- [Optional parameters](parameters-and-arguments.md#optional-parameters)  
+- [Attributes](attributes.md)
+- [Named arguments](parameters-and-arguments.md#named-arguments)
+- [Optional parameters](parameters-and-arguments.md#optional-parameters)

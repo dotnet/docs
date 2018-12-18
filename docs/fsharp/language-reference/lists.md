@@ -1,5 +1,5 @@
 ---
-title: Lists (F#)
+title: Lists
 description: Learn about F# lists, an ordered, immutable series of elements of the same type.
 ms.date: 05/16/2016
 ---

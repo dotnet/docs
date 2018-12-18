@@ -1,5 +1,5 @@
 ---
-title: Strings (F#)
+title: Strings
 description: Learn how the F# 'string' type represents immutable text as a sequence of Unicode characters.
 ms.date: 05/16/2016
 ---

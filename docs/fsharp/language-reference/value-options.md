@@ -1,5 +1,5 @@
 ---
-title: Value Options (F#)
+title: Value Options
 description: Learn about the F# Value Option type, which is a struct version of the Option type.
 ms.date: 06/16/2018
 ---

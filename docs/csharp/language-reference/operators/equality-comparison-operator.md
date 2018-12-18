@@ -1,8 +1,7 @@
 ---
 title: "== Operator - C# Reference"
 ms.custom: seodec18
-
-ms.date: 07/20/2015
+ms.date: 12/14/2018
 f1_keywords: 
   - "==_CSharpKeyword"
 helpviewer_keywords: 
@@ -11,16 +10,48 @@ helpviewer_keywords:
 ms.assetid: 34c6b597-caa2-4855-a7cd-38ecdd11bd07
 ---
 # == Operator (C# Reference)
-For predefined value types, the equality operator (`==`) returns true if the values of its operands are equal, `false` otherwise. For reference types other than [string](../../../csharp/language-reference/keywords/string.md), `==` returns `true` if its two operands refer to the same object. For the `string` type, `==` compares the values of the strings.  
-  
-## Remarks  
- User-defined value types can overload the `==` operator (see [operator](../../../csharp/language-reference/keywords/operator.md)). So can user-defined reference types, although by default `==` behaves as described above for both predefined and user-defined reference types. If `==` is overloaded, [!=](../../../csharp/language-reference/operators/not-equal-operator.md) must also be overloaded. Operations on integral types are generally allowed on enumeration.  
-  
-## Example  
- [!code-csharp[csRefOperators#36](../../../csharp/language-reference/operators/codesnippet/CSharp/equality-comparison-operator_1.cs)]  
-  
-## See Also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)
+The equality operator `==` returns `true` if its operands are equal, `false` otherwise.
+
+## Value types equality
+
+Operands of the [built-in value types](../keywords/value-types-table.md) are equal if their values are equal:
+
+[!code-csharp-interactive[value types equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ValueTypesEquality)]
+
+Two operands of the same [enum](../keywords/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
+
+By default, the `==` operator is not defined for a user-defined [struct](../keywords/struct.md) type. A user-defined type can [overload](#operator-overloadability) the `==` operator.
+
+Beginning with C# 7.3, the `==` and [`!=`](not-equal-operator.md) operators are supported by C# [tuples](../../tuples.md). For more information, see the [Equality and tuples](../../tuples.md#equality-and-tuples) section of the [C# tuple types](../../tuples.md) article.
+
+## String equality
+
+Two [string](../keywords/string.md) operands are equal when both of them are `null` or both string instances are of the same length and have identical characters in each character position:
+
+[!code-csharp-interactive[string equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#StringEquality)]
+
+That is case-sensitive ordinal comparison. For more information about how to compare strings, see [How to compare strings in C#](../../how-to/compare-strings.md).
+
+## Reference types equality
+
+Two other than `string` reference type operands are equal when they refer to the same object:
+
+[!code-csharp-interactive[reference type equality](~/samples/snippets/csharp/language-reference/operators/EqualityAndNonEqualityExamples.cs#ReferenceTypesEquality)]
+
+The example shows that the `==` operator is supported by user-defined reference types. However, a user-defined reference type can overload the `==` operator. If a reference type overloads the `==` operator, use the <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method to check if two references of that type refer to the same object.
+
+## Operator overloadability
+
+User-defined types can [overload](../keywords/operator.md) the `==` operator. If a type overloads the equality operator `==`, it must also overload the [inequality operator](not-equal-operator.md) `!=`.
+
+## C# language specification
+
+For more information, see the [Relational and type-testing operators](~/_csharplang/spec/expressions.md#relational-and-type-testing-operators) section of the [C# language specification](../language-specification/index.md).
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Operators](index.md)
+- [Equality comparisons](../../programming-guide/statements-expressions-operators/equality-comparisons.md)

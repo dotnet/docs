@@ -84,6 +84,42 @@ let defaultRecord2 = { Field1 = 1; Field2 = 25 }
 let rr3 = { defaultRecord1 with Field2 = 42 }
 ```
 
+## Creating Mutually Recursive Records
+
+Sometimes when creating a record, you may have the need to use a type which isn't defined and which you intend to create later.
+
+This can be achieved by using the `and` keyword to link 2 or more record types together by what is known as mutual recursion.
+
+The following records are created using the `and` keyword:
+
+```fsharp
+// Create a Person type and use the Address type that is not defined
+type Person =
+  { Name: string
+    Age: int
+    Address: Address }
+// Define the Address type which is used in the Person record
+and Address =
+  { Line1: string
+    Line2: string
+    PostCode: string }
+```
+
+The following records are not created with the `and` keyword and would not compile:
+
+```fsharp
+// This will error as the Person record tries to use the Address type which is not defined using the `and` keyword 
+type Person =
+  { Name: string
+    Age: int
+    Address: Address }
+
+type Address =
+  { Line1: string
+    Line2: string
+    PostCode: string }
+```
+
 ## Pattern Matching with Records
 
 Records can be used with pattern matching. You can specify some fields explicitly and provide variables for other fields that will be assigned when a match occurs. The following code example illustrates this.

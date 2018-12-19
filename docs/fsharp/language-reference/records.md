@@ -107,19 +107,6 @@ and Address =
 
 If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.
 
-```fsharp
-// This will error as the Person record tries to use the Address type which is not defined using the `and` keyword 
-type Person =
-  { Name: string
-    Age: int
-    Address: Address }
-
-type Address =
-  { Line1: string
-    Line2: string
-    PostCode: string }
-```
-
 ## Pattern Matching with Records
 
 Records can be used with pattern matching. You can specify some fields explicitly and provide variables for other fields that will be assigned when a match occurs. The following code example illustrates this.

@@ -319,24 +319,16 @@ let computationForCaller param =
 
 ### How to work with .NET async and Task
 
-To work with <xref:System.Threading.Tasks.Task> types (i.e., .NET async computations that have no return value) requires a bit more work. These helper functions are up to the task (pun _definitely_ intended):
+To work with APIs that use <xref:System.Threading.Tasks.Task> (i.e., .NET async computations that have no return value), you may need to add an additional function that will convert an `Async<'T>` to a <xref:System.Threading.Tasks.Task>:
 
 ```fsharp
 module Async =
     // Async<unit> -> Task
     let startTaskFromAsyncUnit (comp: Async<unit>) =
         Async.StartAsTask comp :> Task
-
-    // Task -> Async<unit>
-    let awaitTaskToAsyncUnit (task: Task) =
-        task.ContinueWith(fun t -> ()) |> Async.AwaitTask
 ```
 
-You can then use them like so:
-
-```fsharp
-// TODO examples
-```
+There is already an `Async.AwaitTask` that accepts a <xref:System.Threading.Tasks.Task> as input. With this and the previously-defined `startTaskFromAsyncUnit` function, you can start and await <xref:System.Threading.Tasks.Task> types from an F# async computation.
 
 ## Relationship to multithreading
 

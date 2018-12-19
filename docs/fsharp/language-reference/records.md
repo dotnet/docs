@@ -86,7 +86,7 @@ let rr3 = { defaultRecord1 with Field2 = 42 }
 
 ## Creating Mutually Recursive Records
 
-Sometimes when creating a record, you may have the need to use a type which isn't defined and which you intend to create later.
+ Sometime when creating a record, you may want to have it depend on another type that you would like to define afterwards. This is a compile error unless you define the record types to be mutually recursive.
 
 This can be achieved by using the `and` keyword to link 2 or more record types together by what is known as mutual recursion.
 

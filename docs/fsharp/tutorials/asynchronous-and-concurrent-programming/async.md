@@ -157,7 +157,7 @@ When to use:
 What to watch out for:
 
 * Exceptions raised by computations ran with `Async.Start` aren't propagated to the caller
-* Any effectful work (such as calling `printfn`) ran with `Async.Start` won't cause the effect to happen on the main thread of a program's execution
+* Any effectual work (such as calling `printfn`) ran with `Async.Start` won't cause the effect to happen on the main thread of a program's execution
 
 ### Async.StartChild
 

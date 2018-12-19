@@ -295,7 +295,7 @@ You may be working with a library or C# codebase that uses [async/await](../../.
 
 ### How to work with .NET async and Task<T>
 
-Working with .NET async libraries and codebases that use <xref:System.Threading.Tasks.Task%601> (i.e., async computations that have return values) is straightforward and has built-in support with F#.
+Working with .NET async libraries and codebases that use <xref:System.Threading.Tasks.Task%601> (that is, async computations that have return values) is straightforward and has built-in support with F#.
 
 You can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
 

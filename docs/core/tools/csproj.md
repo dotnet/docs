@@ -204,7 +204,29 @@ Copyright details for the package.
 A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
 
 ### PackageLicenseUrl
-An URL to the license that is applicable to the package.
+An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+
+### PackageLicenseExpression
+
+An [SPDX license identifier](https://spdx.org/licenses/) or expression, i.e. `Apache-2.0`.
+
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseFile` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+
+### PackageLicenseFile
+
+A path to the license file on disk, relative to the project file, i.e. `LICENSE.txt`.
+
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+
+You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
+```xml
+<PropertyGroup>
+  <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+</PropertyGroup>
+<ItemGroup>
+  <None Include="licenses\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+</ItemGroup>
+```
 
 ### PackageProjectUrl
 A URL for the package's home page, often shown in UI displays as well as nuget.org.

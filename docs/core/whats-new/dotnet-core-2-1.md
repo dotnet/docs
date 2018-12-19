@@ -92,21 +92,28 @@ Starting with .NET Core 2.0, if the version of .NET Core that an application was
 > [!IMPORTANT]
 > This roll-forward behavior doesn't apply to preview releases. Nor does it apply to major releases. For example, a .NET Core 1.0 application wouldn't roll forward to .NET Core 2.0 or .NET Core 2.1.
 
-You can also disable minor version roll forward in any of three ways:
+You can modify this behavior by changing the setting for the roll-forward on no candidate shared framework. The available settings are:
+- `0` - disable minor version roll forward behavior
+- `1` - enable minor version roll forward behavior. This is the default value for the setting.
+- `2` - enable minor and major version roll forward behavior. If this is set, even different major versions will be considered, so it's possible that .NET Core 2.0 application runs on .NET Core 3.0 shared framework.
 
-- Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to 0.
+You can modify this setting in any of three ways:
 
-- Add the following line to the runtimeconfig.json file:
+- Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to the desired value.
+
+- Add the following line to the runtimeconfig.json file with the desired value:
 
    ```json
    "rollForwardOnNoCandidateFx" : 0
    ```
 
-- When using [.NET Core CLI tools](../tools/index.md), include the following option with a .NET Core command such as `run`:
+- When using [.NET Core CLI tools](../tools/index.md), include the following option with a .NET Core command such as `run` with the desired value:
 
    ```console
    dotnet run --rollForwardOnNoCandidateFx=0
    ```
+
+Patch version roll forward is independent of this setting and is done after any potential minor or major version roll forward is applied.
 
 ## Deployment
 

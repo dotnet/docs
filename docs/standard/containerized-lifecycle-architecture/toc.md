@@ -38,7 +38,7 @@
 
 ### [Use Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)](design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
 
-### [Build ASP.NET Core 2.0 applications deployed as Linux containers into AKS/Kubernetes orchestrator](design-develop-containerized-apps/build-aspnet-core-2.1-applications-linux-containers-aks-kubernetes.md)
+### [Build ASP.NET Core 2.0 applications deployed as Linux containers into AKS/Kubernetes orchestrator](design-develop-containerized-apps/build-aspnet-core-applications-linux-containers-aks-kubernetes.md)
 
 ## [Docker application DevOps workflow with Microsoft tools](docker-devops-workflow/index.md)
 

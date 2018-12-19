@@ -17,7 +17,7 @@ Prerequisites to have before using AKS are:
   - Windows Subsystem for Linux
 - Azure-CLI installed on [Windows, Mac or Linux](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
 
-> [!More info]
+> [!NOTE]
 > To find complete information about:
 >
 > Azure-CLI: [https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest](https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest)

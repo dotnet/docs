@@ -985,7 +985,7 @@
       <Docs>
         <param name="control">The object to add to this collection.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Add(System.Object)" />.</summary>
-        <returns>To be added.</returns>
+        <returns>The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1018,9 +1018,10 @@
         <Parameter Name="control" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
+        <param name="control">The object to locate in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Contains(System.Object)" />.</summary>
-        <returns>To be added.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.Control.ControlCollection" /> contains an element that has the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -1053,9 +1054,9 @@ This member is an explicit interface member implementation. It can be used only 
         <Parameter Name="control" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
+        <param name="control">The object to locate in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.IndexOf(System.Object)" />.</summary>
-        <returns>To be added.</returns>
+        <returns>The index of <paramref name="control" /> if found in the <see cref="T:System.Windows.Forms.Control.ControlCollection" />; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
  ## Remarks  
@@ -1088,8 +1089,8 @@ This member is an explicit interface member implementation. It can be used only 
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
+        <param name="value">The object to insert.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -1124,7 +1125,7 @@ This member is an explicit interface member implementation. It can be used only 
         <Parameter Name="control" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="control">To be added.</param>
+        <param name="value">The object to remove from the <see cref="T:System.Windows.Forms.Control.ControlCollection" />.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.IList.Remove(System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1159,7 +1160,7 @@ This member is an explicit interface member implementation. It can be used only 
       <Parameters />
       <Docs>
         <summary>For a description of this member, see <see cref="M:System.ICloneable.Clone" />.</summary>
-        <returns>To be added.</returns>
+        <returns>A new object that is a copy of this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

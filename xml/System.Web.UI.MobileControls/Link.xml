@@ -275,7 +275,7 @@
       </Parameters>
       <Docs>
         <param name="eventArgument">The optional event argument to be passed to the event handler.</param>
-        <param name="argument">To be added.</param>
+        <param name="argument">The optional event argument to be passed to the event handler.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[

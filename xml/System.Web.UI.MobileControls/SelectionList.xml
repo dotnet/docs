@@ -988,8 +988,8 @@
       <Docs>
         <param name="key">The key identifying the relevant value in the data.</param>
         <param name="data">The collection containing the post data.</param>
-        <param name="postDataKey">To be added.</param>
-        <param name="postCollection">To be added.</param>
+        <param name="postDataKey">The key identifying the relevant value in the data.</param>
+        <param name="postCollection">The collection containing the post data.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>
           <see langword="true" /> if the state of the <see cref="T:System.Web.UI.MobileControls.SelectionList" /> changes as a result of the postback; otherwise, <see langword="false" />.</returns>

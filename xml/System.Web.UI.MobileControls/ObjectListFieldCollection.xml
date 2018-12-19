@@ -527,7 +527,8 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Web.UI.IStateManager.IsTrackingViewState" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
-        <value>To be added.</value>
+        <value>
+          <see langword="true" /> if a server control is tracking its view state changes; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -568,7 +569,7 @@
       </Parameters>
       <Docs>
         <param name="state">The object containing the view state to load.</param>
-        <param name="savedState">To be added.</param>
+        <param name="savedState">The object containing the view state to load.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IStateManager.LoadViewState(System.Object)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[

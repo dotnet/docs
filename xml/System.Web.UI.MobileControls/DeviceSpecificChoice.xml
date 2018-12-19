@@ -380,7 +380,7 @@ public bool myChoiceMethod(System.Web.Mobile.MobileCapabilities
       </Parameters>
       <Docs>
         <param name="name">The name of the attribute to be set.</param>
-        <param name="key">To be added.</param>
+        <param name="key">The name of the attribute to be set.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <returns>A <see cref="T:System.String" /> that contains the value of the specified attribute.</returns>
         <remarks>
@@ -426,7 +426,7 @@ The value of the attribute.
       </Parameters>
       <Docs>
         <param name="name">The name of the attribute to be set.</param>
-        <param name="key">To be added.</param>
+        <param name="key">The name of the attribute to be set.</param>
         <param name="value">The value assigned to the attribute.</param>
         <summary>For a description of this member, see <see cref="M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>

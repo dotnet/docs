@@ -40,7 +40,7 @@
         <Parameter Name="customLoaderType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="customLoaderType">To be added.</param>
+        <param name="customLoaderType">The type of the custom loader.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.CustomLoaderAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

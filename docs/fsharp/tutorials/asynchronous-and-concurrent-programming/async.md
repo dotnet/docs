@@ -282,14 +282,63 @@ computation: Async<'T> * timeout: ?int * cancellationToken: ?CancellationToken -
 
 When to use:
 
-* Only once at the entry point for an executable
-* When you don't care about performance and want to execute a set of other asynchronous operations, such as the previous example using `Async.Parallel`
+* If you need it, use it only once in an application - at the entry point for an executable
+* When you don't care about performance and want to execute a set of other asynchronous operations at once
 
 What to watch out for:
 
 * This function blocks the calling thread, which undoes the use of asynchrony if it is used to only execute a single `Async<'T>`
 
-## Relationship to threads
+## Interoperating with .NET
+
+You may be working with a library or C# codebase that uses [async/await](../../../standard/async.md)-style asynchronous programming. Because these use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions rather than `Async<'T>`, you must cross a boundary between these two approaches to asynchrony.
+
+### How to work with .NET async and Task<T>
+
+Working with .NET async libraries and codebases that use <xref:System.Threading.Tasks.Task%601> (i.e., async computations that have return values) is straightforward and has built-in support with F#.
+
+You can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
+
+```fsharp
+let getValueFromLibrary param =
+    async {
+        let! value = DotNetLibrary.GetValueAsync param |> Async.AwaitTask
+        return value
+    }
+```
+
+You can use the `Async.StartAsTask` function to pass an asynchronous computation to a .NET caller:
+
+```fsharp
+let computationForCaller param =
+    async {
+        let! result = getAsyncResult param
+        return result
+    } |> Async.StartAsTask
+```
+
+### How to work with .NET async and Task
+
+To work with <xref:System.Threading.Tasks.Task> types (i.e., .NET async computations that have no return value) requires a bit more work. These helper functions are up to the task (pun _definitely_ intended):
+
+```fsharp
+module Async =
+    // Async<unit> -> Task
+    let startTaskFromAsyncUnit (comp: Async<unit>) =
+        Async.StartAsTask comp :> Task
+
+    // Task -> Async<unit>
+    let awaitTaskToAsyncUnit (task: Task) =
+        task.ContinueWith(fun t -> ()) |> Async.AwaitTask
+```
+
+You can then use them like so:
+
+```fsharp
+// TODO examples
+```
+
+## Relationship to multithreading
 
 Although threading is mentioned throughout this article, there are two important things to remember:
 

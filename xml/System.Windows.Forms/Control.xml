@@ -16299,6 +16299,25 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
       </AssemblyInfo>
       <Docs>
         <summary>Activates a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The <xref:System.Windows.Forms.Control.Select%2A> method activates the control if the control's <xref:System.Windows.Forms.ControlStyles.Selectable?displayProperty=nameWithType> style bit is set to `true`, it is contained in another control, and all its parent controls are both visible and enabled.
+
+The Windows Forms controls in the following list are not selectable. Controls derived from controls in the list will also not be selectable.
+  
+- <xref:System.Windows.Forms.Label>  
+- <xref:System.Windows.Forms.Panel>  
+- <xref:System.Windows.Forms.GroupBox>
+- <xref:System.Windows.Forms.PictureBox>  
+- <xref:System.Windows.Forms.ProgressBar>
+- <xref:System.Windows.Forms.Splitter>
+- <xref:System.Windows.Forms.LinkLabel> (when there is no link present in the control)
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Select">
@@ -16327,35 +16346,15 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
       <Docs>
         <summary>Activates the control.</summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.Control.Select%2A> method activates the control if the control's `Selectable` style bit is set to `true` in <xref:System.Windows.Forms.ControlStyles>, it is contained in another control, and all its parent controls are both visible and enabled.  
-  
- The Windows Forms controls in the following list are not selectable. Controls derived from controls in the list will also not be selectable.  
-  
--   <xref:System.Windows.Forms.Label>  
-  
--   <xref:System.Windows.Forms.Panel>  
-  
--   <xref:System.Windows.Forms.GroupBox>  
-  
--   <xref:System.Windows.Forms.PictureBox>  
-  
--   <xref:System.Windows.Forms.ProgressBar>  
-  
--   <xref:System.Windows.Forms.Splitter>  
-  
--   <xref:System.Windows.Forms.LinkLabel> (when there is no link present in the control)  
-  
-   
+          <format type="text/markdown"><![CDATA[
   
 ## Examples  
- The following code example selects the specified <xref:System.Windows.Forms.Control>, if it is selectable.  
+
+The following code example selects the specified <xref:System.Windows.Forms.Control>, if it is selectable.
   
- [!code-cpp[Windows.Forms.ControlMembers6#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.ControlMembers6/CPP/controlmembers6.cpp#2)]
- [!code-csharp[Windows.Forms.ControlMembers6#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.ControlMembers6/CS/controlmembers6.cs#2)]
- [!code-vb[Windows.Forms.ControlMembers6#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.ControlMembers6/VB/controlmembers6.vb#2)]  
+[!code-cpp[Windows.Forms.ControlMembers6#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.ControlMembers6/CPP/controlmembers6.cpp#2)]
+[!code-csharp[Windows.Forms.ControlMembers6#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.ControlMembers6/CS/controlmembers6.cs#2)]
+[!code-vb[Windows.Forms.ControlMembers6#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.ControlMembers6/VB/controlmembers6.vb#2)]  
   
  ]]></format>
         </remarks>
@@ -16395,24 +16394,6 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
   
 ## Remarks  
  The `directed` and `forward` parameters are used by container-style controls. When the `directed` parameter is set to `true`, the `forward` parameter is evaluated to determine which control to select. When `forward` is set to `true`, the next control in the tab order is selected; when `false`, the previous control in the tab order is selected.  
-  
- The <xref:System.Windows.Forms.Control.Select%2A> method activates the control if the control's `Selectable` style bit is set to `true` in <xref:System.Windows.Forms.ControlStyles>, it is contained in another control, and all its parent controls are both visible and enabled.  
-  
- The Windows Forms controls in the following list are not selectable. Controls derived from controls in the list will also not be selectable.  
-  
--   <xref:System.Windows.Forms.Label>  
-  
--   <xref:System.Windows.Forms.Panel>  
-  
--   <xref:System.Windows.Forms.GroupBox>  
-  
--   <xref:System.Windows.Forms.PictureBox>  
-  
--   <xref:System.Windows.Forms.ProgressBar>  
-  
--   <xref:System.Windows.Forms.Splitter>  
-  
--   <xref:System.Windows.Forms.LinkLabel> (when there is no link present in the control)  
   
  ]]></format>
         </remarks>

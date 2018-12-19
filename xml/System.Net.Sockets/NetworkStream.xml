@@ -1145,7 +1145,7 @@ myNetworkStream->Close();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.NetworkStream.Flush%2A> method implements the <xref:System.IO.Stream.Flush%2A?displayProperty=nameWithType> method; however, because <xref:System.Net.Sockets.NetworkStream> is not buffered, it has no affect on network streams. Calling the <xref:System.Net.Sockets.NetworkStream.Flush%2A> method does not throw an exception.  
+ The <xref:System.Net.Sockets.NetworkStream.Flush%2A> method implements the <xref:System.IO.Stream.Flush%2A?displayProperty=nameWithType> method; however, because <xref:System.Net.Sockets.NetworkStream> is not buffered, it has no effect on network streams. Calling the <xref:System.Net.Sockets.NetworkStream.Flush%2A> method does not throw an exception.  
   
  ]]></format>
         </remarks>

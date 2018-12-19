@@ -259,7 +259,7 @@
       <Docs>
         <typeparam name="T">The type of the expressions.</typeparam>
         <param name="nodes">The expressions to visit.</param>
-        <param name="callerName">The name of the calling method; used to report to report a better error message.</param>
+        <param name="callerName">The name of the calling method; used to report a better error message.</param>
         <summary>Visits all expressions in the collection, casting the results back to the original expression type.</summary>
         <returns>The modified expression collection, if any expression was modified; otherwise, returns the original expression collection.</returns>
         <remarks>To be added.</remarks>

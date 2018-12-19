@@ -105,7 +105,7 @@ and Address =
     PostCode: string }
 ```
 
-The following records are not created with the `and` keyword and would not compile:
+If you were to define the previous example without the `and` keyword, then it would not compile. The `and` keyword is required for mutually recursive definitions.
 
 ```fsharp
 // This will error as the Person record tries to use the Address type which is not defined using the `and` keyword 

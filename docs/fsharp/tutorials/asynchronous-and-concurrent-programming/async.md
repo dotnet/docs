@@ -289,7 +289,7 @@ What to watch out for:
 
 * This function blocks the calling thread, which undoes the use of asynchrony if it is used to only execute a single `Async<'T>`
 
-## A Note on Threads
+## Relationship to threads
 
 Although threading is mentioned throughout this article, there are two important things to remember:
 

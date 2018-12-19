@@ -134,7 +134,7 @@ let main argv =
 
 This will execute `countFileBytes` for each item in `argv` in the order of the elements of `argv` rather than executing them in parallel. This may be preferable if you wish to preserve the order of computations.
 
-## Common async starting functions
+## Common async functions
 
 Because F# asynchronous computations are a _specification_ of work rather than a representation of work that is already executing, they must be explicitly started with a starting function. There are many [Async starting functions](https://msdn.microsoft.com/library/ee370232.aspx) that are helpful in different contexts. You should take care in which to use, making sure that it is appropriate for your particular environment. The following section describes some of the more common starting functions.
 
@@ -214,6 +214,61 @@ When to use:
 What to watch out for:
 
 * This call will allocate an additional `Task` object, which can increase overhead if it is used often
+
+### Async.AwaitTask
+
+Returns an asynchronous computation that waits for the given <xref:System.Threading.Tasks.Task%601> to complete and returns its result as an `Async<'T>`
+
+Signature:
+
+```fsharp
+task: Task<'T>  -> Async<'T>
+```
+
+When to use:
+
+* When you are consuming a .NET API that returns a <xref:System.Threading.Tasks.Task%601> within an F# asynchronous computation
+
+What to watch out for:
+
+* This call will allocate an additional `Async<'T>` object, which can increase overhead if it is used often
+
+### Async.Catch
+
+Creates an asychronous computation that executes a given `Async<'T>`, returning a `Async<Choice<'T, exn>>`. If the given `Async<'T>` completes successfully, then a `Choice1Of2` is returned with the resultant value. If it raises an exception before it completes, then a `Choice2of2` is returned with the raised exception. If it is used on an asynchronous computation that is itself composed of many computations, and one of those computations throws an exception, then encompassing computation will be stopped entirely.
+
+Signature:
+
+```fsharp
+computation: Async<'T> -> Async<Choice<'T, exn>>
+```
+
+When to use:
+
+* When you are performing asynchronous work that may fail with an exception and you want to handle that exception in the caller
+
+What to watch out for:
+
+* When using combined or sequenced asynchronous computations, the encompassing computation will fully stop if one of its "internal" computations throws an exception
+
+### Async.Ignore
+
+Creates an asynchronous computation that runs the given computation and ignores its result.
+
+Signature:
+
+```fsharp
+computation: Async<'T> -> Async<unit>
+```
+
+When to use:
+
+* When you have an asynchronous computation whose result can be discarded
+* In conjunction with `Async.Start` or other functions that accept an `Async<unit>`
+
+What to watch out for:
+
+* If you must use this because you wish to use `Async.Start` or another function that requires `Async<unit>`, consider if discarding the result is actually okay to do. Discarding results just to fit a type signature should not generally be done
 
 ### Async.RunSynchronously
 

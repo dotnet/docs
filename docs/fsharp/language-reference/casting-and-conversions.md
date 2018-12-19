@@ -34,6 +34,7 @@ The following table shows conversion operators defined in F#.
 |`decimal`|Convert to `System.Decimal`.|
 |`char`|Convert to `System.Char`, a Unicode character.|
 |`enum`|Convert to an enumerated type.|
+
 In addition to built-in primitive types, you can use these operators with types that implement `op_Explicit` or `op_Implicit` methods with appropriate signatures. For example, the `int` conversion operator works with any type that provides a static method `op_Explicit` that takes the type as a parameter and returns `int`. As a special exception to the general rule that methods cannot be overloaded by return type, you can do this for `op_Explicit` and `op_Implicit`.
 
 ## Enumerated Types

@@ -90,7 +90,7 @@ let rr3 = { defaultRecord1 with Field2 = 42 }
 
  Defining mutually recursive records is done with the `and` keyword. This lets you link 2 or more record types together.
 
-The following records are created using the `and` keyword:
+For example, the following code defines a `Person` and `Address` type as mutually recursive:
 
 ```fsharp
 // Create a Person type and use the Address type that is not defined

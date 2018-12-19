@@ -97,7 +97,7 @@ As you can see, the `main` function has quite a few more calls made. Conceptuall
 3. Create an `Async<unit>` that will run the parallel computation and ignore its result
 4. Explicitly run the last computation with `Async.Start`
 
-When this program is ran, `countFileBytes`is ran in parallel for each command line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing.
+When this program runs, `countFileBytes` runs in parallel for each command line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing.
 
 ## Sequencing asynchronous computations
 

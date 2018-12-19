@@ -235,7 +235,7 @@ What to watch out for:
 
 ### Async.Catch
 
-Creates an asychronous computation that executes a given `Async<'T>`, returning a `Async<Choice<'T, exn>>`. If the given `Async<'T>` completes successfully, then a `Choice1Of2` is returned with the resultant value. If it raises an exception before it completes, then a `Choice2of2` is returned with the raised exception. If it is used on an asynchronous computation that is itself composed of many computations, and one of those computations throws an exception, then encompassing computation will be stopped entirely.
+Creates an asychronous computation that executes a given `Async<'T>`, returning an `Async<Choice<'T, exn>>`. If the given `Async<'T>` completes successfully, then a `Choice1Of2` is returned with the resultant value. If it raises an exception before it completes, then a `Choice2of2` is returned with the raised exception. If it is used on an asynchronous computation that is itself composed of many computations, and one of those computations throws an exception, then encompassing computation will be stopped entirely.
 
 Signature:
 

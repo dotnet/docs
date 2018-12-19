@@ -93,7 +93,7 @@ let main argv =
 As you can see, the `main` function has quite a few more calls made. Conceptually, it does the following:
 
 1. Transform the command line arguments into `Async<unit>` computations with `Array.map`
-2. Create an `Async<'T[]>` that will schedule and run the `countFileBytes` computations in parallel when it is ran
+2. Create an `Async<'T[]>` that schedules and runs the `countFileBytes` computations in parallel when it runs.
 3. Create an `Async<unit>` that will run the parallel computation and ignore its result
 4. Explicitly run the last computation with `Async.Start`
 

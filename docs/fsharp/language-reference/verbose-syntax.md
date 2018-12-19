@@ -1,5 +1,5 @@
 ---
-title: Verbose Syntax (F#)
+title: Verbose Syntax
 description: Learn the difference between verbose and lightweight syntax in the F# programming language.
 ms.date: 05/16/2016
 ---

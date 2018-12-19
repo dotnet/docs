@@ -203,6 +203,8 @@
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
       "titleSuffix": {
+        "docs/fsharp/tutorials/**/**.md": "F#",
+        "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",
         "docs/core/build/**.md": ".NET Core",
         "docs/core/deploying/**.md": ".NET Core",
@@ -213,6 +215,10 @@
         "docs/core/tools/**.md": ".NET Core CLI",
         "docs/core/tutorials/**.md": ".NET Core",
         "docs/core/versions/**.md": ".NET Core"
+      },
+      "ms.custom": {
+        "docs/fsharp/tutorials/**/**.md": "seodec18",
+        "docs/fsharp/language-reference/**/**.md": "seodec18"
       }
     },
     "dest": "_site",

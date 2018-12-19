@@ -84,4 +84,4 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
 ```  
   
 ## See Also  
- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

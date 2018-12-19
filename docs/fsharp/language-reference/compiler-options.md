@@ -1,5 +1,5 @@
 ---
-title: Compiler Options (F#)
+title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
 ms.date: 12/10/2018
 ---
@@ -64,7 +64,6 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](https://msdn.microsoft.com/library/8f2f5x2e.aspx).|
 
 ## Related articles
-
 
 |Title|Description|
 |-----|-----------|

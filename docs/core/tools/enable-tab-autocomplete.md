@@ -1,6 +1,6 @@
 ---
 title: Enable tab completion .NET Core CLI
-description: This article teaches you how to enable tab completion for the .NET Core CLI in v2.0 and above for PowerShell, Bash, and zsh.
+description: This article teaches you how to enable tab completion for the .NET Core CLI for PowerShell, Bash, and zsh.
 author: thraka
 ms.author: adegeo
 ms.date: 12/17/2018

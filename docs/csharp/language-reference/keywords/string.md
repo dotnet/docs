@@ -1,5 +1,7 @@
 ---
-title: "string (C# Reference)"
+title: "string - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "string"
@@ -49,6 +51,18 @@ The [] operator can be used for readonly access to individual characters of a `s
 string str = "test";
 char x = str[2];  // x = 's';
 ```
+
+In similar fashion, the [] operator can also be used for iterating over each character in a `string`:
+
+```csharp
+string str = "test";
+
+for (int i = 0; i < str.Length; i++)
+{
+  Console.Write(str[i] + " ");
+}
+// Output: t e s t
+``` 
 
 String literals are of type `string` and can be written in two forms, quoted and @-quoted. Quoted string literals are enclosed in double quotation marks ("):
 
@@ -102,7 +116,6 @@ For more information about strings in C#, see [Strings](../../programming-guide/
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)
 - [C# Keywords](index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [Reference Types](reference-types.md)
 - [Value Types](value-types.md)
 - [Basic String Operations](../../../standard/base-types/basic-string-operations.md)

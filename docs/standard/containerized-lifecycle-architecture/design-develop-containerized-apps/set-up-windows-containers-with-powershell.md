@@ -7,7 +7,7 @@ ms.date: 05/19/2017
 ---
 # Using Windows PowerShell commands in a DockerFile to set up Windows Containers (Docker standard based)
 
-With [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview), you can convert your existing Windows applications to Docker images and deploy them with the same tools as the rest of the Docker ecosystem.
+With [Windows Containers](/virtualization/windowscontainers/about/index), you can convert your existing Windows applications to Docker images and deploy them with the same tools as the rest of the Docker ecosystem.
 
 To use Windows Containers, you just need to write Windows PowerShell commands in the DockerFile, as demonstrated in the following example:
 
@@ -27,5 +27,5 @@ RUN powershell add-windowsfeature web-asp-net45
 ```
 
 >[!div class="step-by-step"]
-[Previous](visual-studio-tools-for-docker.md)
-[Next](../docker-devops-workflow/index.md)
+>[Previous](visual-studio-tools-for-docker.md)
+>[Next](../docker-devops-workflow/index.md)

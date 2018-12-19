@@ -1,8 +1,6 @@
 ---
-title: dotnet new command - .NET Core CLI
+title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-author: mairaw
-ms.author: mairaw
 ms.date: 10/24/2018
 ---
 # dotnet new
@@ -65,6 +63,7 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 | Class library                                | `classlib`       | [C#], F#, VB  |
 | Unit test project                            | `mstest`         | [C#], F#, VB  |
 | xUnit test project                           | `xunit`          | [C#], F#, VB  |
+| NUnit test project                           | `nunit`          | [C#], F#, VB  |
 | Razor page                                   | `page`           | [C#]          |
 | MVC ViewImports                              | `viewimports`    | [C#]          |
 | MVC ViewStart                                | `viewstart`      | [C#]          |

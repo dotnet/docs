@@ -66,6 +66,6 @@ Optimizes the probe for satellite assemblies.
 -   It does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
 ## See Also  
- [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

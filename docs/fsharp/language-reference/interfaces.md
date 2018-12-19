@@ -1,5 +1,5 @@
 ---
-title: Interfaces (F#)
+title: Interfaces
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
 ms.date: 05/16/2016
 ---

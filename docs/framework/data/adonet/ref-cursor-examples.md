@@ -20,7 +20,7 @@ The REF CURSOR examples are comprised of the following three Microsoft Visual Ba
 ## Creating the Oracle Package and Package Body  
  These examples require the following PL/SQL package and package body on your server. Create the following Oracle package on the Oracle server.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE CURSPKG AS   
     TYPE T_CURSOR IS REF CURSOR;   
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
@@ -33,7 +33,7 @@ END CURSPKG;
   
  Create the following Oracle package body on the Oracle server.  
   
-```  
+```sql
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS  
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,  
                                IO_CURSOR IN OUT T_CURSOR)  

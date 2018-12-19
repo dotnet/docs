@@ -559,5 +559,5 @@ RUN powershell add-windowsfeature web-asp-net45
   [*https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile*](https://github.com/Microsoft/aspnet-docker/blob/master/4.7.1-windowsservercore-ltsc2016/runtime/Dockerfile)
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](../multi-container-microservice-net-applications/index.md)
+>[Previous](index.md)
+>[Next](../multi-container-microservice-net-applications/index.md)

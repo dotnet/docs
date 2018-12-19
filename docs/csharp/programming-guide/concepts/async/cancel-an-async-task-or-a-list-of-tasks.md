@@ -78,8 +78,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
         {
             // ***Send a token to carry the message if cancellation is requested.
             int contentLength = await AccessTheWebAsync(cts.Token);
-            resultsTextBox.Text +=
-                String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);
+            resultsTextBox.Text += $"\r\nLength of the downloaded string: {contentLength}.\r\n";
         }
         // *** If cancellation is requested, an OperationCanceledException results.
         catch (OperationCanceledException)
@@ -102,8 +101,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
     {
         HttpClient client = new HttpClient();
 
-        resultsTextBox.Text +=
-            String.Format("\r\nReady to download.\r\n");
+        resultsTextBox.Text += "\r\nReady to download.\r\n";
 
         // You might need to slow things down to have a chance to cancel.
         await Task.Delay(250);
@@ -202,7 +200,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
         byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
 
         resultsTextBox.Text +=
-            String.Format("\r\nLength of the downloaded string: {0}.\r\n", urlContents.Length);
+            $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
     }
     ```
 
@@ -306,7 +304,7 @@ namespace CancelATask
                 // ***Send a token to carry the message if cancellation is requested.
                 int contentLength = await AccessTheWebAsync(cts.Token);
                 resultsTextBox.Text +=
-                    String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);
+                    $"\r\nLength of the downloaded string: {contentLength}.\r\n";
             }
             // *** If cancellation is requested, an OperationCanceledException results.
             catch (OperationCanceledException)
@@ -336,8 +334,7 @@ namespace CancelATask
         {
             HttpClient client = new HttpClient();
 
-            resultsTextBox.Text +=
-                String.Format("\r\nReady to download.\r\n");
+            resultsTextBox.Text += "\r\nReady to download.\r\n";
 
             // You might need to slow things down to have a chance to cancel.
             await Task.Delay(250);
@@ -463,7 +460,7 @@ namespace CancelAListOfTasks
                 byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
 
                 resultsTextBox.Text +=
-                    String.Format("\r\nLength of the downloaded string: {0}.\r\n", urlContents.Length);
+                    $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
             }
         }
 

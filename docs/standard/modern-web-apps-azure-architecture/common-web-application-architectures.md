@@ -310,5 +310,5 @@ If you want to add Docker support to your application using Visual Studio, make 
 >   <https://aka.ms/MicroservicesEbook>
 
 >[!div class="step-by-step"]
-[Previous](architectural-principles.md)
-[Next](common-client-side-web-technologies.md)
+>[Previous](architectural-principles.md)
+>[Next](common-client-side-web-technologies.md)

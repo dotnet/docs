@@ -40,7 +40,6 @@ You can develop Docker applications and Microsoft tools with most modern languag
 
 Basically, you can use any modern language supported by Docker in Linux or Windows.
 
-
 >[!div class="step-by-step"]
-[Previous](orchestrate-high-scalability-availability.md)
-[Next](docker-apps-inner-loop-workflow.md)
+>[Previous](orchestrate-high-scalability-availability.md)
+>[Next](docker-apps-inner-loop-workflow.md)

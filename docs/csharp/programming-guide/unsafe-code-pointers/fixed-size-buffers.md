@@ -1,5 +1,6 @@
 ---
-title: "Fixed Size Buffers (C# Programming Guide)"
+title: "Fixed Size Buffers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "fixed size buffers [C#]"

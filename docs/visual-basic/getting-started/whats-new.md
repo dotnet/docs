@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 10/04/2018
+ms.date: 10/24/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 
@@ -15,10 +15,13 @@ This topic lists key feature names for each version of Visual Basic, with detail
   
 ## Current version
 
-Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8  
+For new features, see [Visual Basic 15.8](#visual-basic-158)
 
 ## Previous versions
+
+Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
+For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 Visual Basic 15.3 / Visual Studio 2017 Version 15.3  
 For new features, see [Visual Basic 15.3](#visual-basic-153)
@@ -49,6 +52,39 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
+
+## Visual Basic 15.8
+
+**Optimized floating-point to integer conversion**
+
+In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) is set to `Off`:
+
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Single)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Single)?displayProperty=nameWithType>
+- <xref:System.Math.Ceiling(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Floor(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
+
+This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates some simple method calls that are affected by this optimization:
+
+```vb
+Dim s As Single = 173.7619
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+
+```
+
+Note that this truncates rather than rounds floating-point values.
 
 ## Visual Basic 15.5
 

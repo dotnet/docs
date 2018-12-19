@@ -1,5 +1,6 @@
 ---
-title: "How to: Return Subsets of Element Properties in a Query (C# Programming Guide)"
+title: "How to: Return Subsets of Element Properties in a Query - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"

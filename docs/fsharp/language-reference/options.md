@@ -1,5 +1,5 @@
 ---
-title: Options (F#)
+title: Options
 description: Learn how to use F# option types when an actual value might not exist for a named value or variable.
 ms.date: 05/16/2016
 ---

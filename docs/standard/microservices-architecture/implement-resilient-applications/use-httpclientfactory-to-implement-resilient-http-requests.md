@@ -65,7 +65,7 @@ Just by adding your typed client classes with AddHttpClient(), whenever you use 
 
 ### HttpClient lifetimes
 
-Each time you get an `HttpClient` object from IHttpClientFactory, a new instance of an `HttpClient` is returned. There will be an HttpMessageHandler** per named of typed client. `IHttpClientFactory` will pool the HttpMessageHandler instances created by the factory to reduce resource consumption. An HttpMessageHandler instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
+Each time you get an `HttpClient` object from IHttpClientFactory, a new instance of an `HttpClient` is returned. There will be an **HttpMessageHandler** per named of typed client. `IHttpClientFactory` will pool the HttpMessageHandler instances created by the factory to reduce resource consumption. An HttpMessageHandler instance may be reused from the pool when creating a new `HttpClient` instance if its lifetime hasn't expired.
 
 Pooling of handlers is desirable as each handler typically manages its own underlying HTTP connections; creating more handlers than necessary can result in connection delays. Some handlers also keep connections open indefinitely, which can prevent the handler from reacting to DNS changes.
 
@@ -156,8 +156,6 @@ Until this point, the code shown is just performing regular Http requests, but t
 
     [*https://github.com/aspnet/HttpClientFactory*](https://github.com/aspnet/HttpClientFactory)
 
-
-
 >[!div class="step-by-step"]
-[Previous] (explore-custom-http-call-retries-exponential-backoff.md)
-[Next] (implement-http-call-retries-exponential-backoff-polly.md)
+>[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+>[Next](implement-http-call-retries-exponential-backoff-polly.md)

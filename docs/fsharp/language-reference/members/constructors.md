@@ -1,5 +1,5 @@
 ---
-title: Constructors (F#)
+title: Constructors
 description: Learn how to define and use constructors in F# to create and initialize class and structure objects.
 ms.date: 05/16/2016
 ---

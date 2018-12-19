@@ -56,6 +56,10 @@ This sample demonstrates many of the problems that can be solved by using Expres
 
 This series of samples demonstrate many of the features of Language Integrated Query (LINQ). The [completed sample](https://github.com/dotnet/samples/tree/master/core/linq/csharp) is available in the dotnet/samples repository on GitHub.
 
+**Microsoft Office PIA Sample**
+
+The [ExcelDemo](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo) sample demonstrates the consumption of [Microsoft Office PIAs](/visualstudio/vsto/office-primary-interop-assemblies) in .NET Core.
+
 ### Tutorials
 
 **[Console Application](../csharp/tutorials/console-teleprompter.md)**
@@ -69,10 +73,6 @@ This tutorial demonstrates web communications, JSON serialization, and object-or
 **[Working with LINQ](../csharp/tutorials/working-with-linq.md)**
 
 This tutorial demonstrates many of the features of LINQ and the language elements that support it. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-linq) is available in the dotnet/samples repository on GitHub.
-
-**[Microservices hosted in Docker](../csharp/tutorials/microservices.md)**
-
-This tutorial demonstrates building an ASP.NET Core microservice and hosting it in Docker. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/WeatherMicroservice) is available in the dotnet/samples repository on GitHub.
 
 **[Getting started with .NET Core on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs.md)**
 

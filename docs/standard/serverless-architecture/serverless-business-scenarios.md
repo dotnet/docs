@@ -92,5 +92,5 @@ For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resou
 * [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
 
 >[!div class="step-by-step"]
-[Previous](orchestration-patterns.md)
-[Next](serverless-conclusion.md)
+>[Previous](orchestration-patterns.md)
+>[Next](serverless-conclusion.md)

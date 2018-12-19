@@ -159,7 +159,6 @@ In addition, from your containers, you can consume other managed services in Azu
 
 In the next sections, you can explore Microsoft's recommendations on when to use each of those Azure products and solutions specifically when targeting Windows Containers.
 
-
 >[!div class="step-by-step"]
-[Previous](what-about-cloud-native-applications.md)
-[Next](when-not-to-deploy-to-windows-containers.md)
+>[Previous](what-about-cloud-native-applications.md)
+>[Next](when-not-to-deploy-to-windows-containers.md)

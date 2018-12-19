@@ -1,9 +1,9 @@
 ---
-title: Packages, metapackages and frameworks
+title: Packages, metapackages and frameworks - .NET Core
 description: Learn terminology for packages, metapackages, and frameworks.
 author: richlander
-ms.author: mairaw
 ms.date: 06/20/2016
+ms.custom: "seodec18"
 ---
 # Packages, metapackages and frameworks
 

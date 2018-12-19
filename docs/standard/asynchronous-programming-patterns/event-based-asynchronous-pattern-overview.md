@@ -30,7 +30,7 @@ Applications that perform many tasks simultaneously, yet remain responsive to us
   
 -   Communicate with pending asynchronous operations using the familiar events-and-delegates model. For more information on using event handlers and delegates, see [Events](../../../docs/standard/events/index.md).  
   
- A class that supports the Event-based Asynchronous Pattern will have one or more methods named *MethodName***Async**. These methods may mirror synchronous versions, which perform the same operation on the current thread. The class may also have a *MethodName***Completed** event and it may have a *MethodName***AsyncCancel** (or simply **CancelAsync**) method.  
+ A class that supports the Event-based Asynchronous Pattern will have one or more methods named _MethodName_**Async**. These methods may mirror synchronous versions, which perform the same operation on the current thread. The class may also have a _MethodName_**Completed** event and it may have a _MethodName_**AsyncCancel** (or simply **CancelAsync**) method.  
   
  <xref:System.Windows.Forms.PictureBox> is a typical component that supports the Event-based Asynchronous Pattern. You can download an image synchronously by calling its <xref:System.Windows.Forms.PictureBox.Load%2A> method, but if the image is large, or if the network connection is slow, your application will stop ("hang") until the download operation is completed and the call to <xref:System.Windows.Forms.PictureBox.Load%2A> returns.  
   
@@ -42,7 +42,7 @@ Applications that perform many tasks simultaneously, yet remain responsive to us
 >  It is possible that the download will finish just as the <xref:System.Windows.Forms.PictureBox.CancelAsync%2A> request is made, so <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> may not reflect the request to cancel. This is called a *race condition* and is a common issue in multithreaded programming. For more information on issues in multithreaded programming, see [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md).  
   
 ## Characteristics of the Event-based Asynchronous Pattern  
- The Event-based Asynchronous Pattern may take several forms, depending on the complexity of the operations supported by a particular class. The simplest classes may have a single *MethodName***Async** method and a corresponding *MethodName***Completed** event. More complex classes may have several *MethodName***Async** methods, each with a corresponding *MethodName***Completed** event, as well as synchronous versions of these methods. Classes can optionally support cancellation, progress reporting, and incremental results for each asynchronous method.  
+ The Event-based Asynchronous Pattern may take several forms, depending on the complexity of the operations supported by a particular class. The simplest classes may have a single _MethodName_**Async** method and a corresponding _MethodName_**Completed** event. More complex classes may have several _MethodName_**Async** methods, each with a corresponding _MethodName_**Completed** event, as well as synchronous versions of these methods. Classes can optionally support cancellation, progress reporting, and incremental results for each asynchronous method.  
   
  An asynchronous method may also support multiple pending calls (multiple concurrent invocations), allowing your code to call it any number of times before it completes other pending operations. Correctly handling this situation may require your application to track the completion of each operation.  
   
@@ -112,14 +112,14 @@ public class AsyncExample
 >  You must be careful to provide a unique value for `userState` in your calls to multiple-invocation overloads. Non-unique task IDs will cause the asynchronous class throw an <xref:System.ArgumentException>.  
   
 ### Canceling Pending Operations  
- It is important to be able to cancel asynchronous operations at any time before their completion. Classes that implement the Event-based Asynchronous Pattern will have a `CancelAsync` method (if there is only one asynchronous method) or a *MethodName***AsyncCancel** method (if there are multiple asynchronous methods).  
+ It is important to be able to cancel asynchronous operations at any time before their completion. Classes that implement the Event-based Asynchronous Pattern will have a `CancelAsync` method (if there is only one asynchronous method) or a _MethodName_**AsyncCancel** method (if there are multiple asynchronous methods).  
   
  Methods that allow multiple invocations take a `userState` parameter, which can be used to track the lifetime of each task. `CancelAsync` takes a `userState` parameter, which allows you to cancel particular pending tasks.  
   
  Methods that support only a single pending operation at a time, like `Method1Async(string param)`, are not cancelable.  
   
 ### Receiving Progress Updates and Incremental Results  
- A class that adheres to the Event-based Asynchronous Pattern may optionally provide an event for tracking progress and incremental results. This will typically be named `ProgressChanged` or *MethodName***ProgressChanged**, and its corresponding event handler will take a <xref:System.ComponentModel.ProgressChangedEventArgs> parameter.  
+ A class that adheres to the Event-based Asynchronous Pattern may optionally provide an event for tracking progress and incremental results. This will typically be named `ProgressChanged` or _MethodName_**ProgressChanged**, and its corresponding event handler will take a <xref:System.ComponentModel.ProgressChangedEventArgs> parameter.  
   
  The event handler for the `ProgressChanged` event can examine the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A?displayProperty=nameWithType> property to determine what percentage of an asynchronous task has been completed. This property will range from 0 to 100, and it can be used to update the <xref:System.Windows.Forms.ProgressBar.Value%2A> property of a <xref:System.Windows.Forms.ProgressBar>. If multiple asynchronous operations are pending, you can use the <xref:System.ComponentModel.ProgressChangedEventArgs.UserState%2A?displayProperty=nameWithType> property to distinguish which operation is reporting progress.  
   

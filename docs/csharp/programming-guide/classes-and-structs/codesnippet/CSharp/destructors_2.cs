@@ -2,7 +2,7 @@
     {
         ~First()
         {
-            System.Diagnostics.Trace.WriteLine("First's destructor is called.");
+            System.Diagnostics.Trace.WriteLine("First's finalizer is called.");
         }
     }
 
@@ -10,7 +10,7 @@
     {
         ~Second()
         {
-            System.Diagnostics.Trace.WriteLine("Second's destructor is called.");
+            System.Diagnostics.Trace.WriteLine("Second's finalizer is called.");
         }
     }
 
@@ -18,11 +18,11 @@
     {
         ~Third()
         {
-            System.Diagnostics.Trace.WriteLine("Third's destructor is called.");
+            System.Diagnostics.Trace.WriteLine("Third's finalizer is called.");
         }
     }
 
-    class TestDestructors
+    class TestFinalizers
     {
         static void Main()
         {
@@ -31,7 +31,7 @@
 
     }
     /* Output (to VS Output Window):
-        Third's destructor is called.
-        Second's destructor is called.
-        First's destructor is called.
+        Third's finalizer is called.
+        Second's finalizer is called.
+        First's finalizer is called.
     */

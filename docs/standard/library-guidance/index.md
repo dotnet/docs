@@ -1,5 +1,5 @@
 ---
-title: Open-source library guidance
+title: Open-source .NET library guidance
 description: Best practice recommendations for developers to create high quality .NET libraries.
 author: jamesnk
 ms.author: mairaw
@@ -42,4 +42,4 @@ And finally, **Do not** recommendations indicate something you should almost nev
 **❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 >[!div class="step-by-step"]
-[Next](./get-started.md)
+>[Next](get-started.md)

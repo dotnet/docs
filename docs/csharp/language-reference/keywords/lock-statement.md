@@ -1,5 +1,7 @@
 ---
-title: "lock statement (C# Reference)"
+title: "lock statement - C# Reference"
+ms.custom: seodec18
+
 description: "Use the C# lock statement to synchronize thread access to a shared resource"
 ms.date: 10/01/2018
 f1_keywords: 
@@ -68,5 +70,4 @@ The following example defines an `Account` class that synchronizes access to its
 - [C# Reference](../index.md)
 - [C# Keywords](index.md)
 - [Statement Keywords](statement-keywords.md)
-- [Interlocked operations](../../../standard/threading/interlocked-operations.md)
 - [Overview of synchronization primitives](../../../standard/threading/overview-of-synchronization-primitives.md)

@@ -54,7 +54,7 @@ Dim number As Long = &H_0FAC_0326_1489_D68C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `L` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Long` data type, as the following example shows.
+Numeric literals can also include the `L` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `Long` data type, as the following example shows.
 
 ```vb
 Dim number = &H_0FAC_0326_1489_D68CL

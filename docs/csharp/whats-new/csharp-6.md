@@ -112,10 +112,10 @@ to use that setter to initialize the data storage used by the backing
 field. Consider this class for a student that contains the name and a
 list of the student's grades:
 
-[!code-csharp[Construction](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Construction)]
+[!code-csharp[Student](../../../samples/snippets/csharp/new-in-6/oldcode.cs#Student)]
  
 As this class grows, you may include other constructors. Each constructor
-needs to initialize this field, or you'll introduce errors.
+needs to initialize the Grades property, or you'll introduce errors.
 
 C# 6 enables you to assign an initial value for the storage used by an
 auto-property in the auto-property declaration:
@@ -127,8 +127,7 @@ easier to perform the initialization exactly once. The initialization
 is part of the property declaration, making it easier to equate the
 storage allocation with public interface for `Student` objects.
 
-Property Initializers can be used with read/write properties as well
-as read-only properties, as shown here.
+Property Initializers can be used with read-only properties, as shown above, and with read/write properties as well, as shown here.
 
 [!code-csharp[ReadWriteInitialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#ReadWriteInitialization)]
 

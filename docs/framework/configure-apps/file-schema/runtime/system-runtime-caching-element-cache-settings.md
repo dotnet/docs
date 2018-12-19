@@ -68,4 +68,4 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
 ```  
   
 ## See Also  
- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

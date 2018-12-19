@@ -121,4 +121,4 @@ closer to the end of the array.
 ## See also
 
 - [ref keyword](../../language-reference/keywords/ref.md)  
-- [Write safe efficient code](../../../csharp/write-safe-efficient-code.md)
+- [Write safe efficient code](../../write-safe-efficient-code.md)

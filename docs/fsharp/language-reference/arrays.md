@@ -1,12 +1,12 @@
 ---
-title: Arrays (F#)
+title: Arrays
 description: Learn how to create and use arrays in the F# programming language.
 ms.date: 05/16/2016
 ---
 # Arrays
 
 > [!NOTE]
-The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 
@@ -412,4 +412,4 @@ The module [`Array.Parallel`](https://msdn.microsoft.com/library/60f30b77-5af4-4
 ## See also
 
 - [F# Language Reference](index.md)
-- [F#; Types](fsharp-types.md)
+- [F# Types](fsharp-types.md)

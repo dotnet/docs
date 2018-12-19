@@ -1,9 +1,8 @@
 ---
-title: Byrefs (F#)
+title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
 ms.date: 09/02/2018
 ---
-
 # Byrefs
 
 F# has two major feature areas that deal in the space of low-level programming:

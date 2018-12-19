@@ -241,9 +241,9 @@ Although threading is mentioned throughout this article, there are two important
 1. There is no affinity between an asynchronous computation and a thread, unless explicitly started on the current thread
 1. Asynchronous programming in F# is not an abstraction for multithreading
 
+What this means is that **asynchronous computations are not an abstraction for multithreading**. For example, a computation may actually run on the its caller's thread, depending on the nature of the work. A computation could also "jump" between threads, borrowing them for a small amount of time to do useful work in between periods of "waiting" (such as when a network call is in transit).
 
-
-but it is important to know that **this doesn't mean that async computations are a facade for multithreading**. A computation can actually "jump" between threads, borrowing them for a small amount of time to do useful work. When an async computation is effectively "waiting" (for example, waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else. This allows async computations to utilize the system they run on as effectively as possible.
+Although F# provides some abilities to start an asynchronous computation on the current thread (or explicitly not on the current thread), asynchrony generally is not associated with a particular threading strategy.
 
 ## Further reading
 

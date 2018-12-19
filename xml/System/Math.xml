@@ -968,7 +968,11 @@
   
 ## Remarks  
  The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity.  
-  
+
+## Examples
+
+[!INCLUDE[midpoint-rounding](~/includes/csharp-interactive-note.md)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1015,12 +1019,10 @@
 ## Remarks  
  The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward positive infinity. In other words, if `d` is positive, the presence of any fractional component causes `d` to be rounded to the next highest integer. If `d` is negative, the rounding operation causes any fractional component of `d` to be discarded. The operation of this method differs from the <xref:System.Math.Floor%28System.Decimal%29> method, which supports rounding toward negative infinity.  
   
-   
-  
 ## Examples  
  The following example illustrates the <xref:System.Math.Ceiling%28System.Decimal%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Decimal%29> method.  
   
- [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
+ [!code-csharp-interactive[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
  [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
   
  ]]></format>
@@ -1090,7 +1092,7 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
 ## Examples  
  The following example illustrates the <xref:System.Math.Ceiling%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Floor%28System.Double%29> method.  
   
- [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
+ [!code-csharp-interactive[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
  [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
   
  ]]></format>
@@ -1909,7 +1911,11 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
   
 ## Remarks  
  The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity.  
-  
+
+## Examples
+
+[!INCLUDE[midpoint-rounding](~/includes/csharp-interactive-note.md)]
+
  ]]></format>
         </remarks>
       </Docs>
@@ -1955,13 +1961,11 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7969
   
 ## Remarks  
  The behavior of this method follows IEEE Standard 754, section 4. This kind of rounding is sometimes called rounding toward negative infinity. In other words, if `d` is positive, any fractional component is truncated. If `d` is negative, the presence of any fractional component causes it to be rounded to the smaller integer. The operation of this method differs from the <xref:System.Math.Ceiling%2A> method, which supports rounding toward positive infinity.  
-  
-   
-  
+
 ## Examples  
  The following example illustrates the <xref:System.Math.Floor%28System.Decimal%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Decimal%29> method.  
   
- [!code-csharp[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
+ [!code-csharp-interactive[System.Math.Ceiling#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#1)]
  [!code-vb[System.Math.Ceiling#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#1)]  
   
  ]]></format>
@@ -2032,7 +2036,7 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
 ## Examples  
  The following example illustrates the <xref:System.Math.Floor%28System.Double%29?displayProperty=nameWithType> method and contrasts it with the <xref:System.Math.Ceiling%28System.Double%29> method.  
   
- [!code-csharp[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
+ [!code-csharp-interactive[System.Math.Ceiling#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Math.Ceiling/cs/Ceiling1.cs#2)]
  [!code-vb[System.Math.Ceiling#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Math.Ceiling/vb/Ceiling1.vb#2)]  
   
  ]]></format>
@@ -3958,89 +3962,21 @@ Remainder = (Math.Abs(dividend) - (Math.Abs(divisor) *
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- In this section:  
-  
- [Overloaded method syntax](#Syntax)   
- [Parameters](#Params)   
- [Return value](#Returns)   
- [Exceptions](#Exceptions)   
- [Which method do I call?](#Tasks)   
- [Midpoint values and rounding conventions](#Midpoint)   
- [Rounding and precision](#Precision)   
- [Rounding and single-precision floating-point values](#Single)   
- Examples:   
- [Math.Round(Decimal)](#Round1_Example)  
- [Math.Round(Double)](#Round2_Example)  
- [Math.Round(Decimal, Int32)](#Round3_Example)  
- [Math.Round(Decimal, MidpointRounding)](#Round4_Example)  
- [Math.Round(Double, Int32)](#Round5_Example)  
- [Math.Round(Double, MidpointRounding)](#Round6_Example)  
- [Math.Round(Decimal, Int32, MidpointRounding)](#Round7_Example)  
- [Math.Round(Double, Int32, MidpointRounding)](#Round8_Example)  
-[Version information](#Round_Versions)  
-  
-<a name="Syntax"></a>   
-## Overloaded method syntax  
- For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
-  
- `Decimal Math.Round(Decimal` `d` `)`  
- Rounds a decimal value to the nearest integer, and rounds midpoint values to the nearest even number ([example](#Round1_Example)).  
-  
- `Double Math.Round(Double` `a` `)`  
- Rounds a double-precision floating-point value to the nearest integer, and rounds midpoint values to the nearest even number ([example](#Round2_Example)).  
-  
- `Decimal Math.Round(Decimal` `d` `, Int32`  `decimals` `)`  
- Rounds a decimal value to a specified number of fractional digits, and rounds midpoint values to the nearest even number ([example](#Round3_Example)).  
-  
- `Double Math.Round(Double` `value` `, Int32`  `digits` `)`  
- Rounds a double-precision floating-point value to a specified number of fractional digits, and rounds midpoint values to the nearest even number ([example](#Round4_Example)).  
-  
- `Decimal Math.Round(Decimal` `d` `, MidpointRounding`  `mode` `)`  
- Rounds a decimal value to the nearest integer, and uses the specified rounding convention for midpoint values ([example](#Round5_Example)).  
-  
- `Double Math.Round(Double` `value` `, MidpointRounding`  `mode` `)`  
- Rounds a double-precision floating-point value to the nearest integer, and uses the specified rounding convention for midpoint values ([example](#Round6_Example)).  
-  
- `Decimal Math.Round(Decimal` `d` `, Int32`  `decimals` `, MidpointRounding`  `mode` `)`  
- Rounds a decimal value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values ([example](#Round7_Example)).  
-  
- `Double Math.Round(Double` `value` `, Int32`  `digits` `, MidpointRounding`  `mode` `)`  
- Rounds a double-precision floating-point value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values ([example](#Round8_Example)).  
-  
-<a name="Params"></a>   
-## Parameters  
- This is a complete list of parameters for the <xref:System.Math.Round%2A> method. For the parameters used by each overload, see the overload syntax above.  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`d`|<xref:System.Decimal>|A number to be rounded.|  
-|`a`<br /><br /> -or-<br /><br /> `value`|<xref:System.Double>|A double-precision floating-point number to be rounded.|  
-|`decimals`<br /><br /> -or-<br /><br /> `digits`|<xref:System.Int32>|The number of fractional digits in the return value. For <xref:System.Decimal> values, it can range from 0 to 28. For <xref:System.Double> values, it can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.<br /><br /> Default value: 0, which rounds to an integer|  
-|`mode`|<xref:System.MidpointRounding>|A flag that specifies the convention to use for rounding midpoint values. See [Midpoint values and rounding conventions](#Midpoint).<br /><br /> Default value: <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>|  
-  
-<a name="Returns"></a>   
-## Return value  
- Type: <xref:System.Decimal> or <xref:System.Double>, depending on the type of the value to be rounded.   
-A numeric value of the same type as `d`, `a`, or `value`, but rounded either to an integer or to the specified number of decimal digits. See [Midpoint values and rounding conventions](#Midpoint) for information about rounding numbers with midpoint values.  
-  
-> [!WARNING]
->  When rounding midpoint values, the rounding algorithm performs an equality test. Because of problems of binary representation and precision in the floating-point format, the value returned by the method can be unexpected. For more information, see [Rounding and precision](#Precision).  
-  
- If an overload with a <xref:System.Double> parameter is called with <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If it is called with <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
-  
-<a name="Exceptions"></a>   
-## Exceptions  
-  
-|Exception|Condition|Thrown by|  
-|---------------|---------------|---------------|  
-|<xref:System.OverflowException>|The result is outside the range of the <xref:System.Decimal> type.|<xref:System.Math.Round%28System.Decimal%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
-|<xref:System.ArgumentOutOfRangeException>|`decimals` is less than 0 or greater than 28.<br /><br /> -or-<br /><br /> `digits` is less than 0 or greater than 15.|<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
-|<xref:System.ArgumentException>|`mode` is not a valid value of <xref:System.MidpointRounding>.|<xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29><br /><br /> <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|  
-  
-<a name="Tasks"></a>   
-## Which method do I call?  
-  
+<a name="remarks_round"></a> 
+## Remarks 
+
+In this section:
+
+- [Which method do I call?](#which-method-do-i-call)
+- [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions)   
+- [Rounding and precision](#rounding-and-precision) 
+- [Rounding and single-precision floating point values](#rounding-and-single-precision-floating-point-values)
+- [Examples of individual overloads](#examples)
+
+### Which method do I call?
+
+You can use the following table to select an appropriate rounding method. In addition to the `Math.Round` methods, it also includes <xref:System.Math.Ceiling%2A?displayProperty=nameWithType> and <xref:System.Math.Floor%2A?displayProperty=nameWithType>.
+
 |To|Call|  
 |--------|----------|  
 |Round a number to an integer by using the rounding to nearest convention.|<xref:System.Math.Round%28System.Decimal%29><br /><br /> -or-<br /><br /> <xref:System.Math.Round%28System.Double%29>|  
@@ -4051,31 +3987,33 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
 |Round a number to a specified number of fractional digits while minimizing problems of precision in rounding midpoint values.|Call a rounding method that implements a "greater than or approximately equal to" comparison. See [Rounding and precision](#Precision).|  
 |Round a fractional value to an integer that is greater than the fractional value. For example, round 3.1 to 4.|<xref:System.Math.Ceiling%2A>|  
 |Round a fractional value to an integer that is less than the fractional value. For example, round 3.9 to 3.|<xref:System.Math.Floor%2A>|  
+
+### Midpoint values and rounding conventions 
+
+Rounding involves converting a numeric value with a specified precision to the nearest value with less precision. For example, you can use the <xref:System.Math.Round%28System.Double%29> method to round a value of 3.4 to 3.0, and the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29> method to round a value of 3.579 to 3.58.  
   
-<a name="Midpoint"></a>   
-## Midpoint values and rounding conventions  
- Rounding involves converting a numeric value with a specified precision to the nearest value with less precision. For example, you can use the <xref:System.Math.Round%28System.Double%29> method to round a value of 3.4 to 3.0, and the <xref:System.Math.Round%28System.Double%2CSystem.Int32%29> method to round a value of 3.579 to 3.58.  
+In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 3.47500 is a midpoint value if it is to be rounded two decimal places, and 7.500 is a midpoint value if it is to be rounded to an integer. In these cases, the nearest value can't be easily identified without a rounding convention.  
   
- In a midpoint value, the value after the least significant digit in the result is precisely half way between two numbers. For example, 3.47500 is a midpoint value if it is to be rounded two decimal places, and 7.500 is a midpoint value if it is to be rounded to an integer. In these cases, the nearest value can't be easily identified without a rounding convention.  
+The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
   
- The <xref:System.Math.Round%2A> method supports two rounding conventions for handling midpoint values:  
+- **Rounding away from zero**  
+
+   Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> enumeration member.  
   
- **Rounding away from zero**  
- Midpoint values are rounded to the next number away from zero. For example, 3.75 rounds to 3.8, 3.85 rounds to 3.9, -3.75 rounds to -3.8, and -3.85 rounds to -3.9. This form of rounding is represented by the <xref:System.MidpointRounding.AwayFromZero?displayProperty=nameWithType> enumeration member.  
+   Rounding away from zero is the most widely known form of rounding.  
   
- Rounding away from zero is the most widely known form of rounding.  
+- **Rounding to nearest, or banker's rounding**  
+
+   Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> enumeration member.  
   
- **Rounding to nearest, or banker's rounding**  
- Midpoint values are rounded to the nearest even number. For example, both 3.75 and 3.85 round to 3.8, and both -3.75 and -3.85 round to -3.8. This form of rounding is represented by the <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType> enumeration member.  
+  Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
   
- Rounding to nearest is the standard form of rounding used in financial and statistical operations. It conforms to IEEE Standard 754, section 4. When used in multiple rounding operations, it reduces the rounding error that is caused by consistently rounding midpoint values in a single direction. In some cases, this rounding error can be significant.  
+  The following example illustrates the bias that can result from consistently rounding midpoint values in a single direction. The example computes the true mean of an array of <xref:System.Decimal> values, and then computes the mean when the values in the array are rounded by using the two conventions. In this example, the true mean and the mean that results when rounding to nearest are the same. However, the mean that results when rounding away from zero differs by .05 (or by 3.6%) from the true mean.  
   
- The following example illustrates the bias that can result from consistently rounding midpoint values in a single direction. The example computes the true mean of an array of <xref:System.Decimal> values, and then computes the mean when the values in the array are rounded by using the two conventions. In this example, the true mean and the mean that results when rounding to nearest are the same. However, the mean that results when rounding away from zero differs by .05 (or by 3.6%) from the true mean.  
+  [!code-csharp-interactive[System.Math.Round.Overload#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mean1.cs#2)]
+  [!code-vb[System.Math.Round.Overload#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mean1.vb#2)]  
   
- [!code-csharp[System.Math.Round.Overload#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mean1.cs#2)]
- [!code-vb[System.Math.Round.Overload#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mean1.vb#2)]  
-  
- By default, the <xref:System.Math.Round%2A> method uses the rounding to nearest convention. The following table lists the overloads of the <xref:System.Math.Round%2A> method and the rounding convention that each uses.  
+By default, the <xref:System.Math.Round%2A> method uses the rounding to nearest convention. The following table lists the overloads of the <xref:System.Math.Round%2A> method and the rounding convention that each uses.  
   
 |Overload|Rounding convention|  
 |--------------|-------------------------|  
@@ -4087,119 +4025,62 @@ A numeric value of the same type as `d`, `a`, or `value`, but rounded either to 
 |<xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Decimal%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
 |<xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29>|Determined by `mode` parameter|  
-  
-<a name="Precision"></a>   
+
 ## Rounding and precision  
- In order to determine whether a rounding operation involves a midpoint value, the <xref:System.Math.Round%2A> method multiplies the original value to be rounded by 10<sup>n</sup>, where *n* is the desired number of fractional digits in the return value, and then determines whether the remaining fractional portion of the value is greater than or equal to .5. This is a slight variation on a test for equality, and as discussed in the "Testing for Equality" section of the <xref:System.Double> reference topic, tests for equality with floating-point values are problematic because of the floating-point format's issues with binary representation and precision. This means that any fractional portion of a number that is slightly less than .5 (because of a loss of precision) will not be rounded upward.  
+
+In order to determine whether a rounding operation involves a midpoint value, the <xref:System.Math.Round%2A> method multiplies the original value to be rounded by 10<sup>n</sup>, where *n* is the desired number of fractional digits in the return value, and then determines whether the remaining fractional portion of the value is greater than or equal to .5. This is a slight variation on a test for equality, and as discussed in the "Testing for Equality" section of the <xref:System.Double> reference topic, tests for equality with floating-point values are problematic because of the floating-point format's issues with binary representation and precision. This means that any fractional portion of a number that is slightly less than .5 (because of a loss of precision) will not be rounded upward.  
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+The following example illustrates the problem. It repeatedly adds .1 to 11.0 and rounds the result to the nearest integer. Regardless of the rounding convention, 11.5 should round to 12. However, as the output from the example shows, it does not. The example uses the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to display the floating point value's full precision, and shows that the value to be rounded has lost precision during repeated additions, and its value is actually 11.499999999999998. Because .499999999999998 is less than .5, the value is not rounded to the next highest integer. As the example also shows, this problem does not occur if we simply assign the constant value 11.5 to a <xref:System.Double> variable.  
   
- The following example illustrates the problem. It repeatedly adds .1 to 11.0 and rounds the result to the nearest integer. Regardless of the rounding convention, 11.5 should round to 12. However, as the output from the example shows, it does not. The example uses the "R" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md) to display the floating point value's full precision, and shows that the value to be rounded has lost precision during repeated additions, and its value is actually 11.499999999999998. Because .499999999999998 is less than .5, the value is not rounded to the next highest integer. As the example also shows, this problem does not occur if we simply assign the constant value 11.5 to a <xref:System.Double> variable.  
+[!code-csharp-interactive[System.Math.Round.Overload#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision1.cs#7)]
+[!code-vb[System.Math.Round.Overload#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision1.vb#7)]  
   
- [!code-csharp[System.Math.Round.Overload#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision1.cs#7)]
- [!code-vb[System.Math.Round.Overload#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision1.vb#7)]  
+Problems of precision in rounding midpoint values are most likely to arise in the following conditions:  
   
- Problems of precision in rounding midpoint values are most likely to arise in the following conditions:  
+- When a fractional value cannot be expressed precisely in the floating-point type's binary format.  
   
--   When a fractional value cannot be expressed precisely in the floating-point type's binary format.  
+- When the value to be rounded is calculated from one or more floating-point operations.  
   
--   When the value to be rounded is calculated from one or more floating-point operations.  
-  
--   When the value to be rounded is a <xref:System.Single> rather than a <xref:System.Double> or <xref:System.Decimal>. For more information, see the next section, [Rounding and single-precision floating-point values](#Single).  
+- When the value to be rounded is a <xref:System.Single> rather than a <xref:System.Double> or <xref:System.Decimal>. For more information, see the next section, [Rounding and single-precision floating-point values](#Single).  
   
  In cases where the lack of precision in rounding operations is problematic, you can do the following:  
   
--   If the rounding operation calls an overload that rounds a <xref:System.Double> value, you can change the <xref:System.Double> to a <xref:System.Decimal> value and call an overload that rounds a <xref:System.Decimal> value instead. Although the <xref:System.Decimal> data type also has problems of representation and loss of precision, these issues are far less common.  
+- If the rounding operation calls an overload that rounds a <xref:System.Double> value, you can change the <xref:System.Double> to a <xref:System.Decimal> value and call an overload that rounds a <xref:System.Decimal> value instead. Although the <xref:System.Decimal> data type also has problems of representation and loss of precision, these issues are far less common.  
   
--   Define a custom rounding algorithm that performs a "nearly equal" test to determine whether the value to be rounded is acceptably close to a midpoint value. The following example defines a `RoundApproximate` method that examines whether a fractional value is sufficiently near to a midpoint value to be subject to midpoint rounding. As the output from the example shows, it corrects the rounding problem shown in the previous example.  
+- Define a custom rounding algorithm that performs a "nearly equal" test to determine whether the value to be rounded is acceptably close to a midpoint value. The following example defines a `RoundApproximate` method that examines whether a fractional value is sufficiently near to a midpoint value to be subject to midpoint rounding. As the output from the example shows, it corrects the rounding problem shown in the previous example.  
   
-     [!code-csharp[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
+     [!code-csharp-interactive[System.Math.Round.Overload#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/precision2.cs#8)]
      [!code-vb[System.Math.Round.Overload#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/precision2.vb#8)]  
   
-<a name="Single"></a>   
-## Rounding and single-precision floating-point values  
- The <xref:System.Math.Round%2A> method includes overloads that accept arguments of type <xref:System.Decimal> and <xref:System.Double>. There are no methods that round values of type <xref:System.Single>. If you pass a <xref:System.Single> value to one of the overloads of the <xref:System.Math.Round%2A> method, it is cast (in C#) or converted (in Visual Basic) to a <xref:System.Double>, and the corresponding <xref:System.Math.Round%2A> overload with a <xref:System.Double> parameter is called. Although this is a widening conversion, it often involves a loss of precision, as the following example illustrates. When a <xref:System.Single> value of 16.325 is passed to the <xref:System.Math.Round%2A> method and rounded to two decimal places using the rounding to nearest convention, the result is 16.33 and not the expected result of 16.32.  
+### Rounding and single-precision floating-point values  
+
+The <xref:System.Math.Round%2A> method includes overloads that accept arguments of type <xref:System.Decimal> and <xref:System.Double>. There are no methods that round values of type <xref:System.Single>. If you pass a <xref:System.Single> value to one of the overloads of the <xref:System.Math.Round%2A> method, it is cast (in C#) or converted (in Visual Basic) to a <xref:System.Double>, and the corresponding <xref:System.Math.Round%2A> overload with a <xref:System.Double> parameter is called. Although this is a widening conversion, it often involves a loss of precision, as the following example illustrates. When a <xref:System.Single> value of 16.325 is passed to the <xref:System.Math.Round%2A> method and rounded to two decimal places using the rounding to nearest convention, the result is 16.33 and not the expected result of 16.32.  
   
- [!code-csharp[System.Math.Round.Overload#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/single1.cs#1)]
- [!code-vb[System.Math.Round.Overload#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/single1.vb#1)]  
+[!code-csharp-interactive[System.Math.Round.Overload#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/single1.cs#1)]
+[!code-vb[System.Math.Round.Overload#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/single1.vb#1)]  
   
- This unexpected result is due to a loss of precision in the conversion of the <xref:System.Single> value to a <xref:System.Double>. Because the resulting <xref:System.Double> value of 16.325000762939453 is not a midpoint value and is greater than 16.325, it is always rounded upward.  
+This unexpected result is due to a loss of precision in the conversion of the <xref:System.Single> value to a <xref:System.Double>. Because the resulting <xref:System.Double> value of 16.325000762939453 is not a midpoint value and is greater than 16.325, it is always rounded upward.  
   
- In many cases, as the example illustrates, the loss of precision can be minimized or eliminated by casting or converting the <xref:System.Single> value to a <xref:System.Decimal>. Note that, because this is a narrowing conversion, it requires using a cast operator or calling a conversion method.  
+In many cases, as the example illustrates, the loss of precision can be minimized or eliminated by casting or converting the <xref:System.Single> value to a <xref:System.Decimal>. Note that, because this is a narrowing conversion, it requires using a cast operator or calling a conversion method.  
   
-<a name="Round1_Example"></a>   
-## Math.Round(Decimal) example  
- The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding.ToEven> convention.  
-  
- [!code-csharp[System.Math.Round#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/rounddecimal1.cs#6)]
- [!code-vb[System.Math.Round#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/rounddecimal1.vb#6)]  
-  
-<a name="Round2_Example"></a>   
-## Math.Round(Double) example  
- The following example demonstrates rounding to the nearest integer value.  
-  
- [!code-cpp[Classic Math.Round Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Math.Round Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round Example/CS/source.cs#1)]
- [!code-vb[Classic Math.Round Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round Example/VB/source.vb#1)]  
-  
-<a name="Round3_Example"></a>   
-## Math.Round(Decimal, Int32) example  
- The following example rounds decimal values with two fractional digits to values that have a single fractional digit.  
-  
- [!code-csharp[System.Math.Round.Overload#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/source.cs#3)]
- [!code-vb[System.Math.Round.Overload#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/source.vb#3)]  
-  
-<a name="Round4_Example"></a>   
-## Math.Round(Double, Int32) example  
- The following example rounds double values with two fractional digits to doubles that have a single fractional digit.  
-  
- [!code-cpp[Classic Math.Round2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Math.Round2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CS/source.cs#1)]
- [!code-vb[Classic Math.Round2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round2 Example/VB/source.vb#1)]  
-  
-<a name="Round5_Example"></a>   
-## Math.Round(Decimal, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
-  
- [!code-csharp[System.Math.Round.Overload#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint1.cs#5)]
- [!code-vb[System.Math.Round.Overload#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint1.vb#5)]  
-  
-<a name="Round6_Example"></a>   
-## Math.Round(Double, MidpointRounding) example  
- The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
-  
- [!code-csharp[System.Math.Round.Overload#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint2.cs#6)]
- [!code-vb[System.Math.Round.Overload#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint2.vb#6)]  
-  
-<a name="Round7_Example"></a>   
-## Math.Round(Decimal, Int32, MidpointRounding) example  
- The following example demonstrates how to use the <xref:System.Math.Round%2A> method with the <xref:System.MidpointRounding> enumeration.  
-  
- [!code-cpp[math.midpointrounding#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.midpointrounding/cpp/mpr.cpp#1)]
- [!code-csharp[math.midpointrounding#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.midpointrounding/CS/mpr.cs#1)]
- [!code-vb[math.midpointrounding#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.midpointrounding/VB/mpr.vb#1)]  
-  
-<a name="Round8_Example"></a>   
-## Math.Round(Double, Int32, MidpointRounding) example  
- The following example demonstrates how to use the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29> method with the <xref:System.MidpointRounding> enumeration.  
-  
- [!code-csharp[System.Math.Round.Overload#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mpr.cs#4)]
- [!code-vb[System.Math.Round.Overload#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mpr.vb#4)]  
-  
-<a name="Round_Versions"></a>   
-## Version information  
- .NET Framework  
- Overloads without a <xref:System.MidpointRounding> parameter are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
-Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5, 4, 3.5, 3.0, 2.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- All overloads are supported  
-  
- .NET for Windows Store apps  
- All overloads are supported in: Windows 8  
-  
- ]]></format>
+### Examples 
+
+In addition to the examples in the [Remarks](#remarks-round) section, this article includes examples that illustrate the following overloads of the `Math.Round` method:
+
+[Math.Round(Decimal)](#Round1_Example)  
+[Math.Round(Double)](#Round2_Example)  
+[Math.Round(Decimal, Int32)](#Round3_Example)  
+[Math.Round(Decimal, MidpointRounding)](#Round4_Example)  
+[Math.Round(Double, Int32)](#Round5_Example)  
+[Math.Round(Double, MidpointRounding)](#Round6_Example)  
+[Math.Round(Decimal, Int32, MidpointRounding)](#Round7_Example)  
+[Math.Round(Double, Int32, MidpointRounding)](#Round8_Example)  
+
+[!INCLUDE[midpoint-rounding](~/includes/csharp-interactive-note.md)]
+
+       ]]></format>
         </remarks>
         <altmember cref="M:System.Math.Ceiling(System.Decimal)" />
         <altmember cref="M:System.Math.Floor(System.Decimal)" />
@@ -4242,17 +4123,26 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       </Parameters>
       <Docs>
         <param name="d">A decimal number to be rounded.</param>
-        <summary>Rounds a decimal value to the nearest integral value.</summary>
-        <returns>The integer nearest parameter <paramref name="d" />. If the fractional component of <paramref name="d" /> is halfway between two integers, one of which is even and the other odd, the even number is returned. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
+        <summary>Rounds a decimal value to the nearest integral value, and rounds midpoint values to the nearest even number.</summary>
+        <returns>The integer nearest the <paramref name="d" /> parameter. If the fractional component of <paramref name="d" /> is halfway between two integers, one of which is even and the other odd, the even number is returned. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+
 ## Remarks  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+This method uses the default rounding convention of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>. See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+<a name="Round1_Example"></a> 
+## Example
+
+The following example demonstrates the <xref:System.Math.Round%28System.Decimal%29> method. Note that the <xref:System.Decimal> value of 4.5 rounds to 4 rather than 5, because this overload uses the default <xref:System.MidpointRounding.ToEven> convention.  
   
- ]]></format>
+[!code-csharp-interactive[System.Math.Round#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/rounddecimal1.cs#6)]
+[!code-vb[System.Math.Round#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/rounddecimal1.vb#6)]  
+
+       ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The result is outside the range of a <see cref="T:System.Decimal" />.</exception>
         <altmember cref="M:System.Math.Ceiling(System.Double)" />
@@ -4300,15 +4190,18 @@ Overloads with a <xref:System.MidpointRounding> parameter are supported in: 4.5,
       </Parameters>
       <Docs>
         <param name="a">A double-precision floating-point number to be rounded.</param>
-        <summary>Rounds a double-precision floating-point value to the nearest integral value.</summary>
+        <summary>Rounds a double-precision floating-point value to the nearest integral value, and rounds midpoint values to the nearest even number.</summary>
         <returns>The integer nearest <paramref name="a" />. If the fractional component of <paramref name="a" /> is halfway between two integers, one of which is even and the other odd, then the even number is returned. Note that this method returns a <see cref="T:System.Double" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+
+This method uses the default rounding convention of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>. See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `a` argument is <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If `a` is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
 
 Starting with Visual Basic 15.8, the performance of Double-to-integer conversion is optimized if you pass the value returned by the `Round` method to the any of the [integral conversion functions](~/docs/visual-basic/language-reference/functions/conversion-functions.md), or if the Double value returned by `Round` is automatically converted to an integer with [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) set to Off. This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates such optimized conversions:
    
@@ -4320,7 +4213,16 @@ Dim d2 As Double = 7968.4136
 Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
 ```
 
- ]]></format>
+<a name="Round2_Example"></a>   
+## Example  
+
+The following example demonstrates rounding to the nearest integer value.  
+  
+[!code-cpp[Classic Math.Round Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round Example/CPP/source.cpp#1)]
+[!code-csharp-interactive[Classic Math.Round Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round Example/CS/source.cs#1)]
+[!code-vb[Classic Math.Round Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round Example/VB/source.vb#1)]  
+
+       ]]></format>
         </remarks>
         <block subset="none" type="usage">
           <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
@@ -4370,17 +4272,28 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
       <Docs>
         <param name="d">A decimal number to be rounded.</param>
         <param name="decimals">The number of decimal places in the return value.</param>
-        <summary>Rounds a decimal value to a specified number of fractional digits.</summary>
+        <summary>Rounds a decimal value to a specified number of fractional digits, and rounds midpoint values to the nearest even number.</summary>
         <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+The value of the `decimals` argument can range from 0 to 28.
+
+This method uses the default rounding convention of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>. See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+<a name="Round3_Example"></a>   
+## Example  
+
+The following example rounds decimal values with two fractional digits to values that have a single fractional digit.  
   
- ]]></format>
+[!code-csharp-interactive[System.Math.Round.Overload#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/source.cs#3)]
+[!code-vb[System.Math.Round.Overload#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/source.vb#3)]  
+  
+      ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
@@ -4431,17 +4344,26 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
       <Docs>
         <param name="d">A decimal number to be rounded.</param>
         <param name="mode">Specification for how to round <paramref name="d" /> if it is midway between two other numbers.</param>
-        <summary>Rounds a decimal value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
-        <returns>The integer nearest <paramref name="d" />. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
+        <summary>Rounds a decimal value to the nearest integer, and uses the specified rounding convention for midpoint values.</summary>
+        <returns>The integer nearest <paramref name="d" />. If <paramref name="d" /> is halfway between two numbers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned. Note that this method returns a <see cref="T:System.Decimal" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+<a name="Round5_Example"></a>   
+## Example  
+
+The following example displays values returned by the <xref:System.Math.Round%28System.Decimal%29> method, the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Decimal%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+[!code-csharp-interactive[System.Math.Round.Overload#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint1.cs#5)]
+[!code-vb[System.Math.Round.Overload#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint1.vb#5)]  
   
- ]]></format>
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
@@ -4488,24 +4410,38 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
       <Docs>
         <param name="value">A double-precision floating-point number to be rounded.</param>
         <param name="digits">The number of fractional digits in the return value.</param>
-        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits.</summary>
+        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits, and rounds midpoint values to the nearest even number.</summary>
         <returns>The number nearest to <paramref name="value" /> that contains a number of fractional digits equal to <paramref name="digits" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+The value of the `digits` argument can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.
+
+This method uses the default rounding convention of <xref:System.MidpointRounding.ToEven?displayProperty=nameWithType>. See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `value` argument is <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If `value` is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+
+<a name="Round4_Example"></a>   
+## Example  
+
+The following example rounds double values with two fractional digits to doubles that have a single fractional digit.  
   
- ]]></format>
+[!code-cpp[Classic Math.Round2 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CPP/source.cpp#1)]
+[!code-csharp-interactive[Classic Math.Round2 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Math.Round2 Example/CS/source.cs#1)]
+[!code-vb[Classic Math.Round2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Math.Round2 Example/VB/source.vb#1)]  
+  
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="digits" /> is less than 0 or greater than 15.</exception>
         <block subset="none" type="usage">
           <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.Int32)" /> method may not appear to round midpoint values to the nearest even value in the <paramref name="digits" /> decimal position. This is illustrated in the following example, where 2.135 is rounded to 2.13 instead of 2.14. This occurs because internally the method multiplies <paramref name="value" /> by 10<sup>digits</sup>, and the multiplication operation in this case suffers from a loss of precision.  
   
- [!code-csharp[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
+ [!code-csharp-interactive[System.Math.Round#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round3.cs#2)]
  [!code-vb[System.Math.Round#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round3.vb#2)]</para>
         </block>
         <altmember cref="M:System.Math.Ceiling(System.Double)" />
@@ -4549,24 +4485,34 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
       <Docs>
         <param name="value">A double-precision floating-point number to be rounded.</param>
         <param name="mode">Specification for how to round <paramref name="value" /> if it is midway between two other numbers.</param>
-        <summary>Rounds a double-precision floating-point value to the nearest integer. A parameter specifies how to round the value if it is midway between two numbers.</summary>
-        <returns>The integer nearest <paramref name="value" />. If <paramref name="value" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned.</returns>
+        <summary>Rounds a double-precision floating-point value to the nearest integer, and uses the specified rounding convention for midpoint values.</summary>
+        <returns>The integer nearest <paramref name="value" />. If <paramref name="value" /> is halfway between two integers, one of which is even and the other odd, then <paramref name="mode" /> determines which of the two is returned. Note that this method returns a <see cref="T:System.Double" /> instead of an integral type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `value` argument is <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If `value` is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+
+<a name="Round6_Example"></a>   
+## Example  
+The following example displays values returned by the <xref:System.Math.Round%28System.Double%29> method, the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.ToEven>, and the <xref:System.Math.Round%28System.Double%2CSystem.MidpointRounding%29> method with a `mode` argument of <xref:System.MidpointRounding.AwayFromZero>.  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+[!code-csharp[System.Math.Round.Overload#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/midpoint2.cs#6)]
+[!code-vb[System.Math.Round.Overload#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/midpoint2.vb#6)]  
   
- ]]></format>
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="mode" /> is not a valid value of <see cref="T:System.MidpointRounding" />.</exception>
         <block subset="none" type="usage">
           <para>Because of the loss of precision that can result from representing decimal values as floating-point numbers or performing arithmetic operations on floating-point values, in some cases the <see cref="M:System.Math.Round(System.Double,System.MidpointRounding)" /> method may not appear to round midpoint values to the nearest even integer. In the following example, because the floating-point value .1 has no finite binary representation, the first call to the <see cref="M:System.Math.Round(System.Double)" /> method with a value of 11.5 returns 11 instead of 12.  
   
- [!code-csharp[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
+ [!code-csharp-interactive[System.Math.Round#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round/cs/round5.cs#4)]
  [!code-vb[System.Math.Round#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round/vb/round5.vb#4)]</para>
         </block>
         <altmember cref="M:System.Math.Ceiling(System.Double)" />
@@ -4617,17 +4563,29 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
         <param name="d">A decimal number to be rounded.</param>
         <param name="decimals">The number of decimal places in the return value.</param>
         <param name="mode">Specification for how to round <paramref name="d" /> if it is midway between two other numbers.</param>
-        <summary>Rounds a decimal value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
+        <summary>Rounds a decimal value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values.</summary>
         <returns>The number nearest to <paramref name="d" /> that contains a number of fractional digits equal to <paramref name="decimals" />. If <paramref name="d" /> has fewer fractional digits than <paramref name="decimals" />, <paramref name="d" /> is returned unchanged.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[
+
+## Remarks
+
+See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]  
+
+The value of the `decimals` argument can range from 0 to 28.
+
+<a name="Round7_Example"></a>   
+## Example  
+
+The following example demonstrates how to use the <xref:System.Math.Round%2A> method with the <xref:System.MidpointRounding> enumeration.  
   
-## Remarks  
-  
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
-  
- ]]></format>
+[!code-cpp[math.midpointrounding#1](~/samples/snippets/cpp/VS_Snippets_CLR/math.midpointrounding/cpp/mpr.cpp#1)]
+[!code-csharp-interactive[math.midpointrounding#1](~/samples/snippets/csharp/VS_Snippets_CLR/math.midpointrounding/CS/mpr.cs#1)]
+[!code-vb[math.midpointrounding#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/math.midpointrounding/VB/mpr.vb#1)]  
+
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="decimals" /> is less than 0 or greater than 28.</exception>
@@ -4677,17 +4635,30 @@ Dim i2 As Integer = CInt(Math.Ceiling(d2))        ' Result: 7968
         <param name="value">A double-precision floating-point number to be rounded.</param>
         <param name="digits">The number of fractional digits in the return value.</param>
         <param name="mode">Specification for how to round <paramref name="value" /> if it is midway between two other numbers.</param>
-        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits. A parameter specifies how to round the value if it is midway between two numbers.</summary>
+        <summary>Rounds a double-precision floating-point value to a specified number of fractional digits, and uses the specified rounding convention for midpoint values.</summary>
         <returns>The number nearest to <paramref name="value" /> that has a number of fractional digits equal to <paramref name="digits" />. If <paramref name="value" /> has fewer fractional digits than <paramref name="digits" />, <paramref name="value" /> is returned unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+The value of the `digits` argument can range from 0 to 15. Note that 15 is the maximum number of integral and fractional digits supported by the <xref:System.Double> type.
+
+See [Midpoint values and rounding conventions](#midpoint-values-and-rounding-conventions) for information about rounding numbers with midpoint values.
+
+[!INCLUDE[midpoint-rounding](~/includes/floating-point-equality.md)]
+
+If the value of the `value` argument is <xref:System.Double.NaN?displayProperty=nameWithType>, the method returns <xref:System.Double.NaN?displayProperty=nameWithType>. If `value` is <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, the method returns <xref:System.Double.PositiveInfinity?displayProperty=nameWithType> or <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>, respectively.  
+
+<a name="Round8_Example"></a>   
+## Example  
+
+The following example demonstrates how to use the <xref:System.Math.Round%28System.Double%2CSystem.Int32%2CSystem.MidpointRounding%29> method with the <xref:System.MidpointRounding> enumeration.  
   
-> [!NOTE]
->  For examples and comprehensive usage information about this and other overloads of the `Round` method, see the <xref:System.Math.Round%2A> reference page.  
+[!code-csharp-interactive[System.Math.Round.Overload#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.math.round.overload/cs/mpr.cs#4)]
+[!code-vb[System.Math.Round.Overload#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.math.round.overload/vb/mpr.vb#4)]  
   
- ]]></format>
+       ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="digits" /> is less than 0 or greater than 15.</exception>

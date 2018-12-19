@@ -429,8 +429,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -4032,10 +4032,16 @@
         <Parameter Name="deviceDpiNew" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deviceDpiOld">To be added.</param>
-        <param name="deviceDpiNew">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="deviceDpiOld">The old DPI value.</param>
+        <param name="deviceDpiNew">The new DPI value.</param>
+        <summary>When overridden in a derived class, handles the rescaling of any magic numbers that are used in control painting. </summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+ You must call the base class method to get the current DPI values. The `RescaleConstantsForDpi` method is invoked only when an application opts into [per-monitor version 2](~/docs/framework/whats-new/whats-new-in-accessibility.md#accessibility-switches), targets .NET Framework 4.7.1 or later, and has the `EnableDpiChangedMessageHandling` and `EnableDpiChangedHighDpiImprovements` configuration switches turned on. 
+        
+         ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetMinimumSize">

@@ -1,7 +1,10 @@
 # [Additional class libraries and APIs](index.md)
+## Microsoft.SqlServer.Server
+### SmiOrderProperty Class
+#### [SmiOrderProperty.Item](microsoft.sqlserver.server.smiorderproperty.item.md)
 ## System.Data.SqlTypes
 ### SqlChars Class
-#### [SqlChars.Stream Property](sqlchars-stream.md)
+#### [SqlChars.Stream Property](system.data.sqltypes.sqlchars.stream.md)
 ### SqlStreamChars Class
 #### [SqlStreamChars Constructor](system.data.sqltypes.sqlstreamchars.-ctor.md)
 #### [CanSeek Property](system.data.sqltypes.sqlstreamchars.canseek.md)

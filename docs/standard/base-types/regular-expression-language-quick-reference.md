@@ -173,7 +173,7 @@ ms.author: "ronpet"
 |`$&`|Substitutes a copy of the whole match.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"\*\*$1.30\*\*"|  
 |<code>$`</code>|Substitutes all the text of the input string before the match.|`B+`|<code>$`</code>|"AABBCC"|"AAAACC"|  
 |`$'`|Substitutes all the text of the input string after the match.|`B+`|`$'`|"AABBCC"|"AACCCC"|  
-|`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|AACCDD|  
+|`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|"AACCDD"|  
 |`$_`|Substitutes the entire input string.|`B+`|`$_`|"AABBCC"|"AAAABBCCCC"|  
   
  [Back to top](#top)  

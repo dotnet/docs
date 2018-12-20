@@ -11,51 +11,17 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial lets you explore C# 6 interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 6 features.
+    This tutorial lets you explore C# 6 interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 6 features. The rest of this article provides an overview of each of these features, with a link to explore each feature. You can read about the features in the [What's new in C# 6](../whats-new/csharp-6.md) article in the "What's new" section.
+
 - title: Read only auto-properties enable readonly types
   durationInMinutes: 2
   content: |
     Two enhancements to auto-property syntax make it easier to use auto-properties in more places: read-only auto-properties and auto-property initializers. Consider this small program:
 
-    ```csharp
-    using System;
+    [!code-csharp[Starter](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs)]  
 
-    public class Person
-    {
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-
-        public Person(string first, string last)
-        {
-            FirstName = first;
-            LastName = last;
-        }
-
-        public override string ToString()
-        {
-            return FirstName + " " + LastName;
-        }
-
-        public string AllCaps()
-        {
-            FirstName = FirstName.ToUpper();
-            LastName = LastName.ToUpper();
-            return ToString();
-        }
-    }
-
-    public class Program
-    {
-        public static void Main()
-        {
-            var p = new Person("Bill", "Wagner");
-            Console.WriteLine("The name, in all caps " + p.AllCaps());
-            Console.WriteLine("The name " + p);
-        }
-    }
-    ```
-    
-    Click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be readonly. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a reaonly auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
+        
+    Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be readonly. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a reaonly auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
 
     ```csharp
     public string AllCaps()
@@ -71,16 +37,7 @@ items:
   content: |
     New syntax in C# 6 enables you to use initializers for auto-properties. This becomes more important as classes grow new capabilities. Add a middle name property, and a new constructor that takes three strings to your `Person` class:
 
-    ```csharp
-    public string MiddleName { get; } = "";
-
-    public Person(string first, string middle, string last)
-    {
-        FirstName = first;
-        MiddleName = middle;
-        LastName = last;
-    }
-    ```
+    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#MiddleName)]  
 
     The assignment on the `MiddleName` property is an initializer. It initializes the compiler-generated backing field for the middle name.
 
@@ -100,9 +57,7 @@ items:
   content: |
     You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
 
-    ```csharp
-    using static System.Console;
-    ```
+    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#UsingStatic)]  
     
     The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the `string` class or the <xref:System.Math?displayProperty=nameWithType> class.
 
@@ -111,38 +66,26 @@ items:
   content: |
     C# 6 contains new syntax for composing strings from a string and embedded expressions that are evaluated to produce other string values. You can change the `ToString` and `AllCaps` methods to use this syntax:
 
-    ```csharp
-    public override string ToString() => $"{FirstName} {LastName}";
-    public string AllCaps() => $"{FirstName.ToUpper()} {LastName.ToUpper()}";
-    ```
+    [!code-csharp[StringInterpolation](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#StringInterpolation)]  
 
     Instead of positional arguments between the `{` and `}`, you write C# expressions directly. You can do the same in the `Main` method. Replace the existing code with the following:
 
-    ```csharp
-    var p = new Person("Bill", "Wagner");
-    Console.WriteLine($"The name, in all caps {p.AllCaps()}");
-    Console.WriteLine($"The name is {p}");
-    ```
+    [!code-csharp[InterpolationMain](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#InterpolationMain)]  
 
     You're not limited to a single variable in these expressions. Let's start with a new example and modify it to demonstrate. Paste the following code into the interactive window in the `Main` method:
 
-    ```csharp
-    var phrase = "the quick brown fox jumps over the lazy dog";
-    var wordLength = from word in phrase.Split(" ") select word.Length;
-    var average = wordLength.Average();
-    Console.WriteLine(average);
-    ```
-
+    [!code-csharp[Phrases](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#Phrases)]  
+    
     You can remove the local variable `average` and perform that calculation as part of the interpolated string expression. Replace the last two lines with the following:
 
     ```csharp
-    Console.WriteLine($"The average word length is: {wordLength.Average()}");
+    WriteLine($"The average word length is: {wordLength.Average()}");
     ```
 
     Running the preceding example, you would find that the output for `Average()` has more decimal places than you would like. The string interpolation syntax supports all the format strings available using earlier formatting methods. You specify the format string inside the braces. Add a `:` following the expression to format:
 
     ```csharp
-    Console.WriteLine($"The average word length is: {wordLength.Average():F2}");
+    WriteLine($"The average word length is: {wordLength.Average():F2}");
     ```
 
 - title: Quick and easy null checks

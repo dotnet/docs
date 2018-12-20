@@ -470,7 +470,7 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
+        <param name="e">The event data.</param>
         <summary>Raises the <see cref="System.Windows.Forms.ToolStripItem.TextChanged" /> event.</summary>
         <remarks>An object that contains event information.</remarks>
       </Docs>

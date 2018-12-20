@@ -217,7 +217,7 @@ There are two ways to specify how to expose the health endpoint and publish WCF 
         <Parameter Name="serviceHost" Type="System.ServiceModel.ServiceHostBase" />
       </Parameters>
       <Docs>
-        <param name="serviceHost">To be added.</param>
+        <param name="serviceHost">An instance of the service host that contains the WCF service with the <see cref="T:System.ServiceModel.Description.ServiceHealthBehavior" /> enabled.</param>
         <summary>Serializes the <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> object associated with the specified <paramref name="serviceHost" /> and returns it in XML format.</summary>
         <returns>An XML document that corresponds to the serialized <see cref="T:System.ServiceModel.Description.ServiceHealthModel" /> object.</returns>
         <remarks>To be added.</remarks>
@@ -362,7 +362,7 @@ The method returns `true` if the value of the field was successfully parsed by t
       <Docs>
         <param name="parameterName">The name of the parameter whose value the method attempts to parse.</param>
         <param name="parameter">The field/value pair of the query string.</param>
-        <param name="defaultErrorCode">To be added.</param>
+        <param name="defaultErrorCode">The value to be assigned to the argument if the parsing operation fails.</param>
         <param name="result">When the method returns, the value of the parsed HTTP status code argument.</param>
         <summary>Attempts to parse the HTTP status code of a query string variable and returns a value that indicates whether the parsing operation succeeded.</summary>
         <returns>

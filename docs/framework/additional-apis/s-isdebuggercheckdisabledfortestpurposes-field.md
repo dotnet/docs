@@ -10,7 +10,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 9033a513-c255-4f31-b6d7-09b8d8c50e2d
-robots: noindex,nofollow
 ---
 
 # s_isDebuggerCheckDisabledForTestPurposes Field

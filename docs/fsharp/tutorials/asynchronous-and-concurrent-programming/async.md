@@ -5,33 +5,41 @@ ms.date: 12/17/2018
 ---
 # Async Programming in F\#
 
-Asynchronous programming is essential to modern applications. The applications for asynchronous programming are large in number. There are two primary use cases that most developers end up having:
+Asynchronous programming is a mechanism that is essential to modern applications for diverse reasons. There are two primary use cases that most developers will encounter:
 
-* Having a non-blocking server process that can service incoming requests while awaiting results for other requests
-* Having a responsive UI or main thread while background work is happening
+* Presenting a server process that can service a significant number of concurrent incoming requests, while minimizing the system resources locked while request processing awaits inputs from systems or services external to that process
+* Maintaining a responsive UI or main thread while concurrently progressing background work
 
-Although background work may involve multiple threads, there is no affinity between threading and asynchrony.
+Although background work often does involve the utilization of multiple threads, it's important to consider the concepts of asynchrony and multi-threading separately. In fact, they are separate concerns, and one does not imply the other. What follows in this article will describe this in more detail.
 
 ## Asynchrony defined
 
-If you consider the etymology of the word "asynchronous", there are two pieces:
+The previous point - that asynchrony is independent of the utilization of multiple threads - is worth explaining a bit further. There are three concepts that are sometimes related, but strictly independent of one another:
+
+* Concurrency, which is when multiple computations execute in overlapping time periods
+* Parallelism, which is when multiple computations or several parts of a unique computation run at exactly the same time
+* Asynchrony, which is when one or more computations can execute separately from the main program flow
+
+All three are orthagonal concepts, but can be easily conflated, especially when they are used together. For example, you may need to execute multiple asynchronous computations in parallel. This does not mean that parallelism or asynchrony imply one another in this situation.
+
+If you look at the etymology of the word "asynchronous", there are two pieces invovled:
 
 * "a", meaning "not"
 * "synchronous", meaning "at the same time"
 
-Put together, "asynchronous" simply means, "not at the same time". This holds true for asynchronous programming in F#. Code that executes asynchronously is code that doesn't necessarily execute at the same time.
+Put together, "asynchronous" means "not at the same time". That's it! There is no impliciation of concurrency or parallelism in this definition. This is also true in practice.
 
-Asynchronous computations execute independently of the main program flow. This doesn't imply any particular threading model, nor does it imply that a computation happens in the background. In fact, asynchronous computations could even execute synchronously, depending on the nature of the computation and the environment the computation is executing in.
+In practical terms, asynchronous computations in F# are scheduled to execute independently of the main program flow. This doesn't imply concurrency or parallelism, nor does it imply that a computation always happens in the background. In fact, asynchronous computations could even execute synchronously, depending on the nature of the computation and the environment the computation is executing in.
 
-The main takeaway you should have is that because asynchronous computations are independent of the main program flow. There are few guarantees about when or how a computation executes, which necessitates a means to control their execution. In F#, there are multiple ways to do this.
+The main takeaway you should have is that because asynchronous computations are independent of the main program flow. Although there are few guarantees about when or how an asynchronous computation executes, there are some approaches to orchestrating and scheduling them. The rest of this article explores some of the ways you can
 
 ## Core concepts
 
-In F#, asynchronous programming is centered around three core components:
+In F#, asynchronous programming is centered around three core concepts:
 
-* The `Async<'T>` type, which represents an asynchronous computation
+* The `Async<'T>` type, which represents a composable asynchronous computation
+* The `Async` module functions, which let you schedule asynchronous work, compose multiple asynchronous computations, and transform asynchronous results
 * The `async { }` [computation expression](../../language-reference/computation-expressions.md), which provides a convenient syntax for describing and controlling asynchronous computations
-* The `Async` functions, which let you start asynchronous work, coordinate multiple asynchronous computations, and transform asynchronous results
 
 You can see these three concepts in the following example:
 

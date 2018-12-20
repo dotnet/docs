@@ -30,7 +30,7 @@ One of the enumeration values that indicates the reference point from which to o
 
 ## Returns
 
-<xref:System.Int36>
+<xref:System.Int32>
 The new position within the current stream.
 
 ## Remarks

@@ -1,11 +1,11 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; must be greater than or equal to -1"
+title: "Argument '&lt;argumentname&gt;' must be greater than or equal to -1"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_GEMinusOne1"
 ms.assetid: 4bdbef4c-6eff-4fab-a1d0-cb176d5f8798
 ---
-# Argument &#39;&lt;argumentname&gt;&#39; must be greater than or equal to -1
+# Argument '&lt;argumentname&gt;' must be greater than or equal to -1
 An argument's value is less than -1.  
   
 ## To correct this error  

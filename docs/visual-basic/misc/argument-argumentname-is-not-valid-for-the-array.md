@@ -1,11 +1,11 @@
 ---
-title: "Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array"
+title: "Argument '&lt;argumentname&gt;' is not valid for the array"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidRank1"
 ms.assetid: 2c931ede-9c41-4ad3-8dfd-d649617f567c
 ---
-# Argument &#39;&lt;argumentname&gt;&#39; is not valid for the array
+# Argument '&lt;argumentname&gt;' is not valid for the array
 An array contains an argument that is not valid.  
   
 ## To correct this error  

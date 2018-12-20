@@ -1042,7 +1042,7 @@ The <xref:System.Windows.Automation.AutomationProperties.SizeOfSet> property get
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Gets or sets a value that describes the notification characteristics of a particular live region. </summary>
+        <summary>Gets or sets a value that describes the notification characteristics of a particular live region.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1077,7 +1077,7 @@ The `LiveSetting` attached property gets or sets a value of type <xref:System.Wi
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property. </summary>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LiveSetting" /> attached property.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1146,7 +1146,7 @@ The `LiveSetting` attached property gets or sets a value of type <xref:System.Wi
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Describes the ordinal location of this element within a set of elements that are considered to be siblings.</summary>
+        <summary>Gets or sets the ordinal location of this element within a set of elements that are considered to be siblings.</summary>
         <remarks>  
           <format type="text/markdown"><![CDATA[  
 

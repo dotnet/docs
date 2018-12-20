@@ -684,7 +684,7 @@
   
  If an empty string is passed as the `hostNameOrAddress` argument, then this method returns the IPv4 and IPv6 addresses of the local host.
   
- IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostAddresses%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPAddress> instance if only IPv6 results where available for the `hostNameOrAddress`.parameter.  
+ IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostAddresses%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPAddress> instance if only IPv6 results were available for the `hostNameOrAddress` parameter.  
   
 > [!NOTE]
 >  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  

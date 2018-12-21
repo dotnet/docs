@@ -23,7 +23,7 @@ migrate
 pack
 ```
 
-If that command doesn't work, make sure that .NET Core 2.0 or above is installed. If it's installed, but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 and above. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET Core version to use](../versions/selection.md).
+If that command doesn't work, make sure that .NET Core 2.0 SDK or above is installed. If it's installed, but that command still doesn't work, make sure that the `dotnet` command resolves to a version of .NET Core 2.0 and above. Use the `dotnet --version` command to see what version of `dotnet` your current path is resolving to. For more information, see [Select the .NET Core version to use](../versions/selection.md).
 
 ### Examples
 

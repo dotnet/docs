@@ -117,7 +117,7 @@ You need to create three global fields to hold the paths to the recently downloa
 * `_trainDataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
 * `_modelPath` has the path where the trained model is saved.
-* `_reader` is the <xref:Microsoft.ML.Runtime.Data.TextLoader> used to load and transform the datasets.
+* `_textLoader` is the <xref:Microsoft.ML.Runtime.Data.TextLoader> used to load and transform the datasets.
 
 Add the following code to the line right above the `Main` method to specify those paths and the `_textLoader` variable:
 

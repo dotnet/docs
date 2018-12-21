@@ -84,7 +84,7 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  To create a package:  
   
-1.  In the Configuration Manager console, choose **Software Library**..  
+1.  In the Configuration Manager console, choose **Software Library**.  
   
 2.  In the **Software Library** workspace, expand **Application Management**, and then choose **Packages**.  
   

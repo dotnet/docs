@@ -8,11 +8,11 @@ ms.date: 12/17/2018
 
 # How to enable TAB completion for the .NET Core CLI
 
-Starting with .NET Core SDK v2.0, support for tab completion is included but disabled by default. This article describes how to enable tab completion for your terminal of choice.
+Starting with .NET Core SDK v2.0, the .NET Core CLI supports tab completion. This article describes how to configure tab completion for three shells, PowerShell, Bash, and zsh. Other shells may have support for auto completion. Refer to their documentation on how to configure auto completion, the steps should be similar to the steps described in this article.
 
 [!INCLUDE [topic-appliesto-net-core-2plus](~/includes/topic-appliesto-net-core-2plus.md)]
 
-Once enabled, tab completion for the .NET Core CLI is triggered by typing a `dotnet ` command in the terminal, and then hitting the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your terminal. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
+Once setup, tab completion for the .NET Core CLI is triggered by typing a `dotnet ` command in the shell, and then hitting the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
 ```
 > dotnet complete "dotnet a"
@@ -39,7 +39,9 @@ Input                                | becomes                                  
 
 ## PowerShell
 
-To add tab completion to **PowerShell** for the .NET Core CLI, create or edit the profile stored in the variable `$PROFILE`. Add the following code to your profile:
+To add tab completion to **PowerShell** for the .NET Core CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6#profiles-and-execution-policy). 
+
+Add the following code to your profile:
 
 ```powershell
 # PowerShell parameter completion shim for the dotnet CLI 
@@ -53,7 +55,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 
 ## Bash
 
-To add tab completion to your **bash** terminal for the .NET Core CLI, add the following code to your `.bashrc` file:
+To add tab completion to your **bash** shell for the .NET Core CLI, add the following code to your `.bashrc` file:
 
 ```bash
 # bash parameter completion for the dotnet CLI
@@ -73,7 +75,7 @@ complete -f -F _dotnet_bash_complete dotnet
 
 ## Zsh
 
-To add tab completion to your **zsh** terminal for the .NET Core CLI, add the following code to your `.zshrc` file:
+To add tab completion to your **zsh** shell for the .NET Core CLI, add the following code to your `.zshrc` file:
 
 ```zsh
 # zsh parameter completion for the dotnet CLI

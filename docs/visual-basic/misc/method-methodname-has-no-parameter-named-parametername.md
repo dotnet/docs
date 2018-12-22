@@ -1,11 +1,11 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; has no parameter named &#39;&lt;parametername&gt;&#39;"
+title: "Method '&lt;methodname&gt;' has no parameter named '&lt;parametername&gt;'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidNamedArg2"
 ms.assetid: b4346b6a-87da-4e65-a2de-ee5239c671f8
 ---
-# Method &#39;&lt;methodname&gt;&#39; has no parameter named &#39;&lt;parametername&gt;&#39;
+# Method '&lt;methodname&gt;' has no parameter named '&lt;parametername&gt;'
 A supplied named argument does not match any of the arguments of the target method.  
   
 ## To correct this error  

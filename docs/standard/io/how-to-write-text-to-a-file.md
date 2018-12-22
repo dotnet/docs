@@ -1,6 +1,6 @@
 ---
-title: "How to: Write Text to a File"
-ms.date: "03/30/2017"
+title: "How to: Write text to a file"
+ms.date: "12/20/2018"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -14,45 +14,45 @@ ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# How to: Write Text to a File
-This topic shows different ways you can write text to a file for .NET Framework applications or [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. The following classes and methods are typically used to write text to a file:  
+# How to: Write text to a file
+This topic shows different ways to write text to a file for .NET or [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. The following classes and methods are typically used to write text to a file:  
   
--   <xref:System.IO.StreamWriter> - it contains methods to write to a file synchronously (<xref:System.IO.StreamWriter.Write%2A> or <xref:System.IO.TextWriter.WriteLine%2A>) or asynchronously (<xref:System.IO.StreamWriter.WriteAsync%2A> and <xref:System.IO.StreamWriter.WriteLineAsync%2A>).  
+-   <xref:System.IO.StreamWriter> contains methods to write to a file synchronously: <xref:System.IO.StreamWriter.Write%2A> and <xref:System.IO.TextWriter.WriteLine%2A>, or asynchronously: <xref:System.IO.StreamWriter.WriteAsync%2A> and <xref:System.IO.StreamWriter.WriteLineAsync%2A>.  
   
--   <xref:System.IO.File> – to be used with .NET Framework applications. It provides static methods to write text to a file such as <xref:System.IO.File.WriteAllLines%2A> and <xref:System.IO.File.WriteAllText%2A>, or to append text to a file (<xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A> or <xref:System.IO.File.AppendText%2A>).  
+-   <xref:System.IO.File> is for .NET apps. It provides static methods to write text to a file, such as <xref:System.IO.File.WriteAllLines%2A> and <xref:System.IO.File.WriteAllText%2A>, or to append text to a file: <xref:System.IO.File.AppendAllLines%2A>, <xref:System.IO.File.AppendAllText%2A>, and <xref:System.IO.File.AppendText%2A>.  
   
--   <xref:Windows.Storage.FileIO> - to be used with [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. It contains asynchronous methods to write text to a file (<xref:Windows.Storage.FileIO.WriteLinesAsync%2A> or <xref:Windows.Storage.FileIO.WriteTextAsync%2A>) or to append text to a file (<xref:Windows.Storage.FileIO.AppendLinesAsync%2A> or <xref:Windows.Storage.FileIO.AppendTextAsync%2A>).  
+-   <xref:Windows.Storage.FileIO> is for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. It contains asynchronous methods to write text to a file: <xref:Windows.Storage.FileIO.WriteLinesAsync%2A> and <xref:Windows.Storage.FileIO.WriteTextAsync%2A>), or to append text to a file: <xref:Windows.Storage.FileIO.AppendLinesAsync%2A> and <xref:Windows.Storage.FileIO.AppendTextAsync%2A>.  
 
-- <xref:System.IO.Path> - to be used on strings that contain file or directory path information. It contains the <xref:System.IO.Path.Combine%2A> method, which allows concatenation of strings to build a file or directory path.
+- <xref:System.IO.Path> can be used on strings that contain file or directory path information. It contains the <xref:System.IO.Path.Combine%2A> method, which allows concatenation of strings to build a file or directory path.
 
-
- The samples have been kept simple in order to focus on the task being performed. For this reason, the samples perform minimal error checking and exception handling, if any. A real-world application generally provides more robust error checking and exception handling.  
+>[!NOTE]
+>The following samples are kept simple, to focus on the task being performed. A real-world app generally provides more robust error checking and exception handling.  
   
-## Example  
- The following example shows how to synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time. The new text file is saved to the user's My Documents folder. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked which automatically flushes and closes the stream.  
+## Write text to a new file with StreamWriter  
+ The following example shows how to synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time. The new text file is saved to the user's My Documents folder. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writeline)] 
  [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writeline)]  
   
-## Example  
+## Append text to a file with StreamWriter 
  The following example shows how to append text to an existing file using the <xref:System.IO.StreamWriter> class. It uses the same text file from the previous example.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#AppendText](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#appendtext)] 
  [!code-vb[Conceptual.BasicIO.TextFiles#AppendText](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#appendtext)]     
   
-## Example  
+## Asynchronously write text with StreamWriter  
  The following example shows how to asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. In order to invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call needs to be within an `async` method. The new text file is saved to the user's My Documents folder.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#WriteAsync](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writeasync)] 
  [!code-vb[Conceptual.BasicIO.TextFiles#WriteAsync](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writeasync)]  
   
-## Example  
+## Write and append text with the File class 
  The following example shows how to write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class. The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically. If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file will be overwritten.  
   
  [!code-csharp[Conceptual.BasicIO.TextFiles#WriteFile](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs#writefile)] 
  [!code-vb[Conceptual.BasicIO.TextFiles#WriteFile](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb#writefile)]  
   
-## Example  
+## Write user input to text in a UWP app  
  The following example shows how to asynchronously write user input to a text file in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app. Because of security considerations, opening a file from a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app typically requires the use of a <xref:Windows.Storage.Pickers.FileOpenPicker> control. In this example, the `FileOpenPicker` is filtered to show text files.  
   
 ```xaml  
@@ -85,8 +85,8 @@ This topic shows different ways you can write text to a file for .NET Framework 
 - <xref:System.IO.StreamWriter>  
 - <xref:System.IO.Path>  
 - <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>  
-- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
+- [How to: Read and write to a newly-created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [File and stream I/O](../../../docs/standard/io/index.md)

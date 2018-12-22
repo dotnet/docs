@@ -24,7 +24,7 @@ ms.author: "ronpet"
   
  [Character escapes](#character_escapes)  
  [Character classes](#character_classes)  
- [Anchors](#atomic_zerowidth_assertions)  
+ [Anchors](#anchors)  
  [Grouping constructs](#grouping_constructs)  
  [Quantifiers](#quantifiers)  
  [Backreference constructs](#backreference_constructs)  
@@ -81,7 +81,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="atomic_zerowidth_assertions"></a>   
 ## Anchors  
  Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors](../../../docs/standard/base-types/anchors-in-regular-expressions.md).  
   

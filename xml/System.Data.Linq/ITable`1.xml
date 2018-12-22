@@ -34,7 +34,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="TEntity">To be added.</typeparam>
+    <typeparam name="TEntity">The type of the data in the table.</typeparam>
     <summary>Represents a table for a particular type in the underlying database.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  

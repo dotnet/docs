@@ -1285,7 +1285,7 @@
       <Docs>
         <param name="index">The zero-based index at which the <see cref="T:System.Windows.Forms.TabPage" /> should be inserted.</param>
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to insert into the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</param>
-        <param name="value">To be added.</param>
+        <param name="value">The <see cref="T:System.Windows.Forms.TabPage" /> to insert into the <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Windows.Forms.TabPage" /> control into the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

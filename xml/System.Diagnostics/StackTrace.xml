@@ -549,8 +549,9 @@
         <param name="e">The exception object from which to construct the stack trace.</param>
         <param name="fNeedFileInfo">
           <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
-        <param name="exception">To be added.</param>
-        <param name="needFileInfo">To be added.</param>
+        <param name="exception">The exception object from which to construct the stack trace.</param>
+        <param name="needFileInfo">
+          <see langword="true" /> to capture the file name, line number, and column number; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.StackTrace" /> class, using the provided exception object and optionally capturing source information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

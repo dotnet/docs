@@ -948,13 +948,21 @@ private static void GetDataTypes(String connectiongString) {
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
+
+-or-
   
  The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed during the data retrieval.  
   
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.SqlClient.SqlDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
@@ -1034,12 +1042,20 @@ private static void GetDataTypes(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
@@ -1103,12 +1119,20 @@ private static void GetDataTypes(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
         <exception cref="T:System.InvalidCastException">
@@ -1651,23 +1675,23 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
-        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
-  
--   binary  
-  
--   image  
-  
--   varbinary  
-  
--   udt</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the following types: binary, image, varbinary, or udt.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetString">
@@ -1757,27 +1781,23 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Tried to read a previously-read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
-        <exception cref="T:System.InvalidCastException">The returned type was not one of the types below:  
-  
--   char  
-  
--   nchar  
-  
--   ntext  
-  
--   nvarchar  
-  
--   text  
-  
--   varchar</exception>
+        <exception cref="T:System.InvalidCastException">The returned type was not one of the following types: char, nchar, ntext, nvarchar, text, or varchar.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -2042,12 +2062,20 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Trying to read a previously read column in sequential mode.  
-  
+
+-or-
+
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
       </Docs>
@@ -2097,11 +2125,19 @@ private static void GetCredits(String connectiongString) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">The connection drops or is closed during the data retrieval.  
   
+-or-
+
  The <see cref="T:System.Data.Common.DbDataReader" /> is closed during the data retrieval.  
-  
+
+-or-
+
  There is no data ready to be read (for example, the first <see cref="M:System.Data.Common.DbDataReader.Read" /> hasn't been called, or returned false).  
-  
+
+-or-
+
  Trying to read a previously read column in sequential mode.  
+
+-or-
   
  There was an asynchronous operation in progress. This applies to all Get* methods when running in sequential mode, as they could be called while reading a stream.</exception>
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>

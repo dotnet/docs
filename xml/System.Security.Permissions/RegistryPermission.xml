@@ -336,7 +336,7 @@
       <Docs>
         <param name="access">One of the <see cref="T:System.Security.Permissions.RegistryPermissionAccess" /> values.</param>
         <param name="control">One of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> values.</param>
-        <param name="actions">To be added.</param>
+        <param name="actions">One of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> values.</param>
         <param name="pathList">A list of registry variables (separated by semicolons).</param>
         <summary>Adds access for the specified registry variables to the existing state of the permission, specifying registry permission access and access control actions.</summary>
         <remarks>
@@ -434,7 +434,7 @@
       </Parameters>
       <Docs>
         <param name="elem">The XML encoding to use to reconstruct the permission.</param>
-        <param name="esd">To be added.</param>
+        <param name="esd">The XML encoding to use to reconstruct the permission.</param>
         <summary>Reconstructs a permission with a specified state from an XML encoding.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="elem" /> parameter is <see langword="null" />.</exception>

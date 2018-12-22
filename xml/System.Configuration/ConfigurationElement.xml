@@ -1540,13 +1540,13 @@
         <Parameter Name="updateMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="sourceElement">To be added.</param>
-        <param name="source">To be added.</param>
-        <param name="parentElement">To be added.</param>
-        <param name="parent">To be added.</param>
-        <param name="saveMode">To be added.</param>
-        <param name="updateMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> at the current level containing a merged view of the properties.</param>
+        <param name="source">A <see cref="T:System.Configuration.ConfigurationElement" /> at the current level containing a merged view of the properties.</param>
+        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" />, or <see langword="null" /> if this is the top level.</param>
+        <param name="parent">The parent <see cref="T:System.Configuration.ConfigurationElement" />, or <see langword="null" /> if this is the top level.</param>
+        <param name="saveMode">One of the enumeration values that determines which property values to include.</param>
+        <param name="updateMode">One of the enumeration values that determines which property values to include.</param>
+        <summary>Modifies the <see cref="T:System.Configuration.ConfigurationElement" /> object to remove all values that should not be saved. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

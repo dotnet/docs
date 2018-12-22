@@ -114,7 +114,7 @@
       </Parameters>
       <Docs>
         <param name="identity">An <see cref="T:System.ApplicationIdentity" /> that uniquely identifies an application.</param>
-        <param name="applicationIdentity">To be added.</param>
+        <param name="applicationIdentity">An <see cref="T:System.ApplicationIdentity" /> that uniquely identifies an application.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.ApplicationTrust" /> class with an <see cref="T:System.ApplicationIdentity" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

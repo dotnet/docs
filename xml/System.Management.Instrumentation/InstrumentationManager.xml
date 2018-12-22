@@ -191,7 +191,7 @@ static int Main(string[] args)
       </Parameters>
       <Docs>
         <param name="value">An instance of the class that implements the provider to revoke.</param>
-        <param name="obj">To be added.</param>
+        <param name="obj">An instance of the class that implements the provider to revoke.</param>
         <summary>Takes an instance of a currently available provider and makes it unavailable within the WMI infrastructure.</summary>
         <remarks>To be added.</remarks>
       </Docs>

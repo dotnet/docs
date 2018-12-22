@@ -212,13 +212,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="delay" />
-          <see langword="." />
-          <see cref="P:System.TimeSpan.TotalMilliseconds" /> is less than -1 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
-        <exception cref="  &#xA;            T:System.ArgumentOutOfRangeException">
-          <paramref name="delay" />
-          <see langword="." />
-          <see cref="P:System.TimeSpan.TotalMilliseconds" /> is less than -1 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+          <paramref name="delay" />.<see cref="P:System.TimeSpan.TotalMilliseconds" /> is less than -1 or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Cancel">

@@ -650,10 +650,14 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="key">The key of the element to get or set.</param>
+        <summary>Gets the element that has the specified key.</summary>
+        <value>The element that has the specified key.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and <paramref name="key" /> is not found.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Keys">

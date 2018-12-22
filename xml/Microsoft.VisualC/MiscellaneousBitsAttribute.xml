@@ -59,7 +59,7 @@
       </Parameters>
       <Docs>
         <param name="miscellaneousBits">A bit mask containing information about a type.</param>
-        <param name="dwAttrs">To be added.</param>
+        <param name="dwAttrs">A bit mask containing information about a type.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.MiscellaneousBitsAttribute" /> class using the specified bit mask.</summary>
         <remarks>To be added.</remarks>
       </Docs>

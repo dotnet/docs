@@ -1709,11 +1709,11 @@
         <Parameter Name="updateMode" Type="System.Configuration.ConfigurationSaveMode" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="sourceElement">To be added.</param>
-        <param name="parentElement">To be added.</param>
-        <param name="saveMode">To be added.</param>
-        <param name="updateMode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceElement">A <see cref="T:System.Configuration.ConfigurationElement" /> object at the current level containing a merged view of the properties.</param>
+        <param name="parentElement">The parent <see cref="T:System.Configuration.ConfigurationElement" /> object of the current element, or <see langword="null" /> if this is the top level.</param>
+        <param name="saveMode">One of the enumeration value that determines which property values to include.</param>
+        <param name="updateMode">One of the enumeration value that determines which property values to include.</param>
+        <summary>Reverses the effect of merging configuration information from different levels of the configuration hierarchy </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

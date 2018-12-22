@@ -286,7 +286,7 @@
       <Docs>
         <param name="access">A bitwise combination of the <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /> enumeration values.</param>
         <param name="control">A bitwise combination of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> enumeration values.</param>
-        <param name="actions">To be added.</param>
+        <param name="actions">A bitwise combination of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> enumeration values.</param>
         <param name="path">The absolute path of the file or directory.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.FileIOPermission" /> class with the specified access to the designated file or directory and the specified access rights to file control information.</summary>
         <remarks>
@@ -350,7 +350,7 @@
       <Docs>
         <param name="access">A bitwise combination of the <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /> enumeration values.</param>
         <param name="control">A bitwise combination of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> enumeration values.</param>
-        <param name="actions">To be added.</param>
+        <param name="actions">A bitwise combination of the <see cref="T:System.Security.AccessControl.AccessControlActions" /> enumeration values.</param>
         <param name="pathList">An array containing the absolute paths of the files and directories.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.FileIOPermission" /> class with the specified access to the designated files and directories and the specified access rights to file control information.</summary>
         <remarks>
@@ -670,7 +670,7 @@
       </Parameters>
       <Docs>
         <param name="o">The <see cref="T:System.Security.Permissions.FileIOPermission" /> object to compare with the current <see cref="T:System.Security.Permissions.FileIOPermission" />.</param>
-        <param name="obj">To be added.</param>
+        <param name="obj">The <see cref="T:System.Security.Permissions.FileIOPermission" /> object to compare with the current <see cref="T:System.Security.Permissions.FileIOPermission" />.</param>
         <summary>Determines whether the specified <see cref="T:System.Security.Permissions.FileIOPermission" /> object is equal to the current <see cref="T:System.Security.Permissions.FileIOPermission" />.</summary>
         <returns>
           <see langword="true" /> if the specified <see cref="T:System.Security.Permissions.FileIOPermission" /> is equal to the current <see cref="T:System.Security.Permissions.FileIOPermission" /> object; otherwise, <see langword="false" />.</returns>

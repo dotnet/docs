@@ -689,7 +689,6 @@ The following example demonstrates the properties and the <xref:System.StringCom
         <exception cref="T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
-        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -744,7 +743,6 @@ The following example demonstrates the properties and the <xref:System.StringCom
         <exception cref="T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
-        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
       </Docs>
     </Member>
     <Member MemberName="InvariantCulture">

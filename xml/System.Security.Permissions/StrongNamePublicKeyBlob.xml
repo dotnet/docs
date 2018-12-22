@@ -110,7 +110,7 @@
       </Parameters>
       <Docs>
         <param name="o">An object containing a public key blob.</param>
-        <param name="obj">To be added.</param>
+        <param name="obj">An object containing a public key blob.</param>
         <summary>Gets or sets a value indicating whether the current public key blob is equal to the specified public key blob.</summary>
         <returns>
           <see langword="true" /> if the public key blob of the current object is equal to the public key blob of the <paramref name="o" /> parameter; otherwise, <see langword="false" />.</returns>

@@ -123,7 +123,7 @@
       </Parameters>
       <Docs>
         <param name="fileName">The file name of the assembly to install.</param>
-        <param name="filename">To be added.</param>
+        <param name="filename">The file name of the assembly to install.</param>
         <param name="commandLine">The command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation. Can be a null value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.AssemblyInstaller" /> class, and specifies both the file name of the assembly to install and the command line to use when creating a new <see cref="T:System.Configuration.Install.InstallContext" /> object for the assembly's installation.</summary>
         <remarks>

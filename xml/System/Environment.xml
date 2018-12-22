@@ -1059,7 +1059,7 @@ Per-machine and per-user environment variables are not supported. A `target` val
         <Parameter Name="folder" Type="System.Environment+SpecialFolder" />
       </Parameters>
       <Docs>
-        <param name="folder">An enumerated constant that identifies a system special folder.</param>
+        <param name="folder">One of enumeration values that identifies a system special folder.</param>
         <summary>Gets the path to the system special folder that is identified by the specified enumeration.</summary>
         <returns>The path to the specified system special folder, if that folder physically exists on your computer; otherwise, an empty string ("").  
   
@@ -1126,8 +1126,8 @@ Per-machine and per-user environment variables are not supported. A `target` val
         <Parameter Name="option" Type="System.Environment+SpecialFolderOption" />
       </Parameters>
       <Docs>
-        <param name="folder">An enumerated constant that identifies a system special folder.</param>
-        <param name="option">Specifies options to use for accessing a special folder.</param>
+        <param name="folder">One of the enumeration values that identifies a system special folder.</param>
+        <param name="option">One of the enumeration values taht specifies options to use for accessing a special folder.</param>
         <summary>Gets the path to the system special folder that is identified by the specified enumeration, and uses a specified option for accessing special folders.</summary>
         <returns>The path to the specified system special folder, if that folder physically exists on your computer; otherwise, an empty string ("").  
   
@@ -1145,10 +1145,11 @@ Per-machine and per-user environment variables are not supported. A `target` val
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="folder" /> is not a member of <see cref="T:System.Environment.SpecialFolder" /></exception>
-        <exception cref="T:System.PlatformNotSupportedException">
-          <see cref="T:System.PlatformNotSupportedException" />
-        </exception>
+          <paramref name="folder" /> is not a member of <see cref="T:System.Environment.SpecialFolder" />.
+-or-
+
+<paramref name="options" /> is not a member of <see cref="T:System.Environment.SpecialFolderOption" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is not supported.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the information in the path itself. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
       </Docs>
     </Member>

@@ -1047,6 +1047,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="relation" /> does not belong to the <see cref="T:System.Data.DataTable" />.  
   
+-or-
+
  The row is <see langword="null" />.</exception>
         <exception cref="T:System.Data.DataException">A child row has multiple parents.</exception>
         <exception cref="T:System.Data.InvalidConstraintException">This row does not belong to the child table of the <see cref="T:System.Data.DataRelation" /> object.</exception>
@@ -1173,6 +1175,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The row is <see langword="null" />.  
   
+-or-
+
  The <paramref name="relation" /> does not belong to this table's parent relations.</exception>
         <exception cref="T:System.Data.DataException">A child row has multiple parents.</exception>
         <exception cref="T:System.Data.InvalidConstraintException">The relation's child table is not the table the row belongs to.</exception>

@@ -73,7 +73,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the name of the mapped element.</summary>
+        <summary>Gets the name of the mapped element.</summary>
         <value>The name of the mapped element.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -153,7 +153,7 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">A <see cref="T:System.String" /> that contains the lookup key.</param>
+        <param name="key">The lookup key.</param>
         <summary>Sets the key used to look up the mapping.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

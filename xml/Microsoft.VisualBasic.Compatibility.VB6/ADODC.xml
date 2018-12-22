@@ -181,7 +181,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the current row position is before the first row in a <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" />.</summary>
         <value>
-          <see langword="true" /> if the current row position is before the first row; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the current row position is before the first row; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -668,7 +668,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the current row position is after the last row in a <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" />.</summary>
         <value>
-          <see langword="true" /> if the current row position is after the last row; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the current row position is after the last row; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -899,7 +899,7 @@
         <param name="dataMember">A <see cref="T:System.String" /> that describes the data member that represents one or more sets of data supported by the data source.</param>
         <param name="riid">The interface identifier of the specified data access object.</param>
         <summary>Returns a <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.ADODC.Recordset" /> for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC" />.</summary>
-        <returns>Returns a data access object (such as a row position) for a given data member.</returns>
+        <returns>A data access object (such as a row position) for a given data member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -257,8 +257,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determines whether this object starts delivering events to the event delegate.</summary>
-        <value>Returns <see langword="true" /> when this object can deliver events to the event delegate, and returns <see langword="false" /> when this object has stopped delivery.</value>
+        <summary>Gets or sets a value that indicates whether this object starts delivering events to the event delegate.</summary>
+        <value><see langword="true" /> when this object can deliver events to the event delegate; <see langword="false" /> when this object has stopped delivery.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>

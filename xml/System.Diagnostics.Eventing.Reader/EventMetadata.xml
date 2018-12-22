@@ -51,7 +51,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the description template associated with the event using the current thread locale for the description language.</summary>
-        <value>Returns a string that contains the description template associated with the event.</value>
+        <value>A string that contains the description template associated with the event.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -80,7 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the identifier of the event that is defined in the event provider.</summary>
-        <value>Returns a <see langword="long" /> value that is the event identifier.</value>
+        <value>The event identifier.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -103,8 +103,8 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Eventing.Reader.EventKeyword&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keywords associated with the event that is defined in the even provider.</summary>
-        <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" /> objects.</value>
+        <summary>Gets the keywords associated with the event that is defined in the event provider.</summary>
+        <value>An enumerable collection of the keywords associated with the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -137,7 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the level associated with the event that is defined in the event provider. The level defines the severity of the event.</summary>
-        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" /> object.</value>
+        <value>The level associated with the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -168,7 +168,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a link to the event log that receives this event when the provider publishes this event.</summary>
-        <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventLogLink" /> object.</value>
+        <value>A link to the event log.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -192,7 +192,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the opcode associated with this event that is defined by an event provider. The opcode defines a numeric value that identifies the activity or a point within an activity that the application was performing when it raised the event.</summary>
-        <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" /> object.</value>
+        <value>The opcode associated with this event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -223,7 +223,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the task associated with the event. A task identifies a portion of an application or a component that publishes an event.</summary>
-        <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" /> object.</value>
+        <value>The task associated with the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -261,7 +261,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the template string for the event. Templates are used to describe data that is used by a provider when an event is published. Templates optionally specify XML that provides the structure of an event. The XML allows values that the event publisher provides to be inserted during the rendering of an event.</summary>
-        <value>Returns a string that contains the template for the event.</value>
+        <value>A string that contains the template for the event.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -290,7 +290,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the version of the event that qualifies the event identifier.</summary>
-        <value>Returns a byte value.</value>
+        <value>A byte value that contains the version of the event.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>

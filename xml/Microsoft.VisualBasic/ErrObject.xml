@@ -172,8 +172,8 @@ End If
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an integer indicating the line number of the last executed statement. Read-only.</summary>
-        <value>Returns an integer indicating the line number of the last executed statement. Read-only.</value>
+        <summary>Gets an integer indicating the line number of the last executed statement.</summary>
+        <value>The line number of the last executed statement.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -218,7 +218,7 @@ End If
       <Parameters />
       <Docs>
         <summary>Returns the exception representing the error that occurred.</summary>
-        <returns>Returns the exception representing the error that occurred.</returns>
+        <returns>The exception representing the error that occurred.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -345,8 +345,8 @@ End If
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a system error code produced by a call to a dynamic-link library (DLL). Read-only.</summary>
-        <value>Returns a system error code produced by a call to a dynamic-link library (DLL). Read-only.</value>
+        <summary>Gets a system error code produced by a call to a dynamic-link library (DLL).</summary>
+        <value>A system error code produced by a call to a dynamic-link library (DLL).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

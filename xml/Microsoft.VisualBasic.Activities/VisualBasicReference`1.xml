@@ -140,7 +140,7 @@
         <param name="context">The context information that is used for conversion.</param>
         <summary>Determines whether the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> can be converted into a <see cref="T:System.String" />.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> can be converted into a string; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> can be converted into a string; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -235,7 +235,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the Visual Basic expression represented by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" />.</summary>
+        <summary>Gets or sets the Visual Basic expression represented by this <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" />.</summary>
         <value>The Visual Basic expression.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -196,7 +196,7 @@
         <param name="item">The item to search for.</param>
         <summary>Determines whether an element is in the <see cref="T:System.Workflow.Activities.OperationParameterInfoCollection" />.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Workflow.Activities.OperationParameterInfoCollection" />, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Workflow.Activities.OperationParameterInfoCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -400,7 +400,7 @@
         <param name="item">The <see cref="T:System.Workflow.Activities.OperationParameterInfo" /> to remove.</param>
         <summary>Removes the first occurrence of a specific <see cref="T:System.Workflow.Activities.OperationParameterInfo" /> from the <see cref="T:System.Workflow.Activities.OperationParameterInfoCollection" />.</summary>
         <returns>
-          <see langword="true" /> if the item was successfully removed, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the item was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

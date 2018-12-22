@@ -104,9 +104,9 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this instance can be created.</summary>
-        <value>Returns a value which is <see langword="false" /> if either of the following conditions are true:  
+        <value><see langword="false" /> if either of the following conditions are true:  
   
--   The <see cref="T:System.Type" /> defining this attribute has an <see cref="P:System.Type.Assembly" /> which is a null reference (Visual Basic <see langword="Nothing" />).  
+-   The type defining this attribute has an <see cref="P:System.Type.Assembly" /> which is a null reference (Visual Basic <see langword="Nothing" />).  
   
 -   Any one of the objects in the array <see cref="P:System.Workflow.ComponentModel.Compiler.AttributeInfo.ArgumentValues" /> is of <see cref="T:System.Type" /><see cref="T:System.Exception" />  
   

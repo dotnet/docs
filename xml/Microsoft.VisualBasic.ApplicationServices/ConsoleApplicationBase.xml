@@ -155,7 +155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the current application's ClickOnce deployment object, which provides support for updating the current deployment programmatically and support for the on-demand download of files.</summary>
-        <value>Returns the <see cref="T:System.Deployment.Application.ApplicationDeployment" /> object for the application's ClickOnce deployment.</value>
+        <value>The <see cref="T:System.Deployment.Application.ApplicationDeployment" /> object for the application's ClickOnce deployment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

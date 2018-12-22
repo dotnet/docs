@@ -280,7 +280,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <Docs>
         <param name="name">A name to be translated.</param>
         <summary>Converts the name to a valid XML name.</summary>
-        <returns>Returns the name with any invalid characters replaced by an escape string.</returns>
+        <returns>The name with any invalid characters replaced by an escape string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -393,7 +393,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <Docs>
         <param name="ch">The character to verify as a non-colon character.</param>
         <summary>Checks whether the passed-in character is a valid non-colon character type.</summary>
-        <returns>Returns <see langword="true" /> if the character is a valid non-colon character type; otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the character is a valid non-colon character type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -429,7 +429,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <param name="ch">
           <see cref="T:System.Char" /> object to validate.</param>
         <summary>Returns the passed-in character instance if the character in the argument is a valid public id character, otherwise <see langword="null" />.</summary>
-        <returns>Returns the passed-in character if the character is a valid public id character, otherwise <see langword="null" />.</returns>
+        <returns>The passed-in character if the character is a valid public id character, otherwise <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -508,7 +508,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <param name="ch">The character to validate.</param>
         <summary>Checks if the passed-in character is a valid XML whitespace character.</summary>
         <returns>
-          <see langword="true" /> if the passed in character is a valid XML whitespace character; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the passed in character is a valid XML whitespace character; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -551,7 +551,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <param name="ch">The character to validate.</param>
         <summary>Checks if the passed-in character is a valid XML character.</summary>
         <returns>
-          <see langword="true" /> if the passed in character is a valid XML character; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the passed in character is a valid XML character; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -596,7 +596,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <param name="highChar">The surrogate character to validate.</param>
         <summary>Checks if the passed-in surrogate pair of characters is a valid XML character.</summary>
         <returns>
-          <see langword="true" /> if the passed in surrogate pair of characters is a valid XML character; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the passed in surrogate pair of characters is a valid XML character; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -952,13 +952,13 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       </Parameters>
       <Docs>
         <param name="s">The <see cref="T:System.String" /> value to convert.</param>
-        <param name="dateTimeOption">One of the <see cref="T:System.Xml.XmlDateTimeSerializationMode" /> values that specify whether the date should be converted to local time or preserved as Coordinated Universal Time (UTC), if it is a UTC date.</param>
+        <param name="dateTimeOption">One of the enumeration values that specify whether the date should be converted to local time or preserved as Coordinated Universal Time (UTC), if it is a UTC date.</param>
         <summary>Converts the <see cref="T:System.String" /> to a <see cref="T:System.DateTime" /> using the <see cref="T:System.Xml.XmlDateTimeSerializationMode" /> specified</summary>
         <returns>A <see cref="T:System.DateTime" /> equivalent of the <see cref="T:System.String" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">
           <paramref name="s" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="dateTimeOption" /> value is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="dateTimeOption" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> is an empty string or is not in a valid format.</exception>
       </Docs>
@@ -2924,7 +2924,7 @@ catch(Exception e) {
         <param name="publicId">
           <see cref="T:System.String" /> that contains the id to validate.</param>
         <summary>Returns the passed in string instance if all the characters in the string argument are valid public id characters.</summary>
-        <returns>Returns the passed-in string if all the characters in the argument are valid public id characters.</returns>
+        <returns>The passed-in string if all the characters in the argument are valid public id characters.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3029,7 +3029,7 @@ catch(Exception e) {
         <param name="content">
           <see cref="T:System.String" /> to verify.</param>
         <summary>Returns the passed-in string instance if all the characters in the string argument are valid whitespace characters.</summary>
-        <returns>Returns the passed-in string instance if all the characters in the string argument are valid whitespace characters, otherwise <see langword="null" />.</returns>
+        <returns>The passed-in string instance if all the characters in the string argument are valid whitespace characters, otherwise <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3089,7 +3089,7 @@ catch(Exception e) {
         <param name="content">
           <see cref="T:System.String" /> that contains characters to verify.</param>
         <summary>Returns the passed-in string if all the characters and surrogate pair characters in the string argument are valid XML characters, otherwise an <see langword="XmlException" /> is thrown with information on the first invalid character encountered.</summary>
-        <returns>Returns the passed-in string if all the characters and surrogate-pair characters in the string argument are valid XML characters, otherwise an <see langword="XmlException" /> is thrown with information on the first invalid character encountered.</returns>
+        <returns>The passed-in string if all the characters and surrogate-pair characters in the string argument are valid XML characters, otherwise an <see langword="XmlException" /> is thrown with information on the first invalid character encountered.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

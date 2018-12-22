@@ -73,7 +73,7 @@ End Function
       </ReturnValue>
       <Docs>
         <summary>Returns a <see langword="String" /> representing the runtime currently in use.</summary>
-        <value>Returns a <see langword="String" /> representing the runtime currently in use.</value>
+        <value>A string representing the runtime currently in use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -114,8 +114,8 @@ End Function
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> containing the build version number of the runtime currently in use.</summary>
-        <value>Returns an <see langword="Integer" /> containing the build version number of the runtime currently in use.</value>
+        <summary>Returns an integer containing the build version number of the runtime currently in use.</summary>
+        <value>The build version number of the runtime currently in use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -156,8 +156,8 @@ End Function
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> containing the major version number of the runtime currently in use.</summary>
-        <value>Returns an <see langword="Integer" /> containing the major version number of the runtime currently in use.</value>
+        <summary>Returns an integer containing the major version number of the runtime currently in use.</summary>
+        <value>The major version number of the runtime currently in use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -198,8 +198,8 @@ End Function
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> containing the minor version number of the runtime currently in use.</summary>
-        <value>Returns an <see langword="Integer" /> containing the minor version number of the runtime currently in use.</value>
+        <summary>Returns an integer containing the minor version number of the runtime currently in use.</summary>
+        <value>The minor version number of the runtime currently in use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

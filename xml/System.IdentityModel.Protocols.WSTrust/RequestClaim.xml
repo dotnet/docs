@@ -85,7 +85,7 @@
       <Docs>
         <param name="claimType">The URI that represents the claim type.</param>
         <param name="isOptional">
-          <see langword="true" /> if the claim is optional in the response; otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the claim is optional in the response; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> class with the specified claim type and a value that indicates whether the claim is optional.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -117,7 +117,7 @@
       <Docs>
         <param name="claimType">The URI that represents the claim type.</param>
         <param name="isOptional">
-          <see langword="true" /> if the claim is optional in the response; otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the claim is optional in the response; otherwise, <see langword="false" />.</param>
         <param name="value">The value of the claim.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestClaim" /> class with the specified claim type, claim value, and a value that indicates whether the claim is optional.</summary>
         <remarks>To be added.</remarks>
@@ -169,7 +169,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the request claim is optional in the response.</summary>
         <value>
-          <see langword="true" /> if the claim is optional in the response; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the claim is optional in the response; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

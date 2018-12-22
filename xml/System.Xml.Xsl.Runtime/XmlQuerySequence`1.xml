@@ -200,7 +200,7 @@
       </Parameters>
       <Docs>
         <param name="value">An object to add to the collection.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -231,7 +231,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -623,7 +623,7 @@
       </Parameters>
       <Docs>
         <param name="value">The sequence value.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -652,7 +652,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -682,7 +682,7 @@
       </ReturnValue>
       <Docs>
         <summary>If the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only, this property returns <see langword="true" />.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only; otherwise, <see langword="false" />.</value>
+        <value><see langword="true" /> if the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,8 +713,8 @@
       </Parameters>
       <Docs>
         <param name="value">The item to be removed.</param>
-        <summary>Removes the specified item from the collection</summary>
-        <returns>Returns <see langword="true" /> if the item was removed; otherwise, <see langword="false" />.</returns>
+        <summary>Removes the specified item from the collection.</summary>
+        <returns><see langword="true" /> if the item was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -748,7 +748,7 @@
       <Docs>
         <param name="index">The sequence index.</param>
         <param name="value">The sequence value.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -780,7 +780,7 @@
       </Parameters>
       <Docs>
         <param name="index">The sequence index.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -902,8 +902,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the <see cref="T:System.Collections.IEnumerator" />.</summary>
-        <returns>Returns the <see cref="T:System.Collections.IEnumerator" /> of the query sequence collection.</returns>
+        <summary>Returns an enumerator that can be used to iterate through the query sequence collection.</summary>
+        <returns>An enumerator that can be used to iterate through the query sequence collection.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -935,7 +935,7 @@
       </Parameters>
       <Docs>
         <param name="value">The sequence value.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <returns>The index of the item added.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -965,7 +965,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1066,7 +1066,7 @@
       <Docs>
         <param name="index">The specified index.</param>
         <param name="value">The specified value.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -1095,8 +1095,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns true. The items cannot be added, removed, or modified.</summary>
-        <value>Returns <see langword="true" />.</value>
+        <summary>Returns <see langword="true" /> to indicate items cannot be added, removed, or modified.</summary>
+        <value>Always returns <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1124,8 +1124,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>If the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only, this property returns <see langword="true" />.</summary>
-        <value>Returns <see langword="true" /> if the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only; otherwise, <see langword="false" />.</value>
+        <summary>Gets a value indicating whether the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only. Always <see langword="true" />.</summary>
+        <value>Always returns <see langword="true" /> to indicate <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1221,7 +1221,7 @@
       </Parameters>
       <Docs>
         <param name="index">The specified index.</param>
-        <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
+        <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

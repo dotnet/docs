@@ -83,8 +83,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can complete the string being typed by the user.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>Gets a value that indicates whether the expression editor instance can complete the string being typed by the user.</summary>
+        <returns>Always <see langword="true" /> to indicate that the expression editor instance can complete the string being typed by the user.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can be closed.</summary>
+        <summary>Returns a value that indicates whether the expression editor instance can be closed.</summary>
         <returns>
           <see langword="true" /> if the expression editor instance can be closed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -128,7 +128,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression can be cut.</summary>
+        <summary>Returns a value that indicates whether the expression can be cut.</summary>
         <returns>
           <see langword="true" /> if the expression can be cut; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -174,8 +174,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve global IntelliSense on the expression.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>Returns a value that indicates whether the expression editor instance can retrieve global IntelliSense on the expression.</summary>
+        <returns>Always <see langword="true" /> to indicate the expression editor instance can retrieve global IntelliSense on the expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,8 +219,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve parameter information on the expression.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>Returns a value that indicates whether the expression editor instance can retrieve parameter information on the expression.</summary>
+        <returns>A <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +241,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression can be pasted.</summary>
+        <summary>Returns a value that indicates whether the expression can be pasted.</summary>
         <returns>
           <see langword="true" /> if the expression can be pasted; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -264,8 +264,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve type information to be shown in an IntelliSense quick info tool tip.</summary>
-        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <summary>Returns a value that indicates whether the expression editor instance can retrieve type information to be shown in an IntelliSense quick info tool tip.</summary>
+        <returns>A <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +286,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the system can redo the operation.</summary>
+        <summary>Returns a value that indicates whether the system can redo the operation.</summary>
         <returns>
           <see langword="true" /> if the system can redo the operation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -309,7 +309,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a Boolean value that indicates whether the system can undo the operation.</summary>
+        <summary>Returns a value that indicates whether the system can undo the operation.</summary>
         <returns>
           <see langword="true" /> if the system can undo the operation; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -508,7 +508,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the text used to generate an expression.</summary>
-        <returns>Returns a <see cref="T:System.String" /> that contains the text used to generate an expression.</returns>
+        <returns>The text used to generate an expression.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,7 +693,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control when growing to fit.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> that containing the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
+        <value>The maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -714,7 +714,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> that contains the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
+        <value>The minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
         <remarks></remarks>
       </Docs>
     </Member>

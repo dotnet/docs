@@ -963,7 +963,7 @@
         <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
         <param name="code">An instance of the <see cref="T:System.Xml.Schema.XmlTypeCode" /> class.</param>
         <summary>Returns <see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />.</summary>
-        <returns>Returns <see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />, otherwise, <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

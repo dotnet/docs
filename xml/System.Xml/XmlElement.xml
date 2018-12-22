@@ -841,7 +841,7 @@ This property is a Microsoft extension to the Document Object Model (DOM).
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the tag format of the element.</summary>
-        <value>Returns <see langword="true" /> if the element is to be serialized in the short tag format "&lt;item/&gt;"; <see langword="false" /> for the long format "&lt;item&gt;&lt;/item&gt;".  
+        <value><see langword="true" /> if the element is to be serialized in the short tag format "&lt;item/&gt;"; <see langword="false" /> for the long format "&lt;item&gt;&lt;/item&gt;".  
   
  When setting this property, if set to <see langword="true" />, the children of the element are removed and the element is serialized in the short tag format. If set to <see langword="false" />, the value of the property is changed (regardless of whether or not the element has content); if the element is empty, it is serialized in the long format.  
   

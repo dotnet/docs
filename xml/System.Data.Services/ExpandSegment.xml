@@ -145,8 +145,8 @@ http://host/service.svc/Orders?$expand=OrderLines
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A Boolean value that indicates whether the expand statement is used with a filter expression.</summary>
-        <value>True or false.</value>
+        <summary>Gets a value that indicates whether the expand statement is used with a filter expression.</summary>
+        <value><see langword="true" /> if the expand statement is used with a filter expression; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,8 +232,8 @@ http://host/service.svc/Orders?$expand=OrderLines
       </Parameters>
       <Docs>
         <param name="path">The enumeration of segments to check for filters.</param>
-        <summary>A Boolean value that indicates whether the path includes a filter option on target data.</summary>
-        <returns>True if any of the segments in the path has a filter; false otherwise.</returns>
+        <summary>Returns a value that indicates whether the path includes a filter option on target data.</summary>
+        <returns><see langword="true" /> if any of the segments in the path has a filter; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

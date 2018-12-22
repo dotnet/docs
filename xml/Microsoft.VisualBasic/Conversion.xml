@@ -789,7 +789,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -845,7 +845,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -901,7 +901,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -957,7 +957,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1013,7 +1013,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1073,7 +1073,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1134,7 +1134,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1195,7 +1195,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1256,7 +1256,7 @@ Dim i2 As Integer = CInt(Fix(s))           ' Result: 173
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the hexadecimal value of a number.</summary>
-        <returns>Returns a string representing the hexadecimal value of a number.</returns>
+        <returns>A string representing the hexadecimal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1787,7 +1787,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1843,7 +1843,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1899,7 +1899,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1955,7 +1955,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2011,7 +2011,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2071,7 +2071,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2132,7 +2132,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2193,7 +2193,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2254,7 +2254,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. Any valid numeric expression or <see langword="String" /> expression.</param>
         <summary>Returns a string representing the octal value of a number.</summary>
-        <returns>Returns a string representing the octal value of a number.</returns>
+        <returns>A string representing the octal value of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2311,7 +2311,7 @@ Dim i3 As Integer = CInt(Fix(sng))         ' Result: 175
       <Docs>
         <param name="Number">Required. An <see langword="Object" /> containing any valid numeric expression.</param>
         <summary>Returns a <see langword="String" /> representation of a number.</summary>
-        <returns>Returns a <see langword="String" /> representation of a number.</returns>
+        <returns>A <see langword="String" /> representation of a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -241,8 +241,8 @@ Dim coll As New Microsoft.VisualBasic.Collection()
       </Parameters>
       <Docs>
         <param name="Key">Required. A <see langword="String" /> expression that specifies the key for which to search the elements of the collection.</param>
-        <summary>Returns a <see langword="Boolean" /> value indicating whether a Visual Basic <see langword="Collection" /> object contains an element with a specific key.</summary>
-        <returns>Returns a <see langword="Boolean" /> value indicating whether a Visual Basic <see langword="Collection" /> object contains an element with a specific key.</returns>
+        <summary>Returns a value that indicates whether a Visual Basic <see langword="Collection" /> object contains an element with a specific key.</summary>
+        <returns><see langword="true" /> if Visual Basic <see langword="Collection" /> object contains an element with a specific key; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

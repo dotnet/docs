@@ -81,7 +81,7 @@
         <param name="parameter">Not used.</param>
         <param name="culture">Not used.</param>
         <summary>Converts a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> derived object to a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
-        <returns>Returns an <see cref="T:System.Object" /> that contains the <see cref="T:System.Activities.Presentation.Model.ModelItem" />, <see cref="T:System.Activities.Presentation.EditingContext" />, and value of the UI property.</returns>
+        <returns>An object that contains the <see cref="T:System.Activities.Presentation.Model.ModelItem" />, <see cref="T:System.Activities.Presentation.EditingContext" />, and value of the UI property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
         <param name="parameter">The converter parameter to use.</param>
         <param name="culture">Not used.</param>
         <summary>Converts a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> derived object to a <see cref="T:System.Activities.Presentation.Model.ModelItem" /></summary>
-        <returns>Returns an <see cref="T:System.Object" /> that contains the <see cref="T:System.Activities.Presentation.Model.ModelItem" />, <see cref="T:System.Activities.Presentation.EditingContext" />, and value of the UI property.</returns>
+        <returns>An object that contains the <see cref="T:System.Activities.Presentation.Model.ModelItem" />, <see cref="T:System.Activities.Presentation.EditingContext" />, and value of the UI property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,7 +158,7 @@
         <param name="parameter">Not used.</param>
         <param name="culture">Not used.</param>
         <summary>Not supported in this release.</summary>
-        <returns>Returns an <see cref="T:System.Object" />.</returns>
+        <returns>An object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@
         <param name="parameter">Not used.</param>
         <param name="culture">Not used.</param>
         <summary>Not supported in this release.</summary>
-        <returns>Returns an <see cref="T:System.Object" />.</returns>
+        <returns>An object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

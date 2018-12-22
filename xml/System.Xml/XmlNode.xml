@@ -664,7 +664,7 @@ Display the modified XML...
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Get an enumerator that iterates through the child nodes in the current node.</summary>
+        <summary>Gets an enumerator that iterates through the child nodes in the current node.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the child nodes in the current node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1028,8 +1028,8 @@ d.</elem>
         <Parameter Name="refChild" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="newChild">The <see langword="XmlNode" /> to insert.</param>
-        <param name="refChild">The <see langword="XmlNode" /> that is the reference node. The <paramref name="newChild" /> is placed after the <paramref name="refChild" />.</param>
+        <param name="newChild">The node to insert.</param>
+        <param name="refChild">The reference node. <paramref name="newChild" /> is placed after <paramref name="refChild" />.</param>
         <summary>Inserts the specified node immediately after the specified reference node.</summary>
         <returns>The node being inserted.</returns>
         <remarks>
@@ -1104,8 +1104,8 @@ d.</elem>
         <Parameter Name="refChild" Type="System.Xml.XmlNode" />
       </Parameters>
       <Docs>
-        <param name="newChild">The <see langword="XmlNode" /> to insert.</param>
-        <param name="refChild">The <see langword="XmlNode" /> that is the reference node. The <paramref name="newChild" /> is placed before this node.</param>
+        <param name="newChild">The node to insert.</param>
+        <param name="refChild">The reference node. <paramref name="newChild" /> is placed before this node.</param>
         <summary>Inserts the specified node immediately before the specified reference node.</summary>
         <returns>The node being inserted.</returns>
         <remarks>
@@ -1181,7 +1181,7 @@ d.</elem>
       <Docs>
         <summary>Gets a value indicating whether the node is read-only.</summary>
         <value>
-          <see langword="true" /> if the node is read-only; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the node is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2973,7 +2973,7 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
       <Parameters />
       <Docs>
         <summary>For a description of this member, see <see cref="M:System.Xml.XmlNode.GetEnumerator" />.</summary>
-        <returns>Returns an enumerator for the collection.</returns>
+        <returns>An enumerator for the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

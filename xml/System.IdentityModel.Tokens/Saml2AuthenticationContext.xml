@@ -136,7 +136,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a collection of zero or more unique identifiers (URIs) of authentication authorities that were involved in the authentication of the principal (not including the assertion issuer, who is presumed to have been involved without being explicitly included in the collection). [Saml2Core, 2.7.2.2]</summary>
-        <value>Returns a collection of type <see cref="T:System.Uri" /> that identifies the authenticating authorities that were involved in the authentication of the principal.</value>
+        <value>A collection of URIs that identify the authenticating authorities that were involved in the authentication of the principal.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

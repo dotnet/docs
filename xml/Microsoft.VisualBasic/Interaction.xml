@@ -372,7 +372,7 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       <Parameters />
       <Docs>
         <summary>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic. The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</summary>
-        <returns>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic.  
+        <returns>The argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic.  
   
  The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</returns>
         <remarks>
@@ -591,7 +591,7 @@ End Sub
       <Docs>
         <param name="Expression">Required. Expression that evaluates either a string containing the name of an environment variable, or an integer corresponding to the numeric order of an environment string in the environment-string table.</param>
         <summary>Returns the string associated with an operating-system environment variable.</summary>
-        <returns>Returns the string associated with an operating-system environment variable.</returns>
+        <returns>The string associated with an operating-system environment variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -641,7 +641,7 @@ End Sub
       <Docs>
         <param name="Expression">Required. Expression that evaluates either a string containing the name of an environment variable, or an integer corresponding to the numeric order of an environment string in the environment-string table.</param>
         <summary>Returns the string associated with an operating-system environment variable.</summary>
-        <returns>Returns the string associated with an operating-system environment variable.</returns>
+        <returns>The string associated with an operating-system environment variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -693,7 +693,7 @@ End Sub
         <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project whose key settings are requested.</param>
         <param name="Section">Required. <see langword="String" /> expression containing the name of the section whose key settings are requested. <see langword="GetAllSettings" /> returns an object that contains a two-dimensional array of strings. The strings contain all the key settings in the specified section, plus their corresponding values.</param>
         <summary>Returns a list of key settings and their respective values (originally created with <see langword="SaveSetting" />) from an application's entry in the Windows registry. Using the <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
-        <returns>Returns a list of key settings and their respective values (originally created with <see langword="SaveSetting" />) from an application's entry in the Windows registry.  
+        <returns>A list of key settings and their respective values (originally created with <see langword="SaveSetting" />) from an application's entry in the Windows registry.  
   
  Using the <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</returns>
         <remarks>
@@ -766,7 +766,7 @@ End Sub
   
  [3|2] Required. <see langword="String" />. The type or class of object to create.</param>
         <summary>Returns a reference to an object provided by a COM component.</summary>
-        <returns>Returns a reference to an object provided by a COM component.</returns>
+        <returns>A reference to an object provided by a COM component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -876,7 +876,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <param name="Key">Required. <see langword="String" /> expression containing the name of the key setting to return.</param>
         <param name="Default">Optional. Expression containing the value to return if no value is set in the <paramref name="Key" /> setting. If omitted, <paramref name="Default" /> is assumed to be a zero-length string ("").</param>
         <summary>Returns a key setting value from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />.</summary>
-        <returns>Returns a key setting value from an application's entry in the Windows registry.  
+        <returns>A key setting value from an application's entry in the Windows registry.  
   
  The <see langword="My" /> feature gives you greater productivity and performance in registry operations than <see langword="GetAllSettings" />.</returns>
         <remarks>
@@ -1197,7 +1197,7 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <param name="Stop">Required. <see langword="Long" />. Whole number that indicates the end of the set of calculated ranges. <paramref name="Stop" /> cannot be less than or equal to <paramref name="Start" />.</param>
         <param name="Interval">Required. <see langword="Long" />. Whole number that indicates the size of each range calculated between <paramref name="Start" /> and <paramref name="Stop" />. <paramref name="Interval" /> cannot be less than 1.</param>
         <summary>Returns a string representing the calculated range that contains a number.</summary>
-        <returns>Returns a string representing the calculated range that contains a number.</returns>
+        <returns>A string representing the calculated range that contains a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

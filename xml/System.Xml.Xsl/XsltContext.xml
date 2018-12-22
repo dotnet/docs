@@ -189,7 +189,7 @@
       <Docs>
         <param name="node">The white space node that is to be preserved or stripped in the current context.</param>
         <summary>When overridden in a derived class, evaluates whether to preserve white space nodes or strip them for the given context.</summary>
-        <returns>Returns <see langword="true" /> if the white space is to be preserved or <see langword="false" /> if the white space is to be stripped.</returns>
+        <returns><see langword="true" /> if the white space is to be preserved; <see langword="false" /> if the white space is to be stripped.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

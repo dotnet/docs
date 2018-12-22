@@ -81,7 +81,7 @@
         <param name="parameter">Not used in this implementation.</param>
         <param name="culture">Not used in this implementation.</param>
         <summary>Converts the specified object to its inner value.</summary>
-        <returns>Returns a <see cref="T:System.Object" /> that contains the inner value.</returns>
+        <returns>An object that contains the inner value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
         <param name="parameter">Not used in this implementation.</param>
         <param name="culture">Not used in this implementation.</param>
         <summary>Returns the specified value, unmodified.</summary>
-        <returns>Returns a <see cref="T:System.Object" /> that contains the unmodified value.</returns>
+        <returns>An object that contains the unmodified value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

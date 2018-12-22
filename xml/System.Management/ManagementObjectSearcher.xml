@@ -420,7 +420,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the options for how to search for objects.</summary>
-        <value>Returns an <see cref="T:System.Management.EnumerationOptions" /> that contains the options for searching for WMI objects.</value>
+        <value>The options for searching for WMI objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -455,7 +455,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the query to be invoked in the searcher (that is, the criteria to be applied to the search for management objects).</summary>
-        <value>Returns an <see cref="T:System.Management.ObjectQuery" /> that contains the query to be invoked in the searcher.</value>
+        <value>The query to be invoked in the searcher.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -491,7 +491,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the scope in which to look for objects (the scope represents a WMI namespace).</summary>
-        <value>Returns a <see cref="T:System.Management.ManagementScope" /> that contains the scope (namespace) in which to look for the WMI objects.</value>
+        <value>The scope (namespace) in which to look for the WMI objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

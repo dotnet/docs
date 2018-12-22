@@ -56,7 +56,7 @@
         <param name="obj">
           <see cref="T:System.Object" /> with which to determine equality.</param>
         <summary>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function.</summary>
-        <returns>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function, otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if this XML extension function has the same values as another XML extension function; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -84,7 +84,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the object's hash code.</summary>
-        <returns>Returns the object's hash code.</returns>
+        <returns>The object's hash code.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

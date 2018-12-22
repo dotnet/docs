@@ -138,7 +138,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the block size for block operations. When waiting for events, this value specifies how many events to wait for before returning.</summary>
-        <value>Returns an <see cref="T:System.Int32" /> value indicating the block size for a block of operations.</value>
+        <value>An integer value indicating the block size for a block of operations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

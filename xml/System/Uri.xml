@@ -3011,7 +3011,7 @@ If you used an escaped string to construct this instance (for example, "http://[
       <Parameters />
       <Docs>
         <summary>Indicates whether the string used to construct this <see cref="T:System.Uri" /> was well-formed and is not required to be further escaped.</summary>
-        <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the string was well-formed; else <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the string was well-formed; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

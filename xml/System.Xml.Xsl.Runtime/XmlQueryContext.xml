@@ -231,7 +231,7 @@
         <param name="namespaceUri">A value of type <see langword="string" />.</param>
         <param name="args">A sequence of <see cref="T:System.Xml.XPath.XPathItem" /> instances.</param>
         <summary>Gets a late-bound extension object from the external argument list.</summary>
-        <returns>Returns a generic list of type <see cref="T:System.Xml.XPath.XPathItem" />.</returns>
+        <returns>A generic list of type <see cref="T:System.Xml.XPath.XPathItem" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -265,7 +265,7 @@
         <param name="namespaceUri">A value of type <see langword="string" />.</param>
         <summary>Returns true if the late-bound object identified by <paramref name="namespaceUri" /> contains a method that matches <paramref name="name" />.</summary>
         <returns>
-          <see langword="true" /> if the late bound object matches name; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the late bound object matches name; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -322,7 +322,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the <see cref="T:System.Xml.XmlNameTable" /> instance.</summary>
-        <value>Returns an instance of the <see cref="T:System.Xml.XmlNameTable" />.</value>
+        <value>An instance of the <see cref="T:System.Xml.XmlNameTable" />.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

@@ -100,7 +100,7 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> to be serialized.</param>
+        <param name="type">The type to be serialized.</param>
         <summary>Gets a value that determines whether a type can be serialized.</summary>
         <returns>
           <see langword="true" /> if the type can be serialized; otherwise, <see langword="false" />.</returns>
@@ -137,7 +137,7 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> to be serialized.</param>
+        <param name="type">The type to be serialized.</param>
         <summary>Returns a serializer for the specified type.</summary>
         <returns>An instance of a type derived from the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class.</returns>
         <remarks>To be added.</remarks>
@@ -270,7 +270,7 @@
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the collection of methods that is used to write to a data stream.</summary>
+        <summary>Gets the collection of methods that is used to write to a data stream.</summary>
         <value>A <see cref="T:System.Collections.Hashtable" /> that contains the methods.</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

@@ -1207,8 +1207,8 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a <see langword="Date" /> value containing the current date and time according to your system.</summary>
-        <value>Returns a <see langword="Date" /> value containing the current date and time according to your system.</value>
+        <summary>Returns a value containing the current date and time according to your system.</summary>
+        <value>The current date and time according to your system.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -3428,7 +3428,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> that specifies the type that contains the specified <see langword="static" /> (<see langword="Shared" /> in Visual Basic) method.</param>
+        <param name="type">The type that contains the specified <see langword="static" /> (<see langword="Shared" /> in Visual Basic) method.</param>
         <param name="methodName">The name of the method.</param>
         <param name="typeArguments">An array of <see cref="T:System.Type" /> objects that specify the type parameters of the generic method. This argument should be null when methodName specifies a non-generic method.</param>
         <param name="arguments">An array of <see cref="T:System.Linq.Expressions.Expression" /> objects that represent the arguments to the method.</param>
@@ -3625,7 +3625,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the node can be reduced to a simpler node. If this returns true, Reduce() can be called to produce the reduced form.</summary>
-        <value>True if the node can be reduced, otherwise false.</value>
+        <value><see langword="true" /> if the node can be reduced; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -18776,7 +18776,7 @@
         <param name="typeArgs">An array of Type objects that specify the type arguments for the System.Action delegate type.</param>
         <param name="actionType">When this method returns, contains the generic System.Action delegate type that has specific type arguments. Contains null if there is no generic System.Action delegate that matches the <paramref name="typeArgs" />.This parameter is passed uninitialized.</param>
         <summary>Creates a <see cref="P:System.Linq.Expressions.Expression.Type" /> object that represents a generic System.Action delegate type that has specific type arguments.</summary>
-        <returns>true if generic System.Action delegate type was created for specific <paramref name="typeArgs" />; false otherwise.</returns>
+        <returns><see langword="true" /> if generic System.Action delegate type was created for specific <paramref name="typeArgs" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -18816,7 +18816,7 @@
         <param name="typeArgs">An array of Type objects that specify the type arguments for the System.Func delegate type.</param>
         <param name="funcType">When this method returns, contains the generic System.Func delegate type that has specific type arguments. Contains null if there is no generic System.Func delegate that matches the <paramref name="typeArgs" />.This parameter is passed uninitialized.</param>
         <summary>Creates a <see cref="P:System.Linq.Expressions.Expression.Type" /> object that represents a generic System.Func delegate type that has specific type arguments. The last type argument specifies the return type of the created delegate.</summary>
-        <returns>true if generic System.Func delegate type was created for specific <paramref name="typeArgs" />; false otherwise.</returns>
+        <returns><see langword="true" /> if generic System.Func delegate type was created for specific <paramref name="typeArgs" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

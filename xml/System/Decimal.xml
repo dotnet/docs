@@ -4492,9 +4492,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
-          <paramref name="s" /> is not of the correct format</exception>
+          <paramref name="s" /> is not of the correct format.</exception>
         <exception cref="T:System.OverflowException">
-          <paramref name="s" /> represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" /></exception>
+          <paramref name="s" /> represents a number less than <see cref="F:System.Decimal.MinValue" /> or greater than <see cref="F:System.Decimal.MaxValue" />.</exception>
         <altmember cref="Overload:System.Decimal.TryParse" />
         <altmember cref="M:System.Decimal.ToString" />
         <related type="Article" href="~/docs/standard/base-types/parsing-numeric.md">Parsing Numeric Strings in .NET</related>

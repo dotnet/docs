@@ -439,7 +439,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the name with which the user data must be associated for the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocation" /> to be matched.</summary>
+        <summary>Gets or sets the name with which the user data must be associated for the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocation" /> to be matched.</summary>
         <value>A <see langword="string" /> key with which the user data must be associated for the <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingLocation" /> to be matched or a null reference (<see langword="Nothing" /> in Visual Basic).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

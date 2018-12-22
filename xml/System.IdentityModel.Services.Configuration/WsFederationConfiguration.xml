@@ -547,7 +547,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
+        <summary>Gets or sets the value of the wres parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS). The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -82,7 +82,7 @@
       </Parameters>
       <Docs>
         <param name="loadConfig">
-          <see langword="true" /> to load settings from the configuration file; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to load settings from the configuration file; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class. Optionally loads settings from the current configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -141,7 +141,7 @@
       <Docs>
         <param name="issuerName">The issuer name. Sets the <see cref="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName" /> property.</param>
         <param name="loadConfig">
-          <see langword="true" /> to load settings from the configuration file; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to load settings from the configuration file; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name. Optionally loads settings from the current configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -202,7 +202,7 @@
         <param name="issuerName">The issuer name. Sets the <see cref="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.TokenIssuerName" /> property.</param>
         <param name="signingCredentials">The signing credentials for the STS. Sets the <see cref="P:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.SigningCredentials" /> property.</param>
         <param name="loadConfig">
-          <see langword="true" /> to load settings from the configuration file; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to load settings from the configuration file; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> class that has the specified issuer name and signing credentials. Optionally loads settings from the current configuration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -377,7 +377,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the default token type that is used in token issuance.</summary>
-        <value>Returns a string that contains the default token type.</value>
+        <value>A string that contains the default token type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

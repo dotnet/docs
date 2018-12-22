@@ -59,7 +59,7 @@
         <Parameter Name="dependencyProperty" Type="System.Workflow.ComponentModel.DependencyProperty" />
       </Parameters>
       <Docs>
-        <param name="propertyOwner">The <see cref="T:System.Object" /> that owns the property.</param>
+        <param name="propertyOwner">The object that owns the property.</param>
         <param name="dependencyProperty">The associated <see cref="T:System.Workflow.ComponentModel.DependencyProperty" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.PropertyValidationContext" /> class.</summary>
         <remarks>To be added.</remarks>
@@ -85,7 +85,7 @@
         <Parameter Name="propertyName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="propertyOwner">The <see cref="T:System.Object" /> that owns the property</param>
+        <param name="propertyOwner">The object that owns the property</param>
         <param name="propertyInfo">The associated <see cref="T:System.Workflow.ComponentModel.DependencyProperty" />.</param>
         <param name="propertyName">The name of the property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.PropertyValidationContext" /> class.</summary>
@@ -155,8 +155,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the <see cref="T:System.Object" /> which owns the property associated with this instance.</summary>
-        <value>The <see cref="T:System.Object" /> which owns the property associated with this instance.</value>
+        <summary>Gets the <see cref="T:System.Object" /> that owns the property associated with this instance.</summary>
+        <value>The object that owns the property associated with this instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

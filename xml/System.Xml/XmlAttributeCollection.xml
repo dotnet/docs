@@ -88,7 +88,7 @@
         <Parameter Name="node" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
+        <param name="node">The attribute to insert.</param>
         <summary>Inserts the specified attribute as the last node in the collection.</summary>
         <returns>The <see langword="XmlAttribute" /> to append to the collection.</returns>
         <remarks>
@@ -208,8 +208,8 @@
         <Parameter Name="refNode" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="newNode">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <paramref name="newNode" /> is placed after the <paramref name="refNode" />.</param>
+        <param name="newNode">The attribute to insert.</param>
+        <param name="refNode">The reference attribute. <paramref name="newNode" /> is placed after the <paramref name="refNode" />.</param>
         <summary>Inserts the specified attribute immediately after the specified reference attribute.</summary>
         <returns>The <see langword="XmlAttribute" /> to insert into the collection.</returns>
         <remarks>
@@ -270,8 +270,8 @@
         <Parameter Name="refNode" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="newNode">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
-        <param name="refNode">The <see cref="T:System.Xml.XmlAttribute" /> that is the reference attribute. <paramref name="newNode" /> is placed before the <paramref name="refNode" />.</param>
+        <param name="newNode">The attribute to insert.</param>
+        <param name="refNode">The reference attribute. <paramref name="newNode" /> is placed before the <paramref name="refNode" />.</param>
         <summary>Inserts the specified attribute immediately before the specified reference attribute.</summary>
         <returns>The <see langword="XmlAttribute" /> to insert into the collection.</returns>
         <remarks>
@@ -342,7 +342,7 @@
       <Docs>
         <param name="i">The index of the attribute.</param>
         <summary>Gets the attribute with the specified index.</summary>
-        <value>The <see cref="T:System.Xml.XmlAttribute" /> at the specified index.</value>
+        <value>The attribute at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -401,7 +401,7 @@
       <Docs>
         <param name="name">The qualified name of the attribute.</param>
         <summary>Gets the attribute with the specified name.</summary>
-        <value>The <see cref="T:System.Xml.XmlAttribute" /> with the specified name. If the attribute does not exist, this property returns <see langword="null" />.</value>
+        <value>The attribute with the specified name. If the attribute does not exist, this property returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -460,7 +460,7 @@
         <param name="localName">The local name of the attribute.</param>
         <param name="namespaceURI">The namespace URI of the attribute.</param>
         <summary>Gets the attribute with the specified local name and namespace Uniform Resource Identifier (URI).</summary>
-        <value>The <see cref="T:System.Xml.XmlAttribute" /> with the specified local name and namespace URI. If the attribute does not exist, this property returns <see langword="null" />.</value>
+        <value>The attribute with the specified local name and namespace URI. If the attribute does not exist, this property returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -506,7 +506,7 @@
         <Parameter Name="node" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Xml.XmlAttribute" /> to insert.</param>
+        <param name="node">The attribute to insert.</param>
         <summary>Inserts the specified attribute as the first node in the collection.</summary>
         <returns>The <see langword="XmlAttribute" /> added to the collection.</returns>
         <remarks>
@@ -565,7 +565,7 @@
         <Parameter Name="node" Type="System.Xml.XmlAttribute" />
       </Parameters>
       <Docs>
-        <param name="node">The <see cref="T:System.Xml.XmlAttribute" /> to remove.</param>
+        <param name="node">The attribute to remove.</param>
         <summary>Removes the specified attribute from the collection.</summary>
         <returns>The node removed or <see langword="null" /> if it is not found in the collection.</returns>
         <remarks>
@@ -840,7 +840,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count" />.</summary>
-        <value>Returns an <see langword="int" /> that contains the count of the attributes.</value>
+        <value>An <see langword="int" /> that contains the count of the attributes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -886,7 +886,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized" />.</summary>
-        <value>Returns <see langword="true" /> if the collection is synchronized.</value>
+        <value><see langword="true" /> if the collection is synchronized.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -932,7 +932,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot" />.</summary>
-        <value>Returns the <see cref="T:System.Object" /> that is the root of the collection.</value>
+        <value>The <see cref="T:System.Object" /> that is the root of the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

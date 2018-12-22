@@ -230,7 +230,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the bitmap associated with the <see cref="T:System.Drawing.Design.ToolboxItem" /> wrapped by the current object.</summary>
-        <value>Returns a <see cref="T:System.Drawing.Bitmap" /> that is associated with the <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
+        <value>A <see cref="T:System.Drawing.Bitmap" /> that is associated with the <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,8 +410,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see langword="string" /> that represents the current object.</summary>
-        <returns>Returns the value of the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName" /> property for the current <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object.</returns>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>The value of the <see cref="P:System.Activities.Presentation.Toolbox.ToolboxItemWrapper.ToolName" /> property for the current <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

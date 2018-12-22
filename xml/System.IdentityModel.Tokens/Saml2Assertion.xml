@@ -398,7 +398,7 @@
         <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the source data.</param>
         <summary>Writes the source data, if available.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">No source data is available</exception>
+        <exception cref="T:System.InvalidOperationException">No source data is available.</exception>
       </Docs>
     </Member>
   </Members>

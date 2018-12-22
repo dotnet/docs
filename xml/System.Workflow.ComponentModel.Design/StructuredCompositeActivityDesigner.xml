@@ -912,7 +912,7 @@
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.DesignerView&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get a read-only collection of designer views that the current <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" /> hosts.</summary>
+        <summary>Gets a read-only collection of designer views that the current <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" /> hosts.</summary>
         <value>The <see cref="T:System.Workflow.ComponentModel.Design.DesignerView" /> read-only collection that contains the views hosted by the current <see cref="T:System.Workflow.ComponentModel.Design.StructuredCompositeActivityDesigner" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

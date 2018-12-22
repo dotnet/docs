@@ -197,7 +197,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the keyword used to display the F1 help topic related to the dialog.</summary>
-        <value>Returns a <see cref="T:System.String" /> that contains the keyword.</value>
+        <value>The keyword used to display the F1 help topic related to the dialog.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -445,7 +445,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the resize mode of the window.</summary>
-        <value>Returns a <see cref="T:System.Windows.ResizeMode" /> value.</value>
+        <value>One of the enumeration values that indicates the resize mode of the window.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +486,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether a window will automatically size itself to fit the size of its content.</summary>
-        <value>Returns a <see cref="T:System.Windows.SizeToContent" /> value.</value>
+        <value>One of the enumeration values that indicates whether a window will automatically size itself to fit the size of its content.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

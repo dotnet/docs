@@ -127,7 +127,7 @@
         <Parameter Name="options" Type="System.Workflow.ComponentModel.DependencyPropertyOptions" />
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="options">A bitwise combination of the enumeration values that define the associated dependency property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +181,7 @@
       </Parameters>
       <Docs>
         <param name="defaultValue">The object representing the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="options">A bitwise combination of the enumeration values that define the associated dependency property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value and a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,7 +210,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="options">A bitwise combination of the enumeration values that define the associated dependency property.</param>
         <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value and an array of attributes.</summary>
         <remarks>To be added.</remarks>
@@ -242,7 +242,7 @@
       </Parameters>
       <Docs>
         <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="options">A bitwise combination of the enumeration values that define the associated dependency property.</param>
         <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, and an array of attributes.</summary>
         <remarks>To be added.</remarks>
@@ -268,7 +268,7 @@
       </Parameters>
       <Docs>
         <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="options">A bitwise combination of the enumeration values that define the associated dependency property.</param>
         <param name="getValueOverride">The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> delegate that belongs to this instance.</param>
         <param name="setValueOverride">The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> delegate that belongs to this instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> class with a default property value, a <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> enumeration value, and delegates to override the <see langword="GetValue" /> and <see langword="SetValue" /> logic associated with the dependency property.</summary>
@@ -302,7 +302,7 @@
       </Parameters>
       <Docs>
         <param name="defaultValue">The object that represents the <see cref="P:System.Workflow.ComponentModel.PropertyMetadata.DefaultValue" /> of this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</param>
-        <param name="options">The <see cref="T:System.Workflow.ComponentModel.DependencyPropertyOptions" /> used to define the associated dependency property.</param>
+        <param name="options">A bitwise combination of the enumeration values that define the associated dependency property.</param>
         <param name="getValueOverride">The <see cref="T:System.Workflow.ComponentModel.GetValueOverride" /> delegate that belongs to this instance.</param>
         <param name="setValueOverride">The <see cref="T:System.Workflow.ComponentModel.SetValueOverride" /> delegate that belongs to this instance.</param>
         <param name="attributes">Attributes applicable to the dependency property, such as <see cref="T:System.ComponentModel.DesignerSerializationVisibilityAttribute" /> and <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />.</param>
@@ -549,7 +549,7 @@
       </Parameters>
       <Docs>
         <param name="dependencyProperty">The <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> to which this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> has been applied.</param>
-        <param name="targetType">The <see cref="T:System.Type" /> associated with this metadata if this instance is type-specific metadata. If this is default metadata, this value is a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <param name="targetType">The type associated with this metadata if this instance is type-specific metadata. If this is default metadata, this value is a null reference (<see langword="Nothing" /> in Visual Basic).</param>
         <summary>Provides processing when this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" /> is applied to a dependency property.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -578,7 +578,7 @@
         <ReturnType>System.Workflow.ComponentModel.DependencyPropertyOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or set the property which represents the option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</summary>
+        <summary>Gets or sets the property which represents the option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</summary>
         <value>The option setting for the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> associated to this <see cref="T:System.Workflow.ComponentModel.PropertyMetadata" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

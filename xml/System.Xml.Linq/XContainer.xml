@@ -1779,7 +1779,7 @@ End Module
         <ReturnType>System.Xml.Linq.XNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the first child node of this node.</summary>
+        <summary>Gets the first child node of this node.</summary>
         <value>An <see cref="T:System.Xml.Linq.XNode" /> containing the first child node of the <see cref="T:System.Xml.Linq.XContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1855,7 +1855,7 @@ Console.WriteLine(firstNode)
         <ReturnType>System.Xml.Linq.XNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get the last child node of this node.</summary>
+        <summary>Gets the last child node of this node.</summary>
         <value>An <see cref="T:System.Xml.Linq.XNode" /> containing the last child node of the <see cref="T:System.Xml.Linq.XContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

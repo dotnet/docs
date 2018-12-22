@@ -48,7 +48,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+        <summary>Returns an integer value representing the character code corresponding to a character.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Asc">
@@ -73,8 +73,8 @@
       </Parameters>
       <Docs>
         <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
-        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
-        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <summary>Returns an integer value representing the character code corresponding to a character.</summary>
+        <returns>The character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -125,8 +125,8 @@
       </Parameters>
       <Docs>
         <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
-        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
-        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <summary>Returns an integer value representing the character code corresponding to a character.</summary>
+        <returns>The character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -162,7 +162,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+        <summary>Returns an integer value representing the character code corresponding to a character.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AscW">
@@ -187,8 +187,8 @@
       </Parameters>
       <Docs>
         <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
-        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
-        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <summary>Returns an integer value representing the character code corresponding to a character.</summary>
+        <returns>The character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -239,8 +239,8 @@
       </Parameters>
       <Docs>
         <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <paramref name="String" /> is a <see langword="String" /> expression, only the first character of the string is used for input. If <paramref name="String" /> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
-        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
-        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <summary>Returns an integer value representing the character code corresponding to a character.</summary>
+        <returns>The character code corresponding to a character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -293,7 +293,7 @@
       <Docs>
         <param name="CharCode">Required. An <see langword="Integer" /> expression representing the <c>code point</c>, or character code, for the character.</param>
         <summary>Returns the character associated with the specified character code.</summary>
-        <returns>Returns the character associated with the specified character code.</returns>
+        <returns>The character associated with the specified character code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -354,7 +354,7 @@
       <Docs>
         <param name="CharCode">Required. An <see langword="Integer" /> expression representing the <c>code point</c>, or character code, for the character.</param>
         <summary>Returns the character associated with the specified character code.</summary>
-        <returns>Returns the character associated with the specified character code.</returns>
+        <returns>The character associated with the specified character code.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -435,7 +435,7 @@
         <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <paramref name="Match" />. If <paramref name="Include" /> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <paramref name="Match" /> as a substring. If <paramref name="Include" /> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <paramref name="Match" /> as a substring.</param>
         <param name="Compare">Optional. Numeric value indicating the kind of string comparison to use. See "Settings" for values.</param>
         <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
-        <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
+        <returns>A zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -502,7 +502,7 @@
         <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <paramref name="Match" />. If <paramref name="Include" /> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <paramref name="Match" /> as a substring. If <paramref name="Include" /> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <paramref name="Match" /> as a substring.</param>
         <param name="Compare">Optional. Numeric value indicating the kind of string comparison to use. See "Settings" for values.</param>
         <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
-        <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
+        <returns>A zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -558,7 +558,7 @@
         <param name="Expression">Required. Any valid expression.</param>
         <param name="Style">Optional. A valid named or user-defined format <see langword="String" /> expression.</param>
         <summary>Returns a string formatted according to instructions contained in a format <see langword="String" /> expression.</summary>
-        <returns>Returns a string formatted according to instructions contained in a format <see langword="String" /> expression.</returns>
+        <returns>A string formatted according to instructions contained in a format <see langword="String" /> expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -766,7 +766,7 @@
         <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not to place negative values within parentheses. See "Remarks" for values.</param>
         <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not numbers are grouped using the group delimiter specified in the computer's regional settings. See "Remarks" for values.</param>
         <summary>Returns an expression formatted as a currency value using the currency symbol defined in the system control panel.</summary>
-        <returns>Returns an expression formatted as a currency value using the currency symbol defined in the system control panel.</returns>
+        <returns>An expression formatted as a currency value using the currency symbol defined in the system control panel.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -831,7 +831,7 @@
         <param name="Expression">Required. <see langword="Date" /> expression to be formatted.</param>
         <param name="NamedFormat">Optional. Numeric value that indicates the date/time format used. If omitted, <see langword="DateFormat.GeneralDate" /> is used.</param>
         <summary>Returns a string expression representing a date/time value.</summary>
-        <returns>Returns a string expression representing a date/time value.</returns>
+        <returns>A string expression representing a date/time value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -901,7 +901,7 @@
         <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether to place negative values within parentheses. See "Settings" for values.</param>
         <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not numbers are grouped using the group delimiter specified in the locale settings. See "Settings" for values.</param>
         <summary>Returns an expression formatted as a number.</summary>
-        <returns>Returns an expression formatted as a number.</returns>
+        <returns>An expression formatted as a number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -967,7 +967,7 @@
         <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not to place negative values within parentheses. See "Settings" for values.</param>
         <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not numbers are grouped using the group delimiter specified in the locale settings. See "Settings" for values.</param>
         <summary>Returns an expression formatted as a percentage (that is, multiplied by 100) with a trailing % character.</summary>
-        <returns>Returns an expression formatted as a percentage (that is, multiplied by 100) with a trailing % character.</returns>
+        <returns>An expression formatted as a percentage (that is, multiplied by 100) with a trailing % character.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1440,7 +1440,7 @@
         <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
         <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <paramref name="Delimiter" /> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
         <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
-        <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
+        <returns>A string created by joining a number of substrings contained in an array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1487,7 +1487,7 @@
         <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
         <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <paramref name="Delimiter" /> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
         <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
-        <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
+        <returns>A string created by joining a number of substrings contained in an array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1542,7 +1542,7 @@
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
         <summary>Returns a string or character converted to lowercase.</summary>
-        <returns>Returns a string or character converted to lowercase.</returns>
+        <returns>A string or character converted to lowercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1591,7 +1591,7 @@
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
         <summary>Returns a string or character converted to lowercase.</summary>
-        <returns>Returns a string or character converted to lowercase.</returns>
+        <returns>A string or character converted to lowercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1642,7 +1642,7 @@
         <param name="str">Required. <see langword="String" /> expression from which the leftmost characters are returned.</param>
         <param name="Length">Required. <see langword="Integer" /> expression. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <paramref name="str" />, the entire string is returned.</param>
         <summary>Returns a string containing a specified number of characters from the left side of a string.</summary>
-        <returns>Returns a string containing a specified number of characters from the left side of a string.</returns>
+        <returns>A string containing a specified number of characters from the left side of a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1702,7 +1702,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1759,7 +1759,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1816,7 +1816,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1873,7 +1873,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1930,7 +1930,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1987,7 +1987,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2044,7 +2044,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2101,7 +2101,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2158,7 +2158,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2220,7 +2220,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2281,7 +2281,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2339,7 +2339,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2396,7 +2396,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2457,7 +2457,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2519,7 +2519,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2581,7 +2581,7 @@
       <Docs>
         <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <paramref name="Expression" /> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
         <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
-        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <returns>An integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2641,7 +2641,7 @@
         <param name="Source">Required. <see langword="String" /> expression. Name of string variable.</param>
         <param name="Length">Required. <see langword="Integer" /> expression. Length of returned string.</param>
         <summary>Returns a left-aligned string containing the specified string adjusted to the specified length.</summary>
-        <returns>Returns a left-aligned string containing the specified string adjusted to the specified length.</returns>
+        <returns>A left-aligned string containing the specified string adjusted to the specified length.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2686,7 +2686,7 @@
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
         <summary>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</summary>
-        <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
+        <returns>A string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2951,7 +2951,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <param name="str">Required. <see langword="String" /> expression from which the rightmost characters are returned.</param>
         <param name="Length">Required. <see langword="Integer" />. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <paramref name="str" />, the entire string is returned.</param>
         <summary>Returns a string containing a specified number of characters from the right side of a string.</summary>
-        <returns>Returns a string containing a specified number of characters from the right side of a string.</returns>
+        <returns>A string containing a specified number of characters from the right side of a string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3004,7 +3004,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <param name="Source">Required. <see langword="String" /> expression. Name of string variable.</param>
         <param name="Length">Required. <see langword="Integer" /> expression. Length of returned string.</param>
         <summary>Returns a right-aligned string containing the specified string adjusted to the specified length.</summary>
-        <returns>Returns a right-aligned string containing the specified string adjusted to the specified length.</returns>
+        <returns>A right-aligned string containing the specified string adjusted to the specified length.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3049,7 +3049,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
         <summary>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</summary>
-        <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
+        <returns>A string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3096,7 +3096,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The number of spaces you want in the string.</param>
         <summary>Returns a string consisting of the specified number of spaces.</summary>
-        <returns>Returns a string consisting of the specified number of spaces.</returns>
+        <returns>A string consisting of the specified number of spaces.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3303,7 +3303,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <param name="Conversion">Required. <see cref="T:Microsoft.VisualBasic.VbStrConv" /> member. The enumeration value specifying the type of conversion to perform.</param>
         <param name="LocaleID">Optional. The <see langword="LocaleID" /> value, if different from the system <see langword="LocaleID" /> value. (The system <see langword="LocaleID" /> value is the default.)</param>
         <summary>Returns a string converted as specified.</summary>
-        <returns>Returns a string converted as specified.</returns>
+        <returns>A string converted as specified.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3392,7 +3392,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
         <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
-        <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
+        <returns>A string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3443,7 +3443,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
         <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
-        <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
+        <returns>A string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3494,7 +3494,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
         <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
-        <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
+        <returns>A string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3543,7 +3543,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="Expression">Required. String expression whose characters are to be reversed. If <paramref name="Expression" /> is a zero-length string (""), a zero-length string is returned.</param>
         <summary>Returns a string in which the character order of a specified string is reversed.</summary>
-        <returns>Returns a string in which the character order of a specified string is reversed.</returns>
+        <returns>A string in which the character order of a specified string is reversed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3584,7 +3584,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="str">Required. Any valid <see langword="String" /> expression.</param>
         <summary>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</summary>
-        <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
+        <returns>A string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3640,7 +3640,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
         <summary>Returns a string or character containing the specified string converted to uppercase.</summary>
-        <returns>Returns a string or character containing the specified string converted to uppercase.</returns>
+        <returns>A string or character containing the specified string converted to uppercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3690,7 +3690,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       <Docs>
         <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
         <summary>Returns a string or character containing the specified string converted to uppercase.</summary>
-        <returns>Returns a string or character containing the specified string converted to uppercase.</returns>
+        <returns>A string or character containing the specified string converted to uppercase.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

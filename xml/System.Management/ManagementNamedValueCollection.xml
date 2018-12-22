@@ -185,7 +185,7 @@
       <Docs>
         <param name="name">The name of the value to be returned.</param>
         <summary>Gets the value associated with the specified name from this collection. In C#, this property is the indexer for the <see cref="T:System.Management.ManagementNamedValueCollection" /> class.</summary>
-        <value>Returns an <see cref="T:System.Object" /> value that is associated with the specified name from this collection.</value>
+        <value>An object that is associated with the specified name from this collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

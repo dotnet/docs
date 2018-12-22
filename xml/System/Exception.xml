@@ -467,7 +467,7 @@ Stack Trace:
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="info" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is <see langword="null" /> or <see cref="P:System.Exception.HResult" /> is zero (0).</exception>
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
@@ -1161,7 +1161,7 @@ Stack Trace:
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The object must be a runtime <see cref="N:System.Reflection" /> object</exception>
+        <exception cref="T:System.ArgumentException">The object must be a runtime <see cref="N:System.Reflection" /> object.</exception>
       </Docs>
     </Member>
     <Member MemberName="StackTrace">

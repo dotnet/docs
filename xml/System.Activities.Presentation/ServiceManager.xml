@@ -157,7 +157,7 @@
       <Docs>
         <typeparam name="TServiceType">The type of service to retrieve.</typeparam>
         <summary>Retrieves the requested service.</summary>
-        <returns>Returns a generic type, which is an instance of the service.</returns>
+        <returns>A generic type, which is an instance of the service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -220,8 +220,8 @@
       <Parameters />
       <Docs>
         <typeparam name="TServiceType">The type of service to retrieve.</typeparam>
-        <summary>Retrieves the requested service.  This method returns <see langword="null" /> if the service could not be located.</summary>
-        <returns>Returns a generic type, which is an instance of the service, or <see langword="null" /> if the service has not been published.</returns>
+        <summary>Retrieves the requested service. This method returns <see langword="null" /> if the service could not be located.</summary>
+        <returns>A generic type, which is an instance of the service, or <see langword="null" /> if the service has not been published.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -232,7 +232,7 @@
         <param name="request">The incoming HTTP request.</param>
         <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0"), this method processes the request.</summary>
         <returns>
-          <see langword="true" /> if the specified HTTP request contains a form POST in which the wa parameter is set to "wsignout1.0" and the wresult parameter is not empty; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the specified HTTP request contains a form POST in which the wa parameter is set to "wsignout1.0" and the wresult parameter is not empty; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -274,7 +274,7 @@
           <see langword="true" /> if the call originates while processing a page request. <see langword="false" /> if the caller is an HTTP module. This parameter determines how to terminate processing or send redirects if the incoming message is a WS-Federation sign-out cleanup message ("wsignoutcleanup1.0").</param>
         <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0"), this method processes the request.</summary>
         <returns>
-          <see langword="true" /> if the specified HTTP request contains a FORM post in which the wa parameter is set to "wsignout1.0" and the wresult parameter is not empty; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the specified HTTP request contains a FORM post in which the wa parameter is set to "wsignout1.0" and the wresult parameter is not empty; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -951,7 +951,7 @@
         <param name="request">The incoming HTTP request.</param>
         <summary>Gets a value that indicates whether the specified request is a WS-Federation sign-in response message.</summary>
         <returns>
-          <see langword="true" /> if the request is a WS-Federation sign-in response message; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the request is a WS-Federation sign-in response message; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1715,7 +1715,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
+        <summary>Gets or sets the value of the wres parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

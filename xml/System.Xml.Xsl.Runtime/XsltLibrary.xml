@@ -125,14 +125,13 @@
         <Parameter Name="right" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="opCode">
-          <see cref="T:System.Double" /> that specifies the operation to be performed</param>
+        <param name="opCode">The operation to be performed</param>
         <param name="left">
           <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.Xml.XPath.XPathItem" />.</param>
         <param name="right">
           <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.Xml.XPath.XPathItem" />.</param>
         <summary>Determines equality between collections of type <see cref="T:System.Xml.XPath.XPathItem" />.</summary>
-        <returns>Returns <see langword="true" /> if the collections are equal, otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the collections are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -197,14 +196,12 @@
         <Parameter Name="errorMessageName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">
-          <see cref="T:System.Double" /> that contains the value to format.</param>
-        <param name="formatPicture">String that contains the format picture.</param>
-        <param name="decimalFormatName">
-          <see cref="T:System.Xml.XmlQualifiedName" /> that contains the format name.</param>
-        <param name="errorMessageName">String that contains the error message name.</param>
+        <param name="value">The value to format.</param>
+        <param name="formatPicture">The format picture.</param>
+        <param name="decimalFormatName">The format name.</param>
+        <param name="errorMessageName">The error message name.</param>
         <summary>Implements the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
-        <returns>Returns a string that indicates the number format. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</returns>
+        <returns>A string that indicates the number format. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -241,10 +238,8 @@
         <Parameter Name="decimalFormatterIndex" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">
-          <see cref="T:System.Double" /> that contains value to format.</param>
-        <param name="decimalFormatterIndex">
-          <see cref="T:System.Double" /> that contains the formatter index.</param>
+        <param name="value">The value to format.</param>
+        <param name="decimalFormatterIndex">The formatter index.</param>
         <summary>Implements the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
         <returns>A string that indicates the format. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</returns>
         <remarks>
@@ -285,7 +280,7 @@
         <param name="name">
           <see cref="T:System.Xml.XmlQualifiedName" /> name object.</param>
         <summary>Implements the <see href="https://www.w3.org/TR/xslt/all/">function-available()</see> XSLT function.</summary>
-        <returns>A Boolean value that is <see langword="true" /> if the function identified by <paramref name="name" /> is available.</returns>
+        <returns><see langword="true" /> if the function identified by <paramref name="name" /> is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -356,7 +351,7 @@
       </Parameters>
       <Docs>
         <param name="lang">String that indicates language.</param>
-        <param name="forwardCompatibility">Boolean value that is true if language is forward compatible.</param>
+        <param name="forwardCompatibility"><see langword="true" /> to indicate language is forward compatible; otherwise, <see langword="false" />.</param>
         <summary>Converts the language identifier (as specified in the <see langword="xml:lang" /> attribute) to the culture identifier (LCID).</summary>
         <returns>A string that contains the culture identifier.</returns>
         <remarks>To be added.</remarks>
@@ -394,16 +389,13 @@
       <Docs>
         <param name="value">
           <see cref="T:System.Collections.Generic.IList`1" /> of strings that represent arguments to the method.</param>
-        <param name="formatString">
-          <see cref="T:System.Double" /> that indicates the format string.</param>
-        <param name="lang">
-          <see cref="T:System.Double" /> that indicates the language.</param>
-        <param name="letterValue">String that contains the letter value.</param>
-        <param name="groupingSeparator">String that contains the grouping separator.</param>
-        <param name="groupingSize">
-          <see cref="T:System.Double" /> that contains the grouping size.</param>
+        <param name="formatString">The format string.</param>
+        <param name="lang">The language.</param>
+        <param name="letterValue">The letter value.</param>
+        <param name="groupingSeparator">The grouping separator.</param>
+        <param name="groupingSize">The grouping size.</param>
         <summary>Gets a string that indicates the number format.</summary>
-        <returns>A string that indicates the number format. Used for internal infrastructure only.</returns>
+        <returns>A string that indicates the number format.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -478,7 +470,7 @@
         <param name="nanSymbol">String that contains the NaN symbol.</param>
         <param name="characters">String that contains characters to format.</param>
         <summary>Registers a decimal formatter object and returns a unique index assigned to it. The decimal formatter object is used by the format-number() XSLT function. For more information, see the <see href="https://www.w3.org/TR/xslt/all/">number formatting</see> section in the W3C Recommendation.</summary>
-        <returns>Returns a unique index of type <see cref="T:System.Double" /> assigned to a decimal formatter object.</returns>
+        <returns>A unique index assigned to a decimal formatter object.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

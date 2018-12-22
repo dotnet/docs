@@ -191,7 +191,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the time instant at which the session between the principal identified by the subject and the SAML authority issuing this statement must be considered ended. [Saml2Core, 2.7.2]</summary>
-        <value>Returns a nullable <see cref="T:System.DateTime" /> that represents the session expiration time in UTC. A <see langword="null" /> value indicates that the attribute is not specified.</value>
+        <value>A nullable <see cref="T:System.DateTime" /> that represents the session expiration time in UTC. A <see langword="null" /> value indicates that the attribute is not specified.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

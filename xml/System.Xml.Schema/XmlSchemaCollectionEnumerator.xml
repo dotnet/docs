@@ -163,7 +163,7 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Xml.Schema.XmlSchemaCollectionEnumerator.Current" />.</summary>
-        <value>Returns the current node.</value>
+        <value>The current node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -206,7 +206,7 @@
       <Parameters />
       <Docs>
         <summary>For a description of this member, see <see cref="M:System.Xml.Schema.XmlSchemaCollectionEnumerator.MoveNext" />.</summary>
-        <returns>Returns the next node.</returns>
+        <returns>The next node.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

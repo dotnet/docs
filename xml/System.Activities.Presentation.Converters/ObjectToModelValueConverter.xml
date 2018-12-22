@@ -122,7 +122,7 @@
         <param name="parameter">Not used in this implementation.</param>
         <param name="culture">Not used in this implementation.</param>
         <summary>Converts the specified <see langword="ModelItem" /> to a <see langword="ModelPropertyEntry" />.</summary>
-        <returns>Returns a <see cref="T:System.Object" /> that contains the converted <see langword="ModelPropertyEntry" />.</returns>
+        <returns>An object that contains the converted <see langword="ModelPropertyEntry" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

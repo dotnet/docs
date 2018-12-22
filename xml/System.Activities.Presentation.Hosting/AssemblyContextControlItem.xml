@@ -166,7 +166,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets an item type.</summary>
-        <value>Returns a <see cref="T:System.Type" /> that contains the item type.</value>
+        <value>The item type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -195,7 +195,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the local assembly name.</summary>
-        <value>Returns an <see cref="T:System.Reflection.AssemblyName" /> that contains the local assembly name.</value>
+        <value>The local assembly name.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +224,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the referenced assembly names.</summary>
-        <value>Returns an <see cref="T:System.Collections.Generic.IList`1" /> that contains the referenced assembly names.</value>
+        <value>An <see cref="T:System.Collections.Generic.IList`1" /> that contains the referenced assembly names.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

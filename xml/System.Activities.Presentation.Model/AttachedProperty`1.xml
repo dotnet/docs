@@ -69,7 +69,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the getter.</summary>
-        <value>Returns a <see cref="T:System.Func`2" /> that contains the getter.</value>
+        <value>A <see cref="T:System.Func`2" /> that contains the getter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,7 +93,7 @@
       <Docs>
         <param name="modelItem">The model item.</param>
         <summary>Retrieves the value of the specified model item.</summary>
-        <returns>Returns an <see cref="T:System.Object" /> that contains the value.</returns>
+        <returns>An object that contains the value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,7 +167,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the setter.</summary>
-        <value>Returns an <see cref="T:System.Action`2" /> that contains the setter.</value>
+        <value>An <see cref="T:System.Action`2" /> that contains the setter.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -213,7 +213,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the type of the collection.</summary>
-        <value>Returns a <see cref="T:System.Type" /> that contains the type of the collection.</value>
+        <value>The type of the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

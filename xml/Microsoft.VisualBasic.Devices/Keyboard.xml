@@ -98,8 +98,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="Boolean" /> indicating if the ALT key is down.</summary>
-        <value>A <see langword="Boolean" /> value: <see langword="True" /> if the ALT key is down; otherwise <see langword="False" />.</value>
+        <summary>Gets a value that indicates whether the ALT key is down.</summary>
+        <value><see langword="True" /> if the ALT key is down; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -155,8 +155,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="Boolean" /> indicating if CAPS LOCK is turned on.</summary>
-        <value>A <see langword="Boolean" /> value: <see langword="True" /> if CAPS LOCK is turned on; otherwise <see langword="False" />.</value>
+        <summary>Gets a value that indicates whether CAPS LOCK is turned on.</summary>
+        <value>A <see langword="Boolean" /> value: <see langword="True" /> if CAPS LOCK is turned on; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -206,8 +206,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="Boolean" /> indicating if a CTRL key is down.</summary>
-        <value>A <see langword="Boolean" /> value. <see langword="True" /> if a CTRL key is down; otherwise <see langword="False" />.</value>
+        <summary>Gets a value that indicates whether a CTRL key is down.</summary>
+        <value><see langword="True" /> if a CTRL key is down; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -263,8 +263,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="Boolean" /> indicating if the NUM LOCK key is on.</summary>
-        <value>A <see langword="Boolean" /> value. <see langword="True" /> if NUM LOCK is on; otherwise <see langword="False" />.</value>
+        <summary>Gets a value that indicates whether the NUM LOCK key is on.</summary>
+        <value><see langword="True" /> if NUM LOCK is on; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -320,7 +320,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a <see langword="Boolean" /> indicating whether the SCROLL LOCK key is on.</summary>
-        <value>A <see langword="Boolean" /> value. <see langword="True" /> if SCROLL LOCK is on; otherwise <see langword="False" />.</value>
+        <value><see langword="True" /> if SCROLL LOCK is on; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -588,8 +588,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="Boolean" /> indicating if a SHIFT key is down.</summary>
-        <value>A <see langword="Boolean" /> value. <see langword="True" /> if a SHIFT key is down; otherwise <see langword="False" />.</value>
+        <summary>Gets a value that indicates whether a SHIFT key is down.</summary>
+        <value><see langword="True" /> if a SHIFT key is down; otherwise, <see langword="False" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -62,7 +62,7 @@
       <Docs>
         <param name="modelItem">The model item.</param>
         <summary>Retrieves the value of the specified model item.</summary>
-        <returns>Returns a <see cref="T:System.Object" /> that contains the value of the model item.</returns>
+        <returns>An object that contains the value of the model item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,7 +150,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the name of the property.</summary>
-        <value>Returns a <see cref="T:System.String" /> that contains the name of the property.</value>
+        <value>The name of the property.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +202,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the owner type.</summary>
-        <value>Returns a <see cref="T:System.Type" /> that contains the owner type.</value>
+        <value>The owner type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,7 +271,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the type.</summary>
-        <value>Returns a <see cref="T:System.Type" /> that contains the type.</value>
+        <value>The type.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

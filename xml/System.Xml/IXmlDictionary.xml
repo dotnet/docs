@@ -87,7 +87,7 @@
         <param name="result">If <paramref name="key" /> is defined, the <see cref="T:System.Xml.XmlDictionaryString" /> that is mapped to the key; otherwise <see langword="null" />.</param>
         <summary>Attempts to look up an entry in the dictionary.</summary>
         <returns>
-          <see langword="true" /> if key is in the dictionary, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if key is in the dictionary; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,10 +124,10 @@
       </Parameters>
       <Docs>
         <param name="value">String value being checked for.</param>
-        <param name="result">The corresponding <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise <see langword="null" />.</param>
+        <param name="result">The corresponding <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise, <see langword="null" />.</param>
         <summary>Checks the dictionary for a specified string value.</summary>
         <returns>
-          <see langword="true" /> if value is in the dictionary, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if value is in the dictionary; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,10 +164,10 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Xml.XmlDictionaryString" /> being checked for.</param>
-        <param name="result">The matching <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise <see langword="null" />.</param>
+        <param name="result">The matching <see cref="T:System.Xml.XmlDictionaryString" />, if found; otherwise, <see langword="null" />.</param>
         <summary>Checks the dictionary for a specified <see cref="T:System.Xml.XmlDictionaryString" />.</summary>
         <returns>
-          <see langword="true" /> if <see cref="T:System.Xml.XmlDictionaryString" /> is in the dictionary, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if <see cref="T:System.Xml.XmlDictionaryString" /> is in the dictionary; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

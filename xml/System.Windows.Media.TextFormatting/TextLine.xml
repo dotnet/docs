@@ -204,8 +204,8 @@
         <Parameter Name="inversion" Type="System.Windows.Media.TextFormatting.InvertAxes" />
       </Parameters>
       <Docs>
-        <param name="drawingContext">The <see cref="T:System.Windows.Media.DrawingContext" /> object onto which the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> is rendered.</param>
-        <param name="origin">A <see cref="T:System.Windows.Point" /> value that represents the drawing origin.</param>
+        <param name="drawingContext">The object onto which the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> is rendered.</param>
+        <param name="origin">A value that represents the drawing origin.</param>
         <param name="inversion">An enumerated <see cref="T:System.Windows.Media.TextFormatting.InvertAxes" /> value that indicates the inversion of the horizontal and vertical axes of the drawing surface.</param>
         <summary>Renders the <see cref="T:System.Windows.Media.TextFormatting.TextLine" /> object based upon the specified <see cref="T:System.Windows.Media.DrawingContext" />.</summary>
         <remarks>To be added.</remarks>
@@ -229,7 +229,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance from the top-most to bottom-most black pixel in a line.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the extent distance.</value>
+        <value>A value that represents the extent distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -424,8 +424,8 @@
         <Parameter Name="textLength" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="firstTextSourceCharacterIndex">An <see cref="T:System.Int32" /> value that represents the index of first character of specified range.</param>
-        <param name="textLength">An <see cref="T:System.Int32" /> value that represents the number of characters of the specified range.</param>
+        <param name="firstTextSourceCharacterIndex">The index of first character of specified range.</param>
+        <param name="textLength">The number of characters of the specified range.</param>
         <summary>Gets an array of bounding rectangles that represent the range of characters within a text line.</summary>
         <returns>A list of <see cref="T:System.Windows.Media.TextFormatting.TextBounds" /> objects representing the bounding rectangle.</returns>
         <remarks>To be added.</remarks>
@@ -576,7 +576,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the height of a line of text.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the text line height.</value>
+        <value>The text line height.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,7 +631,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</summary>
-        <value>An <see cref="T:System.Int32" /> value that represents the total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</value>
+        <value>The total number of <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> positions of the current line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -656,7 +656,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance from the edge of the line's highest point to the baseline marker of the line.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the baseline distance of the marker.</value>
+        <value>The baseline distance of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -681,7 +681,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the height of a marker for a list item.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the height of the marker.</value>
+        <value>The height of the marker.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -706,7 +706,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of newline characters at the end of a line.</summary>
-        <value>An <see cref="T:System.Int32" /> value that represents the number of newline characters.</value>
+        <value>The number of newline characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,7 +728,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance that black pixels extend beyond the bottom alignment edge of a line.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the overhang after distance.</value>
+        <value>The overhang after distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -750,7 +750,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance that black pixels extend prior to the left leading alignment edge of the line.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the overhang leading distance.</value>
+        <value>The overhang leading distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -772,7 +772,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance that black pixels extend following the right trailing alignment edge of the line.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the overhang trailing distance.</value>
+        <value>The overhang trailing distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -792,7 +792,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the PixelsPerDip at which the text should be rendered.</summary>
+        <summary>Gets or sets the PixelsPerDip at which the text should be rendered.</summary>
         <value>The current <see cref="P:System.Windows.Media.TextFormatting.TextLine.PixelsPerDip" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -818,7 +818,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance from the start of a paragraph to the starting point of a line.</summary>
-        <value>A <see cref="T:System.Double" /> value that represents the distance from the start of a paragraph to the starting point of a line.</value>
+        <value>The distance from the start of a paragraph to the starting point of a line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -840,7 +840,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the distance from the top to the baseline of the line of text.</summary>
-        <value>A <see cref="T:System.Double" /> value that represents the text baseline distance.</value>
+        <value>The text baseline distance.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -862,7 +862,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the height of the text and any other content in the line.</summary>
-        <value>A <see cref="T:System.Double" /> value.</value>
+        <value>The height of the text and any other content in the line.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -891,7 +891,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the number of whitespace code points beyond the last non-blank character in a line.</summary>
-        <value>An <see cref="T:System.Int32" /> value that represents the number of whitespace code points beyond the last non-blank character in a line.</value>
+        <value>The number of whitespace code points beyond the last non-blank character in a line.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -916,7 +916,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the width of a line of text, excluding trailing whitespace characters.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the text line width, excluding trailing whitespace characters.</value>
+        <value>The text line width, excluding trailing whitespace characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -941,7 +941,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the width of a line of text, including trailing whitespace characters.</summary>
-        <value>A <see cref="T:System.Double" /> that represents the text line width, including trailing whitespace characters.</value>
+        <value>The text line width, including trailing whitespace characters.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

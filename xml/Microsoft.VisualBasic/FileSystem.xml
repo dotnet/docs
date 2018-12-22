@@ -67,7 +67,7 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Required. A <see langword="String" /> expression that identifies which directory or folder becomes the new default directory or folder. <paramref name="Path" /> may include the drive. If no drive is specified, <see langword="ChDir" /> changes the default directory or folder on the current drive.</param>
+        <param name="Path">Required. A string expression that identifies which directory or folder becomes the new default directory or folder. <paramref name="Path" /> may include the drive. If no drive is specified, <see langword="ChDir" /> changes the default directory or folder on the current drive.</param>
         <summary>Changes the current directory or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than the <see langword="ChDir" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -400,8 +400,8 @@
         <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" Index="1" />
       </Parameters>
       <Docs>
-        <param name="PathName">Optional. <see langword="String" /> expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
-        <param name="Pathname">To be added.</param>
+        <param name="PathName">Optional. A string expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
+        <param name="Pathname">Optional. A string expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
         <param name="Attributes">Optional. Enumeration or numeric expression whose value specifies file attributes. If omitted, <see langword="Dir" /> returns files that match <paramref name="PathName" /> but have no attributes.</param>
         <summary>Returns a string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="Dir" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectoryInfo(System.String)" /> for more information.</summary>
         <returns>A string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive.</returns>
@@ -471,7 +471,7 @@
       <Docs>
         <param name="FileNumber">Required. An <see langword="Integer" /> that contains any valid file number.</param>
         <summary>Returns a Boolean value <see langword="True" /> when the end of a file opened for <see langword="Random" /> or sequential <see langword="Input" /> has been reached.</summary>
-        <returns>Returns a Boolean value <see langword="True" /> when the end of a file opened for <see langword="Random" /> or sequential <see langword="Input" /> has been reached.</returns>
+        <returns>A Boolean value <see langword="True" /> when the end of a file opened for <see langword="Random" /> or sequential <see langword="Input" /> has been reached.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -642,8 +642,8 @@
         <Parameter Name="Destination" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Source">Required. <see langword="String" /> expression that specifies the name of the file to be copied. <paramref name="Source" /> may include the directory or folder, and drive, of the source file.</param>
-        <param name="Destination">Required. <see langword="String" /> expression that specifies the destination file name. <paramref name="Destination" /> may include the directory or folder, and drive, of the destination file.</param>
+        <param name="Source">Required. A string expression that specifies the name of the file to be copied. <paramref name="Source" /> may include the directory or folder, and drive, of the source file.</param>
+        <param name="Destination">Required. A string expression that specifies the destination file name. <paramref name="Destination" /> may include the directory or folder, and drive, of the destination file.</param>
         <summary>Copies a file. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than <see langword="FileCopy" />. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile(System.String,System.String)" /> for more information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -696,7 +696,7 @@
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file name. <paramref name="PathName" /> may include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. A string expression that specifies a file name. <paramref name="PathName" /> may include the directory or folder, and the drive.</param>
         <summary>Returns a <see langword="Date" /> value that indicates the date and time a file was written to. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileDateTime" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" /></summary>
         <returns>
           <see langword="Date" /> value that indicates the date and time a file was created or last modified.</returns>
@@ -1973,10 +1973,9 @@
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file. <paramref name="PathName" /> may include the directory or folder, and the drive.</param>
-        <summary>Returns a <see langword="Long" /> value that specifies the length of a file in bytes. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileLen" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" />.</summary>
-        <returns>
-          <see langword="Long" /> value that specifies the length of a file in bytes.</returns>
+        <param name="PathName">Required. A string expression that specifies a file. <paramref name="PathName" /> may include the directory or folder, and the drive.</param>
+        <summary>Returns a value that specifies the length of a file in bytes. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileLen" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" />.</summary>
+        <returns>The length of a file in bytes.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2029,7 +2028,7 @@
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number. Use the <see langword="FreeFile" /> function to obtain the next available file number.</param>
-        <param name="FileName">Required. <see langword="String" /> expression that specifies a file name - may include directory or folder, and drive.</param>
+        <param name="FileName">Required. A string expression that specifies a file name - may include directory or folder, and drive.</param>
         <param name="Mode">Required. Enumeration specifying the file mode: <see langword="Append" />, <see langword="Binary" />, <see langword="Input" />, <see langword="Output" />, or <see langword="Random" />. For more information, see <see cref="T:Microsoft.VisualBasic.OpenMode" /> .</param>
         <param name="Access">Optional. Enumeration specifying the operations permitted on the open file: <see langword="Read" />, <see langword="Write" />, or <see langword="ReadWrite" />. Defaults to <see langword="ReadWrite" />. For more information, see <see cref="T:Microsoft.VisualBasic.OpenAccess" /> .</param>
         <param name="Share">Optional. Enumeration specifying the operations not permitted on the open file by other processes: <see langword="Shared" />, <see langword="Lock Read" />, <see langword="Lock Write" />, and <see langword="Lock Read Write" />. Defaults to <see langword="Lock Read Write" />. For more information, see <see cref="T:Microsoft.VisualBasic.OpenShare" /> .</param>
@@ -3592,7 +3591,7 @@
       <Parameters />
       <Docs>
         <summary>Returns an <see langword="Integer" /> value that represents the next file number available for use by the <see langword="FileOpen" /> function.</summary>
-        <returns>Returns an <see langword="Integer" /> value that represents the next file number available for use by the <see langword="FileOpen" /> function.</returns>
+        <returns>An integer value that represents the next file number available for use by the <see langword="FileOpen" /> function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3635,7 +3634,7 @@
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file, directory, or folder name. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. A string expression that specifies a file, directory, or folder name. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
         <summary>Returns a <see langword="FileAttribute" /> value that represents the attributes of a file, directory, or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileAttribute" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <returns>The value returned by <see langword="GetAttr" /> is the sum of the following enumeration values:  
   
@@ -4630,7 +4629,7 @@ Result = GetAttr(FName) And vbArchive
         <param name="FileNumber">Required. Any valid file number.</param>
         <param name="CharCount">Required. Any valid numeric expression specifying the number of characters to read.</param>
         <summary>Returns <see langword="String" /> value that contains characters from a file opened in <see langword="Input" /> or <see langword="Binary" /> mode. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="InputString" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-        <returns>Returns <see langword="String" /> value that contains characters from a file opened in <see langword="Input" /> or <see langword="Binary" /> mode. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="InputString" />.</returns>
+        <returns>A string that contains characters from a file opened in <see langword="Input" /> or <see langword="Binary" /> mode. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="InputString" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4686,7 +4685,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies one or more file names to be deleted. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. A string expression that specifies one or more file names to be deleted. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
         <summary>Deletes files from a disk. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Kill" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4795,8 +4794,8 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid <see langword="Integer" /> file number.</param>
-        <summary>Returns a <see langword="Long" /> value that specifies the current read/write position in an open file.</summary>
-        <returns>Returns a <see langword="Long" /> value that specifies the current read/write position in an open file.</returns>
+        <summary>Returns a value that specifies the current read/write position in an open file.</summary>
+        <returns>The current read/write position in an open file.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4911,7 +4910,7 @@ Result = GetAttr(FName) And vbArchive
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="Record">Optional. Number of the only record or byte to lock or unlock</param>
+        <param name="Record">Optional. Number of the only record or byte to lock or unlock.</param>
         <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5015,9 +5014,9 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="FileNumber" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="FileNumber">Required. An <see langword="Integer" /> that contains a valid file number.</param>
-        <summary>Returns a <see langword="Long" /> representing the size, in bytes, of a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="LOF" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-        <returns>Returns a <see langword="Long" /> representing the size, in bytes, of a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="LOF" />.</returns>
+        <param name="FileNumber">Required. An integer that contains a valid file number.</param>
+        <summary>Returns the size, in bytes, of a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="LOF" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+        <returns>The size, in bytes, of a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="LOF" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5064,7 +5063,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Required. <see langword="String" /> expression that identifies the directory to be created. The <paramref name="Path" /> may include the drive. If no drive is specified, <see langword="MkDir" /> creates the new directory on the current drive.</param>
+        <param name="Path">Required. A string expression that identifies the directory to be created. The <paramref name="Path" /> may include the drive. If no drive is specified, <see langword="MkDir" /> creates the new directory on the current drive.</param>
         <summary>Creates a new directory. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="MkDir" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory(System.String)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5277,8 +5276,8 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="NewPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="OldPath">Required. <see langword="String" /> expression that specifies the existing file name and location. <paramref name="OldPath" /> may include the directory, and drive, of the file.</param>
-        <param name="NewPath">Required. <see langword="String" /> expression that specifies the new file name and location. <paramref name="NewPath" /> may include directory and drive of the destination location. The file name specified by <paramref name="NewPath" /> cannot already exist.</param>
+        <param name="OldPath">Required. A string expression that specifies the existing file name and location. <paramref name="OldPath" /> may include the directory, and drive, of the file.</param>
+        <param name="NewPath">Required. A string expression that specifies the new file name and location. <paramref name="NewPath" /> may include directory and drive of the destination location. The file name specified by <paramref name="NewPath" /> cannot already exist.</param>
         <summary>Renames a disk file or directory. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Rename" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5372,7 +5371,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Required. <see langword="String" /> expression that identifies the directory or folder to be removed. <paramref name="Path" /> can include the drive. If no drive is specified, <see langword="RmDir" /> removes the directory on the current drive.</param>
+        <param name="Path">Required. A string expression that identifies the directory or folder to be removed. <paramref name="Path" /> can include the drive. If no drive is specified, <see langword="RmDir" /> removes the directory on the current drive.</param>
         <summary>Removes an existing directory. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="RmDir" />. For more information, see <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.DeleteDirectory" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5434,7 +5433,7 @@ Result = GetAttr(FName) And vbArchive
       <Docs>
         <param name="FileNumber">Required. An <see langword="Integer" /> that contains a valid file number.</param>
         <summary>Returns a <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Seek" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-        <returns>Returns a <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function.</returns>
+        <returns>A <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5574,7 +5573,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file name. <paramref name="PathName" /> can include directory or folder, and drive.</param>
+        <param name="PathName">Required. A string expression that specifies a file name. <paramref name="PathName" /> can include directory or folder, and drive.</param>
         <param name="Attributes">Required. Constant or numeric expression, whose sum specifies file attributes.</param>
         <summary>Sets attribute information for a file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="SetAttr" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>

@@ -177,7 +177,7 @@
         <param name="obj">The <see cref="T:System.Object" /> to compare with the current object.</param>
         <summary>Determines whether two <see cref="T:System.Object" /> instances are equal.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="obj" /> is equal, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="obj" /> is equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -222,9 +222,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the associated operation parameter is an In parameter; otherwise <see langword="false" />.</summary>
+          <see langword="true" /> if the associated operation parameter is an In parameter; otherwise, <see langword="false" />.</summary>
         <value>
-          <see langword="true" /> if the associated operation parameter is an In parameter; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the associated operation parameter is an In parameter; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +246,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the associated operation parameter is a locale identifier; otherwise <see langword="false" />.</summary>
+          <see langword="true" /> if the associated operation parameter is a locale identifier; otherwise, <see langword="false" />.</summary>
         <value>
-          <see langword="true" /> if the associated operation parameter is a locale identifier; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the associated operation parameter is a locale identifier; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -270,9 +270,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the associated operation parameter is an optional parameter; otherwise <see langword="false" />.</summary>
+          <see langword="true" /> if the associated operation parameter is an optional parameter; otherwise, <see langword="false" />.</summary>
         <value>
-          <see langword="true" /> if the associated operation parameter is an optional parameter; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the associated operation parameter is an optional parameter; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,9 +294,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the associated operation parameter is an Out parameter; otherwise <see langword="false" />.</summary>
+          <see langword="true" /> if the associated operation parameter is an Out parameter; otherwise, <see langword="false" />.</summary>
         <value>
-          <see langword="true" /> if the associated operation parameter is an Out parameter; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the associated operation parameter is an Out parameter; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,9 +318,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the associated operation parameter is the return value for the operation; otherwise <see langword="false" />.</summary>
+          <see langword="true" /> if the associated operation parameter is the return value for the operation; otherwise, <see langword="false" />.</summary>
         <value>
-          <see langword="true" /> if the associated operation parameter is the return value for the operation; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the associated operation parameter is the return value for the operation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

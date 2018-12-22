@@ -59,7 +59,7 @@
       <Docs>
         <param name="stream">The stream to write to.</param>
         <param name="encoding">The character encoding of the stream.</param>
-        <param name="ownsStream">If <see langword="true" />, stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <param name="ownsStream"><see langword="true" /> to indicate the stream is closed by the writer when done; otherwise, <see langword="false" />.</param>
         <summary>Specifies initialization requirements for XML text writers that implement this method.</summary>
         <remarks>To be added.</remarks>
       </Docs>

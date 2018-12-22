@@ -66,7 +66,7 @@
         <param name="deep">
           <see langword="true" /> to recursively clone the subtree under the specified node; <see langword="false" /> to clone only the node itself.</param>
         <summary>Creates a duplicate of this node. Notation nodes cannot be cloned. Calling this method on an <see cref="T:System.Xml.XmlNotation" /> object throws an exception.</summary>
-        <returns>Returns a <see cref="T:System.Xml.XmlNode" /> copy of the node from which the method is called.</returns>
+        <returns>A <see cref="T:System.Xml.XmlNode" /> copy of the node from which the method is called.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Notation nodes cannot be cloned. Calling this method on an <see cref="T:System.Xml.XmlNotation" /> object throws an exception.</exception>
       </Docs>
@@ -149,7 +149,7 @@
       <Docs>
         <summary>Gets a value indicating whether the node is read-only.</summary>
         <value>
-          <see langword="true" /> if the node is read-only; otherwise <see langword="false" />.  
+          <see langword="true" /> if the node is read-only; otherwise, <see langword="false" />.  
   
  Because <see langword="XmlNotation" /> nodes are read-only, this property always returns <see langword="true" />.</value>
         <remarks>

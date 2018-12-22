@@ -51,7 +51,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the exception that occurred when the event subscription failed. The exception has a description of why the subscription failed.</summary>
-        <value>Returns an <see cref="T:System.Exception" /> object.</value>
+        <value>The exception that occurred when the event subscription failed.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
@@ -80,7 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the event record that is published to the event log. This event matches the criteria from the query specified in the event subscription.</summary>
-        <value>Returns a <see cref="T:System.Diagnostics.Eventing.Reader.EventRecord" /> object.</value>
+        <value>The event record.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
         <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>

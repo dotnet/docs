@@ -294,7 +294,7 @@ while (reader.Read())
       </ReturnValue>
       <Docs>
         <summary>Gets the namespace URI for the default namespace.</summary>
-        <value>Returns the namespace URI for the default namespace, or String.Empty if there is no default namespace.</value>
+        <value>The namespace URI for the default namespace, or an empty string if there is no default namespace.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -535,7 +535,7 @@ Loop
       <Docs>
         <param name="prefix">The prefix whose namespace URI you want to resolve. To match the default namespace, pass String.Empty.</param>
         <summary>Gets the namespace URI for the specified prefix.</summary>
-        <returns>Returns the namespace URI for <paramref name="prefix" /> or <see langword="null" /> if there is no mapped namespace. The returned string is atomized.  
+        <returns>The namespace URI for <paramref name="prefix" /> or <see langword="null" /> if there is no mapped namespace. The returned string is atomized.  
   
  For more information on atomized strings, see the <see cref="T:System.Xml.XmlNameTable" /> class.</returns>
         <remarks>

@@ -102,11 +102,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="assertionId" /> is <see langword="null" />  
+          <paramref name="assertionId" /> is <see langword="null" />.
   
  -or-  
   
- <paramref name="assertionId" /> is <see cref="F:System.String.Empty" />  
+ <paramref name="assertionId" /> is <see cref="F:System.String.Empty" />.
   
  -or-  
   
@@ -114,23 +114,23 @@
   
  -or-  
   
- <paramref name="issuer" /> is <see langword="null" />  
+ <paramref name="issuer" /> is <see langword="null" />.
   
  -or-  
   
- <paramref name="issuer" /> is <see cref="F:System.String.Empty" />  
+ <paramref name="issuer" /> is <see cref="F:System.String.Empty" />.
   
  -or-  
   
- <paramref name="samlStatements" /> is <see langword="null" />  
+ <paramref name="samlStatements" /> is <see langword="null" />.
   
  -or-  
   
- <paramref name="samlStatements" /> does not contain any elements  
+ <paramref name="samlStatements" /> does not contain any elements.
   
  -or-  
   
- <paramref name="samlStatements" /> contains a <see langword="null" /> element</exception>
+ <paramref name="samlStatements" /> contains a <see langword="null" /> element.</exception>
       </Docs>
     </Member>
     <Member MemberName="Advice">

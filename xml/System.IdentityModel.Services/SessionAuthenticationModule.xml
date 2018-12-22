@@ -100,7 +100,7 @@
       <Docs>
         <param name="sessionToken">The session security token to use to authenticate the incoming HTTP request.</param>
         <param name="writeCookie">
-          <see langword="true" /> to write the session cookie; otherwise <see langword="false" />.</param>
+          <see langword="true" /> to write the session cookie; otherwise, <see langword="false" />.</param>
         <summary>Authenticates the incoming request by validating the incoming session token. Upon successful validation, it updates the current HTTP context and thread principal with the specified  <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -136,7 +136,7 @@
           <see langword="true" /> if a session cookie is found; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="httpCookieCollection" /> is null</exception>
+          <paramref name="httpCookieCollection" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContextSessionSecurityToken">

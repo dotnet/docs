@@ -69,7 +69,7 @@
       <Docs>
         <param name="view">The view object that you want to find the model for.</param>
         <summary>Returns the model corresponding to the view, or <see langword="null" /> if there is no model that matches the view.</summary>
-        <returns>Returns the corresponding model as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />, or <see langword="null" /> if there is no model for the given view object.</returns>
+        <returns>The corresponding model, or <see langword="null" /> if there is no model for the given view object.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="view" /> is <see langword="null" />.</exception>
@@ -96,7 +96,7 @@
       <Docs>
         <param name="model">The model to return the view object for.</param>
         <summary>Returns the view corresponding to the given model, or <see langword="null" /> if there is no view for the model.</summary>
-        <returns>Returns the view for this model as a <see cref="T:System.Windows.DependencyObject" />, or <see langword="null" /> if there is no view.</returns>
+        <returns>The view for this model, or <see langword="null" /> if there is no view.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="model" /> is <see langword="null" />.</exception>

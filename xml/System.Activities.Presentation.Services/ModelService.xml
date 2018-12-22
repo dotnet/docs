@@ -78,7 +78,7 @@
       <Docs>
         <param name="item">The item to clone and wrap.</param>
         <summary>Takes an existing instance and creates a model item that is a deep clone of the instance.</summary>
-        <returns>Returns a newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that is a clone of the existing item.</returns>
+        <returns>The newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that is a clone of the existing item.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +113,7 @@
         <param name="options">Creation options. You can specify whether you would like to initialize default values for an item.</param>
         <param name="arguments">An array of arguments to the constructor of the item.</param>
         <summary>Creates a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for a given type. This method is called by <see cref="T:System.Activities.Presentation.Model.ModelFactory" /> when the user wants to create a new item.</summary>
-        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <returns>The newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -190,7 +190,7 @@
         <param name="startingItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> from which to start the search. Items above this item will be ignored. This item, and any item below it in the hierarchy, will be included in the search. If this value is <see langword="null" />, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> is used instead.</param>
         <param name="match">A predicate that allows more complex type matching to be used. This method will enumerate all items within the given parent scope that match the predicate.</param>
         <summary>Finds matching model items given a starting point from which to look.</summary>
-        <returns>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains all model items that match the query.</returns>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains all model items that match the query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -225,7 +225,7 @@
         <param name="startingItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> from which to start the search. Items above this item will be ignored. This item, and any item below it in the hierarchy, will be included in the search. If this value is <see langword="null" />, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> is used instead.</param>
         <param name="type">The <see cref="T:System.Type" /> of the object to find. This method will enumerate all items within the given parent scope that are of the requested type.</param>
         <summary>Finds matching model items given a starting point from which to look.</summary>
-        <returns>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains all model items that match the query.</returns>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains all model items that match the query.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -283,7 +283,7 @@
         <param name="scope">An optional scope to provide. If the scope is not provided, <see cref="P:System.Activities.Presentation.Services.ModelService.Root" /> will be used as a scope. If the scope is provided, the nearest <see cref="T:System.Windows.Markup.INameScope" /> in the hierarchy will be used to locate the item.</param>
         <param name="name">The name to locate.</param>
         <summary>Locates the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> in the given scope with the given name.</summary>
-        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> whose name matches <paramref name="name" />, or <see langword="null" /> if no match was found.</returns>
+        <returns>A <see cref="T:System.Activities.Presentation.Model.ModelItem" /> whose name matches <paramref name="name" />, or <see langword="null" /> if no match was found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
@@ -314,7 +314,7 @@
         <param name="name">The name to locate.</param>
         <param name="comparison">Determines how the name should be compared. The default is to compare against ordinal.</param>
         <summary>Locates the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> in the given scope with the given name.</summary>
-        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> whose name matches <paramref name="name" />, or <see langword="null" /> if no match was found.</returns>
+        <returns>A <see cref="T:System.Activities.Presentation.Model.ModelItem" /> whose name matches <paramref name="name" />, or <see langword="null" /> if no match was found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="name" /> is <see langword="null" />.</exception>
@@ -364,7 +364,7 @@
       </ReturnValue>
       <Docs>
         <summary>The root of the object hierarchy.</summary>
-        <value>Returns the root of the model hierarchy as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
+        <value>The root of the model hierarchy as a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

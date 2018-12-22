@@ -77,7 +77,7 @@
         <Parameter Name="annotation" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="annotation">An <see cref="T:System.Object" /> that contains the annotation to add.</param>
+        <param name="annotation">An object that contains the annotation to add.</param>
         <summary>Adds an object to the annotation list of this <see cref="T:System.Xml.Linq.XObject" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -184,7 +184,7 @@ T1
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> of the annotation to retrieve.</param>
+        <param name="type">The type of the annotation to retrieve.</param>
         <summary>Gets the first annotation object of the specified type from this <see cref="T:System.Xml.Linq.XObject" />.</summary>
         <returns>The <see cref="T:System.Object" /> that contains the first annotation object that matches the specified type, or <see langword="null" /> if no annotation is of the specified type.</returns>
         <remarks>
@@ -294,7 +294,7 @@ T1
       <Parameters />
       <Docs>
         <typeparam name="T">The type of the annotation to retrieve.</typeparam>
-        <summary>Get the first annotation object of the specified type from this <see cref="T:System.Xml.Linq.XObject" />.</summary>
+        <summary>Gets the first annotation object of the specified type from this <see cref="T:System.Xml.Linq.XObject" />.</summary>
         <returns>The first annotation object that matches the specified type, or <see langword="null" /> if no annotation is of the specified type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -395,7 +395,7 @@ T1
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> of the annotations to retrieve.</param>
+        <param name="type">The type of the annotations to retrieve.</param>
         <summary>Gets a collection of annotations of the specified type for this <see cref="T:System.Xml.Linq.XObject" />.</summary>
         <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:System.Object" /> that contains the annotations that match the specified type for this <see cref="T:System.Xml.Linq.XObject" />.</returns>
         <remarks>
@@ -1402,7 +1402,7 @@ Root
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">The <see cref="T:System.Type" /> of annotations to remove.</param>
+        <param name="type">The type of annotations to remove.</param>
         <summary>Removes the annotations of the specified type from this <see cref="T:System.Xml.Linq.XObject" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1629,7 +1629,7 @@ Count after removing: 2
       <Docs>
         <summary>Gets a value indicating whether or not this <see cref="T:System.Xml.Linq.XObject" /> has line information.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="T:System.Xml.Linq.XObject" /> has line information, otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.Linq.XObject" /> has line information; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

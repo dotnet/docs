@@ -56,7 +56,7 @@ To install additional .NET Core SDK versions on your machine, visit the [.NET Do
 You can create a new the *global.json* file in the current directory by executing the [dotnet new](dotnet-new.md) command, similar to the following example:
 
 ```console
-dotnet new globaljson --sdk-version 2.2.100
+dotnet new global.json --sdk-version 2.2.100
 ```
 
 ## Matching rules

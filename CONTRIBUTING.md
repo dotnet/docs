@@ -106,7 +106,7 @@ contain a short description of the sample (one or two paragraphs). Your *readme.
 should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
 a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
-with `https://docs.microsoft.com/dotnet/articles`.
+with `https://docs.microsoft.com/dotnet`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 

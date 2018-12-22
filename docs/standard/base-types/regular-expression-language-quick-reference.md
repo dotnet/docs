@@ -81,7 +81,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="anchors"></a>   
 ## Anchors  
  Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors](../../../docs/standard/base-types/anchors-in-regular-expressions.md).  
   

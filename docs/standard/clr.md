@@ -83,4 +83,4 @@ The version number of the .NET Framework doesn't necessarily correspond to the v
 
 ## See also
 
-[Versions and Dependencies](../framework/migration-guide/versions-and-dependencies.md)
+- [Versions and Dependencies](../framework/migration-guide/versions-and-dependencies.md)

@@ -6,7 +6,7 @@ ms.assetid: 0fe5dfa2-c1cd-435f-90b6-b4dd2e3ef34b
 # DataViews
 A <xref:System.Data.DataView> enables you to create different views of the data stored in a <xref:System.Data.DataTable>, a capability that is often used in data-binding applications. Using a **DataView**, you can expose the data in a table with different sort orders, and you can filter the data by row state or based on a filter expression.  
   
- A **DataView** provides a dynamic view of data in the underlying **DataTable**: the content, ordering, and membership reflect changes as they occur. This behavior differs from the **Select** method of the **DataTable**, which returns a <xref:System.Data.DataRow> array from a table based on a particular filter and/or sort order: thiscontent reflects changes to the underlying table, but its membership and ordering remain static. The dynamic capabilities of the **DataView** make it ideal for data-binding applications.  
+ A **DataView** provides a dynamic view of data in the underlying **DataTable**: the content, ordering, and membership reflect changes as they occur. This behavior differs from the **Select** method of the **DataTable**, which returns a <xref:System.Data.DataRow> array from a table based on a particular filter and/or sort order: this content reflects changes to the underlying table, but its membership and ordering remain static. The dynamic capabilities of the **DataView** make it ideal for data-binding applications.  
   
  A **DataView** provides you with a dynamic view of a single set of data, much like a database view, to which you can apply different sorting and filtering criteria. Unlike a database view, however, a **DataView** cannot be treated as a table and cannot provide a view of joined tables. You also cannot exclude columns that exist in the source table, nor can you append columns, such as computational columns, that do not exist in the source table.  
   
@@ -38,10 +38,10 @@ A <xref:System.Data.DataView> enables you to create different views of the data 
  Describes how to use a **DataViewManager** to manage **DataView** settings for each table in a **DataSet**.  
   
 ## Related Sections  
- [ASP.NET Web Applications](http://msdn.microsoft.com/library/a812d7b7-049e-4234-a4c2-6acf690301f6)  
+ [ASP.NET Web Applications](https://msdn.microsoft.com/library/a812d7b7-049e-4234-a4c2-6acf690301f6)  
  Provides overviews and detailed, step-by-step procedures for creating ASP.NET applications, Web Forms, and Web Services.  
   
- [Windows Applications](http://msdn.microsoft.com/library/a6bb2180-09b1-4738-b9fd-7fb05fc92f23)  
+ [Windows Applications](https://msdn.microsoft.com/library/a6bb2180-09b1-4738-b9fd-7fb05fc92f23)  
  Provides detailed information about working with Windows Forms and console applications.  
   
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
@@ -54,4 +54,4 @@ A <xref:System.Data.DataView> enables you to create different views of the data 
  Describes the ADO.NET architecture and components, and how to use ADO.NET to access existing data sources and manage application data.  
   
 ## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

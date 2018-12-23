@@ -26,4 +26,4 @@ Note that the `try` block encloses the `foreach` loop, and not the query itself.
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)  
+- [Language Integrated Query (LINQ)](index.md)  

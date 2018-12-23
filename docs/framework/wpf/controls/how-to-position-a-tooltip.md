@@ -57,4 +57,4 @@ ToolTip placement by using the Placement, PlacementRectangle, and Offset propert
  <xref:System.Windows.Controls.ToolTipService>  
  [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)  
  [ToolTip Overview](../../../../docs/framework/wpf/controls/tooltip-overview.md)  
- [Use the ContextMenuService and ToolTipService](http://msdn.microsoft.com/library/809b0e9c-d612-4cda-b8af-1a698c68f4d1)
+ [Use the ContextMenuService and ToolTipService](https://msdn.microsoft.com/library/809b0e9c-d612-4cda-b8af-1a698c68f4d1)

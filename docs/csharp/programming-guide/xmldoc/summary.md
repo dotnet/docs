@@ -1,5 +1,6 @@
 ---
-title: "&lt;summary&gt; (C# Programming Guide)"
+title: "&lt;summary&gt; - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "<summary>"
@@ -86,6 +87,7 @@ ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
 </doc>  
 ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

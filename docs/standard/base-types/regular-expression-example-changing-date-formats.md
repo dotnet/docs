@@ -51,5 +51,6 @@ The following code example uses the <xref:System.Text.RegularExpressions.Regex.R
 |`-`|Add a hyphen.|  
 |`$(year)`|Add the string captured by the `year` capturing group.|  
   
-## See Also  
- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+## See also
+
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

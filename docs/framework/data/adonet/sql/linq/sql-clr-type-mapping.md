@@ -1,6 +1,6 @@
 ---
 title: "SQL-CLR Type Mapping"
-ms.date: "03/30/2017"
+ms.date: "07/23/2018"
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
 ---
 # SQL-CLR Type Mapping
@@ -37,7 +37,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 <a name="BehaviorMatrix"></a>   
 ## Type Mapping Run-time Behavior Matrix  
  The following diagram shows the expected run-time behavior of specific type mappings when data is retrieved from or saved to the database. With the exception of serialization, LINQ to SQL does not support mapping between any CLR or SQL Server data types that are not specified in this matrix. For more information on serialization support, see [Binary Serialization](#BinarySerialization).  
-  
+ 
+![SQL Server to SQL CLR data type mapping table](media/sql-clr-type-mapping.png)
+
 > [!NOTE]
 >  Some type mappings may result in overflow or data loss exceptions while translating to or from the database.  
   
@@ -52,7 +54,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
   
 -   SQL Server orders some data types differently than data of equivalent type in the CLR. For example, SQL Server data of type `UNIQUEIDENTIFIER` is ordered differently than CLR data of type <xref:System.Guid?displayProperty=nameWithType>.  
   
--   SQL Server handles some string comparison operations differently than the CLR. In SQL Server, string comparison behavior depends on the collation settings on the server. For more information, see [Working with Collations](http://go.microsoft.com/fwlink/?LinkId=115330) in the Microsoft SQL Server Books Online.  
+-   SQL Server handles some string comparison operations differently than the CLR. In SQL Server, string comparison behavior depends on the collation settings on the server. For more information, see [Working with Collations](https://go.microsoft.com/fwlink/?LinkId=115330) in the Microsoft SQL Server Books Online.  
   
 -   SQL Server may return different values for some mapped functions than the CLR. For example, equality functions will differ because SQL Server considers two strings to be equal if they only differ in trailing white space; whereas the CLR considers them to be not equal.  
   
@@ -114,7 +116,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  There are many other numeric mappings you can choose, but some may result in overflow or data loss exceptions while translating to or from the database. For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
 ### Decimal and Money Types  
- The default precision of SQL Server `DECIMAL` type (18 decimal digits to the left and right of the decimal point) is much smaller than the precision of the CLR <!--zz <xref:System.Decima?displayProperty=nameWithType>l --> `Decimal` type that it is paired with by default. This can result in precision loss when you save data to the database. However, just the opposite can happen if the SQL Server `DECIMAL` type is configured with greater than 29 digits of precision. When a SQL Server `DECIMAL` type has been configured with a greater precision than the CLR <xref:System.Decimal?displayProperty=nameWithType>, precision loss can occur when retrieving data from the database.  
+ The default precision of SQL Server `DECIMAL` type (18 decimal digits to the left and right of the decimal point) is much smaller than the precision of the CLR <xref:System.Decimal?displayProperty=nameWithType> type that it is paired with by default. This can result in precision loss when you save data to the database. However, just the opposite can happen if the SQL Server `DECIMAL` type is configured with greater than 29 digits of precision. When a SQL Server `DECIMAL` type has been configured with a greater precision than the CLR <xref:System.Decimal?displayProperty=nameWithType>, precision loss can occur when retrieving data from the database.  
   
  The SQL Server `MONEY` and `SMALLMONEY` types, which are also paired with the CLR <xref:System.Decimal?displayProperty=nameWithType> type by default, have a much smaller precision, which can result in overflow or data loss exceptions when saving data to the database.  
   
@@ -224,11 +226,11 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 ### SQL Server FILESTREAM  
  The `FILESTREAM` attribute for `VARBINARY(MAX)` columns is available starting with Microsoft SQL Server 2008; you can map to it with LINQ to SQL starting with the .NET Framework version 3.5 SP1.  
   
- Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](http://go.microsoft.com/fwlink/?LinkId=115291) on Microsoft SQL Server Books Online.  
+ Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](https://go.microsoft.com/fwlink/?LinkId=115291) on Microsoft SQL Server Books Online.  
   
 <a name="BinarySerialization"></a>   
 ### Binary Serialization  
- If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](http://go.microsoft.com/fwlink/?LinkId=115581).  
+ If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](https://go.microsoft.com/fwlink/?LinkId=115581).  
   
 <a name="MiscMapping"></a>   
 ## Miscellaneous Mapping  

@@ -31,7 +31,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `return encoder.WriteMessage(message, maxBufferSize, bufferManager);`  
   
- Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](http://go.microsoft.com/fwlink/?LinkId=94999) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
+ Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](https://go.microsoft.com/fwlink/?LinkId=94999) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
   
  The logic for receiving messages is very similar. The main complexity is handling the fact that a socket read can return less bytes than were requested. To receive a message, `WseTcpDuplexSessionChannel` reads bytes off the wire, decodes the DIME framing, and then uses the <xref:System.ServiceModel.Channels.MessageEncoder> for turning the byte[] into a <xref:System.ServiceModel.Channels.Message>.  
   
@@ -166,7 +166,7 @@ Symbols:
   
 #### To set up, build, and run the sample  
   
-1.  To run this sample, you must have WSE 3.0 and the WSE `TcpSyncStockService` sample installed. You can download [WSE 3.0 from MSDN](http://go.microsoft.com/fwlink/?LinkId=95000).  
+1.  To run this sample, you must have WSE 3.0 and the WSE `TcpSyncStockService` sample installed. You can download [WSE 3.0 from MSDN](https://go.microsoft.com/fwlink/?LinkId=95000).  
   
 > [!NOTE]
 >  Because WSE 3.0 is not supported on [!INCLUDE[lserver](../../../../includes/lserver-md.md)], you cannot install or run the `TcpSyncStockService` sample on that operating system.  

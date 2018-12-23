@@ -55,5 +55,6 @@ ms.author: "ronpet"
   
  <xref:System.IDisposable?displayProperty=nameWithType>  
   
-## See Also  
- [Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)
+## See also
+
+- [Cleaning Up Unmanaged Resources](../../../docs/standard/garbage-collection/unmanaged.md)

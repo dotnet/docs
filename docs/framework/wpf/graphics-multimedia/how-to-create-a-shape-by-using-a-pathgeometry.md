@@ -21,10 +21,10 @@ A triangle created with a PathGeometry
   
  The previous example showed how to create a relatively simple shape, a triangle. A <xref:System.Windows.Media.PathGeometry> can also be used to create more complex shapes, including arcs and curves. For examples, see [Create an Elliptical Arc](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-an-elliptical-arc.md), [Create a Cubic Bezier Curve](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-cubic-bezier-curve.md), and [Create a Quadratic Bezier Curve](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-quadratic-bezier-curve.md).  
   
- This example is part of larger sample; for the complete sample, see the [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989).  
+ This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
 ## See Also  
  <xref:System.Windows.Shapes.Path>  
  <xref:System.Windows.Media.GeometryDrawing>  
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [Geometries Sample](http://go.microsoft.com/fwlink/?LinkID=159989)
+ [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989)

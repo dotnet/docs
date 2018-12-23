@@ -88,7 +88,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     ```  
   
     > [!NOTE]
-    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "http://www.w3.org/2003/05/soap-envelope".  
+    > The s12 namespace prefix is defined by default in the namespace table, and represents the namespace `http://www.w3.org/2003/05/soap-envelope`.
   
 3.  Define the filter table, which associates each filter with a client endpoint. If the message contains the "CalcVer" header with a value of 1, it will be sent to the regularCalc service. If the header contains a value of 2, it will be sent to the roundingCalc service. If no header is present, the message will be routed to the regularCalc.  
   
@@ -111,7 +111,7 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     </filterTables>  
     ```  
   
-4.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints:  
+4.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating `filterTable1` with the service endpoints:  
   
     ```xml  
     <behaviors>  

@@ -46,7 +46,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
   
  The following steps must be followed to resolve the problem described previously.  
   
-1.  Run [the WMI Diagnosis Utility, version 2.0](http://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](http://go.microsoft.com/fwlink/?LinkId=94686) topic.  
+1.  Run [the WMI Diagnosis Utility, version 2.0](https://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](https://go.microsoft.com/fwlink/?LinkId=94686) topic.  
   
  Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.  
   
@@ -61,7 +61,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
  To workaround this problem, use the [WorkFlow Service Registration Tool (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) with the `/c` switch to properly configure IIS script maps on the machine. [WorkFlow Service Registration Tool (WFServicesReg.exe)](../../../docs/framework/wcf/workflow-service-registration-tool-wfservicesreg-exe.md) can be found at %windir%\Microsoft.NET\framework\v3.5\ or %windir%\Microsoft.NET\framework64\v3.5\  
   
 ## Could not load type ‘System.ServiceModel.Activation.HttpModule’ from assembly ‘System.ServiceModel, Version 3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089’  
- This error occurs if [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] is installed and then WCF HTTP Activation is enabled. To resolve the issue run the following command-line from inside the [!INCLUDE[vs2010](../../../includes/vs2010-md.md)] Command Prompt:  
+ This error occurs if [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] is installed and then WCF HTTP Activation is enabled. To resolve the issue run the following command-line from inside the Developer Command Prompt for Visual Studio:  
   
 ```Output  
 aspnet_regiis.exe -i -enable  

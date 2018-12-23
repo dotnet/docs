@@ -27,4 +27,4 @@ The Windows Forms `HelpProvider` component is used to associate an HTML Help 1.x
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- Also see [Help Systems in Windows Forms Applications](http://msdn.microsoft.com/library/55dct0a1\(v=vs.110\)).
+ Also see [Help Systems in Windows Forms Applications](https://msdn.microsoft.com/library/55dct0a1\(v=vs.110\)).

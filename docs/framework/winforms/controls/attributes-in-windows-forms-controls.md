@@ -21,7 +21,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
 |<xref:System.ComponentModel.CategoryAttribute>|Specifies the name of the category in which to group the property or event when displayed in a <xref:System.Windows.Forms.PropertyGrid> control set to <xref:System.Windows.Forms.PropertySort.Categorized> mode.|  
 |<xref:System.ComponentModel.DefaultValueAttribute>|Specifies the default value for a property.|  
 |<xref:System.ComponentModel.DescriptionAttribute>|Specifies a description for a property or event.|  
-|<xref:System.ComponentModel.DisplayNameAttribute>|Specifies the display name for a property, event, or `public``void` method that takes no arguments.|  
+|<xref:System.ComponentModel.DisplayNameAttribute>|Specifies the display name for a property, event, or `public void` method that takes no arguments.|  
 |<xref:System.ComponentModel.EditorAttribute>|Specifies the editor to use to change a property.|  
 |<xref:System.ComponentModel.EditorBrowsableAttribute>|Specifies that a property or method is viewable in an editor.|  
 |<xref:System.ComponentModel.Design.HelpKeywordAttribute>|Specifies the context keyword for a class or member.|  
@@ -57,5 +57,5 @@ The .NET Framework provides a variety of attributes you can apply to the members
 ## See Also  
  <xref:System.Attribute>  
  [How to: Apply Attributes in Windows Forms Controls](../../../../docs/framework/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md)  
- [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
+ [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)  
  [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)

@@ -18,5 +18,6 @@ The Task Parallel Library can be used with traditional .NET Framework asynchrono
  [How to: Wrap EAP Patterns in a Task](../../../docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md)  
  Shows how to use <xref:System.Threading.Tasks.Task> objects to encapsulate EAP patterns.  
   
-## See Also  
- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+## See also
+
+- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)

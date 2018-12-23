@@ -376,5 +376,5 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 ## See Also  
  [SQL Tracking](../../../docs/framework/windows-workflow-foundation/samples/sql-tracking.md)  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)
+ [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)  
+ [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

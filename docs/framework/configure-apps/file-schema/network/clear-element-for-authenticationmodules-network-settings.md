@@ -10,9 +10,6 @@ helpviewer_keywords:
   - "<clear> element, authenticationModules"
   - "authenticationModules, clear element"
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # &lt;clear&gt; Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  
@@ -63,6 +60,6 @@ Clears all authentication modules from the application.
 ```  
   
 ## See Also  
- <xref:System.Net.IAuthenticationModule>  
- <xref:System.Net.AuthenticationManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.IAuthenticationModule>  
+- <xref:System.Net.AuthenticationManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

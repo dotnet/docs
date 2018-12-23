@@ -8,7 +8,7 @@ TcpConnectionPoolSettings
   
 ## Syntax  
   
-```  
+```csharp
 class TcpConnectionPoolSettings  
 {  
   string GroupName;  

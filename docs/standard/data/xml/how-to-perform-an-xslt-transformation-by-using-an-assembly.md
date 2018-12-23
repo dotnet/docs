@@ -175,8 +175,9 @@ xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"))
   
  in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>  
   
-## See Also  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [XSLT Compiler (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)  
- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
- [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+## See also
+
+- <xref:System.Xml.Xsl.XslCompiledTransform>  
+- [XSLT Compiler (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

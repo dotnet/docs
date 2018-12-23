@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "pausing Windows Service applications"
 ms.assetid: eddb9409-942b-46b6-a2ce-fbd4c65f2790
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Pause a Windows Service (Visual Basic)
 This example uses the <xref:System.ServiceProcess.ServiceController> component to pause the IIS Admin service on the local computer.  

@@ -8,9 +8,6 @@ helpviewer_keywords:
   - "<defaultFtpCachePolicy> element"
   - "defaultFtpCachePolicy element"
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # &lt;defaultFtpCachePolicy&gt; Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  
@@ -77,7 +74,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ```  
   
 ## See Also  
- <xref:System.Net.Cache>  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.Cache.RequestCacheLevel>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Cache>  
+- <xref:System.Net.WebRequest>  
+- <xref:System.Net.Cache.RequestCacheLevel>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

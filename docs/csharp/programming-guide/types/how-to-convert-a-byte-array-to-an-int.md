@@ -1,5 +1,6 @@
 ---
-title: "How to: Convert a byte Array to an int (C# Programming Guide)"
+title: "How to: Convert a byte Array to an int - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "conversions [C#], byte array to int"
@@ -38,7 +39,8 @@ This example shows you how to use the <xref:System.BitConverter> class to conver
   
  [!code-csharp[csProgGuideTypes#23](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-a-byte-array-to-an-int_2.cs)]  
   
-## See Also  
- <xref:System.BitConverter>  
- <xref:System.BitConverter.IsLittleEndian>  
- [Types](../../../csharp/programming-guide/types/index.md)
+## See Also
+
+- <xref:System.BitConverter>  
+- <xref:System.BitConverter.IsLittleEndian>  
+- [Types](../../../csharp/programming-guide/types/index.md)

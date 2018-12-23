@@ -1,5 +1,6 @@
 ---
-title: "Indexers (C# Programming Guide)"
+title: "Indexers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 03/10/2017
 f1_keywords: 
   - "cs.indexers"
@@ -58,8 +59,10 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
 -   [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Indexers](~/_csharplang/spec/classes.md#indexers) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

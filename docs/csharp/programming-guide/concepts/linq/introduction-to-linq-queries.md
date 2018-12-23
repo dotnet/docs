@@ -82,10 +82,11 @@ IQueryable<Customer> custQuery =
   
  You can also force execution by putting the `foreach` loop immediately after the query expression. However, by calling `ToList` or `ToArray` you also cache all the data in a single collection object.  
   
-## See Also  
- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
- [foreach, in](../../../../csharp/language-reference/keywords/foreach-in.md)  
- [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)
+## See Also
+
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
+- [Walkthrough: Writing Queries in C#](../../../../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
+- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- [foreach, in](../../../../csharp/language-reference/keywords/foreach-in.md)  
+- [Query Keywords (LINQ)](../../../../csharp/language-reference/keywords/query-keywords.md)

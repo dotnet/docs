@@ -1,5 +1,6 @@
 ---
-title: "Indexers in Interfaces (C# Programming Guide)"
+title: "Indexers in Interfaces - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "indexers [C#], in interfaces"
@@ -52,8 +53,9 @@ string ICitizen.this[int index]
   
  implements the indexer on the `ICitizen` interface.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)

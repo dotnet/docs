@@ -26,7 +26,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
  Ultimately, this walkthrough will demonstrate the difference between private and protected controls on an inherited form.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 > [!CAUTION]
 >  Not all controls support visual inheritance from a base form. The following controls do not support the scenario described in this walkthrough:  
@@ -74,7 +74,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
     -   Set the **(Name)** property to **btnProtected**.  
   
-    -   Set the**Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
+    -   Set the **Modifiers** property to **Protected**. This makes it possible for forms that inherit from **Form1** to modify the properties of **btnProtected**.  
   
 4.  Double-click the **Say Hello** button to add an event handler for the **Click** event.  
   
@@ -122,7 +122,7 @@ Visual inheritance enables you to see the controls on the base form and to add n
   
 #### To add an inherited form  
   
-1.  In **Solution Explorer**, right-click the **InheritanceTest** project, select **Add**, and then select**New Item**.  
+1.  In **Solution Explorer**, right-click the **InheritanceTest** project, select **Add**, and then select **New Item**.  
   
 2.  In the **Add New Item** dialog box, select the **Windows Forms** category (if you have a list of categories) and then select the **Inherited Form** template.  
   

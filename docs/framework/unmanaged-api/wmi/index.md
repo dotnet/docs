@@ -7,7 +7,7 @@ ms.date: 11/06/2017
 ---
 # Windows Management Instrumentation (WMI) and Performance Counters (Unmanaged API Reference)
 
-The .NET Framework WMI and Performance Counters unmanaged API consists of a set of functions that wrap calls to the [native Windows Management Instrumentation API](https://msdn.microsoft.com/library/aa389276(v=vs.85).aspx). It allows you to develop tools and libraries that manage and monitor remote computer systems.
+The .NET Framework WMI and Performance Counters unmanaged API consists of a set of functions that wrap calls to the [native Windows Management Instrumentation API](/windows/desktop/WmiSdk/com-api-for-wmi). It allows you to develop tools and libraries that manage and monitor remote computer systems.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   

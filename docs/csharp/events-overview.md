@@ -93,7 +93,7 @@ You subscribe to an event by using the `+=` operator:
 ```csharp
 EventHandler<FileListArgs> onProgress = (sender, eventArgs) => 
     Console.WriteLine(eventArgs.FoundFile);
-lister.Progress += OnProgress;
+lister.Progress += onProgress;
 ```
 
 The handler method typically is the prefix 'On' followed

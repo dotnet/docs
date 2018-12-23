@@ -11,7 +11,7 @@ This topic shows an example of the style part of the Office Open XML Wordprocess
   
  The default paragraph style has an element with the following opening tag:  
   
-```  
+```xml
 <w:style w:type="paragraph" w:default="1" w:styleId="Normal">  
 ```  
   
@@ -134,5 +134,6 @@ This topic shows an example of the style part of the Office Open XML Wordprocess
 </w:styles>  
 ```  
   
-## See Also  
- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+## See Also
+
+- [Details of Office Open XML WordprocessingML Documents (C#)](../../../../csharp/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)

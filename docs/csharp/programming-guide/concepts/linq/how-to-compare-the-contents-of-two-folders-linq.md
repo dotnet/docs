@@ -112,7 +112,7 @@ namespace QueryCompareTwoDirs
         // hash code.  
         public int GetHashCode(System.IO.FileInfo fi)  
         {  
-            string s = String.Format("{0}{1}", fi.Name, fi.Length);  
+            string s = $"{fi.Name}{fi.Length}";
             return s.GetHashCode();  
         }  
     }  
@@ -122,6 +122,7 @@ namespace QueryCompareTwoDirs
 ## Compiling the Code  
  Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also  
- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+## See Also
+
+- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)  
+- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)

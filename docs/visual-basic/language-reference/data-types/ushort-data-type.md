@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "UShort data type"
   - "US literal type characters [Visual Basic]"
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # UShort data type (Visual Basic)
 
@@ -52,7 +50,7 @@ Dim number As UShort = &H_FF8C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `US` or `us` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UShort` data type, as the following example shows.
+Numeric literals can also include the `US` or `us` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `UShort` data type, as the following example shows.
 
 ```vb
 Dim number = &H_5826us
@@ -72,7 +70,7 @@ Dim number = &H_5826us
   
 ## See Also  
  <xref:System.UInt16>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  

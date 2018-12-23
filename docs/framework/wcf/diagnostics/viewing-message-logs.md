@@ -27,7 +27,7 @@ This topic describes how you can view message logs.
   
 -   If you must view all three logs in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) at the same time, you can modify the relay service by creating a new <xref:System.ServiceModel.Channels.Message> instance. This instance should be a copy of the body of the incoming message, plus all the headers except for the `ActivityId` and `Action` headers. The following example code demonstrates how to do this.  
   
-```  
+```csharp
 Message outgoingMessage = Message.CreateMessage(incomingMessage.Version, incomingMessage.Headers.Action, incomingMessage.GetReaderAtBodyContents());  
   
 for (int i = 0; i < incomingMessage.Headers.Count; i++)  
@@ -46,7 +46,7 @@ incomingMessage.Headers[i].Name.Equals("Action", StringComparison.InvariantCultu
   
 -   For BasicHttpBinding, envelope headers are logged for the incoming messages in the /addressing/none namespace.  
   
--   Whitespaces can be mismatched.  
+-   White spaces can be mismatched.  
   
 -   For incoming messages, empty elements can be represented differently. For example, \<tag>\</tag> instead of  \<tag/>  
   

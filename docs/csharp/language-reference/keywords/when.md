@@ -1,5 +1,7 @@
 ---
-title: "when (C# Reference)"
+title: "when - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/07/2017
 f1_keywords: 
   - "when_CSharpKeyword"
@@ -17,10 +19,10 @@ You can use the `when` contextual keyword to specify a filter condition in two c
 
 ## `when` in a `catch` statement
 
-Starting with C# 6, `When` can be used in a `catch` statement to specify a condition that must be true for the handler for a specific exception to execute. Its syntax is:
+Starting with C# 6, `when` can be used in a `catch` statement to specify a condition that must be true for the handler for a specific exception to execute. Its syntax is:
 
 ```csharp
-catch ExceptionType [e] when (expr)
+catch (ExceptionType [e]) when (expr)
 ```
 where *expr* is an expression that evaluates to a Boolean value. If it returns `true`, the exception handler executes; if `false`, it does not. 
 
@@ -41,8 +43,8 @@ The following example uses the `when` keyword to test for `Shape` objects that h
 
  [!code-csharp[when-with-case#1](../../../../samples/snippets/csharp/language-reference/keywords/when/when.cs#1)]  
 
-## See also 
-  [switch statement](switch.md)  
-  [try/catch statement](try-catch.md)  
-  [try/catch/finally statement](try-catch-finally.md) 
+## See also
 
+- [switch statement](switch.md)  
+- [try/catch statement](try-catch.md)  
+- [try/catch/finally statement](try-catch-finally.md) 

@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 05/14/2018
+ms.date: 11/26/2018
 ---
 # F# code formatting guidelines
 
@@ -15,7 +15,7 @@ These guidelines are based on [A comprehensive guide to F# Formatting Convention
 
 ## General rules for indentation
 
-F# uses significant whitespace by default. The following guidelines are intended to provide guidance as to how to juggle some challenges this can impose.
+F# uses significant white space by default. The following guidelines are intended to provide guidance as to how to juggle some challenges this can impose.
 
 ### Using spaces
 
@@ -24,6 +24,63 @@ When indentation is required, you must use spaces, not tabs. At least one space 
 **We recommend 4 spaces per indentation.**
 
 That said, indentation of programs is a subjective matter. Variations are OK, but the first rule you should follow is *consistency of indentation*. Choose a generally accepted style of indentation and use it systematically throughout your codebase.
+
+## Formatting white space
+
+F# is white space sensitive. Although most semantics from white space are covered by proper indentation, there are some other things to consider.
+
+### Formatting operators in arithmetic expressions
+
+Always use white space around binary arithmetic expressions:
+
+```fsharp
+let subtractThenAdd x = x - 1 + 3
+```
+
+Unary `-` operators should always have the value they are negating immediately follow:
+
+```fsharp
+// OK
+let negate x = -x
+
+// Bad
+let negateBad x = - x
+```
+
+Adding a white-space character after the `-` operator can lead to confusion for others.
+
+In summary, it's important to always:
+
+* Surround binary operators with white space
+* Never have trailing white space after a unary operator
+
+The binary arithmetic operator guideline is especially important. Failing to surround a binary `-` operator, when combined with certain formatting choices, could lead to interpreting it as a unary `-`.
+
+### Surround a custom operator definition with white space
+
+Always use white space to surround an operator definition:
+
+```fsharp
+// OK
+let ( !> ) x f = f x
+
+// Bad
+let (!>) x f = f x
+```
+
+For any custom operator that starts with `*`, you'll need to add a white space to the beginning of the definition to avoid a compiler ambiguity. Because of this, it's recommended that you simply surround the definitions of all operators with a single white-space character.
+
+### Surround function parameter arrows with white space
+
+When defining the signature of a function, use white space around the `->` symbol:
+
+```fsharp
+// OK
+type MyFun = int -> int -> string
+
+// Bad
+type MyFunBad = int->int->string
+```
 
 ## Formatting blank lines
 
@@ -196,6 +253,23 @@ F# inherits both the postfix ML style of naming generic types (for example, `int
 
 For all other types, use the prefix form.
 
+## Formatting tuples
+
+A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
+
+It is commonly accepted to omit parentheses in pattern matching of tuples:
+
+```fsharp
+let (x, y) = z // Destructuring
+let x, y = z // OK
+
+// OK
+match x, y with
+| 1, _ -> 0
+| x, 1 -> 0
+| x, y -> 1
+```
+
 ## Formatting discriminated union declarations
 
 Indent `|` in type definition by 4 spaces:
@@ -213,6 +287,8 @@ type Volume =
 | USPint of float
 | ImperialPint of float
 ```
+
+## Formatting discriminated unions
 
 Instantiated Discriminated Unions that split across multiple lines should give contained data a new scope with indentation:
 
@@ -233,19 +309,51 @@ let tree1 =
     )
 ```
 
-## Formatting tuples
+## Formatting record declarations
 
-A tuple instantiation should be parenthesized, and the delimiting commas within should be followed by a single space, for example: `(1, 2)`, `(x, y, z)`.
-
-A commonly accepted exception is to omit parentheses in pattern matching of tuples:
+Indent `{` in type definition by 4 spaces and start the field list on the same line:
 
 ```fsharp
-let (x, y) = z // Destructuring
+// OK
+type PostalAddress =
+    { Address: string
+      City: string
+      Zip: string }
+    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 
-match x, y with
-| 1, _ -> 0
-| x, 1 -> 0
-| x, y -> 1
+// Not OK
+type PostalAddress =
+  { Address: string
+    City: string
+    Zip: string }
+    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    
+// Unusual in F#
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string
+    }
+```
+
+Placing the opening token on a new line and the closing token on a new line is preferrable if you are declaring interface implementations or members on the record:
+
+```fsharp
+// Declaring additional members on PostalAddress
+type PostalAddress =
+    { 
+        Address: string
+        City: string
+        Zip: string
+    } with
+    member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
+    
+type MyRecord =
+    {
+        SomeField : int
+    }
+    interface IMyInterface
 ```
 
 ## Formatting records
@@ -264,27 +372,51 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-Placing the opening token on the same line and the closing token on a new line is also fine:
+Placing the opening token on a new line, the contents tabbed over one scope, and the closing token on a new line is preferrable if you are:
+
+* Moving records around in code with different indentation scopes
+* Piping them into a function
 
 ```fsharp
-let rainbow = {
-    Boss1 = "Jeffrey"
-    Boss2 = "Jeffrey"
-    Boss3 = "Jeffrey"
-    Boss4 = "Jeffrey"
-    Boss5 = "Jeffrey"
-    Boss6 = "Jeffrey"
-    Boss7 = "Jeffrey"
-    Boss8 = "Jeffrey"
-    Lackeys = ["Zippy"; "George"; "Bungle"]
-}
+let rainbow =
+    {
+        Boss1 = "Jeffrey"
+        Boss2 = "Jeffrey"
+        Boss3 = "Jeffrey"
+        Boss4 = "Jeffrey"
+        Boss5 = "Jeffrey"
+        Boss6 = "Jeffrey"
+        Boss7 = "Jeffrey"
+        Boss8 = "Jeffrey"
+        Lackeys = ["Zippy"; "George"; "Bungle"]
+    }
+    
+type MyRecord =
+    {
+        SomeField : int
+    }
+    interface IMyInterface
+
+let foo a =
+    a
+    |> Option.map (fun x ->
+        {
+            MyField = x
+        })
 ```
 
 The same rules apply for list and array elements.
 
 ## Formatting lists and arrays
 
-Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces) and `[1; 2; 3]` (`;` is a delimiter, hence followed by a space).
+Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces).
+
+List and arrays declared on a single line should have a space after the opening bracket and before the closing bracket:
+
+```fsharp
+let xs = [ 1; 2; 3 ]
+let ys = [| 1; 2; 3; |]
+```
 
 Always use at least one space between two distinct brace-like operators. For example, leave a space between a `[` and a `{`.
 
@@ -304,47 +436,44 @@ Always use at least one space between two distinct brace-like operators. For exa
  { IngredientName = "Lemon"; Quantity = 1 }]
 ```
 
+The same guideline applies for lists or arrays of tuples.
+
 Lists and arrays that split across multiple lines follow a similar rule as records do:
 
 ```fsharp
-let pascalsTriangle = [|
-    [|1|]
-    [|1; 1|]
-    [|1; 2; 1|]
-    [|1; 3; 3; 1|]
-    [|1; 4; 6; 4; 1|]
-    [|1; 5; 10; 10; 5; 1|]
-    [|1; 6; 15; 20; 15; 6; 1|]
-    [|1; 7; 21; 35; 35; 21; 7; 1|]
-    [|1; 8; 28; 56; 70; 56; 28; 8; 1|]
-|]
+let pascalsTriangle =
+    [|
+        [| 1 |]
+        [| 1; 1 |]
+        [| 1; 2; 1 |]
+        [| 1; 3; 3; 1 |]
+        [| 1; 4; 6; 4; 1 |]
+        [| 1; 5; 10; 10; 5; 1 |]
+        [| 1; 6; 15; 20; 15; 6; 1 |]
+        [| 1; 7; 21; 35; 35; 21; 7; 1 |]
+        [| 1; 8; 28; 56; 70; 56; 28; 8; 1 |]
+    |]
 ```
+
+And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
 
 ## Formatting if expressions
 
-Indentation of conditionals depends on the sizes of the expressions that make them up. If `cond`, `e1` and `e2` are small, simply write them on one line:
+Indentation of conditionals depends on the sizes of the expressions that make them up. If `cond`, `e1` and `e2` are short, simply write them on one line:
 
 ```fsharp
 if cond then e1 else e2
 ```
 
-If `e1` and `cond` are small, but `e2` is large:
+If either `cond`, `e1` or `e2` are longer, but not multi-line:
 
 ```fsharp
-if cond then e1
-else
-    e2
-```
-
-If `e1` and `cond` are large and `e2` is small:
-
-```fsharp
-if cond then
-    e1
+if cond
+then e1
 else e2
 ```
 
-If all the expressions are large:
+If any of the expressions are multi-line:
 
 ```fsharp
 if cond then
@@ -369,13 +498,13 @@ Use a `|` for each clause of a match with no indentation. If the expression is s
 ```fsharp
 // OK
 match l with
-| { him = x; her = "Posh" } :: tail -> _
+| { him = x; her = "Posh" } :: tail -> x
 | _ :: tail -> findDavid tail
 | [] -> failwith "Couldn't find David"
 
 // Not OK
 match l with
-    | { him = x; her = "Posh" } :: tail -> _
+    | { him = x; her = "Posh" } :: tail -> x
     | _ :: tail -> findDavid tail
     | [] -> failwith "Couldn't find David"
 ```
@@ -547,9 +676,9 @@ let comparer =
               reversed.CompareTo (rev s2) }
 ```
 
-### Formatting whitespace in expressions
+### Formatting white space in expressions
 
-Avoid extraneous whitespace in F# expressions.
+Avoid extraneous white space in F# expressions.
 
 ```fsharp
 // OK
@@ -568,3 +697,59 @@ let makeStreamReader x = new System.IO.StreamReader(path=x)
 // Not OK
 let makeStreamReader x = new System.IO.StreamReader(path = x)
 ```
+
+## Formatting attributes
+
+[Attributes](../language-reference/attributes.md) are placed above a construct:
+
+```fsharp
+[<SomeAttribute>]
+type MyClass() = ...
+
+[<RequireQualifiedAccess>]
+module M =
+    let f x = x
+
+[<Struct>]
+type MyRecord =
+    { Label1: int
+      Label2: string }
+```
+
+### Formatting attributes on parameters
+
+Attributes can also be places on parameters. In this case, place then on the same line as the parameter and before the name:
+
+```fsharp
+// Defines a class that takes an optional value as input defaulting to false.
+type C() =
+    member __.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
+```
+
+### Formatting multiple attributes
+
+When multiple attributes are applied to a construct that is not a parameter, they should be placed such that there is one attribute per line:
+
+```fsharp
+[<Struct>]
+[<IsByRefLike>]
+type MyRecord =
+    { Label1: int
+      Label2: string }
+```
+
+When applied to a parameter, they must be on the same line and separated by a `;` separator.
+
+## Formatting literals
+
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should should place the attribute on its own line and use camelCase naming:
+
+```fsharp
+[<Literal>]
+let path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+
+[<Literal>]
+let myUrl = "www.mywebsitethatiamworkingwith.com"
+```
+
+Avoid placing the attribute on the same line as the value.

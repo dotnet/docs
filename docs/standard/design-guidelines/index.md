@@ -1,14 +1,13 @@
 ---
 title: "Framework Design Guidelines"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "libraries, .NET Framework class library"
   - "class library design guidelines [.NET Framework], about"
   - "class library design guidelines [.NET Framework]"
 ms.assetid: 5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Framework Design Guidelines
 This section provides guidelines for designing libraries that extend and interact with the .NET Framework. The goal is to help library designers ensure API consistency and ease of use by providing a unified programming model that is independent of the programming language used for development. We recommend that you follow these design guidelines when developing classes and components that extend the .NET Framework. Inconsistent library design adversely affects developer productivity and discourages adoption.  
@@ -37,13 +36,14 @@ This section provides guidelines for designing libraries that extend and interac
  Describes guidelines for using common types such as arrays, attributes, and collections, supporting serialization, and overloading equality operators.  
   
  [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)  
- Provides guidelines for choosing and implementing dependency properties and the dispose pattern.  
+ Provides guidelines for choosing and implementing dependency properties.  
   
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*  
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Overview](../../../docs/framework/get-started/overview.md)  
- [Roadmap for the .NET Framework](https://msdn.microsoft.com/library/0b46b7c6-9163-4f99-8e58-0d1ee7da8c67)  
- [Development Guide](../../../docs/framework/development-guide.md)
+## See also
+
+- [Overview](../../../docs/framework/get-started/overview.md)  
+- [Roadmap for the .NET Framework](https://msdn.microsoft.com/library/0b46b7c6-9163-4f99-8e58-0d1ee7da8c67)  
+- [Development Guide](../../../docs/framework/development-guide.md)

@@ -64,7 +64,7 @@ HRESULT ExecQueryWmi (
 The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_ONLY` for best performance.
 
 `pCtx`  
-[in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](https://msdn.microsoft.com/library/aa391465(v=vs.85).aspx) instance that can be used by the provider that is providing the requested classes. 
+[in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes. 
 
 `ppEnum`  
 [out] If no error occurs, receives the pointer to the enumerator that allows the caller to retrieve the instances in the query's result set. The query can have a result set with zero instances. See the [Remarks](#remarks) section for more information.
@@ -76,7 +76,7 @@ The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_
 [in] The impersonation level.
 
 `pCurrentNamespace`   
-[in] A pointer to an [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object that represents the current namespace.
+[in] A pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object that represents the current namespace.
 
 `strUser`   
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
@@ -107,9 +107,9 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemServices::ExecQuery](https://msdn.microsoft.com/library/aa392107(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemServices::ExecQuery](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execquery) method.
 
-This function processes the query specified in the `strQuery` parameter and creates an enumerator through which the caller can access the query results. The enumerator is a pointer to an [IEnumWbemClassObject](https://msdn.microsoft.com/library/aa390857(v=vs.85).aspx) interface; the query results are instances of class objects made available through the [IWbemClassObject](https://msdn.microsoft.com/library/aa391433(v=vs.85).aspx) interface.
+This function processes the query specified in the `strQuery` parameter and creates an enumerator through which the caller can access the query results. The enumerator is a pointer to an [IEnumWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-ienumwbemclassobject) interface; the query results are instances of class objects made available through the [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) interface.
 
 There are limits to the number of `AND` and `OR` keywords that can be used in WQL queries. Large numbers of WQL keywords used in a complex query can cause WMI to return the `WBEM_E_QUOTA_VIOLATION` (or 0x8004106c) error code as an `HRESULT` value. The limit of WQL keywords depends on how complex the query is.
 

@@ -37,7 +37,7 @@ HRESULT QualifierSet_EndEnumeration (
 [in] This parameter is unused.
 
 `ptr`   
-[in] A pointer to an [IWbemQualifierSet](https://msdn.microsoft.com/library/aa391860(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 ## Return value
 
@@ -49,7 +49,7 @@ The following value returned by this function is defined in the *WbemCli.h* head
   
 ## Remarks
 
-This function wraps a call to the [IWbemQualifierSet::EndEnumeration](https://msdn.microsoft.com/library/aa391865(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemQualifierSet::EndEnumeration](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-endenumeration) method.
 
 This call is recommended, but not required. It immediately releases resources associated with the enumeration.
 

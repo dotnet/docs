@@ -27,5 +27,6 @@ The Task Parallel Library (TPL) is a set of public types and APIs in the <xref:S
 |[Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)|Describes how to achieve data parallelism with LINQ queries.|  
 |[Parallel Programming](../../../docs/standard/parallel-programming/index.md)|Top level node for .NET parallel programming.|  
   
-## See Also  
- [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)
+## See also
+
+- [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)

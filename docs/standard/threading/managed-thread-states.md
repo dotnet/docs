@@ -42,8 +42,9 @@ if ((state & (Unstarted | Stopped)) == 0)   // implies Running
   
  Once a thread leaves the <xref:System.Threading.ThreadState.Unstarted> state as the result of a call to <xref:System.Threading.Thread.Start%2A>, it can never return to the <xref:System.Threading.ThreadState.Unstarted> state. A thread can never leave the <xref:System.Threading.ThreadState.Stopped> state.  
   
-## See Also  
- <xref:System.Threading.ThreadAbortException>  
- <xref:System.Threading.Thread>  
- <xref:System.Threading.ThreadState>  
- [Threading](../../../docs/standard/threading/index.md)
+## See also
+
+- <xref:System.Threading.ThreadAbortException>  
+- <xref:System.Threading.Thread>  
+- <xref:System.Threading.ThreadState>  
+- [Threading](../../../docs/standard/threading/index.md)

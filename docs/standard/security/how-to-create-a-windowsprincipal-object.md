@@ -71,5 +71,6 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
   
 3.  When the principal object has been created, you can use one of several methods to validate it.  
   
-## See Also  
- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+## See also
+
+- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)

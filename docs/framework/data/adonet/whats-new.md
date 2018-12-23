@@ -31,22 +31,22 @@ The following features are new in [!INCLUDE[vstecado](../../../../includes/vstec
   
     -   Use the fully-qualified domain name in the connection string.  
   
--   SqlClient supports Extended Protection. For more information about Extended Protection, see [Connecting to the Database Engine Using Extended Protection](http://go.microsoft.com/fwlink/?LinkId=219978).  
+-   SqlClient supports Extended Protection. For more information about Extended Protection, see [Connecting to the Database Engine Using Extended Protection](https://go.microsoft.com/fwlink/?LinkId=219978).  
   
 -   SqlClient supports connections to LocalDB databases. For more information, see [SqlClient Support for LocalDB](../../../../docs/framework/data/adonet/sql/sqlclient-support-for-localdb.md).  
   
 -   `Type System Version=SQL Server 2012;` is new value to pass to the `Type System Version` connection property. The `Type System Version=Latest;` value is now obsolete and has been made equivalent to `Type System Version=SQL Server 2008;`. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
--   SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](../../../../docs/framework/data/adonet/sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Using Sparse Columns](http://go.microsoft.com/fwlink/?LinkId=224244).  
+-   SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](../../../../docs/framework/data/adonet/sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Using Sparse Columns](https://go.microsoft.com/fwlink/?LinkId=224244).  
   
--   The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](http://go.microsoft.com/fwlink/?LinkId=224367).  
+-   The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](https://go.microsoft.com/fwlink/?LinkId=224367).  
   
 ## ADO.NET Entity Framework  
- The [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](http://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](http://go.microsoft.com/fwlink/?LinkId=234899).  
+ The [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](https://go.microsoft.com/fwlink/?LinkId=234899).  
   
 ## See Also  
  [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
  [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [What's New in WCF Data Services](http://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [What's New in WCF Data Services](https://msdn.microsoft.com/library/cf22cad5-b8d9-472b-8d7c-b863b64eaae8)  
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

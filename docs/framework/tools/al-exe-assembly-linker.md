@@ -1,7 +1,7 @@
 ---
 title: "Al.exe (Assembly Linker)"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Al.exe"
   - "Assembly Linker"
   - "modules, Assembly Linker"
@@ -15,7 +15,7 @@ ms.author: "mairaw"
 The Assembly Linker generates a file that has an assembly manifest from one or more files that are either modules or resource files. A module is an intermediate language (IL) file that does not have an assembly manifest.
 
 > [!NOTE]
-> Starting with [!INCLUDE[vs_orcas_long](../../../includes/vs-orcas-long-md.md)], both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [/win32manifest (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
+> Starting with Visual Studio 2008, both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [/win32manifest (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
 
 This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
 
@@ -168,9 +168,9 @@ al t2.netmodule /target:exe /out:t2a.exe /main:MyClass.Main
 ```
 
 ## See also
- 
-[Tools](../../../docs/framework/tools/index.md)  
-[*Sn.exe* (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)  
-[*Gacutil.exe* (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)  
-[Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
-[Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+
+- [Tools](../../../docs/framework/tools/index.md)
+- [*Sn.exe* (Strong Name Tool)](../../../docs/framework/tools/sn-exe-strong-name-tool.md)
+- [*Gacutil.exe* (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)
+- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

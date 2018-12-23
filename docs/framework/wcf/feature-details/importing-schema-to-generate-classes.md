@@ -12,31 +12,31 @@ ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
 # Importing Schema to Generate Classes
 To generate classes from schemas that are usable with Windows Communication Foundation (WCF), use the <xref:System.Runtime.Serialization.XsdDataContractImporter> class. This topic describes the process and variations.  
   
-## The Import Process  
+## The Import Process
  The schema import process starts with an <xref:System.Xml.Schema.XmlSchemaSet> and produces a <xref:System.CodeDom.CodeCompileUnit>.  
   
  The `XmlSchemaSet` is a part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]’s Schema Object Model (SOM) that represents a set of XML Schema definition language (XSD) schema documents. To create an `XmlSchemaSet` object from a set of XSD documents, deserialize each document into an <xref:System.Xml.Schema.XmlSchema> object (using the <xref:System.Xml.Serialization.XmlSerializer>) and add these objects to a new `XmlSchemaSet`.  
   
  The `CodeCompileUnit` is part of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)]’s Code Document Object Model (CodeDOM) that represents [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] code in an abstract way. To generate the actual code from a `CodeCompileUnit`, use a subclass of the <xref:System.CodeDom.Compiler.CodeDomProvider> class, such as the <xref:Microsoft.CSharp.CSharpCodeProvider> or <xref:Microsoft.VisualBasic.VBCodeProvider> class.  
   
-#### To import a schema  
+### To import a schema  
   
-1.  Create an instance of the <xref:System.Runtime.Serialization.XsdDataContractImporter>.  
+1. Create an instance of the <xref:System.Runtime.Serialization.XsdDataContractImporter>.  
   
-2.  Optional. Pass a `CodeCompileUnit` in the constructor. The types generated during schema import are added to this `CodeCompileUnit` instance instead of starting with a blank `CodeCompileUnit`.  
+2. Optional. Pass a `CodeCompileUnit` in the constructor. The types generated during schema import are added to this `CodeCompileUnit` instance instead of starting with a blank `CodeCompileUnit`.  
   
-3.  Optional. Call one of the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> methods. The method determines whether the given schema is a valid data contract schema and can be imported. The `CanImport` method has the same overloads as `Import` (the next step).  
+3. Optional. Call one of the <xref:System.Runtime.Serialization.XsdDataContractImporter.CanImport%2A> methods. The method determines whether the given schema is a valid data contract schema and can be imported. The `CanImport` method has the same overloads as `Import` (the next step).  
   
-4.  Call one of the overloaded `Import` methods, for example, the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%28System.Xml.Schema.XmlSchemaSet%29> method.  
+4. Call one of the overloaded `Import` methods, for example, the <xref:System.Runtime.Serialization.XsdDataContractImporter.Import%28System.Xml.Schema.XmlSchemaSet%29> method.  
   
      The simplest overload takes an `XmlSchemaSet` and imports all types, including anonymous types, found in that schema set. Other overloads allow you to specify the XSD type or a list of types to import (in the form of an <xref:System.Xml.XmlQualifiedName> or a collection of `XmlQualifiedName` objects). In this case, only the specified types are imported. An overload takes an <xref:System.Xml.Schema.XmlSchemaElement> that imports a particular element out of the `XmlSchemaSet`, as well as its associated type (whether it is anonymous or not). This overload returns an `XmlQualifiedName`, which represents the data contract name of the type generated for this element.  
   
      Multiple calls of the `Import` method result in multiple items being added to the same `CodeCompileUnit`. A type is not generated into the `CodeCompileUnit` if it already exists there. Call `Import` multiple times on the same `XsdDataContractImporter` instead of using multiple `XsdDataContractImporter` objects. This is the recommended way to avoid duplicate types being generated.  
   
     > [!NOTE]
-    >  If there is a failure during import, the `CodeCompileUnit` will be in an unpredictable state. Using a `CodeCompileUnit` resulting from a failed import could expose you to security vulnerabilities.  
+    > If there is a failure during import, the `CodeCompileUnit` will be in an unpredictable state. Using a `CodeCompileUnit` resulting from a failed import could expose you to security vulnerabilities.  
   
-5.  Access the `CodeCompileUnit` through the <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A> property.  
+5. Access the `CodeCompileUnit` through the <xref:System.Runtime.Serialization.XsdDataContractImporter.CodeCompileUnit%2A> property.  
   
 ### Import Options: Customizing the Generated Types  
  You can set the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property of the <xref:System.Runtime.Serialization.XsdDataContractImporter> to an instance of the <xref:System.Runtime.Serialization.ImportOptions> class to control various aspects of the import process. A number of options directly influence the types that are generated.  
@@ -60,7 +60,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
   
  [!code-xml[c_SchemaImportExport#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#10)]  
   
- The following example uses the `Namespaces` property to map the "http://schemas.contoso.com/carSchema" namespace to "Contoso.Cars".  
+ The following example uses the `Namespaces` property to map the `http://schemas.contoso.com/carSchema` namespace to "Contoso.Cars".  
   
  [!code-csharp[c_SchemaImportExport#8](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/cs/source.cs#8)]
  [!code-vb[c_SchemaImportExport#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_schemaimportexport/vb/source.vb#8)]  

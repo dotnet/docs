@@ -19,4 +19,4 @@ Note that three nested `foreach` loops are required to iterate over the inner el
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)
+- [Language Integrated Query (LINQ)](index.md)

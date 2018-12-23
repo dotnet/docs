@@ -162,7 +162,7 @@ file created earlier in this tutorial).
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L162-L166)]
 
-Now, call the routine. You use ``Async.RunSynchronously`` to force the execution of the asynchronous operation.
+Now, call the routine. You use `Async.RunSynchronously` to force the execution of the asynchronous operation.
 
 [!code-fsharp[BlobStorage](../../../samples/snippets/fsharp/azure/blob-storage.fsx#L168-L168)]
 

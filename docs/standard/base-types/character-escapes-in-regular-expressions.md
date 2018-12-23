@@ -1,5 +1,6 @@
 ---
-title: "Character Escapes in Regular Expressions"
+title: Character Escapes in .NET Regular Expressions
+description: Learn about special characters and escaped characters in .NET regular expressions.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -16,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Character Escapes in Regular Expressions
 The backslash (\\) in a regular expression indicates one of the following:  
@@ -32,7 +34,7 @@ The backslash (\\) in a regular expression indicates one of the following:
   
 |Character or sequence|Description|  
 |---------------------------|-----------------|  
-|All characters except for the following:<br /><br /> . $ ^ { [ ( &#124; ) * + ? \|Characters other than those listed in the **Character or sequence** column have no special meaning in regular expressions; they match themselves.<br /><br /> The characters included in the **Character or sequence** column are special regular expression language elements. To match them in a regular expression, they must be escaped or included in a [positive character group](../../../docs/standard/base-types/character-classes-in-regular-expressions.md). For example, the regular expression `\$\d+` or `[$]\d+` matches "$1200".|  
+|All characters except for the following:<br /><br /> . $ ^ { [ ( &#124; ) * + ? \ |Characters other than those listed in the **Character or sequence** column have no special meaning in regular expressions; they match themselves.<br /><br /> The characters included in the **Character or sequence** column are special regular expression language elements. To match them in a regular expression, they must be escaped or included in a [positive character group](../../../docs/standard/base-types/character-classes-in-regular-expressions.md). For example, the regular expression `\$\d+` or `[$]\d+` matches "$1200".|  
 |`\a`|Matches a bell (alarm) character, `\u0007`.|  
 |`\b`|In a `[`*character_group*`]` character class, matches a backspace, `\u0008`.  (See [Character Classes](../../../docs/standard/base-types/character-classes-in-regular-expressions.md).) Outside a character class, `\b` is an anchor that matches a word boundary. (See [Anchors](../../../docs/standard/base-types/anchors-in-regular-expressions.md).)|  
 |`\t`|Matches a tab, `\u0009`.|  
@@ -63,5 +65,6 @@ The backslash (\\) in a regular expression indicates one of the following:
 |`(.+)`|Match any character one or more times. This is the second capturing group.|  
 |`\r?\n`|Match zero or one occurrence of a carriage return followed by a new line.|  
   
-## See Also  
- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+## See also
+
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

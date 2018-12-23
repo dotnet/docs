@@ -52,5 +52,6 @@ User data, which is any kind of input (data from a Web request or URL, input to 
   
 -   Be wary of user names that might have more than one canonical format. For example, you can often use either the MYDOMAIN\\*username* form or the *username*@mydomain.example.com form.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

@@ -30,6 +30,7 @@ In most cases, the garbage collector can determine the best time to perform a co
 |<xref:System.GCCollectionMode.Forced> or <xref:System.GCCollectionMode.Default>|A blocking collection is performed as soon as possible. If a background collection is in progress and generation is 0 or 1, the <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method immediately triggers a blocking collection and returns when the collection is finished. If a background collection is in progress and the `generation` parameter is 2, the method waits until the background collection is finished, triggers a blocking generation 2 collection, and then returns.|A collection is performed as soon as possible. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. If a background collection is already in progress, the method returns immediately.|  
 |<xref:System.GCCollectionMode.Optimized>|A blocking collection may be performed, depending on the state of the garbage collector and the `generation` parameter. The garbage collector tries to provide optimal performance.|A collection may be performed, depending on the state of the garbage collector. The <xref:System.GC.Collect%28System.Int32%2CSystem.GCCollectionMode%2CSystem.Boolean%29> method requests a background collection, but this is not guaranteed; depending on the circumstances, a blocking collection may still be performed. The garbage collector tries to provide optimal performance. If a background collection is already in progress, the method returns immediately.|  
   
-## See Also  
- [Latency Modes](../../../docs/standard/garbage-collection/latency.md)  
- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Latency Modes](../../../docs/standard/garbage-collection/latency.md)  
+- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

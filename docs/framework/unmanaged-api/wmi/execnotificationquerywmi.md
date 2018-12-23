@@ -57,7 +57,7 @@ HRESULT ExecNotificationQueryWmi (
 | `WBEM_FLAG_FORWARD_ONLY` | 0x20 | The function returns a forward-only enumerator. Typically, forward-only enumerators are faster and use less memory than conventional enumerators, but they do not allow calls to [Clone](clone.md). |
 
 `pCtx`  
-[in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](https://msdn.microsoft.com/library/aa391465(v=vs.85).aspx) instance that can be used by the provider that is providing the requested events. 
+[in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested events. 
 
 `ppEnum`  
 [out] If no error occurs, receives the pointer to the enumerator that allows the caller to retrieve the instances in the query's result set. See the [Remarks](#remarks) section for more information.
@@ -69,7 +69,7 @@ HRESULT ExecNotificationQueryWmi (
 [in] The impersonation level.
 
 `pCurrentNamespace`   
-[in] A pointer to an [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object that represents the current namespace.
+[in] A pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object that represents the current namespace.
 
 `strUser`   
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
@@ -103,7 +103,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemServices::ExecNotificationQuery](https://msdn.microsoft.com/library/aa392105(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemServices::ExecNotificationQuery](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-execnotificationquery) method.
 
 After the function returns, the caller periodically passes the returned `ppEnum` object to the [Next](next.md) function to see if any events are available.
 

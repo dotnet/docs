@@ -8,8 +8,8 @@ Thank you for your interest in contributing to the .NET documentation!
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
 * [Process for contributing](#process-for-contributing)
+* [The C# interactive experience](#the-c-interactive-experience)
 * [DOs and DON'Ts](#dos-and-donts)
-* [Building the docs](#building-the-docs)
 * [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
@@ -29,7 +29,7 @@ The content inside the **docs** folder is organized into sections that are refle
 
 -or-
 
-You can also choose from existing issues for which community contributions are welcome. [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) lists many of the work items that are available for commmunity contributors. Depending on your interests and level of commitment, you can choose from issues in the following categories:
+You can also choose from existing issues for which community contributions are welcome. [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) lists many of the work items that are available for community contributors. Depending on your interests and level of commitment, you can choose from issues in the following categories:
 
 - **Maintenance**. This category includes fairly simple contributions, such as fixing broken or incorrect links, adding missing code examples, or addressing limited content issues. In some cases, these issues may concern large numbers of files. In that case, you should let us know what you'd like to work on before you begin.
 
@@ -39,7 +39,7 @@ You can also choose from existing issues for which community contributions are w
 
 You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
 
-**Step 2:** Fork the `/dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
+**Step 2:** Fork the `dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
 For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
 GitHub creates the new branch for you when you submit the changes.
@@ -69,6 +69,8 @@ Be sure to follow the proper Markdown syntax. For more information, see the [sty
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
+Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description. That way, the issue is automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
@@ -85,38 +87,26 @@ On a certain cadence, we push all commits from master branch into the live branc
 
 We make the following distinction for code that exists in our repository:
 
-- samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
+- Samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
 
-- snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
+- Snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
-Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository and is organized as follows:
+Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository. We are working toward a model where our samples folder structure matches our docs folder structure. Standards that we follow are:
 
-- *core* contains .NET Core samples.
+- The top level *snippets* folder contains snippets for small, focused samples.
+- API reference samples have been in a folder following this pattern: *snippets/\<language>/api/\<namespace>/\<apiname>*.
+- Other top-level folders match the top level folders in the *docs* repository. For example, the docs repository has a *machine-learning/tutorials* folder, and the samples for machine learning tutorials are in the *samples/machine-learning/tutorials* folder.
 
-  * The *core* directory contains samples that highlight .NET Core. The purpose of your sample should be to teach developers something about .NET Core. This includes the framework packaging, the new tooling, or the cross-platform experience. Our CI build server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
+In addition, all samples under the *core* and *standard* folders should build and run on all platforms supported by .NET Core. Our CI build system will enforce that. The top level *framework* folder contains samples that are only built and validated on Windows.
 
-- *csharp* contains C# language samples.
-
-  * The *csharp* directory contains samples where the purpose is to explain the C# language. While these samples use frameworks and libraries, their focus is on the C# language. Our CI build server builds these samples on multiple supported platforms. Therefore, every sample must be configured to build on Linux, Mac, and Windows.
-
-- *framework* contains .NET Framework samples. These samples are referenced by topics under many different locations in the documentation. These samples build only on Windows.
-
-  * The *framework* directory contains samples that highlight .NET with platform dependencies. These may include migration samples, platform-specific samples, or other samples that require the framework or the Windows-based tools. Our CI build server builds these samples on Windows only. Do not place any samples here that should be checked for cross-platform builds.
-
-- *snippets* contains the code snippets used throughout the documentation. Inside the *snippets* folder, the folder names identify the language of the code snippet.
-
-We will expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
-
-Sample code may fit more than one of these areas. In those cases, place the sample so it matches
-the topics you are covering in your documents. Ask yourself what readers will learn from reading
-your topic. What will they learn from building and running your sample?
+We may expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
 
 Each complete sample that you create should contain a *readme.md* file. This file should
 contain a short description of the sample (one or two paragraphs). Your *readme.md*
 should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
-a link to the live document on the [.NET documentation site](http://docs.microsoft.com/dotnet/welcome).
+a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
-with `http://docs.microsoft.com/dotnet/articles`.
+with `https://docs.microsoft.com/dotnet`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 
@@ -159,43 +149,6 @@ The following list shows some guiding rules that you should keep in mind when yo
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
 > Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
-
-## Building the docs
-
-Test your changes with the [DocFX command-line tool](https://dotnet.github.io/docfx/tutorial/docfx_getting_started.html#2-use-docfx-as-a-command-line-tool), which creates a locally hosted version of the site. DocFX doesn't render style and site extensions created for docs.microsoft.com.
-
-To build the docs locally, you need to install [DocFX](https://dotnet.github.io/docfx/). DocFX requires the .NET Framework on Windows, or Mono for Linux or macOS.
-
-### Windows instructions
-
-* Download the [latest version of DocFX](https://github.com/dotnet/docfx/releases) and unzip *docfx.zip*.
-* Add DocFX to your PATH.
-* In a command prompt, navigate to the *docs* directory and run the following command:
-
-```
-docfx -t default --serve
-```
-
-* In a browser, navigate to `http://localhost:8080`.
-
-### Mono instructions
-
-* Install Mono via Homebrew - `brew install mono`.
-* Download the [latest version of DocFX](https://github.com/dotnet/docfx/releases).
-* Extract to `\bin\docfx`.
-* Create an alias for **docfx**:
-
-```
-function docfx {
-  mono $HOME/bin/docfx/docfx.exe
-}
-
-function docfx-serve {
-  mono $HOME/bin/docfx/docfx.exe serve _site
-}
-```
-
-* Run `docfx` in the *docs* directory to build the site, and `docfx-serve` to view the site at `http://localhost:8080`.
 
 ## Contributor License Agreement
 

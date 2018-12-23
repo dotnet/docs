@@ -20,8 +20,9 @@ When you call <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithT
 > [!NOTE]
 >  In order to perform a garbage collection, the runtime must suspend all the threads except the thread performing the collection. Each thread must be brought to a safe point before it can be suspended.  
   
-## See Also  
- <xref:System.Threading.Thread>  
- <xref:System.GC>  
- [Threading](../../../docs/standard/threading/index.md)  
- [Automatic Memory Management](../../../docs/standard/automatic-memory-management.md)
+## See also
+
+- <xref:System.Threading.Thread>  
+- <xref:System.GC>  
+- [Threading](../../../docs/standard/threading/index.md)  
+- [Automatic Memory Management](../../../docs/standard/automatic-memory-management.md)

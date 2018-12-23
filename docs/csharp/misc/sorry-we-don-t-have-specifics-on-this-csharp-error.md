@@ -895,13 +895,14 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  [Visual C# General](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=csharpgeneral)  
  Provides a forum for questions about and issues with Visual C# that are not discussed in other forums.  
   
- [StackOverflow](http://stackoverflow.com/questions/tagged/c%23)  
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
  Provides a forum for questions about and issues with Visual C#.  
   
  Also see:  
  [Additional Resources for Visual C# Programmers](../../csharp/getting-started/additional-resources.md)  
   
-## See Also  
- [C# Programming Guide](../../csharp/programming-guide/index.md)  
- [C# Reference](../../csharp/language-reference/index.md)  
- [Talk to Us](/visualstudio/ide/talk-to-us)  
+## See Also
+
+- [C# Programming Guide](../../csharp/programming-guide/index.md)  
+- [C# Reference](../../csharp/language-reference/index.md)  
+- [Talk to Us](/visualstudio/ide/talk-to-us)  

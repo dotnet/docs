@@ -37,4 +37,4 @@ Provides the [ResolveTypeLib method](../../../../docs/framework/unmanaged-api/tl
   
 ## See Also  
  [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx function](https://msdn.microsoft.com/library/windows/desktop/ms221249\(v=vs.85\).aspx)
+ [LoadTypeLibEx function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

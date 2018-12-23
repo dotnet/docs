@@ -32,7 +32,7 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
 -   Implement an `Echo` service of the type defined by the `IEcho` contract.  
   
--   Specify an endpoint address of http://localhost:8000/Echo for the service.  
+-   Specify an endpoint address of `http://localhost:8000/Echo` for the service.  
   
 -   Configure the `Echo` service using a <xref:System.ServiceModel.WSHttpBinding> binding.  
   

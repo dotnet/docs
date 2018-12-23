@@ -72,5 +72,6 @@ Starting with the .NET Framework version 2.0, the common language runtime allows
 ## Host Override  
  In the .NET Framework version 2.0, an unmanaged host can use the [ICLRPolicyManager](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md) interface in the Hosting API to override the default unhandled exception policy of the common language runtime. The [ICLRPolicyManager::SetUnhandledExceptionPolicy](../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setunhandledexceptionpolicy-method.md) function is used to set the policy for unhandled exceptions.  
   
-## See Also  
- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
+## See also
+
+- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)

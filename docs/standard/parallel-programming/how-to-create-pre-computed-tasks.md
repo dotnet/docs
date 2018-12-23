@@ -35,5 +35,6 @@ This document describes how to use the <xref:System.Threading.Tasks.Task.FromRes
   
 ## Robust Programming  
   
-## See Also  
- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+## See also
+
+- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)

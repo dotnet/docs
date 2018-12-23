@@ -74,7 +74,7 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
 ## See Also  
  <xref:System.String?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  

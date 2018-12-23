@@ -34,14 +34,14 @@ If you have an operation that will take a long time to complete, and you do not 
  For a complete listing of the code used in this example, see [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Project  
  The first step is to create the project and to set up the form.  
   
 #### To create a form that uses a background operation  
   
-1.  Create a Windows-based application project called `BackgroundWorkerExample`. For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows-based application project called `BackgroundWorkerExample` (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  In **Solution Explorer**, right-click **Form1** and select **Rename** from the shortcut menu. Change the file name to `FibonacciCalculator`. Click the **Yes** button when you are asked if you want to rename all references to the code element '`Form1`'.  
   
@@ -51,7 +51,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 5.  Rename the first <xref:System.Windows.Forms.Button> control `startAsyncButton` and set the <xref:System.Windows.Forms.Control.Text%2A> property to `Start Async`. Rename the second <xref:System.Windows.Forms.Button> control `cancelAsyncButton`, and set the <xref:System.Windows.Forms.Control.Text%2A> property to `Cancel Async`. Set its <xref:System.Windows.Forms.Control.Enabled%2A> property to `false`.  
   
-6.  Create an event handler for both of the <xref:System.Windows.Forms.Button> controls' <xref:System.Windows.Forms.Control.Click> events. For details, see [How to: Create Event Handlers Using the Designer](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2).  
+6.  Create an event handler for both of the <xref:System.Windows.Forms.Button> controls' <xref:System.Windows.Forms.Control.Click> events. For details, see [How to: Create Event Handlers Using the Designer](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2).  
   
 7.  Drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the form and rename it `resultLabel`.  
   
@@ -69,7 +69,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 #### To implement asynchronous event handlers  
   
-1.  In the **Properties** window, with the <xref:System.ComponentModel.BackgroundWorker> component still selected, click the **Events** button. Double-click the <xref:System.ComponentModel.BackgroundWorker.DoWork> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> events to create event handlers. For more information about how to use event handlers, see [How to: Create Event Handlers Using the Designer](http://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2).  
+1.  In the **Properties** window, with the <xref:System.ComponentModel.BackgroundWorker> component still selected, click the **Events** button. Double-click the <xref:System.ComponentModel.BackgroundWorker.DoWork> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> events to create event handlers. For more information about how to use event handlers, see [How to: Create Event Handlers Using the Designer](https://msdn.microsoft.com/library/8461e9b8-14e8-406f-936e-3726732b23d2).  
   
 2.  Create a new method, called `ComputeFibonacci`, in your form. This method does the actual work, and it will run in the background. This code demonstrates the recursive implementation of the Fibonacci algorithm, which is notably inefficient, taking exponentially longer time to complete for larger numbers. It is used here for illustrative purposes, to show an operation that can introduce long delays in your application.  
   
@@ -157,11 +157,12 @@ If you have an operation that will take a long time to complete, and you do not 
     > [!CAUTION]
     >  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
-## See Also  
- <xref:System.ComponentModel.BackgroundWorker>  
- [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)  
- [Multithreading in Components](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- [NOT IN BUILD: Multithreading in Visual Basic](http://msdn.microsoft.com/library/c731a50c-09c1-4468-9646-54c86b75d269)  
- [How to: Implement a Form That Uses a Background Operation](../../../../docs/framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)  
- [Walkthrough: Running an Operation in the Background](../../../../docs/framework/winforms/controls/walkthrough-running-an-operation-in-the-background.md)  
- [BackgroundWorker Component](../../../../docs/framework/winforms/controls/backgroundworker-component.md)
+## See also
+
+- <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>
+- [Managed Threading](../../../../docs/standard/threading/index.md)
+- [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)
+- [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)  
+- [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md)
+- [BackgroundWorker Component](backgroundworker-component.md)

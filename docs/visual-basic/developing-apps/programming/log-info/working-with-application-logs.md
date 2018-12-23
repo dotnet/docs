@@ -96,4 +96,4 @@ The `My.Applicaton.Log` and `My.Log` objects make it easy to write logging and t
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+ [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/index.md)

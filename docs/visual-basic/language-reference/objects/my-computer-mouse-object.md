@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Mouse Object"
+title: "My.Computer.Mouse Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Mouse object"

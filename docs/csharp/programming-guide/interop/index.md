@@ -1,5 +1,6 @@
 ---
-title: "Interoperability (C# Programming Guide)"
+title: "Interoperability - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "COM interop"
@@ -33,10 +34,12 @@ Interoperability enables you to preserve and take advantage of existing investme
  Demonstrates how to expose a C# class as a COM object.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Basic concepts](~/_csharplang/spec/unsafe-code.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
- [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)
+## See Also
+
+- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
+- [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)

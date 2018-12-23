@@ -19,4 +19,4 @@ This example shows how to open a message box.
  [!code-vb[MessageBoxSnippets#MessageBoxShow1CODE](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MessageBoxSnippets/visualbasic/show1window.xaml.vb#messageboxshow1code)]  
   
 ## See Also  
- [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023)
+ [MessageBox Sample](https://go.microsoft.com/fwlink/?LinkID=160023)

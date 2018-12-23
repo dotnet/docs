@@ -2,8 +2,6 @@
 title: "&lt;security&gt; of &lt;netPeerBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;security&gt; of &lt;netPeerBinding&gt;
 Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md), including the type of authentication used and the security used for the message transport.  
@@ -68,5 +66,5 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
  [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

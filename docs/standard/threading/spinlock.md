@@ -19,5 +19,6 @@ The <xref:System.Threading.SpinLock> structure is a low-level, mutual-exclusion 
   
  <xref:System.Threading.SpinLock> supports a *thread*-*tracking* mode that you can use during the development phase to help track the thread that is holding the lock at a specific time. Thread-tracking mode is very useful for debugging, but we recommend that you turn it off in the release version of your program because it may slow performance. For more information, see [How to: Enable Thread-Tracking Mode in SpinLock](../../../docs/standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md).  
   
-## See Also  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+## See also
+
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

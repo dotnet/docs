@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 
 # \<assemblyBinding> element for \<configuration>

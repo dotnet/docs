@@ -124,7 +124,8 @@ ms.author: "ronpet"
   
  [Back to table](#Top)  
   
-## See Also  
- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)
+## See also
+
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
+- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)

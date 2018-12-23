@@ -80,5 +80,5 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
  [Group Join Clause](../../../../visual-basic/language-reference/queries/group-join-clause.md)  
  [From Clause](../../../../visual-basic/language-reference/queries/from-clause.md)  
  [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)  
- [Queries](../../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../../visual-basic/language-reference/queries/index.md)  
  [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)

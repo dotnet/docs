@@ -79,7 +79,7 @@ a pattern, and raise the correct event when a match is discovered.
 
 [!code-csharp[FileSearxcher](../../samples/csharp/events/Program.cs#FileSearcherV1 "Create the initial file searcher")]
 
-## Definining and Raising Field-Like Events
+## Defining and Raising Field-Like Events
 
 The simplest way to add an event to your class is to declare that
 event as a public field, as in the preceding example:
@@ -181,7 +181,7 @@ EventHandler<FileFoundArgs> onFileFound = (sender, eventArgs) =>
 ## Adding Another Event Declaration
 
 Let's add one more feature, and demonstrate other language idioms
-for events. Let's add an overload of the `Search()` method that
+for events. Let's add an overload of the `Search` method that
 traverses all subdirectories in search of files.
 
 This could get to be a lengthy operation in a directory with many
@@ -216,7 +216,7 @@ or unsubscribe from the event. Notice that you also must declare a
 private backing field to store the event variable. It is initialized
 to null.
 
-Next, let's add the overload of the Search() method that traverses
+Next, let's add the overload of the `Search` method that traverses
 subdirectories and raises both events. The easiest way to accomplish
 this is to use a default argument to specify that you want to search
 all directories:

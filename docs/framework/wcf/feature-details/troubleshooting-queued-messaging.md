@@ -106,7 +106,7 @@ This section contains common questions and troubleshooting help for using queues
   
  **Q:** Where can I find answers to common questions on MSMQ?  
   
- **A:** For more information about MSMQ, see [Microsoft Message Queuing](http://go.microsoft.com/fwlink/?LinkId=87810).  
+ **A:** For more information about MSMQ, see [Microsoft Message Queuing](https://go.microsoft.com/fwlink/?LinkId=87810).  
   
  **Q:** Why does my service throw a `ProtocolException` when reading from a queue that contains both queued session messages and queued datagram messages?  
   

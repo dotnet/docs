@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Network Object"
+title: "My.Computer.Network Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Network object"

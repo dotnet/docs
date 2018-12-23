@@ -13,9 +13,6 @@ This section contains activity samples that use custom designers for display in 
  [Custom Composite Designers - Workflow Items Presenter](../../../../docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-items-presenter.md)  
  This sample shows how to build an activity designer that surfaces such an editable collection.  
   
- [Metadata Store Programmability](../../../../docs/framework/windows-workflow-foundation/samples/metadata-store-programmability.md)  
- This sample shows how to program against the metadata store by applying attributes to a run-time type, the source for which we have no control over.  
-  
  [Using the ExpressionTextBox in a Custom Activity Designer](../../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)  
  This sample shows how to use the <xref:System.Activities.Presentation.View.ExpressionTextBox> in a custom activity designer.  
   

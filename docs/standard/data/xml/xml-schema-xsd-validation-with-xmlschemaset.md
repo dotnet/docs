@@ -37,6 +37,7 @@ XML documents can be validated against an XML schema definition language (XSD) s
  [!code-csharp[XmlSchemaSetOverall Example#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaSetOverall Example/CS/xmlschemasetexample.cs#1)]
  [!code-vb[XmlSchemaSetOverall Example#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaSetOverall Example/VB/xmlschemasetexample.vb#1)]  
   
-## See Also  
- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)
+## See also
+
+- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)

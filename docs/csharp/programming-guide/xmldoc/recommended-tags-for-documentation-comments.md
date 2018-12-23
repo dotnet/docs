@@ -1,5 +1,6 @@
 ---
-title: "Recommended Tags for Documentation Comments (C# Programming Guide)"
+title: "Recommended Tags for Documentation Comments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML [C#], tags"
@@ -36,7 +37,8 @@ The C# compiler processes documentation comments in your code and formats them a
 /// </summary>  
 ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

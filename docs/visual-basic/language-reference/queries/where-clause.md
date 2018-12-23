@@ -41,7 +41,7 @@ Where condition
   
 ## See Also  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
  [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
  [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

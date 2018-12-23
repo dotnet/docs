@@ -39,7 +39,7 @@ HRESULT LoadLibraryShim (
  [in] A zero-terminated string that represents the name of the DLL to be loaded from the .NET Framework library.  
   
  `szVersion`  
- [in] A zero-terminated string that represents the version of the DLL to be loaded. If `szVersion` is null, the version selected for loading is the latest version of the specified DLL that is less than version 4. That is, all versions equal to or greater than version 4 are ignored if `szVersion` is null, and if no version less than version 4 is installed, the DLL fails to load. This is to ensure that installation of the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not affect pre-existing applications or components. See the entry [In-Proc SxS and Migration Quick Start](http://go.microsoft.com/fwlink/?LinkId=200329) in the CLR team blog.  
+ [in] A zero-terminated string that represents the version of the DLL to be loaded. If `szVersion` is null, the version selected for loading is the latest version of the specified DLL that is less than version 4. That is, all versions equal to or greater than version 4 are ignored if `szVersion` is null, and if no version less than version 4 is installed, the DLL fails to load. This is to ensure that installation of the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)] does not affect pre-existing applications or components. See the entry [In-Proc SxS and Migration Quick Start](https://go.microsoft.com/fwlink/?LinkId=200329) in the CLR team blog.  
   
  `pvReserved`  
  Reserved for future use.  

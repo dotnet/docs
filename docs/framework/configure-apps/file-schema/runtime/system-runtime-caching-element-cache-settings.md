@@ -59,7 +59,7 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
       <namedCaches>  
           <add name="default"   
                cacheMemoryLimitMegabytes="0"   
-               physicalMemoryPercentage="0"  
+               physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  
     </memoryCache>  
@@ -68,4 +68,4 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
 ```  
   
 ## See Also  
- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

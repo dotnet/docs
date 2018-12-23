@@ -12,9 +12,7 @@ When you are building controls that interact with data, you sometimes need to bi
   
 ### To bind the BindingSource to a type  
   
-1.  Create a Windows Forms project.  
-  
-     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+1.  Create a Windows Forms project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).  
   
 2.  In **Design** view, drag a <xref:System.Windows.Forms.BindingSource> component onto the form.  
   

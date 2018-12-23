@@ -1,6 +1,6 @@
 ---
 title: "Names of Namespaces"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 helpviewer_keywords: 
   - "names [.NET Framework], conflicts"
   - "names [.NET Framework], namespaces"
@@ -8,8 +8,7 @@ helpviewer_keywords:
   - "namespaces [.NET Framework], names"
   - "names [.NET Framework], type names"
 ms.assetid: a49058d2-0276-43a7-9502-04adddf857b2
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Names of Namespaces
 As with other naming guidelines, the goal when naming namespaces is creating sufficient clarity for the programmer using the framework to immediately know what the content of the namespace is likely to be. The following template specifies the general rule for naming namespaces:  
@@ -79,6 +78,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

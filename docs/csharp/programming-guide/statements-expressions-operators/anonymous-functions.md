@@ -1,5 +1,6 @@
 ---
-title: "Anonymous Functions (C# Programming Guide)"
+title: "Anonymous Functions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], as anonymus functions"
@@ -29,9 +30,9 @@ An anonymous function is an "inline" statement or expression that can be used wh
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See also
+## See Also
 
-[Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
-[Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
-[Delegates](../../../csharp/programming-guide/delegates/index.md)  
-[Expression Trees (C#)](../concepts/expression-trees/index.md)  
+- [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Expression Trees (C#)](../concepts/expression-trees/index.md)  

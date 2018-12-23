@@ -21,5 +21,6 @@ Constants are fields whose values are set at compile time and can never be chang
   
  The use of the class name qualifier helps ensure that you and others who use the constant understand that it is constant and cannot be modified.  
   
-## See Also  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+## See Also
+
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

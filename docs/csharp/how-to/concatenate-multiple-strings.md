@@ -17,7 +17,6 @@ ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
 The following example uses concatenation to split a long string literal into smaller strings in order to improve readability in the source code. These parts are concatenated into a single string at compile time. There is no run-time performance cost regardless of the number of strings involved.  
   
  [!code-csharp-interactive[Combining strings at compile time](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#1)]  
-  
 
 To concatenate string variables, you can use the `+` or `+=` operators, [string interpolation](../language-reference/tokens/interpolated.md) or the <xref:System.String.Format%2A?displayProperty=nameWithType>, <xref:System.String.Concat%2A?displayProperty=nameWithType>, <xref:System.String.Join%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.Append%2A?displayProperty=nameWithType> methods. The `+` operator is easy to use and makes for intuitive code. Even if you use several `+` operators in one statement, the string content is copied only once. The following code shows examples of using the `+` and `+=` operators to concatenate strings:
 
@@ -28,7 +27,7 @@ In some expressions, it's easier to concatenate strings using string interpolati
 [!code-csharp-interactive[building strings using string interpolation](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#3)]  
   
 > [!NOTE]
->  In string concatenation operations, the C# compiler treats a null string the same as an empty string.
+> In string concatenation operations, the C# compiler treats a null string the same as an empty string.
 
 Other method to concatenate strings is <xref:System.String.Format%2A?displayProperty=nameWithType>. This method works well when you are building a string from a small number of component strings.
 
@@ -43,7 +42,7 @@ Another option to join strings from a collection is to use <xref:System.String.C
 [!code-csharp-interactive[concatenation of string collection](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#5)]
 
 At last, you can use [LINQ](../programming-guide/concepts/linq/index.md)
-and the <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType> method to join strings from a collection. This method combines 
+and the <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType> method to join strings from a collection. This method combines
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example
 combines an array of words by adding a space between each word in the array:
@@ -52,8 +51,9 @@ combines an array of words by adding a space between each word in the array:
 
 You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip).
 
-## See Also  
- <xref:System.String>  
- <xref:System.Text.StringBuilder>  
- [C# Programming Guide](../programming-guide/index.md)  
- [Strings](../programming-guide/strings/index.md)
+## See Also
+
+- <xref:System.String>  
+- <xref:System.Text.StringBuilder>  
+- [C# Programming Guide](../programming-guide/index.md)  
+- [Strings](../programming-guide/strings/index.md)

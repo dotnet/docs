@@ -1,5 +1,6 @@
 ---
-title: "How to: Declare, Instantiate, and Use a Delegate (C# Programming Guide)"
+title: "How to: Declare, Instantiate, and Use a Delegate - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"
@@ -65,7 +66,8 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
      A delegate can be either called synchronously, as in this example, or asynchronously by using `BeginInvoke` and `EndInvoke` methods.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)

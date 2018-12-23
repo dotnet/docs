@@ -1,5 +1,7 @@
 ---
-title: "checked keyword (C# Reference)"
+title: "checked keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "checked_CSharpKeyword"
@@ -36,8 +38,8 @@ This sample shows how to use `checked` to enable overflow checking at run time.
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
-[unchecked](../../../csharp/language-reference/keywords/unchecked.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)  
+- [unchecked](../../../csharp/language-reference/keywords/unchecked.md)

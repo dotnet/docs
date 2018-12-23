@@ -5,12 +5,9 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0da481a9-b414-4230-beb0-e3ceba882fe5
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # How to: Override a Global Proxy Selection
-This example sends a **WebRequest** to www.contoso.com that overrides the global proxy selection with a proxy server named `alternateproxy` on port 80.  
+This example sends a **WebRequest** to `www.contoso.com` that overrides the global proxy selection with a proxy server named `alternateproxy` on port 80.  
   
 ## Example  
   
@@ -27,7 +24,7 @@ req.Proxy = New WebProxy("http://alternateproxy:80/")
 ## Compiling the Code  
  This example requires:  
   
--   References to the **System.Net** namespace.  
+-   A [`using` directive](~/docs/csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
   
 ## See Also  
  [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  

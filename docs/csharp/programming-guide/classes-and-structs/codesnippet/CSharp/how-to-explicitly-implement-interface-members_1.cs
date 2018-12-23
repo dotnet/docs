@@ -31,7 +31,7 @@ class Box : IDimensions
         Box box1 = new Box(30.0f, 20.0f);
 
         // Declare an interface instance dimensions:
-        IDimensions dimensions = (IDimensions)box1;
+        IDimensions dimensions = box1;
 
         // The following commented lines would produce compilation 
         // errors because they try to access an explicitly implemented

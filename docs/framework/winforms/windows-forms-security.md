@@ -27,10 +27,10 @@ Windows Forms features a security model that is code-based (security levels are 
  Describes performing window manipulation, using the Clipboard, and making calls to unmanaged code in a semi-trusted environment.  
   
 ## Related Sections  
- [NIB: Default Security Policy](http://msdn.microsoft.com/library/2c086873-0894-4f4d-8f7e-47427c1a3b55)  
+ [NIB: Default Security Policy](https://msdn.microsoft.com/library/2c086873-0894-4f4d-8f7e-47427c1a3b55)  
  Lists the default permissions granted in the Full Trust, Local Intranet, and Internet permission sets.  
   
- [NIB: General Security Policy Administration](http://msdn.microsoft.com/library/5121fe35-f0e3-402c-94ab-4f35b0a87b4b)  
+ [NIB: General Security Policy Administration](https://msdn.microsoft.com/library/5121fe35-f0e3-402c-94ab-4f35b0a87b4b)  
  Gives information about the administering the .NET Framework security policy and elevating permissions.  
   
  [Dangerous Permissions and Policy Administration](../../../docs/framework/misc/dangerous-permissions-and-policy-administration.md)  
@@ -39,7 +39,7 @@ Windows Forms features a security model that is code-based (security levels are 
  [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)  
  Links to topics that explain the best practices for securely writing code against the .NET Framework.  
   
- [NIB: Requesting Permissions](http://msdn.microsoft.com/library/0447c49d-8cba-45e4-862c-ff0b59bebdc2)  
+ [NIB: Requesting Permissions](https://msdn.microsoft.com/library/0447c49d-8cba-45e4-862c-ff0b59bebdc2)  
  Discusses the use of attributes to let the runtime know what permissions your code needs to run.  
   
  [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md)  
@@ -48,8 +48,8 @@ Windows Forms features a security model that is code-based (security levels are 
  [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)  
  Discusses the basics of working with the .NET Framework run time security policy.  
   
- [NIB: Determining When to Modify Security Policy](http://msdn.microsoft.com/library/af749b17-e461-409d-84b9-a3d44789db16)  
+ [NIB: Determining When to Modify Security Policy](https://msdn.microsoft.com/library/af749b17-e461-409d-84b9-a3d44789db16)  
  Explains how to determine when your applications need to diverge from the default security policy.  
   
- [NIB: Deploying Security Policy](http://msdn.microsoft.com/library/f936c1e5-033b-4bd9-a3bd-a39ba733a681)  
+ [NIB: Deploying Security Policy](https://msdn.microsoft.com/library/f936c1e5-033b-4bd9-a3bd-a39ba733a681)  
  Discusses the best manner for deploying security policy changes.

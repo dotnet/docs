@@ -30,7 +30,7 @@ The new compiler options are:
 
 The remainder of this article provides details and links to learn more about each of the improvements.
 
-## Enabling more performant safe code
+## Enabling more efficient safe code
 
 You should be able to write C# code safely that performs as well as unsafe code. Safe code avoids classes of errors, such as buffer overruns, stray pointers, and other memory access errors. These new features expand the capabilities of verifiable safe code. Strive to write more of your code using safe constructs. These features make that easier.
 
@@ -76,7 +76,7 @@ class C
 }
 ```
 
-Fore more information, see the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
+For more information, see the article on the [`fixed` statement](../language-reference/keywords/fixed-statement.md).
 
 ### `ref` local variables may be reassigned
 
@@ -122,13 +122,15 @@ You can also use the new `unmanaged` constraint, to specify that a type paramete
 
 For more information, see the articles on [`where` generic constraints](../language-reference/keywords/where-generic-type-constraint.md) and [constraints on type parameters](../programming-guide/generics/constraints-on-type-parameters.md).
 
+Adding these constraints to existing types is an [incompatible change](version-update-considerations.md#incompatible-changes). Closed generic types may no longer meet these new constraints.
+
 ## Make existing features better
 
 The second theme provides improvements to features in the language. These features improve productivity when writing C#.
 
 ### Tuples support `==` and `!=`
 
-The C# tuple types now support `==` and `!=`. Fore more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md).
+The C# tuple types now support `==` and `!=`. For more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md).
 
 ### Attach attributes to the backing fields for auto-implemented properties
 
@@ -172,7 +174,7 @@ public class B
 
 public class D : B
 {
-   public D(int i) : B(i, out var j)
+   public D(int i) : base(i, out var j)
    {
       Console.WriteLine($"The value of 'j' is {j}");
    }

@@ -15,7 +15,7 @@ This topic discusses how clients address services that read from queues and how 
   
  Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
   
- For more information about MSMQ path and format names, see [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
+ For more information about MSMQ path and format names, see [About Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94837).  
   
 ## NetMsmqBinding and Service Addressing  
  When addressing a message to a service, the scheme in the URI is chosen based on the transport used for communication. Each transport in WCF has a unique scheme. The scheme must reflect the nature of transport used for communication. For example, net.tcp, net.pipe, HTTP, and so on.  
@@ -40,7 +40,7 @@ This topic discusses how clients address services that read from queues and how 
   
  The queue address is used as the Listen URI by the Listener to read messages from. In other words, the queue address is equivalent to the listen port of TCP socket.  
   
- An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md) and [Message Queuing Integration Binding Samples](http://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a).  
+ An endpoint that reads from a queue must specify the address of the queue using the same scheme specified previously when opening the ServiceHost. For examples, see [Net MSMQ Binding](../../../../docs/framework/wcf/samples/net-msmq-binding.md) and [Message Queuing Integration Binding Samples](https://msdn.microsoft.com/library/997d11cb-f2c5-4ba0-9209-92843d4d0e1a).  
   
 ### Multiple Contracts in a Queue  
  Messages in a queue can implement different contracts. In this case, it is essential that one of the following is true to successfully read and process all messages:  
@@ -90,7 +90,7 @@ This topic discusses how clients address services that read from queues and how 
   
  msmq.formatname:\<*MSMQ-format-name*>>  
   
- The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
+ The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94837).  
   
  Note that you can only use direct format names, and public and private format names (requires Active Directory integration) when receiving messages from a queue using `MsmqIntegrationBinding`. However, it is advised that you use direct format names. For example, on [!INCLUDE[wv](../../../../includes/wv-md.md)], using any other format name causes an error because the system attempts to open a subqueue, which can only be opened with direct format names.  
   

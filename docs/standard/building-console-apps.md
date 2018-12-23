@@ -26,6 +26,7 @@ Applications in the .NET Framework can use the <xref:System.Console?displayPrope
   
  The **System.Console** class has methods that can read individual characters or entire lines from the console. Other methods convert data and format strings, and then write the formatted strings to the console. For more information on formatting strings, see [Formatting Types](../../docs/standard/base-types/formatting-types.md).  
   
-## See Also  
- <xref:System.Console?displayProperty=nameWithType>  
- [Formatting Types](../../docs/standard/base-types/formatting-types.md)
+## See also
+
+- <xref:System.Console?displayProperty=nameWithType>  
+- [Formatting Types](../../docs/standard/base-types/formatting-types.md)

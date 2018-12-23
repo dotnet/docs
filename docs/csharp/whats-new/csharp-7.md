@@ -17,7 +17,7 @@ C# 7.0 adds a number of new features to the C# language:
 * [Pattern Matching](#pattern-matching)
     - You can create branching logic based on arbitrary types and values of the members of those types.
 * [`ref` locals and returns](#ref-locals-and-returns)
-    - Method arguments and local variables can be references to other storage.
+    - Method local variables and return values can be references to other storage.
 * [Local Functions](#local-functions)
     - You can nest functions inside other functions to limit their scope and visibility.
 * [More expression-bodied members](#more-expression-bodied-members)
@@ -209,7 +209,7 @@ The following example defines a `QueryCityDataForYears` method that returns a 6-
 [!code-csharp[Tuple-discard](../../../samples/snippets/csharp/programming-guide/deconstructing-tuples/discard-tuple1.cs)]
 
 For more information, see [Discards](../discards.md).
- 
+
 ## Pattern matching
 
 *Pattern matching* is a feature that allows you to implement method dispatch on
@@ -402,7 +402,11 @@ the `ref` locals and returns:
 
 The addition of ref locals and ref returns enable algorithms that are more
 efficient by avoiding copying values, or performing dereferencing operations
-multiple times. 
+multiple times.
+
+Adding `ref` to the return value is a [source compatible change](version-update-considerations.md#source-compatible-changes). Existing code compiles, but the ref return value is copied when assigned. Callers must update the storage for the return value to a `ref` local variable to store the return as a reference.
+
+For more information, see the [ref keyword](../language-reference/keywords/ref.md) article.
 
 ## Local functions
 
@@ -496,6 +500,8 @@ an important milestone for the C# language: These features
 were implemented by community members working on the open-source
 [Roslyn](https://github.com/dotnet/Roslyn) project.
 
+Changing a method to an expression bodied member is a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
+
 ## Throw expressions
 
 In C#, `throw` has always been a statement. Because `throw` is a statement,
@@ -557,9 +563,11 @@ with a `Task` parameter so that you can construct a `ValueTask` from the
 return value of any existing async method:
 
 [!code-csharp[AsyncOptimizedValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#31_AsyncOptimizedValueTask "Return async result or cached value")]
- 
+
 As with all performance recommendations, you should benchmark
 both versions before making large scale changes to your code.
+
+When the return value is the target of an `await` statement, changing an API from a <xref:System.Threading.Tasks.Task%601> to a <xref:System.Threading.Tasks.ValueTask%601> is a [source compatible change](version-update-considerations.md#source-compatible-changes). In general, changing to `ValueTask` is not.
 
 ## Numeric literal syntax improvements
 

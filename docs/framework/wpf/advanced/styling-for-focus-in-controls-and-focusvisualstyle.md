@@ -25,7 +25,7 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
   
  In the themes, the default focus visual style is generally very simple. The following is a rough approximation:  
   
-```  
+```xaml  
 <Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}">  
   <Setter Property="Control.Template">  
     <Setter.Value>  
@@ -46,7 +46,7 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
   
  Setting <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A> on individual control styles that are not part of a theme is not the intended usage of focus visual styles. This is because an inconsistent visual behavior between controls can lead to a confusing user experience regarding keyboard focus. If you are intending control-specific behaviors for keyboard focus that are deliberately not coherent across a theme, a much better approach is to use triggers in styles for individual input state properties, such as <xref:System.Windows.UIElement.IsFocused%2A> or <xref:System.Windows.UIElement.IsKeyboardFocused%2A>.  
   
- Focus visual styles act exclusively for keyboard focus. As such, focus visual styles are a type of accessibility feature. If you want UI changes for any type of focus, whether via mouse, keyboard, or programmatically, then you should not use focus visual styles, and should instead use setters and triggers in styles or templates that are working from the value of general focus properties such as `IsFocused` or `IsFocusWithin`.  
+ Focus visual styles act exclusively for keyboard focus. As such, focus visual styles are a type of accessibility feature. If you want UI changes for any type of focus, whether via mouse, keyboard, or programmatically, then you should not use focus visual styles, and should instead use setters and triggers in styles or templates that are working from the value of general focus properties such as <xref:System.Windows.UIElement.IsFocused%2A> or <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A>.  
   
 <a name="How"></a>   
 ## How to Create a Focus Visual Style  

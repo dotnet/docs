@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 65cd2c03-8782-474e-b958-cbe43eeb902c
 ---
 # Drag-and-Drop Functionality in Windows Forms
-Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.  Also see [Drag-and-Drop Operations and Clipboard Support](http://msdn.microsoft.com/library/fe5ebfwe\(v=vs.110\)).  
+Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.  Also see [Drag-and-Drop Operations and Clipboard Support](https://msdn.microsoft.com/library/fe5ebfwe\(v=vs.110\)).  
   
 ## Performing Drag-and-Drop Operations  
  To perform a drag-and-drop operation, use the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method of the <xref:System.Windows.Forms.Control> class. For more information about how a drag-and-drop operation is performed, see <xref:System.Windows.Forms.Control.DoDragDrop%2A>. To get the rectangle that the mouse pointer must be dragged over before a drag-and-drop operation begins, use the <xref:System.Windows.Forms.SystemInformation.DragSize%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  

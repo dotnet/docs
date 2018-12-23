@@ -1,5 +1,5 @@
 ---
-title: Lazy Computations (F#)
+title: Lazy Computations
 description: Learn how F# lazy computations can improve the performance of your apps and libraries.
 ms.date: 05/16/2016
 ---
@@ -27,8 +27,7 @@ The following code illustrates the use of lazy computation and the use of `Force
 
 Lazy evaluation, but not the `Lazy` type, is also used for sequences. For more information, see [Sequences](sequences.md).
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
-
-[LazyExtensions module](https://msdn.microsoft.com/library/86671f40-84a0-402a-867d-ae596218d948)
+- [F# Language Reference](index.md)
+- [LazyExtensions module](https://msdn.microsoft.com/library/86671f40-84a0-402a-867d-ae596218d948)

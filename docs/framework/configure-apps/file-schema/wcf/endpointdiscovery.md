@@ -36,7 +36,7 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|enabled|A Boolean value that that specifies whether discoverability is enabled on this endpoint. The default is `false`.|  
+|enabled|A Boolean value that specifies whether discoverability is enabled on this endpoint. The default is `false`.|  
   
 ### Child Elements  
   

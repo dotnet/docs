@@ -1,5 +1,7 @@
 ---
-title: "default (C# Reference)"
+title: "default - C# Reference"
+ms.custom: seodec18
+
 ms.date: 08/04/2017
 f1_keywords: 
   - "default"
@@ -19,6 +21,6 @@ The `default` keyword can be used in the `switch` statement or in a default valu
 
 ## See also
 
- [C# Reference](../index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Keywords](index.md)  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  

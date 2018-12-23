@@ -6,7 +6,7 @@ ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 # &lt;security&gt; of &lt;netHttpBinding
 Defines the security capabilities of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<bindings>  
 \<netHttpBinding>  
 \<binding>  
@@ -33,7 +33,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <!--zz <xref:System.ServiceModel.NetHttpSecurityMode> -->`System.ServiceModel.NetHttpSecurityMode`.|
+|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <xref:System.ServiceModel.BasicHttpSecurityMode>.|
   
 ## mode Attribute  
   
@@ -68,5 +68,5 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
  [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

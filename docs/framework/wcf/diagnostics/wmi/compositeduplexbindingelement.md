@@ -8,7 +8,7 @@ CompositeDuplexBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class CompositeDuplexBindingElement : BindingElement  
 {  
   string ClientBaseAddress;  

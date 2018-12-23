@@ -76,9 +76,13 @@ builder.QuoteSuffix = "]";
   
  The following code example writes to the console the update command that was automatically generated.  
   
-```  
+```vb
 Console.WriteLine(builder.GetUpdateCommand().CommandText)  
-```  
+```
+
+```csharp
+Console.WriteLine(builder.GetUpdateCommand().CommandText);
+```
   
  The following example recreates the `Customers` table in the `custDS` dataset. The **RefreshSchema** method is called to refresh the automatically generated commands with this new column information.  
   
@@ -106,4 +110,4 @@ adapter.Fill(custDS, "Customers");
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [Executing a Command](../../../../docs/framework/data/adonet/executing-a-command.md)  
  [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

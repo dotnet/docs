@@ -3,7 +3,6 @@ title: "WIF Guidelines"
 ms.date: "03/30/2017"
 ms.assetid: 2fc76a0b-e33c-44c1-8f32-44934eb03dd4
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WIF Guidelines
 -   [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)  

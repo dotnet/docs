@@ -1,5 +1,6 @@
 ---
-title: "How to: Implement Interface Events (C# Programming Guide)"
+title: "How to: Implement Interface Events - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interfaces [C#], event implementation in classes"
@@ -51,9 +52,10 @@ By providing your own accessors, you can specify whether the two events are repr
   
  [!code-csharp[WrapTwoInterfaceEvents](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-implement-interface-events_1.cs#everything)]
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Events](../../../csharp/programming-guide/events/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Explicit Interface Implementation](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md)  
- [How to: Raise Base Class Events in Derived Classes](../../../csharp/programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Explicit Interface Implementation](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md)  
+- [How to: Raise Base Class Events in Derived Classes](../../../csharp/programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md)

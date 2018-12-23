@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], assigning"
   - "Long data type"
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Long data type (Visual Basic)
 
@@ -56,7 +54,7 @@ Dim number As Long = &H_0FAC_0326_1489_D68C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `L` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Long` data type, as the following example shows.
+Numeric literals can also include the `L` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `Long` data type, as the following example shows.
 
 ```vb
 Dim number = &H_0FAC_0326_1489_D68CL
@@ -75,7 +73,7 @@ Dim number = &H_0FAC_0326_1489_D68CL
 ## See also
 
 <xref:System.Int64>
-[Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)   
+[Data Types](../../../visual-basic/language-reference/data-types/index.md)   
 [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
 [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)   
 [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   

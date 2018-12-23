@@ -4,13 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: ae12537c-455e-42b1-82f4-cea4c46c023e
 ---
 # Imperative Code-Based Validation
+
 Imperative code-based validation provides a simple way for an activity to provide validation about itself, and is available for activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code that determines any validation errors or warnings is added to the activity.  
   
-## Using Code-Based Validation  
- Code-based validation is supported by activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code can be placed in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override, and validation errors or warnings can be added to the metadata argument. In the following example, taken from the [Basic Validation](../../../docs/framework/windows-workflow-foundation/samples/basic-validation.md) sample, if the `Cost` is greater than the `Price`, a validation error is added to the metadata.  
+## Using Code-Based Validation
+
+Code-based validation is supported by activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code can be placed in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override, and validation errors or warnings can be added to the metadata argument. In the following example, if the `Cost` is greater than the `Price`, a validation error is added to the metadata.  
   
 > [!NOTE]
->  Note that `Cost` and `Price` are not arguments to the activity, but are properties that are set at design time. That is why their values can be validated in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. The value of the data flowing through an argument cannot be validated at design time because the data does not flow until run time, but activity arguments can be validated to ensure that they are bound by using the `RequiredArgument` attribute and overload groups. This example code sees the `RequiredArgument` attribute for the `Description` argument, and if it is not bound then a validation error is generated. Required arguments are covered in [Required Arguments and Overload Groups](../../../docs/framework/windows-workflow-foundation/required-arguments-and-overload-groups.md).  
+> Note that `Cost` and `Price` are not arguments to the activity, but are properties that are set at design time. That is why their values can be validated in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override. The value of the data flowing through an argument cannot be validated at design time because the data does not flow until run time, but activity arguments can be validated to ensure that they are bound by using the `RequiredArgument` attribute and overload groups. This example code sees the `RequiredArgument` attribute for the `Description` argument, and if it is not bound then a validation error is generated. Required arguments are covered in [Required Arguments and Overload Groups](../../../docs/framework/windows-workflow-foundation/required-arguments-and-overload-groups.md).  
   
 ```csharp  
 public sealed class CreateProduct : CodeActivity  

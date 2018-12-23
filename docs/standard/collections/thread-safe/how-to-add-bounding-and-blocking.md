@@ -22,5 +22,6 @@ This example shows how to add bounding and blocking functionality to a custom co
   
  By default, the storage for a <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType> is <xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>.  
   
-## See Also  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+## See also
+
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

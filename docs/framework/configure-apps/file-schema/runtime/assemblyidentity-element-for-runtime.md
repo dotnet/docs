@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
 Contains identifying information about the assembly.  
@@ -47,10 +46,10 @@ culture="assembly culture"/>
   
 |Value|Description|  
 |-----------|-----------------|  
-|`amd64`|A 64-bit AMD processor only.|  
-|`ia64`|A 64-bit Intel processor only.|  
-|`msil`|Neutral with respect to processor and bits-per-word|  
-|`x86`|A 32-bit Intel processor, either native or in the Windows on Windows (WOW) environment on a 64-bit platform.|  
+|`amd64`|AMD x86-64 architecture only.|  
+|`ia64`|Intel Itanium architecture only.|  
+|`msil`|Neutral with respect to processor and bits-per-word.|  
+|`x86`|A 32-bit x86 processor, either native or in the Windows on Windows (WOW) environment on a 64-bit platform.|  
   
 ### Child Elements  
  None.  
@@ -117,6 +116,6 @@ culture="assembly culture"/>
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

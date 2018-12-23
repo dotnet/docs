@@ -61,7 +61,6 @@ As a final note, even at the risk of being repetitive about this concept, you sh
 
 In any case, the rest of this present guidance focuses most of all on "no microservices-based apps" because this guidance is mainly targeting the modernization of existing apps that usually have monolithic or N-Tier architectures.
 
-
 >[!div class="step-by-step"]
-[Previous](microsoft-technologies-in-cloud-optimized-applications.md)
-[Next](deploy-existing-net-apps-as-windows-containers.md)
+>[Previous](microsoft-technologies-in-cloud-optimized-applications.md)
+>[Next](deploy-existing-net-apps-as-windows-containers.md)

@@ -55,7 +55,7 @@ public string GetCallerIdentity()
   
  The address specified uses the https:// scheme. The binding configuration sets the security mode to `TransportWithMessageCredential`. The same security mode must be specified in the service's Web.config file.  
   
- Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as https://localhost/servicemodelsamples/service.svc, from your browser. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
+ Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as  `https://localhost/servicemodelsamples/service.svc `, from your browser. To allow the WCF client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
 
 ```csharp
 // WARNING: This code is only needed for test certificates such as those created by makecert. It is   

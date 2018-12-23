@@ -2,8 +2,6 @@
 title: "&lt;security&gt; of &lt;netTcpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;security&gt; of &lt;netTcpBinding&gt;
 Defines the security settings for a binding.  
@@ -73,5 +71,5 @@ Defines the security settings for a binding.
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

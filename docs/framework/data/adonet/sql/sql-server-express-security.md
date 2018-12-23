@@ -25,13 +25,13 @@ Microsoft SQL Server Express Edition (SQL Server Express) is based on Microsoft 
   
 |||  
 |-|-|  
-|[SQL Server Books Online](http://msdn.microsoft.com/library/bb543165.aspx)|Contains documentation for SQL Server Express.|  
-|[Connecting to SQL Server Express](http://msdn.microsoft.com/library/ms165679.aspx) in SQL Server Books Online|Describes how to use SQL Server Express Edition on a network.|  
-|[Microsoft SQL Server 2005 Express Edition Books Online](http://msdn.microsoft.com/library/ms165706.aspx)|Complete documentation for SQL Server 2005 Express Edition.|  
-|[User Instances for Non-Administrators](http://msdn.microsoft.com/library/ms143684.aspx) in SQL Server Books Online|Describes how to create and deploy user instances.|  
+|[SQL Server Books Online](https://msdn.microsoft.com/library/bb543165.aspx)|Contains documentation for SQL Server Express.|  
+|[Connecting to SQL Server Express](https://msdn.microsoft.com/library/ms165679.aspx) in SQL Server Books Online|Describes how to use SQL Server Express Edition on a network.|  
+|[Microsoft SQL Server 2005 Express Edition Books Online](https://msdn.microsoft.com/library/ms165706.aspx)|Complete documentation for SQL Server 2005 Express Edition.|  
+|[User Instances for Non-Administrators](https://msdn.microsoft.com/library/ms143684.aspx) in SQL Server Books Online|Describes how to create and deploy user instances.|  
 |[SQL Server Express User Instances](../../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md)|Describes user instance capabilities in an ADO.NET application. Provides information about how to enable a user instance, connect to a user instance using a <xref:System.Data.SqlClient.SqlConnection>, user instance lifetime, and user instance scenarios.|  
   
 ## See Also  
  [SQL Server Security](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
  [SQL Server Express User Instances](../../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

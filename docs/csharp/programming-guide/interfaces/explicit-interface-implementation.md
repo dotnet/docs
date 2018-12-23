@@ -1,5 +1,6 @@
 ---
-title: "Explicit Interface Implementation (C# Programming Guide)"
+title: "Explicit Interface Implementation - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "explicit interfaces [C#]"
@@ -27,8 +28,9 @@ If a [class](../../../csharp/language-reference/keywords/class.md) implements tw
   
  [!code-csharp[csProgGuideInheritance#43](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/explicit-interface-implementation_5.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

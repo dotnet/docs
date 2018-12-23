@@ -1,5 +1,7 @@
 ---
-title: "in parameter modifier (C# Reference)"
+title: "in parameter modifier - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/06/2018
 helpviewer_keywords: 
   - "parameters [C#], in"
@@ -8,7 +10,7 @@ helpviewer_keywords:
 
 # in parameter modifier (C# Reference)
 
-The `in` keyword causes arguments to be passed by reference. It is like the [ref](ref.md) or [out](out-parameter-modifier.md) keywords, except that `in` arguments cannot be modified by the called method. Whereas `ref` arguments may be modified,  `out` arguments must be modified by the caller, and those modifications are observable in the calling context.
+The `in` keyword causes arguments to be passed by reference. It is like the [ref](ref.md) or [out](out-parameter-modifier.md) keywords, except that `in` arguments cannot be modified by the called method. Whereas `ref` arguments may be modified,  `out` arguments must be modified by the called method, and those modifications are observable in the calling context.
 
 [!code-csharp-interactive[cs-in-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/InParameterModifier.cs#1)]  
 
@@ -113,9 +115,10 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Reference](../index.md)  
- [C# Programming Guide](../../programming-guide/index.md)  
- [C# Keywords](index.md)  
- [Method Parameters](method-parameters.md)
- [Reference Semantics with Value Types](../../reference-semantics-with-value-types.md)
+## See Also
+
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [Method Parameters](method-parameters.md)  
+- [Write safe efficient code](../../write-safe-efficient-code.md)  

@@ -30,10 +30,10 @@ This section provides reference information for various aspects of the Visual Ba
  [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md)  
  Documents the constants and enumerations available in Visual Basic.  
   
- [Data Types](../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../visual-basic/language-reference/data-types/index.md)  
  Documents the data types available in Visual Basic.  
   
- [Directives](../../visual-basic/language-reference/directives/directives.md)  
+ [Directives](../../visual-basic/language-reference/directives/index.md)  
  Documents the compiler directives available in Visual Basic.  
   
  [Functions](../../visual-basic/language-reference/functions/index.md)  
@@ -57,16 +57,16 @@ This section provides reference information for various aspects of the Visual Ba
  [Properties](../../visual-basic/language-reference/properties.md)  
  Documents the properties available in Visual Basic.  
   
- [Queries](../../visual-basic/language-reference/queries/queries.md)  
+ [Queries](../../visual-basic/language-reference/queries/index.md)  
  Provides reference information about using [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
   
  [Statements](../../visual-basic/language-reference/statements/index.md)  
  Documents the declaration and executable statements available in Visual Basic.  
   
- [XML Comment Tags](../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)  
+ [XML Comment Tags](../../visual-basic/language-reference/xmldoc/index.md)  
  Describes the documentation comments for which IntelliSense is provided in the Visual Basic Code Editor.  
   
- [XML Axis Properties](../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../visual-basic/language-reference/xml-axis/index.md)  
  Provides links to information about using XML axis properties to access XML directly in your code.  
   
  [XML Literals](../../visual-basic/language-reference/xml-literals/index.md)  

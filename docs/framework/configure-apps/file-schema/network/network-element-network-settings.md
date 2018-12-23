@@ -8,9 +8,6 @@ helpviewer_keywords:
   - "<network> element"
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # &lt;network&gt; Element (Network Settings)
 Configures the network options for an external Simple Mail Transport Protocol (SMTP) server.  
@@ -107,7 +104,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

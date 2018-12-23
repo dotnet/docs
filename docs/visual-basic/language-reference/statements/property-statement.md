@@ -1,5 +1,5 @@
 ---
-title: "Property Statement"
+title: "Property Statement (Visual Basic)"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.PropertySet"
@@ -110,7 +110,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
   
 -   `returntype`  
   
-     Required if `Option``Strict` is `On`. Data type of the value returned by this property.  
+     Required if `Option Strict` is `On`. Data type of the value returned by this property.  
   
 -   `Implements`  
   

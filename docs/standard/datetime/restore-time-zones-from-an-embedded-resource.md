@@ -54,6 +54,6 @@ This example requires:
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
-[How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
+* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+* [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
+* [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)

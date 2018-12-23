@@ -1,9 +1,9 @@
 ---
-title: "Registry key &#39;&lt;keyname&gt;&#39; could not be found"
+title: "Registry key '&lt;keyname&gt;' could not be found"
 ms.date: 07/20/2015
 ms.assetid: ca4eb74f-8303-48fc-9ea8-d792fa4c810b
 ---
-# Registry key &#39;&lt;keyname&gt;&#39; could not be found
+# Registry key '&lt;keyname&gt;' could not be found
 A registry key cannot be found.  
   
 ## To correct this error  
@@ -14,4 +14,4 @@ A registry key cannot be found.
   
 ## See Also  
  [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)  
- [Registry Access Changes in Visual Basic .NET](http://msdn.microsoft.com/library/b58f7687-f4db-448a-a865-07f62fd16fb2)
+ [Registry Access Changes in Visual Basic .NET](https://msdn.microsoft.com/library/b58f7687-f4db-448a-a865-07f62fd16fb2)

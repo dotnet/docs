@@ -1,6 +1,6 @@
             string hexValues = "48 65 6C 6C 6F 20 57 6F 72 6C 64 21";
             string[] hexValuesSplit = hexValues.Split(' ');
-            foreach (String hex in hexValuesSplit)
+            foreach (string hex in hexValuesSplit)
             {
                 // Convert the number expressed in base-16 to an integer.
                 int value = Convert.ToInt32(hex, 16);

@@ -52,13 +52,13 @@ This article helps you get started deploying the .NET Framework with your applic
   
 -   Deploying the .NET Framework (for OEMs and administrators):  
   
-    -   [Windows Assessment and Deployment Kit (ADK)](http://go.microsoft.com/fwlink/p/?LinkId=254976)  
+    -   [Windows Assessment and Deployment Kit (ADK)](https://go.microsoft.com/fwlink/p/?LinkId=254976)  
   
     -   [Administrator's guide](../../../docs/framework/deployment/guide-for-administrators.md)  
   
  **Servicing**  
   
--   For general information, see the [.NET Framework blog](http://go.microsoft.com/fwlink/p/?LinkId=254977)  
+-   For general information, see the [.NET Framework blog](https://go.microsoft.com/fwlink/p/?LinkId=254977)  
   
 -   [Detecting versions](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)  
   
@@ -161,4 +161,4 @@ This article helps you get started deploying the .NET Framework with your applic
 |[How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)|Describes how to silently launch and track the .NET Framework setup process while showing your own view of the setup progress.|  
   
 ## See Also  
- [Development Guide](../../../docs/framework/development-guide.md)
+- [Development Guide](../../../docs/framework/development-guide.md)

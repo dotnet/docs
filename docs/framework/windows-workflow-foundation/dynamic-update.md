@@ -18,7 +18,7 @@ Dynamic update provides a mechanism for workflow application developers to updat
 4.  [Apply the update map to the desired persisted workflow instances](../../../docs/framework/windows-workflow-foundation/dynamic-update.md#Apply)  
   
 > [!NOTE]
->  Note that steps 1 through 3, which cover the creation of the update map, may be performed independently of applying the update. A common scenario that that the workflow developer will create the update map offline, and then an administrator will apply the update at a later time.  
+>  Note that steps 1 through 3, which cover the creation of the update map, may be performed independently of applying the update. A common scenario that the workflow developer will create the update map offline, and then an administrator will apply the update at a later time.  
   
  This topic provides an overview of the dynamic update process of adding a new activity to a persisted instance of a compiled Xaml workflow.  
   
@@ -51,7 +51,7 @@ DynamicUpdateServices.PrepareForUpdate(ab);
 ```  
   
 > [!NOTE]
->  To download the sample code that accompanies this topic, see [Dynamic Update sample code](http://go.microsoft.com/fwlink/?LinkId=227905).  
+>  To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).  
   
 ###  <a name="Update"></a> Update the workflow definition to reflect the desired changes  
  Once the workflow definition has been prepared for updating, the desired changes can be made. You can add or remove activities, add, move or delete public variables, add or remove arguments, and make changes to the signature of activity delegates. You cannot remove a running activity or change the signature of a running delegate. These changes may be made using code, or in a re-hosted workflow designer. In the following example, a custom `VerifyAppraisal` activity is added to the Sequence that makes up the body of the `MortgageWorkflow` from the previous example.  
@@ -185,4 +185,4 @@ wfApp.Load(InstanceId);
 ```  
   
 > [!NOTE]
->  To download the sample code that accompanies this topic, see [Dynamic Update sample code](http://go.microsoft.com/fwlink/?LinkId=227905).
+>  To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).

@@ -19,7 +19,7 @@ The `FlowLayoutPanel` control arranges its contents in a horizontal or vertical 
  [How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)  
  Explains how to use the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties to anchor and dock child controls in a <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
- Also see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](http://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\)).  
+ Also see [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](https://msdn.microsoft.com/library/z9w7ek2f\(v=vs.110\)).  
   
 ## Reference  
  <xref:System.Windows.Forms.FlowLayoutPanel>  

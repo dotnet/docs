@@ -1,5 +1,6 @@
 ---
-title: "Delegates with Named vs. Anonymous Methods (C# Programming Guide)"
+title: "Delegates with Named vs. Anonymous Methods - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"
@@ -30,9 +31,10 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can be ass
   
  [!code-csharp[csProgGuideDelegates#3](../../../csharp/programming-guide/delegates/codesnippet/CSharp/delegates-with-named-vs-anonymous-methods_3.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
- [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
- [Events](../../../csharp/programming-guide/events/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
+- [How to: Combine Delegates (Multicast Delegates)](../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)

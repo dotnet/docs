@@ -1,5 +1,6 @@
 ---
-title: "How to: Convert Between Hexadecimal Strings and Numeric Types (C# Programming Guide)"
+title: "How to: Convert Between Hexadecimal Strings and Numeric Types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "hexadecimal strings [C#], converting to numeric type"
@@ -37,7 +38,7 @@ These examples show you how to perform the following tasks:
  [!code-csharp[csProgGuideTypes#32](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_3.cs)]  
   
 ## Example  
- The following example shows how to convert a hexadecimal `string` to a [float](../../../csharp/language-reference/keywords/float.md) by using the <xref:System.BitConverter?displayProperty=nameWithType> class and the <xref:System.Int32.Parse%2A?displayProperty=nameWithType> method.  
+ The following example shows how to convert a hexadecimal `string` to a [float](../../../csharp/language-reference/keywords/float.md) by using the <xref:System.BitConverter?displayProperty=nameWithType> class and the <xref:System.UInt32.Parse%2A?displayProperty=nameWithType> method.  
   
  [!code-csharp[csProgGuideTypes#39](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_4.cs)]  
   
@@ -46,7 +47,8 @@ These examples show you how to perform the following tasks:
   
  [!code-csharp[csProgGuideTypes#38](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_5.cs)]  
   
-## See Also  
- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)  
- [Types](../../../csharp/programming-guide/types/index.md)  
- [How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
+## See Also
+
+- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)  
+- [Types](../../../csharp/programming-guide/types/index.md)  
+- [How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

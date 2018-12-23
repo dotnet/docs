@@ -24,4 +24,4 @@ A query is basically a set of instructions for how to retrieve and organize data
 
 ## See also
 
-[Language Integrated Query (LINQ)](index.md)
+- [Language Integrated Query (LINQ)](index.md)

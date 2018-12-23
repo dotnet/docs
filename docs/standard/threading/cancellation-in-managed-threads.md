@@ -142,5 +142,6 @@ Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)]
   
  <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> are examples of classes that follows these guidelines. For more information, see [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md)and [How to: Cancel a PLINQ Query](../../../docs/standard/parallel-programming/how-to-cancel-a-plinq-query.md).  
   
-## See Also  
- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
+## See also
+
+- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)

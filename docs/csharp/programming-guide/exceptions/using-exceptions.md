@@ -1,5 +1,6 @@
 ---
-title: "Using Exceptions (C# Programming Guide)"
+title: "Using Exceptions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"
@@ -37,6 +38,7 @@ In C#, errors in the program at run time are propagated through the program by u
   
 -   If the start of the thread is reached, the thread is terminated.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)

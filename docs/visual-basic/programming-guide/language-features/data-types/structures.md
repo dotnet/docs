@@ -34,5 +34,5 @@ A *structure* is a generalization of the user-defined type (UDT) supported by pr
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  Introduces the Visual Basic data types and describes how to use them.  
   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  Lists the elementary data types supplied by Visual Basic.

@@ -57,26 +57,26 @@ This topic summarizes information about the `ToolStrip` control and the classes 
 ### Task Dialog Boxes  
  In Visual Studio, clicking the smart tag on a control in the designer displays a task list for convenient access to many frequently used commands.  
   
--   [MenuStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
+-   [MenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233645\(v=vs.110\))  
   
--   [ToolStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
+-   [ToolStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233648\(v=vs.110\))  
   
--   [ContextMenuStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233646\(v=vs.110\))  
+-   [ContextMenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233646\(v=vs.110\))  
   
--   [StatusStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233642\(v=vs.110\))  
+-   [StatusStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233642\(v=vs.110\))  
   
--   [ToolStripContainer Tasks Dialog Box](http://msdn.microsoft.com/library/ms233647\(v=vs.110\))  
+-   [ToolStripContainer Tasks Dialog Box](https://msdn.microsoft.com/library/ms233647\(v=vs.110\))  
   
 ### Items Collection Editors  
  In Visual Studio, when you click **Edit Items** on the task list or right-click the control and select **Edit Items** in the shortcut menu, the collection editor for the control is displayed. Collection editors let you add, remove, and reorder items that the control contains. You can also view and change the properties for the control and the control's items.  
   
--   [MenuStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
+-   [MenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233625\(v=vs.110\))  
   
--   [StatusStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233631\(v=vs.110\))  
+-   [StatusStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233631\(v=vs.110\))  
   
--   [ContextMenuStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233641\(v=vs.110\))  
+-   [ContextMenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233641\(v=vs.110\))  
   
--   [ToolStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
+-   [ToolStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233643\(v=vs.110\))  
   
 ## Hosting Controls  
  The <xref:System.Windows.Forms.ToolStripControlHost> class provides built-in wrappers for <xref:System.Windows.Forms.ToolStripComboBox>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> controls. You can also host any other existing or COM control in a <xref:System.Windows.Forms.ToolStripControlHost>.  

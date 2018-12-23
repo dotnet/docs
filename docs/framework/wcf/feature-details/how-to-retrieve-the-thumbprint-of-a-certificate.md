@@ -10,7 +10,7 @@ When writing a Windows Communication Foundation (WCF) application that uses an X
   
  If you are using a certificate for service authentication, it is important to note the value of the **Issued To** column (the first column in the console). When using Secure Sockets Layer (SSL) as a transport security, one of the first checks done is to compare the base address Uniform Resource Identifier (URI) of a service to the **Issued To** value. The values must match or the authentication process is halted.  
   
- You can also use the Makecert.exe tool from the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] SDK to create temporary certificates for use only during development. By default, however, such a certificate is not issued by a certification authority, and is unusable for production purposes. For more information, see [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md).  
+ You can also use the Powershell New-SelfSignedCertificate cmdlet to create temporary certificates for use only during development. By default, however, such a certificate is not issued by a certification authority and is unusable for production purposes. For more information, see [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md).  
   
 ### To retrieve a certificate's thumbprint  
   

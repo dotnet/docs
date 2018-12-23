@@ -19,7 +19,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
  ![Padding And Margin for Windows Forms Controls](../../../../docs/framework/winforms/controls/media/vs-winformpadmargin.gif "VS_WinFormPadMargin")  
   
- There is design-time support for this feature in Visual Studio.  Also see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](http://msdn.microsoft.com/library/3z3f9e8b\(v=vs.110\)).  
+ There is design-time support for this feature in Visual Studio.  Also see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](https://msdn.microsoft.com/library/3z3f9e8b\(v=vs.110\)).  
   
 ## See Also  
  <xref:System.Windows.Forms.Control.AutoSize%2A>  

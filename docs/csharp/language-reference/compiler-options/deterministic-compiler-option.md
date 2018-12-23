@@ -49,5 +49,6 @@ The compiler considers the following inputs for the purpose of determinism:
 When sources are publicly available, deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. It can also be useful in a continuous build system for determining whether build steps that are dependent on changes to a binary need to be executed. 
 
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

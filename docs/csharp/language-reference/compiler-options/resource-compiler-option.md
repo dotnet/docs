@@ -62,5 +62,6 @@ csc -resource:rf.resource in.cs
 ```  
   
 ## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

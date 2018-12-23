@@ -73,4 +73,4 @@ Microsoft .NET Framework provides a powerful environment for creating and displa
  <xref:System.Windows.Xps.Packaging.XpsDocument>  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [XML Paper Specification: Overview](http://go.microsoft.com/fwlink?LinkID=106246)
+ [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)

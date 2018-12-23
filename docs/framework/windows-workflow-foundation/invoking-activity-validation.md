@@ -146,12 +146,13 @@ catch (Exception ex)
 ```  
   
 > [!NOTE]
->  In this example, the root activity was declared as `Add` instead of `Activity` as in the previous example. This allows the `WorkflowInvoker.Invoke` method to return a single integer that represents the results of the `Add` activity instead of a dictionary of `out` arguments. The variable `wf` could also have been declared as `Activity<int>`.  
+> In this example, the root activity was declared as `Add` instead of `Activity` as in the previous example. This allows the `WorkflowInvoker.Invoke` method to return a single integer that represents the results of the `Add` activity instead of a dictionary of `out` arguments. The variable `wf` could also have been declared as `Activity<int>`.  
   
  When validating root arguments, it is the responsibility of the host application to ensure that all required arguments are passed when the workflow is invoked.  
   
-### Invoking Imperative Code-Based Validation  
- Imperative code-based validation provides a simple way for an activity to provide validation about itself, and is available for activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code that determines any validation errors or warnings is added to the activity. When validation is invoked on the activity, these warnings or errors are contained in the collection returned by the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. In the following example, taken from the [Basic Validation](../../../docs/framework/windows-workflow-foundation/samples/basic-validation.md) sample, a `CreateProduct` activity is defined. If the `Cost` is greater than the `Price`, a validation error is added to the metadata in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override.  
+### Invoking Imperative Code-Based Validation
+
+Imperative code-based validation provides a simple way for an activity to provide validation about itself, and is available for activities that derive from <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, and <xref:System.Activities.NativeActivity>. Validation code that determines any validation errors or warnings is added to the activity. When validation is invoked on the activity, these warnings or errors are contained in the collection returned by the call to <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A>. In the following example, a `CreateProduct` activity is defined. If the `Cost` is greater than the `Price`, a validation error is added to the metadata in the <xref:System.Activities.CodeActivity.CacheMetadata%2A> override.  
   
 ```csharp  
 public sealed class CreateProduct : CodeActivity  

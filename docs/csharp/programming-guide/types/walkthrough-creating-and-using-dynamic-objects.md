@@ -93,12 +93,12 @@ The first project that you create in this walkthrough defines a custom dynamic o
     ```  
     List of customers and suppliers  
   
-    Supplier: Lucerne Publishing (http://www.lucernepublishing.com/)  
+    Supplier: Lucerne Publishing (https://www.lucernepublishing.com/)  
     Customer: Preston, Chris  
     Customer: Hines, Patrick  
     Customer: Cameron, Maria  
-    Supplier: Graphic Design Institute (http://www.graphicdesigninstitute.com/)   
-    Supplier: Fabrikam, Inc. (http://www.fabrikam.com/)   
+    Supplier: Graphic Design Institute (https://www.graphicdesigninstitute.com/)   
+    Supplier: Fabrikam, Inc. (https://www.fabrikam.com/)   
     Customer: Seubert, Roxanne  
     Supplier: Proseware, Inc. (http://www.proseware.com/)   
     Customer: Adolphi, Stephan  
@@ -151,10 +151,11 @@ The next project that you create in this walkthrough accesses a library that is 
   
 9. Save the file and press CTRL+F5 to build and run the application.  
   
-## See Also  
- <xref:System.Dynamic?displayProperty=nameWithType>  
- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  
- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
- [Implementing Dynamic Interfaces (downloadable PDF from Microsoft TechNet)](http://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf)
+## See Also
+
+- <xref:System.Dynamic?displayProperty=nameWithType>  
+- <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  
+- [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  
+- [Early and Late Binding](../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
+- [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  
+- [Implementing Dynamic Interfaces (downloadable PDF from Microsoft TechNet)](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/implementing-dynamic-interfaces.pdf)

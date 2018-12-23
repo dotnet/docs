@@ -1,5 +1,6 @@
 ---
-title: "How to: Declare and Use Read Write Properties (C# Programming Guide)"
+title: "How to: Declare and Use Read Write Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "get accessor [C#], declaring properties"
@@ -48,7 +49,8 @@ person.SetAge(person.GetAge() + 1);
   
  Notice that `ToString` is not explicitly used in the program. It is invoked by default by the `WriteLine` calls.  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

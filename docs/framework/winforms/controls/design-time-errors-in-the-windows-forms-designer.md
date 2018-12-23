@@ -39,15 +39,15 @@ This topic explains the meaning and use of the design-time error list that appea
 ### Forum posts about this error  
  The additional help will include a link to MSDN forum posts related to the error. The forums are searched based on the string of the error message. You can also try searching the following forums:  
   
--   [Windows Forms Designer Forum](http://go.microsoft.com/fwlink/?LinkId=203524)  
+-   [Windows Forms Designer Forum](https://go.microsoft.com/fwlink/?LinkId=203524)  
   
--   [Windows Forms Forums](http://go.microsoft.com/fwlink/?LinkId=203523)  
+-   [Windows Forms Forums](https://go.microsoft.com/fwlink/?LinkId=203523)  
   
 ### Ignore and Continue  
  You can choose to ignore the error condition and continue loading the designer. Choosing this action may result in unexpected behavior. For example, controls may not appear on the design surface.  
   
 ## See Also  
- [Troubleshooting Design-Time Development](http://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)  
+ [Troubleshooting Design-Time Development](https://msdn.microsoft.com/library/e048d08e-fa7c-4be8-b238-4abaa199a0a6)  
  [Troubleshooting Control and Component Authoring](../../../../docs/framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
  [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)  
- [Windows Forms Designer Error Messages](http://msdn.microsoft.com/library/cf610bf4-5fe4-471c-bce7-6a05ece07bd2)
+ [Windows Forms Designer Error Messages](https://msdn.microsoft.com/library/cf610bf4-5fe4-471c-bce7-6a05ece07bd2)

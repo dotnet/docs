@@ -1,5 +1,6 @@
 ---
-title: "Using Structs (C# Programming Guide)"
+title: "Using Structs - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structs [C#], using"
@@ -44,7 +45,8 @@ The `struct` type is suitable for representing lightweight objects such as `Poin
   
  [!code-csharp[csProgGuideObjects#3](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/using-structs_3.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)

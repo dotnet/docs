@@ -167,11 +167,11 @@ Several scenarios are covered in this walkthrough.
 
 > **Figure 5-5.** Deploy to an Azure VM through a Docker Registry
 
-#### Scenario C: Deploy to an Azure VM from CI/CD pipelines in Visual Studio Team Services
+#### Scenario C: Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services
 
-![Deploy to an Azure VM from CI/CD pipelines in Visual Studio Team Services](./media/image5-6.png)
+![Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services](./media/image5-6.png)
 
-> **Figure 5-6.** Deploy to an Azure VM from CI/CD pipelines in Visual Studio Team Services
+> **Figure 5-6.** Deploy to an Azure VM from CI/CD pipelines in Azure DevOps Services
 
 ### Azure VMs for Windows Containers
 
@@ -199,7 +199,7 @@ The full technical walkthrough is available in the eShopModernizing GitHub repo 
 
 ### Overview
 
-[Azure Container Instances (ACI)](https://docs.microsoft.com/en-us/azure/container-instances/) is the quickest way to have a Containers dev/test/staging environment where you can deploy single instances of containers.
+[Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/) is the quickest way to have a Containers dev/test/staging environment where you can deploy single instances of containers.
 
 ### Goals
 
@@ -256,11 +256,11 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 > **Figure 5-7.** Deploy directly to a Kubernetes cluster from a development environment
 
-#### Scenario B: Deploy to a Kubernetes cluster from CI/CD pipelines in Team Services
+#### Scenario B: Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps Services
 
-![Deploy to a Kubernetes cluster from CI/CD pipelines in Team Services](./media/image5-8.png)
+![Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps Services](./media/image5-8.png)
 
-> **Figure 5-8.** Deploy to a Kubernetes cluster from CI/CD pipelines in Team Services
+> **Figure 5-8.** Deploy to a Kubernetes cluster from CI/CD pipelines in Azure DevOps Services
 
 ### Benefits
 
@@ -316,11 +316,11 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 > **Figure 5-9.** Deploy directly to a Service Fabric cluster from a development environment
 
-### Scenario B: Deploy to a Service Fabric cluster from CI/CD pipelines in Team Services
+### Scenario B: Deploy to a Service Fabric cluster from CI/CD pipelines in Azure DevOps Services
 
-![Deploy to a Service Fabric cluster from CI/CD pipelines in Visual Studio Team Services](./media/image5-10.png)
+![Deploy to a Service Fabric cluster from CI/CD pipelines in Azure DevOps Services](./media/image5-10.png)
 
-> **Figure 5-10.** Deploy to a Service Fabric cluster from CI/CD pipelines in Visual Studio Team Services
+> **Figure 5-10.** Deploy to a Service Fabric cluster from CI/CD pipelines in Azure DevOps Services
 
 ## Benefits
 
@@ -363,5 +363,5 @@ Explore this content more in-depth on the GitHub wiki:
 [https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-How-to-deploy-your-Windows-Containers-based-apps-into-Azure-Service-Fabric-(Including-CI-CD)](https://github.com/dotnet-architecture/eShopModernizing/wiki/05.-How-to-deploy-your-Windows-Containers-based-apps-into-Azure-Service-Fabric-(Including-CI-CD))
 
 >[!div class="step-by-step"]
-[Previous](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)
-[Next](conclusions.md)
+>[Previous](lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md)
+>[Next](conclusions.md)

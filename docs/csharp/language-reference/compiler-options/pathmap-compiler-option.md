@@ -30,7 +30,7 @@ To specify multiple mapped source paths, separate each with a comma.
 
 ## Remarks
 
-The compiler writes the source path path into its output for the following reasons:
+The compiler writes the source path into its output for the following reasons:
 
 1. The source path is substituted for an argument when the <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> is applied to an optional parameter.
 1. The source path is embedded in a PDB file.
@@ -48,5 +48,5 @@ csc -pathmap:C:\work\tests=\publish t.cs
 
 ## See also
 
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

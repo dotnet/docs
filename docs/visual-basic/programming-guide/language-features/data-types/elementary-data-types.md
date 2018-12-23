@@ -26,5 +26,5 @@ Visual Basic supplies a set of predefined data types, which you can use for many
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  Introduces the Visual Basic data types and describes how to use them.  
   
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
  Provides an overview of the elementary data types supplied by Visual Basic.

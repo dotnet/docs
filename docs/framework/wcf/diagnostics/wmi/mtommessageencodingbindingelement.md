@@ -8,7 +8,7 @@ MtomMessageEncodingBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class MtomMessageEncodingBindingElement : MessageEncodingBindingElement  
 {  
   string Encoding;  

@@ -73,7 +73,7 @@
             }
 
             // Class to test the book database:
-            class TestBookDB
+            class Test
             {
                 // Print the title of the book.
                 static void PrintTitle(Book b)

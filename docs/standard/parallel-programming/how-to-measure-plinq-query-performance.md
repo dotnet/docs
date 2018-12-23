@@ -22,5 +22,6 @@ This example shows how use the <xref:System.Diagnostics.Stopwatch> class to meas
   
  The total execution time is a useful metric when you are experimenting with query implementations, but it does not always tell the whole story. To get a deeper and richer view of the interaction of the query threads with one another and with other running processes, use the Concurrency Visualizer. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
   
-## See Also  
- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+## See also
+
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

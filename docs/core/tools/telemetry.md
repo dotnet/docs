@@ -2,8 +2,8 @@
 title: .NET Core SDK telemetry
 description: Discover the .NET Core SDK telemetry features that collect usage information for analysis, which data is collected and how to disable it.
 author: richlander
-ms.author: mairaw
 ms.date: 06/20/2018
+ms.custom: "seodec18"
 ---
 # .NET Core SDK telemetry
 
@@ -46,7 +46,7 @@ The feature collects the following data:
 
 &#8224;This metric is published.
 
-Starting with .NET Core SDK 2.0, new data points are collected:
+Starting with .NET Core 2.0 SDK, new data points are collected:
 
 - `dotnet` command arguments and options: only known arguments and options are collected (not arbitrary strings).
 - Whether the SDK is running in a container.
@@ -100,7 +100,7 @@ The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIB
 
 [.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use the same license but don't enable telemetry (see [Scope](#scope)).
 
-> 2. DATA. The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to improve our products and services. You can learn more about data collection and use in the help documentation and the privacy statement at http://go.microsoft.com/fwlink/?LinkId=528096. Your use of the software operates as your consent to these practices.
+> 2. DATA. The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to improve our products and services. You can learn more about data collection and use in the help documentation and the privacy statement at <http://go.microsoft.com/fwlink/?LinkId=528096>. Your use of the software operates as your consent to these practices.
 
 ## Disclosure
 
@@ -114,9 +114,9 @@ Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cl
 
 Telemetry
 ---------
-The .NET Core tools collect usage data in order to help us improve your experience. 
-The data is anonymous and doesn't include command-line arguments. 
-The data is collected by Microsoft and shared with the community. 
+The .NET Core tools collect usage data in order to help us improve your experience.
+The data is anonymous and doesn't include command-line arguments.
+The data is collected by Microsoft and shared with the community.
 You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 
 Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
@@ -124,6 +124,6 @@ Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemet
 
 ## See also
 
-[What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/)  
-[Telemetry reference source (dotnet/cli repo)](https://github.com/dotnet/cli/tree/master/src/dotnet/Telemetry)  
-[.NET Core SDK Usage Data](https://github.com/dotnet/core/blob/master/release-notes/cli-usage-data.md)  
+- [What we've learned from .NET Core SDK Telemetry](https://blogs.msdn.microsoft.com/dotnet/2017/07/21/what-weve-learned-from-net-core-sdk-telemetry/)
+- [Telemetry reference source (dotnet/cli repo)](https://github.com/dotnet/cli/tree/master/src/dotnet/Telemetry)
+- [.NET Core SDK Usage Data](https://github.com/dotnet/core/blob/master/release-notes/cli-usage-data.md)

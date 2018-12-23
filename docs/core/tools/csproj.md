@@ -2,7 +2,6 @@
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
 author: blackdwarf
-ms.author: mairaw
 ms.date: 09/22/2017
 ---
 # Additions to the csproj format for .NET Core
@@ -14,13 +13,13 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 ```xml
  <PropertyGroup>
-   <TargetFramework>netcoreapp1.1</TargetFramework>
+   <TargetFramework>netcoreapp2.1</TargetFramework>
  </PropertyGroup>
  ```
  
  ```xml
  <PropertyGroup>
-   <TargetFrameworks>netcoreapp1.1;net462</TargetFrameworks>
+   <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
  </PropertyGroup>
  ```
 
@@ -70,26 +69,24 @@ To disable **all implicit globs**, you can set the `<EnableDefaultItems>` proper
 </PropertyGroup>
 ```
 
-### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (for example, runtime and NuGet packaging).
-
 ## How to see the whole project as MSBuild sees it
 
 While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
 
-`dotnet msbuild /pp:fullproject.xml`
+`dotnet msbuild -pp:fullproject.xml`
 
 If the project has multiple target frameworks, the results of the command should be focused on only one of them by specifying it as an MSBuild property:
 
-`dotnet msbuild /p:TargetFramework=netcoreapp2.0 /pp:fullproject.xml`
+`dotnet msbuild -p:TargetFramework=netcoreapp2.0 -pp:fullproject.xml`
 
 ## Additions
 
 ### Sdk attribute 
-The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship two main SDKs with the .NET Core tools:
+The `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. We ship three main SDKs with the .NET Core tools:
 
 1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
 2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
+3. The .NET Core Razor Class Library SDK with the ID of `Microsoft.NET.Sdk.Razor`
 
 You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code. 
 
@@ -104,14 +101,14 @@ Item that specifies a NuGet dependency in the project. The `Include` attribute s
 `Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
 #### IncludeAssets, ExcludeAssets and PrivateAssets
-`IncludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
+`IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
 consumed. 
 
-`ExcludeAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should not 
+`ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not 
 be consumed.
 
-`PrivateAssets` attribute specifies what assets belonging to the package specified by `<PackageReference>` should be 
-consumed but that they should not flow to the next project. 
+`PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be 
+consumed but not flow to the next project. 
 
 > [!NOTE]
 > `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
@@ -167,16 +164,16 @@ The following example provides the fallbacks for all targets in your project:
 </PackageTargetFallback >
 ```
 
-The following example specifies the fallbacks only for the `netcoreapp1.0` target:
+The following example specifies the fallbacks only for the `netcoreapp2.1` target:
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp1.0'">
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```
 
 ## NuGet metadata properties
-With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
+With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
 
 ### IsPackable
 A Boolean value that specifies whether the project can be packed. The default value is `true`. 
@@ -193,8 +190,12 @@ A human-friendly title of the package, typically used in UI displays as on nuget
 ### Authors
 A semicolon-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
 
-### Description
+### PackageDescription
+
 A long description of the package for UI display.
+
+### Description
+A long description for the assembly. If `PackageDescription` is not specified then this property is also used as the description of the package.
 
 ### Copyright
 Copyright details for the package.
@@ -264,3 +265,37 @@ Base path for the *.nuspec* file.
 
 ### NuspecProperties
 Semicolon separated list of key=value pairs.
+
+## AssemblyInfo properties
+[Assembly attributes](../../framework/app-domains/set-assembly-attributes.md) that were typically present in an *AssemblyInfo* file are now automatically generated from properties.
+
+### Properties per attribute
+
+Each attribute has a property that control its content and another to disable its generation as shown in the following table:
+
+| Attribute                                                      | Property               | Property to disable                             |
+|----------------------------------------------------------------|------------------------|-------------------------------------------------|
+| <xref:System.Reflection.AssemblyCompanyAttribute>              | `Company`              | `GenerateAssemblyCompanyAttribute`              |
+| <xref:System.Reflection.AssemblyConfigurationAttribute>        | `Configuration`        | `GenerateAssemblyConfigurationAttribute`        |
+| <xref:System.Reflection.AssemblyCopyrightAttribute>            | `Copyright`            | `GenerateAssemblyCopyrightAttribute`            |
+| <xref:System.Reflection.AssemblyDescriptionAttribute>          | `Description`          | `GenerateAssemblyDescriptionAttribute`          |
+| <xref:System.Reflection.AssemblyFileVersionAttribute>          | `FileVersion`          | `GenerateAssemblyFileVersionAttribute`          |
+| <xref:System.Reflection.AssemblyInformationalVersionAttribute> | `InformationalVersion` | `GenerateAssemblyInformationalVersionAttribute` |
+| <xref:System.Reflection.AssemblyProductAttribute>              | `Product`              | `GenerateAssemblyProductAttribute`              |
+| <xref:System.Reflection.AssemblyTitleAttribute>                | `AssemblyTitle`        | `GenerateAssemblyTitleAttribute`                |
+| <xref:System.Reflection.AssemblyVersionAttribute>              | `AssemblyVersion`      | `GenerateAssemblyVersionAttribute`              |
+| <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `NeutralLanguage`      | `GenerateNeutralResourcesLanguageAttribute`     |
+
+Notes:
+
+* `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
+* `InformationalVersion` defaults to the value of `$(Version)`.
+* `InformationalVersion` has `$(SourceRevisionId)` appended if the property is present. It can be disabled using `IncludeSourceRevisionInInformationalVersion`.
+* `Copyright` and `Description` properties are also used for NuGet metadata.
+* `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
+
+### GenerateAssemblyInfo 
+A Boolean that enable or disable all the AssemblyInfo generation. The default value is `true`. 
+
+### GeneratedAssemblyInfoFile 
+The path of the generated assembly info file. Default to a file in the `$(IntermediateOutputPath)` (obj) directory.

@@ -23,16 +23,10 @@ This section contains samples that demonstrate using MSMQ binding attributes of 
  Demonstrates how to send and receive a set of related messages in queued communication over the Message Queuing (MSMQ) transport.  
   
  [Two-Way Communication](../../../../docs/framework/wcf/samples/two-way-communication.md)  
- Demonstrates how to perform transacted two-way queued communication over MSMQ.  
-  
- [Transacted Batching](../../../../docs/framework/wcf/samples/transacted-batching.md)  
- Demonstrates how to batch transacted reads by using Message Queuing (MSMQ).  
+ Demonstrates how to perform transacted two-way queued communication over MSMQ.
   
  [SRMP](../../../../docs/framework/wcf/samples/srmp.md)  
  Demonstrates how to perform transacted queued communication by using Message Queuing (MSMQ) over HTTP.  
   
  [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
- Demonstrates how to implement an application that uses WS-Security with X.509v3 certificate authentication for the client and requires server authentication using the server's X.509v3 certificate over MSMQ.  
-  
- [ReceiveContext Product Generator](../../../../docs/framework/wcf/samples/receivecontext-enabled-wcf-channels.md)  
- Demonstrates the usefulness of <xref:System.ServiceModel.Channels.ReceiveContext>-enabled WCF channels.
+ Demonstrates how to implement an application that uses WS-Security with X.509v3 certificate authentication for the client and requires server authentication using the server's X.509v3 certificate over MSMQ.

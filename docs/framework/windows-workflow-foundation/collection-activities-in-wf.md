@@ -19,7 +19,7 @@ Collection activities are used to work with collection objects in a workflow. [!
 |<xref:System.Activities.Statements.RemoveFromCollection%601>|Removes an item from a specified collection and returns `true` if the item was successfully removed.|  
   
 ## Using collection activities  
- The following code example demonstrates how to interact with a collection declared as a workflow variable. The collection used is a <!--zz <xref:System.Collections.Generic.List%E2%80%991>--> `System.Collections.Generic.List`  of <xref:System.String> objects named `fruitList`.  
+ The following code example demonstrates how to interact with a collection declared as a workflow variable. The collection used is a <xref:System.Collections.Generic.List%601> of <xref:System.String> objects named `fruitList`.  
   
 ```csharp  
 Variable<ICollection<string>> fruitList = new Variable<ICollection<string>>  
@@ -221,7 +221,7 @@ Activity wf = new Sequence
   
  The above code samples can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue%601> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>  
   
-```  
+```csharp
 Variable<ICollection<string>> fruitList = new Variable<ICollection<string>>  
 {  
     Default = new CSharpValue<ICollection<string>>("new List<String> From {\"Apple\", \"Orange\"};"),  

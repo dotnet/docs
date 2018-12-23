@@ -1,5 +1,6 @@
 ---
-title: "XML Documentation Comments (C# Programming Guide)"
+title: "XML Documentation Comments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.xml"
@@ -19,7 +20,7 @@ In Visual C# you can create documentation for your code by including XML element
 /// <summary>  
 ///  This class performs an important function.  
 /// </summary>  
-public class MyClass{}  
+public class MyClass {}  
 ```  
   
  When you compile with the [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) option, the compiler will search for all XML tags in the source code and create an XML documentation file. To create the final documentation based on the compiler-generated file, you can create a custom tool or use a tool such as [Sandcastle](https://github.com/EWSoftware/SHFB).  
@@ -47,5 +48,6 @@ public class MyClass{}
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

@@ -185,8 +185,6 @@
 ## [Using WPF Controls](using-wpf-controls.md)
 ### [How to: Copy and Paste an ElementHost Control at Design Time](how-to-copy-and-paste-an-elementhost-control-at-design-time.md)
 ### [Walkthrough: Arranging WPF Content on Windows Forms at Design Time](walkthrough-arranging-wpf-content-on-windows-forms-at-design-time.md)
-### [Walkthrough: Changing Properties of a Hosted WPF Element at Design Time](walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time.md)
 ### [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md)
-### [Walkthrough: Copying and Pasting an ElementHost Control into Separate Windows Forms](copy--paste-an-elementhost-control-into-forms.md)
 ### [Walkthrough: Assigning WPF Content on Windows Forms at Design Time](walkthrough-assigning-wpf-content-on-windows-forms-at-design-time.md)
 ### [Walkthrough: Styling WPF Content](walkthrough-styling-wpf-content.md)

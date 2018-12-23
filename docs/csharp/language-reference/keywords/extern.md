@@ -1,5 +1,7 @@
 ---
-title: "extern modifier (C# Reference)"
+title: "extern modifier - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "extern_CSharpKeyword"
@@ -85,8 +87,8 @@ SampleMethod() returns 50.
 
 ## See also
 
-<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>  
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
-[C# Keywords](index.md)  
-[Modifiers](modifiers.md)  
+- <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [C# Keywords](index.md)  
+- [Modifiers](modifiers.md)  

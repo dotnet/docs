@@ -27,5 +27,6 @@ Document type definitions (DTDs) complicate namespace support. For example, the 
   
  The XML in the Microsoft .NET Framework implements the second option for maximum W3C compatibility.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

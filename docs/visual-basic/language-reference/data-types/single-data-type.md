@@ -43,7 +43,7 @@ Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers rangin
   
 ## See Also  
  <xref:System.Single?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  
  [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

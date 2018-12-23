@@ -15,7 +15,7 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 -   Unhandled exceptions (in both native and managed code).  
   
--   <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](http://go.microsoft.com/fwlink/?LinkId=182107) function (Windows 7 family).  
+-   <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](https://go.microsoft.com/fwlink/?LinkId=182107) function (Windows 7 family).  
   
 -   Runtime fatal errors.  
   
@@ -25,11 +25,11 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 -   <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType> method.  
   
--   [DebugBreak](http://go.microsoft.com/fwlink/?LinkId=182106) function (Win32).  
+-   [DebugBreak](https://go.microsoft.com/fwlink/?LinkId=182106) function (Win32).  
   
- Before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](http://go.microsoft.com/fwlink/?LinkId=181767).  
+ Before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](https://go.microsoft.com/fwlink/?LinkId=181767).  
   
 ## See Also  
  [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)  
  [Making an Image Easier to Debug](../../../docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md)  
- [Enabling Profiling](http://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)
+ [Enabling Profiling](https://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)

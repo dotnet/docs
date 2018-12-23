@@ -37,8 +37,8 @@ The errors encountered by a WCF application belong to one of three groups:
 ## ServiceHost Events  
  The <xref:System.ServiceModel.ServiceHost> class hosts services and defines several events that may be needed for handling errors. For example:  
   
-1.  <!--zz <xref:System.ServiceModel.ServiceHost.Faulted>-->  `System.ServiceModel.ServiceHost.Faulted`
+1. <xref:System.ServiceModel.Channels.CommunicationObject.Faulted>
   
-2. <!--zz  <xref:System.ServiceModel.ServiceHost.UnknownMessageReceived>  --> `System.ServiceModel.ServiceHost.UnknownMessageReceived`
+2. <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived>
   
  For more information, see <xref:System.ServiceModel.ServiceHost>

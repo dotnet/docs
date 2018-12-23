@@ -1,11 +1,10 @@
 ---
-title: Introduction to .NET and Docker
-description: Understanding Docker and .NET Core
-author: jralexander
-ms.author: johalex
+title: Introduction to Docker
+description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
 ms.date: 11/06/2017
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
+
 # Introduction to .NET and Docker
 
 This article provides an introduction and conceptual background to working with .NET on Docker.
@@ -121,7 +120,7 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Windows Communication Framework (WCF) images on GitHub](https://github.com/microsoft/wcf-docker)
 
-* [Windows Communication Framework (WCF) Docker samples using .NET Full Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
+* [Windows Communication Framework (WCF) Docker samples using .NET Framework 4.6.2](https://github.com/Microsoft/wcf-docker-samples)
 
 #### Internet Information Server (IIS)
 
@@ -141,11 +140,11 @@ The [dotnet-framework:4.6.2 sample](https://github.com/Microsoft/dotnet-framewor
 
 * [Microsoft SQL Server Developer Edition images for Windows Containers on DockerHub](https://hub.docker.com/r/microsoft/mssql-server-windows-developer/)
 
-#### Visual Studio Team Services (VSTS) agent
+#### Azure DevOps Services agent
 
-* [Visual Studio Team Services (VSTS) agent images on DockerHub](https://hub.docker.com/r/microsoft/vsts-agent/)
+* [Azure DevOps Services agent images on DockerHub](https://hub.docker.com/r/microsoft/vsts-agent/)
 
-* [Visual Studio Team Services (VSTS) agent images on GitHub](https://github.com/Microsoft/vsts-agent-docker)
+* [Azure DevOps Services agent images on GitHub](https://github.com/Microsoft/vsts-agent-docker)
 
 #### Operations Management Suite (OMS) Linux agent
 

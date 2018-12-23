@@ -78,7 +78,7 @@ new SendMail
 ```  
   
 ### Sending Mails in Testing Mode  
- This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to john.doe@contoso.con (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
+ This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to `john.doe@contoso.con` (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
   
 ```  
 new SendMail  
@@ -101,19 +101,19 @@ new SendMail
   
  For more information about setting up a SMTP server, see the following links.  
   
--   [Microsoft Technet](http://go.microsoft.com/fwlink/?LinkId=166060)  
+-   [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
   
--   [Configuring the SMTP Service (IIS 6.0)](http://go.microsoft.com/fwlink/?LinkId=150456)  
+-   [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
   
--   [IIS 7.0: Configure SMTP E-Mail](http://go.microsoft.com/fwlink/?LinkId=150457)  
+-   [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
   
--   [How to Install the SMTP Service](http://go.microsoft.com/fwlink/?LinkId=150458)  
+-   [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
   
  SMTP emulators provided by third parties are available for download.  
   
 ##### To run this sample  
   
-1.  Using [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)], open the SendMail.sln solution file.  
+1.  Using Visual Studio 2010, open the SendMail.sln solution file.  
   
 2.  Ensure that you have access to a valid SMTP server. See the set-up instructions.  
   
@@ -130,6 +130,6 @@ new SendMail
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`

@@ -25,7 +25,7 @@ ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
  [!code-csharp[WidthMinWidthMaxWidth#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WidthMinWidthMaxWidth/CSharp/Window1.xaml.cs#3)]
  [!code-vb[WidthMinWidthMaxWidth#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WidthMinWidthMaxWidth/VisualBasic/Window1.xaml.vb#3)]  
   
- For the complete sample, see [Width Properties Comparison Sample](http://go.microsoft.com/fwlink/?LinkID=160050).  
+ For the complete sample, see [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050).  
   
 ## See Also  
  <xref:System.Windows.Controls.ListBox>  
@@ -36,4 +36,4 @@ ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
  <xref:System.Windows.FrameworkElement.Width%2A>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Set the Height Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-height-properties-of-an-element.md)  
- [Width Properties Comparison Sample](http://go.microsoft.com/fwlink/?LinkID=160050)
+ [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050)

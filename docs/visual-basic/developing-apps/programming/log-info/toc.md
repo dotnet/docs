@@ -1,4 +1,4 @@
-# [Logging Information from the Application](logging-information-from-the-application.md)
+# [Logging Information from the Application](index.md)
 ## [How to: Write Log Messages](how-to-write-log-messages.md)
 ## [How to: Log Exceptions](how-to-log-exceptions.md)
 ## [How to: Log Messages When the Application Starts or Shuts Down](how-to-log-messages-when-the-application-starts-or-shuts-down.md)

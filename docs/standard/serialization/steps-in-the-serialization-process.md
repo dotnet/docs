@@ -19,6 +19,7 @@ When the <xref:System.Runtime.Serialization.Formatter.Serialize*> method is call
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
-## See Also  
- [Binary Serialization](binary-serialization.md)  
- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+## See also
+
+- [Binary Serialization](binary-serialization.md)  
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)

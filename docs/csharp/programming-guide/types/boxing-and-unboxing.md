@@ -1,5 +1,6 @@
 ---
-title: "Boxing and Unboxing (C# Programming Guide)"
+title: "Boxing and Unboxing - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.boxing"
@@ -26,7 +27,7 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
  [!code-csharp[csProgGuideTypes#47](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/boxing-and-unboxing_3.cs)]  
   
 ## Performance  
- In relation to simple assignments, boxing and unboxing are computationally expensive processes. When a value type is boxed, a new object must be allocated and constructed. To a lesser degree, the cast required for unboxing is also expensive computationally. For more information, see [Performance](https://msdn.microsoft.com/library/ms173196(VS.110).aspx).  
+ In relation to simple assignments, boxing and unboxing are computationally expensive processes. When a value type is boxed, a new object must be allocated and constructed. To a lesser degree, the cast required for unboxing is also expensive computationally. For more information, see [Performance](../../../../docs/framework/performance/performance-tips.md).  
   
 ## Boxing  
  Boxing is used to store value types in the garbage-collected heap. Boxing is an implicit conversion of a [value type](../../../csharp/language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. Boxing a value type allocates an object instance on the heap and copies the value into the new object.  
@@ -83,13 +84,13 @@ Unboxing Conversion
   
  If you change the statement:  
   
-```  
+```csharp
 int j = (short) o;  
 ```  
   
  to:  
   
-```  
+```csharp
 int j = (int) o;  
 ```  
   
@@ -107,5 +108,6 @@ int j = (int) o;
   
 -   [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

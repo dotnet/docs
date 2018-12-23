@@ -8,7 +8,7 @@ SynchronousReceiveBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class SynchronousReceiveBehavior : Behavior  
 {  
 };  

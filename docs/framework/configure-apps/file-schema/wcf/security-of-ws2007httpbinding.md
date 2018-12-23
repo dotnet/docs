@@ -2,8 +2,6 @@
 title: "&lt;security&gt; of &lt;ws2007HttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;security&gt; of &lt;ws2007HttpBinding&gt;
 Represents the security settings used with the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.  
@@ -75,5 +73,5 @@ Represents the security settings used with the [\<ws2007HttpBinding>](../../../.
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

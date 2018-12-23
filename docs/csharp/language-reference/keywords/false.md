@@ -1,5 +1,7 @@
 ---
-title: "false (C# Reference)"
+title: "false - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "false_CSharpKeyword"
@@ -9,13 +11,15 @@ helpviewer_keywords:
 ms.assetid: a11aa532-efe2-442b-9fcc-8fdb33b8c8b4
 ---
 # false (C# Reference)
-Used as an overloaded operator or as a literal:  
-  
--   [false Operator](../../../csharp/language-reference/keywords/false-operator.md)  
-  
--   [false Literal](../../../csharp/language-reference/keywords/false-literal.md)  
-  
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+
+Used as an overloaded operator or as a literal:
+
+- [false operator](true-false-operators.md)
+- [false literal](false-literal.md)
+
+## See also
+
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [true](true.md)

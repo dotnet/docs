@@ -21,4 +21,4 @@ ms.assetid: 637911b3-0c78-4493-a4fb-91db56d767cd
  <xref:System.Printing.IndexedProperties>  
  <xref:System.Printing.Interop>  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [XPS](http://www.microsoft.com/xps)
+ [XPS](https://www.microsoft.com/xps)

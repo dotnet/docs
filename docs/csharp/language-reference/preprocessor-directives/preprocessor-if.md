@@ -1,5 +1,7 @@
 ---
-title: "#if preprocessor directive (C# Reference)"
+title: "#if preprocessor directive - C# Reference"
+ms.custom: seodec18
+
 ms.date: 06/30/2018
 f1_keywords: 
   - "#if"
@@ -82,7 +84,7 @@ public class MyClass
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Preprocessor Directives](index.md)  
-[How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Preprocessor Directives](index.md)  
+- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).

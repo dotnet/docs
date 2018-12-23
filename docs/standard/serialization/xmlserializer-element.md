@@ -54,7 +54,8 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Xml.Serialization.XmlSerializer>  
- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)  
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+## See also
+
+- <xref:System.Xml.Serialization.XmlSerializer>  
+- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)  
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)

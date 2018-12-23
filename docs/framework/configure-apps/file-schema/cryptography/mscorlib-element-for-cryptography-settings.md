@@ -10,7 +10,6 @@ helpviewer_keywords:
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;mscorlib&gt; Element for Cryptography Settings
 Contains the [\<cryptographySettings> element](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md).  
@@ -66,9 +65,9 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 ```  
   
 ## See Also  
- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>  
- <xref:System.Security.Cryptography>  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>  
+- <xref:System.Security.Cryptography>  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

@@ -118,7 +118,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 </PurchaseOrder>  
 ```  
   
- The "ser" namespace refers to the standard serialization namespace, http://schemas.microsoft.com/2003/10/Serialization/. Each piece of data is serialized only once and given an ID number, and subsequent uses result in a reference to the already serialized data.  
+ The "ser" namespace refers to the standard serialization namespace, `http://schemas.microsoft.com/2003/10/Serialization/`. Each piece of data is serialized only once and given an ID number, and subsequent uses result in a reference to the already serialized data.  
   
 > [!IMPORTANT]
 >  If both "id" and "ref" attributes are present in the data contract `XMLElement`, then the "ref" attribute is honored and the "id" attribute is ignored.  

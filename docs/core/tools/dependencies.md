@@ -2,8 +2,8 @@
 title: Managing dependencies in .NET Core tooling
 description: Explains how to manage your dependencies with the .NET Core tools.
 author: blackdwarf
-ms.author: mairaw
 ms.date: 03/06/2017
+ms.custom: "seodec18"
 ---
 # Managing dependencies with .NET Core SDK 1.0
 
@@ -26,7 +26,7 @@ If you are familiar with MSBuild, it will look familiar to the other reference t
 Adding a dependency that is available only in a specific target is done using conditions like in the following example:
 
 ```xml
-<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp1.0'" />
+<PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
 The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is a MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
@@ -51,7 +51,7 @@ The full project looks like this:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

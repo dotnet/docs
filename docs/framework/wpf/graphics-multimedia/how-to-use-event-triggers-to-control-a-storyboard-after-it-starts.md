@@ -31,7 +31,7 @@ This example shows how to control a <xref:System.Windows.Media.Animation.Storybo
   
  [!code-xaml[timingbehaviors_snip#ControlStoryboardExampleUsingWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/ControlStoryboardExample.xaml#controlstoryboardexampleusingwholepage)]  
   
- For additional examples, see the [Animation Example Gallery](http://go.microsoft.com/fwlink/?LinkID=159969).  
+ For additional examples, see the [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
 ## See Also  
  <xref:System.Windows.Media.Animation.ResumeStoryboard>  

@@ -1,5 +1,5 @@
 ---
-title: Attributes (F#)
+title: Attributes
 description: Learn how F# Attributes enable metadata to be applied to a programming construct.
 ms.date: 05/16/2016
 ---
@@ -85,6 +85,7 @@ Although you do not usually need to specify the attribute target explicitly, val
   <tr>
     <td>type</td>
     <td>
+
         ```
         [<type: StructLayout(Sequential)>] 
         type MyStruct = 
@@ -97,6 +98,6 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
 </table>
 
-## See Also
+## See also
 
-[F# Language Reference](index.md)
+- [F# Language Reference](index.md)

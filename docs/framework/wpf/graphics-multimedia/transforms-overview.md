@@ -137,7 +137,7 @@ LayoutTransform used to rotate the button
   
  [!code-xaml[Transforms_snip#GraphicsMMAnimatedRotateButtonExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonAnimatedRotateTransformExample.xaml#graphicsmmanimatedrotatebuttonexamplewholepage)]  
   
- For the complete sample, see [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252). For more information about animations, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
+ For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252). For more information about animations, see the [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md).  
   
 <a name="freezable_features"></a>   
 ## Freezable Features  
@@ -147,4 +147,4 @@ LayoutTransform used to rotate the button
  <xref:System.Windows.Media.Transform>  
  <xref:System.Windows.Media.Matrix>  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)  
- [2-D Transforms Sample](http://go.microsoft.com/fwlink/?LinkID=158252)
+ [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)

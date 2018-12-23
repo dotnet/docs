@@ -1,10 +1,9 @@
 ---
 title: "Extension Methods"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: 5de945cb-88f4-49d7-b0e6-f098300cf357
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Extension Methods
 Extension methods are a language feature that allows static methods to be called using instance method call syntax. These methods must take at least one parameter, which represents the instance the method is to operate on.  
@@ -41,6 +40,7 @@ Extension methods are a language feature that allows static methods to be called
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

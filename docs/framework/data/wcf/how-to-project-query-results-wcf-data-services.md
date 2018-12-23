@@ -29,7 +29,7 @@ Projection provides a mechanism to reduce the amount of data returned by a query
  [!code-vb[Astoria Northwind Client#SelectCustomerAddressNonEntity](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#selectcustomeraddressnonentity)]  
   
 ## Example  
- The following example shows the definitions of the `CustomerAddress``CustomerAddressNonEntity` types that are used in the previous examples.  
+ The following example shows the definitions of the `CustomerAddress` and `CustomerAddressNonEntity` types that are used in the previous examples.  
   
  [!code-csharp[Astoria Northwind Client#CustomerAddressDefinition](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customeraddress.cs#customeraddressdefinition)]
  [!code-vb[Astoria Northwind Client#CustomerAddressDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customeraddress.vb#customeraddressdefinition)]

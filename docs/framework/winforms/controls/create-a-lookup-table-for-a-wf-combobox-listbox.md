@@ -44,7 +44,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
 2.  Connect to your data source.  
   
-3.  Establish a data relation between the two tables. See [Introduction to DataRelation Objects](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+3.  Establish a data relation between the two tables. See [Introduction to DataRelation Objects](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
 4.  Set the following properties. They can be set in code or in the designer.  
   

@@ -14,6 +14,7 @@
 ### [How to: Resize Windows Forms](how-to-resize-windows-forms.md)
 ### [Automatic Scaling in Windows Forms](automatic-scaling-in-windows-forms.md)
 #### [How to: Respond to Font Scheme Changes in a Windows Forms Application](how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md)
+#### [Disable DPI Awareness in Visual Studio](disable-dpi-awareness-visual-studio.md)
 ### [High DPI Support In Windows Forms](high-dpi-support-in-windows-forms.md)
 ## [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)
 ### [How to: Change the Borders of Windows Forms](how-to-change-the-borders-of-windows-forms.md)

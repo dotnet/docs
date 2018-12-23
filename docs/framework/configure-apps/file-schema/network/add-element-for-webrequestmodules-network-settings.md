@@ -10,9 +10,6 @@ helpviewer_keywords:
   - "add element, webRequestModules"
   - "<add> element, webRequestModules"
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # &lt;add&gt; Element for webRequestModules (Network Settings)
 Adds a custom Web request module to the application.  
@@ -55,9 +52,9 @@ Adds a custom Web request module to the application.
   
  The Web request module is created when a URI matching prefix is passed to the <xref:System.Net.WebRequest.Create%2A?displayProperty=nameWithType> method.  
   
- The value for the `prefix` attribute should be the leading characters of a valid URI --for example, "http", or "http://www.contoso.com".  
+ The value for the `prefix` attribute should be the leading characters of a valid URI. For example, `http` or `http://www.contoso.com`.
   
- The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma .  
+ The value for the `type` attribute should be a valid type name and corresponding assembly name, separated by a comma.
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -79,5 +76,5 @@ Adds a custom Web request module to the application.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

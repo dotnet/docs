@@ -1,5 +1,7 @@
 ---
-title: "#elif (C# Reference)"
+title: "#elif - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "#elif"
@@ -14,9 +16,9 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 #define VC7  
 //...  
 #if debug  
-    Console.Writeline("Debug build");  
+    Console.WriteLine("Debug build");  
 #elif VC7  
-    Console.Writeline("Visual Studio 7");  
+    Console.WriteLine("Visual Studio 7");  
 #endif  
 ```  
   
@@ -34,7 +36,8 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
   
  See [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) for an example of how to use `#elif`.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

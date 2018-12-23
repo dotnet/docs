@@ -1,12 +1,15 @@
 ---
-title: .NET Core app deployment with CLI tools
-description: Learn .NET Core app deployment with command-line interface (CLI) tools
+title: Deploy .NET Core apps with command-line interface (CLI) tools
+description: Learn to deploy a .NET Core app with command-line interface (CLI) tools
 author: rpetrusha
 ms.author: ronpet
-ms.date: 04/18/2017
+ms.date: 09/05/2018
+dev_langs: 
+  - "csharp"
+  - "vb"
+ms.custom: seodec18
 ---
-
-# Deploying .NET Core apps with command-line interface (CLI) tools
+# Deploy .NET Core apps with command-line interface (CLI) tools
 
 You can deploy a .NET Core application either as a *framework-dependent deployment*, which includes your application binaries but depends on the presence of .NET Core on the target system, or as a *self-contained deployment*, which includes both your application and the .NET Core binaries. For an overview, see [.NET Core Application Deployment](index.md).
 
@@ -21,7 +24,7 @@ When working from the command line, you can use a program editor of your choice.
 
 ## Framework-dependent deployment
 
-Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process. 
+Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process.
 
 1. Create a project directory.
 
@@ -29,16 +32,17 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 1. Create the project.
 
-   From the command line, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project in that directory.
+   From the command line, type [dotnet new console](../tools/dotnet-new.md) to create a new C# console project or [dotnet new console -lang vb](../tools/dotnet-new.md) to create a new Visual Basic console project in that directory.
 
 1. Add the application's source code.
 
-   Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
+   Open the *Program.cs* or *Program.vb* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
+   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
+   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
 
 1. Update the project's dependencies and tools.
- 
+
    Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.
 
 1. Create a Debug build of your app.
@@ -50,7 +54,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
    After you've debugged and tested the program, create the deployment by using the following command:
 
       ```console
-      dotnet publish -f netcoreapp1.1 -c Release
+      dotnet publish -f netcoreapp2.1 -c Release
       ```
    This creates a Release (rather than a Debug) version of your app. The resulting files are placed in a directory named *publish*      that's in a subdirectory of your project's *bin* directory.
 
@@ -68,7 +72,7 @@ Deploying a framework-dependent deployment with no third-party dependencies simp
 
 Deploying a framework-dependent deployment with one or more third-party dependencies requires that those dependencies be available to your project. Two additional steps are required before you can run the `dotnet restore` ([see note](#dotnet-restore-note)) command:
 
-1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on [Json.NET](http://www.newtonsoft.com/json) as a third-party library:
+1. Add references to required third-party libraries to the `<ItemGroup>` section of your *csproj* file. The following `<ItemGroup>` section contains a dependency on [Json.NET](https://www.newtonsoft.com/json) as a third-party library:
 
       ```xml
       <ItemGroup>
@@ -96,11 +100,11 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
    Open the *Program.cs* file in your editor and replace the auto-generated code with the following code. It prompts the user to enter text and displays the individual words entered by the user. It uses the regular expression `\w+` to separate the words in the input text.
 
-   [!code-csharp[deployment#1](../../../samples/snippets/core/deploying/deployment-example.cs)]
-
+   [!code-csharp[deployment#1](~/samples/snippets/core/deploying/cs/deployment-example.cs)]
+   [!code-vb[deployment#1](~/samples/snippets/core/deploying/vb/deployment-example.vb)]
 1. Define the platforms that your app will target.
 
-   Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. 
+   Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets and specify the runtime identifier (RID) for each platform that you target. Note that you also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.
 
    For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
@@ -116,6 +120,14 @@ Deploying a self-contained deployment without third-party dependencies involves 
 
    Run the [dotnet restore](../tools/dotnet-restore.md) ([see note](#dotnet-restore-note)) command to restore the dependencies specified in your project.
 
+1. Determine whether you want to use globalization invariant mode.
+
+   Particularly if your app targets Linux, you can reduce the total size of your deployment by taking advantage of [globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Globalization invariant mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture).
+
+   To enable invariant mode, right-click on your project (not the solution) in **Solution Explorer**, and select **Edit SCD.csproj** or **Edit SCD.vbproj**. Then add the following highlighted lines to the file:
+
+ [!code-xml[globalization-invariant-mode](~/samples/snippets/core/deploying/xml/invariant.csproj)]
+
 1. Create a Debug build of your app.
 
    From the command line, use the [dotnet build](../tools/dotnet-build.md) command.
@@ -129,7 +141,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
       dotnet publish -c Release -r osx.10.11-x64
       ```
 
-   This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named *publish* that's in a subdirectory of your project's *.\bin\Release\netcoreapp1.1\<runtime_identifier>* subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
+   This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named *publish* that's in a subdirectory of your project's *.\bin\Release\netcoreapp2.1\<runtime_identifier>* subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
 
 Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
 
@@ -141,7 +153,7 @@ The following is the complete *csproj* file for this project.
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
@@ -167,7 +179,7 @@ The following is the complete *csproj* file for this project:
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
   </PropertyGroup>
   <ItemGroup>
@@ -183,8 +195,7 @@ Note that you can only deploy a self-contained deployment with a third-party lib
 <a name="dotnet-restore-note"></a>
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
-# See also
+## See also
 
-[.NET Core Application Deployment](index.md)   
-[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)   
-
+* [.NET Core Application Deployment](index.md)
+* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

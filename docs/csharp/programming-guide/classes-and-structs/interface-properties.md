@@ -1,5 +1,6 @@
 ---
-title: "Interface Properties (C# Programming Guide)"
+title: "Interface Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [C#], on interfaces"
@@ -7,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
 ---
 # Interface Properties (C# Programming Guide)
-Properties can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). The following is an example of an interface indexer accessor:  
+Properties can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). The following is an example of an interface property accessor:  
   
  [!code-csharp[csProgGuideProperties#14](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/interface-properties_1.cs)]  
   
@@ -44,10 +45,11 @@ Properties can be declared on an [interface](../../../csharp/language-reference/
   
  `Employee name: Hazem Abolrous`  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)

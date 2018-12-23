@@ -52,4 +52,4 @@ Normally, when referring to a member of an enumeration, you must qualify the mem
  [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)  
  [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
  [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)
+ [Data Types](../../../../visual-basic/language-reference/data-types/index.md)

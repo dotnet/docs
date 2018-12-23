@@ -41,5 +41,5 @@
 ## [XAML Namespaces](xaml-namespaces-for-net-framework-xaml-services.md)
 ## [Default XAML Schema Context and WPF XAML Schema Context](default-xaml-schema-context-and-wpf-xaml-schema-context.md)
 ## [XAML Security Considerations](xaml-security-considerations.md)
-## [Whitespace Processing in XAML](whitespace-processing-in-xaml.md)
+## [White-space processing in XAML](whitespace-processing-in-xaml.md)
 ## [XML Character Entities and XAML](xml-character-entities-and-xaml.md)

@@ -13,7 +13,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 > [!IMPORTANT]
 >  We recommend using Windows authentication wherever possible. Windows authentication uses a series of encrypted messages to authenticate users in SQL Server. When SQL Server logins are used, SQL Server login names and encrypted passwords are passed across the network, which makes them less secure.  
   
- With Windows authentication, users are already logged onto Windows and do not have to log on separately to SQL Server. The following `SqlConnection.ConnectionString` specifies Windows authentication without requiring the a user name or password.  
+ With Windows authentication, users are already logged onto Windows and do not have to log on separately to SQL Server. The following `SqlConnection.ConnectionString` specifies Windows authentication without requiring users to provide a user name or password.  
   
 ```  
 "Server=MSSQL1;Database=AdventureWorks;Integrated Security=true;  
@@ -70,11 +70,11 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Principals](http://msdn.microsoft.com/library/bb543165.aspx) in SQL Server Books Online|Describes logins and other security principals in SQL Server.|  
+|[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine)|Describes logins and other security principals in SQL Server.|  
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
  [Connecting to a Data Source](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
  [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

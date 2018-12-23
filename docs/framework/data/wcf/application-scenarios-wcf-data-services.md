@@ -31,18 +31,18 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 -   [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
   
  Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in a Silverlight-based client application.  
- -   [WCF Data Services (Silverlight)](http://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
+ -   [WCF Data Services (Silverlight)](https://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
   
 -   [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
   
--   [How to: Bind Data Service Data to Controls (WCF Data Services/Silverlight)](http://msdn.microsoft.com/library/bda7d82e-7b1f-4690-8a33-c6297465bdd5)  
+-   [How to: Bind Data Service Data to Controls (WCF Data Services/Silverlight)](https://msdn.microsoft.com/library/bda7d82e-7b1f-4690-8a33-c6297465bdd5)  
   
  Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in an AJAX-based client application.  
  -   [Using a Data Service in a Client Application](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
   
--   [OData: URI Conventions](http://go.microsoft.com/fwlink/?LinkId=185564)  
+-   [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564)  
   
--   [OData: JavaScript Object Notation (JSON) Format](http://go.microsoft.com/fwlink/?LinkId=185790)  
+-   [OData: JavaScript Object Notation (JSON) Format](https://go.microsoft.com/fwlink/?LinkId=185790)  
   
  Create an end-to-end data solution that uses [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] to transfer data between client and server.  
  -   [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
@@ -56,7 +56,7 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
   
 -   [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
   
--   [WCF Data Services (Silverlight)](http://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
+-   [WCF Data Services (Silverlight)](https://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
   
  Expose and consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed with a binary large object that is accessed and changed as a stream.  
  -   [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md)  

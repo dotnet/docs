@@ -33,19 +33,20 @@ ms.assetid: 3f5eb78f-0ef6-433a-b095-3a63b1ce0bc9
 ## Remarks  
  For more information about sample binary creation and registration steps, see the comments in the source code and build.proj files.  
   
-## See Also  
- <xref:System.CodeDom.CodeCompileUnit>  
- <xref:System.CodeDom.CodeNamespace>  
- <xref:System.CodeDom.CodeNamespaceImport>  
- <xref:Microsoft.CSharp.CSharpCodeProvider>  
- <xref:System.Xml.Serialization.IXmlSerializable>  
- <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension>  
- <xref:System.CodeDom>  
- <xref:System.CodeDom.Compiler>  
- <xref:System.Web.Services.Description>  
- <xref:System.Web.Services.Discovery>  
- <xref:System.Xml.Serialization>  
- <xref:System.Uri>  
- <xref:Microsoft.VisualBasic.VBCodeProvider>  
- <xref:System.Web.Services.Description.WebReference>  
- <xref:System.Xml.Serialization.XmlSchemaImporter>
+## See also
+
+- <xref:System.CodeDom.CodeCompileUnit>  
+- <xref:System.CodeDom.CodeNamespace>  
+- <xref:System.CodeDom.CodeNamespaceImport>  
+- <xref:Microsoft.CSharp.CSharpCodeProvider>  
+- <xref:System.Xml.Serialization.IXmlSerializable>  
+- <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension>  
+- <xref:System.CodeDom>  
+- <xref:System.CodeDom.Compiler>  
+- <xref:System.Web.Services.Description>  
+- <xref:System.Web.Services.Discovery>  
+- <xref:System.Xml.Serialization>  
+- <xref:System.Uri>  
+- <xref:Microsoft.VisualBasic.VBCodeProvider>  
+- <xref:System.Web.Services.Description.WebReference>  
+- <xref:System.Xml.Serialization.XmlSchemaImporter>

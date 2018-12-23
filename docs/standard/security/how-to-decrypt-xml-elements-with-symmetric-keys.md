@@ -75,6 +75,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
  When you are done using a symmetric cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  
   
-## See Also  
- <xref:System.Security.Cryptography.Xml>  
- [How to: Encrypt XML Elements with Symmetric Keys](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)
+## See also
+
+- <xref:System.Security.Cryptography.Xml>  
+- [How to: Encrypt XML Elements with Symmetric Keys](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)

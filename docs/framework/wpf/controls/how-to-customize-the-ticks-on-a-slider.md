@@ -22,4 +22,4 @@ This example shows how to create a <xref:System.Windows.Controls.Slider> control
  <xref:System.Windows.Controls.Slider>  
  <xref:System.Windows.Controls.Primitives.TickBar>  
  <xref:System.Windows.Controls.Slider.TickPlacement%2A>  
- [Slider How-to Topics](http://msdn.microsoft.com/library/534be86c-afb2-425d-8186-631278a9925e)
+ [Slider How-to Topics](https://msdn.microsoft.com/library/534be86c-afb2-425d-8186-631278a9925e)

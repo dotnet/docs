@@ -19,5 +19,6 @@ The XML Document Object Model (DOM) is completely namespace-aware. Only namespac
   
 -   If a colon is found, then the name is split into two parts based on the position of the first colon character. The prefix is set to the string found before the colon, and local name is set to the string found after the colon. For methods that do not take a NamespaceURI value, the NamespaceURI is not resolved and remains set to empty string. Otherwise, the NamespaceURI is set to the string passed to the method. If the prefix is undefined, then the **Save** method and **InnerXml** and **OuterXml** properties fail.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

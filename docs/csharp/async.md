@@ -1,20 +1,20 @@
 ---
-title: Asynchronous programming
+title: Asynchronous programming - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: cartermp
 ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
+ms.custom: seodec18
 ---
-
 # Asynchronous programming
 
 If you have any I/O-bound needs (such as requesting data from a network or accessing a database), you'll want to utilize asynchronous programming.  You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
 
-C# has a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](https://msdn.microsoft.com/library/hh873175.aspx).
+C# has a language-level asynchronous programming model which allows for easily writing asynchronous code without having to juggle callbacks or conform to a library which supports asynchrony. It follows what is known as the [Task-based Asynchronous Pattern (TAP)](../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
 ## Basic Overview of the Asynchronous Model
 
-The core of async programming are the `Task` and `Task<T>` objects, which model asynchronous operations.  They are supported by the `async` and `await` keywords.  The model is fairly simple in most cases: 
+The core of async programming is the `Task` and `Task<T>` objects, which model asynchronous operations.  They are supported by the `async` and `await` keywords.  The model is fairly simple in most cases: 
 
 For I/O-bound code, you `await` an operation which returns a `Task` or `Task<T>` inside of an `async` method.
 
@@ -103,7 +103,7 @@ Here are two questions you should ask before you write any code:
     
 If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../standard/async-in-depth.md).
 
-If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the Task Parallel Library.
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
 
 Additionally, you should always measure the execution of your code.  For example, you may find yourself in a situation where your CPU-bound work is not costly enough compared with the overhead of context switches when multithreading.  Every choice has its tradeoff, and you should pick the correct tradeoff for your situation.
 
@@ -113,7 +113,7 @@ The following examples demonstrate various ways you can write async code in C#. 
 
 ### Extracting Data from a Network
 
-This snippet downloads the HTML from www.dotnetfoundation.org and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
+This snippet downloads the HTML from the homepage at [www.dotnetfoundation.org](https://www.dotnetfoundation.org) and counts the number of times the string ".NET" occurs in the HTML.  It uses ASP.NET MVC to define a web controller method which performs this task, returning the number.
 
 > [!NOTE]
 > If you plan on doing HTML parsing in production code, don't use regular expressions. Use a parsing library instead.
@@ -127,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }
@@ -141,7 +141,7 @@ private readonly HttpClient _httpClient = new HttpClient();
 private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 {
     // Capture the task handle here so we can await the background task later.
-    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("http://www.dotnetfoundation.org");
+    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("https://www.dotnetfoundation.org");
 
     // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
     // This is important to do here, before the "await" call, so that the user
@@ -259,5 +259,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 ## Other Resources
 
 * [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
-* [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
+* [Asynchronous programming with async and await (C#)](./programming-guide/concepts/async/index.md)
 * Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) are a wonderful resource for async programming

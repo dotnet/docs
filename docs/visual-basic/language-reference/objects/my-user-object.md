@@ -1,5 +1,5 @@
 ---
-title: "My.User Object"
+title: "My.User Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.User property"

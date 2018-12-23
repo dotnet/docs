@@ -44,7 +44,7 @@ HRESULT ConnectServerWmi (
 [in] Pointer to a valid `BSTR` that contains the object path of the correct WMI namespace. See the [Remarks](#remarks) section for more information.
 
 `strUser`
-[in] A pointer to a valid `BSTR` that contains the user name. A `null` value indicates the current security context. If the user is from a different domain than the current one, `strUser` can also contain the domain and user name separated by a backslash. `strUser` can also be in user principal name (UPN) format, suhc as *userName@domainName*. See the [Remarks](#remarks) section for more information.
+[in] A pointer to a valid `BSTR` that contains the user name. A `null` value indicates the current security context. If the user is from a different domain than the current one, `strUser` can also contain the domain and user name separated by a backslash. `strUser` can also be in user principal name (UPN) format, such as `userName@domainName`. See the [Remarks](#remarks) section for more information.
 
 `strPassword`
 [in] A pointer to a valid `BSTR` that contains the password. A `null` indicates the current security context. An empty string ("") indicates a valid zero-length password.
@@ -70,10 +70,10 @@ HRESULT ConnectServerWmi (
 | NTLMDOMAIN:*domain name* | NT LAN Manager authentication is used, and this parameter contains an NTLM domain name. |
 
 `pCtx`   
-[in] Typically, this parameter is is `null`. Otherwise, it is a pointer to an [IWbemContext](https://msdn.microsoft.com/library/aa391465%28v=vs.85%29.aspx) object required by one or more dynamic class providers. 
+[in] Typically, this parameter is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) object required by one or more dynamic class providers. 
 
 `ppNamespace`  
-[out] When the function returns, receives a pointer to an [IWbemServices](https://msdn.microsoft.com/library/aa392093(v=vs.85).aspx) object bound to the specified namespace. It is set to point to `null` when there is an error.
+[out] When the function returns, receives a pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object bound to the specified namespace. It is set to point to `null` when there is an error.
 
 `impLevel`  
 [in] The impersonation level.
@@ -94,7 +94,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemLocator::ConnectServer](https://msdn.microsoft.com/libraryaa391769%28v=vs.85%29.aspx) method.
+This function wraps a call to the [IWbemLocator::ConnectServer](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemlocator-connectserver) method.
 
  For local access to the default namespace, `strNetworkResource` can be a simple object path: "root\default" or "\\.\root\default". For access to the default namespace on a remote computer using COM or Microsoft-compatible networking, include the computer name: "\\myserver\root\default". The computer name also can be a DNS name or IP address. The `ConnectServerWmi` function can also connect with computers running IPv6 using an IPv6 address.
 

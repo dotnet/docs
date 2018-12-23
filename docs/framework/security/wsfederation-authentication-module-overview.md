@@ -3,7 +3,6 @@ title: "WSFederation Authentication Module Overview"
 ms.date: "03/30/2017"
 ms.assetid: 02c4d5e8-f0a7-49ee-9cf5-3647578510ad
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # WSFederation Authentication Module Overview
 Windows Identity Foundation (WIF) includes support for federated authentication in ASP.NET applications through the WS-Federated Authentication Module (WS-FAM). This topic will help you understand how federated authentication works and how to use it.  

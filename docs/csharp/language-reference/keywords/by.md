@@ -1,5 +1,7 @@
 ---
-title: "by contextual keyword (C# Reference)"
+title: "by contextual keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "by"
@@ -20,4 +22,4 @@ The following example shows the use of the `by` contextual keyword in a `group` 
 
 ## See also
 
-[LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

@@ -40,7 +40,7 @@ Specifies a digest type credential used when authenticating the client to a serv
 ## Remarks  
  A digest is a hash determined by using an algorithm and a set of inputs. The authenticator and the authenticated agree upon an algorithm and exchange the data used as inputs. The client can calculate the hash and send it to the service. The service also calculates the hash and compares the values. A match validates the client.  
   
- This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](http://go.microsoft.com/fwlink/?LinkId=88443).  
+ This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
   
 ## See Also  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  

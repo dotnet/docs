@@ -39,4 +39,4 @@ Toolbar with Overflow Items
  <xref:System.Windows.Controls.Primitives.ToolBarPanel>  
  <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>  
  [Style Controls on a ToolBar](../../../../docs/framework/wpf/controls/how-to-style-controls-on-a-toolbar.md)  
- [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)
+ [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)

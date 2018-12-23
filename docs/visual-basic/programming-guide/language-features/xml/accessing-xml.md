@@ -38,7 +38,7 @@ Visual Basic provides XML axis properties for accessing and navigating [!INCLUDE
  Shows how to declare an XML namespace prefix and use it to create and access XML elements.  
   
 ## Related Sections  
- [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../../../visual-basic/language-reference/xml-axis/index.md)  
  Provides links to sections describing the various XML access properties.  
   
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  

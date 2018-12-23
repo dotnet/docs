@@ -99,7 +99,7 @@ When working with animations in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla
   
  There are different ways to remove an animation. The following techniques can be used to remove animations that belong to a <xref:System.Windows.Media.Animation.Storyboard>.  
   
--   To remove a <xref:System.Windows.Media.Animation.Storyboard> you started with an event trigger, see [How to: Remove a Storyboard](http://msdn.microsoft.com/library/7fe39531-de2f-46a0-a69f-b783d04235ee).  
+-   To remove a <xref:System.Windows.Media.Animation.Storyboard> you started with an event trigger, see [How to: Remove a Storyboard](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749412(v=vs.90)).  
   
 -   To use code to remove a <xref:System.Windows.Media.Animation.Storyboard>, see the <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> method.  
   

@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "templates, Windows Service"
 ms.assetid: 0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Create Windows Services
 When you create a service, you can use a Visual Studio project template called **Windows Service**. This template automatically does much of the work for you by referencing the appropriate classes and namespaces, setting up the inheritance from the base class for services, and overriding several of the methods you're likely to want to override.  

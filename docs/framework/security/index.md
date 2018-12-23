@@ -3,7 +3,6 @@ title: "Windows Identity Foundation"
 ms.date: "03/30/2017"
 ms.assetid: 7eb50bcb-38d8-4afb-86aa-2573586697c2
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # Windows Identity Foundation
 -   [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)  

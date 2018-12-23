@@ -43,13 +43,13 @@ Describes how to create applications for Windows 10 that you can make available 
 [.NET for UWP apps](https://msdn.microsoft.com/library/windows/apps/mt185501.aspx)  
 Describes the .NET Framework support for Store apps, which can be deployed to Windows computers and devices.
 
-[.NET API for Windows Phone Silverlight](https://docs.microsoft.com/en-us/previous-versions/windows/apps/jj207211\(v=vs.105\))  
+[.NET API for Windows Phone Silverlight](https://docs.microsoft.com/previous-versions/windows/apps/jj207211\(v=vs.105\))  
 Lists the .NET Framework APIs you can use for building apps with Windows Phone Silverlight.
   
 [Developing for Multiple Platforms](../../docs/standard/cross-platform/index.md)  
 Describes the different methods you can use the .NET Framework to target multiple client app types.
 
-[Get Started with ASP.NET Web Sites](http://www.asp.net/get-started/websites)  
+[Get Started with ASP.NET Web Sites](https://www.asp.net/get-started/websites)  
 Describes the ways you can develop web apps using ASP.NET.
 
 ## See also

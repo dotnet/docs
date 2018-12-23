@@ -1,5 +1,7 @@
 ---
-title: "decimal keyword (C# Reference)"
+title: "decimal keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "decimal_CSharpKeyword"
@@ -14,7 +16,7 @@ The `decimal` keyword indicates a 128-bit data type. Compared to other floating-
 
 |Type|Approximate Range|Precision|.NET type|
 |----------|-----------------------|---------------|-------------------------|
-|`decimal`|(-7.9 x 10<sup>28</sup> to 7.9 x 10<sup>28</sup>) / (10<sup>0</sup> to 10<sup>28</sup>)|28-29 significant digits|<xref:System.Decimal?displayProperty=nameWithType>|
+|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 significant digits|<xref:System.Decimal?displayProperty=nameWithType>|
 
 The default value of a `decimal` is 0m.
 
@@ -90,12 +92,12 @@ In this example, the output is formatted by using the currency format string. No
 
 ## See also
 
-<xref:System.Decimal>  
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
-[Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
-[Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
-[Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
-[Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
+- <xref:System.Decimal>  
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)  
+- [Built-In Types Table](../../../csharp/language-reference/keywords/built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](../../../csharp/language-reference/keywords/implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](../../../csharp/language-reference/keywords/explicit-numeric-conversions-table.md)  
+- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)

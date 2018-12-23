@@ -68,7 +68,7 @@ Binding customBinding = new CustomBinding(
 ### Example  
  This example implements profile binding in `SampleProfileUdpBinding`, which derives from <xref:System.ServiceModel.Channels.Binding>. The `SampleProfileUdpBinding` contains up to four binding elements within it: one user-created `UdpTransportBindingElement`; and three system-provided: `TextMessageEncodingBindingElement`, `CompositeDuplexBindingElement`, and `ReliableSessionBindingElement`.  
   
-```  
+```csharp
 public override BindingElementCollection CreateBindingElements()  
 {     
     BindingElementCollection bindingElements = new BindingElementCollection();  

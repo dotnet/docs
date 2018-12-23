@@ -39,10 +39,7 @@ to those statements.
 In this topic, you'll build a method  that computes the area of
 different geometric shapes. But, you'll do it without resorting to object
 oriented techniques and building a class hierarchy for the different shapes.
-You'll use *pattern matching* instead. To further emphasize that we're not
-using inheritance, you'll make each shape a `struct` instead of a class. 
-Note that different `struct` types cannot specify a common user defined
-base type, so inheritance is not a possible design.
+You'll use *pattern matching* instead.
 As you go through this sample, contrast this code with how it would
 be structured as an object hierarchy. When the data you must
 query and manipulate is not a class hierarchy, pattern matching enables

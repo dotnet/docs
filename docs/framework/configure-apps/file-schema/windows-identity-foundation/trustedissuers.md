@@ -3,7 +3,6 @@ title: "&lt;trustedIssuers&gt;"
 ms.date: "03/30/2017"
 ms.assetid: d818c917-07b4-40db-9801-8676561859fd
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;trustedIssuers&gt;
 Configures the list of trusted issuer certificates used by the configuration-based issuer name registry (<xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>).  

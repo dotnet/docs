@@ -34,7 +34,7 @@ This section describes the Visual Studio development tools that can assist you i
 netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>  
 ```  
   
- For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](http://go.microsoft.com/fwlink/?LinkId=97877).  
+ For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](https://go.microsoft.com/fwlink/?LinkId=97877).  
   
 ## See Also  
  [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)  

@@ -1,5 +1,5 @@
 ---
-title: "SyncLock Statement"
+title: "SyncLock Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.SyncLock"
@@ -85,8 +85,8 @@ End SyncLock
   
 ### Comments  
   
-## See Also  
- <xref:System.Threading>  
- <xref:System.Threading.Monitor>  
- [Thread Synchronization](../../programming-guide/concepts/threading/thread-synchronization.md)  
- [Threading](../../programming-guide/concepts/threading/index.md)
+## See also
+
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- <xref:System.Threading.Interlocked?displayProperty=nameWithType>
+- [Overview of synchronization primitives](../../../standard/threading/overview-of-synchronization-primitives.md)

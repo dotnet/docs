@@ -31,7 +31,7 @@ This topic provides an overview of the sample [!INCLUDE[TLA#tla_opentype](../../
  ![List of font names in sample font pack](../../../../docs/framework/wpf/advanced/media/samplefontpack01.gif "samplefontpack01")  
 Fonts in the OpenType Font Pack  
   
- The sample fonts are supplied under license from Ascender Corporation. Ascender is a provider of advanced font products. To license extended or custom versions of the sample fonts, see [Ascender Corporation's Web site](http://go.microsoft.com/fwlink/?LinkId=182627).  
+ The sample fonts are supplied under license from Ascender Corporation. Ascender is a provider of advanced font products. To license extended or custom versions of the sample fonts, see [Ascender Corporation's Web site](https://go.microsoft.com/fwlink/?LinkId=182627).  
   
 > [!NOTE]
 >  As a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  

@@ -1,5 +1,6 @@
 ---
-title: "Compiler-Generated Exceptions (C# Programming Guide)"
+title: "Compiler-Generated Exceptions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions [C#], compiler-generated"
@@ -21,10 +22,11 @@ Some exceptions are thrown automatically by the .NET Framework's common language
 |<xref:System.StackOverflowException>|Thrown when the execution stack is exhausted by having too many pending method calls; usually indicates a very deep or infinite recursion.|  
 |<xref:System.TypeInitializationException>|Thrown when a static constructor throws an exception and no compatible `catch` clause exists to catch it.|  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)  
- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
+- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)  
+- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)  
+- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)  
+- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)

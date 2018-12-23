@@ -3,7 +3,6 @@ title: "&lt;tokenReplayDetection&gt;"
 ms.date: "03/30/2017"
 ms.assetid: ac3f588e-5f75-4275-b969-2d492ecc3b47
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;tokenReplayDetection&gt;
 Enables token replay detection and specifies the expiration time for tokens.  

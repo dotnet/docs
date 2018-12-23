@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 1394c2c3-6304-46db-87c1-8e8b16f5ad5b
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;listeners&gt; Element for &lt;trace&gt;
 Specifies a listener that collects, stores, and routes messages. Listeners direct the tracing output to an appropriate target.  

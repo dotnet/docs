@@ -46,7 +46,7 @@ This section provides conceptual information and examples for programming with [
   
  <xref:System.Data.DataView>  
   
-## See Also  
- [LINQ to ADO.NET](http://msdn.microsoft.com/library/be3297b9-1b54-4d4c-82a8-add0d79c2006)  
- [NOT IN BUILD: LINQ General Programming Guide](http://msdn.microsoft.com/library/609c7a6b-cbdd-429d-99f3-78d13d3bc049)  
- [LINQ Framework](http://msdn.microsoft.com/library/897ea0fc-40db-4694-bbe5-7dd339d5bf94)
+## See also
+
+- [LINQ and ADO.NET](linq-and-ado-net.md)  
+- [Language Integrated Query (LINQ)](../../../csharp/programming-guide/concepts/linq/index.md)

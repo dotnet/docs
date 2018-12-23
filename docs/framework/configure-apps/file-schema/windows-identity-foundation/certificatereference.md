@@ -3,7 +3,6 @@ title: "&lt;certificateReference&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 2ac8bc14-e9f1-48fb-b662-f5991558fbe4
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;certificateReference&gt;
 Specifies settings that are used to find and validate an X.509 certificate in a certificate store.  

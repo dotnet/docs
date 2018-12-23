@@ -1,5 +1,6 @@
 ---
-title: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method (C# Programming Guide)"
+title: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structs [C#], passing as method parameter"
@@ -19,8 +20,9 @@ The following example demonstrates how passing a [struct](../../../csharp/langua
 ## Example  
  [!code-csharp[csProgGuideObjects#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method_1.cs)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)

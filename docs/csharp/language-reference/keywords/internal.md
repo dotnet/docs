@@ -1,5 +1,7 @@
 ---
-title: "internal (C# Reference)"
+title: "internal - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "internal_CSharpKeyword"
@@ -69,7 +71,7 @@ public class BaseClass
   
 ```csharp  
 // Assembly2_a.cs  
-// Compile with: /reference:Assembly1.dll  
+// Compile with: /reference:Assembly2.dll  
 public class TestAccess   
 {  
    static void Main()   
@@ -81,15 +83,17 @@ public class TestAccess
 ```  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)  
- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
- [public](../../../csharp/language-reference/keywords/public.md)  
- [private](../../../csharp/language-reference/keywords/private.md)  
- [protected](../../../csharp/language-reference/keywords/protected.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [Accessibility Levels](../../../csharp/language-reference/keywords/accessibility-levels.md)  
+- [Modifiers](../../../csharp/language-reference/keywords/modifiers.md)  
+- [public](../../../csharp/language-reference/keywords/public.md)  
+- [private](../../../csharp/language-reference/keywords/private.md)  
+- [protected](../../../csharp/language-reference/keywords/protected.md)

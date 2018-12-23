@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> Because Portable Class Library projects target only a very specific subset of .NET implementations, we strongly discourage their use in new application development. The recommended replacement is a .NET Standard library, which targets all .NET implementations that support a specific version of the .NET Standard. For more information, see [.NET Standard](~/docs/standard/net-standard.md).

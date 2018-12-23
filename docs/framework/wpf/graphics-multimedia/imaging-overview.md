@@ -48,7 +48,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
  The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
- This topic provides additional information about the managed component. For more information on the unmanaged [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] see the [Unmanaged WPF Imaging Component](https://msdn.microsoft.com/library/ee719902.aspx) documentation.  
+ This topic provides additional information about the managed component. For more information on the unmanaged [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)] see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  
@@ -178,7 +178,7 @@ Image brushes can fill shapes, controls, text, and more
 ## Codec Extensibility  
  A core feature of [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] so new image formats can automatically be used by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
- For a sample of the extensibility [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], see the [Win32 Sample Codec](http://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
+ For a sample of the extensibility [!INCLUDE[TLA2#tla_api](../../../../includes/tla2sharptla-api-md.md)], see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
 >  The codec must be digitally signed for the system to recognize it.  
@@ -189,4 +189,4 @@ Image brushes can fill shapes, controls, text, and more
  <xref:System.Windows.Controls.Image>  
  <xref:System.Windows.Media.Imaging.BitmapMetadata>  
  [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Win32 Sample Codec](http://go.microsoft.com/fwlink/?LinkID=160052)
+ [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052)

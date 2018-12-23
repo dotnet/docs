@@ -1,9 +1,12 @@
 ---
 title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
+dev_langs: 
+  - "csharp"
+  - "vb"
 author: rpetrusha
 ms.author: ronpet
-ms.date: 06/06/2018
+ms.date: 10/10/2018
 ---
 # What's new in .NET Core 2.1
 
@@ -43,7 +46,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
    ```console
    dotnet watch -- --verbose build
    ```
-  
+
    Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
   
    For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch)
@@ -60,7 +63,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 .NET Core 2.1 supports *Global Tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using [`DotnetCliToolReference`](../tools/extensibility.md#consuming-per-project-tools).
 
-To install a Global Tool, you use the [dotnet tool install](..\tools\dotnet-tool-install.md) command. For example:
+To install a Global Tool, you use the [dotnet tool install](../tools/dotnet-tool-install.md) command. For example:
 
 ```console
 dotnet tool install -g dotnetsay
@@ -70,7 +73,7 @@ Once installed, the tool can be run from the command line by specifying the tool
 
 ### Tool management with the `dotnet tool` command
 
-In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` command. The following options are available:
+In .NET Core 2.1 SDK, all tools operations use the `dotnet tool` command. The following options are available:
 
 - [`dotnet tool install`](../tools/dotnet-tool-install.md) to install a tool.
 
@@ -82,7 +85,7 @@ In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` com
 
 ## Roll forward
 
-All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system. 
+All .NET Core applications starting with the .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system.
 
 Starting with .NET Core 2.0, if the version of .NET Core that an application was built with is not present at runtime, the application automatically runs against the latest installed *minor version* of .NET Core. In other words, if an application is built with .NET Core 2.0, and .NET Core 2.0 is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
 
@@ -115,9 +118,10 @@ Self-contained publishing relies on runtime versions on NuGet.org. You do not ne
 
 Using the .NET Core 2.0 SDK, self-contained applications are published with the .NET Core 2.0.0 runtime unless a different version is specified via the `RuntimeFrameworkVersion` property. With this new behavior, you’ll no longer need to set this property to select a higher runtime version for a self-contained application. The easiest approach going forward is to always publish with .NET Core 2.1 SDK (v 2.1.300).
 
+For more information, see [Self-contained deploymnet runtime roll forward](../deploying/runtime-patch-selection.md).
 ## Windows Compatibility Pack
 
-When you port existing code from the .NET Framework to .NET Core, you can use the [Windows Compatibility Pack](https://www.nuget.org/packages/Microsoft.Windows.Compatibility). It provides access to 20,000 more APIs than are available in .NET Core. These APIs include types in the <xref:System.Drawing?displayProperty="nameWithType"> namespace, the <xref:System.Diagnostics.EventLog> class, WMI, Performance Counters, Windows Services, and the Windows registry types and members.
+When you port existing code from the .NET Framework to .NET Core, you can use the [Windows Compatibility Pack](https://www.nuget.org/packages/Microsoft.Windows.Compatibility). It provides access to 20,000 more APIs than are available in .NET Core. These APIs include types in the <xref:System.Drawing?displayProperty=nameWithType> namespace, the <xref:System.Diagnostics.EventLog> class, WMI, Performance Counters, Windows Services, and the Windows registry types and members.
 
 ## JIT compiler improvements
 
@@ -159,9 +163,11 @@ You can opt into tiered compilation in either of two ways.
 
 Without these types, when passing such items as a portion of an array or a section of a memory buffer, you have to make a copy of some portion of the data before passing it to a method. These types provide a virtual view of that data that eliminates the need for the additional memory allocation and copy operations.
 
-The following example uses a <xref:System.Span%601> instance to provide a virtual view of 10 elements of an array.
+The following example uses a <xref:System.Span%601> and <xref:System.Memory%601> instance to provide a virtual view of 10 elements of an array.
 
 [!CODE-csharp[Span\<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
+
+[!CODE-vb[Memory\<T>](~/samples/core/whats-new/whats-new-in-21/vb/program.vb)]
 
 ### Brotli compression
 
@@ -189,7 +195,7 @@ The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:Syst
 
   - <xref:System.Security.Cryptography.CryptographicOperations.ZeroMemory%2A> is a memory-clearing routine that cannot be optimized.
 
-- The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=fullName> method fills a <xref:System.Span%601> with random values.
+- The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=nameWithType> method fills a <xref:System.Span%601> with random values.
 
 - The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms?displayProperty=nameWithType> is now supported on Linux and maxOS.
 
@@ -209,7 +215,7 @@ The sockets implementation introduced in .NET Core 2.1 has a number of advantage
 
 - Consistent behavior across all .NET Core platforms.
 
-<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty="nameWithType"> method:
+<xref:System.Net.Http.SocketsHttpHandler> is the default implementation in .NET Core 2.1. However, you can configure your application to use the older <xref:System.Net.Http.HttpClientHandler> class by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method:
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.UseSocketsHttpHandler", false);
@@ -227,6 +233,6 @@ On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on 
 
 ## See also
 
-[What's new in .NET Core](index.md)  
-[New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
-[What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)
+* [What's new in .NET Core](index.md)  
+* [New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)  
+* [What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)

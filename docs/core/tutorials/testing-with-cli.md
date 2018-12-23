@@ -2,8 +2,8 @@
 title: Organizing and testing projects with the .NET Core command line
 description: This tutorial explains how to organize and test .NET Core projects from the command line.
 author: cartermp
-ms.author: mairaw
-ms.date: 05/16/2017
+ms.date: 09/10/2018
+ms.custom: "seodec18"
 ---
 # Organizing and testing projects with the .NET Core command line
 
@@ -78,7 +78,7 @@ Create the following folder structure with file content indicated:
 
 [!code-xml[NewTypes csproj](../../../samples/core/console-apps/NewTypesMsBuild/src/NewTypes/NewTypes.csproj)]
 
-Execute the following commands:
+Execute the following command:
 
 ```console
 dotnet run
@@ -95,21 +95,21 @@ Optional exercise: You can add a new pet type, such as a `Bird`, by extending th
 
 ### Testing the sample
 
-The `NewTypes` project is in place, and you've organized it by keeping the pets-related types in a folder. Next, create your test project and start writing tests with the [xUnit](https://xunit.github.io/) test framework. Unit testing allows you to automatically check the bevahior of your pet types to confirm that they're operating properly.
+The `NewTypes` project is in place, and you've organized it by keeping the pets-related types in a folder. Next, create your test project and start writing tests with the [xUnit](https://xunit.github.io/) test framework. Unit testing allows you to automatically check the behavior of your pet types to confirm that they're operating properly.
 
-Create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
+Navigate back to the *src* folder and create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
 
 The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```
-dotnet add reference ../../src/NewTypes/NewTypes.csproj
+dotnet add reference ../../NewTypes/NewTypes.csproj
 ```
 
-You also have the option of manually adding the project reference by adding an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
+Or, you also have the option of manually adding the project reference by adding an `<ItemGroup>` node to the *NewTypesTests.csproj* file:
 
 ```xml
 <ItemGroup>
-  <ProjectReference Include="../../src/NewTypes/NewTypes.csproj" />
+  <ProjectReference Include="../../NewTypes/NewTypes.csproj" />
 </ItemGroup>
 ```
 
@@ -156,7 +156,7 @@ public class PetTests
 Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
 
 > [!NOTE]
-> Although you expect that the `expected` and `actual` values are equal, the initial assertions with the `Assert.NotEqual` checks specify that they are *not equal*. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you adjust the assertions to allow them to pass.
+> Although you expect that the `expected` and `actual` values are equal, an initial assertion with the `Assert.NotEqual` check specifies that these values are *not equal*. Always initially create a test to fail in order to check the logic of the test. After you confirm that the test fails, adjust the assertion to allow the test to pass.
 
 The following shows the complete project structure:
 
@@ -183,47 +183,33 @@ Start in the *test/NewTypesTests* directory. Restore the test project with the [
 
  
 As expected, testing fails, and the console displays the following output:
- 
+
 ```
-Test run for C:\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp1.1\NewTypesTests.dll(.NETCoreApp,Version=v1.1)
-Microsoft (R) Test Execution Command Line Tool Version 15.0.0.0
+Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
-[xUnit.net 00:00:00.7271827]   Discovering: NewTypesTests
-[xUnit.net 00:00:00.8258687]   Discovered:  NewTypesTests
-[xUnit.net 00:00:00.8663545]   Starting:    NewTypesTests
-[xUnit.net 00:00:01.0109236]     PetTests.CatTalkToOwnerReturnsMeow [FAIL]
-[xUnit.net 00:00:01.0119107]       Assert.NotEqual() Failure
-[xUnit.net 00:00:01.0120278]       Expected: Not "Meow!"
-[xUnit.net 00:00:01.0120968]       Actual:   "Meow!"
-[xUnit.net 00:00:01.0130500]       Stack Trace:
-[xUnit.net 00:00:01.0141240]         C:\NewTypesMsBuild\test\NewTypesTests\PetTests.cs(22,0): at PetTests.CatTalkToOwnerReturnsMeow()
-[xUnit.net 00:00:01.0272364]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
-[xUnit.net 00:00:01.0273649]       Assert.NotEqual() Failure
-[xUnit.net 00:00:01.0274166]       Expected: Not "Woof!"
-[xUnit.net 00:00:01.0274690]       Actual:   "Woof!"
-[xUnit.net 00:00:01.0275264]       Stack Trace:
-[xUnit.net 00:00:01.0275960]         C:\NewTypesMsBuild\test\NewTypesTests\PetTests.cs(13,0): at PetTests.DogTalkToOwnerReturnsWoof()
-[xUnit.net 00:00:01.0294509]   Finished:    NewTypesTests
-Failed   PetTests.CatTalkToOwnerReturnsMeow
-Error Message:
- Assert.NotEqual() Failure
-Expected: Not "Meow!"
-Actual:   "Meow!"
-Stack Trace:
-   at PetTests.CatTalkToOwnerReturnsMeow() in C:\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 22
+[xUnit.net 00:00:00.77]     PetTests.DogTalkToOwnerReturnsWoof [FAIL]
+[xUnit.net 00:00:00.78]     PetTests.CatTalkToOwnerReturnsMeow [FAIL]
 Failed   PetTests.DogTalkToOwnerReturnsWoof
 Error Message:
  Assert.NotEqual() Failure
 Expected: Not "Woof!"
 Actual:   "Woof!"
 Stack Trace:
-   at PetTests.DogTalkToOwnerReturnsWoof() in C:\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 13
+   at PetTests.DogTalkToOwnerReturnsWoof() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 13
+Failed   PetTests.CatTalkToOwnerReturnsMeow
+Error Message:
+ Assert.NotEqual() Failure
+Expected: Not "Meow!"
+Actual:   "Meow!"
+Stack Trace:
+   at PetTests.CatTalkToOwnerReturnsMeow() in c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\PetTests.cs:line 22
 
 Total tests: 2. Passed: 0. Failed: 2. Skipped: 0.
 Test Run Failed.
-Test execution time: 2.1371 Seconds
+Test execution time: 1.7000 Seconds
 ```
 
 Change the assertions of your tests from `Assert.NotEqual` to `Assert.Equal`:
@@ -233,18 +219,15 @@ Change the assertions of your tests from `Assert.NotEqual` to `Assert.Equal`:
 Re-run the tests with the `dotnet test` command and obtain the following output:
 
 ```
-Microsoft (R) Test Execution Command Line Tool Version 15.0.0.0
+Test run for c:\Users\ronpet\repos\samples\core\console-apps\NewTypesMsBuild\test\NewTypesTests\bin\Debug\netcoreapp2.1\NewTypesTests.dll(.NETCoreApp,Version=v2.1)
+Microsoft (R) Test Execution Command Line Tool Version 15.8.0
 Copyright (c) Microsoft Corporation.  All rights reserved.
 
 Starting test execution, please wait...
-[xUnit.net 00:00:01.3882374]   Discovering: NewTypesTests
-[xUnit.net 00:00:01.4767970]   Discovered:  NewTypesTests
-[xUnit.net 00:00:01.5157667]   Starting:    NewTypesTests
-[xUnit.net 00:00:01.6408870]   Finished:    NewTypesTests
 
 Total tests: 2. Passed: 2. Failed: 0. Skipped: 0.
 Test Run Successful.
-Test execution time: 1.6634 Seconds
+Test execution time: 1.6029 Seconds
 ```
 
 Testing passes. The pet types' methods return the correct values when talking to the owner.

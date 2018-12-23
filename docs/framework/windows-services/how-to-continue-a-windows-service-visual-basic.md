@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "pausing Windows Service applications"
 ms.assetid: e5d13760-4c83-4b0d-abef-39852677cd7a
 author: "ghogen"
-manager: "douge"
 ---
 # How to: Continue a Windows Service (Visual Basic)
 This example uses the <xref:System.ServiceProcess.ServiceController> component to continue the IIS Admin service on the local computer.  

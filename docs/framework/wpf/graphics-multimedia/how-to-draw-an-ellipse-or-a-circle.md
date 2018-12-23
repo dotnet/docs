@@ -22,9 +22,9 @@ This example shows how to draw ellipses and circles by using the <xref:System.Wi
   
  Although this example uses a <xref:System.Windows.Controls.Canvas> to contain the ellipses, you can use ellipse elements (and all the other shape elements) with any <xref:System.Windows.Controls.Panel> or <xref:System.Windows.Controls.Control> that supports non-text content.  
   
- This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037).  
+ This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See Also  
  <xref:System.Windows.Shapes.Ellipse>  
  <xref:System.Windows.Shapes.Shape>  
- [Shape Elements Sample](http://go.microsoft.com/fwlink/?LinkID=160037)
+ [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)

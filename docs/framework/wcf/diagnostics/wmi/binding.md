@@ -8,7 +8,7 @@ wmi Binding
   
 ## Syntax  
   
-```  
+```csharp
 class Binding  
 {  
   BindingElement BindingElements[];  

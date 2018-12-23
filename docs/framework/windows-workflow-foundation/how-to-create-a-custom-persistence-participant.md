@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1d9cc47a-8966-4286-94d5-4221403d9c06
 ---
 # How to: Create a Custom Persistence Participant
-The following procedure has steps to create a persistence participant. See the [Participating in Persistence](http://go.microsoft.com/fwlink/?LinkID=177735) sample and [Store Extensibility](../../../docs/framework/windows-workflow-foundation/store-extensibility.md) topic for sample implementations of persistence participants.  
+The following procedure has steps to create a persistence participant. See the [Participating in Persistence](https://go.microsoft.com/fwlink/?LinkID=177735) sample and [Store Extensibility](../../../docs/framework/windows-workflow-foundation/store-extensibility.md) topic for sample implementations of persistence participants.  
   
 1.  Create a class deriving from the <xref:System.Activities.Persistence.PersistenceParticipant> or the <xref:System.Activities.Persistence.PersistenceIOParticipant> class. The PersistenceIOParticipant class offers the same extensibility points as the PersistenceParticipant class in addition to being able to participate in I/O operations. Follow one or more of the following steps.  
   

@@ -12,7 +12,7 @@ This example adds the value pair, "Name" and "Isabella", to the current user's r
   
 ## Example  
   
-```  
+```csharp  
 Microsoft.Win32.RegistryKey key;  
 key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey("Names");  
 key.SetValue("Name", "Isabella");  
@@ -49,8 +49,9 @@ key.Close();
   
  It is not secure to store secrets, such as passwords, in the registry as plain text, even if the registry key is protected by access control lists (ACL).  
   
-## See Also  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)  
- [Read, write and delete from the registry with C#](http://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)
+## See Also
+
+- <xref:System.IO?displayProperty=nameWithType>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)  
+- [Read, write and delete from the registry with C#](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

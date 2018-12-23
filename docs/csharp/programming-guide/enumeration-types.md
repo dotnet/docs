@@ -1,5 +1,6 @@
 ---
-title: "Enumeration types (C# Programming Guide)"
+title: "Enumeration types - C# Programming Guide"
+ms.custom: seodec18
 ms.date: "09/10/2017"
 helpviewer_keywords: 
   - "enumerations [C#]"
@@ -81,7 +82,8 @@ For more information, see <xref:System.Enum?displayProperty=nameWithType>.
 
 You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
-## See also
- <xref:System.Enum?displayProperty=nameWithType>  
- [C# Programming Guide](../../csharp/programming-guide/index.md)  
- [enum](../../csharp/language-reference/keywords/enum.md)
+## See Also
+
+- <xref:System.Enum?displayProperty=nameWithType>  
+- [C# Programming Guide](../../csharp/programming-guide/index.md)  
+- [enum](../../csharp/language-reference/keywords/enum.md)

@@ -1,5 +1,7 @@
 ---
-title: "&lt;&lt; Operator (C# Reference)"
+title: "&lt;&lt; Operator - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "<<_CSharpKeyword"
@@ -26,7 +28,8 @@ The left-shift operator (`<<`) shifts its first operand left by the number of bi
 ## Comments  
  Note that `i<<1` and `i<<33` give the same result, because 1 and 33 have the same low-order five bits.  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Operators](../../../csharp/language-reference/operators/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Operators](../../../csharp/language-reference/operators/index.md)

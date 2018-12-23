@@ -14,7 +14,7 @@ ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
 This example shows how to define and use an application-scope custom resource dictionary.  
   
 ## Example  
- <xref:System.Windows.Application> exposes an application-scope store for shared resources: <xref:System.Windows.Application.Resources%2A>. By default, the <xref:System.Windows.Application.Resources%2A> property is initialized with an instance of the <xref:System.Windows.ResourceDictionary> type. You use this instance when you get and set application-scope properties using <xref:System.Windows.Application.Resources%2A>. For more information, see [How to: Get and Set an Application-Scope Resource](http://msdn.microsoft.com/library/39e0420c-c9fc-47dc-8956-fdd95b214095).
+ <xref:System.Windows.Application> exposes an application-scope store for shared resources: <xref:System.Windows.Application.Resources%2A>. By default, the <xref:System.Windows.Application.Resources%2A> property is initialized with an instance of the <xref:System.Windows.ResourceDictionary> type. You use this instance when you get and set application-scope properties using <xref:System.Windows.Application.Resources%2A>. For more information, see [How to: Get and Set an Application-Scope Resource](https://msdn.microsoft.com/library/39e0420c-c9fc-47dc-8956-fdd95b214095).
   
  If you have multiple resources that you set using <xref:System.Windows.Application.Resources%2A>, you can instead use a custom resource dictionary to store those resources and set <xref:System.Windows.Application.Resources%2A> with it instead. The following shows how you declare a custom resource dictionary using XAML.
   

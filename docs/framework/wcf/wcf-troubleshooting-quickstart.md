@@ -96,7 +96,7 @@ public class MyServiceHost : ServiceHost
   
 -   You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
   
--   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](http://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113).  
+-   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](https://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113).  
   
 -   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   
@@ -130,9 +130,9 @@ public class MyServiceHost : ServiceHost
   
 -   [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)  
   
--   [Registering Kerberos Service Principal Names by Using Http.sys](http://go.microsoft.com/fwlink/?LinkId=86943)  
+-   [Registering Kerberos Service Principal Names by Using Http.sys](https://go.microsoft.com/fwlink/?LinkId=86943)  
   
--   [Kerberos Explained](http://go.microsoft.com/fwlink/?LinkId=86946)  
+-   [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkId=86946)  
   
 <a name="BKMK_q5"></a>   
 ## When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?  

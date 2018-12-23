@@ -47,7 +47,7 @@ Ordinarily, the compiler uses type inference in determining parameter types. How
 
 [!code-csharp[csSnippets.Lambdas](../../samples/snippets/csharp/concepts/lambda-expressions/expression3.cs#3)]
 
-Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server or Entity Framework (EF), you should refrain from using method calls in lambda expressions, since the methods may have no meaning outside the context of the .NET implementation. If you do choose to use method calls in this case, be sure to test them thoroughly to ensure that the method calls can be successfuly resolved.
+Note in the previous example that the body of an expression lambda can consist of a method call. However, if you are creating expression trees that are evaluated outside of the .NET Framework, such as in SQL Server or Entity Framework (EF), you should refrain from using method calls in lambda expressions, since the methods may have no meaning outside the context of the .NET implementation. If you do choose to use method calls in this case, be sure to test them thoroughly to ensure that the method calls can be successfully resolved.
 
 ## Statement lambdas ##
 
@@ -73,7 +73,7 @@ For more information about how to create and use async methods, see [Asynchronou
 
 ## Lambda expressions and tuples ##
 
-Starting with C# 7.0, the C# language provides built-in support for tuples. You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components. 
+Starting with C# 7.0, the C# language provides built-in support for tuples. You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with 5 components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with 5 components that contains the result of the multiplications.
 
@@ -149,6 +149,6 @@ Lambdas can refer to *outer variables* (see [Anonymous methods](programming-guid
 
 ## See also ##
 
-[LINQ (Language-Integrated Query)](../standard/using-linq.md)   
-[Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)   
-[Expression trees](expression-trees.md)
+- [LINQ (Language-Integrated Query)](../standard/using-linq.md)
+- [Anonymous methods](programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [Expression trees](expression-trees.md)

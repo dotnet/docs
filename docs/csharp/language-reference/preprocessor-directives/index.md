@@ -33,5 +33,6 @@ Although the compiler doesn't have a separate preprocessor, the directives descr
 A preprocessor directive must be the only instruction on a line.
 
 ## See also
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)

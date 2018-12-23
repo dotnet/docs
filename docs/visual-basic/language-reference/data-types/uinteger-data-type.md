@@ -1,5 +1,5 @@
 ---
-title: "UInteger Data Type"
+title: "UInteger Data Type (Visual Basic)"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.uinteger"
@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "UI literal type characters [Visual Basic]"
   - "data types [Visual Basic], integral"
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # UInteger data type
 
@@ -52,7 +50,7 @@ Dim number As UInteger = &H_0F8C_0326
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `UI` or `ui` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UInteger` data type, as the following example shows.
+Numeric literals can also include the `UI` or `ui` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `UInteger` data type, as the following example shows.
 
 ```vb
 Dim number = &H_0FAC_14D7ui
@@ -76,7 +74,7 @@ Dim number = &H_0FAC_14D7ui
   
 ## See Also  
  <xref:System.UInt32>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
  [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)  

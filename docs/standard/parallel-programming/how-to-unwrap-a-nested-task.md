@@ -37,6 +37,7 @@ You can return a task from a method, and then wait on or continue from that task
  [!code-csharp[TPL_UnWrap#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_unwrap/cs/unwrapprogram.cs#04)]
  [!code-vb[TPL_UnWrap#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_unwrap/vb/snippet04.vb#04)]  
   
-## See Also  
- <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>  
- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+## See also
+
+- <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>  
+- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)

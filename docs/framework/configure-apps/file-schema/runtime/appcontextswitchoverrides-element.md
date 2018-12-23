@@ -1,7 +1,7 @@
 ---
 title: "&lt;AppContextSwitchOverrides&gt; Element"
 ms.custom: "updateeachrelease"
-ms.date: "04/19/2018"
+ms.date: "09/19/2018"
 helpviewer_keywords: 
   - "AppContextSwitchOverrides"
   - "compatibility switches"
@@ -87,7 +87,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Security.Cryptography.`<br/>`DoNotAddrOfCspParentWindowHandle`|Controls whether the value of the [CspParameters.ParentWindowHandle](xref:System.Security.Cryptography.CspParameters.ParentWindowHandle) property is an [IntPtr](xref:System.IntPtr) that represents the memory location of a window handle, or whether it is a window handle (an HWND). For more information, see [Mitigation: CspParameters.ParentWindowHandle Expects an HWND](Mitigation:%20CspParameters.ParentWindowHandle%20Expects%20an%20HWND.md). |.NET Framework 4.7|   
 |`Switch.System.Security.Cryptography.Pkcs.`<br/>`UseInsecureHashAlgorithms`|Determines whether the default for some SignedCMS operations is SHA1 or SHA256. |.NET Framework 4.7.1|
 |`Switch.System.Security.Cryptography.Xml.`<br/>`UseInsecureHashAlgorithms`|Determines whether the default for some SignedXML operations is SHA1 or SHA256. |.NET Framework 4.7.1|
-|`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|Determines whether the `TransportWithMessageCredential` security mode allows messages with an unsigned "to" header. This is an opt-in switch. For more information, see [Runtime Changes in the .NET Framework 4.6.1](https://msdn.microsoft.com/library/mt592686.aspx#WCF).|.NET Framework 4.6.1| 
+|`Switch.System.ServiceModel.`<br/>`AllowUnsignedToHeader`|Determines whether the `TransportWithMessageCredential` security mode allows messages with an unsigned "to" header. This is an opt-in switch. For more information, see [Runtime Changes in the .NET Framework 4.6.1](~/docs/framework/migration-guide/runtime/4.5.2-4.6.1.md#windows-communication-foundation-wcf).|.NET Framework 4.6.1| 
 |`Switch.System.ServiceModel.`<br/>`DisableAddressHeaderCollectionValidation`>|Controls whether the <xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})> constructor throws an <xref:System.ArgumentException> if one of the elements is `null`.|.NET Framework 4.7.1| 
 |`Switch.System.ServiceModel.`<br />`DisableCngCertificates`|Determines whether the attempt to use X509 certificates with a CSG key storage provider throws an exception. For more information, see [WCF transport security supports certificates stored using CNG](~/docs/framework/migration-guide/retargeting/4.6.1-4.6.2.md#wcf-transport-security-supports-certificates-stored-using-cng).|.NET Framework 4.6.1|
 |`Switch.System.ServiceModel.`<br/>`DisableExplicitConnectionCloseHeader`|When using the HTTP transport with a self-hosted service, setting this value to `true` causes WCF to ignore an application adding the `Connection: close` header to the response headers for a request. Setting this value to `false` enables adding the `Connection: close` header to the response headers, which results in closing the request socket after a response has been sent.|.NET Framework 4.6|
@@ -119,7 +119,21 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
   
  Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.  
   
-## Example  
+## Switches in ASP.NET applications
+
+You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](~/docs/framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](~/docs/framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. 
+
+The following example uses the `<add>` element to add two settings to the `<appSettings>` section of a web.config file:
+
+```xml
+<appSettings>
+  <add key="AppContext.SetSwitch:Switch.System.Globalization.NoAsyncCurrentCulture" value="true" />
+  <add key="AppContext.SetSwitch:Switch.System.Uri.DontEnableStrictRFC3986ReservedCharacterSets" value="true" />
+</appSettings>
+```
+
+## Example
+
  The following example uses the `AppContextSwitchOverrides` element to define a single application  compatibility switch, `Switch.System.Globalization.NoAsyncCurrentCulture`, that prevents culture from flowing across threads in asynchronous method calls.  
   
 ```xml  
@@ -142,6 +156,6 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 ```  
   
 ## See Also  
- <xref:System.AppContext?displayProperty=nameWithType>  
- [\<runtime> Element](runtime-element.md)  
- [\<configuration> Element](../configuration-element.md)
+- <xref:System.AppContext?displayProperty=nameWithType>  
+- [\<runtime> Element](runtime-element.md)  
+- [\<configuration> Element](../configuration-element.md)

@@ -1,6 +1,6 @@
 ---
 title: "Abstract Class Design"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "type design guidelines, abstract classes"
@@ -10,8 +10,7 @@ helpviewer_keywords:
   - "classes [.NET Framework], design guidelines"
   - "type design guidelines, classes"
 ms.assetid: d3646e6d-5c1f-4922-8fb0-ec5effb30d60
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Abstract Class Design
 **X DO NOT** define public or protected internal constructors in abstract types.  
@@ -32,6 +31,7 @@ ms.author: "ronpet"
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+## See also
+
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

@@ -61,7 +61,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The size of an ETW event is limited by the ETW buffer size, or the by the maximum payload for an ETW event, whichever value is smaller. If the size of the event exceeds either of these ETW limits, the event is truncated and its content removed in an arbitrary manner. Variables, arguments, annotations and custom data are not selectively removed. In the case of truncation, all of these are truncated regardless of the value that caused the event size to exceed the ETW limit.  The removed data is replaced with `<item>..<item>`.  
   
- Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the [NetDataContractSerializer Class](http://go.microsoft.com/fwlink/?LinkId=177537). This class includes CLR-type information in the serialized XML steam.  
+ Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the [NetDataContractSerializer Class](https://go.microsoft.com/fwlink/?LinkId=177537). This class includes CLR-type information in the serialized XML steam.  
   
  Truncation of payload data due to ETW limits can result in duplicate tracking records being sent to an ETW session. This can occur if more than one session is listening for the events and the sessions have different payload limits for the events.  
   
@@ -135,5 +135,5 @@ instance.Extensions.Add(new ConsoleTrackingParticipant());
 ```  
   
 ## See Also  
- [Windows Server App Fabric Monitoring](http://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](http://go.microsoft.com/fwlink/?LinkId=201275)
+ [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)  
+ [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

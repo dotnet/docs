@@ -46,8 +46,9 @@ Use the following process to apply an attribute to an element of your code.
   
  When this attribute is applied, the string `"My Assembly"` is placed in the assembly manifest in the metadata portion of the file. You can view the attribute either by using the [MSIL Disassembler (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) or by creating a custom program to retrieve the attribute.  
   
-## See Also  
- [Attributes](../../../docs/standard/attributes/index.md)  
- [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
- [Concepts](/cpp/windows/attributed-programming-concepts)  
- [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+## See also
+
+- [Attributes](../../../docs/standard/attributes/index.md)  
+- [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
+- [Concepts](/cpp/windows/attributed-programming-concepts)  
+- [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -1,7 +1,7 @@
 ---
 title: Transport Layer Security (TLS) best practices with the .NET Framework
 description: Describes best practices using Transport Layer Security (TLS) with the .NET Framework
-ms.date: 03/15/2018
+ms.date: 10/22/2018
 helpviewer_keywords: 
   - "sending data, Internet security"
   - "protocols, Internet security"
@@ -12,11 +12,10 @@ helpviewer_keywords:
   - "Internet, security"
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
-author: "blowdart"
 ---
 # Transport Layer Security (TLS) best practices with the .NET Framework
 
-The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.2](https://tools.ietf.org/html/rfc5246) is the newest released standard and provides security improvements over previous versions. TLS 1.2 will eventually be replaced by [TLS 1.3](https://tools.ietf.org/html/draft-ietf-tls-tls13-22). This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
+The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. [TLS 1.2](https://tools.ietf.org/html/rfc5246) is a standard that provides security improvements over previous versions. TLS 1.2 will eventually be replaced by the newest released standard [TLS 1.3](https://tools.ietf.org/html/rfc8446) which is faster and has improved security. This article presents recommendations to secure .NET Framework applications that use the TLS protocol.
 
 To ensure .NET Framework applications remain secure, the TLS version should **not** be hardcoded. .NET Framework applications should use the TLS version the operating system (OS) supports.
 
@@ -113,7 +112,7 @@ You must install the latest OS patches. See [Security updates](#security-updates
 
 The WCF framework automatically chooses the highest protocol available up to TLS 1.2 unless you explicitly configure a protocol version. For more information, see the preceding section [For WCF TCP transport using transport security with certificate credentials](#wcf-tcp-cert).
 
-### For .NET Framework 3.5 - 4.5.1 and not WCF
+### For .NET Framework 3.5 - 4.5.2 and not WCF
 
 We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps. At some point in the future, your application may fail until you upgrade to .NET Framework 4.7 or later versions.
 
@@ -173,7 +172,10 @@ For more information about TLS protocols, see [Mitigation: TLS Protocols](../mig
 
 ## Configuring security via the Windows Registry
 
-If setting one or both `AppContext` switches are not an option, you can control the security protocols that your app uses with the Windows Registry keys described in this section. You might not be able to use one or both the `AppContext` switches if your app targets a .NET Framework version earlier than 4.6, or you can't edit the configuration file. If you want to configure security with the registry, then don't specify a security protocol value in your code; doing so would override the registry.
+> [!WARNING]
+> Setting registry keys affects all applications on the system. Use this option only if you are in full control of the machine and can control changes to the registry.
+
+If setting one or both `AppContext` switches isn't an option, you can control the security protocols that your app uses with the Windows Registry keys described in this section. You might not be able to use one or both the `AppContext` switches if your app runs on .NET Framework 4.5.2 or earlier versions, or if you can't edit the configuration file. If you want to configure security with the registry, don't specify a security protocol value in your code; doing so overrides the registry setting.
 
 The names of the registry keys are similar to the names of the corresponding `AppContext` switches but without a `DontEnable` prepended to the name. For example, the `AppContext` switch `DontEnableSchUseStrongCrypto` is the registry key called [SchUseStrongCrypto](#schusestrongcrypto).
 
@@ -225,7 +227,7 @@ Windows Registry Editor Version 5.00
 
 ## Configuring Schannel protocols in the Windows Registry
 
-You can use the registry for fine-grained control over the protocols that your client and/or server app negotiates. Your app's networking goes through Schannel (which is another name for [Secure Channel](https://msdn.microsoft.com/library/windows/desktop/aa380123). By configuring `Schannel`, you can configure your app's behavior.
+You can use the registry for fine-grained control over the protocols that your client and/or server app negotiates. Your app's networking goes through Schannel (which is another name for [Secure Channel](/windows/desktop/SecAuthN/secure-channel). By configuring `Schannel`, you can configure your app's behavior.
 
 Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols` registry key. Under that key you can create any subkeys in the set `SSL 2.0`, `SSL 3.0`, `TLS 1.0`, `TLS 1.1`, and `TLS 1.2`. Under each of those subkeys, you can create subkeys `Client` and/or `Server`. Under `Client` and `Server`, you can create DWORD values `DisabledByDefault` (0 or 1) and `Enabled` (0 or 0xFFFFFFFF).
 
@@ -233,8 +235,8 @@ Start with the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProv
 
 When it's enabled (by default, by an `AppContext` switch, or by the Windows Registry), the .NET Framework uses the `SCH_USE_STRONG_CRYPTO` flag when your app requests a TLS security protocol. The `SCH_USE_STRONG_CRYPTO` flag can be enabled by default, with the `AppContext` switch, or with the Registry. The OS passes the flag to `Schannel`to instruct it to disable known weak cryptographic algorithms, cipher suites, and TLS/SSL protocol versions that may be otherwise enabled for better interoperability. For more information, see:
 
-- [Secure Channel](https://msdn.microsoft.com/library/windows/desktop/aa380123)
-- [SCHANNEL_CRED structure](https://msdn.microsoft.com/library/windows/desktop/aa379810)
+- [Secure Channel](/windows/desktop/SecAuthN/secure-channel)
+- [SCHANNEL_CRED structure](/windows/desktop/api/schannel/ns-schannel-_schannel_cred)
 
 The `SCH_USE_STRONG_CRYPTO` flag is also passed to `Schannel` when you explicitly use the `Tls` (TLS 1.0), `Tls11`, or `Tls12` enumerated values of <xref:System.Net.SecurityProtocolType> or <xref:System.Security.Authentication.SslProtocols>.
 
@@ -269,7 +271,7 @@ To enable or re-enable TLS 1.2 and/or TLS 1.1 on a system that supports them, se
 | Windows Server 2008 | Support for TLS 1.2 and TLS 1.1 requires an update. See [Update to add support for TLS 1.1 and TLS 1.2 in Windows Server 2008 SP2](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s). |
 | Windows Vista | Not supported. |
 
-For information about which TLS/SSL protocols are enabled by default on each version of Windows, see [Protocols in TLS/SSL (Schannel SSP)](https://msdn.microsoft.com/library/windows/desktop/mt808159).
+For information about which TLS/SSL protocols are enabled by default on each version of Windows, see [Protocols in TLS/SSL (Schannel SSP)](/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
 
 **Requirements to support TLS 1.2 with .NET Framework 3.5**
 
@@ -296,6 +298,6 @@ If your app targets a .NET Framework version that is not available on the Azure 
 
 ### Azure Guest OS registry settings
 
-The Azure Guest OS image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
+The Azure Guest OS Family 5 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
 
 Set the [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry key to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry).

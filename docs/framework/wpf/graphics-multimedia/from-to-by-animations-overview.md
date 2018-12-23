@@ -142,4 +142,4 @@ This topic describes how to use From/To/By animations to animate dependency prop
  [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
  [Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)  
  [Custom Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md)  
- [From, To, and By Animation Target Values Sample](http://go.microsoft.com/fwlink/?LinkID=159988)
+ [From, To, and By Animation Target Values Sample](https://go.microsoft.com/fwlink/?LinkID=159988)

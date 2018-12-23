@@ -14,5 +14,6 @@ This example shows how to return a query from a method as the return value and a
   
  [!code-csharp[csProgGuideLINQ#80](~/samples/snippets/csharp/concepts/linq/how-to-return-a-query-from-a-method_1.cs)]  
 
-## See Also  
- [Language Integrated Query (LINQ)](index.md)
+## See Also
+
+- [Language Integrated Query (LINQ)](index.md)

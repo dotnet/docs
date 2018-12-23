@@ -1,5 +1,6 @@
 ---
-title: "Delimiters for Documentation Tags (C# Programming Guide)"
+title: "Delimiters for Documentation Tags - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML [C#], delimiters"
@@ -71,8 +72,9 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     */   
     ```  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

@@ -68,5 +68,5 @@ The sheer volume of devices and information often dictates an event-driven archi
 The pervasiveness of IoT has resulted in several serverless products that focus specifically on IoT concerns, such as [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub). Serverless automates tasks such as device registration, policy enforcement, tracking, and even deployment of code to devices at *the edge*. The edge refers to devices like sensors and actuators that are connected to, but not an active part of, the Internet.
 
 >[!div class="step-by-step"]
-[Previous](architecture-approaches.md)
-[Next](serverless-architecture-considerations.md)
+>[Previous](architecture-approaches.md)
+>[Next](serverless-architecture-considerations.md)

@@ -11,7 +11,6 @@ helpviewer_keywords:
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;supportedRuntime&gt; Element
 
@@ -72,12 +71,12 @@ The `sku` attribute uses a target framework moniker (TFM) to indicate the versio
 |----------------------------|---------------------|  
 |4.0|".NETFramework,Version=v4.0"|  
 |4.0, Client Profile|".NETFramework,Version=v4.0,Profile=Client"|  
-|4.0, platform update 1|.NETFramework,Version=v4.0.1|  
-|4.0, Client Profile, update 1|.NETFramework,Version=v4.0.1,Profile=Client|  
-|4.0, platform update 2|.NETFramework,Version=v4.0.2|  
-|4.0, Client Profile, update 2|.NETFramework,Version=v4.0.2,Profile=Client|  
-|4.0, platform update 3|.NETFramework,Version=v4.0.3|  
-|4.0, Client Profile, update 3|.NETFramework,Version=v4.0.3,Profile=Client|  
+|4.0, platform update 1|".NETFramework,Version=v4.0.1"|  
+|4.0, Client Profile, update 1|".NETFramework,Version=v4.0.1,Profile=Client"|  
+|4.0, platform update 2|".NETFramework,Version=v4.0.2"|  
+|4.0, Client Profile, update 2|".NETFramework,Version=v4.0.2,Profile=Client"|  
+|4.0, platform update 3|".NETFramework,Version=v4.0.3"|  
+|4.0, Client Profile, update 3|".NETFramework,Version=v4.0.3,Profile=Client"|  
 |4.5|".NETFramework,Version=v4.5"|  
 |4.5.1|".NETFramework,Version=v4.5.1"|  
 |4.5.2|".NETFramework,Version=v4.5.2"|  

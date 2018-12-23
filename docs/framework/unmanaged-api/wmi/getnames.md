@@ -41,7 +41,7 @@ HRESULT GetNames (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemClassObject](https://msdn.microsoft.com/library/aa391433%28v=vs.85%29.aspx) instance.
+[in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszQualifierName`  
 [in] A pointer to a valid `LPCWSTR` that specifies a qualifier name that operates as part of a filter. For more information, see the [Remarks](#remarks) section. This parameter can be `null`. 
@@ -68,7 +68,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetNames](https://msdn.microsoft.com/library/aa391447(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::GetNames](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getnames) method.
 
 The named returned are controlled by a combination of flags and parameters. For example, the function can return the names of all properties or only the names of the key properties.  The primary filter is specified in the `lFlags` parameter, and the other parameters vary depending on it.
 

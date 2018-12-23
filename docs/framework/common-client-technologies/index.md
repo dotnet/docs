@@ -13,4 +13,4 @@ This section describes different technologies that you can use in your client ap
  Describes how to use manipulations and inertia processor classes in different UI frameworks, such as Microsoft Windows Presentation Foundation (WPF) or Microsoft XNA.  
   
  [Client Application Services](../../../docs/framework/common-client-technologies/client-application-services.md)  
- Describes how to use use the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile application services included in the Microsoft ASP.NET 2.0 AJAX Extensions in your Windows-based applications.
+ Describes how to use the [!INCLUDE[ajax_current_short](../../../includes/ajax-current-short-md.md)] login, roles, and profile application services included in the Microsoft ASP.NET 2.0 AJAX Extensions in your Windows-based applications.

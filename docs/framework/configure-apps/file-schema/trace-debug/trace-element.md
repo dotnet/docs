@@ -12,7 +12,6 @@ helpviewer_keywords:
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;trace&gt; Element
 Contains listeners that collect, store, and route tracing messages.  

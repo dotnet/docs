@@ -46,9 +46,9 @@ Backward compatibility means that an app that was developed for a particular ver
 
 - If you have a .NET Framework 3.5 app, also see [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md).
 
-- If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](http://go.microsoft.com/fwlink/?LinkId=186989).
+- If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkId=186989).
 
-- If you have a .NET Framework 1.1 app, also see [Changes in .NET Framework 2.0](http://go.microsoft.com/fwlink/?LinkID=125263).  
+- If you have a .NET Framework 1.1 app, also see [Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkID=125263).  
   
 -   If you are recompiling existing source code to run on the .NET Framework 4.5 or its point releases, or if you are developing a new version of an app or component that targets the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] or its point releases from an existing source code base, check [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md) for obsolete types and members, and apply the workaround described. (Previously compiled code will continue to run against types and members that have been marked as obsolete.)  
   
@@ -63,5 +63,5 @@ Backward compatibility means that an app that was developed for a particular ver
  [What's New](../../../docs/framework/whats-new/index.md)  
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
  [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)  
- [Microsoft .NET Framework Support Lifecycle Policy](http://go.microsoft.com/fwlink/p/?LinkId=248212)  
+ [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/p/?LinkId=248212)  
  [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)

@@ -1,13 +1,16 @@
+    using System;    
+    using System.Collections.Generic;    
+
     public delegate void EventHandler1(int i);
     public delegate void EventHandler2(string s);
 
     public class PropertyEventsSample
     {
-        private System.Collections.Generic.Dictionary<string, System.Delegate> eventTable;
+        private Dictionary<string, Delegate> eventTable;
 
         public PropertyEventsSample()
         {
-            eventTable = new System.Collections.Generic.Dictionary<string, System.Delegate>();
+            eventTable = new Dictionary<string, Delegate>();
             eventTable.Add("Event1", null);
             eventTable.Add("Event2", null);
         }
@@ -71,12 +74,12 @@
     {
         public static void Delegate1Method(int i)
         {
-            System.Console.WriteLine(i);
+            Console.WriteLine(i);
         }
 
         public static void Delegate2Method(string s)
         {
-            System.Console.WriteLine(s);
+            Console.WriteLine(s);
         }
 
         static void Main()
@@ -94,8 +97,8 @@
             p.RaiseEvent2("TestString");
 
             // Keep the console window open in debug mode.
-            System.Console.WriteLine("Press any key to exit.");
-            System.Console.ReadKey();
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
     /* Output:

@@ -2,9 +2,6 @@
 title: "Network Programming Samples"
 ms.date: "03/30/2017"
 ms.assetid: 8efacc29-7367-47c2-8638-a4f66385ad91
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Network Programming Samples
 This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces. 
@@ -22,7 +19,7 @@ This section contains descriptions and links to downloadable network programming
  [HttpListener Technology Sample](https://msdn.microsoft.com/en-us/library/y7cbb2y2(v=vs.85).aspx)  
  Shows how to process HTTP requests from within an application.  
  
- [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90))   
+ [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90))   
  Demonstrates how to use the features of the <xref:System.Net.HttpListener?displayProperty=nameWithType> class to create an HTTP server that routes calls to a hosted ASP.NET application.
   
  [Mailer Technology Sample](https://msdn.microsoft.com/en-us/library/whw7xbk2(v=vs.85).aspx)  

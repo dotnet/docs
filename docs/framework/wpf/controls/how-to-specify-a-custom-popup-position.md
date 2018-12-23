@@ -24,7 +24,7 @@ This example shows how to specify a custom position for a <xref:System.Windows.C
  [!code-csharp[PopupCustomPlacement#DelegateDefinition](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PopupCustomPlacement/CSharp/Window1.xaml.cs#delegatedefinition)]
  [!code-vb[PopupCustomPlacement#DelegateDefinition](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PopupCustomPlacement/visualbasic/window1.xaml.vb#delegatedefinition)]  
   
- For the complete sample, see [Popup Placement Sample](http://go.microsoft.com/fwlink/?LinkID=160032).  
+ For the complete sample, see [Popup Placement Sample](https://go.microsoft.com/fwlink/?LinkID=160032).  
   
 ## See Also  
  <xref:System.Windows.Controls.Primitives.Popup>  

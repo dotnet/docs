@@ -23,7 +23,7 @@ A workflow definition is a tree of configured activity objects. This tree of act
   
  [!code-csharp[CFX_WorkflowApplicationExample#49](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#49)]  
   
- For more information about object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](http://go.microsoft.com/fwlink/?LinkId=161015) and [How to: Declare an Object by Using an Object Initializer](http://go.microsoft.com/fwlink/?LinkId=161016).  
+ For more information about object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](https://go.microsoft.com/fwlink/?LinkId=161015) and [How to: Declare an Object by Using an Object Initializer](https://go.microsoft.com/fwlink/?LinkId=161016).  
   
 ### Working with Variables, Literal Values, and Expressions  
  When creating a workflow definition using code, be aware of what code executes as part of the creation of the workflow definition and what code executes as part of the execution of an instance of that workflow. For example, the following workflow is intended to generate a random number and write it to the console.  
@@ -55,7 +55,7 @@ new Assign<int>
   
  [!code-csharp[CFX_WorkflowApplicationExample#52](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#52)]  
   
- For more information about lambda expressions, see [Lambda Expressions (C# Programming Guide)](http://go.microsoft.com/fwlink/?LinkID=152436) or [Lambda Expressions (Visual Basic)](http://go.microsoft.com/fwlink/?LinkID=152437).  
+ For more information about lambda expressions, see [Lambda Expressions (C# Programming Guide)](https://go.microsoft.com/fwlink/?LinkID=152436) or [Lambda Expressions (Visual Basic)](https://go.microsoft.com/fwlink/?LinkID=152437).  
   
  Lambda expressions are not serializable to XAML format. If an attempt to serialize a workflow with lambda expressions is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown with the following message: "This workflow contains lambda expressions specified in code. These expressions are not XAML serializable. In order to make your workflow XAML-serializable, either use VisualBasicValue/VisualBasicReference or ExpressionServices.Convert(lambda). This will convert your lambda expressions into expression activities." To make this expression compatible with XAML, use <xref:System.Activities.Expressions.ExpressionServices> and <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>, as shown in the following example.  
   

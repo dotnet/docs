@@ -8,7 +8,7 @@ CustomBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class CustomBindingElement : BindingElement  
 {  
   string Name;  

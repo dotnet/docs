@@ -29,16 +29,19 @@ In addition, reference return values are not allowed on async methods. An asynch
  
 ## Defining a ref return value
 
-You define a ref return value by adding the [ref](../../language-reference/keywords/ref.md) keyword to the return type of the method signature. For example, the following signature indicates that the `GetContactInformation` property returns a reference to a `Person` object to the caller:
+A method that returns a *reference return value* must satisfy the following two conditions:
+
+- The method signature includes the [ref](../../language-reference/keywords/ref.md) keyword in front of the return type.
+- Each [return](../../language-reference/keywords/return.md) statement in the method body includes the [ref](../../language-reference/keywords/ref.md) keyword in front of the name of the returned instance.
+
+The following example shows a method that satisfies those conditions and returns a reference to a `Person` object named `p`:
 
 ```csharp
-public ref Person GetContactInformation(string fname, string lname);
-```
-
-In addition, the name of the object returned by each [return](../../language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](../../language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a reference to a `Person` object named `p`:
-
-```csharp
-return ref p;
+public ref Person GetContactInformation(string fname, string lname)
+{
+    // ...method implementation...
+    return ref p;
+}
 ```
 
 ## Consuming a ref return value
@@ -49,7 +52,7 @@ The ref return value is an alias to another variable in the called method's scop
 - When you read its value, you are reading the value of the variable it aliases.
 - If you return it *by reference*, you are returning an alias to that same variable.
 - If you pass it to another method *by reference*, you are passing a reference to the variable it aliases.
-- When you make a [ref local](#ref-local) alias, you make a new alias to the same variable.
+- When you make a [ref local](#ref-locals) alias, you make a new alias to the same variable.
 
 
 ## Ref locals
@@ -117,5 +120,5 @@ closer to the end of the array.
 
 ## See also
 
-[ref keyword](../../language-reference/keywords/ref.md)  
-[Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)
+- [ref keyword](../../language-reference/keywords/ref.md)  
+- [Write safe efficient code](../../write-safe-efficient-code.md)

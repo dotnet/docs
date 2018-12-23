@@ -26,8 +26,9 @@ Localization is the process of translating an application's resources into local
   
  The [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] supplies the Windows Forms Resource Editor (Winres.exe) that allows you to quickly localize Windows Forms for target cultures. For information about using this tool, see [Winres.exe (Windows Forms Resource Editor)](../../../docs/framework/tools/winres-exe-windows-forms-resource-editor.md).  
   
-## See Also  
- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
- [Localizability Review](../../../docs/standard/globalization-localization/localizability-review.md)  
- [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+## See also
+
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
+- [Localizability Review](../../../docs/standard/globalization-localization/localizability-review.md)  
+- [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

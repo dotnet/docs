@@ -121,4 +121,4 @@ This topic describes the timing behaviors of animations and other <xref:System.W
  [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)  
  [Timing Events Overview](../../../../docs/framework/wpf/graphics-multimedia/timing-events-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
- [Animation Timing Behavior Sample](http://go.microsoft.com/fwlink/?LinkID=159970)
+ [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)

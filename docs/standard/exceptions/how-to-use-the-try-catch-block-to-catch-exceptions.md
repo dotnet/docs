@@ -30,5 +30,6 @@ The common language runtime catches exceptions that are not caught by a catch bl
 > [!NOTE] 
 > Almost any line of code can cause an exception, particularly exceptions that are thrown by the common language runtime itself, such as <xref:System.OutOfMemoryException>. Most applications don't have to deal with these exceptions, but you should be aware of this possibility when writing libraries to be used by others. For suggestions on when to set code in a Try block, see [Best Practices for Exceptions](best-practices-for-exceptions.md).
 
-## See Also  
-[Exceptions](index.md)
+## See also
+
+- [Exceptions](index.md)

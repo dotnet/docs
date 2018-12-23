@@ -82,7 +82,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
   
 ### To host the service in IIS  
   
-1.  To host the service in IIS, create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. For example, the content in the service file for the `CalculatorService` sample contains the following information.  
+1.  To host the service in IIS, create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. For example, the content in the service file for the `CalculatorService` sample contains the following information.  
   
     ```  
     <%@ServiceHost   

@@ -1,4 +1,4 @@
-# [Accessing Computer Resources](computer-resources.md)
+# [Accessing Computer Resources](index.md)
 ## [Playing Sounds](playing-sounds.md)
 ## [Storing Data to and Reading from the Clipboard](storing-data-to-and-reading-from-the-clipboard.md)
 ## [Getting Information about the Computer](getting-information-about-the-computer.md)

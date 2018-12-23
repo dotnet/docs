@@ -17,5 +17,6 @@ This topic introduces namespaces, the <xref:System.Xml.Linq.XName> class, and th
   
  For more information, see <xref:System.Xml.Linq.XNamespace> and <xref:System.Xml.Linq.XName>.  
   
-## See Also  
- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+## See Also
+
+- [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

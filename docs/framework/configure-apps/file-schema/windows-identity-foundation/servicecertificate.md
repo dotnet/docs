@@ -3,7 +3,6 @@ title: "&lt;serviceCertificate&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 42c7f291-2ec3-43c5-8872-35897ff3c660
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;serviceCertificate&gt;
 Configures the X.509 certificate that is used to encrypt and decrypt tokens.  

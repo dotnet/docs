@@ -166,5 +166,6 @@ Console.WriteLine(doc.Nodes().Count());
 1  
 ```  
   
-## See Also  
- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+## See Also
+
+- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

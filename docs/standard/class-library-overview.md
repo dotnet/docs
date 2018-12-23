@@ -104,7 +104,8 @@ ms.author: "ronpet"
   
  For more information about namespaces, use the [.NET API Browser](https://docs.microsoft.com/dotnet/api) to browse the .NET Class Library. The API reference documentation provides documentation on each namespace, its types, and each of their members.  
   
-## See Also  
- [Common Type System](../../docs/standard/base-types/common-type-system.md)  
- [.NET API Browser](https://docs.microsoft.com/dotnet/api)  
- [Overview](../../docs/framework/get-started/overview.md)
+## See also
+
+- [Common Type System](../../docs/standard/base-types/common-type-system.md)  
+- [.NET API Browser](https://docs.microsoft.com/dotnet/api)  
+- [Overview](../../docs/framework/get-started/overview.md)

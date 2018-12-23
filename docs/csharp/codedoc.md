@@ -6,7 +6,7 @@ ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
 # Documenting your code with XML comments
 
-XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member. 
+XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member.
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
 The compiler generated XML file can be distributed alongside your .NET assembly so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, the XML file can be run through tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to generate API reference websites.
 
@@ -14,7 +14,7 @@ XML documentation comments, like all other comments, are ignored by the compiler
 
 You can generate the XML file at compile time by doing one of the following:
 
-- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](http://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the assembly:
+- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the assembly:
 
    ```xml
    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
@@ -22,11 +22,11 @@ You can generate the XML file at compile time by doing one of the following:
 
    You can also specify the exact absolute or relative path and name of the XML file. The following example generates the XML file in the same directory as the debug version of an application:
 
-    ```xml
-   <DocumentationFile>bin\Debug\netcoreapp1.0\App.xml</DocumentationFile>
+   ```xml
+   <DocumentationFile>bin\Debug\netcoreapp2.1\App.xml</DocumentationFile>
    ```
 
-- If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file. 
+- If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file.
 
 - If you are compiling a .NET Framework application from the command line, add the [/doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
 
@@ -45,7 +45,7 @@ Here's code for the simple math library:
 The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` data types.
 
 Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
-As mentioned earlier XML documentation tags can be used to achieve this, You will now be introduced to the standard XML tags the C# compiler supports.
+As mentioned earlier XML documentation tags can be used to achieve this. You will now be introduced to the standard XML tags the C# compiler supports.
 
 ### &lt;summary&gt;
 
@@ -117,7 +117,7 @@ The `<see>` tag lets you create a clickable link to a documentation page for ano
 
 [!code-csharp[See Tag](../../samples/snippets/csharp/concepts/codedoc/see-tag.cs)]
 
-The `cref` is a **required** attribute that represents a reference to a type or its member that is available from the current compilation environment. 
+The `cref` is a **required** attribute that represents a reference to a type or its member that is available from the current compilation environment.
 This can be any type defined in the project or a referenced assembly.
 
 ### &lt;seealso&gt;
@@ -174,7 +174,7 @@ If you've followed this tutorial and applied the tags to your code where necessa
 [!code-csharp[Tagged Library](../../samples/snippets/csharp/concepts/codedoc/tagged-library.cs)]
 
 From your code, you can generate a detailed documentation website complete with clickable cross-references. But you're faced with another problem: your code has become hard to read.
-There's so much information to sift through that this is going to be a nightmare for any developer who wants to contribute to this code. 
+There's so much information to sift through that this is going to be a nightmare for any developer who wants to contribute to this code.
 Thankfully there's an XML tag that can help you deal with this:
 
 ### &lt;include&gt;
@@ -185,16 +185,16 @@ Now you're going to move all your XML tags into a separate XML file named `docs.
 
 [!code-xml[Sample XML](../../samples/snippets/csharp/concepts/codedoc/include.xml)]
 
-In the above XML, each member's documentation comments appear directly inside a tag named after what they do. You can choose your own strategy. 
+In the above XML, each member's documentation comments appear directly inside a tag named after what they do. You can choose your own strategy.
 Now that you have your XML comments in a separate file, let's see how your code can be made more readable by using the `<include>` tag:
 
 [!code-csharp[Include Tag](../../samples/snippets/csharp/concepts/codedoc/include-tag.cs)]
 
-And there you have it: our code is back to being readable, and no documentation information has been lost. 
+And there you have it: our code is back to being readable, and no documentation information has been lost.
 
 The `filename` attribute represents the name of the XML file containing the documentation.
 
-The `path` attribute represents an [XPath](https://msdn.microsoft.com/library/ms256115.aspx) query to the `tag name` present in the specified `filename`.
+The `path` attribute represents an [XPath](../standard/data/xml/xpath-queries-and-namespaces.md) query to the `tag name` present in the specified `filename`.
 
 The `name` attribute represents the name specifier in the tag that precedes the comments.
 
@@ -220,6 +220,6 @@ Documenting code is recommended for many reasons. What follows are some best pra
 - The compiler validates the parameters that contain file paths and references to other parts of the code.
 
 ## See also
-[XML Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/xml-documentation-comments.md)
 
-[Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+* [XML Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/xml-documentation-comments.md)
+* [Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

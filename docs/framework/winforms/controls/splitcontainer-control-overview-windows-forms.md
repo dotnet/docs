@@ -46,4 +46,4 @@ The Windows Forms <xref:System.Windows.Forms.SplitContainer> control can be thou
 ## See Also  
  <xref:System.Windows.Forms.SplitContainer>  
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
- [SplitContainer Control Sample](http://msdn.microsoft.com/library/9015fad0-7108-4d85-a83a-a72d038c4f65)
+ [SplitContainer Control Sample](https://msdn.microsoft.com/library/9015fad0-7108-4d85-a83a-a72d038c4f65)

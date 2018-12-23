@@ -64,7 +64,7 @@ object.Value
 ## See Also  
  <xref:System.Xml.Linq.XElement>  
  <xref:System.Collections.Generic.IEnumerable%601>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/xml-axis-properties.md)  
+ [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
  [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
  [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)  

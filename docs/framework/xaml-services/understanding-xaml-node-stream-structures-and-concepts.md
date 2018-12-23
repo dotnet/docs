@@ -74,7 +74,7 @@ while (xxr.Read()) {
  There are potentially other ways to work with a XAML representation other than as a XAML node loop. For example, there could exist a XAML reader that can read an indexed node, or in particular accesses nodes directly by `x:Name`, by `x:Uid`, or through other identifiers. .NET Framework XAML Services does not provide a full implementation, but provides a suggested pattern through services and support types. For more information, see <xref:System.Xaml.IXamlIndexingReader> and <xref:System.Xaml.XamlNodeList>.  
   
 > [!TIP]
->  Microsoft also produces an out-of-band release known as the Microsoft XAML Toolkit. This out-of-band release is still in its pre-release stages. However, if you are willing to work with pre-release components, the Microsoft XAML Toolkit provides some interesting resources for XAML tooling and static analysis of XAML. The Microsoft XAML Toolkit includes a XAML DOM API, support for FxCop analysis, and a XAML schema context for Silverlight. For more information, see [Microsoft XAML Toolkit](http://code.msdn.microsoft.com/XAML).  
+>  Microsoft also produces an out-of-band release known as the Microsoft XAML Toolkit. This out-of-band release is still in its pre-release stages. However, if you are willing to work with pre-release components, the Microsoft XAML Toolkit provides some interesting resources for XAML tooling and static analysis of XAML. The Microsoft XAML Toolkit includes a XAML DOM API, support for FxCop analysis, and a XAML schema context for Silverlight. For more information, see [Microsoft XAML Toolkit](https://code.msdn.microsoft.com/XAML).  
   
 <a name="working_with_the_current_node"></a>   
 ## Working with the Current Node  

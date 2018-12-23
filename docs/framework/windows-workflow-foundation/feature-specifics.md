@@ -11,19 +11,11 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started with Messaging Activities  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas.  
+-   In Visual Studio 2012, create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas.  
   
--   Right-click on the project and select **Add Service Reference**.  Point to an existing web service WSDL and click **OK**.  Build your project to show the generated activities (implemented using <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply>) in your toolbox.  
+-   Right-click on the project and select **Add Service Reference**.  Point to an existing web service WSDL and click **OK**.  Build your project to show the generated activities (implemented using <xref:System.ServiceModel.Activities.Send> and <xref:System.ServiceModel.Activities.ReceiveReply>) in your toolbox.
   
--   Samples for these activities can be found in the following sections:  
-  
-    -   Basic: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   Scenarios: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
--   [Conceptual documentation](http://go.microsoft.com/fwlink/?LinkId=204801)  
-  
--   [Messaging activities designer documentation](http://go.microsoft.com/fwlink/?LinkId=204802)  
+-   [Workflow services documentation](../wcf/feature-details/workflow-services.md)
   
 ### Messaging Activities Example Scenario  
  A `BestPriceFinder` service calls out to multiple airline services to find the best ticket price for a particular route.  Implementing this scenario would require you to use the message activities to receive the price request, retrieve the prices from the back-end services, and reply to the price request with the best price.  It would also require you to use other out-of-box activities to create the business logic for calculating the best price.  
@@ -41,15 +33,11 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 -   Samples for the <xref:System.ServiceModel.WorkflowServiceHost> can be found in the following sections:  
   
-    -   [Execution](../../../docs/framework/windows-workflow-foundation/samples/execution.md)  
+    -   [Execution](samples/execution.md)
   
-    -   Basic: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
+    -   Application: [Suspended Instance Management](samples/suspended-instance-management.md)  
   
-    -   Scenarios: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   Application: [Suspended Instance Management](../../../docs/framework/windows-workflow-foundation/samples/suspended-instance-management.md)  
-  
--   [WorkflowServiceHost Conceptual Documentation](http://go.microsoft.com/fwlink/?LinkId=204807)  
+-   [Hosting Workflow services overview](../wcf/feature-details/hosting-workflow-services-overview.md)  
   
 ### WorkflowServiceHost Scenario  
  A BestPriceFinder service calls out to multiple airline services to find the best ticket price for a particular route.  Implementing this scenario would require you to host the workflow in <xref:System.ServiceModel.WorkflowServiceHost>.  It would also use the message activities to receive the price request, retrieve the prices from the back-end services, and reply to the price request with the best price.  
@@ -73,15 +61,9 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 -   An example of mapping a piece of data to a service instance is content-based correlation which maps a piece of data (for example, an order ID) to a particular workflow instance.  
   
-    -   On any messaging activity, click on the `CorrelationInitializers` property and add a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> using the <xref:System.ServiceModel.Activities.CorrelationHandle> variable created above. Double-click on the desired property on the message (e.g. OrderID) from the drop-down menu. Set the `CorrelatesWith` property to the <xref:System.ServiceModel.Activities.CorrelationHandle> variable used above.  
+    -   On any messaging activity, click on the `CorrelationInitializers` property and add a <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> using the <xref:System.ServiceModel.Activities.CorrelationHandle> variable created above. Double-click on the desired property on the message (e.g. OrderID) from the drop-down menu. Set the `CorrelatesWith` property to the <xref:System.ServiceModel.Activities.CorrelationHandle> variable used above. 
   
--   Samples:  
-  
-    -   Basic: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   Scenarios: [Services](../../../docs/framework/windows-workflow-foundation/samples/services.md)  
-  
-    -   [Correlation Conceptual Documentation](http://go.microsoft.com/fwlink/?LinkId=204939)  
+-   [Correlation Conceptual Documentation](../wcf/feature-details/correlation.md)  
   
 ### Correlation Scenario  
  An order-processing workflow is used to handle new order creation and updating existing orders that are in process.  Implementing this scenario would require you to host the workflow in <xref:System.ServiceModel.WorkflowServiceHost> and use the messaging activities.  It would also require correlation based on the `orderId` to ensure that updates are made to the correct workflow.  
@@ -99,15 +81,15 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   [A Developer's Guide to WCF 4.0](http://go.microsoft.com/fwlink/?LinkId=204940)  
+-   [A Developer's Guide to WCF 4.0](https://go.microsoft.com/fwlink/?LinkId=204940)  
   
--   [Configuration Channel Factory](http://go.microsoft.com/fwlink/?LinkId=204941)  
+-   [Configuration Channel Factory](https://go.microsoft.com/fwlink/?LinkId=204941)  
   
--   [Standard Endpoint Element](http://go.microsoft.com/fwlink/?LinkId=204942)  
+-   [Standard Endpoint Element](https://go.microsoft.com/fwlink/?LinkId=204942)  
   
--   [Service configuration improvements in .Net Framework 4](http://go.microsoft.com/fwlink/?LinkId=204943)  
+-   [Service configuration improvements in .Net Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)  
   
--   [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](http://go.microsoft.com/fwlink/?LinkId=204944)  
+-   [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://go.microsoft.com/fwlink/?LinkId=204944)  
   
 ### Simplified Configuration Scenarios  
   
@@ -128,9 +110,9 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   [Data Contract Resolver API documentation](http://go.microsoft.com/fwlink/?LinkId=204946)  
+-   [Data Contract Resolver API documentation](https://go.microsoft.com/fwlink/?LinkId=204946)  
   
--   [Introducing the Data Contract Resolver](http://go.microsoft.com/fwlink/?LinkId=204947)  
+-   [Introducing the Data Contract Resolver](https://go.microsoft.com/fwlink/?LinkId=204947)  
   
 -   Samples:  
   
@@ -149,7 +131,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a Flowchart in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add a Flowchart in the workflow designer.  
   
 -   The flowchart feature uses the following classes:  
   
@@ -165,9 +147,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 -   Samples:  
   
-    -   [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
-  
-    -   [StateMachine Scenario Using a Combination of FlowChart and Pick](../../../docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md)  
+    -   [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) 
   
     -   [Hiring Process](../../../docs/framework/windows-workflow-foundation/samples/hiring-process.md)  
   
@@ -195,7 +175,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add procedural activities in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add procedural activities in the workflow designer.  
   
 -   Samples:  
   
@@ -220,11 +200,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add an <xref:System.Activities.Statements.InvokeMethod> activity in the workflow designer, and configure static and instance methods on it.  
-  
--   Samples:  
-  
-    -   [InvokeMethod](../../../docs/framework/windows-workflow-foundation/samples/invokemethod.md)  
+-   In Visual Studio 2012, create a workflow console application. Add an <xref:System.Activities.Statements.InvokeMethod> activity in the workflow designer, and configure static and instance methods on it.  
   
 -   Designer Documentation: [InvokeMethod Activity Designer](/visualstudio/workflow-designer/invokemethod-activity-designer)  
   
@@ -239,13 +215,9 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.TryCatch> activity in the workflow designer.  
   
--   Samples:  
-  
-    1.  [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
-  
-    2.  [Using Procedural Activities](../../../docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md)  
+-   Sample: [Fault Handling in a Flowchart Activity Using TryCatch](../../../docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md)  
   
 -   Designer Documentation: [Error Handling Activity Designers](/visualstudio/workflow-designer/error-handling-activity-designers)  
   
@@ -257,7 +229,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
--   In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a workflow console application. Add a <xref:System.Activities.Statements.Pick> activity in the workflow designer.  
+-   In Visual Studio 2012, create a workflow console application. Add a <xref:System.Activities.Statements.Pick> activity in the workflow designer.  
   
 -   Sample: [Using the Pick Activity](../../../docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md)  
   
@@ -291,7 +263,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 2.  Samples: [Routing Services &#91;WCF Samples&#93;](../../../docs/framework/wcf/samples/routing-services.md)  
   
-3.  Blog: [Routing Rules!](http://go.microsoft.com/fwlink/?LinkId=204956)  
+3.  Blog: [Routing Rules!](https://go.microsoft.com/fwlink/?LinkId=204956)  
   
 ### Routing Scenarios  
  The routing service is useful in the following scenarios:  
@@ -331,7 +303,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
-1.  In [!INCLUDE[vs2010](../../../includes/vs2010-md.md)], create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas to start.  
+1.  In Visual Studio 2010, create a WCF Workflow Service Application project. A <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> pair will be placed on your canvas to start.  
   
 2.  Open the web.config and add an ETW tracking behavior with no profile.  
   
@@ -352,7 +324,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
   
 ### Getting Started  
   
-1.  In [!INCLUDE[vs_current_long](../../../includes/vs-current-long-md.md)], create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.  
+1.  In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.  
   
 2.  Samples: [Persistence](../../../docs/framework/windows-workflow-foundation/samples/persistence.md)  
   

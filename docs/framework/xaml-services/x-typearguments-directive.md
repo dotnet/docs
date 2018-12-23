@@ -34,7 +34,7 @@ Passes constraining type arguments of a generic to the constructor of the generi
   
  If the generic constraints themselves use generic types, the nested constraint type arguments can be contained by parentheses ().  
   
- Note that this definition of `x:TypeArguments` is specific to .NET Framework XAML Services and using CLR backing. A language-level definition can be found in [\[MS-XAML\] Section 5.3.11](http://go.microsoft.com/fwlink/?LinkId=114525).  
+ Note that this definition of `x:TypeArguments` is specific to .NET Framework XAML Services and using CLR backing. A language-level definition can be found in [\[MS-XAML\] Section 5.3.11](https://go.microsoft.com/fwlink/?LinkId=114525).  
   
 ## Usage Examples  
  For these examples, assume that the following XAML namespace definitions are declared:  

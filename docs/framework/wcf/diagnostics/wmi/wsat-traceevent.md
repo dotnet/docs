@@ -8,7 +8,7 @@ WSAT_TraceEvent
   
 ## Syntax  
   
-```  
+```csharp
 class WSAT_TraceEvent : WSAT_TraceProvider  
 {  
 };  

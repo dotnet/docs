@@ -34,10 +34,10 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
   
  The following attributes are supported for interception.  
   
- **[QueryInterceptor(** *EnitySetName* **)]**  
+ **[QueryInterceptor(** *EntitySetName* **)]**  
  Methods with the <xref:System.Data.Services.QueryInterceptorAttribute> attribute applied are called when an HTTP GET request is received for the targeted entity set resource. These methods must always return a lambda expression in the form of `Expression<Func<T,bool>>`.  
   
- **[ChangeInterceptor(** *EnitySetName* **)]**  
+ **[ChangeInterceptor(** *EntitySetName* **)]**  
  Methods with the <xref:System.Data.Services.ChangeInterceptorAttribute> attribute applied are called when an HTTP request other than HTTP GET request is received for the targeted entity set resource. These methods must always return `void` (`Nothing` in Visual Basic).  
   
  For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  

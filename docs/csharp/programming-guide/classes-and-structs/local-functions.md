@@ -1,5 +1,6 @@
 ---
-title: "Local functions (C# Programming Guide)"
+title: "Local functions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 06/14/2017
 helpviewer_keywords: 
   - "local functions [C#]"
@@ -72,5 +73,6 @@ As we did with the method iterator, we can refactor the code from this example t
 
 [!code-csharp[LocalFunctionAsync`](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async2.cs)] 
 
-## See also
-[Methods](methods.md)
+## See Also
+
+- [Methods](methods.md)

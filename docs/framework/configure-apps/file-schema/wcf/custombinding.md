@@ -285,8 +285,7 @@ Provides full control over the messaging stack for the user.
  In addition, you can define your own binding elements and insert them between any of the preceding defined layers.  
   
  For a discussion on how to use a custom binding to modify a system-provided binding, see [How to: Customize a System-Provided Binding](../../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md).  
-  
-1.  
+    
   
 ## See Also  
  <xref:System.ServiceModel.Channels.Binding>  
@@ -300,4 +299,4 @@ Provides full control over the messaging stack for the user.
  [customBinding Element](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

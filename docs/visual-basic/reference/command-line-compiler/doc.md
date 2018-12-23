@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-doc compiler option [Visual Basic]"
   - "/doc compiler option [Visual Basic]"
 ms.assetid: 5fc32ec9-a149-4648-994c-a8d0cccd0a65
-author: rpetrusha
-ms.author: ronpet
 ---
 # -doc
 Processes documentation comments to an XML file.  
@@ -40,7 +38,7 @@ Processes documentation comments to an XML file.
   
  Unless you compile with `/target:module`, the XML file contains the tags `<assembly></assembly>`. These tags specify the name of the file containing the assembly manifest for the output file of the compilation.  
   
- See [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md) for ways to generate documentation from comments in your code.  
+ See [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md) for ways to generate documentation from comments in your code.  
   
 |To set -doc in the Visual Studio integrated development environment|  
 |---|  

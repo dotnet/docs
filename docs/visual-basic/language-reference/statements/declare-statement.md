@@ -1,5 +1,5 @@
 ---
-title: "Declare Statement"
+title: "Declare Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Declare"

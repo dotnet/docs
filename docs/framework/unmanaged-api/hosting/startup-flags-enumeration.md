@@ -51,7 +51,7 @@ typedef enum {
   
 |Member|Description|  
 |------------|-----------------|  
-|`STARTUP_CONCURRENT_GC`|Specifies that concurrent garbage collection should be used. If the caller asks for the server build and concurrent garbage collection on a single-processor machine, the workstation build and non-concurrent garbage collection are run instead. **Note:**  Concurrent garbage collection is not supported in applications that are running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](http://msdn.microsoft.com/library/windows/desktop/aa384249.aspx).|  
+|`STARTUP_CONCURRENT_GC`|Specifies that concurrent garbage collection should be used. If the caller asks for the server build and concurrent garbage collection on a single-processor machine, the workstation build and non-concurrent garbage collection are run instead. **Note:**  Concurrent garbage collection is not supported in applications that are running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications).|  
 |`STARTUP_LOADER_OPTIMIZATION_MASK`|Specifies that loader optimization shall occur.|  
 |`STARTUP_LOADER_OPTIMIZATION_SINGLE_DOMAIN`|Specifies that no assemblies are loaded as domain-neutral.|  
 |`STARTUP_LOADER_OPTIMIZATION_MULTI_DOMAIN`|Specifies that all assemblies are loaded as domain-neutral.|  

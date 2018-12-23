@@ -29,10 +29,7 @@ Custom activities in [!INCLUDE[netfx_current_long](../../../includes/netfx-curre
  Describes how to use workflow execution properties to add context specific properties to an activity’s environment  
   
  [Using Activity Delegates](../../../docs/framework/windows-workflow-foundation/using-activity-delegates.md)  
- Discusses how to author and use activities that contain activity delegates.  
-  
- [Activity Localization](../../../docs/framework/windows-workflow-foundation/activity-localization.md)  
- Describes how to use localization of string resources in activities.  
+ Discusses how to author and use activities that contain activity delegates.
   
  [Using Activity Extensions](../../../docs/framework/windows-workflow-foundation/using-activity-extensions.md)  
  Describes how to author and use activity extensions.  

@@ -93,7 +93,8 @@ In many applications, a date and time value is intended to unambiguously identif
   
 -   Each code example, other than the `DateInTimeZone` class, should be included in a class or Visual Basic module, wrapped in methods, and called from the `Main` method.  
   
-## See Also  
- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
- [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)  
- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+## See also
+
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
+- [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)  
+- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)

@@ -1,41 +1,20 @@
 ---
 title: F# Guide
 description: This guide provides an overview of various learning materials for F#, a functional programming language that runs on .NET.
-author: jackfoxy
-ms.date: 03/19/2018
+author: cartermp
+ms.date: 08/03/2018
 ---
 # F# Guide
 
-F# is a functional programming language that runs on .NET. It also has full support for objects, letting you blend functional and object programming for pragmatic solutions to any problem.
-
-```fsharp
-open System // Get access to functionality in System namespace.
-
-// Function: takes a name and produces a greeting.
-let getGreeting name =
-    sprintf "Hello, %s! Isn't F# great?" name
-
-// Use the EntryPoint attribute to run the program.
-[<EntryPoint>]
-let main args =
-    // Define a list of names
-    let names = [| "Don"; "Julia"; "Xi" |]
-    
-    // Print a fun greeting for each name!
-    names
-    |> Array.map getGreeting
-    |> Array.iter (fun greeting -> printfn "%s" greeting)
-
-    0
-```
-
-F# is about productivity at its heart. The tooling support for F# is ubiquitous and full of advanced features.
+The F# guide provides many resources to learn the F# language.
 
 ## Learning F# #
 
-[Tour of F#](tour.md) gives an overview of major language features with lots of code samples. This is recommended if you are new to F# and want to get a feel for how the language works.
+[What is F#](what-is-fsharp.md) describes what the F# language is and what programming in it is like, with short code samples. This is recommended if you are new to F#.
 
-[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE (Integraded Development Environment) experience.
+[Tour of F#](tour.md) gives an overview of major language features with lots of code samples. This is recommended if you are interested in seeing core F# features in action.
+
+[Get started with F# in Visual Studio](get-started/get-started-visual-studio.md) if you're on Windows and want the full Visual Studio IDE (Integrated Development Environment) experience.
 
 [Get started with F# in Visual Studio for Mac](get-started/get-started-with-visual-studio-for-mac.md) if you're on macOS and want to use a Visual Studio IDE.
 
@@ -52,7 +31,6 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 [F# Language Reference](language-reference/index.md) is the official, comprehensive reference for all F# language features. Each article explains the syntax and shows code samples. You can use the filter bar in the table of contents to find specific articles.
 
 [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference) is the API reference for the F# Core Library.
-
 
 ## Additional guides
 
@@ -72,7 +50,7 @@ F# is about productivity at its heart. The tooling support for F# is ubiquitous 
 
 The [F# Snippets Website](http://www.fssnip.net) contains a massive set of code snippets showing how to do just about anything in F#, ranging from absolute beginner to highly advanced snippets.
 
-The [F# Software Foundation Slack](http://fsharp.org/guides/slack/) is a great place for beginners and experts alike, is highly active, and has some of world's best F# programmers available for a chat. We highly recommend joining.
+The [F# Software Foundation Slack](https://fsharp.org/guides/slack/) is a great place for beginners and experts alike, is highly active, and has some of world's best F# programmers available for a chat. We highly recommend joining.
 
 ## The F# Software Foundation
 
@@ -80,4 +58,4 @@ Although Microsoft is the primary developer of the F# language and its tools in 
 
 The mission of the F# Software Foundation is to promote, protect, and advance the F# programming language, and to support and facilitate the growth of a diverse and international community of F# programmers.
 
-To learn more and get involved, check out [fsharp.org](http://fsharp.org). It's free to join, and the network of F# developers in the foundation is something you don't want to miss out on!
+To learn more and get involved, check out [fsharp.org](https://fsharp.org). It's free to join, and the network of F# developers in the foundation is something you don't want to miss out on!

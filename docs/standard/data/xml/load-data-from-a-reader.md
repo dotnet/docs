@@ -23,5 +23,6 @@ If an XML document is loaded using the <xref:System.Xml.XmlDocument.Load%2A> met
   
  By default, <xref:System.Xml.XmlDocument.Load%2A> does not verify whether the XML is valid using document type definition (DTD) or schema validation. It only verifies whether the XML is well-formed. In order for validation to occur, you need to create an <xref:System.Xml.XmlReader> using the <xref:System.Xml.XmlReaderSettings> class. The <xref:System.Xml.XmlReader> class can enforce validation using a DTD or Schema definition language (XSD) schema. The <xref:System.Xml.ValidationType> property on the <xref:System.Xml.XmlReaderSettings> class determines whether the <xref:System.Xml.XmlReader> instance enforces validation. For more information about validating XML data, see the Remarks section of the <xref:System.Xml.XmlReader> reference page.  
   
-## See Also  
- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+## See also
+
+- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)

@@ -12,7 +12,7 @@ This example reads the contents of a text file, one line at a time, into a strin
   
 ## Example  
   
-```  
+```csharp
 int counter = 0;  
 string line;  
   
@@ -21,7 +21,7 @@ System.IO.StreamReader file =
     new System.IO.StreamReader(@"c:\test.txt");  
 while((line = file.ReadLine()) != null)  
 {  
-    System.Console.WriteLine (line);  
+    System.Console.WriteLine(line);  
     counter++;  
 }  
   
@@ -44,7 +44,8 @@ System.Console.ReadLine();
 ## .NET Framework Security  
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `myFile.cs` may not be a C# source file.  
   
-## See Also  
- <xref:System.IO?displayProperty=nameWithType>  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+## See Also
+
+- <xref:System.IO?displayProperty=nameWithType>  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

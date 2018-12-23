@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Hosting Direct3D9 Content in WPF"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Direct3D9 [WPF interoperability], hosting Direct3D9 content"
   - "WPF [WPF], hosting Direct3D9 content"
 ms.assetid: 60983736-0ab5-42cc-8b16-e9fbde261a43
@@ -22,7 +22,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev10_long](../../../../includes/vs-dev10-long-md.md)].  
+-   Visual Studio.  
   
 -   DirectX SDK 9 or later.  
   
@@ -33,7 +33,7 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
 #### To create the WPF project  
   
--   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [How to: Create a New WPF Application Project](http://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
+-   Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
      MainWindow.xaml opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   

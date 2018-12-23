@@ -3,7 +3,6 @@ title: "&lt;system.identityModel&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 210ce7e9-d07b-400c-800f-5f525dcf95e8
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;system.identityModel&gt;
 Provides configuration for enabling Windows Identity Foundation (WIF) options in applications.  

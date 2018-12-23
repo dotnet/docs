@@ -9,7 +9,7 @@ ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
 # Guide to the Documentation
 Provided here is guidance about the Windows Communication Foundation (WCF) documentation. The linked documents are recommended starting points grouped according to specific interests and levels of expertise.  
   
- To install a stand-alone version of the documentation and a Help viewer, download the [Microsoft Windows SDK v 7.1](http://go.microsoft.com/fwlink/?LinkID=194146&clcid=0x409).  
+ To install a stand-alone version of the documentation and a Help viewer, download the [Microsoft Windows SDK v 7.1](https://go.microsoft.com/fwlink/?LinkID=194146&clcid=0x409).  
   
 ## New to Windows Communication Foundation Programming  
   

@@ -56,8 +56,7 @@ run your application.
 
 ## Adding New Dependencies
 One of the key design goals for .NET Core is to minimize the size of
-the .NET framework installation. The .NET Core Application framework contains
-only the most common elements of the .NET full framework. If an application
+the .NET installation. If an application
 needs additional libraries for some of its features, you add those
 dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
 so your application can process JSON responses.
@@ -89,7 +88,7 @@ Now you're ready to start retrieving data from the web. In this
 application, you'll read information from the 
 [GitHub API](https://developer.github.com/v3/). Let's read information
 about the projects under the
-[.NET Foundation](http://www.dotnetfoundation.org/) umbrella. You'll
+[.NET Foundation](https://www.dotnetfoundation.org/) umbrella. You'll
 start by making the request to the GitHub API to retrieve information
 on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.

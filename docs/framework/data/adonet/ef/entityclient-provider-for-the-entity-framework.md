@@ -34,7 +34,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
 ## Managing Transactions  
  In the Entity Framework, there are two ways to use transactions: automatic and explicit. Automatic transactions use the <xref:System.Transactions> namespace, and explicit transactions use the <xref:System.Data.EntityClient.EntityTransaction> class.  
   
- To update data that is exposed through a conceptual model; see [How to: Manage Transactions in the Entity Framework](http://msdn.microsoft.com/library/4a55eb7f-f826-4a48-9df1-aebe2352ebef).  
+ To update data that is exposed through a conceptual model; see [How to: Manage Transactions in the Entity Framework](https://msdn.microsoft.com/library/4a55eb7f-f826-4a48-9df1-aebe2352ebef).  
   
 ## In This Section  
  [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  
@@ -58,6 +58,6 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
  [How to: Navigate Relationships with the Navigate Operator](../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
 ## See Also  
- [Managing Connections and Transactions](http://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  
+ [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  
  [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
  [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

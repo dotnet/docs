@@ -1,5 +1,5 @@
 ---
-title: "Then Statement"
+title: "Then Statement (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Then keyword [Visual Basic]"

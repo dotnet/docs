@@ -9,7 +9,6 @@ helpviewer_keywords:
 ms.assetid: 76796bb2-9c0b-4526-8135-8bf18b16d8d9
 author: "mcleblanc"
 ms.author: "markl"
-manager: "markl"
 ---
 # &lt;clear&gt; Element for &lt;listeners&gt; for &lt;source&gt;
 Clears the `Listeners` collection for a trace source.  

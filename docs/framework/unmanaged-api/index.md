@@ -26,7 +26,7 @@ This section includes information on unmanaged APIs that can be used by managed-
  [Constants](../../../docs/framework/unmanaged-api/constants-unmanaged-api-reference.md)  
  Describes the constants that are defined in CorSym.idl.  
   
- [Custom Interface Attributes](http://msdn.microsoft.com/library/940952f9-46ad-4a1a-920f-118dc0bdcd9f)  
+ [Custom Interface Attributes](https://msdn.microsoft.com/library/940952f9-46ad-4a1a-920f-118dc0bdcd9f)  
  Describes component object model (COM) custom interface attributes.  
   
  [Debugging](../../../docs/framework/unmanaged-api/debugging/index.md)  
@@ -59,4 +59,4 @@ This section includes information on unmanaged APIs that can be used by managed-
 ## Related Sections  
  [Development Guide](../../../docs/framework/development-guide.md)  
   
- [Advanced Reading for the .NET Framework](http://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)
+ [Advanced Reading for the .NET Framework](https://msdn.microsoft.com/library/faae8083-fecb-4514-b133-b0a5a32a7c3c)

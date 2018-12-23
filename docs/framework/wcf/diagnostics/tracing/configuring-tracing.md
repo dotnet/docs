@@ -136,7 +136,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You can configure a custom trace listener to send traces on the wire, for example, to a remote database. As an application deployer, you should enforce proper access control on the trace logs in the remote machine.  
   
- You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239).  
+ You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239).  
   
 > [!CAUTION]
 >  Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
@@ -177,5 +177,5 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ## See Also  
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
- [How to: Create and Initialize Trace Listeners](http://go.microsoft.com/fwlink/?LinkId=94648)  
- [Creating a Custom TraceListener](http://go.microsoft.com/fwlink/?LinkId=96239)
+ [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648)  
+ [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239)

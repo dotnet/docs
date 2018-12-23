@@ -24,7 +24,7 @@ ms.author: "ronpet"
   
  [Character escapes](#character_escapes)  
  [Character classes](#character_classes)  
- [Anchors](#atomic_zerowidth_assertions)  
+ [Anchors](#anchors)  
  [Grouping constructs](#grouping_constructs)  
  [Quantifiers](#quantifiers)  
  [Backreference constructs](#backreference_constructs)  
@@ -81,7 +81,6 @@ ms.author: "ronpet"
   
  [Back to top](#top)  
   
-<a name="atomic_zerowidth_assertions"></a>   
 ## Anchors  
  Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors](../../../docs/standard/base-types/anchors-in-regular-expressions.md).  
   
@@ -173,7 +172,7 @@ ms.author: "ronpet"
 |`$&`|Substitutes a copy of the whole match.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"\*\*$1.30\*\*"|  
 |<code>$`</code>|Substitutes all the text of the input string before the match.|`B+`|<code>$`</code>|"AABBCC"|"AAAACC"|  
 |`$'`|Substitutes all the text of the input string after the match.|`B+`|`$'`|"AABBCC"|"AACCCC"|  
-|`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|AACCDD|  
+|`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|"AACCDD"|  
 |`$_`|Substitutes the entire input string.|`B+`|`$_`|"AABBCC"|"AAAABBCCCC"|  
   
  [Back to top](#top)  
@@ -210,11 +209,12 @@ ms.author: "ronpet"
 |`(?#` *comment* `)`|Inline comment. The comment ends at the first closing parenthesis.|`\bA(?#Matches words starting with A)\w+\b`|  
 |`#` [to end of line]|X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.|`(?x)\bA\w+\b#Matches words starting with A`|  
   
-## See Also  
- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
- <xref:System.Text.RegularExpressions.Regex>  
- [Regular Expressions](regular-expressions.md)  
- [Regular Expression Classes](the-regular-expression-object-model.md)  
- [Regular Expression Examples](regular-expression-examples.md)  
- [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
- [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)
+## See also
+
+- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
+- <xref:System.Text.RegularExpressions.Regex>  
+- [Regular Expressions](regular-expressions.md)  
+- [Regular Expression Classes](the-regular-expression-object-model.md)  
+- [Regular Expression Examples](regular-expression-examples.md)  
+- [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+- [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

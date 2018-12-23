@@ -1,5 +1,5 @@
 ---
-title: Verbose Syntax (F#)
+title: Verbose Syntax
 description: Learn the difference between verbose and lightweight syntax in the F# programming language.
 ms.date: 05/16/2016
 ---
@@ -7,11 +7,9 @@ ms.date: 05/16/2016
 
 There are two forms of syntax available for many constructs in the F# language: *verbose syntax* and *lightweight syntax*. The verbose syntax is not as commonly used, but has the advantage of being less sensitive to indentation. The lightweight syntax is shorter and uses indentation to signal the beginning and end of constructs, rather than additional keywords like `begin`, `end`, `in`, and so on. The default syntax is the lightweight syntax. This topic describes the syntax for F# constructs when lightweight syntax is not enabled. Verbose syntax is always enabled, so even if you enable lightweight syntax, you can still use verbose syntax for some constructs. You can disable lightweight syntax by using the `#light "off"` directive.
 
-
 ## Table of Constructs
+
 The following table shows the lightweight and verbose syntax for F# language constructs in contexts where there is a difference between the two forms. In this table, angle brackets (&lt;&gt;) enclose user-supplied syntax elements. Refer to the documentation for each language construct for more detailed information about the syntax used within these constructs.
-
-
 
 <table>
 <tr>
@@ -31,7 +29,7 @@ compound expressions
 ```
 </td><td>
 
-```
+```fsharp
 <expression1>; <expression2>
 ```
 
@@ -39,11 +37,11 @@ compound expressions
 </tr>
 <tr><td>
 
-
 nested `let` bindings
 
 </td><td>
-```
+
+```fsharp
 let f x =
     let a = 1
     let b = 2
@@ -52,7 +50,7 @@ let f x =
 
 </td><td>
 
-```
+```fsharp
 let f x =
     let a = 1 in
     let b = 2 in
@@ -65,7 +63,7 @@ let f x =
 code block
 </td><td>
 
-```
+```fsharp
 (
     <expression1>
     <expression2>
@@ -74,7 +72,7 @@ code block
 
 </td><td>
 
-```
+```fsharp
 begin
     <expression1>;
     <expression2>;
@@ -86,7 +84,7 @@ end
 `for...do`
 </td><td>
 
-```
+```fsharp
 for counter = start to finish do
     ...
 ```
@@ -105,14 +103,14 @@ done
 `while...do`
 </td><td>
 
-```
+```fsharp
 while <condition> do
     ...
 ```
 
 </td><td>
 
-```
+```fsharp
 while <condition> do
     ...
 done
@@ -124,14 +122,14 @@ done
 `for...in`
 </td><td>
 
-```
+```fsharp
 for var in start .. finish do
     ...
 ```
 
 </td><td>
 
-```
+```fsharp
 for var in start .. finish do
     ...
 done
@@ -143,14 +141,14 @@ done
 `do`
 </td><td>
 
-```
+```fsharp
 do
     ...
 ```
 
 </td><td>
 
-```
+```fsharp
 do
     ...
 in
@@ -161,7 +159,7 @@ in
 <tr><td>record
 </td><td>
 
-```
+```fsharp
 type <record-name> =
     {
         <field-declarations>
@@ -171,7 +169,7 @@ type <record-name> =
 
 </td><td>
 
-```
+```fsharp
 type <record-name> =
     {
         <field-declarations>
@@ -185,31 +183,34 @@ type <record-name> =
 </tr>
 <tr><td>class
 </td><td>
-```
+
+```fsharp
 type <class-name>(<params>) =
     ...
 ```
 
 </td><td>
 
-```
+```fsharp
 type <class-name>(<params>) =
     class
         ...
     end
 ```
+
 </td>
 </tr>
 <tr><td>structure</td><td>
 
-```
+```fsharp
 [<StructAttribute>]
 type <structure-name> =
     ...
 ```
+
 </td><td>
 
-```
+```fsharp
 type <structure-name> =
     struct
         ...
@@ -220,16 +221,17 @@ type <structure-name> =
 </tr>
 <tr><td>discriminated union</td><td>
 
-```
+```fsharp
 type <union-name> =
     | ...
     | ...
     ...
     <value-or-member definitions>
 ```
+
 </td><td>
 
-```
+```fsharp
 type <union-name> =
     | ...
     | ...
@@ -243,13 +245,13 @@ type <union-name> =
 </tr>
 <tr><td>interface</td><td>
 
-```
+```fsharp
 type <interface-name> =
     ...
 ```
 </td><td>
 
-```
+```fsharp
 type <interface-name> =
     interface
         ...
@@ -260,7 +262,7 @@ type <interface-name> =
 </tr>
 <tr><td>object expression</td><td>
 
-```
+```fsharp
 { new <type-name>
     with
         <value-or-member-definitions>
@@ -270,7 +272,7 @@ type <interface-name> =
 
 </td><td>
 
-```
+```fsharp
 { new <type-name>
     with
         <value-or-member-definitions>
@@ -283,7 +285,7 @@ type <interface-name> =
 </tr>
 <tr><td>interface implementation</td><td>
 
-```
+```fsharp
 interface <interface-name>
     with
         <value-or-member-definitions>
@@ -291,7 +293,7 @@ interface <interface-name>
 
 </td><td>
 
-```
+```fsharp
 interface <interface-name>
     with
         <value-or-member-definitions>
@@ -302,7 +304,7 @@ interface <interface-name>
 </tr>
 <tr><td>type extension</td><td>
 
-```
+```fsharp
 type <type-name>
     with
         <value-or-member-definitions>
@@ -310,7 +312,7 @@ type <type-name>
 
 </td><td>
 
-```
+```fsharp
 type <type-name>
     with
         <value-or-member-definitions>
@@ -321,14 +323,14 @@ type <type-name>
 </tr>
 <tr><td>module</td><td>
 
-```
+```fsharp
 module <module-name> =
     ...
 ```
 
 </td><td>
 
-```
+```fsharp
 module <module-name> =
     begin
         ...
@@ -339,11 +341,8 @@ module <module-name> =
 </tr>
 </table>
 
+## See also
 
-
-## See Also
-[F# Language Reference](index.md)
-
-[Compiler Directives](compiler-directives.md)
-
-[Code Formatting Guidelines](code-formatting-guidelines.md)
+- [F# Language Reference](index.md)
+- [Compiler Directives](compiler-directives.md)
+- [Code Formatting Guidelines](code-formatting-guidelines.md)

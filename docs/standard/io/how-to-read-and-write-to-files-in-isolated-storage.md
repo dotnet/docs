@@ -28,12 +28,13 @@ To read from, or write to, a file in an isolated store, use an <xref:System.IO.I
  [!code-csharp[Conceptual.IsolatedStorage#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.isolatedstorage/cs/source5.cs#5)]
  [!code-vb[Conceptual.IsolatedStorage#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.isolatedstorage/vb/source5.vb#5)]  
   
-## See Also  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>  
- <xref:System.IO.FileMode?displayProperty=nameWithType>  
- <xref:System.IO.FileAccess?displayProperty=nameWithType>  
- <xref:System.IO.StreamReader?displayProperty=nameWithType>  
- <xref:System.IO.StreamWriter?displayProperty=nameWithType>  
- [File and Stream I/O](../../../docs/standard/io/index.md)  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+## See also
+
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>  
+- <xref:System.IO.FileMode?displayProperty=nameWithType>  
+- <xref:System.IO.FileAccess?displayProperty=nameWithType>  
+- <xref:System.IO.StreamReader?displayProperty=nameWithType>  
+- <xref:System.IO.StreamWriter?displayProperty=nameWithType>  
+- [File and Stream I/O](../../../docs/standard/io/index.md)  
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

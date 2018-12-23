@@ -14,7 +14,7 @@ Using managed code, you can create new application settings and bind them to pro
   
  In the following procedure, you manually create a wrapper class that derives from <xref:System.Configuration.ApplicationSettingsBase>. To this class you add a publicly accessible property for each application setting that you want to expose.  
   
- You can also perform this procedure using minimal code in the Visual Studio designer.  Also see [How to: Create Application Settings Using the Designer](http://msdn.microsoft.com/library/wabtadw6\(v=vs.110\)).  
+ You can also perform this procedure using minimal code in the Visual Studio designer.  Also see [How to: Create Application Settings Using the Designer](https://msdn.microsoft.com/library/wabtadw6\(v=vs.110\)).  
   
 ### To create new Application Settings programmatically  
   

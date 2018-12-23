@@ -16,16 +16,13 @@ helpviewer_keywords:
   - "protocols, TCP"
   - "Internet, TCP"
 ms.assetid: d2811830-3bcb-495c-b82d-cda9cf919aad
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Using TCP Services
 The <xref:System.Net.Sockets.TcpClient> class requests data from an Internet resource using TCP. The methods and properties of **TcpClient** abstract the details for creating a <xref:System.Net.Sockets.Socket> for requesting and receiving data using TCP. Because the connection to the remote device is represented as a stream, data can be read and written with .NET Framework stream-handling techniques.  
   
  The TCP protocol establishes a connection with a remote endpoint and then uses that connection to send and receive data packets. TCP is responsible for ensuring that data packets are sent to the endpoint and assembled in the correct order when they arrive.  
   
- To establish a TCP connection, you must know the address of the network device hosting the service you need and you must know the TCP port that the service uses to communicate. The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (see www.iana.org/assignments/port-numbers). Services not on the Iana list can have port numbers in the range 1,024 to 65,535.  
+ To establish a TCP connection, you must know the address of the network device hosting the service you need and you must know the TCP port that the service uses to communicate. The Internet Assigned Numbers Authority (Iana) defines port numbers for common services (see [Service Name and Transport Protocol Port Number Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)). Services not on the Iana list can have port numbers in the range 1,024 to 65,535.  
   
  The following example demonstrates setting up a **TcpClient** to connect to a time server on TCP port 13.  
   

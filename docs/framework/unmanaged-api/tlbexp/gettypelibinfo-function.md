@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # GetTypeLibInfo Function
-Returns information about the specified type library by examining its [TLIBATTR](https://msdn.microsoft.com/library/ms221376\(v=vs.85\).aspx) structure.  
+Returns information about the specified type library by examining its [TLIBATTR](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagtlibattr) structure.  
   
 ## Syntax  
   
@@ -44,7 +44,7 @@ HRESULT GetTypeLibInfo(
  [out] The localization ID of the type library.  
   
  `pTypeLibPlatform`  
- [out] A [SYSKIND](https://msdn.microsoft.com/library/ms221272\(v=vs.85\).aspx) flag that identifies the target operating system for the type library. Common values are SYS_WIN32 and SYS_WIN64.  
+ [out] A [SYSKIND](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ne-oaidl-tagsyskind) flag that identifies the target operating system for the type library. Common values are SYS_WIN32 and SYS_WIN64.  
   
  `pTypeLibMajorVer`  
  [out] The major version number of the type library. For example, for version *x.y*, the major version number is *x*.  
@@ -68,4 +68,4 @@ HRESULT GetTypeLibInfo(
   
 ## See Also  
  [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx Function](https://msdn.microsoft.com/library/ms221249\(v=vs.85\).aspx)
+ [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

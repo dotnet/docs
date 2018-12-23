@@ -153,10 +153,10 @@ mc:Ignorable="PresentationOptions"
 > [!NOTE]
 >  It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.  
   
- For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981).  
+ For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   
 ## See Also  
  <xref:System.Windows.Freezable>  
- [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)  
+ [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)  
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

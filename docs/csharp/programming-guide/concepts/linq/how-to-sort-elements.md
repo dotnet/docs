@@ -61,6 +61,7 @@ foreach (decimal el in prices)
 89.99  
 ```  
   
-## See Also  
- [Sorting Data (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)  
- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## See Also
+
+- [Sorting Data (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)  
+- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

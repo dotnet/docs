@@ -47,7 +47,8 @@ The <xref:System.IO> namespace provides several classes that allow for various a
 |Find the size of a directory|<xref:System.IO.Directory?displayProperty=nameWithType> class|  
 |Determine whether a directory exists|<xref:System.IO.Directory.Exists%2A?displayProperty=nameWithType> method|  
   
-## See Also  
- [File and Stream I/O](../../../docs/standard/io/index.md)  
- [Composing Streams](../../../docs/standard/io/composing-streams.md)  
- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)
+## See also
+
+- [File and Stream I/O](../../../docs/standard/io/index.md)  
+- [Composing Streams](../../../docs/standard/io/composing-streams.md)  
+- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

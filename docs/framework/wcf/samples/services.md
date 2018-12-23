@@ -23,10 +23,7 @@ This section contains samples that demonstrate Windows Communication Foundation 
  Demonstrates how to implement and configure a typical service and client using WCF.  
   
  [Usage of Standard Endoints](../../../../docs/framework/wcf/samples/usage-of-standard-endpoints.md)  
- Demonstrates how to use standard endpoints in service configuration files.  
-  
- [Hierarchical Configuration Model](../../../../docs/framework/wcf/samples/hierarchical-configuration-model.md)  
- Demonstrates how to implement a hierarchy of configuration files for services.  
+ Demonstrates how to use standard endpoints in service configuration files.
   
  [Extended Protection Policy](../../../../docs/framework/wcf/samples/extended-protection-policy.md)  
  Demonstrates Extended Protection, a security initiative for protecting against man-in-the-middle (MITM) attacks.  

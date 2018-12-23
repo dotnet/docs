@@ -23,7 +23,6 @@ Bindings are collections of special configuration elements, called *binding elem
   
 -   To perform some customization of metadata, typically but not necessarily to configure or use some custom binding element. For more information about providing metadata support to bindings and binding elements, see [Configuration and Metadata Support](../../../../docs/framework/wcf/extending/configuration-and-metadata-support.md).  
   
--  
   
 ## Channels, Bindings, and Binding Elements  
  Bindings and binding elements are the connection between the application programming model, which includes the attributes and behaviors, and the channel model, which includes the factories and listeners, message encoders, and transport and protocol implementations. Typically, binding elements and bindings are implemented to enable channels to be used by the application layer.  

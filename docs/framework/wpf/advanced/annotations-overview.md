@@ -69,4 +69,4 @@ Writing notes or comments on paper documents is such a commonplace activity that
  [ContextMenu Overview](../../../../docs/framework/wpf/controls/contextmenu-overview.md)  
  [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
  [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)  
- [How to: Add a Command to a MenuItem](http://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)
+ [How to: Add a Command to a MenuItem](https://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)

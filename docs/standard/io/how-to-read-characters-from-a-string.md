@@ -32,14 +32,15 @@ The following code examples show how to read characters synchronously and asynch
  [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source2.cs#2)]
  [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source2.vb#2)]  
   
-## See Also  
- <xref:System.IO.StringReader>  
- <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
- [NIB: How to: Create a Directory Listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
- [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
- [File and Stream I/O](../../../docs/standard/io/index.md)
+## See also
+
+- <xref:System.IO.StringReader>  
+- <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
+- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
+- [NIB: How to: Create a Directory Listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
+- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
+- [File and Stream I/O](../../../docs/standard/io/index.md)

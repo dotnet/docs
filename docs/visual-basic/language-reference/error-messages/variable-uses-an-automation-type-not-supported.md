@@ -17,4 +17,4 @@ You tried to use a variable defined in a type library or object library that has
 -   If you encounter this error while using `FileGet` or `FileGetOBject`, make sure the file you are trying to use was written to with `FilePut` or `FilePutObject`.  
   
 ## See Also  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)

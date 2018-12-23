@@ -14,11 +14,11 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
   
  WCF represents the metadata for a service as an instance of the <xref:System.ServiceModel.Description.MetadataSet> type, the structure of which is strongly tied to the metadata serialization format defined in WS-MetadataExchange. The <xref:System.ServiceModel.Description.MetadataSet> type bundles the actual service metadata, such as Web Services Description Language (WSDL) documents, XML schema documents, or WS-Policy expressions, as a collection of <xref:System.ServiceModel.Description.MetadataSection> instances. Each <xref:System.ServiceModel.Description.MetadataSection?displayProperty=nameWithType> instance contains a specific metadata dialect and an identifier. A <xref:System.ServiceModel.Description.MetadataSection?displayProperty=nameWithType> can contain the following items in its <xref:System.ServiceModel.Description.MetadataSection.Metadata%2A?displayProperty=nameWithType> property:  
   
--   Raw metadata.  
+- Raw metadata.  
   
--   A <xref:System.ServiceModel.Description.MetadataReference> instance.  
+- A <xref:System.ServiceModel.Description.MetadataReference> instance.  
   
--   A <xref:System.ServiceModel.Description.MetadataLocation> instance.  
+- A <xref:System.ServiceModel.Description.MetadataLocation> instance.  
   
  A <xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType> instances  point to another metadata exchange (MEX) endpoint and <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType> instances point to a metadata document using an HTTP URL. WCF supports using WSDL documents to describe service endpoints, service contracts, bindings, message exchange patterns, messages and fault messages implemented by a service. Data types used by the service are described in WSDL documents using XML schema. For more information, see [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md). You can use WCF to export and import WSDL extensions for service behavior, contract behaviors, and binding elements that extend the functionality of a service. For more information, see [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md).  
   
@@ -45,20 +45,20 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
  The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> augments your service host by adding a <xref:System.ServiceModel.Description.ServiceMetadataExtension> instance as an extension to your service host. The <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> provides the implementation for the metadata publishing protocols. You can also use the <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> to get the service's metadata at runtime by accessing the <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A> property.  
   
 > [!CAUTION]
->  If you add a MEX endpoint in your application configuration file and then attempt to add the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> to your service host in code you get the following exception:  
->   
->  System.InvalidOperationException: The contract name 'IMetadataExchange' could not be found in the list of contracts implemented by the service Service1. Add a ServiceMetadataBehavior to the configuration file or to the ServiceHost directly to enable support for this contract.  
->   
->  You can work around this issue by either adding the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file or adding both the endpoint and <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code.  
->   
->  For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](../../../../docs/framework/wcf/samples/self-host.md) sample.  
-  
+> If you add a MEX endpoint in your application configuration file and then attempt to add the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> to your service host in code you get the following exception:  
+>
+> System.InvalidOperationException: The contract name 'IMetadataExchange' could not be found in the list of contracts implemented by the service Service1. Add a ServiceMetadataBehavior to the configuration file or to the ServiceHost directly to enable support for this contract.  
+>
+> You can work around this issue by either adding the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file or adding both the endpoint and <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code.  
+>
+> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](../../../../docs/framework/wcf/samples/self-host.md) sample.  
+
 > [!CAUTION]
->  When publishing metadata for a service that exposes two different service contracts in which each contain an operation of the same name an exception is thrown. For example, if you have a service that exposes a service contract called ICarService that has an operation Get(Car c) and the same service exposes a service contract called IBookService that has an operation Get(Book b), an exception is thrown or an error message is displayed when generating the service's metadata. To work around this issue do one of the following:  
->   
->  -   Rename one of the operations.  
-> -   Set the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> to a different name.  
-> -   Set one of the operations' namespaces to a different namespace using the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
+> When publishing metadata for a service that exposes two different service contracts in which each contain an operation of the same name an exception is thrown. For example, if you have a service that exposes a service contract called ICarService that has an operation Get(Car c) and the same service exposes a service contract called IBookService that has an operation Get(Book b), an exception is thrown or an error message is displayed when generating the service's metadata. To work around this issue do one of the following:  
+>
+> - Rename one of the operations.
+> - Set the <xref:System.ServiceModel.OperationContractAttribute.Name%2A> to a different name.  
+> - Set one of the operations' namespaces to a different namespace using the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
   
 ## Retrieving Service Metadata  
  WCF can retrieve service metadata using standardized protocols such as WS-MetadataExchange and HTTP. Both of these protocols are supported by the <xref:System.ServiceModel.Description.MetadataExchangeClient> type. You retrieve service metadata using the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> type by providing an address and an optional binding. The binding used by a <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> instance can be one of the default bindings from the <xref:System.ServiceModel.Description.MetadataExchangeBindings> static class, a user-supplied binding, or a binding loaded from an endpoint configuration for the `IMetadataExchange` contract. The <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> can also resolve HTTP URL references to metadata using the <xref:System.Net.HttpWebRequest> type.  

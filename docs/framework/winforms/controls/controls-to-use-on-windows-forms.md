@@ -224,7 +224,7 @@ The following is an alphabetic list of controls and components that can be used 
  [Developing Windows Forms Controls at Design Time](../../../../docs/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)  
  Provides links to step-by-step topics, recommendations for which kind of control to create, and other information about creating your own control.  
   
- [Controls and Programmable Objects Compared in Various Languages and Libraries](http://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
+ [Controls and Programmable Objects Compared in Various Languages and Libraries](https://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
  Provides a table that maps controls in Visual Basic 6.0 to the corresponding control in [!INCLUDE[vbprvblong](../../../../includes/vbprvblong-md.md)]. Note that controls are now classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
   
  [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  

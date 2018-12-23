@@ -85,7 +85,7 @@ var brandItems = await _context.CatalogBrands
 
 It's important in the above example to add the call to ToListAsync in order to execute the query immediately. Otherwise, the statement will assign an IQueryable<SelectListItem> to brandItems, which will not be executed until it is enumerated. There are pros and cons to returning IQueryable results from methods. It allows the query EF Core will construct to be further modified, but can also result in errors that only occur at runtime, if operations are added to the query that EF Core cannot translate. It's generally safer to pass any filters into the method performing the data access, and return back an in-memory collection (for example, List<T>) as the result.
 
-EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the SaveChanges method on the DbContext, making sure it's the same DbContext instance that was used to fetch the entity. Adding and removing entities is directly on the appropriate DbSet property, again with a call to SaveChanges to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
+EF Core tracks changes on entities it fetches from persistence. To save changes to a tracked entity, you just call the SaveChanges method on the DbContext, making sure it's the same DbContext instance that was used to fetch the entity. Adding and removing entities is directly done on the appropriate DbSet property, again with a call to SaveChanges to execute the database commands. The following example demonstrates adding, updating, and removing entities from persistence.
 
 ```csharp
 // create
@@ -275,7 +275,7 @@ The DocumentDB query language is a simple yet powerful interface for querying JS
 
 **References – DocumentDB**
 
-- DocumentDB Introduction\
+- DocumentDB Introduction  
   <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
 
 ## Other persistence options
@@ -292,7 +292,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 
 **References – Azure Storage**
 
-- Azure Storage Introduction\
+- Azure Storage Introduction  
   <https://docs.microsoft.com/azure/storage/storage-introduction>
 
 ## Caching
@@ -434,5 +434,5 @@ _cache.Get<CancellationTokenSource>("cts").Cancel();
 Caching can dramatically improve the performance of web pages that repeatedly request the same values from the database. Be sure to measure data access and page performance before applying caching, and only apply caching where you see a need for improvement. Caching consumes web server memory resources and increases the complexity of the application, so it’s important you don’t prematurely optimize using this technique.
 
 >[!div class="step-by-step"]
-[Previous](develop-asp-net-core-mvc-apps.md)
-[Next](test-asp-net-core-mvc-apps.md)
+>[Previous](develop-asp-net-core-mvc-apps.md)
+>[Next](test-asp-net-core-mvc-apps.md)

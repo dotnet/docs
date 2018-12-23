@@ -1,5 +1,7 @@
 ---
-title: "#pragma warning (C# Reference)"
+title: "#pragma warning - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "#pragma warning"
@@ -52,8 +54,9 @@ public class D
 }  
 ```  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)  
- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)  
+- [C# Compiler Errors](../../../csharp/language-reference/compiler-messages/index.md)

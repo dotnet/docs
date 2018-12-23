@@ -14,10 +14,4 @@ This section contains samples that demonstrate workflow tracking in Windows Work
  Demonstrates how to enable [!INCLUDE[wf1](../../../../includes/wf1-md.md)] tracking on a workflow service and emit the tracking events in Event Tracing for Windows (ETW).  
   
  [SQL Tracking](../../../../docs/framework/windows-workflow-foundation/samples/sql-tracking.md)  
- Demonstrates how to write a custom SQL tracking participant, that writes tracking records to a SQL database.  
-  
- [Extract WF Data using Tracking](../../../../docs/framework/windows-workflow-foundation/samples/extract-wf-data-using-tracking.md)  
- Demonstrates how to use workflow tracking to extract workflow variables and arguments from activities.  
-  
- [Tracking Using a Text File](../../../../docs/framework/windows-workflow-foundation/samples/tracking-using-a-text-file.md)  
- Demonstrates how to extend tracking in [!INCLUDE[wf1](../../../../includes/wf1-md.md)] by creating a custom tracking participant.
+ Demonstrates how to write a custom SQL tracking participant, that writes tracking records to a SQL database.

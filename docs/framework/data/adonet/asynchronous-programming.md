@@ -1,6 +1,6 @@
 ---
 title: "Asynchronous Programming"
-ms.date: "03/30/2017"
+ms.date: "10/18/2018"
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
 ---
 # Asynchronous Programming
@@ -17,8 +17,9 @@ This topic discusses support for asynchronous programming in the [!INCLUDE[dnprd
 3.  <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A?displayProperty=nameWithType>  
   
  This functionality remains in SqlClient in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].  
-  
- Beginning in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], these methods no longer require `Asynchronous Processing=true` in the connection string.  
+
+> [!TIP]
+> Beginning in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], these legacy methods no longer require `Asynchronous Processing=true` in the connection string.  
   
 ## Asynchronous Programming Features Added in [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)]  
  The new asynchronous programming feature provides a simple technique to make code asynchronous.  
@@ -81,6 +82,9 @@ This topic discusses support for asynchronous programming in the [!INCLUDE[dnprd
 -   <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>  
   
  Other asynchronous members were added to support [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md).  
+
+> [!TIP]
+> The new asynchronous methods don't require `Asynchronous Processing=true` in the connection string.  
   
 ### Synchronous to Asynchronous Connection Open  
  You can upgrade an existing application to use the new asynchronous feature. For example, assume an application has a synchronous connection algorithm and blocks the UI thread every time it connects to the database and, once connected, the application calls a stored procedure that signals other users of the one who just signed in.  
@@ -119,7 +123,7 @@ class A {
   
          SqlDataReader reader = command.ExecuteReader();  
          while (reader.Read())  
-            Console.WriteLine(String.Format("{0}", reader[0]));  
+            Console.WriteLine(reader[0]);
       }  
    }  
 }  
@@ -166,7 +170,7 @@ class A {
 ### Using the Base Provider Model and the New Asynchronous Feature  
  You may need to create a tool that is able to connect to different databases and execute queries. You can use the base provider model and the new asynchronous feature.  
   
- The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](http://msdn.microsoft.com/library/dd327979.aspx).  
+ The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](https://msdn.microsoft.com/library/dd327979.aspx).  
   
 ```csharp
 using System;  

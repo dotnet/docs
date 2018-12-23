@@ -36,10 +36,11 @@ This topic provides an overview of generic interfaces that provide common functi
   
  The <xref:System.Collections.Generic.IEnumerable%601> generic interface provides a generic enumerator structure. The <xref:System.Collections.Generic.IEnumerator%601> generic interface implemented by generic enumerators inherits the nongeneric <xref:System.Collections.IEnumerator> interface; the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> members, which do not depend on the type parameter `T`, appear only on the nongeneric interface. This means that any consumer of the nongeneric interface can also consume the generic interface.  
   
-## See Also  
- <xref:System.Collections.Generic?displayProperty=nameWithType>  
- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
- [Generics](../../../docs/standard/generics/index.md)  
- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)  
- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)
+## See also
+
+- <xref:System.Collections.Generic?displayProperty=nameWithType>  
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
+- [Generics](../../../docs/standard/generics/index.md)  
+- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)  
+- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
+- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)

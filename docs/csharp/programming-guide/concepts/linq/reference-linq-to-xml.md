@@ -13,5 +13,6 @@ This topic contains links to the LINQ to XML reference topics.
   
  For reference documentation for the extension methods that enable you to evaluate XPath queries on an XML tree, see <xref:System.Xml.XPath.Extensions?displayProperty=nameWithType>.  
   
-## See Also  
- [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)
+## See Also
+
+- [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)

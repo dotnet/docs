@@ -142,7 +142,7 @@ End Sub
   
 ## See Also  
  <xref:System.IDisposable.Dispose%2A>  
- [Initialization and Termination of Components](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
+ [Initialization and Termination of Components](https://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
  [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
  [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)  
  [Nothing](../../../../visual-basic/language-reference/nothing.md)

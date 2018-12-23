@@ -1,5 +1,5 @@
 ---
-title: "#If...Then...#Else Directives"
+title: "#If...Then...#Else Directives (Visual Basic)"
 ms.date: 04/11/2018
 f1_keywords: 
   - "vb.#EndIf"
@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "else directive (#else)"
   - "#Else directive [Visual Basic]"
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
-author: rpetrusha
-ms.author: ronpet
 ---
 # #If...Then...#Else Directives
 Conditionally compiles selected blocks of Visual Basic code.  

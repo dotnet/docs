@@ -70,4 +70,3 @@
 ### [Calling Service Operations](calling-service-operations-wcf-data-services.md)
 ### [Managing the Data Service Context](managing-the-data-service-context-wcf-data-services.md)
 ### [Working with Binary Data](working-with-binary-data-wcf-data-services.md)
-### [Writing a Windows Store App that consumes an OData Service](writing-a-windows-store-app-that-consumes-an-odata-service.md)

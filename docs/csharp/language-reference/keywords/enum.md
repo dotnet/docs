@@ -1,5 +1,7 @@
 ---
-title: "enum keyword (C# Reference)"
+title: "enum keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "enum"
@@ -36,7 +38,7 @@ enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 
 The approved types for an enum are [byte](byte.md), [sbyte](sbyte.md), [short](short.md), [ushort](ushort.md), [int](int.md), [uint](uint.md), [long](long.md), or [ulong](ulong.md).
 
-A variable of type `Day` can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
+A variable of an enumeration type can be assigned any value in the range of the underlying type; the values are not limited to the named constants.
 
 The default value of an `enum E` is the value produced by the expression `(E)0`.
 
@@ -91,11 +93,11 @@ If you remove `Flags`, the example displays the following values:
 
 ## See also
 
-[C# Reference](../index.md)  
-[Enumeration Types](../../programming-guide/enumeration-types.md)  
-[C# Keywords](index.md)  
-[Integral Types Table](integral-types-table.md)  
-[Built-In Types Table](built-in-types-table.md)  
-[Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)  
-[Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)  
-[Enum Naming Conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)
+- [C# Reference](../index.md)  
+- [Enumeration Types](../../programming-guide/enumeration-types.md)  
+- [C# Keywords](index.md)  
+- [Integral Types Table](integral-types-table.md)  
+- [Built-In Types Table](built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)  
+- [Enum Naming Conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

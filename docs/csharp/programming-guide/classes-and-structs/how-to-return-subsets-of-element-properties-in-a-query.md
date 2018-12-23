@@ -1,5 +1,6 @@
 ---
-title: "How to: Return Subsets of Element Properties in a Query (C# Programming Guide)"
+title: "How to: Return Subsets of Element Properties in a Query - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
@@ -39,7 +40,8 @@ Console.WriteLine(student.First + " " + student.Last);
   
 -   To run this code, copy and paste the class into a Visual C# console application project that has been created in Visual Studio. By default, this project targets version 3.5 of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], and it will have a reference to System.Core.dll and a `using` directive for System.Linq. If one or more of these requirements are missing from the project, you can add them manually.   
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

@@ -1,5 +1,6 @@
 ---
-title: "Main() and command-line arguments (C# Programming Guide)"
+title: "Main() and command-line arguments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/02/2017
 f1_keywords: 
   - "CS5001"
@@ -35,8 +36,9 @@ The addition of `async` and `Task`, `Task<int>` return types simplifies program 
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See also
-[Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-[Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
+## See Also
+
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  

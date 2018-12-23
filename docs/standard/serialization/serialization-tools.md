@@ -16,5 +16,6 @@ This section contains detailed information about the serialization tools. You ca
 |[XML Serializer Generator Tool (Sgen.exe)](../../../docs/standard/serialization/xml-serializer-generator-tool-sgen-exe.md)|Creates an XML serialization assembly for types in a specified assembly in order to improve the run-time performance of the <xref:System.Xml.Serialization.XmlSerializer>.|  
 |[XML Schema Definition Tool (Xsd.exe)](../../../docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md)|Generates XML schemas that follow the XSD language proposed by the World Wide Web Consortium (W3C). This tool generates common language runtime classes and <xref:System.Data.DataSet> classes from an XSD schema file.|  
   
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)
+## See also
+
+- [Tools](../../../docs/framework/tools/index.md)

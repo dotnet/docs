@@ -31,4 +31,4 @@ Windows Forms includes a user input model based on events that are raised while 
  Describes the methods to validate user input in Windows Forms applications.  
   
 ## Related Sections  
- Also see [Creating Event Handlers in Windows Forms](http://msdn.microsoft.com/library/dacysss4\(v=vs.110\)).
+ Also see [Creating Event Handlers in Windows Forms](https://msdn.microsoft.com/library/dacysss4\(v=vs.110\)).

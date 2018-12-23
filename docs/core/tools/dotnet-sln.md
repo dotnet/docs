@@ -1,8 +1,6 @@
 ---
-title: dotnet sln command - .NET Core CLI
+title: dotnet sln command
 description: The dotnet-sln command provides a convenient option to add, remove, and list projects in a solution file.
-author: mairaw
-ms.author: mairaw
 ms.date: 06/13/2018
 ---
 # dotnet sln
@@ -89,3 +87,6 @@ Add multiple C# projects to a solution using a globbing pattern:
 Remove multiple C# projects from a solution using a globbing pattern:
 
 `dotnet sln todo.sln remove **/*.csproj`
+
+> [!NOTE]
+> Globbing is not a CLI feature but rather a feature of the command shell. To successfully expand the files, you must use a shell that supports globbing. For more information about globbing, see [Wikipedia](https://en.wikipedia.org/wiki/Glob_(programming)).

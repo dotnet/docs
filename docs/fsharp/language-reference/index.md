@@ -7,11 +7,9 @@ ms.date: 05/16/2016
 
 This section is a reference to the F# language, a multi-paradigm programming language targeting .NET. The F# language supports functional, object-oriented and imperative programming models.
 
-
 ## F# Tokens
+
 The following table shows reference topics that provide tables of keywords, symbols and literals used as tokens in F#.
-
-
 
 |Title|Description|
 |-----|-----------|
@@ -20,9 +18,8 @@ The following table shows reference topics that provide tables of keywords, symb
 |[Literals](literals.md)|Describes the syntax for literal values in F# and how to specify type information for F# literals.|
 
 ## F# Language Concepts
+
 The following table shows reference topics available that describe language concepts.
-
-
 
 |Title|Description|
 |-----|-----------|
@@ -32,7 +29,7 @@ The following table shows reference topics available that describe language conc
 |[Automatic Generalization](generics/automatic-generalization.md)|Describes generic constructs in F#.|
 |[Inheritance](inheritance.md)|Describes inheritance, which is used to model the "is-a" relationship, or subtyping, in object-oriented programming.|
 |[Members](members/index.md)|Describes members of F# object types.|
-|[Parameters and Arguments ](Parameters-and-Arguments.md)|Describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference.|
+|[Parameters and Arguments](Parameters-and-Arguments.md)|Describes language support for defining parameters and passing arguments to functions, methods, and properties. It includes information about how to pass by reference.|
 |[Operator Overloading](operator-overloading.md)|Describes how to overload arithmetic operators in a class or record type, and at the global level.|
 |[Casting and Conversions](casting-and-conversions.md)|Describes support for type conversions in F#.|
 |[Access Control](access-control.md)|Describes access control in F#. Access control means declaring what clients are able to use certain program elements, such as types, methods, functions and so on.|
@@ -50,9 +47,8 @@ The following table shows reference topics available that describe language conc
 |[Verbose Syntax](verbose-syntax.md)|Describes the syntax for F# constructs when lightweight syntax is not enabled. Verbose syntax is indicated by the `#light "off"` directive at the top of the code file.|
 
 ## F# Types
+
 The following table shows reference topics available that describe types supported by the F# language.
-
-
 
 |Title|Description|
 |-----|-----------|
@@ -82,6 +78,7 @@ The following table shows reference topics available that describe types support
 |[Type Providers](../tutorials/type-providers/index.md)|Describes type provides and provides links to walkthroughs on using the built-in type providers to access databases and web services.|
 
 ## F# Expressions
+
 The following table lists topics that describe F# expressions.
 
 |Title|Description|
@@ -99,6 +96,7 @@ The following table lists topics that describe F# expressions.
 |[Query Expressions](query-expressions.md)|Describes query expressions, a language feature that implements LINQ for F# and enables you to write queries against a data source or enumerable collection.|
 
 ## Compiler-supported Constructs
+
 The following table lists topics that describe special compiler-supported constructs.
 
 |Topic|Description|
@@ -107,5 +105,6 @@ The following table lists topics that describe special compiler-supported constr
 |[Compiler Directives](compiler-directives.md)|Describes processor directives and compiler directives.|
 |[Source Line, File, and Path Identifiers](source-line-file-path-identifiers.md)|Describes the identifiers `__LINE__`, `__SOURCE_DIRECTORY__` and `__SOURCE_FILE__`, which are built-in values that enable you to access the source line number, directory and file name in your code.|
 
-## See Also
-[Visual F#](../index.md)
+## See also
+
+- [Visual F#](../index.md)

@@ -1,6 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 02/15/2018
+ms.date: 10/24/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 
@@ -8,42 +8,43 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-author: rpetrusha
-ms.author: ronpet
 ---
 # What's new for Visual Basic
 
-This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
+This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the latest versions of the language.
   
-## Current Version
+## Current version
 
-Visual Basic 15.5   
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8  
+For new features, see [Visual Basic 15.8](#visual-basic-158)
 
 ## Previous versions
 
-Visual Basic 15.3   
+Visual Basic 15.5 / Visual Studio 2017 Version 15.5  
+For new features, see [Visual Basic 15.5](#visual-basic-155)
+
+Visual Basic 15.3 / Visual Studio 2017 Version 15.3  
 For new features, see [Visual Basic 15.3](#visual-basic-153)
 
-Visual Basic 2017   
+Visual Basic 2017 / Visual Studio 2017  
 For new features, see [Visual Basic 2017](#visual-basic-2017)
 
-Visual Basic / Visual Studio .NET 2015   
+Visual Basic / Visual Studio 2015   
 For new features, see [Visual Basic 14](#visual-basic-14)
 
-Visual Basic / Visual Studio .NET 2013  
+Visual Basic / Visual Studio 2013  
 Technology previews of the .NET Compiler Platform (“Roslyn”)
 
-Visual Basic / Visual Studio .NET 2012   
+Visual Basic / Visual Studio 2012   
 `Async` and `await` keywords, iterators, caller info attributes
 
-Visual Basic, Visual Studio .NET 2010   
+Visual Basic, Visual Studio 2010   
 Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access
 
-Visual Basic / Visual Studio .NET 2008   
+Visual Basic / Visual Studio 2008   
 Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types  
 
-Visual Basic / Visual Studio .NET 2005   
+Visual Basic / Visual Studio 2005   
 The `My` type and helper types (access to app, computer, files system, network)
 
 Visual Basic / Visual Studio .NET 2003   
@@ -51,6 +52,39 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
+
+## Visual Basic 15.8
+
+**Optimized floating-point to integer conversion**
+
+In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) is set to `Off`:
+
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Fix(System.Single)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Double)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Object)?displayProperty=nameWithType>
+- <xref:Microsoft.VisualBasic.Conversion.Int(System.Single)?displayProperty=nameWithType>
+- <xref:System.Math.Ceiling(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Floor(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Round(System.Double)?displayProperty=nameWithType>
+- <xref:System.Math.Truncate(System.Double)?displayProperty=nameWithType>
+
+This optimization allows code to run faster -- up to twice as fast for code that does a large number of conversions to integer types. The following example illustrates some simple method calls that are affected by this optimization:
+
+```vb
+Dim s As Single = 173.7619
+Dim d As Double = s 
+
+Dim i1 As Integer = CInt(Fix(s))               ' Result: 173
+Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
+Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
+Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
+Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
+
+```
+
+Note that this truncates rather than rounds floating-point values.
 
 ## Visual Basic 15.5
 
@@ -63,6 +97,10 @@ For example, the following method call has two positional arguments between a na
 ```vb
 StudentInfo.Display("Mary", age:=19, #9/21/1998#)
 ```
+
+[`Private Protected` member access modifier](../language-reference/modifiers/private-protected.md)
+
+This new keyword combination defines a member that is accessible by all members in its containing class as well as by types derived from the containing class, but only if they are also found in the containing assembly. Because structures cannot be inherited, `Private Protected` can only be applied to the members of a class.
 
 **Leading hex/binary/octal separator**
 
@@ -117,7 +155,7 @@ You can define a binary literal by using the prefix `&B` or `&b`. In addition, y
 
 For more information, see the "Literal assignments" section of the [Byte](../language-reference/data-types/byte-data-type.md#literal-assignments), [Integer](../language-reference/data-types/integer-data-type.md#literal-assignments), [Long](../language-reference/data-types/long-data-type.md#literal-assignments), [Short](../language-reference/data-types/short-data-type.md#literal-assignments), [SByte](../language-reference/data-types/sbyte-data-type.md#literal-assignments), [UInteger](../language-reference/data-types/uinteger-data-type.md#literal-assignments), [ULong](../language-reference/data-types/ulong-data-type.md#literal-assignments), and [UShort](../language-reference/data-types/ushort-data-type.md#literal-assignments) data types.
 
-**Support for C# reference return values**
+[**Support for C# reference return values**](../programming-guide/language-features/procedures/ref-return-values.md)
 
 Starting with C# 7.0, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
 
@@ -144,49 +182,49 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
-[String Interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
+[String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
-[Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
+[Null-conditional member access and indexing](../language-reference/operators/null-conditional-operators.md)  
 You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
   
-[Multi-line String Literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
+[Multi-line string literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
  String literals can contain newline sequences.  You no longer need the old work around of using `<xml><![CDATA[...text with newlines...]]></xml>.Value`  
   
-Comments  
-You can put comments after implicit line continuations, inside initializer expressions, and amongst LINQ expression terms.  
+**Comments**  
+You can put comments after implicit line continuations, inside initializer expressions, and among LINQ expression terms.  
   
- Smarter Fully-qualified Name Resolution  
+**Smarter fully-qualified name resolution**  
  Given code such as `Threading.Thread.Sleep(1000)`, Visual Basic used to look up the namespace "Threading", discover it was ambiguous between System.Threading and System.Windows.Threading, and then report an error.  Visual Basic now considers both possible namespaces together.  If you show the completion list, the Visual Studio editor lists members from both types in the completion list.  
   
- Year-first Date Literals  
+ **Year-first date literals**  
  You can have date literals in yyyy-mm-dd format, `#2015-03-17 16:10 PM#`.  
   
- Readonly Interface Properties  
+ **Readonly interface properties**  
  You can implement readonly interface properties using a readwrite property.  The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.  
   
  [TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)  
  For more readability of your code, you can now use `TypeOf` with `IsNot`.  
   
- [#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/directives.md)  
+ [#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/index.md)  
  You can disable and enable specific warnings for regions within a source file.  
   
- XML Doc-comment Improvements  
+ **XML doc comment improvements**  
  When writing doc comments, you get smart editor and build support for validating parameter names, proper handling of `crefs` (generics, operators, etc.), colorizing, and refactoring.  
   
- [Partial Module and Interface Definitions](../../visual-basic/language-reference/modifiers/partial.md)  
+ [Partial module and interface definitions](../../visual-basic/language-reference/modifiers/partial.md)  
  In addition to classes and structs, you can declare partial modules and interfaces.  
   
- [#Region Directives inside Method Bodies](../../visual-basic/language-reference/directives/region-directive.md)  
+ [#Region directives inside method bodies](../../visual-basic/language-reference/directives/region-directive.md)  
  You can put #Region…#End Region delimiters anywhere in a file, inside functions, and even spanning across function bodies.  
   
- [Overrides Definitions are Implicitly Overloads](../../visual-basic/language-reference/modifiers/overrides.md)  
+ [Overrides definitions are implicitly overloads](../../visual-basic/language-reference/modifiers/overrides.md)  
  If you add the `Overrides` modifier to a definition, the compiler implicitly adds `Overloads` so that you can type less code in common cases.  
   
- CObj Allowed in Attributes Arguments  
+ **CObj allowed in attributes arguments**  
  The compiler used to give an error that CObj(…) was not a constant when used in attribute constructions.  
   
- Declaring and Consuming Ambiguous Methods from Different Interfaces  
+ **Declaring and consuming ambiguous methods from different interfaces**  
  Previously the following code yielded errors that prevented you from declaring `IMock` or from calling `GetDetails` (if these had been declared in C#):  
   
 ```vb  

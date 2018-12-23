@@ -40,4 +40,4 @@ The <xref:System.Data.Common.DbProviderFactory.CreateDataAdapter%2A> method of a
  [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)  
  [Obtaining a DbProviderFactory](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)  
  [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)
+ [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

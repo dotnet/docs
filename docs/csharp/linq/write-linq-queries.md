@@ -75,6 +75,6 @@ int numCount = numbers.Where(n => n < 3 || n > 7).Count();
 
 ## See also
 
-[Walkthrough: Writing Queries in C#](../programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)
-[Language Integrated Query (LINQ)](index.md)
-[where clause](../language-reference/keywords/where-clause.md)
+- [Walkthrough: Writing Queries in C#](../programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)
+- [Language Integrated Query (LINQ)](index.md)
+- [where clause](../language-reference/keywords/where-clause.md)

@@ -1,5 +1,6 @@
 ---
-title: "Main() Return Values (C# Programming Guide)"
+title: "Main() Return Values - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 08/02/2017
 helpviewer_keywords: 
   - "Main method [C#], return values"
@@ -20,7 +21,7 @@ If the return value from `Main` is not used, returning `void` allows for slightl
 
 ## Example
 
-This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamilar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/using-with-xplat-cli.md).
+This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamiliar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/using-with-xplat-cli.md).
 
 Modify the `Main` method in *program.cs* as follows:
 
@@ -87,9 +88,9 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 > [!NOTE]
 >If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
-## See also
-[C# Programming Guide](../../programming-guide/index.md)
-[C# Reference](../index.md)
-[Main() and Command-Line Arguments](index.md)
-[How to: Display Command Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
-[How to: Access Command-Line Arguments Using foreach](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)
+## See Also
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Reference](../index.md)
+- [Main() and Command-Line Arguments](index.md)
+- [How to: Display Command Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
+- [How to: Access Command-Line Arguments Using foreach](../../programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)

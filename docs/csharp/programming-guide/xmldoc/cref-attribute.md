@@ -1,5 +1,6 @@
 ---
-title: "cref Attribute (C# Programming Guide)"
+title: "cref Attribute - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "cref [C#]"
@@ -112,6 +113,7 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
 </doc>  
 ```  
   
-## See Also  
- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+## See Also
+
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

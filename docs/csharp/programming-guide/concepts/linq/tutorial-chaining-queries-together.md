@@ -18,5 +18,6 @@ This tutorial illustrates the processing model when you chain queries together. 
 |[Intermediate Materialization (C#)](../../../../csharp/programming-guide/concepts/linq/intermediate-materialization.md)|Identifies and illustrates the semantics of intermediate materialization.|  
 |[Chaining Standard Query Operators Together (C#)](../../../../csharp/programming-guide/concepts/linq/chaining-standard-query-operators-together.md)|Describes the lazy semantics of the standard query operators.|  
   
-## See Also  
- [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)
+## See Also
+
+- [Pure Functional Transformations of XML (C#)](../../../../csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)

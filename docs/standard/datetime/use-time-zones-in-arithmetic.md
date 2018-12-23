@@ -60,5 +60,5 @@ This example requires:
 
 ## See also
 
-[Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-[Performing arithmetic operations with dates and times](../../../docs/standard/datetime/performing-arithmetic-operations.md)
+* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+* [Performing arithmetic operations with dates and times](../../../docs/standard/datetime/performing-arithmetic-operations.md)

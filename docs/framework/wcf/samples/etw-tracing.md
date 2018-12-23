@@ -44,7 +44,7 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
  Before using this listener, an ETW Trace Session must be started. This session can be started by using Logman.exe or Tracelog.exe. A SetupETW.bat file is included with this sample so that you can set up the ETW Trace Session along with a CleanupETW.bat file for closing the session and completing the log file.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see [http://go.microsoft.com/fwlink/?LinkId=56580](http://go.microsoft.com/fwlink/?LinkId=56580)  
+>  The setup procedure and build instructions for this sample are located at the end of this topic. For more information about these tools, see [https://go.microsoft.com/fwlink/?LinkId=56580](https://go.microsoft.com/fwlink/?LinkId=56580)  
   
  When using the ETWTraceListener, traces are logged in binary .etl files. With ServiceModel tracing turned on, all generated traces appear in the same file. Use [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) for viewing .etl and .svclog log files. The viewer creates an end-to-end view of the system that makes it possible to trace a message from its source to its destination and point of consumption.  
   
@@ -96,9 +96,9 @@ Logman stop Wcf
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\AnalyticTrace`  
   
 ## See Also  
- [AppFabric Monitoring Samples](http://go.microsoft.com/fwlink/?LinkId=193959)
+ [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

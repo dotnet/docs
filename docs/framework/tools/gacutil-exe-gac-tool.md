@@ -87,7 +87,23 @@ myAssembly1,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 myAssembly2,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab  
 myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab  
 ```  
-  
+
+> [!NOTE]
+>  Attempting to install an assembly with a filename longer than between 79 and 91 characters (excluding the file extension) can result in the following error:
+> ```
+> Failure adding assembly to the cache:   The file name is too long.
+> ```
+> This is because internally Gacutil.exe constructs a path of up to MAX_PATH characters that consists of the following elements:
+> - GAC Root - 34 chars (ie. `C:\Windows\Microsoft.NET\assembly\`)
+> - Architecture - 7 or 9 chars (ie. `GAC_32\`, `GAC_64\`, `GAC_MSIL`)
+> - AssemblyName - Up to 91 chars, depending on the size of the other elements (eg. `System.Xml.Linq\`)
+> - AssemblyInfo - 31 to 48 chars or more consisting of:
+>   - Framework - 5 chars (eg. `v4.0_`)
+>   - AssemblyVersion - 8 to 24 chars (eg. `9.0.1000.0_`)
+>   - AssemblyLanguage - 1 to 8 chars (eg. `de_`, `sr-Cyrl_`)
+>   - PublicKey - 17 chars (eg. `31bf3856ad364e35\`)
+> - DllFileName - Up to 91 + 4 chars (ie. `<AssemblyName>.dll`)
+
 ## Examples  
  The following command installs the assembly `mydll.dll` into the global assembly cache.  
   

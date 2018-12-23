@@ -29,5 +29,6 @@ Delegates enable you to call a synchronous method in an asynchronous manner. Whe
  [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md)  
  Describes asynchronous programming with the .NET Framework.  
   
-## See Also  
- <xref:System.Delegate>
+## See also
+
+* <xref:System.Delegate>

@@ -1,5 +1,5 @@
 ---
-title: "My.Application Object"
+title: "My.Application Object (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Application object"

@@ -1,22 +1,24 @@
 ---
-title: .NET Core version selection
-description: Learn how .NET Core finds and chooses runtime versions for your program.
+title: Select which .NET Core version to use
+description: Learn how .NET Core automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/27/2018
+ms.custom: "seodec18"
 ---
-# .NET Core version selection
+
+# Select the .NET Core version to use
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
-This article explains the policies used by the .NET Core tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end user machines. These policies perform the following:
+This article explains the policies used by the .NET Core tools, SDK, and runtime for selecting versions. These policies provide a balance between running applications using the specified versions and enabling ease of upgrading both developer and end-user machines. These policies perform the following actions:
 
 - Easy and efficient deployment of .NET Core, including security and reliability updates.
 - Use the latest tools and commands independent of target runtime.
 
 Version selection occurs:
 
-- When you run an SDK command, [the sdk uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
+- When you run an SDK command, [the SDK uses the latest installed version](#the-sdk-uses-the-latest-installed-version).
 - When you build an assembly, [target framework monikers define build time APIs](#target-framework-monikers-define-build-time-apis).
 - When you run a .NET Core application, [target framework dependent apps roll forward](#framework-dependent-apps-roll-forward).
 - When you publish a self-contained application, [self-contained deployments include the selected runtime](#self-contained-deployments-include-the-selected-runtime).
@@ -25,11 +27,16 @@ The rest of this document examines those four scenarios.
 
 ## The SDK uses the latest installed version
 
-SDK commands include `dotnet new`, `dotnet build` or `dotnet run`. The `dotnet` CLI must choose an SDK version for any command. The .NET Core CLI uses the latest SDK installed on the machine by default. You'll use the .NET Core SDK v2.1.301 when it's installed, even if the project you are working with targets the .NET Core Runtime 2.0. Note that this is true for preview versions as well as released versions. You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
+SDK commands include `dotnet new` and `dotnet run`. The .NET Core CLI must choose an SDK version for every `dotnet` command. It uses the latest SDK installed on the machine by default, even if:
+
+* The project targets an earlier version of the .NET Core runtime.
+* The latest version of the .NET Core SDK is a preview version.
+
+You can take advantage of the latest SDK features and improvements while targeting earlier .NET Core runtime versions. You can target multiple runtime versions of .NET Core on different projects, using the same SDK tools for all projects.
 
 On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
 
-*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. This is the same as the default behavior, when no *global.json* file is found.
+*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. Roll-forward is the same as the default behavior, when no *global.json* file is found.
 
 The following example shows the *global.json* syntax:
 
@@ -47,7 +54,7 @@ The process for selecting an SDK version is:
 1. `dotnet` uses the SDK specified in the first *global.json* found.
 1. `dotnet` uses the latest installed SDK if no *global.json* is found.
 
-You can learn more about selecting an SDK version in the [matching rules](../tools/global-json.md) section of the topic on *global.json*.
+You can learn more about selecting an SDK version in the [Matching rules](../tools/global-json.md#matching-rules) section of the article on *global.json*.
 
 ## Target Framework Monikers define build time APIs
 
@@ -69,7 +76,7 @@ A given SDK supports a fixed set of frameworks, capped to the target framework o
 
 ## Framework-dependent apps roll forward
 
-You run an application from source with [`dotnet run`](../tools/dotnet-run.md). `dotnet run` both builds and runs an application. The `dotnet` executable is the **host** for the application in development environments.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#framework-dependent-deployments-fdd) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#framework-dependent-executables-fde) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp2.0` in your project file, and `2.0.4` is the latest .NET runtime installed, the `2.0.4` runtime is used.
 
@@ -103,4 +110,4 @@ Self-contained deployments may require a specific patch version. You can overrid
 <RuntimeFrameworkVersion>2.0.4</RuntimeFrameworkVersion>
 ```
 
-The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* required runtime framework version.
+The `RuntimeFrameworkVersion` element  overrides the default version policy. For self-contained deployments, the `RuntimeFrameworkVersion` specifies the *exact* runtime framework version. For framework-dependent applications, the `RuntimeFrameworkVersion` specifies the *minimum* required runtime framework version.

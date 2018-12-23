@@ -14,7 +14,7 @@ The methods of the <xref:System.Math?displayProperty=nameWithType> class provide
 ## Remarks  
  The following table lists methods of the <xref:System.Math?displayProperty=nameWithType> class. You can use these in a Visual Basic program.  
   
-|.NET Framework method|Description|  
+|.NET method|Description|  
 |---------------------------|-----------------|  
 |<xref:System.Math.Abs%2A>|Returns the absolute value of a number.|  
 |<xref:System.Math.Acos%2A>|Returns the angle whose cosine is the specified number.|  
@@ -45,14 +45,14 @@ The methods of the <xref:System.Math?displayProperty=nameWithType> class provide
   
  To use these functions without qualification, import the <xref:System.Math?displayProperty=nameWithType> namespace into your project by adding the following code to the top of your source file:  
   
-```  
+```vb
 Imports System.Math  
 ```  
   
 ## Example  
  This example uses the <xref:System.Math.Abs%2A> method of the <xref:System.Math> class to compute the absolute value of a number.  
   
-```  
+```vb
 ' Returns 50.3.  
 Dim MyNumber1 As Double = Math.Abs(50.3)  
 ' Returns 50.3.  
@@ -62,7 +62,7 @@ Dim MyNumber2 As Double = Math.Abs(-50.3)
 ## Example  
  This example uses the <xref:System.Math.Atan%2A> method of the <xref:System.Math> class to calculate the value of pi.  
   
-```  
+```vb
 Public Function GetPi() As Double  
     ' Calculate the value of pi.  
     Return 4.0 * Math.Atan(1.0)  
@@ -72,7 +72,7 @@ End Function
 ## Example  
  This example uses the <xref:System.Math.Cos%2A> method of the <xref:System.Math> class to return the cosine of an angle.  
   
-```  
+```vb
 Public Function Sec(ByVal angle As Double) As Double  
     ' Calculate the secant of angle, in radians.  
     Return 1.0 / Math.Cos(angle)  
@@ -82,7 +82,7 @@ End Function
 ## Example  
  This example uses the <xref:System.Math.Exp%2A> method of the <xref:System.Math> class to return e raised to a power.  
   
-```  
+```vb
 Public Function Sinh(ByVal angle As Double) As Double  
     ' Calculate hyperbolic sine of an angle, in radians.  
     Return (Math.Exp(angle) - Math.Exp(-angle)) / 2.0  
@@ -92,7 +92,7 @@ End Function
 ## Example  
  This example uses the <xref:System.Math.Log%2A> method of the <xref:System.Math> class to return the natural logarithm of a number.  
   
-```  
+```vb
 Public Function Asinh(ByVal value As Double) As Double  
     ' Calculate inverse hyperbolic sine, in radians.  
     Return Math.Log(value + Math.Sqrt(value * value + 1.0))  
@@ -102,7 +102,7 @@ End Function
 ## Example  
  This example uses the <xref:System.Math.Round%2A> method of the <xref:System.Math> class to round a number to the nearest integer.  
   
-```  
+```vb
 ' Returns 3.  
 Dim MyVar2 As Double = Math.Round(2.8)  
 ```  
@@ -110,7 +110,7 @@ Dim MyVar2 As Double = Math.Round(2.8)
 ## Example  
  This example uses the <xref:System.Math.Sign%2A> method of the <xref:System.Math> class to determine the sign of a number.  
   
-```  
+```vb
 ' Returns 1.  
 Dim MySign1 As Integer = Math.Sign(12)  
 ' Returns -1.  
@@ -122,7 +122,7 @@ Dim MySign3 As Integer = Math.Sign(0)
 ## Example  
  This example uses the <xref:System.Math.Sin%2A> method of the <xref:System.Math> class to return the sine of an angle.  
   
-```  
+```vb
 Public Function Csc(ByVal angle As Double) As Double  
     ' Calculate cosecant of an angle, in radians.  
     Return 1.0 / Math.Sin(angle)  
@@ -132,7 +132,7 @@ End Function
 ## Example  
  This example uses the <xref:System.Math.Sqrt%2A> method of the <xref:System.Math> class to calculate the square root of a number.  
   
-```  
+```vb
 ' Returns 2.  
 Dim MySqr1 As Double = Math.Sqrt(4)  
 ' Returns 4.79583152331272.  
@@ -146,7 +146,7 @@ Dim MySqr4 As Double = Math.Sqrt(-4)
 ## Example  
  This example uses the <xref:System.Math.Tan%2A> method of the <xref:System.Math> class to return the tangent of an angle.  
   
-```  
+```vb
 Public Function Ctan(ByVal angle As Double) As Double  
     ' Calculate cotangent of an angle, in radians.  
     Return 1.0 / Math.Tan(angle)  

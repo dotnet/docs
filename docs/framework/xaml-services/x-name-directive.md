@@ -58,7 +58,7 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
  <xref:System.Windows.FrameworkElement.Name%2A> can also be set using property element syntax with inner text, but that is uncommon. In contrast, `x:Name` cannot be set in XAML property element syntax, or in code using <xref:System.Windows.DependencyObject.SetValue%2A>; it can only be set using attribute syntax on objects because it is a directive.  
   
 ## Silverlight Usage Notes  
- `x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](http://go.microsoft.com/fwlink/?LinkId=199081).  
+ `x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081).  
   
 ## See Also  
  <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>  

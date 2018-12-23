@@ -29,7 +29,7 @@ The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut men
  [How to: Handle the ContextMenuStrip Opening Event](../../../../docs/framework/winforms/controls/how-to-handle-the-contextmenustrip-opening-event.md)  
  Describes how to customize the behavior of a <xref:System.Windows.Forms.ContextMenuStrip> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
   
- Also see [ContextMenuStrip Tasks Dialog Box](http://msdn.microsoft.com/library/ms233646\(v=vs.110\)) or [ContextMenuStrip Items Collection Editor](http://msdn.microsoft.com/library/ms233641\(v=vs.110\)).  
+ Also see [ContextMenuStrip Tasks Dialog Box](https://msdn.microsoft.com/library/ms233646\(v=vs.110\)) or [ContextMenuStrip Items Collection Editor](https://msdn.microsoft.com/library/ms233641\(v=vs.110\)).  
   
 ## Reference  
  <xref:System.Windows.Forms.MenuStrip>  

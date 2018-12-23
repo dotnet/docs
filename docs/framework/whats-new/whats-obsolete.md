@@ -19,7 +19,7 @@ The .NET Framework changes over time. Each new version adds new types and type m
 >  The terms *obsolete* and *deprecated* have the same meaning when applied to the types and members of the .NET Framework.  
   
 ## The ObsoleteAttribute Attribute  
- The .NET Framework indicates that a type or type member is obsolete by marking it with the <xref:System.ObsoleteAttribute> attribute. Applying the attribute to a type or member indicates that that type or member will be removed in some future version of the .NET Framework without breaking compiled code that uses that member.  
+ The .NET Framework indicates that a type or type member is obsolete by marking it with the <xref:System.ObsoleteAttribute> attribute. Applying the attribute to a type or member indicates that type or member will be removed in some future version of the .NET Framework without breaking compiled code that uses that member.  
   
  In addition to indicating that a type or a type member is obsolete, <xref:System.ObsoleteAttribute> defines how the compiler handles source code that includes that type or member. The compiler can compile the code but emit a warning message, or it can treat the use of the type or member as an error. In the first case, the code can successfully compile, but a warning message indicates that the type or member is obsolete. In the second case, compilation fails.  
   
@@ -67,13 +67,13 @@ The .NET Framework changes over time. Each new version adds new types and type m
  [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)  
   
 ## Obsolete Lists for Previous Versions  
- [Obsolete Types in the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=224224)  
+ [Obsolete Types in the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=224224)  
   
- [Obsolete Members in the .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=224227)  
+ [Obsolete Members in the .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=224227)  
   
- [.NET Framework 3.5 Obsolete List](http://go.microsoft.com/fwlink/?LinkId=163710)  
+ [.NET Framework 3.5 Obsolete List](https://go.microsoft.com/fwlink/?LinkId=163710)  
   
- [.NET Framework 2.0 Obsolete List](http://go.microsoft.com/fwlink/?LinkID=125264)  
+ [.NET Framework 2.0 Obsolete List](https://go.microsoft.com/fwlink/?LinkID=125264)  
   
 ## See Also  
  [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

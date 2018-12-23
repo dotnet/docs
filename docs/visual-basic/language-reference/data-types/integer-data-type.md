@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "I literal type character [Visual Basic]"
   - "Integer data type"
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Integer data type (Visual Basic)
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  
@@ -55,7 +53,7 @@ Dim number As Integer = &H_C305_F860
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `I` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `Integer` data type, as the following example shows.
+Numeric literals can also include the `I` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `Integer` data type, as the following example shows.
 
 ```vb
 Dim number = &H_035826I
@@ -92,7 +90,7 @@ k = 5.5
 ## See also
 
 <xref:System.Int32?displayProperty=nameWithType>   
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
  [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

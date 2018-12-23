@@ -1,5 +1,7 @@
 ---
-title: "#endregion (C# Reference)"
+title: "#endregion - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "#endregion"
@@ -21,7 +23,8 @@ class MyClass
 #endregion  
 ```  
   
-## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+## See Also
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "My.WebServices Object"
+title: "My.WebServices Object (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.WebServices"

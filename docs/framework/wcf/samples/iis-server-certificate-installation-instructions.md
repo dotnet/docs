@@ -30,7 +30,7 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
   
      ![IIS Certificate Wizard](../../../../docs/framework/wcf/samples/media/iiscertificate-wizard.GIF "IISCertificate_Wizard")  
   
-6.  Test access to the service in a browser by using the HTTPS address https://localhost/servicemodelsamples/service.svc.  
+6.  Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   
 #### If SSL was previously configured by using Httpcfg.exe  
   
@@ -59,7 +59,7 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
   
 5.  Select the **ServiceModelSamples-HTTPS-Server** from the **SSL certificate** drop-down list and click **OK**.  
   
-6.  Test access to the service in a browser by using the HTTPS address https://localhost/servicemodelsamples/service.svc.  
+6.  Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   
 > [!NOTE]
 >  Because the test certificate you have just installed is not a trusted certificate, you may encounter additional Internet Explorer security warnings when browsing to local Web addresses secured with this certificate.  

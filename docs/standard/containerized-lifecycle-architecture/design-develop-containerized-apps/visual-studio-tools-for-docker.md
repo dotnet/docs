@@ -1,70 +1,91 @@
 ---
-title: Using Visual Studio Tools for Docker (Visual Studio on Windows)
+title: Visual Studio Tools for Docker on Windows
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 09/12/2018
+ms.custom: vs-dotnet
 ---
 # Using Visual Studio Tools for Docker (Visual Studio on Windows)
 
-The developer workflow when using Visual Studio Tools for Docker is similar to the workflow when using Visual Studio Code and Docker CLI (in fact, it is based on the same Docker CLI), but it is easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. It's also able to execute and debug your containers via simple actions like F5 and Ctrl+F5 from Visual Studio. Even more, with Visual Studio 2017, in addition to being able to run and debug a single container, you also can run and debug a group of containers (a whole solution) at the same time if they are defined in the same docker-compose.yml file at the solution level.
+The Visual Studio Tools for Docker development workflow is similar to the workflow when using Visual Studio Code and Docker CLI. In fact, it's based on the same Docker CLI, but it's easier to get started, simplifies the process, and provides greater productivity for the build, run, and compose tasks. Execute and debug your containers via simple actions like **F5** and **Ctrl**+**F5**. With the optional container orchestration support, in addition to being able to run and debug a single container, you can run and debug a group of containers (a whole solution) at the same time.
 
-## Configuring your local environment
+> [!NOTE]
+> This article applies to Visual Studio on Windows, and not Visual Studio for Mac.
 
-With the latest versions of Docker for Windows, it is easier than ever to develop Docker applications because the setup is straightforward, as explained in the following references.
+## Configure your local environment
 
-**More info:** To learn more about installing Docker for Windows, go to <https://docs.docker.com/docker-for-windows/>.
+With the latest versions of Docker for Windows ([https://docs.docker.com/docker-for-windows/](https://docs.docker.com/docker-for-windows/)), the straightforward setup makes it easy to develop Docker applications.
 
-If you're using Visual Studio 2015, you must have Update 3 or a later version plus the Visual Studio Tools for Docker.
+Docker support is included in Visual Studio 2017. Download Visual Studio 2017 here: [https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
-**More info:** For instructions on installing Visual Studio, go to [https://visualstudio.microsoft.com/\
-products/vs-2015-product-editions](https://visualstudio.microsoft.com/products/vs-2015-product-editions).
+## Use Docker Tools in Visual Studio 2017
 
-To see more about installing Visual Studio Tools for Docker, go to <http://aka.ms/vstoolsfordocker> and <https://docs.microsoft.com/aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker>.
+There are two levels of Docker support you can add to a project. In .NET Core web app projects, you can just add a *Dockerfile* file to the project by enabling Docker support. The next level is container orchestration support, which adds a *Dockerfile* to the project (if it doesn't already exist) and a *docker-compose.yml* file at the solution level. Container orchestration support, via Docker Compose, is added by default in Visual Studio 2017 versions 15.7 or earlier. Container orchestration support is an opt-in feature in Visual Studio 2017 versions 15.8 or later, in which case Docker Compose and Service Fabric are supported.
 
-If you're using Visual Studio 2017, Docker support is already included.
+The **Add** > **Docker Support** and **Add** > **Container orchestration Support** commands are located on the right-click menu (or context menu) of the project node for a web app project in **Solution Explorer**, as shown in Figure 4-26:
 
-## Using Docker Tools in Visual Studio 2015
+![Add Docker Support menu option in Visual Studio](media/add-docker-support-menu.png)
 
-The Visual Studio Tools for Docker provides a consistent way to develop and validate locally your Docker containers for Linux in a Linux Docker host or VM, or your Windows Containers directly on Windows.
+Figure 4-26: Adding Docker support to a Visual Studio 2017 project
 
-If you're using a single container, the first thing you need to begin is to turn on Docker support into your .NET Core project. To do this, right-click your project file, as shown in Figure 4-25.
+### Add Docker support
 
-![https://i1.visualstudiogallery.msdn.s-msft.com/0f5b2caa-ea00-41c8-b8a2-058c7da0b3e4/image/file/205468/1/add-docker-support.png](./media/image31.png)
+You can add Docker support to an existing .NET Core web app project by selecting **Add** > **Docker Support** in **Solution Explorer**. You can also enable Docker support during project creation by selecting **Enable Docker Support** in the **New ASP.NET Core Web Application** dialog box that opens after you click **OK** in the **New Project** dialog box, as shown in Figure 4-27.
 
-Figure 4-25: Turning on Docker support for your Visual Studio project
+![Enable Docker Support for new ASP.NET Core web app in Visual Studio](./media/enable-docker-support-visual-studio.png)
 
-## Using Docker Tools in Visual Studio 2017
+Figure 4-27: Enable Docker support during project creation in Visual Studio 2017
 
-When you add Docker support to a service project in your solution (see Figure 4-26), Visual Studio is not just adding a DockerFile file to your project, it also is adding a service section in your solution's docker-compose.yml files (or creating the files if they didn't exist). It's an easy way to begin composing your multicontainer solution; you then can open the docker-compose.yml files and update them with additional features.
+When you add or enable Docker support, Visual Studio adds a *Dockerfile* file to the project.
 
-![](./media/image32.png)
+> [!NOTE]
+> When you enable Docker Compose support during project creation for a .NET Framework web app project (not a .NET Core web app project) as shown in Figure 4-28, container orchestration support is also added.
+>
+> ![Enable Docker compose support for a .NET Framework web app project](media/enable-docker-compose-support.png)
 
-Figure 4-26: Turning on Docker Solution support in a Visual Studio 2017 project
+> Figure 4-28: Enabling Docker Compose support on a .NET Framework web app project in Visual Studio 2017
 
-This action not only adds the DockerFile to your project, it also adds the required configuration lines of code to a global docker-compose.yml set at the solution level.
+### Add container orchestration support
 
-You also can turn on Docker support when creating an ASP.NET Core project in Visual Studio 2017, as shown in Figure 4-27.
+When you want to compose a multicontainer solution, add container orchestration support to your projects. This lets you run and debug a group of containers (a whole solution) at the same time if they're defined in the same *docker-compose.yml* file.
 
-![](./media/image33.png)
+To add container orchestration support, right-click on the solution or project node in **Solution Explorer**, and choose **Add** > **Container Orchestration Support**. Then choose **Docker Compose** or **Service Fabric** to manage the containers.
 
-Figure 4-27: Turning on Docker support when creating a project
+After you add container orchestration support to your project, you see a Dockerfile added to the project and a **docker-compose** folder added to the solution in **Solution Explorer**, as shown in Figure 4-29:
 
-After you add Docker support to your solution in Visual Studio, you also will see a new node tree in Solution Explorer with the added docker-compose.yml files, as depicted in Figure 4-28.
+![Docker files in Solution Explorer in Visual Studio](media/docker-support-solution-explorer.png)
 
-![](./media/image34.PNG)
+Figure 4-29: Docker files in Solution Explorer in Visual Studio 2017
 
-Figure 4-28: docker-compose.yml files now display in Solution Explorer
+If *docker-compose.yml* already exists, Visual Studio just adds the required lines of configuration code to it.
 
-You could deploy a multicontainer application by using a single docker-compose.yml file when you run docker-compose up; however, Visual Studio adds a group of them, so you can override values depending on the environment (development versus production) and the execution type (release versus debug). This capability will be better explained in later chapters.
+## Configure Docker tools
 
-**More info:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
+From the main menu, choose **Tools** > **Options**, and expand **Container Tools** > **Settings**. The container tools settings appear.
+
+![](./media/visual-studio-docker-tools-options.png)
+
+Figure 4-30: Docker Tools Options
+
+The following table might help you decide how to set these options.
+
+| Name | Default Setting | Applies To | Description |
+| -----|:---------------:|:----------:| ----------- |
+| Automatically pull required Docker images on project load | On | Docker Compose | For increased performance, when loading projects, Visual Studio will start a Docker pull operation in the background so that when you are ready to run your code, the image is already downloaded or in the process of downloading. If you're just loading projects and browsing code, you can turn this off to avoid downloading container images you don't need. |
+| Automatically start containers in background | On | Docker Compose | Again for increased performance, Visual Studio creates a container with volume mounts ready for when you build and run your container. If you want to control when your container is created, turn this off. |
+| Automatically kill containers on solution close | On | Docker Compose | Turn this off if you would like containers for your solution to continue to run after closing the solution or closing Visual Studio. |
+| Do not prompt for trusting localhost SSL certificate | Off | ASP.NET Core 2.1 projects | If the localhost SSL certificate is not trusted, Visual Studio will prompt every time you run your project, unless this checkbox is checked. |
+
+> [!WARNING]
+> If the localhost SSL certificate is not trusted, and you check the box to suppress prompting, then HTTPS web requests might fail at runtime in your app or service. In that case, uncheck the **Do not prompt** checkbox, run your project, and indicate trust at the prompt.
+
+**More information:** For further details on the services implementation and use of Visual Studio Tools for Docker, read the following articles:
 
 Build, debug, update, and refresh apps in a local Docker container: [https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh/](https://docs.microsoft.com/azure/vs-azure-tools-docker-edit-and-refresh)
 
-Deploy an ASP.NET container to a remote Docker host: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
-
+Deploy an ASP.NET Core Docker container to a container registry: [https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker/](https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker)
 
 >[!div class="step-by-step"]
-[Previous](docker-apps-inner-loop-workflow.md)
-[Next](set-up-windows-containers-with-powershell.md)
+>[Previous](docker-apps-inner-loop-workflow.md)
+>[Next](set-up-windows-containers-with-powershell.md)

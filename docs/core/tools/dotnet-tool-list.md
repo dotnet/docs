@@ -1,8 +1,6 @@
 ---
-title: dotnet tool list command - .NET Core CLI
+title: dotnet tool list command
 description: The dotnet tool list command lists the specified .NET Core Global Tool from your machine.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet tool list
@@ -15,7 +13,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```
+```console
 dotnet tool list <-g|--global>
 dotnet tool list <--tool-path>
 dotnet tool list <-h|--help>
@@ -55,4 +53,4 @@ Lists the Global Tools from a specific Linux/macOS folder:
 
 ## See also
 
-[.NET Core Global Tools](global-tools.md)
+* [.NET Core Global Tools](global-tools.md)

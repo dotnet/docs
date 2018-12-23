@@ -34,7 +34,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](../../../../do
 ### A Note about White Space  
  For brevity, a single space is shown in the syntax sections that follow, but multiple spaces are also acceptable wherever a single space is shown.  
   
- Two numbers don’t actually have to be separated by a comma or whitespace, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
+ Two numbers don’t actually have to be separated by a comma or white space, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
   
 ### Syntax  
  The [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] attribute usage syntax for a <xref:System.Windows.Media.StreamGeometry> is composed of an optional <xref:System.Windows.Media.FillRule> value and one or more figure descriptions.  

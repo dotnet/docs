@@ -47,7 +47,8 @@ Using generic collections is generally recommended, because you gain the immedia
   
  The <xref:System.Collections.Generic.List%601> class allows you to specify your own <xref:System.Collections.Generic.IComparer%601> generic interface implementations for sorting and searching the list. The <xref:System.Collections.Generic.SortedDictionary%602> and <xref:System.Collections.Generic.SortedList%602> classes also have this capability. In addition, these classes let you specify comparers when the collection is created. In similar fashion, the <xref:System.Collections.Generic.Dictionary%602> and <xref:System.Collections.ObjectModel.KeyedCollection%602> classes let you specify your own equality comparers.  
   
-## See Also  
- [Collections and Data Structures](../../../docs/standard/collections/index.md)  
- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)  
- [Generics](../../../docs/standard/generics/index.md)
+## See also
+
+- [Collections and Data Structures](../../../docs/standard/collections/index.md)  
+- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)  
+- [Generics](../../../docs/standard/generics/index.md)

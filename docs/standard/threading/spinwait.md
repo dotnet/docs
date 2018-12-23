@@ -23,6 +23,7 @@ ms.author: "ronpet"
  [!code-csharp[CDS_SpinWait#05](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_spinwait/cs/spinwait.cs#05)]
  [!code-vb[CDS_SpinWait#05](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_spinwait/vb/cds_spinwait1.vb#05)]  
   
-## See Also  
- <xref:System.Threading.Thread.SpinWait%2A>  
- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+## See also
+
+- <xref:System.Threading.Thread.SpinWait%2A>  
+- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

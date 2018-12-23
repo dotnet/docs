@@ -23,8 +23,8 @@ The second step is to include each element of the first (left) collection in the
 
 ## See also
 
-<xref:System.Linq.Enumerable.Join%2A>  
-<xref:System.Linq.Enumerable.GroupJoin%2A>  
-[Perform inner joins](perform-inner-joins.md)  
-[Perform grouped joins](perform-grouped-joins.md)  
-[Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>  
+- <xref:System.Linq.Enumerable.GroupJoin%2A>  
+- [Perform inner joins](perform-inner-joins.md)  
+- [Perform grouped joins](perform-grouped-joins.md)  
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  

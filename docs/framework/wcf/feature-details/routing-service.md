@@ -31,7 +31,7 @@ The Routing Service is a generic SOAP intermediary that acts as a message router
  The Routing Service provides a generic, dynamically configurable, pluggable SOAP intermediary that is compatible with the WCF Service and Channel models and allows you to perform content-based routing of SOAP-based messages.  
   
 > [!NOTE]
->  The Routing Service does not currently support routing of WCF REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](http://go.microsoft.com/fwlink/?LinkId=164589) (http://go.microsoft.com/fwlink/?LinkId=164589).  
+>  The Routing Service does not currently support routing of WCF REST services.  To route REST calls, consider using <xref:System.Web.Routing> or [Application Request Routing](https://go.microsoft.com/fwlink/?LinkId=164589).  
   
 ## Content-Based Routing  
  Content-based routing is the ability to route a message based on one or more values contained within the message. The Routing Service inspects each message and routes it to the destination endpoint based on the message contents and the routing logic you create. Content-based routing provides the basis for service aggregation, service versioning, and priority routing.  

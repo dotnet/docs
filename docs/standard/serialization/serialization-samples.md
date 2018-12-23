@@ -14,10 +14,7 @@ This section demonstrates serializing objects in the .NET Framework.
  Demonstrates the version tolerance features of .NET Serialization.  
   
  [Web Services Generics Serialization Technology Sample](../../../docs/standard/serialization/web-services-generics-serialization-technology-sample.md)  
- Shows how to use and control the serialization of generics in ASP.NET Web Services.  
-  
- [Web Services IXmlSerializable Technology Sample](../../../docs/standard/serialization/web-services-ixmlserializable-technology-sample.md)  
- Shows how to use <xref:System.Xml.Serialization.IXmlSerializable> to control the serialization of custom types in ASP.NET Web Services.  
+ Shows how to use and control the serialization of generics in ASP.NET Web Services. 
   
  [SchemaImporterExtension Technology Sample](../../../docs/standard/serialization/schemaimporterextension-technology-sample.md)  
  Demonstrates a custom <xref:System.Xml.Serialization.Advanced.SchemaImporterExtension>.  

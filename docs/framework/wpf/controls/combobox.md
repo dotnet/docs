@@ -17,7 +17,7 @@ The <xref:System.Windows.Controls.ComboBox> control presents users with a list o
 Collapsed and expanded  
   
 ## In This Section  
- [How to: Get a ComboBoxItem](http://msdn.microsoft.com/library/8a0d2622-64b6-41fc-bf80-9669a1eacb53)  
+ [How to: Get a ComboBoxItem](https://msdn.microsoft.com/library/8a0d2622-64b6-41fc-bf80-9669a1eacb53)  
   
 ## Reference  
  <xref:System.Windows.Controls.ComboBox>

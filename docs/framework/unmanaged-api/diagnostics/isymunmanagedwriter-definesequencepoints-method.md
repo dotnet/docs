@@ -39,7 +39,7 @@ HRESULT DefineSequencePoints(
  [in] The document object for which the sequence points are being defined.  
   
  `spCount`  
- [in] A `ULONG32` that that indicates the size of each of the `offsets`, `lines`, `columns`, `endLines`, and `endColumns` buffers.  
+ [in] A `ULONG32` that indicates the size of each of the `offsets`, `lines`, `columns`, `endLines`, and `endColumns` buffers.  
   
  `offsets`  
  [in] The offset of the sequence points measured from the beginning of the method.  

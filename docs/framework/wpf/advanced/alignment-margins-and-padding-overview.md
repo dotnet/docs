@@ -142,4 +142,4 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  <xref:System.Windows.FrameworkElement.Margin%2A>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
- [WPF Layout Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160054)
+ [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)

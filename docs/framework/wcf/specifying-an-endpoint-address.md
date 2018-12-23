@@ -14,11 +14,11 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
 ## Definition of an Endpoint Address  
  In WCF, an <xref:System.ServiceModel.EndpointAddress> models an endpoint reference (EPR) as defined in the WS-Addressing standard.  
   
- The address URI for most transports has four parts. For example, this URI, "http://www.fabrikam.com:322/mathservice.svc/secureEndpoint" has the following four parts:  
+ The address URI for most transports has four parts. For example, this URI, `http://www.fabrikam.com:322/mathservice.svc/secureEndpoint` has the following four parts:  
   
 -   Scheme: http:  
   
--   Machine: www.fabrikam.com  
+-   Machine: `www.fabrikam.com`  
   
 -   (Optional) Port: 322  
   
@@ -33,13 +33,13 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
  When hosting with IIS, you do not manage the <xref:System.ServiceModel.ServiceHost> instance yourself. The base address is always the address specified in the .svc file for the service when hosting in IIS. So you must use relative endpoint addresses for IIS-hosted service endpoints. Supplying a fully-qualified endpoint address can lead to errors in the deployment of the service. For more information, see [Deploying an Internet Information Services-Hosted WCF Service](../../../docs/framework/wcf/feature-details/deploying-an-internet-information-services-hosted-wcf-service.md).  
   
 ## Defining Endpoint Addresses in Configuration  
- To define an endpoint in a configuration file, use the [\<endpoint>](http://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+ To define an endpoint in a configuration file, use the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
   
  [!code-xml[S_UEHelloWorld#5](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp2.config#5)]  
   
  When the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> method is called (that is, when the hosting application attempts to start the service), the system looks for a [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md) element with a name attribute that specifies "UE.Samples.HelloService". If the [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md) element is found, the system loads the specified class and creates endpoints using the endpoint definitions provided in the configuration file. This mechanism allows you to load and start a service with two lines of code while keeping binding and addressing information out of your code. The advantage of this approach is that these changes can be made without having to recompile or redeploy the application.  
   
- The optional headers are declared in a [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md). The following is an example of the elements used to specify endpoints for a service in a configuration file that distinguishes between two headers: "Gold" clients from http://tempuri1.org/ and "Standard" clients from http://tempuri2.org/. The client calling this service must have the appropriate [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) in its configuration file.  
+ The optional headers are declared in a [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md). The following is an example of the elements used to specify endpoints for a service in a configuration file that distinguishes between two headers: "Gold" clients from `http://tempuri1.org/` and "Standard" clients from `http://tempuri2.org/`. The client calling this service must have the appropriate [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) in its configuration file.  
   
  [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]  
   

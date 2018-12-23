@@ -53,7 +53,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
  [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  
- [COM Interoperability Samples](http://msdn.microsoft.com/library/09c38567-6380-4d70-848a-e896a4ca05f4)  
+ [COM Interoperability Samples](https://msdn.microsoft.com/library/09c38567-6380-4d70-848a-e896a4ca05f4)  
  [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../../docs/framework/tools/aximp-exe-windows-forms-activex-control-importer.md)  
  [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
  [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md)  

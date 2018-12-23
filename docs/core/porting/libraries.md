@@ -1,13 +1,13 @@
 ---
-title: Porting to .NET Core - Libraries
+title: Port libraries to .NET Core
 description: Learn how to port library projects from the .NET Framework to .NET Core.
 author: cartermp
-ms.author: mairaw
 ms.date: 07/14/2017
+ms.custom: seodec18
 ---
-# Porting to .NET Core - Libraries
+# Port .NET Framework libraries to .NET Core
 
-This article discusses porting library code to .NET Core so that it runs cross-platform.
+Learn how to port .NET Framework library code to .NET Core, to run cross-platform and expand the reach of the apps that use it.
 
 ## Prerequisites
 
@@ -67,34 +67,17 @@ Similar to CAS, Security Transparency allows separating sandboxed code from secu
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
-## Converting a PCL project
+## Retargeting your .NET Framework code to .NET Framework 4.7.2
 
-You can convert the targets of a PCL project to .NET Standard by loading the library in Visual Studio 2017 and performing the following steps:
-
-1. Right-click on the project file and select **Properties**.
-1. Under **Library**, select **Target .NET Platform Standard**.
-
-If your packages support NuGet 3.0, the project retargets to .NET Standard.
-
-If your packages don't support NuGet 3.0, you receive a dialog from Visual Studio telling you to uninstall your current packages. If you receive this notice, perform the following steps:
-
-1. Right-click the project, select **Manage NuGet Packages**.
-1. Make a note of the project's packages.
-1. Uninstall the packages one-by-one.
-1. You might need to restart Visual Studio to complete the uninstall process. If so, a **Restart** button is presented to you in the **NuGet Package Manager** window.
-1. When the project reloads, it targets .NET Standard. Add the packages you were required to uninstall.
-
-## Retargeting your .NET Framework code to .NET Framework 4.6.2
-
-If your code isn't targeting .NET Framework 4.6.2, we recommended that you retarget to .NET Framework 4.6.2. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.
+If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.
 
 For each of your projects in Visual Studio you wish to port, do the following:
 
-1. Right-click on the project and select Properties.
-1. In the **Target Framework** dropdown, select **.NET Framework 4.6.2**.
+1. Right-click on the project and select **Properties**.
+1. In the **Target Framework** dropdown, select **.NET Framework 4.7.2**.
 1. Recompile your projects.
 
-Because your projects now target .NET Framework 4.6.2, use that version of the .NET Framework as your base for porting code.
+Because your projects now target .NET Framework 4.7.2, use that version of the .NET Framework as your base for porting code.
 
 ## Determining the portability of your code
 
@@ -145,7 +128,7 @@ This approach might be best for larger and more complex projects, where restruct
  
 The analysis phase could take some time depending on the size of your codebase. Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan usually saves you time in the long run, particularly if you have a complex codebase.
 
-Your plan could involve making significant changes to your codebase while still targeting .NET Framework 4.6.2, making this a more structured version of the previous approach. How you go about executing your plan is dependent on your codebase.
+Your plan could involve making significant changes to your codebase while still targeting .NET Framework 4.7.2, making this a more structured version of the previous approach. How you go about executing your plan is dependent on your codebase.
 
 ### Mixing approaches
 
@@ -156,11 +139,11 @@ It's likely that you'll mix the above approaches on a per-project basis. You sho
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core. To do this, you'll need to use a testing framework that builds and runs tests for .NET Core. Currently, you have three options:
 
 - [xUnit](https://xunit.github.io/)
-  * [Getting Started](http://xunit.github.io/docs/getting-started-dotnet-core.html)
+  * [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
   * [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
-- [NUnit](http://www.nunit.org/)
+- [NUnit](https://nunit.org/)
   * [Getting Started](https://github.com/nunit/docs/wiki/Installation)
-  * [Blog post about migrating from MSTest to NUnit](http://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
+  * [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](https://docs.microsoft.com/visualstudio/test/unit-test-basics)
 
 ## Recommended approach to porting

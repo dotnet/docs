@@ -1,7 +1,7 @@
 ---
 title: "Walkthrough: Arranging WPF Content on Windows Forms at Design Time"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF user control [Windows Forms], hosting in a layout panel"
   - "WPF content [Windows Forms], arranging at design time"
   - "Windows Forms, arranging WPF content at design time"
@@ -11,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
 ---
 # Walkthrough: Arranging WPF Content on Windows Forms at Design Time
-This walkthrough shows you how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation (WPF) controls.  
-  
- In this walkthrough, you perform the following tasks:  
-  
--   Create the project.  
-  
--   Create the WPF control.  
-  
--   Host WPF controls in a layout panel.  
-  
--   Use snaplines to align WPF controls.  
-  
--   Anchor and dock WPF controls.  
-  
+This walkthrough shows you how to use the Windows Forms layout features, such as anchoring and snaplines, to arrange Windows Presentation Foundation (WPF) controls.
+
+ In this walkthrough, you perform the following tasks:
+
+-   Create the project.
+
+-   Create the WPF control.
+
+-   Host WPF controls in a layout panel.
+
+-   Use snaplines to align WPF controls.
+
+-   Anchor and dock WPF controls.
+
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
   
--   [!INCLUDE[vs_dev11_long](../../../../includes/vs-dev11-long-md.md)].  
+-   Visual Studio 2012.  
   
 ## Creating the Project  
  The first step is to create the Windows Forms project.  
@@ -50,7 +50,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 1.  Add a new WPF <xref:System.Windows.Controls.UserControl> to the project. Use the default name for the control type, `UserControl1.xaml`. For more information, see [Walkthrough: Creating New WPF Content on Windows Forms at Design Time](../../../../docs/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time.md).  
   
-2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](http://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).  
+2.  In Design view, make sure that `UserControl1` is selected. For more information, see [How to: Select and Move Elements on the Design Surface](https://msdn.microsoft.com/library/54cb70b6-b35b-46e4-a0cc-65189399c474).  
   
 3.  In the **Properties** window, set the value of the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties to `200`.  
   
@@ -77,7 +77,7 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 6.  In the **Toolbox**, double-click `UserControl1` to create another instance in the second cell of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-7.  In the **Document Outline** window, select `tableLayoutPanel1`. For more information, see [Document Outline Window](http://msdn.microsoft.com/library/9054f2bc-f6f8-4242-9fe0-be71089b12f8).  
+7.  In the **Document Outline** window, select `tableLayoutPanel1`. For more information, see [Document Outline Window](https://msdn.microsoft.com/library/9054f2bc-f6f8-4242-9fe0-be71089b12f8).  
   
 8.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Padding%2A> property to `10, 10, 10, 10`.  
   
@@ -149,4 +149,4 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
  [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
  [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [WPF Designer](http://msdn.microsoft.com/library/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

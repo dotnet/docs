@@ -27,7 +27,7 @@ ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
 # Numeric Data Types (Visual Basic)
 Visual Basic supplies several *numeric data types* for handling numbers in various representations. *Integral* types represent only whole numbers (positive, negative, and zero), and *nonintegral* types represent numbers with both integer and fractional parts.  
   
- For a table showing a side-by-side comparison of the Visual Basic data types, see [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md).  
+ For a table showing a side-by-side comparison of the Visual Basic data types, see [Data Types](../../../../visual-basic/language-reference/data-types/index.md).  
   
 ## Integral Numeric Types  
  *Integral data types* are those that represent only numbers without fractional parts.  

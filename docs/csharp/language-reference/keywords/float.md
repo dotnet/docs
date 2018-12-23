@@ -1,5 +1,7 @@
 ---
-title: "float keyword (C# Reference)"
+title: "float keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "float"
@@ -15,7 +17,7 @@ The `float` keyword signifies a simple type that stores 32-bit floating-point va
 
 |Type|Approximate range|Precision|.NET type|  
 |----------|-----------------------|---------------|-------------------------|  
-|`float`|-3.4 × 10<sup>38</sup> to +3.4 × 10<sup>38</sup>|7 digits|<xref:System.Single?displayProperty=nameWithType>|  
+|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|<xref:System.Single?displayProperty=nameWithType>|  
 
 ## Literals
 
@@ -31,9 +33,9 @@ If you do not use the suffix in the previous declaration, you will get a compila
 
 You can mix numeric integral types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
 
-- If one of the floating-point types is [double](double.md), the expression evaluates to [double](double.md) or [bool](bool.md) in relational or Boolean expressions.
+- If one of the floating-point types is [double](double.md), the expression evaluates to [double](double.md), or to [bool](bool.md) in relational comparisons or comparisons for equality.
 
-- If there is no [double](double.md) type in the expression, the expression evaluates to `float` or [bool](bool.md) in relational or Boolean expressions.
+- If there is no [double](double.md) type in the expression, the expression evaluates to `float`, or to [bool](bool.md) in relational comparisons or comparisons for equality.
 
 A floating-point expression can contain the following sets of values:
 
@@ -45,7 +47,7 @@ A floating-point expression can contain the following sets of values:
 
 - The finite set of nonzero values
 
-For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](http://www.ieee.org) website.
+For more information about these values, see IEEE Standard for Binary Floating-Point Arithmetic, available on the [IEEE](https://www.ieee.org) website.
 
 ## Example
 
@@ -59,12 +61,12 @@ In the following example, an [int](int.md), a [short](short.md), and a `float` a
 
 ## See also
 
-<xref:System.Single>  
-[C# Reference](../index.md)  
-[C# Programming Guide](../../programming-guide/index.md)  
-[Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)  
-[C# Keywords](index.md)  
-[Integral Types Table](integral-types-table.md)  
-[Built-In Types Table](built-in-types-table.md)  
-[Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)  
-[Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)  
+- <xref:System.Single>  
+- [C# Reference](../index.md)  
+- [C# Programming Guide](../../programming-guide/index.md)  
+- [Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)  
+- [C# Keywords](index.md)  
+- [Integral Types Table](integral-types-table.md)  
+- [Built-In Types Table](built-in-types-table.md)  
+- [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)  
+- [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)  

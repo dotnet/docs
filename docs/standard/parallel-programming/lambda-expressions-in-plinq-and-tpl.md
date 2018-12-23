@@ -30,5 +30,6 @@ The Task Parallel Library (TPL) contains many methods that take one of the <xref
  [!code-csharp[System.Threading.Tasks.Parallel#02](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.parallel/cs/parallelforeach.cs#02)]
  [!code-vb[System.Threading.Tasks.Parallel#02](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.parallel/vb/parallelforeach.vb#02)]  
   
-## See Also  
- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+## See also
+
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

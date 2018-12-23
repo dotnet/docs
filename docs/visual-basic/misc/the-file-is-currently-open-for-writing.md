@@ -12,6 +12,6 @@ An attempt has been made to access a file that is currently open for writing.
   
 ## See Also  
  <xref:System.Security.Permissions.FileIOPermission>  
- [How to: Get Information About a File in Visual Basic](http://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)  
+ [How to: Get Information About a File in Visual Basic](https://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)  
  [How to: Write Text to Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)  
  [How to: Write to Binary Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-to-binary-files.md)

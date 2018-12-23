@@ -1,8 +1,6 @@
 ---
-title: dotnet tool uninstall command - .NET Core CLI
+title: dotnet tool uninstall command
 description: The dotnet tool uninstall command uninstalls the specified .NET Core Global Tool from your machine.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet tool uninstall
@@ -15,7 +13,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```
+```console
 dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
 dotnet tool uninstall <PACKAGE_NAME> <--tool-path>
 dotnet tool uninstall <-h|--help>
@@ -61,4 +59,4 @@ Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Too
 
 ## See also
 
-[.NET Core Global Tools](global-tools.md)
+* [.NET Core Global Tools](global-tools.md)

@@ -23,7 +23,7 @@ The .NET Framework provides many services, including memory management, type and
 
 For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../../docs/framework/get-started/index.md). For an introduction to the architecture and key features of the .NET Framework, see the [overview](../../docs/framework/get-started/overview.md).  
 
-The .NET Framework can be used with Docker and with [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview). See [Deploying .NET Framework applications with Docker](./docker/index.md) to learn how to run your applications in Docker containers.
+The .NET Framework can be used with Docker and with [Windows Containers](/virtualization/windowscontainers/about/). See [Deploying .NET Framework applications with Docker](./docker/index.md) to learn how to run your applications in Docker containers.
 
 ## Installation
 

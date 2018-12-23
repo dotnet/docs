@@ -31,9 +31,8 @@ The following widely-used libraries contain Type Providers for different uses:
 
 Where necessary, you can [create your own custom type providers](creating-a-type-provider.md), or reference type providers that have been created by others. For example, assume your organization has a data service providing a large and growing number of named data sets, each with its own stable data schema. You may choose to create a type provider that reads the schemas and presents the latest available data sets to the programmer in a strongly typed way.
 
-## See Also
-[Tutorial: Create a Type Provider](creating-a-type-provider.md)
+## See also
 
-[F# Language Reference](../../language-reference/index.md)
-
-[Visual F#](../../index.md)
+- [Tutorial: Create a Type Provider](creating-a-type-provider.md)
+- [F# Language Reference](../../language-reference/index.md)
+- [Visual F#](../../index.md)

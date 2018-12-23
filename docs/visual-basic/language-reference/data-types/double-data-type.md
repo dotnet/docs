@@ -51,7 +51,7 @@ Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that r
   
 ## See Also  
  <xref:System.Double?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/data-type-summary.md)  
+ [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  
  [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

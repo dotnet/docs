@@ -74,7 +74,8 @@ BlockingCollection<string> bc = new BlockingCollection<string>(new ConcurrentBag
 ## Using Many BlockingCollections As One  
  For scenarios in which a consumer needs to take items from multiple collections simultaneously, you can create arrays of <xref:System.Collections.Concurrent.BlockingCollection%601> and use the static methods such as <xref:System.Collections.Concurrent.BlockingCollection%601.TakeFromAny%2A> and <xref:System.Collections.Concurrent.BlockingCollection%601.AddToAny%2A> that will add to or take from any of the collections in the array. If one collection is blocking, the method immediately tries another until it finds one that can perform the operation. For more information, see [How to: Use Arrays of Blocking Collections in a Pipeline](../../../../docs/standard/collections/thread-safe/how-to-use-arrays-of-blockingcollections.md).  
   
-## See Also  
- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
- [Collections and Data Structures](../../../../docs/standard/collections/index.md)  
- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)
+## See also
+
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- [Collections and Data Structures](../../../../docs/standard/collections/index.md)  
+- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)

@@ -15,7 +15,7 @@ In addition to querying a single table, you can also perform cross-table queries
   
  The <xref:System.Linq.Enumerable.GroupJoin%2A> operators have no direct equivalent in relational database terms; they implement a superset of inner joins and left outer joins. A left outer join is a join that returns each element of the first (left) collection, even if it has no correlated elements in the second collection.  
   
- For more information about joins, see [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
+ For more information about joins, see [Join Operations](https://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107).  
   
 ## Example  
  The following example performs a traditional join of the `SalesOrderHeader` and `SalesOrderDetail` tables from the AdventureWorks sample database to obtain online orders from the month of August.  
@@ -27,5 +27,5 @@ In addition to querying a single table, you can also perform cross-table queries
  [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)  
  [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)  
  [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [Join Operations](http://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)  
+ [Join Operations](https://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)  
  [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)

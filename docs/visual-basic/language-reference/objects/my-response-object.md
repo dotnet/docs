@@ -1,5 +1,5 @@
 ---
-title: "My.Response Object"
+title: "My.Response Object (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.MyWebExtension.Response"

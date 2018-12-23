@@ -60,12 +60,13 @@ By using attributes you can customize how structs are laid out in memory. For ex
   
  The two integer fields, `i1` and `i2`, share the same memory locations as `lg`. This sort of control over struct layout is useful when using platform invocation.  
   
-## See Also  
- <xref:System.Reflection>  
- <xref:System.Attribute>  
- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
- [Attributes](../../../../../docs/standard/attributes/index.md)  
- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
- [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
- [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)  
- [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+## See Also
+
+- <xref:System.Reflection>  
+- <xref:System.Attribute>  
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+- [Attributes](../../../../../docs/standard/attributes/index.md)  
+- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)  
+- [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)  
+- [Creating Custom Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/creating-custom-attributes.md)  
+- [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

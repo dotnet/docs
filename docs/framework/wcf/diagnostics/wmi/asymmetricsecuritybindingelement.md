@@ -2,15 +2,13 @@
 title: "AsymmetricSecurityBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 7bd3b6be-8f77-4927-93ae-6fa371893cca
-author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # AsymmetricSecurityBindingElement
 AsymmetricSecurityBindingElement  
   
 ## Syntax  
   
-```  
+```csharp
 class AsymmetricSecurityBindingElement : SecurityBindingElement  
 {  
   string MessageProtectionOrder;  

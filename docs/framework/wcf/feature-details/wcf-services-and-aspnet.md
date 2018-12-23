@@ -96,4 +96,4 @@ This topic discusses hosting Windows Communication Foundation (WCF) services sid
   
 ## See Also  
  <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>  
- [Windows Server App Fabric Hosting Features](http://go.microsoft.com/fwlink/?LinkId=201276)
+ [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

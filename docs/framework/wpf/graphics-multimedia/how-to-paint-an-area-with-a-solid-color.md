@@ -41,7 +41,7 @@ To paint an area with a solid color, you can use a predefined system brush, such
   
  For more information about <xref:System.Windows.Media.SolidColorBrush> and additional examples, see the [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md) overview.  
   
- This code example is part of a larger example provided for the <xref:System.Windows.Media.SolidColorBrush> class. For the complete sample, see the [Brushes Sample](http://go.microsoft.com/fwlink/?LinkID=159973).  
+ This code example is part of a larger example provided for the <xref:System.Windows.Media.SolidColorBrush> class. For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).  
   
 ## See Also  
  <xref:System.Windows.Media.Brushes>

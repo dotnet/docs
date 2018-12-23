@@ -29,7 +29,7 @@ ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
  <xref:System.Windows.Forms.ToolStripContentPanel>  
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripContentPanel> of a <xref:System.Windows.Forms.ToolStripContainer> control.  
   
- Also see [ToolStripContainer Tasks Dialog Box](http://msdn.microsoft.com/library/ms233647\(v=vs.110\)).  
+ Also see [ToolStripContainer Tasks Dialog Box](https://msdn.microsoft.com/library/ms233647\(v=vs.110\)).  
   
 ## Related Sections  
  <xref:System.Windows.Forms.ToolStripPanel>  

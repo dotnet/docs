@@ -23,9 +23,9 @@ The Routing Service provides a generic pluggable SOAP intermediary that is capab
  This means that if your destination endpoints use contracts with multiple communication patterns (such as mixing one-way and two-way operations,) you cannot create a single service endpoint that can receive and route messages to all of them. You must determine which endpoints have compatible shapes and define one or more service endpoints that will be used to receive messages to be routed to the destination endpoints.  
   
 > [!NOTE]
->  When working with contracts that specify multiple communication patterns (such as a mix of one-way and two-way operations,) a workaround is to use a duplex contract at the Routing Service such as <xref:System.ServiceModel.Routing.IDuplexSessionRouter>. However this means that the binding must be capable of duplex communication, which may not be possible for all scenarios. In scenarios where this is not possible, factoring the communication into multiple endpoints or modifying the application may be necessary.  
+> When working with contracts that specify multiple communication patterns (such as a mix of one-way and two-way operations,) a workaround is to use a duplex contract at the Routing Service such as <xref:System.ServiceModel.Routing.IDuplexSessionRouter>. However this means that the binding must be capable of duplex communication, which may not be possible for all scenarios. In scenarios where this is not possible, factoring the communication into multiple endpoints or modifying the application may be necessary.  
   
- For more information about routing contracts, see [Routing Contracts](../../../../docs/framework/wcf/feature-details/routing-contracts.md).  
+ For more information about routing contracts, see [Routing Contracts](routing-contracts.md).  
   
  After the service endpoint is defined, you can use the **RoutingBehavior** to associate a specific **RoutingConfiguration** with the endpoint. When configuring the Routing Service by using a configuration file, the **RoutingBehavior** is used to specify the filter table that contains the routing logic used to process messages received on this endpoint. If you are configuring the Routing Service programmatically you can specify the filter table by using the **RoutingConfiguration**.  
   
@@ -45,7 +45,7 @@ The Routing Service provides a generic pluggable SOAP intermediary that is capab
         <endpoint address=""  
                   binding="wsHttpBinding"  
                   name="reqReplyEndpoint"  
-                  contract="System.ServiceModel.Routing.IRequestReplyRouter" />      
+                  contract="System.ServiceModel.Routing.IRequestReplyRouter" />
       </service>  
     </services>  
     <behaviors>  
@@ -92,16 +92,16 @@ serviceHost.Description.Behaviors.Add(
      new RoutingBehavior(rc));  
 ```  
   
- This example configures the Routing Service to expose a single endpoint with an address of "http://localhost:8000/routingservice/router", which is used to receive messages to be routed. Because the messages are routed to request-reply endpoints, the service endpoint uses the <xref:System.ServiceModel.Routing.IRequestReplyRouter> contract. This configuration also defines a single client endpoint of "http://localhost:8000/servicemodelsample/service" that messages are routed to. The filter table (not shown) named "routingTable1" contains the routing logic used to route messages, and is associated with the service endpoint by using the **RoutingBehavior** (for a configuration file) or **RoutingConfiguration** (for programmatic configuration).  
+ This example configures the Routing Service to expose a single endpoint with an address of `http://localhost:8000/routingservice/router`, which is used to receive messages to be routed. Because the messages are routed to request-reply endpoints, the service endpoint uses the <xref:System.ServiceModel.Routing.IRequestReplyRouter> contract. This configuration also defines a single client endpoint of `http://localhost:8000/servicemodelsample/service` that messages are routed to. The filter table (not shown) named "routingTable1" contains the routing logic used to route messages, and is associated with the service endpoint by using the **RoutingBehavior** (for a configuration file) or **RoutingConfiguration** (for programmatic configuration).  
   
 ### Routing Logic  
  To define the routing logic used to route messages, you must determine what data contained within the incoming messages can be uniquely acted upon. For example, if all the destination endpoints you are routing to share the same SOAP Actions, the value of the Action contained within the message is not a good indicator of which specific endpoint the message should be routed to. If you must uniquely route messages to one specific endpoint, you should filter upon data that uniquely identifies the destination endpoint that the message is routed to.  
   
- The Routing Service provides several **MessageFilter** implementations that inspect specific values within the message, such as the address, action, endpoint name, or even an XPath query. If none of these implementations meet your needs you can create a custom **MessageFilter** implementation. For more information about message filters and a comparison of the implementations used by the Routing Service, see [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md) and [Choosing a Filter](../../../../docs/framework/wcf/feature-details/choosing-a-filter.md).  
+ The Routing Service provides several **MessageFilter** implementations that inspect specific values within the message, such as the address, action, endpoint name, or even an XPath query. If none of these implementations meet your needs you can create a custom **MessageFilter** implementation. For more information about message filters and a comparison of the implementations used by the Routing Service, see [Message Filters](message-filters.md) and [Choosing a Filter](choosing-a-filter.md).  
   
  Multiple message filters are organized together into filter tables, which associate each **MessageFilter** with a destination endpoint. Optionally, the filter table can also be used to specify a list of back-up endpoints that the Routing Service will attempt to send the message to in the event of a transmission failure.  
   
- By default all message filters within a filter table are evaluated simultaneously; however, you can specify a <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority%2A> that causes the message filters to be evaluated in a specific order. All entries with the highest priority are evaluated first, and message filters of lower priorities are not evaluated if a match is found at a higher priority level. For more information about filter tables, see [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md).  
+ By default all message filters within a filter table are evaluated simultaneously; however, you can specify a <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.Priority%2A> that causes the message filters to be evaluated in a specific order. All entries with the highest priority are evaluated first, and message filters of lower priorities are not evaluated if a match is found at a higher priority level. For more information about filter tables, see [Message Filters](message-filters.md).  
   
  The following examples use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter>, which evaluates to `true` for all messages. This **MessageFilter** is added to the "routingTable1" filter table, which associates the **MessageFilter** with the client endpoint named "CalculatorService". The **RoutingBehavior** then specifies that this table should be used to route messages processed by the service endpoint.  
   
@@ -154,7 +154,7 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
   
 -   Multiple filters must return `true` when evaluating the message.  
   
- If these conditions are met, the message is routed to all endpoints of all filters that evaluate to `true`. The following example defines a routing configuration that results in messages being routed to both endpoints if the endpoint address in the message is http://localhost:8000/routingservice/router/rounding.  
+ If these conditions are met, the message is routed to all endpoints of all filters that evaluate to `true`. The following example defines a routing configuration that results in messages being routed to both endpoints if the endpoint address in the message is `http://localhost:8000/routingservice/router/rounding`.  
   
 ```xml  
 <!--ROUTING SECTION -->  
@@ -351,19 +351,19 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), backupList);
 |Pattern|Session|Transaction|Receive Context|Backup List Supported|Notes|  
 |-------------|-------------|-----------------|---------------------|---------------------------|-----------|  
 |One-Way||||Yes|Attempts to resend the message on a backup endpoint. If this message is being multicast, only the message on the failed channel is moved to its backup destination.|  
-|One-Way||![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
-|One-Way|||![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|Yes|Attempts to resend the message on a backup endpoint. After the message is successfully received, complete all receive contexts. If the message is not successfully received by any endpoint, do not complete the receive context.<br /><br /> When this message is being multicast, the receive context is only completed if the message is successfully received by at least one endpoint (primary or backup). If none of the endpoints in any of the multicast paths successfully receive the message, do not complete the receive context.|  
-|One-Way||![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|Yes|Abort the previous transaction, create a new transaction, and resend all messages. Messages that encountered an error are transmitted to a backup destination.<br /><br /> After a transaction has been created in which all transmissions succeed, complete the receive contexts and commit the transaction.|  
-|One-Way|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|||Yes|Attempts to resend the message on a backup endpoint. In a multicast scenario only the messages in a session that encountered an error or in a session whose session close failed are resent to backup destinations.|  
-|One-Way|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
-|One-Way|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")||![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|Yes|Attempts to resend the message on a backup endpoint. After all message sends complete without error, the session indicates no more messages and the Routing Service successfully closes all outbound session channel(s), all receive contexts are completed, and the inbound session channel is closed.|  
-|One-Way|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|Yes|Abort the current transaction and create a new one. Resend all previous messages in the session. After a transaction has been created in which all messages have been successfully sent and the session indicates no more messages, all the outbound session channels are closed, receive contexts are all completed with the transaction, the inbound session channel is closed, and the transaction is committed.<br /><br /> When the sessions are being multicast the messages that had no error are resent to the same destination as before, and messages that encountered an error are sent to backup destinations.|  
+|One-Way||![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
+|One-Way|||![Check mark](media/checkmark.gif "Checkmark")|Yes|Attempts to resend the message on a backup endpoint. After the message is successfully received, complete all receive contexts. If the message is not successfully received by any endpoint, do not complete the receive context.<br /><br /> When this message is being multicast, the receive context is only completed if the message is successfully received by at least one endpoint (primary or backup). If none of the endpoints in any of the multicast paths successfully receive the message, do not complete the receive context.|  
+|One-Way||![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")|Yes|Abort the previous transaction, create a new transaction, and resend all messages. Messages that encountered an error are transmitted to a backup destination.<br /><br /> After a transaction has been created in which all transmissions succeed, complete the receive contexts and commit the transaction.|  
+|One-Way|![Check mark](media/checkmark.gif "Checkmark")|||Yes|Attempts to resend the message on a backup endpoint. In a multicast scenario only the messages in a session that encountered an error or in a session whose session close failed are resent to backup destinations.|  
+|One-Way|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
+|One-Way|![Check mark](media/checkmark.gif "Checkmark")||![Check mark](media/checkmark.gif "Checkmark")|Yes|Attempts to resend the message on a backup endpoint. After all message sends complete without error, the session indicates no more messages and the Routing Service successfully closes all outbound session channel(s), all receive contexts are completed, and the inbound session channel is closed.|  
+|One-Way|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")|Yes|Abort the current transaction and create a new one. Resend all previous messages in the session. After a transaction has been created in which all messages have been successfully sent and the session indicates no more messages, all the outbound session channels are closed, receive contexts are all completed with the transaction, the inbound session channel is closed, and the transaction is committed.<br /><br /> When the sessions are being multicast the messages that had no error are resent to the same destination as before, and messages that encountered an error are sent to backup destinations.|  
 |Two-Way||||Yes|Send to a backup destination.  After a channel returns a response message, return the response to the original client.|  
-|Two-Way|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|||Yes|Send all messages on the channel to a backup destination.  After a channel returns a response message, return the response to the original client.|  
-|Two-Way||![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
-|Two-Way|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
+|Two-Way|![Check mark](media/checkmark.gif "Checkmark")|||Yes|Send all messages on the channel to a backup destination.  After a channel returns a response message, return the response to the original client.|  
+|Two-Way||![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
+|Two-Way|![Check mark](media/checkmark.gif "Checkmark")|![Check mark](media/checkmark.gif "Checkmark")||No|An exception is thrown and the transaction is rolled back.|  
 |Duplex||||No|Non-session duplex communication is not currently supported.|  
-|Duplex|![Check mark](../../../../docs/framework/wcf/feature-details/media/checkmark.gif "Checkmark")|||Yes|Send to a backup destination.|  
+|Duplex|![Check mark](media/checkmark.gif "Checkmark")|||Yes|Send to a backup destination.|  
   
 ## Hosting  
  Because the Routing Service is implemented as a WCF service, it must be either self-hosted within an application or hosted by IIS or WAS. It is recommended that the Routing Service be hosted in either IIS, WAS, or a Windows Service application to take advantage of the automatic start and life-cycle management features available in these hosting environments.  
@@ -384,9 +384,9 @@ using (ServiceHost serviceHost =
 ```  
   
 ## Routing Service and Impersonation  
- The WCF Routing Service can be used with impersonation for both sending and receiving messages. All of the usual Windows constraints of impersonation apply. If you would have needed to set up service or account permissions to use impersonation when writing your own service, then you’ll have to do those same steps to use impersonation with the routing service. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+ The WCF Routing Service can be used with impersonation for both sending and receiving messages. All of the usual Windows constraints of impersonation apply. If you would have needed to set up service or account permissions to use impersonation when writing your own service, then you’ll have to do those same steps to use impersonation with the routing service. For more information, see [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md).  
   
- Impersonation with the routing service requires either the use of ASP.NET impersonation while in ASP.NET compatibility mode or the use of Windows credentials that have been configured to allow impersonation. For more information about ASP.NET compatibility mode, see [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).  
+ Impersonation with the routing service requires either the use of ASP.NET impersonation while in ASP.NET compatibility mode or the use of Windows credentials that have been configured to allow impersonation. For more information about ASP.NET compatibility mode, see [WCF Services and ASP.NET](wcf-services-and-aspnet.md).  
   
 > [!WARNING]
 >  The WCF Routing Service does not support impersonation with basic authentication.  
@@ -396,6 +396,6 @@ using (ServiceHost serviceHost =
  To use Windows credential impersonation with the routing service you need to configure both the credentials and the service. The client credentials object (<xref:System.ServiceModel.Security.WindowsClientCredential>, accessable from the <xref:System.ServiceModel.ChannelFactory>) defines an <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property that must be set to permit impersonation. Finally, on the service you need to configure the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> behavior to set `ImpersonateCallerForAllOperations` to `true`. The routing service uses this flag to decide whether to create the clients for forwarding messages with impersonation enabled.  
   
 ## See Also  
- [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)  
- [Routing Contracts](../../../../docs/framework/wcf/feature-details/routing-contracts.md)  
- [Choosing a Filter](../../../../docs/framework/wcf/feature-details/choosing-a-filter.md)
+ [Message Filters](message-filters.md)  
+ [Routing Contracts](routing-contracts.md)  
+ [Choosing a Filter](choosing-a-filter.md)

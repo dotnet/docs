@@ -1,5 +1,7 @@
 ---
-title: "class keyword (C# Reference)"
+title: "class keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/18/2017
 f1_keywords: 
   - "class_CSharpKeyword"
@@ -33,7 +35,7 @@ Only single inheritance is allowed in C#. In other words, a class can inherit im
 
 Classes that you declare directly within a namespace, not nested within other classes, can be either [public](../../../csharp/language-reference/keywords/public.md) or [internal](../../../csharp/language-reference/keywords/internal.md). Classes are `internal` by default.
 
-Class members, including nested classes, can be [public](../../../csharp/language-reference/keywords/public.md), `protected internal`, [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), [private](../../../csharp/language-reference/keywords/private.md), or `private protected`. Members are [private](../../../csharp/language-reference/keywords/private.md) by default.
+Class members, including nested classes, can be [public](public.md), [protected internal](protected-internal.md), [protected](protected.md), [internal](internal.md), [private](private.md), or [private protected](private-protected.md). Members are `private` by default.
 
 For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).
 
@@ -67,6 +69,8 @@ A class can contain declarations of the following members:
 
 - [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
 
+- [Enumerations](../../../csharp/programming-guide/enumeration-types.md)
+
 ## Example
 
 The following example demonstrates declaring class fields, constructors, and methods. It also demonstrates object instantiation and printing instance data. In this example, two classes are declared. The first class, `Child`, contains two private fields (`name` and `age`), two public constructors and one public method. The second class, `StringTest`, is used to contain `Main`.
@@ -85,7 +89,7 @@ Accessing private members of `Child` from `Main` would only be possible if `Main
 
 Types declared inside a class without an access modifier default to `private`, so the data members in this example would still be `private` if the keyword were removed.
 
-Finally, notice that for the object created using the default constructor (`child3`), the age field was initialized to zero by default.
+Finally, notice that for the object created using the default constructor (`child3`), the `age` field was initialized to zero by default.
 
 ## C# language specification
 
@@ -93,7 +97,7 @@ Finally, notice that for the object created using the default constructor (`chil
 
 ## See also
 
-[C# Reference](../../../csharp/language-reference/index.md)  
-[C# Programming Guide](../../../csharp/programming-guide/index.md)  
-[C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-[Reference Types](../../../csharp/language-reference/keywords/reference-types.md)
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

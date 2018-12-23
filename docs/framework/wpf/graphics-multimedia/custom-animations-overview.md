@@ -68,7 +68,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  Because the *\<Type>*AnimationBase classes inherit from the <xref:System.Windows.Freezable> class, you must also override <xref:System.Windows.Freezable.CreateInstanceCore%2A> core to return a new instance of your class. If the class does not use dependency properties to store its data or it requires extra initialization after creation, you might need to override additional methods; see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md) for more information.  
   
- For more information, see the GetCurrentValueCore method documentation for the *\<Type>*AnimationBase class for the type that you want to animate. For an example, see the [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)  
+ For more information, see the GetCurrentValueCore method documentation for the *\<Type>*AnimationBase class for the type that you want to animate. For an example, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)  
   
  **Alternative Approaches**  
   
@@ -126,4 +126,4 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
  [Path Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/path-animations-overview.md)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md)  
- [Custom Animation Sample](http://go.microsoft.com/fwlink/?LinkID=159981)
+ [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)

@@ -247,4 +247,4 @@ This walkthrough demonstrates how to change the default log filtering for the `M
  [Walkthrough: Creating Custom Log Listeners](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-creating-custom-log-listeners.md)  
  [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md)  
  [Trace Switches](../../../../framework/debug-trace-profile/trace-switches.md)  
- [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md)
+ [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/index.md)

@@ -8,7 +8,7 @@ HttpsTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp  
 class HttpsTransportBindingElement : HttpTransportBindingElement  
 {  
   boolean RequireClientCertificate;  

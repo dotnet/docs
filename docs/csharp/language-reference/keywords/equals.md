@@ -1,5 +1,7 @@
 ---
-title: "equals contextual keyword (C# Reference)"
+title: "equals contextual keyword - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "equals_CSharpKeyword"
@@ -20,4 +22,4 @@ The following example shows the use of the `equals` keyword in a `join` clause.
 
 ## See also
 
-[Language Integrated Query (LINQ)](../../linq/index.md)
+- [Language Integrated Query (LINQ)](../../linq/index.md)

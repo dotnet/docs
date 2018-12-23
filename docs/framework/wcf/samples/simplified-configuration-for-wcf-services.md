@@ -31,7 +31,7 @@ This sample demonstrates how to implement and configure a typical service and cl
 </configuration>  
 ```  
   
- In [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], the `<service>` element is optional. When a service does not define any endpoints, an endpoint for each base address and contract implemented are added to the service. The base address is appended to the contract name to determine the endpoint and the binding is determined by the address scheme. The following code example demonstrates a simplified configuration file. As configured, the service can be accessed at http://localhost/servicemodelsamples/service.svc by a client on the same computer. For clients on remote computers to access the service, a fully-qualified domain name must be specified instead of localhost. The service does not expose metadata by default. As such, the service turns on the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
+ In [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], the `<service>` element is optional. When a service does not define any endpoints, an endpoint for each base address and contract implemented are added to the service. The base address is appended to the contract name to determine the endpoint and the binding is determined by the address scheme. The following code example demonstrates a simplified configuration file. As configured, the service can be accessed at `http://localhost/servicemodelsamples/service.svc` by a client on the same computer. For clients on remote computers to access the service, a fully-qualified domain name must be specified instead of localhost. The service does not expose metadata by default. As such, the service turns on the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -68,10 +68,10 @@ This sample demonstrates how to implement and configure a typical service and cl
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigSimplificationIn40`  
   
 ## See Also  
- [AppFabric Management Samples](http://go.microsoft.com/fwlink/?LinkId=193960)  
+ [AppFabric Management Samples](https://go.microsoft.com/fwlink/?LinkId=193960)  
  [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)

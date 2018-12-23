@@ -8,9 +8,6 @@ helpviewer_keywords:
   - "<smtp> element"
   - "smtp element"
 ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # &lt;smtp&gt; Element (Network Settings)
 Configures the delivery format, delivery method, and from address for sending emails.  
@@ -76,8 +73,8 @@ Configures the delivery format, delivery method, and from address for sending em
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
- <xref:System.Net.Mail.SmtpDeliveryFormat>  
- <xref:System.Net.Mail.SmtpDeliveryMethod>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+- <xref:System.Net.Mail.SmtpDeliveryFormat>  
+- <xref:System.Net.Mail.SmtpDeliveryMethod>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

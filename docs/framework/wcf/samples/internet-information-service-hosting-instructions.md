@@ -120,7 +120,7 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 15. Expand the item labeled **Microsoft .NET Framework 3.0**, and then select **Windows Communication Foundation Http Activation**.  
   
-16. Click**OK**.  
+16. Click **OK**.  
   
 ### To install IIS version 6.0 on Windows Server 2003  
   

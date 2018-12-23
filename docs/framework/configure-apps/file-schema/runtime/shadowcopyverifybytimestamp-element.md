@@ -62,6 +62,6 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 ```  
   
 ## See Also  
- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [Shadow Copying Assemblies](../../../../../docs/framework/app-domains/shadow-copy-assemblies.md)
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [Shadow Copying Assemblies](../../../../../docs/framework/app-domains/shadow-copy-assemblies.md)

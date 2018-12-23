@@ -58,7 +58,7 @@ The `openGenericCERCall` managed debugging assistant is activated to warn that a
 ## Example  
  The CER code is not executed.  
   
-```  
+```csharp
 using System;  
 using System.Collections.Generic;  
 using System.Runtime.CompilerServices;  

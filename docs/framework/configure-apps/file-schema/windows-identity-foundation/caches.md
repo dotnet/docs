@@ -3,7 +3,6 @@ title: "&lt;caches&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 4651091b-3a20-40d8-b293-4408c0710143
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;caches&gt;
 Registers the caches used for session tokens and token replay detection.  

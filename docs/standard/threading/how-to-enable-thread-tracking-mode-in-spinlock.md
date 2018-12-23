@@ -24,5 +24,6 @@ ms.author: "ronpet"
  [!code-csharp[CDS_SpinLock#01](../../../samples/snippets/csharp/VS_Snippets_Misc/cds_spinlock/cs/spinlockdemo.cs#01)]
  [!code-vb[CDS_SpinLock#01](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds_spinlock/vb/spinlock_threadtracking.vb#01)]  
   
-## See Also  
- [SpinLock](../../../docs/standard/threading/spinlock.md)
+## See also
+
+- [SpinLock](../../../docs/standard/threading/spinlock.md)

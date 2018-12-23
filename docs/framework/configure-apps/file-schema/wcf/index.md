@@ -8,9 +8,9 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
   
  The WCF configuration system is based on the <xref:System.Configuration> namespace. Therefore, you can use all the standard features provided by the <xref:System.Configuration> namespace, such as configuration locking, encryption and merging to increase the security of your application and its configuration. For more information on these concepts, see the following topics.  
   
- [Encrypting Configuration Information](http://go.microsoft.com/fwlink/?LinkId=95337)  
+ [Encrypting Configuration Information](https://go.microsoft.com/fwlink/?LinkId=95337)  
   
- [Locking Configuration Settings](http://go.microsoft.com/fwlink/?LinkId=95338)  
+ [Locking Configuration Settings](https://go.microsoft.com/fwlink/?LinkId=95338)  
   
  This section describes all possible values of each configuration item, and how it interacts with other WCF configuration elements. The following map illustrates the WCF configuration schema.  
   
@@ -30,5 +30,5 @@ Windows Communication Foundation (WCF) configuration elements enable you to conf
  The top-level element for setting options when using serializers such as the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Related Sections  
- [Configuring Windows Communication Foundation Applications](http://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
+ [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)  
  Describes how to configure WCF services and clients.

@@ -40,7 +40,7 @@ HRESULT WritePropertyValue (
 [in] This parameter is unused.
 
 `ptr`  
-[in] A pointer to an [IWbemObjectAccess](https://msdn.microsoft.com/library/aa391770(v=vs.85).aspx) instance.
+[in] A pointer to an [IWbemObjectAccess](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemobjectaccess) instance.
 
 `lHandle`  
 [in] An integer that contains the handle that identifies this property. The handle can be retrieved by calling the [GetPropertyHandle](getpropertyhandle.md) function.   
@@ -63,7 +63,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::WritePropertyValue](https://msdn.microsoft.com/library/aa391783(v=vs.85).aspx) method.
+This function wraps a call to the [IWbemClassObject::WritePropertyValue](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemobjectaccess-writepropertyvalue) method.
 
 Use this function to set string and all other non-`DWORD` or non-`QWORD` data.
 

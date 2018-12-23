@@ -1,5 +1,6 @@
 ---
-title: "How to: Obtain the Address of a Variable (C# Programming Guide)"
+title: "How to: obtain the address of a variable - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [C#], address of"
@@ -7,7 +8,8 @@ helpviewer_keywords:
   - "pointer expressions [C#], address-of operator"
 ms.assetid: 44fe2cd9-a64f-4ef5-be2a-09ce807c0182
 ---
-# How to: Obtain the Address of a Variable (C# Programming Guide)
+# How to: obtain the address of a variable (C# Programming Guide)
+
 To obtain the address of a unary expression, which evaluates to a fixed variable, use the address-of operator `&`:  
   
 ```csharp  
@@ -29,11 +31,12 @@ int* p = &number; //address-of operator &
   
  [!code-csharp[address-of-a-variable](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuidePointers/CS/Pointers.cs#8)]  
   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

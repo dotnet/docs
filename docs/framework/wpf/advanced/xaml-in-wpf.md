@@ -20,7 +20,7 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
  [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
  [WPF XAML Namescopes](../../../../docs/framework/wpf/advanced/wpf-xaml-namescopes.md)  
  [Inline Styles and Templates](../../../../docs/framework/wpf/advanced/inline-styles-and-templates.md)  
- [Whitespace Processing in XAML](../../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)  
+ [White-space Processing in XAML](../../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)  
  [TypeConverters and XAML](../../../../docs/framework/wpf/advanced/typeconverters-and-xaml.md)  
  [XML Character Entities and XAML](../../../../docs/framework/xaml-services/xml-character-entities-and-xaml.md)  
  [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  

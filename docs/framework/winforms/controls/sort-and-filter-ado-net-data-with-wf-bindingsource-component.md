@@ -50,5 +50,5 @@ You can expose the sorting and filtering capability of <xref:System.Windows.Form
 ## See Also  
  <xref:System.Windows.Forms.BindingSource.Sort%2A>  
  <xref:System.Windows.Forms.BindingSource.Filter%2A>  
- [How to: Install Sample Databases](http://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)  
+ [How to: Install Sample Databases](https://msdn.microsoft.com/library/ed1291f6-604c-4972-ae22-0345c6dea12e)  
  [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)

@@ -169,7 +169,7 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
      For more information about writing file streams, see <xref:System.IO.FileStream.BeginWrite%2A> and <xref:System.IO.FileStream.Write%2A>.  
   
     > [!NOTE]
-    >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](http://go.microsoft.com/fwlink/?LinkID=102575).  
+    >  Certain controls, such as the <xref:System.Windows.Forms.RichTextBox> control, have the ability to save files. For more information, see the "SaveFileDialog Component" section of the MSDN Online Library technical article, [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575).  
   
 ## See Also  
  <xref:System.Windows.Forms.SaveFileDialog>  

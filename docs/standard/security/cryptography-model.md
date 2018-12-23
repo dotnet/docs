@@ -81,6 +81,6 @@ The .NET Framework provides implementations of many standard cryptographic algor
   
     -   <xref:System.Security.Cryptography.Rfc2898DeriveBytes>  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- 
+## See also
+
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  

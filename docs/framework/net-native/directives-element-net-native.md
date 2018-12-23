@@ -6,14 +6,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # &lt;Directives&gt; Element (.NET Native)
-The root element in every runtime directives file for [!INCLUDE[net_native](../../../includes/net-native-md.md)].  
+The root element in every runtime directives file for .NET Native.  
   
- **\<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">**  
+ `<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">` 
   
 ## Syntax  
   
 ```xml  
-      <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <!-- child elements -->   
 </Directives>  
 ```  

@@ -32,7 +32,7 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`pwszHash`|The hash.|  
 |`pwszDescription`|The description.|  
 |`pwszDescriptionUrl`|The URL of the description.|  
-|`pChainContext`|The chain context of the signer. See the [CERT_CONTEXT](http://msdn.microsoft.com/library/windows/desktop/aa377189.aspx) structure.|  
+|`pChainContext`|The chain context of the signer. See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.|  
   
 ## See Also  
  [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

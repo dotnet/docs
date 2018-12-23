@@ -1,5 +1,7 @@
 ---
-title: "group clause (C# Reference)"
+title: "group clause - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "group"
@@ -47,7 +49,7 @@ The following example shows the use of a bool value for a key to divide the resu
 
 ### Grouping by numeric range
 
-The next example uses an expression to create numeric group keys that represent a percentile range. Note the use of [let](let-clause.md) as a convenient location to store a method call result, so that you don't have to call the method two times in the `group` clause. Note also in the `group` clause that to avoid a "divide by zero" exception the code checks to make sure that the student doesn't have an average of zero. For more information about how to safely use methods in query expressions, see [How to: Handle Exceptions in Query Expressions](../../programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md).
+The next example uses an expression to create numeric group keys that represent a percentile range. Note the use of [let](let-clause.md) as a convenient location to store a method call result, so that you don't have to call the method two times in the `group` clause. For more information about how to safely use methods in query expressions, see [How to: Handle Exceptions in Query Expressions](../../programming-guide/linq-query-expressions/how-to-handle-exceptions-in-query-expressions.md).
 
 [!code-csharp[cscsrefQueryKeywords#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#15)]
 
@@ -81,12 +83,12 @@ At compile time, `group` clauses are translated into calls to the <xref:System.L
 
 ## See also
 
-<xref:System.Linq.IGrouping%602>  
-<xref:System.Linq.Enumerable.GroupBy%2A>  
-<xref:System.Linq.Enumerable.ThenBy%2A>  
-<xref:System.Linq.Enumerable.ThenByDescending%2A>  
-[Query Keywords](query-keywords.md)  
-[Language Integrated Query (LINQ)](../../linq/index.md)  
-[Create a nested group](../../linq/create-a-nested-group.md)  
-[Group query results](../../linq/group-query-results.md)  
-[Perform a subquery on a grouping operation](../../linq/perform-a-subquery-on-a-grouping-operation.md)
+- <xref:System.Linq.IGrouping%602>  
+- <xref:System.Linq.Enumerable.GroupBy%2A>  
+- <xref:System.Linq.Enumerable.ThenBy%2A>  
+- <xref:System.Linq.Enumerable.ThenByDescending%2A>  
+- [Query Keywords](query-keywords.md)  
+- [Language Integrated Query (LINQ)](../../linq/index.md)  
+- [Create a nested group](../../linq/create-a-nested-group.md)  
+- [Group query results](../../linq/group-query-results.md)  
+- [Perform a subquery on a grouping operation](../../linq/perform-a-subquery-on-a-grouping-operation.md)

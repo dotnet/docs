@@ -1,5 +1,6 @@
 ---
-title: "How to: Use the Global Namespace Alias (C# Programming Guide)"
+title: "How to: Use the Global Namespace Alias - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "aliases [C#]"
@@ -35,12 +36,14 @@ The ability to access a member in the global [namespace](../../../csharp/languag
   
  [!code-csharp[csProgGuideNamespaces#5](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-global-namespace-alias_6.cs)]  
   
- **A 1**  
-**B 2**  
-**C 3**   
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
- [extern](../../../csharp/language-reference/keywords/extern.md)
+**A 1**
+**B 2**
+**C 3**
+
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
+- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [extern](../../../csharp/language-reference/keywords/extern.md)

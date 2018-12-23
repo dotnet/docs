@@ -1,5 +1,7 @@
 ---
-title: "Access Keywords (C# Reference)"
+title: "Access Keywords - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "access keywords [C#]"
@@ -17,7 +19,8 @@ This section introduces the following access keywords:
      Refers to the current instance of the class.  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+
+- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)

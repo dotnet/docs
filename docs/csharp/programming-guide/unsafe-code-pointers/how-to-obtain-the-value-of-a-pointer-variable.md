@@ -1,5 +1,6 @@
 ---
-title: "How to: Obtain the Value of a Pointer Variable (C# Programming Guide)"
+title: "How to: Obtain the Value of a Pointer Variable - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointer expressions [C#], indirection"
@@ -26,15 +27,17 @@ Use the pointer indirection operator to obtain the variable at the location poin
   
  [!code-csharp[csProgGuidePointers#6](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-obtain-the-value-of-a-pointer-variable_2.cs)]  
   
- **Value of theChar = Z**  
-**Address of theChar = 12F718**  
-**Value of pChar = Z**   
-**Value of pInt = 90**    
-## See Also  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
- [Types](../../../csharp/language-reference/keywords/types.md)  
- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)
+**Value of theChar = Z**
+**Address of theChar = 12F718**
+**Value of pChar = Z**
+**Value of pInt = 90**
+
+## See Also
+
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [Types](../../../csharp/language-reference/keywords/types.md)  
+- [unsafe](../../../csharp/language-reference/keywords/unsafe.md)  
+- [fixed Statement](../../../csharp/language-reference/keywords/fixed-statement.md)  
+- [stackalloc](../../../csharp/language-reference/keywords/stackalloc.md)

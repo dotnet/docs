@@ -1,19 +1,7 @@
         // Normal implementation:
-        public float Length()
-        {
-            return lengthInches;
-        }
-        public float Width()
-        {
-            return widthInches;
-        }
+        public float Length() => lengthInches;
+        public float Width() => widthInches;
 
         // Explicit implementation:
-        float IMetricDimensions.Length()
-        {
-            return lengthInches * 2.54f;
-        }
-        float IMetricDimensions.Width()
-        {
-            return widthInches * 2.54f;
-        }
+        float IMetricDimensions.Length() => lengthInches * 2.54f;
+        float IMetricDimensions.Width() => widthInches * 2.54f;

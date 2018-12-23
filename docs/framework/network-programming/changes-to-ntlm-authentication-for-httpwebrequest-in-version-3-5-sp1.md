@@ -2,9 +2,6 @@
 title: "Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1"
 ms.date: "03/30/2017"
 ms.assetid: 8bf0b428-5a21-4299-8d6e-bf8251fd978a
-author: "mcleblanc"
-ms.author: "markl"
-manager: "markl"
 ---
 # Changes to NTLM authentication for HttpWebRequest in Version 3.5 SP1
 Security changes were made in .NET Framework version 3.5 SP1 and later that affect how integrated Windows authentication is handled by the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpListener>, <xref:System.Net.Security.NegotiateStream>, and related classes in the System.Net namespace. These changes can affect applications that use these classes to make web requests and receive responses where integrated Windows authentication based on NTLM is used. This change can impact web servers and client applications that are configured to use integrated Windows authentication.  
@@ -17,9 +14,9 @@ Security changes were made in .NET Framework version 3.5 SP1 and later that affe
 ## Changes  
  The NTLM authentication process used with integrated Windows authentication includes a challenge issued by the destination computer and sent back to the client computer. When a computer receives a challenge it generated itself, the authentication will fail unless the connection is a loop back connection (IPv4 address 127.0.0.1, for example).  
   
- When accessing a service running on an internal Web server, it is common to access the service using a URL similar to http://contoso/service or https://contoso/service. The name "contoso" is often not the computer name of the computer on which the service is deployed. The <xref:System.Net> and related namespaces support using Active Directory, DNS, NetBIOS, the local computer's hosts file (typically WINDOWS\system32\drivers\etc\hosts, for example), or the local computer's lmhosts file (typically WINDOWS\system32\drivers\etc\lmhosts, for example) to resolve names to addresses. The name "contoso" is resolved so that requests sent to "contoso" are sent to the appropriate server computer.  
+ When accessing a service running on an internal Web server, it is common to access the service using a URL similar to `http://contoso/service` or `https://contoso/service`. The name "contoso" is often not the computer name of the computer on which the service is deployed. The <xref:System.Net> and related namespaces support using Active Directory, DNS, NetBIOS, the local computer's hosts file (typically WINDOWS\system32\drivers\etc\hosts, for example), or the local computer's lmhosts file (typically WINDOWS\system32\drivers\etc\lmhosts, for example) to resolve names to addresses. The name "contoso" is resolved so that requests sent to "contoso" are sent to the appropriate server computer.  
   
- When configured for large deployments, it is also common for a single virtual server name to be given to the deployment with the underlying machine names never used by client applications and end users. For example, you might call the server www.contoso.com, but on an internal network simply use "contoso". This name is called the Host header in the client web request. As specified by the HTTP protocol, the Host request-header field specifies the Internet host and port number of the resource being requested. This information is obtained from the original URI given by the user or referring resource (generally an HTTP URL). On .NET Framework version 4, this information can also be set by the client using the new <xref:System.Net.HttpWebRequest.Host%2A> property.  
+ When configured for large deployments, it is also common for a single virtual server name to be given to the deployment with the underlying machine names never used by client applications and end users. For example, you might call the server `www.contoso.com`, but on an internal network simply use "contoso". This name is called the Host header in the client web request. As specified by the HTTP protocol, the Host request-header field specifies the Internet host and port number of the resource being requested. This information is obtained from the original URI given by the user or referring resource (generally an HTTP URL). On .NET Framework version 4, this information can also be set by the client using the new <xref:System.Net.HttpWebRequest.Host%2A> property.  
   
  The <xref:System.Net.AuthenticationManager> class controls the managed authentication components ("modules") that are used by <xref:System.Net.WebRequest> derivative classes and the <xref:System.Net.WebClient> class. The <xref:System.Net.AuthenticationManager> class provides a property that exposes a <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType> object, indexed by URI string, for applications to supply a custom SPN string to be used during authentication.  
   
@@ -45,7 +42,7 @@ Security changes were made in .NET Framework version 3.5 SP1 and later that affe
   
  7. Quit Registry Editor, and then restart the IISAdmin service and run IISReset.  
   
- A less secure work around is to disable the loop back check, as described in [http://support.microsoft.com/kb/896861](http://go.microsoft.com/fwlink/?LinkID=179657). This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.  
+ A less secure work around is to disable the loop back check, as described in <https://support.microsoft.com/kb/896861>. This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.  
   
 ## See Also  
  <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType>  

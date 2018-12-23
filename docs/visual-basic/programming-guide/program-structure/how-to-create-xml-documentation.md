@@ -32,5 +32,5 @@ This example shows how to add XML documentation comments to your code.
   
 ## See Also  
  [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/recommended-xml-tags-for-documentation-comments.md)  
+ [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)  
  [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)

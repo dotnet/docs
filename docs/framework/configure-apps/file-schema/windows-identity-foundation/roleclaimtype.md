@@ -3,7 +3,6 @@ title: "&lt;roleClaimType&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 69a49deb-6369-41ba-806b-ae8d21fac64b
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;roleClaimType&gt;
 Specifies the claim type that defines the role type claims in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method of the token handler.  

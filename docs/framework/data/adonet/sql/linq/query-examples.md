@@ -59,7 +59,7 @@ This section provides Visual Basic and C# examples of typical [!INCLUDE[vbtecdli
  Provides examples of combining `select` with other features (for example, *anonymous types*) to form query projections.  
   
 ## Related Sections  
- [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
+ [Standard Query Operators Overview](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
  Explains the concept of standard query operators.  
   
  [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  

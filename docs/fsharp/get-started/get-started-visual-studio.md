@@ -41,7 +41,7 @@ It is in this function that we call the `square` function with an argument of `1
 
 ## Running your code
 
-You can run the code and see results by pressing **ctrl-f5**.  This will run the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
+You can run the code and see results by pressing **Ctrl**+**F5**.  This runs the program without debugging and allows you to see the results.  Alternatively, you can choose the **Debug** top-level menu item in Visual Studio and choose **Start Without Debugging**.
 
 You should now see the following printed to the console window that Visual Studio popped up:
 
@@ -56,7 +56,8 @@ Congratulations!  You've created your first F# project in Visual Studio, written
 If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  There are also some great external resources you can use, showcased in the [F# Guide](../index.md).
 
 ## See also
- [Tour of F#](../tour.md)
- [F# language reference](../language-reference/index.md)
- [Type inference](../language-reference/type-inference.md)
- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)
+
+- [Tour of F#](../tour.md)
+- [F# language reference](../language-reference/index.md)
+- [Type inference](../language-reference/type-inference.md)
+- [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

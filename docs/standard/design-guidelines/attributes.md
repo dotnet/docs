@@ -1,13 +1,12 @@
 ---
-title: "Attributes1"
-ms.date: "03/30/2017"
+title: "Attributes"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "attributes [.NET Framework], about"
   - "class library design guidelines [.NET Framework], attributes"
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Attributes
 <xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.  
@@ -44,6 +43,7 @@ ms.author: "ronpet"
   
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*  
   
-## See Also  
- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)
+## See also
+
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

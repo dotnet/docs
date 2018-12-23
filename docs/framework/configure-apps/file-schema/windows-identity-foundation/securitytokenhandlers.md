@@ -3,7 +3,6 @@ title: "&lt;securityTokenHandlers&gt;"
 ms.date: "03/30/2017"
 ms.assetid: f11a631d-4094-4e11-bb03-4ede74b30281
 author: "BrucePerlerMS"
-manager: "mbaldwin"
 ---
 # &lt;securityTokenHandlers&gt;
 Specifies a collection of security token handlers that are registered with the endpoint.  

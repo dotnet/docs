@@ -13,7 +13,7 @@ items:
   content: |
     This tutorial lets you explore C# 6 interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 6 features. The rest of this article provides an overview of each of these features, with a link to explore each feature. You can read about the features in the [What's new in C# 6](../whats-new/csharp-6.md) article in the "What's new" section.
 
-- title: Read only auto-properties enable readonly types
+- title: Read-only auto-properties enable read-only types
   durationInMinutes: 2
   content: |
     Two enhancements to auto-property syntax make it easier to use auto-properties in more places: read-only auto-properties and auto-property initializers. Consider this small program:

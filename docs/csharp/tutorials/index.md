@@ -62,7 +62,7 @@ on your machine.
 
 ## Explore new features in C# #
 
-Try new features in [C# 6](../whats-new/csharp-6.md) in this [interactive exploration](exploration/csharp-6.yml)
+Try new features in [C# 6](../whats-new/csharp-6.md) in this [interactive exploration](exploration/csharp-6.yml).
 
 ## General Tutorials
 

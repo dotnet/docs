@@ -21,7 +21,7 @@ items:
     [!code-csharp[Starter](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs)]  
 
         
-    Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be readonly. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a reaonly auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
+     Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be read-only. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a read-only auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
 
     ```csharp
     public string AllCaps()

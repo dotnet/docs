@@ -74,7 +74,7 @@ public interface ICustomerManager
 ```  
   
 ### Step 2: Define the data contract  
- Next you should create a data contract for the service, which will describe how the data will be exchanged between the service and its clients.  Classes described in the data contract should be marked with the [<xref:System.Runtime.Serialization.DataContractAttribute>] attribute. The individual properties or fields you want visible to both client and server should be marked with the [<xref:System.Runtime.Serialization.DataMemberAttribute>] attribute.If you want types derived from a class in the data contract to be allowed, you must identify them with the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute. WCF will only serialize or deserialize types in the service interface and types identified as known types. If you attempt to use a type that is not a known type, an exception will occur.  
+ Next you should create a data contract for the service, which will describe how the data will be exchanged between the service and its clients.  Classes described in the data contract should be marked with the [<xref:System.Runtime.Serialization.DataContractAttribute>] attribute. The individual properties or fields you want visible to both client and server should be marked with the [<xref:System.Runtime.Serialization.DataMemberAttribute>] attribute. If you want types derived from a class in the data contract to be allowed, you must identify them with the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute. WCF will only serialize or deserialize types in the service interface and types identified as known types. If you attempt to use a type that is not a known type, an exception will occur.  
   
  For more information about data contracts, see [Data Contracts](../../../docs/framework/wcf/samples/data-contracts.md).  
   
@@ -209,7 +209,7 @@ public interface ICustomerManager
 ### Add code to the client that sends a by-value object  
  The following code shows how the client creates a new by-value customer object, creates a channel to communicate with the `ICustomerManager` service, and sends the customer object to it.  
   
- The customer object will be serialized, and sent to the service, where it is deserialized by the service into a new copy of that object.  Any methods the service calls on this object will execute only locally on the server.It’s important to note that this code illustrates sending a derived type (`PremiumCustomer`).  The service contract expects a `Customer` object, but the service data contract uses the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute to indicate that `PremiumCustomer` is also allowed.  WCF will fail attempts to serialize or deserialize any other type via this service interface.  
+ The customer object will be serialized, and sent to the service, where it is deserialized by the service into a new copy of that object.  Any methods the service calls on this object will execute only locally on the server. It’s important to note that this code illustrates sending a derived type (`PremiumCustomer`).  The service contract expects a `Customer` object, but the service data contract uses the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute to indicate that `PremiumCustomer` is also allowed.  WCF will fail attempts to serialize or deserialize any other type via this service interface.  
   
 ```  
 PremiumCustomer customer = new PremiumCustomer();  
@@ -386,7 +386,7 @@ sessionBoundServiceHost.Open();
   
 1.  Create a channel to the `ISessionBoundFactory` service.  
   
-2.  Use the channel to invoke the `ISessionBoundFactory` service an obtain an <xref:System.ServiceModel.EndpointAddress10> bbject.  
+2.  Use the channel to invoke the `ISessionBoundFactory` service an obtain an <xref:System.ServiceModel.EndpointAddress10> object.  
   
 3.  Use the <xref:System.ServiceModel.EndpointAddress10> to create a channel to obtain a sessionful object.  
   

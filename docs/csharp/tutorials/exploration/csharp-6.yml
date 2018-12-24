@@ -174,7 +174,7 @@ items:
 
     Beyond logging scenarios, exception filters can be most useful when a property of the exception determines what action to take. Consider looking inside an <xref:System.AggregateException> to see what the contained exceptions are.
 
-- title: using nameof
+- title: Using nameof
   durationInMinutes: 2
   content: |
     The `nameof` operator returns the name of any variable or type. Try the following code in the interactive window to see how it works:

@@ -195,7 +195,7 @@ items:
     }
     ```
    
-    The output matches the name of the variable or type. Even when you provided the fully-qualified type name (such as `System.String`) the `nameof` operator returns the unqualified name. This feature is most useful when you need to convert a parameter or property name to a string. Examples include throwing <xref:System.ArgumentNullException> or <xref:System.ArgumentException>, or implementing <xref:System.ComponentModel.INotifyPropertyChanged>. 
+    The output matches the name of the variable or type. Even when you provided the fully qualified type name (such as `System.String`) the `nameof` operator returns the unqualified name. This feature is most useful when you need to convert a parameter or property name to a string. Examples include throwing <xref:System.ArgumentNullException> or <xref:System.ArgumentException>, or implementing <xref:System.ComponentModel.INotifyPropertyChanged>. 
 
 - title: New object initialization syntax
   durationInMinutes: 2

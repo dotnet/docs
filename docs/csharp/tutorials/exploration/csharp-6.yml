@@ -44,7 +44,16 @@ items:
 - title: Expression-bodied members
   durationInMinutes: 2
   content: |
-    Expression-bodied members provide a lightweight syntax for lightweight methods. The `Person` class has two great candidates.  Replace the declaration of `ToString` with the following code:
+    Expression-bodied members provide a lightweight syntax for lightweight methods. The `Person` class has two great candidates. Look at the declaration of `ToString`:
+
+    ```csharp
+    public overvide string ToString()
+    {
+        return FirstName + " " + LastName;
+    }
+    ```
+    
+    Replace that declaration of `ToString` with the following code:
 
     ```csharp
     public override string ToString() => FirstName + " " + LastName;

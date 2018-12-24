@@ -52,7 +52,7 @@ items:
 
     Try the same with the `Caps` method. This is a small improvement, but when used wisely it creates much more readable code, especially for Data Transfer Objects (DTOs) and other types with minimal behavior.
 
-- title: importing a single class
+- title: Importing a single class
   durationInMinutes: 2
   content: |
     You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:

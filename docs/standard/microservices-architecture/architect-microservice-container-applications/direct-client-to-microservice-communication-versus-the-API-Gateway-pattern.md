@@ -35,7 +35,7 @@ Interacting with multiple microservices to build a single UI screen increases th
 
 Implementing security and cross-cutting concerns like security and authorization on every microservice can require significant development effort. A possible approach is to have those services within the Docker host or internal cluster to restrict direct access to them from the outside, and to implement those cross-cutting concerns in a centralized place, like an API Gateway.
 
-- How can client apps communicate with services that use non-Internet-friendly protocols?*
+- *How can client apps communicate with services that use non-Internet-friendly protocols?*
 
 Protocols used on the server side (like AMQP or binary protocols) are usually not supported in client apps. Therefore, requests must be performed through protocols like HTTP/HTTPS and translated to the other protocols afterwards. A *man-in-the-middle* approach can help in this situation.
 

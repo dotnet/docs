@@ -31,7 +31,7 @@ RIDs that represent concrete operating systems usually follow this pattern: `[os
 
 - `[architecture]` is the processor architecture. For example: `x86`, `x64`, `arm`, or `arm64`.
 
-- `[additional qualifiers]` further differentiate different platforms. For example: `aot` or `corert`.
+- `[additional qualifiers]` further differentiate different platforms. For example: `aot`.
 
 ## RID graph
 
@@ -87,15 +87,13 @@ The following list shows a small subset of the most common RIDs used for each OS
 Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
 
 - Portable (.NET Core 2.0 or later versions)
-  - `win-x86`
   - `win-x64`
+  - `win-x86`
+  - `win-arm`
+  - `win-arm64`
 - Windows 7 / Windows Server 2008 R2
   - `win7-x64`
   - `win7-x86`
-- Windows 8 / Windows Server 2012
-  - `win8-x64`
-  - `win8-x86`
-  - `win8-arm`
 - Windows 8.1 / Windows Server 2012 R2
   - `win81-x64`
   - `win81-x86`
@@ -114,7 +112,7 @@ Only common values are listed. For the latest and complete version, see the [run
 
 - Portable (.NET Core 2.0 or later versions)
   - `linux-arm`
-  - `linux-musl`
+  - `linux-musl-x64`
   - `linux-x64`
 - Alpine Linux (.NET Core 2.1 or later versions)
   - `alpine-x64`
@@ -196,13 +194,6 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
   - `osx.10.14-x64`
 
 See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information.
-
-## Android RIDs (.NET Core 2.0 or later versions)
-
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
-
-- `android`
-- `android.21`
 
 ## See also
 

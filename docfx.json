@@ -1,6 +1,6 @@
 {
   "build": {
-    "markdownEngineName": "dfm-latest",
+    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -57,7 +57,9 @@
         ]
       },
       {
-        "files": "toc.yml",
+        "files": [
+          "toc.yml"
+        ],
         "dest": "breadcrumb"
       }
     ],
@@ -101,6 +103,9 @@
       ]
     },
     "fileMetadata": {
+      "feedback_system": {
+        "docs/standard/design-guidelines/**/**.md": "None"
+      },
       "feedback_product_url": {
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp"
       },
@@ -151,7 +156,7 @@
         "_csharplang/spec/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
         "docs/core/**/**.md": "mairaw",
-        "docs/core/docker/**.md": "johnalex",
+        "docs/core/docker/**.md": "adegeo",
         "docs/csharp/**/**.md": "wiwagn",
         "docs/csharp/**/**.yml": "wiwagn",
         "docs/framework/configure-apps/file-schema/network/**/**.md": "ncldev",
@@ -196,6 +201,24 @@
         "docs/standard/serverless-architecture/**/**.md": "dotnet-ebooks",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
+      },
+      "titleSuffix": {
+        "docs/fsharp/tutorials/**/**.md": "F#",
+        "docs/fsharp/language-reference/**/**.md": "F#",
+        "docs/core/additional-tools/**.md": ".NET Core",
+        "docs/core/build/**.md": ".NET Core",
+        "docs/core/deploying/**.md": ".NET Core",
+        "docs/core/docker/**.md": ".NET Core",
+        "docs/core/migration/**.md": ".NET Core",
+        "docs/core/porting/**.md": ".NET Core",
+        "docs/core/testing/**.md": ".NET Core",
+        "docs/core/tools/**.md": ".NET Core CLI",
+        "docs/core/tutorials/**.md": ".NET Core",
+        "docs/core/versions/**.md": ".NET Core"
+      },
+      "ms.custom": {
+        "docs/fsharp/tutorials/**/**.md": "seodec18",
+        "docs/fsharp/language-reference/**/**.md": "seodec18"
       }
     },
     "dest": "_site",

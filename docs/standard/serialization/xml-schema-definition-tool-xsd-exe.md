@@ -29,7 +29,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
 |Option|Description|  
 |------------|-----------------|  
 |**/h**[**elp**]|Displays command syntax and options for the tool.|  
-|**/o**[**utputdir**]**:***directory*|Specifies the directory for output files. This argument can appear only once. The default is the current directory.|  
+|**/o**[**utputdir**]**:**_directory_|Specifies the directory for output files. This argument can appear only once. The default is the current directory.|  
 |**/?**|Displays command syntax and options for the tool.|  
 |**/P[arameters]:** *file.xml*|Read options for various operation modes from the specified .xml file. The short form is '/p:'. For more information, see the following Remarks section.|  
   
@@ -45,22 +45,22 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
   
 |Option|Description|  
 |------------|-----------------|  
-|**/e**[**lement**]**:***element*|Specifies the element in the schema to generate code for. By default all elements are typed. You can specify this argument more than once.|  
+|**/e**[**lement**]**:**_element_|Specifies the element in the schema to generate code for. By default all elements are typed. You can specify this argument more than once.|  
 |**/enableDataBinding**|Implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface on all generated types to enable data binding. The short form is `/edb`.|  
 |**/enableLinqDataSet**|(Short form: `/eld`.) Specifies that the generated DataSet can be queried against using LINQ to DataSet. This option is used when the /dataset option is also specified. For more information, see [LINQ to DataSet Overview](../../../docs/framework/data/adonet/linq-to-dataset-overview.md) and [Querying Typed DataSets](../../../docs/framework/data/adonet/querying-typed-datasets.md). For general information about using LINQ, see [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).|  
 |**/f**[**ields**]|Generates fields instead of properties. By default, properties are generated.|  
-|**/l**[**anguage**]**:***language*|Specifies the programming language to use. Choose from `CS` (C#, which is the default), `VB` (Visual Basic), `JS` (JScript), or `VJS` (Visual J#). You can also specify a fully qualified name for a class implementing <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|  
-|**/n**[**amespace**]**:***namespace*|Specifies the runtime namespace for the generated types. The default namespace is `Schemas`.|  
+|**/l**[**anguage**]**:**_language_|Specifies the programming language to use. Choose from `CS` (C#, which is the default), `VB` (Visual Basic), `JS` (JScript), or `VJS` (Visual J#). You can also specify a fully qualified name for a class implementing <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>|  
+|**/n**[**amespace**]**:**_namespace_|Specifies the runtime namespace for the generated types. The default namespace is `Schemas`.|  
 |**/nologo**|Suppresses the banner.|  
 |**/order**|Generates explicit order identifiers on all particle members.|  
 |**/o[ut]:** *directoryName*|Specifies the output directory to place the files in. The default is the current directory.|  
-|**/u**[**ri**]**:***uri*|Specifies the URI for the elements in the schema to generate code for. This URI, if present, applies to all elements specified with the `/element` option.|  
+|**/u**[**ri**]**:**_uri_|Specifies the URI for the elements in the schema to generate code for. This URI, if present, applies to all elements specified with the `/element` option.|  
   
 ## DLL and EXE File Options  
   
 |Option|Description|  
 |------------|-----------------|  
-|**/t**[**ype**]**:***typename*|Specifies the name of the type to create a schema for. You can specify multiple type arguments. If *typename* does not specify a namespace, Xsd.exe matches all types in the assembly with the specified type. If *typename* specifies a namespace, only that type is matched. If *typename* ends with an asterisk character (\*), the tool matches all types that start with the string preceding the \*. If you omit the `/type` option, Xsd.exe generates schemas for all types in the assembly.|  
+|**/t**[**ype**]**:**_typename_|Specifies the name of the type to create a schema for. You can specify multiple type arguments. If *typename* does not specify a namespace, Xsd.exe matches all types in the assembly with the specified type. If *typename* specifies a namespace, only that type is matched. If *typename* ends with an asterisk character (\*), the tool matches all types that start with the string preceding the \*. If you omit the `/type` option, Xsd.exe generates schemas for all types in the assembly.|  
   
 ## Remarks  
  The following table shows the operations that Xsd.exe performs.  

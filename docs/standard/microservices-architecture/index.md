@@ -173,6 +173,5 @@ The Docker whale logo is a registered trademark of Docker, Inc. Used by permissi
 
 All other marks and logos are property of their respective owners.
 
-
 >[!div class="step-by-step"]
-[Next](container-docker-introduction/index.md)
+>[Next](container-docker-introduction/index.md)

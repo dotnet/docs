@@ -1,5 +1,7 @@
 ---
-title: "async (C# Reference)"
+title: "async - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/22/2017
 f1_keywords: 
   - "async_CSharpKeyword"

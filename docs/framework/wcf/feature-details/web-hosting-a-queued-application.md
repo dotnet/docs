@@ -8,7 +8,7 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
   
  WAS includes a Message Queuing (MSMQ) activation service that activates a queued application when one or more messages are placed in one of the queues used by the application. The MSMQ activation service is an NT service that is automatically started by default.  
   
- For more information about WAS and its benefits, see [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md). For more information about MSMQ, see [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
+ For more information about WAS and its benefits, see [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md). For more information about MSMQ, see [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md).
   
 ## Queue Addressing in WAS  
  WAS applications have Uniform Resource Identifier (URI) addresses. Application addresses have two parts: a base URI prefix and an application-specific, relative address (path). These two parts provide the external address for an application when joined together. The base URI prefix is constructed from the site binding and is used for all the applications under the site, for example, "net.msmq://localhost", "msmq.formatname://localhost", or "net.tcp://localhost". Application addresses are then constructed by taking application-specific path fragments (such as "/applicationOne") and appending them to the base URI prefix to arrive at the full application URI, for example, "net.msmq://localhost/applicationOne".  

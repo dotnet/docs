@@ -1,5 +1,5 @@
 ---
-title: External Functions (F#)
+title: External Functions
 description: Learn about the F# language support for calling functions in native code.
 ms.date: 05/16/2016
 ---

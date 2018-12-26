@@ -1,9 +1,9 @@
 ---
-title: "No method &#39;&lt;methodname&gt;&#39; can accept an argument of type &#39;&lt;typename&gt;&#39; for parameter &#39;&lt;parametername&gt;&#39;"
+title: "No method '&lt;methodname&gt;' can accept an argument of type '&lt;typename&gt;' for parameter '&lt;parametername&gt;'"
 ms.date: 07/20/2015
 ms.assetid: 175c01dc-279c-4996-8501-d19a6671fdeb
 ---
-# No method &#39;&lt;methodname&gt;&#39; can accept an argument of type &#39;&lt;typename&gt;&#39; for parameter &#39;&lt;parametername&gt;&#39;
+# No method '&lt;methodname&gt;' can accept an argument of type '&lt;typename&gt;' for parameter '&lt;parametername&gt;'
 A method call contains an argument of a type that is not valid.  
   
 ## To correct this error  

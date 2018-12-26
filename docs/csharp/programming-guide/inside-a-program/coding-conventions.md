@@ -1,5 +1,6 @@
 ---
-title: "C# Coding Conventions (C# Programming Guide)"
+title: "C# Coding Conventions - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions, C#"

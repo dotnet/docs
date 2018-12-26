@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1f485329-2771-43bc-88de-df8f2faa3bb7
 ---
 # &lt;udpDiscoveryEndpoint&gt;
-This configuration element defines a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. This endpoint has a fixed contract and supports two WS-Discovery protocol versions. In addition, it has a fixed UDP binding and a default address as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery V1.1)..  
+This configuration element defines a standard endpoint that is pre-configured for discovery operations over a UDP multicast binding. This endpoint has a fixed contract and supports two WS-Discovery protocol versions. In addition, it has a fixed UDP binding and a default address as specified in the WS-Discovery specifications (WS-Discovery April 2005 or WS-Discovery V1.1).  
   
  \<system.ServiceModel>  
 \<standardEndpoints>  

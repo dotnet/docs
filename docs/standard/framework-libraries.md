@@ -47,7 +47,8 @@ The BCL provides the most foundational types and utility functionality and are t
 
 *   <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
 *   <xref:System.Xml.Linq.XDocument> - An API for loading, and querying XML documents with LINQ.
-*   <xref:System.IO.StreamReader> - An API for reading files (<xref:System.IO.StringWriter>) Can be used to write files.
+*   <xref:System.IO.StreamReader> - An API for reading files. 
+*   <xref:System.IO.StreamWriter> - An API for writing files.
 
 ## App-Model APIs
 

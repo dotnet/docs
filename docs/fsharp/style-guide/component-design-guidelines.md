@@ -68,7 +68,7 @@ The following table follows .NET naming and capitalization conventions. There ar
 |-----------|------|------|----------|-------|
 | Concrete types | PascalCase | Noun/ adjective | List, Double, Complex | Concrete types are structs, classes, enumerations, delegates, records, and unions. Though type names are traditionally lowercase in OCaml, F# has adopted the .NET naming scheme for types.
 | DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
-| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as ```type Teams = TAlpha | TBeta | TDelta.``` |
+| Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as `type Teams = TAlpha | TBeta | TDelta.` |
 | Event          | PascalCase | Verb | ValueChanged / ValueChanging |  |
 | Exceptions     | PascalCase |      | WebException | Name should end with “Exception”. |
 | Field          | PascalCase | Noun | CurrentName  | |

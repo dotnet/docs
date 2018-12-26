@@ -85,18 +85,12 @@ XElement data = new XElement("Root",
 );  
   
 // while adding annotations, you can query the source tree all you want,  
-// as the tree is not mutated while annotating.  
+// as the tree is not mutated while annotating.
+var avg = data.Elements("Data").Select(z => (Decimal)z).Average();
 data.AddAnnotation(  
     new XElement("Root",  
         new XElement(xf + "ApplyTransforms"),  
-        new XElement("Average",  
-            String.Format("{0:F4}",  
-                data  
-                .Elements("Data")  
-                .Select(z => (Decimal)z)  
-                .Average()  
-            )  
-        ),  
+        new XElement("Average", $"{avg:F4}"),
         new XElement("Sum",  
             data  
             .Elements("Data")  

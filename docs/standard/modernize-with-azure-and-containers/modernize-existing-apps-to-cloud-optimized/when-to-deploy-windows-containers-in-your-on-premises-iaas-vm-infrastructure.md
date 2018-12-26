@@ -14,5 +14,5 @@ ms.date: 04/28/2018
 -   If you start using Windows Containers today, you can make a phased migration to the cloud tomorrow from a much better position. Windows Containers is becoming a unit of deployment for any cloud, with no lock-in.
 
 >[!div class="step-by-step"]
-[Previous](when-not-to-deploy-to-windows-containers.md)
-[Next](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)
+>[Previous](when-not-to-deploy-to-windows-containers.md)
+>[Next](when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md)

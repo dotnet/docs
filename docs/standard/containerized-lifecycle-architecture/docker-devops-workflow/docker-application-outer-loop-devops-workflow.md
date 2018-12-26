@@ -230,5 +230,5 @@ This topic also is covered in the next chapter as part of the tasks that IT oper
 Only when monitoring and diagnostics are 100 percent within the realm of DevOps are the monitoring processes and analytics performed by the development team against testing or beta environments. This is done either by performing load testing or simply by monitoring beta or QA environments, where beta testers are trying the new versions.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](../run-manage-monitor-docker-environments/index.md)
+>[Previous](index.md)
+>[Next](../run-manage-monitor-docker-environments/index.md)

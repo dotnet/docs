@@ -20,7 +20,7 @@ expression OVERLAPS expression
  `true` if the two collections have common elements; otherwise, `false`.  
   
 ## Remarks  
- OVERLAPS provides functionally equivalent tothe following:  
+ OVERLAPS provides functionally equivalent to the following:  
   
  `EXISTS ( expression INTERSECT expression )`  
   

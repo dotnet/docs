@@ -39,7 +39,7 @@ You can also choose from existing issues for which community contributions are w
 
 You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
 
-**Step 2:** Fork the `/dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
+**Step 2:** Fork the `dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
 For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
 GitHub creates the new branch for you when you submit the changes.
@@ -69,6 +69,8 @@ Be sure to follow the proper Markdown syntax. For more information, see the [sty
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
+Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description. That way, the issue is automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).
@@ -85,9 +87,9 @@ On a certain cadence, we push all commits from master branch into the live branc
 
 We make the following distinction for code that exists in our repository:
 
-- samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
+- Samples: readers can download and run the samples. All samples should be complete applications or libraries. Where the sample creates a library, it should include unit tests or an application that lets readers run the code.
 
-- snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
+- Snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
 Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository. We are working toward a model where our samples folder structure matches our docs folder structure. Standards that we follow are:
 
@@ -104,7 +106,7 @@ contain a short description of the sample (one or two paragraphs). Your *readme.
 should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
 a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
-with `http://docs.microsoft.com/dotnet/articles`.
+with `https://docs.microsoft.com/dotnet`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 

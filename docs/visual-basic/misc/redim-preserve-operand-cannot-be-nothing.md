@@ -1,9 +1,9 @@
 ---
-title: "&#39;ReDim&#39; Preserve operand cannot be Nothing"
+title: "'ReDim' Preserve operand cannot be Nothing"
 ms.date: 07/20/2015
 ms.assetid: b857f313-3fc2-4262-a577-88df1718b811
 ---
-# &#39;ReDim&#39; Preserve operand cannot be Nothing
+# 'ReDim' Preserve operand cannot be Nothing
 A `ReDim` statement attempts to use the `Preserve` keyword to change a dimension of an array that is not the last dimension, but does not supply a valid value for its operand.  
   
 ## To correct this error  

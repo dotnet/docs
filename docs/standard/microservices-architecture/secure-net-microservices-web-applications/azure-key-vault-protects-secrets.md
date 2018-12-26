@@ -69,5 +69,5 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
     [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)
 
 >[!div class="step-by-step"]
-[Previous](developer-app-secrets-storage.md)
-[Next](../key-takeaways.md)
+>[Previous](developer-app-secrets-storage.md)
+>[Next](../key-takeaways.md)

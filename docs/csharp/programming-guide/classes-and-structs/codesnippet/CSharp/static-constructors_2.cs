@@ -35,7 +35,7 @@
             // actual bus times. Do not do this in your actual bus schedule program!
             Console.WriteLine("{0} is starting its route {1:N2} minutes after global start time {2}.",
                                     this.RouteNumber,
-                                    elapsedTime.TotalMilliseconds,
+                                    elapsedTime.Milliseconds,
                                     globalStartTime.ToShortTimeString());
         }
     }

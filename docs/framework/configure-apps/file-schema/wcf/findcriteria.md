@@ -40,7 +40,7 @@ A configuration element that supplies a set of criteria used by a client applica
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|duration|A Timespan value that specifies the maximum time to wait for replies from services on the network. The default duration is 20 seconds..|  
+|duration|A Timespan value that specifies the maximum time to wait for replies from services on the network. The default duration is 20 seconds.|  
 |maxResults|An integer that specifies the maximum number of replies to wait for, from services on a network or the Internet. If maximum replies are received before the value specified in the `duration` attribute has elapsed, the find operation ends.|  
 |scopeMatchBy|A URI that specify the matching algorithm to use while matching the scopes in the Probe message with that of the endpoint.<br /><br /> There are five supported scope-matching rules. If you do not specify a scope-matching rule, `ScopeMatchByPrefix` is used. For more information on this, see <xref:System.ServiceModel.Discovery.FindCriteria>.|  
   
@@ -48,7 +48,7 @@ A configuration element that supplies a set of criteria used by a client applica
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of configuration elements that contain the names of workflow service contract types..|  
+|[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of configuration elements that contain the names of workflow service contract types.|  
 |\<extensions> of \<findCriteria>|A collection of XML element objects that provide extensions.|  
 |[\<scopes>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopes.md)|A collection of objects that contain absolute URIs that are used during a find operation to locate a specific service or services.<br /><br /> If the specific service is found, a successful match has been made between the service URI and the Scope URI, sometimes with the help of scope rules that handle complications of matching.|  
   

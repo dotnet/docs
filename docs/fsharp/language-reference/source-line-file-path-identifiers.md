@@ -1,5 +1,5 @@
 ---
-title: Source Line, File, and Path Identifiers (F#)
+title: Source Line, File, and Path Identifiers
 description: Learn how to use built-in F# identifier values that enable you to access the source line number, directory, and file name in your code.
 ms.date: 05/16/2016
 ---
@@ -26,6 +26,7 @@ The following table summarizes the source line, file, and path identifiers that 
 |`__LINE__`|Evaluates to the current line number, considering `#line` directives.|
 |`__SOURCE_DIRECTORY__`|Evaluates to the current full path of the source directory, considering `#line` directives.|
 |`__SOURCE_FILE__`|Evaluates to the current source file name and its path, considering `#line` directives.|
+
 For more information about the `#line` directive, see [Compiler Directives](compiler-directives.md).
 
 ## Example

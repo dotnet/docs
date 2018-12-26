@@ -1,11 +1,11 @@
 ---
-title: "Argument &#39;Access&#39; is not valid. Valid values for Output mode are &#39;OpenAccess.Write&#39; and &#39;OpenAccess.Default&#39;"
+title: "Argument 'Access' is not valid. Valid values for Output mode are 'OpenAccess.Write' and 'OpenAccess.Default'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_IllegalOutputAccess"
 ms.assetid: 29a40d2d-10d7-476b-b7c5-d10ab6a3bcce
 ---
-# Argument &#39;Access&#39; is not valid. Valid values for Output mode are &#39;OpenAccess.Write&#39; and &#39;OpenAccess.Default&#39;
+# Argument 'Access' is not valid. Valid values for Output mode are 'OpenAccess.Write' and 'OpenAccess.Default'
 An access value is not valid in Output mode.  
   
 ## To correct this error  

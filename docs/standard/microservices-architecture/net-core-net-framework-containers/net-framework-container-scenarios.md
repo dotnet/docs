@@ -59,9 +59,6 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 -   **.NET Components Overview**  
     [https://docs.microsoft.com/dotnet/standard/components](../../components.md)
 
-
-
-
 >[!div class="step-by-step"]
-[Previous](net-core-container-scenarios.md)
-[Next](container-framework-choice-factors.md)
+>[Previous](net-core-container-scenarios.md)
+>[Next](container-framework-choice-factors.md)

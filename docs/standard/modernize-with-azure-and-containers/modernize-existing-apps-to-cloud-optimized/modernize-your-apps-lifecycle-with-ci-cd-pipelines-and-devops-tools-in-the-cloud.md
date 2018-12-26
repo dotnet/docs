@@ -30,5 +30,5 @@ Figure 4-12 shows a continuous deployment pipeline that deploys to a Kubernetes 
 > **Figure 4-12.** Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster
 
 >[!div class="step-by-step"]
-[Previous](modernize-your-apps-with-monitoring-and-telemetry.md)
-[Next](migrate-to-hybrid-cloud-scenarios.md)
+>[Previous](modernize-your-apps-with-monitoring-and-telemetry.md)
+>[Next](migrate-to-hybrid-cloud-scenarios.md)

@@ -1,5 +1,6 @@
 ---
-title: "Differences Between C++ Templates and C# Generics (C# Programming Guide)"
+title: "Differences Between C++ Templates and C# Generics - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], vs. C++ templates"

@@ -45,7 +45,7 @@ Client applications must create, configure, and use WCF client or channel object
  Handling exceptions in client applications is straightforward. If a channel is opened, used, and closed inside a try block, then the conversation has succeeded, unless an exception is thrown. Typically, if an exception is thrown the conversation is aborted.  
   
 > [!NOTE]
->  Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Avoiding Problems with the Using Statement](../../../../docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md).  
+>  Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Use Close and Abort to release WCF client resources](../../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
  The following code example shows the recommended client pattern using a try/catch block and not the `using` statement.  
   

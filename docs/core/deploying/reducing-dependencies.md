@@ -2,8 +2,8 @@
 title: Reducing Package Dependencies with project.json
 description: Reduce package dependencies when authoring project.json-based libraries.
 author: cartermp
-ms.author: mairaw
 ms.date: 06/20/2016
+ms.custom: "seodec18"
 ---
 # Reducing Package Dependencies with project.json
 

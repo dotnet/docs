@@ -12,17 +12,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
 > [!NOTE]
 >  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete the previous topics. To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
-## In this topic  
-  
--   [To create the custom tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_CustomTrackingParticipant)  
-  
--   [To create the tracking profile and register the tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_TrackingProfile)  
-  
--   [To display the tracking information](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_DisplayTracking)  
-  
--   [To build and run the application](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_BuildAndRun)  
-  
-###  <a name="BKMK_CustomTrackingParticipant"></a> To create the custom tracking participant  
+## To create the custom tracking participant  
   
 1.  Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Class**. Type `StatusTrackingParticipant` into the **Name** box, and click **Add**.  
   
@@ -98,7 +88,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
   
      When no tracking profile is specified, the default tracking profile is used. When the default tracking profile is used, tracking records are emitted for all `ActivityStates`. Because we only need to capture the text one time during the lifecycle of the `WriteLine` activity, we only extract the text from the `ActivityStates.Executing` state. In [To create the tracking profile and register the tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_TrackingProfile), a tracking profile is created that specifies that only `WriteLine` `ActivityStates.Executing` tracking records are emitted.  
   
-###  <a name="BKMK_TrackingProfile"></a> To create the tracking profile and register the tracking participant  
+## To create the tracking profile and register the tracking participant  
   
 1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
@@ -219,7 +209,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
         // Workflow lifecycle handlers...  
     ```  
   
-###  <a name="BKMK_DisplayTracking"></a> To display the tracking information  
+## To display the tracking information  
   
 1.  Right-click **WorkflowHostForm** in **Solution Explorer** and choose **View Code**.  
   
@@ -314,7 +304,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     }  
     ```  
   
-###  <a name="BKMK_BuildAndRun"></a> To build and run the application  
+## To build and run the application  
   
 1.  Press Ctrl+Shift+B to build the application.  
   
@@ -323,21 +313,27 @@ Workflow tracking provides visibility into the status of workflow execution. The
 3.  Select a range for the guessing game and the type of workflow to start, and click **New Game**. Enter a guess in the **Guess** box and click **Go** to submit your guess. Note that the status of the workflow is displayed in the status window. This output is captured from the `WriteLine` activities. Switch to a different workflow by selecting one from the **Workflow Instance Id** combo box and note that the status of the current workflow is removed. Switch back to the previous workflow and note that the status is restored, similar to the following example.  
   
     > [!NOTE]
-    >  If you switch to a workflow that was started before tracking was enabled no status is displayed. However if you make additional guesses, their status is saved because tracking is now enabled.  
+    > If you switch to a workflow that was started before tracking was enabled no status is displayed. However if you make additional guesses, their status is saved because tracking is now enabled.  
   
- **Please enter a number between 1 and 10**  
-**Your guess is too high.**   
-**Please enter a number between 1 and 10**    
-
+    ```output
+    Please enter a number between 1 and 10
+    Your guess is too high.
+    Please enter a number between 1 and 10
+    ```
+    
     > [!NOTE]
-    >  This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).  
-  
-     Make a note of the workflow instance id, and play the game through to its completion.  
+    > This information is useful for determining the range of the random number, but it does not contain any information about what guesses have been previously made. This information is in the next step, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md).
+
+    Make a note of the workflow instance id, and play the game through to its completion.
   
 4.  Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings). Note that in addition to the project executable files there are files with guid filenames. Identify the one that corresponds to the workflow instance id from the completed workflow in the previous step and open it in Notepad. The tracking information contains information similar to the following.  
   
- **Please enter a number between 1 and 10**  
-**Your guess is too high.**   
-**Please enter a number between 1 and 10**   
-**Your guess is too high.**   
-**Please enter a number between 1 and 10**      In addition to the absence of the user's guesses, this tracking data does not contain information about the final guess of the workflow. That is because the tracking information consists only of the `WriteLine` output from the workflow, and the final message that is displayed is done so from the `Completed` handler after the workflow completes. In next step of the tutorial, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md), the existing `WriteLine` activities are modified to display the user's guesses, and an additional `WriteLine` activity is added that displays the final results. After these changes are integrated, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md) demonstrates how to host multiple versions of a workflow at the same time.
+    ```output
+    Please enter a number between 1 and 10
+    Your guess is too high.
+    Please enter a number between 1 and 10
+    Your guess is too high.
+    Please enter a number between 1 and 10
+    ```
+
+    In addition to the absence of the user's guesses, this tracking data does not contain information about the final guess of the workflow. That is because the tracking information consists only of the `WriteLine` output from the workflow, and the final message that is displayed is done so from the `Completed` handler after the workflow completes. In next step of the tutorial, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md), the existing `WriteLine` activities are modified to display the user's guesses, and an additional `WriteLine` activity is added that displays the final results. After these changes are integrated, [How to: Host Multiple Versions of a Workflow Side-by-Side](../../../docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md) demonstrates how to host multiple versions of a workflow at the same time.

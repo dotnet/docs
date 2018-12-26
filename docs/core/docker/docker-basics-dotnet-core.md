@@ -1,12 +1,12 @@
 ---
-title: Learn Docker Basics with .NET Core
-description: A Docker and .NET Core Basic Tutorial
+title: Containerize an app with Docker
+description: This tutorial teaches how to create a basic .NET Core application and containerize it with Docker.
 ms.date: 10/11/2018
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
 
-# Learn Docker Basics with .NET Core
+# How to containerize a .NET Core application
 
 This tutorial teaches the Docker container build and deploy tasks for a .NET Core application. The [Docker platform](https://docs.docker.com/engine/docker-overview/#the-docker-platform) uses the [Docker Engine](https://docs.docker.com/engine/docker-overview/#docker-engine) to quickly build and package apps as [Docker images](https://docs.docker.com/glossary/?term=image). These images are written in the [Dockerfile](https://docs.docker.com/glossary/?term=Dockerfile) format to be deployed and run in a [layered container](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/#container-and-layers).
 
@@ -31,9 +31,9 @@ You can build both Windows and Linux containers with [multi-arch based tags](htt
 
 To complete this tutorial:
 
-#### .NET Core 2.1 SDK
+#### .NET Core SDK
 
-* Install [.NET Core SDK 2.1](https://www.microsoft.com/net/download).
+* Install [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later.
 
 See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, out of support OS versions, and lifecycle policy links.
 
@@ -76,7 +76,7 @@ Let's do a quick walkthrough:
 1. `$ dotnet new console`
 
    [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
-   
+
    `Hello.csproj`:
 
    The project file specifies everything that's needed to restore dependencies and build the program.
@@ -90,26 +90,21 @@ Let's do a quick walkthrough:
 
    We then define a namespace called `Hello`. You can change namespace to anything you want. A class named `Program` is defined within that namespace, with a `Main` method that takes an array of strings as its argument. This array contains the list of arguments passed in when the compiled program is called. In our example, the program only writes "Hello World!" to the console.
 
-2. `$ dotnet restore`
-
-   In .NET Core 2.x, **dotnet new** runs the [`dotnet restore`](../tools/dotnet-restore.md) command. **Dotnet restore** restores the tree of dependencies with a [NuGet](https://www.nuget.org/)(.NET package manager) call.
+   **dotnet new** runs the [`dotnet restore`](../tools/dotnet-restore.md) command. **Dotnet restore** restores the tree of dependencies with a [NuGet](https://www.nuget.org/)(.NET package manager) call.
    NuGet performs the following tasks:
-   * analyzes the *Hello.csproj* file 
-   * downloads the file dependencies (or grabs from your machine cache)
-   * writes the *obj/project.assets.json* file
+   * analyzes the *Hello.csproj* file.
+   * downloads the file dependencies (or grabs from your machine cache).
+   * writes the *obj/project.assets.json* file.
 
-<a name="dotnet-restore-note"></a>
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-   
    The *project.assets.json* file is a complete set of the NuGet dependencies graph, binding resolutions, and other app metadata. This required file is used by other tools, such as [`dotnet build`](../tools/dotnet-build.md) and [`dotnet run`](../tools/dotnet-run.md), to correctly process the source code.
-   
-3. `$ dotnet run`
+
+2. `$ dotnet run`
 
    [`dotnet run`](../tools/dotnet-run.md) calls [`dotnet build`](../tools/dotnet-build.md) to confirm a successful build, and then calls `dotnet <assembly.dll>` to run the application.
-   
+
     ```console
     $ dotnet run
-    
+
     Hello World!
     ```
 
@@ -189,7 +184,7 @@ Now you have a Dockerfile that:
 * your app's dependencies to the image
 * builds the app to run as an executable
 
-### Build and run the Hello .NET Core 2.1 app
+### Build and run the Hello .NET Core app
 
 #### Essential Docker commands
 
@@ -248,20 +243,18 @@ The output from the `docker run` command should be similar to the following cons
 Hello World!
 ```
 
-Congratulations! you have just:
+Congratulations! You have just:
 > [!div class="checklist"]
 > * Created a local .NET Core app
 > * Created a Dockerfile to build your first container
 > * Built and ran your Dockerized app
 
-
-
-## Next Steps
+## Next steps
 
 Here are some next steps you can take:
 
 * [Introduction to .NET Docker Images Video](https://channel9.msdn.com/Shows/Code-Conversations/Introduction-to-NET-Docker-Images-with-Kendra-Havens?term=docker)
-* [Visual Studio, Docker & Azure Container Instances better together!](https://blogs.msdn.microsoft.com/alimaz/2017/08/17/visual-studio-docker-azure-container-instances-better-together/)
+* [Visual Studio, Docker & Azure Container Instances better together!](https://medium.com/@AliMazaheri/visual-studio-docker-azure-container-instances-better-together-bf8c2f0419ae)
 * [Docker for Azure Quickstarts](https://docs.docker.com/docker-for-azure/#docker-community-edition-ce-for-azure)
 * [Deploy your app on Docker for Azure](https://docs.docker.com/docker-for-azure/deploy/)
 
@@ -274,7 +267,7 @@ The following Docker images are used in this sample
 
 * [`microsoft/dotnet:2.1-sdk`](https://hub.docker.com/r/microsoft/dotnet)
 
-## Related Resources
+## Related resources
 
 * [.NET Core Docker samples](https://github.com/dotnet/dotnet-docker/tree/master/samples)
 * [Dockerfile on Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)

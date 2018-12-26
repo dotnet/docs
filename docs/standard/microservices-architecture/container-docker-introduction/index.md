@@ -23,7 +23,6 @@ Another benefit of containerization is scalability. You can scale out quickly by
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the whole application lifecycle workflow. The most important benefit is the environment's isolation provided between Dev and Ops.
 
-
 >[!div class="step-by-step"]
-[Previous](../index.md)
-[Next](docker-defined.md)
+>[Previous](../index.md)
+>[Next](docker-defined.md)

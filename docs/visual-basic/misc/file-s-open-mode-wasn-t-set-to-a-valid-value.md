@@ -1,9 +1,9 @@
 ---
-title: "File&#39;s open mode wasn&#39;t set to a valid value"
+title: "File's open mode wasn't set to a valid value"
 ms.date: 07/20/2015
 ms.assetid: 969541f6-9ff6-4804-ba61-0d17370060ef
 ---
-# File&#39;s open mode wasn&#39;t set to a valid value
+# File's open mode wasn't set to a valid value
 The value supplied for the file's open mode was not valid. The following table shows valid values for the <xref:Microsoft.VisualBasic.OpenMode> enumeration.  
   
 |Value|Mode|  

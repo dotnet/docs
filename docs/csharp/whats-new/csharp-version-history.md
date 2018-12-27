@@ -137,7 +137,7 @@ With versions 3.0 and 5.0, C# had added major new features in an object-oriented
 - [Null propagator](./csharp-6.md#null-conditional-operators)
 - [String interpolation](./csharp-6.md#string-interpolation)
 - [nameof operator](./csharp-6.md#the-nameof-expression)
-- [Index initializers](csharp-6.md#index-initializers)
+- [Index initializers](csharp-6.md#extension-add-methods-in-collection-initializers)
 
 Other new features include:
 

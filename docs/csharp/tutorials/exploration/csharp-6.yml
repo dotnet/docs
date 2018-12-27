@@ -18,7 +18,7 @@ items:
   content: |
     Two enhancements to auto-property syntax make it easier to use auto-properties in more places: read-only auto-properties and auto-property initializers. Consider this small program:
 
-    [!code-csharp[Starter](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs)]  
+    [!code-csharp[Starter](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs)]  
 
         
      Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be read-only. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a read-only auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
@@ -37,7 +37,7 @@ items:
   content: |
     New syntax in C# 6 enables you to use initializers for auto-properties. This becomes more important as classes grow new capabilities. Add a middle name property, and a new constructor that takes three strings to your `Person` class:
 
-    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#MiddleName)]  
+    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#MiddleName)]  
 
     The assignment on the `MiddleName` property is an initializer. It initializes the compiler-generated backing field for the middle name.
 
@@ -66,7 +66,7 @@ items:
   content: |
     You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
 
-    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#UsingStatic)]  
+    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#UsingStatic)]  
     
     The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the `string` class or the <xref:System.Math?displayProperty=nameWithType> class.
 
@@ -75,15 +75,15 @@ items:
   content: |
     C# 6 contains new syntax for composing strings from a string and embedded expressions that are evaluated to produce other string values. You can change the `ToString` and `AllCaps` methods to use this syntax:
 
-    [!code-csharp[StringInterpolation](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#StringInterpolation)]  
+    [!code-csharp[StringInterpolation](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#StringInterpolation)]  
 
     Instead of positional arguments between the `{` and `}`, you write C# expressions directly. You can do the same in the `Main` method. Replace the existing code with the following:
 
-    [!code-csharp[InterpolationMain](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#InterpolationMain)]  
+    [!code-csharp[InterpolationMain](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#InterpolationMain)]  
 
     You're not limited to a single variable in these expressions. Let's start with a new example and modify it to demonstrate. Paste the following code into the interactive window in the `Main` method:
 
-    [!code-csharp[Phrases](../../../../samples/csharp/tutorials/explorations/csharp6-starter/Program.cs#Phrases)]  
+    [!code-csharp[Phrases](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#Phrases)]  
     
     You can remove the local variable `average` and perform that calculation as part of the interpolated string expression. Replace the last two lines with the following:
 

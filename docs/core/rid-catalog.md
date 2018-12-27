@@ -79,7 +79,7 @@ There are some considerations about RIDs that you have to keep in mind when work
 To be able to use RIDs, you have to know which RIDs exist. New values are added regularly to the platform.
 For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
 
-.NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution. They're particularly useful when dealing with multiple Linux distros.
+.NET Core 2.0 SDK introduces the concept of portable RIDs. They are new values added to the RID graph that aren't tied to a specific version or OS distribution and are the preferred choice when using .NET Core 2.0 and higher. They're particularly useful when dealing with multiple Linux distros since most distribution RIDs are mapped to the portable RIDs.
 
 The following list shows a small subset of the most common RIDs used for each OS.
 
@@ -112,68 +112,16 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
 Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo. Devices running a distribution not listed below may work with one of the Portable RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
 
 - Portable (.NET Core 2.0 or later versions)
-  - `linux-arm`
-  - `linux-musl-x64`
-  - `linux-x64`
-- Alpine Linux (.NET Core 2.1 or later versions)
-  - `alpine-x64`
-  - `alpine.3.7-x64`
-- CentOS
-  - `centos-x64`
-  - `centos.7-x64`
-- Debian
-  - `debian-x64`
-  - `debian.8-x64`
-  - `debian.9-x64` (.NET Core 1.1 or later versions)
-- Fedora
-  - `fedora-x64`
-  - `fedora.27-x64`
-  - `fedora.28-x64` (.NET Core 1.1 or later versions)
-- Gentoo (.NET Core 2.0 or later versions)
-  - `gentoo-x64`
-- openSUSE
-  - `opensuse-x64`
-  - `opensuse.42.3-x64`
-- Oracle Linux
-  - `ol-x64`
-  - `ol.7-x64`
-  - `ol.7.0-x64`
-  - `ol.7.1-x64`
-  - `ol.7.2-x64`
-  - `ol.7.3-x64`
-  - `ol.7.4-x64`
+  - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu and derivatives)
+  - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
+  - `linux-arm` (Linux distributions running on ARM like Raspberry Pi)
 - Red Hat Enterprise Linux
-  - `rhel-x64`
+  - `rhel-x64` (Alias for `linux-x64` for RHEL above version 6)
   - `rhel.6-x64` (.NET Core 2.0 or later versions)
-  - `rhel.7-x64`
-  - `rhel.7.1-x64`
-  - `rhel.7.2-x64`
-  - `rhel.7.3-x64` (.NET Core 2.0 or later versions)
-  - `rhel.7.4-x64` (.NET Core 2.0 or later versions)
-- SUSE Enterprise Linux (SLES) (.NET Core 2.0 or later versions)
-  - `sles-x64`
-  - `sles.12-x64`
-  - `sles.12.1-x64`
-  - `sles.12.2-x64`
-  - `sles.12.3-x64`
 - Tizen (.NET Core 2.0 or later versions)
   - `tizen`
   - `tizen.4.0.0`
   - `tizen.5.0.0`
-- Ubuntu
-  - `ubuntu-x64`
-  - `ubuntu.14.04-x64`
-  - `ubuntu.16.04-x64`
-  - `ubuntu.18.04-x64`
-- Ubuntu derivatives
-  - `linuxmint.17-x64`
-  - `linuxmint.17.1-x64`
-  - `linuxmint.17.2-x64`
-  - `linuxmint.17.3-x64`
-  - `linuxmint.18-x64` (.NET Core 2.0 or later versions)
-  - `linuxmint.18.1-x64` (.NET Core 2.0 or later versions)
-  - `linuxmint.18.2-x64` (.NET Core 2.0 or later versions)
-  - `linuxmint.18.3-x64` (.NET Core 2.0 or later versions)
 
 See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more information.
 
@@ -182,7 +130,7 @@ See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more info
 macOS RIDs use the older "OSX" branding. Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo.
 
 - Portable (.NET Core 2.0 or later versions)
-  - `osx-x64` (Minimum OS version is `osx.10.12-x64`)
+  - `osx-x64` (Minimum OS version is macOS 10.12 Sierra)
 - macOS 10.10  Yosemite
   - `osx.10.10-x64`
 - macOS 10.11 El Capitan

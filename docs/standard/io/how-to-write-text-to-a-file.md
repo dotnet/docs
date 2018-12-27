@@ -25,16 +25,16 @@ This topic shows different ways to write text to a file for .NET or Universal Wi
 
 - <xref:System.IO.Path> can be used on strings that have file or directory path information. It contains the <xref:System.IO.Path.Combine%2A> method, which allows concatenation of strings to build a file or directory path.
 
-## Examples: Write and append to text files with StreamWriter and File 
+## Examples: Write text with StreamWriter and File 
 
 The following examples show how to:
-- Synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time. The new text file is saved to the *My Documents* folder. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  
-  
-- Append text to the text file from the first example, using the <xref:System.IO.StreamWriter> class.   
-  
-- Asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call needs to be within an `async` method. The new text file is saved to the *My Documents* folder.  
-  
-- Write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class. The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically. If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file is overwritten.  
+1. Synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time. The new text file is saved to the *My Documents* folder. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  
+   
+1. Append text to the text file from the first example, using the <xref:System.IO.StreamWriter> class.   
+   
+1. Asynchronously write text to a new file using the <xref:System.IO.StreamWriter> class. To invoke the <xref:System.IO.StreamWriter.WriteAsync%2A> method, the method call needs to be within an `async` method. The new text file is saved to the *My Documents* folder.  
+   
+1. Write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class. The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically. If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file is overwritten.  
 
 >[!NOTE]
 >The examples are kept simple, to focus on the task being performed. A real-world app generally provides more robust error checking and exception handling.  

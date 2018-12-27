@@ -160,7 +160,7 @@ The implementation details for adding `await` support inside `catch` and `finall
 
 *Index Initializers* is one of two features that make collection initializers more consistent with index usage. In earlier releases of C#, you could use *collection initializers* with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602> by adding braces around key and value pairs:
 
-[!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
+[!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#CollectionInitializer)]
 
 Now, you can use them with <xref:System.Collections.Generic.Dictionary%602> collections and other types where the accessible `Add` method accepts more than one argument. The new syntax supports assignment using an index into the collection:
 

@@ -139,6 +139,7 @@
 ### [Extensibility Model](core/tools/extensibility.md)
 ### [Continuous Integration](core/tools/using-ci-with-cli.md)
 ### [Custom templates](core/tools/custom-templates.md)
+### [Enable TAB completion](core/tools/enable-tab-autocomplete.md)
 ### [dotnet](core/tools/dotnet.md)
 ### [dotnet build](core/tools/dotnet-build.md)
 ### [dotnet build-server](core/tools/dotnet-build-server.md)

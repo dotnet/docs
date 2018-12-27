@@ -39,7 +39,7 @@ When you use Windows Identity Foundation (WIF) to secure the resources of a rely
     ```xml  
     <caches>  
       <sessionSecurityTokenCache type="MyCacheLibrary.MySharedSessionSecurityTokenCache, MyCacheLibrary">  
-        <!—optional child configuration elements, if implemented by the derived class -->  
+        <!--optional child configuration elements, if implemented by the derived class -->  
       </sessionSecurityTokenCache>  
     </caches>  
     ```  

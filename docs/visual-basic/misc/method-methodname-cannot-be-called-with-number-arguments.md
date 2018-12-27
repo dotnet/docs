@@ -1,11 +1,11 @@
 ---
-title: "Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments"
+title: "Method '&lt;methodname&gt;' cannot be called with &lt;number&gt; arguments"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNoMethodTakingXArguments2"
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
 ---
-# Method &#39;&lt;methodname&gt;&#39; cannot be called with &lt;number&gt; arguments
+# Method '&lt;methodname&gt;' cannot be called with &lt;number&gt; arguments
 A method call contains the wrong number of arguments.  
   
 ## To correct this error  

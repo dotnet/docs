@@ -284,15 +284,14 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
  The following code shows a C# enumeration class.  
   
-```  
+```csharp  
 public enum MyEnum  
 {  
-   first = 3,  
-   second = 4,  
-   third =5  
+  first = 3,  
+  second = 4,  
+  third =5  
+}  
 ```  
-  
- }  
   
  This class maps to the following schema by the `DataContractSerializer`. If enumeration values start from 1, `xs:annotation` blocks are not generated.  
   
@@ -343,7 +342,7 @@ public enum MyEnum
   
  For example, the following code flags an enumeration type.  
   
-```  
+```csharp  
 [Flags]  
 public enum AuthFlags  
 {    
@@ -396,7 +395,7 @@ rialization/">64</EnumerationValue>
   
  For example, the following code is a data contract.  
   
-```  
+```csharp  
 [DataContract]  
 public class Person  
 {  
@@ -613,7 +612,7 @@ public class Employee : Person
 ## Importing non-DataContract schemas  
  `DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).  
   
-```  
+```csharp  
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]  
 [System.Xml.Serialization.XmlSchemaProviderAttribute("ExportSchema")]  
 [System.Xml.Serialization.XmlRootAttribute(IsNullable=false)]  

@@ -116,7 +116,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
   - `linux-arm` (Linux distributions running on ARM like Raspberry Pi)
 - Red Hat Enterprise Linux
-  - `rhel-x64` (Alias for `linux-x64` for RHEL above version 6)
+  - `rhel-x64` (Superseded by `linux-x64` for RHEL above version 6)
   - `rhel.6-x64` (.NET Core 2.0 or later versions)
 - Tizen (.NET Core 2.0 or later versions)
   - `tizen`

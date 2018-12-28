@@ -27,11 +27,12 @@ In the following example, integers equal to 201 that are represented as decimal,
 [!code-csharp[Byte](../../../../samples/snippets/csharp/language-reference/keywords/numeric-literals.cs#Byte)]  
 
 > [!NOTE] 
-> You use the prefix `0x` or `0X` to denote a hexadecimal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
+> You use the prefix `0x` or `0X` to denote a hexadecimal literal, the prefix `0o` or `0O` to denote a octal literal and the prefix `0b` or `0B` to denote a binary literal. Decimal literals have no prefix.
 
 Starting with C# 7.0, a couple of features have been added to enhance readability. 
- - C# 7.0 allows the usage of the underscore character, `_`, as a digit separator.
- - C# 7.2 allows `_` to be used as a digit separator for a binary or hexadecimal literal, after the prefix. A decimal literal isn't permitted to have a leading underscore.
+ - C# 7.0 allows the usage of the underscore character, `_`, as a digit separator. Leading underscore isn't permitted only for a decimal literal. Because it becomes variable definiton. 
+ - C# 7.2 allows `_` to be used as a digit separator for a binary or hexadecimal literal, after the prefix. 
+ 
 
 Some examples are shown below.
 

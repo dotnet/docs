@@ -16,13 +16,13 @@ Enumerable collections provide better performance than arrays when you work with
 
 To enumerate directories and files, use methods that return an enumerable collection of their names, <xref:System.IO.DirectoryInfo>, <xref:System.IO.FileInfo>, or <xref:System.IO.FileSystemInfo>.  
   
-If you only want the names of directories or files, use the enumeration methods of the <xref:System.IO.Directory> class. If you want other properties of directories or files, use the <xref:System.IO.DirectoryInfo> and <xref:System.IO.FileSystemInfo> classes.  
+If you only want to search and return the names of directories or files, use the enumeration methods of the <xref:System.IO.Directory> class. If you want to search and return other properties of directories or files, use the <xref:System.IO.DirectoryInfo> and <xref:System.IO.FileSystemInfo> classes.  
   
-You can also use enumerable collections from these methods as the <xref:System.Collections.Generic.IEnumerable%601> parameter for constructors of collection classes like <xref:System.Collections.Generic.List%601>.  
+You can use enumerable collections from these methods as the <xref:System.Collections.Generic.IEnumerable%601> parameter for constructors of collection classes like <xref:System.Collections.Generic.List%601>.  
   
 The following table summarizes the methods that return enumerable collections:  
   
-|To return|Use method|  
+|To search and return|Use method|  
 |------------------|-------------------------------------|-------------------|  
 |Directory names|<xref:System.IO.Directory.EnumerateDirectories%2A?displayProperty=nameWithType>|  
 |Directory information (<xref:System.IO.DirectoryInfo>)|<xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType>|  
@@ -41,7 +41,7 @@ The following example uses the <xref:System.IO.Directory.EnumerateDirectories%28
      [!code-csharp[System.IO.EnumDirs1#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.enumdirs1/cs/program.cs#1)]
      [!code-vb[System.IO.EnumDirs1#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.enumdirs1/vb/program.vb#1)]  
   
-The following example uses the <xref:System.IO.Directory.EnumerateFiles%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29?displayProperty=nameWithType> method to search a directory and its subdirectories, and return the file names that match a specified pattern. 
+The following example uses the <xref:System.IO.Directory.EnumerateFiles%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29?displayProperty=nameWithType> method to search a directory and its subdirectories for a certain filename pattern, and returns the file names and paths. 
   
 ```csharp
 using System;
@@ -73,7 +73,7 @@ using System.IO;
     }
 ```
 
-The following example uses the <xref:System.IO.Directory.EnumerateFiles%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29?displayProperty=nameWithType> method to recursively enumerate all files in the specified directory and subdirectories that match a certain pattern. It then reads each line of each file and displays the lines, with their filenames, that contain the string "Microsoft".
+The following example uses the <xref:System.IO.Directory.EnumerateFiles%28System.String%2CSystem.String%2CSystem.IO.SearchOption%29?displayProperty=nameWithType> method to recursively enumerate all files in the specified directory and subdirectories that match a certain pattern. It then reads each line of each file and displays the lines, with their filenames and paths, that contain a specified string.
   
      [!code-csharp[System.IO.Directory.EnumerateFiles#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/cs/program.cs#1)]
      [!code-vb[System.IO.Directory.EnumerateFiles#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directory.enumeratefiles/vb/program.vb#1)]  

@@ -20,7 +20,7 @@ This topic demonstrates how to use I/O classes to synchronously copy the content
 
 For an example of asynchronous file copy, see [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md). 
 
-This example also copies subdirectories by setting `copySubDirs` to `true`. The method recursively copies subdirectories by calling itself on each subdirectory until there are no more to copy.  
+This example copies subdirectories by setting `copySubDirs` to `true`. The method recursively copies subdirectories by calling itself on each subdirectory until there are no more to copy.  
   
 ## Example  
  [!code-csharp[System.IO.Directory_Copy#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Directory_Copy/cs/program.cs#1)]

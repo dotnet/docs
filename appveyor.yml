@@ -16,7 +16,7 @@ install:
 build_script:
   # dotnet info
   - ps: dotnet --info
-  # Run dotnet new 
+  # Run dotnet new
   - ps: mkdir "test\test-dotnet-new" -Force | Push-Location
   - ps: dotnet new console -lang f#
   - ps: dotnet restore
@@ -25,5 +25,5 @@ build_script:
   - ps: Pop-Location
 
 
-test: off 
+test: off
 version: 0.0.1.{build}

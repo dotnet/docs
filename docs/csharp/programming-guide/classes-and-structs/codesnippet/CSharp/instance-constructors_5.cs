@@ -1,16 +1,16 @@
-        class CoOrds
+        class Coords
         {
             public int x, y;
 
             // Default constructor:
-            public CoOrds()
+            public Coords()
             {
                 x = 0;
                 y = 0;
             }
 
             // A constructor with two arguments:
-            public CoOrds(int x, int y)
+            public Coords(int x, int y)
             {
                 this.x = x;
                 this.y = y;
@@ -27,16 +27,16 @@
         {
             static void Main()
             {
-                CoOrds p1 = new CoOrds();
-                CoOrds p2 = new CoOrds(5, 3);
+                Coords p1 = new Coords();
+                Coords p2 = new Coords(5, 3);
 
                 // Display the results using the overriden ToString method:
-                Console.WriteLine("CoOrds #1 at {0}", p1);
-                Console.WriteLine("CoOrds #2 at {0}", p2);
+                Console.WriteLine("Coords #1 at {0}", p1);
+                Console.WriteLine("Coords #2 at {0}", p2);
                 Console.ReadKey();
             }
         }
         /* Output:
-         CoOrds #1 at (0,0)
-         CoOrds #2 at (5,3)        
+         Coords #1 at (0,0)
+         Coords #2 at (5,3)        
         */

@@ -207,7 +207,7 @@ As applications grow, it becomes increasingly important to factor out cross-cutt
 
 Figure 7-2 Request execution through filters and request pipeline.
 
-Filters are usually implemented as attributes, so you can apply them controllers or actions. When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
+Filters are usually implemented as attributes, so you can apply them to controllers or actions (or even globally). When added in this fashion, filters specified at the action level override or build upon filters specified at the controller level, which themselves override global filters. For example, the \[Route\] attribute can be used to build up routes between controllers and actions. Likewise, authorization can be configured at the controller level, and then overridden by individual actions, as the following sample demonstrates:
 
 ```csharp
 [Authorize]

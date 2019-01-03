@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
 ---
+
 # Develop ASP.NET Core MVC apps
 
 > "It's not important to get it right the first time. It's vitally important to get it right the last time."  
@@ -63,13 +64,13 @@ For web APIs, ASP.NET Core MVC supports [_content negotiation_](/aspnet/core/mvc
 > ### References – Mapping Requests to Responses
 >
 > - **Routing to Controller Actions**
-> <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
+ > <https://docs.microsoft.com/aspnet/core/mvc/controllers/routing>
 > - **Model Binding**
-> <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
+ > <https://docs.microsoft.com/aspnet/core/mvc/models/model-binding>
 > - **Model Validation**
-> <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
+ > <https://docs.microsoft.com/aspnet/core/mvc/models/validation>
 > - **Filters**
-> <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
+ > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 
 ## Working with dependencies
 
@@ -276,7 +277,7 @@ You can read more about implementing filters and download a working sample from 
 > - **Areas**  
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/areas>
 > - **MSDN Magazine – Feature Slices for ASP.NET Core MVC**  
- > <https://msdn.microsoft.com/magazine/mt763233.aspx>
+>   <https://msdn.microsoft.com/magazine/mt763233.aspx>
 > - **Filters**  
 >   <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 > - **MSDN – Real World ASP.NET Core MVC Filters**  
@@ -552,6 +553,5 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 > - **Introducing Azure Application Gateway**  
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
->[!div class="step-by-step"]
->[Previous](common-client-side-web-technologies.md)
->[Next](work-with-data-in-asp-net-core-apps.md)
+> [!div class="step-by-step"][previous](common-client-side-web-technologies.md)
+> [Next](work-with-data-in-asp-net-core-apps.md)

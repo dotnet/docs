@@ -91,7 +91,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- iI `initialCount` is 0, the event is created in a signaled state.  
+ If `initialCount` is 0, the event is created in a signaled state.  
   
  ]]></format>
         </remarks>

@@ -80,8 +80,8 @@
         <Parameter Name="rule" Type="System.Security.AccessControl.AuthorizationRule" />
       </Parameters>
       <Docs>
-        <param name="rule">The <see cref="T:System.Web.Configuration.AuthorizationRule" /> object to add to the collection.</param>
-        <summary>Adds an <see cref="T:System.Web.Configuration.AuthorizationRule" /> object to the collection.</summary>
+        <param name="rule">The <see cref="T:System.Security.AccessControl.AuthorizationRule" /> object to add to the collection.</param>
+        <summary>Adds an <see cref="T:System.Security.AccessControl.AuthorizationRule" /> object to the collection.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

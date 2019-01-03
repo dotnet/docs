@@ -2777,7 +2777,7 @@ If the `s` argument is not a day value only, it must include an hours and a minu
 
 ## Notes to callers  
    
-When a time interval component in the string to be parsed contains more than seven digits, parsing operations in the .NET Framework 3.5 and earlier versions may behave differently from parsing operations in the .NET Framework 4 and later versions. In some cases, parsing operations that succeed in the .NET Framework 3.5 and earlier versions may fail and throw an <see cref="T:System.OverflowException" /> in the .NET Framework 4 and later. In other cases, parsing operations that throw a <see cref="T:System.FormatException" /> in the .NET Framework 3.5 and earlier versions may fail and throw an <see cref="T:System.OverflowException" /> in the .NET Framework 4 and later. The following example illustrates both scenarios.  
+When a time interval component in the string to be parsed contains more than seven digits, parsing operations in the .NET Framework 3.5 and earlier versions may behave differently from parsing operations in the .NET Framework 4 and later versions. In some cases, parsing operations that succeed in the .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in the .NET Framework 4 and later. In other cases, parsing operations that throw a <xref:System.FormatException> in the .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in the .NET Framework 4 and later. The following example illustrates both scenarios.  
   
 [!code-csharp[System.TimeSpan.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.parse/cs/parsefailure1.cs#3)]
 [!code-vb[System.TimeSpan.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parse/vb/parsefailure1.vb#3)]
@@ -2913,7 +2913,7 @@ If the `input` argument is not a day value only, it must include an hours and a 
   
 ## Notes to callers  
    
-When a time interval component in the string to be parsed contains more than seven digits, parsing operations in the .NET Framework 3.5 and earlier versions may behave differently from parsing operations in the .NET Framework 4 and later versions. In some cases, parsing operations that succeed in the .NET Framework 3.5 and earlier versions may fail and throw an <see cref="T:System.OverflowException" /> in the .NET Framework 4 and later. In other cases, parsing operations that throw a <see cref="T:System.FormatException" /> in the .NET Framework 3.5 and earlier versions may fail and throw an <see cref="T:System.OverflowException" /> in the .NET Framework 4 and later. The following example illustrates both scenarios.  
+When a time interval component in the string to be parsed contains more than seven digits, parsing operations in the .NET Framework 3.5 and earlier versions may behave differently from parsing operations in the .NET Framework 4 and later versions. In some cases, parsing operations that succeed in the .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in the .NET Framework 4 and later. In other cases, parsing operations that throw a <xref:System.FormatException> in the .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in the .NET Framework 4 and later. The following example illustrates both scenarios.  
    
 [!code-csharp[System.TimeSpan.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.timespan.parse/cs/parsefailure1.cs#3)]
 [!code-vb[System.TimeSpan.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.timespan.parse/vb/parsefailure1.vb#3)]
@@ -4577,7 +4577,7 @@ When a time interval component in the string to be parsed contains more than sev
 
 ## Notes to callers
 
-In some cases, when a time interval component in the string to be parsed contains more than seven digits, parsing operations that succeed in the .NET Framework 3.5 and earlier versions may fail and throw an <see cref="T:System.OverflowException" /> in the .NET Framework 4 and later versions. The following example illustrates this scenario.  
+In some cases, when a time interval component in the string to be parsed contains more than seven digits, parsing operations that succeed in the .NET Framework 3.5 and earlier versions may fail and throw an <xref:System.OverflowException> in the .NET Framework 4 and later versions. The following example illustrates this scenario.  
 [!code-csharp[System.TimeSpan.TryParse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeSpan.TryParse/cs/tryparsefailure1.cs#3)]
 [!code-vb[System.TimeSpan.TryParse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeSpan.TryParse/vb/tryparsefailure1.vb#3)]
   

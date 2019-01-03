@@ -25,7 +25,7 @@ A `Host` (base class implementing `IHost`), however, is something new in .NET Co
 
 Therefore, you can choose and either create a specialized host-process with IHost to handle the hosted services and nothing else, such a microservice made just for hosting the `IHostedServices`, or you can alternatively extend an existing ASP.NET Core `WebHost`, such as an existing ASP.NET Core Web API or MVC app. 
 
-Each approach has pros and cons depending on your business and scalability needs. The bottom line is basically that if your background tasks have nothing to do with HTTP (IWebHost) you should use IHost (with .NET Core 2.1).
+Each approach has pros and cons depending on your business and scalability needs. The bottom line is basically that if your background tasks have nothing to do with HTTP (IWebHost) you should use IHost (with .NET Core 2.1 and above).
 
 ## Registering hosted services in your WebHost or Host
 
@@ -41,7 +41,7 @@ SignalR is one example of an artifact using hosted services, but you can also us
 
 You can basically offload any of those actions to a background task based on IHostedService.
 
-The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the standard DI (dependency injection) in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost. 
+The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the standard DI (dependency injection) in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost. 
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -99,7 +99,7 @@ However, since most background tasks will have similar needs in regard to the ca
 
 That class provides the main work needed to set up the background task.
 
-The next code is the abstract BackgroundService base class as implemented in .NET Core 2.1.
+The next code is the abstract BackgroundService base class as implemented in .NET Core 2.1(and above).
 
 ```csharp
 // Copyright (c) .NET Foundation. Licensed under the Apache License, Version 2.0. 

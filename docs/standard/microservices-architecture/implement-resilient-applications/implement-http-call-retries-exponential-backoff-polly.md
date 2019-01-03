@@ -18,7 +18,7 @@ The following steps show how you can use Http retries with Polly integrated into
 
 **Reference the ASP.NET Core 2.1 packages**
 
-Your project has to be using the ASP.NET Core 2.1 packages from NuGet. You typically need the `AspNetCore` metapackage, and the extension package `Microsoft.Extensions.Http.Polly`.
+Your project has to be using the ASP.NET Core 2.1(or above) packages from NuGet. You typically need the `AspNetCore` metapackage, and the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly’s Retry policy, in Startup**
 

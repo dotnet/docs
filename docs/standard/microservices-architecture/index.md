@@ -9,7 +9,7 @@ ms.date: 08/31/2018
 
 ![Book cover](./media/cover-small.png)
 
-**EDITION v2.1.02** - Updated to ASP.NET Core 2.1
+**EDITION v2.2.00** - Updated to ASP.NET Core 2.2
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
 
@@ -43,7 +43,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET Core 2.1** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.1. That’s why the book version has also been updated to version **2.1**. 
+This guide has been revised to cover **.NET Core 2.2** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.2. That’s why the book version has also been updated to version **2.2**. 
 
 ## What this guide does not cover
 
@@ -118,6 +118,8 @@ Participants and reviewers:
 >
 > **Scott Hunter**, Partner Director PM, .NET team, Microsoft
 >
+> **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+>
 > **Dylan Reisenberger**, Architect and Dev Lead at Polly
 >
 > **Steve Smith**, Software Craftsman & Trainer at ASPSmith Ltd.
@@ -141,7 +143,6 @@ Participants and reviewers:
 > **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
 >
 > **Miguel Veloso**, Sr. Consultant at Turing Challenge
-
 
 ## Copyright
 

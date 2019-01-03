@@ -148,7 +148,7 @@ Until this point, the code shown is just performing regular Http requests, but t
 
 ## Additional resources
 
--   **Using HttpClientFactory in .NET Core 2.1**
+-   **Using HttpClientFactory in .NET Core 2.1(and above)**
     [*https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
 
 

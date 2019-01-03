@@ -18,7 +18,7 @@ A well-designed app handles exceptions and errors to prevent app crashes. This s
 
 Use `try`/`catch` blocks around code that can potentially generate an exception ***and*** your code can recover from that exception. In `catch` blocks, always order exceptions from the most derived to the least derived. All exceptions derive from <xref:System.Exception>. More derived exceptions are not handled by a catch clause that is preceded by a catch clause for a base exception class. When your code cannot recover from an exception, don't catch that exception. Enable methods further up the call stack to recover if possible.
 
-Clean up resources allocated with either `using` statements, or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` claus is almost always executed even when exceptions are thrown.
+Clean up resources allocated with either `using` statements, or `finally` blocks. Prefer `using` statements to automatically clean up resources when exceptions are thrown. Use `finally` blocks to clean up resources that don't implement <xref:System.IDisposable>. Code in a `finally` clause is almost always executed even when exceptions are thrown.
 
 ## Handle common conditions without throwing exceptions
 

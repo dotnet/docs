@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <param name="item">The read item, or a default value if no item could be read.</param>
-        <summary>Attempts to read an item to the channel.</summary>
+        <summary>Attempts to read an item from the channel.</summary>
         <returns>
           <see langword="true" /> if an item was read; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

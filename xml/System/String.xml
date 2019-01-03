@@ -4654,7 +4654,7 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/en-us/dow
    
   
 ## Examples  
- The following example demonstrates the <xref:System.String.Equals%2A> method.It compares the title-cased word "File" with an equivalent word, its lowercase equivalent, its uppercase equivalent, and a word that contains LATIN SMALL LETTER DOTLESS I (U+0131) instead of LATIN SMALL LETTER I (U+0069). Because the <xref:System.String.Equals%28System.String%29> method performs an ordinal comparison, only the comparison with an identical word returns `true`.  
+ The following example demonstrates the <xref:System.String.Equals%2A> method. It compares the title-cased word "File" with an equivalent word, its lowercase equivalent, its uppercase equivalent, and a word that contains LATIN SMALL LETTER DOTLESS I (U+0131) instead of LATIN SMALL LETTER I (U+0069). Because the <xref:System.String.Equals%28System.String%29> method performs an ordinal comparison, only the comparison with an identical word returns `true`.  
   
  [!code-csharp[System.String.Equals#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/equalsex1.cs#2)]
  [!code-vb[System.String.Equals#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/equalsex1.vb#2)]  

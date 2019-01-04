@@ -36,10 +36,9 @@ public class CalculatorService : ICalculator
 
   <bindings>
     <wsHttpBinding>
-     <!--
-     <!--This configuration defines the security mode as Message and-->
-     <!--the clientCredentialType as None. This mode provides -- >
-     <!--server authentication only using the service certificate.-->
+     <!-- This configuration defines the security mode as Message and -->
+     <!-- the clientCredentialType as None. This mode provides -->
+     <!-- server authentication only using the service certificate. -->
 
      <binding>
        <security mode="Message">

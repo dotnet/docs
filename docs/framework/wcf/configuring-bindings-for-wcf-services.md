@@ -43,7 +43,7 @@ When creating an application, you often want to defer decisions to the administr
   
 ```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
-  <!—- This section is optional with the default configuration introduced  
+  <!-- This section is optional with the default configuration introduced  
        in .NET Framework 4. -->  
   <endpoint   
       address="/HelloWorld2/"  

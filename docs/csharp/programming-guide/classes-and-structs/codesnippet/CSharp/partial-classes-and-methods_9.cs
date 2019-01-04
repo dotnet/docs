@@ -1,34 +1,34 @@
-        public partial class CoOrds
+        public partial class Coords
         {
             private int x;
             private int y;
 
-            public CoOrds(int x, int y)
+            public Coords(int x, int y)
             {
                 this.x = x;
                 this.y = y;
             }
         }
 
-        public partial class CoOrds
+        public partial class Coords
         {
-            public void PrintCoOrds()
+            public void PrintCoords()
             {
-                Console.WriteLine("CoOrds: {0},{1}", x, y);
+                Console.WriteLine("Coords: {0},{1}", x, y);
             }
 
         }
 
-        class TestCoOrds
+        class TestCoords
         {
             static void Main()
             {
-                CoOrds myCoOrds = new CoOrds(10, 15);
-                myCoOrds.PrintCoOrds();
+                Coords myCoords = new Coords(10, 15);
+                myCoords.PrintCoords();
 
                 // Keep the console window open in debug mode.
                 Console.WriteLine("Press any key to exit.");
                 Console.ReadKey();
             }
         }
-        // Output: CoOrds: 10,15
+        // Output: Coords: 10,15

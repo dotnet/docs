@@ -64,7 +64,7 @@ items:
 - title: Importing a single class
   durationInMinutes: 2
   content: |
-    You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
+    If you repeatedly use a class' static methods throughout your code, including the class name each time obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even though only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
 
     [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#UsingStatic)]  
     

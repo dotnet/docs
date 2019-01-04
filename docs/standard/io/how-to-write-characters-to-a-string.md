@@ -1,6 +1,6 @@
 ---
 title: "How to: Write Characters to a String"
-ms.date: "03/30/2017"
+ms.date: "01/03/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -14,17 +14,17 @@ ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# How to: Write Characters to a String
+# How to: Write characters to a string
 The following code examples write characters synchronously and asynchronously from a character array into a string.  
   
-## Example  
- The following example writes 5 characters synchronously from an array to a string.  
+## Example: Write characters synchronously in a console app  
+ The following example writes five characters synchronously from an array to a string.  
   
  [!code-csharp[Conceptual.StringBuilder#9](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/example2.cs#9)]
  [!code-vb[Conceptual.StringBuilder#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/example2.vb#9)]  
   
-## Example  
- The next example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. It then asynchronously writes each letter or white space character on a separate line followed by a line break to a <xref:System.Windows.Controls.TextBlock> control.  
+## Example: Write characters asynchronously in a WPF app 
+ The next example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. It then asynchronously writes each letter or white space character, followed by a line break, to a <xref:System.Windows.Controls.TextBlock> control.  
   
  [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source2.cs#2)]
  [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source2.vb#2)]  
@@ -34,11 +34,11 @@ The following code examples write characters synchronously and asynchronously fr
 - <xref:System.IO.StringWriter>  
 - <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>  
 - <xref:System.Text.StringBuilder>  
-- [File and Stream I/O](../../../docs/standard/io/index.md)  
-- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)
+- [File and stream I/O](../../../docs/standard/io/index.md)  
+- [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
+- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
+- [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- [How to: Read characters from a string](../../../docs/standard/io/how-to-read-characters-from-a-string.md)

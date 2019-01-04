@@ -36,7 +36,7 @@ public class Student
 }
 ```
 
-This feature enables true language support for creating immutable types and using the more concise and convenient auto-property syntax.
+This feature enables true language support for creating immutable types and uses the more concise and convenient auto-property syntax.
 
 If adding this syntax doesn't remove an accessible method, it's a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
 

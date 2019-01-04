@@ -68,7 +68,7 @@ items:
 
     [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#UsingStatic)]  
     
-    The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the `string` class or the <xref:System.Math?displayProperty=nameWithType> class.
+    The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the [`string`](xref:System.String) class or the <xref:System.Math?displayProperty=nameWithType> class.
 
 - title: A better string format
   durationInMinutes: 2

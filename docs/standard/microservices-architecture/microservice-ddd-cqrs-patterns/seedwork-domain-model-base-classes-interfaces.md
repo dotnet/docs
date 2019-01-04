@@ -19,7 +19,7 @@ This is the type of copy and paste reuse that many developers share between proj
 
 ## The custom Entity base class
 
-The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/equality-comparison-operator), a domain event list per entity, etc.
+The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](~/docs/csharp/language-reference/operators/equality-comparison-operator.md), a domain event list per entity, etc.
 
 ```csharp
 // COMPATIBLE WITH ENTITY FRAMEWORK CORE (1.1 and later)

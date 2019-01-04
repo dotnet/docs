@@ -6,7 +6,7 @@ ms.date: 12/12/2018
 
 # What's New in C# 6
 
-The 6.0 release of C# contained many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive, write more readable code. You can concentrate more on your features than on the constructs of the language.
+The 6.0 release of C# contains many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive, write more readable code. You can concentrate more on your features than on the constructs of the language.
 
 The rest of this article provides an overview of each of these features, with a link to explore each feature. You can explore the features in an [interactive tutorial on C# 6](../tutorials/exploration/csharp-6.yml) in the tutorials section.
 
@@ -66,7 +66,7 @@ The *using static* enhancement enables you to import the static methods of a sin
 
 [!code-csharp[UsingStaticMath](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStaticMath)]
 
-The <xref:System.Math>does not contain any instance methods. You can also use `using static` to import a class' static methods for a class that has both static and instance methods. One of the most useful examples is <xref:System.String>:
+The <xref:System.Math> does not contain any instance methods. You can also use `using static` to import a class' static methods for a class that has both static and instance methods. One of the most useful examples is <xref:System.String>:
 
 [!code-csharp[UsingStatic](../../../samples/snippets/csharp/new-in-6/newcode.cs#UsingStatic)]
 
@@ -89,14 +89,11 @@ The *null conditional operator* makes null checks much easier and fluid. Replace
 
 In the preceding example, the variable `first` is assigned `null` if the person object is `null`. Otherwise, it gets assigned the value of the `FirstName` property. Most importantly, the `?.` means that this line of code doesn't generate a `NullReferenceException` when the `person` variable is `null`. Instead, it short-circuits and produces `null`. You can also use a null conditional operator for array or indexer access. Replace `[]` with `?[]` in the index expression.
 
-This expression returns a `string`, regardless of the value of `person`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
-
-You often use this construct with the *null coalescing* operator to assign default values when one of the properties is `null`:
+This expression returns a `string`, regardless of the value of `person`. You often use this construct with the *null coalescing* operator to assign default values when one of the properties is `null`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
 
 [!code-csharp[NullCoalescing](../../../samples/snippets/csharp/new-in-6/program.cs#NullCoalescing)]
 
-You can also use `?.` to conditionally invoke methods. The most common use of member functions  with the null conditional operator is to safely invoke delegates (or event handlers) that may be `null`.  You'll call the delegate's `Invoke` method using the `?.` operator to access the member. You can see an example in the  
-[delegate patterns](../delegates-patterns.md#handling-null-delegates) article.
+You can also use `?.` to conditionally invoke methods. The most common use of member functions  with the null conditional operator is to safely invoke delegates (or event handlers) that may be `null`.  You'll call the delegate's `Invoke` method using the `?.` operator to access the member. You can see an example in the [delegate patterns](../delegates-patterns.md#handling-null-delegates) article.
 
 The rules of the `?.` operator ensure that the left-hand side of the operator is evaluated only once. It enables many idioms, including the following example using event handlers:
 
@@ -147,7 +144,7 @@ Another use is with XAML-based applications that implement the `INotifyPropertyC
 
 ## Await in Catch and Finally blocks
 
-C# 5 had several limitations around where you could place `await` expressions. You can now use `await` in `catch` or `finally` expressions.  With C# 6, you can also await in catch expressions. This is most often used with logging scenarios:
+C# 5 had several limitations around where you could place `await` expressions. With C# 6, you can now use `await` in `catch` or `finally` expressions. This is most often used with logging scenarios:
 
 [!code-csharp[AwaitFinally](../../../samples/snippets/csharp/new-in-6/NetworkClient.cs#AwaitFinally)]
 

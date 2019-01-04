@@ -11,7 +11,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial lets you explore C# 6 interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 6 features. The rest of this article provides an overview of each of these features, with a link to explore each feature. You can read about the features in the [What's new in C# 6](../../whats-new/csharp-6.md) article in the "What's new" section.
+    This tutorial lets you explore C# 6 interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that modify earlier C# practices to use newer, more concise C# 6 features. The rest of this article provides an overview of each of these features, with a link to explore each feature.
 
 - title: Read-only auto-properties enable read-only types
   durationInMinutes: 2
@@ -21,12 +21,12 @@ items:
     [!code-csharp[Starter](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs)]  
 
         
-     Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see the error. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be read-only. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a read-only auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
+     Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see what the code does. `AllCaps` has the undesirable side effect of modifying the property values along with returning the uppercase string. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be read-only. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a read-only auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
 
     ```csharp
     public string AllCaps()
     {
-      return FirstName.ToUpper() + " " + LastName.ToUpper();
+      return ToString().ToUpper();
     }
     ```
 
@@ -37,7 +37,7 @@ items:
   content: |
     New syntax in C# 6 enables you to use initializers for auto-properties. This becomes more important as classes grow new capabilities. Add a middle name property, and a new constructor that takes three strings to your `Person` class:
 
-    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#MiddleName)]  
+    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#MiddleName)]  
 
     The assignment on the `MiddleName` property is an initializer. It initializes the compiler-generated backing field for the middle name.
 
@@ -66,7 +66,7 @@ items:
   content: |
     You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
 
-    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#UsingStatic)]  
+    [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#UsingStatic)]  
     
     The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the `string` class or the <xref:System.Math?displayProperty=nameWithType> class.
 
@@ -75,15 +75,15 @@ items:
   content: |
     C# 6 contains new syntax for composing strings from a string and embedded expressions that are evaluated to produce other string values. You can change the `ToString` and `AllCaps` methods to use this syntax:
 
-    [!code-csharp[StringInterpolation](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#StringInterpolation)]  
+    [!code-csharp[StringInterpolation](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#StringInterpolation)]  
 
     Instead of positional arguments between the `{` and `}`, you write C# expressions directly. You can do the same in the `Main` method. Replace the existing code with the following:
 
-    [!code-csharp[InterpolationMain](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#InterpolationMain)]  
+    [!code-csharp[InterpolationMain](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#InterpolationMain)]  
 
-    You're not limited to a single variable in these expressions. Let's start with a new example and modify it to demonstrate. Paste the following code into the interactive window in the `Main` method:
+    You're not limited to a single variable in these expressions. Let's start with a new example and modify it to demonstrate other expressions you can use with string interpolation. Paste the following code into the interactive window in the `Main` method:
 
-    [!code-csharp[Phrases](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs#Phrases)]  
+    [!code-csharp[Phrases](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#Phrases)]  
     
     You can remove the local variable `average` and perform that calculation as part of the interpolated string expression. Replace the last two lines with the following:
 
@@ -91,7 +91,7 @@ items:
     WriteLine($"The average word length is: {wordLength.Average()}");
     ```
 
-    Running the preceding example, you would find that the output for `Average()` has more decimal places than you would like. The string interpolation syntax supports all the format strings available using earlier formatting methods. You specify the format string inside the braces. Add a `:` following the expression to format:
+    Running the preceding example, you would find that the output for `Average` has more decimal places than you would like. The string interpolation syntax supports all the format strings available using earlier formatting methods. You specify the format string inside the braces. Add a `:` following the expression to format:
 
     ```csharp
     WriteLine($"The average word length is: {wordLength.Average():F2}");
@@ -115,20 +115,20 @@ items:
    }
    ```
 
-   It throws a <xref:System.NullReferenceException>. Change the `.` member access to the **null conditional operator**:
+   It throws a <xref:System.NullReferenceException> when you run the sample. Change the `.` member access to the **null conditional operator**:
 
    ```csharp
    Console.WriteLine(s?.Length);
    ``` 
 
-   After this change, there's no output. That's because the result of `s?.Length` is a `int?` whose value in this example is `null`.  The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
+   After this change, there's no output. That's because the result of `s?.Length` is a `int?` where the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
 
     ```csharp
     char? c = s?[0];
     Console.WriteLine(c.HasValue);
     ```
 
-    The null conditional operator composes, making it easy to avoid nested if clauses to access members of members. For example, try the following code in the interactive window:
+    Multiple conditional operators can be combined into a single expression. A `null` left operand produces a `null` result, making it easy to avoid nested if clauses to access members of members. For example, try the following code in the interactive window:
 
     ```csharp
     string s = null;
@@ -148,7 +148,7 @@ items:
 - title: Exception filers
   durationInMinutes: 2
   content: |
-    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions and always returns false. Try the following code in the interactive window: It logs the exception type and message to the console. It returns false which indicates that the exception can't be handled. Try the program in the interactive window.
+    Exception filters enable you to catch an exception based on some condition. A typical use is to create a filter method that logs exceptions, but never handles those exceptions. An exception filter is a boolean expression that is `true` when the `catch` clause should be executed, and `false` when the exception should not be caught by the `catch` clause. Try the following code in the interactive window: It logs the exception type and message to the console. It returns false which indicates that the exception can't be handled. Try the program in the interactive window.
 
     ```csharp
     using System;
@@ -162,8 +162,6 @@ items:
                 string s = null;
                 Console.WriteLine(s.Length);
 
-                bool? hasMore = s?.ToCharArray()?.GetEnumerator()?.MoveNext();
-                Console.WriteLine(hasMore.HasValue);
             } catch (Exception e) when (LogException(e))
             {
             }

@@ -9,6 +9,10 @@ ms.assetid: c58f3db5-d7d4-4651-bd2d-5a3a97357f61
 ---
 # Object and Collection Initializers (C# Programming Guide)
 
+C# lets you instantiate an object or collection and perform member assignments in a single statement.
+
+## Object initializers
+
 Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax).  The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the default constructor. Note the use of auto-implemented properties in the `Cat` class. For more information, see [Auto-Implemented Properties](auto-implemented-properties.md).  
   
 [!code-csharp[ObjectInitializer1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#CatDeclaration)]  
@@ -90,7 +94,7 @@ You can specify [null](../../language-reference/keywords/null.md) as an element 
   
 [!code-csharp[ListInitializerNull](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#ListInitialerWithNull)]  
   
- You can specify indexed elements if the collection supports indexing.
+ You can specify indexed elements if the collection supports read / write indexing.
   
 [!code-csharp[DictionaryInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#DictionaryIndexerInitializer)]  
 

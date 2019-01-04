@@ -12,7 +12,7 @@ A <xref:System.Collections.Generic.Dictionary%602> contains a collection of key/
 
 ## Example
 
-In the following code example, a <xref:System.Collections.Generic.Dictionary%602> is initialized with instances of type `StudentName`.  The first initialization uses the `Add` method with two arguments. The second uses the indexer method of the `Dictionary` class:
+In the following code example, a <xref:System.Collections.Generic.Dictionary%602> is initialized with instances of type `StudentName`.  The first initialization uses the `Add` method with two arguments. The compiler generates a call to `Add` for each of the pairs of `int` keys and `StudentName` values. The second uses a public read / write indexer method of the `Dictionary` class:
 
 [!code-csharp-interactive[InitializerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/HowToDictionaryInitializer.cs#HowToDictionaryInitializer)]  
 

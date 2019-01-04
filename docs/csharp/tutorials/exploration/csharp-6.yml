@@ -100,7 +100,7 @@ items:
 - title: Quick and easy null checks
   durationInMinutes: 2
   content: |
-   The `?.` operator makes it easier to write logic that takes `null` values into account seamlessly, without extra `if` checks. To explore the feature, start by copying the following code into the interactive window to try it:
+   The `?.` (null conditional) operator makes it easier to write logic that takes `null` values into account seamlessly, without extra `if` checks. To explore the feature, start by copying the following code into the interactive window to try it:
 
    ```csharp
    using System;

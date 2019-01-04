@@ -179,7 +179,7 @@ items:
     }
     ```
 
-    You should have seen the message from the log method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
+    You should sen the message from the `LogException` method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
 
     Beyond logging scenarios, exception filters can be most useful when a property of the exception determines what action to take. Consider looking inside an <xref:System.AggregateException> to see what the contained exceptions are.
 

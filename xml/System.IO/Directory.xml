@@ -1821,7 +1821,7 @@ Directory::CreateDirectory("Public\\Html");
       <Parameters />
       <Docs>
         <summary>Gets the current working directory of the application.</summary>
-        <returns>A string that contains the path of the current working directory, and does not end with a backslash (\\).</returns>
+        <returns>A string that contains the absolute path of the current working directory, and does not end with a backslash (\\).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

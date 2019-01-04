@@ -47,7 +47,7 @@ items:
     Expression-bodied members provide a lightweight syntax for lightweight methods. The `Person` class has two great candidates. Look at the declaration of `ToString`:
 
     ```csharp
-    public overvide string ToString()
+    public override string ToString()
     {
         return FirstName + " " + LastName;
     }
@@ -64,11 +64,11 @@ items:
 - title: Importing a single class
   durationInMinutes: 2
   content: |
-    You may use a class' static methods throughout our code. Repeatedly typing the class name obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even those only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
+    If you repeatedly use a class' static methods throughout your code, including the class name each time obscures the meaning of your code. The `Person` class currently imports the `System` namespace, even though only <xref:System.Console?displayProperty=nameWithType> is used. Modify the `using` statement as follows:
 
     [!code-csharp[MiddleName](../../../../samples/csharp/tutorials/exploration/csharp6-finished/Program.cs#UsingStatic)]  
     
-    The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the `string` class or the <xref:System.Math?displayProperty=nameWithType> class.
+    The `static using` statement becomes more useful in larger programs that make extensive use of a single class with many static methods, like the [`string`](xref:System.String) class or the <xref:System.Math?displayProperty=nameWithType> class.
 
 - title: A better string format
   durationInMinutes: 2
@@ -100,7 +100,7 @@ items:
 - title: Quick and easy null checks
   durationInMinutes: 2
   content: |
-   The `?.` operator makes it easier to write logic that takes `null` values into account seamlessly, without extra `if` checks. To explore the feature, start by copying the following code into the interactive window to try it:
+   The `?.` (null conditional) operator makes it easier to write logic that takes `null` values into account seamlessly, without extra `if` checks. To explore the feature, start by copying the following code into the interactive window to try it:
 
    ```csharp
    using System;
@@ -115,13 +115,13 @@ items:
    }
    ```
 
-   It throws a <xref:System.NullReferenceException> when you run the sample. Change the `.` member access to the **null conditional operator**:
+   It throws a <xref:System.NullReferenceException> when you run the sample. Change the `.` member access operator to the **null conditional operator**:
 
    ```csharp
    Console.WriteLine(s?.Length);
    ``` 
 
-   After this change, there's no output. That's because the result of `s?.Length` is a `int?` where the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
+   After this change, there's no output. That's because the result of `s?.Length` is a `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
 
     ```csharp
     char? c = s?[0];
@@ -177,9 +177,9 @@ items:
     }
     ```
 
-    You should have seen the message from the log method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
+    You should sen the message from the `LogException` method, followed by the default exception message. Just to experiment, change the `return false` statement to `return true` and run this again. Now, the exception is caught and the program runs to completion.
 
-    Beyond logging scenarios, exception filters can be most useful when a property of the exception determines what action to take. Consider looking inside an <xref:System.AggregateException> to see what the contained exceptions are.
+    Beyond logging scenarios, exception filters can be most useful when a property of the exception determines what action to take. For example, you can look inside an <xref:System.AggregateException> to see what the contained exceptions are and take some appropriate action depending on the specific exception.
 
 - title: Using nameof
   durationInMinutes: 2
@@ -220,7 +220,7 @@ items:
     Console.WriteLine(messages[302]);
     ```
 
-    You can extend this syntax to any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method.  Try the following sample in the interactive window. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. It also combines other techniques already demonstrated in this tutorial such as expression bodied members, and string interpolation. 
+    You can extend this syntax to any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method.  Try the following sample in the interactive window. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. It also combines other techniques already demonstrated in this tutorial, such as expression-bodied members and string interpolation. 
 
     In the `Main` method, you initialize a path by providing coordinates for the points. Those points are added to the collection through the `Add` method.
 

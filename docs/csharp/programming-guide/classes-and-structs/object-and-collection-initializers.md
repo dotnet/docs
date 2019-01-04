@@ -69,7 +69,7 @@ When this query is executed, the `productInfos` variable will contain a sequence
 foreach(var p in productInfos){...}  
 ```
 
-Each object in the new anonymous type has two public properties which receive the same names as the properties or fields in the original object. You can also rename a field when you are creating an anonymous type; the following example renames the `UnitPrice` field to `Price`.  
+Each object in the new anonymous type has two public properties that receive the same names as the properties or fields in the original object. You can also rename a field when you are creating an anonymous type; the following example renames the `UnitPrice` field to `Price`.  
 
 ```csharp
 select new {p.ProductName, Price = p.UnitPrice};  
@@ -77,7 +77,7 @@ select new {p.ProductName, Price = p.UnitPrice};
 
 ## Collection initializers
 
-Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression or an object initializer. By using a collection initializer, you do not have to specify multiple calls to the `Add` method of the class in your source code; the compiler adds the calls.  
+Collection initializers let you specify one or more element initializers when you initialize a collection type that implements <xref:System.Collections.IEnumerable> and has `Add` with the appropriate signature as an instance method or an extension method. The element initializers can be a simple value, an expression, or an object initializer. By using a collection initializer, you do not have to specify multiple calls; the compiler adds the calls automatically.  
   
 The following example shows two simple collection initializers:  
 
@@ -102,7 +102,7 @@ The preceding sample generates code that calls the <xref:System.Collections.Gene
 
 [!code-csharp[DictionaryAddInitializer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#DictionaryAddInitializer)]  
 
-This initializer example calls <xref:System.Collections.Generic.Dictionary%602.Add(%600,%601)> to add the three items into the dictionary. These two different ways to initialize associative collections have slightly different behavior because of the methods calls the compiler generates. Both variants work with the `Dictionary` class. Other types may only support one or the other based on their public API.
+This initializer example calls <xref:System.Collections.Generic.Dictionary%602.Add(%600,%601)> to add the three items into the dictionary. These two different ways to initialize associative collections have slightly different behavior because of the method calls the compiler generates. Both variants work with the `Dictionary` class. Other types may only support one or the other based on their public API.
 
 ## Examples
 
@@ -110,11 +110,11 @@ The following example combines the concepts of object and collection initializer
 
 [!code-csharp-interactive[InitializerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullExample)]  
 
-Shown in the following example, an object which implements <xref:System.Collections.IEnumerable> containing an `Add` method with multiple parameters allows for collection initializers with multiple elements per item in the list corresponding to the signature of the `Add` method.
+The following example shows an object that implements <xref:System.Collections.IEnumerable> and contains an `Add` method with multiple parameters, It uses a collection initializer with multiple elements per item in the list that correspond to the signature of the `Add` method.
 
 [!code-csharp-interactive[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullListExample)]  
 
-`Add` methods can use the `params` keyword to take a variable number of arguments as shown in the following example. This example demonstrates the custom implementation of an indexer as well to initialize a collection using indexes.
+`Add` methods can use the `params` keyword to take a variable number of arguments, as shown in the following example. This example also demonstrates the custom implementation of an indexer to initialize a collection using indexes.
 
 [!code-csharp-interactive[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullDictionaryInitializer)]  
 

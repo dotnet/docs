@@ -6,9 +6,9 @@ ms.date: 12/12/2018
 
 # What's New in C# 6
 
-The 6.0 release of C# contains many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive, write more readable code. You can concentrate more on your features than on the constructs of the language.
+The 6.0 release of C# contained many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive and write more readable code. You can concentrate more on your features than on the constructs of the language.
 
-The rest of this article provides an overview of each of these features, with a link to explore each feature. You can explore the features in an [interactive tutorial on C# 6](../tutorials/exploration/csharp-6.yml) in the tutorials section.
+The rest of this article provides an overview of each of these features, with a link to explore each feature. You can also explore the features in an [interactive tutorial on C# 6](../tutorials/exploration/csharp-6.yml) in the tutorials section.
 
 ## Read-only auto-properties
 
@@ -36,7 +36,7 @@ public class Student
 }
 ```
 
-This feature enables true language support for creating immutable types and using the more concise and convenient auto-property syntax.
+This feature enables true language support for creating immutable types and uses the more concise and convenient auto-property syntax.
 
 If adding this syntax doesn't remove an accessible method, it's a [binary compatible change](version-update-considerations.md#binary-compatible-changes).
 
@@ -46,7 +46,7 @@ If adding this syntax doesn't remove an accessible method, it's a [binary compat
 
 [!code-csharp[Initialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#Initialization)]
 
-The `Grades` member is initialized where it's declared. That makes it easier to perform the initialization exactly once. The initialization is part of the property declaration, making it easier to equate the storage allocation with public interface for `Student` objects.
+The `Grades` member is initialized where it's declared. That makes it easier to perform the initialization exactly once. The initialization is part of the property declaration, making it easier to equate the storage allocation with the public interface for `Student` objects.
 
 ## Expression-bodied function members
 
@@ -87,9 +87,9 @@ The *null conditional operator* makes null checks much easier and fluid. Replace
 
 [!code-csharp[NullConditional](../../../samples/snippets/csharp/new-in-6/program.cs#NullConditional)]
 
-In the preceding example, the variable `first` is assigned `null` if the person object is `null`. Otherwise, it gets assigned the value of the `FirstName` property. Most importantly, the `?.` means that this line of code doesn't generate a `NullReferenceException` when the `person` variable is `null`. Instead, it short-circuits and produces `null`. You can also use a null conditional operator for array or indexer access. Replace `[]` with `?[]` in the index expression.
+In the preceding example, the variable `first` is assigned `null` if the person object is `null`. Otherwise, it is assigned the value of the `FirstName` property. Most importantly, the `?.` means that this line of code doesn't generate a `NullReferenceException` if the `person` variable is `null`. Instead, it short-circuits and returns `null`. You can also use a null conditional operator for array or indexer access. Replace `[]` with `?[]` in the index expression.
 
-This expression returns a `string`, regardless of the value of `person`. You often use this construct with the *null coalescing* operator to assign default values when one of the properties is `null`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
+The following expression returns a `string`, regardless of the value of `person`. You often use this construct with the *null coalescing* operator to assign default values when one of the properties is `null`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
 
 [!code-csharp[NullCoalescing](../../../samples/snippets/csharp/new-in-6/program.cs#NullCoalescing)]
 
@@ -106,7 +106,7 @@ Ensuring that the left side is evaluated only once also enables you to use any e
 
 ## String interpolation
 
-With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed the expressions in a string. Simply preface the string with `$`and use expressions between `{` and `}` instead of ordinals:
+With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed expressions in a string. Simply preface the string with `$`and use expressions between `{` and `}` instead of ordinals:
 
 [!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
@@ -116,14 +116,14 @@ This example uses properties for the substituted expressions. You can use any ex
 
 The preceding line of code formats the value for `Grades.Average()` as a floating-point number with two decimal places.
 
-Often you may need to format the string produced using a specific culture. You use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString?displayProperty=nameWithType>. The <xref:System.FormattableString> instance contains the composite format string, and the results of evaluating the expressions before converting them to strings. Use the <xref:System.FormattableString.ToString(System.IFormatProvider)> method to specify the culture when formatting a string. For example, the following example produces a string using German culture. (It uses the ',' character for the decimal separator, and the '.' character as the thousands separator.)
+Often, you may need to format the string produced using a specific culture. You use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString?displayProperty=nameWithType>. The <xref:System.FormattableString> instance contains the composite format string and the results of evaluating the expressions before converting them to strings. Use the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to specify the culture when formatting a string. The following example produces a string using the German (de-DE) culture. (By default, the German culture uses the ',' character for the decimal separator, and the '.' character as the thousands separator.)
 
 ```csharp
 FormattableString str = $"Average grade is {s.Grades.Average()}";
 var gradeStr = str.ToString(new System.Globalization.CultureInfo("de-DE"));
 ```
 
-To get started with string interpolation, check the [String interpolation in C#](../tutorials/intro-to-csharp/interpolated-strings.yml) interactive tutorial, the [String interpolation](../language-reference/tokens/interpolated.md) article, and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
+To get started with string interpolation, see the [String interpolation in C#](../tutorials/intro-to-csharp/interpolated-strings.yml) interactive tutorial, the [String interpolation](../language-reference/tokens/interpolated.md) article, and the [String interpolation in C#](../tutorials/string-interpolation.md) tutorial.
 
 ## Exception filters
 
@@ -155,7 +155,7 @@ The implementation details for adding `await` support inside `catch` and `finall
 
 ## Initialize associative collections using indexers
 
-*Index Initializers* is one of two features that make collection initializers more consistent with index usage. In earlier releases of C#, you could use *collection initializers* with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602> by adding braces around key and value pairs:
+*Index Initializers* is one of two features that make collection initializers more consistent with index usage. In earlier releases of C#, you could use *collection initializers* with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602>, by adding braces around key and value pairs:
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#CollectionInitializer)]
 

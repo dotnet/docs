@@ -109,7 +109,7 @@ Ensuring that the left side is evaluated only once also enables you to use any e
 
 ## String interpolation
 
-With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed the expressions in a string. Simply preface the string with `$`and use expressions between `{` and `}` instead of ordinals:
+With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed expressions in a string. Simply preface the string with `$`and use expressions between `{` and `}` instead of ordinals:
 
 [!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 

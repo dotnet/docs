@@ -1,5 +1,5 @@
 ---
-title: "How to: Read Characters from a String"
+title: "How to: Read characters from a string"
 ms.date: "01/03/2019"
 ms.technology: dotnet-standard
 dev_langs: 

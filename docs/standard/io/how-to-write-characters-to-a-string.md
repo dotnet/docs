@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Characters to a String"
+title: "How to: Write characters to a string"
 ms.date: "01/03/2019"
 ms.technology: dotnet-standard
 dev_langs: 

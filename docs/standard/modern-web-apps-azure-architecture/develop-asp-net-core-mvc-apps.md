@@ -5,7 +5,6 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 06/28/2018
 ---
-
 # Develop ASP.NET Core MVC apps
 
 > "It's not important to get it right the first time. It's vitally important to get it right the last time."  
@@ -553,5 +552,6 @@ _Learn more about Azure deployment options in [Chapter 10](development-process-f
 > - **Introducing Azure Application Gateway**  
 >   <https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction>
 
-> [!div class="step-by-step"][previous](common-client-side-web-technologies.md)
-> [Next](work-with-data-in-asp-net-core-apps.md)
+>[!div class="step-by-step"]
+>[Previous](common-client-side-web-technologies.md)
+>[Next](work-with-data-in-asp-net-core-apps.md)

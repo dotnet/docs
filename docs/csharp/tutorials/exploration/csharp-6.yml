@@ -222,7 +222,7 @@ items:
     Console.WriteLine(messages[302]);
     ```
 
-    You can extend this syntax to any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method.  Try the following sample in the interactive window. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. It also combines other techniques already demonstrated in this tutorial such as expression bodied members, and string interpolation. 
+    You can extend this syntax to any class that implements <xref:System.Collections.IEnumerable> and has a publicly accessible `Add` method.  Try the following sample in the interactive window. It creates a `Path` class that implements `IEnumerable<Point3D>` and has a method to add points that takes three arguments. It also combines other techniques already demonstrated in this tutorial, such as expression-bodied members and string interpolation. 
 
     In the `Main` method, you initialize a path by providing coordinates for the points. Those points are added to the collection through the `Add` method.
 

@@ -115,7 +115,7 @@ items:
    }
    ```
 
-   It throws a <xref:System.NullReferenceException>. Change the `.` member access to the **null conditional operator**:
+   It throws a <xref:System.NullReferenceException>. Change the `.` member access operator to the **null conditional operator**:
 
    ```csharp
    Console.WriteLine(s?.Length);

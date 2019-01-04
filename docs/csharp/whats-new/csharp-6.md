@@ -46,7 +46,7 @@ If adding this syntax doesn't remove an accessible method, it's a [binary compat
 
 [!code-csharp[Initialization](../../../samples/snippets/csharp/new-in-6/newcode.cs#Initialization)]
 
-The `Grades` member is initialized where it's declared. That makes it easier to perform the initialization exactly once. The initialization is part of the property declaration, making it easier to equate the storage allocation with public interface for `Student` objects.
+The `Grades` member is initialized where it's declared. That makes it easier to perform the initialization exactly once. The initialization is part of the property declaration, making it easier to equate the storage allocation with the public interface for `Student` objects.
 
 ## Expression-bodied function members
 

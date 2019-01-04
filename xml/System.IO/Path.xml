@@ -842,7 +842,9 @@ For more information on file path formats on Windows, see [File path formats on 
  The returned value is `null` if the file path is `null`.  
   
  The separator characters used to determine the start of the file name are <xref:System.IO.Path.DirectorySeparatorChar> and <xref:System.IO.Path.AltDirectorySeparatorChar>.  
-  
+ 
+ Because `'\\'` is a legal file name on Unix, `GetFileName` running under Unix-based platforms cannot correctly return the file name from a Windows-based path like `C:\mydir\myfile.ext` but `GetFileName` running under Windows-based platforms can correctly return the file name from a Unix-based path like `/tmp/myfile.ext`, so the behavior `GetFileName` will not be strictly the same on Unix-based and Windows-based platforms.
+ 
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    

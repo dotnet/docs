@@ -65,7 +65,7 @@ When this query is executed, the `productInfos` variable will contain a sequence
 foreach(var p in productInfos){...}  
 ```
 
-Each object in the new anonymous type has two public properties which receive the same names as the properties or fields in the original object. You can also rename a field when you are creating an anonymous type; the following example renames the `UnitPrice` field to `Price`.  
+Each object in the new anonymous type has two public properties that receive the same names as the properties or fields in the original object. You can also rename a field when you are creating an anonymous type; the following example renames the `UnitPrice` field to `Price`.  
 
 ```csharp
 select new {p.ProductName, Price = p.UnitPrice};  

@@ -47,7 +47,7 @@ items:
     Expression-bodied members provide a lightweight syntax for lightweight methods. The `Person` class has two great candidates. Look at the declaration of `ToString`:
 
     ```csharp
-    public overvide string ToString()
+    public override string ToString()
     {
         return FirstName + " " + LastName;
     }

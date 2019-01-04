@@ -158,7 +158,7 @@ The implementation details for adding `await` support inside `catch` and `finall
 
 ## Initialize associative collections using indexers
 
-*Index Initializers* is one of two features that make collection initializers more consistent with index usage. In earlier releases of C#, you could use *collection initializers* with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602> by adding braces around key and value pairs:
+*Index Initializers* is one of two features that make collection initializers more consistent with index usage. In earlier releases of C#, you could use *collection initializers* with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602>, by adding braces around key and value pairs:
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#CollectionInitializer)]
 

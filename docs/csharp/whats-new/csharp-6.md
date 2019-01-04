@@ -95,7 +95,7 @@ You often use this construct with the *null coalescing* operator to assign defau
 
 [!code-csharp[NullCoalescing](../../../samples/snippets/csharp/new-in-6/program.cs#NullCoalescing)]
 
-You can also use `?.` to conditionally invoke methods. The most common use of member functions  with the null conditional operator is to safely invoke delegates (or event handlers) that may be `null`.  You'll call the delegate's `Invoke` method using the `?.` operator to access the member. You can see an example in the  
+You can also use `?.` to conditionally invoke methods. The most common use of member functions  with the null conditional operator is to safely invoke delegates (or event handlers) that may be `null`.  You can call the delegate's `Invoke` method using the `?.` operator to access the member. You can see an example in the  
 [delegate patterns](../delegates-patterns.md#handling-null-delegates) article.
 
 The rules of the `?.` operator ensure that the left-hand side of the operator is evaluated only once. It enables many idioms, including the following example using event handlers:

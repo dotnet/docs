@@ -20,14 +20,14 @@ ms.author: "mairaw"
 The following code examples show how to read characters synchronously and asynchronously from a string.  
   
 ## Example: Read characters synchronously in a console app  
- This example reads 13 characters synchronously from a string, stores them in an array, and displays those characters. The example then reads the remaining characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.  
+ This example reads 13 characters synchronously from a string, stores them in an array, and displays those characters. The example then reads the rest of the characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.  
   
  [!code-cpp[Conceptual.StringReader#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.stringreader/cpp/source.cpp#1)]
  [!code-csharp[Conceptual.StringReader#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source.cs#1)]
  [!code-vb[Conceptual.StringReader#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source.vb#1)]  
   
 ## Example: Read characters asynchronously in a WPF app  
- This example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. The example then asynchronously writes each letter or white space character, followed by a line break, to a <xref:System.Windows.Controls.TextBlock> control.  
+ This example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. The example then asynchronously writes each letter or white-space character, followed by a line break, to a <xref:System.Windows.Controls.TextBlock> control.  
   
  [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source2.cs#2)]
  [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source2.vb#2)]  

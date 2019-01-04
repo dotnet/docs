@@ -24,7 +24,7 @@ The following code examples write characters synchronously and asynchronously fr
  [!code-vb[Conceptual.StringBuilder#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/example2.vb#9)]  
   
 ## Example: Write characters asynchronously in a WPF app 
- The next example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. It then asynchronously writes each letter or white space character, followed by a line break, to a <xref:System.Windows.Controls.TextBlock> control.  
+ The next example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. It then asynchronously writes each letter or white-space character, followed by a line break, to a <xref:System.Windows.Controls.TextBlock> control.  
   
  [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source2.cs#2)]
  [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source2.vb#2)]  

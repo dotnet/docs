@@ -119,7 +119,7 @@ This example uses properties for the substituted expressions. You can use any ex
 
 The preceding line of code formats the value for `Grades.Average()` as a floating-point number with two decimal places.
 
-Often you may need to format the string produced using a specific culture. You use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString?displayProperty=nameWithType>. The <xref:System.FormattableString> instance contains the composite format string, and the results of evaluating the expressions before converting them to strings. Use the <xref:System.FormattableString.ToString(System.IFormatProvider)> method to specify the culture when formatting a string. For example, the following example produces a string using German culture. (It uses the ',' character for the decimal separator, and the '.' character as the thousands separator.)
+Often, you may need to format the string produced using a specific culture. You use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString?displayProperty=nameWithType>. The <xref:System.FormattableString> instance contains the composite format string and the results of evaluating the expressions before converting them to strings. Use the <xref:System.FormattableString.ToString(System.IFormatProvider)?displayProperty=nameWithType> method to specify the culture when formatting a string. The following example produces a string using the German (de-DE) culture. (By default, the German culture uses the ',' character for the decimal separator, and the '.' character as the thousands separator.)
 
 ```csharp
 FormattableString str = $"Average grade is {s.Grades.Average()}";

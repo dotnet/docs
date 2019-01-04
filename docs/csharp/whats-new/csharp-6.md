@@ -6,7 +6,7 @@ ms.date: 12/12/2018
 
 # What's New in C# 6
 
-The 6.0 release of C# contained many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive, write more readable code. You can concentrate more on your features than on the constructs of the language.
+The 6.0 release of C# contained many features that improve productivity for developers. The overall effect of these features is that you write more concise code that is also more readable. The syntax contains less ceremony for many common practices. It's easier to see the design intent with less ceremony. Learn these features well, and you'll be more productive and write more readable code. You can concentrate more on your features than on the constructs of the language.
 
 The rest of this article provides an overview of each of these features, with a link to explore each feature. You can explore the features in an [interactive tutorial on C# 6](../tutorials/exploration/csharp-6.yml) in the tutorials section.
 

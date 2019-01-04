@@ -101,7 +101,6 @@ As Figure 4-17 shows, real-time HTTP communication means that you can have serve
 
 Since communication is in real time, client apps show the changes almost instantly. This is usually handled by a protocol such as WebSockets, using many WebSockets connections (one per client). A typical example is when a service communicates a change in the score of a sports game to many client web apps simultaneously.
 
-
 >[!div class="step-by-step"]
-[Previous](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
-[Next](asynchronous-message-based-communication.md)
+>[Previous](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
+>[Next](asynchronous-message-based-communication.md)

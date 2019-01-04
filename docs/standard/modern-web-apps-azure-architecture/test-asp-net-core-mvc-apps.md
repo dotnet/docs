@@ -342,5 +342,5 @@ namespace FunctionalTests.WebRazorPages
 This functional test exercises the full ASP.NET Core MVC / Razor Pages application stack, including all middleware, filters, binders, etc. that may be in place. It verifies that a given route ("/") returns the expected success status code and HTML output. It does so without setting up a real web server, and so avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server. You should use functional tests to ensure your application's front end stack is working as expected. These tests are especially useful when you find duplication in your controllers or pages and you address the duplication by adding filters. Ideally, this refactoring will not change the behavior of the application, and a suite of functional tests will verify this is the case.
 
 >[!div class="step-by-step"]
-[Previous](work-with-data-in-asp-net-core-apps.md)
-[Next](development-process-for-azure.md)
+>[Previous](work-with-data-in-asp-net-core-apps.md)
+>[Next](development-process-for-azure.md)

@@ -334,7 +334,6 @@ services:
 - **Use MongoChef (Studio 3T) with an Azure Cosmos DB: API for MongoDB account**  \
   [*https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef*](https://docs.microsoft.com/azure/cosmos-db/mongodb-mongochef)
 
-
 >[!div class="step-by-step"]
-[Previous](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
-[Next](microservice-application-layer-web-api-design.md)
+>[Previous](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+>[Next](microservice-application-layer-web-api-design.md)

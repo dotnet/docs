@@ -830,5 +830,5 @@ In a similar way, you could implement other behaviors for additional aspects or 
   [*https://github.com/JeremySkinner/FluentValidation*](https://github.com/JeremySkinner/FluentValidation)
 
 >[!div class="step-by-step"]
-[Previous](microservice-application-layer-web-api-design.md)
-[Next](../implement-resilient-applications/index.md)
+>[Previous](microservice-application-layer-web-api-design.md)
+>[Next](../implement-resilient-applications/index.md)

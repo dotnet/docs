@@ -1,11 +1,11 @@
 ---
-title: Hosting .NET Core
-description: Hosting the .NET Core runtime from native code
+title: Write a custom .NET Core runtime host
+description: Learn to host the .NET Core runtime from native code to support advanced scenarios that require controlling how the .NET Core runtime works.
 author: mjrousos
-ms.author: mairaw
-ms.date: 2/3/2017
+ms.date: 02/03/2017
+ms.custom: seodec18
 ---
-# Hosting .NET Core
+# Write a custom .NET Core host to control the .NET runtime from your native code
 
 Like all managed code, .NET Core applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.
 
@@ -76,7 +76,6 @@ Common AppDomain properties include:
 *  `APP_NI_PATHS` This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
 *  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
 *  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
-*  `AppDomainCompatSwitch` This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against). Typically, this should be set to `"UseLatestBehaviorWhenTFMNotSpecified"` but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.
 
 In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting), these properties are set up as follows:
 

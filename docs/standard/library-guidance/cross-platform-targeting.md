@@ -53,7 +53,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 >
 > Do not drop support for .NET Standard when you do this. Instead, throw from the implementation and offer capability APIs. This way, your library can be used anywhere and supports runtime light-up of features.
 
-**❌ AVOID** using multi-targeting with .NET Standard if your source code is the same for all targets.
+**❌ AVOID** multi-targeting as well as targeting .NET Standard, if your source code is the same for all targets.
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
@@ -89,5 +89,5 @@ To shield your consumers from having to build for individual frameworks, you sho
 **❌ DO NOT** include targets for .NET platforms that are no longer supported. For example, `SL4`, `WP`.
 
 >[!div class="step-by-step"]
-[Previous](./get-started.md)
-[Next](./strong-naming.md)
+>[Previous](get-started.md)
+>[Next](strong-naming.md)

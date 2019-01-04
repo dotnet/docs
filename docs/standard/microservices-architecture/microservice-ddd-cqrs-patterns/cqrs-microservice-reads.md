@@ -191,5 +191,5 @@ You can see in the image above some example values based on the ViewModel types 
   [*https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio*](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio)
 
 >[!div class="step-by-step"]
-[Previous](eshoponcontainers-cqrs-ddd-microservice.md)
-[Next](ddd-oriented-microservice.md)
+>[Previous](eshoponcontainers-cqrs-ddd-microservice.md)
+>[Next](ddd-oriented-microservice.md)

@@ -46,7 +46,7 @@ The `memberInfoCacheCreation` managed debugging assistant (MDA) is activated whe
 ## Example  
  This sample code will activate the `memberInfoCacheCreation` MDA.  
   
-```  
+```csharp
 using System;  
   
 public class Exe  

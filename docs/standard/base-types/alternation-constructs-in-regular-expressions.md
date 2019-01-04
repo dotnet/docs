@@ -1,5 +1,6 @@
 ---
-title: "Alternation Constructs in Regular Expressions"
+title: Alternation Constructs in .NET Regular Expressions
+description: Learn how to use alternation constructs for conditional matching in regular expressions.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -16,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Alternation Constructs in Regular Expressions
 <a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. .NET supports three alternation constructs:  

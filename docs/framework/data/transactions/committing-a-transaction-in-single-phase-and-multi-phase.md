@@ -30,7 +30,7 @@ Each resource used in a transaction is managed by a resource manager (RM), whose
   
  Your resource manager that implements the <xref:System.Transactions.IEnlistmentNotification> interface should first implement the <xref:System.Transactions.IEnlistmentNotification.Prepare%28System.Transactions.PreparingEnlistment%29> method as the following simple example shows.  
   
-```  
+```csharp
 public void Prepare(PreparingEnlistment preparingEnlistment)  
 {  
      Console.WriteLine("Prepare notification received");  
@@ -69,7 +69,7 @@ public void Prepare(PreparingEnlistment preparingEnlistment)
   
  Thus, your resource manager should implement the following methods.  
   
-```  
+```csharp
 public void Commit (Enlistment enlistment)  
 {  
      // Do any work necessary when commit notification is received  
@@ -92,7 +92,7 @@ public void Rollback (Enlistment enlistment)
 ### Implementing InDoubt  
  Finally, you should implement the <xref:System.Transactions.IEnlistmentNotification.InDoubt%2A> method for the volatile resource manager. This method is called if the transaction manager loses contact with one or more participants, so their status is unknown. If this occurs, you should log this fact so that you can investigate later whether any of the transaction participants has been left in an inconsistent state.  
   
-```  
+```csharp
 public void InDoubt (Enlistment enlistment)  
 {  
      // log this  

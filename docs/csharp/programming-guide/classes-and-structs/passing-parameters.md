@@ -1,5 +1,6 @@
 ---
-title: "Passing Parameters (C# Programming Guide)"
+title: "Passing Parameters - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "parameters [C#], passing"

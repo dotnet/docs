@@ -93,5 +93,5 @@ Shared source packages have some limitations. They can only be referenced by `Pa
 > Publish shared source packages to a [local feed or MyGet](./publish-nuget-package.md) to consume them internally within your project.
 
 >[!div class="step-by-step"]
-[Previous](./nuget.md)
-[Next](./sourcelink.md)
+>[Previous](nuget.md)
+>[Next](sourcelink.md)

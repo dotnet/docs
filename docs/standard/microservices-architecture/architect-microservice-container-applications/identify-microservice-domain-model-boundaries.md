@@ -46,5 +46,5 @@ Basically, there's a shared concept of a user that exists in multiple services (
 There are several benefits to not sharing the same user entity with the same number of attributes across domains. One benefit is to reduce duplication, so that microservice models do not have any data that they do not need. Another benefit is having a master microservice that owns a certain type of data per entity so that updates and queries for that type of data are driven only by that microservice.
 
 >[!div class="step-by-step"]
-[Previous](distributed-data-management.md)
-[Next](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)
+>[Previous](distributed-data-management.md)
+>[Next](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)

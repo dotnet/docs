@@ -1,14 +1,11 @@
 ---
 title: .NET Core SDK Overview
 description: Find out about the .NET Core SDK, which is a set of libraries and tools used to create .NET Core projects.
-author: blackdwarf
-ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-cli
 ---
-# .NET Core SDK Overview 
+# .NET Core SDK Overview
 
-## Introduction
 .NET Core Software Development Kit (SDK) is a set of libraries and tools that allow developers to create .NET Core applications
 and libraries. This is the package that developers will most likely acquire. 
 
@@ -17,7 +14,6 @@ It contains the following components:
 1. The .NET Core Command Line Tools that are used to build applications
 2. .NET Core (libraries and runtime) that allow applications to both be built and run
 3. The `dotnet` driver for running the [CLI commands](tools/index.md) as well as running applications
-
 
 ## Acquiring the .NET Core SDK
 As with any tooling, the first thing is to get the tools to your machine. Depending on your scenario, you can either 
@@ -34,7 +30,7 @@ prerequisites on the machine; you need to install all of the prerequisites manua
 setting up build servers or when you wish to install the tools without admin privileges (do note the prerequisites 
 caveat above). You can find more information on the [install script reference topic](tools/dotnet-install-script.md). If you are 
 interested in how to set up SDK on your CI build server you can take a look at the [SDK with CI servers](tools/using-ci-with-cli.md) 
-document. 
+document.
 
 By default, the SDK will install in a "side-by-side" (SxS) manner. This means that multiple versions of the CLI tools 
 can coexist at any given time on a single machine. How the correct version gets used is explained in more detail in 

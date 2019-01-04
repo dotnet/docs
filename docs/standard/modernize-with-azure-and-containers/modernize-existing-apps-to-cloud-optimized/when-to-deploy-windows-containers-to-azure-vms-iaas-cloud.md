@@ -16,5 +16,5 @@ If your organization is using Azure VMs, even if you are also using Windows Cont
 -   **Production environment with existing deployment tools**: You might be moving from an on-premises environment in which you have invested in tools to make complex deployments to VMs or bare-metal servers (like Puppet or similar tools). To move to the cloud with minimal changes to production environment deployment procedures, you might continue to use those tools to deploy to Azure VMs. However, you'll want to use Windows Containers as the unit of deployment to improve the deployment experience.
 
 >[!div class="step-by-step"]
-[Previous](when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md)
-[Next](when-to-deploy-windows-containers-to-azure-container-instances-ACI.md)
+>[Previous](when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md)
+>[Next](when-to-deploy-windows-containers-to-azure-container-instances-ACI.md)

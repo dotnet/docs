@@ -23,7 +23,7 @@ sgen [options]
 |**/help or /?**|Displays command syntax and options for the tool.|  
 |**/k**[**eep**]|Suppresses the deletion of the generated source files and other temporary files after they have been compiled into the serialization assembly. This can be used to determine whether the tool is generating serialization code for a particular type.|  
 |**/n**[**ologo**]|Suppresses the display of the Microsoft startup banner.|  
-|**/o**[**ut**]**:***path*|Specifies the directory in which to save the generated assembly. **Note:**  The name of the generated assembly is composed of the name of the input assembly plus "xmlSerializers.dll".|  
+|**/o**[**ut**]**:**_path_|Specifies the directory in which to save the generated assembly. **Note:**  The name of the generated assembly is composed of the name of the input assembly plus "xmlSerializers.dll".|  
 |**/p**[**roxytypes**]|Generates serialization code only for the XML Web service proxy types.|  
 |**/r**[**eference**]**:**_assemblyfiles_|Specifies the assemblies that are referenced by the types requiring XML serialization. Accepts multiple assembly files separated by commas.|  
 |**/s**[**ilent**]|Suppresses the display of success messages.|  

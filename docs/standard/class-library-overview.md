@@ -107,5 +107,5 @@ ms.author: "ronpet"
 ## See also
 
 - [Common Type System](../../docs/standard/base-types/common-type-system.md)  
-- [.NET API Browser](https://docs.microsoft.com/dotnet/api)  
+- [.NET API Browser](../../api/index.md)  
 - [Overview](../../docs/framework/get-started/overview.md)

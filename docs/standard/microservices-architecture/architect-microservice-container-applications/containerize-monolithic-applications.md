@@ -66,5 +66,5 @@ Container support in Visual Studio 2017 gives you the ability to include whateve
 As also shown in Figure 4-4, the publish flow pushes an image through a container registry. This can be the Azure Container Registry (a registry close to your deployments in Azure and secured by Azure Active Directory groups and accounts), or any other Docker registry, like Docker Hub or an on-premises registry.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](docker-application-state-data.md)
+>[Previous](index.md)
+>[Next](docker-application-state-data.md)

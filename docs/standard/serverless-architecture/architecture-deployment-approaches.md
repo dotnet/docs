@@ -160,5 +160,5 @@ The next chapter will focus on serverless architecture, use cases, and design pa
 * [Wingtip Tickets SaaS application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
 >[!div class="step-by-step"]
-[Previous](architecture-approaches.md)
-[Next](serverless-architecture.md)
+>[Previous](architecture-approaches.md)
+>[Next](serverless-architecture.md)

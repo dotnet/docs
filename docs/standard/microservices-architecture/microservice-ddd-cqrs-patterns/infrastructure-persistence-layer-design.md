@@ -125,5 +125,5 @@ Repositories might be useful, but they are not critical for your DDD design, in 
   [*https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 >[!div class="step-by-step"]
-[Previous](domain-events-design-implementation.md)
-[Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)
+>[Previous](domain-events-design-implementation.md)
+>[Next](infrastructure-persistence-layer-implemenation-entity-framework-core.md)

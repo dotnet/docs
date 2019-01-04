@@ -251,7 +251,7 @@ The docker-compose.yml files at the solution level are not only more flexible th
 
 Finally, you can get that value from your code by using Configuration\["ConnectionString"\], as shown in the ConfigureServices method in an earlier code example.
 
-However, for production environments, you might want to explore additional ways on how to store secrets like the connection strings. An excellent way to manage application secrets is using [Azure Key Vault}(https://azure.microsoft.com/services/key-vault/).
+However, for production environments, you might want to explore additional ways on how to store secrets like the connection strings. An excellent way to manage application secrets is using [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
 Azure Key Vault helps to store and safeguard cryptographic keys and secrets used by your cloud applications and services. A secret is anything you want to keep strict control of, like API keys, connection strings, passwords, etc. and strict control includes usage logging, setting expiration, managing access, <span class="underline">among others</span>.
 
@@ -425,7 +425,6 @@ It is that simple. And because it is automatically generated, the Swagger metada
 - **Get started with NSwag and ASP.NET Core** \
   [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml)
 
-
 >[!div class="step-by-step"]
-[Previous](microservice-application-design.md)
-[Next](multi-container-applications-docker-compose.md)
+>[Previous](microservice-application-design.md)
+>[Next](multi-container-applications-docker-compose.md)

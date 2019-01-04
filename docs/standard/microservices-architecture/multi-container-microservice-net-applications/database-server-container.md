@@ -195,5 +195,5 @@ Finally, in the docker-compose.override.yml file, the basket.api microservice fo
 As mentioned before, the name of the microservice "basket.data" is resolved by docker's internal network DNS.
 
 >[!div class="step-by-step"]
-[Previous](multi-container-applications-docker-compose.md)
-[Next](integration-event-based-microservice-communications.md)
+>[Previous](multi-container-applications-docker-compose.md)
+>[Next](integration-event-based-microservice-communications.md)

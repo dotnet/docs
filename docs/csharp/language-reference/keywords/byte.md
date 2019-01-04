@@ -1,5 +1,7 @@
 ---
-title: "byte (C# Reference)"
+title: "byte - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/14/2017
 f1_keywords: 
   - "byte"

@@ -1,14 +1,13 @@
 ---
 title: "Exception Throwing"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "exceptions, throwing"
   - "explicitly throwing exceptions"
   - "throwing exceptions, design guidelines"
 ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Exception Throwing
 Exception-throwing guidelines described in this section require a good definition of the meaning of execution failure. Execution failure occurs whenever a member cannot do what it was designed to do (what the member name implies). For example, if the `OpenFile` method cannot return an opened file handle to the caller, it would be considered an execution failure.  

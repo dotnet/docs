@@ -465,5 +465,5 @@ Runtime images also provides automatic setting of aspnetcore\_urls to port 80 an
     [*https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images*](https://docs.microsoft.com/en-us/dotnet/core/docker/building-net-docker-images)
 
 >[!div class="step-by-step"]
-[Previous](data-driven-crud-microservice.md)
-[Next](database-server-container.md)
+>[Previous](data-driven-crud-microservice.md)
+>[Next](database-server-container.md)

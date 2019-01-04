@@ -3,7 +3,7 @@ class DayCollection
 {
     string[] days = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
 
-    // This method finds the day or returns -1
+    // This method finds the day or returns an Exception if the day is not found
     private int GetDay(string testDay)
     {
 

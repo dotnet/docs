@@ -48,7 +48,7 @@ The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when 
 ## Example  
  The following code example demonstrates a call to the <xref:System.Threading.Thread.Suspend%2A> method that causes the activation of the `dangerousThreadingAPI`.  
   
-```  
+```csharp
 using System.Threading;  
 void FireMda()  
 {  

@@ -104,5 +104,5 @@ The following table provides guidance on what orchestrator to use depending on w
 **Figure 4-33**. Orchestrator selection in Azure guidance
 
 >[!div class="step-by-step"]
-[Previous](scalable-available-multi-container-microservice-applications.md)
-[Next](../docker-application-development-process/index.md)
+>[Previous](scalable-available-multi-container-microservice-applications.md)
+>[Next](../docker-application-development-process/index.md)

@@ -54,7 +54,7 @@ The most typical scenario where WPF defines an attached property is when a paren
 
 ## Attached Properties in Code <a name="attached_properties_code"></a>
 
-Attached properties in WPF do not have the typical [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" methods for easy get/set access. This is because the attached property is not necessarily part of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace for instances where the property is set. However, a XAML processor must be able to set those values when XAML is parsed. To support an effective attached property usage, the owner type of the attached property must implement dedicated accessor methods in the form **Get*PropertyName*** and **Set*PropertyName***. These dedicated accessor methods are also useful to get or set the attached property in code. From a code perspective, an attached property is similar to a backing field that has method accessors instead of property accessors, and that backing field can exist on any object rather than needing to be specifically defined.
+Attached properties in WPF do not have the typical [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" methods for easy get/set access. This is because the attached property is not necessarily part of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace for instances where the property is set. However, a XAML processor must be able to set those values when XAML is parsed. To support an effective attached property usage, the owner type of the attached property must implement dedicated accessor methods in the form **Get_PropertyName_** and **Set_PropertyName_**. These dedicated accessor methods are also useful to get or set the attached property in code. From a code perspective, an attached property is similar to a backing field that has method accessors instead of property accessors, and that backing field can exist on any object rather than needing to be specifically defined.
 
 The following example shows how you can set an attached property in code. In this example, `myCheckBox` is an instance of the <xref:System.Windows.Controls.CheckBox> class.
 
@@ -85,14 +85,14 @@ As mentioned before, you should register as an attached property if you want to 
 
 If your class is defining the attached property strictly for use on other types, then the class does not have to derive from <xref:System.Windows.DependencyObject>. But you do need to derive from <xref:System.Windows.DependencyObject> if you follow the overall WPF model of having your attached property also be a dependency property.
 
-Define your attached property as a dependency property by declaring a `public static readonly` field of type <xref:System.Windows.DependencyProperty>. You define this field by using the return value of the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The field name must match the attached property name, appended with the string `Property`, to follow the established WPF pattern of naming the identifying fields versus the properties that they represent. The attached property provider must also provide static **Get*PropertyName*** and **Set*PropertyName*** methods as accessors for the attached property; failing to do this will result in the property system being unable to use your attached property.
+Define your attached property as a dependency property by declaring a `public static readonly` field of type <xref:System.Windows.DependencyProperty>. You define this field by using the return value of the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The field name must match the attached property name, appended with the string `Property`, to follow the established WPF pattern of naming the identifying fields versus the properties that they represent. The attached property provider must also provide static **Get_PropertyName_** and **Set_PropertyName_** methods as accessors for the attached property; failing to do this will result in the property system being unable to use your attached property.
 
 > [!NOTE]
 > If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as Visual Studio and Expression Blend.
 
 #### The Get Accessor
 
-The signature for the **Get*PropertyName*** accessor must be:
+The signature for the **Get_PropertyName_** accessor must be:
 
 `public static object GetPropertyName(object target)`
 
@@ -102,7 +102,7 @@ The signature for the **Get*PropertyName*** accessor must be:
 
 #### The Set Accessor
 
-The signature for the **Set*PropertyName*** accessor must be:
+The signature for the **Set_PropertyName_** accessor must be:
 
 `public static void SetPropertyName(object target, object value)`
 
@@ -110,7 +110,7 @@ The signature for the **Set*PropertyName*** accessor must be:
 
 -   The `value` object can be specified as a more specific type in your implementation. For example, the <xref:System.Windows.Controls.DockPanel.SetDock%2A> method types it as <xref:System.Windows.Controls.Dock>, because the value can only be set to that enumeration. Remember that the value for this method is the input coming from the XAML loader when it encounters your attached property in an attached property usage in markup. That input is the value specified as a XAML attribute value in markup. Therefore there must be type conversion, value serializer, or markup extension support for the type you use, such that the appropriate type can be created from the attribute value (which is ultimately just a string).
 
-The following example shows the dependency property registration (using the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method), as well as the **Get*PropertyName*** and **Set*PropertyName*** accessors. In the example, the attached property name is `IsBubbleSource`. Therefore, the accessors must be named `GetIsBubbleSource` and `SetIsBubbleSource`.
+The following example shows the dependency property registration (using the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method), as well as the **Get_PropertyName_** and **Set_PropertyName_** accessors. In the example, the attached property name is `IsBubbleSource`. Therefore, the accessors must be named `GetIsBubbleSource` and `SetIsBubbleSource`.
 
 [!code-csharp[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler)]
 [!code-vb[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]

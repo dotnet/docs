@@ -1,5 +1,7 @@
 ---
-title: "Integral types table (C# Reference)"
+title: "Integral types table - C# Reference"
+ms.custom: seodec18
+
 description: "Overview of the built-in C# integral types"
 ms.date: 08/20/2018
 helpviewer_keywords: 
@@ -29,7 +31,7 @@ The following table shows the sizes and ranges of the integral types, which cons
   
 If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
 
-Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> class to represent an arbitrarily large signed integer.
+Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent an arbitrarily large signed integer.
   
 ## See also
 
@@ -41,3 +43,4 @@ Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> class to 
 - [Default values table](default-values-table.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)
 - [Built-in types table](built-in-types-table.md)
+- [Numerics in .NET](../../../standard/numerics.md)

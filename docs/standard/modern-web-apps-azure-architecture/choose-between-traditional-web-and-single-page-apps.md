@@ -86,5 +86,5 @@ The following decision table summarizes some of the basic factors to consider wh
 | Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             |
 
 >[!div class="step-by-step"]
-[Previous](modern-web-applications-characteristics.md)
-[Next](architectural-principles.md)
+>[Previous](modern-web-applications-characteristics.md)
+>[Next](architectural-principles.md)

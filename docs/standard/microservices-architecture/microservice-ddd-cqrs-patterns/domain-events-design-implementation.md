@@ -374,5 +374,5 @@ As stated, use domain events to explicitly implement side effects of changes wit
   [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/02/07/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/02/07/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/)
 
 >[!div class="step-by-step"]
-[Previous](client-side-validation.md)
-[Next](infrastructure-persistence-layer-design.md)
+>[Previous](client-side-validation.md)
+>[Next](infrastructure-persistence-layer-design.md)

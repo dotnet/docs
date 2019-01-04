@@ -1,5 +1,7 @@
 ---
-title: "Selection statements (C# Reference)"
+title: "Selection statements - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "statements [C#], selection"

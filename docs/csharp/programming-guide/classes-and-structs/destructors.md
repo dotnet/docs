@@ -1,5 +1,6 @@
 ---
-title: "Finalizers (C# Programming Guide)"
+title: "Finalizers - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 10/08/2018
 helpviewer_keywords: 
   - "~ [C#], in finalizers"

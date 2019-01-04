@@ -11,7 +11,7 @@ ms.date: 10/08/2018
 
 Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language.
 
-However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/enum) if that's your preference. Anyway, the use of enumeration classes is more related to business-related concepts.
+However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](../../../csharp/language-reference/keywords/enum.md) if that's your preference. Anyway, the use of enumeration classes is more related to business-related concepts.
 
 ## Implement an Enumeration base class
 
@@ -119,8 +119,6 @@ public abstract class CardType : Enumeration
 - **SmartEnum**. Ardalis - Classes to help produce strongly typed smarter enums in .NET. \
   [*https://www.nuget.org/packages/Ardalis.SmartEnum/*](https://www.nuget.org/packages/Ardalis.SmartEnum/)
 
-
 >[!div class="step-by-step"]
-[Previous](implement-value-objects.md)
-[Next](domain-model-layer-validations.md)
-
+>[Previous](implement-value-objects.md)
+>[Next](domain-model-layer-validations.md)

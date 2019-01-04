@@ -1,11 +1,11 @@
 ---
-title: "Argument &#39;&lt;argument1&gt;&#39; must be less than or equal to the length of argument &#39;&lt;argument2&gt;&#39;"
+title: "Argument '&lt;argument1&gt;' must be less than or equal to the length of argument '&lt;argument2&gt;'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_IndexLELength2"
 ms.assetid: 10765f81-79c5-44c2-89c5-888253105b78
 ---
-# Argument &#39;&lt;argument1&gt;&#39; must be less than or equal to the length of argument &#39;&lt;argument2&gt;&#39;
+# Argument '&lt;argument1&gt;' must be less than or equal to the length of argument '&lt;argument2&gt;'
 An argument's length exceeds the allowable limit, which is determined by the second argument's length.  
   
 ## To correct this error  

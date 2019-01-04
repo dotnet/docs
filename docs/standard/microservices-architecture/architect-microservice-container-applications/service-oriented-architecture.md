@@ -18,5 +18,5 @@ Microservices derive from SOA, but SOA is different from microservices architect
 This guide focuses on microservices, because a SOA approach is less prescriptive than the requirements and techniques used in a microservice architecture. If you know how to build a microservice-based application, you also know how to build a simpler service-oriented application.
 
 >[!div class="step-by-step"]
-[Previous](docker-application-state-data.md)
-[Next](microservices-architecture.md)
+>[Previous](docker-application-state-data.md)
+>[Next](microservices-architecture.md)

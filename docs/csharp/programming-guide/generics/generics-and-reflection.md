@@ -1,5 +1,6 @@
 ---
-title: "Generics and Reflection (C# Programming Guide)"
+title: "Generics and Reflection - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], reflection"

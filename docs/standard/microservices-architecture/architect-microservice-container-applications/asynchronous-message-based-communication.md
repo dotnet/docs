@@ -101,5 +101,5 @@ Additional topics to consider when using asynchronous communication are message 
   [*https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/*](https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/)
 
 >[!div class="step-by-step"]
-[Previous](communication-in-microservice-architecture.md)
-[Next](maintain-microservice-apis.md)
+>[Previous](communication-in-microservice-architecture.md)
+>[Next](maintain-microservice-apis.md)

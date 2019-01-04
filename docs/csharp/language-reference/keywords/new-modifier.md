@@ -1,5 +1,7 @@
 ---
-title: "new modifier (C# Reference)"
+title: "new modifier - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "new modifier keyword [C#]"

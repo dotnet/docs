@@ -55,5 +55,5 @@ Of these, only the first three are covered or introduced in this guide. The last
   [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
 
 >[!div class="step-by-step"]
-[Previous](service-oriented-architecture.md)
-[Next](data-sovereignty-per-microservice.md)
+>[Previous](service-oriented-architecture.md)
+>[Next](data-sovereignty-per-microservice.md)

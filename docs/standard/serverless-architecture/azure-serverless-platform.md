@@ -16,5 +16,5 @@ You can also use Application Insights, a serverless platform for capturing diagn
 This chapter breaks down the fundamentals of each component.
 
 >[!div class="step-by-step"]
-[Previous](serverless-design-examples.md)
-[Next](azure-functions.md)
+>[Previous](serverless-design-examples.md)
+>[Next](azure-functions.md)

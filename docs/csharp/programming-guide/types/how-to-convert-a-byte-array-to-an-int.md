@@ -1,5 +1,6 @@
 ---
-title: "How to: Convert a byte Array to an int (C# Programming Guide)"
+title: "How to: Convert a byte Array to an int - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "conversions [C#], byte array to int"

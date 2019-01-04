@@ -25,6 +25,5 @@ Another benefit you can derive from containerization is scalability. You can sca
 
 In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the entire application life cycle workflow. The most important benefit is the isolation provided between Dev and Ops.
 
-
 >[!div class="step-by-step"]
-[Next](what-is-docker.md)
+>[Next](what-is-docker.md)

@@ -1,5 +1,6 @@
 ---
-title: "Classes (C# Programming Guide)"
+title: "Classes - C# Programming Guide"
+ms.custom: seodec18
 description: Learn about the class types and how to create them
 ms.date: 08/21/2018
 helpviewer_keywords: 
@@ -13,7 +14,7 @@ ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
 A type that is defined as a [class](../../../csharp/language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../../csharp/language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [new](../../../csharp/language-reference/keywords/new.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
 
 ```csharp
-//Declaring a object of type MyClass.
+//Declaring an object of type MyClass.
 MyClass mc = new MyClass();
 
 //Declaring another object of the same type, assigning it the value of the first object.

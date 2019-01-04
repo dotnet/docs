@@ -1,5 +1,6 @@
 ---
-title: "Character Escapes in Regular Expressions"
+title: Character Escapes in .NET Regular Expressions
+description: Learn about special characters and escaped characters in .NET regular expressions.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -16,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
 author: "rpetrusha"
 ms.author: "ronpet"
+ms.custom: seodec18
 ---
 # Character Escapes in Regular Expressions
 The backslash (\\) in a regular expression indicates one of the following:  

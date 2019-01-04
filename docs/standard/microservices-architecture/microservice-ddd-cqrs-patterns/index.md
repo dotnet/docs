@@ -66,5 +66,5 @@ DDD is a large topic with a rich set of resources for learning. You can start wi
   [*https://bit.ly/PS-DDD*](https://bit.ly/PS-DDD)
 
 >[!div class="step-by-step"]
-[Previous](../multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)
-[Next](apply-simplified-microservice-cqrs-ddd-patterns.md)
+>[Previous](../multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md)
+>[Next](apply-simplified-microservice-cqrs-ddd-patterns.md)

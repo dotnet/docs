@@ -2,8 +2,7 @@
 title: Inspect intermediate data values during ML.NET pipeline processing
 description: Learn how to inspect actual intermediate data values during ML.NET machine learning pipeline processing
 ms.date: 11/07/2018
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to inspect actual intermediate data values during ML.NET machine learning pipeline processing so that I can make sure that I'm getting the results I expect.
 ---
 # Inspect intermediate data values during ML.NET pipeline processing

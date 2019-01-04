@@ -1,16 +1,15 @@
 ---
-title: .NET Core app deployment with Visual Studio
-description: Learn .NET Core app deployment with Visual Studio
+title: Deploy .NET Core apps with Visual Studio
+description: Learn to deploy a .NET Core app with Visual Studio.
 author: rpetrusha
 ms.author: ronpet
 ms.date: 09/03/2018
 dev_langs: 
   - "csharp"
   - "vb"
-ms.custom: vs-dotnet
+ms.custom: vs-dotnet, seodec18
 ---
-
-# Deploying .NET Core apps with Visual Studio
+# Deploy .NET Core apps with Visual Studio
 
 You can deploy a .NET Core application either as a *framework-dependent deployment*, which includes your application binaries but depends on the presence of .NET Core on the target system, or as a *self-contained deployment*, which includes both your application and .NET Core binaries. For an overview of .NET Core application deployment, see [.NET Core Application Deployment](index.md).
 

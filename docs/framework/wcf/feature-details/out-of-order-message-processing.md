@@ -24,7 +24,7 @@ WorkflowService service = new WorkflowService
 ```xaml  
 // Xaml: Opt-in to Buffered Receive processing...  
 <WorkflowService AllowBufferedReceive="True">  
-   <!—the actual children activities -->  
+   <!--the actual children activities -->  
 </Sequence>  
 ```  
   

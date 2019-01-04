@@ -2,8 +2,7 @@
 title: Load data from multiple files for machine learning processing - ML.NET
 description: Learn how to Load data from multiple files for use in machine learning model building, training, and scoring with ML.NET
 ms.date: 11/07/2018
-ms.topic: how-to
-ms.custom: mvc
+ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data from multiple files so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
 # Load data from multiple files for machine learning processing - ML.NET

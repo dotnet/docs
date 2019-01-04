@@ -247,5 +247,5 @@ The `IHostedService` interface provides a convenient way to start background tas
     [*https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample*](https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample)
 
 >[!div class="step-by-step"]
-[Previous](test-aspnet-core-services-web-apps.md)
-[Next](implement-api-gateways-with-ocelot.md)
+>[Previous](test-aspnet-core-services-web-apps.md)
+>[Next](implement-api-gateways-with-ocelot.md)

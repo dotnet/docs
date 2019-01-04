@@ -149,5 +149,5 @@ For further information check the article on [Team Development with Azure Dev Sp
   [*https://kubernetes.io/*](https://kubernetes.io/)
 
 >[!div class="step-by-step"]
-[Previous](resilient-high-availability-microservices.md)
-[Next](using-azure-service-fabric.md)
+>[Previous](resilient-high-availability-microservices.md)
+>[Next](using-azure-service-fabric.md)

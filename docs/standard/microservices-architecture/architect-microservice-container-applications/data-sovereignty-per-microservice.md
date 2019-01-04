@@ -56,5 +56,5 @@ DDD benefits from microservices by getting real boundaries in the form of distri
   [*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
 
 >[!div class="step-by-step"]
-[Previous](microservices-architecture.md)
-[Next](logical-versus-physical-architecture.md)
+>[Previous](microservices-architecture.md)
+>[Next](logical-versus-physical-architecture.md)

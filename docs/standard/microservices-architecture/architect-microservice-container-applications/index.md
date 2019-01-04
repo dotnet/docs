@@ -24,5 +24,5 @@ If the process fails, the container ends, and the orchestrator takes over. If th
 You might find a scenario where you want multiple processes running in a single container. For that scenario, since there can be only one entry point per container, you could run a script within the container that launches as many programs as needed. For example, you can use [Supervisor](http://supervisord.org/) or a similar tool to take care of launching multiple processes inside a single container. However, even though you can find architectures that hold multiple processes per container, that approach isn't very common.
 
 >[!div class="step-by-step"]
-[Previous](../net-core-net-framework-containers/official-net-docker-images.md)
-[Next](containerize-monolithic-applications.md)
+>[Previous](../net-core-net-framework-containers/official-net-docker-images.md)
+>[Next](containerize-monolithic-applications.md)

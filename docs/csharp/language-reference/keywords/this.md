@@ -1,5 +1,7 @@
 ---
-title: "this keyword (C# Reference)"
+title: "this keyword - C# Reference"
+ms.custom: seodec18
+
 description: this keyword (C# Reference)
 ms.date: 07/20/2015
 f1_keywords: 

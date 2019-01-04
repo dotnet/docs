@@ -89,7 +89,7 @@ The *null conditional operator* makes null checks much easier and fluid. Replace
 
 In the preceding example, the variable `first` is assigned `null` if the person object is `null`. Otherwise, it is assigned the value of the `FirstName` property. Most importantly, the `?.` means that this line of code doesn't generate a `NullReferenceException` if the `person` variable is `null`. Instead, it short-circuits and returns `null`. You can also use a null conditional operator for array or indexer access. Replace `[]` with `?[]` in the index expression.
 
-This expression returns a `string`, regardless of the value of `person`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
+The following expression returns a `string`, regardless of the value of `person`. When the expression short-circuits, the `null` value returned is typed to match the full expression.
 
 You often use this construct with the *null coalescing* operator to assign default values when one of the properties is `null`:
 

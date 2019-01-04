@@ -21,9 +21,9 @@ A *backing store* is a storage medium, such as a disk or memory. Each different 
 
 Each stream type reads and writes bytes from and to its given backing store. Streams that connect to backing stores are called *base streams*. Base streams have constructors with the parameters necessary to connect the stream to the backing store. For example, <xref:System.IO.FileStream> has constructors that specify a path parameter, which specifies how the file will be shared by processes.  
 
-The design of the <xref:System.IO> classes provides simplified stream composing. Base streams can be attached to one or more pass-through streams that provide the functionality you want. A reader or writer can be attached to the end of the chain, so that the preferred types can be read or written easily.  
+The design of the <xref:System.IO> classes provides simplified stream composing. You can attach base streams to one or more pass-through streams that provide the functionality you want. You can attach a reader or writer to the end of the chain, so the preferred types can be read or written easily.  
 
-The following code examples create a **FileStream** around the existing *MyFile.txt* in order to buffer *MyFile.txt*. **FileStreams** are buffered by default.
+The following code examples create a **FileStream** around the existing *MyFile.txt* in order to buffer *MyFile.txt*. Note that **FileStreams** are buffered by default.
 
 >[!IMPORTANT]
 >The examples assume that a file named *MyFile.txt* already exists in the same folder as the app.  

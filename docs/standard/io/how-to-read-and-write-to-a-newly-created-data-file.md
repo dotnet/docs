@@ -22,7 +22,7 @@ The <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader?displayProper
 The example creates a data file called *Test.data* in the current directory, creates the associated <xref:System.IO.BinaryWriter> and <xref:System.IO.BinaryReader> objects, and uses the <xref:System.IO.BinaryWriter> object to write the integers 0 through 10 to *Test.data*, which leaves the file pointer at the end of the file. The <xref:System.IO.BinaryReader> object then sets the file pointer back to the origin and reads out the specified content.  
   
 >[!NOTE]
->If *Test.data* already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> rather than `FileMode.CreateNew` to always create a new file without throwing an exception.  
+>If *Test.data* already exists in the current directory, an <xref:System.IO.IOException> exception is thrown. Use the file mode option <xref:System.IO.FileMode.Create?displayProperty=nameWithType> rather than **FileMode.CreateNew** to always create a new file without throwing an exception.  
   
 ## Example  
  [!code-cpp[System.IO.BinaryReaderWriter#7](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.BinaryReaderWriter/CPP/source6.cpp#7)]

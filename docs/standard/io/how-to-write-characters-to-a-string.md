@@ -15,7 +15,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # How to: Write characters to a string
-The following code examples write characters synchronously and asynchronously from a character array into a string.  
+The following code examples write characters synchronously or asynchronously from a character array into a string.  
   
 ## Example: Write characters synchronously in a console app  
  The following example writes five characters synchronously from an array to a string.  

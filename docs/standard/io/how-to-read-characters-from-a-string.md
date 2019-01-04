@@ -17,7 +17,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # How to: Read characters from a string
-The following code examples show how to read characters synchronously and asynchronously from a string.  
+The following code examples show how to read characters synchronously or asynchronously from a string.  
   
 ## Example: Read characters synchronously in a console app  
  This example reads 13 characters synchronously from a string, stores them in an array, and displays those characters. The example then reads the rest of the characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.  
@@ -37,7 +37,7 @@ The following code examples show how to read characters synchronously and asynch
 - <xref:System.IO.StringReader>  
 - <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
 - [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [NIB: How to: Create a directory listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
+- [How to: Create a directory listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
 - [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
 - [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
 - [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  

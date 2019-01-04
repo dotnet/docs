@@ -37,7 +37,7 @@ The following table shows the predefined implicit conversions between .NET numer
 
 - There are no implicit conversions from the `char`, `double` and `decimal` types.
   
-- There are no implicit conversions between `decimal` type and the `float` type or the `double` type.  
+- There are no implicit conversions between the `decimal` type and the `float` or `double` types.  
   
 - A value of a constant expression of type `int` (for example, a value represented by an integral literal) can be converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, or `ulong`, provided it's within the range of the destination type:
 

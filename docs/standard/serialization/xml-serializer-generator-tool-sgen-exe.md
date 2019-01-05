@@ -17,7 +17,7 @@ sgen [options]
 |Option|Description|  
 |------------|-----------------|  
 |**/a\[ssembly\]:**_filename_|Generates serialization code for all the types contained in the assembly or executable specified by *filename*. Only one file name can be provided. If this argument is repeated, the last file name is used.|  
-|**/c\[ompiler\]:** *options*|Specifies the options to pass to the C# compiler. All csc.exe options are supported as they are passed to the compiler. This can be used to specify that the assembly should be signed and to specify the key file.|  
+|**/c\[ompiler\]:**_options_|Specifies the options to pass to the C# compiler. All csc.exe options are supported as they are passed to the compiler. This can be used to specify that the assembly should be signed and to specify the key file.|  
 |**/d\[ebug\]**|Generates an image that can be used with a debugger.|  
 |**/f\[orce\]**|Forces the overwriting of an existing assembly of the same name. The default is **false**.|  
 |**/help or /?**|Displays command syntax and options for the tool.|  

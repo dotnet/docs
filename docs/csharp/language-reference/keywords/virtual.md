@@ -24,7 +24,7 @@ The implementation of a virtual member can be changed by an [overriding member](
 
 ## Remarks
 
-When a virtual method is invoked, the run-time type of the object is checked for an overriding member. The overriding member in the most derived class is called, which might be the original member, if no derived class has overridden the member.
+When a virtual method is invoked, the run-time type of the object is checked for an overridden member. The very last overridden member is called, which might be the original member, if no derived class has overridden the member.
 
 By default, methods are non-virtual. You cannot override a non-virtual method.
 

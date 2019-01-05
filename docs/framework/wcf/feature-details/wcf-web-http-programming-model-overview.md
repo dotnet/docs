@@ -20,7 +20,7 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
 >  Services written with the WCF WEB HTTP programming model do not use SOAP messages. Because SOAP is not used, the security features provided by WCF cannot be used. You can, however use transport-based security by hosting your service with HTTPS. For more information about WCF security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
   
 > [!WARNING]
->  Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](http://learn.iis.net/page.aspx/357/webdav-for-iis-70/)  
+>  Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](https://learn.iis.net/page.aspx/357/webdav-for-iis-70/)  
   
 ## URI Processing with UriTemplate and UriTemplateTable  
  URI templates provide an efficient syntax for expressing large sets of structurally similar URIs. For example, the following template expresses the set of all three-segment URIs that begin with "a" and end with "c" without regard to the value of the intermediate segment: a/{segment}/c  

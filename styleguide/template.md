@@ -52,7 +52,7 @@ All basic and GitHub Flavored Markdown (GFM) is supported. For more information 
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
 - Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+- Use the [HTML entity code](https://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
 
 ## File name
 
@@ -233,7 +233,7 @@ Examples:
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
 
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily.
+You can use a [Markdown table generator tool](https://www.tablesgenerator.com/markdown_tables) to help creating them more easily.
 
 ## Code
 

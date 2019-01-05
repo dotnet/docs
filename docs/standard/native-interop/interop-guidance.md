@@ -35,7 +35,7 @@ When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(
 
 Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly want ANSI treatment of your strings.
 
-**❌ DO NOT** use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for [String.Intern](xref:System.String.Intern).
+**❌ DO NOT** use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern?displayProperty=nameWithType>.
 
 **❌ AVOID** `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such it can be extremely inefficient. Take the typical
 scenario of calling a Windows API that takes a string:

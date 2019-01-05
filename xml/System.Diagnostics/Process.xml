@@ -482,7 +482,7 @@
   
  After canceling, you can resume the asynchronous read operation by calling <xref:System.Diagnostics.Process.BeginErrorReadLine%2A> again.  
   
- When you call <xref:System.Diagnostics.Process.CancelErrorRead%2A>, all in-progress read operations for <xref:System.Diagnostics.Process.StandardError%2A> are completed and then the event handler is disabled. All further redirected output to <xref:System.Diagnostics.Process.StandardError%2A> is saved in a buffer. If you re-enable the event handler with a call to <xref:System.Diagnostics.Process.BeginErrorReadLine%2A>, the saved output is sent to the event handler and asynchronous read operations resume. If you want to change the event handler before resuming asynchronous read operations, you must remove the existing event handler before adding the new event handler:  
+ When you call <xref:System.Diagnostics.Process.CancelErrorRead%2A>, all in-progress read operations for <xref:System.Diagnostics.Process.StandardError%2A> are completed and then the event handler is disabled. All further redirected output to <xref:System.Diagnostics.Process.StandardError%2A> will be lost. If you re-enable the event handler with a call to <xref:System.Diagnostics.Process.BeginErrorReadLine%2A>, asynchronous read operations resume. If you want to change the event handler before resuming asynchronous read operations, you must remove the existing event handler before adding the new event handler:  
   
 ```csharp  
 // At this point the DataReceivedEventHandler(ErrorHandler1)   

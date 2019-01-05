@@ -1,6 +1,6 @@
 ---
 title: "How to: Write text to a file"
-ms.date: "12/20/2018"
+ms.date: "01/04/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -38,8 +38,8 @@ The following examples show how to:
    
 1. Write text to a new file and append new lines of text to the same file using the <xref:System.IO.File> class. The <xref:System.IO.File.WriteAllText%2A> and <xref:System.IO.File.AppendAllLines%2A> methods open and close the file automatically. If the path you provide to the <xref:System.IO.File.WriteAllText%2A> method already exists, the file is overwritten.  
 
->[!NOTE]
->The examples are kept simple, to focus on the task being performed. A real-world app generally provides more robust error checking and exception handling.  
+> [!NOTE]
+> These examples show only the minimum amount of code needed. A real-world app usually provides more robust error checking and exception handling.  
   
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source.cs)] 
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source.vb)]  

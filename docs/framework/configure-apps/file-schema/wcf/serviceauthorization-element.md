@@ -19,7 +19,7 @@ Specifies settings that authorize access to service operations
      impersonateCallerForAllOperations="Boolean"  
       principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"  
       roleProviderName="String"  
-      serviceAuthorizationManagerType="String" />  
+      serviceAuthorizationManagerType="String">  
       <authorizationPolicies>  
          <add policyType="String" />  
       </authorizationPolicies>  

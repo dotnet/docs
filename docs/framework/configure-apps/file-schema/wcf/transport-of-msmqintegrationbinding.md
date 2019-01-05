@@ -18,9 +18,9 @@ msmqIntegrationBinding
 ```xml  
 <security>  
     <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-        msmqEncryptionAlgorithm="RC4Stream/AES"  
-        msmqProtectionLevel="None/Sign/EncryptAndSign"  
-        msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
+               msmqEncryptionAlgorithm="RC4Stream/AES"  
+               msmqProtectionLevel="None/Sign/EncryptAndSign"  
+               msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
 </security>  
 ```  
   

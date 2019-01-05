@@ -22,7 +22,7 @@ endpointBehaviors section
    issuedTokenRenewalThresholdPercentage = "0 to 100"  
    issuerChannelBehaviors="String"  
       localIssuerChannelBehaviors="String"  
-   maxIssuedTokenCachingTime="TimeSpan"  
+   maxIssuedTokenCachingTime="TimeSpan">  
 </issuedToken>  
 ```  
   

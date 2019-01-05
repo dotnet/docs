@@ -16,8 +16,8 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
   
 ```xml  
 <serviceThrottling maxConcurrentCalls="Integer"  
-    maxConcurrentInstances="Integer"  
-    maxConcurrentSessions="Integer" />  
+                   maxConcurrentInstances="Integer"  
+                   maxConcurrentSessions="Integer" />  
 ```  
   
 ## Attributes and Elements  
@@ -56,7 +56,7 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
       <serviceMetadata httpGetEnabled="True"/>   
       <!-- Specify throttling behavior -->  
       <serviceThrottling maxConcurrentCalls="2"   
-           maxConcurrentInstances="10"/>   
+                         maxConcurrentInstances="10"/>   
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  

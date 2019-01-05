@@ -94,6 +94,7 @@ trustedStoreLocation="CurrentUser/LocalMachine"
    </clientCredentials>  
   </behavior>  
  </endpointBehaviors>  
+</behaviors>  
 ```  
   
 ## See Also  

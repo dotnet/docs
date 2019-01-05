@@ -18,15 +18,15 @@ Defines properties that control authentication parameters for the HTTP transport
 ```xml  
 <basicHttpBinding>  
     <binding>  
-        <security  
-        mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
+        <security mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
             <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"  
-             proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string" >  
+                       proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string" >  
                 <extendedProtectionPolicy  
                      policyEnforcement="Never|WhenSupported|Always"  
                      protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                        </extendedProtectionPolicy>  
+                    <customServiceNames>
+                    </customServiceNames>  
+                </extendedProtectionPolicy>  
             </transport>  
         </security>  
     </binding>  
@@ -99,11 +99,11 @@ Defines properties that control authentication parameters for the HTTP transport
                <security mode="Transport">  
                    <transport clientCredentialType="None"  
                               proxyCredentialType="None">  
-                       <extendedProtectionPolicy  
-                          policyEnforcement="WhenSupported"  
-                          protectionScenario="TransportSelected">  
-                    <customServiceNames></customServiceNames>  
-                       </extendedProtectionPolicy>  
+                        <extendedProtectionPolicy policyEnforcement="WhenSupported"  
+                                                  protectionScenario="TransportSelected">  
+                            <customServiceNames>
+                            </customServiceNames>  
+                        </extendedProtectionPolicy>  
                </security>  
            </binding>  
         </basicHttpBinding>  

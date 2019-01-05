@@ -31,15 +31,20 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
        sendTimeout="TimeSpan"  
        textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
        transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-       useDefaultWebProxy="Boolean"  
+       useDefaultWebProxy="Boolean">  
        <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">  
            <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"  
-                  proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
-                                    realm="string" />  
-           <message  algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
-                                    clientCredentialType="UserName/Certificate"/>  
+                      proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
+                      realm="string" />  
+           <message algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
+                    clientCredentialType="UserName/Certificate" />  
        </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
+       <readerQuotas maxArrayLength="Integer"
+                     maxBytesPerRead="Integer"
+                     maxDepth="Integer"
+                     maxNameTableCharCount="Integer"
+                     maxStringContentLength="Integer" />
+    </binding>  
 </basicHttpContextBinding>  
 ```  
   

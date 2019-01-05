@@ -93,7 +93,8 @@ trustedStoreLocation="CurrentUser/LocalMachine"
     </peer>  
    </clientCredentials>  
   </behavior>  
-</endpointBehaviors>  
+ </endpointBehaviors>  
+</behaviors>  
 ```  
   
 ## See Also  

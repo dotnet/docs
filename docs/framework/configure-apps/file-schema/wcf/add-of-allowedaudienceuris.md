@@ -19,7 +19,7 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
   
 ```xml  
 <allowedAudienceUris>   
-   <add allowedAudienceUri="String"/>  
+   <add allowedAudienceUri="String" />  
 </allowedAudienceUris>  
 ```  
   

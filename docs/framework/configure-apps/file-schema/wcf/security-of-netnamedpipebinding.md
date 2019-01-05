@@ -18,7 +18,7 @@ Defines the security settings for a binding.
 <netNamedPipeBinding>  
       <binding>  
             <security mode="None/Transport">  
-                        <transport protectionLevel="None/Sign/EncryptAndSign" />  
+                  <transport protectionLevel="None/Sign/EncryptAndSign" />  
             </security>  
       </binding>  
 </netNamedPipeBinding>  

@@ -19,12 +19,12 @@ msmqIntegrationBinding
    <binding>   
        <security mode="None/Transport">  
          <transport msmqAuthenticationMode="None/Windows/Certificate"  
-            msmqEncryptionAlgorithm="RC4Stream/AES"  
-            msmqProtectionLevel="None/Sign/EncryptAndSign"  
-            msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-          <message  algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
-                        clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-            defaultProtectionLevel="None/Sign/EncryptAndSign" />  
+                    msmqEncryptionAlgorithm="RC4Stream/AES"  
+                    msmqProtectionLevel="None/Sign/EncryptAndSign"  
+                    msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
+         <message algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
+                  clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
+                  defaultProtectionLevel="None/Sign/EncryptAndSign" />  
        </security>  
    </binding>  
 </msmqIntegrationBinding>   

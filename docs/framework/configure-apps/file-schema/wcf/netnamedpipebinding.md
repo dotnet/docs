@@ -14,24 +14,28 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
   
 ```xml  
 <netNamedPipeBinding>  
-   <binding   
-      closeTimeout="TimeSpan"  
-      hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-      maxBufferPoolSize="Integer"  
-      maxBufferSize="Integer"  
-      maxConnections="Integer"   
-      maxReceivedMessageSize="Integer"  
-            name="string"  
-      openTimeout="TimeSpan"   
-      receiveTimeout="TimeSpan"  
-      sendTimeout="TimeSpan"  
-      transactionFlow="Boolean"  
-      transactionProtocol="OleTransactions/WS-AtomicTransactionOctober2004"  
-            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-      <security mode="None/Transport">  
-            <transport  protectionLevel="None/Sign/EncryptAndSign" />  
-      </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
+  <binding closeTimeout="TimeSpan"  
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
+           maxBufferPoolSize="Integer"  
+           maxBufferSize="Integer"  
+           maxConnections="Integer"   
+           maxReceivedMessageSize="Integer"  
+           name="string"  
+           openTimeout="TimeSpan"   
+           receiveTimeout="TimeSpan"  
+           sendTimeout="TimeSpan"  
+           transactionFlow="Boolean"  
+           transactionProtocol="OleTransactions/WS-AtomicTransactionOctober2004"  
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">  
+    <security mode="None/Transport">  
+      <transport protectionLevel="None/Sign/EncryptAndSign" />  
+    </security>  
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>  
 </netNamedPipeBinding>  
 ```  
   
@@ -103,8 +107,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
   
     <bindings>  
       <netNamedPipeBinding>  
-        <binding   
-                 closeTimeout="00:01:00"  
+        <binding closeTimeout="00:01:00"  
                  openTimeout="00:01:00"   
                  receiveTimeout="00:10:00"   
                  sendTimeout="00:01:00"  

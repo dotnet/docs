@@ -18,7 +18,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 ```xml  
 <message   
    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-      clientCredentialType="UserName/Certificate"/>  
+   clientCredentialType="UserName/Certificate" />  
 ```  
   
 ## Attributes and Elements  
@@ -59,7 +59,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
                behaviorConfiguration="CalculatorServiceBehavior">  
         <host>  
           <baseAddresses>  
-            <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  
+            <add baseAddress="http://localhost:8000/ServiceModelSamples/service" />  
           </baseAddresses>  
         </host>  
         <!-- this endpoint is exposed at the base address provided by host: http://localhost:8000/ServiceModelSamples/service  -->  
@@ -82,7 +82,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
         -->  
         <binding name="Binding1" >  
           <security mode = "Message">  
-            <message clientCredentialType="Certificate"/>  
+            <message clientCredentialType="Certificate" />  
           </security>  
         </binding>  
       </basicHttpBinding>  
@@ -92,7 +92,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
     <behaviors>  
       <serviceBehaviors>  
         <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata httpGetEnabled="True"/>  
+          <serviceMetadata httpGetEnabled="True" />  
           <serviceDebug includeExceptionDetailInFaults="False" />  
           <!--  
         The serviceCredentials behavior allows one to define a service certificate.  

@@ -16,15 +16,15 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
   
 ```xml  
 <workflowRuntime cachedInstanceExpiration="TimeSpan"  
-                                  enablePerformanceCounters="Boolean"  
-                                  name="String"  
-                                  validateOnCreate="Boolean">  
-                 <commonParameters>  
-                    <add name="String" value="String" />  
-                 </commonParameters>  
-                 <services>  
-                    <add type="String"/>  
-                 </services>  
+                 enablePerformanceCounters="Boolean"  
+                 name="String"  
+                 validateOnCreate="Boolean">  
+   <commonParameters>  
+      <add name="String" value="String" />  
+   </commonParameters>  
+   <services>  
+      <add type="String"/>  
+   </services>  
 </workflowRuntime>  
 ```  
   

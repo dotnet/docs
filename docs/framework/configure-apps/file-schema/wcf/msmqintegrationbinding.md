@@ -22,19 +22,20 @@ msmqIntegrationBinding
        deadLetterQueue="Uri"  
        durable="Boolean"  
        exactlyOnce="Boolean"   
-       maxReceivedMessageSize"Integer"  
+       maxReceivedMessageSize="Integer"  
        maxRetryCycles="Integer"   
        name="string"   
-       openTimeout="TimeSpan"        receiveContextEnabled="Boolean"  
+       openTimeout="TimeSpan"
+       receiveContextEnabled="Boolean"  
        receiveErrorHandling="Drop/Fault/Move/Reject"  
        receiveTimeout="TimeSpan"   
        receiveRetryCount="Integer"  
        retryCycleDelay="TimeSpan"    
        sendTimeout="TimeSpan"   
-       serializationFormat="XML/Binary/ActiveX/ByteArray/Stream">  
+       serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"  
        timeToLive="TimeSpan"    
-       useMsmqTracing="Boolean  
-       useSourceJournal="Boolean"  
+       useMsmqTracing="Boolean"  
+       useSourceJournal="Boolean">  
    </binding>  
 </msmqIntegrationBinding>   
 ```  
@@ -95,7 +96,7 @@ msmqIntegrationBinding
   
 ```xml  
 <configuration>  
-<system.ServiceModel>  
+ <system.ServiceModel>  
     <bindings>  
        <msmqIntegrationBinding>  
            <binding   
@@ -116,11 +117,11 @@ msmqIntegrationBinding
                     useSourceJournal="true"   
                     useMsmqTracing="true"   
                     serializationFormat="Binary">  
-                    <security mode="None" />  
+                <security mode="None" />  
            </binding>  
-       </msmqIntegrationBinding  
+       </msmqIntegrationBinding>  
    </bindings>  
-</system.ServiceModel>  
+ </system.ServiceModel>  
 </configuration>  
 ```  
   

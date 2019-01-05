@@ -66,7 +66,8 @@ storeLocation="LocalMachine/CurrentUser"
     </peer>  
    </clientCredentials>  
   </behavior>  
-</endpointBehaviors>  
+ </endpointBehaviors>  
+</behaviors>  
 ```  
   
 ## See Also  

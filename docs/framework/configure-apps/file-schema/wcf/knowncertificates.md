@@ -19,9 +19,9 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 ```xml  
 <knownCertificates>   
       <add findValue="String"  
-         storeLocation="CurrentUser/LocalMachine"  
-          storeName=" CurrentUser/LocalMachine"  
-           x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>  
+           storeLocation="CurrentUser/LocalMachine"  
+           storeName=" CurrentUser/LocalMachine"  
+           x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
 </knownCertificates>  
 ```  
   

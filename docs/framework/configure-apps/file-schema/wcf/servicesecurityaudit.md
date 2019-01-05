@@ -17,9 +17,9 @@ Specifies settings that enable auditing of security events during service operat
 ```xml  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
-   messageAuthenticationAuditLevel= None/Success/Failure/SuccessOrFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
-   suppressAuditFailure="Boolean"  
-/>  
+   messageAuthenticationAuditLevel="None/Success/Failure/SuccessOrFailure"
+   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
+   suppressAuditFailure="Boolean" />  
 ```  
   
 ## Attributes and Elements  
@@ -60,6 +60,7 @@ Specifies settings that enable auditing of security events during service operat
   
 ```xml  
 <system.serviceModel>  
+ <behaviors>  
    <serviceBehaviors>  
       <behavior name="NewBehavior">  
          <serviceSecurityAudit auditLogLocation="Application"   
@@ -68,7 +69,8 @@ Specifies settings that enable auditing of security events during service operat
              messageAuthenticationAuditLevel="Success" />  
       </behavior>  
    </serviceBehaviors>  
-</behaviors>  
+ </behaviors>  
+</system.serviceModel>  
 ```  
   
 ## See Also  

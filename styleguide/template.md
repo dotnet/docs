@@ -477,4 +477,4 @@ You can see an example of selectors in action at the [Azure docs](https://docs.m
 >[Previous](../docs/csharp/expression-trees-interpreting.md)
 >[Next](../docs/csharp/expression-trees-translating.md)
 
-You can see an example of step-by-steps in action at the [C# Guide](~/docs/csharp/tour-of-csharp/program-structure.md).
+You can see an example of step-by-steps in action at the [C# Guide](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

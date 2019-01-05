@@ -454,7 +454,7 @@ A custom style is available for lists. You can render lists with green check mar
 > * How to add a class and an XmlSerializer
 > * How to build and run the application
 
-You can see an example of checked lists in action in the [.NET Core docs](~/docs/core/additional-tools/xml-serializer-generator.md).
+You can see an example of checked lists in action in the [.NET Core docs](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 
 ### Buttons
 

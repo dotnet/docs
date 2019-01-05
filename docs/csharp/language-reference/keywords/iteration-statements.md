@@ -14,13 +14,14 @@ You can create loops by using the iteration statements. Iteration statements cau
 
 The following keywords are used in iteration statements:
 
+- [while](while.md)
+
 - [do](do.md)
 
 - [for](for.md)
 
 - [foreach, in](foreach-in.md)
 
-- [while](while.md)
 
 ## See also
 

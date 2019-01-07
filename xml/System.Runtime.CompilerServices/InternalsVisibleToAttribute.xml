@@ -39,7 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Ordinarily, types and members with `internal` scope (in C#) and `friend` scope (in Visual Basic) are visible only in the assembly in which they are defined. The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute makes them also visible to the types in a specified assembly, which is known as a friend assembly.  
+ Ordinarily, types and members with `internal` scope (in C#) and `Friend` scope (in Visual Basic) are visible only in the assembly in which they are defined. The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute makes them also visible to the types in a specified assembly, which is known as a friend assembly. This only applies to `internal` (`Friend` in VB) methods only, not `private` ones.
   
  The attribute is applied at the assembly level. This means that it can be included at the beginning of a source code file, or it can be included in the AssemblyInfo file in a Visual Studio project. You can use the attribute to specify a single friend assembly that can access the internal types and members of the current assembly. You can define multiple friend assemblies in two ways. They can appear as individual assembly-level attributes, as the following example illustrates.  
   

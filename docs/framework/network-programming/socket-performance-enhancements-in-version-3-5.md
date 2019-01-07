@@ -2,8 +2,6 @@
 title: "Socket Performance Enhancements in Version 3.5"
 ms.date: "03/30/2017"
 ms.assetid: 225aa5f9-c54b-4620-ab64-5cd100cfd54c
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Socket Performance Enhancements in Version 3.5
 The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been enhanced in Version 3.5 for use by applications that use asynchronous network I/O to achieve the highest performance. A series of new classes have been added as part of a set of enhancements to the <xref:System.Net.Sockets.Socket> class that provide an alternative asynchronous pattern that can be used by specialized high-performance socket applications. These enhancements were specifically designed for network server applications that require high performance. An application can use the enhanced asynchronous pattern exclusively, or only in targeted hot areas of their application (when receiving large amounts of data, for example).  

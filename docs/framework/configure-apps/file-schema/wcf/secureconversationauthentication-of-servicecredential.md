@@ -2,7 +2,6 @@
 title: "&lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 0bd3fac7-befd-4a45-ba51-c200b33be0fd
-author: "BrucePerlerMS"
 ---
 # &lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;
 Specifies the settings for a secure conversation service.  

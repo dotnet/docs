@@ -2,7 +2,6 @@
 title: "Service: Security Validation and Authentication Failures Per Second"
 ms.date: "03/30/2017"
 ms.assetid: 4af18009-e778-490b-9ba6-e76485285830
-author: "BrucePerlerMS"
 ---
 # Service: Security Validation and Authentication Failures Per Second
 Counter name: Security Validation and Authentication Failures Per Second.  

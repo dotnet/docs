@@ -18,7 +18,7 @@ These instructions will help you install the .NET Framework versions you need. T
 ## .NET Framework 4.7.2
 
 > [!div class="button"]
-[Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
+> [Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
 The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for .NET Framework 4.0 or later.
 

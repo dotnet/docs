@@ -11,7 +11,8 @@ Member support for <xref:System.TimeSpan?displayProperty=nameWithType> greatly d
 ## Previous Limitations  
  When using LINQ to SQL with versions of the .NET Framework prior to .NET Framework 3.5 SP1, you cannot map SQL Server database fields to <xref:System.TimeSpan?displayProperty=nameWithType>. However, operations on <xref:System.TimeSpan> are supported because <xref:System.TimeSpan> values can be returned from <xref:System.DateTime> subtraction or introduced into an expression as a literal or bound variable.  
   
-## Supported System.TimeSpan Method Support  
+## Supported System.TimeSpan member support
+
  The following LINQ to SQL-supported methods, operators, and properties are available for you to use in your LINQ to SQL queries. Once mapped in the object model or external mapping file, LINQ to SQL allows you to call many of the <xref:System.TimeSpan?displayProperty=nameWithType> members inside your LINQ to SQL queries.  
   
 |Supported <xref:System.TimeSpan> Methods|Supported <xref:System.TimeSpan> Operators|Supported <xref:System.TimeSpan> Properties|  
@@ -21,7 +22,7 @@ Member support for <xref:System.TimeSpan?displayProperty=nameWithType> greatly d
 |<xref:System.TimeSpan.Duration%2A>|<xref:System.TimeSpan.op_GreaterThanOrEqual%2A>|<xref:System.TimeSpan.MaxValue>|  
 |<xref:System.TimeSpan.Equals%28System.TimeSpan%2CSystem.TimeSpan%29>|<xref:System.TimeSpan.op_Inequality%2A>|<xref:System.TimeSpan.Milliseconds%2A>|  
 |<xref:System.TimeSpan.Equals%28System.TimeSpan%29>|<xref:System.TimeSpan.op_LessThan%2A>|<xref:System.TimeSpan.Minutes%2A>|  
-||<xref:System.TimeSpan.op_LessThanOrEqual%2A>|<!--zz <xref:System.TimeSpan.MinValue%2A>-->|  
+||<xref:System.TimeSpan.op_LessThanOrEqual%2A>|<xref:System.TimeSpan.MinValue>|  
   
 > [!NOTE]
 >  The ability to map <xref:System.TimeSpan?displayProperty=nameWithType> to a SQL `TIME` column with LINQ to SQL requires the .NET Framework 3.5 SP1 and beyond. The SQL `TIME` data type is only available in Microsoft SQL Server 2008 and beyond.  

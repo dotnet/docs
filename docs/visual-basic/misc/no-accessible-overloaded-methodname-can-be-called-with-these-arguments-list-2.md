@@ -1,11 +1,11 @@
 ---
-title: "No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a narrowing conversion: &lt;list&gt;"
+title: "No accessible overloaded '&lt;methodname&gt;' can be called with these arguments without a narrowing conversion: &lt;list&gt;"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrAmbiguousCall2"
 ms.assetid: 13b20ffa-9f02-4971-a3cb-e08b402fd971
 ---
-# No accessible overloaded &#39;&lt;methodname&gt;&#39; can be called with these arguments without a narrowing conversion: &lt;list&gt;
+# No accessible overloaded '&lt;methodname&gt;' can be called with these arguments without a narrowing conversion: &lt;list&gt;
 An overloaded method was called, but the method cannot be matched with the list of provided arguments without a narrowing conversion.  
   
 ## To correct this error  

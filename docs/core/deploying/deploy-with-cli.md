@@ -1,15 +1,15 @@
 ---
-title: .NET Core app deployment with CLI tools
-description: Learn .NET Core app deployment with command-line interface (CLI) tools
+title: Deploy .NET Core apps with command-line interface (CLI) tools
+description: Learn to deploy a .NET Core app with command-line interface (CLI) tools
 author: rpetrusha
 ms.author: ronpet
 ms.date: 09/05/2018
 dev_langs: 
   - "csharp"
   - "vb"
+ms.custom: seodec18
 ---
-
-# Deploying .NET Core apps with command-line interface (CLI) tools
+# Deploy .NET Core apps with command-line interface (CLI) tools
 
 You can deploy a .NET Core application either as a *framework-dependent deployment*, which includes your application binaries but depends on the presence of .NET Core on the target system, or as a *self-contained deployment*, which includes both your application and the .NET Core binaries. For an overview, see [.NET Core Application Deployment](index.md).
 

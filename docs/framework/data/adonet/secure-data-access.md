@@ -60,11 +60,8 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |Resource|Description|  
 |--------------|-----------------|  
 |[Security Considerations and Guidance for Access 2007](https://go.microsoft.com/fwlink/?LinkId=98354)|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
-|[Help Protect an Access database with User-Level Security (MDB)](https://go.microsoft.com/fwlink/?LinkId=47697)|Applies to Access 2003. Provides instructions for implementing user-level security to protect data in Access 2003.|  
 |[Understanding the Role of Workgroup Information Files in Access Security](https://support.microsoft.com/kb/305542)|Explains the role and relationship of the workgroup information file in Access 2003 security.|  
 |[Frequently Asked Questions About Microsoft Access Security for Microsoft Access versions 2.0 through 2000](https://go.microsoft.com/fwlink/?LinkId=47698)|Downloadable version of the Microsoft Access Security FAQ.|  
-|[Troubleshoot Security and Protection](https://go.microsoft.com/fwlink/?LinkId=47703)|Presents solutions to common problems with security in Excel 2003.|  
-  
 ## Enterprise Services  
  COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
   
@@ -81,9 +78,9 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|  
-|[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx)|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|  
-  
+|[Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|
+|[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|
+
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  

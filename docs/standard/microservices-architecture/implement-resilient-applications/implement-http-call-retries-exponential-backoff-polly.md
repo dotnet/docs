@@ -80,8 +80,6 @@ Policy
 
     [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
 
-
-
 >[!div class="step-by-step"]
-[Previous](explore-custom-http-call-retries-exponential-backoff.md)
-[Next](implement-circuit-breaker-pattern.md)
+>[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+>[Next](implement-circuit-breaker-pattern.md)

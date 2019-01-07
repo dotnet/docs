@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 16c38aaa-9927-4f3c-ab0f-81636cce57a3
 ---
 # Walkthrough: SQL Generation
-This topic illustrates how SQL generation occurs in the [Sample Provider](https://go.microsoft.com/fwlink/?LinkId=180616). The following Entity SQL query uses the model that is included with the sample provider:  
+This topic illustrates how SQL generation occurs in the [Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0). The following Entity SQL query uses the model that is included with the sample provider:  
   
 ```  
 SELECT  j1.ProductId, j1.ProductName, j1.CategoryName, j2.ShipCountry, j2.ProductId  

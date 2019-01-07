@@ -217,7 +217,7 @@ This topic provides a list of performance counters you can find in the [Windows 
   
  Performance counters are grouped into Categories. An application can list all of the categories with the following example code:  
   
-```  
+```csharp
 PerformanceCounterCategory[] Array = PerformanceCounterCategory.GetCategories();  
 for (int i = 0; i < Array.Length; i++)  
 {  

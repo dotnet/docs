@@ -16,7 +16,7 @@ The W3C XSL Transformations (XSLT) Version 1.0 Recommendation includes areas in 
   
 -   Error indicates that an exception is raised for this condition.  
   
--   The section references can be found in the [W3C XSL Transformations (XSLT) Version 1.0 Recommendation](http://www.w3.org/TR/xslt) and the [W3C XSL Transformations (XSLT) Version 1.0 Specification Errata](https://www.w3.org/1999/11/REC-xslt-19991116-errata/).  
+-   The section references can be found in the [W3C XSL Transformations (XSLT) Version 1.0 Recommendation](https://www.w3.org/TR/xslt) and the [W3C XSL Transformations (XSLT) Version 1.0 Specification Errata](https://www.w3.org/1999/11/REC-xslt-19991116-errata/).  
   
 |XSLT condition|Section|XslCompiledTransform behavior|  
 |--------------------|-------------|-----------------------------------|  

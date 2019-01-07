@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "cache [.NET Framework], configuring"
 ms.assetid: 3f694a1c-de5d-47cf-a6eb-cfc369fb8a9f
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Configuring Caching in Network Applications
 To configure caching, you must specify a cache policy at the application or <xref:System.Net.WebRequest> level. The following topics provide code examples that demonstrate configuring applications and requests to use caching.  

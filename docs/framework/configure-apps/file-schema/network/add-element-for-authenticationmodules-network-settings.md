@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "<authenticationModules>, add element"
   - "<add> element, authenticationModules"
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;add&gt; Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  
@@ -78,6 +76,6 @@ Adds an authentication module to the application.
 ```  
   
 ## See Also  
- <xref:System.Net.IAuthenticationModule>  
- <xref:System.Net.AuthenticationManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.IAuthenticationModule>  
+- <xref:System.Net.AuthenticationManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

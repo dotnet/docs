@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "performanceCounter element"
   - "<performanceCounter> element"
 ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;performanceCounter&gt; Element (Network Settings)
 Enables or disables networking performance counters.  
@@ -70,7 +68,7 @@ Enables or disables networking performance counters.
 ```  
   
 ## See Also  
- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
- [Networking Performance Counters](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking)
+- <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)  
+- [Networking Performance Counters](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking)

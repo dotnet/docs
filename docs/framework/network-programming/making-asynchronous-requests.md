@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "Network Resources"
   - "WebRequest class, asynchronous access"
 ms.assetid: 735d3fce-f80c-437f-b02c-5c47f5739674
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Making Asynchronous Requests
 The <xref:System.Net> classes use the .NET Framework's standard asynchronous programming model for asynchronous access to Internet resources. The <xref:System.Net.WebRequest.BeginGetResponse%2A> and <xref:System.Net.WebRequest.EndGetResponse%2A> methods of the <xref:System.Net.WebRequest> class start and complete asynchronous requests for an Internet resource.  

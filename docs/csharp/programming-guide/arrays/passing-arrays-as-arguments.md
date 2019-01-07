@@ -1,5 +1,6 @@
 ---
-title: "Passing arrays as arguments (C# Programming Guide)"
+title: "Passing arrays as arguments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/05/2018
 helpviewer_keywords: 
   - "arrays [C#], passing as arguments"

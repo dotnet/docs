@@ -1,5 +1,6 @@
 ---
-title: "XML Documentation Comments (C# Programming Guide)"
+title: "XML Documentation Comments - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.xml"

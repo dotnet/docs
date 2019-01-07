@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "FTP"
 ms.assetid: 9b43f8b4-89d7-46a7-89fc-71aca916dd32
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # FTP
 The .NET Framework provides comprehensive support for the FTP protocol with the <xref:System.Net.FtpWebRequest> and <xref:System.Net.FtpWebResponse> classes. These classes are derived from <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse>. In most cases, the <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes provide all that is necessary to make the request, but if you need access to the FTP-specific features exposed as properties, you can typecast these classes to <xref:System.Net.FtpWebRequest> or <xref:System.Net.FtpWebResponse>.  

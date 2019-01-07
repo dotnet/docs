@@ -69,7 +69,7 @@
 #### [Channel Factory](channel-factory.md)
 #### [Expected Exceptions](expected-exceptions.md)
 #### [Retrieve Metadata](retrieve-metadata.md)
-#### [Avoiding Problems with the Using Statement](avoiding-problems-with-the-using-statement.md)
+#### [Use Close and Abort to release WCF client resources](use-close-abort-release-wcf-client-resources.md)
 #### [Typed Client](typed-client.md)
 ### [Contract](contract.md)
 #### [Data Contracts](data-contracts.md)

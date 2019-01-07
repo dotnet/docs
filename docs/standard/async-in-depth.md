@@ -38,7 +38,7 @@ public Task<string> GetHtmlAsync()
  	// Execution is synchronous here
 	var client = new HttpClient();
 	
-	return client.GetStringAsync("http://www.dotnetfoundation.org");
+	return client.GetStringAsync("https://www.dotnetfoundation.org");
 }
 ```
 
@@ -52,7 +52,7 @@ public async Task<string> GetFirstCharactersCountAsync(string url, int count)
 	
 	// Execution of GetFirstCharactersCountAsync() is yielded to the caller here
 	// GetStringAsync returns a Task<string>, which is *awaited*
-	var page = await client.GetStringAsync("http://www.dotnetfoundation.org");
+	var page = await client.GetStringAsync("https://www.dotnetfoundation.org");
 	
 	// Execution resumes when the client.GetStringAsync task completes,
     // becoming synchronous again.

@@ -1,5 +1,5 @@
 ---
-title: "Recursive Functions: The rec Keyword (F#)"
+title: "Recursive Functions: The rec Keyword"
 description: Learn how the F# 'rec' keyword is used with the 'let' keyword to define a recursive function.
 ms.date: 05/16/2016
 ---
@@ -30,8 +30,8 @@ The following code illustrates a recursive function that computes the *n*<sup>th
 
 [!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
 
->[!NOTE]
-In practice, code like that above is wasteful of memory and processor time because it involves the recomputation of previously computed values.
+> [!NOTE]
+> In practice, code like that above is wasteful of memory and processor time because it involves the recomputation of previously computed values.
 
 Methods are implicitly recursive within the type; there is no need to add the `rec` keyword. Let bindings within classes are not implicitly recursive.
 

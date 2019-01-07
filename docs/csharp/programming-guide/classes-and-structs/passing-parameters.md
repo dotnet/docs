@@ -1,5 +1,6 @@
 ---
-title: "Passing Parameters (C# Programming Guide)"
+title: "Passing Parameters - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "parameters [C#], passing"
@@ -23,7 +24,8 @@ In C#, arguments can be passed to parameters either by value or by reference. Pa
 -   [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
+
+For more information, see [Argument lists](~/_csharplang/spec/expressions.md#argument-lists) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 

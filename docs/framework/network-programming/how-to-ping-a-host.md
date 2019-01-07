@@ -4,15 +4,13 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Ping"
 ms.assetid: bbf20f5b-eca1-4661-af04-cb8837f9af05
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Ping a Host
 This sample shows how to ping a remote host.  
   
 ## Example  
   
-```  
+```csharp
 using System;  
 using System.Text;  
 using System.Net;  

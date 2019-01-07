@@ -11,7 +11,6 @@ Chapter 1 introduced the fundamental concepts regarding containers and Docker. T
 
 However, before we get into the application life cycle and DevOps, it is important to know how you are going to design and construct your application and what are your design choices.
 
-
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](common-container-design-principles.md)
+>[Previous](index.md)
+>[Next](common-container-design-principles.md)

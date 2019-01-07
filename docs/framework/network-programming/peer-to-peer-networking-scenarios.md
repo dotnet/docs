@@ -2,8 +2,6 @@
 title: "Peer-to-Peer Networking Scenarios"
 ms.date: "03/30/2017"
 ms.assetid: d23b1a64-2e08-4014-882a-c1dd766bdcc2
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Peer-to-Peer Networking Scenarios
 Peer-to-peer networking enables or enhances the following scenarios:  

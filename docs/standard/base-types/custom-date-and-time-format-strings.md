@@ -88,7 +88,7 @@ A date and time format string defines the text representation of a <xref:System.
 |"/"|The date separator.<br /><br /> More Information: [The "/" Custom Format Specifier](#dateSeparator).|2009-06-15T13:45:30 -> / (en-US)<br /><br /> 2009-06-15T13:45:30 -> - (ar-DZ)<br /><br /> 2009-06-15T13:45:30 -> . (tr-TR)|
 |"*string*"<br /><br /> '*string*'|Literal string delimiter.<br /><br /> More information: [Character literals](#Literals).|2009-06-15T13:45:30 ("arr:" h:m t) -> arr: 1:45 P<br /><br /> 2009-06-15T13:45:30 ('arr:' h:m t) -> arr: 1:45 P|
 |%|Defines the following character as a custom format specifier.<br /><br /> More information:[Using Single Custom Format Specifiers](#UsingSingleSpecifiers).|2009-06-15T13:45:30 (%h) -> 1|
-|\\|The escape character.<br /><br /> More information: [Character literals](#Literals) and [Using the Escape Character](#escape).|2009-06-15T13:45:30 (h \h) -> 1 h|
+|&#92;|The escape character.<br /><br /> More information: [Character literals](#Literals) and [Using the Escape Character](#escape).|2009-06-15T13:45:30 (h \h) -> 1 h|
 |Any other character|The character is copied to the result string unchanged.<br /><br /> More information: [Character literals](#Literals).|2009-06-15T01:45:30 (arr hh:mm t) -> arr 01:45 A|
 
  The following sections provide additional information about each custom date and time format specifier. Unless otherwise noted, each specifier produces an identical string representation regardless of whether it is used with a <xref:System.DateTime> value or a <xref:System.DateTimeOffset> value.

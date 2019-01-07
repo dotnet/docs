@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "server identifiers"
   - "scheme identifiers"
 ms.assetid: 4b48e22d-e4e5-48f0-be80-d549bda97415
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Introducing Pluggable Protocols
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be integrated quickly and easily into your applications. The Internet access classes in the <xref:System.Net> and <xref:System.Net.Sockets> namespaces can be used to implement both Web-based and Internet-based applications.  
@@ -36,7 +34,7 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
  The client application makes a request by identifying the requested Internet resource and the communication protocol to use for the request and response. If necessary, the client also provides any additional data required to complete the request, such as proxy location or authentication information (user name, password, and so on). Once the request is formed, the request can be sent to the server.  
   
 ## Identifying Resources  
- The .NET Framework uses a Uniform Resource Identifier (URI) to identify the requested Internet resource and communication protocol. The URI consists of at least three, and possibly four, fragments: the scheme identifier, which identifies the communications protocol for the request and response; the server identifier, which consists of either a Domain Name System (DNS) host name or a TCP address that uniquely identifies the server on the Internet; the path identifier, which locates the requested information on the server; and an optional query string, which passes information from the client to the server. For example, the URI `http://www.contoso.com/whatsnew.aspx?date=today` consists of the scheme identifier "http", the server identifier "www.contoso.com", the path "/whatsnew.aspx", and the query string "?date=today".  
+ The .NET Framework uses a Uniform Resource Identifier (URI) to identify the requested Internet resource and communication protocol. The URI consists of at least three, and possibly four, fragments: the scheme identifier, which identifies the communications protocol for the request and response; the server identifier, which consists of either a Domain Name System (DNS) host name or a TCP address that uniquely identifies the server on the Internet; the path identifier, which locates the requested information on the server; and an optional query string, which passes information from the client to the server. For example, the URI `http://www.contoso.com/whatsnew.aspx?date=today` consists of the scheme identifier `http`, the server identifier `www.contoso.com`, the path `/whatsnew.aspx`, and the query string `?date=today`.  
   
  After the server has received the request and processed the response, it returns the response to the client application. The response includes supplemental information, such as the type of the content (raw text or XML data, for example).  
   

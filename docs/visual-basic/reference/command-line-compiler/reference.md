@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "reference compiler option [Visual Basic]"
   - "-r compiler option [Visual Basic]"
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
-author: rpetrusha
-ms.author: ronpet
 ---
 # -reference (Visual Basic)
 Causes the compiler to make type information in the specified assemblies available to the project you are currently compiling.  

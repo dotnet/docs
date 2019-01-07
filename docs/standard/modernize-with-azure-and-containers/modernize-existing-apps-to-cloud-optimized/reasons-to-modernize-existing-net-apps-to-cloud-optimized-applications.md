@@ -62,5 +62,5 @@ All of these benefits ultimately provide key cost reductions for your end-to-end
 In the following sections, these benefits are explained in more detail, and are linked to specific technologies.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](microsoft-technologies-in-cloud-optimized-applications.md)
+>[Previous](index.md)
+>[Next](microsoft-technologies-in-cloud-optimized-applications.md)

@@ -1,5 +1,6 @@
 ---
-title: "How to: Use the My Namespace (C# Programming Guide)"
+title: "How to: Use the My Namespace - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, My namespace access"

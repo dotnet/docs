@@ -29,7 +29,7 @@ The following table summarizes the various functionalities provided by this tool
 |Generates serialization code.|[How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)|
 
 > [!CAUTION]
-> Svcutil overwrites existing files on a disk if the names supplied as parameters are identical. This can include code files, configuration, or metadata files. To avoid this when generating code and configuration flies, use the `/mergeConfig` switch.
+> Svcutil overwrites existing files on a disk if the names supplied as parameters are identical. This can include code files, configuration, or metadata files. To avoid this when generating code and configuration files, use the `/mergeConfig` switch.
 >
 > In addition, the `/r` and `/ct` switches for referencing types are for generating data contracts. These switches do not work when using XmlSerializer.
 

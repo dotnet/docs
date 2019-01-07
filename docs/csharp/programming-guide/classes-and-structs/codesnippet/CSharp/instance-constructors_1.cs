@@ -1,9 +1,9 @@
-        class CoOrds
+        class Coords
         {
             public int x, y;
 
             // constructor
-            public CoOrds()
+            public Coords()
             {
                 x = 0;
                 y = 0;

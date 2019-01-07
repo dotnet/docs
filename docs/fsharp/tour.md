@@ -1,13 +1,17 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-ms.date: 02/28/2018
+ms.date: 11/06/2018
 ---
 # Tour of F# #
 
-The best way to learn about F# is to read and write F# code.  This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine.  To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
+The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](tutorials/getting-started/index.md).
 
 There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
+
+## Executing the code online
+
+If you don't have F# installed on your machine, you can execute all of the samples online with the [Fable REPL](http://fable.io/repl/). Fable is a dialect of F# that executes directly in your browser. To view the samples that follow in the REPL, check out **Samples > Learn > Tour of F#** in the left-hand menu bar of the Fable REPL.
 
 ## Functions and Modules
 
@@ -75,8 +79,8 @@ Lists, Arrays, and Sequences are three primary collection types in the F# core l
 
 Processing collections or sequences of elements is typically done with [recursion](language-reference/functions/index.md#recursive-functions) in F#.  Although F# has support for loops and imperative programming, recursion is preferred because it is easier to guarantee correctness.
 
->[!NOTE]
-The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
+> [!NOTE]
+> The following example makes use of the pattern matching via the `match` expression.  This fundamental construct is covered later in this article.
 
 [!code-fsharp[RecursiveFunctions](../../samples/snippets/fsharp/tour.fs#L461-L500)]
 
@@ -187,6 +191,6 @@ Classes are great for a huge number of reasons, such as when you need to represe
 
 Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](tutorials/getting-started/index.md) to learn how to set up your development environment and write some code.
 
-The next steps for learning more can be whatever you like, but we recommend [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md)--> to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
+The next steps for learning more can be whatever you like, but we recommend [Introduction to Functional Programming in F#](introduction-to-functional-programming/index.md) to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
 
 Also, check out the [F# Language Reference](language-reference/index.md) to see a comprehensive collection of conceptual content on F#.

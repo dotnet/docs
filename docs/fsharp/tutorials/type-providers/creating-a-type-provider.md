@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Create a Type Provider (F#)"
+title: "Tutorial: Create a Type Provider"
 description: Learn how to create your own F# type providers in F# 3.0 by examining several simple type providers to illustrate the basic concepts.
 ms.date: 05/16/2016
 ---
@@ -742,7 +742,7 @@ This section shows how to provide a type that you can use to get rows with a `Di
 
 - Header names are either unit-less or have the form "Name (unit)" and don't contain commas.
 
-- Units are all Systeme International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
+- Units are all System International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
 
 - Units are all simple (for example, meter) rather than compound (for example, meter/second).
 

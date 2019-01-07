@@ -1,5 +1,5 @@
 ---
-title: "Conditional Expressions: if... then...else (F#)"
+title: "Conditional Expressions: if... then...else"
 description: Learn how to write conditional expressions in F# to execute different branches of code.
 ms.date: 05/16/2016
 ---

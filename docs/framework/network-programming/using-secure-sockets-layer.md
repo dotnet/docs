@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "receiving data, Secure Sockets Layer"
   - "Internet, Secure Sockets Layer"
 ms.assetid: 6e4289e6-d1b7-4e82-ab0d-e83e3b6063ed
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Using Secure Sockets Layer
 The <xref:System.Net> classes use the Secure Sockets Layer (SSL) to encrypt the connection for several network protocols.  

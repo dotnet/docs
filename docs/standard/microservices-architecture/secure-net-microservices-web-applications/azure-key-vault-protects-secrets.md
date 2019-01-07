@@ -46,5 +46,5 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
   [*https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile*](https://github.com/aspnet/Configuration/tree/master/src/Config.KeyPerFile)
 
 >[!div class="step-by-step"]
-[Previous](developer-app-secrets-storage.md)
-[Next](../key-takeaways.md)
+>[Previous](developer-app-secrets-storage.md)
+>[Next](../key-takeaways.md)

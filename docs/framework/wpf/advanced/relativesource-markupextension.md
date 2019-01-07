@@ -31,7 +31,9 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
     <RelativeSource Mode="modeEnumValue"/>  
   </Binding.RelativeSource>  
 </Binding>  
-- or   
+```
+-or-  
+```xml
 <Binding>  
   <Binding.RelativeSource>  
     <RelativeSource  

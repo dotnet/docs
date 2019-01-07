@@ -120,5 +120,5 @@ An example of a custom authorization requirement and handler for checking a user
   [*https://docs.microsoft.com/aspnet/core/security/authorization/policies*](/aspnet/core/security/authorization/policies)
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](developer-app-secrets-storage.md)
+>[Previous](index.md)
+>[Next](developer-app-secrets-storage.md)

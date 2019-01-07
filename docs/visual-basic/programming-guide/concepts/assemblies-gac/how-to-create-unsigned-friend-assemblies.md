@@ -2,8 +2,6 @@
 title: "How to: Create Unsigned Friend Assemblies (Visual Basic)"
 ms.date: 03/14/2018
 ms.assetid: 5735eb79-9729-4c46-ac1f-537ada3acaa7
-author: rpetrusha
-ms.author: ronpet
 ---
 # How to: Create Unsigned Friend Assemblies (Visual Basic)
 This example shows how to use friend assemblies with assemblies that are unsigned.  

@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 01e7d0b8-10f9-45c3-a4c5-53d44dc61eb8
-author: "BrucePerlerMS"
 ---
 # Message Security with a Windows Client
 This scenario shows a Windows Communication Foundation (WCF) client and server secured by message security mode. The client and service are authenticated using Windows credentials.  

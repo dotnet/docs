@@ -55,7 +55,7 @@ The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated
 ## Example  
  The following example demonstrates a situation that can activate this MDA:  
   
-```  
+```cpp
 // Library.cpp : Defines the unmanaged entry point for the DLL application.  
 #include "windows.h"  
 #include "stdio.h"  
@@ -70,8 +70,10 @@ void __stdcall Initialize(void __stdcall pfTarget())
 void __stdcall Callback()  
 {  
     g_pfTarget();  
-}  
-// ---------------------------------------------------  
+}
+```
+
+```csharp
 // C# Client  
 using System;  
 using System.Runtime.InteropServices;  

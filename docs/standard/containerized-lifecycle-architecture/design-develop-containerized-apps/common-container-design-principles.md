@@ -15,7 +15,6 @@ In the container model, a container represents a single process. By defining a c
 
 You might find a scenario in which you want multiple processes running in a single container. In any architecture document, there's never a "never," nor is there always an "always." For scenarios requiring multiple processes, a common pattern is to use [Supervisor](http://supervisord.org/).
 
-
 >[!div class="step-by-step"]
-[Previous](design-docker-applications.md)
-[Next](monolithic-applications.md)
+>[Previous](design-docker-applications.md)
+>[Next](monolithic-applications.md)

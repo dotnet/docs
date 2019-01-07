@@ -99,8 +99,6 @@ public void addImage()
 }  
 ```  
   
-1.  
-  
 ### To remove all images programmatically  
   
 -   Use the <xref:System.Windows.Forms.ImageList.ImageCollection.Remove%2A> method to remove a single image  
@@ -138,6 +136,6 @@ imageList1.Images.RemoveByKey("myPhoto");
 ```  
   
 ## See Also  
- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)  
- [ImageList Component Overview](../../../../docs/framework/winforms/controls/imagelist-component-overview-windows-forms.md)  
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
+- [ImageList Component Overview](../../../../docs/framework/winforms/controls/imagelist-component-overview-windows-forms.md)
+- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)

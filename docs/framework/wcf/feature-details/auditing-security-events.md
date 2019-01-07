@@ -4,7 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "auditing security events [WCF]"
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
-author: "BrucePerlerMS"
 ---
 # Auditing Security Events
 Applications created with Windows Communication Foundation (WCF) can log security events (either success, failure, or both) with the auditing feature. The events are written to the Windows system event log and can be examined using the Event Viewer.  
@@ -56,7 +55,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
   <system.serviceModel>  
     <behaviors>  
       <behavior>  
-        <!— auditLogLocation="Application" or "Security" -—>  
+        <!-- auditLogLocation="Application" or "Security" -->  
         <serviceSecurityAudit  
                   auditLogLocation="Application"  
                   suppressAuditFailure="true"  

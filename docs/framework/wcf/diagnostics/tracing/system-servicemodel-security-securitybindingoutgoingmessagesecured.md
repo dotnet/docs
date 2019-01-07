@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityBindingOutgoingMessageSecured"
 ms.date: "03/30/2017"
 ms.assetid: 5b6cd812-63ba-4614-89f1-3c31d7540c5d
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityBindingOutgoingMessageSecured
 System.ServiceModel.Security.SecurityBindingOutgoingMessageSecured  

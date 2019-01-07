@@ -77,5 +77,5 @@ You can think of an image as an auxiliary read-only hard disk ready to be instal
 Similarly, you can think of a container as the "computer" with the image hard disk installed. The container, just like a computer, can be powered on or off.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](docker-terminology.md)
+>[Previous](index.md)
+>[Next](docker-terminology.md)

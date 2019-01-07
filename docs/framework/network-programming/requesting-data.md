@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "receiving data, about receiving data"
   - "Internet, requesting data"
 ms.assetid: df6f1e1d-6f2a-45dd-8141-4a85c3dafe1d
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Requesting Data
 Developing applications that run in the distributed operating environment of today's Internet requires an efficient, easy-to-use method for retrieving data from resources of all types. Pluggable protocols let you develop applications that use a single interface to retrieve data from multiple Internet protocols.  

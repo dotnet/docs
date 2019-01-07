@@ -1,11 +1,13 @@
 ---
-title: .NET Core version selection
-description: Learn how .NET Core finds and chooses runtime versions for your program.
+title: Select which .NET Core version to use
+description: Learn how .NET Core automatically finds and chooses runtime versions for your program. Additionally, this article teaches you how to force a specific version.
 author: billwagner
 ms.author: wiwagn
 ms.date: 06/27/2018
+ms.custom: "seodec18"
 ---
-# .NET Core version selection
+
+# Select the .NET Core version to use
 
 [!INCLUDE [topic-appliesto-net-core-2plus](../../../includes/topic-appliesto-net-core-2plus.md)]
 
@@ -74,7 +76,7 @@ A given SDK supports a fixed set of frameworks, capped to the target framework o
 
 ## Framework-dependent apps roll forward
 
-You run an application from source with [`dotnet run`](../tools/dotnet-run.md). `dotnet run` both builds and runs an application. The `dotnet` executable is the **host** for the application in development environments.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#framework-dependent-deployments-fdd) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#framework-dependent-executables-fde) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp2.0` in your project file, and `2.0.4` is the latest .NET runtime installed, the `2.0.4` runtime is used.
 

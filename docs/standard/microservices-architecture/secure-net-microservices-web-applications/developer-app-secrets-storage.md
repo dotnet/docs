@@ -48,5 +48,5 @@ Using secrets stored with Secret Manager in an application is accomplished by ca
 The AddUserSecrets\<Startup\>() is included in the default options for the Development environment when using the CreateDefaultBuilder method in Program.cs.
 
 >[!div class="step-by-step"]
-[Previous](authorization-net-microservices-web-applications.md)
-[Next](azure-key-vault-protects-secrets.md)
+>[Previous](authorization-net-microservices-web-applications.md)
+>[Next](azure-key-vault-protects-secrets.md)

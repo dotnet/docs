@@ -2,7 +2,6 @@
 title: "Security Concepts Used in WCF"
 ms.date: "03/30/2017"
 ms.assetid: 3b9dfcf5-4bf1-4f35-9070-723171c823a1
-author: "BrucePerlerMS"
 ---
 # Security Concepts Used in WCF
 Windows Communication Foundation (WCF) security is built upon concepts already in use and deployed in various security infrastructures.  

@@ -1,5 +1,7 @@
 ---
-title: "$ - string interpolation (C# Reference)"
+title: "$ - string interpolation - C# Reference"
+ms.custom: seodec18
+
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
 ms.date: 03/26/2018
 f1_keywords: 
@@ -80,7 +82,7 @@ The following example uses implicit conversion to <xref:System.FormattableString
 
 ## Additional resources
 
-If you are new to string interpolation, see the [String interpolation in C#](../../quick-starts/interpolated-strings.yml) quickstart. For more examples, see the [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial.
+If you are new to string interpolation, see the [String interpolation in C#](../../tutorials/intro-to-csharp/interpolated-strings.yml) interactive tutorial. Or you can try the  [String interpolation in C#](../../tutorials/string-interpolation.md) tutorial locally on your machine.
 
 ## See also
 

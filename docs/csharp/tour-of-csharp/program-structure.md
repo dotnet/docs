@@ -47,5 +47,5 @@ This creates an executable assembly named `example.exe`, which, when run, produc
 C# permits the source text of a program to be stored in several source files. When a multi-file C# program is compiled, all of the source files are processed together, and the source files can freely reference each other—conceptually, it is as if all the source files were concatenated into one large file before being processed. Forward declarations are never needed in C# because, with very few exceptions, declaration order is insignificant. C# does not limit a source file to declaring only one public type nor does it require the name of the source file to match a type declared in the source file.
 
 >[!div class="step-by-step"]
-[Previous](index.md)
-[Next](types-and-variables.md)
+>[Previous](index.md)
+>[Next](types-and-variables.md)

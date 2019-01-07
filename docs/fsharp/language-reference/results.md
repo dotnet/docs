@@ -1,5 +1,5 @@
 ---
-title: Results (F#)
+title: Results
 description: Learn how to use the F# 'Result' type to help you write error-tolerant code.
 ms.date: 04/24/2017
 ---

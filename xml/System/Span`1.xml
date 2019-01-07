@@ -523,7 +523,7 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">
-          <paramref name="index" /> is less then zero or greater than or equal to <see cref="P:System.Span`1.Length" />.</exception>
+          <paramref name="index" /> is less than zero or greater than or equal to <see cref="P:System.Span`1.Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Length">

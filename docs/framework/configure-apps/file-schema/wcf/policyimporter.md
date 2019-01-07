@@ -16,9 +16,9 @@ Specifies a policy importer that controls the import of custom policy assertions
   
 ```xml  
 <metadata>  
-   <policyImporters>  
-      <policyImporter type="string" />  
-   </policyImporters>  
+  <policyImporters>  
+    <policyImporter type="String" />  
+  </policyImporters>  
 </metadata>  
 ```  
   

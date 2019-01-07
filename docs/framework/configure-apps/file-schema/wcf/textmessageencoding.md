@@ -16,9 +16,9 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 ```xml  
 <textMessageEncoding maxReadPoolSize="Integer"  
-   maxWritePoolSize="Integer"  
-   messageVersion="Soap11Addressing10/Soap12Addressing10"  
-      writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />  
+                     maxWritePoolSize="Integer"  
+                     messageVersion="Soap11Addressing10/Soap12Addressing10"  
+                     writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />  
 ```  
   
 ## Attributes and Elements  
@@ -54,9 +54,9 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 ```xml  
 <textMessageEncoding maxReadPoolSize="211"  
-    maxWritePoolSize="2132"  
-    messageVersion="Soap12Addressing10"  
-    textEncoding="utf-8" />  
+                     maxWritePoolSize="2132"  
+                     messageVersion="Soap12Addressing10"  
+                     textEncoding="utf-8" />  
 ```  
   
 ## See Also  

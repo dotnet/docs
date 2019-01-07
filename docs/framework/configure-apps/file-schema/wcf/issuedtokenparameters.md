@@ -16,20 +16,19 @@ Specifies the parameters for a security token issued in a Federated security sce
 ## Syntax  
   
 ```xml  
-<issuedTokenParameters   
-      DefaultMessageSecurityVersion="System.ServiceModel.MessageSecurityVersion"  
-      inclusionMode="AlwaysToInitiator/AlwaysToRecipient/Never/Once"  
-      keySize="Integer"  
-   keyType="AsymmetricKey/BearerKey/SymmetricKey"  
-      tokenType="String" >  
-   <additionalRequestParameters />  
-      <claimTypeRequirements>  
-            <add claimType="URI"  
-           isOptional="Boolean" />  
-      </claimTypeRequirements>  
-      <issuer address="String"   
-                      binding=" " />  
-      <issuerMetadata address="String" />   
+<issuedTokenParameters defaultMessageSecurityVersion="System.ServiceModel.MessageSecurityVersion"  
+                       inclusionMode="AlwaysToInitiator/AlwaysToRecipient/Never/Once"  
+                       keySize="Integer"  
+                       keyType="AsymmetricKey/BearerKey/SymmetricKey"  
+                       tokenType="String">  
+  <additionalRequestParameters />  
+  <claimTypeRequirements>  
+    <add claimType="URI"  
+         isOptional="Boolean" />  
+  </claimTypeRequirements>  
+  <issuer address="String"  
+          binding="" />  
+  <issuerMetadata address="String" />  
 </issuedTokenParameters>  
 ```  
   

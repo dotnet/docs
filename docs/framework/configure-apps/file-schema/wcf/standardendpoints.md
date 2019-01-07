@@ -12,8 +12,8 @@ This configuration section allows you to define a collection of standard endpoin
   
 ```xml  
 <system.serviceModel>  
-    <standardEndpoints>  
-    </standardEndpoints>  
+  <standardEndpoints>  
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

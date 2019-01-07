@@ -13,12 +13,12 @@ This configuration element defines a standard endpoint with a fixed announcement
   
 ```xml  
 <system.serviceModel>  
-  <standardEndpoints>
-    <announcementEndpoint>
-      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
-                        maxAnnouncementDelay="Timespan" 
-                        name="String" />
-    </announcementEndpoint>
+  <standardEndpoints>  
+    <announcementEndpoint>  
+      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"  
+                        maxAnnouncementDelay="Timespan"  
+                        name="String" />  
+    </announcementEndpoint>  
   </standardEndpoints>  
 </system.serviceModel>  
 ```  
@@ -64,11 +64,11 @@ This configuration element defines a standard endpoint with a fixed announcement
   
 <standardEndpoints>  
   <announcementEndpoint>  
-    <standardEndpoint name="httpAnnouncementEndpoint"                         
+    <standardEndpoint name="httpAnnouncementEndpoint"  
                       version="WSDiscoveryApril2005" />  
-    <standardEndpoint name="peerNetAnnouncementEndpoint"                         
+    <standardEndpoint name="peerNetAnnouncementEndpoint"  
                       version="WSDiscoveryApril2005" />  
-   </announcementEndpoint>  
+  </announcementEndpoint>  
 </standardEndpoints>  
 ```  
   

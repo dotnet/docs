@@ -18,7 +18,7 @@ Represents a collection of target URIs for which the <xref:System.IdentityModel.
   
 ```xml  
 <allowedAudienceUris>  
-      <add allowedAudienceUri="String"/>  
+  <add allowedAudienceUri="String" />  
 </allowedAudienceUris>  
 ```  
   

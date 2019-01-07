@@ -16,7 +16,7 @@ Represents a collection of `baseAddress` elements, which are base addresses for 
   
 ```xml  
 <baseAddresses>  
-   <add baseAddress="string" />  
+  <add baseAddress="string" />  
 </baseAddresses>  
 ```  
   

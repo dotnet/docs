@@ -16,11 +16,11 @@ Defines the security settings for a binding.
   
 ```xml  
 <netNamedPipeBinding>  
-      <binding>  
-            <security mode="None/Transport">  
-                  <transport protectionLevel="None/Sign/EncryptAndSign" />  
-            </security>  
-      </binding>  
+  <binding>  
+    <security mode="None/Transport">  
+      <transport protectionLevel="None/Sign/EncryptAndSign" />  
+    </security>  
+  </binding>  
 </netNamedPipeBinding>  
 ```  
   

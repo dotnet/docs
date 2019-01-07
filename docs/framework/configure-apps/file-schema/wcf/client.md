@@ -16,12 +16,12 @@ The `client` element defines a list of endpoints that a client can connect to.
   
 ```xml  
 <system.serviceModel>  
-    <client>  
-        <endpoint>  
-        </endpoint>  
-                <metadata>  
-        </metadata>  
-    </client>  
+  <client>  
+    <endpoint>  
+    </endpoint>  
+    <metadata>  
+    </metadata>  
+  </client>  
 </system.serviceModel>  
 ```  
   
@@ -53,14 +53,16 @@ The `client` element defines a list of endpoints that a client can connect to.
   
 ```xml  
 <client>  
-    <endpoint address="/HelloWorld/"  
-              bindingConfiguration="usingDefaults"  
-              name="MyBinding"  
-              binding="customBinding"  
-              contract="HelloWorld">  
+  <endpoint address="/HelloWorld/"  
+            bindingConfiguration="usingDefaults"  
+            name="MyBinding"  
+            binding="customBinding"  
+            contract="HelloWorld">  
     <addressProperties actingAs="http://www.microsoft.com/TestActor"  
-             identityData="BasicReadWrite" identityType="Spn" isAddressPrivate="false">  
-    </endpoint>  
+                       identityData="BasicReadWrite"  
+                       identityType="Spn"  
+                       isAddressPrivate="false">  
+  </endpoint>  
 </client>  
 ```  
   

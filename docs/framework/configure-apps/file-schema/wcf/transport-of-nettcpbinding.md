@@ -17,19 +17,19 @@ Defines the type of message-level security requirements for an endpoint configur
   
 ```xml  
 <netTcpBinding>  
-    <binding>  
-        <security  
-         mode="None|Transport|Message|TransportWithMessageCredential">  
-            <transport clientCredentialType="None|Windows|Certificate"  
-             protectionLevel="None|Sign|EncryptAndSign"             sslProtocols="Tls|Tls11|Tls12">  
-                <extendedProtectionPolicy  
-                     policyEnforcement="Never|WhenSupported|Always"  
-                     protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                        </extendedProtectionPolicy>  
-            </transport>  
-        </security>  
-    </binding>  
+  <binding>  
+    <security mode="None|Transport|Message|TransportWithMessageCredential">  
+      <transport clientCredentialType="None|Windows|Certificate"  
+                 protectionLevel="None|Sign|EncryptAndSign"  
+                 sslProtocols="Tls|Tls11|Tls12">  
+        <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"  
+                                  protectionScenario="TransportSelected|TrustedProxy">  
+          <customServiceNames>  
+          </customServiceNames>  
+        </extendedProtectionPolicy>  
+      </transport>  
+    </security>  
+  </binding>  
 </netTcpBinding>  
 ```  
   

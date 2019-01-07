@@ -16,17 +16,17 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
   
 ```xml  
 <system.ServiceModel>  
-    <bindings>  
-        <webHttpBinding>  
-            <binding name = "string">  
-              <security mode="None/Transport/TransportCredentialOnly">  
-                                    <transport clientCredentialType =   
-                                     "Basic/Certificate/Digest/None/Ntlm/Windows"  
-                                     proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                                     realm="string" />  
-              </security>  
-        </webHttpBinding>  
-    </bindings>  
+  <bindings>  
+    <webHttpBinding>  
+      <binding name = "String">  
+        <security mode="None/Transport/TransportCredentialOnly">  
+          <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
+                     proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
+                     realm="String" />  
+        </security>  
+      </binding>  
+    </webHttpBinding>  
+  </bindings>  
 </system.ServiceModel>  
 ```  
   

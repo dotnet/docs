@@ -12,10 +12,14 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
   
 ## Syntax  
   
-```xml
-   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>
-```
-
+```xml  
+<protocolMapping>  
+  <add binding="String"  
+       bindingConfiguration="String"  
+       scheme="http/net.msmq/net.pipe/net.tcp" />  
+</protocolMapping>  
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -41,10 +45,14 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
   
 ```xml  
 <protocolMapping>  
-        <add scheme="http" binding="basicHttpBinding"/>  
-        <add scheme="net.tcp" binding="netTcpBinding"/>  
-        <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
-        <add scheme="net.msmq" binding="netMsmqBinding"/>  
+  <add scheme="http"  
+       binding="basicHttpBinding" />  
+  <add scheme="net.tcp"  
+       binding="netTcpBinding" />  
+  <add scheme="net.pipe"  
+       binding="netNamedPipeBinding" />  
+  <add scheme="net.msmq"  
+       binding="netMsmqBinding" />  
 </protocolMapping>  
 ```  
   

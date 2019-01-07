@@ -16,7 +16,7 @@ Represents a configuration element that specifies the interval of time allowed f
   
 ```xml  
 <timeOuts closeTimeout="TimeSpan"  
-   openTimeout="TimeSpan" >  
+          openTimeout="TimeSpan" />  
 ```  
   
 ## Attributes and Elements  

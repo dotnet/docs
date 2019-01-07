@@ -17,9 +17,10 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<authentication customCertificateValidatorType="String" certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"   
-trustedStoreLocation="LocalMachine/CurrentUser" />  
+<authentication customCertificateValidatorType="String"  
+                certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
+                revocationMode="NoCheck/Online/Offline"  
+                trustedStoreLocation="LocalMachine/CurrentUser" />  
 ```  
   
 ## Attributes and Elements  
@@ -77,17 +78,19 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
   
 ```xml  
 <serviceCertificate>  
-  <defaultCertificate findValue="www.contoso.com"   
+  <defaultCertificate findValue="www.contoso.com"  
                       storeLocation="LocalMachine"  
-                      storeName="TrustedPeople"   
+                      storeName="TrustedPeople"  
                       x509FindType="FindByIssuerDistinguishedName" />  
   <scopedCertificates>  
-     <add targetUri="http://www.contoso.com"   
-          findValue="www.contoso.com" storeLocation="LocalMachine"  
-                  storeName="Root" x509FindType="FindByIssuerName" />  
+     <add targetUri="http://www.contoso.com"  
+          findValue="www.contoso.com"  
+          storeLocation="LocalMachine"  
+          storeName="Root"  
+          x509FindType="FindByIssuerName" />  
   </scopedCertificates>  
-  <authentication revocationMode="Online"   
-   trustedStoreLocation="LocalMachine" />  
+  <authentication revocationMode="Online"  
+                  trustedStoreLocation="LocalMachine" />  
 </serviceCertificate>  
 ```  
   

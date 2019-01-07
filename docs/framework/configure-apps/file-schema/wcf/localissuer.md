@@ -17,9 +17,9 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<localIssuer address="string"  
-      binding="string"  
-      bindingConfiguration="string" />  
+<localIssuer address="String"  
+             binding="String"  
+             bindingConfiguration="String" />  
 ```  
   
 ## Attributes and Elements  
@@ -54,19 +54,19 @@ endpointBehaviors section
   
 ```xml  
 <system.serviceModel>  
- <behaviors>  
- <endpointBehaviors>  
-  <behavior name="MyEndpointBehavior">  
-   <clientCredentials>  
-    <issuedToken cacheIssuedTokens="false"   
-                 defaultKeyEntropyMode="ClientEntropy">  
-     <localIssuer address="net.tcp://cohowinery/tokens"   
-                  binding="netTcpBinding"  
-                  bindingConfiguration="myTcpBindingConfig" />  
-    </issuedToken>  
-   </clientCredentials>  
-  </behavior>  
-  </endpointBehaviors>  
+  <behaviors>  
+    <endpointBehaviors>  
+      <behavior name="MyEndpointBehavior">  
+        <clientCredentials>  
+          <issuedToken cacheIssuedTokens="false"  
+                       defaultKeyEntropyMode="ClientEntropy">  
+            <localIssuer address="net.tcp://cohowinery/tokens"  
+                         binding="netTcpBinding"  
+                         bindingConfiguration="myTcpBindingConfig" />  
+          </issuedToken>  
+        </clientCredentials>  
+      </behavior>  
+    </endpointBehaviors>  
   </behaviors>  
 </system.serviceModel>  
 ```  

@@ -16,7 +16,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
 ```xml  
 <dataContractSerializer ignoreExtensionDataObject="Boolean"  
-      maxItemsInObjectGraph="Integer" />  
+                        maxItemsInObjectGraph="Integer" />  
 ```  
   
 ## Attributes and Elements  

@@ -16,23 +16,22 @@ Specifies a custom token issued as a service credential.
 ## Syntax  
   
 ```xml  
-<issuedTokenAuthentication   
-   allowUntrustedRsaIssuers="Boolean"  
-   audienceUriMode="Always/BearerKeyOnly/Never"  
-      customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-   revocationMode="NoCheck/Online/Offline"  
-   samlSerializer="String"  
-    trustedStoreLocation="CurrentUser/LocalMachine">  
-      <allowedAudienceUris>  
-      <add allowedAudienceUri="String"/>  
-      </allowedAudienceUris>  
-      <knownCertificates>   
-         <add findValue="String"  
-                 storeLocation="CurrentUser/LocalMachine"  
-                storeName=" CurrentUser/LocalMachine"  
-                x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>  
-      </knownCertificates>  
+<issuedTokenAuthentication allowUntrustedRsaIssuers="Boolean"  
+                           audienceUriMode="Always/BearerKeyOnly/Never"  
+                           customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
+                           certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
+                           revocationMode="NoCheck/Online/Offline"  
+                           samlSerializer="String"  
+                           trustedStoreLocation="CurrentUser/LocalMachine">  
+  <allowedAudienceUris>  
+    <add allowedAudienceUri="String" />  
+  </allowedAudienceUris>  
+  <knownCertificates>  
+    <add findValue="String"  
+         storeLocation="CurrentUser/LocalMachine"  
+         storeName=" CurrentUser/LocalMachine"  
+         x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
+  </knownCertificates>  
 </issuedTokenAuthentication>  
 ```  
   
@@ -71,11 +70,12 @@ certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
   
 ```xml  
 <issuedTokenAuthentication>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
+  <knownCertificates>  
+    <add findValue="www.contoso.com"  
+         storeLocation="LocalMachine"  
+         storeName="My"  
+         X509FindType="FindBySubjectName" />  
+  </knownCertificates>  
 </issuedTokenAuthentication>  
 ```  
   

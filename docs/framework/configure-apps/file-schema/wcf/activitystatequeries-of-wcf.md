@@ -18,28 +18,28 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
 
 ## Syntax  
   
-```xml
-<tracking>
-  <profiles>
-    <trackingProfile name="Name">
-      <workflow>
-        <activityStateQueries>
-          <activityStateQuery activityName="String">
-            <arguments>
-              <argument name="String"/>
-            </arguments>
-            <states>
-              <state name="String"/>
-            </states>
-            <variables>
-              <variable name="String"/>
-            </variables>
-          </activityStateQuery>
-        </activityStateQueries>
-      </workflow>
-    </trackingProfile>
-  </profiles>
-</tracking>
+```xml  
+<tracking>  
+  <profiles>  
+    <trackingProfile name="Name">  
+      <workflow>  
+        <activityStateQueries>  
+          <activityStateQuery activityName="String">  
+            <arguments>  
+              <argument name="String" />  
+            </arguments>  
+            <states>  
+              <state name="String" />  
+            </states>  
+            <variables>  
+              <variable name="String" />  
+            </variables>  
+          </activityStateQuery>  
+        </activityStateQueries>  
+      </workflow>  
+    </trackingProfile>  
+  </profiles>  
+</tracking>  
 ```  
 
 ## Attributes and elements

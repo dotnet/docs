@@ -13,11 +13,10 @@ The `comContracts` configuration section contains elements that allow you to spe
   
 ```xml  
 <comContracts>  
-  <comContract  
-      contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
-      namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
-      name="_Broker"  
-      requireSession="true">  
+  <comContract contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
+               namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
+               name="_Broker"  
+               requireSession="true">  
   </comContract>  
 </comContracts>  
 ```  

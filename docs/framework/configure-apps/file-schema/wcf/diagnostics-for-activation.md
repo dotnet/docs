@@ -13,9 +13,9 @@ Configures Windows Communication Foundation (WCF) listener's diagnostics functio
   
 ```xml  
 <configuration>  
-   <system.serviceModel.activation>  
-       <diagnostics performanceCountersEnabled="Boolean" />  
-   </system.serviceModel.activation>  
+  <system.serviceModel.activation>  
+    <diagnostics performanceCountersEnabled="Boolean" />  
+  </system.serviceModel.activation>  
 </configuration>  
 ```  
   

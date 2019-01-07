@@ -15,8 +15,8 @@ Specifies settings for a custom peer resolver service.
   
 ## Syntax  
   
-```xml
-<custom address="Uri" 
+```xml  
+<custom address="Uri"  
         resolverType="String">  
   <headers/>  
   <identity/>  

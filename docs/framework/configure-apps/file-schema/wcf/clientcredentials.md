@@ -16,19 +16,19 @@ Specifies the credentials used to authenticate the client to a service.
   
 ```xml  
 <clientCredentials type="String"  
-      supportInteractive="Boolean" >  
-   <clientCertificate>  
-   </clientCertificate>  
-   <digest>  
-   </digest>  
-   <isuedToken>  
-   </isuedToken>  
-   <peer>  
-   </peer>  
-   <serviceCertificate>  
-   </serviceCertificate>  
-   <windowsAuthentication>  
-   </windowsAuthentication>  
+                   supportInteractive="Boolean" >  
+  <clientCertificate>  
+  </clientCertificate>  
+  <digest>  
+  </digest>  
+  <isuedToken>  
+  </isuedToken>  
+  <peer>  
+  </peer>  
+  <serviceCertificate>  
+  </serviceCertificate>  
+  <windowsAuthentication>  
+  </windowsAuthentication>  
 </clientCredentials>  
 ```  
   

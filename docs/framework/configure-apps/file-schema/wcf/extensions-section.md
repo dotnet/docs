@@ -18,9 +18,9 @@ This configuration section contains a collection of extensions, which enable the
     <behaviorExtensions>  
     </behaviorExtensions>  
     <bindingElementExtensions>  
-    </bindingElementExtensions>
-    <endpointExtensions>
-    </endpointExtensions>
+    </bindingElementExtensions>  
+    <endpointExtensions>  
+    </endpointExtensions>  
   </extensions>  
 </system.serviceModel>  
 ```  

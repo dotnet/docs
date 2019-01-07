@@ -17,9 +17,9 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
   
 ```xml  
 <workflowRuntime>  
-   <services>  
-      <add type="String"/>  
-   </services>  
+  <services>  
+    <add type="String" />  
+  </services>  
 </workflowRuntime>  
 ```  
   
@@ -48,15 +48,15 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
   
 ```xml  
 <serviceBehaviors>  
-   <behavior name="ServiceBehavior">  
-      <workflowRuntime name="WorkflowServiceHostRuntime"  
-                       validateOnCreate="true"  
-                       enablePerformanceCounters="true">  
-         <services>  
-             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>  
-         </services>  
-      </workflowRuntime>  
-   </behavior>  
+  <behavior name="ServiceBehavior">  
+    <workflowRuntime name="WorkflowServiceHostRuntime"  
+                     validateOnCreate="true"  
+                     enablePerformanceCounters="true">  
+      <services>  
+        <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common" />  
+      </services>  
+    </workflowRuntime>  
+  </behavior>  
 </serviceBehaviors>  
 ```  
   

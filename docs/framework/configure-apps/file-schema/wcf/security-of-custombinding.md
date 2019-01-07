@@ -15,20 +15,18 @@ Specifies the security options for a custom binding.
 ## Syntax  
   
 ```xml  
-<security   
-   allowSerializedSigningTokenOnReply="Boolean"  
-   authenticationMode="AuthenticationMode"  
-      defaultAlgorithmSuite="SecurityAlgorithmSuite"  
-   includeTimestamp="Boolean"  
-      requireDerivedKeys="Boolean"  
-   keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"   
-messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"  
-      messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"  
-   requireDerivedKeys="Boolean"  
-   requireSecurityContextCancellation="Boolean"  
-   requireSignatureConfirmation="Boolean"  
-      securityHeaderLayout=  
-              "Strict/Lax/LaxTimestampFirst/LaxTimestampLast">  
+<security allowSerializedSigningTokenOnReply="Boolean"  
+          authenticationMode="AuthenticationMode"  
+          defaultAlgorithmSuite="SecurityAlgorithmSuite"  
+          includeTimestamp="Boolean"  
+          requireDerivedKeys="Boolean"  
+          keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"  
+          messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"  
+          messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"  
+          requireDerivedKeys="Boolean"  
+          requireSecurityContextCancellation="Boolean"  
+          requireSignatureConfirmation="Boolean"  
+          securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast">  
    <issuedTokenParameters />  
    <localClientSettings />  
    <localServiceSettings />  
@@ -111,9 +109,8 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
 <configuration>  
   <system.serviceModel>  
     <services>  
-      <service   
-          name="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
+               behaviorConfiguration="CalculatorServiceBehavior">  
         <host>  
           <baseAddresses>  
             <!-- use following base address -->  
@@ -121,30 +118,29 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
           </baseAddresses>  
         </host>  
         <endpoint address=""  
-                    binding="customBinding"  
-                    bindingConfiguration="Binding1"   
-                    contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex" />  
+                  binding="customBinding"  
+                  bindingConfiguration="Binding1"  
+                  contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex" />  
         <!-- the mex endpoint is exposed at net.tcp://localhost:8000/ServiceModelSamples/service/mex -->  
         <endpoint address="mex"  
                   binding="mexTcpBinding"  
                   contract="IMetadataExchange" />  
       </service>  
     </services>  
-  
     <bindings>  
       <!-- configure a custom binding -->  
       <customBinding>  
         <binding name="Binding1">  
           <security authenticationMode="SecureConversation"  
-                     requireSecurityContextCancellation="true">  
+                    requireSecurityContextCancellation="true">  
           </security>  
-          <textMessageEncoding messageVersion="Soap12WSAddressing10" writeEncoding="utf-8"/>  
-          <sslStreamSecurity requireClientCertificate="false"/>  
-          <tcpTransport/>  
+          <textMessageEncoding messageVersion="Soap12WSAddressing10"  
+                               writeEncoding="utf-8" />  
+          <sslStreamSecurity requireClientCertificate="false" />  
+          <tcpTransport />  
         </binding>  
       </customBinding>  
     </bindings>  
-  
     <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
     <behaviors>  
       <serviceBehaviors>  
@@ -152,7 +148,10 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
           <serviceMetadata />  
           <serviceDebug includeExceptionDetailInFaults="False" />  
           <serviceCredentials>  
-            <serviceCertificate findValue="localhost" storeLocation="LocalMachine" storeName="My" x509FindType="FindBySubjectName"/>  
+            <serviceCertificate findValue="localhost"  
+                                storeLocation="LocalMachine"  
+                                storeName="My"  
+                                x509FindType="FindBySubjectName" />  
           </serviceCredentials>  
         </behavior>  
       </serviceBehaviors>  

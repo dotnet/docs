@@ -12,10 +12,10 @@ This element defines two child collections named `endpointBehaviors` and `servic
   
 ```xml  
 <behaviors>  
-   <serviceBehaviors>  
-   </serviceBehaviors>  
-   <endpointBehaviors>  
-   </endpointBehaviors>  
+  <serviceBehaviors>  
+  </serviceBehaviors>  
+  <endpointBehaviors>  
+  </endpointBehaviors>  
 </behaviors>  
 ```  
   

@@ -17,10 +17,11 @@ A default communications endpoint that the client application listens to.
 ## Syntax  
   
 ```xml  
-<useRequestHeadersForMetadataAddress>
-    <defaultPorts>
-        <add port="Integer" scheme="String" />
-    </defaultPorts>
+<useRequestHeadersForMetadataAddress>  
+  <defaultPorts>  
+    <add port="Integer"  
+         scheme="String" />  
+  </defaultPorts>  
 </useRequestHeadersForMetadataAddress>  
 ```  
   

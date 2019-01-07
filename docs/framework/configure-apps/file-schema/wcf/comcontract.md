@@ -13,26 +13,25 @@ Specifies a COM+ integration service contract.
   
 ```xml  
 <comContracts>  
-  <comContract  
-      contract="string"  
-      namespace="string"  
-      name="string"  
-      requireSession="Boolean">  
-      <exposedMethods>  
-         <exposedMethod name="string" />  
-      </exposedMethods>  
-      <userDefinedTypes>  
-         <userDefinedType name="string"  
-            typeLibID="string"  
-            typeLibVersion="string"  
-            typeDefID="string">  
-         </userDefinedType>  
-      </userDefinedTypes>  
-      <persistableTypes>  
-         <persistableType id="string"  
-            name="string">  
-         </persistableType>  
-      </persistableTypes>  
+  <comContract contract="String"  
+               namespace="String"  
+               name="String"  
+               requireSession="Boolean">  
+    <exposedMethods>  
+      <exposedMethod name="String" />  
+    </exposedMethods>  
+    <userDefinedTypes>  
+      <userDefinedType name="String"  
+                       typeLibID="String"  
+                       typeLibVersion="String"  
+                       typeDefID="String">  
+      </userDefinedType>  
+    </userDefinedTypes>  
+    <persistableTypes>  
+      <persistableType id="String"  
+                       name="String">  
+      </persistableType>  
+    </persistableTypes>  
   </comContract>  
 </comContracts>  
 ```  
@@ -68,16 +67,15 @@ Specifies a COM+ integration service contract.
   
 ```xml  
 <comContracts>  
-  <comContract  
-      contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
-      namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
-      name="_Broker"  
-      requireSession="true">  
-      <exposedMethods>  
-         <exposedMethod name="BuyStock" />  
-         <exposedMethod name="SellStock" />  
-         <exposedMethod name="ExecuteTransaction" />  
-      </exposedMethods>  
+  <comContract contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
+               namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
+               name="_Broker"  
+               requireSession="true">  
+    <exposedMethods>  
+      <exposedMethod name="BuyStock" />  
+      <exposedMethod name="SellStock" />  
+      <exposedMethod name="ExecuteTransaction" />  
+    </exposedMethods>  
   </comContract>  
 </comContracts>  
 ```  

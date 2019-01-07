@@ -10,12 +10,12 @@ This section registers a new standard endpoint in the extensions section in a ma
   
 ```xml  
 <system.serviceModel>  
-    <extensions>  
-        <endpointExtensions>  
-           <add name="udpDiscoveryEndpoint"  
-                type="System.Discovery.UdpEndpointCollectionElement, System.Discovery.dll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ffffffffffffffff"/>  
-        </endpointExtensions>   
-    </extensions>  
+  <extensions>  
+    <endpointExtensions>  
+      <add name="udpDiscoveryEndpoint"  
+           type="System.Discovery.UdpEndpointCollectionElement, System.Discovery.dll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ffffffffffffffff"/>  
+    </endpointExtensions>  
+  </extensions>  
 </system.serviceModel>  
 ```  
   
@@ -23,19 +23,19 @@ This section registers a new standard endpoint in the extensions section in a ma
   
 ```xml  
 <system.serviceModel>  
-    <services>  
-      <service name="Service1">  
-        <endpoint kind="udpDiscoveryEndpoint"  
-                  endpointConfiguration="udpConfig" />  
-      </service>  
-    </services>  
-    <standardEndpoints>  
-      <udpDiscoveryEndpoint>  
-        <standardEndpoint  
-                  name="udpConfig"  
-                  multicastAddress="soap.udp://239.255.255.250:3703"  
-                  ... />  
-      </udpDiscoveryEndpoint>  
-    </standardEndpoints>  
-  </system.serviceModel>  
-```
+  <services>  
+    <service name="Service1">  
+      <endpoint kind="udpDiscoveryEndpoint"  
+                endpointConfiguration="udpConfig" />  
+    </service>  
+  </services>  
+  <standardEndpoints>  
+    <udpDiscoveryEndpoint>  
+      <standardEndpoint name="udpConfig"  
+                        multicastAddress="soap.udp://239.255.255.250:3703"  
+                        ... />  
+    </udpDiscoveryEndpoint>  
+  </standardEndpoints>  
+</system.serviceModel>  
+```  
+  

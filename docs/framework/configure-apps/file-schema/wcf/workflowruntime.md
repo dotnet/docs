@@ -19,12 +19,13 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
                  enablePerformanceCounters="Boolean"  
                  name="String"  
                  validateOnCreate="Boolean">  
-   <commonParameters>  
-      <add name="String" value="String" />  
-   </commonParameters>  
-   <services>  
-      <add type="String"/>  
-   </services>  
+  <commonParameters>  
+    <add name="String"  
+         value="String" />  
+  </commonParameters>  
+  <services>  
+    <add type="String" />  
+  </services>  
 </workflowRuntime>  
 ```  
   

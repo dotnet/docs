@@ -17,23 +17,23 @@ Specifies the Security Token Service (STS) that issues security tokens.
 ## Syntax  
   
 ```xml  
-<issuer address="Uri" >  
-   <headers>  
-      <add name="String"  
-                 namespace="String" />  
-   </headers>  
-   <identity>  
-           <certificate encodedValue="String"/>  
-      <certificateReference findValue="String"   
-         isChainIncluded="Boolean"  
-         storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-         storeLocation="LocalMachine/CurrentUser"  
-                  x509FindType=System.Security.Cryptography.X509certificates.X509findtype/>  
-      <dns value="String"/>  
-      <rsa value="String"/>  
-      <servicePrincipalName value="String"/>  
-      <usePrincipalName value="String"/>  
-   </identity>  
+<issuer address="Uri">  
+  <headers>  
+    <add name="String"  
+         namespace="String" />  
+  </headers>  
+  <identity>  
+    <certificate encodedValue="String" />  
+    <certificateReference findValue="String"  
+                          isChainIncluded="Boolean"  
+                          storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
+                          storeLocation="LocalMachine/CurrentUser"  
+                          x509FindType="System.Security.Cryptography.X509certificates.X509findtype" />  
+    <dns value="String" />  
+    <rsa value="String" />  
+    <servicePrincipalName value="String" />  
+    <usePrincipalName value="String" />  
+  </identity>  
 </issuer>  
 ```  
   

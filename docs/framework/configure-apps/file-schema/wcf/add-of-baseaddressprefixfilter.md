@@ -15,9 +15,9 @@ Represents a configuration element that specifies a pass-through filter, which p
   
 ```xml  
 <serviceHostingEnvironment>  
-     <baseAddressPrefixFilters>  
-        <add prefix="string"/>  
-     </baseAddressPrefixFilters>  
+  <baseAddressPrefixFilters>  
+    <add prefix="String" />  
+  </baseAddressPrefixFilters>  
 </serviceHostingEnvironment>  
 ```  
   
@@ -58,9 +58,9 @@ http://test2.fabrikam.com/Service.svc
 ```xml  
 <system.serviceModel>  
   <serviceHostingEnvironment>  
-     <baseAddressPrefixFilters>  
-        <add prefix="net.tcp://test1.fabrikam.com:8000"/>  
-        <add prefix="http://test2.fabrikam.com:9000"/>  
+    <baseAddressPrefixFilters>  
+      <add prefix="net.tcp://test1.fabrikam.com:8000" />  
+      <add prefix="http://test2.fabrikam.com:9000" />  
     </baseAddressPrefixFilters>  
   </serviceHostingEnvironment>  
 </system.serviceModel>  

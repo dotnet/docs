@@ -17,13 +17,12 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
   
 ```xml  
 <netMsmqBinding>  
-    <binding>  
-      <security>  
-         <message   
-                  algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                  clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
-      </security>  
-    </binding>  
+  <binding>  
+    <security>  
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
+               clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
+    </security>  
+  </binding>  
 </netMsmqBinding>  
 ```  
   

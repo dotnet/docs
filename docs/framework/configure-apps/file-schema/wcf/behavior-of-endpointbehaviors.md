@@ -17,7 +17,7 @@ The `behavior` element contains a collection of settings for the behavior of an 
 <system.ServiceModel>  
   <behaviors>  
     <endpointBehaviors>  
-       <behavior name="String" />  
+      <behavior name="String" />  
     </endpointBehaviors>  
   </behaviors>  
 </system.ServiceModel>  

@@ -13,10 +13,10 @@ This configuration element defines a standard endpoint for controlling the execu
   
 ```xml  
 <system.serviceModel>  
-  <standardEndpoints>
-    <workflowControlEndpoint>
-      <standardEndpoint name="String" />
-    </workflowControlEndpoint>
+  <standardEndpoints>  
+    <workflowControlEndpoint>  
+      <standardEndpoint name="String" />  
+    </workflowControlEndpoint>  
   </standardEndpoints>  
 </system.serviceModel>  
 ```  

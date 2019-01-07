@@ -14,11 +14,11 @@ A configuration element that allows you to enable and disable different aspects 
   
 ```xml  
 <system.serviceModel>  
-   <diagnostics>  
-       <endToEndTracing activityTracing="Boolean"  
-          messageFlowTracing="Boolean"  
-          propagateActivity="Boolean" />  
-   </diagnostics>  
+  <diagnostics>  
+    <endToEndTracing activityTracing="Boolean"  
+                     messageFlowTracing="Boolean"  
+                     propagateActivity="Boolean" />  
+  </diagnostics>  
 </system.serviceModel>  
 ```  
   

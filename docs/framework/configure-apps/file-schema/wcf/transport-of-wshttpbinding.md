@@ -17,18 +17,19 @@ Defines authentication settings for the HTTP transport.
   
 ```xml  
 <wsHttpBinding>  
-    <binding>  
-        <security mode="None|Transport|TransportWithMessageCredential|TransportCredentialOnly">  
-            <transport  
-            clientCredentialType="Basic|Certificate|Digest|None|Ntlm|Windows"  
-            proxyCredentialType="Basic|Digest|None|Ntlm|Windows"  
-            realm="string" />  
-                <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always" protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                </extendedProtecutionPolicy>  
-            </transport>  
-        </security>  
-    </binding>  
+  <binding>  
+    <security mode="None|Transport|TransportWithMessageCredential|TransportCredentialOnly">  
+      <transport clientCredentialType="Basic|Certificate|Digest|None|Ntlm|Windows"  
+                 proxyCredentialType="Basic|Digest|None|Ntlm|Windows"  
+                 realm="string" />  
+        <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"  
+                                  protectionScenario="TransportSelected|TrustedProxy">  
+          <customServiceNames>  
+          </customServiceNames>  
+        </extendedProtecutionPolicy>  
+      </transport>  
+    </security>  
+  </binding>  
 </wsHttpBinding>  
 ```  
   

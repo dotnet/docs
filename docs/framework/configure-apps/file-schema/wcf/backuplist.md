@@ -13,10 +13,16 @@ Represents a configuration section for defining a backup list that enumerates a 
   
 ## Syntax  
   
-```xml 
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
-```
-
+```xml  
+<routing>  
+  <backupLists>  
+    <backupList name="String">  
+      <add endpointName="String" />  
+    </backupList>  
+  </backupLists>  
+</routing>  
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -47,15 +53,17 @@ Represents a configuration section for defining a backup list that enumerates a 
   
 ```xml  
 <filterTables>  
-     <filterTable name="filterTable1">  
-          <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
-     </filterTable>  
+  <filterTable name="filterTable1">  
+    <add filterName="MatchAllFilter1"  
+         endpointName="Destination"  
+         backupList="backupEndpointList" />  
+  </filterTable>  
 </filterTables>  
 <backupLists>  
-     <backupList name="backupEndpointList">  
-          <add endpointName="backupServiceQueue" />  
-          <add endpointName="alternateServiceQueue" />  
-     </backupList>  
+  <backupList name="backupEndpointList">  
+    <add endpointName="backupServiceQueue" />  
+    <add endpointName="alternateServiceQueue" />  
+  </backupList>  
 </backupLists>  
 ```  
   

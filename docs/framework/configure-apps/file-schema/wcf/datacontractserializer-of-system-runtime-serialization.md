@@ -15,12 +15,12 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer ignoreExtensionDataObject="Boolean"  
-            maxItemsInObjectGraph="Integer">  
+                            maxItemsInObjectGraph="Integer">  
       <declaredTypes>  
         <add type="String">  
           <knownType type="String">  
-             <parameter index="Integer"  
-                        type="String" />  
+            <parameter index="Integer"  
+                       type="String" />  
           </knownType>  
         </add>  
       </declaredTypes>  

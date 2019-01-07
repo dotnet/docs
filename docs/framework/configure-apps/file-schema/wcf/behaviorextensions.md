@@ -8,12 +8,13 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
   
 ```xml  
 <system.serviceModel>  
-    <extensions>  
-        <behaviorExtensions>  
-            <add name="myBehavior" type="Microsoft.ServiceModel.Samples.MyBehaviorSection, MyBehavior,  
-                Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-       </behaviorExtensions>  
-    </extensions>  
+  <extensions>  
+    <behaviorExtensions>  
+      <add name="myBehavior"  
+           type="Microsoft.ServiceModel.Samples.MyBehaviorSection, MyBehavior,  
+                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
+    </behaviorExtensions>  
+  </extensions>  
 </system.serviceModel>  
 ```  
   
@@ -23,11 +24,15 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
   
 ```xml  
 <behaviors>  
-    <behavior configurationName="testChannelBehavior">  
-        <myBehavior />  
-        <channelSecurity cacheCookies="false" detectReplays="false" maxCachedNonces="9"  
-            maxClockSkew="00:00:03" maxCookieCachingTime="00:07:24" replayWindow="00:07:22.2190000" />  
-    </behavior>  
+  <behavior configurationName="testChannelBehavior">  
+    <myBehavior />  
+    <channelSecurity cacheCookies="false"  
+                     detectReplays="false"  
+                     maxCachedNonces="9"  
+                     maxClockSkew="00:00:03"  
+                     maxCookieCachingTime="00:07:24"  
+                     replayWindow="00:07:22.2190000" />  
+  </behavior>  
 </behaviors>  
 ```  
   

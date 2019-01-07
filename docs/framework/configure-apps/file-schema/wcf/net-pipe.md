@@ -13,24 +13,24 @@ Specifies configuration settings for the Named Pipe Activation Service, which ma
   
 ```xml  
 <configuration>  
-   <system.serviceModel.activation>  
-       <net.pipe maxPendingAccepts="Integer"  
-                    maxPendingConnections="Integer"  
-          receiveTimeout="TimeSpan">  
-          <allowAccounts>  
-             // LocalSystem account  
-             <add securityIdentifier="S-1-5-18"/>  
-             // LocalService account  
-             <add securityIdentifier="S-1-5-19"/>  
-             // Administrators account  
-             <add securityIdentifier="S-1-5-20"/>  
-             // Network Service account  
-             <add securityIdentifier="S-1-5-32-544" />  
-             // IIS_IUSRS account (Vista only)  
-             <add securityIdentifier="S-1-5-32-568"/>  
-           </allowAccounts>  
-       </net.pipe>  
-   </system.serviceModel.activation>  
+  <system.serviceModel.activation>  
+    <net.pipe maxPendingAccepts="Integer"  
+              maxPendingConnections="Integer"  
+              receiveTimeout="TimeSpan">  
+      <allowAccounts>  
+        <!-- LocalSystem account -->  
+        <add securityIdentifier="S-1-5-18" />  
+        <!-- LocalService account -->  
+        <add securityIdentifier="S-1-5-19" />  
+        <!-- Administrators account -->  
+        <add securityIdentifier="S-1-5-20" />  
+        <!-- Network Service account -->  
+        <add securityIdentifier="S-1-5-32-544" />  
+        <!-- IIS_IUSRS account (Vista only) -->  
+        <add securityIdentifier="S-1-5-32-568" />  
+      </allowAccounts>  
+    </net.pipe>  
+  </system.serviceModel.activation>  
 </configuration>  
 ```  
   

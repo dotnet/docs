@@ -16,13 +16,9 @@ Enables packet routing and the use of one-way methods for a custom binding.
   
 ```xml  
 <oneWay packetRoutable="Boolean">  
-        <channelPoolSettings  
-           idleTimeout"TimeSpan"  
-          leaseTimeout"TimeSpan"  
-          maxOutboundConnectionsPerEndpopint="Integer" />  
-```  
-  
-```xml  
+  <channelPoolSettings idleTimeout="TimeSpan"  
+                       leaseTimeout="TimeSpan"  
+                       maxOutboundConnectionsPerEndpopint="Integer" />  
 </oneWay>  
 ```  
   

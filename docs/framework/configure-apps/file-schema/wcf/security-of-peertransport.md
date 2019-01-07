@@ -17,7 +17,7 @@ Contains the security settings associated with a peer channel, including the typ
   
 ```xml  
 <security mode="None/Transport/Message/TransportWithMessageCredential">  
-    <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
+  <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
 </security  
 ```  
   

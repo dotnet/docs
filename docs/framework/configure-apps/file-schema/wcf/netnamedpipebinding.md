@@ -18,10 +18,10 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
            hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
            maxBufferPoolSize="Integer"  
            maxBufferSize="Integer"  
-           maxConnections="Integer"   
+           maxConnections="Integer"  
            maxReceivedMessageSize="Integer"  
-           name="string"  
-           openTimeout="TimeSpan"   
+           name="String"  
+           openTimeout="TimeSpan"  
            receiveTimeout="TimeSpan"  
            sendTimeout="TimeSpan"  
            transactionFlow="Boolean"  
@@ -30,11 +30,11 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
     <security mode="None/Transport">  
       <transport protectionLevel="None/Sign/EncryptAndSign" />  
     </security>  
-    <readerQuotas maxArrayLength="Integer"
-                  maxBytesPerRead="Integer"
-                  maxDepth="Integer"
-                  maxNameTableCharCount="Integer"
-                  maxStringContentLength="Integer" />
+    <readerQuotas maxArrayLength="Integer"  
+                  maxBytesPerRead="Integer"  
+                  maxDepth="Integer"  
+                  maxNameTableCharCount="Integer"  
+                  maxStringContentLength="Integer" />  
   </binding>  
 </netNamedPipeBinding>  
 ```  
@@ -91,7 +91,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
                behaviorConfiguration="CalculatorServiceBehavior">  
         <host>  
           <baseAddresses>  
-            <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  
+            <add baseAddress="http://localhost:8000/ServiceModelSamples/service" />  
           </baseAddresses>  
         </host>  
         <!-- this endpoint is exposed at the base address provided by host: net.pipe://localhost/ServiceModelSamples/service  -->  
@@ -104,20 +104,19 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
                   contract="IMetadataExchange" />  
       </service>  
     </services>  
-  
     <bindings>  
       <netNamedPipeBinding>  
         <binding closeTimeout="00:01:00"  
-                 openTimeout="00:01:00"   
-                 receiveTimeout="00:10:00"   
+                 openTimeout="00:01:00"  
+                 receiveTimeout="00:10:00"  
                  sendTimeout="00:01:00"  
-                 transactionFlow="false"   
-                 transferMode="Buffered"   
+                 transactionFlow="false"  
+                 transferMode="Buffered"  
                  transactionProtocol="OleTransactions"  
-                 hostNameComparisonMode="StrongWildcard"   
+                 hostNameComparisonMode="StrongWildcard"  
                  maxBufferPoolSize="524288"  
-                 maxBufferSize="65536"   
-                 maxConnections="10"   
+                 maxBufferSize="65536"  
+                 maxConnections="10"  
                  maxReceivedMessageSize="65536">  
           <security mode="Transport">  
             <transport protectionLevel="EncryptAndSign" />  
@@ -125,12 +124,11 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
         </binding>  
       </netNamedPipeBinding>  
     </bindings>  
-  
     <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
     <behaviors>  
       <serviceBehaviors>  
         <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata httpGetEnabled="True"/>  
+          <serviceMetadata httpGetEnabled="True" />  
           <serviceDebug includeExceptionDetailInFaults="False" />  
         </behavior>  
       </serviceBehaviors>  

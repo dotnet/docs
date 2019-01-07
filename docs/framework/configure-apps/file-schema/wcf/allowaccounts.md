@@ -12,7 +12,7 @@ Contains a collection of configuration elements that specify user accounts for p
   
 ```xml  
 <allowAccounts>  
-   <add securityIdentifier="String"/>  
+  <add securityIdentifier="String" />  
 </allowAccounts>  
 ```  
   

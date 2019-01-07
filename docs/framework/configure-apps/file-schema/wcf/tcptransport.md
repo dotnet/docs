@@ -15,26 +15,24 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 ## Syntax  
   
 ```xml  
-<tcpTransport   
-      channelInitializationTimeout="TimeSpan"   
-      connectionBufferSize="Integer"   
-      hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-      listenBacklog="Integer"  
-      manualAddressing="Boolean"   
-      maxBufferPoolSize="Integer"  
-      maxBufferSize="Integer"  
-      maxOutputDelay="TimeSpan"  
-      maxPendingAccepts="Integer"   
-      maxPendingConnections="Integer"  
-      maxReceivedMessageSize="Integer"   
-      portSharingEnabled="Boolean"  
-      teredoEnabled="Boolean"  
-      transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse" >  
-      <connectionPoolSettings  
-            groupName="String"  
-            idleTimeout"TimeSpan"  
-            leaseTimeout="TimeSpan"  
-            maxOutboundConnectionsPerEndpopint="Integer" />  
+<tcpTransport channelInitializationTimeout="TimeSpan"  
+              connectionBufferSize="Integer"  
+              hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
+              listenBacklog="Integer"  
+              manualAddressing="Boolean"  
+              maxBufferPoolSize="Integer"  
+              maxBufferSize="Integer"  
+              maxOutputDelay="TimeSpan"  
+              maxPendingAccepts="Integer"  
+              maxPendingConnections="Integer"  
+              maxReceivedMessageSize="Integer"  
+              portSharingEnabled="Boolean"  
+              teredoEnabled="Boolean"  
+              transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse" >  
+  <connectionPoolSettings groupName="String"  
+                          idleTimeout="TimeSpan"  
+                          leaseTimeout="TimeSpan"  
+                          maxOutboundConnectionsPerEndpopint="Integer" />  
 </tcpTransport>  
 ```  
   

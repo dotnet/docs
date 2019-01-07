@@ -14,43 +14,42 @@ Defines a queued binding suitable for cross-machine communication.
   
 ```xml  
 <netMsmqBinding>  
-    <binding closeTimeout="TimeSpan"   
-             customDeadLetterQueue="Uri"  
-             deadLetterQueue="Uri"  
-             durable="Boolean"  
-             exactlyOnce="Boolean"   
-             maxBufferPoolSize="Integer"  
-             maxReceivedMessageSize="Integer"  
-             maxRetryCycles="Integer"   
-             name="string"   
-             openTimeout="TimeSpan"   
-             poisonMessageHandling="Disabled/EnabledIfSupported"   
-             queueTransferProtocol="Native/Srmp/SrmpSecure"  
-             receiveErrorHandling="Drop/Fault/Move/Reject"  
-             receiveTimeout="TimeSpan"   
-             receiveRetryCount="Integer"  
-             rejectAfterLastRetry="Boolean"   
-             retryCycleDelay="TimeSpan"    
-             sendTimeout="TimeSpan"   
-             timeToLive="TimeSpan"    
-             useActiveDirectory="Boolean"  
-             useMsmqTracing="Boolean"  
-             useSourceJournal="Boolean">  
-        <security>  
-            <message
-                     algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                     clientCredentialType="None/Windows/UserName/Certificate/InfoCard "/>  
-                <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-                           msmqEncryptionAlgorithm="RC4Stream/AES"  
-                           msmqProtectionLevel="None/Sign/EncryptAndSign"  
-                           msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-        </security>  
-       <readerQuotas maxArrayLength="Integer"
-                     maxBytesPerRead="Integer"
-                     maxDepth="Integer"
-                     maxNameTableCharCount="Integer"
-                     maxStringContentLength="Integer" />
-    </binding>
+  <binding closeTimeout="TimeSpan"  
+           customDeadLetterQueue="Uri"  
+           deadLetterQueue="Uri"  
+           durable="Boolean"  
+           exactlyOnce="Boolean"  
+           maxBufferPoolSize="Integer"  
+           maxReceivedMessageSize="Integer"  
+           maxRetryCycles="Integer"  
+           name="String"  
+           openTimeout="TimeSpan"  
+           poisonMessageHandling="Disabled/EnabledIfSupported"  
+           queueTransferProtocol="Native/Srmp/SrmpSecure"  
+           receiveErrorHandling="Drop/Fault/Move/Reject"  
+           receiveTimeout="TimeSpan"  
+           receiveRetryCount="Integer"  
+           rejectAfterLastRetry="Boolean"  
+           retryCycleDelay="TimeSpan"  
+           sendTimeout="TimeSpan"  
+           timeToLive="TimeSpan"  
+           useActiveDirectory="Boolean"  
+           useMsmqTracing="Boolean"  
+           useSourceJournal="Boolean">  
+    <security>  
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
+               clientCredentialType="None/Windows/UserName/Certificate/InfoCard" />  
+      <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
+                 msmqEncryptionAlgorithm="RC4Stream/AES"  
+                 msmqProtectionLevel="None/Sign/EncryptAndSign"  
+                 msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
+    </security>  
+    <readerQuotas maxArrayLength="Integer"  
+                  maxBytesPerRead="Integer"  
+                  maxDepth="Integer"  
+                  maxNameTableCharCount="Integer"  
+                  maxStringContentLength="Integer" />  
+  </binding>  
 </netMsmqBinding>  
 ```  
   
@@ -102,32 +101,33 @@ Defines a queued binding suitable for cross-machine communication.
   
 ```xml  
 <configuration>  
- <system.ServiceModel>  
+  <system.ServiceModel>  
     <bindings>  
-           <netMsmqBinding>  
-                <binding closeTimeout="00:00:10"   
-                         openTimeout="00:00:20"   
-                         receiveTimeout="00:00:30"  
-                         sendTimeout="00:00:40"  
-                         deadLetterQueue="net.msmq://localhost/blah"   
-                         durable="true"   
-                         exactlyOnce="true"   
-                         maxReceivedMessageSize="1000"  
-                         maxRetries="11"  
-                         maxRetryCycles="12"   
-                         poisonMessageHandling="Disabled"   
-                         rejectAfterLastRetry="false"   
-                         retryCycleDelay="00:05:55"   
-                         timeToLive="00:11:11"   
-                         sourceJournal="true"  
-                         useMsmqTracing="true"  
-                         useActiveDirectory="true">  
-                         <security>  
-                             <message clientCredentialType="Windows" />  
-                         </security>  
-            </netMsmqBinding>  
+      <netMsmqBinding>  
+        <binding closeTimeout="00:00:10"  
+                 openTimeout="00:00:20"  
+                 receiveTimeout="00:00:30"  
+                 sendTimeout="00:00:40"  
+                 deadLetterQueue="net.msmq://localhost/blah"  
+                 durable="true"  
+                 exactlyOnce="true"  
+                 maxReceivedMessageSize="1000"  
+                 maxRetries="11"  
+                 maxRetryCycles="12"  
+                 poisonMessageHandling="Disabled"  
+                 rejectAfterLastRetry="false"  
+                 retryCycleDelay="00:05:55"  
+                 timeToLive="00:11:11"  
+                 sourceJournal="true"  
+                 useMsmqTracing="true"  
+                 useActiveDirectory="true">  
+          <security>  
+            <message clientCredentialType="Windows" />  
+          </security>  
+        </binding>  
+      </netMsmqBinding>  
     </bindings>  
- </system.ServiceModel>  
+  </system.ServiceModel>  
 </configuration>  
 ```  
   

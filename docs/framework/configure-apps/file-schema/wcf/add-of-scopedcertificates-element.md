@@ -19,11 +19,10 @@ endpointBehaviors section
   
 ```xml  
 <add findValue="String"  
-          storeLocation="CurrentUser/LocalMachine"  
-          storeName=" CurrentUser/LocalMachine"  
-          targetUri="string"  
-         x509Type="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"   
-/>   
+     storeLocation="CurrentUser/LocalMachine"  
+     storeName=" CurrentUser/LocalMachine"  
+     targetUri="string"  
+     x509Type="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
 ```  
   
 ## Attributes and Elements  
@@ -84,21 +83,21 @@ endpointBehaviors section
   
 ```xml  
 <behaviors>  
- <endpointBehaviors>  
-  <behavior name="MyEndpointBehavior">  
-   <clientCredentials>  
-    <serviceCertificate>  
-     <scopedCertificates>  
-      <add targetUri="http://www.contoso.com"   
-       findValue="www.Contoso.com"   
-       storeLocation="LocalMachine"  
-       storeName="Root"   
-       x509FindType="FindByIssuerName" />  
-     </scopedCertificates>  
-    </serviceCertificate>  
-   </clientCredentials>  
-  </behavior>  
- </endpointBehaviors>  
+  <endpointBehaviors>  
+    <behavior name="MyEndpointBehavior">  
+      <clientCredentials>  
+        <serviceCertificate>  
+          <scopedCertificates>  
+            <add targetUri="http://www.contoso.com"  
+                 findValue="www.Contoso.com"  
+                 storeLocation="LocalMachine"  
+                 storeName="Root"  
+                 x509FindType="FindByIssuerName" />  
+          </scopedCertificates>  
+        </serviceCertificate>  
+      </clientCredentials>  
+    </behavior>  
+  </endpointBehaviors>  
 </behaviors>  
 ```  
   

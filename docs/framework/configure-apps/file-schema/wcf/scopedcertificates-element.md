@@ -19,12 +19,12 @@ endpointBehaviors section
   
 ```xml  
 <scopedCertificates>  
-      <add findValue="String"  
-                storeLocation="CurrentUser/LocalMachine"  
-                storeName=" CurrentUser/LocalMachine"  
-                targetUri="string"  
-            x509Type="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />   
-</scopedCertificates>   
+  <add findValue="String"  
+       storeLocation="CurrentUser/LocalMachine"  
+       storeName=" CurrentUser/LocalMachine"  
+       targetUri="string"  
+       x509Type="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
+</scopedCertificates>  
 ```  
   
 ## Attributes and Elements  
@@ -58,9 +58,11 @@ endpointBehaviors section
 ```xml  
 <serviceCertificate>  
   <scopedCertificates>  
-     <add targetUri="http://www.contoso.com"   
-          findValue="www.contoso.com" storeLocation="LocalMachine"  
-                  storeName="Root" x509FindType="FindByIssuerName" />  
+    <add targetUri="http://www.contoso.com"  
+         findValue="www.contoso.com"  
+         storeLocation="LocalMachine"  
+         storeName="Root"  
+         x509FindType="FindByIssuerName" />  
   </scopedCertificates>  
 </serviceCertificate>  
 ```  

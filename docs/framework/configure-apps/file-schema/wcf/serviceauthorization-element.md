@@ -15,14 +15,13 @@ Specifies settings that authorize access to service operations
 ## Syntax  
   
 ```xml  
-<serviceAuthorization  
-     impersonateCallerForAllOperations="Boolean"  
-      principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"  
-      roleProviderName="String"  
-      serviceAuthorizationManagerType="String">  
-      <authorizationPolicies>  
-         <add policyType="String" />  
-      </authorizationPolicies>  
+<serviceAuthorization impersonateCallerForAllOperations="Boolean"  
+                      principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"  
+                      roleProviderName="String"  
+                      serviceAuthorizationManagerType="String">  
+  <authorizationPolicies>  
+    <add policyType="String" />  
+  </authorizationPolicies>  
 </serviceAuthorization>  
 ```  
   
@@ -57,23 +56,22 @@ Specifies settings that authorize access to service operations
   
 ```xml  
 <system.web>  
-  <membership defaultProvider="SqlProvider"   
-   userIsOnlineTimeWindow="15">  
-     <providers>  
-       <clear />  
-       <add   
-          name="SqlProvider"   
-          type="System.Web.Security.SqlMembershipProvider"   
-          connectionStringName="SqlConn"  
-          applicationName="MembershipProvider"  
-          enablePasswordRetrieval="false"  
-          enablePasswordReset="false"  
-          requiresQuestionAndAnswer="false"  
-          requiresUniqueEmail="true"  
-          passwordFormat="Hashed" />  
-     </providers>  
-   </membership>  
-  <!-- Other configuration code not shown.-->  
+  <membership defaultProvider="SqlProvider"  
+              userIsOnlineTimeWindow="15">  
+    <providers>  
+      <clear />  
+      <add name="SqlProvider"  
+           type="System.Web.Security.SqlMembershipProvider"  
+           connectionStringName="SqlConn"  
+           applicationName="MembershipProvider"  
+           enablePasswordRetrieval="false"  
+           enablePasswordReset="false"  
+           requiresQuestionAndAnswer="false"  
+           requiresUniqueEmail="true"  
+           passwordFormat="Hashed" />  
+    </providers>  
+  </membership>  
+  <!-- Other configuration code not shown. -->  
 </system.web>  
 ```  
   
@@ -81,11 +79,11 @@ Specifies settings that authorize access to service operations
   
 ```xml  
 <behaviors>  
-   <behavior name="ServiceBehaviour">  
-     <serviceAuthorization principalPermissionMode ="UseAspNetRoles"   
-                           roleProviderName ="SqlProvider" />  
-   </behavior>   
-<!-- Other configuration code not shown. -->  
+  <behavior name="ServiceBehaviour">  
+    <serviceAuthorization principalPermissionMode ="UseAspNetRoles"  
+                          roleProviderName ="SqlProvider" />  
+  </behavior>  
+  <!-- Other configuration code not shown. -->  
 </behaviors>  
 ```  
   

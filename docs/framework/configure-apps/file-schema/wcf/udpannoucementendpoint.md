@@ -13,13 +13,13 @@ This configuration element defines a standard endpoint that is used by services 
   
 ```xml  
 <system.serviceModel>  
-  <standardEndpoints>
-    <announcementEndpoint>
-      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
-                        maxAnnouncementDelay="Timespan"
-                        multicastAddress="Uri"
-                        name="String" />
-    </announcementEndpoint>
+  <standardEndpoints>  
+    <announcementEndpoint>  
+      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"  
+                        maxAnnouncementDelay="Timespan"  
+                        multicastAddress="Uri"  
+                        name="String" />  
+    </announcementEndpoint>  
   </standardEndpoints>  
 </system.serviceModel>  
 ```  
@@ -54,21 +54,21 @@ This configuration element defines a standard endpoint that is used by services 
 ```xml  
 <services>  
   <service name="ServiceAnnouncementListener">  
-      <endpoint name="udpAnnouncementEndpointStandard"  
-                kind="udpAnnouncementEndpoint"  
-                bindingConfiguration="..." />  
-      <endpoint name="udpAnnouncementEndpoint2"  
-                kind="udpAnnouncementEndpoint"  
-                endpointConfiguration="AnnouncementConfiguration3702"  
-                bindingConfiguration="..." />  
-...  
+    <endpoint name="udpAnnouncementEndpointStandard"  
+              kind="udpAnnouncementEndpoint"  
+              bindingConfiguration="..." />  
+    <endpoint name="udpAnnouncementEndpoint2"  
+              kind="udpAnnouncementEndpoint"  
+              endpointConfiguration="AnnouncementConfiguration3702"  
+              bindingConfiguration="..." />  
+    ...  
   </service>  
 </services>  
 <standardEndpoints>  
   <udpAnnouncementEndpoint>  
-     <standardEndpoint name="AnnouncementConfiguration2"   
-          version="WSDiscoveryApril2005"   
-          multicastAddress="soap.udp://239.255.255.250:3703"/>          
+    <standardEndpoint name="AnnouncementConfiguration2"  
+                      version="WSDiscoveryApril2005"  
+                      multicastAddress="soap.udp://239.255.255.250:3703"/>  
   </udpAnnouncementEndpoint>  
 </standardEndpoints>  
 ```  

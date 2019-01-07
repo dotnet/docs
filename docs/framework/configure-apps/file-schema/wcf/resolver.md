@@ -16,7 +16,7 @@ Specifies a peer resolver that is used to resolve a peer mesh ID to a set of pee
   
 ```xml  
 <resolver mode="Auto/Custom/Pnrp"  
-   referralPolicy="DoNotShare/Service/Share">  
+          referralPolicy="DoNotShare/Service/Share">  
 </resolver>  
 ```  
   

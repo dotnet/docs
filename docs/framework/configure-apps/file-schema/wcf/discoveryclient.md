@@ -15,16 +15,19 @@ A configuration element for creating a custom binding that enables a client appl
 ## Syntax  
   
 ```xml  
-<discoveryClient discoveryEndpoint="String" >
-  <findCriteria duration="TimeSpan" maxResults="Integer" scopeMatchBy="Uri">
-    <contractTypeNames>
-      <add name="String" namespace="String" />
-    <contractTypeNames>
-    <extensions />
-    <scopes>
-      <add scope="URI"/>
-    </scopes>
-  </findCriteria>
+<discoveryClient discoveryEndpoint="String">  
+  <findCriteria duration="TimeSpan"  
+                maxResults="Integer"  
+                scopeMatchBy="Uri">  
+    <contractTypeNames>  
+      <add name="String"  
+           namespace="String" />  
+    </contractTypeNames>  
+    <extensions />  
+    <scopes>  
+      <add scope="URI"/>  
+    </scopes>  
+  </findCriteria>  
 </discoveryClient>  
 ```  
   

@@ -13,16 +13,16 @@ Specifies how service metadata can be processed.
   
 ```xml  
 <system.serviceModel>  
-    <client>  
-        <metadata>  
-                   <policyImporters>  
-                          <policyImporter type="string" />  
-                   </policyImporters  
-                 <wsdlImporters>  
-                      <wsdlImporter type="string" />  
-                 </wsdlImporters>  
-        </metadata>  
-    </client>  
+  <client>  
+    <metadata>  
+      <policyImporters>  
+        <policyImporter type="string" />  
+      </policyImporters>  
+      <wsdlImporters>  
+        <wsdlImporter type="string" />  
+      </wsdlImporters>  
+    </metadata>  
+  </client>  
 </system.serviceModel>  
 ```  
   

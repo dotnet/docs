@@ -18,8 +18,8 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
   
 ```xml  
 <clientCertificate>  
- <certificate/>  
- <authentication/>  
+  <certificate />  
+  <authentication />  
 </clientCertificate>  
 ```  
   

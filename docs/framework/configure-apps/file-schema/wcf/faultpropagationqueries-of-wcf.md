@@ -18,21 +18,21 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
-<tracking>
-  <profiles>
-    <trackingProfile name="Name">
-      <workflow>
-        <faultPropagationQueries>
-          <faultPropagationQuery faultSourceActivityName="String"
-                                 faultHandlerActivityName="String"/>
-        </faultPropagationQueries>
-      </workflow>
-    </trackingProfile>
-  </profiles>
+```xml  
+<tracking>  
+  <profiles>  
+    <trackingProfile name="Name">  
+      <workflow>  
+        <faultPropagationQueries>  
+          <faultPropagationQuery faultSourceActivityName="String"  
+                                 faultHandlerActivityName="String"/>  
+        </faultPropagationQueries>  
+      </workflow>  
+    </trackingProfile>  
+  </profiles>  
 </tracking>  
-```
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.

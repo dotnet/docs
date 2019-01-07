@@ -17,11 +17,11 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 ## Syntax  
   
 ```xml  
-<knownCertificates>   
-      <add findValue="String"  
-           storeLocation="CurrentUser/LocalMachine"  
-           storeName=" CurrentUser/LocalMachine"  
-           x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
+<knownCertificates>  
+  <add findValue="String"  
+       storeLocation="CurrentUser/LocalMachine"  
+       storeName=" CurrentUser/LocalMachine"  
+       x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
 </knownCertificates>  
 ```  
   
@@ -50,11 +50,12 @@ Represents a collection of X.509 certificates that are provided to authenticate 
   
 ```xml  
 <issuedTokenAuthentication>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
+  <knownCertificates>  
+    <add findValue="www.contoso.com"  
+         storeLocation="LocalMachine"  
+         storeName="My"  
+         X509FindType="FindBySubjectName" />  
+  </knownCertificates>  
 </issuedTokenAuthentication>  
 ```  
   

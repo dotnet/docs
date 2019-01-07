@@ -18,8 +18,8 @@ Specifies the types of required and optional claims expected to appear in the fe
   
 ```xml  
 <claimTypeRequirements>  
-      <add claimType="URI"  
-        isOptional="Boolean" />  
+  <add claimType="URI"  
+       isOptional="Boolean" />  
 </claimTypeRequirements>  
 ```  
   
@@ -50,21 +50,19 @@ Specifies the types of required and optional claims expected to appear in the fe
   
 ```xml  
 <bindings>  
-    <wsFederationHttpBinding>  
-      <binding name="myFederatedBinding">  
-        <security mode="Message">  
-          <message issuedTokenType="urn:oasis:names:tc:SAML:1.0:assertion">  
-            <claimTypeRequirements>  
-              <add claimType=  
-"http://schemas.microsoft.com/ws/2005/05/identity/claims/EmailAddress"/>  
-              <add claimType=  
-"http://schemas.microsoft.com/ws/2005/05/identity/claims/UserName"    
-optional="true" />  
-            </claims>  
-          </message>  
-        </security>  
-      </binding>  
-    </wsFederationHttpBinding>  
+  <wsFederationHttpBinding>  
+    <binding name="myFederatedBinding">  
+      <security mode="Message">  
+        <message issuedTokenType="urn:oasis:names:tc:SAML:1.0:assertion">  
+          <claimTypeRequirements>  
+            <add claimType="http://schemas.microsoft.com/ws/2005/05/identity/claims/EmailAddress" />  
+            <add claimType="http://schemas.microsoft.com/ws/2005/05/identity/claims/UserName"  
+                 optional="true" />  
+          </claimTypeRequirements>  
+        </message>  
+      </security>  
+    </binding>  
+  </wsFederationHttpBinding>  
 </bindings>  
 ```  
   

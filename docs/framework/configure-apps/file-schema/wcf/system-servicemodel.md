@@ -29,19 +29,19 @@ This configuration section contains all the Windows Communication Foundation (WC
   <diagnostics>  
   </diagnostics>  
   <extensions>  
-  </extensions>
-  <protocolMapping>
-  </protocolMapping>
-  <routing>
+  </extensions>  
+  <protocolMapping>  
+  </protocolMapping>  
+  <routing>  
   </routing>  
   <serviceHostingEnvironment>  
   </serviceHostingEnvironment>  
   <services>  
-  </services>
+  </services>  
   <standardEndpoints>  
-  </standardEndpoints>
-  <tracking>
-  </tracking>
+  </standardEndpoints>  
+  <tracking>  
+  </tracking>  
 </system.serviceModel>  
 ```  
   
@@ -94,28 +94,30 @@ This configuration section contains all the Windows Communication Foundation (WC
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
-    <system.serviceModel>  
-        <behaviors>  
-           <!-- List of Behaviors -->  
-        </behaviors>  
-        <client>  
-           <!-- List of Endpoints -->  
-        </client>  
-        <diagnostics wmiProviderEnabled="false" performanceCountersEnabled="false" tracingEnabled="false">  
-        </diagnostics>  
-        <serviceHostingEnvironment>  
-           <!-- List of entries -->  
-        </serviceHostingEnvironment>  
-        <comContracts>  
-           <!-- List of COM+ Contracts -->  
-        </comContracts>          
-        <services>  
-           <!-- List of Services -->  
-        </services>  
-        <bindings>  
-           <!-- List of Bindings -->  
-        </bindings>  
-    </system.serviceModel>  
+  <system.serviceModel>  
+    <behaviors>  
+      <!-- List of Behaviors -->  
+    </behaviors>  
+    <client>  
+      <!-- List of Endpoints -->  
+    </client>  
+    <diagnostics wmiProviderEnabled="false"  
+                 performanceCountersEnabled="false"  
+                 tracingEnabled="false">  
+    </diagnostics>  
+    <serviceHostingEnvironment>  
+      <!-- List of entries -->  
+    </serviceHostingEnvironment>  
+    <comContracts>  
+      <!-- List of COM+ Contracts -->  
+    </comContracts>  
+    <services>  
+      <!-- List of Services -->  
+    </services>  
+    <bindings>  
+      <!-- List of Bindings -->  
+    </bindings>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   

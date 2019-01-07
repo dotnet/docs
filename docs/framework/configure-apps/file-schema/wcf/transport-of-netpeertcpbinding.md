@@ -17,11 +17,11 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
   
 ```xml  
 <netPeerTcpBinding>  
-    <binding>  
-        <security>  
-            <transport credentialType="Certificate/Password" />  
-        </security>         
-    </binding>  
+  <binding>  
+    <security>  
+      <transport credentialType="Certificate/Password" />  
+    </security>  
+  </binding>  
 </netPeerTcpBinding>  
 ```  
   

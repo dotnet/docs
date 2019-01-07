@@ -13,8 +13,8 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## Syntax  
   
 ```xml  
-<service behaviorConfiguration=String"  
-        name="String">  
+<service behaviorConfiguration="String"  
+         name="String">  
 </service>  
 ```  
   
@@ -52,14 +52,13 @@ The `service` element contains the settings for a Windows Communication Foundati
  This is an example of a service configuration.  
   
 ```xml  
-<service behaviorConfiguration="testChannelBehavior"   
-     name="HelloWorld">  
-     <endpoint   
-        address="/HelloWorld2/"  
-        name="test"  
-        bindingNamespace="http://www.cohowinery.com/"  
-        binding="basicHttpBinding"  
-        contract="IHelloWorld" />  
+<service behaviorConfiguration="testChannelBehavior"  
+         name="HelloWorld">  
+  <endpoint address="/HelloWorld2/"  
+            name="test"  
+            bindingNamespace="http://www.cohowinery.com/"  
+            binding="basicHttpBinding"  
+            contract="IHelloWorld" />  
 </service>  
 ```  
   

@@ -27,7 +27,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
       <declaredTypes>  
         <add type="String ">  
           <knownType type="String">  
-                <parameter index="Integer"/>  
+            <parameter index="Integer"/>  
           </knownType>  
         </add>  
       </declaredTypes>  

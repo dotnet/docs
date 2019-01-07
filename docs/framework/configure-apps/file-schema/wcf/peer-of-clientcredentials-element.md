@@ -17,9 +17,9 @@ Specifies credentials used when authenticating peer-to-peer clients.
   
 ```xml  
 <peer>  
-  <certificate/>  
-  <peerAuthentication/>  
-  <messageSenderAuthentication/>  
+  <certificate />  
+  <peerAuthentication />  
+  <messageSenderAuthentication />  
 </peer>  
 ```  
   

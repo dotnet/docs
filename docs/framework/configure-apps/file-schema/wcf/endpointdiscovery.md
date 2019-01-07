@@ -15,17 +15,17 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 ## Syntax  
   
 ```xml  
-<behaviors>
-  <endpointBehaviors>
-    <behavior name="String">
-      <endpointDiscovery enabled="Boolean">
-        <scopes>
-          <add scope="URI"/>
-        </scopes>
-        <extensions />
-      </endpointDiscovery>
-    </behavior>
-  </endpointBehaviors>
+<behaviors>  
+  <endpointBehaviors>  
+    <behavior name="String">  
+      <endpointDiscovery enabled="Boolean">  
+        <scopes>  
+          <add scope="URI"/>  
+        </scopes>  
+        <extensions />  
+      </endpointDiscovery>  
+    </behavior>  
+  </endpointBehaviors>  
 </behaviors>  
 ```  
   
@@ -65,7 +65,7 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
-     <endpoint binding="basicHttpBinding"  
+    <endpoint binding="basicHttpBinding"  
               address="calculator"  
               contract="ICalculatorService"  
               behaviorConfiguration="calculatorEndpointBehavior" />  
@@ -81,8 +81,8 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
     <behavior name="calculatorEndpointBehavior">  
       <endpointDiscovery enabled="true">  
         <scopes>  
-          <add scope="http://contoso/test1"/>  
-          <add scope="http://contoso/test2"/>  
+          <add scope="http://contoso/test1" />  
+          <add scope="http://contoso/test2" />  
         </scopes>  
         <extensions>  
           <e:Publisher xmlns:e="http://example.org">  

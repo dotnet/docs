@@ -12,11 +12,11 @@ A configuration element that allows you to define virtual service activation set
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <serviceActivations>  
+<serviceHostingEnvironment>  
+    <serviceActivations>  
       <add factory="String"  
-           service="String"/>  
-   </serviceActivations>  
+           service="String" />  
+  </serviceActivations>  
 </serviceHostingEnvironment>  
 ```  
   
@@ -48,7 +48,7 @@ A configuration element that allows you to define virtual service activation set
   <system.serviceModel>  
     <serviceHostingEnvironment>  
       <serviceActivations>  
-        <add service="GreetingService"/>  
+        <add service="GreetingService" />  
       </serviceActivations>  
     </serviceHostingEnvironment>  
   </system.serviceModel>  

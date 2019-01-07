@@ -15,21 +15,21 @@ Specifies the discoverability of service endpoints.
 ## Syntax  
   
 ```xml  
-<behaviors>
-  <serviceBehaviors>
-    <behavior name="String">
-      <serviceDiscovery>
-        <announcementEndpoints>
-          <endpoint name="String" 
-                    kind="Type" />
-        </announcementEndpoints>
-        <discoveryEndpoints>
-          <endpoint name="String" 
-                    kind="Type" />
-        </discoveryEndpoints>
-      </serviceDiscovery>
-    </behavior>
-  </serviceBehaviors>
+<behaviors>  
+  <serviceBehaviors>  
+    <behavior name="String">  
+      <serviceDiscovery>  
+        <announcementEndpoints>  
+          <endpoint name="String"  
+                    kind="Type" />  
+        </announcementEndpoints>  
+        <discoveryEndpoints>  
+          <endpoint name="String"  
+                    kind="Type" />  
+        </discoveryEndpoints>  
+      </serviceDiscovery>  
+    </behavior>  
+  </serviceBehaviors>  
 </behaviors>  
 ```  
   
@@ -62,17 +62,16 @@ Specifies the discoverability of service endpoints.
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
-  ...  
+    ...  
   </service>  
 </services>  
-  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="CalculatorServiceBehavior">  
       <serviceDiscovery>  
         <announcementEndpoints>  
-              <endpoint name="udpEndpoint"  
-                        kind="udpAnnouncementEndpoint" />  
+          <endpoint name="udpEndpoint"  
+                    kind="udpAnnouncementEndpoint" />  
         </announcementEndpoints>  
       </serviceDiscovery>  
     </behavior>  

@@ -18,8 +18,8 @@ endpointBehaviors section
   
 ```xml  
 <issuerChannelBehaviors>  
-      <add behaviorConfiguraton="string"  
-                issuerAddress="string" />  
+  <add behaviorConfiguraton="string"  
+       issuerAddress="string" />  
 </issuerChannelBehaviors>  
 ```  
   

@@ -17,7 +17,7 @@ Specifies an authorization policy for claim transformation.
   
 ```xml  
 <authorizationPolicies>  
-   <add policyType="String" />  
+  <add policyType="String" />  
 </authorizationPolicies>  
 ```  
   

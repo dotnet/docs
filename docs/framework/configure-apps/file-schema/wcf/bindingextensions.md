@@ -12,12 +12,13 @@ This section enables the use of a user defined binding from a machine or applica
   
 ```xml  
 <system.serviceModel>  
-    <extensions>  
-        <bindingExtensions>  
-           <add name="MyBinding" type="Microsoft.ServiceModel.Samples.MyBinding, MyBinding,  
-                Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-        </bindingExtensions>  
-    </extensions>  
+  <extensions>  
+    <bindingExtensions>  
+      <add name="MyBinding"  
+           type="Microsoft.ServiceModel.Samples.MyBinding, MyBinding,  
+                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
+    </bindingExtensions>  
+  </extensions>  
 </system.serviceModel>  
 ```  
   
@@ -27,9 +28,10 @@ This section enables the use of a user defined binding from a machine or applica
   
 ```xml  
 <services>  
-    <service name="MyService">  
-        <endpoint address="myAddress" binding="MyBinding" />  
-    </service>  
+  <service name="MyService">  
+    <endpoint address="myAddress"  
+              binding="MyBinding" />  
+  </service>  
 </services>  
 ```  
   

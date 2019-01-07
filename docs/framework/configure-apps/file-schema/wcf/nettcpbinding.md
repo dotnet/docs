@@ -16,38 +16,38 @@ Specifies a secure, reliable, optimized binding suitable for cross-machine commu
 ## Syntax  
   
 ```xml  
-<netTcpBinding>
+<netTcpBinding>  
   <binding closeTimeout="TimeSpan"  
-           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
            listenBacklog="Integer"  
            maxBufferPoolSize="integer"  
            maxBufferSize="Integer"  
-           maxConnections="Integer"   
+           maxConnections="Integer"  
            maxReceivedMessageSize="Integer"  
            name="string"  
            openTimeout="TimeSpan"  
            portSharingEnabled="Boolean"  
            receiveTimeout="TimeSpan"  
            sendTimeout="TimeSpan"  
-           transactionFlow="Boolean"   
-           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"   
-           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+           transactionFlow="Boolean"  
+           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"  
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">  
     <reliableSession ordered="Boolean"  
                      inactivityTimeout="TimeSpan"  
-                     enabled="Boolean" />
-    <security mode="None/Transport/Message/Both">
+                     enabled="Boolean" />  
+    <security mode="None/Transport/Message/Both">  
       <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />  
       <transport clientCredentialType="None/Windows/Certificate"  
-                 protectionLevel="None/Sign/EncryptAndSign" />
-    </security>
-    <readerQuotas maxArrayLength="Integer"     
-                  maxBytesPerRead="Integer"      
-                  maxDepth="Integer" 
-                  maxNameTableCharCount="Integer"
-                  maxStringContentLength="Integer" />
-  </binding>
-</netTcpBinding> 
+                 protectionLevel="None/Sign/EncryptAndSign" />  
+    </security>  
+    <readerQuotas maxArrayLength="Integer"  
+                  maxBytesPerRead="Integer"  
+                  maxDepth="Integer"  
+                  maxNameTableCharCount="Integer"  
+                  maxStringContentLength="Integer" />  
+  </binding>  
+</netTcpBinding>  
 ```  
   
 ## Attributes and elements
@@ -109,29 +109,27 @@ The binding is specified in the configuration files for the client and service. 
     ...  
   </service>  
 </services>  
-  
 <bindings>  
   <netTcpBinding>  
-    <binding   
-             closeTimeout="00:01:00"  
-             openTimeout="00:01:00"   
-             receiveTimeout="00:10:00"   
+    <binding closeTimeout="00:01:00"  
+             openTimeout="00:01:00"  
+             receiveTimeout="00:10:00"  
              sendTimeout="00:01:00"  
-             transactionFlow="false"   
-             transferMode="Buffered"   
+             transactionFlow="false"  
+             transferMode="Buffered"  
              transactionProtocol="OleTransactions"  
-             hostNameComparisonMode="StrongWildcard"   
+             hostNameComparisonMode="StrongWildcard"  
              listenBacklog="10"  
-             maxBufferPoolSize="524288"   
-             maxBufferSize="65536"   
+             maxBufferPoolSize="524288"  
+             maxBufferSize="65536"  
              maxConnections="10"  
              maxReceivedMessageSize="65536">  
-      <readerQuotas maxDepth="32"   
-                    maxStringContentLength="8192"   
+      <readerQuotas maxDepth="32"  
+                    maxStringContentLength="8192"  
                     maxArrayLength="16384"  
-                    maxBytesPerRead="4096"   
+                    maxBytesPerRead="4096"  
                     maxNameTableCharCount="16384" />  
-      <reliableSession ordered="true"   
+      <reliableSession ordered="true"  
                        inactivityTimeout="00:10:00"  
                        enabled="false" />  
       <security mode="Transport">  

@@ -16,19 +16,19 @@ Defines a binding for peer channel specific TCP messaging.
   
 ```xml  
 <netPeerBinding>  
-    <binding name="string"  
-         closeTimeout="TimeSpan"  
-         openTimeout="TimeSpan"   
-         receiveTimeout="TimeSpan"  
-         sendTimeout="TimeSpan"  
-         listenIPAddress="String"  
-          maxBufferPoolSize="integer"  
-         maxReceiveMessageSize="Integer"   
-         port="Integer"  
-         <security mode="None/Transport/Message/TransportWithMessageCredential">  
-            <transport credentialType="Certificate/Password" />  
-        </security>  
-    </binding>  
+  <binding name="string"  
+           closeTimeout="TimeSpan"  
+           openTimeout="TimeSpan"  
+           receiveTimeout="TimeSpan"  
+           sendTimeout="TimeSpan"  
+           listenIPAddress="String"  
+           maxBufferPoolSize="integer"  
+           maxReceiveMessageSize="Integer"  
+           port="Integer">  
+    <security mode="None/Transport/Message/TransportWithMessageCredential">  
+      <transport credentialType="Certificate/Password" />  
+    </security>  
+  </binding>  
 </netPeerBinding>  
 ```  
   
@@ -71,27 +71,26 @@ Defines a binding for peer channel specific TCP messaging.
   
 ```xml  
 <configuration>  
-<system.ServiceModel>  
-<bindings>  
-<netPeerBinding>  
-    <binding   
-         closeTimeout="00:00:10"  
-         openTimeout="00:00:20"   
-         receiveTimeout="00:00:30"  
-         sendTimeout="00:00:40"  
-         maxBufferSize="1001"  
-         maxConnections="123"   
-         maxReceiveMessageSize="1000">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00"  
-            enabled="true" />  
-        <security mode="TransportWithMessageCredential">  
+  <system.ServiceModel>  
+    <bindings>  
+      <netPeerBinding>  
+        <binding closeTimeout="00:00:10"  
+                 openTimeout="00:00:20"  
+                 receiveTimeout="00:00:30"  
+                 sendTimeout="00:00:40"  
+                 maxBufferSize="1001"  
+                 maxConnections="123"  
+                 maxReceiveMessageSize="1000">  
+          <reliableSession ordered="false"  
+                           inactivityTimeout="00:02:00"  
+                           enabled="true" />  
+          <security mode="TransportWithMessageCredential">  
             <message clientCredentialType="CardSpace" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
-</bindings>  
-</system.ServiceModel>  
+          </security>  
+        </binding>  
+      </netPeerBinding>  
+    </bindings>  
+  </system.ServiceModel>  
 </configuration>  
 ```  
   

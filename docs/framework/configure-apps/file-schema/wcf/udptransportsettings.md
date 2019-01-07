@@ -14,20 +14,20 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
   
 ```xml  
 <system.serviceModel>  
-  <standardEndpoints>
-    <udpDiscoveryEndpoint>
-      <standardEndpoint>
-        <updTransportSettings duplicateMessageHistoryLength="Integer" 
-                              maxBufferPoolSize="Integer" 
-                              maxMulticastRetransmitCount="Integer" 
-                              maxPendingMessageCount="Integer" 
-                              maxReceivedMessageSize="Integer" 
-                              maxUnicastRetransmitCount="Integer" 
-                              multicastInterfaceId="String" 
-                              socketReceiveBufferSize="Integer" 
-                              timeToLive="Integer" />
-      </standardEndpoint>
-    </udpDiscoveryEndpoint>
+  <standardEndpoints>  
+    <udpDiscoveryEndpoint>  
+      <standardEndpoint>  
+        <updTransportSettings duplicateMessageHistoryLength="Integer"  
+                              maxBufferPoolSize="Integer"  
+                              maxMulticastRetransmitCount="Integer"  
+                              maxPendingMessageCount="Integer"  
+                              maxReceivedMessageSize="Integer"  
+                              maxUnicastRetransmitCount="Integer"  
+                              multicastInterfaceId="String"  
+                              socketReceiveBufferSize="Integer"  
+                              timeToLive="Integer" />  
+      </standardEndpoint>  
+    </udpDiscoveryEndpoint>  
   </standardEndpoints>  
 </system.serviceModel>  
 ```  

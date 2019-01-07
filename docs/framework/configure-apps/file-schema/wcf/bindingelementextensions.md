@@ -12,12 +12,13 @@ This section enables the use of a custom binding element from a machine or appli
   
 ```xml  
 <system.serviceModel>  
-    <extensions>  
-        <bindingElementExtensions>  
-           <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportSection, UdpTransport,  
-                Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-        </bindingElementExtensions>  
-    </extensions>  
+  <extensions>  
+    <bindingElementExtensions>  
+      <add name="udpTransport"  
+           type="Microsoft.ServiceModel.Samples.UdpTransportSection, UdpTransport,  
+                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
+    </bindingElementExtensions>  
+  </extensions>  
 </system.serviceModel>  
 ```  
   
@@ -27,11 +28,12 @@ This section enables the use of a custom binding element from a machine or appli
   
 ```xml  
 <customBinding>  
-     <binding name="test2">  
-         <udpTransport />  
-         <binaryMessageEncoding maxReadPoolSize="211" maxWritePoolSize="2132"  
-             maxSessionSize="3141" />  
-         </binding>  
+  <binding name="test2">  
+    <udpTransport />  
+    <binaryMessageEncoding maxReadPoolSize="211"  
+                           maxWritePoolSize="2132"  
+                           maxSessionSize="3141" />  
+  </binding>  
 </customBinding>  
 ```  
   

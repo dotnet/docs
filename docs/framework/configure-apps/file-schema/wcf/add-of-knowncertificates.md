@@ -78,11 +78,12 @@ Adds an X.509 certificate to the collection of known certificates.
   
 ```xml  
 <issuedTokenAuthentication>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
+  <knownCertificates>  
+    <add findValue="www.contoso.com"  
+         storeLocation="LocalMachine"  
+         storeName="My"  
+         X509FindType="FindBySubjectName" />  
+  </knownCertificates>  
 </issuedTokenAuthentication>  
 ```  
   
@@ -95,17 +96,18 @@ Adds an X.509 certificate to the collection of known certificates.
   
 ```xml  
 <serviceBehaviors>  
- <behavior name="myServiceBehavior">  
-  <serviceCredentials>  
-   <issuedTokenAuthentication>  
-    <knownCertificates>  
-     <add findValue="www.contoso.com" storeLocation="LocalMachine"   
-          storeName="CertificateAuthority"  
-          x509FindType="FindByIssuerName" />  
-    </knownCertificates>  
-   </issuedTokenAuthentication>  
-  </serviceCredentials>  
- </behavior>  
+  <behavior name="myServiceBehavior">  
+    <serviceCredentials>  
+      <issuedTokenAuthentication>  
+        <knownCertificates>  
+          <add findValue="www.contoso.com"  
+               storeLocation="LocalMachine"  
+               storeName="CertificateAuthority"  
+               x509FindType="FindByIssuerName" />  
+        </knownCertificates>  
+      </issuedTokenAuthentication>  
+    </serviceCredentials>  
+  </behavior>  
 </serviceBehaviors>  
 ```  
   

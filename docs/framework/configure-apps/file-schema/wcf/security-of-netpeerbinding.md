@@ -16,11 +16,11 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
   
 ```xml  
 <netPeerBinding>  
-    <binding>  
-        <security mode="Message/None/Transport//TransportWithMessageCredential">  
-            <transport credentialType="Certificate/Password" />  
-        </security>  
-    </binding>  
+  <binding>  
+    <security mode="Message/None/Transport//TransportWithMessageCredential">  
+      <transport credentialType="Certificate/Password" />  
+    </security>  
+  </binding>  
 </netPeerBinding>  
 ```  
   

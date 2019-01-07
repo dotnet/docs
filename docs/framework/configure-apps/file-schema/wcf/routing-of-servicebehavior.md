@@ -15,14 +15,14 @@ Provides run-time access to the routing service to allow dynamic modification of
 ## Syntax  
   
 ```xml  
-<behaviors>
-  <serviceBehaviors>
-    <behavior name="String">
-      <routing filterTable="String" 
-               routeOnHeadersOnly="Boolean" 
-               SoapProcessingEnabled="Boolean" />
-    </behavior>
-  </serviceBehaviors>
+<behaviors>  
+  <serviceBehaviors>  
+    <behavior name="String">  
+      <routing filterTable="String"  
+               routeOnHeadersOnly="Boolean"  
+               SoapProcessingEnabled="Boolean" />  
+    </behavior>  
+  </serviceBehaviors>  
 </behaviors>  
 ```  
   

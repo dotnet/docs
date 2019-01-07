@@ -20,26 +20,26 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
 ## Syntax  
   
 ```xml  
-<tracking>
-  <profiles>
-    <trackingProfile name="Name">
-      <workflow>
-        <activityStateQueries>
-          <activityStateQuery activityName="String">
-            <arguments>
-              <argument name="String"/>
-            </arguments>
-            <states>
-              <state name="String"/>
-            </states>
-            <variables>
-              <variable name="String"/>
-            </variables>
-          </activityStateQuery>
-        </activityStateQueries>
-      </workflow>
-    </trackingProfile>
-  </profiles>
+<tracking>  
+  <profiles>  
+    <trackingProfile name="Name">  
+      <workflow>  
+        <activityStateQueries>  
+          <activityStateQuery activityName="String">  
+            <arguments>  
+              <argument name="String" />  
+            </arguments>  
+            <states>  
+              <state name="String" />  
+            </states>  
+            <variables>  
+              <variable name="String" />  
+            </variables>  
+          </activityStateQuery>  
+        </activityStateQueries>  
+      </workflow>  
+    </trackingProfile>  
+  </profiles>  
 </tracking>  
 ```  
   
@@ -74,13 +74,13 @@ One unique feature of an ActivityStateQuery is the ability to extract data when 
 ```xml  
 <activityStateQuery activityName="SendEmailActivity">  
   <states>  
-    <state name="Closed"/>  
+    <state name="Closed" />  
   </states>  
   <variables>  
-    <variable name="FromAddress"/>  
+    <variable name="FromAddress" />  
   </variables>  
   <arguments>  
-    <argument name="Result"/>  
+    <argument name="Result" />  
   </arguments>  
 </activityStateQuery>  
 ```  

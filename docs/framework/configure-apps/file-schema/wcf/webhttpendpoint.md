@@ -13,13 +13,13 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
   
 ```xml  
 <system.serviceModel>  
-  <standardEndpoints>
-    <webHttpEndpoint>
-      <standardEndpoint automaticFormatSelectionEnabled="String" 
-                        defaultOutgoingResponseFormat="Xml/Json" 
-                        helpEnabled="Boolean" 
-                        webEndpointType="String"/>
-    </webHttpEndpoint>
+  <standardEndpoints>  
+    <webHttpEndpoint>  
+      <standardEndpoint automaticFormatSelectionEnabled="String"  
+                        defaultOutgoingResponseFormat="Xml/Json"  
+                        helpEnabled="Boolean"  
+                        webEndpointType="String" />  
+    </webHttpEndpoint>  
   </standardEndpoints>  
 </system.serviceModel>  
 ```  

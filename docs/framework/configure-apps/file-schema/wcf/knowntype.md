@@ -16,8 +16,8 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
   
 ```xml  
 <knownType type="String">  
-     <parameter index="Integer"  
-                type="String" />  
+  <parameter index="Integer"  
+             type="String" />  
 </knownType>  
 ```  
   
@@ -53,13 +53,13 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 ## Example  
   
 ```xml  
-<add type="MyCompany.Library.Shape,   
+<add type="MyCompany.Library.Shape,  
            MyAssembly, Version=2.0.0.0, Culture=neutral,  
            PublicKeyToken=XXXXXX, processorArchitecture=MSIL">  
-           <knownType type="MyCompany.Library.Circle,   
-                      MyAssembly, Version=2.0.0.0, Culture=neutral,  
-                      PublicKeyToken=XXXXXX,  
-                      processorArchitecture=MSIL"/>  
+  <knownType type="MyCompany.Library.Circle,  
+                   MyAssembly, Version=2.0.0.0, Culture=neutral,  
+                   PublicKeyToken=XXXXXX,  
+                   processorArchitecture=MSIL"/>  
 </add>  
 ```  
   

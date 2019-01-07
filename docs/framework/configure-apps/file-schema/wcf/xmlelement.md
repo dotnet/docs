@@ -18,7 +18,7 @@ Specifies an XML element that is sent in the message body to the Security Token 
   
 ```xml  
 <tokenRequestParameters>  
-      <xmlElement xmlElement="String" />  
+  <xmlElement xmlElement="String" />  
 </tokenRequestParameters>  
 ```  
   

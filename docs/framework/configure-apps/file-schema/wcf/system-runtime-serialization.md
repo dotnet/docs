@@ -14,11 +14,11 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer ignoreExtensionDataObject="Boolean"  
-      maxItemsInObjectGraph="Integer">  
+                            maxItemsInObjectGraph="Integer">  
       <declaredTypes>  
-        <add type="String ">  
+        <add type="String">  
           <knownType type="String">  
-             <parameter index="Integer"/>  
+            <parameter index="Integer" />  
           </knownType>  
         </add>  
       </declaredTypes>  

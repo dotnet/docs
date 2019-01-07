@@ -16,9 +16,9 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 ```xml  
 <comContracts>  
   <comContract>  
-      <exposedMethods>  
-         <exposedMethod name="string" />  
-      </exposedMethods>  
+    <exposedMethods>  
+      <exposedMethod name="String" />  
+    </exposedMethods>  
   </comContract>  
 </comContracts>  
 ```  
@@ -51,10 +51,12 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
  When you also run the ComSvcConfig.exe, it then generates the following service contract listing the previously mentioned methods as [\<exposedMethod>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) elements.  
   
 ```xml  
-<comContract contractType="{C551FBA9-E3AA-4272-8C2A-84BD8D290AC7}" name="IFinances" namespace="http://contoso.com/services/financial">  
-    <exposedMethod name="TransferFunds"/>  
-    <exposedMethod name="AddFunds"/>  
-    <exposedMethod name="RemoveFunds"/>  
+<comContract contractType="{C551FBA9-E3AA-4272-8C2A-84BD8D290AC7}"  
+             name="IFinances"  
+             namespace="http://contoso.com/services/financial">  
+  <exposedMethod name="TransferFunds"/>  
+  <exposedMethod name="AddFunds"/>  
+  <exposedMethod name="RemoveFunds"/>  
 </comContract>  
 ```  
   

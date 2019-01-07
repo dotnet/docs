@@ -15,15 +15,17 @@ Defines properties that control authentication parameters for the HTTP transport
   
 ## Syntax  
   
-```xml
+```xml  
 <netHttpBinding>  
   <binding>  
     <security mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
       <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"  
-                 proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string">  
+                 proxyCredentialType="None|Basic|Digest|Ntlm|Windows"  
+                 realm="string">  
         <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"  
                                   protectionScenario="TransportSelected|TrustedProxy">  
-          <customServiceNames></customServiceNames>  
+          <customServiceNames>  
+          </customServiceNames>  
         </extendedProtectionPolicy>  
       </transport>  
     </security>  
@@ -77,14 +79,14 @@ Defines properties that control authentication parameters for the HTTP transport
 ## Example  
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
   
-```xml
+```xml  
 <system.serviceModel>  
   <services>  
     <service type="Microsoft.ServiceModel.Samples.CalculatorService"  
              behaviorConfiguration="CalculatorServiceBehavior">  
       <endpoint address=""  
                 binding="netHttpBinding"  
-                bindingConfiguration="Binding1"   
+                bindingConfiguration="Binding1"  
                 contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </service>  
   </services>  
@@ -98,9 +100,10 @@ Defines properties that control authentication parameters for the HTTP transport
                      proxyCredentialType="None">  
             <extendedProtectionPolicy policyEnforcement="WhenSupported"  
                                       protectionScenario="TransportSelected">  
-              <customServiceNames></customServiceNames>  
-            </extendedProtectionPolicy>
-          </transport> 
+              <customServiceNames>  
+              </customServiceNames>  
+            </extendedProtectionPolicy>  
+          </transport>  
         </security>  
       </binding>  
     </netHttpBinding>  

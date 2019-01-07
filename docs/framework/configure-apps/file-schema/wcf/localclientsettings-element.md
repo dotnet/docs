@@ -17,16 +17,16 @@ Specifies the security settings of a local client for this binding.
 ```xml  
 <security>  
    <localClientSettings cacheCookies="Boolean"  
-      cookieRenewalThresholdPercentage="Integer"  
-      detectReplays="Boolean"  
-      maxClockSkew="TimeSpan"  
-      maxCookieCachingTime="TimeSpan"  
-      reconnectTransportOnFailure="Boolean"  
-      replayCacheSize="Integer"  
-      replayWindow="TimeSpan"  
-      sessionKeyRenewalInterval="TimeSpan"  
-      sessionKeyRolloverInterval="TimeSpan"  
-      timestampValidityDuration="TimeSpan" />  
+                        cookieRenewalThresholdPercentage="Integer"  
+                        detectReplays="Boolean"  
+                        maxClockSkew="TimeSpan"  
+                        maxCookieCachingTime="TimeSpan"  
+                        reconnectTransportOnFailure="Boolean"  
+                        replayCacheSize="Integer"  
+                        replayWindow="TimeSpan"  
+                        sessionKeyRenewalInterval="TimeSpan"  
+                        sessionKeyRolloverInterval="TimeSpan"  
+                        timestampValidityDuration="TimeSpan" />  
 </security>  
 ```  
   

@@ -12,7 +12,7 @@ Specifies a user account for processes that host WCF services, and are granted c
   
 ```xml  
 <allowAccounts>  
-   <add securityIdentifier="String"/>  
+  <add securityIdentifier="String" />  
 </allowAccounts>  
 ```  
   
@@ -39,16 +39,16 @@ Specifies a user account for processes that host WCF services, and are granted c
   
 ```xml  
 <allowAccounts>  
-   // LocalSystem account  
-   <add securityIdentifier="S-1-5-18"/>  
-   // LocalService account  
-   <add securityIdentifier="S-1-5-19"/>  
-   // Administrators account  
-   <add securityIdentifier="S-1-5-20"/>  
-   // Network Service account  
-   <add securityIdentifier="S-1-5-32-544" />  
-   // IIS_IUSRS account (Vista only)  
-   <add securityIdentifier="S-1-5-32-568"/>  
+  <!-- LocalSystem account -->  
+  <add securityIdentifier="S-1-5-18" />  
+  <!-- LocalService account -->  
+  <add securityIdentifier="S-1-5-19" />  
+  <!-- Administrators account -->  
+  <add securityIdentifier="S-1-5-20" />  
+  <!-- Network Service account -->  
+  <add securityIdentifier="S-1-5-32-544" />  
+  <!-- IIS_IUSRS account (Vista only) -->  
+  <add securityIdentifier="S-1-5-32-568" />  
 </allowAccounts>  
 ```  
   

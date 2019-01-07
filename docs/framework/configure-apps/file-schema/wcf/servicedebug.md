@@ -15,11 +15,11 @@ Specifies debugging and help information features for a Windows Communication Fo
 ## Syntax  
   
 ```xml  
-<serviceDebug httpHelpPageBinding="String"
+<serviceDebug httpHelpPageBinding="String"  
               httpHelpPageBindingConfiguration="String"  
               httpHelpPageEnabled="Boolean"  
               httpHelpPageUrl="Uri"  
-              httpsHelpPageBinding="String"
+              httpsHelpPageBinding="String"  
               httpsHelpPageBindingConfiguration="String"  
               httpsHelpPageEnabled="Boolean"  
               httpsHelpPageUrl="Uri"  

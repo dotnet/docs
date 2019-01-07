@@ -19,21 +19,21 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
-<tracking>
-  <profiles>
-    <trackingProfile name="Name">
-      <workflow>
-        <customTrackingQueries>
-          <customTrackingQuery activityName="String"
-                               name="String"/>
-        </customTrackingQueries>
-      </workflow>
-    </trackingProfile>
-  </profiles>
-</tracking>
-```
-
+```xml  
+<tracking>  
+  <profiles>  
+    <trackingProfile name="Name">  
+      <workflow>  
+        <customTrackingQueries>  
+          <customTrackingQuery activityName="String"  
+                               name="String"/>  
+        </customTrackingQueries>  
+      </workflow>  
+    </trackingProfile>  
+  </profiles>  
+</tracking>  
+```  
+  
 ## Attributes and elements  
 
 The following sections describe attributes, child elements, and parent elements.  

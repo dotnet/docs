@@ -19,20 +19,20 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
-<tracking>
-  <profiles>
-    <trackingProfile name="Name">
-      <workflow>
-        <bookmarkResumptionQueries>
-          <bookmarkResumptionQuery name="String" />
-        </bookmarkResumptionQueries>
-      </workflow>
-    </trackingProfile>
-  </profiles>
+```xml  
+<tracking>  
+  <profiles>  
+    <trackingProfile name="Name">  
+      <workflow>  
+        <bookmarkResumptionQueries>  
+          <bookmarkResumptionQuery name="String" />  
+        </bookmarkResumptionQueries>  
+      </workflow>  
+    </trackingProfile>  
+  </profiles>  
 </tracking>  
-```
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.  

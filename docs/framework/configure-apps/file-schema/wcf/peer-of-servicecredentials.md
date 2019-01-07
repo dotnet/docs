@@ -17,9 +17,9 @@ Specifies the current credentials for a peer node.
   
 ```xml  
 <peer>  
-  <certificate/>  
-  <peerAuthentication/>  
-  <messageSenderAuthentication/>  
+  <certificate />  
+  <peerAuthentication />  
+  <messageSenderAuthentication />  
 </peer>  
 ```  
   

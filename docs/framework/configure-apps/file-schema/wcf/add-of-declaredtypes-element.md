@@ -20,10 +20,10 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
   
 ```xml  
 <add type="String">  
-   <knownType type="String">  
-       <parameter index="Integer"  
-                  type="String" />  
-   </knownType>  
+  <knownType type="String">  
+    <parameter index="Integer"  
+               type="String" />  
+  </knownType>  
 </add>  
 ```  
   
@@ -59,13 +59,13 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 ## Example  
   
 ```xml  
-<add type="MyCompany.Library.Shape,   
+<add type="MyCompany.Library.Shape,  
            MyAssembly, Version=2.0.0.0, Culture=neutral,  
            PublicKeyToken=XXXXXX, processorArchitecture=MSIL">  
-           <knownType type="MyCompany.Library.Circle,   
-                      MyAssembly, Version=2.0.0.0, Culture=neutral,  
-                      PublicKeyToken=XXXXXX,  
-                      processorArchitecture=MSIL"/>  
+  <knownType type="MyCompany.Library.Circle,   
+                   MyAssembly, Version=2.0.0.0, Culture=neutral,  
+                   PublicKeyToken=XXXXXX,  
+                   processorArchitecture=MSIL" />  
 </add>  
 ```  
   

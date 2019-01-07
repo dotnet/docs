@@ -14,16 +14,16 @@ The identity element allows a client developer to specify at design time the exp
   
 ```xml  
 <identity>  
-    <certificate encodedValue="String"/>  
-    <certificateReference findValue="String"   
-       isChainIncluded="Boolean"  
-       storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-       storeLocation="LocalMachine/CurrentUser"  
-       X509FindType= Enumeration./>  
-    <dns value="String"/>  
-    <rsa value="String"/>  
-    <servicePrincipalName value="String"/>  
-    <usePrincipalName value="String"/>  
+  <certificate encodedValue="String" />  
+  <certificateReference findValue="String"  
+                        isChainIncluded="Boolean"  
+                        storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
+                        storeLocation="LocalMachine/CurrentUser"  
+                        X509FindType="Enumeration" />  
+  <dns value="String" />  
+  <rsa value="String" />  
+  <servicePrincipalName value="String" />  
+  <usePrincipalName value="String" />  
 </identity>  
 ```  
   

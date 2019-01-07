@@ -14,11 +14,13 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
   
 ```xml  
 <endpoint address="String"  
-   behaviorConfiguration="String"  
-   binding="String"  
-   bindingConfiguration="String"  
-   contract="String"   endpointConfiguration="String"   kind="String"  
-   name="String"  
+          behaviorConfiguration="String"  
+          binding="String"  
+          bindingConfiguration="String"  
+          contract="String"  
+          endpointConfiguration="String"  
+          kind="String"  
+          name="String">  
 </endpoint>  
 ```  
   
@@ -56,10 +58,10 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
   
 ```xml  
 <endpoint address="/HelloWorld/"  
-    bindingConfiguration="usingDefaults"  
-    name="MyBinding"  
-    binding="customBinding"  
-    contract="HelloWorld">  
+          bindingConfiguration="usingDefaults"  
+          name="MyBinding"  
+          binding="customBinding"  
+          contract="HelloWorld">  
 </endpoint>  
 ```  
   

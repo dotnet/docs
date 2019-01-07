@@ -10,7 +10,7 @@ This configuration element contains a collection of XML elements that contain cu
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
-     <endpoint binding="basicHttpBinding"  
+    <endpoint binding="basicHttpBinding"  
               address="calculator"  
               contract="ICalculatorService"  
               behaviorConfiguration="calculatorEndpointBehavior" />  

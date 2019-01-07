@@ -13,11 +13,11 @@ A configuration element that allows you to add settings that define virtual serv
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <serviceActivations>  
-      <add factory="String"  
-           service="String"/>  
-   </serviceActivations>  
+<serviceHostingEnvironment>  
+  <serviceActivations>  
+    <add factory="String"  
+         service="String" />  
+  </serviceActivations>  
 </serviceHostingEnvironment>  
 ```  
   
@@ -47,7 +47,7 @@ A configuration element that allows you to add settings that define virtual serv
   <system.serviceModel>  
     <serviceHostingEnvironment>  
       <serviceActivations>  
-        <add service="GreetingService"/>  
+        <add service="GreetingService" />  
       </serviceActivations>  
     </serviceHostingEnvironment>  
   </system.serviceModel>  

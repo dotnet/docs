@@ -31,15 +31,15 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
 |**/h\[elp\]**|Displays command syntax and options for the tool.|  
 |**/o\[utputdir\]:**_directory_|Specifies the directory for output files. This argument can appear only once. The default is the current directory.|  
 |**/?**|Displays command syntax and options for the tool.|  
-|**/P\[arameters\]:** *file.xml*|Read options for various operation modes from the specified .xml file. The short form is `/p:`. For more information, see the [Remarks](#remarks) section.|  
+|**/p\[arameters\]:**_file.xml_|Read options for various operation modes from the specified .xml file. The short form is `/p:`. For more information, see the [Remarks](#remarks) section.|  
   
 ## XSD File Options  
  You must specify only one of the following options for .xsd files.  
   
 |Option|Description|  
 |------------|-----------------|  
-|**/c\[lasses\]**|Generates classes that correspond to the specified schema. To read XML data into the object, use the <xref:System.Xml.Serialization.XmlSerializer.Deserializer%2A?displayProperty=nameWithType> method.|  
-|**/d**[**ataset**]|Generates a class derived from <xref:System.Data.DataSet> that corresponds to the specified schema. To read XML data into the derived class, use the `System.Data.DataSet.ReadXml` method.|  
+|**/c\[lasses\]**|Generates classes that correspond to the specified schema. To read XML data into the object, use the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A?displayProperty=nameWithType> method.|  
+|**/d**[**ataset**]|Generates a class derived from <xref:System.Data.DataSet> that corresponds to the specified schema. To read XML data into the derived class, use the <xref:System.Data.DataSet.ReadXml%2A?displayProperty=nameWithType> method.|  
   
  You can also specify any of the following options for .xsd files.  
   
@@ -71,7 +71,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
 |XML to XSD|Generates an XML schema from an XML file.|  
 |XSD to DataSet|Generates common language runtime <xref:System.Data.DataSet> classes from an XSD schema file. The generated classes provide a rich object model for regular XML data.| 
 |XSD to Classes|Generates runtime classes from an XSD schema file. The generated classes can be used in conjunction with <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType> to read and write XML code that follows the schema.| 
-|Classes to XSD| Generates an XML schema from a type or types in a runtime assembly file. The generated schema defines the XML format used by `System.Xml.Serialization.XmlSerializer`.|  
+|Classes to XSD| Generates an XML schema from a type or types in a runtime assembly file. The generated schema defines the XML format used by the <xref:System.Xml.Serialization.XmlSerializer>.|  
  
  Xsd.exe only allows you to manipulate XML schemas that follow the XML Schema Definition (XSD) language proposed by the World Wide Web Consortium (W3C). For more information on the XML Schema Definition proposal or the XML standard, see <https://w3.org>.  
   

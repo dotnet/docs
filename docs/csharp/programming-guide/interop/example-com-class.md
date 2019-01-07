@@ -1,5 +1,6 @@
 ---
-title: "Example COM Class (C# Programming Guide)"
+title: "Example COM Class - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "examples [C#], COM classes"

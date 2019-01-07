@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "NetworkCredential class, about NetworkCredential class"
   - "client authentication, classes for authentication"
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Internet Authentication
 The <xref:System.Net> classes support a variety of client authentication mechanisms, including the standard Internet authentication methods basic, digest, negotiate, NTLM, and Kerberos authentication, as well as custom methods that you can create.  

@@ -81,7 +81,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
 -   When the <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute is not applied, the default name and namespace for collection types depend on the names and namespaces of types contained within the collection. They are not affected by the name and namespace of the collection type itself. For an example, see the following types.  
   
-    ```  
+    ```csharp  
     public CustomerList1 : Collection<string> {}  
     public StringList1 : Collection<string> {}  
     ```  
@@ -243,7 +243,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  For example, to cause all lists to be imported as Generic <xref:System.Collections.Generic.List%601>.  
   
-```  
+```console  
 svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\System.dll /ct:System.Collections.Generic.List`1  
 ```  
   

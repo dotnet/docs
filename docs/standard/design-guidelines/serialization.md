@@ -1,10 +1,9 @@
 ---
 title: "Serialization1"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Serialization
 Serialization is the process of converting an object into a format that can be readily persisted or transported. For example, you can serialize an object, transport it over the Internet using HTTP, and deserialized it at the destination machine.  
@@ -79,14 +78,14 @@ Serialization is the process of converting an object into a format that can be r
   
  **✓ DO** make the serialization constructor protected and provide two parameters typed and named exactly as shown in the sample here.  
   
-```  
+```csharp
 [Serializable]  
 public class Person : ISerializable {  
     protected Person(SerializationInfo info, StreamingContext context) {  
         ...  
     }  
 }  
-```  
+```
   
  **✓ DO** implement the `ISerializable` members explicitly.  
   

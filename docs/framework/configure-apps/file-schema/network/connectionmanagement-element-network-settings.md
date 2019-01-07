@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<connectionManagement> element"
   - "connectionManagement element"
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;connectionManagement&gt; Element (Network Settings)
 Specifies the maximum number of connections to a network host.  
@@ -66,6 +64,6 @@ Specifies the maximum number of connections to a network host.
 ```  
   
 ## See Also  
- <xref:System.Net.ServicePoint>  
- <xref:System.Net.ServicePointManager>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.ServicePoint>  
+- <xref:System.Net.ServicePointManager>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

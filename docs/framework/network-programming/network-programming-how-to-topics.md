@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "networking how-tos [.NET Framework]"
   - "network"
 ms.assetid: 8fd6c675-9ea6-4fad-a412-e2c2c1f233d8
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Network Programming How-to Topics
 The following list includes links to the How-to topics found in the conceptual documentation for network programming.  

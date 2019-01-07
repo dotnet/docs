@@ -1,5 +1,5 @@
 ---
-title: Structures (F#)
+title: Structures
 description: Learn about the F# structure, a compact object type often more efficient than a class for types with a small amount of data and simple behavior.
 ms.date: 05/16/2016
 ---

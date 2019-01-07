@@ -6,7 +6,7 @@ ms.date: 04/25/2018
 
 Determines how a custom attribute class can be used. <xref:System.AttributeUsageAttribute> is an attribute you apply to custom attribute definitions. The `AttributeUsage` attribute enables you to control:
 
-- Which program elements attribute may be applied to. Unless you restrict is usage, an attribute may be applied to any of the following program elements:
+- Which program elements attribute may be applied to. Unless you restrict its usage, an attribute may be applied to any of the following program elements:
   - assembly
   - module
   - field

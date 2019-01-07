@@ -1,5 +1,7 @@
 ---
-title: "%= Operator (C# Reference)"
+title: "%= Operator - C# Reference"
+ms.custom: seodec18
+
 ms.date: 09/04/2018
 f1_keywords: 
   - "%=_CSharpKeyword"
@@ -26,7 +28,7 @@ x = x % y
 
 except that `x` is only evaluated once.
   
-The [remainder operator](remainder-operator.md) `%` is supported by all numeric types and computes the remainder after division of its operands.
+The [remainder operator](remainder-operator.md) `%` computes the remainder after division of its operands. It's supported by all numeric types.
 
 If a user-defined type [overloads](../keywords/operator.md) the [remainder operator](remainder-operator.md) `%`, the remainder assignment operator `%=` is implicitly overloaded.
   

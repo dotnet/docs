@@ -1,5 +1,6 @@
 ---
-title: "Delegates with Named vs. Anonymous Methods (C# Programming Guide)"
+title: "Delegates with Named vs. Anonymous Methods - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"

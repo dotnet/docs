@@ -1,5 +1,7 @@
 ---
-title: "?? Operator (C# Reference)"
+title: "?? Operator - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "??_CSharpKeyword"
@@ -21,6 +23,10 @@ The `??` operator is called the null-coalescing operator.  It returns the left-h
   
 ## Example  
  [!code-csharp[csRefOperators#53](../../../csharp/language-reference/operators/codesnippet/CSharp/null-conditional-operator_1.cs)]  
+  
+## C# Language Specification  
+
+For more information, see [The null coalescing operator](~/_csharplang/spec/expressions.md#the-null-coalescing-operator) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
 ## See Also
 

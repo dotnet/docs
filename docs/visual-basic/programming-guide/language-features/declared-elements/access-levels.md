@@ -46,7 +46,7 @@ Friend stringForThisProject As String
  You can use `Friend` only at module, interface, or namespace level. This means you can declare a friend element at the level of a source file or namespace, or inside an interface, module, class, or structure, but not in a procedure.  
   
 ## Protected Friend  
- The `Protected` and `Friend` keywords together in the declaration statement specify that the element can be accessed either from derived classes or from within the same assembly, or both. The following code shows a sample `Protected Friend` declaration.  
+ The [Protected Friend](../../../language-reference/modifiers/protected-friend.md) keyword combination in the declaration statement specifies that the element can be accessed either from derived classes or from within the same assembly, or both. The following code shows a sample `Protected Friend` declaration.  
   
 ```vb  
 Protected Friend stringForProjectAndHeirs As String  
@@ -67,7 +67,7 @@ Private numberForMeOnly As Integer
 
 ## Private Protected
 
-The [Private Protected](../../../language-reference/modifiers/private-protected.md) keyword in the declaration statement specifies that the element can be accessed only from within the same class, as well as from derived classes found in the same assembly as the containing class. The `Private Protected` access modifier is supported starting with Visual Basic 15.5.
+The [Private Protected](../../../language-reference/modifiers/private-protected.md) keyword combination in the declaration statement specifies that the element can be accessed only from within the same class, as well as from derived classes found in the same assembly as the containing class. The `Private Protected` access modifier is supported starting with Visual Basic 15.5.
 
 The following example shows a `Private Protected` declaration:
 

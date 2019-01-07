@@ -68,7 +68,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
     // ** DISCOVERY ** //
     // Make the service discoverable by adding the discovery behavior
     ServiceDiscoveryBehavior discoveryBehavior = new ServiceDiscoveryBehavior();
-    serviceHost.Description.Behaviors.Add(new ServiceDiscoveryBehavior());
+    serviceHost.Description.Behaviors.Add(discoveryBehavior);
 
     // Send announcements on UDP multicast transport
     discoveryBehavior.AnnouncementEndpoints.Add(

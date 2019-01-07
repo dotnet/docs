@@ -1,14 +1,13 @@
 ---
 title: "Unsealed Classes"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "classes [.NET Framework], unsealed"
   - "unsealed classes"
   - "inheritance, classes"
 ms.assetid: 9a3bd505-90f5-4053-9f0d-3cf5fa3d3ebf
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Unsealed Classes
 Sealed classes cannot be inherited from, and they prevent extensibility. In contrast, classes that can be inherited from are called unsealed classes.  

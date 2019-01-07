@@ -1,5 +1,7 @@
 ---
-title: "Reference tables for types (C# Reference)"
+title: "Reference tables for types - C# Reference"
+ms.custom: seodec18
+
 ms.date: 09/21/2018
 f1_keywords: 
   - "cs.referencetables"

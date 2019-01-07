@@ -1,4 +1,4 @@
-﻿---
+---
 title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
 dev_langs: 
@@ -73,7 +73,7 @@ Once installed, the tool can be run from the command line by specifying the tool
 
 ### Tool management with the `dotnet tool` command
 
-In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` command. The following options are available:
+In .NET Core 2.1 SDK, all tools operations use the `dotnet tool` command. The following options are available:
 
 - [`dotnet tool install`](../tools/dotnet-tool-install.md) to install a tool.
 

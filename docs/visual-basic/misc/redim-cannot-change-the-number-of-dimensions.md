@@ -1,11 +1,11 @@
 ---
-title: "&#39;ReDim&#39; cannot change the number of dimensions"
+title: "'ReDim' cannot change the number of dimensions"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArray_RankMismatch"
 ms.assetid: 52505298-9985-4682-8f6e-ff7d56077f34
 ---
-# &#39;ReDim&#39; cannot change the number of dimensions
+# 'ReDim' cannot change the number of dimensions
 An operation attempts to use the `ReDim` statement to change the rank (number of dimensions) of an array. `ReDim` can change the size of one or more dimensions of an array that has already been formally declared, but it cannot change an array's rank.  
   
 ## To correct this error  

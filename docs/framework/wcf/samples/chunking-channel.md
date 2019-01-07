@@ -68,7 +68,7 @@ interface ITestService
 <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
             xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
-<!—Original message action is replaced with a chunking-specific action. -->  
+<!--Original message action is replaced with a chunking-specific action. -->  
     <a:Action s:mustUnderstand="1">http://samples.microsoft.com/chunkingAction</a:Action>  
 <!--  
 Original message is assigned a unique id that is transmitted   

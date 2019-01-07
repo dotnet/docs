@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 97a10d79-3e7d-4bd1-9a99-fd9807fd70bc
-author: "BrucePerlerMS"
 ---
 # Internet Unsecured Client and Service
 The following illustration shows an example of a public, unsecured Windows Communication Foundation (WCF) client and service.  

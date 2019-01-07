@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "keycontainer compiler option [Visual Basic]"
   - "/keycontainer compiler option [Visual Basic]"
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
-author: rpetrusha
-ms.author: ronpet
 ---
 # -keycontainer
 Specifies a key container name for a key pair to give an assembly a strong name.  

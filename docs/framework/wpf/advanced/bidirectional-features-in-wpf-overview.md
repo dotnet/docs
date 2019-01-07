@@ -228,25 +228,28 @@ Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../..
   
  First, set the application component’s `NumberSubstitution.CultureSource="Text"`. Using this setting makes sure that the settings do not come from the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] for text elements that have "User" as the default, such as <xref:System.Windows.Controls.TextBlock>.  
   
- For example:  
+For example:  
+
+```xaml  
+<TextBlock
+   Name="text1" NumberSubstitution.CultureSource="Text">
+   1234+5679=6913
+</TextBlock>
+```
+
+In the corresponding C# code, set the `Language` property, for example, to `"ar-SA"`.  
   
-||  
-|-|  
-|`<TextBlock`<br /><br /> `Name="text1" NumberSubstitution.CultureSource="Text">`<br /><br /> `1234+5679=6913`<br /><br /> `</TextBlock>`|  
+```csharp
+text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage("ar-SA");
+```
+
+If you need to set the `Language` property to the current user’s UI language use the following code.  
   
- In the corresponding C# code, set the `Language` property for example, to `"ar-SA"`.  
-  
-||  
-|-|  
-|`text1.Language =`<br /><br /> `System.Windows.Markup.XmlLanguage.GetLanguage("ar-SA");`|  
-  
- If you need to set the `Language` property to the current user’s [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] language use the following code.  
-  
-||  
-|-|  
-|`text1.Language =`<br /><br /> `System.Windows.Markup.XmlLanguage.GetLanguage(`<br /><br /> `System.Globalization.CultureInfo.CurrentUICulture.IetfLanguageTag);`|  
-  
- <xref:System.Globalization.CultureInfo.CurrentCulture%2A> represents the current culture used by the current thread at run time.  
+```csharp
+text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalization.CultureInfo.CurrentUICulture.IetfLanguageTag);
+```
+
+ <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> represents the current culture used by the current thread at run time.  
   
  Your final [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] example should be similar to the following example.  
   

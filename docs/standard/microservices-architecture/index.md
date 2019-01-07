@@ -9,7 +9,7 @@ ms.date: 08/31/2018
 
 ![Book cover](./media/cover-small.png)
 
-**EDITION v2.1.02** - Updated to ASP.NET Core 2.1
+**EDITION v2.1.03** - Updated to ASP.NET Core 2.1
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
 
@@ -21,9 +21,9 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 * Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
  
-* Watch the [introductory video on Channel 9](http://aka.ms/microservices-video)
+* Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
 
-* Get to know the [Microservices Architecture](http://aka.ms/MicroservicesArchitecture) right away
+* Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 
 ## Introduction
 
@@ -173,6 +173,5 @@ The Docker whale logo is a registered trademark of Docker, Inc. Used by permissi
 
 All other marks and logos are property of their respective owners.
 
-
 >[!div class="step-by-step"]
-[Next](container-docker-introduction/index.md)
+>[Next](container-docker-introduction/index.md)

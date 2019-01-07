@@ -67,7 +67,7 @@ RaiseEvent eventname[( argumentlist )]
  Press F5 to run the preceding example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Threading](../../programming-guide/concepts/threading/index.md).  
+>  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../standard/threading/index.md).  
   
 ## See Also  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  

@@ -60,8 +60,7 @@ internal class Record
   
     public override string ToString()  
     {  
-        return string.Format("Record: {0} {1} {2} = {3}", n1,  
-            operation, n2, result);  
+        return $"Record: {n1} {operation} {n2} = {result}";
     }  
 }  
 ```  

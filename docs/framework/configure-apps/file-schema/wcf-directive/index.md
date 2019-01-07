@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e471b042-d5e3-491c-bc81-758655016a3a
 ---
 # WCF Directive Syntax
-Specifies settings used by the Windows Communication Foundation (WCF) directives in the .svc files to direct the compilers. Each directive can contain one or more attributes (paired with values) that are specific to that directive. WCF has only the [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  
+Specifies settings used by the Windows Communication Foundation (WCF) directives in the .svc files to direct the compilers. Each directive can contain one or more attributes (paired with values) that are specific to that directive. WCF has only the [\@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  
   
 ## In This Section  
  [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)  

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "-target compiler options [Visual Basic]"
   - "/target compiler options [Visual Basic]"
 ms.assetid: e0954147-548b-461f-9c4b-a8f88845616c
-author: rpetrusha
-ms.author: ronpet
 ---
 # -target (Visual Basic)
 Specifies the format of compiler output.  

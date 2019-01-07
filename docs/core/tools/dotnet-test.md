@@ -1,8 +1,6 @@
 ---
-title: dotnet test command - .NET Core CLI
+title: dotnet test command
 description: The dotnet test command is used to execute unit tests in a given project.
-author: mairaw
-ms.author: mairaw
 ms.date: 05/29/2018
 ---
 # dotnet test
@@ -19,7 +17,9 @@ ms.date: 05/29/2018
 
 ```console
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [--blame] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
-    [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
+    [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] 
+    [-v|--verbosity] [-- <RunSettings arguments>]
+
 dotnet test [-h|--help]
 ```
 
@@ -28,6 +28,7 @@ dotnet test [-h|--help]
 ```console
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [--collect] [-d|--diag] [-f|--framework] [--filter]
     [-l|--logger] [--no-build] [--no-restore] [-o|--output] [-r|--results-directory] [-s|--settings] [-t|--list-tests] [-v|--verbosity]
+
 dotnet test [-h|--help]
 ```
 
@@ -35,6 +36,7 @@ dotnet test [-h|--help]
 
 ```console
 dotnet test [<PROJECT>] [-a|--test-adapter-path] [-c|--configuration] [-d|--diag] [-f|--framework] [--filter] [-l|--logger] [--no-build] [-o|--output] [-s|--settings] [-t|--list-tests]  [-v|--verbosity]
+
 dotnet test [-h|--help]
 ```
 
@@ -121,6 +123,14 @@ List all of the discovered tests in the current project.
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+`RunSettings arguments`
+
+Arguments passed as RunSettings configurations for the test. Arguments are specified as `[name]=[value]` pairs after "-- " (note the space after --). A space is used to separate multiple `[name]=[value]` pairs.
+
+Example: `dotnet test -- MSTest.DeploymentEnabled=false MSTest.MapInconclusiveToFailed=True`
+
+For more information about RunSettings, see [vstest.console.exe: Passing RunSettings args](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md).
 
 # [.NET Core 2.0](#tab/netcore20)
 

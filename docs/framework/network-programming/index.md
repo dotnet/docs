@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Internet, .NET Framework Internet services"
   - "Network Resources"
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Network Programming in the .NET Framework
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be quickly and easily integrated into your applications. Your network applications can build on pluggable protocols to automatically take advantage of new Internet protocols, or they can use a managed implementation of the Windows socket interface to work with the network on the socket level.  

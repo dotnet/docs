@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "webRequestModules element"
   - "<webRequestModules> element"
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;webRequestModules&gt; Element (Network Settings)
 Specifies modules to use to request information from network hosts.  
@@ -70,6 +68,6 @@ Specifies modules to use to request information from network hosts.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>  
- <xref:System.Net.IWebRequestCreate>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- <xref:System.Net.IWebRequestCreate>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

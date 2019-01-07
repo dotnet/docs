@@ -149,5 +149,5 @@ public class ResilientTransaction
   [*https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/*](https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/)
 
 >[!div class="step-by-step"]
-[Previous](implement-retries-exponential-backoff.md)
-[Next](explore-custom-http-call-retries-exponential-backoff.md)
+>[Previous](implement-retries-exponential-backoff.md)
+>[Next](explore-custom-http-call-retries-exponential-backoff.md)

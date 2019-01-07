@@ -31,7 +31,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 <system.ServiceModel>  
   
    <services>  
-   <!—- Define the service endpoints. This section is optional in the new  
+   <!-- Define the service endpoints. This section is optional in the new  
     default configuration model in .NET Framework 4. -->  
       <service>  
          <endpoint/>  
@@ -120,7 +120,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
     <basicHttpBinding>  
      <binding name="myBindingConfiguration1" closeTimeout="00:01:00" />  
      <binding name="myBindingConfiguration2" closeTimeout="00:02:00" />  
-     <binding closeTimeout="00:03:00" />  <!—- Default binding for basicHttpBinding -->  
+     <binding closeTimeout="00:03:00" />  <!-- Default binding for basicHttpBinding -->  
     </basicHttpBinding>  
      </bindings>  
      <services>  
@@ -180,9 +180,9 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ## Behavior Merge  
  The behavior merge feature makes it easier to manage behaviors when you want a set of common behaviors to be used consistently. This feature allows you to specify behaviors at different levels of the configuration hierarchy and have services inherit behaviors from multiple levels of the configuration hierarchy. To illustrate how this works assume you have the following virtual directory layout in IIS:  
   
- ~\Web.config~\Service.svc~\Child\Web.config~\Child\Service.svc  
+ `~\Web.config~\Service.svc~\Child\Web.config~\Child\Service.svc`
   
- And your ~\Web.config file has the following contents:  
+ And your `~\Web.config` file has the following contents:  
   
 ```xml  
 <configuration>  

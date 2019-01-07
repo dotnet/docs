@@ -549,14 +549,15 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 
 2.  Start a new workflow by clicking **New Game**. The version of the workflow is displayed under the status window and reflects the updated version from the associated `WorkflowIdentity`. Make a note of the `InstanceId` so you can view the tracking file for the workflow when it completes, and then enter guesses until the game is complete. Note how the user's guess is displayed in the information displayed in the status window based on the updates to the `WriteLine` activities.
 
- **Please enter a number between 1 and 10**
-**5 is too high.**
-**Please enter a number between 1 and 10**
-**3 is too high.**
-**Please enter a number between 1 and 10**
-**1 is too low.**
-**Please enter a number between 1 and 10**
-**Congratulations, you guessed the number in 4 turns.**
+ **Please enter a number between 1 and 10**  
+**5 is too high.**  
+**Please enter a number between 1 and 10**  
+**3 is too high.**  
+**Please enter a number between 1 and 10**  
+**1 is too low.**  
+**Please enter a number between 1 and 10**  
+**Congratulations, you guessed the number in 4 turns.**  
+
     > [!NOTE]
     >  The updated text from the `WriteLine` activities is displayed, but the output of the final `WriteLine` activity that was added in this topic is not. That is because the status window is updated by the `PersistableIdle` handler. Because the workflow completes and does not go idle after the final activity, the `PersistableIdle` handler is not called. However, a similar message is displayed in the status window by the `Completed` handler. If desired, code could be added to the `Completed` handler to extract the text from the `StringWriter` and display it to the status window.
 

@@ -1,5 +1,6 @@
 ---
-title: "Extension Methods (C# Programming Guide)"
+title: "Extension Methods - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"

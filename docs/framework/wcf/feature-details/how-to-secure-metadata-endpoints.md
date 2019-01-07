@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9f71b6ae-737c-4382-8d89-0a7b1c7e182b
-author: "BrucePerlerMS"
 ---
 # How to: Secure Metadata Endpoints
 Metadata for a service can contain sensitive information about your application that a malicious user can leverage. Consumers of your service may also require a secure mechanism for obtaining metadata about your service. Therefore, it is sometimes necessary to publish your metadata using a secure endpoint.  

@@ -192,5 +192,5 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
   [*https://www.microsoft.com/cloud-platform/operations-management-suite*](https://www.microsoft.com/cloud-platform/operations-management-suite)
 
 >[!div class="step-by-step"]
-[Previous](implement-circuit-breaker-pattern.md)
-[Next](../secure-net-microservices-web-applications/index.md)
+>[Previous](implement-circuit-breaker-pattern.md)
+>[Next](../secure-net-microservices-web-applications/index.md)

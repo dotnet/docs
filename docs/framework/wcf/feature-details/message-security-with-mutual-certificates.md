@@ -5,7 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 99d7a528-7ae4-4d39-a0f9-3066ea237de0
-author: "BrucePerlerMS"
 ---
 # Message Security with Mutual Certificates
 The following scenario shows a Windows Communication Foundation (WCF) service and client secured using message security mode. The client and the service are authenticated with certificates.  

@@ -57,7 +57,7 @@ The code in this example assumes a connection to DEMO.CUSTOMER on an Oracle serv
  [!code-vb[DataWorks SampleApp.Oracle#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.Oracle/VB/source.vb#1)]
 
 ## Entity Framework examples
-The following code listings demonstrate how to retrieve data from a data source by querying entities in an Entity Data Model (EDM). These examples use the [Northwind model](https://msdn.microsoft.com/74521f8c-e974-48cb-8858-c08deff52638). For more information, see [Entity Framework Overview](../../../../docs/framework/data/adonet/ef/overview.md).
+The following code listings demonstrate how to retrieve data from a data source by querying entities in an Entity Data Model (EDM). These examples use a model based on the Northwind sample database. For more information about Entity Framework, see [Entity Framework Overview](../../../../docs/framework/data/adonet/ef/overview.md).
 
 ### LINQ to Entities
 The code in this example uses a LINQ query to return data as Categories objects, which are projected as an anonymous type that contains only the CategoryID and CategoryName properties. For more information, see [LINQ to Entities Overview](../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).

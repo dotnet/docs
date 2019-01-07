@@ -70,7 +70,7 @@ and closing it directly or building another SafeHandle around it."
 ## Example  
  The following is a code example that can activate the `releaseHandleFailed` MDA.  
   
-```  
+```csharp
 bool ReleaseHandle()  
 {  
     // Calling the Win32 CloseHandle function to release the   

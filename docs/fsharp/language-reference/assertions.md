@@ -1,5 +1,5 @@
 ---
-title: Assertions (F#)
+title: Assertions
 description: Learn how to use the 'assert' expression as a debugging feature for testing expressions in the F# programming language.
 ms.date: 05/16/2016
 ---
@@ -23,8 +23,8 @@ Assertion checking is enabled only when you compile in Debug mode; that is, if t
 
 The assertion failure error cannot be caught by using F# exception handling.
 
->[!NOTE]
-The `assert` function resolves to <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>.
+> [!NOTE]
+> The `assert` function resolves to <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>.
 
 ## Example
 

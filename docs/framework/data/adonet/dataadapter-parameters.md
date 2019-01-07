@@ -11,7 +11,7 @@ The <xref:System.Data.Common.DbDataAdapter> has four properties that are used to
   
  When you update a row at the data source, you call the UPDATE statement, which uses a unique identifier to identify the row in the table be updated. The unique identifier is typically the value of a primary key field. The UPDATE statement uses parameters that contain both the unique identifier and the columns and values to be updated, as shown in the following Transact-SQL statement.  
   
-```  
+```sql
 UPDATE Customers SET CompanyName = @CompanyName   
   WHERE CustomerID = @CustomerID  
 ```  
@@ -21,7 +21,7 @@ UPDATE Customers SET CompanyName = @CompanyName
   
  In this Visual Basic example, the `CompanyName` field is updated with the value of the `@CompanyName` parameter for the row where `CustomerID` equals the value of the `@CustomerID` parameter. The parameters retrieve information from the modified row using the <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A> property of the <xref:System.Data.SqlClient.SqlParameter> object. The following are the parameters for the previous sample UPDATE statement. The code assumes that the variable `adapter` represents a valid <xref:System.Data.SqlClient.SqlDataAdapter> object.  
   
-```  
+```vb
 adapter.Parameters.Add( _  
   "@CompanyName", SqlDbType.NChar, 15, "CompanyName")  
 Dim parameter As SqlParameter = _  

@@ -19,7 +19,7 @@ Copyright © 2018 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced in any form or by any means without the written permission of the publisher.
 
-This book is available for free in the form of an electronic book (e-book) available through multiple channels at Microsoft such as <http://dot.net/architecture>.
+This book is available for free in the form of an electronic book (e-book) available through multiple channels at Microsoft such as <https://dot.net/architecture>.
 
 If you have questions related to this book, email at [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book)
 
@@ -195,4 +195,4 @@ These sample apps have a second version, with modernized code, and which are fai
 This guide was written to help you understand your options for improving and modernizing existing .NET web applications. The guide and related sample applications are evolving. Your feedback is welcome! If you have comments about how this guide might be more helpful, please send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com?subject=Feedback%20for%20.NET%20Container%20&%20Microservices%20Architecture%20book).
 
 >[!div class="step-by-step"]
-[Next](lift-and-shift-existing-apps-azure-iaas.md)
+>[Next](lift-and-shift-existing-apps-azure-iaas.md)

@@ -542,7 +542,7 @@ Public Class User
         logger = Nothing  
   
         For Each Plugin As Lazy(Of IPlugin, IPluginMetadata) In plugins  
-            If (Plugin.Metadata.Name = "Logger") Then  
+            If Plugin.Metadata.Name = "Logger" Then  
                 logger = Plugin.Value  
             End If  
         Next  
@@ -558,13 +558,14 @@ public class User
     [ImportMany]  
     public IEnumerable<Lazy<IPlugin, IPluginMetadata>> plugins;  
   
-    public IPlugin InstantiateLogger ()  
+    public IPlugin InstantiateLogger()  
     {  
         IPlugin logger = null;  
   
         foreach (Lazy<IPlugin, IPluginMetadata> plugin in plugins)  
         {  
-            if (plugin.Metadata.Name = "Logger") logger = plugin.Value;  
+            if (plugin.Metadata.Name == "Logger")
+                logger = plugin.Value;  
         }  
         return logger;  
     }  

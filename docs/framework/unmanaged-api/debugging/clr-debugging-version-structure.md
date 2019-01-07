@@ -23,14 +23,14 @@ Defines the product version of the common language runtime (CLR) for debugging p
 ## Syntax  
   
 ```  
-Typedef struct _CLR_DEBUGGING_VERSION  
+typedef struct _CLR_DEBUGGING_VERSION  
 {  
-WORD wStructVersion;  
-WORD wMajor;   
-WORD wMinor;  
-WORD wBuild;  
-WORD wRevision;  
-}  CLR_DEBUGGING_VERSION;  
+    WORD wStructVersion;
+    WORD wMajor;
+    WORD wMinor;
+    WORD wBuild;
+    WORD wRevision;
+} CLR_DEBUGGING_VERSION;
 ```  
   
 ## Members  

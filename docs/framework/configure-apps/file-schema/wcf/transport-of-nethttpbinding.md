@@ -90,8 +90,8 @@ Defines properties that control authentication parameters for the HTTP transport
   </services>  
   <bindings>  
     <netHttpBinding>  
-      <!-- Configure basicHttpBinding with Transport security -- >  
-      <!-- mode and clientCredentialType set to None.-->  
+      <!-- Configure basicHttpBinding with Transport security -->  
+      <!-- mode and clientCredentialType set to None. -->  
       <binding name="Binding1">  
         <security mode="Transport">  
           <transport clientCredentialType="None"  

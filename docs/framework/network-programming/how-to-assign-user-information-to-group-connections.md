@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7ce550d6-8f7c-4ea7-add8-5bc27a7b51be
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # How to: Assign User Information to Group Connections
 

@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "security [WCF]"
   - "Windows Communication Foundation, security"
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
-author: "BrucePerlerMS"
 ---
 # Windows Communication Foundation Security
 The topics in this section describe Windows Communication Foundation (WCF) security features and how to use them to help secure messages.  

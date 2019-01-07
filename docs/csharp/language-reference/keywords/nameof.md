@@ -1,5 +1,7 @@
 ---
-title: "nameof  (C# Reference)"
+title: "nameof  - C# Reference"
+ms.custom: seodec18
+
 ms.date: 06/16/2017
 f1_keywords: 
   - "nameof_CSharpKeyword"
@@ -125,8 +127,9 @@ class C {
  There is no way to get a signatures information such as "`Method1 (str, str)`".  One way to do that is to use an Expression, `Expression e = () => A.B.Method1("s1", "s2")`, and pull the MemberInfo from the resulting expression tree.  
   
 ## Language Specifications  
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
-  
+
+For more information, see [Nameof expressions](~/_csharplang/spec/expressions.md#nameof-expressions) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+ 
 ## See Also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  

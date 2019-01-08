@@ -30,9 +30,9 @@ The column order.
 ## Remarks
 
 > [!WARNING]
-> The `SmiOrderProperty.Item` property is private and not meant to be used directly in your code.
+> The `SmiOrderProperty.Item` property is internal and is not meant to be used directly in your code.
 >
-> Microsoft does not support the use of this field in a production application under any circumstance.
+> Microsoft does not support the use of this property in a production application under any circumstance.
 
 ## Requirements
 

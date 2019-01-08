@@ -17,13 +17,13 @@ api_type:
 Initializes a new instance of the `SqlStreamChars` class. The assembly that contains this constructor has a friend relationship with SQLAccess.dll. It's intended for use by SQL Server. For other databases, use the hosting mechanism provided by that database.
 
 ```csharp
-oublic SqlStreamChars ();
+protected SqlStreamChars ();
 ```
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars` constructor is private and not meant to be used directly in your code.
+> The `SqlStreamChars` constructor is protected and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

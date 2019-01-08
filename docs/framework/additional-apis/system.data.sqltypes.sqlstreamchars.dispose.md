@@ -22,13 +22,13 @@ protected virtual void Dispose (bool disposing);
 
 ## Parameters
 
-`disposing`  
+`disposing`\
 `true` to release both managed and unmanaged resources; `false` to release only unmanaged resources.
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.Dispose` method is private and not meant to be used directly in your code.
+> The `SqlStreamChars.Dispose` method is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

@@ -22,13 +22,13 @@ public abstract void SetLength (long value);
 
 ## Parameters
 
-`value`  
+`value`\
 The desired length of the current stream in bytes.
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.SetLength` method is private and not meant to be used directly in your code.
+> The `SqlStreamChars.SetLength` method is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

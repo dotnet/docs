@@ -25,13 +25,13 @@ public abstract long Length { get; }
 
 ## Property value
 
-<xref:System.Int64>  
+<xref:System.Int64>\
 The length of the stream.
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.Length` property is private and not meant to be used directly in your code.
+> The `SqlStreamChars.Length` property is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

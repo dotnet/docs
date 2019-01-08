@@ -34,7 +34,7 @@ The number of characters to be written to the current stream.
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.Write` method is private and not meant to be used directly in your code.
+> The `SqlStreamChars.Write` method is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

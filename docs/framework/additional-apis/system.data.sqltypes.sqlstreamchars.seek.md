@@ -22,21 +22,21 @@ public abstract long Seek (long offset, System.IO.SeekOrigin origin);
 
 ## Parameters
 
-`offset`  
+`offset`\
 A byte offset relative to `origin`.
 
-`origin`  
+`origin`\
 One of the enumeration values that indicates the reference point from which to obtain the new position.
 
 ## Returns
 
-<xref:System.Int32>
+<xref:System.Int32>\
 The new position within the current stream.
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.Seek` method is private and not meant to be used directly in your code.
+> The `SqlStreamChars.Seek` method is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

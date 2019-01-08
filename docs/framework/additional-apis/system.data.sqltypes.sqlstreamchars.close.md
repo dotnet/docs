@@ -23,7 +23,7 @@ public virtual void Close ();
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.Close` method is private and not meant to be used directly in your code.
+> The `SqlStreamChars.Close` method is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

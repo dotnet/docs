@@ -23,13 +23,13 @@ public abstract bool CanSeek { get; }
 
 ## Property value
 
-<xref:System.Boolean>  
+<xref:System.Boolean>\
 `true` if the current steam supports the seek operation; otherwise, `false`.
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlStreamChars.CanSeek` property is private and not meant to be used directly in your code.
+> The `SqlStreamChars.CanSeek` property is private and is not meant to be used directly in your code.
 >
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

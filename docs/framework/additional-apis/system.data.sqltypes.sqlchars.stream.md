@@ -24,15 +24,15 @@ internal SqlStreamChars Stream { get; set; }
 
 ## Property value
 
-`System.Data.SqlTypes.SqlStreamChars`
+`System.Data.SqlTypes.SqlStreamChars`\
 The character stream.
 
 ## Remarks
 
 > [!WARNING]
-> The `SqlChars.Stream` property is private and not meant to be used directly in your code.
+> The `SqlChars.Stream` property is internal and is not meant to be used directly in your code.
 >
-> Microsoft does not support the use of this field in a production application under any circumstance.
+> Microsoft does not support the use of this property in a production application under any circumstance.
 
 ## Requirements
 

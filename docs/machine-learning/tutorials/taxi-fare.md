@@ -95,6 +95,7 @@ The `TaxiTripFarePrediction` class represents predicted results. It has a single
 ## Define data and model paths
 
 Add the following additional `using` statements to the top of the *Program.cs* file:
+
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#1 "Add necessary usings")]
 
 You need to create three fields to hold the paths to the files with data sets and the file to save the model, and a global variable for the `TextLoader`:

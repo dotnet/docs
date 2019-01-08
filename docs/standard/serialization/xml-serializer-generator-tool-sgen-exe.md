@@ -16,19 +16,19 @@ sgen [options]
   
 |Option|Description|  
 |------------|-----------------|  
-|**/a**[**ssembly**]**:**_filename_|Generates serialization code for all the types contained in the assembly or executable specified by *filename*. Only one file name can be provided. If this argument is repeated, the last file name is used.|  
-|**/c[ompiler]:** *options*|Specifies the options to pass to the C# compiler. All csc.exe options are supported as they are passed to the compiler. This can be used to specify that the assembly should be signed and to specify the key file.|  
-|**/d**[**ebug**]|Generates an image that can be used with a debugger.|  
-|**/f[orce]**|Forces the overwriting of an existing assembly of the same name. The default is **false**.|  
+|**/a\[ssembly\]:**_filename_|Generates serialization code for all the types contained in the assembly or executable specified by *filename*. Only one file name can be provided. If this argument is repeated, the last file name is used.|  
+|**/c\[ompiler\]:**_options_|Specifies the options to pass to the C# compiler. All csc.exe options are supported as they are passed to the compiler. This can be used to specify that the assembly should be signed and to specify the key file.|  
+|**/d\[ebug\]**|Generates an image that can be used with a debugger.|  
+|**/f\[orce\]**|Forces the overwriting of an existing assembly of the same name. The default is **false**.|  
 |**/help or /?**|Displays command syntax and options for the tool.|  
-|**/k**[**eep**]|Suppresses the deletion of the generated source files and other temporary files after they have been compiled into the serialization assembly. This can be used to determine whether the tool is generating serialization code for a particular type.|  
-|**/n**[**ologo**]|Suppresses the display of the Microsoft startup banner.|  
-|**/o**[**ut**]**:**_path_|Specifies the directory in which to save the generated assembly. **Note:**  The name of the generated assembly is composed of the name of the input assembly plus "xmlSerializers.dll".|  
-|**/p**[**roxytypes**]|Generates serialization code only for the XML Web service proxy types.|  
-|**/r**[**eference**]**:**_assemblyfiles_|Specifies the assemblies that are referenced by the types requiring XML serialization. Accepts multiple assembly files separated by commas.|  
-|**/s**[**ilent**]|Suppresses the display of success messages.|  
-|**/t**[**ype**]**:**_type_|Generates serialization code only for the specified type.|  
-|**/v**[**erbose**]|Displays verbose output for debugging. Lists types from the target assembly that cannot be serialized with the <xref:System.Xml.Serialization.XmlSerializer>.|  
+|**/k\[eep\]**|Suppresses the deletion of the generated source files and other temporary files after they have been compiled into the serialization assembly. This can be used to determine whether the tool is generating serialization code for a particular type.|  
+|**/n\[ologo\]**|Suppresses the display of the Microsoft startup banner.|  
+|**/o\[ut\]:**_path_|Specifies the directory in which to save the generated assembly. **Note:**  The name of the generated assembly is composed of the name of the input assembly plus "xmlSerializers.dll".|  
+|**/p\[roxytypes\]**|Generates serialization code only for the XML Web service proxy types.|  
+|**/r\[eference\]:**_assemblyfiles_|Specifies the assemblies that are referenced by the types requiring XML serialization. Accepts multiple assembly files separated by commas.|  
+|**/s\[ilent\]**|Suppresses the display of success messages.|  
+|**/t\[ype\]:**_type_|Generates serialization code only for the specified type.|  
+|**/v\[erbose\]**|Displays verbose output for debugging. Lists types from the target assembly that cannot be serialized with the <xref:System.Xml.Serialization.XmlSerializer>.|  
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  

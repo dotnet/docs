@@ -448,8 +448,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the HTTP message version.</summary>
-        <value>The HTTP message version. The default is 1.1.</value>
-        <remarks>To be added.</remarks>
+        <value>The HTTP message version. The default is 2.0.</value>
+        <remarks>As of .NET  Core 2.1, the default value of the Version property changed from 1.1 to 2.0.</remarks>
       </Docs>
     </Member>
   </Members>

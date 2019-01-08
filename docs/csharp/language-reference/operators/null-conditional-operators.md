@@ -32,7 +32,7 @@ A?.B?.C?[E];
 ```csharp  
 var handler = this.PropertyChanged;  
 if (handler != null)  
-    handler(…);
+    handler.Invoke(…);
 ```  
   
   

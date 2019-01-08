@@ -16,18 +16,17 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
 ## Syntax  
   
 ```xml  
-<ws2007HttpBinding>  
- <binding >  
-  <security>  
-   <message clientCredentialType =  
-    "None/Windows/UserName/Certificate/IssuedToken"  
-    establishSecurityContext="Boolean"  
-    negotiateServiceCredential="Boolean"  
-    algorithmSuite= Enumeration. See algorithmSuite Attribute below.  
-    defaultProtectionLevel="None/Sign/EncryptionAndSign" />  
-  </security>  
- </binding>  
-</ws2007HttpBinding>  
+<ws2007HttpBinding>
+  <binding>
+    <security>
+      <message clientCredentialType="None/Windows/UserName/Certificate/IssuedToken"
+               establishSecurityContext="Boolean"
+               negotiateServiceCredential="Boolean"
+               algorithmSuite="Enumeration. See algorithmSuite Attribute below."
+               defaultProtectionLevel="None/Sign/EncryptionAndSign" />
+    </security>
+  </binding>
+</ws2007HttpBinding>
 ```  
   
 ## Type  

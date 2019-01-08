@@ -15,14 +15,14 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 ## Syntax  
   
 ```xml  
-<reliableSession acknowledgementInterval="TimeSpan"  
-        flowControlEnabled="Boolean"   
-    inactivityTimeout="TimeSpan"  
-    maxPendingChannels="Integer"  
-    maxRetryCount="Integer"   
-        maxTransferWindowSize="Integer"  
-    reliableMessagingVersion="Default/WSReliableMessagingFebruary2005/WSReliableMessaging11"  
-    ordered="Boolean" />  
+<reliableSession acknowledgementInterval="TimeSpan"
+                 flowControlEnabled="Boolean"
+                 inactivityTimeout="TimeSpan"
+                 maxPendingChannels="Integer"
+                 maxRetryCount="Integer"
+                 maxTransferWindowSize="Integer"
+                 reliableMessagingVersion="Default/WSReliableMessagingFebruary2005/WSReliableMessaging11"
+                 ordered="Boolean" />
 ```  
   
 ## Attributes and Elements  
@@ -61,56 +61,56 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
  The following example demonstrates how to configure a custom binding with various transport and message encoding elements, especially enabling reliable sessions, which maintains client state and specifies in-order delivery assurances. This feature is configured in the application configuration files for the client and service. The example show the service configuration.  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8" ?>  
-<configuration>  
-  <system.serviceModel>  
-    <services>  
-      <service   
-          name="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
-        <!-- This endpoint is exposed at the base address provided by host: http://localhost/servicemodelsamples/service.svc  -->  
-        <!-- specify customBinding binding and a binding configuration to use -->  
-        <endpoint address=""  
-                  binding="customBinding"  
-                  bindingConfiguration="Binding1"   
-                  contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-        <!-- The mex endpoint is exposed at http://localhost/servicemodelsamples/service.svc/mex -->  
-        <endpoint address="mex"  
-                  binding="mexHttpBinding"  
-                  contract="IMetadataExchange" />  
-      </service>  
-    </services>  
-  
-    <!-- custom binding configuration - configures HTTP transport, reliable sessions -->  
-    <bindings>  
-      <customBinding>  
-        <binding name="Binding1">  
-          <reliableSession />  
-          <security authenticationMode="SecureConversation"  
-                     requireSecurityContextCancellation="true">  
-          </security>  
-          <compositeDuplex />  
-          <oneWay />  
-          <textMessageEncoding messageVersion="Soap12WSAddressing10" writeEncoding="utf-8" />  
-          <httpTransport authenticationScheme="Anonymous" bypassProxyOnLocal="false"  
-                        hostNameComparisonMode="StrongWildcard"   
-                        proxyAuthenticationScheme="Anonymous" realm=""   
-                        useDefaultWebProxy="true" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-  
-    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
-    <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata httpGetEnabled="True"/>  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
-  </system.serviceModel>  
-</configuration>  
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+               behaviorConfiguration="CalculatorServiceBehavior">
+        <!-- This endpoint is exposed at the base address provided by host: http://localhost/servicemodelsamples/service.svc -->
+        <!-- specify customBinding binding and a binding configuration to use -->
+        <endpoint address=""
+                  binding="customBinding"
+                  bindingConfiguration="Binding1"
+                  contract="Microsoft.ServiceModel.Samples.ICalculator" />
+        <!-- The mex endpoint is exposed at http://localhost/servicemodelsamples/service.svc/mex -->
+        <endpoint address="mex"
+                  binding="mexHttpBinding"
+                  contract="IMetadataExchange" />
+      </service>
+    </services>
+    <!-- custom binding configuration - configures HTTP transport, reliable sessions -->
+    <bindings>
+      <customBinding>
+        <binding name="Binding1">
+          <reliableSession />
+          <security authenticationMode="SecureConversation"
+                    requireSecurityContextCancellation="true">
+          </security>
+          <compositeDuplex />
+          <oneWay />
+          <textMessageEncoding messageVersion="Soap12WSAddressing10"
+                               writeEncoding="utf-8" />
+          <httpTransport authenticationScheme="Anonymous"
+                         bypassProxyOnLocal="false"
+                         hostNameComparisonMode="StrongWildcard"
+                         proxyAuthenticationScheme="Anonymous"
+                         realm=""
+                         useDefaultWebProxy="true" />
+        </binding>
+      </customBinding>
+    </bindings>
+    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="CalculatorServiceBehavior">
+          <serviceMetadata httpGetEnabled="True" />
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+</configuration>
 ```  
   
 ## See Also  

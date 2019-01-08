@@ -17,10 +17,10 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<issuerChannelBehaviors>  
-      <add behaviorConfiguraton="string"  
-                issuerAddress="string" />  
-</issuerChannelBehaviors>  
+<issuerChannelBehaviors>
+  <add behaviorConfiguraton="string"
+       issuerAddress="string" />
+</issuerChannelBehaviors>
 ```  
   
 ## Attributes and Elements  

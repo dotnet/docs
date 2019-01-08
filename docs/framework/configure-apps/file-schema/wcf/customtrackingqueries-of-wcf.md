@@ -18,7 +18,7 @@ Represents a collection of queries that are used to track events that you define
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -30,7 +30,7 @@ Represents a collection of queries that are used to track events that you define
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
+</tracking>
 ```  
   
 ## Attributes and elements

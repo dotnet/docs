@@ -15,13 +15,13 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
 ## Syntax  
   
 ```xml  
-<netPeerBinding>  
-    <binding>  
-        <security mode="Message/None/Transport//TransportWithMessageCredential">  
-            <transport credentialType="Certificate/Password" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
+<netPeerBinding>
+  <binding>
+    <security mode="Message/None/Transport//TransportWithMessageCredential">
+      <transport credentialType="Certificate/Password" />
+    </security>
+  </binding>
+</netPeerBinding>
 ```  
   
 ## Attributes and Elements  

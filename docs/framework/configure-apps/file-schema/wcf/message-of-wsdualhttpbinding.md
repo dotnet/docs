@@ -16,11 +16,10 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 ## Syntax  
   
 ```xml  
-<message   
-      clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-     negotiateServiceCredential="Boolean"  
-   algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"/>  
-</message>  
+<message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+         negotiateServiceCredential="Boolean"
+         algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+</message>
 ```  
   
 ## Type  

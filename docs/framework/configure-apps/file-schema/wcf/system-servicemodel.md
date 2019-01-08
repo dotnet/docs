@@ -15,34 +15,34 @@ This configuration section contains all the Windows Communication Foundation (WC
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <behaviors>  
-  </behaviors>  
-  <bindings>  
-  </bindings>  
-  <client>  
-  </client>  
-  <comContracts>  
-  </comContracts>  
-  <commonBehaviors>  
-  </commonBehaviors>  
-  <diagnostics>  
-  </diagnostics>  
-  <extensions>  
+<system.serviceModel>
+  <behaviors>
+  </behaviors>
+  <bindings>
+  </bindings>
+  <client>
+  </client>
+  <comContracts>
+  </comContracts>
+  <commonBehaviors>
+  </commonBehaviors>
+  <diagnostics>
+  </diagnostics>
+  <extensions>
   </extensions>
   <protocolMapping>
   </protocolMapping>
   <routing>
-  </routing>  
-  <serviceHostingEnvironment>  
-  </serviceHostingEnvironment>  
-  <services>  
+  </routing>
+  <serviceHostingEnvironment>
+  </serviceHostingEnvironment>
+  <services>
   </services>
-  <standardEndpoints>  
+  <standardEndpoints>
   </standardEndpoints>
   <tracking>
   </tracking>
-</system.serviceModel>  
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -92,31 +92,33 @@ This configuration section contains all the Windows Communication Foundation (WC
  This is an example of a WCF configuration file.  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<configuration>  
-    <system.serviceModel>  
-        <behaviors>  
-           <!-- List of Behaviors -->  
-        </behaviors>  
-        <client>  
-           <!-- List of Endpoints -->  
-        </client>  
-        <diagnostics wmiProviderEnabled="false" performanceCountersEnabled="false" tracingEnabled="false">  
-        </diagnostics>  
-        <serviceHostingEnvironment>  
-           <!-- List of entries -->  
-        </serviceHostingEnvironment>  
-        <comContracts>  
-           <!-- List of COM+ Contracts -->  
-        </comContracts>          
-        <services>  
-           <!-- List of Services -->  
-        </services>  
-        <bindings>  
-           <!-- List of Bindings -->  
-        </bindings>  
-    </system.serviceModel>  
-</configuration>  
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <behaviors>
+      <!-- List of Behaviors -->
+    </behaviors>
+    <client>
+      <!-- List of Endpoints -->
+    </client>
+    <diagnostics wmiProviderEnabled="false"
+                 performanceCountersEnabled="false"
+                 tracingEnabled="false">
+    </diagnostics>
+    <serviceHostingEnvironment>
+      <!-- List of entries -->
+    </serviceHostingEnvironment>
+    <comContracts>
+      <!-- List of COM+ Contracts -->
+    </comContracts>
+    <services>
+      <!-- List of Services -->
+    </services>
+    <bindings>
+      <!-- List of Bindings -->
+    </bindings>
+  </system.serviceModel>
+</configuration>
 ```  
   
 ## See Also  

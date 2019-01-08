@@ -15,11 +15,11 @@ Specifies all the WSDL importers that imports Web Services Description Language 
 ## Syntax  
   
 ```xml  
-<metadata>  
-  <wsdlImporters>  
-    <wsdlImporter type="string" />  
-  </wsdlImporters>  
-</metadata>  
+<metadata>
+  <wsdlImporters>
+    <wsdlImporter type="string" />
+  </wsdlImporters>
+</metadata>
 ```  
   
 ## Attributes and Elements  

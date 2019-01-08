@@ -15,7 +15,7 @@ Specify Windows stream security settings of the custom binding.
 ## Syntax  
   
 ```xml  
-<windowsStreamSecurity protectionLevel="None/Sign/EncryptAndSign"/>  
+<windowsStreamSecurity protectionLevel="None/Sign/EncryptAndSign" />
 ```  
   
 ## Attributes and Elements  

@@ -18,12 +18,12 @@ Provides run-time access to the routing service to allow dynamic modification of
 <behaviors>
   <serviceBehaviors>
     <behavior name="String">
-      <routing filterTable="String" 
-               routeOnHeadersOnly="Boolean" 
+      <routing filterTable="String"
+               routeOnHeadersOnly="Boolean"
                SoapProcessingEnabled="Boolean" />
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  

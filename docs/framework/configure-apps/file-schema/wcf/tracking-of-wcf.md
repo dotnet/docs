@@ -13,19 +13,19 @@ Represents a configuration section for defining tracking settings for a workflow
   
 ## Syntax  
   
-```xml
+```xml  
 <system.serviceModel>
   <tracking>
     <participants>
-      <add name="String" 
-           profileName="String" 
+      <add name="String"
+           profileName="String"
            type="String" />
     </participants>
     <profiles>
       <trackingProfile name="String">
         <workflow activityDefinitionId="String">
           <activityScheduledQueries>
-            <activityScheduledQuery activityName="String"       
+            <activityScheduledQuery activityName="String"
                                     childActivityName="String"/>
           </activityScheduledQueries>
           <activityStateQueries>
@@ -44,15 +44,15 @@ Represents a configuration section for defining tracking settings for a workflow
             <bookmarkResumptionQuery name="String" />
           </bookmarkResumptionQueries>
           <cancelRequestQueries>
-            <cancelRequestQuery activityName="String" 
+            <cancelRequestQuery activityName="String"
                                 childActivityName="String"/>
           </cancelRequestQueries>
           <customTrackingQueries>
-            <customTrackingQuery activityName="String" 
+            <customTrackingQuery activityName="String"
                                  name="String"/>
           </customTrackingQueries>
           <faultPropagationQueries>
-            <faultPropagationQuery activityName="String" 
+            <faultPropagationQuery activityName="String"
                                    faultHandlerActivityName="String"/>
           </faultPropagationQueries>
           <workflowInstanceQueries>
@@ -66,8 +66,8 @@ Represents a configuration section for defining tracking settings for a workflow
       </trackingProfile>
     </profiles>
   </tracking>
-</system.serviceModel>   
-```
+</system.serviceModel>
+```  
   
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  

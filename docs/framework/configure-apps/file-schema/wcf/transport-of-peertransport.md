@@ -17,9 +17,9 @@ Specifies the transport type for secured messages sent by peers configured with 
 ## Syntax  
   
 ```xml  
-<security>  
-   <transport credentialType="Certificate/Password" />  
-</security>         
+<security>
+  <transport credentialType="Certificate/Password" />
+</security>
 ```  
   
 ## Attributes and Elements  

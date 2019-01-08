@@ -15,7 +15,7 @@ Specifies whether transaction batching is supported for receive operations.
 ## Syntax  
   
 ```xml  
-<transactedBatching maxBatchSize="Integer" />  
+<transactedBatching maxBatchSize="Integer" />
 ```  
   
 ## Attributes and Elements  
@@ -43,41 +43,38 @@ Specifies whether transaction batching is supported for receive operations.
  The following example shows how to add the transacted batching behavior to a service in a configuration file.  
   
 ```xml  
-<system.serviceModel>  
-  <services>  
-    <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
-             behaviorConfiguration="CalculatorServiceBehavior">  
-      <host>  
-        <baseAddresses>  
-          <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  
-        </baseAddresses>  
-      </host>  
-  
-      <!-- Define NetMsmqEndpoint -->  
-      <endpoint address="net.msmq://localhost/private/ServiceModelSamples"  
-                binding="netMsmqBinding"  
-                contract="Microsoft.ServiceModel.Samples.IQueueCalculator" />  
-  
-      <!-- the mex endpoint is explosed at http://localhost:8000/ServiceModelSamples/service/mex -->  
-      <endpoint address="mex"  
-                binding="mexHttpBinding"  
-                contract="IMetadataExchange" />  
-    </service>  
-  </services>  
-  
-  <behaviors>  
-    <endpointBehaviors>  
-      <behavior name="endpointBehavior">  
-        <transactedBatching maxBatchSize="10" />  
-      </behavior>  
-    </endpointBehaviors>  
-    <serviceBehaviors>  
-      <behavior name="CalculatorServiceBehavior">  
-        <serviceMetadata httpGetEnabled="true" />  
-      </behavior>  
-    </serviceBehaviors>  
-  </behaviors>  
-</system.serviceModel>  
+<system.serviceModel>
+  <services>
+    <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+             behaviorConfiguration="CalculatorServiceBehavior">
+      <host>
+        <baseAddresses>
+          <add baseAddress="http://localhost:8000/ServiceModelSamples/service" />
+        </baseAddresses>
+      </host>
+      <!-- Define NetMsmqEndpoint -->
+      <endpoint address="net.msmq://localhost/private/ServiceModelSamples"
+                binding="netMsmqBinding"
+                contract="Microsoft.ServiceModel.Samples.IQueueCalculator" />
+      <!-- the mex endpoint is explosed at http://localhost:8000/ServiceModelSamples/service/mex -->
+      <endpoint address="mex"
+                binding="mexHttpBinding"
+                contract="IMetadataExchange" />
+    </service>
+  </services>
+  <behaviors>
+    <endpointBehaviors>
+      <behavior name="endpointBehavior">
+        <transactedBatching maxBatchSize="10" />
+      </behavior>
+    </endpointBehaviors>
+    <serviceBehaviors>
+      <behavior name="CalculatorServiceBehavior">
+        <serviceMetadata httpGetEnabled="true" />
+      </behavior>
+    </serviceBehaviors>
+  </behaviors>
+</system.serviceModel>
 ```  
   
 ## See Also  

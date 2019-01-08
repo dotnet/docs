@@ -15,22 +15,22 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 ## Syntax  
   
 ```xml  
-<httpsTransport  
-    allowCookies=Boolean"  
-    authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"  
-    bypassProxyOnLocal=Boolean"  
-    hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-    manualAddressing="Boolean"  
-    maxBufferPoolSize="Integer"  
-    maxBufferSize="Integer"  
-    maxReceivedMessageSize="Integer"  
-    proxyAddress="Uri"  
-    proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"        realm="String"  
-    requireClientCertificate=Boolean"  
-    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-        unsafeConnectionNtlmAuthentication="Boolean"  
-....useDefaultWebProxy="Boolean"  
-/>  
+<httpsTransport allowCookies="Boolean"
+                authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"
+                bypassProxyOnLocal="Boolean"
+                hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+                manualAddressing="Boolean"
+                maxBufferPoolSize="Integer"
+                maxBufferSize="Integer"
+                maxReceivedMessageSize="Integer"
+                proxyAddress="Uri"
+                proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"
+                realm="String"
+                requireClientCertificate="Boolean"
+                transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
+                unsafeConnectionNtlmAuthentication="Boolean"
+                ...
+                useDefaultWebProxy="Boolean" />
 ```  
   
 ## Attributes and Elements  

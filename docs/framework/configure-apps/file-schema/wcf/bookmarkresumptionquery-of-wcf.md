@@ -19,7 +19,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -30,9 +30,9 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
-
+</tracking>
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.  

@@ -12,11 +12,11 @@ Configures Windows Communication Foundation (WCF) listener's diagnostics functio
 ## Syntax  
   
 ```xml  
-<configuration>  
-   <system.serviceModel.activation>  
-       <diagnostics performanceCountersEnabled="Boolean" />  
-   </system.serviceModel.activation>  
-</configuration>  
+<configuration>
+  <system.serviceModel.activation>
+    <diagnostics performanceCountersEnabled="Boolean" />
+  </system.serviceModel.activation>
+</configuration>
 ```  
   
 ## Type  

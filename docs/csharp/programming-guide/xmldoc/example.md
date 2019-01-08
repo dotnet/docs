@@ -1,5 +1,6 @@
 ---
-title: "&lt;example&gt; (C# Programming Guide)"
+title: "&lt;example&gt; - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "<example>"

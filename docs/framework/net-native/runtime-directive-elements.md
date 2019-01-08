@@ -12,7 +12,7 @@ The runtime directives (rd.xml) file format supports the following runtime direc
  Applies runtime reflection policy to all types used by the app, and serves as a container for application-wide types and type members whose metadata is available for reflection at run time. This is a child of the [\<Directives>](../../../docs/framework/net-native/directives-element-net-native.md) element.  
   
  [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)  
- Applies runnntime policy to all the types in an assembly. This is a child of the [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) and [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) elements.  
+ Applies runtime policy to all the types in an assembly. This is a child of the [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) and [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) elements.  
   
  [\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)  
  If its containing [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) directive is an attribute, applies runtime policy to code elements to which that attribute is applied.  

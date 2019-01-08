@@ -1,5 +1,6 @@
 ---
-title: "How to: Declare and Use Read Write Properties (C# Programming Guide)"
+title: "How to: Declare and Use Read Write Properties - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "get accessor [C#], declaring properties"

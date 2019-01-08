@@ -1,5 +1,7 @@
 ---
-title: "Jump Statements (C# Reference)"
+title: "Jump Statements - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "jump statements [C#]"

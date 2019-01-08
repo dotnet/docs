@@ -1,5 +1,7 @@
 ---
-title: "long (C# Reference)"
+title: "long - C# Reference"
+ms.custom: seodec18
+
 ms.date: 03/14/2017
 f1_keywords: 
   - "long_CSharpKeyword"

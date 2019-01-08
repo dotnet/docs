@@ -1,6 +1,6 @@
 ---
 title: "General Naming Conventions"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "names [.NET Framework], conflicts"
@@ -14,8 +14,7 @@ helpviewer_keywords:
   - "names [.NET Framework], type names"
   - "names [.NET Framework], acronyms"
 ms.assetid: d3a77ea1-75d2-4969-a8c3-3e1e3e1aaedc
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # General Naming Conventions
 This section describes general naming conventions that relate to word choice, guidelines on using abbreviations and acronyms, and recommendations on how to avoid using language-specific names.  

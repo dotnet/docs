@@ -1,6 +1,6 @@
 ---
 title: "Choosing Between Class and Struct"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], structures"
@@ -12,8 +12,7 @@ helpviewer_keywords:
   - "classes [.NET Framework], vs. structures"
   - "type design guidelines, classes"
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Choosing Between Class and Struct
 One of the basic design decisions every framework designer faces is whether to design a type as a class (a reference type) or as a struct (a value type). Good understanding of the differences in the behavior of reference types and value types is crucial in making this choice.  

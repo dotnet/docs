@@ -1,5 +1,5 @@
 ---
-title: "Sorry, we don&#39;t have specifics on this Visual Basic error"
+title: "Sorry, we don't have specifics on this Visual Basic error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30234"
@@ -3045,7 +3045,7 @@ f1_keywords:
   - "bc30829"
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
 ---
-# Sorry, we don&#39;t have specifics on this Visual Basic error
+# Sorry, we don't have specifics on this Visual Basic error
 We’re sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or, you can ask other developers using one of these forums:  
   
  [Visual Basic Language](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vblanguage)  

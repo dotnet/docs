@@ -2,7 +2,6 @@
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
 author: blackdwarf
-ms.author: mairaw
 ms.date: 09/22/2017
 ---
 # Additions to the csproj format for .NET Core
@@ -69,9 +68,6 @@ To disable **all implicit globs**, you can set the `<EnableDefaultItems>` proper
     <EnableDefaultItems>false</EnableDefaultItems>
 </PropertyGroup>
 ```
-
-### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (for example, runtime and NuGet packaging).
 
 ## How to see the whole project as MSBuild sees it
 
@@ -177,7 +173,7 @@ The following example specifies the fallbacks only for the `netcoreapp2.1` targe
 ```
 
 ## NuGet metadata properties
-With the move to MSbuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
+With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK. 
 
 ### IsPackable
 A Boolean value that specifies whether the project can be packed. The default value is `true`. 

@@ -148,7 +148,7 @@ mc:Ignorable="PresentationOptions"
   
 -   Call the <xref:System.Windows.Freezable.WritePostscript%2A> method before exiting methods that write to non-dependency property data members.  
   
- If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change on of their values, even if you're setting the member to `null`.  
+ If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change one of their values, even if you're setting the member to `null`.  
   
 > [!NOTE]
 >  It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.  

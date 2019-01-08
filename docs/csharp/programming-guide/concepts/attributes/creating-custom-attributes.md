@@ -57,9 +57,6 @@ class SampleClass
 }  
 ```  
   
-> [!NOTE]
->  If your attribute class contains a property, that property must be read-write.  
-  
 ## See Also
 
 - <xref:System.Reflection>  

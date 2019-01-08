@@ -459,7 +459,7 @@ You can see an example of checked lists in action in the [.NET Core docs](https:
 ### Buttons
 
 > [!div class="button"]
-[button links](../docs/core/index.md)
+> [button links](../docs/core/index.md)
 
 You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 

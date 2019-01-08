@@ -1,5 +1,5 @@
 ---
-title: Values (F#)
+title: Values
 description: Learn how values in F# are quantities that have a specific type.
 ms.date: 05/16/2016
 ---

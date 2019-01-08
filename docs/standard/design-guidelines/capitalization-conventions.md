@@ -1,6 +1,6 @@
 ---
 title: "Capitalization Conventions"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "camel-case names [.NET Framework]"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Capitalization Conventions
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.  

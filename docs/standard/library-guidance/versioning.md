@@ -3,7 +3,7 @@ title: Versioning and .NET libraries
 description: Best practice recommendations for versioning .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 12/10/2018
 ---
 # Versioning
 
@@ -71,12 +71,13 @@ The assembly file version is used to display a file version in Windows and has n
 
 ![Windows Explorer](./media/versioning/win-properties.png "Windows Explorer")
 
-> [!NOTE]
-> An innocuous build warning is raised if this version does not follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
-
 **✔️ CONSIDER** including a continuous integration build number as the AssemblyFileVersion revision.
 
 > For example, you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
+
+**✔️ DO** use the format `Major.Minor.Build.Revision` for file version.
+
+> While the file version is never used by .NET, [Windows expects the file version](/windows/desktop/menurc/versioninfo-resource) to be in the `Major.Minor.Build.Revision` format. A warning is raised if the version doesn't follow this format.
 
 ### Assembly informational version
 
@@ -85,6 +86,9 @@ The assembly informational version is used to record additional version informat
 ```xml
 <AssemblyInformationalVersion>The quick brown fox jumped over the lazy dog.</AssemblyInformationalVersion>
 ```
+
+> [!NOTE]
+> Older versions of Visual Studio raise a build warning if this version doesn't follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
 
 **❌ AVOID** setting the assembly informational version yourself.
 

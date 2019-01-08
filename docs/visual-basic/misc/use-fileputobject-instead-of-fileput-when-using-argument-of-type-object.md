@@ -1,11 +1,11 @@
 ---
-title: "Use &#39;FilePutObject&#39; instead of &#39;FilePut&#39; when using argument of type &#39;Object&#39;"
+title: "Use 'FilePutObject' instead of 'FilePut' when using argument of type 'Object'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrUseFilePutObject"
 ms.assetid: d207b9b7-5898-4c13-8b03-9feefac5f726
 ---
-# Use &#39;FilePutObject&#39; instead of &#39;FilePut&#39; when using argument of type &#39;Object&#39;
+# Use 'FilePutObject' instead of 'FilePut' when using argument of type 'Object'
 The `FilePut` method includes an argument of type `Object`. `FilePutObject` should be used in place of `FilePut` to avoid ambiguities.  
   
 ## To correct this error  

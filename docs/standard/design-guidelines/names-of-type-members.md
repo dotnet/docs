@@ -1,6 +1,6 @@
 ---
 title: "Names of Type Members"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "events [.NET Framework], names"
@@ -12,8 +12,7 @@ helpviewer_keywords:
   - "names [.NET Framework], type members"
   - "members [.NET Framework], type"
 ms.assetid: af5a0903-36af-4c2a-b848-cf959affeaa5
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Names of Type Members
 Types are made of members: methods, properties, events, constructors, and fields. The following sections describe guidelines for naming type members.  

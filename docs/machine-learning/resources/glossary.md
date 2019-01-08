@@ -1,11 +1,12 @@
 ---
-title: Machine learning glossary
-description: A glossary of machine learning terms.
-ms.date: 05/31/2018
+title: Machine learning glossary - ML.NET
+description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
+ms.custom: seodec18
+ms.date: 12/20/2018
 ---
-# Machine learning glossary
+# Machine learning glossary of important terms
 
-The following list is a compilation of important machine learning terms that are useful as you build your custom models.
+The following list is a compilation of important machine learning terms that are useful as you build your custom models in ML.NET.
 
 ## Accuracy
 
@@ -16,8 +17,6 @@ Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics
 ## Area under the curve (AUC)
 
 In [binary classification](#binary-classification), an evaluation metric that is the value of the area under the curve that plots the true positives rate (on the y-axis) against the false positives rate (on the x-axis). Ranges from 0.5 (worst) to 1 (best). Also known as the area under the ROC curve, i.e., receiver operating characteristic curve. For more information, see the [Receiver operating characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) article on Wikipedia.
-
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.Auc?displayProperty=nameWithType>.
 
 ## Binary classification
 
@@ -31,8 +30,6 @@ When the data is used to predict a category, [supervised machine learning](#supe
 
 In [regression](#regression), an evaluation metric that indicates how well data fits a model. Ranges from 0 to 1. A value of 0 means that the data is random or otherwise cannot be fit to the model. A value of 1 means that the model exactly matches the data. This is often referred to as r<sup>2</sup>, R<sup>2</sup>, or r-squared.
 
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.RSquared?displayProperty=nameWithType>.
-
 ## Feature
 
 A measurable property of the phenomenon being measured, typically a numeric (double) value. Multiple features are referred to as a **Feature vector** and typically stored as `double[]`. Features define the important characteristics of the phenomenon being measured. For more information, see the [Feature](https://en.wikipedia.org/wiki/Feature_(machine_learning)) article on Wikipedia.
@@ -44,8 +41,6 @@ Feature engineering is the process that involves defining a set of [features](#f
 ## F-score
 
 In [classification](#classification), an evaluation metric that balances [precision](#precision) and [recall](#recall).
-
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.F1Score?displayProperty=nameWithType>.
 
 ## Hyperparameter
 
@@ -59,13 +54,9 @@ The element to be predicted with the machine learning model. For example, the br
 
 In [classification](#classification), an evaluation metric that characterizes the accuracy of a classifier. The smaller log loss is, the more accurate a classifier is.
 
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.LogLoss?displayProperty=nameWithType>.
-
 ## Mean absolute error (MAE)
 
 In [regression](#regression), an evaluation metric that is the average of all the model errors, where model error is the distance between the predicted [label](#label) value and the correct label value.
-
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.L1?displayProperty=nameWithType>.
 
 ## Model
 
@@ -97,8 +88,6 @@ Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics
 
 In [classification](#classification), the recall for a class is the number of items correctly predicted as belonging to that class divided by the total number of items that actually belong to the class.
 
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.NegativeRecall?displayProperty=nameWithType>, <xref:Microsoft.ML.Legacy.Models.BinaryClassificationMetrics.PositiveRecall?displayProperty=nameWithType>.
-
 ## Regression
 
 A [supervised machine learning](#supervised-machine-learning) task where the output is a real value, for example, double. Examples include predicting stock prices. For more information, see the [Regression](tasks.md#regression) section of the [Machine learning tasks](tasks.md) topic.
@@ -114,8 +103,6 @@ In [regression](#regression), an evaluation metric that is the sum of all square
 ## Root of mean squared error (RMSE)
 
 In [regression](#regression), an evaluation metric that is the square root of the average of the squares of the errors.
-
-Related ML.NET API: <xref:Microsoft.ML.Legacy.Models.RegressionMetrics.Rms?displayProperty=nameWithType>.
 
 ## Supervised machine learning
 

@@ -1,9 +1,10 @@
 ---
-title: ML.NET resources
+title: Machine learning resources - ML.NET 
 description: Explore these ML.NET resources to assist with custom AI solutions creation and integration into your .NET applications.
+ms.custom: seodec18
 ms.date: 07/27/2018
 ---
-# ML.NET resources
+# Machine learning resources - ML.NET
 
 The following  [ML.NET](../index.md) resources may be helpful to build custom AI solutions and integrate them into your .NET applications:
 

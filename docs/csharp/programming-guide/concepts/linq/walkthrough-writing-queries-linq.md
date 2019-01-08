@@ -81,7 +81,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 1.  You can combine multiple Boolean conditions in the `where` clause in order to further refine a query. The following code adds a condition so that the query returns those students whose first score was over 90 and whose last score was less than 80. The `where` clause should resemble the following code.  
   
-    ```  
+    ```csharp
     where student.Scores[0] > 90 && student.Scores[3] < 80  
     ```  
   
@@ -93,19 +93,19 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 1.  It will be easier to scan the results if they are in some kind of order. You can order the returned sequence by any accessible field in the source elements. For example, the following `orderby` clause orders the results in alphabetical order from A to Z according to the last name of each student. Add the following `orderby` clause to your query, right after the `where` statement and before the `select` statement:  
   
-    ```  
+    ```csharp
     orderby student.Last ascending  
     ```  
   
 2.  Now change the `orderby` clause so that it orders the results in reverse order according to the score on the first test, from the highest score to the lowest score.  
   
-    ```  
+    ```csharp
     orderby student.Scores[0] descending  
     ```  
   
 3.  Change the `WriteLine` format string so that you can see the scores:  
   
-    ```  
+    ```csharp
     Console.WriteLine("{0}, {1} {2}", student.Last, student.First, student.Scores[0]);  
     ```  
   

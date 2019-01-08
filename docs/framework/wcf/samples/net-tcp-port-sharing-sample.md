@@ -38,8 +38,7 @@ binding.PortSharingEnabled = true;
 // Start a service on a fixed TCP port  
 ServiceHost host = new ServiceHost(typeof(CalculatorService));  
 ushort salt = (ushort)new Random().Next();  
-string address =  
-   String.Format("net.tcp://localhost:9000/calculator/{0}", salt);  
+string address = $"net.tcp://localhost:9000/calculator/{salt}";
 host.AddServiceEndpoint(typeof(ICalculator), binding, address);  
 host.Open();  
 ```
@@ -60,7 +59,7 @@ class client
    {  
       Console.Write("Enter the service number to test: ");  
       ushort salt = ushort.Parse(Console.ReadLine());  
-      string address = String.Format("net.tcp://localhost:9000/calculator/{0}", salt);  
+      string address = $"net.tcp://localhost:9000/calculator/{salt}";
       ChannelFactory<ICalculator> factory = new ChannelFactory<ICalculator>(new NetTcpBinding());  
       ICalculator proxy = factory.CreateChannel(new EndpointAddress(address));  
   

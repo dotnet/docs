@@ -53,7 +53,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 >
 > Do not drop support for .NET Standard when you do this. Instead, throw from the implementation and offer capability APIs. This way, your library can be used anywhere and supports runtime light-up of features.
 
-**❌ AVOID** using multi-targeting with .NET Standard if your source code is the same for all targets.
+**❌ AVOID** multi-targeting as well as targeting .NET Standard, if your source code is the same for all targets.
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 

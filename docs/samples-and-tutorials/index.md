@@ -56,6 +56,10 @@ This sample demonstrates many of the problems that can be solved by using Expres
 
 This series of samples demonstrate many of the features of Language Integrated Query (LINQ). The [completed sample](https://github.com/dotnet/samples/tree/master/core/linq/csharp) is available in the dotnet/samples repository on GitHub.
 
+**Microsoft Office PIA Sample**
+
+The [ExcelDemo](https://github.com/dotnet/samples/tree/master/core/extensions/ExcelDemo) sample demonstrates the consumption of [Microsoft Office PIAs](/visualstudio/vsto/office-primary-interop-assemblies) in .NET Core.
+
 ### Tutorials
 
 **[Console Application](../csharp/tutorials/console-teleprompter.md)**

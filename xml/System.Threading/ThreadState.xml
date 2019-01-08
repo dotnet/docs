@@ -42,12 +42,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Threading.ThreadState> enumeration is of interest only in a few debugging scenarios. Your code should never use the thread state to synchronize the activities of threads.  
+  The `ThreadState` enumeration defines a set of all possible execution states for threads. It's of interest only in a few debugging scenarios. Your code should never use the thread state to synchronize the activities of threads.  
   
- <xref:System.Threading.ThreadState> defines a set of all possible execution states for threads. Once a thread is created, it is in at least one of the states until it terminates. Threads created within the common language runtime are initially in the `Unstarted` state, while external threads that come into the runtime are already in the `Running` state. An `Unstarted` thread is transitioned into the `Running` state by calling <xref:System.Threading.Thread.Start%2A>. Not all combinations of `ThreadState` values are valid; for example, a thread cannot be in both the `Aborted` and `Unstarted` states.  
+  Once a thread is created, it's in at least one of the states until it terminates. Threads created within the common language runtime are initially in the <xref:System.Threading.ThreadState.Unstarted> state, while external, or unmanaged, threads that come into the runtime are already in the <xref:System.Threading.ThreadState.Running> state. A thread is transitioned from the <xref:System.Threading.ThreadState.Unstarted> state into the <xref:System.Threading.ThreadState.Running> state by calling <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>. Once a thread leaves the <xref:System.Threading.ThreadState.Unstarted> state as the result of a call to <xref:System.Threading.Thread.Start%2A>, it can never return to the <xref:System.Threading.ThreadState.Unstarted> state.  
+
+  A thread can be in more than one state at a given time. For example, if a thread is blocked on a call to <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType>, and another thread calls <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> on the blocked thread, the blocked thread will be in both the <xref:System.Threading.ThreadState.WaitSleepJoin> and <xref:System.Threading.ThreadState.AbortRequested> states at the same time. In this case, as soon as the thread returns from the call to <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType> or is interrupted, it will receive the <xref:System.Threading.ThreadAbortException> to begin aborting. Not all combinations of `ThreadState` values are valid; for example, a thread cannot be in both the <xref:System.Threading.ThreadState.Aborted> and <xref:System.Threading.ThreadState.Unstarted> states.  
+
+  A thread can never leave the <xref:System.Threading.ThreadState.Stopped> state.  
   
 > [!IMPORTANT]
->  There are two thread state enumerations: <xref:System.Threading.ThreadState?displayProperty=nameWithType> and <xref:System.Diagnostics.ThreadState?displayProperty=nameWithType>.  
+> There are two thread state enumerations: <xref:System.Threading.ThreadState?displayProperty=nameWithType> and <xref:System.Diagnostics.ThreadState?displayProperty=nameWithType>.  
   
  The following table shows the actions that cause a change of state.  
   
@@ -56,20 +60,18 @@
 |A thread is created within the common language runtime.|<xref:System.Threading.ThreadState.Unstarted>|  
 |Another thread calls the <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType> method on the new thread, and the call returns.<br /><br /> The <xref:System.Threading.Thread.Start%2A> method does not return until the new thread has started running. There is no way to know at what point the new thread will start running, during the call to <xref:System.Threading.Thread.Start%2A>.|<xref:System.Threading.ThreadState.Running>|  
 |The thread calls <xref:System.Threading.Thread.Sleep%2A>|<xref:System.Threading.ThreadState.WaitSleepJoin>|  
-|The thread calls <xref:System.Threading.Monitor.Wait%2A> on another object.|<xref:System.Threading.ThreadState.WaitSleepJoin>|  
+|The thread calls <xref:System.Threading.Monitor.Wait%2A?displayProperty=nameWithType> on another object.|<xref:System.Threading.ThreadState.WaitSleepJoin>|  
 |The thread calls <xref:System.Threading.Thread.Join%2A> on another thread.|<xref:System.Threading.ThreadState.WaitSleepJoin>|  
 |Another thread calls <xref:System.Threading.Thread.Interrupt%2A>|<xref:System.Threading.ThreadState.Running>|  
 |Another thread calls <xref:System.Threading.Thread.Suspend%2A>|<xref:System.Threading.ThreadState.SuspendRequested>|  
 |The thread responds to a <xref:System.Threading.Thread.Suspend%2A> request.|<xref:System.Threading.ThreadState.Suspended>|  
 |Another thread calls <xref:System.Threading.Thread.Resume%2A>|<xref:System.Threading.ThreadState.Running>|  
 |Another thread calls <xref:System.Threading.Thread.Abort%2A>|<xref:System.Threading.ThreadState.AbortRequested>|  
-|The thread responds to a <xref:System.Threading.Thread.Abort%2A> request.|<xref:System.Threading.ThreadState.Stopped>|  
-|A thread is terminated.|Stopped|  
+|The thread responds to an <xref:System.Threading.Thread.Abort%2A> request.|<xref:System.Threading.ThreadState.Stopped>|  
+|A thread is terminated.|<xref:System.Threading.ThreadState.Stopped>|  
   
- In addition to the states noted above, there is also the <xref:System.Threading.ThreadState.Background> state, which indicates whether the thread is running in the background or foreground.  
-  
- A thread can be in more than one state at a given time. For example, if a thread is blocked on a call to <xref:System.Threading.Monitor.Wait%2A>, and another thread calls <xref:System.Threading.Thread.Abort%2A> on the blocked thread, the blocked thread will be in both the <xref:System.Threading.ThreadState.WaitSleepJoin> and the <xref:System.Threading.ThreadState.AbortRequested> states at the same time. In this case, as soon as the thread returns from the call to <xref:System.Threading.Monitor.Wait%2A> or is interrupted, it will receive the <xref:System.Threading.ThreadAbortException> to begin aborting.  
-  
+ In addition to the states noted above, there is also the <xref:System.Threading.ThreadState.Background> state, which indicates whether the thread is running in the background or foreground. For more information, see [Foreground and Background Threads](~/docs/standard/threading/foreground-and-background-threads.md).  
+   
  The <xref:System.Threading.Thread.ThreadState%2A?displayProperty=nameWithType> property of a thread provides the current state of a thread. Applications must use a bit mask to determine whether a thread is running. Since the value for <xref:System.Threading.ThreadState.Running> is zero (0), test whether a thread is running by the following code:
 
 ```csharp
@@ -83,7 +85,6 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.Thread" />
-    <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
   </Docs>
   <Members>
     <Member MemberName="Aborted">

@@ -7,11 +7,11 @@ ms.custom: seodec18
 ---
 # Write a custom .NET Core host to control the .NET runtime from your native code
 
-Like all managed code, .NET Core applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.
+Like all managed code, .NET Core applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector) and invoking managed entry points.
 
 Hosting the .NET Core runtime is an advanced scenario and, in most cases, .NET Core developers don't need to worry about hosting because .NET Core build processes provide a default host to run .NET Core applications. In some specialized circumstances, though, it can be useful to explicitly host the .NET Core runtime, either as a means of invoking managed code in a native process or in order to gain more control over how the runtime works.
 
-This article gives an overview of the steps necessary to start the .NET Core runtime from native code, create an initial application domain (<xref:System.AppDomain>), and execute managed code in it.
+This article gives an overview of the steps necessary to start the .NET Core runtime from native code and execute managed code in it.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ Keep in mind that the sample hosts are meant to be used for learning purposes, s
 
 ## Create a host using CoreClrHost.h
 
-The following steps detail how to use the CoreClrHost.h API to start the .NET Core runtime in a native application and call into a managed static method. The code snippets in this document use some Windows-specific APIs, but the [full sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost)  shows both Windows and Linux code paths.
+The following steps detail how to use the CoreClrHost.h API to start the .NET Core runtime in a native application and call into a managed static method. The code snippets in this document use some Windows-specific APIs, but the [full sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithCoreClrHost) shows both Windows and Linux code paths.
 
 ### Step 1 - Find and load CoreCLR
 
@@ -46,51 +46,51 @@ Once found, the library is loaded with `LoadLibraryEx` (on Windows) or `dlopen` 
 
 CoreClrHost has several important methods useful for hosting .NET Core:
 
-* `coreclr_initialize`: Starts the .NET Core runtime and default AppDomain
+* `coreclr_initialize`: Starts the .NET Core runtime and sets up the default (and only) AppDomain
 * `coreclr_execute_assembly`: Executes a managed assembly
 * `coreclr_create_delegate`: Creates a function pointer to a managed method
-* `coreclr_shutdown`: Unloads AppDomains and shuts down the .NET Core runtime
+* `coreclr_shutdown`: Shuts down the .NET Core runtime
 * `coreclr_shutdown_2`: Like `coreclr_shutdown`, but also retrieves the managed code's exit code
 
 After loading the CoreCLR library, the next step is to get references to these functions using `GetProcAddress` (on Windows) or `dlsym` (on Linux/Mac).
 
 [!code-cpp[CoreClrHost#2](../../../samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#2)]
 
-### Step 3 - Prepare AppDomain properties
+### Step 3 - Prepare runtime properties
 
-Before starting the runtime, we need to prepare properties that will specify AppDomain behavior (especially concerning the assembly loader). The properties are an array of keys and a corresponding array of values that are used when starting the runtime and default AppDomain.
+Before starting the runtime, it is necessary to prepare some properties to specify behavior (especially concerning the assembly loader). 
 
-Common AppDomain properties include:
+Common properties include:
 
-* `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other platform assemblies, similar to the global assembly cache (GAC) in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
+* `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resovle by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
 * `APP_PATHS` This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. These paths are meant to be the locations where users' assemblies can be found. Common values for this property include the path the target app was loaded from or other locations where user assets are known to live.
-*  `APP_NI_PATHS` This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
-*  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
+*  `APP_NI_PATHS` This list is similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
+*  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native libraries called via p/invoke.
 *  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 
-In our sample host, the TPA list is constructed by simply listing all libraries in the current directory:
+In this sample host, the TPA list is constructed by simply listing all libraries in the current directory:
 
 [!code-cpp[CoreClrHost#7](../../../samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#7)]
 
-Because the sample is simple, we only need the `TRUSTED_PLATFORM_ASSEMBLIES` and `APP_PATHS` properties:
+Because the sample is simple, it only needs the `TRUSTED_PLATFORM_ASSEMBLIES` and `APP_PATHS` properties:
 
 [!code-cpp[CoreClrHost#3](../../../samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#3)]
 
-### Step 4 - Start the runtime and default AppDomain
+### Step 4 - Start the runtime
 
-Now we're ready to initialize the .NET Core runtime. Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the runtime and create the default AppDomain all with a single call. We use `coreclr_initialize`, specifying a base path, name, and properties for the default AppDomain and receiving back the host handle and AppDomain ID.
+Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the runtime and creates the default AppDomain all with a single call. The `coreclr_initialize` function takes a base path, name, and the properties described earlier and returns back a handle to the host via the `hostHandle` parameter.
 
 [!code-cpp[CoreClrHost#4](../../../samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#4)]
 
 ### Step 5 - Run managed code!
 
-With the runtime started and an AppDomain initialized, we're ready to call managed code. This can be done a couple different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the assembly name, namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
+With the runtime started, the host can call managed code. This can be done a couple different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the assembly name, namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
 
 [!code-cpp[CoreClrHost#5](../../../samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#5)]
 
 In this sample, the host can now call `managedDelegate` to run the `ManagedWorker.DoWork` method.
 
-Alternatively, the `coreclr_execute_assembly` function can be used to launch a managed executable. This API takes an assembly path and arrray of arguments as input parameters. It loads the assembly at that path and invokes its main method. 
+Alternatively, the `coreclr_execute_assembly` function can be used to launch a managed executable. This API takes an assembly path and array of arguments as input parameters. It loads the assembly at that path and invokes its main method. 
 
 ```C++
 int hr = executeAssembly(
@@ -104,7 +104,7 @@ int hr = executeAssembly(
 
 ### Step 6 - Shutdown and clean up
 
-Finally, when the host is done running managed code, the .NET Core runtime is shut down (and AppDomains unloaded) with the `coreclr_shutdown` function (or `coreclr_shutdown_2` which is the same, but retrieves the managed code's exit code).
+Finally, when the host is done running managed code, the .NET Core runtime is shut down with the `coreclr_shutdown` or `coreclr_shutdown_2`.
 
 [!code-cpp[CoreClrHost#6](../../../samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#6)]
 

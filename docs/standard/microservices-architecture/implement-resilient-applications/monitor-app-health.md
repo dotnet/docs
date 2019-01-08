@@ -3,7 +3,7 @@ title: Health monitoring
 description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 12/11/2017
+ms.date: 01/07/2017
 ---
 # Health monitoring
 
@@ -23,22 +23,21 @@ To use this feature effectively, you need to first configure services in your mi
 
 ### Using the HealthChecks feature in your back-end ASP.NET microservices
 
-First, we will look at how the HealthChecks feature is used in a sample ASP.NET Core 2.2 Web API application. Later, we will dig deeper on how this feature is utilized in eShopOnContainers. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
+In this section, you will learn how the HealthChecks feature is used in a sample ASP.NET Core 2.2 Web API application. Implementation of this feature in a large scale microservices like the eShopOnContainers is explained in the later section. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
 
-In .NET Core 2.2, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its depending SQL Server database in this way:
+In .NET Core 2.2, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
 
 ```csharp
 // Startup.cs from .NET Core 2.2 Web Api sample
 //
 public void ConfigureServices(IServiceCollection services)
 {
-…
+    //...
     // Registers required services for health checks
     services.AddHealthChecks()
     // Add a health check for a SQL database
     .AddCheck("MyDatabase", new SqlConnectionHealthCheck(Configuration["ConnectionStrings:DefaultConnection"]));
 }
-
 ```
 In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with “Healthy”.  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database’s health.
 
@@ -94,9 +93,9 @@ public class SqlConnectionHealthCheck : IHealthCheck
 }
 ```
 
-Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries very efficient so that these operations are quick and don’t result in a higher utilization of resources.
+Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
 
-Finally, create a middleware that responds to the url path “/hc”.
+Finally, create a middleware that responds to the url path “/hc”:
 
 ```csharp
 // Startup.cs from .NET Core 2.2 Web Api sample
@@ -118,7 +117,7 @@ The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com
 
 For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 
-![](./media/image6.png)
+![Custom Health Checks implemented using AspNetCore.Diagnostics.HealthChecks NuGet packages](./media/image6.png)
 
 **Figure 10-6**. Custom Health Checks implemented in Catalog.API using AspNetCore.Diagnostics.HealthChecks
 
@@ -127,7 +126,6 @@ In the following code, the health check implementations are added for each depen
 ```csharp
 // Startup.cs from Catalog.api microservice
 //
-
 public static IServiceCollection AddCustomHealthCheck(this IServiceCollection services, IConfiguration configuration)
 {
     var accountName = configuration.GetValue<string>("AzureStorageAccountName");
@@ -149,7 +147,6 @@ public static IServiceCollection AddCustomHealthCheck(this IServiceCollection se
                 name: "catalog-storage-check",
                 tags: new string[] { "catalogstorage" });
     }
-
     if (configuration.GetValue<bool>("AzureServiceBusEnabled"))
     {
         hcBuilder
@@ -170,8 +167,8 @@ public static IServiceCollection AddCustomHealthCheck(this IServiceCollection se
 
     return services;
 }
-
 ```
+
 Finally, we add the HealthCheck middleware to listen to “/hc” endpoint:
 
 ```csharp
@@ -188,8 +185,7 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 
 When you’ve configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it’s healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through localhost, as shown in figure 10-7.
 
-
-![](./media/image7.png)
+![Health Status of a ASP.NET Microservice in JSON](./media/image7.png)
 
 **Figure 10-7**. Checking health status of a single service from a browser
 
@@ -203,7 +199,7 @@ The eShopOnContainers sample contains a web page that displays sample health che
 
 Fortunately, [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) also provides [AspNetCore.HealthChecks.UI](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI/) NuGet package that can be used to display the health check results from the configured URIs.
 
-![](./media/image8.png)
+![Health Check Status Report created using AspNetCore.HealthChecks.UI](./media/image8.png)
 
 **Figure 10-8**. Sample health check report in eShopOnContainers
 
@@ -225,6 +221,8 @@ Sample configuration file for health check UI:
         "Uri": "http://localhost:5111/hc"
       },
       //...
+    ]}
+}
 ```
 
 Startup.cs file that adds HealthChecksUI:

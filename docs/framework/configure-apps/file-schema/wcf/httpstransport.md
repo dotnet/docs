@@ -16,19 +16,20 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
   
 ```xml  
 <httpsTransport  
-    allowCookies=Boolean"  
+    allowCookies="Boolean"  
     authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"  
-    bypassProxyOnLocal=Boolean"  
+    bypassProxyOnLocal="Boolean"  
     hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
     manualAddressing="Boolean"  
     maxBufferPoolSize="Integer"  
     maxBufferSize="Integer"  
     maxReceivedMessageSize="Integer"  
     proxyAddress="Uri"  
-    proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"        realm="String"  
-    requireClientCertificate=Boolean"  
+    proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"  
+    realm="String"  
+    requireClientCertificate="Boolean"  
     transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-        unsafeConnectionNtlmAuthentication="Boolean"  
+    unsafeConnectionNtlmAuthentication="Boolean"  
 ....useDefaultWebProxy="Boolean"  
 />  
 ```  

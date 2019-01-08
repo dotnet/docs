@@ -17,7 +17,7 @@ Specifies settings that enable auditing of security events during service operat
 ```xml  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
-   messageAuthenticationAuditLevel= None/Success/Failure/SuccessOrFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
+   messageAuthenticationAuditLevel="None/Success/Failure/SuccessOrFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
    suppressAuditFailure="Boolean"  
 />  
 ```  

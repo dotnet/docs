@@ -22,7 +22,7 @@ msmqIntegrationBinding
        deadLetterQueue="Uri"  
        durable="Boolean"  
        exactlyOnce="Boolean"   
-       maxReceivedMessageSize"Integer"  
+       maxReceivedMessageSize="Integer"  
        maxRetryCycles="Integer"   
        name="string"   
        openTimeout="TimeSpan"        receiveContextEnabled="Boolean"  
@@ -31,10 +31,10 @@ msmqIntegrationBinding
        receiveRetryCount="Integer"  
        retryCycleDelay="TimeSpan"    
        sendTimeout="TimeSpan"   
-       serializationFormat="XML/Binary/ActiveX/ByteArray/Stream">  
+       serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"  
        timeToLive="TimeSpan"    
-       useMsmqTracing="Boolean  
-       useSourceJournal="Boolean"  
+       useMsmqTracing="Boolean"  
+       useSourceJournal="Boolean">  
    </binding>  
 </msmqIntegrationBinding>   
 ```  

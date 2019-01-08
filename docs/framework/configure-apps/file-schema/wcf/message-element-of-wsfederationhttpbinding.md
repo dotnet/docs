@@ -46,7 +46,7 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
                                 <usePrincipalName value="String"/>  
                               </identity>  
                         </issuer>  
-                        <issuerMetadata address=String" >  
+                        <issuerMetadata address="String">  
                <headers>  
                   <add name="String"  
                        namespace="String" />  

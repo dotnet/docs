@@ -32,7 +32,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
       transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse" >  
       <connectionPoolSettings  
             groupName="String"  
-            idleTimeout"TimeSpan"  
+            idleTimeout="TimeSpan"  
             leaseTimeout="TimeSpan"  
             maxOutboundConnectionsPerEndpopint="Integer" />  
 </tcpTransport>  

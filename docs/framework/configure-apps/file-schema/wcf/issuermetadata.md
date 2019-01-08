@@ -15,7 +15,7 @@ ms.assetid: e7eae2c0-cc17-4281-af59-e4eb8d54f92a
 ## Syntax  
   
 ```xml  
-<issuerMetadata address=String" >  
+<issuerMetadata address="String">  
    <headers>  
       <add name="String"  
                  namespace="String" />  

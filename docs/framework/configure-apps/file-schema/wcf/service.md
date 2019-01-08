@@ -13,7 +13,7 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## Syntax  
   
 ```xml  
-<service behaviorConfiguration=String"  
+<service behaviorConfiguration="String"  
         name="String">  
 </service>  
 ```  

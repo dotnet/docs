@@ -16,9 +16,9 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
   
 ```xml  
 <httpTransport  
-    allowCookies=Boolean"  
+    allowCookies="Boolean"  
     authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"  
-    bypassProxyOnLocal=Boolean"  
+    bypassProxyOnLocal="Boolean"  
     hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
     keepAliveEnabled="Boolean"  
     maxBufferSize="Integer"  

@@ -15,7 +15,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
           Activate="policy_setting"  
           Browse="policy_setting"  
           Dynamic="policy_setting"  
-          Serialize="policy_setting" />  
+          Serialize="policy_setting"  
           DataContractSerializer="policy_setting"  
           DataContractJsonSerializer="policy_setting"  
           XmlSerializer="policy_setting"  

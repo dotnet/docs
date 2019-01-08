@@ -21,7 +21,7 @@ Defines a queued binding suitable for cross-machine communication.
        durable="Boolean"  
        exactlyOnce="Boolean"   
        maxBufferPoolSize="Integer"  
-       maxReceivedMessageSize"Integer"  
+       maxReceivedMessageSize="Integer"  
        maxRetryCycles="Integer"   
        name="string"   
        openTimeout="TimeSpan"   
@@ -35,7 +35,7 @@ Defines a queued binding suitable for cross-machine communication.
        sendTimeout="TimeSpan"   
        timeToLive="TimeSpan"    
        useActiveDirectory="Boolean"  
-       useMsmqTracing="Boolean  
+       useMsmqTracing="Boolean"  
        useSourceJournal="Boolean"  
           <security>  
                   <message    

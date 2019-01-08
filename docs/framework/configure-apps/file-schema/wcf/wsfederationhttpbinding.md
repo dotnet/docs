@@ -61,7 +61,7 @@ wsFederationBinding element
                                 <usePrincipalName value="String"/>  
                               </identity>  
                         </issuer>  
-                        <issuerMetadata address=String" >  
+                        <issuerMetadata address="String">  
                <headers>  
                   <add name="String"  
                        namespace="String" />  

@@ -67,7 +67,7 @@ A configuration element used to specify Web Socket settings.
 <netHttpBinding>  
         <binding>  
           <webSocketSettings createNotificationOnConnection="true"  
-                              disablePayloadMasking="false  
+                              disablePayloadMasking="false"  
                               keepAliveInterval="00:10:00"  
                               maxPendingConnections="100"  
                               receiveBufferSize="1000"  

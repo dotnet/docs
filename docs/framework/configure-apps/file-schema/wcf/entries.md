@@ -15,18 +15,18 @@ A routing entry that contain mappings between the routing filters and the target
 ## Syntax  
   
 ```xml  
-<routing>  
-  <filterTables>  
-    <filterTable name="String">  
-      <entries>  
-        <add backupList="String"  
-             endpointName="String"  
-             filterName="String"  
-             priority="Integer" />  
-      </entries>  
-    </filterTable>  
-  </filterTables>  
-</routing>  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
+      </entries>
+    </filterTable>
+  </filterTables>
+</routing>
 ```  
   
 ## Attributes and Elements  

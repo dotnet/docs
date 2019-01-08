@@ -14,25 +14,25 @@ Represents a configuration section for defining a set of routing filters, which 
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <routing>  
-    <filters>  
-      <filter customType="String"  
-              filterData="String"  
-              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"  
-              name="String" />  
-    </filters>  
-    <routingTables>  
-      <table name="String">  
-        <entries>  
-          <add endpoint="String"  
-               filterName="String"  
-               priority="Integer" />  
-        </entries>  
-      </table>  
-    </routingTables>  
-  </routing>  
-</system.serviceModel>  
+<system.serviceModel>
+  <routing>
+    <filters>
+      <filter customType="String"
+              filterData="String"
+              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
+              name="String" />
+    </filters>
+    <routingTables>
+      <table name="String">
+        <entries>
+          <add endpoint="String"
+               filterName="String"
+               priority="Integer" />
+        </entries>
+      </table>
+    </routingTables>
+  </routing>
+</system.serviceModel>
 ```  
   
 ## Attributes and elements

@@ -16,14 +16,14 @@ Defines a routing filter, which determines the type of Windows Communication Fou
 ## Syntax  
   
 ```xml  
-<routing>  
-  <filters>  
-    <filter customType="String"  
-            filterData="String"  
-            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"  
-            name="String" />  
-  </filters>  
-</routing>  
+<routing>
+  <filters>
+    <filter customType="String"
+            filterData="String"
+            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
+            name="String" />
+  </filters>
+</routing>
 ```  
   
 ## Attributes and elements

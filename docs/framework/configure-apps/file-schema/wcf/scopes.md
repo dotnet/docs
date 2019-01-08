@@ -16,17 +16,17 @@ Contains a collection of configuration elements that specify custom scope Uris t
 ## Syntax  
   
 ```xml  
-<behaviors>  
-  <endpointBehaviors>  
-    <behavior name="String">  
-      <endpointDiscovery enable="Boolean">  
-        <scopes>  
-          <add scope="URI" />  
-        </scopes>  
-      </endpointDiscovery>  
-    </behavior>  
-  </endpointBehaviors>  
-</behaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="String">
+      <endpointDiscovery enable="Boolean">
+        <scopes>
+          <add scope="URI" />
+        </scopes>
+      </endpointDiscovery>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
 ## Attributes and Elements  

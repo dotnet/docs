@@ -15,14 +15,14 @@ Represents a configuration section for defining a set of elements that contain n
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <routing>  
-    <namespaceTable>  
-      <add namespace="String"  
-           prefix="String" />  
-    </namespaceTable>  
-  </routing>  
-</system.serviceModel>  
+<system.serviceModel>
+  <routing>
+    <namespaceTable>
+      <add namespace="String"
+           prefix="String" />
+    </namespaceTable>
+  </routing>
+</system.serviceModel>
 ```  
   
 ## Attributes and elements

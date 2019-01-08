@@ -12,17 +12,17 @@ This configuration element defines a standard endpoint that is pre-configured fo
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <standardEndpoints>  
-    <discoveryEndpoint>  
-      <standardEndpoint discoveryMode="Adhoc/Managed"  
-                        discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"  
-                        maxResponseDelay="Timespan"  
-                        multicastAddress="Uri"  
-                        name="String" />  
-    </discoveryEndpoint>  
-  </standardEndpoints>  
-</system.serviceModel>  
+<system.serviceModel>
+  <standardEndpoints>
+    <discoveryEndpoint>
+      <standardEndpoint discoveryMode="Adhoc/Managed"
+                        discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"
+                        maxResponseDelay="Timespan"
+                        multicastAddress="Uri"
+                        name="String" />
+    </discoveryEndpoint>
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -54,22 +54,22 @@ This configuration element defines a standard endpoint that is pre-configured fo
  The following example demonstrates a service listening for discovery messages over a UDP multicast transport.  
   
 ```xml  
-<services>  
-  <service name="CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-    <endpoint binding="basicHttpBinding"  
-              address="calculator"  
-              contract="ICalculatorService" />  
-    <endpoint name="DiscoveryEndpoint"  
-              kind="udpDiscoveryEndpoint" />  
-  </service>  
-  <standardEndpoints>  
-    <udpDiscoveryEndpoint>  
-      <standardEndpoint name="DiscoveryEndpoint"  
-                        version="WSDiscoveryApril2005" />  
-    </udpDiscoveryEndpoint>  
-  </standardEndpoints>  
-</services>  
+<services>
+  <service name="CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    <endpoint binding="basicHttpBinding"
+              address="calculator"
+              contract="ICalculatorService" />
+    <endpoint name="DiscoveryEndpoint"
+              kind="udpDiscoveryEndpoint" />
+  </service>
+  <standardEndpoints>
+    <udpDiscoveryEndpoint>
+      <standardEndpoint name="DiscoveryEndpoint"
+                        version="WSDiscoveryApril2005" />
+    </udpDiscoveryEndpoint>
+  </standardEndpoints>
+</services>
 ```  
   
 ## See Also  

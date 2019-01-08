@@ -19,18 +19,18 @@ Represents a collection of queries that are used to track events that you define
 ## Syntax  
   
 ```xml  
-<tracking>  
-  <profiles>  
-    <trackingProfile name="Name">  
-      <workflow>  
-        <customTrackingQueries>  
-          <customTrackingQuery activityName="String"  
-                               name="String"/>  
-        </customTrackingQueries>  
-      </workflow>  
-    </trackingProfile>  
-  </profiles>  
-</tracking>  
+<tracking>
+  <profiles>
+    <trackingProfile name="Name">
+      <workflow>
+        <customTrackingQueries>
+          <customTrackingQuery activityName="String"
+                               name="String"/>
+        </customTrackingQueries>
+      </workflow>
+    </trackingProfile>
+  </profiles>
+</tracking>
 ```  
   
 ## Attributes and elements

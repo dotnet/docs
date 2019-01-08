@@ -16,8 +16,8 @@ Specifies an endpoint behavior that enables a service to send replies asynchrono
 ## Syntax  
   
 ```xml  
-<dispatcherSynchronizationBehavior asynchronousSendEnabled="Boolean"  
-                                   maxPendingReceives="Integer" />  
+<dispatcherSynchronizationBehavior asynchronousSendEnabled="Boolean"
+                                   maxPendingReceives="Integer" />
 ```  
   
 ## Type  

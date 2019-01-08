@@ -17,7 +17,7 @@ Defines the client endpoint behavior used to marshal messages between different 
 ## Syntax  
   
 ```xml  
-<soapProcessing processMessages="true|false" />  
+<soapProcessing processMessages="true|false" />
 ```  
   
 ## Attributes and elements  

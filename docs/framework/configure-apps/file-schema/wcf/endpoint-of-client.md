@@ -13,15 +13,15 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 ## Syntax  
   
 ```xml  
-<endpoint address="String"  
-          behaviorConfiguration="String"  
-          binding="String"  
-          bindingConfiguration="String"  
-          contract="String"  
-          endpointConfiguration="String"  
-          kind="String"  
-          name="String">  
-</endpoint>  
+<endpoint address="String"
+          behaviorConfiguration="String"
+          binding="String"
+          bindingConfiguration="String"
+          contract="String"
+          endpointConfiguration="String"
+          kind="String"
+          name="String">
+</endpoint>
 ```  
   
 ## Attributes and Elements  
@@ -57,12 +57,12 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
  This is an example of a channel endpoint configuration.  
   
 ```xml  
-<endpoint address="/HelloWorld/"  
-          bindingConfiguration="usingDefaults"  
-          name="MyBinding"  
-          binding="customBinding"  
-          contract="HelloWorld">  
-</endpoint>  
+<endpoint address="/HelloWorld/"
+          bindingConfiguration="usingDefaults"
+          name="MyBinding"
+          binding="customBinding"
+          contract="HelloWorld">
+</endpoint>
 ```  
   
 ## See Also  

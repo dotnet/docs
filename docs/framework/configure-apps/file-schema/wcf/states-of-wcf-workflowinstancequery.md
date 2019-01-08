@@ -21,21 +21,21 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
 ## Syntax  
   
 ```xml  
-<tracking>  
-  <profiles>  
-    <trackingProfile name="Name">  
-      <workflow>  
-        <workflowInstanceQueries>  
-          <workflowInstanceQuery>  
-            <states>  
-              <state name="Name" />  
-            </states>  
-          </workflowInstanceQuery>  
-        </workflowInstanceQueries>  
-      </workflow>  
-    </trackingProfile>  
-  </profiles>  
-</tracking>  
+<tracking>
+  <profiles>
+    <trackingProfile name="Name">
+      <workflow>
+        <workflowInstanceQueries>
+          <workflowInstanceQuery>
+            <states>
+              <state name="Name" />
+            </states>
+          </workflowInstanceQuery>
+        </workflowInstanceQueries>
+      </workflow>
+    </trackingProfile>
+  </profiles>
+</tracking>
 ```  
   
 ## Attributes and elements
@@ -85,13 +85,13 @@ Possible state values are described in the following table.
 The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
 ```xml  
-<workflowInstanceQueries>  
-  <workflowInstanceQuery>  
-    <states>  
-      <state name="Started" />  
-    </states>  
-  </workflowInstanceQuery>  
-</workflowInstanceQueries>  
+<workflowInstanceQueries>
+  <workflowInstanceQuery>
+    <states>
+      <state name="Started" />
+    </states>
+  </workflowInstanceQuery>
+</workflowInstanceQueries>
 ```  
   
 ## See also  

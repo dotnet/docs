@@ -16,9 +16,9 @@ Defines authentication settings for the HTTP transport.
 ## Syntax  
   
 ```xml  
-<transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-           proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-           realm="string" />  
+<transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+           proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+           realm="string" />
 ```  
   
 ## Type  

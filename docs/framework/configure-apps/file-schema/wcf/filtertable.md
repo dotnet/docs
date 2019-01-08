@@ -14,18 +14,18 @@ Represents a routing table that contains a list of filters to evaluate messages 
 ## Syntax  
   
 ```xml  
-<routing>  
-  <filterTables>  
-    <filterTable name="String">  
-      <entries>  
-        <add backupList="String"  
-             endpointName="String"  
-             filterName="String"  
-             priority="Integer" />  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
       </entries>
     </filterTable>
   </filterTables>
-</routing>  
+</routing>
 ```  
   
 ## Attributes and Elements  

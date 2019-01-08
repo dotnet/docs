@@ -20,18 +20,18 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
 ## Syntax  
   
 ```xml  
-<tracking>  
-  <profiles>  
-    <trackingProfile name="Name">  
-      <workflow>  
-        <cancelRequestedQueries>  
-          <cancelRequestedQuery activityName="String"  
-                                childActivityName="String" />  
-        </cancelRequestedQueries>  
-      </workflow>  
-    </trackingProfile>  
-  </profiles>  
-</tracking>  
+<tracking>
+  <profiles>
+    <trackingProfile name="Name">
+      <workflow>
+        <cancelRequestedQueries>
+          <cancelRequestedQuery activityName="String"
+                                childActivityName="String" />
+        </cancelRequestedQueries>
+      </workflow>
+    </trackingProfile>
+  </profiles>
+</tracking>
 ```  
   
 ## Attributes and elements

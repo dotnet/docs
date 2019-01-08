@@ -19,10 +19,10 @@ Specifies authentication options for peer-to-peer message senders.
 ## Syntax  
   
 ```xml  
-<messageSenderAuthentication customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-                             certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-                             revocationMode="NoCheck/Online/Offline"  
-                             trustedStoreLocation="CurrentUser/LocalMachine" />  
+<messageSenderAuthentication customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                             certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                             revocationMode="NoCheck/Online/Offline"
+                             trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## Attributes and Elements  
@@ -77,21 +77,21 @@ Specifies authentication options for peer-to-peer message senders.
  The following code sets the message sender validation mode to `PeerOrChainTrust`.  
   
 ```xml  
-<behaviors>  
-  <endpointBehaviors>  
-    <behavior name="MyEndpointBehavior">  
-      <clientCredentials>  
-        <peer>  
-          <certificate findValue="www.contoso.com"  
-                       storeLocation="LocalMachine"  
-                       x509FindType="FindByIssuerName" />  
-          <messageSenderAuthentication certificateValidationMode="PeerOrChainTrust" />  
-          <messageSenderAuthentication certificateValidationMode="None" />  
-        </peer>  
-      </clientCredentials>  
-    </behavior>  
-  </endpointBehaviors>  
-</behaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="MyEndpointBehavior">
+      <clientCredentials>
+        <peer>
+          <certificate findValue="www.contoso.com"
+                       storeLocation="LocalMachine"
+                       x509FindType="FindByIssuerName" />
+          <messageSenderAuthentication certificateValidationMode="PeerOrChainTrust" />
+          <messageSenderAuthentication certificateValidationMode="None" />
+        </peer>
+      </clientCredentials>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
 ## See Also  

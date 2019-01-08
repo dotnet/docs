@@ -15,12 +15,12 @@ Enables the retrieval of metadata address information from the request message h
 ## Syntax  
   
 ```xml  
-<useRequestHeadersForMetadataAddress>  
-  <defaultPorts>  
-    <add scheme="http"  
-         port="integer" />  
-  </defaultPorts>  
-</useRequestHeadersForMetadataAddress>  
+<useRequestHeadersForMetadataAddress>
+  <defaultPorts>
+    <add scheme="http"
+         port="integer" />
+  </defaultPorts>
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  

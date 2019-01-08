@@ -13,13 +13,13 @@ Represents a configuration section for defining a set of backup services used in
 ## Syntax  
   
 ```xml  
-<routing>  
-  <backupLists>  
-    <backupList name="String">  
-      <add endpointName="String" />  
-    </backupList>  
-  </backupLists>  
-</routing>  
+<routing>
+  <backupLists>
+    <backupList name="String">
+      <add endpointName="String" />
+    </backupList>
+  </backupLists>
+</routing>
 ```  
   
 ## Attributes and Elements  

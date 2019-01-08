@@ -15,16 +15,16 @@ Represents a configuration section for defining a set of routing filters, which 
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <routing>  
-    <filters>  
-      <filter customType="String"  
-              filterData="String"  
-              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"  
-              name="String" />  
-    </filters>  
-  </routing>  
-</system.serviceModel>  
+<system.serviceModel>
+  <routing>
+    <filters>
+      <filter customType="String"
+              filterData="String"
+              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
+              name="String" />
+    </filters>
+  </routing>
+</system.serviceModel>
 ```  
   
 ## Attributes and elements

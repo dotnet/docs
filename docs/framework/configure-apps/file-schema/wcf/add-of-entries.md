@@ -16,18 +16,18 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 ## Syntax  
   
 ```xml  
-<routing>  
-  <filterTables>  
-    <filterTable name="String">  
-      <entries>  
-        <add backupList="String"  
-             endpointName="String"  
-             filterName="String"  
-             priority="Integer" />  
-      </entries>  
-    </filterTable>  
-  </filterTables>  
-</routing>  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
+      </entries>
+    </filterTable>
+  </filterTables>
+</routing>
 ```  
   
 ```csharp  

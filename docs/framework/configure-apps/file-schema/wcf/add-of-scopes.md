@@ -17,17 +17,17 @@ Adds a custom scope Uri that can be used to filter service endpoints during quer
 ## Syntax  
   
 ```xml  
-<behaviors>  
-  <endpointBehaviors>  
-    <behavior name="String">  
-      <endpointDiscovery enable="Boolean">  
-        <scopes>  
-          <add scope="URI" />  
-        </scopes>  
-      </endpointDiscovery>  
-    </behavior>  
-  </endpointBehaviors>  
-</behaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="String">
+      <endpointDiscovery enable="Boolean">
+        <scopes>
+          <add scope="URI" />
+        </scopes>
+      </endpointDiscovery>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
 ## Attributes and Elements  

@@ -19,9 +19,9 @@ When developing an ASP.NET Core microservice or web application, you can use the
 
 Health check services and middleware are easy to use and provide capabilities that let you validate if any external resource needed for your application (like a SQL Server database or a remote API) is working properly. When you use this feature, you can also decide what it means that the resource is healthy, as we explain later.
 
-In order to use this feature effectively, you need to first configure services in your microservices. Second, you need a front-end application that queries for the health reports. That front-end application could be a custom reporting application, or it could be an orchestrator itself that can react accordingly to the health states.
+To use this feature effectively, you need to first configure services in your microservices. Second, you need a front-end application that queries for the health reports. That front-end application could be a custom reporting application, or it could be an orchestrator itself that can react accordingly to the health states.
 
-### Using the HealthChecks feature in your back end ASP.NET microservices
+### Using the HealthChecks feature in your back-end ASP.NET microservices
 
 First, we will look at how the HealthChecks feature is used in a sample ASP.NET Core 2.2 Web API application. Later, we will dig deeper on how this feature is utilized in eShopOnContainers. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
 
@@ -40,11 +40,11 @@ public void ConfigureServices(IServiceCollection services)
 }
 
 ```
-In the above code, `services.AddHealthChecks()` method configures a basic HTTP check that returns a Status code **200** with “Healthy”.  Further,`AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database’s health.
+In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with “Healthy”.  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database’s health.
 
-`AddCheck()` method adds a new health check with a specified name and the implementation of type `IHealthCheck`. You can add multiple Health Checks using AddCheck method thus, a microservice will not provide a “healthy” status until all its checks are healthy.
+The `AddCheck()` method adds a new health check with a specified name and the implementation of type `IHealthCheck`. You can add multiple Health Checks using AddCheck method, so a microservice won't provide a “healthy” status until all its checks are healthy.
 
-`SqlConnectionHealthCheck` is a custom class that implements `IHealthCheck` which takes a connection string as a constructor parameter and executes a simple query to check if the connection to the SQL database is successful. It returns `HealthCheckResult.Healthy()` if the query was executed successfully and a `FailureStatus` with the actual exception when it fails.
+`SqlConnectionHealthCheck` is a custom class that implements `IHealthCheck`, which takes a connection string as a constructor parameter and executes a simple query to check if the connection to the SQL database is successful. It returns `HealthCheckResult.Healthy()` if the query was executed successfully and a `FailureStatus` with the actual exception when it fails.
 
 ```csharp
 // Sample SQL Connection Health Check
@@ -93,7 +93,8 @@ public class SqlConnectionHealthCheck : IHealthCheck
     }
 }
 ```
-Note in the above code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It is important to keep your database queries very efficient so that these operations are quick and don’t result in a higher utilization of resources. 
+
+Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries very efficient so that these operations are quick and don’t result in a higher utilization of resources.
 
 Finally, create a middleware that responds to the url path “/hc”.
 
@@ -111,17 +112,17 @@ When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health che
 
 ### HealthChecks implementation in eShopOnContainers
 
-Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the Catalog.API microservice from eShopOnContainers depends on many services like Azure Blob Storage, SQL Server, RabbitMQ etc, therefore has several health checks added using the `AddCheck()` method. For every depending service, a custom `IHealthCheck` implementation that defines its respective health status needs to be added. 
+Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the `Catalog.API` microservice from eShopOnContainers depends on many services, such as Azure Blob Storage, SQL Server, and RabbitMQ. Therefore, it has several health checks added using the `AddCheck()` method. For every dependent service, a custom `IHealthCheck` implementation that defines its respective health status needs to be added.
 
-The open source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services that are built on top of .NET Core 2.2. Each health check is available as an individual Nuget package that can be easily added to the project. eShopOnContainers use them extensively in all its microservices.
+The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services that are built on top of .NET Core 2.2. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers use them extensively in all its microservices.
 
-For instance, in the Catalog.API microservice, we added the following Nuget Packages:
+For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 
 ![](./media/image6.png)
 
 **Figure 10-6**. Custom Health Checks implemented in Catalog.API using AspNetCore.Diagnostics.HealthChecks
 
-In the following code, we add the health check implementations for each of the depending service and then configure the middleware:
+In the following code, the health check implementations are added for each dependent service and then the middleware is configured:
 
 ```csharp
 // Startup.cs from Catalog.api microservice
@@ -141,7 +142,7 @@ public static IServiceCollection AddCustomHealthCheck(this IServiceCollection se
             tags: new string[] { "catalogdb" });
 
     if (!string.IsNullOrEmpty(accountName) && !string.IsNullOrEmpty(accountKey))
-    {                
+    {
         hcBuilder
             .AddAzureBlobStorage(
                 $"DefaultEndpointsProtocol=https;AccountName={accountName};AccountKey={accountKey};EndpointSuffix=core.windows.net",
@@ -192,21 +193,21 @@ When you’ve configured health checks as described in this article and you have
 
 **Figure 10-7**. Checking health status of a single service from a browser
 
-In that test, you can see that the Catalog.API microservice (running on port 5101) is healthy, returning HTTP status 200 and status information in JSON. The service also checked the health of its SQL Server database dependency and RabbitMQ thus the health check reported itself as healthy.
+In that test, you can see that the `Catalog.API` microservice (running on port 5101) is healthy, returning HTTP status 200 and status information in JSON. The service also checked the health of its SQL Server database dependency and RabbitMQ, so the health check reported itself as healthy.
 
 ## Using watchdogs
 
 A watchdog is a separate service that can watch health and load across services, and report health about the microservices by querying with the HealthChecks library introduced earlier. This can help prevent errors that would not be detected based on the view of a single service. Watchdogs also are a good place to host code that can perform remediation actions for known conditions without user interaction.
 
-The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 10-8. This is the simplest watchdog you could have, since all it does is shows the state of the microservices and web applications in eShopOnContainers. Usually a watchdog also takes actions when it detects unhealthy states.
+The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 10-8. This is the simplest watchdog you could have, since all it does is show the state of the microservices and web applications in eShopOnContainers. Usually, a watchdog also takes actions when it detects unhealthy states.
 
-Fortunately, [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) also provides [AspNetCore.HealthChecks.UI](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI/) Nuget Package that can be utilized to display the health check results from the configured URIs.
+Fortunately, [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) also provides [AspNetCore.HealthChecks.UI](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI/) NuGet package that can be used to display the health check results from the configured URIs.
 
 ![](./media/image8.png)
 
 **Figure 10-8**. Sample health check report in eShopOnContainers
 
-In summary, this watchdog service queries each microservice’s “/hc” endpoint. This will execute all the health checks defined within it and return an overall health state depending on all those checks. The HealthChecksUI is easy to consume with a few configuration entries and two lines of code that needs to be added into the Startup.cs of the watchdog service.
+In summary, this watchdog service queries each microservice’s "/hc" endpoint. This will execute all the health checks defined within it and return an overall health state depending on all those checks. The HealthChecksUI is easy to consume with a few configuration entries and two lines of code that needs to be added into the Startup.cs of the watchdog service.
 
 Sample configuration file for health check UI:
 
@@ -243,7 +244,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     //…
     app.UseHealthChecksUI(config=> config.UIPath = “/hc-ui”);
     //…
-} 
+}
 ```
 
 ## Health checks when using orchestrators
@@ -264,11 +265,11 @@ The final part of monitoring is visualizing the event stream, reporting on servi
 
 You can use simple custom applications showing the state of your services, like the custom page shown when explaining the [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks). Or you could use more advanced tools like Azure Application Insights to raise alerts based on the stream of events.
 
-Finally, if you were storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
+Finally, if you're storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
 
 ## Additional resources
 
--   **•	HealthChecks and HealthChecks UI for ASP.NET Core**
+-   **HealthChecks and HealthChecks UI for ASP.NET Core**
     [*https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks*](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks )
 
 -   **Introduction to Service Fabric health monitoring**

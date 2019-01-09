@@ -16,21 +16,21 @@ Defines properties that control authentication parameters for the HTTP transport
 ## Syntax  
   
 ```xml  
-<basicHttpBinding>  
-    <binding>  
-        <security  
-        mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
-            <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"  
-             proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string" >  
-                <extendedProtectionPolicy  
-                     policyEnforcement="Never|WhenSupported|Always"  
-                     protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                        </extendedProtectionPolicy>  
-            </transport>  
-        </security>  
-    </binding>  
-</basicHttpBinding>  
+<basicHttpBinding>
+  <binding>
+    <security mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">
+      <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"
+                 proxyCredentialType="None|Basic|Digest|Ntlm|Windows"
+                 realm="String">
+        <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"
+                                  protectionScenario="TransportSelected|TrustedProxy">
+          <customServiceNames>
+          </customServiceNames>
+        </extendedProtectionPolicy>
+      </transport>
+    </security>
+  </binding>
+</basicHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -80,35 +80,35 @@ Defines properties that control authentication parameters for the HTTP transport
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
   
 ```xml  
-<system.serviceModel>  
-   <services>  
-      <service   
-          type="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
-         <endpoint address=""  
-               binding="basicHttpBinding"  
-               bindingConfiguration="Binding1"   
-               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-      </service>  
-   </services>  
-    <bindings>  
-        <basicHttpBinding>  
-        <!-- Configure basicHttpBinding with Transport security -->  
-        <!-- mode and clientCredentialType set to None. -->  
-           <binding name="Binding1">  
-               <security mode="Transport">  
-                   <transport clientCredentialType="None"  
-                              proxyCredentialType="None">  
-                       <extendedProtectionPolicy  
-                          policyEnforcement="WhenSupported"  
-                          protectionScenario="TransportSelected">  
-                    <customServiceNames></customServiceNames>  
-                       </extendedProtectionPolicy>  
-               </security>  
-           </binding>  
-        </basicHttpBinding>  
-    </bindings>  
-</system.serviceModel>  
+<system.serviceModel>
+  <services>
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"
+             behaviorConfiguration="CalculatorServiceBehavior">
+      <endpoint address=""
+                binding="basicHttpBinding"
+                bindingConfiguration="Binding1"
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />
+    </service>
+  </services>
+  <bindings>
+    <basicHttpBinding>
+      <!-- Configure basicHttpBinding with Transport security -->
+      <!-- mode and clientCredentialType set to None. -->
+      <binding name="Binding1">
+        <security mode="Transport">
+          <transport clientCredentialType="None"
+                     proxyCredentialType="None">
+            <extendedProtectionPolicy policyEnforcement="WhenSupported"
+                                      protectionScenario="TransportSelected">
+              <customServiceNames>
+              </customServiceNames>
+            </extendedProtectionPolicy>
+          </transport>
+        </security>
+      </binding>
+    </basicHttpBinding>
+  </bindings>
+</system.serviceModel>
 ```  
   
 ## See Also  

@@ -20,7 +20,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -28,15 +28,15 @@ Represents a collection of subscribed states from the tracked workflow instance 
         <workflowInstanceQueries>
           <workflowInstanceQuery>
             <states>
-              <state name="Name"/>
+              <state name="Name" />
             </states>
           </workflowInstanceQuery>
         </workflowInstanceQueries>
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
-```
+</tracking>
+```  
   
 ## Attributes and elements
 
@@ -84,13 +84,13 @@ Possible state values are described in the following table:
 
 The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
-```xml
+```xml  
 <workflowInstanceQueries>
-  <workflowInstanceQuery>  
-    <states>  
-      <state name="Started"/>  
-    </states>  
-  </workflowInstanceQuery>  
+  <workflowInstanceQuery>
+    <states>
+      <state name="Started" />
+    </states>
+  </workflowInstanceQuery>
 </workflowInstanceQueries>
 ```  
   

@@ -16,24 +16,23 @@ Specifies a custom token issued as a service credential.
 ## Syntax  
   
 ```xml  
-<issuedTokenAuthentication   
-   allowUntrustedRsaIssuers="Boolean"  
-   audienceUriMode="Always/BearerKeyOnly/Never"  
-      customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-   revocationMode="NoCheck/Online/Offline"  
-   samlSerializer="String"  
-    trustedStoreLocation="CurrentUser/LocalMachine">  
-      <allowedAudienceUris>  
-      <add allowedAudienceUri="String"/>  
-      </allowedAudienceUris>  
-      <knownCertificates>   
-         <add findValue="String"  
-                 storeLocation="CurrentUser/LocalMachine"  
-                storeName=" CurrentUser/LocalMachine"  
-                x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>  
-      </knownCertificates>  
-</issuedTokenAuthentication>  
+<issuedTokenAuthentication allowUntrustedRsaIssuers="Boolean"
+                           audienceUriMode="Always/BearerKeyOnly/Never"
+                           customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                           certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                           revocationMode="NoCheck/Online/Offline"
+                           samlSerializer="String"
+                           trustedStoreLocation="CurrentUser/LocalMachine">
+  <allowedAudienceUris>
+    <add allowedAudienceUri="String" />
+  </allowedAudienceUris>
+  <knownCertificates>
+    <add findValue="String"
+         storeLocation="CurrentUser/LocalMachine"
+         storeName=" CurrentUser/LocalMachine"
+         x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />
+  </knownCertificates>
+</issuedTokenAuthentication>
 ```  
   
 ## Attributes and Elements  
@@ -70,13 +69,14 @@ certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
  This element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
 ```xml  
-<issuedTokenAuthorization>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
-</issuedTokenAuthentication>  
+<issuedTokenAuthentication>
+  <knownCertificates>
+    <add findValue="www.contoso.com"
+         storeLocation="LocalMachine"
+         storeName="My"
+         X509FindType="FindBySubjectName" />
+  </knownCertificates>
+</issuedTokenAuthentication>
 ```  
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  

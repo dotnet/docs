@@ -16,14 +16,13 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<issuedToken   
-   cacheIssuedTokens="Boolean"  
-   defaultKeyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"  
-   issuedTokenRenewalThresholdPercentage = "0 to 100"  
-   issuerChannelBehaviors="String"  
-      localIssuerChannelBehaviors="String"  
-   maxIssuedTokenCachingTime="TimeSpan"  
-</issuedToken>  
+<issuedToken cacheIssuedTokens="Boolean"
+             defaultKeyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"
+             issuedTokenRenewalThresholdPercentage = "0 to 100"
+             issuerChannelBehaviors="String"
+             localIssuerChannelBehaviors="String"
+             maxIssuedTokenCachingTime="TimeSpan">
+</issuedToken>
 ```  
   
 ## Attributes and Elements  

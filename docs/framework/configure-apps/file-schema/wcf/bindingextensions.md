@@ -11,14 +11,15 @@ This section enables the use of a user defined binding from a machine or applica
  The following example uses the `add` element, as well as the `name` attribute to add a binding extension to the `bindingElementExtensions` section of the configuration file.  
   
 ```xml  
-<system.serviceModel>  
-    <extensions>  
-        <bindingExtensions>  
-           <add name="MyBinding" type="Microsoft.ServiceModel.Samples.MyBinding, MyBinding,  
-                Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-        </bindingExtensions>  
-    </extensions>  
-</system.serviceModel>  
+<system.serviceModel>
+  <extensions>
+    <bindingExtensions>
+      <add name="MyBinding"
+           type="Microsoft.ServiceModel.Samples.MyBinding, MyBinding,
+                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </bindingExtensions>
+  </extensions>
+</system.serviceModel>
 ```  
   
  To add configuration abilities to the element, the user needs to write and register a `bindingSection` element. For more information on this, see the <xref:System.Configuration> documentation.  
@@ -26,11 +27,12 @@ This section enables the use of a user defined binding from a machine or applica
  After the element and its configuration type are defined, the extension can be used as part of an endpoint as shown in the following example.  
   
 ```xml  
-<services>  
-    <service name="MyService">  
-        <endpoint address="myAddress" binding="MyBinding" />  
-    </service>  
-</services>  
+<services>
+  <service name="MyService">
+    <endpoint address="myAddress"
+              binding="MyBinding" />
+  </service>
+</services>
 ```  
   
 ## See Also  

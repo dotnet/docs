@@ -14,17 +14,17 @@ Specifies the publication of service metadata and associated information.
   
 ## Syntax  
   
-```xml
-<serviceMetadata externalMetadataLocation="String"  
-                 httpGetBinding="String" 
-                 httpGetBindingConfiguration="String"  
-                 httpGetEnabled="Boolean" 
-                 httpGetUrl="String" 
-                 httpsGetBinding="String" 
-                 httpsGetBindingConfiguration="String"  
-                 httpsGetEnabled="Boolean"   
-                 httpsGetUrl="String"  
-                 policyVersion="Policy12/Policy15" />  
+```xml  
+<serviceMetadata externalMetadataLocation="String"
+                 httpGetBinding="String"
+                 httpGetBindingConfiguration="String"
+                 httpGetEnabled="Boolean"
+                 httpGetUrl="String"
+                 httpsGetBinding="String"
+                 httpsGetBindingConfiguration="String"
+                 httpsGetEnabled="Boolean"
+                 httpsGetUrl="String"
+                 policyVersion="Policy12/Policy15" />
 ```  
   
 ## Attributes and Elements  
@@ -63,55 +63,51 @@ Specifies the publication of service metadata and associated information.
   
  To reduce the exposure of a service to malicious users, it is possible to secure the transfer using the SSL over HTTP (HTTPS) mechanism. To do so, you must first bind a suitable X.509 certificate to a specific port on the computer that is hosting the service. (For more information, see [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md).) Second, add this element to the service configuration and set the `httpsGetEnabled` attribute to `true`. Finally, set the `httpsGetUrl` attribute to the URL of the service metadata endpoint, as shown in the following example.  
   
-```xml
-<behaviors>  
-  <serviceBehaviors>  
-    <behavior name="NewBehavior">  
-      <serviceMetadata httpsGetEnabled="true"   
-                       httpsGetUrl="https://myComputerName/myEndpoint" />  
-    </behavior>  
-  </serviceBehaviors>  
-</behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="NewBehavior">
+      <serviceMetadata httpsGetEnabled="true"
+                       httpsGetUrl="https://myComputerName/myEndpoint" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>
 ```  
   
 ## Example  
  The following example configure a service to expose metadata by using the \<serviceMetadata> element. It also configures an endpoint to expose the `IMetadataExchange` contract as an implementation of a WS-MetadataExchange (MEX) protocol. The example uses the `mexHttpBinding`, which is a convenience standard binding that is equivalent to the `wsHttpBinding` with the security mode set to `None`. A relative address of "mex" is used in the endpoint, which when resolved against the services base address results in an endpoint address of `http://localhost/servicemodelsamples/service.svc/mex`.  
   
-```xml
-<configuration>  
-  <system.serviceModel>  
-    <services>  
-      <service name="Microsoft.ServiceModel.Samples.CalculatorService" 
-               behaviorConfiguration="CalculatorServiceBehavior">  
-        <!-- This endpoint is exposed at the base address provided by the host: http://localhost/servicemodelsamples/service.svc -->  
-        <endpoint address=""  
-                  binding="wsHttpBinding"  
-                  contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-        <!-- The mex endpoint is exposed at http://localhost/servicemodelsamples/service.svc/mex   
-             To expose the IMetadataExchange contract, you must enable the serviceMetadata behavior as demonstrated below. -->  
-        <endpoint address="mex"  
-                  binding="mexHttpBinding"  
-                  contract="IMetadataExchange" />  
-      </service>  
-    </services>  
-
-    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
-    <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <!-- The serviceMetadata behavior publishes metadata through   
-               the IMetadataExchange contract. When this behavior is   
-               present, you can expose this contract through an endpoint   
-               as shown above. Setting httpGetEnabled to true publishes   
-               the service's WSDL at the <baseaddress>?wsdl  
-               eg. http://localhost/servicemodelsamples/service.svc?wsdl -->  
-          <serviceMetadata httpGetEnabled="True"/>  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-        </behavior>  
-      </serviceBehaviors>  
+```xml  
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+               behaviorConfiguration="CalculatorServiceBehavior">
+        <!-- This endpoint is exposed at the base address provided by the host: http://localhost/servicemodelsamples/service.svc -->
+        <endpoint address=""
+                  binding="wsHttpBinding"
+                  contract="Microsoft.ServiceModel.Samples.ICalculator" />
+        <!-- The mex endpoint is exposed at http://localhost/servicemodelsamples/service.svc/mex
+             To expose the IMetadataExchange contract, you must enable the serviceMetadata behavior as demonstrated below. -->
+        <endpoint address="mex"
+                  binding="mexHttpBinding"
+                  contract="IMetadataExchange" />
+      </service>
+    </services>
+    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="CalculatorServiceBehavior">
+          <!-- The serviceMetadata behavior publishes metadata through the IMetadataExchange contract. When this behavior is
+               present, you can expose this contract through an endpoint as shown above. Setting httpGetEnabled to true publishes
+               the service's WSDL at the <baseaddress>?wsdl eg. http://localhost/servicemodelsamples/service.svc?wsdl -->
+          <serviceMetadata httpGetEnabled="True" />
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
     </behaviors>
-  </system.serviceModel>  
-</configuration>  
+  </system.serviceModel>
+</configuration>
 ```  
   
 ## See Also  

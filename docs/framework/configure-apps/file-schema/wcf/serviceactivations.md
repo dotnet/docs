@@ -13,12 +13,12 @@ A configuration element that allows you to add settings that define virtual serv
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <serviceActivations>  
-      <add factory="String"  
-           service="String"/>  
-   </serviceActivations>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <serviceActivations>
+    <add factory="String"
+         service="String" />
+  </serviceActivations>
+</serviceHostingEnvironment>
 ```  
   
 ## Attributes and Elements  
@@ -43,15 +43,15 @@ A configuration element that allows you to add settings that define virtual serv
  The following example shows how to configure activation settings within your web.config file.  
   
 ```xml  
-<configuration>  
-  <system.serviceModel>  
-    <serviceHostingEnvironment>  
-      <serviceActivations>  
-        <add service="GreetingService"/>  
-      </serviceActivations>  
-    </serviceHostingEnvironment>  
-  </system.serviceModel>  
-</configuration>  
+<configuration>
+  <system.serviceModel>
+    <serviceHostingEnvironment>
+      <serviceActivations>
+        <add service="GreetingService" />
+      </serviceActivations>
+    </serviceHostingEnvironment>
+  </system.serviceModel>
+</configuration>
 ```  
   
  Using this configuration, you can activate the GreetingService without using an .svc file.  

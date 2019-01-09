@@ -16,16 +16,16 @@ Defines the transport security settings.
 ## Syntax  
   
 ```xml  
-<netMsmqBinding>  
-    <binding>  
-    <security>  
-         <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-            msmqEncryptionAlgorithm="RC4Stream/AES"  
-            msmqProtectionLevel="None/Sign/EncryptAndSign"  
-            msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-    </security>  
-   </binding>  
-</netMsmqBinding>  
+<netMsmqBinding>
+  <binding>
+    <security>
+      <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+                 msmqEncryptionAlgorithm="RC4Stream/AES"
+                 msmqProtectionLevel="None/Sign/EncryptAndSign"
+                 msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+    </security>
+  </binding>
+</netMsmqBinding>
 ```  
   
 ## Attributes and Elements  

@@ -12,19 +12,21 @@ This element defines the type the service hosting environment instantiates for a
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment aspNetCompatibilityEnabled="Boolean" 
-                           minFreeMemoryPercentageToActivateService="Integer" 
+<serviceHostingEnvironment aspNetCompatibilityEnabled="Boolean"
+                           minFreeMemoryPercentageToActivateService="Integer"
                            multipleSiteBindingsEnabled="Boolean">
   <baseAddressPrefixFilters>
     <add prefix="string" />
   </baseAddressPrefixFilters>
   <serviceActivations>
-    <add factory="String" service="String" />
+    <add factory="String"
+         service="String" />
   </serviceActivations>
   <transportConfigurationTypes>
-    <add name="String" transportConfigurationType="String" />
+    <add name="String"
+         transportConfigurationType="String" />
   </transportConfigurationTypes>
-</serviceHostingEnvironment>  
+</serviceHostingEnvironment>
 ```  
   
 ## Attributes and Elements  
@@ -81,7 +83,7 @@ This element defines the type the service hosting environment instantiates for a
 ## Code  
   
 ```xml  
-<serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>  
+<serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>
 ```  
   
 ## See Also  

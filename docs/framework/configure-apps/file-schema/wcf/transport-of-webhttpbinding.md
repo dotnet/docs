@@ -16,21 +16,21 @@ Defines the transport-level security settings for a service endpoint configured 
 ## Syntax  
   
 ```xml  
-<webHttpBinding>  
-    <binding>  
-        <security  
-        mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
-            <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"  
-             proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string" >  
-                <extendedProtectionPolicy  
-                     policyEnforcement="Never|WhenSupported|Always"  
-                     protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                        </extendedProtectionPolicy>  
-            </transport>  
-        </security>  
-    </binding>  
-</WebHttpBinding>  
+<webHttpBinding>
+  <binding>
+    <security mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">
+      <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"
+                 proxyCredentialType="None|Basic|Digest|Ntlm|Windows"
+                 realm="string">
+        <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"
+                                  protectionScenario="TransportSelected|TrustedProxy">
+          <customServiceNames>
+          </customServiceNames>
+        </extendedProtectionPolicy>
+      </transport>
+    </security>
+  </binding>
+</webHttpBinding>
 ```  
   
 ## Type  

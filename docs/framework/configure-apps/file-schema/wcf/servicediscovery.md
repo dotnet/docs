@@ -20,17 +20,17 @@ Specifies the discoverability of service endpoints.
     <behavior name="String">
       <serviceDiscovery>
         <announcementEndpoints>
-          <endpoint name="String" 
+          <endpoint name="String"
                     kind="Type" />
         </announcementEndpoints>
         <discoveryEndpoints>
-          <endpoint name="String" 
+          <endpoint name="String"
                     kind="Type" />
         </discoveryEndpoints>
       </serviceDiscovery>
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  
@@ -59,25 +59,24 @@ Specifies the discoverability of service endpoints.
  The following configuration example specifies that the CalculatorService to be discoverable, and optionally specifies the announcement endpoint to be used.  
   
 ```xml  
-<services>  
-  <service name="CalculatorService"  
-           behaviorConfiguration="CalculatorServiceBehavior">  
-  ...  
-  </service>  
-</services>  
-  
-<behaviors>  
-  <serviceBehaviors>  
-    <behavior name="CalculatorServiceBehavior">  
-      <serviceDiscovery>  
-        <announcementEndpoints>  
-              <endpoint name="udpEndpoint"  
-                        kind="udpAnnouncementEndpoint" />  
-        </announcementEndpoints>  
-      </serviceDiscovery>  
-    </behavior>  
-  </serviceBehaviors>  
-</behaviors>  
+<services>
+  <service name="CalculatorService"
+           behaviorConfiguration="CalculatorServiceBehavior">
+    ...
+  </service>
+</services>
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="CalculatorServiceBehavior">
+      <serviceDiscovery>
+        <announcementEndpoints>
+          <endpoint name="udpEndpoint"
+                    kind="udpAnnouncementEndpoint" />
+        </announcementEndpoints>
+      </serviceDiscovery>
+    </behavior>
+  </serviceBehaviors>
+</behaviors>
 ```  
   
 ## See Also  

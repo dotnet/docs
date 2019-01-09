@@ -11,10 +11,10 @@ This configuration section allows you to define a collection of standard endpoin
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-    <standardEndpoints>  
-    </standardEndpoints>  
-</system.serviceModel>  
+<system.serviceModel>
+  <standardEndpoints>
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

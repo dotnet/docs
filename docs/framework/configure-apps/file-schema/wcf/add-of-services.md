@@ -16,11 +16,11 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```xml  
-<workflowRuntime>  
-   <services>  
-      <add type="String"/>  
-   </services>  
-</workflowRuntime>  
+<workflowRuntime>
+  <services>
+    <add type="String" />
+  </services>
+</workflowRuntime>
 ```  
   
 ## Attributes and Elements  
@@ -47,17 +47,17 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Example  
   
 ```xml  
-<serviceBehaviors>  
-   <behavior name="ServiceBehavior">  
-      <workflowRuntime name="WorkflowServiceHostRuntime"  
-                       validateOnCreate="true"  
-                       enablePerformanceCounters="true">  
-         <services>  
-             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>  
-         </services>  
-      </workflowRuntime>  
-   </behavior>  
-</serviceBehaviors>  
+<serviceBehaviors>
+  <behavior name="ServiceBehavior">
+    <workflowRuntime name="WorkflowServiceHostRuntime"
+                     validateOnCreate="true"
+                     enablePerformanceCounters="true">
+      <services>
+        <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common" />
+      </services>
+    </workflowRuntime>
+  </behavior>
+</serviceBehaviors>
 ```  
   
 ## See Also  

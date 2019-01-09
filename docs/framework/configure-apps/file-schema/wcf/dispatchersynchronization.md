@@ -3,31 +3,31 @@ title: "&lt;dispatcherSynchronization&gt;"
 ms.date: "03/30/2017"
 ms.assetid: cc030f9c-4e38-4b14-94dc-9a0e41ec8e2d
 ---
-
+  
 # &lt;dispatcherSynchronization&gt;
-
-Specifies an endpoint behavior that enables a service to send replies asynchronously.
-
-\<system.serviceModel>
-\<behaviors>
-\<endpointBehaviors>
-\<behavior>
-
-## Syntax
-
-```xml
-<dispatcherSynchronizationBehavior asynchronousSendEnabled="Boolean" 
+  
+Specifies an endpoint behavior that enables a service to send replies asynchronously.  
+  
+\<system.serviceModel>  
+\<behaviors>  
+\<endpointBehaviors>  
+\<behavior>  
+  
+## Syntax  
+  
+```xml  
+<dispatcherSynchronizationBehavior asynchronousSendEnabled="Boolean"
                                    maxPendingReceives="Integer" />
-```
-
-## Type
-
-`Type`
-
-## Attributes and elements
-
-The following sections describe attributes, child elements, and parent elements.
-
+```  
+  
+## Type  
+  
+`Type`  
+  
+## Attributes and elements  
+  
+The following sections describe attributes, child elements, and parent elements.  
+  
 ### Attributes
 
 | Attribute               | Description       |

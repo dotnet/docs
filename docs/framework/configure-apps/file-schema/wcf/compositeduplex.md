@@ -15,7 +15,7 @@ Defines the binding element that is used when the client must expose an endpoint
 ## Syntax  
   
 ```xml  
-<compositeDuplex clientBaseAddress="URI" />  
+<compositeDuplex clientBaseAddress="URI" />
 ```  
   
 ## Attributes and Elements  
@@ -44,7 +44,7 @@ Defines the binding element that is used when the client must expose an endpoint
 ## Example  
   
 ```xml  
-<compositeDuplex clientBaseAddress="http://www.contoso.com" />  
+<compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
 ## See Also  

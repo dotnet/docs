@@ -15,15 +15,14 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 ## Syntax  
   
 ```xml  
-<security mode="None/Transport/Message/Both">  
-   <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-      msmqEncryptionAlgorithm="RC4Stream/AES"  
-      msmqProtectionLevel="None/Sign/EncryptAndSign"  
-      msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-      <message  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-      clientCredentialType="None/Windows/UserName/Certificate/CardSpace"/>  
-</security>  
+<security mode="None/Transport/Message/Both">
+  <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+             msmqEncryptionAlgorithm="RC4Stream/AES"
+             msmqProtectionLevel="None/Sign/EncryptAndSign"
+             msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+    <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+             clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />
+</security>
 ```  
   
 ## Attributes and Elements  

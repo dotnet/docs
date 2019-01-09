@@ -37,7 +37,7 @@ Properties provide the convenience of public data members without the risks that
   
  [!code-csharp[csProgGuideObjects#37](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-declare-and-use-read-write-properties_5.cs)]  
   
- If separate `set` and `get` methods were used to model properties, the equivalent code might look like this:  
+ If separate `set` and `get` methods were used to model properties, as in Java for example, the equivalent code might look like this:  
   
 ```csharp  
 person.SetAge(person.GetAge() + 1);   

@@ -54,7 +54,7 @@ I'll demonstrate its use by adding it to the `Math` class definition and the fir
 
 [!code-csharp[Summary Tag](../../samples/snippets/csharp/concepts/codedoc/summary-tag.cs)]
 
-The `<summary>` tag is very important, and we recommend that you include it because its content is the primary source of type or member information in IntelliSense or an API reference document.
+The `<summary>` tag is very important, and we recommend that you include it because its content is the primary source of type for member information in IntelliSense or an API reference document.
 
 ### &lt;remarks&gt;
 

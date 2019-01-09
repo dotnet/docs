@@ -6,8 +6,3 @@
 #### [Creating the GamePieceCollection Class](creating-the-gamepiececollection-class.md)
 #### [Creating the Game1 Class](creating-the-game1-class.md)
 #### [Full Code Listings](full-code-listings.md)
-## [Client Application Services](client-application-services.md)
-### [Client Application Services Overview](client-application-services-overview.md)
-### [How to: Configure Client Application Services](how-to-configure-client-application-services.md)
-### [How to: Implement User Login with Client Application Services](how-to-implement-user-login-with-client-application-services.md)
-### [Walkthrough: Using Client Application Services](walkthrough-using-client-application-services.md)

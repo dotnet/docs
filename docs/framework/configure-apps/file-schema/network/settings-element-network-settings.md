@@ -20,13 +20,13 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
   
 ```xml  
 <settings>  
-  <httpListener> … </httpListener>  
-  <httpWebRequest> … </httpWebRequest>  
-  <ipv6> … </ipv6>  
-  <performanceCounters> … </performanceCounters>  
-  <servicePointManager> … </servicePointManager>  
-  <socket> … </socket>  
-  <webProxyScript> … </webProxyScript>  
+  <httpListener>...</httpListener>  
+  <httpWebRequest>...</httpWebRequest>  
+  <ipv6>...</ipv6>  
+  <performanceCounters>...</performanceCounters>  
+  <servicePointManager>...</servicePointManager>  
+  <socket>...</socket>  
+  <webProxyScript>...</webProxyScript>  
 </settings>  
 ```  
   

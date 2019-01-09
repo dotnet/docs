@@ -14,7 +14,7 @@ Specifies the identity of a service by its Service Principal Name (SPN).
 ## Syntax  
   
 ```xml  
-<servicePrincipalName value = "String" />  
+<servicePrincipalName value="String" />
 ```  
   
 ## Attributes and Elements  

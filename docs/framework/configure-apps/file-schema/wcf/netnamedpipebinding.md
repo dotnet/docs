@@ -13,26 +13,30 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 ## Syntax  
   
 ```xml  
-<netNamedPipeBinding>  
-   <binding   
-      closeTimeout="TimeSpan"  
-      hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-      maxBufferPoolSize="Integer"  
-      maxBufferSize="Integer"  
-      maxConnections="Integer"   
-      maxReceivedMessageSize="Integer"  
-            name="string"  
-      openTimeout="TimeSpan"   
-      receiveTimeout="TimeSpan"  
-      sendTimeout="TimeSpan"  
-      transactionFlow="Boolean"  
-      transactionProtocol="OleTransactions/WS-AtomicTransactionOctober2004"  
-            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-      <security mode="None/Transport">  
-            <transport  protectionLevel="None/Sign/EncryptAndSign" />  
-      </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
-</netNamedPipeBinding>  
+<netNamedPipeBinding>
+  <binding closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="Integer"
+           maxBufferSize="Integer"
+           maxConnections="Integer"
+           maxReceivedMessageSize="Integer"
+           name="String"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           transactionFlow="Boolean"
+           transactionProtocol="OleTransactions/WS-AtomicTransactionOctober2004"
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+    <security mode="None/Transport">
+      <transport protectionLevel="None/Sign/EncryptAndSign" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</netNamedPipeBinding>
 ```  
   
 ## Attributes and Elements  
@@ -80,60 +84,57 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netNamedPipeBinding binding and change some of its settings, you must define a binding configuration. The endpoint must reference the binding configuration by name with a `bindingConfiguration` attribute. In this example, the binding configuration is named Binding1.  
   
 ```xml  
-<configuration>  
-  <system.serviceModel>  
-    <services>  
-      <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
-               behaviorConfiguration="CalculatorServiceBehavior">  
-        <host>  
-          <baseAddresses>  
-            <add baseAddress="http://localhost:8000/ServiceModelSamples/service"/>  
-          </baseAddresses>  
-        </host>  
-        <!-- this endpoint is exposed at the base address provided by host: net.pipe://localhost/ServiceModelSamples/service  -->  
-        <endpoint address="net.pipe://localhost/ServiceModelSamples/service"  
-                  binding="netNamedPipeBinding"  
-                  contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-        <!-- the mex endpoint is exposed at http://localhost:8000/ServiceModelSamples/service/mex -->  
-        <endpoint address="mex"  
-                  binding="mexHttpBinding"  
-                  contract="IMetadataExchange" />  
-      </service>  
-    </services>  
-  
-    <bindings>  
-      <netNamedPipeBinding>  
-        <binding   
-                 closeTimeout="00:01:00"  
-                 openTimeout="00:01:00"   
-                 receiveTimeout="00:10:00"   
-                 sendTimeout="00:01:00"  
-                 transactionFlow="false"   
-                 transferMode="Buffered"   
-                 transactionProtocol="OleTransactions"  
-                 hostNameComparisonMode="StrongWildcard"   
-                 maxBufferPoolSize="524288"  
-                 maxBufferSize="65536"   
-                 maxConnections="10"   
-                 maxReceivedMessageSize="65536">  
-          <security mode="Transport">  
-            <transport protectionLevel="EncryptAndSign" />  
-          </security>  
-        </binding>  
-      </netNamedPipeBinding>  
-    </bindings>  
-  
-    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
-    <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata httpGetEnabled="True"/>  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
-  </system.serviceModel>  
-</configuration>  
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+               behaviorConfiguration="CalculatorServiceBehavior">
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:8000/ServiceModelSamples/service" />
+          </baseAddresses>
+        </host>
+        <!-- this endpoint is exposed at the base address provided by host: net.pipe://localhost/ServiceModelSamples/service  -->
+        <endpoint address="net.pipe://localhost/ServiceModelSamples/service"
+                  binding="netNamedPipeBinding"
+                  contract="Microsoft.ServiceModel.Samples.ICalculator" />
+        <!-- the mex endpoint is exposed at http://localhost:8000/ServiceModelSamples/service/mex -->
+        <endpoint address="mex"
+                  binding="mexHttpBinding"
+                  contract="IMetadataExchange" />
+      </service>
+    </services>
+    <bindings>
+      <netNamedPipeBinding>
+        <binding closeTimeout="00:01:00"
+                 openTimeout="00:01:00"
+                 receiveTimeout="00:10:00"
+                 sendTimeout="00:01:00"
+                 transactionFlow="false"
+                 transferMode="Buffered"
+                 transactionProtocol="OleTransactions"
+                 hostNameComparisonMode="StrongWildcard"
+                 maxBufferPoolSize="524288"
+                 maxBufferSize="65536"
+                 maxConnections="10"
+                 maxReceivedMessageSize="65536">
+          <security mode="Transport">
+            <transport protectionLevel="EncryptAndSign" />
+          </security>
+        </binding>
+      </netNamedPipeBinding>
+    </bindings>
+    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="CalculatorServiceBehavior">
+          <serviceMetadata httpGetEnabled="True" />
+          <serviceDebug includeExceptionDetailInFaults="False" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+</configuration>
 ```  
   
 ## See Also  

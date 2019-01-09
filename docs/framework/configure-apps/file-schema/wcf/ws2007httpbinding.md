@@ -13,40 +13,42 @@ Defines an interoperable binding that provides support for the correct versions 
 ## Syntax  
   
 ```xml  
-<ws2007HttpBinding>  
-    <binding   
-        allowCookies="Boolean"  
-        bypassProxyOnLocal="Boolean"  
-        closeTimeout="TimeSpan"  
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        messageEncoding="Text/Mtom"   
-                name="string"  
-        openTimeout="TimeSpan"   
-        proxyAddress="URI"  
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-  
-textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-        transactionFlow="Boolean"  
-        useDefaultWebProxy="Boolean">  
-        <reliableSession ordered="Boolean"  
-           inactivityTimeout="TimeSpan"  
-           enabled="Boolean" />  
-        <security mode="Message/None/Transport/TransportWithCredential">  
-           <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                realm="string"   
-                                />  
-          <message clientCredentialType ="Certificate/IssuedToken/None/UserName/Windows"  
-           negotiateServiceCredential="Boolean"  
-           algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-           establishSecurityContext="Boolean"   
-           negotiateServiceCredential="Boolean"/>  
-        </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</ws2007HttpBinding>  
+<ws2007HttpBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxReceivedMessageSize="Integer"
+           messageEncoding="Text/Mtom"
+           name="string"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transactionFlow="Boolean"
+           useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <security mode="Message/None/Transport/TransportWithCredential">
+      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 realm="string" />
+        <message clientCredentialType ="Certificate/IssuedToken/None/UserName/Windows"
+                 negotiateServiceCredential="Boolean"
+                 algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+                 establishSecurityContext="Boolean"
+                 negotiateServiceCredential="Boolean" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</ws2007HttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -92,40 +94,39 @@ textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
 ## Example  
   
 ```xml  
-<configuration>  
-    <system.ServiceModel>  
-        <bindings>  
-            <ws2007HttpBinding>  
-                <binding   
-                    closeTimeout="00:00:10"  
-                    openTimeout="00:00:20"   
-                    receiveTimeout="00:00:30"  
-                    sendTimeout="00:00:40"  
-                    bypassProxyOnLocal="false"  
-                    transactionFlow="false"   
-                    hostNameComparisonMode="WeakWildcard"  
-                    maxReceivedMessageSize="1000"  
-                    messageEncoding="Mtom"   
-                    proxyAddress="http://www.contoso.com"  
-                    textEncoding="utf-16"  
-                    useDefaultWebProxy="false">  
-                    <reliableSession ordered="false"  
-                         inactivityTimeout="00:02:00"  
-                         enabled="true" />  
-                    <security mode="Transport">  
-                         <transport clientCredentialType="Digest"  
-                            proxyCredentialType="None"  
-                            realm="someRealm" />  
-                         <message clientCredentialType="Windows"  
-                            negotiateServiceCredential="false"  
-                            algorithmSuite="Aes128"   
-                            defaultProtectionLevel="None" />  
-                    </security>  
-                </binding>  
-           </ws2007HttpBinding>  
-        </bindings>  
-    </system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <ws2007HttpBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 bypassProxyOnLocal="false"
+                 transactionFlow="false"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://www.contoso.com"
+                 textEncoding="utf-16"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="Transport">
+            <transport clientCredentialType="Digest"
+                       proxyCredentialType="None"
+                       realm="someRealm" />
+            <message clientCredentialType="Windows"
+                     negotiateServiceCredential="false"
+                     algorithmSuite="Aes128"
+                     defaultProtectionLevel="None" />
+          </security>
+        </binding>
+      </ws2007HttpBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## See Also  

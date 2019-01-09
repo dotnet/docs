@@ -13,10 +13,16 @@ Represents a configuration section for defining a backup list that enumerates a 
   
 ## Syntax  
   
-```xml 
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
-```
-
+```xml  
+<routing>
+  <backupLists>
+    <backupList name="String">
+      <add endpointName="String" />
+    </backupList>
+  </backupLists>
+</routing>
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -46,17 +52,19 @@ Represents a configuration section for defining a backup list that enumerates a 
  In the following example, if a send to the primary endpoint named "Destination" returns a communication exception, the service will attempt to send the message to the "alternateServiceQueue". If this attempt also returns a communication exception, the Routing Service will attempt to send the message to the next endpoint in the collection.  
   
 ```xml  
-<filterTables>  
-     <filterTable name="filterTable1">  
-          <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  
-     </filterTable>  
-</filterTables>  
-<backupLists>  
-     <backupList name="backupEndpointList">  
-          <add endpointName="backupServiceQueue" />  
-          <add endpointName="alternateServiceQueue" />  
-     </backupList>  
-</backupLists>  
+<filterTables>
+  <filterTable name="filterTable1">
+    <add filterName="MatchAllFilter1"
+         endpointName="Destination"
+         backupList="backupEndpointList" />
+  </filterTable>
+</filterTables>
+<backupLists>
+  <backupList name="backupEndpointList">
+    <add endpointName="backupServiceQueue" />
+    <add endpointName="alternateServiceQueue" />
+  </backupList>
+</backupLists>
 ```  
   
 ## See Also  

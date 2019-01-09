@@ -10,48 +10,48 @@ This configuration section represents the configuration settings for the SMSvcHo
  The following is a sample configuration file (SMSvcHost.exe.config), which is used by the listener process SMSvcHost.exe.  
   
 ```xml  
-<configuration>  
-   <runtime>  
-      <gcConcurrent enabled="false" />  
-   </runtime>  
-   <system.serviceModel.activation>  
-       <net.tcp listenBacklog="10"  
-          maxPendingAccepts="2"  
-          maxPendingConnections="100"  
-          receiveTimeout="00:00:10"  
-          teredoEnabled="false">  
-          <allowAccounts>  
-             <!-- LocalSystem account -->  
-             <add securityIdentifier="S-1-5-18"/>  
-             <!-- LocalService account -->  
-             <add securityIdentifier="S-1-5-19"/>  
-             <!-- Network Service account -->  
-            <add securityIdentifier="S-1-5-20"/>   
-             <!-- Administrators account -->  
-            <add securityIdentifier="S-1-5-32-544" />   
-             <!-- IIS_IUSRS account (Vista only) -->  
-             <add securityIdentifier="S-1-5-32-568"/>  
-           </allowAccounts>  
-       </net.tcp>  
-       <net.pipe maxConnectionsPendingDispatch="100"  
-          maxPendingAccepts="2"  
-          receiveTimeout="00:00:10">  
-          <allowAccounts>  
-             <!-- LocalSystem account -->  
-             <add securityIdentifier="S-1-5-18"/>  
-             <!-- LocalService account -->  
-             <add securityIdentifier="S-1-5-19"/>  
-             <!-- Network Service account -->  
-            <add securityIdentifier="S-1-5-20"/>   
-             <!-- Administrators account -->  
-            <add securityIdentifier="S-1-5-32-544" />   
-             <!-- IIS_IUSRS account (Vista only) -->  
-             <add securityIdentifier="S-1-5-32-568"/>  
-           </allowAccounts>  
-       </net.pipe>  
-       <diagnostics performanceCountersEnabled="true" />  
-   </system.serviceModel.activation>  
-</configuration>  
+<configuration>
+  <runtime>
+    <gcConcurrent enabled="false" />
+  </runtime>
+  <system.serviceModel.activation>
+    <net.tcp listenBacklog="10"
+             maxPendingAccepts="2"
+             maxPendingConnections="100"
+             receiveTimeout="00:00:10"
+             teredoEnabled="false">
+      <allowAccounts>
+        <!-- LocalSystem account -->
+        <add securityIdentifier="S-1-5-18"/>
+        <!-- LocalService account -->
+        <add securityIdentifier="S-1-5-19"/>
+        <!-- Network Service account -->
+        <add securityIdentifier="S-1-5-20"/>
+        <!-- Administrators account -->
+        <add securityIdentifier="S-1-5-32-544" />
+        <!-- IIS_IUSRS account (Vista only) -->
+        <add securityIdentifier="S-1-5-32-568"/>
+      </allowAccounts>
+    </net.tcp>
+    <net.pipe maxConnectionsPendingDispatch="100"
+              maxPendingAccepts="2"
+              receiveTimeout="00:00:10">
+      <allowAccounts>
+        <!-- LocalSystem account -->
+        <add securityIdentifier="S-1-5-18" />
+        <!-- LocalService account -->
+        <add securityIdentifier="S-1-5-19" />
+        <!-- Network Service account -->
+        <add securityIdentifier="S-1-5-20" />
+        <!-- Administrators account -->
+        <add securityIdentifier="S-1-5-32-544" />
+        <!-- IIS_IUSRS account (Vista only) -->
+        <add securityIdentifier="S-1-5-32-568" />
+      </allowAccounts>
+    </net.pipe>
+    <diagnostics performanceCountersEnabled="true" />
+  </system.serviceModel.activation>
+</configuration>
 ```  
   
 ## See Also  

@@ -15,20 +15,18 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 ## Syntax  
   
 ```xml  
-<security mode="Message/None/Transport/TransportWithMessageCredential">  
-   <transport  
-         clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-      proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-      realm="string"   
-      defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-      defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-      defaultRealm="string" />  
-   <message  
-            clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-       establishSecurityContext="Boolean"   
-      negotiateServiceCredential="Boolean"/>  
-</security>  
+<security mode="Message/None/Transport/TransportWithMessageCredential">
+  <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+             proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+             realm="String"
+             defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+             defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+             defaultRealm="String" />
+  <message clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"
+           algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+           establishSecurityContext="Boolean"
+           negotiateServiceCredential="Boolean" />
+</security>
 ```  
   
 ## Attributes and Elements  

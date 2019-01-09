@@ -15,17 +15,18 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```xml  
-<workflowRuntime cachedInstanceExpiration="TimeSpan"  
-                                  enablePerformanceCounters="Boolean"  
-                                  name="String"  
-                                  validateOnCreate="Boolean">  
-                 <commonParameters>  
-                    <add name="String" value="String" />  
-                 </commonParameters>  
-                 <services>  
-                    <add type="String"/>  
-                 </services>  
-</workflowRuntime>  
+<workflowRuntime cachedInstanceExpiration="TimeSpan"
+                 enablePerformanceCounters="Boolean"
+                 name="String"
+                 validateOnCreate="Boolean">
+  <commonParameters>
+    <add name="String"
+         value="String" />
+  </commonParameters>
+  <services>
+    <add type="String" />
+  </services>
+</workflowRuntime>
 ```  
   
 ## Attributes and Elements  
@@ -59,21 +60,21 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Example  
   
 ```xml  
-<serviceBehaviors>  
-   <behavior name="ServiceBehavior">  
-      <workflowRuntime name="WorkflowServiceHostRuntime"  
-                       validateOnCreate="true"  
-                       enablePerformanceCounters="true">  
-         <commonParameters>  
-            <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />  
-            <add name="EnableRetries" value="True" />  
-         </commonParameters>  
-         <services>  
-             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>  
-         </services>  
-      </workflowRuntime>  
-   </behavior>  
-</serviceBehaviors>  
+<serviceBehaviors>
+   <behavior name="ServiceBehavior">
+      <workflowRuntime name="WorkflowServiceHostRuntime"
+                       validateOnCreate="true"
+                       enablePerformanceCounters="true">
+         <commonParameters>
+            <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />
+            <add name="EnableRetries" value="True" />
+         </commonParameters>
+         <services>
+             <add type="NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common.TestPersistenceService.FilePersistenceService, NetFx.Checkin.Scenario.WorkflowServices.WorkflowBasedServices.Common"/>
+         </services>
+      </workflowRuntime>
+   </behavior>
+</serviceBehaviors>
 ```  
   
 ## See Also  

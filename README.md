@@ -10,7 +10,7 @@ Issues and tasks for all three of those repositories are tracked here. We have a
 
 We welcome contributions to help us improve and complete the .NET docs. To contribute, see the [Projects for .NET Community Contributors](https://github.com/dotnet/docs/projects/35) for ideas. The [Contributing Guide](CONTRIBUTING.md) has instructions on procedures we use. Or, check the [issues list](https://github.com/dotnet/docs/issues) for tasks that interest you.
 
-We anticipate that [Xamarin](https://docs.microsoft.com/xamarin), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](http://docs.unity3d.com/Manual/index.html) will also use this documentation.
+We anticipate that [Xamarin](https://docs.microsoft.com/xamarin), [Mono](http://docs.go-mono.com/?link=root%3a%2fclasslib) and [Unity](https://docs.unity3d.com/Manual/index.html) will also use this documentation.
 
 This project has adopted the code of conduct defined by the Contributor Covenant
 to clarify expected behavior in our community.

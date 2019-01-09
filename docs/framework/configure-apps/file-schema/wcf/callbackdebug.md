@@ -15,7 +15,7 @@ Specifies service debugging for a Windows Communication Foundation (WCF) callbac
 ## Syntax  
   
 ```xml  
-<callbackDebug  includeExceptionDetailInFaults="Boolean" />  
+<callbackDebug includeExceptionDetailInFaults="Boolean" />
 ```  
   
 ## Type  

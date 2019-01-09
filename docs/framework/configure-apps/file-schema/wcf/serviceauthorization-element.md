@@ -15,15 +15,14 @@ Specifies settings that authorize access to service operations
 ## Syntax  
   
 ```xml  
-<serviceAuthorization  
-     impersonateCallerForAllOperations="Boolean"  
-      principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"  
-      roleProviderName="String"  
-      serviceAuthorizationManagerType="String" />  
-      <authorizationPolicies>  
-         <add policyType="String" />  
-      </authorizationPolicies>  
-</serviceAuthorization>  
+<serviceAuthorization impersonateCallerForAllOperations="Boolean"
+                      principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"
+                      roleProviderName="String"
+                      serviceAuthorizationManagerType="String">
+  <authorizationPolicies>
+    <add policyType="String" />
+  </authorizationPolicies>
+</serviceAuthorization>
 ```  
   
 ## Attributes and Elements  
@@ -56,37 +55,36 @@ Specifies settings that authorize access to service operations
  The `principalPermissionMode` attribute specifies the groups of users to use when authorizing use of a protected method. The default value is `UseWindowsGroups` and specifies that Windows groups, such as "Administrators" or "Users," are searched for an identity trying to access a resource. You can also specify `UseAspNetRoles` to use a custom role provider that is configured under the \<system.web> element, as shown in the following code.  
   
 ```xml  
-<system.web>  
-  <membership defaultProvider="SqlProvider"   
-   userIsOnlineTimeWindow="15">  
-     <providers>  
-       <clear />  
-       <add   
-          name="SqlProvider"   
-          type="System.Web.Security.SqlMembershipProvider"   
-          connectionStringName="SqlConn"  
-          applicationName="MembershipProvider"  
-          enablePasswordRetrieval="false"  
-          enablePasswordReset="false"  
-          requiresQuestionAndAnswer="false"  
-          requiresUniqueEmail="true"  
-          passwordFormat="Hashed" />  
-     </providers>  
-   </membership>  
-  <!-- Other configuration code not shown.-->  
-</system.web>  
+<system.web>
+  <membership defaultProvider="SqlProvider"
+              userIsOnlineTimeWindow="15">
+    <providers>
+      <clear />
+      <add name="SqlProvider"
+           type="System.Web.Security.SqlMembershipProvider"
+           connectionStringName="SqlConn"
+           applicationName="MembershipProvider"
+           enablePasswordRetrieval="false"
+           enablePasswordReset="false"
+           requiresQuestionAndAnswer="false"
+           requiresUniqueEmail="true"
+           passwordFormat="Hashed" />
+    </providers>
+  </membership>
+  <!-- Other configuration code not shown. -->
+</system.web>
 ```  
   
  The following code shows the `roleProviderName` used with the `principalPermissionMode` attribute.  
   
 ```xml  
-<behaviors>  
-   <behavior name="ServiceBehaviour">  
-     <serviceAuthorization principalPermissionMode ="UseAspNetRoles"   
-                           roleProviderName ="SqlProvider" />  
-   </behavior>   
-<!-- Other configuration code not shown. -->  
-</behaviors>  
+<behaviors>
+  <behavior name="ServiceBehaviour">
+    <serviceAuthorization principalPermissionMode ="UseAspNetRoles"
+                          roleProviderName ="SqlProvider" />
+  </behavior>
+  <!-- Other configuration code not shown. -->
+</behaviors>
 ```  
   
  For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md) and [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md).  

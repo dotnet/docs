@@ -16,7 +16,7 @@ Specifies a certificate to use when authenticating a service to the client.
 ## Syntax  
   
 ```xml  
-<serviceCertificate />  
+<serviceCertificate />
 ```  
   
 ## Attributes and Elements  

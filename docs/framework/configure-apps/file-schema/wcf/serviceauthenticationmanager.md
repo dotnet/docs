@@ -21,7 +21,7 @@ Provides a workflow configuration element that establishes at the service level 
       <serviceAuthenticationManager serviceAuthenticationManagerType="String" />
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  

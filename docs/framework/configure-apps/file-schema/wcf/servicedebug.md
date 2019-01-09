@@ -15,13 +15,15 @@ Specifies debugging and help information features for a Windows Communication Fo
 ## Syntax  
   
 ```xml  
-<serviceDebug     httpHelpPageBinding="String"    httpHelpPageBindingConfiguration="String"  
-    httpHelpPageEnabled="Boolean"  
-    httpHelpPageUrl="Uri"  
-    httpsHelpPageBinding="String"    httpsHelpPageBindingConfiguration="String"  
-    httpsHelpPageEnabled="Boolean"  
-    httpsHelpPageUrl="Uri"  
-    includeExceptionDetailInFaults="Boolean" />  
+<serviceDebug httpHelpPageBinding="String"
+              httpHelpPageBindingConfiguration="String"
+              httpHelpPageEnabled="Boolean"
+              httpHelpPageUrl="Uri"
+              httpsHelpPageBinding="String"
+              httpsHelpPageBindingConfiguration="String"
+              httpsHelpPageEnabled="Boolean"
+              httpsHelpPageUrl="Uri"
+              includeExceptionDetailInFaults="Boolean" />
 ```  
   
 ## Attributes and Elements  

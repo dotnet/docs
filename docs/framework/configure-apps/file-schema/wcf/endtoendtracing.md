@@ -13,13 +13,13 @@ A configuration element that allows you to enable and disable different aspects 
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-   <diagnostics>  
-       <endToEndTracing activityTracing="Boolean"  
-          messageFlowTracing="Boolean"  
-          propagateActivity="Boolean" />  
-   </diagnostics>  
-</system.serviceModel>  
+<system.serviceModel>
+  <diagnostics>
+    <endToEndTracing activityTracing="Boolean"
+                     messageFlowTracing="Boolean"
+                     propagateActivity="Boolean" />
+  </diagnostics>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

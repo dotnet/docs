@@ -17,9 +17,10 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<authentication customCertificateValidatorType="String" certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"   
-trustedStoreLocation="LocalMachine/CurrentUser" />  
+<authentication customCertificateValidatorType="String"
+                certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"
+                revocationMode="NoCheck/Online/Offline"
+                trustedStoreLocation="LocalMachine/CurrentUser" />
 ```  
   
 ## Attributes and Elements  
@@ -76,19 +77,21 @@ trustedStoreLocation="LocalMachine/CurrentUser" />
  The following example does two tasks. It first specifies a service certificate for the client to use when communicating with endpoints whose domain name is `www.contoso.com` over the HTTP protocol. Second, it specifies the revocation mode and store location used during authentication.  
   
 ```xml  
-<serviceCertificate>  
-  <defaultCertificate findValue="www.contoso.com"   
-                      storeLocation="LocalMachine"  
-                      storeName="TrustedPeople"   
-                      x509FindType="FindByIssuerDistinguishedName" />  
-  <scopedCertificates>  
-     <add targetUri="http://www.contoso.com"   
-          findValue="www.contoso.com" storeLocation="LocalMachine"  
-                  storeName="Root" x509FindType="FindByIssuerName" />  
-  </scopedCertificates>  
-  <authentication revocationMode="Online"   
-   trustedStoreLocation="LocalMachine" />  
-</serviceCertificate>  
+<serviceCertificate>
+  <defaultCertificate findValue="www.contoso.com"
+                      storeLocation="LocalMachine"
+                      storeName="TrustedPeople"
+                      x509FindType="FindByIssuerDistinguishedName" />
+  <scopedCertificates>
+     <add targetUri="http://www.contoso.com"
+          findValue="www.contoso.com"
+          storeLocation="LocalMachine"
+          storeName="Root"
+          x509FindType="FindByIssuerName" />
+  </scopedCertificates>
+  <authentication revocationMode="Online"
+                  trustedStoreLocation="LocalMachine" />
+</serviceCertificate>
 ```  
   
 ## See Also  

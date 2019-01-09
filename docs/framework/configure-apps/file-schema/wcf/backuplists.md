@@ -12,10 +12,16 @@ Represents a configuration section for defining a set of backup services used in
   
 ## Syntax  
   
-```xml
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
-```
-
+```xml  
+<routing>
+  <backupLists>
+    <backupList name="String">
+      <add endpointName="String" />
+    </backupList>
+  </backupLists>
+</routing>
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

@@ -248,10 +248,11 @@ This step-by-step article describes how a system administrator can deploy the [!
   
  Other error codes:  
   
--   [Windows Installer error codes](/windows/desktop/msi/error-codes)  
-  
--   [Windows Update Agent result codes](/security-updates/WindowsUpdateServices/18127055)  
-  
-## See Also  
-- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)  
+-   [Windows Installer error codes](/windows/desktop/msi/error-codes)
+
+-   [Windows Update Agent result codes](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720442(v=ws.10))
+
+## See also
+
+- [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)
 - [System Requirements](../../../docs/framework/get-started/system-requirements.md)

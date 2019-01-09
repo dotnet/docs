@@ -306,9 +306,10 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets how long a connection can be idle in the pool to be considered reusable.</summary>
+        <value>The maximum idle time for a connection in the pool. The default value for this property is 2 minutes.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified is less than <see cref="F:System.TimeSpan.Zero" /> or is equal to <see cref="F:System.Threading.Timeout.InfiniteTimeSpan" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="PooledConnectionLifetime">

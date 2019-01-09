@@ -24,12 +24,11 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
                 maxBufferSize="Integer"
                 maxReceivedMessageSize="Integer"
                 proxyAddress="Uri"
-                proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"
+                proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous/IntegratedWindowsAuthentication"
                 realm="String"
                 requireClientCertificate="Boolean"
                 transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
                 unsafeConnectionNtlmAuthentication="Boolean"
-                ...
                 useDefaultWebProxy="Boolean" />
 ```  
   

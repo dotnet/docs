@@ -21,7 +21,7 @@ ms.assetid: 0200de01-7e2f-45c4-9094-829d61236383
   
 #### Parameters  
  cref = " `member`"  
- A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML.Place *member* within double quotation marks (" ").  
+ A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and passes `member` to the element name in the output XML. Place *member* within double quotation marks (" ").  
   
 ## Remarks  
  The \<see> tag lets you specify a link from within text. Use [\<seealso>](../../../csharp/programming-guide/xmldoc/seealso.md) to indicate that text should be placed in a See Also section. Use the [cref Attribute](../../../csharp/programming-guide/xmldoc/cref-attribute.md) to create internal hyperlinks to documentation pages for code elements.  

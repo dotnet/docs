@@ -1,5 +1,5 @@
 ---
-title: Lazy Computations (F#)
+title: Lazy Computations
 description: Learn how F# lazy computations can improve the performance of your apps and libraries.
 ms.date: 05/16/2016
 ---

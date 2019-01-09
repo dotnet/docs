@@ -1,2 +1,2 @@
-                CoOrds p1 = new CoOrds();
-                CoOrds p2 = new CoOrds(5, 3);
+                Coords p1 = new Coords();
+                Coords p2 = new Coords(5, 3);

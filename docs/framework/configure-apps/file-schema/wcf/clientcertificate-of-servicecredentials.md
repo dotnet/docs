@@ -17,10 +17,10 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
 ## Syntax  
   
 ```xml  
-<clientCertificate>  
- <certificate/>  
- <authentication/>  
-</clientCertificate>  
+<clientCertificate>
+  <certificate />
+  <authentication />
+</clientCertificate>
 ```  
   
 ## Attributes and Elements  

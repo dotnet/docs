@@ -1,5 +1,5 @@
 ---
-title: Exception Handling (F#)
+title: Exception Handling
 description: Learn the basics of exception handling in F# and find links to exception handling expressions and functions.
 ms.date: 05/16/2016
 ---
@@ -7,12 +7,10 @@ ms.date: 05/16/2016
 
 This section contains information about exception handling support in the F# language.
 
-
 ## Exception Handling Basics
 Exception handling is the standard way of handling error conditions in the .NET Framework. Thus, any .NET language must support this mechanism, including F#. An *exception* is an object that encapsulates information about an error. When errors occur, exceptions are raised and regular execution stops. Instead, the runtime searches for an appropriate handler for the exception. The search starts in the current function, and proceeds up the stack through the layers of callers until a matching handler is found. Then the handler is executed.
 
 In addition, as the stack is unwound, the runtime executes any code in `finally` blocks, to guarantee that objects are cleaned up correctly during the unwinding process.
-
 
 ## Related Topics
 

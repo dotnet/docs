@@ -18,7 +18,7 @@ for (int i = 65; i < 123; i++)
 }
 ```
 
-The expression in square brackets must be implicitly convertible to `int`, `uint`, `long`, or `ulong`. The operation p[e] is equivalent to \*(p+e). Like C and C++, the pointer element access does not check for out-of-bounds errors.
+The expression in square brackets must be implicitly convertible to `int`, `uint`, `long`, or `ulong`. The operation `p[e]` is equivalent to `*(p+e)`. Like C and C++, the pointer element access does not check for out-of-bounds errors.
 
 ## Example
 

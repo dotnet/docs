@@ -40,6 +40,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/porting/nuget-packages.md",
+            "redirect_url": "/dotnet/core/packages"
+        },
+        {
             "source_path": "docs/core/preview3/deploying/index.md",
             "redirect_url": "/dotnet/core/deploying",
             "redirect_document_id": true
@@ -53,10 +57,6 @@
             "source_path": "docs/core/preview3/tools/dependencies.md",
             "redirect_url": "/dotnet/core/tools/dependencies",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/core/preview3/tools/dotnet.md",
-            "redirect_url": "/dotnet/core/tools/dotnet"
         },
         {
             "source_path": "docs/core/preview3/tools/dotnet-add-package.md",
@@ -150,6 +150,10 @@
             "redirect_url": "/dotnet/core/tools/dotnet-test"
         },
         {
+            "source_path": "docs/core/preview3/tools/dotnet.md",
+            "redirect_url": "/dotnet/core/tools/dotnet"
+        },
+        {
             "source_path": "docs/core/preview3/tools/extensibility.md",
             "redirect_url": "/dotnet/core/tools/extensibility"
         },
@@ -181,34 +185,26 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/core/preview3/tutorials/using-on-windows.md",
-            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
-        },
-        {
-            "source_path": "docs/csharp/getting-started/with-visual-studio.md",
-            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+            "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
+            "redirect_url": "/dotnet/core/tutorials/using-on-windows-full-solution",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
-            "source_path": "docs/core/whats-new/whats-new-in-core-20.md",
-            "redirect_url": "/dotnet/core/whats-new/dotnet-core-2-0"
+            "source_path": "docs/core/preview3/tutorials/using-on-windows.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
-            "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
-            "redirect_url": "/dotnet/core/tutorials/using-on-windows-full-solution",
+            "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild-folders.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-with-cli",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md",
             "redirect_url": "/dotnet/core/tutorials/using-with-xplat-cli",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild-folders.md",
-            "redirect_url": "/dotnet/core/tutorials/testing-with-cli",
             "redirect_document_id": true
         },
         {
@@ -229,6 +225,10 @@
             "redirect_url": "/dotnet/core/tools/dotnet-test"
         },
         {
+            "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
+            "redirect_url": "/dotnet/core/tutorials"
+        },
+        {
             "source_path": "docs/core/tutorials/libraries-with-vs.md",
             "redirect_url": "/dotnet/csharp/getting-started/library-with-visual-studio"
         },
@@ -241,12 +241,28 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/core/versions/install-management.md",
+            "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
+        },
+        {
             "source_path": "docs/core/versions/lts-current.md",
             "redirect_url": "https://www.microsoft.com/net/Support/Policy"
         },
         {
-            "source_path": "docs/core/versions/install-management.md",
-            "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
+            "source_path": "docs/core/versions/servicing.md",
+            "redirect_url": "/dotnet/core/versions"
+        },
+        {
+            "source_path": "docs/core/versions/version-history.md",
+            "redirect_url": "/dotnet/core/versions/selection"
+        },
+        {
+            "source_path": "docs/core/whats-new/whats-new-in-core-20.md",
+            "redirect_url": "/dotnet/core/whats-new/dotnet-core-2-0"
+        },
+        {
+            "source_path": "docs/csharp/classes.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/classes"
         },
         {
             "source_path": "docs/csharp/csharp-6.md",
@@ -257,6 +273,10 @@
             "source_path": "docs/csharp/csharp-7.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/csharp.md",
+            "redirect_url": "/dotnet/csharp"
         },
         {
             "source_path": "docs/csharp/features.md",
@@ -272,12 +292,16 @@
         },
         {
             "source_path": "docs/csharp/getting-started/breaking-changes-in-visual-studio-2013.md",
-            "redirect_url": "https://msdn.microsoft.com/library/hh678682(v=vs.120)"
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/hh678682(v=vs.120)"
         },
         {
             "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/getting-started/consuming-library-with-visual-studio",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
         },
         {
             "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",
@@ -288,20 +312,30 @@
             "redirect_url": "/dotnet/core/tutorials/debugging-with-visual-studio"
         },
         {
+            "source_path": "docs/csharp/getting-started/getting-started-with-csharp.md",
+            "redirect_url": "/dotnet/csharp/getting-started"
+        },
+        {
             "source_path": "docs/csharp/getting-started/library-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/getting-started/library-with-visual-studio",
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/csharp/getting-started/library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
             "source_path": "docs/csharp/getting-started/publishing-with-visual-studio-2017.md",
             "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
         },
-
         {
             "source_path": "docs/csharp/getting-started/publishing-with-visual-studio.md",
             "redirect_url": "/dotnet/core/tutorials/publishing-with-visual-studio"
         },
-
+        {
+            "source_path": "docs/csharp/getting-started/testing-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio"
+        },
         {
             "source_path": "docs/csharp/getting-started/whats-new.md",
             "redirect_url": "/dotnet/csharp/whats-new/index"
@@ -317,8 +351,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/csharp/interactive.md",
-            "redirect_url": "/dotnet/csharp/index"
+            "source_path": "docs/csharp/getting-started/with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
             "source_path": "docs/csharp/interactive-with-bash.md",
@@ -333,12 +367,32 @@
             "redirect_url": "/dotnet/csharp/index"
         },
         {
+            "source_path": "docs/csharp/interactive.md",
+            "redirect_url": "/dotnet/csharp/index"
+        },
+        {
             "source_path": "docs/csharp/interfaces.md",
             "redirect_url": "/dotnet/csharp/programming-guide/interfaces/index"
         },
         {
             "source_path": "docs/csharp/interop.md",
             "redirect_url": "/dotnet/csharp/programming-guide/interop/index"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
+            "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/false-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/interpolated-strings.md",
+            "redirect_url": "/dotnet/csharp/language-reference/tokens/interpolated"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-false-operators"
         },
         {
             "source_path": "docs/csharp/language-reference/operators/modulus-assignment-operator.md",
@@ -349,8 +403,28 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/remainder-operator"
         },
         {
+            "source_path": "docs/csharp/language-reference/operators/null-conditional-operator.md",
+            "redirect_url": "/dotnet/csharp/language-reference/operators/null-coalescing-operator"
+        },
+        {
+            "source_path": "docs/csharp/methods-lambda-expressions.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+        },
+        {
             "source_path": "docs/csharp/namespaces-and-assemblies.md",
             "redirect_url": "/dotnet/csharp/programming-guide/namespaces/index"
+        },
+        {
+            "source_path": "docs/csharp/parallel.md",
+            "redirect_url": "/dotnet/standard/parallel-programming/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/arrays"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
@@ -361,8 +435,49 @@
             "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2#attaching-vs-cloning"
         },
         {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
+            "redirect_url": "/dotnet/api/system.threading.threadpool.queueuserworkitem"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/index.md",
+            "redirect_url": "/dotnet/standard/threading/"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/multithreaded-applications.md",
+            "redirect_url": "/dotnet/standard/threading/using-threads-and-threading"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md",
+            "redirect_url": "/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/thread-pooling.md",
+            "redirect_url": "/dotnet/standard/threading/the-managed-thread-pool"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/thread-synchronization.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/thread-timers.md",
+            "redirect_url": "/dotnet/standard/threading/timers"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md",
+            "redirect_url": "/dotnet/api/system.componentmodel.backgroundworker"
+        },
+        {
             "source_path": "docs/csharp/programming-guide/exceptions/exceptions-and-exception-handling.md",
             "redirect_url": "/dotnet/csharp/programming-guide/exceptions/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md",
+            "redirect_url": "/dotnet/standard/generics/index"
         },
         {
             "source_path": "docs/csharp/programming-guide/interop/interoperability.md",
@@ -449,6 +564,135 @@
             "redirect_url": "/dotnet/csharp/programming-guide/main-and-command-args/index"
         },
         {
+            "source_path": "docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/operator"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-compare-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/compare-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
+            "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
+            "redirect_url": "/dotnet/standard/base-types/parsing-datetime"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc165448(v=vs.120)"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc488002(v=vs.120)"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-modify-string-contents.md",
+            "redirect_url": "/dotnet/csharp/how-to/modify-string-contents"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
+            "redirect_url": "/dotnet/csharp/how-to/parse-strings-using-split"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md",
+            "redirect_url": "/dotnet/csharp/how-to/search-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md",
+            "redirect_url": "/dotnet/csharp/how-to/search-strings"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/types/how-to-safely-cast-using-as-and-is-operators.md",
+            "redirect_url": "/dotnet/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators"
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/arrays-and-collections.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/arrays-and-collections",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/branches-and-loops-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops-local",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/branches-and-loops.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/hello-world.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/index.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings-local",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/list-collection.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/local-environment.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/local-environment",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/numbers-in-csharp-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/quick-starts/numbers-in-csharp.md",
+            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/csharp/reference-semantics-with-value-types.md",
+            "redirect_url": "/dotnet/csharp/write-safe-efficient-code"
+        },
+        {
+            "source_path": "docs/csharp/reflection.md",
+            "redirect_url": "/dotnet/framework/reflection-and-codedom"
+        },
+        {
+            "source_path": "docs/csharp/roslyn/index.md",
+            "redirect_url": "/dotnet/csharp/roslyn-sdk/"
+        },
+        {
+            "source_path": "docs/csharp/tutorials/microservices.md",
+            "redirect_url": "/dotnet/core/docker/",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "docs/csharp/type-system.md",
             "redirect_url": "/dotnet/csharp/programming-guide/types/index"
         },
@@ -470,12 +714,20 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb882676(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/data/wcf/writing-a-windows-store-app-that-consumes-an-odata-service.md",
+            "redirect_url": "/dotnet/framework/data/wcf/"
+        },
+        {
             "source_path": "docs/framework/deployment/repair.md",
             "redirect_url": "/dotnet/framework/install/repair"
         },
         {
-            "source_path": "docs/framework/deployment/windows/index.md",
-            "redirect_url": "/dotnet/framework/install/"
+            "source_path": "docs/framework/deployment/windows/10.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-10"
         },
         {
             "source_path": "docs/framework/deployment/windows/7.md",
@@ -486,8 +738,12 @@
             "redirect_url": "/dotnet/framework/install/on-windows-8"
         },
         {
-            "source_path": "docs/framework/deployment/windows/10.md",
-            "redirect_url": "/dotnet/framework/install/on-windows-10"
+            "source_path": "docs/framework/deployment/windows/index.md",
+            "redirect_url": "/dotnet/framework/install/"
+        },
+        {
+            "source_path": "docs/framework/deployment/windows/installing-dotnet-35-windows-10.md",
+            "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
         },
         {
             "source_path": "docs/framework/deployment/windows/vista.md",
@@ -496,10 +752,6 @@
         {
             "source_path": "docs/framework/deployment/windows/xp.md",
             "redirect_url": "/dotnet/framework/install/on-windows-xp"
-        },
-        {
-            "source_path": "docs/framework/deployment/windows/installing-dotnet-35-windows-10.md",
-            "redirect_url": "/dotnet/framework/install/dotnet-35-windows-10"
         },
         {
             "source_path": "docs/framework/docker/aspnetmvc.md",
@@ -539,18 +791,6 @@
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
-            "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
-            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
-        },
-        {
-            "source_path": "docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
-            "redirect_url": "/dotnet/framework/migration-guide//retargeting/4.6.1-4.6.2"
-        },
-        {
-            "source_path": "docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
-        },
-        {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
             "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
         },
@@ -585,6 +825,18 @@
         {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-minfreememorypercentagetoactiveservice-configuration-setting.md",
             "redirect_url": "/dotnet/framework/migration-guide/runtime/4.5-4.5.1"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
+            "redirect_url": "/dotnet/framework/migration-guide//retargeting/4.6.1-4.6.2"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/mitigation-cspparameters-parentwindowhandle-expects-an-hwnd.md",
+            "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.2-4.7"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/net-compatibility-diagnostics.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
@@ -635,21 +887,154 @@
             "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
         },
         {
-            "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
-            "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
-        },
-        {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
         },
         {
-            "source_path": "docs/standard/design-guidelines/dispose-pattern.md",
-             "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+            "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
+            "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path": "docs/framework/wcf/diagnostics/etw/monitoring-service-operation-failures.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff468239(v=vs.100)"
         },
         {
             "source_path": "docs/framework/wcf/extending/extending-wcf.md",
             "redirect_url": "/dotnet/framework/wcf/extending/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/accessing-identity-information-inside-a-workflow-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff452450(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/accessing-operationcontext-from-a-workflow-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff452697(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/content-based-correlation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee358755(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/context-exchange-correlation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee358724(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729672(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729688(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/migrate-asp-net-web-service-client-to-wcf.md",
+            "redirect_url": "/dotnet/framework/wcf/feature-details/adopting-wcf"
+        },
+        {
+            "source_path": "docs/framework/wcf/feature-details/migrate-asp-net-web-service-to-wcf.md",
+            "redirect_url": "/dotnet/framework/wcf/feature-details/adopting-wcf"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/advanced-error-handling.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee667251(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/advanced-filters.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee667249(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/advanced-format-selection.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662965(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/aspnetrouteintegration.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662952(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/asynchronous-find-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd483344(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/automatic-format-selection.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662964(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md",
+            "redirect_url": "/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/basic-resource-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662954(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/bridging-and-error-handling.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee667246(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/bytestream-encoder.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960169(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/conditional-get-and-put.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee818665(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/configuration-based-activation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807499(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/custom-demux.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ms752265(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/customdiscoverymetadata.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd764464(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/discover-a-service-with-unique-listen-uri-mode-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee530015(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/discovery-binding-element-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807387(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/discovery-extensibility.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807503(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/discovery-proxy-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807497(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/dynamic-reconfiguration.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee667250(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/form-post.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee818241(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/hierarchical-configuration-model.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee663221(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/http-acknowledgement-channel.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960152(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/receivecontext-enabled-wcf-channels.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee534020(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/transacted-batching.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/aa395219(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/wcf/samples/web-extensibility.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee818234(v%3dvs.100)"
         },
         {
             "source_path": "docs/framework/wcf/windows-communication-foundation.md",
@@ -659,6 +1044,394 @@
             "source_path": "docs/framework/whats-new/whats-new.md",
             "redirect_url": "/dotnet/framework/whats-new/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/activity-localization.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee829486(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/determining-workflow-execution-duration-using-tracing.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff462013(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/projects-targeting-dotnet-in-vs.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff729671(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/absolute-delay.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff522352(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/activity-relationships-validation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee622980(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/advanced-policy.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960219(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/auto-confirm-pattern.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd744849(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/basic-activity-composition.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759028(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807498(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/basic-usage-of-sendparameters-and-receiveparameters-activities.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807376(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/basic-validation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759026(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/basic-xaml-only-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807390(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/bookmarks.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd744843(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/buffered-receive.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee834509(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/built-in-configuration.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee622978(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807518(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/channel-caching-with-send.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee834525(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/commentout-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee661651(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/compensable-activity-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd483327(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/compensation-samples.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd483320(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/composite.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759022(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/conditioned-activity-group.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960226(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/confirmation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807507(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/constraint-types.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759025(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/content-based-correlation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807508(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/correlated-calculator.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807391(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/custom-activity-to-switch-on-a-range-of-values.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797581(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/custom-compensation-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd483319(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/durable-delay-in-xamlx.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee834527(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/durable-delay.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807379(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/durable-duplex.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662960(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/dynamic-arguments.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee663219(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/dynamicactivity-creation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807392(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/emulating-breaking-in-a-while-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807393(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/entity-activities.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee622984(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/execute-a-workflow-in-an-imperative-transactionscope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759027(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/execution-properties.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd744845(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/exposing-and-invoking-activityactions.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759023(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/expressions.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd699761(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/external-activity-validation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee663223(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/extract-wf-data-using-tracking.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662966(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/for-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd758796(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/formatting-messages-in-workflow-services.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807506(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/getting-started-writing-a-custom-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd744847(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/hello-world-custom-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee624142(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/ifelse-with-rules.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960224(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/interop-with-3-5-rule-set.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee829487(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/invokemethod.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee622976(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/linq-to-objects-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797580(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/linq-to-sql-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797582(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/metadata-store-programmability.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807501(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/migration.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd699764(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee834526(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807512(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/operationscope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee662961(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/order-processing-with-policy.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960217(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/overloadgroups.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd759029(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/persistence.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd699769(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807516(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ff642473(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/rangeenumeration-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797588(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/regular-expression-activities.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797587(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/rules-samples.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960227(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee943756(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/sending-and-handling-faults.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807385(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/services.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd699765(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/simple-policy.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960218(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/sqlstoreextensibility.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee622979(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807384(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/suppress-transaction-scope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee656552(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/toolbox-service.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee834520(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/tracking-using-a-text-file.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee667247(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/transacted-queues.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee835855(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/transaction-convoy-scope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd744846(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/transaction-rollback.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee656553(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/transactions.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd699763(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/usage-of-the-switch-activity-with-custom-types.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee624141(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/use-of-transactedreceivescope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd764465(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-a-net-3-0-or-net-3-5-activity-in-a-net-4-5-workflow.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807505(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-asyncoperationcontext-in-an-activity-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd483304(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-cancellationscope.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807382(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-collection-activities.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807394(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-interop-with-external-data-exchange.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960220(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807377(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md",
+            "redirect_url": "/dotnet/framework/windows-workflow-foundation/samples/built-in-activities"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-the-invokepowershell-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd797586(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807496(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/using-variables-with-dotnet-ruleset.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807380(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/validation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee622981(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee620806(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/workflow-management-endpoint-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd807500(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/workflowapplication-readline-host.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/dd764467(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/samples/xaml-activation.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee960215(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/windows-workflow-foundation/using-the-interop-activity-in-a-net-framework-4-workflow.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee264174(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md",
+            "redirect_url": "/previous-versions/visualstudio/visual-studio-2010/bb384315(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/winforms/advanced/walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time.md",
+            "redirect_url": "/previous-versions/visualstudio/visual-studio-2010/bb384330(v=vs.100)"
         },
         {
             "source_path": "docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md",
@@ -686,15 +1459,102 @@
         },
         {
             "source_path": "docs/fsharp/getting-started-netcore.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/getting-started/getting-started-command-line"
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line"
+        },
+        {
+            "source_path": "docs/fsharp/introduction-to-functional-programming/functions-as-first-class-values.md",
+            "redirect_url": "/dotnet/fsharp/introduction-to-functional-programming/first-class-functions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/code-formatting-guidelines.md",
+            "redirect_url": "/dotnet/fsharp/style-guide/formatting"
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/primitive-types.md",
+            "redirect_url": "/dotnet/fsharp/language-reference/basic-types",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/language-reference/signatures.md",
+            "redirect_url": "/dotnet/fsharp/language-reference/signature-files"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/getting-started-cross-platform-tooling.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/getting-started/getting-started-command-line"
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio-for-mac.md",
+            "redirect_url": "/dotnet/fsharp/get-started/get-started-with-visual-studio-for-mac",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
+            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-vscode.md",
+            "redirect_url": "/dotnet/fsharp/get-started/getting-started-vscode",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/fsharp/tutorials/getting-started/index.md",
             "redirect_url": "/dotnet/fsharp/get-started/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database-entities.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-web-service.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/accessing-an-odata-service.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/generating-fsharp-types-from-dbml.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/tutorials/type-providers/generating-fsharp-types-from-edmx.md",
+            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-in-visual-studio/configuring-projects.md",
+            "redirect_url": "/visualstudio/ide/fsharp-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-in-visual-studio/index.md",
+            "redirect_url": "/visualstudio/ide/fsharp-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md",
+            "redirect_url": "/visualstudio/ide/fsharp-target-older-dotnet-versions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md",
+            "redirect_url": "/visualstudio/ide/fsharp-visual-studio",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/machine-learning/resources/basics.md",
+            "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
             "redirect_document_id": true
         },
         {
@@ -712,6 +1572,10 @@
         {
             "source_path": "docs/standard/about.md",
             "redirect_url": "/dotnet/standard/index"
+        },
+        {
+            "source_path": "docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
+            "redirect_url": "/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap"
         },
         {
             "source_path": "docs/standard/base-types/alternation.md",
@@ -902,6 +1766,10 @@
             "redirect_url": "/dotnet/standard/data/xml/index"
         },
         {
+            "source_path": "docs/standard/design-guidelines/dispose-pattern.md",
+            "redirect_url": "/dotnet/standard/garbage-collection/implementing-dispose"
+        },
+        {
             "source_path": "docs/standard/exceptions.md",
             "redirect_url": "/dotnet/standard/exceptions/",
             "redirect_document_id": true
@@ -961,14 +1829,69 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "docs/standard/portability-analyzer.md",
-            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "docs/standard/microservices-architecture/architect-microservice-container-applications/communication-between-microservices.md",
             "redirect_url": "/dotnet/standard/microservices-architecture/architect-microservice-container-applications/communication-in-microservice-architecture",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/index.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/index"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
+        },
+        {
+            "source_path": "docs/standard/modernize-with-azure-and-containerslift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
+            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
             "source_path": "docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
@@ -976,8 +1899,13 @@
             "redirect_document_id": true
         },
         {
-            "source_path":"docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md",
-            "redirect_url":"/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
+            "source_path": "docs/standard/portability-analyzer.md",
+            "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md",
+            "redirect_url": "/dotnet/standard/serialization/add-element-for-schemaimporterextensions"
         },
         {
             "source_path": "docs/standard/serialization/marshal-by-value.md",
@@ -986,6 +1914,18 @@
         {
             "source_path": "docs/standard/serialization/persistent-storage.md",
             "redirect_url": "/dotnet/standard/serialization-concepts"
+        },
+        {
+            "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
+            "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
+        },
+        {
+            "source_path": "docs/standard/threading/interlocked-operations.md",
+            "redirect_url": "/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path": "docs/standard/threading/reader-writer-locks.md",
+            "redirect_url": "/dotnet/api/system.threading.readerwriterlockslim"
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
@@ -1000,18 +1940,13 @@
             "redirect_url": "/dotnet/samples-and-tutorials/"
         },
         {
-            "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",
-            "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/covariance-contravariance/index",
+            "source_path": "docs/visual-basic/developing-apps/customizing-extending-my/customizing-projects-and-extending-my.md",
+            "redirect_url": "/dotnet/visual-basic/developing-apps/customizing-extending-my/index",
             "redirect_document_id": true
         },
         {
             "source_path": "docs/visual-basic/developing-apps/debugging.md",
             "redirect_url": "/visualstudio/debugger/debugger-basics"
-        },
-        {
-            "source_path": "docs/visual-basic/developing-apps/customizing-extending-my/customizing-projects-and-extending-my.md",
-            "redirect_url": "/dotnet/visual-basic/developing-apps/customizing-extending-my/index",
-            "redirect_document_id": true
         },
         {
             "source_path": "docs/visual-basic/developing-apps/printing/printing-and-reporting.md",
@@ -1164,1003 +2099,66 @@
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/index"
         },
         {
+            "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",
+            "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/covariance-contravariance/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml"
+        },
+        {
             "source_path": "docs/visual-basic/programming-guide/concepts/linq/namespaces-linq-to-xml.md",
             "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/linq/namespaces-overview-linq-to-xml"
         },
         {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
+            "redirect_url": "/dotnet/api/system.threading.threadpool.queueuserworkitem"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/index.md",
+            "redirect_url": "/dotnet/standard/threading/"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/multithreaded-applications.md",
+            "redirect_url": "/dotnet/standard/threading/using-threads-and-threading"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md",
+            "redirect_url": "/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/thread-pooling.md",
+            "redirect_url": "/dotnet/standard/threading/the-managed-thread-pool"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/thread-synchronization.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/thread-timers.md",
+            "redirect_url": "/dotnet/standard/threading/timers"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md",
+            "redirect_url": "/dotnet/api/system.componentmodel.backgroundworker"
+        },
+        {
             "source_path": "docs/visual-basic/programming-guide/language-features/xml/how-to-enable-xml-intellisense.md",
-            "redirect_url": "https://msdn.microsoft.com/library/bb531402(v=vs.120).aspx"
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb531402(v=vs.120)"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-intellisense.md",
-            "redirect_url": "https://msdn.microsoft.com/library/bb531325(v=vs.120).aspx"
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb531325(v=vs.120)"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/language-features/xml/xml-to-schema-wizard.md",
-            "redirect_url": "https://msdn.microsoft.com/library/cc443041(v=vs.120).aspx"
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/cc443041(v=vs.120)"
         },
         {
             "source_path": "docs/visual-basic/reference/vb6-support.md",
             "redirect_url": "/visualstudio/vb6/vb6-support",
             "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studio",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-visual-studio-for-mac.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-visual-studoi-for-mac",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-vscode.md",
-            "redirect_url": "/dotnet/fsharp/get-started/getting-started-vscode",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
-            "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/getting-started/library-with-visual-studio.md",
-            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
-        },
-        {
-            "source_path": "docs/csharp/getting-started/testing-library-with-visual-studio.md",
-            "redirect_url": "/dotnet/core/tutorials/testing-library-with-visual-studio"
-        },
-        {
-            "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
-            "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
-        },
-        {
-            "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
-            "redirect_url": "/dotnet/framework/deployment/deployment-guide-for-developers"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/generics/default-keyword-in-generics.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/csharp.md",
-            "redirect_url": "/dotnet/csharp"
-        },
-        {
-            "source_path": "docs/csharp/getting-started/getting-started-with-csharp.md",
-            "redirect_url": "/dotnet/csharp/getting-started"
-        },
-        {
-            "source_path": "docs/core/porting/nuget-packages.md",
-            "redirect_url": "/dotnet/core/packages"
-        },
-        {
-            "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
-            "redirect_url": "/dotnet/core/tutorials"
-        },
-        {
-            "source_path": "docs/core/versions/servicing.md",
-            "redirect_url": "/dotnet/core/versions"
-        },
-        {
-            "source_path": "docs/csharp/reflection.md",
-            "redirect_url": "/dotnet/framework/reflection-and-codedom"
-        },
-        {
-            "source_path": "docs/csharp/roslyn/index.md",
-            "redirect_url": "/dotnet/csharp/roslyn-sdk/"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-between-legacy-encondings-and-unicode.md",
-            "redirect_url": "https://msdn.microsoft.com/library/cc165448(v=vs.120).aspx"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-rtf-to-plain-text.md",
-            "redirect_url": "https://msdn.microsoft.com/library/cc488002(v=vs.120).aspx"
-        },
-        {
-            "source_path": "docs/csharp/parallel.md",
-            "redirect_url": "/dotnet/standard/parallel-programming/index"
-        },
-        {
-            "source_path": "docs/csharp/methods-lambda-expressions.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md",
-            "redirect_url": "/dotnet/csharp/how-to/parse-strings-using-split"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md",
-            "redirect_url": "/dotnet/csharp/how-to/concatenate-multiple-strings"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md",
-            "redirect_url": "/dotnet/standard/base-types/parsing-datetime"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md",
-            "redirect_url": "/dotnet/csharp/how-to/search-strings"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md",
-            "redirect_url": "/dotnet/csharp/how-to/search-strings"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-modify-string-contents.md",
-            "redirect_url": "/dotnet/csharp/how-to/modify-string-contents"
-        },
-        {
-            "source_path": "docs/csharp/language-reference/keywords/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/language-reference/tokens/interpolated"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/strings/how-to-compare-strings.md",
-            "redirect_url": "/dotnet/csharp/how-to/compare-strings"
-        },
-        {
-            "source_path": "docs/csharp/classes.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/classes"
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database-entities.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-web-service.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/type-providers/accessing-an-odata-service.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/type-providers/generating-fsharp-types-from-dbml.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
-        },
-        {
-            "source_path": "docs/fsharp/tutorials/type-providers/generating-fsharp-types-from-edmx.md",
-            "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
-        },
-        {
-            "source_path": "docs/csharp/programming-guide/generics/generics-in-the-net-framework-class-library.md",
-            "redirect_url": "/dotnet/standard/generics/index"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/index.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/index"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containerslift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/what-about-cloud-optimized-applications.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/what-about-cloud-native-applications"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/deploy-existing-net-apps-as-windows-containers.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/deploy-existing-net-apps-as-windows-containers"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-not-to-deploy-to-windows-containers.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-not-to-deploy-to-windows-containers"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-in-your-on-premises-iaas-vm-infrastructure"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-vms-iaas-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/how-to-deploy-existing-net-apps-to-azure-app-service.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-instances-ACI"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-service-fabric.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-service-fabric"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers//modernize-existing-apps-to-cloud-optimized/when-to-deploy-windows-containers-to-azure-container-service-kubernetes"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-with-monitoring-and-telemetry"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
-        },
-        {
-            "source_path": "docs/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/migrate-to-hybrid-cloud-scenarios.md",
-            "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/migrate-to-hybrid-cloud-scenarios"
-        },
-        {
-            "source_path":"docs/csharp/language-reference/operators/null-conditional-operator.md",
-            "redirect_url":"/dotnet/csharp/language-reference/operators/null-coalescing-operator"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
-            "redirect_url":"/dotnet/csharp/language-reference/keywords/foreach-in"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-the-invokemethod-activity.md",
-            "redirect_url":"/dotnet/framework/windows-workflow-foundation/samples/built-in-activities"
-        },
-        {
-            "source_path":"docs/fsharp/language-reference/signatures.md",
-            "redirect_url":"/dotnet/fsharp/language-reference/signature-files"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/thread-timers.md",
-            "redirect_url":"/dotnet/standard/threading/timers"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/thread-timers.md",
-            "redirect_url":"/dotnet/standard/threading/timers"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md",
-            "redirect_url":"/dotnet/api/system.componentmodel.backgroundworker"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/walkthrough-multithreading-with-the-backgroundworker-component.md",
-            "redirect_url":"/dotnet/api/system.componentmodel.backgroundworker"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md",
-            "redirect_url":"/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/parameters-and-return-values-for-multithreaded-procedures.md",
-            "redirect_url":"/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time"
-        },
-        {
-            "source_path":"docs/fsharp/language-reference/primitive-types.md",
-            "redirect_url":"/dotnet/fsharp/language-reference/basic-types",
-            "redirect_document_id": true
-        },
-        {
-            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/index.md",
-            "redirect_url":"/visualstudio/ide/fsharp-visual-studio",
-            "redirect_document_id":true
-        },
-        {
-            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md",
-            "redirect_url":"/visualstudio/ide/fsharp-visual-studio",
-            "redirect_document_id":true
-        },
-        {
-            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/configuring-projects.md",
-            "redirect_url":"/visualstudio/ide/fsharp-visual-studio",
-            "redirect_document_id":true
-        },
-        {
-            "source_path":"docs/fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md",
-            "redirect_url":"/visualstudio/ide/fsharp-target-older-dotnet-versions",
-            "redirect_document_id":true
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
-            "redirect_url":"/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md",
-            "redirect_url":"/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/types/how-to-safely-cast-using-as-and-is-operators.md",
-            "redirect_url":"/dotnet/csharp/how-to/safely-cast-using-pattern-matching-is-and-as-operators"
-        },
-        {
-            "source_path":"docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
-            "redirect_url":"/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
-            "redirect_url":"/dotnet/api/system.threading.threadpool.queueuserworkitem"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
-            "redirect_url":"/dotnet/api/system.threading.threadpool.queueuserworkitem"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/thread-pooling.md",
-            "redirect_url":"/dotnet/standard/threading/the-managed-thread-pool"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/thread-pooling.md",
-            "redirect_url":"/dotnet/standard/threading/the-managed-thread-pool"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md",
-            "redirect_url":"/dotnet/csharp/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/multithreaded-applications.md",
-            "redirect_url":"/dotnet/standard/threading/using-threads-and-threading"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/multithreaded-applications.md",
-            "redirect_url":"/dotnet/standard/threading/using-threads-and-threading"
-        },
-        {
-            "source_path":"docs/framework/data/wcf/writing-a-windows-store-app-that-consumes-an-odata-service.md",
-            "redirect_url":"/dotnet/framework/data/wcf/"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/migrate-asp-net-web-service-to-wcf.md",
-            "redirect_url":"/dotnet/framework/wcf/feature-details/adopting-wcf"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/migrate-asp-net-web-service-client-to-wcf.md",
-            "redirect_url":"/dotnet/framework/wcf/feature-details/adopting-wcf"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",
-            "redirect_url":"/dotnet/csharp/language-reference/keywords/operator"
-        },
-        {
-            "source_path":"docs/fsharp/language-reference/code-formatting-guidelines.md",
-            "redirect_url":"/dotnet/fsharp/style-guide/formatting"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/arrays/passing-arrays-using-ref-and-out.md",
-            "redirect_url":"/dotnet/csharp/programming-guide/arrays"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/thread-synchronization.md",
-            "redirect_url":"/dotnet/standard/threading/overview-of-synchronization-primitives"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/thread-synchronization.md",
-            "redirect_url":"/dotnet/standard/threading/overview-of-synchronization-primitives"
-        },
-        {
-            "source_path":"docs/csharp/programming-guide/concepts/threading/index.md",
-            "redirect_url":"/dotnet/standard/threading/"
-        },
-        {
-            "source_path":"docs/visual-basic/programming-guide/concepts/threading/index.md",
-            "redirect_url":"/dotnet/standard/threading/"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/absolute-delay.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff522352(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/validation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee622981(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/external-activity-validation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee663223(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/basic-validation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759026(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/overloadgroups.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759029(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/activity-relationships-validation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee622980(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/advanced-policy.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960219(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/auto-confirm-pattern.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd744849(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/composite.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759022(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/basic-activity-composition.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759028(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/getting-started-writing-a-custom-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd744847(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/transactions.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd699763(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/basic-transactionscope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807498(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/use-of-transactedreceivescope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd764465(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/nesting-of-transactionscope-within-a-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee834526(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/basic-usage-of-sendparameters-and-receiveparameters-activities.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807376(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/basic-xaml-only-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807390(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/bookmarks.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd744843(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/buffered-receive.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee834509(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/built-in-configuration.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee622978(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/channel-caching-with-send.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee834525(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/commentout-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee661651(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/compensation-samples.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd483320(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/compensable-activity-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd483327(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/custom-compensation-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd483319(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/confirmation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807507(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/cancellation-handler-on-compensable-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807518(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/conditioned-activity-group.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960226(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/constraint-types.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759025(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/content-based-correlation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807508(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/correlated-calculator.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807391(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/custom-activity-to-switch-on-a-range-of-values.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797581(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/durable-delay.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807379(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/durable-delay-in-xamlx.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee834527(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/durable-duplex.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662960(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/dynamicactivity-creation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807392(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/dynamic-arguments.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee663219(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/emulating-breaking-in-a-while-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807393(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/entity-activities.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee622984(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/execute-a-workflow-in-an-imperative-transactionscope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759027(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/execution-properties.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd744845(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/exposing-and-invoking-activityactions.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd759023(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/expressions.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd699761(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/extract-wf-data-using-tracking.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662966(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/for-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd758796(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/formatting-messages-in-workflow-services.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807506(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/hello-world-custom-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee624142(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/ifelse-with-rules.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960224(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/interop-with-3-5-rule-set.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee829487(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/invokemethod.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee622976(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/linq-to-objects-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797580(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/linq-to-sql-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797582(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/metadata-store-programmability.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807501(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/nopersistscope-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807512(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/operationscope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662961(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/order-processing-with-policy.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960217(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/persisting-a-workflow-application.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807516(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/policy-activity-in-net-framework-4-5.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797584(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/property-promotion-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff642473(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/rangeenumeration-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797588(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/regular-expression-activities.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797587(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/securing-workflow-services.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee943756(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/sending-and-handling-faults.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807385(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/simple-policy.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960218(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/rules-samples.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960227(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/sqlstoreextensibility.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee622979(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/persistence.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd699769(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/statemachine-scenario-using-a-combination-of-flowchart-and-pick.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807384(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/suppress-transaction-scope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee656552(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/toolbox-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee834520(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/tracking-using-a-text-file.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee667247(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/transacted-queues.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee835855(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/transaction-convoy-scope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd744846(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/transaction-rollback.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee656553(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/usage-of-the-switch-activity-with-custom-types.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee624141(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-a-net-3-0-or-net-3-5-activity-in-a-net-4-5-workflow.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807505(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-asyncoperationcontext-in-an-activity-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd483304(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-cancellationscope.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807382(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-collection-activities.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807394(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-interop-with-external-data-exchange.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960220(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/migration.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd699764(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807377(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-the-invokepowershell-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd797586(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-the-workflowinvoker-class.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807496(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/using-variables-with-dotnet-ruleset.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807380(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee620806(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/workflowapplication-readline-host.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd764467(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/workflow-management-endpoint-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807500(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/xaml-activation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960215(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/samples/services.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd699765(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/bb882676(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/diagnostics/etw/monitoring-service-operation-failures.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff468239(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/accessing-identity-information-inside-a-workflow-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff452450(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/accessing-operationcontext-from-a-workflow-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff452697(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/content-based-correlation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee358755(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/context-exchange-correlation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee358724(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/how-to-create-a-workflow-service-that-calls-another-workflow-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff729672(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/feature-details/how-to-host-a-non-service-workflow-in-iis.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff729688(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/advanced-error-handling.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee667251(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/advanced-filters.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee667249(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/advanced-format-selection.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662965(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/aspnetrouteintegration.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662952(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/asynchronous-find-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd483344(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/automatic-format-selection.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662964(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/basic-resource-service.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee662954(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/bridging-and-error-handling.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee667246(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/bytestream-encoder.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960169(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/conditional-get-and-put.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee818665(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/configuration-based-activation.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807499(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/custom-demux.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ms752265(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/customdiscoverymetadata.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd764464(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/discovery-extensibility.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807503(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/discover-a-service-with-unique-listen-uri-mode-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee530015(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/discovery-binding-element-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807387(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/discovery-proxy-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/dd807497(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/dynamic-reconfiguration.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee667250(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/form-post.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee818241(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/web-extensibility.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee818234(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/hierarchical-configuration-model.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee663221(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/http-acknowledgement-channel.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee960152(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/receivecontext-enabled-wcf-channels.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee534020(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/wcf/samples/transacted-batching.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/aa395219(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/activity-localization.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee829486(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/determining-workflow-execution-duration-using-tracing.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff462013(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/projects-targeting-dotnet-in-vs.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ff729671(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/windows-workflow-foundation/using-the-interop-activity-in-a-net-framework-4-workflow.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/ee264174(v%3dvs.100)"
-        },
-        {
-            "source_path":"docs/framework/winforms/advanced/copy--paste-an-elementhost-control-into-forms.md",
-            "redirect_url":"/previous-versions/visualstudio/visual-studio-2010/bb384315(v=vs.100)"
-        },
-        {
-            "source_path":"docs/framework/winforms/advanced/walkthrough-changing-properties-of-a-hosted-wpf-element-at-design-time.md",
-            "redirect_url":"/previous-versions/visualstudio/visual-studio-2010/bb384330(v=vs.100)"
-        },
-        {
-            "source_path":"docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
-            "redirect_url":"/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
-        },
-        {
-            "source_path":"docs/fsharp/introduction-to-functional-programming/functions-as-first-class-values.md",
-            "redirect_url":"/dotnet/fsharp/introduction-to-functional-programming/first-class-functions",
-            "redirect_document_id": true
-        },
-        {
-            "source_path":"docs/csharp/reference-semantics-with-value-types.md",
-            "redirect_url":"/dotnet/csharp/write-safe-efficient-code"
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/arrays-and-collections.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/arrays-and-collections",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/branches-and-loops-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops-local",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/branches-and-loops.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/hello-world.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/index.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings-local",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/interpolated-strings",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/list-collection.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/local-environment.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/local-environment",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/numbers-in-csharp-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/quick-starts/numbers-in-csharp.md",
-            "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp",
-            "redirect_document_id": true
-        },
-        {
-            "source_path":"docs/standard/threading/interlocked-operations.md",
-            "redirect_url":"/dotnet/api/system.threading.interlocked"
-        },
-        {
-            "source_path":"docs/standard/threading/reader-writer-locks.md",
-            "redirect_url":"/dotnet/api/system.threading.readerwriterlockslim"
-        },
-        {
-            "source_path": "docs/machine-learning/resources/basics.md",
-            "redirect_url": "/dotnet/machine-learning/what-is-mldotnet",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/framework/wcf/samples/avoiding-problems-with-the-using-statement.md",
-            "redirect_url": "/dotnet/framework/wcf/samples/use-close-abort-release-wcf-client-resources",
-            "redirect_document_id": true
-        },
-        {
-            "source_path": "docs/csharp/tutorials/microservices.md",
-            "redirect_url": "/dotnet/core/docker/",
-            "redirect_document_id": false
-        },
-        {
-            "source_path":"docs/csharp/language-reference/keywords/true-operator.md",
-            "redirect_url":"/dotnet/csharp/language-reference/keywords/true-false-operators"
-        },
-        {
-            "source_path":"docs/csharp/language-reference/keywords/false-operator.md",
-            "redirect_url":"/dotnet/csharp/language-reference/keywords/true-false-operators"
-        },
-        {
-            "source_path":"docs/core/versions/version-history.md",
-            "redirect_url":"/dotnet/core/versions/selection"
         }
     ]
 }

@@ -15,25 +15,24 @@ Specifies a MSMQ transport for custom binding.
 ## Syntax  
   
 ```xml  
-<msmqIntegration>  
-        customDeadLetterQueue="Uri"  
-        deadLetterQueue="Custom/None/System"  
-    durable="Boolean"  
-    exactlyOnce="Boolean"  
-    manualAddressing="Boolean"  
-    maxBufferPoolSize="Integer"  
-    maxImmediateRetries="Integer"  
-    maxReceivedMessageSize="Integer"  
-    maxRetryCycles="Integer"  
-    rejectAfterLastRetry="Boolean"  
-    retryCycleDelay="TimeSpan"  
-    serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"  
-    timeToLive="TimeSpan"  
-    useSourceJournal="Boolean"  
-    useMsmqTracing="Boolean"  
-    <msmqTransportSecurity>  
-    </msmqTransportSecurity>  
-</msmqIntegration>  
+<msmqIntegration customDeadLetterQueue="Uri"
+                 deadLetterQueue="Custom/None/System"
+                 durable="Boolean"
+                 exactlyOnce="Boolean"
+                 manualAddressing="Boolean"
+                 maxBufferPoolSize="Integer"
+                 maxImmediateRetries="Integer"
+                 maxReceivedMessageSize="Integer"
+                 maxRetryCycles="Integer"
+                 rejectAfterLastRetry="Boolean"
+                 retryCycleDelay="TimeSpan"
+                 serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"
+                 timeToLive="TimeSpan"
+                 useSourceJournal="Boolean"
+                 useMsmqTracing="Boolean">
+  <msmqTransportSecurity>
+  </msmqTransportSecurity>
+</msmqIntegration>
 ```  
   
 ## Type  

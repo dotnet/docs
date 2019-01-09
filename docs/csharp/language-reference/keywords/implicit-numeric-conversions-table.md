@@ -18,14 +18,14 @@ The following table shows the predefined implicit conversions between .NET numer
 |----------|--------|  
 |[sbyte](sbyte.md)|`short`, `int`, `long`, `float`, `double`, or `decimal`|  
 |[byte](byte.md)|`short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
+|[char](char.md)|`ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
 |[short](short.md)|`int`, `long`, `float`, `double`, or `decimal`|  
 |[ushort](ushort.md)|`int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
 |[int](int.md)|`long`, `float`, `double`, or `decimal`|  
 |[uint](uint.md)|`long`, `ulong`, `float`, `double`, or `decimal`|  
 |[long](long.md)|`float`, `double`, or `decimal`|  
-|[char](char.md)|`ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, or `decimal`|  
-|[float](float.md)|`double`|  
 |[ulong](ulong.md)|`float`, `double`, or `decimal`|  
+|[float](float.md)|`double`|  
   
 ## Remarks  
 
@@ -33,9 +33,11 @@ The following table shows the predefined implicit conversions between .NET numer
 
 - Precision but not magnitude might be lost in the conversions from `int`, `uint`, `long`, or `ulong` to `float` and from `long` or `ulong` to `double`.  
   
-- There are no implicit conversions to the `char` type.  
+- There are no implicit conversions to the `char`, `byte` and `sbyte` types.  
+
+- There are no implicit conversions from the `char`, `double` and `decimal` types.
   
-- There are no implicit conversions between the `float` and `double` types and the `decimal` type.  
+- There are no implicit conversions between the `decimal` type and the `float` or `double` types.  
   
 - A value of a constant expression of type `int` (for example, a value represented by an integral literal) can be converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, or `ulong`, provided it's within the range of the destination type:
 

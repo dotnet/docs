@@ -22,7 +22,7 @@ The Event-based Asynchronous Pattern provides you with an effective way to expos
  If you implement the Event-based Asynchronous Pattern, you must provide a number of guarantees to ensure that your class will behave properly and clients of your class can rely on such behavior.  
   
 ### Completion  
- Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself it designed so that it never completes.  
+ Always invoke the <em>MethodName</em>**Completed** event handler when you have successful completion, an error, or a cancellation. Applications should never encounter a situation where they remain idle and completion never occurs. One exception to this rule is if the asynchronous operation itself is designed so that it never completes.  
   
 ### Completed Event and EventArgs  
  For each separate <em>MethodName</em>**Async** method, apply the following design requirements:  

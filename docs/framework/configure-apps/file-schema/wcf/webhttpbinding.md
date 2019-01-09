@@ -13,35 +13,34 @@ Defines a binding element that is used to configure endpoints for Windows Commun
 ## Syntax  
   
 ```xml  
-<webHttpBinding>  
-  <binding   
-    allowCookies="Boolean"  
-    bypassProxyOnLocal="Boolean"  
-    closeTimeout="TimeSpan"  
-    hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-    maxBufferPoolSize="integer"  
-    maxBufferSize="integer"  
-    maxReceivedMessageSize="Integer"  
-    name="string"  
-    openTimeout="TimeSpan"   
-    proxyAddress="URI"  
-    receiveTimeout="TimeSpan"  
-    sendTimeout="TimeSpan"  
-    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-    useDefaultWebProxy="Boolean" 
-    writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding">  
-  <security mode="None/Transport/TransportCredentialOnly">  
-    <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-               proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-               realm="string" />  
-  </security>  
-  <readerQuotas maxArrayLength="Integer" 
-                maxBytesPerRead="Integer" 
-                maxDepth="Integer" 
-                maxNameTableCharCount="Integer" 
-                maxStringContentLength="Integer" />  
-  </binding>  
-</webHttpBinding>  
+<webHttpBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxBufferSize="integer"
+           maxReceivedMessageSize="Integer"
+           name="string"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
+           useDefaultWebProxy="Boolean"
+           writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding">
+    <security mode="None/Transport/TransportCredentialOnly">
+      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 realm="string" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</webHttpBinding>
 ```  
   
 ## Attributes and Elements  

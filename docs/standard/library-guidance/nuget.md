@@ -38,7 +38,7 @@ NuGet package dependencies are covered in detail in the [Dependencies](./depende
 
 ## Important NuGet package metadata
 
-A NuGet package supports many [metadata properties](/nuget/reference/nuspec). The following table contains the core metadata that every open-source project should provide:
+A NuGet package supports many [metadata properties](/nuget/reference/nuspec). The following table contains the core metadata that every package on NuGet.org should provide:
 
 | MSBuild Property name              | Nuspec name              | Description  |
 | ---------------------------------- | ------------------------ | ------------ |
@@ -50,14 +50,12 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `PackageTags`                      | `tags`                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | `PackageIconUrl`                   | `iconUrl`                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
-| `PackageLicenseUrl`                | `licenseUrl`               | A URL to the project license. Can be the URL to the `LICENSE` file in source control.             |
-
-**✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
-
-**✔️ CONSIDER** using the `LICENSE` file in source control as the `LicenseUrl`. For example, [LICENSE.md](https://github.com/JamesNK/Newtonsoft.Json/blob/c4af75c8e91ca0d75aa6c335e8c106780c4f7712/LICENSE.md).
+| `PackageLicenseExpression`         | `license`                  | The project license's [SPDX identifier](https://spdx.org/licenses/). Only OSI and FSF approved licenses can use an identifier. Other licenses should use `PackageLicenseFile`. Read more about [`license` metadata](/nuget/reference/nuspec#license). |
 
 > [!IMPORTANT]
-> A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it impossible for other people to use.
+> A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it legally impossible for other people to use.
+
+**✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
 
 **✔️ DO** use an HTTPS href to your package icon.
 
@@ -67,9 +65,7 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 **✔️ CONSIDER** setting up [SourceLink](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
 
-> SourceLink automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package.
-> SourceLink also adds information about the exact source code the package was built from.
-> For example, a package created from a Git repository will have the commit hash added as metadata.
+> SourceLink automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package. SourceLink also adds information about the exact source code the package was built from. For example, a package created from a Git repository will have the commit hash added as metadata.
 
 ## Pre-release packages
 

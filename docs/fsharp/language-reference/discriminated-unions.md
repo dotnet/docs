@@ -1,5 +1,5 @@
 ---
-title: Discriminated Unions (F#)
+title: Discriminated Unions
 description: Learn how to use F# discriminated unions.
 ms.date: 05/16/2016
 ---

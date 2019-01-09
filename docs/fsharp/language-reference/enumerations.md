@@ -1,5 +1,5 @@
 ---
-title: Enumerations (F#)
+title: Enumerations
 description: Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
 ms.date: 05/16/2016
 ---

@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[adonet_ef](~/includes/adonet-ef-md.md)] only maintains a single instance of an object with a specific entity key in the cache. The <xref:System.Data.EntityKey> objects are immutable objects that represent object's identity. Entity keys are used to perform identity resolution in the object context. For more information, see [Working with Entity Keys](https://msdn.microsoft.com/library/fe3f4206-d277-43a1-a72f-4e86fdf12b9f). If an entity with the same identity is already being tracked, the data coming from the data source and the data already in the state manager are merged according to the <xref:System.Data.Objects.MergeOption> of the query.  
+ The [!INCLUDE[adonet_ef](~/includes/adonet-ef-md.md)] only maintains a single instance of an object with a specific entity key in the cache. The <xref:System.Data.EntityKey> objects are immutable objects that represent object's identity. Entity keys are used to perform identity resolution in the object context. For more information, see [Working with Entity Keys](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd283139(v=vs.100)). If an entity with the same identity is already being tracked, the data coming from the data source and the data already in the state manager are merged according to the <xref:System.Data.Objects.MergeOption> of the query.  
   
  ]]></format>
     </remarks>

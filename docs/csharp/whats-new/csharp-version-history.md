@@ -163,7 +163,6 @@ Other features included:
 
 - [Discards](./csharp-7.md#discards)
 - [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
-- [Ref returns and locals](./csharp-7.md#ref-locals-and-returns)
 - [Throw expressions](./csharp-7.md#throw-expressions)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.

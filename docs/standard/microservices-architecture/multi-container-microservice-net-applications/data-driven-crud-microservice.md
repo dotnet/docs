@@ -420,10 +420,10 @@ It is that simple. And because it is automatically generated, the Swagger metada
   [*https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger*](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 - **Get started with Swashbuckle and ASP.NET Core** \
-  [*https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio)
+  [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio*](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio)
 
 - **Get started with NSwag and ASP.NET Core** \
-  [*https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studiol)
+  [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio*](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio)
 
 >[!div class="step-by-step"]
 >[Previous](microservice-application-design.md)

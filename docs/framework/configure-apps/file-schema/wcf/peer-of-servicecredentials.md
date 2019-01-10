@@ -16,11 +16,11 @@ Specifies the current credentials for a peer node.
 ## Syntax  
   
 ```xml  
-<peer>  
-  <certificate/>  
-  <peerAuthentication/>  
-  <messageSenderAuthentication/>  
-</peer>  
+<peer>
+  <certificate />
+  <peerAuthentication />
+  <messageSenderAuthentication />
+</peer>
 ```  
   
 ## Attributes and Elements  

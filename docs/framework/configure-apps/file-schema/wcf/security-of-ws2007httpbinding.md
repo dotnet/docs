@@ -15,19 +15,20 @@ Represents the security settings used with the [\<ws2007HttpBinding>](../../../.
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-    <bindings>  
-        <ws2007HttpBinding>  
-            <binding name = "string">  
-              <security mode="None/Message/Transport/TransportWithMessageCredential">  
-                  <transport>  
-                  </transport>  
-                  <message>  
-                  </message>  
-              </security  
-        </ws2007HttpBinding>  
-    </bindings>  
-</system.ServiceModel>  
+<system.serviceModel>
+  <bindings>
+    <ws2007HttpBinding>
+      <binding name = "String">
+        <security mode="None/Message/Transport/TransportWithMessageCredential">
+          <transport>
+          </transport>
+          <message>
+          </message>
+        </security>
+      </binding>
+    </ws2007HttpBinding>
+  </bindings>
+</system.ServiceModel>
 ```  
   
 ## Attributes and Elements  

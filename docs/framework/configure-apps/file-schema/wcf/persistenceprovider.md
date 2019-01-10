@@ -15,8 +15,8 @@ Specifies the type of the persistence provider implementation to use, as well as
 ## Syntax  
   
 ```xml  
-<persistenceProvider persistenceOperationTimeout="TimeSpan"  
-   type="String" />  
+<persistenceProvider persistenceOperationTimeout="TimeSpan"
+                     type="String" />
 ```  
   
 ## Attributes and Elements  

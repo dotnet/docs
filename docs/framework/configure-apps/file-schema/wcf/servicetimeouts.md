@@ -15,7 +15,7 @@ Specifies the timeout for a service.
 ## Syntax  
   
 ```xml  
-<serviceTimeouts transactionTimeout="TimeSpan" />  
+<serviceTimeouts transactionTimeout="TimeSpan" />
 ```  
   
 ## Type  

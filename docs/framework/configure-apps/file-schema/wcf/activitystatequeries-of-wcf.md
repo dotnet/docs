@@ -18,7 +18,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
 
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -26,13 +26,13 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
         <activityStateQueries>
           <activityStateQuery activityName="String">
             <arguments>
-              <argument name="String"/>
+              <argument name="String" />
             </arguments>
             <states>
-              <state name="String"/>
+              <state name="String" />
             </states>
             <variables>
-              <variable name="String"/>
+              <variable name="String" />
             </variables>
           </activityStateQuery>
         </activityStateQueries>

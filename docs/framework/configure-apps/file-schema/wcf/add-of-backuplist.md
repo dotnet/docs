@@ -15,7 +15,13 @@ Represents a configuration element that defines a backup endpoint element.
 ## Syntax  
   
 ```xml  
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
+<routing>
+  <backupLists>
+    <backupList name="String">
+      <add endpointName="String" />
+    </backupList>
+  </backupLists>
+</routing>
 ```  
   
 ```csharp  

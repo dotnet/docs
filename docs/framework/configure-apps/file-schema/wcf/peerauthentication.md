@@ -17,12 +17,10 @@ Specifies authentication settings for a peer certificate used by a peer node.
 ## Syntax  
   
 ```xml  
-<peerAuthentication  
-      customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-      certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-      revocationMode="NoCheck/Online/Offline"  
-      trustedStoreLocation="CurrentUser/LocalMachine"   
-/>  
+<peerAuthentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                    certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                    revocationMode="NoCheck/Online/Offline"
+                    trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## Attributes and Elements  

@@ -13,16 +13,19 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ## Syntax  
   
 ```xml  
-<endpoint address="String"  
-   behaviorConfiguration="String"  
-   binding="String"  
-   bindingConfiguration="String"  
-   bindingName="String"  
-   bindingNamespace="String"  
-   contract="String"  
-   endpointConfiguration="String"   isSystemEndpoint="Boolean"   kind="String"   listenUriMode="Explicit/Unique"  
-   listenUri="Uri"  
-</endpoint>  
+<endpoint address="String"
+          behaviorConfiguration="String"
+          binding="String"
+          bindingConfiguration="String"
+          bindingName="String"
+          bindingNamespace="String"
+          contract="String"
+          endpointConfiguration="String"
+          isSystemEndpoint="Boolean"
+          kind="String"
+          listenUriMode="Explicit/Unique"
+          listenUri="Uri">
+</endpoint>
 ```  
   
 ## Attributes and Elements  
@@ -63,17 +66,16 @@ Specifies binding, contract, and address properties for a service endpoint, whic
  This is an example of a service endpoint configuration.  
   
 ```xml  
-<endpoint   
-    address="/HelloWorld/"  
-    bindingConfiguration="usingDefaults"  
-    bindingName="MyBinding"  
-    binding="customBinding"  
-    contract="HelloWorld">  
-    <Headers>  
-       <Region xmlns="http://tempuri.org/">EastCoast</Region>  
-       <Member xmlns="http://tempuri.org/">Gold</Member>  
-    </Headers>  
-</endpoint>  
+<endpoint address="/HelloWorld/"
+          bindingConfiguration="usingDefaults"
+          bindingName="MyBinding"
+          binding="customBinding"
+          contract="HelloWorld">
+  <headers>
+    <region xmlns="http://tempuri.org/">EastCoast</region>
+    <member xmlns="http://tempuri.org/">Gold</member>
+  </headers>
+</endpoint>
 ```  
   
 ## See Also  

@@ -11,22 +11,22 @@ Represents a configuration section for defining a set of routing filters, which 
 [**\<system.serviceModel>**](system-servicemodel.md)   
 &nbsp;&nbsp;[**\<routing>**](routing.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<filters>**
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <system.serviceModel>
   <routing>
     <filters>
-      <filter customType="String" 
-              filterData="String" 
-              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath" 
+      <filter customType="String"
+              filterData="String"
+              filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
               name="String" />
     </filters>
   </routing>
 </system.serviceModel>
-```
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.

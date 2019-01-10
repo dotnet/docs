@@ -8,15 +8,26 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
   
  \<system.serviceModel>  
 \<routing>  
-\<routingTables>  
-\<table>  
+\<filterTables>  
+\<filterTable>  
 \<entries>  
 \<add>  
   
 ## Syntax  
   
-```xml
-   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
+```xml  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
+      </entries>
+    </filterTable>
+  </filterTables>
+</routing>
 ```  
   
 ```csharp  

@@ -16,9 +16,8 @@ Specifies the settings of a Windows service credential.
 ## Syntax  
   
 ```xml  
-<windowsAuthentication  
-      allowAnonymousLogons="Boolean"  
-      includeWindowsGroups="Boolean" />  
+<windowsAuthentication allowAnonymousLogons="Boolean"
+                       includeWindowsGroups="Boolean" />
 ```  
   
 ## Attributes and Elements  

@@ -15,7 +15,7 @@ Specifies the URI for which the transport channel should be created. For more in
 ## Syntax  
   
 ```xml  
-<clientVia viaUri="String"/>  
+<clientVia viaUri="String" />
 ```  
   
 ## Attributes and Elements  

@@ -15,25 +15,23 @@ Specifies the security options for a custom binding.
 ## Syntax  
   
 ```xml  
-<security   
-   allowSerializedSigningTokenOnReply="Boolean"  
-   authenticationMode="AuthenticationMode"  
-      defaultAlgorithmSuite="SecurityAlgorithmSuite"  
-   includeTimestamp="Boolean"  
-      requireDerivedKeys="Boolean"  
-   keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"   
-messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"  
-      messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"  
-   requireDerivedKeys="Boolean"  
-   requireSecurityContextCancellation="Boolean"  
-   requireSignatureConfirmation="Boolean"  
-      securityHeaderLayout=  
-              "Strict/Lax/LaxTimestampFirst/LaxTimestampLast">  
-   <issuedTokenParameters />  
-   <localClientSettings />  
-   <localServiceSettings />  
-   <secureConversationBootstrap />  
-</security>  
+<security allowSerializedSigningTokenOnReply="Boolean"
+          authenticationMode="AuthenticationMode"
+          defaultAlgorithmSuite="SecurityAlgorithmSuite"
+          includeTimestamp="Boolean"
+          requireDerivedKeys="Boolean"
+          keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"
+          messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"
+          messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"
+          requireDerivedKeys="Boolean"
+          requireSecurityContextCancellation="Boolean"
+          requireSignatureConfirmation="Boolean"
+          securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast">
+   <issuedTokenParameters />
+   <localClientSettings />
+   <localServiceSettings />
+   <secureConversationBootstrap />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -108,57 +106,58 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
  Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md).  
   
 ```xml  
-<configuration>  
-  <system.serviceModel>  
-    <services>  
-      <service   
-          name="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
-        <host>  
-          <baseAddresses>  
-            <!-- use following base address -->  
-            <add baseAddress="net.tcp://localhost:8000/ServiceModelSamples/Service"/>  
-          </baseAddresses>  
-        </host>  
-        <endpoint address=""  
-                    binding="customBinding"  
-                    bindingConfiguration="Binding1"   
-                    contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex" />  
-        <!-- the mex endpoint is exposed at net.tcp://localhost:8000/ServiceModelSamples/service/mex -->  
-        <endpoint address="mex"  
-                  binding="mexTcpBinding"  
-                  contract="IMetadataExchange" />  
-      </service>  
-    </services>  
-  
-    <bindings>  
-      <!-- configure a custom binding -->  
-      <customBinding>  
-        <binding name="Binding1">  
-          <security authenticationMode="SecureConversation"  
-                     requireSecurityContextCancellation="true">  
-          </security>  
-          <textMessageEncoding messageVersion="Soap12WSAddressing10" writeEncoding="utf-8"/>  
-          <sslStreamSecurity requireClientCertificate="false"/>  
-          <tcpTransport/>  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-  
-    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
-    <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata />  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-          <serviceCredentials>  
-            <serviceCertificate findValue="localhost" storeLocation="LocalMachine" storeName="My" x509FindType="FindBySubjectName"/>  
-          </serviceCredentials>  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
-  </system.serviceModel>  
-</configuration>  
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="Microsoft.ServiceModel.Samples.CalculatorService"
+               behaviorConfiguration="CalculatorServiceBehavior">
+        <host>
+          <baseAddresses>
+            <!-- use following base address -->
+            <add baseAddress="net.tcp://localhost:8000/ServiceModelSamples/Service"/>
+          </baseAddresses>
+        </host>
+        <endpoint address=""
+                  binding="customBinding"
+                  bindingConfiguration="Binding1"
+                  contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex" />
+        <!-- the mex endpoint is exposed at net.tcp://localhost:8000/ServiceModelSamples/service/mex -->
+        <endpoint address="mex"
+                  binding="mexTcpBinding"
+                  contract="IMetadataExchange" />
+      </service>
+    </services>
+    <bindings>
+      <!-- configure a custom binding -->
+      <customBinding>
+        <binding name="Binding1">
+          <security authenticationMode="SecureConversation"
+                    requireSecurityContextCancellation="true">
+          </security>
+          <textMessageEncoding messageVersion="Soap12WSAddressing10"
+                               writeEncoding="utf-8" />
+          <sslStreamSecurity requireClientCertificate="false" />
+          <tcpTransport />
+        </binding>
+      </customBinding>
+    </bindings>
+    <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->
+    <behaviors>
+      <serviceBehaviors>
+        <behavior name="CalculatorServiceBehavior">
+          <serviceMetadata />
+          <serviceDebug includeExceptionDetailInFaults="False" />
+          <serviceCredentials>
+            <serviceCertificate findValue="localhost"
+                                storeLocation="LocalMachine"
+                                storeName="My"
+                                x509FindType="FindBySubjectName" />
+          </serviceCredentials>
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+</configuration>
 ```  
   
 ## See Also  

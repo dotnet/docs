@@ -17,10 +17,10 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<defaultCertificate findValue="String"   
-storeLocation=" CurrentUser/LocalMachine"  
-storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"   
-x509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialiNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />  
+<defaultCertificate findValue="String"
+                    storeLocation=" CurrentUser/LocalMachine"
+                    storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                    x509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialiNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />
 ```  
   
 ## Attributes and Elements  
@@ -75,19 +75,21 @@ x509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
  The following example specifies a certificate to use for endpoints whose URI begins with `http://www.contoso.com` and a certificate to use for all other endpoints that do not perform certificate negotiation.  
   
 ```xml  
-<serviceCertificate>  
-  <defaultCertificate findValue="www.contoso.com"   
-                      storeLocation="LocalMachine"  
-                      storeName="TrustedPeople"   
-                      x509FindType="FindByIssuerDistinguishedName" />  
-  <scopedCertificates>  
-     <add targetUri="http://www.contoso.com"   
-          findValue="www.contoso.com" storeLocation="LocalMachine"  
-                  storeName="Root" x509FindType="FindByIssuerName" />  
-  </scopedCertificates>  
-  <authentication revocationMode="Online"   
-   trustedStoreLocation="LocalMachine" />  
-</serviceCertificate>  
+<serviceCertificate>
+  <defaultCertificate findValue="www.contoso.com"
+                      storeLocation="LocalMachine"
+                      storeName="TrustedPeople"
+                      x509FindType="FindByIssuerDistinguishedName" />
+  <scopedCertificates>
+    <add targetUri="http://www.contoso.com"
+         findValue="www.contoso.com"
+         storeLocation="LocalMachine"
+         storeName="Root"
+         x509FindType="FindByIssuerName" />
+  </scopedCertificates>
+  <authentication revocationMode="Online"
+                  trustedStoreLocation="LocalMachine" />
+</serviceCertificate>
 ```  
   
 ## See Also  

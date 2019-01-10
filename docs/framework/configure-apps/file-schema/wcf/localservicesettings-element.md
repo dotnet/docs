@@ -15,22 +15,22 @@ Specifies the security settings of a local service for this binding.
 ## Syntax  
   
 ```xml  
-<security>  
-   <localServiceSettings detectReplays="Boolean"  
-      inactivityTimeout="TimeSpan"  
-      issuedCookieLifeTime="TimeSpan"  
-      maxCachedCookies="Integer"   
-      maxClockSkew="TimeSpan"   
-      maxPendingSessions="Integer"  
-      maxStatefulNegotiations="Integer"  
-      negotiationTimeout="TimeSpan"  
-      reconnectTransportOnFailure="Boolean"  
-            replayCacheSize="Integer"  
-      replayWindow="TimeSpan"  
-      sessionKeyRenewalInterval="TimeSpan"  
-      sessionKeyRolloverInterval="TimeSpan"  
-      timestampValidityDuration="TimeSpan" />  
-</security>  
+<security>
+  <localServiceSettings detectReplays="Boolean"
+                        inactivityTimeout="TimeSpan"
+                        issuedCookieLifeTime="TimeSpan"
+                        maxCachedCookies="Integer"
+                        maxClockSkew="TimeSpan"
+                        maxPendingSessions="Integer"
+                        maxStatefulNegotiations="Integer"
+                        negotiationTimeout="TimeSpan"
+                        reconnectTransportOnFailure="Boolean"
+                        replayCacheSize="Integer"
+                        replayWindow="TimeSpan"
+                        sessionKeyRenewalInterval="TimeSpan"
+                        sessionKeyRolloverInterval="TimeSpan"
+                        timestampValidityDuration="TimeSpan" />
+</security>
 ```  
   
 ## Attributes and Elements  

@@ -34,15 +34,15 @@ By default, applications use the set of .NET Framework assemblies that shipped w
   
 ```xml  
 <assemblyBinding xmlns="..." appliesTo="v1.0.3705">   
-<! — .NET Framework version 1.0 redirects here. -->   
+  <!-- .NET Framework version 1.0 redirects here. -->   
 </assemblyBinding>   
   
 <assemblyBinding xmlns="..." appliesTo="v1.1.4322">   
-    <! — .NET Framework version 1.1 redirects here. -->   
+  <!-- .NET Framework version 1.1 redirects here. -->   
 </assemblyBinding>   
   
 <assemblyBinding xmlns="...">   
-<!-- Redirects meant for all versions of the .NET Framework. -->   
+  <!-- Redirects meant for all versions of the .NET Framework. -->   
 </assemblyBinding>  
 ```  
   

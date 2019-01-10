@@ -12,15 +12,15 @@ This configuration element defines a standard endpoint with a fixed announcement
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <announcementEndpoint>
-      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
-                        maxAnnouncementDelay="Timespan" 
+      <standardEndpoint discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"
+                        maxAnnouncementDelay="Timespan"
                         name="String" />
     </announcementEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -47,29 +47,29 @@ This configuration element defines a standard endpoint with a fixed announcement
  The following example demonstrates a client listening for announcements messages over http and peernet.  
   
 ```xml  
-<services>  
-  <service name="ServiceAnnouncementListener">  
-    <endpoint name="httpAnnouncementEndpoint"  
-              kind="announcementEndpoint"  
-              binding="basicHttpBinding"  
-              address="announcements" />  
-    <endpoint name="peerNetAnnouncementEndpoint"  
-              kind="announcementEndpoint"  
-              binding="peerTcpBinding"  
-              address="net.p2p://discoveryMesh/multicast"  
-              bindingConfiguration="discoveryPeerTcpBindingConfig" />  
-  ...  
-  </service>  
-</services>  
-  
-<standardEndpoints>  
-  <announcementEndpoint>  
-    <standardEndpoint name="httpAnnouncementEndpoint"                         
-                      version="WSDiscoveryApril2005" />  
-    <standardEndpoint name="peerNetAnnouncementEndpoint"                         
-                      version="WSDiscoveryApril2005" />  
-   </announcementEndpoint>  
-</standardEndpoints>  
+<services>
+  <service name="ServiceAnnouncementListener">
+    <endpoint name="httpAnnouncementEndpoint"
+              kind="announcementEndpoint"
+              binding="basicHttpBinding"
+              address="announcements" />
+    <endpoint name="peerNetAnnouncementEndpoint"
+              kind="announcementEndpoint"
+              binding="peerTcpBinding"
+              address="net.p2p://discoveryMesh/multicast"
+              bindingConfiguration="discoveryPeerTcpBindingConfig" />
+  ...
+  </service>
+</services>
+
+<standardEndpoints>
+  <announcementEndpoint>
+    <standardEndpoint name="httpAnnouncementEndpoint"
+                      version="WSDiscoveryApril2005" />
+    <standardEndpoint name="peerNetAnnouncementEndpoint"
+                      version="WSDiscoveryApril2005" />
+  </announcementEndpoint>
+</standardEndpoints>
 ```  
   
 ## See Also  

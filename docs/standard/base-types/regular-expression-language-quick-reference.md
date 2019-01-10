@@ -170,7 +170,7 @@ ms.author: "ronpet"
 |`${` *name* `}`|Substitutes the substring matched by the named group *name*.|`\b(?<word1>\w+)(\s)(?<word2>\w+)\b`|`${word2} ${word1}`|"one two"|"two one"|  
 |`$$`|Substitutes a literal "$".|`\b(\d+)\s?USD`|`$$$1`|"103 USD"|"$103"|  
 |`$&`|Substitutes a copy of the whole match.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"\*\*$1.30\*\*"|  
-|<code>$`</code>|Substitutes all the text of the input string before the match.|`B+`|<code>$`</code>|"AABBCC"|"AAAACC"|  
+|``$` ``|Substitutes all the text of the input string before the match.|`B+`|``$` ``|"AABBCC"|"AAAACC"|  
 |`$'`|Substitutes all the text of the input string after the match.|`B+`|`$'`|"AABBCC"|"AACCCC"|  
 |`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|"AACCDD"|  
 |`$_`|Substitutes the entire input string.|`B+`|`$_`|"AABBCC"|"AAAABBCCCC"|  

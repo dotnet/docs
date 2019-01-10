@@ -5,6 +5,8 @@ ms.author: douglasl
 ms.date: 12/20/2018
 ms.technology:
   - "dotnet-data"
+topic_type:
+  - "apiref"
 api_name:
   - "Microsoft.SqlServer.Server.SmiOrderProperty.Item"
   - "Microsoft.SqlServer.Server.SmiOrderProperty.get_Item"

@@ -5,6 +5,8 @@ ms.author: douglasl
 ms.date: 12/19/2018
 ms.technology:
   - "dotnet-data"
+topic_type:
+  - "apiref"
 api_name:
   - "System.Data.SqlTypes.SqlChars.Stream"
   - "System.Data.SqlTypes.SqlChars.get_Stream"

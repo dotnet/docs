@@ -20,11 +20,12 @@ Configures the delivery format, delivery method, and from address for sending em
 ## Syntax  
   
 ```xml  
-<smtp deliveryFormat="format"   
-      deliveryMethod="method"   
-      from="from address">
-  <specifiedPickupDirectory>...</specifiedPickupDirectory>  
-  <network>...</network>  
+<smtp  
+  deliveryFormat="format"  
+  deliveryMethod="method"  
+  from="from address">
+    <specifiedPickupDirectory>...</specifiedPickupDirectory>  
+    <network>...</network>  
 </smtp>  
 ```  
   

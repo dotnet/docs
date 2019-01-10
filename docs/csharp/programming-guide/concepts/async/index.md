@@ -44,32 +44,33 @@ Asynchrony proves especially valuable for applications that access the UI thread
 async Task<int> AccessTheWebAsync()  
 {   
     // You need to add a reference to System.Net.Http to declare client.  
-    HttpClient client = new HttpClient();  
+    using (HttpClient client = new HttpClient())  
+    {  
+        // GetStringAsync returns a Task<string>. That means that when you await the  
+        // task you'll get a string (urlContents).  
+        Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
   
-    // GetStringAsync returns a Task<string>. That means that when you await the  
-    // task you'll get a string (urlContents).  
-    Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
+        // You can do work here that doesn't rely on the string from GetStringAsync.  
+        DoIndependentWork();  
   
-    // You can do work here that doesn't rely on the string from GetStringAsync.  
-    DoIndependentWork();  
+        // The await operator suspends AccessTheWebAsync.  
+        //  - AccessTheWebAsync can't continue until getStringTask is complete.  
+        //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
+        //  - Control resumes here when getStringTask is complete.   
+        //  - The await operator then retrieves the string result from getStringTask.  
+        string urlContents = await getStringTask;  
   
-    // The await operator suspends AccessTheWebAsync.  
-    //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-    //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-    //  - Control resumes here when getStringTask is complete.   
-    //  - The await operator then retrieves the string result from getStringTask.  
-    string urlContents = await getStringTask;  
-  
-    // The return statement specifies an integer result.  
-    // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
-    return urlContents.Length;  
+        // The return statement specifies an integer result.  
+        // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
+        return urlContents.Length;  
+    }  
 }  
 ```  
   
  If `AccessTheWebAsync` doesn't have any work that it can do between calling `GetStringAsync` and awaiting its completion, you can simplify your code by calling and awaiting in the following single statement.  
   
 ```csharp  
-string urlContents = await client.GetStringAsync();  
+string urlContents = await client.GetStringAsync("https://docs.microsoft.com");  
 ```  
  
 The following characteristics summarize what makes the previous example an async method.  
@@ -144,9 +145,9 @@ The `async` and `await` keywords don't cause additional threads to be created. A
 The async-based approach to asynchronous programming is preferable to existing approaches in almost every case. In particular, this approach is better than the <xref:System.ComponentModel.BackgroundWorker> class for I/O-bound operations because the code is simpler and you don't have to guard against race conditions. In combination with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method, async programming is better than <xref:System.ComponentModel.BackgroundWorker> for CPU-bound operations because async programming separates the coordination details of running your code from the work that `Task.Run` transfers to the threadpool.  
   
 ##  <a name="BKMK_AsyncandAwait"></a> async and await  
- If you specify that a method is an async method by using the [async](../../../../csharp/language-reference/keywords/async.md) modifier, you enable the following two capabilities.  
+ If you specify that a method is an async method by using the `async` modifier, you enable the following two capabilities.  
   
--   The marked async method can use [await](../../../../csharp/language-reference/keywords/await.md) to designate suspension points. The `await` operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.  
+-   The marked async method can use `await` to designate suspension points. The `await` operator tells the compiler that the async method can't continue past that point until the awaited asynchronous process is complete. In the meantime, control returns to the caller of the async method.  
   
      The suspension of an async method at an `await` expression doesn't constitute an exit from the method, and `finally` blocks don’t run.  
   
@@ -173,32 +174,32 @@ Starting with C# 7.0, you can also specify any other return type, provided that 
   
 ```csharp  
 // Signature specifies Task<TResult>  
-async Task<int> TaskOfTResult_MethodAsync()  
+async Task<int> GetTaskOfTResultAsync()  
 {  
-    int hours;  
-    // . . .  
+    int hours = 0;  
+    await Task.Delay(0);  
     // Return statement specifies an integer result.  
     return hours;  
 }  
   
-// Calls to TaskOfTResult_MethodAsync  
-Task<int> returnedTaskTResult = TaskOfTResult_MethodAsync();  
+// Calls to GetTaskOfTResultAsync  
+Task<int> returnedTaskTResult = GetTaskOfTResultAsync();  
 int intResult = await returnedTaskTResult;  
 // or, in a single statement  
-int intResult = await TaskOfTResult_MethodAsync();  
+int intResult = await GetTaskOfTResultAsync();  
   
 // Signature specifies Task  
-async Task Task_MethodAsync()  
+async Task GetTaskAsync()  
 {  
-    // . . .  
+    await Task.Delay(0);  
     // The method has no return statement.    
 }  
   
-// Calls to Task_MethodAsync  
-Task returnedTask = Task_MethodAsync();  
+// Calls to GetTaskAsync  
+Task returnedTask = GetTaskAsync();  
 await returnedTask;  
 // or, in a single statement  
-await Task_MethodAsync();  
+await GetTaskAsync();  
 ```  
   
 Each returned task represents ongoing work. A task encapsulates information about the state of the asynchronous process and, eventually, either the final result from the process or the exception that the process raises if it doesn't succeed.  
@@ -292,25 +293,26 @@ namespace AsyncFirstExample
         async Task<int> AccessTheWebAsync()  
         {   
             // You need to add a reference to System.Net.Http to declare client.  
-            HttpClient client = new HttpClient();  
+            using (HttpClient client = new HttpClient())  
+            {  
+                    // GetStringAsync returns a Task<string>. That means that when you await the  
+                    // task you'll get a string (urlContents).  
+                    Task<string> getStringTask = client.GetStringAsync("https://docs.microsoft.com");  
   
-            // GetStringAsync returns a Task<string>. That means that when you await the  
-            // task you'll get a string (urlContents).  
-            Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
+                    // You can do work here that doesn't rely on the string from GetStringAsync.  
+                    DoIndependentWork();  
   
-            // You can do work here that doesn't rely on the string from GetStringAsync.  
-            DoIndependentWork();  
+                    // The await operator suspends AccessTheWebAsync.  
+                    //  - AccessTheWebAsync can't continue until getStringTask is complete.  
+                    //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
+                    //  - Control resumes here when getStringTask is complete.   
+                    //  - The await operator then retrieves the string result from getStringTask.  
+                    string urlContents = await getStringTask;  
   
-            // The await operator suspends AccessTheWebAsync.  
-            //  - AccessTheWebAsync can't continue until getStringTask is complete.  
-            //  - Meanwhile, control returns to the caller of AccessTheWebAsync.  
-            //  - Control resumes here when getStringTask is complete.   
-            //  - The await operator then retrieves the string result from getStringTask.  
-            string urlContents = await getStringTask;  
-  
-            // The return statement specifies an integer result.  
-            // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
-            return urlContents.Length;  
+                    // The return statement specifies an integer result.  
+                    // Any methods that are awaiting AccessTheWebAsync retrieve the length value.  
+                    return urlContents.Length;  
+            }  
         }  
   
         void DoIndependentWork()  
@@ -324,7 +326,7 @@ namespace AsyncFirstExample
   
 // Working . . . . . . .  
   
-// Length of the downloaded string: 41564.  
+// Length of the downloaded string: 25035.  
 ```  
   
 ## See Also

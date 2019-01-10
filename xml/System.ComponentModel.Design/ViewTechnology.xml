@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The view adapter model replaces and adds functionality to the <xref:System.ComponentModel.Design.ViewTechnology> feature; however, the <xref:System.ComponentModel.Design.ViewTechnology> feature is retained for both backward compatibility and future use, if you choose. For more information, see ".NET Shape Library: A Sample Designer" in the Windows Forms Knowledge Base at http://windowsforms.net/articles/shapedesigner.aspx.  
+ The view adapter model replaces and adds functionality to the <xref:System.ComponentModel.Design.ViewTechnology> feature; however, the <xref:System.ComponentModel.Design.ViewTechnology> feature is retained for both backward compatibility and future use, if you choose.
   
  <xref:System.ComponentModel.Design.ViewTechnology> defines identifiers that can indicate the mode to use for controlling the display of a designer-hosted document.  
   
@@ -43,11 +43,7 @@
   
  For example, an HTML designer might return a `DemoDOM` tree as its view. The HTML designer returns a view technology of Default. A Windows Forms hosting environment would have one or more view adapter classes available. If one such class could convert the `DemoDOM` into a Windows Forms control, the hosting application can support this type of designer. If no adapter can handle the data type returned from the designer's <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method, the load of the designer will fail, and the user will be presented with an error.  
   
- Visual Studio has an extensible scheme for providing view adapters, so it can adapt to any UI technology. Third-party technology providers can also offer an appropriate view adapter, and their object models are immediately consumable.  
-  
- For an example that uses view adapters, see ".NET Shape Library: A Sample Designer" in the Windows Forms Knowledge Base at http://windowsforms.net/articles/shapedesigner.aspx.  
-  
-   
+ Visual Studio has an extensible scheme for providing view adapters, so it can adapt to any UI technology. Third-party technology providers can also offer an appropriate view adapter, and their object models are immediately consumable.
   
 ## Examples  
  The following code example demonstrates how to use the <xref:System.ComponentModel.Design.ViewTechnology.Default> class in a designer. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> interface.  

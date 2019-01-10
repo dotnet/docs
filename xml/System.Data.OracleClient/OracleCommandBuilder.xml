@@ -436,7 +436,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If true, generate parameter names matching column names, if possible. If false, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames"><see langword="true" /> to generate parameter names matching column names, if possible. <see langword="false" /> to generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions on the database.</summary>
         <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions.</returns>
         <remarks>
@@ -449,7 +449,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. . This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on, for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.OracleClient.OracleCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -543,7 +543,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If true, generate parameter names matching column names, if possible. If false, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames"><see langword="true" /> to generate parameter names matching column names, if possible. <see langword="false" /> to generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions on the database.</summary>
         <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions.</returns>
         <remarks>
@@ -556,7 +556,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. . This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on, for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.OracleClient.OracleCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   
@@ -728,7 +728,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">If true, generate parameter names matching column names, if possible. If false, generate @p1, @p2, and so on.</param>
+        <param name="useColumnsForParameterNames"><see langword="true" /> to generate parameter names matching column names, if possible. <see langword="false" /> to generate <c>@p1</c>, <c>@p2</c>, and so on.</param>
         <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates on the database.</summary>
         <returns>The automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates.</returns>
         <remarks>
@@ -741,7 +741,7 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
   
  The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
   
- The default behavior, when generating parameter names, is to use @p1, @p2, and so on for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.Common.DbCommandBuilder> to generate parameters based on the column names instead. . This succeeds only if the following conditions are met:  
+ The default behavior, when generating parameter names, is to use `@p1`, `@p2`, and so on, for the various parameters. Passing `true` for the `useColumnsForParameterNames` parameter allows you to force the <xref:System.Data.OracleClient.OracleCommandBuilder> to generate parameters based on the column names instead. This succeeds only if the following conditions are met:  
   
 -   The <xref:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength> has been specified and its length is equal to or greater than the generated parameter name.  
   

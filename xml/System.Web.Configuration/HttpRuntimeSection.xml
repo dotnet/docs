@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Web.Configuration.HttpRuntimeSection> allows you to handle those parameters that affect the behavior of the ASP.NET runtime.  
   
- It refers to the node in the configuration file that is indicated by the  element and can be used at any level in the configuration hierarchy.  
+ It refers to the node in the configuration file that is indicated by the `<httpRuntime>` element and can be used at any level in the configuration hierarchy.  
   
  The <xref:System.Web.Configuration.HttpRuntimeSection> section contains directives that manage the following:  
   
@@ -558,9 +558,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout%2A> property indicates the maximum number of seconds a request is allowed to execute before being automatically shut down by ASP.NET. The default is 110 seconds. This time-out applies only if the debug attribute in the  element is set to `false`.  
+ The <xref:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout%2A> property indicates the maximum number of seconds a request is allowed to execute before being automatically shut down by ASP.NET. The default is 110 seconds. This time-out applies only if the debug attribute in the `<compilation>` element is set to `false`.  
   
- If the time-out expires an exception is raised. You can record the related information in the Application folder of the Event Log. You do this by enabling the application health monitoring in the  configuration element.  
+ If the time-out expires an exception is raised. You can record the related information in the Application folder of the Event Log. You do this by enabling the application health monitoring in the `<healthMonitoring>` configuration element.  
   
    
   
@@ -1060,9 +1060,9 @@
   
 -   `4.5 (the default).` In this mode, values are lazily loaded, that is, they are not read until they are requested.  
   
--   `4.0` The <xref:System.Web.HttpRequest> object internally sets a flag that indicates that request validation should be triggered whenever any HTTP request data is accessed. This guarantees that the request validation is triggered before data such as cookies and URLs are accessed during the request. The request validation settings of the  element (if any) in the configuration file or of the  directive in an individual page are ignored.  
+-   `4.0` The <xref:System.Web.HttpRequest> object internally sets a flag that indicates that request validation should be triggered whenever any HTTP request data is accessed. This guarantees that the request validation is triggered before data such as cookies and URLs are accessed during the request. The request validation settings of the `<pages>` element (if any) in the configuration file or of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in an individual page are ignored.  
   
--   `2.0`. Request validation is enabled only for pages, not for all HTTP requests. In addition, the request validation settings of the  element (if any) in the configuration file or of the  directive in an individual page are used to determine which page requests to validate.  
+-   `2.0`. Request validation is enabled only for pages, not for all HTTP requests. In addition, the request validation settings of the `<pages>` element (if any) in the configuration file or of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive in an individual page are used to determine which page requests to validate.  
 
 -   `0.0`. Request validation is disabled for the application. `0.0` is only recognized in ASP.NET 4.6 and later.
   

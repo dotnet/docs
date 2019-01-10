@@ -30,7 +30,7 @@
   
  The <xref:System.Web.Security.AnonymousIdentificationModule.Creating> event is accessed by specifying a subroutine named **AnonymousIdentification_Creating** in the Global.asax file for your ASP.NET application.  
   
- The <xref:System.Web.Security.AnonymousIdentificationModule> is only used when anonymous identification is <xref:System.Web.Security.AnonymousIdentificationModule.Enabled%2A> by setting the enabled attribute of the  configuration element to `true`.  
+ The <xref:System.Web.Security.AnonymousIdentificationModule> is only used when anonymous identification is <xref:System.Web.Security.AnonymousIdentificationModule.Enabled%2A> by setting the enabled attribute of the [anonymousIdentification](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)) configuration element to `true`.  
   
 > [!NOTE]
 >  Anonymous identification is independent of any type of ASP.NET authentication.  

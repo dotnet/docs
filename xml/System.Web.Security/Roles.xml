@@ -24,7 +24,7 @@
   
  Users can belong to more than one role. For example, if your site is a discussion forum, some users might be in the role of both Members and Moderators. You might define each role to have different privileges on the site, and a user who is in both roles would then have both sets of privileges.  
   
- To enable role management for your ASP.NET application, use the  element of the `system.web` section in the Web.config file for your application, as shown in the following example.  
+ To enable role management for your ASP.NET application, use the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element of the `system.web` section in the Web.config file for your application, as shown in the following example.  
   
 ```  
 <configuration>  
@@ -440,7 +440,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `applicationName` attribute to `MyApplication`.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `applicationName` attribute to `MyApplication`.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -501,7 +501,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `cacheRolesInCookie` attribute to `true`.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `cacheRolesInCookie` attribute to `true`.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -556,7 +556,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `cookieName` attribute to .ASPROLES.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `cookieName` attribute to .ASPROLES.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -611,7 +611,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `cookiePath` attribute to /MyApplication.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `cookiePath` attribute to /MyApplication.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -666,7 +666,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets `cookieProtection` attribute to `Encrypted`.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets `cookieProtection` attribute to `Encrypted`.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -722,7 +722,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets `cookieRequireSSL` to `true`.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets `cookieRequireSSL` to `true`.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -778,7 +778,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the <xref:System.Web.Security.Roles.CookieSlidingExpiration%2A> property to `false`.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the <xref:System.Web.Security.Roles.CookieSlidingExpiration%2A> property to `false`.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -828,14 +828,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Roles.CookieTimeout%2A> property is used when the <xref:System.Web.Security.Roles.CookieSlidingExpiration%2A> property is `true` and specifies the time-to-live in minutes for the roles cookie. To set the <xref:System.Web.Security.Roles.CookieTimeout%2A> value, add the `cookieTimeout` attribute to the  element in the Web.config file for the ASP.NET application and specify an integer value.  
+ The <xref:System.Web.Security.Roles.CookieTimeout%2A> property is used when the <xref:System.Web.Security.Roles.CookieSlidingExpiration%2A> property is `true` and specifies the time-to-live in minutes for the roles cookie. To set the <xref:System.Web.Security.Roles.CookieTimeout%2A> value, add the `cookieTimeout` attribute to the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the Web.config file for the ASP.NET application and specify an integer value.  
   
  If <xref:System.Web.Security.Roles.CookieSlidingExpiration%2A> is `false`, this property is ignored.  
   
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the <xref:System.Web.Security.Roles.CookieTimeout%2A> property to 30 minutes.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the <xref:System.Web.Security.Roles.CookieTimeout%2A> property to 30 minutes.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -886,7 +886,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Roles.CreatePersistentCookie%2A> property value is set in the configuration for an ASP.NET application using the `createPersistentCookie` attribute of the  configuration element.  
+ The <xref:System.Web.Security.Roles.CreatePersistentCookie%2A> property value is set in the configuration for an ASP.NET application using the `createPersistentCookie` attribute of the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) configuration element.  
   
  When `false`, the role-names cookie is a session cookie, that is, the cookie is lost when the browser is closed. When `true`, the role-names cookie is a persistent cookie that is available across multiple browser sessions. The persistent cookie expiration date and time are set to the current date and time plus the <xref:System.Web.Security.Roles.CookieTimeout%2A> value in minutes.  
   
@@ -1143,7 +1143,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Roles.Domain%2A> property value is set in the configuration for an ASP.NET application using the `domain` attribute of the  configuration element.  
+ The <xref:System.Web.Security.Roles.Domain%2A> property value is set in the configuration for an ASP.NET application using the `domain` attribute of the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) configuration element.  
   
  If no value is specified in the configuration for the domain attribute, the <xref:System.Web.Security.Roles.Domain%2A> property returns `null` and the role-names cookie domain defaults to the behavior of the <xref:System.Web.HttpCookie><xref:System.Web.HttpCookie.Domain%2A> property.  
   
@@ -1176,7 +1176,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `enabled` attribute to `true`.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `enabled` attribute to `true`.  
   
 ```  
 <roleManager defaultProvider="SqlProvider"   
@@ -1608,7 +1608,7 @@
    
   
 ## Examples  
- The following example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `maxCachedResults` attribute to 10.  
+ The following example shows the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application uses a <xref:System.Web.Security.SqlRoleProvider> instance and sets the `maxCachedResults` attribute to 10.  
   
 ```  
 <roleManager  
@@ -1694,7 +1694,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Roles.Providers%2A> property references all the role providers enabled for an application, including any providers added in the Web.config file. You can control which role providers are available for an application by using the `providers` element of the  section in the Web.config file for your application.  
+ The <xref:System.Web.Security.Roles.Providers%2A> property references all the role providers enabled for an application, including any providers added in the Web.config file. You can control which role providers are available for an application by using the `providers` element of the [roleManager](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164660(v%3dvs.100)) section in the Web.config file for your application.  
   
  The following example shows a  section that removes any existing providers (such as those specified in the Machine.config file) and adds a <xref:System.Web.Security.SqlRoleProvider> instance as the role provider for the application.  
   

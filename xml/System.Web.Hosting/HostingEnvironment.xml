@@ -477,7 +477,7 @@
 ## Remarks  
  Use the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A> method to stop a web application domain and remove any objects registered with the <xref:System.Web.Hosting.HostingEnvironment.RegisterObject%2A> method. This method returns immediately, before the shutdown is complete.  
   
- The <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called on each registered object with the passed parameter set to `false` to allow each registered object to shut down asynchronously. After waiting for the amount of time specified in the `shutdownTimeout` attribute of the  configuration element, the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called again with the passed parameter set to `true` for each registered object remaining.  
+ The <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called on each registered object with the passed parameter set to `false` to allow each registered object to shut down asynchronously. After waiting for the amount of time specified in the `shutdownTimeout` attribute of the `<hostingEnvironment>` configuration element, the <xref:System.Web.Hosting.IRegisteredObject.Stop%2A> method is called again with the passed parameter set to `true` for each registered object remaining.  
   
  Once all registered objects have finished shutting down, the <xref:System.Web.Hosting.HostingEnvironment> objects shuts down the application domain.  
   

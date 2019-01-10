@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.ProfileProviderAttribute> class is used to identify the profile provider for a property of a custom profile implementation. A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom type for the user profile using the `inherits` attribute of the  configuration element in the Web.config file for an application, as shown in the following example.  
+ The <xref:System.Web.Profile.ProfileProviderAttribute> class is used to identify the profile provider for a property of a custom profile implementation. A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element. You can specify a custom type for the user profile using the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element in the Web.config file for an application, as shown in the following example.  
   
 ```  
 <configuration>  
@@ -71,7 +71,7 @@
    
   
 ## Examples  
- The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application.  
+ The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element in the Web.config file for an application.  
   
  [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
  [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  
@@ -109,12 +109,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.ProfileProviderAttribute> class is used to identify the profile provider for a property of a custom profile implementation. A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the  configuration element.  
+ The <xref:System.Web.Profile.ProfileProviderAttribute> class is used to identify the profile provider for a property of a custom profile implementation. A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element.  
   
    
   
 ## Examples  
- The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application. For an example of a configuration file that specifies a custom profile implementation, see the <xref:System.Web.Profile.ProfileProviderAttribute> class overview.  
+ The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element in the Web.config file for an application. For an example of a configuration file that specifies a custom profile implementation, see the <xref:System.Web.Profile.ProfileProviderAttribute> class overview.  
   
  [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
  [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  

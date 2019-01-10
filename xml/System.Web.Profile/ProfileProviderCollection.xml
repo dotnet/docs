@@ -94,7 +94,7 @@
 ## Remarks  
  This method is not intended to be used from your code.  
   
- Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the  configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
+ Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
   
  ]]></format>
         </remarks>

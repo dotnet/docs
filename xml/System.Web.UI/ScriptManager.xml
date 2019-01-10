@@ -267,7 +267,7 @@
   
  **Globalizing the Date and Time That Are Displayed in the Browser**  
   
- The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the  directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
+ The following example shows how to set the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property so that client script can display a culture-specific date and time in the browser. In the example, the `Culture` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive is set to `auto`. As a result, the first language that is specified in the current browser settings determines the culture and UI culture for the page. For more information, see [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0).  
   
  [!code-aspx-csharp[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/CS/default.aspx#1)]
  [!code-aspx-vb[System.Web.UI.ScriptManager.EnableScriptGlobalization#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.ScriptManager.EnableScriptGlobalization/VB/default.aspx#1)]  
@@ -1155,7 +1155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property is set to `true`, globalized ECMAScript (JavaScript) functions such as the  method display culture-specific information. The culture can be set in the browser, in server code, or in the Web site's configuration file.  
+ When the <xref:System.Web.UI.ScriptManager.EnableScriptGlobalization%2A> property is set to `true`, globalized ECMAScript (JavaScript) functions such as the `Date.localeFormat` method display culture-specific information. The culture can be set in the browser, in server code, or in the Web site's configuration file.  
   
  ]]></format>
         </remarks>
@@ -1575,14 +1575,14 @@
 ## Remarks  
  The <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> property returns `false` when any one of the following conditions is true:  
   
--   In the  element of the configuration file, the `retail` attribute is set to `true`. This overrides all other settings.  
+-   In the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) element of the configuration file, the `retail` attribute is set to `true`. This overrides all other settings.  
   
 -   The <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property is set to `Auto` or to `Inherit`, and debugging is not enabled in the `compilation` section of the application-root Web.config file.  
   
 -   The <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property is set to `Release`.  
   
     > [!NOTE]
-    >  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
+    >  The `debug` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
   
  For more information, see [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
@@ -1752,7 +1752,7 @@
 ## Remarks  
  The <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property determines how scripts in the <xref:System.Web.UI.ScriptManager.Scripts%2A> collection are loaded relative to the markup for the page UI.  
   
- When the <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property is `true`, a `script` element is rendered before the page's UI markup is loaded. In this scenario, if UI elements are defined in scripts, the UI will be fully functional when it loads. However, if the script accesses UI elements in the markup for which instances have not yet been created, an error might occur. To make sure that UI elements are loaded before you access them, handle the  event of the  class.  
+ When the <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property is `true`, a `script` element is rendered before the page's UI markup is loaded. In this scenario, if UI elements are defined in scripts, the UI will be fully functional when it loads. However, if the script accesses UI elements in the markup for which instances have not yet been created, an error might occur. To make sure that UI elements are loaded before you access them, handle the `load` event of the `Sys.Application` class.  
   
  When the <xref:System.Web.UI.ScriptManager.LoadScriptsBeforeUI%2A> property is `false`, a `script` element is rendered after the page's UI markup is rendered. In this scenario, the UI loads more quickly, but it might not be fully functional if scripts that define additional UI elements have not finished loading.  
   
@@ -2649,7 +2649,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
  The <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be called only during an asynchronous postback. To determine whether a postback is asynchronous, use the <xref:System.Web.UI.ScriptManager.IsInAsyncPostBack%2A> property. This method invokes the overload that takes a parameter named `isJsonSerialized` that is set to `false`. When the `isJsonSerialized` parameter is set to `false`, the string is not serialized as JavaScript Object Notation (JSON). For more information about the JSON format, see the [Introducing JSON](https://go.microsoft.com/fwlink/?LinkId=77297) Web site.  
   
- The data items that are registered with the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the , , and  events of the  object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the  event, the custom data is passed in the  class, which exposes a  property.  
+ The data items that are registered with the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the `pageLoading`, `pageLoaded`, and `endRequest` events of the `PageRequestManager` object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the `pageLoading` event, the custom data is passed in the `PageLoadingEventArgs` class, which exposes a  property.  
   
    
   
@@ -2704,16 +2704,16 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
 ## Remarks  
  You use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send data from the server to the client during asynchronous postbacks, regardless of whether the control receiving the data is inside an <xref:System.Web.UI.UpdatePanel> control.  
   
- If the `dataItem` parameter that you register for `control` is not serialized as JSON, set the `isJsonSerialized` parameter to `false`. This avoids the need to use the  function for each string that is sent to the client. For more information about the JSON format, see the [Introducing JSON](https://go.microsoft.com/fwlink/?LinkId=77297) Web site.  
+ If the `dataItem` parameter that you register for `control` is not serialized as JSON, set the `isJsonSerialized` parameter to `false`. This avoids the need to use the `eval` function for each string that is sent to the client. For more information about the JSON format, see the [Introducing JSON](https://go.microsoft.com/fwlink/?LinkId=77297) Web site.  
   
  The <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be called only during an asynchronous postback. To determine whether a postback is asynchronous, use the <xref:System.Web.UI.ScriptManager.IsInAsyncPostBack%2A> property.  
   
- The data items that are registered by using the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the , , and  events of the  object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the  event, the custom data is passed in the  class, which exposes a  property.  
+ The data items that are registered by using the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method can be accessed in client script during the `pageLoading`, `pageLoaded`, and `endRequest` events of the `PageRequestManager` object. When you handle these events, the custom data is passed in an event argument object. For example, if you provide a handler for the `pageLoading` event, the custom data is passed in the `PageLoadingEventArgs` class, which exposes a  property.  
   
    
   
 ## Examples  
- The following example shows how to send data to two <xref:System.Web.UI.WebControls.Label> controls on a page during an asynchronous postback. The <xref:System.Web.UI.WebControls.Label> controls are not inside an <xref:System.Web.UI.UpdatePanel> control. This example shows the overload that does not take the `isJsonSerialized` parameter. Otherwise, the procedure for retrieving the  property of the  object is the same as if you did not use that overload.  
+ The following example shows how to send data to two <xref:System.Web.UI.WebControls.Label> controls on a page during an asynchronous postback. The <xref:System.Web.UI.WebControls.Label> controls are not inside an <xref:System.Web.UI.UpdatePanel> control. This example shows the overload that does not take the `isJsonSerialized` parameter. Otherwise, the procedure for retrieving the `dataItems` property of the `PageLoadingEventArgs` object is the same as if you did not use that overload.  
   
 > [!NOTE]
 >  The data that is sent in this example is for illustration only. In a real-world application, you would use the <xref:System.Web.UI.ScriptManager.RegisterDataItem%2A> method to send custom data from the server. For example, you could use the data item to send information about whether to hide or show client elements that are not inside an <xref:System.Web.UI.UpdatePanel> control.  
@@ -2767,7 +2767,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
  The <xref:System.Web.UI.ScriptManager.RegisterDispose%2A> method can be called multiple times for a control. Multiple scripts are aggregated. The order of disposing scripts matches the order in which the scripts were registered.  
   
- If you register a `dispose` script for a control that is not in an <xref:System.Web.UI.UpdatePanel> control, an exception is thrown. The `dispose` script is called between the  and  events of the  class.  
+ If you register a `dispose` script for a control that is not in an <xref:System.Web.UI.UpdatePanel> control, an exception is thrown. The `dispose` script is called between the `pageLoading` and `pageLoaded` events of the `PageRequestManager` class.  
   
  ]]></format>
         </remarks>
@@ -3508,7 +3508,7 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" /> method so that the client script that defines the  class is rendered on the page.</para>
+          <para>When overriding this method, call the base <see cref="M:System.Web.UI.ScriptManager.Render(System.Web.UI.HtmlTextWriter)" /> method so that the client script that defines the `Sys.WebForms.PageRequestManager` class is rendered on the page.</para>
         </block>
         <altmember cref="M:System.Web.UI.Control.Render(System.Web.UI.HtmlTextWriter)" />
       </Docs>
@@ -3666,13 +3666,13 @@ The registered control does not implement the <see cref="T:System.Web.UI.INaming
   
 |Value|Definition|  
 |-----------|----------------|  
-|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the  configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
+|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
 |<xref:System.Web.UI.ScriptMode.Inherit>|When applied to the <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptManager> object, this value is the same as <xref:System.Web.UI.ScriptMode.Auto>.|  
-|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `true`.|  
-|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `false`.|  
+|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `true`.|  
+|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the [deployment](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms228298(v%3dvs.100)) configuration element is set to `false`.|  
   
 > [!NOTE]
->  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
+>  The `debug` attribute of the [@ Page](https://msdn.microsoft.com/library/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
   
  For more information, see [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   

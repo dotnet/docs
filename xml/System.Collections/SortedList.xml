@@ -69,7 +69,7 @@ A <xref:System.Collections.SortedList> element can be accessed by its key, like 
   
  The capacity of a <xref:System.Collections.SortedList> object is the number of elements the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required through reallocation. The capacity can be decreased by calling <xref:System.Collections.SortedList.TrimToSize%2A> or by setting the <xref:System.Collections.SortedList.Capacity%2A> property explicitly.  
   
- For very large <xref:System.Collections.SortedList> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+ **.NET Framework only:** For very large <xref:System.Collections.SortedList> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
  The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves. In either case, a <xref:System.Collections.SortedList> does not allow duplicate keys.  
   
@@ -1732,7 +1732,7 @@ A <xref:System.Collections.SortedList> element can be accessed by its key, like 
   
  The elements of a <xref:System.Collections.SortedList> are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.SortedList.Keys%2A> property. Visual Basic implements <xref:System.Collections.SortedList.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [`this`](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.SortedList.Keys%2A> property. Visual Basic implements <xref:System.Collections.SortedList.Item%2A> as a default property, which provides the same indexing functionality.  
   
  Retrieving the value of this property is an O(log `n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>. Setting the property is an O(log `n`) operation if the key is already in the <xref:System.Collections.SortedList>. If the key is not in the list, setting the property is an O(`n`) operation for unsorted data, or O(log `n`) if the new element is added at the end of the list. If insertion causes a resize, the operation is O(`n`).  
   

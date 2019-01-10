@@ -90,7 +90,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
   
  The capacity of a <xref:System.Collections.Hashtable> is the number of elements the <xref:System.Collections.Hashtable> can hold. As elements are added to a <xref:System.Collections.Hashtable>, the capacity is automatically increased as required through reallocation.  
   
- For very large <xref:System.Collections.Hashtable> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+ **.NET Framework only:** For very large <xref:System.Collections.Hashtable> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
  The `foreach` statement of the C# language (`For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.Hashtable> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>. For example:  
   
@@ -2520,7 +2520,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
   
  Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.IList.Item%2A> property. Visual Basic implements <xref:System.Collections.Hashtable.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [`this`](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.IList.Item%2A> property. Visual Basic implements <xref:System.Collections.Hashtable.Item%2A> as a default property, which provides the same indexing functionality.  
   
  ]]></format>
         </remarks>

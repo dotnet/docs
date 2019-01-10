@@ -143,7 +143,7 @@
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets the <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A> to `MyApplication`.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets the <xref:System.Web.Security.SqlMembershipProvider.ApplicationName%2A> to `MyApplication`.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -558,7 +558,7 @@
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password reset.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password reset.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -616,7 +616,7 @@
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password retrieval.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and enables password retrieval.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -806,7 +806,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.Membership> class provides a <xref:System.Web.Security.Membership.GeneratePassword%2A> method, which generates a password of a specified size with at least the specified number of non-alphabetic characters. The <xref:System.Web.Security.SqlMembershipProvider.GeneratePassword%2A> method of the <xref:System.Web.Security.SqlMembershipProvider> calls the <xref:System.Web.Security.Membership.GeneratePassword%2A> method of the <xref:System.Web.Security.Membership> class to retrieve a random password that is at least 14 characters long. If the <xref:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength%2A> property is greater than 14, the password returned will be the length specified in the  <xref:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength%2A> property.  
+ The <xref:System.Web.Security.Membership> class provides a <xref:System.Web.Security.Membership.GeneratePassword%2A> method, which generates a password of a specified size with at least the specified number of non-alphabetic characters. The <xref:System.Web.Security.SqlMembershipProvider.GeneratePassword%2A> method of the <xref:System.Web.Security.SqlMembershipProvider> calls the <xref:System.Web.Security.Membership.GeneratePassword%2A> method of the <xref:System.Web.Security.Membership> class to retrieve a random password that is at least 14 characters long. If the <xref:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength%2A> property is greater than 14, the password returned will be the length specified in the <xref:System.Web.Security.SqlMembershipProvider.MinRequiredPasswordLength%2A> property.  
   
  You can specifically call the <xref:System.Web.Security.SqlMembershipProvider.GeneratePassword%2A> method by referencing the <xref:System.Web.Security.SqlMembershipProvider> class directly from the <xref:System.Web.Security.Membership.Provider%2A> property of the <xref:System.Web.Security.Membership> class.  
   
@@ -1259,7 +1259,7 @@
   
 -or-
   
- The <see langword="passwordFormat" /> attribute is set to <see langword="Encrypted" /> and the  configuration element specifies <see langword="AutoGenerate" /> for the <see langword="decryptionKey" /> attribute.  
+ The <see langword="passwordFormat" /> attribute is set to <see langword="Encrypted" /> and the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)">&lt;machineKey&gt;</see> configuration element specifies <see langword="AutoGenerate" /> for the <see langword="decryptionKey" /> attribute.  
   
 -or-
   
@@ -1313,14 +1313,14 @@
   
  The <xref:System.Web.Security.SqlMembershipProvider> keeps counts of invalid password attempts and invalid password-answer attempts separately. Invalid password attempts result in only the password-attempt counter being incremented. Invalid password-answer attempts result in only the password-answer counter being incremented.  
   
- The <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> property value is set in the application configuration using the `maxInvalidPasswordAttempts` attribute of the  configuration section.  
+ The <xref:System.Web.Security.Membership.MaxInvalidPasswordAttempts%2A> property value is set in the application configuration using the `maxInvalidPasswordAttempts` attribute of the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) configuration section.  
   
  If the <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> property is set to `false`, invalid password-answer attempts are not tracked.  
   
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
   
 ```  
 <membership defaultProvider="SqlProvider"   
@@ -1490,14 +1490,14 @@
   
  The <xref:System.Web.Security.SqlMembershipProvider> keeps count of invalid password attempts and invalid password-answer attempts separately. Invalid password attempts result in only the password-attempt counter being incremented. Invalid password-answer attempts result in only the password-answer counter being incremented.  
   
- The <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A> property value is set in the application configuration using the `passwordAttemptWindow` attribute of the  configuration section.  
+ The <xref:System.Web.Security.Membership.PasswordAttemptWindow%2A> property value is set in the application configuration using the `passwordAttemptWindow` attribute of the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) configuration section.  
   
  If the <xref:System.Web.Security.Membership.RequiresQuestionAndAnswer%2A> property is set to `false`, invalid password-answer attempts are not tracked.  
   
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies that the application use an instance of the <xref:System.Web.Security.SqlMembershipProvider> and sets the `maxInvalidPasswordAttempts` attribute to five invalid attempts and the `passwordAttemptWindow` to 30 minutes.  
   
 ```  
 <membership defaultProvider="SqlProvider"   
@@ -1549,16 +1549,16 @@
 ## Remarks  
  Use `Hashed` only, `Clear` and `Encrypted` are not secure. `Hashed` passwords are hashed using a one-way hash algorithm and a randomly generated salt value when stored in the database. When a password is validated, it is hashed with the salt value in the database for verification. Hashed passwords cannot be retrieved. `Encrypted` passwords are not considered safe, as a breach that reveals your database contents can also expose the encryption key. This means your encrypted passwords could be decrypted and exposed.  
   
- The <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> value is specified in the  section of the Web.config file for the ASP.NET application.  
+ The <xref:System.Web.Security.SqlMembershipProvider.PasswordFormat%2A> value is specified in the [providers](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/6d4936ht(v%3dvs.100)) section of the Web.config file for the ASP.NET application.  
   
- `Encrypted` and `Hashed` passwords are encrypted or hashed by default based on information supplied in the  element in your configuration. Note that if you specify a value of `3DES` for the `validation` attribute, or if no value is specified, hashed passwords will be hashed using the <xref:System.Security.Cryptography.SHA1> algorithm.  
+ `Encrypted` and `Hashed` passwords are encrypted or hashed by default based on information supplied in the [machineKey](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) element in your configuration. Note that if you specify a value of `3DES` for the `validation` attribute, or if no value is specified, hashed passwords will be hashed using the <xref:System.Security.Cryptography.SHA1> algorithm.  
   
- A custom hash algorithm can be defined using the `hashAlgorithmType` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element. If you choose encryption, default password encryption uses AES. You can change the encryption algorithm by setting the `decryption` attribute of the  configuration element. If you are encrypting passwords, you must provide an explicit value for the `decryptionKey` attribute in the  element. The default value of `AutoGenerate` for the `decryptionKey` attribute is not supported when using encrypted passwords with ASP.NET Membership.  
+ A custom hash algorithm can be defined using the `hashAlgorithmType` attribute of the [membership Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/b9c1ee8f-33ca-4361-8666-b42a0fe86049) configuration element. If you choose encryption, default password encryption uses AES. You can change the encryption algorithm by setting the `decryption` attribute of the [machineKey](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) configuration element. If you are encrypting passwords, you must provide an explicit value for the `decryptionKey` attribute in the [machineKey](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/w8h3skw9(v%3dvs.100)) element. The default value of `AutoGenerate` for the `decryptionKey` attribute is not supported when using encrypted passwords with ASP.NET Membership.  
   
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets its password format to `Hashed`.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and sets its password format to `Hashed`.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -1681,7 +1681,7 @@
    
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a password answer for password reset or retrieval.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the application's <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a password answer for password reset or retrieval.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  
@@ -1732,7 +1732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows the  element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a unique email address for each user name.  
+ The following code example shows the [membership](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1b9hw62f(v%3dvs.100)) element in the `system.web` section of the Web.config file for an ASP.NET application. It specifies the <xref:System.Web.Security.SqlMembershipProvider> instance and configures it to require a unique email address for each user name.  
   
 ```  
 <membership defaultProvider="SqlProvider" userIsOnlineTimeWindow="20">  

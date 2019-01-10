@@ -20,13 +20,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the  configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> and <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> methods of the <xref:System.Web.Profile.ProfileBase> base class to retrieve and set profile property values, respectively. An instance of the `ProfileCommon` class is set as the value of the <xref:System.Web.HttpContext.Profile%2A> property for the ASP.NET application.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> and <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> methods of the <xref:System.Web.Profile.ProfileBase> base class to retrieve and set profile property values, respectively. An instance of the `ProfileCommon` class is set as the value of the <xref:System.Web.HttpContext.Profile%2A> property for the ASP.NET application.  
   
  To create an instance of a user profile in an ASP.NET application, it is recommended that you use the <xref:System.Web.Profile.ProfileBase.Create%2A> method.  
   
 ## Notes to Inheritors   
 
-You can create a custom profile implementation that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the configuration element. You can specify a custom user-profile type in the web.config file with the `inherits` attribute of the configuration element, as shown in the following example. The code for the `EmployeeProfile` class is included in the Example section of this topic. 
+You can create a custom profile implementation that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element. You can specify a custom user-profile type in the web.config file with the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element, as shown in the following example. The code for the `EmployeeProfile` class is included in the Example section of this topic.
 
 [!code-xml[System.Web.Profile.ProfileBase-Config](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/config.xml)]  
 
@@ -56,7 +56,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
  [!code-aspx-csharp[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/CS/defaultcs.aspx#1)]
  [!code-aspx-vb[System.Web.Profile.HttpProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.HttpProfileBase/VB/defaultvb.aspx#1)]  
   
- The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application.  
+ The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element in the Web.config file for an application.  
   
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -88,10 +88,10 @@ You can create a custom profile implementation that inherits from the <xref:Syst
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the  configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> and <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> methods of the <xref:System.Web.Profile.ProfileBase> base class to retrieve and set profile property values, respectively. An instance of the `ProfileCommon` class is set as the value of the <xref:System.Web.HttpContext.Profile%2A> property for the ASP.NET application.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> and <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> methods of the <xref:System.Web.Profile.ProfileBase> base class to retrieve and set profile property values, respectively. An instance of the `ProfileCommon` class is set as the value of the <xref:System.Web.HttpContext.Profile%2A> property for the ASP.NET application.  
   
 > [!NOTE]
->  The base class used to generate the class stored in the <xref:System.Web.HttpContext.Profile%2A> property can be overridden using the `inherits` attribute of the  section of the configuration file. In this case you would specify a custom class that inherits from the <xref:System.Web.Profile.ProfileBase> base class.  
+>  The base class used to generate the class stored in the <xref:System.Web.HttpContext.Profile%2A> property can be overridden using the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) section of the configuration file. In this case you would specify a custom class that inherits from the <xref:System.Web.Profile.ProfileBase> base class.  
   
  This constructor is not intended to be used from application code. To create an instance of a user profile, use the <xref:System.Web.Profile.ProfileBase.Create%2A> method.  
   
@@ -140,16 +140,16 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enabled" /> attribute of the  section of the Web.config file is <see langword="false" />.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the  section of the Web.config file could not be created.  
+        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is <see langword="false" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file could not be created.  
   
  -or-  
   
- The <see langword="allowAnonymous" /> attribute for a property in the  section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the  element is set to <see langword="false" />.  
+ The <see langword="allowAnonymous" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)">&lt;anonymousIdentification&gt;</see> element is set to <see langword="false" />.  
   
  -or-  
   
- The <see langword="serializeAs" /> attribute for a property in the  section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
+ The <see langword="serializeAs" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
   
  -or-  
   
@@ -161,7 +161,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  -or-  
   
- A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+ A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
@@ -221,17 +221,17 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enabled" /> attribute of the  section of the Web.config file is <see langword="false" />.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is <see langword="false" />.</exception>
         <exception cref="T:System.Web.HttpException">The current hosting permission level is less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" />.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the  section of the Web.config file could not be created.  
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file could not be created.
   
  -or-  
   
- The <see langword="allowAnonymous" /> attribute for a property in the  section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the  element is set to <see langword="false" />.  
+ The <see langword="allowAnonymous" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)">&lt;anonymousIdentification&gt;</see> element is set to <see langword="false" />.  
   
  -or-  
   
- The <see langword="serializeAs" /> attribute for a property in the  section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
+ The <see langword="serializeAs" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
   
  -or-  
   
@@ -243,7 +243,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  -or-  
   
- A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+ A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
@@ -291,17 +291,17 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enabled" /> attribute of the  section of the Web.config file is <see langword="false" />.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">The <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is <see langword="false" />.</exception>
         <exception cref="T:System.Web.HttpException">The current hosting permission level is less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" />.</exception>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the  section of the Web.config file could not be created.  
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file could not be created.  
   
  -or-  
   
- The <see langword="allowAnonymous" /> attribute for a property in the  section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the  element is set to <see langword="false" />.  
+ The <see langword="allowAnonymous" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)">&lt;anonymousIdentification&gt;</see> element is set to <see langword="false" />.  
   
  -or-  
   
- The <see langword="serializeAs" /> attribute for a property in the  section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
+ The <see langword="serializeAs" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
   
  -or-  
   
@@ -313,7 +313,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  -or-  
   
- A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+ A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
@@ -419,7 +419,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Configuration.Provider.ProviderException">The specified profile property group name was not found in the  configuration section.</exception>
+        <exception cref="T:System.Configuration.Provider.ProviderException">The specified profile property group name was not found in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">properties</see> configuration section.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
@@ -450,7 +450,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the  configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> method to retrieve untyped values from the <xref:System.Web.Profile.ProfileProvider> that the generated accessor then casts as the specified type and returns as the property value.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> method to retrieve untyped values from the <xref:System.Web.Profile.ProfileProvider> that the generated accessor then casts as the specified type and returns as the property value.  
   
  You can use the <xref:System.Web.Profile.ProfileBase.GetPropertyValue%2A> method to retrieve property values of the user profile for your application by name. Returned values are untyped and must be cast as the specific object type when retrieved. For strongly typed access to profile property values, you can access the property by name as a member of the Profile property available on each page, for example, `Profile.CustomerAddress`.  
   
@@ -540,7 +540,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Anonymous access to the user profile is enabled using the  configuration section and the `allowAnonymous` attribute of the  configuration element used to specify profile properties.  
+ Anonymous access to the user profile is enabled using the [anonymousIdentification](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)) configuration section and the allowAnonymous attribute of the [add](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164646(v%3dvs.100)) configuration element used to specify profile properties.  
   
  ]]></format>
         </remarks>
@@ -729,15 +729,15 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the  section of the Web.config file could not be created.  
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">A property type specified in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file could not be created.
   
  -or-  
   
- The <see langword="allowAnonymous" /> attribute for a property in the  section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the  element is set to <see langword="false" />.  
+ The <see langword="allowAnonymous" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see langword="true" /> and the <see langword="enabled" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)">&lt;anonymousIdentification&gt;</see> element is set to <see langword="false" />.  
   
  -or-  
   
- The <see langword="serializeAs" /> attribute for a property in the  section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
+ The <see langword="serializeAs" /> attribute for a property in the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section of the Web.config file is set to <see cref="F:System.Configuration.SettingsSerializeAs.Binary" /> and the <see cref="P:System.Type.IsSerializable" /> property of the specified <see langword="type" /> returns <see langword="false" />.  
   
  -or-  
   
@@ -749,7 +749,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
   
  -or-  
   
- A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the  section.</exception>
+ A profile property was specified with a name that matches a property name on the base class specified in the <see langword="inherits" /> attribute of the <see href="https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)">profile</see> section.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
@@ -813,7 +813,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the  configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> method to pass property values to the <xref:System.Web.Profile.ProfileProvider> to be stored at the data source.  
+ ASP.NET uses the <xref:System.Web.Profile.ProfileBase> class to create the class used for the user profile. When an application that has the user profile enabled is started, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property defined in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration section. The strongly typed accessors of the `ProfileCommon` class call the <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> method to pass property values to the <xref:System.Web.Profile.ProfileProvider> to be stored at the data source.  
   
  You can use the <xref:System.Web.Profile.ProfileBase.SetPropertyValue%2A> method to assign property values in the user profile for your application by name. Values are untyped, and type checking will be done at run time, not compile time. For strongly typed access to profile property values, you can access the property by name as a member of the `Profile` property that is available on each page, for example, `Profile.CustomerAddress`.  
   
@@ -875,7 +875,7 @@ You can create a custom profile implementation that inherits from the <xref:Syst
 ## Remarks  
  The <xref:System.Web.Profile.ProfileBase.UserName%2A> property returns either the name of the authenticated user that the profile is associated with or the anonymous user identifier assigned to the profile if the <xref:System.Web.Profile.ProfileBase.IsAnonymous%2A> property is `true`.  
   
- Anonymous access to the user profile is enabled using the  configuration section and the `allowAnonymous` attribute of the  configuration element used to specify profile properties.  
+ Anonymous access to the user profile is enabled using the [anonymousIdentification](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)) configuration section and the allowAnonymous attribute of the [add](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164646(v%3dvs.100)) configuration element used to specify profile properties.  
   
  ]]></format>
         </remarks>

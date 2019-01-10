@@ -86,7 +86,7 @@
   
  Elements in this collection can be accessed using an integer index.  Indexes in this collection are zero-based.  
   
- For very large <xref:System.Collections.Generic.List%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+ **.NET Framework only:** For very large <xref:System.Collections.Generic.List%601> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
  <xref:System.Collections.Generic.List%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
   
@@ -102,7 +102,7 @@
  It is to your advantage to use the type-specific implementation of the <xref:System.Collections.Generic.List%601> class instead of using the <xref:System.Collections.ArrayList> class or writing a strongly typed wrapper collection yourself. The reason is your implementation must do what the .NET Framework does for you already, and the common language runtime can share Microsoft intermediate language code and metadata, which your implementation cannot.  
   
 ## F# Considerations  
- The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code.  Instead, [Lists](https://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the  [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
+ The <xref:System.Collections.Generic.List%601> class is used infrequently in F# code. Instead, [Lists](https://msdn.microsoft.com/library/83102799-f251-42e1-93ef-64232e8c5b1d), which are immutable, singly-linked lists, are typically preferred. An F# List provides an ordered, immutable series of values, and is supported for use in functional-style development. When used from F#, the <xref:System.Collections.Generic.List%601> class is typically referred to by the [ResizeArray\<'T>](https://msdn.microsoft.com/library/ee353447.aspx) type abbreviation to avoid naming conflicts with F# Lists  
   
    
   
@@ -2837,7 +2837,7 @@ Public Function StartsWith(e As Employee) As Boolean
 > [!NOTE]
 >  Visual Basic, C#, and C++ all have syntax for accessing the <xref:System.Collections.Generic.List%601.Item%2A> property without using its name. Instead, the variable containing the <xref:System.Collections.Generic.List%601> is used as if it were an array.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.List%601.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.List%601.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [`this`](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.List%601.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.List%601.Item%2A> as a default property, which provides the same indexing functionality.  
   
  [!code-csharp[List`1_Class#2](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_Class/cs/source.cs#2)]
  [!code-vb[List`1_Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_Class/vb/source.vb#2)]  

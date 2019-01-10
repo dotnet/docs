@@ -101,7 +101,7 @@
   
  The capacity of a <xref:System.Collections.Generic.SortedList%602> is the number of elements the <xref:System.Collections.Generic.SortedList%602> can hold. As elements are added to a <xref:System.Collections.Generic.SortedList%602>, the capacity is automatically increased as required by reallocating the internal array. The capacity can be decreased by calling <xref:System.Collections.Generic.SortedList%602.TrimExcess%2A> or by setting the <xref:System.Collections.Generic.SortedList%602.Capacity%2A> property explicitly. Decreasing the capacity reallocates memory and copies all the elements in the <xref:System.Collections.Generic.SortedList%602>.  
   
- For very large <xref:System.Collections.Generic.SortedList%602> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+ **.NET Framework only:** For very large <xref:System.Collections.Generic.SortedList%602> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
  The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since the elements of the <xref:System.Collections.Generic.SortedList%602> are key/value pairs, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.Generic.KeyValuePair%602>. For example:  
   
@@ -1132,7 +1132,7 @@
   
  You can also use the <xref:System.Collections.Generic.SortedList%602.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.Generic.SortedList%602>; for example, `myCollection["myNonexistentKey"] = myValue`. However, if the specified key already exists in the <xref:System.Collections.Generic.SortedList%602>, setting the <xref:System.Collections.Generic.SortedList%602.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.Generic.SortedList%602.Add%2A> method does not modify existing elements.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.SortedList%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.SortedList%602.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [`this`](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.SortedList%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.SortedList%602.Item%2A> as a default property, which provides the same indexing functionality.  
   
  Retrieving the value of this property is an O(log `n`) operation, where n is <xref:System.Collections.Generic.SortedList%602.Count%2A>. Setting the property is an O(log `n`) operation if the key is already in the <xref:System.Collections.Generic.SortedList%602>. If the key is not in the list, setting the property is an O(`n`) operation for unsorted data, or O(log `n`) if the new element is added at the end of the list. If insertion causes a resize, the operation is O(`n`).  
   

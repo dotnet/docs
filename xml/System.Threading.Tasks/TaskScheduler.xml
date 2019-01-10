@@ -70,7 +70,7 @@
   
 <a name="Stealing"></a>   
 ### Work stealing  
- Starting with the .NET Framework 4, the thread pool also features a work-stealing algorithm to help make sure that no threads are sitting idle while others still have work in their queues. When a thread-pool thread is ready for more work, it first looks at the head of its local queue, then in the global queue, and then in the local queues of other threads. If it finds a work item in the local queue of another thread, it first applies heuristics to make sure that it can run the work efficiently. If it can, it de-queues the work item from the tail (in FIFO order). This reduces contention on each local queue and preserves data locality. This architecture helps the  thread pool load-balance work more efficiently than past versions did.  
+ Starting with the .NET Framework 4, the thread pool also features a work-stealing algorithm to help make sure that no threads are sitting idle while others still have work in their queues. When a thread-pool thread is ready for more work, it first looks at the head of its local queue, then in the global queue, and then in the local queues of other threads. If it finds a work item in the local queue of another thread, it first applies heuristics to make sure that it can run the work efficiently. If it can, it de-queues the work item from the tail (in FIFO order). This reduces contention on each local queue and preserves data locality. This architecture helps the thread pool load-balance work more efficiently than past versions did.  
   
 <a name="LongRunning"></a>   
 ### Long-running tasks  
@@ -769,7 +769,7 @@ protected override IEnumerable<Task> GetScheduledTasks()
 ## Remarks  
  This application domain-wide event provides a mechanism to prevent exception escalation policy (which, by default, terminates the process) from triggering.  
   
- To make it easier for developers to write asynchronous code based on tasks, the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] changes the default exception behavior for unobserved exceptions. Although unobserved exceptions still raise the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> exception, the process does not terminate by default. Instead, the exception is handled by the runtime after the event is raised, regardless of whether an event handler observes the exception. This behavior can be configured. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the  configuration element to revert to the behavior of the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and terminate the process:  
+ To make it easier for developers to write asynchronous code based on tasks, the [!INCLUDE[net_v45](~/includes/net-v45-md.md)] changes the default exception behavior for unobserved exceptions. Although unobserved exceptions still raise the <xref:System.Threading.Tasks.TaskScheduler.UnobservedTaskException> exception, the process does not terminate by default. Instead, the exception is handled by the runtime after the event is raised, regardless of whether an event handler observes the exception. This behavior can be configured. Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], you can use the [`<ThrowUnobservedTaskExceptions>`](~/docs/framework/configure-apps/file-schema/runtime/throwunobservedtaskexceptions-element.md) configuration element to revert to the behavior of the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and terminate the process:  
   
 ```xml  
 <configuration>   

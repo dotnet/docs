@@ -23,7 +23,7 @@
 ## Remarks  
  Forms authentication enables user and password validation for Web applications that do not require Windows authentication. With forms authentication, user information is stored in an external data source, such as a <xref:System.Web.Security.Membership> database, or in the configuration file for an application. Once a user is authenticated, forms authentication maintains an authentication ticket in a cookie or in the URL so that an authenticated user does not need to supply credentials with each request.  
   
- Forms authentication is enabled by setting the `mode` attribute of the  configuration element to `Forms`. You can require that all requests to an application contain a valid user authentication ticket by using the  configuration element to deny the request of any unknown user, as shown in the following example.  
+ Forms authentication is enabled by setting the `mode` attribute of the [authentication](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/532aee0e(v%3dvs.100)) configuration element to `Forms`. You can require that all requests to an application contain a valid user authentication ticket by using the [authorization](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/8d82143t(v%3dvs.100)) configuration element to deny the request of any unknown user, as shown in the following example.  
   
 ```  
 <system.web>  
@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Authenticate method verifies user credentials that are stored in the  section of the application configuration file. Alternatively, you can use ASP.NET membership to store user credentials and call the <xref:System.Web.Security.MembershipProvider.ValidateUser%2A> to verify the credentials. For more information, see [Managing Users by Using Membership](https://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+ The Authenticate method verifies user credentials that are stored in the [credentials](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/e01fc50a(v%3dvs.100)) section of the application configuration file. Alternatively, you can use ASP.NET membership to store user credentials and call the <xref:System.Web.Security.MembershipProvider.ValidateUser%2A> to verify the credentials. For more information, see [Managing Users by Using Membership](https://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
   
  For improved security, you can encrypt passwords stored in the configuration file for an application by using the <xref:System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile%2A> method.  
   
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.CookieDomain%2A> property value is set in the configuration file for an ASP.NET application by using the `domain` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.CookieDomain%2A> property value determines the <xref:System.Web.HttpCookie.Domain%2A> that the cookie will be used for.  
+ The <xref:System.Web.Security.FormsAuthentication.CookieDomain%2A> property value is set in the configuration file for an ASP.NET application by using the `domain` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. The <xref:System.Web.Security.FormsAuthentication.CookieDomain%2A> property value determines the <xref:System.Web.HttpCookie.Domain%2A> that the cookie will be used for.  
   
    
   
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property reflects the value for the `cookieless` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property determines whether the <xref:System.Web.Security.FormsAuthenticationTicket> value will be stored in a session cookie in the browser or stored in the <xref:System.Web.HttpRequest.QueryString%2A> property.  
+ The <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property reflects the value for the `cookieless` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. The <xref:System.Web.Security.FormsAuthentication.CookieMode%2A> property determines whether the <xref:System.Web.Security.FormsAuthenticationTicket> value will be stored in a session cookie in the browser or stored in the <xref:System.Web.HttpRequest.QueryString%2A> property.  
   
 > [!NOTE]
 >  When the <xref:System.Web.Security.FormsAuthenticationTicket> value is stored in the URI, the length of the generated URI may be longer than the maximum length allowed. This is most likely to occur when the <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property is set to the application name and the application name is long (40 or more characters), when user names in the application are long, or when long <xref:System.Web.Security.FormsAuthenticationTicket.UserData%2A> strings are stored in the <xref:System.Web.Security.FormsAuthenticationTicket> value. If the generated URI is too long, the Web server will return a `400 - Bad Request` error.  
@@ -414,7 +414,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property value is set in the configuration file for an ASP.NET application by using the `defaultUrl` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property is used by the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method if no return URL is included in the request. Similarly, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method will return the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> if no return URL is included in the request.  
+ The <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property value is set in the configuration file for an ASP.NET application by using the `defaultUrl` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. The <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property is used by the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method if no return URL is included in the request. Similarly, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method will return the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> if no return URL is included in the request.  
   
    
   
@@ -457,12 +457,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property value is set using the `enableCrossAppRedirects` attribute of the  configuration element.  
+ The <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property value is set using the `enableCrossAppRedirects` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element.  
   
  The <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property is checked within the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method when the redirect URL does not point to a page in the current application. If <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `true`, then the redirect is performed; if <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> is `false`, the browser is redirected to the page defined in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property.  
   
 > [!NOTE]
->  When you redirect pages across applications, you must make sure that specific attributes in the  configuration element are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](https://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
+>  When you redirect pages across applications, you must make sure that specific attributes in the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element are duplicated across the authenticated applications. For more information and an example, see [Forms Authentication Across Applications](https://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7).  
   
 > [!IMPORTANT]
 >  When cross-application redirects are allowed, your site is vulnerable to an exploit that directs users to a malicious Web site but uses the login page for your site. Always verify that the redirect URL that is returned by the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> method is a URL that you expect so that you can make sure that you allow redirects only to approved Web sites. You must also verify that the redirect URL uses the appropriate protocol (HTTP or HTTPS). To perform these verifications, you can add a postback event handler to your login page, or you can add a handler for the <xref:System.Web.UI.WebControls.Login.LoggedIn> event of the <xref:System.Web.UI.WebControls.Login> control.  
@@ -590,7 +590,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property value is set in the configuration file for an ASP.NET application by using the `name` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> is used to reference the cookie that stores the <xref:System.Web.Security.FormsAuthenticationTicket> information.  
+ The <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> property value is set in the configuration file for an ASP.NET application by using the `name` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. The <xref:System.Web.Security.FormsAuthentication.FormsCookieName%2A> is used to reference the cookie that stores the <xref:System.Web.Security.FormsAuthenticationTicket> information.  
   
    
   
@@ -634,7 +634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property value is set in the configuration file for an ASP.NET application using the `path` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> specifies the <xref:System.Web.HttpCookie.Path%2A> for the cookie that stores the <xref:System.Web.Security.FormsAuthenticationTicket> information.  
+ The <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> property value is set in the configuration file for an ASP.NET application using the `path` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. The <xref:System.Web.Security.FormsAuthentication.FormsCookiePath%2A> specifies the <xref:System.Web.HttpCookie.Path%2A> for the cookie that stores the <xref:System.Web.Security.FormsAuthenticationTicket> information.  
   
    
   
@@ -776,7 +776,7 @@
   
  ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
   
- By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> methods returns the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow the return URL to refer to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+ By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.GetRedirectUrl%2A> methods returns the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow the return URL to refer to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element.  
 
 This method does not create a cookie.
   
@@ -841,7 +841,7 @@ This method does not create a cookie.
    
   
 ## Examples  
- The following code example takes a user name, password, and hash type and displays the  section of the configuration that includes the user definition and hashed password.  
+ The following code example takes a user name, password, and hash type and displays the [credentials](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/e01fc50a(v%3dvs.100)) section of the configuration that includes the user definition and hashed password.  
   
 > [!IMPORTANT]
 >  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
@@ -938,7 +938,7 @@ This method does not create a cookie.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> property value is set in the configuration file for an ASP.NET application by using the `loginUrl` attribute of the  configuration element. The <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> is used by the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
+ The <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> property value is set in the configuration file for an ASP.NET application by using the `loginUrl` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. The <xref:System.Web.Security.FormsAuthentication.LoginUrl%2A> is used by the <xref:System.Web.Security.FormsAuthentication.RedirectToLoginPage%2A> method.  
   
    
   
@@ -1001,7 +1001,7 @@ This method does not create a cookie.
   
  ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
   
- By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> methods redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow redirects to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+ By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> methods redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow redirects to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element.  
   
 > [!IMPORTANT]
 >  Setting the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` to allow cross-application redirects is a potential security threat. For more information, see the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property.  
@@ -1063,7 +1063,7 @@ This method does not create a cookie.
   
  ASP.NET automatically adds the return URL when the browser is redirected to the login page.  
   
- By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow redirects to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the  configuration element.  
+ By default, the `ReturnUrl` variable must refer to a page within the current application. If `ReturnUrl` refers to a page in a different application or on a different server, the <xref:System.Web.Security.FormsAuthentication.RedirectFromLoginPage%2A> method redirects to the URL in the <xref:System.Web.Security.FormsAuthentication.DefaultUrl%2A> property. If you want to allow redirects to a page outside the current application, you must set the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` using the `enableCrossAppRedirects` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element.  
   
 > [!IMPORTANT]
 >  Setting the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property to `true` to allow cross-application redirects is a potential security threat. For more information, see the <xref:System.Web.Security.FormsAuthentication.EnableCrossAppRedirects%2A> property.  
@@ -1258,7 +1258,7 @@ This method does not create a cookie.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.RequireSSL%2A> property value is set in the configuration file for an ASP.NET application by using the `requireSSL` attribute of the  configuration element. You can specify in the Web.config file for your ASP.NET application whether SSL (Secure Sockets Layer) is required to return the forms-authentication cookie to the server by setting the `requireSSL` attribute . For more information, see <xref:System.Web.HttpCookie.Secure%2A>.  
+ The <xref:System.Web.Security.FormsAuthentication.RequireSSL%2A> property value is set in the configuration file for an ASP.NET application by using the `requireSSL` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element. You can specify in the Web.config file for your ASP.NET application whether SSL (Secure Sockets Layer) is required to return the forms-authentication cookie to the server by setting the `requireSSL` attribute . For more information, see <xref:System.Web.HttpCookie.Secure%2A>.  
   
  It is recommended that if you configure `requireSSL` as `false`, you also configure `slidingExpiration` as `false`, to reduce the amount of time for which a ticket is valid.  
   
@@ -1461,7 +1461,7 @@ This method does not create a cookie.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.FormsAuthentication.SlidingExpiration%2A> property value is set using the `slidingExpiration` attribute of the  configuration element.  
+ The <xref:System.Web.Security.FormsAuthentication.SlidingExpiration%2A> property value is set using the `slidingExpiration` attribute of the [forms](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/1d3t3c61(v%3dvs.100)) configuration element.  
   
  Sliding expiration resets the expiration time for a valid authentication cookie if a request is made and more than half of the timeout interval has elapsed. If the cookie expires, the user must re-authenticate. Setting the <xref:System.Web.Security.FormsAuthentication.SlidingExpiration%2A> property to `false` can improve the security of an application by limiting the time for which an authentication cookie is valid, based on the configured `timeout` value.  
   

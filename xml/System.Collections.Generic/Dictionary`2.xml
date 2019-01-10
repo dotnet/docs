@@ -100,7 +100,7 @@
   
  The capacity of a <xref:System.Collections.Generic.Dictionary%602> is the number of elements the <xref:System.Collections.Generic.Dictionary%602> can hold. As elements are added to a <xref:System.Collections.Generic.Dictionary%602>, the capacity is automatically increased as required by reallocating the internal array.  
   
- For very large <xref:System.Collections.Generic.Dictionary%602> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+ **.NET Framework only:** For very large <xref:System.Collections.Generic.Dictionary%602> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
  For purposes of enumeration, each item in the dictionary is treated as a <xref:System.Collections.Generic.KeyValuePair%602> structure representing a value and its key. The order in which the items are returned is undefined.  
   
@@ -1169,7 +1169,7 @@
   
  A key cannot be `null`, but a value can be, if the value type `TValue` is a reference type.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.Dictionary%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.Dictionary%602.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [`this`](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.Generic.Dictionary%602.Item%2A> property. Visual Basic implements <xref:System.Collections.Generic.Dictionary%602.Item%2A> as a default property, which provides the same indexing functionality.  
   
  Getting or setting the value of this property approaches an O(1) operation.  
   

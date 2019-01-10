@@ -25,11 +25,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class is used to identify whether a property of a custom profile implementation can be accessed if the user is an anonymous user. For information about enabling anonymous identification, see the documentation provided for the  configuration element.  
+ The <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class is used to identify whether a property of a custom profile implementation can be accessed if the user is an anonymous user. For information about enabling anonymous identification, see the documentation provided for the [anonymousIdentification](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)) configuration element.  
   
  If no <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> is specified for a profile property, anonymous access of the profile property is not allowed.  
   
- A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the  configuration element. You can specify a custom user-profile type in the application's Web.config file with the `inherits` attribute of the  configuration element as shown in the following example.  
+ A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element. You can specify a custom user-profile type in the application's Web.config file with the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element as shown in the following example.  
   
  `<configuration>`  
   
@@ -106,7 +106,7 @@
    
   
 ## Examples  
- The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application.  
+ The following code example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element in the Web.config file for an application.  
   
  [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
  [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  
@@ -145,16 +145,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class is used to identify whether a property of a custom profile implementation can be accessed if the user is an anonymous user. For information about enabling anonymous identification, see the  configuration element.  
+ The <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class is used to identify whether a property of a custom profile implementation can be accessed if the user is an anonymous user. For information about enabling anonymous identification, see the [anonymousIdentification](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/91ka2e6a(v%3dvs.100)) configuration element.  
   
  If no <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> is specified for a profile property, anonymous access to the profile property is not allowed.  
   
- A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the  configuration element.  
+ A custom profile implementation is a class that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and defines properties for the user profile that are not specified in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element.  
   
    
   
 ## Examples  
- The following example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the  configuration element in the Web.config file for an application. For an example of a configuration file that specifies a custom profile implementation, see the <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class overview.  
+ The following example defines a class that inherits from the <xref:System.Web.Profile.ProfileBase> class to create a custom profile. The type of the custom profile is specified in the `inherits` attribute of the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element in the Web.config file for an application. For an example of a configuration file that specifies a custom profile implementation, see the <xref:System.Web.Profile.SettingsAllowAnonymousAttribute> class overview.  
   
  [!code-csharp[System.Web.Profile.ProfileBase#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/CS/employeeprofile.cs#1)]
  [!code-vb[System.Web.Profile.ProfileBase#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileBase/VB/employeeprofile.vb#1)]  

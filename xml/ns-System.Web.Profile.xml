@@ -7,9 +7,9 @@
 ## Remarks  
  ASP.NET profiles are used to store and retrieve user settings in a data source such as a database. Profile information and property values are managed by using a profile provider. Profile information can be stored in a Microsoft SQL Server database by using the <xref:System.Web.Profile.SqlProfileProvider> class, or in a custom data source by using an implementation of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
   
- ASP.NET profiles are configured by using the  configuration section.  
+ ASP.NET profiles are configured by using the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration section.
   
- When an application starts that has profiles enabled, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property that is defined in the  configuration section. An instance of the `ProfileCommon` class is set as the value of the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> object. You can create a custom profile implementation that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and that defines properties for the user profile that are not specified in the  configuration element.  
+ When an application starts that has profiles enabled, ASP.NET creates a new class of type `ProfileCommon`, which inherits from the <xref:System.Web.Profile.ProfileBase> class. Strongly typed accessors are added to the `ProfileCommon` class for each property that is defined in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration section. An instance of the `ProfileCommon` class is set as the value of the <xref:System.Web.HttpContext.Profile%2A> property of the current <xref:System.Web.HttpContext> object. You can create a custom profile implementation that inherits from the <xref:System.Web.Profile.ProfileBase> abstract class and that defines properties for the user profile that are not specified in the [profile](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms164644(v%3dvs.100)) configuration element.
   
  ]]></format>
     </remarks>

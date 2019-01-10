@@ -74,7 +74,7 @@
   
  The capacity of an <xref:System.Collections.ArrayList> is the number of elements the <xref:System.Collections.ArrayList> can hold. As elements are added to an <xref:System.Collections.ArrayList>, the capacity is automatically increased as required through reallocation. The capacity can be decreased by calling <xref:System.Collections.ArrayList.TrimToSize%2A> or by setting the <xref:System.Collections.ArrayList.Capacity%2A> property explicitly.  
   
- For very large <xref:System.Collections.ArrayList> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+ **.NET Framework only:** For very large <xref:System.Collections.ArrayList> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the [`<gcAllowVeryLargeObjects>`](~/docs/framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) configuration element to `true` in the run-time environment.  
   
  Elements in this collection can be accessed using an integer index.  Indexes in this collection are zero-based.  
   
@@ -2277,7 +2277,7 @@
   
  This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
   
- The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.ArrayList.Item%2A> property. Visual Basic implements <xref:System.Collections.ArrayList.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the [`this`](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.ArrayList.Item%2A> property. Visual Basic implements <xref:System.Collections.ArrayList.Item%2A> as a default property, which provides the same indexing functionality.  
   
  Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
   

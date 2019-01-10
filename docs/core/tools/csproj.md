@@ -56,7 +56,7 @@ In order to get around this error, you can either remove the explicit `Compile` 
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 </PropertyGroup>
 ```
-Setting this property to `false` will disable implicit inclusion, and the behavior will revert back to that of the previous SDKs, where you had to specify the default globs in your project. 
+Setting this property to `false` will disable implicit inclusion, reverting to the behavior of previous SDKs where you had to specify the default globs in your project.
 
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 

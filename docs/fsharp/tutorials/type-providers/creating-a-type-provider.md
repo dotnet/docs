@@ -150,7 +150,7 @@ To debug this provider by using print statements, make a script that exposes a p
 fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
-To debug this provider by using Visual Studio, open the Visual Studio command prompt with administrative credentials, and run the following command:
+To debug this provider by using Visual Studio, open the Developer Command Prompt for Visual Studio with administrative credentials, and run the following command:
 
 ```fsharp
 devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx

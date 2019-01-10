@@ -1,125 +1,123 @@
-    using System;    
-    using System.Collections.Generic;    
+using System;
+using System.Collections.Generic;
 
-    public delegate void EventHandler1(int i);
+public delegate void EventHandler1(int i);
+public delegate void EventHandler2(string s);
 
-    public delegate void EventHandler2(string s);
+public class PropertyEventsSample
+{
+    private readonly object handlerStorageLock = new object();
 
-    public class PropertyEventsSample
+    private readonly Dictionary<string, Delegate> handlers;
+    private readonly List<EventHandler1> event1Handlers = new List<EventHandler1>();
+    private readonly List<EventHandler2> event2Handlers = new List<EventHandler2>();
+
+    public PropertyEventsSample()
     {
-        private readonly Dictionary<string, Delegate> _eventTable;
-        private readonly List<EventHandler1> _event1List = new List<EventHandler1>();
-        private readonly List<EventHandler2> _event2List = new List<EventHandler2>();
-        public PropertyEventsSample()
+        handlers = new Dictionary<string, Delegate>
         {
-            _eventTable = new Dictionary<string, Delegate>
-            {
-                {"Event1", null},
-                {"Event2", null}
-            };
-        }
+            ["Event1"] = null,
+            ["Event2"] = null
+        };
+    }
 
-        public event EventHandler1 Event1
+    public event EventHandler1 Event1
+    {
+        add
         {
-            add
+            lock (handlerStorageLock)
             {
-                _event1List.Add(value);
-                lock (_eventTable)
-                {
-                    _eventTable["Event1"] = (EventHandler1) _eventTable["Event1"] + value;
-                }
-            }
-            remove
-            {
-                if (!_event1List.Contains(value)) return;
-                _event1List.Remove(value);
-                lock (_eventTable)
-                {
-                    _eventTable["Event1"] = null;
-                    foreach (var event1 in _event1List)
-                    {
-                        _eventTable["Event1"] = (EventHandler1) _eventTable["Event1"] + event1;
-                    }
-                }
+                event1Handlers.Add(value);
+                handlers["Event1"] = (EventHandler1)handlers["Event1"] + value;
             }
         }
-
-        public event EventHandler2 Event2
+        remove
         {
-            add
+            lock (handlerStorageLock)
             {
-                _event2List.Add(value);
-                lock (_eventTable)
+                if (!event1Handlers.Contains(value)) return;
+
+                event1Handlers.Remove(value);
+                handlers["Event1"] = null;
+                foreach (var handler in event1Handlers)
                 {
-                    _eventTable["Event2"] = (EventHandler2) _eventTable["Event2"] + value;
+                    handlers["Event1"] = (EventHandler1)handlers["Event1"] + handler;
                 }
-            }
-            remove
-            {
-                if (!_event2List.Contains(value)) return;
-                _event2List.Remove(value);
-                lock (_eventTable)
-                {
-                    _eventTable["Event2"] = null;
-                    foreach (var event2 in _event2List)
-                    {
-                        _eventTable["Event2"] = (EventHandler2) _eventTable["Event2"] + event2;
-                    }
-                }
-            }
-        }
-
-        internal void RaiseEvent1(int i)
-        {
-            lock (_eventTable)
-            {
-                var handler1 = (EventHandler1) _eventTable["Event1"];
-                handler1?.Invoke(i);
-            }
-        }
-
-        internal void RaiseEvent2(string s)
-        {
-            lock (_eventTable)
-            {
-                var handler2 = (EventHandler2) _eventTable["Event2"];
-                handler2?.Invoke(s);
             }
         }
     }
 
-    public static class TestClass
+    public event EventHandler2 Event2
     {
-        private static void Delegate1Method(int i)
+        add
         {
-            Console.WriteLine(i);
+            lock (handlerStorageLock)
+            {
+                event2Handlers.Add(value);
+                handlers["Event2"] = (EventHandler2)handlers["Event2"] + value;
+            }
         }
-
-        private static void Delegate2Method(string s)
+        remove
         {
-            Console.WriteLine(s);
-        }
+            lock (handlerStorageLock)
+            {
+                if (!event2Handlers.Contains(value)) return;
 
-        private static void Main()
-        {
-            var p = new PropertyEventsSample();
-
-            p.Event1 += Delegate1Method;
-            p.Event1 += Delegate1Method;
-            p.Event1 -= Delegate1Method;
-            p.RaiseEvent1(2);
-
-            p.Event2 += Delegate2Method;
-            p.Event2 += Delegate2Method;
-            p.Event2 -= Delegate2Method;
-            p.RaiseEvent2("TestString");
-
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+                event2Handlers.Remove(value);
+                handlers["Event2"] = null;
+                foreach (var handler in event2Handlers)
+                {
+                    handlers["Event2"] = (EventHandler2)handlers["Event2"] + handler;
+                }
+            }
         }
     }
-    /* Output:
-        2
-        TestString
-    */
+
+    internal void RaiseEvent1(int i)
+    {
+        EventHandler1 handler1;
+        lock (handlerStorageLock)
+        {
+            handler1 = (EventHandler1)handlers["Event1"];
+        }
+        handler1?.Invoke(i);
+    }
+
+    internal void RaiseEvent2(string s)
+    {
+        EventHandler2 handler2;
+        lock (handlerStorageLock)
+        {
+            handler2 = (EventHandler2)handlers["Event2"];
+        }
+        handler2?.Invoke(s);
+    }
+}
+
+public static class TestClass
+{
+    private static void Delegate1Method(int i) => Console.WriteLine(i);
+
+    private static void Delegate2Method(string s) => Console.WriteLine(s);
+
+    private static void Main()
+    {
+        var p = new PropertyEventsSample();
+
+        p.Event1 += Delegate1Method;
+        p.Event1 += Delegate1Method;
+        p.Event1 -= Delegate1Method;
+        p.RaiseEvent1(2);
+
+        p.Event2 += Delegate2Method;
+        p.Event2 += Delegate2Method;
+        p.Event2 -= Delegate2Method;
+        p.RaiseEvent2("TestString");
+
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
+    }
+}
+// Output:
+//   2
+//   TestString

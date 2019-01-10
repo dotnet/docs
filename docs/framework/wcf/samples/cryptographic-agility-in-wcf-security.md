@@ -9,7 +9,7 @@ This sample shows how to specify in a standard/custom algorithm to provide a cry
 
 **Service**
 
-This is a self-hosted WCF service that implements the `ICalculator` interface and secures the endpoint using the <xref:System.ServiceModel.WsHttpBinding> with secure session and reliable session disabled. The service defines a custom `SecurityAlgorithmSuite` class to specify the cryptographic algorithms to be used for message security.
+This is a self-hosted WCF service that implements the `ICalculator` interface and secures the endpoint using the <xref:System.ServiceModel.WSHttpBinding> with secure session and reliable session disabled. The service defines a custom `SecurityAlgorithmSuite` class to specify the cryptographic algorithms to be used for message security.
 
 **Client**
 

@@ -122,7 +122,7 @@ for code generation, analysis, and refactoring. This section provides a
 conceptual overview of the .NET Compiler Platform SDK. Further details can be
 found in the quickstarts, samples and tutorials sections.
 
-You can learn more about the concepts in the .NET Compiler Platform SDK in these four topics:
+You can learn more about the concepts in the .NET Compiler Platform SDK in these five topics:
 
  - [Explore code with the syntax visualizer](syntax-visualizer.md)
  - [Understand the compiler API model](compiler-api-model.md)

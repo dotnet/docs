@@ -39,6 +39,7 @@ public void ConfigureServices(IServiceCollection services)
     .AddCheck("MyDatabase", new SqlConnectionHealthCheck(Configuration["ConnectionStrings:DefaultConnection"]));
 }
 ```
+
 In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with “Healthy”.  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database’s health.
 
 The `AddCheck()` method adds a new health check with a specified name and the implementation of type `IHealthCheck`. You can add multiple Health Checks using AddCheck method, so a microservice won't provide a “healthy” status until all its checks are healthy.
@@ -107,6 +108,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     //…
 } 
 ```
+
 When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health checks that are configured in the `AddHealthChecks()` method in the Startup class and shows the result.
 
 ### HealthChecks implementation in eShopOnContainers

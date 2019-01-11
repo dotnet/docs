@@ -1,8 +1,0 @@
-# [Common Client Technologies](index.md)
-## [Manipulations and Inertia](manipulations-and-inertia.md)
-### [Manipulations and Inertia Overview](manipulations-and-inertia-overview.md)
-### [Using Manipulations and Inertia in an XNA Application](use-manipulations-and-inertia-in-an-xna-application.md)
-#### [Creating the GamePiece Class](creating-the-gamepiece-class.md)
-#### [Creating the GamePieceCollection Class](creating-the-gamepiececollection-class.md)
-#### [Creating the Game1 Class](creating-the-game1-class.md)
-#### [Full Code Listings](full-code-listings.md)

@@ -1,4 +1,4 @@
-﻿<Type Name="SymReader" FullName="System.Diagnostics.SymbolStore.SymReader">
+<Type Name="SymReader" FullName="System.Diagnostics.SymbolStore.SymReader">
   <TypeSignature Language="C#" Value="public class SymReader : System.Diagnostics.SymbolStore.SymReaderBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymReader extends System.Diagnostics.SymbolStore.SymReaderBase implements class System.Diagnostics.SymbolStore.ISymbolReader, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymReader" />
@@ -76,8 +76,8 @@ Typically, instances of this type are obtained by using the <xref:System.Diagnos
         <Parameter Name="pReader" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedReader*" />
       </Parameters>
       <Docs>
-        <param name="pReader">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pReader">A pointer to an unmanaged ISymUnmanagedReader object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymReader" /> class by using the specified pointer to an unmanaged ISymUnmanagedReader object. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

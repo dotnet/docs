@@ -1,4 +1,4 @@
-﻿<Type Name="SymVariable" FullName="System.Diagnostics.SymbolStore.SymVariable">
+<Type Name="SymVariable" FullName="System.Diagnostics.SymbolStore.SymVariable">
   <TypeSignature Language="C#" Value="public class SymVariable : System.Diagnostics.SymbolStore.SymVariableBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolVariable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymVariable extends System.Diagnostics.SymbolStore.SymVariableBase implements class System.Diagnostics.SymbolStore.ISymbolVariable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymVariable" />
@@ -76,8 +76,8 @@
         <Parameter Name="pVariable" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedVariable*" />
       </Parameters>
       <Docs>
-        <param name="pVariable">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pVariable">A pointer to the unmanaged ISymUnmanagedVariable object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymVariable" /> class using the specified pointer to an unmanaged ISymUnmanagedVariable object. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

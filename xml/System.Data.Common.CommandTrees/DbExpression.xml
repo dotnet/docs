@@ -1,4 +1,4 @@
-﻿<Type Name="DbExpression" FullName="System.Data.Common.CommandTrees.DbExpression">
+<Type Name="DbExpression" FullName="System.Data.Common.CommandTrees.DbExpression">
   <TypeSignature Language="C#" Value="public abstract class DbExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbExpression extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpression" />
@@ -49,6 +49,8 @@
         <param name="visitor">An instance of <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</param>
         <summary>Implements the visitor pattern for expressions that do not produce a result value.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Accept&lt;TResultType&gt;">
@@ -79,6 +81,8 @@
         <summary>Implements the visitor pattern for expressions that produce a result value of a specific type.</summary>
         <returns>The type of the result produced by <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is null).</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">

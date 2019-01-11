@@ -1,4 +1,4 @@
-﻿<Type Name="Enum" FullName="System.Enum">
+<Type Name="Enum" FullName="System.Enum">
   <TypeSignature Language="C#" Value="public abstract class Enum : ValueType, IComparable, IConvertible, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Enum extends System.ValueType implements class System.IComparable, class System.IConvertible, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Enum" />
@@ -356,6 +356,7 @@
           <paramref name="target" /> and this instance are not the same type.</exception>
         <exception cref="T:System.InvalidOperationException">This instance is not type <see cref="T:System.SByte" />, <see cref="T:System.Int16" />, <see cref="T:System.Int32" />, <see cref="T:System.Int64" />, <see cref="T:System.Byte" />, <see cref="T:System.UInt16" />, <see cref="T:System.UInt32" />, or <see cref="T:System.UInt64" />.</exception>
         <altmember cref="M:System.Enum.Equals(System.Object)" />
+        <exception cref="T:System.NullReferenceException">This instance is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -2199,11 +2200,15 @@ thisInstance And flag = flag
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
+        <param name="format">A format specification.</param>
         <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>This method overload is obsolete; use <see cref="M:System.Enum.ToString(System.String)" />.</summary>
+        <returns>The string representation of the value of this instance, as specified by <paramref name="format" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">
+          <paramref name="format" /> does not contain a valid format specification. </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="format" /> equals "X", but the enumeration type is unknown.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToObject">

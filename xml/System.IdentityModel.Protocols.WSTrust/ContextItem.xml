@@ -1,4 +1,4 @@
-﻿<Type Name="ContextItem" FullName="System.IdentityModel.Protocols.WSTrust.ContextItem">
+<Type Name="ContextItem" FullName="System.IdentityModel.Protocols.WSTrust.ContextItem">
   <TypeSignature Language="C#" Value="public class ContextItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.ContextItem" />
@@ -67,6 +67,10 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not an absolute URI.</exception>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -101,6 +105,10 @@
           <paramref name="name" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not an absolute URI.</exception>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -134,6 +142,11 @@
  -or-  
   
  <paramref name="scope" /> is not <see langword="null" /> and is not an absolute URI.</exception>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.-or-
+              <paramref name="scope" /> is not <see langword="null" /> and is not an absolute URI.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">

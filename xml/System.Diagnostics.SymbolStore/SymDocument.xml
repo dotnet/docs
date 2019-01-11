@@ -1,4 +1,4 @@
-﻿<Type Name="SymDocument" FullName="System.Diagnostics.SymbolStore.SymDocument">
+<Type Name="SymDocument" FullName="System.Diagnostics.SymbolStore.SymDocument">
   <TypeSignature Language="C#" Value="public class SymDocument : System.Diagnostics.SymbolStore.SymDocumentBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymDocument extends System.Diagnostics.SymbolStore.SymDocumentBase implements class System.Diagnostics.SymbolStore.ISymbolDocument, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocument" />
@@ -85,8 +85,8 @@ Typically, instances of this type are obtained by calling the <xref:System.Diagn
         <Parameter Name="pDocument" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocument*" />
       </Parameters>
       <Docs>
-        <param name="pDocument">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pDocument">A pointer to the ISymUnmanagedDocument object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymDocument" /> class using the specified pointer to an unmanaged ISymUnmanagedDocument object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

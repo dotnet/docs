@@ -1,4 +1,4 @@
-﻿<Type Name="FileInfo" FullName="System.IO.FileInfo">
+<Type Name="FileInfo" FullName="System.IO.FileInfo">
   <TypeSignature Language="C#" Value="public sealed class FileInfo : System.IO.FileSystemInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FileInfo extends System.IO.FileSystemInfo" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileInfo" />
@@ -178,7 +178,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <exception cref="T:System.ArgumentException">The file name is empty, contains only white spaces, or contains invalid characters.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Access to <paramref name="fileName" /> is denied.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="fileName" /> contains a colon (:) in the middle of the string.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
@@ -329,7 +329,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <paramref name="destFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.UnauthorizedAccessException">A directory path is passed in, or the file is being moved to a different drive.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory specified in <paramref name="destFileName" /> does not exist.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="destFileName" /> contains a colon (:) within the string but does not specify the volume.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
@@ -411,7 +411,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <paramref name="destFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The directory specified in <paramref name="destFileName" /> does not exist.</exception>
         <exception cref="T:System.UnauthorizedAccessException">A directory path is passed in, or the file is being moved to a different drive.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="destFileName" /> contains a colon (:) in the middle of the string.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
@@ -1319,7 +1319,7 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <paramref name="destFileName" /> is read-only or is a directory.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file is not found.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
-        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. </exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="destFileName" /> contains a colon (:) in the middle of the string.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for reading and writing files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
@@ -1519,6 +1519,9 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
         <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is empty or contains only white spaces.</exception>
+        <exception cref="T:System.ArgumentNullException">One or more arguments is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -1583,6 +1586,9 @@ C:\Users\userName\AppData\Local\Temp\tmp70CB.tmp was successfully deleted.
           <paramref name="path" /> is read-only or is a directory.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.IO.IOException">The file is already open.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="path" /> is empty or contains only white spaces.</exception>
+        <exception cref="T:System.ArgumentNullException">One or more arguments is null.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing to and reading from files. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /></permission>
         <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
         <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>

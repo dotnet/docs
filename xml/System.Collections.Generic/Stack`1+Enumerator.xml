@@ -1,4 +1,4 @@
-﻿<Type Name="Stack&lt;T&gt;+Enumerator" FullName="System.Collections.Generic.Stack&lt;T&gt;+Enumerator">
+<Type Name="Stack&lt;T&gt;+Enumerator" FullName="System.Collections.Generic.Stack&lt;T&gt;+Enumerator">
   <TypeSignature Language="C#" Value="public struct Stack&lt;T&gt;.Enumerator : System.Collections.Generic.IEnumerator&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi serializable sealed beforefieldinit Stack`1/Enumerator&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.IEnumerator`1&lt;!T&gt;, class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Stack`1.Enumerator" />
@@ -124,6 +124,7 @@
         </remarks>
         <altmember cref="M:System.Collections.Generic.Stack`1.Enumerator.MoveNext" />
         <altmember cref="T:System.Collections.IEnumerator" />
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element. </exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -268,6 +269,7 @@
         </remarks>
         <altmember cref="M:System.Collections.Generic.Stack`1.Enumerator.MoveNext" />
         <altmember cref="M:System.Collections.Generic.Stack`1.Enumerator.System#Collections#IEnumerator#Reset" />
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Reset">

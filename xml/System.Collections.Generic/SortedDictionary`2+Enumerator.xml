@@ -1,4 +1,4 @@
-﻿<Type Name="SortedDictionary&lt;TKey,TValue&gt;+Enumerator" FullName="System.Collections.Generic.SortedDictionary&lt;TKey,TValue&gt;+Enumerator">
+<Type Name="SortedDictionary&lt;TKey,TValue&gt;+Enumerator" FullName="System.Collections.Generic.SortedDictionary&lt;TKey,TValue&gt;+Enumerator">
   <TypeSignature Language="C#" Value="public struct SortedDictionary&lt;TKey,TValue&gt;.Enumerator : System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.IDictionaryEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit SortedDictionary`2/Enumerator&lt;TKey, TValue&gt; extends System.ValueType implements class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.IDictionaryEnumerator, class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.SortedDictionary`2.Enumerator" />
@@ -270,6 +270,7 @@
         <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
         <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
         <altmember cref="T:System.Collections.IEnumerator" />
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionaryEnumerator.Key">
@@ -326,6 +327,7 @@
         <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
         <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
         <altmember cref="T:System.Collections.IEnumerator" />
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionaryEnumerator.Value">
@@ -382,6 +384,7 @@
         <altmember cref="P:System.Collections.Generic.SortedDictionary`2.Enumerator.Current" />
         <altmember cref="M:System.Collections.Generic.SortedDictionary`2.Enumerator.MoveNext" />
         <altmember cref="T:System.Collections.IEnumerator" />
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Current">
@@ -439,6 +442,7 @@
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
         <altmember cref="T:System.Collections.IEnumerator" />
+        <exception cref="T:System.InvalidOperationException">The enumerator is positioned before the first element of the collection or after the last element. </exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerator.Reset">

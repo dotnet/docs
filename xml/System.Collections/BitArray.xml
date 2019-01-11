@@ -1,4 +1,4 @@
-﻿<Type Name="BitArray" FullName="System.Collections.BitArray">
+<Type Name="BitArray" FullName="System.Collections.BitArray">
   <TypeSignature Language="C#" Value="public sealed class BitArray : ICloneable, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit BitArray extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.BitArray" />
@@ -1298,10 +1298,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.BitArray" />. The <see cref="T:System.Array" /> must have zero-based indexing. </param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins. </param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.BitArray" /> to an <see cref="T:System.Array" />, starting at the specified <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is null. </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero. </exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.-or- The number of elements in the source <see cref="T:System.Collections.BitArray" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.-or-The type of the source <see cref="T:System.Collections.BitArray" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.Count">
@@ -1330,8 +1336,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements in the <see cref="T:System.Collections.BitArray" />.</summary>
+        <value>The number of elements in the <see cref="T:System.Collections.BitArray" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1361,8 +1367,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Collections.BitArray" /> is synchronized (thread safe).</summary>
+        <value>true if access to the <see cref="T:System.Collections.BitArray" /> is synchronized (thread safe); otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1392,8 +1398,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.BitArray" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.BitArray" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

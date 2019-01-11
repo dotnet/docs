@@ -1,4 +1,4 @@
-﻿<Type Name="SymScope" FullName="System.Diagnostics.SymbolStore.SymScope">
+<Type Name="SymScope" FullName="System.Diagnostics.SymbolStore.SymScope">
   <TypeSignature Language="C#" Value="public class SymScope : System.Diagnostics.SymbolStore.SymScopeBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymScope extends System.Diagnostics.SymbolStore.SymScopeBase implements class System.Diagnostics.SymbolStore.ISymbolScope, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymScope" />
@@ -83,8 +83,8 @@ Typically, you use the <xref:System.Diagnostics.SymbolStore.SymMethod.RootScope>
         <Parameter Name="pScope" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedScope*" />
       </Parameters>
       <Docs>
-        <param name="pScope">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pScope">A pointer to an unmanaged ISymUnmanagedScope object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymScope" /> class using the specified pointer to an unmanaged ISymUnmanagedScope object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

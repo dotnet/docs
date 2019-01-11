@@ -1,4 +1,4 @@
-﻿<Type Name="EntityParameter" FullName="System.Data.EntityClient.EntityParameter">
+<Type Name="EntityParameter" FullName="System.Data.EntityClient.EntityParameter">
   <TypeSignature Language="C#" Value="public sealed class EntityParameter : System.Data.Common.DbParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityParameter extends System.Data.Common.DbParameter implements class System.Data.IDataParameter, class System.Data.IDbDataParameter" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityParameter" />
@@ -86,6 +86,7 @@
         <param name="dbType">One of the <see cref="T:System.Data.DbType" /> values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified parameter name and data type.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -111,6 +112,7 @@
         <param name="size">The size of the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified parameter name, data type and size.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -138,6 +140,7 @@
         <param name="sourceColumn">The name of the source column.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified properties.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type. </exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,6 +181,7 @@
         <param name="value">The value of the parameter.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityParameter" /> class using the specified properties.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The value supplied in the <paramref name="dbType" /> parameter is an invalid back-end data type. </exception>
       </Docs>
     </Member>
     <Member MemberName="DbType">
@@ -239,6 +243,7 @@
         <summary>Gets or sets the direction of the parameter.</summary>
         <value>One of the <see cref="T:System.Data.ParameterDirection" /> values.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The property was not set to one of the valid <see cref="T:System.Data.ParameterDirection" /> values.</exception>
       </Docs>
     </Member>
     <Member MemberName="EdmType">

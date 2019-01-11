@@ -1,4 +1,4 @@
-﻿<Type Name="IDictionaryEnumerator" FullName="System.Collections.IDictionaryEnumerator">
+<Type Name="IDictionaryEnumerator" FullName="System.Collections.IDictionaryEnumerator">
   <TypeSignature Language="C#" Value="public interface IDictionaryEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDictionaryEnumerator implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IDictionaryEnumerator" />
@@ -132,6 +132,7 @@
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Key" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Value" />
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry. </exception>
       </Docs>
     </Member>
     <Member MemberName="Key">
@@ -189,6 +190,7 @@
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Value" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Entry" />
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry. </exception>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -245,6 +247,7 @@
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Key" />
         <altmember cref="P:System.Collections.IDictionaryEnumerator.Entry" />
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.IDictionaryEnumerator" /> is positioned before the first entry of the dictionary or after the last entry. </exception>
       </Docs>
     </Member>
   </Members>

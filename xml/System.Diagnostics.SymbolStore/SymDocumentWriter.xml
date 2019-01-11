@@ -1,4 +1,4 @@
-﻿<Type Name="SymDocumentWriter" FullName="System.Diagnostics.SymbolStore.SymDocumentWriter">
+<Type Name="SymDocumentWriter" FullName="System.Diagnostics.SymbolStore.SymDocumentWriter">
   <TypeSignature Language="C#" Value="public class SymDocumentWriter : System.Diagnostics.SymbolStore.SymDocumentWriterBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolDocumentWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymDocumentWriter extends System.Diagnostics.SymbolStore.SymDocumentWriterBase implements class System.Diagnostics.SymbolStore.ISymbolDocumentWriter, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymDocumentWriter" />
@@ -76,8 +76,8 @@
         <Parameter Name="pDocumentWriter" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedDocumentWriter*" />
       </Parameters>
       <Docs>
-        <param name="pDocumentWriter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pDocumentWriter">A pointer to the unmanaged document writer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymDocumentWriter" /> class. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="MetadataWorkspace" FullName="System.Data.Metadata.Edm.MetadataWorkspace">
+<Type Name="MetadataWorkspace" FullName="System.Data.Metadata.Edm.MetadataWorkspace">
   <TypeSignature Language="C#" Value="public sealed class MetadataWorkspace" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataWorkspace extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.MetadataWorkspace" />
@@ -853,6 +853,8 @@
         <param name="collection">The output parameter collection that needs to be filled up.</param>
         <summary>Registers the item collection with each associated data model.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The collection argument is null.</exception>
+        <exception cref="T:System.InvalidOperationException">The specified data model has already a registered an item collection.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryGetEdmSpaceType">

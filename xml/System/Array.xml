@@ -1,4 +1,4 @@
-﻿<Type Name="Array" FullName="System.Array">
+<Type Name="Array" FullName="System.Array">
   <TypeSignature Language="C#" Value="public abstract class Array : ICloneable, System.Collections.IList, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Array extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Array" />
@@ -9033,8 +9033,8 @@ int[,,] TDArray = new int[1,1,1];
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Array" /> is synchronized (thread safe).</summary>
+        <value>true if access to the <see cref="T:System.Array" /> is synchronized (thread safe); otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -9066,8 +9066,8 @@ int[,,] TDArray = new int[1,1,1];
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Array" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Array" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -9365,8 +9365,8 @@ int[,,] TDArray = new int[1,1,1];
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Array" /> has a fixed size.</summary>
+        <value>true if the <see cref="T:System.Array" /> has a fixed size; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -9398,8 +9398,8 @@ int[,,] TDArray = new int[1,1,1];
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Array" /> is read-only.</summary>
+        <value>true if the <see cref="T:System.Array" /> is read-only; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

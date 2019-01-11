@@ -1,4 +1,4 @@
-﻿<Type Name="IVector&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;">
+<Type Name="IVector&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IVector&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IVector`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IVector`1" />
@@ -614,9 +614,9 @@ For more information, see [vector::erase (STL/CLR)](/cpp/dotnet/vector-stl-clr#e
         <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="_Where_iter">To be added.</param>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Where_iter">The position in the container before which to insert.</param>
+        <param name="_Right">The enumeration to insert into the container.</param>
+        <summary>Inserts the sequence that is designated by an enumerator into the container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -643,10 +643,10 @@ For more information, see [vector::erase (STL/CLR)](/cpp/dotnet/vector-stl-clr#e
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Where">The position in the container before which to insert.</param>
+        <param name="_Val">The value of the element to insert into the container.</param>
+        <summary>Inserts the specified value into the container.</summary>
+        <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -672,10 +672,10 @@ For more information, see [vector::erase (STL/CLR)](/cpp/dotnet/vector-stl-clr#e
         <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Where">To be added.</param>
-        <param name="_First">To be added.</param>
-        <param name="_Last">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Where">The position in the container before which to insert.</param>
+        <param name="_First">The beginning position of the range to insert into the container.</param>
+        <param name="_Last">The first position beyond the range to insert into the container.</param>
+        <summary>Inserts the sequence beginning with <paramref name="_First" /> and ending with the element preceding <paramref name="_Last" /> into the container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="SymMethod" FullName="System.Diagnostics.SymbolStore.SymMethod">
+<Type Name="SymMethod" FullName="System.Diagnostics.SymbolStore.SymMethod">
   <TypeSignature Language="C#" Value="public class SymMethod : System.Diagnostics.SymbolStore.SymMethodBase, IDisposable, System.Diagnostics.SymbolStore.ISymbolMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymMethod extends System.Diagnostics.SymbolStore.SymMethodBase implements class System.Diagnostics.SymbolStore.ISymbolMethod, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymMethod" />
@@ -83,8 +83,8 @@ Typically, instances of this type are obtained by calling the <xref:System.Diagn
         <Parameter Name="pMethod" Type="System.Diagnostics.SymbolStore.Private.ISymUnmanagedMethod*" />
       </Parameters>
       <Docs>
-        <param name="pMethod">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="pMethod">A raw pointer to the unmanaged COM ISymUnmanagedMethod object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.SymbolStore.SymMethod" /> class from a raw pointer to the unmanaged ISymUnmanagedMethod interface. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

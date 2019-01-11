@@ -1,4 +1,4 @@
-﻿<Type Name="MethodInfo" FullName="System.Reflection.MethodInfo">
+<Type Name="MethodInfo" FullName="System.Reflection.MethodInfo">
   <TypeSignature Language="C#" Value="public abstract class MethodInfo : System.Reflection.MethodBase, System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodInfo extends System.Reflection.MethodBase implements class System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodInfo" />
@@ -731,8 +731,8 @@ public:
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value indicating whether the current method is a generic method.</summary>
+        <value>true if the current method is a generic method; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

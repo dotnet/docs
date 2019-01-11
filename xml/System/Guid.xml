@@ -1,4 +1,4 @@
-﻿<Type Name="Guid" FullName="System.Guid">
+<Type Name="Guid" FullName="System.Guid">
   <TypeSignature Language="C#" Value="public struct Guid : IComparable, IComparable&lt;Guid&gt;, IEquatable&lt;Guid&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Guid extends System.ValueType implements class System.IComparable, class System.IComparable`1&lt;valuetype System.Guid&gt;, class System.IEquatable`1&lt;valuetype System.Guid&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Guid" />
@@ -1277,11 +1277,12 @@
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
+        <param name="format">A single format specifier that indicates how to format the value of the <see cref="T:System.Guid" />. The <paramref name="format" /> parameter can be "N", "D", "B", "P", or "X". If <paramref name="format" /> is null or an empty string (""), "D" is used.</param>
         <param name="provider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a string representation of the value of this instance, according to the provided format specifier and culture-specific format information.</summary>
+        <returns>The value of this <see cref="T:System.Guid" /> represented as a series of lowercase hexadecimal digits in the specified format.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">The value of <paramref name="format" /> is not null, an empty string (""), or one of the following single format specifiers:"N", "D", "B", "P", or "X".</exception>
       </Docs>
     </Member>
     <Member MemberName="ToByteArray">

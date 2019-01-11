@@ -1,4 +1,4 @@
-﻿<Type Name="ClientBase&lt;TChannel&gt;+BeginOperationDelegate" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+BeginOperationDelegate">
+<Type Name="ClientBase&lt;TChannel&gt;+BeginOperationDelegate" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+BeginOperationDelegate">
   <TypeSignature Language="C#" Value="protected delegate IAsyncResult ClientBase&lt;TChannel&gt;.BeginOperationDelegate(object[] inValues, AsyncCallback asyncCallback, object state) where TChannel : class;" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed ClientBase`1/BeginOperationDelegate&lt;class TChannel&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />
@@ -39,7 +39,7 @@
     <param name="asyncCallback">Reference to the method to be called when the corresponding asynchronous operation completes.</param>
     <param name="state">An <see cref="T:System.Object" /> that lets the client distinguish between different asynchronous calls. It is made available to the client in the arguments parameter of the event completion callback.</param>
     <summary>A delegate that is used by <see cref="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase{`0}.BeginOperationDelegate,System.Object[],System.ServiceModel.ClientBase{`0}.EndOperationDelegate,System.Threading.SendOrPostCallback,System.Object)" /> for calling asynchronous operations on the client.</summary>
-    <returns>To be added.</returns>
+    <returns>The result of the asynchronous call.</returns>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

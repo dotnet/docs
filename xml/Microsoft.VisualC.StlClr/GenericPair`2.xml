@@ -1,4 +1,4 @@
-﻿<Type Name="GenericPair&lt;TValue1,TValue2&gt;" FullName="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;">
+<Type Name="GenericPair&lt;TValue1,TValue2&gt;" FullName="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;">
   <TypeSignature Language="C#" Value="public class GenericPair&lt;TValue1,TValue2&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericPair`2&lt;TValue1, TValue2&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.GenericPair`2" />
@@ -96,8 +96,8 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to be copied into the new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</param>
+        <summary>Constructs a new <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -277,9 +277,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to copy.</param>
+        <summary>Replaces the stored pair of values in the <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object.</summary>
+        <returns>This method returns *this.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,8 +336,8 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> object to swap contents with.</param>
+        <summary>Swaps the contents of two <see cref="T:Microsoft.VisualC.StlClr.GenericPair`2" /> objects.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

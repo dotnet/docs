@@ -1,4 +1,4 @@
-﻿<Type Name="GroupCollection" FullName="System.Text.RegularExpressions.GroupCollection">
+<Type Name="GroupCollection" FullName="System.Text.RegularExpressions.GroupCollection">
   <TypeSignature Language="C#" Value="public class GroupCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit GroupCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.GroupCollection" />
@@ -893,10 +893,14 @@
         <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array the collection is to be copied into.</param>
+        <param name="arrayIndex">The zero-based index in the destination array where copying is to begin.</param>
+        <summary>Copies all the elements of the collection to the specified array beginning at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is null.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="arrayIndex" /> is outside the bounds of <paramref name="array" />.-or-<paramref name="arrayIndex" /> plus <see cref="P:System.Text.RegularExpressions.GroupCollection.Count" /> is outside the bounds of <paramref name="array" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -927,8 +931,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether access to the collection is synchronized (thread-safe).</summary>
+        <value>false in all cases.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -960,8 +964,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

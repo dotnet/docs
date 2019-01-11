@@ -1,4 +1,4 @@
-﻿<Type Name="IEnumerator" FullName="System.Collections.IEnumerator">
+<Type Name="IEnumerator" FullName="System.Collections.IEnumerator">
   <TypeSignature Language="C#" Value="public interface IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IEnumerator" />
@@ -195,6 +195,7 @@
         </remarks>
         <altmember cref="P:System.Collections.IEnumerator.Current" />
         <altmember cref="M:System.Collections.IEnumerator.Reset" />
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created. </exception>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -254,6 +255,7 @@
         </block>
         <altmember cref="M:System.Collections.IEnumerator.MoveNext" />
         <altmember cref="P:System.Collections.IEnumerator.Current" />
+        <exception cref="T:System.InvalidOperationException">The collection was modified after the enumerator was created. </exception>
       </Docs>
     </Member>
   </Members>

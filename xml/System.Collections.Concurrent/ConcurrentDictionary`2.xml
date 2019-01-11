@@ -1,4 +1,4 @@
-﻿<Type Name="ConcurrentDictionary&lt;TKey,TValue&gt;" FullName="System.Collections.Concurrent.ConcurrentDictionary&lt;TKey,TValue&gt;">
+<Type Name="ConcurrentDictionary&lt;TKey,TValue&gt;" FullName="System.Collections.Concurrent.ConcurrentDictionary&lt;TKey,TValue&gt;">
   <TypeSignature Language="C#" Value="public class ConcurrentDictionary&lt;TKey,TValue&gt; : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.Generic.IReadOnlyCollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;, System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;, System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConcurrentDictionary`2&lt;TKey, TValue&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;!TKey, !TValue&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt;, class System.Collections.Generic.IReadOnlyDictionary`2&lt;!TKey, !TValue&gt;, class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.ConcurrentDictionary`2" />
@@ -1145,7 +1145,8 @@
       <Docs>
         <param name="keyValuePair">The key to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         <summary>Gets whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key.</summary>
-        <returns>To be added.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
@@ -1220,7 +1221,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="T:System.Collections.ICollection" /> is read-only.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Collections.ICollection" /> is read-only; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.ICollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
@@ -1260,7 +1262,8 @@
       <Docs>
         <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to remove.</param>
         <summary>Removes the specified key/value pair from the collection.</summary>
-        <returns><see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns false if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
+        <returns>
+          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns false if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>

@@ -1,4 +1,4 @@
-﻿<Type Name="GC" FullName="System.GC">
+<Type Name="GC" FullName="System.GC">
   <TypeSignature Language="C#" Value="public static class GC" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GC extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.GC" />
@@ -1146,6 +1146,7 @@ This method is most useful in monitoring scenarios for measuring the difference 
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <related type="Article" href="https://msdn.microsoft.com/library/e12d8e74-31e3-4035-a87d-f3e66f0a9b89">Garbage Collection Notifications</related>
+        <exception cref="T:System.InvalidOperationException">This member is not available when concurrent garbage collection is enabled. See the &lt;gcConcurrent&gt; runtime setting for information about how to disable concurrent garbage collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemoveMemoryPressure">

@@ -1,4 +1,4 @@
-﻿<Type Name="ReverseBidirectionalIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;">
+<Type Name="ReverseBidirectionalIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class ReverseBidirectionalIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReverseBidirectionalIterator`1&lt;TValue&gt; extends System.Object implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" />
@@ -115,8 +115,8 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to copy.</param>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,9 +250,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> objects are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -390,9 +391,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to assign to the current object.</param>
+        <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to the current object.</summary>
+        <returns>The current object (*this).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -527,9 +528,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -675,9 +677,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -709,9 +712,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,9 +746,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

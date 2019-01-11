@@ -1,4 +1,4 @@
-﻿<Type Name="IPAddress" FullName="System.Net.IPAddress">
+<Type Name="IPAddress" FullName="System.Net.IPAddress">
   <TypeSignature Language="C#" Value="public class IPAddress" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit IPAddress extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.IPAddress" />
@@ -1968,6 +1968,8 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ipString" /> is null. </exception>
       </Docs>
     </Member>
     <Member MemberName="TryWriteBytes">

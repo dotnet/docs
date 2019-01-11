@@ -1,4 +1,4 @@
-﻿<Type Name="IDeque&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt;">
+<Type Name="IDeque&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IDeque&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IDeque&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IDeque`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IDeque`1" />
@@ -632,9 +632,9 @@ For more information, see [deque::erase (STL/CLR)](/cpp/dotnet/deque-stl-clr#era
         <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="_Where_iter">To be added.</param>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Where_iter">The location in the container in front of which to insert.</param>
+        <param name="_Right">The enumeration of elements to insert into the container.</param>
+        <summary>Adds elements at a specified position in the container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,10 +661,10 @@ For more information, see [deque::erase (STL/CLR)](/cpp/dotnet/deque-stl-clr#era
       </Parameters>
       <Docs>
         <param name="">To be added.</param>
-        <param name="_Where">To be added.</param>
-        <param name="_Val">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Where">The location in the container in front of which to insert.</param>
+        <param name="_Val">The element to be inserted into the container.</param>
+        <summary>Adds an element at a specified position in the container.</summary>
+        <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -690,10 +690,10 @@ For more information, see [deque::erase (STL/CLR)](/cpp/dotnet/deque-stl-clr#era
         <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Where">To be added.</param>
-        <param name="_First">To be added.</param>
-        <param name="_Last">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Where">The location in the container in front of which to insert.</param>
+        <param name="_First">The beginning of the range to insert into the container.</param>
+        <param name="_Last">The first position beyond the end of the range to insert into the container.</param>
+        <summary>Adds elements at a specified position in the container.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

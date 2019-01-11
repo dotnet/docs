@@ -72,8 +72,8 @@ Specifies binding, contract, and address properties for a service endpoint, whic
           binding="customBinding"
           contract="HelloWorld">
   <headers>
-    <Region xmlns="http://tempuri.org/">EastCoast</Region>
-    <Member xmlns="http://tempuri.org/">Gold</Member>
+    <region xmlns="http://tempuri.org/">EastCoast</region>
+    <member xmlns="http://tempuri.org/">Gold</member>
   </headers>
 </endpoint>
 ```  

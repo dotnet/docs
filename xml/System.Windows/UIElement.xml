@@ -1775,10 +1775,11 @@ Image with an Elliptical Clip Region
 ## Remarks  
  To be focusable, <xref:System.Windows.UIElement.Focusable%2A> and <xref:System.Windows.UIElement.IsEnabled%2A> must both be `true`.  
   
- Even if an element is focusable and enabled, event handling within a specific tree, (such as for a composite control) might respond to the preview focus events by not allowing focus there, thus this method would return `false`.  
-  
- Focus in general is governed by two separate concepts: keyboard focus and logical focus, which are not always identical.  For more information, see [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md) or [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
-  
+ Even if the element is focusable and valid, the `Focus` preview events may be processed in a specific tree, and focus on that element may not be allowed (for example, in a composite control).
+ In such a case, this method returns `false`.
+ 
+ In general, focus is controlled by two different concepts: keyboard focus and logical focus. These two concepts are not always the same. For more information, see [Focus summary](~/docs/framework/wpf/advanced/focus-overview.md) and [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).
+ 
  If calling <xref:System.Windows.UIElement.Focus%2A> returns `true`, <xref:System.Windows.UIElement.IsKeyboardFocused%2A> and <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> are also `true`.  
   
  If the related properties are not already `true`, when you call  <xref:System.Windows.UIElement.Focus%2A>, one or more of the following events are raised in the following order: <xref:System.Windows.UIElement.PreviewLostKeyboardFocus>, <xref:System.Windows.UIElement.PreviewGotKeyboardFocus> (source is the new focus target), <xref:System.Windows.UIElement.IsKeyboardFocusedChanged>, <xref:System.Windows.UIElement.IsKeyboardFocusWithinChanged>, <xref:System.Windows.UIElement.LostKeyboardFocus>, <xref:System.Windows.UIElement.GotKeyboardFocus> (source is the new focus target).  

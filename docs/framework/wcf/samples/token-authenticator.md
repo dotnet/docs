@@ -341,7 +341,7 @@ static void DisplayIdentityInformation()
   
 2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The service App.config file must be updated to reflect this new certificate name. You can create one by using the Setup.bat if you set the `%SERVER_NAME%` variable to fully-qualified host name of the computer on which the service will run. Note that the setup.bat file must be run from a Visual Studio command prompt opened with administrator privileges.  
+3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The service App.config file must be updated to reflect this new certificate name. You can create one by using the Setup.bat if you set the `%SERVER_NAME%` variable to fully-qualified host name of the computer on which the service will run. Note that the setup.bat file must be run from a Developer Command Prompt for Visual Studio opened with administrator privileges.  
   
 4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this except when the server certificate is issued by a client trusted issuer.  
   

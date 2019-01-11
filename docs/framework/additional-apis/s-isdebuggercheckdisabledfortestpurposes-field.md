@@ -3,6 +3,8 @@ title: "s_isDebuggerCheckDisabledForTestPurposes Field"
 ms.date: "03/30/2017"
 ms.technology: 
   - "dotnet-wpf"
+topic_type:
+  - "apiref"
 api_name: 
   - "System.Windows.Diagnostics.VisualDiagnostics.s_isDebuggerCheckDisabledForTestPurposes"
 api_location: 

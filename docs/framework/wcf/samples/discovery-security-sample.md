@@ -54,7 +54,7 @@ The Discovery specification does not require that endpoints that participate in 
   
 #### To use this sample  
   
-1.  Execute the Setup.bat script from a Visual Studio command prompt. The sample uses certificates to sign and verify messages. The script creates the certificates using Makecert.exe and then installs them using Certmgr.exe. The script must be run with administrator privileges.  
+1.  Execute the Setup.bat script from a Developer Command Prompt for Visual Studio. The sample uses certificates to sign and verify messages. The script creates the certificates using Makecert.exe and then installs them using Certmgr.exe. The script must be run with administrator privileges.  
   
 2.  To build and run the sample, open the Security.sln file in Visual Studio and choose **Rebuild All**. Update the solution properties to start multiple projects: select **Start** for all projects except DiscoverySecureChannels. Run the solution normally.  
   

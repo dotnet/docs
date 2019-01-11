@@ -39,7 +39,7 @@ There are a number of ways to sign an assembly with a strong name:
   
 ### To create and sign an assembly with a strong name by using the Assembly Linker  
   
--   At the [Visual Studio Command Prompt](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
+-   At the [Developer Command Prompt for Visual Studio](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
   
      **al** **/out:**\<*assemblyName*> *\<moduleName>* **/keyfile:**\<*keyfileName*>  
   

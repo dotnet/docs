@@ -25,6 +25,9 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
 ### Attributes  
  None.  
   
+### Child Elements  
+ User-defined XML elements.  
+  
 ### Parent Elements  
   
 |Element|Description|  

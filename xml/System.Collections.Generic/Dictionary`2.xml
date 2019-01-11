@@ -91,7 +91,7 @@
 > [!NOTE]
 >  The speed of retrieval depends on the quality of the hashing algorithm of the type specified for `TKey`.  
   
- As long as an object is used as a key in the <xref:System.Collections.Generic.Dictionary%602>, it must not change in any way that affects its hash value. Every key in a <xref:System.Collections.Generic.Dictionary%602> must be unique according to the dictionary's equality comparer. A key cannot be `null`, but a value can be, if the value type `TValue` is a reference type.  
+ As long as an object is used as a key in the <xref:System.Collections.Generic.Dictionary%602>, it must not change in any way that affects its hash value. Every key in a <xref:System.Collections.Generic.Dictionary%602> must be unique according to the dictionary's equality comparer. A key cannot be `null`, but a value can be, if its type `TValue` is a reference type.  
   
  <xref:System.Collections.Generic.Dictionary%602> requires an equality implementation to determine whether keys are equal. You can specify an implementation of the <xref:System.Collections.Generic.IEqualityComparer%601> generic interface by using a constructor that accepts a `comparer` parameter; if you do not specify an implementation, the default generic equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> is used. If type `TKey` implements the <xref:System.IEquatable%601?displayProperty=nameWithType> generic interface, the default equality comparer uses that implementation.  
   

@@ -46,11 +46,11 @@ Once found, the library is loaded with `LoadLibraryEx` (on Windows) or `dlopen` 
 
 CoreClrHost has several important methods useful for hosting .NET Core:
 
-* `coreclr_initialize`: Starts the .NET Core runtime and sets up the default (and only) AppDomain
-* `coreclr_execute_assembly`: Executes a managed assembly
-* `coreclr_create_delegate`: Creates a function pointer to a managed method
-* `coreclr_shutdown`: Shuts down the .NET Core runtime
-* `coreclr_shutdown_2`: Like `coreclr_shutdown`, but also retrieves the managed code's exit code
+* `coreclr_initialize`: Starts the .NET Core runtime and sets up the default (and only) AppDomain.
+* `coreclr_execute_assembly`: Executes a managed assembly.
+* `coreclr_create_delegate`: Creates a function pointer to a managed method.
+* `coreclr_shutdown`: Shuts down the .NET Core runtime.
+* `coreclr_shutdown_2`: Like `coreclr_shutdown`, but also retrieves the managed code's exit code.
 
 After loading the CoreCLR library, the next step is to get references to these functions using `GetProcAddress` (on Windows) or `dlsym` (on Linux/Mac).
 
@@ -62,11 +62,16 @@ Before starting the runtime, it is necessary to prepare some properties to speci
 
 Common properties include:
 
-* `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resovle by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
-* `APP_PATHS` This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
-*  `APP_NI_PATHS` This list is similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
-*  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native libraries called via p/invoke.
-*  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
+* `TRUSTED_PLATFORM_ASSEMBLIES` 
+   This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux) which the runtime will be able to resovle by default. Some hosts have hard-coded manifests listing assemblies they can load. Others will put any library in certain locations (next to *coreclr.dll*, for example) on this list.
+* `APP_PATHS` 
+   This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
+*  `APP_NI_PATHS` 
+   This list is similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
+*  `NATIVE_DLL_SEARCH_DIRECTORIES` 
+   This property is a list of paths the loader should probe when looking for native libraries called via p/invoke.
+*  `PLATFORM_RESOURCE_ROOTS` 
+   This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 
 In this sample host, the TPA list is constructed by simply listing all libraries in the current directory:
 
@@ -78,13 +83,13 @@ Because the sample is simple, it only needs the `TRUSTED_PLATFORM_ASSEMBLIES` pr
 
 ### Step 4 - Start the runtime
 
-Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the runtime and creates the default AppDomain all with a single call. The `coreclr_initialize` function takes a base path, name, and the properties described earlier and returns back a handle to the host via the `hostHandle` parameter.
+Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the runtime and create the default AppDomain all with a single call. The `coreclr_initialize` function takes a base path, name, and the properties described earlier and returns back a handle to the host via the `hostHandle` parameter.
 
 [!code-cpp[CoreClrHost#4](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#4)]
 
 ### Step 5 - Run managed code!
 
-With the runtime started, the host can call managed code. This can be done a couple different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the assembly name, namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
+With the runtime started, the host can call managed code. This can be done in a couple of different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the assembly name, namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
 
 [!code-cpp[CoreClrHost#5](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#5)]
 
@@ -104,7 +109,7 @@ int hr = executeAssembly(
 
 ### Step 6 - Shutdown and clean up
 
-Finally, when the host is done running managed code, the .NET Core runtime is shut down with the `coreclr_shutdown` or `coreclr_shutdown_2`.
+Finally, when the host is done running managed code, the .NET Core runtime is shut down with `coreclr_shutdown` or `coreclr_shutdown_2`.
 
 [!code-cpp[CoreClrHost#6](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#6)]
 
@@ -123,7 +128,7 @@ After referencing necessary headers ([mscoree.h](https://github.com/dotnet/corec
 [!code-cpp[NetCoreHost#1](~/samples/core/hosting/HostWithMscoree/host.cpp#1)]
 
 ### Step 2 - Find and load CoreCLR
-The .NET Core runtime APIs are in *CoreCLR.dll* (on Windows). To get our hosting interface (`ICLRRuntimeHost2`), it's necessary to find and load *CoreCLR.dll*. It is up to the host to define a convention for how it will locate *CoreCLR.dll*. Some hosts expect the file to be present in a well-known machine-wide location (such as %programfiles%\dotnet\shared\Microsoft.NETCore.App\2.1.6). Others expect that *CoreCLR.dll* will be loaded from a location next to either the host itself or the app to be hosted. Still others might consult an environment variable to find the library.
+The .NET Core runtime APIs are in *CoreCLR.dll* (on Windows). To get our hosting interface (`ICLRRuntimeHost2`), it's necessary to find and load *CoreCLR.dll*. It is up to the host to define a convention for how it will locate *CoreCLR.dll*. Some hosts expect the file to be present in a well-known machine-wide location (such as *%programfiles%\dotnet\shared\Microsoft.NETCore.App\2.1.6*). Others expect that *CoreCLR.dll* will be loaded from a location next to either the host itself or the app to be hosted. Still others might consult an environment variable to find the library.
 
 On Linux or Mac, the core runtime library is *libcoreclr.so* or *libcoreclr.dylib*, respectively.
 
@@ -137,7 +142,7 @@ The `ICLRRuntimeHost2` hosting interface is retrieved by calling `GetProcAddress
 [!code-cpp[NetCoreHost#3](~/samples/core/hosting/HostWithMscoree/host.cpp#3)]
 
 ### Step 4 - Setting startup flags and starting the runtime
-With an `ICLRRuntimeHost2` in-hand, we can now specify runtime-wide startup flags and start the runtime. Startup flags will determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).
+With an `ICLRRuntimeHost2` in-hand, we can now specify runtime-wide startup flags and start the runtime. Startup flags determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).
 
 [!code-cpp[NetCoreHost#4](~/samples/core/hosting/HostWithMscoree/host.cpp#4)]
 
@@ -158,11 +163,16 @@ After deciding which AppDomain flags to use, AppDomain properties must be define
 
 Common AppDomain properties include:
 
-* `TRUSTED_PLATFORM_ASSEMBLIES` This is a list of assembly paths (delimited by ';' on Windows and ':' on Linux/Mac) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
-* `APP_PATHS` This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
-*  `APP_NI_PATHS` This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
-*  `NATIVE_DLL_SEARCH_DIRECTORIES` This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
-*  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
+* `TRUSTED_PLATFORM_ASSEMBLIES` 
+   This is a list of assembly paths (delimited by `;` on Windows and `:` on Linux/Mac) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
+* `APP_PATHS` 
+   This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
+*  `APP_NI_PATHS` 
+   This list is very similar to APP_PATHS except that it's meant to be paths that will be probed for native images.
+*  `NATIVE_DLL_SEARCH_DIRECTORIES` 
+   This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
+*  `PLATFORM_RESOURCE_ROOTS` 
+   This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 
 In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithMscoree), these properties are set up as follows:
 

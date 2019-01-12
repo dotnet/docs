@@ -1,6 +1,6 @@
 ---
-title: "How to: Implement a Windows Communication Foundation Service Contract"
-ms.date: 09/14/2018
+title: Tutorial: Implement a Windows Communication Foundation service contract
+ms.date: 01/10/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -8,13 +8,13 @@ helpviewer_keywords:
   - "service contracts [WCF], implementing"
 ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
 ---
-# How to: Implement a Windows Communication Foundation Service Contract
+# Tutorial: Implement a Windows Communication Foundation service contract
 
-This is the second of six tasks required to create a basic Windows Communication Foundation (WCF) service and a client that can call the service. For an overview of all six tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.
+This tutorial describes the second of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Getting started tutorial](getting-started-tutorial.md).
 
-The next step in creating a WCF application is to implement the service interface. This involves creating a class called `CalculatorService` that implements the user-defined `ICalculator` interface..
+The next step in creating a WCF application is to implement the service interface. This step involves creating a class named `CalculatorService` that implements the user-defined `ICalculator` interface.
 
-## To implement a WCF service contract
+## Implement a WCF service contract
 
 Open the Service1.cs or Service1.vb file and add the following code:
 
@@ -241,18 +241,18 @@ End Namespace
 
 ## Compile the code
 
-Build the solution to ensure there are no compilation errors. If you're using Visual Studio, on the **Build** menu select **Build Solution** (or press **Ctrl**+**Shift**+**B**).
+Build the solution to verify there aren't any compilation errors. If you're using Visual Studio, on the **Build** menu select **Build Solution** (or press **Ctrl**+**Shift**+**B**).
 
 ## Next steps
 
-Now the service contract is created and implemented. In the next step, you run the service.
+The service contract has now been created and implemented. In the next step, you run the service.
 
 > [!div class="nextstepaction"]
-> [How to: Host and Run a Basic Service](../../../docs/framework/wcf/how-to-host-and-run-a-basic-wcf-service.md)
+> [How to: Host and Run a Basic Service](how-to-host-and-run-a-basic-wcf-service.md)
 
-For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md).
+For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](troubleshooting-the-getting-started-tutorial.md).
 
 ## See also
 
-- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)
+- [Getting started sample](samples/getting-started-sample.md)
+- [Self-Host](samples/self-host.md)

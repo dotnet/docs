@@ -1,6 +1,6 @@
 ---
-title: "How to: Host and Run a Basic Windows Communication Foundation Service"
-ms.date: 09/14/2018
+title: Tutorial: Host and run a basic Windows Communication Foundation service
+ms.date: 01/10/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,13 +9,13 @@ helpviewer_keywords:
   - "WCF services [WCF], running"
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
 ---
-# How to: Host and Run a Basic Windows Communication Foundation Service
+# Tutorial: Host and run a basic Windows Communication Foundation service
 
-This is the third of six tasks required to create a Windows Communication Foundation (WCF) application. For an overview of all six of the tasks, see the [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md) topic.
+This tutorial describes the third of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Getting started tutorial](getting-started-tutorial.md).
 
-This topic describes how to host a Windows Communication Foundation (WCF) service in a console application. This procedure consists of the following steps:
+The next step in creating a WCF application is to host a Windows Communication Foundation (WCF) service in a console application. This procedure consists of the following steps:
 
-- Create a console application project to host the service.
+- Create a console application project for hosting the service.
 
 - Create a service host for the service.
 
@@ -25,13 +25,31 @@ This topic describes how to host a Windows Communication Foundation (WCF) servic
 
 A complete listing of the code written in this task is provided in the example following the procedure.
 
-## Create a new console application to host the service
+## Create a console application for hosting the service
 
-1. Create a new Console Application project in Visual Studio by right-clicking on the Getting Started solution and selecting **Add** > **New Project**. In the **Add New Project** dialog, on the left-hand side, select the **Windows Desktop** category under **Visual C#** or **Visual Basic**. Select the **Console App (.NET Framework)** template, and then name the project **GettingStartedHost**.
+1. Create a Console Application project in Visual Studio. 
+ 
+    1. Right-click the Getting Started solution and select **Add** > **New Project**. 
 
-2. Add a reference to the GettingStartedLib project to the GettingStartedHost project. Right-click on the **References** folder under the GettingStartedHost project in **Solution Explorer**, and then select **Add Reference**. In the **Add Reference** dialog, select **Solution** on the left-hand side of the dialog, select GettingStartedLib in the center section of the dialog, and then choose **Add**. This makes the types defined in GettingStartedLib available to the GettingStartedHost project.
+    2. In the **Add New Project** window, on the left-hand side, select the **Windows Desktop** category under **Visual C#** or **Visual Basic**. 
 
-3. Add a reference to System.ServiceModel to the GettingStartedHost project. Right-click the **References** folder under the GettingStartedHost project in **Solution Explorer** and select **Add Reference**. In the **Add Reference** dialog, select **Framework** on the left-hand side of the dialog under **Assemblies**. Find and select **System.ServiceModel**, and then choose **OK**. Save the solution by selecting **File** > **Save All**.
+    3. Select the **Console App (.NET Framework)** template, and then name the project **GettingStartedHost**.
+
+2. Add a reference to the GettingStartedLib project to the GettingStartedHost project. 
+
+    1. Right-click the **References** folder under the GettingStartedHost project in **Solution Explorer**, and then select **Add Reference**. 
+
+    2. In the **Add Reference** dialog, select **Solution** on the left side of the window, select **GettingStartedLib** in the center section of the window, and then choose **Add**. This action makes the types defined in GettingStartedLib available to the GettingStartedHost project.
+
+3. Add a reference to System.ServiceModel to the GettingStartedHost project. 
+
+    1. Right-click the **References** folder under the GettingStartedHost project in **Solution Explorer** and select **Add Reference**.
+    
+    2. In the **Add Reference** window, select **Framework** under **Assemblies** on the left side of the window. 
+
+    3. Find and select **System.ServiceModel**, and then choose **OK**. 
+    
+    4. Save the solution by selecting **File** > **Save All**.
 
 ## Host the service
 
@@ -132,18 +150,18 @@ Module Service
 End Module
 ```
 
-**Step 1** - Creates an instance of the Uri class to hold the base address of the service. Services are identified by a URL which contains a base address and an optional URI. The base address is formatted as follows:[transport]://[machine-name or domain][:optional port #]/[optional URI segment]The base address for the calculator service uses the HTTP transport, localhost, port 8000, and the URI segment "GettingStarted"
+**Step 1** - Creates an instance of the `Uri` class to hold the base address of the service. A URL that contains a base address and an optional URI identifies a service. The base address is formatted as follows: <transport>://<machine-name or domain><:optional port #>/<optional URI segment>. The base address for the calculator service uses the HTTP transport, localhost, port 8000, and the URI segment, GettingStarted.
 
 **Step 2** – Creates an instance of the <xref:System.ServiceModel.ServiceHost> class to host the service. The constructor takes two parameters, the type of the class that implements the service contract, and the base address of the service.
 
-**Step 3** – Creates a <xref:System.ServiceModel.Description.ServiceEndpoint> instance. A service endpoint is composed of an address, a binding, and a service contract. The <xref:System.ServiceModel.Description.ServiceEndpoint> constructor therefore takes the service contract interface type, a binding, and an address. The service contract is `ICalculator`, which you defined and implement in the service type. The binding used in this sample is <xref:System.ServiceModel.WSHttpBinding> which is a built-in binding that is used for connecting to endpoints that conform to the WS-* specifications. For more information about WCF bindings, see [WCF Bindings Overview](../../../docs/framework/wcf/bindings-overview.md). The address is appended to the base address to identify the endpoint. The address specified in this code is "CalculatorService" so the fully qualified address for the endpoint is `"http://localhost:8000/GettingStarted/CalculatorService"`.
+**Step 3** – Creates a <xref:System.ServiceModel.Description.ServiceEndpoint> instance. A service endpoint is composed of an address, a binding, and a service contract. The <xref:System.ServiceModel.Description.ServiceEndpoint> constructor is composed of the service contract interface type, a binding, and an address. The service contract is `ICalculator`, which you defined and implement in the service type. The binding for this sample is <xref:System.ServiceModel.WSHttpBinding>. It's a built-in binding and connects to endpoints that conform to the WS-* specifications. For more information about WCF bindings, see [WCF Bindings Overview](bindings-overview.md). The address is appended to the base address to identify the endpoint. The address specified in this code is CalculatorService and the fully qualified address for the endpoint is `"http://localhost:8000/GettingStarted/CalculatorService"`.
 
     > [!IMPORTANT]
-    > Adding a service endpoint is optional when using .NET Framework 4 or later. In these versions, if no endpoints are added in code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints see [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).
+    > Adding a service endpoint is optional for .NET Framework Version 4 or later. In these versions, if you don't add in your code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints see [Specifying an Endpoint Address](specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](samples/simplified-configuration-for-wcf-services.md).
 
-**Step 4** – Enable metadata exchange. Clients will use metadata exchange to generate proxies that will be used to call the service operations. To enable metadata exchange create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set it’s <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, and add the behavior to the <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` collection of the <xref:System.ServiceModel.ServiceHost> instance.
+**Step 4** – Enable metadata exchange. Clients use metadata exchange to generate proxies that are used to call the service operations. To enable metadata exchange create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`, and add the behavior to the <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors%2A` collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
-**Step 5** – Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. Notice the code waits for the user to hit enter. If you do not do this, the app will close immediately and the service will shut down.Also notice a  try/catch block used. After the <xref:System.ServiceModel.ServiceHost> has been instantiated, all other code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)
+**Step 5** – Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. Notice the code waits for the user to press enter. If you don't press enter, the app closes immediately and the service shuts down. Also, notice a try/catch block is used. After the <xref:System.ServiceModel.ServiceHost> has been instantiated, all other code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
 
 > [!IMPORTANT]
 > Edit App.config in GettingStartedLib to reflect the changes made in code:
@@ -155,7 +173,7 @@ End Module
 
 1. Run the GettingStartedHost console application from inside Visual Studio.
 
-   The service must be run with administrator privileges. Because Visual Studio was opened with administrator privileges, GettingStartedHost is also run with administrator privileges. You can also open a new command prompt using **Run as administrator** and run service.exe within it.
+   Run the service with administrator privileges. Because you opened Visual Studio with administrator privileges, you should also run GettingStartedHost with administrator privileges. As an alternative, you can open a new command prompt by using **Run as administrator** and run service.exe within it.
 
 2. Open a web browser and browse to the service's debug page at `http://localhost:8000/GettingStarted/CalculatorService`.
 
@@ -163,7 +181,7 @@ End Module
 
 The following example includes the service contract and implementation from previous steps in the tutorial and hosts the service in a console application.
 
-To compile this with a command-line compiler, compile IService1.cs and Service1.cs into a class library that references `System.ServiceModel.dll`. Compile Program.cs as a console application.
+To compile them with a command-line compiler, compile IService1.cs and Service1.cs into a class library that references `System.ServiceModel.dll`. Compile Program.cs as a console application.
 
 ```csharp
 using System;
@@ -397,11 +415,11 @@ End Module
 Now the service is running. In the next task, you create a WCF client.
 
 > [!div class="nextstepaction"]
-> [How to: Create a WCF client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+> [How to: Create a WCF client](how-to-create-a-wcf-client.md)
 
-For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](../../../docs/framework/wcf/troubleshooting-the-getting-started-tutorial.md).
+For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](troubleshooting-the-getting-started-tutorial.md).
 
 ## See also
 
-- [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)
-- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)
+- [Getting started sample](samples/getting-started-sample.md)
+- [Self-Host](samples/self-host.md)

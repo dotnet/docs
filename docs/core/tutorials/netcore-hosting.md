@@ -80,7 +80,7 @@ Because the sample is simple, it only needs the `TRUSTED_PLATFORM_ASSEMBLIES` pr
 
 Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the runtime and creates the default AppDomain all with a single call. The `coreclr_initialize` function takes a base path, name, and the properties described earlier and returns back a handle to the host via the `hostHandle` parameter.
 
-[!code-cpp[CoreClrHost#4](~/samples/core/hosting/HostWithCoreClrHost/src/ampleHost.cpp#4)]
+[!code-cpp[CoreClrHost#4](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#4)]
 
 ### Step 5 - Run managed code!
 

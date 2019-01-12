@@ -1517,7 +1517,9 @@ When <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute> is `false`, the 
 
 [!code-cpp[ProcessOneStream#1](~/samples/snippets/cpp/VS_Snippets_CLR/ProcessOneStream/CPP/stdstr.cpp#1)]
 [!code-csharp[ProcessOneStream#1](~/samples/snippets/csharp/VS_Snippets_CLR/ProcessOneStream/CS/stdstr.cs#1)]
-[!code-vb[ProcessOneStream#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ProcessOneStream/VB/stdstr.vb#1)]]]></format>
+[!code-vb[ProcessOneStream#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ProcessOneStream/VB/stdstr.vb#1)]
+
+]]></format>
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value to <see langword="true" /> on Universal Windows Platform (UWP) apps occurs.</exception>
         <altmember cref="P:System.Diagnostics.ProcessStartInfo.RedirectStandardInput" />

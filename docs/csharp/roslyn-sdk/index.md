@@ -63,7 +63,7 @@ There are three main scenarios for writing analyzers and code fixes:
 
 1. [*Enforce team coding standards*](#enforce-team-coding-standards)
 1. [*Provide guidance with library packages*](#provide-guidance-with-library-packages)
-1. [*Provide general coding guidance*](#provide-general-coding-guidance)
+1. [*Provide general guidance*](#provide-general-guidance)
 
 ## Enforce team coding standards
 

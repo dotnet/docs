@@ -18,7 +18,7 @@ The ActiveX Control Importer converts type definitions in a COM type library for
   
  To host the ActiveX control, you must generate a wrapper control that derives from <xref:System.Windows.Forms.AxHost>. This wrapper control contains an instance of the underlying ActiveX control. It knows how to communicate with the ActiveX control, but it appears as a Windows Forms control. This generated control hosts the ActiveX control and exposes its properties, methods, and events as those of the generated control.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   

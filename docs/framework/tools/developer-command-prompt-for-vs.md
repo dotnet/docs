@@ -28,7 +28,7 @@ You may have multiple command prompts, depending on the version of Visual Studio
 
 1. In the search box on the taskbar, start typing the name of the tool, such as `dev` or `developer command prompt`. This brings up a list of installed apps that match your search pattern. If you're looking for a different command prompt, try entering a different search term such as `prompt`.
 
-2. Choose the **Developer Command Prompt** (or the command prompt you want to use).
+2. Choose the **Developer Command Prompt for Visual Studio** (or the command prompt you want to use).
 
 ### In Windows 8.1
 

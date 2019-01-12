@@ -97,7 +97,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.MissingValueDroppingTransformer> | Drops missing values from columns. |
 | <xref:Microsoft.ML.Transforms.MissingValueIndicatorTransform> | Creates a boolean output column with the same number of slots as the input column, where the output value is true if the value in the input column is missing. |
 | <xref:Microsoft.ML.Transforms.MissingValueReplacingTransformer> | Handle missing values by replacing them with either the default value or the mean/min/max value (for non-text columns only). |
-| <xref:Microsoft.ML.Transforms.MissingValueIndicatorTransform> | Creates a boolean output column with the same number of slots as the input column, where the output value is true if the value in the input column is missing. |
 
 ## Normalization
 

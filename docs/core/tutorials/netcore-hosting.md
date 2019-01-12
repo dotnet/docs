@@ -40,7 +40,7 @@ The .NET Core runtime APIs are in *coreclr.dll* (on Windows), in *libcoreclr.so*
 
 Once found, the library is loaded with `LoadLibraryEx` (on Windows) or `dlopen` (on Linux/Mac).
 
-[!code-cpp[CoreClrHost#1](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#1)]
+[!code-cpp[CoreClrHost#1](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#1)]
 
 ### Step 2 - Get .NET Core hosting functions
 
@@ -54,7 +54,7 @@ CoreClrHost has several important methods useful for hosting .NET Core:
 
 After loading the CoreCLR library, the next step is to get references to these functions using `GetProcAddress` (on Windows) or `dlsym` (on Linux/Mac).
 
-[!code-cpp[CoreClrHost#2](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#2)]
+[!code-cpp[CoreClrHost#2](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#2)]
 
 ### Step 3 - Prepare runtime properties
 
@@ -70,23 +70,23 @@ Common properties include:
 
 In this sample host, the TPA list is constructed by simply listing all libraries in the current directory:
 
-[!code-cpp[CoreClrHost#7](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#7)]
+[!code-cpp[CoreClrHost#7](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#7)]
 
 Because the sample is simple, it only needs the `TRUSTED_PLATFORM_ASSEMBLIES` property:
 
-[!code-cpp[CoreClrHost#3](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#3)]
+[!code-cpp[CoreClrHost#3](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#3)]
 
 ### Step 4 - Start the runtime
 
 Unlike the mscoree.h hosting API (described below), CoreCLRHost.h APIs start the runtime and creates the default AppDomain all with a single call. The `coreclr_initialize` function takes a base path, name, and the properties described earlier and returns back a handle to the host via the `hostHandle` parameter.
 
-[!code-cpp[CoreClrHost#4](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#4)]
+[!code-cpp[CoreClrHost#4](~/samples/core/hosting/HostWithCoreClrHost/src/ampleHost.cpp#4)]
 
 ### Step 5 - Run managed code!
 
 With the runtime started, the host can call managed code. This can be done a couple different ways. The sample code linked to this tutorial uses the `coreclr_create_delegate` function to create a delegate to a static managed method. This API takes the assembly name, namespace-qualified type name, and method name as inputs and returns a delegate that can be used to invoke the method.
 
-[!code-cpp[CoreClrHost#5](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#5)]
+[!code-cpp[CoreClrHost#5](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#5)]
 
 In this sample, the host can now call `managedDelegate` to run the `ManagedWorker.DoWork` method.
 
@@ -106,7 +106,7 @@ int hr = executeAssembly(
 
 Finally, when the host is done running managed code, the .NET Core runtime is shut down with the `coreclr_shutdown` or `coreclr_shutdown_2`.
 
-[!code-cpp[CoreClrHost#6](~/samples/core/hosting/HostWithCoreClrHost/SampleHost.cpp#6)]
+[!code-cpp[CoreClrHost#6](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#6)]
 
 Remember to unload the CoreCLR library using `FreeLibrary` (on Windows) or `dlclose` (on Linux/Mac).
 

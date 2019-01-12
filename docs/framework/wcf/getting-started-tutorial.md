@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Get started with Windows Communication Foundation applications
+title: "Tutorial: Get started with Windows Communication Foundation applications"
 description: This tutorial provides an introduction for creating WCF applications. 
 ms.date: 01/07/2019
 helpviewer_keywords:

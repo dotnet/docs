@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Use a Windows Communication Foundation client"
+title: "Tutorial: Use a Windows Communication Foundation client""
 ms.date: 01/11/2019
 helpviewer_keywords:
   - "WCF clients [WCF], using"

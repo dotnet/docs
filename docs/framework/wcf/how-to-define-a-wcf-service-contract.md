@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Define a Windows Communication Foundation service contract
+title: "Tutorial: Define a Windows Communication Foundation service contract"
 ms.date: 01/10/2019
 helpviewer_keywords:
   - "service contracts [WCF], defining"

@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Configure a Basic Windows Communication Foundation client
+title: "Tutorial: Configure a Basic Windows Communication Foundation client"
 ms.date: 01/11/2019
 helpviewer_keywords:
   - "WCF clients [WCF], configuring"

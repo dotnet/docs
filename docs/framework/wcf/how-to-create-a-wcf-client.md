@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Create a Windows Communication Foundation client
+title: "Tutorial: Create a Windows Communication Foundation client"
 ms.date: 01/11/2019
 helpviewer_keywords:
   - "clients [WCF], running"
@@ -60,7 +60,7 @@ You've created the proxy that the client application uses to call the calculator
 ## See also
 
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
-- [Getting started sample](.samples/getting-started-sample.md)
+- [Getting started sample](samples/getting-started-sample.md)
 - [Self-Host](samples/self-host.md)
 - [How to: Publish metadata for a service using a configuration file](feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
 - [How to: Use Svcutil.exe to download metadata documents](feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)

@@ -3,7 +3,7 @@ title: Machine learning data transforms - ML.NET
 description: Explore the feature engineering components supported in ML.NET.
 author: JRAlexander
 ms.custom: seodec18
-ms.date: 12/14/2018
+ms.date: 01/14/2019
 ---
 # Machine learning data transforms - ML.NET
 
@@ -17,11 +17,6 @@ The following tables contain information about all of the data transforms suppor
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.Transforms.GroupTransform> | Groups values of a scalar column into a vector based on a contiguous group ID. |
-| <xref:Microsoft.ML.Legacy.Transforms.FeatureCombiner> | Combines all the features into one feature column. |
-| <xref:Microsoft.ML.Legacy.Transforms.ManyHeterogeneousModelCombiner> | Combines a sequence of TransformModels and a PredictorModel into a single PredictorModel. |
-| <xref:Microsoft.ML.Legacy.Transforms.ModelCombiner> | Combines a sequence of TransformModels into a single model. |
-| <xref:Microsoft.ML.Legacy.Transforms.Segregator> | Ungroups vector columns into sequences of rows; the inverse of Group transform. |
-| <xref:Microsoft.ML.Legacy.Transforms.TwoHeterogeneousModelCombiner> | Combines a TransformModel and a PredictorModel into a single PredictorModel. |
 | <xref:Microsoft.ML.Transforms.UngroupTransform> | Un-groups vector columns into sequences of rows, inverse of Group transform. |
 
 ## Conversions 
@@ -29,7 +24,6 @@ The following tables contain information about all of the data transforms suppor
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.Transforms.Conversions.HashingTransformer> | Hashes either single valued columns or vector columns. For vector columns, it hashes each slot separately. It can hash either text values or key values. |
-| <xref:Microsoft.ML.Legacy.Transforms.HashConverter> | Converts column values into hashes. This transform accepts both numeric and text inputs, both single and vector-valued columns. |
 | <xref:Microsoft.ML.Transforms.Conversions.HashJoiningTransform> | Converts multiple column values into hashes. This transform accepts both numeric and text inputs, both single and vector-valued columns. |
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToBinaryVectorMappingTransformer> | Converts a key to a binary vector column. |
 | <xref:Microsoft.ML.Transforms.Conversions.KeyToValueMappingTransformer > | Utilizes KeyValues metadata to map key indices to the corresponding values in the KeyValues metadata. |
@@ -50,10 +44,10 @@ The following tables contain information about all of the data transforms suppor
 | Transform | Definition |
 | --- | --- |
 | <xref:Microsoft.ML.Transforms.Text.CustomStopWordsRemovingTransform> | Removes specified list of stop words by comparing individual tokens (case-insensitive comparison) to the stopwords.| 
-| <xref:Microsoft.ML.Runtime.ImageAnalytics.ImageGrayscaleTransform> | Takes one or more ImageType columns and converts them to a greyscale representation of the same image.|
-| <xref:Microsoft.ML.Runtime.ImageAnalytics.ImageLoaderTransform> | Takes one or more ReadOnlyMemory columns and loads them as an ImageType. |
-| <xref:Microsoft.ML.Runtime.ImageAnalytics.ImagePixelExtractorTransform> | Takes one or more ImageType columns and converts them into a vector representation.|
-| <xref:Microsoft.ML.Runtime.ImageAnalytics.ImageResizerTransform> | Takes one or more ImageType columns and resizes them to  the provided height and width.|
+| <xref:Microsoft.ML.ImageAnalytics.ImageGrayscaleTransform> | Takes one or more ImageType columns and converts them to a greyscale representation of the same image.|
+| <xref:Microsoft.ML.ImageAnalytics.ImageLoaderTransform> | Takes one or more ReadOnlyMemory columns and loads them as an ImageType. |
+| <xref:Microsoft.ML.ImageAnalytics.ImagePixelExtractorTransform> | Takes one or more ImageType columns and converts them into a vector representation.|
+| <xref:Microsoft.ML.ImageAnalytics.ImageResizerTransform> | Takes one or more ImageType columns and resizes them to  the provided height and width.|
 | <xref:Microsoft.ML.Transforms.Text.LatentDirichletAllocationTransformer> | Implements LightLDA, a state-of-the-art implementation of Latent Dirichlet Allocation.|
 | <xref:Microsoft.ML.Transforms.LoadTransform> | Loads specific transforms from the specified model file. Allows for 'cherry picking' transforms from a serialized chain, or to apply a pre-trained transform to a different (but still compatible) data view. |
 | <xref:Microsoft.ML.Transforms.Text.NgramExtractingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive values of length 1-n) in a given vector of keys. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. | 
@@ -83,12 +77,8 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Legacy.Transforms.Dictionarizer> | Converts input values (words, numbers, etc.) to index in a dictionary. |
-| <xref:Microsoft.ML.Legacy.Transforms.LabelColumnKeyBooleanConverter> | Transforms the label to either key or bool (if needed) to make it suitable for classification. |
 | <xref:Microsoft.ML.Transforms.LabelConvertTransform> |  Converts labels. |
 | <xref:Microsoft.ML.Transforms.LabelIndicatorTransform> | Remaps multiclass labels to binary True, False labels, primarily for use with OVA.|
-| <xref:Microsoft.ML.Legacy.Transforms.LabelToFloatConverter> | Transforms the label to float to make it suitable for regression. |
-| <xref:Microsoft.ML.Legacy.Transforms.PredictedLabelColumnOriginalValueConverter> | Transforms a predicted label column to its original values, unless it is of type bool. |
 
 ## Missing values
 
@@ -141,7 +131,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.ColumnCopyingTransformer> | Duplicates columns from the dataset.|
 | <xref:Microsoft.ML.Transforms.ColumnSelectingTransformer> | Selects a set of columns to drop or keep from a given input. |
 | <xref:Microsoft.ML.Transforms.FeatureSelection.SlotsDroppingTransformer> | Drops slots from columns.|
-| <xref:Microsoft.ML.Legacy.Transforms.KeyToTextConverter> | KeyToValueTransform utilizes KeyValues metadata to map key indices to the corresponding values in the KeyValues metadata. |
 | <xref:Microsoft.ML.Transforms.OptionalColumnTransform> | Creates a new column with the specified type and default values. |
 | <xref:Microsoft.ML.Transforms.RangeFilter> | Filters a dataview on a column of type Single, Double or Key (contiguous). Keeps the values that are in the specified min/max range. NaNs are always filtered out. If the input is a Key type, the min/max are considered percentages of the number of values. |
 
@@ -162,15 +151,15 @@ The following tables contain information about all of the data transforms suppor
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a * y_t + (1-a) * ExpAvg(y_(t-1)). |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.IidChangePointDetector> | Implements the change point detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation and martingales. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.IidSpikeDetector> | Implements the spike detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.MovingAverageTransform> | Provides a weighted average of the sliding window values. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.PercentileThresholdTransform> | Decides whether the time-series current value belongs to the sliding window top values percentile. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.PValueTransform> | Computes the series current value empirical p-value based on the other values in the sliding window. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.SlidingWindowTransform> | Outputs a sliding window on a time series of type Single. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.SsaChangePointDetector> | Implements the change point detector transform based on Singular Spectrum modeling of the time-series. |
-| <xref:Microsoft.ML.Runtime.TimeSeriesProcessing.SsaSpikeDetector> | Implements the spike detector transform based on Singular Spectrum modeling of the time-series. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.ExponentialAverageTransform> | Takes a weighted average of the values: ExpAvg(y_t) = a * y_t + (1-a) * ExpAvg(y_(t-1)). |
+| <xref:Microsoft.ML.TimeSeriesProcessing.IidChangePointDetector> | Implements the change point detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation and martingales. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.IidSpikeDetector> | Implements the spike detector transform for an i.i.d. sequence (random sample) based on adaptive kernel density estimation. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.MovingAverageTransform> | Provides a weighted average of the sliding window values. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.PercentileThresholdTransform> | Decides whether the time-series current value belongs to the sliding window top values percentile. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.PValueTransform> | Computes the series current value empirical p-value based on the other values in the sliding window. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.SlidingWindowTransform> | Outputs a sliding window on a time series of type Single. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.SsaChangePointDetector> | Implements the change point detector transform based on Singular Spectrum modeling of the time-series. |
+| <xref:Microsoft.ML.TimeSeriesProcessing.SsaSpikeDetector> | Implements the spike detector transform based on Singular Spectrum modeling of the time-series. |
 
 ## Miscellaneous
 

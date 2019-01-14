@@ -85,7 +85,7 @@ Azure Kubernetes Service optimizes the configuration of popular Docker clusterin
 
 **Figure 4-24**. Kubernetes cluster's simplified structure and topology
 
-If figure 4-24 you can see the structure of a Kubernetes cluster where a master node (VM) controls most of the coordination of the cluster and you can deploy containers to the rest of the nodes which are managed as a single pool from an application point of view and allows you to scale to thousands or even tens of thousands of containers.
+In figure 4-24 you can see the structure of a Kubernetes cluster where a master node (VM) controls most of the coordination of the cluster and you can deploy containers to the rest of the nodes which are managed as a single pool from an application point of view and allows you to scale to thousands or even tens of thousands of containers.
 
 ## Development environment for Kubernetes
 

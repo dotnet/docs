@@ -5,7 +5,7 @@ author: mlacouture
 ms.date: 08/20/2018
 ms.custom: "seodec18"
 ---
-# WCF dotnet-svcutil tool for .NET Core
+WCF dotnet-svcutil tool for .NET Core
 
 The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET Core CLI tool that retrieves metadata from a web service on a network location or from a WSDL file, and generates a WCF class containing client proxy methods that access the web service operations.
 

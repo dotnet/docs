@@ -26,31 +26,31 @@ For more in-depth information about creating services and clients, see [Basic WC
 
 The first three tutorials describe how to define a WCF service contract, how to implement it, and how to host it. The service that you create is self-hosted within a console application. You can also host services under Microsoft Internet Information Services (IIS). For more information, see [How to: Host a WCF Service in IIS](feature-details/how-to-host-a-wcf-service-in-iis.md). Although you use code to configure the service in the tutorial, you can also configure services within a configuration file. For more information, see [Configuring services using configuration files](configuring-services-using-configuration-files.md).
 
-[Tutorial: Define a service contract](how-to-define-a-wcf-service-contract.md)
+- [Tutorial: Define a service contract](how-to-define-a-wcf-service-contract.md)
 
-Create a WCF contract by using a user-defined interface. The contract defines the functionality that the service exposes.
+    Create a WCF contract by using a user-defined interface. The contract defines the functionality that the service exposes.
 
- [Tutorial: Implement a service contract](how-to-implement-a-wcf-contract.md)
+- [Tutorial: Implement a service contract](how-to-implement-a-wcf-contract.md)
 
- Implement a service contract. After you define a contract, you must implement it with a service class.
+    Implement a service contract. After you define a contract, you must implement it with a service class.
 
- [Tutorial: Host and run a basic service](how-to-host-and-run-a-basic-wcf-service.md)
+- [Tutorial: Host and run a basic service](how-to-host-and-run-a-basic-wcf-service.md)
 
- Configure an endpoint for the service and how host the service in a console application. For a service to become active, you must configure it and host it within a run-time environment. This environment creates the service and controls its context and lifetime.
+    Configure an endpoint for the service and how host the service in a console application. For a service to become active, you must configure it and host it within a run-time environment. This environment creates the service and controls its context and lifetime.
 
 The next three tutorials describe how to create a client proxy, configure a client application, and use the client proxy to call service operations that the service exposes. Services publish metadata that define the information a client application needs to communicate with the service. Visual Studio automates the process of accessing this metadata and uses it to construct and configure the client application for the service. If you're not using Visual Studio, you can use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to construct and configure the client application for the service.
 
- [Tutorial: Create a client](how-to-create-a-wcf-client.md)
+- [Tutorial: Create a client](how-to-create-a-wcf-client.md)
 
-Retrieve metadata that you use to create a WCF client proxy from a WCF service. This process uses the Add Service Reference function within Visual Studio.
+    Retrieve metadata that you use to create a WCF client proxy from a WCF service. This process uses the Add Service Reference function within Visual Studio.
 
- [Tutorial: Configure a client](how-to-configure-a-basic-wcf-client.md)
+ - [Tutorial: Configure a client](how-to-configure-a-basic-wcf-client.md)
 
- Configure a WCF client. When you configure the client, you specify the endpoint that the client uses to access the service.
+    Configure a WCF client. When you configure the client, you specify the endpoint that the client uses to access the service.
 
- [Tutorial: Use a client](how-to-use-a-wcf-client.md)
+- [Tutorial: Use a client](how-to-use-a-wcf-client.md)
 
- Use the WCF client proxy to call service operations.
+    Use the WCF client proxy to call service operations.
 
 ## Reference
 

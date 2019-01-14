@@ -103,10 +103,10 @@ The following outline shows the final solution layout:
         PrimeService.Tests.csproj
 ```
 
-Execute the following command in the *unit-testing-using-dotnet-test* directory:
+Execute the following command in the *unit-testing-using-nunit* directory:
 
 ```console
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Creating the first test

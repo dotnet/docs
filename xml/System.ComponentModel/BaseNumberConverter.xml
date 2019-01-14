@@ -147,7 +147,7 @@
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="t">A <see cref="T:System.Type" /> that represents the type to which you want to convert.</param>
-        <param name="destinationType">To be added.</param>
+        <param name="destinationType">A <see cref="T:System.Type" /> that represents the type to which you want to convert.</param>
         <summary>Returns a value indicating whether this converter can convert an object to the given destination type using the context.</summary>
         <returns>
           <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>

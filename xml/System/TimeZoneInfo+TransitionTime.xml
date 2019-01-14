@@ -652,9 +652,9 @@
       </Parameters>
       <Docs>
         <param name="t1">The first object to compare.</param>
-        <param name="left">To be added.</param>
+        <param name="left">The first object to compare.</param>
         <param name="t2">The second object to compare.</param>
-        <param name="right">To be added.</param>
+        <param name="right">The second object to compare.</param>
         <summary>Determines whether two specified <see cref="T:System.TimeZoneInfo.TransitionTime" /> objects are equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="t1" /> and <paramref name="t2" /> have identical values; otherwise, <see langword="false" />.</returns>
@@ -709,9 +709,9 @@
       </Parameters>
       <Docs>
         <param name="t1">The first object to compare.</param>
-        <param name="left">To be added.</param>
+        <param name="left">The first object to compare.</param>
         <param name="t2">The second object to compare.</param>
-        <param name="right">To be added.</param>
+        <param name="right">The second object to compare.</param>
         <summary>Determines whether two specified <see cref="T:System.TimeZoneInfo.TransitionTime" /> objects are not equal.</summary>
         <returns>
           <see langword="true" /> if <paramref name="t1" /> and <paramref name="t2" /> have any different member values; otherwise, <see langword="false" />.</returns>

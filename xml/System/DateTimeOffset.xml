@@ -2644,7 +2644,7 @@
       </Parameters>
       <Docs>
         <param name="dateTimeOffset">The object to add the time interval to.</param>
-        <param name="dateTimeTz">To be added.</param>
+        <param name="dateTimeTz">The object to add the time interval to.</param>
         <param name="timeSpan">The time interval to add.</param>
         <summary>Adds a specified time interval to a <see cref="T:System.DateTimeOffset" /> object that has a specified date and time, and yields a <see cref="T:System.DateTimeOffset" /> object that has new a date and time.</summary>
         <returns>An object whose value is the sum of the values of <paramref name="dateTimeTz" /> and <paramref name="timeSpan" />.</returns>
@@ -3212,7 +3212,7 @@
       </Parameters>
       <Docs>
         <param name="dateTimeOffset">The date and time object to subtract from.</param>
-        <param name="dateTimeTz">To be added.</param>
+        <param name="dateTimeTz">The date and time object to subtract from.</param>
         <param name="timeSpan">The time interval to subtract.</param>
         <summary>Subtracts a specified time interval from a specified date and time, and yields a new date and time.</summary>
         <returns>An object that is equal to the value of <paramref name="dateTimeOffset" /> minus <paramref name="timeSpan" />.</returns>

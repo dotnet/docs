@@ -140,7 +140,7 @@
       </Parameters>
       <Docs>
         <param name="permission">An existing <see langword="DBDataPermission" /> used to create a new <see langword="DBDataPermission" />.</param>
-        <param name="dataPermission">To be added.</param>
+        <param name="dataPermission">An existing <see langword="DBDataPermission" /> used to create a new <see langword="DBDataPermission" />.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class using an existing <see langword="DBDataPermission" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
@@ -178,7 +178,7 @@
       </Parameters>
       <Docs>
         <param name="permissionAttribute">A security action associated with a custom security attribute.</param>
-        <param name="attribute">To be added.</param>
+        <param name="attribute">A security action associated with a custom security attribute.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see langword="DBDataPermissionAttribute" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
@@ -222,8 +222,8 @@
       </Parameters>
       <Docs>
         <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
-        <param name="allowBlankPassword">Indicates whether a blank password is allowed.</param>
-        <param name="blankPassword">To be added.</param>
+        <param name="allowBlankPassword"><see langword="true" /> to indicate that a blank password is allowed; otherwise, <see langword="false" />.</param>
+        <param name="blankPassword"><see langword="true" /> to indicate that a blank password is allowed; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of a <see langword="DBDataPermission" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" /> value, and a value indicating whether a blank password is allowed.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -459,7 +459,7 @@
       </Parameters>
       <Docs>
         <param name="securityElement">The XML encoding to use to reconstruct the security object.</param>
-        <param name="elem">To be added.</param>
+        <param name="elem">The XML encoding to use to reconstruct the security object.</param>
         <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -665,7 +665,7 @@
       </Parameters>
       <Docs>
         <param name="target">A permission object to combine with the current permission object. It must be of the same type as the current permission object.</param>
-        <param name="other">To be added.</param>
+        <param name="other">A permission object to combine with the current permission object. It must be of the same type as the current permission object.</param>
         <summary>Returns a new permission object that is the union of the current and specified permission objects.</summary>
         <returns>A new permission object that represents the union of the current permission object and the specified permission object.</returns>
         <remarks>

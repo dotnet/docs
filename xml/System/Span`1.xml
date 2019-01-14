@@ -254,7 +254,7 @@ The `Clear` method sets the items in the <xref:System.Span%601> object to their 
         <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
+        <param name="destination">The destination <see cref="System.Span`1" /> object.</param>
         <summary>Copies the contents of this <see cref="System.Span`1" /> into a destination <see cref="System.Span`1" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -518,8 +518,8 @@ The `GetPinnableReference` method returns a [ref struct](~/docs/csharp/reference
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>Gets or sets the element at the specified zero-based index.</summary>
+        <param name="index">The zero-based index of the element.</param>
+        <summary>Gets the element at the specified zero-based index.</summary>
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">

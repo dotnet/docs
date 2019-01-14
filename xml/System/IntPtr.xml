@@ -1140,7 +1140,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.IntPtr" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2" />
+        <Parameter Name="other" Type="System.IntPtr" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>

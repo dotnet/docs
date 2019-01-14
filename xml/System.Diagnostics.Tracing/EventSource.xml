@@ -3087,7 +3087,7 @@ class AnotherEventSource : EventSource {
       <Docs>
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">The related activity identifier.</param>
-        <param name="childActivityID">To be added.</param>
+        <param name="childActivityID">The related activity identifier.</param>
         <param name="args">An array of objects that contain data about the event.</param>
         <summary>Writes an event that indicates that the current activity is related to another activity.</summary>
         <remarks>
@@ -3167,7 +3167,7 @@ class AnotherEventSource : EventSource {
       <Docs>
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">A pointer to the GUID of the related activity ID.</param>
-        <param name="childActivityID">To be added.</param>
+        <param name="childActivityID">A pointer to the GUID of the related activity ID.</param>
         <param name="eventDataCount">The number of items in the <paramref name="data" /> field.</param>
         <param name="data">A pointer to the first item in the event data field.</param>
         <summary>Writes an event that indicates that the current activity is related to another activity.</summary>

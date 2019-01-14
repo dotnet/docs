@@ -210,7 +210,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object to compare to the current <see cref="T:System.Security.Policy.UrlMembershipCondition" />.</param>
-        <param name="obj">To be added.</param>
+        <param name="obj">The object to compare to the current <see cref="T:System.Security.Policy.UrlMembershipCondition" />.</param>
         <summary>Determines whether the URL from the specified object is equivalent to the URL contained in the current <see cref="T:System.Security.Policy.UrlMembershipCondition" />.</summary>
         <returns>
           <see langword="true" /> if the URL from the specified object is equivalent to the URL contained in the current <see cref="T:System.Security.Policy.UrlMembershipCondition" />; otherwise, <see langword="false" />.</returns>

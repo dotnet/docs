@@ -271,7 +271,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A random-access iterator that designates the first element of the controlled sequence, or just beyond the end of an empty sequence. You use it to obtain an iterator that designates the <paramref name="current" /> beginning of the controlled sequence, but its status can change if the length of the controlled sequence changes.</param>
         <summary>Designates the beginning of the controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
@@ -387,7 +387,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A random-access iterator that points to the location immediately beyond the end of the controlled sequence. You use it to obtain an iterator that designates the <paramref name="current" /> end of the controlled sequence, but its status can change if the length of the controlled sequence changes.</param>
         <summary>Designates the end of the controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
@@ -461,7 +461,7 @@
         <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">An iterator that designates the first element remaining beyond any elements removed, or <see cref="M:Microsoft.VisualC.StlClr.IDeque`1.end(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" /> if no such element exists.</param>
         <param name="_Where">The element to erase.</param>
         <summary>Removes the element at the specified position.</summary>
         <returns>An iterator.</returns>
@@ -497,7 +497,7 @@ For more information, see [deque::erase (STL/CLR)](/cpp/dotnet/deque-stl-clr#era
         <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">An iterator that designates the first element remaining beyond any elements removed, or <see cref="M:Microsoft.VisualC.StlClr.IDeque`1.end(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" /> if no such element exists.</param>
         <param name="_First_iter">The beginning position of the range to erase.</param>
         <param name="_Last_iter">The position one beyond the last element of the range to erase.</param>
         <summary>Removes the elements between the specified iterators.</summary>
@@ -660,7 +660,7 @@ For more information, see [deque::erase (STL/CLR)](/cpp/dotnet/deque-stl-clr#era
         <Parameter Name="_Val" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">An iterator that designates the newly inserted element.</param>
         <param name="_Where">The location in the container in front of which to insert.</param>
         <param name="_Val">The element to be inserted into the container.</param>
         <summary>Adds an element at a specified position in the container.</summary>
@@ -908,7 +908,7 @@ For more information, see [deque::insert (STL/CLR)](/cpp/dotnet/deque-stl-clr#in
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reverse iterator that designates the last element of the controlled sequence, or just beyond the beginning of an empty sequence. Hence, it designates the <paramref name="beginning" /> of the reverse sequence. You use it to obtain an iterator that designates the <paramref name="current" /> beginning of the controlled sequence seen in reverse order, but its status can change if the length of the controlled sequence changes.</param>
         <summary>Designates the beginning of the reversed controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
@@ -941,7 +941,7 @@ For more information, see [deque::insert (STL/CLR)](/cpp/dotnet/deque-stl-clr#in
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reverse iterator that points just beyond the beginning of the controlled sequence. Hence, it designates the <paramref name="end" /> of the reverse sequence. You use it to obtain an iterator that designates the <paramref name="current" /> end of the controlled sequence seen in reverse order, but its status can change if the length of the controlled sequence changes.</param>
         <summary>Designates the end of the reversed controlled sequence.</summary>
         <returns>An iterator.</returns>
         <remarks>
@@ -1093,7 +1093,7 @@ For more information, see [deque::insert (STL/CLR)](/cpp/dotnet/deque-stl-clr#in
       </Parameters>
       <Docs>
         <param name="A_0">Container to swap contents with.</param>
-        <param name="">To be added.</param>
+        <param name="">Container to swap contents with.</param>
         <summary>Swaps the contents of two containers.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[

@@ -150,7 +150,7 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
         <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">The destination .</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of a <see cref="T:System.Memory`1" /> object into a destination <see cref="T:System.Memory`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -644,7 +644,7 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
         <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of the memory into a destination <see cref="T:System.Memory`1" /> instance.</summary>
         <returns>
           <see langword="true" /> if the copy operation succeeds; otherwise, <see langword="false" />.</returns>

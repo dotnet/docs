@@ -698,7 +698,7 @@
       </Parameters>
       <Docs>
         <param name="o">The object to compare with the current <see cref="T:System.Security.PermissionSet" />.</param>
-        <param name="obj">The object to compare with the current <see cref="T:System.Security.PermissionSet" />. </param>
+        <param name="obj">The object to compare with the current <see cref="T:System.Security.PermissionSet" />.</param>
         <summary>Determines whether the specified <see cref="T:System.Security.PermissionSet" /> or <see cref="T:System.Security.NamedPermissionSet" /> object is equal to the current <see cref="T:System.Security.PermissionSet" />.</summary>
         <returns>
           <see langword="true" /> if the specified object is equal to the current <see cref="T:System.Security.PermissionSet" /> object; otherwise, <see langword="false" />.</returns>

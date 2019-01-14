@@ -499,7 +499,7 @@
         <param name="subkey">The name or path of the subkey to create or open.</param>
         <param name="permissionCheck">One of the enumeration values that specifies whether the key is opened for read or read/write access.</param>
         <param name="options">The registry option to use; for example, that creates a volatile key.</param>
-        <param name="registryOptions">To be added.</param>
+        <param name="registryOptions">The registry option to use; for example, that creates a volatile key.</param>
         <summary>Creates a subkey or opens a subkey for write access, using the specified permission check and registry options.</summary>
         <returns>The newly created subkey, or <see langword="null" /> if the operation failed.</returns>
         <remarks>

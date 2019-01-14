@@ -155,7 +155,8 @@
       <Docs>
         <param name="A_0">
           <see langword="true" /> to dispose of managed objects; <see langword="false" /> to dispose of unmanaged objects.</param>
-        <param name="">To be added.</param>
+        <param name="">
+          <see langword="true" /> to dispose of managed objects; <see langword="false" /> to dispose of unmanaged objects.</param>
         <summary>Frees, releases, or resets unmanaged resources that are used by the <see cref="T:Microsoft.VisualC.StlClr.ListEnumerator`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>

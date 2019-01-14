@@ -46,8 +46,8 @@
         <Parameter Name="A_0" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="A_0">To be added.</param>
+        <param name="">The current bias of the container.</param>
+        <param name="A_0">The current bias of the container.</param>
         <summary>Gets the element at the current bias of the container. The bias is the offset from the current element zero.</summary>
         <returns>The element at the given bias.</returns>
         <remarks>To be added.</remarks>
@@ -79,7 +79,7 @@
       </Parameters>
       <Docs>
         <param name="A_0">The current bias.</param>
-        <param name="">To be added.</param>
+        <param name="">The current bias.</param>
         <summary>Determines if a given bias is valid for the container. The bias is the offset from the current element zero.</summary>
         <returns>
           <see langword="true" /> if the given bias is valid for the container; otherwise, <see langword="false" />.</returns>

@@ -53,7 +53,7 @@
       </Parameters>
       <Docs>
         <param name="A_0">The <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object.</param>
-        <param name="">To be added.</param>
+        <param name="">The <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> object.</param>
         <summary>Determines whether two <see cref="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" /> objects are equal.</summary>
         <returns>
           <see langword="true" /> if the current iterator and the specified iterator are equal; otherwise, <see langword="false" />.</returns>

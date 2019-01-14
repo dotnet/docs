@@ -554,13 +554,15 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic "schemaIDGUID" or "Schema-ID-GUID" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
-        <value>A <see cref="T:System.Guid" /> object that contains the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object. For more information, see the topic "schemaIDGUID" or "Schema-ID-GUID" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</value>
+        <summary>Gets or sets the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object.</summary>
+        <value>A <see cref="T:System.Guid" /> object that contains the schemaIDGUID for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass" /> object..</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  The <xref:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass.SchemaGuid%2A> is used in many Active Directory Domain Services configuration operations, such as managing extended rights.  
+
+ For more information, see [schemaIDGUID](https://msdn.microsoft.com/library/ee380169.aspx) or [Schema-ID-GUID](/windows/desktop/adschema/a-schemaidguid).
   
  ]]></format>
         </remarks>

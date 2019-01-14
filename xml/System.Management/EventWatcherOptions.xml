@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
   
  [!code-csharp[wminet_EventWatcherOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/cs/EventWatcherOptions.cs#1)]
  [!code-vb[wminet_EventWatcherOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/vb/EventWatcherOptions.vb#1)]  
@@ -66,7 +66,7 @@
    
   
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
   
  [!code-csharp[wminet_EventWatcherOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/cs/EventWatcherOptions.cs#1)]
  [!code-vb[wminet_EventWatcherOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/vb/EventWatcherOptions.vb#1)]  
@@ -110,7 +110,7 @@
    
   
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
   
  [!code-csharp[wminet_EventWatcherOptions-3#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions-3/cs/EventWatcherOptions-3.cs#1)]
  [!code-vb[wminet_EventWatcherOptions-3#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions-3/vb/EventWatcherOptions-3.vb#1)]  
@@ -153,7 +153,7 @@
    
   
 ## Examples  
- The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation. The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
   
  [!code-csharp[wminet_EventWatcherOptions_BlockSize#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions_BlockSize/cs/EventWatcherOptions_BlockSize.cs#1)]
  [!code-vb[wminet_EventWatcherOptions_BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions_BlockSize/vb/EventWatcherOptions_BlockSize.vb#1)]  

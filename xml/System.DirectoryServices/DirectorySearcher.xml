@@ -532,13 +532,13 @@ SearchResultCollection res = src.FindAll();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The attribute that this property is set to must be a distinguished name attribute, such as member or managedBy. The attribute can be either single or multi-valued. For more information, see the adschema topics "[Member](https://msdn.microsoft.com/library/default.asp?url=/library/en-us/adschema/adschema/a_member.asp)" and "[Managed-By](https://msdn.microsoft.com/library/default.asp?url=/library/en-us/adschema/adschema/a_managedby.asp)" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ The attribute that this property is set to must be a distinguished name attribute, such as member or managedBy. The attribute can be either single or multi-valued. For more information, see the [Member](/windows/desktop/adschema/a-member) and [Managed-By](/windows/desktop/adschema/a-managedby) articles.
   
- The search is performed against the objects that are identified by the distinguished name that is specified in the attribute of the base object. For example, if the base object is an adschema group class and the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> is set to "member," then the search will be performed against all objects that are members of the group. For more information, see the adschema "Group" class topic in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ The search is performed against the objects that are identified by the distinguished name that is specified in the attribute of the base object. For example, if the base object is an adschema group class and the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> is set to "member," then the search will be performed against all objects that are members of the group. For more information, see the [Group class](/windows/desktop/adschema/c-group) article.
   
  When the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property is used, the <xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A> property must be set to <xref:System.DirectoryServices.SearchScope.Base>. If the <xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A> property is set to any other value, setting the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property will throw an <xref:System.ArgumentException>.  
   
- For more information, see the "Performing an Attribute Scope Query" topic in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library)).  
+ For more information, see the [Performing an Attribute Scope Query](/windows/desktop/adsi/performing-an-attribute-scoped-query).  
   
    
   
@@ -741,7 +741,7 @@ SearchResultCollection res = src.FindAll();
 ## Remarks  
  The directory synchronization control, commonly referred to as the DirSync control, is an LDAP control that is used to search for objects that have changed since a previous state.  
   
- For more information, see the topic "[Polling for Changes Using the DirSync Control](https://msdn.microsoft.com/library/default.asp?url=/library/en-us/ad/ad/polling_for_changes_using_the_dirsync_control.asp)" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ For more information, see the topic [Polling for Changes Using the DirSync Control](/windows/desktop/ad/polling-for-changes-using-the-dirsync-control).  
   
  ]]></format>
         </remarks>
@@ -886,7 +886,7 @@ SearchResultCollection res = src.FindAll();
   
  If you are not in the Coordinated Universal Time time zone, you can add a differential value to the Coordinated Universal Time (instead of specifying Z) to specify a time according to your time zone. The differential is based on the following: differential = Coordinated Universal Time- Local. To specify a differential, use the following format: yyyymmddhhmmss[+/-]hhmm. For example, "8:52:58 P.M. March 23, 1999" New Zealand Standard Time (the differential is 12 hours) is specified as "19990323205258.0+1200".  
   
- For more information about the LDAP search string format, see "Search Filter Syntax" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ For more information about the LDAP search string format, see [Search Filter Syntax](/windows/desktop/adsi/search-filter-syntax).  
   
  ]]></format>
         </remarks>
@@ -1046,7 +1046,7 @@ SearchResultCollection res = src.FindAll();
 ## Remarks  
  To retrieve specific properties, add them to this collection before you begin the search. For example, `searcher.PropertiesToLoad.Add("phone");` will add the phone property to the list of properties to retrieve in the search.  
   
- The property "ADsPath" is always retrieved during the search. On [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)] and earlier operating systems, the account that performs the search must be a member of the Administrators group to retrieve the ntSecurityDescriptor property. If this is not the case, the property value that is returned for ntSecurityDescriptor will be `null`. For more information, see the topic "NT-Security-Descriptor" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ The property "ADsPath" is always retrieved during the search. On [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)] and earlier operating systems, the account that performs the search must be a member of the Administrators group to retrieve the ntSecurityDescriptor property. If this is not the case, the property value that is returned for ntSecurityDescriptor will be `null`. For more information, see the [NT-Security-Descriptor](/windows/desktop/adschema/a-ntsecuritydescriptor) article.  
   
  ]]></format>
         </remarks>
@@ -1166,7 +1166,7 @@ SearchResultCollection res = src.FindAll();
   
 -   Enumerate the global catalog and pick the first child.  
   
--   Specify the server name. Use the DsGetDcName function to find the global catalog.  For more information on the DsGetDcName function, see the topic "DsGetDcName" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+-   Specify the server name. Use the DsGetDcName function to find the global catalog. For more information on the DsGetDcName function, see the [DsGetDcName](/windows/desktop/api/dsgetdc/nf-dsgetdc-dsgetdcnamea).
   
 -   Get the RootDSE  of the global catalog and ask for "rootNamingContext".  
   

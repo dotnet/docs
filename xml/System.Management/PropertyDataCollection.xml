@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example lists information about the **Win32_OperatingSystem** class using the <xref:System.Management.PropertyData> class. For more information about **Win32_OperatingSystem**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example lists information about the **Win32_OperatingSystem** class using the <xref:System.Management.PropertyData> class. For more information about **Win32_OperatingSystem**, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_PropertyDataCollection#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_PropertyDataCollection/cs/PropertyDataCollection.cs#1)]
  [!code-vb[wminet_PropertyDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_PropertyDataCollection/vb/PropertyDataCollection.vb#1)]  

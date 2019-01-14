@@ -28,7 +28,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example lists qualifier information about the **Win32_Service** class using the <xref:System.Management.QualifierData> class. For more information about **Win32_Service**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example lists qualifier information about the **Win32_Service** class using the <xref:System.Management.QualifierData> class. For more information about **Win32_Service**, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_QualifierDataCollection#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_QualifierDataCollection/cs/QualifierDataCollection.cs#1)]
  [!code-vb[wminet_QualifierDataCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_QualifierDataCollection/vb/QualifierDataCollection.vb#1)]  

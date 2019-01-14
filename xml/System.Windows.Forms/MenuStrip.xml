@@ -663,7 +663,7 @@
 ## Remarks  
  All messages are sent to the <xref:System.Windows.Forms.Control.WndProc%2A> method after getting filtered through the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method.  
   
- The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see the `WindowProc` function documentation in the Windows Platform SDK reference located in the MSDN library at http://msdn.microsoft.com/library.  
+ The <xref:System.Windows.Forms.Control.WndProc%2A> method corresponds exactly to the Windows `WindowProc` function. For more information about processing Windows messages, see [WindowProc callback function](https://msdn.microsoft.com/library/windows/desktop/ms633573).
   
    
   

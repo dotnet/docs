@@ -290,15 +290,15 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the handle that is returned by the <see href="https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/idirectorysearch_executesearch.asp">IDirectorySearch::ExecuteSearch</see> method that performs the actual search. For more information, see the <see href="https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/idirectorysearch_executesearch.asp">IDirectorySearch::ExecuteSearch</see> topic in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
+        <summary>Gets the handle that is returned by the <c>IDirectorySearch::ExecuteSearch</c> method that performs the actual search. For more information, see the <see href="/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch">IDirectorySearch::ExecuteSearch</see> article.</summary>
         <value>The ADS_SEARCH_HANDLE value that this collection uses.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The  <xref:System.DirectoryServices.DirectorySearcher> that created this collection calls the [IDirectorySearch::ExecuteSearch](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/idirectorysearch_executesearch.asp) method, which makes the query results available to the T:System.DirectoryServices.SearchResultCollection object. For more information, see the [IDirectorySearch::ExecuteSearch](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/idirectorysearch_executesearch.asp) topic in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ The  <xref:System.DirectoryServices.DirectorySearcher> that created this collection calls the `IDirectorySearch::ExecuteSearch` method, which makes the query results available to the <xref:System.DirectoryServices.SearchResultCollection> object. For more information, see the [IDirectorySearch::ExecuteSearch](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) article.  
   
- Each time that a query is performed, a handle for the results of that query is associated with its  <xref:System.DirectoryServices.SearchResultCollection> object. This handle corresponds to the search handle in ADSI. This handle persists until you call the <xref:System.DirectoryServices.SearchResultCollection.Dispose> method on the <xref:System.DirectoryServices.SearchResultCollection> object, so you must call <xref:System.DirectoryServices.SearchResultCollection.Dispose> to prevent a memory leak. The garbage collector does not free memory for this particular object.  
+ Each time that a query is performed, a handle for the results of that query is associated with its <xref:System.DirectoryServices.SearchResultCollection> object. This handle corresponds to the search handle in ADSI. This handle persists until you call the <xref:System.DirectoryServices.SearchResultCollection.Dispose> method on the <xref:System.DirectoryServices.SearchResultCollection> object, so you must call <xref:System.DirectoryServices.SearchResultCollection.Dispose> to prevent a memory leak. The garbage collector does not free memory for this particular object.  
   
  ]]></format>
         </remarks>

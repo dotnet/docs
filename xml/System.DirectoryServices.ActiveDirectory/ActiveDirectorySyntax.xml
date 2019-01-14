@@ -171,7 +171,7 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>An ADS_DN_WITH_BINARY structure used for mapping a distinguished name to a non-varying GUID. For more information, see the topic "ADS_DN_WITH_BINARY" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</summary>
+        <summary>An ADS_DN_WITH_BINARY structure used for mapping a distinguished name to a non-varying GUID. For more information, see the <see href="/windows/desktop/api/iads/ns-iads-__midl___midl_itf_ads_0000_0000_0015">ADS_DN_WITH_BINARY</see> article.</summary>
       </Docs>
     </Member>
     <Member MemberName="DNWithString">
@@ -193,7 +193,7 @@
       </ReturnValue>
       <MemberValue>14</MemberValue>
       <Docs>
-        <summary>An ADS_DN_WITH_STRING structure used for mapping a distinguished name to a non-varying string value. For more information, see the topic "ADS_DN_WITH_STRING" in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library)</summary>
+        <summary>An ADS_DN_WITH_STRING structure used for mapping a distinguished name to a non-varying string value. For more information, see the <see href="/windows/desktop/api/iads/ns-iads-ads_dn_with_string">ADS_DN_WITH_STRING</see> article.</summary>
       </Docs>
     </Member>
     <Member MemberName="Enumeration">

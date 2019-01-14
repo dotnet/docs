@@ -358,7 +358,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.GetPropertyQualifierValue%2A> method to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example uses the <xref:System.Management.ManagementBaseObject.GetPropertyQualifierValue%2A> method to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class. For more information on the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/cs/ManagementBaseObject_GetPropertyQualifierValue.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/vb/ManagementBaseObject_GetPropertyQualifierValue.vb#1)]  
@@ -446,7 +446,7 @@
    
   
 ## Examples  
- The following example displays the **Win32_Process** class description by using the <xref:System.Management.ManagementBaseObject.GetQualifierValue%2A> method. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example displays the **Win32_Process** class description by using the <xref:System.Management.ManagementBaseObject.GetQualifierValue%2A> method. For more information on the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/cs/ManagementBaseObject_GetQualifierValue.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/vb/ManagementBaseObject_GetQualifierValue.vb#1)]  
@@ -491,7 +491,7 @@
    
   
 ## Examples  
- The following example displays the MOF code for the **Win32_Process** class by using the <xref:System.Management.ManagementBaseObject.GetText%2A> method. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example displays the MOF code for the **Win32_Process** class by using the <xref:System.Management.ManagementBaseObject.GetText%2A> method. For more information about the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/cs/ManagementBaseObject_GetText.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/vb/ManagementBaseObject_GetText.vb#1)]  
@@ -618,7 +618,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/cs/ManagementBaseObject_Properties.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/vb/ManagementBaseObject_Properties.vb#1)]  
@@ -661,7 +661,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.Qualifiers%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example uses the <xref:System.Management.ManagementBaseObject.Qualifiers%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/cs/ManagementBaseObject_Qualifiers.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/vb/ManagementBaseObject_Qualifiers.vb#1)]  
@@ -849,7 +849,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Management.ManagementBaseObject.SystemProperties%2A> property to display the name and value of the system properties for the **Win32_Process** class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+ The following example uses the <xref:System.Management.ManagementBaseObject.SystemProperties%2A> property to display the name and value of the system properties for the **Win32_Process** class. For more information on the **Win32_Process** class, see the [Windows Management Instrumentation](/windows/desktop/wmisdk/wmi-start-page) documentation.  
   
  [!code-csharp[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/cs/ManagementBaseObject_SystemProperties.cs#1)]
  [!code-vb[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/vb/ManagementBaseObject_SystemProperties.vb#1)]  

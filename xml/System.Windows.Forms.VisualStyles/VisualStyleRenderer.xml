@@ -26,7 +26,7 @@
   
  The <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.%23ctor%2A> constructor and many of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> methods throw exceptions unless visual styles are enabled in the operating system and visual styles are applied to the client area of application windows. To check for these conditions, use the `static`<xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.IsSupported%2A> property.  
   
- The <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class wraps the functionality of the visual styles (UxTheme) API from the Windows Shell portion of the Windows Platform SDK. For more information about visual styles, see "Using Windows XP Visual Styles" in the Platform SDK portion of the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/).  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class wraps the functionality of the visual styles (UxTheme) API from the Windows Shell portion of the Windows Platform SDK.
   
    
   

@@ -110,7 +110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor enables a program to use the methods and properties of the <xref:System.DirectoryServices.DirectoryEntry> class on a native Active Directory Domain Services object that implements the IADs interface through a native API. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ This constructor enables a program to use the methods and properties of the <xref:System.DirectoryServices.DirectoryEntry> class on a native Active Directory Domain Services object that implements the IADs interface through a native API. For more information about the IADs interface, see the [IADs](/windows/desktop/api/iads/nn-iads-iads) article.  
   
  ]]></format>
         </remarks>
@@ -831,7 +831,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the return value of the native method implements the IADs interface, a corresponding <xref:System.DirectoryServices.DirectoryEntry> is returned. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
+ If the return value of the native method implements the IADs interface, a corresponding <xref:System.DirectoryServices.DirectoryEntry> is returned. For more information about the IADs interface, see the [IADs](/windows/desktop/api/iads/nn-iads-iads) article.
   
  ]]></format>
         </remarks>
@@ -1232,7 +1232,7 @@ Console::WriteLine("The Native GUID of the ADS object: {0}",
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the topic [IADs](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/iads.asp).  
+ Use this property to cast the native Active Directory Domain Services object, which implements the IADs interface, when you want to use a COM interface. For more information about the IADs interface, see the [IADs](/windows/desktop/api/iads/nn-iads-iads) article.
   
  This object is for advanced scenarios that cannot be accomplished with the <xref:System.DirectoryServices?displayProperty=nameWithType> classes alone. To use it, you need to import one of the COM interfaces from the IADs family, then cast this property to that interface.  
   
@@ -1571,7 +1571,7 @@ String str = ent.Properties["defaultNamingContext"][0];
 DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);  
 ```  
   
- For more information, see the documentation for your provider and the topic [Using Active Directory Service Interfaces](https://msdn.microsoft.com/library/default.asp?url=/library/adsi/adsi/using_adsi.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ For more information, see the documentation for your provider and the [Using Active Directory Service Interfaces](/windows/desktop/adsi/using-adsi) article.  
   
  ]]></format>
         </remarks>
@@ -1613,7 +1613,7 @@ DirectoryEntry domain = new DirectoryEntry("LDAP://" + str);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the property is not initialized, <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> calls the ADSI interface [IADs::Get](http://msdn2.microsoft.com/library/aa746347.aspx) method to retrieve the value from the cache. If the underling cache has not been loaded, [IADs::Get](http://msdn2.microsoft.com/library/aa746347.aspx) implicitly calls [IADs::GetInfo](http://msdn2.microsoft.com/library/aa746349.aspx). This method loads the values of the supported properties that have not been set in the cache from the underlying directory store. Subsequent calls to <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> retrieves the property values in the cache only. To control property cache loading, call <xref:System.DirectoryServices.DirectoryEntry.RefreshCache%2A>.  
+ If the property is not initialized, <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> calls the ADSI interface [IADs::Get](/windows/desktop/api/iads/nf-iads-iads-get) method to retrieve the value from the cache. If the underling cache has not been loaded, [IADs::Get](/windows/desktop/api/iads/nf-iads-iads-get) implicitly calls [IADs::GetInfo](/windows/desktop/api/iads/nf-iads-iads-getinfo). This method loads the values of the supported properties that have not been set in the cache from the underlying directory store. Subsequent calls to <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> retrieves the property values in the cache only. To control property cache loading, call <xref:System.DirectoryServices.DirectoryEntry.RefreshCache%2A>.  
   
  **Note** The <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> property is not supported for use with the Active Directory Client Extension (DSClient) for [!INCLUDE[WinNt4Family](~/includes/winnt4family-md.md)].  
   

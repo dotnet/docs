@@ -9,19 +9,19 @@
   
  ADSI is a programmatic interface for Microsoft Active Directory Domain Services that enables your applications to interact with diverse directories on a network using a single interface. Using ADSI, you can create applications that perform common tasks, such as backing up databases, accessing printers, and administering user accounts.  
   
- It is assumed that you have a general understanding of Active Directory Domain Services before using these classes. For more information on Active Directory Domain Services, see the topics [Introduction to Active Directory Objects](https://go.microsoft.com/fwlink/?LinkID=121193&clcid=0x409) and [Active Directory Technology Backgrounder](https://go.microsoft.com/fwlink/?LinkID=121194&clcid=0x409), as well as the following topics in the MSDN library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library):  
+ It is assumed that you have a general understanding of Active Directory Domain Services before using these classes. For more information on Active Directory Domain Services, see the topics [Introduction to Active Directory Objects](https://go.microsoft.com/fwlink/?LinkID=121193&clcid=0x409) and [Active Directory Technology Backgrounder](https://go.microsoft.com/fwlink/?LinkID=121194&clcid=0x409), as well as the following topics:  
   
--   [Using Active Directory Domain Services](https://go.microsoft.com/fwlink/?LinkID=121195&clcid=0x409)  
+-   [Using Active Directory Domain Services](/windows/desktop/AD/using-active-directory-domain-services)  
   
--   [Active Directory Service Interfaces](https://go.microsoft.com/fwlink/?LinkID=121197&clcid=0x409)  
+-   [Active Directory Service Interfaces](/windows/desktop/ADSI/active-directory-service-interfaces-adsi)  
   
--   [Lightweight Directory Access Protocol](https://go.microsoft.com/fwlink/?LinkID=121198&clcid=0x409)  
+-   [Lightweight Directory Access Protocol](https://docs.microsoft.com/previous-versions/windows/desktop/ldap/lightweight-directory-access-protocol-ldap-api)  
   
--   [Implementing Active Directory Service Interfaces Providers](https://go.microsoft.com/fwlink/?LinkID=121199&clcid=0x409)  
+-   [Implementing Active Directory Service Interfaces Providers](/windows/desktop/ADSI/implementing-adsi-providers)
   
--   [Binding to an ADSI Object](https://go.microsoft.com/fwlink/?LinkID=121200&clcid=0x409)  
+-   [Binding to an ADSI Object](/windows/desktop/ADSI/binding-to-an-adsi-object)  
   
--   [IADsOpenDSObject::OpenDSObject](https://go.microsoft.com/fwlink/?LinkID=121201&clcid=0x409)  
+-   [IADsOpenDSObject::OpenDSObject](/windows/desktop/api/iads/nf-iads-iadsopendsobject-opendsobject)  
   
  Active Directory Domain Services use a tree structure. Each node in the tree contains a set of properties. Use this namespace to traverse, search, and modify the tree, and read and write to the properties of a node.  
   

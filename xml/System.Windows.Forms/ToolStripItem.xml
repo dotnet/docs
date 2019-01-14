@@ -213,7 +213,7 @@
 ## Remarks  
  To get or set the <xref:System.Windows.Forms.ToolStripItem.AccessibilityObject%2A> property, you must add a reference to the Accessibility assembly installed with the .NET Framework.  
   
- For more information about accessible objects, see the "Active Accessibility" section in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).  
+ For more information about accessible objects, see the [Active Accessibility](/windows/desktop/winauto/microsoft-active-accessibility) section of the documentation.
   
  For samples, see the <xref:System.Windows.Forms.AccessibleObject> class.  
   
@@ -274,7 +274,7 @@
   
 -   A label or a text box control that shows **Printer** has no default action, but would have a value of "Printer."  
   
- For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
+ For more information about properties of accessible objects, see [Content of Descriptive Properties](/windows/desktop/winauto/content-of-descriptive-properties).  
   
  For samples, see the <xref:System.Windows.Forms.AccessibleObject> class.  
   
@@ -322,7 +322,7 @@
   
  The <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property is needed if the description is not obvious, or if it is not redundant based on the object's <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A>, <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, and <xref:System.Windows.Forms.AccessibleObject.Value%2A> properties. For example, a button labeled **OK** would not need additional information, but a button that shows a picture of a cactus would. The <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A> and <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> and, perhaps, <xref:System.Windows.Forms.AccessibleObject.Help%2A?displayProperty=nameWithType> properties for the cactus button would describe its purpose, but the <xref:System.Windows.Forms.ToolStripItem.AccessibleDescription%2A> property would convey information that is less tangible, such as "A button that shows a picture of a cactus."  
   
- For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
+ For more information about properties of accessible objects, see [Content of Descriptive Properties](/windows/desktop/winauto/content-of-descriptive-properties).  
   
  For samples, see the <xref:System.Windows.Forms.AccessibleObject> class.  
   
@@ -369,7 +369,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ToolStripItem.AccessibleName%2A> property is a label that briefly describes and identifies the object within its container, such as the text in a <xref:System.Windows.Forms.ToolStripButton>, the name of a <xref:System.Windows.Forms.ToolStripMenuItem>, or a label displayed next to a <xref:System.Windows.Forms.ToolStripTextBox> control.  
   
- For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
+ For more information about properties of accessible objects, see [Content of Descriptive Properties](/windows/desktop/winauto/content-of-descriptive-properties).  
   
  For samples, see the <xref:System.Windows.Forms.AccessibleObject> class.  
   
@@ -413,7 +413,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property describes what kind of user interface element an object is. If the control's role cannot be determined, the <xref:System.Windows.Forms.ToolStripItem.AccessibleRole%2A> property is set to <xref:System.Windows.Forms.AccessibleRole.PushButton?displayProperty=nameWithType>.  
   
- For more information about properties of accessible objects, see "Content of Descriptive Properties" in the "Active Accessibility" section of the MSDN Library, at http://msdn.microsoft.com/library.  
+ For more information about properties of accessible objects, see [Content of Descriptive Properties](/windows/desktop/winauto/content-of-descriptive-properties).  
   
  For samples, see the <xref:System.Windows.Forms.AccessibleObject> class.  
   

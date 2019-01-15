@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "?[] operator [C#]"
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
 ---
-# ?. and ?[] null-conditional Operators (C# and Visual Basic)
+# ?. and ?[] null-conditional operators (C# and Visual Basic)
 
 Tests the value of the left-hand operand for null before performing a member access (`?.`) or index (`?[]`) operation; returns `null` if the left-hand operand evaluates to `null`.
 
@@ -43,12 +43,12 @@ PropertyChanged?.Invoke(…)
 
 The new way is thread-safe because the compiler generates code to evaluate `PropertyChanged` one time only, keeping the result in a temporary variable. You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `PropertyChanged?(e)`.
 
-## Language Specifications
+## Language specifications
 
 For more information, see [Null-conditional operator](~/_csharplang/spec/expressions.md#null-conditional-operator) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
 
-## See Also
+## See also
 
 - [?? (null-coalescing operator)](null-coalescing-operator.md)
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)

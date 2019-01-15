@@ -1,6 +1,6 @@
 ---
 title: Machine learning tasks - ML.NET
-description: Explore the different machine learning tasks and associated learners that are supported in ML.NET.
+description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
 ms.custom: seodec18
 ms.date: 01/15/2019
 author: jralexander
@@ -146,7 +146,7 @@ The following learners are available for anomaly detection tasks:
 
 ## Ranking
 
-A ​​​​​​​​​ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria. The ranking labels are { 0, 1, 2, 3, 4 } for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance. ML.NET ranking learners are [machine learned ranking](https://en.wikipedia.org/wiki/Learning_to_rank) based.
+A ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria. The ranking labels are { 0, 1, 2, 3, 4 } for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance. ML.NET ranking learners are [machine learned ranking](https://en.wikipedia.org/wiki/Learning_to_rank) based.
 
 ### Ranking learners
 

@@ -119,7 +119,7 @@ Create a variable called `mlContext` and initialize it with a new instance of `M
 
 Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that we are using a `TextReader`. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization. Specify the data schema by passing an array of <xref:Microsoft.ML.Data.TextLoader.Column> objects to the `TextReader` containing all the column names and their types. We defined the data schema previously when we created our `TaxiTrip` class.
 
-The `TextReader` class returns a fully initialized <xref:Microsoft.Data.TextLoader>  
+The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
 
 To initialize the `_textLoader` global variable in order to reuse it for the needed datasets, add the following code after the  `mlContext` initialization:
 

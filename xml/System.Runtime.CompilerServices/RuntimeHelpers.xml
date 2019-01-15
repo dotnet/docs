@@ -970,8 +970,8 @@
         <Parameter Name="type" Type="System.RuntimeTypeHandle" />
       </Parameters>
       <Docs>
-        <param name="type">A type handle that specifies the class constructor method to run.</param>
-        <summary>Runs a specified class constructor method.</summary>
+        <param name="type">A type handle that specifies the type for which a type initializer should be run.</param>
+        <summary>Ensures that the type initializer (also known as a static constructor) for the specified type has been run.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -980,7 +980,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.TypeInitializationException">The class initializer throws an exception.</exception>
+        <exception cref="T:System.TypeInitializationException">The type initializer throws an exception.</exception>
       </Docs>
     </Member>
     <Member MemberName="RunModuleConstructor">

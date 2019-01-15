@@ -86,7 +86,7 @@ ms.author: "ronpet"
   
 |Assertion|Description|Pattern|Matches|  
 |---------------|-----------------|-------------|-------------|  
-|`^`|By default, the match must start at the beginning of the string; in multiline mode, it must start at the beginning of the line.|`^\d{3}`|"901" in<br /><br /> "901-333-"|  
+|`^`|By default, the match must start at the beginning of the string; in multiline mode, it must start at the beginning of the line.|`^\d{3}`|"901-333-" in "901"|  
 |`$`|By default, the match must occur at the end of the string or before `\n` at the end of the string; in multiline mode, it must occur before the end of the line or before `\n` at the end of the line.|`-\d{3}$`|"-333" in<br /><br /> "-901-333"|  
 |`\A`|The match must occur at the start of the string.|`\A\d{3}`|"901" in<br /><br /> "901-333-"|  
 |`\Z`|The match must occur at the end of the string or before `\n` at the end of the string.|`-\d{3}\Z`|"-333" in<br /><br /> "-901-333"|  

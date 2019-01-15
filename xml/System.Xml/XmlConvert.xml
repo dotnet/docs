@@ -52,7 +52,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
 |Method|Description|  
 |------------|-----------------|  
-|<xref:System.Xml.XmlConvert.EncodeName%2A>|Takes a name and returns the encoded name along with any invalid character that is replaced by an escape string. This method allows colons in any position, which means that the name may still be invalid according to the W3C [Namespaces in XML 1.0 recommendation](http://www.w3.org/TR/REC-xml-names).|  
+|<xref:System.Xml.XmlConvert.EncodeName%2A>|Takes a name and returns the encoded name along with any invalid character that is replaced by an escape string. This method allows colons in any position, which means that the name may still be invalid according to the W3C [Namespaces in XML 1.0 recommendation](https://www.w3.org/TR/REC-xml-names/).|  
 |<xref:System.Xml.XmlConvert.EncodeNmToken%2A>|Takes a name and returns the encoded name.|  
 |<xref:System.Xml.XmlConvert.EncodeLocalName%2A>|Same as <xref:System.Xml.XmlConvert.EncodeName%2A> except that it also encodes the colon character, guaranteeing that the name can be used as the `LocalName` part of a namespace-qualified name.|  
 |<xref:System.Xml.XmlConvert.DecodeName%2A>|Reverses the transformation for all the encoding methods.|  
@@ -291,7 +291,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
   
  The underscore character does not need to be escaped unless it is followed by a character sequence that together with the underscore can be misinterpreted as an escape sequence when decoding the name. For example, Order_Details is not encoded, but Order_x0020_ is encoded as Order_x005f_x0020_. No shortforms are allowed. For example, the forms _x20\_ and __ are not generated.  
   
- This method guarantees the name is valid according to the XML specification. It allows colons in any position, which means the name may still be invalid according to the [W3C Namespace Specification](http://www.w3.org/TR/REC-xml-names). To guarantee it is a valid namespace qualified name use <xref:System.Xml.XmlConvert.EncodeLocalName%2A> for the prefix and local name parts and join the result with a colon.  
+ This method guarantees the name is valid according to the XML specification. It allows colons in any position, which means the name may still be invalid according to the [W3C Namespace Specification](https://www.w3.org/TR/REC-xml-names/). To guarantee it is a valid namespace qualified name use <xref:System.Xml.XmlConvert.EncodeLocalName%2A> for the prefix and local name parts and join the result with a colon.  
   
    
   
@@ -1010,7 +1010,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <Docs>
         <param name="s">The string to convert.  
   
- **Note** The string must conform to a subset of the W3C Recommendation for the XML dateTime type. For more information see http://www.w3.org/TR/xmlschema-2/#dateTime.</param>
+ **Note** The string must conform to a subset of the W3C Recommendation for the XML dateTime type. For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..</param>
         <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
         <returns>The <see cref="T:System.DateTimeOffset" /> equivalent of the supplied string.</returns>
         <remarks>
@@ -1046,7 +1046,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <exception cref="T:System.ArgumentNullException">
           <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The argument passed to this method is outside the range of allowable values. For information about allowable values, see <see cref="T:System.DateTimeOffset" />.</exception>
-        <exception cref="T:System.FormatException">The argument passed to this method does not conform to a subset of the W3C Recommendations for the XML dateTime type. For more information see [http://www.w3.org/TR/xmlschema-2/#dateTime](https://go.microsoft.com/fwlink/?LinkId=97914).</exception>
+        <exception cref="T:System.FormatException">The argument passed to this method does not conform to a subset of the W3C Recommendations for the XML dateTime type. For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToDateTimeOffset">
@@ -1084,7 +1084,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       </Parameters>
       <Docs>
         <param name="s">The string to convert.</param>
-        <param name="format">The format from which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information see http://www.w3.org/TR/xmlschema-2/#dateTime.) The string <paramref name="s" /> is validated against this format.</param>
+        <param name="format">The format from which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..) The string <paramref name="s" /> is validated against this format.</param>
         <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
         <returns>The <see cref="T:System.DateTimeOffset" /> equivalent of the supplied string.</returns>
         <remarks>
@@ -1160,7 +1160,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       </Parameters>
       <Docs>
         <param name="s">The string to convert.</param>
-        <param name="formats">An array of formats from which <paramref name="s" /> can be converted. Each format in <paramref name="formats" /> can be any subset of the W3C Recommendation for the XML dateTime type. (For more information see http://www.w3.org/TR/xmlschema-2/#dateTime.) The string <paramref name="s" /> is validated against one of these formats.</param>
+        <param name="formats">An array of formats from which <paramref name="s" /> can be converted. Each format in <paramref name="formats" /> can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..) The string <paramref name="s" /> is validated against one of these formats.</param>
         <summary>Converts the supplied <see cref="T:System.String" /> to a <see cref="T:System.DateTimeOffset" /> equivalent.</summary>
         <returns>The <see cref="T:System.DateTimeOffset" /> equivalent of the supplied string.</returns>
         <remarks>
@@ -2493,7 +2493,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.DateTimeOffset" /> to be converted.</param>
-        <param name="format">The format to which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information see http://www.w3.org/TR/xmlschema-2/#dateTime.)</param>
+        <param name="format">The format to which <paramref name="s" /> is converted. The format parameter can be any subset of the W3C Recommendation for the XML dateTime type. (For more information, see the <see href="https://www.w3.org/TR/xmlschema-2/#dateTime">dateTime</see> section of the XML Schema specification..)</param>
         <summary>Converts the supplied <see cref="T:System.DateTimeOffset" /> to a <see cref="T:System.String" /> in the specified format.</summary>
         <returns>A <see cref="T:System.String" /> representation in the specified format of the supplied <see cref="T:System.DateTimeOffset" />.</returns>
         <remarks>
@@ -2880,7 +2880,7 @@ catch(Exception e) {
 }  
 ```  
   
- For more information on the NMTOKEN data type, see http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#NMTOKEN.  
+ For more information on the NMTOKEN data type, see the [NMTOKEN](https://www.w3.org/TR/xmlschema-2/#NMTOKEN) section of the XML Schema Part 2: Datatypes Second Edition.
   
  ]]></format>
         </remarks>
@@ -2987,7 +2987,7 @@ catch(Exception e) {
 }  
 ```  
   
- For more information on tokens, see [http://www.w3.org/TR/2001/REC-xmlschema-2-20010502/#token](https://go.microsoft.com/fwlink/?LinkId=103183).  
+ For more information on tokens, see [NMTOKEN](https://www.w3.org/TR/xmlschema-2/#NMTOKEN).  
   
  ]]></format>
         </remarks>

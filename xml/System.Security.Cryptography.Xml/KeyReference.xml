@@ -31,7 +31,7 @@
   
  You can include additional information such as XPath transforms, decompression transforms, or information about how to retrieve the elements from a document storage facility to aid the decrypting application.  
   
- For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, the World Wide Web Consortium (W3C) [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification.  
   
    
   
@@ -80,7 +80,7 @@
 ## Remarks  
  This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.KeyReference> class that represents the `<KeyReference>` element. The `<KeyReference>` element is a child element of the `<ReferenceList>` element.  
   
- For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, the World Wide Web Consortium (W3C) [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification.  
   
    
   
@@ -124,7 +124,7 @@
 ## Remarks  
  This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.KeyReference> class that represents the `<KeyReference>` element, using the supplied Uniform Resource Identifier (URI). The URI indicates the location of the encrypted key. The `<KeyReference>` element is a child element of the `<ReferenceList>` element.  
   
- For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, the World Wide Web Consortium (W3C) [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification.  
   
    
   
@@ -175,7 +175,7 @@
 ## Remarks  
  This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.KeyReference> class that represents the `<KeyReference>` element, using the supplied Uniform Resource Identifier (URI) and transform chain. The URI indicates the location of the encrypted key and the transform chain that can contain XPath transforms, decompression transforms, or information on how to retrieve the encrypted data from a document storage facility. The `<KeyReference>` element is a child element of the `<ReferenceList>` element.  
   
- For more information about XML encryption standards, see the XML Encryption specification, which is available from the World Wide Web Consortium (W3C) at http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, the World Wide Web Consortium (W3C) [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification.  
   
  ]]></format>
         </remarks>

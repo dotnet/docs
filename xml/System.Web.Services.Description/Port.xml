@@ -30,7 +30,7 @@
 ## Remarks  
  This class specifies a single address (URI) for a <xref:System.Web.Services.Description.Binding>, which defines message format and protocol details for operations and messages for a given <xref:System.Web.Services.Description.PortType>. The <xref:System.Web.Services.Description.Port.Binding%2A> property gets or sets those values for a specified `Port`.  
   
- This class corresponds to the Web Services Description Language (WSDL) `<port>` element, which is enclosed by the `<service>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl.  
+ This class corresponds to the Web Services Description Language (WSDL) `<port>` element, which is enclosed by the `<service>` element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

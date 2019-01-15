@@ -2442,7 +2442,7 @@ d.</elem>
  ]]></format>
         </remarks>
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
-        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
+        <related type="ExternalDocumentation" href="https://www.w3.org/TR/1999/REC-xpath-19991116/">W3C XPath 1.0 recommendation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SelectNodes">
@@ -2532,7 +2532,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix. See [XPath Examples](https://msdn.microsoft.com/library/1431789e-c545-4765-8c09-3057e07d3041).</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectSingleNode(System.String)" />
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
-        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
+        <related type="ExternalDocumentation" href="https://www.w3.org/TR/1999/REC-xpath-19991116/">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <Member MemberName="SelectNodes">
@@ -2643,7 +2643,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
-        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
+        <related type="ExternalDocumentation" href="https://www.w3.org/TR/1999/REC-xpath-19991116/">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SelectSingleNode">
@@ -2679,7 +2679,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
  ]]></format>
         </remarks>
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
-        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
+        <related type="ExternalDocumentation" href="https://www.w3.org/TR/1999/REC-xpath-19991116/">W3C XPath 1.0 recommendation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SelectSingleNode">
@@ -2767,7 +2767,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix.</exception>
         <altmember cref="M:System.Xml.XmlNode.SelectNodes(System.String)" />
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
-        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
+        <related type="ExternalDocumentation" href="https://www.w3.org/TR/1999/REC-xpath-19991116/">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <Member MemberName="SelectSingleNode">
@@ -2876,7 +2876,7 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         </remarks>
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/magazine/cc188773.aspx">XPath Selections and Custom Functions, and More</related>
-        <related type="ExternalDocumentation" href="http://www.w3.org/TR/xpath">W3C XPath 1.0 recommendation</related>
+        <related type="ExternalDocumentation" href="https://www.w3.org/TR/1999/REC-xpath-19991116/">W3C XPath 1.0 recommendation</related>
       </Docs>
     </Member>
     <Member MemberName="Supports">

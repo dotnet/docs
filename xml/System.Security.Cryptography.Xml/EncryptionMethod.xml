@@ -25,11 +25,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `<EncryptionMethod>` tag uses a Uniform Resource Identifier (URI) to identify the encryption algorithm that must be used to decrypt XML data.  The <xref:System.Security.Cryptography.Xml.EncryptionMethod> class encapsulates the `<EncryptionMethod>` tag defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+ The `<EncryptionMethod>` tag uses a Uniform Resource Identifier (URI) to identify the encryption algorithm that must be used to decrypt XML data. The <xref:System.Security.Cryptography.Xml.EncryptionMethod> class encapsulates the `<EncryptionMethod>` tag defined by the World Wide Web Consortium (W3C) [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification.  
   
  Use the <xref:System.Security.Cryptography.Xml.EncryptionMethod> class to identify the encryption algorithm associated with the <xref:System.Security.Cryptography.Xml.EncryptedData> element or the <xref:System.Security.Cryptography.Xml.EncryptedKey> element.  
   
- Use one of the URI identifiers defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  All URI identifiers are accessible as static fields of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
+ Use one of the URI identifiers defined by the W3C [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification. All URI identifiers are accessible as static fields of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
   
    
   
@@ -125,7 +125,7 @@
 ## Remarks  
  This constructor initializes a new instance of the <xref:System.Security.Cryptography.Xml.EncryptionMethod> class using the URI of an encryption algorithm.  
   
- Use one of the URI identifiers defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  All URI identifiers are accessible as static fields of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
+ Use one of the URI identifiers defined by the World Wide Web Consortium [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification. All URI identifiers are accessible as static fields of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
   
    
   
@@ -211,7 +211,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.EncryptionMethod.KeyAlgorithm%2A> property describes the Uniform Resource Identifier (URI) of the encryption algorithm used to encrypt data associated with either the <xref:System.Security.Cryptography.Xml.EncryptedData> element or the <xref:System.Security.Cryptography.Xml.EncryptedKey> element.  
   
- Use one of the URI identifiers defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  All URI identifiers are accessible as static fields of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
+ Use one of the URI identifiers defined by the World Wide Web Consortium [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification. All URI identifiers are accessible as static fields of the <xref:System.Security.Cryptography.Xml.EncryptedXml> class.  
   
  ]]></format>
         </remarks>

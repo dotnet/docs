@@ -135,7 +135,7 @@
   
  By default, the .NET Framework version 1.1 publishes the <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute.Action%2A> property in the `soapAction` attribute of the `soap:operation` element for each supported SOAP binding in WSDL documents generated for an XML Web service. The supported SOAP binding is SOAP 1.1.  
   
- For more information about the SOAP specification, see the W3C Web site (http://www.w3.org/TR/SOAP).  
+ For more information, see the [SOAP](https://www.w3.org/TR/soap/) specification on the W3C website.
   
    
   

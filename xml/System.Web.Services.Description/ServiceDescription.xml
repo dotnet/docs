@@ -33,7 +33,7 @@
 ## Remarks  
  Instances of this class can be created with either the `new` keyword or the static <xref:System.Web.Services.Description.ServiceDescription.Read%2A> method, which parses a WSDL file and assigns its values to appropriate members of the class.  
   
- WSDL is an XML-based language for describing XML Web services. The <xref:System.Web.Services.Description.ServiceDescription> class corresponds to the root element, `definitions`, of a WSDL file. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ WSDL is an XML-based language for describing XML Web services. The <xref:System.Web.Services.Description.ServiceDescription> class corresponds to the root element, `definitions`, of a WSDL file. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.BindingCollection> returned by this property corresponds to the list of `binding` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.BindingCollection> returned by this property corresponds to the list of `binding` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -217,7 +217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.ImportCollection> returned by this property corresponds to the list of `import` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.ImportCollection> returned by this property corresponds to the list of `import` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -260,7 +260,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.MessageCollection> returned by this property corresponds to the list of `message` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.MessageCollection> returned by this property corresponds to the list of `message` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -361,7 +361,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.PortTypeCollection> returned by this property corresponds to the list of `portType` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.PortTypeCollection> returned by this property corresponds to the list of `portType` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -807,7 +807,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.ServiceCollection> returned by this property corresponds to the list of `service` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.ServiceCollection> returned by this property corresponds to the list of `service` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -888,7 +888,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.Types> instance returned by this property corresponds to the list of `types` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.Types> instance returned by this property corresponds to the list of `types` elements enclosed by the Web Services Description Language (WSDL) `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

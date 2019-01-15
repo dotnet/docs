@@ -264,7 +264,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the digest method Uniform Resource Identifier (URI) of the current <see cref="T:System.Security.Cryptography.Xml.Reference" />.</summary>
-        <value>The digest method URI of the current <see cref="T:System.Security.Cryptography.Xml.Reference" />. The default value is "http://www.w3.org/2000/09/xmldsig#sha1".</value>
+        <value>The digest method URI of the current <see cref="T:System.Security.Cryptography.Xml.Reference" />. The default value is <c>http://www.w3.org/2000/09/xmldsig#sha1</c>.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

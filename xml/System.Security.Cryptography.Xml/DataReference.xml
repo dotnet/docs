@@ -29,7 +29,7 @@
   
  `<DataReference>` elements are used to refer to `<EncryptedData>` elements that were encrypted using the key defined in the enclosing `<EncryptedKey>` element. Multiple `<DataReference>` elements can occur if multiple `<EncryptedData>` elements exist that are encrypted using the same key.  
   
- For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, see [XML Encryption Syntax and Processing Version](https://www.w3.org/TR/xmlenc-core/).
   
    
   
@@ -78,7 +78,7 @@
 ## Remarks  
  This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.DataReference> class that represents the `<DataReference>` element. `<DataReference>` is a child element of the `<ReferenceList>` element.  
   
- For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, see [XML Encryption Syntax and Processing Version](https://www.w3.org/TR/xmlenc-core/).
   
    
   
@@ -122,7 +122,7 @@
 ## Remarks  
  This constructor uses the specified Uniform Resource Identifier (URI) to create a new instance of the <xref:System.Security.Cryptography.Xml.DataReference> class, which represents the `<DataReference>` element. The URI indicates the location of encrypted data. The `<DataReference>` element is a child element of the `<ReferenceList>` element.  
   
- For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, see [XML Encryption Syntax and Processing Version](https://www.w3.org/TR/xmlenc-core/).
   
  ]]></format>
         </remarks>
@@ -165,7 +165,7 @@
 ## Remarks  
  This constructor uses the specified Uniform Resource Identifier (URI) and transform chain to create a new instance of the <xref:System.Security.Cryptography.Xml.DataReference> class, which represents the `<DataReference>` element. The URI indicates the location of encrypted data, and the transform chain can contain XPath transforms, decompression transforms, or information on how to retrieve the encrypted data from a document storage facility. `<DataReference>` is a child element of the `<ReferenceList>` element.  
   
- For more information about XML encryption standards, see http://www.w3.org/TR/xmlenc-core/.  
+ For more information about XML encryption standards, see [XML Encryption Syntax and Processing Version](https://www.w3.org/TR/xmlenc-core/).
   
  ]]></format>
         </remarks>

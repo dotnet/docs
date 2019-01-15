@@ -47,7 +47,7 @@
   
  Although this class stores both XML Schemas and XDR schemas, any method and property that takes or returns an <xref:System.Xml.Schema.XmlSchema> applies to XML Schemas only.  
   
- This version of the product supports the World Wide Web Consortium (W3C) XML Schema recommendation located at http://www.w3.org/TR/xmlschema-1 and http://www.w3.org/TR/xmlschema-2. An XML Schema must reference the W3C Schema namespace `http://www.w3.org/2001/XMLSchema` in its schema element. See the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A> method for an example.  
+ This version of the product supports the World Wide Web Consortium (W3C) XML Schema recommendation located at [XML Schema Part 1: Structures](https://www.w3.org/TR/xmlschema-1/) and [XML Schema Part 2: Datatypes](https://www.w3.org/TR/xmlschema-2/). An XML Schema must reference the W3C Schema namespace `http://www.w3.org/2001/XMLSchema` in its schema element. See the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A> method for an example.  
   
  `XmlSchemaCollection` can be used by <xref:System.Xml.XmlValidatingReader> for efficient data validation.  
   

@@ -30,7 +30,7 @@
 ## Remarks  
  A <xref:System.Web.Services.Description.Message> can contain either document-oriented or procedure-oriented information. Procedure-oriented messages contain parameters and return values, while document-oriented messages contain documents.  
   
- The <xref:System.Web.Services.Description.Message> class corresponds to a Web Services Description Language (WSDL) `message` element enclosed by the `definitions` root element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.Message> class corresponds to a Web Services Description Language (WSDL) `message` element enclosed by the `definitions` root element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

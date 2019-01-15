@@ -438,7 +438,7 @@
   
  When a SOAP request is made, the message is sent to a recipient, which is specified in a SOAP actor attribute. If an exception occurs within an XML Web service, the value of the SOAP actor attribute is assigned to the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> property. For XML Web services created using ASP.NET, the URL to the XML Web service method is the value of the SOAP actor attribute and is returned in the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> property.  
   
- For more information on the SOAP actor attribute, see the SOAP specification at http://www.w3.org/TR/SOAP/.  
+ For more information on the SOAP actor attribute, see the [SOAP](https://www.w3.org/TR/soap/) specification.
   
    
   

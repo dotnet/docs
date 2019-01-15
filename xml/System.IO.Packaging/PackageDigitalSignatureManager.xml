@@ -882,7 +882,7 @@
 ## Remarks  
  The default <xref:System.IO.Packaging.PackageDigitalSignatureManager.TimeFormat%2A> is "YYYY-MM-DDThh:mm:ss.sTZD".  
   
- Date/time formats follow the syntax of the "W3C Date and Time Formats" specification at [http://www.w3.org/TR/Note-datetime.html](http://www.w3.org/TR/Note-datetime.html). The components shown below must be present and use the syntax and punctuation as defined.  
+ Date/time formats follow the syntax of the [W3C Date and Time Formats specification](https://www.w3.org/TR/Note-datetime.html). The components shown below must be present and use the syntax and punctuation as defined.  
   
 |TimeFormat|Description|Example|  
 |----------------|-----------------|-------------|  

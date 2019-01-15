@@ -19,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A token handler that serializes and deserializes <xref:System.IdentityModel.Tokens.EncryptedSecurityToken> objects from `<xenc:EncryptedData>` elements and <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> objects from `<xenc:EncryptedKey>` elements as defined in the XML Encryption Syntax and Processing specification (http://www.w3.org/TR/2002/REC-xmlenc-core-20021210).  
+ A token handler that serializes and deserializes <xref:System.IdentityModel.Tokens.EncryptedSecurityToken> objects from `<xenc:EncryptedData>` elements and <xref:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause> objects from `<xenc:EncryptedKey>` elements as defined in the [XML Encryption Syntax and Processing specification](https://www.w3.org/TR/xmlenc-core1/).  
   
  ]]></format>
     </remarks>
@@ -64,7 +64,7 @@
         <param name="reader">An XML reader positioned at the start element. The reader should not be advanced.</param>
         <summary>Returns a value that indicates whether the current XML element is pointing to an <see langword="&lt;xenc:EncryptedKey&gt;" /> element that can be deserialized to a <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> by this instance.</summary>
         <returns>
-          <see langword="true" /> if the XML reader is positioned at an <see langword="&lt;xenc:EncryptedKey&gt;" /> element as defined in section 3.5.1 of the XML Encryption Syntax and Processing specification (http://www.w3.org/TR/2002/REC-xmlenc-core-20021210); otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the XML reader is positioned at an <see langword="&lt;xenc:EncryptedKey&gt;" /> element as defined in section 3.5.1 of the <see href="https://www.w3.org/TR/xmlenc-core1/">XML Encryption Syntax and Processing</see>; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
@@ -188,7 +188,7 @@
         <Parameter Name="reader" Type="System.Xml.XmlReader" />
       </Parameters>
       <Docs>
-        <param name="reader">An XML reader positioned at an <see langword="&lt;xenc:EncryptedKey&gt;" /> element as defined in 'http://www.w3.org/TR/2002/REC-xmlenc-core-20021210'; otherwise, <see langword="false" />.</param>
+        <param name="reader">An XML reader positioned at an <see langword="&lt;xenc:EncryptedKey&gt;" /> element as defined in <see href="https://www.w3.org/TR/xmlenc-core1/">XML Encryption Syntax and Processing</see>; otherwise, <see langword="false" />.</param>
         <summary>Reads an <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> from an XML stream.</summary>
         <returns>A key identifier clause of type <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" />.</returns>
         <remarks>To be added.</remarks>

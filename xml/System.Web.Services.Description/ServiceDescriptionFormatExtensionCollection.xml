@@ -60,7 +60,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Since many of the classes in the <xref:System.Web.Services.Description> namespace expose an `Extensions` property representing a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>, the constructor assigns a parent object corresponding to the level within the Web Services Description Language (WSDL) hierarchy where the current `ServiceDescriptionFormatExtensionCollection` is nested. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ Since many of the classes in the <xref:System.Web.Services.Description> namespace expose an `Extensions` property representing a <xref:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection>, the constructor assigns a parent object corresponding to the level within the Web Services Description Language (WSDL) hierarchy where the current `ServiceDescriptionFormatExtensionCollection` is nested. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

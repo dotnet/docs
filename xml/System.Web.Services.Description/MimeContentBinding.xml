@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](https://msdn.microsoft.com/library/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](https://msdn.microsoft.com/library/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -173,7 +173,7 @@
 ## Remarks  
  The Web Services Description Language (WSDL) specification defines bindings for several MIME types, including text/xml, multipart/related, and application/x-www-form-urlencoded, although any MIME type can be used. The wildcard character (*) can also be used. For example, the string "text/\*" would represent all text types. If the value of this property is not set, the `MimeContentBinding` specifies all MIME types.  
   
- For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

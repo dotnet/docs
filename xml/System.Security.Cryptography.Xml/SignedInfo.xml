@@ -142,10 +142,10 @@
   
 |Canonicalization Method|Value|  
 |-----------------------------|-----------|  
-|Canonical XML|http://www.w3.org/TR/2001/REC-xml-c14n-20010315<br /><br /> This is default method. Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl>|  
-|Canonical XML with comments|http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl>|  
-|Exclusive Canonical XML|http://www.w3.org/2001/10/xml-exc-c14n#<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NTransformUrl>|  
-|Exclusive Canonical XML with comments|http://www.w3.org/2001/10/xml-exc-c14n#WithComments<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl>|  
+|Canonical XML|<https://www.w3.org/TR/2001/REC-xml-c14n-20010315><br /><br /> This is default method. Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl>|  
+|Canonical XML with comments|<https://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments><br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl>|  
+|Exclusive Canonical XML|<https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/#WithComments><br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NTransformUrl>|  
+|Exclusive Canonical XML with comments|<https://www.w3.org/TR/2002/REC-xml-exc-c14n-20020718/#WithComments><br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigExcC14NWithCommentsTransformUrl>|  
   
  For more information about XML digital signatures, see the World Wide Web Consortium (W3C) specification at www.w3.org/TR/xmldsig-core/.  
   
@@ -589,9 +589,9 @@
   
 |Signature Method|Value|  
 |----------------------|-----------|  
-|HMAC-SHA1|http://www.w3.org/2000/09/xmldsig#hmac-sha1<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigHMACSHA1Url>|  
-|DSA with SHA1|http://www.w3.org/2000/09/xmldsig#dsa-sha1<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>|  
-|RSA with SHA1|http://www.w3.org/2000/09/xmldsig#rsa-sha1<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url>|  
+|HMAC-SHA1|`http://www.w3.org/2000/09/xmldsig#hmac-sha1`<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigHMACSHA1Url>|  
+|DSA with SHA1|`http://www.w3.org/2000/09/xmldsig#dsa-sha1`<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigDSAUrl>|  
+|RSA with SHA1|`http://www.w3.org/2000/09/xmldsig#rsa-sha1`<br /><br /> Also defined in the following static field: <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigRSASHA1Url>|  
   
  For more information about XML digital signatures, see the World Wide Web Consortium (W3C) [XML Signature Syntax and Processing Specification](https://www.w3.org/TR/xmldsig-core/).  
   

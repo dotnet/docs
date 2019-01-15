@@ -1026,7 +1026,7 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
 -   <xref:System.Xml.XPath.XPathNodeType.Attribute> nodes: These nodes may be returned in document order. They always come after the <xref:System.Xml.XPath.XPathNodeType.Namespace> nodes and before any child nodes of the parent node.  
   
 > [!NOTE]
->  For more information about the XPath data model and details about each of the node types, see section 5 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+>  For more information about the XPath data model and details about each of the node types, see section 5 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  This method has no effect on the state of the <xref:System.Xml.XPath.XPathNavigator>.  
   
@@ -2077,7 +2077,7 @@ nav.Evaluate(expr);
 ## Remarks  
  Namespaces `xml` and `xmlns` always return a value. If <xref:System.String.Empty?displayProperty=nameWithType> is specified as the `name` parameter, the <xref:System.Xml.XPath.XPathNavigator.GetNamespace%2A> method returns the default `xmlns` namespace.  
   
- For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+ For a definition of namespace nodes, see section 5.4 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  This method does not affect the state of the <xref:System.Xml.XPath.XPathNavigator>.  
   
@@ -4384,7 +4384,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  After the <xref:System.Xml.XPath.XPathNavigator> is positioned on an namespace node, call <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A> to move back to the element node.  
   
- For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+ For a definition of namespace nodes, see section 5.4 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  ]]></format>
         </remarks>
@@ -4459,7 +4459,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  After the <xref:System.Xml.XPath.XPathNavigator> is positioned on an namespace node, call <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A> to move back to the element node.  
   
- For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+ For a definition of namespace nodes, see section 5.4 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  ]]></format>
         </remarks>
@@ -4976,7 +4976,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  After the <xref:System.Xml.XPath.XPathNavigator> is positioned on a namespace node, you can call <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A> to move back to the element node.  
   
- For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+ For a definition of namespace nodes, see section 5.4 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  ]]></format>
         </remarks>
@@ -5335,7 +5335,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  After the <xref:System.Xml.XPath.XPathNavigator> is positioned on an namespace node, call <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A> to move back to the element node.  
   
- For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+ For a definition of namespace nodes, see section 5.4 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  ]]></format>
         </remarks>
@@ -5394,7 +5394,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  After the <xref:System.Xml.XPath.XPathNavigator> is positioned on an namespace node, call <xref:System.Xml.XPath.XPathNavigator.MoveToParent%2A> to move back to the element node.  
   
- For a definition of namespace nodes, see section 5.4 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
+ For a definition of namespace nodes, see section 5.4 of the W3C [XML Path Language (XPath)](https://www.w3.org/TR/xpath/all/#data-model) recommendation.
   
  ]]></format>
         </remarks>

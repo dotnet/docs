@@ -409,7 +409,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see the http://www.w3.org/TR/xmlschema-1/ specification named `XML Schema Part 1: Structures`.  
+ The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see [XML Schema Part 1: Structures Second Edition](https://www.w3.org/TR/xmlschema-1/).
   
  If the <xref:System.Xml.Serialization.XmlRootAttribute.IsNullable%2A> property is set to `true`, the `xsi:nil` attribute is generated as shown in the following XML:  
   

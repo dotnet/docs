@@ -35,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium XML Encryption specification located at http://www.w3.org/TR/xmlenc-core/.  
+ The <xref:System.Security.Cryptography.Xml.EncryptionProperty> class encapsulates the `<EncryptionProperty>` element defined by the World Wide Web Consortium [XML Encryption Syntax and Processing](https://www.w3.org/TR/xmlenc-core/) specification.  
   
  Use the <xref:System.Security.Cryptography.Xml.EncryptionProperty> class to provide additional encryption information related to the <xref:System.Security.Cryptography.Xml.EncryptedData> and <xref:System.Security.Cryptography.Xml.EncryptedKey> elements.  For example, you can use this class to specify a time stamp.  
   

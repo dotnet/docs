@@ -29,7 +29,7 @@
 ## Remarks  
  Exactly one instance of this class is a member of the <xref:System.Web.Services.Description.Operation.Messages%2A> property of the parent <xref:System.Web.Services.Description.Operation> instance.  
   
- The <xref:System.Web.Services.Description.OperationInput> class corresponds to the Web Services Description Language (WSDL) `input` element enclosed by the `operation` element that is in turn enclosed by the `portType` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ The <xref:System.Web.Services.Description.OperationInput> class corresponds to the Web Services Description Language (WSDL) `input` element enclosed by the `operation` element that is in turn enclosed by the `portType` element. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

@@ -143,7 +143,7 @@
 ## Remarks  
  Each of the classes derived from the <xref:System.Web.Services.Description.MessageBinding> class corresponds to a Web Services Description Language (WSDL) element (`<input>`, `<output>` or `<fault>`) enclosed by the `<operation>` element, which is in turn enclosed by the `<binding>` element. The <xref:System.Web.Services.Description.OperationBinding> class corresponds to that `<operation>` element in the WSDL document.  
   
- For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
  ]]></format>
         </remarks>

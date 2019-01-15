@@ -133,7 +133,7 @@
 ## Remarks  
  Typically, the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> property is a URI indicating the intent of the request. However, the SOAP specification places no restrictions on the format of the URI, or any rules about whether the URI is resolvable. The presence and content of the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> property can be used by Web servers, such as firewalls, to appropriately filter SOAP request messages in HTTP.  
   
- By default, the .NET Framework version 1.1 publishes the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> property in the `soapAction` attribute of the `soap:operation` element for each supported SOAP binding in WSDL documents generated for an XML Web service. For more information on the SOAP specification, see the W3C Web site (http://www.w3.org/TR/SOAP).  
+ By default, the .NET Framework version 1.1 publishes the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> property in the `soapAction` attribute of the `soap:operation` element for each supported SOAP binding in WSDL documents generated for an XML Web service. For more information, see the [SOAP](https://www.w3.org/TR/soap/) specification on the W3C website.
   
    
   
@@ -175,7 +175,7 @@
   
  Once one or more <xref:System.Web.Services.WebServiceBindingAttribute> attributes are applied to an XML Web service, a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> or <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> can be applied to individual XML Web service methods to indicate the binding operation implemented by a particular XML Web service method. Set the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Binding%2A> property of <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> or <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> to specify the binding an XML Web service method is implementing an operation for. Only one <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> or <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> can be applied to an XML Web service method. Therefore, an XML Web service method can only implement an operation for one binding.  
   
- For more information on the WSDL specification, see the W3C Web site (http://www.w3.org/TR/wsdl).  
+ For more information on the WSDL specification, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
  ]]></format>
         </remarks>

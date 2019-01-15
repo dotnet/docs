@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](https://msdn.microsoft.com/library/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](https://msdn.microsoft.com/library/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   
@@ -100,7 +100,7 @@
   
 -   <xref:System.Web.Services.Description.SoapBodyBinding>  
   
- Each of these classes exposes a `Part` property specifying the <xref:System.Web.Services.Description.MessagePart> with which the `MimePart` is associated. If this collection has no members, the XML Web service will fail to generate a Web Services Description Language (WSDL) file when it is requested. For more information about how MIME extends WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+ Each of these classes exposes a `Part` property specifying the <xref:System.Web.Services.Description.MessagePart> with which the `MimePart` is associated. If this collection has no members, the XML Web service will fail to generate a Web Services Description Language (WSDL) file when it is requested. For more information about how MIME extends WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification.  
   
    
   

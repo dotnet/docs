@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Cryptography.Xml.EncryptedXml> class is the main class used for XML encryption in the .NET Framework. XML Encryption is a standards-based, interoperable way to encrypt all or part of an XML document or any arbitrary data. The .NET Framework XML encryption classes implement the World Wide Web Consortium (W3C) specification for XML encryption located at http://www.w3.org/TR/xmlenc-core/.  
+ The <xref:System.Security.Cryptography.Xml.EncryptedXml> class is the main class used for XML encryption in the .NET Framework. XML Encryption is a standards-based, interoperable way to encrypt all or part of an XML document or any arbitrary data. The .NET Framework XML encryption classes implement the World Wide Web Consortium (W3C) [XML Encryption Syntax and Processing Version 1.1](https://www.w3.org/TR/xmlenc-core/) specification.  
   
  Use the <xref:System.Security.Cryptography.Xml.EncryptedXml> class whenever you need to share encrypted XML data between applications or organizations in a standard way. Any data encrypted using this class can be decrypted by any implementation of the W3C specification for XML encryption.  
   
@@ -204,7 +204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this constructor to create an <xref:System.Security.Cryptography.Xml.EncryptedXml> object when you want to specify the XML document to encrypt.  The `document` parameter comprises the XML elements that later form the encrypted XML.  
+ Use this constructor to create an <xref:System.Security.Cryptography.Xml.EncryptedXml> object when you want to specify the XML document to encrypt. The `document` parameter comprises the XML elements that later form the encrypted XML.  
   
    
   
@@ -389,7 +389,7 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method to decrypt an <xref:System.Security.Cryptography.Xml.EncryptedData> element using a symmetric key.  
   
- Note that the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method only decrypts top-level <`EncryptedData`> tags.  In cases where one or more <`EncryptedData`> tags have been encrypted and are contained within higher level <`EncryptedData`> tags, you can call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method separately for each one.  See the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method for a code example.  
+ Note that the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method only decrypts top-level <`EncryptedData`> tags. In cases where one or more <`EncryptedData`> tags have been encrypted and are contained within higher level <`EncryptedData`> tags, you can call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method separately for each one. See the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method for a code example.  
   
    
   
@@ -439,7 +439,7 @@
 ## Remarks  
  The <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method decrypts all `<EncryptedData>` elements of the XML document loaded during initialization. After you call this method, all `<EncryptedData>` elements in the document are replaced with plain text versions.  
   
- The <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method decrypts only top-level `<EncryptedData>` elements.  If you need to decrypt a super-encrypted document (a document that is encrypted more than once), you must call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method repeatedly until all the `<EncryptedData>` elements have been decrypted.  
+ The <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method decrypts only top-level `<EncryptedData>` elements. If you need to decrypt a super-encrypted document (a document that is encrypted more than once), you must call the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method repeatedly until all the `<EncryptedData>` elements have been decrypted.  
   
 > [!NOTE]
 >  The <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptDocument%2A> method decrypts only valid XML data. To decrypt arbitrary data, use the <xref:System.Security.Cryptography.Xml.EncryptedXml.DecryptData%2A> method.  
@@ -658,7 +658,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the XML document used to create the <xref:System.Security.Cryptography.Xml.EncryptedXml> object has any security evidence, you should add the evidence to the <xref:System.Security.Cryptography.Xml.EncryptedXml.DocumentEvidence%2A> property.  If you do not set this property, any associated <xref:System.Security.Cryptography.Xml.CipherReference> objects will not be dereferenced because they will not be granted the required permission set.  
+ If the XML document used to create the <xref:System.Security.Cryptography.Xml.EncryptedXml> object has any security evidence, you should add the evidence to the <xref:System.Security.Cryptography.Xml.EncryptedXml.DocumentEvidence%2A> property. If you do not set this property, any associated <xref:System.Security.Cryptography.Xml.CipherReference> objects will not be dereferenced because they will not be granted the required permission set.  
   
  ]]></format>
         </remarks>
@@ -1081,7 +1081,7 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey%2A> method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for the `symmetricAlgorithm` parameter that represents either the Triple DES algorithm or the AES key wrap algorithm (also called Rijndael).  
   
- Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element.  You must manually create the `<EncryptedKey>` element within your document.  
+ Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element. You must manually create the `<EncryptedKey>` element within your document.  
   
  ]]></format>
         </remarks>
@@ -1135,7 +1135,7 @@
 ## Remarks  
  Use the <xref:System.Security.Cryptography.Xml.EncryptedXml.EncryptKey%2A> method to encrypt the key that a recipient uses to decrypt an `<EncryptedData>` element. This method accepts a value for `rsa` that represents either the RSA PKCS#1 v1.5 algorithm or the RSA PKCS#1 type 2 algorithm (also called OAEP).  
   
- Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element.  You must manually create the `<EncryptedKey>` element within your document.  
+ Note that this method does not automatically place the encrypted key within an `<EncryptedKey>` element. You must manually create the `<EncryptedKey>` element within your document.  
   
    
   
@@ -1596,7 +1596,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES128KeyWrapUrl> field is "http://www.w3.org/2001/04/xmlenc#kw-aes128".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES128KeyWrapUrl> field is `http://www.w3.org/(2001/04/xmlenc#kw-aes128)`.  
   
  ]]></format>
         </remarks>
@@ -1629,7 +1629,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES128Url> field is "http://www.w3.org/2001/04/xmlenc#aes128-cbc".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES128Url> field is `http://www.w3.org/(2001/04/xmlenc#aes128-cbc)`.  
   
    
   
@@ -1671,7 +1671,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES192KeyWrapUrl> field is "http://www.w3.org/2001/04/xmlenc#kw-aes192".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES192KeyWrapUrl> field is `http://www.w3.org/(2001/04/xmlenc#kw-aes192)`.  
   
  ]]></format>
         </remarks>
@@ -1704,7 +1704,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES192Url> field is "http://www.w3.org/2001/04/xmlenc#aes192-cbc".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES192Url> field is `http://www.w3.org/(2001/04/xmlenc#aes192-cbc)`.  
   
    
   
@@ -1746,7 +1746,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES256KeyWrapUrl> field is "http://www.w3.org/2001/04/xmlenc#kw-aes256".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES256KeyWrapUrl> field is `http://www.w3.org/(2001/04/xmlenc#kw-aes256)`.  
   
  ]]></format>
         </remarks>
@@ -1779,7 +1779,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES256Url> field is "http://www.w3.org/2001/04/xmlenc#aes256-cbc".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncAES256Url> field is `http://www.w3.org/(2001/04/xmlenc#aes256-cbc)`.  
   
    
   
@@ -1821,7 +1821,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncDESUrl> field is "http://www.w3.org/2001/04/xmlenc#des-cbc".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncDESUrl> field is `http://www.w3.org/(2001/04/xmlenc#des-cbc)`.  
   
    
   
@@ -1863,7 +1863,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncElementContentUrl> field is "http://www.w3.org/2001/04/xmlenc#Content".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncElementContentUrl> field is `http://www.w3.org/(2001/04/xmlenc#Content)`.  
   
  ]]></format>
         </remarks>
@@ -1896,7 +1896,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncElementUrl> field is "http://www.w3.org/2001/04/xmlenc#Element".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncElementUrl> field is `http://www.w3.org/(2001/04/xmlenc#Element)`.  
   
    
   
@@ -1938,7 +1938,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncEncryptedKeyUrl> field is "http://www.w3.org/2001/04/xmlenc#EncryptedKey".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncEncryptedKeyUrl> field is `http://www.w3.org/(2001/04/xmlenc#EncryptedKey)`.  
   
  ]]></format>
         </remarks>
@@ -1971,7 +1971,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncNamespaceUrl> field is "http://www.w3.org/2001/04/xmlenc#".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncNamespaceUrl> field is `http://www.w3.org/(2001/04/xmlenc#)`.  
   
  ]]></format>
         </remarks>
@@ -2004,7 +2004,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> field is "http://www.w3.org/2001/04/xmlenc#rsa-1_5".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSA15Url> field is `http://www.w3.org/(2001/04/xmlenc#rsa-1_5)`.  
   
    
   
@@ -2046,7 +2046,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> field is "http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncRSAOAEPUrl> field is `http://www.w3.org/(2001/04/xmlenc#rsa-oaep-mgf1p)`.  
   
  ]]></format>
         </remarks>
@@ -2079,7 +2079,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncSHA256Url> field is "http://www.w3.org/2001/04/xmlenc#sha256".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncSHA256Url> field is `http://www.w3.org/(2001/04/xmlenc#sha256)`.  
   
  ]]></format>
         </remarks>
@@ -2112,7 +2112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncSHA512Url> field is "http://www.w3.org/2001/04/xmlenc#sha512".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncSHA512Url> field is `http://www.w3.org/(2001/04/xmlenc#sha512)`.  
   
  ]]></format>
         </remarks>
@@ -2145,7 +2145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncTripleDESKeyWrapUrl> field is "http://www.w3.org/2001/04/xmlenc#kw-tripledes".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncTripleDESKeyWrapUrl> field is `http://www.w3.org/(2001/04/xmlenc#kw-tripledes)`.  
   
  ]]></format>
         </remarks>
@@ -2178,7 +2178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncTripleDESUrl> field is "http://www.w3.org/2001/04/xmlenc#tripledes-cbc".  
+ The value of the <xref:System.Security.Cryptography.Xml.EncryptedXml.XmlEncTripleDESUrl> field is `http://www.w3.org/(2001/04/xmlenc#tripledes-cbc)`.  
   
    
   

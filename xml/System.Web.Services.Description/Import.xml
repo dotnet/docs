@@ -27,7 +27,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Web Services Description Language (WSDL) `import` element that is enclosed by the `definitions` element allows the separation of different parts of the XML Web service into different documents, which can then be imported as required. Each document's URL is associated with a unique XML tag prefix that represents the XML namespace for that document's elements. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/. For more information about XML namespaces, see the <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property.  
+ The Web Services Description Language (WSDL) `import` element that is enclosed by the `definitions` element allows the separation of different parts of the XML Web service into different documents, which can then be imported as required. Each document's URL is associated with a unique XML tag prefix that represents the XML namespace for that document's elements. For more information about WSDL, see the [WSDL](https://www.w3.org/TR/wsdl/) specification. For more information about XML namespaces, see the <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property.  
   
    
   

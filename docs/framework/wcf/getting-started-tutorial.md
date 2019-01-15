@@ -12,7 +12,7 @@ ms.assetid: df939177-73cb-4440-bd95-092a421516a1
 The following tutorial articles introduce you to the Windows Communication Foundation (WCF) programming experience. Working through these tutorials gives you an introductory understanding of the steps required to create WCF service and client applications. 
 
 After you work through the sequence of articles in this tutorial, you'll have a running WCF service and a WCF client that calls the service. A service exposes one or more endpoints, each of which exposes one or more service operations. The *endpoint* of a service specifies the following information: 
-- An address where the service can be found.
+- An address where you can find the service.
 - A binding that contains the information that describes how a client must communicate with the service. 
 - A contract that defines the functionality that the service provides to its clients.
 
@@ -24,11 +24,11 @@ For more in-depth information about creating services and clients, see [Basic WC
 
 ## Getting started tutorials
 
-The first three tutorials describe how to define a WCF service contract, how to implement it, and how to host it. The service that you create is self-hosted within a console application. You can also host services under Microsoft Internet Information Services (IIS). For more information, see [How to: Host a WCF Service in IIS](feature-details/how-to-host-a-wcf-service-in-iis.md). Although you use code to configure the service in the tutorial, you can also configure services within a configuration file. For more information, see [Configuring services using configuration files](configuring-services-using-configuration-files.md).
+The first three tutorials describe how to define a WCF service contract, how to implement it, and how to host it. The service that you create is self-hosted within a console application. You can also host services under Microsoft Internet Information Services (IIS). For more info, see [How to: Host a WCF Service in IIS](feature-details/how-to-host-a-wcf-service-in-iis.md). Although you use code to configure the service in the tutorial, you can also configure services within a configuration file. For more info, see [Configuring services using configuration files](configuring-services-using-configuration-files.md).
 
 - [Tutorial: Define a service contract](how-to-define-a-wcf-service-contract.md)
 
-    Create a WCF contract by using a user-defined interface. The contract defines the functionality that the service exposes.
+    Create a WCF contract with a user-defined interface. This contract defines the functionality that the service exposes.
 
 - [Tutorial: Implement a service contract](how-to-implement-a-wcf-contract.md)
 
@@ -42,7 +42,7 @@ The next three tutorials describe how to create a client proxy, configure a clie
 
 - [Tutorial: Create a client](how-to-create-a-wcf-client.md)
 
-    Retrieve metadata that you use to create a WCF client proxy from a WCF service. This process uses the Add Service Reference function within Visual Studio.
+    Retrieve metadata that you use to create a WCF client proxy from a WCF service. You retrieve metadata by using Visual Studio to add a service reference.
 
  - [Tutorial: Configure a client](how-to-configure-a-basic-wcf-client.md)
 

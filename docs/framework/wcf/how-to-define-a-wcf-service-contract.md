@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Define a Windows Communication Foundation service contract"
-ms.date: 01/10/2019
+ms.date: 01/14/2019
 helpviewer_keywords:
   - "service contracts [WCF], defining"
 dev_langs:
@@ -12,14 +12,12 @@ ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 
 This tutorial describes the first of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Getting started tutorial](getting-started-tutorial.md).
 
-When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a C++, C#, or Visual Basic (VB) interface. 
-
-An interface has the following characteristics:
+When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a C++, C#, or Visual Basic (VB) interface. An interface has the following characteristics:
 
 - Each method in the interface corresponds to a specific service operation. 
 - Each interface must have the <xref:System.ServiceModel.ServiceContractAttribute> applied to it. 
 - Each operation must have the <xref:System.ServiceModel.OperationContractAttribute> attribute applied to it. 
-- A method within an interface that has the <xref:System.ServiceModel.ServiceContractAttribute> attribute is exposed by the service only if it has the <xref:System.ServiceModel.OperationContractAttribute> attribute.
+- A method within an interface that has the `ServiceContractAttribute` attribute is exposed by the service only if it has the `OperationContractAttribute` attribute.
 
 
 ## Define a service contract 
@@ -35,16 +33,16 @@ An interface has the following characteristics:
       > [!NOTE]
       > If you don't see the **WCF** project template category, you may need to install the **Windows Communication Foundation** component of Visual Studio. In the **New Project** dialog box, select the **Open Visual Studio Installer** link on the left side. Select the **Individual components** tab, and then find and select **Windows Communication Foundation** under the **Development activities** category. Choose **Modify** to begin installing the component.
 
-   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**. Verify you've selected **Create new solution**.
+   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**. For **Solution**, verify you've selected **Create new solution**.
 
    4. Select **OK**.
 
-   Visual Studio creates the project, which contains three files: IService1.cs (or IService1.vb), Service1.cs (or Service1.vb), and App.config. These files are defined as follows: 
+   Visual Studio creates the project, which contains three files: IService1.cs (or IService1.vb), Service1.cs (or Service1.vb), and App.config. Visual Studio defines these files as follows: 
    - The IService1 file contains a default service contract. 
    - The Service1 file contains a default implementation of the service contract. 
-   - The App.config file contains configuration needed to load the default service with the Visual Studio WCF Service Host. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
+   - The App.config file contains configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more info about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
-3. Open the IService1.cs (or IService1.vb) file. Delete the code within the `GettingStartedLib` namespace declaration and replace it with a new interface named `ICalculator` as follows:
+3. Open the IService1.cs (or IService1.vb) file. Delete the code within the `GettingStartedLib` namespace declaration and add the `ICalculator` interface as follows:
 
     ```csharp
     using System;
@@ -87,7 +85,7 @@ An interface has the following characteristics:
     End Namespace
     ```
 
-     This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. This attribute defines a namespace that is used to disambiguate the contract name. Each calculator operation is marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute.
+     This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute (simplified as `ServiceContract`). This attribute defines a namespace that's used to disambiguate the contract name. Each calculator operation is marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute (simplified as `OperationContract`).
 
 ## Next steps
 

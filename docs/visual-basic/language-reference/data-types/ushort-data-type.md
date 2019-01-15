@@ -27,7 +27,7 @@ Holds unsigned 16-bit (2-byte) integers ranging in value from 0 through 65,535.
   
  The default value of `UShort` is 0.  
 
-# Literal assignments
+## Literal assignments
 
 You can declare and initialize a `UShort` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal. If the integer literal is outside the range of `UShort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=nameWithType> or greater than <xref:System.UInt16.MaxValue?displayProperty=nameWithType>, a compilation error occurs.
 

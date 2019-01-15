@@ -1,12 +1,12 @@
 ---
-title: "How to access an array element with a pointer - C# Programming Guide"
+title: "How to: access an array element with a pointer - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointers [C#], array access"
 ms.assetid: 6c46f2af-a730-4855-8638-f136d9abaa12
 ---
-# How to access an array element with a pointer (C# Programming Guide)
+# How to: access an array element with a pointer (C# Programming Guide)
 
 In an unsafe context, you can access an element in memory by using pointer element access, as shown in the following example:
 
@@ -30,10 +30,10 @@ Notice that the expression `charPointer[i]` is equivalent to the expression `*(c
 
 [!code-csharp[csProgGuidePointers#12](../../../csharp/programming-guide/unsafe-code-pointers/codesnippet/CSharp/how-to-access-an-array-element-with-a-pointer_2.cs)]
 
-**Uppercase letters:**
-**ABCDEFGHIJKLMNOPQRSTUVWXYZ**
-**Lowercase letters:**
-**abcdefghijklmnopqrstuvwxyz**
+**Uppercase letters:**  
+**ABCDEFGHIJKLMNOPQRSTUVWXYZ**  
+**Lowercase letters:**  
+**abcdefghijklmnopqrstuvwxyz**  
 
 ## See also
 

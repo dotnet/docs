@@ -80,7 +80,7 @@
      [!code-csharp[System.NullReferenceException.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullreferenceexception.class/cs/nullreturn2a.cs#5)]
      [!code-vb[System.NullReferenceException.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullreferenceexception.class/vb/nullreturn2a.vb#5)]  
   
--   You're using an expression (for example, you're chaining a list of methods or properties together) to retrieve a value and, although you're checking whether the value is `null`, the runtime still throws a <xref:System.NullReferenceException> exception. This occurs because one of the intermediate values in the expression returns `null`. As a result, your rest for `null` is never evaluated.  
+-   You're using an expression (for example, you're chaining a list of methods or properties together) to retrieve a value and, although you're checking whether the value is `null`, the runtime still throws a <xref:System.NullReferenceException> exception. This occurs because one of the intermediate values in the expression returns `null`. As a result, your test for `null` is never evaluated.  
   
      The following example defines a `Pages` object that  caches information about web pages, which are presented by `Page` objects. The `Example.Main` method checks whether the current web page has a non-null title and, if it does, displays the title. Despite this check, however, the method throws a <xref:System.NullReferenceException> exception.  
   

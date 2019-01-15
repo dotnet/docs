@@ -2,7 +2,7 @@
 title: Machine learning tasks - ML.NET
 description: Explore the different machine learning tasks and associated learners that are supported in ML.NET.
 ms.custom: seodec18
-ms.date: 01/14/2019
+ms.date: 01/15/2019
 author: jralexander
 ---
 # Machine learning tasks in ML.NET
@@ -41,7 +41,7 @@ The following learners are available for binary classification tasks:
 * [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
 * [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
 * [LightGbmBinaryTrainer](xref:Microsoft.ML.LightGBM.LightGbmBinaryTrainer)
-* [LinearSvm](xref:Microsoft.ML.Trainers.Online.LinearSvm)
+* [LinearSvmTrainer](xref:Microsoft.ML.Trainers.Online.LinearSvmTrainer)
 * [PriorTrainer](xref:Microsoft.ML.Trainers.PriorTrainer)
 * [RandomTrainer](xref:Microsoft.ML.Trainers.RandomTrainer)
 * [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
@@ -73,7 +73,6 @@ The following learners are available for multiclass classification tasks:
 
 * [LightGbmMulticlassTrainer](xref:Microsoft.ML.LightGBM.LightGbmMulticlassTrainer)
 * [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Learners.MetaMulticlassTrainer%602)
-* [MultiClassClassificationTrainers](xref:Microsoft.ML.Trainers.MultiClassClassificationTrainers)
 * [MultiClassNaiveBayesTrainer](xref:Microsoft.ML.Trainers.MultiClassNaiveBayesTrainer)
 * [Ova](xref:Microsoft.ML.Trainers.Ova)
 * [Pkpd](xref:Microsoft.ML.Trainers.Pkpd)
@@ -99,7 +98,6 @@ Recommended learners for regression:
 The following learners are available for regression tasks:
 
 * [FastTreeRegressionTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer)
-* [FastTreeRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRegressionFastTreeTrainer)
 * [FastTreeTweedieTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer)
 * [LightGbmRegressorTrainer](xref:Microsoft.ML.LightGBM.LightGbmRegressorTrainer)
 * [LogisticRegression](xref:Microsoft.ML.Learners.LogisticRegression)

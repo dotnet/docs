@@ -324,7 +324,7 @@ Add a comment to test the trained model's prediction in the `Predict` method by 
 [!code-csharp[PredictionData](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#18 "Create test data for single prediction")]
 
 
- You can use that to predict the Toxic or Non Toxic sentiment of a single instance of the comment data. To get a prediction, use <xref:Microsoft.ML.Data.PredictionFunction%602.Predict(%600)> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
+ You can use that to predict the Toxic or Non Toxic sentiment of a single instance of the comment data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#19 "Create a prediction of sentiment")]
 
@@ -409,7 +409,7 @@ Sentiment: This is a very rude movie | Prediction: Toxic | Probability: 0.529704
 
 The model is saved to: C:\Tutorial\SentimentAnalysis\bin\Debug\netcoreapp2.0\Data\Model.zip
 
-=============== Prediction Test of loaded model with a multiple samples ===============
+=============== Prediction Test of loaded model with a multiple sample ===============
 
 Sentiment: This is a very rude movie | Prediction: Toxic | Probability: 0.4585565
 Sentiment: He is the best, and the article should say that. | Prediction: Not Toxic | Probability: 0.9924279

@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "binary multiplication assignment operator (*=) [C#]"
 ms.assetid: 2e472155-59db-4dbf-bb94-bcccfa1a794d
 ---
-# *= Operator (C# Reference)
+# \*= Operator (C# Reference)
 
 The binary multiplication assignment operator.
 
@@ -27,9 +27,9 @@ is equivalent to
 x = x * y
 ```
 
-except that `x` is only evaluated once. The [* operator](multiplication-operator.md) is predefined for numeric types to perform multiplication.
+except that `x` is only evaluated once. The [\* operator](multiplication-operator.md) is predefined for numeric types to perform multiplication.
 
-The `*=` operator cannot be overloaded directly, but user-defined types can overload the [* operator](multiplication-operator.md) (see [operator](../keywords/operator.md)).
+The `*=` operator cannot be overloaded directly, but user-defined types can overload the [\* operator](multiplication-operator.md) (see [operator](../keywords/operator.md)).
 
 ## Example
 

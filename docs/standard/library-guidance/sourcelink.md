@@ -31,7 +31,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 **✔️ CONSIDER** publishing symbol files (`*.pdb`).
 
-> Read more about [symbol files and symbol packages](./nuget.md#symbol-packages).
+> For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
 
 >[!div class="step-by-step"]
 >[Previous](dependencies.md)

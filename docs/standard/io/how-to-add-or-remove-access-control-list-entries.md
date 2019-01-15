@@ -17,7 +17,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # How to: Add or remove Access Control List entries
-To add or remove Access Control List (ACL) entries to or from a file or directory, get the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> object from the file or directory, modify it, and then apply it back to the file or directory.  
+To add or remove Access Control List (ACL) entries to or from a file or directory, get the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> object from the file or directory. Modify the object, and then apply it back to the file or directory.  
   
 ## Add or remove an ACL entry from a file  
   
@@ -25,7 +25,7 @@ To add or remove Access Control List (ACL) entries to or from a file or director
   
 2.  Add or remove ACL entries from the <xref:System.Security.AccessControl.FileSecurity> object returned from step 1.  
   
-3.  Pass the <xref:System.Security.AccessControl.FileSecurity> object to the <xref:System.IO.File.SetAccessControl%2A> method to apply the changes.  
+3. To apply the changes, pass the <xref:System.Security.AccessControl.FileSecurity> object to the <xref:System.IO.File.SetAccessControl%2A> method.  
   
 ## Add or remove an ACL entry from a directory  
   
@@ -33,10 +33,10 @@ To add or remove Access Control List (ACL) entries to or from a file or director
   
 2.  Add or remove ACL entries from the <xref:System.Security.AccessControl.DirectorySecurity> object returned from step 1.  
   
-3.  Pass the <xref:System.Security.AccessControl.DirectorySecurity> object to the <xref:System.IO.Directory.SetAccessControl%2A> method to apply the changes.  
+3.  To apply the changes, pass the <xref:System.Security.AccessControl.DirectorySecurity> object to the <xref:System.IO.Directory.SetAccessControl%2A> method.  
   
 ## Example  
- You must supply a valid user or group account to run this example. The example uses a <xref:System.IO.File> object, but the same procedure is used for the <xref:System.IO.FileInfo>, <xref:System.IO.Directory>, and <xref:System.IO.DirectoryInfo> classes.
+ You must use a valid user or group account to run this example. The example uses a <xref:System.IO.File> object. Use the same procedure for the <xref:System.IO.FileInfo>, <xref:System.IO.Directory>, and <xref:System.IO.DirectoryInfo> classes.
 
  [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](../../../samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
  [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  

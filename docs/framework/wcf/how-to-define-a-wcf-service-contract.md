@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Define a Windows Communication Foundation service contract"
-ms.date: 01/14/2019
+ms.date: 01/15/2019
 helpviewer_keywords:
   - "service contracts [WCF], defining"
 dev_langs:
@@ -15,14 +15,13 @@ This tutorial describes the first of six tasks required to create a basic Window
 When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a C++, C#, or Visual Basic (VB) interface. An interface has the following characteristics:
 
 - Each method in the interface corresponds to a specific service operation. 
-- Each interface must have the <xref:System.ServiceModel.ServiceContractAttribute> applied to it. 
-- Each operation must have the <xref:System.ServiceModel.OperationContractAttribute> attribute applied to it. 
-- A method within an interface that has the `ServiceContractAttribute` attribute is exposed by the service only if it has the `OperationContractAttribute` attribute.
+- For each interface, you must apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute.
+- For each operation/method, you must apply the <xref:System.ServiceModel.OperationContractAttribute> attribute. 
 
 
 ## Define a service contract 
 
-1. Open Visual Studio as an administrator by right-clicking the program in the **Start** menu and selecting **More** > **Run as administrator**.
+1. Open Visual Studio as an administrator. To do so, right-click the Visual Studio program in the **Start** menu and select **More** > **Run as administrator**.
 
 2. Create a WCF Service Library project.
 
@@ -37,10 +36,10 @@ When you create a WCF service, your first task is to define a service contract. 
 
    4. Select **OK**.
 
-   Visual Studio creates the project, which contains three files: IService1.cs (or IService1.vb), Service1.cs (or Service1.vb), and App.config. Visual Studio defines these files as follows: 
-   - The IService1 file contains a default service contract. 
-   - The Service1 file contains a default implementation of the service contract. 
-   - The App.config file contains configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more info about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
+   Visual Studio creates the project, which has three files: IService1.cs (or IService1.vb), Service1.cs (or Service1.vb), and App.config. Visual Studio defines these files as follows: 
+   - The IService1 file contains the default service contract. 
+   - The Service1 file contains the default implementation of the service contract. 
+   - The App.config file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more info about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
 3. Open the IService1.cs (or IService1.vb) file. Delete the code within the `GettingStartedLib` namespace declaration and add the `ICalculator` interface as follows:
 
@@ -85,7 +84,7 @@ When you create a WCF service, your first task is to define a service contract. 
     End Namespace
     ```
 
-     This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute (simplified as `ServiceContract`). This attribute defines a namespace that's used to disambiguate the contract name. Each calculator operation is marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute (simplified as `OperationContract`).
+     This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute (simplified as `ServiceContract`). This attribute defines a namespace to disambiguate the contract name. The code marks each calculator operation with the <xref:System.ServiceModel.OperationContractAttribute> attribute (simplified as `OperationContract`).
 
 ## Next steps
 

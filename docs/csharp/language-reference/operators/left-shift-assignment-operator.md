@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "left shift assignment operator (<<=) [C#]"
 ms.assetid: 3bc99c78-1edb-4827-86fc-bce6c3048871
 ---
-# &lt;&lt;= Operator (C# Reference)
+# &lt;&lt;= operator (C# Reference)
 
 The left-shift assignment operator.
 

@@ -1,7 +1,7 @@
 ---
 title: "[] operator - C# Reference"
 ms.custom: seodec18
-ms.date: 07/20/2015
+ms.date: 01/10/2019
 f1_keywords: 
   - "[]_CSharpKeyword"
 helpviewer_keywords: 
@@ -13,39 +13,46 @@ ms.assetid: 5c16bb45-88f7-45ff-b42c-1af1972b042c
 ---
 # [] operator (C# Reference)
 
-Square brackets (`[]`) are used for arrays, indexers, and attributes. They can also be used with pointers.
+Square brackets, `[]`, are typically used for array, indexer, or pointer element access.
 
-## Remarks
+For more information about pointer element access, see [How to: access an array element with a pointer](../../programming-guide/unsafe-code-pointers/how-to-access-an-array-element-with-a-pointer.md).
 
-An array type is a type followed by `[]`:
+You also use square brackets to specify [attributes](../../programming-guide/concepts/attributes/index.md):
 
-[!code-csharp[csRefOperators#43](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#43)]
+```csharp
+[System.Diagnostics.Conditional("DEBUG")]
+void TraceMethod() {}
+```
 
-To access an element of an array, the index of the desired element is enclosed in brackets:
+## Array access
 
-[!code-csharp[csRefOperators#44](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#44)]
+The following example demonstrates how to access array elements:
 
-An exception is thrown if an array index is out of range.
+[!code-csharp-interactive[array access](~/samples/snippets/csharp/language-reference/operators/IndexOperatorExamples.cs#Arrays)]
 
-The array indexing operator cannot be overloaded; however, types can define indexers that take one or more parameters. Indexer parameters are enclosed in square brackets, just like array indexes, but indexer parameters can be declared to be of any type, unlike array indexes, which must be integral.
+If an array index is outside the bounds of the corresponding dimension of an array, an <xref:System.IndexOutOfRangeException> is thrown.
 
-For example, the .NET Framework defines a `Hashtable` type that associates keys and values of arbitrary type:
+As the preceding example shows, you also use square brackets in declaration of an array type and instantiation of array instances.
 
-[!code-csharp[csRefOperators#45](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#45)]
+For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
 
-Square brackets are also used to specify [Attributes](../../programming-guide/concepts/attributes/index.md):
+## Indexer access
 
-[!code-csharp[csRefOperators#46](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#46)]
+The following example uses .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
-You can use square brackets to index off a pointer:
+[!code-csharp-interactive[indexer access](~/samples/snippets/csharp/language-reference/operators/IndexOperatorExamples.cs#Indexers)]
 
-[!code-csharp[csRefOperators#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#47)]
+Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer arguments can be declared to be of any type.
 
-No bounds checking is performed.
+For more information about indexers, see [Indexers](../../programming-guide/indexers/index.md).
+
+## Operator overloadability
+
+Element access `[]` is not considered an overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see the [Element access](~/_csharplang/spec/expressions.md#element-access) and [Pointer element access](~/_csharplang/spec/unsafe-code.md#pointer-element-access) sections of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
@@ -54,5 +61,5 @@ No bounds checking is performed.
 - [C# Operators](index.md)
 - [Arrays](../../programming-guide/arrays/index.md)
 - [Indexers](../../programming-guide/indexers/index.md)
-- [unsafe](../keywords/unsafe.md)
-- [fixed Statement](../keywords/fixed-statement.md)
+- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Attributes](../../programming-guide/concepts/attributes/index.md)

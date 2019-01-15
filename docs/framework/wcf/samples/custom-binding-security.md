@@ -107,7 +107,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
 ### To run the sample on the same computer
 
-1.  Open a Visual Studio Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
+1.  Open a Developer Command Prompt for Visual Studio window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.
 
     > [!NOTE]
     >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
@@ -128,7 +128,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
     3.  Copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-    4.  Run the following command in a Visual Studio command prompt opened with administrator privileges: `Setup.bat service`. This creates the service certificate with the subject name matching the name of the computer the batch file was run on.  
+    4.  Run the following command in a Developer Command Prompt for Visual Studio opened with administrator privileges: `Setup.bat service`. This creates the service certificate with the subject name matching the name of the computer the batch file was run on.  
   
         > [!NOTE]
         >  The Setup.bat batch file is designed to be run from a Visual Studio 2010 Command Prompt. It requires that the path environment variable point to the directory where the SDK is installed. This environment variable is automatically set within a Visual Studio 2010 Command Prompt.
@@ -143,7 +143,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
     2.  Run Cleanup.bat to remove any old certificates from previous samples.
 
-    3.  Export the service's certificate by opening a Visual Studio command prompt with administrative privileges, and running the following command on the service computer (substitute `%SERVER_NAME%` with the fully-qualified name of the computer where the service is running):
+    3.  Export the service's certificate by opening a Developer Command Prompt for Visual Studio with administrative privileges, and running the following command on the service computer (substitute `%SERVER_NAME%` with the fully-qualified name of the computer where the service is running):
 
         ```
         certmgr -put -r LocalMachine -s My -c -n %SERVER_NAME% %SERVER_NAME%.cer
@@ -151,7 +151,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
 
     4.  Copy %SERVER_NAME%.cer to the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running).
 
-    5.  Import the service's certificate by opening a Visual Studio command prompt with administrative privileges, and running the following command on the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running):
+    5.  Import the service's certificate by opening a Developer Command Prompt for Visual Studio with administrative privileges, and running the following command on the client computer (substitute %SERVER_NAME% with the fully-qualified name of the computer where the service is running):
 
         ```
         certmgr.exe -add -c %SERVER_NAME%.cer -s -r CurrentUser TrustedPeople

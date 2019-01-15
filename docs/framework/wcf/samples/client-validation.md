@@ -16,7 +16,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 ### To run the sample on the same computer  
   
-1.  Open a Visual Studio command prompt with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
+1.  Open a Developer Command Prompt for Visual Studio with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.  
   
 2.  Run the service application from \service\bin\Debug.  
   
@@ -28,21 +28,21 @@ Services frequently publish metadata to enable automatic generation and configur
   
 ### To run the sample across computers  
   
-1.  On the server, in a Visual Studio command prompt run with administrator privileges, type `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
+1.  On the server, in a Developer Command Prompt for Visual Studio run with administrator privileges, type `setup.bat service`. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the computer and exports the service certificate to a file named Service.cer.  
   
 2.  On the server, edit App.config to reflect the new certificate name. That is, change the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-clientcredentials-element.md) element to the fully-qualified domain name of the computer.  
   
 3.  Copy the Service.cer file from the service directory to the client directory on the client computer.  
   
-4.  On the client, open a Visual Studio command prompt with administrator privileges, and type `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named Client.com and exports the client certificate to a file named Client.cer.  
+4.  On the client, open a Developer Command Prompt for Visual Studio with administrator privileges, and type `setup.bat client`. Running `setup.bat` with the `client` argument creates a client certificate named Client.com and exports the client certificate to a file named Client.cer.  
   
 5.  In the client.cs file change the address value of the MEX endpoint and the `findValue` for setting the default server certificate to match the new address of your service. You do this by replacing localhost with the fully-qualified domain name of the server. Rebuild.  
   
 6.  Copy the Client.cer file from the client directory to the service directory on the server.  
   
-7.  On the client, run ImportServiceCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
+7.  On the client, run ImportServiceCert.bat in a Developer Command Prompt for Visual Studio opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
   
-8.  On the server, run ImportClientCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
+8.  On the server, run ImportClientCert.bat in a Developer Command Prompt for Visual Studio opened with administrator privileges. This imports the client certificate from the Client.cer file into the LocalMachine - TrustedPeople store.  
   
 9. On the service computer, build the service project in Visual Studio and run service.exe.  
   

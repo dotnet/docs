@@ -25,7 +25,7 @@ User-defined types can overload the `<<` operator (see [operator](../keywords/op
 
 ## Example
 
-[!code-csharp[csRefOperators#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#14)]]
+[!code-csharp[csRefOperators#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#14)]
 
 ## Comments
 

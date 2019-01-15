@@ -52,14 +52,14 @@ The following example demonstrates how to check for malicious file paths and pro
 
 ## Example 3: Add a file to an existing .zip
 
-The following example uses the <xref:System.IO.Compression.ZipArchive> class to access an existing *.zip* file, and adds a file to it. The new file gets compressed when you add it to the existing *.zip* file.
+The following example uses the <xref:System.IO.Compression.ZipArchive> class to access an existing *.zip* file, and adds a file to it. The new file gets compressed when you add it to the existing *.zip*.
 
 [!code-csharp[System.IO.Compression.ZipArchiveMode#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.ziparchivemode/cs/program1.cs#1)]
 [!code-vb[System.IO.Compression.ZipArchiveMode#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.ziparchivemode/vb/program1.vb#1)]
 
-## Example 4: Compress and decompress a directory of .gz files
+## Example 4: Compress and decompress .gz files
 
-You can use the <xref:System.IO.Compression.GZipStream> and <xref:System.IO.Compression.DeflateStream> classes to compress and decompress data. They use the same compression algorithm. You can also decompress <xref:System.IO.Compression.GZipStream> objects that are written to a *.gz* file by using many common tools. The following example shows how to compress and decompress a directory of files by using the <xref:System.IO.Compression.GZipStream> class:
+You can also use the <xref:System.IO.Compression.GZipStream> and <xref:System.IO.Compression.DeflateStream> classes to compress and decompress data. They use the same compression algorithm. You can also decompress <xref:System.IO.Compression.GZipStream> objects that are written to a *.gz* file by using many common tools. The following example shows how to compress and decompress a directory of files by using the <xref:System.IO.Compression.GZipStream> class:
 
 [!code-csharp[IO.Compression.GZip1#1](../../../samples/snippets/csharp/VS_Snippets_CLR/IO.Compression.GZip1/CS/gziptest.cs#1)]
 [!code-vb[IO.Compression.GZip1#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/IO.Compression.GZip1/VB/gziptest.vb#1)]

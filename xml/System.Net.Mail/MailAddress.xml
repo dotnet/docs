@@ -40,9 +40,9 @@ The <xref:System.Net.Mail.MailAddress> class supports the following mail address
   
 -   A standard quoted display name format of `"display name" <user@host>`. If a <xref:System.Net.Mail.MailAddress.DisplayName%2A> is set, this is the format generated.  
   
--   Angle brackets are added around the <xref:System.Net.Mail.MailAddress.User%2A> name, <xref:System.Net.Mail.MailAddress.Host%2A> name for `"display name" user@host` if these are not included.  
+-   Angle brackets are added around the <xref:System.Net.Mail.MailAddress.User%2A> name and <xref:System.Net.Mail.MailAddress.Host%2A> name, if these are not included. For example, `"display name" user@host` is changed to `"display name" <user@host>`.
   
--   Quotes are added around the <xref:System.Net.Mail.MailAddress.DisplayName%2A> for `display name <user@host>`, if these are not included.  
+-   Quotes are added around the <xref:System.Net.Mail.MailAddress.DisplayName%2A>, if these are not included. For example, `display name <user@host>` is changed to `"display name" <user@host>`.
   
 -   Unicode characters are supported in the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property.  
   

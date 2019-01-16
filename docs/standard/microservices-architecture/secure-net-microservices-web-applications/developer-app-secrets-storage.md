@@ -45,7 +45,7 @@ Secrets set by the Secret Manager tool are organized by the `UserSecretsId` prop
 
 Using secrets stored with Secret Manager in an application is accomplished by calling `AddUserSecrets<T>` on the ConfigurationBuilder instance to include secrets for the application in its configuration. The generic parameter T should be a type from the assembly that the UserSecretId was applied to. Usually using `AddUserSecrets<Startup>` is fine.
 
-The AddUserSecrets\<Startup\>() is included in the default options for the Development environment when using the CreateDefaultBuilder method in Program.cs.
+The `AddUserSecrets<Startup>()` is included in the default options for the Development environment when using the `CreateDefaultBuilder` method in *Program.cs*.
 
 >[!div class="step-by-step"]
 >[Previous](authorization-net-microservices-web-applications.md)

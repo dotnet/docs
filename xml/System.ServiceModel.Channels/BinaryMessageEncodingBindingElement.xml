@@ -36,7 +36,7 @@
 ## Remarks  
  Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
   
- The <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> is the binding element that specified the .NET Binary Format for XML should be used for encoding messages, and has options to specify the character encoding and the SOAP and WS-Addressing version to be used. Binary encoding is most efficient but least interoperable of the encoding options.  
+<xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> is the binding element that specifies that the .NET Binary Format for XML should be used for encoding messages. It has options to specify the character encoding and the SOAP and WS-Addressing version to be used. Binary encoding is the most efficient but least interoperable of the encoding options.  
   
  For more information about the binding element that specifies messages are encoded using a textual representation of XML, see <xref:System.ServiceModel.Channels.TextMessageEncodingBindingElement>.  
   

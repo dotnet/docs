@@ -4,7 +4,7 @@ ms.date: "01/16/2019"
 api.name:
   - "CLRDATA_ADDRESS_RANGE Structure"
 api.location:
-  - "mscordaccore.dll"
+  - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:

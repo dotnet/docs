@@ -4,7 +4,7 @@ ms.date: "01/16/2019"
 api.name:
   - "ISOSDacInterface::GetMethodDescData Method"
 api.location:
-  - "mscordaccore.dll"
+  - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:

@@ -91,13 +91,13 @@ As shown in the example, policies can be associated with different types of requ
 
 In the previous example, the first AddPolicy call is just an alternative way of authorizing by role. If `[Authorize(Policy="AdministratorsOnly")]` is applied to an API, only users in the Administrator role will be able to access it.
 
-The second <xref:Microsoft.AspNetCore.Authorization.AuthorizationOptions.AddPolicy> call demonstrates an easy way to require that a particular claim should be present for the user. The <xref:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder.RequireClaim> method also optionally takes expected values for the claim. If values are specified, the requirement is met only if the user has both a claim of the correct type and one of the specified values. If you're using the JWT bearer authentication middleware, all JWT properties will be available as user claims.
+The second <xref:Microsoft.AspNetCore.Authorization.AuthorizationOptions.AddPolicy%2A> call demonstrates an easy way to require that a particular claim should be present for the user. The <xref:Microsoft.AspNetCore.Authorization.AuthorizationPolicyBuilder.RequireClaim%2A> method also optionally takes expected values for the claim. If values are specified, the requirement is met only if the user has both a claim of the correct type and one of the specified values. If you're using the JWT bearer authentication middleware, all JWT properties will be available as user claims.
 
 The most interesting policy shown here is in the third `AddPolicy` method, because it uses a custom authorization requirement. By using custom authorization requirements, you can have a great deal of control over how authorization is performed. For this to work, you must implement these types:
 
 - A Requirements type that derives from <xref:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement> and that contains fields specifying the details of the requirement. In the example, this is an age field for the sample `MinimumAgeRequirement` type.
 
-- A handler that implements <xref:Microsoft.AspNetCore.Authorization.AuthorizationHandler-1>, where T is the type of <xref:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement> that the handler can satisfy. The handler must implement the <xref:Microsoft.AspNetCore.Authorization.AuthorizationHandler-1.HandleRequirementAsync> method, which checks whether a specified context that contains information about the user satisfies the requirement.
+- A handler that implements <xref:Microsoft.AspNetCore.Authorization.AuthorizationHandler%601>, where T is the type of <xref:Microsoft.AspNetCore.Authorization.IAuthorizationRequirement> that the handler can satisfy. The handler must implement the <xref:Microsoft.AspNetCore.Authorization.AuthorizationHandler%601.HandleRequirementAsync%2A> method, which checks whether a specified context that contains information about the user satisfies the requirement.
 
 If the user meets the requirement, a call to `context.Succeed` will indicate that the user is authorized. If there are multiple ways that a user might satisfy an authorization requirement, multiple handlers can be created.
 

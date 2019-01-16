@@ -1,10 +1,10 @@
 ---
 title: "IXCLRDataMethodDefinition::StartEnumInstances Method"
-ms.date: "01/15/2019"
+ms.date: "01/16/2019"
 api.name:
-  - "IXCLRDataMethodDefinition::StartEnumInstances"
+  - "IXCLRDataMethodDefinition::StartEnumInstances Method"
 api.location:
-  - "mscordacwks.dll"
+  - "mscordaccore.dll"
 api.type:
   - "COM"
 f1.keywords:
@@ -17,9 +17,11 @@ author: "cshung"
 ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition::StartEnumInstances Method
+
 Start enumerate instances of this definition.
 
 ## Syntax
+
 ```
 HRESULT StartEnumInstances(
     [in] IXCLRDataAppDomain* appDomain,
@@ -28,8 +30,26 @@ HRESULT StartEnumInstances(
 ```
 
 ### Parameters
+
 `appDomain`
 [in] An AppDomain for the enumeration.
 
 `handle`
 [out] A handle for enumerating the instances.
+
+## Remarks
+
+The provided method is part of the `IXCLRDataMethodDefinition` interface and corresponds to the third slot of the virtual method table.
+
+## Requirements
+
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
+## See Also
+
+- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration-enumeration.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)

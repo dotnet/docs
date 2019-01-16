@@ -1,10 +1,10 @@
 ---
 title: "IXCLRDataModule::GetVersionId Method"
-ms.date: "01/15/2019"
+ms.date: "01/16/2019"
 api.name:
-  - "IXCLRDataModule::GetVersionId"
+  - "IXCLRDataModule::GetVersionId Method"
 api.location:
-  - "mscordacwks.dll"
+  - "mscordaccore.dll"
 api.type:
   - "COM"
 f1.keywords:
@@ -17,9 +17,11 @@ author: "cshung"
 ms.author: "andrewau"
 ---
 # IXCLRDataModule::GetVersionId Method
+
 Get the module's version ID.
 
 ## Syntax
+
 ```
 HRESULT GetVersionId(
     [out] GUID* vid
@@ -27,5 +29,22 @@ HRESULT GetVersionId(
 ```
 
 ### Parameters
+
 `vid`
 [out] The module's version ID.
+
+## Remarks
+
+The provided method is part of the `IXCLRDataModule` interface and corresponds to the 40th slot of the virtual method table.
+
+## Requirements
+
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
+## See Also
+
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)

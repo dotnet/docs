@@ -1,10 +1,10 @@
 ---
 title: "IXCLRDataMethodInstance::GetILAddressMap Method"
-ms.date: "01/15/2019"
+ms.date: "01/16/2019"
 api.name:
-  - "IXCLRDataMethodInstance::GetILAddressMap"
+  - "IXCLRDataMethodInstance::GetILAddressMap Method"
 api.location:
-  - "mscordacwks.dll"
+  - "mscordaccore.dll"
 api.type:
   - "COM"
 f1.keywords:
@@ -17,9 +17,11 @@ author: "cshung"
 ms.author: "andrewau"
 ---
 # IXCLRDataMethodInstance::GetILAddressMap Method
+
 Get the IL to address mapping information.
 
 ## Syntax
+
 ```
 HRESULT GetILAddressMap(
     [in] ULONG32                                   mapLen,
@@ -29,6 +31,7 @@ HRESULT GetILAddressMap(
 ```
 
 ### Parameters
+
 `mapLen`
 [in] The length of the provided maps array.
 
@@ -37,3 +40,19 @@ HRESULT GetILAddressMap(
 
 `maps`
 [out, size_is(mapLen)] The array for storing the map entries.
+
+## Remarks
+
+The provided method is part of the `IXCLRDataMethodInstance` interface and corresponds to the 14th slot of the virtual method table.
+
+## Requirements
+
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
+## See Also
+
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)

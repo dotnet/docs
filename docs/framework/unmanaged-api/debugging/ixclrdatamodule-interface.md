@@ -1,10 +1,10 @@
 ---
 title: "IXCLRDataModule Interface"
-ms.date: "01/15/2019"
+ms.date: "01/16/2019"
 api.name:
-  - "IXCLRDataModule"
+  - "IXCLRDataModule Interface"
 api.location:
-  - "mscordacwks.dll"
+  - "mscordaccore.dll"
 api.type:
   - "COM"
 f1.keywords:
@@ -17,10 +17,29 @@ author: "cshung"
 ms.author: "andrewau"
 ---
 # IXCLRDataModule Interface
+
 Provide methods for querying information about a loaded module.
 
 ## Methods
+
 |Method                    |Description                               |
 |--------------------------|------------------------------------------|
 |GetMethodDefinitionByToken|Get a method definition by metadata token.|
+|Request                   |Request data for the given data module    |
 |GetVersionId              |Get the module's version ID.              |
+
+## Remarks
+
+This interface lives inside the runtime and is not exposed through any headers or library files. However, it's a COM interface that derives from `IUnknown` with GUID `88E32849-0A0A-4cb0-9022-7CD2E9E139E2` that can be obtained through the usual COM mechanisms.
+
+## Requirements
+
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
+
+## See Also
+
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

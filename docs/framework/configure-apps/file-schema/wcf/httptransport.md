@@ -15,20 +15,18 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 ## Syntax  
   
 ```xml  
-<httpTransport  
-    allowCookies=Boolean"  
-    authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"  
-    bypassProxyOnLocal=Boolean"  
-    hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-    keepAliveEnabled="Boolean"  
-    maxBufferSize="Integer"  
-    proxyAddress="Uri"  
-    proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"  
-IntegratedWindowsAuthentication: Specifies Windows authentication"  
-    realm="String"  
-    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-        unsafeConnectionNtlmAuthentication="Boolean"  
-        useDefaultWebProxy="Boolean" />  
+<httpTransport allowCookies="Boolean"
+               authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"
+               bypassProxyOnLocal="Boolean"
+               hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+               keepAliveEnabled="Boolean"
+               maxBufferSize="Integer"
+               proxyAddress="Uri"
+               proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous/IntegratedWindowsAuthentication"
+               realm="String"
+               transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
+               unsafeConnectionNtlmAuthentication="Boolean"
+               useDefaultWebProxy="Boolean" />
 ```  
   
 ## Attributes and Elements  

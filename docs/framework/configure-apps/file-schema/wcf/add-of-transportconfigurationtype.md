@@ -14,12 +14,12 @@ This element is a key/value pair, which identifies the type of a particular tran
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <transportConfigurationTypes>  
-      <add name="String"  
-               transportConfigurationType="String"/>   
-   </transportConfigurationTypes>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <transportConfigurationTypes>
+    <add name="String"
+         transportConfigurationType="String" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>
 ```  
   
 ## Attributes and Elements  
@@ -44,12 +44,12 @@ This element is a key/value pair, which identifies the type of a particular tran
 ## Example  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <transportConfigurationTypes>  
-      <add name="net.udp"  
-      transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />   
-   </transportConfigurationTypes>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <transportConfigurationTypes>
+    <add name="net.udp"
+         transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>
 ```  
   
 ## See Also  

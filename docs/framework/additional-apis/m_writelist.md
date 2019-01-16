@@ -25,7 +25,7 @@ private ArrayList m_WriteList
 ```
 
 > [!WARNING]
-> The `Connection.m_WriteList` field is private and not meant to be used directly in your code.
+> The `Connection.m_WriteList` field is private and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this field in a production application under any circumstance.
 

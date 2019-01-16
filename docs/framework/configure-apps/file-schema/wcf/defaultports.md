@@ -18,9 +18,10 @@ A collection of default ports listing the default communications endpoints that 
 ```xml  
 <useRequestHeadersForMetadataAddress>
   <defaultPorts>
-    <add scheme="http" port="integer" />
+    <add scheme="http"
+         port="integer" />
   </defaultPorts>
-</useRequestHeadersForMetadataAddress>  
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  

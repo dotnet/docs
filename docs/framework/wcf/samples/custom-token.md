@@ -603,7 +603,7 @@ string GetCallerCreditCardNumber()
   
 2.  Copy the service program files into the service directory on the service computer. Do not forget to copy CreditCardFile.txt; otherwise the credit card authenticator cannot validate credit card information sent from the client. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. You can create one using the Setup.bat if you change the `%SERVER_NAME%` variable to fully-qualified name of the computer where the service is hosted. Note that the Setup.bat file must be run in a Visual Studio command prompt opened with administrator privileges.  
+3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. You can create one using the Setup.bat if you change the `%SERVER_NAME%` variable to fully-qualified name of the computer where the service is hosted. Note that the Setup.bat file must be run in a Developer Command Prompt for Visual Studio opened with administrator privileges.  
   
 4.  Copy the server certificate into the CurrentUser-TrustedPeople store on the client. You must do this only if the server certificate is not issued by a trusted issuer.  
   

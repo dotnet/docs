@@ -374,7 +374,7 @@ Other unsupported interop features include:
   
  **RTC (System.Net.Http.Rtc)**  
   
- The <xref:System.Net.Http.RtcRequestFactory?displayProperty=nameWithType> class isn't supported in .NET Native.  
+ The `System.Net.Http.RtcRequestFactory` class isn't supported in .NET Native.  
   
  **Windows Communication Foundation (WCF) (System.ServiceModel.\*)**  
   

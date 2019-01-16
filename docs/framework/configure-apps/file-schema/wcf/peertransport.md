@@ -15,14 +15,13 @@ Defines a peer transport for a custom binding.
 ## Syntax  
   
 ```xml  
-<peerTransport   
-    listenIpAddress="String"  
-    maxBufferPoolSize="Integer"  
-    maxReceivedMessageSize="Integer"  
-    port="Integer"  
-        <security>  
-    </security>  
-/>  
+<peerTransport listenIpAddress="String"
+               maxBufferPoolSize="Integer"
+               maxReceivedMessageSize="Integer"
+               port="Integer">
+  <security>
+  </security>
+</peerTransport>
 ```  
   
 ## Attributes and Elements  

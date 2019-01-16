@@ -16,7 +16,7 @@ Specifies the settings for a secure conversation service.
 ## Syntax  
   
 ```xml  
-<secureConversationAuthentication securityStateEncoderType="String" />  
+<secureConversationAuthentication securityStateEncoderType="String" />
 ```  
   
 ## Attributes and Elements  

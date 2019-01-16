@@ -13,15 +13,14 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## Syntax  
   
 ```xml  
-<mexTcpBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       name="string"   
-       openTimeout="TimeSpan"   
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan">  
-   </binding>  
-</mexTcpBinding>  
+<mexTcpBinding>
+  <binding closeTimeout="TimeSpan"
+           name="string"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan">
+  </binding>
+</mexTcpBinding>
 ```  
   
 ## Attributes and Elements  

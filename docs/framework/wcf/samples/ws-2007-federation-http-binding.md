@@ -106,7 +106,7 @@ Press <ENTER> to terminate client.
   
 1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  Open a Visual Studio command prompt with administrator privileges and run the Setup.bat file to create the required certificates.  
+2.  Open a Developer Command Prompt for Visual Studio with administrator privileges and run the Setup.bat file to create the required certificates.  
   
  This batch file uses Certmgr.exe and Makecert.exe, which are distributed with the Windows SDK. However, you must run Setup.bat from within a Visual Studio  command prompt to enable the script to find these tools.  
   

@@ -14,13 +14,13 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 ## Syntax  
   
 ```xml  
-<comContracts>  
-  <comContract>  
-      <exposedMethods>  
-         <exposedMethod name="string" />  
-      </exposedMethods>  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract>
+    <exposedMethods>
+      <exposedMethod name="String" />
+    </exposedMethods>
+  </comContract>
+</comContracts>
 ```  
   
 ## Attributes and Elements  
@@ -51,11 +51,13 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
  When you also run the ComSvcConfig.exe, it then generates the following service contract listing the previously mentioned methods as [\<exposedMethod>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) elements.  
   
 ```xml  
-<comContract contractType="{C551FBA9-E3AA-4272-8C2A-84BD8D290AC7}" name="IFinances" namespace="http://contoso.com/services/financial">  
-    <exposedMethod name="TransferFunds"/>  
-    <exposedMethod name="AddFunds"/>  
-    <exposedMethod name="RemoveFunds"/>  
-</comContract>  
+<comContract contractType="{C551FBA9-E3AA-4272-8C2A-84BD8D290AC7}"
+             name="IFinances"
+             namespace="http://contoso.com/services/financial">
+  <exposedMethod name="TransferFunds"/>
+  <exposedMethod name="AddFunds"/>
+  <exposedMethod name="RemoveFunds"/>
+</comContract>
 ```  
   
  At service initialization time, the runtime attempts to generate a service contract by reflecting over and adding only the methods included in the list of [\<exposedMethod>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) elements. A trace is produced for every interface method that is not included on the service contract.  

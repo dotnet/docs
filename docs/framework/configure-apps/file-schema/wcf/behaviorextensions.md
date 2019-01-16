@@ -7,14 +7,15 @@ ms.assetid: 59f2791a-c78f-40d7-aa80-0d9cd10135d9
 Behavior extensions enable the user to create user-defined behavior elements. These elements can be used alongside the standard Windows Communication Foundation (WCF) behavior elements. The `behaviorExtensions` section defines the element such that it can be used in configuration. Here is an example of a typical behavior extension.  
   
 ```xml  
-<system.serviceModel>  
-    <extensions>  
-        <behaviorExtensions>  
-            <add name="myBehavior" type="Microsoft.ServiceModel.Samples.MyBehaviorSection, MyBehavior,  
-                Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-       </behaviorExtensions>  
-    </extensions>  
-</system.serviceModel>  
+<system.serviceModel>
+  <extensions>
+    <behaviorExtensions>
+      <add name="myBehavior"
+           type="Microsoft.ServiceModel.Samples.MyBehaviorSection, MyBehavior,
+                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    </behaviorExtensions>
+  </extensions>
+</system.serviceModel>
 ```  
   
  To add configuration abilities to the element, you need to write and register a configuration element. For more information on this, see the <xref:System.Configuration> documentation.  
@@ -22,13 +23,17 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
  After the element and its configuration type are defined, the extension can be used, as shown in the following example.  
   
 ```xml  
-<behaviors>  
-    <behavior configurationName="testChannelBehavior">  
-        <myBehavior />  
-        <channelSecurity cacheCookies="false" detectReplays="false" maxCachedNonces="9"  
-            maxClockSkew="00:00:03" maxCookieCachingTime="00:07:24" replayWindow="00:07:22.2190000" />  
-    </behavior>  
-</behaviors>  
+<behaviors>
+  <behavior configurationName="testChannelBehavior">
+    <myBehavior />
+    <channelSecurity cacheCookies="false"
+                     detectReplays="false"
+                     maxCachedNonces="9"
+                     maxClockSkew="00:00:03"
+                     maxCookieCachingTime="00:07:24"
+                     replayWindow="00:07:22.2190000" />
+  </behavior>
+</behaviors>
 ```  
   
 ## Security  

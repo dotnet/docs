@@ -13,18 +13,18 @@ A configuration element used to specify Web Socket settings.
 ## Syntax  
   
 ```xml  
-<netHttpBinding>  
-  <binding>   
-    <webSocketSettings createNotificationOnConnection="boolean" 
-                       disablePayloadMasking="boolean" 
-                       keepAliveInterval="TimeSpan" 
-                       maxPendingConnections="Integer" 
-                       receiveBufferSize="Integer" 
-                       sendBufferSize="Integer" 
-                       subProtocol="String" 
-                       transportUsage="WhenDuplex/Always/Never"/>
-  </binding>  
-</netHttpBinding>  
+<netHttpBinding>
+  <binding>
+    <webSocketSettings createNotificationOnConnection="Boolean"
+                       disablePayloadMasking="Boolean"
+                       keepAliveInterval="TimeSpan"
+                       maxPendingConnections="Integer"
+                       receiveBufferSize="Integer"
+                       sendBufferSize="Integer"
+                       subProtocol="String"
+                       transportUsage="WhenDuplex/Always/Never" />
+  </binding>
+</netHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -64,19 +64,18 @@ A configuration element used to specify Web Socket settings.
  The following example shows how to use the \<webSocketSettings> element.  
   
 ```xml  
-<netHttpBinding>  
-        <binding>  
-          <webSocketSettings createNotificationOnConnection="true"  
-                              disablePayloadMasking="false  
-                              keepAliveInterval="00:10:00"  
-                              maxPendingConnections="100"  
-                              receiveBufferSize="1000"  
-                              sendBufferSize="1000"  
-                              subProtocol="Soap"  
-                              transportUsage="WhenDuplex/Always/Never"/>  
-  
-        </binding>  
-      </netHttpBinding>  
+<netHttpBinding>
+  <binding>
+    <webSocketSettings createNotificationOnConnection="true"
+                       disablePayloadMasking="false"
+                       keepAliveInterval="00:10:00"
+                       maxPendingConnections="100"
+                       receiveBufferSize="1000"
+                       sendBufferSize="1000"
+                       subProtocol="Soap"
+                       transportUsage="WhenDuplex/Always/Never" />
+  </binding>
+</netHttpBinding>
 ```  
   
 ## See Also  

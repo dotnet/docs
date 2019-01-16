@@ -19,12 +19,10 @@ Specifies authentication options for peer-to-peer clients.
 ## Syntax  
   
 ```xml  
-<peerAuthentication  
-customCertificateValidatorType = "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-revocationMode="NoCheck/Online/Offline"  
-trustedStoreLocation="CurrentUser/LocalMachine"   
-/>  
+<peerAuthentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                    certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                    revocationMode="NoCheck/Online/Offline"
+                    trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## Attributes and Elements  
@@ -79,21 +77,21 @@ trustedStoreLocation="CurrentUser/LocalMachine"
  The following code sets the certificate validation mode to `PeerOrChainTrust`.  
   
 ```xml  
-<behaviors>  
- <endpointBehaviors>  
-  <behavior name="MyEndpointBehavior">  
-   <clientCredentials>  
-    <peer>  
-     <certificate findValue="www.contoso.com"   
-                   storeLocation="LocalMachine"  
-                   x509FindType="FindByIssuerName" />  
-     <peerAuthentication   
-          certificateValidationMode="PeerOrChainTrust" />  
-     <messageSenderAuthentication certificateValidationMode="None" />  
-    </peer>  
-   </clientCredentials>  
-  </behavior>  
-</endpointBehaviors>  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="MyEndpointBehavior">
+      <clientCredentials>
+        <peer>
+          <certificate findValue="www.contoso.com"
+                       storeLocation="LocalMachine"
+                       x509FindType="FindByIssuerName" />
+          <peerAuthentication certificateValidationMode="PeerOrChainTrust" />
+          <messageSenderAuthentication certificateValidationMode="None" />
+        </peer>
+      </clientCredentials>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>
 ```  
   
 ## See Also  

@@ -11,9 +11,9 @@ Contains a collection of configuration elements that specify user accounts for p
 ## Syntax  
   
 ```xml  
-<allowAccounts>  
-   <add securityIdentifier="String"/>  
-</allowAccounts>  
+<allowAccounts>
+  <add securityIdentifier="String" />
+</allowAccounts>
 ```  
   
 ## Attributes and Elements  

@@ -19,7 +19,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -27,7 +27,7 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
         <workflowInstanceQueries>
           <workflowInstanceQuery>
             <states>
-              <state name="Name"/>
+              <state name="Name" />
             </states>
           </workflowInstanceQuery>
         </workflowInstanceQueries>
@@ -35,8 +35,8 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
     </trackingProfile>
   </profiles>
 </tracking>
-```
-
+```  
+  
 ## Attributes and elements  
 
 The following sections describe attributes, child elements, and parent elements.  
@@ -76,13 +76,13 @@ The <xref:System.Activities.Tracking.WorkflowInstanceQuery> is used to subscribe
 The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
 ```xml  
-<workflowInstanceQueries>  
-    <workflowInstanceQuery>  
-      <states>  
-        <state name="Started"/>  
-      </states>  
-    </workflowInstanceQuery>  
-</workflowInstanceQueries>  
+<workflowInstanceQueries>
+  <workflowInstanceQuery>
+    <states>
+      <state name="Started" />
+    </states>
+  </workflowInstanceQuery>
+</workflowInstanceQueries>
 ```  
   
 ## See also

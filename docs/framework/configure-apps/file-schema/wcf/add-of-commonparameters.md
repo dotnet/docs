@@ -17,11 +17,11 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ## Syntax  
   
 ```xml  
-<workflowRuntime>  
-   <commonParameters>  
-      <add name="String" value="String" />  
-   </commonParameters>  
-</workflowRuntime>  
+<workflowRuntime>
+  <commonParameters>
+    <add name="String" value="String" />
+  </commonParameters>
+</workflowRuntime>
 ```  
   
 ## Attributes and Elements  
@@ -49,15 +49,19 @@ Specifies a name-value pair of parameters that are used globally across multiple
  For services that commit work batches to persistence stores, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> and <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, you can enable them to retry their transaction by using the `EnableRetries` parameter as shown in the following example:  
   
 ```xml  
-<WorkflowRuntime Name="SampleApplication" UnloadOnIdle="false">  
-    <commonParameters>  
-        <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />  
-        <add name="EnableRetries" value="True" />  
-    </commonParameters>  
-    <Services>  
-        <add type="System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" EnableRetries="False" />   
-     </Services>  
-</WorkflowRuntime>  
+<workflowRuntime name="SampleApplication"
+                 unloadOnIdle="false">
+  <commonParameters>
+    <add name="ConnectionString"
+         value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />
+    <add name="EnableRetries"
+         value="True" />
+  </commonParameters>
+  <services>
+    <add type="System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+         enableRetries="False" />
+  </services>
+</workflowRuntime>
 ```  
   
  Notice that the `EnableRetries` parameter can be set at either a global level (as shown in the *CommonParameters* section) or for individual services that support `EnableRetries` (as shown in the *Services* section).  
@@ -67,10 +71,12 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ## Example  
   
 ```xml  
-<commonParameters>  
-   <add name="ConnectionString" value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;"/>  
-   <add name="EnableRetries" value="true"/>  
-</commonParameters>  
+<commonParameters>
+  <add name="ConnectionString"
+       value="Initial Catalog=WorkflowStore;Data Source=localhost;Integrated Security=SSPI;" />
+  <add name="EnableRetries"
+       value="true" />
+</commonParameters>
 ```  
   
 ## See Also  

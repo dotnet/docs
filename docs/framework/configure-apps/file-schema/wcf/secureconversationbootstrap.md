@@ -16,20 +16,19 @@ Specifies the default values used for initiating a secure conversation service.
 ## Syntax  
   
 ```xml  
-<secureConversationBootstrap  
-   allowSerializedSigningTokenOnReply="Boolean"  
-   authenticationMode="AuthenticationMode"  
-   defaultAlgorithmSuite="SecurityAlgorithmSuite"  
-   includeTimestamp="Boolean"  
-   requireDerivedKeys="Boolean"  
-   keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"   
-messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"  
-   messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"  
-   requireDerivedKeys="Boolean"  
-   requireSecurityContextCancellation="Boolean"  
-   requireSignatureConfirmation="Boolean" >  
-   securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast"  
-   includeTimestamp="Boolean" />  
+<secureConversationBootstrap allowSerializedSigningTokenOnReply="Boolean"
+                             authenticationMode="AuthenticationMode"
+                             defaultAlgorithmSuite="SecurityAlgorithmSuite"
+                             includeTimestamp="Boolean"
+                             requireDerivedKeys="Boolean"
+                             keyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"
+                             messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/EncryptBeforeSign"
+                             messageSecurityVersion="WSSecurityJan2004/WSSecurityXXX2005"
+                             requireDerivedKeys="Boolean"
+                             requireSecurityContextCancellation="Boolean"
+                             requireSignatureConfirmation="Boolean"
+                             securityHeaderLayout="Strict/Lax/LaxTimestampFirst/LaxTimestampLast"
+                             includeTimestamp="Boolean" />
 ```  
   
 ## Type  

@@ -90,6 +90,7 @@ If you are new to string interpolation, see the [String interpolation in C#](../
 - <xref:System.FormattableString?displayProperty=nameWithType>
 - <xref:System.IFormattable?displayProperty=nameWithType>
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
+- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Strings](../../programming-guide/strings/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Special Characters](index.md)

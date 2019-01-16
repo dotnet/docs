@@ -15,39 +15,41 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 ## Syntax  
   
 ```xml  
-<wsHttpBinding>  
-    <binding   
-        allowCookies="Boolean"  
-        bypassProxyOnLocal="Boolean"  
-        closeTimeout="TimeSpan"  
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        messageEncoding="Text/Mtom"   
-                name="string"  
-        openTimeout="TimeSpan"   
-        proxyAddress="URI"  
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-                textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-        transactionFlow="Boolean"  
-        useDefaultWebProxy="Boolean">  
-        <reliableSession ordered="Boolean"  
-           inactivityTimeout="TimeSpan"  
-           enabled="Boolean" />  
-        <security mode="Message/None/Transport/TransportWithCredential">  
-           <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                realm="string" />  
-          <message   
-             algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                          clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  
-             establishSecurityContext="Boolean"  
-             negotiateServiceCredential="Boolean" />  
-        </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />  
-    </binding>  
-</wsHttpBinding>  
+<wsHttpBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxReceivedMessageSize="Integer"
+           messageEncoding="Text/Mtom"
+           name="string"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transactionFlow="Boolean"
+           useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <security mode="Message/None/Transport/TransportWithCredential">
+      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 realm="string" />
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"
+               establishSecurityContext="Boolean"
+               negotiateServiceCredential="Boolean" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</wsHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -93,40 +95,39 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 ## Example  
   
 ```xml  
-<configuration>  
-    <system.ServiceModel>  
-        <bindings>  
-            <wsHttpBinding>  
-                <binding   
-                    closeTimeout="00:00:10"  
-                    openTimeout="00:00:20"   
-                    receiveTimeout="00:00:30"  
-                    sendTimeout="00:00:40"  
-                    bypassProxyOnLocal="false"  
-                    transactionFlow="false"   
-                    hostNameComparisonMode="WeakWildcard"  
-                    maxReceivedMessageSize="1000"  
-                    messageEncoding="Mtom"   
-                    proxyAddress="http://foo/bar"  
-                    textEncoding="utf-16"  
-                    useDefaultWebProxy="false">  
-                    <reliableSession ordered="false"  
-                         inactivityTimeout="00:02:00"  
-                         enabled="true" />  
-                    <security mode="Transport">  
-                         <transport clientCredentialType="Digest"  
-                            proxyCredentialType="None"  
-                            realm="someRealm" />  
-                         <message clientCredentialType="Windows"  
-                            negotiateServiceCredential="false"  
-                            algorithmSuite="Aes128"   
-                            defaultProtectionLevel="None" />  
-                    </security>  
-                </binding>  
-           </wsHttpBinding>  
-        </bindings>  
-    </system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <wsHttpBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 bypassProxyOnLocal="false"
+                 transactionFlow="false"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://foo/bar"
+                 textEncoding="utf-16"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="Transport">
+            <transport clientCredentialType="Digest"
+                       proxyCredentialType="None"
+                       realm="someRealm" />
+            <message clientCredentialType="Windows"
+                     negotiateServiceCredential="false"
+                     algorithmSuite="Aes128"
+                     defaultProtectionLevel="None" />
+          </security>
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## See Also  

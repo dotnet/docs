@@ -22,6 +22,19 @@
 ## Remarks  
  This enumeration is used by the <xref:System.Windows.Forms.MessageBox> class. The description of each member of this enumeration contains a typical representation of the symbol. The actual graphic displayed is a function of the operating system constants. In current implementations there are four unique symbols with multiple values assigned to them.  
   
+ The following table shows the different message box icons.  
+  
+|Icon|Name|
+|-|-|
+|![White X in red circle](~/add/media/messagebox-hand.png "White X in red circle")|Hand|
+|![White question mark in blue circle](~/add/media/messagebox-question.png "White question mark in blue circle")|Question|
+|![Black exclamation point in yellow triangle](~/add/media/messagebox-exclamation.png "Black exclamation point in yellow triangle")|Exclamation|
+|![White lowercase i in blue circle](~/add/media/messagebox-asterisk.png "White lowercase i in blue circle")|Asterisk|
+|![White X in red circle](~/add/media/messagebox-stop.png "White X in red circle")|Stop|
+|![White X in red circle](~/add/media/messagebox-error.png "White X in red circle")|Error|
+|![Black exclamation point in yellow triangle](~/add/media/messagebox-warning.png "Black exclamation point in yellow triangle")|Warning|
+|![White lowercase i in blue circle](~/add/media/messagebox-information.png "White lowercase i in blue circle")|Information|
+  
    
   
 ## Examples  
@@ -82,19 +95,6 @@ Private Sub Form1_FormClosing( _
     End If  
 End Sub  
 ```  
-
-This table shows the different icons:
-
-|Icon|Name|
-|-|-|
-|![White X in red circle](~/add/media/messagebox-hand.png "White X in red circle")|Hand|
-|![White question mark in blue circle](~/add/media/messagebox-question.png "White question mark in blue circle")|Question|
-|![Black exclamation point in yellow triangle](~/add/media/messagebox-exclamation.png "Black exclamation point in yellow triangle")|Exclamation|
-|![White lowercase i in blue circle](~/add/media/messagebox-asterisk.png "White lowercase i in blue circle")|Asterisk|
-|![White X in red circle](~/add/media/messagebox-stop.png "White X in red circle")|Stop|
-|![White X in red circle](~/add/media/messagebox-error.png "White X in red circle")|Error|
-|![Black exclamation point in yellow triangle](~/add/media/messagebox-warning.png "Black exclamation point in yellow triangle")|Warning|
-|![White lowercase i in blue circle](~/add/media/messagebox-information.png "White lowercase i in blue circle")|Information|
 
  ]]></format>
     </remarks>
@@ -229,7 +229,7 @@ This table shows the different icons:
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The message box contain no symbols.</summary>
+        <summary>The message box contains no symbols.</summary>
       </Docs>
     </Member>
     <Member MemberName="Question">
@@ -251,7 +251,7 @@ This table shows the different icons:
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The message box contains a symbol consisting of a question mark in a circle. The question-mark message icon is no longer recommended because it does not clearly represent a specific type of message and because the phrasing of a message as a question could apply to any message type. In addition, users can confuse the message symbol question mark with Help information. Therefore, do not use this question mark message symbol in your message boxes. The system continues to support its inclusion only for backward compatibility.</summary>
+        <summary>The message box contains a symbol consisting of a question mark in a circle. The question mark message icon is no longer recommended because it does not clearly represent a specific type of message and because the phrasing of a message as a question could apply to any message type. In addition, users can confuse the question mark symbol with a help information symbol. Therefore, do not use this question mark symbol in your message boxes. The system continues to support its inclusion only for backward compatibility.</summary>
       </Docs>
     </Member>
     <Member MemberName="Stop">

@@ -25,7 +25,7 @@
  The Single value specifies that a single <xref:System.ServiceModel.InstanceContextMode.Single> object should be used for the lifetime of the service.  
   
 > [!NOTE]
->  If the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to Single the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode>.  
+>  If the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to Single the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>.  
   
    
   

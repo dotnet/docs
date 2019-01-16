@@ -1,51 +1,32 @@
 ---
-title: "Assemblies in .NET"
-ms.date: 07/10/2018
-ms.assetid: 149f5ca5-5b34-4746-9542-1ae43b2d0256
+title: .NET Assembly File Format
+description: Learn about the .NET assembly file format, which is used to describe and contain .NET apps and libraries.
+author: richlander
+ms.author: mairaw
+ms.date: 06/20/2016
+ms.technology: dotnet-standard
+ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
 ---
-# Assemblies in .NET
-Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET-based application. Assemblies take the form of an executable (.exe) file or dynamic link library (.dll) file, and are the building blocks of the .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations. You can think of an assembly as a collection of types and resources that form a logical unit of functionality and are built to work together.  
-  
- In .NET Core and .NET Framework, an assembly can be built from one or more source code files. In .NET Framework, assemblies can contain one or more modules. This allows larger projects to be planned in such a way that several individual developers work on separate source code files or modules, which are combined to create a single assembly. For more information about modules, see the topic [How to: Build a Multifile Assembly](../../../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md).  
-  
- Assemblies have the following properties:  
-  
--   Assemblies are implemented as .exe or .dll files.  
-  
--   For libraries that target the .NET Framework, you can share an assembly between applications by putting it in the global assembly cache. Assemblies must be strong-named before they can be included in the global assembly cache. For more information, see [Strong-Named Assemblies](../../framework/app-domains/strong-named-assemblies.md).  
-  
--   Assemblies are only loaded into memory if they are required. If they are not used, they are not loaded. This means that assemblies can be an efficient way to manage resources in larger projects.  
-  
--   You can programmatically obtain information about an assembly by using reflection. For more information, see [Reflection (C#)](../../csharp/programming-guide/concepts/reflection.md) or [Reflection (Visual Basic)](../../visual-basic/programming-guide/concepts/reflection.md).   
-  
--   You can load an assembly only to inspect it by calling a method <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom?displayProperty=nameWithType%2A>.  
-  
-## Assembly Manifest  
- Within every assembly is an *assembly manifest*. Similar to a table of contents, the assembly manifest contains the following:  
-  
--   The assembly's identity (its name and version).  
-  
--   A file table describing all the other files that make up the assembly, such as another assemblies you created that your .exe or .dll file relies on, or even bitmap or Readme files.  
-  
--   An *assembly reference list*, which is a list of all external dependencies — .dlls or other files your application needs that may have been created by someone else. Assembly references contain references to both global and private objects. Global objects are available to all other applications. In .NET Core, they are coupled with a particular .NET Core runtime. In .NET Framework, they reside in the global assembly cache. The <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace is an example of an assembly in the global assembly cache. Private objects must be in a directory at either the same level as or below the directory in which your application is installed.  
-  
- Because assemblies contain information about content, versioning, and dependencies, they reduce the applications you create with C# or Visual Basic do not rely on Windows registry values to function properly. Assemblies reduce .dll conflicts and make your applications more reliable and easier to deploy. In many cases, you can install a .NET-based application simply by copying its files to the target computer. For more information see [Assembly Manifest](../../docs/framework/app-domains/assembly-manifest.md).  
-  
-## Adding a Reference to an Assembly  
- To use an assembly, you must add a reference to it. Next, you can use the [using directive](../../csharp/language-reference/keywords/using-directive.md) for C# or [Imports statement](../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for Visual Basic to choose the namespace of the items you want to use. Once an assembly is referenced and imported, all the accessible types, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.  
-  
- In C#, you can also use two versions of the same assembly in a single application. For more information, see [extern alias](../../csharp/language-reference/keywords/extern-alias.md).  
-  
-## Creating an Assembly  
- Compile your application by building it from the command line by using .NET Core command-line interface (CLI) tools or the command-line compiler. For details about building assemblies using .NET CLI tools, see [.NET Core command-line interface (CLI) tools](../../tools/index.md) for C# or see [Building from the Command Line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) for Visual Basic.  
-  
-> [!NOTE]
->  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
+# .NET Assembly File Format
 
-## In this section
+.NET defines a binary file format - "assembly" - that is used to fully-describe and contain .NET programs. Assemblies are used for the programs themselves as well as any dependent libraries. A .NET program can be executed as one or more assemblies, with no other required artifacts, beyond the appropriate .NET implementation. Native dependencies, including operating system APIs, are a separate concern and are not contained within the .NET assembly format, although are sometimes described with this format (for example, WinRT).
 
- [.NET assembly file format](assembly-format.md)  
- [Assemblies in the Common Language Runtime](../../framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [Friend Assemblies (C#)](friend-assemblies.md)  
- [How to: Load and Unload Assemblies (C#)](~/docs/csharp/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)  
- [How to: Determine If a File Is an Assembly (C#)](~/docs/csharp/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md)  
+> Each CLI component carries the metadata for declarations, implementations, and references specific to that component. Therefore, the component-specific metadata is referred to as component metadata, and the resulting component is said to be self-describing – from ECMA 335 I.9.1, Components and assemblies.
+
+The format is fully specified and standardized as [ECMA 335](https://www.ecma-international.org/publications/standards/Ecma-335.htm). All .NET compilers and runtimes use this format. The presence of a documented and infrequently updated binary format has been a major benefit (arguably a requirement) for interoperatibility. The format was last updated in a substantive way in 2005 (.NET 2.0) to accommodate generics and processor architecture.
+
+The format is CPU- and OS-agnostic. It has been used as part of .NET implementations that target many chips and CPUs. While the format itself has Windows heritage, it is implementable on any operating system. It’s arguably most significant choice for OS interoperability is that most values are stored in little-endian format. It doesn’t have a specific affinity to machine pointer size (for example, 32-bit, 64-bit).
+
+The .NET assembly format is also very descriptive about the structure of a given program or library. It describes the internal components of an assembly, specifically: assembly references and types defined and their internal structure. Tools or APIs can read and process this information for display or to make programmatic decisions.
+
+## Format
+
+The .NET binary format is based on the Windows [PE file](https://en.wikipedia.org/wiki/Portable_Executable) format. In fact, .NET class libraries are conformant Windows PEs, and appear on first glance to be Windows dynamic link libraries (DLLs) or application executables (EXEs). This is a very useful characteristic on Windows, where they can masquerade as native executable binaries and get some of the same treatment (for example, OS load, PE tools).
+
+![Assembly headers](./media/assembly-format/assembly-headers.png)
+
+Assembly Headers from ECMA 335 II.25.1, Structure of the runtime file format.
+
+## Processing the Assemblies
+
+It is possible to write tools or APIs to process assemblies. Assembly information enables making programmatic decisions at runtime, re-writing assemblies, providing API IntelliSense in an editor and generating documentation. <xref:System.Reflection?displayProperty=nameWithType> and [Mono.Cecil](https://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/) are good examples of tools that are frequently used for this purpose.

@@ -3,9 +3,9 @@ title: "Tutorial: Get started with Windows Communication Foundation applications
 description: This tutorial provides an introduction for creating WCF applications. 
 ms.date: 01/14/2019
 helpviewer_keywords:
-  - "WCF [WCF], getting started"
-  - "Windows Communication Foundation [WCF], getting started"
-  - "getting started [WCF]"
+  - "WCF [WCF], get started"
+  - "Windows Communication Foundation [WCF], get started"
+  - "get started [WCF]"
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
 ---
 # Tutorial: Get started with Windows Communication Foundation applications
@@ -22,7 +22,7 @@ For sample WCF applications that you can download and run, see [Windows Communic
 
 For more in-depth information about creating services and clients, see [Basic WCF programming](basic-wcf-programming.md).
 
-## Getting started tutorials
+## Get started tutorials
 
 The first three tutorials describe how to define a WCF service contract, how to implement it, and how to host it. The service that you create is self-hosted within a console application. You can also host services under Microsoft Internet Information Services (IIS). For more info, see [How to: Host a WCF Service in IIS](feature-details/how-to-host-a-wcf-service-in-iis.md). Although you use code to configure the service in the tutorial, you can also configure services within a configuration file. For more info, see [Configuring services using configuration files](configuring-services-using-configuration-files.md).
 

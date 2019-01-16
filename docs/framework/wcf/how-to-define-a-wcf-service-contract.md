@@ -10,7 +10,7 @@ ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 ---
 # Tutorial: Define a Windows Communication Foundation service contract
 
-This tutorial describes the first of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Getting started tutorial](getting-started-tutorial.md).
+This tutorial describes the first of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
 When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a C++, C#, or Visual Basic (VB) interface. An interface has the following characteristics:
 

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Implement a Windows Communication Foundation service contract"
-ms.date: 01/10/2019
+ms.date: 01/15/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,13 +10,13 @@ ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
 ---
 # Tutorial: Implement a Windows Communication Foundation service contract
 
-This tutorial describes the second of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Getting started tutorial](getting-started-tutorial.md).
+This tutorial describes the second of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-The next step in creating a WCF application is to implement the service interface. This step involves creating a class named `CalculatorService` that implements the user-defined `ICalculator` interface.
+The next step in creating a WCF application is to implement the WCF service interface. In this step, you create a class named `CalculatorService` that implements the user-defined `ICalculator` interface.
 
 ## Implement a WCF service contract
 
-Open the Service1.cs or Service1.vb file and add the following code:
+Open the Service1.cs (or Service1.vb) file and add the following code:
 
 ```csharp
 using System;
@@ -105,7 +105,7 @@ Namespace GettingStartedLib
 End Namespace
 ```
 
-Each method implements the calculator operation and writes some text to the console to make testing easier.
+Each method implements the calculator operation and writes text to the console to make testing easier.
 
 ## Example
 
@@ -248,9 +248,9 @@ Build the solution to verify there aren't any compilation errors. If you're usin
 The service contract has now been created and implemented. In the next step, you run the service.
 
 > [!div class="nextstepaction"]
-> [How to: Host and Run a Basic Service](how-to-host-and-run-a-basic-wcf-service.md)
+> [Tutorial: Host and run a basic service](how-to-host-and-run-a-basic-wcf-service.md)
 
-For troubleshooting information, see [Troubleshooting the Getting Started Tutorial](troubleshooting-the-getting-started-tutorial.md).
+For troubleshooting information, see [Troubleshoot the get started tutorial](troubleshooting-the-getting-started-tutorial.md).
 
 ## See also
 

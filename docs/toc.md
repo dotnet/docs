@@ -32,7 +32,7 @@
 ### [Framework Analyzer](standard/analyzers/framework-analyzer.md)
 ## [Handling and throwing exceptions](standard/exceptions/)
 ## [Assemblies in .NET](standard/assembly/index.md)
-### [.NET Assembly File Format](standard/assembly/assembly-format.md) 
+### [.NET Assembly File Format](standard/assembly/file-format.md) 
 ## [Garbage Collection](standard/garbage-collection/)
 ## [Generic types](standard/generics.md)
 ## [Delegates and lambdas](standard/delegates-lambdas.md)

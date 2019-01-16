@@ -47,7 +47,7 @@ The following example uses the <xref:System.IO.Directory.EnumerateFiles%28System
   
 ## Examples: Use the DirectoryInfo class  
   
-The following example uses the <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType> method to list a collection of top-level directories whose <xref:System.IO.DirectoryInfo.CreationTimeUtc> is earlier than a certain <xref:System.DateTime> value.  
+The following example uses the <xref:System.IO.DirectoryInfo.EnumerateDirectories%2A?displayProperty=nameWithType> method to list a collection of top-level directories whose <xref:System.IO.FileInfo.CreationTimeUtc> is earlier than a certain <xref:System.DateTime> value.  
 
 [!code-csharp[System.IO.DirectoryInfo.EnumDirs#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumdirs/cs/program.cs)]
 [!code-vb[System.IO.DirectoryInfo.EnumDirs#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumdirs/vb/module1.vb#1)]  

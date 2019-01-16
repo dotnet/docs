@@ -11,11 +11,11 @@ ms.custom: seodec18
 ---
 # Publish .NET Core apps with the CLI
 
-This article demonstrates how you can publish your .NET Core application from the command-line. .NET Core provides three ways to publish your applications: *framework-dependent* produces a .dll file that uses the locally installed .NET Core runtime, *framework-dependent executable* produces a platform specific executable that uses the locally installed .NET Core runtime, *self-contained* produces a platform specific binary and includes a local copy of the .NET Core runtime.
+This article demonstrates how you can publish your .NET Core application from the command line. .NET Core provides three ways to publish your applications. *Framework-dependent deployment* produces a .dll file that uses the locally installed .NET Core runtime. *Framework-dependent executable* produces a platform-specific executable that uses the locally installed .NET Core runtime. *Self-contained* produces a platform-specific binary and includes a local copy of the .NET Core runtime.
 
 For an overview of these deployment modes, see [.NET Core Application Deployment](index.md). 
 
-Looking for some quick help on using the CLI? The following table shows some examples of how to publish your app. See the sections below for more information.
+Looking for some quick help on using the CLI? The following table shows some examples of how to publish your app.
 
 | Publish Mode | SDK Version | Command |
 | ------------ | ----------- | ------- |
@@ -34,21 +34,23 @@ Looking for some quick help on using the CLI? The following table shows some exa
 
 ## Publishing basics
 
-When you publish your app, the default target the app is compiled for (automatically chosen when you create the app) is specified in the `<TargetFramework>` setting of the project file. Choose any valid [Target Framework Moniker (TFM)](~/dotnet/standard/frameworks.md). For example, if you have `<TargetFramework>netcoreapp2.2</TargetFramework>` you will get a binary that targets .NET Core 2.2. The TFM specified in this setting is the default target used by the [`dotnet publish`][dotnet-publish] command.
+When you publish your app, the default target the app is compiled for (automatically chosen when you create the app) is specified in the `<TargetFramework>` setting of the project file. Choose any valid [Target Framework Moniker (TFM)](~/dotnet/standard/frameworks.md). For example, if you have `<TargetFramework>netcoreapp2.2</TargetFramework>` chosen, a binary that targets .NET Core 2.2 is created. The TFM specified in this setting is the default target used by the [`dotnet publish`][dotnet-publish] command.
 
-You can use the `<TargetFrameworks>` setting (note the plural) to specify multiple frameworks supported by your app. Separate each TFM with a semicolon. You can publish, targeting one of the listed frameworks, with the `dotnet publish -f <TFM>` command. For example, if you have `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>`, and run `dotnet publish -f netcoreapp2.1`, you'll get a binary that targets .NET Core 2.1. 
+You can use the `<TargetFrameworks>` setting (note the plural) to specify more than one framework supported by your app. Separate each TFM with a semicolon. You can publish, targeting one of the listed frameworks, with the `dotnet publish -f <TFM>` command. For example, if you have `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>`, and run `dotnet publish -f netcoreapp2.1`, a binary that targets .NET Core 2.1 is created. 
 
-Unless otherwise set, the output directory of the [`dotnet publish`][dotnet-publish] command is `<CURRENT-FOLDER>/bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. The default **BUILD-CONFIGURATION** mode is **Debug**. Regardless of the  By default, `dotnet publish` (framework with `-f` or not) will build a *framework-dependent deployment* app.
+Unless otherwise set, the output directory of the [`dotnet publish`][dotnet-publish] command is `<CURRENT-FOLDER>/bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. The default **BUILD-CONFIGURATION** mode is **Debug**. Based on the SDK you're using, and the target framework chosen, either a *framework-dependent deployment* or *framework-dependent executable* app is created.
 
 ### Native dependencies
 
-If your app or a library you referenced has a dependency on something about your operating system, you may not be able to run your app on a different operating system. For example, if you (on Windows) referenced a library that used the native Win32 API, you wouldn't be able to run your app on macOS or Linux. It is possible that your reference (if a NuGet package) has included platform-specific libraries. If this the case, you would see the appropriate files in the output folder. Though when distributing an app like this, you may need to use the `dotnet publish -r <RID>` switch to specify the target platform you want to publish for. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](..\rid-catalog.md).
+If your app (or a library you referenced) has some sort of native dependency, it may not run on a different operating system. For example, if you (on Windows) referenced a library that used the native Win32 API, your app wouldn't run on macOS or Linux. It's possible that a NuGet package you're referencing has included platform-specific versions, handling the required native dependencies.
+
+When distributing an app with native dependencies, you may need to use the `dotnet publish -r <RID>` switch to specify the target platform you want to publish for. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](..\rid-catalog.md).
 
 More information about platform-specific binaries is covered in the [Framework-dependent executable](#framework-dependent-executable) and [Self-contained deployment](#self-contained-deployment) sections.
 
 ## Sample app
 
-If you would like to quickly test publishing an app, but don't have an app handy, here is a small application to play with. It is created by running the following commands in your terminal:
+If you would like to quickly test publishing an app, but don't have an app available, here is a small app to play with. The app is created by running the following commands in your terminal:
 
 ```terminal
 mkdir apptest1
@@ -83,7 +85,7 @@ Module Program
 End Module
 ```
 
-When you run the app ([`dotnet run`][dotnet-run]), you'll see the following output:
+When you run the app ([`dotnet run`][dotnet-run]), the following output is displayed:
 
 ```terminal
   _   _      _ _         __        __         _     _ _
@@ -96,17 +98,19 @@ When you run the app ([`dotnet run`][dotnet-run]), you'll see the following outp
 
 ## Framework-dependent deployment
 
-For .NET Core 2.x, this publish mode is the default mode for the basic `dotnet publish` command.
+For the .NET Core SDK 2.x CLI, this publish mode is the default mode for the basic `dotnet publish` command.
 
 When you publish your app as a *framework-dependent deployment* (FDD), a `<PROJECT-NAME>.dll` file is created in the `<CURRENT-FOLDER>/bin/<BUILD-CONFIGURATION>/<TFM>/publish/` folder. To run your app, navigate to the output folder and call the `dotnet <PROJECT-NAME>.dll` command. 
 
-Your app is configured to target a specific version of .NET Core. For example, if your app targets .NET Core 2.2, any machine that your app runs on must have the .NET Core 2.2 runtime installed. As stated in the [Publishing basics](#publishing-basics) section, you can edit your project file to change the default target framework, or target multiple frameworks.
+Your app is configured to target a specific version of .NET Core, and that runtime is required on the machine where you want to run your app. For example, if your app targets .NET Core 2.2, any machine that your app runs on must have the .NET Core 2.2 runtime installed. As stated in the [Publishing basics](#publishing-basics) section, you can edit your project file to change the default target framework or to target more than one framework.
 
 ## Framework-dependent executable
 
-For .NET Core 3.x, this publish mode is the default mode for the basic `dotnet publish` command. You do not need to specify any other parameter as long as want to target the operating system you're currently using.
+For the .NET Core SDK 3.x CLI, this publish mode is the default mode for the basic `dotnet publish` command. You don't need to specify any other parameters as long as want to target the current operating system.
 
-By publishing a *framework-dependent executable* (FDE), a platform-specific executable is created. Similar to the FDD publish mode, your app will target the matching version of .NET Core that was used to publish. Your app is still created as a `.dll` file (like with FDD), but in addition, a host executable is generated that is specific to the target platform. Users can run this executable instead of the `dotnet name.dll` command.
+By publishing a *framework-dependent executable* (FDE), a platform-specific executable is created. Similar to the FDD publish mode, your app targets the version of .NET Core that your project uses or that is specified on the command line. Your app is still created as a `.dll` file (like with FDD), but, a host executable is also generated that is specific to the target platform. You can run this executable instead of the `dotnet name.dll` command.
+
+Your app is configured to target a specific version of .NET Core, and that runtime is required on the machine where you want to run your app. For example, if your app targets .NET Core 2.2, any machine that your app runs on must have the .NET Core 2.2 runtime installed. As stated in the [Publishing basics](#publishing-basics) section, you can edit your project file to change the default target framework or to target more than one framework.
 
 You must (except for .NET Core 3.x) use the following switches with the `dotnet publish` command to publish an FDE:
 
@@ -118,14 +122,14 @@ You must (except for .NET Core 3.x) use the following switches with the `dotnet 
 
 Whenever you use the `-r` switch, the output folder path changes to: `<CURRENT-FOLDER>/bin/<BUILD-CONFIGURATION>/<TFM>/<RID>/publish/`
 
-As an example, take the example app above, run `dotnet publish -f netcoreapp2.2 -r win10-x64 --self-contained false`. This will create the following executable: `<CURRENT-FOLDER>/bin/Debug/netcoreapp2.2/win10-x64/publish/apptest1.exe`
+If you were to use the [example app](#sample-app), run `dotnet publish -f netcoreapp2.2 -r win10-x64 --self-contained false`. This creates the following executable: `<CURRENT-FOLDER>/bin/Debug/netcoreapp2.2/win10-x64/publish/apptest1.exe`
 
 > [!Note]
 > You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md)
 
 ## Self-contained deployment
 
-If you publish a *self-contained deployment* (SCD), the .NET Core SDK bundles all files needed to run the app for the specified platform, including an executable that targets the specified platform. Publishing an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs. For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md).
+If you publish a *self-contained deployment* (SCD), the .NET Core SDK creates a platform-specific executable, and adds all files needed to run the app to the `publish` folder. Publishing an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these dependencies must be present before the app runs. For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md).
 
 You must use the following switches with the `dotnet publish` command to publish an SCD:
 

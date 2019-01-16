@@ -14,10 +14,7 @@ The documentation version from before the March 7 update is available in a PDF f
 
 ## PDF files
 
-The best source of the earlier documentation is PDF files:
-
-* [.NET Core - PDF for project.json and Visual Studio 2015](https://github.com/dotnet/docs/blob/project.json/net-core-project-json.pdf)
-* [ASP.NET Core - PDF for project.json and Visual Studio 2015](https://github.com/aspnet/Docs/blob/master/aspnetcore/common/_static/aspnet-core-project-json.pdf)
+The best source of the earlier documentation is the [.NET Core - PDF for project.json and Visual Studio 2015](https://github.com/dotnet/docs/blob/project.json/net-core-project-json.pdf);
 
 ## Documentation repository branch
 

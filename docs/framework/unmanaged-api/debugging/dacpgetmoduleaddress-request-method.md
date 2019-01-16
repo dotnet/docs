@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # DacpGetModuleAddress::Request Method
 
-Perform the request to populate the structure.
+Performs a request to populate the structure from the given runtime structure.
 
 ## Syntax
 

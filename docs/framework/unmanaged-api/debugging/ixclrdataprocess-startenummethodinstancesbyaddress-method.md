@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataProcess::StartEnumMethodInstancesByAddress Method
 
-Start enumerate method instances of this process by an address.
+Starts enumerating the method instances of app domain by address.
 
 ## Syntax
 
@@ -33,13 +33,13 @@ HRESULT StartEnumMethodInstancesByAddress(
 ### Parameters
 
 `address`
-[in] The address of the method instance.
+[in] The address of the first method instance.
 
 `appDomain`
-[in] The AppDomain of the method instance.
+[in] The AppDomain of the method instances.
 
 `handle`
-[out] A handle for enumerating the method instance.
+[out] A handle for enumerating the method instances.
 
 ## Remarks
 

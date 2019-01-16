@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # CLRDATA_IL_ADDRESS_MAP Structure
 
-Define an IL to address mapping
+Defines an IL to address mapping
 
 ## Syntax
 
@@ -34,12 +34,12 @@ typedef struct
 
 ## Members
 
-|Member      |Description                                           |
-|------------|------------------------------------------------------|
-|ilOffset    |The start address of the range.                       |
-|startAddress|The start address of the range.                       |
-|endAddress  |The end address of the range.                         |
-|type        |The type of the data. The value is currently not used |
+|Member      |Description                                            |
+|------------|-------------------------------------------------------|
+|ilOffset    |IL offset for the contained address range              |
+|startAddress|The start address of the range.                        |
+|endAddress  |The end address of the range.                          |
+|type        |The type of the data. This value is currently not used |
 
 ## Remarks
 

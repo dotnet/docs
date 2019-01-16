@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # CLRDATA_ADDRESS_RANGE Structure
 
-Define an address range.
+Defines an address range.
 
 ## Syntax
 

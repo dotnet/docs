@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataProcess::StartEnumModules Method
 
-Start enumerate modules of this process.
+Starts enumerating the modules of the process.
 
 ## Syntax
 

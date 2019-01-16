@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataProcess Interface
 
-Provide methods for querying information about a process.
+Provides methods for querying information about a process.
 
 ## Methods
 

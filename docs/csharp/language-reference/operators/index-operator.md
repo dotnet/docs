@@ -1,5 +1,5 @@
 ---
-title: "[] Operator - C# Reference"
+title: "[] operator - C# Reference"
 ms.custom: seodec18
 ms.date: 01/10/2019
 f1_keywords: 
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "indexing operator [C#]"
 ms.assetid: 5c16bb45-88f7-45ff-b42c-1af1972b042c
 ---
-# [] Operator (C# Reference)
+# [] operator (C# Reference)
 
 Square brackets, `[]`, are typically used for array, indexer, or pointer element access.
 

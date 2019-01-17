@@ -1,22 +1,22 @@
 ---
-title: "CLRDATA_ENUM Enumeration"
+title: "CLRDataSourceType Enumeration"
 ms.date: "01/16/2019"
 api.name:
-  - "CLRDATA_ENUM Enumeration"
+  - "CLRDataSourceType Enumeration"
 api.location:
   - "mscordacwks.dll"
 api.type:
   - "COM"
 f1.keywords:
-  - "CLRDATA_ENUM Enumeration"
+  - "CLRDataSourceType Enumeration"
 helpviewer.keywords:
-  - "CLRDATA_ENUM Enumeration [.NET Framework debugging]"
+  - "CLRDataSourceType Enumeration [.NET Framework debugging]"
 topic_type:
   - "apiref"
 author: "cshung"
 ms.author: "andrewau"
 ---
-# CLRDATA_ENUM Enumeration
+# CLRDataSourceType Enumeration
 
 Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
@@ -31,13 +31,13 @@ typedef enum
 
 ## Members
 
-|Member                     |Description                          |
-|---------------------------|-------------------------------------|
-|CLRDATA_SOURCE_TYPE_INVALID|To indicate that nothing else applies|
+| Member                        | Description                           |
+| ----------------------------- | ------------------------------------- |
+| `CLRDATA_SOURCE_TYPE_INVALID` | To indicate that nothing else applies |
 
 ## Remarks
 
-This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define an enumeration as defined above in your code.
+This enumeration lives inside the runtime and is not exposed through any headers or library files. To use it, define an enumeration as defined above in your code. This is also aliased to `CLRDATA_ENUM` as mentioned in [Common Data Types](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md).
 
 ## Requirements
 

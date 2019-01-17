@@ -50,4 +50,4 @@ This structure lives inside the runtime and is not exposed through any headers o
 ## See Also
 
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [DacpGetModuleAddress Interface](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-interface.md)
+- [DacpGetModuleAddress Interface](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)

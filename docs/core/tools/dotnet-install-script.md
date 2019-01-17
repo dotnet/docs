@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core CLI tools and the shared runtime.
-ms.date: 11/15/2018
+ms.date: 01/16/2019
 ---
 # dotnet-install scripts reference
 
@@ -67,7 +67,7 @@ You can install a specific version using the `--version` argument. The version m
 
 * **`-Architecture <ARCHITECTURE>`**
 
-  Architecture of the .NET Core binaries to install. Possible values are `auto`, `x64`, and `x86`. The default value is `auto`, which represents the currently running OS architecture.
+  Architecture of the .NET Core binaries to install. Possible values are `<auto>`, `amd64`, `x64`, `x86`, `arm64`, and `arm`. The default value is `<auto>`, which represents the currently running OS architecture.
 
 * **`-SharedRuntime`**
 

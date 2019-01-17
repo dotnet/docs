@@ -50,7 +50,7 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See Also
 
-- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration-enumeration.md)
+- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
 - [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)

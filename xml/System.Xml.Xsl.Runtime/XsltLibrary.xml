@@ -125,7 +125,7 @@
         <Parameter Name="right" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="opCode">The operation to be performed</param>
+        <param name="opCode">The operation to be performed.</param>
         <param name="left">
           <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.Xml.XPath.XPathItem" />.</param>
         <param name="right">

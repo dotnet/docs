@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # DacpGetModuleAddress Structure
 
-Defines a get module address request.
+Defines the container for a module address request.
 
 ## Syntax
 

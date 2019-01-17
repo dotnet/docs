@@ -6699,7 +6699,7 @@
  Beginning with the .NET Framework version 2.0, this event is raised in each application domain that registers an event handler.  
   
 > [!NOTE]
->  The total execution time of all <xref:System.AppDomain.ProcessExit> event handlers is limited, just as the total execution time of all finalizers is limited at process shutdown. The default is two seconds. An unmanaged host can change this execution time by calling the [ICLRPolicyManager::SetTimeout](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) method with the [OPR_ProcessExit](~/docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) enumeration value.  
+>  In .NET Framework, the total execution time of all <xref:System.AppDomain.ProcessExit> event handlers is limited, just as the total execution time of all finalizers is limited at process shutdown. The default is two seconds. An unmanaged host can change this execution time by calling the [ICLRPolicyManager::SetTimeout](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-settimeout-method.md) method with the [OPR_ProcessExit](~/docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) enumeration value. This time limit does not exist in .NET Core.  
   
  In the .NET Framework versions 1.0 and 1.1, this event is raised only in the default application domain, and only if an event handler is registered in the default application domain.  
   

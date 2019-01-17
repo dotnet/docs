@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert between .NET Framework streams and Windows Runtime streams"
+title: "How to: Convert between .NET Framework and Windows Runtime streams (Windows only)"
 ms.date: "01/14/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -9,7 +9,7 @@ ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# How to: Convert between .NET Framework streams and Windows Runtime streams
+# How to: Convert between .NET Framework and Windows Runtime streams (Windows only)
 
 The .NET Framework for UWP apps is a subset of the full .NET Framework. Because of security and other requirements for UWP apps, you can't use the full set of .NET Framework APIs to open and read files. For more information, see [.NET for UWP apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)). However, you may want to use .NET Framework APIs for other stream manipulation operations. To manipulate these streams, you can convert between a .NET Framework stream type such as <xref:System.IO.MemoryStream> or <xref:System.IO.FileStream>, and a Windows Runtime stream such as <xref:Windows.Storage.Streams.IInputStream>, <xref:Windows.Storage.Streams.IOutputStream>, or <xref:Windows.Storage.Streams.IRandomAccessStream>.
 
@@ -33,7 +33,7 @@ To convert from a Windows Runtime random-access stream to a .NET Framework strea
 
 The following code example prompts you to select a file, opens it with Windows Runtime APIs, and then converts it to a .NET Framework stream. It reads the stream and outputs it to a text block. You would typically manipulate the stream with .NET Framework APIs before outputting the results.
 
-To run this example, you must create a UWP XAML app that contains a text block named `TextBlock1` and a button named  `Button1`. The button click event must be associated with the `button1_Click` method shown in the example.
+To run this example, create a UWP XAML app that contains a text block named `TextBlock1` and a button named  `Button1`. Associate the button click event with the `button1_Click` method shown in the example.
 
   [!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/cs/mainpage.xaml.cs#imports)]
   [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage.xaml.vb#imports)]
@@ -60,7 +60,7 @@ To convert from a .NET Framework stream to a Windows Runtime random-access strea
 > [!IMPORTANT]
 > Make sure that the .NET Framework stream you are using supports seeking, or copy it to a stream that does. You can use the <xref:System.IO.Stream.CanSeek%2A?displayProperty=nameWithType> property to determine this.
 
-To run this example, you must create a UWP XAML app that targets the .NET Framework 4.5.1 and contains a text block named `TextBlock2` and a button named `Button2`. The button click event must be associated with the `button2_Click` method shown in the example.
+To run this example, create a UWP XAML app that targets the .NET Framework 4.5.1 and contains a text block named `TextBlock2` and a button named `Button2`. Associate the button click event with the `button2_Click` method shown in the example.
 
   [!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/cs/mainpage.xaml.cs#imports)]
   [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage.xaml.vb#imports)]

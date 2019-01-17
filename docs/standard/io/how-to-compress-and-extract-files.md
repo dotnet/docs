@@ -23,11 +23,11 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
 - <xref:System.IO.Compression.DeflateStream>
 - <xref:System.IO.Compression.GZipStream>
 
-The following examples show some of the functions you can perform with compressed files.
+The following examples show some of the operations you can perform with compressed files.
 
 ## Example 1: Create and extract a .zip file
 
-The following example shows how to create and extract a compressed *.zip* file by using the <xref:System.IO.Compression.ZipFile> class. The example compresses the contents of a folder into a new *.zip* file, and then extracts that content to a new folder. 
+The following example shows how to create and extract a compressed *.zip* file by using the <xref:System.IO.Compression.ZipFile> class. The example compresses the contents of a folder into a new *.zip* file, and then extracts it to a new folder. 
 
 If you get the build error "The name 'ZipFile' does not exist in the current context," add a reference to the `System.IO.Compression.FileSystem` assembly to your project.
 

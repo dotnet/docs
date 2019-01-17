@@ -36,13 +36,15 @@ Looking for some quick help on using the CLI? The following table shows some exa
 
 When you publish your app, the default target the app is compiled for (automatically chosen when you create the app) is specified in the `<TargetFramework>` setting of the project file. Choose any valid [Target Framework Moniker (TFM)](~/dotnet/standard/frameworks.md). For example, if you have `<TargetFramework>netcoreapp2.2</TargetFramework>` chosen, an executable that targets .NET Core 2.2 is created. The TFM specified in this setting is the default target used by the [`dotnet publish`][dotnet-publish] command.
 
-You can use the `<TargetFrameworks>` setting (note the plural) to specify more than one framework supported by your app. Separate each TFM with a semicolon. You can publish, targeting one of the listed frameworks, with the `dotnet publish -f <TFM>` command. For example, if you have `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>`, and run `dotnet publish -f netcoreapp2.1`, an executable that targets .NET Core 2.1 is created. 
+You can use the `<TargetFrameworks>` setting (note the plural) to specify more than one framework supported by your app. Separate each TFM with a semicolon. You can publish, targeting one of the frameworks listed, with the `dotnet publish -f <TFM>` command. For example, if you have `<TargetFrameworks>netcoreapp2.1;netcoreapp2.2</TargetFrameworks>`, and run `dotnet publish -f netcoreapp2.1`, an executable that targets .NET Core 2.1 is created. 
 
 Unless otherwise set, the output directory of the [`dotnet publish`][dotnet-publish] command is `<CURRENT-FOLDER>/bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. The default **BUILD-CONFIGURATION** mode is **Debug**. Based on the SDK you're using, and the target framework chosen, either a *framework-dependent deployment* or *framework-dependent executable* app is created.
 
 ### Native dependencies
 
-If your app (or a library you referenced) has some sort of native dependency, it may not run on a different operating system. For example, if you (on Windows) referenced a library that used the native Win32 API, your app wouldn't run on macOS or Linux. It's possible that a NuGet package you're referencing has included platform-specific versions, handling the required native dependencies.
+If your app has some sort of native dependency, it may not run on a different operating system. For example, if you (on Windows) referenced a library that used the native Win32 API, your app wouldn't run on macOS or Linux. You would need to provide platform-specific code, and compile an executable for each platform. 
+
+Consider also that if a library you referenced has a native dependency, your app also may not run on every platform. However, it's possible that a NuGet package you're referencing has included platform-specific versions, handling the required native dependencies for you.
 
 When distributing an app with native dependencies, you may need to use the `dotnet publish -r <RID>` switch to specify the target platform you want to publish for. For a list of runtime identifiers, see [Runtime Identifier (RID) catalog](..\rid-catalog.md).
 

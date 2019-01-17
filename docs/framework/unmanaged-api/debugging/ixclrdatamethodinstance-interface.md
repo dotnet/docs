@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataMethodInstance Interface
 
-Provide methods for querying information about a method instance.
+Provides methods for querying information about a method instance.
 
 ## Methods
 

@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # ISOSDacInterface Interface
 
-Provide methods for SOS to access information.
+Provides methods for SOS to access information.
 
 ## Methods
 

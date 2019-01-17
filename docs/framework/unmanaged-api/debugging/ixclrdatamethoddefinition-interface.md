@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition Interface
 
-Provide methods for querying information about a method definition.
+Provides methods for querying information about a method definition.
 
 ## Methods
 

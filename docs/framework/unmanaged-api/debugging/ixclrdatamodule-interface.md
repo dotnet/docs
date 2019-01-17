@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataModule Interface
 
-Provide methods for querying information about a loaded module.
+Provides methods for querying information about a loaded module.
 
 ## Methods
 

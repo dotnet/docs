@@ -50,6 +50,6 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## See Also
 
-- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration-enumeration.md)
+- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)

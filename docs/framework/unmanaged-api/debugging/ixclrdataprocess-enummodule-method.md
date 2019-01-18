@@ -50,7 +50,7 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See Also
 
-- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
+- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
 - [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)

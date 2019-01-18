@@ -54,6 +54,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## See Also
 
-- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
+- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

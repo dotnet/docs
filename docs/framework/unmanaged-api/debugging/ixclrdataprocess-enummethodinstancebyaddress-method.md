@@ -49,6 +49,6 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See Also
-- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
+- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)

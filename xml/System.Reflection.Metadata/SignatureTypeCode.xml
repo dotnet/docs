@@ -638,15 +638,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>Precedes a type <see cref="System.Reflection.Metadata.EntityHandle" /> in signatures.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In raw metadata, this will be encoded as either ELEMENT_TYPE_CLASS (0x12) for reference types and ELEMENT_TYPE_VALUETYPE (0x11) for value types. This is collapsed to a single code because Windows Runtime projections can project from class to value type or vice-versa and the raw code is misleading in those cases.
-  
- ]]></format>
-        </remarks>
+        <summary>Precedes a type <see cref="System.Reflection.Metadata.EntityHandle" /> in signatures. In raw metadata, this is encoded as either ELEMENT_TYPE_CLASS (0x12) for reference types or ELEMENT_TYPE_VALUETYPE (0x11) for value types. This is collapsed to a single code because Windows Runtime projections can project from class to value type or vice-versa, and the raw code is misleading in those cases.</summary>
       </Docs>
     </Member>
     <Member MemberName="UInt16">

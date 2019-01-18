@@ -38,10 +38,12 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can adjust the intrusiveness of garbage collection in your application by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A> property to any <xref:System.Runtime.GCLatencyMode> enumeration value except NoGCRegion. You can also determine the garbage collector's current latency mode by retrieving the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property value.  
+ You can adjust the intrusiveness of garbage collection in your application by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A> property to any <xref:System.Runtime.GCLatencyMode> enumeration value except `GCLatencyMode.NoGCRegion`. You can also determine the garbage collector's current latency mode by retrieving the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property value.  
   
  See [Latency Modes](~/docs/standard/garbage-collection/latency.md) for a discussion of how the runtime configuration settings for garbage collection affect the default value for this enumeration.  
-  
+
+The <xref:System.Runtime.GCLatencyMode.Batch?displayProperty=nameWithType> mode overrides the [\<gcConcurrent>](~/docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) runtime configuration setting. If concurrent garbage collection is enabled by the [\<gcConcurrent>](~/docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) element, switching to Batch mode prevents any further concurrent collections.    
+
  ]]></format>
     </remarks>
     <related type="Article" href="https://msdn.microsoft.com/library/96278bb7-6eab-4612-8594-ceebfc887d81">Latency Modes</related>
@@ -79,17 +81,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Disables garbage collection concurrency and reclaims objects in a batch call. This is the most intrusive mode.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This mode is designed for maximum throughput at the expense of responsiveness.  
-  
- This mode overrides the  runtime configuration setting. If  is enabled, switching to Batch mode prevents any further concurrent collections.  
-  
- ]]></format>
-        </remarks>
+        <summary>Disables garbage collection concurrency and reclaims objects in a batch call. This is the most intrusive mode. This mode is designed for maximum throughput at the expense of responsiveness.</summary>
       </Docs>
     </Member>
     <Member MemberName="Interactive">
@@ -124,15 +116,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Enables garbage collection concurrency and reclaims objects while the application is running. This is the default mode for garbage collection on a workstation and is less intrusive than <see cref="F:System.Runtime.GCLatencyMode.Batch" />. It balances responsiveness with throughput.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This mode is equivalent to garbage collection on a workstation that is concurrent.  
-  
- ]]></format>
-        </remarks>
+        <summary>Enables garbage collection concurrency and reclaims objects while the application is running. This is the default mode for garbage collection on a workstation and is less intrusive than <see cref="F:System.Runtime.GCLatencyMode.Batch" />. It balances responsiveness with throughput. This mode is equivalent to garbage collection on a workstation that is concurrent. </summary>
       </Docs>
     </Member>
     <Member MemberName="LowLatency">
@@ -167,15 +151,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Enables garbage collection that is more conservative in reclaiming objects. Full collections occur only if the system is under memory pressure, whereas generation 0 and generation 1 collections might occur more frequently</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This mode is not available for the server garbage collector.  
-  
- ]]></format>
-        </remarks>
+        <summary>Enables garbage collection that is more conservative in reclaiming objects. Full collections occur only if the system is under memory pressure, whereas generation 0 and generation 1 collections might occur more frequently. This mode is not available for the server garbage collector.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoGCRegion">

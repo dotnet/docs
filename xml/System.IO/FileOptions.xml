@@ -42,6 +42,10 @@
     <summary>Represents advanced options for creating a <see cref="T:System.IO.FileStream" /> object.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+ Specifying the `FileOptions.SequentialScan` flag can increase performance for applications that read large files using sequential access. Performance gains can be even more noticeable for applications that read large files mostly sequentially, but occasionally skip over small ranges of bytes.
   
 ## Examples  
  The following example shows how to use the Asynchronous value when creating a file stream.  
@@ -260,15 +264,7 @@
       </ReturnValue>
       <MemberValue>134217728</MemberValue>
       <Docs>
-        <summary>Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Specifying this flag can increase performance for applications that read large files using sequential access. Performance gains can be even more noticeable for applications that read large files mostly sequentially, but occasionally skip over small ranges of bytes.  
-  
- ]]></format>
-        </remarks>
+        <summary>Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed. Specifying this flag can increase performance in some cases. </summary>
       </Docs>
     </Member>
     <Member MemberName="WriteThrough">

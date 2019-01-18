@@ -74,15 +74,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Marks an assembly as not requiring string-literal interning.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In an application domain, the common language runtime creates one string object for each unique string literal, rather than making multiple copies. This behavior, called string interning, internally requires building auxiliary tables that consume memory resources.  
-  
- ]]></format>
-        </remarks>
+        <summary>Marks an assembly as not requiring string-literal interning. In an application domain, the common language runtime creates one string object for each unique string literal, rather than making multiple copies. This behavior, called <see href="https://docs.microsoft.com/dotnet/api/system.string.intern">string interning</see>, internally requires building auxiliary tables that consume memory resources.</summary>
       </Docs>
     </Member>
   </Members>

@@ -108,15 +108,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Date and time are returned as a Coordinated Universal Time (UTC). If the input string denotes a local time, through a time zone specifier or <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" />, the date and time are converted from the local time to UTC. If the input string denotes a UTC time, through a time zone specifier or <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />, no conversion occurs. If the input string does not denote a local or UTC time, no conversion occurs and the resulting <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Unspecified" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value cannot be used with RoundtripKind.  
-  
- ]]></format>
-        </remarks>
+        <summary>Date and time are returned as a Coordinated Universal Time (UTC). If the input string denotes a local time, through a time zone specifier or <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" />, the date and time are converted from the local time to UTC. If the input string denotes a UTC time, through a time zone specifier or <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />, no conversion occurs. If the input string does not denote a local or UTC time, no conversion occurs and the resulting <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Unspecified" />. This value cannot be used with <see cref="F:System.Globalization.DateTimeStyles.RoundtripKind" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="AllowInnerWhite">
@@ -295,15 +287,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>If no time zone is specified in the parsed string, the string is assumed to denote a local time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value cannot be used with AssumeUniversal or RoundtripKind.  
-  
- ]]></format>
-        </remarks>
+        <summary>If no time zone is specified in the parsed string, the string is assumed to denote a local time. This value cannot be used with <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" /> or <see cref="F:System.Globalization.DateTimeStyles.RoundtripKind" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="AssumeUniversal">
@@ -338,15 +322,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>If no time zone is specified in the parsed string, the string is assumed to denote a UTC.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This value cannot be used with AssumeLocal or RoundtripKind.  
-  
- ]]></format>
-        </remarks>
+        <summary>If no time zone is specified in the parsed string, the string is assumed to denote a UTC. This value cannot be used with <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" /> or <see cref="F:System.Globalization.DateTimeStyles.RoundtripKind" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoCurrentDateDefault">

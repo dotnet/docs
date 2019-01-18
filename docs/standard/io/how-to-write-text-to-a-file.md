@@ -30,14 +30,14 @@ The following classes and methods are typically used to write text to a file:
   
 ## Example: Synchronously write text with StreamWriter
 
-The following examples shows how to synchronously write text to a new file using the <xref:System.IO.StreamWriter> class, one line at a time. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  
+The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously write text to a new file one line at a time. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  
 
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/write.cs)] 
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/write.vb)]  
 
 ## Example: Synchronously append text with StreamWriter
 
-The following example shows how to synchronously append text to the text file created in the first example, using the <xref:System.IO.StreamWriter> class.   
+The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously append text to the text file created in the first example.   
 
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/append.cs)] 
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/append.vb)]  

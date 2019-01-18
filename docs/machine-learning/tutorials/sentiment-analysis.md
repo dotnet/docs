@@ -433,4 +433,4 @@ In this tutorial, you learned how to:
 
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]
-> [Taxi Fare Predictor](taxi-fare.md)
+> [Issue Classification](github-issue-classification.md)

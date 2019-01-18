@@ -1,20 +1,18 @@
-# Pipelines tutorial
+---
+title: "Pipelines"
+ms.date: "01/18/2019"
+ms.technology: dotnet-standard
+helpviewer_keywords: 
+  - "Pipe"
+  - "IDuplexPipe"
+  - "DuplexPipe"
+  - "Duplex Connection"
+author: "KPixel"
+#ms.author: "TODO"
+---
+# Pipelines
 
-# Table of contents
-
-- Who would be interested in this tutorial
-- Quick introduction to the primitives Span and Memory
-- Understanding System.IO.Pipelines
-  - Pipe
-  - Simple Pipe sample
-  - The `Receive()` loop
-  - Pipes in ASP.NET Core 2.1
-  - Introducing IDuplexPipe
-  - Creating a pair of DuplexPipes
-  - Duplex Connection
-- Implementing Microsoft.AspNetCore.Connections
-
-# Who would be interested in this tutorial
+## Who would be interested in this tutorial
 
 .NET Core has been improving a lot in high-performance applications. One of the key scenarios has been to make it as fast and efficient as possible to run a website, and more generally network-based applications.
 
@@ -24,7 +22,7 @@ Kestrel and SignalR are two libraries built on top of this new API.
 If you are just planning to use these libraries, you do not need to read this article. However, if you want to understand how they work internally, or write your own low-level library, this article is for you.
 We will introduces three layers: System primitives (`Span`, `Memory`), Pipelines (`Pipe`, `DuplexPipe`), Connections (`ConnectionContext`, `ConnectionHandler`).
 
-# Quick introduction to the primitives Span and Memory
+## Quick introduction to the primitives Span and Memory
 
 The general idea behind `Span` and `Memory` is to create a structure as fast as an array, but a lot more versatile.
 What matters most about them, in this context, is that they allow us to write fast and efficient code where we allocate as little memory as possible and avoid copying data unnecessarily.
@@ -48,9 +46,9 @@ For more technical details, please read:
 - Upcoming Span doc: https://github.com/dotnet/docs/issues/4400
 - Upcoming Memory doc: https://github.com/dotnet/docs/issues/4823
 
-# Understanding System.IO.Pipelines
+## Understanding System.IO.Pipelines
 
-We can use `Span` and `Memory` to implement various message-passing patterns.
+We can use <xref:System.Span%601> and <xref:System.Memory%601> to implement various message-passing patterns.
 A simple example is a `Pipe`.
 
 For more technical details, please read:
@@ -60,16 +58,16 @@ For more technical details, please read:
 
 Note: Do not confuse this API with the [TPL version also called Pipelines](https://msdn.microsoft.com/en-us/library/ff963548.aspx). 
 
-## Pipe
+### Pipe
 
 ![Pipe](media/pipelines/pipe.png)
 
-A `Pipe` is a class that [a Producer can use to send data to a Consumer](https://en.wikipedia.org/wiki/Producer–consumer_problem) (one-way).
+A <xref:System.IO.Pipelines.Pipe%601> is a class that [a Producer can use to send data to a Consumer](https://en.wikipedia.org/wiki/Producer–consumer_problem) (one-way).
 Conceptually, it looks a lot like a [Stream](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream).
 
 Although creating a new Pipe is simple, "closing" it properly is not. You must call `Complete()` on its `Writer` and `Reader`. This will gracefully end the `Receive()` and `Send()` loops (if you have them).
 
-## Simple Pipe sample
+### Simple Pipe sample
 
 ```C#
 var pipe = new Pipe();
@@ -83,7 +81,7 @@ var result = await pipe.Reader.ReadAsync(); // == { 0, 1, 2, 3, 4, 5, 6, 7 }
 Console.Out.WriteLine($"{result.Buffer.Length}"); // 8
 ```
 
-## The `Receive()` loop
+### The `Receive()` loop
 
 Receiving data from a Pipe requires a specific loop that should always be respected.
 
@@ -129,7 +127,7 @@ Reading from the Pipe returns a buffer that contains the data. This buffer can a
 
 Note that this loop can be more complex if you need to buffer the data.
 
-## Pipes in ASP.NET Core 2.1
+### Pipes in ASP.NET Core 2.1+
 
 If the Producer acquires the data that it sends through a network connection, it could do (pseudo-code): `var data = await network.ReceiveAsync(); await pipe.Writer.WriteAsync(data);`
 
@@ -138,7 +136,7 @@ Here, the network connection writes its data straight into the pipe.
 
 In ASP.NET Core, such a Producer can be called a Transport (Refer to the section "Duplex Connection").
 
-## Introducing IDuplexPipe
+### Introducing IDuplexPipe
 
 ![DuplexPipe](media/pipelines/duplexpipe.png)
 
@@ -149,13 +147,13 @@ A `DuplexPipe` is an endpoint for a party to be a Producer and a Consumer at the
 
 A simple example where you would need DuplexPipes is for a [Request/Response pattern](https://en.wikipedia.org/wiki/Request–response).
 
-## Creating a pair of DuplexPipes
+### Creating a pair of DuplexPipes
 
 ![Pair of DuplexPipes](media/pipelines/duplexpipe-pair.png)
 
 A pair is required so each party gets a complementary `DuplexPipe` that represents half of each of the two Pipes.
 
-You typically won't need to implement the `IDuplexPipe` interface yourself. Instead, you can copy the default implementation provided by [Kestrel](https://github.com/aspnet/KestrelHttpServer/blob/dev/src/Kestrel.Core/Internal/DuplexPipe.cs) or by [SignalR](https://github.com/aspnet/SignalR/blob/dev/src/Common/DuplexPipe.cs) (they are identical).
+You typically won't need to implement the <xref:System.IO.Pipelines.IDuplexPipe%601> interface yourself. Instead, you can copy the default implementation provided by [Kestrel](https://github.com/aspnet/AspNetCore/blob/master/src/Servers/Kestrel/Core/src/Internal/DuplexPipe.cs) or by [SignalR](https://github.com/aspnet/AspNetCore/blob/master/src/SignalR/common/Shared/DuplexPipe.cs) (they are identical).
 
 ```C#
 var pair = DuplexPipe.CreateConnectionPair(PipeOptions.Default, PipeOptions.Default);
@@ -171,7 +169,7 @@ Console.Out.WriteLine($"{result.Buffer.Length}"); // 8
 
 This code is functionally identical to the one in the section "Simple Pipe sample"; however, it illustrates the names changes that occur with DuplexPipe.
 
-## Duplex Connection
+### Duplex Connection
 
 When using DuplexPipes to implement a network connection, the convention is to call the parties: Transport and Application.
 
@@ -189,7 +187,7 @@ Node A is connected to Node B through their Transports.
 Most of the time, Node A will be a computer or smartphone, and Node B will be a Server.
 For example: In Kestrel (and other HTTP servers), Node A is the user's browser, Node B is the Kestrel server, and they are connected through a TCP connection. In SignalR, they are instead connected through WebSockets.
 
-# Implementing Microsoft.AspNetCore.Connections
+## Pipelines usage in Microsoft.AspNetCore.Connections
 
 TODO
 

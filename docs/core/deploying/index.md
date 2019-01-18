@@ -88,12 +88,7 @@ There are also a few disadvantages:
 
 ## Step-by-step examples
 
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). Each article includes examples of the following deployments:
-
-- Framework-dependent deployment
-- Framework-dependent deployment with third-party dependencies
-- Self-contained deployment
-- Self-contained deployment with third-party dependencies
+For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
 
 ## See also
 

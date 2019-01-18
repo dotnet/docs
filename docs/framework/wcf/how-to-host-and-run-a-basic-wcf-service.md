@@ -61,7 +61,7 @@ A complete listing of the code for this task is provided in the code example fol
 
 ## Host the service
 
-Open the Program.cs (or Module.vb) file in the GettingStartedHost project and replace its code with the following code:
+Open the Program.cs (or Module1.vb) file in the GettingStartedHost project and replace its code with the following code:
 
 ```csharp
 using System;
@@ -114,7 +114,7 @@ namespace GettingStartedHost
 ```vb
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
-Imports GettingStartedLibVB.GettingStartedLib
+Imports GettingStartedLib.GettingStartedLib
 
 Module Service
 
@@ -158,6 +158,12 @@ Module Service
 End Module
 ```
 
+Edit App.config in GettingStartedLib to reflect the changes you made to Program.cs (or Module1.vb):
+- Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
+- Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
+- Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`.
+
+
 The steps in the code example are described as follows:
 
 - **Step 1**: Create an instance of the `Uri` class to hold the base address of the service. A URL that contains a base address has an optional URI that identifies a service. The base address is formatted as follows: `<transport>://<machine-name or domain><:optional port #>/<optional URI segment>`. The base address for the calculator service uses the HTTP transport, localhost, port 8000, and the URI segment, GettingStarted.
@@ -173,28 +179,27 @@ The steps in the code example are described as follows:
 
 - **Step 5**: Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The code waits for the user to press **Enter**. If you don't press **Enter**, the app closes immediately and the service shuts down. Also, the code uses a try/catch block. After the <xref:System.ServiceModel.ServiceHost> is instantiated, the rest of the code is placed in a try/catch block. For more info about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
 
-> [!IMPORTANT]
-> Edit App.config in GettingStartedLib to reflect the changes you made in the code example:
-> 1. Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
-> 2. Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
-> 3. Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`.
 
 ## Verify the service is working
 
-1. Run the GettingStartedHost console application from inside Visual Studio.
+1. Build the solution, and then run the GettingStartedHost console application from inside Visual Studio.
 
-   Run the service with administrator privileges. Because you opened Visual Studio with administrator privileges, you should also run GettingStartedHost with administrator privileges. As an alternative, you can open a new command prompt by using **Run as administrator** and run GettingStartedHost.exe within it.
+   Run the service with administrator privileges. Because you opened Visual Studio with administrator privileges, you should also run GettingStartedHost with administrator privileges. As an alternative, you can open a new command prompt by using **Run as administrator** and run service.exe within it.
 
 2. Open a web browser and browse to the service's debug page at `http://localhost:8000/GettingStarted/CalculatorService`.
+
+> [!NOTE]
+> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more info about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run service.exe with administrator privileges.
+
 
 ## Example
 
 The following example includes the service contract and implementation from previous steps in the tutorial and hosts the service in a console application.
 
-To compile this code with a command-line compiler, compile IService1.cs and Service1.cs (or IService1.vb and Service1.vb) into a class library that references `System.ServiceModel.dll`. Compile Program.cs (or Module.vb) as a console application.
+To compile this code with a command-line compiler, compile IService1.cs and Service1.cs (or IService1.vb and Service1.vb) into a class library that references `System.ServiceModel.dll`. Compile Program.cs (or Module1.vb) as a console application.
 
-IService1.cs
 ```csharp
+// IService1.cs
 using System;
 using System.ServiceModel;
 
@@ -215,8 +220,8 @@ namespace GettingStartedLib
 }
 ```
 
-Service1.cs
 ```csharp
+// Service1.cs
 using System;
 using System.ServiceModel;
 
@@ -260,8 +265,8 @@ namespace GettingStartedLib
 }
 ```
 
-Program.cs
 ```csharp
+// Program.cs
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Description;
@@ -309,8 +314,8 @@ namespace GettingStartedHost
 }
 ```
 
-IService1.vb
 ```vb
+' IService1.vb
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -330,8 +335,8 @@ Namespace GettingStartedLib
 End Namespace
 ```
 
-Service1.vb
 ```vb
+' Service1.vb
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -374,11 +379,11 @@ Namespace GettingStartedLib
 End Namespace
 ```
 
-Module.vb
 ```vb
+' Module1.vb
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
-Imports GettingStartedLibVB.GettingStartedLib
+Imports GettingStartedLib.GettingStartedLib
 
 Module Service
 
@@ -421,9 +426,6 @@ Module Service
 
 End Module
 ```
-
-> [!NOTE]
-> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more info about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run service.exe with administrator privileges.
 
 ## Next steps
 

@@ -1,19 +1,19 @@
 ---
 title: "Tutorial: Configure a Basic Windows Communication Foundation client"
-ms.date: 01/11/2019
+ms.date: 01/18/2019
 helpviewer_keywords:
   - "WCF clients [WCF], configuring"
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
 ---
 # Tutorial: Configure a basic Windows Communication Foundation client
 
-This tutorial describes the fifth of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Getting started tutorial](getting-started-tutorial.md).
+This tutorial describes the fifth of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-This article discusses the client configuration file that you generated with the **Add Service Reference** function in Visual Studio or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). When you configure the client, you specify the endpoint that the client uses to access the service. An endpoint has an address, a binding, and a contract. Specify each of these items when you configure the client.
+This article discusses the client configuration file that you generated with the **Add Service Reference** function in Visual Studio or the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). When you configure the client, you specify the endpoint that the client uses to access the service. An endpoint has an address, a binding, and a contract. Specify each of these items when you configure the client.
 
 ## Configure a Windows Communication Foundation client
 
-Open the generated configuration file (App.config) from the GettingStartedClient project. The following example shows the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.
+Open the generated configuration file (App.config) in the GettingStartedClient project. The following example shows the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.
 
 ```xml
     <?xml version="1.0" encoding="utf-8" ?>

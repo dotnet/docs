@@ -61,7 +61,7 @@ A complete listing of the code for this task is provided in the code example fol
 
 ## Host the service
 
-Open the Program.cs (or Module.vb) file and replace its code with the following code:
+Open the Program.cs (or Module.vb) file in the GettingStartedHost project and replace its code with the following code:
 
 ```csharp
 using System;

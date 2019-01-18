@@ -32,7 +32,7 @@ When you create a WCF service, your first task is to define a service contract. 
       > [!NOTE]
       > If you don't see the **WCF** project template category, you may need to install the **Windows Communication Foundation** component of Visual Studio. In the **New Project** dialog box, select the **Open Visual Studio Installer** link on the left side. Select the **Individual components** tab, and then find and select **Windows Communication Foundation** under the **Development activities** category. Choose **Modify** to begin installing the component.
 
-   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**. For **Solution**, verify you've selected **Create new solution**.
+   3. In the bottom section of the window, enter *GettingStartedLib* for the **Name** and *GettingStarted* for the **Solution name**. 
 
    4. Select **OK**.
 
@@ -41,7 +41,7 @@ When you create a WCF service, your first task is to define a service contract. 
    - The Service1 file contains the default implementation of the service contract. 
    - The App.config file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more info about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
-3. Open the IService1.cs (or IService1.vb) file. Delete the code within the `GettingStartedLib` namespace declaration and add the `ICalculator` interface as follows:
+3. Open the IService1.cs (or IService1.vb) file and replace its code with the following code:
 
     ```csharp
     using System;

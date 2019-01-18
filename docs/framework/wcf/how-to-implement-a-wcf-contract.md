@@ -16,7 +16,7 @@ The next step in creating a WCF application is to implement the WCF service inte
 
 ## Implement a WCF service contract
 
-Open the Service1.cs (or Service1.vb) file and add the following code:
+Open the Service1.cs (or Service1.vb) file and replace its code with the following code:
 
 ```csharp
 using System;
@@ -111,8 +111,8 @@ Each method implements the calculator operation and writes text to the console t
 
 The following code example shows both the interface that defines the contract and the implementation of the interface.
 
-IService1.cs
 ```csharp
+// IService1.cs
 using System;
 using System.ServiceModel;
 
@@ -133,8 +133,8 @@ namespace GettingStartedLib
 }
 ```
 
-Service1.cs
 ```csharp
+// Service1.cs
 using System;
 using System.ServiceModel;
 
@@ -178,8 +178,8 @@ namespace GettingStartedLib
 }
 ```
 
-IService1.vb
 ```vb
+' IService1.vb
 Imports System.ServiceModel
 
 Namespace GettingStartedLib
@@ -199,8 +199,8 @@ Namespace GettingStartedLib
 End Namespace
 ```
 
-Service1.vb
 ```vb
+'Service1.vb
 Imports System.ServiceModel
 
 Namespace GettingStartedLib

@@ -20,6 +20,9 @@ ms.author: "andrewau"
 
 Defines an IL to address mapping.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
+
 ## Syntax
 
 ```

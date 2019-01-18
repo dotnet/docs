@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Requests to populate the buffer given with the module's data.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
 ## Syntax
 ```
 HRESULT Request([in] ULONG32 reqCode,

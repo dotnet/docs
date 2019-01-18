@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Defines the container for a module address request.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
 ## Syntax
 
 ```

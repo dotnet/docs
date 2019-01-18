@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Releases the resources used by internal iterators used during instance enumeration.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
 ## Syntax
 
 ```

@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides helper methods to access data from `SOS`.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
 ## Methods
 
 | Method                                                                                                               | Description                                                                                                                   |

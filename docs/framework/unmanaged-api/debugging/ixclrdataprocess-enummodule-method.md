@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Enumerates the modules of this process.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
 ## Syntax
 
 ```

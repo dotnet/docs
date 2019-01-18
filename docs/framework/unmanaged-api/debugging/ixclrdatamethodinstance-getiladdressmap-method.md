@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Gets the IL to address mapping information.
 
+[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
+
 ## Syntax
 
 ```

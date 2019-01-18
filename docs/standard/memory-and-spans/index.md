@@ -5,7 +5,7 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "Memory<T>"
   - "Span<T>"
-  - buffers"
+  - "buffers"
   - "pipeline processing"
 author: "rpetrusha"
 ms.author: "ronpet"

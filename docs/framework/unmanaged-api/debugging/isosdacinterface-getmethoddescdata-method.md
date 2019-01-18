@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # ISOSDacInterface::GetMethodDescData Method
 
-Get the data associated with the MethodDesc.
+Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference).
 
 ## Syntax
 
@@ -51,7 +51,7 @@ HRESULT GetMethodDescData(
 [out] The data associated with the reverted rejit versions as returned from the internal APIs. The structure needs at least 24 bytes.
 
 `pcNeededRevertedRejitData`
-[out] The number of bytes required to store the data associated with the reverted rejit versions.
+[out] The number of bytes required to store the data associated with the reverted ReJit versions.
 
 ## Remarks
 

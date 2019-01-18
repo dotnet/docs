@@ -17,7 +17,8 @@ author: "cshung"
 ms.author: "andrewau"
 ---
 # IXCLRDataProcess::GetAppDomainByUniqueId Method
-Get the AppDomain by its unique id.
+
+Gets an `AppDomain` in a process based on its unique identifier.
 
 ## Syntax
 ```

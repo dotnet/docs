@@ -32,10 +32,10 @@ typedef struct
 
 ## Members
 
-|Member      |Description                     |
-|------------|--------------------------------|
-|startAddress|The start address of the range. |
-|endAddress  |The end address of the range.   |
+| Member         | Description                     |
+| -------------- | ------------------------------- |
+| `startAddress` | The start address of the range. |
+| `endAddress`   | The end address of the range.   |
 
 ## Remarks
 

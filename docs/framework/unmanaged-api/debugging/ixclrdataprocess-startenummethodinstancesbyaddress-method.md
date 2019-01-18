@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataProcess::StartEnumMethodInstancesByAddress Method
 
-Starts enumerating the method instances of app domain by address.
+Provides a handle to enumerate the method instances of `AppDomain` starting at a given address.
 
 ## Syntax
 
@@ -54,6 +54,6 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See Also
 
-- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
+- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)

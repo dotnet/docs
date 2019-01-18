@@ -17,7 +17,8 @@ author: "cshung"
 ms.author: "andrewau"
 ---
 # IXCLRDataProcess::EndEnumModules Method
-End enumerate modules of this process.
+
+Releases the resources used by internal iterators used during module enumeration.
 
 ## Syntax
 ```
@@ -35,11 +36,13 @@ HRESULT EndEnumModules(
 The provided method is part of the `IXCLRDataProcess` interface and corresponds to the 26th slot of the virtual method table.
 
 ## Requirements
+
 **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
 **Header:** None
 **Library:** None
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See Also
+
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)

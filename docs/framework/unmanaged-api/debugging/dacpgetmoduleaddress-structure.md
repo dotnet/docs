@@ -31,15 +31,15 @@ struct DacpGetModuleAddress
 
 ## Members
 
-|Member      |Description               |
-|------------|--------------------------|
-|ModulePtr   |The pointer to the module |
+| Member      | Description                |
+| ----------- | -------------------------- |
+| `ModulePtr` | The pointer to the module. |
 
 ## Methods
 
-|Method  |Description          |
-|--------|---------------------|
-|Request |Perform the request. |
+| Method                                                                                               | Description                                                                    |
+| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [Request](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-request-method.md) | Performs a request to populate the structure from the given runtime structure. |
 
 ## Remarks
 

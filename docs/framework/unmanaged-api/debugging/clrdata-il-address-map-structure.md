@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # CLRDATA_IL_ADDRESS_MAP Structure
 
-Defines an IL to address mapping
+Defines an IL to address mapping.
 
 ## Syntax
 
@@ -34,12 +34,12 @@ typedef struct
 
 ## Members
 
-|Member      |Description                                            |
-|------------|-------------------------------------------------------|
-|ilOffset    |IL offset for the contained address range              |
-|startAddress|The start address of the range.                        |
-|endAddress  |The end address of the range.                          |
-|type        |The type of the data. This value is currently not used |
+| Member         | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `ilOffset`     | IL offset for the contained address range              |
+| `startAddress` | The start address of the range.                        |
+| `endAddress`   | The end address of the range.                          |
+| `type`         | The type of the data. This value is currently not used |
 
 ## Remarks
 
@@ -54,6 +54,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## See Also
 
-- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
+- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

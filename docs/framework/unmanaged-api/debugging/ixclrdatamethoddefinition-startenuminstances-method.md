@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition::StartEnumInstances Method
 
-Start enumerate instances of this definition.
+Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`.
 
 ## Syntax
 
@@ -50,6 +50,6 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## See Also
 
-- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
+- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)

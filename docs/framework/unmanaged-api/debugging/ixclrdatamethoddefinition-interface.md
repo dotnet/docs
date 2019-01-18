@@ -24,11 +24,11 @@ Provides methods for querying information about a method definition.
 
 The following methods are some of the methods available in the interface.
 
-|Method            |Description                                  |
-|------------------|---------------------------------------------|
-|StartEnumInstances|Start enumerate instances of this definition.|
-|EnumInstance      |Enumerate instances of this definition.      |
-|EndEnumInstances  |End enumerate instances of this definition.  |
+| Method                                                                                                                          | Description                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [StartEnumInstances](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-startenuminstances-method.md) | Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`. |
+| [EnumInstance](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-enuminstance-method.md)             | Enumerates the instances of this method definition.                                         |
+| [EndEnumInstances](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-endenuminstances-method.md)     | Releases the resources used by internal iterators used during instance enumeration.         |
 
 ## Remarks
 

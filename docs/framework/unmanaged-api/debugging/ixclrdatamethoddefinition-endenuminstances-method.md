@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition::EndEnumInstances Method
 
-End enumerate instances of this definition.
+Releases the resources used by internal iterators used during instance enumeration.
 
 ## Syntax
 

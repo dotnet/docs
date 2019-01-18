@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataModule::GetVersionId Method
 
-Get the module's version ID.
+Gets the module's version identifier.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ HRESULT GetVersionId(
 ### Parameters
 
 `vid`
-[out] The module's version ID.
+[out] The module's version identifier.
 
 ## Remarks
 

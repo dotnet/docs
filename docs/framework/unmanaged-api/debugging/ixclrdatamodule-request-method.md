@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataModule::Request Method
 
-Request to populate the buffer given with the module's data.
+Requests to populate the buffer given with the module's data.
 
 ## Syntax
 ```

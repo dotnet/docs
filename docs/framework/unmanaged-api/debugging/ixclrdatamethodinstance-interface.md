@@ -22,9 +22,9 @@ Provides methods for querying information about a method instance.
 
 ## Methods
 
-|Method         |Description                                  |
-|---------------|---------------------------------------------|
-|GetILAddressMap|Get the IL to address mapping information.   |
+| Method                                                                                                                  | Description                                 |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [GetILAddressMap](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-getiladdressmap-method.md) | Gets the IL to address mapping information. |
 
 ## Remarks
 

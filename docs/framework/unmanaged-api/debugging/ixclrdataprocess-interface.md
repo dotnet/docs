@@ -22,15 +22,15 @@ Provides methods for querying information about a process.
 
 ## Methods
 
-|Method                           |Description                                                         |
-|---------------------------------|--------------------------------------------------------------------|
-|GetAppDomainByUniqueId           |Get the AppDomain by its unique id.                                 |
-|StartEnumModules                 |Start enumerate modules of this process.                            |
-|EnumModule                       |Enumerate modules of this process.                                  |
-|EndEnumModules                   |End enumerate modules of this process.                              |
-|StartEnumMethodInstancesByAddress|Start enumerate method instances of this process by an address.     |
-|EnumMethodInstanceByAddress      |Enumerate method instances of this process by an address.           |
-|EndEnumMethodInstancesByAddress  |End enumerate method instances of this process by an address.       |
+| Method                                                                                                                                               | Description                                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [GetAppDomainByUniqueId](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-getappdomainbyuniqueid-method.md)                       | Gets an `AppDomain` in a process by its unique id.                                              |
+| [StartEnumModules](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-startenummodules-method.md)                                   | Provides a handle to enumerate the modules of a process.                                        |
+| [EnumModule](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-enummodule-method.md)                                               | Enumerates the modules of this process.                                                         |
+| [EndEnumModules](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-endenummodules-method.md)                                       | Releases the resources used by internal iterators used during module enumeration.               |
+| [StartEnumMethodInstancesByAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-startenummethodinstancesbyaddress-method.md) | Provides a handle to enumerate the method instances of `AppDomain` starting at a given address. |
+| [EnumMethodInstanceByAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-enummethodinstancebyaddress-method.md)             | Enumerates the method instances of this process starting at an address offset.                  |
+| [EndEnumMethodInstancesByAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-endenummethodinstancesbyaddress-method.md)     | Releases the resources used by internal iterators used during instance enumeration.             |
 
 ## Remarks
 

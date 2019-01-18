@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataMethodInstance::GetILAddressMap Method
 
-Get the IL to address mapping information.
+Gets the IL to address mapping information.
 
 ## Syntax
 

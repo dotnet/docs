@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataModule::GetMethodDefinitionByToken Method
 
-Get a method definition by metadata token.
+Gets the method definition corresponding to a given metadata token.
 
 ## Syntax
 

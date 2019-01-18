@@ -22,11 +22,11 @@ Provides methods for querying information about a loaded module.
 
 ## Methods
 
-|Method                    |Description                               |
-|--------------------------|------------------------------------------|
-|GetMethodDefinitionByToken|Get a method definition by metadata token.|
-|Request                   |Request data for the given data module    |
-|GetVersionId              |Get the module's version ID.              |
+| Method                                                                                                                                | Description                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [GetMethodDefinitionByToken](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-getmethoddefinitionbytoken-method.md) | Gets the method definition corresponding to a given metadata token. |
+| [Request](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-request-method.md)                                       | Requests to populate the buffer given with the module's data.       |
+| [GetVersionId](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-getversionid-method.md)                             | Gets the module's version ID.                                       |
 
 ## Remarks
 

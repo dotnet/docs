@@ -28,16 +28,16 @@ HRESULT Request(
 );
 ```
 
+### Parameters
+
+`pDataModule`
+[in] A pointer to the seed data module.
+
 ## Remarks
 
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, the easiest way is to mimic the implementation:
 
 - Return the value obtained from calling the `Request` method on the `IXCLRDataModule*` parameter with the following parameters: `((uint32) 0xf0000000, 0, 0, (uint32) sizeof(*this), (uint8*) this)`
-
-### Parameters
-
-`pDataModule`
-[in] The data module.
 
 
 ## Requirements

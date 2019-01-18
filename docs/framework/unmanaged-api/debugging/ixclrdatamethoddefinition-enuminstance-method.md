@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # IXCLRDataMethodDefinition::EnumInstance Method
 
-Enumerate instances of this definition.
+Enumerates the instances of this method definition.
 
 ## Syntax
 
@@ -50,7 +50,7 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## See Also
 
-- [CLRDataSourceType, CLRDATA_ENUM Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
+- [CLRDataSourceTypeEnumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)
 - [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)

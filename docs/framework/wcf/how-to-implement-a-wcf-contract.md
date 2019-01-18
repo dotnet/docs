@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Implement a Windows Communication Foundation service contract"
-ms.date: 01/15/2019
+ms.date: 01/17/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -109,8 +109,9 @@ Each method implements the calculator operation and writes text to the console t
 
 ## Example
 
-The following code shows both the interface that defines the contract and the implementation of the interface.
+The following code example shows both the interface that defines the contract and the implementation of the interface.
 
+IService1.cs
 ```csharp
 using System;
 using System.ServiceModel;
@@ -132,6 +133,7 @@ namespace GettingStartedLib
 }
 ```
 
+Service1.cs
 ```csharp
 using System;
 using System.ServiceModel;
@@ -176,6 +178,7 @@ namespace GettingStartedLib
 }
 ```
 
+IService1.vb
 ```vb
 Imports System.ServiceModel
 
@@ -196,6 +199,7 @@ Namespace GettingStartedLib
 End Namespace
 ```
 
+Service1.vb
 ```vb
 Imports System.ServiceModel
 

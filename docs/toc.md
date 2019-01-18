@@ -1192,7 +1192,7 @@
 ### [Load data with many columns](machine-learning/how-to-guides/load-data-from-mult-column-csv-ml-net.md)
 ### [Load data from multiple files](machine-learning/how-to-guides/load-data-from-multiple-files-ml-net.md)
 ### [Load data from text file](machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD)
-### [One prediction at a time with PredictionFunction](machine-learning/how-to-guides/single-predict-model-ml-net.md)
+### [One prediction at a time with PredictionEngine](machine-learning/how-to-guides/single-predict-model-ml-net.md)
 ### [Operationalize a trained model](machine-learning/how-to-guides/consuming-model-ml-net.md)
 ### [Preprocess data with normalizers](machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md)
 ### [Probabilistic programming with Infer.NET](machine-learning/how-to-guides/matchup-app-infer-net.md)

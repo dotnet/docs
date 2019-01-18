@@ -4,7 +4,7 @@ description: Learn about recoommended practices for architecting, designing and 
 author: BillWagner
 ms.author: wiwagn
 ms.date: 10/26/2017
-ms.technology: dotnet
+ms.technology: dotnet-ebooks
 ---
 # .NET Architecture Guidance
 

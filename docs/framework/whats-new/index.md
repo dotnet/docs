@@ -236,9 +236,9 @@ Public GetOrAdd(Of TArg)(key As TKey, valueFactory As Func(Of TKey, TArg, TValue
 
 [Dependency injection (DI)](/aspnet/core/fundamentals/dependency-injection#overview-of-dependency-injection) decouples objects and their dependencies so that an object's code no longer needs to be changed just because a dependency has changed. When developing ASP.NET applications that target the .NET Framework 4.7.2, you can:
 
-- Use setter-based, interface-based, and constructor-based injection in [handlers and modules](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [Page instances](xref:System.Web.UI.Page), and [user controls](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx) of ASP.NET web application projects.
+- Use setter-based, interface-based, and constructor-based injection in [handlers and modules](https://docs.microsoft.com/previous-versions/aspnet/bb398986(v=vs.100)), [Page instances](xref:System.Web.UI.Page), and [user controls](https://docs.microsoft.com/previous-versions/aspnet/y6wb1a0e(v=vs.100)) of ASP.NET web application projects.
 
-- Use setter-based and interface-based injection in [handlers and modules](https://msdn.microsoft.com/en-us/library/bb398986.aspx), [Page instances](xref:System.Web.UI.Page), and [user controls](https://msdn.microsoft.com/en-us/library/y6wb1a0e.aspx) of ASP.NET web site projects.
+- Use setter-based and interface-based injection in [handlers and modules](https://docs.microsoft.com/previous-versions/aspnet/bb398986(v=vs.100)), [Page instances](xref:System.Web.UI.Page), and [user controls](https://docs.microsoft.com/previous-versions/aspnet/y6wb1a0e(v=vs.100)) of ASP.NET web site projects.
 
 - Plug in different dependency injection frameworks.
 

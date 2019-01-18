@@ -18,12 +18,12 @@ ms.author: "andrewau"
 ---
 # ISOSDacInterface Interface
 
-Provides methods for SOS to access information.
+Provides helper methods to access data from `SOS`.
 
 ## Methods
 
-| Method                                                                                                               | Description                                  |
-| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| Method                                                                                                               | Description                                                                                                                   |
+| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | [GetMethodDescData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescdata-method.md) | Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference). |
 
 ## Remarks

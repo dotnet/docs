@@ -133,7 +133,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [WriteableMetadataUpdateMode Enumeration](../../../../docs/framework/unmanaged-api/debugging/writeablemetadataupdatemode-enumeration.md)  
  Provides values that specify whether in-memory updates to metadata are visible to a debugger. 
 
- [CLR_DATA Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdata-enum-enumeration.md)
+ [ClrDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
  Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
 ## Related Sections  

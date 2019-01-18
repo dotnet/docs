@@ -66,7 +66,7 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
     Private Sub Form1_Load(ByVal sender As System.Object,   
                            ByVal e As System.EventArgs  
                           ) Handles MyBase.Load  
-      Dim db = New northwindDataContext()  
+      db = New northwindDataContext()  
   
       RefreshData()  
     End Sub  

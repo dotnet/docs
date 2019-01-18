@@ -26,3 +26,12 @@
                                  Order By Average
 
     DataGridView1.DataSource = averageCustomersByCity
+
+    'Another way to grab the count and sum
+
+    londonCustomerCount = (From cust in db.Customers
+                            Where cust.City = "London").Count()
+
+    venezuelaTotalOrders = (From cust in db.Customers
+                                Where cust.Country = "Venezuela"
+                                Select cust.Orders).Sum()

@@ -107,7 +107,7 @@ When blittable types are passed by reference they are simply pinned by the marsh
 
 `char` is blittable in a one dimensional array **or** if it is part of a type that contains it is explicitly marked with `[StructLayout]` with `CharSet = CharSet.Unicode`.
 
-```C#
+```csharp
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
 public struct UnicodeCharStruct
 {

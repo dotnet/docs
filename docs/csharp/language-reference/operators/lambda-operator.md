@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 The `=>` operator can be used in two ways in C#:
 
-- As the [lambda operator](#lamba-operator) in a [lambda expression](../../lambda-expressions.md), it separates the input variables from the lambda body.
+- As the [lambda operator](#lambda-operator) in a [lambda expression](../../lambda-expressions.md), it separates the input variables from the lambda body.
  
 - In an [expression body definition](#expression-body-definition), it separates a member name from the member implementation. 
 

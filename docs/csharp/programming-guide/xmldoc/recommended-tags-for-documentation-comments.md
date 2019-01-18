@@ -32,7 +32,7 @@ The C# compiler processes documentation comments in your code and formats them a
   
  If you want angle brackets to appear in the text of a documentation comment, use `<` and `>`, as shown in the following example.  
   
-```xml  
+```csharp  
 /// <summary cref="C < T >">  
 /// </summary>  
 ```  

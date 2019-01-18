@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Defines an address range.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

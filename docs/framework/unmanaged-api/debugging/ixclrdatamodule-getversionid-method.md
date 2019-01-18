@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Gets the module's version identifier.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

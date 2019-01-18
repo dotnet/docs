@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Enumerates the instances of this method definition.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

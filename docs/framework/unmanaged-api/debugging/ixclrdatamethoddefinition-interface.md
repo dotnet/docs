@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Provides methods for querying information about a method definition.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Methods
 
 The following methods are some of the methods available in the interface.

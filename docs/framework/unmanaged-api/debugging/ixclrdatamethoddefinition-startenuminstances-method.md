@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Provides a handle for the enumeration of method instances for a given `IXCLRDataAppDomain`.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

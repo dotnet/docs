@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Provides a handle to enumerate the modules of a process.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

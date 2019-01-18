@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Gets the method definition corresponding to a given metadata token.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

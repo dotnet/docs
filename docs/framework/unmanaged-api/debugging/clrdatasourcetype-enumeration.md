@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

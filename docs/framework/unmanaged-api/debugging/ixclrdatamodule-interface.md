@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Provides methods for querying information about a loaded module.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Methods
 
 | Method                                                                                                                                | Description                                                         |

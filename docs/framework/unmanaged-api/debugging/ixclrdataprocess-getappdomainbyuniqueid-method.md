@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Gets an `AppDomain` in a process based on its unique identifier.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 ```
 HRESULT GetAppDomainByUniqueID(

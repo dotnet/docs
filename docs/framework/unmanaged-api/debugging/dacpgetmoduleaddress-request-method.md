@@ -20,8 +20,6 @@ ms.author: "andrewau"
 
 Performs a request to populate the structure from the given runtime structure.
 
-[!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-
 ## Syntax
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: Customizing parameter marshalling
+title: Customizing parameter marshalling - .NET
 description: Learn how to customize how .NET marshals your parameters to a native representation.
 author: jkoritzinsky
 ms.author: jekoritz
@@ -24,23 +24,23 @@ Each of these formats passes a null-terminated string to native code. They diffe
 | LPUTF8Str | UTF-8 | 
 | LPWStr | UTF-16 |
 
-The <xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr?displayProperty=nameWithType> format is slightly different. Like `LPWStr`, it marshals the string to a native C-style string encoded in UTF-16. However, the managed signature has you pass in the string by reference and the matching native signature takes the string by value. This distinction allows you to use a native API that takes a string by value and modifies it in-place without having to use a `StringBuilder`. We recommend against manually using this format since it is prone to cause confusion with the mismatching native and managed signatures.
+The <xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr?displayProperty=nameWithType> format is slightly different. Like `LPWStr`, it marshals the string to a native C-style string encoded in UTF-16. However, the managed signature has you pass in the string by reference and the matching native signature takes the string by value. This distinction allows you to use a native API that takes a string by value and modifies it in-place without having to use a `StringBuilder`. We recommend against manually using this format since it's prone to cause confusion with the mismatching native and managed signatures.
 
 ### Windows-centric string formats
 
-When interacting with COM or OLE interfaces, you'll likely find that the native functions take strings as `BSTR` arguments. You can use the <xref:System.Runtime.InteropServices.UnmanagedType.BStr?displayProperty=nameWithType> unmanaged type to marshal your string as a `BSTR`.
+When interacting with COM or OLE interfaces, you'll likely find that the native functions take strings as `BSTR` arguments. You can use the <xref:System.Runtime.InteropServices.UnmanagedType.BStr?displayProperty=nameWithType> unmanaged type to marshal a string as a `BSTR`.
 
-If you are interacting with WinRT APIs, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> format to marshal your string as an `HSTRING`.
+If you're interacting with WinRT APIs, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> format to marshal a string as an `HSTRING`.
 
 ## Customizing array parameters
 
-.NET also provides you multiple ways to marshal your array parameters. If you're calling an API that takes a C-style array, you want to use the <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> unmanaged type. If the values in the array need customized marshalling, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType> field on the `[MarshalAs]` attribute to customize marshalling.
+.NET also provides you multiple ways to marshal array parameters. If you're calling an API that takes a C-style array, use the <xref:System.Runtime.InteropServices.UnmanagedType.LPArray?displayProperty=nameWithType> unmanaged type. If the values in the array need customized marshalling, you can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.ArraySubType> field on the `[MarshalAs]` attribute for that.
 
-If you are using COM APIs, you'll likely have to marshal your array parameters as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> unmanaged type. The default type of the elements of the `SAFEARRAY` can be seen in the table on [customizing `object` fields](./customizing-struct-marshalling.md#marshalling-systemobjects). You can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
+If you're using COM APIs, you'll likely have to marshal your array parameters as `SAFEARRAY*`s. To do so, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=nameWithType> unmanaged type. The default type of the elements of the `SAFEARRAY` can be seen in the table on [customizing `object` fields](./customizing-struct-marshalling.md#marshalling-systemobjects). You can use the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType?displayProperty=nameWithType> and <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType?displayProperty=nameWithType> fields to customize the exact element type of the `SAFEARRAY`.
 
 ## Customizing boolean or decimal parameters
 
-For information on marshalling boolean or decimal parameters, see the documentation in the section on [customizing structure marshalling](./customizing-struct-marshalling.md)
+For information on marshalling boolean or decimal parameters, see [Customizing structure marshalling](customizing-struct-marshalling.md).
 
 ## Customizing object parameters (Windows-only)
 
@@ -48,17 +48,17 @@ On Windows, the .NET runtime provides a number of different ways to marshal obje
 
 ### Marshalling as specific COM interfaces
 
-If your API takes a pointer to a COM object, you can use any of the following `UnmanagedType` formats on an `object`-typed parameter to tell .NET to marshal as these specific interfaces.
+If your API takes a pointer to a COM object, you can use any of the following `UnmanagedType` formats on an `object`-typed parameter to tell .NET to marshal as these specific interfaces:
 
 - `IUnknown`
 - `IDispatch`
 - `IInspectable`
 
-Additionally, if your type is marked `[ComVisible(true)]` or you are marshalling the `object` type, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.Interface?displayProperty=nameWithType> format to marshal your object as a COM Callable Wrapper for the COM view of your type.
+Additionally, if your type is marked `[ComVisible(true)]` or you're marshalling the `object` type, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.Interface?displayProperty=nameWithType> format to marshal your object as a COM callable wrapper for the COM view of your type.
 
 ### Marshalling to a `VARIANT`
 
-If your native API takes a Win32 `VARIANT`, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> format on your `object` parameter to marshal your objects as `VARIANT`s. See the [documentation on customizing `object` fields](./customizing-struct-marshalling.md#marshalling-systemobjects) for a mapping between .NET types and `VARIANT` types.
+If your native API takes a Win32 `VARIANT`, you can use the <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=nameWithType> format on your `object` parameter to marshal your objects as `VARIANT`s. See the documentation on [customizing `object` fields](customizing-struct-marshalling.md#marshalling-systemobjects) for a mapping between .NET types and `VARIANT` types.
 
 ### Custom marshalers
 

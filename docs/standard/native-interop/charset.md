@@ -1,5 +1,5 @@
 ---
-title: Charsets and Marshalling
+title: Charsets and marshalling - .NET
 description: Learn how different values of CharSet can change how .NET marshals your data to native code.
 author: jkoritzinsky
 ms.author: jekoritz
@@ -7,11 +7,11 @@ ms.date: 11/28/2018
 ms.technology: dotnet-standard
 ---
 
-# Charsets and Marshalling
+# Charsets and marshalling
 
 As mentioned in the documentation on [Type Marshalling](./type-marshalling.md), the specifics on how `char`s, `string`s, and `System.Text.StringBuilder`s are marshalled depends on the value of the `CharSet` field on either the P/Invoke or structure. You can set the `CharSet` of a P/Invoke by setting the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field when declaring your P/Invoke. To set the `CharSet` for a structure, set the <xref:System.Runtime.InteropServices.StructLayoutAttribute.CharSet?displayProperty=nameWithType> field on your struct declaration. When these attribute fields are not set, it is up to the language compiler to determine which CharSet to use. C# uses the <xref:System.Runtime.InteropServices.CharSet.Ansi> charset by default.
 
-Below we have a mapping between each charset and how a character or string is represented when marshalled with that charset.
+The following table shows a mapping between each charset and how a character or string is represented when marshalled with that charset:
 
 | CharSet | Windows | Unix | Mono on Unix |
 |---------|---------|-------|-------|

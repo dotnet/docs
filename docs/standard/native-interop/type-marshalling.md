@@ -1,5 +1,5 @@
 ---
-title: Type marshalling
+title: Type marshalling - .NET
 description: Learn how .NET marshals your types to a native representation.
 author: jkoritzinsky
 ms.author: jekoritz
@@ -10,7 +10,7 @@ ms.date: 11/28/2018
 
 **Marshalling** is the process of transforming types when they need to cross between managed and native code.
 
-Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the right thing based on the default behavior, described on this page. However, for those situations where you need extra control, you can employ the [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
+Marshalling is needed because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem tries to do the right thing based on the default behavior, described on this article. However, for those situations where you need extra control, you can employ the [MarshalAs](xref:System.Runtime.InteropServices.MarshalAsAttribute) attribute to specify what is the expected type on the unmanaged side. For instance, if you want the string to be sent as a null-terminated ANSI string, you could do it like this:
 
 ```csharp
 [DllImport("somenativelibrary.dll")]
@@ -19,7 +19,7 @@ static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
 
 ## Default rules for marshalling common types
 
-Generally, the runtime tries to do the "Right Thing" when marshalling to require the least amount of work from you. The tables below describe how each type is marshalled by default when used in a parameter or field. We use the C99/C++11 fixed width integer and character types to ensure that the table below is correct for all platforms. You can use any native type that has the same alignment and size requirements as these types.
+Generally, the runtime tries to do the "right thing" when marshalling to require the least amount of work from you. The following tables describe how each type is marshalled by default when used in a parameter or field. The C99/C++11 fixed-width integer and character types are used to ensure that the following table is correct for all platforms. You can use any native type that has the same alignment and size requirements as these types.
 
 This first table describes the mappings for various types for whom the marshalling is the same for both P/Invoke and field marshalling.
 
@@ -46,7 +46,7 @@ This first table describes the mappings for various types for whom the marshalli
 | `System.DateTime` | Win32 `DATE` type |
 | `System.Guid` | Win32 `GUID` type |
 
-A few categories of marshalling have different defaults if you are marshalling as a parameter or structure.
+A few categories of marshalling have different defaults if you're marshalling as a parameter or structure.
 
 | .NET Type | Native Type (Parameter) | Native Type (Field) |
 |-----------|-------------------------|---------------------|
@@ -64,7 +64,7 @@ The following table includes the default marshalling rules that are Windows-only
 | `System.Collections.IEnumerable` | `IDispatch*` | Not allowed |
 | `System.DateTimeOffset` | `int64_t` representing the number of ticks since midnight on January 1, 1601 || `int64_t` representing the number of ticks since midnight on January 1, 1601 |
 
-Some types can only be marshalled as parameters and not as fields. These types are listed below
+Some types can only be marshalled as parameters and not as fields. These types are listed in the following table:
 
 | .NET Type | Native Type (Parameter Only) |
 |-----------|------------------------------|
@@ -73,11 +73,11 @@ Some types can only be marshalled as parameters and not as fields. These types a
 | `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |
 
-If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [page on parameter marshalling](./customizing-parameter-marshalling.md) will walk you through how to customize how different parameter types are marshalled.
+If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [parameter marshalling](customizing-parameter-marshalling.md) article walks you through how to customize how different parameter types are marshalled.
 
 ## Marshalling classes and structs
 
-Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, we need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, we also need to instruct the marshaler how to map fields in the class to the unmanaged struct. Here the `StructLayout` attribute becomes useful.
+Another aspect of type marshalling is how to pass in a struct to an unmanaged method. For instance, some of the unmanaged methods require a struct as a parameter. In these cases, you need to create a corresponding struct or a class in managed part of the world to use it as a parameter. However, just defining the class isn't enough, you also need to instruct the marshaler how to map fields in the class to the unmanaged struct. Here the `StructLayout` attribute becomes useful.
 
 ```csharp
 [DllImport("kernel32.dll")]
@@ -102,7 +102,7 @@ public static void Main(string[] args) {
 }
 ```
 
-The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields isn't important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
+The previous code shows a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields isn't important, only their order is important, as it needs to correspond to the unmanaged struct, shown in the following example:
 
 ```c
 typedef struct _SYSTEMTIME {
@@ -140,4 +140,4 @@ public class StatClass {
 
 The `StatClass` class represents a structure that is returned by the `stat` system call on UNIX systems. It represents information about a given file. The class above is the stat struct representation in managed code. Again, the fields in the class have to be in the same order as the native struct (you can find these by perusing man pages on your favorite UNIX implementation) and they have to be of the same underlying type.
 
-Sometimes the default marshalling for your structure doesn't do what you need. The page on [customizing structure marshalling](./customizing-struct-marshalling.md) teaches you how to customize how your structure is marshaled.
+Sometimes the default marshalling for your structure doesn't do what you need. The [Customizing structure marshalling](./customizing-struct-marshalling.md) article teaches you how to customize how your structure is marshaled.

@@ -1201,7 +1201,8 @@
 ## Remarks  
  Two objects are considered equal if they are <xref:System.Security.Cryptography.X509Certificates.X509Certificate> objects and they have the same issuer and serial number.  
   
-   
+> [!IMPORTANT]
+> The `Equals` method should not be used when comparing certificates for security purposes. Instead, use a hash of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.RawData> property, or the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Thumbprint> property.  
   
 ## Examples  
  The following example compares two certificates for equality.  
@@ -1262,7 +1263,8 @@
 ## Remarks  
  Two <xref:System.Security.Cryptography.X509Certificates.X509Certificate> objects are considered equal if they have the same issuer and serial number.  
   
-   
+> [!IMPORTANT]
+> The `Equals` method should not be used when comparing certificates for security purposes. Instead, use a hash of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.RawData> property, or the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.Thumbprint> property.   
   
 ## Examples  
  The following example compares two certificates for equality.  

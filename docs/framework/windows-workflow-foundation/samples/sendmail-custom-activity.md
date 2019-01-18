@@ -78,7 +78,7 @@ new SendMail
 ```  
   
 ### Sending Mails in Testing Mode  
- This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to john.doe@contoso.con (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
+ This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to `john.doe@contoso.con` (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
   
 ```  
 new SendMail  

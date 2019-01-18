@@ -18,10 +18,12 @@ You may have arrived on this page after trying to run an application and seeing 
 
 The .NET Framework 4.7.2 is included with:
 
+* [Windows 10 October 2018 Update](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
+
 * [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10)
 
 > [!div class="button"]
-[Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
+> [Download .NET Framework 4.7.2](https://www.microsoft.com/net/download/thank-you/net472?utm_source=ms-docs&utm_medium=referral)
 
 The [.NET Framework 4.7.2](https://go.microsoft.com/fwlink/?LinkID=863255) can be used to run applications built for the .NET Framework 4.0 through 4.7.1.
 

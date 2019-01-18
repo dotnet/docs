@@ -2,7 +2,6 @@
 title: "&lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 826219b4-3a16-45fc-832d-0cd7cbbd3b84
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; element of &lt;ws2007FederationHttpBinding&gt;
 Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) element.  
@@ -16,18 +15,18 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../.
 ## Syntax  
   
 ```xml  
-<ws2007FederationBinding>  
-    <binding >  
-        <security mode="None/Message/TransportWithMessageCredential">  
-           <message negotiateServiceCredential="Boolean"  
-                algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/ Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                defaultProtectionLevel="none/sign/EncryptAndSign"   
-                issuedTokenType="string"   
-                issuedKeyType="SymmetricKey/PublicKey"  
-           </message>  
-        </security>  
-    </binding>  
-</ws2007FederationBinding>  
+<ws2007FederationBinding>
+  <binding>
+    <security mode="None/Message/TransportWithMessageCredential">
+      <message negotiateServiceCredential="Boolean"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/  Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               defaultProtectionLevel="none/sign/EncryptAndSign"
+               issuedTokenType="string"
+               issuedKeyType="SymmetricKey/PublicKey">
+      </message>
+    </security>
+  </binding>
+</ws2007FederationBinding>
 ```  
   
 ## Attributes and Elements  
@@ -69,5 +68,5 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../.
  [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

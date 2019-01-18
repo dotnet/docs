@@ -13,36 +13,40 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 ## Syntax  
   
 ```xml  
-<ws2007FederationHttpBinding>  
-    <binding   
-        bypassProxyOnLocal="Boolean"  
-        closeTimeout="TimeSpan"   
-        hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="integer"  
-        messageEncoding="Text/Mtom"   
-                name="string"  
-        openTimeout="TimeSpan"   
-        privacyNoticeAt="Uri"  
-        privacyNoticeVersion="Integer"  
-        proxyAddress="Uri"   
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-        textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-        transactionFlow="Boolean"  
-        useDefaultWebProxy="Boolean">  
-        <security mode="None/Message/TransportWithMessageCredential">  
-           <message negotiateServiceCredential="Boolean"  
-                algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                issuedTokenType="string"  
-                issuedKeyType="SymmetricKey/PublicKey"  
-           </message>  
-        </security>  
-        <reliableSession ordered="Boolean"  
-           inactivityTimeout="TimeSpan"  
-           enabled="Boolean" />  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</ws2007FederationHttpBinding>  
+<ws2007FederationHttpBinding>
+  <binding bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxReceivedMessageSize="integer"
+           messageEncoding="Text/Mtom"
+           name="string"
+           openTimeout="TimeSpan"
+           privacyNoticeAt="Uri"
+           privacyNoticeVersion="Integer"
+           proxyAddress="Uri"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transactionFlow="Boolean"
+           useDefaultWebProxy="Boolean">
+    <security mode="None/Message/TransportWithMessageCredential">
+      <message negotiateServiceCredential="Boolean"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               issuedTokenType="string"
+               issuedKeyType="SymmetricKey/PublicKey">
+      </message>
+    </security>
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</ws2007FederationHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -89,34 +93,34 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 ## Example  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<ws2007FederationHttpBinding>  
-    <binding   
-        bypassProxyOnLocal="false"  
-        transactionFlow="false"  
-        hostNameComparisonMode="WeakWildcard"  
-        maxReceivedMessageSize="1000"  
-        messageEncoding="Mtom"   
-        proxyAddress="http://www.contoso.com"   
-        textEncoding="Utf16TextEncoding"  
-        useDefaultWebProxy="false">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00" enabled="true" />  
-        <security mode="None">  
-           <message negotiateServiceCredential="false"  
-                algorithmSuite="Aes128"  
-                issuedTokenType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1"   
-                issuedKeyType="PublicKey">  
-               <issuer address="http://localhost/Sts" />  
-           </message>  
-        </security>  
-    </binding>  
-</ws2007FederationBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <ws2007FederationHttpBinding>
+        <binding bypassProxyOnLocal="false"
+                 transactionFlow="false"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://www.contoso.com"
+                 textEncoding="Utf16TextEncoding"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="None">
+            <message negotiateServiceCredential="false"
+                     algorithmSuite="Aes128"
+                     issuedTokenType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1"
+                     issuedKeyType="PublicKey">
+              <issuer address="http://localhost/Sts" />
+            </message>
+          </security>
+        </binding>
+      </ws2007FederationBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## See Also  
@@ -125,5 +129,5 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
  [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

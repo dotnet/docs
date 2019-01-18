@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecurityIdentityVerificationFailure"
 ms.date: "03/30/2017"
 ms.assetid: fb5d6341-6ae3-45db-a4ab-f87cf3219db4
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecurityIdentityVerificationFailure
 System.ServiceModel.Security.SecurityIdentityVerificationFailure  

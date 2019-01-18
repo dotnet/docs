@@ -32,7 +32,7 @@ See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
 ## assembly
 
-A *.dll*/*.exe* file that can contain a collection of APIs that can be called by apps or other assemblies.
+A *.dll*/*.exe* file that can contain a collection of APIs that can be called by applications or other assemblies.
 
 An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
@@ -40,13 +40,13 @@ An assembly may include types such as interfaces, classes, structures, enumerati
 
 Common Language Runtime.
 
-The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler. The current Microsoft CLR implementation is Windows only.
+The exact meaning depends on the context, but this usually refers to the runtime of the .NET Framework. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a [JIT](#jit) compiler. The current Microsoft CLR implementation is Windows only.
 
 ## CoreCLR
 
 .NET Core Common Language Runtime.
 
-This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a cross platform runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
+This CLR is built from the same code base as the CLR. Originally, CoreCLR was the runtime of Silverlight and was designed to run on multiple platforms, specifically Windows and OS X. CoreCLR is now part of .NET Core and represents a simplified version of the CLR. It's still a [cross-platform](#cross-platform) runtime, now including support for many Linux distributions. CoreCLR is also a virtual machine with JIT and code execution capabilities.
 
 ## CoreFX
 
@@ -61,6 +61,10 @@ A set of libraries that comprise the System.* (and to a limited extent  Microsof
 In contrast to the CLR/CoreCLR, CoreRT is not a virtual machine, which means it doesn't include the facilities to generate and run code on-the-fly because it doesn't include a [JIT](#jit). It does, however, include the [GC](#gc) and the ability for runtime type identification (RTTI) and reflection. However, its type system is designed so that metadata for reflection isn't required. This enables having an [AOT](#aot) tool chain that can link away superfluous metadata and (more importantly) identify code that the app doesn't use. CoreRT is in development.
 
 See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/master/Documentation/intro-to-corert.md)
+
+## cross-platform
+
+The ability to develop and execute an application that can be used on multiple different operating systems, such as Linux, Windows and iOS, without having to re-write specifically for each one. This enables code re-use and consistency between applications on different platforms.
 
 ## ecosystem
 
@@ -130,7 +134,7 @@ See [Packages, Metapackages and Frameworks](../core/packages.md)
 
 ## Mono
 
-Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
+Mono is an open source, [cross-platform](#cross-platform) .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on apps that require a small footprint.
 
 It supports all of the currently published .NET Standard versions.
 

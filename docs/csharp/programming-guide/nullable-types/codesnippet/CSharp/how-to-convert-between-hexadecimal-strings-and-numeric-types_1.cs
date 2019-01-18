@@ -4,12 +4,11 @@
             {
                 // Get the integral value of the character.
                 int value = Convert.ToInt32(letter);
-                // Convert the decimal value to a hexadecimal value in string form.
-                string hexOutput = String.Format("{0:X}", value);
-                Console.WriteLine("Hexadecimal value of {0} is {1}", letter, hexOutput);
+                // Convert the integer value to a hexadecimal value in string form.
+                Console.WriteLine($"Hexadecimal value of {letter} is {value:X}");
             }
             /* Output:
-               Hexadecimal value of H is 48
+                Hexadecimal value of H is 48
                 Hexadecimal value of e is 65
                 Hexadecimal value of l is 6C
                 Hexadecimal value of l is 6C

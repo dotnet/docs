@@ -36,7 +36,7 @@ To program Windows Communication Foundation (WCF) security, X.509 digital certif
   
 -   **Personal**. This store is used for certificates associated with a user of a computer. Typically this store is used for certificates issued by one of the certification authority certificates found in the Trusted Root Certification Authorities store. Alternatively, a certificate found here may be self-issued and trusted by an application.  
   
- For more information about certificate stores, see [Certificate Stores](https://go.microsoft.com/fwlink/?LinkId=88912).  
+ For more information about certificate stores, see [Certificate Stores](/windows/desktop/secauthn/certificate-stores).  
   
 ### Selecting a Store  
  Selecting where to store a certificate depends how and when the service or client runs. The following general rules apply:  

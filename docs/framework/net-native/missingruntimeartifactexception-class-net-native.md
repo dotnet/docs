@@ -64,13 +64,13 @@ ms.author: "ronpet"
 ## Usage Details  
  The `MissingRuntimeArtifactException` exception is thrown when an attempt is made to instantiate a type or invoke a type member and, although the type or member's metadata is present, its implementation has been removed.  
   
- Whether metadata and the implementation code to dynamically execute a method are available to an app at run time is defined by the runtime directives (XML configuration) file, *.rd.xml. To prevent your app from throwing this exception, you must modify \*.rd.xml to ensure that the metadata needed by a type or type member is present at run time. For information about the format of the \*.rd.xml file, see [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
+ Whether metadata and the implementation code to dynamically execute a method are available to an app at run time is defined by the runtime directives (XML configuration) file, \*.rd.xml. To prevent your app from throwing this exception, you must modify \*.rd.xml to ensure that the metadata needed by a type or type member is present at run time. For information about the format of the \*.rd.xml file, see [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
   
 > [!IMPORTANT]
->  Because this exception indicates that the implementation code needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by using a runtime directives file. Typically, you eliminate this exception by specifying the appropriate `Activate` or `Dynamic` policy for a program element in the runtime directives file (*.rd.xml file). To get the entry that you can add to your runtime directives file that eliminates the exception, you can use one of two troubleshooters:  
+>  Because this exception indicates that the implementation code needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by using a runtime directives file. Typically, you eliminate this exception by specifying the appropriate `Activate` or `Dynamic` policy for a program element in the runtime directives file (\*.rd.xml file). To get the entry that you can add to your runtime directives file that eliminates the exception, you can use one of two troubleshooters:  
 >   
->  -   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/type.html) for types.  
-> -   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/method.html) for methods.  
+> - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/type.html) for types.  
+> - The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   
  The `MissingRuntimeArtifactException` class contains no unique members; all of its members are inherited from its base class, <xref:System.MemberAccessException>.  
   

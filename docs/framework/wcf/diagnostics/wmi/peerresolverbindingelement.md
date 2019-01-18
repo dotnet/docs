@@ -8,7 +8,7 @@ PeerResolverBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class PeerResolverBindingElement : BindingElement  
 {  
   string ReferralPolicy;  

@@ -8,7 +8,7 @@ CallbackBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class CallbackBehavior : Behavior  
 {  
   boolean AutomaticSessionShutdown;  

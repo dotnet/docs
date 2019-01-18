@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;peerTransport&gt;"
 ms.date: "03/30/2017"
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;peerTransport&gt;
 Contains the security settings associated with a peer channel, including the type of authentication used and the security used for the message transport.  
@@ -17,9 +16,9 @@ Contains the security settings associated with a peer channel, including the typ
 ## Syntax  
   
 ```xml  
-<security mode="None/Transport/Message/TransportWithMessageCredential">  
-    <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
-</security  
+<security mode="None/Transport/Message/TransportWithMessageCredential">
+  <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />
+</security
 ```  
   
 ## Attributes and Elements  

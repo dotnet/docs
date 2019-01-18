@@ -29,7 +29,7 @@ The following table summarizes the various functionalities provided by this tool
 |Generates serialization code.|[How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)|
 
 > [!CAUTION]
-> Svcutil overwrites existing files on a disk if the names supplied as parameters are identical. This can include code files, configuration, or metadata files. To avoid this when generating code and configuration flies, use the `/mergeConfig` switch.
+> Svcutil overwrites existing files on a disk if the names supplied as parameters are identical. This can include code files, configuration, or metadata files. To avoid this when generating code and configuration files, use the `/mergeConfig` switch.
 >
 > In addition, the `/r` and `/ct` switches for referencing types are for generating data contracts. These switches do not work when using XmlSerializer.
 
@@ -230,7 +230,7 @@ The following command generates serialization types for <xref:System.Xml.Seriali
 
 When using svcutil to generate metadata for a service, you may get the following message:
 
-Error: Cannot obtain Metadata from http://localhost:8000/somesservice/mex The maximum nametable character count quota (16384) has been exceeded while reading XML data. The nametable is a data structure used to store strings encountered during XML processing - long XML documents with non-repeating element names, attribute names and attribute values may trigger this quota. This quota may be increased by changing the MaxNameTableCharCount property on the XmlDictionaryReaderQuotas object used when creating the XML reader.
+Error: Cannot obtain Metadata from `http://localhost:8000/somesservice/mex` The maximum nametable character count quota (16384) has been exceeded while reading XML data. The nametable is a data structure used to store strings encountered during XML processing - long XML documents with non-repeating element names, attribute names and attribute values may trigger this quota. This quota may be increased by changing the MaxNameTableCharCount property on the XmlDictionaryReaderQuotas object used when creating the XML reader.
 
 This error can be caused by a service that returns a large WSDL file when you request its metadata. The problem is that the character quota for the svcutil.exe tool is exceeded. This value is set to help prevent denial of service (dos) attacks. You can increase this quota by specifying the following config file for svcutil.
 

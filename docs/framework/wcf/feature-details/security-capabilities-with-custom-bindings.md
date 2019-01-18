@@ -2,7 +2,6 @@
 title: "Security Capabilities with Custom Bindings"
 ms.date: "03/30/2017"
 ms.assetid: a2425679-484a-4e6c-9c98-7da7304f1516
-author: "BrucePerlerMS"
 ---
 # Security Capabilities with Custom Bindings
 You can perform most common security tasks by using one of the system-provided bindings. If you need more control, however, you can create a custom binding with a <xref:System.ServiceModel.Channels.SecurityBindingElement>, as explained in these topics. For more information about custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  

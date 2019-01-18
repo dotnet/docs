@@ -60,7 +60,7 @@ Figure 3: The LOH after a generation 2 GC
 
 ## When is a large object collected?
 
-In general, a GC occurs when one of the following following 3 conditions happens:
+In general, a GC occurs when one of the following 3 conditions happens:
 
 - Allocation exceeds the generation 0 or large object threshold.
 
@@ -158,7 +158,7 @@ Performance counters can also be queried programmatically. Many people collect t
 > [!NOTE]
 > We recommend that you to use ETW events instead of performance counters, because ETW provides much richer information.
 
-### ETW
+### ETW events
 
 The garbage collector provides a rich set of ETW events to help you understand what the heap is doing and why. The following blog posts show how to collect and understand GC events with ETW:
 
@@ -198,7 +198,7 @@ As you can see, this is a very simple test that just allocates large objects fro
 
 ### A debugger
 
-If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](http://msdn2.microsoft.com/ms404370.aspx) provided by .NET.
+If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../../docs/framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
 
 > [!NOTE]
 > The debugging commands mentioned in this section are applicable to the [Windows Debuggers](https://www.microsoft.com/whdc/devtools/debugging/default.mspx).

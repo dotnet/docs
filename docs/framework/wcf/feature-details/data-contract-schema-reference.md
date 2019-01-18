@@ -41,7 +41,7 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
 |`elementFormDefault`|Must be qualified. All elements must be qualified for a schema to be supported by `DataContractSerializer`. This can be accomplished by either setting xs:schema/@elementFormDefault to "qualified" or by setting xs:element/@form to "qualified" on each individual element declaration.|  
 |`finalDefault`|Ignored.|  
 |`Id`|Ignored.|  
-|`targetNamespace`|Supported and mapped to the data contract namespace. If this attribute is not specified, the blank namespace is used. Cannot be the reserved namespace http://schemas.microsoft.com/2003/10/Serialization/.|  
+|`targetNamespace`|Supported and mapped to the data contract namespace. If this attribute is not specified, the blank namespace is used. Cannot be the reserved namespace `http://schemas.microsoft.com/2003/10/Serialization/`.|  
 |`version`|Ignored.|  
   
 ### \<xs:schema>: contents  
@@ -284,15 +284,14 @@ This topic describes the subset of the XML Schema (XSD) used by <xref:System.Run
   
  The following code shows a C# enumeration class.  
   
-```  
+```csharp  
 public enum MyEnum  
 {  
-   first = 3,  
-   second = 4,  
-   third =5  
+  first = 3,  
+  second = 4,  
+  third =5  
+}  
 ```  
-  
- }  
   
  This class maps to the following schema by the `DataContractSerializer`. If enumeration values start from 1, `xs:annotation` blocks are not generated.  
   
@@ -343,7 +342,7 @@ public enum MyEnum
   
  For example, the following code flags an enumeration type.  
   
-```  
+```csharp  
 [Flags]  
 public enum AuthFlags  
 {    
@@ -396,7 +395,7 @@ rialization/">64</EnumerationValue>
   
  For example, the following code is a data contract.  
   
-```  
+```csharp  
 [DataContract]  
 public class Person  
 {  
@@ -518,7 +517,7 @@ public class Employee : Person
 |`positiveInteger`|<xref:System.Int64>.|  
   
 ## ISerializable types mapping  
- In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, `ISerializable` was introduced as a general mechanism to serialize objects for persistence or data transfer. There are many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types that implement `ISerializable` and that can be passed between applications. `DataContractSerializer` naturally provides support for `ISerializable` classes. The `DataContractSerializer` maps `ISerializable` implementation schema types that differ only by the QName (qualified name) of the type and are effectively property collections. For example, the `DataContractSerializer` maps <xref:System.Exception> to the following XSD type in the http://schemas.datacontract.org/2004/07/System namespace.  
+ In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, `ISerializable` was introduced as a general mechanism to serialize objects for persistence or data transfer. There are many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types that implement `ISerializable` and that can be passed between applications. `DataContractSerializer` naturally provides support for `ISerializable` classes. The `DataContractSerializer` maps `ISerializable` implementation schema types that differ only by the QName (qualified name) of the type and are effectively property collections. For example, the `DataContractSerializer` maps <xref:System.Exception> to the following XSD type in the `http://schemas.datacontract.org/2004/07/System` namespace.  
   
 ```xml  
 <xs:complexType name="Exception">  
@@ -535,7 +534,7 @@ public class Employee : Person
 ## DataContract Serialization Schema  
  A number of schemas exported by the `DataContractSerializer` use types, elements, and attributes from a special Data Contract Serialization namespace:  
   
- http://schemas.microsoft.com/2003/10/Serialization  
+ `http://schemas.microsoft.com/2003/10/Serialization`
   
  The following is a complete Data Contract Serialization schema declaration.  
   
@@ -613,7 +612,7 @@ public class Employee : Person
 ## Importing non-DataContract schemas  
  `DataContractSerializer` has the `ImportXmlTypes` option to allow import of schemas that do not conform to the `DataContractSerializer` XSD profile (see the <xref:System.Runtime.Serialization.XsdDataContractImporter.Options%2A> property). Setting this option to `true` enables acceptance of non-conforming schema types and mapping them to the following implementation, <xref:System.Xml.Serialization.IXmlSerializable> wrapping an array of <xref:System.Xml.XmlNode> (only the class name differs).  
   
-```  
+```csharp  
 [GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]  
 [System.Xml.Serialization.XmlSchemaProviderAttribute("ExportSchema")]  
 [System.Xml.Serialization.XmlRootAttribute(IsNullable=false)]  

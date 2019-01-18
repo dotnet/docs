@@ -8,7 +8,7 @@ MsmqTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class MsmqTransportBindingElement : MsmqBindingElementBase  
 {  
   sint32 MaxPoolSize;  

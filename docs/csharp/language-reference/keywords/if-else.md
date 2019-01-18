@@ -1,5 +1,7 @@
 ---
-title: "if-else (C# Reference)"
+title: "if-else - C# Reference"
+ms.custom: seodec18
+
 ms.date: 07/20/2015
 f1_keywords: 
   - "if_CSharpKeyword"
@@ -13,7 +15,7 @@ ms.assetid: d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2
 ---
 # if-else (C# Reference)
 
-An `if` statement identifies which statement to run based on the value of a `Boolean` expression. In the following example, the `Boolean` variable `result` is set to `true` and then checked in the `if` statement. The output is `The variable is set to true.`.
+An `if` statement identifies which statement to run based on the value of a Boolean expression. In the following example, the `bool` variable `condition` is set to `true` and then checked in the `if` statement. The output is `The variable is set to true.`.
 
 [!code-csharp[csrefKeywordsSelection#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#1)]
 

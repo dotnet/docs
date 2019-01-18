@@ -2,7 +2,7 @@
 ## [Getting Started](getting-started.md)
 ### [What You Can Do With LINQ to SQL](what-you-can-do-with-linq-to-sql.md)
 ### [Typical Steps for Using LINQ to SQL](typical-steps-for-using-linq-to-sql.md)
-### [Downloading Sample Databases](downloading-sample-databases.md)
+### [Download Sample Databases and Tools](downloading-sample-databases.md)
 ### [Learning by Walkthroughs](learning-by-walkthroughs.md)
 #### [Walkthrough: Simple Object Model and Query (Visual Basic)](walkthrough-simple-object-model-and-query-visual-basic.md)
 #### [Walkthrough: Querying Across Relationships (Visual Basic)](walkthrough-querying-across-relationships-visual-basic.md)

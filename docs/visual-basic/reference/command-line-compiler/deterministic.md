@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "deterministic compiler option [Visual Basic]"
   - "-deterministic compiler option [Visual Basic]"
   - "-deterministic compiler option [Visual Basic]"
-author: rpetrusha
-ms.author: ronpet
 ---
 # -deterministic
 

@@ -13,7 +13,7 @@ The Duplex sample demonstrates how to define and implement a duplex contract. Du
   
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS). The duplex contract is defined as follows:  
   
-```  
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode=SessionMode.Required,  
                  CallbackContract=typeof(ICalculatorDuplexCallback))]  
 public interface ICalculatorDuplex  
@@ -41,7 +41,7 @@ public interface ICalculatorDuplexCallback
   
  The `CalculatorService` class implements the primary `ICalculatorDuplex` interface. The service uses the <xref:System.ServiceModel.InstanceContextMode.PerSession> instance mode to maintain the result for each session. A private property named `Callback` is used to access the callback channel to the client. The service uses the callback for sending messages back to the client through the callback interface.  
   
-```  
+```csharp
 [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]  
 public class CalculatorService : ICalculatorDuplex  
 {  
@@ -65,7 +65,9 @@ public class CalculatorService : ICalculatorDuplex
         equation += " + " + n.ToString();  
         Callback.Result(result);  
     }  
-    ...  
+    
+    //...  
+    
     ICalculatorDuplexCallback Callback  
     {  
         get  
@@ -78,7 +80,7 @@ public class CalculatorService : ICalculatorDuplex
   
  The client must provide a class that implements the callback interface of the duplex contract, for receiving messages from the service. In the sample, a `CallbackHandler` class is defined to implement the `ICalculatorDuplexCallback` interface.  
   
-```  
+```csharp 
 public class CallbackHandler : ICalculatorDuplexCallback  
 {  
    public void Result(double result)  
@@ -95,7 +97,7 @@ public class CallbackHandler : ICalculatorDuplexCallback
   
  The proxy that is generated for a duplex contract requires a <xref:System.ServiceModel.InstanceContext> to be provided upon construction. This <xref:System.ServiceModel.InstanceContext> is used as the site for an object that implements the callback interface and handles messages that are sent back from the service. An <xref:System.ServiceModel.InstanceContext> is constructed with an instance of the `CallbackHandler` class. This object handles messages sent from the service to the client on the callback interface.  
   
-```  
+```csharp
 // Construct InstanceContext to handle messages on callback interface.  
 InstanceContext instanceContext = new InstanceContext(new CallbackHandler());  
   
@@ -166,14 +168,14 @@ client.Close();
   
     ```xml  
     <client>  
-    <endpoint name = ""  
-    address="http://service_machine_name/servicemodelsamples/service.svc"  
-    ... />  
+        <endpoint name = ""  
+        address="http://service_machine_name/servicemodelsamples/service.svc"  
+        ... />  
     </client>  
     ...  
     <wsDualHttpBinding>  
-    <binding name="DuplexBinding" clientBaseAddress="http://client_machine_name:8000/myClient/">  
-    </binding>  
+        <binding name="DuplexBinding" clientBaseAddress="http://client_machine_name:8000/myClient/">  
+        </binding>  
     </wsDualHttpBinding>  
     ```  
   

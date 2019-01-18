@@ -1,5 +1,5 @@
 ---
-title: Entry Point (F#)
+title: Entry Point
 description: Learn how to set the entry point to an F# program that is compiled as an executable file, where execution formally starts.
 ms.date: 05/16/2016
 ---

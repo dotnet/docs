@@ -1,11 +1,11 @@
 ---
-title: "Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39;"
+title: "Argument 'Period' must be less than or equal to argument 'Life'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_PeriodLELife"
 ms.assetid: dc575d41-b376-4b05-bbbe-6de1e98385f1
 ---
-# Argument &#39;Period&#39; must be less than or equal to argument &#39;Life&#39;
+# Argument 'Period' must be less than or equal to argument 'Life'
 The value of the `Period` argument, which specifies the period for which asset depreciation is calculated, is greater than the value of the `Life` argument.  
   
 ## To correct this error  

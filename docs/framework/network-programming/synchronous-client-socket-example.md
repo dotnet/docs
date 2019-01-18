@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "synchronous client sockets"
   - "sockets, synchronous client sockets"
 ms.assetid: 2c7d5be7-2221-467c-a839-5744ec4d576d
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Synchronous Client Socket Example
 The following example program creates a client that connects to a server. The client is built with a synchronous socket, so execution of the client application is suspended until the server returns a response. The application sends a string to the server and then displays the string returned by the server on the console.  

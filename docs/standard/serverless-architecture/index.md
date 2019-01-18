@@ -6,9 +6,9 @@ ms.author: jeliknes
 ms.date: 6/26/2018
 ---
 
-![](./media/Cover.jpg)
-
 # Serverless apps: Architecture, patterns, and Azure implementation
+
+![](./media/Cover.jpg)
 
 > DOWNLOAD available at: <https://aka.ms/serverless-ebook>
 
@@ -56,7 +56,7 @@ Participants and reviewers:
 
 ## Introduction
 
-Serverless is the evolution of cloud platforms in the direction of pure cloud native code. Serverless brings developers closer to business logic while insulating them from infrastructure concerns. It's a pattern that doesn't imply "no server" but rather, "less server." Serverless code is event-driven. Code may be triggered by anything from a traditional HTTP web request to a timer or the result of uploading a file. The infrastructure behind serverless allows for instant scale to meet elastic demands and offers micro-billing to truly "pay for what you use." Serverless requires a new way of thinking and approach to building applications and isn't the right solution for every problem. As a developer, you must decide:
+[Serverless](https://azure.microsoft.com/solutions/serverless/) is the evolution of cloud platforms in the direction of pure cloud native code. Serverless brings developers closer to business logic while insulating them from infrastructure concerns. It's a pattern that doesn't imply "no server" but rather, "less server." Serverless code is event-driven. Code may be triggered by anything from a traditional HTTP web request to a timer or the result of uploading a file. The infrastructure behind serverless allows for instant scale to meet elastic demands and offers micro-billing to truly "pay for what you use." Serverless requires a new way of thinking and approach to building applications and isn't the right solution for every problem. As a developer, you must decide:
 
 * What are the pros and cons of serverless?
 * Why should you consider serverless for your own applications?
@@ -133,4 +133,4 @@ The first part of this guide examines why serverless is a viable option by compa
 The guide and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this guide can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
-[Next](architecture-approaches.md)
+>[Next](architecture-approaches.md)

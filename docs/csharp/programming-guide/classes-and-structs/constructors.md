@@ -1,5 +1,6 @@
 ---
-title: "Constructors (C# Programming Guide)"
+title: "Constructors - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 05/05/2017
 helpviewer_keywords: 
   - "constructors [C#]"

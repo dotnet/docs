@@ -4,6 +4,7 @@ description: Learn unit test concepts in C# and .NET Core through an interactive
 author: ncarandini
 ms.author: wiwagn
 ms.date: 09/08/2017
+ms.custom: "seodec18"
 ---
 # Unit testing C# with MSTest and .NET Core
 
@@ -83,7 +84,7 @@ The following outline shows the final solution layout:
         PrimeServiceTests.csproj
 ```
 
-Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-dotnet-test* directory. 
+Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj`](../tools/dotnet-sln.md) in the *unit-testing-using-mstest* directory. 
 
 ## Creating the first test
 

@@ -7,12 +7,11 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Mapping XML Data Types to CLR Types
-The following table describes the default mapping between the XML data types and the common language runtime (CLR) types.  
-  
-## The following table describes the default mappings of an XML data type to a CLR type.  
+
+The following table describes the default mapping between the XML data types and the common language runtime (CLR) types.
   
 > [!NOTE]
->  The `xs` and the `xdt` prefixes are mapped to the http://www.w3.org/2001/XMLSchema and the http://www.w3.org/2003/05/xpath-datatypes namespace URIs respectively.  
+> The `xs` and the `xdt` prefixes are mapped to the <https://www.w3.org/2001/XMLSchema> and the <https://www.w3.org/2003/05/xpath-datatypes> namespace URIs respectively.
   
 |XML Type|CLR Type|  
 |--------------|--------------|  

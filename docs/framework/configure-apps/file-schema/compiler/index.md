@@ -53,7 +53,7 @@ Compiler and language provider settings specify compiler configuration elements 
 ```  
   
 ## See Also  
- <xref:System.CodeDom.Compiler.CompilerInfo>  
- <xref:System.CodeDom.Compiler.CodeDomProvider>  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)
+- <xref:System.CodeDom.Compiler.CompilerInfo>  
+- <xref:System.CodeDom.Compiler.CodeDomProvider>  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

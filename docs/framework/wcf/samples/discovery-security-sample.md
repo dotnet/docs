@@ -2,7 +2,6 @@
 title: "Discovery Security Sample"
 ms.date: "03/30/2017"
 ms.assetid: b8db01f4-b4a1-43fe-8e31-26d4e9304a65
-author: "BrucePerlerMS"
 ---
 # Discovery Security Sample
 The Discovery specification does not require that endpoints that participate in the discovery process to be secure. Enhancing the discovery messages with security mitigates various types of attacks (message alteration, denial of service, replay, spoofing). This sample implements custom channels that compute and verify message signatures using the compact signature format (described in Section 8.2 of the WS-Discovery specification). The sample supports both the [2005 Discovery specification](https://go.microsoft.com/fwlink/?LinkId=177912) and the [1.1 version](https://go.microsoft.com/fwlink/?LinkId=179677).  
@@ -55,7 +54,7 @@ The Discovery specification does not require that endpoints that participate in 
   
 #### To use this sample  
   
-1.  Execute the Setup.bat script from a Visual Studio command prompt. The sample uses certificates to sign and verify messages. The script creates the certificates using Makecert.exe and then installs them using Certmgr.exe. The script must be run with administrator privileges.  
+1.  Execute the Setup.bat script from a Developer Command Prompt for Visual Studio. The sample uses certificates to sign and verify messages. The script creates the certificates using Makecert.exe and then installs them using Certmgr.exe. The script must be run with administrator privileges.  
   
 2.  To build and run the sample, open the Security.sln file in Visual Studio and choose **Rebuild All**. Update the solution properties to start multiple projects: select **Start** for all projects except DiscoverySecureChannels. Run the solution normally.  
   

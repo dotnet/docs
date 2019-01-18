@@ -84,7 +84,7 @@ A DataGrid bound to data with multiple tables
 |Multiple related tables.|The grid can display a tree view to select tables with, or you can specify that the grid display the parent table. Records in the parent table let users navigate to related child rows.|  
   
 > [!NOTE]
->  Tables in a dataset are related using a <xref:System.Data.DataRelation>.  Also see [HYPERLINK "http://msdn.microsoft.com/library/dbwcse3d(v=vs.110)" Relationships in Datasets](https://msdn.microsoft.com/library/dbwcse3d\(v=vs.110\)) or [Relationships in Datasets](https://msdn.microsoft.com/library/dbwcse3d\(v=vs.120\)).  
+> Tables in a dataset are related using a <xref:System.Data.DataRelation>. Also see [Create relationships between datasets](/visualstudio/data-tools/relationships-in-datasets).
   
  When the <xref:System.Windows.Forms.DataGrid> control is displaying a table and the <xref:System.Windows.Forms.DataGrid.AllowSorting%2A> property is set to `true`, data can be resorted by clicking the column headers. The user can also add rows and edit cells.  
   

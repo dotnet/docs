@@ -14,7 +14,7 @@ This sample demonstrates how to implement a self-hosted service in a console app
   
  The sample implements a static main function to create a <xref:System.ServiceModel.ServiceHost> for the given `CalculatorService` type, as shown in the following sample code.  
   
-```  
+```csharp
 // Host the service within this EXE console application.  
 public static void Main()  
 {  

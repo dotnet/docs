@@ -18,9 +18,9 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 ## Syntax  
   
 ```xml  
-<allowedAudienceUris>   
-   <add allowedAudienceUri="String"/>  
-</allowedAudienceUris>  
+<allowedAudienceUris>
+  <add allowedAudienceUri="String" />
+</allowedAudienceUris>
 ```  
   
 ## Attributes and Elements  

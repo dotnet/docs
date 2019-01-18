@@ -8,7 +8,7 @@ TransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class TransportBindingElement : BindingElement  
 {  
   boolean ManualAddressing;  

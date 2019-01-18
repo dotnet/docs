@@ -1,15 +1,14 @@
 ---
-title: Building .NET Core Docker Images
-description: Understanding Docker images and .NET Core
-author: jralexander
-ms.author: johalex
+title: Docker images overview
+description: Learn how to use the published .NET Core Docker images from the Docker Registry. You will also learn how to pull images and build your own images.
 ms.date: 11/06/2017
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: "mvc, seodec18"
 ---
-# Building Docker Images for .NET Core Applications
 
- In this tutorial, We focus on how to use .NET Core on Docker. First, we explore the different Docker images offered and maintained by Microsoft, and use cases. We then learn how to build and dockerize an ASP.NET Core app.
+# Learn about Docker images for .NET Core
+
+In this tutorial, We focus on how to use .NET Core on Docker. First, we explore the different Docker images offered and maintained by Microsoft, and use cases. We then learn how to build and dockerize an ASP.NET Core app.
 
 During the course of this tutorial, you learn:
 > [!div class="checklist"]
@@ -109,7 +108,7 @@ To build and run, install the following items:
 
 #### .NET Core 2.1 SDK
 
-* Install [.NET Core SDK 2.1](https://www.microsoft.com/net/core).
+* Install [.NET Core 2.1 SDK](https://www.microsoft.com/net/core).
 
 * Install your favorite code editor, if you haven't already.
 
@@ -124,17 +123,17 @@ The Docker client can be installed in:
 
 * Linux distributions
 
-   * [CentOS](https://www.docker.com/docker-centos-distribution)
+   * [CentOS](https://docs.docker.com/install/linux/docker-ce/centos/)
 
-   * [Debian](https://www.docker.com/docker-debian)
+   * [Debian](https://docs.docker.com/install/linux/docker-ce/debian/)
 
-   * [Fedora](https://www.docker.com/docker-fedora)
+   * [Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/)
 
-   * [Ubuntu](https://www.docker.com/docker-ubuntu)
+   * [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-* [macOS](https://docs.docker.com/docker-for-mac/)
+* [macOS](https://docs.docker.com/docker-for-mac/install/)
 
-* [Windows](https://docs.docker.com/docker-for-windows/).
+* [Windows](https://docs.docker.com/docker-for-windows/install/).
 
 #### Installing Git for sample repository
 
@@ -199,7 +198,7 @@ docker run -it --rm --name aspnetcore_sample aspnetapp
 ```
 
 > [!IMPORTANT]
-> You must navigate to the **container IP address** (as opposed to http://localhost) in your browser directly when using Windows containers. You can get the IP address of your container with the following steps:
+> You must navigate to the **container IP address** (as opposed to `http://localhost`) in your browser directly when using Windows containers. You can get the IP address of your container with the following steps:
 
 * Open up another command prompt.
 * Run `docker ps` to see your running containers. The "aspnetcore_sample" container should be there.

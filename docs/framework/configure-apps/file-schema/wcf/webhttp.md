@@ -15,7 +15,7 @@ This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior
 ## Syntax  
   
 ```xml  
-<webHttp />  
+<webHttp />
 ```  
   
 ## Attributes and Elements  

@@ -23,7 +23,7 @@ Whether you are developing for computers with one processor or several, you want
  Explains how to create, start, pause, resume, and abort threads.  
   
  [Managed Threading Best Practices](../../../docs/standard/threading/managed-threading-best-practices.md)  
- Discusses levels of synchronization, how to avoid deadlocks and race conditions, single-processor and multiprocessor computers, and other threading issues.  
+ Discusses levels of synchronization, how to avoid deadlocks and race conditions, and other threading issues.  
   
  [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)  
  Describes the managed classes you can use to synchronize the activities of threads and the data of objects accessed on different threads, and provides an overview of thread pool threads.  

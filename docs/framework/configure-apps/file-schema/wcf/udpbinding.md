@@ -13,26 +13,28 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 ## Syntax  
   
 ```xml  
-<udpBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       duplicateMessageHistoryLength="Integer"  
-       maxBufferPoolSize="Integer"  
-       maxBufferSize="Integer"       maxPendingMessagesTotalSize="Integer"  
-       maxReceivedMessageSize="Integer"       maxRetransmitCount="Integer"  
-       multicastInterfaceId="Integer"  
-              name="string"   
-       openTimeout="TimeSpan"   
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan"  
-       textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-       timeToLive="TimeSpan">  
-       <readerQuotas   
-            maxArrayLength="Integer"  
-            maxBytesPerRead="Integer"  
-            maxDepth="Integer"             maxNameTableCharCount="Integer"                maxStringContentLength="Integer" />  
-   </binding>  
-</basicHttpBinding>  
+<udpBinding>
+  <binding closeTimeout="TimeSpan"
+           duplicateMessageHistoryLength="Integer"
+           maxBufferPoolSize="Integer"
+           maxBufferSize="Integer"
+           maxPendingMessagesTotalSize="Integer"
+           maxReceivedMessageSize="Integer"
+           maxRetransmitCount="Integer"
+           multicastInterfaceId="Integer"
+           name="String"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           timeToLive="TimeSpan">
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</basicHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -76,23 +78,23 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
  The following example shows how to configure the <xref:System.ServiceModel.UdpBinding> using the <`udpBinding`> element.  
   
 ```xml  
-<udpBinding>  
-        <binding  closeTimeout="00:10:00"  
-                   duplicateMessageHistoryLength="100"  
-                   maxBufferPoolSize="100"  
-                   maxPendingMessagesTotalSize="100000"  
-                   maxReceivedMessageSize="65536"  
-                    maxRetransmitCount="10"  
-                   multicastInterfaceId="00000"  
-                   name="myUdpBinding"  
-                   openTimeout="00:10:00"  
-                   receiveTimeout="00:10:00"  
-                   sendTimeout="00:10:00"  
-                   textEncoding="utf-8"  
-                   timeToLive="00:10:00"  
-          <readerQuotas/>   
-        </binding>  
-      </udpBinding>  
+<udpBinding>
+  <binding  closeTimeout="00:10:00"
+            duplicateMessageHistoryLength="100"
+            maxBufferPoolSize="100"
+            maxPendingMessagesTotalSize="100000"
+            maxReceivedMessageSize="65536"
+            maxRetransmitCount="10"
+            multicastInterfaceId="00000"
+            name="myUdpBinding"
+            openTimeout="00:10:00"
+            receiveTimeout="00:10:00"
+            sendTimeout="00:10:00"
+            textEncoding="utf-8"
+            timeToLive="00:10:00">
+    <readerQuotas />
+  </binding>
+</udpBinding>
 ```  
   
 ## See Also  
@@ -102,5 +104,5 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
  <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

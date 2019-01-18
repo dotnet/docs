@@ -16,21 +16,21 @@ Defines the type of message-level security requirements for an endpoint configur
 ## Syntax  
   
 ```xml  
-<netTcpBinding>  
-    <binding>  
-        <security  
-         mode="None|Transport|Message|TransportWithMessageCredential">  
-            <transport clientCredentialType="None|Windows|Certificate"  
-             protectionLevel="None|Sign|EncryptAndSign"             sslProtocols="Tls|Tls11|Tls12">  
-                <extendedProtectionPolicy  
-                     policyEnforcement="Never|WhenSupported|Always"  
-                     protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                        </extendedProtectionPolicy>  
-            </transport>  
-        </security>  
-    </binding>  
-</netTcpBinding>  
+<netTcpBinding>
+  <binding>
+    <security mode="None|Transport|Message|TransportWithMessageCredential">
+      <transport clientCredentialType="None|Windows|Certificate"
+                 protectionLevel="None|Sign|EncryptAndSign"
+                 sslProtocols="Tls|Tls11|Tls12">
+        <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"
+                                  protectionScenario="TransportSelected|TrustedProxy">
+          <customServiceNames>
+          </customServiceNames>
+        </extendedProtectionPolicy>
+      </transport>
+    </security>
+  </binding>
+</netTcpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -81,5 +81,5 @@ Defines the type of message-level security requirements for an endpoint configur
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

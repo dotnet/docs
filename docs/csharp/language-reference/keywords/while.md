@@ -1,5 +1,7 @@
 ---
-title: "while (C# Reference)"
+title: "while - C# Reference"
+ms.custom: seodec18
+
 ms.date: 05/28/2018
 f1_keywords: 
   - "while_CSharpKeyword"
@@ -10,7 +12,7 @@ ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59
 ---
 # while (C# Reference)
 
-The `while` statement executes a statement or a block of statements while a specified boolean expression evaluates to `true`. Because that expression is evaluated before each execution of the loop, a `while` loop executes zero or more times. This differs from the [do](do.md) loop, which executes one or more times.
+The `while` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`. Because that expression is evaluated before each execution of the loop, a `while` loop executes zero or more times. This differs from the [do](do.md) loop, which executes one or more times.
 
 At any point within the `while` statement block, you can break out of the loop by using the [break](break.md) statement.
 
@@ -26,13 +28,12 @@ The following example shows the usage of the `while` statement. Select **Run** t
 
 ## C# language specification
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The while statement](~/_csharplang/spec/statements.md#the-while-statement) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [while Statement (C++)](/cpp/cpp/while-statement-cpp)  
-- [Iteration Statements](iteration-statements.md)  
-- [do statement](do.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Iteration Statements](iteration-statements.md)
+- [do statement](do.md)

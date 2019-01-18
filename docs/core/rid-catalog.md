@@ -1,8 +1,6 @@
 ---
 title: .NET Core Runtime IDentifier (RID) catalog
 description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .NET Core.
-author: mairaw
-ms.author: mairaw
 ms.date: 07/19/2018
 ---
 # .NET Core RID Catalog

@@ -2,7 +2,6 @@
 title: "System.ServiceModel.Security.SecuritySessionClosedResponseSendFailure"
 ms.date: "03/30/2017"
 ms.assetid: 214e88fe-0476-4604-bca6-1b2f25fe1194
-author: "BrucePerlerMS"
 ---
 # System.ServiceModel.Security.SecuritySessionClosedResponseSendFailure
 System.ServiceModel.Security.SecuritySessionClosedResponseSendFailure  

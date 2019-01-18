@@ -16,14 +16,14 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
 ## Syntax  
   
 ```xml  
-<netMsmqBinding>  
-    <binding>  
-      <security>  
-         <message   
-                      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-            clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
-    </security>  
-</netMsmqBinding>  
+<netMsmqBinding>
+  <binding>
+    <security>
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />
+    </security>
+  </binding>
+</netMsmqBinding>
 ```  
   
 ## Attributes and Elements  
@@ -54,5 +54,5 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

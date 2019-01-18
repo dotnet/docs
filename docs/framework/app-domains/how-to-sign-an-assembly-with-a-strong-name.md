@@ -39,7 +39,7 @@ There are a number of ways to sign an assembly with a strong name:
   
 ### To create and sign an assembly with a strong name by using the Assembly Linker  
   
--   At the [Visual Studio Command Prompt](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
+-   At the [Developer Command Prompt for Visual Studio](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  
   
      **al** **/out:**\<*assemblyName*> *\<moduleName>* **/keyfile:**\<*keyfileName*>  
   
@@ -92,9 +92,9 @@ al /out:MyAssembly.dll MyModule.netmodule /keyfile:sgKey.snk
     ```  
   
 ## See Also  
- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
- [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)  
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
- [Managing Assembly and Manifest Signing](/visualstudio/ide/managing-assembly-and-manifest-signing)  
- [Signing Page, Project Designer](https://msdn.microsoft.com/library/0k50fs3b)
+- [Creating and Using Strong-Named Assemblies](../../../docs/framework/app-domains/create-and-use-strong-named-assemblies.md)  
+- [How to: Create a Public-Private Key Pair](../../../docs/framework/app-domains/how-to-create-a-public-private-key-pair.md)  
+- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
+- [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
+- [Managing Assembly and Manifest Signing](/visualstudio/ide/managing-assembly-and-manifest-signing)  
+- [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)

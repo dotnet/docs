@@ -21,14 +21,14 @@ This topic describes some implementation details that you want to be aware of.
  The following describes certain mismatches that can occur between CLR types and XML data types and how they are handled.  
   
 > [!NOTE]
->  The `xs` prefix is mapped to the http://www.w3.org/2001/XMLSchema and namespace URI.  
+> The `xs` prefix is mapped to the <https://www.w3.org/2001/XMLSchema> and namespace URI.
   
 ### System.TimeSpan and xs:duration  
  The `xs:duration` type is partially ordered in that there are certain duration values that are different but equivalent. This means that for the `xs:duration` type value such as 1 month (P1M) is less than 32 days (P32D), larger than 27 days (P27D) and equivalent to 28, 29 or 30 days.  
   
  The <xref:System.TimeSpan> class does not support this partial ordering. Instead, it picks a specific number of days for 1 year and 1 month; 365 days and 30 days respectively.  
   
- For more information on the `xs:duration` type, see the W3C XML Schema Part 2: Datatypes Recommendation at http://www.w3.org/TR/xmlschema-2/.  
+ For more information on the `xs:duration` type, see the W3C [XML Schema Part 2: Datatypes Recommendation](https://www.w3.org/TR/xmlschema-2/).
   
 ### xs:time, Gregorian Date Types, and System.DateTime  
  When an `xs:time` value is mapped to a <xref:System.DateTime> object, the <xref:System.DateTime.MinValue> field is used to initialize the date properties of the <xref:System.DateTime> object (such as <xref:System.DateTime.Year%2A>, <xref:System.DateTime.Month%2A>, and <xref:System.DateTime.Day%2A>) to the smallest possible <xref:System.DateTime> value.  

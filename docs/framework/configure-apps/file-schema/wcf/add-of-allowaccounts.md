@@ -11,9 +11,9 @@ Specifies a user account for processes that host WCF services, and are granted c
 ## Syntax  
   
 ```xml  
-<allowAccounts>  
-   <add securityIdentifier="String"/>  
-</allowAccounts>  
+<allowAccounts>
+  <add securityIdentifier="String" />
+</allowAccounts>
 ```  
   
 ## Attributes and Elements  
@@ -38,18 +38,18 @@ Specifies a user account for processes that host WCF services, and are granted c
  The following configuration example adds the five default identifiers for user accounts to this collection.  
   
 ```xml  
-<allowAccounts>  
-   // LocalSystem account  
-   <add securityIdentifier="S-1-5-18"/>  
-   // LocalService account  
-   <add securityIdentifier="S-1-5-19"/>  
-   // Administrators account  
-   <add securityIdentifier="S-1-5-20"/>  
-   // Network Service account  
-   <add securityIdentifier="S-1-5-32-544" />  
-   // IIS_IUSRS account (Vista only)  
-   <add securityIdentifier="S-1-5-32-568"/>  
-</allowAccounts>  
+<allowAccounts>
+  <!-- LocalSystem account -->
+  <add securityIdentifier="S-1-5-18" />
+  <!-- LocalService account -->
+  <add securityIdentifier="S-1-5-19" />
+  <!-- Administrators account -->
+  <add securityIdentifier="S-1-5-20" />
+  <!-- Network Service account -->
+  <add securityIdentifier="S-1-5-32-544" />
+  <!-- IIS_IUSRS account (Vista only) -->
+  <add securityIdentifier="S-1-5-32-568" />
+</allowAccounts>
 ```  
   
 ## See Also  

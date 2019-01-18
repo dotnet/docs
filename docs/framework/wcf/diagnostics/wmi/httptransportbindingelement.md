@@ -8,7 +8,7 @@ HttpTransportBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class HttpTransportBindingElement : TransportBindingElement  
 {  
   boolean AllowCookies;  

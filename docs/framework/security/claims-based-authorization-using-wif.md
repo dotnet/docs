@@ -30,7 +30,7 @@ In a relying party application, authorization determines what resources an authe
 ### Expressing Roles as Claims  
  When the **IsInRole()** method is called, there is a check made to see if the current user has that role. In claims-aware applications, the role is expressed by a role claim type that should be available in the token. The role claim type is expressed using the following URI:  
   
- http://schemas.microsoft.com/ws/2008/06/identity/claims/role  
+ `http://schemas.microsoft.com/ws/2008/06/identity/claims/role`
   
  There are several ways to enrich a token with a role claim type:  
   

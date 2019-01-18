@@ -1,5 +1,23 @@
 # [Additional class libraries and APIs](index.md)
-## [System.Net](xref:System.Net)
+## Microsoft.SqlServer.Server
+### SmiOrderProperty Class
+#### [SmiOrderProperty.Item](microsoft.sqlserver.server.smiorderproperty.item.md)
+## System.Data.SqlTypes
+### SqlChars Class
+#### [SqlChars.Stream Property](system.data.sqltypes.sqlchars.stream.md)
+### SqlStreamChars Class
+#### [SqlStreamChars Constructor](system.data.sqltypes.sqlstreamchars.-ctor.md)
+#### [CanSeek Property](system.data.sqltypes.sqlstreamchars.canseek.md)
+#### [IsNull Property](system.data.sqltypes.sqlstreamchars.isnull.md)
+#### [Length Property](system.data.sqltypes.sqlstreamchars.length.md)
+#### [Close Method](system.data.sqltypes.sqlstreamchars.close.md)
+#### [Dispose Method](system.data.sqltypes.sqlstreamchars.dispose.md)
+#### [Flush Method](system.data.sqltypes.sqlstreamchars.flush.md)
+#### [Read Method](system.data.sqltypes.sqlstreamchars.read.md)
+#### [Seek Method](system.data.sqltypes.sqlstreamchars.seek.md)
+#### [SetLength Method](system.data.sqltypes.sqlstreamchars.setlength.md)
+#### [Write Method](system.data.sqltypes.sqlstreamchars.write.md)
+## System.Net
 ### [Connection Class](connection.md)
 #### [m_WriteList Field](m_writelist.md)
 ### [ConnectionGroup Class](connectiongroup.md)
@@ -14,9 +32,9 @@
 ### ServicePoint Class
 #### [m_ConnectionGroupList Field](m_connectiongrouplist.md)
 #### [s_ServicePointTable Field](s_servicepointtable.md)
-## [System.Windows.Diagnostics](xref:System.Windows.Diagnostics)
+## System.Windows.Diagnostics
 ### VisualDiagnostics Class
 #### [s_isDebuggerCheckDisabledForTestPurposes field](s-isdebuggercheckdisabledfortestpurposes-field.md)
-## [System.Windows.Forms.Design](xref:System.Windows.Forms.Design)
+## System.Windows.Forms.Design
 ### [DataMemberFieldEditor class](datamemberfieldeditor-class.md)
 ### [DataMemberListEditor class](datamemberlisteditor-class.md)

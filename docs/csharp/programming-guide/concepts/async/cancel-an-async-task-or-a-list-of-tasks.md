@@ -78,8 +78,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
         {
             // ***Send a token to carry the message if cancellation is requested.
             int contentLength = await AccessTheWebAsync(cts.Token);
-            resultsTextBox.Text +=
-                String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);
+            resultsTextBox.Text += $"\r\nLength of the downloaded string: {contentLength}.\r\n";
         }
         // *** If cancellation is requested, an OperationCanceledException results.
         catch (OperationCanceledException)
@@ -102,15 +101,14 @@ You can download the complete Windows Presentation Foundation (WPF) project from
     {
         HttpClient client = new HttpClient();
 
-        resultsTextBox.Text +=
-            String.Format("\r\nReady to download.\r\n");
+        resultsTextBox.Text += "\r\nReady to download.\r\n";
 
         // You might need to slow things down to have a chance to cancel.
         await Task.Delay(250);
 
         // GetAsync returns a Task<HttpResponseMessage>.
         // ***The ct argument carries the message if the Cancel button is chosen.
-        HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);
+        HttpResponseMessage response = await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct);
 
         // Retrieve the website contents from the HttpResponseMessage.
         byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
@@ -168,13 +166,13 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     {
         List<string> urls = new List<string>
         {
-            "http://msdn.microsoft.com",
-            "http://msdn.microsoft.com/library/hh290138.aspx",
-            "http://msdn.microsoft.com/library/hh290140.aspx",
-            "http://msdn.microsoft.com/library/dd470362.aspx",
-            "http://msdn.microsoft.com/library/aa578028.aspx",
-            "http://msdn.microsoft.com/library/ms404677.aspx",
-            "http://msdn.microsoft.com/library/ff730837.aspx"
+            "https://msdn.microsoft.com",
+            "https://msdn.microsoft.com/library/hh290138.aspx",
+            "https://msdn.microsoft.com/library/hh290140.aspx",
+            "https://msdn.microsoft.com/library/dd470362.aspx",
+            "https://msdn.microsoft.com/library/aa578028.aspx",
+            "https://msdn.microsoft.com/library/ms404677.aspx",
+            "https://msdn.microsoft.com/library/ff730837.aspx"
         };
         return urls;
     }
@@ -202,7 +200,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
         byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
 
         resultsTextBox.Text +=
-            String.Format("\r\nLength of the downloaded string: {0}.\r\n", urlContents.Length);
+            $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
     }
     ```
 
@@ -306,7 +304,7 @@ namespace CancelATask
                 // ***Send a token to carry the message if cancellation is requested.
                 int contentLength = await AccessTheWebAsync(cts.Token);
                 resultsTextBox.Text +=
-                    String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);
+                    $"\r\nLength of the downloaded string: {contentLength}.\r\n";
             }
             // *** If cancellation is requested, an OperationCanceledException results.
             catch (OperationCanceledException)
@@ -336,15 +334,14 @@ namespace CancelATask
         {
             HttpClient client = new HttpClient();
 
-            resultsTextBox.Text +=
-                String.Format("\r\nReady to download.\r\n");
+            resultsTextBox.Text += "\r\nReady to download.\r\n";
 
             // You might need to slow things down to have a chance to cancel.
             await Task.Delay(250);
 
             // GetAsync returns a Task<HttpResponseMessage>.
             // ***The ct argument carries the message if the Cancel button is chosen.
-            HttpResponseMessage response = await client.GetAsync("http://msdn.microsoft.com/library/dd470362.aspx", ct);
+            HttpResponseMessage response = await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct);
 
             // Retrieve the website contents from the HttpResponseMessage.
             byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
@@ -463,7 +460,7 @@ namespace CancelAListOfTasks
                 byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
 
                 resultsTextBox.Text +=
-                    String.Format("\r\nLength of the downloaded string: {0}.\r\n", urlContents.Length);
+                    $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
             }
         }
 
@@ -472,13 +469,13 @@ namespace CancelAListOfTasks
         {
             List<string> urls = new List<string>
             {
-                "http://msdn.microsoft.com",
-                "http://msdn.microsoft.com/library/hh290138.aspx",
-                "http://msdn.microsoft.com/library/hh290140.aspx",
-                "http://msdn.microsoft.com/library/dd470362.aspx",
-                "http://msdn.microsoft.com/library/aa578028.aspx",
-                "http://msdn.microsoft.com/library/ms404677.aspx",
-                "http://msdn.microsoft.com/library/ff730837.aspx"
+                "https://msdn.microsoft.com",
+                "https://msdn.microsoft.com/library/hh290138.aspx",
+                "https://msdn.microsoft.com/library/hh290140.aspx",
+                "https://msdn.microsoft.com/library/dd470362.aspx",
+                "https://msdn.microsoft.com/library/aa578028.aspx",
+                "https://msdn.microsoft.com/library/ms404677.aspx",
+                "https://msdn.microsoft.com/library/ff730837.aspx"
             };
             return urls;
         }

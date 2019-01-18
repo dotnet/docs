@@ -13,7 +13,7 @@ ms.author: "mairaw"
 The <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method accepts three input types for the source document: an object that implements the <xref:System.Xml.XPath.IXPathNavigable> interface, an <xref:System.Xml.XmlReader> object that reads the source document, or a string URI.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslCompiledTransform> class preserves white space by default. This is in accordance with section 3.4 of the W3C XSLT 1.0 recommendation (section 3.4, http://www.w3.org/TR/xslt.html#strip).  
+>  The <xref:System.Xml.Xsl.XslCompiledTransform> class preserves white space by default. This is in accordance with [section 3.4 of the W3C XSLT 1.0 recommendation](https://www.w3.org/TR/xslt.html#strip).  
   
 ## IXPathNavigable Interface  
  The <xref:System.Xml.XPath.IXPathNavigable> interface is implemented in the <xref:System.Xml.XmlNode> and <xref:System.Xml.XPath.XPathDocument> classes. These classes represent an in-memory cache of XML data.  

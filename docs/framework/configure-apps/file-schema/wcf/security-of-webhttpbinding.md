@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;webHttpBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;webHttpBinding&gt;
 Specifies the security requirements for an endpoint configured with a [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
@@ -16,19 +15,19 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
 ## Syntax  
   
 ```xml  
-<system.ServiceModel>  
-    <bindings>  
-        <webHttpBinding>  
-            <binding name = "string">  
-              <security mode="None/Transport/TransportCredentialOnly">  
-                                    <transport clientCredentialType =   
-                                     "Basic/Certificate/Digest/None/Ntlm/Windows"  
-                                     proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                                     realm="string" />  
-              </security>  
-        </webHttpBinding>  
-    </bindings>  
-</system.ServiceModel>  
+<system.ServiceModel>
+  <bindings>
+    <webHttpBinding>
+      <binding name = "String">
+        <security mode="None/Transport/TransportCredentialOnly">
+          <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                     proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                     realm="String" />
+        </security>
+      </binding>
+    </webHttpBinding>
+  </bindings>
+</system.ServiceModel>
 ```  
   
 ## Attributes and Elements  
@@ -70,6 +69,6 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
  [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [WCF Web HTTP Programming Model](../../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

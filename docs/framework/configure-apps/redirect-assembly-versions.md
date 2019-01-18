@@ -136,11 +136,11 @@ You can enable automatic binding redirection if your app targets older versions 
 
 ```xml
 <assemblyBinding xmlns="..." appliesTo="v3.5 ">
-  <!—.NET Framework version 3.5 redirects here -->
+  <!--.NET Framework version 3.5 redirects here -->
 </assemblyBinding>
 
 <assemblyBinding xmlns="..." appliesTo="v4.0.30319">
-  <!—.NET Framework version 4.0 redirects here -->
+  <!--.NET Framework version 4.0 redirects here -->
 </assemblyBinding>
 
 <assemblyBinding xmlns="...">
@@ -157,7 +157,6 @@ You can enable automatic binding redirection if your app targets older versions 
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)
-- [Configuring .NET Framework Apps](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
 - [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [How to: Create a Publisher Policy](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)

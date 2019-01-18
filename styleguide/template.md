@@ -34,12 +34,13 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
 - **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading, and it should contain 60 characters or less.
 - **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.
-- **author**, **manager**, **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The "manager" and "ms.author" fields, on the other hand, should contain Microsoft aliases.
-- **ms.topic**: The topic type. The most common value is `article`. Other common values used are `get-started-article`, `managed-reference`, and `reference`.
-- **ms.devlang** defines the language filter displayed for the topic. Some of the supported values are: dotnet, cpp, csharp, fsharp, vb, powershell and xml.
-- **ms.prod**: Product identification used for BI purposes. Possible values are `.net-core` for topics on the .NET Core Guide, `.net-framework` for topics on the .NET Framework Guide and `.net` for all other topics.
+- **author** and **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The **ms.author** field, on the other hand, should contain a Microsoft alias and indicates the person responsible for maintaining the article.
+- **ms.topic**: The topic type. The most common value is `conceptual` and is set at a global level. Other common values used are `tutorial`, `overview`, and `reference`.
+- **ms.devlang** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
+- **ms.prod**: Product identification used for BI purposes. They're usually set at a global level, so they don't usually appear in the metadata block of each article.
 - **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
 - **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
+- **f1_keywords**: Connects the article to the F1 key (functionality in Visual Studio).
 
 ## Basic Markdown, GFM, and special characters
 
@@ -51,7 +52,7 @@ All basic and GitHub Flavored Markdown (GFM) is supported. For more information 
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
 - Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+- Use the [HTML entity code](https://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
 
 ## File name
 
@@ -102,43 +103,59 @@ Use for inline code, language keywords, NuGet package names, command-line comman
 To link to a header in the same Markdown file (also known as anchor links), you'll need to find out the id of the header you're trying to link to. To confirm the ID, view the source of the rendered article, find the id of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
 The id is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the id would look like this `id="step-2"`.
 
-- Example: [Chapter 1](#chapter-1)
+- Example: `[Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier)` produces [Declare inline blocks with a language identifier](#inline-code-blocks-with-language-identifier).
 
 To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
 
-- Example: [Readme file](../readme.md)
-- Example: [Welcome to .NET](../docs/welcome.md)
+- Example: `[Readme file](../README.md)` produces [Readme file](../README.md). (Note that links are case-sensitive.)
+- Example: `[Welcome to .NET](../docs/welcome.md)` produces [Welcome to .NET](../docs/welcome.md).
 
 To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
 
-- Example: [.NET Community](../docs/welcome.md#community)
+- Example: `[.NET Community](../docs/welcome.md#open-source)` produces [.NET Community](../docs/welcome.md#open-source).
+
+In most cases, we use the relative links and discourage the use of `~/` in links because relative links resolve in the source on GitHub. However, whenever we link to a file in a dependent repo, we'll use the `~/` character to provide the path. Because the files in the dependent repo are in a different location in GitHub the links won't resolve correctly with relative links regardless of how they were written.
+
+The C# language specification and the Visual Basic language specification are included in the .NET docs by including the source from the language repositories. The markdown sources are managed in the [csharplang](https://github.com/dotnet/csharplang) and [visual basic](https://github.com/dotnet/vblang) repositories.
+
+Links to the spec must point to the source directories where those specs are included. For C#, it's **~/_csharplang/spec** and for VB, it's **~/_vblang/spec**.
+
+- Example: `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)` produces [C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions).
 
 ### External Links
 
 To link to an external file, use the full URL as the link.
 
-- Example: [GitHub](http://www.github.com)
+- Example: `[GitHub](https://www.github.com)` produces [GitHub](https://www.github.com).
 
 If a URL appears in a Markdown file, it will be transformed into a clickable link.
 
-- Example: http://www.github.com
+- Example: `<https://www.github.com>` produces <https://www.github.com>.
+
+Prefer the `https` protocol for external links. Only use `http` links for sites that do not support `https`.
 
 ### Links to APIs
 
 The build system has some extensions that allow us to link to .NET APIs without having to use external links.
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
-The UID equates to the fully qualified class and member name. If you add a \* after the UID, the link then represents the overload page and not a specific API. For example, you can use that when you want to link to the [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) page in a generic way instead of a specific overload such as [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_).
+The UID equates to the fully qualified type and member name.
+
+If you add a \* (or %2A) after the UID, the link then represents the overload page and not a specific API. For example, you can use that when you want to link to the [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) page in a generic way instead of a specific overload such as [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). You can also use \* to link to a member page when the member is not overloaded; this saves you from having to include the parameter list in the UID.
+
+To link to a specific method overload, you must include the fully qualified type name of each of the method's parameters. For example, \<xref:System.DateTime.ToString> links to the parameterless [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) method, while \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> links to the  [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) method. You can find the UIDs of a particular overloaded member from `https://xref.docs.microsoft.com/autocomplete`. The query string "?text=*\<type-member-name>*" identifies the type or member whose UIDs you'd like to see. For example, `https://xref.docs.microsoft.com/autocomplete?text=string.format` retrieves the [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) overloads.
+
+To link to a generic type, such as [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), you use the ` (%60) character followed by the number of generic type parameters. For example, \<xref:System.Nullable%601> links to the [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) type, while \<xref:System.Func%602> links to the [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) delegate.
 
 You can use one of the following syntax:
 
 1. Auto-link: `<xref:UID>` or `<xref:UID?displayProperty=nameWithType>`
 
- The `displayProperty` query parameter produces a fully qualified link text. By default, link text shows only the member or type name.
+   The `displayProperty` query    parameter produces a fully qualified link text. By default, link text shows only the member or type name.
 
 2. Markdown link: `[link text](xref:UID)`
 
- Use when you want to customize the link text displayed.
+   Use when you want to customize the link text displayed.
 
 Examples:
 
@@ -216,7 +233,7 @@ Examples:
 | col 2 is      | centered      |   $12 |
 | col 1 is default | left-aligned     |    $1 |
 
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily.
+You can use a [Markdown table generator tool](https://www.tablesgenerator.com/markdown_tables) to help creating them more easily.
 
 ## Code
 
@@ -442,7 +459,7 @@ You can see an example of checked lists in action in the [.NET Core docs](https:
 ### Buttons
 
 > [!div class="button"]
-[button links](../docs/core/index.md)
+> [button links](../docs/core/index.md)
 
 You can see an example of buttons in action in the [Visual Studio docs](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
@@ -457,7 +474,7 @@ You can see an example of selectors in action at the [Azure docs](https://docs.m
 ### Step-By-Steps
 
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+>[Previous](../docs/csharp/expression-trees-interpreting.md)
+>[Next](../docs/csharp/expression-trees-translating.md)
 
 You can see an example of step-by-steps in action at the [C# Guide](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

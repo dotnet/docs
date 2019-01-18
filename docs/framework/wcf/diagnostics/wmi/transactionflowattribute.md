@@ -8,7 +8,7 @@ TransactionFlowAttribute
   
 ## Syntax  
   
-```  
+```csharp
 class TransactionFlowAttribute : Behavior  
 {  
   string TransactionFlowOption;  

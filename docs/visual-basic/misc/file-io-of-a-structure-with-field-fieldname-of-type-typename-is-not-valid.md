@@ -1,11 +1,11 @@
 ---
-title: "File I/O of a structure with field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is not valid"
+title: "File I/O of a structure with field '&lt;fieldname&gt;' of type '&lt;typename&gt;' is not valid"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_UnsupportedFieldType2"
 ms.assetid: 028e936f-6210-4290-adb2-46298e13e160
 ---
-# File I/O of a structure with field &#39;&lt;fieldname&gt;&#39; of type &#39;&lt;typename&gt;&#39; is not valid
+# File I/O of a structure with field '&lt;fieldname&gt;' of type '&lt;typename&gt;' is not valid
 The structure you are attempting to write to a file contains an unsupported type.  
   
 ## To correct this error  

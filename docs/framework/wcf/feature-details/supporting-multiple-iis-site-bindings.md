@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 40440495-254d-45c8-a8c6-b29f364892ba
 ---
 # Supporting Multiple IIS Site Bindings
-When hosting a Windows Communication Foundation (WCF) service under Internet Information Services (IIS) 7.0, you may want to provide multiple base addresses that use the same protocol on the same site. This allows the same service to respond to a number of different URIs. This is useful when you want to host a service that listens on http://www.contoso.com and http://contoso.com. It is also useful to create a service that has a base address for internal users and a separate base address for external users. For example: http://internal.contoso.com and http://www.contoso.com.  
+When hosting a Windows Communication Foundation (WCF) service under Internet Information Services (IIS) 7.0, you may want to provide multiple base addresses that use the same protocol on the same site. This allows the same service to respond to a number of different URIs. This is useful when you want to host a service that listens on `http://www.contoso.com` and `http://contoso.com`. It is also useful to create a service that has a base address for internal users and a separate base address for external users. For example: `http://internal.contoso.com` and `http://www.contoso.com`.  
   
 > [!NOTE]
 >  This functionality is only available using the HTTP protocol.  

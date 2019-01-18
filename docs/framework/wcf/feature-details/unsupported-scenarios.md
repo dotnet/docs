@@ -87,11 +87,11 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
   
  An example of this situation is a service with the following three endpoint addresses:  
   
--   http://localhost/CalculatorService/service (the service)  
+- `http://localhost/CalculatorService/service` (the service)  
   
--   http://localhost/CalculatorService/issue_ticket (the STS)  
+- `http://localhost/CalculatorService/issue_ticket` (the STS)  
   
--   http://localhost/CalculatorService/mex (the metadata endpoint)  
+- `http://localhost/CalculatorService/mex` (the metadata endpoint)  
   
  This throws an exception.  
   

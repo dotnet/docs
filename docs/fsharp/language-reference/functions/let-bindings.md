@@ -1,5 +1,5 @@
 ---
-title: let Bindings (F#)
+title: let Bindings
 description: Learn how to use an F# 'let' binding, which associates an identifier with a value or function.
 ms.date: 05/16/2016
 ---

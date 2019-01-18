@@ -36,7 +36,7 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
   
 ### Prefix Endpoint Address Filters  
   
-1.  The <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> functions just like the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> filter, except that the match can be on a prefix of the message URI. For example, a filter specifying the address http://www.adatum.com matches messages addressed to http://www.adatum.com/userA.  
+1.  The <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> functions just like the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter> filter, except that the match can be on a prefix of the message URI. For example, a filter specifying the address `http://www.adatum.com` matches messages addressed to `http://www.adatum.com/userA`.  
   
 ### XPath Message Filters  
  An <xref:System.ServiceModel.Dispatcher.XPathMessageFilter> uses an XPath expression to determine whether an XML document contains specific elements, attributes, text, or other XML syntactic constructs. The filter is optimized to be extremely efficient for a strict subset of XPath. The XML Path Language is described in the [W3C XML Path Language 1.0 specification](https://go.microsoft.com/fwlink/?LinkId=94779).  

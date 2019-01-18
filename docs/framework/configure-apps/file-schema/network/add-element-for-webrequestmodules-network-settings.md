@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "add element, webRequestModules"
   - "<add> element, webRequestModules"
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;add&gt; Element for webRequestModules (Network Settings)
 Adds a custom Web request module to the application.  
@@ -78,5 +76,5 @@ Adds a custom Web request module to the application.
 ```  
   
 ## See Also  
- <xref:System.Net.WebRequest>  
- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- <xref:System.Net.WebRequest>  
+- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

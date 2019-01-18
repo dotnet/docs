@@ -2,7 +2,6 @@
 title: "&lt;windowsStreamSecurity&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
-author: "BrucePerlerMS"
 ---
 # &lt;windowsStreamSecurity&gt;
 Specify Windows stream security settings of the custom binding.  
@@ -16,7 +15,7 @@ Specify Windows stream security settings of the custom binding.
 ## Syntax  
   
 ```xml  
-<windowsStreamSecurity protectionLevel="None/Sign/EncryptAndSign"/>  
+<windowsStreamSecurity protectionLevel="None/Sign/EncryptAndSign" />
 ```  
   
 ## Attributes and Elements  

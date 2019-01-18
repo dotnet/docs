@@ -10,7 +10,7 @@ ms.assetid: 34041a40-2c87-467a-9ffb-a0417d8f67a8
 ---
 # for (C# reference)
 
-The `for` statement executes a statement or a block of statements while a specified boolean expression evaluates to `true`.
+The `for` statement executes a statement or a block of statements while a specified Boolean expression evaluates to `true`.
 
 At any point within the `for` statement block, you can break out of the loop by using the [break](break.md) statement, or step to the next iteration in the loop by using the [continue](continue.md) statement. You also can exit a `for` loop by the [goto](goto.md), [return](return.md), or [throw](throw.md) statements.
 
@@ -99,14 +99,12 @@ The following example defines the infinite `for` loop:
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The for statement](~/_csharplang/spec/statements.md#the-for-statement) section of the [C# language specification](../language-specification/index.md).
 
 ## See also
 
-- [The for statement (C# language specification)](/dotnet/csharp/language-reference/language-specification/statements#the-for-statement)
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [foreach, in](foreach-in.md)
-- [for Statement (C++)](/cpp/cpp/for-statement-cpp)
 - [Iteration Statements](iteration-statements.md)
+- [foreach, in](foreach-in.md)

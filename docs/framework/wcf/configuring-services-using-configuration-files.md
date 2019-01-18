@@ -10,7 +10,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
  A WCF service is configurable using the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
   
- For more information, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). For a list of of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+ For more information, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). For a list of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
 > [!IMPORTANT]
 >  When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
@@ -31,7 +31,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 <system.ServiceModel>  
   
    <services>  
-   <!—- Define the service endpoints. This section is optional in the new  
+   <!-- Define the service endpoints. This section is optional in the new  
     default configuration model in .NET Framework 4. -->  
       <service>  
          <endpoint/>  
@@ -120,7 +120,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
     <basicHttpBinding>  
      <binding name="myBindingConfiguration1" closeTimeout="00:01:00" />  
      <binding name="myBindingConfiguration2" closeTimeout="00:02:00" />  
-     <binding closeTimeout="00:03:00" />  <!—- Default binding for basicHttpBinding -->  
+     <binding closeTimeout="00:03:00" />  <!-- Default binding for basicHttpBinding -->  
     </basicHttpBinding>  
      </bindings>  
      <services>  
@@ -180,9 +180,9 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ## Behavior Merge  
  The behavior merge feature makes it easier to manage behaviors when you want a set of common behaviors to be used consistently. This feature allows you to specify behaviors at different levels of the configuration hierarchy and have services inherit behaviors from multiple levels of the configuration hierarchy. To illustrate how this works assume you have the following virtual directory layout in IIS:  
   
- ~\Web.config~\Service.svc~\Child\Web.config~\Child\Service.svc  
+ `~\Web.config~\Service.svc~\Child\Web.config~\Child\Service.svc`
   
- And your ~\Web.config file has the following contents:  
+ And your `~\Web.config` file has the following contents:  
   
 ```xml  
 <configuration>  

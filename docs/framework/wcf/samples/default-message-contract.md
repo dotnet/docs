@@ -15,7 +15,7 @@ The Default Message Contract sample demonstrates a service where a custom user-d
   
  In the service, a single service operation is defined that accepts and returns custom messages of type `MyMessage`. Although in this sample the request and response messages are of the same type, they could of course be different message contracts if necessary.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface ICalculator  
 {  
@@ -27,7 +27,7 @@ public interface ICalculator
   
  The custom message `MyMessage` is defined in a class annotated with <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. Only the third constructor is used in this sample. Using message contracts allows you to exercise full control over the SOAP message. In this sample, the <xref:System.ServiceModel.MessageHeaderAttribute> attribute is used to put `Operation` in a SOAP header. The operands `N1`, `N2` and the `Result` appear within the SOAP body because they have the <xref:System.ServiceModel.MessageBodyMemberAttribute> attribute applied.  
   
-```  
+```csharp
 [MessageContract]  
 public class MyMessage  
 {  
@@ -93,7 +93,7 @@ public class MyMessage
   
  The implementation class contains the code for the `Calculate` service operation. The `CalculateService` class obtains the operands and operator from the request message and creates a response message that contains the result of the requested calculation, as shown in the following sample code.  
   
-```  
+```csharp
 // Service class which implements the service contract.  
 public class CalculatorService : ICalculator  
 {  
@@ -127,29 +127,31 @@ public class CalculatorService : ICalculator
   
  The generated client code for the client was created with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool. The tool automatically creates message contract types in the generated client code if necessary. The `/messageContract` command option may be specified to force the generation of message contracts.  
   
-```  
+```console  
 svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" /o:client\generatedClient.cs http://localhost/servicemodelsamples/service.svc/mex  
 ```  
   
  The following sample code demonstrates the client using the `MyMessage` message.  
   
-```  
+```csharp
 // Create a client with given client endpoint configuration  
 CalculatorClient client = new CalculatorClient();  
   
 // Perform addition using a typed message.  
   
-MyMessage request = new MyMessage();  
-request.N1 = 100D;  
-request.N2 = 15.99D;  
-request.Operation = "+";  
+MyMessage request = new MyMessage() 
+                    {  
+                        N1 = 100D,  
+                        N2 = 15.99D,  
+                        Operation = "+"  
+                    };
 MyMessage response = ((ICalculator)client).Calculate(request);  
 Console.WriteLine("Add({0},{1}) = {2}", request.N1, request.N2, response.Result);  
 ```  
   
  When you run the sample, the calculations are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

@@ -81,5 +81,5 @@ Assembly attributes are values that provide information about an assembly. The a
  [!code-vb[AssemblyDelaySignAttribute#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source2.vb#4)]  
   
 ## See Also  
- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
+- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

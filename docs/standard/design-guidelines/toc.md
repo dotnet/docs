@@ -46,4 +46,3 @@
 ### [Equality Operators](equality-operators.md)
 ## [Common Design Patterns](common-design-patterns.md)
 ### [Dependency Properties](dependency-properties.md)
-### [Dispose Pattern](dispose-pattern.md)

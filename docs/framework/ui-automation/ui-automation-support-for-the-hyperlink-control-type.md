@@ -53,7 +53,7 @@ ms.author: "mhopkins"
 |---------------------------------------|--------------------|-----------|  
 |<xref:System.Windows.Automation.Provider.IInvokeProvider>|Yes|All hyperlink controls must support the Invoke pattern.|  
 |<xref:System.Windows.Automation.Provider.IValueProvider>|Depends|Hyperlink controls should support the Value control pattern when the link contains information that is usable and meaningful to the user.|  
-|<xref:System.Windows.Automation.Provider.IValueProvider.Value>|For example, `"http://www...."`|A URL for an Internet or Intranet address is an example of a hyperlink that contains information that is meaningful to the user. A programmatic link, however, is meaningful only to an application and is not recommended for the Value property.|  
+|<xref:System.Windows.Automation.Provider.IValueProvider.Value>|For example, `"https://www...."`|A URL for an Internet or Intranet address is an example of a hyperlink that contains information that is meaningful to the user. A programmatic link, however, is meaningful only to an application and is not recommended for the Value property.|  
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  

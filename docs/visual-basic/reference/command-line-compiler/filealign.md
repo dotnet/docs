@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "/filealign compiler option [Visual Basic]"
   - "filealign compiler option [Visual Basic]"
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
-author: rpetrusha
-ms.author: ronpet
 ---
 # -filealign
 Specifies where to align the sections of the output file.  

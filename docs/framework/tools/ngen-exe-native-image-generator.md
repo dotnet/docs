@@ -49,7 +49,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
 > [!NOTE]
 >  Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](https://msdn.microsoft.com/library/5a69fc7a-103f-4afc-8ab4-606adcb46324).  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -517,7 +517,7 @@ ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
 |NET Framework NGEN v4.0.30319|Yes|Yes|  
 |NET Framework NGEN v4.0.30319 64|No|Yes|  
   
- The native image task is is available in the .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service][Native Image Service].  
+ The native image task is available in the .NET Framework 4.5 and later versions, when running on Windows 8 or later. On earlier versions of Windows, the .NET Framework uses the [Native Image Service][Native Image Service].  
   
 ### Task Lifetime  
  In general, the Windows Task Scheduler starts the native image task every night when the computer is idle. The task checks for any deferred work that is queued by application installers, any deferred native image update requests, and any automatic image creation. The task completes outstanding work items and then shuts down. If the computer stops being idle while the task is running, the task stops.  

@@ -9,7 +9,7 @@ ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04
 ---
 # Get Started
 
-There are a number of ways to get started with .NET.  Because .NET is a massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.
+There are a number of ways to get started with .NET. Because .NET is a massive platform, there are multiple articles in this documentation which show how you can get started with .NET, each from a different perspective.
 
 ## Get started using .NET languages
 

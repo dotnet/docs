@@ -2,14 +2,13 @@
 title: "WindowsStreamSecurityBindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 4b0508c5-669c-4fe3-9225-8a10f8ee3be4
-author: "BrucePerlerMS"
 ---
 # WindowsStreamSecurityBindingElement
 WindowsStreamSecurityBindingElement  
   
 ## Syntax  
   
-```  
+```csharp
 class WindowsStreamSecurityBindingElement : BindingElement  
 {  
   string ProtectionLevel;  

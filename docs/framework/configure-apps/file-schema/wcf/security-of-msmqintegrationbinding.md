@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;msmqIntegrationBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;msmqIntegrationBinding&gt;
 Defines the transport security settings for the Message Queuing (MSMQ) integration channel.  
@@ -16,19 +15,19 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```xml  
-<msmqIntegrationBinding>  
-   <binding>   
-       <security mode="None/Transport">  
-         <transport msmqAuthenticationMode="None/Windows/Certificate"  
-            msmqEncryptionAlgorithm="RC4Stream/AES"  
-            msmqProtectionLevel="None/Sign/EncryptAndSign"  
-            msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-          <message  algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
-                        clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-            defaultProtectionLevel="None/Sign/EncryptAndSign" />  
-       </security>  
-   </binding>  
-</msmqIntegrationBinding>   
+<msmqIntegrationBinding>
+  <binding>
+    <security mode="None/Transport">
+      <transport msmqAuthenticationMode="None/Windows/Certificate"
+                 msmqEncryptionAlgorithm="RC4Stream/AES"
+                 msmqProtectionLevel="None/Sign/EncryptAndSign"
+                 msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+      <message algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"
+               clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+               defaultProtectionLevel="None/Sign/EncryptAndSign" />
+    </security>
+  </binding>
+</msmqIntegrationBinding>
 ```  
   
 ## Attributes and Elements  
@@ -61,6 +60,6 @@ msmqIntegrationBinding
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [\<msmqIntegrationBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)

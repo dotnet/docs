@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
 ---
 # WCF Web HTTP Service Help Page
-[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides an automatic help page for WCF WEB HTTP services. This help page lists a description of each operation, request and response formats, and schemas. This functionality is turned off by default. When a user browses to a WCF WEB HTTP service and appends "/Help" on to the end of the URL, for example http://localhost:8000/Customers/Help, a help page like the following is displayed.  
+[!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] provides an automatic help page for WCF WEB HTTP services. This help page lists a description of each operation, request and response formats, and schemas. This functionality is turned off by default. When a user browses to a WCF WEB HTTP service and appends "/Help" on to the end of the URL, for example `http://localhost:8000/Customers/Help`, a help page like the following is displayed.  
   
  ![WCF REST Help Page](../../../../docs/framework/wcf/feature-details/media/wcfresthelppagemain.gif "WCFRESTHELPPAGEMAIN")  
   

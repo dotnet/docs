@@ -57,7 +57,7 @@ public sealed class Add : CodeActivity<int>
   
  **Value for a required activity argument 'Operand1' was not supplied.**  
 > [!NOTE]
-> For more information about about checking for and handling validation errors and warnings, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).  
+> For more information about checking for and handling validation errors and warnings, see [Invoking Activity Validation](../../../docs/framework/windows-workflow-foundation/invoking-activity-validation.md).  
   
 ## Using Overload Groups
 

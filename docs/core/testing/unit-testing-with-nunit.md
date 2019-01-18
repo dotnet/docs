@@ -3,6 +3,7 @@ title: Unit testing C# with NUnit and .NET Core
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and NUnit.
 author: rprouse
 ms.date: 08/31/2018
+ms.custom: "seodec18"
 ---
 # Unit testing C# with NUnit and .NET Core
 
@@ -10,7 +11,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET Core SDK 2.1 (v. 2.1.400)](https://www.microsoft.com/net/download) or later versions.
+- [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Creating the source project
@@ -102,10 +103,10 @@ The following outline shows the final solution layout:
         PrimeService.Tests.csproj
 ```
 
-Execute the following command in the *unit-testing-using-dotnet-test* directory:
+Execute the following command in the *unit-testing-using-nunit* directory:
 
 ```console
-dotnet sln add .\PrimeService.Tests\PrimeService.Tests.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
 ## Creating the first test

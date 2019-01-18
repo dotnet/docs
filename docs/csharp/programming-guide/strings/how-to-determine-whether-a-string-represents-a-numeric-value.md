@@ -1,5 +1,6 @@
 ---
-title: "How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide)"
+title: "How to: Determine Whether a String Represents a Numeric Value - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "numeric strings [C#]"

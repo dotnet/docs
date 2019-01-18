@@ -167,4 +167,4 @@ author: "BrucePerlerMS"
   
     ||||||  
     |-|-|-|-|-|  
-    |LOCAL AUTHORITY|LOCAL AUTHORITY|http://schemas.microsoft.com/ws/2008/06/identity/claims/role|Admin|http://www.w3.org/2001/XMLSchema#string|
+    |LOCAL AUTHORITY|LOCAL AUTHORITY|`http://schemas.microsoft.com/ws/2008/06/identity/claims/role`|Admin|<https://www.w3.org/2001/XMLSchema#string>|

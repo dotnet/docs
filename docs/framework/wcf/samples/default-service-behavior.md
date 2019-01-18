@@ -16,7 +16,7 @@ This sample demonstrates how service behavior settings can be configured. The sa
   
  The service class specifies behaviors with the <xref:System.ServiceModel.ServiceBehaviorAttribute> and the <xref:System.ServiceModel.OperationBehaviorAttribute> as shown in the following code sample. All values specified are the defaults.  
   
-```  
+```csharp
 [ServiceBehavior(  
     AutomaticSessionShutdown=true,  
     ConcurrencyMode=ConcurrencyMode.Single,  
@@ -62,7 +62,7 @@ public class CalculatorService : ICalculator
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The delay between the calls is the result of the calls to `System.Threading.Thread.Sleep()` made in the service operations. The rest of the behavior samples explain these behaviors in more detail. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

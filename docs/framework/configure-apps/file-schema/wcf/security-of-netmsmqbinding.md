@@ -2,7 +2,6 @@
 title: "&lt;security&gt; of &lt;netMsmqBinding&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 001d11a9-7439-498c-b09d-fca20eaf8cd3
-author: "BrucePerlerMS"
 ---
 # &lt;security&gt; of &lt;netMsmqBinding&gt;
 Defines the security settings for a MSMQ binding. It specifies whether transport or SOAP security is enabled and, if so, what authentication mode and protection levels are in use.  
@@ -16,15 +15,14 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 ## Syntax  
   
 ```xml  
-<security mode="None/Transport/Message/Both">  
-   <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-      msmqEncryptionAlgorithm="RC4Stream/AES"  
-      msmqProtectionLevel="None/Sign/EncryptAndSign"  
-      msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-      <message  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-      clientCredentialType="None/Windows/UserName/Certificate/CardSpace"/>  
-</security>  
+<security mode="None/Transport/Message/Both">
+  <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+             msmqEncryptionAlgorithm="RC4Stream/AES"
+             msmqProtectionLevel="None/Sign/EncryptAndSign"
+             msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+    <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+             clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -57,6 +55,6 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

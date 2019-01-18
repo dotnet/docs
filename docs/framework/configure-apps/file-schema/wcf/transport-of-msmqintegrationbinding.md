@@ -16,12 +16,12 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```xml  
-<security>  
-    <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
-        msmqEncryptionAlgorithm="RC4Stream/AES"  
-        msmqProtectionLevel="None/Sign/EncryptAndSign"  
-        msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-</security>  
+<security>
+  <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"
+             msmqEncryptionAlgorithm="RC4Stream/AES"
+             msmqProtectionLevel="None/Sign/EncryptAndSign"
+             msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -57,5 +57,5 @@ msmqIntegrationBinding
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

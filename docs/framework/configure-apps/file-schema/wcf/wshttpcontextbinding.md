@@ -12,46 +12,46 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
   
 ## Syntax  
   
-```xml
-<wsHttpContextBinding>  
-  <binding allowCookies="Boolean" 
-           bypassProxyOnLocal="Boolean"  
-           closeTimeout="TimeSpan" 
-           contextProtectionLevel="EncryptAndSign/None/Sign" 
-           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard" 
-           maxBufferPoolSize="integer" 
-           maxReceivedMessageSize="Integer" 
-           messageEncoding="Text/Mtom" 
-           name="string" 
-           openTimeout="TimeSpan" 
-           proxyAddress="URI" 
-           receiveTimeout="TimeSpan" 
-           sendTimeout="TimeSpan" 
-           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-           transactionFlow="Boolean"  
-           useDefaultWebProxy="Boolean">  
-    <reliableSession ordered="Boolean"  
-                     inactivityTimeout="TimeSpan"  
-                     enabled="Boolean" />  
-    <security mode="Message/None/Transport/TransportWithCredential">  
-      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                 realm="string"   
-                 defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                 defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                 defaultRealm="string" />  
-      <message clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  
-               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-               establishSecurityContext="Boolean"   
-               negotiateServiceCredential="Boolean" />  
-    </security>  
-    <readerQuotas maxArrayLength="Integer" 
-                  maxBytesPerRead="Integer" 
-                  maxDepth="Integer" 
-                  maxNameTableCharCount="Integer" 
+```xml  
+<wsHttpContextBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           contextProtectionLevel="EncryptAndSign/None/Sign"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="integer"
+           maxReceivedMessageSize="Integer"
+           messageEncoding="Text/Mtom"
+           name="string"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transactionFlow="Boolean"
+           useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <security mode="Message/None/Transport/TransportWithCredential">
+      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 realm="string"
+                 defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 defaultRealm="string" />
+      <message clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               establishSecurityContext="Boolean"
+               negotiateServiceCredential="Boolean" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
                   maxStringContentLength="Integer" />
-  </binding>  
-</wsHttpContextBinding>  
+  </binding>
+</wsHttpContextBinding>
 ```  
   
 ## Attributes and Elements  
@@ -99,6 +99,6 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
  <xref:System.ServiceModel.Channels.ContextBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

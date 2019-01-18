@@ -20,11 +20,11 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] enables devel
 
  When working with the Entity Data Model Tools, the conceptual model, the storage model, and the mappings between the two are expressed in XML-based schemas and defined in files that have corresponding name extensions:
 
--   Conceptual schema definition language (CSDL) defines the conceptual model. CSDL is the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]'s implementation of the [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md). The file extension is .csdl.
+- Conceptual schema definition language (CSDL) defines the conceptual model. CSDL is the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]'s implementation of the [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md). The file extension is .csdl.
 
--   Store schema definition language (SSDL) defines the storage model, which is also called the logical model. The file extension is .ssdl.
+- Store schema definition language (SSDL) defines the storage model, which is also called the logical model. The file extension is .ssdl.
 
--   Mapping specification language (MSL) defines the mappings between the storage and conceptual models. The file extension is .msl.
+- Mapping specification language (MSL) defines the mappings between the storage and conceptual models. The file extension is .msl.
 
 The storage model and mappings can change as needed without requiring changes to the conceptual model, data classes, or application code. Because storage models are provider-specific, you can work with a consistent conceptual model across various data sources.
 
@@ -39,9 +39,9 @@ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses these mo
 
 More than just another object-relational mapping solution, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is fundamentally about enabling applications to access and change data that is represented as entities and relationships in the conceptual model. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses information in the model and mapping files to translate object queries against entity types represented in the conceptual model into data source-specific queries. Query results are materialized into objects that the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] manages. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provides the following ways to query a conceptual model and return objects:
 
--   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)]. Provides Language-Integrated Query (LINQ) support for querying entity types that are defined in a conceptual model. For more information, see [LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).
+- [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)]. Provides Language-Integrated Query (LINQ) support for querying entity types that are defined in a conceptual model. For more information, see [LINQ to Entities](../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md).
 
--   [!INCLUDE[esql](../../../../../includes/esql-md.md)]. A storage-independent dialect of SQL that works directly with entities in the conceptual model and that supports [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] concepts. [!INCLUDE[esql](../../../../../includes/esql-md.md)] is used both with object queries and queries that are executed by using the EntityClient provider. For more information, see [Entity SQL Overview](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md).
+- [!INCLUDE[esql](../../../../../includes/esql-md.md)]. A storage-independent dialect of SQL that works directly with entities in the conceptual model and that supports [!INCLUDE[adonet_edm](../../../../../includes/adonet-edm-md.md)] concepts. [!INCLUDE[esql](../../../../../includes/esql-md.md)] is used both with object queries and queries that are executed by using the EntityClient provider. For more information, see [Entity SQL Overview](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md).
 
 The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes the EntityClient data provider. This provider manages connections, translates entity queries into data source-specific queries, and returns a data reader that the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] uses to materialize entity data into objects. When object materialization is not required, the EntityClient provider can also be used like a standard [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] data provider by enabling applications to execute [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries and consume the returned read-only data reader. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).
 
@@ -65,7 +65,7 @@ Together with the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]
 
 To learn more about the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], see:
 
-[Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md) -  Provides information about how to get up and running quickly using the [Quickstart](https://msdn.microsoft.com/library/0bc534be-789f-4819-b9f6-76e51d961675), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.
+[Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md) - Provides information about how to get up and running quickly using the [Quickstart](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399182(v=vs.100)), which shows how to create a simple [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application.
 
 [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md) - Defines many of the terms that are introduced by the Entity Data Model and the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and that are used in [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] documentation.
 

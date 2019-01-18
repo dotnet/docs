@@ -21,7 +21,7 @@ The Supporting Tokens sample demonstrates how to add additional tokens to a mess
 ## Client Authenticates with Username Token and Supporting X.509 Security Token
  The service exposes a single endpoint for communicating that is programmatically created using the `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service X.509 certificate to protect the symmetric key during transmission and to pass a `UserNameToken` along with the supporting `X509SecurityToken` in a WS-Security message header. The symmetric key is used to encrypt the message body and the username security token. The supporting token is passed as an additional binary security token in the WS-Security message header. The authenticity of the supporting token is proved by signing part of the message with the private key associated with the supporting X.509 security token.
 
-```
+```csharp
 public static Binding CreateMultiFactorAuthenticationBinding()
 {
     HttpTransportBindingElement httpTransport = new HttpTransportBindingElement();
@@ -49,7 +49,7 @@ public static Binding CreateMultiFactorAuthenticationBinding()
 
  The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate. The sample uses `CN=localhost` as a subject name in the service X.509 certificate.
 
-```
+```csharp
 override protected void InitializeRuntime()
 {
     // Extract the ServiceCredentials behavior or create one.
@@ -82,7 +82,7 @@ This setting is less secure than the default, ChainTrust. The security implicati
 
  Service code:
 
-```
+```csharp
 [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
 public class EchoService : IEchoService
 {
@@ -94,8 +94,7 @@ public class EchoService : IEchoService
             OperationContext.Current.ServiceSecurityContext,
             out userName,
             out certificateSubjectName);
-            return String.Format("Hello {0}, {1}",
-                    userName, certificateSubjectName);
+            return $"Hello {userName}, {certificateSubjectName}";
     }
 
     public void Dispose()
@@ -168,7 +167,7 @@ public class EchoService : IEchoService
 
  The client endpoint is configured in a similar way to the service endpoint. The client uses the same `BindingHelper` class to create a binding. The rest of the setup is located in `Client` class. The client sets information about the user name security token, the supporting X.509 security token and information about the service X.509 certificate in the setup code to the client endpoint behaviors collection.
 
-```
+```csharp
  static void Main()
  {
      // Create the custom binding and an endpoint address for
@@ -279,7 +278,7 @@ public class EchoService : IEchoService
 ## Displaying Callers' Information
  To display the caller's information, you can use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. Those claims are supplied automatically by Windows Communication Foundation (WCF) for every token received in the message.
 
-```
+```csharp
 bool TryGetClaimValue<TClaimResource>(ClaimSet claimSet, string
                          claimType, out TClaimResource resourceValue)
     where TClaimResource : class
@@ -436,13 +435,13 @@ iisreset
   
 4.  Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
+5.  On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
 6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client machine.  
   
-8.  On the client, run `setup.bat client` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+8.  On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
 9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
   

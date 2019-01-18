@@ -135,9 +135,9 @@ public class CalculatorService : ICalculator
   
  The service exposes the endpoint at the base address provided by the IIS or WAS host. The binding is configured with a standard <xref:System.ServiceModel.WSHttpBinding>, which provides HTTP communication and standard Web service protocols for addressing and security. The contract is the `ICalculator` implemented by the service.  
   
- As configured, the service can be accessed at http://localhost/servicemodelsamples/service.svc by a client on the same computer. For clients on remote computersto access the service, a fully-qualified domain name must be specified instead of localhost.  
+ As configured, the service can be accessed at `http://localhost/servicemodelsamples/service.svc` by a client on the same computer. For clients on remote computers to access the service, a fully-qualified domain name must be specified instead of localhost.  
   
- The framework does not expose metadata by default. As such, the service turns on the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> and exposes a metadata exchange (MEX) endpoint at http://localhost/servicemodelsamples/service.svc/mex. The following configuration demonstrates this.  
+ The framework does not expose metadata by default. As such, the service turns on the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> and exposes a metadata exchange (MEX) endpoint at `http://localhost/servicemodelsamples/service.svc/mex`. The following configuration demonstrates this.  
   
 ```xaml  
 <system.serviceModel>  

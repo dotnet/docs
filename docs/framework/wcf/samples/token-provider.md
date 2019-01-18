@@ -2,7 +2,6 @@
 title: "Token Provider"
 ms.date: "03/30/2017"
 ms.assetid: 947986cf-9946-4987-84e5-a14678d96edb
-author: "BrucePerlerMS"
 ---
 # Token Provider
 This sample demonstrates how to implement a custom token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:
@@ -268,7 +267,7 @@ static void DisplayIdentityInformation()
   
 2.  Copy the service program files to the service directory on the service computer. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run from a Visual Studio command prompt opened with administrator privileges. You must set `%SERVER_NAME%` variable to fully-qualified host name of the computer that is used to host the service.  
+3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. The Service.exe.config file must be updated to reflect this new certificate name. You can create server certificate by modifying the Setup.bat batch file. Note that the setup.bat file must be run from a Developer Command Prompt for Visual Studio opened with administrator privileges. You must set `%SERVER_NAME%` variable to fully-qualified host name of the computer that is used to host the service.  
   
 4.  Copy the server certificate into the CurrentUser-TrustedPeople store of the client. You do not need to do this when the server certificate is issued by a client trusted issuer.  
   

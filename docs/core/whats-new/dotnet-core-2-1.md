@@ -1,9 +1,12 @@
 ---
 title: What's new in .NET Core 2.1
 description: Learn about the new features found in .NET Core 2.1.
+dev_langs: 
+  - "csharp"
+  - "vb"
 author: rpetrusha
 ms.author: ronpet
-ms.date: 06/06/2018
+ms.date: 10/10/2018
 ---
 # What's new in .NET Core 2.1
 
@@ -70,7 +73,7 @@ Once installed, the tool can be run from the command line by specifying the tool
 
 ### Tool management with the `dotnet tool` command
 
-In .NET Core SDK 2.1 (v 2.1.300), all tools operations use the `dotnet tool` command. The following options are available:
+In .NET Core 2.1 SDK, all tools operations use the `dotnet tool` command. The following options are available:
 
 - [`dotnet tool install`](../tools/dotnet-tool-install.md) to install a tool.
 
@@ -160,9 +163,11 @@ You can opt into tiered compilation in either of two ways.
 
 Without these types, when passing such items as a portion of an array or a section of a memory buffer, you have to make a copy of some portion of the data before passing it to a method. These types provide a virtual view of that data that eliminates the need for the additional memory allocation and copy operations.
 
-The following example uses a <xref:System.Span%601> instance to provide a virtual view of 10 elements of an array.
+The following example uses a <xref:System.Span%601> and <xref:System.Memory%601> instance to provide a virtual view of 10 elements of an array.
 
 [!CODE-csharp[Span\<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
+
+[!CODE-vb[Memory\<T>](~/samples/core/whats-new/whats-new-in-21/vb/program.vb)]
 
 ### Brotli compression
 

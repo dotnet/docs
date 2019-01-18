@@ -1,5 +1,6 @@
 ---
-title: "How to: Use the XML documentation features (C# Programming Guide)"
+title: "How to: Use the XML documentation features - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 06/01/2018
 helpviewer_keywords: 
   - "XML documentation [C#]"

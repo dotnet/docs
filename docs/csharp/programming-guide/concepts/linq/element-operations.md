@@ -1,6 +1,6 @@
 ---
 title: "Element Operations (C#)"
-ms.date: 07/20/2015
+ms.date: 10/03/2018
 ms.assetid: 283206c9-3246-4c48-b01a-d9de409a7231
 ---
 # Element Operations (C#)
@@ -19,8 +19,8 @@ Element operations return a single, specific element from a sequence.
 |FirstOrDefault|Returns the first element of a collection, or the first element that satisfies a condition. Returns a default value if no such element exists.|Not applicable.|<xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.FirstOrDefault%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.FirstOrDefault%60%601%28System.Linq.IQueryable%7B%60%600%7D%29?displayProperty=nameWithType>|  
 |Last|Returns the last element of a collection, or the last element that satisfies a condition.|Not applicable.|<xref:System.Linq.Enumerable.Last%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Last%2A?displayProperty=nameWithType>|  
 |LastOrDefault|Returns the last element of a collection, or the last element that satisfies a condition. Returns a default value if no such element exists.|Not applicable.|<xref:System.Linq.Enumerable.LastOrDefault%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.LastOrDefault%2A?displayProperty=nameWithType>|  
-|Single|Returns the only element of a collection, or the only element that satisfies a condition.|Not applicable.|<xref:System.Linq.Enumerable.Single%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Single%2A?displayProperty=nameWithType>|  
-|SingleOrDefault|Returns the only element of a collection, or the only element that satisfies a condition. Returns a default value if no such element exists or the collection does not contain exactly one element.|Not applicable.|<xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SingleOrDefault%2A?displayProperty=nameWithType>|  
+|Single|Returns the only element of a collection or the only element that satisfies a condition. Throws an <xref:System.InvalidOperationException> if there is no element or more than one element to return. |Not applicable.|<xref:System.Linq.Enumerable.Single%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Single%2A?displayProperty=nameWithType>|  
+|SingleOrDefault|Returns the only element of a collection or the only element that satisfies a condition. Returns a default value if there is no element to return. Throws an <xref:System.InvalidOperationException> if there is more than one element to return. |Not applicable.|<xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SingleOrDefault%2A?displayProperty=nameWithType>|  
   
 ## See Also
 

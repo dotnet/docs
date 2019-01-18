@@ -18,7 +18,7 @@ ms.author: "mairaw"
 The Developer Command Prompt for Visual Studio enables you to use .NET Framework tools more easily. It is a command prompt that automatically sets specific environment variables.
 
 > [!div class="button"]
-[Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+> [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 ## Search for the command prompt on your machine
 
@@ -28,7 +28,7 @@ You may have multiple command prompts, depending on the version of Visual Studio
 
 1. In the search box on the taskbar, start typing the name of the tool, such as `dev` or `developer command prompt`. This brings up a list of installed apps that match your search pattern. If you're looking for a different command prompt, try entering a different search term such as `prompt`.
 
-2. Choose the **Developer Command Prompt** (or the command prompt you want to use).
+2. Choose the **Developer Command Prompt for Visual Studio** (or the command prompt you want to use).
 
 ### In Windows 8.1
 

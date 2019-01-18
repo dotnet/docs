@@ -37,7 +37,7 @@ TripleDESCryptoServiceProvider TDES = new TripleDESCryptoServiceProvider();
   
  When the previous code is executed, a new key and IV are generated and placed in the **Key** and **IV** properties, respectively.  
   
- Sometimes you might need to generate multiple keys. In this situation, you can create a new instance of a class that implements a symmetric algorithm and then create a new key and IV by calling the **GenerateKey** and **GenerateIV** methods. The following code example illustrates how to create new keys and IVs after a new instance of the asymmetric cryptographic class has been made.  
+ Sometimes you might need to generate multiple keys. In this situation, you can create a new instance of a class that implements a symmetric algorithm and then create a new key and IV by calling the **GenerateKey** and **GenerateIV** methods. The following code example illustrates how to create new keys and IVs after a new instance of the symmetric cryptographic class has been made.  
   
 ```vb  
 Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  

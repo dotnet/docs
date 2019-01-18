@@ -13,34 +13,38 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
 ## Syntax  
   
 ```xml  
-<basicHttpContextBinding>  
-   <binding   
-       allowCookies="Boolean"  
-       bypassProxyOnLocal="Boolean"  
-       closeTimeout="TimeSpan"   
-       envelopeVersion="None/Soap11/Soap12"  
-       hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-       maxBufferPoolSize="Integer"  
-       maxBufferSize="Integer"  
-       maxReceivedMessageSize="Integer"  
-       messageEncoding="Text/Mtom"  
-       name="string"   
-       openTimeout="TimeSpan"   
-       proxyAddress="URI"  
-       receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan"  
-       textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-       transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-       useDefaultWebProxy="Boolean"  
-       <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">  
-           <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"  
-                  proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
-                                    realm="string" />  
-           <message  algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"  
-                                    clientCredentialType="UserName/Certificate"/>  
-       </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
-</basicHttpContextBinding>  
+<basicHttpContextBinding>
+  <binding allowCookies="Boolean"
+           bypassProxyOnLocal="Boolean"
+           closeTimeout="TimeSpan"
+           envelopeVersion="None/Soap11/Soap12"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           maxBufferPoolSize="Integer"
+           maxBufferSize="Integer"
+           maxReceivedMessageSize="Integer"
+           messageEncoding="Text/Mtom"
+           name="String"
+           openTimeout="TimeSpan"
+           proxyAddress="URI"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
+           useDefaultWebProxy="Boolean">
+    <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">
+      <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"
+                 proxyCredentialType="None/Basic/Digest/Ntlm/Windows"
+                 realm="String" />
+      <message algorithmSuite="Aes128/Aes192/Aes256/Rsa15Aes128/ Rsa15Aes256/TripleDes"
+               clientCredentialType="UserName/Certificate" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</basicHttpContextBinding>
 ```  
   
 ## Attributes and Elements  
@@ -93,6 +97,6 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
  <xref:System.ServiceModel.Channels.ContextBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)

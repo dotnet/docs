@@ -12,16 +12,17 @@ Contains the settings needed by an application to participate in the service dis
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
         <discoveryClientSettings discoveryEndpoint="String">
-          <findCriteria duration="TimeSpan" 
-                        maxResults="Integer" 
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
                         scopeMatchBy="Uri">
             <contractTypeNames>
-              <add name="String" namespace="String" />
+              <add name="String"
+                   namespace="String" />
             <contractTypeNames>
             <extensions />
             <scopes>
@@ -31,8 +32,8 @@ Contains the settings needed by an application to participate in the service dis
         </discoveryClientSettings>
       <standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

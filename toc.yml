@@ -5,7 +5,7 @@
   - name: .NET
     tocHref: /dotnet/
     topicHref: /dotnet/index
-    items:     
+    items:
     - name: .NET API Browser
       tocHref: /dotnet/api/
       topicHref: /dotnet/api/index
@@ -13,6 +13,9 @@
       tocHref: /dotnet/standard/
       topicHref: /dotnet/standard/index
       items:
+      - name: Open-source library guidance
+        tocHref: /dotnet/standard/library-guidance/
+        topicHref: /dotnet/standard/library-guidance/index
       - name: Modern ASP.NET Web applications e-book
         tocHref: /dotnet/standard/modern-web-apps-azure-architecture/
         topicHref: /dotnet/standard/modern-web-apps-azure-architecture/index
@@ -24,10 +27,10 @@
         topicHref: /dotnet/standard/modernize-with-azure-and-containers/index
       - name: .NET Microservices - DevOps e-book
         tocHref: /dotnet/standard/containerized-lifecycle-architecture/
-        topicHref: /dotnet/standard/containerized-lifecycle-architecture/index 
+        topicHref: /dotnet/standard/containerized-lifecycle-architecture/index
       - name: Serverless apps e-book
         tocHref: /dotnet/standard/serverless-architecture/
-        topicHref: /dotnet/standard/serverless-architecture/index      
+        topicHref: /dotnet/standard/serverless-architecture/index
       - name: Asynchronous Programming Patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
@@ -106,9 +109,6 @@
       - name: Application Domains and Assemblies
         tocHref: /dotnet/framework/app-domains/
         topicHref: /dotnet/framework/app-domains/index
-      - name: Common Client Technologies
-        tocHref: /dotnet/framework/common-client-technologies/
-        topicHref: /dotnet/framework/common-client-technologies/index
       - name: Configuring Apps by using Configuration Files
         tocHref: /dotnet/framework/configure-apps/
         topicHref: /dotnet/framework/configure-apps/index
@@ -353,9 +353,9 @@
       tocHref: /dotnet/csharp/
       topicHref: /dotnet/csharp/index
       items:
-      - name: Quickstarts
-        tocHref: /dotnet/csharp/quick-starts/
-        topicHref: /dotnet/csharp/quick-starts/index
+      - name: Introduction to C#
+        tocHref: /dotnet/csharp/tutorials/intro-to-csharp/
+        topicHref: /dotnet/csharp/tutorials/intro-to-csharp/index
       - name: Getting started
         tocHref: /dotnet/csharp/getting-started/
         topicHref: /dotnet/csharp/getting-started/index
@@ -600,6 +600,9 @@
       tocHref: /dotnet/machine-learning/
       topicHref: /dotnet/machine-learning/index
       items:
+      - name: How-to guides
+        tocHref: /dotnet/machine-learning/how-to-guides/
+        topicHref: /dotnet/machine-learning/how-to-guides/index
       - name: Resources
         tocHref: /dotnet/machine-learning/resources/
         topicHref: /dotnet/machine-learning/resources/index

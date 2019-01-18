@@ -2,8 +2,8 @@
 title: Create a custom template for dotnet new
 description: Learn how to create a custom template for the dotnet new command in this fun tutorial.
 author: guardrex
-ms.author: mairaw
 ms.date: 08/12/2017
+ms.custom: seodec18
 ---
 # Create a custom template for dotnet new
 
@@ -58,7 +58,7 @@ The template is finished. At this point, you have two options for template distr
 1. Copy the contents of your project folder, together with its *.template.config/template.json* file, into the *content* folder you created.
 1. Next to the *content* folder, add a [*nuspec* file](/nuget/create-packages/creating-a-package). The nuspec file is an XML manifest file that describes a package's contents and drives the process of creating the NuGet package.
 
-   ![Directory structure showing the layout of the NuGet package](./media/create-custom-template/nugetdirectorylayout.png)
+   ![Directory structure showing the layout of the NuGet package](./media/create-custom-template/nuget-directory-layout.png)
 
 1. Inside of a **\<packageTypes>** element in the *nuspec* file, include a **\<packageType>** element with a `name` attribute value of `Template`. Both the *content* folder and the *nuspec* file should reside in the same directory. The table shows the minimum *nuspec* file elements required to produce a template as a NuGet package.
 
@@ -130,7 +130,7 @@ dotnet new -i NUnit3.DotNetNew.Template
 
 When you list the templates with `dotnet new -l`, you see the *NUnit 3 Test Project* with a short name of *nunit* in the template list. You're ready to use the template in the next section.
 
-![Console window showing the NUnit template listed with other installed templates](./media/create-custom-template/nunit1.png)
+![Console window showing the NUnit template with other templates](./media/create-custom-template/nunit-template-console-window.png)
 
 ### Create a project from the template
 
@@ -142,7 +142,7 @@ dotnet new nunit
 
 The console shows that the project is created and that the project's packages are restored. After the command is run, the project is ready for use.
 
-![Console window showing the output of the dotnet new command as it creates the NUnit project and restores the project dependencies](./media/create-custom-template/nunit2.png)
+![Console window shows the output of dotnet new nunit including restoring the project dependencies](./media/create-custom-template/dotnet-new-nunit-console-output.png)
 
 ### To uninstall a template from a NuGet package stored at nuget.org
 

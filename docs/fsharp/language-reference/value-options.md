@@ -1,5 +1,5 @@
 ---
-title: Value Options (F#)
+title: Value Options
 description: Learn about the F# Value Option type, which is a struct version of the Option type.
 ms.date: 06/16/2018
 ---
@@ -15,19 +15,14 @@ Not all performance-sensitive scenarios are "solved" by using structs. You must 
 
 ## Definition
 
-Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions) that is similar to the reference option type:
+Value Option is defined as a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions) that is similar to the reference option type. Its definition can be thought of this way:
 
 ```fsharp
 [<StructuralEquality; StructuralComparison>]
-[<CompiledName("FSharpValueOption`1")>]
 [<Struct>]
 type ValueOption<'T> =
-    | ValueNone: 'T voption
-    | ValueSome: 'T -> 'T voption
-
-    member Value : 'T
-
-and 'T voption = ValueOption<'T>
+    | ValueNone
+    | ValueSome of 'T
 ```
 
 Value Option conforms to structural equality and comparison. The main difference is that the compiled name, type name, and case names all indicate that it is a value type.

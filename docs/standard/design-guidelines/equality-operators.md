@@ -1,6 +1,6 @@
 ---
 title: "Equality Operators"
-ms.date: "03/30/2017"
+ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], Equals method"
@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "Equals method"
   - "== operator (equality) [.NET Framework]"
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
-author: "rpetrusha"
-ms.author: "ronpet"
+author: "KrzysztofCwalina"
 ---
 # Equality Operators
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.  

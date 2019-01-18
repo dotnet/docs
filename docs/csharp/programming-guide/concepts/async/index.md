@@ -6,7 +6,7 @@ ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
 # Asynchronous programming with async and await (C#)
 You can avoid performance bottlenecks and enhance the overall responsiveness of your application by using asynchronous programming. However, traditional techniques for writing asynchronous applications can be complicated, making them difficult to write, debug, and maintain.  
   
-[C# 5](../../../whats-new/index.md#previous-versions) introduced a simplified approach, async programming, that leverages asynchronous support in the .NET Framework 4.5 and higher, .NET Core, and the Windows Runtime. The compiler does the difficult work that the developer used to do, and your application retains a logical structure that resembles synchronous code. As a result, you get all the advantages of asynchronous programming with a fraction of the effort.  
+[C# 5](../../../whats-new/csharp-version-history.md#c-version-50) introduced a simplified approach, async programming, that leverages asynchronous support in the .NET Framework 4.5 and higher, .NET Core, and the Windows Runtime. The compiler does the difficult work that the developer used to do, and your application retains a logical structure that resembles synchronous code. As a result, you get all the advantages of asynchronous programming with a fraction of the effort.  
   
 This topic provides an overview of when and how to use async programming and includes links to support topics that contain details and examples.  
   
@@ -48,7 +48,7 @@ async Task<int> AccessTheWebAsync()
   
     // GetStringAsync returns a Task<string>. That means that when you await the  
     // task you'll get a string (urlContents).  
-    Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
+    Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
   
     // You can do work here that doesn't rely on the string from GetStringAsync.  
     DoIndependentWork();  
@@ -167,7 +167,7 @@ You specify <xref:System.Threading.Tasks.Task%601> as the return type if the met
   
 You use <xref:System.Threading.Tasks.Task>  as the return type if the method has no return statement or has a return statement that doesn't return an operand.  
 
-Starting with C# 7.0, you can also specify any other return type, provided that that type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
+Starting with C# 7.0, you can also specify any other return type, provided that the type includes a `GetAwaiter` method. <xref:System.Threading.Tasks.ValueTask%601> is an example of such a type. It is available in the [System.Threading.Tasks.Extension](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/) NuGet package.
   
  The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>.  
   
@@ -280,8 +280,8 @@ namespace AsyncFirstExample
   
             int contentLength = await AccessTheWebAsync();  
   
-            resultsTextBox.Text +=  
-                String.Format("\r\nLength of the downloaded string: {0}.\r\n", contentLength);  
+            resultsTextBox.Text +=
+                $"\r\nLength of the downloaded string: {contentLength}.\r\n";
         }  
   
         // Three things to note in the signature:  
@@ -296,7 +296,7 @@ namespace AsyncFirstExample
   
             // GetStringAsync returns a Task<string>. That means that when you await the  
             // task you'll get a string (urlContents).  
-            Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");  
+            Task<string> getStringTask = client.GetStringAsync("https://msdn.microsoft.com");  
   
             // You can do work here that doesn't rely on the string from GetStringAsync.  
             DoIndependentWork();  

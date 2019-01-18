@@ -14,9 +14,9 @@ ms.author: "ronpet"
  Do not handle these exceptions in your code.  
  These exceptions indicate either that metadata needed by your application is absent (the [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md) and [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exceptions) or that implementation code needed by your application is missing (the [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exception). You correct these exception conditions by modifying a runtime directives (.rd.xml) file to make the required metadata or implementation code available at runtime. For more information, see [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). Two troubleshooters are available that supply the appropriate entries for your runtime directives file that will eliminate [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) and [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions:  
   
--   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/type.html) for types.  
+-   The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/type.html) for types.  
   
--   The [MissingMetadataException troubleshooter](http://dotnet.github.io/native/troubleshooter/method.html) for methods.  
+-   The [MissingMetadataException troubleshooter](https://dotnet.github.io/native/troubleshooter/method.html) for methods.  
   
 > [!NOTE]
 >  This reference documents three exception types that are unique to [!INCLUDE[net_native](../../../includes/net-native-md.md)]. For reference documentation for the .NET Framework core reflection API, see [System.Reflection Namespaces](https://msdn.microsoft.com/library/gg145033.aspx). For reference documentation for the .NET Framework core interop API, see <xref:System.Runtime.InteropServices>.  

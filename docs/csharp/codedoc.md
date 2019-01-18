@@ -14,7 +14,7 @@ XML documentation comments, like all other comments, are ignored by the compiler
 
 You can generate the XML file at compile time by doing one of the following:
 
-- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the assembly:
+- If you are developing an application with .NET Core from the command line, you can add a [DocumentationFile element](/visualstudio/msbuild/common-msbuild-project-properties) to the `<PropertyGroup>` section of your .csproj project file. The following example generates an XML file in the project directory with the same root filename as the assembly:
 
    ```xml
    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
@@ -45,7 +45,7 @@ Here's code for the simple math library:
 The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` data types.
 
 Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
-As mentioned earlier XML documentation tags can be used to achieve this, You will now be introduced to the standard XML tags the C# compiler supports.
+As mentioned earlier XML documentation tags can be used to achieve this. You will now be introduced to the standard XML tags the C# compiler supports.
 
 ### &lt;summary&gt;
 
@@ -194,7 +194,7 @@ And there you have it: our code is back to being readable, and no documentation 
 
 The `filename` attribute represents the name of the XML file containing the documentation.
 
-The `path` attribute represents an [XPath](https://msdn.microsoft.com/library/ms256115.aspx) query to the `tag name` present in the specified `filename`.
+The `path` attribute represents an [XPath](../standard/data/xml/xpath-queries-and-namespaces.md) query to the `tag name` present in the specified `filename`.
 
 The `name` attribute represents the name specifier in the tag that precedes the comments.
 
@@ -203,8 +203,8 @@ The `id` attribute which can be used in place of `name` represents the ID for th
 ### User Defined Tags
 
 All the tags outlined above represent those that are recognized by the C# compiler. However, a user is free to define their own tags.
-Tools like Sandcastle bring support for extra tags like [`<event>`](http://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm), [`<note>`](http://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm)
-and even support [documenting namespaces](http://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
+Tools like Sandcastle bring support for extra tags like [`<event>`](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm), [`<note>`](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm)
+and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
 Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
 
 ## Recommendations

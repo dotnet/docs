@@ -15,21 +15,21 @@ To add a filter to the collection, use the `add` keyword. When one or more filte
 Filters support the full XPath syntax, and are applied in the order they appear in the configuration file. A syntactically incorrect filter results in a configuration exception.
 
 The following is an example of how to configure a filter that records only messages that have a SOAP Header section.
-
-```xml
+  
+```xml  
 <messageLogging logEntireMessage="true"
                 logMalformedMessages="true"
                 logMessagesAtServiceLevel="true"
                 logMessagesAtTransportLevel="true"
-                maxMessagesToLog="420">  
-  <filters>  
-    <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">  
-      /soap:Envelope/soap:Headers  
-    </add>  
-  </filters>  
+                maxMessagesToLog="420">
+  <filters>
+    <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+      /soap:Envelope/soap:Headers
+    </add>
+  </filters>
 </messageLogging>
-```
-
+```  
+  
 ## See also
 
  <xref:System.ServiceModel.Configuration.DiagnosticSection>

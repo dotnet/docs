@@ -15,7 +15,7 @@ This sample demonstrates the serialization support for unmarked types; that is, 
   
  The `ComplexNumber` class is used in the `ServiceContract`. The `ComplexNumber` type does not have the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes, as shown in the following sample code. By default, all public properties and fields are serialized.  
   
-```  
+```csharp
 public class ComplexNumber  
 {  
     public double Real;  

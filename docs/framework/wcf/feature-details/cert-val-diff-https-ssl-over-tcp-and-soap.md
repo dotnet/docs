@@ -7,7 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "certificates [WCF], validation differences"
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6
-author: "BrucePerlerMS"
 ---
 # Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security
 You can use certificates in Windows Communication Foundation (WCF) with message-layer (SOAP) security in addition to transport-layer security (TLS) over HTTP (HTTPS) or TCP. This topic describes differences in the way such certificates are validated.  

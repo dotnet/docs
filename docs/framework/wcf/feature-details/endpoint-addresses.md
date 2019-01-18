@@ -11,9 +11,9 @@ ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
 Every endpoint has an address associated with it, which is used to locate and identify the endpoint. This address consists primarily of a Uniform Resource Identifier (URI), which specifies the location of the endpoint. The endpoint address is represented in the Windows Communication Foundation (WCF) programming model by the <xref:System.ServiceModel.EndpointAddress> class, which contains an optional <xref:System.ServiceModel.EndpointAddress.Identity%2A> property that enables the authentication of the endpoint by other endpoints that exchange messages with it, and a set of optional <xref:System.ServiceModel.EndpointAddress.Headers%2A> properties, which define any other SOAP headers required to reach the service. The optional headers provide additional and more detailed addressing information to identify or interact with the service endpoint. The address of an endpoint is represented on the wire as a WS-Addressing endpoint reference (EPR).  
   
 ## URI Structure of an Address  
- The address URI for most transports has four parts. For example, the four parts of the URI http://www.fabrikam.com:322/mathservice.svc/secureEndpoint can be itemized as follows:  
+ The address URI for most transports has four parts. For example, the four parts of the URI `http://www.fabrikam.com:322/mathservice.svc/secureEndpoint` can be itemized as follows:  
   
--   Scheme: http:  
+-   Scheme: `http:`
   
 -   Machine: `www.fabrikam.com`  
   
@@ -50,9 +50,9 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  For example, a site could contain the following base addresses:  
   
--   http://payroll.myorg.com/Service.svc  
+- `http://payroll.myorg.com/Service.svc`
   
--   http://shipping.myorg.com/Service.svc  
+- `http://shipping.myorg.com/Service.svc`
   
  With [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
   
@@ -69,7 +69,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 </system.serviceModel>  
 ```  
   
- In the preceding example, net.tcp://payroll.myorg.com:8000 and http://shipping.myorg.com:8000 are the only base addresses, for their respective schemes, which are passed through.  
+ In the preceding example, `net.tcp://payroll.myorg.com:8000` and `http://shipping.myorg.com:8000` are the only base addresses, for their respective schemes, which are passed through.  
   
  The `baseAddressPrefixFilter` does not support wildcards.  
   

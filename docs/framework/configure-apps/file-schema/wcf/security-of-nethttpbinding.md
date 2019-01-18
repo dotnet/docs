@@ -6,7 +6,7 @@ ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 # &lt;security&gt; of &lt;netHttpBinding
 Defines the security capabilities of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<bindings>  
 \<netHttpBinding>  
 \<binding>  
@@ -15,15 +15,13 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 ## Syntax  
   
 ```xml  
-<security mode="Message/None/Transport/TransportWithCredential">  
-   <transport  
-      clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-      proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-      realm="string" />  
-   <message  
-      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-            clientCredentialType="Certificate/IssuedToken/None/UserName/Windows" />  
-</security>  
+<security mode="Message/None/Transport/TransportWithCredential">
+  <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+             proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+             realm="string" />
+  <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+           clientCredentialType="Certificate/IssuedToken/None/UserName/Windows" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -33,7 +31,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <!--zz <xref:System.ServiceModel.NetHttpSecurityMode> -->`System.ServiceModel.NetHttpSecurityMode`.|
+|mode|Optional. Specifies the type of security that is used. The default is `None`. This attribute is of type <xref:System.ServiceModel.BasicHttpSecurityMode>.|
   
 ## mode Attribute  
   
@@ -68,5 +66,5 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
  [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

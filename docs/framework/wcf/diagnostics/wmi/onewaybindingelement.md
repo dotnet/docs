@@ -8,7 +8,7 @@ OneWayBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class OneWayBindingElement : BindingElement  
 {  
   ChannelPoolSettings ChannelPoolSettings;  

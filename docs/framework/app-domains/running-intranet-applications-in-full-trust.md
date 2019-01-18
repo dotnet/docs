@@ -29,4 +29,4 @@ Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), applications 
 -   On 64-bit computers, create a subkey under the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework key in the system registry. Use the key name LegacyMyComputerZone with a DWORD value of 1. Create the same subkey under the HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework key.  
   
 ## See Also  
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

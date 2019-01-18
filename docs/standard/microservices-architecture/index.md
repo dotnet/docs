@@ -9,7 +9,7 @@ ms.date: 08/31/2018
 
 ![Book cover](./media/cover-small.png)
 
-**EDITION v2.1.02** - Updated to ASP.NET Core 2.1
+**EDITION v2.1.03** - Updated to ASP.NET Core 2.1
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
 
@@ -21,9 +21,9 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 * Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
  
-* Watch the [introductory video on Channel 9](http://aka.ms/microservices-video)
+* Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
 
-* Get to know the [Microservices Architecture](http://aka.ms/MicroservicesArchitecture) right away
+* Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
 
 ## Introduction
 
@@ -165,7 +165,7 @@ This book is provided “as-is” and expresses the author’s views and opinion
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-Microsoft and the trademarks listed at http://www.microsoft.com on the “Trademarks” webpage are trademarks of the Microsoft group of companies.
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the “Trademarks” webpage are trademarks of the Microsoft group of companies.
 
 Mac and macOS are trademarks of Apple Inc.
 
@@ -173,6 +173,5 @@ The Docker whale logo is a registered trademark of Docker, Inc. Used by permissi
 
 All other marks and logos are property of their respective owners.
 
-
 >[!div class="step-by-step"]
-[Next](container-docker-introduction/index.md)
+>[Next](container-docker-introduction/index.md)

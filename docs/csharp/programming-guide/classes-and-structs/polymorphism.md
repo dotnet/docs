@@ -1,5 +1,6 @@
 ---
-title: "Polymorphism (C# Programming Guide)"
+title: "Polymorphism - C# Programming Guide"
+ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, polymorphism"
@@ -90,8 +91,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
   
 ## See Also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
 - [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
 - [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  

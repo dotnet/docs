@@ -1,15 +1,16 @@
 ---
-title: .NET Core versioning
-description: Understand how .NET Core versioning works.
+title: How the .NET Core Runtime and SDK are versioned
+description: This article teaches you how the .NET Core SDK and Runtime are versioned (similar to semantic versioning).
 author: bleroy
-ms.author: mairaw
 ms.date: 07/26/2018
+ms.custom: "seodec18"
 ---
-# .NET Core versioning
+
+# Overview of how .NET Core is versioned
 
 .NET Core refers to the .NET Core Runtime and the .NET Core SDK, which contains the tools you need to develop applications. .NET Core SDKs are designed to work with any previous version of the .NET Core Runtime. This article explains the runtime and the SDK version strategy. An explanation of version numbers for .NET Standard can be found in the article introducing [.NET Standard](../../standard/net-standard.md#net-implementation-support).
 
-The .NET Core Runtime and .NET Core SDK add new features at a different rate - in general the .NET Core SDK provides updated tools more quickly than the .NET Core Runtime changes the runtime you use in production. Unfortunately, this problem has resulted in several versioning strategies over the last few years. You can learn about the history in the article on [.NET Core versioning](version-history.md).
+The .NET Core Runtime and .NET Core SDK add new features at a different rate - in general the .NET Core SDK provides updated tools more quickly than the .NET Core Runtime changes the runtime you use in production.
 
 ## Versioning details
 
@@ -26,7 +27,7 @@ The third position of the SDK version number communicates both the minor and pat
 | Runtime and SDK Patch | 2.2.1             | 2.2.102           |
 | SDK Feature change    | 2.2.1             | 2.2.200           |
 
-(\*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [history of .NET Core versioning](version-history.md).
+(\*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
 
 NOTES:
 
@@ -37,7 +38,7 @@ You can see more details in the initial proposal at the [dotnet/designs](https:/
 
 ## Semantic versioning
 
-The .NET Core *Runtime* roughly adheres to [Semantic Versioning (SemVer)](http://semver.org/), adopting the use of `MAJOR.MINOR.PATCH` versioning, using the various parts of the version number to describe the degree and type of change.
+The .NET Core *Runtime* roughly adheres to [Semantic Versioning (SemVer)](https://semver.org/), adopting the use of `MAJOR.MINOR.PATCH` versioning, using the various parts of the version number to describe the degree and type of change.
 
 ```
 MAJOR.MINOR.PATCH[-PRERELEASE-BUILDNUMBER]

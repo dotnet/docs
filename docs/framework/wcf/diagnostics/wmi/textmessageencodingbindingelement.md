@@ -8,7 +8,7 @@ TextMessageEncodingBindingElement
   
 ## Syntax  
   
-```  
+```csharp
 class TextMessageEncodingBindingElement : MessageEncodingBindingElement  
 {  
   string Encoding;  

@@ -28,7 +28,7 @@ environment.
 
 You've likely already written code that uses Expression Trees. Entity Framework's
 LINQ APIs accept Expression Trees as the arguments for the LINQ Query Expression Pattern.
-That enables [Entity Framework](http://docs.efproject.net/en/latest/) to translate the query you wrote in C# into SQL
+That enables [Entity Framework](/ef/) to translate the query you wrote in C# into SQL
 that executes in the database engine. Another example is [Moq](https://github.com/Moq/moq),
 which is a popular mocking framework for .NET.
 

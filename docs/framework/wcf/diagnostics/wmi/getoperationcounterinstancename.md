@@ -8,7 +8,7 @@ Retrieves the operation performance counter instance name.
   
 ## Syntax  
   
-```  
+```csharp
 string GetOperationCounterInstanceName(  
   string Operation  
 );  

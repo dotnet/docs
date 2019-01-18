@@ -15,28 +15,28 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```xml  
-<msmqIntegrationBinding>  
-   <binding   
-       closeTimeout="TimeSpan"   
-       customDeadLetterQueue="Uri"  
-       deadLetterQueue="Uri"  
-       durable="Boolean"  
-       exactlyOnce="Boolean"   
-       maxReceivedMessageSize"Integer"  
-       maxRetryCycles="Integer"   
-       name="string"   
-       openTimeout="TimeSpan"        receiveContextEnabled="Boolean"  
-       receiveErrorHandling="Drop/Fault/Move/Reject"  
-       receiveTimeout="TimeSpan"   
-       receiveRetryCount="Integer"  
-       retryCycleDelay="TimeSpan"    
-       sendTimeout="TimeSpan"   
-       serializationFormat="XML/Binary/ActiveX/ByteArray/Stream">  
-       timeToLive="TimeSpan"    
-       useMsmqTracing="Boolean  
-       useSourceJournal="Boolean"  
-   </binding>  
-</msmqIntegrationBinding>   
+<msmqIntegrationBinding>
+  <binding closeTimeout="TimeSpan"
+           customDeadLetterQueue="Uri"
+           deadLetterQueue="Uri"
+           durable="Boolean"
+           exactlyOnce="Boolean"
+           maxReceivedMessageSize="Integer"
+           maxRetryCycles="Integer"
+           name="String"
+           openTimeout="TimeSpan"
+           receiveContextEnabled="Boolean"
+           receiveErrorHandling="Drop/Fault/Move/Reject"
+           receiveTimeout="TimeSpan"
+           receiveRetryCount="Integer"
+           retryCycleDelay="TimeSpan"
+           sendTimeout="TimeSpan"
+           serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"
+           timeToLive="TimeSpan"
+           useMsmqTracing="Boolean"
+           useSourceJournal="Boolean">
+  </binding>
+</msmqIntegrationBinding>
 ```  
   
 ## Attributes and Elements  
@@ -94,34 +94,33 @@ msmqIntegrationBinding
 ## Example  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-    <bindings>  
-       <msmqIntegrationBinding>  
-           <binding   
-                    closeTimeout="00:00:10"   
-                    openTimeout="00:00:20"   
-                    receiveTimeout="00:00:30"   
-                    sendTimeout="00:00:40"   
-                    deadLetterQueue="net.msmq://localhost/blah"   
-                    durable="true"   
-                    exactlyOnce="true"   
-                    maxReceivedMessageSize="1000"   
-                    maxImmediateRetries="11"   
-                    maxRetryCycles="12"  
-                    poisonMessageHandling="Disabled"   
-                    rejectAfterLastRetry="false"   
-                    retryCycleDelay="00:05:55"   
-                    timeToLive="00:11:11"   
-                    useSourceJournal="true"   
-                    useMsmqTracing="true"   
-                    serializationFormat="Binary">  
-                    <security mode="None" />  
-           </binding>  
-       </msmqIntegrationBinding  
-   </bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <msmqIntegrationBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 deadLetterQueue="net.msmq://localhost/blah"
+                 durable="true"
+                 exactlyOnce="true"
+                 maxReceivedMessageSize="1000"
+                 maxImmediateRetries="11"
+                 maxRetryCycles="12"
+                 poisonMessageHandling="Disabled"
+                 rejectAfterLastRetry="false"
+                 retryCycleDelay="00:05:55"
+                 timeToLive="00:11:11"
+                 useSourceJournal="true"
+                 useMsmqTracing="true"
+                 serializationFormat="Binary">
+          <security mode="None" />
+        </binding>
+      </msmqIntegrationBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## See Also  
@@ -131,5 +130,5 @@ msmqIntegrationBinding
  [\<binding>](../../../../../docs/framework/misc/binding.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

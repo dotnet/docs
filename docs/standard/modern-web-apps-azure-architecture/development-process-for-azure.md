@@ -88,7 +88,7 @@ A new build is triggered on the build server whenever a new commit is made to th
 
 #### Step 4. Build Server: Continuous delivery
 
-Once a build as succeeded, the CD process will pick up the build artifacts produced. This will include a web deploy package. The build server will deploy this package to Azure App Service, replacing any existing service with the newly created one. Typically this step targets a staging environment, but some applications deploy directly to production through a CD process.
+Once a build has succeeded, the CD process will pick up the build artifacts produced. This will include a web deploy package. The build server will deploy this package to Azure App Service, replacing any existing service with the newly created one. Typically this step targets a staging environment, but some applications deploy directly to production through a CD process.
 
 #### Step 5. Azure App Service Web App
 
@@ -104,5 +104,5 @@ While the Web App is running, you can monitor the health of the application and 
 <https://docs.microsoft.com/azure/devops/build-release/apps/aspnet/build-aspnet-core>
 
 >[!div class="step-by-step"]
-[Previous](test-asp-net-core-mvc-apps.md)
-[Next](azure-hosting-recommendations-for-asp-net-web-apps.md)
+>[Previous](test-asp-net-core-mvc-apps.md)
+>[Next](azure-hosting-recommendations-for-asp-net-web-apps.md)

@@ -21,7 +21,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # How to: Encrypt XML Elements with Asymmetric Keys
-You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption is a standard way to exchange or store encrypted XML data, without worrying about the data being easily read.  For more information about the XML Encryption standard, see the World Wide Web Consortium (W3C) specification for XML Encryption located at http://www.w3.org/TR/xmldsig-core/.  
+You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption is a standard way to exchange or store encrypted XML data, without worrying about the data being easily read.  For more information about the XML Encryption standard, see the World Wide Web Consortium (W3C) specification for XML Encryption located at <https://www.w3.org/TR/xmldsig-core/>.  
   
  You can use XML Encryption to replace any XML element or document with an <`EncryptedData`> element that contains the encrypted XML data.  The <`EncryptedData`> element can also contain sub elements that include information about the keys and processes used during encryption.  XML Encryption allows a document to contain multiple encrypted elements and allows an element to be encrypted multiple times.  The code example in this procedure shows how to create an <`EncryptedData`> element along with several other sub elements that you can use later during decryption.  
   

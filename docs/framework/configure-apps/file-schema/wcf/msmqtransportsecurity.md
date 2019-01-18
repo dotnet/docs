@@ -2,7 +2,6 @@
 title: "&lt;msmqTransportSecurity&gt;"
 ms.date: "03/30/2017"
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-author: "BrucePerlerMS"
 ---
 # &lt;msmqTransportSecurity&gt;
 Specifies MSMQ transport security settings for a custom binding.  
@@ -17,12 +16,11 @@ Specifies MSMQ transport security settings for a custom binding.
 ## Syntax  
   
 ```xml  
-<msmqTransportSecurity>  
-   msmqAuthenticationMode="None/Windows/Certificate"  
-   msmqEncryptionAlgorithm="RC4Stream/AES"  
-   msmqProtectionLevel="None/Sign/EncryptAndSign"  
-   msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />  
-</msmqTransportSecurity>  
+<msmqTransportSecurity msmqAuthenticationMode="None/Windows/Certificate"
+                       msmqEncryptionAlgorithm="RC4Stream/AES"
+                       msmqProtectionLevel="None/Sign/EncryptAndSign"
+                       msmqSecureHashAlgorithm="MD5/SHA1/SHA256/SHA512" />
+</msmqTransportSecurity>
 ```  
   
 ## Attributes and Elements  

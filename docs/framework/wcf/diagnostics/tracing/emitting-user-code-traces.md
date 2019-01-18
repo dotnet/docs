@@ -11,7 +11,7 @@ In addition to enabling tracing in configuration to collect instrumentation data
 ## Creating a Trace Source  
  You can use the following code to create a user trace source.  
   
-```  
+```csharp
 TraceSource ts = new TraceSource("myUserTraceSource");  
 ```  
   
@@ -26,7 +26,7 @@ TraceSource ts = new TraceSource("myUserTraceSource");
   
  The following code demonstrates how to do this.  
   
-```  
+```csharp
 Guid oldID = Trace.CorrelationManager.ActivityId;  
 Guid traceID = Guid.NewGuid();  
 ts.TraceTransfer(0, "transfer", traceID);  
@@ -37,7 +37,7 @@ ts.TraceEvent(TraceEventType.Start, 0, "Add request");
 ## Emitting Traces within a User Activity  
  The following code emits traces within a user activity.  
   
-```  
+```csharp
 double value1 = 100.00D;  
 double value2 = 15.99D;  
 ts.TraceInformation("Client sends message to Add " + value1 + ", " + value2);  
@@ -50,7 +50,7 @@ ts.TraceInformation("Client receives Add response '" + result + "'");
   
  The following code demonstrates how to do this.  
   
-```  
+```csharp
 ts.TraceTransfer(0, "transfer", oldID);  
 ts.TraceEvent(TraceEventType.Stop, 0, "Add request");  
 Trace.CorrelationManager.ActivityId = oldID;  
@@ -64,7 +64,7 @@ Trace.CorrelationManager.ActivityId = oldID;
   
  You can use the following code to check whether an activity was set in scope by WCF.  
   
-```  
+```csharp
 // Check if an activity was set in scope by WCF, if it was   
 // propagated from the client. If not, ( ambient activity is   
 // equal to Guid.Empty), create a new one.  
@@ -90,7 +90,7 @@ ts.TraceEvent(TraceEventType.Stop, 0, "Add Activity");
 ## Tracing Exceptions Thrown in Code  
  When you throw an exception in code, you can also trace the exception at Warning level or up using the following code.  
   
-```  
+```csharp
 ts.TraceEvent(TraceEventType.Warning, 0, "Throwing exception " + "exceptionMessage");  
 ```  
   

@@ -41,9 +41,9 @@ There are several ways to load an assembly into an application domain. The recom
  [!code-vb[System.AppDomain.Load#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.load/vb/source2.vb#2)]  
   
 ## See Also  
- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>  
- [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
- [Using Application Domains](../../../docs/framework/app-domains/use.md)  
- [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)  
- [Application Domains and Assemblies](https://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)
+- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>  
+- [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
+- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
+- [Using Application Domains](../../../docs/framework/app-domains/use.md)  
+- [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)  
+- [Application Domains and Assemblies](https://msdn.microsoft.com/library/433b04ae-4ba8-4849-9dbd-79194f240346)

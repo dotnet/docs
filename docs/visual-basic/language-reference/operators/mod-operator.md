@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "arithmetic operators [Visual Basic], Mod"
   - "math operators [Visual Basic]"
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-author: rpetrusha
-ms.author: ronpet
 ---
 # Mod operator (Visual Basic)
 Divides two numbers and returns only the remainder.  

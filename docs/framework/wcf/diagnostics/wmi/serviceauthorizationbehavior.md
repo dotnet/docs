@@ -8,7 +8,7 @@ ServiceAuthorizationBehavior
   
 ## Syntax  
   
-```  
+```csharp
 class ServiceAuthorizationBehavior : Behavior  
 {  
   boolean ImpersonateCallerForAllOperations;  

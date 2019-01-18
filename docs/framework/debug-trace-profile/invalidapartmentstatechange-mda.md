@@ -57,7 +57,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
 ## Example  
  The following code example demonstrates a situation that can activate this MDA.  
   
-```  
+```csharp
 using System.Threading;  
 namespace ApartmentStateMDA  
 {  

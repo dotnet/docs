@@ -11,19 +11,19 @@ This configuration element defines a standard endpoint with a fixed discovery co
 \<system.serviceModel>  
 \<standardEndpoints>  
   
-## Syntax
-
-```xml
+## Syntax  
+  
+```xml  
 <system.serviceModel>
   <standardEndpoints>
     <discoveryEndpoint>
-      <standardEndpoint discoveryMode="Adhoc/Managed" 
-                        discoveryVersion="WSDiscovery11/WSDiscoveryApril2005" 
-                        maxResponseDelay="Timespan" 
+      <standardEndpoint discoveryMode="Adhoc/Managed"
+                        discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"
+                        maxResponseDelay="Timespan"
                         name="String" />
     </discoveryEndpoint>
   </standardEndpoints>
-</system.serviceModel>  
+</system.serviceModel>
 ```  
   
 ## Attributes and elements
@@ -55,27 +55,27 @@ The following example demonstrates a service listening on the discovery messages
   
 The standard endpoint configuration is defined per service and cannot be shared across the service. If another service would like to have the same discovery endpoint, the same configuration needs to be added to that service’s section.  
   
-```xml
-<services>  
+```xml  
+<services>
   <service name="CalculatorService"
            behaviorConfiguration="CalculatorServiceBehavior">
-    <endpoint binding="basicHttpBinding" 
-              address="calculator" 
-              contract="ICalculatorService" />  
-    <endpoint name="peerNetDiscovery"  
-              binding="peerTcpBinding"  
-              address="net.p2p://discoveryMesh/multicast"  
-              kind="discoveryEndpoint"  
-              endpointConfiguration="peerTcpDiscoveryEndpointConfiguration"  
-              bindingConfiguration="discoveryPeerTcpBindingConfig" />      
-  </service>  
-</services>  
-<standardEndpoints>  
-  <discoveryEndpoint>  
-    <standardEndpoint name="peerTcpDiscoveryEndpointConfiguration"                         
-                      version="WSDiscoveryApril2005" />  
-  </discoveryEndpoint>  
-</standardEndpoints>  
+    <endpoint binding="basicHttpBinding"
+              address="calculator"
+              contract="ICalculatorService" />
+    <endpoint name="peerNetDiscovery"
+              binding="peerTcpBinding"
+              address="net.p2p://discoveryMesh/multicast"
+              kind="discoveryEndpoint"
+              endpointConfiguration="peerTcpDiscoveryEndpointConfiguration"
+              bindingConfiguration="discoveryPeerTcpBindingConfig" />
+  </service>
+</services>
+<standardEndpoints>
+  <discoveryEndpoint>
+    <standardEndpoint name="peerTcpDiscoveryEndpointConfiguration"
+                      version="WSDiscoveryApril2005" />
+  </discoveryEndpoint>
+</standardEndpoints>
 ```  
   
 ## See also

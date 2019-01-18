@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "UShort data type"
   - "US literal type characters [Visual Basic]"
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # UShort data type (Visual Basic)
 
@@ -29,7 +27,7 @@ Holds unsigned 16-bit (2-byte) integers ranging in value from 0 through 65,535.
   
  The default value of `UShort` is 0.  
 
-# Literal assignments
+## Literal assignments
 
 You can declare and initialize a `UShort` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal. If the integer literal is outside the range of `UShort` (that is, if it is less than <xref:System.UInt16.MinValue?displayProperty=nameWithType> or greater than <xref:System.UInt16.MaxValue?displayProperty=nameWithType>, a compilation error occurs.
 
@@ -52,7 +50,7 @@ Dim number As UShort = &H_FF8C
 
 [!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
-Numeric literals can also include the `US` or `us` [type character](../../programming-guide\language-features\data-types/type-characters.md) to denote the `UShort` data type, as the following example shows.
+Numeric literals can also include the `US` or `us` [type character](../../programming-guide/language-features/data-types/type-characters.md) to denote the `UShort` data type, as the following example shows.
 
 ```vb
 Dim number = &H_5826us
@@ -62,7 +60,7 @@ Dim number = &H_5826us
   
 -   **Negative Numbers.** Because `UShort` is an unsigned type, it cannot represent a negative number. If you use the unary minus (`-`) operator on an expression that evaluates to type `UShort`, Visual Basic converts the expression to `Integer` first.  
   
--   **CLS Compliance.** The `UShort` data type is not part of the [Common Language Specification](http://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
+-   **CLS Compliance.** The `UShort` data type is not part of the [Common Language Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
   
 -   **Widening.** The `UShort` data type widens to `Integer`, `UInteger`, `Long`, `ULong`, `Decimal`, `Single`, and `Double`. This means you can convert `UShort` to any of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   

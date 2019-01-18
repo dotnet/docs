@@ -8,7 +8,7 @@ BinaryMessageEncodingBindingElement
   
 ## Syntax  
   
-```  
+```csharp  
 class BinaryMessageEncodingBindingElement : MessageEncodingBindingElement  
 {  
   sint32 MaxReadPoolSize;  

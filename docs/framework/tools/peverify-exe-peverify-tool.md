@@ -16,7 +16,7 @@ ms.author: "ronpet"
 # Peverify.exe (PEVerify Tool)
 The PEVerify tool helps developers who generate Microsoft intermediate language (MSIL) (such as compiler writers, script engine developers, and so on) to determine whether their MSIL code and associated metadata meet type safety requirements. Some compilers generate verifiably type-safe code only if you avoid using certain language constructs. If, as a developer, you are using such a compiler, you may want to verify that you have not compromised the type safety of your code. In this situation, you can run the PEVerify tool on your files to check the MSIL and metadata.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -51,7 +51,7 @@ peverify filename [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
- The common language runtime relies on the type-safe execution of application code to help enforce security and isolation mechanisms. Normally, code that is not [verifiably type safe](https://msdn.microsoft.com/library/095cd1f6-d8db-4c0e-bce2-83ccb34dd5dc) cannot run, although you can set security policy to allow the execution of trusted but unverifiable code.  
+ The common language runtime relies on the type-safe execution of application code to help enforce security and isolation mechanisms. Normally, code that is not [verifiably type safe](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security) cannot run, although you can set security policy to allow the execution of trusted but unverifiable code.  
   
  If neither the **/md** nor **/il** options are specified, Peverify.exe performs both types of checks. Peverify.exe performs **/md** checks first. If there are no errors, **/il** checks are made. If you specify both **/md** and **/il**, **/il** checks are made even if there are errors in the metadata. Thus, if there are no metadata errors, **peverify** *filename* is equivalent to **peverify** *filename* **/md** **/il**.  
   
@@ -116,6 +116,6 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
   
 ## See Also  
  [Tools](../../../docs/framework/tools/index.md)  
- [NIB: Writing Verifiably Type-Safe Code](https://msdn.microsoft.com/library/d18f10ef-3b48-4f47-8726-96714021547b)  
- [Type Safety and Security](https://msdn.microsoft.com/library/095cd1f6-d8db-4c0e-bce2-83ccb34dd5dc)  
+ [Writing Verifiably Type-Safe Code](../../../docs/framework/misc/code-access-security-basics.md#typesafe_code)  
+ [Type Safety and Security](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

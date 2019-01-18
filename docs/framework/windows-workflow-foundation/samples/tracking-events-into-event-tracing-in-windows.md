@@ -49,7 +49,7 @@ This sample demonstrates how to enable Windows Workflow Foundation (WF) tracking
 
 5.  In WCF test client, select **Add Service** from the **File** menu.
 
-     Add the endpoint address in the input box. The default is http://localhost:53797/SampleWorkflowService.xamlx.
+     Add the endpoint address in the input box. The default is `http://localhost:53797/SampleWorkflowService.xamlx`.
 
 6.  Open the Event Viewer application.
 

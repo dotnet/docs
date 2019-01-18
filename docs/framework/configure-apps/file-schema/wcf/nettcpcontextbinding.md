@@ -13,42 +13,45 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 ## Syntax  
   
 ```xml  
-<netTcpContextBinding>  
-   <binding   
-      closeTimeout="TimeSpan"  
-            contextProtectionLevel="EncryptAndSign/None/Sign"  
-      hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-      listenBacklog="Integer"  
-      maxBufferPoolSize="integer"  
-      maxBufferSize="Integer"  
-      maxConnections="Integer"   
-      maxReceivedMessageSize="Integer"  
-            name="string"  
-      openTimeout="TimeSpan"  
-      portSharingEnabled="Boolean"  
-      receiveTimeout="TimeSpan"  
-      sendTimeout="TimeSpan"  
-      transactionFlow="Boolean"   
-      transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"   
-            transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-  
-      <reliableSession ordered="Boolean"  
-            inactivityTimeout="TimeSpan"  
-            enabled="Boolean" />  
-      <security mode="Message/None/Transport/TransportWithCredential">  
-           <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                realm="string"   
-                defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
-                defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                defaultRealm="string" />  
-          <message clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  
-           algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-           establishSecurityContext="Boolean"   
-           negotiateServiceCredential="Boolean"/>  
-       </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />   </binding>  
-</netTcpContextBinding>  
+<netTcpContextBinding>
+  <binding closeTimeout="TimeSpan"
+           contextProtectionLevel="EncryptAndSign/None/Sign"
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+           listenBacklog="Integer"
+           maxBufferPoolSize="integer"
+           maxBufferSize="Integer"
+           maxConnections="Integer"
+           maxReceivedMessageSize="Integer"
+           name="string"
+           openTimeout="TimeSpan"
+           portSharingEnabled="Boolean"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           transactionFlow="Boolean"
+           transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan"
+                     enabled="Boolean" />
+    <security mode="Message/None/Transport/TransportWithCredential">
+      <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 realm="String"
+                 defaultClientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+                 defaultProxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+                 defaultRealm="String" />
+      <message clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               establishSecurityContext="Boolean"
+               negotiateServiceCredential="Boolean" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</netTcpContextBinding>
 ```  
   
 ## Attributes and Elements  
@@ -97,5 +100,5 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
  [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](https://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

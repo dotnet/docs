@@ -1,11 +1,11 @@
 ---
-title: "Path &#39;&lt;pathname&gt;&#39; not found"
+title: "Path '&lt;pathname&gt;' not found"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_PathNotFound1"
 ms.assetid: 184d09ab-771f-4298-bd71-94b33efc325b
 ---
-# Path &#39;&lt;pathname&gt;&#39; not found
+# Path '&lt;pathname&gt;' not found
 The operating system is unable to find the path specified path during a file-access or disk-access operation. The path to a file must include the drive specification and the directories and subdirectories that must be traversed to locate the file. A path can be relative or absolute.  
   
 ## To correct this error  

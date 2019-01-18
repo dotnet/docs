@@ -88,7 +88,7 @@ Now you're ready to start retrieving data from the web. In this
 application, you'll read information from the 
 [GitHub API](https://developer.github.com/v3/). Let's read information
 about the projects under the
-[.NET Foundation](http://www.dotnetfoundation.org/) umbrella. You'll
+[.NET Foundation](https://www.dotnetfoundation.org/) umbrella. You'll
 start by making the request to the GitHub API to retrieve information
 on the projects. The endpoint you'll use is: [https://api.github.com/orgs/dotnet/repos](https://api.github.com/orgs/dotnet/repos). You want to retrieve all the
 information about these projects, so you'll use an HTTP GET request.

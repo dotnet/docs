@@ -34,7 +34,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- In this case, the relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is http://localhost:8000/servicemodelsamples/service.  
+ In this case, the relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service`.
   
  The second endpoint definition also specifies a relative address, as shown in the following sample configuration.  
   
@@ -47,7 +47,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- The relative address, "test", is appended to the base address. The actual endpoint address is http://localhost:8000/servicemodelsamples/service/test.  
+ The relative address, "test", is appended to the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service/test`.
   
  The third endpoint definition specifies an absolute address, as shown in the following sample configuration.  
   
@@ -57,9 +57,9 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   
- The base address plays no role in the address. The actual endpoint address is http://localhost:8001/hello/servicemodelsamples.  
+ The base address plays no role in the address. The actual endpoint address is `http://localhost:8001/hello/servicemodelsamples`.
   
- The fourth endpoint address specifies an absolute address and a different transport—TCP. The base address plays no role in the address. The actual endpoint address is net.tcp://localhost:9000/servicemodelsamples/service.  
+ The fourth endpoint address specifies an absolute address and a different transport—TCP. The base address plays no role in the address. The actual endpoint address is `net.tcp://localhost:9000/servicemodelsamples/service`.
   
 ```xml  
 <!-- The absolute address specified, different transport: -->  

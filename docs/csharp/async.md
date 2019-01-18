@@ -1,11 +1,11 @@
 ---
-title: Asynchronous programming
+title: Asynchronous programming - C#
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
 author: cartermp
 ms.date: 06/20/2016
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
+ms.custom: seodec18
 ---
-
 # Asynchronous programming
 
 If you have any I/O-bound needs (such as requesting data from a network or accessing a database), you'll want to utilize asynchronous programming.  You could also have CPU-bound code, such as performing an expensive calculation, which is also a good scenario for writing async code.
@@ -103,7 +103,7 @@ Here are two questions you should ask before you write any code:
     
 If the work you have is **I/O-bound**, use `async` and `await` *without* `Task.Run`.  You *should not* use the Task Parallel Library.  The reason for this is outlined in the [Async in Depth article](../standard/async-in-depth.md).
 
-If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the Task Parallel Library.
+If the work you have is **CPU-bound** and you care about responsiveness, use `async` and `await` but spawn the work off on another thread *with* `Task.Run`.  If the work is appropriate for concurrency and parallelism, you should also consider using the [Task Parallel Library](../standard/parallel-programming/task-parallel-library-tpl.md).
 
 Additionally, you should always measure the execution of your code.  For example, you may find yourself in a situation where your CPU-bound work is not costly enough compared with the overhead of context switches when multithreading.  Every choice has its tradeoff, and you should pick the correct tradeoff for your situation.
 
@@ -127,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("https://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }
@@ -141,7 +141,7 @@ private readonly HttpClient _httpClient = new HttpClient();
 private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
 {
     // Capture the task handle here so we can await the background task later.
-    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("http://www.dotnetfoundation.org");
+    var getDotNetFoundationHtmlTask = _httpClient.GetStringAsync("https://www.dotnetfoundation.org");
 
     // Any other work on the UI thread can be done here, such as enabling a Progress Bar.
     // This is important to do here, before the "await" call, so that the user
@@ -259,5 +259,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 ## Other Resources
 
 * [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
-* [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
+* [Asynchronous programming with async and await (C#)](./programming-guide/concepts/async/index.md)
 * Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) are a wonderful resource for async programming

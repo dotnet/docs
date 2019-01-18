@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pipelines</title>
+    <script src="svg.min.js" src-cdn="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="drawing" style="background-color: white;"></div>
+    <script type="text/javascript">
+        var strokeWidth = 4;
+        var fontSize = 16;
+
+        function getUser(draw) {
+            // https://commons.wikimedia.org/wiki/File:Linecons_user-avatar.svg
+            var user = draw.symbol().path(
+                "M28.921,26.344c-0.188-0.124-3.577-2.347-8.621-3.438c1.85-2.345,3.038-5.496,3.543-7.595" +
+                " c0.701-2.909,0.429-8.599-2.364-12.145C19.846,1.094,17.562,0,14.874,0C12.185,0,9.901,1.095,8.27,3.167" +
+                " c-2.793,3.545-3.064,9.235-2.364,12.144c0.505,2.098,1.692,5.25,3.543,7.595c-5.044,1.091-8.434,3.314-8.62,3.438" +
+                " c-0.681,0.454-0.986,1.303-0.748,2.084c0.236,0.786,0.96,1.323,1.779,1.323h26.031c0.819,0,1.541-0.537,1.779-1.321" +
+                " C29.907,27.645,29.602,26.797,28.921,26.344z M7.587,9.992c0.507-3.978,2.786-8.133,7.286-8.133s6.779,4.156,7.287,8.134" +
+                " c0.551,4.142-0.729,8.477-3.32,11.76l-0.303,0.386c-2.218,2.547-5.109,2.547-7.325,0l-0.304-0.386" +
+                " C8.319,18.473,7.034,14.132,7.587,9.992z M1.857,27.891c0.128-0.086,3.278-2.15,7.982-3.168l2.309-0.498" +
+                " c0.825,0.541,1.729,0.879,2.724,0.879c0.996,0,1.898-0.338,2.724-0.879l2.31,0.498c4.667,1.01,7.806,3.053,7.981,3.168H1.857z")
+                .translate(45, 45).scale(4);
+            return user;
+        }
+
+        function getCloud(draw) {
+            // https://commons.wikimedia.org/wiki/File:Linecons_small-cloud.svg
+            var cloud = draw.symbol().path(
+                "M25.913,12.642C25.476,8.08,21.677,4.5,16.999,4.5c-3.619,0-6.717,2.148-8.146,5.23" +
+                " C8.423,9.594,7.975,9.5,7.5,9.5C5.015,9.5,3,11.516,3,14c0,0.494,0.099,0.961,0.246,1.404C1.313,16.531,0,18.599,0,20.998" +
+                " c0,3.59,2.91,6.5,6.5,6.5V27.5h17.999v-0.002c4.143,0,7.5-3.357,7.5-7.5C31.999,16.341,29.378,13.305,25.913,12.642z" +
+                " M24.499,25.497V25.5H6.5C4.019,25.497,2,23.479,2,20.998c0-1.6,0.843-3.045,2.254-3.867c1.371-0.787,1.465-0.943,0.89-2.357" +
+                " C5.047,14.483,5,14.23,5,14.001c0-1.379,1.121-2.5,2.5-2.5c0,0,0.656-0.047,1.353,0.23c1.147,0.457,1.272,0.02,1.814-1.159" +
+                " C11.814,8.099,14.299,6.5,16.999,6.5c3.6,0,6.576,2.723,6.924,6.334c0.123,1.432,0.123,1.432,1.615,1.773" +
+                " c2.586,0.494,4.461,2.762,4.461,5.391C29.999,23.031,27.532,25.497,24.499,25.497z")
+                .translate(48, 30).scale(4);
+            return cloud;
+        }
+
+        function getArrowLeftToRight(draw, color) {
+            return draw.symbol().polygon("0,15 200,15 200,0 400,25 200,50 200,35 0,35").fill("none")
+                .stroke({ color, width: strokeWidth });
+        }
+
+        function getPipeLeftToRight(draw, color, suffix) {
+            if (suffix == null) suffix = "";
+            var arrowLeftToRight = getArrowLeftToRight(draw, color).translate(strokeWidth / 2, strokeWidth / 2 + 1);
+            var pipeLeftToRight = draw.symbol();
+            pipeLeftToRight.use(arrowLeftToRight);
+            pipeLeftToRight.plain("Pipe" + suffix + ".Writer").fill(color).font({ size: fontSize }).translate(0 + 40, 12);
+            pipeLeftToRight.plain("Pipe" + suffix + ".Reader").fill(color).font({ size: fontSize }).translate(349 - 40, 12);
+            return pipeLeftToRight;
+        }
+
+        function getPipeRightToLeft(draw, color, suffix) {
+            if (suffix == null) suffix = "";
+            var arrowRightToLeft = getArrowLeftToRight(draw, color).flip("x").translate(400, strokeWidth / 2 + 1);
+            var pipeRightToLeft = draw.symbol();
+            pipeRightToLeft.use(arrowRightToLeft);
+            pipeRightToLeft.plain("Pipe" + suffix + ".Reader").fill(color).font({ size: fontSize }).translate(-1 + 40, 55.5 + strokeWidth - 4);
+            pipeRightToLeft.plain("Pipe" + suffix + ".Writer").fill(color).font({ size: fontSize }).translate(359 - 40, 55.5 + strokeWidth - 4);
+            return pipeRightToLeft;
+        }
+
+        function getPipe(draw, color, party1, party2) {
+            var pipe = draw.symbol();
+            pipe.plain(party1 + ".Send()").fill("darkslategray")
+                .font({ size: fontSize, anchor: "end" }).translate(120, 12);
+            pipe.use(getPipeLeftToRight(draw, color)).translate(120, 0);
+            pipe.plain(party2 + ".Receive()").fill("darkslategray")
+                .font({ size: fontSize }).translate(120 + 402, 12);
+            return pipe;
+        }
+
+        function getEndPoint(draw, color) {
+            return draw.symbol().ellipse(50, 150).fill("none").stroke({ color, width: strokeWidth })
+                .translate(strokeWidth / 2, strokeWidth / 2);
+        }
+
+        function getDuplexPipeLeft(draw, color, prefix) {
+            if (prefix == null) prefix = "";
+            else prefix += ".";
+            var duplexPipeLeft = draw.symbol();
+            duplexPipeLeft.use(getEndPoint(draw, color)).translate(110 + 40, 0);
+            duplexPipeLeft.plain(prefix + "Output").fill(color).font({ size: fontSize, anchor: "end" })
+                .translate(110 + 40, 21 + 12);
+            duplexPipeLeft.plain(prefix + "Input").fill(color).font({ size: fontSize, anchor: "end" })
+                .translate(110 + 40, 21 + (55.5 + strokeWidth - 4) * 2);
+            return duplexPipeLeft;
+        }
+
+        function getDuplexPipeRight(draw, color, prefix) {
+            if (prefix == null) prefix = "";
+            else prefix += ".";
+            var duplexPipeRight = draw.symbol();
+            duplexPipeRight.use(getEndPoint(draw, color));
+            duplexPipeRight.plain(prefix + "Input").fill(color).font({ size: fontSize }).translate(50, 21 + 12);
+            duplexPipeRight.plain(prefix + "Output").fill(color).font({ size: fontSize })
+                .translate(51, 21 + (55.5 + strokeWidth - 4) * 2);
+            return duplexPipeRight;
+        }
+
+        function getDuplexPipePair(draw, duplexPipe1, duplexPipe2, party1, party2, instance) {
+            if (instance == null) instance = "";
+            var duplexPipePair = draw.symbol();
+            duplexPipePair.use(getDuplexPipeLeft(draw, "blue", duplexPipe1 + "")).translate(170, 0);
+            duplexPipePair.use(getDuplexPipeRight(draw, "purple", duplexPipe2 + "")).translate(170 + 110 + 443, 0);
+            duplexPipePair.use(getPipeLeftToRight(draw, "red", instance + "X")).translate(170 + 110 + 68, 21);
+            duplexPipePair.use(getPipeRightToLeft(draw, "green", instance + "Y")).translate(170 + 110 + 68, 77);
+            duplexPipePair.plain(party1 + instance + "1" + ".Send()").fill("darkslategray")
+                .font({ size: fontSize, anchor: "end" }).translate(160 + 15, 21 + 12);
+            duplexPipePair.plain(party1 + instance + "1" + ".Receive()").fill("darkslategray")
+                .font({ size: fontSize, anchor: "end" }).translate(160 + 15, 21 + (55.5 + strokeWidth - 4) * 2);
+            duplexPipePair.plain(party2 + instance + "2" + ".Receive()").fill("darkslategray")
+                .font({ size: fontSize }).translate(170 + 119 + 531 + 128 - 15, 21 + 12);
+            duplexPipePair.plain(party2 + instance + "2" + ".Send()").fill("darkslategray")
+                .font({ size: fontSize }).translate(170 + 119 + 531 + 128 - 15, 21 + (55.5 + strokeWidth - 4) * 2);
+            return duplexPipePair;
+        }
+
+        function getDuplexPipe(draw, name, party) {
+            var duplexPipe = draw.symbol();
+            duplexPipe.use(getDuplexPipePair(draw, name, "?", party, "?"));
+            duplexPipe.rect(400, 150 + strokeWidth).fill("white").opacity(0.9).translate(480 + 170, 0);
+            return duplexPipe;
+        }
+
+        function getConnectedDuplexPipePair(draw, party1, party2, instance) {
+            if (instance == null) instance = "";
+            var connectedDuplexPipePair = draw.symbol();
+            connectedDuplexPipePair.use(getUser(draw)).fill("darkslateblue").opacity(0.3).translate(160, (154 - 119) / 2);
+            connectedDuplexPipePair.use(getCloud(draw)).fill("darkslateblue").opacity(0.3)
+                .translate(160 + 119 + 531, (154 - 92) / 2);
+            connectedDuplexPipePair
+                .use(getDuplexPipePair(draw, "Transport" + instance + "1", "Application" + instance + "2", party1, party2, instance))
+                .translate(-10 - 110 + 119, 0);
+            return connectedDuplexPipePair;
+        }
+
+        function getDuplexConnection(draw) {
+            var duplexConnection = draw.symbol();
+            duplexConnection.polyline("750,53 840,53 840,309 750,309").fill("none")
+                .stroke({ color: "gray", width: strokeWidth, dasharray: "7, 3" });
+            duplexConnection.polyline("750,109 800,109 800,253 750,253").fill("none")
+                .stroke({ color: "gray", width: strokeWidth, dasharray: "7, 3" });
+            duplexConnection.polyline("830,167 840,187 850,167").fill("none")
+                .stroke({ color: "black", width: strokeWidth, dasharray: "7, 3" });
+            duplexConnection.polyline("790,190 800,170 810,190").fill("none")
+                .stroke({ color: "black", width: strokeWidth, dasharray: "7, 3" });
+            duplexConnection.rect(1105 - strokeWidth, 162 - strokeWidth).fill("none").opacity(0.3)
+                .stroke({ color: "darkgoldenrod", width: strokeWidth, dasharray: "7, 3" }).translate(strokeWidth / 2, strokeWidth / 2);
+            duplexConnection.rect(1105 - strokeWidth, 162 - strokeWidth).fill("none").opacity(0.3)
+                .stroke({ color: "darkgoldenrod", width: strokeWidth, dasharray: "7, 3" }).translate(strokeWidth / 2, strokeWidth / 2 + 200);
+            duplexConnection.plain("A").fill("darkgoldenrod").font({ size: fontSize * 2 }).translate(1120, (162 - strokeWidth) / 2 + fontSize);
+            duplexConnection.plain("B").fill("darkgoldenrod").font({ size: fontSize * 2 }).translate(1120, (162 - strokeWidth) / 2 + 200 + fontSize);
+            duplexConnection.use(getConnectedDuplexPipePair(draw, "Application", "Transport", "A")).translate(strokeWidth, strokeWidth);
+            duplexConnection.use(getConnectedDuplexPipePair(draw, "Application", "Transport", "B")).translate(strokeWidth, strokeWidth + 200);
+            return duplexConnection;
+        }
+
+        SVG.on(document,
+            "DOMContentLoaded",
+            function () {
+                var imgScale = 0.9;
+                var draw = window.SVG("drawing").size(1200, 360 + 500);
+
+                draw.use(getPipe(draw, "red", "Producer", "Consumer")).scale(imgScale, imgScale).translate(0, 0);
+                draw.use(getDuplexPipe(draw, "DuplexPipe", "Party")).scale(imgScale, imgScale).translate(0, 100);
+                draw.use(getDuplexPipePair(draw, "DuplexPipe1", "DuplexPipe2", "Party", "Party")).scale(imgScale, imgScale).translate(0, 300);
+                draw.use(getDuplexConnection(draw)).scale(imgScale, imgScale).translate(0, 500 * 1);
+            });
+    </script>
+</body>
+</html>

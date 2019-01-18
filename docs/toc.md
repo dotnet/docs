@@ -45,6 +45,7 @@
 ### [Threading](standard/threading/)
 ## [Memory and span-related types](standard/memory-and-spans/index.md)
 ### [Memory\<T> and Span\<T> usage guidelines](standard/memory-and-spans/memory-t-usage-guidelines.md)
+### [Pipelines](standard/memory-and-spans/pipelines.md)
 ## [Native interoperability](standard/native-interop.md)
 ## [Collections and Data Structures](standard/collections/)
 ## [Numerics in .NET](standard/numerics.md)

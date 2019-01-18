@@ -32,7 +32,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The only part of the following comment that will be processed is the line that begins with `<summary>`. The three tag formats produce the same comments.  
   
-    ```  
+    ```csharp  
     /** <summary>text</summary> */   
   
     /**   
@@ -46,7 +46,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The compiler identifies a common pattern of " * " at the beginning of the second and third lines. The pattern is not included in the output.  
   
-    ```  
+    ```csharp  
     /**   
      * <summary>   
      * text </summary>*/   
@@ -54,7 +54,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The compiler finds no common pattern in the following comment because the second character on the third line is not an asterisk. Therefore, all text on the second and third lines is processed as part of the comment.  
   
-    ```  
+    ```csharp  
     /**   
      * <summary>   
        text </summary>  
@@ -63,7 +63,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
   
 -   The compiler finds no pattern in the following comment for two reasons. First, the number of spaces before the asterisk is not consistent. Second, the fifth line begins with a tab, which does not match spaces. Therefore, all text from lines two through five is processed as part of the comment.  
   
-    ```  
+    ```csharp  
     /**   
       * <summary>   
       * text   

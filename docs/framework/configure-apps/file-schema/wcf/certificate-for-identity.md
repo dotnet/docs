@@ -14,7 +14,7 @@ Specifies an X.509 certificate used to validate a server to a client.
 ## Syntax  
   
 ```xml  
-<certificate encodedValue = "String" />  
+<certificate encodedValue = "String" />
 ```  
   
 ## Attributes and Elements  
@@ -39,9 +39,9 @@ Specifies an X.509 certificate used to validate a server to a client.
  The following code specifies the encoded representation of a certificate used to validate a server to a client.  
   
 ```xml  
-<identity>  
-  <certificate encodedValue = " MIIBxjCCAXSgAwIBAgIQmXJgyu9tro1M98GifjtuoDAJBgUrDgMCHQUAMBYxFDASBgNVBAMTC1Jvb3QgQWdlbmN5MB4XDTA2MDUxNzIxNDQyNVoXDTM5MTIzMTIzNTk1OVowKTEQMA4GA1UEChMHQ29udG9zbzEVMBMGA1UEAxMMaWRlbnRpdHkuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBmivcb8hYbh11hqVoDuB7zmJ2y230f" />  
-</identity>  
+<identity>
+  <certificate encodedValue="MIIBxjCCAXSgAwIBAgIQmXJgyu9tro1M98GifjtuoDAJBgUrDgMCHQUAMBYxFDASBgNVBAMTC1Jvb3QgQWdlbmN5MB4XDTA2MDUxNzIxNDQyNVoXDTM5MTIzMTIzNTk1OVowKTEQMA4GA1UEChMHQ29udG9zbzEVMBMGA1UEAxMMaWRlbnRpdHkuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBmivcb8hYbh11hqVoDuB7zmJ2y230f" />
+</identity>
 ```  
   
 ## See Also  

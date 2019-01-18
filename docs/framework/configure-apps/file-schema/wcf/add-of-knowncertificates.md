@@ -18,12 +18,12 @@ Adds an X.509 certificate to the collection of known certificates.
 ## Syntax  
   
 ```xml  
-<knownCertificates>   
-   <add findValue="String"  
-      storeLocation="CurrentUser/LocalMachine"  
-      storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-      x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>  
-</knownCertificates>  
+<knownCertificates>
+   <add findValue="String"
+      storeLocation="CurrentUser/LocalMachine"
+      storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+      x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>
+</knownCertificates>
 ```  
   
 ## Attributes and Elements  
@@ -77,13 +77,14 @@ Adds an X.509 certificate to the collection of known certificates.
  The [\<issuedTokenAuthentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add> element \<knownCertificates> Element](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
 ```xml  
-<issuedTokenAuthentication>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
-</issuedTokenAuthentication>  
+<issuedTokenAuthentication>
+  <knownCertificates>
+    <add findValue="www.contoso.com"
+         storeLocation="LocalMachine"
+         storeName="My"
+         X509FindType="FindBySubjectName" />
+  </knownCertificates>
+</issuedTokenAuthentication>
 ```  
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  
@@ -94,19 +95,20 @@ Adds an X.509 certificate to the collection of known certificates.
  The following example adds certificate to the repository for any STS certificates.  
   
 ```xml  
-<serviceBehaviors>  
- <behavior name="myServiceBehavior">  
-  <serviceCredentials>  
-   <issuedTokenAuthentication>  
-    <knownCertificates>  
-     <add findValue="www.contoso.com" storeLocation="LocalMachine"   
-           storeName="CertificateAuthority"  
-           x509FindType="FindByIssuerName" />  
-     </knownCertificates>  
-    </issuedTokenAuthentication>  
-   </serviceCredentials>  
-  </behavior>  
- </serviceBehaviors>  
+<serviceBehaviors>
+  <behavior name="myServiceBehavior">
+    <serviceCredentials>
+      <issuedTokenAuthentication>
+        <knownCertificates>
+          <add findValue="www.contoso.com"
+               storeLocation="LocalMachine"
+               storeName="CertificateAuthority"
+               x509FindType="FindByIssuerName" />
+        </knownCertificates>
+      </issuedTokenAuthentication>
+    </serviceCredentials>
+  </behavior>
+</serviceBehaviors>
 ```  
   
 ## See Also  

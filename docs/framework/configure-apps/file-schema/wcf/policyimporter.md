@@ -15,11 +15,11 @@ Specifies a policy importer that controls the import of custom policy assertions
 ## Syntax  
   
 ```xml  
-<metadata>  
-   <policyImporters>  
-      <policyImporter type="string" />  
-   </policyImporters>  
-</metadata>  
+<metadata>
+  <policyImporters>
+    <policyImporter type="String" />
+  </policyImporters>
+</metadata>
 ```  
   
 ## Attributes and Elements  

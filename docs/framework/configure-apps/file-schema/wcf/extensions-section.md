@@ -11,18 +11,18 @@ This configuration section contains a collection of extensions, which enable the
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-  <extensions>  
-    <bindingExtensions>  
-    </bindingExtensions>  
-    <behaviorExtensions>  
-    </behaviorExtensions>  
-    <bindingElementExtensions>  
+<system.serviceModel>
+  <extensions>
+    <bindingExtensions>
+    </bindingExtensions>
+    <behaviorExtensions>
+    </behaviorExtensions>
+    <bindingElementExtensions>
     </bindingElementExtensions>
     <endpointExtensions>
     </endpointExtensions>
-  </extensions>  
-</system.serviceModel>  
+  </extensions>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

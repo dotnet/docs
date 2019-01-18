@@ -14,17 +14,17 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
 ## Syntax  
   
 ```xml  
-<comContracts>  
-  <comContract>  
-      <userDefinedTypes>  
-         <userDefinedType name="string"  
-            typeLibID="string"  
-            typeLibVersion="string"  
-            typeDefID="string">  
-         </userDefinedType>  
-      </userDefinedTypes>  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract>
+    <userDefinedTypes>
+      <userDefinedType name="String"
+                       typeLibID="String"
+                       typeLibVersion="String"
+                       typeDefID="String">
+      </userDefinedType>
+    </userDefinedTypes>
+  </comContract>
+</comContracts>
 ```  
   
 ## Attributes and Elements  
@@ -56,31 +56,30 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
  The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
   
 ```xml  
-<comContracts>  
-  <comContract  
-      contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  
-      namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"  
-      name="_Broker"  
-      requireSession="true">  
-      <userDefinedTypes>  
-         <userDefinedType name="CustomerType"  
-            typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"  
-            typeLibVersion="1.0"  
-            typeDefID="{D129765C-F211-434e-825A-9A63198C41F2}">  
-         </userDefinedType>  
-         <userDefinedType name="AddressType"  
-            typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"  
-            typeLibVersion="1.0"  
-            typeDefID="{4616AE0D-687A-43B7-BC63-141AE3DFD099}">  
-         </userDefinedType>  
-      </userDefinedTypes>  
-      <exposedMethods>  
-         <exposedMethod name="BuyStock" />  
-         <exposedMethod name="SellStock" />  
-         <exposedMethod name="ExecuteTransaction" />  
-      </exposedMethods>  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"
+               namespace="http://tempuri.org/5163B1E7-F0CF-4B6A-9A02-4AB654F34284"
+               name="_Broker"
+               requireSession="true">
+    <userDefinedTypes>
+      <userDefinedType name="CustomerType"
+                       typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"
+                       typeLibVersion="1.0"
+                       typeDefID="{D129765C-F211-434e-825A-9A63198C41F2}">
+      </userDefinedType>
+      <userDefinedType name="AddressType"
+                       typeLibID="{91DC728C-4F1A-45de-A9B6-B538E209CEA6}"
+                       typeLibVersion="1.0"
+                       typeDefID="{4616AE0D-687A-43B7-BC63-141AE3DFD099}">
+      </userDefinedType>
+    </userDefinedTypes>
+    <exposedMethods>
+      <exposedMethod name="BuyStock" />
+      <exposedMethod name="SellStock" />
+      <exposedMethod name="ExecuteTransaction" />
+    </exposedMethods>
+  </comContract>
+</comContracts>
 ```  
   
  When the service is initialized, the integration runtime looks up the specified types and adds them to the known types collection for the specified contracts.  

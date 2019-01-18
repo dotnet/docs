@@ -15,14 +15,14 @@ The `client` element defines a list of endpoints that a client can connect to.
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-    <client>  
-        <endpoint>  
-        </endpoint>  
-                <metadata>  
-        </metadata>  
-    </client>  
-</system.serviceModel>  
+<system.serviceModel>
+  <client>
+    <endpoint>
+    </endpoint>
+    <metadata>
+    </metadata>
+  </client>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -52,16 +52,18 @@ The `client` element defines a list of endpoints that a client can connect to.
 ## Example  
   
 ```xml  
-<client>  
-    <endpoint address="/HelloWorld/"  
-              bindingConfiguration="usingDefaults"  
-              name="MyBinding"  
-              binding="customBinding"  
-              contract="HelloWorld">  
-    <addressProperties actingAs="http://www.microsoft.com/TestActor"  
-             identityData="BasicReadWrite" identityType="Spn" isAddressPrivate="false">  
-    </endpoint>  
-</client>  
+<client>
+  <endpoint address="/HelloWorld/"
+            bindingConfiguration="usingDefaults"
+            name="MyBinding"
+            binding="customBinding"
+            contract="HelloWorld">
+    <addressProperties actingAs="http://www.microsoft.com/TestActor"
+                       identityData="BasicReadWrite"
+                       identityType="Spn"
+                       isAddressPrivate="false">
+  </endpoint>
+</client>
 ```  
   
 ## See Also  

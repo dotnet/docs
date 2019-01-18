@@ -13,7 +13,7 @@ There are numerous benefits to writing unit tests; they help with regression, pr
 
 In this guide, you'll learn some best practices when writing unit tests to keep your tests resilient and easy to understand.
 
-By [John Reese](http://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
+By [John Reese](https://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
 
 ## Why unit test?
 

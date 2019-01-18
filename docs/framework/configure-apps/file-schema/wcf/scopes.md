@@ -26,7 +26,7 @@ Contains a collection of configuration elements that specify custom scope Uris t
       </endpointDiscovery>
     </behavior>
   </endpointBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  

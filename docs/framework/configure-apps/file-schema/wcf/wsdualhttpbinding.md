@@ -15,32 +15,36 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 ## Syntax  
   
 ```xml  
-<wsDualHttpBinding>  
-        <binding name="string"  
-        closeTimeout="TimeSpan"  
-        openTimeout="TimeSpan"   
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-        bypassProxyOnLocal="Boolean"  
-        clientBaseAddress="URI"  
-        transactionFlow="Boolean"   
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        messageEncoding="Text/Mtom"   
-        proxyAddress="URI"  
-  
-textEncoding="Unicode/BigEndianUnicode/UTF8"  
-        useDefaultWebProxy="Boolean">  
-        <reliableSession ordered="Boolean"  
-            inactivityTimeout="TimeSpan" />  
-        <security mode="None/Message">  
-           <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
-                negotiateServiceCredential="Boolean"  
-                    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />  
-                </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />    </binding>  
-</wsDualHttpBinding>  
+<wsDualHttpBinding>
+  <binding name="String"
+          closeTimeout="TimeSpan"
+          openTimeout="TimeSpan"
+          receiveTimeout="TimeSpan"
+          sendTimeout="TimeSpan"
+          bypassProxyOnLocal="Boolean"
+          clientBaseAddress="URI"
+          transactionFlow="Boolean"
+          hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"
+          maxBufferPoolSize="integer"
+          maxReceivedMessageSize="Integer"
+          messageEncoding="Text/Mtom"
+          proxyAddress="URI"
+          textEncoding="Unicode/BigEndianUnicode/UTF8"
+          useDefaultWebProxy="Boolean">
+    <reliableSession ordered="Boolean"
+                     inactivityTimeout="TimeSpan" />
+    <security mode="None/Message">
+      <message clientCredentialType="None/Windows/UserName/Certificate/CardSpace"
+               negotiateServiceCredential="Boolean"
+               algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" />
+    </security>
+    <readerQuotas maxArrayLength="Integer"
+                  maxBytesPerRead="Integer"
+                  maxDepth="Integer"
+                  maxNameTableCharCount="Integer"
+                  maxStringContentLength="Integer" />
+  </binding>
+</wsDualHttpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -90,36 +94,35 @@ textEncoding="Unicode/BigEndianUnicode/UTF8"
 ## Example  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<wsDualHttpBinding>  
-    <binding   
-        closeTimeout="00:00:10"  
-        openTimeout="00:00:20"   
-        receiveTimeout="00:00:30"  
-        sendTimeout="00:00:40"  
-        bypassProxyOnLocal="false"   
-        clientBaseAddress="http://localhost:8001/client/"  
-        transactionFlow="true"   
-        hostNameComparisonMode="WeakWildcard"  
-        maxReceivedMessageSize="1000"  
-        messageEncoding="Mtom"   
-        proxyAddress="http://foo/bar"   
-        textEncoding="utf-16"  
-        useDefaultWebProxy="false">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00" />  
-        <security mode="None">  
-            <message clientCredentialType="None"  
-                negotiateServiceCredential="false"  
-                algorithmSuite="Aes128" />  
-        </security>  
-    </binding>  
-</wsDualHttpBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <wsDualHttpBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 bypassProxyOnLocal="false"
+                 clientBaseAddress="http://localhost:8001/client/"
+                 transactionFlow="true"
+                 hostNameComparisonMode="WeakWildcard"
+                 maxReceivedMessageSize="1000"
+                 messageEncoding="Mtom"
+                 proxyAddress="http://foo/bar"
+                 textEncoding="utf-16"
+                 useDefaultWebProxy="false">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00" />
+          <security mode="None">
+            <message clientCredentialType="None"
+                     negotiateServiceCredential="false"
+                     algorithmSuite="Aes128" />
+          </security>
+        </binding>
+      </wsDualHttpBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
 ## See Also  

@@ -15,7 +15,7 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
 ## Syntax  
   
 ```xml  
-<byteStreamMessageEncoding/>  
+<byteStreamMessageEncoding />
 ```  
   
 ## Attributes and Elements  

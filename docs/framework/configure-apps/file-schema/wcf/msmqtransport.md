@@ -15,27 +15,27 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 ## Syntax  
   
 ```xml  
-<msmqTransport>  
-    customDeadLetterQueue="Uri"  
-    deadLetterQueue="Custom/None/System"  
-    durable="Boolean"  
-    exactlyOnce="Boolean"  
-    manualAddressing="Boolean"  
-    maxBufferPoolSize="Integer"  
-    maxImmediateRetries="Integer"  
-    maxPoolSize="Integer"  
-    maxReceivedMessageSize="Integer"  
-    maxRetryCycles="Integer"  
-....queueTransferProtocol="Native/Srmp/SrmpSecure"  
-    rejectAfterLastRetry="Boolean"  
-    retryCycleDelay="TimeSpan"  
-    timeToLive="TimeSpan"  
-    useActiveDirectory="Boolean"  
-    useSourceJournal="Boolean"  
-    useMsmqTracing="Boolean"  
-    <msmqTransportSecurity>  
-    </msmqTransportSecurity>  
-</msmqIntegration>  
+<msmqTransport customDeadLetterQueue="Uri"
+               deadLetterQueue="Custom/None/System"
+               durable="Boolean"
+               exactlyOnce="Boolean"
+               manualAddressing="Boolean"
+               maxBufferPoolSize="Integer"
+               maxImmediateRetries="Integer"
+               maxPoolSize="Integer"
+               maxReceivedMessageSize="Integer"
+               maxRetryCycles="Integer"
+               queueTransferProtocol="Native/Srmp/SrmpSecure"
+               rejectAfterLastRetry="Boolean"
+               retryCycleDelay="TimeSpan"
+               timeToLive="TimeSpan"
+               useActiveDirectory="Boolean"
+               useSourceJournal="Boolean"
+               useMsmqTracing="Boolean"
+               ...>
+  <msmqTransportSecurity>
+  </msmqTransportSecurity>
+</msmqTransport>
 ```  
   
 ## Attributes and Elements  

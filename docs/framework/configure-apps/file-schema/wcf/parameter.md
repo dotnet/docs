@@ -16,8 +16,8 @@ Specifies the generic parameter when a declared type is a generic type.
 ## Syntax  
   
 ```xml  
-<parameter index="integer"  
-                      type=String" />  
+<parameter index="Integer"
+           type="String" />
 ```  
   
 ## Attributes and Elements  

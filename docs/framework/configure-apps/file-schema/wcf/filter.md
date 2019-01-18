@@ -12,20 +12,20 @@ Defines a routing filter, which determines the type of Windows Communication Fou
 \<routing>
 \<filters>
 \<filter>
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <routing>
   <filters>
-    <filter customType="String" 
-            filterData="String" 
-            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath" 
+    <filter customType="String"
+            filterData="String"
+            filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"
             name="String" />
   </filters>
 </routing>
-```
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.

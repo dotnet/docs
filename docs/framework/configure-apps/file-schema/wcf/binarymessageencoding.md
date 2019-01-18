@@ -15,10 +15,10 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 ## Syntax  
   
 ```xml  
-<binaryMessageEncoding   
-      maxReadPoolSize="Integer"  
-   maxSessionSize="Integer"   
-   maxWritePoolSize="Integer"   messageVersion="Soap11Addressing10/Soap12Addressing10" />  
+<binaryMessageEncoding maxReadPoolSize="Integer"
+                       maxSessionSize="Integer"
+                       maxWritePoolSize="Integer"
+                       messageVersion="Soap11Addressing10/Soap12Addressing10" />
 ```  
   
 ## Attributes and Elements  
@@ -53,9 +53,9 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 ## Example  
   
 ```xml  
-<binaryMessageEncoding maxReadPoolSize="211"  
-   maxWritePoolSize="2132"  
-   maxSessionSize="3141" />  
+<binaryMessageEncoding maxReadPoolSize="211"
+                       maxWritePoolSize="2132"
+                       maxSessionSize="3141" />
 ```  
   
 ## See Also  

@@ -3,7 +3,7 @@ title: Customizing structure marshalling - .NET
 description: Learn how to customize how .NET marshals your structures to a native representation.
 author: jkoritzinsky
 ms.author: jekoritz
-ms.date: 11/28/2018
+ms.date: 01/18/2019
 dev_langs: 
   - "csharp"
   - "cpp"

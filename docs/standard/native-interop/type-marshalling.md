@@ -3,7 +3,7 @@ title: Type marshalling - .NET
 description: Learn how .NET marshals your types to a native representation.
 author: jkoritzinsky
 ms.author: jekoritz
-ms.date: 11/28/2018
+ms.date: 01/18/2019
 ---
 
 # Type marshalling
@@ -73,7 +73,7 @@ Some types can only be marshalled as parameters and not as fields. These types a
 | `System.Runtime.InteropServices.ArrayWithOffset` | `void*` |
 | `System.Runtime.InteropServices.HandleRef` | `void*` |
 
-If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [parameter marshalling](customizing-parameter-marshalling.md) article walks you through how to customize how different parameter types are marshalled.
+If these defaults don't do exactly what you want, you can customize how parameters are marshalled. The [parameter marshalling](customize-parameter-marshalling.md) article walks you through how to customize how different parameter types are marshalled.
 
 ## Marshalling classes and structs
 
@@ -117,27 +117,4 @@ typedef struct _SYSTEMTIME {
 } SYSTEMTIME, *PSYSTEMTIME*;
 ```
 
-We already saw the Linux and macOS example for this structure in the previous example. It is shown again below.
-
-```csharp
-[StructLayout(LayoutKind.Sequential)]
-public class StatClass {
-        public uint DeviceID;
-        public uint InodeNumber;
-        public uint Mode;
-        public uint HardLinks;
-        public uint UserID;
-        public uint GroupID;
-        public uint SpecialDeviceID;
-        public ulong Size;
-        public ulong BlockSize;
-        public uint Blocks;
-        public long TimeLastAccess;
-        public long TimeLastModification;
-        public long TimeLastStatusChange;
-}
-```
-
-The `StatClass` class represents a structure that is returned by the `stat` system call on UNIX systems. It represents information about a given file. The class above is the stat struct representation in managed code. Again, the fields in the class have to be in the same order as the native struct (you can find these by perusing man pages on your favorite UNIX implementation) and they have to be of the same underlying type.
-
-Sometimes the default marshalling for your structure doesn't do what you need. The [Customizing structure marshalling](./customizing-struct-marshalling.md) article teaches you how to customize how your structure is marshaled.
+Sometimes the default marshalling for your structure doesn't do what you need. The [Customizing structure marshalling](./customize-struct-marshalling.md) article teaches you how to customize how your structure is marshaled.

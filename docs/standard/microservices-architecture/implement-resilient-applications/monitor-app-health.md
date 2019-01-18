@@ -3,7 +3,7 @@ title: Health monitoring
 description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 01/07/2017
+ms.date: 01/07/2019
 ---
 # Health monitoring
 

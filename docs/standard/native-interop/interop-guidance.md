@@ -8,6 +8,8 @@ ms.date: 01/18/2019
 
 # Native interoperability best practices
 
+.NET gives you a variety of ways to customize your native interoperability code. This article includes the guidance that Microsoft's .NET teams follow for native interoperability.
+
 ## General guidance
 
 The guidance in this section applies to all interop scenarios.

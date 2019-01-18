@@ -3,7 +3,7 @@ title: Native interoperability best practices
 description: Learn the best practices for interfacing with native components in .NET.
 author: jkoritzinsky
 ms.author: jekoritz
-ms.date: 1/4/2019
+ms.date: 01/18/2019
 ---
 
 # Native interoperability best practices
@@ -56,7 +56,7 @@ If you *do* use `StringBuilder` one last gotcha is that the capacity does **not*
 
 **✔️ CONSIDER** using `char[]`s from an `ArrayPool`.
 
-For more information on string marshalling, see the documentation on [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings) and [customizing string marshalling](./customizing-parameter-marshalling#customizing-string-parameters).
+For more information on string marshalling, see the documentation on [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings) and [customizing string marshalling](./customize-parameter-marshalling#customizing-string-parameters).
 
 > __Windows Specific__  
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
@@ -65,11 +65,11 @@ as `UnmanagedType.BSTR`.
 > The passed in character count must include the null. If the returned value is less than the passed in character count the call has succeeded and the value is the number of characters *without* the trailing null. Otherwise the count is the required size of the buffer *including* the null character.  
 > - Pass in 5, get 4: The string is 4 characters long with a trailing null.
 > - Pass in 5, get 6: The string is 5 characters long, need a 6 character buffer to hold the null.  
-> [Windows Data Types for Strings](https://docs.microsoft.com/windows/desktop/Intl/windows-data-types-for-strings)
+> [Windows Data Types for Strings](/windows/desktop/Intl/windows-data-types-for-strings)
 
 ## Boolean parameters and fields
 
-Booleans are easy to mess up. The default marshalling for .NET is as the Windows type `BOOL`, where it is a 4 byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. See the documentation on [customizing boolean field marshalling](./customizing-struct-marshalling#customizing-boolean-field-marshalling) for information on marshalling .NET `bool` values to C or C++ `bool` types.
+Booleans are easy to mess up. The default marshalling for .NET is as the Windows type `BOOL`, where it is a 4 byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. See the documentation on [customizing boolean field marshalling](customize-struct-marshalling#customizing-boolean-field-marshalling) for information on marshalling .NET `bool` values to C or C++ `bool` types.
 
 ## Guids
 

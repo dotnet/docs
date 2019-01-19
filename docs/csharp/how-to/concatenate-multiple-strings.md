@@ -53,7 +53,7 @@ You can try these samples by looking at the code in our [GitHub repository](http
 
 ## See Also
 
-- <xref:System.String>  
-- <xref:System.Text.StringBuilder>  
-- [C# Programming Guide](../programming-guide/index.md)  
+- <xref:System.String>
+- <xref:System.Text.StringBuilder>
+- [C# Programming Guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)

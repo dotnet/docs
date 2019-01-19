@@ -37,6 +37,6 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
  Assemblies deployed in the Global Assembly Cache must have a strong name. When an assembly is added to the Global Assembly Cache, integrity checks are performed on all files that make up the assembly. The cache performs these integrity checks to ensure that an assembly has not been tampered with, for example, when a file has changed but the manifest does not reflect the change.  
   
 ## See Also  
-- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
-- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)  
+- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)
 - [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)

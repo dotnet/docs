@@ -292,5 +292,5 @@ The following example uses objects derived from `Shape`. It instantiates an arra
 
 ## See Also
 
-- [Classes and objects](../tour-of-csharp/classes-and-objects.md)   
+- [Classes and objects](../tour-of-csharp/classes-and-objects.md)
 - [Inheritance (C# Programming Guide)](../programming-guide/classes-and-structs/inheritance.md)

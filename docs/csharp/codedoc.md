@@ -221,5 +221,5 @@ Documenting code is recommended for many reasons. What follows are some best pra
 
 ## See also
 
-* [XML Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/xml-documentation-comments.md)
-* [Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [XML Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/xml-documentation-comments.md)
+- [Recommended Tags for Documentation Comments (C# Programming Guide)](programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

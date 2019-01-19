@@ -266,8 +266,8 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 ## See also
 
-- [.NET Guide](index.md)  
-- [.NET Framework Guide](../framework/index.md)  
-- [.NET Core](../core/index.md)  
-- [ASP.NET Overview](/aspnet/index#pivot=aspnet)  
-- [ASP.NET Core Overview](/aspnet/index#pivot=core)  
+- [.NET Guide](index.md)
+- [.NET Framework Guide](../framework/index.md)
+- [.NET Core](../core/index.md)
+- [ASP.NET Overview](/aspnet/index#pivot=aspnet)
+- [ASP.NET Core Overview](/aspnet/index#pivot=core)

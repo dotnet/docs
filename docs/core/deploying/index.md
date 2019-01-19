@@ -92,7 +92,7 @@ For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deplo
 
 ## See also
 
-* [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
-* [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
-* [Packages, Metapackages and Frameworks](../packages.md)
-* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
+- [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
+- [Packages, Metapackages and Frameworks](../packages.md)
+- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

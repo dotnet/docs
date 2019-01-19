@@ -81,7 +81,7 @@
   
  The <xref:System.Collections.ObjectModel.Collection%601> class provides protected methods that can be used to customize its behavior when adding and removing items, clearing the collection, or setting the value of an existing item.  
   
- Most <xref:System.Collections.ObjectModel.Collection%601> objectscan be modified. However, a <xref:System.Collections.ObjectModel.Collection%601> object that is initialized with a read-only <xref:System.Collections.Generic.IList%601> object cannot be modified. See <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> for a read-only version of this class.  
+ Most <xref:System.Collections.ObjectModel.Collection%601> objects can be modified. However, a <xref:System.Collections.ObjectModel.Collection%601> object that is initialized with a read-only <xref:System.Collections.Generic.IList%601> object cannot be modified. See <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> for a read-only version of this class.  
   
  Elements in this collection can be accessed using an integer index.  Indexes in this collection are zero-based.  
   

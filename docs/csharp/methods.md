@@ -223,7 +223,7 @@ If a method is passed an array as an argument and modifies the value of individu
 
 [!code-csharp[csSnippets.Methods#101](../../samples/snippets/csharp/concepts/methods/returnarray1.cs#101)]
 
- <a name="exten"></a>
+ <a name="extension"></a>
  ## Extension methods ##
 
 Ordinarily, there are two ways to add a method to an existing type:

@@ -7,11 +7,10 @@ helpviewer_keywords:
 ms.assetid: d0791df8-04e3-46b4-a6be-fe0ed09267e8
 ---
 # How to: Override Encoded SOAP XML Serialization
-[Code Example](#tskhowtooverrideencodedsoapxmlserializationanchor1)  
   
  The process for overriding XML serialization of objects as SOAP messages is similar to the process for overriding standard XML serialization. For information about overriding standard XML serialization, see [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md).  
   
-### To override serialization of objects as SOAP messages  
+## To override serialization of objects as SOAP messages  
   
 1.  Create an instance of the <xref:System.Xml.Serialization.SoapAttributeOverrides> class.  
   

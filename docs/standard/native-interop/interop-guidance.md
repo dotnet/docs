@@ -1,5 +1,5 @@
 ---
-title: Native interoperability best practices
+title: Native interoperability best practices - .NET
 description: Learn the best practices for interfacing with native components in .NET.
 author: jkoritzinsky
 ms.author: jekoritz
@@ -20,20 +20,20 @@ The guidance in this section applies to all interop scenarios.
 - **✔️ DO** only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
 - **✔️ CONSIDER** using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
 - **✔️ CONSIDER** wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
-  - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you did not misspell the name of the native library.
+  - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
 
-## [DllImport](xref:System.Runtime.InteropServices.DllImportAttribute) attribute settings
+## DllImport attribute settings
 
 | Setting | Default | Recommendation | Details |
 |---------|---------|----------------|---------|
-| [`PreserveSig`](xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig)   | `true` |  keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into Exceptions (and the return value in the definition becomes null as a result).|
+| <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>   | `true` |  keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into exceptions (and the return value in the definition becomes null as a result).|
 | [`SetLastError`](xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError) | `false`  | depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
 | [`CharSet`](xref:System.Runtime.InteropServices.DllImportAttribute.CharSet) | `CharSet.None`, which falls back to `CharSet.Ansi` behavior  | Explicitly  use `CharSet.Unicode` or `CharSet.Ansi` when strings or characters are present in the definition | This specifies marshalling behavior of strings and what `ExactSpelling` does when `false`. Note that `CharSet.Ansi` is actually UTF8 on Unix. _Most_ of the time Windows uses Unicode while Unix uses UTF8. See more information on the [documentation on charsets](./charset.md). |
 | [`ExactSpelling`](xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling) | `false` | `true`             | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
 
 ## String parameters
 
-When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` _and_ the string is passed by value (not `ref` or `out`) the string will be be pinned and used directly by native code (rather than copied).
+When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(UnmanagedType.LPWSTR)]` _and_ the string is passed by value (not `ref` or `out`), the string will be pinned and used directly by native code (rather than copied).
 
 Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly want ANSI treatment of your strings.
 
@@ -50,11 +50,11 @@ scenario of calling a Windows API that takes a string:
 3. `ToString()` allocates yet another managed array **{4}**
 
 That is *{4}* allocations to get a string out of native code. The best you can do to limit this is to reuse the `StringBuilder`
-in another call but this still only saves *1* allocation. It is much better to use and cache a character buffer from `ArrayPool`- you can then get down to just the allocation for the `ToString()` on subsequent calls.
+in another call but this still only saves *1* allocation. It's much better to use and cache a character buffer from `ArrayPool`- you can then get down to just the allocation for the `ToString()` on subsequent calls.
 
-The other issue with `StringBuilder` is that it always copies the return buffer back up to the first null. If the passed back string isn't terminated or is a double-null-terminated string your P/Invoke is incorrect at best.
+The other issue with `StringBuilder` is that it always copies the return buffer back up to the first null. If the passed back string isn't terminated or is a double-null-terminated string, your P/Invoke is incorrect at best.
 
-If you *do* use `StringBuilder` one last gotcha is that the capacity does **not** include a hidden null which is always accounted for in interop. It is pretty common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshalling to minimize copies.
+If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not** include a hidden null, which is always accounted for in interop. It's common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshalling to minimize copies.
 
 **✔️ CONSIDER** using `char[]`s from an `ArrayPool`.
 
@@ -71,26 +71,26 @@ as `UnmanagedType.BSTR`.
 
 ## Boolean parameters and fields
 
-Booleans are easy to mess up. The default marshalling for .NET is as the Windows type `BOOL`, where it is a 4 byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. See the documentation on [customizing boolean field marshalling](customize-struct-marshalling#customizing-boolean-field-marshalling) for information on marshalling .NET `bool` values to C or C++ `bool` types.
+Booleans are easy to mess up. The default marshalling for .NET is as the Windows type `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshalling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshalling](customize-struct-marshalling#customizing-boolean-field-marshalling).
 
-## Guids
+## GUIDs
 
-Guids are usable directly in signatures. Many Windows APIs take `GUID&` type aliases like `REFIID`. When passed by ref they can either be passed by `ref` or with the `[MarshalAs(UnmanagedType.LPStruct)]` attribute.
+GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type aliases like `REFIID`. When passed by ref, they can either be passed by `ref` or with the `[MarshalAs(UnmanagedType.LPStruct)]` attribute.
 
 | Guid | By-ref Guid |
 |------|-------------|
 | `KNOWNFOLDERID` | `REFKNOWNFOLDERID` |
 
-**❌ DO NOT** Use `[MarshalAs(UnmanagedType.LPStruct)]` for anything other than `ref` Guid parameters.
+**❌ DO NOT** Use `[MarshalAs(UnmanagedType.LPStruct)]` for anything other than `ref` GUID parameters.
 
-## Blittable Types
+## Blittable types
 
 Blittable types are types that have the same bit-level representation in managed and native code. As such they do not need to be converted to another format to be marshalled to and from native code, and as this improves performance they should be preferred.
 
 **Blittable types:**
 
 - `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `single`, `double`
-- non-nested one dimensional arrays of blittable types (e.g. `int[]`)
+- non-nested one-dimensional arrays of blittable types (for example, `int[]`)
 - structs and classes with fixed layout that only have blittable value types for instance fields
   - fixed layout requires `[StructLayout(LayoutKind.Sequential)]` or `[StructLayout(LayoutKind.Explicit)]`
   - structs are `LayoutKind.Sequential` by default, classes are `LayoutKind.Auto`
@@ -103,9 +103,9 @@ Blittable types are types that have the same bit-level representation in managed
 
 - `char`, `string`
 
-When blittable types are passed by reference they are simply pinned by the marshaller instead of being copied to an intermediate buffer. (Classes are inherently passed by reference, structs are passed by reference when used with `ref` or `out`.)
+When blittable types are passed by reference, they're simply pinned by the marshaller instead of being copied to an intermediate buffer. (Classes are inherently passed by reference, structs are passed by reference when used with `ref` or `out`.)
 
-`char` is blittable in a one dimensional array **or** if it is part of a type that contains it is explicitly marked with `[StructLayout]` with `CharSet = CharSet.Unicode`.
+`char` is blittable in a one-dimensional array **or** if it's part of a type that contains it's explicitly marked with `[StructLayout]` with `CharSet = CharSet.Unicode`.
 
 ```csharp
 [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
@@ -117,16 +117,16 @@ public struct UnicodeCharStruct
 
 `string` is blittable if it isn't contained in another type and it's being passed as an argument that is marked with `[MarshalAs(UnmanagedType.LPWStr)]` or the `[DllImport]` has `CharSet = CharSet.Unicode` set.
 
-You can see if a type is blittable by attempting to create a pinned `GCHandle`. If the type is not a string or considered blittable `GCHandle.Alloc` will throw an `ArgumentException`.
+You can see if a type is blittable by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 
 **✔️ DO** make your structures blittable when possible.
 
-See more information at:
+For more information, see:
 
 - [Blittable and Non-Blittable Types](../../framework/interop/blittable-and-non-blittable-types)  
 - [Type Marshalling](./type-marshalling)
 
-## Keeping Managed Objects Alive
+## Keeping managed objects alive
 
 `GC.KeepAlive()` will ensure an object stays in scope until the KeepAlive method is hit.
 
@@ -140,7 +140,7 @@ IntPtr ptr = handle.AddrOfPinnedObject();
 handle.Free();
 ```
 
-Pinning is not the default for `GCHandle`. The other major pattern is for passing a reference to a managed object through native code and back to managed code, usually with a callback. Here is the pattern:
+Pinning isn't the default for `GCHandle`. The other major pattern is for passing a reference to a managed object through native code and back to managed code, usually with a callback. Here is the pattern:
 
 ```csharp
 GCHandle handle = GCHandle.Alloc(obj);
@@ -156,9 +156,9 @@ handle.Free();
 
 Don't forget that `GCHandle` needs to be explicitly freed to avoid memory leaks.
 
-## Common Windows Data Types
+## Common Windows data types
 
-Here is a list of data types commmonly used in Win32 APIs and which C# types to use when calling into the Win32 code.
+Here is a list of data types commonly used in Win32 APIs and which C# types to use when calling into the Win32 code.
 
 The following types are the same size on 32-bit and 64-bit Windows, despite their names.
 
@@ -209,9 +209,9 @@ A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `U
 
 Managed structs are created on the stack and aren't removed until the method returns. By definition then, they are "pinned" (it won't get moved by the GC). You can also simply take the address in unsafe code blocks if native code won't use the pointer past the end of the current method.
 
-Blittable structs are much more performant as they they can simply be used directly by the marshalling layer. Try to make structs blittable (for example, avoid `bool`). See the [Blittable Types section](#blittable-types) for more details.
+Blittable structs are much more performant as they can simply be used directly by the marshalling layer. Try to make structs blittable (for example, avoid `bool`). For more information, see the [Blittable Types](#blittable-types) section.
 
-*If* the struct is blittable, . As mentioned above, you can validate that the type is blittable by attempting to create a pinned `GCHandle`. If the type is not a string or considered blittable `GCHandle.Alloc` will throw an `ArgumentException`.
+*If* the struct is blittable, . As mentioned above, you can validate that the type is blittable by attempting to create a pinned `GCHandle`. If the type is not a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 
 Pointers to structs in definitions must either be passed by `ref` or use `unsafe` and `*`.
 
@@ -244,4 +244,4 @@ In C#, we can write it like this:
     }
 ```
 
-However, there are some gotchas with fixed buffers. Fixed buffers of non-blittable types will not be correctly marshalled, so the in-place array needs to be expanded out to multiple individual fields. Additionally, in .NET Framework and .NET Core before 3.0, if a struct containing a fixed buffer field is nested within a non-blittable struct, the fixed buffer field will not be correctly marshalled to native code.
+However, there are some gotchas with fixed buffers. Fixed buffers of non-blittable types won't be correctly marshalled, so the in-place array needs to be expanded out to multiple individual fields. Additionally, in .NET Framework and .NET Core before 3.0, if a struct containing a fixed buffer field is nested within a non-blittable struct, the fixed buffer field won't be correctly marshalled to native code.

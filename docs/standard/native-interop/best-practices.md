@@ -75,7 +75,7 @@ Booleans are easy to mess up. By default, a .NET `bool` is marshalled to a Windo
 
 GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type aliases like `REFIID`. When passed by ref, they can either be passed by `ref` or with the `[MarshalAs(UnmanagedType.LPStruct)]` attribute.
 
-| Guid | By-ref Guid |
+| GUID | By-ref GUID |
 |------|-------------|
 | `KNOWNFOLDERID` | `REFKNOWNFOLDERID` |
 

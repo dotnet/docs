@@ -56,7 +56,7 @@ If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not
 
 **✔️ CONSIDER** using `char[]`s from an `ArrayPool`.
 
-For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling,md#customizing-string-parameters.md).
+For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
 
 > __Windows Specific__  
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked

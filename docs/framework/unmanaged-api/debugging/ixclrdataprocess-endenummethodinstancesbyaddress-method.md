@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Releases the resources used by internal iterators used during instance enumeration.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

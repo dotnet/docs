@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Gets the module's version identifier.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

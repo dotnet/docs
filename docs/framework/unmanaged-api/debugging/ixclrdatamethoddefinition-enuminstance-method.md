@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Enumerates the instances of this method definition.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

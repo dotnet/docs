@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference).
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

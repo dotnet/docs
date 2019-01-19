@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Enumerates the method instances of this process starting at an address offset.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

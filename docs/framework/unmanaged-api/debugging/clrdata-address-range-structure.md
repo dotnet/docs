@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Defines an address range.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

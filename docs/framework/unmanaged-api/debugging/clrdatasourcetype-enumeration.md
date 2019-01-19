@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides values that are used by the CLRDATA_IL_ADDRESS_MAP structure.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

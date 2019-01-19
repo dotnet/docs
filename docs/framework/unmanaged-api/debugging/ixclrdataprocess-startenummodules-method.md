@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides a handle to enumerate the modules of a process.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

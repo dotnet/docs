@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides a handle to enumerate the method instances of `AppDomain` starting at a given address.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Gets the IL to address mapping information.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

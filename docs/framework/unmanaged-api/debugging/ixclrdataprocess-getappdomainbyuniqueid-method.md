@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Gets an `AppDomain` in a process based on its unique identifier.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 ```
 HRESULT GetAppDomainByUniqueID(

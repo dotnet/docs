@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Defines the container for a module address request.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

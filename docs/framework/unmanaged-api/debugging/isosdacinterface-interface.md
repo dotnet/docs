@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides helper methods to access data from `SOS`.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Methods
 
 | Method                                                                                                               | Description                                                                                                                   |

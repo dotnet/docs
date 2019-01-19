@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Defines an IL to address mapping.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

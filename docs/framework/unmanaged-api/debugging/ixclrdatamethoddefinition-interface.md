@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides methods for querying information about a method definition.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Methods
 
 The following methods are some of the methods available in the interface.

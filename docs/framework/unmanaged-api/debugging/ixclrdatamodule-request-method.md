@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Requests to populate the buffer given with the module's data.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 ```
 HRESULT Request([in] ULONG32 reqCode,

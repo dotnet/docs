@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Gets the method definition corresponding to a given metadata token.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

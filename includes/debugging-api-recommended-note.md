@@ -1,0 +1,2 @@
+> [!NOTE]
+> This API was originally designed for internal use in the runtime. For a better user experience, we recommend working with the [`ICorDebug`](../docs/framework/unmanaged-api/debugging/debugging-interfaces.md) and [`ICorProfiler`](../docs/framework/unmanaged-api/profiling/profiling-interfaces.md) APIs.

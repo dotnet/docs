@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Provides methods for querying information about a method instance.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Methods
 
 | Method                                                                                                                  | Description                                 |

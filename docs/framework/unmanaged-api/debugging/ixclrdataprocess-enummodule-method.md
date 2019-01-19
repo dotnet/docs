@@ -20,6 +20,8 @@ ms.author: "andrewau"
 
 Enumerates the modules of this process.
 
+[!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
+
 ## Syntax
 
 ```

@@ -396,6 +396,10 @@ Use the following code to display the metrics, share the results, and then act o
 
 ## Predict the test data outcome with the saved model
 
+Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
+
+[!code-csharp[CallPredictIssue](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallPredictIssue)]
+
 Create the `PredictIssue` method, just after the `Evaluate` method, using the following code:
 
 ```csharp
@@ -412,13 +416,9 @@ The `PredictIssue` method executes the following tasks:
 * Combines test data and predictions for reporting.
 * Displays the predicted results.
 
-Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
-
-[!code-csharp[CallPredictIssue](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallPredictIssue)]
-
 First, load the model that you saved previously with the following code:
 
-[!code-csharp[LoadTheModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#LoadTheModel)]
+[!code-csharp[LoadModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#LoadModel)]
 
 Add a GitHub issue to test the trained model's prediction in the `Predict` method by creating an instance of `GitHubIssue`:
 
@@ -441,6 +441,8 @@ Display `Area` in order to categorize the issue and act on it accordingly. This 
 Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These have been removed from the following results for clarity.
 
 ```console
+=============== Single Prediction just-trained-model - Result: area-System.Net ===============
+The model is saved to C:\Users\johalex\dotnet-samples\samples\machine-learning\tutorials\GitHubIssueClassification\bin\Debug\netcoreapp2.0\..\..\..\Models\model.zip
 *************************************************************************************************************
 *       Metrics for Multi-class Classification model - Test Data
 *------------------------------------------------------------------------------------------------------------

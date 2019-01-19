@@ -124,7 +124,7 @@ Classification tasks are frequently one of the following types:
 
 Add the following additional `using` statements to the top of the *Program.cs* file:
 
-[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
+[!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddUsings)]
 
 You need to create three global fields to hold the paths to the recently downloaded files, and a global variable for the `TextLoader`:
 
@@ -138,7 +138,7 @@ You need to create three global fields to hold the paths to the recently downloa
 
 Add the following code to the line right above the `Main` method to specify those paths and the other variables:
 
-[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
+[!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#DeclareGlobalVariables)]
 
 You need to create some classes for your input data and predictions. Add a new class to your project:
 
@@ -199,7 +199,7 @@ To initialize and load the `_trainingDataView` global variable in order to use i
 
 Add the following as the next line of code in the `Main` method:
 
-[!code-csharp[CallProcessData](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallBuildAndTrainModel#CallProcessData)]
+[!code-csharp[CallProcessData](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallProcessData)]
 
 The `ProcessData` method executes the following tasks:
 

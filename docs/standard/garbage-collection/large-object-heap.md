@@ -138,7 +138,7 @@ You can use the following tools to collect data on LOH performance:
 
 ### .NET CLR Memory Performance counters
 
-These performance counters are usually a good first step in investigating performance issues (although we recommend that you use [ETW events](#etw)). You configure Performance Monitor by adding the counters that you want, as Figure 4 shows. The ones that are relevant for the LOH are:
+These performance counters are usually a good first step in investigating performance issues (although we recommend that you use [ETW events](#etw-events)). You configure Performance Monitor by adding the counters that you want, as Figure 4 shows. The ones that are relevant for the LOH are:
 
 - **Gen 2 Collections**
 

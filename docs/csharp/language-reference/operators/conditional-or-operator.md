@@ -33,5 +33,5 @@ For more information, see the [Conditional logical operators](~/_csharplang/spec
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Operators](index.md)
 - [&& operator](conditional-and-operator.md)
-- [! operator](logical-negation-operator.md)
+- [\! operator](logical-negation-operator.md)
 - [| operator](or-operator.md)

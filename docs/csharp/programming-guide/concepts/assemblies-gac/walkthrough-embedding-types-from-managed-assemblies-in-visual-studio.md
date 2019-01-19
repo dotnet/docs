@@ -130,7 +130,7 @@ If you embed type information from a strong-named managed assembly, you can loos
                 p_UserInput = Console.ReadLine();  
             }  
         }  
-    )  
+    }  
     ```  
   
 9. Save the project.  

@@ -16,7 +16,7 @@ ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
 # XML Documentation Comments (C# Programming Guide)
 In Visual C# you can create documentation for your code by including XML elements in special comment fields (indicated by triple slashes) in the source code directly before the code block to which the comments refer, for example:  
   
-```  
+```csharp  
 /// <summary>  
 ///  This class performs an important function.  
 /// </summary>  

@@ -152,8 +152,8 @@ You can intern a string or retrieve a reference to an existing interned string b
 
 ## See also
 
-- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
-- <xref:System.StringComparer?displayProperty=nameWithType>  
-- [Strings](../programming-guide/strings/index.md)  
-- [Comparing Strings](../../standard/base-types/comparing.md)  
+- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- [Strings](../programming-guide/strings/index.md)
+- [Comparing Strings](../../standard/base-types/comparing.md)
 - [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)

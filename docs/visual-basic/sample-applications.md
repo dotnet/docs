@@ -12,6 +12,6 @@ You can use Visual Studio to download and install samples of full, packaged Visu
  You can download each sample individually, or you can download a Sample Pack, which contains related samples that share a technology or topic. You’ll receive a notification when source code changes are published for any sample that you download.  
   
 ## See Also  
- [Visual Studio Samples](https://code.msdn.microsoft.com/vstudio)  
- [Visual Basic Programming Guide](../visual-basic/programming-guide/index.md)  
- [Visual Basic](../visual-basic/index.md)
+- [Visual Studio Samples](https://code.msdn.microsoft.com/vstudio)
+- [Visual Basic Programming Guide](../visual-basic/programming-guide/index.md)
+- [Visual Basic](../visual-basic/index.md)

@@ -530,7 +530,7 @@ Create a *global.json* in the current directory setting the SDK version to 2.0.0
 
 ## See also
 
-* [Custom templates for dotnet new](custom-templates.md)  
-* [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md)  
-* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
-* [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)
+- [Custom templates for dotnet new](custom-templates.md)
+- [Create a custom template for dotnet new](~/docs/core/tutorials/create-custom-template.md)
+- [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+- [Available templates for dotnet new](https://github.com/dotnet/templating/wiki/Available-templates-for-dotnet-new)

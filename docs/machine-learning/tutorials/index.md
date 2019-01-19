@@ -13,4 +13,4 @@ The following tutorials enable you to understand how to use [ML.NET](../index.md
 - [Taxi fare predictor](taxi-fare.md): demonstrates how to apply a **regression** task using ML.NET.
 - [Iris clustering](iris-clustering.md): demonstrates how to apply a **clustering** task using ML.NET.
 
-For more examples that use ML.NET, check the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
+For more examples that use ML.NET, check out the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.

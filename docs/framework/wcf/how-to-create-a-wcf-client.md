@@ -16,7 +16,7 @@ The next task for creating a WCF application is to retrieve metadata from a WCF 
 > If you call a WCF service from a class library project in Visual Studio, you can use the **Add Service Reference** feature to automatically generate a proxy and associated configuration file. However, because class library projects don't use this configuration file, you need to add the settings in the generated configuration file to the App.config file for the executable that calls the class library.
 
 > [!NOTE]
-> As an alternative, you can also use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) instead of Visual Studio to generate the proxy class and configuration file.
+> As an alternative, you can also use the [ServiceModel Metadata Utility tool](#servicemodel-metadata-utility-tool) instead of Visual Studio to generate the proxy class and configuration file.
 
 
 The client application uses the generated proxy class to communicate with the service. This procedure is described in [Tutorial: Use a client](how-to-use-a-wcf-client.md).
@@ -31,7 +31,7 @@ The client application uses the generated proxy class to communicate with the se
 
     3. Select the **Console App (.NET Framework)** template, and enter *GettingStartedClient* for the **Name**. Select **OK**.
 
-2. Add a reference in the GettingStartedClient project to the System.ServiceModel assembly. 
+2. Add a reference in the GettingStartedClient project to the <xref:System.ServiceModel> assembly. 
 
     1.  In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedClient** project, and then select **Add Reference**. 
 
@@ -55,15 +55,17 @@ The client application uses the generated proxy class to communicate with the se
 
       Visual Studio adds a new item under the **Connected Services** folder in the **GettingStartedClient** project. 
 
-The following examples show how to use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy class and the App.config file. The examples generate the proxy in C# and Visual Basic, respectively:
+### ServiceModel Metadata Utility tool
 
-    ```shell
-    svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStarted/CalculatorService
-    ```
+The following examples show how to use the [ServiceModel Metadata Utility tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy class and the App.config file. The examples generate the proxy in C# and Visual Basic, respectively:
 
-    ```shell
-    svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStarted/CalculatorService
-    ```
+```shell
+svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStarted/CalculatorService
+```
+
+```shell
+svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localhost:8000/GettingStarted/CalculatorService
+```
 
 ## Next steps
 

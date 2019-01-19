@@ -49,7 +49,7 @@ A complete listing of the code for this task is provided in the code example fol
  
     3. Select **GettingStartedLib** in the center section of the window, and then choose **OK**. This action makes the types defined in the GettingStartedLib project available to the GettingStartedHost project.
 
-3. Add a reference in the GettingStartedHost project to the System.ServiceModel assembly. 
+3. Add a reference in the GettingStartedHost project to the <xref:System.ServiceModel> assembly. 
 
     1. In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedHost** project, and then select **Add Reference**.
     

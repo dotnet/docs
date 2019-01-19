@@ -1,12 +1,12 @@
 ---
-title: Use ML.NET in a GitHub issue multi classification scenario
-description: Discover how to use ML.NET in a multi classification scenario to classify GitHGub issues to assign them to a given area.
+title: Use ML.NET in a GitHub issue multiclass classification scenario
+description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
 ms.date: 01/18/2018
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to use ML.NET to apply a multi classification task so that I can understand how to classify GitHGub issues to assign them to a given area.
+#Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification task so that I can understand how to classify GitHGub issues to assign them to a given area.
 ---
-# Tutorial: Use ML.NET in a multi classification scenario to classify GitHub issues.
+# Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues.
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
@@ -33,8 +33,8 @@ The sample is a console app that uses ML.NET to train a model that classifies an
 
 * [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
-* The [Github issues tab separated file (issues_train.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv).
-* The [Github issues test tab separated file (issues_test.tsv)](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv).
+* The [Github issues tab separated file (issues_train.tsv)](https://github.com/dotnet/samples/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
+* The [Github issues test tab separated file (issues_test.tsv)](https://github.com/dotnet/samples/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
 
 ## Machine learning workflow
 
@@ -294,8 +294,7 @@ Add the following code to the `BuildAndTrainModel` method:
 
 While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the next line in the `BuildAndTrainModel` Method:
 
-[!code-csharp[CreatePredictionEngine]
-(../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
+[!code-csharp[CreatePredictionEngine](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
 
 Add a GitHub issue to test the trained model's prediction in the `Predict` method by creating an instance of `GitHubIssue`:
 
@@ -303,15 +302,13 @@ Add a GitHub issue to test the trained model's prediction in the `Predict` metho
 
 You can use that to predict the `Area` label of a single instance of the issue data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
-[!code-csharp[Predict]
-(../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
+[!code-csharp[Predict](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
 
 ### Model operationalization: prediction
 
 Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
-[!code-csharp[OutputPrediction]
-(../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
+[!code-csharp[OutputPrediction](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs)]
 
 ### Save and return the model trained to use for evaluation
 

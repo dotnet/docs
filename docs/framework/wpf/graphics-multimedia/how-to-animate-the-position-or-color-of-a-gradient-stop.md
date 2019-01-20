@@ -33,7 +33,7 @@ This example shows how to animate the <xref:System.Windows.Media.GradientStop.Co
   
  For additional examples, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.GradientStop>  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)

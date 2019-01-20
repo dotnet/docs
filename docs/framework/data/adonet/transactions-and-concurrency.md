@@ -28,7 +28,7 @@ A transaction consists of a single command or a group of commands that execute a
  [Optimistic Concurrency](../../../../docs/framework/data/adonet/optimistic-concurrency.md)  
  Describes optimistic and pessimistic concurrency, and how you can test for concurrency violations.  
   
-## See Also  
+## See also
  [Transaction Fundamentals](../../../../docs/framework/data/transactions/transaction-fundamentals.md)  
  [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  

@@ -17,6 +17,6 @@ Multiple Active Result Sets (MARS) is a feature that allows the execution of mul
  [Asynchronous Operations](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)  
  Provides details on using the new asynchronous features in ADO.NET.  
   
-## See Also  
+## See also
  [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

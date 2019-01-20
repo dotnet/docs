@@ -106,7 +106,7 @@ This page lists some common problems that can occur when you perform operations 
 ### Meaningless Values  
  In general, `String` values are not meaningful in other data types, and conversion is highly artificial and dangerous. Whenever possible, you should restrict usage of `String` variables to the character sequences for which they are designed. You should never write code that relies on equivalent values in other types.  
   
-## See Also  
+## See also
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
  [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  

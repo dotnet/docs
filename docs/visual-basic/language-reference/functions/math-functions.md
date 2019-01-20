@@ -160,7 +160,7 @@ End Function
   
  **Assembly:** mscorlib (in mscorlib.dll)  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>  
  <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>  
  <xref:System.Double.NaN>  

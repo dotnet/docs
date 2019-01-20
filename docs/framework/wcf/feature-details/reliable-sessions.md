@@ -40,7 +40,7 @@ Describes some of the best practices associated with using a reliable session.
 
 <xref:System.ServiceModel.ReliableSession>
 
-## See Also
+## See also
 
 [Queues and Reliable Sessions](../../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md)   
 [Sessions, Instancing, and Concurrency](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)

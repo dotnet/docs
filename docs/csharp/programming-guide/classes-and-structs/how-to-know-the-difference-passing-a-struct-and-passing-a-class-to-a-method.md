@@ -20,7 +20,7 @@ The following example demonstrates how passing a [struct](../../../csharp/langua
 ## Example  
  [!code-csharp[csProgGuideObjects#32](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method_1.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  

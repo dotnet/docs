@@ -29,5 +29,5 @@ The Windows Forms `ComboBox` control is used to display data in a drop-down comb
  [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)  
  Provides a list of things you can do with list boxes, combo boxes, and checked list boxes.  
   
-## See Also  
+## See also
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

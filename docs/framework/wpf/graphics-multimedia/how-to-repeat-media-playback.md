@@ -16,7 +16,7 @@ This example shows how to playback media indefinitely, that is, to set media so 
   
  [!code-xaml[MediaGallery_snippet#SoundRepeatExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/SoundRepeatExample.xaml#soundrepeatexamplewholepage)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.MediaElement>  
  <xref:System.Windows.Media.MediaTimeline>  
  <xref:System.Windows.Media.Animation.Storyboard>  

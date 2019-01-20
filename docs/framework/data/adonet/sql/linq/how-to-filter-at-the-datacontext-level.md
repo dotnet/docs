@@ -15,5 +15,5 @@ You can filter `EntitySets` at the `DataContext` level. Such filters apply to al
  [!code-csharp[DLinqQueryConcepts#10](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs/Program.cs#10)]
  [!code-vb[DLinqQueryConcepts#10](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#10)]  
   
-## See Also  
+## See also
  [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

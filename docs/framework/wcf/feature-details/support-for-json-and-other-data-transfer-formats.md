@@ -16,6 +16,6 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
  [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)  
  Describes the correspondence between JavaScript Object Notation (JSON) encodings and the XML infoset, which is used internally by Windows Communication Foundation (WCF) to represent JSON-encoded data and documents.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>  
  <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory>

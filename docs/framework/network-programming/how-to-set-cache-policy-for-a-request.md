@@ -99,7 +99,7 @@ Namespace Examples.System.Net.Cache
 End Namespace  
 ```  
   
-## See Also  
+## See also
  [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
  [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  

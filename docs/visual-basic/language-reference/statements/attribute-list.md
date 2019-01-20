@@ -47,7 +47,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
  <xref:System.Runtime.InteropServices.DllImportAttribute> indicates that the attributed procedure represents an entry point in an unmanaged dynamic-link library (DLL). The attribute supplies the DLL name as a positional argument and the other information as variable initializers.  
   
-## See Also  
+## See also
  [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)  
  [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
  [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)  

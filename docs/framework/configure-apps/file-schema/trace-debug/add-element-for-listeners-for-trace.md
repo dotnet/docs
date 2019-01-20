@@ -97,7 +97,7 @@ Adds a listener to the **Listeners** collection.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.Trace>  
  <xref:System.Diagnostics.Debug>  
  <xref:System.Diagnostics.EventLogTraceListener>  

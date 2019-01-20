@@ -272,6 +272,6 @@ public static MyClass SingletonProperty
   
  Doing so instructs the just-in-time compiler to prepare all the code in the finally block before running the `try` block. This guarantees that the code in the finally block is built and will run in all cases. It is not uncommon in a CER to have an empty `try` block. Using a CER protects against asynchronous thread aborts and out-of-memory exceptions. See <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup%2A> for a form of a CER that additionally handles stack overflows for exceedingly deep code.  
   
-## See Also  
+## See also
  <xref:System.Runtime.ConstrainedExecution>  
  [SQL Server Programming and Host Protection Attributes](../../../docs/framework/performance/sql-server-programming-and-host-protection-attributes.md)

@@ -116,7 +116,7 @@ csc /out:TestCode.exe /reference:MathLibrary.DLL TestCode.cs
   
  For more information about building from the command line, see [Command-line Building With csc.exe](../../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
 - [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  

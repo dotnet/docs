@@ -67,7 +67,7 @@ Specifies the type that serves as the application domain manager for the default
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
 - [\<appDomainManagerAssembly> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)  

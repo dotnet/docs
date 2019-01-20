@@ -51,7 +51,7 @@ foreach (XElement el in tests)
 0006  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A>  
 - <xref:System.Xml.Linq.XContainer.Elements%2A>  

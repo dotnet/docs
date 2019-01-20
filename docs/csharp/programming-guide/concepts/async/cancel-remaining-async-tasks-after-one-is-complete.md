@@ -251,7 +251,7 @@ namespace CancelAfterOneTask
 }  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>  
 - [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)  

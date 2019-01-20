@@ -32,5 +32,5 @@ Transport security in Windows Communication Foundation (WCF) depends on the bind
 ## Related Sections  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
   
-## See Also  
+## See also
  [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)

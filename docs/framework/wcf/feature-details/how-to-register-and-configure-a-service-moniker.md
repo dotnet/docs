@@ -91,5 +91,5 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
   
      This modifies the imported interface definitions so that all methods return an `HResult`. Any other return values are converted into out parameters. The overall execution of the methods remains the same. This allows you to determine the cause of an exception when calling a method on the proxy. This functionality is only available from C++ code.  
   
-## See Also  
+## See also
  [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

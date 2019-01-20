@@ -69,7 +69,7 @@ SetStyle(ControlStyles.ResizeRedraw, true);
 > [!NOTE]
 >  Use the <xref:System.Windows.Forms.Control.Region%2A?displayProperty=nameWithType> property to implement a non-rectangular control.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Control.Region%2A>  
  <xref:System.Windows.Forms.ControlStyles>  
  <xref:System.Drawing.Graphics>  

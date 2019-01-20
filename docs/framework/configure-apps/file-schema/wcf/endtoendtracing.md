@@ -42,7 +42,7 @@ A configuration element that allows you to enable and disable different aspects 
 |-------------|-----------------|  
 |[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.DiagnosticSection>  
  <xref:System.ServiceModel.Diagnostics>  
  <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>  

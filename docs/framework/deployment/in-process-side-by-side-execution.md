@@ -167,6 +167,6 @@ int _tmain(int argc, _TCHAR* argv[])
 }  
 ```  
   
-## See Also  
+## See also
 - [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)
 - [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

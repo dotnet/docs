@@ -73,7 +73,7 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.CodeDom.Compiler.CompilerInfo>  
 - <xref:System.CodeDom.Compiler.CodeDomProvider>  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  

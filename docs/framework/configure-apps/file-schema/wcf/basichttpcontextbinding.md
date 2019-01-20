@@ -90,7 +90,7 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
 ## Remarks  
  This binding element provides a protection level and an exchange mechanism as part of the context for a `BasicHttpBinding`.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.BasicHttpBinding>  
  <xref:System.ServiceModel.BasicHttpContextBinding>  
  <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>  

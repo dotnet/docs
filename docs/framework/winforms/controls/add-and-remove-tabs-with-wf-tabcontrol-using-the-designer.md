@@ -25,7 +25,7 @@ When you place a <xref:System.Windows.Forms.TabControl> control on your form, it
   
      In the **Properties** window, click the **Ellipsis** button (![VisualStudioEllipsesButton screenshot](../../../../docs/framework/winforms/media/vbellipsesbutton.png "vbEllipsesButton")) next to the <xref:System.Windows.Forms.TabControl.TabPages%2A> property to open the **TabPage Collection Editor**. Click the **Add** or **Remove** button.  
   
-## See Also  
+## See also
  [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)  
  [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
  [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)  

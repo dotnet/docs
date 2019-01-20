@@ -17,5 +17,5 @@ Source text lines cannot exceed 65535 characters.
   
 -   Shorten the length of the line to 65535 characters or fewer.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

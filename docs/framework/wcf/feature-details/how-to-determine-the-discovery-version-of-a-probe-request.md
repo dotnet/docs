@@ -16,7 +16,7 @@ A discovery proxy may expose multiple discovery endpoints using different discov
     doce.DiscoveryVersion;  
     ```  
   
-## See Also  
+## See also
 
 - <xref:System.ServiceModel.Discovery.Configuration.AnnouncementEndpointElement.DiscoveryVersion%2A>  
 - [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md)  

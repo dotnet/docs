@@ -112,7 +112,7 @@ Console.WriteLine(root);
 </Root>  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>  
 - <xref:System.Xml.Linq.XElement.SetElementValue%2A>  

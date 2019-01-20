@@ -46,7 +46,7 @@ Defines an X.509 certificate used to authenticate a client to a service.
 ## Remarks  
  This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ClientCertificate%2A>  
  <xref:System.ServiceModel.Description.ClientCredentials>  

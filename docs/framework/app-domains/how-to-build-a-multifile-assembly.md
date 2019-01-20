@@ -90,7 +90,7 @@ This article explains how to create a multifile assembly and provides code that 
   
      You can use the [MSIL Disassembler (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the contents of an assembly, or determine whether a file is an assembly or a module.  
   
-## See Also  
+## See also
 - [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
 - [How to: View Assembly Contents](../../../docs/framework/app-domains/how-to-view-assembly-contents.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

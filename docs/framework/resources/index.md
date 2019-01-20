@@ -54,7 +54,7 @@ Nearly every production-quality app has to use resources. A resource is any none
   
 -   The <xref:System.Resources.ResXResourceSet> class, which enables you to retrieve all the items in an XML resource file into memory.  
   
-## See Also  
+## See also
  <xref:System.Globalization.CultureInfo>  
  <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>  
  [Application Essentials](../../../docs/standard/application-essentials.md)  

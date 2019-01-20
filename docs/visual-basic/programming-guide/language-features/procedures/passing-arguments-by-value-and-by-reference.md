@@ -62,7 +62,7 @@ In Visual Basic, you can pass an argument to a procedure *by value* or *by refer
 ### Code  
  [!code-vb[VbVbcnProcedures#74](./codesnippet/VisualBasic/passing-arguments-by-value-and-by-reference_1.vb)]  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  

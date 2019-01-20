@@ -14,7 +14,7 @@ The security handshake with a potential neighbor was not successful.
 ## Troubleshooting  
  Ensure that all neighbors have the appropriate security credentials.  
   
-## See Also  
+## See also
  [Peer Channel Security](../../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  

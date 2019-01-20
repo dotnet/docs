@@ -55,7 +55,7 @@ A time-based cache policy defines the freshness of cached entries using the time
   
 -   [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)  
   
-## See Also  
+## See also
  [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
  [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  

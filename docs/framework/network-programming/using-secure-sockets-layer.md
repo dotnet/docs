@@ -56,7 +56,7 @@ FtpWebResponse response = (FtpWebResponse)request.GetResponse();
   
 -   References to the **System.Net** namespace.  
   
-## See Also  
+## See also
  [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)  
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Certificate Selection and Validation](../../../docs/framework/network-programming/certificate-selection-and-validation.md)

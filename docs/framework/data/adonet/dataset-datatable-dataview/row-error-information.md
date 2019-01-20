@@ -71,7 +71,7 @@ protected static void OnRowChanged(
 }  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataColumnCollection>  
  <xref:System.Data.DataRow>  
  <xref:System.Data.DataTable>  

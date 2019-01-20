@@ -105,7 +105,7 @@ public partial class TestClient : System.ServiceModel.ClientBase, ITest {}
   
  In the example above, all instances of `TestClient` would use different channel factories. This is useful when each endpoint has different security requirements and it makes no sense to cache.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.ClientBase%601>  
  [Building Clients](../../../../docs/framework/wcf/building-clients.md)  
  [Clients](../../../../docs/framework/wcf/feature-details/clients.md)  

@@ -50,7 +50,7 @@ COM interfaces and the runtime callable wrapper
 |**IDispatchEx**|If the class implements **IDispatchEx**, the RCW implements **IExpando**. The **IDispatchEx** interface is an extension of the **IDispatch** interface that, unlike **IDispatch**, enables enumeration, addition, deletion, and case-sensitive calling of members.|  
 |**IEnumVARIANT**|Enables COM types that support enumerations to be treated as collections.|  
   
-## See Also  
+## See also
  [COM Wrappers](com-wrappers.md)  
  [Marshaling Selected Interfaces](https://msdn.microsoft.com/library/fdb97fd0-f694-4832-bf15-a4e7cf413840(v=vs.100))  
  [COM Callable Wrapper](com-callable-wrapper.md)  

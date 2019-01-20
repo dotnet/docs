@@ -187,7 +187,7 @@ This concludes our discussion of this example. For the complete sample, see [Int
   
  ![HierarchicalDataTemplate sample screen shot](../../../../docs/framework/wpf/data/media/databinding-hierarchicaldatatemplate.png "DataBinding_HierarchicalDataTemplate")  
   
-## See Also  
+## See also
  [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
  [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  

@@ -91,7 +91,7 @@ Sometimes you work with a value type that does not have a defined value in certa
 ## Using Nullable Types with Data  
  A database is one of the most important places to use nullable types. Not all database objects currently support nullable types, but the designer-generated table adapters do. See "TableAdapter Support for Nullable Types" in [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview).
   
-## See Also  
+## See also
  <xref:System.InvalidOperationException>  
  <xref:System.Nullable%601.HasValue%2A>  
  [Using Nullable Types](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  

@@ -43,7 +43,7 @@ Specifies a policy importer that controls the import of custom policy assertions
 ## Remarks  
  A policy importer is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
  <xref:System.ServiceModel.Configuration.PolicyImporterElement>  
  <xref:System.ServiceModel.Configuration.MetadataElement>  

@@ -51,7 +51,7 @@ Server.Database.DatabaseSchema.DatabaseObject
 |--------------|-----------------|  
 |[User-Schema Separation](https://msdn.microsoft.com/library/ms190387.aspx) in SQL Server Books Online|Describes the changes introduced by user-schema separation. Includes new behavior, its impact on ownership, catalog views, and permissions.|  
   
-## See Also  
+## See also
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
  [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)  

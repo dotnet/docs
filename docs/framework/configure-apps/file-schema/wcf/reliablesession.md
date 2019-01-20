@@ -113,7 +113,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ReliableSessionElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>  

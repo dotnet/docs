@@ -36,7 +36,7 @@ When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit
     System.Windows.Forms.ToolStripItemOverflow.Never;  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStrip>  
  <xref:System.Windows.Forms.ToolStripOverflowButton>  
  <xref:System.Windows.Forms.ToolStripItem.Overflow%2A>  

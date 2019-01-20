@@ -92,7 +92,7 @@ endpointBehaviors section
 </serviceCertificate>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.X509DefaultServiceCertificateElement>  
  <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>  
  <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.DefaultCertificate%2A>  

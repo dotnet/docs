@@ -102,6 +102,6 @@ Dim myWebResponse As WebResponse = myWebRequest.GetResponse()
 MyWebResponse.Close()  
 ```  
   
-## See Also  
+## See also
  [Managing Connections](../../../docs/framework/network-programming/managing-connections.md)  
  [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)

@@ -28,7 +28,7 @@ This example shows how to draw a polyline, which is a series of connected lines,
   
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   
-## See Also  
+## See also
  <xref:System.Windows.Shapes.Polyline>  
  <xref:System.Windows.Shapes.Polygon>  
  <xref:System.Windows.Shapes.Shape>  

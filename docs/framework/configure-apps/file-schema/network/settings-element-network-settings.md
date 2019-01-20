@@ -59,6 +59,6 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
-## See Also  
+## See also
 - <xref:System.Net?displayProperty=nameWithType>  
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

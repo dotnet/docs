@@ -82,5 +82,5 @@ This topic describes the valid arguments that can be passed to constructors and 
 |<xref:System.Xml.Linq.XContainer.ReplaceNodes%2A>|Replaces the children nodes with new content.|  
 |<xref:System.Xml.Linq.XNode.ReplaceWith%2A>|Replaces a node with new content.|  
   
-## See Also  
+## See also
  [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

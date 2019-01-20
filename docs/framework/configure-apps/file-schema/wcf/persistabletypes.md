@@ -6,7 +6,7 @@ ms.assetid: 4d255097-45f0-4a04-945e-41d9bcfe8c54
 # &lt;persistableTypes&gt;
 This section contains a collection of `persistableType` elements.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ComPersistableTypeElementCollection>  
  <xref:System.ServiceModel.Configuration.ComPersistableTypeElement>  
  [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)  

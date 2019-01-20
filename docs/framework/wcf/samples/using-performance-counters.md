@@ -70,5 +70,5 @@ This sample demonstrates how to access Windows Communication Foundation (WCF) pe
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\PerfCounters`  
   
-## See Also  
+## See also
  [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

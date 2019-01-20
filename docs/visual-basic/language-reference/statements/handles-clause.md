@@ -48,7 +48,7 @@ proceduredeclaration Handles eventlist
   
  [!code-vb[VbVbalrEvents#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_4.vb)]  
   
-## See Also  
+## See also
  [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)  
  [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
  [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  

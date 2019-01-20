@@ -61,6 +61,6 @@ Configures mail sending options.
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Net.Mail.SmtpClient>  
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

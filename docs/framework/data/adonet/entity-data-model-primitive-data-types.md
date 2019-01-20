@@ -32,6 +32,6 @@ The Entity Data Model (EDM) supports a set of abstract primitive data types (suc
 |String|Contains character data.|Unicode, FixedLength, MaxLength, Collation, Precision, Nullable, Default|  
 |Time|Contains a time of day.|Precision, Nullable, Default|  
   
-## See Also  
+## See also
  [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
  [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

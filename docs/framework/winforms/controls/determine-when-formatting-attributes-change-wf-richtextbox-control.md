@@ -74,7 +74,7 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
        }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.RichTextBox.SelectionChanged>  
  <xref:System.Windows.Forms.RichTextBox>  
  [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  

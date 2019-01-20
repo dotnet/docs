@@ -66,6 +66,6 @@ Requests that the common language runtime (CLR) reduce memory use by specifying 
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

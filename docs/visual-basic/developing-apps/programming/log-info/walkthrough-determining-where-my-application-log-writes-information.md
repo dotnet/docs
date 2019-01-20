@@ -56,7 +56,7 @@ The `My.Application.Log` object can write information to several log listeners. 
   
     -   For information about where other types of log listeners write information, consult that type's documentation.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
  <xref:System.Diagnostics.DefaultTraceListener>  
  <xref:System.Diagnostics.EventLogTraceListener>  

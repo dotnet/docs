@@ -134,7 +134,7 @@ extern "C" int MessageBox(HWND hWnd,
                           unsigned int uType);  
 ```  
   
-## See Also  
+## See also
  <xref:System.Runtime.InteropServices.DllImportAttribute>  
  [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
  [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  

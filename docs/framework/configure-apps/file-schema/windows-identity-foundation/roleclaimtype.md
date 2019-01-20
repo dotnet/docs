@@ -62,5 +62,5 @@ Specifies the claim type that defines the role type claims in the collection of 
 </add>  
 ```  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.RoleClaimType%2A>

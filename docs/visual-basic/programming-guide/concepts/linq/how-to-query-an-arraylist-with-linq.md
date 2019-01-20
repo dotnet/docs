@@ -70,5 +70,5 @@ End Module
 '   Garcia: 97  
 ```  
   
-## See Also  
+## See also
  [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)

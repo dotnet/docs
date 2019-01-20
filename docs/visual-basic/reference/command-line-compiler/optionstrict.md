@@ -50,7 +50,7 @@ Enforces strict type semantics to restrict implicit type conversions.
 vbc -optionstrict+ test.vb  
 ```  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
  [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  

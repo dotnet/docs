@@ -56,7 +56,7 @@ The following topics describe [!INCLUDE[ndptecclick](../../../includes/ndpteccli
  [How to: Include a Data File in a ClickOnce Application](/visualstudio/deployment/how-to-include-a-data-file-in-a-clickonce-application)  
  Demonstrates how to mark a file so that it is available in the [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] data directory.  
   
-## See Also  
+## See also
  [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)  
  [Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)  
  [Building ClickOnce Applications from the Command Line](/visualstudio/deployment/building-clickonce-applications-from-the-command-line)  

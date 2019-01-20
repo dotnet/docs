@@ -136,5 +136,5 @@ This sample demonstrates how to control several security-related features of a W
   
 1.  Edit Machine.config to set the `enableLoggingKnownPii` attribute to `false`.  
   
-## See Also  
+## See also
  [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

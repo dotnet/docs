@@ -124,6 +124,6 @@ public class B
   
  The previous code is transparent except for the `Critical` method, which is explicitly marked as security-critical. Transparency is the default setting, even with the assembly-level <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
-## See Also  
+## See also
  [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)  
  [Security Changes](../../../docs/framework/security/security-changes.md)

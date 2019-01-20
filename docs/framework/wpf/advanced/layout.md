@@ -142,7 +142,7 @@ This topic describes the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 ## What's Next  
  Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](../../../../docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md). For an example of a custom <xref:System.Windows.Controls.Panel> element, see [Custom Radial Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159982). When you are ready to put it all together in a light-weight application, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.FrameworkElement>  
  <xref:System.Windows.UIElement>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  

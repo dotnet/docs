@@ -42,7 +42,7 @@ Specifies a digest type credential used when authenticating the client to a serv
   
  This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>  
  <xref:System.ServiceModel.Description.ClientCredentials>  

@@ -13,6 +13,6 @@ Id: 116
 ## Description  
  Message Logging has been turned on. Sensitive information may be logged, even if it was encrypted on the wire. For example, message bodies. The event lists the AppID, exception, process name and process ID.  
   
-## See Also  
+## See also
  [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

@@ -45,6 +45,6 @@ You can access a service that exposes an [!INCLUDE[ssODataFull](../../../../incl
   
  There are programming libraries available that you can use to consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in other kinds of client applications. For more information, see the [OData SDK](https://go.microsoft.com/fwlink/?LinkId=185796).  
   
-## See Also  
+## See also
  [Accessing Data Service Resources](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)  
  [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)

@@ -86,7 +86,7 @@ The DLR uses binders in call sites to communicate not only with the .NET Framewo
 ## DLR Documentation
  For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with the .NET Framework, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/master/Docs) repo on GitHub.
 
-## See Also
+## See also
 
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>

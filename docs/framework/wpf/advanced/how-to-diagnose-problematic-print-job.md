@@ -75,7 +75,7 @@ Network administrators often field complaints from users about print jobs that d
  [!code-csharp[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#handlepausedjob)]
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
-## See Also  
+## See also
  <xref:System.Printing.PrintJobStatus>  
  <xref:System.Printing.PrintSystemJobInfo>  
  <xref:System.FlagsAttribute>  

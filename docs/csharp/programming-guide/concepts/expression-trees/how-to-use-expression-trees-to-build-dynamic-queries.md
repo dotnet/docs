@@ -102,7 +102,7 @@ foreach (string company in results)
   
 -   Copy the code from the example and paste it into the `Main` method.  
   
-## See Also
+## See also
 
 - [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)  
 - [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)  

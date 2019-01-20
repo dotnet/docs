@@ -79,6 +79,6 @@ void OnCommitted(IAsyncResult asyncResult)
 }  
 ```  
   
-## See Also  
+## See also
  [Implementing an Implicit Transaction using Transaction Scope](../../../../docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md)  
  [Transaction Processing](../../../../docs/framework/data/transactions/index.md)

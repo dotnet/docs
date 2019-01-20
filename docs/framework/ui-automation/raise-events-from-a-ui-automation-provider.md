@@ -21,5 +21,5 @@ ms.author: "mhopkins"
   
  [!code-csharp[UIAProvider_snip#150](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAProvider_snip/CSharp/FragmentRoot.cs#150)]  
   
-## See Also  
+## See also
  [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)

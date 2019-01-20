@@ -38,7 +38,7 @@ Two objects that rotate 45 degrees from different rotational centers
   
  For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Transform>  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)

@@ -31,5 +31,5 @@ The following examples show how to decode and encode a [!INCLUDE[TLA#tla_wdp](..
  [!code-csharp[WdpBitmapDecoderEncoder#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WdpBitmapDecoderEncoder/CSharp/WDPEncoderDecoder.cs#4)]
  [!code-vb[WdpBitmapDecoderEncoder#4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WdpBitmapDecoderEncoder/VB/WDPEncoderDecoder.vb#4)]  
   
-## See Also  
+## See also
  [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

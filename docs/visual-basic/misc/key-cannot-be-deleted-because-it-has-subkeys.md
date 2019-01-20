@@ -10,7 +10,7 @@ The key cannot be deleted because it has subkeys.
   
 -   Determine and delete the specified key's subkeys before attempting this operation.  
   
-## See Also  
+## See also
  <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>  
  [How to: Delete a Registry Key](../../visual-basic/developing-apps/programming/computer-resources/how-to-delete-a-registry-key.md)  
  [Reading from and Writing to the Registry Using My (Visual Basic)](https://msdn.microsoft.com/library/1309ad05-5bef-401f-970a-2f6455873b79)  

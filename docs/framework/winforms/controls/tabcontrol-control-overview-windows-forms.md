@@ -16,7 +16,7 @@ The Windows Forms <xref:System.Windows.Forms.TabControl> displays multiple tabs,
 ## Working with TabControl  
  The most important property of the <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabControl.TabPages%2A>, which contains the individual tabs. Each individual tab is a <xref:System.Windows.Forms.TabPage> object. When a tab is clicked, it raises the <xref:System.Windows.Forms.Control.Click> event for that <xref:System.Windows.Forms.TabPage> object.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.TabControl>  
  [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)  
  [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)  

@@ -74,7 +74,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
 > [!NOTE]
 >  When you declare an XML namespace prefix by using the `xmlns` namespace attribute, the attribute value must be a constant string. In this regard, using the `xmlns` attribute is like using the `Imports` statement to declare an XML namespace. You cannot use an embedded expression to specify the XML namespace value.  
   
-## See Also  
+## See also
  [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  

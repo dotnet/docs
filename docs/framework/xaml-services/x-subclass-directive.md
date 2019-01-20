@@ -50,6 +50,6 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
   
  When you define both `x:Class` and `x:Subclass`, you do not need to provide any implementation for the class that is referenced by `x:Class`. You only need to give it a name via the `x:Class` attribute so that the compiler has some guidance for the class that it creates in the intermediate files (the compiler does not select a default name in this case). You can give the `x:Class` class an implementation; however, this is not the typical scenario for using both `x:Class` and `x:Subclass`.  
   
-## See Also  
+## See also
  [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)  
  [XAML and Custom Classes for WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

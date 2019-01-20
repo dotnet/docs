@@ -43,7 +43,7 @@ Specifies all the WSDL importers that imports Web Services Description Language 
 ## Remarks  
  A WSDL importer is used to import metadata as well as convert that information into various classes that represent contract and endpoint information. It can selectively import contract and endpoint information and properties that expose any import errors and accept type information relevant to the import and conversion process. It also supports importing binding information and properties that provide access to any policy documents, WSDL documents, WSDL extensions, and XML schema documents.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.WsdlImporterElement>  
  <xref:System.ServiceModel.Configuration.MetadataElement>  
  <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>  

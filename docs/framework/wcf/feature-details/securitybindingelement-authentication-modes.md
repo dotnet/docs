@@ -114,6 +114,6 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
 ### UserNameOverTransport  
  With this authentication mode, the client authenticates using a Username Token that appears at the SOAP layer as a signed supporting token; that is, a token that is signed by the message signature. The service is authenticated using an X.509 certificate at the transport layer. The security binding element is a `TransportSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameOverTransportBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `UserNameOverTransport`.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.SecurityBindingElement>  
  [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

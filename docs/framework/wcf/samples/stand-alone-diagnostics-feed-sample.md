@@ -87,6 +87,6 @@ foreach (SyndicationItem i in feed.Items)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\DiagnosticsFeed`  
   
-## See Also  
+## See also
  [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
  [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)

@@ -14,6 +14,6 @@ The dynamic-link library (DLL) in a user library reference was found, but the DL
   
 2.  Make sure the DLL name and alias are correct.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
 

@@ -26,6 +26,6 @@ This single-instance application could not connect to the original instance. Som
   
 5.  Note the circumstances under which the error occurred, and telephone Microsoft Product Support Services.  
   
-## See Also  
+## See also
  [Debugger Basics](/visualstudio/debugger/debugger-basics)  
 

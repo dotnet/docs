@@ -44,7 +44,7 @@ ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
  [!code-csharp[DLinqGettingStarted#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqGettingStarted/cs/Program.cs#4)]
  [!code-vb[DLinqGettingStarted#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb/Module1.vb#4)]  
   
-## See Also  
+## See also
  [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)  
  [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)  
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

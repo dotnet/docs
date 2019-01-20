@@ -105,5 +105,5 @@ xmlHttp.onreadystatechange=function(){
   
 3.  Navigate to `http://localhost/ServiceModelSamples/XmlAjaxClientPage.htm` (do not open XmlAjaxClientPage.htm in the browser from the project directory).  
   
-## See Also  
+## See also
  [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md)

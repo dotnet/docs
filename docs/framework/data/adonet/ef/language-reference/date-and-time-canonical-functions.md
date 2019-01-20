@@ -50,5 +50,5 @@ ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
   
  Equivalent functionality is available in the Microsoft SQL Client Managed Provider. For more information, see [SqlClient for Entity Framework Functions](../../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md).  
   
-## See Also  
+## See also
  [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)

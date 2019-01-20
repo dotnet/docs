@@ -50,7 +50,7 @@ This topic provides guidance and suggested patterns for how to implement a depen
   
  To enable subproperty binding in a dependency object collection, create the collection property as type <xref:System.Windows.FreezableCollection%601>, with a type constraint for that collection to any <xref:System.Windows.DependencyObject> derived class.  
   
-## See Also  
+## See also
  <xref:System.Windows.FreezableCollection%601>  
  [XAML and Custom Classes for WPF](../../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  

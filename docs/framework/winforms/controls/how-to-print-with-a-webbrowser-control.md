@@ -26,7 +26,7 @@ The following code example demonstrates how use the <xref:System.Windows.Forms.W
   
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.WebBrowser>  
  <xref:System.Windows.Forms.WebBrowser.Print%2A>  
  <xref:System.Windows.Forms.WebBrowser.Url%2A>  

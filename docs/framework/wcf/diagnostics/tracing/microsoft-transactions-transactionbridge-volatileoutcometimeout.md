@@ -12,7 +12,7 @@ The WS-AT protocol service timed out waiting for a response to an outcome messag
 ## Troubleshooting  
  Ensure that all Volatile participants are able to respond within the given amount of time. The default time period is 180 seconds.  If this is insufficient, increase the `VolatileOutcomeDelay` timer policy for WS-AT.  
   
-## See Also  
+## See also
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

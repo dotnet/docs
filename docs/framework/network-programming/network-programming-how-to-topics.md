@@ -71,7 +71,7 @@ The following list includes links to the How-to topics found in the conceptual d
   
 -   [How to: Ping a Host](../../../docs/framework/network-programming/how-to-ping-a-host.md)  
   
-## See Also  
+## See also
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Networking Samples for .NET on MSDN Code Gallery](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)

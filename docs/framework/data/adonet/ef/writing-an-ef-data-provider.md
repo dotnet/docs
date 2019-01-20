@@ -35,5 +35,5 @@ This section discusses how to write an [!INCLUDE[adonet_ef](../../../../../inclu
   
  [Provider Manifest Specification](../../../../../docs/framework/data/adonet/ef/provider-manifest-specification.md)  
   
-## See Also  
+## See also
  [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)

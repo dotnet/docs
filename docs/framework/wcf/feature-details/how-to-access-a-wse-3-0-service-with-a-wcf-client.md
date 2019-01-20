@@ -56,6 +56,6 @@ Windows Communication Foundation (WCF) clients are wire-level compatible with We
   
   
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.Binding>  
  [Interoperating with WSE](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752257%28v=vs.90%29)

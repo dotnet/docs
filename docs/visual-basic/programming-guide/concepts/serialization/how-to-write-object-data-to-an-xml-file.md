@@ -48,7 +48,7 @@ End Module
 ## .NET Framework Security  
  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs `Create` access for the folder. If the file already exists, the application needs only `Write` access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant `Read` access to a single file, rather than `Create` access for a folder.  
   
-## See Also  
+## See also
  <xref:System.IO.StreamWriter>  
  [How to: Read Object Data from an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)  
  [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)

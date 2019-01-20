@@ -91,5 +91,5 @@ perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFil
   
  By repeating the procedure for both your original app and the version you built by using the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, you can compare the difference in performance.   [!INCLUDE[net_native](../../../includes/net-native-md.md)] apps generally start faster than non-[!INCLUDE[net_native](../../../includes/net-native-md.md)] apps. If you’re interested in digging deeper, PerfView can also identify the parts of your code that are taking the most time. For more information, watch the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) or read [Vance Morrison’s blog entry](https://blogs.msdn.com/b/vancem/archive/2011/12/28/publication-of-the-perfview-performance-analysis-tool.aspx).  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.Tracing.EventSource>

@@ -40,7 +40,7 @@ The Peer Name Resolution Protocol demonstrates the following properties:
   
 -   <xref:System.Net.PeerToPeer.PeerNameResolver>: Defines the process for resolving a peer name to its network endpoint(s), including both synchronous and asynchronous methods for resolution.  
   
-## See also  
+## See also
 - <xref:System.ServiceModel.PeerResolvers>  
 - <xref:System.Net.PeerToPeer>  
 - [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)

@@ -74,7 +74,7 @@ COM developers can benefit from the following information about the managed type
 ## .NET Services Installation Tool  
  The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-services-installation-tool.md) adds managed classes to Windows 2000 Component Services and combines several tasks within a single tool. In addition to loading and registering an assembly, Regsvcs.exe can generate, register, and install the type library into an existing COM+ 1.0 application.  
   
-## See Also  
+## See also
  <xref:System.Runtime.InteropServices.TypeLibConverter>  
  <xref:System.Runtime.InteropServices.ITypeLibConverter>  
  [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  

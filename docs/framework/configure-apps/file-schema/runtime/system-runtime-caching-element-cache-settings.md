@@ -67,5 +67,5 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)

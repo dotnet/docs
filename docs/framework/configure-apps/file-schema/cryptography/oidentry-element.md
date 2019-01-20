@@ -74,7 +74,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
 - [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  

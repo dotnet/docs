@@ -54,7 +54,7 @@ A service behavior that allows you to configure the <xref:System.Activities.Dura
 |-------------|-----------------|  
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior>  
  <xref:System.ServiceModel.Activities.Configuration.SqlWorkflowInstanceStoreElement>  
  <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>  

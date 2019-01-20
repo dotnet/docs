@@ -135,7 +135,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  When you begin developing [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] based applications, it should feel very familiar. You can set properties, use objects, and data bind in much the same way that you can using [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] or [!INCLUDE[TLA#tla_aspnet](../../../../includes/tlasharptla-aspnet-md.md)]. With a deeper investigation into the architecture of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], you'll find that the possibility exists for creating much richer applications that fundamentally treat data as the core driver of the application.  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Visual>  
  <xref:System.Windows.UIElement>  
  <xref:System.Windows.Input.ICommand>  

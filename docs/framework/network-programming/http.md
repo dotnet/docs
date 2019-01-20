@@ -25,7 +25,7 @@ The .NET Framework provides comprehensive support for the HTTP protocol, which m
   
  Applications receive HTTP protocol errors by catching a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> set to <xref:System.Net.WebExceptionStatus>. The <xref:System.Net.WebException.Response%2A> property contains the **WebResponse** sent by the server and indicates the actual HTTP error encountered.  
   
-## See Also  
+## See also
  [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
  [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
  [How to: Access HTTP-Specific Properties](../../../docs/framework/network-programming/how-to-access-http-specific-properties.md)

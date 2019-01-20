@@ -50,7 +50,7 @@ Represents a collection of queries that are used to track an activity scheduled 
 |-------------|-----------------|  
 |[\<activityScheduledQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/activityscheduledquery.md)|A query that is used to track an activity scheduled for execution by a parent activity.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElement?displayProperty=nameWithType>       
  <xref:System.Activities.Tracking.ActivityScheduledQuery?displayProperty=nameWithType>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  

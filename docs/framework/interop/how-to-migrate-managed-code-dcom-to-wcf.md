@@ -415,7 +415,7 @@ if (sessionBoundObject.GetCurrentValue() == "Hello")
 }  
 ```  
   
-## See Also  
+## See also
  [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
  [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
  [Building Clients](../../../docs/framework/wcf/building-clients.md)  

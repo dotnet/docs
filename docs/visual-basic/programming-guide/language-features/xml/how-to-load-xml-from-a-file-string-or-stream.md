@@ -35,7 +35,7 @@ You can create [XML Literals](../../../../visual-basic/language-reference/xml-li
   
  [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_3.vb)]  
   
-## See Also  
+## See also
  <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>  
  <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>  
  <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>  

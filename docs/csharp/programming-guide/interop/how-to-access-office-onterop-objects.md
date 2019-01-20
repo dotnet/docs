@@ -167,7 +167,7 @@ Visual C# has features that simplify access to Office API objects. The new featu
   
  [!code-csharp[csProgGuideOfficeHowTo#18](../../../csharp/programming-guide/interop/codesnippet/CSharp/how-to-access-office-onterop-objects_17.cs)]  
   
-## See Also
+## See also
 
 - <xref:System.Type.Missing?displayProperty=nameWithType>  
 - [dynamic](../../../csharp/language-reference/keywords/dynamic.md)  

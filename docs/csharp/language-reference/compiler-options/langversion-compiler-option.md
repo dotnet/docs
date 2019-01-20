@@ -57,7 +57,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.LanguageVersion%2A>.  
 
-## See Also
+## See also
 
 - [C# Compiler Options](index.md)  
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  

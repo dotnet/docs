@@ -59,7 +59,7 @@ Applications typically consist of many parts that must all be protected from vul
 |[Security in Remoting](https://msdn.microsoft.com/library/9574262c-d4b1-41c5-8600-24ff147c0add)|Describes authentication and encryption as well as additional security topics relevant to remoting.|  
 |[Security and Remoting Considerations](../../../../docs/framework/misc/security-and-remoting-considerations.md)|Describes security issues with protected objects and application domain crossing.|  
   
-## See Also  
+## See also
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
  [Securing Applications](/visualstudio/ide/securing-applications)  

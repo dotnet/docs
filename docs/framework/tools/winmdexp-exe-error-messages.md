@@ -167,6 +167,6 @@ The build process calls [Winmdexp.exe (Windows Runtime Metadata Export Tool)](..
   
  If your error is not discussed in that article, and you feel that the message doesn't contain sufficient information to address the issue, please use the feedback link in that article and include the error message. Alternatively, you can file a bug at the [Microsoft Connect website](https://go.microsoft.com/fwlink/p/?LinkId=251130). You can also look for more information on the [Microsoft Forums](https://go.microsoft.com/fwlink/p/?LinkId=251129).  
   
-## See Also  
+## See also
  [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../../../docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md)  
  [Diagnosing Windows Runtime component error conditions](https://go.microsoft.com/fwlink/p/?LinkId=251127)

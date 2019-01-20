@@ -14,5 +14,5 @@ This example shows how to use <xref:System.Windows.Media.Animation.Storyboard>, 
   
  For more information about animating properties with storyboards, see [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ControlTemplate>

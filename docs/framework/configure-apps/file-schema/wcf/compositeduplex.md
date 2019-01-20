@@ -47,7 +47,7 @@ Defines the binding element that is used when the client must expose an endpoint
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.CompositeDuplexElement>  
  <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

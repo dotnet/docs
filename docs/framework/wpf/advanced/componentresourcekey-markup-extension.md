@@ -68,7 +68,7 @@ Defines and references keys for resources that are loaded from external assembli
   
  `ComponentResourceKey` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] use the { and } characters in their attribute syntax, which is the convention by which a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](../../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.ComponentResourceKey>  
  <xref:System.Windows.Controls.ControlTemplate>  
  [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  

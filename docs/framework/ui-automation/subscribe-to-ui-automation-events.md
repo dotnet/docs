@@ -31,7 +31,7 @@ ms.author: "mhopkins"
  [!code-csharp[UIAClient_snip#102](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#102)]
  [!code-vb[UIAClient_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#102)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>  
  <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>  
  <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>  

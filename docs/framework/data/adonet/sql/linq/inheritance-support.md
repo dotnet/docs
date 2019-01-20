@@ -12,5 +12,5 @@ ms.assetid: 19bb2794-b4e7-402e-8307-1d1517381a08
   
  Developers using Visual Studio can also use the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] to map inheritance hierarchies.  
   
-## See Also  
+## See also
  [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

@@ -63,5 +63,5 @@ The topics in this section describe Windows Communication Foundation (WCF) secur
   
  [Conceptual Overview](../../../../docs/framework/wcf/conceptual-overview.md)  
   
-## See Also  
+## See also
  [Configuring Your Application](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)

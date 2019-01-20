@@ -47,5 +47,5 @@ The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default 
     > [!CAUTION]
     >  This workaround is not recommended, since a certificate with the MD5 hash algorithm is considered insecure.  
   
-## See Also  
+## See also
  [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)

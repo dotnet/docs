@@ -94,7 +94,7 @@ ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]
   
  For additional examples, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
-## See Also  
+## See also
  <xref:System.IndexOutOfRangeException>  
  [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  

@@ -30,7 +30,7 @@ The <xref:System.Data.Services.Client.DataServiceContext> class encapsulates ope
 ### POST Tunneling  
  By default, the client library sends create, read, update, and delete requests to an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service by using the corresponding HTTP methods of POST, GET, PUT/MERGE/PATCH, and DELETE. This upholds the basic principles of Representational State Transfer (REST). However, not every Web server implementation supports the full set of HTTP methods. In some cases, the supported methods might be restricted to just GET and POST. This can happen when an intermediary, like a firewall, blocks requests with certain methods. Because the GET and POST methods are most often supported, [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] prescribes a way to execute any unsupported HTTP methods by using a POST request. Known as *method tunneling* or *POST tunneling*, this enables a client to send a POST request with the actual method specified in the custom `X-HTTP-Method` header. To enable POST tunneling for requests, set the <xref:System.Data.Services.Client.DataServiceContext.UsePostTunneling%2A> property on the <xref:System.Data.Services.Client.DataServiceContext> instance to `true`.  
   
-## See Also  
+## See also
  [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
  [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md)  
  [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  

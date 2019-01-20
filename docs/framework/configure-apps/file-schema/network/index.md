@@ -33,6 +33,6 @@ Network settings specify how the .NET Framework connects to the Internet. The fo
 |[\<iriParsing> Element (Uri Settings)](../../../../../docs/framework/configure-apps/file-schema/network/iriparsing-element-uri-settings.md)|Specifies if International Resource Identifier (IRI) parsing is applied to a <xref:System.Uri> and whether IRI parsing rules should be applied.|  
 |[\<schemeSettings> Element (Uri Settings)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
-## See Also  
+## See also
 - [Configuring Internet Applications](../../../../../docs/framework/network-programming/configuring-internet-applications.md)  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

@@ -47,7 +47,7 @@ Specifies authentication settings for peer certificate used by a message sender.
 ## Remarks  
  This element must be configured if message authentication is chosen. For output channels, each message is signed using the certificate provided by [\<certificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/certificate-element.md). All messages, before delivered to the application, are checked against the message credential using the validator specified by the `customCertificateValidatorType` attribute of this element. The validator can either accept or reject the credential.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>  
  <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
  <xref:System.ServiceModel.Security.PeerCredential.MessageSenderAuthentication%2A>  

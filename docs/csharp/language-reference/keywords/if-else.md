@@ -130,7 +130,7 @@ if (!(m >= n || m >= p))
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
 - [C# Reference](../index.md)  
 - [C# Programming Guide](../../programming-guide/index.md)  

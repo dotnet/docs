@@ -137,7 +137,7 @@ public class MyControl : Control {
   
  In this case, even when the value of the private variable accessed by the `MyFont` property is `null`, the property browser does not display `null`; instead, it displays the <xref:System.Windows.Forms.Control.Font%2A> property of the parent, if it is not `null`, or the default <xref:System.Windows.Forms.Control.Font%2A> value defined in <xref:System.Windows.Forms.Control>. Thus the default value for `MyFont` cannot be simply set, and a <xref:System.ComponentModel.DefaultValueAttribute> cannot be applied to this property. Instead, the `ShouldSerialize` and `Reset` methods must be implemented for the `MyFont` property.  
   
-## See Also  
+## See also
  [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
  [Defining a Property](../../../../docs/framework/winforms/controls/defining-a-property-in-windows-forms-controls.md)  
  [Property-Changed Events](../../../../docs/framework/winforms/controls/property-changed-events.md)

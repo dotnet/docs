@@ -39,7 +39,7 @@ DataSet Object Model
   
  For more information, see [LINQ to DataSet](../../../../docs/framework/data/adonet/linq-to-dataset.md).  
   
-## See Also  
+## See also
  [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
  [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  

@@ -53,6 +53,6 @@ Additional information: Value does not fall within the expected range.
   
  To get the full stack, run the debug build instead.  
   
-## See Also  
+## See also
  [Debugging .NET Native Windows Universal Apps](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/29/debugging-net-native-windows-universal-apps.aspx)  
  [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)

@@ -95,7 +95,7 @@ This content model overview describes the supported content for a <xref:System.W
 ## Types That Can Contain TextElement Objects  
  See [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md).  
   
-## See Also  
+## See also
  [Manipulate a FlowDocument through the Blocks Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-a-flowdocument-through-the-blocks-property.md)  
  [Manipulate Flow Content Elements through the Blocks Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-flow-content-elements-through-the-blocks-property.md)  
  [Manipulate a FlowDocument through the Blocks Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-a-flowdocument-through-the-blocks-property.md)  

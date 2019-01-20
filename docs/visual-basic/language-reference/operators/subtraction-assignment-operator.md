@@ -40,7 +40,7 @@ variableorproperty -= expression
   
  [!code-vb[VbVbalrOperators#11](codesnippet/VisualBasic/subtraction-assignment-operator_1.vb)]  
   
-## See Also  
+## See also
  [- Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-operator.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  

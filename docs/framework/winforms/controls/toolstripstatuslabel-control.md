@@ -24,5 +24,5 @@ The <xref:System.Windows.Forms.ToolStripStatusLabel> provides a display area in 
  <xref:System.Windows.Forms.ToolStripProgressBar>  
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
-## See Also  
+## See also
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

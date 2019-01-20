@@ -38,5 +38,5 @@ Next
   
  The iteration through `query2` is therefore directly proportional to the number of items in the source of the first query, in other words, linear time.  
   
-## See Also  
+## See also
  [Performance (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)

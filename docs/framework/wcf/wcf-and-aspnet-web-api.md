@@ -20,6 +20,6 @@ WCF is Microsoft’s unified programming model for building service-oriented app
   
  Use WCF to create reliable, secure web services that are accessible over a variety of transports. Use ASP.NET Web API to create HTTP-based services that are accessible from a wide variety of clients. Use ASP.NET Web API if you are creating and designing new REST-style services. Although WCF provides some support for writing REST-style services, the support for REST in ASP.NET Web API is more complete and all future REST feature improvements will be made in ASP.NET Web API. If you have an existing WCF service and you want to expose additional REST endpoints, use WCF and the <xref:System.ServiceModel.WebHttpBinding>.  
   
-## See Also  
+## See also
  [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
  [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)  

@@ -24,5 +24,5 @@ ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
   
  With a Graphics Device Interface, such as [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], you can display information on a screen or printer without having to be concerned about the details of a particular display device. The programmer makes calls to methods provided by [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] classes. Those methods, in turn, make the appropriate calls to specific device drivers. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] insulates the application from the graphics hardware. It is this insulation that enables a programmer to create device-independent applications.  
   
-## See Also  
+## See also
  [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)

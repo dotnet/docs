@@ -61,7 +61,7 @@ Defines the security settings for a binding.
   
  This configuration element provides the security specifications for `netTcpBinding`. This is a secure, reliable, optimized binding suitable for cross-machine communication. By default it generates a runtime communication stack supporting TCP for message delivery and Windows Security for message security and authentication, WS-ReliableMessaging for reliability, and binary message encoding.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NetTcpSecurity>  
  <xref:System.ServiceModel.NetTcpBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.NetTcpBindingElement.Security%2A>  

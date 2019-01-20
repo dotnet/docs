@@ -87,7 +87,7 @@ IntelliSense when Option Infer is off
   
  [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
   
-## See Also  
+## See also
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
  [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
  [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  

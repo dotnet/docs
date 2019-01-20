@@ -145,5 +145,5 @@ This topic describes how Windows Communication Foundation (WCF) maps Web Service
 |`DetailType`|The XML Schema type of the element that the detail message part points to.|  
 |`Name, ContractDescription.Name, OperationDescription.Name,`|Used to derive the `wsdl:message`/@name value for the fault message.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description>

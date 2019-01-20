@@ -81,5 +81,5 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTracing`  
   
-## See Also  
+## See also
  [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

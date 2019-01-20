@@ -33,5 +33,5 @@ HRESULT _AxlGetIssuerPublicKeyHash (
 ## Return Value  
  `S_OK` if the function succeeds; otherwise `S_FALSE`.  
   
-## See Also  
+## See also
  [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

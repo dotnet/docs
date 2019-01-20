@@ -139,7 +139,7 @@ End Class
   
  For more information, see the [Multimedia Overview](../../../../docs/framework/wpf/graphics-multimedia/multimedia-overview.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media>  
  <xref:System.Windows.Media.Animation>  
  <xref:System.Windows.Media.Media3D>  

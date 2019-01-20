@@ -21,5 +21,5 @@ ms.author: "ronpet"
 # ICorDebugErrorInfoEnum::Next Method
 `ICorDebugErrorInfoEnum::Next` is obsolete. Do not call this method.  
   
-## See Also  
+## See also
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

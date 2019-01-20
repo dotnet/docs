@@ -48,7 +48,7 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## Remarks  
  This binding is essentially a `WSHttpBinding` binding with security disabled. It supports most metadata requests.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpBinding%2A>  
  <xref:System.ServiceModel.Configuration.MexHttpBindingElement>  
  [How to: Publish Metadata for a Service Using a Configuration File](../../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)  

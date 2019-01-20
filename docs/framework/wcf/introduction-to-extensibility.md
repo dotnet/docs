@@ -46,5 +46,5 @@ The Windows Communication Foundation (WCF) application model is designed to solv
   
  To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> class. For more information, see [Extending Hosting Using ServiceHostFactory](../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md).  
   
-## See Also  
+## See also
  [Extending WCF](../../../docs/framework/wcf/extending/index.md)

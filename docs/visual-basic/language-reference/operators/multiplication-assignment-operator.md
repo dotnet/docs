@@ -40,7 +40,7 @@ variableorproperty *= expression
   
  [!code-vb[VbVbalrOperators#5](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-assignment-operator_1.vb)]  
   
-## See Also  
+## See also
  [* Operator](../../../visual-basic/language-reference/operators/multiplication-operator.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  

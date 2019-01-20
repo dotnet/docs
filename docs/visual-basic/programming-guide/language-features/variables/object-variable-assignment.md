@@ -69,7 +69,7 @@ End Sub
 addStandardText(Me)  
 ```  
   
-## See Also  
+## See also
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
  [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  

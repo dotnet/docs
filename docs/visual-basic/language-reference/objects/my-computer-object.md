@@ -18,7 +18,7 @@ Provides properties for manipulating computer components such as audio, the cloc
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
+## See also
  [My.Computer.Audio Object](../../../visual-basic/language-reference/objects/my-computer-audio-object.md)  
  [My.Computer.Clipboard Object](../../../visual-basic/language-reference/objects/my-computer-clipboard-object.md)  
  [My.Computer.Clock Object](../../../visual-basic/language-reference/objects/my-computer-clock-object.md)  

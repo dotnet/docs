@@ -42,5 +42,5 @@ Command Type: Text
 Connection: System.Data.SqlClient.SqlConnection  
 ```  
   
-## See Also  
+## See also
  [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)

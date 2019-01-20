@@ -59,7 +59,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 ## Remarks  
  By default, the SOAP message is not secured and the client is not authenticated. This element enables you to configure additional security settings for the `netHttpBinding` element.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NetHttpBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>    
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  

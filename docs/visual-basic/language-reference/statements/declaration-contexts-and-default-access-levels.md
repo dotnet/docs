@@ -45,7 +45,7 @@ This topic describes which Visual Basic types can be declared within which other
   
  For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
-## See Also  
+## See also
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  
  [Public](../../../visual-basic/language-reference/modifiers/public.md)

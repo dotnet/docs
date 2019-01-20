@@ -74,5 +74,5 @@ class SecurityBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.SecurityBindingElement>

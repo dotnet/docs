@@ -14,5 +14,5 @@ This section provides details about public database views supported by the SQL W
   
 -   [How to: Query for Non-persisted Instances](../../../docs/framework/windows-workflow-foundation/how-to-query-for-non-persisted-instances.md)  
   
-## See Also  
+## See also
  [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkID=201202&clcid=0x409)

@@ -43,7 +43,7 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     colorDialog1->ShowHelp = true;  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ColorDialog>  
  [ColorDialog Component](../../../../docs/framework/winforms/controls/colordialog-component-windows-forms.md)  
  [ColorDialog Component Overview](../../../../docs/framework/winforms/controls/colordialog-component-overview-windows-forms.md)

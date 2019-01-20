@@ -29,6 +29,6 @@ File encodings, also known as character encodings, specify how to represent char
 |<xref:System.Text.UTF7Encoding>|Represents a UTF-7 encoding of Unicode characters.|  
 |<xref:System.Text.UTF8Encoding>|Represents a UTF-8 encoding of Unicode characters.|  
   
-## See Also  
+## See also
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

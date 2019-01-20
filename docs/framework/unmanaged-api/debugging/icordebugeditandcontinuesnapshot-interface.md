@@ -20,5 +20,5 @@ ms.author: "ronpet"
 # ICorDebugEditAndContinueSnapshot Interface1
 `ICorDebugEditAndContinueSnapshot` is obsolete. Do not use this interface.  
   
-## See Also  
+## See also
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

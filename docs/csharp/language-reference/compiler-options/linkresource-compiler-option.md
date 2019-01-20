@@ -68,7 +68,7 @@ al -out:A.dll A.netmodule -link:N.dll
 gacutil -i A.dll  
 ```  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md)  

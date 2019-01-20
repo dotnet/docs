@@ -971,7 +971,7 @@ namespace Microsoft.Samples.Discovery
 }
 ```
 
-## See Also
+## See also
 
 - [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
 - [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)

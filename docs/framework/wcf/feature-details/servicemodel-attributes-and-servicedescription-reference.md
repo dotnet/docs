@@ -107,5 +107,5 @@ The *description tree* is the hierarchy of types (starting with the <xref:System
   
  For more information about how the description tree values are converted into metadata, see [ServiceDescription and WSDL Reference](../../../../docs/framework/wcf/feature-details/servicedescription-and-wsdl-reference.md).  
   
-## See Also  
+## See also
  [ServiceDescription and WSDL Reference](../../../../docs/framework/wcf/feature-details/servicedescription-and-wsdl-reference.md)

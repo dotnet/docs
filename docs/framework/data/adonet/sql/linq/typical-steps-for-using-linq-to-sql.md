@@ -75,7 +75,7 @@ To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
 ### 6. Debug and test your application.  
  For more information, see [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md).  
   
-## See Also  
+## See also
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)  
  [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)  
  [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

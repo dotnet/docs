@@ -31,5 +31,5 @@ This topic lists simple data types used by the unmanaged APIs for the .NET Frame
 |TASKID|`typedef UINT64 TASKID;`|cordebug.h, mscoree.h|The identifier of an [ICLRTask](../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instance.|  
 |ThreadID|`typedef UINT_PTR ThreadID;`|corprof.h|The identifier of a managed thread.|  
   
-## See Also  
+## See also
 - [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)

@@ -33,5 +33,5 @@ Supports creating .NET Framework assemblies and unbound modules.
   
  [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)  
   
-## See Also  
+## See also
  [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)

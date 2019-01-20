@@ -74,7 +74,7 @@ Option buttons, also known as radio buttons, are similar to check boxes except t
   
 -   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ToolStripMenuItem>  
  <xref:System.Windows.Forms.ToolStripMenuItem.CheckOnClick%2A?displayProperty=nameWithType>  

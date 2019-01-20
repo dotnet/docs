@@ -95,7 +95,7 @@ Dim myPathFigure As New PathFigure()
   
  This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.PathFigure>  
  <xref:System.Windows.Media.PathGeometry>  
  <xref:System.Windows.Media.GeometryDrawing>  

@@ -107,7 +107,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
     this.exitToolStripMenuItem});  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ToolStripMenuItem>  
  [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)

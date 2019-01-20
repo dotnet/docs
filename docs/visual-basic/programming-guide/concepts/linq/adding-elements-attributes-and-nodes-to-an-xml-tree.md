@@ -74,5 +74,5 @@ Console.WriteLine(xmlTree)
 </Root>  
 ```  
   
-## See Also  
+## See also
  [Modifying XML Trees (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

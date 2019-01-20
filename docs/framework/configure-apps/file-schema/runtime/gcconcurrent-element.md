@@ -83,7 +83,7 @@ Specifies whether the common language runtime runs garbage collection on a separ
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
 - [Fundamentals of Garbage Collection](../../../../../docs/standard/garbage-collection/fundamentals.md)

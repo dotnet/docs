@@ -18,7 +18,7 @@ LINQ to XML provides an in-memory XML programming interface that leverages the .
  [Reference (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/reference-linq-to-xml.md)  
  Provides pointers to the LINQ to XML managed reference documentation.  
   
-## See Also  
+## See also
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
  [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)

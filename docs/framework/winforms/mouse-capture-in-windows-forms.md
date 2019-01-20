@@ -15,5 +15,5 @@ ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
   
  Only the foreground window can capture the mouse. When a background window attempts to capture the mouse, the window receives messages only for mouse events that occur when the mouse pointer is within the visible portion of the window. Also, even if the foreground window has captured the mouse, the user can still click another window, bringing it to the foreground. When the mouse is captured, shortcut keys do not work.  
   
-## See Also  
+## See also
  [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)

@@ -46,7 +46,7 @@ Receiving and handling mouse input is an important part of every Windows applica
 |<xref:System.Windows.Forms.SystemInformation.MouseWheelScrollDelta%2A>|Gets the amount of the delta value of the increment of a single mouse wheel rotation.|  
 |<xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A>|Gets the number of lines to scroll when the mouse wheel is rotated.|  
   
-## See Also  
+## See also
  [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)  
  [Mouse Capture in Windows Forms](../../../docs/framework/winforms/mouse-capture-in-windows-forms.md)  
  [Mouse Pointers in Windows Forms](../../../docs/framework/winforms/mouse-pointers-in-windows-forms.md)

@@ -168,7 +168,7 @@ End Module
   
  If precedence does not resolve the ambiguity, you can use the fully qualified name to specify the method that you are calling. If the `Print` method in the earlier example is defined in a module named `StringExtensions`, the fully qualified name is `StringExtensions.Print(example)` instead of `example.Print()`.  
   
-## See Also  
+## See also
  <xref:System.Runtime.CompilerServices>  
  <xref:System.Runtime.CompilerServices.ExtensionAttribute>  
  [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  

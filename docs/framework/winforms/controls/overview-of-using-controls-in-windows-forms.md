@@ -217,6 +217,6 @@ public class MyForm : Form {
 }  
 ```  
   
-## See Also  
+## See also
  [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
  [Windows Forms Control Development Basics](../../../../docs/framework/winforms/controls/windows-forms-control-development-basics.md)

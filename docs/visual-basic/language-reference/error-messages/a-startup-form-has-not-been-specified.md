@@ -18,7 +18,7 @@ The application uses the <xref:Microsoft.VisualBasic.ApplicationServices.Windows
   
 2.  Override the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method to set the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to the startup form.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A>  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A>  

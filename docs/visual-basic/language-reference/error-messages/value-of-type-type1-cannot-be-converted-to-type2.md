@@ -19,7 +19,7 @@ Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' pr
   
 -   Use the `Value` property of the XML literal to reference its value as a `String`. Use the `CType` function, another type conversion function, or the <xref:System.Convert> class to cast the value as the specified type.  
   
-## See Also  
+## See also
  <xref:System.Convert>  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  

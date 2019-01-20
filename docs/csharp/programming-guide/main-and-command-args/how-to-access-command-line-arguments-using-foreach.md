@@ -19,7 +19,7 @@ Another approach to iterating over the array is to use the [foreach](../../../cs
   
  [!code-csharp[csProgGuideMain#11](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-access-command-line-arguments-using-foreach_2.cs)]  
   
-## See Also
+## See also
 
 - <xref:System.Array>  
 - <xref:System.Collections>  

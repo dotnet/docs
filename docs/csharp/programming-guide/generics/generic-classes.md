@@ -60,7 +60,7 @@ Generic classes encapsulate operations that are not specific to a particular dat
   
  Generic classes are invariant. In other words, if an input parameter specifies a `List<BaseClass>`, you will get a compile-time error if you try to provide a `List<DerivedClass>`.  
   
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

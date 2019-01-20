@@ -96,7 +96,7 @@ result = string Like pattern
   
  [!code-vb[VbVbalrOperators#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/like-operator_1.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
  <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
  [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  

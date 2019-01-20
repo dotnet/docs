@@ -57,7 +57,7 @@ class SampleClass
 }  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Reflection>  
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)  

@@ -33,7 +33,7 @@ If you are using a class or structure that defines its own operators, you can ac
   
  Your project must have references to System.Data and System.XML.  
   
-## See Also  
+## See also
  [Operator Procedures](./operator-procedures.md)  
  [How to: Define an Operator](./how-to-define-an-operator.md)  
  [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  

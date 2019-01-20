@@ -36,7 +36,7 @@ This topic shows how to implement your own extension methods for any .NET type. 
 ## .NET Framework Security  
  Extension methods present no specific security vulnerabilities. They can never be used to impersonate existing methods on a type, because all name collisions are resolved in favor of the instance or static method defined by the type itself. Extension methods cannot access any private data in the extended class.  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  

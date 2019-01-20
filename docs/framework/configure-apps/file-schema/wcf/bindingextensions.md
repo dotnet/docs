@@ -35,5 +35,5 @@ This section enables the use of a user defined binding from a machine or applica
 </services>
 ```  
   
-## See Also  
+## See also
  [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)

@@ -72,7 +72,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     */   
     ```  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  

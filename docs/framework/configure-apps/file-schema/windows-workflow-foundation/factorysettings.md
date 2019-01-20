@@ -82,7 +82,7 @@ Specifies the settings of the channel factory cache.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.SendMessageChannelCache>  
  <xref:System.ServiceModel.Activities.Configuration.SendMessageChannelCacheElement>  
  <xref:System.ServiceModel.Activities.Send>  

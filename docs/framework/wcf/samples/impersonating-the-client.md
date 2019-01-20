@@ -119,4 +119,4 @@ client.ClientCredentials.Windows.AllowedImpersonationLevel = TokenImpersonationL
   
 5.  When you run the client, note the identity before and after running it with different credentials.  
   
-## See Also
+## See also

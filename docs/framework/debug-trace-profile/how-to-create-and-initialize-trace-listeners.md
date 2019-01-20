@@ -88,7 +88,7 @@ The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:Syste
     myListener.Flush();  
     ```  
   
-## See Also  
+## See also
 - [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
 - [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
 - [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)

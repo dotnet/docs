@@ -33,5 +33,5 @@ The stack event should be used in conjunction with other events to generate stac
 |FrameCount|win:UInt32|The number of frames in the stack trace.|  
 |Stack|win:Pointer|Columns of instruction pointers.|  
   
-## See Also  
+## See also
  [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

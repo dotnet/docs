@@ -34,7 +34,7 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
   
  [!code-vb[VbVbalrEventError#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/custom-modifier-is-not-valid-on-events-declared-without-explicit-delegate-types_3.vb)]  
   
-## See Also  
+## See also
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
  [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

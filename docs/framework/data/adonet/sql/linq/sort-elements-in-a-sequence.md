@@ -82,6 +82,6 @@ Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence acc
   
  `Carnarvon Tigers`  
   
-## See Also  
+## See also
  [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

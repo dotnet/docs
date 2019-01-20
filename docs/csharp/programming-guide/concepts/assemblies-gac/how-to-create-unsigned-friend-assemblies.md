@@ -84,7 +84,7 @@ This example shows how to use friend assemblies with assemblies that are unsigne
 ## .NET Framework Security  
  There are similarities between the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute and the <xref:System.Security.Permissions.StrongNameIdentityPermission> class. The main difference is that <xref:System.Security.Permissions.StrongNameIdentityPermission> can demand security permissions to run a particular section of code, whereas the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute controls the visibility of `internal` types and members.  
   
-## See Also
+## See also
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
 - [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  

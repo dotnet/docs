@@ -12,7 +12,7 @@ Two sequences whose corresponding elements are equal and which have the same num
 |-----------------|-----------------|---------------------------------|----------------------|  
 |SequenceEqual|Determines whether two sequences are equal by comparing elements in a pair-wise manner.|Not applicable.|<xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SequenceEqual%2A?displayProperty=nameWithType>|  
   
-## See Also
+## See also
 
 - <xref:System.Linq>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  

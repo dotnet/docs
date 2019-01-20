@@ -54,7 +54,7 @@ Generics were added to version 2.0 of the C# language and the common language ru
 ## C# Language Specification  
  For more information, see the [C# Language Specification](~/_csharplang/spec/types.md#constructed-types).  
   
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

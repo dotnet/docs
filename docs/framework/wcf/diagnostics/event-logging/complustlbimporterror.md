@@ -13,6 +13,6 @@ Id: 132
 ## Description  
  This event indicates that an error occurred while importing the type library. The event lists the IID, Type library ID, exception, process name and process ID.  
   
-## See Also  
+## See also
  [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

@@ -53,7 +53,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
  <xref:System.ServiceModel.Configuration.DataContractSerializerElement>  

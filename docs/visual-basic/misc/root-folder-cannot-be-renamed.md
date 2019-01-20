@@ -10,7 +10,7 @@ An attempt has been made to rename the root directory. This may be a result of a
   
 -   Check the file path to make sure that it is correct.  
   
-## See Also  
+## See also
  [My.Computer.FileSystem.RenameDirectory]xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.RenameDirectory)  
  [My.Computer.FileSystem.RenameFile]xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.RenameFile)  
  [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  

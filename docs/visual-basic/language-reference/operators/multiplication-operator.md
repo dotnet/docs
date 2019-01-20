@@ -53,7 +53,7 @@ number1 * number2
   
  [!code-vb[VbVbalrOperators#4](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/multiplication-operator_1.vb)]  
   
-## See Also  
+## See also
  [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  

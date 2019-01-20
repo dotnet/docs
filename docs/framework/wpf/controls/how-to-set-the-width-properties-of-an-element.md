@@ -27,7 +27,7 @@ ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
   
  For the complete sample, see [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050).  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ListBox>  
  <xref:System.Windows.FrameworkElement>  
  <xref:System.Windows.FrameworkElement.ActualWidth%2A>  

@@ -151,7 +151,7 @@ The next project that you create in this walkthrough accesses a library that is 
   
 9. Save the file and press CTRL+F5 to build and run the application.  
   
-## See Also
+## See also
 
 - <xref:System.Dynamic?displayProperty=nameWithType>  
 - <xref:System.Dynamic.DynamicObject?displayProperty=nameWithType>  

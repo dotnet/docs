@@ -39,7 +39,7 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ByteStreamMessageEncodingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  

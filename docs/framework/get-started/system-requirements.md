@@ -102,6 +102,6 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 ## See also
 
-- [Installation Guide](../../../docs/framework/install/index.md)   
-- [Getting Started](../../../docs/framework/get-started/index.md)   
+- [Installation Guide](../../../docs/framework/install/index.md)
+- [Getting Started](../../../docs/framework/get-started/index.md)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

@@ -41,6 +41,6 @@ Type forwarding allows you to move a type to another assembly without having to 
 4.  Recompile the assembly where the type used to be located, with a reference to the assembly that now contains the type. For example, if you are compiling a C# file from the command line, use the [/reference (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/reference-compiler-option.md) option to specify the assembly that contains the type. In C++, use the [#using](/cpp/preprocessor/hash-using-directive-cpp) directive in the source file to specify the assembly that contains the type.  
   
 ## See Also  
-- <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>  
-- [Type Forwarding (C++/CLI)](/cpp/windows/type-forwarding-cpp-cli)  
+- <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>
+- [Type Forwarding (C++/CLI)](/cpp/windows/type-forwarding-cpp-cli)
 - [#using Directive](/cpp/preprocessor/hash-using-directive-cpp)

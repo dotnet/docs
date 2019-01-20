@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting the getting started tutorial
-ms.date: 01/11/2019
+ms.date: 01/18/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
 ---
 # Troubleshooting the getting started tutorial
 
-This article lists the most common problems and errors that you might encounter when you work through the getting started tutorial and how to resolve them. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
+This article provides solutions for the most common problems and errors you might face when following the steps in the getting started tutorial. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
   
 ## Common problems
 
@@ -22,36 +22,46 @@ This article lists the most common problems and errors that you might encounter 
 - .xsd 
 - .wsdl 
 
-To display all file types, select **All Files (\*.\*)** in the drop-down list in the lower right corner of the **Add Existing Item** window.  
+To display all file types, select **All Files (\*.\*)** in the drop-down list in the lower-right corner of the **Add Existing Item** window.  
   
 ## Common errors
 
-**Attempting to run the service application: HTTP could not register URL `http://+:8000/ServiceModelSamples/Service/`.** **Your process does not have access rights to this namespace.** 
+### Run the service application 
 
- The process that hosts a WCF service must be run with administrative privileges. If you're running the service from Visual Studio, you must run Visual Studio as an administrator. To do so, right-click the Visual Studio program in the **Start** menu and select **More** > **Run as administrator**. If you're running the service from a command-line prompt in a console window, start the console window as an administrator in a similar way. Select **Start**, right-click **Command Prompt**, and select **Run As Administrator**.  
-  
-**Attempting to use the Svcutil.exe tool: 'Svcutil' is not recognized as an internal or external command, operable program, or batch file.**
+**HTTP could not register URL `http://+:8000/GettingStarted/CalculatorService`. Your process does not have access rights to this namespace.** 
 
- Svcutil.exe must be in the system path. The easiest solution is to use the command prompt. Select **Start**, select **All Programs**, **Visual Studio \<*version*>**, **Visual Studio Tools**, and **Developer Command Prompt for Visual Studio**. This command prompt sets the system path to the correct locations for all tools shipped as part of Visual Studio.  
+ For proper access, run the process hosting the WCF service with administrative privileges. If you're running the service from Visual Studio, run Visual Studio as an administrator. To do so, right-click the Visual Studio program in the **Start** menu and select **More** > **Run as administrator**. If you're running the service from a command prompt in a console window, start the console window as an administrator: Right-click **Command Prompt** in the **Start** menu and select **More** > **Run As administrator**.  
 
-**Compiling the client application, 'CalculatorClient', does not contain a definition for '\<method name>' and no extension method '\<method name>' accepting a first argument of type 'CalculatorClient' could be found (are you missing a using directive or an assembly reference?)**  
+### Use the Svcutil.exe tool
+   
+**'Svcutil' is not recognized as an internal or external command, operable program, or batch file.**
 
-Only those methods that are marked with the `ServiceOperationAttribute` attribute are publically exposed. If you omit the `ServiceOperationAttribute` attribute from a method in the `ICalculator` interface, you receive this error message when you compile a client application that calls an operation missing the attribute.  
+ Svcutil.exe must be in the system path. The easiest solution is to use the command prompt. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**. This command prompt sets the system path to the correct locations for all tools shipped as part of Visual Studio.  
 
-**Compiling the client application: The type or namespace name 'CalculatorClient' could not be found (are you missing a using directive or an assembly reference?)**
+### Compile the client application
+
+**'CalculatorClient', does not contain a definition for '\<method name>' and no extension method '\<method name>' accepting a first argument of type 'CalculatorClient' could be found (are you missing a using directive or an assembly reference?)**  
+
+Only those methods that are marked with the `ServiceOperationAttribute` attribute are publically exposed. If you omit the `ServiceOperationAttribute` attribute from a method in the `ICalculator` interface, you receive this error message during compilation.  
+
+**The type or namespace name 'CalculatorClient' could not be found (are you missing a using directive or an assembly reference?)**
 
  You receive this error if you don't add the Proxy.cs or Proxy.vb file to your client project.  
 
-**Running the client: Unhandled Exception: System.ServiceModel.EndpointNotFoundException: Could not connect to `http://localhost:8000/ServiceModelSamples/Service/CalculatorService`. TCP error code 10061: No connection could be made because the target machine actively refused it.**
+### Run the client application
 
-This error occurs if you run the client application without first running the service.  
+**Unhandled Exception: System.ServiceModel.EndpointNotFoundException: Could not connect to `http://localhost:8000/ServiceModelSamples/Service/CalculatorService`. TCP error code 10061: No connection could be made because the target machine actively refused it.**
+
+This error occurs if you run the client application without first starting the service. First, run the host application to start the service, and then run the client application.
   
-**Unhandled Exception: System.ServiceModel.Security.SecurityNegotiationException: SOAP security negotiation with `http://localhost:8000/ServiceModelSamples/Service/CalculatorService` for target `http://localhost:8000/ServiceModelSamples/Service/CalculatorService` failed**  
+### Exceptions
+
+**System.ServiceModel.Security.SecurityNegotiationException: SOAP security negotiation with `http://localhost:8000/ServiceModelSamples/Service/CalculatorService` for target `http://localhost:8000/ServiceModelSamples/Service/CalculatorService` failed**  
 
 This error occurs on a domain-joined computer that doesn't have network connectivity. Either connect your computer to the network or turn off security for both the client and the service. For the service, replace the code that creates the WSHttpBinding with the following code:  
   
 ```csharp
-// Step 3 of the hosting procedure: Add a service endpoint  
+// Step 3: Add a service endpoint.
 selfhost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(SecurityMode.None), "CalculatorService");  
 ```
 

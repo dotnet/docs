@@ -77,7 +77,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Text
 Imports System.ServiceModel
-Imports GettingStartedClientVB2.ServiceReference1
+Imports GettingStartedClient.ServiceReference1
 
 Module Module1
 
@@ -122,20 +122,35 @@ Module Module1
 End Module
 ```
 
-Notice the `using` (C#) or `Imports` (Visual Basic) statement that imports `GettingStartedClient.ServiceReference1`. This statement imports the code that Visual Basic generates with the **Add Service Reference** function. The code instantiates the WCF proxy and calls each of the service operations that the calculator service exposes. It then closes the proxy and ends the program.
+Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement that imports `GettingStartedClient.ServiceReference1`. This statement imports the code that Visual Studio generated with the **Add Service Reference** function. The code instantiates the WCF proxy and calls each of the service operations that the calculator service exposes. It then closes the proxy and ends the program.
 
-To test the application, first run GettingStartedHost to start the service and then run GettingStartedClient.
+To test the application, first run GettingStartedHost.exe to start the service, and then run GettingStartedClient.exe.
 
-The output from GettingStartedHost is as follows:
+GettingStartedHost.exe produces the following output:
 
 ```text
-The service is ready.Press <ENTER> to terminate service.Received Add(100,15.99)Return: 115.99Received Subtract(145,76.54)Return: 68.46Received Multiply(9,81.25)Return: 731.25Received Divide(22,7)Return: 3.14285714285714
+The service is ready.
+Press <ENTER> to terminate service.
+
+Received Add(100,15.99)
+Return: 115.99
+Received Subtract(145,76.54)
+Return: 68.46
+Received Multiply(9,81.25)
+Return: 731.25
+Received Divide(22,7)
+Return: 3.14285714285714
 ```
 
-The output from GettingStartedClient is as follows:
+GettingStartedClient.exe produces the following output:
 
 ```text
-Add(100,15.99) = 115.99Subtract(145,76.54) = 68.46Multiply(9,81.25) = 731.25Divide(22,7) = 3.14285714285714Press <ENTER> to terminate client.
+Add(100,15.99) = 115.99
+Subtract(145,76.54) = 68.46
+Multiply(9,81.25) = 731.25
+Divide(22,7) = 3.14285714285714
+
+Press <ENTER> to terminate client.
 ```
 
 You've now completed the tutorial. You defined a service contract, implemented the service contract, generated a WCF proxy, configured a WCF client application, and then used the proxy to call service operations. 

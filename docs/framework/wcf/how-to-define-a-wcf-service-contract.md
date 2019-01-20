@@ -12,7 +12,7 @@ ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 
 This tutorial describes the first of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a C++, C#, or Visual Basic (VB) interface. An interface has the following characteristics:
+When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a Visual C# or Visual Basic (VB) interface. An interface has the following characteristics:
 
 - Each method in the interface corresponds to a specific service operation. 
 - For each interface, you must apply the <xref:System.ServiceModel.ServiceContractAttribute> attribute.
@@ -41,7 +41,7 @@ When you create a WCF service, your first task is to define a service contract. 
    - The Service1 file contains the default implementation of the service contract. 
    - The App.config file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more info about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
-3. Open the IService1.cs (or IService1.vb) file and replace its code with the following code:
+3. Open the IService1.cs file, for a Visual C# project (or IService1.vb for a Visual Basic project), and replace its code with the following code:
 
     ```csharp
     using System;

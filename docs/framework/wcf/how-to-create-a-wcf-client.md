@@ -31,7 +31,7 @@ The client application uses the generated proxy class to communicate with the se
 
     3. Select the **Console App (.NET Framework)** template, and enter *GettingStartedClient* for the **Name**. Select **OK**.
 
-2. Add a reference in the GettingStartedClient project to the <xref:System.ServiceModel> assembly. 
+2. Add a reference in the **GettingStartedClient** project to the <xref:System.ServiceModel> assembly. 
 
     1.  In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedClient** project, and then select **Add Reference**. 
 

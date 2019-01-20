@@ -41,7 +41,7 @@ A complete listing of the code for this task is provided in the code example fol
 
     5. Select the **Console App (.NET Framework)** template, and enter *GettingStartedHost* for the **Name**. Select **OK**.
 
-2. Add a reference in the GettingStartedHost project to the GettingStartedLib project. 
+2. Add a reference in the **GettingStartedHost** project to the **GettingStartedLib** project. 
 
     1. In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedHost** project, and then select **Add Reference**. 
 
@@ -49,7 +49,7 @@ A complete listing of the code for this task is provided in the code example fol
  
     3. Select **GettingStartedLib** in the center section of the window, and then choose **OK**. This action makes the types defined in the GettingStartedLib project available to the GettingStartedHost project.
 
-3. Add a reference in the GettingStartedHost project to the <xref:System.ServiceModel> assembly. 
+3. Add a reference in the **GettingStartedHost** project to the <xref:System.ServiceModel> assembly. 
 
     1. In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedHost** project, and then select **Add Reference**.
     
@@ -158,11 +158,15 @@ Module Service
 End Module
 ```
 
-Edit App.config in GettingStartedLib to reflect the changes you made to Program.cs (or Module1.vb):
+For Visual C# projects, edit App.config in GettingStartedLib to reflect the changes you made to Program.cs:
 - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
 - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
 - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`.
 
+For Visual Basic projects, edit App.config in GettingStartedLib to reflect the changes you made to Module1.vb:
+- Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`.
+- Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
+- Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`.
 
 The steps in the code example are described as follows:
 
@@ -184,12 +188,12 @@ The steps in the code example are described as follows:
 
 1. Build the solution, and then run the GettingStartedHost console application from inside Visual Studio.
 
-   Run the service with administrator privileges. Because you opened Visual Studio with administrator privileges, you should also run GettingStartedHost with administrator privileges. As an alternative, you can open a new command prompt by using **Run as administrator** and run service.exe within it.
+   Run the service with administrator privileges. Because you opened Visual Studio with administrator privileges, you should also run GettingStartedHost with administrator privileges. As an alternative, you can open a new command prompt by using **Run as administrator** and run GettingStartedHost.exe within it.
 
 2. Open a web browser and browse to the service's debug page at `http://localhost:8000/GettingStarted/CalculatorService`.
 
 > [!NOTE]
-> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more info about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run service.exe with administrator privileges.
+> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more info about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run GettingStartedHost.exe with administrator privileges.
 
 
 ## Example

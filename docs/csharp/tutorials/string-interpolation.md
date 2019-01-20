@@ -104,7 +104,7 @@ This tutorial describes common scenarios of string interpolation usage. For more
 
 ## See Also
 
-- <xref:System.String.Format%2A?displayProperty=nameWithType>  
-- <xref:System.FormattableString?displayProperty=nameWithType>  
-- <xref:System.IFormattable?displayProperty=nameWithType>  
-- [Strings](../programming-guide/strings/index.md)  
+- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.FormattableString?displayProperty=nameWithType>
+- <xref:System.IFormattable?displayProperty=nameWithType>
+- [Strings](../programming-guide/strings/index.md)

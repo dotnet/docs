@@ -70,11 +70,11 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 
 ## See also
 
-- <xref:System.Linq.Enumerable.GroupBy%2A>  
-- <xref:System.Linq.IGrouping%602>  
-- [Language Integrated Query (LINQ)](index.md)  
-- [group clause](../language-reference/keywords/group-clause.md)  
-- [Anonymous Types](../programming-guide/classes-and-structs/anonymous-types.md)  
-- [Perform a Subquery on a Grouping Operation](perform-a-subquery-on-a-grouping-operation.md)  
-- [Create a Nested Group](create-a-nested-group.md)  
-- [Grouping Data](../programming-guide/concepts/linq/grouping-data.md)  
+- <xref:System.Linq.Enumerable.GroupBy%2A>
+- <xref:System.Linq.IGrouping%602>
+- [Language Integrated Query (LINQ)](index.md)
+- [group clause](../language-reference/keywords/group-clause.md)
+- [Anonymous Types](../programming-guide/classes-and-structs/anonymous-types.md)
+- [Perform a Subquery on a Grouping Operation](perform-a-subquery-on-a-grouping-operation.md)
+- [Create a Nested Group](create-a-nested-group.md)
+- [Grouping Data](../programming-guide/concepts/linq/grouping-data.md)

@@ -58,7 +58,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Projections.PcaTransform> | Computes the projection of the feature vector onto a low-rank subspace. |
 | <xref:Microsoft.ML.Transforms.Text.SentimentAnalyzingTransformer> | Uses a pretrained sentiment model to score input strings. |
 | <xref:Microsoft.ML.Transforms.Text.StopWordsRemovingTransformer> | Removes language-specific list of stop words (most common words) by comparing individual tokens (case-insensitive comparison) to the stopwords. |
-| <xref:Microsoft.ML.Transforms.Categorical.TermLookupTransformer> | Maps text values columns to new columns using a map dataset provided through its arguments. |
 | <xref:Microsoft.ML.Transforms.Text.WordBagBuildingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words) in a given text. It does so by building a dictionary of ngrams and using the id in the dictionary as the index in the bag. |
 | <xref:Microsoft.ML.Transforms.Text.WordHashBagProducingTransformer> | Produces a bag of counts of ngrams (sequences of consecutive words of length 1-n) in a given text. It does so by hashing each ngram and using the hash value as the index in the bag. |
 | <xref:Microsoft.ML.Transforms.Text.WordTokenizingTransformer> | Splits the text into words using the separator character(s). |
@@ -96,7 +95,6 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.Normalizers.MeanVarDblAggregator> | Computes the mean and variance for a vector valued column. It tracks the current mean and the M2 (sum of squared diffs of the values from the mean), the number of NaNs and the number of non-zero elements. |
 | <xref:Microsoft.ML.Transforms.Normalizers.MeanVarSngAggregator> | Computes the mean and variance for a vector valued column. It tracks the current mean and the M2 (sum of squared diffs of the values from the mean), the number of NaNs and the number of non-zero elements. |
 | <xref:Microsoft.ML.Transforms.Normalizers.MinMaxDblAggregator> | Tracks min, max, number of non-sparse values (vCount) and number of ProcessValue() calls (trainCount) for a vector valued column. |
-| <xref:Microsoft.ML.Transforms.Normalizers.MinMaxSngAggregator> | Tracks min, max, number of non-sparse values (vCount) and number of ProcessValue() calls (trainCount) for a vector valued column. |
 | <xref:Microsoft.ML.Transforms.Normalizers.NormalizeTransform> | Standardizes feature ranges. |
 | <xref:Microsoft.ML.Transforms.Normalizers.NormalizingTransformer> |Standardizes feature ranges. |
 
@@ -170,4 +168,3 @@ The following tables contain information about all of the data transforms suppor
 | <xref:Microsoft.ML.Transforms.GenerateNumberTransform> | Adds a column with a generated number sequence. |
 | <xref:Microsoft.ML.Transforms.ProduceIdTransform> | Produces a column with the cursor's ID as a column. |
 | <xref:Microsoft.ML.Transforms.RandomNumberGenerator> | Generates a random number. |
-| <xref:Microsoft.ML.Transforms.ScoringTransformer> | Combines information from multiple predictive models to generate a new model in the pipeline by using the scores from an already trained model. |

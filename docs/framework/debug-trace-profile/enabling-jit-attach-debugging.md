@@ -30,6 +30,6 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
  Before the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](https://go.microsoft.com/fwlink/?LinkId=181767).  
   
 ## See Also  
- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)  
- [Making an Image Easier to Debug](../../../docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md)  
- [Enabling Profiling](https://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)
+- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)
+- [Making an Image Easier to Debug](../../../docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md)
+- [Enabling Profiling](https://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)

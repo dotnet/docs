@@ -65,5 +65,5 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
   
 ## See Also
 
-- [C# Programming Guide](../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../csharp/programming-guide/index.md)
 - [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)

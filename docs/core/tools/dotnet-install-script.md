@@ -194,5 +194,5 @@ You can install a specific version using the `--version` argument. The version m
 
 ## See also
 
-* [.NET Core releases](https://github.com/dotnet/core/releases)
-* [.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)
+- [.NET Core releases](https://github.com/dotnet/core/releases)
+- [.NET Core Runtime and SDK download archive](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md)

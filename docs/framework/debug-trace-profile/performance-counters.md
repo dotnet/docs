@@ -246,5 +246,5 @@ for (int i = 0; i < Array.Length; i++)
 |**Total Runtime Checks**|Displays the total number of runtime code access security checks performed since the application started. Runtime code access security checks are performed when a caller demands a particular permission. The runtime check is made on every call by the caller and examines the current thread stack of the caller. When used with the **Stack Walk Depth** counter, this counter indicates the performance penalty that occurs for security checks.|  
   
 ## See Also  
- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)  
- [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)
+- [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
+- [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)

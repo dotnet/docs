@@ -90,12 +90,12 @@ All .NET Core applications starting with the .NET Core 2.0 automatically roll fo
 Starting with .NET Core 2.0, if the version of .NET Core that an application was built with is not present at runtime, the application automatically runs against the latest installed *minor version* of .NET Core. In other words, if an application is built with .NET Core 2.0, and .NET Core 2.0 is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
 
 > [!IMPORTANT]
-> This roll-forward behavior doesn't apply to preview releases. Nor does it apply to major releases. For example, a .NET Core 1.0 application wouldn't roll forward to .NET Core 2.0 or .NET Core 2.1.
+> This roll-forward behavior doesn't apply to preview releases. By default it also doesn't apply to major releases, but this can be changed with the settings below.
 
 You can modify this behavior by changing the setting for the roll-forward on no candidate shared framework. The available settings are:
-- `0` - disable minor version roll forward behavior
-- `1` - enable minor version roll forward behavior. This is the default value for the setting.
-- `2` - enable minor and major version roll forward behavior. If this is set, even different major versions will be considered, so it's possible that .NET Core 2.0 application runs on .NET Core 3.0 shared framework.
+- `0` - disable minor version roll forward behavior. With this setting application built for .NET Core 2.0.0 will roll forward to .NET Core 2.0.1, but not .NET Core 2.2.0 nor .NET Core 3.0.0.
+- `1` - enable minor version roll forward behavior. This is the default value for the setting. With this setting application built for .NET Core 2.0.0 will roll forward to either .NET Core 2.0.1 or .NET Core 2.2.0 depending on which one is installed, but it will not roll forward to .NET Core 3.0.0.
+- `2` - enable minor and major version roll forward behavior. If this is set, even different major versions will be considered, so application built for .NET Core 2.0.0 will roll forward to .NET Core 3.0.0.
 
 You can modify this setting in any of three ways:
 

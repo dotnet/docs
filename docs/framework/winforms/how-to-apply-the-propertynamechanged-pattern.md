@@ -22,7 +22,7 @@ The following code example demonstrates how to apply the *PropertyName*Changed p
   
 -   Paste the code into an empty code file. You must use the custom control on a Windows Form that contains a `Main` method.  
   
-## See Also  
+## See also
  [How to: Implement the INotifyPropertyChanged Interface](../../../docs/framework/winforms/how-to-implement-the-inotifypropertychanged-interface.md)  
  [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)  
  [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

@@ -55,7 +55,7 @@ UINT_PTR __stdcall FunctionIDMapper2 (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
+## See also
  [ICorProfilerInfo::SetFunctionIDMapper](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setfunctionidmapper-method.md)  
  [ICorProfilerInfo3::SetFunctionIDMapper2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setfunctionidmapper2-method.md)  
  [FunctionEnter3](../../../../docs/framework/unmanaged-api/profiling/functionenter3-function.md)  

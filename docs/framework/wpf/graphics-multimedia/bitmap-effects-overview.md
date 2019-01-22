@@ -54,7 +54,7 @@ Bitmap effects enable designers and developers to apply visual effects to render
 ## Creating Custom Effects  
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also provides unmanaged interfaces to create custom effects that can be used in managed [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. For additional reference material for creating custom bitmap effects, see the [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh) documentation.  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Effects.BitmapEffectGroup>  
  <xref:System.Windows.Media.Effects.BitmapEffectInput>  
  <xref:System.Windows.Media.Effects.BitmapEffectCollection>  

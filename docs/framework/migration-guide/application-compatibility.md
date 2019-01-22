@@ -100,7 +100,7 @@ To begin, select the type of compatibility change below:
 * [Runtime Changes](./runtime/index.md)
 
 
-## See Also
+## See also
 
 * [Versions and Dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
 * [What's New](../../../docs/framework/whats-new/index.md)

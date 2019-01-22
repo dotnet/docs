@@ -26,7 +26,7 @@ Explicit assembly binding redirection in an application configuration file requi
   
  An administrator can change these security settings to support or restrict specific scenarios on a given computer. There are no tools for changing the **BindingRedirects** flag setting from the default; an administrator must manually edit the Security.config file on a user's computer.  
   
-## See Also  
+## See also
 - [Publisher Policy Files and Side-by-Side Execution](https://msdn.microsoft.com/library/97a042be-4d72-40c3-91c0-76fd36bdf133)
 - [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
 - [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)

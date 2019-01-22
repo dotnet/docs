@@ -67,7 +67,7 @@ In unsafe mode, you can allocate memory on the stack, where it is not subject to
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
 - [C# Reference](../index.md)  
 - [C# Programming Guide](../../programming-guide/index.md)  

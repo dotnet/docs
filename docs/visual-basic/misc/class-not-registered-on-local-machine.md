@@ -12,6 +12,6 @@ This error is usually encountered as a result of a corrupted file. You may need 
   
 -   Reinstall Visual Studio.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
 

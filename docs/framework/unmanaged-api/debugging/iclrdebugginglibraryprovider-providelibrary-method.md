@@ -72,6 +72,6 @@ HRESULT ProvideLibrary(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
+## See also
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

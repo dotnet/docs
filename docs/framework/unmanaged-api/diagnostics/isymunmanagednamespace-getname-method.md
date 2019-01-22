@@ -47,5 +47,5 @@ HRESULT GetName(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
+## See also
  [ISymUnmanagedNamespace Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagednamespace-interface.md)

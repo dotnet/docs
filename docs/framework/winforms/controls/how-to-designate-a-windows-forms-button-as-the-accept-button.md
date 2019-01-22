@@ -43,7 +43,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
        }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Form.AcceptButton%2A>  
  [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
  [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  

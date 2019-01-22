@@ -111,7 +111,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 |Clipboard|All Clipboard operations work as usual. This includes cutting and pasting between [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
 |Drag-and-drop feature|All drag-and-drop operations work as usual. This includes operations between [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Walkthrough: Hosting a Windows Forms Control in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md)  

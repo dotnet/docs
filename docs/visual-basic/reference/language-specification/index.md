@@ -17,7 +17,7 @@ This site contains the [VB 11 specification](../../../../_vblang/spec/introducti
 Issues on the specification should be created in the [dotnet/vblang](https://github.com/dotnet/vblang/issues) repository. Or, if you're interested
 in fixing any errors you find, you may submit a [Pull Request](https://github.com/dotnet/vblang/pulls) to the same repository.
 
-## See Also  
+## See also
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
 
 >[!div class="step-by-step"]

@@ -31,7 +31,7 @@ This set of topics show a number of XPath expressions and their [!INCLUDE[sqltec
 |[How to: Find Child Elements Based on Position (XPath-LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-child-elements-based-on-position.md)|Compares how to find an element based on its relative position using XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].<br /><br /> The associated XPath expression is:`"Test[position() >= 2 and position() <= 4]"`|  
 |[How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md)|Compares how to find the immediate preceding sibling of a node using XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].<br /><br /> The associated XPath expression is:`"preceding-sibling::*[1]"`|  
   
-## See Also  
+## See also
  <xref:System.Xml.XPath?displayProperty=nameWithType>  
  [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)  
  [Process XML Data Using the XPath Data Model](../../../../standard/data/xml/process-xml-data-using-the-xpath-data-model.md)

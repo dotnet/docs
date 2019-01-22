@@ -22,7 +22,7 @@ This example shows how to use a <xref:System.Windows.Media.TransformGroup> to gr
  [!code-csharp[Transforms_Procedural_snip#MultipleTransformsCodeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_Procedural_snip/CSharp/MultipleTransformsExample.cs#multipletransformscodeexamplewholepage)]
  [!code-vb[Transforms_Procedural_snip#MultipleTransformsCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/Transforms_Procedural_snip/VisualBasic/MultipleTransformsExample.vb#multipletransformscodeexamplewholepage)]  
   
-## See Also  
+## See also
  <xref:System.Windows.UIElement.RenderTransform%2A>  
  <xref:System.Windows.Media.TransformGroup>  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  

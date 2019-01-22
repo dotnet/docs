@@ -51,7 +51,7 @@ Contains the security settings associated with a peer channel, including the typ
 |-------------|-----------------|  
 |[\<peerTransport>](../../../../../docs/framework/configure-apps/file-schema/wcf/peertransport.md)|Defines a peer transport for a custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerSecurityElement>  
  <xref:System.ServiceModel.PeerSecuritySettings>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

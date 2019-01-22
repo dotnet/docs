@@ -60,7 +60,7 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
 ## Object Arrays  
  You can declare and use an array of `Object` variables. This is useful when you need to handle a variety of data types and object classes. All the elements in an array must have the same declared data type. Declaring this data type as `Object` allows you to store objects and class instances alongside other data types in the array.  
   
-## See Also  
+## See also
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
  [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  

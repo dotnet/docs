@@ -60,7 +60,7 @@ pf.PrintAction = PrintToPrinter
 pf.Print()  
 ```  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print%2A>  
  <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>  
  [How to: Print a Form by Using the PrintForm Component](../../../visual-basic/developing-apps/printing/how-to-print-a-form-by-using-the-printform-component.md)  

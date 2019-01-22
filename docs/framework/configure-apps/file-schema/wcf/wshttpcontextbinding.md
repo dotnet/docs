@@ -92,7 +92,7 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
 |-------------|-----------------|  
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSHttpBinding>  
  <xref:System.ServiceModel.WSHttpContextBinding>  
  <xref:System.ServiceModel.Configuration.WSHttpContextBindingElement>  

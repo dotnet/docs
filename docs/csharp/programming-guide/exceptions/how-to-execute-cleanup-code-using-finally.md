@@ -22,7 +22,7 @@ The purpose of a `finally` statement is to ensure that the necessary cleanup of 
   
  A database connection is another good candidate for being closed in a `finally` block. Because the number of connections allowed to a database server is sometimes limited, you should close database connections as quickly as possible. If an exception is thrown before you can close your connection, this is another case where using the `finally` block is better than waiting for garbage collection.  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  

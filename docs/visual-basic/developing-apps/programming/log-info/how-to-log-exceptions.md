@@ -59,7 +59,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      [!code-vb[VbVbalrMyApplicationLog#5](../../../../visual-basic/developing-apps/programming/log-info/codesnippet/VisualBasic/how-to-log-exceptions_7.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
  <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>  
  <xref:Microsoft.VisualBasic.Logging.Log.WriteException%2A>  

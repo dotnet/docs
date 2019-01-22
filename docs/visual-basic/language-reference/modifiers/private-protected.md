@@ -60,7 +60,7 @@ For more information see [setting the Visual Basic language version](../../langu
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also
+## See also
 
 [Public](../../../visual-basic/language-reference/modifiers/public.md)  
 [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  

@@ -15,5 +15,5 @@ Visual Basic provides several attributes that allow objects interoperate with un
 |<xref:Microsoft.VisualBasic.VBFixedArrayAttribute>|Indicates that an array in a structure or non-local variable should be treated as a fixed-length array.|  
 |<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|Indicates that a string should be treated as if it were fixed length.|  
   
-## See Also  
+## See also
  [Attributes overview](../../visual-basic/programming-guide/concepts/attributes/index.md)

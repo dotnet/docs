@@ -37,7 +37,7 @@ AddressOf procedurename
   
  [!code-vb[VbVbalrDelegates#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/addressof-operator_2.vb)]  
   
-## See Also  
+## See also
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  

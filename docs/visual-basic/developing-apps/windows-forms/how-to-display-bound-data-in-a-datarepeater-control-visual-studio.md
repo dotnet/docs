@@ -38,7 +38,7 @@ The most common use of the <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> 
   
      You can specify which types of controls are displayed for each field. For more information, see [Set the control to be created when dragging from the Data Sources window](/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>  
  [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)  
  [How to: Display Unbound Controls in a DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/how-to-display-unbound-controls-in-a-datarepeater-control-visual-studio.md)  

@@ -59,7 +59,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
   
 -   [Method-Based Query Syntax Examples: Navigating Relationships](../../../../../../docs/framework/data/adonet/ef/language-reference/method-based-query-syntax-examples-navigating-relationships.md)  
   
-## See Also  
+## See also
  [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)  
  [Getting Started with LINQ in C#](~/docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
  [Getting Started with LINQ in Visual Basic](~/docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  

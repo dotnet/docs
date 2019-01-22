@@ -770,6 +770,6 @@ ms.author: "ronpet"
 |<xref:Microsoft.VisualC.NeedsCopyConstructorModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|
 |<xref:Microsoft.VisualC.NoSignSpecifiedModifier?displayProperty=nameWithType>|Microsoft.VisualC.dll is an obsolete assembly and exists only for backwards compatibility.|
 
-## See Also
+## See also
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
  [Obsolete Members](../../../docs/framework/whats-new/obsolete-members.md)

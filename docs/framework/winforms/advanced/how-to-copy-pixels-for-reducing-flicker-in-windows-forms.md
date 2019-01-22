@@ -56,7 +56,7 @@ private void Form1_Paint(System.Object sender,
 ## Compiling the Code  
  The code above is run in the form's <xref:System.Windows.Forms.Control.Paint> event handler so that the graphics persist when the form is redrawn. As such, do not call graphics-related methods in the <xref:System.Windows.Forms.Form.Load> event handler, because the drawn content will not be redrawn if the form is resized or obscured by another form.  
   
-## See Also  
+## See also
  <xref:System.Drawing.CopyPixelOperation>  
  <xref:System.Drawing.Graphics.FillRectangle%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.Control.OnPaint%2A?displayProperty=nameWithType>  

@@ -43,7 +43,7 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
 -   The <xref:System.Windows.ResourceDictionary> that contains the items must not be nested within another <xref:System.Windows.ResourceDictionary>. For example, you cannot use `x:Shared` for items in a <xref:System.Windows.ResourceDictionary> that is within a <xref:System.Windows.Style> that is already a <xref:System.Windows.ResourceDictionary> item.  
   
-## See Also  
+## See also
  <xref:System.Windows.ResourceDictionary>  
  [XAML Resources](../../../docs/framework/wpf/advanced/xaml-resources.md)  
  [Base Elements](../../../docs/framework/wpf/advanced/base-elements.md)

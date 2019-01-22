@@ -50,7 +50,7 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netpeerbinding.md)|Defines the security settings for the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md).|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>  
  <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>  
  <xref:System.ServiceModel.Configuration.PeerSecurityElement.Transport%2A>  

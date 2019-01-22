@@ -23,7 +23,7 @@ Determines whether an expression is `False`.
   
  [!code-vb[VbVbalrOperators#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isfalse-operator_1.vb)]  
   
-## See Also  
+## See also
  [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)  
  [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
  [AndAlso Operator](../../../visual-basic/language-reference/operators/andalso-operator.md)

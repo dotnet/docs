@@ -29,5 +29,5 @@ Formats a word as a parameter.
   
  [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/paramref_1.vb)]  
   
-## See Also  
+## See also
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

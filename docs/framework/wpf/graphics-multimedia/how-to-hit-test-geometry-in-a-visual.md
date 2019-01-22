@@ -29,6 +29,6 @@ This example shows how to perform a hit test on a visual object that is composed
 > [!NOTE]
 >  This sample does not take into account any transforms or clipping that may be applied to the geometry. In addition, this sample will not work with a styled control, since it does not have any drawings directly associated with it.  
   
-## See Also  
+## See also
  [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)  
  [Hit Test Using Geometry as a Parameter](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-geometry-as-a-parameter.md)

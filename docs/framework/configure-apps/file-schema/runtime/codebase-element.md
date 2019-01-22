@@ -83,7 +83,7 @@ href="URL of assembly"/>
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
 - [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  

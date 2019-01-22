@@ -78,7 +78,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
      [!code-csharp[c_PrincipalPermissionAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/c_principalpermissionattribute/cs/source.cs#3)]
      [!code-vb[c_PrincipalPermissionAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_principalpermissionattribute/vb/source.vb#3)]  
   
-## See Also  
+## See also
  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
  <xref:System.Security.Permissions.SecurityAction.Demand>  

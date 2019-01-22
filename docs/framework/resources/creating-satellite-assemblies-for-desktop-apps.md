@@ -302,7 +302,7 @@ gacutil -i:StringLibrary.resources.dll
   
 14. Run Example.exe.  
   
-## See Also  
+## See also
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
  [Delay Signing an Assembly](../../../docs/framework/app-domains/delay-sign-assembly.md)  
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  

@@ -64,7 +64,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
     listBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID");  
     ```  
   
-## See Also  
+## See also
  [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
  [ListBox Control Overview](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)  
  [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)  

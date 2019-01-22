@@ -82,7 +82,7 @@ Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].
 vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactFrameworkSDK\v1.0.5000\Windows CE " myfile.vb  
 ```  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
  [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)

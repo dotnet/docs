@@ -63,7 +63,7 @@ This topic describes how you can control which `My` objects are enabled by setti
 |`_MYWEBSERVICES`|Enables `My.WebServices`, if the constant is `TRUE`.|  
 |`_MYTYPE`|Enables `My.Log`, `My.Request`, and `My.Response`, if the constant is "Web".|  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
  <xref:Microsoft.VisualBasic.Devices.Computer>  
  <xref:Microsoft.VisualBasic.Logging.Log>  

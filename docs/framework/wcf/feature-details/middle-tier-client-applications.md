@@ -29,5 +29,5 @@ This topic discusses various issues specific to middle-tier client applications 
   
  In addition, you can increase the startup performance for those clients that use data types that are serializable using the <xref:System.Xml.Serialization.XmlSerializer> generate and compile serialization code for those data types at runtime, which can result in slow start-up performance. The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) can improve start-up performance for these applications by generating the necessary serialization code from the compiled assemblies for the application. For more information, see [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md).  
   
-## See Also  
+## See also
  [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md)

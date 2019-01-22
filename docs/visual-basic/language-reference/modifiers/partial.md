@@ -87,7 +87,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
   
  The two partial definitions in the preceding example could be in the same source file or in two different source files.  
   
-## See Also  
+## See also
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
  [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)  

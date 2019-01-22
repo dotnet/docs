@@ -33,7 +33,7 @@ By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control di
     |`false`|Text in the control is not automatically adjusted to fit the width of the control, so it will scroll to the right until a line break is reached. Use this value if you chose horizontal scroll bars or both, above.|  
     |`true` (default)|Text in the control is automatically adjusted to fit the width of the control. The horizontal scrollbar will not appear. Use this value if you chose vertical scroll bars or none, above, to display one or more paragraphs.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.RichTextBoxScrollBars>  
  <xref:System.Windows.Forms.RichTextBox>  
  [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  

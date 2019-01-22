@@ -65,6 +65,6 @@ foreach (XElement prdName in items)
 {http://www.adventure-works.com}ProductName:Baby Monitor  
 ```  
   
-## See Also
+## See also
 
 - [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)

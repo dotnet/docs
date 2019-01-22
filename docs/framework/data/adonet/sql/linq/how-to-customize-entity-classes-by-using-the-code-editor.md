@@ -49,5 +49,5 @@ Developers using Visual Studio can use the [!INCLUDE[vs_ordesigner_long](../../.
  [How to: Specify Concurrency-Conflict Checking](../../../../../../docs/framework/data/adonet/sql/linq/how-to-specify-concurrency-conflict-checking.md)  
  Describes how to use <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>.  
   
-## See Also  
+## See also
  [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

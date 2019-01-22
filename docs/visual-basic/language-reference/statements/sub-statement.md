@@ -220,7 +220,7 @@ End Sub
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   
-## See Also  
+## See also
  [Implements Statement](implements-statement.md)  
  [Function Statement](function-statement.md)  
  [Parameter List](parameter-list.md)  

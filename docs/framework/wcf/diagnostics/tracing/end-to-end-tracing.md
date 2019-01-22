@@ -19,7 +19,7 @@ End to End (e2e) Tracing allows developers to follow the execution of code in th
   
  Provides a summary of all activity trace types  
   
-## See Also  
+## See also
  [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)  
  [Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting](../../../../../docs/framework/wcf/diagnostics/tracing/using-service-trace-viewer-for-viewing-correlated-traces-and-troubleshooting.md)  
  [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  

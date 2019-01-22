@@ -98,6 +98,6 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
  This activity is completely isolated from the host application.  
   
-## See Also  
+## See also
  [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))  
  [WPF Add-Ins Overview](../../../../docs/framework/wpf/app-development/wpf-add-ins-overview.md)

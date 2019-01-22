@@ -37,7 +37,7 @@ You can run a command-line tool called the [Assembly Registration Tool (Regasm.e
   
  For the `InprocServer32` subkey, a reference to Mscoree.dll appears in place of a traditional COM type library to indicate that the common language runtime creates the managed object.  
   
-## See Also  
+## See also
  [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
  [How to: Reference .NET Types from COM](how-to-reference-net-types-from-com.md)  
  [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))  

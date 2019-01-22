@@ -20,5 +20,5 @@ This section provides a functional transformation tutorial for XML. This include
 |[Tutorial: Deferred Execution (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-deferred-execution.md)|Describes lazy evaluation and deferred execution in detail.|  
 |[Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)|A tutorial that demonstrates a functional transformation.|  
   
-## See Also  
+## See also
  [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

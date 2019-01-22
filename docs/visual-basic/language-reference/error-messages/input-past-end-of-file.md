@@ -14,7 +14,7 @@ Either an `Input` statement is reading from a file that is empty or one in which
   
 2.  If the file is opened for binary access, use `Seek` and `Loc`.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileSystem.Input%2A>  
  <xref:Microsoft.VisualBasic.FileSystem.EOF%2A>  
  <xref:Microsoft.VisualBasic.FileSystem.Seek%2A>  

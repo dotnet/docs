@@ -49,7 +49,7 @@ Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that r
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Double?displayProperty=nameWithType> structure.  
   
-## See Also  
+## See also
  <xref:System.Double?displayProperty=nameWithType>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  

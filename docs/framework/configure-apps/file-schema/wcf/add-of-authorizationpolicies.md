@@ -45,7 +45,7 @@ Specifies an authorization policy for claim transformation.
 ## Remarks  
  Each authorization policy contains a single required `policyType` attribute that is a string. The attribute specifies an authorization policy, which enables transformation of one set of input claims into another set of claims. Access control can be granted or denied based on that. For more information on how an authorization policy works, see <xref:System.IdentityModel.Policy.IAuthorizationPolicy> and [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>  
  <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ExternalAuthorizationPolicies%2A>  
  <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>  

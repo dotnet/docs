@@ -44,7 +44,7 @@ Security changes were made in .NET Framework version 3.5 SP1 and later that affe
   
  A less secure work around is to disable the loop back check, as described in <https://support.microsoft.com/kb/896861>. This disables the protection against reflection attacks. So it is better to constrain the set of alternate names to only those you expect the machine to actually use.  
   
-## See Also  
+## See also
  <xref:System.Net.AuthenticationManager.CustomTargetNameDictionary%2A?displayProperty=nameWithType>  
  <xref:System.Net.HttpRequestHeader?displayProperty=nameWithType>  
  <xref:System.Net.HttpWebRequest.Host%2A?displayProperty=nameWithType>

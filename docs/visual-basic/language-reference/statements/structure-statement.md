@@ -98,7 +98,7 @@ End Structure
   
  [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
   
-## See Also  
+## See also
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
  [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  

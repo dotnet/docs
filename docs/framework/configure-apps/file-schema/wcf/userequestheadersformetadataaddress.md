@@ -41,5 +41,5 @@ Enables the retrieval of metadata address information from the request message h
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.UseRequestHeadersForMetadataAddressElement>

@@ -45,5 +45,5 @@ LAZYK,Lazy K Kountry Store,John Steel,Marketing Manager,(509) 555-7969,12 Orches
 LETSS,Let's Stop N Shop,Jaime Yorres,Owner,(415) 555-5938,87 Polk St. Suite 5,San Francisco,CA,94117,USA  
 ```  
   
-## See Also  
+## See also
  [Projections and Transformations (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

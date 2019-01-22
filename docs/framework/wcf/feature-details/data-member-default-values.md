@@ -50,6 +50,6 @@ In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types ha
   
  On schema import, the <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A> property is automatically set to `false` whenever the WCF-specific annotation mentioned previously is detected. It is also set to `false` for reference types that have the `nillable` property set to `false` to support specific interoperability scenarios that commonly occur when consuming [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue%2A>  
  <xref:System.Runtime.Serialization.DataMemberAttribute>

@@ -49,5 +49,5 @@ Represents a type, either basic or complex (that is, user-defined). If the type 
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
+## See also
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

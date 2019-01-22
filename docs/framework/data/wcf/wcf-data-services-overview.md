@@ -49,7 +49,7 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
   
  ![WCF Data Services architecture diagram](../../../../docs/framework/data/wcf/media/astoriaservicearch.gif "AstoriaServiceArch")  
   
-## See Also  
+## See also
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
  [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  

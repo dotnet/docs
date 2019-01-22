@@ -34,5 +34,5 @@ STDAPI CoInitializeCor (
 ## Requirements  
  **Header:** Cor.h  
   
-## See Also  
+## See also
  [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

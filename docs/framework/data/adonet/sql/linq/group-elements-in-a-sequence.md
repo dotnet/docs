@@ -66,6 +66,6 @@ The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a s
  [!code-csharp[DLinqQueryExamples#35](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#35)]
  [!code-vb[DLinqQueryExamples#35](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#35)]  
   
-## See Also  
+## See also
  [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

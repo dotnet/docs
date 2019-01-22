@@ -16,7 +16,7 @@ The <xref:System.Enum.GetValues%2A> and <xref:System.Enum.GetNames%2A> methods a
   
      [!code-vb[VbEnumsTask#2](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-determine-the-string-associated-with-an-enumeration-value_1.vb)]  
   
-## See Also  
+## See also
  <xref:System.Enum.GetValues%2A>  
  <xref:System.Enum.GetNames%2A>  
  <xref:System.Enum>  

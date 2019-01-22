@@ -23,7 +23,7 @@ When you set the <xref:System.Windows.Forms.ToolStrip.Stretch%2A> property of a 
   
 -   References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStrip>  
  <xref:System.Windows.Forms.ToolStrip.Stretch%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.ToolStripTextBox>  

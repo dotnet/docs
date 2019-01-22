@@ -74,7 +74,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses several column types t
   
  The <xref:System.Windows.Forms.DataGridViewLinkColumn> class provides several properties for modifying the appearance of links before, during, and after they are clicked.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridViewColumn>  
  <xref:System.Windows.Forms.DataGridViewButtonColumn>  

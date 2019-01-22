@@ -39,7 +39,7 @@ You can resolve COM interoperability problems by displaying your form on a [!INC
   
 -   Compile the `COMForm`, `Form1`, and `FormManager` types into an assembly called `COMWinform.dll`. Register the assembly for COM interop by using one of the methods described in [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md). You can now use the assembly and its corresponding type library (.tlb) file in unmanaged applications. For example, you can use the type library as a reference in a Visual Basic 6.0 executable project.  
   
-## See Also  
+## See also
  [Exposing .NET Framework Components to COM](../../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
  [Packaging an Assembly for COM](../../../../docs/framework/interop/packaging-an-assembly-for-com.md)  
  [Registering Assemblies with COM](../../../../docs/framework/interop/registering-assemblies-with-com.md)  

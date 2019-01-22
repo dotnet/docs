@@ -65,7 +65,7 @@ Represents a collection of X.509 certificates that are provided to authenticate 
   
  For an example that shows how to populate the collection in configuration, see [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md).  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>  
  <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>  
  <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>  

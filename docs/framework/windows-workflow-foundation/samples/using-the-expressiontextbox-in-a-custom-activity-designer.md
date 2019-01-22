@@ -40,6 +40,6 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\ExpressionTextBox`  
   
-## See Also  
+## See also
  <xref:System.Activities.Presentation.View.ExpressionTextBox>  
  [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

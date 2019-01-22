@@ -47,6 +47,6 @@ You initialize an array variable by including an array literal in a `New` clause
   
      [!code-vb[VbVbalrArrays#32](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/how-to-initialize-an-array-variable_6.vb)]  
   
-## See Also  
+## See also
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

@@ -32,7 +32,7 @@ Tabular data is often presented in a ledger-like format where alternating rows h
     > [!NOTE]
     >  Cells are displayed using styles inherited from multiple properties. For more information about style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  [Cell Styles in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md)  
  [Basic Formatting and Styling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)  

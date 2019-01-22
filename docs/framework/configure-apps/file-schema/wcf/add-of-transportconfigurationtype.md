@@ -52,7 +52,7 @@ This element is a key/value pair, which identifies the type of a particular tran
 </serviceHostingEnvironment>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>  
  <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
  <xref:System.ServiceModel.ServiceHostingEnvironment>  

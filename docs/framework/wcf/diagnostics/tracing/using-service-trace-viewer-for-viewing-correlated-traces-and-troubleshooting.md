@@ -192,7 +192,7 @@ Expanding activities to track the root cause of a problem
  ![Using the Trace Viewer](../../../../../docs/framework/wcf/diagnostics/tracing/media/e2etrace11.gif "e2eTrace11")  
 To start troubleshooting, you can also pick a red or yellow message trace and double click it to track the root cause  
   
-## See Also  
+## See also
  [End-To-End Tracing Scenarios](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing-scenarios.md)  
  [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md)  
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)

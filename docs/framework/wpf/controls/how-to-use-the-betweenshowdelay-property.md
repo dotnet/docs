@@ -21,7 +21,7 @@ This example shows how to use the <xref:System.Windows.Controls.ToolTipService.B
  [!code-xaml[ToolTipService#ToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
 [!code-xaml[ToolTipService#NoToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#notooltip)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ToolTip>  
  <xref:System.Windows.Controls.ToolTipService>  
  [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)  

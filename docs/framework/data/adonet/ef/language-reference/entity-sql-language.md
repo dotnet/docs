@@ -73,6 +73,6 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
   
  [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
   
-## See Also  
+## See also
  [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)  
  [Language Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

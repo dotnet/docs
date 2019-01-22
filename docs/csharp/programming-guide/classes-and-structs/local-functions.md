@@ -73,6 +73,6 @@ As we did with the method iterator, we can refactor the code from this example t
 
 [!code-csharp[LocalFunctionAsync`](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/local-functions-async2.cs)] 
 
-## See Also
+## See also
 
 - [Methods](methods.md)

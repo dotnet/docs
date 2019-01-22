@@ -12,7 +12,7 @@ The WS-AT protocol service failed to register a participant for a control protoc
 ## Troubleshooting  
  Do not try to Register for Completion more than once.  Also, inspect the status string within the trace message to determine if any actionable item exists.  
   
-## See Also  
+## See also
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

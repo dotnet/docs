@@ -63,7 +63,7 @@ Specifies the level where a trace switch is set.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.Switch>  
  <xref:System.Diagnostics.TraceSwitch>  
  <xref:System.Diagnostics.BooleanSwitch>  

@@ -120,7 +120,7 @@ notifyIcon1 = gcnew System::Windows::Forms::NotifyIcon();
 contextMenu1 = gcnew System::Windows::Forms::ContextMenu();  
 ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.NotifyIcon>  
  <xref:System.Windows.Forms.NotifyIcon.Icon%2A>  
  [How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](../../../../docs/framework/winforms/controls/app-icons-to-the-taskbar-with-wf-notifyicon.md)  

@@ -35,7 +35,7 @@ The following example makes the `Nested` class public:
   
  [!code-csharp[csProgGuideObjects#71](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/nested-types_4.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  

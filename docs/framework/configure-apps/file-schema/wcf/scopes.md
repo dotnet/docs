@@ -47,5 +47,5 @@ Contains a collection of configuration elements that specify custom scope Uris t
 |-------------|-----------------|  
 |[\<endpointDiscovery>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpointdiscovery.md)|Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

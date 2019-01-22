@@ -19,6 +19,6 @@ ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
  <xref:System.Windows.Forms.MainMenu>  
  Describes this class and has links to all its members.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

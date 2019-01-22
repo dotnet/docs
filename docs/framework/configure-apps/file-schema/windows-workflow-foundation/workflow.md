@@ -128,7 +128,7 @@ A configuration element that contains all queries for a specific workflow identi
 </system.serviceModel>  
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement>  
  <xref:System.Activities.Tracking.TrackingProfile>  
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  

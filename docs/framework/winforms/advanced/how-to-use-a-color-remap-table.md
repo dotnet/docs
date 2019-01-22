@@ -30,6 +30,6 @@ Remapping is the process of converting the colors in an image according to a col
 ## Compiling the Code  
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
-## See Also  
+## See also
  [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)  
  [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)

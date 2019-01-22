@@ -76,7 +76,7 @@ You will get an error saying that the compiler cannot create an instance of the 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also  
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

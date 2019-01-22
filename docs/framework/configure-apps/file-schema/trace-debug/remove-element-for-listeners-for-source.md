@@ -75,7 +75,7 @@ Removes a listener from the `Listeners` collection for a trace source.
 </configuration>   
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.TraceSource.Listeners%2A>  
  <xref:System.Diagnostics.TraceSource>  
  [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  

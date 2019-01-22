@@ -16,7 +16,7 @@ This example shows how to synchronize media playback with an event.
   
  [!code-xaml[MediaGallery_snippet#SoundFromUserEventExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/SoundFromUserEventExample.xaml#soundfromusereventexamplewholepage)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.MediaElement>  
  <xref:System.Windows.Media.MediaTimeline>  
  <xref:System.Windows.EventTrigger.RoutedEvent%2A>  

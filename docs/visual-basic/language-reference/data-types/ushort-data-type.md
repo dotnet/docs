@@ -68,7 +68,7 @@ Dim number = &H_5826us
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.UInt16?displayProperty=nameWithType> structure.  
   
-## See Also  
+## See also
  <xref:System.UInt16>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

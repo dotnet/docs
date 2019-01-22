@@ -37,7 +37,7 @@ Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't con
   
 3.  Verify that the containing element exposes at least one `Public` member.  
   
-## See Also  
+## See also
  [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
  [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  

@@ -183,7 +183,7 @@ Image brushes can fill shapes, controls, text, and more
 > [!NOTE]
 >  The codec must be digitally signed for the system to recognize it.  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Imaging.BitmapSource>  
  <xref:System.Windows.Media.Imaging.BitmapImage>  
  <xref:System.Windows.Controls.Image>  

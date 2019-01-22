@@ -35,7 +35,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> method can be
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A>  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

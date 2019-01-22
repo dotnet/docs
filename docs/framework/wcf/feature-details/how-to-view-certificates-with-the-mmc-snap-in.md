@@ -49,7 +49,7 @@ A common type of credential is the X.509 certificate. When creating secure servi
   
 4.  To view details of any certificate, select the certificate and click **View**.  
   
-## See Also  
+## See also
  [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
  [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)  
  [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)

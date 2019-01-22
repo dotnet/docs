@@ -78,7 +78,7 @@ The methods used most often for tracing are the methods for writing output to li
     > [!NOTE]
     >  You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code) and <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>.  
   
-## See Also  
+## See also
 - <xref:System.Diagnostics.Debug.WriteIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Debug.WriteLineIf%2A?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Trace.WriteIf%2A?displayProperty=nameWithType>

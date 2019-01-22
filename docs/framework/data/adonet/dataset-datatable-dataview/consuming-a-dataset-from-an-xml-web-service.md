@@ -253,7 +253,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
     csc client.cs -r:sample.dll -r:System.dll -r:System.Data.dll -r:System.Xml.dll -r:System.Web.Services.dll  
     ```  
   
-## See Also  
+## See also
  [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
  [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  

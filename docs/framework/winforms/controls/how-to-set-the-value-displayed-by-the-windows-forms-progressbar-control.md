@@ -218,7 +218,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
     }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ProgressBar>  
  <xref:System.Windows.Forms.ToolStripProgressBar>  
  [ProgressBar Control Overview](../../../../docs/framework/winforms/controls/progressbar-control-overview-windows-forms.md)  

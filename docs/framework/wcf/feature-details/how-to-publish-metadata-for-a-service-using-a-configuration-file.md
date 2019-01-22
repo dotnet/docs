@@ -255,7 +255,7 @@ namespace Metadata.Samples
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
  [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)  
  [Self-Host](../../../../docs/framework/wcf/samples/self-host.md)  

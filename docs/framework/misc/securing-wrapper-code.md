@@ -95,5 +95,5 @@ ms.author: "mairaw"
   
 -   Types and the interfaces they implement. These should use link demands consistently.  
   
-## See Also  
+## See also
  [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

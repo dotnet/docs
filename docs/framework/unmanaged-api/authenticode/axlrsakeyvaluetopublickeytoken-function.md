@@ -38,5 +38,5 @@ HRESULT _AxlRSAKeyValueToPublicKeyToken (
 ## Return Value  
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
-## See Also  
+## See also
  [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

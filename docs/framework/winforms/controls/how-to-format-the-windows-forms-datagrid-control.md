@@ -147,7 +147,7 @@ ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
        }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.GridTableStylesCollection>  
  <xref:System.Windows.Forms.GridColumnStylesCollection>  
  <xref:System.Windows.Forms.DataGrid>  

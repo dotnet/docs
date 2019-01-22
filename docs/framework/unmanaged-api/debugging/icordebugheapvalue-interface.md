@@ -41,7 +41,7 @@ A subclass of "ICorDebugValue" that represents an object that has been collected
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
+## See also
     
     
     

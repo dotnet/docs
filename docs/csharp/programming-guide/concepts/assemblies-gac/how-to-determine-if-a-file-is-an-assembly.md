@@ -60,7 +60,7 @@ class TestAssembly
   
  The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
-## See Also
+## See also
 
 - <xref:System.Reflection.AssemblyName>  
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)  

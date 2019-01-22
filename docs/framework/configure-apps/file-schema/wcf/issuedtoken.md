@@ -57,7 +57,7 @@ endpointBehaviors section
   
  This section contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.IssuedTokenClientElement>  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
  <xref:System.ServiceModel.Description.ClientCredentials>  

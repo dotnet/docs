@@ -10,7 +10,7 @@ For the latest documentation on Visual Studio 2017, see [Visual Studio 2017 Docu
 
 No changes in Visual Basic in Visual Studio 2015 will prevent an application that was created in Visual Basic in Visual Studio 2013 from compiling or change the run-time behavior of such an application.  
   
-## See Also  
+## See also
  [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
  [Lambda Expressions](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  

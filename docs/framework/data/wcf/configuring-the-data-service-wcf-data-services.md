@@ -77,6 +77,6 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can create
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
-## See Also  
+## See also
  [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
  [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)

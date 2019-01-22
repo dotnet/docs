@@ -266,5 +266,5 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
   
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> and <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> are the operation behaviors responsible for plugging in the message formatters for the `DataContractSerializer` and the `XmlSerializer`, respectively. The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> behavior can actually operate with any serializer that derives from <xref:System.Runtime.Serialization.XmlObjectSerializer>, including the <xref:System.Runtime.Serialization.NetDataContractSerializer> (described in detail in Using Stand-Alone Serialization). The behavior calls one of the `CreateSerializer` virtual method overloads to obtain the serializer. To plug in a different serializer, create a new <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> subclass and override both `CreateSerializer` overloads.  
   
-## See Also  
+## See also
  [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

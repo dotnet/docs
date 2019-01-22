@@ -66,5 +66,5 @@ typedef struct COR_PRF_EX_CLAUSE_INFO {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
+## See also
  [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)

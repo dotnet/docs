@@ -49,7 +49,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
   
 -   Display each Windows Form on a new thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](../../../../docs/framework/winforms/advanced/how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).  
   
-## See Also  
+## See also
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
  [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  

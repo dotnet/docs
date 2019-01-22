@@ -65,7 +65,7 @@ World]]></xml>.Value
   
  Unlike other intrinsic data types, `String` is a reference type. When a variable of reference type is passed as an argument to a function or subroutine, a reference to the memory address where the data is stored is passed instead of the actual value of the string. So in the previous example, the name of the variable remains the same, but it points to a new and different instance of the `String` class, which holds the new value.  
   
-## See Also  
+## See also
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
  [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)  
  [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)  

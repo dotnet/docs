@@ -26,6 +26,6 @@ This example shows how to detect when the <xref:System.Windows.Input.Key.Enter> 
  [!code-csharp[keydown#KeyDownSample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/KeyDown/CSharp/Window1.xaml.cs#keydownsample)]
  [!code-vb[keydown#KeyDownSample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/KeyDown/VisualBasic/Window1.xaml.vb#keydownsample)]  
   
-## See Also  
+## See also
  [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)

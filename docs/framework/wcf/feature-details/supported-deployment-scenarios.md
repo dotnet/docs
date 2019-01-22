@@ -33,7 +33,7 @@ The subset of Windows Communication Foundation (WCF) features supported for use 
   
  WCF can be used to communicate with remote servers from within partially trusted applications deployed by either [ClickOnce Deployment](https://go.microsoft.com/fwlink/?LinkId=83712) or XBAP. The Internet Zone permission set includes <xref:System.Net.WebPermission> for the originating host, which allows these applications to communicate with their origin server using any of the supported WCF bindings described in [Partial Trust Feature Compatibility](../../../../docs/framework/wcf/feature-details/partial-trust-feature-compatibility.md).  
   
-## See Also  
+## See also
  [Code Access Security](https://go.microsoft.com/fwlink/?LinkId=83717)  
  [Windows Presentation Foundation Browser-Hosted Applications Overview](https://go.microsoft.com/fwlink/?LinkId=98397)  
  [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)  

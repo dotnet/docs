@@ -64,7 +64,7 @@ If you choose not to use the Windows Service project template, you can write you
   
 10. Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
-## See Also  
+## See also
  [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
  [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)  
  [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)  

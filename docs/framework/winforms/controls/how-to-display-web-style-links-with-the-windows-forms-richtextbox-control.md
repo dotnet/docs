@@ -110,7 +110,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
     }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.RichTextBox.DetectUrls%2A>  
  <xref:System.Windows.Forms.RichTextBox.LinkClicked>  
  <xref:System.Windows.Forms.RichTextBox>  

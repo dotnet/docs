@@ -96,7 +96,7 @@ Vendors of assemblies can state that applications should use a newer version of 
     > [!IMPORTANT]
     >  The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.  
   
-## See Also  
+## See also
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)

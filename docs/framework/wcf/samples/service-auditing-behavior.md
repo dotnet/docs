@@ -44,6 +44,6 @@ This sample demonstrates how to use the <xref:System.ServiceModel.Description.Se
   
 3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-## See Also  
+## See also
  [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
  [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)

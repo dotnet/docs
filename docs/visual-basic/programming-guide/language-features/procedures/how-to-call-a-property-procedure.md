@@ -46,7 +46,7 @@ You call a property procedure by storing a value in the property or retrieving i
   
  The value generated on the right side of the assignment statement is stored in the property.  
   
-## See Also  
+## See also
  [Property Procedures](./property-procedures.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  

@@ -347,7 +347,7 @@ When dealing with data in Windows Communication Foundation (WCF), you must consi
   
 -   In general, when using any component that accepts a quota, understand its security implications and set it to a safe value.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.Xml.XmlDictionaryReader>  
  <xref:System.Xml.Serialization.XmlSerializer>  

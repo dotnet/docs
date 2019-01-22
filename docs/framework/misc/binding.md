@@ -31,7 +31,7 @@ You can use the `binding` element to configure different types of predefined bin
   
  Custom bindings are identified by their `name` attribute.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.BindingsSection>  
  <xref:System.ServiceModel.Channels.Binding>  
  <xref:System.ServiceModel.Channels.BindingElement>  

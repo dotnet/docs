@@ -34,7 +34,7 @@ Precise placement of controls on your form is a high priority for many applicati
  <xref:System.Windows.Forms.FlowLayoutPanel>  
  Provides reference documentation for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
-## See Also  
+## See also
  [How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-flowlayoutpanel-control.md)  
  [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../../../../docs/framework/winforms/controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)  
  [How to: Design a Windows Forms Layout that Responds Well to Localization](../../../../docs/framework/winforms/controls/how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)  

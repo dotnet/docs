@@ -44,5 +44,5 @@ This sample demonstrates how to use Windows Communication Foundation (WCF) to cr
 > [!NOTE]
 >  When running this sample, please ensure that Anonymous Authentication and Windows Authentication are not enabled simultaneously for the ServiceModelSamples folder in IIS. If that is the case, please disable Windows Authentication. Once you have run the sample, enable Windows Authentication and run "iisreset".  
   
-## See Also  
+## See also
  [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md)

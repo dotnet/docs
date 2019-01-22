@@ -29,7 +29,7 @@ When you are using a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> contro
   
      Replace *ProductsBindingSource* with the name of the <xref:System.Windows.Forms.BindingSource> for your <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>, and replace *ProductID* with the name of the field that you want to search.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>  
  [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)  
  [Troubleshooting the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/troubleshooting-the-datarepeater-control-visual-studio.md)  

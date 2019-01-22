@@ -23,7 +23,7 @@ In addition to querying a single table, you can also perform cross-table queries
  [!code-csharp[DP LINQ to DataSet Examples#Join](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#join)]
  [!code-vb[DP LINQ to DataSet Examples#Join](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#join)]  
   
-## See Also  
+## See also
  [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)  
  [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)  
  [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  

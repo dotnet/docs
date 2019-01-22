@@ -314,7 +314,7 @@ WPF composite control hosted in a Windows Forms application
   
  Build and run the application. Click the different radio buttons to see the effect on the WPF composite control.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  

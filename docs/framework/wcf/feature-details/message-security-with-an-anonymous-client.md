@@ -125,7 +125,7 @@ The following scenario shows a client and service secured by Windows Communicati
 </configuration>  
 ```  
   
-## See Also  
+## See also
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
  [Message Security Anonymous](../../../../docs/framework/wcf/samples/message-security-anonymous.md)  

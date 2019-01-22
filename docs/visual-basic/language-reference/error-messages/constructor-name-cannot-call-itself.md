@@ -21,5 +21,5 @@ A `Sub New` procedure in a class or structure calls itself.
   
 2.  If you do not intend to call a different constructor, remove the `Sub New` call entirely.  
   
-## See Also  
+## See also
  [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

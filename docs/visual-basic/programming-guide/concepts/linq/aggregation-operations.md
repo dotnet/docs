@@ -56,7 +56,7 @@ An aggregation operation computes a single value from a collection of values. An
   
  [!code-vb[CsLINQAggregating#6](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_6.vb)]  
   
-## See Also  
+## See also
  <xref:System.Linq>  
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)  

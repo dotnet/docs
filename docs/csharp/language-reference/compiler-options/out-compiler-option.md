@@ -58,7 +58,7 @@ The **-out** option specifies the name of the output file.
 csc t.cs -out:mymodule.netmodule -target:module t2.cs  
 ```  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)  

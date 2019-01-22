@@ -30,7 +30,7 @@ An anonymous function is an "inline" statement or expression that can be used wh
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [Statements, Expressions, and Operators](../../../csharp/programming-guide/statements-expressions-operators/index.md)  
 - [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  

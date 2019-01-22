@@ -16,7 +16,7 @@ ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
  [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/fonts-how-to-topics.md)  
   
-## See Also  
+## See also
  <xref:System.Windows.FontStyle>  
  <xref:System.Windows.SystemFonts>  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  

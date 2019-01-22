@@ -232,5 +232,5 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ## Rebuilding After Changing Build Type  
  After you change the build type of an application data file, you need to rebuild the entire application to ensure those changes are applied. If you only build the application, the changes are not applied.  
   
-## See Also  
+## See also
  [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)

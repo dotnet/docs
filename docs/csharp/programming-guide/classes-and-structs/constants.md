@@ -40,7 +40,7 @@ Constants are immutable values which are known at compile time and do not change
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  

@@ -43,7 +43,7 @@ Windows Explorer is a common user-interface choice for applications because of i
     > [!NOTE]
     >  When you drag the splitter, the panels resize themselves.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.SplitContainer>  
  [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
  [How to: Define Resize and Positioning Behavior in a Split Window](../../../../docs/framework/winforms/controls/how-to-define-resize-and-positioning-behavior-in-a-split-window.md)  

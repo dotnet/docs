@@ -16,6 +16,6 @@ This example returns a `Boolean` value that indicates whether a string represent
   
  This example does not check if the name has incorrectly placed colons, or directories with no name, or if the length of the name exceeds the system-defined maximum length. It also does not check if the application has permission to access the file-system resource with the specified name.  
   
-## See Also  
+## See also
  <xref:System.IO.Path.GetInvalidPathChars%2A>  
  [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)

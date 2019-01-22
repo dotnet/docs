@@ -23,7 +23,7 @@ Arguments provided to an executable on the command-line are accessible through a
   
  [!code-csharp[csProgGuideMain#9](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-display-command-line-arguments_1.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  

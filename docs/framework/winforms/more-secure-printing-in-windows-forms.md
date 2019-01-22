@@ -20,7 +20,7 @@ Windows Forms applications frequently include printing abilities. The [!INCLUDE[
 |<xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting>|Provides printing only from a more-restricted dialog box. <xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting>.|  
 |<xref:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting>|Prevents access to printers. <xref:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting>.|  
   
-## See Also  
+## See also
  [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)  
  [Additional Security Considerations in Windows Forms](../../../docs/framework/winforms/additional-security-considerations-in-windows-forms.md)  
  [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)  

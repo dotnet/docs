@@ -22,7 +22,7 @@ Element operations return a single, specific element from a sequence.
 |Single|Returns the only element of a collection or the only element that satisfies a condition. Throws an <xref:System.InvalidOperationException> if there is no element or more than one element to return. |Not applicable.|<xref:System.Linq.Enumerable.Single%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Single%2A?displayProperty=nameWithType>|  
 |SingleOrDefault|Returns the only element of a collection or the only element that satisfies a condition. Returns a default value if there is no element to return. Throws an <xref:System.InvalidOperationException> if there is more than one element to return. |Not applicable.|<xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.SingleOrDefault%2A?displayProperty=nameWithType>|  
   
-## See Also
+## See also
 
 - <xref:System.Linq>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  

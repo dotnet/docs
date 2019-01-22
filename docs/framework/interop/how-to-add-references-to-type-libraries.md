@@ -38,7 +38,7 @@ Visual Studio generates an interop assembly containing metadata when you add a r
   
 2.  Use the [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
   
-## See Also  
+## See also
  [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)  
  [Exposing COM Components to the .NET Framework](exposing-com-components.md)  
  [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](https://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3(v=vs.100))  

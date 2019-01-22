@@ -40,7 +40,7 @@ Directory structure and registry entries for a private deployment
 ### Shared Assemblies  
  Assemblies that are shared by multiple applications should be installed in a centralized repository called the global assembly cache. .NET clients can access the same copy of the interop assembly, which is signed and installed in the global assembly cache. For more information about producing and using primary interop assemblies, see [Primary Interop Assemblies](https://msdn.microsoft.com/library/b977a8be-59a0-40a0-a806-b11ffba5c080(v=vs.100)).  
   
-## See Also  
+## See also
  [Exposing COM Components to the .NET Framework](exposing-com-components.md)  
  [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)  
  [Using COM Types in Managed Code](https://msdn.microsoft.com/library/1a95a8ca-c8b8-4464-90b0-5ee1a1135b66(v=vs.100))  

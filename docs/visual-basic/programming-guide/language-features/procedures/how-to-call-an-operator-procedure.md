@@ -47,7 +47,7 @@ You call an operator procedure by using the operator symbol in an expression. In
 ## Compiling the Code  
  Be sure the class or structure you are using defines the operator you want to use.  
   
-## See Also  
+## See also
  [Operator Procedures](./operator-procedures.md)  
  [How to: Define an Operator](./how-to-define-an-operator.md)  
  [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  

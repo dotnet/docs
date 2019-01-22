@@ -108,5 +108,5 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
 -   Function pointers and delegates.  
   
-## See Also  
+## See also
  [Reliability Best Practices](../../../docs/framework/performance/reliability-best-practices.md)

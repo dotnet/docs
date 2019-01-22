@@ -23,6 +23,6 @@ The following example shows how to aid usability of a <xref:System.Windows.Contr
  [!code-csharp[TextBoxMiscSnippets_snip#TextBoxBackgroundCodeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textbox_with_background_image.xaml.cs#textboxbackgroundcodeexamplewholepage)]
  [!code-vb[TextBoxMiscSnippets_snip#TextBoxBackgroundCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/textbox_with_background_image.xaml.vb#textboxbackgroundcodeexamplewholepage)]  
   
-## See Also  
+## See also
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

@@ -111,7 +111,7 @@ Adds an X.509 certificate to the collection of known certificates.
 </serviceBehaviors>
 ```  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>  
  <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>  
  <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>  

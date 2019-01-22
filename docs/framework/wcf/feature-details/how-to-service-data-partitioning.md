@@ -167,5 +167,5 @@ This topic outlines the basic steps required to partition messages across multip
 </configuration>  
 ```  
   
-## See Also  
+## See also
  [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

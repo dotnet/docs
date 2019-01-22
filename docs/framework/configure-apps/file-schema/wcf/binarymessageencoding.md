@@ -58,7 +58,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
                        maxSessionSize="3141" />
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.BinaryMessageEncodingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  

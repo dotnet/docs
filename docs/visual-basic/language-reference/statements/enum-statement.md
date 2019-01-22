@@ -165,7 +165,7 @@ End Enum
   
  [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
   
-## See Also  
+## See also
  <xref:System.Enum>  
  <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
  [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  

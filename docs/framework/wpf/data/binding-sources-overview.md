@@ -88,7 +88,7 @@ In data binding, the binding source object refers to the object you obtain data 
   
  For more information about partial-trust security, see [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Data.ObjectDataProvider>  
  <xref:System.Windows.Data.XmlDataProvider>  
  [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)  

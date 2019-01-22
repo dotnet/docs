@@ -24,6 +24,6 @@ This section contains topics describing the `My.Settings` object and the tasks i
 |Save updated user setting values|[How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md)|  
 |Determine the values of user settings|[How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)|  
   
-## See also  
+## See also
  [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet)  
  [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)

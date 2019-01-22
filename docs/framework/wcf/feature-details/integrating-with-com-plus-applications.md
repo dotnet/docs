@@ -29,5 +29,5 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
 ## Reference  
  <xref:System.ServiceModel>  
   
-## See Also  
+## See also
  [Integrating with COM Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)

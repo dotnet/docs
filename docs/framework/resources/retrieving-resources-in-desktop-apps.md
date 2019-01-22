@@ -194,7 +194,7 @@ Resgen Strings.ru-RU.txt Resources\Strings.ru-RU.resources
 csc Example.cs  
 ```  
   
-## See Also  
+## See also
  <xref:System.Resources.ResourceManager>  
  [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
  [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  

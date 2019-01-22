@@ -25,7 +25,7 @@ You can disassociate an object variable from any object instance by setting it t
 ## .NET Framework Security  
  If you use an object variable for objects that contain confidential or sensitive data, you can set the variable to `Nothing` when you are not actively dealing with one of those objects. This reduces the chance of malicious code gaining access to the data.  
   
-## See Also  
+## See also
  <xref:System.NullReferenceException>  
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  

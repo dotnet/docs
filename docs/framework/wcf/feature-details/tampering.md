@@ -13,7 +13,7 @@ ms.assetid: 3bad93be-60bb-4f89-96ab-a1c3dc7c0fad
   
  To mitigate this, never set the <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> property to <xref:System.ServiceModel.Channels.AddressingVersion.None%2A>, and avoid the use of <xref:System.ServiceModel.Channels.MessageVersion>, such as the static <xref:System.ServiceModel.Channels.MessageVersion.Soap12%2A> property, which sets the <xref:System.ServiceModel.Channels.MessageVersion.Addressing%2A> property to <xref:System.ServiceModel.Channels.AddressingVersion.None%2A>.  
   
-## See Also  
+## See also
  [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
  [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
  [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  

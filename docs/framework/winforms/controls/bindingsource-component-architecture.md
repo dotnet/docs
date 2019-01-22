@@ -162,7 +162,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 ### Integration with BindingNavigator  
  You can use the <xref:System.Windows.Forms.BindingSource> component to bind any Windows Forms control to a data source, but the <xref:System.Windows.Forms.BindingNavigator> control is designed specifically to work with the <xref:System.Windows.Forms.BindingSource> component. The <xref:System.Windows.Forms.BindingNavigator> control provides a user interface for controlling the <xref:System.Windows.Forms.BindingSource> component's current item. By default, the <xref:System.Windows.Forms.BindingNavigator> control provides buttons that correspond to the navigation methods on the <xref:System.Windows.Forms.BindingSource> component. For more information, see [How to: Navigate Data with the Windows Forms BindingNavigator Control](../../../../docs/framework/winforms/controls/how-to-navigate-data-with-the-windows-forms-bindingnavigator-control.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.BindingSource>  
  <xref:System.Windows.Forms.BindingNavigator>  
  [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)  

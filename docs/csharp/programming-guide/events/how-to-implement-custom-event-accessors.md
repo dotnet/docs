@@ -18,7 +18,7 @@ An event is a special kind of multicast delegate that can only be invoked from w
   
 [!code-csharp[IDrawingObject.OnDraw](codesnippet/CSharp/how-to-implement-interface-events_1.cs#IDrawingObjectOnDraw)]  
   
-## See Also
+## See also
 
 - [Events](../../../csharp/programming-guide/events/index.md)  
 - [event](../../../csharp/language-reference/keywords/event.md)

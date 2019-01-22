@@ -20,7 +20,7 @@ This example shows how to specify the <xref:System.Windows.Media.Animation.Timel
   
  For the complete sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.DoubleAnimation>  
  <xref:System.Windows.FrameworkElement.Width%2A>  
  <xref:System.Windows.Media.Animation.Timeline>  

@@ -67,7 +67,7 @@ This section introduces the general and core concepts behind queued communicatio
 ## Poison Message Queue Programming  
  After a message makes it to the target queue, the service may repeatedly fail to process the message. For example, an application reading a message from the queue under a transaction and updating a database may find the database temporarily disconnected. In this case, the transaction is rolled back, a new transaction is created, and the message is reread from the queue. A second attempt may succeed or fail. In some cases, depending on the cause of the error, the message may repeatedly fail delivery to the application. In this case, the message is deemed as "poison." Such messages are moved to a poison queue that can be read by a poison-handling application.  
   
-## See Also  
+## See also
  [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
  [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
  [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  

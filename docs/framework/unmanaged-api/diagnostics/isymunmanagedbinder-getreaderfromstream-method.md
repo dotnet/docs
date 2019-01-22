@@ -46,5 +46,5 @@ HRESULT GetReaderFromStream(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
+## See also
  [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)

@@ -66,7 +66,7 @@ Framework property metadata options are reported for the properties of object el
   
  This behavior is implemented by <xref:System.Windows.FrameworkPropertyMetadata.Merge%2A>, and can be overridden on derived metadata classes.  
   
-## See Also  
+## See also
  <xref:System.Windows.DependencyProperty.GetMetadata%2A>  
  [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  

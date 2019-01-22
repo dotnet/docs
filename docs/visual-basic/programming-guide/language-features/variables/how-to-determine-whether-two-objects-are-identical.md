@@ -44,7 +44,7 @@ In Visual Basic, two variable references are considered identical if their point
   
  `objA identical to objC? True`  
   
-## See Also  
+## See also
  [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  

@@ -48,7 +48,7 @@ SQL Server and the .NET Framework are based on different type systems, which can
  <xref:System.Data.DbType>  
  Describes the `DbType` enumeration and all of its members.  
   
-## See Also  
+## See also
  [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
  [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
  [Table-Valued Parameters](../../../../../docs/framework/data/adonet/sql/table-valued-parameters.md)  

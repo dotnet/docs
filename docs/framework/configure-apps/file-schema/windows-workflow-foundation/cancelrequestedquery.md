@@ -50,7 +50,7 @@ Represents a query that is used to track requests to cancel a child activity by 
 |-------------|-----------------|  
 |[\<faultPropagationQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/faultpropagationquery.md)|Represents a list of configuration elements that are used to track requests to cancel a child activity by the parent activity. The query is necessary for a tracking participant to subscribe to cancel request record objects.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>       
  <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>       
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  

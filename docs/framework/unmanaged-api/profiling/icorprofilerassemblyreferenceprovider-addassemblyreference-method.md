@@ -44,7 +44,7 @@ HRESULT AddAssemblyReference(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
+## See also
  [ICorProfilerAssemblyReferenceProvider Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerassemblyreferenceprovider-interface.md)  
  [GetAssemblyReferences Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)  
  [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)

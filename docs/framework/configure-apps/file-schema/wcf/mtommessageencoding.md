@@ -61,7 +61,7 @@ Specifies the encoding and message versioning used for SOAP Message Transmission
                      textEncoding="utf-8" />
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MtomMessageEncodingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  

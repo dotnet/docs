@@ -206,7 +206,7 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
   
  The client may also be able to evaluate additional CLR functions on the client. A <xref:System.NotSupportedException> is raised for any expression that cannot be evaluated on the client and cannot be translated into a valid request URI for evaluation on the server.  
   
-## See Also  
+## See also
  [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
  [Query Projections](../../../../docs/framework/data/wcf/query-projections-wcf-data-services.md)  
  [Object Materialization](../../../../docs/framework/data/wcf/object-materialization-wcf-data-services.md)  

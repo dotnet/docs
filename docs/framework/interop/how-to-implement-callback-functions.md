@@ -123,6 +123,6 @@ int main()
 }  
 ```  
   
-## See Also  
+## See also
  [Callback Functions](../../../docs/framework/interop/callback-functions.md)  
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

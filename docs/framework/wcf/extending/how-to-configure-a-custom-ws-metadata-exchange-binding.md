@@ -107,7 +107,7 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     Console.WriteLine("Metadata section: " + section.Dialect.ToString());  
     ```  
   
-## See Also  
+## See also
  [Metadata Publishing Behavior](../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)  
  [Retrieve Metadata](../../../../docs/framework/wcf/samples/retrieve-metadata.md)  
  [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  

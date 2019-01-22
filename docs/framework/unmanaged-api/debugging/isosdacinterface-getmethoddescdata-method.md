@@ -66,7 +66,7 @@ The provided method is part of the `ISOSDacInterface` interface and corresponds 
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## See Also
+## See also
 
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)

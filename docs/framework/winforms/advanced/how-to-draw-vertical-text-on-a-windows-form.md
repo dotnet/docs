@@ -31,7 +31,7 @@ The following code example shows how to draw vertical text on a form by using th
   
 -   The Arial font is not installed.  
   
-## See Also  
+## See also
  <xref:System.Drawing.Graphics.DrawString%2A>  
  <xref:System.Drawing.StringFormat.FormatFlags%2A>  
  <xref:System.Drawing.StringFormatFlags>  

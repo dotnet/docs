@@ -112,7 +112,7 @@ The following example shows how to use the `Aggregate` clause to apply aggregate
   
  [!code-vb[VbSimpleQuerySamples#19](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/aggregate-clause_10.vb)]  
   
-## See Also
+## See also
 
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
 - [Queries](../../../visual-basic/language-reference/queries/index.md)  

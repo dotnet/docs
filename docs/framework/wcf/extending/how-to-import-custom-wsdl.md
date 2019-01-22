@@ -71,7 +71,7 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
     WsdlImporter importer = new WsdlImporter(metaDocs);          System.Collections.ObjectModel.Collection<ContractDescription> contracts  = importer.ImportAllContracts();  
     ```  
   
-## See Also  
+## See also
  [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
  [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)  
  [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)

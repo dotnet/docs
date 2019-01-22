@@ -43,6 +43,6 @@ HRESULT GetLocalVarSigToken(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v452plus](../../../../includes/net-current-v452plus-md.md)]  
   
-## See Also  
+## See also
  [ICorDebugILCode2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)  
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

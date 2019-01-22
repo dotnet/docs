@@ -44,7 +44,7 @@ Specifies a certificate to use when authenticating a service to the client.
   
  The attributes of the `serviceCertificate` element are identical to the attributes of the [\<clientCertificate>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ServiceCertificate%2A>  
  <xref:System.ServiceModel.Description.ClientCredentials>  

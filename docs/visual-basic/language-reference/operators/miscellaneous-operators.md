@@ -25,6 +25,6 @@ The following are miscellaneous operators defined in Visual Basic.
   
  [TypeOf operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
   
-## See Also
+## See also
 
  [Operators listed by functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

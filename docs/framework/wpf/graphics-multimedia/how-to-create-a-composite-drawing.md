@@ -35,7 +35,7 @@ Composite drawing that has multiple DrawingGroup objects
   
  For more information about <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.DrawingGroup.BitmapEffect%2A>  
  <xref:System.Windows.Media.DrawingGroup.Transform%2A>  
  <xref:System.Windows.Media.DrawingGroup.OpacityMask%2A>  

@@ -178,7 +178,7 @@ Precise placement of controls on your form is a high priority for many applicati
   
 -   Experiment with docking child controls in a <xref:System.Windows.Forms.Panel> control. The <xref:System.Windows.Forms.Control.Padding%2A> property is a more general realization of the <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A> property, and you can satisfy yourself that this is the case by putting a child control in a <xref:System.Windows.Forms.Panel> control and setting the child control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. Set the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Padding%2A> property to various values and note the effect.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Control.AutoSize%2A>  
  <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A>  
  <xref:System.Windows.Forms.Control.Margin%2A>  

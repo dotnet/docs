@@ -81,7 +81,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
     > [!IMPORTANT]
     >  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs Create access for the folder. Permissions are set using access control lists. If the file already exists, the application needs only Write access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant Read access to a single file, rather than Create access for a folder. Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.RichTextBox>  
  [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  

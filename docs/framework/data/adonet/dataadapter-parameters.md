@@ -158,7 +158,7 @@ adapter.Fill(customers, "Customers");
 > [!NOTE]
 >  If a parameter name is not supplied for a parameter, the parameter is given an incremental default name of Parameter*N* *,* starting with "Parameter1". We recommend that you avoid the Parameter*N* naming convention when you supply a parameter name, because the name that you supply might conflict with an existing default parameter name in the `ParameterCollection`. If the supplied name already exists, an exception is thrown.  
   
-## See Also  
+## See also
  [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  

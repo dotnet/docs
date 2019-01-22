@@ -42,7 +42,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
 <pnrpResolver resolverType="String" />
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>  
  <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

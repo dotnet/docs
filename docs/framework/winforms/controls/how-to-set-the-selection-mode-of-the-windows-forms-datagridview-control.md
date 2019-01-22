@@ -24,7 +24,7 @@ The following code example demonstrates how to configure a <xref:System.Windows.
   
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>  
  <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>  

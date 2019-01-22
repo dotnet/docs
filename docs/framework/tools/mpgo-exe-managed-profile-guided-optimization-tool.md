@@ -120,7 +120,7 @@ mpgo –scenario "C:\MyApp\wav2wma.exe –input song1.wav –output song1.wma" �
 mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyTaxUtil2011.dll" -outdir C:\ReOptimized  
 ```  
   
-## See Also  
+## See also
  [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)  
  [Improving Launch Performance for your Desktop Applications](https://go.microsoft.com/fwlink/p/?LinkId=248943)  

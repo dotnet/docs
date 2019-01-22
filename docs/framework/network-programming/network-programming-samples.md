@@ -52,6 +52,6 @@ This section contains descriptions and links to downloadable network programming
   
  <xref:System.Net.NetworkInformation>  
   
-## See Also  
+## See also
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)  

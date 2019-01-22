@@ -92,7 +92,7 @@ Security of a Windows Communication Foundation (WCF) service consists of two pri
 ## Protection Levels  
  The `ProtectionLevel` property occurs on several attribute classes (such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes). The protection level is a value that specifies whether the messages (or message parts) that support a service are signed, signed and encrypted, or sent without signatures or encryption. For more information about the property, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md), and for programming examples, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md). For more information about designing a service contract with the `ProtectionLevel` in context, see [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel>  
  <xref:System.ServiceModel.Description.ServiceCredentials>  
  <xref:System.ServiceModel.ServiceContractAttribute>  

@@ -47,7 +47,7 @@ Specifies authentication settings for a peer certificate used by a peer node.
 ## Remarks  
  The `<authentication>` element corresponds to the <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication> class. This element specifies a validator, which is invoked during neighbor-to-neighbor authentication in the mesh. When a new peer tries to establish a neighbor connection, it passes its own credential to the responding peer. The validator of the responder is invoked to verify the credential of the remote party. Whenever a peer connection is established in the mesh, both peers are mutually authenticated, meaning validators on both ends are invoked.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
  <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
  <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication%2A>  

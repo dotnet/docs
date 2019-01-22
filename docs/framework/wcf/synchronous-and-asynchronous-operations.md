@@ -186,6 +186,6 @@ svcutil http://localhost:8000/servicemodelsamples/service/mex /async
   
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the **/messageContract** command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>  
  <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A>

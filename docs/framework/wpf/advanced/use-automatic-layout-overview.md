@@ -101,7 +101,7 @@ Grid
   
  **Note** For the complete code sample, see [Share Sizing Properties Between Grids](../../../../docs/framework/wpf/controls/how-to-share-sizing-properties-between-grids.md)  
   
-## See Also  
+## See also
  [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)  
  [Use Automatic Layout to Create a Button](../../../../docs/framework/wpf/advanced/how-to-use-automatic-layout-to-create-a-button.md)  
  [Use a Grid for Automatic Layout](../../../../docs/framework/wpf/advanced/how-to-use-a-grid-for-automatic-layout.md)

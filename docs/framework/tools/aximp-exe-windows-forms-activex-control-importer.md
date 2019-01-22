@@ -73,6 +73,6 @@ aximp [options]{file.dll | file.ocx}
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   
-## See Also  
+## See also
  [Tools](../../../docs/framework/tools/index.md)  
  [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)

@@ -61,7 +61,7 @@ End Sub
   
 -   References to the <xref:System.Windows.Forms?displayProperty=nameWithType> and <xref:System.Drawing?displayProperty=nameWithType> namespaces.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ComboBox.DrawItem>  
  <xref:System.Windows.Forms.DrawItemEventArgs>  
  <xref:System.Windows.Forms.ComboBox.MeasureItem>  

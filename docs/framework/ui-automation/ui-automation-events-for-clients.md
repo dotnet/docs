@@ -53,7 +53,7 @@ ms.author: "mhopkins"
   
  For example code, see [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md).  
   
-## See Also  
+## See also
  [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)  
  [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)  
  [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)  

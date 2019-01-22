@@ -91,7 +91,7 @@ adapter.TableMappings.Add("Customers1", "Orders")
 adapter.Fill(customersDataSet, "Customers")  
 ```  
   
-## See Also  
+## See also
  [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
  [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

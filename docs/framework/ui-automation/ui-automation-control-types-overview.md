@@ -108,5 +108,5 @@ ms.author: "mhopkins"
   
 -   [UI Automation Support for the Window Control Type](../../../docs/framework/ui-automation/ui-automation-support-for-the-window-control-type.md)  
   
-## See Also  
+## See also
  <xref:System.Windows.Automation.ControlType>

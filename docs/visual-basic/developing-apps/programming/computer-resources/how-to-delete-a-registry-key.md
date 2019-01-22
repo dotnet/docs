@@ -39,7 +39,7 @@ The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref
 ## .NET Framework Security  
  Registry calls fail if either sufficient run-time permissions are not granted (<xref:System.Security.Permissions.RegistryPermission>) or if the user does not have the correct access (as determined by the ACLs) for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission.  
   
-## See Also  
+## See also
  <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>  
  <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%2A>  
  <xref:Microsoft.Win32.RegistryKey>  

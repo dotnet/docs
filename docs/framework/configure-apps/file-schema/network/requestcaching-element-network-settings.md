@@ -80,6 +80,6 @@ Controls the caching mechanism for network requests.
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Net.Cache?displayProperty=nameWithType>  
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

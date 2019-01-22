@@ -152,5 +152,5 @@ This section describes the unmanaged global static functions that earlier versio
  [_CorValidateImage Function](../../../../docs/framework/unmanaged-api/hosting/corvalidateimage-function.md)  
  Validates managed module images, and notifies the operating system loader after they have been loaded.  
   
-## See Also  
+## See also
  [.NET Framework 4 Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/net-framework-4-hosting-global-static-functions.md) 

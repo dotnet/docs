@@ -89,7 +89,7 @@ Specifies settings that authorize access to service operations
   
  For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md) and [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>  
  <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>  
  [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  

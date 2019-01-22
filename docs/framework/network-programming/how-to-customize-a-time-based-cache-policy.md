@@ -108,7 +108,7 @@ CreateFreshAndAgePolicy(new TimeSpan(5,0,0), new TimeSpan(10,0,0));
 Level:Default MaxAge:36000 MinFresh:18000  
 ```  
   
-## See Also  
+## See also
  [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
  [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  

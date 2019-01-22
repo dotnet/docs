@@ -23,7 +23,7 @@ The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and e
   
      [!code-vb[VbVbalrStatements#96](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/as-any-is-not-supported-in-declare-statements_2.vb)]  
   
-## See Also  
+## See also
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)  
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  

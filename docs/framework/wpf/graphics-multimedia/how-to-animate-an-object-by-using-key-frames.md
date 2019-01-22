@@ -27,7 +27,7 @@ This example shows how to animate an object, which in this example is the <xref:
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames>  
  <xref:System.Windows.Controls.Page.Background%2A>  
  <xref:System.Windows.Controls.Page>  

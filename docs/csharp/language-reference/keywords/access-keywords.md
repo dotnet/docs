@@ -18,7 +18,7 @@ This section introduces the following access keywords:
   
      Refers to the current instance of the class.  
   
-## See Also  
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

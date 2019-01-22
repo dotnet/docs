@@ -44,7 +44,7 @@ The following features are new in [!INCLUDE[vstecado](../../../../includes/vstec
 ## ADO.NET Entity Framework  
  The [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)] adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](https://go.microsoft.com/fwlink/?LinkId=234899).  
   
-## See Also  
+## See also
  [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
  [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
  [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  

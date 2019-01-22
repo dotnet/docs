@@ -49,5 +49,5 @@ public class Service : IEcho
 <httpModules/>  
 ```  
   
-## See Also  
+## See also
  [How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients](../../../../docs/framework/wcf/feature-details/config-wcf-service-with-aspnet-web-service.md)

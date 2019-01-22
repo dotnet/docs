@@ -40,6 +40,6 @@ When you use the **Add Service Reference** dialog to consume an [!INCLUDE[ssODat
   
 5.  The client library attaches the object to the <xref:System.Data.Services.Client.DataServiceContext>. The object is not attached when the <xref:System.Data.Services.Client.MergeOption> is <xref:System.Data.Services.Client.MergeOption.NoTracking>.  
   
-## See Also  
+## See also
  [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
  [Query Projections](../../../../docs/framework/data/wcf/query-projections-wcf-data-services.md)

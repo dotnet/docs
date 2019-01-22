@@ -38,7 +38,7 @@ Specifies `null` as a value for a XAML member.
 ## WPF Usage Notes  
  Note that `null` is not necessarily the initial unset value for a reference-type dependency property. The initial default value can vary for each dependency property and can be based on property-specific metadata. Many dependency properties do not accept `null` as a value, either through markup or code because of their validation callback implementations. For more information about dependency properties, see [Dependency Properties Overview](../../../docs/framework/wpf/advanced/dependency-properties-overview.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.DependencyProperty.UnsetValue>  
  [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
  [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

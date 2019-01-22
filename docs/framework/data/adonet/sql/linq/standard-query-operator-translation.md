@@ -219,7 +219,7 @@ ORDER BY [t0].[CustomerID]
   
     -   <xref:System.Linq.Enumerable.ToArray%2A>  
   
-## See Also  
+## See also
  [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
  [Return Or Skip Elements in a Sequence](../../../../../../docs/framework/data/adonet/sql/linq/return-or-skip-elements-in-a-sequence.md)  
  [Concatenate Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/concatenate-two-sequences.md)  

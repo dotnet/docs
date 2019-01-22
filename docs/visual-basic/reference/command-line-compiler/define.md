@@ -46,7 +46,7 @@ Defines conditional compiler constants.
   
  [!code-vb[VbVbalrCompiler#45](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/define_1.vb)]  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
  [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  

@@ -133,7 +133,7 @@ The following illustration shows the objects included in the DataGrid control.
 ## Events  
  Besides the common control events such as <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.DataGrid.Scroll>, the <xref:System.Windows.Forms.DataGrid> control supports events associated with editing and navigation within the grid. The <xref:System.Windows.Forms.DataGrid.CurrentCell%2A> property determines which cell is selected. The <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event is raised when the user navigates to a new cell. When the user navigates to a new table through parent/child relations, the <xref:System.Windows.Forms.DataGrid.Navigate> event is raised. The <xref:System.Windows.Forms.DataGrid.BackButtonClick> event is raised when the user clicks the back button when the user is viewing a child table, and the <xref:System.Windows.Forms.DataGrid.ShowParentDetailsButtonClick> event is raised when the show/hide parent rows icon is clicked.  
   
-## See Also  
+## See also
  [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
  [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
  [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  

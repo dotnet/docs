@@ -14,7 +14,7 @@ The Windows Forms <xref:System.Windows.Forms.CheckedListBox> control extends the
   
  Checked list boxes can have items added at design time using the **String Collection Editor** or their items can added dynamically from a collection at run time, using the <xref:System.Windows.Forms.CheckedListBox.Items%2A> property. For more information, see [How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control](../../../../docs/framework/winforms/controls/add-and-remove-items-from-a-wf-combobox.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.CheckedListBox>  
  <xref:System.Windows.Forms.CheckedListBox.Items%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.ListControl.DataSource%2A?displayProperty=nameWithType>  

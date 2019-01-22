@@ -160,7 +160,7 @@ Specifies the security options for a custom binding.
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.SecurityElement>  
  <xref:System.ServiceModel.Channels.SecurityBindingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

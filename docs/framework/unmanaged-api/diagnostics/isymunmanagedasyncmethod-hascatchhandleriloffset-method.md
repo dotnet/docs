@@ -26,5 +26,5 @@ HRESULT HasCatchHandlerILOffset(    [out, retval] BOOL* pRetVal);
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
+## See also
  [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)

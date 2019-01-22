@@ -33,7 +33,7 @@ Although `My.Computer.Registry` should cover your basic needs when programming a
   
  [!code-vb[VbResourceTasks#21](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/reading-from-and-writing-to-the-registry-using-the-microsoft-win32-namespace_2.vb)]  
   
-## See Also  
+## See also
  <xref:System.SystemException>  
  <xref:System.ApplicationException>  
  <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>  

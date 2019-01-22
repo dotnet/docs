@@ -23,7 +23,7 @@ WCF Data Services integrates with Visual Studio to enable you to more easily def
 
 For an example of how to create a simple data service that is based on the Northwind sample database, see [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).
 
-## See Also
+## See also
 
 - [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
 - [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)

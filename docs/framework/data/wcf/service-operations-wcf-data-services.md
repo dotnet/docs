@@ -98,5 +98,5 @@ http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order
  [!code-csharp[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind service/cs/northwind2.svc.cs#handleexceptions)]
  [!code-vb[Astoria Northwind Service#HandleExceptions](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind2.svc.vb#handleexceptions)]  
   
-## See Also  
+## See also
  [Interceptors](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md)

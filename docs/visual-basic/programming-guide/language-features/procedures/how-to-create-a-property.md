@@ -54,7 +54,7 @@ You enclose a property definition between a `Property` statement and an `End Pro
   
  [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/how-to-create-a-property_2.vb)]  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Property Procedures](./property-procedures.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  

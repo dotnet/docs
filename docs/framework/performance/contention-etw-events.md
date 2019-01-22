@@ -31,5 +31,5 @@ Contention events are raised whenever there is contention for <xref:System.Threa
 |Flags|win:UInt8|0 for managed; 1 for native.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR.|  
   
-## See Also  
+## See also
  [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

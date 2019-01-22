@@ -23,7 +23,7 @@ This example shows how to animate size changes by using key frames.
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames>  
  <xref:System.Windows.Media.ArcSegment.Size%2A>  
  <xref:System.Windows.Media.ArcSegment>  

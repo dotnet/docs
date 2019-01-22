@@ -10,7 +10,7 @@ When a file is open, an attempt has been made to perform an operation that can o
   
 -   Close the file and attempt the operation again.  
   
-## See Also  
+## See also
  <xref:System.Security.Permissions.FileIOPermission>  
  <xref:Microsoft.VisualBasic.FileSystem.FileClose%2A>  
  [How to: Get Information About a File in Visual Basic](https://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)

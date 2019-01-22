@@ -20,7 +20,7 @@ ms.assetid: 49d6398f-d3c4-4679-84fa-1de07b68b05e
   
  The key property of the <xref:System.Windows.Forms.ContextMenu> component is the <xref:System.Windows.Forms.Menu.MenuItems%2A> property. You can add menu items by programmatically creating <xref:System.Windows.Forms.MenuItem> objects and adding them to the <xref:System.Windows.Forms.Menu.MenuItemCollection> of the shortcut menu. Because the items in a shortcut menu are usually drawn from other menus, you will most frequently add items to a shortcut menu by copying them.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ContextMenu>  
  <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ContextMenuStrip>

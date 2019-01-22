@@ -38,7 +38,7 @@ The SELECT clause can have an optional TOP sub-clause following the optional ALL
   
  [!code-csharp[DP EntityServices Concepts 2#TOP](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#top)]  
   
-## See Also  
+## See also
  [SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)  
  [SKIP](../../../../../../docs/framework/data/adonet/ef/language-reference/skip-entity-sql.md)  
  [LIMIT](../../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md)  

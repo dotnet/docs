@@ -80,4 +80,4 @@ The Metadata Publishing Behavior sample demonstrates how to control the metadata
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Behaviors\Metadata`  
   
-## See Also
+## See also

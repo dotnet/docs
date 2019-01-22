@@ -30,5 +30,5 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
   
 -   [SQL Server Persistence Database](../../../docs/framework/windows-workflow-foundation/sql-server-persistence-database.md)  
   
-## See Also  
+## See also
  [Persistence Samples](https://go.microsoft.com/fwlink/?LinkID=177735)

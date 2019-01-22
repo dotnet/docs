@@ -59,7 +59,7 @@ You can change the appearance of tabs in Windows Forms by using properties of th
   
 -   Set the <xref:System.Windows.Forms.TabControl.Appearance%2A> property of the <xref:System.Windows.Forms.TabControl> to <xref:System.Windows.Forms.TabAppearance.Buttons> or <xref:System.Windows.Forms.TabAppearance.FlatButtons>.  
   
-## See Also  
+## See also
  [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)  
  [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
  [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)  

@@ -326,5 +326,5 @@ This section discusses schema collection support for the ODBC drivers for Micros
 |ORDINAL_POSITION|Int32|  
 |IS_NULLABLE|String|  
   
-## See Also  
+## See also
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

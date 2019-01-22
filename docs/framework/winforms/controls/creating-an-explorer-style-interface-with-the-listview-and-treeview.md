@@ -94,7 +94,7 @@ One of the benefits of Visual Studio is the ability to create professional-looki
   
 -   [How to: Attach a ShortCut Menu to a TreeView Node](../../../../docs/framework/winforms/controls/how-to-attach-a-shortcut-menu-to-a-treeview-node.md)  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ListView>  
  <xref:System.Windows.Forms.TreeView>  
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  

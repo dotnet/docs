@@ -39,7 +39,7 @@ variableorproperty = value
   
  [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
   
-## See Also  
+## See also
  [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
  [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
  [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  

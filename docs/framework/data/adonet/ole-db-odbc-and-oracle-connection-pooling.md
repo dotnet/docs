@@ -62,7 +62,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 |`Min Pool Size`|0|The minimum number of connections maintained in the pool.|  
 |`Pooling`|'true'|When `true`, the connection is drawn from the appropriate pool, or if necessary, created and added to the appropriate pool.|  
   
-## See Also  
+## See also
  [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
  [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

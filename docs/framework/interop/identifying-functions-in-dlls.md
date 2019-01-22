@@ -39,7 +39,7 @@ The identity of a DLL function consists of the following elements:
   
  For complete documentation on the Win32 API, see the Platform SDK. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
   
-## See Also  
+## See also
  [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
  [Specifying an Entry Point](../../../docs/framework/interop/specifying-an-entry-point.md)  
  [Creating a Class to Hold DLL Functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md)  

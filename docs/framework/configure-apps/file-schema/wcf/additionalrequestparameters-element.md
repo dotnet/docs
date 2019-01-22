@@ -6,7 +6,7 @@ ms.assetid: da8109fb-581c-48f4-b718-3bbda1edc47d
 # &lt;additionalRequestParameters&gt; element
 This contains a collection of configuration elements that specify additional request parameters.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.AdditionalRequestParameters%2A>  
  <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.AdditionalRequestParameters%2A>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

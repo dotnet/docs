@@ -63,6 +63,6 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
 |**/mergeConfig**|Merges the generated configuration into an existing file, instead of overwriting the existing file.|  
 |**/noConfig**|Do not generate configuration files.|  
   
-## See Also  
+## See also
  [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
  [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)

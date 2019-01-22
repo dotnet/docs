@@ -73,7 +73,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
         System.Windows.Forms.ToolStripLayoutStyle.Flow;  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStrip>  
  <xref:System.Windows.Forms.Control.Layout>  
  <xref:System.Windows.Forms.ToolStrip.LayoutCompleted>  

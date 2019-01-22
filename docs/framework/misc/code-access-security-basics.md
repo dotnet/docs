@@ -144,7 +144,7 @@ public class MyClass {
   
  If you want your application to perform an operation that requires accessing unmanaged code, it should do so through a trusted managed class that wraps the required functionality (if such a class exists). Do not create a wrapper class yourself if one already exists in a secure class library. The wrapper class, which must be granted a high degree of trust to be allowed to make the call into unmanaged code, is responsible for demanding that its callers have the appropriate permissions. If you use the wrapper class, your code only needs to request and be granted the permissions that the wrapper class demands.  
   
-## See Also  
+## See also
  <xref:System.Security.PermissionSet>  
  <xref:System.Security.Permissions.FileIOPermission>  
  <xref:System.Security.NamedPermissionSet>  

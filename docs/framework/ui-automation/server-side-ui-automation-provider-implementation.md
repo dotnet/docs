@@ -165,7 +165,7 @@ ms.author: "mhopkins"
   
  To accomplish this, the fragment root provider for the rebar exposes a set of children representing the bands. Each band has a single provider that may expose properties and patterns. In its implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderSimple.HostRawElementProvider%2A>, the band provider returns the default window provider for the control HWND, which it obtains by calling <xref:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle%2A>, passing in the control's window handle. Finally, the fragment root provider for the rebar implements the <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride> interface, and in its implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderHwndOverride.GetOverrideProviderForHwnd%2A> it returns the appropriate band provider for the control contained in the specified HWND.  
   
-## See Also  
+## See also
  [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
  [Expose a Server-side UI Automation Provider](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)  
  [Return Properties from a UI Automation Provider](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)  

@@ -63,7 +63,7 @@ From element [ As type ] In collection [ _ ]
   
  [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/from-clause_3.vb)]  
   
-## See Also  
+## See also
  [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  

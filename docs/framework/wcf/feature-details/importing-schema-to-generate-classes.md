@@ -173,7 +173,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
   
 -   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.Runtime.Serialization.XsdDataContractImporter>  
  <xref:System.Runtime.Serialization.XsdDataContractExporter>  

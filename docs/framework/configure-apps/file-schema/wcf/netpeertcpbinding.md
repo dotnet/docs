@@ -94,7 +94,7 @@ Defines a binding for peer channel specific TCP messaging.
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NetPeerTcpBinding>  
  <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  

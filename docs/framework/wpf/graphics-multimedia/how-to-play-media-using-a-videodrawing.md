@@ -26,6 +26,6 @@ To play an audio or video file, you use a <xref:System.Windows.Media.VideoDrawin
   
  Note that, when you use a <xref:System.Windows.Media.MediaTimeline>, you use the interactive <xref:System.Windows.Media.Animation.ClockController> returned from the <xref:System.Windows.Media.Animation.Clock.Controller%2A> property of the <xref:System.Windows.Media.MediaClock> to control media playback instead of the interactive methods of <xref:System.Windows.Media.MediaPlayer>.  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.VideoDrawing>  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

@@ -83,7 +83,7 @@ result = expression1 Xor expression2
   
  The previous example produces results of 2, 12, and 14, respectively.  
   
-## See Also  
+## See also
  [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
  [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  

@@ -35,7 +35,7 @@ There are several reasons you might want to create a multifile assembly:
 
 Once you create the assembly, you can sign the file that contains the assembly manifest (and hence the assembly), or you can give the file (and the assembly) a strong name and put it in the global assembly cache.
 
-## See Also
+## See also
 
 - [How to: Build a Multifile Assembly](../../../docs/framework/app-domains/how-to-build-a-multifile-assembly.md)
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

@@ -98,7 +98,7 @@ A *lambda expression* is a function or subroutine that does not have a name. A l
   
  [!code-vb[VbVbalrLambdas#11](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-create-a-lambda-expression_11.vb)]  
   
-## See Also  
+## See also
  <xref:System.Linq.Enumerable>  
  [Lambda Expressions](./lambda-expressions.md)  
  [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  

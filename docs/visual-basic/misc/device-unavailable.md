@@ -14,5 +14,5 @@ Either you have lost your network connection, or the device that you are trying 
   
 2.  Reconnect to the network and try again.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

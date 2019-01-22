@@ -190,7 +190,7 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
 ## Security  
  Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).  
   
-## See Also
+## See also
 
 - [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)  
 - [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

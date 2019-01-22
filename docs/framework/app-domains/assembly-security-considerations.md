@@ -56,7 +56,7 @@ ms.author: "ronpet"
   
  Because strong naming and signing using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) guarantee integrity, you can base code access security policy on these two forms of assembly evidence. Strong naming and signing using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md) guarantee integrity through digital signatures and certificates. All the technologies mentioned—hash verification, strong naming, and signing using [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md)—work together to ensure that the assembly has not been altered in any way.  
   
-## See Also  
+## See also
 - [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [SignTool.exe (Sign Tool)](../../../docs/framework/tools/signtool-exe.md)

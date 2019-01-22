@@ -20,5 +20,5 @@ Provides a property, event, and methods for interacting with the network to whic
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
+## See also
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

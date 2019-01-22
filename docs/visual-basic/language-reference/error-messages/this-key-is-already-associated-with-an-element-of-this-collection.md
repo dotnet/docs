@@ -12,5 +12,5 @@ The specified a key for a collection member already identifies another member of
   
 -   Use a different key for this member.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

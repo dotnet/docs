@@ -71,7 +71,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
   
  For more information on hit testing against visual objects, see [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Interop.HwndSource>  
  [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995)  
  [Hit Testing in the Visual Layer](../../../../docs/framework/wpf/graphics-multimedia/hit-testing-in-the-visual-layer.md)

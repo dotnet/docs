@@ -34,7 +34,7 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
   
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.DataGridView.CellStateChanged?displayProperty=nameWithType>  

@@ -61,7 +61,7 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
   
 -   The <xref:System.DBNull> type is treated in a special way. It is a singleton type, and upon deserialization the deserializer respects the singleton constraint and points all `DBNull` references to the singleton instance. Because `DBNull` is a serializable type, it demands <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> permission.  
   
-## See Also  
+## See also
  [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md)  
  [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
  [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)  

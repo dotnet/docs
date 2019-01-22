@@ -20,7 +20,7 @@ In earlier versions of the .NET Framework, controls didn't support setting trans
   
 -   In the Properties window, choose the <xref:System.Windows.Forms.ButtonBase.BackColor%2A> property and set it to <xref:System.Drawing.Color.Transparent%2A>  
   
-## See Also  
+## See also
  <xref:System.Drawing.Color.FromArgb%2A>  
  [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)  
  [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)  

@@ -141,7 +141,7 @@ This topic shows how to enable transport security on a Windows Communication Fou
  [!code-csharp[c_SecureWindowsClient#0](../../../samples/snippets/csharp/VS_Snippets_CFX/c_securewindowsclient/cs/secureclient.cs#0)] 
  [!code-vb[c_SecureWindowsClient#0](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securewindowsclient/vb/secureclient.vb#0)]      
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSHttpBinding>  
  [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
  [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  

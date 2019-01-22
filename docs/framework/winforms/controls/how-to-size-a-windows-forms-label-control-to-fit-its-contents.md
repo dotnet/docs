@@ -18,7 +18,7 @@ The Windows Forms <xref:System.Windows.Forms.Label> control can be single-line o
   
  If <xref:System.Windows.Forms.Label.AutoSize%2A> is set to `false`, the words specified in the <xref:System.Windows.Forms.Label.Text%2A> property will wrap to the next line if possible, but the control will not grow.  
   
-## See Also  
+## See also
  [How to: Create Access Keys with Windows Forms Label Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-with-windows-forms-label-controls.md)  
  [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)  
  [Label Control](../../../../docs/framework/winforms/controls/label-control-windows-forms.md)

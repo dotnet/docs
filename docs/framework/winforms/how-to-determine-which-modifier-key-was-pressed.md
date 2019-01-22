@@ -39,7 +39,7 @@ When you create an application that accepts the user's keystrokes, you may also 
      [!code-csharp[System.Windows.Forms.DetermineModifierKey#5](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DetermineModifierKey/CS/form1.cs#5)]
      [!code-vb[System.Windows.Forms.DetermineModifierKey#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DetermineModifierKey/VB/form1.vb#5)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Keys>  
  <xref:System.Windows.Forms.Control.ModifierKeys%2A>  
  [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)  

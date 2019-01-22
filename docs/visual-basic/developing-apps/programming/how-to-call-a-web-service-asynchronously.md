@@ -59,6 +59,6 @@ This example attaches a handler to a Web service's asynchronous handler event, s
   
      To call the `getTemp` Web method asynchronously, call the `CallGetTempAsync` method. When the Web method finishes, its return value is passed to the `getTempCompletedHandler` event handler.  
   
-## See Also  
+## See also
  [Accessing Application Web Services](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)  
  [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)

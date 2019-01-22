@@ -21,5 +21,5 @@ This topic describes the new Identity and Access Tool for Visual Studio 11. You 
   
 -   The tool leverages Windows Azure Access Control Service (ACS) capabilities with a simple list of checkboxes for all the identity providers that you want to use: Facebook, Google, Live ID, Yahoo!, any OpenID provider, and any WS-Federation provider. Select your identity providers, click OK, then F5, and both your application and ACS will be automatically configured and your test application will be ACS-aware.  
   
-## See Also  
+## See also
  [WIF Features](../../../docs/framework/security/wif-features.md)

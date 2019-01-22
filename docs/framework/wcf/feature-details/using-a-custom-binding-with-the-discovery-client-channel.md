@@ -39,7 +39,7 @@ customBinding.Elements.Insert(0, discoveryBindingElement);
   
  For more information about using the discovery client channel, see [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md). 
   
-## See Also  
+## See also
 
 - [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
 - [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)  

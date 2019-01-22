@@ -43,5 +43,5 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
   
  [!code-csharp[DP EntityServices Concepts 2#BETWEEN](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#between)]  
   
-## See Also  
+## See also
  [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

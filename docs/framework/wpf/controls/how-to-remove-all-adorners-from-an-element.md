@@ -23,5 +23,5 @@ This example shows how to programmatically remove all adorners from a specified 
  [!code-csharp[AdornersMiscCode#_RemoveAllAdornersShort](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AdornersMiscCode/CSharp/Window1.xaml.cs#_removealladornersshort)]
  [!code-vb[AdornersMiscCode#_RemoveAllAdornersShort](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/AdornersMiscCode/visualbasic/window1.xaml.vb#_removealladornersshort)]  
   
-## See Also  
+## See also
  [Adorners Overview](../../../../docs/framework/wpf/controls/adorners-overview.md)

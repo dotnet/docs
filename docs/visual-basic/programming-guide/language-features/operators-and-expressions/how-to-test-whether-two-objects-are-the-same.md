@@ -23,5 +23,5 @@ If you have two variables that refer to objects, you can use either the `Is` or 
   
  Whether you use `Is` or `IsNot` is a matter of personal convenience to you. One might be easier to read than the other in a given expression.  
   
-## See Also  
+## See also
  [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)

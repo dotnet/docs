@@ -26,7 +26,7 @@ Specifies that a class cannot be used as a base class.
   
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
   
-## See Also  
+## See also
  [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
  [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

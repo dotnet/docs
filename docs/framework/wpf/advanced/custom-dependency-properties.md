@@ -163,7 +163,7 @@ Dependency properties should be declared as public properties. Dependency proper
 
 There is a general principle in managed code programming (often enforced by code analysis tools such as FxCop) that class constructors should not call virtual methods. This is because constructors can be called as base initialization of a derived class constructor, and entering the virtual method through the constructor might occur at an incomplete initialization state of the object instance being constructed. When you derive from any class that already derives from <xref:System.Windows.DependencyObject>, you should be aware that the property system itself calls and exposes virtual methods internally. These virtual methods are part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system services. Overriding the methods enables derived classes to participate in value determination. To avoid potential issues with runtime initialization, you should not set dependency property values within constructors of classes, unless you follow a very specific constructor pattern. For details, see [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md).
 
-## See Also
+## See also
 
 - [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
 - [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)

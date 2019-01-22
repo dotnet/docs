@@ -19,5 +19,5 @@ The `My.Computer.Info` object provides properties for getting information about 
 |Determine what service packs have been installed on the computer on which the application is running|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion%2A>|  
 |Determine the installed `UICulture` on the computer on which the application is running.|<xref:Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture%2A>|  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>

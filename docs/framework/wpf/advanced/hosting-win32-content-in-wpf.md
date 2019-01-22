@@ -353,5 +353,5 @@ public partial class Window1 : Window {
   
  ![WPF application screen shot](../../../../docs/framework/wpf/advanced/media/interoparch09.PNG "InteropArch09")  
   
-## See Also  
+## See also
  [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)

@@ -46,7 +46,7 @@ ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
   
     2.  Select the relationship (for example, "Customers.CustOrd") between the master and detail tables from the drop-down list in the <xref:System.Windows.Forms.DataGrid.DataMember%2A> property. In order to see the relationship, expand the node by clicking on the plus (**+**) sign next to the master table in the drop-down list.  
   
-## See Also  
+## See also
  [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
  [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
  [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  

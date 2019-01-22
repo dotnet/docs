@@ -134,7 +134,7 @@ You can use a default property mapping and also extend it with your own mapping.
 
 2.  Press F5 to build and run the application.
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>

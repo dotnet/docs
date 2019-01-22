@@ -79,7 +79,7 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
 ### Tag Image File Format (TIFF)  
  TIFF is a flexible and extendable format that is supported by a wide variety of platforms and image-processing applications. TIFF files can store images with an arbitrary number of bits per pixel and can employ a variety of compression algorithms. Several images can be stored in a single, multiple-page TIFF file. Information related to the image (scanner make, host computer, type of compression, orientation, samples per pixel, and so on) can be stored in the file and arranged through the use of tags. The TIFF format can be extended as needed by the approval and addition of new tags.  
   
-## See Also  
+## See also
  <xref:System.Drawing.Image?displayProperty=nameWithType>  
  <xref:System.Drawing.Bitmap?displayProperty=nameWithType>  
  <xref:System.Drawing.Imaging.PixelFormat?displayProperty=nameWithType>  

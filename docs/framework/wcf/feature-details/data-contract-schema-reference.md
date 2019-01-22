@@ -675,7 +675,7 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
 </xs:schema>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.Runtime.Serialization.DataContractAttribute>  
  <xref:System.Runtime.Serialization.DataMemberAttribute>  

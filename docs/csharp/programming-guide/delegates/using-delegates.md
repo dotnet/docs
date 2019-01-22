@@ -59,7 +59,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
  [!code-csharp[csProgGuideDelegates#30](../../../csharp/programming-guide/delegates/codesnippet/CSharp/using-delegates_10.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Delegates](../../../csharp/programming-guide/delegates/index.md)

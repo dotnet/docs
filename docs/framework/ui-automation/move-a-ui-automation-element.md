@@ -26,5 +26,5 @@ ms.author: "mhopkins"
 [!code-csharp[WindowMove#1300](../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowMove/CSharp/WindowMove.cs#1300)]
 [!code-vb[WindowMove#1300](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic/windowmove.vb#1300)]  
   
-## See Also  
+## See also
  [WindowPattern Sample](https://msdn.microsoft.com/library/598b695c-8baf-406e-bbfb-2a1c7842a1de)

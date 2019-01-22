@@ -56,5 +56,5 @@ The following procedures show how to install Message Queuing 4.0 and Message Que
   
 6.  If you are prompted to restart the computer, click **OK** to complete the installation.  
   
-## See Also  
+## See also
  [Set-Up Instructions](../../../../docs/framework/wcf/samples/set-up-instructions.md)

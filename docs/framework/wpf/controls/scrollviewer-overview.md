@@ -54,7 +54,7 @@ Content within a user interface is often larger than a computer screen's display
   
  For additional information about document formats and presentation options, see [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ScrollViewer>  
  <xref:System.Windows.Controls.Primitives.ScrollBar>  
  <xref:System.Windows.Controls.Primitives.IScrollInfo>  

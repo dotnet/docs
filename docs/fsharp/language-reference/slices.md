@@ -6,9 +6,11 @@ ms.date: 01/22/2019
 
 # Slices
 
-In F#, a slice is a subset of a data type. To be able to take a slice from a data type, some implementation of the `GetSlice` method must be implemented either in the data type or in a [type extension](type-extensions.md) that is in scope. This article will explain how to take slices from existing F# types and how to define your own.
+In F#, a slice is a subset of a data type. To be able to take a slice from a data type, the data type must either define a `GetSlice` method or in a [type extension](type-extensions.md) that is in scope. This article explains how to take slices from existing F# types and how to define your own.
 
 Slices are similar to [indexers](members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
+
+F# currently has intrinsic support for slicing strings, lists, arrays, and 2D arrays.
 
 ## Basic slicing with F# lists and arrays
 
@@ -31,7 +33,7 @@ let unboundedEnd = fullList.[94..]
 printfn "Unbounded end slice: %A" unboundedEnd
 ```
 
-Slicing arrays is also identical:
+Slicing arrays is just like slicing lists:
 
 ```fsharp
 // Generate an array of 100 integers
@@ -52,7 +54,7 @@ printfn "Unbounded end slice: %A" unboundedEnd
 
 ## Slicing multidimensional arrays
 
-F# supports multidimensional arrays in the F# core library. As with one-dimensional arrays, they can be useful to slices of. However, the introduction of additional dimensions mandates a slightly different syntax so that you can take slices of specific rows and columns.
+F# supports multidimensional arrays in the F# core library. As with one-dimensional arrays, slices of multidimensional arrays can also be useful. However, the introduction of additional dimensions mandates a slightly different syntax so that you can take slices of specific rows and columns.
 
 The following examples demonstrate how to slice a 2D array:
 
@@ -82,21 +84,18 @@ let twoByTwo = A.[0..1,0..1]
 printfn "%A" twobyTwo
 ```
 
-The F# core library does not define `GetSlice`for 3D arrays. If you wish to slice those or other arrays of higher dimensions, you must define the `GetSlice` member yourself.
+The F# core library does not define `GetSlice`for 3D arrays. If you wish to slice those or other arrays of more dimensions, you must define the `GetSlice` member yourself.
 
 ## Defining slices for other data structures
 
 The F# core library defines slices for a limited set of types. If you wish to define slices for more data types, you can do so either in the type definition itself or in a type extension.
 
-For example, here's how you might define slices and and indexed property for the `ArraySegment` class to allow for convenient data manipulation:
+For example, here's how you might define slices for the <xref:System.ArraySegment`1> class to allow for convenient data manipulation:
 
 ```fsharp
 open System
 
 type ArraySegment<'TItem> with
-    member segment.Item(index) =
-        segment.Array.[segment.Offset + index]
-
     member segment.GetSlice(?start, ?finish) =
         let start = defaultArg start 0
         let finish = defaultArg finish segment.Count
@@ -108,7 +107,7 @@ let slice = arr.[2..5] //[ 3; 4; 5]
 
 ### Use inlining to avoid boxing if it is necessary
 
-If you are defining slices for a type that is actually a struct, it is recommend that you `inline` the `GetSlice` member. The F# compiler will optimize away the optional arguments, avoiding any heap allocations as a result of slicing. This is critically important for slicing constructs such as `Span<T>` that cannot be be allocated on the heap.
+If you are defining slices for a type that is actually a struct, we recommend that you `inline` the `GetSlice` member. The F# compiler optimizes away the optional arguments, avoiding any heap allocations as a result of slicing. This is critically important for slicing constructs such as <xref:System.Span`1> that cannot be be allocated on the heap.
 
 ```fsharp
 open System

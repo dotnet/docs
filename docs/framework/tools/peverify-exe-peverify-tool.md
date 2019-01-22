@@ -114,7 +114,7 @@ peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp
 0xABCD1234  
 ```  
   
-## See Also  
+## See also
  [Tools](../../../docs/framework/tools/index.md)  
  [Writing Verifiably Type-Safe Code](../../../docs/framework/misc/code-access-security-basics.md#typesafe_code)  
  [Type Safety and Security](../../../docs/standard/security/key-security-concepts.md#type-safety-and-security)  

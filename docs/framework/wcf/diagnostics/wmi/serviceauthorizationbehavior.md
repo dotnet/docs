@@ -58,5 +58,5 @@ class ServiceAuthorizationBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>

@@ -21,6 +21,6 @@ You do not have to implement any custom logic to support reference equality comp
   
  Constant strings within the same assembly are always interned by the runtime. That is, only one instance of each unique literal string is maintained. However, the runtime does not guarantee that strings created at runtime are interned, nor does it guarantee that two equal constant strings in different assemblies are interned.  
   
-## See Also
+## See also
 
 - [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)

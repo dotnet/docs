@@ -55,7 +55,7 @@ Specifies that a property or procedure overrides an identically named property o
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
  [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
  [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  

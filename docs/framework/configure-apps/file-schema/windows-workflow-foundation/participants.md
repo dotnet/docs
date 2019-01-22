@@ -80,7 +80,7 @@ Configure a list of tracking participants that listen to the tracking records be
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>  
  <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
  <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>  

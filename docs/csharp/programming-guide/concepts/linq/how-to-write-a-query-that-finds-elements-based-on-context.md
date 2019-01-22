@@ -92,7 +92,7 @@ id = 3
 id = 6  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Xml.Linq.XElement.Parse%2A>  
 - <xref:System.Xml.Linq.XContainer.Descendants%2A>  

@@ -14,5 +14,5 @@ You tried to set or change a property whose value can only be set at design time
   
 2.  Change the reference to only return the value of the property at run time.  
   
-## See Also  
+## See also
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

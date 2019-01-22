@@ -37,7 +37,7 @@ In data binding, the binding source object refers to the object you obtain your 
 |<xref:System.Windows.Data.Binding.RelativeSource%2A>|This is useful when you want to specify the source relative to where your binding target is. Some common scenarios where you may use this property is when you want to bind one property of your element to another property of the same element or if you are defining a binding in a style or a template. For more information, see <xref:System.Windows.Data.Binding.RelativeSource%2A>.|  
 |<xref:System.Windows.Data.Binding.ElementName%2A>|You specify a string that represents the element you want to bind to. This is useful when you want to bind to the property of another element on your application. For example, if you want to use a <xref:System.Windows.Controls.Slider> to control the height of another control in your application, or if you want to bind the <xref:System.Windows.Controls.ContentControl.Content%2A> of your control to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> property of your <xref:System.Windows.Controls.ListBox> control. For more information, see <xref:System.Windows.Data.Binding.ElementName%2A>.|  
   
-## See Also  
+## See also
  <xref:System.Windows.FrameworkElement.DataContext%2A?displayProperty=nameWithType>  
  <xref:System.Windows.FrameworkContentElement.DataContext%2A?displayProperty=nameWithType>  
  [Property Value Inheritance](../../../../docs/framework/wpf/advanced/property-value-inheritance.md)  

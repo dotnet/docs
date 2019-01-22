@@ -27,7 +27,7 @@ The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been
   
  The lifetime of the new asynchronous socket operation context object is determined by references in the application code and asynchronous I/O references. It is not necessary for the application to retain a reference to an asynchronous socket operation context object after it is submitted as a parameter to one of the asynchronous socket operation methods. It will remain referenced until the completion callback returns. However it is advantageous for the application to retain the reference to the context object so that it can be reused for a future asynchronous socket operation.  
   
-## See Also  
+## See also
  <xref:System.Net.Sockets.Socket?displayProperty=nameWithType>  
  <xref:System.Net.Sockets.SendPacketsElement?displayProperty=nameWithType>  
  <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType>  

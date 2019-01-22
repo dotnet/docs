@@ -57,7 +57,7 @@ void __stdcall FunctionEnter (
   
  **.NET Framework Versions:** 1.1, 1.0  
   
-## See Also  
+## See also
  [FunctionEnter2 Function](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)  
  [FunctionLeave2 Function](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)  
  [FunctionTailcall2 Function](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md)  

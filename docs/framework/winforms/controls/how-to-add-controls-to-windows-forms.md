@@ -83,7 +83,7 @@ Most forms are designed by adding controls to the surface of the form to define 
     > [!IMPORTANT]
     >  You might expose your local computer to a security risk through the network by referencing a malicious `UserControl`. This would only be a concern in the case of a malicious person creating a damaging custom control, followed by you mistakenly adding it to your project.  
   
-## See Also  
+## See also
  [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
  [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)  
  [How to: Resize Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-resize-controls-on-windows-forms.md)  

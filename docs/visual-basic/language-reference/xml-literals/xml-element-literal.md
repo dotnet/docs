@@ -153,7 +153,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
  Notice that the compiler converted the prefix of the global XML namespace into a prefix definition for the XML namespace. The \<ns:middle> element redefines the XML namespace prefix for the \<ns:inner1> element. However, the \<ns:inner2> element uses the namespace defined by the `Imports` statement.  
   
-## See Also  
+## See also
  <xref:System.Xml.Linq.XElement>  
  [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
  [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)  

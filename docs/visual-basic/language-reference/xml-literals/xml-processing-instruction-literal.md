@@ -54,7 +54,7 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
   
  [!code-vb[VbXMLSamples#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-processing-instruction-literal_1.vb)]  
   
-## See Also  
+## See also
  <xref:System.Xml.Linq.XProcessingInstruction>  
  [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
  [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  

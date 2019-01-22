@@ -92,7 +92,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
  For more information about these base classes, see [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md).  
   
-## See Also  
+## See also
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Controls by Category](../../../../docs/framework/wpf/controls/controls-by-category.md)  
  [Control Library](../../../../docs/framework/wpf/controls/control-library.md)  

@@ -100,5 +100,5 @@ Often, users want to choose a printer other than the default printer to print to
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
+## See also
  [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

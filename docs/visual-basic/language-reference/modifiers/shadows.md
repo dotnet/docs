@@ -62,7 +62,7 @@ Specifies that a declared programming element redeclares and hides an identicall
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
  [Static](../../../visual-basic/language-reference/modifiers/static.md)  
  [Private](../../../visual-basic/language-reference/modifiers/private.md)  

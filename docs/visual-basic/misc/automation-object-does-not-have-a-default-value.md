@@ -12,6 +12,6 @@ Visual Basic cannot determine the default member for the specified object.
   
 -   Check the object's documentation and give an explicit specification for the property or method.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
 

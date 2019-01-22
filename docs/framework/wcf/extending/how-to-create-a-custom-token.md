@@ -144,7 +144,7 @@ This topic shows how to create a custom security token using the <xref:System.Id
   
  This topic shows the various pieces of code necessary to implement and use a custom token. To see a complete example of how all these pieces of code fit together see, [Custom Token](../../../../docs/framework/wcf/samples/custom-token.md).  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Tokens.SecurityToken>  
  <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters>  
  <xref:System.ServiceModel.Security.WSSecurityTokenSerializer>  

@@ -47,7 +47,7 @@ Displaying the Lindsey font
 ## Using the Fonts  
  There are two ways that you can use fonts in your application. You can add fonts to your application as project content items that are not embedded as resources within an assembly. Alternatively, you can add fonts to your application as project resource items that are embedded within the application's assembly files. For more information, see [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Documents.Typography>  
  [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
  [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)

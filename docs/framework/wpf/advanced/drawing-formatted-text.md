@@ -117,7 +117,7 @@ Video displaying in the path geometry of text
 |DT_WORDBREAK|None|Not required. Word breaking happens automatically with <xref:System.Windows.Media.FormattedText> objects. You cannot disable it.|  
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.WordEllipsis>.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.FormattedText>  
  [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
  [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  

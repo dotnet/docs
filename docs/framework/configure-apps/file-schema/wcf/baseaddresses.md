@@ -41,7 +41,7 @@ Represents a collection of `baseAddress` elements, which are base addresses for 
 |-------------|-----------------|  
 |[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|A configuration element that specifies settings for a service host.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.HostElement>  
  <xref:System.ServiceModel.ServiceHost>  
  <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>  

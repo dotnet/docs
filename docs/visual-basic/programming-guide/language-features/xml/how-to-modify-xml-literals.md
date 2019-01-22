@@ -259,7 +259,7 @@ Visual Basic provides convenient ways to modify XML literals. You can add or del
     </Catalog>  
     ```  
   
-## See Also  
+## See also
  [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)  
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
  [How to: Load XML from a File, String, or Stream](../../../../visual-basic/programming-guide/language-features/xml/how-to-load-xml-from-a-file-string-or-stream.md)  

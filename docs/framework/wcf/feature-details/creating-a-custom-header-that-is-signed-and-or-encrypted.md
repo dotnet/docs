@@ -50,7 +50,7 @@ public  class MyMessageContract
 }  
 ```  
   
-## See Also  
+## See also
  [Default Message Contract](../../../../docs/framework/wcf/samples/default-message-contract.md)  
  [Message Contracts](../../../../docs/framework/wcf/samples/message-contracts.md)  
  [Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md)

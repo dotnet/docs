@@ -62,7 +62,7 @@ Specifies the security settings of a local client for this binding.
 ## Remarks  
  The settings are local in the sense that they are not settings derived from the security policy of the service.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>  
  <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings%2A>  
  <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalClientSettings%2A>  

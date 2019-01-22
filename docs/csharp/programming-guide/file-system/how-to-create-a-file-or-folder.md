@@ -62,7 +62,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
  If you don’t have permission to create the folder, the example throws an instance of the <xref:System.UnauthorizedAccessException> class.  
   
-## See Also
+## See also
 
 - <xref:System.IO?displayProperty=nameWithType>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

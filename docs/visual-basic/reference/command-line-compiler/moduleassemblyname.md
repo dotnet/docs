@@ -36,7 +36,7 @@ Specifies the name of the assembly that this module will be a part of.
 > [!NOTE]
 >  The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
-## See Also  
+## See also
  [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)  
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  

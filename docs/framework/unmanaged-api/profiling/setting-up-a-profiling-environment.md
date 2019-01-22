@@ -89,5 +89,5 @@ pInfo->SetEventMask(COR_PRF_MONITOR_ENTERLEAVE | COR_PRF_MONITOR_GC)
   
  This technique also leads to every CLR process getting profiled. The profiler should add logic to its [ICorProfilerCallback::Initialize](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md) callback to detect whether the current process is of interest. If it is not, the profiler can fail the callback without performing the initialization.  
   
-## See Also  
+## See also
  [Profiling Overview](../../../../docs/framework/unmanaged-api/profiling/profiling-overview.md)

@@ -47,7 +47,7 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:CSharp  
     ```  
   
-## See Also  
+## See also
  [Modeling and Mapping](../../../../../docs/framework/data/adonet/ef/modeling-and-mapping.md)  
  [How to: Manually Configure an Entity Framework Project](https://msdn.microsoft.com/library/73f6ae1d-b3b2-4577-aebd-ad5a75954e9e)  
  [How to: Pre-Generate Views to Improve Query Performance](https://msdn.microsoft.com/library/b18a9d16-e10b-4043-ba91-b632f85a2579)  

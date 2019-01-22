@@ -61,7 +61,7 @@ When you create a service, you can use a Visual Studio project template called *
   
 8.  Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
-## See Also  
+## See also
  [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
  [How to: Write Services Programmatically](../../../docs/framework/windows-services/how-to-write-services-programmatically.md)  
  [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)  

@@ -16,5 +16,5 @@ ms.assetid: 993868ca-16e3-47b6-9915-c29cd63b0a21
 |`BitWiseOr (` `value1` `,`  `value2` `)`|Returns the bitwise disjunction of `value1` and `value2` as the type of `value1` and `value2`.<br /><br /> **Arguments**<br /><br /> A `Byte`, `Int16`, `Int32` and `Int64`.<br /><br /> **Example**<br /><br /> `-- The following example returns 3.`<br /><br /> `BitWiseOr(1,3)`|  
 |`BitWiseXor (` `value1` `,`  `value2` `)`|Returns the bitwise exclusive disjunction of `value1` and `value2` as the type of `value1` and `value2`.<br /><br /> **Arguments**<br /><br /> A `Byte`, `Int16`, `Int32` and `Int64`.<br /><br /> **Example**<br /><br /> `-- The following example returns 2.`<br /><br /> `BitWiseXor (1,3)`|  
   
-## See Also  
+## See also
  [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)

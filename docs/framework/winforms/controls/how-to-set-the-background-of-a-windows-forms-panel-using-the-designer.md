@@ -30,7 +30,7 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
   
 6.  In the **Open** dialog box, select the file that you want to display.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Control.BackColor%2A>  
  <xref:System.Windows.Forms.Control.BackgroundImage%2A>  
  [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)  

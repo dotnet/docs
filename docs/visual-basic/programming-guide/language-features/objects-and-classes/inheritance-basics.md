@@ -136,6 +136,6 @@ End Class
   
  Even though `derivedClass` overrides `testMethod`, the `MyClass` keyword in `useMyClass` nullifies the effects of overriding, and the compiler resolves the call to the base class version of `testMethod`.  
   
-## See Also  
+## See also
  [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md)  
  [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

@@ -9,7 +9,7 @@ System.ServiceModel.ServiceHostTimeoutOnClose
 ## Description  
  The close operation of a ServiceHost is timed out. This indicates that some sessionful channels were not properly shutdown by the client and could have been aborted. Modify the default time to adjust close timeout.  
   
-## See Also  
+## See also
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

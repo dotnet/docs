@@ -391,7 +391,7 @@ When developing a Windows Communication Foundation (WCF) syndication service, yo
   
  `</content>`  
   
-## See Also  
+## See also
  [WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md)  
  [Architecture of Syndication](../../../../docs/framework/wcf/feature-details/architecture-of-syndication.md)  
  [How to: Create a Basic RSS Feed](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-rss-feed.md)  

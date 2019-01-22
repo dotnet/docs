@@ -54,7 +54,7 @@ For a client to successfully send data of a certain type to a service, or a serv
   
  When passing parameters and return values between applications, if the expected type is an interface, it is equivalent to the expected type being of type <xref:System.Object>. Because every type ultimately derives from <xref:System.Object>, every data contract ultimately derives from the data contract for <xref:System.Object>. Thus, any data contract type can be passed when an interface is expected. Additional steps are required to successfully work with interfaces; for more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractAttribute>  
  <xref:System.Runtime.Serialization.DataMemberAttribute>  
  [Data Member Order](../../../../docs/framework/wcf/feature-details/data-member-order.md)  

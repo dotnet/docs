@@ -115,7 +115,7 @@ The .NET Framework, through configuration files, gives developers and administra
  [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
  Describes the schema hierarchy for startup, runtime, network, and other types of configuration settings.  
   
-## See Also  
+## See also
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

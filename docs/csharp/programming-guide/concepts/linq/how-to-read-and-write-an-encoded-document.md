@@ -70,7 +70,7 @@ Encoded document:
 Encoding of loaded document is:utf-16  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Xml.Linq.XDeclaration.Encoding%2A?displayProperty=nameWithType>  
 - [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

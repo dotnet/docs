@@ -42,5 +42,5 @@ justAdded.Properties["DisplayName"].SetValue("new name");
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ProgrammingModelItemTree`  
   
-## See Also  
+## See also
  <xref:System.Windows.Data.IValueConverter>

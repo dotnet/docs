@@ -49,7 +49,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  For more information about value types and reference types, see [Types](../../../csharp/language-reference/keywords/types.md).  
   
-## See Also
+## See also
 
 - <xref:System.Array>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

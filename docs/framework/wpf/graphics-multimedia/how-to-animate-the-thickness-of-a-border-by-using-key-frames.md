@@ -23,7 +23,7 @@ This example shows how to animate the <xref:System.Windows.Controls.Control.Bord
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame>  
  <xref:System.Windows.Media.Animation.DiscreteThicknessKeyFrame>  
  <xref:System.Windows.Media.Animation.SplineThicknessKeyFrame>  

@@ -23,7 +23,7 @@ Windows Forms <xref:System.Windows.Forms.Panel> controls are used to group other
   
 3.  (Optional) If you want to add a border to a panel, set its <xref:System.Windows.Forms.BorderStyle> property. There are three choices: <xref:System.Windows.Forms.BorderStyle.Fixed3D>, <xref:System.Windows.Forms.BorderStyle.FixedSingle>, and <xref:System.Windows.Forms.BorderStyle.None>.  
   
-## See Also  
+## See also
  [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)  
  [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
  [How to: Set the Background of a Panel](../../../../docs/framework/winforms/controls/how-to-set-the-background-of-a-windows-forms-panel.md)

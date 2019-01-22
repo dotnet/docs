@@ -49,7 +49,7 @@ cert2spc myCertificate.cer mySPCFile.spc
 cert2spc oneCertificate.cer twoCertificate.cer mySPCFile.spc  
 ```  
   
-## See Also  
+## See also
  [Tools](../../../docs/framework/tools/index.md)  
  [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

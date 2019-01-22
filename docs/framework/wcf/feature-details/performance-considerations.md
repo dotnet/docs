@@ -13,6 +13,6 @@ Performance considerations are always important when building applications. This
  [Encryption of Digital Signatures](../../../../docs/framework/wcf/feature-details/encryption-of-digital-signatures.md)  
  Describes how encrypting the digital signature can add a performance penalty and how to disable it.  
   
-## See Also  
+## See also
  [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)  
  [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)

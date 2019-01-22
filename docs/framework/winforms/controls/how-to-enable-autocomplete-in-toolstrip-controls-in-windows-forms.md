@@ -83,7 +83,7 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStrip>  
  <xref:System.Windows.Forms.ToolStripLabel>  
  <xref:System.Windows.Forms.ToolStripComboBox>  

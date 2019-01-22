@@ -76,7 +76,7 @@ End Select
   
  [!code-vb[VbVbalrStatements#54](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/select-case-statement_1.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Interaction.Choose%2A>  
  [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
  [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  

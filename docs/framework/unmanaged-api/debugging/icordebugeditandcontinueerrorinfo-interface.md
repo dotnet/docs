@@ -20,5 +20,5 @@ ms.author: "ronpet"
 # ICorDebugEditAndContinueErrorInfo Interface
 `ICorDebugEditAndContinueErrorInfo` is obsolete. Do not use this interface.  
   
-## See Also  
+## See also
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

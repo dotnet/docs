@@ -123,7 +123,7 @@ A data service can expose large object binary data. This binary data might repre
   
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
-## See Also  
+## See also
  [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
  [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)  
  [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md)

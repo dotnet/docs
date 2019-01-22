@@ -19,5 +19,5 @@ The topics in this section cover the client architecture, how to access a Window
  [Securing Clients](../../../../docs/framework/wcf/securing-clients.md)  
  Describes some security considerations for WCF clients.  
   
-## See Also  
+## See also
  [Client Samples](https://msdn.microsoft.com/library/849fc452-8718-4d4e-ba57-905eed943f63)

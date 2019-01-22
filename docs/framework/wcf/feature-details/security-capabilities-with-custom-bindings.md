@@ -44,7 +44,7 @@ You can perform most common security tasks by using one of the system-provided b
   
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
   
-## See Also  
+## See also
  [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)

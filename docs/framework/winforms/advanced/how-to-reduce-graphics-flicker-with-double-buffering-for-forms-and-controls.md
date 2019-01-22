@@ -28,7 +28,7 @@ Double buffering uses a memory buffer to address the flicker problems associated
      [!code-csharp[System.Windows.Forms.LegacyBufferedGraphics#32](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/CS/Class1.cs#32)]
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#32](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#32)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Control.DoubleBuffered%2A>  
  <xref:System.Windows.Forms.Control.SetStyle%2A>  
  [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)  

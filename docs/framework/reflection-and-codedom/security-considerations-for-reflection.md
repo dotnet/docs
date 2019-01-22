@@ -98,7 +98,7 @@ Reflection provides the ability to obtain information about types and members, a
   
 -   Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag is required.  
   
-## See Also  
+## See also
  <xref:System.Security.Permissions.ReflectionPermissionFlag>  
  <xref:System.Security.Permissions.ReflectionPermission>  
  <xref:System.Security.Permissions.SecurityPermission>  

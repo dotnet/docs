@@ -49,7 +49,7 @@ A constant is a meaningful name that takes the place of a number or string that 
   
  If a cycle occurs, Visual Basic generates a compiler error.  
   
-## See Also  
+## See also
  [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
  [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)  
  [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  

@@ -49,5 +49,5 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
  [WF Guidance: Workflow Services](https://go.microsoft.com/fwlink/?LinkId=275564)  
  Provides example-oriented step-by-step instructions for redesigning workflows that implement Windows Communication Foundation (WCF) web services (commonly referred to as workflow services) created in WF3 to use WF4, for common scenarios for out-of-box activities.  
   
-## See Also  
+## See also
  <xref:System.Activities.Statements.Interop>

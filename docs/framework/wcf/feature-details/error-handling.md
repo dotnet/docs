@@ -61,5 +61,5 @@ ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
   
  A type conversion dispatch failure can be inspected the same as with many other types of dispatch failures by installing an error handler. The IErrorHandler extensibility point is called to handle service-level exceptions. From there, the response to be sent back to the caller – as well as perform any custom tasks and reporting – may be chosen.  
   
-## See Also  
+## See also
  [Basic WCF Programming](../basic-wcf-programming.md)

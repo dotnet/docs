@@ -119,7 +119,7 @@ bool SomeMethod();
 void SomeMethod(out bool x);  
 ```  
   
-## See Also  
+## See also
  [Tools](index.md)  
  [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)  
  [Importing a Type Library as an Assembly](../interop/importing-a-type-library-as-an-assembly.md)  

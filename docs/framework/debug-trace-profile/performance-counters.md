@@ -245,6 +245,6 @@ for (int i = 0; i < Array.Length; i++)
 |**Stack Walk Depth**|Displays the depth of the stack during that last runtime code access security check. Runtime code access security checks are performed by walking the stack. This counter is not an average; it displays only the last observed value.|  
 |**Total Runtime Checks**|Displays the total number of runtime code access security checks performed since the application started. Runtime code access security checks are performed when a caller demands a particular permission. The runtime check is made on every call by the caller and examines the current thread stack of the caller. When used with the **Stack Walk Depth** counter, this counter indicates the performance penalty that occurs for security checks.|  
   
-## See Also  
+## See also
 - [Performance Counters](../../../docs/framework/debug-trace-profile/performance-counters.md)
 - [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md)

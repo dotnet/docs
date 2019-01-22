@@ -171,5 +171,5 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
   
 -   <xref:System.Windows.Controls.InkPresenter>  
   
-## See Also  
+## See also
  [Control Library](../../../../docs/framework/wpf/controls/control-library.md)

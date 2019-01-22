@@ -70,6 +70,6 @@ End Sub
  [!code-csharp[CDS#13](../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/cds2.cs#13)]
  [!code-vb[CDS#13](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/lazyhowto.vb#13)]  
   
-## See Also  
+## See also
  <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>  
  [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md)

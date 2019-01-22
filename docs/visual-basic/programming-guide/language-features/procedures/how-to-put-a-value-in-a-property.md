@@ -28,7 +28,7 @@ You store a value in a property by putting the property name on the left side of
   
 4.  The value generated on the right side of the assignment statement is stored in the property.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>  
  [Property Procedures](./property-procedures.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  

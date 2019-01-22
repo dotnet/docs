@@ -66,7 +66,7 @@ You can use the <xref:System.ServiceModel.Channels.CustomBinding> class when one
   
  In addition, you can define your own binding elements and insert them between any of the preceding defined layers.  
   
-## See Also  
+## See also
  [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
  [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
  [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  

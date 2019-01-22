@@ -30,7 +30,7 @@ A *replay attack* occurs when an attacker copies a stream of messages between tw
   
 -   Configure the service to use transport-level security.  
   
-## See Also  
+## See also
  [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
  [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
  [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)  

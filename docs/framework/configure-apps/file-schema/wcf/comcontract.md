@@ -82,7 +82,7 @@ Specifies a COM+ integration service contract.
   
  When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ComContractElementCollection>  
  <xref:System.ServiceModel.Configuration.ComContractElementCollection>  
  <xref:System.ServiceModel.Configuration.ComContractElement>  

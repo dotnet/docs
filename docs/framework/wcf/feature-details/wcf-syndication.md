@@ -34,6 +34,6 @@ Windows Communication Foundation (WCF) provides support to easily work with synd
   
 ## Related Sections  
   
-## See Also  
+## See also
  [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
  [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md)

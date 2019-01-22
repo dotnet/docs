@@ -40,7 +40,7 @@ Specifies that one or more declared local variables are to continue to exist and
   
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
-## See Also  
+## See also
  [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
  [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
  [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  

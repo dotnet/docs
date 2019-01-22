@@ -27,5 +27,5 @@ When you query for an object, you actually retrieve only the object you requeste
   
 -   The <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> method, to filter objects retrieved for a particular relationship.  
   
-## See Also  
+## See also
  [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

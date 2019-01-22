@@ -23,7 +23,7 @@ This example shows how to use the positioning methods of the <xref:System.Window
  [!code-csharp[CanvasPositioningProperties#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasPositioningProperties/CSharp/Window1.xaml.cs#2)]
  [!code-vb[CanvasPositioningProperties#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasPositioningProperties/VisualBasic/Window1.xaml.vb#2)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.Canvas>  
  <xref:System.Windows.Controls.ListBoxItem>  
  <xref:System.Windows.LengthConverter>  

@@ -47,7 +47,7 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
   
  The certificate set in this element is used to encrypt messages to the client only for bindings that are configured with `MutualCertificateDuplex` message security authentication mode.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>  
  <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ClientCertificate%2A>  
  <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>  

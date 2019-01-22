@@ -73,7 +73,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
  The `tcpTransport` element is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for WCF-to-WCF communication.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.TcpTransportElement>  
  <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
  <xref:System.ServiceModel.Channels.TransportBindingElement>  

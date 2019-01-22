@@ -226,7 +226,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
-## See Also
+## See also
 
 - [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)  
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)  

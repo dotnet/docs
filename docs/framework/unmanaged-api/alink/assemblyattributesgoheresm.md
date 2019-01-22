@@ -37,7 +37,7 @@ AssemblyAttributeGoHereSM
 ## Requirements  
  mscorlib.dll  
   
-## See Also  
+## See also
  [AssemblyAttributesGoHere](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgohere.md)  
  [AssemblyAttributesGoHereM](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoherem.md)  
  [AssemblyAttributesGoHereS](../../../../docs/framework/unmanaged-api/alink/assemblyattributesgoheres.md)

@@ -21,7 +21,7 @@ The .NET Client Profile is a subset of the .NET Framework, which was provided wi
   
  When you install the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET Framework 4 Client Profile is updated to the full version of the .NET Framework. For information about installing the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
   
-## See Also  
+## See also
 - [.NET Framework Client Profile (.NET Framework 4)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc656912%28v=vs.100%29)
 - [Visual Studio Multi-Targeting Overview](/visualstudio/ide/visual-studio-multi-targeting-overview)
 - [Troubleshooting .NET Framework Targeting Errors](/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)

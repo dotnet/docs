@@ -12,7 +12,7 @@ The specified transaction for the specified operation was completed due to async
 ## Troubleshooting  
  If this abort is unexpected, check all system logs to determine the real reason for the abort.  
   
-## See Also  
+## See also
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

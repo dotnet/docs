@@ -53,7 +53,7 @@ public static void WriteView(DataView thisDataView)
 }  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataRowVersion>  
  <xref:System.Data.DataViewRowState>  
  <xref:System.Data.DataView>  

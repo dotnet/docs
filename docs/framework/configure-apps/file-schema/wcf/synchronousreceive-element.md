@@ -36,6 +36,6 @@ This configuration element is used to specify run-time behavior for receiving me
 ## Remarks  
  Use this behavior to instruct the channel listener to use a synchronous receive rather than the default, asynchronous. Windows Communication Foundation (WCF) issues a new thread to pump for each accepted channel. If there are a lot of channels, there is the possibility of running out of threads.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.SynchronousReceiveElement>  
  <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

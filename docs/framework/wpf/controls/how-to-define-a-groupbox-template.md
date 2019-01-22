@@ -14,6 +14,6 @@ This example shows how to create a template for a <xref:System.Windows.Controls.
   
  [!code-xaml[GroupBoxSnippet#GroupBoxTemplate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GroupBoxSnippet/CS/Window1.xaml#groupboxtemplate)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.GroupBox>  
  [GroupBox How-to Topics](https://msdn.microsoft.com/library/7692e155-a4c6-428c-b7e0-64b3740daca7)

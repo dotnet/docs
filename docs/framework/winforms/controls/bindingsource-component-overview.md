@@ -51,7 +51,7 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
 |<xref:System.Windows.Forms.BindingSource.Sort%2A> property|If the data source is an <xref:System.ComponentModel.IBindingList>, gets or sets a column name used for sorting and sort order information. If the data source is an <xref:System.ComponentModel.IBindingListView> and supports advanced sorting, gets multiple column names used for sorting and sort order information|  
 |<xref:System.Windows.Forms.BindingSource.Filter%2A> property|If the data source is an <xref:System.ComponentModel.IBindingListView>, gets or sets the expression used to filter which rows are viewed.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.BindingSource>  
  <xref:System.Windows.Forms.BindingNavigator>  
  [BindingSource Component Architecture](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)  

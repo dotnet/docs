@@ -22,6 +22,6 @@ The `My` feature makes programming faster and easier by giving you intuitive acc
 |Accessing the current user's security context.|`My.User` (<xref:Microsoft.VisualBasic.ApplicationServices.User>)|  
 |Accessing XML Web services referenced by the current project.|[My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)|  
   
-## See Also  
+## See also
  [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
  [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md)

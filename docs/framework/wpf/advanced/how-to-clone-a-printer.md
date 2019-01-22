@@ -49,7 +49,7 @@ Most businesses will, at some point, buy multiple printers of the same model. Ty
  [!code-csharp[ClonePrinter#ClonePrinter](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
  [!code-vb[ClonePrinter#ClonePrinter](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
   
-## See Also  
+## See also
  <xref:System.Printing.IndexedProperties>  
  <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>  
  <xref:System.Printing.LocalPrintServer>  

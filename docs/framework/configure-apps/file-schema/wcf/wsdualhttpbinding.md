@@ -125,7 +125,7 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSDualHttpBinding>  
  <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  

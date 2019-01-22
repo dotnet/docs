@@ -55,7 +55,7 @@ CType(expression, typename)
   
  For additional examples, see [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md).  
   
-## See Also  
+## See also
  <xref:System.OverflowException>  
  <xref:System.InvalidCastException>  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

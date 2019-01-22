@@ -27,7 +27,7 @@ These examples show various ways to write text to a file. The first two examples
   
 -   The disk may be full.  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)  

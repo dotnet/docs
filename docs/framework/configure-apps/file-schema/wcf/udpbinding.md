@@ -97,7 +97,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 </udpBinding>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.Binding>  
  <xref:System.ServiceModel.Channels.BindingElement>  
  <xref:System.ServiceModel.BasicHttpBinding>  

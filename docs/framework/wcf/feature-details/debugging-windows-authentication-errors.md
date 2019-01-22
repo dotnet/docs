@@ -138,7 +138,7 @@ When using Windows authentication as a security mechanism, the Security Support 
 #### Developing and Deploying with Different Identities  
  If you develop your application on one machine, and deploy on another, and use different account types to authenticate on each machine, you may experience different behavior. For example, suppose you develop your application on a Windows XP Pro machine using the `SSPI Negotiated` authentication mode. If you use a local user account to authenticate with, then NTLM protocol will be used. Once the application is developed, you deploy the service to a Windows Server 2003 machine where it runs under a domain account. At this point the client will not be able to authenticate the service because it will be using Kerberos and a domain controller.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Security.WindowsClientCredential>  
  <xref:System.ServiceModel.Security.WindowsServiceCredential>  
  <xref:System.ServiceModel.Security.WindowsClientCredential>  

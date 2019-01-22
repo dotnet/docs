@@ -35,6 +35,6 @@ Provides the [ResolveTypeLib method](../../../../docs/framework/unmanaged-api/tl
   
  **.NET Framework Version:** 4, 3.5, 3.0, 2.0  
   
-## See Also  
+## See also
  [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
  [LoadTypeLibEx function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

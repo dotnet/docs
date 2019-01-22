@@ -50,7 +50,7 @@ There is no single correct way to create a secure SQL Server client application.
  [Enabling Cross-Database Access in SQL Server](../../../../../docs/framework/data/adonet/sql/enabling-cross-database-access-in-sql-server.md)  
  Describes how to enable cross-database access without jeopardizing security.  
   
-## See Also  
+## See also
  [SQL Server Security](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
  [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  

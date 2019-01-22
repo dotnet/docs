@@ -30,5 +30,5 @@ The Windows Communication Foundation (WCF) provides an infrastructure for export
  [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)  
  Describes important security considerations when dealing with service metadata.  
   
-## See Also  
+## See also
  [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

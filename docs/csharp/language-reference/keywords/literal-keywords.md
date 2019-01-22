@@ -18,7 +18,7 @@ C# has the following literal keywords:
   
 -   [default](../../../csharp/language-reference/keywords/default.md)  
   
-## See Also
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

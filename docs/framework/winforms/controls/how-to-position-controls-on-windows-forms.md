@@ -89,7 +89,7 @@ To position controls, use the Windows Forms Designer, or specify the <xref:Syste
     > [!NOTE]
     >  Use the <xref:System.Windows.Forms.Control.Location%2A> property to set a control's X and Y positions simultaneously. To set a position individually, use the control's <xref:System.Windows.Forms.Control.Left%2A> (**X**) or <xref:System.Windows.Forms.Control.Top%2A> (**Y**) subproperty. Do not try to implicitly set the X and Y coordinates of the <xref:System.Drawing.Point> structure that represents the button's location, because this structure contains a copy of the button's coordinates.  
   
-## See Also  
+## See also
  [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  

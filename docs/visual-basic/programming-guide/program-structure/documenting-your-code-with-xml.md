@@ -40,6 +40,6 @@ In Visual Basic, you can document your code using XML
   
 -   [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
   
-## See Also  
+## See also
  [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)  
  [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)

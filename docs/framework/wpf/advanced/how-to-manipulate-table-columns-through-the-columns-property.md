@@ -59,7 +59,7 @@ This example demonstrates some of the more common operations that can be perform
  [!code-csharp[TableSnippets2#_Table_Columns_Clear](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_columns_clear)]
  [!code-vb[TableSnippets2#_Table_Columns_Clear](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_columns_clear)]  
   
-## See Also  
+## See also
  [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)  
  [Define a Table with XAML](../../../../docs/framework/wpf/advanced/how-to-define-a-table-with-xaml.md)  
  [Build a Table Programmatically](../../../../docs/framework/wpf/advanced/how-to-build-a-table-programmatically.md)  

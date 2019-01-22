@@ -49,6 +49,6 @@ The following code example makes the splitter that divides the <xref:System.Wind
     }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.SplitContainer>  
  [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)

@@ -128,6 +128,6 @@ I still need some more information...
 
  Describes how to use client libraries to consume OData feeds from a .NET Framework client application.
 
-## See Also
+## See also
 
 - [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)

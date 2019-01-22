@@ -12,7 +12,7 @@ Parameter arrays must be passed by value.
   
 1.  Pass the arguments `ByVal`, rather than by naming them.  
   
-## See Also  
+## See also
  [Parameter Arrays](../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
  [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)  
  [Passing Arguments by Position and by Name](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)

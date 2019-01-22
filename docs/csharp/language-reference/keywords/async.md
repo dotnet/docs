@@ -78,7 +78,7 @@ Starting with C# 7.0, you return another type, typically a value type, that has 
 
 For more information and examples, see [Async Return Types](../../../csharp/programming-guide/concepts/async/async-return-types.md).  
   
-## See Also
+## See also
 
 - <xref:System.Runtime.CompilerServices.AsyncStateMachineAttribute>  
 - [await](../../../csharp/language-reference/keywords/await.md)  

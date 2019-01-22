@@ -22,5 +22,5 @@ Visual Basic enables you to use *XML literals* directly in your code. The XML li
 |[How to: Embed Expressions in XML Literals](../../../../visual-basic/programming-guide/language-features/xml/how-to-embed-expressions-in-xml-literals.md)|Describes how to use embedded expressions in XML literals to create content at run time.|  
 |[Names of Declared XML Elements and Attributes](../../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)|Describes guidelines for naming XML elements and attributes.|  
   
-## See Also  
+## See also
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

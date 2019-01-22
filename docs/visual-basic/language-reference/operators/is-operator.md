@@ -44,7 +44,7 @@ result = object1 Is object2
   
  As the preceding example demonstrates, you can use the `Is` operator to test both early bound and late bound objects.  
   
-## See Also  
+## See also
  [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
  [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
  [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  

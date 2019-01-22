@@ -17,7 +17,7 @@ The `Protected Friend` keyword combination is a member access modifier. It confe
 - **Declaration Context.** You can use `Protected Friend` only at the class level. This means the declaration context for a `Protected` element must be a class, and cannot be a source file, namespace, interface, module, structure, or procedure. 
 
 
-## See Also
+## See also
 
 [Public](../../../visual-basic/language-reference/modifiers/public.md)  
 [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  

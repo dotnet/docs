@@ -72,7 +72,7 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Security.Cryptography>  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
 - [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  

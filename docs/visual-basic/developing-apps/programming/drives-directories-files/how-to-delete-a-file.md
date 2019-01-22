@@ -52,7 +52,7 @@ The `DeleteFile` method of the `My.Computer.FileSystem` object allows you to del
   
 -   The user cancelled the operation and `onUserCancel` is set to `ThrowException` (<xref:System.OperationCanceledException>).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.UICancelOption>  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  <xref:Microsoft.VisualBasic.FileIO.UIOption>  

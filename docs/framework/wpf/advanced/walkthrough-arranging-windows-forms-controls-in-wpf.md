@@ -252,7 +252,7 @@ You need Visual Studio to complete this walkthrough.
   
 4.  Press F5 to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element fills the <xref:System.Windows.Controls.DockPanel>, and <xref:System.Windows.Forms.FlowLayoutPanel> arranges its child controls in the default <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A>.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  

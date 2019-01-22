@@ -35,7 +35,7 @@ You can make your control align to the edge of your forms by setting the <xref:S
   
 4.  Your control will now dock in the manner specified by the setting.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.Control.Anchor%2A?displayProperty=nameWithType>  
  [How to: Align a Control to the Edges of Forms](../../../../docs/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms.md)  

@@ -50,6 +50,6 @@ ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
   
  ![Nested Containers](../../../../docs/framework/winforms/advanced/media/nestedcontainers3.png "nestedcontainers3")  
   
-## See Also  
+## See also
  <xref:System.Drawing.Graphics>  
  [Managing the State of a Graphics Object](../../../../docs/framework/winforms/advanced/managing-the-state-of-a-graphics-object.md)

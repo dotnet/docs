@@ -70,6 +70,6 @@ Provides a set of regular expressions that describe addresses that do not use a 
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>  
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -53,7 +53,7 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../d
 ## Remarks  
  A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it only connects to services it trusts.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSDualHttpSecurity>  
  <xref:System.ServiceModel.BasicHttpSecurity>  
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  

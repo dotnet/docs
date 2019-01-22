@@ -93,7 +93,7 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
 ## Security  
  Because the WCF WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the WCF WEB HTTP  Programming Model is to expose your service using SSL. For more information about setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WebHttpBinding>  
  <xref:System.ServiceModel.Web.WebGetAttribute>  
  <xref:System.ServiceModel.Web.WebInvokeAttribute>  

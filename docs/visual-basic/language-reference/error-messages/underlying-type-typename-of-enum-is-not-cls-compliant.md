@@ -35,7 +35,7 @@ The data type specified for this enumeration is not part of the [Language Indepe
   
 -   If you are interfacing with Automation or COM objects, keep in mind that some types have different data widths than in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For example, `uint` is often 16 bits in other environments. If you are passing a 16-bit argument to such a component, declare it as `UShort` instead of `UInteger` in your managed Visual Basic code.  
   
-## See Also  
+## See also
  [Reflection (Visual Basic)](../../programming-guide/concepts/reflection.md)  
  [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
  

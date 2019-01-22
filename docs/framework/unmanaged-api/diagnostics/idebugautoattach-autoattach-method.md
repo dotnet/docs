@@ -56,5 +56,5 @@ HRESULT AutoAttach
 ## Requirements  
  **Header:** DbgAutoAttach.h  
   
-## See Also  
+## See also
  [IDebugAutoAttach Interface](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)

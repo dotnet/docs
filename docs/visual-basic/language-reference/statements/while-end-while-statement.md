@@ -75,7 +75,7 @@ End While
   
  [!code-vb[VbVbalrStatements#173](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/while-end-while-statement_3.vb)]  
   
-## See Also  
+## See also
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  

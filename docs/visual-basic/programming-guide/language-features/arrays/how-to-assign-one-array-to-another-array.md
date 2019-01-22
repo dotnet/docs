@@ -36,7 +36,7 @@ Because arrays are objects, you can use them in assignment statements like other
   
  The compiler reports an error if the above rules are violated, for example if the data types are not compatible or the ranks are unequal. You can add error handling to your code to make sure that the arrays are compatible before attempting an assignment. You can also use the [TryCast Operator](../../../../visual-basic/language-reference/operators/trycast-operator.md) keyword if you want to avoid throwing an exception.  
   
-## See Also  
+## See also
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)  
  [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  

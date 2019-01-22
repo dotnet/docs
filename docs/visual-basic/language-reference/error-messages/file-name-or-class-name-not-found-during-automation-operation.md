@@ -12,5 +12,5 @@ The name specified for file name or class in a call to the `GetObject` function 
   
 -   Check the names and try again. Make sure the name used for the `class` parameter matches that registered with the system.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

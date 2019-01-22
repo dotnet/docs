@@ -72,5 +72,5 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)

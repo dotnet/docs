@@ -132,7 +132,7 @@ Pruning a visual tree
  [!code-csharp[HitTestingOverview#108](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#108)]
  [!code-vb[HitTestingOverview#108](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#108)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>  
  <xref:System.Windows.Media.HitTestResult>  
  <xref:System.Windows.Media.HitTestResultCallback>  

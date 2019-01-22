@@ -23,6 +23,6 @@ This example shows how to use the scrolling methods of the <xref:System.Windows.
  [!code-csharp[ScrollViewerMethods#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewerMethods/CSharp/Window1.xaml.cs#2)]
  [!code-vb[ScrollViewerMethods#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ScrollViewerMethods/VisualBasic/Window1.xaml.vb#2)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ScrollViewer>  
  <xref:System.Windows.Controls.StackPanel>

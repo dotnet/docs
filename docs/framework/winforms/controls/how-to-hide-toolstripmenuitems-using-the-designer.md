@@ -28,7 +28,7 @@ Hiding menu items is a way to control the user interface (UI) of your applicatio
   
      When you hide a submenu item, it remains visible on your form at design time so that you can easily select it for further work. It will actually be hidden at run time.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStripItem.Visible%2A>  
  <xref:System.Windows.Forms.MenuStrip>  
  <xref:System.Windows.Forms.ToolStripMenuItem.Enabled%2A>  

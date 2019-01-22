@@ -60,6 +60,6 @@ HRESULT GetHostName (
   
  **.NET Framework Versions:** 3.5 SP1  
   
-## See Also  
+## See also
  [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)  
  [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

@@ -80,7 +80,7 @@ result = expression1 And expression2
   
  The preceding example produces results of 8, 2, and 0, respectively.  
   
-## See Also  
+## See also
  [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
  [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  

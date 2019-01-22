@@ -54,5 +54,5 @@ This configuration section represents the configuration settings for the SMSvcHo
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activation.Configuration>

@@ -18,5 +18,5 @@ The specified Clipboard format is incompatible with the method being executed. A
   
 -   Remove the invalid format and specify a valid one.  
   
-## See Also  
+## See also
  [Clipboard: Adding Other Formats](/cpp/mfc/clipboard-adding-other-formats)

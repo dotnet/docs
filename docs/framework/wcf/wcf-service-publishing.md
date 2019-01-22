@@ -67,7 +67,7 @@ If you choose to deploy your application to local IIS, you may encounter errors 
 ## Security
  Publishing to local IIS requires administrator privilege, because IIS requires running in Administrator account. If a user without administrator privilege opens WCF Service Publishing, IIS is not available as a target location. Publishing to File System, or FTP Site works without administrator privilege.
 
-## See Also
+## See also
 
 - [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)
 - [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

@@ -184,5 +184,5 @@ The Windows Communication Foundation (WCF) samples are intended to share a commo
   
     3.  In the **Group** column, check that the value for **ASPNET** is "Users."  
   
-## See Also  
+## See also
  [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md)

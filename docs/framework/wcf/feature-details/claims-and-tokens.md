@@ -58,7 +58,7 @@ This topic describes the various claim types that Windows Communication Foundati
 ## Identity Claims and ServiceSecurityContext.IsAnonymous  
  If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity,` then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Claims.ClaimSet>  
  <xref:System.IdentityModel.Claims.Claim>  
  <xref:System.IdentityModel.Claims.Rights>  

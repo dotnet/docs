@@ -33,7 +33,7 @@ Visual Basic provides *character data types* to deal with printable and displaya
   
  For more information, see [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md).  
   
-## See Also  
+## See also
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
  [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  

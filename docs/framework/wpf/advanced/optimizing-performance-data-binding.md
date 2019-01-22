@@ -67,7 +67,7 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 ## Do not Convert CLR objects to XML Just for Data Binding.  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to data bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] content; however, data binding to [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] content is slower than data binding to [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] objects. Do not convert [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] object data to XML if the only purpose is for data binding.  
   
-## See Also  
+## See also
  [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
  [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
  [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  

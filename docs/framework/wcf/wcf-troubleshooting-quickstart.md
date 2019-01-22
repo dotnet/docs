@@ -243,5 +243,5 @@ public string Echo(string input)
 }  
 ```  
   
-## See Also  
+## See also
  [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)

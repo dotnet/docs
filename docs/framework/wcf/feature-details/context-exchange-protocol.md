@@ -61,5 +61,5 @@ This section describes the context exchange protocol introduced in Windows Commu
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   
-## See Also  
+## See also
  [Web Services Protocols Interoperability Guide](../../../../docs/framework/wcf/feature-details/web-services-protocols-interoperability-guide.md)

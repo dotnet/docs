@@ -116,7 +116,7 @@ allSystems(1).diskDrives(0).type = "Floppy"
   
  Structures can contain other structures to an arbitrary depth.  
   
-## See Also  
+## See also
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  

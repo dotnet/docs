@@ -248,7 +248,7 @@ End Function
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/function-statement_5.vb)]  
   
-## See Also  
+## See also
  [Sub Statement](sub-statement.md)  
  [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)  
  [Parameter List](parameter-list.md)  

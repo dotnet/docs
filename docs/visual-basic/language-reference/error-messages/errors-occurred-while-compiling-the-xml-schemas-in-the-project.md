@@ -25,6 +25,6 @@ Errors occurred while compiling the XML schemas in the project. Because of this,
   
 -   If no error is identified in your XSD schema, the XML compiler may not have enough information to provide a detailed error message. You may be able to get more detailed error information if you ensure that the XML namespaces for the .xsd files included in your project match the XML namespaces identified for the XML Schema set in Visual Studio.  
   
-## See Also  
+## See also
  [Error List Window](/visualstudio/ide/reference/error-list-window)  
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

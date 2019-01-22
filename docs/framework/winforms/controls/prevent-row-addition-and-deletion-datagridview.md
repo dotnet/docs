@@ -26,7 +26,7 @@ Sometimes you will want to prevent users from entering new rows of data or delet
   
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.DataGridView.ReadOnly%2A?displayProperty=nameWithType>  

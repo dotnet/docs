@@ -71,7 +71,7 @@ When you call a procedure, each argument you supply corresponds to one of the pa
 ## .NET Framework Security  
  There is always a potential risk in allowing a procedure to change the value underlying an argument in the calling code. Make sure you expect this value to be changed, and be prepared to check it for validity before using it.  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  

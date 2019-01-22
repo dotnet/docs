@@ -106,7 +106,7 @@ public override string ToString()
 ```
 For more detailed information on expression body definitions, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
-## See Also
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)   
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)   

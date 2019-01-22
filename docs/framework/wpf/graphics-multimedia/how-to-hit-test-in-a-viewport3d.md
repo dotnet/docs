@@ -23,5 +23,5 @@ This example shows how to hit test for 3D Visuals in a <xref:System.Windows.Cont
  [!code-csharp[HitTest3D#HitTest3D3DN5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn5)]
  [!code-vb[HitTest3D#HitTest3D3DN5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn5)]  
   
-## See Also  
+## See also
  [3-D Hit Testing Sample](https://go.microsoft.com/fwlink/?LinkID=159959)

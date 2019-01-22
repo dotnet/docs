@@ -38,6 +38,6 @@ Beginning with .NET 4.5, Windows Identity Foundation (WIF) has been fully integr
 |`Microsoft.IdentityModel.Web.Controls`|Not Implemented in WIF 4.5|The classes in `Microsoft.IdentityModel.Web.Controls` implemented the Federated Passive Sign-In Control, which does not exist in WIF 4.5.|  
 |`Microsoft.IdentityModel.WindowsTokenService`|Not Implemented in WIF 4.5|-|  
   
-## See Also  
+## See also
  [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)  
  [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)

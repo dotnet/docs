@@ -22,7 +22,7 @@ This example shows two ways to animate a <xref:System.Windows.Controls.Primitive
   
  [!code-xaml[AnimatedPopup#RotateTransform1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/AnimatedPopup/CS/Window1.xaml#rotatetransform1)]  
   
-## See Also  
+## See also
  <xref:System.Windows.UIElement.RenderTransform%2A>  
  <xref:System.Windows.Controls.Primitives.BulletDecorator>  
  <xref:System.Windows.Media.RotateTransform>  

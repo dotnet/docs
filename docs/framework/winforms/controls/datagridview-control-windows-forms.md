@@ -76,5 +76,5 @@ The `DataGridView` control provides a powerful and flexible way to display data 
  <xref:System.Windows.Forms.BindingSource>  
  Provides reference documentation for the <xref:System.Windows.Forms.BindingSource> component. The <xref:System.Windows.Forms.DataGridView> control and the <xref:System.Windows.Forms.BindingSource> component are designed to work closely together.  
   
-## See Also  
+## See also
  [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

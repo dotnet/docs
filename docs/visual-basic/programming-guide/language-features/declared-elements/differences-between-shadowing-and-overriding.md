@@ -45,7 +45,7 @@ When you define a class that inherits from a base class, you sometimes want to r
   
 -   You want the freedom of changing the element type or calling sequence.  
   
-## See Also  
+## See also
  [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
  [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)  
  [How to: Hide a Variable with the Same Name as Your Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-a-variable-with-the-same-name-as-your-variable.md)  

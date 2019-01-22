@@ -575,7 +575,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 </anc:Annotations>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Annotations>  
  <xref:System.Windows.Annotations.Storage>  
  <xref:System.Windows.Annotations.Annotation>  

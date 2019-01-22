@@ -265,7 +265,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |[!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)|  
   
-## See Also  
+## See also
  [WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)  
  [WPF Security Strategy - Platform Security](../../../docs/framework/wpf/wpf-security-strategy-platform-security.md)  
  [WPF Security Strategy - Security Engineering](../../../docs/framework/wpf/wpf-security-strategy-security-engineering.md)  

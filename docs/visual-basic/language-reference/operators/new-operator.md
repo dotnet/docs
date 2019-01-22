@@ -41,7 +41,7 @@ Introduces a `New` clause to create a new object instance, specifies a construct
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  <xref:System.OutOfMemoryException>  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
  [Type List](../../../visual-basic/language-reference/statements/type-list.md)  

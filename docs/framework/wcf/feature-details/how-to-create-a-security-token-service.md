@@ -117,7 +117,7 @@ A security token service implements the protocol defined in the WS-Trust specifi
 ## Example  
  For full code for a security token service, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Tokens.SigningCredentials>  
  <xref:System.IdentityModel.Tokens.SecurityKey>  
  <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>  

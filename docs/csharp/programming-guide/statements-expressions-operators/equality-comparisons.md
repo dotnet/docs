@@ -48,6 +48,6 @@ if( b == a)
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to detailed information about important C# language features and features that are available to C# through the .NET Framework.|  
 |[Types](../../../csharp/programming-guide/types/index.md)|Provides information about the C# type system and links to additional information.|  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

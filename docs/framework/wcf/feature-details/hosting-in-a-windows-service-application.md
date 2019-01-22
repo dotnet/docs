@@ -30,7 +30,7 @@ Windows services (formerly known as Windows NT services) provide a process model
   
      Windows service applications that host WCF services are deployed and managed in the same way as Windows service applications that do not make use of WCF.  
   
-## See Also  
+## See also
  <xref:System.ServiceProcess>  
  [Walkthrough: Creating a Windows Service Application in the Component Designer](https://go.microsoft.com/fwlink/?LinkId=94875)  
  [How to: Host a WCF Service in a Managed Windows Service](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)  

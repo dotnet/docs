@@ -21,5 +21,5 @@ The <xref:System.Windows.Controls.TextBlock> control provides flexible text supp
  [!code-csharp[TextBlockSnip#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBlockSnip/CSharp/TextBlockSnips.cs#1)]
  [!code-vb[TextBlockSnip#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBlockSnip/VisualBasic/TextBlockSnips.vb#1)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.Label>

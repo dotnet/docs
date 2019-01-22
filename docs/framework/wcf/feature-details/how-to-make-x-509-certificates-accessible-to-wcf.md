@@ -64,7 +64,7 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         icacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /grant "NETWORK SERVICE":R  
         ```  
   
-## See Also  
+## See also
 - [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md)  
 - [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)  
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

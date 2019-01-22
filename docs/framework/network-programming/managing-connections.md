@@ -58,6 +58,6 @@ Dim sp As ServicePoint = ServicePointManager.FindServicePoint(uri)
 sp.ConnectionLimit = newLimit  
 ```  
   
-## See Also  
+## See also
  [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)  
  [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)

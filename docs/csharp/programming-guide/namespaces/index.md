@@ -40,7 +40,7 @@ Namespaces have the following properties:
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [Using Namespaces](using-namespaces.md)
 - [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)

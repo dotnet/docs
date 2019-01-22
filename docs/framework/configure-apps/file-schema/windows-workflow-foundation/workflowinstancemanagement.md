@@ -43,6 +43,6 @@ A service behavior that enables you to specify settings that control how workflo
 |-------------|-----------------|  
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Description.WorkflowInstanceManagementBehavior>  
  <xref:System.ServiceModel.Activities.Configuration.WorkflowInstanceManagementElement>

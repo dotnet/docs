@@ -24,7 +24,7 @@ When you bind a Windows Forms <xref:System.Windows.Forms.DataGridView> control t
   
 3.  Click the up or down arrow to the right of the **Selected Columns** list until the selected column is in the position you want.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)  
  [How to: Create a Windows Application Project](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa)  

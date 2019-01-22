@@ -67,7 +67,7 @@ When you use the **Add New Item** dialog in Visual Studio 2015 to define a data 
 
 -   Validate parameters in the query string.
 
-## See Also
+## See also
 
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
 - [Exposing Your Data as a Service](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)

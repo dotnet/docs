@@ -150,7 +150,7 @@ This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_wincli
   
  The interfaces only provide support for what happens on the transition between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] regions. Within the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] region, tabbing behavior is entirely controlled by the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] implemented logic for tabbing, if any.  
   
-## See Also  
+## See also
  <xref:System.Windows.Interop.HwndHost>  
  <xref:System.Windows.Interop.HwndSource>  
  <xref:System.Windows.Interop>  

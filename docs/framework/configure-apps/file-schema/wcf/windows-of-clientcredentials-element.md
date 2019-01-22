@@ -39,7 +39,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
 |-------------|-----------------|  
 |[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to the service.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.WindowsClientElement>  
  <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
  <xref:System.ServiceModel.Description.ClientCredentials>  

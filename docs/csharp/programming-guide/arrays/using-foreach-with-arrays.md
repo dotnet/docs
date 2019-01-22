@@ -21,7 +21,7 @@ For multi-dimensional arrays, elements are traversed such that the indices of th
 
 However, with multidimensional arrays, using a nested [for](../../language-reference/keywords/for.md) loop gives you more control over the order in which to process the array elements.
 
-## See Also
+## See also
 
 - <xref:System.Array>  
 - [C# Programming Guide](../index.md)  

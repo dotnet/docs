@@ -14,7 +14,7 @@ The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises a
 ## Key Properties, Methods, and Events  
  The length of the intervals is defined by the <xref:System.Windows.Forms.Timer.Interval%2A> property, whose value is in milliseconds. When the component is enabled, the <xref:System.Windows.Forms.Timer.Tick> event is raised every interval. This is where you would add code to be executed. For more information, see [How to: Run Procedures at Set Intervals with the Windows Forms Timer Component](../../../../docs/framework/winforms/controls/run-procedures-at-set-intervals-with-wf-timer-component.md). The key methods of the <xref:System.Windows.Forms.Timer> component are <xref:System.Windows.Forms.Timer.Start%2A> and <xref:System.Windows.Forms.Timer.Stop%2A>, which turn the timer on and off. When the timer is switched off, it resets; there is no way to pause a <xref:System.Windows.Forms.Timer> component.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Timer>  
  [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)  
  [Limitations of the Windows Forms Timer Component's Interval Property](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md)

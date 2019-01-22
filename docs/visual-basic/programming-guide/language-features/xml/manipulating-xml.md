@@ -36,7 +36,7 @@ You can use *XML literals* to load XML from an external source such as a string,
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
  Provides links to sections that describe how to use [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] in Visual Basic.  
   
-## See Also  
+## See also
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

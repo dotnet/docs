@@ -40,5 +40,5 @@ The interface inherits two or more members with the same name from multiple inte
     End Module  
     ```  
   
-## See Also  
+## See also
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

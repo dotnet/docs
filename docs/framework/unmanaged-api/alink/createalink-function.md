@@ -40,5 +40,5 @@ HRESULT CreateALink (
 ## Requirements  
  **Library**: alink.dll  
   
-## See Also  
+## See also
  [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

@@ -192,5 +192,5 @@ This topic describes how to create a long-running workflow service. Long running
     Sending add item messageService returned: Item added to orderPress any key to continue . . .
     ```
 
-## See Also
+## See also
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)

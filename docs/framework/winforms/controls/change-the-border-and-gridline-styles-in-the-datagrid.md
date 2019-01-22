@@ -50,7 +50,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can customize the
   
 -   References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Drawing?displayProperty=nameWithType> assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.BorderStyle>  
  <xref:System.Windows.Forms.DataGridView.BorderStyle%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A?displayProperty=nameWithType>  

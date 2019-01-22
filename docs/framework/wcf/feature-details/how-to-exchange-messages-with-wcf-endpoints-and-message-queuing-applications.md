@@ -56,7 +56,7 @@ You can integrate existing Message Queuing (MSMQ) applications with Windows Comm
   
      [!code-csharp[S_WcfToMsmq#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_wcftomsmq/cs/client.cs#4)]  
   
-## See Also  
+## See also
  [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
  [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
  [Windows Communication Foundation to Message Queuing](../../../../docs/framework/wcf/samples/wcf-to-message-queuing.md)  

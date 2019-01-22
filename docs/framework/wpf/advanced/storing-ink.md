@@ -28,6 +28,6 @@ The <xref:System.Windows.Ink.StrokeCollection.Save%2A> methods provide support f
  [!code-csharp[DigitalInkTopics#13](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window1.xaml.cs#13)]
  [!code-vb[DigitalInkTopics#13](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window1.xaml.vb#13)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.InkCanvas>  
  [Windows Presentation Foundation](../../../../docs/framework/wpf/index.md)

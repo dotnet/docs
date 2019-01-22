@@ -20,7 +20,7 @@ Windows Forms controls do not sort when they are data-bound. To display sorted d
   
      This setting repositions all existing list items in sorted order.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ComboBox>  
  <xref:System.Windows.Forms.ListBox>  
  <xref:System.Windows.Forms.CheckedListBox>  

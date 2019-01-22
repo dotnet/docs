@@ -104,7 +104,7 @@ You could use it as shown in the following sample to create an enum and build a 
 
 [!code-csharp[using the unmanaged constraint](../../../../samples/snippets/csharp/keywords/GenericWhereConstraints.cs#20)]
 
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

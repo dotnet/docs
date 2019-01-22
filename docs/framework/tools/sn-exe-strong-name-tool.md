@@ -118,7 +118,7 @@ sn -v MyAsm.dll
 sn -d MyContainer  
 ```  
   
-## See Also  
+## See also
  [Tools](../../../docs/framework/tools/index.md)  
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
  [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)  

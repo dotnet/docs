@@ -46,6 +46,6 @@ By default, the client library does not supply credentials when sending a reques
   
  For more information, see [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md).  
   
-## See Also  
+## See also
  [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)  
  [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

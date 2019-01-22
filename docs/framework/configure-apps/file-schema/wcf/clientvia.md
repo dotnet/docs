@@ -36,6 +36,6 @@ Specifies the URI for which the transport channel should be created. For more in
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ClientViaElement>  
  <xref:System.ServiceModel.Description.ClientViaBehavior>

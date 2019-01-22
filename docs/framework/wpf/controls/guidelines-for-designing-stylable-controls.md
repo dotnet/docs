@@ -112,6 +112,6 @@ This document summarizes a set of best practices to consider when designing a co
   
 -   **Theme styles do not need to have consistent "layout" semantics across all themes**. For example, the default style does not need to guarantee that a control will occupy the same amount of size in all themes or guarantee that a control will have the same content margins / padding across all themes.  
   
-## See Also  
+## See also
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)

@@ -51,7 +51,7 @@ System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e08
 > [!NOTE]
 >  If you put a strong-named assembly in the global assembly cache, the assembly's file name must match the assembly name (not including the file name extension, such as .exe or .dll). For example, if the file name of an assembly is myAssembly.dll, the assembly name must be myAssembly. Private assemblies deployed only in the root application directory can have an assembly name that is different from the file name.  
   
-## See Also  
+## See also
 - [How to: Determine an Assembly's Fully Qualified Name](../../../docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md)
 - [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
 - [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)

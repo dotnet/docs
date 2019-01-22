@@ -91,7 +91,7 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
 ### Auditing  
  *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md). For programming details, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
   
-## See Also  
+## See also
  <xref:System.Security.Permissions.PrincipalPermissionAttribute>  
  [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
  [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  

@@ -46,7 +46,7 @@ The **-checked** option specifies whether an integer arithmetic statement that r
 csc t2.cs -checked  
 ```  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  

@@ -17,7 +17,7 @@ An entity reference (for example, `©`) that is not defined in the XML 1.0 speci
   
 -   Remove the unsupported entity reference.  
   
-## See Also  
+## See also
  [XML Literals and the XML 1.0 Specification](../../../visual-basic/programming-guide/language-features/xml/xml-literals-and-the-xml-1-0-specification.md)  
  [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

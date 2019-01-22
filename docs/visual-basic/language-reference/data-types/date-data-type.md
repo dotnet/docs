@@ -68,7 +68,7 @@ Dim dateInMay As New System.DateTime(1993, 5, 31, 12, 14, 0)
 Dim someDateAndTime As Date = #8/13/2002 12:14 PM#  
 ```  
   
-## See Also  
+## See also
  <xref:System.DateTime?displayProperty=nameWithType>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Standard Date and Time Format Strings](../../../standard/base-types/standard-date-and-time-format-strings.md)  

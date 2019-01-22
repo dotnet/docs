@@ -199,7 +199,7 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
 -   [Kerberos Protocol Transition and Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=36725)  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.OperationBehaviorAttribute>  
  <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A>  
  <xref:System.ServiceModel.ImpersonationOption>  

@@ -9,7 +9,7 @@ The PeerNode has begun to close.
 ## Description  
  This trace occurs at the beginning of running Close on the PeerNode.  
   
-## See Also  
+## See also
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

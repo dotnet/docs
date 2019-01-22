@@ -63,7 +63,7 @@ The following example returns the total number of characters in the pages whose 
 
 The preceding example uses C# 7.1, which supports the [`async` `Main` method](../../programming-guide/main-and-command-args/index.md). Because earlier C# versions don't support application entry points that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you cannot apply the `async` modifier to the `Main` method and await the `GetPageLengthsAsync` method call. In that case, you can ensure that the `Main` method waits for the async operation to complete by retrieving the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property. For tasks that do not return a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [Select the C# language version](../configure-language-version.md).
 
-## See also  
+## See also
 - [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md)   
 - [Walkthrough: Accessing the Web by Using Async and Await](../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
 - [async](../../../csharp/language-reference/keywords/async.md)

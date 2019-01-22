@@ -38,6 +38,6 @@ This topic provides Visual Basic guidelines for naming XML elements and attribut
 ## XML Namespaces  
  When creating an XML element literal, you can specify the XML namespace prefix for the element name. For more information, see [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md).  
   
-## See Also  
+## See also
  [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

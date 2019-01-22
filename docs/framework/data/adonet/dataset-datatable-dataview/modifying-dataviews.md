@@ -45,7 +45,7 @@ newDRV["CompanyName"] = "ABC Products";
 newDRV.EndEdit();  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataTable>  
  <xref:System.Data.DataView>  
  <xref:System.Data.DataRowView>  

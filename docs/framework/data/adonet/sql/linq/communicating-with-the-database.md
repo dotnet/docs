@@ -16,5 +16,5 @@ The topics in this section describe some basic aspects of how you establish and 
  [How to: Reuse a Connection Between an ADO.NET Command and a DataContext](../../../../../../docs/framework/data/adonet/sql/linq/how-to-reuse-a-connection-between-an-ado-net-command-and-a-datacontext.md)  
  Provides examples of how to use an existing [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] connection in a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] application.  
   
-## See Also  
+## See also
  [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)

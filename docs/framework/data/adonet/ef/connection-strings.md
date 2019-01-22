@@ -102,7 +102,7 @@ Metadata=.\
   
  The resolution of the `DataDirectory` substitution string and the ~ operator is non-recursive. For example, when `DataDirectory` includes the `~` character, an exception will occur. This prevents an infinite recursion.  
   
-## See Also  
+## See also
  [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)  
  [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
  [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  

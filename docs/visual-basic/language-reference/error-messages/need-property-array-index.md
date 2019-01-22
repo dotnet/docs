@@ -12,6 +12,6 @@ This property value consists of an array rather than a single value. You did not
   
 -   Check the component's documentation to find the range for the indexes appropriate for the array. Specify an appropriate index in your property access statement.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  [Talk to Us](/visualstudio/ide/talk-to-us)

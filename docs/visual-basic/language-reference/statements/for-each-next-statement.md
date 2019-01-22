@@ -166,7 +166,7 @@ End Sub
   
  [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
-## See Also  
+## See also
  [Collections](../../../standard/collections/index.md)  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  

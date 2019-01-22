@@ -17,5 +17,5 @@ An array initialization leaves out one or more of the subscripts that define the
   
 -   Supply the missing subscript.  
   
-## See Also  
+## See also
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

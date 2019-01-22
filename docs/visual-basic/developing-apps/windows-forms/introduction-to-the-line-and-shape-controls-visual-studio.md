@@ -41,7 +41,7 @@ Line and Shape object hierarchy
 > [!NOTE]
 >  Not all container controls support the Line and Shape controls. You cannot host a Line or Shape control on a <xref:System.Windows.Forms.TableLayoutPanel> or a <xref:System.Windows.Forms.FlowLayoutPanel>.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks>  
  [How to: Draw Lines with the LineShape Control](../../../visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md)  
  [How to: Draw Shapes with the OvalShape and RectangleShape Controls](../../../visual-basic/developing-apps/windows-forms/how-to-draw-shapes-with-the-ovalshape-and-rectangleshape-controls.md)  

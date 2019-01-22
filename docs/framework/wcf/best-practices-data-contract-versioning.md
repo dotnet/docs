@@ -84,7 +84,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  Some of the guidelines listed here can be safely ignored when special circumstances apply. Make sure you fully understand the serialization, deserialization, and schema mechanisms involved before deviating from the guidelines.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
  <xref:System.Runtime.Serialization.DataContractAttribute>  
  <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  

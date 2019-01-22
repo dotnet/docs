@@ -80,7 +80,7 @@ Private numberForMeOnly As Integer
 ## .NET Framework Security  
  The more restrictive the access level of a variable, the smaller the chances that malicious code can make improper use of it.  
   
-## See Also  
+## See also
  [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
  [Public](../../../../visual-basic/language-reference/modifiers/public.md)  

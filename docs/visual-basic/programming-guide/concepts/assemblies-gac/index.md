@@ -42,7 +42,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 > [!NOTE]
 >  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
   
-## See Also  
+## See also
  [Assemblies in the Common Language Runtime](../../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)  
  [Friend Assemblies (Visual Basic)](friend-assemblies.md)  
  [How to: Share an Assembly with Other Applications (Visual Basic)](how-to-share-an-assembly-with-other-applications.md)  

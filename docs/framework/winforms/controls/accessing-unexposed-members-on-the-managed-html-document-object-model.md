@@ -65,5 +65,5 @@ The managed HTML Document Object Model (DOM) contains a class called <xref:Syste
   
  You can call any script functions you define in an HTML page using the <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A> method. If the script method returns an HTML element, you can use a cast to convert this return result to an <xref:System.Windows.Forms.HtmlElement>. For details and example code, see <xref:System.Windows.Forms.HtmlDocument.InvokeScript%2A>.  
   
-## See Also  
+## See also
  [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)

@@ -29,5 +29,5 @@ Controls in a <xref:System.Windows.Forms.TableLayoutPanel> control can span adja
   
 5.  Set the <xref:System.Windows.Forms.Button> control's **ColumnSpan** property to **1**. Note that the <xref:System.Windows.Forms.Button> control moves into the first column and spans the first and second rows.  
   
-## See Also  
+## See also
  [TableLayoutPanel Control](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-windows-forms.md)

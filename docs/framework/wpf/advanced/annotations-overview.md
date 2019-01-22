@@ -58,7 +58,7 @@ Writing notes or comments on paper documents is such a commonplace activity that
   
  Another example scenario involves applications that enable the exchange of annotations and sticky notes between document readers through email. This feature enables these applications to navigate the reader to the page that contains the annotation that is being exchanged.  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.Primitives.DocumentViewerBase>  
  <xref:System.Windows.Controls.DocumentViewer>  
  <xref:System.Windows.Controls.FlowDocumentPageViewer>  

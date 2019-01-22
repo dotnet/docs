@@ -18,7 +18,7 @@ The assemblies referenced by your program will automatically be loaded at build 
   
 1.  There is no way to unload an individual assembly without unloading all of the application domains that contain it. Use the `Unload` method from <xref:System.AppDomain> to unload the application domains. For more information, see [How to: Unload an Application Domain](../../../../framework/app-domains/how-to-unload-an-application-domain.md).  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
 - [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)  

@@ -107,7 +107,7 @@ class TestAuthorAttribute
 */  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Reflection>  
 - <xref:System.Attribute>  

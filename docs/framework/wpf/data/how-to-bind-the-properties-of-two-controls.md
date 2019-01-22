@@ -21,6 +21,6 @@ This example shows how to bind the property of one instantiated control to that 
   
  **Note** The binding target property (in this example, the <xref:System.Windows.Controls.Panel.Background%2A> property) must be a dependency property. For more information, see [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
-## See Also  
+## See also
  [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

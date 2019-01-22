@@ -10,7 +10,7 @@ Specifies a collection of required claim types.
   
  A claim type requirement consists of the URI of the claim type requested in the issued token along with a Boolean parameter that indicates whether that claim type is required in the issued token, or is optional.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.ClaimTypeRequirements%2A>  
  <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement.ClaimTypeRequirements%2A>  
  <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>  

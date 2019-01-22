@@ -33,7 +33,7 @@ A defense-in-depth strategy, with overlapping layers of security, is the best wa
  [CLR Integration Security in SQL Server](../../../../../docs/framework/data/adonet/sql/clr-integration-security-in-sql-server.md)  
  Provides links to CLR integration security resources.  
   
-## See Also  
+## See also
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server Security](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
  [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  

@@ -26,7 +26,7 @@ The following code example shows how to use the <xref:System.Drawing.Graphics.Dr
   
 -   The Arial font is not installed.  
   
-## See Also  
+## See also
  <xref:System.Drawing.Graphics.DrawString%2A>  
  <xref:System.Windows.Forms.TextRenderer.DrawText%2A>  
  <xref:System.Drawing.StringFormat.FormatFlags%2A>  

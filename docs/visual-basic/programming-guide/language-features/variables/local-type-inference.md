@@ -65,7 +65,7 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
   
  For more information, see [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
   
-## See Also  
+## See also
  [Anonymous Types](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
  [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)  
  [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)  

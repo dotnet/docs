@@ -88,7 +88,7 @@ Arithmetic operators are used to perform many of the familiar arithmetic operati
   
  If you set `Option Strict Off`, however, Visual Basic allows implicit narrowing conversions to take place, although they can result in the unexpected loss of data or precision. For this reason, we recommend that you use `Option Strict On` when writing production code. For more information, see [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
-## See Also  
+## See also
  [Arithmetic Operators](../../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
  [Bit Shift Operators](../../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
  [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  

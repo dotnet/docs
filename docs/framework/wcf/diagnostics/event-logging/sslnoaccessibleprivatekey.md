@@ -13,6 +13,6 @@ Id: 155
 ## Description  
  This event indicates that an identity certificate with the specific subject name and thumbprint does not have an accessible private key. The event lists the process name and process ID.  
   
-## See Also  
+## See also
  [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

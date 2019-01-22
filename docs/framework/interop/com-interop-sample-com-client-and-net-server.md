@@ -383,5 +383,5 @@ namespace LoanLib {
 }  
 ```  
   
-## See Also  
+## See also
  [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)

@@ -38,7 +38,7 @@ A `Function` procedure returns a value to the calling code. You call it by inclu
   
  [!code-vb[VbVbcnProcedures#7](./codesnippet/VisualBasic/how-to-call-a-procedure-that-returns-a-value_1.vb)]  
   
-## See Also  
+## See also
  [Function Procedures](./function-procedures.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  

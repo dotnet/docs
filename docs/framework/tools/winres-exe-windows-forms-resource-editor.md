@@ -131,7 +131,7 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
    The tool saves the file using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.
 
-## See Also
+## See also
 
 - <xref:System.ComponentModel.LocalizableAttribute>
 - <xref:System.Globalization.CultureInfo>

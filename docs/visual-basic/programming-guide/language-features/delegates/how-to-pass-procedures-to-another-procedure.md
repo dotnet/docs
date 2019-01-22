@@ -39,7 +39,7 @@ This example shows how to use delegates to pass a procedure to another procedure
   
      When `Test` is called, it first displays the result of `AddNumbers` acting on `5` and `3`, which is 8. Then the result of `SubtractNumbers` acting on `9` and `3` is displayed, which is 6.  
   
-## See Also  
+## See also
  [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
  [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)  
  [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  

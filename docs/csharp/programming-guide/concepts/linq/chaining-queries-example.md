@@ -80,6 +80,6 @@ Main: str >GHI!!!<
   
 -   [Intermediate Materialization (C#)](../../../../csharp/programming-guide/concepts/linq/intermediate-materialization.md)  
   
-## See Also
+## See also
 
 - [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)

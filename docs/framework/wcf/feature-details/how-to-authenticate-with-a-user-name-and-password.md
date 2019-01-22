@@ -76,7 +76,7 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
     // Call the service operation using the proxy  
     ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSHttpBinding>  
  <xref:System.ServiceModel.WSHttpSecurity>  
  <xref:System.ServiceModel.SecurityMode>  

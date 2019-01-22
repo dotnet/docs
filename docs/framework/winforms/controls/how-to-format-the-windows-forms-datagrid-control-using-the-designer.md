@@ -92,7 +92,7 @@ ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
     > [!NOTE]
     >  For more information about formatting strings, see [Formatting Types](../../../../docs/standard/base-types/formatting-types.md).
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.GridTableStylesCollection>
 - <xref:System.Windows.Forms.GridColumnStylesCollection>

@@ -53,7 +53,7 @@ This topic describes how you can successfully use <xref:System.Transactions> ins
   
  For more information, see [add Element for assemblies for compilation (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/602197e8-108d-4249-b752-ba2a318f75e4).  
   
-## See Also  
+## See also
  [ASP.NET Trust Levels and Policy Files](https://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1)  
  [securityPolicy Element (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/469d8d22-d263-46bb-8400-40d8d027faba)  
  [Transaction Management Escalation](../../../../docs/framework/data/transactions/transaction-management-escalation.md)

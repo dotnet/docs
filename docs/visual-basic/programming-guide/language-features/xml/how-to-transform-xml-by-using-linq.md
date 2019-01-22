@@ -149,7 +149,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
     </html>  
     ```  
   
-## See Also  
+## See also
  [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)  
  [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)  
  [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  

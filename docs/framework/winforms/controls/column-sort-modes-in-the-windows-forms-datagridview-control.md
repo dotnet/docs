@@ -52,7 +52,7 @@ ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView.SortCompare> event does not occur when the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or when the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property value is `true`.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.DataGridView.SortedColumn%2A?displayProperty=nameWithType>  

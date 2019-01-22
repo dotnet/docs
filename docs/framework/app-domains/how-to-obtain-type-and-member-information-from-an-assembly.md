@@ -22,7 +22,7 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
  [!code-csharp[Conceptual.Types.ViewInfo#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.viewinfo/cs/source6.cs#8)]
  [!code-vb[Conceptual.Types.ViewInfo#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source6.vb#8)]  
   
-## See Also  
+## See also
 - [Programming with Application Domains](./application-domains.md#programming-with-application-domains)
 - [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
 - [Using Application Domains](../../../docs/framework/app-domains/use.md)

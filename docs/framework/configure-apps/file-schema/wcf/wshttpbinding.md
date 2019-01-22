@@ -130,7 +130,7 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSHttpBinding>  
  <xref:System.ServiceModel.Configuration.WSHttpBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  

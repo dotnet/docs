@@ -118,7 +118,7 @@ The following example shows an object that implements <xref:System.Collections.I
 
 [!code-csharp-interactive[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullDictionaryInitializer)]  
 
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)  
 - [LINQ Query Expressions](../linq-query-expressions/index.md)  

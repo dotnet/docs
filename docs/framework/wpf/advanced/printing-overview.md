@@ -128,7 +128,7 @@ For applications that do not require [!INCLUDE[TLA2#tla_metro](../../../../inclu
   
 -   **ZIP compression**. All [!INCLUDE[TLA2#tla_metro](../../../../includes/tla2sharptla-metro-md.md)] documents use ZIP compression.  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.PrintDialog>  
  <xref:System.Windows.Xps.XpsDocumentWriter>  
  <xref:System.Windows.Xps.Packaging.XpsDocument>  

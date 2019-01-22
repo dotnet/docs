@@ -210,7 +210,7 @@ A PathGeometry with multiple figures
   
  See the <xref:System.Windows.Media.Geometry> class for a complete listing of its methods.  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Geometry>  
  <xref:System.Windows.Media.PathGeometry>  
  <xref:System.Windows.Shapes.Path>  

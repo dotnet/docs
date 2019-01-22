@@ -17,5 +17,5 @@ String constants must begin and end with quotation marks.
   
 -   Make sure the string literal ends with a quotation mark ("). If you paste values from other text editors, make sure the pasted character is a valid quotation mark and not one of the characters that resemble it, such as "smart" or "curly" quotation marks (" or ") or two single quotation marks ('').  
   
-## See Also  
+## See also
  [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)

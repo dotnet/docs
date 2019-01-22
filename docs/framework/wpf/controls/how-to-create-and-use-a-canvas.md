@@ -22,7 +22,7 @@ This example shows how to create and use an instance of <xref:System.Windows.Con
  [!code-csharp[CanvasCode#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasCode/CSharp/Canvas_Code.cs#1)]
  [!code-vb[CanvasCode#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasCode/VisualBasic/canvas_vb.vb#1)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.Canvas>  
  <xref:System.Windows.Controls.TextBlock>  
  <xref:System.Windows.Controls.Canvas.SetTop%2A>  

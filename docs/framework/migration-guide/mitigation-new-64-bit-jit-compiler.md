@@ -63,6 +63,6 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
  You can also let us know about the problem by reporting a bug on [Microsoft Connect](https://connect.microsoft.com/VisualStudio).  
   
-## See Also  
+## See also
  [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)  
  [\<useLegacyJit> Element](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)

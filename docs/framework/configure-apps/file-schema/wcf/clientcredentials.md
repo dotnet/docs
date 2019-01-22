@@ -15,21 +15,21 @@ Specifies the credentials used to authenticate the client to a service.
 ## Syntax  
   
 ```xml  
-<clientCredentials type="String"  
-      supportInteractive="Boolean" >  
-   <clientCertificate>  
-   </clientCertificate>  
-   <digest>  
-   </digest>  
-   <isuedToken>  
-   </isuedToken>  
-   <peer>  
-   </peer>  
-   <serviceCertificate>  
-   </serviceCertificate>  
-   <windowsAuthentication>  
-   </windowsAuthentication>  
-</clientCredentials>  
+<clientCredentials type="String"
+                   supportInteractive="Boolean" >
+  <clientCertificate>
+  </clientCertificate>
+  <digest>
+  </digest>
+  <isuedToken>
+  </isuedToken>
+  <peer>
+  </peer>
+  <serviceCertificate>
+  </serviceCertificate>
+  <windowsAuthentication>
+  </windowsAuthentication>
+</clientCredentials>
 ```  
   
 ## Attributes and Elements  

@@ -14,10 +14,21 @@ A routing entry that contain mappings between the routing filters and the target
   
 ## Syntax  
   
-```xml
-   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
-```
-
+```xml  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
+      </entries>
+    </filterTable>
+  </filterTables>
+</routing>
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   

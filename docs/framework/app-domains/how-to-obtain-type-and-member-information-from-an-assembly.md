@@ -24,5 +24,5 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
   
 ## See Also  
 - [Programming with Application Domains](./application-domains.md#programming-with-application-domains)
-- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
+- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
 - [Using Application Domains](../../../docs/framework/app-domains/use.md)

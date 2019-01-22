@@ -22,12 +22,12 @@ Adds a custom scope Uri that can be used to filter service endpoints during quer
     <behavior name="String">
       <endpointDiscovery enable="Boolean">
         <scopes>
-          <add scope="URI"/>
+          <add scope="URI" />
         </scopes>
       </endpointDiscovery>
     </behavior>
   </endpointBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  

@@ -68,6 +68,6 @@ The `fatalExecutionEngineError` managed debugging assistant (MDA) is activated w
 ```  
   
 ## See Also  
- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>  
- <xref:System.Runtime.ConstrainedExecution.Cer>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A>
+- <xref:System.Runtime.ConstrainedExecution.Cer>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

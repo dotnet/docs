@@ -93,7 +93,7 @@ This document lists the guidelines to consider when designing an API to be seria
   
 1.  AVOID designing your types specifically for XML Serialization, unless you have a very strong reason to control the shape of the XML produced. This serialization technology has been superseded by the Data Contract Serialization discussed in the previous section.  
   
-     In other words, don’t apply attributes from the <xref:System.Runtime.Serialization> namespace to new types, unless you know that the type will be used with XML Serialization. The following example shows how **System.Xml.Serialization** can be used to control the shape of the XML -produced.  
+     In other words, don’t apply attributes from the <xref:System.Xml.Serialization> namespace to new types, unless you know that the type will be used with XML Serialization. The following example shows how **System.Xml.Serialization** can be used to control the shape of the XML -produced.  
   
      [!code-csharp[SerializationGuidelines#6](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#6)]
      [!code-vb[SerializationGuidelines#6](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#6)]  

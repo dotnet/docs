@@ -59,5 +59,5 @@ public class Exe
 ```  
   
 ## See Also  
- <xref:System.Reflection.MemberInfo>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- <xref:System.Reflection.MemberInfo>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

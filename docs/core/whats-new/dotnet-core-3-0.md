@@ -25,15 +25,12 @@ For more information, see the [.NET Core 3.0 Preview 1 announcement](https://blo
 
 ## Default executables
 
-.NET Core will now build executables by default. This is new for applications that use a globally installed version of .NET Core. Until now, only [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) had executables.
+.NET Core will now build [framework-dependent executables](../deploying/index.md#framework-dependent-executables-fde) by default. This is new for applications that use a globally installed version of .NET Core. Until now, only [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) would produce an executable.
 
 During `dotnet build` or `dotnet publish`, an executable is created provided that matches the environment and platform of the SDK you are using. You can expect the same things with these executables as you would other native executables, such as:
 
 * You can double-click on the executable.
 * You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.
-
-> [!NOTE]
-> Specifying a specific runtime with `dotnet publish -r` or `dotnet build -r` arguments for other runtime environments isn't supported.
 
 ## Build copies dependencies
 

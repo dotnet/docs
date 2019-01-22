@@ -12,27 +12,28 @@ This configuration element defines a standard endpoint that contains information
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
-      <discoveryClientSettings discoveryEndpoint="String">
-        <findCriteria duration="TimeSpan" 
-                      maxResults="Integer" 
-                      scopeMatchBy="Uri">
-          <contractTypeNames>
-            <add name="String" namespace="String" />
-          <contractTypeNames>
-          <extensions />
-          <scopes>
-            <add scope="URI" />
-          </scopes>
-        </findCriteria>
-      </discoveryClientSettings>
+        <discoveryClientSettings discoveryEndpoint="String">
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
+                        scopeMatchBy="Uri">
+            <contractTypeNames>
+              <add name="String"
+                   namespace="String" />
+            <contractTypeNames>
+            <extensions />
+            <scopes>
+              <add scope="URI" />
+            </scopes>
+          </findCriteria>
+        </discoveryClientSettings>
       <standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

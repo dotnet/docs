@@ -22,9 +22,9 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
  The Certificate Manager is automatically installed with Visual Studio. To start the tool, use the [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
 > [!NOTE]
->  The Certificate Manager tool (Certmgr.exe) is a command-line utility, whereas Certificates (Certmgr.msc) is a Microsoft Management Console (MMC) snap-in. Because Certmgr.msc is usually found in the Windows System directory, entering `certmgr` at the command line may load the Certificates MMC snap-in even if you have opened the Visual Studio Command Prompt. This occurs because the path to the snap-in precedes the path to the Certificate Manager tool in the PATH environment variable. If you encounter this problem, you can execute Certmgr.exe commands by specifying the path to the executable.  
+>  The Certificate Manager tool (Certmgr.exe) is a command-line utility, whereas Certificates (Certmgr.msc) is a Microsoft Management Console (MMC) snap-in. Because Certmgr.msc is usually found in the Windows System directory, entering `certmgr` at the command line may load the Certificates MMC snap-in even if you have opened the Developer Command Prompt for Visual Studio. This occurs because the path to the snap-in precedes the path to the Certificate Manager tool in the PATH environment variable. If you encounter this problem, you can execute Certmgr.exe commands by specifying the path to the executable.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  For an overview of X.509 certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   

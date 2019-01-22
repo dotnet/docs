@@ -16,11 +16,11 @@ Specifies credentials used when authenticating peer-to-peer clients.
 ## Syntax  
   
 ```xml  
-<peer>  
-  <certificate/>  
-  <peerAuthentication/>  
-  <messageSenderAuthentication/>  
-</peer>  
+<peer>
+  <certificate />
+  <peerAuthentication />
+  <messageSenderAuthentication />
+</peer>
 ```  
   
 ## Attributes and Elements  

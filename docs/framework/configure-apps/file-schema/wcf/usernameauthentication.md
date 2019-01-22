@@ -16,14 +16,13 @@ Specifies a service's credentials based on user name and password.
 ## Syntax  
   
 ```xml  
-<userNameAuthentication  
-   cacheLogonTokenLifetime="TimeSpan"  
-   cacheLogonTokens="Boolean"   
-   customUserNamePasswordValidatorType="String"  
-   includeWindowsGroups="Boolean"   
-   maxCacheLogonTokens="Integer"  
-   membershipProviderName="String"  
-   userNamePasswordValidationMode="Windows/MembershipProvider/Custom" />  
+<userNameAuthentication cacheLogonTokenLifetime="TimeSpan"
+                        cacheLogonTokens="Boolean"
+                        customUserNamePasswordValidatorType="String"
+                        includeWindowsGroups="Boolean"
+                        maxCacheLogonTokens="Integer"
+                        membershipProviderName="String"
+                        userNamePasswordValidationMode="Windows/MembershipProvider/Custom" />
 ```  
   
 ## Attributes and Elements  

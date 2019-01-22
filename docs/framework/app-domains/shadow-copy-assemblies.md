@@ -72,8 +72,8 @@ Shadow copying enables assemblies that are used in an application domain to be u
  The <xref:System.AppDomain> class has several methods, such as <xref:System.AppDomain.SetShadowCopyFiles%2A> and <xref:System.AppDomain.ClearShadowCopyPath%2A>, that can be used to control shadow copying on an application domain, but these have been marked obsolete in the .NET Framework version 2.0. The recommended way to configure an application domain for shadow copying is to use the properties of the <xref:System.AppDomainSetup> class.  
   
 ## See Also  
-- <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=nameWithType>  
-- <xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType>  
-- <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType>  
-- <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=nameWithType>  
+- <xref:System.AppDomainSetup.ShadowCopyFiles%2A?displayProperty=nameWithType>
+- <xref:System.AppDomainSetup.CachePath%2A?displayProperty=nameWithType>
+- <xref:System.AppDomainSetup.ApplicationName%2A?displayProperty=nameWithType>
+- <xref:System.AppDomainSetup.ShadowCopyDirectories%2A?displayProperty=nameWithType>
 - [\<shadowCopyVerifyByTimestamp> Element](../../../docs/framework/configure-apps/file-schema/runtime/shadowcopyverifybytimestamp-element.md)

@@ -37,7 +37,7 @@ Clears all previously defined sections and section groups.
 | --- | ----------- |
 | [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
-# Child elements
+## Child elements
 
 None
 

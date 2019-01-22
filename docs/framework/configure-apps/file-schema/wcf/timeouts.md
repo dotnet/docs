@@ -15,8 +15,8 @@ Represents a configuration element that specifies the interval of time allowed f
 ## Syntax  
   
 ```xml  
-<timeOuts closeTimeout="TimeSpan"  
-   openTimeout="TimeSpan" >  
+<timeOuts closeTimeout="TimeSpan"
+          openTimeout="TimeSpan" />
 ```  
   
 ## Attributes and Elements  

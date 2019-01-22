@@ -116,12 +116,12 @@ The .NET Framework, through configuration files, gives developers and administra
  Describes the schema hierarchy for startup, runtime, network, and other types of configuration settings.  
   
 ## See Also  
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
- [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)  
- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)  
- [Registering Remote Objects Using Configuration Files](https://msdn.microsoft.com/library/bc503ee1-c811-4f82-9525-470343326adc)  
- [ASP.NET Web Site Administration](https://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e)  
- [NIB: Security Policy Management](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)  
- [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)  
- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)
+- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Registering Remote Objects Using Configuration Files](https://msdn.microsoft.com/library/bc503ee1-c811-4f82-9525-470343326adc)
+- [ASP.NET Web Site Administration](https://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e)
+- [NIB: Security Policy Management](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)
+- [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)
+- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)

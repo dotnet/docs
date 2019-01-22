@@ -16,7 +16,7 @@ For most .NET Framework applications, you locate assemblies that make up an appl
  Similar rules apply to locating assemblies when working with unmanaged code or COM interop applications: if the assembly will be shared by multiple applications, it should be installed into the global assembly cache. Assemblies used with unmanaged code must be exported as a type library and registered. Assemblies used by COM interop must be registered in the catalog, although in some cases this registration occurs automatically.  
   
 ## See Also  
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
-- [Configuring Apps](../../../docs/framework/configure-apps/index.md)  
-- [Interoperating with unmanaged code](../../../docs/framework/interop/index.md)  
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Configuring Apps](../../../docs/framework/configure-apps/index.md)
+- [Interoperating with unmanaged code](../../../docs/framework/interop/index.md)
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)

@@ -24,7 +24,7 @@ An assembly's location determines whether the common language runtime can locate
      An assembly deployed on an HTTP server must have a strong name; you point to the assembly in the codebase section of the application's configuration file.  
   
 ## See Also  
-- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)  
-- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
+- [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
+- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)

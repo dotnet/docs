@@ -203,7 +203,7 @@ dotnet new -u C:\Users\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate
 
 ## See also
 
-* [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)  
-* [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)  
-* [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)
-* [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)  
+- [dotnet/templating GitHub repo Wiki](https://github.com/dotnet/templating/wiki)
+- [dotnet/dotnet-template-samples GitHub repo](https://github.com/dotnet/dotnet-template-samples)
+- [How to create your own templates for dotnet new](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/)
+- [*template.json* schema at the JSON Schema Store](http://json.schemastore.org/template)

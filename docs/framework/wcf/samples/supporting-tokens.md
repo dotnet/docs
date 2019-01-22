@@ -435,13 +435,13 @@ iisreset
   
 4.  Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, run `setup.bat service` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
+5.  On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
 6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.  
   
 7.  Copy the Service.cer file from the service directory to the client directory on the client machine.  
   
-8.  On the client, run `setup.bat client` in a Visual Studio command prompt opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+8.  On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
 9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
   

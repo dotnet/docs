@@ -41,7 +41,7 @@ XML documentation on public APIs ensure that users can get great Intellisense an
 type Point =
 
     /// Computes the distance between this point and another
-    member DistanceTo : otherPoint:Point -> float
+    member DistanceTo: otherPoint:Point -> float
 ```
 
 You can use either the short form XML comments (`/// comment`), or standard XML comments (`///<summary>comment</summary>`).
@@ -185,16 +185,16 @@ Use interface types to represent a set of operations. This is preferred to other
 
 ```fsharp
 type Serializer =
-    abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
-    abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
+    abstract Serialize<'T>: preserveRefEq: bool -> value: 'T -> string
+    abstract Deserialize<'T>: preserveRefEq: bool -> pickle: string -> 'T
 ```
 
 In preference to:
 
 ```fsharp
 type Serializer<'T> = {
-    Serialize : bool -> 'T -> string
-    Deserialize : bool -> string -> 'T
+    Serialize: bool -> 'T -> string
+    Deserialize: bool -> string -> 'T
 }
 ```
 
@@ -237,13 +237,13 @@ Overuse of `[<AutoOpen>]` leads to polluted namespaces, and the attribute should
 Sometimes classes are used to model mathematical constructs such as Vectors. When the domain being modeled has well-known operators, defining them as members intrinsic to the class is helpful.
 
 ```fsharp
-type Vector(x:float) =
+type Vector(x: float) =
 
     member v.X = x
 
-    static member (*) (vector:Vector, scalar:float) = Vector(vector.X * scalar)
+    static member (*) (vector: Vector, scalar: float) = Vector(vector.X * scalar)
 
-    static member (+) (vector1:Vector, vector2:Vector) = Vector(vector1.X + vector2.X)
+    static member (+) (vector1: Vector, vector2: Vector) = Vector(vector1.X + vector2.X)
 
 let v = Vector(5.0)
 
@@ -300,7 +300,7 @@ In F#, implementation inheritance is rarely used. Furthermore, inheritance hiera
 Here is a good example of using a tuple in a return type:
 
 ```fsharp
-val divrem : BigInteger -> BigInteger -> BigInteger * BigInteger
+val divrem: BigInteger -> BigInteger -> BigInteger * BigInteger
 ```
 
 For return types containing many components, or where the components are related to a single identifiable entity, consider using a named type instead of a tuple.
@@ -311,9 +311,9 @@ If there is a corresponding synchronous operation named `Operation` that returns
 
 ```fsharp
 type SomeType =
-    member this.Compute(x:int) : int =
+    member this.Compute(x:int): int =
         ...
-    member this.AsyncCompute(x:int) : Async<int> =
+    member this.AsyncCompute(x:int): Async<int> =
         ...
 
 type System.ServiceModel.Channels.IInputChannel with
@@ -502,8 +502,8 @@ F#:
 ```fsharp
 [<NoEquality; NoComparison>]
 type MyRecord =
-    { FirstThing : int
-        SecondThing : string }
+    { FirstThing: int
+        SecondThing: string }
 ```
 
 C#:
@@ -568,7 +568,7 @@ type MyBadType() =
     [<CLIEvent>]
     member this.MyEvent = myEv.Publish
 
-type MyEventArgs(x:int) =
+type MyEventArgs(x: int) =
     inherit System.EventArgs()
     member this.X = x
 
@@ -590,7 +590,7 @@ However, despite this, methods which return Tasks are the standard representatio
 /// A type in a component designed for use from other .NET languages
 type MyType() =
 
-    let compute (x: int) : Async<int> = async { ... }
+    let compute (x: int): Async<int> = async { ... }
 
     member this.ComputeAsync(x) = compute x |> Async.StartAsTask
 ```
@@ -600,7 +600,7 @@ You will frequently also want to accept an explicit cancellation token:
 ```fsharp
 /// A type in a component designed for use from other .NET languages
 type MyType() =
-    let compute(x:int) : Async<int> = async { ... }
+    let compute(x: int): Async<int> = async { ... }
     member this.ComputeAsTask(x, cancellationToken) = Async.StartAsTask(compute x, cancellationToken)
 ```
 
@@ -611,14 +611,14 @@ Here “F# function types” mean “arrow” types like `int -> int`.
 Instead of this:
 
 ```fsharp
-member this.Transform(f:int->int) =
+member this.Transform(f: int->int) =
     ...
 ```
 
 Do this:
 
 ```fsharp
-member this.Transform(f:Func<int,int>) =
+member this.Transform(f: Func<int,int>) =
     ...
 ```
 
@@ -633,18 +633,18 @@ Common patterns of use for the F# option type in APIs are better implemented in 
 ```fsharp
 member this.ReturnOption() = Some 3
 
-member this.ReturnBoolAndOut(outVal : byref<int>) =
+member this.ReturnBoolAndOut(outVal: byref<int>) =
     outVal <- 3
     true
 
-member this.ParamOption(x : int, y : int option) =
+member this.ParamOption(x: int, y: int option) =
     match y with
     | Some y2 -> x + y2
     | None -> x
 
-member this.ParamOverload(x : int) = x
+member this.ParamOverload(x: int) = x
 
-member this.ParamOverload(x : int, y : int) = x + y
+member this.ParamOverload(x: int, y: int) = x + y
 ```
 
 #### Use the .NET collection interface types IEnumerable\<T\> and IDictionary\<Key,Value\> for parameters and return values
@@ -654,14 +654,14 @@ Avoid the use of concrete collection types such as .NET arrays `T[]`, F# types `
 Instead of F# lists:
 
 ```fsharp
-member this.PrintNames(names : string list) =
+member this.PrintNames(names: string list) =
     ...
 ```
 
 Use F# sequences:
 
 ```fsharp
-member this.PrintNames(names : seq<string>) =
+member this.PrintNames(names: seq<string>) =
     ...
 ```
 
@@ -672,13 +672,13 @@ Avoid other uses of the unit type. These are good:
 ```fsharp
 ✔ member this.NoArguments() = 3
 
-✔ member this.ReturnVoid(x : int) = ()
+✔ member this.ReturnVoid(x: int) = ()
 ```
 
 This is bad:
 
 ```fsharp
-member this.WrongUnit( x:unit, z:int) = ((), ())
+member this.WrongUnit( x: unit, z: int) = ((), ())
 ```
 
 #### Check for null values on vanilla .NET API boundaries

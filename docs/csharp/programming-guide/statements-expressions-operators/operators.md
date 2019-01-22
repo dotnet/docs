@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
 ---
 # Operators (C# Programming Guide)
+
 In C#, an *operator* is a program element that is applied to one or more *operands* in an expression or statement. Operators that take one operand, such as the increment operator (`++`) or `new`, are referred to as *unary* operators. Operators that take two operands, such as arithmetic operators (`+`,`-`,`*`,`/`), are referred to as *binary* operators. One operator, the conditional operator (`?:`), takes three operands and is the sole ternary operator in C#.  
   
  The following C# statement contains a single unary operator and a single operand. The increment operator, `++`, modifies the value of the operand `y`.  
@@ -19,7 +20,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
   
  [!code-csharp[csProgGuideStatements#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/operators_2.cs)]  
   
-## Operators, Evaluation, and Operator Precedence  
+## Operators, evaluation, and operator precedence
+
  An operand can be a valid expression that is composed of any length of code, and it can comprise any number of sub expressions. In an expression that contains multiple operators, the order in which the operators are applied is determined by *operator precedence*, *associativity*, and parentheses.  
   
  Each operator has a defined precedence. In an expression that contains multiple operators that have different precedence levels, the precedence of the operators determines the order in which the operators are evaluated. For example, the following statement assigns 3 to `n1`.  
@@ -121,7 +123,8 @@ In C#, an *operator* is a program element that is applied to one or more *operan
 |x op= y|Compound assignment. Supports these operators: [+=](../../../csharp/language-reference/operators/addition-assignment-operator.md), [-=](../../../csharp/language-reference/operators/subtraction-assignment-operator.md), [*=](../../../csharp/language-reference/operators/multiplication-assignment-operator.md), [/=](../../../csharp/language-reference/operators/division-assignment-operator.md), [%=](../../../csharp/language-reference/operators/modulus-assignment-operator.md), [&=](../../../csharp/language-reference/operators/and-assignment-operator.md), [&#124;=](../../../csharp/language-reference/operators/or-assignment-operator.md), [^=](../../../csharp/language-reference/operators/xor-assignment-operator.md), [<\<=](../../../csharp/language-reference/operators/left-shift-assignment-operator.md), [>>=](../../../csharp/language-reference/operators/right-shift-assignment-operator.md)|  
 |(T x) [=>](../../../csharp/language-reference/operators/lambda-operator.md) y|Anonymous function (lambda expression)|  
   
-## Associativity  
+## Associativity
+
  When two or more operators that have the same precedence are present in an expression, they are evaluated based on associativity. Left-associative operators are evaluated in order from left to right. For example, `x * y / z` is evaluated as `(x * y) / z`. Right-associative operators are evaluated in order from right to left. For example, the assignment operator is right associative. If it were not, the following code would result in an error.  
   
 ```csharp  
@@ -148,7 +151,8 @@ a = (b = c);
 |`a = b - c + d`|a, b, c, -, d, +, =|  
 |`a += b -= c`|a, b, c, -=, +=|  
   
-## Adding Parentheses  
+## Adding parentheses
+
  You can change the order imposed by operator precedence and associativity by using parentheses. For example, `2 + 3 * 2` ordinarily evaluates to 8, because multiplicative operators take precedence over additive operators. However, if you write the expression as `(2 + 3) * 2`, the addition is evaluated before the multiplication, and the result is 10. The following examples illustrate the order of evaluation in parenthesized expressions. As in previous examples, the operands are evaluated before the operator is applied.  
   
 |Statement|Order of evaluation|  
@@ -157,10 +161,12 @@ a = (b = c);
 |`a = b - (c + d)`|a, b, c, d, +, -, =|  
 |`a = (b + c) * (d - e)`|a, b, c, +, d, e, -, *, =|  
   
-## Operator Overloading  
+## Operator overloading
+
  You can change the behavior of operators for custom classes and structs. This process is referred to as *operator overloading*. For more information, see [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md) and the [operator](../../../csharp/language-reference/keywords/operator.md) keyword article.  
   
-## Related Sections  
+## Related sections
+
  For more information, see [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md) and [C# Operators](../../../csharp/language-reference/operators/index.md).  
   
 ## See Also

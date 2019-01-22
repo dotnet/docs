@@ -17,13 +17,13 @@ The `behavior` element contains a collection of settings for the behavior of a s
 ## Syntax  
   
 ```xml  
-<system.ServiceModel>  
-  <behaviors>  
-    <serviceBehaviors>  
-       <behavior name="String" />  
-    </serviceBehaviors>  
-  </behaviors>  
-</system.ServiceModel>  
+<system.ServiceModel>
+  <behaviors>
+    <serviceBehaviors>
+       <behavior name="String" />
+    </serviceBehaviors>
+  </behaviors>
+</system.ServiceModel>
 ```  
   
 ## Attributes and Elements  

@@ -674,4 +674,4 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 
 ## See Also
 
-* [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)
+- [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

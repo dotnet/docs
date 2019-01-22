@@ -84,6 +84,6 @@ You can also create a new method for an enum by using an extension method. For m
 
 ## See Also
 
-- <xref:System.Enum?displayProperty=nameWithType>  
-- [C# Programming Guide](../../csharp/programming-guide/index.md)  
+- <xref:System.Enum?displayProperty=nameWithType>
+- [C# Programming Guide](../../csharp/programming-guide/index.md)
 - [enum](../../csharp/language-reference/keywords/enum.md)

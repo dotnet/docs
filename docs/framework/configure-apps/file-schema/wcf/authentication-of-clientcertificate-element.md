@@ -17,14 +17,12 @@ Specifies authentication behaviors for client certificates used by a service.
 ## Syntax  
   
 ```xml  
-<authentication  
-customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-includeWindowsGroups="Boolean"  
-mapClientCertificateToWindowsAccount="Boolean"  
-revocationMode="NoCheck/Online/Offline"  
-trustedStoreLocation="CurrentUser/LocalMachine"   
-/>  
+<authentication customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                includeWindowsGroups="Boolean"
+                mapClientCertificateToWindowsAccount="Boolean"
+                revocationMode="NoCheck/Online/Offline"
+                trustedStoreLocation="CurrentUser/LocalMachine" />
 ```  
   
 ## Attributes and Elements  
@@ -83,22 +81,21 @@ trustedStoreLocation="CurrentUser/LocalMachine"
  The following code specifies an X.509 certificate and a custom validation type in the `<authentication>` element.  
   
 ```xml  
-<serviceBehaviors>  
- <behavior name="myServiceBehavior">  
-  <clientCertificate>  
-   <certificate   
-         findValue="www.cohowinery.com"   
-         storeLocation="CurrentUser"   
-         storeName="TrustedPeople"  
-         x509FindType="FindByIssuerName" />  
-   <authentication customCertificateValidatorType="MyTypes.Coho"  
-    certificateValidationMode="Custom"   
-    revocationMode="Offline"  
-    includeWindowsGroups="false"   
-    mapClientCertificateToWindowsAccount="true" />  
-  </clientCertificate>  
- </behavior>  
-</serviceBehaviors>  
+<serviceBehaviors>
+  <behavior name="myServiceBehavior">
+    <clientCertificate>
+      <certificate findValue="www.cohowinery.com"
+                   storeLocation="CurrentUser"
+                   storeName="TrustedPeople"
+                   x509FindType="FindByIssuerName" />
+      <authentication customCertificateValidatorType="MyTypes.Coho"
+                      certificateValidationMode="Custom"
+                      revocationMode="Offline"
+                      includeWindowsGroups="false"
+                      mapClientCertificateToWindowsAccount="true" />
+    </clientCertificate>
+  </behavior>
+</serviceBehaviors>
 ```  
   
 ## See Also  

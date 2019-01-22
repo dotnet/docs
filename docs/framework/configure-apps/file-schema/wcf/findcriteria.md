@@ -12,15 +12,18 @@ A configuration element that supplies a set of criteria used by a client applica
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
         <discoveryClientSettings discoveryEndpoint="String">
-          <findCriteria duration="TimeSpan" maxResults="Integer" scopeMatchBy="Uri">
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
+                        scopeMatchBy="Uri">
             <contractTypeNames>
-              <add name="String" namespace="String" />
-            <contractTypeNames>
+              <add name="String"
+                   namespace="String" />
+            </contractTypeNames>
             <extensions />
             <scopes>
               <add scope="URI" />
@@ -29,8 +32,8 @@ A configuration element that supplies a set of criteria used by a client applica
         </discoveryClientSettings>
       </standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  

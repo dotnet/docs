@@ -15,12 +15,12 @@ Specifies settings for a custom peer resolver service.
   
 ## Syntax  
   
-```xml
-<custom address="Uri" 
-        resolverType="String">  
-  <headers/>  
-  <identity/>  
-</custom>  
+```xml  
+<custom address="Uri"
+        resolverType="String">
+  <headers/>
+  <identity/>
+</custom>
 ```  
   
 ## Attributes and Elements  

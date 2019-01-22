@@ -14,11 +14,10 @@ helpviewer_keywords:
 ms.assetid: 5cc1c0b0-f94b-4525-9a41-88a582cd6668
 ---
 # How to: Specify an Alternate Element Name for an XML Stream
-[Code Example](#cpconoverridingserializationofclasseswithxmlattributeoverridesclassanchor1)  
   
- Using the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx), you can generate more than one XML stream with the same set of classes. You might want to do this because two different XML Web services require the same basic information, with only slight differences. For example, imagine two XML Web services that process orders for books, and thus both require ISBN numbers. One service uses the tag \<ISBN> while the second uses the tag \<BookID>. You have a class named `Book` that contains a field named `ISBN`. When an instance of the `Book` class is serialized, it will, by default, use the member name (ISBN) as the tag element name. For the first XML Web service, this is as expected. But to send the XML stream to the second XML Web service, you must override the serialization so that the tag's element name is `BookID`.  
+Using the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx), you can generate more than one XML stream with the same set of classes. You might want to do this because two different XML Web services require the same basic information, with only slight differences. For example, imagine two XML Web services that process orders for books, and thus both require ISBN numbers. One service uses the tag \<ISBN> while the second uses the tag \<BookID>. You have a class named `Book` that contains a field named `ISBN`. When an instance of the `Book` class is serialized, it will, by default, use the member name (ISBN) as the tag element name. For the first XML Web service, this is as expected. But to send the XML stream to the second XML Web service, you must override the serialization so that the tag's element name is `BookID`.  
   
-### To create an XML stream with an alternate element name  
+## To create an XML stream with an alternate element name  
   
 1.  Create an instance of the <xref:System.Xml.Serialization.XmlElementAttribute> class.  
   

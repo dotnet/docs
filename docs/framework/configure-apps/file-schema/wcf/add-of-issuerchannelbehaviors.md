@@ -21,8 +21,8 @@ endpointBehaviors section
 ## Syntax  
   
 ```xml  
-<add issuerAddress="string"  
-     behaviorConfiguraton="string" />  
+<add issuerAddress="string"
+     behaviorConfiguraton="string" />
 ```  
   
 ## Attributes and Elements  

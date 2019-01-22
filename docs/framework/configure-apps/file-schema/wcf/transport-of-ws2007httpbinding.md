@@ -15,11 +15,10 @@ Defines authentication settings for the HTTP transport.
   
 ## Syntax  
   
-```  
-transport clientCredentialType =   
-       "Basic/Certificate/Digest/None/Ntlm/Windows"  
-       proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-       realm="string"   
+```xml  
+<transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+           proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+           realm="string" />
 ```  
   
 ## Type  

@@ -14,22 +14,22 @@ Defines a transport that causes a channel to transfer messages using named pipes
   
 ## Syntax  
   
-```xml
-<namedPipeTransport channelInitializationTimeout="TimeSpan"   
-                    connectionBufferSize="Integer"   
-                    hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-                    manualAddressing="Boolean"   
-                    maxBufferPoolSize="Integer"  
-                    maxBufferSize="Integer"  
-                    maxOutputDelay="TimeSpan"  
-                    maxPendingAccepts="Integer"   
-                    maxPendingConnections="Integer"  
-                    maxReceivedMessageSize="Integer"   
-                    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">  
-  <connectionPoolSettings groupName="String" 
-                          idleTimeout"TimeSpan"  
-                          maxOutboundConnectionsPerEndpopint="Integer" />  
-</namedPipeTransport>  
+```xml  
+<namedPipeTransport channelInitializationTimeout="TimeSpan"
+                    connectionBufferSize="Integer"
+                    hostNameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+                    manualAddressing="Boolean"
+                    maxBufferPoolSize="Integer"
+                    maxBufferSize="Integer"
+                    maxOutputDelay="TimeSpan"
+                    maxPendingAccepts="Integer"
+                    maxPendingConnections="Integer"
+                    maxReceivedMessageSize="Integer"
+                    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse">
+  <connectionPoolSettings groupName="String"
+                          idleTimeout="TimeSpan"
+                          maxOutboundConnectionsPerEndpopint="Integer" />
+</namedPipeTransport>
 ```  
   
 ## Attributes and Elements  

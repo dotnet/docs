@@ -351,7 +351,7 @@ type PostalAddress =
     
 type MyRecord =
     {
-        SomeField : int
+        SomeField: int
     }
     interface IMyInterface
 ```
@@ -393,7 +393,7 @@ let rainbow =
     
 type MyRecord =
     {
-        SomeField : int
+        SomeField: int
     }
     interface IMyInterface
 
@@ -670,7 +670,7 @@ Object expressions and interfaces should be aligned in the same way with `member
 let comparer =
     { new IComparer<string> with
           member x.Compare(s1, s2) =
-              let rev (s : String) =
+              let rev (s: String) =
                   new String (Array.rev (s.ToCharArray()))
               let reversed = rev s1
               reversed.CompareTo (rev s2) }

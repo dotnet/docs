@@ -15,7 +15,7 @@ Specifies the timeout value when flowing transactions from server to client.in a
 ## Syntax  
   
 ```xml  
-<callbackTimeOuts transactionTimeout="TimeSpan" />  
+<callbackTimeOuts transactionTimeout="TimeSpan" />
 ```  
   
 ## Type  

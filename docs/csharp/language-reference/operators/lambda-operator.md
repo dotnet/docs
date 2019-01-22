@@ -21,7 +21,7 @@ The following example uses the [LINQ](../../programming-guide/concepts/linq/inde
 
 [!code-csharp-interactive[infer types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#InferredTypes)]
 
-Input variables of lambda expressions are strongly typed at compile time. When the compiler can infer the types of input variables, like in the preceding example, you might omit type declarations. If you need to specify the type of input variables, you must do that for each variable, as the following example shows:
+Input variables of lambda expressions are strongly typed at compile time. When the compiler can infer the types of input variables, like in the preceding example, you may omit type declarations. If you need to specify the type of input variables, you must do that for each variable, as the following example shows:
 
 [!code-csharp-interactive[specify types of input variables](~/samples/snippets/csharp/language-reference/operators/LambdaOperatorExamples.cs#ExplicitTypes)]
 

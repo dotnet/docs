@@ -5,7 +5,6 @@ author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 01/18/2019
 ---
-
 # Native interoperability best practices
 
 .NET gives you a variety of ways to customize your native interoperability code. This article includes the guidance that Microsoft's .NET teams follow for native interoperability.
@@ -27,9 +26,9 @@ The guidance in this section applies to all interop scenarios.
 | Setting | Default | Recommendation | Details |
 |---------|---------|----------------|---------|
 | <xref:System.Runtime.InteropServices.DllImportAttribute.PreserveSig>   | `true` |  keep default  | When this is explicitly set to false, failed HRESULT return values will be turned into exceptions (and the return value in the definition becomes null as a result).|
-| [`SetLastError`](xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError) | `false`  | depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
-| [`CharSet`](xref:System.Runtime.InteropServices.DllImportAttribute.CharSet) | `CharSet.None`, which falls back to `CharSet.Ansi` behavior  | Explicitly  use `CharSet.Unicode` or `CharSet.Ansi` when strings or characters are present in the definition | This specifies marshalling behavior of strings and what `ExactSpelling` does when `false`. Note that `CharSet.Ansi` is actually UTF8 on Unix. _Most_ of the time Windows uses Unicode while Unix uses UTF8. See more information on the [documentation on charsets](./charset.md). |
-| [`ExactSpelling`](xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling) | `false` | `true`             | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
+| <xref:System.Runtime.InteropServices.DllImportAttribute.SetLastError> | `false`  | depends on the API  | Set this to true if the API uses GetLastError and use Marshal.GetLastWin32Error to get the value. If the API sets a condition that says it has an error, get the error before making other calls to avoid inadvertently having it overwritten.|
+| <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> | `CharSet.None`, which falls back to `CharSet.Ansi` behavior  | Explicitly  use `CharSet.Unicode` or `CharSet.Ansi` when strings or characters are present in the definition | This specifies marshalling behavior of strings and what `ExactSpelling` does when `false`. Note that `CharSet.Ansi` is actually UTF8 on Unix. _Most_ of the time Windows uses Unicode while Unix uses UTF8. See more information on the [documentation on charsets](./charset.md). |
+| <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> | `false` | `true`             | Set this to true and gain a slight perf benefit as the runtime will not look for alternate function names with either an "A" or "W" suffix depending on the value of the `CharSet` setting ("A" for `CharSet.Ansi` and "W" for `CharSet.Unicode`). |
 
 ## String parameters
 
@@ -37,10 +36,9 @@ When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(
 
 Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly want ANSI treatment of your strings.
 
-**❌ DO NOT** use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern?displayProperty=nameWithType>.
+**❌ DO NOT** use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
-**❌ AVOID** `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such it can be extremely inefficient. Take the typical
-scenario of calling a Windows API that takes a string:
+**❌ AVOID** `StringBuilder` parameters. `StringBuilder` marshalling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
 
 1. Create a SB of the desired capacity (allocates managed capacity) **{1}**
 2. Invoke
@@ -58,7 +56,7 @@ If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not
 
 **✔️ CONSIDER** using `char[]`s from an `ArrayPool`.
 
-For more information on string marshalling, see the documentation on [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings) and [customizing string marshalling](./customize-parameter-marshalling#customizing-string-parameters).
+For more information on string marshalling, see [Default Marshalling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshalling](customize-parameter-marshalling.md#customizing-string-parameters).
 
 > __Windows Specific__  
 > For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
@@ -71,13 +69,13 @@ as `UnmanagedType.BSTR`.
 
 ## Boolean parameters and fields
 
-Booleans are easy to mess up. By default, a .NET `bool` is marshalled to a Windows `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshalling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshalling](customize-struct-marshalling#customizing-boolean-field-marshalling).
+Booleans are easy to mess up. By default, a .NET `bool` is marshalled to a Windows `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshalling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshalling](customize-struct-marshalling.md#customizing-boolean-field-marshalling).
 
 ## GUIDs
 
 GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type aliases like `REFIID`. When passed by ref, they can either be passed by `ref` or with the `[MarshalAs(UnmanagedType.LPStruct)]` attribute.
 
-| Guid | By-ref Guid |
+| GUID | By-ref GUID |
 |------|-------------|
 | `KNOWNFOLDERID` | `REFKNOWNFOLDERID` |
 
@@ -123,8 +121,8 @@ You can see if a type is blittable by attempting to create a pinned `GCHandle`. 
 
 For more information, see:
 
-- [Blittable and Non-Blittable Types](../../framework/interop/blittable-and-non-blittable-types)  
-- [Type Marshalling](./type-marshalling)
+- [Blittable and Non-Blittable Types](../../framework/interop/blittable-and-non-blittable-types.md)  
+- [Type Marshalling](type-marshalling.md)
 
 ## Keeping managed objects alive
 
@@ -201,9 +199,9 @@ The following types, being pointers, do follow the width of the platform. Use `I
 
 A Windows `PVOID` which is a C `void*` can be marshaled as either `IntPtr` or `UIntPtr`, but prefer `void*` when possible.
 
-[Windows Data Types](https://docs.microsoft.com/windows/desktop/WinProg/windows-data-types)
+[Windows Data Types](/windows/desktop/WinProg/windows-data-types)
 
-[Data Type Ranges](https://docs.microsoft.com/cpp/cpp/data-type-ranges)
+[Data Type Ranges](/cpp/cpp/data-type-ranges)
 
 ## Structs
 

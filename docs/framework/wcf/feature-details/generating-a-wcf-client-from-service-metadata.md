@@ -64,5 +64,5 @@ svcutil.exe [/t:code]  <metadataDocumentPath>* | <url>* | <epr>
 |**/noConfig**|Do not generate configuration files.|  
   
 ## See also
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)
+- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)

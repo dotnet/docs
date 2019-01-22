@@ -16,5 +16,5 @@ This example shows how to implement the master-detail scenario with [!INCLUDE[TL
 [!code-xaml[MasterDetailXml#HowTo2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MasterDetailXml/CS/Window1.xaml#howto2)]  
   
 ## See also
- <xref:System.Windows.HierarchicalDataTemplate>  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- <xref:System.Windows.HierarchicalDataTemplate>
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

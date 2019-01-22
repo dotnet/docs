@@ -724,11 +724,11 @@ Windows Presentation Foundation (WPF) supports browser-style navigation that can
  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] navigation support allows [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] to be navigated to across the Internet, and it allows applications to host third-party content. To protect both applications and users from harmful behavior, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] provides a variety of security features that are discussed in [Security](../../../../docs/framework/wpf/security-wpf.md) and [WPF Partial Trust Security](../../../../docs/framework/wpf/wpf-partial-trust-security.md).  
   
 ## See also
- <xref:System.Windows.Application.SetCookie%2A>  
- <xref:System.Windows.Application.GetCookie%2A>  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)  
- [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/app-development/navigation-how-to-topics.md)  
- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)
+- <xref:System.Windows.Application.SetCookie%2A>
+- <xref:System.Windows.Application.GetCookie%2A>
+- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)
+- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+- [Structured Navigation Overview](../../../../docs/framework/wpf/app-development/structured-navigation-overview.md)
+- [Navigation Topologies Overview](../../../../docs/framework/wpf/app-development/navigation-topologies-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/app-development/navigation-how-to-topics.md)
+- [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)

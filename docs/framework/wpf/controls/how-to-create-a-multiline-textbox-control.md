@@ -18,6 +18,6 @@ This example shows how to use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlash
  [!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]  
   
 ## See also
- <xref:System.Windows.TextWrapping>  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- <xref:System.Windows.TextWrapping>
+- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

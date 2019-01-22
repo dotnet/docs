@@ -15,5 +15,5 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
 2.  If you changed a project from .dll to .exe or vice versa, you must manually unregister the old .dll or .exe.  
   
 ## See also
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

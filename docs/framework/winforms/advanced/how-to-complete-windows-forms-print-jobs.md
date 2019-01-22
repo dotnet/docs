@@ -75,5 +75,5 @@ Frequently, word processors and other applications that involve printing will pr
     ```  
   
 ## See also
- <xref:System.Drawing.Printing.PrintDocument>  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- <xref:System.Drawing.Printing.PrintDocument>
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

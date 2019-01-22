@@ -27,8 +27,8 @@ This example changes the color of a pre-existing <xref:System.Drawing.Pen> objec
  You should call <xref:System.Drawing.Pen.Dispose%2A> on objects that consume system resources (such as <xref:System.Drawing.Pen> objects) after you are finished using them.  
   
 ## See also
- <xref:System.Drawing.Pen>  
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)  
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
- [Pens, Lines, and Rectangles in GDI+](../../../../docs/framework/winforms/advanced/pens-lines-and-rectangles-in-gdi.md)
+- <xref:System.Drawing.Pen>
+- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
+- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)
+- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
+- [Pens, Lines, and Rectangles in GDI+](../../../../docs/framework/winforms/advanced/pens-lines-and-rectangles-in-gdi.md)

@@ -25,6 +25,6 @@ ms.assetid: 743e3755-3ecb-45a2-8d9b-9ed41f0dcf17
  <xref:System.Data.DataRowComparer>  
   
 ## See also
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+- [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)

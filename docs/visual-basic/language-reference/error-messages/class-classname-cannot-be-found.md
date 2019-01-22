@@ -26,4 +26,4 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   
 ## See also
- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

@@ -108,9 +108,9 @@ When you use reflection to load and run assemblies, you cannot use language feat
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See also
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Emit.DynamicMethod>  
- <xref:System.Activator.CreateInstance%2A>  
- <xref:System.Delegate.CreateDelegate%2A>  
- [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)  
- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
+- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Emit.DynamicMethod>
+- <xref:System.Activator.CreateInstance%2A>
+- <xref:System.Delegate.CreateDelegate%2A>
+- [How to: Define and Execute Dynamic Methods](../../../docs/framework/reflection-and-codedom/how-to-define-and-execute-dynamic-methods.md)
+- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)

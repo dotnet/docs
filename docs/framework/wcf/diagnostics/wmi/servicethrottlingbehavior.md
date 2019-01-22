@@ -51,4 +51,4 @@ class ServiceThrottlingBehavior : Behavior
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>

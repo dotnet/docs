@@ -23,9 +23,9 @@ However, with multidimensional arrays, using a nested [for](../../language-refer
 
 ## See also
 
-- <xref:System.Array>  
-- [C# Programming Guide](../index.md)  
-- [Arrays](index.md)  
-- [Single-Dimensional Arrays](single-dimensional-arrays.md)  
-- [Multidimensional Arrays](multidimensional-arrays.md)  
+- <xref:System.Array>
+- [C# Programming Guide](../index.md)
+- [Arrays](index.md)
+- [Single-Dimensional Arrays](single-dimensional-arrays.md)
+- [Multidimensional Arrays](multidimensional-arrays.md)
 - [Jagged Arrays](jagged-arrays.md)

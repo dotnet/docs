@@ -28,6 +28,6 @@ The process of adding an item to a Windows Forms <xref:System.Windows.Forms.List
      [!code-vb[System.Windows.Forms.ListViewLegacyTopics#12](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/VB/Class1.vb#12)]  
   
 ## See also
- <xref:System.Windows.Forms.ListView>  
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)
+- <xref:System.Windows.Forms.ListView>
+- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
+- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)

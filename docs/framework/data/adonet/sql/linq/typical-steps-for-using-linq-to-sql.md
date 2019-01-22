@@ -76,6 +76,6 @@ To implement a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md
  For more information, see [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md).  
   
 ## See also
- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)  
- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)  
- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+- [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)
+- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
+- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

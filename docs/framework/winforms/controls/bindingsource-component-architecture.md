@@ -163,11 +163,11 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
  You can use the <xref:System.Windows.Forms.BindingSource> component to bind any Windows Forms control to a data source, but the <xref:System.Windows.Forms.BindingNavigator> control is designed specifically to work with the <xref:System.Windows.Forms.BindingSource> component. The <xref:System.Windows.Forms.BindingNavigator> control provides a user interface for controlling the <xref:System.Windows.Forms.BindingSource> component's current item. By default, the <xref:System.Windows.Forms.BindingNavigator> control provides buttons that correspond to the navigation methods on the <xref:System.Windows.Forms.BindingSource> component. For more information, see [How to: Navigate Data with the Windows Forms BindingNavigator Control](../../../../docs/framework/winforms/controls/how-to-navigate-data-with-the-windows-forms-bindingnavigator-control.md).  
   
 ## See also
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.BindingNavigator>  
- [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)  
- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
- [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)  
- [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](../../../../docs/framework/winforms/controls/reflect-data-source-updates-in-a-wf-control-with-the-bindingsource.md)
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.BindingNavigator>
+- [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)
+- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)
+- [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](../../../../docs/framework/winforms/controls/reflect-data-source-updates-in-a-wf-control-with-the-bindingsource.md)

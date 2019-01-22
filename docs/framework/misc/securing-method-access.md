@@ -235,4 +235,4 @@ class Implemented : ICanCastToMe
  Note that even if a language compiler prevents these overrides with a compilation error, it is possible for code written with other compilers to override.  
   
 ## See also
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

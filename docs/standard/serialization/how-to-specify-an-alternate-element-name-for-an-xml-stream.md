@@ -87,11 +87,11 @@ public class SerializeOverride()
   
 ## See also
 
-- <xref:System.Xml.Serialization.XmlElementAttribute>  
-- <xref:System.Xml.Serialization.XmlAttributes>  
-- <xref:System.Xml.Serialization.XmlAttributeOverrides>  
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
-- [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)  
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)  
+- <xref:System.Xml.Serialization.XmlElementAttribute>
+- <xref:System.Xml.Serialization.XmlAttributes>
+- <xref:System.Xml.Serialization.XmlAttributeOverrides>
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

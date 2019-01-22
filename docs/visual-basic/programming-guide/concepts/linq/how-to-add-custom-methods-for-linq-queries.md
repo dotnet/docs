@@ -192,5 +192,5 @@ Next
 ```  
   
 ## See also
- <xref:System.Collections.Generic.IEnumerable%601>  
- [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- <xref:System.Collections.Generic.IEnumerable%601>
+- [Extension Methods](../../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)

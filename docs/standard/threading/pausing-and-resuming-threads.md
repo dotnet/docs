@@ -45,9 +45,9 @@ The most common ways to synchronize the activities of threads are to block and r
   
 ## See also
 
-- <xref:System.Threading.Thread>  
-- <xref:System.Threading.ThreadInterruptedException>  
-- <xref:System.Threading.ThreadAbortException>  
-- [Threading](../../../docs/standard/threading/index.md)  
-- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)  
+- <xref:System.Threading.Thread>
+- <xref:System.Threading.ThreadInterruptedException>
+- <xref:System.Threading.ThreadAbortException>
+- [Threading](../../../docs/standard/threading/index.md)
+- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)
 - [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)

@@ -30,9 +30,9 @@ To help ensure that the freshest content is returned to the client application, 
 -   If the cache policy sets `maxAge` = 1 day and `maxStale` = 1 day, the content is revalidated on January 2.  
   
 ## See also
- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)  
- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)  
- [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)  
- [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)
+- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
+- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
+- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)
+- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)
+- [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)
+- [Cache Policy Interaction—Maximum Age and Minimum Freshness](../../../docs/framework/network-programming/cache-policy-interaction-maximum-age-and-minimum-freshness.md)

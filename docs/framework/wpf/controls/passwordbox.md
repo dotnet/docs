@@ -12,6 +12,6 @@ ms.assetid: 4dbf0320-30c2-4015-b9bc-4f6502f78e32
 The <xref:System.Windows.Controls.PasswordBox> control is used to input sensitive or private information.  
   
 ## See also
- <xref:System.Windows.Controls.TextBox>  
- <xref:System.Windows.Controls.RichTextBox>  
- [Control Library](../../../../docs/framework/wpf/controls/control-library.md)
+- <xref:System.Windows.Controls.TextBox>
+- <xref:System.Windows.Controls.RichTextBox>
+- [Control Library](../../../../docs/framework/wpf/controls/control-library.md)

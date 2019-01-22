@@ -82,5 +82,5 @@ Sometimes you have to use special characters in your code, that is, characters t
  The `!` character is also used as the `Single` type character.  
   
 ## See also
- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
+- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

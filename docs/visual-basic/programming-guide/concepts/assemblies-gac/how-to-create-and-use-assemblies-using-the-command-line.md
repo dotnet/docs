@@ -112,6 +112,6 @@ vbc -out:TestCode.exe -reference:MathLibrary.DLL TestCode.vb
  For more information about building from the command line, see  and [Building from the Command Line](../../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
   
 ## See also
- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)
+- [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
+- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Creating a Class to Hold DLL Functions](../../../../framework/interop/creating-a-class-to-hold-dll-functions.md)

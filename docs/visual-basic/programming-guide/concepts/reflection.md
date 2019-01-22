@@ -56,5 +56,5 @@ System.Console.WriteLine(info)
 -   [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md)  
   
 ## See also
- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)  
- [Assemblies in the Common Language Runtime](../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
+- [Assemblies in the Common Language Runtime](../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)

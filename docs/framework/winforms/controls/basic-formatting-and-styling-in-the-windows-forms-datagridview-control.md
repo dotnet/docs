@@ -52,4 +52,4 @@ The `DataGridView` control makes it easy to define the basic appearance of cells
  Provides topics that describe commonly used cell, row, and column properties.  
   
 ## See also
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

@@ -47,4 +47,4 @@ HRESULT UpdateSymbolStore2(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

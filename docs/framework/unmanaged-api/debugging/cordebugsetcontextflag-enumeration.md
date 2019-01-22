@@ -50,5 +50,5 @@ typedef enum CorDebugSetContextFlag
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

@@ -39,6 +39,6 @@ ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
  See <xref:System.Windows.Data.PriorityBinding> for information about what is considered a successful return value from a binding.  
   
 ## See also
- <xref:System.Windows.Data.Binding.IsAsync%2A?displayProperty=nameWithType>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- <xref:System.Windows.Data.Binding.IsAsync%2A?displayProperty=nameWithType>
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

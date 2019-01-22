@@ -27,4 +27,4 @@ HRESULT GetKickoffMethod(    [out, retval] mdToken* kickoffMethod);
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)

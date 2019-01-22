@@ -44,7 +44,7 @@ Trace and debug settings specify trace listeners that collect, store, and route 
 |[\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md)|Contains listeners that collect, store, and route tracing messages.|  
   
 ## See also
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.Debug>  
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.Debug>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

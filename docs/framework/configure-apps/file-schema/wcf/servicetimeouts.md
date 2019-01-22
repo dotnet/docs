@@ -40,4 +40,4 @@ Specifies the timeout for a service.
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>
+- <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>

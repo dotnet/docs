@@ -73,5 +73,5 @@ This sample demonstrates how to implement and configure a typical service and cl
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigSimplificationIn40`  
   
 ## See also
- [AppFabric Management Samples](https://go.microsoft.com/fwlink/?LinkId=193960)  
- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
+- [AppFabric Management Samples](https://go.microsoft.com/fwlink/?LinkId=193960)
+- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)

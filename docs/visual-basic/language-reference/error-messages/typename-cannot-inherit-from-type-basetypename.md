@@ -24,7 +24,7 @@ A class or interface inherits from a base class or interface but has a less rest
 -   If you require the less restrictive access level, remove the `Inherits` statement. You cannot inherit from a more restricted base class or interface.  
   
 ## See also
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)

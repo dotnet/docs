@@ -91,4 +91,4 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
 |Can be Empty||  
   
 ## See also
- [\<system.web> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)
+- [\<system.web> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)

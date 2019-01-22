@@ -40,4 +40,4 @@ You can customize project templates to provide additional `My` objects. This mak
  Describes the `My` object that provides properties, methods, and events related to the current application.  
   
 ## See also
- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)
+- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

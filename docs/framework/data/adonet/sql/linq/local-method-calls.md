@@ -21,4 +21,4 @@ A local method call is one that is executed within the object model. A remote me
  [!code-vb[DlinqLocalMethodCall#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqLocalMethodCall/vb/northwind.vb#2)]  
   
 ## See also
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

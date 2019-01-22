@@ -30,7 +30,7 @@ If a [class](../../../csharp/language-reference/keywords/class.md) implements tw
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
 - [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

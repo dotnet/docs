@@ -59,4 +59,4 @@ class TransportBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>

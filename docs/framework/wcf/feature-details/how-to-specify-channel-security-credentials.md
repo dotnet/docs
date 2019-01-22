@@ -132,8 +132,8 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
      For more information about the parameters for this method, see <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29>.  
   
 ## See also
- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)  
- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)  
- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)  
- [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)  
- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
+- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)
+- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
+- [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
+- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)

@@ -34,4 +34,4 @@ HRESULT Abort();
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

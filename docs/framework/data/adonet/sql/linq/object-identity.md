@@ -37,4 +37,4 @@ Objects in the runtime have unique identities. Two variables that refer to the s
  [!code-vb[DLinqObjectIdentity#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb/Module1.vb#2)]  
   
 ## See also
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

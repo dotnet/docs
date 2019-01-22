@@ -108,7 +108,7 @@ For more detailed information on expression body definitions, see [Expression-bo
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)   
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)   
-- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)   
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)
 - [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).

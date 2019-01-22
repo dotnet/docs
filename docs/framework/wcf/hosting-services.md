@@ -56,10 +56,10 @@ To become active, a service must be hosted within a run-time environment that cr
  It is important to note that running a service or any extension from an untrusted host compromises security. Also, note that when opening a <xref:System.ServiceModel.ServiceHost> under impersonation, an application must ensure that the user is not logged off, for example by caching the <xref:System.Security.Principal.WindowsIdentity> of the user.  
   
 ## See also
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)  
- [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)  
- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)  
- [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)  
- [How to: Host a WCF Service in WAS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)  
- [How to: Host a WCF Service in a Managed Windows Service](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)  
- [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)
+- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)
+- [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)
+- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)
+- [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)
+- [How to: Host a WCF Service in WAS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md)
+- [How to: Host a WCF Service in a Managed Windows Service](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-a-managed-windows-service.md)
+- [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)

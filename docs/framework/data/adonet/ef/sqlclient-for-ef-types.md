@@ -45,4 +45,4 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest fi
 |`xml`|Equal comparable: False<br /><br /> Order comparable: False|`Edm.String`|MaxLength:<br /><br /> - Default: 1073741823<br /><br /> - Constant: True<br /><br /> Unicode:<br /><br /> - Default: True<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
   
 ## See also
- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)

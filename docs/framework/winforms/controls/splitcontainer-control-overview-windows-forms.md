@@ -44,6 +44,6 @@ The Windows Forms <xref:System.Windows.Forms.SplitContainer> control can be thou
 |<xref:System.Windows.Forms.SplitContainer.SplitterMoved> event|Occurs when the splitter has moved.|  
   
 ## See also
- <xref:System.Windows.Forms.SplitContainer>  
- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)  
- [SplitContainer Control Sample](https://msdn.microsoft.com/library/9015fad0-7108-4d85-a83a-a72d038c4f65)
+- <xref:System.Windows.Forms.SplitContainer>
+- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)
+- [SplitContainer Control Sample](https://msdn.microsoft.com/library/9015fad0-7108-4d85-a83a-a72d038c4f65)

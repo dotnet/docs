@@ -45,5 +45,5 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
      A strong-named assembly can be installed in the global assembly cache and requires a signature from its publisher. Assemblies that are not strong named must be installed in the application directory of the client.  
   
 ## See also
- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)  
- [COM Interop Sample: COM Client and .NET Server](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)
+- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)
+- [COM Interop Sample: COM Client and .NET Server](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)

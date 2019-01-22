@@ -58,4 +58,4 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
 ```  
   
 ## See also
- <xref:System.IdentityModel.Services.ChunkedCookieHandler>
+- <xref:System.IdentityModel.Services.ChunkedCookieHandler>

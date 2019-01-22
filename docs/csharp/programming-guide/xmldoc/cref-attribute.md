@@ -115,5 +115,5 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
   
 ## See also
 
-- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
+- [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

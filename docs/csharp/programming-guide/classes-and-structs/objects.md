@@ -57,10 +57,10 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [object](../../../csharp/language-reference/keywords/object.md)  
-- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
-- [class](../../../csharp/language-reference/keywords/class.md)  
-- [struct](../../../csharp/language-reference/keywords/struct.md)  
-- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [object](../../../csharp/language-reference/keywords/object.md)
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
+- [struct](../../../csharp/language-reference/keywords/struct.md)
+- [new Operator](../../../csharp/language-reference/keywords/new-operator.md)
 - [Common Type System](../../../standard/base-types/common-type-system.md)

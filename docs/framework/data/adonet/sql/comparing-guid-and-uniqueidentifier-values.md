@@ -41,5 +41,5 @@ Sorted SqlGuids:
   
 ## See also
 
-[SQL Server Data Types and ADO.NET](sql-server-data-types.md)  
-[ADO.NET Overview](../ado-net-overview.md)  
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
+- [ADO.NET Overview](../ado-net-overview.md)

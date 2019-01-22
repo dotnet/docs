@@ -95,8 +95,8 @@ A state machine is a well-known paradigm for developing programs. The <xref:Syst
  A state which represents the completion of the state machine.  
   
 ## See also
- [How to: Create a State Machine Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-state-machine-workflow.md)  
- [StateMachine Activity Designer](/visualstudio/workflow-designer/statemachine-activity-designer)  
- [State Activity Designer](/visualstudio/workflow-designer/state-activity-designer)  
- [FinalState Activity Designer](/visualstudio/workflow-designer/finalstate-activity-designer)  
- [Transition Activity Designer](/visualstudio/workflow-designer/transition-activity-designer)
+- [How to: Create a State Machine Workflow](../../../docs/framework/windows-workflow-foundation/how-to-create-a-state-machine-workflow.md)
+- [StateMachine Activity Designer](/visualstudio/workflow-designer/statemachine-activity-designer)
+- [State Activity Designer](/visualstudio/workflow-designer/state-activity-designer)
+- [FinalState Activity Designer](/visualstudio/workflow-designer/finalstate-activity-designer)
+- [Transition Activity Designer](/visualstudio/workflow-designer/transition-activity-designer)

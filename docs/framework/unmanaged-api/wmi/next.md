@@ -97,4 +97,4 @@ If `plFlavor` is not `null`, the `LONG` value receives information about the ori
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

@@ -125,8 +125,8 @@ public static byte[] GetPhoto(string filePath)
 ```  
   
 ## See also
- [Using Commands to Modify Data](../../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)  
- [Retrieving Binary Data](../../../../../docs/framework/data/adonet/retrieving-binary-data.md)  
- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Using Commands to Modify Data](../../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)
+- [Retrieving Binary Data](../../../../../docs/framework/data/adonet/retrieving-binary-data.md)
+- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
+- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

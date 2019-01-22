@@ -23,12 +23,12 @@ A `Sub` procedure does not return a value to the calling code. You call it expli
      [!code-vb[VbVbalrCatRef#11](./codesnippet/VisualBasic/how-to-call-a-procedure-that-does-not-return-a-value_1.vb)]  
   
 ## See also
- <xref:Microsoft.VisualBasic.Interaction.Shell%2A>  
- <xref:System.ArgumentException>  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
- [How to: Create a Procedure](./how-to-create-a-procedure.md)  
- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)  
- [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)
+- <xref:Microsoft.VisualBasic.Interaction.Shell%2A>
+- <xref:System.ArgumentException>
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
+- [How to: Create a Procedure](./how-to-create-a-procedure.md)
+- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)
+- [How to: Call an Event Handler in Visual Basic](./how-to-call-an-event-handler.md)

@@ -28,10 +28,10 @@ Indicates that a conversion operator (`CType`) converts a class or structure to 
  For example definitions of widening and narrowing conversion operators, see [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md).  
   
 ## See also
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
+- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

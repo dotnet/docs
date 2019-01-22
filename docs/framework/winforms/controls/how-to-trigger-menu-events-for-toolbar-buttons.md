@@ -129,7 +129,7 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
     ```  
   
 ## See also
- <xref:System.Windows.Forms.ToolBar>  
- [How to: Add Buttons to a ToolBar Control](../../../../docs/framework/winforms/controls/how-to-add-buttons-to-a-toolbar-control.md)  
- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)  
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)
+- <xref:System.Windows.Forms.ToolBar>
+- [How to: Add Buttons to a ToolBar Control](../../../../docs/framework/winforms/controls/how-to-add-buttons-to-a-toolbar-control.md)
+- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)
+- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)

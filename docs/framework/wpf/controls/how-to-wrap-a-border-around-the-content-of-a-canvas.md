@@ -17,6 +17,6 @@ This example shows how to wrap a <xref:System.Windows.Controls.Canvas> element w
  [!code-xaml[CanvasHelloWorldBorder#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasHelloWorldBorder/CS/default.xaml#1)]  
   
 ## See also
- <xref:System.Windows.Controls.Canvas>  
- <xref:System.Windows.Controls.Border>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.Canvas>
+- <xref:System.Windows.Controls.Border>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

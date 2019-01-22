@@ -22,6 +22,6 @@ The `My.Forms` object provides an easy way to access an instance of each Windows
 |Update the splash screen with status information as the application starts.|<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>|  
   
 ## See also
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>  
- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A>
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)

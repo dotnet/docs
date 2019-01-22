@@ -146,12 +146,12 @@ End Class
      [!code-vb[VbVbalrLambdas#5](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/lambda-expressions_10.vb)]  
   
 ## See also
- [Procedures](./index.md)  
- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
- [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)  
- [How to: Create a Lambda Expression](./how-to-create-a-lambda-expression.md)  
- [Relaxed Delegate Conversion](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)
+- [Procedures](./index.md)
+- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [How to: Pass Procedures to Another Procedure in Visual Basic](../../../../visual-basic/programming-guide/language-features/delegates/how-to-pass-procedures-to-another-procedure.md)
+- [How to: Create a Lambda Expression](./how-to-create-a-lambda-expression.md)
+- [Relaxed Delegate Conversion](../../../../visual-basic/programming-guide/language-features/delegates/relaxed-delegate-conversion.md)

@@ -73,5 +73,5 @@ ORDER BY [t0].[CustomerID]
  For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.  
   
 ## See also
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

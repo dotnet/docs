@@ -62,6 +62,6 @@ class TestAssembly
   
 ## See also
 
-- <xref:System.Reflection.AssemblyName>  
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
+- <xref:System.Reflection.AssemblyName>
+- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
 - [Assemblies and the Global Assembly Cache (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/index.md)

@@ -52,4 +52,4 @@ To accommodate new claim types and custom tokens, you can extend the security in
  [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)  
   
 ## See also
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)

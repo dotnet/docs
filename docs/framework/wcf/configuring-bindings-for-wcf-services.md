@@ -156,7 +156,7 @@ When creating an application, you often want to defer decisions to the administr
 ```  
   
 ## See also
- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  
- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)  
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
+- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)
+- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

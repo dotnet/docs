@@ -12,6 +12,6 @@ The <xref:System.Windows.Forms.WebBrowser> control is designed to work in full t
  For more information about security issues relating to the underlying ActiveX `WebBrowser` control, see [WebBrowser Control](https://go.microsoft.com/fwlink/?LinkId=198812).  
   
 ## See also
- <xref:System.Windows.Forms.WebBrowser>  
- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)  
- [WebBrowser Control](https://go.microsoft.com/fwlink/?LinkId=198812)
+- <xref:System.Windows.Forms.WebBrowser>
+- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)
+- [WebBrowser Control](https://go.microsoft.com/fwlink/?LinkId=198812)

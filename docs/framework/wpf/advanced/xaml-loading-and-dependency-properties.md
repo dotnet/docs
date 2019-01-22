@@ -36,9 +36,9 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
  [!code-vb[WPFAquariumSln#AGWithWrapper](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#agwithwrapper)]  
   
 ## See also
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
- [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)  
- [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)  
- [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)
+- [Collection-Type Dependency Properties](../../../../docs/framework/wpf/advanced/collection-type-dependency-properties.md)
+- [Dependency Property Security](../../../../docs/framework/wpf/advanced/dependency-property-security.md)
+- [Safe Constructor Patterns for DependencyObjects](../../../../docs/framework/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md)

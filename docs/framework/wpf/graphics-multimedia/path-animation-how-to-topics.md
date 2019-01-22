@@ -25,6 +25,6 @@ The topics in this section demonstrate how to animate an object along a path.
  <xref:System.Windows.Media.Animation.Storyboard>  
   
 ## See also
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)

@@ -89,7 +89,7 @@ Object obj = JsonConvert.DeserializeObject(data, t);
  the reflection directives make metadata for the `StockQuote` type available for the NewtonSoft JSON serializer at run time.  
   
 ## See also
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

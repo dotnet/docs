@@ -100,5 +100,5 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
 ```  
   
 ## See also
- [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)  
- [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)
+- [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)
+- [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)

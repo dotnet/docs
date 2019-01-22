@@ -24,5 +24,5 @@ The Windows Communication Foundation (WCF) support for ASP.NET Asynchronous Java
  Describes how to migrate an AJAX-enabled ASP.NET Web service to a WCF Web service.  
   
 ## See also
- <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>  
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>
+- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

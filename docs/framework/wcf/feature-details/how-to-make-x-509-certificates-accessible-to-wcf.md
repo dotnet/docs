@@ -65,6 +65,6 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         ```  
   
 ## See also
-- [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md)  
-- [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)  
+- [FindPrivateKey](../../../../docs/framework/wcf/samples/findprivatekey.md)
+- [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

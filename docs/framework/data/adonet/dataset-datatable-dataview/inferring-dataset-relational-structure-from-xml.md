@@ -42,4 +42,4 @@ The relational structure, or schema, of a <xref:System.Data.DataSet> is made up 
  Describes the ADO.NET architecture and components and how to use them to access existing data sources and manage application data.  
   
 ## See also
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

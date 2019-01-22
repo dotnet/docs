@@ -17,7 +17,7 @@ ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
  [How-to Topics](../../../../docs/framework/wpf/advanced/fonts-how-to-topics.md)  
   
 ## See also
- <xref:System.Windows.FontStyle>  
- <xref:System.Windows.SystemFonts>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- <xref:System.Windows.FontStyle>
+- <xref:System.Windows.SystemFonts>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)

@@ -148,6 +148,6 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  Finally, set `handled` to `true` to indicate that the message has been handled.  
   
 ## See also
- <xref:System.Windows.Interop.HwndHost>  
- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)  
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- <xref:System.Windows.Interop.HwndHost>
+- [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)
+- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)

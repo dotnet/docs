@@ -47,6 +47,6 @@ CorFlags.exe assembly [options]
  If no options are specified, the CorFlags Conversion tool displays the flags for the specified assembly.  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [64-bit Applications](../../../docs/framework/64-bit-apps.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [64-bit Applications](../../../docs/framework/64-bit-apps.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

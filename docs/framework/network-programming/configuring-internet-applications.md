@@ -92,6 +92,6 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
 ```  
   
 ## See also
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)  
- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)
+- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)

@@ -132,6 +132,6 @@ For more information, see [Nameof expressions](~/_csharplang/spec/expressions.md
  
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)

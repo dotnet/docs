@@ -103,13 +103,13 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
     ```  
   
 ## See also
- <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>  
- <xref:System.Array.Length%2A>  
- <xref:Microsoft.VisualBasic.Information.UBound%2A>  
- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)  
- [/main](../../../visual-basic/reference/command-line-compiler/main.md)  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)
+- <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>
+- <xref:System.Array.Length%2A>
+- <xref:Microsoft.VisualBasic.Information.UBound%2A>
+- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)
+- [/main](../../../visual-basic/reference/command-line-compiler/main.md)
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [String Data Type](../../../visual-basic/language-reference/data-types/string-data-type.md)

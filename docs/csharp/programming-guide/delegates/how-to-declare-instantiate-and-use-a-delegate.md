@@ -68,6 +68,6 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Events](../../../csharp/programming-guide/events/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
 - [Delegates](../../../csharp/programming-guide/delegates/index.md)

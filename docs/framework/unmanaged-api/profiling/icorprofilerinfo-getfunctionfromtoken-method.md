@@ -43,4 +43,4 @@ HRESULT GetFunctionFromToken(
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

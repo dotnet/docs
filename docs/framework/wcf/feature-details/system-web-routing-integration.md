@@ -64,5 +64,5 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
 ```  
   
 ## See also
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
- [ASP.NET Routing](https://go.microsoft.com/fwlink/?LinkId=184660)
+- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [ASP.NET Routing](https://go.microsoft.com/fwlink/?LinkId=184660)

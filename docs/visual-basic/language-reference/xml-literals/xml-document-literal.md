@@ -50,13 +50,13 @@ rootElement
  [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-document-literal_1.vb)]  
   
 ## See also
- <xref:System.Xml.Linq.XElement>  
- <xref:System.Xml.Linq.XProcessingInstruction>  
- <xref:System.Xml.Linq.XComment>  
- <xref:System.Xml.Linq.XDocument>  
- [XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)  
- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)  
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)
+- <xref:System.Xml.Linq.XElement>
+- <xref:System.Xml.Linq.XProcessingInstruction>
+- <xref:System.Xml.Linq.XComment>
+- <xref:System.Xml.Linq.XDocument>
+- [XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)
+- [XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)
+- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Embedded Expressions in XML](../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)

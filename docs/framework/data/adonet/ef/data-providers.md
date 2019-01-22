@@ -21,4 +21,4 @@ This section provides information on data providers that support the [!INCLUDE[a
  List of the third-party data providers currently available for the Entity Framework.  
   
 ## See also
- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
+- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)

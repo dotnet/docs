@@ -26,4 +26,4 @@ This example shows how to change the color of an element when it gains and loses
  [!code-vb[gotfocusLostfocusEffectUsingEvent#GotLostFocusSampleEventHandlers](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gotfocusLostfocusEffectUsingEvent/VisualBasic/Window1.xaml.vb#gotlostfocussampleeventhandlers)]  
   
 ## See also
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)

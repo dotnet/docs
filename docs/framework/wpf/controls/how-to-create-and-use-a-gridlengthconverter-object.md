@@ -20,5 +20,5 @@ ms.assetid: 5ab75911-e36a-4825-80e4-081c57e8e182
  [!code-vb[gridlengthConverterGrid#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridlengthConverterGrid/VisualBasic/Window1.xaml.vb#1)]  
   
 ## See also
- <xref:System.Windows.GridLengthConverter>  
- <xref:System.Windows.GridLength>
+- <xref:System.Windows.GridLengthConverter>
+- <xref:System.Windows.GridLength>

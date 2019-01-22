@@ -40,6 +40,6 @@ Attributes can be applied to generic types in the same way as non-generic types.
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Generics](../../../csharp/programming-guide/generics/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Generics](../../../csharp/programming-guide/generics/index.md)
 - [Attributes](../../../../docs/standard/attributes/index.md)

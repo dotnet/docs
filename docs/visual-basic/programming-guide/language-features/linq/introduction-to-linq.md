@@ -241,9 +241,9 @@ You can use additional LINQ query features by calling members of the enumerable 
   
 ## See also
 
-- [LINQ (Language-Integrated Query)](../../concepts/linq/index.md)  
-- [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md)  
-- [LINQ to DataSet Overview](~/docs/framework/data/adonet/linq-to-dataset-overview.md)  
-- [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)  
-- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
+- [LINQ (Language-Integrated Query)](../../concepts/linq/index.md)
+- [Overview of LINQ to XML in Visual Basic](../../language-features/xml/overview-of-linq-to-xml.md)
+- [LINQ to DataSet Overview](~/docs/framework/data/adonet/linq-to-dataset-overview.md)
+- [LINQ to SQL](~/docs/framework/data/adonet/sql/linq/index.md)
+- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
 - [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)

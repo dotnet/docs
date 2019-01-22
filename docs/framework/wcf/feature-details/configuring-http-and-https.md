@@ -85,5 +85,5 @@ netsh http add iplisten ipaddress=0.0.0.0:8000
  IIS does not support port sharing on [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. If IIS is running and a WCF service attempts to use a namespace with the same port, the WCF service fails to start. IIS and WCF both default to using port 80. Either change the port assignment for one of the services or use the IP Listen List to assign the WCF service to a network adapter not used by IIS. IIS 6.0 and later have been redesigned to use the HTTP Server APIs.  
   
 ## See also
- <xref:System.ServiceModel.WSDualHttpBinding>  
- [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+- <xref:System.ServiceModel.WSDualHttpBinding>
+- [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)

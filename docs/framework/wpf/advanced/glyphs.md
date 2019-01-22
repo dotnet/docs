@@ -19,8 +19,8 @@ Glyphs are a low-level depiction of a character to be drawn on-screen. [!INCLUDE
   [How to: Draw Text Using Glyphs](../../../../docs/framework/wpf/advanced/draw-text-using-glyphs.md)  
   
 ## See also
- <xref:System.Windows.Media.GlyphRun>  
- <xref:System.Windows.Media.DrawingContext.DrawText%2A>  
- <xref:System.Windows.Documents.Glyphs>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- <xref:System.Windows.Media.GlyphRun>
+- <xref:System.Windows.Media.DrawingContext.DrawText%2A>
+- <xref:System.Windows.Documents.Glyphs>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)

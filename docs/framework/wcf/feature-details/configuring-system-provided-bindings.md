@@ -72,6 +72,6 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |Streaming|Specifies whether the message streaming is supported.|  
   
 ## See also
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)

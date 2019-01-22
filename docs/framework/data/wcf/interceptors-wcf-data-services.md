@@ -43,4 +43,4 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
  For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
   
 ## See also
- [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)
+- [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)

@@ -63,6 +63,6 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
 ```  
   
 ## See also
- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>  
- <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>  
- [Using ServiceThrottlingBehavior to Control WCF Service Performance](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)
+- <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
+- <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>
+- [Using ServiceThrottlingBehavior to Control WCF Service Performance](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)

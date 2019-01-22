@@ -75,7 +75,7 @@ Describes whether HTTP caching is active and describes the default caching polic
 ```  
   
 ## See also
-- <xref:System.Net.Cache>  
-- <xref:System.Net.WebRequest>  
-- <xref:System.Net.Cache.RequestCacheLevel>  
+- <xref:System.Net.Cache>
+- <xref:System.Net.WebRequest>
+- <xref:System.Net.Cache.RequestCacheLevel>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

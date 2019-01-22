@@ -164,4 +164,4 @@ ms.author: "mhopkins"
 |StatusStrip|  
   
 ## See also
- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)
+- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)

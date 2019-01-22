@@ -36,11 +36,11 @@ You can create [XML Literals](../../../../visual-basic/language-reference/xml-li
  [!code-vb[VbXMLSamples#46](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-load-xml-from-a-file-string-or-stream_3.vb)]  
   
 ## See also
- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType>  
- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)  
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)  
- [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)
+- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XNode.ReadFrom%2A?displayProperty=nameWithType>
+- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)
+- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [Manipulating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/manipulating-xml.md)

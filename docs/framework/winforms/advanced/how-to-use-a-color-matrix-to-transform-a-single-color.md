@@ -58,5 +58,5 @@ ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)  
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)
+- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)
+- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)

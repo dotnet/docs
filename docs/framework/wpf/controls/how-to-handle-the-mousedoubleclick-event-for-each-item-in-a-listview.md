@@ -27,8 +27,8 @@ To handle an event for an item in a <xref:System.Windows.Controls.ListView>, you
 >  Although it is most common to bind a <xref:System.Windows.Controls.ListView> to a data source, you can use a style to add an event handler to each <xref:System.Windows.Controls.ListViewItem> in a non-data-bound <xref:System.Windows.Controls.ListView> regardless of whether you explicitly create a <xref:System.Windows.Controls.ListViewItem>.  For more information about explicitly and implicitly created <xref:System.Windows.Controls.ListViewItem> controls, see <xref:System.Windows.Controls.ItemsControl>.  
   
 ## See also
- <xref:System.Xml.XmlElement>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Bind to XML Data Using an XMLDataProvider and XPath Queries](../../../../docs/framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- <xref:System.Xml.XmlElement>
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Bind to XML Data Using an XMLDataProvider and XPath Queries](../../../../docs/framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)

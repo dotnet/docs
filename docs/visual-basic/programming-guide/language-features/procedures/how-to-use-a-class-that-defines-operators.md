@@ -34,13 +34,13 @@ If you are using a class or structure that defines its own operators, you can ac
  Your project must have references to System.Data and System.XML.  
   
 ## See also
- [Operator Procedures](./operator-procedures.md)  
- [How to: Define an Operator](./how-to-define-an-operator.md)  
- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  
- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  
- [Widening](../../../../visual-basic/language-reference/modifiers/widening.md)  
- [Narrowing](../../../../visual-basic/language-reference/modifiers/narrowing.md)  
- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Operator Procedures](./operator-procedures.md)
+- [How to: Define an Operator](./how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
+- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)
+- [Widening](../../../../visual-basic/language-reference/modifiers/widening.md)
+- [Narrowing](../../../../visual-basic/language-reference/modifiers/narrowing.md)
+- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

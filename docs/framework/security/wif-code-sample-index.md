@@ -24,4 +24,4 @@ The following are code samples for Windows Identity Foundation 4.5:
 -   [CustomToken](https://go.microsoft.com/fwlink/?LinkID=248412) – this sample demonstrates how to build a custom Simple Web Token (SWT) token type.  
   
 ## See also
- [Windows Identity Foundation](../../../docs/framework/security/index.md)
+- [Windows Identity Foundation](../../../docs/framework/security/index.md)

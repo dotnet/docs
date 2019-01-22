@@ -54,4 +54,4 @@ As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-win
 |<xref:System.Windows.Media.Media3D.MeshGeometry3D>|To minimize the construction time of large collections in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], such as a MeshGeometry3D’s <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A>, and <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A>, pre-size the collections before value population. If possible, pass the collections’ constructors prepopulated data structures such as arrays or Lists.|  
   
 ## See also
- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)
+- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)

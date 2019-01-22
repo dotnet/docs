@@ -27,11 +27,11 @@ The following code example shows how to use the <xref:System.Drawing.Graphics.Dr
 -   The Arial font is not installed.  
   
 ## See also
- <xref:System.Drawing.Graphics.DrawString%2A>  
- <xref:System.Windows.Forms.TextRenderer.DrawText%2A>  
- <xref:System.Drawing.StringFormat.FormatFlags%2A>  
- <xref:System.Drawing.StringFormatFlags>  
- <xref:System.Windows.Forms.TextFormatFlags>  
- <xref:System.Windows.Forms.Control.OnPaint%2A>  
- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)
+- <xref:System.Drawing.Graphics.DrawString%2A>
+- <xref:System.Windows.Forms.TextRenderer.DrawText%2A>
+- <xref:System.Drawing.StringFormat.FormatFlags%2A>
+- <xref:System.Drawing.StringFormatFlags>
+- <xref:System.Windows.Forms.TextFormatFlags>
+- <xref:System.Windows.Forms.Control.OnPaint%2A>
+- [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)
+- [How to: Draw Text with GDI](../../../../docs/framework/winforms/advanced/how-to-draw-text-with-gdi.md)

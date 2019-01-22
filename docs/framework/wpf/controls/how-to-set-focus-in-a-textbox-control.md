@@ -24,7 +24,7 @@ This example shows how to use the <xref:System.Windows.UIElement.Focus%2A> metho
  [!code-vb[TextBox_MiscCode#_FocusTextBox](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBox_MiscCode/VisualBasic/Window1.xaml.vb#_focustextbox)]  
   
 ## See also
- <xref:System.Windows.UIElement.Focusable%2A>  
- <xref:System.Windows.UIElement.IsFocused%2A>  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- <xref:System.Windows.UIElement.Focusable%2A>
+- <xref:System.Windows.UIElement.IsFocused%2A>
+- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

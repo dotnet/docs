@@ -145,8 +145,8 @@ public class App
 ```  
   
 ## See also
- <xref:System.Management>  
- <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>  
- <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>  
- [Tools](../../../docs/framework/tools/index.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- <xref:System.Management>
+- <xref:System.Management.ManagementClass.GetStronglyTypedClassCode%2A?displayProperty=nameWithType>
+- <xref:System.CodeDom.Compiler.CodeDomProvider?displayProperty=nameWithType>
+- [Tools](../../../docs/framework/tools/index.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

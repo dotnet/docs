@@ -26,9 +26,9 @@ This example demonstrates how to use I/O classes to synchronously copy the conte
   
 ## See also
 
-- <xref:System.IO.FileInfo>  
-- <xref:System.IO.DirectoryInfo>  
-- <xref:System.IO.FileStream>  
-- [File and Stream I/O](../../../docs/standard/io/index.md)  
-- [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)  
+- <xref:System.IO.FileInfo>
+- <xref:System.IO.DirectoryInfo>
+- <xref:System.IO.FileStream>
+- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [Common I/O Tasks](../../../docs/standard/io/common-i-o-tasks.md)
 - [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

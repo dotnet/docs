@@ -39,5 +39,5 @@ Beginning with .NET 4.5, Windows Identity Foundation (WIF) has been fully integr
 |`Microsoft.IdentityModel.WindowsTokenService`|Not Implemented in WIF 4.5|-|  
   
 ## See also
- [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)  
- [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)
+- [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)
+- [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)

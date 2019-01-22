@@ -68,4 +68,4 @@ Represents a configuration section for defining a backup list that enumerates a 
 ```  
   
 ## See also
- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=nameWithType>    
+- <xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection?displayProperty=nameWithType>

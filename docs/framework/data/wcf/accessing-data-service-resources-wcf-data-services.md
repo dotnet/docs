@@ -91,4 +91,4 @@ http://services.odata.org/Northwind/Northwind.svc/Orders(10643)/$links/Shipper
  The URI of an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] resource enables you to address entity data exposed by the service. When you enter a URI into the address field of a Web browser, a [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed representation of the requested resource is returned. For more information, see the [WCF Data Services Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md). Although a Web browser may be useful for testing that a data service resource returns the expected data, production data services that can also create, update, and delete data are generally accessed by application code or scripting languages in a Web page. For more information, see [Using a Data Service in a Client Application](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md).  
   
 ## See also
- [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=182204)
+- [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=182204)

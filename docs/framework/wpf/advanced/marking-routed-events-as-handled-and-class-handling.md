@@ -93,7 +93,7 @@ Handlers for a routed event can mark the event handled within the event data. Ha
  The second technique works only for input events, where the tunneling and bubbling versions of the routed event are paired. For these routed events, you can add handlers to the preview/tunneling equivalent routed event instead. That routed event will tunnel through the route starting from the root, so the button class handling code would not intercept it, presuming that you attached the Preview handler at some ancestor element level in the application's element tree. If you use this approach, be cautious about marking any Preview event handled. For the example given with <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> being handled at the root element, if you marked the event as <xref:System.Windows.RoutedEventArgs.Handled%2A> in the handler implementation, you would actually suppress the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. That is typically not desirable behavior.  
   
 ## See also
- <xref:System.Windows.EventManager>  
- [Preview Events](../../../../docs/framework/wpf/advanced/preview-events.md)  
- [Create a Custom Routed Event](../../../../docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md)  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- <xref:System.Windows.EventManager>
+- [Preview Events](../../../../docs/framework/wpf/advanced/preview-events.md)
+- [Create a Custom Routed Event](../../../../docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)

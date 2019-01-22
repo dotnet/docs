@@ -39,7 +39,7 @@ For more information, see [Basic concepts](~/_csharplang/spec/unsafe-code.md) in
   
 ## See also
 
-- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
+- <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)
 - [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)

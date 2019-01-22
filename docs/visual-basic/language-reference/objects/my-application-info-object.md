@@ -23,4 +23,4 @@ Provides properties for getting the information about the application, such as t
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
- [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)
+- [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)

@@ -25,5 +25,5 @@ A Peer Name represents an endpoint for communication, which can be a computer, a
  This combination of P2P ID and Service Location allows multiple PNRP IDs to be registered from a single computer.  
   
 ## See also
- <xref:System.Net.PeerToPeer.PeerName>  
- <xref:System.Net.PeerToPeer>
+- <xref:System.Net.PeerToPeer.PeerName>
+- <xref:System.Net.PeerToPeer>

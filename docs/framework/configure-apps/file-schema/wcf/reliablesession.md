@@ -114,11 +114,11 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 ```  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ReliableSessionElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>  
- [Reliable Sessions](../../../../../docs/framework/wcf/feature-details/reliable-sessions.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- <xref:System.ServiceModel.Configuration.ReliableSessionElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>
+- [Reliable Sessions](../../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

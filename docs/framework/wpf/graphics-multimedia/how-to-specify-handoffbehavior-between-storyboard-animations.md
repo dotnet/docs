@@ -15,8 +15,8 @@ This example shows how to specify handoff behavior between storyboard animations
  [!code-xaml[timingbehaviors_snip#HandoffBehaviorWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/HandoffBehaviorExample.xaml#handoffbehaviorwholepage)]  
   
 ## See also
- <xref:System.Windows.Media.Animation.BeginStoryboard>  
- <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A>  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Animation and Timing](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+- <xref:System.Windows.Media.Animation.BeginStoryboard>
+- <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A>
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation and Timing](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

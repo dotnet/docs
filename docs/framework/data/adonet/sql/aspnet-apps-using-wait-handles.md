@@ -574,5 +574,5 @@ void Button1_Click(object sender, System.EventArgs e)
 ```  
   
 ## See also
- [Asynchronous Operations](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Asynchronous Operations](../../../../../docs/framework/data/adonet/sql/asynchronous-operations.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

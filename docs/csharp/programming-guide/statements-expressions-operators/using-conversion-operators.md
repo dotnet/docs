@@ -29,7 +29,7 @@ You can use `implicit` conversion operators, which are easier to use, or `explic
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
 - [is](../../../csharp/language-reference/keywords/is.md)

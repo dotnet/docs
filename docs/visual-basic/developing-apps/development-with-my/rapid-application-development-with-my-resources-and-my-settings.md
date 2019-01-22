@@ -21,6 +21,6 @@ The `My.Resources` object provides access to the application's resources and all
  Similarly, the `My.Settings` object provides access to the application's settings and allows you to dynamically store and retrieve property settings and other information for your application. For more information, see [My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md) and [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md).  
   
 ## See also
- [My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md)  
- [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md)  
- [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/index.md)
+- [My.Resources Object](../../../visual-basic/language-reference/objects/my-resources-object.md)
+- [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md)
+- [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/index.md)

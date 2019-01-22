@@ -31,4 +31,4 @@ Delegates enable you to call a synchronous method in an asynchronous manner. Whe
   
 ## See also
 
-* <xref:System.Delegate>
+- <xref:System.Delegate>

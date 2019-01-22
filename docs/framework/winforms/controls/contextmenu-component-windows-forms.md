@@ -33,5 +33,5 @@ ms.assetid: 9b93ccbc-c0fe-44a2-968e-faac25971831
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
 ## See also
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ContextMenuStrip>
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ContextMenuStrip>

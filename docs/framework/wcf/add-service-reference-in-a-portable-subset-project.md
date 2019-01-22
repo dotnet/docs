@@ -38,5 +38,5 @@ Portable subset projects enable .NET assembly programmers to maintain a single s
 14. <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is not supported in portable subset projects.  
   
 ## See also
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [Portable Class Library](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)
+- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
+- [Portable Class Library](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)

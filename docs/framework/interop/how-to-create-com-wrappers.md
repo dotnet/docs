@@ -69,5 +69,5 @@ You can run Regasm.exe on an assembly located in any directory, and then run the
   
 ## See also
 
-- [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)  
+- [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)
 - [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)

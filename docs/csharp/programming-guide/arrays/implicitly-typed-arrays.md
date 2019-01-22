@@ -28,10 +28,10 @@ You can create an implicitly-typed array in which the type of the array instance
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Implicitly Typed Local Variables](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)  
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
-- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
-- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [var](../../../csharp/language-reference/keywords/var.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Implicitly Typed Local Variables](../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
+- [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [var](../../../csharp/language-reference/keywords/var.md)
 - [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

@@ -60,4 +60,4 @@ Windows Communication Foundation (WCF) provides the managed code developer with 
 >  `</configuration>`  
   
 ## See also
- [How to: Register and Configure a Service Moniker](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)
+- [How to: Register and Configure a Service Moniker](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)

@@ -20,5 +20,5 @@ Use the <xref:System.Linq.Queryable.Union%2A> operator to return the set union o
 For more info and examples, see <xref:System.Linq.Queryable.Union%2A?displayProperty=nameWithType>.
   
 ## See also
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

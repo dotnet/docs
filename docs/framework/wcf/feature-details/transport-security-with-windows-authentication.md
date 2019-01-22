@@ -112,6 +112,6 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 ```  
   
 ## See also
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

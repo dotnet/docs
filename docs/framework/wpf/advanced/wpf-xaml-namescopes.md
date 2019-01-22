@@ -91,5 +91,5 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
 -   <xref:System.Windows.FrameworkContentElement>  
   
 ## See also
- [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
- [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md)
+- [XAML Namespaces and Namespace Mapping for WPF XAML](../../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)
+- [x:Name Directive](../../../../docs/framework/xaml-services/x-name-directive.md)

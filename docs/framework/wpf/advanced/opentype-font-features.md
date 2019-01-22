@@ -355,8 +355,8 @@ Text using OpenType capitals
 |<xref:System.Windows.Documents.Typography.Variants%2A>|<xref:System.Windows.FontVariants.Inferior> &#124; <xref:System.Windows.FontVariants.Normal> &#124; <xref:System.Windows.FontVariants.Ordinal> &#124; <xref:System.Windows.FontVariants.Ruby> &#124; <xref:System.Windows.FontVariants.Subscript> &#124; <xref:System.Windows.FontVariants.Superscript>|<xref:System.Windows.FontVariants.Normal?displayProperty=nameWithType>|  
   
 ## See also
- <xref:System.Windows.Documents.Typography>  
- [OpenType Specification](https://go.microsoft.com/fwlink/?LinkId=96731)  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)  
- [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)
+- <xref:System.Windows.Documents.Typography>
+- [OpenType Specification](https://go.microsoft.com/fwlink/?LinkId=96731)
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)
+- [Packaging Fonts with Applications](../../../../docs/framework/wpf/advanced/packaging-fonts-with-applications.md)

@@ -59,10 +59,10 @@ End Sub
  The preceding calls to `MsgBox` display "0", "1", and "-1" respectively.  
   
 ## See also
- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)  
- [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)  
- [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)  
- [Type List](../../../../visual-basic/language-reference/statements/type-list.md)  
- [Parameter List](../../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)
+- [How to: Use a Generic Class](../../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Procedures](../../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Procedure Parameters and Arguments](../../../../visual-basic/programming-guide/language-features/procedures/procedure-parameters-and-arguments.md)
+- [Type List](../../../../visual-basic/language-reference/statements/type-list.md)
+- [Parameter List](../../../../visual-basic/language-reference/statements/parameter-list.md)

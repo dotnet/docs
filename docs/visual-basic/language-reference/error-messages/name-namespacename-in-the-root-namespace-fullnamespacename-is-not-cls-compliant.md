@@ -28,10 +28,10 @@ An assembly is marked as `<CLSCompliant(True)>`, but an element of the root name
 -   If you require that the namespace name remain unchanged, then remove the <xref:System.CLSCompliantAttribute> from the assembly or mark it as `<CLSCompliant(False)>`.  
   
 ## See also
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)  
- [/rootnamespace](../../../visual-basic/reference/command-line-compiler/rootnamespace.md)  
- [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)  
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
- 
+- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
+- [/rootnamespace](../../../visual-basic/reference/command-line-compiler/rootnamespace.md)
+- [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)
+- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+

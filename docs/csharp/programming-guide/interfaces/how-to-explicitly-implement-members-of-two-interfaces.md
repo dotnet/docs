@@ -24,7 +24,7 @@ Explicit [interface](../../../csharp/language-reference/keywords/interface.md) i
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
 - [How to: Explicitly Implement Interface Members](../../../csharp/programming-guide/interfaces/how-to-explicitly-implement-interface-members.md)

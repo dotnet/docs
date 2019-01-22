@@ -70,5 +70,5 @@ The ability to load and execute managed code in a SQL Server host requires meeti
  Given these considerations, SQL Server disallows the use of static variables and static data members. For SAFE and EXTERNAL-ACCESS assemblies, SQL Server examines the metadata of the assembly at CREATE ASSEMBLY time, and fails the creation of such assemblies if it finds the use of static data members and variables.  
   
 ## See also
- <xref:System.Security.Permissions.HostProtectionAttribute>  
- <xref:System.Security.Permissions.HostProtectionResource>
+- <xref:System.Security.Permissions.HostProtectionAttribute>
+- <xref:System.Security.Permissions.HostProtectionResource>

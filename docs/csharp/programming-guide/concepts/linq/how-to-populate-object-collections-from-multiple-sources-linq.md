@@ -143,6 +143,6 @@ Create and compile a project that targets one of the following options:
 
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)  
-- [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
-- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+- [Object and Collection Initializers](../../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Anonymous Types](../../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)

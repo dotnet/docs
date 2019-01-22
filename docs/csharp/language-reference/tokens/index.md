@@ -26,5 +26,5 @@ Special characters are predefined, contextual characters that modify the program
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

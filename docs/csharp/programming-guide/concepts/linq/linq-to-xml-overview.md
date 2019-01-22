@@ -107,5 +107,5 @@ new XElement("Contacts",
   
 ## See also
 
-- <xref:System.Xml.Linq>  
+- <xref:System.Xml.Linq>
 - [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

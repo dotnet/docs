@@ -50,6 +50,6 @@ Once you have designed and implemented your service contract, you are ready to c
  [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)  
   
 ## See also
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)
+- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
+- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)

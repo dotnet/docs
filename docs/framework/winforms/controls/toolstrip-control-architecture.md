@@ -373,10 +373,10 @@ ToolStripItem object model
 -   <xref:System.Windows.Forms.ToolStripPanel> provides space for moving and arranging <xref:System.Windows.Forms.ToolStrip> controls. You can use only one panel if you so choose, and <xref:System.Windows.Forms.ToolStripPanel> works well in MDI scenarios.  
   
 ## See also
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)  
- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  
- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)  
- [StatusStrip Control](../../../../docs/framework/winforms/controls/statusstrip-control.md)  
- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)  
- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
+- [StatusStrip Control](../../../../docs/framework/winforms/controls/statusstrip-control.md)
+- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)
+- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)

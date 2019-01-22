@@ -33,5 +33,5 @@ This page discusses the security implications of storing data in the registry.
 >  When reading the registry from a Web application, the identity of current user depends on the authentication and impersonation implemented in the Web application.  
   
 ## See also
- <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>  
- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
+- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

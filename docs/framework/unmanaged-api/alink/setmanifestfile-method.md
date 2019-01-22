@@ -43,7 +43,7 @@ HRESULT SetManifestFile(
  Requires aLink.h  
   
 ## See also
- [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [IALink3 Interface](../../../../docs/framework/unmanaged-api/alink/ialink3-interface.md)
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

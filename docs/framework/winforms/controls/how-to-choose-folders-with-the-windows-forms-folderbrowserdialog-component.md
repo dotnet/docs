@@ -61,6 +61,6 @@ Often, within Windows applications you create, you will have to prompt users to 
  For information on how to save files, see [How to: Save Files Using the SaveFileDialog Component](../../../../docs/framework/winforms/controls/how-to-save-files-using-the-savefiledialog-component.md).  
   
 ## See also
- <xref:System.Windows.Forms.FolderBrowserDialog>  
- [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)  
- [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)
+- <xref:System.Windows.Forms.FolderBrowserDialog>
+- [FolderBrowserDialog Component Overview (Windows Forms)](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-overview-windows-forms.md)
+- [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)

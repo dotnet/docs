@@ -104,7 +104,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ```  
   
 ## See also
-- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
-- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
+- <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

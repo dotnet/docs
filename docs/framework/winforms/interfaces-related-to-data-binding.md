@@ -144,6 +144,6 @@ With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many
     >  A class that inherits from <xref:System.Windows.Forms.Control> manages bindings automatically through its <xref:System.Windows.Forms.Control.BindingContext%2A> property, so cases in which you need to implement the <xref:System.Windows.Forms.ICurrencyManagerProvider> are fairly rare.  
   
 ## See also
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)  
- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)
+- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

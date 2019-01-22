@@ -97,5 +97,5 @@ sr.Close()
 ```  
   
 ## See also
- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

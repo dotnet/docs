@@ -31,5 +31,5 @@ Dim b As Integer?
 -   Use an `As` clause to declare the variable as nullable.  
   
 ## See also
- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

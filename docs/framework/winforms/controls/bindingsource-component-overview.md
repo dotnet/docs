@@ -52,10 +52,10 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
 |<xref:System.Windows.Forms.BindingSource.Filter%2A> property|If the data source is an <xref:System.ComponentModel.IBindingListView>, gets or sets the expression used to filter which rows are viewed.|  
   
 ## See also
- <xref:System.Windows.Forms.BindingSource>  
- <xref:System.Windows.Forms.BindingNavigator>  
- [BindingSource Component Architecture](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)  
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- <xref:System.Windows.Forms.BindingSource>
+- <xref:System.Windows.Forms.BindingNavigator>
+- [BindingSource Component Architecture](../../../../docs/framework/winforms/controls/bindingsource-component-architecture.md)
+- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [BindingNavigator Control](../../../../docs/framework/winforms/controls/bindingnavigator-control-windows-forms.md)
+- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

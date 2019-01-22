@@ -22,5 +22,5 @@ This example shows you how to draw lines by using the <xref:System.Windows.Shape
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   
 ## See also
- <xref:System.Windows.Shapes.Line>  
- [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)
+- <xref:System.Windows.Shapes.Line>
+- [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)

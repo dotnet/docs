@@ -10,6 +10,6 @@ The state machine for a coordinator enlistment has entered the finished state.
  Traced when the local Transaction Manager believes a superior coordinator enlistment has completed 2pc processing. The outcome for the enlistment can be Committed or Aborted or Forgotten. It is also traced if the local Transaction Manager votes ReadOnly during Prepare.  
   
 ## See also
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

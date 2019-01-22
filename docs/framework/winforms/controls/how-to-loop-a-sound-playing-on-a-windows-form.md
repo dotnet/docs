@@ -48,6 +48,6 @@ The following code example plays a sound repeatedly. When the code in the `stopP
  Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
 ## See also
- <xref:System.Media.SoundPlayer.PlayLooping%2A>  
- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)  
- [SoundPlayer Class Overview](../../../../docs/framework/winforms/controls/soundplayer-class-overview.md)
+- <xref:System.Media.SoundPlayer.PlayLooping%2A>
+- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
+- [SoundPlayer Class Overview](../../../../docs/framework/winforms/controls/soundplayer-class-overview.md)

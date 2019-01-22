@@ -186,9 +186,9 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
      [!code-csharp[C_IDataContractSurrogate#10](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_idatacontractsurrogate/cs/source.cs#10)]  
   
 ## See also
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.IDataContractSurrogate>  
- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
- <xref:System.Runtime.Serialization.ImportOptions>  
- <xref:System.Runtime.Serialization.ExportOptions>  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.IDataContractSurrogate>
+- <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
+- <xref:System.Runtime.Serialization.ImportOptions>
+- <xref:System.Runtime.Serialization.ExportOptions>
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)

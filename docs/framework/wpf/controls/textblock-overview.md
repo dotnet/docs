@@ -22,4 +22,4 @@ The <xref:System.Windows.Controls.TextBlock> control provides flexible text supp
  [!code-vb[TextBlockSnip#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBlockSnip/VisualBasic/TextBlockSnips.vb#1)]  
   
 ## See also
- <xref:System.Windows.Controls.Label>
+- <xref:System.Windows.Controls.Label>

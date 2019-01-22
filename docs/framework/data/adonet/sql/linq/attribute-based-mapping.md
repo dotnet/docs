@@ -137,4 +137,4 @@ ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
  For more information, see <xref:System.Data.Linq.Mapping.DataAttribute>.  
   
 ## See also
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

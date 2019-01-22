@@ -20,5 +20,5 @@ ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837
 
   ![a screenshot depicts a WPF user interface which contains a grid broken into three columns.  It bears the heading '2018 Products Shipped' spanning all columns of the top row, and has three columns each with sales figures for a certain quarter.  The bottom row has text spanning two columns with the message 'Total Units: 300,000'](./media/how-to-create-a-grid-element/how-to-create-a-grid-element.png)
 ## See also
- <xref:System.Windows.Controls.Grid>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.Grid>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

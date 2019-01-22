@@ -30,15 +30,15 @@ The following code example demonstrates how to manage large sets of data using a
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See also
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>  
- <xref:System.Windows.Forms.DataGridView.CellValueNeeded>  
- <xref:System.Windows.Forms.DataGridView.CellValuePushed>  
- <xref:System.Windows.Forms.DataGridView.NewRowNeeded>  
- <xref:System.Windows.Forms.DataGridView.RowValidated>  
- <xref:System.Windows.Forms.DataGridView.RowDirtyStateNeeded>  
- <xref:System.Windows.Forms.DataGridView.CancelRowEdit>  
- <xref:System.Windows.Forms.DataGridView.UserDeletingRow>  
- [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md)  
- [Performance Tuning in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/performance-tuning-in-the-windows-forms-datagridview-control.md)  
- [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md)
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>
+- <xref:System.Windows.Forms.DataGridView.CellValueNeeded>
+- <xref:System.Windows.Forms.DataGridView.CellValuePushed>
+- <xref:System.Windows.Forms.DataGridView.NewRowNeeded>
+- <xref:System.Windows.Forms.DataGridView.RowValidated>
+- <xref:System.Windows.Forms.DataGridView.RowDirtyStateNeeded>
+- <xref:System.Windows.Forms.DataGridView.CancelRowEdit>
+- <xref:System.Windows.Forms.DataGridView.UserDeletingRow>
+- [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md)
+- [Performance Tuning in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/performance-tuning-in-the-windows-forms-datagridview-control.md)
+- [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md)

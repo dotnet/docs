@@ -34,6 +34,6 @@ An *association set* is a logical container for [association](../../../../docs/f
  [!code-xml[EDM_Example_Model#MultipleAssociationSets](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#multipleassociationsets)]  
   
 ## See also
- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)  
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)  
- [foreign key property](../../../../docs/framework/data/adonet/foreign-key-property.md)
+- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [foreign key property](../../../../docs/framework/data/adonet/foreign-key-property.md)

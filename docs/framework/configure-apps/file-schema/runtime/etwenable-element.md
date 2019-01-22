@@ -65,6 +65,6 @@ Specifies whether to enable event tracing for Windows (ETW) for common language 
 ```  
   
 ## See also
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Controlling .NET Framework Logging](../../../../../docs/framework/performance/controlling-logging.md)

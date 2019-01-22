@@ -33,7 +33,7 @@ Queues and reliable sessions are the Windows Communication Foundation (WCF) feat
  The separation, coupled with reliable message transfers between queues, enables applications that are loosely coupled to communicate reliably. Unlike reliable sessions, the source and destination do not have to be running at the same time. This implicitly enables scenarios where queues are, in effect, used as a load-leveling mechanism when there is a mismatch between the rate of message production by the source and the rate of the message consumption by the destination. For more information about queues, see [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
   
 ## See also
- [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)  
- [Reliable Sessions Overview](../../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)
+- [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+- [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Reliable Sessions Overview](../../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)

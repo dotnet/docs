@@ -68,8 +68,8 @@ Specifies that a property or procedure redeclares one or more existing propertie
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See also
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
+- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

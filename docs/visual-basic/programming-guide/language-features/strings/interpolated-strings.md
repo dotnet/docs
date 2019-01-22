@@ -71,7 +71,7 @@ There are three implicit type conversions from an interpolated string:
    [!code-vb[interpolated-strings3](../../../../../samples/snippets/visualbasic/programming-guide/language-features/strings/interpolated-strings3.vb)]  
 
 ## See also
- <xref:System.IFormattable?displayProperty=nameWithType>  
- <xref:System.FormattableString?displayProperty=nameWithType>  
- [Visual Basic Language Reference](index.md)  
- 
+- <xref:System.IFormattable?displayProperty=nameWithType>
+- <xref:System.FormattableString?displayProperty=nameWithType>
+- [Visual Basic Language Reference](index.md)
+

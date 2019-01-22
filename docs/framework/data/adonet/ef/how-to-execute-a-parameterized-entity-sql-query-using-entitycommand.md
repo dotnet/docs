@@ -25,5 +25,5 @@ This topic shows how to execute an [!INCLUDE[esql](../../../../../includes/esql-
  [!code-vb[DP EntityServices Concepts#ParameterizedQueryWithEntityCommand](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#parameterizedquerywithentitycommand)]  
   
 ## See also
- [How to: Execute a Parameterized Query](https://msdn.microsoft.com/library/42048f03-c65c-4d98-b50a-3e7d537a63e8)  
- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [How to: Execute a Parameterized Query](https://msdn.microsoft.com/library/42048f03-c65c-4d98-b50a-3e7d537a63e8)
+- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)

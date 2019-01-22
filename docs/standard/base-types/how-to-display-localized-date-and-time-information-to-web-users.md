@@ -104,7 +104,7 @@ Because a Web page can be displayed anywhere in the world, operations that parse
   
 ## See also
 
-- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
-- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)
+- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
 - [Parsing Date and Time Strings](../../../docs/standard/base-types/parsing-datetime.md)

@@ -42,5 +42,5 @@ ms.assetid: 497e81ed-5eef-460c-ba55-fae73c05824f
   
 ## See also
 
-- <xref:System.Action>  
-- <xref:System.Func%602>  
+- <xref:System.Action>
+- <xref:System.Func%602>

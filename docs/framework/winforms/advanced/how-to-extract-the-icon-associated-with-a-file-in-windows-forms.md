@@ -27,5 +27,5 @@ Many files have embedded icons that provide a visual representation of the assoc
      You will need to make sure that your form imports the <xref:System.IO> namespace.  
   
 ## See also
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)  
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
+- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)

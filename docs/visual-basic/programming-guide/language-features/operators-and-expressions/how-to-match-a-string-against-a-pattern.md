@@ -73,7 +73,7 @@ If you want to find out if an expression of the [String Data Type](../../../../v
      [!code-vb[VbVbalrOperators#74](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/how-to-match-a-string-against-a-pattern_5.vb)]  
   
 ## See also
- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md)  
- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)
+- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md)
+- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)

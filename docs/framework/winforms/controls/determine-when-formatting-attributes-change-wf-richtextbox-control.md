@@ -75,7 +75,7 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
     ```  
   
 ## See also
- <xref:System.Windows.Forms.RichTextBox.SelectionChanged>  
- <xref:System.Windows.Forms.RichTextBox>  
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- <xref:System.Windows.Forms.RichTextBox.SelectionChanged>
+- <xref:System.Windows.Forms.RichTextBox>
+- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

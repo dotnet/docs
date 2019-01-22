@@ -41,6 +41,6 @@ This example shows you how to use the <xref:System.BitConverter> class to conver
   
 ## See also
 
-- <xref:System.BitConverter>  
-- <xref:System.BitConverter.IsLittleEndian>  
+- <xref:System.BitConverter>
+- <xref:System.BitConverter.IsLittleEndian>
 - [Types](../../../csharp/programming-guide/types/index.md)

@@ -28,9 +28,9 @@ The following examples show how to copy, move, and delete files and folders in a
   
 ## See also
 
-- <xref:System.IO?displayProperty=nameWithType>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [File System and the Registry (C# Programming Guide)](index.md)  
-- [How to: Provide a Progress Dialog Box for File Operations](how-to-provide-a-progress-dialog-box-for-file-operations.md)  
-- [File and Stream I/O](../../../standard/io/index.md)  
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [File System and the Registry (C# Programming Guide)](index.md)
+- [How to: Provide a Progress Dialog Box for File Operations](how-to-provide-a-progress-dialog-box-for-file-operations.md)
+- [File and Stream I/O](../../../standard/io/index.md)
 - [Common I/O Tasks](../../../standard/io/common-i-o-tasks.md)

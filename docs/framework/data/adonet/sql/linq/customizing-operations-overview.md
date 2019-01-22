@@ -18,4 +18,4 @@ By default, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] 
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports the use of stored procedures and user-defined functions. Stored procedures are frequently used to customize operations. For more information, see [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md).  
   
 ## See also
- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)

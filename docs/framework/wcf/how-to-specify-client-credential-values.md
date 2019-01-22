@@ -86,20 +86,20 @@ Using Windows Communication Foundation (WCF), the service can specify how a clie
     ```  
   
 ## See also
- <xref:System.ServiceModel.NetTcpBinding>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>  
- <xref:System.ServiceModel.ClientBase%601>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>  
- [Programming WCF Security](../../../docs/framework/wcf/feature-details/programming-wcf-security.md)  
- [Selecting a Credential Type](../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
- [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)  
- [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)  
- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)  
- [\<message>](../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)  
- [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)  
- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
- [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)  
- [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential.SetCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
+- <xref:System.ServiceModel.ClientBase%601>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
+- [Programming WCF Security](../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
+- [Selecting a Credential Type](../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)
+- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
+- [\<message>](../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)
+- [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)
+- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+- [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)
+- [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)

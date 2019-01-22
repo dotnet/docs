@@ -46,5 +46,5 @@ Any application can interact with an [!INCLUDE[ssODataFull](../../../../includes
  Describes how to access and change binary data returned by the data service as a data stream.  
   
 ## See also
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)

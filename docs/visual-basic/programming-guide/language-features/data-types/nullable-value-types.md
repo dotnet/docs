@@ -92,14 +92,14 @@ Sometimes you work with a value type that does not have a defined value in certa
  A database is one of the most important places to use nullable types. Not all database objects currently support nullable types, but the designer-generated table adapters do. See "TableAdapter Support for Nullable Types" in [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview).
   
 ## See also
- <xref:System.InvalidOperationException>  
- <xref:System.Nullable%601.HasValue%2A>  
- [Using Nullable Types](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview)  
- [If Operator](../../../../visual-basic/language-reference/operators/if-operator.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)  
- [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)
+- <xref:System.InvalidOperationException>
+- <xref:System.Nullable%601.HasValue%2A>
+- [Using Nullable Types](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [TableAdapter Overview](/visualstudio/data-tools/tableadapter-overview)
+- [If Operator](../../../../visual-basic/language-reference/operators/if-operator.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)
+- [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)

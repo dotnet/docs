@@ -86,4 +86,4 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
  For best performance in load-balanced scenarios, consider using <xref:System.ServiceModel.NetTcpSecurity> (either <xref:System.ServiceModel.SecurityMode.Transport> or <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>).  
   
 ## See also
- [Internet Information Services Hosting Best Practices](../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)
+- [Internet Information Services Hosting Best Practices](../../../docs/framework/wcf/feature-details/internet-information-services-hosting-best-practices.md)

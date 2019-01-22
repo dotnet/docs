@@ -44,6 +44,6 @@ Enables placement of XML data islands within a XAML production. XML elements wit
  Technically, `x:XData` can be used as the content of any property of type <xref:System.Xml.Serialization.IXmlSerializable>. However, <xref:System.Windows.Data.XmlDataProvider.XmlSerializer%2A?displayProperty=nameWithType> is the only prominent implementation.  
   
 ## See also
- <xref:System.Windows.Data.XmlDataProvider>  
- [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Binding Markup Extension](../../../docs/framework/wpf/advanced/binding-markup-extension.md)
+- <xref:System.Windows.Data.XmlDataProvider>
+- [Data Binding Overview](../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Binding Markup Extension](../../../docs/framework/wpf/advanced/binding-markup-extension.md)

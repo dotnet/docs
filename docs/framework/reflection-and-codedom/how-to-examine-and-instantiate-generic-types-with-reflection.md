@@ -118,8 +118,8 @@ Information about generic types is obtained in the same way as information about
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See also
- <xref:System.Type>  
- <xref:System.Reflection.MethodInfo>  
- [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)  
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
- [Generics](../../../docs/standard/generics/index.md)
+- <xref:System.Type>
+- <xref:System.Reflection.MethodInfo>
+- [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)
+- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Generics](../../../docs/standard/generics/index.md)

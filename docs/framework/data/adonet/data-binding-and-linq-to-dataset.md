@@ -30,4 +30,4 @@ ms.assetid: 310bff4a-32dd-4f20-a271-6dbd82912631
  Describes how to bind a <xref:System.Data.DataView> object to a <xref:System.Windows.Forms.DataGridView>.  
   
 ## See also
- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

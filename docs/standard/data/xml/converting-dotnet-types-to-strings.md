@@ -21,5 +21,5 @@ If you want to convert a .NET Framework type to a string, use the **ToString** m
   
 ## See also
 
-- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)  
+- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)
 - [Converting Strings to .NET Framework Data Types](../../../../docs/standard/data/xml/converting-strings-to-dotnet-data-types.md)

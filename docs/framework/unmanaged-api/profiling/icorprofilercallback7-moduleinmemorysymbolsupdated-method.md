@@ -47,6 +47,6 @@ HRESULT ModuleInMemorySymbolsUpdated(
  **.NET Framework Versions:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
 ## See also
- [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)  
- [SetEventMask2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)  
- [ICorProfilerCallback7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-interface.md)
+- [ModuleLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md)
+- [SetEventMask2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md)
+- [ICorProfilerCallback7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-interface.md)

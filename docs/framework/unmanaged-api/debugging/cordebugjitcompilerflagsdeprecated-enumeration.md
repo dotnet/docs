@@ -44,4 +44,4 @@ typedef enum CorDebugJITCompilerFlagsDeprecated {
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

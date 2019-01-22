@@ -33,11 +33,11 @@ If you have defined a class or structure, you can define the behavior of a stand
  For more information and examples, see [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx).  
   
 ## See also
- [Operator Procedures](./operator-procedures.md)  
- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  
- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  
- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)  
- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
- [Mod Operator](../../../../visual-basic/language-reference/operators/mod-operator.md)
+- [Operator Procedures](./operator-procedures.md)
+- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
+- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)
+- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)
+- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)
+- [How to: Declare a Structure](../../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Mod Operator](../../../../visual-basic/language-reference/operators/mod-operator.md)

@@ -24,4 +24,4 @@ class SynchronousReceiveBehavior : Behavior
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>
+- <xref:System.ServiceModel.Description.SynchronousReceiveBehavior>

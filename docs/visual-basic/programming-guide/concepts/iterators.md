@@ -439,8 +439,8 @@ End Class
 -   Encapsulate building the list in the iterator. In the iterator method, you can build the list and then yield each result in a loop.  
   
 ## See also
- <xref:System.Collections.Generic>  
- <xref:System.Collections.Generic.IEnumerable%601>  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)  
- [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md)
+- <xref:System.Collections.Generic>
+- <xref:System.Collections.Generic.IEnumerable%601>
+- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)
+- [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md)

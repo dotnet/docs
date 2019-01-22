@@ -51,9 +51,9 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to display and e
 |[Sizing Options in the DataGrid Control](../../../../docs/framework/wpf/controls/sizing-options-in-the-datagrid-control.md)|Describes how to control absolute and automatic sizing in the <xref:System.Windows.Controls.DataGrid>.|  
   
 ## See also
- <xref:System.Windows.Controls.DataGrid>  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
- [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)
+- <xref:System.Windows.Controls.DataGrid>
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+- [Controls](../../../../docs/framework/wpf/controls/index.md)
+- [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)

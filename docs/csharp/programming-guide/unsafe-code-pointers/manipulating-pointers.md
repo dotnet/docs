@@ -18,8 +18,8 @@ This section includes the following pointer operations:
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  
-- [C# Operators](../../../csharp/language-reference/operators/index.md)  
-- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)
+- [C# Operators](../../../csharp/language-reference/operators/index.md)
+- [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md)
 - [/unsafe (C# Compiler Options)](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)

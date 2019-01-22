@@ -30,5 +30,5 @@ ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
 >  The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
   
 ## See also
- <xref:System.Windows.Forms.ProgressBar>  
- [ProgressBar Control](../../../../docs/framework/winforms/controls/progressbar-control-windows-forms.md)
+- <xref:System.Windows.Forms.ProgressBar>
+- [ProgressBar Control](../../../../docs/framework/winforms/controls/progressbar-control-windows-forms.md)

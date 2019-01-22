@@ -22,6 +22,6 @@ Safeguarding and managing sensitive information in an ADO.NET application is dep
  The <xref:System.Security.SecureString> class provides methods for encrypting text using the Data Protection API (DPAPI) in memory. The string is then deleted from memory when it is no longer needed. There is no `ToString` method to quickly read the contents of a <xref:System.Security.SecureString>. You can initialize a new instance of `SecureString` with no value or by passing it a pointer to an array of <xref:System.Char> objects. You can then use the various methods of the class to work with the string. For more information, download the [SecureString Sample Application](https://go.microsoft.com/fwlink/?LinkId=120418), which demonstrates how to use the `SecureString` class from.  
   
 ## See also
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

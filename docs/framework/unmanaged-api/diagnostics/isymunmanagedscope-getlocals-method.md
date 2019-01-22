@@ -48,4 +48,4 @@ HRESULT GetLocals(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)

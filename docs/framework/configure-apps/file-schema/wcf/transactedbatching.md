@@ -78,5 +78,5 @@ Specifies whether transaction batching is supported for receive operations.
 ```  
   
 ## See also
- <xref:System.ServiceModel.Configuration.TransactedBatchingElement>  
- <xref:System.ServiceModel.Description.TransactedBatchingBehavior>
+- <xref:System.ServiceModel.Configuration.TransactedBatchingElement>
+- <xref:System.ServiceModel.Description.TransactedBatchingBehavior>

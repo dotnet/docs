@@ -9,5 +9,5 @@ You can create connections between clients using the [!INCLUDE[vstecwinfx](../..
  If an application is using the default resolver and security settings, converting a normal client/server-based application to use Peer Channel entails changing the name of the binding from "NetTcpBinding" to "NetPeerTcpBinding" in the application’s configuration file—you do not have to change the application code base.  
   
 ## See also
- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)

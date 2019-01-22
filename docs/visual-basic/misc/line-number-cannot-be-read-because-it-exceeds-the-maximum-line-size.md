@@ -13,5 +13,5 @@ The line cannot be read because it exceeds the maximum line size. Usually this m
 -   Insert a closing quotation mark in the file.  
   
 ## See also
- [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+- [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)

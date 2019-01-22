@@ -90,5 +90,5 @@ public class MyStuff : MyObject
   
 ## See also
 
-- [Binary Serialization](binary-serialization.md)  
+- [Binary Serialization](binary-serialization.md)
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)

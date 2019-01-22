@@ -36,4 +36,4 @@ Workflow components in the host process
 -   A custom activity that derives from the <xref:System.Activities.CodeActivity> abstract class. The <xref:System.Activities.CodeActivity> can access run-time features (such as tracking and properties) using the <xref:System.Activities.CodeActivityContext> that is available as a parameter of the <xref:System.Activities.CodeActivity.Execute%2A> method. For more information about these run-time features, see [Workflow Tracking and Tracing](../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Workflow Execution Properties](../../../docs/framework/windows-workflow-foundation/workflow-execution-properties.md).  
   
 ## See also
- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://go.microsoft.com/fwlink/?LinkId=154901)
+- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://go.microsoft.com/fwlink/?LinkId=154901)

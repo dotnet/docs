@@ -58,4 +58,4 @@ Sets the custom cookie handler type. This element may only be present if the `mo
 ```  
   
 ## See also
- <xref:System.IdentityModel.Services.CookieHandler>
+- <xref:System.IdentityModel.Services.CookieHandler>

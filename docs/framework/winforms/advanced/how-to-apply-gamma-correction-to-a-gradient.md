@@ -26,5 +26,5 @@ You can enable gamma correction for a linear gradient brush by setting the brush
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
- <xref:System.Drawing.Drawing2D.LinearGradientBrush>  
- [Using a Gradient Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-gradient-brush-to-fill-shapes.md)
+- <xref:System.Drawing.Drawing2D.LinearGradientBrush>
+- [Using a Gradient Brush to Fill Shapes](../../../../docs/framework/winforms/advanced/using-a-gradient-brush-to-fill-shapes.md)

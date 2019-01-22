@@ -20,4 +20,4 @@ Indicates that an external procedure has another name in its DLL.
  [!code-vb[VbVbalrStatements#15](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/alias-clause_1.vb)]  
   
 ## See also
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

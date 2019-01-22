@@ -28,5 +28,5 @@ select c from cs as c where e
  The WHERE clause is applied directly after the FROM clause and before any grouping, ordering, or projection takes place. All element names defined in the FROM clause are visible to the expression of the WHERE clause.  
   
 ## See also
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)

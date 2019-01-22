@@ -118,5 +118,5 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
     ```  
   
 ## See also
- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)  
- [Recursive Procedures](~/docs/visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)
+- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
+- [Recursive Procedures](~/docs/visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)

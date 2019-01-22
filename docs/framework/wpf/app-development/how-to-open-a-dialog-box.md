@@ -22,4 +22,4 @@ This example shows how to open a dialog box.
  Calling <xref:System.Windows.Window.ShowDialog%2A> requires permission to use all windows and user input events without restriction.  
   
 ## See also
- [Return a Dialog Box Result](../../../../docs/framework/wpf/app-development/how-to-return-a-dialog-box-result.md)
+- [Return a Dialog Box Result](../../../../docs/framework/wpf/app-development/how-to-return-a-dialog-box-result.md)

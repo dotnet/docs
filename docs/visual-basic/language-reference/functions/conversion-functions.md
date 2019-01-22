@@ -45,5 +45,5 @@ ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
 
 ## See also
 
-[Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
-[Converting Data Types](../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Converting Data Types](../../../visual-basic/programming-guide/concepts/linq/converting-data-types.md)

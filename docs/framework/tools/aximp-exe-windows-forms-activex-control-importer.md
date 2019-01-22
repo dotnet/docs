@@ -74,5 +74,5 @@ aximp c:\systemroot\system32\msdxm.ocx
 ```  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)

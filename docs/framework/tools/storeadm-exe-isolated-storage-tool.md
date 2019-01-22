@@ -55,6 +55,6 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
  Whether roaming is actually enabled for the user does not affect the administration of Storeadm.exe. Running the tool without any options applies all actions to the local store. Running the tool with the **/roaming** option applies all actions to the store that is able to roam. Running the tool with the **/machine** option applies all actions to the machine store.  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -758,9 +758,9 @@ public class Test
   
 ## See also
 
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
-- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
-- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)  
-- [XmlSerializer Class](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)  
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
+- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
+- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)
+- [XmlSerializer Class](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx)
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

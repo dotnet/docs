@@ -99,13 +99,13 @@ End Structure
  [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
   
 ## See also
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Structures and Classes](../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)

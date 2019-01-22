@@ -50,12 +50,12 @@ Holds signed IEEE 64-bit (8-byte) double-precision floating-point numbers that r
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Double?displayProperty=nameWithType> structure.  
   
 ## See also
- <xref:System.Double?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  
- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)  
- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- <xref:System.Double?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)
+- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)

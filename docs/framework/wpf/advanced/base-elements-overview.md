@@ -92,7 +92,7 @@ A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../include
  <xref:System.Windows.Controls.Control> is the intended base class for the type of object that is variously termed a control or component, depending on the technology. In general, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control classes are classes that either directly represent a UI control or participate closely in control composition. The primary functionality that <xref:System.Windows.Controls.Control> enables is control templating.  
   
 ## See also
- <xref:System.Windows.Controls.Control>  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)
+- <xref:System.Windows.Controls.Control>
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)
+- [WPF Architecture](../../../../docs/framework/wpf/advanced/wpf-architecture.md)

@@ -87,8 +87,8 @@ SampleMethod() returns 50.
 
 ## See also
 
-- <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>  
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [Modifiers](modifiers.md)  
+- <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=nameWithType>
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [Modifiers](modifiers.md)

@@ -26,4 +26,4 @@ This example shows how to use the <xref:System.Windows.Media.VisualBrush> class 
  This code example is part of a larger example provided for the <xref:System.Windows.Media.VisualBrush> class. For the complete sample, see the [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049).  
   
 ## See also
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)

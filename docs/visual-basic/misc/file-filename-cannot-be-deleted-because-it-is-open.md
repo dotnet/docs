@@ -13,6 +13,6 @@ A deletion is being attempted on an open file.
 -   Close the file before deleting it.  
   
 ## See also
-   
- [My.Computer.FileSystem.DeleteFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile%2A)  
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+
+- [My.Computer.FileSystem.DeleteFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile%2A)
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

@@ -41,5 +41,5 @@ HRESULT GetIdentityAuthority (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
- [IIdentityAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iidentityauthority-interface.md)  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [IIdentityAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iidentityauthority-interface.md)
+- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

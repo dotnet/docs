@@ -24,5 +24,5 @@ This section describes the steps required to implement a discovery proxy. A disc
  Describes how to test the code written in the previous three topics.  
   
 ## See also
- [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)  
- [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)
+- [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)
+- [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)

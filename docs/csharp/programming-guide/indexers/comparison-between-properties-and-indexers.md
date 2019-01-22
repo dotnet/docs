@@ -21,6 +21,6 @@ Indexers are like properties. Except for the differences shown in the following 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
 - [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

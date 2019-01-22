@@ -106,4 +106,4 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
     ```  
   
 ## See also
- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

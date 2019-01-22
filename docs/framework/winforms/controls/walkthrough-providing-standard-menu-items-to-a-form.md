@@ -114,7 +114,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
 -   Give your <xref:System.Windows.Forms.ToolStrip> controls a professional appearance. For more information, see [How to: Set the ToolStrip Renderer for an Application](../../../../docs/framework/winforms/controls/how-to-set-the-toolstrip-renderer-for-an-application.md).  
   
 ## See also
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.StatusStrip>  
- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.StatusStrip>
+- [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)

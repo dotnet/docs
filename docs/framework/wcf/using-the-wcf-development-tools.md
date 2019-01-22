@@ -37,6 +37,6 @@ netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
  For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](https://go.microsoft.com/fwlink/?LinkId=97877).  
   
 ## See also
- [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)  
- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)  
- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+- [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)
+- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
+- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)

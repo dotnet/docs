@@ -31,5 +31,5 @@ This example shows how to use a horizontal <xref:System.Windows.Controls.GridSpl
 [!code-xaml[GridSplitterRowColumn#GridSplitterEntireRowPart2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirerowpart2)]  
   
 ## See also
- <xref:System.Windows.Controls.GridSplitter>  
- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)
+- <xref:System.Windows.Controls.GridSplitter>
+- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)

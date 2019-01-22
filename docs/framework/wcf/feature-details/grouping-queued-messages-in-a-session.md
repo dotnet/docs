@@ -80,5 +80,5 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
   
   
 ## See also
- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
+- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
+- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)

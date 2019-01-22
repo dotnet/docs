@@ -46,5 +46,5 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  Provides links to external resources available online and in print.  
   
 ## See also
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

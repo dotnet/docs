@@ -24,7 +24,7 @@ This example shows how to create and display a <xref:System.Windows.Media.Geomet
  To create more complex drawings, you can combine multiple drawing objects into a single composite drawing using a <xref:System.Windows.Media.DrawingGroup>.  
   
 ## See also
- <xref:System.Windows.Media.DrawingGroup>  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [Create a Composite Drawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-drawing.md)
+- <xref:System.Windows.Media.DrawingGroup>
+- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Create a Composite Drawing](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-drawing.md)

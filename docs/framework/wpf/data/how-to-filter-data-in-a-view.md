@@ -42,8 +42,8 @@ This example shows how to filter data in a view.
  [!code-vb[DataBindingLab#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#5)]  
   
 ## See also
- <xref:System.Windows.Data.CollectionView.CanFilter%2A>  
- <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- <xref:System.Windows.Data.CollectionView.CanFilter%2A>
+- <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -89,6 +89,6 @@ The common schema collections are the schema collections that are implemented by
 |ReservedWord|string|Provider specific reserved word.|  
   
 ## See also
- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [GetSchema and Schema Collections](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
+- [GetSchema and Schema Collections](../../../../docs/framework/data/adonet/getschema-and-schema-collections.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

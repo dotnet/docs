@@ -31,8 +31,8 @@ With the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method in the <xre
  The preceding code example is designed for use with Windows Forms, and it requires the <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
- <xref:System.Windows.Forms.TextRenderer>  
- <xref:System.Drawing.Font>  
- <xref:System.Drawing.Color>  
- <xref:System.Drawing.Color>  
- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)
+- <xref:System.Windows.Forms.TextRenderer>
+- <xref:System.Drawing.Font>
+- <xref:System.Drawing.Color>
+- <xref:System.Drawing.Color>
+- [Using Fonts and Text](../../../../docs/framework/winforms/advanced/using-fonts-and-text.md)

@@ -21,6 +21,6 @@ The purpose of a [try-catch](../../../csharp/language-reference/keywords/try-cat
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
 - [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)

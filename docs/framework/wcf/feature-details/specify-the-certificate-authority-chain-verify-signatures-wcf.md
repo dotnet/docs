@@ -28,4 +28,4 @@ When Windows Communication Foundation (WCF) receives a SOAP message signed using
          For more information about using the Certificates snap-in with MMC, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   
 ## See also
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

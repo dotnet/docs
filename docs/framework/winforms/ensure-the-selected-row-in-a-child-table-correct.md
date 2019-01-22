@@ -78,6 +78,6 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
  For information about how to build this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See also
- [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](../../../docs/framework/winforms/multiple-controls-bound-to-data-source-synchronized.md)  
- [BindingSource Component](../../../docs/framework/winforms/controls/bindingsource-component.md)  
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+- [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](../../../docs/framework/winforms/multiple-controls-bound-to-data-source-synchronized.md)
+- [BindingSource Component](../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

@@ -191,6 +191,6 @@ ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
  If you are creating a theme for you custom control, see the External Control Library section of the [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md).  
   
 ## See also
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [How to: Find ControlTemplate-Generated Elements](../../../../docs/framework/wpf/controls/how-to-find-controltemplate-generated-elements.md)  
- [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)
+- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+- [How to: Find ControlTemplate-Generated Elements](../../../../docs/framework/wpf/controls/how-to-find-controltemplate-generated-elements.md)
+- [Find DataTemplate-Generated Elements](../../../../docs/framework/wpf/data/how-to-find-datatemplate-generated-elements.md)

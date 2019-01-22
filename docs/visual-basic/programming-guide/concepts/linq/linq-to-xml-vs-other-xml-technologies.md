@@ -47,4 +47,4 @@ This topic compares [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the
  XmlLite is not integrated with [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]. It does not yield the programmer productivity improvements that are the motivating force behind [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)].  
   
 ## See also
- [Getting Started (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
+- [Getting Started (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/getting-started-linq-to-xml.md)

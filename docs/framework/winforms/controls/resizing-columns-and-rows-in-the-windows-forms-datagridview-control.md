@@ -35,4 +35,4 @@ The `DataGridView` control provides numerous options for customizing the sizing 
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
 ## See also
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

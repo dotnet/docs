@@ -442,5 +442,5 @@ public class OperationDetails
  If you want to receive the message object as the `Result` property and have the returned values as properties on that object, use the `/messageContract` command option. This generates a signature that returns the response message as the `Result` property on the <xref:System.EventArgs> object. All internal return values are then properties of the response message object.  
   
 ## See also
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)

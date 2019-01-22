@@ -22,7 +22,7 @@ ms.assetid: 42c695d8-ee28-49d4-80fd-fc71e9be7f29
  [!code-vb[scrollchangedeventargsLayout#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/scrollchangedeventargsLayout/VisualBasic/Window1.xaml.vb#3)]  
   
 ## See also
- <xref:System.Windows.Controls.ScrollViewer>  
- <xref:System.Windows.Controls.ScrollViewer.ScrollChanged>  
- <xref:System.Windows.Controls.ScrollChangedEventHandler>  
- <xref:System.Windows.Controls.ScrollChangedEventArgs>
+- <xref:System.Windows.Controls.ScrollViewer>
+- <xref:System.Windows.Controls.ScrollViewer.ScrollChanged>
+- <xref:System.Windows.Controls.ScrollChangedEventHandler>
+- <xref:System.Windows.Controls.ScrollChangedEventArgs>

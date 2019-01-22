@@ -33,5 +33,5 @@ This option specifies which codepage to use during compilation if the required p
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

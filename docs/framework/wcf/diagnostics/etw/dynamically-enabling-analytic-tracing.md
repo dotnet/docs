@@ -35,4 +35,4 @@ Using tools that ship with the Windows operating system, you can enable or disab
 |`WCFMessageLogging`|WCF message logging events.|  
   
 ## See also
- [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)
+- [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)

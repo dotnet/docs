@@ -43,4 +43,4 @@ Provides a workflow configuration element that establishes at the service level 
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ServiceAuthenticationElement>
+- <xref:System.ServiceModel.Configuration.ServiceAuthenticationElement>

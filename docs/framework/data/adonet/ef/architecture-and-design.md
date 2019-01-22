@@ -409,4 +409,4 @@ IsEmpty(inut) = Not Exists(input)
  To produce unique names both for extent aliases and for columns, use <existing_name>_n where n is the smallest alias that has not been used yet. The global list of all aliases increases the need for cascading renames.  
   
 ## See also
- [SQL Generation in the Sample Provider](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)
+- [SQL Generation in the Sample Provider](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)

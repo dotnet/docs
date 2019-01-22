@@ -20,5 +20,5 @@ When you use a collection initializer to create a collection, the Visual Basic c
  [!code-vb[VbVbalrCollectionInitializersHowTo2#3](../../../../visual-basic/programming-guide/language-features/collection-initializers/codesnippet/VisualBasic/how-to-create-a-collection-used-by-a-collection-initializer_4.vb)]  
   
 ## See also
- [Collection Initializers](../../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
- [How to: Create an Add Extension Method Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)
+- [Collection Initializers](../../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [How to: Create an Add Extension Method Used by a Collection Initializer](../../../../visual-basic/programming-guide/language-features/collection-initializers/how-to-create-an-add-extension-method-used-by-a-collection-initializer.md)

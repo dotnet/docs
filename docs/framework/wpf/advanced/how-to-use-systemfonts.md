@@ -31,11 +31,11 @@ This example shows how to use the static resources of the <xref:System.Windows.S
  [!code-vb[SystemRes_snip#FontResourcesCode](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SystemRes_snip/VisualBasic/Pane1.xaml.vb#fontresourcescode)]  
   
 ## See also
- <xref:System.Windows.SystemFonts>  
- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)  
- [Use SystemParameters](../../../../docs/framework/wpf/advanced/how-to-use-systemparameters.md)  
- [Use System Fonts Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-fonts-keys.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)  
- [x:Static Markup Extension](../../../../docs/framework/xaml-services/x-static-markup-extension.md)  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+- <xref:System.Windows.SystemFonts>
+- [Paint an Area with a System Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-system-brush.md)
+- [Use SystemParameters](../../../../docs/framework/wpf/advanced/how-to-use-systemparameters.md)
+- [Use System Fonts Keys](../../../../docs/framework/wpf/advanced/how-to-use-system-fonts-keys.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)
+- [x:Static Markup Extension](../../../../docs/framework/xaml-services/x-static-markup-extension.md)
+- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
+- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)

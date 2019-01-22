@@ -19,7 +19,7 @@ The following example shows how to assign a <xref:System.Windows.Controls.Dock> 
  [!code-vb[DockPanelSetDock#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelSetDock/VisualBasic/DockPanel_SetDock.vb#1)]  
   
 ## See also
- <xref:System.Windows.Controls.DockPanel>  
- <xref:System.Windows.Controls.DockPanel.GetDock%2A>  
- <xref:System.Windows.Controls.DockPanel.SetDock%2A>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.DockPanel>
+- <xref:System.Windows.Controls.DockPanel.GetDock%2A>
+- <xref:System.Windows.Controls.DockPanel.SetDock%2A>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

@@ -50,5 +50,5 @@ End Module
 >  Be alert for the effects of scope when two programming elements have the same name. In the previous example, if you declare an instance by using `Dim testClass as testClass = Nothing`, the compiler treats a call to `testClass.sayHello()` as an access of the method through the class name, and no warning occurs.  
   
 ## See also
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Scope in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Scope in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)

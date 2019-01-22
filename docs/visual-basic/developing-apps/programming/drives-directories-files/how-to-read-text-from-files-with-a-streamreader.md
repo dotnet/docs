@@ -28,9 +28,9 @@ The `My.Computer.FileSystem` object provides methods to open a <xref:System.IO.T
  To read from a file, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission> class. If you are running in a partial-trust context, the code might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md). The user also needs access to the file. For more information, see [ACL Technology Overview](https://msdn.microsoft.com/library/06fbf66d-6f02-4378-b863-b2f12e349045).  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- <xref:System.Windows.Forms.OpenFileDialog>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileWriter%2A>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A>  
- [SaveFileDialog Component](../../../../framework/winforms/controls/savefiledialog-component-windows-forms.md)  
- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+- <xref:System.Windows.Forms.OpenFileDialog>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileWriter%2A>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A>
+- [SaveFileDialog Component](../../../../framework/winforms/controls/savefiledialog-component-windows-forms.md)
+- [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)

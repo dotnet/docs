@@ -264,12 +264,12 @@ End Interface
  One result of this is that if the names and namespaces are not explicitly set, the use of IL obfuscation on the assembly alters the contract type names and namespaces and results in modified WSDL and wire exchanges that typically fail. If you do not set the contract names and namespaces explicitly but do intend to use obfuscation, use the <xref:System.Reflection.ObfuscationAttribute> and <xref:System.Reflection.ObfuscateAssemblyAttribute> attributes to prevent the modification of the contract type names and namespaces.  
   
 ## See also
- [How to: Create a Request-Reply Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md)  
- [How to: Create a One-Way Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md)  
- [How to: Create a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)  
- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
- [Using Sessions](../../../docs/framework/wcf/using-sessions.md)  
- [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)  
- [Reliable Services](../../../docs/framework/wcf/reliable-services.md)  
- [Services and Transactions](../../../docs/framework/wcf/services-and-transactions.md)
+- [How to: Create a Request-Reply Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md)
+- [How to: Create a One-Way Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md)
+- [How to: Create a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Using Sessions](../../../docs/framework/wcf/using-sessions.md)
+- [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
+- [Reliable Services](../../../docs/framework/wcf/reliable-services.md)
+- [Services and Transactions](../../../docs/framework/wcf/services-and-transactions.md)

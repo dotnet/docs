@@ -91,9 +91,9 @@ End Module
  [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
   
 ## See also
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  
- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)

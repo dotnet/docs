@@ -82,4 +82,4 @@ Access type: Read-only
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.CallbackBehaviorAttribute>
+- <xref:System.ServiceModel.CallbackBehaviorAttribute>

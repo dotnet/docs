@@ -35,9 +35,9 @@ A variable of a [reference type](../../../csharp/language-reference/keywords/ref
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)  
-- [ref](../../../csharp/language-reference/keywords/ref.md)  
-- [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md)  
-- [out](../../../csharp/language-reference/keywords/out.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)
+- [ref](../../../csharp/language-reference/keywords/ref.md)
+- [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md)
+- [out](../../../csharp/language-reference/keywords/out.md)
 - [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)

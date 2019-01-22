@@ -41,5 +41,5 @@ This sample shows how the <xref:System.Activities.Statements.TryCatch> activity 
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Built-InActivities\FlowChartWithFaultHandling`  
   
 ## See also
- [Flowchart Workflows](../../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)  
- [Exceptions](../../../../docs/framework/windows-workflow-foundation/exceptions.md)
+- [Flowchart Workflows](../../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)
+- [Exceptions](../../../../docs/framework/windows-workflow-foundation/exceptions.md)

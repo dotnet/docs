@@ -60,4 +60,4 @@ ms.author: "mhopkins"
  <xref:System.Windows.Automation.ControlType>  
   
 ## See also
- [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)
+- [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)

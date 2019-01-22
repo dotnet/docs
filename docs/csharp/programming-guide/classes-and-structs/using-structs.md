@@ -47,6 +47,6 @@ The `struct` type is suitable for representing lightweight objects such as `Poin
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
 - [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)

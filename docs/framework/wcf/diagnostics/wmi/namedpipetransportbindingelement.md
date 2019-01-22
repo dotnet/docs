@@ -35,4 +35,4 @@ class NamedPipeTransportBindingElement : ConnectionOrientedTransportBindingEleme
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>

@@ -150,6 +150,6 @@ public class SynchronousSocketListener {
 ```  
   
 ## See also
- [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)  
- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
- [Socket Code Examples](../../../docs/framework/network-programming/socket-code-examples.md)
+- [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)
+- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)
+- [Socket Code Examples](../../../docs/framework/network-programming/socket-code-examples.md)

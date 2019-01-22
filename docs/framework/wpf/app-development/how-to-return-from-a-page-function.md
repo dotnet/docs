@@ -23,4 +23,4 @@ This example shows how to return a result from a page function.
  [!code-vb[HOWTOPageFunctionSnippets#PageFunctionReturnAResultCODEBEHIND](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/VisualBasic/GetStringPageFunction.xaml.vb#pagefunctionreturnaresultcodebehind)]  
   
 ## See also
- <xref:System.Windows.Navigation.PageFunction%601>
+- <xref:System.Windows.Navigation.PageFunction%601>

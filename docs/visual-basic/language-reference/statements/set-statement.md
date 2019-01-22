@@ -82,7 +82,7 @@ End Set
  [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
   
 ## See also
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
+- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)

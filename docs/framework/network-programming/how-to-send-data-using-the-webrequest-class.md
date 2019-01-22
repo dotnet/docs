@@ -250,8 +250,8 @@ End Namespace
 ```  
   
 ## See also
- [Creating Internet Requests](../../../docs/framework/network-programming/creating-internet-requests.md)  
- [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)  
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)  
- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)
+- [Creating Internet Requests](../../../docs/framework/network-programming/creating-internet-requests.md)
+- [Using Streams on the Network](../../../docs/framework/network-programming/using-streams-on-the-network.md)
+- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)

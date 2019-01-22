@@ -56,5 +56,5 @@ ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
  To learn more about property triggers, see [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md).  
   
 ## See also
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)

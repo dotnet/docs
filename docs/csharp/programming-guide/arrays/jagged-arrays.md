@@ -61,8 +61,8 @@ A jagged array is an array whose elements are arrays. The elements of a jagged a
   
 ## See also
 
-- <xref:System.Array>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
-- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)  
+- <xref:System.Array>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)
+- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)
 - [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)

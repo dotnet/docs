@@ -184,4 +184,4 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 -   [How to: Custom Draw a ToolStrip Control](../../../../docs/framework/winforms/controls/how-to-custom-draw-a-toolstrip-control.md)  
   
 ## See also
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

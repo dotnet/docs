@@ -22,7 +22,7 @@ The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink
 2.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
 ## See also
- [How to: Sign an Assembly with a Strong Name](../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)  
- [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)  
+- [How to: Sign an Assembly with a Strong Name](../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)
+- [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)
  [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

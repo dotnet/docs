@@ -81,5 +81,5 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ```  
   
 ## See also
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

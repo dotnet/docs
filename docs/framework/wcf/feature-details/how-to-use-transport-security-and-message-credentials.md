@@ -155,6 +155,6 @@ Securing a service with both transport and message credentials uses the best of 
     ```  
   
 ## See also
- [How to: Set the Security Mode](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)  
- [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [How to: Set the Security Mode](../../../../docs/framework/wcf/how-to-set-the-security-mode.md)
+- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

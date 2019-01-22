@@ -23,5 +23,5 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Implement inheritance.|[Inherits](../../../visual-basic/language-reference/statements/inherits-statement.md), [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md), [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md), [MyBase](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md), [MyClass](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md), [New](../../../visual-basic/language-reference/operators/new-operator.md), [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md), [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md), [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md), [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md), [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)|  
   
 ## See also
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

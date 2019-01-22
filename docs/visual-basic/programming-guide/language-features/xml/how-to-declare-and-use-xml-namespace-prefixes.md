@@ -18,9 +18,9 @@ This example shows how to import the XML namespace prefix `ns` and use it in an 
 -   A reference to the <xref:System.Xml.Linq> namespace.  
   
 ## See also
- <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>  
- [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)  
- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)  
- [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)  
- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)
+- <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>
+- [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
+- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
+- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
+- [Accessing XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/accessing-xml.md)
+- [XML](../../../../visual-basic/programming-guide/language-features/xml/index.md)

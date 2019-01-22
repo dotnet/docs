@@ -101,5 +101,5 @@ ms.author: "mairaw"
  Transparency rules are not enforced until transparency is calculated. At that time, an <xref:System.InvalidOperationException> is thrown if a transparency rule is violated. The time that transparency is calculated depends on multiple factors and cannot be predicted. It is calculated as late as possible. In the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)], assembly-level transparency calculation occurs sooner than it does in the .NET Framework 2.0. The only guarantee is that transparency calculation will occur by the time it is needed. This is similar to how the just-in-time (JIT) compiler can change the point when a method is compiled and any errors in that method are detected. Transparency calculation is invisible if your code does not have any transparency errors.  
   
 ## See also
- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)  
- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)
+- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)
+- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)

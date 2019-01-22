@@ -184,8 +184,8 @@ If your application requires early-bound calls to COM event interface methods, y
 ```
 
 ## See also
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
- [COM Wrappers](com-wrappers.md)  
- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  
- [Runtime Callable Wrapper](runtime-callable-wrapper.md)
+- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
+- [COM Wrappers](com-wrappers.md)
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
+- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)
+- [Runtime Callable Wrapper](runtime-callable-wrapper.md)

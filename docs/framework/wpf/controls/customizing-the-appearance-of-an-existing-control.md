@@ -256,4 +256,4 @@ A button that uses a custom control template in the pressed state
  [!code-xaml[VSMButtonTemplate#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#3)]  
   
 ## See also
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

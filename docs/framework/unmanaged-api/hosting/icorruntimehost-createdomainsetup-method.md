@@ -55,8 +55,8 @@ HRESULT CreateDomainSetup (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- <xref:System.AppDomainSetup>  
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- <xref:System.AppDomainSetup>
+- <xref:System.IAppDomainSetup?displayProperty=nameWithType>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

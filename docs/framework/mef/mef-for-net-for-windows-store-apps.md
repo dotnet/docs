@@ -21,6 +21,6 @@ ms.author: "ronpet"
  For more information about [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and a list of namespaces and types that it contains, see [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312) in the Windows Dev Center.  
   
 ## See also
- [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312)  
- [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/p/?LinkID=247912)  
- [Managed Extensibility Framework (MEF)](../../../docs/framework/mef/index.md)
+- [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312)
+- [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/p/?LinkID=247912)
+- [Managed Extensibility Framework (MEF)](../../../docs/framework/mef/index.md)

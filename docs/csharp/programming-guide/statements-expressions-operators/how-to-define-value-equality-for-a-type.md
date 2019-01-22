@@ -59,5 +59,5 @@ When you define a class or struct, you decide whether it makes sense to create a
   
 ## See also
 
-- [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)  
+- [Equality Comparisons](../../../csharp/programming-guide/statements-expressions-operators/equality-comparisons.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

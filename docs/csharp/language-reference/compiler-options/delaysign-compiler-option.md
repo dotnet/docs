@@ -46,6 +46,6 @@ For information on how to set this compiler option programmatically, see <xref:V
 
 ## See also
 
-- [C# -publicsign option](publicsign-compiler-option.md)  
-- [C# Compiler Options](index.md)  
+- [C# -publicsign option](publicsign-compiler-option.md)
+- [C# Compiler Options](index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

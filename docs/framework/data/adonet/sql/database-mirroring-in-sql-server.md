@@ -58,4 +58,4 @@ string activeServer = connection.DataSource;
 |[Database Mirroring](/sql/database-engine/database-mirroring/database-mirroring-sql-server)|Describes how to set up and configure mirroring in SQL Server.|  
   
 ## See also
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

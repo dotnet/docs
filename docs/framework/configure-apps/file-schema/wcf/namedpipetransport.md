@@ -67,13 +67,13 @@ This transport uses URIs of the form "net.pipe://hostname/path". Other URI compo
 The `namedPipeTransport` element is the starting point for creating a custom binding that implements the named pipes transport protocol. This transport is used for on-machine Windows Communication Foundation (WCF)-to-WCF communication.  
   
 ## See also
-<xref:System.ServiceModel.Configuration.NamedPipeTransportElement>   
-<xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>   
-<xref:System.ServiceModel.Channels.TransportBindingElement>   
-<xref:System.ServiceModel.Channels.CustomBinding>   
-[Transports](../../../../../docs/framework/wcf/feature-details/transports.md)   
-[Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)   
-[Bindings](../../../../../docs/framework/wcf/bindings.md)   
-[Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)   
-[Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)   
-[\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- <xref:System.ServiceModel.Configuration.NamedPipeTransportElement>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

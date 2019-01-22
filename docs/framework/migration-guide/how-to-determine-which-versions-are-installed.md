@@ -27,12 +27,15 @@ To get an accurate list of the .NET Framework versions installed on a computer, 
  [Using code to query the registry (versions 1-4)](#net_c)  
  [Using code to query the registry (version 4.5 and later)](#net_d)  
  [Using PowerShell to query the registry (version 4.5 and later)](#ps_a)  
-  
+
  To find the CLR version, you can use a tool or code:  
   
  [Using the Clrver tool](#clr_a)  
  [Using code to query the System.Environment class](#clr_b)  
-  
+
+> [!NOTE]
+> There is a difference between the .NET Framework version and the common language runtime (CLR) version. The .NET Framework is versioned based on the set of assemblies that form the .NET Framework Class Library. For example, .NET Framework versions include 4.5, 4.6.1, and 4.7.2. The CLR is versioned based on the runtime on which .NET Framework applications execute, and a single CLR version typically supports multiple .NET Framework versions. CLR version 4.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2; CLR version 4.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6. For more information, see the <xref:System.Environment.Version?displayProperty=nameWithType> property.
+
  For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
   
 <a name="net_a"></a>   

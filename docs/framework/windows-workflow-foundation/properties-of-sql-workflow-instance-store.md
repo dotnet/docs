@@ -20,6 +20,6 @@ The topics in this section provide details about properties of the SQL Workflow 
   
 -   [Connection String and Connection String Name](../../../docs/framework/windows-workflow-foundation/connection-string-and-connection-string-name.md)  
   
-## See Also  
+## See also
  [Windows Server App Fabric Instance Store](https://go.microsoft.com/fwlink/?LinkId=201201)  
  [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkId=201202)

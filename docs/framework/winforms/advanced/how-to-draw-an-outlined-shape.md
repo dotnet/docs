@@ -34,7 +34,7 @@ This example draws outlined ellipses and rectangles on a form.
 ## Robust Programming  
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Pen> and <xref:System.Drawing.Graphics> objects.  
   
-## See Also  
+## See also
  <xref:System.Drawing.Graphics.DrawEllipse%2A>  
  <xref:System.Windows.Forms.Control.OnPaint%2A>  
  <xref:System.Drawing.Graphics.DrawRectangle%2A>  

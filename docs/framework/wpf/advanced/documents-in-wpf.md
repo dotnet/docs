@@ -128,7 +128,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
 -   Routing documents directly to an [!INCLUDE[TLA2#tla_xps](../../../../includes/tla2sharptla-xps-md.md)]-compatible printer.  
   
-## See Also  
+## See also
  <xref:System.Windows.Documents.FixedDocument>  
  <xref:System.Windows.Documents.FlowDocument>  
  <xref:System.Windows.Xps.Packaging.XpsDocument>  

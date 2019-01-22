@@ -71,7 +71,7 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
 |<xref:Microsoft.VisualBasic.VariantType>|Indicates the type of a variant object, returned by the <xref:Microsoft.VisualBasic.Information.VarType%2A> function.|  
 |<xref:Microsoft.VisualBasic.VbStrConv>|Indicates which type of conversion to perform when calling the <xref:Microsoft.VisualBasic.Strings.StrConv%2A> function.|  
   
-## See Also  
+## See also
  [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
  [Visual Basic](../../visual-basic/index.md)  
  [Constants Overview](../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)  

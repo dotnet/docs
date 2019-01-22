@@ -37,5 +37,5 @@ There are several different ways to analyze and manipulate your strings. Some of
   
  For more information, see the documentation for the <xref:System.String> class.  
   
-## See Also  
+## See also
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

@@ -14,6 +14,6 @@ The <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories> object can be used to
   
      [!code-vb[VbVbcnMyFileSystem#15](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-retrieve-the-contents-of-the-my-documents-directory_1.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories>  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A>

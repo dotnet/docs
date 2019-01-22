@@ -78,7 +78,7 @@ Defines the transport-level security settings for a service endpoint configured 
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-webhttpbinding.md)|Represents the security capabilities of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.HttpTransportSecurity>  
  <xref:System.ServiceModel.Configuration.WebHttpSecurityElement.Transport%2A>  
  <xref:System.ServiceModel.WebHttpSecurity.Transport%2A>  

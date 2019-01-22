@@ -63,6 +63,6 @@ Historically, the world of data and the world of objects have not been well inte
 ## Compiling the Code  
  Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also
+## See also
 
 - [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)

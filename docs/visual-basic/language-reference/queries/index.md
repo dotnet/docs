@@ -52,6 +52,6 @@ Visual Basic enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqe
  [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
  Describes the `Where` clause, which specifies a filtering condition for a query.  
   
-## See Also  
+## See also
  [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

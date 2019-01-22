@@ -87,7 +87,7 @@ public class Service1 : IService1
 > [!IMPORTANT]
 >  Note that <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> ignores <`host`> settings within the <`service`> tag of <`system.serviceModel`>. Conceptually, <`host`> is about host configuration, not service configuration, and it gets loaded before the Configure method executes.  
   
-## See Also  
+## See also
  [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)  
  [Configuring Client Behaviors](../../../docs/framework/wcf/configuring-client-behaviors.md)  
  [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)  

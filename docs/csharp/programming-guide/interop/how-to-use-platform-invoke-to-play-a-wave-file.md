@@ -38,7 +38,7 @@ The following C# code example illustrates how to use platform invoke services to
 ## .NET Framework Security  
  For more information, see [Security in .NET](../../../standard/security/index.md).  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Interoperability Overview](../../../csharp/programming-guide/interop/interoperability-overview.md)  

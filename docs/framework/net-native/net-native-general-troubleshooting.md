@@ -36,5 +36,5 @@ This topic describes how to troubleshoot potential issues that you might encount
   
      For more information, see [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md).  
   
-## See Also  
+## See also
  [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)

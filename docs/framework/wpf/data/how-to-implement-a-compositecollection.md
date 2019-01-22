@@ -11,7 +11,7 @@ ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
   
  [!code-xaml[CompositeCollections#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositeCollections/CS/Window1.xaml#1)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Data.CollectionContainer>  
  <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>  
  <xref:System.Windows.Data.XmlDataProvider>  

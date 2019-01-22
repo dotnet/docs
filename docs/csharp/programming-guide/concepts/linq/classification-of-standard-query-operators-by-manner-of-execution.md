@@ -81,7 +81,7 @@ The LINQ to Objects implementations of the standard query operator methods execu
 |<xref:System.Linq.Enumerable.Union%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
 |<xref:System.Linq.Enumerable.Where%2A>|<xref:System.Collections.Generic.IEnumerable%601>||X||  
   
-## See Also
+## See also
 
 - <xref:System.Linq.Enumerable>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  

@@ -42,7 +42,7 @@ variableorproperty /= expression
   
  [!code-vb[VbVbalrOperators#17](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-assignment-operator_1.vb)]  
   
-## See Also  
+## See also
  [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)  
  [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  

@@ -92,7 +92,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |Audit policy management|Not applicable.|Along with configuration, the Security log is also controlled by the local security authority (LSA) policy. The "Audit object access" category must also be enabled.|  
 |Default user experience|All authenticated users can write to the Application log, so no additional permission step is needed for application processes.|The application process (context) must have `SeAuditPrivilege`.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
  <xref:System.ServiceModel.AuditLogLocation>  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  

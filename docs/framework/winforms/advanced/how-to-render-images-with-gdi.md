@@ -75,7 +75,7 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     g->DrawImage(myBitmap, 1, 1);  
     ```  
   
-## See Also  
+## See also
  [Getting Started with Graphics Programming](../../../../docs/framework/winforms/advanced/getting-started-with-graphics-programming.md)  
  [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)  
  [Pens, Lines, and Rectangles in GDI+](../../../../docs/framework/winforms/advanced/pens-lines-and-rectangles-in-gdi.md)  

@@ -69,7 +69,7 @@ A tooltip is a small pop-up window that appears when a user pauses the mouse poi
   
  [!code-xaml[ToolTipService#ToolTip](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml#tooltip)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ToolTipService>  
  <xref:System.Windows.Controls.ToolTip>  
  <xref:System.Windows.Controls.ToolTipEventArgs>  

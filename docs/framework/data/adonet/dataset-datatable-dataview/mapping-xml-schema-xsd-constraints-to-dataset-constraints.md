@@ -37,5 +37,5 @@ The XML Schema definition language (XSD) allows constraints to be specified on t
  [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
  Describes the XML Schema elements used to create relations between table columns in a **DataSet**.  
   
-## See Also  
+## See also
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

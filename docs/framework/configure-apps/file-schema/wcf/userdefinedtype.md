@@ -84,7 +84,7 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
   
  When the service is initialized, the integration runtime looks up the specified types and adds them to the known types collection for the specified contracts.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes%2A>  
  <xref:System.ServiceModel.Configuration.ComUdtElementCollection>  
  <xref:System.ServiceModel.Configuration.ComUdtElement>  

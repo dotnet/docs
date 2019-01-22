@@ -44,7 +44,7 @@ This is the fourth of four topics that shows how to implement a discovery proxy.
   
 3.  Shut down the discovery proxy.  
   
-## See Also  
+## See also
  [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
  [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)  
  [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)  

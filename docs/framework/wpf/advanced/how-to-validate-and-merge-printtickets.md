@@ -50,7 +50,7 @@ The [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] [Print S
  [!code-csharp[PrintTicketManagment#UIForMergeAndValidatePTUtility](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#uiformergeandvalidateptutility)]
  [!code-vb[PrintTicketManagment#UIForMergeAndValidatePTUtility](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#uiformergeandvalidateptutility)]  
   
-## See Also  
+## See also
  <xref:System.Printing.PrintCapabilities>  
  <xref:System.Printing.PrintTicket>  
  <xref:System.Printing.PrintServer.GetPrintQueues%2A>  

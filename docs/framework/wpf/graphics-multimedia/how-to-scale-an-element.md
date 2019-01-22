@@ -31,7 +31,7 @@ Two ScaleTransform operations with identical ScaleX and ScaleY values but differ
   
  For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Transform>  
  <xref:System.Windows.Media.ScaleTransform>  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  

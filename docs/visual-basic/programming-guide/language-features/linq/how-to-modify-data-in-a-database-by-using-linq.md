@@ -116,7 +116,10 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
       Dim updateCust = (From cust In db.Customers   
                         Where cust.CustomerID = "JILLF").ToList()(0)  
   
-      updateCust.ContactName = "Jill Shrader"  
+      updateCust.ContactName = "Jill Shrader"
+      updateCust.Country = "Wales"
+      updateCust.CompanyName = "Red Yonder Airlines"
+      updateCust.City = "Cardiff"
   
       Try  
         db.SubmitChanges()  
@@ -151,7 +154,7 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
   
 7.  Press F5 to run your project. Click **Add** to add a new record. Click **Update** to modify the new record. Click **Delete** to delete the new record.  
   
-## See Also  
+## See also
  [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  [Queries](../../../../visual-basic/language-reference/queries/index.md)  
  [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  

@@ -37,7 +37,7 @@ Specifies whether the assembly will be fully or partially signed.
   
 3.  Set the value in the **Delay sign only** box.  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [-keyfile](../../../visual-basic/reference/command-line-compiler/keyfile.md)  
  [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md)  

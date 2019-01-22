@@ -428,6 +428,6 @@ class SampleClass
   
 -   [delegate](../../../csharp/language-reference/keywords/delegate.md)  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)

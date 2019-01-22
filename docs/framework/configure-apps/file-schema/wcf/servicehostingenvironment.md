@@ -86,7 +86,7 @@ This element defines the type the service hosting environment instantiates for a
 <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
  <xref:System.ServiceModel.ServiceHostingEnvironment>  
  [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)  

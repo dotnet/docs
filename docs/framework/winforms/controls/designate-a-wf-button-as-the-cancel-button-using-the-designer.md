@@ -18,7 +18,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
   
 2.  In the **Properties** window, set the form's <xref:System.Windows.Forms.Form.CancelButton%2A> property to the <xref:System.Windows.Forms.Button> control's name.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Form.CancelButton%2A>  
  [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
  [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  

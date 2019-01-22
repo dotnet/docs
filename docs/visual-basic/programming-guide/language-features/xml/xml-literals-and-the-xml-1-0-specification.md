@@ -22,7 +22,7 @@ The XML literal syntax in Visual Basic supports most of the Extensible Markup La
   
 -   The embedded expression syntax allowed in document and element literals is not valid XML.  
   
-## See Also  
+## See also
  [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
  [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
  [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)

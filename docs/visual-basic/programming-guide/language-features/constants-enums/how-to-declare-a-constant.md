@@ -59,7 +59,7 @@ You use the `Const` statement to declare a constant and set its value. By declar
     Public Const Four As Integer = 4, Five As Integer = 5, Six As Integer = 44  
     ```  
   
-## See Also  
+## See also
  [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
  [Constant and Literal Data Types](constant-and-literal-data-types.md)  
  [Constants Overview](constants-overview.md)

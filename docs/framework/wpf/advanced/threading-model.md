@@ -211,5 +211,5 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
   
  The task for [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is to avoid unexpected reentrancy without reintroducing the memory leak, which is why we don’t block reentrancy everywhere.  
   
-## See Also  
+## See also
  [Single-Threaded Application with Long-Running Calculation Sample](https://go.microsoft.com/fwlink/?LinkID=160038)

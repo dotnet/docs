@@ -39,7 +39,7 @@ You can change the appearance of a <xref:Microsoft.VisualBasic.PowerPacks.DataRe
   
  Note that for both of these customizations, you must provide code to set the properties for both sides of the condition. If you do not specify the `Else` condition, you will see unexpected results at run time.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.DrawItem>  
  [Introduction to the DataRepeater Control](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-datarepeater-control-visual-studio.md)  

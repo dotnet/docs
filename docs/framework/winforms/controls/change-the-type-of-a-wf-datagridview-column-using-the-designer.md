@@ -27,7 +27,7 @@ Sometimes you will want to change the type of a column that has already been add
     > [!NOTE]
     >  The `ColumnType` property is a design-time-only property that indicates the class representing the column type. It is not an actual property defined in a column class.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridViewColumn>  
  [How to: Create a Windows Application Project](https://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa)  

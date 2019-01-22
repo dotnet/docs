@@ -53,7 +53,7 @@ string ICitizen.this[int index]
   
  implements the indexer on the `ICitizen` interface.  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Indexers](../../../csharp/programming-guide/indexers/index.md)  

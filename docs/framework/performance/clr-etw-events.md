@@ -55,7 +55,7 @@ The topics in this section describe event tracing for Windows (ETW) events. Each
  [Stack Event](../../../docs/framework/performance/stack-etw-event.md)  
  Captures information that is used with other events to generate stack traces after an event is raised.  
   
-## See Also  
+## See also
  [Improve Debugging And Performance Tuning With ETW](https://go.microsoft.com/fwlink/?LinkId=179696)  
  [Windows Performance Blog](https://go.microsoft.com/fwlink/?LinkId=179509)  
  [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)  

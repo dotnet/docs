@@ -233,7 +233,7 @@ command.Parameters.AddWithValue( _
 |[Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkId=98361)|Provides information about the date and time data types and functions, and examples of using them.|  
 |[Data Types (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98362)|Describes system data types in SQL Server 2008.|  
   
-## See Also  
+## See also
  [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
  [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
  [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  

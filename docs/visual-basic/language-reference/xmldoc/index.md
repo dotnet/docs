@@ -33,7 +33,7 @@ The Visual Basic compiler can process documentation comments in your code to an 
 > [!NOTE]
 >  If you want angle brackets to appear in the text of a documentation comment, use `&lt;` and `&gt;`. For example, the string `"&lt;text in angle brackets&gt;"` will appear as `<text in angle brackets>`.  
   
-## See Also  
+## See also
  [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)  
  [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)  
  [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

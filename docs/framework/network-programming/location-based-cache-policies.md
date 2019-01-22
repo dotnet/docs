@@ -40,7 +40,7 @@ A location-based cache policy defines the freshness of valid cached entries base
 ## Revalidate Policy  
  Compares the copy of the resource in the cache with the copy on the server. If the copy on the server is newer, it is used to satisfy the request and replaces the copy in the cache. If the copy in the cache is the same as the server copy, the cached copy is used. In the HTTP caching protocol, this is achieved using a conditional request.  
   
-## See Also  
+## See also
  [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)  
  [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)  
  [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)  

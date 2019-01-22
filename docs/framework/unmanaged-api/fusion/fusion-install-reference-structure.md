@@ -49,6 +49,6 @@ typedef struct _FUSION_INSTALL_REFERENCE_ {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
+## See also
  [Fusion Structures](../../../../docs/framework/unmanaged-api/fusion/fusion-structures.md)  
  [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)

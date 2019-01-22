@@ -68,7 +68,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.ValuePattern>|<xref:System.Windows.Automation.Provider.IValueProvider>|Allows clients to get or set a value on controls that do not support a range of values. For example, a date time picker.|  
 |<xref:System.Windows.Automation.WindowPattern>|<xref:System.Windows.Automation.Provider.IWindowProvider>|Exposes information specific to windows, a fundamental concept to the [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] operating system. Examples of controls that are windows are top-level application windows ([!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)], [!INCLUDE[TLA#tla_winexpl](../../../includes/tlasharptla-winexpl-md.md)], and so on), [!INCLUDE[TLA#tla_mdi](../../../includes/tlasharptla-mdi-md.md)] child windows, and dialogs.|  
   
-## See Also  
+## See also
  [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
  [Control Pattern Mapping for UI Automation Clients](../../../docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md)  
  [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)  

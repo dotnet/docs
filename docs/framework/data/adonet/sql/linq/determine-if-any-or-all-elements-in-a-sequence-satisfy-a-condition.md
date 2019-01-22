@@ -27,5 +27,5 @@ The <xref:System.Linq.Enumerable.All%2A> operator returns `true` if all elements
   
  [!code-csharp[DLinqQueryExamples#38](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#38)]  
   
-## See Also  
+## See also
  [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)

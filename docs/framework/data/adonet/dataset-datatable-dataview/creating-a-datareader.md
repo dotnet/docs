@@ -24,7 +24,7 @@ The <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes have a <
 4 Russ  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataTable.CreateDataReader%2A>  
  <xref:System.Data.DataSet.CreateDataReader%2A>  
  [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)  

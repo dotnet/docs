@@ -64,7 +64,7 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>  
 - <xref:System.Security.Cryptography>  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  

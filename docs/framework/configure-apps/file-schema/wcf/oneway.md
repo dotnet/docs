@@ -47,7 +47,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
 ## Remarks  
  To enable packet routing, a one-way conversion layer is required, which this element provides. A user can create a custom binding that layers this binding over a session-aware or request-reply transport to make it packet routable. This element is also useful when you want to expose one-way methods in a more native fashion. More transformations can be applied over this layer, such as Composite Duplex and Reliable Messaging.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.OneWayBindingElement>  
  <xref:System.ServiceModel.Configuration.OneWayElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

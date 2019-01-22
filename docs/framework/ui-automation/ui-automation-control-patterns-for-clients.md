@@ -40,7 +40,7 @@ ms.author: "mhopkins"
   
  Controls implementing custom control types can have any set of control patterns that are needed to represent their functionality.  
   
-## See Also  
+## See also
  [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)  
  [UI Automation Text Pattern](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)  
  [Invoke a Control Using UI Automation](../../../docs/framework/ui-automation/invoke-a-control-using-ui-automation.md)  

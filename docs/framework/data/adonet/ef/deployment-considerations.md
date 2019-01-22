@@ -22,6 +22,6 @@ This topic provides information about deploying applications that use the ADO.NE
   
 -   Because the Entity Framework is a component of the .NET Framework, it can be redistributed with your application as permitted by the .NET Framework license agreement.  
   
-## See Also  
+## See also
  [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
  [Development and Deployment Considerations](../../../../../docs/framework/data/adonet/ef/development-and-deployment-considerations.md)

@@ -52,7 +52,7 @@ For more information, see [Events](~/_csharplang/spec/classes.md#events) in the 
   
  [Delegates and Events](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652490%28v=orm.10%29) in [Learning C# 3.0: Master the fundamentals of C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v=orm.10%29)  
   
-## See Also
+## See also
 
 - <xref:System.EventHandler>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

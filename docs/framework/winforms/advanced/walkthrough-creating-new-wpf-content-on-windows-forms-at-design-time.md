@@ -102,7 +102,7 @@ Windows Forms and WPF are different technologies, but they are designed to inter
 
 - Change the style of your WPF content. For more information, see [Walkthrough: Styling WPF Content](../../../../docs/framework/winforms/advanced/walkthrough-styling-wpf-content.md).
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

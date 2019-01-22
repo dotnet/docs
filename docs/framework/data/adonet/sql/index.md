@@ -34,7 +34,7 @@ This section describes features and behaviors that are specific to the .NET Fram
   
  [SQL Server Books Online](/sql/sql-server/sql-server-technical-documentation)  
   
-## See Also  
+## See also
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Data Type Mappings in ADO.NET](../../../../../docs/framework/data/adonet/data-type-mappings-in-ado-net.md)  
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  

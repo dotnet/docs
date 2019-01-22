@@ -27,7 +27,7 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
   
 2.  Ensure that the type that you have identified as the source of your query is a queryable type. That is, a type that implements <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601>.  
   
-## See Also  
+## See also
  <xref:System.Linq>  
  <xref:System.Data.Linq>  
  <xref:System.Xml.Linq>  

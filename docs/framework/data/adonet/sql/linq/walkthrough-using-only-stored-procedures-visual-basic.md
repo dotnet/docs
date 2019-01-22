@@ -185,6 +185,6 @@ This walkthrough provides a basic end-to-end [!INCLUDE[vbtecdlinq](../../../../.
 ## Next Steps  
  You can enhance this project by making some changes. For example, you could list available stored procedures in a list box and have the user select which procedures to execute. You could also stream the output of the reports to a text file.  
   
-## See Also  
+## See also
  [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)  
  [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

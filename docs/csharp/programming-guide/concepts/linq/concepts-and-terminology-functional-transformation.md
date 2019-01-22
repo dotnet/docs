@@ -65,7 +65,7 @@ This topic introduces the concepts and terminology of pure functional transforma
   
  These language features will be used in code samples throughout this section.  
   
-## See Also
+## See also
 
 - [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)  
 - [Functional Programming vs. Imperative Programming (C#)](../../../../csharp/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)

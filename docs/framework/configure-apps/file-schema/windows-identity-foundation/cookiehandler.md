@@ -77,7 +77,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 <cookieHandler requireSsl="false" />  
 ```  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Services.CookieHandler>  
  <xref:System.IdentityModel.Services.ChunkedCookieHandler>  
  <xref:System.IdentityModel.Services.SessionAuthenticationModule>

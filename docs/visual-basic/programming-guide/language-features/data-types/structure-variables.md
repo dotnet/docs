@@ -46,7 +46,7 @@ yourSystem = mySystem
   
  If a structure element is a reference type, such as a `String`, `Object`, or array, the pointer to the data is copied. In the previous example, if `systemInfo` had included an object variable, then the preceding example would have copied the pointer from `mySystem` to `yourSystem`, and a change to the object's data through one structure would be in effect when accessed through the other structure.  
   
-## See Also  
+## See also
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  

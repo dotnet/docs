@@ -18,5 +18,5 @@ Transactions bind multiple tasks together. For example, imagine that an applicat
   
  You can create transactions using ADO.NET, <xref:System.EnterpriseServices>, or the transactional programming model provided by the <xref:System.Transactions> namespace. The [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md) topic discusses the features that you can use to write a transactional application using the <xref:System.Transactions> namespace.  
   
-## See Also  
+## See also
  [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md)

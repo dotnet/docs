@@ -744,5 +744,5 @@ public void Receive(Message input)
 ## Globalization  
  The ASP.NET configuration language allows you to specify the culture for individual services. The WCF does not support that configuration setting except in ASP.NET compatibility mode. To localize a WCF service that does not use ASP.NET compatibility mode, compile the service type into culture-specific assemblies, and have separate culture-specific endpoints for each culture-specific assembly.  
   
-## See Also  
+## See also
  [Comparing ASP.NET Web Services to WCF Based on Purpose and Standards Used](../../../../docs/framework/wcf/feature-details/comparing-aspnet-web-services-to-wcf-based-on-purpose-and-standards-used.md)

@@ -106,7 +106,7 @@ End Interface
   
  Note that the `Property` and `Function` statements do not introduce blocks ending with `End Property` and `End Function` within the interface. The interface defines only the signatures of its members. The full `Property` and `Function` blocks appear in a class that implements `thisInterface`.  
   
-## See Also  
+## See also
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)  
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
  [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)  

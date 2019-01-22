@@ -29,7 +29,7 @@ This example shows how to control a <xref:System.Windows.Controls.MediaElement> 
  [!code-csharp[MediaGallery_snip#CodeBehindMediaTimelineExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snip/CSharp/MediaTimelineExample.xaml.cs#codebehindmediatimelineexamplewholepage)]
  [!code-vb[MediaGallery_snip#CodeBehindMediaTimelineExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/MediaTimelineExample.xaml.vb#codebehindmediatimelineexamplewholepage)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.MediaElement>  
  <xref:System.Windows.Media.MediaTimeline>  
  <xref:System.Windows.Media.Animation.Storyboard>  

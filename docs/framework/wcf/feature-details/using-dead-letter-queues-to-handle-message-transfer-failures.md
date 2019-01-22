@@ -67,7 +67,7 @@ Queued messages can fail delivery. These failed messages are recorded in a dead-
   
   
   
-## See Also  
+## See also
  [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
  [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
  [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)

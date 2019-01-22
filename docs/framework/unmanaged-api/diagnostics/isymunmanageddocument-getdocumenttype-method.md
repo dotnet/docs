@@ -35,5 +35,5 @@ HRESULT GetDocumentType(
 ## Return Value  
  S_OK if the method succeeds.  
   
-## See Also  
+## See also
  [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

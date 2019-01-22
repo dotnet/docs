@@ -45,7 +45,7 @@ Specifies how service metadata can be processed.
 |-------------|-----------------|  
 |[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|The client section defines a list of endpoints that a client can connect to.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MetadataElement>  
  <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
  <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>  

@@ -88,7 +88,7 @@ foreach (DataRow copyRow in copyRows)
   customerTable.ImportRow(copyRow);  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataSet>  
  <xref:System.Data.DataTable>  
  [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  

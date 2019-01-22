@@ -218,7 +218,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
  You may also use scientific notation. For example, `+1.e17` is a valid value.  
   
-## See Also  
+## See also
  <xref:System.Windows.Shapes.Path>  
  <xref:System.Windows.Media.StreamGeometry>  
  <xref:System.Windows.Media.PathGeometry>  

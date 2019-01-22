@@ -14,6 +14,6 @@ With Visual Basic, you can use very large strings. However, the requirements of 
   
 2.  Remove any unnecessary applications from memory to create more space.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
  [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)

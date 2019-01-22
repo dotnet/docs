@@ -426,6 +426,21 @@ This section describes the unmanaged interfaces that handle the debugging of a p
   
  [ICorPublishProcessEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)  
  Provides methods that traverse a collection of `ICorPublishProcess` objects.  
+
+ [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)
+ Provides helper methods to access data from `SOS`.
+
+ [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)
+ Provides methods for querying information about a method definition.
+ 
+ [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)
+ Provides methods for querying information about a method instance.
+ 
+ [IXCLRDataModule Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamodule-interface.md)
+ Provides methods for querying information about a loaded module.
+ 
+ [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+ Provides methods for querying information about a process.
   
 ## Related Sections  
  [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  

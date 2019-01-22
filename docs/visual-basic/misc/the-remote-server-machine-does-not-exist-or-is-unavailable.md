@@ -12,5 +12,5 @@ You are trying to connect to a remote server that is unavailable or does not exi
   
 -   Reconnect to the network and try again.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

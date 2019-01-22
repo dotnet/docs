@@ -21,6 +21,6 @@ The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior> class expos
   
  For details, see <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A>, and <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentInstances%2A>.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>  
  <xref:System.ServiceModel.NetTcpBinding.MaxConnections%2A>

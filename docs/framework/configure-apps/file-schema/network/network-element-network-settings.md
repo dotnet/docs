@@ -103,7 +103,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Net.Configuration.SmtpNetworkElement?displayProperty=nameWithType>  
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  

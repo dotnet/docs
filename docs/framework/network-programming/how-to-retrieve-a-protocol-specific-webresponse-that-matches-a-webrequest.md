@@ -26,5 +26,5 @@ Dim resp As WebResponse = req.GetResponse()
   
 -   References to the **System.Net** namespace.  
   
-## See Also  
+## See also
  [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

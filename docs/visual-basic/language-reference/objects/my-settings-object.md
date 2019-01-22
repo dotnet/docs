@@ -53,7 +53,7 @@ Provides properties and methods for accessing the application's settings.
   
  For this example to work, your application must have a `Nickname` setting, of type `String`.  
   
-## See Also  
+## See also
  <xref:System.Configuration.ApplicationSettingsBase>  
  [How to: Read Application Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)  
  [How to: Change User Settings in Visual Basic](../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)  

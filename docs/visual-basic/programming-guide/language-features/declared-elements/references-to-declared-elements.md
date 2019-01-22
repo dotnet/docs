@@ -187,7 +187,7 @@ Dim xDoc As xD.XmlDocument
 ## Shadowing  
  When two programming elements share the same name, one of them can hide, or *shadow*, the other one. A shadowed element is not available for reference; instead, when your code uses the shadowed element name, the Visual Basic compiler resolves it to the shadowing element. For a more detailed explanation with examples, see [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).  
   
-## See Also  
+## See also
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
  [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  

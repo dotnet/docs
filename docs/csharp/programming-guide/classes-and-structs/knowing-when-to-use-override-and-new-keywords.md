@@ -536,7 +536,7 @@ namespace OverrideAndNew2
 }  
 ```  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  

@@ -115,7 +115,7 @@ This element defines the settings for the message-logging capabilities of Window
 </messageLogging>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.DiagnosticSection>  
  <xref:System.ServiceModel.Diagnostics>  
  <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>  

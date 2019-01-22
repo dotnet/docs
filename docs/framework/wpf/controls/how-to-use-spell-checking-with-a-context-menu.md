@@ -32,7 +32,7 @@ By default, when you enable spell checking in an editing control like <xref:Syst
   
  `spellingError = myRichTextBox.GetSpellingError(myRichTextBox.CaretPosition);`  
   
-## See Also  
+## See also
  [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
  [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
  [Enable Spell Checking in a Text Editing Control](../../../../docs/framework/wpf/controls/how-to-enable-spell-checking-in-a-text-editing-control.md)  

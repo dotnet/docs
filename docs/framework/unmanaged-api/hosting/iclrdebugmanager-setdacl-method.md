@@ -48,7 +48,7 @@ HRESULT SetDacl (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
+## See also
  [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
  [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)  
  [GetDacl Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-getdacl-method.md)  

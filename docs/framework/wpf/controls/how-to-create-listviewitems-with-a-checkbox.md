@@ -22,7 +22,7 @@ This example shows how to display a column of <xref:System.Windows.Controls.Chec
   
  [!code-xaml[ListViewChkBox#GridViewColumnCheckBox](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#gridviewcolumncheckbox)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.Control>  
  <xref:System.Windows.Controls.ListView>  
  <xref:System.Windows.Controls.GridView>  

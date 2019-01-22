@@ -49,7 +49,7 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
   
      In addition to variables, `Sub` procedures, and events, you can also define constants, `Function` procedures, and properties in a structure. You can designate at most one property as the *default property*, provided it takes at least one argument. You can handle an event with a [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)`Sub` procedure. For more information, see [How to: Declare and Call a Default Property in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md).  
   
-## See Also  
+## See also
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
  [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  

@@ -144,7 +144,7 @@ result = string Like pattern
   
  In the preceding example, the first comparison returns `False` and the remaining comparisons return `True`.  
   
-## See Also  
+## See also
  <xref:System.InvalidCastException>  
  [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  

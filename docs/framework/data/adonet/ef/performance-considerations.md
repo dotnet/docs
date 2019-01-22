@@ -147,5 +147,5 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
   
 -   [ADO.NET Entity Framework Performance Comparison](https://go.microsoft.com/fwlink/?LinkID=123913)  
   
-## See Also  
+## See also
  [Development and Deployment Considerations](../../../../../docs/framework/data/adonet/ef/development-and-deployment-considerations.md)

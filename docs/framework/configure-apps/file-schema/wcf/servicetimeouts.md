@@ -39,5 +39,5 @@ Specifies the timeout for a service.
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>

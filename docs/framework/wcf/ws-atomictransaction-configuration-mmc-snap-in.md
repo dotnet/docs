@@ -80,7 +80,7 @@ regasm.exe /codebase WsatUI.dll
   
  For more information about tracing and logging, see [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md).  
   
-## See Also  
+## See also
  [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)  
  [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)  
  [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)

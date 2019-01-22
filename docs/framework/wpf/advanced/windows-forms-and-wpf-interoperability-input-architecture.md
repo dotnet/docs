@@ -122,7 +122,7 @@ Interoperation between the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tl
   
  Messages are sent only to <xref:System.Windows.Forms.Integration.ElementHost> controls in the active form.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A>  
  <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A>  
  <xref:System.Windows.Forms.Integration.ElementHost>  

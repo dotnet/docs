@@ -64,7 +64,7 @@ public class ClassWithFriendMethod
   
  For information about how to access an assembly's `internal` types and methods from a module file (a file with the .netmodule extension), see [/moduleassemblyname (C#)](../../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md).  
   
-## See Also
+## See also
 
 - <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
 - <xref:System.Security.Permissions.StrongNameIdentityPermission>  

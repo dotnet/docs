@@ -27,7 +27,7 @@ For Each listElement(1) As Integer In arrayList
   
 -   Remove the initialization from the declaration of the *element* iteration variable.  
   
-## See Also  
+## See also
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Collections](../../../standard/collections/index.md)

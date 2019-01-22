@@ -75,7 +75,7 @@ An operator procedure is a series of Visual Basic statements that define the beh
   
  For more information and examples, see [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx).  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Sub Procedures](./sub-procedures.md)  
  [Function Procedures](./function-procedures.md)  

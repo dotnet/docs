@@ -50,7 +50,7 @@ The following tables list the classes commonly used for .NET Framework file I/O,
 |<xref:System.IO.StringReader?displayProperty=nameWithType>|Reads characters from a `String`. Output can be either a stream in any encoding or a `String`.|  
 |<xref:System.IO.StringWriter?displayProperty=nameWithType>|Writes characters to a `String`. Output can be either a stream in any encoding or a `String`.|  
   
-## See Also  
+## See also
  [Composing Streams](../../../../standard/io/composing-streams.md)  
  [File and Stream I/O](../../../../standard/io/index.md)  
  [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  

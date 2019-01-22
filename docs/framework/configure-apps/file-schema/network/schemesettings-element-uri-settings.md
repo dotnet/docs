@@ -77,7 +77,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
+## See also
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>  

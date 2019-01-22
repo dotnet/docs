@@ -36,7 +36,7 @@ If a procedure declares a parameter as [ByRef](../../../../visual-basic/language
 ## Compiling the Code  
  The default in Visual Basic is to pass arguments by value. However, it is good programming practice to include either the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword with every declared parameter. This makes your code easier to read.  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  

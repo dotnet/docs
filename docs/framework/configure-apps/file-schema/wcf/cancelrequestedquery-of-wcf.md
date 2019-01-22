@@ -55,7 +55,7 @@ None.
 |-------------|-----------------|  
 |[\<cancelRequestedQueries>](cancelrequestedqueries-of-wcf.md)|Represents a collection of queries that are used to track requests to cancel a child activity by the parent activity.|  
   
-## See also  
+## See also
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.CancelRequestedQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.CancelRequestedQuery?displayProperty=nameWithType>

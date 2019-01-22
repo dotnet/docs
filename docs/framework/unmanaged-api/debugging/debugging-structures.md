@@ -71,7 +71,17 @@ This section describes the unmanaged structures that the debugging API uses.
  Stores the standard four-part version number of the common language runtime.  
   
  [StackTrace_SimpleContext Structure](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md)  
- Provides a simple context that can be used in place of a full `CONTEXT` structure.  
+ Provides a simple context that can be used in place of a full `CONTEXT` structure.
+
+ [CLRDATA_ADDRESS_RANGE Structure](../../../../docs/framework/unmanaged-api/debugging/clrdata-address-range-structure.md)
+ Defines an address range.
+ 
+ [CLRDATA_IL_ADDRESS_MAP Structure](../../../../docs/framework/unmanaged-api/debugging/clrdata-il-address-map-structure.md)
+ Defines an IL to address mapping
+ 
+ [DacpGetModuleAddress Structure](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)
+ Defines the container for a module address request.
+
   
 ## Related Sections  
  [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  

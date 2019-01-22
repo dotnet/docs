@@ -31,7 +31,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
     > [!NOTE]
     >  On some operating systems, text or graphics drawn by <xref:System.Drawing.Graphics> methods may not print correctly. In this case, use the compatible printing method: `PrintForm1.Print(Me, PowerPacks.Printing.PrintForm.PrintOption.CompatibleModeFullWindow`).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>  
  <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.Print%2A>  
  [PrintForm Component](../../../visual-basic/developing-apps/printing/printform-component.md)  

@@ -28,7 +28,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
   
  [!code-csharp[csProgGuideGenerics#40](../../../csharp/programming-guide/generics/codesnippet/CSharp/generic-delegates_5.cs)]  
   
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

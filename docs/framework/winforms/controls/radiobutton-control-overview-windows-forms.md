@@ -18,7 +18,7 @@ Windows Forms <xref:System.Windows.Forms.RadioButton> controls present a set of 
   
  The <xref:System.Windows.Forms.RadioButton> control can appear like a command button, which appears to have been depressed if selected, if the <xref:System.Windows.Forms.RadioButton.Appearance%2A> property is set to <xref:System.Windows.Forms.Appearance.Button>. Radio buttons can also display images using the <xref:System.Windows.Forms.ButtonBase.Image%2A> and <xref:System.Windows.Forms.ButtonBase.ImageList%2A> properties. For more information, see [How to: Set the Image Displayed by a Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.RadioButton>  
  [Panel Control Overview](../../../../docs/framework/winforms/controls/panel-control-overview-windows-forms.md)  
  [GroupBox Control Overview](../../../../docs/framework/winforms/controls/groupbox-control-overview-windows-forms.md)  

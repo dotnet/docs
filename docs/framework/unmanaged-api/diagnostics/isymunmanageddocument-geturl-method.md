@@ -43,5 +43,5 @@ HRESULT GetURL(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
+## See also
  [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

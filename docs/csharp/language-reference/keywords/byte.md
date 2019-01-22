@@ -101,7 +101,7 @@ SampleMethod((byte)5);
 
 For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also  
+## See also
 
 - <xref:System.Byte>  
 - [C# Reference](../../../csharp/language-reference/index.md)  

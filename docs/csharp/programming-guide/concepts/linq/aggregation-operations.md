@@ -24,7 +24,7 @@ An aggregation operation computes a single value from a collection of values. An
 |Min|Determines the minimum value in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Min%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Min%2A?displayProperty=nameWithType>|  
 |Sum|Calculates the sum of the values in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Sum%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Sum%2A?displayProperty=nameWithType>|  
   
-## See Also
+## See also
 
 - <xref:System.Linq>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  

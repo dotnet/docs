@@ -33,5 +33,5 @@ You can align and stretch controls in a <xref:System.Windows.Forms.TableLayoutPa
   
 8.  Set the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Anchor%2A> property to <xref:System.Windows.Forms.AnchorStyles.None>. The <xref:System.Windows.Forms.Button> control moves to the center of the cell.  
   
-## See Also  
+## See also
  [TableLayoutPanel Control](../../../../docs/framework/winforms/controls/tablelayoutpanel-control-windows-forms.md)

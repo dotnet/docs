@@ -114,7 +114,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
        }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.StatusBar>  
  <xref:System.Windows.Forms.ToolStripStatusLabel>  
  [Collection Editor Dialog Box](https://msdn.microsoft.com/library/53fb3aad-bffa-4da5-ac89-8438e6fc803c)  

@@ -216,7 +216,7 @@ End Function
   
 6.  In File Explorer, open the output path folder (for example, C:\TypeEquivalenceSample). Double-click the TypeEquivalenceClient.exe to run the program. The program will reflect the new version of the TypeEquivalenceRuntime assembly without having been recompiled.  
   
-## See Also  
+## See also
  [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)  
  [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)  
  [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)  

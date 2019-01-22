@@ -74,7 +74,7 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
   
 -   Projects containing Windows services must have installation components for the project and its services. This can be easily accomplished from the **Properties** window. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
   
-## See Also  
+## See also
  [Windows Service Applications](../../../docs/framework/windows-services/index.md)  
  [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)  
  [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)  

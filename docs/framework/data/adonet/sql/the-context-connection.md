@@ -12,6 +12,6 @@ The problem of internal data access is a fairly common scenario. That is, you wi
   
 1.  [The Context Connection](https://go.microsoft.com/fwlink/?LinkId=115395)  
   
-## See Also  
+## See also
  [Creating SQL Server 2005 Objects In Managed Code](https://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

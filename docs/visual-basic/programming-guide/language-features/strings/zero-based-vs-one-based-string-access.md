@@ -14,7 +14,7 @@ This topic compares how Visual Basic and the [!INCLUDE[dnprdnshort](~/includes/d
 ## Zero-Based  
  For an example of a zero-based Visual Basic function, consider the `Split` function. It splits a string and returns an array containing the substrings. The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] <xref:System.String.Split%2A?displayProperty=nameWithType> method also splits a string and returns an array containing the substrings. Because the `Split` function and <xref:System.String.Split%2A> method return [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] arrays, they must be zero-based.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
  <xref:Microsoft.VisualBasic.Strings.Split%2A>  
  <xref:System.String.Substring%2A>  

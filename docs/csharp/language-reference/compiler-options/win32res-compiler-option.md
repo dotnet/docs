@@ -45,7 +45,7 @@ The **-win32res** option inserts a Win32 resource in the output file.
 csc -win32res:rf.res in.cs  
 ```  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -35,7 +35,7 @@ The <xref:System.Windows.Forms.DataGridView> control can display data in three d
   
  For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md). For an example that shows how to use virtual mode events, see [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.DataGridView.VirtualMode%2A?displayProperty=nameWithType>  

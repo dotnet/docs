@@ -85,5 +85,5 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
+## See also
  [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

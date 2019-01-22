@@ -26,7 +26,7 @@ The following examples show how to copy, move, and delete files and folders in a
   
  [!code-csharp[csFilesandFolders#9](../../../csharp/programming-guide/file-system/codesnippet/CSharp/how-to-copy-delete-and-move-files-and-folders_3.cs)]  
   
-## See Also
+## See also
 
 - <xref:System.IO?displayProperty=nameWithType>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

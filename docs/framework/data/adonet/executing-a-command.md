@@ -33,7 +33,7 @@ Each .NET Framework data provider included with the .NET Framework has its own c
 ### Troubleshooting Commands  
  The .NET Framework Data Provider for SQL Server adds performance counters to enable you to detect intermittent problems related to failed command executions. For more information see [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md).  
   
-## See Also  
+## See also
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
  [Working with DataReaders](https://msdn.microsoft.com/library/126a966a-d08d-4d22-a19f-f432908b2b54)  

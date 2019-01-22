@@ -33,7 +33,7 @@ This example shows how to control a <xref:System.Windows.Media.Animation.Storybo
   
  For additional examples, see the [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.ResumeStoryboard>  
  <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>  
  <xref:System.Windows.Media.Animation.SkipStoryboardToFill>  

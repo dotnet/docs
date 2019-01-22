@@ -40,7 +40,7 @@ Return expression
   
  [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
   
-## See Also  
+## See also
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
  [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  

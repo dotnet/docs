@@ -49,7 +49,7 @@ End
 ## Smart Device Developer Notes  
  This statement is not supported.  
   
-## See Also  
+## See also
  <xref:System.Security.Permissions.SecurityPermissionFlag>  
  [Stop Statement](../../../visual-basic/language-reference/statements/stop-statement.md)  
  [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)

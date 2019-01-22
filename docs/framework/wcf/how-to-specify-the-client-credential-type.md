@@ -51,6 +51,6 @@ After setting a security mode (either transport or message), you have the option
     </system.serviceModel>  
     ```  
   
-## See Also  
+## See also
  [Securing Services](../../../docs/framework/wcf/securing-services.md)  
  [How to: Set the Security Mode](../../../docs/framework/wcf/how-to-set-the-security-mode.md)

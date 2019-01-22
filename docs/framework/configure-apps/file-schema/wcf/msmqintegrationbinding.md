@@ -123,7 +123,7 @@ msmqIntegrationBinding
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement>  
  <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>  
  <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>  

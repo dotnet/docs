@@ -81,7 +81,7 @@ Dim londonCusts = db.Customers.
   
  For more information about query methods, see [Queries](../../../visual-basic/language-reference/queries/index.md). For more information about standard query operators, see [Standard Query Operators Overview](../../programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
-## See Also  
+## See also
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
  [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)  
  [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  

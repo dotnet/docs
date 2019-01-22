@@ -93,7 +93,7 @@ You subscribe to an event that is published by another class when you want to wr
   
      When all subscribers have unsubscribed from an event, the event instance in the publisher class is set to `null`.  
   
-## See Also
+## See also
 
 - [Events](../../../csharp/programming-guide/events/index.md)  
 - [event](../../../csharp/language-reference/keywords/event.md)  

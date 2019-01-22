@@ -20,7 +20,7 @@ This example shows you how to create a focus visual style in resources and apply
   
  Focus visual styles should be used consistently across a theme or a UI, rather than using a different one for each focusable element. For details, see [Styling for Focus in Controls, and FocusVisualStyle](../../../../docs/framework/wpf/advanced/styling-for-focus-in-controls-and-focusvisualstyle.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Styling for Focus in Controls, and FocusVisualStyle](../../../../docs/framework/wpf/advanced/styling-for-focus-in-controls-and-focusvisualstyle.md)

@@ -24,7 +24,7 @@ You can use the `My.Settings.Save` method to persist changes to the user setting
   
  For this example to work, your application must have a `LastChanged` user setting, of type `Date`. For more information, see [Managing Application Settings (.NET)](/visualstudio/ide/managing-application-settings-dotnet).  
   
-## See Also  
+## See also
  [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md)  
  [How to: Read Application Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-read-application-settings.md)  
  [How to: Change User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-change-user-settings.md)  

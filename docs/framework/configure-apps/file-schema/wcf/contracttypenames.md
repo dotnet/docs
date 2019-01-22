@@ -54,7 +54,7 @@ A configuration section that specifies a list of contract type names, which are 
 |-------------|-----------------|  
 |[\<findCriteria>](../../../../../docs/framework/configure-apps/file-schema/wcf/findcriteria.md)|A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Discovery.FindCriteria>  
  <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>  
  <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElementCollection>

@@ -16,7 +16,7 @@ This section includes the following pointer operations:
   
  [Comparison](../../../csharp/programming-guide/unsafe-code-pointers/pointer-comparison.md)  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Pointer Expressions](../../../csharp/programming-guide/unsafe-code-pointers/pointer-expressions.md)  

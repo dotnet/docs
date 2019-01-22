@@ -250,7 +250,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
   
  LINQ to SQL does not support any other type mappings for these miscellaneous types.  For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
-## See Also  
+## See also
  [Attribute-Based Mapping](../../../../../../docs/framework/data/adonet/sql/linq/attribute-based-mapping.md)  
  [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)  
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)  

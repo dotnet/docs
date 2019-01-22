@@ -75,7 +75,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
 csc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.cs  
 ```  
   
-## See Also
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Walkthrough: Embedding Types from Managed Assemblies](../../programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  

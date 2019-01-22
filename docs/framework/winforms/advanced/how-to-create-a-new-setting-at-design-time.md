@@ -25,7 +25,7 @@ You can create a new setting at design time by using the Settings designer. The 
   
 3.  In the Settings designer, set the Name, Value, Type, and Scope for your setting. Each row represents a single setting.  
   
-## See Also  
+## See also
  [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)  
  [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)  
  [How To: Change the Value of an Existing Setting at Design Time](../../../../docs/framework/winforms/advanced/how-to-change-the-value-of-an-existing-setting-at-design-time.md)

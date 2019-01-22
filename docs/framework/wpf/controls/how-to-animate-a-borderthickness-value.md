@@ -20,7 +20,7 @@ This example shows how to animate changes to the thickness of a border by using 
   
  For the complete sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.ThicknessAnimation>  
  <xref:System.Windows.Controls.Border.BorderThickness%2A>  
  <xref:System.Windows.Controls.Border>  

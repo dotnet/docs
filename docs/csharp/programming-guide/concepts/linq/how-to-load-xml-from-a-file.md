@@ -42,6 +42,6 @@ Console.WriteLine(booksFromFile);
 </Catalog>  
 ```  
   
-## See Also
+## See also
 
 - [Parsing XML (C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)

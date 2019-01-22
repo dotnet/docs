@@ -88,7 +88,7 @@ Windows Communication Foundation (WCF) security is broken into three major funct
   
  The message security mode also allows you to perform transfer security so that the service credential is exchanged with the client as part of an initial negotiation. To enable negotiation, set the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property to `true`.  
   
-## See Also  
+## See also
  [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
  [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  

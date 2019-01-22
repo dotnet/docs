@@ -34,5 +34,5 @@ author: "BrucePerlerMS"
   
  To build your first claims-aware WCF service using WIF, see [How To: Enable WIF for a WCF Web Service Application](../../../docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md).
   
-## See Also  
+## See also
  [Getting Started With WIF](../../../docs/framework/security/getting-started-with-wif.md)

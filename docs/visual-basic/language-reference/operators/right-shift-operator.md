@@ -80,7 +80,7 @@ result = pattern >> amount
   
 -   `negresult2` is -1 (the sign bit is propagated).  
   
-## See Also  
+## See also
  [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
  [>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)  

@@ -60,7 +60,7 @@ Paths are formed by combining lines, rectangles, and simple curves. Recall from 
   
  ![Paths](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art16.gif "Aboutgdip02_Art16")  
   
-## See Also  
+## See also
  <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>  
  <xref:System.Drawing.Point?displayProperty=nameWithType>  
  [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  

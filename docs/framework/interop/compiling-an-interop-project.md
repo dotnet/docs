@@ -33,7 +33,7 @@ COM interop projects that reference one or more assemblies containing imported C
 
  To compile an application that includes a primary interop assembly when it is deployed, use the **/reference** compiler switch and specify the name of the interop assembly.
 
-## See Also
+## See also
 
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
 - [Language Independence and Language-Independent Components](../../standard/language-independence-and-language-independent-components.md)

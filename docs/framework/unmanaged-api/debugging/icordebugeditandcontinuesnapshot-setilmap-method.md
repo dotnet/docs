@@ -21,5 +21,5 @@ ms.author: "ronpet"
 # ICorDebugEditAndContinueSnapshot::SetILMap Method
 `SetILMap` is obsolete. Do not call this method.  
   
-## See Also  
+## See also
  [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

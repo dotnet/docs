@@ -48,7 +48,7 @@ Specifies MSMQ transport security settings for a custom binding.
 ## Remarks  
  For more information on transport security, see [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>  
  <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

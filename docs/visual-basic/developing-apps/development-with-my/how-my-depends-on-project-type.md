@@ -49,7 +49,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
   
  <sup>7</sup> Web version of `My.User`. This object is associated with the user identity of the application's current HTTP request.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
  <xref:Microsoft.VisualBasic.Devices.Computer>  
  <xref:Microsoft.VisualBasic.Logging.Log>  

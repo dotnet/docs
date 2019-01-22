@@ -106,6 +106,6 @@ You can specify the size of your Windows Form in several ways. You can change bo
     f->Size->X += 100;  
     ```  
   
-## See Also  
+## See also
  [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)  
  [Enhancing Windows Forms Applications](../../../docs/framework/winforms/advanced/index.md)

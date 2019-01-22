@@ -34,5 +34,5 @@ public ClientActivityBuilder(OperationDescription operationDescription, string c
   
  Specifies the service namespace for the operation. The value of this parameter must not be either **null** or empty. If these conditions are not satisfied, the runtime result of using the constructor and the other methods of this class are undefined.  
   
-## See Also  
+## See also
  [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md)

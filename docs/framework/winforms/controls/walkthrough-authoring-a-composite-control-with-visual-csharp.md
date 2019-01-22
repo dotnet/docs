@@ -398,7 +398,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
      This walkthrough has covered a number of key concepts. You have learned to create a composite control by combining controls and components into a composite control container. You have learned to add properties to your control, and to write code to implement custom functionality. In the last section, you learned to extend the functionality of a given composite control through inheritance, and to alter the functionality of host methods by overriding those methods.  
   
-## See Also  
+## See also
  [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)  
  [Programming with Components](https://msdn.microsoft.com/library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)  
  [Component Authoring Walkthroughs](https://msdn.microsoft.com/library/c414cca9-2489-4208-8b38-954586d91c13)  

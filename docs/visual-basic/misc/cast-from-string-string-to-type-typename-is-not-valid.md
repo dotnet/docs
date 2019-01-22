@@ -12,5 +12,5 @@ An attempt to convert a string variable to another type is not valid.
   
 1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   
-## See Also  
+## See also
  [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

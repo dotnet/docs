@@ -66,7 +66,7 @@ Removes a listener from the **Listeners** collection.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.TraceListener>  
  <xref:System.Diagnostics.DefaultTraceListener>  
  <xref:System.Diagnostics.TextWriterTraceListener>  

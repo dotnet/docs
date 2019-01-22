@@ -49,7 +49,7 @@ key.Close();
   
  It is not secure to store secrets, such as passwords, in the registry as plain text, even if the registry key is protected by access control lists (ACL).  
   
-## See Also
+## See also
 
 - <xref:System.IO?displayProperty=nameWithType>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

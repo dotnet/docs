@@ -40,7 +40,7 @@ Specifies that a property or procedure is not implemented in this class and must
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
  [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
  [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  

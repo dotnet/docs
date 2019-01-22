@@ -75,7 +75,7 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
+## See also
  [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)  
  [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)  
  [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  

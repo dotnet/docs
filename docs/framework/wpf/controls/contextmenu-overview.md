@@ -56,7 +56,7 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
 </Style>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ContextMenu>  
  <xref:System.Windows.Style>  
  <xref:System.Windows.Controls.Menu>  

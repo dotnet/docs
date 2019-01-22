@@ -17,7 +17,7 @@ This example shows how to import the XML namespace prefix `ns` and use it in an 
   
 -   A reference to the <xref:System.Xml.Linq> namespace.  
   
-## See Also  
+## See also
  <xref:System.Xml.Linq.XElement.Attributes%2A?displayProperty=nameWithType>  
  [Imports Statement (XML Namespace)](../../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
  [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)  

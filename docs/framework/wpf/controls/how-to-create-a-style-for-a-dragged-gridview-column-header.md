@@ -24,7 +24,7 @@ This example shows how to change the appearance of a dragged <xref:System.Window
 [!code-xaml[ListViewHeaderRoleStyle#ControlTemplateTriggersEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewHeaderRoleStyle/CS/Window1.xaml#controltemplatetriggersend)]  
 [!code-xaml[ListViewHeaderRoleStyle#GVCHControlTemplateEnd](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewHeaderRoleStyle/CS/Window1.xaml#gvchcontroltemplateend)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.GridViewColumnHeader>  
  <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
  <xref:System.Windows.Controls.ListView>  

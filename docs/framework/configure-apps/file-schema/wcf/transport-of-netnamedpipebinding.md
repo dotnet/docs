@@ -43,7 +43,7 @@ Defines the transport security settings for a named pipe.
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netnamedpipebinding.md)|Defines the security settings for a binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NamedPipeTransportSecurity>  
  <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>  
  <xref:System.ServiceModel.NetNamedPipeSecurity.Transport%2A>  

@@ -83,6 +83,6 @@ Dim salesAmounts(4, 11, 30) As Double
 > [!NOTE]
 >  You can create an array without using the `Dim` statement or the `New` clause. For example, you can call the <xref:System.Array.CreateInstance%2A> method, or another component can pass your code an array created in this manner. Such an array can have a lower bound other than 0. You can always test for the lower bound of a dimension by using the <xref:System.Array.GetLowerBound%2A> method or the `LBound` function.  
   
-## See Also  
+## See also
  [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
  [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)

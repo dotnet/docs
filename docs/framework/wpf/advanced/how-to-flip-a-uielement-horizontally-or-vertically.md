@@ -43,5 +43,5 @@ The button with a RenderTransformOrigin of 0.5, 0.5
  ![A button flipped vertically about its center](../../../../docs/framework/wpf/advanced/media/graphicsmm-buttonflipverticalflip-inplace.gif "graphicsmm_buttonflipverticalflip_inplace")  
 The vertically flipped button  
   
-## See Also  
+## See also
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

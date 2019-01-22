@@ -60,7 +60,7 @@ Option Explicit { On | Off }
   
  [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_2.vb)]  
   
-## See Also  
+## See also
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
  [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
  [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  

@@ -121,5 +121,5 @@ This configuration section contains all the Windows Communication Foundation (WC
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ServiceModelSectionGroup>

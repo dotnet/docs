@@ -114,6 +114,6 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
 -   <xref:System.ServiceModel.TransactionFlowAttribute>. Specifies the level in which a service operation accepts a transaction header.  
   
-## See Also  
+## See also
  [Configuring Services](../../../docs/framework/wcf/configuring-services.md)  
  [How to: Control Service Instancing](../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)

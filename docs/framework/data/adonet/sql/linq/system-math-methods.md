@@ -19,5 +19,5 @@ ms.assetid: 0f299521-6f41-4720-bd70-67c93fc50948
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] passes through to the SQL `ROUND` semantics and does not try to implement Banker's rounding.  
   
-## See Also  
+## See also
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

@@ -50,7 +50,7 @@ Specifies the transport type for secured messages sent by peers configured with 
 ## Remarks  
  This element is set only if the mode attribute of [\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md) is set to `Transport` or `TransportWithMessageCredential`.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>  
  <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>  
  <xref:System.ServiceModel.PeerTransportSecuritySettings>  

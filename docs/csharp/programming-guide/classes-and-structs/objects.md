@@ -55,7 +55,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   [Events](../../../csharp/programming-guide/events/index.md)  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [object](../../../csharp/language-reference/keywords/object.md)  

@@ -183,7 +183,7 @@ If your application requires early-bound calls to COM event interface methods, y
 <EmbedInteropTypes>True</EmbedInteropTypes>
 ```
 
-## See Also  
+## See also
  <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
  [COM Wrappers](com-wrappers.md)  
  [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  

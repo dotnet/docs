@@ -47,7 +47,7 @@ If you have a multiple-document interface (MDI) application, you can merge menu 
   
  You can trigger automatic merging by activating the <xref:System.Windows.Forms.MenuStrip> on the MDI source. Upon activation, the source <xref:System.Windows.Forms.MenuStrip> is merged into the MDI target. When a new form becomes active, the merge is reverted on the last form and triggered on the new form. You can control this behavior by setting the <xref:System.Windows.Forms.ToolStripItem.MergeAction%2A> property as needed on each <xref:System.Windows.Forms.ToolStripItem>, and by setting the <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A> property on each <xref:System.Windows.Forms.MenuStrip>.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStripManager>  
  <xref:System.Windows.Forms.MenuStrip>  
  [MenuStrip Control](../../../../docs/framework/winforms/controls/menustrip-control-windows-forms.md)  

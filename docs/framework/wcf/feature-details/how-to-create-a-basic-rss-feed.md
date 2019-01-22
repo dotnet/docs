@@ -88,6 +88,6 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
 ## Compiling the Code  
  When compiling the preceding code, reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WebHttpBinding>  
  <xref:System.ServiceModel.Web.WebGetAttribute>

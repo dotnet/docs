@@ -26,7 +26,7 @@ You can programmatically add a <xref:System.Windows.Forms.ToolStripContainer> to
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  See also [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)) or [ToolStripContainer Tasks Dialog Box](https://msdn.microsoft.com/library/ms233647\(v=vs.110\)).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStripContainer>  
  [ToolStripContainer Control](../../../../docs/framework/winforms/controls/toolstripcontainer-control.md)  
  [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)

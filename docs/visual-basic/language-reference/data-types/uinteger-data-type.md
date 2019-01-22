@@ -72,7 +72,7 @@ Dim number = &H_0FAC_14D7ui
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.UInt32?displayProperty=nameWithType> structure.  
   
-## See Also  
+## See also
  <xref:System.UInt32>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  

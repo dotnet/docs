@@ -39,7 +39,7 @@ If you are managing your own buffered graphics, you will need to be able to crea
      [!code-csharp[System.Windows.Forms.LegacyBufferedGraphics#24](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/CS/Class1.cs#24)]
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#24](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#24)]  
   
-## See Also  
+## See also
  <xref:System.Drawing.BufferedGraphicsContext>  
  <xref:System.Drawing.BufferedGraphics>  
  [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)  

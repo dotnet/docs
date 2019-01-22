@@ -19,7 +19,7 @@ This example shows how to animate a string, which in this example is the <xref:S
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.StringAnimationUsingKeyFrames>  
  <xref:System.Windows.Controls.ContentControl.Content%2A>  
  <xref:System.Windows.Controls.Button>  

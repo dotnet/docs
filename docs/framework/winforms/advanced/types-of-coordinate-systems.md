@@ -88,6 +88,6 @@ ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 |Page|(2, 0.5) to (4, 1.5)|  
 |Device|(192, 48) to (384, 144)|  
   
-## See Also  
+## See also
  [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
  [Matrix Representation of Transformations](../../../../docs/framework/winforms/advanced/matrix-representation-of-transformations.md)

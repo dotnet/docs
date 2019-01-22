@@ -20,13 +20,13 @@ Configures the delivery format, delivery method, and from address for sending em
 ## Syntax  
   
 ```xml  
-      <smtp  
-        deliveryFormat="format"   
-        deliveryMethod="method"   
-        from="from address">
-          <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
-          <network> … </network>  
-      </smtp>  
+<smtp  
+  deliveryFormat="format"  
+  deliveryMethod="method"  
+  from="from address">
+    <specifiedPickupDirectory>...</specifiedPickupDirectory>  
+    <network>...</network>  
+</smtp>  
 ```  
   
 ## Attributes and Elements  
@@ -72,7 +72,7 @@ Configures the delivery format, delivery method, and from address for sending em
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
 - <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
 - <xref:System.Net.Mail.SmtpDeliveryFormat>  

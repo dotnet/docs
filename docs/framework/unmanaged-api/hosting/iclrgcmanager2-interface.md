@@ -40,7 +40,7 @@ Provides methods that allow a host to interact with the common language runtime'
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
+## See also
  [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
  [COR_GC_STATS Structure](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md)  
  [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  

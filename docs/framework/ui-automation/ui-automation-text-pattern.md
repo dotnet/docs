@@ -25,6 +25,6 @@ ms.author: "mhopkins"
 ## Reference  
  <xref:System.Windows.Automation.Text>  
   
-## See Also  
+## See also
  [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)  
  [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)

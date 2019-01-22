@@ -45,7 +45,7 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the security settings for a binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>  
  <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>  
  <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>  

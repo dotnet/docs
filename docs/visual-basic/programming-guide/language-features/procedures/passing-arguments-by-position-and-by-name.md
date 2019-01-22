@@ -88,7 +88,7 @@ You cannot pass arguments by name to avoid entering required arguments. You can 
   
 You cannot pass a parameter array by name. This is because when you call the procedure, you supply an indefinite number of comma-separated arguments for the parameter array, and the compiler cannot associate more than one argument with a single name.  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [How to: Pass Arguments to a Procedure](./how-to-pass-arguments-to-a-procedure.md)  

@@ -119,8 +119,8 @@ Trace switches enable you to enable, disable, and filter tracing output.
     </system.diagnostics>  
     ```  
   
-## See Also  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)  
- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)  
- [Trace and Debug Settings Schema](../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
+- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
+- [Trace and Debug Settings Schema](../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

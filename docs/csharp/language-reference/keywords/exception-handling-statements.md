@@ -20,7 +20,7 @@ C# provides built-in support for handling anomalous situations, known as excepti
   
 -   [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)  
   
-## See Also  
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

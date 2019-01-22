@@ -102,7 +102,7 @@ expression1 + expression2
   
  To eliminate ambiguity, you should use the `&` operator instead of `+` for concatenation.  
   
-## See Also  
+## See also
  [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
  [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  

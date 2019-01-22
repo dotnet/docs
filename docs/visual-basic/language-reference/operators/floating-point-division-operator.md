@@ -74,7 +74,7 @@ expression1 / expression2
   
  The expressions in the preceding example return values of 2.5 and 3.333333. Note that the result is always floating-point (`Double`), even though both operands are integer constants.  
   
-## See Also  
+## See also
  [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
  [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)  
  [Data Types of Operator Results](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md)  

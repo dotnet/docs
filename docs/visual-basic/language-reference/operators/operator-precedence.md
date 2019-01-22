@@ -105,7 +105,7 @@ g = (a - (b + c)) / (d * e)
 ' The preceding line sets g to 0.5.  
 ```  
   
-## See Also  
+## See also
  [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)  
  [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
  [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  

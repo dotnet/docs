@@ -32,7 +32,7 @@ Dim thisObject As Object= "This is an Object"
   
 -   A procedure in which to put the assignment statement.  
   
-## See Also  
+## See also
  [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  

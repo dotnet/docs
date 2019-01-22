@@ -72,7 +72,7 @@ Specifies settings that enable auditing of security events during service operat
 </system.serviceModel>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>  
  <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
  [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  

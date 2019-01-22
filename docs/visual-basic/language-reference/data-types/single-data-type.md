@@ -41,7 +41,7 @@ Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers rangin
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Single?displayProperty=nameWithType> structure.  
   
-## See Also  
+## See also
  <xref:System.Single?displayProperty=nameWithType>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  

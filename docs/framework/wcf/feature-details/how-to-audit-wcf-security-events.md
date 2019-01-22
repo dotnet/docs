@@ -81,7 +81,7 @@ Windows Communication Foundation (WCF) allows you to log security events to the 
   
  If the <xref:System.ServiceModel.AuditLogLocation> property is set to <xref:System.ServiceModel.AuditLogLocation.Security> and **Audit Object Access** is not set in the **Local Security Policy**, audit events will not be written to the Security log. Note that no failure is returned, but audit entries are not written to the Security log.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>  
  <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
  <xref:System.ServiceModel.AuditLogLocation>  

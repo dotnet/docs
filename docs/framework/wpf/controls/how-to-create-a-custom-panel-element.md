@@ -22,7 +22,7 @@ ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
  [!code-csharp[PlotPanel#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#1)]
  [!code-vb[PlotPanel#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/PlotPanel/VisualBasic/PlotPanel.vb#1)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.Panel>  
  [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
  [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979)

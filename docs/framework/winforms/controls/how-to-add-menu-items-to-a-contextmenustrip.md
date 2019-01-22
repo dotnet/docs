@@ -41,5 +41,5 @@ You can add just one menu item or several items at a time to a <xref:System.Wind
           this.toolStripMenuItem1, this.toolStripMenuItem2});  
     ```  
   
-## See Also  
+## See also
  [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)

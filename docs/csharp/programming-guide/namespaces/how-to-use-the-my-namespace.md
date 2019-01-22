@@ -33,7 +33,7 @@ The <xref:Microsoft.VisualBasic.MyServices> namespace (`My` in Visual Basic) pro
   
  [!code-csharp[csProgGuideNamespaces#20](../../../csharp/programming-guide/namespaces/codesnippet/CSharp/how-to-use-the-my-namespace_3.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  

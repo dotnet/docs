@@ -6,6 +6,6 @@
 ## [Versions and Dependencies](versions-and-dependencies.md)
 ### [How to: Determine Which .NET Framework Versions Are Installed](how-to-determine-which-versions-are-installed.md)
 ### [How to: Determine Which .NET Framework Updates Are Installed](how-to-determine-which-net-framework-updates-are-installed.md)
-## [How to: Configure an App to Support .NET Framework 4 or 4.5](how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
+## [How to: Configure an app to support .NET Framework 4 or later versions](how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
 ## [Migrating from the .NET Framework 1.1](migrating-from-the-net-framework-1-1.md)
 ## [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

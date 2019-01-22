@@ -40,7 +40,7 @@ Taking different actions when a condition is true and when it is false
 > [!NOTE]
 >  For many control structures, when you click a keyword, all of the keywords in the structure are highlighted. For instance, when you click `If` in an `If...Then...Else` construction, all instances of `If`, `Then`, `ElseIf`, `Else`, and `End If` in the construction are highlighted. To move to the next or previous highlighted keyword, press CTRL+SHIFT+DOWN ARROW or CTRL+SHIFT+UP ARROW.  
   
-## See Also  
+## See also
  [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
  [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)  

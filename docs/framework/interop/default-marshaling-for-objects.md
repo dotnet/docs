@@ -324,7 +324,7 @@ Variants passed by value and by reference
 |**Variant**  *v* **(VT_BYREF** *&#124;* **VT_\*)**|**Object**  *o*|Never|  
 |**Variant**  *v* **(VT_BYREF** *&#124;* **VT_)**|**Ref Object**  *o*|Only if the type has not changed.|  
   
-## See Also  
+## See also
  [Default Marshaling Behavior](default-marshaling-behavior.md)  
  [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
  [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  

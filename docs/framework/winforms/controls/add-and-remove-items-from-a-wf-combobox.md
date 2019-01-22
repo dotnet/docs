@@ -130,7 +130,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
     listBox1->Items->Clear();  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ComboBox>  
  <xref:System.Windows.Forms.ListBox>  
  <xref:System.Windows.Forms.CheckedListBox>  

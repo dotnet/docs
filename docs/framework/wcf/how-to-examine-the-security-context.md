@@ -48,6 +48,6 @@ When programming Windows Communication Foundation (WCF) services, the service se
   
 -   <xref:System.IdentityModel.Claims>  
   
-## See Also  
+## See also
  [Securing Services](../../../docs/framework/wcf/securing-services.md)  
  [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

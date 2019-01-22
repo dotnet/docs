@@ -139,7 +139,7 @@ Applies runtime reflection policy to a constructor or method.
 </Directives>  
 ```  
   
-## See Also  
+## See also
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
  [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
  [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  

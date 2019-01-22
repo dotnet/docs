@@ -16,7 +16,7 @@ An application developer can create <xref:System.Windows.Controls.ListBox> contr
  [!code-xaml[ListBoxEvent#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#7)]  
 [!code-xaml[ListBoxEvent#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#3)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ListBox>  
  <xref:System.Windows.Controls.ListBoxItem>  
  [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

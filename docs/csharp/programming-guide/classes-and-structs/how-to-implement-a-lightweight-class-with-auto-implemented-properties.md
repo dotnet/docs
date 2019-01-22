@@ -108,7 +108,7 @@ This example shows how to create an immutable lightweight class that serves only
   
  The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.  
   
-## See Also
+## See also
 
 - [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
 - [struct](../../../csharp/language-reference/keywords/struct.md)  

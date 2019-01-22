@@ -45,7 +45,7 @@ Properties can be declared on an [interface](../../../csharp/language-reference/
   
  `Employee name: Hazem Abolrous`  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  

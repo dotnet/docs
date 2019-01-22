@@ -26,5 +26,5 @@ This example shows how to change the <xref:System.Windows.Input.Cursor> of the m
  [!code-csharp[cursors#ChangeCursorsSample](../../../../samples/snippets/csharp/VS_Snippets_Wpf/cursors/CSharp/Window1.xaml.cs#changecursorssample)]
  [!code-vb[cursors#ChangeCursorsSample](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/cursors/VisualBasic/Window1.xaml.vb#changecursorssample)]  
   
-## See Also  
+## See also
  [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)

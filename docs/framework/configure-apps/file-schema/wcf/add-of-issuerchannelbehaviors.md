@@ -47,7 +47,7 @@ endpointBehaviors section
 ## Remarks  
  `issuerAddress` contains the URI of the Security Token Service that the client wants to communicate with. `behaviorConfiguration` points to an endpoint behavior that the application uses in the channels created by Windows Communication Foundation (WCF) to get the issued tokens from the Security Token Services.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>  
  <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>  
  <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection>  

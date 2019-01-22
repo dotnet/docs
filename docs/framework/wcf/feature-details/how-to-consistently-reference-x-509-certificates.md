@@ -30,5 +30,5 @@ You can identify a certificate in several ways: by the hash of the certificate, 
   
 -   <xref:System.ServiceModel.Security.Tokens>  
   
-## See Also  
+## See also
  [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

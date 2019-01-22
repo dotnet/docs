@@ -15,7 +15,7 @@ In ADO.NET you use a **Connection** object to connect to a specific data source 
  [Connection Events](../../../../docs/framework/data/adonet/connection-events.md)  
  Describes how to use an **InfoMessage** event to retrieve informational messages from a data source.  
   
-## See Also  
+## See also
  [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
  [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  

@@ -68,7 +68,7 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 </behaviors>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
  <xref:System.ServiceModel.Configuration.PeerCredentialElement.Certificate%2A>  
  <xref:System.ServiceModel.Configuration.X509PeerCertificateElement>  

@@ -20,7 +20,7 @@ This example shows how to find the source element in an event handler.
  [!code-csharp[RoutedEventSource#Handler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventSource/CSharp/default.xaml.cs#handler)]
  [!code-vb[RoutedEventSource#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RoutedEventSource/VisualBasic/default.xaml.vb#handler)]  
   
-## See Also  
+## See also
  <xref:System.Windows.RoutedEventArgs>  
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/advanced/events-how-to-topics.md)

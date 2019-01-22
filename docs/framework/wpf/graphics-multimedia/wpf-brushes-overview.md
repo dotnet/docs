@@ -154,7 +154,7 @@ A Rectangle painted using a VisualBrush
   
  For more information on why <xref:System.Windows.Media.VisualBrush> objects cannot be frozen, see the <xref:System.Windows.Media.VisualBrush> type page.  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Brush>  
  <xref:System.Windows.Media.Brushes>  
  [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  

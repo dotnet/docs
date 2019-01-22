@@ -58,7 +58,7 @@ FindResponse findResponse = discoveryClient.Find(findCriteria);
 Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endpoints.Count)  
 ```  
   
-## See Also  
+## See also
  [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
  [Using the Discovery Client Channel](../../../../docs/framework/wcf/feature-details/using-the-discovery-client-channel.md)  
  [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)  

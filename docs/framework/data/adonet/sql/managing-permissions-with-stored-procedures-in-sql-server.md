@@ -50,7 +50,7 @@ One method of creating multiple lines of defense around your database is to impl
 |--------------|-----------------|  
 |[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](https://go.microsoft.com/fwlink/?LinkId=98234) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
   
-## See Also  
+## See also
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
  [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  

@@ -41,7 +41,7 @@ This element defines two child collections named `endpointBehaviors` and `servic
 ## Remarks  
  You can use the `<remove>` element to remove a particular behavior from the collection. To do so, simply supply the name of the behavior to remove in the `name` attribute of the `<remove>` element.  You can also use the `<clear>` element to insure that a behavior collection starts empty by clearing out all the content of the collection.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.BehaviorsSection>  
  <xref:System.ServiceModel.Configuration.EndpointBehaviorElementCollection>  
  <xref:System.ServiceModel.Configuration.EndpointBehaviorElement>  

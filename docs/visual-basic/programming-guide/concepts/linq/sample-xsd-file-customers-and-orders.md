@@ -87,5 +87,5 @@ The following XSD file is used in various examples in the [!INCLUDE[sqltecxlinq]
 </xs:schema>  
 ```  
   
-## See Also  
+## See also
  [Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

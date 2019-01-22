@@ -94,7 +94,7 @@ Specifies authentication options for peer-to-peer clients.
 </behaviors>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
  <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
  <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication%2A>  

@@ -65,7 +65,7 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
   
  Once you have created a binding element for your channel, return to the [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md) topic to see whether you want to add configuration file support to your binding element, if and how to add metadata publication support, and whether and how to construct a user-defined binding that uses your binding element.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.BindingElement>  
  [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)  
  [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)

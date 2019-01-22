@@ -12,5 +12,5 @@ An `Add` operation failed because the key value is the same as another key value
   
 -   Ensure that the key value is unique.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

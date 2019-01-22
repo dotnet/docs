@@ -133,7 +133,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Services.SessionAuthenticationModule>  
  <xref:System.IdentityModel.Services.WSFederationAuthenticationModule>  
  [\<federationConfiguration>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md)

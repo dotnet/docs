@@ -57,5 +57,5 @@ End Class
     End Class  
     ```  
   
-## See Also  
+## See also
  [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

@@ -84,6 +84,6 @@ typedef struct _COR_IL_MAP {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
+## See also
  [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
  [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

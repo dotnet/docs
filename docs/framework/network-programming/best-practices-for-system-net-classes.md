@@ -26,5 +26,5 @@ The following recommendations will help you use the classes contained in <xref:S
   
 -   When accessing sites that require credentials, use the <xref:System.Net.CredentialCache> class to create a cache of credentials rather than supplying them with every request. The **CredentialCache** class searches the cache to find the appropriate credential to present with a request, relieving you of the responsibility of creating and presenting credentials based on the URL.  
   
-## See Also  
+## See also
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

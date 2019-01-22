@@ -43,7 +43,7 @@ Unsafe buffers differ from regular arrays in the following ways:
 - The declaration of the array should include a count, such as `char id[8]`. You cannot use `char id[]`.
 - Unsafe buffers can only be instance fields of structs in an unsafe context.
 
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)  
 - [Unsafe Code and Pointers](index.md)  

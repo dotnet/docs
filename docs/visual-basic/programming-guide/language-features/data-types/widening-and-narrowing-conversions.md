@@ -101,7 +101,7 @@ Dim square As cSquare = New cSquare
 shape = square  
 ```  
   
-## See Also  
+## See also
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
  [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  

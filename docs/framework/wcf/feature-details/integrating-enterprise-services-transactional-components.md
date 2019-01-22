@@ -86,6 +86,6 @@ static void Main()
 }  
 ```  
   
-## See Also  
+## See also
  [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
  [Integrating with COM Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)

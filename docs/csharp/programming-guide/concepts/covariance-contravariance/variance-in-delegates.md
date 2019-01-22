@@ -190,7 +190,7 @@ public static void Test()
 }  
 ```  
   
-## See Also
+## See also
 
 - [Generics](~/docs/standard/generics/index.md)  
 - [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)  

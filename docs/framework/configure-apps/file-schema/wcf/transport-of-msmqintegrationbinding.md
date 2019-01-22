@@ -48,7 +48,7 @@ msmqIntegrationBinding
 ## Remarks  
  This element encapsulates the security settings for the Message Queuing integration transport. The settings are the same for both the Message Queuing integration and queued transports. It enables you to set the Authentication Mode, Encryption Algorithm, Secure Hash Algorithm, and Protection Level.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>  
  <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport%2A>  
  <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement.Transport%2A>  

@@ -1042,7 +1042,7 @@ When you run the application and click the **Unsafe Call** button, you immediate
 > [!CAUTION]
 > When you use multithreading of any sort, your code can be exposed to very serious and complex bugs. For more information, see [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md) before you implement any solution that uses multithreading.
 
-## See Also
+## See also
 
 - <xref:System.ComponentModel.BackgroundWorker>
 - [How to: Run an Operation in the Background](../../../../docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md)

@@ -185,7 +185,7 @@ wsFederationBinding element
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSFederationHttpBinding>  
  <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement>  
  [How to: Create a WSFederationHttpBinding](../../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md)  

@@ -20,6 +20,6 @@ The following code example demonstrates how to create a custom layout engine tha
  [!code-csharp[System.Windows.Forms.Layout.LayoutEngine#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Layout.LayoutEngine/CS/DemoFlowLayout.cs#1)]
  [!code-vb[System.Windows.Forms.Layout.LayoutEngine#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Layout.LayoutEngine/VB/DemoFlowLayout.vb#1)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Layout.LayoutEngine>  
  <xref:System.Windows.Forms.Control.LayoutEngine%2A?displayProperty=nameWithType>

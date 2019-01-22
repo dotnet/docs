@@ -49,7 +49,7 @@ Specifies settings for a custom peer resolver service.
 ## Remarks  
  This element defines the basic settings for a custom peer resolver service, including the endpoint address of the peer hosting the service and any specific binding settings. For more information on creating a custom resolver, see [Adding a Custom Resolver to a PeerChannel Application](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>  
  <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings>  
  <xref:System.ServiceModel.Configuration.PeerResolverElement.Custom%2A>  

@@ -71,7 +71,7 @@ Provides properties and classes for accessing the application's resources.
   
  [!code-vb[VbVbalrMyResources#10](../../../visual-basic/developing-apps/programming/app-settings/codesnippet/VisualBasic/my-resources-object_5.vb)]  
   
-## See Also  
+## See also
  [Managing Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet)  
  [Resources in Desktop Apps](../../../framework/resources/index.md)  
 

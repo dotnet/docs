@@ -12,6 +12,6 @@ The operating system is unable to find the path specified path during a file-acc
   
 1.  Ensure that the path includes the required elements.  
   
-## See Also  
+## See also
  [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

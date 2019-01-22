@@ -36,7 +36,7 @@ For the Microsoft Visual Basic .NET language specifically, you can use the langu
 > [!NOTE]
 >  Within [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], [!INCLUDE[TLA2#tla_intellisense](../../../../includes/tla2sharptla-intellisense-md.md)] can show you completion for which elements are available for a `Handles` reference in a page. However, this might take one compile pass so that the intermediate file can populate all the `Friends` references.  
   
-## See Also  
+## See also
  <xref:System.Windows.UIElement.AddHandler%2A>  
  [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)  
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  

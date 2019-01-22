@@ -57,5 +57,5 @@ Sets the custom cookie handler type. This element may only be present if the `mo
 </cookieHandler>  
 ```  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Services.CookieHandler>

@@ -40,6 +40,6 @@ The following example shows how to hook up a <xref:System.Windows.Input.RoutedCo
  [!code-csharp[CommandHandlerProcedural#CommandHandlerBindingInit](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandHandlerProcedural/CSharp/Window1.xaml.cs#commandhandlerbindinginit)]
  [!code-vb[CommandHandlerProcedural#CommandHandlerBindingInit](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandHandlerProcedural/visualbasic/window1.xaml.vb#commandhandlerbindinginit)]  
   
-## See Also  
+## See also
  [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
  [Hook Up a Command to a Control with Command Support](../../../../docs/framework/wpf/advanced/how-to-hook-up-a-command-to-a-control-with-command-support.md)

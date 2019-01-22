@@ -135,7 +135,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
  The data provider and the back-end database server determine which SQL constructs are supported for batch execution. An exception may be thrown if a non-supported statement is submitted for execution.  
   
-## See Also  
+## See also
  [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
  [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
  [Handling DataAdapter Events](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)  

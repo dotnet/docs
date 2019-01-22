@@ -44,7 +44,7 @@ The **-target:library** option causes the compiler to create a dynamic-link libr
 csc -target:library in.cs  
 ```  
   
-## See Also  
+## See also
 
 - [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

@@ -59,7 +59,7 @@ Specifies the character encoding and message versioning used for text-based XML 
                      textEncoding="utf-8" />
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.TextMessageEncodingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  

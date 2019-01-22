@@ -119,7 +119,7 @@ Dim anyForm As System.Windows.Forms.Form
   
  All the members of a base class are available to derived classes, but the additional members of a derived class are unavailable to the base class.  
   
-## See Also  
+## See also
  [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
  [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  
  [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  

@@ -83,7 +83,7 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
     }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.NumericUpDown>  
  <xref:System.Windows.Forms.NumericUpDown.Value%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.NumericUpDown.Increment%2A?displayProperty=nameWithType>  

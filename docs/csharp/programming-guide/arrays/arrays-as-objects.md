@@ -20,7 +20,7 @@ In C#, arrays are actually objects, and not just addressable regions of contiguo
   
  [!code-csharp[csProgGuideArrays#2](../../../csharp/programming-guide/arrays/codesnippet/CSharp/arrays-as-objects_2.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Arrays](../../../csharp/programming-guide/arrays/index.md)  

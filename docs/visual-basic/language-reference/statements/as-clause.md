@@ -53,7 +53,7 @@ Introduces an `As` clause, which identifies a data type in a declaration stateme
   
  [Try...Catch...Finally Statements](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
   
-## See Also  
+## See also
  [How to: Create a New Variable](../../../visual-basic/programming-guide/language-features/variables/how-to-create-a-new-variable.md)  
  [Data Types](../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  

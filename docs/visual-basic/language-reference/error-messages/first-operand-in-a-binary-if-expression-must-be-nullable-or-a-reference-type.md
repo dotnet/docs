@@ -47,7 +47,7 @@ Console.WriteLine(If(choice1 < choice2, 1, 2))
 Console.WriteLine(If(booleanVar, "Test returns True.", "Test returns False."))  
 ```  
   
-## See Also  
+## See also
  [If Operator](../../../visual-basic/language-reference/operators/if-operator.md)  
  [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
  [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

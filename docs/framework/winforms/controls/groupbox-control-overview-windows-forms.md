@@ -16,5 +16,5 @@ Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to provide 
 ## GroupBox and Panel  
  The <xref:System.Windows.Forms.GroupBox> control is similar to the <xref:System.Windows.Forms.Panel> control; however, only the <xref:System.Windows.Forms.GroupBox> control displays a caption, and only the <xref:System.Windows.Forms.Panel> control can have scroll bars.  
   
-## See Also  
+## See also
  [GroupBox Control](../../../../docs/framework/winforms/controls/groupbox-control-windows-forms.md)

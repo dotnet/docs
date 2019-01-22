@@ -32,5 +32,5 @@ In the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] running on Windows 8
   
 -   By setting the <xref:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping%2A> property to `true` at app startup.  
   
-## See Also  
+## See also
  [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)

@@ -51,7 +51,7 @@ HRESULT CurrentDomain (
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
+## See also
  <xref:System._AppDomain>  
  <xref:System.AppDomain>  
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

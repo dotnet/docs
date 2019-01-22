@@ -40,6 +40,6 @@ Inserts a Win32 resource file in the output file.
 vbc -win32resource:rf.res in.vb  
 ```  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

@@ -55,7 +55,7 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
 |`Single`|(none)|F or !|  
 |`String`|"|(none)|  
   
-## See Also  
+## See also
  [User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)  
  [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)  
  [Constants Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)  

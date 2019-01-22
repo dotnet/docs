@@ -49,7 +49,7 @@ Nullable types have the following characteristics:
 
 For more information, see the [Using nullable types](using-nullable-types.md) and [How to: Identify a nullable type](how-to-identify-a-nullable-type.md) topics.
   
-## See Also
+## See also
 
 - <xref:System.Nullable%601?displayProperty=nameWithType>  
 - <xref:System.Nullable?displayProperty=nameWithType>  

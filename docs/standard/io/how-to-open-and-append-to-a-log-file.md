@@ -1,6 +1,6 @@
 ---
 title: "How to: Open and append to a log file"
-ms.date: "01/03/2019"
+ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -17,7 +17,7 @@ ms.author: "mairaw"
 # How to: Open and append to a log file
 <xref:System.IO.StreamWriter> and <xref:System.IO.StreamReader> write characters to and read characters from streams. The following code example opens the *log.txt* file for input, or creates it if it doesn't exist, and appends log information to the end of the file. The example then writes the contents of the file to standard output for display. 
 
-As an alternative to this example, you could store the information as a single string or string array, and use the <xref:System.IO.File.WriteAllText%2A> or <xref:System.IO.File.WriteAllLines%2A> method to achieve the same functionality.  
+As an alternative to this example, you could store the information as a single string or string array, and use the <xref:System.IO.File.WriteAllText%2A?displayProperty=nameWithType> or <xref:System.IO.File.WriteAllLines%2A?displayProperty=nameWithType> method to achieve the same functionality.  
   
 > [!NOTE]
 > Visual Basic users may choose to use the methods and properties provided by the <xref:Microsoft.VisualBasic.Logging.Log> class or <xref:Microsoft.VisualBasic.FileIO.FileSystem> class for creating or writing to log files.  

@@ -1,6 +1,6 @@
 ---
 title: "Compose streams"
-ms.date: "01/03/2019"
+ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -21,7 +21,7 @@ A *backing store* is a storage medium, such as a disk or memory. Each different 
 
 Each stream type reads and writes bytes from and to its given backing store. Streams that connect to backing stores are called *base streams*. Base streams have constructors with the parameters necessary to connect the stream to the backing store. For example, <xref:System.IO.FileStream> has constructors that specify a path parameter, which specifies how the file will be shared by processes.  
 
-The design of the <xref:System.IO> classes provides simplified stream composing. You can attach base streams to one or more pass-through streams that provide the functionality you want. You can attach a reader or writer to the end of the chain, so the preferred types can be read or written easily.  
+The design of the <xref:System.IO> classes provides simplified stream composition. You can attach base streams to one or more pass-through streams that provide the functionality you want. You can attach a reader or writer to the end of the chain, so the preferred types can be read or written easily.  
 
 The following code examples create a **FileStream** around the existing *MyFile.txt* in order to buffer *MyFile.txt*. Note that **FileStreams** are buffered by default.
 
@@ -29,7 +29,7 @@ The following code examples create a **FileStream** around the existing *MyFile.
 >The examples assume that a file named *MyFile.txt* already exists in the same folder as the app.  
 
 ## Example: Use StreamReader
-The following example creates a <xref:System.IO.StreamReader> to read characters from the **FileStream**, which is passed to the **StreamReader** as its constructor argument. <xref:System.IO.StreamReader.ReadLine%2A> then reads until <xref:System.IO.StreamReader.Peek%2A> finds no more characters.  
+The following example creates a <xref:System.IO.StreamReader> to read characters from the **FileStream**, which is passed to the **StreamReader** as its constructor argument. <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType> then reads until <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType> finds no more characters.  
   
  [!code-cpp[System.IO.StreamReader#20](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamReader/CPP/source2.cpp#20)]
  [!code-csharp[System.IO.StreamReader#20](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS/source2.cs#20)]

@@ -1,15 +1,12 @@
 ---
 title: Use ML.NET in a GitHub issue multiclass classification scenario
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 01/18/2018
+ms.date: 01/22/2018
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification task so that I can understand how to classify GitHGub issues to assign them to a given area.
 ---
 # Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues.
-
-> [!NOTE]
-> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 This sample tutorial illustrates using ML.NET to create a GitHub issue classifier via a .NET Core console application using C# in Visual Studio 2017.
 
@@ -24,6 +21,9 @@ In this tutorial, you learn how to:
 > * Evaluate the model with a different dataset
 > * Predict a single instance of test data outcome with the model
 > * Predict the test data outcomes with a loaded model
+
+> [!NOTE]
+> This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
 ## GitHub issue sample overview
 
@@ -103,6 +103,8 @@ Classification tasks are frequently one of the following types:
 * Multiclass: multiple categories that can be predicted by using a single model.
 
 ## Create a console application
+
+### Create a project
 
 1. Open Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "SentimentAnalysis" and then select the **OK** button.
 

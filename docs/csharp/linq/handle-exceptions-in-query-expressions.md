@@ -1,7 +1,7 @@
 ---
 title: Handle exceptions in query expressions (LINQ in C#)
 description: Learn how to handle exceptions in LINQ query expressions in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 2bf0c397-13fb-4f68-bc2b-531c6c88a167
 ---
 # Handle exceptions in query expressions

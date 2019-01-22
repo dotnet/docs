@@ -1,7 +1,7 @@
 ---
 title: Handle null values in query expressions (LINQ in C#)
 description: Learn how to handle null values in LINQ query expressions in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: ac63ae8b-724d-4251-9334-528f4e884ae7
 ---
 # Handle null values in query expressions

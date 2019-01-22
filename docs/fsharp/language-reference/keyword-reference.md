@@ -14,7 +14,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |Keyword|Link|Description|
 |-------|----|-----------|
 |`abstract`|[Members](members/index.md)<br /><br />[Abstract Classes](abstract-classes.md)|Indicates a method that either has no implementation in the type in which it is declared or that is virtual and has a default implementation.|
-|`and`|[`let` Bindings](functions/let-bindings.md)<br /><br />[Members](members/index.md)<br /><br />[Constraints](generics/constraints.md)|Used in mutually recursive bindings, in property declarations, and with multiple constraints on generic parameters.|
+|`and`|[`let` Bindings](functions/let-bindings.md)<br /><br />[Records](records.md)<br /><br />[Members](members/index.md)<br /><br />[Constraints](generics/constraints.md)|Used in mutually recursive bindings and records, in property declarations, and with multiple constraints on generic parameters.|
 |`as`|[Classes](classes.md)<br /><br />[Pattern Matching](Pattern-Matching.md)|Used to give the current class object an object name. Also used to give a name to a whole pattern within a pattern match.|
 |`assert`|[Assertions](assertions.md)|Used to verify code during debugging.|
 |`base`|[Classes](classes.md)<br /><br />[Inheritance](inheritance.md)|Used as the name of the base class object.|

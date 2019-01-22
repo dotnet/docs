@@ -39,7 +39,7 @@ ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
         </binding>  
       </netHttpBinding>  
     </bindings>  
-    <!- ... -->   
+    ...
   </system.serviceModel>  
 ```  
   

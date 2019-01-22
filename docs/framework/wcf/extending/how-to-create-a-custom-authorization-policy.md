@@ -39,8 +39,8 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
       <behaviors>  
         <serviceAuthorization serviceAuthorizationManagerType=  
                   "Samples.MyServiceAuthorizationManager" >  
-          <authorizationPolicies>         
-            <add policyType="Samples.MyAuthorizationPolicy"  
+          <authorizationPolicies>  
+            <add policyType="Samples.MyAuthorizationPolicy" />  
           </authorizationPolicies>  
         </serviceAuthorization>  
       </behaviors>  

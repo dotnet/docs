@@ -13,7 +13,7 @@ Applies runtime reflection policy to all the types in a specified namespace.
 ```xml  
 <Namespace Name="namespace_name"   
            Activate="policy_type"   
-           Browse="policy_type" />  
+           Browse="policy_type"  
            Dynamic="policy_setting"  
            Serialize="policy_setting"  
            DataContractSerializer="policy_setting"  

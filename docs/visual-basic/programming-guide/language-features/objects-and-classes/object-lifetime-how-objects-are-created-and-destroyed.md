@@ -141,8 +141,8 @@ End Sub
  Another difference between the garbage-collection systems involves the use of `Nothing`. To take advantage of reference counting in Visual Basic 6.0 and earlier versions, programmers sometimes assigned `Nothing` to object variables to release the references those variables held. If the variable held the last reference to the object, the object's resources were released immediately. In later versions of Visual Basic, while there may be cases in which this procedure is still valuable, performing it never causes the referenced object to release its resources immediately. To release resources immediately, use the object's <xref:System.IDisposable.Dispose%2A> method, if available. The only time you should set a variable to `Nothing` is when its lifetime is long relative to the time the garbage collector takes to detect orphaned objects.  
   
 ## See also
- <xref:System.IDisposable.Dispose%2A>  
- [Initialization and Termination of Components](https://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)  
- [Nothing](../../../../visual-basic/language-reference/nothing.md)
+- <xref:System.IDisposable.Dispose%2A>
+- [Initialization and Termination of Components](https://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)
+- [Nothing](../../../../visual-basic/language-reference/nothing.md)

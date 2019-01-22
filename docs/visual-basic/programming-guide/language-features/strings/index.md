@@ -29,4 +29,4 @@ This section describes the basic concepts behind using strings in Visual Basic.
  Demonstrates how to encrypt and decrypt strings by using the cryptographic service provider version of the Triple Data Encryption Standard algorithm.  
   
 ## See also
- [Visual Basic Language Features](../../../../visual-basic/programming-guide/language-features/index.md)
+- [Visual Basic Language Features](../../../../visual-basic/programming-guide/language-features/index.md)

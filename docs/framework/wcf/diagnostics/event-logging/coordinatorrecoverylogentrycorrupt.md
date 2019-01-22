@@ -14,5 +14,5 @@ Id: 139
  This event indicates that a  coordinator recovery log entry was corrupt and could not be deserialized. Data loss may result from this error. The event lists the Transaction ID, Recovery data (Base64 encoded), exception, process name and process ID.  
   
 ## See also
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

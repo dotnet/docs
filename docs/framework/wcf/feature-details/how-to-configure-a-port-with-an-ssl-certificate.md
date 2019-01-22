@@ -124,4 +124,4 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
 ## See also
-* [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md)
+- [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

@@ -136,11 +136,11 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
  [!code-vb[VbVbalrStatements#1](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/declare-statement_3.vb)]  
   
 ## See also
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)  
- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)
+- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

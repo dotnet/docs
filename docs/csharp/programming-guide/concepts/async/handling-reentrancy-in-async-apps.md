@@ -706,5 +706,5 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
   
 ## See also
 
-- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
+- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)

@@ -44,8 +44,8 @@ Public string Operation2()
  <xref:System.ServiceModel.Web.WebFaultException> is a <xref:System.ServiceModel.FaultException> and therefore can be used as the fault exception programming model for services that expose SOAP endpoints as well as web HTTP endpoints.  
   
 ## See also
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
- [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)  
- [Defining and Specifying Faults](../../../../docs/framework/wcf/defining-and-specifying-faults.md)  
- [Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)  
- [Sending and Receiving Faults](../../../../docs/framework/wcf/sending-and-receiving-faults.md)
+- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)
+- [Defining and Specifying Faults](../../../../docs/framework/wcf/defining-and-specifying-faults.md)
+- [Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)
+- [Sending and Receiving Faults](../../../../docs/framework/wcf/sending-and-receiving-faults.md)

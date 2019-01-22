@@ -30,4 +30,4 @@ Bindings specify how a Windows Communication Foundation (WCF) service endpoint c
  [Bindings](../../../docs/framework/wcf/feature-details/bindings.md)  
   
 ## See also
- [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)
+- [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)

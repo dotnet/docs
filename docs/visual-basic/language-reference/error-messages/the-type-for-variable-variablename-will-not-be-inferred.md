@@ -76,9 +76,9 @@ End Class
 ```  
   
 ## See also
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [How to: Refer to the Current Instance of an Object](../../../visual-basic/programming-guide/language-features/variables/how-to-refer-to-the-current-instance-of-an-object.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)
+- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [How to: Refer to the Current Instance of an Object](../../../visual-basic/programming-guide/language-features/variables/how-to-refer-to-the-current-instance-of-an-object.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

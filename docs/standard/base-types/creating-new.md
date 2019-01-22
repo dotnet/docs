@@ -76,5 +76,5 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
 - [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

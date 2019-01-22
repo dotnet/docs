@@ -83,12 +83,12 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
  The <xref:System.Windows.Controls.Primitives.Popup> control maintains a reference to its <xref:System.Windows.Controls.Primitives.Popup.Child%2A> content as a logical child. When the new window is created, the content of <xref:System.Windows.Controls.Primitives.Popup> becomes a visual child of the window and remains the logical child of <xref:System.Windows.Controls.Primitives.Popup>. Conversely, <xref:System.Windows.Controls.Primitives.Popup> remains the logical parent of its <xref:System.Windows.Controls.Primitives.Popup.Child%2A> content.  
   
 ## See also
- <xref:System.Windows.Controls.Primitives.Popup>  
- <xref:System.Windows.Controls.Primitives.PopupPrimaryAxis>  
- <xref:System.Windows.Controls.Primitives.PlacementMode>  
- <xref:System.Windows.Controls.Primitives.CustomPopupPlacement>  
- <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback>  
- <xref:System.Windows.Controls.ToolTip>  
- <xref:System.Windows.Controls.ToolTipService>  
- [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)
+- <xref:System.Windows.Controls.Primitives.Popup>
+- <xref:System.Windows.Controls.Primitives.PopupPrimaryAxis>
+- <xref:System.Windows.Controls.Primitives.PlacementMode>
+- <xref:System.Windows.Controls.Primitives.CustomPopupPlacement>
+- <xref:System.Windows.Controls.Primitives.CustomPopupPlacementCallback>
+- <xref:System.Windows.Controls.ToolTip>
+- <xref:System.Windows.Controls.ToolTipService>
+- [How-to Topics](../../../../docs/framework/wpf/controls/popup-how-to-topics.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/tooltip-how-to-topics.md)

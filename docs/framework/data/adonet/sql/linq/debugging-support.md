@@ -22,4 +22,4 @@ ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
  Presents common scenarios whose causes might be hard to determine.  
   
 ## See also
- [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)
+- [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)

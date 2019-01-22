@@ -31,5 +31,5 @@ The following example shows how to hook up a <xref:System.Windows.Input.RoutedCo
  [!code-vb[MenuItemCommandTask#MenuItemCommandingCodeBehind](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MenuItemCommandTask/VisualBasic/Window1.xaml.vb#menuitemcommandingcodebehind)]  
   
 ## See also
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)  
- [Hook Up a Command to a Control with No Command Support](../../../../docs/framework/wpf/advanced/how-to-hook-up-a-command-to-a-control-with-no-command-support.md)
+- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)
+- [Hook Up a Command to a Control with No Command Support](../../../../docs/framework/wpf/advanced/how-to-hook-up-a-command-to-a-control-with-no-command-support.md)

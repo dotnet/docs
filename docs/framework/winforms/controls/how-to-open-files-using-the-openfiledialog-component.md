@@ -168,5 +168,5 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
     ```  
   
 ## See also
- <xref:System.Windows.Forms.OpenFileDialog>  
- [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)
+- <xref:System.Windows.Forms.OpenFileDialog>
+- [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)

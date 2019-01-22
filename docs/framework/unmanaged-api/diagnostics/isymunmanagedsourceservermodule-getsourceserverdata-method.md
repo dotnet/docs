@@ -43,4 +43,4 @@ HRESULT GetSourceServerData(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)
+- [ISymUnmanagedSourceServerModule Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsourceservermodule-interface.md)

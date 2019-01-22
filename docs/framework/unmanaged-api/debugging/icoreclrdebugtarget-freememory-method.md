@@ -44,4 +44,4 @@ void FreeMemory (
  **.NET Framework Versions:** 3.5 SP1  
   
 ## See also
- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)
+- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)

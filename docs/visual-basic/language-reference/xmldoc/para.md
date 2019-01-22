@@ -30,4 +30,4 @@ Specifies that the content is formatted as a paragraph.
  [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/para_1.vb)]  
   
 ## See also
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -62,8 +62,8 @@ The <xref:System.Runtime.InteropServices> namespace provides three categories of
 |<xref:System.Runtime.InteropServices.TypeLibVarAttribute>|Contains the **VARFLAGS** that were originally imported for this variable from the COM type library.|  
   
 ## See also
- <xref:System.Runtime.InteropServices>  
- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)  
- [Attributes](../../../docs/standard/attributes/index.md)  
- [Qualifying .NET Types for Interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md)  
- [Packaging an Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+- <xref:System.Runtime.InteropServices>
+- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
+- [Attributes](../../../docs/standard/attributes/index.md)
+- [Qualifying .NET Types for Interoperation](../../../docs/framework/interop/qualifying-net-types-for-interoperation.md)
+- [Packaging an Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)

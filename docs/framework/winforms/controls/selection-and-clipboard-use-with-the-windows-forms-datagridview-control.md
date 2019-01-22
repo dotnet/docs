@@ -46,5 +46,5 @@ The `DataGridView` control provides you with a variety of options for configurin
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class.  
   
 ## See also
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md)
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md)

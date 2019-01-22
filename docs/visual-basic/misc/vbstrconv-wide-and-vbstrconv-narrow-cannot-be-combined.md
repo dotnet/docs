@@ -13,6 +13,6 @@ Your application is trying to combine the `VbStrConv` enumeration members `Wide`
 1.  Remove either `VbStrConv.Wide` or `VbStrConv.Narrow`.  
   
 ## See also
- <xref:System.Globalization>  
-   
- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+- <xref:System.Globalization>
+
+- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)

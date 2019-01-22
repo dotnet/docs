@@ -74,11 +74,11 @@ Visual Basic provides the `Join` and `Group Join` query clauses to enable you to
 2.  Press F5 to run the examples.  
   
 ## See also
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)  
- [Group Join Clause](../../../../visual-basic/language-reference/queries/group-join-clause.md)  
- [From Clause](../../../../visual-basic/language-reference/queries/from-clause.md)  
- [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)  
- [Queries](../../../../visual-basic/language-reference/queries/index.md)  
- [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Join Clause](../../../../visual-basic/language-reference/queries/join-clause.md)
+- [Group Join Clause](../../../../visual-basic/language-reference/queries/group-join-clause.md)
+- [From Clause](../../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md)
+- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [Data Transformations with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/data-transformations-with-linq.md)

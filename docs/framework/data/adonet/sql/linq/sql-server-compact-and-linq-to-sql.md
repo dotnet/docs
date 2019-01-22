@@ -37,4 +37,4 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
 -   SQL Server Compact does not support partial trust.  
   
 ## See also
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

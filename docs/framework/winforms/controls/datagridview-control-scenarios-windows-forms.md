@@ -81,5 +81,5 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 -   You can implement your own cell and column classes to host controls other than the ones provided by the built-in column types. For more information, see [How to: Host Controls in Windows Forms DataGridView Cells](../../../../docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
 ## See also
- <xref:System.Windows.Forms.DataGridView>  
- [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)
+- <xref:System.Windows.Forms.DataGridView>
+- [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)

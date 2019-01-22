@@ -9,4 +9,4 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] [!INCLUDE[adone
  To quickly start using the latest version of the Entity Framework, see [Get Started](https://go.microsoft.com/fwlink/?LinkId=235280)  
   
 ## See also
- [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=234900&clcid=0x409)
+- [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=234900&clcid=0x409)

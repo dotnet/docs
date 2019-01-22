@@ -41,7 +41,7 @@ Because the Common Language Runtime (CLR) has access to generic type information
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Generics](../../../csharp/programming-guide/generics/index.md)  
-- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Generics](../../../csharp/programming-guide/generics/index.md)
+- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
 - [Generics](~/docs/standard/generics/index.md)

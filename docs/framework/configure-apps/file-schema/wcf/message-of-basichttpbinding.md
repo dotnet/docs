@@ -114,12 +114,12 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 ```  
   
 ## See also
- <xref:System.ServiceModel.BasicHttpMessageSecurity>  
- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- <xref:System.ServiceModel.BasicHttpMessageSecurity>
+- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.BasicHttpMessageSecurityElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

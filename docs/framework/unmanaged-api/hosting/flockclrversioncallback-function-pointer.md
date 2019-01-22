@@ -41,5 +41,5 @@ typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
- [LockClrVersion Function](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md)  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [LockClrVersion Function](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md)
+- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

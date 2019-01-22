@@ -31,6 +31,6 @@ Modifiers are used to modify declarations of types and type members. This sectio
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

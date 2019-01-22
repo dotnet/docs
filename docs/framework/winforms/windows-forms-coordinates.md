@@ -23,5 +23,5 @@ The coordinate system for a Windows Form is based on device coordinates, and the
  Occasionally, you may need to map from screen coordinates to client coordinates. You can easily accomplish this by using the <xref:System.Windows.Forms.Control.PointToClient%2A> and <xref:System.Windows.Forms.Control.PointToScreen%2A> methods available in the <xref:System.Windows.Forms.Control> class. For example, the <xref:System.Windows.Forms.Control.MousePosition%2A> property of <xref:System.Windows.Forms.Control> is reported in screen coordinates, but you may want to convert these to client coordinates.  
   
 ## See also
- <xref:System.Windows.Forms.Control.PointToClient%2A>  
- <xref:System.Windows.Forms.Control.PointToScreen%2A>
+- <xref:System.Windows.Forms.Control.PointToClient%2A>
+- <xref:System.Windows.Forms.Control.PointToScreen%2A>

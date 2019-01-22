@@ -37,6 +37,6 @@ Some aspects of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-wi
  [!code-vb[InitializeElements#Main](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InitializeElements/VisualBasic/initializeelements.vb#main)]  
   
 ## See also
- [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

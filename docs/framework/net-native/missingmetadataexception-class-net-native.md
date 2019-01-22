@@ -76,8 +76,8 @@ ms.author: "ronpet"
  The `MissingMetadataException` class contains no unique members; all of its members are inherited from its base class, <xref:System.TypeAccessException>.  
   
 ## See also
- <xref:System.Exception?displayProperty=nameWithType>  
- <xref:System.TypeAccessException>  
- [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)  
- [MissingRuntimeArtifactException Class](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- <xref:System.Exception?displayProperty=nameWithType>
+- <xref:System.TypeAccessException>
+- [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)
+- [MissingRuntimeArtifactException Class](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

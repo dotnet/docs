@@ -39,6 +39,6 @@ By default, services run in a different security context than that of the logged
 3.  In the **Properties** window, set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> to the appropriate value.  
   
 ## See also
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)  
- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)

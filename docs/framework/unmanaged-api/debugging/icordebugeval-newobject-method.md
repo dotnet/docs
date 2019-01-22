@@ -53,4 +53,4 @@ HRESULT NewObject (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
- [NewParameterizedObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)
+- [NewParameterizedObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)

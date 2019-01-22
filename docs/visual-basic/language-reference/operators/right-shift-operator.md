@@ -81,9 +81,9 @@ result = pattern >> amount
 -   `negresult2` is -1 (the sign bit is propagated).  
   
 ## See also
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

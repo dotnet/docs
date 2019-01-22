@@ -29,4 +29,4 @@ select * from customers
  [!code-vb[DLinqSprox#7](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb/Module1.vb#7)]  
   
 ## See also
- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)

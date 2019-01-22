@@ -39,6 +39,6 @@ This example shows how to transform <xref:System.Windows.Media.Brush> objects by
  For the complete sample, see [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973). For more information about brushes, see [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md).  
   
 ## See also
- [Brush Transformation Overview](../../../../docs/framework/wpf/graphics-multimedia/brush-transformation-overview.md)  
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+- [Brush Transformation Overview](../../../../docs/framework/wpf/graphics-multimedia/brush-transformation-overview.md)
+- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

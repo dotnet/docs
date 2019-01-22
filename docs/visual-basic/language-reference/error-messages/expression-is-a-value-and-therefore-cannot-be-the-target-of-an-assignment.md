@@ -52,6 +52,6 @@ exitButton.Location = exitLocation
 -   Use the variable to access the property to assign it a value.  
   
 ## See also
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)

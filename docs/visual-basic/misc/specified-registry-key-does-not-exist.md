@@ -13,6 +13,6 @@ The registry key that has been specified does not exist.
 -   Create the registry key before attempting to write to it.  
   
 ## See also
- <xref:Microsoft.Win32.RegistryKey>  
- [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)  
+- <xref:Microsoft.Win32.RegistryKey>
+- [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)
 

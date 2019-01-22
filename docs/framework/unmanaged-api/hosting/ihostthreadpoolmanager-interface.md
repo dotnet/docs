@@ -44,6 +44,6 @@ Provides methods that enable the common language runtime (CLR) to configure the 
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
- <xref:System.Threading>  
- <xref:System.Threading.ThreadPool>  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- <xref:System.Threading>
+- <xref:System.Threading.ThreadPool>
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

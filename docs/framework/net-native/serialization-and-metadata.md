@@ -59,7 +59,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
  For information about the syntax used in the example, see [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md).  
   
 ## See also
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
- [\<Namespace> Element](../../../docs/framework/net-native/namespace-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
+- [\<Namespace> Element](../../../docs/framework/net-native/namespace-element-net-native.md)

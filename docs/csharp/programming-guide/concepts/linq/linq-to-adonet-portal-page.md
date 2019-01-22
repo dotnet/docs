@@ -30,5 +30,5 @@ ms.assetid: 6bd269b4-3509-4688-b672-836008704182
   
 ## See also
 
-- [LINQ and ADO.NET](../../../../framework/data/adonet/linq-and-ado-net.md)  
+- [LINQ and ADO.NET](../../../../framework/data/adonet/linq-and-ado-net.md)
 - [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)

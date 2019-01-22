@@ -61,6 +61,6 @@ The <xref:System.Windows.Forms.Control.AutoSize%2A> property enables a control t
 >  To maximize productivity, the Windows Forms Designer shadows the <xref:System.Windows.Forms.Control.AutoSize%2A> property for the <xref:System.Windows.Forms.Form> class. At design time, the form behaves as though the <xref:System.Windows.Forms.Control.AutoSize%2A> property is set to `false`, regardless of its actual setting. At runtime, no special accommodation is made, and the <xref:System.Windows.Forms.Control.AutoSize%2A> property is applied as specified by the property setting.  
   
 ## See also
- <xref:System.Windows.Forms.Control.AutoSize%2A>  
- <xref:System.Windows.Forms.Control.PreferredSize%2A>  
- <xref:System.Windows.Forms.Control.GetPreferredSize%2A>
+- <xref:System.Windows.Forms.Control.AutoSize%2A>
+- <xref:System.Windows.Forms.Control.PreferredSize%2A>
+- <xref:System.Windows.Forms.Control.GetPreferredSize%2A>

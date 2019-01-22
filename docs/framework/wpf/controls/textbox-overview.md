@@ -62,5 +62,5 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
  Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [Detect When Text in a TextBox Has Changed](../../../../docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md) for an example.  
   
 ## See also
- [How-to Topics](../../../../docs/framework/wpf/controls/textbox-how-to-topics.md)  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/textbox-how-to-topics.md)
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

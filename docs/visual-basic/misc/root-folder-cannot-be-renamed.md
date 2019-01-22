@@ -13,6 +13,6 @@ An attempt has been made to rename the root directory. This may be a result of a
 ## See also
  [My.Computer.FileSystem.RenameDirectory]xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.RenameDirectory)  
  [My.Computer.FileSystem.RenameFile]xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.RenameFile)  
- [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  
- [How to: Rename a File in Visual Basic](../developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)  
+- [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+- [How to: Rename a File in Visual Basic](../developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)
 

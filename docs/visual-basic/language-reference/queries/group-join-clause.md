@@ -50,10 +50,10 @@ Group Join element [As type] In collection _
  [!code-vb[VbSimpleQuerySamples#14](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-join-clause_1.vb)]  
   
 ## See also
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)  
- [Group By Clause](../../../visual-basic/language-reference/queries/group-by-clause.md)
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)
+- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Group By Clause](../../../visual-basic/language-reference/queries/group-by-clause.md)

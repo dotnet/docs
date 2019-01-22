@@ -241,5 +241,5 @@ caspol -all -resolveperm testassembly
 ```  
   
 ## See also
- [Tools](index.md)  
- [Command Prompts](developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

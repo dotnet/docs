@@ -63,7 +63,7 @@ Contains trace switches and the level where the trace switches are set.
 ```  
   
 ## See also
- <xref:System.Diagnostics.Switch>  
- <xref:System.Diagnostics.TraceSwitch>  
- <xref:System.Diagnostics.BooleanSwitch>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- <xref:System.Diagnostics.Switch>
+- <xref:System.Diagnostics.TraceSwitch>
+- <xref:System.Diagnostics.BooleanSwitch>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

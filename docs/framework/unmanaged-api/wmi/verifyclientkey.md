@@ -42,4 +42,4 @@ If the function fails, the return value is a non-zero error code defined in *Win
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

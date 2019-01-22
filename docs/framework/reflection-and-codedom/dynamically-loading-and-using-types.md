@@ -94,7 +94,7 @@ End Module
  The <xref:System.Type> class has **Get** methods that use parameters of type **Binder** to resolve references to a particular member. <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType>, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>, and <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> search for a particular member of the current type by providing signature information for that member. <xref:System.Reflection.Binder.SelectMethod%2A?displayProperty=nameWithType> and <xref:System.Reflection.Binder.SelectProperty%2A?displayProperty=nameWithType> are called back on to select the given signature information of the appropriate methods.  
   
 ## See also
- <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>  
- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>  
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)
+- <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
+- <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
+- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)

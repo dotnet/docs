@@ -204,5 +204,5 @@ signtool verify /c MyCatalog.cat SystemFile.dll
 ```  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

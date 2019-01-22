@@ -42,9 +42,9 @@ You can easily draw ellipses and arcs using the <xref:System.Drawing.Graphics.Dr
  ![Ellipses and arcs](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art06.gif "Aboutgdip02_art06")  
   
 ## See also
- <xref:System.Drawing.Graphics?displayProperty=nameWithType>  
- <xref:System.Drawing.Pen?displayProperty=nameWithType>  
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)  
- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)  
- [How to: Draw an Outlined Shape](../../../../docs/framework/winforms/advanced/how-to-draw-an-outlined-shape.md)
+- <xref:System.Drawing.Graphics?displayProperty=nameWithType>
+- <xref:System.Drawing.Pen?displayProperty=nameWithType>
+- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)
+- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)
+- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)
+- [How to: Draw an Outlined Shape](../../../../docs/framework/winforms/advanced/how-to-draw-an-outlined-shape.md)

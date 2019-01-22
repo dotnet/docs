@@ -93,5 +93,5 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
 7.  <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> is called automatically for each contract behavior on a given contract that implements <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>. This method can then modify the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> passed in. In this example comments are added.  
   
 ## See also
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)

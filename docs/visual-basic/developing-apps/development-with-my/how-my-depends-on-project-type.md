@@ -50,14 +50,14 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
  <sup>7</sup> Web version of `My.User`. This object is associated with the user identity of the application's current HTTP request.  
   
 ## See also
- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
- <xref:Microsoft.VisualBasic.Devices.Computer>  
- <xref:Microsoft.VisualBasic.Logging.Log>  
- <xref:Microsoft.VisualBasic.ApplicationServices.User>  
- [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)  
- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)  
- [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)  
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
+- <xref:Microsoft.VisualBasic.Devices.Computer>
+- <xref:Microsoft.VisualBasic.Logging.Log>
+- <xref:Microsoft.VisualBasic.ApplicationServices.User>
+- [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
+- [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)
+- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)

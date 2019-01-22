@@ -25,9 +25,9 @@ The following code example demonstrates how to configure a <xref:System.Windows.
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## See also
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>  
- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>  
- <xref:System.Windows.Forms.DataGridViewSelectionMode>  
- [Selection and Clipboard Use with the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)  
- [Selection Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-modes-in-the-windows-forms-datagridview-control.md)
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>
+- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>
+- <xref:System.Windows.Forms.DataGridViewSelectionMode>
+- [Selection and Clipboard Use with the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)
+- [Selection Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-modes-in-the-windows-forms-datagridview-control.md)

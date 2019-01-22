@@ -45,4 +45,4 @@ A default communications endpoint that the client application listens to.
 |[\<defaultPorts>](../../../../../docs/framework/configure-apps/file-schema/wcf/defaultports.md)|A collection of default ports listing the default communications endpoints that the client application listens to.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.DefaultPortElement>
+- <xref:System.ServiceModel.Configuration.DefaultPortElement>

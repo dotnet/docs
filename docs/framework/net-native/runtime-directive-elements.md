@@ -63,4 +63,4 @@ The runtime directives (rd.xml) file format supports the following runtime direc
  Applies runtime policy to the type represented by a <xref:System.Type> argument passed to a method.  
   
 ## See also
- [rd.xml Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [rd.xml Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

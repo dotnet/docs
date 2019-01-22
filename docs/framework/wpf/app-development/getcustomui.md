@@ -40,4 +40,4 @@ HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgres
  This function is called once during PresentationHost’s initialization.  
   
 ## See also
- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)
+- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)

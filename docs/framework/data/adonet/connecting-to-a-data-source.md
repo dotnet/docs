@@ -16,9 +16,9 @@ In ADO.NET you use a **Connection** object to connect to a specific data source 
  Describes how to use an **InfoMessage** event to retrieve informational messages from a data source.  
   
 ## See also
- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
+- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)
+- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

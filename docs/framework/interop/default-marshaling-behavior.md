@@ -435,8 +435,8 @@ interface IValueTypes : IDispatch {
 ```  
   
 ## See also
- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
- [Copying and Pinning](copying-and-pinning.md)  
- [Default Marshaling for Arrays](default-marshaling-for-arrays.md)  
- [Default Marshaling for Objects](default-marshaling-for-objects.md)  
- [Default Marshaling for Strings](default-marshaling-for-strings.md)
+- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
+- [Copying and Pinning](copying-and-pinning.md)
+- [Default Marshaling for Arrays](default-marshaling-for-arrays.md)
+- [Default Marshaling for Objects](default-marshaling-for-objects.md)
+- [Default Marshaling for Strings](default-marshaling-for-strings.md)

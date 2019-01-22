@@ -37,10 +37,10 @@ Skip While expression
  [!code-vb[VbSimpleQuerySamples#3](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/skip-while-clause_1.vb)]  
   
 ## See also
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)  
- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Skip Clause](../../../visual-basic/language-reference/queries/skip-clause.md)
+- [Take While Clause](../../../visual-basic/language-reference/queries/take-while-clause.md)
+- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)

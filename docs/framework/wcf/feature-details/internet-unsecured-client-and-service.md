@@ -104,6 +104,6 @@ The following illustration shows an example of a public, unsecured Windows Commu
 ```  
   
 ## See also
- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

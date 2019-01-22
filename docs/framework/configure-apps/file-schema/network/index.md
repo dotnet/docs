@@ -34,5 +34,5 @@ Network settings specify how the .NET Framework connects to the Internet. The fo
 |[\<schemeSettings> Element (Uri Settings)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ## See also
-- [Configuring Internet Applications](../../../../../docs/framework/network-programming/configuring-internet-applications.md)  
+- [Configuring Internet Applications](../../../../../docs/framework/network-programming/configuring-internet-applications.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

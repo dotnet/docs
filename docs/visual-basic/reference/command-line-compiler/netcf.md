@@ -83,6 +83,6 @@ vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactF
 ```  
   
 ## See also
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)

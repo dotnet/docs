@@ -32,6 +32,6 @@ The topics in this section demonstrate how to use key frame animations to animat
  <xref:System.Windows.Media.Animation.KeyTime>  
   
 ## See also
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)

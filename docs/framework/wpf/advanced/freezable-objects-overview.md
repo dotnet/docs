@@ -156,7 +156,7 @@ mc:Ignorable="PresentationOptions"
  For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   
 ## See also
- <xref:System.Windows.Freezable>  
- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+- <xref:System.Windows.Freezable>
+- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

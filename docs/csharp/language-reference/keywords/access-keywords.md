@@ -20,7 +20,7 @@ This section introduces the following access keywords:
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Access Modifiers](../../../csharp/language-reference/keywords/access-modifiers.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

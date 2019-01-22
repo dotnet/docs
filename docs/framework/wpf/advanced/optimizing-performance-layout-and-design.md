@@ -64,13 +64,13 @@ The design of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharpt
  For more information on the logical tree, see [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md).  
   
 ## See also
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)  
- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+- [Planning for Application Performance](../../../../docs/framework/wpf/advanced/planning-for-application-performance.md)
+- [Taking Advantage of Hardware](../../../../docs/framework/wpf/advanced/optimizing-performance-taking-advantage-of-hardware.md)
+- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Object Behavior](../../../../docs/framework/wpf/advanced/optimizing-performance-object-behavior.md)
+- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [Text](../../../../docs/framework/wpf/advanced/optimizing-performance-text.md)
+- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)

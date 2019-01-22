@@ -170,6 +170,6 @@ public async void ProcessWriteMult()
   
 ## See also
 
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)  
-- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)  
+- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)
 - [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)

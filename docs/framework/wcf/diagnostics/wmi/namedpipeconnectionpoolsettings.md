@@ -51,4 +51,4 @@ class NamedPipeConnectionPoolSettings
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>
+- <xref:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings>

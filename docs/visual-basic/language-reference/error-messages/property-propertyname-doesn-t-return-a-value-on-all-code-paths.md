@@ -34,6 +34,6 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
      It is easier to guarantee that every return from the procedure returns a value if you always use the `Return` statement. If you do this, the last statement before `End Get` should be a `Return` statement.  
   
 ## See also
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
+- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)

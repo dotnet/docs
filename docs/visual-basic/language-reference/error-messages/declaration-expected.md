@@ -24,5 +24,5 @@ A nondeclarative statement, such as an assignment or loop statement, occurs outs
 -   Ensure that a declaration keyword is not misspelled.  
   
 ## See also
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)

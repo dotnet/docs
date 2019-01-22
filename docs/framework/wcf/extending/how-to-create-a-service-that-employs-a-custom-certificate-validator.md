@@ -124,4 +124,4 @@ This topic shows how to implement a custom certificate validator and how to conf
  [!code-vb[c_CustomCertificateValidator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customcertificatevalidator/vb/source.vb#3)]  
   
 ## See also
- <xref:System.IdentityModel.Selectors.X509CertificateValidator>
+- <xref:System.IdentityModel.Selectors.X509CertificateValidator>

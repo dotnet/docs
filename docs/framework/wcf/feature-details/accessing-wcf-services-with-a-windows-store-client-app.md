@@ -169,9 +169,9 @@ void async SomeMethod()
  Notice the use of the async keyword on the method making the asynchronous call and the await keyword when calling the asynchronous method.  
   
 ## See also
- [WCF in Windows Store Apps Blog](https://blogs.msdn.com/b/piyushjo/archive/2011/09/22/wcf-in-win8-metro-styled-apps-absolutely-supported.aspx)  
- [WCF Windows Store Clients and Security](https://blogs.msdn.com/b/piyushjo/archive/2011/10/11/calling-a-wcf-service-from-a-metro-application-adding-security.aspx)  
- [Windows Store Apps and Cross Machine Calls](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)  
- [Calling a WCF Service Deployed in Azure from a Windows Store App](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)  
- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)  
- [Bindings](../../../../docs/framework/wcf/bindings.md)
+- [WCF in Windows Store Apps Blog](https://blogs.msdn.com/b/piyushjo/archive/2011/09/22/wcf-in-win8-metro-styled-apps-absolutely-supported.aspx)
+- [WCF Windows Store Clients and Security](https://blogs.msdn.com/b/piyushjo/archive/2011/10/11/calling-a-wcf-service-from-a-metro-application-adding-security.aspx)
+- [Windows Store Apps and Cross Machine Calls](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)
+- [Calling a WCF Service Deployed in Azure from a Windows Store App](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)
+- [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
+- [Bindings](../../../../docs/framework/wcf/bindings.md)

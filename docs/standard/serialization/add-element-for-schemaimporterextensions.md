@@ -56,6 +56,6 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
   
 ## See also
 
-- <xref:System.Xml.Serialization.XmlSchemaImporter>  
-- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)  
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)
 - [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)

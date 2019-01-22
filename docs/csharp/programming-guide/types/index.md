@@ -180,7 +180,7 @@ stringList.Add(4);
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
 - [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md)

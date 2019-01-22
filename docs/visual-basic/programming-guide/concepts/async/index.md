@@ -309,5 +309,5 @@ End Class
   
 ## See also
 
-- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)  
+- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
 - [Async](../../../../visual-basic/language-reference/modifiers/async.md)

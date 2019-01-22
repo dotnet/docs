@@ -56,9 +56,9 @@ The topics in this section describe event tracing for Windows (ETW) events. Each
  Captures information that is used with other events to generate stack traces after an event is raised.  
   
 ## See also
- [Improve Debugging And Performance Tuning With ETW](https://go.microsoft.com/fwlink/?LinkId=179696)  
- [Windows Performance Blog](https://go.microsoft.com/fwlink/?LinkId=179509)  
- [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)  
- [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)  
- [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)  
- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+- [Improve Debugging And Performance Tuning With ETW](https://go.microsoft.com/fwlink/?LinkId=179696)
+- [Windows Performance Blog](https://go.microsoft.com/fwlink/?LinkId=179509)
+- [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md)
+- [CLR ETW Providers](../../../docs/framework/performance/clr-etw-providers.md)
+- [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md)
+- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

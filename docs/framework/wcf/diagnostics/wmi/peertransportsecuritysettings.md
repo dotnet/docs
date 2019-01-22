@@ -35,4 +35,4 @@ class PeerTransportSecuritySettings
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.PeerTransportSecuritySettings>
+- <xref:System.ServiceModel.PeerTransportSecuritySettings>

@@ -25,6 +25,6 @@ ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)

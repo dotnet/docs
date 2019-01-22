@@ -65,9 +65,9 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 ```  
   
 ## See also
-- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>  
-- <xref:System.Security.Cryptography>  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+- <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A>
+- <xref:System.Security.Cryptography>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

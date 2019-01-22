@@ -74,5 +74,5 @@ There are two kinds of constructors: type constructors and instance constructors
   
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
+- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

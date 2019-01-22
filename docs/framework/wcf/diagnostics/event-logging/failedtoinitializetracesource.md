@@ -14,5 +14,5 @@ Id: 101
  The trace source was not initialized. Tracing is disabled. The event lists the Exception, process name and process ID.  
   
 ## See also
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

@@ -21,6 +21,6 @@ The Windows Forms [ErrorProvider](../../../../docs/framework/winforms/controls/e
 >  The <xref:System.Windows.Forms.ErrorProvider> component does not provide built-in support for accessibility clients. To make your application accessible when using this component, you must provide an additional, accessible feedback mechanism.  
   
 ## See also
- <xref:System.Windows.Forms.ErrorProvider>  
- [How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/view-errors-within-a-dataset-with-wf-errorprovider-component.md)  
- [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider.md)
+- <xref:System.Windows.Forms.ErrorProvider>
+- [How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/view-errors-within-a-dataset-with-wf-errorprovider-component.md)
+- [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider.md)

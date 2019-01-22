@@ -51,6 +51,6 @@ The following sections list the best practices to consider when creating secure 
  When you create a custom binding, you must set <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> to `true`. Otherwise, if <xref:System.ServiceModel.Channels.SecurityBindingElement.IncludeTimestamp%2A> is set to `false`, and the client is using an asymmetric key-based token such as an X509 certificate, the message will not be signed.  
   
 ## See also
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)  
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md)
+- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)

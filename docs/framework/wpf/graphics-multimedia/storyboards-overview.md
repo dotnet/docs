@@ -297,6 +297,6 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
  Animations applied by property <xref:System.Windows.Trigger> objects behave in a more complex fashion than <xref:System.Windows.EventTrigger> animations or animations started using <xref:System.Windows.Media.Animation.Storyboard> methods.  They "handoff" with animations defined by other <xref:System.Windows.Trigger> objects, but compose with <xref:System.Windows.EventTrigger> and method-triggered animations.  
   
 ## See also
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)

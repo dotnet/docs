@@ -192,5 +192,5 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
 ## See also
 
-- [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)  
+- [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)
 - [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

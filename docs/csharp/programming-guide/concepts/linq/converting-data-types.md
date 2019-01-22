@@ -70,8 +70,8 @@ static void Cast()
   
 ## See also
 
-- <xref:System.Linq>  
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  
-- [from clause](../../../../csharp/language-reference/keywords/from-clause.md)  
-- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)  
+- <xref:System.Linq>
+- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [from clause](../../../../csharp/language-reference/keywords/from-clause.md)
+- [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)
 - [How to: Query an ArrayList with LINQ (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md)

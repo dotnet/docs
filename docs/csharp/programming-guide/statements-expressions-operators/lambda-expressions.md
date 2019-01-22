@@ -278,10 +278,10 @@ class Test
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [LINQ (Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)  
-- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)  
-- [is](../../../csharp/language-reference/keywords/is.md)  
-- [Expression Trees](../../../csharp/programming-guide/concepts/expression-trees/index.md)  
-- [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [LINQ (Language-Integrated Query)](../../../csharp/programming-guide/concepts/linq/index.md)
+- [Anonymous Methods](../../../csharp/programming-guide/statements-expressions-operators/anonymous-methods.md)
+- [is](../../../csharp/language-reference/keywords/is.md)
+- [Expression Trees](../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
 - [Recursive lambda expressions](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)

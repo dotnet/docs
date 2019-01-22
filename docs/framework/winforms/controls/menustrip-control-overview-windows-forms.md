@@ -49,9 +49,9 @@ Menus expose functionality to your users by holding commands that are grouped by
 |<xref:System.Windows.Forms.ToolStripDropDownItem>|Provides basic functionality for controls derived from <xref:System.Windows.Forms.ToolStripItem> that display drop-down items when clicked.|  
   
 ## See also
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.MenuStrip>  
- <xref:System.Windows.Forms.ContextMenuStrip>  
- <xref:System.Windows.Forms.StatusStrip>  
- <xref:System.Windows.Forms.ToolStripItem>  
- <xref:System.Windows.Forms.ToolStripDropDown>
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.MenuStrip>
+- <xref:System.Windows.Forms.ContextMenuStrip>
+- <xref:System.Windows.Forms.StatusStrip>
+- <xref:System.Windows.Forms.ToolStripItem>
+- <xref:System.Windows.Forms.ToolStripDropDown>

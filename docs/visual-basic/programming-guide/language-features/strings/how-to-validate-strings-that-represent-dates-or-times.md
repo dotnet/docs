@@ -19,6 +19,6 @@ The following code example sets a `Boolean` value that indicates whether a strin
  Use this method to validate the string before trying to convert the `String` to a `DateTime` variable. By checking the date or time first, you can avoid generating an exception at run time.  
   
 ## See also
- <xref:Microsoft.VisualBasic.Information.IsDate%2A>  
- <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>  
- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)
+- <xref:Microsoft.VisualBasic.Information.IsDate%2A>
+- <xref:Microsoft.VisualBasic.Interaction.InputBox%2A>
+- [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)

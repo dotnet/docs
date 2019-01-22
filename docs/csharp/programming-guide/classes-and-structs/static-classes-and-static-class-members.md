@@ -84,9 +84,9 @@ For more information, see [Static classes](~/_csharplang/spec/classes.md#static-
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [static](../../../csharp/language-reference/keywords/static.md)  
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [class](../../../csharp/language-reference/keywords/class.md)  
-- [Static Constructors](../../../csharp/programming-guide/classes-and-structs/static-constructors.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [static](../../../csharp/language-reference/keywords/static.md)
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
+- [Static Constructors](../../../csharp/programming-guide/classes-and-structs/static-constructors.md)
 - [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md)

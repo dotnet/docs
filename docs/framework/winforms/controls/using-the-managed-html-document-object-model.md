@@ -35,4 +35,4 @@ The managed HTML document object model (DOM) provides a wrapper based on the [!I
  [WebBrowser Control](../../../../docs/framework/winforms/controls/webbrowser-control-windows-forms.md)  
   
 ## See also
- [About the DHTML Object Model](https://msdn.microsoft.com/library/default.asp?url=/workshop/author/om/doc_object.asp)
+- [About the DHTML Object Model](https://msdn.microsoft.com/library/default.asp?url=/workshop/author/om/doc_object.asp)

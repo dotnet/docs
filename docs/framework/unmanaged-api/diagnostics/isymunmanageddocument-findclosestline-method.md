@@ -40,4 +40,4 @@ HRESULT FindClosestLine(
  S_OK if the method succeeds; otherwise, an error code.  
   
 ## See also
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

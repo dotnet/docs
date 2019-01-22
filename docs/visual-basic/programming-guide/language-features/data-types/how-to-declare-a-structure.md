@@ -50,13 +50,13 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
      In addition to variables, `Sub` procedures, and events, you can also define constants, `Function` procedures, and properties in a structure. You can designate at most one property as the *default property*, provided it takes at least one argument. You can handle an event with a [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)`Sub` procedure. For more information, see [How to: Declare and Call a Default Property in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md).  
   
 ## See also
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Structure Variables](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)  
- [Structures and Other Programming Elements](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)  
- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)  
- [User-Defined Data Type](../../../../visual-basic/language-reference/data-types/user-defined-data-type.md)
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Structure Variables](../../../../visual-basic/programming-guide/language-features/data-types/structure-variables.md)
+- [Structures and Other Programming Elements](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-other-programming-elements.md)
+- [Structures and Classes](../../../../visual-basic/programming-guide/language-features/data-types/structures-and-classes.md)
+- [User-Defined Data Type](../../../../visual-basic/language-reference/data-types/user-defined-data-type.md)

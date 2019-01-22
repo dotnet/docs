@@ -28,4 +28,4 @@ The connection pool blocking period has been removed for connections to Azure SQ
  The previous behavior can be restored by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.PoolBlockingPeriod%2A> property to `PoolBlockingPeriod.AlwaysBlock`.  
   
 ## See also
- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md)
+- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md)

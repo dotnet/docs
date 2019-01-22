@@ -245,7 +245,7 @@ namespace CacheLibrary
 ```  
   
 ## See also
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>  
- <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>  
- [WIF Session Management](../../../docs/framework/security/wif-session-management.md)
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>
+- <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>
+- [WIF Session Management](../../../docs/framework/security/wif-session-management.md)

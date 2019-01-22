@@ -50,7 +50,7 @@ Provides properties that allow the host to configure an <xref:System.AppDomain?d
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See also
- <xref:System.AppDomain>  
- <xref:System.AppDomainSetup>  
- <xref:System.IAppDomainSetup>  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- <xref:System.AppDomain>
+- <xref:System.AppDomainSetup>
+- <xref:System.IAppDomainSetup>
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

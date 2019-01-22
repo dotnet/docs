@@ -47,9 +47,9 @@ Properties can be declared on an [interface](../../../csharp/language-reference/
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
-- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
-- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)
+- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
 - [Interfaces](../../../csharp/programming-guide/interfaces/index.md)

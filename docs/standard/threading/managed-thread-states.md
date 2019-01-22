@@ -44,7 +44,7 @@ if ((state & (Unstarted | Stopped)) == 0)   // implies Running
   
 ## See also
 
-- <xref:System.Threading.ThreadAbortException>  
-- <xref:System.Threading.Thread>  
-- <xref:System.Threading.ThreadState>  
+- <xref:System.Threading.ThreadAbortException>
+- <xref:System.Threading.Thread>
+- <xref:System.Threading.ThreadState>
 - [Threading](../../../docs/standard/threading/index.md)

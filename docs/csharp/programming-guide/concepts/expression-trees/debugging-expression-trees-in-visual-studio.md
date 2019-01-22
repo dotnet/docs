@@ -99,6 +99,6 @@ You can analyze the structure and content of expression trees when you debug you
   
 ## See also
 
-- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)  
-- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)  
+- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
 - [Create Custom Visualizers](/visualstudio/debugger/create-custom-visualizers-of-data)

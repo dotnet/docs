@@ -52,6 +52,6 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
     >  Even if the value is displayed on the form as hexadecimal, any tests you perform on the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property will be testing its decimal value.  
   
 ## See also
- <xref:System.Windows.Forms.NumericUpDown>  
- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)  
- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)
+- <xref:System.Windows.Forms.NumericUpDown>
+- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)
+- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)

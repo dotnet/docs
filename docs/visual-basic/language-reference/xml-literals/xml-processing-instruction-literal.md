@@ -55,7 +55,7 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
  [!code-vb[VbXMLSamples#28](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-processing-instruction-literal_1.vb)]  
   
 ## See also
- <xref:System.Xml.Linq.XProcessingInstruction>  
- [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- <xref:System.Xml.Linq.XProcessingInstruction>
+- [XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)

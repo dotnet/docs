@@ -256,9 +256,9 @@ namespace Metadata.Samples
 ```  
   
 ## See also
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
- [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)  
- [Self-Host](../../../../docs/framework/wcf/samples/self-host.md)  
- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md)
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
+- [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)
+- [Self-Host](../../../../docs/framework/wcf/samples/self-host.md)
+- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)
+- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)
+- [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md)

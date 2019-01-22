@@ -165,5 +165,5 @@ The first procedure shows how to create a simple generic method with two type pa
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See also
- <xref:System.Reflection.Emit.MethodBuilder>  
- [How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)
+- <xref:System.Reflection.Emit.MethodBuilder>
+- [How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)

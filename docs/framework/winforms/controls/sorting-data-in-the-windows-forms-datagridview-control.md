@@ -38,5 +38,5 @@ Provides reference documentation for the <xref:System.Windows.Forms.DataGridView
 
 ## See also
 
-[DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
-[Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)  
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

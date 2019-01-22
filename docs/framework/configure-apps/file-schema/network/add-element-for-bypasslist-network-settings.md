@@ -75,5 +75,5 @@ Adds an IP address or DNS name to the proxy bypass list.
 ```  
   
 ## See also
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

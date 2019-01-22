@@ -83,7 +83,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
 ```  
   
 ## See also
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)  
- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)  
- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)
+- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
+- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)

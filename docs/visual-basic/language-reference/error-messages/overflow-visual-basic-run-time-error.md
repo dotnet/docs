@@ -17,7 +17,7 @@ An overflow results when you attempt an assignment that exceeds the limits of th
 3.  Make sure that numbers used in calculations that are coerced into integers do not have results larger than integers.  
   
 ## See also
- <xref:System.Int32.MaxValue?displayProperty=nameWithType>  
- <xref:System.Double.MaxValue?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- <xref:System.Int32.MaxValue?displayProperty=nameWithType>
+- <xref:System.Double.MaxValue?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

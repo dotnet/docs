@@ -89,14 +89,14 @@ The `ProtectionLevel` property is found on many different classes, such as the <
  When the client calls the `Price` method, it throws an exception when it receives a reply from the service. This occurs because the client does not specify a `ProtectionLevel` on the `ServiceContractAttribute`, and therefore the client uses the default (<xref:System.Net.Security.ProtectionLevel.EncryptAndSign>) for all methods, including the `Price` method. However, the service returns the value using the <xref:System.Net.Security.ProtectionLevel.Sign> level because the service contract defines a single method that has its protection level set to <xref:System.Net.Security.ProtectionLevel.Sign>. In this case, the client will throw an error when validating the response from the service.  
   
 ## See also
- <xref:System.ServiceModel.ServiceContractAttribute>  
- <xref:System.ServiceModel.OperationContractAttribute>  
- <xref:System.ServiceModel.FaultContractAttribute>  
- <xref:System.ServiceModel.MessageContractAttribute>  
- <xref:System.ServiceModel.MessageHeaderAttribute>  
- <xref:System.ServiceModel.MessageBodyMemberAttribute>  
- <xref:System.Net.Security.ProtectionLevel>  
- [Securing Services](../../../docs/framework/wcf/securing-services.md)  
- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)  
- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
- [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md)
+- <xref:System.ServiceModel.ServiceContractAttribute>
+- <xref:System.ServiceModel.OperationContractAttribute>
+- <xref:System.ServiceModel.FaultContractAttribute>
+- <xref:System.ServiceModel.MessageContractAttribute>
+- <xref:System.ServiceModel.MessageHeaderAttribute>
+- <xref:System.ServiceModel.MessageBodyMemberAttribute>
+- <xref:System.Net.Security.ProtectionLevel>
+- [Securing Services](../../../docs/framework/wcf/securing-services.md)
+- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
+- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md)

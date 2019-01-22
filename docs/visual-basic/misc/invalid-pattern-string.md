@@ -17,4 +17,4 @@ The pattern string specified in the `Like` operation of a search is invalid.
 4.  End pattern ranges with a closing bracket.  
   
 ## See also
- [Like Operator](../../visual-basic/language-reference/operators/like-operator.md)
+- [Like Operator](../../visual-basic/language-reference/operators/like-operator.md)

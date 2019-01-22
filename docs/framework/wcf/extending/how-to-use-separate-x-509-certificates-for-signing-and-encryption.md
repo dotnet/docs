@@ -84,9 +84,9 @@ This topic shows how to configure Windows Communication Foundation (WCF) to use 
      [!code-vb[c_FourCerts#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_fourcerts/vb/source.vb#7)]  
   
 ## See also
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>  
- <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager>  
- <xref:System.ServiceModel.Security.IdentityVerifier>  
- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>
+- <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager>
+- <xref:System.ServiceModel.Security.IdentityVerifier>
+- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)

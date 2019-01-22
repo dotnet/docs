@@ -31,6 +31,6 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

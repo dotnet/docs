@@ -77,14 +77,14 @@ This topic demonstrates how to enable a Windows Communication Foundation (WCF) s
     ```  
   
 ## See also
- <xref:System.ServiceModel.WSHttpBinding>  
- <xref:System.ServiceModel.WSHttpSecurity>  
- <xref:System.ServiceModel.SecurityMode>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>  
- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>  
- <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>  
- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>  
- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)  
- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)  
- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)
+- <xref:System.ServiceModel.WSHttpBinding>
+- <xref:System.ServiceModel.WSHttpSecurity>
+- <xref:System.ServiceModel.SecurityMode>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.Password%2A>
+- <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
+- <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>
+- <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>
+- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)
+- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)
+- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)

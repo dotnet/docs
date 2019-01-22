@@ -24,5 +24,5 @@ This example shows how to use the <xref:System.Threading.Tasks.Task%601?displayP
   
 ## See also
 
-- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)  
+- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
 - [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

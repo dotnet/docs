@@ -25,6 +25,6 @@ This topic describes how [!INCLUDE[esql](../../../../../../includes/esql-md.md)]
  For user-defined functions, the definition for an inline query function takes precedence even when a model-defined function exists with a signature that is a better match for the user-defined function.  
   
 ## See also
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)

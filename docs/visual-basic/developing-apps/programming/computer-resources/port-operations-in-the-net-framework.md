@@ -26,5 +26,5 @@ You can access your computer's serial ports through the [!INCLUDE[dnprdnshort](~
 |<xref:System.IO.Ports.StopBits>|Specifies the number of stop bits used on the <xref:System.IO.Ports.SerialPort> object.|  
   
 ## See also
- <xref:Microsoft.VisualBasic.Devices.Ports>  
- [Accessing the Computer's Ports](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md)
+- <xref:Microsoft.VisualBasic.Devices.Ports>
+- [Accessing the Computer's Ports](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md)

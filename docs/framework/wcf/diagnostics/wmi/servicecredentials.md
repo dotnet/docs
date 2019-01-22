@@ -83,4 +83,4 @@ class ServiceCredentials : Behavior
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Description.ServiceCredentials>
+- <xref:System.ServiceModel.Description.ServiceCredentials>

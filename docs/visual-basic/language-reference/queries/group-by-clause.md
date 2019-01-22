@@ -64,10 +64,10 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
  [!code-vb[VbSimpleQuerySamples#11](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-by-clause_1.vb)]  
   
 ## See also
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)
+- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)
+- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)

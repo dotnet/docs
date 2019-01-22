@@ -353,9 +353,9 @@ public void Write()
  Because you cannot access the registry under partial trust, you may need to find other methods of storing your data. When you store application settings, use isolated storage instead of the registry. Isolated storage can also be used to store other application-specific files. You can also store global application information about the server or site of origin, because by default an application is granted the right to access the site of its origin.  
   
 ## See also
- [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)  
- [Additional Security Considerations in Windows Forms](../../../docs/framework/winforms/additional-security-considerations-in-windows-forms.md)  
- [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)  
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)  
- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)
+- [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)
+- [Additional Security Considerations in Windows Forms](../../../docs/framework/winforms/additional-security-considerations-in-windows-forms.md)
+- [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)
+- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)
+- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)

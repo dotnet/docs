@@ -30,4 +30,4 @@ Peer Name Resolution Protocol (PNRP) caches are local collections of algorithmic
  Peers can register interest in receiving objects from other peers. When an object is updated, the collaboration application is notified and the new object is passed to all subscribers of the application. For example, a peer in a group chat application can register interest in receiving application information, which will send it all chat records as application data.  This allows it to monitor chat activity within the cloud.  
   
 ## See also
- <xref:System.Net.PeerToPeer>
+- <xref:System.Net.PeerToPeer>

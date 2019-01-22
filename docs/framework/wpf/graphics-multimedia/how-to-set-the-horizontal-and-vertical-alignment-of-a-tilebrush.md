@@ -67,7 +67,7 @@ Tile pattern with content aligned to lower-right in base tile
  The examples use <xref:System.Windows.Media.DrawingBrush> objects to demonstrate how the <xref:System.Windows.Media.TileBrush.AlignmentX%2A> and <xref:System.Windows.Media.TileBrush.AlignmentY%2A> properties are used. These properties behave identically for all the tile brushes: <xref:System.Windows.Media.DrawingBrush>, <xref:System.Windows.Media.ImageBrush>, and <xref:System.Windows.Media.VisualBrush>. For more information about tile brushes, see [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md).  
   
 ## See also
- <xref:System.Windows.Media.DrawingBrush>  
- <xref:System.Windows.Media.ImageBrush>  
- <xref:System.Windows.Media.VisualBrush>  
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- <xref:System.Windows.Media.DrawingBrush>
+- <xref:System.Windows.Media.ImageBrush>
+- <xref:System.Windows.Media.VisualBrush>
+- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)

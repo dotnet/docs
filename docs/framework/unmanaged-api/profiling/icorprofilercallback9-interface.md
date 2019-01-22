@@ -30,7 +30,7 @@ ms.author: "ronpet"
 **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
 
 ## See also
-[Profiling Interfaces](profiling-interfaces.md)   
-[ICorProfilerCallback8 Interface](icorprofilercallback9-interface.md)   
-[ICorProfilerCallback8.DynamicMethodJITCompilationStarted method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)   
-[ICorProfilerCallback8.DynamicMethodJITCompilationFinished method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)   
+- [Profiling Interfaces](profiling-interfaces.md)
+- [ICorProfilerCallback8 Interface](icorprofilercallback9-interface.md)
+- [ICorProfilerCallback8.DynamicMethodJITCompilationStarted method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)
+- [ICorProfilerCallback8.DynamicMethodJITCompilationFinished method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)

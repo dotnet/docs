@@ -320,7 +320,7 @@ A <xref:System.Activities.Statements.CompensableActivity> can be placed into the
   
 ## See also
 
-- <xref:System.Activities.Statements.CompensableActivity>  
-- <xref:System.Activities.Statements.Compensate>  
-- <xref:System.Activities.Statements.Confirm>  
+- <xref:System.Activities.Statements.CompensableActivity>
+- <xref:System.Activities.Statements.Compensate>
+- <xref:System.Activities.Statements.Confirm>
 - <xref:System.Activities.Statements.CompensationToken>

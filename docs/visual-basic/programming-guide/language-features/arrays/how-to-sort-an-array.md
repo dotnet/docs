@@ -38,8 +38,8 @@ End Sub
 -   One or more elements of the array do not implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class)  
   
 ## See also
- <xref:System.Array.Sort%2A?displayProperty=nameWithType>  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)  
- [Collections](../../concepts/collections.md)  
- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- <xref:System.Array.Sort%2A?displayProperty=nameWithType>
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
+- [Collections](../../concepts/collections.md)
+- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)

@@ -32,6 +32,6 @@ For more advanced double buffering scenarios, you can use the [!INCLUDE[dnprdnsh
      [!code-vb[System.Windows.Forms.LegacyBufferedGraphics#12](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.LegacyBufferedGraphics/VB/Class1.vb#12)]  
   
 ## See also
- <xref:System.Drawing.BufferedGraphicsContext>  
- [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)  
- [How to: Manually Render Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-render-buffered-graphics.md)
+- <xref:System.Drawing.BufferedGraphicsContext>
+- [Double Buffered Graphics](../../../../docs/framework/winforms/advanced/double-buffered-graphics.md)
+- [How to: Manually Render Buffered Graphics](../../../../docs/framework/winforms/advanced/how-to-manually-render-buffered-graphics.md)

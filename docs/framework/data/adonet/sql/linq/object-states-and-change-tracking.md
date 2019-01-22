@@ -57,5 +57,5 @@ ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
  If you update both the required reference and the corresponding foreign key, you must make sure that they agree. An <xref:System.InvalidOperationException> exception is thrown if the two are not synchronized at the time that you call <xref:System.Data.Linq.DataContext.SubmitChanges%2A>. Although foreign key value changes are sufficient for affecting an update of the underlying row, you should change the reference to maintain connectivity of the object graph and bidirectional consistency of relationships.  
   
 ## See also
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/insert-update-and-delete-operations.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/insert-update-and-delete-operations.md)

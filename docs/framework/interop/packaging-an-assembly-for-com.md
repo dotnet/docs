@@ -75,12 +75,12 @@ COM developers can benefit from the following information about the managed type
  The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-services-installation-tool.md) adds managed classes to Windows 2000 Component Services and combines several tasks within a single tool. In addition to loading and registering an assembly, Regsvcs.exe can generate, register, and install the type library into an existing COM+ 1.0 application.  
   
 ## See also
- <xref:System.Runtime.InteropServices.TypeLibConverter>  
- <xref:System.Runtime.InteropServices.ITypeLibConverter>  
- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)  
- [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)  
- [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)  
- [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)  
- [Registering Assemblies with COM](registering-assemblies-with-com.md)  
- [How to: Embed Type Libraries as Win32 Resources in Applications](https://msdn.microsoft.com/library/c97b4b8c-2ab7-4ac7-8fc8-0ba5c5d59c44(v=vs.100))
+- <xref:System.Runtime.InteropServices.TypeLibConverter>
+- <xref:System.Runtime.InteropServices.ITypeLibConverter>
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
+- [Qualifying .NET Types for Interoperation](qualifying-net-types-for-interoperation.md)
+- [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
+- [Assembly Security Considerations](../app-domains/assembly-security-considerations.md)
+- [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)
+- [Registering Assemblies with COM](registering-assemblies-with-com.md)
+- [How to: Embed Type Libraries as Win32 Resources in Applications](https://msdn.microsoft.com/library/c97b4b8c-2ab7-4ac7-8fc8-0ba5c5d59c44(v=vs.100))

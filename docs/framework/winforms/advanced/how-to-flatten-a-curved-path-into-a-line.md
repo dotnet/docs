@@ -19,6 +19,6 @@ A <xref:System.Drawing.Drawing2D.GraphicsPath> object stores a sequence of lines
 -   call the <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method of a <xref:System.Drawing.Drawing2D.GraphicsPath> object. The <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method receives a flatness argument that specifies the maximum distance between the flattened path and the original path.  
   
 ## See also
- <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>  
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
- [Constructing and Drawing Paths](../../../../docs/framework/winforms/advanced/constructing-and-drawing-paths.md)
+- <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>
+- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)
+- [Constructing and Drawing Paths](../../../../docs/framework/winforms/advanced/constructing-and-drawing-paths.md)

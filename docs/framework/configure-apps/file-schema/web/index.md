@@ -33,4 +33,4 @@ Web settings specify CPU and execution-level ASP.NET settings that apply to proc
 |[\<applicationPool>](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)|Specifies CPU and execution-level ASP.NET settings that apply to process-wide behavior managed by the ASP.NET hosting layer.|  
   
 ## See also
- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

@@ -24,4 +24,4 @@ When an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query has multip
  You can use parentheses to override the defined precedence of the operators in a query. Everything within parentheses is evaluated first to yield a single result before that result can be used by any operator outside the parentheses. For example, `x+y*z` multiplies `y` by `z` and then adds `x`, but `(x+y)*z` adds `x` to `y` and then multiplies the result by `z`.  
   
 ## See also
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

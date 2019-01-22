@@ -20,5 +20,5 @@ This section contains a set of short "how to" topics that briefly describe how t
  Describes how to configure the unhandled exception behavior for a workflow service using <xref:System.ServiceModel.Activities.WorkflowServiceHost>.  
   
 ## See also
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
- [Hosting Workflow Services Overview](../../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Hosting Workflow Services Overview](../../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)

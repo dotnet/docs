@@ -22,5 +22,5 @@ This example shows how to use the <xref:System.Windows.Controls.TextBox.Text%2A>
  [!code-vb[TextBox_MiscCode#_TextBoxSetText](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBox_MiscCode/VisualBasic/Window1.xaml.vb#_textboxsettext)]  
   
 ## See also
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

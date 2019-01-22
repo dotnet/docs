@@ -122,10 +122,10 @@ Set db = DBEngine.OpenDatabase("C:\nwind.mdb")
   
 ## See also
 
-- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)  
-- [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)  
-- [Tlbexp.exe (Type Library Exporter)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)  
-- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
-- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
+- [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md)
+- [Tlbexp.exe (Type Library Exporter)](../../../framework/tools/tlbexp-exe-type-library-exporter.md)
+- [Walkthrough: Implementing Inheritance with COM Objects](../../../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
 - [Global Assembly Cache](../../../framework/app-domains/gac.md)

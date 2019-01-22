@@ -99,5 +99,5 @@ class Program
 ```  
   
 ## See also
- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -77,4 +77,4 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
- [ICorProfilerCallback5 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-interface.md)
+- [ICorProfilerCallback5 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-interface.md)

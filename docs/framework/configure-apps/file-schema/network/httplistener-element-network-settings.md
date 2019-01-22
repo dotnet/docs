@@ -132,7 +132,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |Can be Empty||  
   
 ## See also
-- <xref:System.Net.Configuration.HttpListenerElement>  
-- <xref:System.Net.HttpListener>  
-- <xref:System.Net.HttpListenerRequest.Url%2A>  
+- <xref:System.Net.Configuration.HttpListenerElement>
+- <xref:System.Net.HttpListener>
+- <xref:System.Net.HttpListenerRequest.Url%2A>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

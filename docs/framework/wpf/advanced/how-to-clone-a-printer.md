@@ -50,10 +50,10 @@ Most businesses will, at some point, buy multiple printers of the same model. Ty
  [!code-vb[ClonePrinter#ClonePrinter](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
   
 ## See also
- <xref:System.Printing.IndexedProperties>  
- <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>  
- <xref:System.Printing.LocalPrintServer>  
- <xref:System.Printing.PrintQueue>  
- <xref:System.Collections.DictionaryEntry>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- <xref:System.Printing.IndexedProperties>
+- <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>
+- <xref:System.Printing.LocalPrintServer>
+- <xref:System.Printing.PrintQueue>
+- <xref:System.Collections.DictionaryEntry>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

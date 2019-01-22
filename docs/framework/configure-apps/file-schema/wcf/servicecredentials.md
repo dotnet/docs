@@ -61,6 +61,6 @@ Specifies the credential to be used in authenticating the service and the client
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

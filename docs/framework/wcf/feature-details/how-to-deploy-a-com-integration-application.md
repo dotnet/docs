@@ -33,6 +33,6 @@ Once you have written a COM+ integration application, you may want to deploy it 
 5.  Copy the .svc file (componentName.svc) and the Web.config file from the vroot on machine A to the newly created vroot on machine B.  
   
 ## See also
- [Integrating with COM+ Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)  
- [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)  
- [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md)
+- [Integrating with COM+ Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications-overview.md)
+- [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+- [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md)

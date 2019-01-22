@@ -15,5 +15,5 @@ An attempt has been made to open a file that is already open.
 -   Remove the redundant `FileOpen` statement from your code.  
   
 ## See also
-   
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

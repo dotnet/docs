@@ -69,8 +69,8 @@ The .NET threading model does not support [fibers](/windows/desktop/procthread/f
 
 ## See also
 
-- <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>  
-- <xref:System.Threading.ThreadState>  
-- <xref:System.EnterpriseServices.ServicedComponent>  
-- <xref:System.Threading.Thread>  
+- <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType>
+- <xref:System.Threading.ThreadState>
+- <xref:System.EnterpriseServices.ServicedComponent>
+- <xref:System.Threading.Thread>
 - <xref:System.Threading.Monitor>

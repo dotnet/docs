@@ -104,4 +104,4 @@ By using a stateful security context token (SCT) in a secure session, the sessio
 ```  
   
 ## See also
- [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

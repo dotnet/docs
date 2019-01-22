@@ -67,4 +67,4 @@ class Channel
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.ChannelBase>
+- <xref:System.ServiceModel.Channels.ChannelBase>

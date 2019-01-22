@@ -41,5 +41,5 @@ For generic type parameters, the `In` keyword specifies that the type parameter 
  [!code-vb[vbVarianceKeywords#2](../../../visual-basic/language-reference/modifiers/codesnippet/VisualBasic/in-generic-modifier_2.vb)]  
   
 ## See also
- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)  
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+- [Variance in Generic Interfaces](../../programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md)
+- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

@@ -20,5 +20,5 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Miscellaneous operations|[AddressOf](../../../visual-basic/language-reference/operators/addressof-operator.md), [Await](../../../visual-basic/language-reference/operators/await-operator.md), [GetType](../../../visual-basic/language-reference/operators/gettype-operator.md)|  
   
 ## See also
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

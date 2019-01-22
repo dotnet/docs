@@ -72,6 +72,6 @@ Specifies whether the common language runtime allows managed code to catch acces
 ```  
   
 ## See also
-- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+- <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

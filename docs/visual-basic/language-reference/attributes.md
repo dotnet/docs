@@ -16,4 +16,4 @@ Visual Basic provides several attributes that allow objects interoperate with un
 |<xref:Microsoft.VisualBasic.VBFixedStringAttribute>|Indicates that a string should be treated as if it were fixed length.|  
   
 ## See also
- [Attributes overview](../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Attributes overview](../../visual-basic/programming-guide/concepts/attributes/index.md)

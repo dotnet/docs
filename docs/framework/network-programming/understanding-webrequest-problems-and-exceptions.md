@@ -23,6 +23,6 @@ ms.assetid: 74a361a5-e912-42d3-8f2e-8e9a96880a2b
 |<xref:System.Net.WebExceptionStatus.ServerProtocolViolation>|The response from the server is not a valid HTTP response. This problem occurs when the .NET Framework detects that the server response does not comply with HTTP 1.1 RFC. This problem may occur when the response contains incorrect headers or incorrect header delimiters.RFC 2616 defines HTTP 1.1 and the valid format for the response from the server. For more information, see [RFC 2616 - Hypertext Transfer Protocol -- HTTP/1.1](https://go.microsoft.com/fwlink/?LinkID=147388) at [Internet Engineering Task Force (IETF)](https://www.ietf.org/) website.|Get a network trace of the transaction and examine the headers in the response.<br /><br /> If your application requires the server response without parsing (this could be a security issue), set `useUnsafeHeaderParsing` to `true` in the configuration file. See [\<httpWebRequest> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md).|  
   
 ## See also
- <xref:System.Net.HttpWebRequest>  
- <xref:System.Net.HttpWebResponse>  
- <xref:System.Net.Dns>
+- <xref:System.Net.HttpWebRequest>
+- <xref:System.Net.HttpWebResponse>
+- <xref:System.Net.Dns>

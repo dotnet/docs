@@ -91,4 +91,4 @@ class Binding
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.Binding>
+- <xref:System.ServiceModel.Channels.Binding>

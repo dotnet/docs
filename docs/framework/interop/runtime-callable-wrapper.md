@@ -51,8 +51,8 @@ COM interfaces and the runtime callable wrapper
 |**IEnumVARIANT**|Enables COM types that support enumerations to be treated as collections.|  
   
 ## See also
- [COM Wrappers](com-wrappers.md)  
- [Marshaling Selected Interfaces](https://msdn.microsoft.com/library/fdb97fd0-f694-4832-bf15-a4e7cf413840(v=vs.100))  
- [COM Callable Wrapper](com-callable-wrapper.md)  
- [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))  
- [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
+- [COM Wrappers](com-wrappers.md)
+- [Marshaling Selected Interfaces](https://msdn.microsoft.com/library/fdb97fd0-f694-4832-bf15-a4e7cf413840(v=vs.100))
+- [COM Callable Wrapper](com-callable-wrapper.md)
+- [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))
+- [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)

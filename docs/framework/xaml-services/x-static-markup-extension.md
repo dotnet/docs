@@ -77,5 +77,5 @@ In the .NET Framework XAML Services implementation, the handling for this markup
  For more information on how to use prefixes and XAML namespaces for WPF, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 ## See also
- [x:Type Markup Extension](../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+- [x:Type Markup Extension](../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)

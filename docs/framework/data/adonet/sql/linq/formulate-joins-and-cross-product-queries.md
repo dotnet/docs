@@ -74,4 +74,4 @@ The following examples show how to combine results from multiple tables.
  [!code-vb[DLinqQueryExamples#56](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#56)]  
   
 ## See also
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)

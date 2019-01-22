@@ -37,7 +37,7 @@ The following example makes the `Nested` class public:
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)
 - [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)

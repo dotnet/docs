@@ -41,5 +41,5 @@ In most cases, you can discover the properties and methods of an object at desig
 >  While the `CallByName` function may be useful in some cases, you must weigh its usefulness against the performance implications — using `CallByName` to invoke a procedure is slightly slower than a late-bound call. If you are invoking a function that is called repeatedly, such as inside a loop, `CallByName` can have a severe effect on performance.  
   
 ## See also
- <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>  
- [Determining Object Type](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)
+- <xref:Microsoft.VisualBasic.Interaction.CallByName%2A>
+- [Determining Object Type](../../../../visual-basic/programming-guide/language-features/early-late-binding/determining-object-type.md)

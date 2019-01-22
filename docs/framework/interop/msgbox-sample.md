@@ -39,8 +39,8 @@ This sample demonstrates how to pass string types by value as In parameters and 
  [!code-vb[Conceptual.Interop.Marshaling#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/msgbox.vb#6)]  
   
 ## See also
- [Marshaling Strings](marshaling-strings.md)  
- [Platform Invoke Data Types](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))  
- [Default Marshaling for Strings](default-marshaling-for-strings.md)  
- [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)  
- [Specifying a Character Set](specifying-a-character-set.md)
+- [Marshaling Strings](marshaling-strings.md)
+- [Platform Invoke Data Types](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))
+- [Default Marshaling for Strings](default-marshaling-for-strings.md)
+- [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
+- [Specifying a Character Set](specifying-a-character-set.md)

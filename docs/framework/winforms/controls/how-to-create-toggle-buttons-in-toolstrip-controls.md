@@ -30,5 +30,5 @@ When a user clicks a toggle button, it appears sunken and retains the sunken app
     ```  
   
 ## See also
- <xref:System.Windows.Forms.ToolStripButton>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- <xref:System.Windows.Forms.ToolStripButton>
+- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)

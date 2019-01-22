@@ -31,4 +31,4 @@ Procedural workflows use flow-control methods similar to those found in procedur
 >  If using the [!INCLUDE[dublin](../../../includes/dublin-md.md)] to host workflows on a Web farm, AppFabric will move instances between different AppFabric servers. This requires that the resources are able to be shared between all nodes.  None of the default NET 4 workflow activities contain any operations that access local resources. Since AppFabric does not offer any mechanism to mark a workflow as immovable, a developer must not create custom activities that fail when a workflow is moved.  
   
 ## See also
- [Flowchart Workflows](../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)
+- [Flowchart Workflows](../../../docs/framework/windows-workflow-foundation/flowchart-workflows.md)

@@ -21,4 +21,4 @@ ms.author: "ronpet"
 `ICorDebugErrorInfoEnum` is obsolete. Do not use this interface.  
   
 ## See also
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

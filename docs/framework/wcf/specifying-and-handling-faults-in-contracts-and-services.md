@@ -50,16 +50,16 @@ Windows Communication Foundation (WCF) applications handle error situations by m
  When deserializing a fault contract, WCF first attempts to match the fault contract name in the SOAP message with the fault contract type. If it cannot find an exact match it will then search the list of available fault contracts in alphabetical order for a compatible type. If two fault contracts are compatible types (one is a subclass of another, for example) the wrong type may be used to de-serialize the fault. This only occurs if the fault contract does not specify a name, namespace, and action. To prevent this issue from occurring, always fully qualify fault contracts by specifying the name, namespace, and action attributes. Additionally if you have defined a number of related fault contracts derived from a shared base class, make sure to mark any new members with `[DataMember(IsRequired=true)]`. For more information on this `IsRequired` attribute see, <xref:System.Runtime.Serialization.DataMemberAttribute>. This will prevent a base class from being a compatible type and force the fault to be deserialized into the correct derived type.  
   
 ## See also
- <xref:System.ServiceModel.FaultException>  
- <xref:System.ServiceModel.FaultContractAttribute>  
- <xref:System.ServiceModel.FaultException>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- <xref:System.ServiceModel.XmlSerializerFormatAttribute>  
- <xref:System.ServiceModel.FaultContractAttribute>  
- <xref:System.ServiceModel.CommunicationException>  
- <xref:System.ServiceModel.FaultContractAttribute.Action%2A>  
- <xref:System.ServiceModel.FaultException.Code%2A>  
- <xref:System.ServiceModel.FaultException.Reason%2A>  
- <xref:System.ServiceModel.FaultCode.SubCode%2A>  
- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>  
- [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md)
+- <xref:System.ServiceModel.FaultException>
+- <xref:System.ServiceModel.FaultContractAttribute>
+- <xref:System.ServiceModel.FaultException>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- <xref:System.ServiceModel.XmlSerializerFormatAttribute>
+- <xref:System.ServiceModel.FaultContractAttribute>
+- <xref:System.ServiceModel.CommunicationException>
+- <xref:System.ServiceModel.FaultContractAttribute.Action%2A>
+- <xref:System.ServiceModel.FaultException.Code%2A>
+- <xref:System.ServiceModel.FaultException.Reason%2A>
+- <xref:System.ServiceModel.FaultCode.SubCode%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>
+- [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md)

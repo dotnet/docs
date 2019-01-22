@@ -65,6 +65,6 @@ HRESULT SetAppDomainManagerType(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)  
- [EInitializeNewDomainFlags Enumeration](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md)
+- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)
+- [EInitializeNewDomainFlags Enumeration](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md)

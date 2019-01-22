@@ -30,6 +30,6 @@ During custom authorization, it may be necessary to allow a request for metadata
  [!code-vb[C_HowtoCheckForMexRequestsInAuthorization#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtocheckformexrequestsinauthorization/vb/source.vb#1)]  
   
 ## See also
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
+- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)

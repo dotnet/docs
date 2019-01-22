@@ -34,6 +34,6 @@ The ADO.NET Data Platform is a multi-release strategy to decrease the amount of 
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] deploys data services on the Web or on an intranet. The data is structured as entities and relationships according to the specifications of the Entity Data Model. Data deployed on this model is addressable by standard HTTP protocol. For more information, see [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md).  
   
 ## See also
- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)  
- [What's New in ADO.NET](../../../../docs/framework/data/adonet/whats-new.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [What's New in ADO.NET](../../../../docs/framework/data/adonet/whats-new.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

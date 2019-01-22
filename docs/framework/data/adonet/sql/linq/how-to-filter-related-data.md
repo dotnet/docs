@@ -16,4 +16,4 @@ Use the <xref:System.Data.Linq.DataLoadOptions.AssociateWith%2A> method to speci
  [!code-vb[System.Data.Linq.DataLoadOptions#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.dataloadoptions/vb/module1.vb#1)]  
   
 ## See also
- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

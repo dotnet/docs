@@ -41,10 +41,10 @@ Specifies that one or more declared local variables are to continue to exist and
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
 ## See also
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
+- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

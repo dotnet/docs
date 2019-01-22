@@ -34,4 +34,4 @@ Dependency properties should generally be considered to be public properties. Th
  Applying a demand to a <xref:System.Windows.DependencyProperty.ValidateValueCallback%2A> and expecting the validation failure on a demand failure to prevent a property from being set is not an adequate security mechanism. Set-value invalidation enforced through <xref:System.Windows.DependencyProperty.ValidateValueCallback%2A> could also be suppressed by malicious callers, if those callers are operating within the application domain.  
   
 ## See also
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

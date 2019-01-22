@@ -133,4 +133,4 @@ ON b.y = d.z
  When mapping conceptual (EDM) types to provider types, you should map to the widest type (Int32) so that all possible values fit. Also, avoid mapping to types that cannot be used for many operations, like BLOB types (for example, `ntext` in SQL Server).  
   
 ## See also
- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)

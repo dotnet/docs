@@ -57,5 +57,5 @@ Registers a token replay cache with a service or a security token handler collec
 ```  
   
 ## See also
- <xref:System.IdentityModel.Tokens.TokenReplayCache>  
- [\<tokenReplayDetection>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md)
+- <xref:System.IdentityModel.Tokens.TokenReplayCache>
+- [\<tokenReplayDetection>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/tokenreplaydetection.md)

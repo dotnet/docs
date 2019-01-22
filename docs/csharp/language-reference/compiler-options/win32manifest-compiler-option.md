@@ -62,6 +62,6 @@ Use the **-win32manifest** option to specify a user-defined Win32 application ma
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
-- [-nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [-nowin32manifest (C# Compiler Options)](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -19,7 +19,7 @@ This section describes the keywords and operators that are associated with using
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)

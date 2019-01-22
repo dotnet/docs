@@ -24,4 +24,4 @@ This example shows how to programmatically remove a specific adorner from a spec
  [!code-vb[AdornersMiscCode#_RemoveSpecificAdornerShort](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/AdornersMiscCode/visualbasic/window1.xaml.vb#_removespecificadornershort)]  
   
 ## See also
- [Adorners Overview](../../../../docs/framework/wpf/controls/adorners-overview.md)
+- [Adorners Overview](../../../../docs/framework/wpf/controls/adorners-overview.md)

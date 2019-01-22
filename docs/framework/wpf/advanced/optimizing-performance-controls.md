@@ -70,9 +70,9 @@ ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
 >  For an example of how to enable virtualization and container recycling on a <xref:System.Windows.Controls.TreeView>, see [Improve the Performance of a TreeView](../../../../docs/framework/wpf/controls/how-to-improve-the-performance-of-a-treeview.md).  
   
 ## See also
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)  
- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Walkthrough: Caching Application Data in a WPF Application](../../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- [Layout and Design](../../../../docs/framework/wpf/advanced/optimizing-performance-layout-and-design.md)
+- [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Controls](../../../../docs/framework/wpf/controls/index.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Walkthrough: Caching Application Data in a WPF Application](../../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)

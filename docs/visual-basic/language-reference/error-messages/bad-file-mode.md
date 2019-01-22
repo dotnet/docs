@@ -29,5 +29,5 @@ Statements used in manipulating file contents must be appropriate to the mode in
 -   Use the functionality available in the `My.Computer.FileSystem` object.  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileSystem>  
- [Troubleshooting: Reading from and Writing to Text Files](../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)
+- <xref:Microsoft.VisualBasic.FileSystem>
+- [Troubleshooting: Reading from and Writing to Text Files](../../../visual-basic/developing-apps/programming/drives-directories-files/troubleshooting-reading-from-and-writing-to-text-files.md)

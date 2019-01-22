@@ -42,11 +42,11 @@ Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers rangin
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Single?displayProperty=nameWithType> structure.  
   
 ## See also
- <xref:System.Single?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)  
- [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)  
- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- <xref:System.Single?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)
+- [Double Data Type](../../../visual-basic/language-reference/data-types/double-data-type.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)

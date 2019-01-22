@@ -19,4 +19,4 @@ Use the <xref:System.Data.Linq.DataLoadOptions.LoadWith%2A> method to specify wh
  [!code-vb[System.Data.Linq.DataLoadOptions#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.dataloadoptions/vb/module1.vb#2)]  
   
 ## See also
- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

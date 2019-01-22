@@ -40,7 +40,7 @@ It is often useful to define interfaces either for generic collection classes, o
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
-- [interface](../../../csharp/language-reference/keywords/interface.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [interface](../../../csharp/language-reference/keywords/interface.md)
 - [Generics](~/docs/standard/generics/index.md)

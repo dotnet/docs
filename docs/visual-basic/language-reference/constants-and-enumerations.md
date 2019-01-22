@@ -72,7 +72,7 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
 |<xref:Microsoft.VisualBasic.VbStrConv>|Indicates which type of conversion to perform when calling the <xref:Microsoft.VisualBasic.Strings.StrConv%2A> function.|  
   
 ## See also
- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
- [Visual Basic](../../visual-basic/index.md)  
- [Constants Overview](../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)  
- [Enumerations Overview](../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)
+- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
+- [Visual Basic](../../visual-basic/index.md)
+- [Constants Overview](../../visual-basic/programming-guide/language-features/constants-enums/constants-overview.md)
+- [Enumerations Overview](../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)

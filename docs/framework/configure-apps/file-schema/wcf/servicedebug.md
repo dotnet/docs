@@ -65,8 +65,8 @@ Specifies debugging and help information features for a Windows Communication Fo
  The optional `httpHelpPageBinding` and `httpHelpPageBinding` attributes allow you to configure the bindings used to access the service web page. If they are not specified, the default bindings (`HttpTransportBindingElement`, in the case of HTTP and `HttpsTransportBindingElement`, in the case of HTTPS) are used for service help page access as appropriate. Notice that you cannot use these attributes with the built-in WCF bindings. Only bindings with inner binding elements that support xref:System.ServiceModel.Channels.IReplyChannel> will be supported. Additionally, the <xref:System.ServiceModel.Channels.MessageVersion?displayProperty=nameWithType> property of the binding must be <xref:System.ServiceModel.Channels.MessageVersion.None?displayProperty=nameWithType>.  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ServiceDebugElement>  
- <xref:System.ServiceModel.Description.ServiceDebugBehavior>  
- [Specifying and Handling Faults in Contracts and Services](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
- [Handling Exceptions and Faults](../../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)  
- [Service Debug Behavior](../../../../../docs/framework/wcf/samples/service-debug-behavior.md)
+- <xref:System.ServiceModel.Configuration.ServiceDebugElement>
+- <xref:System.ServiceModel.Description.ServiceDebugBehavior>
+- [Specifying and Handling Faults in Contracts and Services](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Handling Exceptions and Faults](../../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md)
+- [Service Debug Behavior](../../../../../docs/framework/wcf/samples/service-debug-behavior.md)

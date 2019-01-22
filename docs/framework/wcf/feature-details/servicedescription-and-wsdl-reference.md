@@ -146,4 +146,4 @@ This topic describes how Windows Communication Foundation (WCF) maps Web Service
 |`Name, ContractDescription.Name, OperationDescription.Name,`|Used to derive the `wsdl:message`/@name value for the fault message.|  
   
 ## See also
- <xref:System.ServiceModel.Description>
+- <xref:System.ServiceModel.Description>

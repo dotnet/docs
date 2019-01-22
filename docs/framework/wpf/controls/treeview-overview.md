@@ -68,7 +68,7 @@ The <xref:System.Windows.Controls.TreeView> control provides a way to display in
  [!code-xaml[TreeViewDataBinding#6](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewDataBinding/CSharp/Window1.xaml#6)]  
   
 ## See also
- <xref:System.Windows.Controls.TreeView>  
- <xref:System.Windows.Controls.TreeViewItem>  
- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)  
- [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)
+- <xref:System.Windows.Controls.TreeView>
+- <xref:System.Windows.Controls.TreeViewItem>
+- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)
+- [WPF Content Model](../../../../docs/framework/wpf/controls/wpf-content-model.md)

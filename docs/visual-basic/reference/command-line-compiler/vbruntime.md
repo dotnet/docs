@@ -89,7 +89,7 @@ vbc -vbruntime:C:\VBLibraries\CustomVBLibrary.dll
 ```  
   
 ## See also
- [Visual Basic Core – New compilation mode in Visual Studio 2010 SP1](https://blogs.msdn.com/b/vbteam/archive/2011/01/10/vb-core-new-compilation-mode-in-visual-studio-2010-sp1.aspx)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+- [Visual Basic Core – New compilation mode in Visual Studio 2010 SP1](https://blogs.msdn.com/b/vbteam/archive/2011/01/10/vb-core-new-compilation-mode-in-visual-studio-2010-sp1.aspx)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)

@@ -27,4 +27,4 @@ Metadata retrieval is the process of requesting and retrieving metadata from a m
  Demonstrates how to use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> class to download metadata files into a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object that contains <xref:System.ServiceModel.Description.MetadataSection?displayProperty=nameWithType> objects to write to files or for other uses.  
   
 ## See also
- <xref:System.ServiceModel.Description.MetadataExchangeClient>
+- <xref:System.ServiceModel.Description.MetadataExchangeClient>

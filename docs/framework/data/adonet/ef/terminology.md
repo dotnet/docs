@@ -70,7 +70,7 @@ This topic defines terms frequently referenced in [!INCLUDE[adonet_ef](../../../
 |table-per-type|A method of modeling a type hierarchy in a database that uses multiple tables with one-to-one relationships to model the various types.|  
   
 ## See also
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
- [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)  
- [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  
- [Entity Framework Resources](../../../../../docs/framework/data/adonet/ef/resources.md)
+- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
+- [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)
+- [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)
+- [Entity Framework Resources](../../../../../docs/framework/data/adonet/ef/resources.md)

@@ -30,12 +30,12 @@ This example shows how to control a <xref:System.Windows.Controls.MediaElement> 
  [!code-vb[MediaGallery_snip#CodeBehindMediaTimelineExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/MediaTimelineExample.xaml.vb#codebehindmediatimelineexamplewholepage)]  
   
 ## See also
- <xref:System.Windows.Controls.MediaElement>  
- <xref:System.Windows.Media.MediaTimeline>  
- <xref:System.Windows.Media.Animation.Storyboard>  
- [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)  
- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/audio-and-video-how-to-topics.md)  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- <xref:System.Windows.Controls.MediaElement>
+- <xref:System.Windows.Media.MediaTimeline>
+- <xref:System.Windows.Media.Animation.Storyboard>
+- [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](../../../../docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)
+- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/audio-and-video-how-to-topics.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

@@ -32,6 +32,6 @@ This set of topics show a number of XPath expressions and their [!INCLUDE[sqltec
   
 ## See also
 
-- <xref:System.Xml.XPath?displayProperty=nameWithType>  
-- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)  
+- <xref:System.Xml.XPath?displayProperty=nameWithType>
+- [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)
 - [Process XML Data Using the XPath Data Model](../../../../standard/data/xml/process-xml-data-using-the-xpath-data-model.md)

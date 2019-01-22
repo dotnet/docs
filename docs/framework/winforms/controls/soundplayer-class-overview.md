@@ -29,5 +29,5 @@ The <xref:System.Media.SoundPlayer> class enables you to easily include sounds i
 |<xref:System.Media.SoundPlayer.LoadCompleted> event|Raised after the load of a sound is attempted.|  
   
 ## See also
- <xref:System.Media.SoundPlayer>  
- <xref:System.Media.SystemSounds>
+- <xref:System.Media.SoundPlayer>
+- <xref:System.Media.SystemSounds>

@@ -81,5 +81,5 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 -   [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)  
   
 ## See also
- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
- [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)
+- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)

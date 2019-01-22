@@ -32,5 +32,5 @@ ms.assetid: 660e3799-25ca-462c-8c4a-8bce04fbb031
   
 ## See also
 
-- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Generics](../../../../csharp/programming-guide/generics/index.md)

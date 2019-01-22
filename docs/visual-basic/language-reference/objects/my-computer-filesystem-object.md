@@ -32,5 +32,5 @@ Provides properties and methods for working with drives, files, and directories.
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -124,6 +124,6 @@ End Function
 -   An image file that is named `TestPhoto.jpg` and located at **c:\\**.  
   
 ## See also
- [How to: Determine the Parameters Supported by an Encoder](../../../../docs/framework/winforms/advanced/how-to-determine-the-parameters-supported-by-an-encoder.md)  
- [Types of Bitmaps](../../../../docs/framework/winforms/advanced/types-of-bitmaps.md)  
- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)
+- [How to: Determine the Parameters Supported by an Encoder](../../../../docs/framework/winforms/advanced/how-to-determine-the-parameters-supported-by-an-encoder.md)
+- [Types of Bitmaps](../../../../docs/framework/winforms/advanced/types-of-bitmaps.md)
+- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)

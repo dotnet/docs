@@ -59,6 +59,6 @@ Hyperlinks defined with TextDecorations
  [!code-xaml[TextDecorationSnippets#TextDecorationSnippets3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml#textdecorationsnippets3)]  
   
 ## See also
- <xref:System.Windows.TextDecoration>  
- <xref:System.Windows.Documents.Hyperlink>  
- [Specify Whether a Hyperlink is Underlined](../../../../docs/framework/wpf/advanced/how-to-specify-whether-a-hyperlink-is-underlined.md)
+- <xref:System.Windows.TextDecoration>
+- <xref:System.Windows.Documents.Hyperlink>
+- [Specify Whether a Hyperlink is Underlined](../../../../docs/framework/wpf/advanced/how-to-specify-whether-a-hyperlink-is-underlined.md)

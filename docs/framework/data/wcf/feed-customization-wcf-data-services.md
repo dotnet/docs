@@ -87,5 +87,5 @@ ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
  For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md).  
   
 ## See also
- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)  
- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
+- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)
+- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

@@ -36,4 +36,4 @@ This example demonstrates how to encode a <xref:System.Windows.Media.Imaging.Bit
   
 ## See also
 
-[Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

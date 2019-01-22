@@ -100,6 +100,6 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 -   Message Queuing in [!INCLUDE[wv](../../../../includes/wv-md.md)] supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
   
 ## See also
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)  
- [Specifying and Handling Faults in Contracts and Services](../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
+- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)
+- [Specifying and Handling Faults in Contracts and Services](../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)

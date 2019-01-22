@@ -39,8 +39,8 @@ You can use the ADO.NET **DataReader** to retrieve a read-only, forward-only str
  Describes enhancing application performance by reducing the number of round trips to SQL Server when applying updates from the `DataSet`.  
   
 ## See also
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

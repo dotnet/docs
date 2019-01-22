@@ -35,10 +35,10 @@ A backing store is a storage medium, such as a disk or memory. Each different ba
   
 ## See also
 
-- <xref:System.IO.StreamReader>  
-- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
-- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>  
-- <xref:System.IO.FileStream>  
-- <xref:System.IO.BinaryReader>  
-- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>  
+- <xref:System.IO.StreamReader>
+- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>
+- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>
+- <xref:System.IO.FileStream>
+- <xref:System.IO.BinaryReader>
+- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>
 - <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=nameWithType>

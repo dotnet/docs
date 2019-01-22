@@ -207,4 +207,4 @@ d.Add("two", 2);
 |Escaped characters|Always with an escape forward slash (/); never allows un-escaped invalid JSON characters, such as "\n".|With an escape forward slash (/) for DateTime values.|
 
 ## See also
- [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)
+- [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)

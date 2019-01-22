@@ -73,4 +73,4 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides sup
 >  If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  
   
 ## See also
- [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)
+- [Custom Control Painting and Rendering](../../../../docs/framework/winforms/controls/custom-control-painting-and-rendering.md)

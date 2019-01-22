@@ -84,9 +84,9 @@ Namespaces are heavily used within C# programs in two ways. Firstly, the .NET Fr
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
-- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)  
-- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)  
-- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)
+- [Namespace Keywords](../../../csharp/language-reference/keywords/namespace-keywords.md)
+- [. Operator](../../../csharp/language-reference/operators/member-access-operator.md)
+- [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)
 - [extern](../../../csharp/language-reference/keywords/extern.md)

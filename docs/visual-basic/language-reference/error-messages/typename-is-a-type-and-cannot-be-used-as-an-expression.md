@@ -18,4 +18,4 @@ A type name occurs where an expression is required. An expression must consist o
 -   Remove the type name and construct the expression using valid elements.  
   
 ## See also
- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
+- [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

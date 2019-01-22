@@ -42,7 +42,7 @@ result = object1 IsNot object2
  [!code-vb[VbVbalrOperators#29](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/isnot-operator_1.vb)]  
   
 ## See also
- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [How to: Test Whether Two Objects Are the Same](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-test-whether-two-objects-are-the-same.md)
+- [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
+- [TypeOf Operator](../../../visual-basic/language-reference/operators/typeof-operator.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [How to: Test Whether Two Objects Are the Same](../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-test-whether-two-objects-are-the-same.md)

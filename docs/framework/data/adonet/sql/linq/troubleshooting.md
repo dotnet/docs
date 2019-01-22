@@ -64,5 +64,5 @@ The following information exposes some issues you might encounter in your [!INCL
  The generated method `OnCreated()` is called each time the object constructor is called, including the scenario in which [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] calls the constructor to make a copy for original values. Take this behavior into account if you implement the `OnCreated()` method in your own partial class.  
   
 ## See also
- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)  
- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)
+- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

@@ -34,4 +34,4 @@ HRESULT Destroy();
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedDispose Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddispose-interface.md)
+- [ISymUnmanagedDispose Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddispose-interface.md)

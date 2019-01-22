@@ -89,4 +89,4 @@ ComSvcConfig.exe /list /application:OnlineStore /hosting:complus
 ```  
   
 ## See also
- [How to: Use the COM+ Service Model Configuration Tool](../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md)
+- [How to: Use the COM+ Service Model Configuration Tool](../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md)

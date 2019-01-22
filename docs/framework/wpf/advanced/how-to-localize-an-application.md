@@ -204,5 +204,5 @@ This tutorial explains how to create a localized application by using the LocBam
  You should now have a basic understanding of how to use the LocBaml tool.  You should be able to make a file that contains Uids. By using the LocBaml tool, you should be able to parse a file to extract the localizable content, and after the content is translated, you should be able to generate a .resources.dll file that merges the translated content. This topic does not include every possible detail, but you now have the knowledge necessary to use LocBaml for localizing your applications.  
   
 ## See also
- [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)  
- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)
+- [Globalization for WPF](../../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
+- [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md)

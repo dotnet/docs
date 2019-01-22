@@ -71,5 +71,5 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
     ```  
   
 ## See also
- <xref:System.Windows.Forms.FontDialog>  
- [FontDialog Component](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md)
+- <xref:System.Windows.Forms.FontDialog>
+- [FontDialog Component](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md)

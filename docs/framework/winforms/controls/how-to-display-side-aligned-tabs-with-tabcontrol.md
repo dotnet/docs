@@ -35,4 +35,4 @@ The <xref:System.Windows.Forms.TabControl.Alignment%2A> property of <xref:System
      [!code-vb[TabControl.RightAlignedTabs#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/TabControl.RightAlignedTabs/VB/Form1.vb#1)]  
   
 ## See also
- [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)
+- [TabControl Control](../../../../docs/framework/winforms/controls/tabcontrol-control-windows-forms.md)

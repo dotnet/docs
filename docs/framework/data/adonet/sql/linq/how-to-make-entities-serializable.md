@@ -22,5 +22,5 @@ sqlmetal /code:nwserializable.cs /language:csharp "c:\northwnd.mdf" /sprocs /fun
 ```  
   
 ## See also
- [Serialization](../../../../../../docs/framework/data/adonet/sql/linq/serialization.md)  
- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
+- [Serialization](../../../../../../docs/framework/data/adonet/sql/linq/serialization.md)
+- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)

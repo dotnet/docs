@@ -30,5 +30,5 @@ The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includ
 |SQL_WVARCHAR|String<br /><br /> Char[]|GetString()<br /><br /> GetChars()|  
   
 ## See also
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

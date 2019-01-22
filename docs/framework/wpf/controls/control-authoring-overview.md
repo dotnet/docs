@@ -263,6 +263,6 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
  [!code-vb[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  
   
 ## See also
- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)

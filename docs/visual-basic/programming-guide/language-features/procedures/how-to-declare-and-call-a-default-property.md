@@ -76,13 +76,13 @@ A *default property* is a class or structure property that your code can access 
  Because of these disadvantages, you should consider not defining default properties. For code readability, you should also consider always referring to all properties explicitly, even default properties.  
   
 ## See also
- [Property Procedures](./property-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
- [Default](../../../../visual-basic/language-reference/modifiers/default.md)  
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
- [How to: Create a Property](./how-to-create-a-property.md)  
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)  
- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)
+- [Property Procedures](./property-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Default](../../../../visual-basic/language-reference/modifiers/default.md)
+- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
+- [How to: Create a Property](./how-to-create-a-property.md)
+- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)
+- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)
+- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)
+- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)

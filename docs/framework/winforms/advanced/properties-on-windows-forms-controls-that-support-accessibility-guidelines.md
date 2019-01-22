@@ -25,4 +25,4 @@ Controls on the standard toolbox for Windows Forms support many of the accessibi
 |BackgroundImage|Leave this property blank to make text more readable.|  
   
 ## See also
- [Walkthrough: Creating an Accessible Windows-based Application](../../../../docs/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application.md)
+- [Walkthrough: Creating an Accessible Windows-based Application](../../../../docs/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application.md)

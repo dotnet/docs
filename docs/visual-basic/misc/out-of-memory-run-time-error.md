@@ -21,4 +21,4 @@ More memory was required than is available.
 5.  Reduce the number of public variables.  
   
 ## See also
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

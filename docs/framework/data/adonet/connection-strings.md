@@ -52,5 +52,5 @@ Connection strings constructed manually at run time from unvalidated user input 
  Demonstrates techniques for protecting information used to connect to a data source.
   
 ## See also
- [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

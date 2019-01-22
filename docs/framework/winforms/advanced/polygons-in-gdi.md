@@ -26,7 +26,7 @@ A polygon is a closed shape with three or more straight sides. For example, a tr
  ![Polygon](../../../../docs/framework/winforms/advanced/media/aboutgdip02-art08.gif "Aboutgdip02_art08")  
   
 ## See also
- <xref:System.Drawing.Graphics?displayProperty=nameWithType>  
- <xref:System.Drawing.Pen?displayProperty=nameWithType>  
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)
+- <xref:System.Drawing.Graphics?displayProperty=nameWithType>
+- <xref:System.Drawing.Pen?displayProperty=nameWithType>
+- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)
+- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)

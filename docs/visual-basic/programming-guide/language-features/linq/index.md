@@ -40,7 +40,7 @@ This section contains overviews, examples, and background information that will 
  Provides an example of how to return the results of a LINQ query as a specific type instead of as an anonymous type.  
   
 ## See also
- [LINQ (Language-Integrated Query)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
- [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
- [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [LINQ (Language-Integrated Query)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)
+- [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)

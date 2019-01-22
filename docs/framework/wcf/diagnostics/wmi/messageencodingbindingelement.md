@@ -34,4 +34,4 @@ class MessageEncodingBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>

@@ -26,4 +26,4 @@ You can create n-tier or multitier applications that use [!INCLUDE[vbtecdlinq](.
  For more information about n-tier applications that use ADO.NET DataSets, see [Work with datasets in n-tier applications](/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).
 
 ## See also
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

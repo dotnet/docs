@@ -14,5 +14,5 @@ Id: 153
  This event indicates that an identity certificate with the specified thumbprint could not be validated. The event lists the process name and process ID.  
   
 ## See also
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

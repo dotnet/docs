@@ -23,4 +23,4 @@ This topic lists common issues that arise with event handlers in inherited compo
 -   If the inherited method does not have a `Handles` keyword, verify that your code does not contain an extra [AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) or any additional methods that handle the same event.  
   
 ## See also
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

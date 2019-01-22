@@ -15,5 +15,5 @@ The `FileGet` method includes an argument of type `Object`. `FileGetObject` shou
 2.  Cast the `Object` argument to a more specific type.  
   
 ## See also
-   
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)

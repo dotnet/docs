@@ -88,11 +88,11 @@ IntelliSense when Option Infer is off
  [!code-vb[VbVbalrTypeInference#11](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/option-infer-statement_2.vb)]  
   
 ## See also
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)  
- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

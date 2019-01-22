@@ -59,4 +59,4 @@ class TcpConnectionPoolSettings
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings>
+- <xref:System.ServiceModel.Channels.TcpConnectionPoolSettings>

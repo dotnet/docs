@@ -35,20 +35,20 @@ The <xref:System.Windows.Forms.WebBrowser> control provides a managed wrapper fo
 |<xref:System.Windows.Forms.WebBrowser.Url%2A> property|Gets or sets the URL of the current Web page. Setting this property navigates the control to the new URL.|  
   
 ## See also
- <xref:System.Windows.Forms.WebBrowser>  
- <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs>  
- <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventHandler>  
- <xref:System.Windows.Forms.WebBrowserEncryptionLevel>  
- <xref:System.Windows.Forms.WebBrowserNavigatedEventArgs>  
- <xref:System.Windows.Forms.WebBrowserNavigatedEventHandler>  
- <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs>  
- <xref:System.Windows.Forms.WebBrowserNavigatingEventHandler>  
- <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs>  
- <xref:System.Windows.Forms.WebBrowserReadyState>  
- <xref:System.Windows.Forms.WebBrowserRefreshOption>  
- [How to: Navigate to a URL with the WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-navigate-to-a-url-with-the-webbrowser-control.md)  
- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)  
- [How to: Add Web Browser Capabilities to a Windows Forms Application](../../../../docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md)  
- [How to: Create an HTML Document Viewer in a Windows Forms Application](../../../../docs/framework/winforms/controls/how-to-create-an-html-document-viewer-in-a-windows-forms-application.md)  
- [How to: Implement Two-Way Communication Between DHTML Code and Client Application Code](../../../../docs/framework/winforms/controls/implement-two-way-com-between-dhtml-and-client.md)  
- [WebBrowser Security](../../../../docs/framework/winforms/controls/webbrowser-security.md)
+- <xref:System.Windows.Forms.WebBrowser>
+- <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs>
+- <xref:System.Windows.Forms.WebBrowserDocumentCompletedEventHandler>
+- <xref:System.Windows.Forms.WebBrowserEncryptionLevel>
+- <xref:System.Windows.Forms.WebBrowserNavigatedEventArgs>
+- <xref:System.Windows.Forms.WebBrowserNavigatedEventHandler>
+- <xref:System.Windows.Forms.WebBrowserNavigatingEventArgs>
+- <xref:System.Windows.Forms.WebBrowserNavigatingEventHandler>
+- <xref:System.Windows.Forms.WebBrowserProgressChangedEventArgs>
+- <xref:System.Windows.Forms.WebBrowserReadyState>
+- <xref:System.Windows.Forms.WebBrowserRefreshOption>
+- [How to: Navigate to a URL with the WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-navigate-to-a-url-with-the-webbrowser-control.md)
+- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)
+- [How to: Add Web Browser Capabilities to a Windows Forms Application](../../../../docs/framework/winforms/controls/how-to-add-web-browser-capabilities-to-a-windows-forms-application.md)
+- [How to: Create an HTML Document Viewer in a Windows Forms Application](../../../../docs/framework/winforms/controls/how-to-create-an-html-document-viewer-in-a-windows-forms-application.md)
+- [How to: Implement Two-Way Communication Between DHTML Code and Client Application Code](../../../../docs/framework/winforms/controls/implement-two-way-com-between-dhtml-and-client.md)
+- [WebBrowser Security](../../../../docs/framework/winforms/controls/webbrowser-security.md)

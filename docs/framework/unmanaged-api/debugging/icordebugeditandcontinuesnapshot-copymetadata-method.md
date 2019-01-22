@@ -22,4 +22,4 @@ ms.author: "ronpet"
 `CopyMetaData` is obsolete. Do not call this method.  
   
 ## See also
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

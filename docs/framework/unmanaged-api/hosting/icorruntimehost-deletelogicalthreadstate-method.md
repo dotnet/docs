@@ -37,4 +37,4 @@ HRESULT DeleteLogicalThreadState ( );
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

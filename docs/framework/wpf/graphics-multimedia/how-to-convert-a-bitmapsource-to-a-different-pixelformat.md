@@ -20,4 +20,4 @@ This example demonstrates how to convert a <xref:System.Windows.Media.Imaging.Bi
  [!code-vb[ImagingSnippetGallery_procedural_snip#PixelFormatConversion](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/PixelFormatsExample.vb#pixelformatconversion)]  
   
 ## See also
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

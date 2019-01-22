@@ -15,4 +15,4 @@ You tried to read a property at run time that is only accessible at design time.
 2.  Remove the reference to the property.  
   
 ## See also
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -78,4 +78,4 @@ The following examples show various ways to create a data object using the const
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_AutoConvert_Condensed](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_autoconvert_condensed)]  
   
 ## See also
- <xref:System.Windows.IDataObject>
+- <xref:System.Windows.IDataObject>

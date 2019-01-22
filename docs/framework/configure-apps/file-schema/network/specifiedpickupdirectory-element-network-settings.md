@@ -65,7 +65,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ```  
   
 ## See also
-- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
-- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>  
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Configuration.SmtpSpecifiedPickupDirectoryElement?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

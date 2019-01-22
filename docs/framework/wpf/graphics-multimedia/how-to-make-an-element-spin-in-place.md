@@ -17,5 +17,5 @@ This example shows how to make an element spin by using a <xref:System.Windows.M
  For the complete sample, which includes more transformation examples, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
 ## See also
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)

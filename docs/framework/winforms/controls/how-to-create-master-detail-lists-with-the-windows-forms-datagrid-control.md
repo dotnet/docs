@@ -65,6 +65,6 @@ ms.assetid: 20388c6a-94f9-4d96-be18-8c200491247f
     ```  
   
 ## See also
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)
+- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)
+- [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)

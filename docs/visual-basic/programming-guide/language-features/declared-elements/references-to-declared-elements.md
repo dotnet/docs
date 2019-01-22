@@ -188,10 +188,10 @@ Dim xDoc As xD.XmlDocument
  When two programming elements share the same name, one of them can hide, or *shadow*, the other one. A shadowed element is not available for reference; instead, when your code uses the shadowed element name, the Visual Basic compiler resolves it to the shadowing element. For a more detailed explanation with examples, see [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).  
   
 ## See also
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Public](../../../../visual-basic/language-reference/modifiers/public.md)
+- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)
+- [Public](../../../../visual-basic/language-reference/modifiers/public.md)

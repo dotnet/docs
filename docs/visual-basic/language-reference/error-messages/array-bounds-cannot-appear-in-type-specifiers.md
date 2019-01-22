@@ -28,4 +28,4 @@ Array sizes cannot be declared as part of a data type specifier.
     ```  
   
 ## See also
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

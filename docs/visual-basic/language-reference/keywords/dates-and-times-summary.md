@@ -24,5 +24,5 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Time a process.|<xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>|  
   
 ## See also
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)

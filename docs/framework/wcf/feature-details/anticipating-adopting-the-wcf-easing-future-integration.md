@@ -38,4 +38,4 @@ public interface IEcho
  Avoid using the authentication options provided by Internet Information Services (IIS). WCF clients do not support them. If a service needs to be secured, use the options provided by WCF, because these options are richer and are based on standard protocols.  
   
 ## See also
- [Anticipating Adopting the Windows Communication Foundation: Easing Future Migration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)
+- [Anticipating Adopting the Windows Communication Foundation: Easing Future Migration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-wcf-migration.md)

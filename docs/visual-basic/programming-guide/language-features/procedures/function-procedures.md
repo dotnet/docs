@@ -93,12 +93,12 @@ End Function
  [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/function-procedures_2.vb)]  
   
 ## See also
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Operator Procedures](./operator-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)  
- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)  
- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Operator Procedures](./operator-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)
+- [How to: Create a Procedure that Returns a Value](./how-to-create-a-procedure-that-returns-a-value.md)
+- [How to: Return a Value from a Procedure](./how-to-return-a-value-from-a-procedure.md)
+- [How to: Call a Procedure That Returns a Value](./how-to-call-a-procedure-that-returns-a-value.md)

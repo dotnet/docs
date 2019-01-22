@@ -37,6 +37,6 @@ This example shows one way to use the <xref:System.Windows.Controls.Primitives.T
  Comments  
   
 ## See also
- <xref:System.Windows.Controls.TextChangedEventArgs>  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- <xref:System.Windows.Controls.TextChangedEventArgs>
+- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

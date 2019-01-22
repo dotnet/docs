@@ -11,5 +11,5 @@ A feature of Windows Communication Foundation (WCF) is the ability to establish 
  For more information about sessions, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
   
 ## See also
- [Sessions, Instancing, and Concurrency](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)  
- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
+- [Sessions, Instancing, and Concurrency](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)
+- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)

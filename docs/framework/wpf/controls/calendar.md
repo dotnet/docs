@@ -46,5 +46,5 @@ Calendar controls
 |SPACEBAR or ENTER|<xref:System.Windows.Controls.CalendarMode.Year> or <xref:System.Windows.Controls.CalendarMode.Decade>|Switches <xref:System.Windows.Controls.Calendar.DisplayMode%2A> to the <xref:System.Windows.Controls.CalendarMode.Month> or <xref:System.Windows.Controls.CalendarMode.Year> represented by focused item.|  
   
 ## See also
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Controls](../../../../docs/framework/wpf/controls/index.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

@@ -69,9 +69,9 @@ C# supports *expression-bodied members*, which allow you to supply a concise exp
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
-- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)  
-- [Types](../../../csharp/programming-guide/types/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)
+- [Types](../../../csharp/programming-guide/types/index.md)
 - [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

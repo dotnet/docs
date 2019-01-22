@@ -144,10 +144,10 @@ This walkthrough show you how to apply styling to a Windows Presentation Foundat
 5.  Click the OK and Cancel buttons and view the differences.  
   
 ## See also
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

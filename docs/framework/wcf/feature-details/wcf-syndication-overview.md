@@ -16,4 +16,4 @@ Windows Communication Foundation (WCF) provides support for exposing syndication
  The WCF syndication platform supports RSS 2.0 and Atom 1.0.  
   
 ## See also
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

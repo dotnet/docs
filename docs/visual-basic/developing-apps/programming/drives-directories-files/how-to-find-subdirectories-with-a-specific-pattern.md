@@ -39,5 +39,5 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A> method retu
 -   The user lacks necessary permissions (<xref:System.UnauthorizedAccessException>).  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>  
- [How to: Find Files with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectories%2A>
+- [How to: Find Files with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-files-with-a-specific-pattern.md)

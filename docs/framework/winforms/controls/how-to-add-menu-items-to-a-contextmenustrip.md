@@ -42,4 +42,4 @@ You can add just one menu item or several items at a time to a <xref:System.Wind
     ```  
   
 ## See also
- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)
+- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)

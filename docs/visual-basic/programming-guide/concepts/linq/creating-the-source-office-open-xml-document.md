@@ -48,4 +48,4 @@ This topic shows how to create the Office Open XML WordprocessingML document tha
     >  If you are using Microsoft Word 2003, select **Word 2007 Document** in the **Save as Type** drop-down list.  
   
 ## See also
- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

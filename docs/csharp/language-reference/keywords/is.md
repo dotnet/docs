@@ -155,8 +155,8 @@ Note that if *expr* is `null`, the `is` expression still is true and assigns `nu
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
-- [typeof](../../../csharp/language-reference/keywords/typeof.md)  
-- [as](../../../csharp/language-reference/keywords/as.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
+- [typeof](../../../csharp/language-reference/keywords/typeof.md)
+- [as](../../../csharp/language-reference/keywords/as.md)
 - [Operator Keywords](../../../csharp/language-reference/keywords/operator-keywords.md)

@@ -28,4 +28,4 @@ The Windows Communication Foundation (WCF) transactions feature allows several c
  [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)  
   
 ## See also
- [Reliable Sessions Overview](../../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)
+- [Reliable Sessions Overview](../../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)

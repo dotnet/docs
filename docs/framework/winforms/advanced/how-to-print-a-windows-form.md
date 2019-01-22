@@ -32,6 +32,6 @@ As part of the development process, you typically will want to print a copy of y
  In order to run this code example, you must have permission to access the printer you use with your computer.  
   
 ## See also
- <xref:System.Drawing.Printing.PrintDocument>  
- [How to: Render Images with GDI+](../../../../docs/framework/winforms/advanced/how-to-render-images-with-gdi.md)  
- [How to: Print Graphics in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)
+- <xref:System.Drawing.Printing.PrintDocument>
+- [How to: Render Images with GDI+](../../../../docs/framework/winforms/advanced/how-to-render-images-with-gdi.md)
+- [How to: Print Graphics in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-graphics-in-windows-forms.md)

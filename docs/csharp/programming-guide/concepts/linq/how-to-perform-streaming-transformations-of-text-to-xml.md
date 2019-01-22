@@ -82,5 +82,5 @@ class Program
   
 ## See also
 
-- <xref:System.Xml.Linq.XStreamingElement>  
+- <xref:System.Xml.Linq.XStreamingElement>
 - [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

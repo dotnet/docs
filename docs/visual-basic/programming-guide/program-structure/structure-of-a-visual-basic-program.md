@@ -87,6 +87,6 @@ A Visual Basic program is built up from standard building blocks. A *solution* c
  The most common variety of this procedure is `Sub Main()`. For more information, see [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md).  
   
 ## See also
- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)  
- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
- [Visual Basic Limitations](../../../visual-basic/programming-guide/program-structure/limitations.md)
+- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
+- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+- [Visual Basic Limitations](../../../visual-basic/programming-guide/program-structure/limitations.md)

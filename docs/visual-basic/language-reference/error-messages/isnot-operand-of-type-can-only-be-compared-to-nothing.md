@@ -28,5 +28,5 @@ End If
 ```  
   
 ## See also
- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)

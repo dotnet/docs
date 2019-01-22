@@ -33,10 +33,10 @@ Dim thisObject As Object= "This is an Object"
 -   A procedure in which to put the assignment statement.  
   
 ## See also
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
+- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)

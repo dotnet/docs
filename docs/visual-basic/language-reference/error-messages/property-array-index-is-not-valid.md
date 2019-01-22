@@ -13,4 +13,4 @@ The supplied value is not valid for a property array index.
 -   Check the component's documentation to make sure your index is within the valid range for the specified property.  
   
 ## See also
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

@@ -117,5 +117,5 @@ custOrdDoc did not validate
 ```  
   
 ## See also
- <xref:System.Xml.Schema.Extensions.Validate%2A>  
- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+- <xref:System.Xml.Schema.Extensions.Validate%2A>
+- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

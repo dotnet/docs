@@ -42,15 +42,15 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list o
  The <xref:System.Windows.Forms.ListView> control also supports the visual styles and other features available on the Windows XP platform, including grouping, tile view, and insertion marks. For more information, see [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).  
   
 ## See also
- <xref:System.Windows.Forms.ListView>  
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
- [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)  
- [How to: Add Columns to the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-columns-to-the-windows-forms-listview-control.md)  
- [How to: Display Icons for the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-icons-for-the-windows-forms-listview-control.md)  
- [How to: Display Subitems in Columns with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-subitems-in-columns-with-the-windows-forms-listview-control.md)  
- [How to: Select an Item in the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-select-an-item-in-the-windows-forms-listview-control.md)  
- [How to: Group Items in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-group-items-in-a-windows-forms-listview-control.md)  
- [How to: Display an Insertion Mark in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md)  
- [How to: Add Search Capabilities to a ListView Control](../../../../docs/framework/winforms/controls/how-to-add-search-capabilities-to-a-listview-control.md)  
- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](../../../../docs/framework/winforms/controls/add-custom-information-to-a-treeview-or-listview-control-wf.md)  
- [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)
+- <xref:System.Windows.Forms.ListView>
+- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
+- [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)
+- [How to: Add Columns to the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-columns-to-the-windows-forms-listview-control.md)
+- [How to: Display Icons for the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-icons-for-the-windows-forms-listview-control.md)
+- [How to: Display Subitems in Columns with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-subitems-in-columns-with-the-windows-forms-listview-control.md)
+- [How to: Select an Item in the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-select-an-item-in-the-windows-forms-listview-control.md)
+- [How to: Group Items in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-group-items-in-a-windows-forms-listview-control.md)
+- [How to: Display an Insertion Mark in a Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md)
+- [How to: Add Search Capabilities to a ListView Control](../../../../docs/framework/winforms/controls/how-to-add-search-capabilities-to-a-listview-control.md)
+- [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](../../../../docs/framework/winforms/controls/add-custom-information-to-a-treeview-or-listview-control-wf.md)
+- [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)

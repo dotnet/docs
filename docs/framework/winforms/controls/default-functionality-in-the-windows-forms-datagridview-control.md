@@ -41,5 +41,5 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides user
 -   Automatically sorts the rows based on the underlying data when the user clicks a column header.  
   
 ## See also
- <xref:System.Windows.Forms.DataGridView>  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- <xref:System.Windows.Forms.DataGridView>
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)

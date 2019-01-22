@@ -50,7 +50,7 @@ Class inheritance
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [class](../../../csharp/language-reference/keywords/class.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [class](../../../csharp/language-reference/keywords/class.md)
 - [struct](../../../csharp/language-reference/keywords/struct.md)

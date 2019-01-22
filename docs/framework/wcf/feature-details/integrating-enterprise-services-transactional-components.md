@@ -87,5 +87,5 @@ static void Main()
 ```  
   
 ## See also
- [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [Integrating with COM Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)
+- [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+- [Integrating with COM Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications.md)

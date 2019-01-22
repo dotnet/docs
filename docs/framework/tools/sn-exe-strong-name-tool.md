@@ -119,7 +119,7 @@ sn -d MyContainer
 ```  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

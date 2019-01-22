@@ -76,4 +76,4 @@ Simple.Add(int a, int b)
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
 ## See also
- [ICorProfilerInfo6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo6-interface.md)
+- [ICorProfilerInfo6 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo6-interface.md)

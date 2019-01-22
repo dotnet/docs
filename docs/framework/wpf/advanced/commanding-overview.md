@@ -178,12 +178,12 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
  For an example of creating a custom <xref:System.Windows.Input.RoutedCommand>, see [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand).  
   
 ## See also
- <xref:System.Windows.Input.RoutedCommand>  
- <xref:System.Windows.Input.CommandBinding>  
- <xref:System.Windows.Input.InputBinding>  
- <xref:System.Windows.Input.CommandManager>  
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)  
- [How to: Add a Command to a MenuItem](https://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)  
- [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand)
+- <xref:System.Windows.Input.RoutedCommand>
+- <xref:System.Windows.Input.CommandBinding>
+- <xref:System.Windows.Input.InputBinding>
+- <xref:System.Windows.Input.CommandManager>
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Implement ICommandSource](../../../../docs/framework/wpf/advanced/how-to-implement-icommandsource.md)
+- [How to: Add a Command to a MenuItem](https://msdn.microsoft.com/library/013d68a0-5373-4a68-bd91-5de574307370)
+- [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand)

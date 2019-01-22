@@ -59,4 +59,4 @@ class ServiceSecurityAuditBehavior : Behavior
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>

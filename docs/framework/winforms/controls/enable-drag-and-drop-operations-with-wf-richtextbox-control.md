@@ -159,7 +159,7 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
      When you release the mouse button, the selected text is dropped (that is, the <xref:System.Windows.Forms.RichTextBox.DragDrop> event is raised) and is inserted within the <xref:System.Windows.Forms.RichTextBox> control.  
   
 ## See also
- <xref:System.Windows.Forms.RichTextBox>  
- [How to: Perform Drag-and-Drop Operations Between Applications](../../../../docs/framework/winforms/advanced/how-to-perform-drag-and-drop-operations-between-applications.md)  
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- <xref:System.Windows.Forms.RichTextBox>
+- [How to: Perform Drag-and-Drop Operations Between Applications](../../../../docs/framework/winforms/advanced/how-to-perform-drag-and-drop-operations-between-applications.md)
+- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

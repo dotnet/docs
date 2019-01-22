@@ -20,4 +20,4 @@ If your service application will not install correctly, check to make sure that 
  You should also check to determine whether you have another service with the same name already installed. Service names must be unique for installation to succeed.  
   
 ## See also
- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)

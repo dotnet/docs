@@ -34,4 +34,4 @@ void __stdcall SetFakeActiveWindow(
  **.NET Framework Version:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
- [WPF Unmanaged API Reference](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)
+- [WPF Unmanaged API Reference](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)

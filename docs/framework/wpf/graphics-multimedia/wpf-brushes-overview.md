@@ -155,13 +155,13 @@ A Rectangle painted using a VisualBrush
  For more information on why <xref:System.Windows.Media.VisualBrush> objects cannot be frozen, see the <xref:System.Windows.Media.VisualBrush> type page.  
   
 ## See also
- <xref:System.Windows.Media.Brush>  
- <xref:System.Windows.Media.Brushes>  
- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)  
- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973)  
- [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005)  
- [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)  
- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)
+- <xref:System.Windows.Media.Brush>
+- <xref:System.Windows.Media.Brushes>
+- [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
+- [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973)
+- [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005)
+- [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/brushes-how-to-topics.md)
+- [Other Performance Recommendations](../../../../docs/framework/wpf/advanced/optimizing-performance-other-recommendations.md)

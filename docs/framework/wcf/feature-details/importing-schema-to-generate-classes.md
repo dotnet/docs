@@ -174,12 +174,12 @@ To generate classes from schemas that are usable with Windows Communication Foun
 -   <xref:System.Runtime.Serialization.ImportOptions.DataContractSurrogate%2A> property. An <xref:System.Runtime.Serialization.IDataContractSurrogate> implementation can be specified with this property. The <xref:System.Runtime.Serialization.IDataContractSurrogate> customizes the import process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md). By default, no surrogate is used.  
   
 ## See also
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- <xref:System.Runtime.Serialization.XsdDataContractExporter>  
- <xref:System.Runtime.Serialization.ImportOptions>  
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  
- [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)  
- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)  
- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- <xref:System.Runtime.Serialization.XsdDataContractExporter>
+- <xref:System.Runtime.Serialization.ImportOptions>
+- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)
+- [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md)
+- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
+- [Exporting Schemas from Classes](../../../../docs/framework/wcf/feature-details/exporting-schemas-from-classes.md)
+- [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)

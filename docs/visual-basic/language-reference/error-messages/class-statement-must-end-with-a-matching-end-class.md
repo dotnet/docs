@@ -20,5 +20,5 @@ ms.assetid: 583f3029-bc3a-4e06-866f-92dbecc46f19
 -   Conclude the `Class` block with a matching `End Class`.  
   
 ## See also
- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [End \<keyword> Statement](../../../visual-basic/language-reference/statements/end-keyword-statement.md)
+- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)

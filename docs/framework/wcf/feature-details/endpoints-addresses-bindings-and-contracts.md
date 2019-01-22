@@ -82,5 +82,5 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
  Describes how to detect errors in service implementations and configurations without hosting the service using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 ## See also
- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)  
- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Configuring Services](../../../../docs/framework/wcf/configuring-services.md)
+- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)

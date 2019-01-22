@@ -25,4 +25,4 @@ Provides a property and a method for accessing the computer's serial ports.
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See also
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

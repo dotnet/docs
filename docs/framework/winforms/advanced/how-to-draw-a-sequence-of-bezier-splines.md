@@ -26,6 +26,6 @@ You can use the <xref:System.Drawing.Graphics.DrawBeziers%2A> method of the <xre
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
- [Bézier Splines in GDI+](../../../../docs/framework/winforms/advanced/bezier-splines-in-gdi.md)  
- [Constructing and Drawing Curves](../../../../docs/framework/winforms/advanced/constructing-and-drawing-curves.md)
+- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
+- [Bézier Splines in GDI+](../../../../docs/framework/winforms/advanced/bezier-splines-in-gdi.md)
+- [Constructing and Drawing Curves](../../../../docs/framework/winforms/advanced/constructing-and-drawing-curves.md)

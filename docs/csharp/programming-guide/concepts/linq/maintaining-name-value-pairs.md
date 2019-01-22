@@ -114,6 +114,6 @@ Console.WriteLine(root);
   
 ## See also
 
-- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>  
-- <xref:System.Xml.Linq.XElement.SetElementValue%2A>  
+- <xref:System.Xml.Linq.XElement.SetAttributeValue%2A>
+- <xref:System.Xml.Linq.XElement.SetElementValue%2A>
 - [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

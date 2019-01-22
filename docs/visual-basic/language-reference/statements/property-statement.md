@@ -202,9 +202,9 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
  [!code-vb[VbVbalrStatements#51](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/property-statement_4.vb)]  
   
 ## See also
- [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
- [Default](../../../visual-basic/language-reference/modifiers/default.md)
+- [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
+- [Default](../../../visual-basic/language-reference/modifiers/default.md)

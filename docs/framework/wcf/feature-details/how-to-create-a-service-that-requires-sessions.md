@@ -33,6 +33,6 @@ Sessions create a shared state between two or more endpoints that enables useful
  [!code-xml[SCA.Session#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/hostapplication.exe.config#2)]     
   
 ## See also
- <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>  
- <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType>  
- <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>
+- <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType>
+- <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType>

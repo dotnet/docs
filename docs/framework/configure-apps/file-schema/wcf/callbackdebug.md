@@ -40,5 +40,5 @@ Specifies service debugging for a Windows Communication Foundation (WCF) callbac
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.CallbackDebugElement>  
- <xref:System.ServiceModel.Description.CallbackDebugBehavior>
+- <xref:System.ServiceModel.Configuration.CallbackDebugElement>
+- <xref:System.ServiceModel.Description.CallbackDebugBehavior>

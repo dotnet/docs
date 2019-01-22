@@ -46,9 +46,9 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
   
 ## See also
 
-- <xref:System.Xml.Serialization.XmlSchemaImporter>  
-- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
-- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
-- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)  
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)
+- [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)
 - [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)

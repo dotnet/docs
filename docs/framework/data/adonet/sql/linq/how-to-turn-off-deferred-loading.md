@@ -19,5 +19,5 @@ You can turn off deferred loading by setting <xref:System.Data.Linq.DataContext.
  [!code-vb[DLinqQuerying#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#3)]  
   
 ## See also
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

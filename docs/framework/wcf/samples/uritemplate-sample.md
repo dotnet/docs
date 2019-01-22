@@ -28,5 +28,5 @@ The <xref:System.UriTemplate> class provides methods for working with sets of UR
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\UriTemplate`  
   
 ## See also
- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
- [UriTemplate Table Dispatcher](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)
+- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
+- [UriTemplate Table Dispatcher](../../../../docs/framework/wcf/samples/uritemplate-table-dispatcher-sample.md)

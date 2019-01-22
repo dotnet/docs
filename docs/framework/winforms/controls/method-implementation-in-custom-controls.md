@@ -70,5 +70,5 @@ public void Spin(Widget driver)
 ```  
   
 ## See also
- [Events](../../../../docs/standard/events/index.md)  
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)
+- [Events](../../../../docs/standard/events/index.md)
+- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)

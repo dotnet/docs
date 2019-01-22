@@ -11,8 +11,8 @@ An attempt has been made to copy or move a file, but the specified source direct
 -   Make sure you supplied the correct source and target directories.  
   
 ## See also
- [My.Computer.FileSystem.MoveFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile%2A)  
- [My.Computer.FileSystem.CopyFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A)  
- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
- [How to: Move a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)  
- [How to: Copy Files with a Specific Pattern to a Directory](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md)
+- [My.Computer.FileSystem.MoveFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.MoveFile%2A)
+- [My.Computer.FileSystem.CopyFile](xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A)
+- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Move a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-move-a-file.md)
+- [How to: Copy Files with a Specific Pattern to a Directory](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md)

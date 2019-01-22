@@ -26,4 +26,4 @@ This example shows how to change the dimensions of an object when the mouse poin
  [!code-vb[mouseMoveWithPointer#MouseMovePointerGetPosition](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/mouseMoveWithPointer/VisualBasic/Window1.xaml.vb#mousemovepointergetposition)]  
   
 ## See also
- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
+- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)

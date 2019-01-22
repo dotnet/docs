@@ -47,6 +47,6 @@ The reflection-only load context allows you to examine assemblies compiled for o
  [!code-vb[CustomAttributeData#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CustomAttributeData/VB/source.vb#1)]  
   
 ## See also
- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>  
- <xref:System.Reflection.Assembly.ReflectionOnly%2A>  
- <xref:System.Reflection.CustomAttributeData>
+- <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>
+- <xref:System.Reflection.Assembly.ReflectionOnly%2A>
+- <xref:System.Reflection.CustomAttributeData>

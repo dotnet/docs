@@ -13,8 +13,8 @@ The `TextFieldParser` is unable to read from the file because the `Delimiters` p
 -   Supply a valid value for `Delimiters`.  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>  
- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters>  
- [How to: Read From Comma-Delimited Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)  
- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)  
- [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.SetDelimiters%2A>
+- <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.Delimiters>
+- [How to: Read From Comma-Delimited Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-comma-delimited-text-files.md)
+- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+- [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

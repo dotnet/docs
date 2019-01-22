@@ -33,9 +33,9 @@ workTable.Columns.Add("SalesTax", typeof(Double), "Total * 0.086");
  Expressions can reference other expression columns; however, a circular reference, in which two expressions reference each other, will generate an exception. For rules about writing expressions, see the <xref:System.Data.DataColumn.Expression%2A> property of the **DataColumn** class.  
   
 ## See also
- <xref:System.Data.DataColumn>  
- <xref:System.Data.DataSet>  
- <xref:System.Data.DataTable>  
- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)  
- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- <xref:System.Data.DataColumn>
+- <xref:System.Data.DataSet>
+- <xref:System.Data.DataTable>
+- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)
+- [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

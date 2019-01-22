@@ -142,6 +142,6 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
  To test your code, press F5 to compile the application. Click **Get Entries**, select an entry, and then click **Display**. The entry appears in the `DisplayEntry`<xref:System.Windows.Forms.TextBox>. Click **Edit Entry**. The entry appears in the `Entry`<xref:System.Windows.Forms.TextBox>. Edit the entry in the `Entry`<xref:System.Windows.Forms.TextBox> and click **Submit Edit**. Open the `MyDiary.txt` file to confirm your correction. Now select an entry and click **Delete Entry**. When the <xref:System.Windows.Forms.MessageBox> requests confirmation, click **OK**. Close the application and open `MyDiary.txt` to confirm the deletion.  
   
 ## See also
- <xref:System.IO.StreamReader>  
- <xref:System.IO.StreamWriter>  
- [Walkthroughs](../../../../visual-basic/walkthroughs.md)
+- <xref:System.IO.StreamReader>
+- <xref:System.IO.StreamWriter>
+- [Walkthroughs](../../../../visual-basic/walkthroughs.md)

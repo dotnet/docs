@@ -46,5 +46,5 @@ HRESULT MarkToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)  
- [IHostFilter Interface](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-interface.md)
+- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [IHostFilter Interface](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-interface.md)

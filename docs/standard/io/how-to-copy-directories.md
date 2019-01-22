@@ -28,9 +28,9 @@ This example copies subdirectories by setting the `copySubDirs` of the `Director
   
 ## See also
 
-- <xref:System.IO.FileInfo>  
-- <xref:System.IO.DirectoryInfo>  
-- <xref:System.IO.FileStream>  
-- [File and stream I/O](../../../docs/standard/io/index.md)  
-- [Common I/O tasks](../../../docs/standard/io/common-i-o-tasks.md)  
+- <xref:System.IO.FileInfo>
+- <xref:System.IO.DirectoryInfo>
+- <xref:System.IO.FileStream>
+- [File and stream I/O](../../../docs/standard/io/index.md)
+- [Common I/O tasks](../../../docs/standard/io/common-i-o-tasks.md)
 - [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

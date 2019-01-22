@@ -67,5 +67,5 @@ class XmlDictionaryReaderQuotas
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.Xml.XmlDictionaryReaderQuotas>  
- <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>
+- <xref:System.Xml.XmlDictionaryReaderQuotas>
+- <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>

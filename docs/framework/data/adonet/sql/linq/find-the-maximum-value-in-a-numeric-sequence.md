@@ -66,5 +66,5 @@ Use the <xref:System.Linq.Enumerable.Max%2A> operator to find the highest value 
  `Carnarvon Tigers`  
   
 ## See also
- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

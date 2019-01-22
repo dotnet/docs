@@ -42,9 +42,9 @@ Oftentimes when working with a large list of items in a <xref:System.Windows.For
  [!code-vb[System.Windows.Forms.ListViewFindItems#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewFindItems/VB/form1.vb#2)]  
   
 ## See also
- <xref:System.Windows.Forms.ListView>  
- <xref:System.Windows.Forms.ListView.FindItemWithText%2A>  
- <xref:System.Windows.Forms.ListView.FindNearestItem%2A>  
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)  
- [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)
+- <xref:System.Windows.Forms.ListView>
+- <xref:System.Windows.Forms.ListView.FindItemWithText%2A>
+- <xref:System.Windows.Forms.ListView.FindNearestItem%2A>
+- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
+- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)
+- [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)

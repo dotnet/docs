@@ -17,9 +17,9 @@ The <xref:System.Windows.Forms.PrintDialog> component is the standard Windows pr
      Once the component is shown, users will interact with it, setting the properties of the print job. These are saved in the <!--zz <xref:System.Drawing.Printing.PrinterSetting>--> `PrinterSetting` class (and the <xref:System.Drawing.Printing.PageSettings> class, if the user accesses the [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md) through the <xref:System.Windows.Forms.PrintDialog> component) associated with that print job. You can then make calls to the properties they set to determine the specifics of the print job.  
   
 ## See also
- [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)  
- [How to: Capture User Input from a PrintDialog at Run Time](../../../../docs/framework/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md)  
- [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)  
- [PrintDialog Component](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md)  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)
+- [How to: Create Standard Windows Forms Print Jobs](../../../../docs/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md)
+- [How to: Capture User Input from a PrintDialog at Run Time](../../../../docs/framework/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md)
+- [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)
+- [PrintDialog Component](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md)
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)

@@ -50,5 +50,5 @@ While you can set options related to printing at design time, you will sometimes
 4.  The user's printing choices from the dialog will be copied to the <xref:System.Drawing.Printing.PrinterSettings> property of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
 ## See also
- [How to: Print a Multi-Page Text File in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [How to: Print a Multi-Page Text File in Windows Forms](../../../../docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md)
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

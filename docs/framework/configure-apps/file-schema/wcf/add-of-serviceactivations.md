@@ -62,6 +62,6 @@ A configuration element that allows you to define virtual service activation set
  Configuration-based activation supports activation over both http and non-http protocol. It requires extensions in the relatativeAddress, i.e. .svc, .xoml or .xamlx. You can map your own extensions to the know buildProviders, which will then enable you to activate service over any extension. Upon conflict, the `<serviceActivations>` section overrides .svc registrations.  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ServiceActivationElement>  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- <xref:System.ServiceModel.Configuration.ServiceActivationElement>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>

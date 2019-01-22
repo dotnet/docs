@@ -71,14 +71,14 @@ This topic shows how to change the cryptographic provider used to provide an X.5
      [!code-vb[c_CustomX509Token#7](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customx509token/vb/source.vb#7)]  
   
 ## See also
- <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>  
- <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>  
- <xref:System.IdentityModel.Tokens.SecurityKey>  
- <xref:System.Security.Cryptography.AsymmetricAlgorithm>  
- <xref:System.Security.Cryptography.HashAlgorithm>  
- <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>  
- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)  
- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)  
- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)  
- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)  
- [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)
+- <xref:System.IdentityModel.Tokens.X509AsymmetricSecurityKey>
+- <xref:System.IdentityModel.Tokens.AsymmetricSecurityKey>
+- <xref:System.IdentityModel.Tokens.SecurityKey>
+- <xref:System.Security.Cryptography.AsymmetricAlgorithm>
+- <xref:System.Security.Cryptography.HashAlgorithm>
+- <xref:System.Security.Cryptography.AsymmetricSignatureFormatter>
+- [Walkthrough: Creating Custom Client and Service Credentials](../../../../docs/framework/wcf/extending/walkthrough-creating-custom-client-and-service-credentials.md)
+- [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
+- [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
+- [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)
+- [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)

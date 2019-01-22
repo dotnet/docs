@@ -76,7 +76,7 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
     ```  
   
 ## See also
- [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)  
- [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+- [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)
+- [PrintPreviewDialog Control](../../../../docs/framework/winforms/controls/printpreviewdialog-control-windows-forms.md)
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [Windows Forms](../../../../docs/framework/winforms/index.md)

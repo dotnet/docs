@@ -44,9 +44,9 @@ The [abstract](../../../csharp/language-reference/keywords/abstract.md) keyword 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)
 - [How to: Define Abstract Properties](../../../csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties.md)

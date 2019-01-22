@@ -22,6 +22,6 @@ The topics in this section describe how to use [!INCLUDE[TLA#tla_winclient](../.
  [Use Special Characters in XAML](../../../../docs/framework/wpf/advanced/how-to-use-special-characters-in-xaml.md)  
   
 ## See also
- <xref:System.Windows.Documents.Typography>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
+- <xref:System.Windows.Documents.Typography>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)

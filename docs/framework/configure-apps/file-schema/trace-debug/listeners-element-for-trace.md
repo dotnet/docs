@@ -81,5 +81,5 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
 ```  
   
 ## See also
- <xref:System.Diagnostics.TraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- <xref:System.Diagnostics.TraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

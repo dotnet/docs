@@ -166,10 +166,10 @@ End Enum
  [!code-vb[VbEnumsTask#51](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/enum-statement_7.vb)]  
   
 ## See also
- <xref:System.Enum>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- <xref:System.Enum>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)

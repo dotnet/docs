@@ -25,7 +25,7 @@ Transforms are used to rotate, scale, translate, or skew <xref:System.Windows.Fr
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)  
   
 ## See also
- <xref:System.Windows.Media.Transform>  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- <xref:System.Windows.Media.Transform>
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)

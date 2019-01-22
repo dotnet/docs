@@ -30,4 +30,4 @@ The following example shows how to set the <xref:System.Windows.Documents.TextEl
  [!code-vb[TextElementSnippets#_TextElement_Typog](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_typog)]  
   
 ## See also
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

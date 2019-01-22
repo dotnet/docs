@@ -32,4 +32,4 @@ Contention events are raised whenever there is contention for <xref:System.Threa
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR.|  
   
 ## See also
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

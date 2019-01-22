@@ -33,7 +33,7 @@ This example shows how to create a view of a data collection in [!INCLUDE[TLA#tl
  [!code-xaml[CollectionViewSource#Attribute](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionViewSource/CS/window1.xaml#attribute)]  
   
 ## See also
- <xref:System.Windows.Data.CollectionViewSource>  
- [Get the Default View of a Data Collection](../../../../docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- <xref:System.Windows.Data.CollectionViewSource>
+- [Get the Default View of a Data Collection](../../../../docs/framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

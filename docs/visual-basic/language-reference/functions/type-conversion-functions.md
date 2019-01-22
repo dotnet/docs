@@ -280,16 +280,16 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
  [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_18.vb)]  
   
 ## See also
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- <xref:Microsoft.VisualBasic.Strings.Chr%2A>  
- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Int%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>  
- <xref:Microsoft.VisualBasic.Strings.Format%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Str%2A>  
- <xref:Microsoft.VisualBasic.Conversion.Val%2A>  
- [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)  
- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- <xref:Microsoft.VisualBasic.Strings.Chr%2A>
+- <xref:Microsoft.VisualBasic.Strings.ChrW%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Int%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Fix%2A>
+- <xref:Microsoft.VisualBasic.Strings.Format%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Oct%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Str%2A>
+- <xref:Microsoft.VisualBasic.Conversion.Val%2A>
+- [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)
+- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

@@ -30,5 +30,5 @@ This topic summarizes the differences in the Windows Communication Foundation (W
  MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transactional reads. This allows an application that is reading from a queue to be hosted on a computer that is different from the computer on which the queue is hosted. This ensures the ability to have a farm of services reading from a central queue, which increases the overall throughput of the system. It also ensures that if a failure occurs when reading and processing the message, the transaction rolls back and the message remains in the queue for later processing.  
   
 ## See also
- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
+- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)
+- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)

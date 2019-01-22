@@ -26,4 +26,4 @@ Windows Communication Foundation (WCF) enables applications to communicate wheth
  Once you are familiar with developing service contracts, you can also read [Introduction to Extensibility](../../../docs/framework/wcf/introduction-to-extensibility.md). If you have problems with your service, check [WCF Troubleshooting Quickstart](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md) to see whether others have the same or similar problems.  
   
 ## See also
- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)
+- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)

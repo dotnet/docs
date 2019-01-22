@@ -56,5 +56,5 @@ Specifies that a variable or property can be read but not written.
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## See also
- [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

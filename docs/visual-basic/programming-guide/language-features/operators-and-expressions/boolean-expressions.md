@@ -61,10 +61,10 @@ A *Boolean expression* is an expression that evaluates to a value of the [Boolea
  You can use parentheses to control the order of evaluation of Boolean expressions. Expressions enclosed by parentheses evaluate first. For multiple levels of nesting, precedence is granted to the most deeply nested expressions. Within parentheses, evaluation proceeds according to the rules of operator precedence. For more information, see [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md).  
   
 ## See also
- [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)  
- [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
- [Statements](../../../../visual-basic/programming-guide/language-features/statements.md)  
- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)  
- [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)
+- [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)
+- [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)
+- [Statements](../../../../visual-basic/programming-guide/language-features/statements.md)
+- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)
+- [Efficient Combination of Operators](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/efficient-combination-of-operators.md)
+- [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md)

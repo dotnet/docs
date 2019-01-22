@@ -63,4 +63,4 @@ HRESULT StrongNameCompareAssemblies (
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
 ## See also
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

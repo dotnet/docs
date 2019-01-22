@@ -13,5 +13,5 @@ A call to one of the memory-information properties of the `My.Computer.Info` obj
 -   Add a `Try...Catch` block around the call to the memory-information property of the `My.Computer.Info` object.  
   
 ## See also
- [My.Computer.Info](xref:Microsoft.VisualBasic.Devices.ComputerInfo)  
- [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [My.Computer.Info](xref:Microsoft.VisualBasic.Devices.ComputerInfo)
+- [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

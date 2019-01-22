@@ -34,5 +34,5 @@ The Peer-to-Peer Collaboration Infrastructure is a simplified implementation of 
  In an Active Directory domain, domain controllers provide authentication services using Kerberos. In a serverless peer environment, the peers must provide their own authentication. For Peer-to-Peer Networking, any node can act as a CA, removing the requirement of a root certificate in each peer's trusted root store. Authentication is provided using self-signed certificates, formatted as X.509 certificates. These are certificates that are created by each peer, which generates the public key/private key pair and the certificate that is signed using the private key. The self-signed certificate is used for authentication and to provide information about the peer entity. Like X.509 authentication, peer networking authentication relies upon a chain of certificates tracing back to a public key that is trusted.  
   
 ## See also
-- <xref:System.Net.PeerToPeer.Collaboration>  
+- <xref:System.Net.PeerToPeer.Collaboration>
 - [About the System.Net.PeerToPeer.Collaboration Namespace](../../../docs/framework/network-programming/about-the-system-net-peertopeer-collaboration-namespace.md)

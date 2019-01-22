@@ -55,10 +55,10 @@ Nearly every production-quality app has to use resources. A resource is any none
 -   The <xref:System.Resources.ResXResourceSet> class, which enables you to retrieve all the items in an XML resource file into memory.  
   
 ## See also
- <xref:System.Globalization.CultureInfo>  
- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>  
- [Application Essentials](../../../docs/standard/application-essentials.md)  
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)  
- [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)  
- [Retrieving Resources](../../../docs/framework/resources/retrieving-resources-in-desktop-apps.md)
+- <xref:System.Globalization.CultureInfo>
+- <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>
+- [Application Essentials](../../../docs/standard/application-essentials.md)
+- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
+- [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
+- [Retrieving Resources](../../../docs/framework/resources/retrieving-resources-in-desktop-apps.md)

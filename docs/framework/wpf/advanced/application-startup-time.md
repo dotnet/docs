@@ -117,10 +117,10 @@ The amount of time that is required for a WPF application to start can vary grea
  Instead of using XAML to set the <xref:System.Windows.FrameworkElement.DataContext%2A> declaratively for the main window, consider setting it programmatically in the <xref:System.Windows.Application.OnActivated%2A> method.  
   
 ## See also
- <xref:System.Windows.SplashScreen>  
- <xref:System.AppDomain>  
- <xref:System.Resources.NeutralResourcesLanguageAttribute>  
- <xref:System.Resources.ResourceManager>  
- [Add a Splash Screen to a WPF Application](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)  
- [Ngen.exe (Native Image Generator)](../../../../docs/framework/tools/ngen-exe-native-image-generator.md)  
- [\<generatePublisherEvidence> Element](../../../../docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md)
+- <xref:System.Windows.SplashScreen>
+- <xref:System.AppDomain>
+- <xref:System.Resources.NeutralResourcesLanguageAttribute>
+- <xref:System.Resources.ResourceManager>
+- [Add a Splash Screen to a WPF Application](../../../../docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md)
+- [Ngen.exe (Native Image Generator)](../../../../docs/framework/tools/ngen-exe-native-image-generator.md)
+- [\<generatePublisherEvidence> Element](../../../../docs/framework/configure-apps/file-schema/runtime/generatepublisherevidence-element.md)

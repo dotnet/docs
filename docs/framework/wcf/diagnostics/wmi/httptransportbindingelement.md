@@ -123,4 +123,4 @@ class HttpTransportBindingElement : TransportBindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
+- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>

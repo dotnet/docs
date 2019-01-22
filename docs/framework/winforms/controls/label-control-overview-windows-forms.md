@@ -18,6 +18,6 @@ Windows Forms <xref:System.Windows.Forms.Label> controls are used to display tex
  The caption displayed in the label is contained in the <xref:System.Windows.Forms.Label.Text%2A> property. The <xref:System.Windows.Forms.Label.TextAlign%2A> property allows you to set the alignment of the text within the label. For more information, see [How to: Set the Text Displayed by a Windows Forms Control](../../../../docs/framework/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md).  
   
 ## See also
- <xref:System.Windows.Forms.Label>  
- [How to: Size a Windows Forms Label Control to Fit Its Contents](../../../../docs/framework/winforms/controls/how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)  
- [How to: Create Access Keys with Windows Forms Label Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-with-windows-forms-label-controls.md)
+- <xref:System.Windows.Forms.Label>
+- [How to: Size a Windows Forms Label Control to Fit Its Contents](../../../../docs/framework/winforms/controls/how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)
+- [How to: Create Access Keys with Windows Forms Label Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-with-windows-forms-label-controls.md)

@@ -17,5 +17,5 @@ ms.assetid: 712d689b-fada-4cbb-bcdb-d65a3ef83b4c
  When a query request that is sent to the data service includes a `$top` or `$skip` system query option and does not include the `$orderby` system query option, the returned feed is sorted by the key properties, in ascending order. This is because ordering is required to ensure the correct paging of results. To do this, the data service adds an ordering expression to the query. This behavior also occurs when server-driven paging is enabled in the data service. For more information, see [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md).To control the ordering of the returned feed, you should include `$orderby` in the query URI.  
   
 ## See also
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

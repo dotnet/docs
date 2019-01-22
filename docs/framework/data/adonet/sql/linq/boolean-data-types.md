@@ -18,4 +18,4 @@ Boolean operators work as expected in the common language runtime (CLR), except 
 |[Not Operator](~/docs/visual-basic/language-reference/operators/not-operator.md)|[\! Operator](~/docs/csharp/language-reference/operators/logical-negation-operator.md)|  
   
 ## See also
- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

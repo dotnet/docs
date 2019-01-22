@@ -29,4 +29,4 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
 ```  
   
 ## See also
- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)

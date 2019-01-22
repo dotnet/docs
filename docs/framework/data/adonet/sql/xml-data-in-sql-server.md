@@ -14,5 +14,5 @@ SQL Server exposes the functionality of SQLXML inside the .NET Framework. Develo
  Demonstrates how to pass XML data as a parameter to a command.  
   
 ## See also
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -37,4 +37,4 @@ An aggregate is a language construct that condenses a collection into a scalar a
  Expressions used in the GROUP BY clause are evaluated by using the same name-resolution scope that would be visible to the WHERE clause expression.  
   
 ## See also
- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)
+- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)

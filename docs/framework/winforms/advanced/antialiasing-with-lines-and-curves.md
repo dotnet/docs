@@ -39,6 +39,6 @@ When you use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]
  [!code-vb[LinesCurvesAndShapes#81](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#81)]  
   
 ## See also
- <xref:System.Drawing.Drawing2D.SmoothingMode?displayProperty=nameWithType>  
- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)  
- [How to: Use Antialiasing with Text](../../../../docs/framework/winforms/advanced/how-to-use-antialiasing-with-text.md)
+- <xref:System.Drawing.Drawing2D.SmoothingMode?displayProperty=nameWithType>
+- [Lines, Curves, and Shapes](../../../../docs/framework/winforms/advanced/lines-curves-and-shapes.md)
+- [How to: Use Antialiasing with Text](../../../../docs/framework/winforms/advanced/how-to-use-antialiasing-with-text.md)

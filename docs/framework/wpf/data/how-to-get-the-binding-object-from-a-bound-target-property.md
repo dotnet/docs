@@ -25,5 +25,5 @@ This example shows how to obtain the binding object from a data-bound target pro
 >  If your binding is a <xref:System.Windows.Data.MultiBinding>, use <xref:System.Windows.Data.BindingOperations>.<xref:System.Windows.Data.BindingOperations.GetMultiBinding%2A>. If it is a <xref:System.Windows.Data.PriorityBinding>, use <xref:System.Windows.Data.BindingOperations>.<xref:System.Windows.Data.BindingOperations.GetPriorityBinding%2A>. If you are uncertain whether the target property is bound using a <xref:System.Windows.Data.Binding>, a <xref:System.Windows.Data.MultiBinding>, or a <xref:System.Windows.Data.PriorityBinding>, you can use <xref:System.Windows.Data.BindingOperations>.<xref:System.Windows.Data.BindingOperations.GetBindingBase%2A>.  
   
 ## See also
- [Create a Binding in Code](../../../../docs/framework/wpf/data/how-to-create-a-binding-in-code.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Create a Binding in Code](../../../../docs/framework/wpf/data/how-to-create-a-binding-in-code.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

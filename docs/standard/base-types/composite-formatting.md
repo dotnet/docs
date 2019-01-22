@@ -155,15 +155,15 @@ The composite formatting feature is supported by methods such as the following:
   
 ## See also
 
-- <xref:System.Console.WriteLine%2A>  
-- <xref:System.String.Format%2A?displayProperty=nameWithType>  
-- [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)  
-- [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
-- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)  
-- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
-- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
-- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)  
-- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- <xref:System.Console.WriteLine%2A>
+- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)
+- [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)
+- [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)
+- [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)
+- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+- [Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)
+- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)
 - [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)

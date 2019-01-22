@@ -36,5 +36,5 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
  A WAS-hosted application cannot be activated based on messages in a system queue, such as the system-wide dead-letter queue, or sub-queues, such as poison sub-queues. This is a limitation for this version of the product.  
   
 ## See also
- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)  
- [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)
+- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)
+- [Service Endpoints and Queue Addressing](../../../../docs/framework/wcf/feature-details/service-endpoints-and-queue-addressing.md)

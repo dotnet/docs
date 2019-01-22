@@ -18,7 +18,7 @@ The <xref:System.Windows.Forms.NumericUpDown> control looks like a combination o
  The numbers displayed in the control's text box can be in a variety of formats, including hexadecimal. For more information, see [How to: Set the Format for the Windows Forms NumericUpDown Control](../../../../docs/framework/winforms/controls/how-to-set-the-format-for-the-windows-forms-numericupdown-control.md). The key properties of the control are <xref:System.Windows.Forms.NumericUpDown.Value%2A>, <xref:System.Windows.Forms.NumericUpDown.Maximum%2A> (default value 100), <xref:System.Windows.Forms.NumericUpDown.Minimum%2A> (default value 0), and <xref:System.Windows.Forms.NumericUpDown.Increment%2A> (default value 1). The <xref:System.Windows.Forms.NumericUpDown.Value%2A> property sets the current number selected in the control. The <xref:System.Windows.Forms.NumericUpDown.Increment%2A> property sets the amount that the number is adjusted by when the user clicks an up or down arrow. When focus moves off the control, any typed input will be validated against the minimum and maximum numeric values. You can increase the speed that the control moves through numbers, when the user continuously presses the up or down arrow, with the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. The key methods of the control are <xref:System.Windows.Forms.NumericUpDown.UpButton%2A> and <xref:System.Windows.Forms.NumericUpDown.DownButton%2A>.  
   
 ## See also
- <xref:System.Windows.Forms.NumericUpDown>  
- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)  
- [How to: Set the Format for the Windows Forms NumericUpDown Control](../../../../docs/framework/winforms/controls/how-to-set-the-format-for-the-windows-forms-numericupdown-control.md)  
- [TextBox Control](../../../../docs/framework/winforms/controls/textbox-control-windows-forms.md)
+- <xref:System.Windows.Forms.NumericUpDown>
+- [NumericUpDown Control](../../../../docs/framework/winforms/controls/numericupdown-control-windows-forms.md)
+- [How to: Set the Format for the Windows Forms NumericUpDown Control](../../../../docs/framework/winforms/controls/how-to-set-the-format-for-the-windows-forms-numericupdown-control.md)
+- [TextBox Control](../../../../docs/framework/winforms/controls/textbox-control-windows-forms.md)

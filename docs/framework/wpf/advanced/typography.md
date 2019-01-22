@@ -23,7 +23,7 @@ ms.assetid: e4ef38db-b7d1-4bda-87ab-8bb738440ddc
  [How-to Topics](../../../../docs/framework/wpf/advanced/typography-how-to-topics.md)  
   
 ## See also
- <xref:System.Windows.Documents.Typography>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+- <xref:System.Windows.Documents.Typography>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
+- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)

@@ -65,17 +65,17 @@ Specifies the parameters for a security token issued in a Federated security sce
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)|Specifies the security options for a custom binding.|  
   
 ## See also
- <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>  
- <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>  
- <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters%2A>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
- [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)  
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)  
- [Security Capabilities with Custom Bindings](../../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)  
- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>
+- <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>
+- <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters%2A>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)
+- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
+- [Security Capabilities with Custom Bindings](../../../../../docs/framework/wcf/feature-details/security-capabilities-with-custom-bindings.md)
+- [Federation and Issued Tokens](../../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)

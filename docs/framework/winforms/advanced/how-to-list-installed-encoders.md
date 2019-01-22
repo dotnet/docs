@@ -26,5 +26,5 @@ You may want to list the image encoders available on a computer, to determine wh
 -   A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
- [How to: List Installed Decoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-decoders.md)  
- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)
+- [How to: List Installed Decoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-decoders.md)
+- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)

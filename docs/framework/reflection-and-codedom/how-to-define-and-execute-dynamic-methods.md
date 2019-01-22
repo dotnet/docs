@@ -117,6 +117,6 @@ The following procedures show how to define and execute a simple dynamic method 
 -   Compile the code at the command line using csc.exe, vbc.exe, or cl.exe. To compile the code in Visual Studio, place it in a console application project template.  
   
 ## See also
- <xref:System.Reflection.Emit.DynamicMethod>  
- [Using Reflection Emit](https://msdn.microsoft.com/library/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)  
- [Reflection Emit Dynamic Method Scenarios](https://msdn.microsoft.com/library/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e)
+- <xref:System.Reflection.Emit.DynamicMethod>
+- [Using Reflection Emit](https://msdn.microsoft.com/library/ccc6540d-0e2c-4d89-b456-eb7353f9e9ac)
+- [Reflection Emit Dynamic Method Scenarios](https://msdn.microsoft.com/library/7c27ea3d-0f24-4bf3-8ceb-f49d33faca5e)

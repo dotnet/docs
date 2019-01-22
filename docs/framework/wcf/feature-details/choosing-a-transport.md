@@ -56,15 +56,15 @@ This topic discusses criteria for choosing among the three main transports that 
 |Tooling|Tooling represents third-party application support for a protocol for development, diagnosis, hosting, and other activities. Developing tools and software to work with the HTTP protocol signifies a particularly large investment.|HTTP|  
   
 ## See also
- <xref:System.ServiceModel.BasicHttpBinding>  
- <xref:System.ServiceModel.WSHttpBinding>  
- <xref:System.ServiceModel.WSDualHttpBinding>  
- <xref:System.ServiceModel.WSFederationHttpBinding>  
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
- <xref:System.ServiceModel.NetTcpBinding>  
- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
- <xref:System.ServiceModel.NetNamedPipeBinding>  
- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>  
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)
+- <xref:System.ServiceModel.BasicHttpBinding>
+- <xref:System.ServiceModel.WSHttpBinding>
+- <xref:System.ServiceModel.WSDualHttpBinding>
+- <xref:System.ServiceModel.WSFederationHttpBinding>
+- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
+- <xref:System.ServiceModel.NetTcpBinding>
+- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
+- <xref:System.ServiceModel.NetNamedPipeBinding>
+- <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>
+- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+- [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)

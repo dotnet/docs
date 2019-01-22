@@ -55,4 +55,4 @@ HRESULT IsFrameworkAssembly (
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   
 ## See also
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

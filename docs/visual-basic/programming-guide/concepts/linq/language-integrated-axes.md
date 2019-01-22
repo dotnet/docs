@@ -15,5 +15,5 @@ This section describes features built directly into the Visual Basic language to
 |[XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)|Provides access to an attribute of an <xref:System.Xml.Linq.XElement> object. This axis is roughly equivalent to the <xref:System.Xml.Linq.XElement.Attribute%2A> axis. This axis differs from the <xref:System.Xml.Linq.XElement.Attribute%2A> axis in that it returns the value of the attribute, not an <xref:System.Xml.Linq.XAttribute> object.|  
 |[Extension Indexer Property](../../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)|Provides access to individual elements in a collection.|  
   
-## See Also  
+## See also
  [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)

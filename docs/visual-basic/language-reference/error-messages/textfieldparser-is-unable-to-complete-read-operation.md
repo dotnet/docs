@@ -12,7 +12,7 @@ The operation cannot be completed because the maximum buffer size (10,000,000 by
   
 -   Make sure there are no malformed fields in the file.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFieldParser%2A>  
  <xref:Microsoft.VisualBasic.FileIO.TextFieldParser>  
  [How to: Read From Text Files with Multiple Formats](../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md)  

@@ -60,6 +60,6 @@ Windows Service applications are based on a class that inherits from the <xref:S
   
  You can also use a component called the <xref:System.ServiceProcess.ServiceController> to communicate with and control the behavior of an existing service.  
   
-## See Also  
+## See also
  [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)  
  [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)

@@ -86,7 +86,7 @@ Specifies that one or more declared programming elements are associated with a c
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
  [Static](../../../visual-basic/language-reference/modifiers/static.md)  
  [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  

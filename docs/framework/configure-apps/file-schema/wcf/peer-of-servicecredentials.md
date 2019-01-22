@@ -43,7 +43,7 @@ Specifies the current credentials for a peer node.
 |-------------|-----------------|  
 |[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
  <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.Peer%2A>  
  <xref:System.ServiceModel.Description.ServiceCredentials.Peer%2A>  

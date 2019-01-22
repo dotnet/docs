@@ -127,7 +127,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
     toolStrip.Renderer = new ToolStripProfessionalRenderer(colorTable);  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStripSystemRenderer>  
  <xref:System.Windows.Forms.ToolStripProfessionalRenderer>  
  <xref:System.Windows.Forms.ToolStripRenderer>  

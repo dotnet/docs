@@ -61,7 +61,7 @@ object.Value
   
  `work`  
   
-## See Also  
+## See also
  <xref:System.Xml.Linq.XElement>  
  <xref:System.Collections.Generic.IEnumerable%601>  
  [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  

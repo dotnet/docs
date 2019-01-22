@@ -33,7 +33,7 @@ This example shows how to specify whether the binding updates only the binding t
   
  For <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings, you can control the timing of the source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. See <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> for more information.  
   
-## See Also  
+## See also
  <xref:System.Windows.Data.Binding>  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

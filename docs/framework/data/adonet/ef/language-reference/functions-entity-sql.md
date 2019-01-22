@@ -17,5 +17,5 @@ Entity SQL supports user-defined functions, canonical functions, and provider-sp
   
  [Aggregate Functions](../../../../../../docs/framework/data/adonet/ef/aggregate-functions-sqlclient-for-entity-framework.md)  
   
-## See Also  
+## See also
  [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

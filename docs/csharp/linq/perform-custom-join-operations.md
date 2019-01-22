@@ -37,6 +37,6 @@ In the following example, the query must join two sequences based on matching ke
 
 ## See also
 
-- [Language Integrated Query (LINQ)](index.md)  
-- [join clause](../language-reference/keywords/join-clause.md)  
-- [Order the results of a join clause](order-the-results-of-a-join-clause.md)  
+- [Language Integrated Query (LINQ)](index.md)
+- [join clause](../language-reference/keywords/join-clause.md)
+- [Order the results of a join clause](order-the-results-of-a-join-clause.md)

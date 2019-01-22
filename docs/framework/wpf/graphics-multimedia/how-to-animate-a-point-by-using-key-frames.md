@@ -30,7 +30,7 @@ This example shows how to use the <xref:System.Windows.Media.Animation.PointAnim
   
  For consistency with other animation examples, the code versions of this example use a <xref:System.Windows.Media.Animation.Storyboard> object to apply the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames>. However, when applying a single animation in code, it's simpler to use the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method instead of using a <xref:System.Windows.Media.Animation.Storyboard>. For an example, see [Animate a Property Without Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-without-using-a-storyboard.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames>  
  <xref:System.Windows.Media.EllipseGeometry.Center%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Media.EllipseGeometry>  

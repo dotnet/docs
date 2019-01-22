@@ -39,7 +39,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control can be displaye
  [!code-csharp[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/CSharp/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_2.cs)]
  [!code-vb[VbPowerPacksDataRepeaterLayout#2](../../../visual-basic/developing-apps/windows-forms/codesnippet/VisualBasic/how-to-change-the-layout-of-a-datarepeater-control-visual-studio_2.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater>  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.LayoutStyle%2A>  
  <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater.BeginResetItemTemplate%2A>  

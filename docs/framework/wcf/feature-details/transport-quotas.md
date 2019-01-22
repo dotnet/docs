@@ -101,7 +101,7 @@ Transport quotas are a policy mechanism for deciding when a connection is consum
 ### Controlling Transport Quotas from Configuration  
  Application configuration can set the same transport quotas as directly accessing properties on a binding. In configuration files, the name of a transport quota always starts with a lowercase letter. For example, the `CloseTimeout` property on a binding corresponds to the `closeTimeout` setting in configuration and the `MaxConnections` property on a binding corresponds to the `maxConnections` setting in configuration.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
  <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
  <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  

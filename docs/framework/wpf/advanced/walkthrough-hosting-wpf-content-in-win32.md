@@ -222,7 +222,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
  [!code-cpp[Win32HostingWPFPage#WPFPageSetFontFamily](../../../../samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagesetfontfamily)]
 
-## See Also
+## See also
 
 - <xref:System.Windows.Interop.HwndSource>
 - [WPF and Win32 Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-win32-interoperation.md)

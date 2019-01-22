@@ -1,9 +1,9 @@
 ---
 title: Implement HTTP call retries with exponential backoff with Polly
-description: Learn how to handle HTTP failures with Polly and HttpClientFactory
+description: Learn how to handle HTTP failures with Polly and HttpClientFactory.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 06/10/2018
+ms.date: 10/16/2018
 ---
 
 # Implement HTTP call retries with exponential backoff with HttpClientFactory and Polly policies
@@ -31,9 +31,9 @@ services.AddHttpClient<IBasketService, BasketService>()
         .AddPolicyHandler(GetRetryPolicy());
 ```
 
-The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you will use. In this case, it is adding a Polly’s policy for Http Retries with exponential backoff.
+The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly’s policy for Http Retries with exponential backoff.
 
-In order to have a more modular approach, the Http Retry Policy can be defined in a separate method within the ConfigureServices() method, as the following code.
+To have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as shown in the following code:
 
 ```csharp
 static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -46,11 +46,11 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
 }
 ```
 
-With Polly, you can define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there is an HTTP exception, such as logging the error. In this case, the policy is configured to try six times with an exponential retry, starting at two seconds. 
+With Polly, you can define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there's an HTTP exception, such as logging the error. In this case, the policy is configured to try six times with an exponential retry, starting at two seconds. 
 
 so it will try six times and the seconds between each retry will be exponential, starting on two seconds.
 
-### Adding a jitter strategy to the retry policy
+## Add a jitter strategy to the retry policy
 
 A regular Retry policy can impact your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in case of partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This can improve the overall performance of the end-to-end system by adding randomness to the exponential backoff. This spreads out the spikes when issues arise. When you use a plain Polly policy, code to implement jitter could look like the following example:
 
@@ -66,19 +66,17 @@ Policy
 
 ## Additional resources
 
--   **Retry pattern**
-    [*https://docs.microsoft.com/azure/architecture/patterns/retry*](https://docs.microsoft.com/azure/architecture/patterns/retry)
+- **Retry pattern**\
+  [*https://docs.microsoft.com/azure/architecture/patterns/retry*](/azure/architecture/patterns/retry)
 
--   **Polly and HttpClientFactory**
-    [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
+- **Polly and HttpClientFactory**\
+  [*https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory*](https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory)
 
--   **Polly (.NET resilience and transient-fault-handling library)**
+- **Polly (.NET resilience and transient-fault-handling library)**\
+  [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
 
-    [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
-
--   **Marc Brooker. Jitter: Making Things Better With Randomness**
-
-    [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
+- **Marc Brooker. Jitter: Making Things Better With Randomness**\
+  [*https://brooker.co.za/blog/2015/03/21/backoff.html*](https://brooker.co.za/blog/2015/03/21/backoff.html)
 
 >[!div class="step-by-step"]
 >[Previous](explore-custom-http-call-retries-exponential-backoff.md)

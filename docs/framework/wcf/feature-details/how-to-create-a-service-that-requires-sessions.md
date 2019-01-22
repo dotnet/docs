@@ -32,7 +32,7 @@ Sessions create a shared state between two or more endpoints that enables useful
  [!code-vb[SCA.Session#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/sca.session/vb/services.vb#1)]      
  [!code-xml[SCA.Session#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/hostapplication.exe.config#2)]     
   
-## See Also  
+## See also
  <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=nameWithType>  
  <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=nameWithType>  
  <xref:System.ServiceModel.SessionMode?displayProperty=nameWithType>

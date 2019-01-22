@@ -24,7 +24,7 @@ The *csc.exe* executable file usually is located in the Microsoft.NET\Framework\
 
  **In this topic**
 
-- [Rules for command-line syntax](#-rules-for-command-line-syntax-for-the-c-compiler)
+- [Rules for command-line syntax](#rules-for-command-line-syntax-for-the-c-compiler)
 
 - [Sample command lines](#sample-command-lines-for-the-c-compiler)
 

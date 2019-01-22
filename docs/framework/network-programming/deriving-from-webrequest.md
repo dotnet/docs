@@ -82,7 +82,7 @@ The <xref:System.Net.WebRequest> class is an abstract base class that provides t
   
  The **GetResponse** method is responsible for creating an appropriate **WebResponse** descendant to contain the incoming response.  
   
-## See Also  
+## See also
  <xref:System.Net.WebRequest>  
  <xref:System.Net.HttpWebRequest>  
  <xref:System.Net.FileWebRequest>  

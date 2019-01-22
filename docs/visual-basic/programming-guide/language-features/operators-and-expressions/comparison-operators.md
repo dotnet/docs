@@ -82,7 +82,7 @@ Comparison operators compare two expressions and return a `Boolean` value that r
   
  For more information, see [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md).  
   
-## See Also  
+## See also
  [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
  [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)  
  [Operators](../../../../visual-basic/language-reference/operators/index.md)  

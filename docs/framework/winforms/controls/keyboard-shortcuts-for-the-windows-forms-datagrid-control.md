@@ -44,6 +44,6 @@ ms.assetid: a01780f9-20d5-4f5f-808f-c790c9a007a5
 |Call the <xref:System.Windows.Forms.DataGrid.EndEdit%2A> method for the current row.|CTRL+ENTER|  
 |Enter a <xref:System.DBNull.Value?displayProperty=nameWithType> value into a cell when in edit mode.|CTRL+0|  
   
-## See Also  
+## See also
  [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
  [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)

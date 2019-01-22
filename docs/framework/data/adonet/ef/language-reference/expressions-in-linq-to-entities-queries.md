@@ -30,5 +30,5 @@ An expression is a fragment of code that can be evaluated to a single value, obj
   
  [Navigation Properties](https://msdn.microsoft.com/library/41e1e6b9-8a57-467d-99d9-1857d2ca2ea5)  
   
-## See Also  
+## See also
  [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)

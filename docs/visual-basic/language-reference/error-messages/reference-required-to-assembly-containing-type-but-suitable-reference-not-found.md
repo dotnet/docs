@@ -23,7 +23,7 @@ An expression uses a type, such as a class, structure, interface, enumeration, o
   
 2.  In your project properties, add a reference to the file that contains the assembly that defines the type you are using.  
   
-## See Also  
+## See also
  [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
  [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
    

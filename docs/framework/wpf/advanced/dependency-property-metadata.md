@@ -85,7 +85,7 @@ The [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.m
 #### AddOwner and Attached Properties  
  You can call <xref:System.Windows.DependencyProperty.AddOwner%2A> for a dependency property that is defined as an attached property by the owner class. Generally the reason for doing this is to expose the previously attached property as a non-attached dependency property. You then will expose the <xref:System.Windows.DependencyProperty.AddOwner%2A> return value as a `public static readonly` field for use as the dependency property identifier, and will define appropriate "wrapper" properties so that the property appears in the members table and supports a non-attached property usage in your class.  
   
-## See Also  
+## See also
  <xref:System.Windows.PropertyMetadata>  
  <xref:System.Windows.DependencyObject>  
  <xref:System.Windows.DependencyProperty>  

@@ -45,7 +45,7 @@ Specifies a peer resolver that is used to resolve a peer mesh ID to a set of pee
 ## Remarks  
  A peer name resolver is a discovery service used by peer channels to find peer nodes that participate in a peer mesh. It is also used to "register" a node with a peer mesh, the mechanism by which the peer node becomes known and available from the peer mesh. For more information on peer resolvers, see [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.PeerResolver>  
  <xref:System.ServiceModel.PeerResolvers.PeerResolverSettings>  
  <xref:System.ServiceModel.NetPeerTcpBinding.Resolver%2A>  

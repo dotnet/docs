@@ -43,5 +43,5 @@ Dim contacts as XElement = _
     </Contacts>  
 ```  
   
-## See Also  
+## See also
  [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)

@@ -27,7 +27,7 @@ You can use the <xref:System.Media.SoundPlayer> class to play a sound from an em
   
  Replacing "\<AssemblyName>" with the name of the assembly in which the sound file is embedded. Do not include the ".dll" suffix.  
   
-## See Also  
+## See also
  <xref:System.Media.SoundPlayer>  
  [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)  
  [How to: Loop a Sound Playing on a Windows Form](../../../../docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md)

@@ -94,7 +94,7 @@ The following configuration subscribes to workflow instance-level tracking recor
 </workflowInstanceQueries>
 ```  
   
-## See also  
+## See also
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>       
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>       

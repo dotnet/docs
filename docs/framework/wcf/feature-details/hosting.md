@@ -27,6 +27,6 @@ The topics in the section describe service hosting. A service can be hosted by I
  [Supporting Multiple IIS Site Bindings](../../../../docs/framework/wcf/feature-details/supporting-multiple-iis-site-bindings.md)  
  Describes how to specify multiple base addresses for a service using the same URI scheme on a single Web site.  
   
-## See Also  
+## See also
  [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)  
  [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

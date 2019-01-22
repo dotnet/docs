@@ -44,7 +44,7 @@ Specifies the expected identity of the server. This identity is valid for X509 C
 </identity>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.IdentityElement>  
  <xref:System.ServiceModel.EndpointAddress>  
  <xref:System.ServiceModel.EndpointAddress.Identity%2A>  

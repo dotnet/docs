@@ -91,7 +91,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
   
      This code will clear the image even if a graphic was loaded into the control at design time.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.PictureBox>  
  <xref:System.Drawing.Image.FromFile%2A?displayProperty=nameWithType>  
  [PictureBox Control Overview](../../../../docs/framework/winforms/controls/picturebox-control-overview-windows-forms.md)  

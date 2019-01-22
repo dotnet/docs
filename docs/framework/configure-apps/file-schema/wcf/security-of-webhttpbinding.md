@@ -59,7 +59,7 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
 |-------------|-----------------|  
 |[\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md)|A binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.WebHttpBindingElement>  
  <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>  
  <xref:System.ServiceModel.WebHttpBinding.Security%2A>  

@@ -60,7 +60,7 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
   
  Developers familiar with the Windows Sockets interface or those who need the control provided by programming at the socket level will find that the **System.Net.Sockets** classes meet their needs. The **System.Net.Sockets** classes are a transition point from managed to native code within the **System.Net** classes. In most cases, **System.Net.Sockets** classes marshal data into their Windows 32-bit counterparts, as well as handling any necessary security checks.  
   
-## See Also  
+## See also
  [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
  [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  

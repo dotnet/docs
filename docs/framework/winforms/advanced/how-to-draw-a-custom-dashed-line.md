@@ -26,5 +26,5 @@ ms.assetid: cd0ed96a-cce4-47b9-b58a-3bae2e3d1bee
 ## Compiling the Code  
  Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the preceding code into the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
-## See Also  
+## See also
  [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)

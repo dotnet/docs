@@ -19,5 +19,5 @@ This section provides examples of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 |[How to: Generate Text Files from XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-generate-text-files-from-xml.md)|Shows how to transform an XML file to a non-XML text file.|  
 |[How to: Generate XML from CSV Files (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)|Shows how to use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to parse a CSV file and generate XML from it.|  
   
-## See Also  
+## See also
  [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

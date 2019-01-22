@@ -19,6 +19,6 @@ This example shows you how to create a simple <xref:System.Windows.Data.Binding>
   
  The highlighted line that contains the `<TextBlock>` element then binds the <xref:System.Windows.Controls.TextBlock> control to the `PersonName` property. As a result, the <xref:System.Windows.Controls.TextBlock> appears with the value "Joe".  
   
-## See Also  
+## See also
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -14,5 +14,5 @@ Either a component cannot find a directory named TEMP, or the drive or partition
   
 2.  Make space on the drive by erasing unnecessary files, or create a TEMP directory on another partition and set the TEMP environment variable equal to its path.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

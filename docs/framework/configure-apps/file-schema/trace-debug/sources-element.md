@@ -75,7 +75,7 @@ Specifies trace sources that initiate tracing messages.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.TraceListener>  
  <xref:System.Diagnostics.DefaultTraceListener>  
  <xref:System.Diagnostics.TextWriterTraceListener>  

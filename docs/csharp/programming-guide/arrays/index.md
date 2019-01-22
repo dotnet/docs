@@ -47,7 +47,7 @@ You can store multiple variables of the same type in an array data structure. Yo
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Collections](../../../csharp/programming-guide/concepts/collections.md)

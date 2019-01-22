@@ -52,7 +52,7 @@ Specifies a user account for processes that host WCF services, and are granted c
 </allowAccounts>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>  
  <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>  
  <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>  

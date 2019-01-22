@@ -187,7 +187,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
+## See also
  [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)  
  [GetEventMask Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-geteventmask-method.md)  
  [SetEventMask Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md)

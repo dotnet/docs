@@ -52,7 +52,7 @@ This example shows how to create a command source by implementing <xref:System.W
  [!code-csharp[ImplementICommandSource#ImplementICommandExecute](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImplementICommandSource/CSharp/CommandSlider.cs#implementicommandexecute)]
  [!code-vb[ImplementICommandSource#ImplementICommandExecute](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImplementICommandSource/visualbasic/commandslider.vb#implementicommandexecute)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Input.ICommandSource>  
  <xref:System.Windows.Input.ICommand>  
  <xref:System.Windows.Input.RoutedCommand>  

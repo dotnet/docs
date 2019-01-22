@@ -35,7 +35,7 @@ Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../.
 ## Inheriting Property Values Across Tree Boundaries  
  Property inheritance works by traversing a tree of elements. This tree is often parallel to the logical tree. However, whenever you include a WPF core-level object in the markup that defines an element tree, such as a <xref:System.Windows.Media.Brush>, you have created a discontinuous logical tree. A true logical tree does not conceptually extend through the <xref:System.Windows.Media.Brush>, because the logical tree is a WPF framework-level concept. You can see this reflected in the results when using the methods of <xref:System.Windows.LogicalTreeHelper>. However, property value inheritance can bridge this gap in the logical tree and can still pass inherited values through, so long as the inheritable property was registered as an attached property and no deliberate inheritance-blocking boundary (such as a <xref:System.Windows.Controls.Frame>) is encountered.  
   
-## See Also  
+## See also
  [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
  [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)  
  [Dependency Property Value Precedence](../../../../docs/framework/wpf/advanced/dependency-property-value-precedence.md)

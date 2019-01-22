@@ -31,7 +31,7 @@ After creating a <xref:System.Data.DataTable> in a <xref:System.Data.DataSet>, y
  [AcceptChanges and RejectChanges](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)  
  Explains how to accept or reject the changes made to a row.  
   
-## See Also  
+## See also
  [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  
  [Handling DataTable Events](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

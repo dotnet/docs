@@ -32,6 +32,6 @@ This example shows how to create and set a <xref:System.Windows.Data.Binding> in
  [!code-csharp[CodeOnlyBinding#BOSetBinding](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CodeOnlyBinding/CSharp/binding.cs#bosetbinding)]
  [!code-vb[CodeOnlyBinding#BOSetBinding](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CodeOnlyBinding/VisualBasic/App.vb#bosetbinding)]  
   
-## See Also  
+## See also
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -217,7 +217,7 @@ The system-provided bindings included with Windows Communication Foundation (WCF
 |Certificate|Allows the service to require that the client be authenticated using a certificate.|  
 |IssuedToken|Allows the service to use a security token service to supply a custom token.|  
   
-## See Also  
+## See also
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
  [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  

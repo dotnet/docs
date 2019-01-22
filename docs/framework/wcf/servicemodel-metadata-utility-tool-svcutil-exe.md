@@ -270,7 +270,7 @@ In addition, to minimize the chance that security be compromised, you should not
 
 Finally, you should not use the tool in the middle-tier of your application, as it may cause denial-of-service to the current process.
 
-## See Also
+## See also
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>

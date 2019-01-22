@@ -21,7 +21,7 @@ There are several circumstances when it is important that an application keep it
   
  [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-conserve-memory_1.vb)]  
   
-## See Also  
+## See also
  <xref:System.ComponentModel.EventHandlerList>  
  [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
  [How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)

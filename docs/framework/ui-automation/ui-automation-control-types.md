@@ -59,5 +59,5 @@ ms.author: "mhopkins"
 ## Reference  
  <xref:System.Windows.Automation.ControlType>  
   
-## See Also  
+## See also
  [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)

@@ -28,7 +28,7 @@ Statement blocks are made up of lines of code delimited by colons. Lines of code
   
      [!code-vb[VbVbalrStatements#708](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/how-to-label-statements_1.vb)]  
   
-## See Also  
+## See also
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
  [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
  [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)

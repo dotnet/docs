@@ -9,7 +9,7 @@ A peer neighbor state has changed.
 ## Description  
  This trace occurs upon an attempt to change a neighbor's state.  
   
-## See Also  
+## See also
  [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
  [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

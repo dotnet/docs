@@ -174,7 +174,7 @@ This topic shows how to implement custom client and service credentials and how 
   
  Add support for configuration using the steps described previously in the procedures "`To create a configuration handler for custom client credentials`" and "`To register and use a custom client credentials configuration handler in the application configuration`." The only difference is to use the <xref:System.ServiceModel.Configuration.ServiceCredentialsElement> class instead of the <xref:System.ServiceModel.Configuration.ClientCredentialsElement> class as a base class for the configuration handler. The custom service credential element can then be used wherever the system-provided `<serviceCredentials>` element is used.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Description.ClientCredentials>  
  <xref:System.ServiceModel.Description.ServiceCredentials>  
  <xref:System.ServiceModel.Security.SecurityCredentialsManager>  

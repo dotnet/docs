@@ -73,7 +73,7 @@ A nonvisual control (or component) provides functionality to your application. U
     > [!IMPORTANT]
     >  You might expose your local computer to a security risk through the network by referencing a malicious UserControl. This would only be a concern in the case of a malicious person creating a damaging custom control, followed by you mistakenly adding it to your project.  
   
-## See Also  
+## See also
  [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
  [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md)  
  [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  

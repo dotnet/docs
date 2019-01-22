@@ -23,5 +23,5 @@ The topics in this section document the syntax of XML literals in Visual Basic. 
 |[XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XComment> objects.|  
 |[XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XProcessingInstruction> objects.|  
   
-## See Also  
+## See also
  [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

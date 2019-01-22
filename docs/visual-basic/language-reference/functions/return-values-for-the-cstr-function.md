@@ -27,7 +27,7 @@ The following table describes the return values for `CStr` for different data ty
 > [!NOTE]
 >  The `CStr` function performs its conversion based on the current culture settings for the application. To get the string representation of a number in a particular culture, use the number's `ToString(IFormatProvider)` method. For example, use <xref:System.Double.ToString%2A?displayProperty=nameWithType> when converting a value of type `Double` to a `String`.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A>  
  [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
  [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)  

@@ -38,7 +38,7 @@ Represents a custom binding element that supports channel security using an SSL 
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.SslStreamSecurityElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement>  

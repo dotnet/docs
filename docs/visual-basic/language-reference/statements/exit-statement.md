@@ -73,7 +73,7 @@ Exit { Do | For | Function | Property | Select | Sub | Try | While }
   
  [!code-vb[VbVbalrStatements#24](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/exit-statement_3.vb)]  
   
-## See Also  
+## See also
  [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md)  
  [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
  [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  

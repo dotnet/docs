@@ -21,5 +21,5 @@ Specifies the group that the loop variable is to traverse in a `For Each` loop, 
   
  [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
   
-## See Also  
+## See also
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

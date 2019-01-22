@@ -29,7 +29,7 @@ This overview discusses the order of precedence for properties that you use to c
   
  <sup>1</sup>For **Header Template Properties**, if you set both the template and template selector properties, the template property takes precedence. For example, if you set both the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> properties, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property takes precedence.  
   
-## See Also  
+## See also
  [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
  [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)

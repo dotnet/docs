@@ -75,7 +75,7 @@ This topic provides recommended practices for queued communication in Windows Co
   
 -   With XML serialization, you can specify the known type using the `KnownTypes` attribute on the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element that is then used to determine how to deserialize the XML message.  
   
-## See Also  
+## See also
  [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
  [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
  [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  

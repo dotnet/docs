@@ -222,6 +222,6 @@ Public Function CreateTransactionScope( _
 End Function  
 ```  
   
-## See Also  
+## See also
  [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

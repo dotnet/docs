@@ -42,7 +42,7 @@ from (select ref(o) as r from LOB.Orders as o) as o2
   
  If the reference value is null, or if the target of the reference does not exist, the result is null.  
   
-## See Also  
+## See also
  [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
  [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
  [CAST](../../../../../../docs/framework/data/adonet/ef/language-reference/cast-entity-sql.md)  

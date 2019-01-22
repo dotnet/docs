@@ -133,7 +133,7 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 -   Host the Direct3D9 content in a WPF application. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../../../../docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).
 
-## See Also
+## See also
 
 - <xref:System.Windows.Interop.D3DImage>
 - [Performance Considerations for Direct3D9 and WPF Interoperability](../../../../docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md)

@@ -51,7 +51,7 @@ For the client, change the **\<security>** element under the **\<binding>** elem
 <security mode="Node" />  
 ```  
 
-## See Also  
+## See also
  [Getting Started Tutorial](../../../docs/framework/wcf/getting-started-tutorial.md)  
  [WCF Troubleshooting Quickstart](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md)  
  [Troubleshooting Setup Issues](../../../docs/framework/wcf/troubleshooting-setup-issues.md)

@@ -81,7 +81,7 @@ On key1 Equals key2 [ And key3 Equals key4 [... ]
   
  `explorer (2424), File Explorer, Priority = 8`  
   
-## See Also  
+## See also
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  

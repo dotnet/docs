@@ -106,7 +106,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |---|---|
 |-incremental|Enables incremental compilation.|
 
-## See Also
+## See also
 
 - [C# Compiler Options](index.md)  
 - [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)  

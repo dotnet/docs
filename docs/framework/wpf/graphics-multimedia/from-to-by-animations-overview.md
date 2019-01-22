@@ -134,7 +134,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also enables you to create your own custom animation types. For more information, see the [Custom Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Animation.Timeline>  
  <xref:System.Windows.Media.Animation.Storyboard>  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  

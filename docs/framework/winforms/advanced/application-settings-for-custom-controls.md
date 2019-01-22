@@ -39,7 +39,7 @@ You must complete certain tasks to give your custom controls the ability to pers
   
  Any instances of a control that do not supply a value for <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> will share the same settings.  
   
-## See Also  
+## See also
  <xref:System.Configuration.ApplicationSettingsBase>  
  <xref:System.Configuration.IPersistComponentSettings>  
  [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)

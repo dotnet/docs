@@ -13,6 +13,6 @@ Id: 136
 ## Description  
  This event indicates that an unhandled exception was thrown while a state machine was processing an event. The event lists the transaction ID, State machine name, Current state, History, Enlistment ID, exception, process name and process ID.  
   
-## See Also  
+## See also
  [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

@@ -153,7 +153,7 @@ static void SelectVsSelectMany()
 }  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Linq>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)  

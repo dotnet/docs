@@ -33,6 +33,6 @@ Describes security considerations for SQL Server and Azure SQL Database.
 [Security Considerations for a SQL Server Installation](/sql/sql-server/install/security-considerations-for-a-sql-server-installation)  
 Describes security concerns to consider before installing SQL Server.
 
-## See Also  
+## See also
  [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
  [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  

@@ -113,7 +113,7 @@ System.Windows.Forms.DataGrid grid = new System.Windows.Forms.DataGrid();
 grid.SetDataBinding(viewManager, "Customers");  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataSet>  
  <xref:System.Data.DataViewManager>  
  <xref:System.Data.DataViewSetting>  

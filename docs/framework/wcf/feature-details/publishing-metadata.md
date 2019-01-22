@@ -37,5 +37,5 @@ Windows Communication Foundation (WCF) services publish metadata by publishing o
   
  <xref:System.ServiceModel.Description.MetadataExchangeBindings>  
   
-## See Also  
+## See also
  [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)

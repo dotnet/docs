@@ -82,7 +82,7 @@ using (TransactionScope ts = new TransactionScope(TransactionScopeOption.Require
 }  
 ```  
   
-## See Also  
+## See also
  [Transactional Support in System.ServiceModel](../../../docs/framework/wcf/feature-details/transactional-support-in-system-servicemodel.md)  
  [Transaction Models](../../../docs/framework/wcf/feature-details/transaction-models.md)  
  [WS Transaction Flow](../../../docs/framework/wcf/samples/ws-transaction-flow.md)

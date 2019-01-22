@@ -119,7 +119,7 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 </configuration>  
 ```  
   
-## See Also  
+## See also
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
  [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  

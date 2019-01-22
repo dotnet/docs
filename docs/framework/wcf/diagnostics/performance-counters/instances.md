@@ -15,5 +15,5 @@ Counter Name: Instances.
   
 -   A <xref:System.ServiceModel.ReleaseInstanceMode> is applied to an <xref:System.ServiceModel.OperationBehaviorAttribute> instance.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.OperationBehaviorAttribute>

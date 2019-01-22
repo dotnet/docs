@@ -162,7 +162,7 @@ namespace LogUtil
 }  
 ```  
   
-## See Also  
+## See also
  <xref:System.Security.PermissionSet>  
  <xref:System.Security.Permissions.SecurityPermission>  
  <xref:System.Security.Permissions.FileIOPermission>  

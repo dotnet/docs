@@ -111,7 +111,7 @@ End Event
 > [!NOTE]
 >  The `My.Application.DoEvents` method does not process events in the same way the form does. To enable the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../standard/threading/index.md).  
   
-## See Also  
+## See also
  [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)  
  [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  

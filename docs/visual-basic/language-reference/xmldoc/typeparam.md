@@ -32,5 +32,5 @@ Defines a type parameter name and description.
   
  [!code-vb[VbVbcnXmlDocComments#8](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/typeparam_1.vb)]  
   
-## See Also  
+## See also
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

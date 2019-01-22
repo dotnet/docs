@@ -60,7 +60,7 @@ By using attributes you can customize how structs are laid out in memory. For ex
   
  The two integer fields, `i1` and `i2`, share the same memory locations as `lg`. This sort of control over struct layout is useful when using platform invocation.  
   
-## See Also
+## See also
 
 - <xref:System.Reflection>  
 - <xref:System.Attribute>  

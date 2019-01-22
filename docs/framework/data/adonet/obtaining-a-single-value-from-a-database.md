@@ -14,7 +14,7 @@ You may need to return database information that is simply a single value rather
  [!code-csharp[DataWorks SqlCommand.ExecuteScalar#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlCommand.ExecuteScalar/CS/source.cs#1)]
  [!code-vb[DataWorks SqlCommand.ExecuteScalar#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlCommand.ExecuteScalar/VB/source.vb#1)]  
   
-## See Also  
+## See also
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [Executing a Command](../../../../docs/framework/data/adonet/executing-a-command.md)  
  [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)  

@@ -95,5 +95,5 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
  The COM+ process recycling features cannot be used on integrated applications. If the application is configured to use process recycling and the components are running in a COM+ hosted process, the service fails to start. This requirement does not include services using the Web-hosted in-process mode because the process recycling settings are not applied.  
   
-## See Also  
+## See also
  [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)

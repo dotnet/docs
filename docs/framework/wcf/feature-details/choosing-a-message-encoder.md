@@ -76,6 +76,6 @@ Since this property is only exposed on the binaryMessageEncodingBindingElement, 
 
 Both the client and the service need to agree to send and receive compressed messages and therefore the compressionFormat property must be configured on the binaryMessageEncoding element on both client and service. A ProtocolException is thrown if either the service or client is not configured for compression but the other side is.Enabling compression should be carefully considered. Compression is mostly useful if network bandwidth is a bottleneck. In the case where the CPU is the bottleneck, compression will decrease throughput. Appropriate testing must be done in a simulated environment to find out if this benefits the application  
   
-## See Also
+## See also
 
 [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)

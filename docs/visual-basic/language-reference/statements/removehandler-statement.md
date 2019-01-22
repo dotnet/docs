@@ -35,7 +35,7 @@ RemoveHandler event, AddressOf eventhandler
 ## Example  
  [!code-vb[VbVbalrEvents#17](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/removehandler-statement_1.vb)]  
   
-## See Also  
+## See also
  [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
  [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)  
  [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  

@@ -55,4 +55,4 @@ writeSerializer.WriteObject(stream, new JsonFeedFormatter(feed));
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Syndication\JsonFeeds`  
   
-## See Also
+## See also

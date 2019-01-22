@@ -49,5 +49,5 @@ The `loaderLock` managed debugging assistant (MDA) detects attempts to execute m
 </mdaConfig>  
 ```  
   
-## See Also  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

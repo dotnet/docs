@@ -61,7 +61,7 @@ You can select text programmatically in the Windows Forms <xref:System.Windows.F
     }  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.TextBox>  
  [TextBox Control Overview](../../../../docs/framework/winforms/controls/textbox-control-overview-windows-forms.md)  
  [How to: Control the Insertion Point in a Windows Forms TextBox Control](../../../../docs/framework/winforms/controls/how-to-control-the-insertion-point-in-a-windows-forms-textbox-control.md)  

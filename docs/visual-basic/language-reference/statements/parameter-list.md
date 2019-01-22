@@ -80,7 +80,7 @@ parametername[( )] [ As parametertype ] [ = defaultvalue ]
   
  [!code-vb[VbVbalrStatements#2](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/parameter-list_1.vb)]  
   
-## See Also  
+## See also
  <xref:System.Runtime.InteropServices.DllImportAttribute>  
  [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  

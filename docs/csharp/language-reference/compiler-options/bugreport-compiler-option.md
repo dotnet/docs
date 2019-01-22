@@ -47,7 +47,7 @@ Specifies that debug information should be placed in a file for later analysis.
   
  Notice that contents of the generated file expose source code that could result in inadvertent information disclosure.  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [-errorreport (C# Compiler Options)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)  

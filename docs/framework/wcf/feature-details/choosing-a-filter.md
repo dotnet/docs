@@ -129,6 +129,6 @@ XPathMessageFilter xpath1=new XPathMessageFilter("//ns:element");
   
  For more information about designing XPath queries, see [XPath Syntax](https://go.microsoft.com/fwlink/?LinkId=164592).  
   
-## See Also  
+## See also
  [Message Filters](../../../../docs/framework/wcf/feature-details/message-filters.md)  
  [How To: Use Filters](../../../../docs/framework/wcf/feature-details/how-to-use-filters.md)

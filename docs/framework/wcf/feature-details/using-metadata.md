@@ -16,5 +16,5 @@ Service metadata contains a machine-readable description of the service. Service
  [Generating a WCF Client from Service Metadata](../../../../docs/framework/wcf/feature-details/generating-a-wcf-client-from-service-metadata.md)  
  Demonstrates how to retrieve metadata using Svcutil.exe and generate a Windows Communication Foundation (WCF) client.  
   
-## See Also  
+## See also
  [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

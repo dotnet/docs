@@ -155,8 +155,8 @@ You must use the following switches with the `dotnet publish` command to publish
 
 ## See also
 
-* [.NET Core Application Deployment Overview](index.md)
-* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [.NET Core Application Deployment Overview](index.md)
+- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
 
 [dotnet-publish]: ../tools/dotnet-publish.md
 [dotnet-run]: ../tools/dotnet-run.md

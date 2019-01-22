@@ -182,7 +182,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  From a Visual Studio command prompt, open the \client\bin folder, under the language-specific folder.  
+3.  From a Developer Command Prompt for Visual Studio, open the \client\bin folder, under the language-specific folder.  
   
     > [!NOTE]
     >  If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  
@@ -231,4 +231,4 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 -   For security purposes, remove the virtual directory definition and permissions granted in the setup steps when you are finished with the samples.  
   
-## See Also
+## See also

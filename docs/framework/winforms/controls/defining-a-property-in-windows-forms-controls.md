@@ -114,7 +114,7 @@ public int Value {
 }  
 ```  
   
-## See Also  
+## See also
  [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)  
  [Defining Default Values with the ShouldSerialize and Reset Methods](../../../../docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md)  
  [Property-Changed Events](../../../../docs/framework/winforms/controls/property-changed-events.md)  

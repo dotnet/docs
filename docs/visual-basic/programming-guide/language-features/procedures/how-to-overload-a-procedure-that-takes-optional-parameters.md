@@ -55,7 +55,7 @@ If a procedure has one or more [Optional](../../../../visual-basic/language-refe
   
 5.  Terminate each procedure with the `End Sub` or `End Function` statement as appropriate.  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [Optional Parameters](./optional-parameters.md)  

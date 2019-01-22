@@ -49,7 +49,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
 > [!NOTE]
 >  Ngen.exe syntax for versions 1.0 and 1.1 of the .NET Framework can be found in [Native Image Generator (Ngen.exe) Legacy Syntax](https://msdn.microsoft.com/library/5a69fc7a-103f-4afc-8ab4-606adcb46324).  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -578,7 +578,7 @@ ngen executeQueuedItems
 ### Service Interaction with Clients  
  In the .NET Framework version 2.0, the only interaction with the native image service is through the command-line tool Ngen.exe. Use the command-line tool in installation scripts to queue actions for the native image service and to interact with the service.  
   
-## See Also  
+## See also
  [Tools](../../../docs/framework/tools/index.md)  
  [Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  

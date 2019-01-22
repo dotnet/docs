@@ -113,7 +113,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 </system.serviceModel>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.BasicHttpMessageSecurity>  
  <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Message%2A>  
  <xref:System.ServiceModel.BasicHttpSecurity.Message%2A>  

@@ -122,7 +122,7 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
   
 -   <xref:System.Windows.Controls.GridViewColumnHeaderRole>  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ListView>  
  <xref:System.Windows.Controls.ListViewItem>  
  <xref:System.Windows.Controls.GridViewColumn>  

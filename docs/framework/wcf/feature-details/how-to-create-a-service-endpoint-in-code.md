@@ -40,5 +40,5 @@ In this example, an `ICalculator` contract is defined for a calculator service, 
   
      For more information about default endpoints, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-## See Also  
+## See also
  [How to: Specify a Service Binding in Code](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md)

@@ -67,7 +67,7 @@ Specifies the default values used for initiating a secure conversation service.
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)|Specifies the security options for a custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>  
  <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>  
  <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>  

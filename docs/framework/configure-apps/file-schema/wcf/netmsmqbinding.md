@@ -131,7 +131,7 @@ Defines a queued binding suitable for cross-machine communication.
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NetMsmqBinding>  
  <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>  
  [\<binding>](../../../../../docs/framework/misc/binding.md)  

@@ -30,7 +30,7 @@ This example describes how to sort data in a view.
   
  For an example of how to apply sorting logic in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], see [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Data.ListCollectionView.CustomSort%2A>  
  [Sort a GridView Column When a Header Is Clicked](../../../../docs/framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked.md)  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  

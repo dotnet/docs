@@ -29,7 +29,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem> object offers a number of use
   
      [!code-vb[VbVbcnMyFileSystem#55](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-parse-file-paths_2.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A>  
  <xref:System.IO.FileInfo>  

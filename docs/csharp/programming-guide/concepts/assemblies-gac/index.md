@@ -44,7 +44,7 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 > [!NOTE]
 >  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../../csharp/programming-guide/index.md)  
 - [Assemblies in the Common Language Runtime](../../../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)  

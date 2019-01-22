@@ -81,7 +81,7 @@ End Class
   
  When accessing non-services that generate faults, certain limitations exist. WCF supports only faults with detail types that the schema describes and that are compatible with data contracts. For example, as mentioned above, WCF does not support faults that use XML attributes in their detail types, or faults with more than one top-level element in the detail section.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.FaultContractAttribute>  
  <xref:System.Runtime.Serialization.DataContractAttribute>  
  <xref:System.Runtime.Serialization.DataMemberAttribute>  

@@ -68,7 +68,7 @@ The <xref:System.Type?displayProperty=nameWithType> class is central to reflecti
  [!code-csharp[Conceptual.Types.ViewInfo#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.viewinfo/cs/source4.cs#4)]
  [!code-vb[Conceptual.Types.ViewInfo#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.viewinfo/vb/source4.vb#4)]  
   
-## See Also  
+## See also
  <xref:System.Reflection.BindingFlags>  
  <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType>  
  <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType>  

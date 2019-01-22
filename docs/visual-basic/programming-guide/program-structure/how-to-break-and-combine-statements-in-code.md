@@ -52,6 +52,6 @@ When writing your code, you might at times create lengthy statements that necess
   
      [!code-vb[VbVbcnConventions#10](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/how-to-break-and-combine-statements-in-code_2.vb)]  
   
-## See Also  
+## See also
  [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
  [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

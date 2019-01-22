@@ -31,7 +31,7 @@ The Application Settings architecture provides many attributes that can be appli
   
  *Class* indicates that the attribute can be applied only to an application settings wrapper class. *Property* indicates that the attribute can be applied only settings properties. *Both* indicates that the attribute can be applied at either level.  
   
-## See Also  
+## See also
  <xref:System.Configuration.ApplicationSettingsBase>  
  <xref:System.Configuration.SettingsProvider>  
  [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)  

@@ -73,7 +73,7 @@ ThirdAttribute
 SecondAttribute
 ```
 
-## See Also
+## See also
 
 - <xref:System.Attribute>  
 - <xref:System.Reflection>  

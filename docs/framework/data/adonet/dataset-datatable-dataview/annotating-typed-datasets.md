@@ -216,7 +216,7 @@ protected static void OnCustomerChanged(object sender, CustomerDataSet.CustomerC
     }  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataColumnCollection>  
  <xref:System.Data.DataSet>  
  [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  

@@ -112,6 +112,6 @@ The object:
   
 -   This code example requires the `FullTrust` permission set to execute successfully.  
   
-## See Also  
+## See also
  [Using the CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)  
  [Generating and Compiling Source Code from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)

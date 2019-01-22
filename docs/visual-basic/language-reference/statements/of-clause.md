@@ -58,7 +58,7 @@ Dim d As New dictionary(Of String, Integer)
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  <xref:System.IComparable>  
  [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
  [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  

@@ -279,7 +279,7 @@ Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
   
  [!code-vb[VbVbalrFunctions#18](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/type-conversion-functions_18.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
  <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
  <xref:Microsoft.VisualBasic.Strings.Chr%2A>  

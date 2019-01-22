@@ -134,7 +134,7 @@ Dim number As Integer = &H_C305_F860
 
 [!INCLUDE [supporting-underscores](../../../../../includes/vb-separator-langversion.md)]
 
-## See Also
+## See also
 
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
  [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  

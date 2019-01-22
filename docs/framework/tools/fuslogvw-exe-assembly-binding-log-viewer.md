@@ -18,7 +18,7 @@ The Assembly Binding Log Viewer displays details for assembly binds. This inform
 > [!IMPORTANT]
 >  You must run fuslogvw.exe with administrator privileges.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -222,7 +222,7 @@ Discarding native image.
     > [!NOTE]
     >  This box is enabled only on Windows 8 or later.  
   
-## See Also  
+## See also
  <xref:System.TypeLoadException>  
  [Tools](../../../docs/framework/tools/index.md)  
  [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  

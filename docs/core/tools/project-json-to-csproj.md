@@ -672,6 +672,6 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 </ItemGroup>
 ```
 
-## See Also
+## See also
 
-* [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)
+- [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

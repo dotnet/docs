@@ -26,7 +26,7 @@ If you have defined a class or structure, you can define a type conversion opera
   
  [!code-vb[VbVbcnProcedures#28](./codesnippet/VisualBasic/how-to-define-a-conversion-operator_2.vb)]  
   
-## See Also  
+## See also
  [Operator Procedures](./operator-procedures.md)  
  [How to: Define an Operator](./how-to-define-an-operator.md)  
  [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  

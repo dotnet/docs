@@ -43,5 +43,5 @@ To paint an area with a solid color, you can use a predefined system brush, such
   
  This code example is part of a larger example provided for the <xref:System.Windows.Media.SolidColorBrush> class. For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Brushes>

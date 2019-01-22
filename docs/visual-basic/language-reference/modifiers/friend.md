@@ -65,7 +65,7 @@ Specifies that one or more declared programming elements are accessible only fro
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
+## See also
  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
  [Public](../../../visual-basic/language-reference/modifiers/public.md)  
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  

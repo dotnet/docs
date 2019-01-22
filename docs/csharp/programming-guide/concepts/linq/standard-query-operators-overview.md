@@ -97,7 +97,7 @@ foreach (var obj in query)
   
  [Aggregation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)  
   
-## See Also
+## See also
 
 - <xref:System.Linq.Enumerable>  
 - <xref:System.Linq.Queryable>  

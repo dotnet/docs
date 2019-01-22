@@ -43,7 +43,7 @@ Enables the use of local type inference in variable declarations.
 vbc -optioninfer+ test.vb  
 ```  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
  [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  

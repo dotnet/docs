@@ -59,7 +59,7 @@ where T : IExtensibleObject<T>
   
  [!code-csharp[IInstanceContextInitializer#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/iinstancecontextinitializer/cs/initializer.cs#1)]  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.IExtensibleObject%601>  
  <xref:System.ServiceModel.IExtension%601>  
  <xref:System.ServiceModel.IExtensionCollection%601>

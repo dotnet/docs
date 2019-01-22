@@ -61,7 +61,7 @@ This topic shows the basic steps to create methods that use a duplex (two-way) c
   
 -   Endpoints exposing duplex services must be secured. When a service receives a duplex message, it looks at the ReplyTo in that incoming message to determine where to send the reply. If the channel is not secured, then an untrusted client could send a malicious message with a target machine's ReplyTo, leading to a denial of service of the target machine. With regular request-reply messages, this is not an issue, because the ReplyTo is ignored and the response is sent on the channel the original message came in on.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.ServiceContractAttribute>  
  <xref:System.ServiceModel.OperationContractAttribute>  
  [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)  

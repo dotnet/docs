@@ -30,7 +30,7 @@ You use a `Function` procedure to return a value to the calling code.
   
      [!code-vb[VbVbcnProcedures#6](./codesnippet/VisualBasic/how-to-create-a-procedure-that-returns-a-value_2.vb)]  
   
-## See Also  
+## See also
  [Procedures](./index.md)  
  [Sub Procedures](./sub-procedures.md)  
  [Property Procedures](./property-procedures.md)  

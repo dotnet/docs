@@ -63,7 +63,7 @@ Mid( _
   
  **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Strings.Mid%2A>  
  [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)  
  [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

@@ -96,11 +96,11 @@ Vendors of assemblies can state that applications should use a newer version of 
     > [!IMPORTANT]
     >  The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.  
   
-## See Also  
- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Configuring Apps](../../../docs/framework/configure-apps/index.md)  
- [Configuring .NET Framework Apps](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
- [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+## See also
+- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Configuring Apps](../../../docs/framework/configure-apps/index.md)
+- [Configuring .NET Framework Apps](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+- [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

@@ -434,7 +434,7 @@ interface IValueTypes : IDispatch {
 };  
 ```  
   
-## See Also  
+## See also
  [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
  [Copying and Pinning](copying-and-pinning.md)  
  [Default Marshaling for Arrays](default-marshaling-for-arrays.md)  

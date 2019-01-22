@@ -51,7 +51,7 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method r
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>). The user lacks necessary permissions (<xref:System.UnauthorizedAccessException>).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>  
  <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A>  
  [How to: Find Subdirectories with a Specific Pattern](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-find-subdirectories-with-a-specific-pattern.md)  

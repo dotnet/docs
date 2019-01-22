@@ -263,7 +263,7 @@ End Interface
   
  One result of this is that if the names and namespaces are not explicitly set, the use of IL obfuscation on the assembly alters the contract type names and namespaces and results in modified WSDL and wire exchanges that typically fail. If you do not set the contract names and namespaces explicitly but do intend to use obfuscation, use the <xref:System.Reflection.ObfuscationAttribute> and <xref:System.Reflection.ObfuscateAssemblyAttribute> attributes to prevent the modification of the contract type names and namespaces.  
   
-## See Also  
+## See also
  [How to: Create a Request-Reply Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-request-reply-contract.md)  
  [How to: Create a One-Way Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-one-way-contract.md)  
  [How to: Create a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)  

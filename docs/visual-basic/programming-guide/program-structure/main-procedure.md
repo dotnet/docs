@@ -102,7 +102,7 @@ Every Visual Basic application must contain a procedure called `Main`. This proc
     End Module  
     ```  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>  
  <xref:System.Array.Length%2A>  
  <xref:Microsoft.VisualBasic.Information.UBound%2A>  

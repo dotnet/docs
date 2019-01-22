@@ -68,7 +68,7 @@ long num = Convert.ToInt64(s);
   
  For more examples about how to use command-line arguments, see [How to: Create and Use Assemblies Using the Command Line](../../../csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).  
   
-## See Also
+## See also
 
 - <xref:System.Environment?displayProperty=nameWithType>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

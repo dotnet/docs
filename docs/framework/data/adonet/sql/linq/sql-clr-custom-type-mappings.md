@@ -25,6 +25,6 @@ Type mapping between SQL Server and the common language runtime (CLR) is automat
 ## Incorporating Database Changes  
  When your database changes, you will need to update your DBML file to reflect those changes. One way to do this is to automatically create a new DBML file and then re-do your type mapping customizations. Alternatively, you could compare the differences between your new DBML file and your customized DBML file and update your custom DBML file manually to reflect the database change.  
   
-## See Also  
+## See also
  [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)  
  [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)

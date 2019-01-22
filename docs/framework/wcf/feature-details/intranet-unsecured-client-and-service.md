@@ -106,7 +106,7 @@ The following illustration depicts a simple Windows Communication Foundation (WC
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NetTcpBinding>  
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

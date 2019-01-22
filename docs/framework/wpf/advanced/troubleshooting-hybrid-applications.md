@@ -108,7 +108,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 ## ElementHost and IME  
  WPF controls hosted in an <xref:System.Windows.Forms.Integration.ElementHost> currently do not support the <xref:System.Windows.Forms.Control.ImeMode%2A> property. Changes to <xref:System.Windows.Forms.Control.ImeMode%2A> will be ignored by the hosted controls.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Interoperability in the WPF Designer](https://msdn.microsoft.com/library/2cb7c1ca-2a75-463b-8801-fba81e2b7042)  

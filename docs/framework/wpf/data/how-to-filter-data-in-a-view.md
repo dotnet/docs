@@ -41,7 +41,7 @@ This example shows how to filter data in a view.
  [!code-csharp[DataBindingLab#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#5)]
  [!code-vb[DataBindingLab#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#5)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Data.CollectionView.CanFilter%2A>  
  <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  

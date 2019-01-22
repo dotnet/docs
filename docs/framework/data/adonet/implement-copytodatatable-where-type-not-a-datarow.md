@@ -67,6 +67,6 @@ public class ObjectShredder<T>
 }  
 ```
   
-## See Also  
+## See also
  [Creating a DataTable From a Query](../../../../docs/framework/data/adonet/creating-a-datatable-from-a-query-linq-to-dataset.md)  
  [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

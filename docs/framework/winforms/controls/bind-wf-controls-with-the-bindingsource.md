@@ -53,7 +53,7 @@ After you have added controls to your form and determined the user interface for
   
      The **DataSource** UI type editor closes and the data set, <xref:System.Windows.Forms.BindingSource> and table adapter specific to that data connection are added to your form.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.BindingSource>  
  <xref:System.Windows.Forms.BindingNavigator>  
  [Add new data sources](/visualstudio/data-tools/add-new-data-sources)  

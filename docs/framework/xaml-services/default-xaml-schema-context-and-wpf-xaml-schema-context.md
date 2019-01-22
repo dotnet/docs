@@ -82,5 +82,5 @@ A XAML schema context is a conceptual entity that qualifies how a XAML productio
   
     -   Use short name + public key token to call <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType>.  
   
-## See Also  
+## See also
  [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md)

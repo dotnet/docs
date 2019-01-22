@@ -93,5 +93,5 @@ Result set follows:
 End of result set  
 ```  
   
-## See Also  
+## See also
  [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)

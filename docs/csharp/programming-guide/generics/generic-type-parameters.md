@@ -30,7 +30,7 @@ In a generic type or method definition, a type parameters is a placeholder for a
   
 -   **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` may be called `TSession`.  
   
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

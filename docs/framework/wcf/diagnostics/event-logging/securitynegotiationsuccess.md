@@ -13,6 +13,6 @@ Id: 171
 ## Description  
  This event indicates security negotiation has succeeded, listing the name of the service, Action, Client Identity, ActivityId and Negotiation.  
   
-## See Also  
+## See also
  [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

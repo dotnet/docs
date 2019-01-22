@@ -146,7 +146,7 @@ ms.author: "ronpet"
   
  In this example, notice that the initialization procedure is invoked on every iteration of the loop. In multi-threaded scenarios, the first thread to invoke the initialization procedure is the one whose value is seen by all threads. Later threads also invoke the initialization procedure, but their results are not used. If this kind of potential race condition is not acceptable, use the overload of <xref:System.Threading.LazyInitializer.EnsureInitialized%2A?displayProperty=nameWithType> that takes a Boolean argument and a synchronization object.  
   
-## See Also  
+## See also
  [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)  
  [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
  [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  

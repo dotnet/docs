@@ -108,7 +108,7 @@ This Windows Communication Foundation (WCF) scenario uses transport security (HT
 </configuration>  
 ```  
   
-## See Also  
+## See also
  [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
  [WS Transport Security](../../../../docs/framework/wcf/samples/ws-transport-security.md)  
  [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  

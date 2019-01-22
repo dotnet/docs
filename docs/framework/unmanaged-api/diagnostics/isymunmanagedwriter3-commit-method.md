@@ -33,5 +33,5 @@ HRESULT Commit();
 ## Requirements  
  **Header:** CorSym.idl , CorSym.h  
   
-## See Also  
+## See also
  [ISymUnmanagedWriter3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)

@@ -41,7 +41,7 @@ ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
   
 5.  Click **OK** to close the dialog box and create the panels you specified.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolBar>  
  [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)  
  [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  

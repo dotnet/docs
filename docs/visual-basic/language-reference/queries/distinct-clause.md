@@ -26,7 +26,7 @@ Distinct
   
  [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
   
-## See Also  
+## See also
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  

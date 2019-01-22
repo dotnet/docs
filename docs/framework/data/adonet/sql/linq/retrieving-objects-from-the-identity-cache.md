@@ -58,7 +58,7 @@ This topic describes the types of LINQ to SQL queries that return an object from
  [!code-csharp[L2S_QueryCache#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs/program.cs#1)]
  [!code-vb[L2S_QueryCache#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/l2s_querycache/vb/module1.vb#1)]  
   
-## See Also  
+## See also
  [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
  [Object Identity](../../../../../../docs/framework/data/adonet/sql/linq/object-identity.md)  
  [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  

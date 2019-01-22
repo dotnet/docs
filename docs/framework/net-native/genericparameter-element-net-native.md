@@ -15,7 +15,7 @@ Applies policy to the parameter type of a generic type or method.
                   Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
-                  Serialize="policy_type" />  
+                  Serialize="policy_type"  
                   DataContractSerializer="policy_type"  
                   DataContractJsonSerializer="policy_type"  
                   XmlSerializer="policy_type"  
@@ -80,7 +80,7 @@ Applies policy to the parameter type of a generic type or method.
 </Directives>  
 ```  
   
-## See Also  
+## See also
  [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
  [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  

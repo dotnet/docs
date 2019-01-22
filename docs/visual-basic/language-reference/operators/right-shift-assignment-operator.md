@@ -42,7 +42,7 @@ variableorproperty >>= amount
   
  [!code-vb[VbVbalrOperators#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/right-shift-assignment-operator_1.vb)]  
   
-## See Also  
+## See also
  [>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
  [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  

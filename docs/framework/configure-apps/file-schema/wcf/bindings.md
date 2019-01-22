@@ -32,7 +32,7 @@ This section holds a collection of standard and custom bindings. Each entry is a
   
  Custom bindings are identified by their `name` attribute. For more information on custom bindings, see [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.BindingsSection>  
  <xref:System.ServiceModel.Channels.Binding>  
  <xref:System.ServiceModel.Channels.BindingElement>  

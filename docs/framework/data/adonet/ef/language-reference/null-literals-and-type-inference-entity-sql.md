@@ -34,5 +34,5 @@ Null literals are compatible with any type in the [!INCLUDE[esql](../../../../..
   
  Free-floating null literals cannot be used in other scenarios. For example,  they cannot be used as arguments to a row constructor.  
   
-## See Also  
+## See also
  [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)

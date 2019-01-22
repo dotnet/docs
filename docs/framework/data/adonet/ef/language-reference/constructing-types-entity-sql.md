@@ -57,7 +57,7 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  For more information, see [Named Type Constructor](../../../../../../docs/framework/data/adonet/ef/language-reference/named-type-constructor-entity-sql.md).  
   
-## See Also  
+## See also
  [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
  [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
  [Type System](../../../../../../docs/framework/data/adonet/ef/language-reference/type-system-entity-sql.md)

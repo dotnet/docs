@@ -55,7 +55,7 @@ ms.assetid: 6ac27fad-3687-4d7a-add1-3e90675fdfde
   
  For operations that rely on examining each node in a XAML node stream, you typically do not use <xref:System.Xaml.XamlServices.Transform%2A>. Instead you need to define your own load path-save path operation series and interject your own logic. In one of the paths, use a XAML reader/XAML writer pair around your own node loop. For example, load the initial XAML using <xref:System.Xaml.XamlXmlReader> and step into the nodes with successive <xref:System.Xaml.XamlXmlReader.Read%2A> calls. Operating at the XAML node stream level you can now adjust individual nodes (types, members, other nodes) to apply a transformation, or leave the node as-is. Then you send the node onwards to the relevant `Write` API of a <xref:System.Xaml.XamlObjectWriter> and write out the object. For more information, see [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md).  
   
-## See Also  
+## See also
  <xref:System.Xaml.XamlObjectWriter>  
  <xref:System.Xaml.XamlServices>  
  [XAML Services](../../../docs/framework/xaml-services/index.md)

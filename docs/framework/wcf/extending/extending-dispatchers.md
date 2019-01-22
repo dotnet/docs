@@ -121,7 +121,7 @@ Dispatchers are responsible for pulling incoming messages out of the underlying 
   
 -   The <xref:System.ServiceModel.Dispatcher.DispatchOperation.ParameterInspectors%2A> property enables you to insert a custom parameter inspector that you can use to inspect or modify parameters and return values.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Dispatcher.DispatchRuntime>  
  <xref:System.ServiceModel.Dispatcher.DispatchOperation>  
  [How to: Inspect and Modify Messages on the Service](../../../../docs/framework/wcf/extending/how-to-inspect-and-modify-messages-on-the-service.md)  

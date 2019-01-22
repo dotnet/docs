@@ -51,6 +51,6 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
      ![Pens](../../../../docs/framework/winforms/advanced/media/pens3.gif "pens3")  
   
-## See Also  
+## See also
  [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)  
  [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)

@@ -54,7 +54,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ## Remarks  
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer> and [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>  
  [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)

@@ -37,7 +37,7 @@ Interoperability enables you to preserve and take advantage of existing investme
 
 For more information, see [Basic concepts](~/_csharplang/spec/unsafe-code.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also
+## See also
 
 - <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

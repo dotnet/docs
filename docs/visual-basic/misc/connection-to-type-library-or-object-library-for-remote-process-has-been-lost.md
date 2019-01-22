@@ -18,5 +18,5 @@ You lost your connection to the remote process's object library or type library.
   
 4.  In the **References** dialog box, select the check box for the `Application` object.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

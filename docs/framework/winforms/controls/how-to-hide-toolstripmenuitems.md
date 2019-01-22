@@ -32,7 +32,7 @@ Hiding menu items is a way to control the user interface of your application and
     menuItem3->Visible = false;  
     ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStripItem.Visible%2A>  
  <xref:System.Windows.Forms.MenuStrip>  
  [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)  

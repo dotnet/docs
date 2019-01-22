@@ -66,7 +66,7 @@ Dim totals() As Single = New Single(8) {}
   
  You can find out whether an `Object` variable is acting as a reference type or a value type by passing it to the <xref:Microsoft.VisualBasic.Information.IsReference%2A> method in the <xref:Microsoft.VisualBasic.Information> class of the <xref:Microsoft.VisualBasic?displayProperty=nameWithType> namespace. <xref:Microsoft.VisualBasic.Information.IsReference%2A?displayProperty=nameWithType> returns `True` if the content of the `Object` variable represents a reference type.  
   
-## See Also  
+## See also
  [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
  [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
  [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  

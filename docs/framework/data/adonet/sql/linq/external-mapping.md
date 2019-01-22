@@ -135,7 +135,7 @@ elementFormDefault="qualified" >
 </xs:schema>  
 ```  
   
-## See Also  
+## See also
  [Code Generation in LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)  
  [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
  [How to: Generate the Object Model as an External File](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-as-an-external-file.md)

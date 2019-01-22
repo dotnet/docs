@@ -33,7 +33,7 @@ Windows Communication Foundation (WCF) provides a rich set of functionalities th
   
  WCF also provides several GUI and command line tools to make it easier for you to create, deploy, and manage WCF applications. For more information, see [Windows Communication Foundation Tools](../../../../docs/framework/wcf/tools.md). For example, you can use the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md) to create and edit WCF configuration settings using a wizard, instead of editing XML directly. You can also use the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) to view, group, and filter trace messages so that you can diagnose, repair, and verify issues with WCF services.  
   
-## See Also  
+## See also
  [Configuring Your Application](../../../../docs/framework/wcf/diagnostics/configuring-your-application.md)  
  [Deploying Services](../../../../docs/framework/wcf/diagnostics/deploying-services.md)  
  [Exceptions Reference](../../../../docs/framework/wcf/diagnostics/exceptions-reference/index.md)  

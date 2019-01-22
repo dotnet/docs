@@ -72,7 +72,7 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
 -   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=nameWithType> class.  
   
-## See Also  
+## See also
  <xref:System.String?displayProperty=nameWithType>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
  [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)  

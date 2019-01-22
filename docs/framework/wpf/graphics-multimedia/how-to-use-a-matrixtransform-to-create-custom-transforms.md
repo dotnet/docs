@@ -14,7 +14,7 @@ This example shows how to use a <xref:System.Windows.Media.MatrixTransform> to t
 ## Example  
  [!code-xaml[Transforms_snip#MatrixTransform](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/MatrixTransformExample.xaml#matrixtransform)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.MatrixTransform>  
  <xref:System.Windows.Media.Transform>  
  [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  

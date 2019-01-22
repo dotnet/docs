@@ -65,7 +65,7 @@ Holds data in a format you define. The `Structure` statement defines the format.
 End Structure  
 ```  
   
-## See Also  
+## See also
  <xref:System.ValueType>  
  <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  

@@ -27,6 +27,6 @@ A statement attempts to retrieve the value of a property when it does not have a
   
 -   If you do not have control of the source code defining the property, or you must restrict the `Get` procedure access level more than the property itself, try to move the statement that reads the property value to a region of code that has better access to the property.  
   
-## See Also  
+## See also
  [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)  
  [How to: Declare a Property with Mixed Access Levels](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-a-property-with-mixed-access-levels.md)

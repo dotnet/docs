@@ -27,7 +27,7 @@ By default, users can modify text and numerical data displayed in the Windows Fo
     > [!NOTE]
     >  You can also make a column read-only when you add it by selecting the **Read Only** check box in the **Add Column** dialog box.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=nameWithType>  
  [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](../../../../docs/framework/winforms/controls/add-and-remove-columns-in-the-datagrid-using-the-designer.md)  

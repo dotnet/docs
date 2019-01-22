@@ -22,7 +22,7 @@ This example declares an [interface](../../../csharp/language-reference/keywords
   
      [!code-csharp[csProgGuideInheritance#46](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-interface-members_3.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  

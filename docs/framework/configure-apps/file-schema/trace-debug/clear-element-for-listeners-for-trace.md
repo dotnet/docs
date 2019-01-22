@@ -73,7 +73,7 @@ Clears the `Listeners` collection for trace.
 </configuration>   
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.Trace.Listeners%2A>  
  <xref:System.Diagnostics.Trace>  
  <xref:System.Diagnostics.Debug>  

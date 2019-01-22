@@ -107,6 +107,6 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind c
   
  For more information, see [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md).  
   
-## See Also  
+## See also
  [How to: Manually Generate Client Data Service Classes](../../../../docs/framework/data/wcf/how-to-manually-generate-client-data-service-classes-wcf-data-services.md)  
  [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md)

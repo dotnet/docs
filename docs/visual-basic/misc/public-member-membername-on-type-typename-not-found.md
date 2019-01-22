@@ -12,6 +12,6 @@ The member you are trying to access cannot be found. This error can occur when a
   
 1.  If the member exists, ensure that it is declared as `Public`.  
   
-## See Also  
+## See also
  [Public](../../visual-basic/language-reference/modifiers/public.md)  
  [Early and Late Binding](../../visual-basic/programming-guide/language-features/early-late-binding/index.md)

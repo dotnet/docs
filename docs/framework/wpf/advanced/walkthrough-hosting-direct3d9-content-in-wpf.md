@@ -65,6 +65,6 @@ This walkthrough shows how to host Direct3D9 content in a Windows Presentation F
   
      The Direct3D9 content appears within the WPF application.  
   
-## See Also  
+## See also
  <xref:System.Windows.Interop.D3DImage>  
  [Performance Considerations for Direct3D9 and WPF Interoperability](../../../../docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md)

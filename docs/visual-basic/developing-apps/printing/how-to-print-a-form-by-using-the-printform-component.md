@@ -56,7 +56,7 @@ The <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component enables
     PrintForm1.Print()  
     ```  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintAction%2A>  
  <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintFileName%2A>  
  [How to: Print the Client Area of a Form](../../../visual-basic/developing-apps/printing/how-to-print-the-client-area-of-a-form.md)  

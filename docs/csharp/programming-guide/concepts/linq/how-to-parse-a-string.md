@@ -39,6 +39,6 @@ XElement contacts = XElement.Parse(
 Console.WriteLine(contacts);  
 ```  
   
-## See Also
+## See also
 
 - [Parsing XML (C#)](../../../../csharp/programming-guide/concepts/linq/parsing-xml.md)

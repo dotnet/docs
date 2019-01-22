@@ -78,7 +78,7 @@ Many [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md
 |<xref:System.Windows.Forms.VScrollBar>|<xref:System.Windows.Controls.Primitives.ScrollBar>|Scrolling is built into container controls.|  
 |<xref:System.Windows.Forms.WebBrowser>|<xref:System.Windows.Controls.Frame>, <xref:System.Windows.Controls.WebBrowser?displayProperty=nameWithType>|The <xref:System.Windows.Controls.Frame> control can host HTML pages.<br /><br /> Starting in the [!INCLUDE[net_v35SP1_short](../../../../includes/net-v35sp1-short-md.md)], the <xref:System.Windows.Controls.WebBrowser?displayProperty=nameWithType> control can host HTML pages and also backs the <xref:System.Windows.Controls.Frame> control.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [WPF Designer for Windows Forms Developers](https://msdn.microsoft.com/library/47ad0909-e89b-4996-b4ac-874d929f94ca)  

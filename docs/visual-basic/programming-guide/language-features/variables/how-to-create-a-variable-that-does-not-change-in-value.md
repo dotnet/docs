@@ -37,6 +37,6 @@ The notion of a variable that does not change its value might appear to be contr
   
      If you do not know the value at compile time, or cannot compute it at compile time in a single statement, you can still assign it at run time in a constructor. To do this, you must declare the `ReadOnly` variable at class or structure level. In the constructor for that class or structure, compute the variable's fixed value, and assign it to the variable before returning from the constructor.  
   
-## See Also  
+## See also
  [WriteOnly](../../../../visual-basic/language-reference/modifiers/writeonly.md)  
  [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)

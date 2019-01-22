@@ -69,7 +69,7 @@ result = Not expression
   
  The preceding example produces results of –11, –9, and –7, respectively.  
   
-## See Also  
+## See also
  [Logical/Bitwise Operators (Visual Basic)](../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
  [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  

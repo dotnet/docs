@@ -15,7 +15,7 @@ Topics in this section address issues to consider when developing or deploying a
   
  [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)  
   
-## See Also  
+## See also
  [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
  [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)  
  [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)  

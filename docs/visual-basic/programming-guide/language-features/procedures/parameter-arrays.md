@@ -50,7 +50,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
   
  [!code-vb[VbVbcnProcedures#49](./codesnippet/VisualBasic/parameter-arrays_3.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Information.UBound%2A>  
  [Procedures](./index.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  

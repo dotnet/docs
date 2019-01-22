@@ -106,7 +106,7 @@ Whether you are writing a new Windows app for Windows 10 or you are migrating an
   
 -   [Runtime Exceptions in .NET Native Apps](../../../docs/framework/net-native/runtime-exceptions-in-net-native-apps.md)  
   
-## See Also  
+## See also
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
  [NIB: .NET Native Setup and Configuration](https://msdn.microsoft.com/library/7c9bc375-8b87-4c33-bede-72d513e362ec)  
  [.NET Native and Compilation](../../../docs/framework/net-native/net-native-and-compilation.md)  

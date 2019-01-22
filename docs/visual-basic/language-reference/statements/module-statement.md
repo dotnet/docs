@@ -90,7 +90,7 @@ End Module
 ## Example  
  [!code-vb[VbVbalrStatements#69](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/module-statement_1.vb)]  
   
-## See Also  
+## See also
  [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
  [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
  [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)  

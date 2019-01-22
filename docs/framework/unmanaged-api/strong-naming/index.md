@@ -105,6 +105,6 @@ The strong naming API enables a client to administer strong name signing for ass
  [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  
  Represents the public key of a public/private key pair in binary format.  
   
-## See Also  
+## See also
  [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)  
  [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)

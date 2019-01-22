@@ -98,7 +98,7 @@ Specifies authentication behaviors for client certificates used by a service.
 </serviceBehaviors>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>  
  <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
  <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>  

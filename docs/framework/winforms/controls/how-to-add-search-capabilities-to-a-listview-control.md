@@ -41,7 +41,7 @@ Oftentimes when working with a large list of items in a <xref:System.Windows.For
  [!code-csharp[System.Windows.Forms.ListViewFindItems#2](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewFindItems/CS/form1.cs#2)]
  [!code-vb[System.Windows.Forms.ListViewFindItems#2](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewFindItems/VB/form1.vb#2)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ListView>  
  <xref:System.Windows.Forms.ListView.FindItemWithText%2A>  
  <xref:System.Windows.Forms.ListView.FindNearestItem%2A>  

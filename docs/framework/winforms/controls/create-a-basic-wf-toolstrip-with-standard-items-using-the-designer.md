@@ -22,7 +22,7 @@ The following procedure demonstrates how to create a <xref:System.Windows.Forms.
   
 3.  In the **ToolStrip Tasks** pane, choose **Insert Standard Items**.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.ToolStrip>  
  [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
  [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)  

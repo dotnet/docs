@@ -67,7 +67,7 @@ Specifies the assembly that provides the application domain manager for the defa
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>  
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>  
 - [\<appDomainManagerType> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)  

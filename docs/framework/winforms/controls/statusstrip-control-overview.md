@@ -35,7 +35,7 @@ A <xref:System.Windows.Forms.StatusStrip> control displays information about an 
 |<xref:System.Windows.Forms.ToolStripSplitButton>|Represents a two-part control that is a standard button and a drop-down menu.|  
 |<xref:System.Windows.Forms.ToolStripProgressBar>|Displays the completion state of a process.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.StatusStrip>  
  <xref:System.Windows.Forms.ToolStripStatusLabel>  
  <xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A>

@@ -60,7 +60,7 @@ This topic shows how to enable [!INCLUDE[TLA#tla_winxp](../../../../includes/tla
   
      The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is painted with the default system style.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Application.EnableVisualStyles%2A>  
  <xref:System.Windows.Forms.VisualStyles>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  

@@ -108,6 +108,6 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  ![ClearType settings in the Registry Editor](../../../../docs/framework/wpf/advanced/media/cleartyperegistry01.png "ClearTypeRegistry01")  
   
-## See Also  
+## See also
  [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  
  [ClearType Antialiasing](/windows/desktop/gdi/cleartype-antialiasing)

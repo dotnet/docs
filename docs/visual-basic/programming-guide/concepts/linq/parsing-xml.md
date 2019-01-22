@@ -17,5 +17,5 @@ The topics in this section describe how to parse XML documents.
 |[How to: Create a Tree from an XmlReader (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md)|Shows how to create an XML tree directly from an <xref:System.Xml.XmlReader>.|  
 |[How to: Stream XML Fragments from an XmlReader (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-stream-xml-fragments-from-an-xmlreader.md)|Shows how to stream XML fragments by using an <xref:System.Xml.XmlReader>.<br /><br /> When you have to process arbitrarily large XML files, it might not be feasible to load the whole XML tree into memory. Instead, you can stream XML fragments.|  
   
-## See Also  
+## See also
  [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

@@ -31,7 +31,7 @@ Quantifier operations return a <xref:System.Boolean> value that indicates whethe
   
  [!code-vb[CsLINQAnyAll#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/quantifier-operations_2.vb)]  
   
-## See Also  
+## See also
  <xref:System.Linq>  
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)  

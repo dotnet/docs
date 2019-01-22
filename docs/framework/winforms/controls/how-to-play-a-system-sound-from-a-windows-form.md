@@ -37,7 +37,7 @@ public void playExclamation()
   
 -   A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
-## See Also  
+## See also
  <xref:System.Media.SoundPlayer>  
  <xref:System.Media.SystemSounds>  
  [How to: Play a Beep from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-beep-from-a-windows-form.md)  

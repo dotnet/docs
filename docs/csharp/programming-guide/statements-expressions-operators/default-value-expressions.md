@@ -54,7 +54,7 @@ The following example shows many usages of the `default` literal in a default va
 
 [!code-csharp[csProgGuideGenerics#3](../../../../samples/snippets/csharp/programming-guide/statements-expressions-operators/default-literal.cs)]
 
-## See Also
+## See also
 
 - <xref:System.Collections.Generic>  
 - [C# Programming Guide](../index.md)  

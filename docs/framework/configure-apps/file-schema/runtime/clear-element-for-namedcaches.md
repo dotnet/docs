@@ -46,5 +46,5 @@ Clears all `namedCache` entries in the `namedCaches` collection for a memory cac
 ## Remarks  
  The `clear` element clears all `namedCache` entries in the named cache collection for a memory cache. You can use the `clear` element before you use the `add` element to add a new named cache entry in order to be certain there are no other named caches in the collection.  
   
-## See Also  
+## See also
 - [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)

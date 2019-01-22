@@ -41,7 +41,7 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.PrivacyNoticeElement>  
  <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

@@ -40,7 +40,7 @@ If you use the **-target:winmdobj** compiler option, the compiler creates an int
 csc -target:winmdobj filename.cs  
 ```  
   
-## See Also  
+## See also
 
 - [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

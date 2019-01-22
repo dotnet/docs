@@ -217,7 +217,7 @@ Private Sub Sort(ByVal sortBy As String, ByVal direction As ListSortDirection)
 End Sub  
 ```  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ListView>  
  <xref:System.Windows.Controls.GridView>  
  [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  

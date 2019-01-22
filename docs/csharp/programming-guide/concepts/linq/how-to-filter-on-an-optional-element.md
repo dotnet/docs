@@ -89,7 +89,7 @@ Child Two Text
 Child Four Text  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>  
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>  

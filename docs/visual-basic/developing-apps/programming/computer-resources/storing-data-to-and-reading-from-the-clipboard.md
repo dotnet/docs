@@ -62,7 +62,7 @@ The Clipboard can be used to store data, such as text and images. Because the Cl
 > [!IMPORTANT]
 >  Because the Clipboard can be accessed by other users, do not use it to store sensitive information, such as passwords or confidential data.  
   
-## See also  
+## See also
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>  
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream%2A>  
  <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject%2A>  

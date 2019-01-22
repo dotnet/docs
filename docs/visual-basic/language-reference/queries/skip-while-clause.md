@@ -36,7 +36,7 @@ Skip While expression
   
  [!code-vb[VbSimpleQuerySamples#3](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/skip-while-clause_1.vb)]  
   
-## See Also  
+## See also
  [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
  [Queries](../../../visual-basic/language-reference/queries/index.md)  
  [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  

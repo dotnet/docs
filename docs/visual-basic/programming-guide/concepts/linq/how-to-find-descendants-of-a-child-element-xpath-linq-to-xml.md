@@ -63,5 +63,5 @@ Results are identical
 This is the start of a sentence.  This is a second sentence.  
 ```  
   
-## See Also  
+## See also
  [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

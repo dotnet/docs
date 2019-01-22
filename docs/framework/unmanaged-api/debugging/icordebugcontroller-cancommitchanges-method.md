@@ -21,5 +21,5 @@ ms.author: "ronpet"
 # ICorDebugController::CanCommitChanges Method
 `CanCommitChanges` is obsolete. Do not call this method.  
   
-## See Also  
+## See also
  

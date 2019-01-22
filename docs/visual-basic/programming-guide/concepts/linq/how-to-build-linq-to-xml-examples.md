@@ -28,5 +28,5 @@ Imports System.Reflection
 Imports System.IO.Packaging  
 ```  
   
-## See Also  
+## See also
  [LINQ to XML Programming Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

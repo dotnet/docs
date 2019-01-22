@@ -52,6 +52,6 @@ This callback is triggered whenever JIT compilation of a dynamic method has fini
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
-## See Also  
+## See also
  [DynamicMethodJITCompilationStarted Method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)  
  [ICorProfilerCallback8 Interface](icorprofilercallback8-interface.md)

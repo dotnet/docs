@@ -167,7 +167,7 @@ Binding a data source to a control is essential for providing users with access 
   
 10. Press F5 to build and run the application.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  

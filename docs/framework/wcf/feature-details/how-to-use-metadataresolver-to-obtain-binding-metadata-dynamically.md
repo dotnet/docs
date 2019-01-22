@@ -39,5 +39,5 @@ This topic shows you how to use the <xref:System.ServiceModel.Description.Metada
     }  
     ```  
   
-## See Also  
+## See also
  [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)

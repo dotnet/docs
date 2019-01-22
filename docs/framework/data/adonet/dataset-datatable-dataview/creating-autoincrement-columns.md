@@ -29,7 +29,7 @@ workColumn.AutoIncrementSeed = 200;
 workColumn.AutoIncrementStep = 3;  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataColumn>  
  [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)  
  [DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatables.md)  

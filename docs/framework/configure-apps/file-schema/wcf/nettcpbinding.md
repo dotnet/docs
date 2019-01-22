@@ -140,7 +140,7 @@ The binding is specified in the configuration files for the client and service. 
 </bindings>
 ```  
   
-## See also  
+## See also
 
 - <xref:System.ServiceModel.NetTcpBinding>  
 - <xref:System.ServiceModel.Configuration.NetTcpBindingElement>  

@@ -39,5 +39,5 @@ Generally speaking, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-
 ## Differences from .NET  
  All supported sequence operators work as expected in the common language runtime (CLR) except for `Average`. `Average` returns a value of the same type as the type being averaged, whereas in the CLR `Average` always returns either a <xref:System.Double> or a <xref:System.Decimal>. If the source argument is explicitly cast to double / decimal or the selector casts to double / decimal, the resulting SQL will also have such a conversion and the result will be as expected.  
   
-## See Also  
+## See also
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

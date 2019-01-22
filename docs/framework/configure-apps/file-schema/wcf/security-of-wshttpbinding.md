@@ -63,7 +63,7 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 ## Remarks  
  The WSHttpBinding class is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSHttpSecurity>  
  <xref:System.ServiceModel.WSHttpBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.WSHttpBindingElement.Security%2A>  

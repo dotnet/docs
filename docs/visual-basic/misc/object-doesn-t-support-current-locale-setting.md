@@ -12,6 +12,6 @@ You tried to access an object that does not support the locale setting for the c
   
 -   Check which locale settings the object supports.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
 

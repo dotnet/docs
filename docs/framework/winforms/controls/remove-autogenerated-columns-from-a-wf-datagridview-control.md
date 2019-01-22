@@ -37,7 +37,7 @@ When your <xref:System.Windows.Forms.DataGridView> control is set to autogenerat
   
 -   References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=nameWithType>  

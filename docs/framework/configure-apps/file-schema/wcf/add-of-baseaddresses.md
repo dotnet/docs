@@ -40,7 +40,7 @@ Represents a configuration element that specifies the base addresses used by the
 |-------------|-----------------|  
 |[\<baseAddresses>](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md)|A collection of `baseAddress` elements.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.HostElement>  
  <xref:System.ServiceModel.ServiceHost>  
  <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>  

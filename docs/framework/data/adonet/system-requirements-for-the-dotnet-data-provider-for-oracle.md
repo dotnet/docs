@@ -31,6 +31,6 @@ Unicode=True
 ### OracleLob Can Only Update Full Characters.  
  For usability reasons, the <xref:System.Data.OracleClient.OracleLob> object inherits from the .NET Framework Stream class, and provides **ReadByte** and **WriteByte** methods. It also implements methods, such as **CopyTo** and **Erase**, that work on sections of Oracle **LOB** objects. In contrast, Oracle client software provides a number of APIs to work with character **LOB**s (**CLOB** and **NCLOB**). However, these APIs work on full characters only. Because of this difference, the Data Provider for Oracle implements support for **Read** and **ReadByte** to work with UTF-16 data in a byte-wise manner. However, the other methods of the **OracleLob** object only allow full-character operations.  
   
-## See Also  
+## See also
  [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

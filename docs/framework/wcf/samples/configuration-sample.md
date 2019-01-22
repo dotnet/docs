@@ -263,4 +263,4 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
 4.  Run the client executable. Note that the client is able to locate the service.  
   
-## See Also
+## See also

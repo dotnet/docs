@@ -52,7 +52,7 @@ Compiler and language provider settings specify compiler configuration elements 
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.CodeDom.Compiler.CompilerInfo>  
 - <xref:System.CodeDom.Compiler.CodeDomProvider>  
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  

@@ -28,6 +28,6 @@ The <xref:System.Media.SoundPlayer> class enables you to easily include sounds i
 |<xref:System.Media.SoundPlayer.Stop%2A> method|Stops any sound currently playing.|  
 |<xref:System.Media.SoundPlayer.LoadCompleted> event|Raised after the load of a sound is attempted.|  
   
-## See Also  
+## See also
  <xref:System.Media.SoundPlayer>  
  <xref:System.Media.SystemSounds>

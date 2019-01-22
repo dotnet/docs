@@ -94,7 +94,7 @@ MsgBox(output.ToString())
   
  [Aggregation Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/aggregation-operations.md)  
   
-## See Also  
+## See also
  <xref:System.Linq.Enumerable>  
  <xref:System.Linq.Queryable>  
  [Introduction to LINQ (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)  

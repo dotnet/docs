@@ -211,7 +211,7 @@ Managed structs are created on the stack and aren't removed until the method ret
 
 Blittable structs are much more performant as they can simply be used directly by the marshalling layer. Try to make structs blittable (for example, avoid `bool`). For more information, see the [Blittable Types](#blittable-types) section.
 
-*If* the struct is blittable, . As mentioned above, you can validate that the type is blittable by attempting to create a pinned `GCHandle`. If the type is not a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
+*If* the struct is blittable, use `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for better performance. As mentioned above, you can validate that the type is blittable by attempting to create a pinned `GCHandle`. If the type is not a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 
 Pointers to structs in definitions must either be passed by `ref` or use `unsafe` and `*`.
 

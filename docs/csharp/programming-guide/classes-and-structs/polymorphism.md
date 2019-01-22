@@ -89,7 +89,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
   
 -   [How to: Override the ToString Method](../../../csharp/programming-guide/classes-and-structs/how-to-override-the-tostring-method.md)  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  

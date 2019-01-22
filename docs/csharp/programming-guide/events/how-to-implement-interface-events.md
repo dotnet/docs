@@ -52,7 +52,7 @@ By providing your own accessors, you can specify whether the two events are repr
   
  [!code-csharp[WrapTwoInterfaceEvents](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-implement-interface-events_1.cs#everything)]
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Events](../../../csharp/programming-guide/events/index.md)  

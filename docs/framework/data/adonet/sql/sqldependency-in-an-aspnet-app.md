@@ -51,6 +51,6 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
   
  Now update the data in the database, using a Transact-SQL UPDATE command and refresh the page. The time displayed now indicates that the cache was refreshed with the new data from the database. Note that although the cache is updated, the time displayed on the page does not change until a postback event occurs.  
   
-## See Also  
+## See also
  [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

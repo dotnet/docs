@@ -44,7 +44,7 @@ winmdexp [options] winmdmodule
   
  When you write a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app or a [!INCLUDE[wrt](../../../includes/wrt-md.md)] component with C# or Visual Basic, the .NET Framework provides support to make programming with the [!INCLUDE[wrt](../../../includes/wrt-md.md)] more natural. This is discussed in the article [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md). In the process, some commonly used [!INCLUDE[wrt](../../../includes/wrt-md.md)] types are mapped to .NET Framework types. Winmdexp.exe reverses this process and produces an API surface that uses the corresponding [!INCLUDE[wrt](../../../includes/wrt-md.md)] types. For example, types that are constructed from the <xref:System.Collections.Generic.IList%601> interface map to types that are constructed from the [!INCLUDE[wrt](../../../includes/wrt-md.md)][IVector\<T>](https://go.microsoft.com/fwlink/p/?LinkId=251132)interface.  
   
-## See Also  
+## See also
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)  
  [Creating Windows Runtime Components in C# and Visual Basic](https://go.microsoft.com/fwlink/p/?LinkID=238313)  
  [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)  

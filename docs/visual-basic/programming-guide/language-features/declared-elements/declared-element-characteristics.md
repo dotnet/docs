@@ -47,7 +47,7 @@ A *characteristic* of a declared element is an aspect of that element that affec
   
  <sup>1</sup> Scope is sometimes referred to as *visibility*.  
   
-## See Also  
+## See also
  [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)  
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
  [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  

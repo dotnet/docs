@@ -54,7 +54,7 @@ Creates a file that you can use when you file a bug report.
 vbc -bugreport:problem.txt t2.vb  
 ```  
   
-## See Also  
+## See also
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [-debug (Visual Basic)](../../../visual-basic/reference/command-line-compiler/debug.md)  
  [-errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)  

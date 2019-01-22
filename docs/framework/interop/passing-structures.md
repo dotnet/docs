@@ -169,7 +169,7 @@ public class TestPlatformInvoke
 }  
 ```  
   
-## See Also  
+## See also
  [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)  
  <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
  <xref:System.Runtime.InteropServices.StructLayoutAttribute>  

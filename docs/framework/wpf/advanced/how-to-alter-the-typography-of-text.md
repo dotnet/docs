@@ -29,5 +29,5 @@ The following example shows how to set the <xref:System.Windows.Documents.TextEl
  [!code-csharp[TextElementSnippets#_TextElement_Typog](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml.cs#_textelement_typog)]
  [!code-vb[TextElementSnippets#_TextElement_Typog](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextElementSnippets/visualbasic/window1.xaml.vb#_textelement_typog)]  
   
-## See Also  
+## See also
  [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

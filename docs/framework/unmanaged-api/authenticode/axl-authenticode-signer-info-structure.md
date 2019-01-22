@@ -34,5 +34,5 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`pwszDescriptionUrl`|The URL of the description.|  
 |`pChainContext`|The chain context of the signer. See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.|  
   
-## See Also  
+## See also
  [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

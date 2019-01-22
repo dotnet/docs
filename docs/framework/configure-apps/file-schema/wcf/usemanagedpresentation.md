@@ -36,7 +36,7 @@ A binding element used to communicate with a CardSpace Security Token Service th
 ## Remarks  
  This element is used by an identity provider to express in its policy the fact that it supports the CardSpace profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that CardSpace profile.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.UseManagedPresentationElement>  
  <xref:System.ServiceModel.Channels.UseManagedPresentationBindingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

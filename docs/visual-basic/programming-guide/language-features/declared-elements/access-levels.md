@@ -107,7 +107,7 @@ For more information see [setting the Visual Basic language version](../../../la
 |`Private`|Declaration context:<br /><br /> Code in the type that declares a private element, including code within contained types, can access the element|Interfaces<br /><br /> Classes<br /><br /> Structures<br /><br /> Structure members<br /><br /> Procedures<br /><br /> Properties<br /><br /> Member variables<br /><br /> Constants<br /><br /> Enumerations<br /><br /> Events<br /><br /> External declarations<br /><br /> Delegates|Module<br /><br /> Class<br /><br /> Structure|
 |`Private Protected`|Code in the class that declares a private protected element, or code in a derived class found in the same assembly as the bas class.|Interfaces<br /><br /> Classes<br /><br /> Structures<br /><br /> Procedures<br /><br /> Properties<br /><br /> Member variables<br /><br /> Constants<br /><br /> Enumerations<br /><br /> Events<br /><br /> External declarations<br /><br /> Delegates|Class|
   
-## See Also  
+## See also
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
  [Static](../../../../visual-basic/language-reference/modifiers/static.md)  
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  

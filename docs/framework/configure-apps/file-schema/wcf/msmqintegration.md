@@ -73,7 +73,7 @@ Specifies a MSMQ transport for custom binding.
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>  
  <xref:System.ServiceModel.Channels.TransportBindingElement>  
  <xref:System.ServiceModel.Channels.CustomBinding>  

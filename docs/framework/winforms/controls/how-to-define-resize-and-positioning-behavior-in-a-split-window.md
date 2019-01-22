@@ -57,6 +57,6 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
   
      Moving the splitter slightly to the left or right will have no discernible effect; however, when the mouse pointer goes 10 pixels in either direction, the splitter will snap to the new position.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.SplitContainer>  
  <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A>

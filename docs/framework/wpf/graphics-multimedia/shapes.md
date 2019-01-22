@@ -22,7 +22,7 @@ ms.assetid: 893253b8-c2df-4f22-961d-cbc533d64c79
  [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/shapes-how-to-topics.md)  
   
-## See Also  
+## See also
  <xref:System.Windows.Shapes.Shape>  
  [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
  [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

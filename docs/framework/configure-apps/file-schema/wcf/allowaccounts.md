@@ -34,7 +34,7 @@ Contains a collection of configuration elements that specify user accounts for p
 |-------------|-----------------|  
 |[\<net.pipe>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-pipe.md) or [\<net.tcp>](../../../../../docs/framework/configure-apps/file-schema/wcf/net-tcp.md)|Specifies configuration settings for the Net Pipe or TCP sharing services.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activation.Configuration.NetTcpSection.AllowAccounts%2A>  
  <xref:System.ServiceModel.Activation.Configuration.NetPipeSection.AllowAccounts%2A>  
  <xref:System.ServiceModel.Activation.Configuration.SecurityIdentifierElementCollection>  

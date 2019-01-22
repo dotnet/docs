@@ -80,7 +80,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
   
  This binding element is the default binding element used by the Message Queuing standard binding (`netMsmqBinding`).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.MsmqTransportElement>  
  <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>  
  <xref:System.ServiceModel.Channels.TransportBindingElement>  

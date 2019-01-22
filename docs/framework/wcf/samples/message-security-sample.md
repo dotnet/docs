@@ -23,7 +23,8 @@ This sample demonstrates how to implement an application that uses the `basicHtt
                bindingConfiguration="Binding1"   
                contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </service>  
-  </services>   …  
+  </services>  
+  ...  
 </system.serviceModel>  
 ```  
   
@@ -172,4 +173,4 @@ Press <ENTER> to terminate client.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity`  
   
-## See Also
+## See also

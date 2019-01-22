@@ -180,7 +180,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  For more information, see <xref:System.Xaml.IDestinationTypeProvider>.  
   
-## See Also  
+## See also
  <xref:System.Windows.Markup.MarkupExtension>  
  <xref:System.Xaml.XamlObjectWriter>  
  [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md)  

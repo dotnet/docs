@@ -184,7 +184,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 8.  In Visual Studio, click **Clean Solution** on the **Build** menu to clean up the completed project.  
   
-## See Also
+## See also
 
 - [Auto-Implemented Properties (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)  
 - [Auto-Implemented Properties (C#)](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  

@@ -22,7 +22,7 @@ Explicit [interface](../../../csharp/language-reference/keywords/interface.md) i
   
  [!code-csharp[csProgGuideInheritance#11](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-explicitly-implement-members-of-two-interfaces_3.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  

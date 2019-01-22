@@ -48,5 +48,5 @@ Configures the characteristics of the script used to discover Web proxies.
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
-## See Also  
+## See also
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

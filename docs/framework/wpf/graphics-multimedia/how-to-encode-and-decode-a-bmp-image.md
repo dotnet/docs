@@ -31,5 +31,5 @@ The following examples show how to decode and encode a [!INCLUDE[TLA#tla_bmp](..
  [!code-csharp[BmpBitmapDecoderEncoder#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/CSharp/BitmapFrame.cs#4)]
  [!code-vb[BmpBitmapDecoderEncoder#4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#4)]  
   
-## See Also  
+## See also
  [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

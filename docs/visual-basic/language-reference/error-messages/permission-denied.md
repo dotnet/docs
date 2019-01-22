@@ -16,5 +16,5 @@ An attempt was made to write to a write-protected disk or to access a locked fil
   
 3.  To access the registry, check that your user permissions include this type of registry access.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

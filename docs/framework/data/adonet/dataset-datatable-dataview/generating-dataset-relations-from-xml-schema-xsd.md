@@ -91,5 +91,5 @@ msdata:childkey="" />
  [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a **DataSet**.  
   
-## See Also  
+## See also
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

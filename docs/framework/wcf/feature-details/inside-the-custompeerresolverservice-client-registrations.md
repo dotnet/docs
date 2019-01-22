@@ -27,5 +27,5 @@ Each node in the mesh publishes its endpoint information to the resolver service
 ## RegistrationLifetime and Refresh  
  When a node registers with a resolver service, it receives a <xref:System.ServiceModel.PeerResolvers.RegisterResponseInfo> object from the service. This object has a `RegistrationLifetime` property which indicates to the node how much time it has before the registration expires and is removed by the resolver service. If, for example, the `RegistrationLifetime` is 2 minutes, the node needs to call `Refresh` in under 2 minutes to ensure the record stays fresh and is not deleted. When the resolver service receives a `Refresh` request, it looks up the record and resets the expiration time. Refresh returns a <xref:System.ServiceModel.PeerResolvers.RefreshResponseInfo> object with a `RegistrationLifetime` property.  
   
-## See Also  
+## See also
  [Peer Resolvers](../../../../docs/framework/wcf/feature-details/peer-resolvers.md)

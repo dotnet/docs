@@ -41,7 +41,7 @@ This topic discusses how to create and store settings data on behalf of your app
   
  You can also use the <xref:System.Windows.Forms.Binding> class to bind settings programmatically to properties on forms and controls.  
   
-## See Also  
+## See also
  <xref:System.Configuration.ApplicationSettingsBase>  
  <xref:System.Configuration.SettingsProvider>  
  <xref:System.Configuration.LocalFileSettingsProvider>  

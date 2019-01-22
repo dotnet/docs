@@ -121,7 +121,7 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md)|Defines the security settings for a binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>  
  <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>  
  <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>  

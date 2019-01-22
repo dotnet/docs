@@ -221,5 +221,5 @@ Publish the current application but don't restore project-to-project (P2P) refer
 
 ## See also
 
-* [Target frameworks](../../standard/frameworks.md)
-* [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Target frameworks](../../standard/frameworks.md)
+- [Runtime IDentifier (RID) catalog](../rid-catalog.md)

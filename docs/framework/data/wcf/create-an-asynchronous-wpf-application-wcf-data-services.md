@@ -24,5 +24,5 @@ With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can bind d
  [!code-csharp[Astoria Northwind Client#WpfDataBindingAsync](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerordersasync.xaml.cs#wpfdatabindingasync)]
  [!code-vb[Astoria Northwind Client#WpfDataBindingAsync](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerordersasync.xaml.vb#wpfdatabindingasync)]  
   
-## See Also  
+## See also
  [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

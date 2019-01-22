@@ -21,7 +21,7 @@ You can use implicitly typed local variables whenever you want the compiler to d
   
  [!code-csharp[csProgGuideLINQ#33](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression_2.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  

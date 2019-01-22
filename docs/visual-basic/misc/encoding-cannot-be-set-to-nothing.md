@@ -12,7 +12,7 @@ An attempt to read from or write to a file has failed because the parameter `enc
   
 -   Supply a valid value for the `encoding` parameter.  
   
-## See Also  
+## See also
  [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)  
  [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  

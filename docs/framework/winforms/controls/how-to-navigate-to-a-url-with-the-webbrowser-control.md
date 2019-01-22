@@ -35,7 +35,7 @@ this.webBrowser1.Navigate("http://www.microsoft.com");
   
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.WebBrowser>  
  <xref:System.Windows.Forms.WebBrowser.DocumentCompleted?displayProperty=nameWithType>  
  <xref:System.Windows.Forms.WebBrowser.Navigating?displayProperty=nameWithType>  

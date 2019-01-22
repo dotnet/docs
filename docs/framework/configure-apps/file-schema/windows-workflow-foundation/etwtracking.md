@@ -78,7 +78,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
  <xref:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement>  
  [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  

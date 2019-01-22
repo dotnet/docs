@@ -67,7 +67,7 @@ foreach (DataRowView catDRV in catView)
 }  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataSet>  
  <xref:System.Data.DataView>  
  <xref:System.Data.DataRowView>  

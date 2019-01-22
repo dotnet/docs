@@ -80,7 +80,7 @@ Specifies the security settings of a local service for this binding.
   
  In a secure conversation session, note that both `inactivityTimeout` and the `receiveTimeout` attributes on the binding affect session timeout. The shorter of the two determines when timeouts occur.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>  
  <xref:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings%2A>  
  <xref:System.ServiceModel.Channels.SecurityBindingElement.LocalServiceSettings%2A>  

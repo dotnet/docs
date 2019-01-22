@@ -55,7 +55,7 @@ A *procedure* is a block of Visual Basic statements enclosed by a declaration st
   
 -   After you develop procedures for use in one program, you can use them in other programs, often with little or no modification. This helps you avoid code duplication.  
   
-## See Also  
+## See also
  [How to: Create a Procedure](./how-to-create-a-procedure.md)  
  [Sub Procedures](./sub-procedures.md)  
  [Function Procedures](./function-procedures.md)  

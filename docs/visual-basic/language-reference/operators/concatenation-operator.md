@@ -46,7 +46,7 @@ result = expression1 & expression2
   
  [!code-vb[VbVbalrOperators#2](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/concatenation-operator_1.vb)]  
   
-## See Also  
+## See also
  [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
  [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
  [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  

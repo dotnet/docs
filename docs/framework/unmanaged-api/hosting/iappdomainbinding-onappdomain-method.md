@@ -42,5 +42,5 @@ HRESULT OnAppDomain (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
+## See also
  [IAppDomainBinding Interface](../../../../docs/framework/unmanaged-api/hosting/iappdomainbinding-interface.md)

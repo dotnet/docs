@@ -33,7 +33,7 @@ bool result = int.TryParse(s, out i); //i now = 108
 ## .NET Framework Security  
  Always use the `TryParse` or `Parse` methods to validate user input from controls such as text boxes and combo boxes.  
   
-## See Also
+## See also
 
 - [How to: Convert a byte Array to an int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)  
 - [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)  

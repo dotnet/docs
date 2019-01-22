@@ -29,7 +29,7 @@ This example shows how to use the <xref:System.Windows.DataTemplate> and <xref:S
   
  [!code-xaml[ListViewTemplate#CellTemplateProperty](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#celltemplateproperty)]  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.ListView>  
  <xref:System.Windows.Controls.GridView>  
  [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  

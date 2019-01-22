@@ -25,7 +25,7 @@ You can use Visual Studio to edit the values of existing settings in your projec
   
 3.  In the Settings designer, find the setting for which you want to change the value and type the new value in the Value column.  
   
-## See Also  
+## See also
  [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)  
  [How To: Create a New Setting at Design Time](../../../../docs/framework/winforms/advanced/how-to-create-a-new-setting-at-design-time.md)  
  [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)

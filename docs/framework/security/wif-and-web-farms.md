@@ -244,7 +244,7 @@ namespace CacheLibrary
 }  
 ```  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>  
  <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>  
  <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler>  

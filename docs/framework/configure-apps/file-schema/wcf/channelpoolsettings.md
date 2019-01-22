@@ -52,7 +52,7 @@ Specifies the channel pool settings for a custom binding.
   
 -   The `maxOutboundChannelsPerEndpoint` quota sets cache limits on both the server and the client and is used to improve reliability. The default value is based on a conservatively modest allocation of resources that is suitable for a development environment and small installation scenarios. Service administrators should review the value if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings%2A>  
  <xref:System.ServiceModel.Channels.ChannelPoolSettings>  
  <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>  

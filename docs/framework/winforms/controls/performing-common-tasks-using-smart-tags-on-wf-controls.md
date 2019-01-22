@@ -59,7 +59,7 @@ As you construct forms and controls for your Windows Forms application, there ar
   
 6.  Click the smart-tag glyph. In the shortcut menu that appears next to the glyph, select the **Horizontal splitter orientation** item. Observe that the <xref:System.Windows.Forms.SplitContainer> control's splitter bar is now oriented horizontally.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.TextBox>  
  <xref:System.Windows.Forms.TabControl>  
  <xref:System.Windows.Forms.SplitContainer>  

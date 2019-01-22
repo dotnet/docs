@@ -50,7 +50,7 @@ The easiest way to inherit a form or other object is to use the **Inheritance Pi
     > [!NOTE]
     >  When you combine inherited controls and components with standard controls and components on Windows Forms, you might encounter conflicts with the z-ordering. You can correct this by modifying the z-order, which is done by clicking in the **Format** menu, pointing to **Order**, and then clicking **Bring To Front** or **Send To Back**. For more information about the z-order of controls, see [How to: Layer Objects on Windows Forms](../../../../docs/framework/winforms/controls/how-to-layer-objects-on-windows-forms.md).  
   
-## See Also  
+## See also
  [Inherits Statement](~/docs/visual-basic/language-reference/statements/inherits-statement.md)  
  [using](~/docs/csharp/language-reference/keywords/using.md)  
  [Effects of Modifying a Base Form's Appearance](../../../../docs/framework/winforms/advanced/effects-of-modifying-base-form-appearance.md)  

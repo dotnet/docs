@@ -42,5 +42,5 @@ class PeerSecuritySettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.PeerSecuritySettings>

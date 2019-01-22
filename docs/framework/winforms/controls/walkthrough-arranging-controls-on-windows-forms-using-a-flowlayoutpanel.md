@@ -181,7 +181,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 -   Set the <xref:System.Windows.Forms.Control.Visible%2A> property of one of the controls to `false` and note how the <xref:System.Windows.Forms.FlowLayoutPanel> reflows in response.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.FlowLayoutPanel>  
  <xref:System.Windows.Forms.TableLayoutPanel>  
  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  

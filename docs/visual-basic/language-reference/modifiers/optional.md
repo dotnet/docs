@@ -60,7 +60,7 @@ End Function
   
  [!code-vb[VbVbalrKeywords#21](../../../visual-basic/language-reference/codesnippet/VisualBasic/optional_1.vb)]  
   
-## See Also  
+## See also
  [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
  [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
  [Keywords](../../../visual-basic/language-reference/keywords/index.md)

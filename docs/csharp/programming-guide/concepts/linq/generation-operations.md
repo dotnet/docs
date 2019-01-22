@@ -17,7 +17,7 @@ Generation refers to creating a new sequence of values.
 |Range|Generates a collection that contains a sequence of numbers.|Not applicable.|<xref:System.Linq.Enumerable.Range%2A?displayProperty=nameWithType>|  
 |Repeat|Generates a collection that contains one repeated value.|Not applicable.|<xref:System.Linq.Enumerable.Repeat%2A?displayProperty=nameWithType>|  
   
-## See Also
+## See also
 
 - <xref:System.Linq>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)

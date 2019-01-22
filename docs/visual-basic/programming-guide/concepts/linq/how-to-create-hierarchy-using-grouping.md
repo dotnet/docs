@@ -73,5 +73,5 @@ Console.WriteLine(newData)
 </Root>  
 ```  
   
-## See Also  
+## See also
  [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

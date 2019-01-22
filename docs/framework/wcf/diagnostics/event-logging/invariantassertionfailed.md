@@ -13,6 +13,6 @@ Id: 106
 ## Description  
  This event indicates that an invariant assertion is false. The event lists the message, process name and process ID.  
   
-## See Also  
+## See also
  [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
  [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

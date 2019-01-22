@@ -38,6 +38,6 @@ This topic discusses conventions used throughout the Windows Identity Foundation
   
  Custom types must be derived from the type specified and they must provide a `public` default (0 argument) constructor.  
   
-## See Also  
+## See also
  [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md)  
  [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md)

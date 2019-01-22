@@ -38,7 +38,7 @@ variableorproperty &= expression
   
  [!code-vb[VbVbalrOperators#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-assignment-operator_1.vb)]  
   
-## See Also  
+## See also
  [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
  [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  

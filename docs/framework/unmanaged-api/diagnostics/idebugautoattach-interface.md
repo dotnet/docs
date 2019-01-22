@@ -29,5 +29,5 @@ Defines the interface for server-invoked debugger auto attach.
 ## Requirements  
  **Header:** DbgAutoAttach.idl  
   
-## See Also  
+## See also
  [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

@@ -14,5 +14,5 @@ This object does not support the specified property.
   
 2.  Check the object's documentation to make sure you are not trying to access something like a "text" property when the object actually supports a "caption" or similarly named property.  
   
-## See Also  
+## See also
  [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

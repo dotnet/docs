@@ -46,6 +46,6 @@ This section provides [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-
  [DataSet-Specific Operator Examples](../../../../docs/framework/data/adonet/dataset-specific-operator-examples-linq-to-dataset.md)  
  Contains examples that demonstrate how to use the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method and the <xref:System.Data.DataRowComparer> class.  
   
-## See Also  
+## See also
  [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)  
  [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)

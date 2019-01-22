@@ -148,7 +148,7 @@ public Collate(CollationMode collationMode, object collateThis) {...}
   
  If you are working with a XAML node stream on the save path, there generally is nothing present in an object graph representation that can inform you that the object to serialize was originally provided by a markup extension usage and a `ProvideValue` result. Scenarios that need to persist markup extension usages for round-tripping while also capturing other changes in the object graph must devise their own techniques for preserving the knowledge of a markup extension usage from the original XAML input. For example, to restore the markup extension usages, you may need to work with the node stream on the save path in order to restore markup extension usages, or perform some type of merge between the original XAML and the round-tripped XAML. Some XAML-implementing frameworks such as WPF use intermediate types (expressions) to help represent cases where markup extension usages provided the values.  
   
-## See Also  
+## See also
  <xref:System.Windows.Markup.MarkupExtension>  
  [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md)  
  [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

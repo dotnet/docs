@@ -67,7 +67,7 @@ This tool reads the assembly metadata and adds the necessary entries to the regi
   
 You can run Regasm.exe on an assembly located in any directory, and then run the [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) to move it to the global assembly cache. Moving the assembly does not invalidate location registry entries, because the global assembly cache is always examined if the assembly is not found elsewhere.  
   
-## See also  
+## See also
 
 - [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md)  
 - [COM Callable Wrapper](../../../docs/framework/interop/com-callable-wrapper.md)

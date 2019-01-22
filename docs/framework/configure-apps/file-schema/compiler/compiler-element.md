@@ -96,7 +96,7 @@ The following example illustrates a typical compiler configuration element:
 </configuration>
 ```
 
-## See Also
+## See also
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>

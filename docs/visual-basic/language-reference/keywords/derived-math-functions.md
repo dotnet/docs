@@ -48,5 +48,5 @@ The following table shows non-intrinsic math functions that can be derived from 
 |Inverse hyperbolic cosecant (Acsch(x))|Log((Sign(x) * Sqrt(x \* x + 1) + 1) / x)|  
 |Inverse hyperbolic cotangent (Acoth(x))|Log((x + 1) / (x – 1)) / 2|  
   
-## See Also  
+## See also
  [Math Functions](../../../visual-basic/language-reference/functions/math-functions.md)

@@ -64,5 +64,5 @@ External mapping files and .dbml files that you modify must be validated against
   
 7.  In the **File name** box, create a file name with an .xsd extension.  
   
-## See Also  
+## See also
  [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)

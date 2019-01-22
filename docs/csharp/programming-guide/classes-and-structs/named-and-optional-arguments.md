@@ -123,7 +123,7 @@ AutoFormat parameters
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [How to: Use Named and Optional Arguments in Office Programming](../../../csharp/programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)  
 - [Using Type dynamic](../../../csharp/programming-guide/types/using-type-dynamic.md)  

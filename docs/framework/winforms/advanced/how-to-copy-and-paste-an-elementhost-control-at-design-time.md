@@ -36,7 +36,7 @@ This procedure shows you how to copy a Windows Presentation Foundation (WPF) con
   
      A new <xref:System.Windows.Forms.Integration.ElementHost> control named `elementHost2` is created on the form.  
   
-## See Also  
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>  
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>   

@@ -64,7 +64,7 @@ s.Shutdown(SocketShutdown.Both);
 s.Close();  
 ```  
   
-## See Also  
+## See also
  [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)  
  [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)  
  [Synchronous Client Socket Example](../../../docs/framework/network-programming/synchronous-client-socket-example.md)

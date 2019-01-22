@@ -12,7 +12,7 @@ Encoding is the process of transforming a set of Unicode characters into a seque
   
  The `textMessageEncoding` configuration section specifies a text encoder used to create text-based messages on the wire. Messages produced by this encoder are suitable for WS-* based interop. Web service or Web service client can generally understand textual XML. However, transmitting large blocks of binary data as text is the least efficient method for encoding XML messages  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.CustomBinding>  
  <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  

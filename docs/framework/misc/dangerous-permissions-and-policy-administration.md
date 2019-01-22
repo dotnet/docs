@@ -32,5 +32,5 @@ Several of the protected operations for which the .NET Framework provides permis
 |<xref:System.Security.Permissions.ReflectionPermission>||  
 |<xref:System.MemberAccessException>|Can use private members to defeat accessibility mechanisms.|  
   
-## See Also  
+## See also
  [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

@@ -569,7 +569,7 @@ private static IEnumerable<int> EvenSequence(
 }  
 ```  
   
-## See Also
+## See also
 
 - [Object and Collection Initializers](../../../csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)  
 - [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)  

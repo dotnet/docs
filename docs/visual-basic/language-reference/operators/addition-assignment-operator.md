@@ -51,7 +51,7 @@ variableorproperty += expression
   
  The value of `num1` is now 13, and the value of `str1` is now "103".  
   
-## See Also  
+## See also
  [+ Operator](../../../visual-basic/language-reference/operators/addition-operator.md)  
  [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
  [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  

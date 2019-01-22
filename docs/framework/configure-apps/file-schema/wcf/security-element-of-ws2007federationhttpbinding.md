@@ -58,7 +58,7 @@ Defines the security settings of the [\<ws2007FederationHttpBinding>](../../../.
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WSFederationHttpSecurity>  
  <xref:System.ServiceModel.WSFederationHttpBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.WSFederationHttpBindingElement.Security%2A>  

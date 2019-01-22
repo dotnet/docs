@@ -75,7 +75,7 @@ ms.author: "ronpet"
   
  The `MissingMetadataException` class contains no unique members; all of its members are inherited from its base class, <xref:System.TypeAccessException>.  
   
-## See Also  
+## See also
  <xref:System.Exception?displayProperty=nameWithType>  
  <xref:System.TypeAccessException>  
  [MissingInteropDataException Class](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md)  

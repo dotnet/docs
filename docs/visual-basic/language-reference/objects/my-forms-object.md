@@ -60,7 +60,7 @@ Provides properties for accessing an instance of each Windows form declared in t
 |Windows Service|No|  
 |Web Site|No|  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>  
  <xref:System.Windows.Forms.Form>  
  <xref:System.Windows.Forms.Form.Close%2A>  

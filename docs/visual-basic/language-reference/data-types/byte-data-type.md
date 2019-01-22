@@ -58,7 +58,7 @@ Dim number As Byte = &H_6A
 
 [!code-vb[VbVbalrDataTypes#16](../../../visual-basic/language-reference/data-types/codesnippet/VisualBasic/byte-data-type_1.vb)]  
 
-## See Also
+## See also
 
  <xref:System.Byte?displayProperty=nameWithType>  
  [Data Types](../../../visual-basic/language-reference/data-types/index.md)  

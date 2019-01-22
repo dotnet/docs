@@ -57,7 +57,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
   
  For the complete source code for the `FlashTrackBar` sample, see [How to: Create a Windows Forms Control That Shows Progress](../../../../docs/framework/winforms/controls/how-to-create-a-windows-forms-control-that-shows-progress.md).  
   
-## See Also  
+## See also
  [Events in Windows Forms Controls](../../../../docs/framework/winforms/controls/events-in-windows-forms-controls.md)  
  [Defining an Event](../../../../docs/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md)  
  [Events](../../../../docs/standard/events/index.md)  

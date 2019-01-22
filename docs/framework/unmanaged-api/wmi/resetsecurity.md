@@ -48,5 +48,5 @@ If the function fails, the return value is a non-zero error code. To get extende
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
+## See also
 [WMI and Performance Counters (Unmanaged API Reference)](index.md)

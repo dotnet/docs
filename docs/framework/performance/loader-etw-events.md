@@ -206,5 +206,5 @@ ms.author: "mairaw"
   
  Module range events are fired under any ETW level greater than or equal to 4 and are classified as informational events.  
   
-## See Also  
+## See also
  [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

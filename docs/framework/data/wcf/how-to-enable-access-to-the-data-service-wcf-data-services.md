@@ -23,6 +23,6 @@ In [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you must explici
   
      This enables clients to have read and write access to the `Orders` and `Order_Details` entity sets and read-only access to the `Customers` entity sets.  
   
-## See Also  
+## See also
  [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md)  
  [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md)

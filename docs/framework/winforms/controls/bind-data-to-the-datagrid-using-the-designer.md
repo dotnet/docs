@@ -38,7 +38,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
     > [!NOTE]
     >  If your project already has a data source, you can also use the **Data Sources** window to create a data form. For more information, see [Data Sources Window](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.DataGridView>  
  <xref:System.Windows.Forms.BindingSource>  
  <xref:System.Windows.Forms.DataGridView.DataMember%2A?displayProperty=nameWithType>  

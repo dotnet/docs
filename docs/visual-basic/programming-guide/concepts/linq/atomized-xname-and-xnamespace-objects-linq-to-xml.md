@@ -63,5 +63,5 @@ Next
 <C1>1</C1>  
 ```  
   
-## See Also  
+## See also
  [Performance (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)

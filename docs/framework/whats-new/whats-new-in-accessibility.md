@@ -435,7 +435,7 @@ Accessibility changes in the Workflow Designer include the following:
 
 - Users who choose High Contrast themes will see many improvements in the visibility of the Workflow Designer and its controls, like better contrast ratios between elements and more noticeable selection boxes used for focus elements.
 
-## See Also
+## See also
 
 [What's new in the .NET Framework](whats-new.md)
  

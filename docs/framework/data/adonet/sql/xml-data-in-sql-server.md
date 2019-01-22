@@ -13,6 +13,6 @@ SQL Server exposes the functionality of SQLXML inside the .NET Framework. Develo
  [Specifying XML Values as Parameters](../../../../../docs/framework/data/adonet/sql/specifying-xml-values-as-parameters.md)  
  Demonstrates how to pass XML data as a parameter to a command.  
   
-## See Also  
+## See also
  [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -30,7 +30,7 @@ ms.assetid: 660e3799-25ca-462c-8c4a-8bce04fbb031
   
  The `var` keyword is useful when the type of the variable is obvious or when it is not that important to explicitly specify nested generic types such as those that are produced by group queries. In general, we recommend that if you use `var`, realize that it can make your code more difficult for others to read. For more information, see [Implicitly Typed Local Variables](../../../../csharp/programming-guide/classes-and-structs/implicitly-typed-local-variables.md).  
   
-## See Also
+## See also
 
 - [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
 - [Generics](../../../../csharp/programming-guide/generics/index.md)

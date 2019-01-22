@@ -12,5 +12,5 @@ You attempted to change a property whose settings either cannot be set at run ti
   
 1.  Check the property and determine under what conditions it can be set.  
   
-## See Also  
+## See also
  [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -18,7 +18,7 @@ This section describes keywords used in type conversions:
   
 -   [operator](../../../csharp/language-reference/keywords/operator.md)  
   
-## See Also  
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

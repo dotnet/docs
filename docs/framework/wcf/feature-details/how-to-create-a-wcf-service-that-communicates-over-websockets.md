@@ -312,6 +312,6 @@ namespace Client
 </configuration>  
 ```  
   
-## See Also  
+## See also
  [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)  
  [Using the NetHttpBinding](../../../../docs/framework/wcf/feature-details/using-the-nethttpbinding.md)

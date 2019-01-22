@@ -29,7 +29,7 @@ Using the layout features of Visual Studio, you can precisely direct where contr
   
      For more information, see [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md). You can now use snaplines to align and arrange controls on your form.  
   
-## See Also  
+## See also
  [General, Windows Forms Designer, Options Dialog Box](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834)  
  [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)  
  [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  

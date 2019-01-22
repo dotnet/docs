@@ -52,7 +52,7 @@ Console.WriteLine(newTree);
 </Root>  
 ```  
   
-## See Also
+## See also
 
 - <xref:System.Xml.Linq.XContainer.CreateWriter%2A?displayProperty=nameWithType>  
 - <xref:System.Xml.Linq.XNode.CreateReader%2A?displayProperty=nameWithType>  

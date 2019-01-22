@@ -23,6 +23,6 @@ Preview events, also known as tunneling events, are routed events where the dire
   
  Each of these techniques has either side effects or limitations. The side effect of handling the Preview event is that handling the event at that point might disable handlers that expect to handle the bubbling event, and therefore the limitation is that it is usually not a good idea to mark the event handled while it is still on the Preview part of the route. The limitation of the `handledEventsToo` technique is that you cannot specify a `handledEventsToo` handler in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] as an attribute, you must register the event handler in code after obtaining an object reference to the element where the handler is to be attached.  
   
-## See Also  
+## See also
  [Marking Routed Events as Handled, and Class Handling](../../../../docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)  
  [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)

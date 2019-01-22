@@ -172,7 +172,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 -   Dock the <xref:System.Windows.Forms.TableLayoutPanel> control to the parent form. Resize the form and note the effect on the layout.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.FlowLayoutPanel>  
  <xref:System.Windows.Forms.TableLayoutPanel>  
  [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](../../../../docs/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)  

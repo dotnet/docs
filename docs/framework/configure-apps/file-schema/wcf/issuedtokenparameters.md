@@ -64,7 +64,7 @@ Specifies the parameters for a security token issued in a Federated security sce
 |[\<secureConversationBootstrap>](../../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md)|Specifies the default values used for initiating a secure conversation service.|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md)|Specifies the security options for a custom binding.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters>  
  <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>  
  <xref:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters%2A>  

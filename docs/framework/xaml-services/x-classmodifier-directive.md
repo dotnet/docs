@@ -47,7 +47,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 ## Security Notes  
  The access level as declared in `x:ClassModifier` is still subject to interpretation by particular frameworks and their capabilities. WPF includes capabilities to load and instantiate types where `x:ClassModifier` is `internal`, if that class is referenced from a WPF resource through a pack URI reference. As a consequence of this case and potentially others like it implemented by other frameworks, do not rely exclusively on `x:ClassModifier` to block all possible instantiation attempts.  
   
-## See Also  
+## See also
  [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)  
  [Code-Behind and XAML in WPF](../../../docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)  
  [x:FieldModifier Directive](../../../docs/framework/xaml-services/x-fieldmodifier-directive.md)  

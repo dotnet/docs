@@ -74,7 +74,7 @@ This topic describes how to create dependency properties using alternative custo
 ### Using CoerceValue to Cancel Value Changes  
  The property system will treat any <xref:System.Windows.CoerceValueCallback> that returns the value <xref:System.Windows.DependencyProperty.UnsetValue> as a special case. This special case means that the property change that resulted in the <xref:System.Windows.CoerceValueCallback> being called should be rejected by the property system, and that the property system should instead report whatever previous value the property had. This mechanism can be useful to check that changes to a property that were initiated asynchronously are still valid for the current object state, and suppress the changes if not. Another possible scenario is that you can selectively suppress a value depending on which component of property value determination is responsible for the value being reported. To do this, you can use the <xref:System.Windows.DependencyProperty> passed in the callback and the property identifier as input for <xref:System.Windows.DependencyPropertyHelper.GetValueSource%2A>, and then process the <xref:System.Windows.ValueSource>.  
   
-## See Also  
+## See also
  [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
  [Dependency Property Metadata](../../../../docs/framework/wpf/advanced/dependency-property-metadata.md)  
  [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

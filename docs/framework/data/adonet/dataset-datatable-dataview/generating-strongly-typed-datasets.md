@@ -88,7 +88,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
 </xs:schema>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataColumnCollection>  
  <xref:System.Data.DataSet>  
  [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)  

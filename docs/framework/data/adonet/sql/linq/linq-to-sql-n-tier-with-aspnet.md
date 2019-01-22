@@ -8,5 +8,5 @@ In [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)] applications 
   
  For more information about `LINQDataSource`, see [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136).  
   
-## See Also  
+## See also
  [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)

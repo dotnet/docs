@@ -36,5 +36,5 @@ Supports the Authenticode XrML license creation and verification module.
  [AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-timestamper-info-structure.md)  
  Defines the Authenticode time stamper information.  
   
-## See Also  
+## See also
  [Unmanaged API Reference](../../../../docs/framework/unmanaged-api/index.md)

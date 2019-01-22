@@ -64,7 +64,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     treeView1->Nodes->Clear();  
     ```  
   
-## See Also  
+## See also
  [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)  
  [TreeView Control Overview](../../../../docs/framework/winforms/controls/treeview-control-overview-windows-forms.md)  
  [How to: Set Icons for the Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-set-icons-for-the-windows-forms-treeview-control.md)  

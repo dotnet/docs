@@ -144,7 +144,7 @@ private static void OpenSqlConnection()
   
 -   Dedicated ASP.NET hosting using Windows Authentication. A single SQL Server Express instance can be hosted on an intranet. The application connects using the ASPNET Windows account, not by using impersonation. User instances should not be used for third-party or shared hosting scenarios where all applications would share the same user instance and would no longer remain isolated from each other.  
   
-## See Also  
+## See also
  [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
  [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)  
  [Connecting to a Data Source](../../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  

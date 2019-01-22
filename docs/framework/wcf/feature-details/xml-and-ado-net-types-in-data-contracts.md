@@ -196,7 +196,7 @@ The Windows Communication Foundation (WCF) data contract model supports certain 
   
  Support for typed DataSets in the data contract model is limited. Typed DataSets can be serialized and deserialized and can export their schema. However, the Data Contract schema import is unable to generate new typed DataSet types from the schema, as it can only reuse existing ones. You can point to an existing typed DataSet by using the `/r` switch on Svcutil.exe. If you attempt to use a Svcutil.exe without the `/r` switch on a service that uses a typed dataset, an alternative serializer (XmlSerializer) is automatically selected. If you must use the DataContractSerializer and must generate DataSets from schema, you can use the following procedure: generate the typed DataSet types (by using the Xsd.exe tool with the `/d` switch on the service), compile the types, and then point to them using the `/r` switch on Svcutil.exe.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.DataContractSerializer>  
  <xref:System.Xml.Serialization.IXmlSerializable>  
  [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  

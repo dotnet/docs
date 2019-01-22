@@ -46,5 +46,5 @@ HRESULT MapFile(
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
+## See also
  [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

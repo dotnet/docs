@@ -81,7 +81,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.TraceFilter>  
  <xref:System.Diagnostics.TraceListener>  
  <xref:System.Diagnostics.TraceSource>  

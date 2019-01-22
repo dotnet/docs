@@ -75,7 +75,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
   
  In WPF and when targeting [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], you can use XAML 2009 features together with `x:TypeArguments` but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features. If you need to markup compile the XAML, you must operate under the restrictions noted in the "XAML 2006 and WPF Generic XAML Usages" section.  
   
-## See Also  
+## See also
  [x:Class Directive](../../../docs/framework/xaml-services/x-class-directive.md)  
  [x:Type Markup Extension](../../../docs/framework/xaml-services/x-type-markup-extension.md)  
  [Built-in Types for Common XAML Language Primitives](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md)  

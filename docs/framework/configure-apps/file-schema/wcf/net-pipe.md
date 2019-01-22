@@ -60,5 +60,5 @@ Specifies configuration settings for the Named Pipe Activation Service, which ma
 |-------------|-----------------|  
 |[\<system.serviceModel.activation>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md)|Contains configuration settings for the listener process SMSvcHost.exe.|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Activation.Configuration.NetPipeSection>

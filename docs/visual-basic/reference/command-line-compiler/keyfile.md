@@ -45,7 +45,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
 vbc -keyfile:myfile.sn input.vb  
 ```  
   
-## See Also  
+## See also
  [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
  [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  

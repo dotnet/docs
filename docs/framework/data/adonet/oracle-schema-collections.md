@@ -373,5 +373,5 @@ The Microsoft .NET Framework Data Provider for Oracle supports the following spe
 |CHAR_LENGTH|Decimal|Character limit for string data types.|  
 |CHAR_USED|String|Indicates whether the byte limit (B) or char limit (C) is official for the string.|  
   
-## See Also  
+## See also
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

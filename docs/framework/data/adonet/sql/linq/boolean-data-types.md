@@ -17,5 +17,5 @@ Boolean operators work as expected in the common language runtime (CLR), except 
 |[Xor Operator](~/docs/visual-basic/language-reference/operators/xor-operator.md)|[^ Operator](~/docs/csharp/language-reference/operators/xor-operator.md)|  
 |[Not Operator](~/docs/visual-basic/language-reference/operators/not-operator.md)|[\! Operator](~/docs/csharp/language-reference/operators/logical-negation-operator.md)|  
   
-## See Also  
+## See also
  [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)

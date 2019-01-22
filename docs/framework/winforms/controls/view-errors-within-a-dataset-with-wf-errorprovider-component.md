@@ -56,6 +56,6 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     this.BindingContext [DataTable1].Position = 5;  
     ```  
   
-## See Also  
+## See also
  [ErrorProvider Component Overview](../../../../docs/framework/winforms/controls/errorprovider-component-overview-windows-forms.md)  
  [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider.md)

@@ -29,5 +29,5 @@ This interface is the reading complement to [ISymUnmanagedAsyncMethodPropertiesW
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
+## See also
  [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

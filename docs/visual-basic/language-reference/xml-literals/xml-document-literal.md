@@ -49,7 +49,7 @@ rootElement
   
  [!code-vb[VbXMLSamples#30](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-document-literal_1.vb)]  
   
-## See Also  
+## See also
  <xref:System.Xml.Linq.XElement>  
  <xref:System.Xml.Linq.XProcessingInstruction>  
  <xref:System.Xml.Linq.XComment>  

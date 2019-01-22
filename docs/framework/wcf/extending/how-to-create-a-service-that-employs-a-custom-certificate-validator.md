@@ -123,5 +123,5 @@ This topic shows how to implement a custom certificate validator and how to conf
  [!code-csharp[c_CustomCertificateValidator#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customcertificatevalidator/cs/source.cs#3)]
  [!code-vb[c_CustomCertificateValidator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customcertificatevalidator/vb/source.vb#3)]  
   
-## See Also  
+## See also
  <xref:System.IdentityModel.Selectors.X509CertificateValidator>

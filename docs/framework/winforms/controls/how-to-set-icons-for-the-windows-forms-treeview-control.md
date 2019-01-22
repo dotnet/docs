@@ -62,7 +62,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
     treeView1->SelectedNode->SelectedImageIndex = 1;  
     ```  
   
-## See Also  
+## See also
  [TreeView Control Overview](../../../../docs/framework/winforms/controls/treeview-control-overview-windows-forms.md)  
  [How to: Add and Remove Nodes with the Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-nodes-with-the-windows-forms-treeview-control.md)  
  [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](../../../../docs/framework/winforms/controls/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)  

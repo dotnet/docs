@@ -37,7 +37,7 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
      [!code-csharp[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_3.cs)]  
   
-## See Also
+## See also
 
 - <xref:System.IFormattable>  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

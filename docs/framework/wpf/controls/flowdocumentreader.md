@@ -11,7 +11,7 @@ ms.assetid: ba7aaa70-f77b-4555-a79d-68a12c8e134b
 # FlowDocumentReader
 The <xref:System.Windows.Controls.FlowDocumentReader> control is used to view <xref:System.Windows.Documents.FlowDocument> content. It supports multiple viewing modes.  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.FlowDocumentReader>  
  <xref:System.Windows.Controls.FlowDocumentPageViewer>  
  <xref:System.Windows.Controls.FlowDocumentScrollViewer>  

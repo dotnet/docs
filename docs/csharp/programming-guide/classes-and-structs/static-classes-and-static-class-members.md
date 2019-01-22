@@ -82,7 +82,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
 
 For more information, see [Static classes](~/_csharplang/spec/classes.md#static-classes) and [Static and instance members](~/_csharplang/spec/classes.md#static-and-instance-members) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [static](../../../csharp/language-reference/keywords/static.md)  

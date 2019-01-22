@@ -161,7 +161,7 @@ Interaction between application and TextFormatter
   
  For more details on creating custom text layout, see [Advanced Text Formatting](../../../../docs/framework/wpf/advanced/advanced-text-formatting.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.FormattedText>  
  <xref:System.Windows.Media.TextFormatting.TextFormatter>  
  [ClearType Overview](../../../../docs/framework/wpf/advanced/cleartype-overview.md)  

@@ -29,7 +29,7 @@ ms.assetid: 5b7944cd-d402-46a1-ad8f-feffb2d83673
  `pragma-arguments`  
  Pragma-specific arguments.  
   
-## See Also
+## See also
 
 - [C# Reference](../../../csharp/language-reference/index.md)  
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  

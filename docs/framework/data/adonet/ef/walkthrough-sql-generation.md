@@ -193,5 +193,5 @@ FROM: "[dbo].[Orders]", " AS ", <symbol_Extent4>,
   
  At the end of the second phase, the final SQL statement is generated.  
   
-## See Also  
+## See also
  [SQL Generation in the Sample Provider](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)

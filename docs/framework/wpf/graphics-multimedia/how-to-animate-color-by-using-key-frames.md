@@ -28,7 +28,7 @@ This example shows how to animate the <xref:System.Windows.Media.SolidColorBrush
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.SolidColorBrush.Color%2A>  
  <xref:System.Windows.Media.SolidColorBrush>  
  <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames>  

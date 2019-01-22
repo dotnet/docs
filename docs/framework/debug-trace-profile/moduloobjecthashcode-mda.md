@@ -54,7 +54,7 @@ The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavio
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>  
- <xref:System.Object.Equals%2A?displayProperty=nameWithType>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType>
+- <xref:System.Object.Equals%2A?displayProperty=nameWithType>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

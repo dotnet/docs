@@ -18,6 +18,6 @@ After a <xref:System.Data.DataSet> object has been populated with data, you can 
  [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
  Describes how to query typed <xref:System.Data.DataSet> objects.  
   
-## See Also  
+## See also
  [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)  
  [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)

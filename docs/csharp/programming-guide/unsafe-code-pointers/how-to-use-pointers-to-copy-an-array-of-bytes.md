@@ -19,7 +19,7 @@ This example accesses the elements of both arrays using indices rather than a se
 
 [!code-csharp[Struct with embedded inline array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#8)]
 
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)  
 - [Unsafe Code and Pointers](index.md)  

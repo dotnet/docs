@@ -91,7 +91,7 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
   
  This example is part of a larger sample. For the complete sample, see the [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973). For more information about brushes, see the  [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md).  
   
-## See Also  
+## See also
  <xref:System.Windows.Media.Brush.Transform%2A>  
  <xref:System.Windows.Media.Brush.RelativeTransform%2A>  
  <xref:System.Windows.Media.Transform>  

@@ -162,6 +162,6 @@ using(TransactionScope scope1 = new TransactionScope())
 ## Interop with COM+  
  When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](../../../../docs/framework/data/transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
   
-## See Also  
+## See also
  <xref:System.Transactions.Transaction.Clone%2A>  
  <xref:System.Transactions.TransactionScope>

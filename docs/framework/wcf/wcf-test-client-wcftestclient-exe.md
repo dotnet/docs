@@ -159,5 +159,5 @@ Windows Communication Foundation (WCF) Test Client (WcfTestClient.exe) is a GUI 
   
 -   Right-click the **WCF Service Host** icon in the notification area, and then click **Exit.** This shuts down both WCF Service Auto Host and WCF Test Client and stops the Visual Studio debugging process.  
   
-## See Also  
+## See also
  [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

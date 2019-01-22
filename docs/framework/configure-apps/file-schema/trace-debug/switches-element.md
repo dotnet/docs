@@ -62,7 +62,7 @@ Contains trace switches and the level where the trace switches are set.
 </configuration>  
 ```  
   
-## See Also  
+## See also
  <xref:System.Diagnostics.Switch>  
  <xref:System.Diagnostics.TraceSwitch>  
  <xref:System.Diagnostics.BooleanSwitch>  

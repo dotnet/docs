@@ -68,7 +68,7 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
     tabControl1->TabPages->Clear();  
     ```  
   
-## See Also  
+## See also
  [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)  
  [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)  
  [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)  

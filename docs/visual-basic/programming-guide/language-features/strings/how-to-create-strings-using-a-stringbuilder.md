@@ -14,7 +14,7 @@ This example constructs a long string from many smaller strings using the <xref:
   
  [!code-vb[VbVbalrStrings#70](../../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/how-to-create-strings-using-a-stringbuilder_1.vb)]  
   
-## See Also  
+## See also
  [Using the StringBuilder Class](../../../../standard/base-types/stringbuilder.md)  
  [&= Operator](../../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)  

@@ -10,6 +10,6 @@ A file operation, such as moving or copying a file, has been attempted without s
   
 -   Check that the file path has been supplied and is correct.  
   
-## See Also  
+## See also
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
  [File Access with Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

@@ -48,7 +48,7 @@ Visual Basic provides a well-defined model for controlling the behavior of Windo
 ## Availability  
  By default, the Visual Basic Application model is available for Windows Forms projects. If you configure the application to use a different startup object, or start the application code with a custom `Sub Main`, then that object or class may need to provide an implementation of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class to use the application model. For information about changing the startup object, see [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase>  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup>  
  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance>  

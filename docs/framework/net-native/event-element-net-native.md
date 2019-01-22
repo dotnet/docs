@@ -52,7 +52,7 @@ Applies runtime reflection policy to an event.
 ## Remarks  
  If an event's policy is not explicitly defined, it inherits the runtime policy of its parent element.  
   
-## See Also  
+## See also
  [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
  [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
  [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

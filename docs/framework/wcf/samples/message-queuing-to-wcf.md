@@ -147,7 +147,7 @@ Console.ReadLine();
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`  
   
-## See Also  
+## See also
  [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
  [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
  [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968)

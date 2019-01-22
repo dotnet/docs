@@ -161,7 +161,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
   
  In the preceding configuration file a data contract type called `MyCompany.Library.Shape` is declared to have `MyCompany.Library.Circle` as a known type.  
   
-## See Also  
+## See also
  <xref:System.Runtime.Serialization.KnownTypeAttribute>  
  <xref:System.Collections.Hashtable>  
  <xref:System.Object>  

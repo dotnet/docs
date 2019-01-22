@@ -53,7 +53,7 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
 > [!NOTE]
 >  You can also add comments to your code by preceding the text with the `REM` keyword. However, the `'` symbol and the **Comment**/**Uncomment** buttons are easier to use and require less space and memory.  
   
-## See Also  
+## See also
  [Documenting Your Code With XML Comments](https://msdn.microsoft.com/magazine/dd722812.aspx)  
  [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
  [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)  

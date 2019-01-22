@@ -94,7 +94,7 @@ Windows Communication Foundation (WCF) implements a number of Web services proto
   
 -   [Basic Security Profile 1.0 Working Draft](https://go.microsoft.com/fwlink/?LinkId=96711)  
   
-## See Also  
+## See also
  [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md)  
  [Messaging Protocols](../../../../docs/framework/wcf/feature-details/messaging-protocols.md)  
  [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md)  

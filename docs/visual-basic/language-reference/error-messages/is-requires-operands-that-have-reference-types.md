@@ -17,7 +17,7 @@ The `Is` comparison operator determines whether two object variables refer to th
   
 -   Use the appropriate arithmetic comparison operator or the `Like` operator to compare two value types.  
   
-## See Also  
+## See also
  [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
  [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)  
  [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)

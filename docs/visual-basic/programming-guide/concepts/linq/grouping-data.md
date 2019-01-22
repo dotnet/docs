@@ -57,7 +57,7 @@ MsgBox(sb.ToString())
 ' 208  
 ```  
   
-## See Also  
+## See also
  <xref:System.Linq>  
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
  [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)  

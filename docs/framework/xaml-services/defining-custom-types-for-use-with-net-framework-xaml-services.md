@@ -108,6 +108,6 @@ When you define custom types that are business objects or are types that do not 
   
  In WPF XAML terminology, an *internal type* is a type that is defined by the same assembly that also includes the referencing XAML. Such a type can be mapped through a XAML namespace that deliberately omits the assembly= portion of a mapping, for example, `xmlns:local="clr-namespace:WPFApplication1"`.  If BAML references an internal type and that type has `internal` access level, this generates a `GeneratedInternalTypeHelper` class for the assembly. If you want to avoid `GeneratedInternalTypeHelper`, you either must use `public` access level, or must factor the relevant class into a separate assembly and make that assembly dependent.  
   
-## See Also  
+## See also
  [XAML-Related CLR Attributes for Custom Types and Libraries](../../../docs/framework/xaml-services/xaml-related-clr-attributes-for-custom-types-and-libraries.md)  
  [XAML Services](../../../docs/framework/xaml-services/index.md)

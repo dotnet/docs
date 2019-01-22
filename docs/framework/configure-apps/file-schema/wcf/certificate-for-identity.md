@@ -44,7 +44,7 @@ Specifies an X.509 certificate used to validate a server to a client.
 </identity>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.IdentityElement>  
  <xref:System.ServiceModel.EndpointAddress>  
  <xref:System.ServiceModel.EndpointAddress.Identity%2A>  

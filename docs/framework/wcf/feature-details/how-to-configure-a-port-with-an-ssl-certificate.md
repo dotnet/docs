@@ -123,5 +123,5 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
  [!code-csharp[c_WsHttpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wshttpservice/cs/source.cs#3)]
  [!code-vb[c_WsHttpService#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_wshttpservice/vb/source.vb#3)]  
   
-## See Also  
+## See also
 * [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md)

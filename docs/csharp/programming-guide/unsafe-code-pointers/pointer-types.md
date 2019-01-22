@@ -83,7 +83,7 @@ The following table lists the operators and statements that can operate on point
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)  
 - [Unsafe Code and Pointers](index.md)  

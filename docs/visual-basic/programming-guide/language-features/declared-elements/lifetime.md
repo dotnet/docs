@@ -65,7 +65,7 @@ The *lifetime* of a declared element is the period of time during which it is av
 ### Security  
  In the preceding example, you can produce the same lifetime by declaring `applesSold` at module level. If you changed the scope of a variable this way, however, the procedure would no longer have exclusive access to it. Because other procedures could access `applesSold` and change its value, the running total could be unreliable and the code could be more difficult to maintain.  
   
-## See Also  
+## See also
  [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)  
  [Nothing](../../../../visual-basic/language-reference/nothing.md)  
  [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  

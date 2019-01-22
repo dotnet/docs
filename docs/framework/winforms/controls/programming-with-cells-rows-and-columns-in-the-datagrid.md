@@ -48,6 +48,6 @@ This section provides topics that demonstrate various programming tasks involvin
  [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/basic-column-row-and-cell-features-wf-datagridview-control.md)  
  Provides topics that describe commonly used cell, row, and column properties.  
   
-## See Also  
+## See also
  [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

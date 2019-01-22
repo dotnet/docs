@@ -211,7 +211,7 @@ public class GameBoard {
 ### GetObject  
  `GetObject` represents a XAML node where rather than constructing a new object, a XAML object writer should instead get the value of the object's containing property. A typical  case where a `GetObject` node is encountered in a XAML node stream is for a collection object or a dictionary object, when the containing property is deliberately read-only in the backing type's object model. In this scenario, the collection or dictionary often is created and initialized (usually empty) by the initialization logic of an owning type.  
   
-## See Also  
+## See also
  <xref:System.Xaml.XamlObjectReader>  
  [XAML Services](../../../docs/framework/xaml-services/index.md)  
  [XAML Namespaces](../../../docs/framework/xaml-services/xaml-namespaces-for-net-framework-xaml-services.md)

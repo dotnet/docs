@@ -84,5 +84,5 @@ Windows Communication Foundation (WCF) services are wire-level compatible with W
 </configuration>  
 ```  
   
-## See Also  
+## See also
  [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md)

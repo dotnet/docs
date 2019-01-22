@@ -100,7 +100,7 @@ DataRow[] deletedRows = workTable.Select(
 DataRow[] custRows = workTable.Select("CustID > 5", "CustLName ASC");  
 ```  
   
-## See Also  
+## See also
  <xref:System.Data.DataRow>  
  <xref:System.Data.DataSet>  
  <xref:System.Data.DataTable>  

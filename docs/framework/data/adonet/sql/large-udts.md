@@ -125,7 +125,7 @@ Using connection As New SqlConnection( _
 End Using  
 ```  
   
-## See Also  
+## See also
  [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
  [Retrieving Database Schema Information](../../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
  [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  

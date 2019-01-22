@@ -69,5 +69,5 @@ You can view changes tracked by a <xref:System.Data.Linq.DataContext> by using <
   
  `Total changes: {Added: 0, Removed: 0, Modified: 8}`  
   
-## See Also  
+## See also
  [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)

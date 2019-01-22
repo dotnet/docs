@@ -66,5 +66,5 @@ Method deletion is not supported for [IWbemClassObject](/windows/desktop/api/wbe
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
+## See also
 [WMI and Performance Counters (Unmanaged API Reference)](index.md)

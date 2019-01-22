@@ -85,7 +85,7 @@ This topic discusses how to create custom encoders.
   
  There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
  <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
  <xref:System.ServiceModel.Channels.MessageEncoder>  

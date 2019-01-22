@@ -66,7 +66,7 @@ Specifies the types of required and optional claims expected to appear in the fe
 </bindings>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>  
  <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>  
  <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>  

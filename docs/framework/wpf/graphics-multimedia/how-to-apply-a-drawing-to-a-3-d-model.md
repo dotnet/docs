@@ -20,7 +20,7 @@ This example shows how to use a <xref:System.Windows.Media.DrawingBrush> as the 
   
  [!code-xaml[3DGallery_snip#ApplyDrawingToMaterialExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/ApplyDrawingToMaterialExample.xaml#applydrawingtomaterialexamplewholepage)]  
   
-## See Also  
+## See also
  [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
  [Create a 3-D Scene](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-3-d-scene.md)  
  [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  

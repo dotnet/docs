@@ -21,5 +21,5 @@ The <xref:System.Windows.Controls.Viewbox> control is used to stretch or scale a
   
  <xref:System.Windows.Controls.Image>  
   
-## See Also  
+## See also
  [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)

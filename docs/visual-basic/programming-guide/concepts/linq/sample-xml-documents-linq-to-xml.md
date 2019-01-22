@@ -27,5 +27,5 @@ The following example files are used in the code samples and code snippets throu
 |[Sample XML File: Books (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md)|An XML document that contains a catalog of books.|  
 |[Sample XML File: Consolidated Purchase Orders](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md)|Presents an XML document that contains purchase orders that are in different namespaces.|  
   
-## See Also  
+## See also
  [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -66,7 +66,7 @@ The `client` element defines a list of endpoints that a client can connect to.
 </client>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.ClientSection>  
  <xref:System.ServiceModel.Configuration.MetadataElement>  
  [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  

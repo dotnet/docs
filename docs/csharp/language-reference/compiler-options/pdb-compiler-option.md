@@ -36,7 +36,7 @@ The **-pdb** compiler option specifies the name and location of the debug symbol
 csc -debug -pdb:tt t.cs  
 ```  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

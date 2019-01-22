@@ -18,5 +18,5 @@ This category covers the various base classes, interfaces and other elements and
  [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)  
  [UI Automation of a WPF Custom Control](../../../../docs/framework/wpf/controls/ui-automation-of-a-wpf-custom-control.md)  
   
-## See Also  
+## See also
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

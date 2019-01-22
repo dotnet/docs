@@ -23,6 +23,6 @@ At times, you might want to change the value of a setting between application se
   
 3.  Type a new value for your setting and save the file.  
   
-## See Also  
+## See also
  [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)  
  [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)

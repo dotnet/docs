@@ -792,6 +792,6 @@ The tables in this article list the type members that are obsolete in the .NET F
 |<xref:Microsoft.VisualBasic.CompilerServices.Operators?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.CompilerServices.Operators.FallbackInvokeUserDefinedOperator%2A>|Use of this member generates a compiler error.<br /><br /> Do not use this method.|  
 |<xref:Microsoft.VisualBasic.MyServices.RegistryProxy?displayProperty=nameWithType>|<xref:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData%2A>|The `DynData` registry key works only on Win9x, which is not supported by this version of the .NET Framework. Use the `PerformanceData` registry key instead. This property will be removed from a future version of the Framework.|  
   
-## See Also  
+## See also
  [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
  [Obsolete Types](../../../docs/framework/whats-new/obsolete-types.md)

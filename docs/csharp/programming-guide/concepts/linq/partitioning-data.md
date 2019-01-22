@@ -21,7 +21,7 @@ Partitioning in LINQ refers to the operation of dividing an input sequence into 
 |Take|Takes elements up to a specified position in a sequence.|Not applicable.|<xref:System.Linq.Enumerable.Take%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Take%2A?displayProperty=nameWithType>|  
 |TakeWhile|Takes elements based on a predicate function until an element does not satisfy the condition.|Not applicable.|<xref:System.Linq.Enumerable.TakeWhile%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.TakeWhile%2A?displayProperty=nameWithType>|  
   
-## See Also
+## See also
 
 - <xref:System.Linq>  
 - [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)

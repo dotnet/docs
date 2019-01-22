@@ -47,7 +47,7 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 |-------------|-----------------|  
 |binding|The binding element of the [\<netMsmqBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md)|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement>  
  <xref:System.ServiceModel.NetMsmqBinding.Security%2A>  
  <xref:System.ServiceModel.Configuration.NetMsmqBindingElement.Security%2A>  

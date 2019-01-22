@@ -26,7 +26,7 @@ Several Windows Forms controls can display images. The image can be an icon that
   
 2.  Select the image you want to display.  
   
-## See Also  
+## See also
  <xref:System.Drawing.Image.FromFile%2A>  
  <xref:System.Drawing.Image>  
  <xref:System.Windows.Forms.Control.BackgroundImage%2A>  

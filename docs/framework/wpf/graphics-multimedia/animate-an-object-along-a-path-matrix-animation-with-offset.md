@@ -27,6 +27,6 @@ This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAni
   
  For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028). For an example showing how to animate a <xref:System.Windows.Media.Matrix> value along a path without offset accumulation, see [Animate an Object Along a Path (Matrix Animation)](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-an-object-along-a-path-matrix-animation.md).  
   
-## See Also  
+## See also
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Path Animation How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/path-animation-how-to-topics.md)

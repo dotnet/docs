@@ -75,7 +75,7 @@ int y = (int)3.0;    // OK: explicit conversion.
 
 For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
   
-## See Also
+## See also
 
 - <xref:System.Int32>  
 - [C# Reference](../../../csharp/language-reference/index.md)  

@@ -39,7 +39,7 @@ Sorted SqlGuids:
 1aaaaaaa-bbbb-cccc-dddd-3eeeeeeeeeee  
 ```  
   
-## See Also  
+## See also
 
 [SQL Server Data Types and ADO.NET](sql-server-data-types.md)  
 [ADO.NET Overview](../ado-net-overview.md)  

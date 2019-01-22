@@ -58,5 +58,5 @@ HRESULT GetReaderFromCallback(
 ## Requirements  
  **Header:** CorSym.idl  
   
-## See Also  
+## See also
  [ISymUnmanagedBinder3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-interface.md)

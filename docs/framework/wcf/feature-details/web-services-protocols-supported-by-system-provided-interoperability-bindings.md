@@ -102,7 +102,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 |Messaging|WS-Addressing 2005/08|[Web Services Addressing 1.0 - Core](https://go.microsoft.com/fwlink/?LinkId=90574)<br /><br /> [Web Services Addressing 1.0 - SOAP](https://go.microsoft.com/fwlink/?LinkId=95330)|  
 |Metadata|WS-MetadataExchange|[WS-MetadataExchange](https://go.microsoft.com/fwlink/?LinkId=94868)<br /><br /> WCF implements WS-MetadataExchange to retrieve XML Schema, WSDL, and WS-Policy.|  
   
-## See Also  
+## See also
  [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
  [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)  
  [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)  

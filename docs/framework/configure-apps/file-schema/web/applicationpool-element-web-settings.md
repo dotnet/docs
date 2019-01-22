@@ -90,5 +90,5 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
+## See also
  [\<system.web> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/system-web-element-web-settings.md)

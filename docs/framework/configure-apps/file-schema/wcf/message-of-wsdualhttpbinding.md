@@ -76,7 +76,7 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md)|Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>  
  <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>  
  <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>  

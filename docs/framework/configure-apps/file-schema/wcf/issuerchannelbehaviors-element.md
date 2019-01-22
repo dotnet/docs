@@ -44,7 +44,7 @@ endpointBehaviors section
 ## Remarks  
  Use this element when any behaviors (other than behaviors that include `<clientCredentials>` elements) must be used to communicate with a service. For example, if a [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) behavior element must be included.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors%2A>  
  <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElement>  
  <xref:System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection>  

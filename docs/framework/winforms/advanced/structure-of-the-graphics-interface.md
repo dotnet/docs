@@ -16,7 +16,7 @@ The managed class interface to [!INCLUDE[ndptecgdiplus](../../../../includes/ndp
   
  [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] defines several enumerations, which are collections of related constants. For example, the <xref:System.Drawing.Drawing2D.LineJoin> enumeration contains the elements <xref:System.Drawing.Drawing2D.LineJoin.Bevel>, <xref:System.Drawing.Drawing2D.LineJoin.Miter>, and <xref:System.Drawing.Drawing2D.LineJoin.Round>, which specify styles that can be used to join two lines.  
   
-## See Also  
+## See also
  [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)  
  [About GDI+ Managed Code](../../../../docs/framework/winforms/advanced/about-gdi-managed-code.md)  
  [Using Managed Graphics Classes](../../../../docs/framework/winforms/advanced/using-managed-graphics-classes.md)

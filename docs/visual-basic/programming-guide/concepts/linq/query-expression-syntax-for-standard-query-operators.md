@@ -36,7 +36,7 @@ Some of the more frequently used standard query operators have dedicated Visual 
 |<xref:System.Linq.Enumerable.ThenByDescending%60%602%28System.Linq.IOrderedEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29>|`Order By …, … Descending`<br /><br /> (For more information, see [Order By Clause](../../../../visual-basic/language-reference/queries/order-by-clause.md).)|  
 |<xref:System.Linq.Enumerable.Where%2A>|`Where`<br /><br /> (For more information, see [Where Clause](../../../../visual-basic/language-reference/queries/where-clause.md).)|  
   
-## See Also  
+## See also
  <xref:System.Linq.Enumerable>  
  <xref:System.Linq.Queryable>  
  [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  

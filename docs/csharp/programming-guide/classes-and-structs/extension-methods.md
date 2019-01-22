@@ -73,7 +73,7 @@ using System.Linq;
   
  For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](../../../../docs/framework/app-domains/assembly-versioning.md).  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Parallel Programming Samples (these include many example extension methods)](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)  

@@ -32,7 +32,7 @@ This section summarizes the process needed to expose an existing COM component t
   
      Interop applications are best deployed as [strong-named](../app-domains/strong-named-assemblies.md), signed assemblies in the global assembly cache.  
   
-## See Also  
+## See also
  [Interoperating with Unmanaged Code](index.md)  
  [Design Considerations for Interoperation](https://msdn.microsoft.com/library/b59637f6-fe35-40d6-ae72-901e7a707689(v=vs.100))  
  [COM Interop Sample: .NET Client and COM Server](com-interop-sample-net-client-and-com-server.md)  

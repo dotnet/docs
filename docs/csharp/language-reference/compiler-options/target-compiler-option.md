@@ -56,7 +56,7 @@ public class TestClass
   
  For more information about setting this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  

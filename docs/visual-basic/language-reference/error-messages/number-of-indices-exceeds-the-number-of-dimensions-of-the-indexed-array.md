@@ -29,5 +29,5 @@ The number of indices used to access an array element must be exactly the same a
     gameBoard(1, 0) = "O"  
     ```  
   
-## See Also  
+## See also
  [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)

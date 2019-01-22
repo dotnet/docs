@@ -14,5 +14,5 @@ A resource file in your project does not follow the standard format for a Window
   
 2.  Remove the invalid resource file from the project.  
   
-## See Also  
+## See also
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

@@ -16,5 +16,5 @@ This example demonstrates how to use the <xref:System.Windows.Media.Imaging.Bitm
  [!code-csharp[ImagingSnippetGallery_procedural_snip#BitmapSourceCreate](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/BitmapSourceExample.cs#bitmapsourcecreate)]
  [!code-vb[ImagingSnippetGallery_procedural_snip#BitmapSourceCreate](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/BitmapSourceExample.vb#bitmapsourcecreate)]  
   
-## See Also  
+## See also
  [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

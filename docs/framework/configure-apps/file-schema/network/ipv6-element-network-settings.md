@@ -62,7 +62,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 </configuration>  
 ```  
   
-## See Also  
+## See also
 - <xref:System.Net?displayProperty=nameWithType>  
 - <xref:System.Net.Dns?displayProperty=nameWithType>  
 - <xref:System.Net.Sockets.Socket.OSSupportsIPv6%2A?displayProperty=nameWithType>  

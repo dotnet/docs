@@ -38,7 +38,7 @@ You can use the ADO.NET **DataReader** to retrieve a read-only, forward-only str
  [Performing Batch Operations Using DataAdapters](../../../../docs/framework/data/adonet/performing-batch-operations-using-dataadapters.md)  
  Describes enhancing application performance by reducing the number of round trips to SQL Server when applying updates from the `DataSet`.  
   
-## See Also  
+## See also
  [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
  [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)  
  [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  

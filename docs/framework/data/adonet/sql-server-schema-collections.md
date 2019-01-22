@@ -249,6 +249,6 @@ The Microsoft .NET Framework Data Provider for SQL Server supports additional sc
 |Create_Date|DateTime|The date the assembly was created/registered.|  
 |Permission_set_desc|String|The friendly name for the permission-set/security-level for the assembly.|  
   
-## See Also  
+## See also
  [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

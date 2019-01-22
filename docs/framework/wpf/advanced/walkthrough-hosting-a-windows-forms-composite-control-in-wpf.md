@@ -230,7 +230,7 @@ using MyControls;
   
  Build and run the application. Add some text in the Windows Forms composite control and then click **OK**. The text appears in the labels. Click the different radio buttons to see the effect on the control.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Integration.ElementHost>  
  <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
  [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  

@@ -86,7 +86,7 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 lc @response.rsp  
 ```  
   
-## See Also  
+## See also
  [Tools](../../../docs/framework/tools/index.md)  
  [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

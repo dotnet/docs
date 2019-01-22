@@ -44,7 +44,7 @@ The `My.Computer.FileSystem` object provides the `ReadAllBytes` method for readi
   
  Verify all inputs before using the data in your application. The contents of the file may not be what is expected, and methods to read from the file may fail.  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllBytes%2A>  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>  
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  

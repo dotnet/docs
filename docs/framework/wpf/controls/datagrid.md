@@ -50,7 +50,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to display and e
 |[How to: Group, Sort, and Filter Data in the DataGrid Control](../../../../docs/framework/wpf/controls/how-to-group-sort-and-filter-data-in-the-datagrid-control.md)|Describes how to view data in a <xref:System.Windows.Controls.DataGrid> in different ways by grouping, sorting, and filtering the data.|  
 |[Sizing Options in the DataGrid Control](../../../../docs/framework/wpf/controls/sizing-options-in-the-datagrid-control.md)|Describes how to control absolute and automatic sizing in the <xref:System.Windows.Controls.DataGrid>.|  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.DataGrid>  
  [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  

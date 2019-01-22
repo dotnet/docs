@@ -83,7 +83,7 @@ This topic describes how to create a simple workflow service using messaging act
   
 4.  Continue on to the [How To: Access a Service From a Workflow Application](../../../../docs/framework/wcf/feature-details/how-to-access-a-service-from-a-workflow-application.md) topic to create a workflow client that calls this service.  
   
-## See Also  
+## See also
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
  [Hosting Workflow Services Overview](../../../../docs/framework/wcf/feature-details/hosting-workflow-services-overview.md)  
  [Messaging Activities](../../../../docs/framework/wcf/feature-details/messaging-activities.md)

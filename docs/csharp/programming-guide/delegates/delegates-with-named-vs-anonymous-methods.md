@@ -31,7 +31,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can be ass
   
  [!code-csharp[csProgGuideDelegates#3](../../../csharp/programming-guide/delegates/codesnippet/CSharp/delegates-with-named-vs-anonymous-methods_3.cs)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Delegates](../../../csharp/programming-guide/delegates/index.md)  

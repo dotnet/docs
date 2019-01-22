@@ -144,7 +144,7 @@ The switches have the same effect whether you're doing HTTP networking (<xref:Sy
 
 ### Switch.System.Net.DontEnableSchUseStrongCrypto
 
-A value of `false` for `Switch.System.Net.DontEnableSchUseStrongCrypto` causes your app to use strong cryptography. A value of `false` for `DontEnableSchUseStrongCrypto` uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. For more info, see [The SCH_USE_STRONG_CRYPTO flag](#the-schusestrongcrypto-flag). A value of `true` disables strong cryptography for your app.
+A value of `false` for `Switch.System.Net.DontEnableSchUseStrongCrypto` causes your app to use strong cryptography. A value of `false` for `DontEnableSchUseStrongCrypto` uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. For more info, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag). A value of `true` disables strong cryptography for your app.
 
 If your app targets .NET Framework 4.6 or later versions, this switch defaults to `false`. That's a secure default, which we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, the switch defaults to `true`. In that case, you should explicitly set it to `false`.
 
@@ -185,7 +185,7 @@ All of the registry keys described below have the same effect whether you're doi
 
 ### SchUseStrongCrypto
 
-The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-schusestrongcrypto-flag).
+The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag).
 
 If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, then the key defaults to 0. In that case, you should explicitly set its value to 1.
 

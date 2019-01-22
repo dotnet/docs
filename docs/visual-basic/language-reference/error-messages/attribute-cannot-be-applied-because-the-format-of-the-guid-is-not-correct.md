@@ -21,7 +21,7 @@ A `COMClassAttribute` attribute block specifies a globally unique identifier (GU
   
 2.  Ensure that the GUID strings presented to the `COMClassAttribute` attribute block are copied correctly.  
   
-## See Also  
+## See also
  <xref:System.Guid>  
 [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
 

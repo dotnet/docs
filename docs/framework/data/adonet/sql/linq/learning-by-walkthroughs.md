@@ -81,5 +81,5 @@ The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] document
   
 3.  Right-click **SQL Server (SQLEXPRESS)**, and then click **Restart**.  
   
-## See Also  
+## See also
  [Getting Started](../../../../../../docs/framework/data/adonet/sql/linq/getting-started.md)

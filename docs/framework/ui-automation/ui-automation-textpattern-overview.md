@@ -123,7 +123,7 @@ The following illustrates a set of start and end points.
  <xref:System.Windows.Automation.Text.TextUnit>  
  A pre-defined unit of text (character, word, line, or paragraph) used for navigating through logical segments of a text range.  
   
-## See Also  
+## See also
  [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)  
  [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)  
  [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  

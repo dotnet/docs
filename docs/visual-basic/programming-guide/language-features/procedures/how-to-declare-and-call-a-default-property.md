@@ -75,7 +75,7 @@ A *default property* is a class or structure property that your code can access 
   
  Because of these disadvantages, you should consider not defining default properties. For code readability, you should also consider always referring to all properties explicitly, even default properties.  
   
-## See Also  
+## See also
  [Property Procedures](./property-procedures.md)  
  [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
  [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  

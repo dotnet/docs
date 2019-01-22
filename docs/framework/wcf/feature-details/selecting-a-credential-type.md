@@ -91,7 +91,7 @@ ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
   
  For more information about credentials and secure sessions, see [Security Considerations for Secure Sessions](../../../../docs/framework/wcf/feature-details/security-considerations-for-secure-sessions.md).  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.ClientBase%601?displayProperty=nameWithType>  
  <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A?displayProperty=nameWithType>  
  <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A?displayProperty=nameWithType>  

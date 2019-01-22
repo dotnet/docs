@@ -150,7 +150,7 @@ public Customer this[long id] => store.LookupCustomer(id);
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)  
 - [Classes and Structs](index.md)  

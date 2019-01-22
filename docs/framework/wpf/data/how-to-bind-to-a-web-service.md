@@ -39,7 +39,7 @@ This example shows how to bind to objects returned by Web service method calls.
   
  For information about the structure of **getContentResponse**, see [Content Service documentation](https://services.msdn.microsoft.com/ContentServices/ContentService.asmx).  
   
-## See Also  
+## See also
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)  
  [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)

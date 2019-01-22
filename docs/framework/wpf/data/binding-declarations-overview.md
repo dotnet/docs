@@ -119,7 +119,7 @@ This topic discusses the different ways you can declare a binding.
   
 -   The default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value varies between <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged> and <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus> depending on the bound dependency property as well. The default value for most dependency properties is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, while the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> property has a default value of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>.  
   
-## See Also  
+## See also
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
  [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)  

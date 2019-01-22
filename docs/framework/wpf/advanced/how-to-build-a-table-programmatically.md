@@ -50,5 +50,5 @@ The following examples show how to programmatically create a <xref:System.Window
  [!code-csharp[TableSnippets#_TableAddFooterRow](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets/CSharp/Table.cs#_tableaddfooterrow)]
  [!code-vb[TableSnippets#_TableAddFooterRow](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets/VisualBasic/Table.vb#_tableaddfooterrow)]  
   
-## See Also  
+## See also
  [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)

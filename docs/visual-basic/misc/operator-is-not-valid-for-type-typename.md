@@ -12,5 +12,5 @@ An operator is not appropriate for the types.
   
 -   Ensure that the operator is appropriate for the types being operated on.  
   
-## See Also  
+## See also
  [Operators](../../visual-basic/language-reference/operators/index.md)

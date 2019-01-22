@@ -45,6 +45,6 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
   
  For more information, see [How the Runtime Locates Assemblies](https://go.microsoft.com/fwlink/?LinkId=95336) and <xref:System.AppDomain.TypeResolve>.  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>  
  [Configuring and Extending the Runtime with Behaviors](../../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)

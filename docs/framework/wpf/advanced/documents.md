@@ -18,7 +18,7 @@ ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
  [Typography](typography.md)  
  [Printing and Print System Management](printing-and-print-system-management.md)  
   
-## See Also  
+## See also
  <xref:System.Windows.Controls.DocumentViewer>  
  <xref:System.Windows.Documents.FlowDocument>  
  <xref:System.Windows.Xps>  

@@ -41,7 +41,7 @@ This section discusses canonical functions that are supported by all data provid
  [Other Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/other-canonical-functions.md)  
  Discusses functions not classified as bitwise, date/time, string, math, or aggregate.  
   
-## See Also  
+## See also
  [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)  
  [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
  [Conceptual Model Canonical to SQL Server Functions Mapping](../../../../../../docs/framework/data/adonet/ef/conceptual-model-canonical-to-sql-server-functions-mapping.md)  

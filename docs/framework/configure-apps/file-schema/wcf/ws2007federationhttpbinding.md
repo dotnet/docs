@@ -123,7 +123,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 </configuration>
 ```  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.WS2007FederationHttpBinding>  
  <xref:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement>  
  [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)  

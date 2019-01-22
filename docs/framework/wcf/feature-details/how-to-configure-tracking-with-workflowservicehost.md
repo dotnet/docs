@@ -62,7 +62,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
      For more information about tracking in general, see [Workflow Tracking and Tracing](../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md). For an example of configuring tracking programmatically see [Configuring Tracking for a Workflow](../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
   
-## See Also  
+## See also
  [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md)  
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
  [Tracking Profiles](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

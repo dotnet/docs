@@ -38,6 +38,6 @@ A constant is a meaningful name that takes the place of a number or string that 
 |[Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)|Describes the `Const` statement and its use.|  
 |[Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)|Describes the `Option Strict` statement and its use.|  
   
-## See Also  
+## See also
  [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)  
  [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)

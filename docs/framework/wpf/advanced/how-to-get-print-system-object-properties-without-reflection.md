@@ -27,7 +27,7 @@ Using reflection to itemize the properties (and the types of those properties) o
  [!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
  [!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
   
-## See Also  
+## See also
  <xref:System.Printing.IndexedProperties.PrintProperty>  
  <xref:System.Printing.PrintSystemObject>  
  <xref:System.Printing.IndexedProperties>  

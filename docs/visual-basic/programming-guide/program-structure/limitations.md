@@ -26,6 +26,6 @@ Earlier versions of Visual Basic enforced boundaries in code, such as the length
   
 -   **Environment String Length.** There is a maximum of 32768 characters for any environment string used as a command-line argument. This is a limitation on all platforms.  
   
-## See Also  
+## See also
  [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
  [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)

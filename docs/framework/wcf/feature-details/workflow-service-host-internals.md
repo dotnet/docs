@@ -43,7 +43,7 @@ ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
 > [!WARNING]
 > Workflow Service Host will fail to open if SQL Server is configured to listen on NamedPipe protocol only.  
   
-## See Also
+## See also
 
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)  
 - [Hosting Workflow Services](../../../../docs/framework/wcf/feature-details/hosting-workflow-services.md)  

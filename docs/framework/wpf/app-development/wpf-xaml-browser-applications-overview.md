@@ -180,6 +180,6 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
   
  In addition, improved concurrency of the ClickOnce download sequence improves start time by up to ten percent. After ClickOnce downloads and validates manifests, the application download starts, and the progress bar starts to update.  
   
-## See Also  
+## See also
  [Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service](../../../../docs/framework/wpf/app-development/configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md)  
  [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)

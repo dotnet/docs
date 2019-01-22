@@ -50,5 +50,5 @@ class OneWayBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.Channels.OneWayBindingElement>

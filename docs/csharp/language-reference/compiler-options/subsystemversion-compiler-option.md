@@ -52,6 +52,6 @@ Specifies the minimum version of the subsystem on which the generated executable
 ## Setting this option  
  To set the **-subsystemversion** compiler option in Visual Studio, you must open the .csproj file and specify a value for the `SubsystemVersion` property in the MSBuild XML. You can't set this option in the Visual Studio IDE. For more information, see "Default values" earlier in this topic or [Common MSBuild Project Properties](/visualstudio/msbuild/common-msbuild-project-properties).  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

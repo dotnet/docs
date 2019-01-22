@@ -30,6 +30,6 @@ When working with large amounts of data, the `DataGridView` control can consume 
  <xref:System.Windows.Forms.DataGridView.VirtualMode%2A>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property.  
   
-## See Also  
+## See also
  [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
  [Data Display Modes in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-display-modes-in-the-windows-forms-datagridview-control.md)

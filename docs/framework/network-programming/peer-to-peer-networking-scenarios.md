@@ -62,5 +62,5 @@ Peer-to-peer networking enables or enhances the following scenarios:
   
 -  
   
-## See Also  
+## See also
  <xref:System.Net.PeerToPeer.Collaboration>

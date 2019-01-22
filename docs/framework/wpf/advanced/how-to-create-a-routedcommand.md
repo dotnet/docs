@@ -41,6 +41,6 @@ This example shows how to create a custom <xref:System.Windows.Input.RoutedComma
   
  When the Button is clicked, the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method on the custom <xref:System.Windows.Input.RoutedCommand> is called.  The <xref:System.Windows.Input.RoutedCommand> raises the <xref:System.Windows.Input.CommandManager.PreviewExecuted> and <xref:System.Windows.Input.CommandManager.Executed> routed events.  These events traverse the element tree looking for a <xref:System.Windows.Input.CommandBinding> for this particular command.  If a <xref:System.Windows.Input.CommandBinding> is found, the <xref:System.Windows.Input.ExecutedRoutedEventHandler> associated with <xref:System.Windows.Input.CommandBinding> is called.  
   
-## See Also  
+## See also
  <xref:System.Windows.Input.RoutedCommand>  
  [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)

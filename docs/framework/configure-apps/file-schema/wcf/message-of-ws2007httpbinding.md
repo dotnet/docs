@@ -84,7 +84,7 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-ws2007httpbinding.md)|Defines the security settings for a [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md).|  
   
-## See Also  
+## See also
  <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
  <xref:System.ServiceModel.Configuration.WSHttpSecurityElement.Message%2A>  
  <xref:System.ServiceModel.WSHttpSecurity.Message%2A>  

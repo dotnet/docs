@@ -86,7 +86,7 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
   
  [!code-vb[VbVbalrStatements#5](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/type-list_3.vb)]  
   
-## See Also  
+## See also
  [Of](../../../visual-basic/language-reference/statements/of-clause.md)  
  [New Operator](../../../visual-basic/language-reference/operators/new-operator.md)  
  [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  

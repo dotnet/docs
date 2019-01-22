@@ -205,6 +205,6 @@ Reflection emit uses the same API set in full or partial trust, but some feature
   
 -   If you build this code example in Visual Studio, you must change the name of the class to include the namespace when you pass it to the <xref:System.AppDomain.CreateInstanceAndUnwrap%2A> method. By default, the namespace is the name of the project. For example, if the project is "PartialTrust", the class name must be "PartialTrust.Worker".  
   
-## See Also  
+## See also
  [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
  [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)

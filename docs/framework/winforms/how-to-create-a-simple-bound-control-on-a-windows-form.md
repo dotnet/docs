@@ -39,7 +39,7 @@ With *simple binding*, you can display a single data element, such as a column v
     > [!NOTE]
     >  Because simple-bound controls show only a single data element, it is very typical to include navigation logic in a Windows Form with simple-bound controls.  
   
-## See Also  
+## See also
  <xref:System.Windows.Forms.Binding>  
  [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)  
  [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

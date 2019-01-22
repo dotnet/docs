@@ -92,7 +92,7 @@ Imports [ aliasname = ] namespace.element
   
  [!code-vb[VbVbalrStatements#158](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/imports-statement-net-namespace-and-type_7.vb)]  
   
-## See Also  
+## See also
  [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)  
  [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)  
  [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  

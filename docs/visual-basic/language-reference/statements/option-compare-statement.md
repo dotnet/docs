@@ -81,7 +81,7 @@ Option Compare { Binary | Text }
   
  [!code-vb[VbVbalrStatements#46](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_2.vb)]  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
  <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>  
  <xref:Microsoft.VisualBasic.Strings.Replace%2A>  

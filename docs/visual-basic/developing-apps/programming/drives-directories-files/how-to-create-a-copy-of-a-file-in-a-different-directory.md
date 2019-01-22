@@ -48,7 +48,7 @@ The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its param
   
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
-## See Also  
+## See also
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile%2A>  
  <xref:Microsoft.VisualBasic.FileIO.UICancelOption>  

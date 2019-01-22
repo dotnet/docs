@@ -168,7 +168,7 @@ void async SomeMethod()
   
  Notice the use of the async keyword on the method making the asynchronous call and the await keyword when calling the asynchronous method.  
   
-## See Also  
+## See also
  [WCF in Windows Store Apps Blog](https://blogs.msdn.com/b/piyushjo/archive/2011/09/22/wcf-in-win8-metro-styled-apps-absolutely-supported.aspx)  
  [WCF Windows Store Clients and Security](https://blogs.msdn.com/b/piyushjo/archive/2011/10/11/calling-a-wcf-service-from-a-metro-application-adding-security.aspx)  
  [Windows Store Apps and Cross Machine Calls](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)  

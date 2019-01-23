@@ -110,7 +110,7 @@ The downside of embedding symbol files is that they increase the package size by
 
 **✔️ CONSIDER** publishing symbols as a symbol package (`*.snupkg`) to NuGet.org
 
-> Symbol packages (snupkg) provide developers a good on-demand debugging experience without bloating the main package size and impacting restore performance for those who don't intend to debug the NuGet package.
+> Symbol packages (`*.snupkg`) provide developers a good on-demand debugging experience without bloating the main package size and impacting restore performance for those who don't intend to debug the NuGet package.
 >
 > The caveat is that they would need to find and configure the NuGet symbol server in their IDE (as a one-time setup) to get symbol files. Visual Studio 2019 plans to provide the NuGet.org symbol server as one of the options out of the box. 
 

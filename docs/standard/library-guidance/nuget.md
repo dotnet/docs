@@ -106,7 +106,7 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 </Project>
 ```
 
-> The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
+The downside of embedding symbol files is that they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
 **✔️ CONSIDER** publishing symbols as a symbol package (snupkg) to NuGet.org
 

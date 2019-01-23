@@ -28,7 +28,7 @@ The Windows Runtime offers stream types that support reading only, writing only,
 
 It’s best practice to use the conversion method that matches the capabilities of the Windows Runtime stream you want to convert. However, since <xref:Windows.Storage.Streams.IRandomAccessStream> is readable and writeable (it implements both <xref:Windows.Storage.Streams.IOutputStream> and <xref:Windows.Storage.Streams.IInputStream>), the conversion methods maintain the capabilities of the original stream. For example, using [System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions.asstreamforread.aspx) to convert an <xref:Windows.Storage.Streams.IRandomAccessStream> doesn't limit the converted .NET Framework stream to being readable. It's also writable.
 
-## Example: Convert from a Windows Runtime random-access stream to a .NET Framework stream
+## Example: Convert Windows Runtime random-access to .NET Framework stream
 To convert from a Windows Runtime random-access stream to a .NET Framework stream, use the [System.IO.WindowsRuntimeStreamExtensions.AsStream](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions.asstream.aspx) method.
 
 The following code example prompts you to select a file, opens it with Windows Runtime APIs, and then converts it to a .NET Framework stream. It reads the stream and outputs it to a text block. You would typically manipulate the stream with .NET Framework APIs before outputting the results.
@@ -38,7 +38,7 @@ To run this example, create a UWP XAML app that contains a text block named `Tex
   [!code-csharp[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/cs/mainpage1.xaml.cs)]
   [!code-vb[System.IO.WindowsRuntimeStreamExtensionsEx#Imports](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.windowsruntimestreamextensionsex/vb/mainpage1.xaml.vb)]
 
-## Convert from a .NET Framework stream to a Windows Runtime stream
+## Convert from a .NET Framework to a Windows Runtime stream
 To convert from a .NET Framework stream to a Windows Runtime stream, use one of the following [System.IO.WindowsRuntimeStreamExtensions](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions.aspx) methods:
 
 - [System.IO.WindowsRuntimeStreamExtensions.AsInputStream](https://msdn.microsoft.com/library/system.io.windowsruntimestreamextensions.asinputstream.aspx) converts a managed stream in .NET for UWP apps to an input stream in the Windows Runtime.
@@ -51,7 +51,7 @@ When you convert a .NET Framework stream to a Windows Runtime stream, the capabi
 
 .NET Framework streams don't support cloning, even after conversion. If you convert a .NET Framework stream to a Windows Runtime stream and call <xref:Windows.Storage.Streams.InMemoryRandomAccessStream.GetInputStreamAt%2A> or <xref:Windows.Storage.Streams.IRandomAccessStream.GetOutputStreamAt%2A>, which call <xref:Windows.Storage.Streams.RandomAccessStreamOverStream.CloneStream%2A>, or if you call <xref:Windows.Storage.Streams.RandomAccessStreamOverStream.CloneStream%2A> directly, an exception occurs.
 
-## Example: Convert from a .NET Framework stream to a Windows Runtime random-access stream
+## Example: Convert .NET Framework to Windows Runtime random-access stream
 
 To convert from a .NET Framework stream to a Windows Runtime random-access stream, use the [AsRandomAccessStream](../../../docs/standard/cross-platform/windowsruntimestreamextensions-asrandomaccessstream-method.md) method, as shown in the following example:
 

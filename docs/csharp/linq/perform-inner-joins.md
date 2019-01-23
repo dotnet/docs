@@ -1,7 +1,7 @@
 ---
 title: Perform inner joins (LINQ in C#)
 description: Learn how to perform inner joins using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 45bceed6-f549-4114-a9b1-b44feb497742
 ---
 # Perform inner joins

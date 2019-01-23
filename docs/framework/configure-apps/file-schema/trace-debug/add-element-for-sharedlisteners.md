@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<add> element for <sharedListeners>"
   - "add element for <sharedListeners>"
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;add&gt; Element for &lt;sharedListeners&gt;
 Adds a listener to the `sharedListeners` collection. `sharedListeners` is a collection of listeners that any [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md) can reference.  By default, listeners in the `sharedListeners` collection are not placed in a `Listeners` collection. They must be added by name to the [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md) or [\<trace>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/trace-element.md). It is not possible to get the listeners in the `sharedListeners` collection in code at run time.  

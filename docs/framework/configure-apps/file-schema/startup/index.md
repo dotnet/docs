@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "schema startup settings"
   - "configuration schema [.NET Framework], startup settings"
 ms.assetid: 03de6972-442a-4648-9f3e-efa654e3b949
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Startup settings schema
 

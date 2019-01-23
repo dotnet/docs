@@ -7,8 +7,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "<source> element"
   - "source element"
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;source&gt; Element
 Specifies a trace source that initiates tracing messages.  

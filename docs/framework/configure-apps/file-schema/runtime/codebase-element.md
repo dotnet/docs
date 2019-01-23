@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <codeBase> element"
   - "codeBase element"
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;codeBase&gt; Element
 Specifies where the common language runtime can find an assembly.  

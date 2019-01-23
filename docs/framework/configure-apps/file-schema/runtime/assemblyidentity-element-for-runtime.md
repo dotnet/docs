@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <assemblyIdentity> element"
   - "assemblyIdentity element"
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
 Contains identifying information about the assembly.  

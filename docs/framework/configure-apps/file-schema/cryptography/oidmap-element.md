@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<oidMap> element"
   - "oidMap element"
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;oidMap&gt; Element
 Contains ASN.1 object identifier (OID) mappings to classes.  

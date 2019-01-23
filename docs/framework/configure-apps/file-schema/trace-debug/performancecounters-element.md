@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "performanceCounters element"
   - "<perfomanceCounters> element"
 ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;performanceCounters&gt; Element
 Specifies the size of the global memory shared by performance counters.  

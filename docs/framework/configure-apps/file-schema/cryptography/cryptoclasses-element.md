@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<cryptoClasses> element"
   - "cryptoClasses element"
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;cryptoClasses&gt; Element
 Contains a list of cryptography classes that have a mapping to a friendly name in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) element.  

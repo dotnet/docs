@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<assert> element"
   - "assert element"
 ms.assetid: ef4c3229-b151-4d85-8091-e6456af9b935
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;assert&gt; Element
 Specifies whether to display a message box when you call the <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> method; also specifies the name of the file to write messages to.  

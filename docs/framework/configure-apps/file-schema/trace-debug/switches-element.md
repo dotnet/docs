@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "switches element"
   - "trace switches, <switches> element"
 ms.assetid: 4cf36786-b89a-40e2-a0f1-86bb9b783343
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;switches&gt; Element
 Contains trace switches and the level where the trace switches are set.  

@@ -22,7 +22,7 @@ Contention events are raised whenever there is contention for <xref:System.Threa
 |Event|Event ID|Raised when|  
 |-----------|--------------|-----------------|  
 |`ContentionStart_V1`|81|Contention starts. This event does not include the amount of spinning time before a thread waits to acquire a lock; it is raised only when the thread waits to acquire a lock.|  
-|`ContentionStop`|81|Contention ends.|  
+|`ContentionStop`|91|Contention ends.|  
   
  The following table shows event data.  
   

@@ -31,3 +31,7 @@ The following table shows event data:
 |----------------|---------------|-----------------|
 |Flags|win:UInt8|0 for managed; 1 for native.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR.|
+
+## See also
+
+- [CLR ETW Events](clr-etw-events.md)

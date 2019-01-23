@@ -44,7 +44,7 @@
 ### [Parallel Programming](standard/parallel-programming/)
 ### [Threading](standard/threading/)
 ## [Memory and span-related types](standard/memory-and-spans/index.md)
-### [Memory\<T> and Span\<T> usage guidelines](standard/memory-and-spans/memory-t-usage-guidelines.md)
+### [Memory<T> and Span<T> usage guidelines](standard/memory-and-spans/memory-t-usage-guidelines.md)
 ## [Native interoperability](standard/native-interop/index.md)
 ### [P/Invoke](standard/native-interop/pinvoke.md)
 ### [Type marshalling](standard/native-interop/type-marshalling.md)

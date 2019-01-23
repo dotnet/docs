@@ -1,11 +1,11 @@
 ---
-title: Troubleshoot the get started tutorial
+title: Troubleshoot the Get started with Windows Communication Foundation applications tutorial
 ms.date: 01/22/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
 ---
-# Troubleshoot the get started tutorial
+# Troubleshoot the Get started with Windows Communication Foundation applications tutorial
 
-This article provides solutions for the most common problems and errors you might face when following the steps in the get started tutorial. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
+This article provides solutions for the most common problems and errors you might face when you follow the steps in the [Get started with Windows Communication Foundation applications tutorial](getting-started-tutorial.md). 
   
 ## Common problems
 
@@ -38,9 +38,9 @@ The entry point is incorrect for the Visual Basic application. Make the followin
 
 ### Run the service application 
 
-**HTTP could not register URL 'http://+:8000/GettingStarted/CalculatorService'. Your process does not have access rights to this namespace.** 
+**HTTP could not register URL 'http:\//+:8000/GettingStarted/CalculatorService'. Your process does not have access rights to this namespace.** 
 
- For proper access, start the process hosting the WCF service with administrative privileges:
+ For proper access, start the process hosting the Windows Communication Foundation (WCF) service with administrative privileges:
 - For Visual Studio: Right-click the Visual Studio program in the **Start** menu and select **More** > **Run as administrator**.
 - For a console window: Right-click **Command Prompt** in the **Start** menu and select **More** > **Run As administrator**.
 - For Windows Explorer: Right-click the executable and select **Run as administrator**.
@@ -49,14 +49,15 @@ The entry point is incorrect for the Visual Basic application. Make the followin
 
 **'CalculatorClient', does not contain a definition for '\<method name>' and no extension method '\<method name>' accepting a first argument of type 'CalculatorClient' could be found (are you missing a using directive or an assembly reference?)**  
 
-Only those methods that are marked with the `ServiceOperationAttribute` attribute are publically exposed. If you omit the `ServiceOperationAttribute` attribute from a method in the `ICalculator` interface, you receive this error message during compilation.  
+Only those methods that you mark with the `ServiceOperationAttribute` attribute are publically exposed. If you omit the `ServiceOperationAttribute` attribute from a method in the `ICalculator` interface, you receive this error message during compilation.  
 
 **The type or namespace name 'CalculatorClient' could not be found (are you missing a using directive or an assembly reference?)**
 
- You receive this error if you don't add the *Proxy.cs* (or *Proxy.vb*) file to your client project.  
+ You receive this error if you don't add the *generatedProxy.cs* (or *generatedProxy.vb*) file to your client project when you generated them with the Svcutil.exe tool.  
+
 ### Run the client application
 
-**Unhandled Exception: System.ServiceModel.EndpointNotFoundException: Could not connect to 'http://localhost:8000/GettingStarted/CalculatorService'. TCP error code 10061: No connection could be made because the target machine actively refused it.**
+**Unhandled Exception: System.ServiceModel.EndpointNotFoundException: Could not connect to 'http:\//localhost:8000/GettingStarted/CalculatorService'. TCP error code 10061: No connection could be made because the target machine actively refused it.**
 
 This error occurs if you run the client application without first starting the service. First, run the host application to start the service, and then run the client application.
 
@@ -64,11 +65,11 @@ This error occurs if you run the client application without first starting the s
    
 **'Svcutil' is not recognized as an internal or external command, operable program, or batch file.**
 
- Svcutil.exe must be in the system path. The easiest solution is to use the command prompt. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**. This command prompt sets the system path to the correct locations for all tools shipped as part of Visual Studio.  
+ Svcutil.exe must be in the system path. The easiest solution is to use the Visual Studio command prompt. From the **Start** menu, select the **Visual Studio \<version>** directory, then select **Developer Command Prompt for VS \<version>**. This command prompt sets the system path to the correct locations for all tools shipped as part of Visual Studio.  
   
 ### Run the service and client applications
 
-**System.ServiceModel.Security.SecurityNegotiationException: SOAP security negotiation with 'http://localhost:8000/GettingStarted/CalculatorService' for target 'http://localhost:8000/GettingStarted/CalculatorService' failed**  
+**System.ServiceModel.Security.SecurityNegotiationException: SOAP security negotiation with 'http:\//localhost:8000/GettingStarted/CalculatorService' for target 'http:\//localhost:8000/GettingStarted/CalculatorService' failed**  
 
 This error occurs on a domain-joined computer that doesn't have network connectivity. Connect your computer to the network or turn off security for both the service and the client. 
 

@@ -50,7 +50,7 @@ Several Windows Forms controls can display images. These images can be icons tha
        "\\Image.gif"));  
     ```  
   
-## See Also  
- <xref:System.Drawing.Image.FromFile%2A>  
- <xref:System.Drawing.Image>  
- <xref:System.Windows.Forms.Control.BackgroundImage%2A>
+## See also
+- <xref:System.Drawing.Image.FromFile%2A>
+- <xref:System.Drawing.Image>
+- <xref:System.Windows.Forms.Control.BackgroundImage%2A>

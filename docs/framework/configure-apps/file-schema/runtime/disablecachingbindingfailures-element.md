@@ -74,7 +74,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

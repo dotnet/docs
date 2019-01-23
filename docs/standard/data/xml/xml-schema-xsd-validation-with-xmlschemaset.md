@@ -39,5 +39,5 @@ XML documents can be validated against an XML schema definition language (XSD) s
   
 ## See also
 
-- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
+- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
 - [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)

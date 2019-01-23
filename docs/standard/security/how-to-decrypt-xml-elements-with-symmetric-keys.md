@@ -77,5 +77,5 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## See also
 
-- <xref:System.Security.Cryptography.Xml>  
+- <xref:System.Security.Cryptography.Xml>
 - [How to: Encrypt XML Elements with Symmetric Keys](../../../docs/standard/security/how-to-encrypt-xml-elements-with-symmetric-keys.md)

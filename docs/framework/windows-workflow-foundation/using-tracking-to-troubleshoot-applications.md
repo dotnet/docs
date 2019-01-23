@@ -45,6 +45,6 @@ Windows Workflow Foundation (WF) enables you to track workflow-related informati
   
  If tracking is enabled using the ETW tracking participant, the fault events are emitted to an ETW session. The events can be viewed using the Event Viewer event viewer. This can be found under the node **Event Viewer->Applications and Services Logs->Microsoft->Windows->Application Server-Applications** in the analytic channel.  
   
-## See Also  
- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)
+## See also
+- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
+- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

@@ -65,6 +65,6 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Debug>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.Debug>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

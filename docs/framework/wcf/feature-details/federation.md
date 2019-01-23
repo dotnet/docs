@@ -283,5 +283,5 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 ## Summary  
  Federated security provides a clean division of responsibility and helps to build secure, scalable service architectures. As a platform for building and deploying distributed applications, WCF provides native support for implementing federated security.  
   
-## See Also  
- [Security](../../../../docs/framework/wcf/feature-details/security.md)
+## See also
+- [Security](../../../../docs/framework/wcf/feature-details/security.md)

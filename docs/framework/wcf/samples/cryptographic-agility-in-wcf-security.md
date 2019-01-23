@@ -31,5 +31,5 @@ This sample shows how to specify in a standard/custom algorithm to provide a cry
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Security\CryptoAgility`  
   
-## See Also  
- [Security](../../../../docs/framework/wcf/feature-details/security.md)
+## See also
+- [Security](../../../../docs/framework/wcf/feature-details/security.md)

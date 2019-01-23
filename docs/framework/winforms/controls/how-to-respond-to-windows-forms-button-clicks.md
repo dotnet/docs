@@ -49,7 +49,7 @@ The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control
        }  
     ```  
   
-## See Also  
- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
- [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  
- [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)
+## See also
+- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)
+- [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)
+- [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)

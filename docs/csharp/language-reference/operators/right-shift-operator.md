@@ -27,7 +27,7 @@ User-defined types can overload the `>>` operator; the type of the first operand
 
 [!code-csharp[csRefOperators#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefOperators/CS/csrefOperators.cs#26)]
 
-## See Also
+## See also
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)

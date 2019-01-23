@@ -121,7 +121,7 @@ The following example shows a tracking profile in a configuration file that allo
   
 ## See also
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileElement>  
-- <xref:System.Activities.Tracking.TrackingProfile>  
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileElement>
+- <xref:System.Activities.Tracking.TrackingProfile>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

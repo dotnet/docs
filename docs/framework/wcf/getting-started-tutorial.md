@@ -55,7 +55,7 @@ For more in-depth information about creating services and clients, see [Basic WC
 - [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
 - [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)
 
-## See Also
+## See also
 
 - [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
 - [Guide to the Documentation](../../../docs/framework/wcf/guide-to-the-documentation.md)

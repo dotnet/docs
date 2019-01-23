@@ -258,6 +258,6 @@ class Class1
   
 ## See also
 
-- [Generating Keys for Encryption and Decryption](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)  
-- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)  
+- [Generating Keys for Encryption and Decryption](../../../docs/standard/security/generating-keys-for-encryption-and-decryption.md)
+- [Decrypting Data](../../../docs/standard/security/decrypting-data.md)
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)

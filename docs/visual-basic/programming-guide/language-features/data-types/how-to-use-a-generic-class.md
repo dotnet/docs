@@ -41,10 +41,10 @@ A class that takes *type parameters* is called a *generic class*. If you are usi
   
 ## See also
 
-- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
-- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
-- [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)  
-- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)  
-- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
-- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)  
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md)
+- [Of](../../../../visual-basic/language-reference/statements/of-clause.md)
+- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](../../../../visual-basic/programming-guide/language-features/data-types/how-to-define-a-class-that-can-provide-identical-functionality.md)
 - [Iterators](../../../../visual-basic/programming-guide/concepts/iterators.md)

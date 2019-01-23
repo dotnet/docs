@@ -68,5 +68,5 @@ Contains information about how the ASP.NET hosting layer manages process-wide be
 |Validation File||  
 |Can be Empty||  
   
-## See Also  
- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)
+## See also
+- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)

@@ -41,14 +41,14 @@ This element defines two child collections named `endpointBehaviors` and `servic
 ## Remarks  
  You can use the `<remove>` element to remove a particular behavior from the collection. To do so, simply supply the name of the behavior to remove in the `name` attribute of the `<remove>` element.  You can also use the `<clear>` element to insure that a behavior collection starts empty by clearing out all the content of the collection.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.BehaviorsSection>  
- <xref:System.ServiceModel.Configuration.EndpointBehaviorElementCollection>  
- <xref:System.ServiceModel.Configuration.EndpointBehaviorElement>  
- <xref:System.ServiceModel.Configuration.ServiceBehaviorElementCollection>  
- <xref:System.ServiceModel.Configuration.ServiceBehaviorElement>  
- [Configuring and Extending the Runtime with Behaviors](../../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)  
- [Configuring Client Behaviors](../../../../../docs/framework/wcf/configuring-client-behaviors.md)  
- [Specifying Client Run-Time Behavior](../../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)  
- [Specifying Service Run-Time Behavior](../../../../../docs/framework/wcf/specifying-service-run-time-behavior.md)  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.BehaviorsSection>
+- <xref:System.ServiceModel.Configuration.EndpointBehaviorElementCollection>
+- <xref:System.ServiceModel.Configuration.EndpointBehaviorElement>
+- <xref:System.ServiceModel.Configuration.ServiceBehaviorElementCollection>
+- <xref:System.ServiceModel.Configuration.ServiceBehaviorElement>
+- [Configuring and Extending the Runtime with Behaviors](../../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)
+- [Configuring Client Behaviors](../../../../../docs/framework/wcf/configuring-client-behaviors.md)
+- [Specifying Client Run-Time Behavior](../../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
+- [Specifying Service Run-Time Behavior](../../../../../docs/framework/wcf/specifying-service-run-time-behavior.md)
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

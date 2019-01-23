@@ -121,10 +121,10 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
  For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
-## See Also  
- <xref:System.Windows.FrameworkElement.Style%2A>  
- <xref:System.Windows.Controls.ControlTemplate>  
- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)  
- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)
+## See also
+- <xref:System.Windows.FrameworkElement.Style%2A>
+- <xref:System.Windows.Controls.ControlTemplate>
+- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)
+- [Control Customization](../../../../docs/framework/wpf/controls/control-customization.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../../../../docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md)

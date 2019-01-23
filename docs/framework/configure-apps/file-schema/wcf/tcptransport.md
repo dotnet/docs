@@ -73,14 +73,14 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
  The `tcpTransport` element is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for WCF-to-WCF communication.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.TcpTransportElement>  
- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.TcpTransportElement>
+- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

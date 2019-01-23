@@ -39,7 +39,7 @@ Network tracing provides access to information about method invocations and netw
 </system.diagnostics>  
 ```  
   
-## See Also  
- [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+## See also
+- [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)
+- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)
+- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)

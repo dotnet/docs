@@ -30,5 +30,5 @@ This example shows how to create a control that has an access key and supports t
   
  [!code-xaml[LabelSnippet#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LabelSnippet/CS/Pane1.xaml#4)]  
   
-## See Also  
- [How to: Set the Target Property of a Label](https://msdn.microsoft.com/library/b24c6977-ebcb-4855-a9bb-3fd4435af8f8)
+## See also
+- [How to: Set the Target Property of a Label](https://msdn.microsoft.com/library/b24c6977-ebcb-4855-a9bb-3fd4435af8f8)

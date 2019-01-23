@@ -64,6 +64,6 @@ void FireMda()
 }
 ```
 
-## See Also
- <xref:System.Threading.Thread> 
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- <xref:System.Threading.Thread>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

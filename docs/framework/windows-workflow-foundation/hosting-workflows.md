@@ -24,7 +24,7 @@ The topics in this section discuss hosting workflows.
  [Using WorkflowIdentity and Versioning](../../../docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md)  
  Describes how to use `WorkflowIdentity` to host multiple versions of a workflow side-by-side.  
   
-## See Also  
- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)  
- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)  
- [Windows Workflow Foundation Data Model](../../../docs/framework/windows-workflow-foundation/data-model.md)
+## See also
+- [Windows Workflow Foundation Programming](../../../docs/framework/windows-workflow-foundation/programming.md)
+- [Designing Workflows](../../../docs/framework/windows-workflow-foundation/designing-workflows.md)
+- [Windows Workflow Foundation Data Model](../../../docs/framework/windows-workflow-foundation/data-model.md)

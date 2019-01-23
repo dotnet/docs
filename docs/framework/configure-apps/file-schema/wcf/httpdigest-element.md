@@ -42,14 +42,14 @@ Specifies a digest type credential used when authenticating the client to a serv
   
  This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>  
- <xref:System.ServiceModel.Configuration.HttpDigestClientElement>  
- <xref:System.ServiceModel.Security.HttpDigestClientCredential>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.HttpDigest%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>
+- <xref:System.ServiceModel.Configuration.HttpDigestClientElement>
+- <xref:System.ServiceModel.Security.HttpDigestClientCredential>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

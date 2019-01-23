@@ -53,7 +53,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
 ## Using the Alignment Properties  
  You can align content by setting the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties on the <xref:System.Windows.Controls.Expander> control. When you set these properties, the alignment applies to the header and also to the expanded content.  
   
-## See Also  
- <xref:System.Windows.Controls.Expander>  
- <xref:System.Windows.Controls.ExpandDirection>  
- [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.Expander>
+- <xref:System.Windows.Controls.ExpandDirection>
+- [How-to Topics](../../../../docs/framework/wpf/controls/expander-how-to-topics.md)

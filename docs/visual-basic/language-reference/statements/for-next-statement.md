@@ -166,11 +166,11 @@ Next [ counter ]
   
  [!code-vb[VbVbalrStatements#117](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-next-statement_7.vb)]  
   
-## See Also  
- <xref:System.Collections.Generic.List%601>  
- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Collections](../../programming-guide/concepts/collections.md)
+## See also
+- <xref:System.Collections.Generic.List%601>
+- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Collections](../../programming-guide/concepts/collections.md)

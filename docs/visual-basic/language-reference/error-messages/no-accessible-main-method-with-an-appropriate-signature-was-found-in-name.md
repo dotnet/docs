@@ -17,6 +17,6 @@ Command-line applications must have a `Sub Main` defined. `Main` must be declare
   
 -   Define a `Public Sub Main` procedure for your project. Declare it as `Shared` if and only if you define it inside a class.  
   
-## See Also  
- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)  
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+## See also
+- [Structure of a Visual Basic Program](../../../visual-basic/programming-guide/program-structure/structure-of-a-visual-basic-program.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)

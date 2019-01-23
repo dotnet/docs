@@ -72,6 +72,6 @@ If you cannot get the correct version of the .NET Framework installed, you can [
 
 ## See also
 
-[.NET Downloads](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral)   
-[Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)   
-[Install the .NET Framework for developers](guide-for-developers.md)
+- [.NET Downloads](https://www.microsoft.com/net/download?utm_source=ms-docs&utm_medium=referral)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
+- [Install the .NET Framework for developers](guide-for-developers.md)

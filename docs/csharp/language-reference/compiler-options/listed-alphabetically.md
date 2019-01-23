@@ -74,9 +74,9 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-win32manifest](win32manifest-compiler-option.md)|Specifies a custom win32 manifest file.|
 |[-win32res](win32res-compiler-option.md)|Specifies the win32 resource file (.res).|
 
-## See Also
+## See also
 
-- [C# Compiler Options](index.md)  
-- [C# Compiler Options Listed by Category](listed-by-category.md)  
-- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
+- [C# Compiler Options](index.md)
+- [C# Compiler Options Listed by Category](listed-by-category.md)
+- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

@@ -36,9 +36,9 @@ The addition of `async` and `Task`, `Task<int>` return types simplifies program 
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)

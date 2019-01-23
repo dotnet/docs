@@ -102,9 +102,9 @@ Along with the <xref:System.FormattableString.ToString(System.IFormatProvider)?d
 
 This tutorial describes common scenarios of string interpolation usage. For more information about string interpolation, see the [String interpolation](../language-reference/tokens/interpolated.md) topic. For more information about formatting types in .NET, see the [Formatting Types in .NET](../../standard/base-types/formatting-types.md) and [Composite formatting](../../standard/base-types/composite-formatting.md) topics.
 
-## See Also
+## See also
 
-- <xref:System.String.Format%2A?displayProperty=nameWithType>  
-- <xref:System.FormattableString?displayProperty=nameWithType>  
-- <xref:System.IFormattable?displayProperty=nameWithType>  
-- [Strings](../programming-guide/strings/index.md)  
+- <xref:System.String.Format%2A?displayProperty=nameWithType>
+- <xref:System.FormattableString?displayProperty=nameWithType>
+- <xref:System.IFormattable?displayProperty=nameWithType>
+- [Strings](../programming-guide/strings/index.md)

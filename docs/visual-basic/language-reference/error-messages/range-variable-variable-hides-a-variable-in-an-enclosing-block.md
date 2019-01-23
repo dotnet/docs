@@ -17,9 +17,9 @@ A range variable name specified in a `Select`, `From`, `Aggregate`, or `Let` cla
   
 -   Ensure that all range variables in a particular query scope have unique names. You can enclose a query in parentheses to ensure that nested queries have a unique scope.  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)  
- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+## See also
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md)
+- [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

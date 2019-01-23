@@ -166,10 +166,10 @@ This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#
   
 -   In cases where there is an incorrect reference, the application falls back to using an available font.  
   
-## See Also  
- <xref:System.Windows.Documents.Typography>  
- <xref:System.Windows.Media.FontFamily>  
- [Microsoft Typography: Links, News, and Contacts](https://www.microsoft.com/typography/links/)  
- [OpenType Specification](https://www.microsoft.com/typography/otspec/)  
- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)  
- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)
+## See also
+- <xref:System.Windows.Documents.Typography>
+- <xref:System.Windows.Media.FontFamily>
+- [Microsoft Typography: Links, News, and Contacts](https://www.microsoft.com/typography/links/)
+- [OpenType Specification](https://www.microsoft.com/typography/otspec/)
+- [OpenType Font Features](../../../../docs/framework/wpf/advanced/opentype-font-features.md)
+- [Sample OpenType Font Pack](../../../../docs/framework/wpf/advanced/sample-opentype-font-pack.md)

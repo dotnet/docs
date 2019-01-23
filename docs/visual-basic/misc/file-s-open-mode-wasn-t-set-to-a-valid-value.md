@@ -18,8 +18,8 @@ The value supplied for the file's open mode was not valid. The following table s
   
 -   Verify the value being supplied for the file's open mode.  
   
-## See Also  
-   
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+## See also
+
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

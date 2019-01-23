@@ -17,5 +17,5 @@ A file that is required by Visual Studio is missing or damaged.
   
 -   Reinstall Visual Studio.  
   
-## See Also  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+## See also
+- [Talk to Us](/visualstudio/ide/talk-to-us)

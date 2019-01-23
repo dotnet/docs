@@ -146,5 +146,5 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
  If you want to do the Querying Across Relationships walkthrough, make sure to save the solution for the walkthrough you have just completed, which is a prerequisite.  
   
-## See Also  
- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+## See also
+- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)

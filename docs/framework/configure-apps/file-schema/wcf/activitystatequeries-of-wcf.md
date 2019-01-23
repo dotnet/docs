@@ -64,7 +64,7 @@ None.
 
 ## See also
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection>    
-- <xref:System.Activities.Tracking.ActivityStateQuery>    
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection>
+- <xref:System.Activities.Tracking.ActivityStateQuery>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

@@ -224,6 +224,6 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
 ## See also
 
-[How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)  
-[Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
-[Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)  
+- [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
+- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
+- [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)

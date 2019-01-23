@@ -102,7 +102,7 @@ Specifies that the Windows identity always flows across asynchronous points, reg
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [\<legacyImpersonationPolicy> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/legacyimpersonationpolicy-element.md)

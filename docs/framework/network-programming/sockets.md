@@ -23,7 +23,7 @@ The <xref:System.Net.Sockets> namespace contains a managed implementation of the
   
  The **Socket** class supports two basic modes, synchronous and asynchronous. In synchronous mode, calls to functions that perform network operations (such as <xref:System.Net.Sockets.Socket.Send%2A> and <xref:System.Net.Sockets.Socket.Receive%2A>) wait until the operation completes before returning control to the calling program. In asynchronous mode, these calls return immediately.  
   
-## See Also  
- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)  
-    
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+## See also
+- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)
+
+- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)

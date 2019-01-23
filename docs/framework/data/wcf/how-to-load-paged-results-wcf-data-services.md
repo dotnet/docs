@@ -26,6 +26,6 @@ ms.assetid: bb786ea4-f3ef-4ad3-9a41-3a0b7feb6a1f
  [!code-csharp[Astoria Northwind Client#GetCustomersPagedNested](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#getcustomerspagednested)]
  [!code-vb[Astoria Northwind Client#GetCustomersPagedNested](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#getcustomerspagednested)]  
   
-## See Also  
- [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)  
- [How to: Load Related Entities](../../../../docs/framework/data/wcf/how-to-load-related-entities-wcf-data-services.md)
+## See also
+- [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)
+- [How to: Load Related Entities](../../../../docs/framework/data/wcf/how-to-load-related-entities-wcf-data-services.md)

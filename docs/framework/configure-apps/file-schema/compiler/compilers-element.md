@@ -73,9 +73,9 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.CodeDom.Compiler.CompilerInfo>  
-- <xref:System.CodeDom.Compiler.CodeDomProvider>  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)  
+## See also
+- <xref:System.CodeDom.Compiler.CompilerInfo>
+- <xref:System.CodeDom.Compiler.CodeDomProvider>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)
 - [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

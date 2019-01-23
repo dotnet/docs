@@ -43,6 +43,6 @@ C# enables programmers to declare conversions on classes or structs so that clas
   
 ## See also
 
-- <xref:System.Convert>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- <xref:System.Convert>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)

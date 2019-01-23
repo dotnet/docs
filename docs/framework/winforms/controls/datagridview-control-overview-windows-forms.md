@@ -72,9 +72,9 @@ ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
  [Performance Tuning in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/performance-tuning-in-the-windows-forms-datagridview-control.md)  
  Provides topics that describe how to use the control efficiently to avoid performance problems when working with large amounts of data.  
   
-## See Also  
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.BindingSource>  
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [Default Functionality in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-functionality-in-the-windows-forms-datagridview-control.md)  
- [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md)
+## See also
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.BindingSource>
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Default Functionality in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-functionality-in-the-windows-forms-datagridview-control.md)
+- [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md)

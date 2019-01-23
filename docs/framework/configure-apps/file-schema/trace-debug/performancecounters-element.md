@@ -50,8 +50,8 @@ Specifies the size of the global memory shared by performance counters.
   
  For the size of separate shared memory, the DWORD FileMappingSize value in the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\\*\<category name>*\Performance is referenced first, followed by the value specified for the global shared memory in the configuration file. If the FileMappingSize value does not exist, then the separate shared memory size is set to one fourth (1/4) the global setting in the configuration file.  
   
-## See Also  
- <xref:System.Diagnostics.PerformanceCounter>  
- <xref:System.Diagnostics.PerformanceCounterCategory>  
- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A>  
- <xref:System.Diagnostics.PerformanceCounterInstanceLifetime>
+## See also
+- <xref:System.Diagnostics.PerformanceCounter>
+- <xref:System.Diagnostics.PerformanceCounterCategory>
+- <xref:System.Diagnostics.PerformanceCounter.InstanceLifetime%2A>
+- <xref:System.Diagnostics.PerformanceCounterInstanceLifetime>

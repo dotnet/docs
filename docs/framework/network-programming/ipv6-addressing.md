@@ -66,6 +66,6 @@ In the Internet Protocol version 6 (IPv6), addresses are 128 bits long. One reas
   
  In general, a node always has a link-local address. It might have a site-local address and one or more global addresses.  
   
-## See Also  
- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
+- [Sockets](../../../docs/framework/network-programming/sockets.md)

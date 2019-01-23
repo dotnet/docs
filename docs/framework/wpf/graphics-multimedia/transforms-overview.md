@@ -143,8 +143,8 @@ LayoutTransform used to rotate the button
 ## Freezable Features  
  Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Transform> class  provide several special features: <xref:System.Windows.Media.Transform> objects can be declared as [resources](../../../../docs/framework/wpf/advanced/xaml-resources.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
-## See Also  
- <xref:System.Windows.Media.Transform>  
- <xref:System.Windows.Media.Matrix>  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)  
- [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)
+## See also
+- <xref:System.Windows.Media.Transform>
+- <xref:System.Windows.Media.Matrix>
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)
+- [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)

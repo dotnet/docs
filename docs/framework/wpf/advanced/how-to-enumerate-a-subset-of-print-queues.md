@@ -28,13 +28,13 @@ A common situation faced by information technology (IT) professionals managing a
   
  You could extend this example by having the `foreach` loop that steps through each print queue do further screening. For example, you could screen out printers that do not support two-sided printing by having the loop call each print queue's <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A> method and test the returned value for the presence of duplexing.  
   
-## See Also  
- <xref:System.Printing.PrintServer.GetPrintQueues%2A>  
- <xref:System.Printing.PrintServer>  
- <xref:System.Printing.LocalPrintServer>  
- <xref:System.Printing.EnumeratedPrintQueueTypes>  
- <xref:System.Printing.PrintQueue>  
- <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)  
- [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319)
+## See also
+- <xref:System.Printing.PrintServer.GetPrintQueues%2A>
+- <xref:System.Printing.PrintServer>
+- <xref:System.Printing.LocalPrintServer>
+- <xref:System.Printing.EnumeratedPrintQueueTypes>
+- <xref:System.Printing.PrintQueue>
+- <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319)

@@ -18,5 +18,5 @@ The `My.Computer.Mouse` object provides a way to find information about the comp
 |Determine whether the left and right mouse buttons have been swapped|<xref:Microsoft.VisualBasic.Devices.Mouse.ButtonsSwapped>|  
 |Set how much to scroll when the mouse wheel is rotated one notch.|<xref:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines>|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Mouse>
+## See also
+- <xref:Microsoft.VisualBasic.Devices.Mouse>

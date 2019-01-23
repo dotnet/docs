@@ -61,7 +61,7 @@ Changes to note are:
 * The .NET Core and existing projects are kept in separate folders.
   * Keeping projects in separate folders avoids forcing you to have Visual Studio 2017. You can create a separate solution that only opens the old projects.
 
-## See Also
+## See also
 
 * Please see the [.NET Core porting documentation][porting-doc] for more guidance on migrating to .NET Core.
 

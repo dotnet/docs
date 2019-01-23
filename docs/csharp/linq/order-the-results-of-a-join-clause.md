@@ -16,6 +16,6 @@ This query creates a group join, and then sorts the groups based on the category
 
 ## See also
 
-- [Language Integrated Query (LINQ)](index.md)  
-- [orderby clause](../language-reference/keywords/orderby-clause.md)  
-- [join clause](../language-reference/keywords/join-clause.md)  
+- [Language Integrated Query (LINQ)](index.md)
+- [orderby clause](../language-reference/keywords/orderby-clause.md)
+- [join clause](../language-reference/keywords/join-clause.md)

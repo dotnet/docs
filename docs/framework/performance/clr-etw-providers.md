@@ -85,5 +85,5 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
  A tool can execute steps 2 and 3 (starting a rundown session and then terminating profiling) instead of immediately turning off profiling when a user requests profiling to be stopped. A tool can also execute step 4.  
   
-## See Also  
- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+## See also
+- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)

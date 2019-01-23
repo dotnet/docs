@@ -37,8 +37,8 @@ From the point of view of client and server code, the differences between COM an
     #import "..\LoanLib\LoanLib.tlb"  
     ```  
   
-## See Also  
- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
- [Registering Assemblies with COM](registering-assemblies-with-com.md)  
- [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))  
- [Deploying an Application for COM Access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))
+## See also
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
+- [Registering Assemblies with COM](registering-assemblies-with-com.md)
+- [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))
+- [Deploying an Application for COM Access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))

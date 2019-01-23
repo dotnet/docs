@@ -44,11 +44,11 @@ In Visual Basic, two variable references are considered identical if their point
   
  `objA identical to objC? True`  
   
-## See Also  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)  
- [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)  
- [How to: Determine Whether Two Objects Are Related](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-whether-two-objects-are-related.md)  
- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
+## See also
+- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
+- [Is Operator](../../../../visual-basic/language-reference/operators/is-operator.md)
+- [IsNot Operator](../../../../visual-basic/language-reference/operators/isnot-operator.md)
+- [How to: Determine Whether Two Objects Are Related](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-whether-two-objects-are-related.md)
+- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)

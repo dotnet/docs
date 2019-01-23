@@ -22,5 +22,5 @@ The following resources contain additional information about parallel programmin
 
 ## See also
 
-- [Parallel Computing Developer Center](https://msdn.microsoft.com/vstudio/bb964701)  
-- [Parallel Programming in Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)  
+- [Parallel Computing Developer Center](https://msdn.microsoft.com/vstudio/bb964701)
+- [Parallel Programming in Visual C++](/cpp/parallel/parallel-programming-in-visual-cpp)

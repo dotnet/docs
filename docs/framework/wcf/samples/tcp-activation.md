@@ -199,5 +199,5 @@ Press <ENTER> to terminate client.
         > [!NOTE]
         >  This command must be typed in as a single line of text.  
   
-## See Also  
- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)
+## See also
+- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)

@@ -337,7 +337,7 @@ Custom activity designers are typically implemented so that their associated act
     }
     ```
 
-## See Also
+## See also
 
 - <xref:System.Activities.Presentation.ActivityDesigner>
 - <xref:System.Activities.Presentation.WorkflowItemPresenter>

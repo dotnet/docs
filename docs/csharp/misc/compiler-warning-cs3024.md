@@ -49,6 +49,6 @@ public class Test
 }  
 ```  
   
-## See Also
+## See also
 
 - [Constraints on Type Parameters](../../csharp/programming-guide/generics/constraints-on-type-parameters.md)

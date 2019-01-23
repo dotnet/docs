@@ -80,7 +80,7 @@ An interface has the following properties:
 
 [Interfaces](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652489%28v%3Dorm.10%29) in [Learning C# 3.0: Master the Fundamentals of C# 3.0](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff652493%28v%253dorm.10%29)
 
-## See Also
+## See also
 
 - [C# Programming Guide](../index.md)
 - [Inheritance](../classes-and-structs/inheritance.md)

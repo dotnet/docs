@@ -66,10 +66,10 @@ result = pattern << amount
   
  The shift amount for `result4` is calculated as 17 AND 15, which equals 1.  
   
-## See Also  
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [<<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+## See also
+- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [<<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)

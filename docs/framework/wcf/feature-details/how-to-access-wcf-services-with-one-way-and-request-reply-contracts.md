@@ -394,5 +394,5 @@ namespace Microsoft.ServiceModel.Samples
 }  
 ```  
   
-## See Also  
- [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)
+## See also
+- [One-Way Services](../../../../docs/framework/wcf/feature-details/one-way-services.md)

@@ -51,11 +51,11 @@ vbc -target:library in.vb
   
 ## See also
 
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
-- [-main](../../../visual-basic/reference/command-line-compiler/main.md)  
-- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)  
-- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
-- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
-- [-moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)  
-- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-main](../../../visual-basic/reference/command-line-compiler/main.md)
+- [-out (Visual Basic)](../../../visual-basic/reference/command-line-compiler/out.md)
+- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)
+- [-moduleassemblyname](../../../visual-basic/reference/command-line-compiler/moduleassemblyname.md)
+- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

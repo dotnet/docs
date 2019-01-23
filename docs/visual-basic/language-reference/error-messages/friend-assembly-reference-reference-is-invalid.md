@@ -19,8 +19,8 @@ Friend assembly reference \<reference> is invalid. Strong-name signed assemblies
   
 1.  Determine the public key for the strong-named friend assembly. Include the public key as part of the assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute constructor by using the `PublicKey` attribute.  
   
-## See Also  
- <xref:System.Reflection.AssemblyName>  
- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
- 
+## See also
+- <xref:System.Reflection.AssemblyName>
+- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+
 

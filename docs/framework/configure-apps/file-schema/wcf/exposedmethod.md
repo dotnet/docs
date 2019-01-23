@@ -62,9 +62,9 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
   
  At service initialization time, the runtime attempts to generate a service contract by reflecting over and adding only the methods included in the list of [\<exposedMethod>](../../../../../docs/framework/configure-apps/file-schema/wcf/exposedmethod.md) elements. A trace is produced for every interface method that is not included on the service contract.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ComMethodElementCollection>  
- <xref:System.ServiceModel.Configuration.ComMethodElement>  
- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)  
- [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [How to: Configure COM+ Service Settings](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ComMethodElementCollection>
+- <xref:System.ServiceModel.Configuration.ComMethodElement>
+- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)
+- [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)

@@ -123,12 +123,12 @@ msmqIntegrationBinding
 </configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement>  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement>
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBindingElement>
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

@@ -87,7 +87,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+## See also
+- <xref:System.Configuration.IdnElement?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

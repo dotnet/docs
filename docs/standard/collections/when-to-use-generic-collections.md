@@ -49,6 +49,6 @@ Using generic collections is generally recommended, because you gain the immedia
   
 ## See also
 
-- [Collections and Data Structures](../../../docs/standard/collections/index.md)  
-- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)  
+- [Collections and Data Structures](../../../docs/standard/collections/index.md)
+- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)
 - [Generics](../../../docs/standard/generics/index.md)

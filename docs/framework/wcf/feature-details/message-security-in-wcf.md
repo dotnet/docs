@@ -52,8 +52,8 @@ Windows Communication Foundation (WCF) has two major modes for providing securit
   
 -   Requires implementation of XML-level security mechanisms and support for WS-Security specification. This might affect the interoperability.  
   
-## See Also  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)  
- [How to: Use Transport Security and Message Credentials](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)  
- [Microsoft Patterns and Practices, Chapter 3: Implementing Transport and Message Layer Security](https://go.microsoft.com/fwlink/?LinkId=88897)
+## See also
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)
+- [How to: Use Transport Security and Message Credentials](../../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)
+- [Microsoft Patterns and Practices, Chapter 3: Implementing Transport and Message Layer Security](https://go.microsoft.com/fwlink/?LinkId=88897)

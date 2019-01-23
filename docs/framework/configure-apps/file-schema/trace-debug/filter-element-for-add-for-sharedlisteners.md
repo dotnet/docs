@@ -81,8 +81,8 @@ Adds a filter to a listener in the `sharedListeners` collection.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceFilter>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.TraceSource>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.TraceFilter>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.TraceSource>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

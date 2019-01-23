@@ -44,6 +44,6 @@ Results are identical
 <Country>USA</Country>  
 ```  
   
-## See Also
+## See also
 
 - [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

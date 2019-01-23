@@ -36,7 +36,7 @@ One way to display Help on Windows Forms is through the **Help** button, located
   
 6.  Press the **Help** button on the title bar and click the control on which you set the Help string.  
   
-## See Also  
- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)  
- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+## See also
+- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)
+- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)
+- [Windows Forms](../../../../docs/framework/winforms/index.md)

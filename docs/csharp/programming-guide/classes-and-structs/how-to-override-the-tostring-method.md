@@ -37,14 +37,14 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
   
      [!code-csharp[csProgGuideInheritance#38](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/how-to-override-the-tostring-method_3.cs)]  
   
-## See Also
+## See also
 
-- <xref:System.IFormattable>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Strings](../../../csharp/programming-guide/strings/index.md)  
-- [string](../../../csharp/language-reference/keywords/string.md)  
-- [new](../../../csharp/language-reference/keywords/new.md)  
-- [override](../../../csharp/language-reference/keywords/override.md)  
-- [virtual](../../../csharp/language-reference/keywords/virtual.md)  
+- <xref:System.IFormattable>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Strings](../../../csharp/programming-guide/strings/index.md)
+- [string](../../../csharp/language-reference/keywords/string.md)
+- [new](../../../csharp/language-reference/keywords/new.md)
+- [override](../../../csharp/language-reference/keywords/override.md)
+- [virtual](../../../csharp/language-reference/keywords/virtual.md)
 - [Formatting Types](../../../standard/base-types/formatting-types.md)

@@ -49,8 +49,8 @@ You can use of the <xref:System.Windows.Forms.HelpProvider> component to attach 
   
  You can also use the <xref:System.Windows.Forms.HelpProvider> component to show pop-up Help, even if you have it configured to display Help files for the controls on your Windows Forms. For more information, see [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md).  
   
-## See Also  
- [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md)  
- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)  
- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)  
- [Windows Forms](../../../../docs/framework/winforms/index.md)
+## See also
+- [How to: Display Pop-up Help](../../../../docs/framework/winforms/advanced/how-to-display-pop-up-help.md)
+- [Control Help Using ToolTips](../../../../docs/framework/winforms/advanced/control-help-using-tooltips.md)
+- [Integrating User Help in Windows Forms](../../../../docs/framework/winforms/advanced/integrating-user-help-in-windows-forms.md)
+- [Windows Forms](../../../../docs/framework/winforms/index.md)

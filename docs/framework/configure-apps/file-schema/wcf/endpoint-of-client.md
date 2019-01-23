@@ -65,11 +65,11 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 </endpoint>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>  
- <xref:System.ServiceModel.Configuration.ClientSection>  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>  
- <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>  
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
+- <xref:System.ServiceModel.Configuration.ClientSection>
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>
+- <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
+- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

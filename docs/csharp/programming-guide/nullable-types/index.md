@@ -49,12 +49,12 @@ Nullable types have the following characteristics:
 
 For more information, see the [Using nullable types](using-nullable-types.md) and [How to: Identify a nullable type](how-to-identify-a-nullable-type.md) topics.
   
-## See Also
+## See also
 
-- <xref:System.Nullable%601?displayProperty=nameWithType>  
-- <xref:System.Nullable?displayProperty=nameWithType>  
-- [?? Operator](../../language-reference/operators/null-coalescing-operator.md)  
-- [C# Programming Guide](../index.md)  
-- [C# Guide](../../index.md)  
-- [C# Reference](../../language-reference/index.md)  
-- [Nullable Value Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
+- <xref:System.Nullable%601?displayProperty=nameWithType>
+- <xref:System.Nullable?displayProperty=nameWithType>
+- [?? Operator](../../language-reference/operators/null-coalescing-operator.md)
+- [C# Programming Guide](../index.md)
+- [C# Guide](../../index.md)
+- [C# Reference](../../language-reference/index.md)
+- [Nullable Value Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

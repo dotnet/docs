@@ -21,5 +21,5 @@ ms.author: "ronpet"
 # ICorDebugEditAndContinueSnapshot::GetRwDataRVA Method
 `GetRwDataRVA` is obsolete. Do not call this method.  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

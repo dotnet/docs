@@ -66,7 +66,7 @@ author: "BrucePerlerMS"
     ```xml  
     <configuration>  
         <configSections>  
-        …  
+            ...
         </configSections>  
         <system.diagnostics>  
             <sources>  

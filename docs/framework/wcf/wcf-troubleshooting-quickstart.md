@@ -170,7 +170,7 @@ public class MyServiceHost : ServiceHost
   
 ```xml
 <endpoint   
-  address=http://localhost:8000/MyServer/  
+  address="http://localhost:8000/MyServer/"  
   binding="wsHttpBinding"  
   bindingConfiguration="WSHttpBinding_IMyContract"  
   behaviorConfiguration="MyClient"   
@@ -243,5 +243,5 @@ public string Echo(string input)
 }  
 ```  
   
-## See Also  
- [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)
+## See also
+- [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)

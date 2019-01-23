@@ -24,5 +24,5 @@ You can serialize XML trees to a <xref:System.IO.File>, a <xref:System.IO.TextWr
   
  For examples, see the appropriate reference topic.  
   
-## See Also  
- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+## See also
+- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)

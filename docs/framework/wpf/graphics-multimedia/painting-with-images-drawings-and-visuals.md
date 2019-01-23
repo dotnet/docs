@@ -128,16 +128,16 @@ Components of a TileBrush with multiple tiles
   
  For more information about the tiling features of <xref:System.Windows.Media.TileBrush> objects, see the [TileBrush Overview](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md).  
   
-## See Also  
- <xref:System.Windows.Media.ImageBrush>  
- <xref:System.Windows.Media.DrawingBrush>  
- <xref:System.Windows.Media.VisualBrush>  
- <xref:System.Windows.Media.TileBrush>  
- [TileBrush Overview](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)  
- [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md)  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [Opacity Masks Overview](../../../../docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005)  
- [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049)
+## See also
+- <xref:System.Windows.Media.ImageBrush>
+- <xref:System.Windows.Media.DrawingBrush>
+- <xref:System.Windows.Media.VisualBrush>
+- <xref:System.Windows.Media.TileBrush>
+- [TileBrush Overview](../../../../docs/framework/wpf/graphics-multimedia/tilebrush-overview.md)
+- [WPF Brushes Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-brushes-overview.md)
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [Opacity Masks Overview](../../../../docs/framework/wpf/graphics-multimedia/opacity-masks-overview.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005)
+- [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049)

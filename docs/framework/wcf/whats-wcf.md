@@ -88,7 +88,7 @@ Microsoft Silverlight is a platform for creating interoperable, rich Web applica
 
 The [!INCLUDE[dublin](../../../includes/dublin-md.md)] application server is specifically built for deploying and managing applications that use WCF for communication. The [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] includes rich tooling and configuration options specifically designed for WCF-enabled applications.
 
-## See Also
+## See also
 
 - <xref:System.ServiceModel>
 - [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)

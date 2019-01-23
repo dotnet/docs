@@ -48,10 +48,10 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
   
  For more information about using the element, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>  
- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>  
- <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>  
- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.X509RecipientCertificateServiceElement>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.ServiceCertificate%2A>
+- <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
+- <xref:System.ServiceModel.Description.ServiceCredentials.ServiceCertificate%2A>
+- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

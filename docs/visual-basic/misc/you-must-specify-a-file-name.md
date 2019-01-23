@@ -12,7 +12,7 @@ You attempted an operation, such as moving or copying a file, which requires sup
   
 -   Make sure the path does not end with a directory separator character (\\).  
   
-## See Also  
- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
- [File Access with Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)
+## See also
+- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+- [File Access with Visual Basic](../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

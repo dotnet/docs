@@ -56,7 +56,7 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
 ## See also
 
-- <xref:System.Security.Principal.WindowsIdentity>  
-- <xref:System.Security.Principal.WindowsImpersonationContext>  
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)  
+- <xref:System.Security.Principal.WindowsIdentity>
+- <xref:System.Security.Principal.WindowsImpersonationContext>
+- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
 - [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)

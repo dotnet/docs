@@ -48,6 +48,6 @@ typedef struct _COR_GC_THREAD_STATS {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
+## See also
+- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

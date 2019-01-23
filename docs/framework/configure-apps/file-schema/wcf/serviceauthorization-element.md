@@ -89,11 +89,11 @@ Specifies settings that authorize access to service operations
   
  For a detailed example of using this configuration element, see [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md) and [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>  
- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)  
- [How to: Create a Custom Authorization Manager for a Service](../../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)  
- [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceAuthorizationElement>
+- <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Authorizing Access to Service Operations](../../../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)
+- [How to: Create a Custom Authorization Manager for a Service](../../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [How to: Restrict Access with the PrincipalPermissionAttribute Class](../../../../../docs/framework/wcf/how-to-restrict-access-with-the-principalpermissionattribute-class.md)
+- [Authorization Policy](../../../../../docs/framework/wcf/samples/authorization-policy.md)

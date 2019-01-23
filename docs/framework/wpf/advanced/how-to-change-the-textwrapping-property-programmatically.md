@@ -20,6 +20,6 @@ ms.assetid: 30d25554-4c82-4df9-a8d6-35683a4a13bb
  [!code-csharp[TextWrapProperty#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextWrapProperty/CSharp/Window1.xaml.cs#2)]
  [!code-vb[TextWrapProperty#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextWrapProperty/VisualBasic/Pane1.xaml.vb#2)]  
   
-## See Also  
- <xref:System.Windows.Controls.TextBlock.TextWrapping%2A>  
- <xref:System.Windows.TextWrapping>
+## See also
+- <xref:System.Windows.Controls.TextBlock.TextWrapping%2A>
+- <xref:System.Windows.TextWrapping>

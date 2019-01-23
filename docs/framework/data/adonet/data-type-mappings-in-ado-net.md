@@ -29,10 +29,10 @@ The .NET Framework is based on the common type system, which defines how types a
  [Floating-Point Numbers](../../../../docs/framework/data/adonet/floating-point-numbers.md)  
  Describes issues that developers frequently encounter when working with floating-point numbers.  
   
-## See Also  
- [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
- [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)  
- [Common Type System](../../../../docs/standard/base-types/common-type-system.md)  
- [Converting Types](https://msdn.microsoft.com/library/6038316e-bdaf-4f55-8006-407f591ce156)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [SQL Server Data Types and ADO.NET](../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
+- [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
+- [Common Type System](../../../../docs/standard/base-types/common-type-system.md)
+- [Converting Types](https://msdn.microsoft.com/library/6038316e-bdaf-4f55-8006-407f591ce156)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

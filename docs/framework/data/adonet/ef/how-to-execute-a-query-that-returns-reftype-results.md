@@ -30,6 +30,6 @@ This topic shows how to execute a command against a conceptual model by using an
  [!code-csharp[DP EntityServices Concepts#eSQLRefTypes](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#esqlreftypes)]
  [!code-vb[DP EntityServices Concepts#eSQLRefTypes](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#esqlreftypes)]  
   
-## See Also  
- [Entity SQL Reference](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)  
- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+## See also
+- [Entity SQL Reference](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)

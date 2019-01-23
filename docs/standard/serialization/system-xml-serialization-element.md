@@ -58,9 +58,9 @@ The top-level element for controlling XML serialization. For more information ab
   
 ## See also
 
-- <xref:System.Xml.Serialization.XmlSchemaImporter>  
-- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>  
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
-- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)  
-- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)  
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- <xref:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode>
+- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
+- [\<dateTimeSerialization> Element](../../../docs/standard/serialization/datetimeserialization-element.md)
+- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)
 - [\<add> Element for \<schemaImporterExtensions>](../../../docs/standard/serialization/add-element-for-schemaimporterextensions.md)

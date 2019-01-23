@@ -32,6 +32,6 @@ Composite keys can be also used in a `group` clause.
 
 ## See also
 
-- [Language Integrated Query (LINQ)](index.md)  
-- [join clause](../language-reference/keywords/join-clause.md)  
-- [group clause](../language-reference/keywords/group-clause.md)  
+- [Language Integrated Query (LINQ)](index.md)
+- [join clause](../language-reference/keywords/join-clause.md)
+- [group clause](../language-reference/keywords/group-clause.md)

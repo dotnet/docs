@@ -52,8 +52,8 @@ This element is a key/value pair, which identifies the type of a particular tran
 </serviceHostingEnvironment>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

@@ -123,10 +123,10 @@ CSC Sample.cs /reference:myLib.dll /out:Sample.dll
 tlbexp Sample.dll  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.TypeLibExporterFlags>  
- [Tools](../../../docs/framework/tools/index.md)  
- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)  
- [Assembly to Type Library Conversion Summary](https://msdn.microsoft.com/library/3a37eefb-a76c-4000-9080-7dbbf66a4896)  
- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- <xref:System.Runtime.InteropServices.TypeLibExporterFlags>
+- [Tools](../../../docs/framework/tools/index.md)
+- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)
+- [Assembly to Type Library Conversion Summary](https://msdn.microsoft.com/library/3a37eefb-a76c-4000-9080-7dbbf66a4896)
+- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

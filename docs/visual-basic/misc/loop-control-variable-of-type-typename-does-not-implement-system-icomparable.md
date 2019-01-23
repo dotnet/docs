@@ -12,5 +12,5 @@ A variable is of a type that does not implement the `System.IComparable` interfa
   
 1.  Ensure that the variable is a value type.  
   
-## See Also  
- <xref:System.IComparable>
+## See also
+- <xref:System.IComparable>

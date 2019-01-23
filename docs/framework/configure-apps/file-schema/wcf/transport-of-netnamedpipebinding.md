@@ -43,13 +43,13 @@ Defines the transport security settings for a named pipe.
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netnamedpipebinding.md)|Defines the security settings for a binding.|  
   
-## See Also  
- <xref:System.ServiceModel.NamedPipeTransportSecurity>  
- <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>  
- <xref:System.ServiceModel.NetNamedPipeSecurity.Transport%2A>  
- <xref:System.ServiceModel.Configuration.NamedPipeTransportSecurityElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.NamedPipeTransportSecurity>
+- <xref:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.NetNamedPipeSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.NamedPipeTransportSecurityElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

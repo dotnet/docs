@@ -20,5 +20,5 @@ Annotations in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] enable you 
 |<xref:System.Xml.Linq.XObject.Annotations%2A>|Gets a collection of annotations of the specified type for an <xref:System.Xml.Linq.XObject>.|  
 |<xref:System.Xml.Linq.XObject.RemoveAnnotations%2A>|Removes the annotations of the specified type from an <xref:System.Xml.Linq.XObject>.|  
   
-## See Also  
- [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+## See also
+- [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

@@ -94,6 +94,6 @@ This topic discusses hosting Windows Communication Foundation (WCF) services sid
   
  For more information about enabling ASP.NET compatibility mode for WCF services, see <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> and the [ASP.NET Compatibility](../../../../docs/framework/wcf/samples/aspnet-compatibility.md) sample.  
   
-## See Also  
- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+- <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute>
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

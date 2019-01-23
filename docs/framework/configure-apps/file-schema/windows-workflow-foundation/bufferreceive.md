@@ -43,6 +43,6 @@ A service behavior that enables a service to use buffered receive processing, wh
 |-------------|-----------------|  
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
-## See Also  
+## See also
 <!-- <xref:System.ServiceModel.Activities.Description.BufferReceiveServiceBehavior>  -->
- <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>
+- <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>

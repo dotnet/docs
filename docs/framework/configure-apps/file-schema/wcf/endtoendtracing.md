@@ -42,9 +42,9 @@ A configuration element that allows you to enable and disable different aspects 
 |-------------|-----------------|  
 |[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DiagnosticSection>  
- <xref:System.ServiceModel.Diagnostics>  
- <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>  
- <xref:System.ServiceModel.Configuration.EndToEndTracingElement>  
- [End-to-End Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)
+## See also
+- <xref:System.ServiceModel.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Diagnostics>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>
+- <xref:System.ServiceModel.Configuration.EndToEndTracingElement>
+- [End-to-End Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)

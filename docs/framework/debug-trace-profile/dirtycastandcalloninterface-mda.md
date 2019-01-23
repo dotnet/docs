@@ -43,6 +43,6 @@ The `dirtyCastAndCallOnInterface` managed debugging assistant (MDA) is activated
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

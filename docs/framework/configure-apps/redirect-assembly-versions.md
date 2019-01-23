@@ -148,7 +148,7 @@ You can enable automatic binding redirection if your app targets older versions 
 </assemblyBinding>
 ```
 
-## See Also
+## See also
 
 - [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
 - [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)

@@ -50,6 +50,7 @@
 ### [Type marshalling](standard/native-interop/type-marshalling.md)
 ### [Customizing structure marshalling](standard/native-interop/customize-struct-marshalling.md)
 ### [Customizing parameter marshalling](standard/native-interop/customize-parameter-marshalling.md)
+### [Interop guidance](standard/native-interop/best-practices.md)
 ### [Charsets and marshalling](standard/native-interop/charset.md)
 ## [Collections and Data Structures](standard/collections/)
 ## [Numerics in .NET](standard/numerics.md)

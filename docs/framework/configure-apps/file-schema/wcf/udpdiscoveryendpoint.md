@@ -72,5 +72,5 @@ This configuration element defines a standard endpoint that is pre-configured fo
 </services>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>
+## See also
+- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>

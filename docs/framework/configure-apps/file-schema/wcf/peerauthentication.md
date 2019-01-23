@@ -47,14 +47,14 @@ Specifies authentication settings for a peer certificate used by a peer node.
 ## Remarks  
  The `<authentication>` element corresponds to the <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication> class. This element specifies a validator, which is invoked during neighbor-to-neighbor authentication in the mesh. When a new peer tries to establish a neighbor connection, it passes its own credential to the responding peer. The validator of the responder is invoked to verify the credential of the remote party. Whenever a peer connection is established in the mesh, both peers are mutually authenticated, meaning validators on both ends are invoked.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement>  
- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>  
- <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.PeerCredentialElement.PeerAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)  
- [Peer Channel Message Authentication](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)  
- [Peer Channel Custom Authentication](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)  
- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
+## See also
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement>
+- <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication>
+- <xref:System.ServiceModel.Security.PeerCredential.PeerAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.PeerCredentialElement.PeerAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.X509PeerCertificateAuthenticationElement>
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+- [Peer Channel Message Authentication](https://msdn.microsoft.com/library/80e73386-514e-4c30-9e4a-b9ca8c173a95)
+- [Peer Channel Custom Authentication](https://msdn.microsoft.com/library/4aa8a82e-41a8-48e2-8621-7e1cbabdca7c)
+- [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)

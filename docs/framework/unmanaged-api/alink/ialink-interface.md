@@ -69,7 +69,7 @@ Helps in constructing .NET Framework assemblies. Among other things, the interfa
   
  [SetNonAssemblyFlags Method](../../../../docs/framework/unmanaged-api/alink/setnonassemblyflags-method.md)  
   
-## See Also  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+## See also
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
+- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

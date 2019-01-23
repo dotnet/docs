@@ -59,8 +59,8 @@ Specifies application base subdirectories for the common language runtime to sea
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Specifying an Assembly's Location](../../../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

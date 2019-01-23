@@ -79,5 +79,5 @@ Specifies the discoverability of service endpoints.
 </behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>
+## See also
+- <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>

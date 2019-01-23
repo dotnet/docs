@@ -236,7 +236,7 @@ private:
    }  
 ```  
   
-## See Also  
- <xref:System.Windows.Forms.Timer>  
- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)  
- [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Timer>
+- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)
+- [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)

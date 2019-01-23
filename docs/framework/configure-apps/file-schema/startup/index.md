@@ -21,5 +21,5 @@ Startup settings specify the version of the common language runtime that should 
   
 ## See also
 
-- [Configuration File Schema](../index.md)  
+- [Configuration File Schema](../index.md)
 - [How to: Configure an app to support .NET Framework 4 or later versions](../../../migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)

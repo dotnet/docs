@@ -90,13 +90,13 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
 ## Remarks  
  This binding element provides a protection level and an exchange mechanism as part of the context for a `BasicHttpBinding`.  
   
-## See Also  
- <xref:System.ServiceModel.BasicHttpBinding>  
- <xref:System.ServiceModel.BasicHttpContextBinding>  
- <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>  
- <xref:System.ServiceModel.Channels.ContextBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)
+## See also
+- <xref:System.ServiceModel.BasicHttpBinding>
+- <xref:System.ServiceModel.BasicHttpContextBinding>
+- <xref:System.ServiceModel.Configuration.BasicHttpContextBindingElement>
+- <xref:System.ServiceModel.Channels.ContextBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md)

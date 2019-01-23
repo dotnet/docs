@@ -17,14 +17,14 @@ The `Protected Friend` keyword combination is a member access modifier. It confe
 - **Declaration Context.** You can use `Protected Friend` only at the class level. This means the declaration context for a `Protected` element must be a class, and cannot be a source file, namespace, interface, module, structure, or procedure. 
 
 
-## See Also
+## See also
 
-[Public](../../../visual-basic/language-reference/modifiers/public.md)  
-[Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
-[Friend](friend.md)   
-[Private](../../../visual-basic/language-reference/modifiers/private.md)  
-[Private Protected](./private-protected.md)   
-[Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
-[Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
-[Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
-[Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Public](../../../visual-basic/language-reference/modifiers/public.md)
+- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+- [Friend](friend.md)
+- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Private Protected](./private-protected.md)
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

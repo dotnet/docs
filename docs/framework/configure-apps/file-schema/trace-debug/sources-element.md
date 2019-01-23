@@ -75,12 +75,12 @@ Specifies trace sources that initiate tracing messages.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.ConsoleTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- <xref:System.Diagnostics.XmlWriterTraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md)
+## See also
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.ConsoleTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- <xref:System.Diagnostics.XmlWriterTraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [\<source>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/source-element.md)

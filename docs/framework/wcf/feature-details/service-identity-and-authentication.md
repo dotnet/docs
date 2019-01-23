@@ -106,12 +106,12 @@ A service's *endpoint identity*is a value generated from the service Web Service
   
  For more information about how to stack binding elements correctly for a custom binding, see [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md). For more information about creating a custom binding with the <xref:System.ServiceModel.Channels.SecurityBindingElement>, see [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md).  
   
-## See Also  
- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)  
- [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)  
- [How to: Create a Custom Client Identity Verifier](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)  
- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)  
- [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)  
- [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)
+## See also
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)
+- [How to: Create a Custom Client Identity Verifier](../../../../docs/framework/wcf/extending/how-to-create-a-custom-client-identity-verifier.md)
+- [Selecting a Credential Type](../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md)
+- [How to: Retrieve the Thumbprint of a Certificate](../../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md)

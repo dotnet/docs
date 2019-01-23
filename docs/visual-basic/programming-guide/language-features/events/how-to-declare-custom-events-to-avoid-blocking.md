@@ -21,8 +21,8 @@ There are several circumstances when it is important that one event handler not 
   
  [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-avoid-blocking_1.vb)]  
   
-## See Also  
- <xref:System.Collections.ArrayList>  
- <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
- [How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+## See also
+- <xref:System.Collections.ArrayList>
+- <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)

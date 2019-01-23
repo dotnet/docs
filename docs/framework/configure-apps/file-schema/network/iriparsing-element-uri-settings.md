@@ -73,7 +73,7 @@ Specifies if International Resource Identifier (IRI) parsing is applied to a <xr
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
+## See also
+- <xref:System.Configuration.IriParsingElement?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

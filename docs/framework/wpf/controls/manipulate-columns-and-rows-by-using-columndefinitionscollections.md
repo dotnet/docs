@@ -23,7 +23,7 @@ This example shows how to use the methods in the <xref:System.Windows.Controls.C
  [!code-csharp[ColumnDefinitionsGrid#2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#2)]
  [!code-vb[ColumnDefinitionsGrid#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#2)]  
   
-## See Also  
- <xref:System.Windows.Controls.Grid>  
- <xref:System.Windows.Controls.ColumnDefinitionCollection>  
- <xref:System.Windows.Controls.RowDefinitionCollection>
+## See also
+- <xref:System.Windows.Controls.Grid>
+- <xref:System.Windows.Controls.ColumnDefinitionCollection>
+- <xref:System.Windows.Controls.RowDefinitionCollection>

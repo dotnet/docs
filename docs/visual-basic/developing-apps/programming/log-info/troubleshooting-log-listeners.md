@@ -32,7 +32,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
      For more information, see <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A>.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)  
- [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)
+## See also
+- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
+- [Working with Application Logs](../../../../visual-basic/developing-apps/programming/log-info/working-with-application-logs.md)
+- [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)

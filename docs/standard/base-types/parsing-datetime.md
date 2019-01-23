@@ -83,8 +83,8 @@ Each overload of the <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.P
 
 ## See also
 
-- [Parsing Strings](parsing-strings.md)  
-- [Formatting Types](formatting-types.md)  
-- [Type Conversion in .NET](type-conversion.md)  
-- [Standard date and time formats](standard-date-and-time-format-strings.md)  
+- [Parsing Strings](parsing-strings.md)
+- [Formatting Types](formatting-types.md)
+- [Type Conversion in .NET](type-conversion.md)
+- [Standard date and time formats](standard-date-and-time-format-strings.md)
 - [Custom date and time format strings](custom-date-and-time-format-strings.md)

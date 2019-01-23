@@ -51,5 +51,5 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
 ### Visual Studio Debugging In Zone  
  `PresentationHost.exe -debug -debugSecurityZoneURL http://www.example.com c:\folderpath\example.xbap`  
   
-## See Also  
- [Security](../../../../docs/framework/wpf/security-wpf.md)
+## See also
+- [Security](../../../../docs/framework/wpf/security-wpf.md)

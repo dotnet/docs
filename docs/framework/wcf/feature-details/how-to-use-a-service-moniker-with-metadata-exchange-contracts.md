@@ -33,6 +33,6 @@ After developing some new WCF services, you may decide that you want to be able 
     > [!NOTE]
     >  If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax."  If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
-## See Also  
- [How to: Use the Windows Communication Foundation Service Moniker without Registration](../../../../docs/framework/wcf/feature-details/use-the-wcf-service-moniker-without-registration.md)  
- [How to: Use a Service Moniker with WSDL Contracts](../../../../docs/framework/wcf/feature-details/how-to-use-a-service-moniker-with-wsdl-contracts.md)
+## See also
+- [How to: Use the Windows Communication Foundation Service Moniker without Registration](../../../../docs/framework/wcf/feature-details/use-the-wcf-service-moniker-without-registration.md)
+- [How to: Use a Service Moniker with WSDL Contracts](../../../../docs/framework/wcf/feature-details/how-to-use-a-service-moniker-with-wsdl-contracts.md)

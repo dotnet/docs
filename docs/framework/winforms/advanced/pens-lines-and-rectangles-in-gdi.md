@@ -61,10 +61,10 @@ To draw lines with [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-m
   
  A <xref:System.Drawing.Rectangle> object has methods and properties for manipulating and gathering information about the rectangle. For example, the <xref:System.Drawing.Rectangle.Inflate%2A> and <xref:System.Drawing.Rectangle.Offset%2A> methods change the size and position of the rectangle. The <xref:System.Drawing.Rectangle.IntersectsWith%2A> method tells you whether the rectangle intersects another given rectangle, and the <xref:System.Drawing.Rectangle.Contains%2A> method tells you whether a given point is inside the rectangle.  
   
-## See Also  
- <xref:System.Drawing.Graphics?displayProperty=nameWithType>  
- <xref:System.Drawing.Pen?displayProperty=nameWithType>  
- <xref:System.Drawing.Rectangle?displayProperty=nameWithType>  
- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)  
- [How to: Draw a Line on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-line-on-a-windows-form.md)  
- [How to: Draw an Outlined Shape](../../../../docs/framework/winforms/advanced/how-to-draw-an-outlined-shape.md)
+## See also
+- <xref:System.Drawing.Graphics?displayProperty=nameWithType>
+- <xref:System.Drawing.Pen?displayProperty=nameWithType>
+- <xref:System.Drawing.Rectangle?displayProperty=nameWithType>
+- [How to: Create a Pen](../../../../docs/framework/winforms/advanced/how-to-create-a-pen.md)
+- [How to: Draw a Line on a Windows Form](../../../../docs/framework/winforms/advanced/how-to-draw-a-line-on-a-windows-form.md)
+- [How to: Draw an Outlined Shape](../../../../docs/framework/winforms/advanced/how-to-draw-an-outlined-shape.md)

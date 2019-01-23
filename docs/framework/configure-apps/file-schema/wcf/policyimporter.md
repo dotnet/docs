@@ -43,10 +43,10 @@ Specifies a policy importer that controls the import of custom policy assertions
 ## Remarks  
  A policy importer is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
- <xref:System.ServiceModel.Configuration.PolicyImporterElement>  
- <xref:System.ServiceModel.Configuration.MetadataElement>  
- <xref:System.ServiceModel.Description.MetadataImporter>  
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>
+- <xref:System.ServiceModel.Configuration.PolicyImporterElement>
+- <xref:System.ServiceModel.Configuration.MetadataElement>
+- <xref:System.ServiceModel.Description.MetadataImporter>
+- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

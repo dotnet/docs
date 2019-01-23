@@ -90,9 +90,9 @@ This walkthrough show you how to select the Windows Presentation Foundation (WPF
   
 9. The `elementHost2` control now hosts an instance of the `UserControl1` type.  
   
-## See Also  
- <xref:System.Windows.Forms.Integration.ElementHost>  
- <xref:System.Windows.Forms.Integration.WindowsFormsHost>  
- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)  
- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)  
- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+## See also
+- <xref:System.Windows.Forms.Integration.ElementHost>
+- <xref:System.Windows.Forms.Integration.WindowsFormsHost>
+- [Migration and Interoperability](../../../../docs/framework/wpf/advanced/migration-and-interoperability.md)
+- [Using WPF Controls](../../../../docs/framework/winforms/advanced/using-wpf-controls.md)
+- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)

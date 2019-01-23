@@ -55,8 +55,8 @@ Module Module1
 End Module  
 ```  
   
-## See Also  
- <xref:System.Nullable%601>  
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+## See also
+- <xref:System.Nullable%601>
+- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)

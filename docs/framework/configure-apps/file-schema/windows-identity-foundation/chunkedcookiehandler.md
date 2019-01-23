@@ -57,5 +57,5 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
 </cookieHandler>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Services.ChunkedCookieHandler>
+## See also
+- <xref:System.IdentityModel.Services.ChunkedCookieHandler>

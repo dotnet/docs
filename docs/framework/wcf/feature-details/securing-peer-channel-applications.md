@@ -35,6 +35,6 @@ Like other bindings under the [!INCLUDE[vstecwinfx](../../../../includes/vstecwi
 ## Peer Channel Code Examples  
  [Peer Channel Scenarios](../../../../docs/framework/wcf/feature-details/peer-channel-scenarios.md)  
   
-## See Also  
- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+## See also
+- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
+- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

@@ -48,8 +48,8 @@ Represents a query that is used to track resumption of a bookmark within a workf
 |-------------|-----------------|  
 |[\<bookmarkResumptionQueries>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/bookmarkresumptionqueries.md)|Represents a collection of queries that are used to track resumption of a bookmark within a workflow instance.|  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType>       
- <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.BookmarkResumptionQueryElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.BookmarkResumptionQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

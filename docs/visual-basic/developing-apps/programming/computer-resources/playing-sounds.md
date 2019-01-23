@@ -59,9 +59,9 @@ The `My.Computer.Audio` object provides methods for playing sounds.
   
  [!code-vb[VbVbalrMyComputer#17](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/playing-sounds_6.vb)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Audio>  
- <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A>  
- <xref:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound%2A>  
- <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A>  
- <xref:Microsoft.VisualBasic.AudioPlayMode>
+## See also
+- <xref:Microsoft.VisualBasic.Devices.Audio>
+- <xref:Microsoft.VisualBasic.Devices.Audio.Play%2A>
+- <xref:Microsoft.VisualBasic.Devices.Audio.PlaySystemSound%2A>
+- <xref:Microsoft.VisualBasic.Devices.Audio.Stop%2A>
+- <xref:Microsoft.VisualBasic.AudioPlayMode>

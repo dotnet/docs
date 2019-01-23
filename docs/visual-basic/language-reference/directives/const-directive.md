@@ -42,9 +42,9 @@ Defines conditional compiler constants for Visual Basic.
   
  [!code-vb[VbVbalrConditionalComp#3](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/const-directive_1.vb)]  
   
-## See Also  
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)  
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)  
- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+## See also
+- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)

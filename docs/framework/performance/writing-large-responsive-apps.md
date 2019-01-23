@@ -457,12 +457,12 @@ class Compilation { /*...*/
   
 ## See also
 
-- [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
-- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
-- [Performance](../../../docs/framework/performance/index.md)  
-- [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)  
-- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)  
-- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)  
-- [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)  
+- [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)
+- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Performance](../../../docs/framework/performance/index.md)
+- [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)
+- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)
+- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

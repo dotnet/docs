@@ -19,9 +19,9 @@ The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class 
 ## See also
 
 - <xref:System.Threading.WaitHandle?displayProperty=nameWithType>
-- [AutoResetEvent](autoresetevent.md)  
-- [SpinWait](spinwait.md)  
+- [AutoResetEvent](autoresetevent.md)
+- [SpinWait](spinwait.md)
 - [Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md)
-- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)  
-- [Threading objects and features](threading-objects-and-features.md)  
-- [Threading](index.md)  
+- [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)
+- [Threading objects and features](threading-objects-and-features.md)
+- [Threading](index.md)

@@ -39,5 +39,5 @@ This configuration element contains a collection of XML elements that contain cu
 </behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
+## See also
+- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

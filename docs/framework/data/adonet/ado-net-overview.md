@@ -51,7 +51,7 @@ ADO.NET provides consistent access to data sources such as SQL Server and XML, a
  [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
  Describes how to connect to a data source, retrieve data, and modify data. This includes `DataReaders` and `DataAdapters`.  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

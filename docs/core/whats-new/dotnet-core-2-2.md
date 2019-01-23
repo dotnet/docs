@@ -92,6 +92,6 @@ See [Host startup hook](https://github.com/dotnet/core-setup/blob/master/Documen
 
 ## See also
 
-* [What's new in .NET Core](index.md)
-* [What's new in ASP.NET Core 2.2](/aspnet/core/release-notes/aspnetcore-2.2)  
-* [New features in EF Core 2.2](/ef/core/what-is-new/ef-core-2.2)  
+- [What's new in .NET Core](index.md)
+- [What's new in ASP.NET Core 2.2](/aspnet/core/release-notes/aspnetcore-2.2)
+- [New features in EF Core 2.2](/ef/core/what-is-new/ef-core-2.2)

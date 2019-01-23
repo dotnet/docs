@@ -22,7 +22,7 @@ When a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType
   
 ## See also
 
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
-- [Custom Partitioners for PLINQ and TPL](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md)  
-- [Iterators](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)  
+- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
+- [Custom Partitioners for PLINQ and TPL](../../../docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md)
+- [Iterators](https://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)
 - [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)

@@ -37,6 +37,6 @@ This section enables the use of a custom binding element from a machine or appli
 </customBinding>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+## See also
+- <xref:System.ServiceModel.Configuration.BindingElementExtensionElement>
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)

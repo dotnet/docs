@@ -12,7 +12,7 @@ The WS-AT protocol service received a Replay message from a durable participant,
 ## Troubleshooting  
  Receiving this error can indiate that a Durable participant (including Subordinate TransactionManagers) has recovered from failure, however it is unsure of the transaction outcome and request its status.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

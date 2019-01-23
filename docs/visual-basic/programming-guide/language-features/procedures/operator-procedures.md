@@ -75,14 +75,14 @@ An operator procedure is a series of Visual Basic statements that define the beh
   
  For more information and examples, see [Operator Overloading in Visual Basic 2005](https://msdn.microsoft.com/library/ms379613(v=vs.80).aspx).  
   
-## See Also  
- [Procedures](./index.md)  
- [Sub Procedures](./sub-procedures.md)  
- [Function Procedures](./function-procedures.md)  
- [Property Procedures](./property-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
- [How to: Define an Operator](./how-to-define-an-operator.md)  
- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)  
- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)  
- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)
+## See also
+- [Procedures](./index.md)
+- [Sub Procedures](./sub-procedures.md)
+- [Function Procedures](./function-procedures.md)
+- [Property Procedures](./property-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)
+- [How to: Define an Operator](./how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](./how-to-define-a-conversion-operator.md)
+- [How to: Call an Operator Procedure](./how-to-call-an-operator-procedure.md)
+- [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md)

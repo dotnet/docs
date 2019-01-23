@@ -20,13 +20,13 @@ Configures the delivery format, delivery method, and from address for sending em
 ## Syntax  
   
 ```xml  
-      <smtp  
-        deliveryFormat="format"   
-        deliveryMethod="method"   
-        from="from address">
-          <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
-          <network> … </network>  
-      </smtp>  
+<smtp  
+  deliveryFormat="format"  
+  deliveryMethod="method"  
+  from="from address">
+    <specifiedPickupDirectory>...</specifiedPickupDirectory>  
+    <network>...</network>  
+</smtp>  
 ```  
   
 ## Attributes and Elements  
@@ -72,9 +72,9 @@ Configures the delivery format, delivery method, and from address for sending em
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
-- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
-- <xref:System.Net.Mail.SmtpDeliveryFormat>  
-- <xref:System.Net.Mail.SmtpDeliveryMethod>  
+## See also
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpDeliveryFormat>
+- <xref:System.Net.Mail.SmtpDeliveryMethod>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -33,8 +33,8 @@ Continue { Do | For | While }
   
  [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/continue-statement_1.vb)]  
   
-## See Also  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## See also
+- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
+- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
+- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

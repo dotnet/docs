@@ -28,8 +28,8 @@ You can draw the start or end of a line in one of several shapes called line cap
   
 -   Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
-## See Also  
- <xref:System.Drawing.Pen?displayProperty=nameWithType>  
- <xref:System.Drawing.Drawing2D.LineCap?displayProperty=nameWithType>  
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)
+## See also
+- <xref:System.Drawing.Pen?displayProperty=nameWithType>
+- <xref:System.Drawing.Drawing2D.LineCap?displayProperty=nameWithType>
+- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
+- [Using a Pen to Draw Lines and Shapes](../../../../docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md)

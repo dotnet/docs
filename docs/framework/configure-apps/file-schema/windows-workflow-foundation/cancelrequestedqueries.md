@@ -48,6 +48,6 @@ Represents a collection of queries that are used to track requests to cancel a c
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|A configuration element that contains all queries for a specific workflow identified by the **activityDefinitionId** property.|  
   
-## See Also  
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+## See also
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

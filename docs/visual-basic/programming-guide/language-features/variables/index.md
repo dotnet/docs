@@ -27,10 +27,10 @@ You often have to store values when you perform calculations with Visual Basic. 
 ## Variables and Properties  
  Like a variable, a *property* represents a value that you can access. However, it is more complex than a variable. A property uses code blocks that control how to set and retrieve its value. For more information, see [Differences Between Properties and Variables in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md).  
   
-## See Also  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Troubleshooting Variables](../../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)  
- [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)  
- [Differences Between Properties and Variables in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Troubleshooting Variables](../../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)
+- [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md)
+- [Differences Between Properties and Variables in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)

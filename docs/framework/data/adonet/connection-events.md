@@ -99,6 +99,6 @@ protected static void OnStateChange(object sender,
 }  
 ```  
   
-## See Also  
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

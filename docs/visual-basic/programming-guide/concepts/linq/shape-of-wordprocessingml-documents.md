@@ -88,5 +88,5 @@ End Module
   
  [Office 2003: XML Reference Schemas Download page](https://go.microsoft.com/fwlink/?LinkId=98095)  
   
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## See also
+- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

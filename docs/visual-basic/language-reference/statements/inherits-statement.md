@@ -57,9 +57,9 @@ Inherits basetypenames
   
  The interface named `thisInterface` now includes all the definitions in the <xref:System.IComparable>, <xref:System.IDisposable>, and <xref:System.IFormattable> interfaces The inherited members provide respectively for type-specific comparison of two objects, releasing allocated resources, and expressing the value of an object as a `String`. A class that implements `thisInterface` must implement every member of every base interface.  
   
-## See Also  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## See also
+- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)
+- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

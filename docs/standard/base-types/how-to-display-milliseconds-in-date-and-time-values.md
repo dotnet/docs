@@ -50,5 +50,5 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
   
 ## See also
 
-- <xref:System.Globalization.DateTimeFormatInfo>  
+- <xref:System.Globalization.DateTimeFormatInfo>
 - [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)

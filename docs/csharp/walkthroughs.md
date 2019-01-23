@@ -63,7 +63,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Deployment Samples and Walkthroughs](/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)  
  Provides step-by-step examples of common deployment scenarios.  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../csharp/programming-guide/index.md)
 - [Visual Studio Samples](/visualstudio/ide/visual-studio-samples)

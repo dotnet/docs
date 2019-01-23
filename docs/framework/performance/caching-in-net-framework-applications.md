@@ -70,8 +70,8 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
  For more information, see the entry [Extensible Output Caching with ASP.NET 4 (VS 2010 and .NET 4.0 Series)](https://go.microsoft.com/fwlink/?LinkId=185772) on Scott Guthrie's blog.  
   
-## See Also  
- <xref:System.Runtime.Caching.ObjectCache>  
- <xref:System.Runtime.Caching.MemoryCache>  
- [Walkthrough: Caching Application Data in a WPF Application](../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)  
- [Walkthrough: Caching Application Data in ASP.NET](https://msdn.microsoft.com/library/942236f6-0138-4aaf-af71-a5ea451a1e23)
+## See also
+- <xref:System.Runtime.Caching.ObjectCache>
+- <xref:System.Runtime.Caching.MemoryCache>
+- [Walkthrough: Caching Application Data in a WPF Application](../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)
+- [Walkthrough: Caching Application Data in ASP.NET](https://msdn.microsoft.com/library/942236f6-0138-4aaf-af71-a5ea451a1e23)

@@ -34,5 +34,5 @@ Extension objects are used to extend the functionality of style sheets. Extensio
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
 - [XSLT Security Considerations](../../../../docs/standard/data/xml/xslt-security-considerations.md)

@@ -31,6 +31,6 @@ void CoUninitializeEE (
 ## Remarks  
  The common language runtime execution engine cannot be unloaded from a process. To shut down the execution engine call [CorExitProcess](../../../../docs/framework/unmanaged-api/hosting/corexitprocess-function.md).  
   
-## See Also  
- [CoInitializeEE Function](../../../../docs/framework/unmanaged-api/hosting/coinitializeee-function.md)  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+- [CoInitializeEE Function](../../../../docs/framework/unmanaged-api/hosting/coinitializeee-function.md)
+- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

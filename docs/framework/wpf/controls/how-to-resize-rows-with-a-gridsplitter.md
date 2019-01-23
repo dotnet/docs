@@ -30,6 +30,6 @@ This example shows how to use a horizontal <xref:System.Windows.Controls.GridSpl
  [!code-xaml[GridSplitterRowColumn#GridSplitterEntireRowPart1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirerowpart1)]  
 [!code-xaml[GridSplitterRowColumn#GridSplitterEntireRowPart2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GridSplitterRowColumn/CS/Window1.xaml#gridsplitterentirerowpart2)]  
   
-## See Also  
- <xref:System.Windows.Controls.GridSplitter>  
- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.GridSplitter>
+- [How-to Topics](../../../../docs/framework/wpf/controls/gridsplitter-how-to-topics.md)

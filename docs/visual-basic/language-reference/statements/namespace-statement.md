@@ -96,7 +96,7 @@ Namespace System.Collections.Generic
 End Namespace  
 ```  
   
-## See Also  
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
+## See also
+- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)

@@ -61,6 +61,6 @@ A configuration element that supplies a set of criteria used by a client applica
 |-------------|-----------------|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Contains the settings needed by an application to participate in the service discovery process as a client.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.FindCriteria>  
- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
+## See also
+- <xref:System.ServiceModel.Discovery.FindCriteria>
+- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>

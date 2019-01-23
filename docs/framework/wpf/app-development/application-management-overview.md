@@ -359,11 +359,11 @@ All applications tend to share a common set of functionality that applies to app
   
  ![XBAP &#45; Application Object Events](../../../../docs/framework/wpf/app-development/media/applicationmodeloverview-applicationobjectevents-xbap.png "ApplicationModelOverview_ApplicationObjectEvents_xbap")  
   
-## See Also  
- <xref:System.Windows.Application>  
- [WPF Windows Overview](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md)  
- [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)  
- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)  
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)  
- [Application Model: How-to Topics](https://msdn.microsoft.com/library/76771b09-3688-4d1c-8818-9b3f4cf39a30)  
- [Application Development](../../../../docs/framework/wpf/app-development/index.md)
+## See also
+- <xref:System.Windows.Application>
+- [WPF Windows Overview](../../../../docs/framework/wpf/app-development/wpf-windows-overview.md)
+- [Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)
+- [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
+- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+- [Application Model: How-to Topics](https://msdn.microsoft.com/library/76771b09-3688-4d1c-8818-9b3f4cf39a30)
+- [Application Development](../../../../docs/framework/wpf/app-development/index.md)

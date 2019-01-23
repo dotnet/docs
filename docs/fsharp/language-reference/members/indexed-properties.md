@@ -52,13 +52,29 @@ ONE first two second three third four fourth five fifth six 6th
 seven seventh eight eighth nine ninth ten tenth
 ```
 
-## Indexed Properties with Multiple Index Variables
+## Indexed Properties with multiple index values
 
-Indexed properties can have more than one index variable. In that case, the variables are separated by commas when the property is used. The set method in such a property must have two curried arguments, the first of which is a tuple containing the keys, and the second of which is the value being set.
+Indexed properties can have more than one index value. In that case, the values are separated by commas when the property is used. The set method in such a property must have two curried arguments, the first of which is a tuple containing the keys, and the second of which is the value to set.
 
-The following code demonstrates the use of an indexed property with multiple index variables.
+The following code demonstrates the use of an indexed property with multiple index values.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3302.fs)]
+```fsharp
+open System.Collections.Generic
+
+/// Basic implementation of a sparse matrix basedon a dictionary
+type SparseMatrix() =
+    let table = new Dictionary<(int * int), float>()
+    member __.Item
+        // Because the key is comprised of two values, 'get' has two index values
+        with get(key1, key2) = table.[(key1, key2)]
+
+        // 'set' has two index values and a new value to place in the key's position
+        and set (key1, key2) value = table.[(key1, key2)] <- value
+
+let sm = new SparseMatrix()
+for i in 1..1000 do
+    sm.[i, i] <- float i * float i
+```
 
 ## See also
 

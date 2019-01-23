@@ -41,5 +41,5 @@ Because serialization can allow other code to see or modify object instance data
   
 -   The special constructor used for serialization should also perform thorough input validation and should be either protected or private to help protect against misuse by malicious code. It should enforce the same security checks and permissions required to obtain an instance of such a class by any other means, such as explicitly creating the class or indirectly creating it through some kind of factory.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

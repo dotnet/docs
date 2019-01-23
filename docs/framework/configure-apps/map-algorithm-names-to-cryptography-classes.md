@@ -63,6 +63,6 @@ There are four ways a developer can create a cryptography object using the [!INC
   
  For a list of default names and the classes they map to, see <xref:System.Security.Cryptography.CryptoConfig>.  
   
-## See Also  
- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)  
- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+## See also
+- [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)

@@ -32,8 +32,8 @@ Hiding menu items is a way to control the user interface of your application and
     menuItem3->Visible = false;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStripItem.Visible%2A>  
- <xref:System.Windows.Forms.MenuStrip>  
- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)  
- [How to: Disable ToolStripMenuItems](../../../../docs/framework/winforms/controls/how-to-disable-toolstripmenuitems.md)
+## See also
+- <xref:System.Windows.Forms.ToolStripItem.Visible%2A>
+- <xref:System.Windows.Forms.MenuStrip>
+- [MenuStrip Control Overview](../../../../docs/framework/winforms/controls/menustrip-control-overview-windows-forms.md)
+- [How to: Disable ToolStripMenuItems](../../../../docs/framework/winforms/controls/how-to-disable-toolstripmenuitems.md)

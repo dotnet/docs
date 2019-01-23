@@ -30,6 +30,6 @@ ms.author: "ronpet"
   
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
-## See Also  
-[Profiling Interfaces](profiling-interfaces.md)   
-[ICorProfilerCallback9 Interface](icorprofilercallback9-interface.md)
+## See also
+- [Profiling Interfaces](profiling-interfaces.md)
+- [ICorProfilerCallback9 Interface](icorprofilercallback9-interface.md)

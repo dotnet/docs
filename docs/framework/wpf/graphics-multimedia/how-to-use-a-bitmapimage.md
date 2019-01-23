@@ -18,5 +18,5 @@ This example shows how to use a <xref:System.Windows.Media.Imaging.BitmapImage> 
  [!code-csharp[ImageElementExample_snip#ImageSimpleExampleInlineCode1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml.cs#imagesimpleexampleinlinecode1)]
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
   
-## See Also  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+## See also
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

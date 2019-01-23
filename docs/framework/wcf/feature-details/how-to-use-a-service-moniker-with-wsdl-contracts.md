@@ -50,6 +50,6 @@ There are situations when you may want to have a completely self-contained COM I
   
 7.  Run the Visual Basic application. A message box will be displayed with the results of calling Subtract(145, 76.54).  
   
-## See Also  
- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)  
- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)
+## See also
+- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)
+- [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)

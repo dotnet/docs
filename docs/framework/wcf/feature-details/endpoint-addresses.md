@@ -131,6 +131,6 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  In some scenarios, an endpoint receives all messages that arrive on the underlying transport, and not just those with the appropriate `To` header. To enable this, the user can use the <xref:System.ServiceModel.Dispatcher.MatchAllMessageFilter> class.  
   
-## See Also  
- [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md)  
- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+## See also
+- [Specifying an Endpoint Address](../../../../docs/framework/wcf/specifying-an-endpoint-address.md)
+- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)

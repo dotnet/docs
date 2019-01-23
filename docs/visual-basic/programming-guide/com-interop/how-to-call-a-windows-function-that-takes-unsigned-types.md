@@ -71,9 +71,9 @@ If you are consuming a class, module, or structure that has members of unsigned 
     > [!IMPORTANT]
     >  Calling the Windows API requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
-## See Also  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+## See also
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

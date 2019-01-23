@@ -22,9 +22,9 @@ This example demonstrates how to run a LINQ query and then bind to the results.
   
  The second list box binds to that collection because its <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> value is set to `{Binding}`. As a result, it displays the returned collection (based on the `myTaskTemplate`<xref:System.Windows.DataTemplate>).  
   
-## See Also  
- [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)  
- [Bind to a Collection and Display Information Based on Selection](../../../../docs/framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md)  
- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md)
+- [Bind to a Collection and Display Information Based on Selection](../../../../docs/framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
+- [What's New in WPF Version 4.5](../../../../docs/framework/wpf/getting-started/whats-new.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

@@ -12,5 +12,5 @@ ms.assetid: e80d9734-b43a-4d21-a250-74400330a4c0
 |<xref:System.Activities.Statements.FlowDecision>|A specialized <xref:System.Activities.Statements.FlowNode> that provides the ability to model a conditional node with two outcomes.|  
 |<xref:System.Activities.Statements.FlowSwitch%601>|A specialized <xref:System.Activities.Statements.FlowNode> that allows modeling a switch construct, with one expression of a type defined in the activity’s type specifier and a single outcome for each match.|  
   
-## See Also  
- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)
+## See also
+- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)

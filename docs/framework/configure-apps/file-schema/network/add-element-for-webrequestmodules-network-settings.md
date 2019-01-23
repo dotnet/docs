@@ -75,6 +75,6 @@ Adds a custom Web request module to the application.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.WebRequest>  
+## See also
+- <xref:System.Net.WebRequest>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

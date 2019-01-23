@@ -87,10 +87,10 @@ When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] cli
 ## Saving Changes  
  Changes are tracked in the <xref:System.Data.Services.Client.DataServiceContext> instance but not sent to the server immediately. After you are finished with the required changes for a specified activity, call <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> to submit all the changes to the data service. For more information, see [Managing the Data Service Context](../../../../docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md). You can also save changes asynchronously by using the <xref:System.Data.Services.Client.DataServiceContext.BeginSaveChanges%2A> and <xref:System.Data.Services.Client.DataServiceContext.EndSaveChanges%2A> methods. For more information, see [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)  
- [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
- [Batching Operations](../../../../docs/framework/data/wcf/batching-operations-wcf-data-services.md)  
- [Object Materialization](../../../../docs/framework/data/wcf/object-materialization-wcf-data-services.md)  
- [Managing the Data Service Context](../../../../docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)
+- [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)
+- [Batching Operations](../../../../docs/framework/data/wcf/batching-operations-wcf-data-services.md)
+- [Object Materialization](../../../../docs/framework/data/wcf/object-materialization-wcf-data-services.md)
+- [Managing the Data Service Context](../../../../docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md)

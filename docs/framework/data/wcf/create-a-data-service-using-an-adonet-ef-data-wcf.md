@@ -66,7 +66,7 @@ The [!INCLUDE[adonet_ef](../../../../includes/adonet-ef-md.md)] also provides a 
 
 8. To test the Northwind.svc data service by using a Web browser, follow the instructions in the topic [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).
 
-## See Also
+## See also
 
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
 - [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)

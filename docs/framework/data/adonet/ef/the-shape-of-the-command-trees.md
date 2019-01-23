@@ -99,5 +99,5 @@ The SQL generation module is responsible for generating a backend specific SQL q
 ### Using Primitive Types  
  When primitive types are referenced in output command trees, they are typically referenced in the conceptual model's primitive types. However, for certain expressions, providers need the corresponding store primitive type. Examples of such expressions include DbCastExpression and possibly DbNullExpression, if the provider needs to cast the null to the corresponding type. In these cases, providers should do the mapping to the provider type based on the primitive type kind and its facets.  
   
-## See Also  
- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)
+## See also
+- [SQL Generation](../../../../../docs/framework/data/adonet/ef/sql-generation.md)

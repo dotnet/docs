@@ -74,10 +74,10 @@ The statements within a conditional compilation block must be complete logical s
   
  [!code-vb[VbVbalrConditionalComp#1](../../../visual-basic/language-reference/directives/codesnippet/VisualBasic/if-then-else-directives_1.vb)]  
   
-## See Also  
-[#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
-[If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
-[Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)   
-<xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>   
+## See also
+- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
+- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
+- <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType>
 
 

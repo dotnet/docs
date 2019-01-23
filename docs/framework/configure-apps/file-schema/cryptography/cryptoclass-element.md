@@ -71,8 +71,8 @@ Contains a cryptography class that has a mapping to a friendly name in the [\<na
 </configuration>  
 ```  
   
-## See Also  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+## See also
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

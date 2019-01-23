@@ -50,5 +50,5 @@ A <xref:System.Threading.Barrier?displayProperty=nameWithType> is a synchronizat
   
 ## See also
 
-- [Threading objects and features](threading-objects-and-features.md)  
+- [Threading objects and features](threading-objects-and-features.md)
 - [How to: synchronize concurrent operations with a Barrier](how-to-synchronize-concurrent-operations-with-a-barrier.md)

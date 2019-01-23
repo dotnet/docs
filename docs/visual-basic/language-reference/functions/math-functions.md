@@ -160,9 +160,9 @@ End Function
   
  **Assembly:** mscorlib (in mscorlib.dll)  
   
-## See Also  
- <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>  
- <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>  
- <xref:System.Double.NaN>  
- [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)  
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+## See also
+- <xref:Microsoft.VisualBasic.VBMath.Rnd%2A>
+- <xref:Microsoft.VisualBasic.VBMath.Randomize%2A>
+- <xref:System.Double.NaN>
+- [Derived Math Functions](../../../visual-basic/language-reference/keywords/derived-math-functions.md)
+- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)

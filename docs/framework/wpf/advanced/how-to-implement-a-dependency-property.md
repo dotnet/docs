@@ -26,6 +26,6 @@ This example shows how to back a [!INCLUDE[TLA#tla_clr](../../../../includes/tla
   
  For more information about how and why to implement a dependency property, as opposed to just backing a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] property with a private field, see [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md).  
   
-## See Also  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)
+## See also
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)

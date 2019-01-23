@@ -81,12 +81,12 @@ There are several scenarios in which it's appropriate to create and manage your 
   
 ## See also
 
-- <xref:System.Threading.ThreadPool?displayProperty=nameWithType>  
-- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>  
-- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>  
-- [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md)  
-- [How to: Return a Value from a Task](../parallel-programming/how-to-return-a-value-from-a-task.md)  
-- [Threading Objects and Features](threading-objects-and-features.md)  
-- [Threads and Threading](threads-and-threading.md)  
-- [Asynchronous File I/O](../io/asynchronous-file-i-o.md)  
-- [Timers](timers.md)  
+- <xref:System.Threading.ThreadPool?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>
+- [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md)
+- [How to: Return a Value from a Task](../parallel-programming/how-to-return-a-value-from-a-task.md)
+- [Threading Objects and Features](threading-objects-and-features.md)
+- [Threads and Threading](threads-and-threading.md)
+- [Asynchronous File I/O](../io/asynchronous-file-i-o.md)
+- [Timers](timers.md)

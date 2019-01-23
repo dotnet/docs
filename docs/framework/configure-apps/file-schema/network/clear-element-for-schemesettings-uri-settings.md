@@ -64,11 +64,11 @@ Clears all existing scheme settings.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
-- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
-- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
-- <xref:System.Uri?displayProperty=nameWithType>  
+## See also
+- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
+- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

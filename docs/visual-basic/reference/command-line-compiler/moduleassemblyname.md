@@ -36,13 +36,13 @@ Specifies the name of the assembly that this module will be a part of.
 > [!NOTE]
 >  The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
-## See Also  
- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [-main](../../../visual-basic/reference/command-line-compiler/main.md)  
- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)  
- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)  
- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)
+## See also
+- [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [-main](../../../visual-basic/reference/command-line-compiler/main.md)
+- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+- [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md)
+- [Assemblies and the Global Assembly Cache](../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Friend Assemblies](../../programming-guide/concepts/assemblies-gac/friend-assemblies.md)

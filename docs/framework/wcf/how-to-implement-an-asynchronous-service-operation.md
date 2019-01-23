@@ -39,6 +39,6 @@ In Windows Communication Foundation (WCF) applications, a service operation can 
  [!code-csharp[C_SyncAsyncClient#1](../../../samples/snippets/csharp/VS_Snippets_CFX/c_syncasyncclient/cs/services.cs#1)]
  [!code-vb[C_SyncAsyncClient#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_syncasyncclient/vb/services.vb#1)]  
   
-## See Also  
- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)  
- [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
+## See also
+- [Designing Service Contracts](../../../docs/framework/wcf/designing-service-contracts.md)
+- [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)

@@ -409,8 +409,8 @@ Standard date and time format strings can be used with both <xref:System.DateTim
   
 ## See also
 
-- <xref:System.DateTime?displayProperty=nameWithType>  
-- <xref:System.DateTimeOffset?displayProperty=nameWithType>  
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)  
+- <xref:System.DateTime?displayProperty=nameWithType>
+- <xref:System.DateTimeOffset?displayProperty=nameWithType>
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
 - [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

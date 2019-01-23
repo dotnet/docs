@@ -88,6 +88,6 @@ Interaction between application and TextFormatter
 ## Specifying Formatting Properties  
  <xref:System.Windows.Media.TextFormatting.TextRun> objects are formatted by using properties provided by the text store. These properties come in two types, <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties>. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> handle paragraph inclusive properties such as <xref:System.Windows.TextAlignment> and <xref:System.Windows.FlowDirection>. <xref:System.Windows.Media.TextFormatting.TextRunProperties> are properties that can be different for each text run within a paragraph, such as foreground brush, <xref:System.Windows.Media.Typeface>, and font size. To implement custom paragraph and custom text run property types, your application must create classes that derive from <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties> respectively.  
   
-## See Also  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+## See also
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)

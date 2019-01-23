@@ -18,5 +18,5 @@ References to properties and methods often require an explicit object qualifier.
   
 4.  Check the object's documentation and make sure the action is valid.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

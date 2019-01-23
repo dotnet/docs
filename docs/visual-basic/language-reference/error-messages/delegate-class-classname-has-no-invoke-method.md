@@ -19,8 +19,8 @@ A call to `Invoke` through a delegate has failed because `Invoke` is not impleme
   
 2.  Locate the code that implements the delegate class and make sure it implements the `Invoke` procedure.  
   
-## See Also  
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+## See also
+- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)

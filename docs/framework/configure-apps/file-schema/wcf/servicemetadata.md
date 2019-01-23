@@ -110,8 +110,8 @@ Specifies the publication of service metadata and associated information.
 </configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Metadata Publishing Behavior](../../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement>
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Metadata Publishing Behavior](../../../../../docs/framework/wcf/samples/metadata-publishing-behavior.md)

@@ -36,11 +36,11 @@ When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit
     System.Windows.Forms.ToolStripItemOverflow.Never;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.ToolStripOverflowButton>  
- <xref:System.Windows.Forms.ToolStripItem.Overflow%2A>  
- <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+## See also
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.ToolStripOverflowButton>
+- <xref:System.Windows.Forms.ToolStripItem.Overflow%2A>
+- <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>
+- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)

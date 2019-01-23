@@ -27,6 +27,6 @@ A flexible routing mechanism is a benefit of IPv6. Due to the way in which IPv4 
   
 -   Redirect. Sent by routers to indicate a better next-hop address to a particular destination for a sending node.  
   
-## See Also  
- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
+- [Sockets](../../../docs/framework/network-programming/sockets.md)

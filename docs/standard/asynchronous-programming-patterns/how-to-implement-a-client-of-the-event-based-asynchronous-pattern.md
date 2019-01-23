@@ -35,6 +35,6 @@ The following code example demonstrates how to use a component that adheres to t
   
 ## See also
 
-- <xref:System.ComponentModel.AsyncOperation>  
-- <xref:System.ComponentModel.AsyncOperationManager>  
+- <xref:System.ComponentModel.AsyncOperation>
+- <xref:System.ComponentModel.AsyncOperationManager>
 - <xref:System.Windows.Forms.WindowsFormsSynchronizationContext>

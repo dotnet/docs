@@ -387,9 +387,9 @@ Touch and manipulation events
 
  Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] framework elements and event routing in more detail. See the following overviews for more information, [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md), [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md), [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md), [Trees in WPF](../../../../docs/framework/wpf/advanced/trees-in-wpf.md), and [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).
 
-## See Also
- [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md)
- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
- [Properties](../../../../docs/framework/wpf/advanced/properties-wpf.md)
+## See also
+- [Focus Overview](../../../../docs/framework/wpf/advanced/focus-overview.md)
+- [Commanding Overview](../../../../docs/framework/wpf/advanced/commanding-overview.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [Properties](../../../../docs/framework/wpf/advanced/properties-wpf.md)

@@ -28,9 +28,9 @@ ms.assetid: 975abd20-2a1d-42db-aed3-e898025ccce7
   
 ## See also
 
-- [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)  
-- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
-- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)  
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
-- [Serialization](../../../docs/standard/serialization/index.md)  
+- [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)
+- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)
+- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
+- [Serialization](../../../docs/standard/serialization/index.md)
 - [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)

@@ -38,14 +38,14 @@ Variables and properties both represent values that you can access. However, the
   
  <sup>1</sup> Unlike a variable, the value of a property might not correspond directly to a single item of storage. The storage might be split into pieces for convenience or security, or the value might be stored in an encrypted form. In these cases the `Get` procedure would assemble the pieces or decrypt the stored value, and the `Set` procedure would encrypt the new value or split it into the constituent storage. A property value might be ephemeral, like time of day, in which case the `Get` procedure would calculate it on the fly each time you access the property.  
   
-## See Also  
- [Property Procedures](./property-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
- [How to: Create a Property](./how-to-create-a-property.md)  
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)  
- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)
+## See also
+- [Property Procedures](./property-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
+- [How to: Create a Property](./how-to-create-a-property.md)
+- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)
+- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)
+- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)
+- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)

@@ -347,6 +347,6 @@ ms.author: "ronpet"
   
 ## See also
 
-- <xref:System.Text.RegularExpressions>  
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
+- <xref:System.Text.RegularExpressions>
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
 - [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

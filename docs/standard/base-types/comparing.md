@@ -146,7 +146,7 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
 - [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
 - [Sorting Weight Tables (for .NET on Windows)](https://www.microsoft.com/en-us/download/details.aspx?id=10921)
 - [Default Unicode Collation Element Table (for .NET Core on Linux and macOS)](https://www.unicode.org/Public/UCA/latest/allkeys.txt)

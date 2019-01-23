@@ -34,6 +34,6 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
   
  For more information about cross-site scripting, see [About Cross-Frame Scripting and Security](https://msdn.microsoft.com/library/ms533028.aspx).  
   
-## See Also  
- [FRAME Element &#124; frame Object](https://msdn.microsoft.com/library/ms535250.aspx)  
- [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)
+## See also
+- [FRAME Element &#124; frame Object](https://msdn.microsoft.com/library/ms535250.aspx)
+- [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)

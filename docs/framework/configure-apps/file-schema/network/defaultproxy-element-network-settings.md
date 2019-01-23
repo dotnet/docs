@@ -19,13 +19,13 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ## Syntax  
   
 ```xml  
-      <defaultProxy  
-        enabled="true|false"  
-        useDefaultCredentials="true|false">  
-           <bypasslist> … </bypasslist>  
-           <proxy> … </proxy>  
-           <module> … </module>  
-      </defaultProxy>
+<defaultProxy  
+  enabled="true|false"  
+  useDefaultCredentials="true|false">  
+    <bypasslist>...</bypasslist>  
+    <proxy>...</proxy>  
+    <module>...</module>  
+</defaultProxy>
 ```  
   
 ## Attributes and Elements  
@@ -80,6 +80,6 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.WebProxy?displayProperty=nameWithType>  
+## See also
+- <xref:System.Net.WebProxy?displayProperty=nameWithType>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -86,8 +86,8 @@ This element defines the type the service hosting environment instantiates for a
 <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)  
- [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)

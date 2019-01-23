@@ -117,12 +117,12 @@ A security token service implements the protocol defined in the WS-Trust specifi
 ## Example  
  For full code for a security token service, see [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md).  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SigningCredentials>  
- <xref:System.IdentityModel.Tokens.SecurityKey>  
- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>  
- <xref:System.IdentityModel.Tokens.SamlSecurityToken>  
- <xref:System.IdentityModel.Tokens.SamlAssertion>  
- <xref:System.ServiceModel.Security.Tokens.BinarySecretSecurityToken>  
- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>  
- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)
+## See also
+- <xref:System.IdentityModel.Tokens.SigningCredentials>
+- <xref:System.IdentityModel.Tokens.SecurityKey>
+- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier>
+- <xref:System.IdentityModel.Tokens.SamlSecurityToken>
+- <xref:System.IdentityModel.Tokens.SamlAssertion>
+- <xref:System.ServiceModel.Security.Tokens.BinarySecretSecurityToken>
+- <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause>
+- [Federation Sample](../../../../docs/framework/wcf/samples/federation-sample.md)

@@ -69,4 +69,4 @@ The Discovery specification does not require that endpoints that participate in 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DiscoveryScenario`  
   
-## See Also
+## See also

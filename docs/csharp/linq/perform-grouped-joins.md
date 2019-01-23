@@ -1,7 +1,7 @@
 ---
 title: Perform grouped joins (LINQ in C#)
 description: Learn how to perform grouped joins using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 9667daf9-a5fd-4b43-a5c4-a9c2b744000e
 ---
 # Perform grouped joins
@@ -29,8 +29,8 @@ Group joins are ideal for creating XML by using LINQ to XML. The following examp
 
 ## See also
 
-- <xref:System.Linq.Enumerable.Join%2A>  
-- <xref:System.Linq.Enumerable.GroupJoin%2A>  
-- [Perform inner joins](perform-inner-joins.md)  
-- [Perform left outer joins](perform-left-outer-joins.md)  
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>
+- <xref:System.Linq.Enumerable.GroupJoin%2A>
+- [Perform inner joins](perform-inner-joins.md)
+- [Perform left outer joins](perform-left-outer-joins.md)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)

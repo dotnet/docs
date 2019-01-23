@@ -39,6 +39,6 @@ This topic provides links to other topics that document the Visual Basic run-tim
 |[My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)|Provides properties for creating and accessing a single instance of each Web service that is referenced by the current project.|  
 |<xref:Microsoft.VisualBasic.FileIO.TextFieldParser>|Provides methods and properties for parsing structured text files.|  
   
-## See Also  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
- [Visual Basic](../../../visual-basic/index.md)
+## See also
+- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
+- [Visual Basic](../../../visual-basic/index.md)

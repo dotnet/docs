@@ -27,8 +27,8 @@ C# Generics and C++ templates are both language features that provide support fo
   
 -   C++ allows code that might not be valid for all type parameters in the template, which is then checked for the specific type used as the type parameter. C# requires code in a class to be written in such a way that it will work with any type that satisfies the constraints. For example, in C++ it is possible to write a function that uses the arithmetic operators `+` and `-` on objects of the type parameter, which will produce an error at the time of instantiation of the template with a type that does not support these operators. C# disallows this; the only language constructs allowed are those that can be deduced from the constraints.  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
 - [Templates](/cpp/cpp/templates-cpp)

@@ -18,6 +18,6 @@ DatePicker Control
   
  Users can type a date directly into a text field, which sets the <xref:System.Windows.Controls.DatePicker.Text%2A> property. If the <xref:System.Windows.Controls.DatePicker> cannot convert the entered string to a valid date, the <xref:System.Windows.Controls.DatePicker.DateValidationError> event will be raised. By default, this causes an exception, but an event handler for <xref:System.Windows.Controls.DatePicker.DateValidationError> can set the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A> property to `false` and prevent an exception from being raised.  
   
-## See Also  
- [Controls](../../../../docs/framework/wpf/controls/index.md)  
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+## See also
+- [Controls](../../../../docs/framework/wpf/controls/index.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

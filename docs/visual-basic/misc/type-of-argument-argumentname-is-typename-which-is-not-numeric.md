@@ -12,6 +12,6 @@ A non-numeric argument occurs in a situation in which a numeric argument is expe
   
 -   Ensure that the argument is numeric.  
   
-## See Also  
- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)  
+## See also
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
 

@@ -118,5 +118,5 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines serv
  [!code-csharp[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#onasyncqueryexecutioncomplete)]
  [!code-vb[Astoria Northwind Client#OnAsyncQueryExecutionComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#onasyncqueryexecutioncomplete)]  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

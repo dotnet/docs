@@ -62,7 +62,7 @@ When you have an application that executes structurally similar queries many tim
  [!code-csharp[DP L2E Conceptual Examples#MyParamsStruct](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#myparamsstruct)]
  [!code-vb[DP L2E Conceptual Examples#MyParamsStruct](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#myparamsstruct)]  
   
-## See Also  
- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)  
- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)  
- [Entity Framework Merge Options and Compiled Queries](https://go.microsoft.com/fwlink/?LinkId=199591)
+## See also
+- [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)
+- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+- [Entity Framework Merge Options and Compiled Queries](https://go.microsoft.com/fwlink/?LinkId=199591)

@@ -27,5 +27,5 @@ To develop a protocol or transport channel that can be used with the Windows Com
   
 4.  Add a binding section and binding configuration element to expose the binding to the configuration system. For more information, see [Configuration and Metadata Support](../../../../docs/framework/wcf/extending/configuration-and-metadata-support.md).  
   
-## See Also  
- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)
+## See also
+- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)

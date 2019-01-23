@@ -290,5 +290,5 @@ namespace Microsoft.Samples.AdvancedFilters
 </configuration>  
 ```  
   
-## See Also  
- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+## See also
+- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

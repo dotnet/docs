@@ -167,4 +167,4 @@ The following example creates a tuple, converts it to a .NET **Tuple** object, a
 
 ## See also
 
-[Visual Basic Language Reference](index.md)  
+- [Visual Basic Language Reference](index.md)

@@ -33,8 +33,8 @@ A [value-type](../../../csharp/language-reference/keywords/value-types.md) varia
   
  [!code-csharp[csProgGuideParameters#6](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/passing-value-type-parameters_4.cs)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)
 - [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md)

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Define a Windows Communication Foundation service contract"
-ms.date: 01/15/2019
+ms.date: 01/21/2019
 helpviewer_keywords:
   - "service contracts [WCF], defining"
 dev_langs:
@@ -10,7 +10,7 @@ ms.assetid: 67bf05b7-1d08-4911-83b7-a45d0b036fc3
 ---
 # Tutorial: Define a Windows Communication Foundation service contract
 
-This tutorial describes the first of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
+This tutorial describes the first of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
 When you create a WCF service, your first task is to define a service contract. The service contract specifies what operations the service supports. An operation can be thought of as a Web service method. You create service contracts by defining a Visual C# or Visual Basic (VB) interface. An interface has the following characteristics:
 
@@ -36,12 +36,12 @@ When you create a WCF service, your first task is to define a service contract. 
 
    4. Select **OK**.
 
-   Visual Studio creates the project, which has three files: IService1.cs (or IService1.vb), Service1.cs (or Service1.vb), and App.config. Visual Studio defines these files as follows: 
-   - The IService1 file contains the default service contract. 
-   - The Service1 file contains the default implementation of the service contract. 
-   - The App.config file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more info about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
+   Visual Studio creates the project, which has three files: *IService1.cs* (or *IService1.vb* for a Visual Basic project), *Service1.cs* (or *Service1.vb* for a Visual Basic project), and *App.config*. Visual Studio defines these files as follows: 
+   - The *IService1* file contains the default service contract. 
+   - The *Service1* file contains the default implementation of the service contract. 
+   - The *App.config* file contains the configuration info needed to load the default service with the Visual Studio WCF Service Host tool. For more information about the WCF Service Host tool, see [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md).
 
-3. Open the IService1.cs file, for a Visual C# project (or IService1.vb for a Visual Basic project), and replace its code with the following code:
+3. Open the *IService1.cs* (or *IService1.vb*) file, and replace its code with the following code:
 
     ```csharp
     using System;

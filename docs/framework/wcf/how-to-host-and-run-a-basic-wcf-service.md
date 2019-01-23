@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Host and run a basic Windows Communication Foundation service"
-ms.date: 01/17/2019
+ms.date: 01/21/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -11,7 +11,7 @@ ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
 ---
 # Tutorial: Host and run a basic Windows Communication Foundation service
 
-This tutorial describes the third of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
+This tutorial describes the third of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
 The next task for creating a WCF application is to host a WCF service in a console application. After you create a console application project, you then run code to host the service. This code has the following steps:
 
@@ -31,7 +31,7 @@ A complete listing of the code for this task is provided in the code example fol
 
 1. Create a console application project in Visual Studio. 
  
-    1. From the **File** menu, select **Open** > **Project/Solution** and browse to the **GettingStarted** solution you previously created (GettingStarted.sln). Select **Open**.
+    1. From the **File** menu, select **Open** > **Project/Solution** and browse to the **GettingStarted** solution you previously created (*GettingStarted.sln*). Select **Open**.
 
     2. From the **View** menu, select **Solution Explorer**.
     
@@ -61,112 +61,122 @@ A complete listing of the code for this task is provided in the code example fol
 
 ## Host the service
 
-Open the Program.cs (or Module1.vb) file in the GettingStartedHost project and replace its code with the following code:
+1. Open the *Program.cs* (or *Module1.vb*) file in the GettingStartedHost project and replace its code with the following code:
 
-```csharp
-using System;
-using System.ServiceModel;
-using System.ServiceModel.Description;
-using GettingStartedLib;
+    ```csharp
+    using System;
+    using System.ServiceModel;
+    using System.ServiceModel.Description;
+    using GettingStartedLib;
 
-namespace GettingStartedHost
-{
-    class Program
+    namespace GettingStartedHost
     {
-        static void Main(string[] args)
+        class Program
         {
-            // Step 1: Create a URI to serve as the base address.
-            Uri baseAddress = new Uri("http://localhost:8000/GettingStarted/");
-
-            // Step 2: Create a ServiceHost instance.
-            ServiceHost selfHost = new ServiceHost(typeof(CalculatorService), baseAddress);
-
-            try
+            static void Main(string[] args)
             {
-                // Step 3: Add a service endpoint.
-                selfHost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "CalculatorService");
+                // Step 1: Create a URI to serve as the base address.
+                Uri baseAddress = new Uri("http://localhost:8000/GettingStarted/");
 
-                // Step 4: Enable metadata exchange.
-                ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
-                smb.HttpGetEnabled = true;
-                selfHost.Description.Behaviors.Add(smb);
+                // Step 2: Create a ServiceHost instance.
+                ServiceHost selfHost = new ServiceHost(typeof(CalculatorService), baseAddress);
 
-                // Step 5: Start (and then stop) the service.
-                selfHost.Open();
-                Console.WriteLine("The service is ready.");
-                Console.WriteLine("Press <ENTER> to terminate service.");
-                Console.WriteLine();
-                Console.ReadLine();
+                try
+                {
+                    // Step 3: Add a service endpoint.
+                    selfHost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "CalculatorService");
 
-                // Close the ServiceHostBase to stop the service.
-                selfHost.Close();
-            }
-            catch (CommunicationException ce)
-            {
-                Console.WriteLine("An exception occurred: {0}", ce.Message);
-                selfHost.Abort();
+                    // Step 4: Enable metadata exchange.
+                    ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
+                    smb.HttpGetEnabled = true;
+                    selfHost.Description.Behaviors.Add(smb)    ;
+
+                    // Step 5: Start (and then stop) the service.
+                    selfHost.Open();
+                    Console.WriteLine("The service is ready.");
+                    Console.WriteLine("Press <ENTER> to terminate service.");
+                    Console.WriteLine();
+                    Console.ReadLine();
+
+                    // Close the ServiceHostBase to stop the service.
+                    selfHost.Close();
+                }
+                catch (CommunicationException ce)
+                {
+                    Console.WriteLine("An exception occurred: {0}", ce.Message);
+                    selfHost.Abort();
+                }
             }
         }
     }
-}
-```
+    ```
 
-```vb
-Imports System.ServiceModel
-Imports System.ServiceModel.Description
-Imports GettingStartedLib.GettingStartedLib
+    ```vb
+    Imports System.ServiceModel
+    Imports System.ServiceModel.Description
+    Imports GettingStartedLib.GettingStartedLib
 
-Module Service
+    Module Service
 
-    Class Program
-        Shared Sub Main()
-            ' Step 1: Create a URI to serve as the base address.
-            Dim baseAddress As New Uri("http://localhost:8000/GettingStarted/")
+        Class Program
+            Shared Sub Main()
+                ' Step 1: Create a URI to serve as the base address.
+                Dim baseAddress As New Uri("http://localhost:8000/GettingStarted/")
 
-            ' Step 2: Create a ServiceHost instance.
-            Dim selfHost As New ServiceHost(GetType(CalculatorService), baseAddress)
-           Try
+                ' Step 2: Create a ServiceHost instance.
+                Dim selfHost As New ServiceHost(GetType(CalculatorService), baseAddress)
+               Try
 
-                ' Step 3: Add a service endpoint.
-                selfHost.AddServiceEndpoint( _
-                    GetType(ICalculator), _
-                    New WSHttpBinding(), _
-                    "CalculatorService")
+                    ' Step 3: Add a service endpoint.
+                    selfHost.AddServiceEndpoint( _
+                        GetType(ICalculator), _
+                        New WSHttpBinding(), _
+                        "CalculatorService")
 
-                ' Step 4: Enable metadata exchange.
-                Dim smb As New ServiceMetadataBehavior()
-                smb.HttpGetEnabled = True
-                selfHost.Description.Behaviors.Add(smb)
+                    ' Step 4: Enable metadata exchange.
+                    Dim smb As New ServiceMetadataBehavior()
+                    smb.HttpGetEnabled = True
+                    selfHost.Description.Behaviors.Add(smb)
 
-                ' Step 5: Start (and then stop) the service.
-                selfHost.Open()
-                Console.WriteLine("The service is ready.")
-                Console.WriteLine("Press <ENTER> to terminate service.")
-                Console.WriteLine()
-                Console.ReadLine()
+                    ' Step 5: Start (and then stop) the service.
+                    selfHost.Open()
+                    Console.WriteLine("The service is ready.")
+                    Console.WriteLine("Press <ENTER> to terminate service.")
+                    Console.WriteLine()
+                    Console.ReadLine()
 
-                ' Close the ServiceHostBase to stop the service.
-                selfHost.Close()
+                    ' Close the ServiceHostBase to stop the service.
+                    selfHost.Close()
 
-            Catch ce As CommunicationException
-                Console.WriteLine("An exception occurred: {0}", ce.Message)
-                selfHost.Abort()
-            End Try
-        End Sub
-    End Class
+                Catch ce As CommunicationException
+                    Console.WriteLine("An exception occurred: {0}", ce.Message)
+                    selfHost.Abort()
+                End Try
+            End Sub
+        End Class
 
-End Module
-```
+    End Module
+    ```
 
-For Visual C# projects, edit App.config in GettingStartedLib to reflect the changes you made to Program.cs:
-- Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
-- Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
-- Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`.
+2. Edit *App.config* in GettingStartedLib:
+- For Visual C# projects, edit *App.config* to reflect the changes you made to *Program.cs*:
+    - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
+    - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
+   - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`.
 
-For Visual Basic projects, edit App.config in GettingStartedLib to reflect the changes you made to Module1.vb:
-- Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`.
-- Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
-- Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`.
+- For Visual Basic projects, edit *App.config* to reflect the changes you made to *Module1.vb*:
+    - Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`.
+   - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
+   - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`.
+
+3. For Visual Basic projects, make the following change:
+
+   1. In the **Solution Explorer** window, right-click the **GettingStartedHost** folder, then select **Properties**.
+
+   2. In the **GettingStartedHost** window, for **Startup object**, select **Service.Program** from the list. 
+
+   3. From the main menu, select **File** > **Save All**.
+
 
 The steps in the code example are described as follows:
 
@@ -174,33 +184,31 @@ The steps in the code example are described as follows:
 
 - **Step 2**: Create an instance of the <xref:System.ServiceModel.ServiceHost> class, which you use to host the service. The constructor takes two parameters: the type of the class that implements the service contract and the base address of the service.
 
-- **Step 3**: Create a <xref:System.ServiceModel.Description.ServiceEndpoint> instance. A service endpoint is composed of an address, a binding, and a service contract. The <xref:System.ServiceModel.Description.ServiceEndpoint> constructor is composed of the service contract interface type, a binding, and an address. The service contract is `ICalculator`, which you defined and implement in the service type. The binding for this sample is <xref:System.ServiceModel.WSHttpBinding>, which is a built-in binding and connects to endpoints that conform to the WS-* specifications. For more info about WCF bindings, see [WCF bindings overview](bindings-overview.md). You append the address to the base address to identify the endpoint. The code specifies the address as CalculatorService and the fully qualified address for the endpoint as `http://localhost:8000/GettingStarted/CalculatorService`.
+- **Step 3**: Create a <xref:System.ServiceModel.Description.ServiceEndpoint> instance. A service endpoint is composed of an address, a binding, and a service contract. The <xref:System.ServiceModel.Description.ServiceEndpoint> constructor is composed of the service contract interface type, a binding, and an address. The service contract is `ICalculator`, which you defined and implement in the service type. The binding for this sample is <xref:System.ServiceModel.WSHttpBinding>, which is a built-in binding and connects to endpoints that conform to the WS-* specifications. For more information about WCF bindings, see [WCF bindings overview](bindings-overview.md). You append the address to the base address to identify the endpoint. The code specifies the address as CalculatorService and the fully qualified address for the endpoint as `http://localhost:8000/GettingStarted/CalculatorService`.
 
     > [!IMPORTANT]
-    > For .NET Framework Version 4 and later, adding a service endpoint is optional. For these versions, if you don't add your code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more info about default endpoints, see [Specifying an endpoint address](specifying-an-endpoint-address.md). For more info about default endpoints, bindings, and behaviors, see [Simplified configuration](simplified-configuration.md) and [Simplified configuration for WCF services](samples/simplified-configuration-for-wcf-services.md).
+    > For .NET Framework Version 4 and later, adding a service endpoint is optional. For these versions, if you don't add your code or configuration, WCF adds one default endpoint for each combination of base address and contract implemented by the service. For more information about default endpoints, see [Specifying an endpoint address](specifying-an-endpoint-address.md). For more information about default endpoints, bindings, and behaviors, see [Simplified configuration](simplified-configuration.md) and [Simplified configuration for WCF services](samples/simplified-configuration-for-wcf-services.md).
 
 - **Step 4**: Enable metadata exchange. Clients use metadata exchange to generate proxies for calling the service operations. To enable metadata exchange, create a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> instance, set its <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled> property to `true`, and add the `ServiceMetadataBehavior` object to the <!--zz <xref:System.ServiceModel.ServiceHost.Behaviors%2A>  -->`System.ServiceModel.ServiceHost.Behaviors` collection of the <xref:System.ServiceModel.ServiceHost> instance.
 
-- **Step 5**: Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The code waits for the user to press **Enter**. If you don't press **Enter**, the app closes immediately and the service shuts down. Also, the code uses a try/catch block. After the <xref:System.ServiceModel.ServiceHost> is instantiated, the rest of the code is placed in a try/catch block. For more info about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
+- **Step 5**: Open the <xref:System.ServiceModel.ServiceHost> to listen for incoming messages. The code waits for the user to press **Enter**. If you don't press **Enter**, the app closes immediately and the service shuts down. Also, the code uses a try/catch block. After the <xref:System.ServiceModel.ServiceHost> is instantiated, the rest of the code is placed in a try/catch block. For more information about safely catching exceptions thrown by <xref:System.ServiceModel.ServiceHost>, see [Use Close and Abort to release WCF client resources](samples/use-close-abort-release-wcf-client-resources.md).
 
 
 ## Verify the service is working
 
-1. Build the solution, and then run the GettingStartedHost console application from inside Visual Studio.
+1. Build the solution, and then run the GettingStartedHost console application from inside Visual Studio. As an alternative, you can open a new command prompt by using **Run as administrator** and run *GettingStartedHost.exe* within it.
 
-   Run the service with administrator privileges. Because you opened Visual Studio with administrator privileges, you should also run GettingStartedHost with administrator privileges. As an alternative, you can open a new command prompt by using **Run as administrator** and run GettingStartedHost.exe within it.
-
-2. Open a web browser and browse to the service's debug page at `http://localhost:8000/GettingStarted/CalculatorService`.
+2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
 
 > [!NOTE]
-> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more info about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run GettingStartedHost.exe with administrator privileges.
+> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run *GettingStartedHost.exe* with administrator privileges.
 
 
 ## Example
 
 The following example includes the service contract and implementation from previous steps in the tutorial and hosts the service in a console application.
 
-To compile this code with a command-line compiler, compile IService1.cs and Service1.cs (or IService1.vb and Service1.vb) into a class library that references `System.ServiceModel.dll`. Compile Program.cs (or Module1.vb) as a console application.
+To compile this code with a command-line compiler, compile *IService1.cs* and *Service1.cs* (or *IService1.vb and Service1.vb*) into a class library that references `System.ServiceModel.dll`. Compile *Program.cs* (or *Module1.vb*) as a console application.
 
 ```csharp
 // IService1.cs

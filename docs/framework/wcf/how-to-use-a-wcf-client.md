@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Use a Windows Communication Foundation client"
-ms.date: 01/18/2019
+ms.date: 01/21/2019
 helpviewer_keywords:
   - "WCF clients [WCF], using"
 dev_langs:
@@ -10,19 +10,17 @@ ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 ---
 # Tutorial: Use a Windows Communication Foundation client
 
-This tutorial describes the last of six tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
+This tutorial describes the last of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-Once you've created and configured a Windows Communication Foundation (WCF) proxy, you can create a client instance and compile the client application. You then use it to communicate with the WCF service. This article describes the procedures for instantiating and using a WCF client. This procedure does three things:
+Once you've created and configured a Windows Communication Foundation (WCF) proxy, you can create a client instance and compile the client application. You then use it to communicate with the WCF service. This article describes the procedures for instantiating and using a WCF client:
 
-1.  Instantiates the WCF client.
-
-2.  Calls the service operations from the generated proxy.
-
-3.  Closes the client after the operation call is completed.
+1.  Instantiate the WCF client.
+2.  Call the service operations from the generated proxy.
+3.  Close the client after the operation call is completed.
 
 ## Use a Windows Communication Foundation client
 
-Open the Program.cs (or Module1.vb) file from the GettingStartedClient project and replace the existing code with the following code:
+Open the *Program.cs* (or *Module1.vb*) file from the GettingStartedClient project and replace the existing code with the following code:
 
 ```csharp
 using System;
@@ -65,7 +63,7 @@ namespace GettingStartedClient
             result = client.Divide(value1, value2);
             Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
 
-            //Step 3: Close the client to gracefully close the connection and clean up resources.
+            // Step 3: Close the client to gracefully close the connection and clean up resources.
             client.Close();
         }
     }
@@ -85,26 +83,26 @@ Module Module1
         ' Step 1: Create an instance of the WCF proxy.
         Dim Client As New CalculatorClient()
 
-        'Step 2: Call the service operations.
-        'Call the Add service operation.
+        ' Step 2: Call the service operations.
+        ' Call the Add service operation.
         Dim value1 As Double = 100D
         Dim value2 As Double = 15.99D
         Dim result As Double = Client.Add(value1, value2)
         Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Subtract service operation.
+        ' Call the Subtract service operation.
         value1 = 145D
         value2 = 76.54D
         result = Client.Subtract(value1, value2)
         Console.WriteLine("Subtract({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Multiply service operation.
+        ' Call the Multiply service operation.
         value1 = 9D
         value2 = 81.25D
         result = Client.Multiply(value1, value2)
         Console.WriteLine("Multiply({0},{1}) = {2}", value1, value2, result)
 
-        'Call the Divide service operation.
+        ' Call the Divide service operation.
         value1 = 22D
         value2 = 7D
         result = Client.Divide(value1, value2)
@@ -155,18 +153,18 @@ Press <ENTER> to terminate client.
 
 You've now completed the tutorial. You defined a service contract, implemented the service contract, generated a WCF proxy, configured a WCF client application, and then used the proxy to call service operations. 
 
-For troubleshooting info, see [Troubleshooting the getting started tutorial](troubleshooting-the-getting-started-tutorial.md).
+For troubleshooting information, see [Troubleshoot the get started tutorial](troubleshooting-the-getting-started-tutorial.md).
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Troubleshooting the getting started tutorial](troubleshooting-the-getting-started-tutorial.md)
+> [Troubleshoot the get started tutorial](troubleshooting-the-getting-started-tutorial.md)
 
 ## See also
 
 - [Building clients](building-clients.md)
 - [How to: Create a client](how-to-create-a-wcf-client.md)
-- [Getting started tutorial](getting-started-tutorial.md)
+- [Get started tutorial](getting-started-tutorial.md)
 - [Basic WCF programming](basic-wcf-programming.md)
 - [How to: Create a duplex contract](feature-details/how-to-create-a-duplex-contract.md)
 - [How to: Access services with a duplex contract](feature-details/how-to-access-services-with-a-duplex-contract.md)

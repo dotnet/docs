@@ -162,13 +162,13 @@ You can install a specific version using the `--version` argument. The version m
   Windows:
 
   ```powershell
-  ./dotnet-install.ps1 -SharedRuntime -Version 1.1.0
+  ./dotnet-install.ps1 -Runtime dotnet -Version 1.1.0
   ```
 
   macOS/Linux:
 
   ```bash
-  ./dotnet-install.sh --shared-runtime --version 1.1.0
+  ./dotnet-install.sh --runtime dotnet --version 1.1.0
   ```
 
 * Obtain script and install the 2.1.2 version behind a corporate proxy (Windows only):

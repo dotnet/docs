@@ -10,13 +10,16 @@ helpviewer_keywords:
   - "displaying date and time data"
   - "localized date displays [.NET Framework]"
 ms.assetid: 377fe93c-32be-421a-a30a-be639a46ede8
+dev_langs:
+ - csharp
+ - vb
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Display Localized Date and Time Information to Web Users
 Because a Web page can be displayed anywhere in the world, operations that parse and format date and time values should not rely on a default format (which most often is the format of the Web server's local culture) when interacting with the user. Instead, Web forms that handle date and time strings input by the user should parse the strings using the user's preferred culture. Similarly, date and time data should be displayed to the user in a format that conforms to the user's culture. This topic shows how to do this.  
   
-### To parse date and time strings input by the user  
+## To parse date and time strings input by the user  
   
 1.  Determine whether the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A?displayProperty=nameWithType> property is populated. If it is not, continue to step 6.  
   
@@ -34,7 +37,7 @@ Because a Web page can be displayed anywhere in the world, operations that parse
   
 6.  If the conversion still fails or if the string array returned by the <xref:System.Web.HttpRequest.UserLanguages%2A> property is empty, parse the string by using the invariant culture, which is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property.  
   
-### To parse the local date and time of the user's request  
+## To parse the local date and time of the user's request  
   
 1.  Add a <xref:System.Web.UI.WebControls.HiddenField> control to a Web form.  
   

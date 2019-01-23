@@ -232,14 +232,14 @@ typedef struct _SYSTEM_PROCESS_INFORMATION {
 In C#, we can write it like this:
 
 ```csharp
-    internal unsafe struct SYSTEM_PROCESS_INFORMATION
-    {
-        internal uint NextEntryOffset;
-        internal uint NumberOfThreads;
-        private fixed byte Reserved1[48];
-        internal Interop.UNICODE_STRING ImageName;
-        ...
-    }
+internal unsafe struct SYSTEM_PROCESS_INFORMATION
+{
+    internal uint NextEntryOffset;
+    internal uint NumberOfThreads;
+    private fixed byte Reserved1[48];
+    internal Interop.UNICODE_STRING ImageName;
+    ...
+}
 ```
 
 However, there are some gotchas with fixed buffers. Fixed buffers of non-blittable types won't be correctly marshalled, so the in-place array needs to be expanded out to multiple individual fields. Additionally, in .NET Framework and .NET Core before 3.0, if a struct containing a fixed buffer field is nested within a non-blittable struct, the fixed buffer field won't be correctly marshalled to native code.

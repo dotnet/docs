@@ -43,11 +43,11 @@ The Schema Object Model (SOM) API can be used to read and write XML Schema defin
   
 ## See also
 
-- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
-- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)  
-- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
-- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
-- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)  
-- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)  
-- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)  
+- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
+- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
+- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
+- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)
+- [Including or Importing XML Schemas](../../../../docs/standard/data/xml/including-or-importing-xml-schemas.md)
+- [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)
+- [Post-Schema Compilation Infoset](../../../../docs/standard/data/xml/post-schema-compilation-infoset.md)
 - [Managing Namespaces in an XML Document](../../../../docs/standard/data/xml/managing-namespaces-in-an-xml-document.md)

@@ -21,7 +21,7 @@ The following example shows how to enable real-time spell checking in a <xref:Sy
  [!code-csharp[TextBoxMiscSnippets_procedural_snip#SpellCheckCodeExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/SpellCheckExample.cs#spellcheckcodeexamplewholepage)]
  [!code-vb[TextBoxMiscSnippets_procedural_snip#SpellCheckCodeExampleWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/spellcheckexample.vb#spellcheckcodeexamplewholepage)]  
   
-## See Also  
- [Use Spell Checking with a Context Menu](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+## See also
+- [Use Spell Checking with a Context Menu](../../../../docs/framework/wpf/controls/how-to-use-spell-checking-with-a-context-menu.md)
+- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)

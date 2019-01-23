@@ -146,9 +146,9 @@ Where cust.City = "London" Or cust.City = "Paris"
   
  For more information about `Group By`, see [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md).  
   
-## See Also  
- <xref:System.Collections.Generic.IEnumerable%601>  
- [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)  
- [Queries](../../../../visual-basic/language-reference/queries/index.md)  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+## See also
+- <xref:System.Collections.Generic.IEnumerable%601>
+- [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)

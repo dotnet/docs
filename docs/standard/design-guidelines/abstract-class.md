@@ -33,5 +33,5 @@ author: "KrzysztofCwalina"
   
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

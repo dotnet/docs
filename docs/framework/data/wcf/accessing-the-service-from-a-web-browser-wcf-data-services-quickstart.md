@@ -70,6 +70,6 @@ You have successfully accessed the WCF Data Services from a Web browser, with th
 > [!div class="nextstepaction"]
 > [Creating the .NET Framework Client Application](../../../../docs/framework/data/wcf/creating-the-dotnet-client-application-wcf-data-services-quickstart.md)
 
-## See Also
+## See also
 
 - [Accessing Data Service Resources](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)

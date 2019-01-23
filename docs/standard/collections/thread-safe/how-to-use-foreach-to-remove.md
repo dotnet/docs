@@ -28,5 +28,5 @@ In addition to taking items from a <xref:System.Collections.Concurrent.BlockingC
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
 - [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)

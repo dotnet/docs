@@ -175,7 +175,7 @@ Some of the terminology used when discussing security may be unfamiliar. This to
  X.509  
  An internationally recognized standard for certificates that defines their required parts.  
   
-## See Also  
- [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)  
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Fundamental Windows Communication Foundation Concepts](../../../../docs/framework/wcf/fundamental-concepts.md)
+- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

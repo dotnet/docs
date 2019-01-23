@@ -41,6 +41,6 @@ Specifies the type of the persistence provider implementation to use, as well as
 ## Remarks  
  This element specifies the persistence provider to be used to serialize the state of a WCF service. It should be used together with the `wsHttpContextBinding` which passes state information in HTTP headers.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PersistenceProviderElement>  
- <xref:System.ServiceModel.Persistence.PersistenceProvider>
+## See also
+- <xref:System.ServiceModel.Configuration.PersistenceProviderElement>
+- <xref:System.ServiceModel.Persistence.PersistenceProvider>

@@ -96,5 +96,5 @@ This section describes the best practices to follow when developing world-ready 
   
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
 - [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

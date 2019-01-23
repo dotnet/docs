@@ -80,5 +80,5 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

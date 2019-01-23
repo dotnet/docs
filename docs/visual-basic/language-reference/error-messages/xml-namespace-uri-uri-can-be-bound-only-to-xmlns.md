@@ -19,6 +19,6 @@ Remove the XML namespace declaration or replace the URI `http://www.w3.org/XML/1
   
 ## See also
 
-- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)  
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
+- [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
 - [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

@@ -58,5 +58,5 @@ class MtomMessageEncodingBindingElement : MessageEncodingBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>
+## See also
+- <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement>

@@ -47,6 +47,6 @@ A routing entry that contain mappings between the routing filters and the target
 |-------------|-----------------|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains a routing table.|  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>       
- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>    
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

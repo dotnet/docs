@@ -175,6 +175,6 @@ End Class
   
 ## See also
 
-- [Binary Serialization](binary-serialization.md)  
-- [XML and SOAP Serialization](xml-and-soap-serialization.md)  
+- [Binary Serialization](binary-serialization.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
 - [Security and Serialization](../../../docs/framework/misc/security-and-serialization.md)

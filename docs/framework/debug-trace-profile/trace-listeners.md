@@ -70,7 +70,7 @@ System.Diagnostics.Trace.Listeners.Add(
 ## Developer-Defined Listeners  
  You can define your own listeners by inheriting from the **TraceListener** base class and overriding its methods with your customized methods. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.  
   
-## See Also  
+## See also
 - <xref:System.Diagnostics.TextWriterTraceListener>
 - <xref:System.Diagnostics.EventLogTraceListener>
 - <xref:System.Diagnostics.DefaultTraceListener>

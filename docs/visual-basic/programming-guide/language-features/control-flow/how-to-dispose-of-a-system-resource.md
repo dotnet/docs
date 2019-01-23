@@ -38,11 +38,11 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
   
      You can use this same technique on a system resource such as a file handle or a COM wrapper. You use a `Using` block when you want to be sure to leave the resource available for other components after you have exited the `Using` block.  
   
-## See Also  
- <xref:System.Data.SqlClient.SqlConnection>  
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)  
- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md)
+## See also
+- <xref:System.Data.SqlClient.SqlConnection>
+- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
+- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
+- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [Other Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/other-control-structures.md)
+- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md)

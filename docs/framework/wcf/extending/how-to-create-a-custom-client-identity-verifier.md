@@ -75,10 +75,10 @@ The *identity* feature of Windows Communication Foundation (WCF) enables a clien
  [!code-csharp[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howtosetcustomclientidentity/cs/source.cs#6)]
  [!code-vb[c_HowToSetCustomClientIdentity#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howtosetcustomclientidentity/vb/source.vb#6)]  
   
-## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- <xref:System.ServiceModel.EndpointIdentity>  
- <xref:System.ServiceModel.Security.IdentityVerifier>  
- [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md)  
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)  
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)
+## See also
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- <xref:System.ServiceModel.EndpointIdentity>
+- <xref:System.ServiceModel.Security.IdentityVerifier>
+- [Service Identity Sample](../../../../docs/framework/wcf/samples/service-identity-sample.md)
+- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)
+- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

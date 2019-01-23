@@ -82,7 +82,7 @@ csc -out:myCodeLibrary.dll -t:library myCode.cs
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```
 
-## See Also
+## See also
 
 - [Creating Assemblies](../../../docs/framework/app-domains/create-assemblies.md)
 - [Multifile Assemblies](../../../docs/framework/app-domains/multifile-assemblies.md)

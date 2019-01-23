@@ -55,7 +55,7 @@ Specifies whether the runtime uses a fixed amount of memory to calculate hash co
 > [!IMPORTANT]
 >  The `<NetFx45_CultureAwareComparerGetHashCode_LongStrings>` element is not used in [!INCLUDE[win8](../../../../../includes/win8-md.md)] and later versions.  
   
-## See Also  
-- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
+## See also
+- <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)

@@ -37,5 +37,5 @@ Represents a variable, such as a parameter, a local variable, or a field.
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## See also
+- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

@@ -58,9 +58,9 @@ The [get](../../../csharp/language-reference/keywords/get.md) and [set](../../..
   
  `Name and ID in the derived class: John, John123`  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
 - [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md)

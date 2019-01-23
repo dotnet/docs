@@ -55,8 +55,8 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
   
 ## See also
 
-- <xref:System.Collections.IComparer>  
-- <xref:System.IEquatable%601>  
-- <xref:System.Collections.Generic.IComparer%601>  
-- <xref:System.IComparable>  
+- <xref:System.Collections.IComparer>
+- <xref:System.IEquatable%601>
+- <xref:System.Collections.Generic.IComparer%601>
+- <xref:System.IComparable>
 - <xref:System.IComparable%601>

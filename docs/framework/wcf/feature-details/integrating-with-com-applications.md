@@ -35,5 +35,5 @@ Windows Communication Foundation (WCF) services can be integrated directly into 
 ## Reference  
  <xref:System.ServiceModel>  
   
-## See Also  
- [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+## See also
+- [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)

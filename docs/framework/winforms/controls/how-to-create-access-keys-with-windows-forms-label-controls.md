@@ -57,7 +57,7 @@ Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define a
     label2->Text = "&Copy && Paste";  
     ```  
   
-## See Also  
- [How to: Size a Windows Forms Label Control to Fit Its Contents](../../../../docs/framework/winforms/controls/how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)  
- [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)  
- [Label Control](../../../../docs/framework/winforms/controls/label-control-windows-forms.md)
+## See also
+- [How to: Size a Windows Forms Label Control to Fit Its Contents](../../../../docs/framework/winforms/controls/how-to-size-a-windows-forms-label-control-to-fit-its-contents.md)
+- [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)
+- [Label Control](../../../../docs/framework/winforms/controls/label-control-windows-forms.md)

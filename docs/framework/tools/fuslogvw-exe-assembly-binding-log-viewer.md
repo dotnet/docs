@@ -222,9 +222,9 @@ Discarding native image.
     > [!NOTE]
     >  This box is enabled only on Windows 8 or later.  
   
-## See Also  
- <xref:System.TypeLoadException>  
- [Tools](../../../docs/framework/tools/index.md)  
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+- <xref:System.TypeLoadException>
+- [Tools](../../../docs/framework/tools/index.md)
+- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
+- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -266,9 +266,9 @@ tvpParam.SqlDbType = SqlDbType.Structured
 insertCommand.ExecuteNonQuery()  
 ```  
   
-## See Also  
- [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
- [Commands and Parameters](../../../../../docs/framework/data/adonet/commands-and-parameters.md)  
- [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
+- [Commands and Parameters](../../../../../docs/framework/data/adonet/commands-and-parameters.md)
+- [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md)
+- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -53,8 +53,8 @@ You can use managed thread local storage (TLS) to store data that is unique to a
   
 ## See also
 
-- <xref:System.ContextStaticAttribute>  
-- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>  
-- <xref:System.ThreadStaticAttribute>  
-- <xref:System.Runtime.Remoting.Messaging.CallContext>  
+- <xref:System.ContextStaticAttribute>
+- <xref:System.Threading.Thread.GetNamedDataSlot%2A?displayProperty=nameWithType>
+- <xref:System.ThreadStaticAttribute>
+- <xref:System.Runtime.Remoting.Messaging.CallContext>
 - [Threading](../../../docs/standard/threading/index.md)

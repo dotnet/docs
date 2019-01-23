@@ -190,5 +190,5 @@ icrosoft.VisualBasic.DateAndTime.Day(DateTime `TimeValue`)|Day()||
 |------------|------------------------|  
 |Guid.NewGuid()|NewGuid()|  
   
-## See Also  
- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+## See also
+- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)

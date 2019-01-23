@@ -286,9 +286,9 @@ End Sub
     All done, exiting button-click event handler.  
     ```  
   
-## See Also  
- <xref:System.Threading.Tasks.Task.FromResult%2A>  
- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)  
- [Control Flow in Async Programs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)  
- [Async](../../../../visual-basic/language-reference/modifiers/async.md)  
- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
+## See also
+- <xref:System.Threading.Tasks.Task.FromResult%2A>
+- [Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Control Flow in Async Programs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md)
+- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
+- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)

@@ -17,9 +17,9 @@ The <xref:System.Windows.Media.Drawing> object provide an object model for enume
   
  [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMRetrieveDrawings](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/EnumerateDrawingsExample.xaml.cs#graphicsmmretrievedrawings)]  
   
-## See Also  
- <xref:System.Windows.Media.Drawing>  
- <xref:System.Windows.Media.DrawingGroup>  
- <xref:System.Windows.Media.VisualTreeHelper>  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## See also
+- <xref:System.Windows.Media.Drawing>
+- <xref:System.Windows.Media.DrawingGroup>
+- <xref:System.Windows.Media.VisualTreeHelper>
+- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

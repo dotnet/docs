@@ -21,7 +21,7 @@ The \<exception> tag provides a way to document the exceptions that may be throw
     '''<exception cref="member">description</exception>  
     ```  
   
-## See Also  
- [\<exception>](../../../visual-basic/language-reference/xmldoc/exception.md)  
- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [\<exception>](../../../visual-basic/language-reference/xmldoc/exception.md)
+- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

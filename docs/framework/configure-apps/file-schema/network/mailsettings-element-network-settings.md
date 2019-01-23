@@ -20,7 +20,7 @@ Configures mail sending options.
   
 ```xml  
 <mailSettings>
-  <smtp> … </smtp>  
+  <smtp>...</smtp>  
 </mailSettings>
 ```  
   
@@ -61,6 +61,6 @@ Configures mail sending options.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.Mail.SmtpClient>  
+## See also
+- <xref:System.Net.Mail.SmtpClient>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

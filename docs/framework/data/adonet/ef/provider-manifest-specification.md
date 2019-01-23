@@ -273,5 +273,5 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ##### Namespace Attribute  
  Each data store provider must define a namespace or group of namespaces for information defined in the manifest. This namespace can be used in Entity SQL queries to resolve names of functions and types. For instance: SqlServer. That namespace must be different from the canonical namespace, EDM, defined by Entity Services for standard functions to be supported by Entity SQL queries.  
   
-## See Also  
- [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)
+## See also
+- [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)

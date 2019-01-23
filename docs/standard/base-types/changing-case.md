@@ -68,5 +68,5 @@ If you write an application that accepts input from a user, you can never be sur
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
+- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
 - [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

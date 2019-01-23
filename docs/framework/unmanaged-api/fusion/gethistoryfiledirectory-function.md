@@ -56,7 +56,7 @@ HRESULT GetHistoryFileDirectory (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)  
- [NukeDownloadedCache Function](../../../../docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md)  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## See also
+- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)
+- [NukeDownloadedCache Function](../../../../docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md)
+- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

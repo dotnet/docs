@@ -19,7 +19,7 @@ You can read both Application-scoped and User-scoped settings at run time via th
     this.BackColor = Properties.Settings.Default.myColor;  
     ```  
   
-## See Also  
- [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)  
- [How To: Write User Settings at Run Time with C#](../../../../docs/framework/winforms/advanced/how-to-write-user-settings-at-run-time-with-csharp.md)  
- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
+## See also
+- [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)
+- [How To: Write User Settings at Run Time with C#](../../../../docs/framework/winforms/advanced/how-to-write-user-settings-at-run-time-with-csharp.md)
+- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)

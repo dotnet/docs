@@ -49,8 +49,8 @@ The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handl
   
  [!code-csharp[ContextMenuOpeningHandlers#ReplaceReopen](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ContextMenuOpeningHandlers/CSharp/Pane1.xaml.cs#replacereopen)]  
   
-## See Also  
- <xref:System.Windows.Controls.ContextMenu>  
- <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>  
- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)  
- [ContextMenu Overview](../../../../docs/framework/wpf/controls/contextmenu-overview.md)
+## See also
+- <xref:System.Windows.Controls.ContextMenu>
+- <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>
+- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [ContextMenu Overview](../../../../docs/framework/wpf/controls/contextmenu-overview.md)

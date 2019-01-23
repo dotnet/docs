@@ -45,6 +45,6 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  [Security Bibliography](/visualstudio/ide/security-bibliography)  
  Provides links to external resources available online and in print.  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

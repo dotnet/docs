@@ -49,6 +49,6 @@ OOB releases for core common language runtime (CLR) components are delivered thr
 
  If you want to be notified of stable package releases, subscribe to [the .NET Framework feed](https://nuget.org/api/v2/curated-feeds/dotnetframework/Packages/).
 
-## See Also
+## See also
 
 - [Getting Started](../../../docs/framework/get-started/index.md)

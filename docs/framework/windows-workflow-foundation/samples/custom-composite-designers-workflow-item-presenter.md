@@ -74,6 +74,6 @@ The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemPresenter`  
   
-## See Also  
- <xref:System.Activities.Presentation.WorkflowItemPresenter>  
- [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)
+## See also
+- <xref:System.Activities.Presentation.WorkflowItemPresenter>
+- [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

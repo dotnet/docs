@@ -83,5 +83,5 @@ Although properties are technically very similar to methods, they are quite diff
   
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)  
+- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

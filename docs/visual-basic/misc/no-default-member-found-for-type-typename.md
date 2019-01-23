@@ -12,6 +12,6 @@ A late-bound index `Get` or `Set` call has been attempted.
   
 1.  Ensure that the object has a default property with a `Get` or `Set`, depending on which you are trying to make.  
   
-## See Also  
- [Get Statement](../../visual-basic/language-reference/statements/get-statement.md)  
- [Set Statement](../../visual-basic/language-reference/statements/set-statement.md)
+## See also
+- [Get Statement](../../visual-basic/language-reference/statements/get-statement.md)
+- [Set Statement](../../visual-basic/language-reference/statements/set-statement.md)

@@ -112,13 +112,13 @@ On Error { GoTo [ line | 0 | -1 ] | Resume Next }
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Information.Err%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>  
- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>  
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)  
- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## See also
+- <xref:Microsoft.VisualBasic.Information.Err%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.Number%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.Description%2A>
+- <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
+- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)
+- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)
+- [Error Messages](../../../visual-basic/language-reference/error-messages/index.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

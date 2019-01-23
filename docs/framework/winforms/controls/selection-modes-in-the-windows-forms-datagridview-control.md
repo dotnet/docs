@@ -38,10 +38,10 @@ Sometimes you want your application to perform actions based on user selections 
 > [!TIP]
 >  Example code that demonstrates the programmatic use of selected cells can be found in the <xref:System.Windows.Forms.DataGridView> class overview.  
   
-## See Also  
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>  
- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>  
- <xref:System.Windows.Forms.DataGridViewSelectionMode>  
- [Selection and Clipboard Use with the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)  
- [How to: Set the Selection Mode of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)
+## See also
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridView.MultiSelect%2A>
+- <xref:System.Windows.Forms.DataGridView.SelectionMode%2A>
+- <xref:System.Windows.Forms.DataGridViewSelectionMode>
+- [Selection and Clipboard Use with the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/selection-and-clipboard-use-with-the-windows-forms-datagridview-control.md)
+- [How to: Set the Selection Mode of the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)

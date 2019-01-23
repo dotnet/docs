@@ -98,5 +98,5 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 </behaviors>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
+## See also
+- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

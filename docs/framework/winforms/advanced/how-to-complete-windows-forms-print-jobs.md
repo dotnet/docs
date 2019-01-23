@@ -74,6 +74,6 @@ Frequently, word processors and other applications that involve printing will pr
        (this, &Form1::printDocument1_EndPrint);  
     ```  
   
-## See Also  
- <xref:System.Drawing.Printing.PrintDocument>  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+## See also
+- <xref:System.Drawing.Printing.PrintDocument>
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

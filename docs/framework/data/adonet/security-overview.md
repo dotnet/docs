@@ -95,8 +95,8 @@ Securing an application is an ongoing process. There will never be a point where
 |[NIB: Security Policy Management](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)|Provides information on creating and administering security policy.|  
 |[NIB: Security Policy Best Practices](https://msdn.microsoft.com/library/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)|Provides links describing how to administer security policy.|  
   
-## See Also  
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)
+- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

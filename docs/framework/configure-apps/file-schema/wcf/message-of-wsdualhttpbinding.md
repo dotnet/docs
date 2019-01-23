@@ -76,13 +76,13 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsdualhttpbinding.md)|Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>  
- <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>  
- <xref:System.ServiceModel.MessageSecurityOverHttp>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.WSDualHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.WSDualHttpSecurity.Message%2A>
+- <xref:System.ServiceModel.Configuration.MessageSecurityOverTcpElement>
+- <xref:System.ServiceModel.MessageSecurityOverHttp>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

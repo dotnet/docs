@@ -57,8 +57,8 @@ A scaling transformation multiplies one or more of the four color components by 
 |(1, 1, 0, 1)|(0.75, 0.65, 0, 1)|  
 |(1, 0, 1, 1)|(0.75, 0, 0.5, 1)|  
   
-## See Also  
- <xref:System.Drawing.Imaging.ColorMatrix>  
- <xref:System.Drawing.Imaging.ImageAttributes>  
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)
+## See also
+- <xref:System.Drawing.Imaging.ColorMatrix>
+- <xref:System.Drawing.Imaging.ImageAttributes>
+- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
+- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)

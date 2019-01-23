@@ -180,7 +180,7 @@ A nested type must be preceded by its containing class, delimited by a forward s
 
 ## See also
 
-[Tools](../../../docs/framework/tools/index.md)  
-[Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)  
-[Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
-[Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)
+- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

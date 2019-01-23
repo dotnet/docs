@@ -75,5 +75,5 @@ This walkthrough demonstrates how to define classes, which you can then use to c
   
 ## See also
 
-[Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)  
-[Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Object-Oriented Programming (Visual Basic)](../../concepts/object-oriented-programming.md)
+- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

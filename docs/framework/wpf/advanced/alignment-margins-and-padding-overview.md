@@ -135,11 +135,11 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
   
  Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
-## See Also  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>  
- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>  
- <xref:System.Windows.FrameworkElement.Margin%2A>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
- [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)
+## See also
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>
+- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>
+- <xref:System.Windows.FrameworkElement.Margin%2A>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)

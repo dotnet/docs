@@ -61,13 +61,13 @@ object.Value
   
  `work`  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- <xref:System.Collections.Generic.IEnumerable%601>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)  
- [Extension Indexer Property](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)  
- [XML Child Axis Property](../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)  
- [XML Attribute Axis Property](../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
+## See also
+- <xref:System.Xml.Linq.XElement>
+- <xref:System.Collections.Generic.IEnumerable%601>
+- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Extension Methods](../../../visual-basic/programming-guide/language-features/procedures/extension-methods.md)
+- [Extension Indexer Property](../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)
+- [XML Child Axis Property](../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
+- [XML Attribute Axis Property](../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)

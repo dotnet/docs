@@ -18,7 +18,7 @@ ms.assetid: e702ecdb-3419-4743-92a9-c3c0e7d44082
   
  For more information, see the article [Custom Data Service Providers](https://go.microsoft.com/fwlink/?LinkID=186850) and the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] Provider Toolkit in the [OData SDK](https://go.microsoft.com/fwlink/?LinkId=186069).  
   
-## See Also  
- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)  
- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)  
- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)
+## See also
+- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
+- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
+- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)

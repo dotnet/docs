@@ -90,5 +90,5 @@ OutOfStateCustomers (CustomerID , CompanyName, Phone)
  [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
  Describes how to load and persist the relational structure and data in a `DataSet` as XML data.  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

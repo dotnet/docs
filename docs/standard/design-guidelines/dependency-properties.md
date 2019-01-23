@@ -93,5 +93,5 @@ public class Grid {
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Common Design Patterns](../../../docs/standard/design-guidelines/common-design-patterns.md)

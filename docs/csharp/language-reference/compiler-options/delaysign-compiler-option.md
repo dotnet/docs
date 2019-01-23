@@ -44,8 +44,8 @@ For more information, see [Creating and Using Strong-Named Assemblies](../../../
 
 For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.DelaySign%2A>.
 
-## See Also
+## See also
 
-- [C# -publicsign option](publicsign-compiler-option.md)  
-- [C# Compiler Options](index.md)  
+- [C# -publicsign option](publicsign-compiler-option.md)
+- [C# Compiler Options](index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

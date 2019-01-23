@@ -17,9 +17,9 @@ This section describes the keywords and operators that are associated with using
 - [:: Operator](../../../csharp/language-reference/operators/namespace-alias-qualifer.md)  
 - [extern alias](../../../csharp/language-reference/keywords/extern-alias.md)  
   
-## See Also
+## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [Namespaces](../../../csharp/programming-guide/namespaces/index.md)

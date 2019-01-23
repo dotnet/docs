@@ -41,9 +41,9 @@ When a generic type or method is compiled into Microsoft intermediate language (
   
  Moreover, when a generic C# class is instantiated by using a value type or reference type parameter, reflection can query it at runtime and both its actual type and its type parameter can be ascertained.  
   
-## See Also
+## See also
 
-- <xref:System.Collections.Generic>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
 - [Generics](~/docs/standard/generics/index.md)

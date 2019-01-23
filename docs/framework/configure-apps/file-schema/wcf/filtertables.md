@@ -45,6 +45,6 @@ Represents a configuration section for defining routing tables that contain mapp
 |-------------|-----------------|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing filters and routing tables.|  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>       
- <xref:System.ServiceModel.Routing.Configuration.FilterTableCollection?displayProperty=nameWithType>    
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterTableCollection?displayProperty=nameWithType>

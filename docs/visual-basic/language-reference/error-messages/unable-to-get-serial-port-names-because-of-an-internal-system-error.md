@@ -12,7 +12,7 @@ An internal error occurred when the `My.Computer.Ports.SerialPortNames` property
   
 2.  Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames>  
- [Debugger Basics](/visualstudio/debugger/debugger-basics)  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+## See also
+- <xref:Microsoft.VisualBasic.Devices.Ports.SerialPortNames>
+- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

@@ -54,6 +54,6 @@ This configuration element defines a standard endpoint that contains information
 |-------------|-----------------|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.DynamicEndpoint>  
- <xref:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement>
+## See also
+- <xref:System.ServiceModel.Discovery.DynamicEndpoint>
+- <xref:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement>

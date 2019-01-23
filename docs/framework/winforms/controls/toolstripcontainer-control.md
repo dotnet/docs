@@ -35,5 +35,5 @@ ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
  <xref:System.Windows.Forms.ToolStripPanel>  
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
-## See Also  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

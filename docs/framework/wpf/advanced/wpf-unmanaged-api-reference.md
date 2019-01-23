@@ -16,5 +16,5 @@ Windows Presentation Foundation (WPF) libraries expose a number of unmanaged fun
  [SaveToHistory Function](../../../../docs/framework/wpf/advanced/savetohistory-function-wpf-unmanaged-api-reference.md)  
  [SetFakeActiveWindow Function](../../../../docs/framework/wpf/advanced/setfakeactivewindow-function-wpf-unmanaged-api-reference.md)  
   
-## See Also  
- [Advanced](../../../../docs/framework/wpf/advanced/index.md)
+## See also
+- [Advanced](../../../../docs/framework/wpf/advanced/index.md)

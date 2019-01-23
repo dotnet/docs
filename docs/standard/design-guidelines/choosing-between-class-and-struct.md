@@ -49,5 +49,5 @@ One of the basic design decisions every framework designer faces is whether to d
   
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

@@ -131,11 +131,11 @@ Defines a queued binding suitable for cross-machine communication.
 </configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.NetMsmqBinding>  
- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.NetMsmqBinding>
+- <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

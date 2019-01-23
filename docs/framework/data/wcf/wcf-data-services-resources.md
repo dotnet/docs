@@ -53,5 +53,5 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
  [The Entity-Relationship Model: Toward a Unified View of Data](https://go.microsoft.com/fwlink/?LinkId=91909) by Peter Pin-Shan Chen, Massachusetts Institute of Technology  
  Describes the basis for the entity-relational model that is implemented by [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]. Written in 1976, this is one of the most frequently cited papers in the computer field.  
   
-## See Also  
- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+## See also
+- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)

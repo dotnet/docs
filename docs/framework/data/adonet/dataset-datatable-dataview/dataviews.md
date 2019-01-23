@@ -53,5 +53,5 @@ A <xref:System.Data.DataView> enables you to create different views of the data 
  [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
  Describes the ADO.NET architecture and components, and how to use ADO.NET to access existing data sources and manage application data.  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

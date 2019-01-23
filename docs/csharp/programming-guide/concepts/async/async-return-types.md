@@ -71,10 +71,10 @@ Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task
   
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-valuetask.cs)]
 
-## See Also
+## See also
 
-- <xref:System.Threading.Tasks.Task.FromResult%2A>   
-- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
-- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)   
-- [async](../../../../csharp/language-reference/keywords/async.md)   
+- <xref:System.Threading.Tasks.Task.FromResult%2A>
+- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)
+- [async](../../../../csharp/language-reference/keywords/async.md)
 - [await](../../../../csharp/language-reference/keywords/await.md)

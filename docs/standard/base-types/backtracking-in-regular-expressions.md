@@ -213,8 +213,8 @@ ms.custom: seodec18
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
-- [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)  
-- [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)  
+- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)
+- [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md)
 - [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md)

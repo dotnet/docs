@@ -21,6 +21,6 @@ Gets the <xref:System.Web.HttpResponse> object associated with the <xref:System.
   
  [!code-vb[VbVbalrMyWeb#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-response-object_1.aspx)]  
   
-## See Also  
- <xref:System.Web.HttpResponse>  
- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
+## See also
+- <xref:System.Web.HttpResponse>
+- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)

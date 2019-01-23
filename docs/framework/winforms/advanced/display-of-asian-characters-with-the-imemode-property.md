@@ -21,4 +21,4 @@ The <xref:System.Windows.Forms.Control.ImeMode%2A> property is used by forms and
   
 ## See also
 
-[Globalizing Windows Forms applications](globalizing-windows-forms.md)
+- [Globalizing Windows Forms applications](globalizing-windows-forms.md)

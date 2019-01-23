@@ -20,8 +20,8 @@ The Windows Forms [PrintDocument](../../../../docs/framework/winforms/controls/p
   
  When it is added to a form, the <xref:System.Drawing.Printing.PrintDocument> component appears in the tray at the bottom of the Windows Forms Designer.  
   
-## See Also  
- <xref:System.Drawing.Graphics>  
- <xref:System.Drawing.Printing.PrintDocument>  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)  
- [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)
+## See also
+- <xref:System.Drawing.Graphics>
+- <xref:System.Drawing.Printing.PrintDocument>
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+- [PrintDocument Component](../../../../docs/framework/winforms/controls/printdocument-component-windows-forms.md)

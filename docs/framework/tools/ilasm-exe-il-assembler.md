@@ -223,7 +223,7 @@ The following IL code example corresponds to the previous C# code example. You c
 
 ## See also
 
-[Tools](../../../docs/framework/tools/index.md)  
-[*Ildasm.exe* (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)  
-[Managed Execution Process](../../../docs/standard/managed-execution-process.md)  
-[Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [*Ildasm.exe* (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md)
+- [Managed Execution Process](../../../docs/standard/managed-execution-process.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

@@ -102,5 +102,5 @@ Types of isolated storage
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageScope>
 - [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

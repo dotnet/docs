@@ -29,5 +29,5 @@ HRESULT CertFreeAuthenticodeTimestamperInfo (
 ## Return Value  
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## See also
+- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)

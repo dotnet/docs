@@ -42,5 +42,5 @@ In some cases, when an app uses two or more app domains with different applicati
     System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");  
     ```  
   
-## See Also  
- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md)
+## See also
+- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md)

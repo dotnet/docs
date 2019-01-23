@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Host and run a basic Windows Communication Foundation service"
-ms.date: 01/21/2019
+ms.date: 01/22/2019
 dev_langs:
   - "csharp"
   - "vb"

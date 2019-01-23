@@ -80,8 +80,8 @@ Clears the `Listeners` collection for a trace source.
 </configuration>   
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

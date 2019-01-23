@@ -24,6 +24,6 @@ This section discusses how to validate strings in Visual Basic.
  [Walkthrough: Validating That Passwords Are Complex](../../../../visual-basic/programming-guide/language-features/strings/walkthrough-validating-that-passwords-are-complex.md)  
  How to determine whether a string has the characteristics of a strong password.  
   
-## See Also  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)  
- [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+## See also
+- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
+- [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

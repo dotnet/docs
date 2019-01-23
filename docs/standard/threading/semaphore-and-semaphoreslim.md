@@ -42,6 +42,6 @@ The <xref:System.Threading.Semaphore?displayProperty=nameWithType> class represe
   
 ## See also
 
-- <xref:System.Threading.Semaphore>  
-- <xref:System.Threading.SemaphoreSlim>  
+- <xref:System.Threading.Semaphore>
+- <xref:System.Threading.SemaphoreSlim>
 - [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)

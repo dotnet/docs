@@ -75,5 +75,5 @@ The .NET Framework changes over time. Each new version adds new types and type m
   
  [.NET Framework 2.0 Obsolete List](https://go.microsoft.com/fwlink/?LinkID=125264)  
   
-## See Also  
- [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)
+## See also
+- [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)

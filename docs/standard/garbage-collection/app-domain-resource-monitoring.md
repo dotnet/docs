@@ -79,7 +79,7 @@ Application domain resource monitoring (ARM) enables hosts to monitor CPU and me
   
 ## See also
 
-- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>  
-- [ICLRAppDomainResourceMonitor Interface](../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
-- [\<appDomainResourceMonitoring>](../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)  
+- <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
+- [ICLRAppDomainResourceMonitor Interface](../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
+- [\<appDomainResourceMonitoring>](../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)
 - [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

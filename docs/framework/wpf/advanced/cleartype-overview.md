@@ -60,5 +60,5 @@ Text with ClearType y-direction antialiasing
   
  [ClearType Tuner PowerToy](https://www.microsoft.com/typography/ClearTypePowerToy.mspx)  
   
-## See Also  
- [ClearType Registry Settings](../../../../docs/framework/wpf/advanced/cleartype-registry-settings.md)
+## See also
+- [ClearType Registry Settings](../../../../docs/framework/wpf/advanced/cleartype-registry-settings.md)

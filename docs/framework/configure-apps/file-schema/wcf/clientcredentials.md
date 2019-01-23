@@ -62,8 +62,8 @@ Specifies the credentials used to authenticate the client to a service.
 ## Remarks  
  Client credentials are used to authenticate the client to services in cases where mutual authentication is required. This configuration section can also be used to specify service certificates for scenarios where the client must secure messages to a service with the service's certificate.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)

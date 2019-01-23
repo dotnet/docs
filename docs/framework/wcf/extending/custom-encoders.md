@@ -85,10 +85,10 @@ This topic discusses how to create custom encoders.
   
  There are two samples provided with WCF that illustrate this process with sample code: [Custom Message Encoder: Custom Text Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-custom-text-encoder.md) and [Custom Message Encoder: Compression Encoder](../../../../docs/framework/wcf/samples/custom-message-encoder-compression-encoder.md).  
   
-## See Also  
- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>  
- <xref:System.ServiceModel.Channels.MessageEncoderFactory>  
- <xref:System.ServiceModel.Channels.MessageEncoder>  
- [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)  
- [Choosing a Message Encoder](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
- [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+## See also
+- <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>
+- <xref:System.ServiceModel.Channels.MessageEncoderFactory>
+- <xref:System.ServiceModel.Channels.MessageEncoder>
+- [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md)
+- [Choosing a Message Encoder](../../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
+- [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)

@@ -28,9 +28,9 @@ This example shows how to draw a polyline, which is a series of connected lines,
   
  This example is part of a larger sample; for the complete sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).  
   
-## See Also  
- <xref:System.Windows.Shapes.Polyline>  
- <xref:System.Windows.Shapes.Polygon>  
- <xref:System.Windows.Shapes.Shape>  
- [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+## See also
+- <xref:System.Windows.Shapes.Polyline>
+- <xref:System.Windows.Shapes.Polygon>
+- <xref:System.Windows.Shapes.Shape>
+- [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037)
+- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)

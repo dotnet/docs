@@ -18,12 +18,12 @@ This example shows how to animate changes to the size and position of a rectangl
  [!code-csharp[BasicAnimations_snip#RectAnimationWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/RectAnimationExample.cs#rectanimationwholepage)]
  [!code-vb[BasicAnimations_snip#RectAnimationWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/RectAnimationExample.vb#rectanimationwholepage)]  
   
-## See Also  
- <xref:System.Windows.Media.Animation.RectAnimation>  
- <xref:System.Windows.Media.RectangleGeometry.Rect%2A>  
- <xref:System.Windows.Media.RectangleGeometry>  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)  
- [Animation and Timing](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)
+## See also
+- <xref:System.Windows.Media.Animation.RectAnimation>
+- <xref:System.Windows.Media.RectangleGeometry.Rect%2A>
+- <xref:System.Windows.Media.RectangleGeometry>
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)
+- [Animation and Timing](https://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

@@ -18,9 +18,9 @@ This example shows how to define a <xref:System.Windows.Controls.GridView> view 
   
  ![ListView with GridView output](../../../../docs/framework/wpf/controls/media/listviewgridview.JPG "ListViewGridView")  
   
-## See Also  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.GridView>  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.GridView>
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)

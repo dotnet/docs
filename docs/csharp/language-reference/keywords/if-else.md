@@ -130,11 +130,11 @@ if (!(m >= n || m >= p))
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [?: Operator](../operators/conditional-operator.md)  
-- [if-else Statement (C++)](/cpp/cpp/if-else-statement-cpp)  
-- [switch](switch.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [?: Operator](../operators/conditional-operator.md)
+- [if-else Statement (C++)](/cpp/cpp/if-else-statement-cpp)
+- [switch](switch.md)

@@ -51,9 +51,9 @@ Causes the compiler to make type information in the specified assemblies availab
 vbc -reference:metad1.dll,metad2.dll -out:out.exe input.vb  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [Public](../../../visual-basic/language-reference/modifiers/public.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [Public](../../../visual-basic/language-reference/modifiers/public.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

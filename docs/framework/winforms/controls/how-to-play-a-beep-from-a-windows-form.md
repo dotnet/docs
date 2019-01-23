@@ -36,8 +36,8 @@ public void onePing()
 ## Compiling the Code  
  For C#, this example requires  a reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Interaction.Beep%2A>  
- <xref:System.Media.SoundPlayer>  
- [How to: Play a System Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-system-sound-from-a-windows-form.md)  
- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)
+## See also
+- <xref:Microsoft.VisualBasic.Interaction.Beep%2A>
+- <xref:System.Media.SoundPlayer>
+- [How to: Play a System Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-system-sound-from-a-windows-form.md)
+- [How to: Play a Sound from a Windows Form](../../../../docs/framework/winforms/controls/how-to-play-a-sound-from-a-windows-form.md)

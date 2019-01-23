@@ -46,6 +46,6 @@ The information in this section focuses on programming security in Windows Commu
   
  [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
   
-## See Also  
- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

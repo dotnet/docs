@@ -19,7 +19,7 @@ The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink
   
 2.  If the error persists, gather information about the circumstances and notify Microsoft Product Support Services.  
   
-## See Also  
+## See also
 
  [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).  
- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/talk-to-us)

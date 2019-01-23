@@ -12,6 +12,6 @@ You have tried to access a feature that is currently not implemented in Visual B
   
 -   Remove the reference.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+## See also
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 

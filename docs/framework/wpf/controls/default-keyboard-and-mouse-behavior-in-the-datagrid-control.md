@@ -90,6 +90,6 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
   
  CTRL+SHIFT can be combined to select non-adjacent ranges of adjacent rows. To do this, select the first range by using SHIFT+click as described earlier. After the first range of rows is selected, use CTRL+click to select the first row in the next range, and then click the last row in the next range while pressing CTRL+SHIFT.  
   
-## See Also  
- <xref:System.Windows.Controls.DataGrid>  
- <xref:System.Windows.Controls.DataGrid.SelectionMode%2A>
+## See also
+- <xref:System.Windows.Controls.DataGrid>
+- <xref:System.Windows.Controls.DataGrid.SelectionMode%2A>

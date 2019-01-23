@@ -114,9 +114,9 @@ Dim customers As Table(Of Customer) = db.GetTable(Of Customer)
   
 ## See also
 
-- [Getting Started with LINQ in Visual Basic](getting-started-with-linq.md)  
-- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
-- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)  
-- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
-- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
+- [Getting Started with LINQ in Visual Basic](getting-started-with-linq.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
 - [Queries](../../../../visual-basic/language-reference/queries/index.md)

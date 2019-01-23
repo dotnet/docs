@@ -59,12 +59,12 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 ## Remarks  
  By default, the SOAP message is not secured and the client is not authenticated. This element enables you to configure additional security settings for the `netHttpBinding` element.  
   
-## See Also  
- <xref:System.ServiceModel.NetHttpBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>    
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.NetHttpBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.NetHttpBindingElement.Security%2A>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Selecting a Credential Type](../../../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

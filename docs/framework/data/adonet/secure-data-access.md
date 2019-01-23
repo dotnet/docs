@@ -81,10 +81,10 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |[Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|
 |[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|
 
-## See Also  
- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
- [Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)  
- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)  
- [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
+- [Recommendations for Data Access Strategies](https://msdn.microsoft.com/library/72411f32-d12a-4de8-b961-e54fca7faaf5)
+- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
+- [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

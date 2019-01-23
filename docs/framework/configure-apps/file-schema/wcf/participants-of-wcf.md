@@ -79,8 +79,8 @@ Configure a list of tracking participants that listen to the tracking records be
 </configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>  
- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>  
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.TrackingSection>
+- <xref:System.ServiceModel.Activities.Description.EtwTrackingBehavior>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md)

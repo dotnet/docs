@@ -47,11 +47,11 @@ Defines the binding element that is used when the client must expose an endpoint
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>  
- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.CompositeDuplexElement>
+- <xref:System.ServiceModel.Channels.CompositeDuplexBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

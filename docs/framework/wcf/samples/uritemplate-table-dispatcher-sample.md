@@ -29,6 +29,6 @@ The <xref:System.UriTemplateTable> class provides a dictionary-like associative 
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Web\UriTemplateDispatcher`  
   
-## See Also  
- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)  
- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)
+## See also
+- [UriTemplate Table](../../../../docs/framework/wcf/samples/uritemplate-table-sample.md)
+- [UriTemplate](../../../../docs/framework/wcf/samples/uritemplate-sample.md)

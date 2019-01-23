@@ -41,9 +41,9 @@ Introduces a `New` clause to create a new object instance, specifies a construct
   
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
-## See Also  
- <xref:System.OutOfMemoryException>  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)
+## See also
+- <xref:System.OutOfMemoryException>
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Type List](../../../visual-basic/language-reference/statements/type-list.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

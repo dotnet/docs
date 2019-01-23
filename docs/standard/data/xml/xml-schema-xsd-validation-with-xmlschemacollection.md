@@ -204,7 +204,7 @@ while(vr.Read()) {
   
 ## See also
 
-- <xref:System.Xml.XmlParserContext>  
-- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>  
-- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.XmlParserContext>
+- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>
+- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>
 - [XmlSchemaCollection Schema Compilation](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)

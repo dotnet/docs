@@ -328,5 +328,5 @@ Class ClientGetAsync
 End Class  
 ```  
   
-## See Also  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+## See also
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

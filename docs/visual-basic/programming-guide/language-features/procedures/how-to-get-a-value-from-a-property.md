@@ -32,14 +32,14 @@ You retrieve a property's value by including the property name in an expression.
   
  The value of the property participates in the expression just as a variable or constant would, or it is stored in the variable or property on the left side of the assignment statement.  
   
-## See Also  
- [Procedures](./index.md)  
- [Property Procedures](./property-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
- [How to: Create a Property](./how-to-create-a-property.md)  
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)
+## See also
+- [Procedures](./index.md)
+- [Property Procedures](./property-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)
+- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
+- [How to: Create a Property](./how-to-create-a-property.md)
+- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)
+- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)
+- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)

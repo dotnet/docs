@@ -45,7 +45,7 @@
  The <xref:System.Globalization.EastAsianLunisolarCalendar> class supports the sexagenary cycle of years (which repeats every 60 years) in addition to solar years and lunar months. Each solar year in the calendar is associated with a Sexagenary Year (see <xref:System.Globalization.EastAsianLunisolarCalendar.GetSexagenaryYear%2A>), a Celestial Stem (see <xref:System.Globalization.EastAsianLunisolarCalendar.GetCelestialStem%2A>), and a Terrestrial Branch (see <xref:System.Globalization.EastAsianLunisolarCalendar.GetTerrestrialBranch%2A>).  
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.HebrewCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
+>  For information about using the <xref:System.Globalization.EastAsianLunisolarCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  A year can have a leap month after any month of the year, and a month can have a leap day. For example, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns a positive integer that indicates the month associated with a specified date. If there is a leap month between the eighth and ninth months of the year, the <xref:System.Globalization.EastAsianLunisolarCalendar.GetMonth%2A> method returns 8 for the eighth month, 9 for the leap eighth month, and 10 for the ninth month.  
   

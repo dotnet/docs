@@ -84,9 +84,9 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
  [!code-xaml[DataGrid_Validation#FullXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#fullxaml)]  
   
-## See Also  
- <xref:System.Windows.Controls.DataGrid>  
- [DataGrid](../../../../docs/framework/wpf/controls/datagrid.md)  
- [Data Binding](../../../../docs/framework/wpf/data/data-binding-wpf.md)  
- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)  
- [Implement Validation Logic on Custom Objects](../../../../docs/framework/wpf/data/how-to-implement-validation-logic-on-custom-objects.md)
+## See also
+- <xref:System.Windows.Controls.DataGrid>
+- [DataGrid](../../../../docs/framework/wpf/controls/datagrid.md)
+- [Data Binding](../../../../docs/framework/wpf/data/data-binding-wpf.md)
+- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)
+- [Implement Validation Logic on Custom Objects](../../../../docs/framework/wpf/data/how-to-implement-validation-logic-on-custom-objects.md)

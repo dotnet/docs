@@ -170,7 +170,7 @@ ms.author: "ronpet"
 |`${` *name* `}`|Substitutes the substring matched by the named group *name*.|`\b(?<word1>\w+)(\s)(?<word2>\w+)\b`|`${word2} ${word1}`|"one two"|"two one"|  
 |`$$`|Substitutes a literal "$".|`\b(\d+)\s?USD`|`$$$1`|"103 USD"|"$103"|  
 |`$&`|Substitutes a copy of the whole match.|`\$?\d*\.?\d+`|`**$&**`|"$1.30"|"\*\*$1.30\*\*"|  
-|<code>$`</code>|Substitutes all the text of the input string before the match.|`B+`|<code>$`</code>|"AABBCC"|"AAAACC"|  
+|``$` ``|Substitutes all the text of the input string before the match.|`B+`|``$` ``|"AABBCC"|"AAAACC"|  
 |`$'`|Substitutes all the text of the input string after the match.|`B+`|`$'`|"AABBCC"|"AACCCC"|  
 |`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|"AABBCCDD"|"AACCDD"|  
 |`$_`|Substitutes the entire input string.|`B+`|`$_`|"AABBCC"|"AAAABBCCCC"|  
@@ -211,10 +211,10 @@ ms.author: "ronpet"
   
 ## See also
 
-- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>  
-- <xref:System.Text.RegularExpressions.Regex>  
-- [Regular Expressions](regular-expressions.md)  
-- [Regular Expression Classes](the-regular-expression-object-model.md)  
-- [Regular Expression Examples](regular-expression-examples.md)  
-- [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)  
+- <xref:System.Text.RegularExpressions?displayProperty=nameWithType>
+- <xref:System.Text.RegularExpressions.Regex>
+- [Regular Expressions](regular-expressions.md)
+- [Regular Expression Classes](the-regular-expression-object-model.md)
+- [Regular Expression Examples](regular-expression-examples.md)
+- [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
 - [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

@@ -3,7 +3,7 @@ title: SourceLink and .NET libraries
 description: Best practice recommendations for using SourceLink to improve debugging for .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 01/15/2019
 ---
 # SourceLink
 
@@ -29,9 +29,9 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
 > * <xref:System.Diagnostics.DebuggerBrowsableAttribute> controls whether a member is displayed in the debugger variable windows.
 
-**✔️ CONSIDER** including symbol files (`*.pdb`) in the NuGet package.
+**✔️ CONSIDER** publishing symbol files (`*.pdb`).
 
-> Ordinarily, you'd publish symbol files in a [symbol package](./nuget.md#symbol-packages). Currently the main public host for symbol packages doesn't support the portable symbol files (`*.pdb`) created by SDK-style projects, and symbol packages aren't useful.
+> For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
 
 >[!div class="step-by-step"]
 >[Previous](dependencies.md)

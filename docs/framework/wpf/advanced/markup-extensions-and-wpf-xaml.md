@@ -111,11 +111,11 @@ This topic introduces the concept of markup extensions for XAML, including their
   
  Most markup extensions, when used in object element syntax to fill a property element, would not have content or any further property element syntax within. Thus you would close the object element tag, and provide no child elements. Whenever any object element is encountered by a XAML processor, the constructor for that class is called, which instantiates the object created from the parsed element. A markup extension class is no different: if you want your markup extension to be usable in object element syntax, you must provide a default constructor. Some existing markup extensions have at least one required property value that must be specified for effective initialization. If so, that property value is typically given as a property attribute on the object element. In the [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md) and [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md) reference pages, markup extensions that have required properties (and the names of required properties) will be noted. Reference pages will also note if either object element syntax or attribute syntax is disallowed for particular markup extensions. A notable case is [x:Array Markup Extension](../../../../docs/framework/xaml-services/x-array-markup-extension.md), which cannot support attribute syntax because the contents of that array must be specified within the tagging as content. The array contents are handled as general objects, therefore no default type converter for the attribute is feasible. Also, [x:Array Markup Extension](../../../../docs/framework/xaml-services/x-array-markup-extension.md) requires a `type` parameter.  
   
-## See Also  
- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)  
- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)  
- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
- [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md)  
- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)  
- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)
+## See also
+- [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [XAML Namespace (x:) Language Features](../../../../docs/framework/xaml-services/xaml-namespace-x-language-features.md)
+- [WPF XAML Extensions](../../../../docs/framework/wpf/advanced/wpf-xaml-extensions.md)
+- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)
+- [Binding Markup Extension](../../../../docs/framework/wpf/advanced/binding-markup-extension.md)
+- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)

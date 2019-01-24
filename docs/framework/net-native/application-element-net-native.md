@@ -79,8 +79,8 @@ Serves as a container for application-wide types and type members whose metadata
   
 -   As an element that sets application-wide policy for reflection, serialization, and interop. The attributes of the `<Application>` element define application-wide policy, which may be overridden by the child elements defined by the `<Application>` or [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element.  
   
-## See Also  
- [\<Library> Element](../../../docs/framework/net-native/library-element-net-native.md)  
- [\<Directives> Element](../../../docs/framework/net-native/directives-element-net-native.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+## See also
+- [\<Library> Element](../../../docs/framework/net-native/library-element-net-native.md)
+- [\<Directives> Element](../../../docs/framework/net-native/directives-element-net-native.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)

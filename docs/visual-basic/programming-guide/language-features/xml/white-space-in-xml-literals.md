@@ -40,5 +40,5 @@ The Visual Basic compiler incorporates only the significant white space characte
 </outer>  
 ```  
   
-## See Also  
- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+## See also
+- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)

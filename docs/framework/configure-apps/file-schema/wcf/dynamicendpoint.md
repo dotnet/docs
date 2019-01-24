@@ -12,27 +12,28 @@ This configuration element defines a standard endpoint that contains information
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <dynamicEndpoint>
       <standardEndpoint>
-      <discoveryClientSettings discoveryEndpoint="String">
-        <findCriteria duration="TimeSpan" 
-                      maxResults="Integer" 
-                      scopeMatchBy="Uri">
-          <contractTypeNames>
-            <add name="String" namespace="String" />
-          <contractTypeNames>
-          <extensions />
-          <scopes>
-            <add scope="URI" />
-          </scopes>
-        </findCriteria>
-      </discoveryClientSettings>
+        <discoveryClientSettings discoveryEndpoint="String">
+          <findCriteria duration="TimeSpan"
+                        maxResults="Integer"
+                        scopeMatchBy="Uri">
+            <contractTypeNames>
+              <add name="String"
+                   namespace="String" />
+            <contractTypeNames>
+            <extensions />
+            <scopes>
+              <add scope="URI" />
+            </scopes>
+          </findCriteria>
+        </discoveryClientSettings>
       <standardEndpoint>
     </dynamicEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -53,6 +54,6 @@ This configuration element defines a standard endpoint that contains information
 |-------------|-----------------|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.DynamicEndpoint>  
- <xref:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement>
+## See also
+- <xref:System.ServiceModel.Discovery.DynamicEndpoint>
+- <xref:System.ServiceModel.Discovery.Configuration.DynamicEndpointElement>

@@ -80,5 +80,5 @@ Services and client applications that use data types that are serializable using
 svcutil /t:xmlserializer myContractLibrary.exe  
 ```  
   
-## See Also  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+## See also
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

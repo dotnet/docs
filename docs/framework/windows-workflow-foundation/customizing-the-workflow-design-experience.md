@@ -27,7 +27,7 @@ The scenarios for designing custom activities and for rehosting the [!INCLUDE[wf
 
 <xref:System.Activities.Presentation.ActivityDesigner>
 
-## See Also
+## See also
 
 - [Extending Windows Workflow Foundation](../../../docs/framework/windows-workflow-foundation/extend.md)
 - [Designer](../../../docs/framework/windows-workflow-foundation/samples/designer.md)

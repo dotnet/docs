@@ -28,7 +28,7 @@ Settings that are application-scoped are read-only, and can only be changed at d
   
      User settings are saved in a file within a subfolder of the user’s local hidden application data folder.  
   
-## See Also  
- [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)  
- [How To: Read Settings at Run Time With C#](../../../../docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)  
- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
+## See also
+- [Using Application Settings and User Settings](../../../../docs/framework/winforms/advanced/using-application-settings-and-user-settings.md)
+- [How To: Read Settings at Run Time With C#](../../../../docs/framework/winforms/advanced/how-to-read-settings-at-run-time-with-csharp.md)
+- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)

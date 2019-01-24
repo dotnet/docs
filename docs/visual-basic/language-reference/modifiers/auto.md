@@ -27,7 +27,7 @@ Specifies that Visual Basic should marshal strings according to .NET Framework r
 ## Smart Device Developer Notes  
  This keyword is not supported.  
   
-## See Also  
- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)
+- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

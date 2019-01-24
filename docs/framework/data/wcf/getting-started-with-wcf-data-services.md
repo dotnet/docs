@@ -34,5 +34,5 @@ The topics in this section help you quickly understand [!INCLUDE[ssODataFull](..
   
  [Getting Started](../../../../docs/framework/data/adonet/ef/getting-started.md)  
   
-## See Also  
- [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+## See also
+- [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248)

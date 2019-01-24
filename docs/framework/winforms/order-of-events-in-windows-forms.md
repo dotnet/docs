@@ -74,5 +74,5 @@ The order in which events are raised in Windows Forms applications is of particu
   
 -   <xref:System.Windows.Forms.Control.Validated>  
   
-## See Also  
- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)
+## See also
+- [Creating Event Handlers in Windows Forms](../../../docs/framework/winforms/creating-event-handlers-in-windows-forms.md)

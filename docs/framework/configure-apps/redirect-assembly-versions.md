@@ -148,7 +148,7 @@ You can enable automatic binding redirection if your app targets older versions 
 </assemblyBinding>
 ```
 
-## See Also
+## See also
 
 - [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
 - [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)
@@ -157,7 +157,6 @@ You can enable automatic binding redirection if your app targets older versions 
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)
-- [Configuring .NET Framework Apps](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
 - [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [How to: Create a Publisher Policy](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)

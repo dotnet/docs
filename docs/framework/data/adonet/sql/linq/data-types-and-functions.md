@@ -25,7 +25,7 @@ The topics listed in the following table describe LINQ to SQL support for member
 |[System.TimeSpan Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-timespan-methods.md)|Describes LINQ to SQL support for members of the <xref:System.TimeSpan?displayProperty=nameWithType> structure.|  
 |[Unsupported Functionality](../../../../../../docs/framework/data/adonet/sql/linq/unsupported-functionality.md)|Describes functionality that is not supported in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|  
   
-## See Also  
- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)  
- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)  
- [.NET Framework Class Library in Visual Studio](https://msdn.microsoft.com/library/a03e374c-3d5c-4169-937b-49857ab273ae)
+## See also
+- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
+- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [.NET Framework Class Library in Visual Studio](https://msdn.microsoft.com/library/a03e374c-3d5c-4169-937b-49857ab273ae)

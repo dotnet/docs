@@ -10,8 +10,8 @@ An attempt has been made to access a file that is currently open for reading.
   
 -   Close the file and attempt the operation again.  
   
-## See Also  
- <xref:System.Security.Permissions.FileIOPermission>  
- [How to: Get Information About a File in Visual Basic](https://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)  
- [How to: Read from Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)  
- [How to: Read From Binary Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)
+## See also
+- <xref:System.Security.Permissions.FileIOPermission>
+- [How to: Get Information About a File in Visual Basic](https://msdn.microsoft.com/library/ca0720ec-f40e-4c11-9748-0ce1685c78f0)
+- [How to: Read from Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)
+- [How to: Read From Binary Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)

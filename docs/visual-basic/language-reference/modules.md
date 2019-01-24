@@ -23,6 +23,6 @@ Visual Basic provides several modules that enable you to simplify common tasks i
 |<xref:Microsoft.VisualBasic.Strings>|Contains members that perform string operations such as reformatting strings, searching a string, getting the length of a string, and so on.|  
 |<xref:Microsoft.VisualBasic.VBMath>|Contains members perform mathematical operations.|  
   
-## See Also  
- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
- [Visual Basic](../../visual-basic/index.md)
+## See also
+- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
+- [Visual Basic](../../visual-basic/index.md)

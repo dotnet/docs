@@ -177,8 +177,8 @@ partial class Customer
   
  [Walkthrough: Adding Validation to Entity Classes](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   
-## See Also  
- [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)  
- [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)  
- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
- [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)
+## See also
+- [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
+- [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+- [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
+- [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

@@ -42,6 +42,6 @@ HRESULT EnableExceptionCallbacksOutsideOfMyCode(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
-## See Also  
- [ICorDebugProcess8 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess8-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+- [ICorDebugProcess8 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess8-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

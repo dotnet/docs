@@ -12,6 +12,6 @@ A conversion attempted to change a variable to type `Date`, but the value is not
   
 -   Find a conversion that is meaningful.  
   
-## See Also  
- [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Date Data Type](../../visual-basic/language-reference/data-types/date-data-type.md)
+## See also
+- [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Date Data Type](../../visual-basic/language-reference/data-types/date-data-type.md)

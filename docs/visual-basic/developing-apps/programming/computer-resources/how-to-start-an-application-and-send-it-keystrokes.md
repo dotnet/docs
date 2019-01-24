@@ -20,7 +20,7 @@ This example uses the `Shell` function to start the calculator application and t
 ## .NET Framework Security  
  The call to the `Shell` function requires full trust (<xref:System.Security.SecurityException> class).  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Devices.Keyboard.SendKeys%2A>  
- <xref:Microsoft.VisualBasic.Interaction.Shell%2A>  
- <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A>
+## See also
+- <xref:Microsoft.VisualBasic.Devices.Keyboard.SendKeys%2A>
+- <xref:Microsoft.VisualBasic.Interaction.Shell%2A>
+- <xref:Microsoft.VisualBasic.Interaction.AppActivate%2A>

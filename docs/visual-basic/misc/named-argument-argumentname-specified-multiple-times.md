@@ -12,5 +12,5 @@ You specified a named argument more than once.
   
 -   Remove all but one of the specifications.  
   
-## See Also  
- [Passing Arguments by Position and by Name](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)
+## See also
+- [Passing Arguments by Position and by Name](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md)

@@ -11,19 +11,20 @@ Represents a configuration section for defining a set of elements that contain n
 **\<system.serviceModel>**   
 &nbsp;&nbsp;**\<routing>**   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<namespaceTable>**
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <system.serviceModel>
   <routing>
     <namespaceTable>
-      <add namespace="String" prefix="String" />
+      <add namespace="String"
+           prefix="String" />
     </namespaceTable>
   </routing>
 </system.serviceModel>
-``` 
-
+```  
+  
 ## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements.
@@ -46,4 +47,4 @@ None
 
 ## See also
 
-<xref:System.ServiceModel.Routing.Configuration.NamespaceElementCollection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.NamespaceElementCollection?displayProperty=nameWithType>

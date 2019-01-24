@@ -17,6 +17,6 @@ ms.assetid: 13918600-6087-40d7-8134-32aa9d3bfda4
   
 -   Perform file operations with functions defined in the `System.IO` namespace.  
   
-## See Also  
- <xref:System.IO>  
- [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)
+## See also
+- <xref:System.IO>
+- [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

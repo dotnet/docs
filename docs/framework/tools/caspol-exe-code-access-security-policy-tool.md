@@ -240,6 +240,6 @@ caspol -customall "c:\config_test\security.config" -resolvegroup myassembly
 caspol -all -resolveperm testassembly  
 ```  
   
-## See Also  
- [Tools](index.md)  
- [Command Prompts](developer-command-prompt-for-vs.md)
+## See also
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

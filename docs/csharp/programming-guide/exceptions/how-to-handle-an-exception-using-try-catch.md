@@ -19,8 +19,8 @@ The purpose of a [try-catch](../../../csharp/language-reference/keywords/try-cat
 ## Comments  
  The code that causes an exception is enclosed in the `try` block. A `catch` statement is added immediately after to handle `IndexOutOfRangeException`, if it occurs. The `catch` block handles the `IndexOutOfRangeException` and throws the more appropriate `ArgumentOutOfRangeException` exception instead. In order to provide the caller with as much information as possible, consider specifying the original exception as the <xref:System.Exception.InnerException%2A> of the new exception. Because the <xref:System.Exception.InnerException%2A> property is [readonly](../../../csharp/language-reference/keywords/readonly.md), you must assign it in the constructor of the new exception.  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
 - [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)

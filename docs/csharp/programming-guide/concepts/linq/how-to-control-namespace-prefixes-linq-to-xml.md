@@ -48,6 +48,6 @@ Console.WriteLine(root);
 </aw:Root>  
 ```  
   
-## See Also
+## See also
 
 - [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md)

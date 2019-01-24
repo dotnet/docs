@@ -38,10 +38,10 @@ Visual Studio generates an interop assembly containing metadata when you add a r
   
 2.  Use the [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
   
-## See Also  
- [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)  
- [Exposing COM Components to the .NET Framework](exposing-com-components.md)  
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](https://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3(v=vs.100))  
- [Walkthrough: Embedding Types from Managed Assemblies](https://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)  
- [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)  
- [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
+## See also
+- [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
+- [Exposing COM Components to the .NET Framework](exposing-com-components.md)
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies](https://msdn.microsoft.com/library/85b55e05-bc5e-4665-b6ae-e1ada9299fd3(v=vs.100))
+- [Walkthrough: Embedding Types from Managed Assemblies](https://msdn.microsoft.com/library/b28ec92c-1867-4847-95c0-61adfe095e21)
+- [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)

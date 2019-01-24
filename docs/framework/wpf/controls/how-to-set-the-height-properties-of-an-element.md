@@ -27,13 +27,13 @@ ms.assetid: 5ab9e781-dbb8-469a-a3c8-cf38ce312647
   
  For the complete sample, see [Height Properties Sample](https://go.microsoft.com/fwlink/?LinkID=159993).  
   
-## See Also  
- <xref:System.Windows.FrameworkElement>  
- <xref:System.Windows.Controls.ListBox>  
- <xref:System.Windows.FrameworkElement.ActualHeight%2A>  
- <xref:System.Windows.FrameworkElement.MaxHeight%2A>  
- <xref:System.Windows.FrameworkElement.MinHeight%2A>  
- <xref:System.Windows.FrameworkElement.Height%2A>  
- [Set the Width Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-width-properties-of-an-element.md)  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [Height Properties Sample](https://go.microsoft.com/fwlink/?LinkID=159993)
+## See also
+- <xref:System.Windows.FrameworkElement>
+- <xref:System.Windows.Controls.ListBox>
+- <xref:System.Windows.FrameworkElement.ActualHeight%2A>
+- <xref:System.Windows.FrameworkElement.MaxHeight%2A>
+- <xref:System.Windows.FrameworkElement.MinHeight%2A>
+- <xref:System.Windows.FrameworkElement.Height%2A>
+- [Set the Width Properties of an Element](../../../../docs/framework/wpf/controls/how-to-set-the-width-properties-of-an-element.md)
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [Height Properties Sample](https://go.microsoft.com/fwlink/?LinkID=159993)

@@ -24,7 +24,7 @@ The specified registry path does not begin with a valid hive name. Valid hive na
   
 -   Verify that you are supplying a valid hive name.  
   
-## See Also  
- [Manipulating Strings](../../standard/base-types/manipulating-strings.md)  
- [Reading from and Writing to the Registry (Visual Basic)](../developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)  
- [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)
+## See also
+- [Manipulating Strings](../../standard/base-types/manipulating-strings.md)
+- [Reading from and Writing to the Registry (Visual Basic)](../developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- [My.Computer.Registry](xref:Microsoft.VisualBasic.MyServices.RegistryProxy)

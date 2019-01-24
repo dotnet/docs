@@ -72,6 +72,6 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
  [Adding Existing Constraints to a DataSet](../../../../../docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md)  
  Describes how to populate a **DataSet** with primary key information from a data source.  
   
-## See Also  
- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

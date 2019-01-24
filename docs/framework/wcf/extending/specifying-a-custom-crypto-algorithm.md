@@ -119,8 +119,8 @@ WSHttpBinding binding = new WSHttpBinding();
   
  For a complete code example, see the [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md) sample.  
   
-## See Also  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Securing Services](../../../../docs/framework/wcf/securing-services.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+## See also
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
+- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)

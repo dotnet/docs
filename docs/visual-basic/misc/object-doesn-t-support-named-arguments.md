@@ -12,5 +12,5 @@ You tried to access an object whose methods don't support named arguments.
   
 -   Specify arguments positionally when accessing methods on this object. See the object's documentation for more information on argument positions and types.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

@@ -17,5 +17,5 @@ Every thread has a thread priority assigned to it. Threads created within the co
   
 ## See also
 
-- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)  
+- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)
 - [Managed and Unmanaged Threading in Windows](../../../docs/standard/threading/managed-and-unmanaged-threading-in-windows.md)

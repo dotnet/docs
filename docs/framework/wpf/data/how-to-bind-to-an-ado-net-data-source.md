@@ -29,7 +29,7 @@ This example shows how to bind a [!INCLUDE[TLA#tla_winclient](../../../../includ
   
  The `IntColorConverter` converts an `int` to a color. With the use of this converter, the <xref:System.Windows.Controls.TextBlock.Background%2A> color of the third <xref:System.Windows.Controls.TextBlock> appears green if the value of `NumPages` is less than 350 and red otherwise. The implementation of the converter is not shown here.  
   
-## See Also  
- <xref:System.Windows.Data.BindingListCollectionView>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- <xref:System.Windows.Data.BindingListCollectionView>
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

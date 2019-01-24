@@ -53,5 +53,5 @@ This sample demonstrates how to write a custom SQL tracking participant, that wr
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\SqlTracking`  
   
-## See Also  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

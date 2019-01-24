@@ -23,5 +23,5 @@ Introduces a statement that specifies a compiler option that applies to the enti
   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)

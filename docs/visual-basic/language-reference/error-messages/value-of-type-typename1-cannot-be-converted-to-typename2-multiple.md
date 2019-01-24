@@ -25,7 +25,7 @@ Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatc
   
 -   If the referenced assemblies do not have the same assembly identity, then change your code so that it does not attempt to convert a type in one to a type in the other.  
   
-## See Also  
- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
- 
+## See also
+- [Type Conversions in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)
+

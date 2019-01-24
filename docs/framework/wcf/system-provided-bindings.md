@@ -84,6 +84,6 @@ The following bindings ship with WCF:
 
 ## See also
 
-[Endpoint Creation Overview](endpoint-creation-overview.md)  
-[Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md)  
-[Basic WCF Programming](basic-wcf-programming.md)  
+- [Endpoint Creation Overview](endpoint-creation-overview.md)
+- [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md)
+- [Basic WCF Programming](basic-wcf-programming.md)

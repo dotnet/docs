@@ -86,7 +86,7 @@ Workflow tracking provides visibility into the status of workflow execution. The
     }  
     ```  
   
-     When no tracking profile is specified, the default tracking profile is used. When the default tracking profile is used, tracking records are emitted for all `ActivityStates`. Because we only need to capture the text one time during the lifecycle of the `WriteLine` activity, we only extract the text from the `ActivityStates.Executing` state. In [To create the tracking profile and register the tracking participant](../../../docs/framework/windows-workflow-foundation/how-to-create-a-custom-tracking-participant.md#BKMK_TrackingProfile), a tracking profile is created that specifies that only `WriteLine` `ActivityStates.Executing` tracking records are emitted.  
+     When no tracking profile is specified, the default tracking profile is used. When the default tracking profile is used, tracking records are emitted for all `ActivityStates`. Because we only need to capture the text one time during the lifecycle of the `WriteLine` activity, we only extract the text from the `ActivityStates.Executing` state. In [To create the tracking profile and register the tracking participant](#to-create-the-tracking-profile-and-register-the-tracking-participant), a tracking profile is created that specifies that only `WriteLine` `ActivityStates.Executing` tracking records are emitted.  
   
 ## To create the tracking profile and register the tracking participant  
   

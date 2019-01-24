@@ -35,7 +35,7 @@ Complements the [IALink Interface](../../../../docs/framework/unmanaged-api/alin
   
  [SetPEKind Method](../../../../docs/framework/unmanaged-api/alink/setpekind-method.md)  
   
-## See Also  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+## See also
+- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
+- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)

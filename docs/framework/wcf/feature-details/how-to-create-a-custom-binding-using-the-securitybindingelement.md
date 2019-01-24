@@ -100,10 +100,10 @@ Windows Communication Foundation (WCF) includes several system-provided bindings
  [!code-csharp[c_CustomBinding#20](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_custombinding/cs/c_custombinding.cs#20)]
  [!code-vb[c_CustomBinding#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_custombinding/vb/source.vb#20)]  
   
-## See Also  
- <xref:System.ServiceModel.Channels.SecurityBindingElement>  
- <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>  
- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
+## See also
+- <xref:System.ServiceModel.Channels.SecurityBindingElement>
+- <xref:System.ServiceModel.Channels.TransportSecurityBindingElement>
+- <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Extending Bindings](../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)

@@ -56,7 +56,7 @@ Provides properties for creating and accessing a single instance of each XML Web
 |Windows Service|**Yes**|  
 |Web Site|No|  
   
-## See Also  
- <xref:System.Web.Services.Protocols.SoapHttpClientProtocol>  
- <xref:System.ArgumentException>  
- [Accessing Application Web Services](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)
+## See also
+- <xref:System.Web.Services.Protocols.SoapHttpClientProtocol>
+- <xref:System.ArgumentException>
+- [Accessing Application Web Services](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)

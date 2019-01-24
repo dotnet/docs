@@ -27,8 +27,8 @@ This example calls the <xref:System.String.IndexOf%2A> method on a <xref:System.
   
  For optimal error control, you might want to enclose the string search in the `Try` block of a [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md) construction.  
   
-## See Also  
- <xref:System.String.IndexOf%2A>  
- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
+## See also
+- <xref:System.String.IndexOf%2A>
+- [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

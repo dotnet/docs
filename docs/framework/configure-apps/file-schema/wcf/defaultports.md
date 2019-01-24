@@ -18,9 +18,10 @@ A collection of default ports listing the default communications endpoints that 
 ```xml  
 <useRequestHeadersForMetadataAddress>
   <defaultPorts>
-    <add scheme="http" port="integer" />
+    <add scheme="http"
+         port="integer" />
   </defaultPorts>
-</useRequestHeadersForMetadataAddress>  
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  
@@ -41,5 +42,5 @@ A collection of default ports listing the default communications endpoints that 
 |-------------|-----------------|  
 |[\<useRequestHeadersForMetadataAddress>](../../../../../docs/framework/configure-apps/file-schema/wcf/userequestheadersformetadataaddress.md)|A list of default ports.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DefaultPortElementCollection>
+## See also
+- <xref:System.ServiceModel.Configuration.DefaultPortElementCollection>

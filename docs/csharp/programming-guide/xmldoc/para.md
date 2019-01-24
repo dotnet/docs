@@ -29,7 +29,7 @@ ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
 ## Example  
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<para>.  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

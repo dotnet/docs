@@ -35,7 +35,7 @@ The <xref:System.Windows.Forms.BindingSource> component will automatically detec
   
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project. Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb129228(v=vs.100)).  
   
-## See Also  
- <xref:System.ComponentModel.INotifyPropertyChanged>  
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
- [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../../../../docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)
+## See also
+- <xref:System.ComponentModel.INotifyPropertyChanged>
+- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../../../../docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)

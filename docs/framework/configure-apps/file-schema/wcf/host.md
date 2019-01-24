@@ -15,11 +15,12 @@ Specifies settings for a service host.
   
 ```xml  
 <host>
-    <baseAddresses>  
-        <add baseAddress="string" />  
-    </baseAddresses>  
-    <timeOuts closeTimeout="TimeSpan" openTimeout="TimeSpan">  
-</host>  
+  <baseAddresses>
+    <add baseAddress="string" />
+  </baseAddresses>
+  <timeOuts closeTimeout="TimeSpan"
+            openTimeout="TimeSpan" />
+</host>
 ```  
   
 ## Type  
@@ -44,7 +45,7 @@ Specifies settings for a service host.
 |-------------|-----------------|  
 |[\<service>](../../../../../docs/framework/configure-apps/file-schema/wcf/service.md)|Specifies the settings for a Windows Communication Foundation (WCF) service.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.HostElement>  
- <xref:System.ServiceModel.ServiceHost>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.Configuration.HostElement>
+- <xref:System.ServiceModel.ServiceHost>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

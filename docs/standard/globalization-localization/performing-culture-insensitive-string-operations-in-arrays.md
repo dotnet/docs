@@ -17,7 +17,7 @@ Overloads of the <xref:System.Array.Sort%2A?displayProperty=nameWithType> and <x
   
 ## See also
 
-- <xref:System.Array.Sort%2A?displayProperty=nameWithType>  
-- <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType>  
-- <xref:System.Collections.IComparer>  
+- <xref:System.Array.Sort%2A?displayProperty=nameWithType>
+- <xref:System.Array.BinarySearch%2A?displayProperty=nameWithType>
+- <xref:System.Collections.IComparer>
 - [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

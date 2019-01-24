@@ -74,4 +74,4 @@ For an example of how to create a custom binding that supports reliable sessions
 
 ## See also
 
-[Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)

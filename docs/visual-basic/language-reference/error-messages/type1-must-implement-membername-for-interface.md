@@ -29,6 +29,6 @@ ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
   
 4.  When implementing a property, declare `Get` and `Set` procedures, as appropriate.  
   
-## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## See also
+- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
+- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

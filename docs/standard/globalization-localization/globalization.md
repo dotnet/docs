@@ -365,5 +365,5 @@ Globalization involves designing and developing a world-ready app that supports 
   
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
 - [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)

@@ -3,7 +3,7 @@ title: NuGet and .NET libraries
 description: Best practice recommendations for packaging with NuGet for .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 01/15/2019
 ---
 # NuGet
 
@@ -92,6 +92,8 @@ NuGet.org hosts its own [symbols server repository](/nuget/create-packages/symbo
 
 > [!IMPORTANT]
 > The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
+>
+> To use the NuGet.org symbol server when debugging a .NET library, developers must have Visual Studio 2017 15.9 or later.
 
 An alternative to creating a symbol package is embedding symbol files in the main NuGet package. The main NuGet package will be larger, but the embedded symbol files means developers don't need to configure the NuGet.org symbol server. If you're building your NuGet package using an SDK-style project, then you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property:
 
@@ -104,11 +106,14 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 </Project>
 ```
 
-**✔️ CONSIDER** embedding symbol files in the main NuGet package.
+The downside of embedding symbol files is that they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
-> Embedding symbol files in the main NuGet package gives developers a better debugging experience by default. They don't need to find and configure the NuGet symbol server in their IDE to get symbol files.
+**✔️ CONSIDER** publishing symbols as a symbol package (`*.snupkg`) to NuGet.org
+
+> Symbol packages (`*.snupkg`) provide developers a good on-demand debugging experience without bloating the main package size and impacting restore performance for those who don't intend to debug the NuGet package.
 >
-> The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
+> The caveat is that they would need to find and configure the NuGet symbol server in their IDE (as a one-time setup) to get symbol files. Visual Studio 2019 plans to provide the NuGet.org symbol server as one of the options out of the box. 
+
 
 >[!div class="step-by-step"]
 >[Previous](strong-naming.md)

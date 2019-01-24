@@ -476,10 +476,10 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  Dialog boxes are windows that are often used to gather information from a user to complete a function. For example, when a user wants to open a file, the **Open File** dialog box is usually displayed by an application to get the file name from the user. For more information, see [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md).  
   
-## See Also  
- <xref:System.Windows.Window>  
- <xref:System.Windows.MessageBox>  
- <xref:System.Windows.Navigation.NavigationWindow>  
- <xref:System.Windows.Application>  
- [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md)  
- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)
+## See also
+- <xref:System.Windows.Window>
+- <xref:System.Windows.MessageBox>
+- <xref:System.Windows.Navigation.NavigationWindow>
+- <xref:System.Windows.Application>
+- [Dialog Boxes Overview](../../../../docs/framework/wpf/app-development/dialog-boxes-overview.md)
+- [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)

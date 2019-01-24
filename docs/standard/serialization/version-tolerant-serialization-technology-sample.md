@@ -41,5 +41,5 @@ ms.assetid: 2a183664-bfbf-4ff0-96f6-c836284ea916
   
 ## See also
 
-- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>  
+- <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>
 - <xref:System.IO.FileStream>

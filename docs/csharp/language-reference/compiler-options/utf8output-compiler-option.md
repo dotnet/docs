@@ -23,6 +23,6 @@ The **-utf8output** option displays compiler output using UTF-8 encoding.
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  
   
-## See Also  
+## See also
 
 - [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

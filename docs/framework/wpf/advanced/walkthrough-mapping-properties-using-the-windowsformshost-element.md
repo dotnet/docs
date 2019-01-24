@@ -147,7 +147,7 @@ Set up your property mappings by calling the previously described methods in the
 
 2.  Press **F5** to build and run the application. Click the check box to see the effect of the <xref:System.Windows.FrameworkElement.FlowDirection%2A> mapping. When you click the check box, the layout reverses its left-right orientation.
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A?displayProperty=nameWithType>

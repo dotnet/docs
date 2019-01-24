@@ -70,6 +70,6 @@ In a query, you specify the information that you want to retrieve from the data 
   
  A number of paging methods are not supported, due either to the inability to map functions to the data source or to the lack of implicit ordering of sets on the data source. Methods that return a default value are restricted to conceptual model primitive types and reference types with null defaults. Paging methods that are executed on an empty sequence will return null.  
   
-## See Also  
- [Supported and Unsupported LINQ Methods (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)  
- [Standard Query Operators Overview](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)
+## See also
+- [Supported and Unsupported LINQ Methods (LINQ to Entities)](../../../../../../docs/framework/data/adonet/ef/language-reference/supported-and-unsupported-linq-methods-linq-to-entities.md)
+- [Standard Query Operators Overview](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)

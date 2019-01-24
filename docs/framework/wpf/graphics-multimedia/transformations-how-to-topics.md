@@ -24,8 +24,8 @@ The topics in this section describe how to apply different transformations to ob
  [Translate an Element](../../../../docs/framework/wpf/graphics-multimedia/how-to-translate-an-element.md)  
  [Use a MatrixTransform to Create Custom Transforms](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-matrixtransform-to-create-custom-transforms.md)  
   
-## See Also  
- <xref:System.Windows.Media.Transform>  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+## See also
+- <xref:System.Windows.Media.Transform>
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [Layout](../../../../docs/framework/wpf/advanced/layout.md)

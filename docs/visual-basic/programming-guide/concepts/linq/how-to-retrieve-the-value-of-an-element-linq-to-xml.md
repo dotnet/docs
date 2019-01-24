@@ -143,5 +143,5 @@ v4:element does not exist
   
  In general, you can write simpler code when using casting to retrieve the contents of elements and attributes.  
   
-## See Also  
- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See also
+- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)

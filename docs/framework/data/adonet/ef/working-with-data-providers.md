@@ -13,6 +13,6 @@ The topics in this section describe the services and providers that transform qu
   
  [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)  
   
-## See Also  
- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)  
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
+## See also
+- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)

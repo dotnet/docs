@@ -31,6 +31,6 @@ This topic explains how to import metadata into a collection of service endpoint
   
      [!code-csharp[UE_ImportMetadata#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#4)]  
   
-## See Also  
- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)  
- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)
+## See also
+- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
+- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)

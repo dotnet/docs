@@ -192,5 +192,5 @@ serviceHost.Open()
   
  If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. For more information about default endpoints, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-## See Also  
- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)
+## See also
+- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)

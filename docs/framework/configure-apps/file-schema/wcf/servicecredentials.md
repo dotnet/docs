@@ -15,22 +15,22 @@ Specifies the credential to be used in authenticating the service and the client
 ## Syntax  
   
 ```xml  
-<serviceCredentials type="String">  
-   <clientCertificate>  
-   </clientCertificate>  
-   <issuedTokenAuthentication>  
-   </issuedTokenAuthentication>  
-   <peer>  
-   </peer>  
-   <secureConversationAuthentication>  
-   </secureConversationAuthentication>  
-   <serviceCertificate>  
-   </serviceCertificate>  
-   <userNameAuthentication>  
-   </userNameAuthentication>  
-   <windowsAuthentication>  
-   </windowsAuthentication>  
-</serviceCredentials>  
+<serviceCredentials type="String">
+  <clientCertificate>
+  </clientCertificate>
+  <issuedTokenAuthentication>
+  </issuedTokenAuthentication>
+  <peer>
+  </peer>
+  <secureConversationAuthentication>
+  </secureConversationAuthentication>
+  <serviceCertificate>
+  </serviceCertificate>
+  <userNameAuthentication>
+  </userNameAuthentication>
+  <windowsAuthentication>
+  </windowsAuthentication>
+</serviceCredentials>
 ```  
   
 ## Attributes and Elements  
@@ -60,7 +60,7 @@ Specifies the credential to be used in authenticating the service and the client
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)

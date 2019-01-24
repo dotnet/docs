@@ -17,7 +17,7 @@ LINQ to XML is the new model in the .NET Framework version 3.5 for processing XM
   
 ## See also
 
-- <xref:System.Xml.Linq>  
-- <xref:System.Linq>  
-- [LINQ to XML vs. DOM](https://msdn.microsoft.com/library/19b5ed02-feb2-455a-8897-f7f0fd76aca3)  
+- <xref:System.Xml.Linq>
+- <xref:System.Linq>
+- [LINQ to XML vs. DOM](https://msdn.microsoft.com/library/19b5ed02-feb2-455a-8897-f7f0fd76aca3)
 - [LINQ to XML vs. Other XML Technologies](https://msdn.microsoft.com/library/7ba1eecf-f09a-42de-bc80-22ca5b2e42d3)

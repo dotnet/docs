@@ -76,6 +76,6 @@ When you convert a .NET Framework stream to a Windows Runtime stream, the capabi
 
 ## See also
 
-- [Quickstart: Reading and writing a file (Windows)](https://msdn.microsoft.com/library/windows/apps/hh464978.aspx)  
-- [.NET for Windows Store apps overview](https://msdn.microsoft.com/library/windows/apps/br230302.aspx)  
-- [.NET for Windows Store apps – supported APIs](https://msdn.microsoft.com/library/windows/apps/br230232.aspx)  
+- [Quickstart: Reading and writing a file (Windows)](https://msdn.microsoft.com/library/windows/apps/hh464978.aspx)
+- [.NET for Windows Store apps overview](https://msdn.microsoft.com/library/windows/apps/br230302.aspx)
+- [.NET for Windows Store apps – supported APIs](https://msdn.microsoft.com/library/windows/apps/br230232.aspx)

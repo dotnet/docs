@@ -72,5 +72,5 @@ XML document structure
   
 ## See also
 
-- [Types of XML Nodes](../../../../docs/standard/data/xml/types-of-xml-nodes.md)  
+- [Types of XML Nodes](../../../../docs/standard/data/xml/types-of-xml-nodes.md)
 - [Mapping the Object Hierarchy to XML Data](../../../../docs/standard/data/xml/mapping-the-object-hierarchy-to-xml-data.md)

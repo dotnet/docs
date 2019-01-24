@@ -38,7 +38,7 @@ When network tracing is enabled, you can use tracing to capture calls your appli
   
  `Connection: Close`  
   
-## See Also  
- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)  
- [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md)  
- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)
+## See also
+- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)
+- [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md)
+- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)

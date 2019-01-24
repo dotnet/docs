@@ -47,6 +47,6 @@ If you frequently access an object that requires a qualification path of several
     End With  
     ```  
   
-## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+## See also
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)

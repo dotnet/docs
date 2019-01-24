@@ -40,14 +40,14 @@ Namespaces have the following properties:
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
-## See Also
+## See also
 
 - [Using Namespaces](using-namespaces.md)
 - [How to: Use the Global Namespace Alias](how-to-use-the-global-namespace-alias.md)
 - [How to: Use the My Namespace](how-to-use-the-my-namespace.md)
-- [C# Programming Guide](../index.md)  
+- [C# Programming Guide](../index.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
-- [Namespace Keywords](../../language-reference/keywords/namespace-keywords.md)  
-- [using Directive](../../language-reference/keywords/using-directive.md)  
-- [:: Operator](../../language-reference/operators/namespace-alias-qualifer.md)  
+- [Namespace Keywords](../../language-reference/keywords/namespace-keywords.md)
+- [using Directive](../../language-reference/keywords/using-directive.md)
+- [:: Operator](../../language-reference/operators/namespace-alias-qualifer.md)
 - [. Operator](../../language-reference/operators/member-access-operator.md)

@@ -77,5 +77,5 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
      [!code-csharp[c_CreateSecureSession#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs/secureservice.cs#2)]
      [!code-vb[c_CreateSecureSession#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#2)]  
   
-## See Also  
- [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md)
+## See also
+- [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md)

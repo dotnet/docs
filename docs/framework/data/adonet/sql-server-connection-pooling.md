@@ -123,8 +123,8 @@ using (SqlConnection connection = new SqlConnection(
 ### Application Role Alternatives  
  We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
   
-## See Also  
- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)  
- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)  
- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)
+- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
+- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

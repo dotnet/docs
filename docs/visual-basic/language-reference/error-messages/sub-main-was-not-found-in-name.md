@@ -20,6 +20,6 @@ ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
   
 2.  Specify the location of the project's startup object in the **Startup form** box of the **Project Designer**.  
   
-## See Also  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
+## See also
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)

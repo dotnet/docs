@@ -23,7 +23,7 @@ You can associate balloon tips, shortcut menus, and ToolTips with a <xref:System
 
 You can display balloon tips for a <xref:System.Windows.Forms.NotifyIcon> by calling the <xref:System.Windows.Forms.NotifyIcon.ShowBalloonTip%2A> method specifying the time span you wish the balloon tip to display. You can also specify the text, icon and title of the balloon tip with the <xref:System.Windows.Forms.NotifyIcon.BalloonTipText%2A>, <xref:System.Windows.Forms.NotifyIcon.BalloonTipIcon%2A> and <xref:System.Windows.Forms.NotifyIcon.BalloonTipTitle%2A>, respectively. <xref:System.Windows.Forms.NotifyIcon> components can also have associated ToolTips and shortcut menus. For more information, see [ToolTip Component Overview](../../../../docs/framework/winforms/controls/tooltip-component-overview-windows-forms.md) and [ContextMenu Component Overview](../../../../docs/framework/winforms/controls/contextmenu-component-overview-windows-forms.md).
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.NotifyIcon>
 - [NotifyIcon Component](../../../../docs/framework/winforms/controls/notifyicon-component-windows-forms.md)

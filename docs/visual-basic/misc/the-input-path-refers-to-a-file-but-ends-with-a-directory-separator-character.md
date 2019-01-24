@@ -12,7 +12,7 @@ An operation was attempted requiring that a filename be supplied, but the suppli
   
 -   Remove the extraneous character.  
   
-## See Also  
- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+## See also
+- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [Reading from Files](../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Writing to Files](../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)

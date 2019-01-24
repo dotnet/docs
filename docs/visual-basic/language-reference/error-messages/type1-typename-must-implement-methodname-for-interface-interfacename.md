@@ -23,6 +23,6 @@ A class or structure claims to implement an interface but does not implement a p
     Public Sub DoSomething() Implements IBaseInterface.DoSomething  
     ```  
   
-## See Also  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## See also
+- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
+- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

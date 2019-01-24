@@ -32,11 +32,11 @@ You can use the <xref:System.Windows.Forms.WebBrowser> control to display and pr
   
 -   References to the `System` and `System.Windows.Forms` assemblies.  
   
-## See Also  
- <xref:System.Windows.Forms.WebBrowser>  
- <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A>  
- <xref:System.Windows.Forms.WebBrowser.Url%2A>  
- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)  
- [WebBrowser Security](../../../../docs/framework/winforms/controls/webbrowser-security.md)  
- [How to: Navigate to a URL with the WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-navigate-to-a-url-with-the-webbrowser-control.md)  
- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)
+## See also
+- <xref:System.Windows.Forms.WebBrowser>
+- <xref:System.Windows.Forms.WebBrowser.AllowWebBrowserDrop%2A>
+- <xref:System.Windows.Forms.WebBrowser.Url%2A>
+- [WebBrowser Control Overview](../../../../docs/framework/winforms/controls/webbrowser-control-overview.md)
+- [WebBrowser Security](../../../../docs/framework/winforms/controls/webbrowser-security.md)
+- [How to: Navigate to a URL with the WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-navigate-to-a-url-with-the-webbrowser-control.md)
+- [How to: Print with a WebBrowser Control](../../../../docs/framework/winforms/controls/how-to-print-with-a-webbrowser-control.md)

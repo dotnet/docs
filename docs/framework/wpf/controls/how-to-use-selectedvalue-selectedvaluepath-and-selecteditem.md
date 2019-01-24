@@ -31,8 +31,8 @@ This example shows how to use the <xref:System.Windows.Controls.TreeView.Selecte
   
  [!code-xaml[TreeViewSelectedValue#SelectedValuePath](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSelectedValue/CS/Window1.xaml#selectedvaluepath)]  
   
-## See Also  
- <xref:System.Windows.Controls.TreeView>  
- <xref:System.Windows.Controls.TreeViewItem>  
- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.TreeView>
+- <xref:System.Windows.Controls.TreeViewItem>
+- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)

@@ -63,6 +63,6 @@ Workflow tracing offers a way to capture diagnostic information using .NET Frame
 </configuration>  
 ```  
   
-## See Also  
- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)  
- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)
+## See also
+- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
+- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)

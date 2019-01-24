@@ -102,6 +102,8 @@ Classification tasks are frequently one of the following types:
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
 
+For this particular Github issues classification, you clearly need to use a Multiclass classification task, since the possible issue categories to choose from are multiple categories rather than just two (binary).
+
 ## Create a console application
 
 ### Create a project

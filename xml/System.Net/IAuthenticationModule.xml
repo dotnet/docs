@@ -84,7 +84,7 @@
         <param name="challenge">The authentication challenge sent by the server.</param>
         <param name="request">The <see cref="T:System.Net.WebRequest" /> instance associated with the challenge.</param>
         <param name="credentials">The credentials associated with the challenge.</param>
-        <summary>Returns an instance of the <see cref="T:System.Net.Authorization" /> class in respose to an authentication challenge from a server.</summary>
+        <summary>Returns an instance of the <see cref="T:System.Net.Authorization" /> class in response to an authentication challenge from a server.</summary>
         <returns>An <see cref="T:System.Net.Authorization" /> instance containing the authorization message for the request, or <see langword="null" /> if the challenge cannot be handled.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -35,7 +35,7 @@ A complete listing of the code for this task is provided in the code example fol
 
     2. From the **View** menu, select **Solution Explorer**.
     
-    3. In the **Solution Explorer** window, right-click the **GettingStarted** solution (top node) and select **Add** > **New Project**. 
+    3. In the **Solution Explorer** window, select the **GettingStarted** solution (top node), and then select **Add** > **New Project** from the shortcut menu. 
 
     4. In the **Add New Project** window, on the left side, select the **Windows Desktop** category under **Visual C#** or **Visual Basic**. 
 
@@ -43,15 +43,15 @@ A complete listing of the code for this task is provided in the code example fol
 
 2. Add a reference in the **GettingStartedHost** project to the **GettingStartedLib** project. 
 
-    1. In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedHost** project, and then select **Add Reference**. 
+    1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedHost** project, and then select **Add Reference** from the shortcut menu. 
 
     2. In the **Add Reference** dialog, under **Projects** on the left side of the window, select **Solution**. 
  
-    3. Select **GettingStartedLib** in the center section of the window, and then choose **OK**. This action makes the types defined in the GettingStartedLib project available to the GettingStartedHost project.
+    3. Select **GettingStartedLib** in the center section of the window, and then choose **OK**. This action makes the types defined in the **GettingStartedLib** project available to the **GettingStartedHost** project.
 
 3. Add a reference in the **GettingStartedHost** project to the <xref:System.ServiceModel> assembly. 
 
-    1. In the **Solution Explorer** window, right-click the **References** folder under the **GettingStartedHost** project, and then select **Add Reference**.
+    1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedHost** project, and then select **Add Reference** from the shortcut menu.
     
     2. In the **Add Reference** window, under **Assemblies** on the left side of the window, select **Framework**. 
 
@@ -61,7 +61,7 @@ A complete listing of the code for this task is provided in the code example fol
 
 ## Host the service
 
-1. Open the *Program.cs* (or *Module1.vb*) file in the GettingStartedHost project and replace its code with the following code:
+1. Open the *Program.cs* (or *Module1.vb*) file in the **GettingStartedHost** project and replace its code with the following code:
 
     ```csharp
     using System;
@@ -158,7 +158,7 @@ A complete listing of the code for this task is provided in the code example fol
     End Module
     ```
 
-2. Edit *App.config* in GettingStartedLib:
+2. Edit *App.config* in **GettingStartedLib**:
 - For Visual C# projects, edit *App.config* to reflect the changes you made to *Program.cs*:
     - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
     - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
@@ -171,7 +171,7 @@ A complete listing of the code for this task is provided in the code example fol
 
 3. For Visual Basic projects, make the following change:
 
-   1. In the **Solution Explorer** window, right-click the **GettingStartedHost** folder, then select **Properties**.
+   1. In the **Solution Explorer** window, select the **GettingStartedHost** folder, and then select **Properties** from the shortcut menu.
 
    2. In the **GettingStartedHost** window, for **Startup object**, select **Service.Program** from the list. 
 
@@ -196,248 +196,17 @@ The steps in the code example are described as follows:
 
 ## Verify the service is working
 
-1. Build the solution, and then run the GettingStartedHost console application from inside Visual Studio. As an alternative, you can open a new command prompt by using **Run as administrator** and run *GettingStartedHost.exe* within it.
+1. Build the solution, and then run the **GettingStartedHost** console application from inside Visual Studio. As an alternative, you can open a new command prompt by using **Run as administrator** and run *GettingStartedHost.exe* within it. 
+2. 
+3. 
+4. To compile this code with a command-line compiler, compile *IService1.cs* and *Service1.cs* (or *IService1.vb and Service1.vb*) into a class library that references `System.ServiceModel.dll`. Compile *Program.cs* (or *Module1.vb*) as a console application.
+
 
 2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
 
 > [!NOTE]
 > Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). If you're running the service under Visual Studio, you must run *GettingStartedHost.exe* with administrator privileges.
 
-
-## Example
-
-The following example includes the service contract and implementation from previous steps in the tutorial and hosts the service in a console application.
-
-To compile this code with a command-line compiler, compile *IService1.cs* and *Service1.cs* (or *IService1.vb and Service1.vb*) into a class library that references `System.ServiceModel.dll`. Compile *Program.cs* (or *Module1.vb*) as a console application.
-
-```csharp
-// IService1.cs
-using System;
-using System.ServiceModel;
-
-namespace GettingStartedLib
-{
-        [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
-        public interface ICalculator
-        {
-            [OperationContract]
-            double Add(double n1, double n2);
-            [OperationContract]
-            double Subtract(double n1, double n2);
-            [OperationContract]
-            double Multiply(double n1, double n2);
-            [OperationContract]
-            double Divide(double n1, double n2);
-        }
-}
-```
-
-```csharp
-// Service1.cs
-using System;
-using System.ServiceModel;
-
-namespace GettingStartedLib
-{
-    public class CalculatorService : ICalculator
-    {
-        public double Add(double n1, double n2)
-        {
-            double result = n1 + n2;
-            Console.WriteLine("Received Add({0},{1})", n1, n2);
-            // Code added to write output to the console window.
-            Console.WriteLine("Return: {0}", result);
-            return result;
-        }
-
-        public double Subtract(double n1, double n2)
-        {
-            double result = n1 - n2;
-            Console.WriteLine("Received Subtract({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
-            return result;
-        }
-
-        public double Multiply(double n1, double n2)
-        {
-            double result = n1 * n2;
-            Console.WriteLine("Received Multiply({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
-            return result;
-        }
-
-        public double Divide(double n1, double n2)
-        {
-            double result = n1 / n2;
-            Console.WriteLine("Received Divide({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
-            return result;
-        }
-    }
-}
-```
-
-```csharp
-// Program.cs
-using System;
-using System.ServiceModel;
-using System.ServiceModel.Description;
-using GettingStartedLib;
-
-namespace GettingStartedHost
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Step 1: Create a URI to serve as the base address.
-            Uri baseAddress = new Uri("http://localhost:8000/GettingStarted/");
-
-            // Step 2: Create ServiceHost instance.
-            ServiceHost selfHost = new ServiceHost(typeof(CalculatorService), baseAddress);
-
-            try
-            {
-                // Step 3: Add a service endpoint.
-                selfHost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(), "CalculatorService");
-
-                // Step 4: Enable metadata exchange.
-                ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
-                smb.HttpGetEnabled = true;
-                selfHost.Description.Behaviors.Add(smb);
-
-                // Step 5: Start (and then stop) the service.
-                selfHost.Open();
-                Console.WriteLine("The service is ready.");
-                Console.WriteLine("Press <ENTER> to terminate service.");
-                Console.WriteLine();
-                Console.ReadLine();
-
-                // Close the ServiceHostBase to stop the service.
-                selfHost.Close();
-            }
-            catch (CommunicationException ce)
-            {
-                Console.WriteLine("An exception occurred: {0}", ce.Message);
-                selfHost.Abort();
-            }
-        }
-    }
-}
-```
-
-```vb
-' IService1.vb
-Imports System.ServiceModel
-
-Namespace GettingStartedLib
-
-    <ServiceContract(Namespace:="http://Microsoft.ServiceModel.Samples")> _
-    Public Interface ICalculator
-
-        <OperationContract()> _
-        Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double
-        <OperationContract()> _
-        Function Subtract(ByVal n1 As Double, ByVal n2 As Double) As Double
-        <OperationContract()> _
-        Function Multiply(ByVal n1 As Double, ByVal n2 As Double) As Double
-        <OperationContract()> _
-        Function Divide(ByVal n1 As Double, ByVal n2 As Double) As Double
-    End Interface
-End Namespace
-```
-
-```vb
-' Service1.vb
-Imports System.ServiceModel
-
-Namespace GettingStartedLib
-
-    Public Class CalculatorService
-        Implements ICalculator
-
-        Public Function Add(ByVal n1 As Double, ByVal n2 As Double) As Double Implements ICalculator.Add
-            Dim result As Double = n1 + n2
-            ' Code added to write output to the console window.
-            Console.WriteLine("Received Add({0},{1})", n1, n2)
-            Console.WriteLine("Return: {0}", result)
-            Return result
-        End Function
-
-        Public Function Subtract(ByVal n1 As Double, ByVal n2 As Double) As Double Implements ICalculator.Subtract
-            Dim result As Double = n1 - n2
-            Console.WriteLine("Received Subtract({0},{1})", n1, n2)
-            Console.WriteLine("Return: {0}", result)
-            Return result
-
-        End Function
-
-        Public Function Multiply(ByVal n1 As Double, ByVal n2 As Double) As Double Implements ICalculator.Multiply
-            Dim result As Double = n1 * n2
-            Console.WriteLine("Received Multiply({0},{1})", n1, n2)
-            Console.WriteLine("Return: {0}", result)
-            Return result
-
-        End Function
-
-        Public Function Divide(ByVal n1 As Double, ByVal n2 As Double) As Double Implements ICalculator.Divide
-            Dim result As Double = n1 / n2
-            Console.WriteLine("Received Divide({0},{1})", n1, n2)
-            Console.WriteLine("Return: {0}", result)
-            Return result
-
-        End Function
-    End Class
-End Namespace
-```
-
-```vb
-' Module1.vb
-Imports System.ServiceModel
-Imports System.ServiceModel.Description
-Imports GettingStartedLib.GettingStartedLib
-
-Module Service
-
-    Class Program
-        Shared Sub Main()
-            ' Step 1: Create a URI to serve as the base address.
-            Dim baseAddress As New Uri("http://localhost:8000/GettingStarted/")
-
-            ' Step 2: Create a ServiceHost instance.
-            Dim selfHost As New ServiceHost(GetType(CalculatorService), baseAddress)
-            Try
-
-                ' Step 3: Add a service endpoint.
-                selfHost.AddServiceEndpoint( _
-                    GetType(ICalculator), _
-                    New WSHttpBinding(), _
-                    "CalculatorService")
-
-                ' Step 4: Enable metadata exchange.
-                Dim smb As New ServiceMetadataBehavior()
-                smb.HttpGetEnabled = True
-                selfHost.Description.Behaviors.Add(smb)
-
-                ' Step 5: Start (and then stop) the service.
-                selfHost.Open()
-                Console.WriteLine("The service is ready.")
-                Console.WriteLine("Press <ENTER> to terminate service.")
-                Console.WriteLine()
-                Console.ReadLine()
-
-                ' Close the ServiceHostBase to stop the service.
-                selfHost.Close()
-
-            Catch ce As CommunicationException
-                Console.WriteLine("An exception occurred: {0}", ce.Message)
-                selfHost.Abort()
-            End Try
-        End Sub
-    End Class
-
-End Module
-```
 
 ## Next steps
 

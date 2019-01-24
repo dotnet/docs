@@ -36,9 +36,9 @@ The first three tutorials describe how to define a WCF service contract, how to 
 
 - [Tutorial: Host and run a basic service](how-to-host-and-run-a-basic-wcf-service.md)
 
-    Configure an endpoint for the service and how host the service in a console application. For a service to become active, you must configure it and host it within a run-time environment. This environment creates the service and controls its context and lifetime.
+    Configure an endpoint for the service and how to host the service in a console application. For a service to become active, you must configure it and host it within a run-time environment. This environment creates the service and controls its context and lifetime.
 
-The next two tutorials describe how to create, configure, and use a client application to call the operations the service exposes. Services publish metadata that define the information a client application needs to communicate with the service. Visual Studio automates the process of accessing this metadata and uses it to construct and configure the client application for the service. If decide not to use Visual Studio, you can instead use the [ServiceModel Metadata Utility tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to construct and configure the client application for the service.
+The next two tutorials describe how to create, configure, and use a client application to call the operations the service exposes. Services publish metadata that define the information a client application needs to communicate with the service. Visual Studio automates the process of accessing this metadata and uses it to construct and configure the client application for the service. If you decide not to use Visual Studio, you can use the [ServiceModel Metadata Utility tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) instead to construct and configure the client application for the service.
 
 - [Tutorial: Create a client](how-to-create-a-wcf-client.md)
 

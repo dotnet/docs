@@ -21,7 +21,7 @@ When you create a WCF service, your first task is to define a service contract. 
 
 ## Define a service contract 
 
-1. Open Visual Studio as an administrator. To do so, right-click the Visual Studio program in the **Start** menu and select **More** > **Run as administrator**.
+1. Open Visual Studio as an administrator. To do so, select the Visual Studio program in the **Start** menu, and then select **More** > **Run as administrator** from the shortcut menu.
 
 2. Create a WCF Service Library project.
 

@@ -20,7 +20,7 @@ Once you've created and configured a Windows Communication Foundation (WCF) prox
 
 ## Use a Windows Communication Foundation client
 
-Open the *Program.cs* (or *Module1.vb*) file from the GettingStartedClient project and replace the existing code with the following code:
+Open the *Program.cs* (or *Module1.vb*) file from the **GettingStartedClient** project and replace the existing code with the following code:
 
 ```csharp
 using System;
@@ -122,9 +122,9 @@ End Module
 
 Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement that imports `GettingStartedClient.ServiceReference1`. This statement imports the code that Visual Studio generated with the **Add Service Reference** function. The code instantiates the WCF proxy and calls each of the service operations that the calculator service exposes. It then closes the proxy and ends the program.
 
-To test the application, first run GettingStartedHost.exe to start the service, and then run GettingStartedClient.exe.
+To test the application, first run *GettingStartedHost.exe* to start the service, and then run *GettingStartedClient.exe*.
 
-GettingStartedHost.exe produces the following output:
+*GettingStartedHost.exe* produces the following output:
 
 ```text
 The service is ready.
@@ -140,7 +140,7 @@ Received Divide(22,7)
 Return: 3.14285714285714
 ```
 
-GettingStartedClient.exe produces the following output:
+*GettingStartedClient.exe* produces the following output:
 
 ```text
 Add(100,15.99) = 115.99

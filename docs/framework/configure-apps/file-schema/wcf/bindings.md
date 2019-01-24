@@ -20,7 +20,8 @@ You can use the `bindings` element to configure a collection of standard and cus
   
  The configuration section for each system-provided binding can define several configurations used to configure the binding. Each configuration is identified by a unique name.  
   
- It is not possible to add elements or attributes to a system-provided binding. To do so, you should implement a custom binding as described in the [Custom Bindings](#custom-bindings)section. It is possible to define a custom binding that mimics a system-provided binding perfectly and adds a few settings the user application wants to have control over.  
+ It isn't possible to add elements or attributes to a system-provided binding. To do so, you should implement a custom binding as described in the [Custom bindings](#custom-bindings) section. It's possible to define a custom binding that
+  mimics a system-provided binding perfectly and adds a few settings the user application wants to have control over.  
   
  For a list of system-provided bindings, see [System-Provided Bindings](../../../../../docs/framework/wcf/system-provided-bindings.md).  
   

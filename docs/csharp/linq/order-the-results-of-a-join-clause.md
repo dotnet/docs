@@ -1,7 +1,7 @@
 ---
 title: Order the results of a join clause (LINQ in C#)
 description: Learn how to order the results of a LINQ join clause in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: a7458901-1201-4c25-b8d9-c04ca52e0eb9
 ---
 # Order the results of a join clause

@@ -154,7 +154,7 @@
   
  If you add a reference to one of the configuration files, the SOAP extension runs for all XML Web services within the scope of that configuration file. When specifying, a SOAP extension by referencing a configuration file, ASP.NET invokes the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> overload that passes in a <xref:System.Type>. When specifying an extension by applying a custom attribute, ASP.NET invokes the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> that passes in a <xref:System.Web.Services.Protocols.LogicalMethodInfo> and a <xref:System.Web.Services.Protocols.SoapExtensionAttribute>.  
   
- For details on adding SOAP extensions to a configuration file, see [&#91;\<topic://cpconconfigurationoptionsforaspnetwebservices>&#93;](https://msdn.microsoft.com/library/1f0d71bc-8faa-4730-b500-2a6c7b5d4f6b).  
+ For details on adding SOAP extensions to a configuration file, see [Configuration Options for XML Web Services Created Using ASP.NET](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b2c0ew36(v=vs.100)).  
   
    
   

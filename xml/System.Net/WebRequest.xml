@@ -742,7 +742,7 @@
  The <xref:System.Net.WebRequest.Create%2A> method uses the `requestUriString` parameter to create a <xref:System.Uri> instance that it passes to the new <xref:System.Net.WebRequest>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](https://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).
   
    
   
@@ -834,7 +834,7 @@
  .NET includes support for the `http://`, `https://`, `ftp://`, and `file://` URI schemes. Custom <xref:System.Net.WebRequest> descendants to handle other requests are registered with the <xref:System.Net.WebRequest.RegisterPrefix%2A> method.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [&#91;\<topic://conUsingNetworkTracing>&#93;](https://msdn.microsoft.com/library/e993b7c3-087f-45d8-9c02-9dded936d804).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   

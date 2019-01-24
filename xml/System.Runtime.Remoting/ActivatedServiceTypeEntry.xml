@@ -33,7 +33,7 @@
   
  To activate a client-activated object type with the `new` keyword, you must first register the object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> method. By calling <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedClientType%2A> you are giving the remoting infrastructure the location of the remote application where `new` attempts to create it. If, on the other hand, you use the <xref:System.Activator.CreateInstance%2A> method to create a new instance of the client-activated object, you must supply the remote application's URL as a parameter, so no prior registration on the client is necessary. To supply the <xref:System.Activator.CreateInstance%2A> method with the URL of the server on which you want to create the object, you must encapsulate the URL in an instance of the <xref:System.Runtime.Remoting.Activation.UrlAttribute> class.  
   
- For a detailed description of client-activated objects and remote object activation, see [&#91;\<topic://cpconActivation>&#93;](https://msdn.microsoft.com/library/e90d0c64-00da-4080-ae78-a6c558825c25).  
+ For a detailed description of client-activated objects and remote object activation, see [Activation of Remote Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cbzcxy2s(v=vs.100)).  
   
    
   

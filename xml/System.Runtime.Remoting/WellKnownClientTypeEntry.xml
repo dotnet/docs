@@ -31,7 +31,7 @@
   
  Any client that knows the URI of a registered server-activated object can obtain a proxy for this object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices> and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=nameWithType>. To activate a server-activated object with `new`, you must first register the server-activated object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. By calling <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A>, you are giving the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=nameWithType> method to activate a server-activated object, you must supply it with the object's URL as an argument, so no prior registration on the client is necessary.  
   
- For a detailed description of server-activated objects and remote object activation, see [&#91;\<topic://cpconActivation>&#93;](https://msdn.microsoft.com/library/e90d0c64-00da-4080-ae78-a6c558825c25).  
+ For a detailed description of server-activated objects and remote object activation, see [Activation of Remote Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cbzcxy2s(v=vs.100)).  
   
    
   

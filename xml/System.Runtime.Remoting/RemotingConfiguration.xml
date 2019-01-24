@@ -260,7 +260,7 @@
 ## Remarks  
  Complete exception information includes the exact server exception and the server stack trace. Filtered information includes a standard remoting exception but no server stack trace.  
   
- The `CustomErrorsEnabled` method reflects configuration settings that were specified in the `mode` attribute of the `<customErrors>` element of the application configuration file. For more information about configuration options, see [&#91;\<topic://cpconconfiguration>&#93;](https://msdn.microsoft.com/library/92c0c097-d984-4315-835b-7490ecdf1097).  
+ The `CustomErrorsEnabled` method reflects configuration settings that were specified in the `mode` attribute of the `<customErrors>` element of the application configuration file. For more information about configuration options, see [Configuration of Remote Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b8tysty8(v=vs.100)).  
   
  The following table shows the three server channel property values that specify which callers receive exception information and what type of information they receive.  
   

@@ -684,8 +684,8 @@
   
  If you only need the names of the subdirectories, use the static <xref:System.IO.Directory> class for better performance. For an example, see the <xref:System.IO.Directory.EnumerateDirectories%28System.String%29> method.  
   
- [!code-csharp[System.IO.DirectoryInfo.EnumDirs#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumdirs/cs/program.cs#1)]
- [!code-vb[System.IO.DirectoryInfo.EnumDirs#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumdirs/vb/module1.vb#1)]  
+ [!code-csharp[System.IO.DirectoryInfo.EnumDirs#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.io.directoryinfo.enumdirs/cs/program.cs)]
+ [!code-vb[System.IO.DirectoryInfo.EnumDirs#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.directoryinfo.enumdirs/vb/module1.vb)]  
   
  ]]></format>
         </remarks>

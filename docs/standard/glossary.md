@@ -3,7 +3,7 @@ title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
 author: tdykstra
 ms.author: tdykstra
-ms.date: 07/08/2017
+ms.date: 01/22/2019
 ms.technology: dotnet-standard
 ---
 # .NET Glossary
@@ -15,6 +15,8 @@ The primary goal of this glossary is to clarify meanings of selected terms and a
 Ahead-of-time compiler.
 
 Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code. In contrast to JIT compilation, AOT compilation happens before the application is executed and is usually performed on a different machine. Because AOT tool chains don't compile at runtime, they don't have to minimize time spent compiling. That means they can spend more time optimizing. Since the context of AOT is the entire application, the AOT compiler also performs cross-module linking and whole-program analysis, which means that all references are followed and a single executable is produced.
+
+See [CoreRT](#corert) and [.NET Native](#net-native).
 
 ## ASP.NET 
 

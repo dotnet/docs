@@ -1,7 +1,7 @@
 ---
 title: Group query results (LINQ in C#)
 description: Learn how to group results using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 2e4ec27f-06fb-4de7-8973-0189906d4520
 ---
 # Group query results

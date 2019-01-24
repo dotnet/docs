@@ -1,7 +1,7 @@
 ---
 title: Perform left outer joins (LINQ in C#)
 description: Learn how to perform left outer joins using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: f542cee6-3169-4dcf-a631-3a6a79ccd473
 ---
 # Perform left outer joins

@@ -81,7 +81,7 @@ While you might visualize a Visual Studio project as a series of procedures that
  [!code-vb[VbVbalrEvents#38](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/events_7.vb)]  
   
 ## Handling Events Inherited from a Base Class  
- *Derived classes*—classes that inherit characteristics from a base class—can handle events raised by their base class using the `Handles``MyBase` statement.  
+ *Derived classes*—classes that inherit characteristics from a base class—can handle events raised by their base class using the `Handles MyBase` statement.  
   
 #### To handle events from a base class  
   

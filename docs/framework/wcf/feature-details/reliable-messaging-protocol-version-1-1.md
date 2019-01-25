@@ -392,7 +392,7 @@ Example TerminateSequenceResponse message:
 ## Flow Control WS-ReliableMessaging Extension  
  WCF uses WS-ReliableMessaging extensibility to provide optional additional tighter control over sequence message flow.  
   
- Flow control is enabled by setting the `ReliableSessionBindingElement`’s `FlowControlEnabled``boolean` property to `true`. The following is a list of constraints that apply to WCF:  
+ Flow control is enabled by setting the `ReliableSessionBindingElement`’s `FlowControlEnabled boolean` property to `true`. The following is a list of constraints that apply to WCF:  
   
 -   B4001: When Reliable Messaging Flow Control is enabled, WCF generates a `netrm:BufferRemaining` element in the element extensibility of the `SequenceAcknowledgement` header, as shown in the following example.  
   

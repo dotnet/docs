@@ -1,5 +1,5 @@
 ---
-title: "&lt;exception&gt; - C# Programming Guide"
+title: "<exception> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "exception C# XML tag"
 ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
 ---
-# &lt;exception&gt; (C# Programming Guide)
+# \<exception> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

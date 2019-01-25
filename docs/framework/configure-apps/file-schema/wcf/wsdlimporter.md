@@ -1,9 +1,9 @@
 ---
-title: "&lt;wsdlImporter&gt;"
+title: "<wsdlImporter>"
 ms.date: "03/30/2017"
 ms.assetid: 986b2165-8430-4dba-b1b8-00396841bb96
 ---
-# &lt;wsdlImporter&gt;
+# \<wsdlImporter>
 Specifies all the WSDL importers that imports Web Services Description Language (WSDL) 1.1 metadata with WS-Policy attachments.  
   
 \<system.ServiceModel>  

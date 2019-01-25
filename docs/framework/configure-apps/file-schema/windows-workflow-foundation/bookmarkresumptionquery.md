@@ -1,10 +1,10 @@
 ---
-title: "&lt;bookmarkResumptionQuery&gt;"
+title: "<bookmarkResumptionQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 226de75d-d25c-48d5-b069-4b7d80a6852b
 ---
-# &lt;bookmarkResumptionQuery&gt;
+# \<bookmarkResumptionQuery>
 Represents a query that is used to track resumption of a bookmark within a workflow instance. The query is necessary for a tracking participant to subscribe to bookmark resumption records.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

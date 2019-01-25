@@ -1,5 +1,5 @@
 ---
-title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;"
+title: "<filter> Element for <add> for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#filter"
@@ -12,7 +12,7 @@ ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;
+# \<filter> Element for \<add> for \<listeners> for \<source>
 Adds a filter to a listener in the `Listeners` collection for a trace source.  
   
  \<configuration>  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; element of &lt;ws2007FederationHttpBinding&gt;"
+title: "<message> element of <ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 52cd941d-e230-4c82-8b29-333a7d20eca8
 ---
-# &lt;message&gt; element of &lt;ws2007FederationHttpBinding&gt;
+# \<message> element of \<ws2007FederationHttpBinding>
 Defines settings for the message-level security for the [\<ws2007FederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007federationhttpbinding.md) element.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;relativeBindForResources&gt; Element"
+title: "<relativeBindForResources> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "RelativeBindForResources element"
@@ -8,7 +8,7 @@ ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;relativeBindForResources&gt; Element
+# \<relativeBindForResources> Element
 Optimizes the probe for satellite assemblies.  
   
  \<configuration> Element  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;endpointExtensions&gt;"
+title: "<endpointExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: 33396e0a-1fae-4616-b822-923584eebfd1
 ---
-# &lt;endpointExtensions&gt;
+# \<endpointExtensions>
 This section registers a new standard endpoint in the extensions section in a machine or application configuration file. You can add a standard endpoint to this collection by using the `add` keyword, and setting the `type` attribute of the element to the endpoint type, as well as the `name` attribute to the name of the standard endpoint.  
   
  The following example uses the `add` element, as well as the `name` attribute to add a standard endpoint to the `<endpointExtensions>` section of the configuration file.  

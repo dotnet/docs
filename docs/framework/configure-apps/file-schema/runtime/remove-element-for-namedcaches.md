@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for &lt;namedCaches&gt;"
+title: "<remove> Element for <namedCaches>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "remove element for namedCaches"
@@ -8,7 +8,7 @@ ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;remove&gt; Element for &lt;namedCaches&gt;
+# \<remove> Element for \<namedCaches>
 Removes a named cache entry from the `namedCaches` collection for a memory cache.  
   
  \<system.runtime.caching>  

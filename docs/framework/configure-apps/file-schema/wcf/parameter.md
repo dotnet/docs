@@ -1,9 +1,9 @@
 ---
-title: "&lt;parameter&gt;"
+title: "<parameter>"
 ms.date: "03/30/2017"
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
 ---
-# &lt;parameter&gt;
+# \<parameter>
 Specifies the generic parameter when a declared type is a generic type.  
   
  \<system.runtime.serialization>  

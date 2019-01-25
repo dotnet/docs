@@ -1,5 +1,5 @@
 ---
-title: "&lt;gcServer&gt; Element"
+title: "<gcServer> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcServer"
@@ -11,7 +11,7 @@ ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;gcServer&gt; Element
+# \<gcServer> Element
 Specifies whether the common language runtime runs server garbage collection.  
   
  \<configuration>  

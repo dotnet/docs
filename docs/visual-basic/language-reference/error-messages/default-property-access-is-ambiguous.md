@@ -1,5 +1,5 @@
 ---
-title: "Default property access is ambiguous between the inherited interface members &#39;&lt;defaultpropertyname&gt;&#39; of interface &#39;&lt;interfacename1&gt;&#39; and &#39;&lt;defaultpropertyname&gt;&#39; of interface &#39;&lt;interfacename2&gt;&#39;"
+title: "Default property access is ambiguous between the inherited interface members &#39;<defaultpropertyname>&#39; of interface &#39;<interfacename1>&#39; and &#39;<defaultpropertyname>&#39; of interface &#39;<interfacename2>&#39;"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30686"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30686"
 ms.assetid: 784fefec-ef57-48cf-b960-957df419b439
 ---
-# Default property access is ambiguous between the inherited interface members &#39;&lt;defaultpropertyname&gt;&#39; of interface &#39;&lt;interfacename1&gt;&#39; and &#39;&lt;defaultpropertyname&gt;&#39; of interface &#39;&lt;interfacename2&gt;&#39;
+# Default property access is ambiguous between the inherited interface members &#39;\<defaultpropertyname>&#39; of interface &#39;\<interfacename1>&#39; and &#39;\<defaultpropertyname>&#39; of interface &#39;\<interfacename2>&#39;
 An interface inherits from two interfaces, each of which declares a default property with the same name. The compiler cannot resolve an access to this default property without qualification. The following example illustrates this.  
   
 ```  

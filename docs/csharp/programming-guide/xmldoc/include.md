@@ -1,5 +1,5 @@
 ---
-title: "&lt;include&gt; - C# Programming Guide"
+title: "<include> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "include C# XML tag"
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 ---
-# &lt;include&gt; (C# Programming Guide)
+# \<include> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

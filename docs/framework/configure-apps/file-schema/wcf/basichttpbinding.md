@@ -1,11 +1,11 @@
 ---
-title: "&lt;basicHttpBinding&gt;"
+title: "<basicHttpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "basicHttpBinding Element"
 ms.assetid: 85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3
 ---
-# &lt;basicHttpBinding&gt;
+# \<basicHttpBinding>
 Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate with ASMX-based Web services and clients and other services that conform to the WS-I Basic Profile 1.1.  
   
  \<system.ServiceModel>  

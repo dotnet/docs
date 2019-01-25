@@ -1,9 +1,9 @@
 ---
-title: "&lt;byteStreamMessageEncoding&gt;"
+title: "<byteStreamMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
 ---
-# &lt;byteStreamMessageEncoding&gt;
+# \<byteStreamMessageEncoding>
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  
   
  \<system.serviceModel>  

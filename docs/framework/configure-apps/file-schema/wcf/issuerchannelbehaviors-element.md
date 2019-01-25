@@ -1,9 +1,9 @@
 ---
-title: "&lt;issuerChannelBehaviors&gt; Element"
+title: "<issuerChannelBehaviors> Element"
 ms.date: "03/30/2017"
 ms.assetid: f7378673-8e9b-45b2-98d1-cf5dccdd8c40
 ---
-# &lt;issuerChannelBehaviors&gt; Element
+# \<issuerChannelBehaviors> Element
 Contains a collection of Windows Communication Foundation (WCF) client endpoint behaviors (defined in the configuration) to be used when communicating with the specified Service Token Services. The defined behaviors cannot include any [\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) elements.  
   
  \<system.ServiceModel>  

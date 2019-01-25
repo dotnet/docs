@@ -1,5 +1,5 @@
 ---
-title: "&lt;connectionManagement&gt; Element (Network Settings)"
+title: "<connectionManagement> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "connectionManagement element"
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
 ---
-# &lt;connectionManagement&gt; Element (Network Settings)
+# \<connectionManagement> Element (Network Settings)
 Specifies the maximum number of connections to a network host.  
   
  \<configuration>  

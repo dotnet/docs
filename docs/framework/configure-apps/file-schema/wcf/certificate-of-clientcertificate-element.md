@@ -1,9 +1,9 @@
----
-title: "&lt;certificate&gt; of &lt;clientCertificate&gt; Element"
+﻿---
+title: "<certificate> of <clientCertificate> Element"
 ms.date: "03/30/2017"
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
 ---
-# &lt;certificate&gt; of &lt;clientCertificate&gt; Element
+# \<certificate> of \<clientCertificate> Element
 Specifies an X.509 certificate used to sign and encrypt messages.  
   
  \<system.ServiceModel>  

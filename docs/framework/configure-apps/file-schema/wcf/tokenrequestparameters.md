@@ -1,9 +1,9 @@
 ---
-title: "&lt;tokenRequestParameters&gt;"
+title: "<tokenRequestParameters>"
 ms.date: "03/30/2017"
 ms.assetid: 1fc2b90c-a61f-4337-ac4c-f341e596a781
 ---
-# &lt;tokenRequestParameters&gt;
+# \<tokenRequestParameters>
 This configuration element contains child elements that can be used to specify additional XML elements to be sent in the message body to the Security Token Service when requesting a token.  
   
 ## See also

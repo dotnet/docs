@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; element for NameValueSectionHandler and DictionarySectionHandler"
+title: "<remove> element for NameValueSectionHandler and DictionarySectionHandler"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/sectionName/remove"

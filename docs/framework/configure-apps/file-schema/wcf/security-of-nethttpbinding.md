@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netHttpBinding"
+title: "<security> of <netHttpBinding"
 ms.date: "03/30/2017"
 ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 ---
-# &lt;security&gt; of &lt;netHttpBinding
+# \<security> of \<netHttpBinding
 Defines the security capabilities of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
 \<system.ServiceModel>  

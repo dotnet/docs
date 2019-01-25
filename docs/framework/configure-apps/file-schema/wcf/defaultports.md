@@ -1,9 +1,9 @@
 ---
-title: "&lt;defaultPorts&gt;"
+title: "<defaultPorts>"
 ms.date: "03/30/2017"
 ms.assetid: 725d4ee5-bd46-4f0e-9c20-30ba75d6eb2c
 ---
-# &lt;defaultPorts&gt;
+# \<defaultPorts>
 A collection of default ports listing the default communications endpoints that the client application listens to.  
   
 \<system.ServiceModel>  

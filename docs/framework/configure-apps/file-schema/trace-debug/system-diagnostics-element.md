@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.diagnostics&gt; Element"
+title: "<system.diagnostics> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.diagnostics"
@@ -11,7 +11,7 @@ ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;system.diagnostics&gt; Element
+# \<system.diagnostics> Element
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  
   
  \<configuration>  

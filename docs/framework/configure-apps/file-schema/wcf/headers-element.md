@@ -1,9 +1,9 @@
 ---
-title: "&lt;headers&gt; element"
+title: "<headers> element"
 ms.date: "03/30/2017"
 ms.assetid: 040f7a8c-bb57-4db6-bdb0-cfb92a1b01af
 ---
-# &lt;headers&gt; element
+# \<headers> element
 This contains a collection of address headers that are required in order to correctly address the local issuer. You can use the `add` keyword to add a header to this collection.  
   
 ## See also

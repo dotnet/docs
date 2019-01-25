@@ -1,11 +1,11 @@
 ---
-title: "&lt;Thread_UseAllCpuGroups&gt; Element"
+title: "<Thread_UseAllCpuGroups> Element"
 ms.date: "03/30/2017"
 ms.assetid: d30fe7c5-8469-46e2-b804-e3eec7b24256
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Thread_UseAllCpuGroups&gt; Element
+# \<Thread_UseAllCpuGroups> Element
 Specifies whether the runtime distributes managed threads across all CPU groups.  
   
  \<configuration>  

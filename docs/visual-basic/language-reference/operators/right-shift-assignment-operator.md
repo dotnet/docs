@@ -1,5 +1,5 @@
 ---
-title: "&gt;&gt;= Operator (Visual Basic)"
+title: ">>= Operator (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.>>="
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - ">>= operator [Visual Basic]"
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
 ---
-# &gt;&gt;= Operator (Visual Basic)
+# >>= Operator (Visual Basic)
 Performs an arithmetic right shift on the value of a variable or property and assigns the result back to the variable or property.  
   
 ## Syntax  

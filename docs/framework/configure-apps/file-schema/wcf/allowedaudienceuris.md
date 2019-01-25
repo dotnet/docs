@@ -1,9 +1,9 @@
 ---
-title: "&lt;allowedAudienceUris&gt;"
+title: "<allowedAudienceUris>"
 ms.date: "03/30/2017"
 ms.assetid: 0f4dc73d-d95d-4193-9755-7df4cf2b8e1c
 ---
-# &lt;allowedAudienceUris&gt;
+# \<allowedAudienceUris>
 Represents a collection of target URIs for which the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token can be targeted for in order to be considered valid by a <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator> instance.  
   
  \<system.ServiceModel>  

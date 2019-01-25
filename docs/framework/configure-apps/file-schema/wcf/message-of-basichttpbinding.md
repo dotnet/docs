@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;basicHttpBinding&gt;"
+title: "<message> of <basicHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
 ---
-# &lt;message&gt; of &lt;basicHttpBinding&gt;
+# \<message> of \<basicHttpBinding>
 Defines the settings for message-level security of the [\<basicHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md).  
   
  \<system.ServiceModel>  

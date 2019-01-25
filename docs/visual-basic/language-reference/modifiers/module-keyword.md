@@ -1,5 +1,5 @@
 ---
-title: "Module &lt;keyword&gt; (Visual Basic)"
+title: "Module <keyword> (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ModuleAttribute"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 ---
-# Module &lt;keyword&gt; (Visual Basic)
+# Module \<keyword> (Visual Basic)
 Specifies that an attribute at the beginning of a source file applies to the current assembly module.  
   
 ## Remarks  

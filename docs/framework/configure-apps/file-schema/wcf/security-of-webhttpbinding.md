@@ -1,9 +1,9 @@
----
-title: "&lt;security&gt; of &lt;webHttpBinding&gt;"
+﻿---
+title: "<security> of <webHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
 ---
-# &lt;security&gt; of &lt;webHttpBinding&gt;
+# \<security> of \<webHttpBinding>
 Specifies the security requirements for an endpoint configured with a [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  \<system.ServiceModel>  

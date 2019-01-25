@@ -1,5 +1,5 @@
 ---
-title: "&lt;performanceCounters&gt; Element"
+title: "<performanceCounters> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/performanceCounters"
@@ -11,7 +11,7 @@ ms.assetid: a71f605b-c7d9-4501-a5c3-abcbb964a43f
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;performanceCounters&gt; Element
+# \<performanceCounters> Element
 Specifies the size of the global memory shared by performance counters.  
   
  \<configuration>  

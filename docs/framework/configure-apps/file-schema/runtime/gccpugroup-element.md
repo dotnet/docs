@@ -1,5 +1,5 @@
 ---
-title: "&lt;GCCpuGroup&gt; Element"
+title: "<GCCpuGroup> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "GCCpuGroup element"
@@ -8,7 +8,7 @@ ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;GCCpuGroup&gt; Element
+# \<GCCpuGroup> Element
 Specifies whether garbage collection supports multiple CPU groups.  
   
  \<configuration>  

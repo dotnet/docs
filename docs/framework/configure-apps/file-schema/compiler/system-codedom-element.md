@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.codedom&gt; Element"
+title: "<system.codedom> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.codedom"
@@ -12,7 +12,7 @@ ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;system.codedom&gt; Element
+# \<system.codedom> Element
 Specifies compiler configuration settings for available language providers.  
   
  \<configuration> Element  

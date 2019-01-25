@@ -1,9 +1,9 @@
 ---
-title: "Internal error happened at &lt;location&gt;"
+title: "Internal error happened at <location>"
 ms.date: 07/20/2015
 ms.assetid: 0af78cbc-89ec-40ea-9dee-bac9f2cb7c1e
 ---
-# Internal error happened at &lt;location&gt;
+# Internal error happened at \<location>
 An internal error has occurred. The line at which it occurred is contained in the error message.  
   
 ## To correct this error  

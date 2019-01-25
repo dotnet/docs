@@ -1,5 +1,5 @@
 ---
-title: "&lt;defaultHttpCachePolicy&gt; Element (Network Settings)"
+title: "<defaultHttpCachePolicy> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/requestCaching/defaultHttpCachePolicy"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<defaultHttpCachePolicy> element"
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
 ---
-# &lt;defaultHttpCachePolicy&gt; Element (Network Settings)
+# \<defaultHttpCachePolicy> Element (Network Settings)
 Describes whether HTTP caching is active and describes the default caching policy.  
   
  \<configuration>  

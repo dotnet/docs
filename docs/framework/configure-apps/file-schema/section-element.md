@@ -1,5 +1,5 @@
 ---
-title: "&lt;section&gt; element"
+title: "<section> element"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/section"

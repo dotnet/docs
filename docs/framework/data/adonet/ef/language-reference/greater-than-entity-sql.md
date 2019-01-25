@@ -1,9 +1,9 @@
 ---
-title: "&gt; (Greater Than) (Entity SQL)"
+title: "> (Greater Than) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 4cea865c-677c-4b06-99a1-010f2ae2394a
 ---
-# &gt; (Greater Than) (Entity SQL)
+# > (Greater Than) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value greater than the right expression.  
   
 ## Syntax  

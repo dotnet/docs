@@ -1,10 +1,10 @@
 ---
-title: "&lt;remove&gt;"
+title: "<remove>"
 ms.date: "03/30/2017"
 ms.assetid: 4058e2f1-7db4-4d1a-84dd-1b52836f2ae6
 author: "BrucePerlerMS"
 ---
-# &lt;remove&gt;
+# \<remove>
 Removes the specified security token handler from the token handler collection.  
   
  \<system.identityModel>  

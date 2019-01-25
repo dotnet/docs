@@ -1,5 +1,5 @@
 ---
-title: "&lt;compiler&gt; Element"
+title: "<compiler> Element"
 ms.date: 08/14/2018
 f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compiler"
@@ -13,7 +13,7 @@ ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;compiler&gt; Element
+# \<compiler> Element
 
 Specifies the compiler configuration attributes for a language provider.
 

@@ -1,10 +1,10 @@
 ---
-title: "&lt;tracking&gt;"
+title: "<tracking>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: fd9b50ed-98a1-4518-836d-e4e02c670822
 ---
-# &lt;tracking&gt;
+# \<tracking>
 Represents a configuration section for defining tracking settings for a workflow service.  
   
  For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  

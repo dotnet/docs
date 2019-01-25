@@ -1,5 +1,5 @@
 ---
-title: "&lt;&lt; operator - C# Reference"
+title: "<< operator - C# Reference"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<< operator [C#]"
 ms.assetid: a654eb56-1ff7-4bf3-9064-b631be0cdccc
 ---
-# &lt;&lt; operator (C# Reference)
+# \<\< operator (C# Reference)
 
 The left-shift operator (`<<`) shifts its first operand left by the number of bits specified by its second operand. The type of the second operand must be an [int](../keywords/int.md) or a type that has a predefined implicit numeric conversion to `int`.
 

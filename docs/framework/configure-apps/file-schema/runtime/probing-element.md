@@ -1,5 +1,5 @@
 ---
-title: "&lt;probing&gt; Element"
+title: "<probing> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/probing"
@@ -12,7 +12,7 @@ ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;probing&gt; Element
+# \<probing> Element
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  
   
  \<configuration>  

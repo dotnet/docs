@@ -1,9 +1,9 @@
 ---
-title: "&lt;endpoint&gt; of &lt;client&gt;"
+title: "<endpoint> of <client>"
 ms.date: "03/30/2017"
 ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa
 ---
-# &lt;endpoint&gt; of &lt;client&gt;
+# \<endpoint> of \<client>
 Specifies contract, binding, and address properties of the channel endpoint, which is used by clients to connect to service endpoints on the server.  
   
  \<system.ServiceModel>  

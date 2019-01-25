@@ -1,5 +1,5 @@
 ---
-title: "&lt;typeparam&gt; - C# Programming Guide"
+title: "<typeparam> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "typeparam C# XML tag"
 ms.assetid: 9b99d400-e911-4e55-99c6-64367c96aa4f
 ---
-# &lt;typeparam&gt; (C# Programming Guide)
+# \<typeparam> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

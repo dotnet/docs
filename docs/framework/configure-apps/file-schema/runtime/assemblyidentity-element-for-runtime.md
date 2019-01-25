@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyIdentity&gt; Element for &lt;runtime&gt;"
+title: "<assemblyIdentity> Element for <runtime>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/assemblyIdentity"
@@ -12,7 +12,7 @@ ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
+# \<assemblyIdentity> Element for \<runtime>
 Contains identifying information about the assembly.  
   
  \<configuration>  

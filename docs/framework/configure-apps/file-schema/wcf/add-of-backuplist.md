@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;backupList&gt;"
+title: "<add> of <backupList>"
 ms.date: "03/30/2017"
 ms.assetid: bc5939fc-314a-4ea4-a533-c96958da7173
 ---
-# &lt;add&gt; of &lt;backupList&gt;
+# \<add> of \<backupList>
 Represents a configuration element that defines a backup endpoint element.  
   
  \<system.serviceModel>  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;messageSenderAuthentication&gt; element"
+title: "<messageSenderAuthentication> element"
 ms.date: "03/30/2017"
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
 ---
-# &lt;messageSenderAuthentication&gt; element
+# \<messageSenderAuthentication> element
 Specifies authentication options for peer-to-peer message senders.  
   
  For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;connectionPoolSettings&gt;"
+title: "<connectionPoolSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 6fa7fa65-2c6e-4eab-b8cf-7690112c0be5
 ---
-# &lt;connectionPoolSettings&gt;
+# \<connectionPoolSettings>
 Specifies additional connection pool settings for a Named Pipe binding.  
   
  \<system.serviceModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for &lt;namedCaches&gt;"
+title: "<clear> Element for <namedCaches>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<clear> element for <namedCaches>"
@@ -8,7 +8,7 @@ ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
 author: "mcleblanc"
 ms.author: "markl"
 ---
-# &lt;clear&gt; Element for &lt;namedCaches&gt;
+# \<clear> Element for \<namedCaches>
 Clears all `namedCache` entries in the `namedCaches` collection for a memory cache.  
   
  \<system.runtime.caching>  

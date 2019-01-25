@@ -1,11 +1,11 @@
 ---
-title: "&lt;TypeInstantiation&gt; Element (.NET Native)"
+title: "<TypeInstantiation> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;TypeInstantiation&gt; Element (.NET Native)
+# \<TypeInstantiation> Element (.NET Native)
 Applies runtime reflection policy to a constructed generic type.  
   
 ## Syntax  

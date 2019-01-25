@@ -1,5 +1,5 @@
 ---
-title: "XML namespace URI &#39;&lt;uri&gt;&#39; can be bound only to &#39;xmlns&#39;"
+title: "XML namespace URI &#39;<uri>&#39; can be bound only to &#39;xmlns&#39;"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc31183"

@@ -1,10 +1,10 @@
 ---
-title: "&lt;chunkedCookieHandler&gt;"
+title: "<chunkedCookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: 7220de45-1d14-4aec-a29e-4a2ea8ac861f
 author: "BrucePerlerMS"
 ---
-# &lt;chunkedCookieHandler&gt;
+# \<chunkedCookieHandler>
 Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".  
   
  \<system.identityModel.services>  

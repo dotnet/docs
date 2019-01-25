@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;contractTypeNames&gt;"
+title: "<add> of <contractTypeNames>"
 ms.date: "03/30/2017"
 ms.assetid: 03aff6be-5dfb-4a64-ada3-e36227cd43c7
 ---
-# &lt;add&gt; of &lt;contractTypeNames&gt;
+# \<add> of \<contractTypeNames>
 A configuration element that specifies the contract name of the services being searched for, and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts will reply. Note that in Windows Communication Foundation (WCF), an endpoint can only support one contract.  
   
  \<system.ServiceModel>  

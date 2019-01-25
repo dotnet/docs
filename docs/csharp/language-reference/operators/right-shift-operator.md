@@ -1,5 +1,5 @@
 ---
-title: "&gt;&gt; operator - C# Reference"
+title: ">> operator - C# Reference"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "right shift operator (>>) [C#]"
 ms.assetid: a07f8679-d318-4ef8-b38b-65903efb8056
 ---
-# &gt;&gt; operator (C# Reference)
+# >> operator (C# Reference)
 
 The right-shift operator (`>>`) shifts its first operand right by the number of bits specified by its second operand.
 

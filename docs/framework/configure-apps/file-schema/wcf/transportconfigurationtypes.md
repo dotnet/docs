@@ -1,9 +1,9 @@
 ---
-title: "&lt;transportConfigurationTypes&gt;"
+title: "<transportConfigurationTypes>"
 ms.date: "03/30/2017"
 ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69
 ---
-# &lt;transportConfigurationTypes&gt;
+# \<transportConfigurationTypes>
 Represents a collection of configuration elements that identify the type of a particular transport. This can be used to add custom WAS protocols.  
   
  \<system.ServiceModel>  

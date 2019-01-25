@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 07/20/2018
+ms.date: 01/23/2019
 ---
 # Type extensions
 
@@ -115,7 +115,7 @@ There is no way to get this code to work with an optional type extension:
 
 * As is, the `Sum` member has a different constraint on `'T` (`static member get_Zero` and `static member (+)`) than what the type extension defines.
 * Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
-* Making changing the member to `member inline Sum` will give an error that type constraints are mismatched
+* Changing `member this.Sum` to `member inline this.Sum` will give an error that type constraints are mismatched.
 
 What is desired are static methods that "float in space" and can be presented as if they're extending a type. This is where extension methods become necessary.
 

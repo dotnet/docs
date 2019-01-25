@@ -94,7 +94,7 @@ client.Close();
   
     -   The `ReleaseServiceInstanceOnTransactionComplete` property specifies whether the service instance is recycled when a transaction completes. By setting it to `false`, the service maintains the same service instance across the operation requests. This is required to maintain the running total. If set to `true`, a new instance is generated after each completed action.  
   
-    -   The `TransactionAutoCompleteOnSessionClose` property specifies whether outstanding transactions are completed when the session closes. By setting it to `false`, the individual operations are required to either set the `OperationBehaviorAttribute``TransactionAutoComplete` property to `true` or to explicitly require a call to the `SetTransactionComplete` method to complete transactions. This sample demonstrates both approaches.  
+    -   The `TransactionAutoCompleteOnSessionClose` property specifies whether outstanding transactions are completed when the session closes. By setting it to `false`, the individual operations are required to either set the <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete?displayProperty=nameWithType> property to `true` or to explicitly require a call to the <xref:System.ServiceModel.OperationContext.SetTransactionComplete?displayProperty=nameWithType> method to complete transactions. This sample demonstrates both approaches.  
   
 -   On the `ServiceContractAttribute`:  
   

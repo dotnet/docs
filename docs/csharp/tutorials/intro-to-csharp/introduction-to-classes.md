@@ -100,7 +100,7 @@ Add the following member declaration to the `BankAccount` class:
 private static int accountNumberSeed = 1234567890;
 ```
 
-This is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated.) It is also `static`, which means it is shared by all of the ``BankAccount`` objects. The value of a non-static variable is unique to each instance of the ``BankAccount`` object. Add the following two lines to the constructor to assign the account number:
+This is a data member. It's `private`, which means it can only be accessed by code inside the `BankAccount` class. It's a way of separating the public responsibilities (like having an account number) from the private implementation (how account numbers are generated.) It is also `static`, which means it is shared by all of the `BankAccount` objects. The value of a non-static variable is unique to each instance of the `BankAccount` object. Add the following two lines to the constructor to assign the account number:
 
 ```csharp
 this.Number = accountNumberSeed.ToString();

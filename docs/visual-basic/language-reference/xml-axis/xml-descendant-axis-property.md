@@ -28,7 +28,7 @@ object...<descendant>
  Required. Denotes the start of a descendant axis property.  
   
  `descendant`  
- Required. Name of the descendant nodes to access, of the form [`prefix``:`]`name`.  
+ Required. Name of the descendant nodes to access, of the form [`prefix:]name`.  
   
 |Part|Description|  
 |----------|-----------------|  

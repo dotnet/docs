@@ -113,6 +113,15 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentException">The name cannot be null or empty.</exception>
+        <exception cref="T:System.ArgumentNullException">The values cannot be null or empty.</exception>
+        <exception cref="T:System.InvalidOperationException">Misused header name. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.</exception>
+        <exception cref="T:System.FormatException">The header name format is invalid.
+
+-or-
+
+New line characters in header values must be followed by a white-space character. 
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -158,6 +167,14 @@
   
  ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentException">The name cannot be null or empty.</exception>
+        <exception cref="T:System.InvalidOperationException">Misused header name. Make sure request headers are used with HttpRequestMessage, response headers with HttpResponseMessage, and content headers with HttpContent objects.</exception>
+        <exception cref="T:System.FormatException">The header name format is invalid.
+
+-or-
+
+New line characters in header values must be followed by a white-space character. 
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">

@@ -63,4 +63,4 @@ The following table lists some common exceptions with examples of what can cause
 - [How to: Use Finally Blocks](how-to-use-finally-blocks.md)
 - [Handling COM Interop Exceptions](handling-com-interop-exceptions.md)
 - [Best Practices for Exceptions](best-practices-for-exceptions.md)
-- [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md).
+- [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)

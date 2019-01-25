@@ -50,9 +50,9 @@ In this tutorial, you learn how to:
 
    1. In the **Solution Explorer** window, select the **References** folder under the **GettingStartedClient** project, and then select **Add Service Reference** from the shortcut menu.
 
-   2. In the **Add Service Reference** window, enter the following URL for the **Address**: [http://localhost:8000/GettingStarted/CalculatorService](http://localhost:8000/GettingStarted/CalculatorService).
+   2. In the **Add Service Reference** window, enter the following URL for the **Address**: `http://localhost:8000/GettingStarted/CalculatorService`.
 
-   3. Choose **Go**. 
+   3. Select **Go**. 
 
       The CalculatorService service starts and Visual Studio displays the **CalculatorService** service in the **Services** box.
 
@@ -75,7 +75,7 @@ svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localh
 
 ### Client configuration file
 
-After you've created the client, Visual Studio creates an *App.config* configuration file, which should be similar to the following example:
+After you've created the client, Visual Studio creates an *App.config* configuration file in the **GettingStartedClient** project, which should be similar to the following example:
 
 ```xml
     <?xml version="1.0" encoding="utf-8" ?>

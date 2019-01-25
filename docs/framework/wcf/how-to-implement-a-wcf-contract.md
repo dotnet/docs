@@ -16,8 +16,8 @@ The next step for creating a WCF application is to add code to implement the WCF
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> - Create code to implement the WCF service contract.
-
+> - Add code to implement the WCF service contract.
+> - Build the solution.
 
 ## Add code to implement the WCF service contract
 
@@ -118,7 +118,8 @@ Build the solution to verify there aren't any compilation errors. If you're usin
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> - Create code to implement the WCF service contract.
+> - Add code to implement the WCF service contract.
+> - Build the solution.
 
 Advance to the next tutorial to learn how to run the WCF service.
 

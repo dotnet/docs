@@ -1,11 +1,11 @@
 ---
-title: Troubleshoot the Get started with Windows Communication Foundation applications tutorial
+title: Troubleshoot the Get started with Windows Communication Foundation tutorials
 ms.date: 01/25/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
 ---
-# Troubleshoot the Get started with Windows Communication Foundation applications tutorial
+# Troubleshoot the Get started with Windows Communication Foundation tutorials
 
-This article provides solutions for the most common problems and errors you might face when you follow the steps in the [Get started with Windows Communication Foundation applications tutorial](getting-started-tutorial.md). 
+This article provides solutions for the most common problems and errors you might face when you follow the steps in the [Get started with Windows Communication Foundation applications tutorials](getting-started-tutorial.md). 
   
 ## Common problems
 

@@ -54,7 +54,9 @@ In this tutorial, you learn how to:
 
     2. In the **Add Reference** dialog, under **Projects** on the left side of the window, select **Solution**. 
  
-    3. Select **GettingStartedLib** in the center section of the window, and then choose **OK**. This action makes the types defined in the **GettingStartedLib** project available to the **GettingStartedHost** project.
+    3. Find and select **GettingStartedLib** in the center section of the window, and then select **OK**. 
+
+       This action makes the types defined in the **GettingStartedLib** project available to the **GettingStartedHost** project.
 
 3. Add a reference in the **GettingStartedHost** project to the <xref:System.ServiceModel> assembly. 
 
@@ -62,7 +64,7 @@ In this tutorial, you learn how to:
     
     2. In the **Add Reference** window, under **Assemblies** on the left side of the window, select **Framework**. 
 
-    3. Find and select **System.ServiceModel**, and then choose **OK**. 
+    3. Select **System.ServiceModel**, and then select **OK**. 
     
     4. Save the solution by selecting **File** > **Save All**.
 
@@ -101,7 +103,7 @@ In this tutorial, you learn how to:
                     // Step 5: Start (and then stop) the service.
                     selfHost.Open();
                     Console.WriteLine("The service is ready.");
-                    Console.WriteLine("Press <ENTER> to terminate service.");
+                    Console.WriteLine("Press <Enter> to terminate service.");
                     Console.WriteLine();
                     Console.ReadLine();
 
@@ -148,7 +150,7 @@ In this tutorial, you learn how to:
                     ' Step 5: Start (and then stop) the service.
                     selfHost.Open()
                     Console.WriteLine("The service is ready.")
-                    Console.WriteLine("Press <ENTER> to terminate service.")
+                    Console.WriteLine("Press <Enter> to terminate service.")
                     Console.WriteLine()
                     Console.ReadLine()
 
@@ -170,14 +172,14 @@ In this tutorial, you learn how to:
 
 2. Edit *App.config* in **GettingStartedLib**:
    - For Visual C# projects, edit *App.config* to reflect the changes you made to *Program.cs*:
-       - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`.
-       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
-      - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`.
+       - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
+       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
+       - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.ICalculator">`
 
    - For Visual Basic projects, edit *App.config* to reflect the changes you made to *Module1.vb*:
-       - Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`.
-      - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`.
-      - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`.
+       - Change line 14 to `<service name="GettingStartedLib.GettingStartedLib.CalculatorService">`
+       - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
+       - Change line 22 to `<endpoint address="" binding="wsHttpBinding" contract="GettingStartedLib.GettingStartedLib.ICalculator">`
 
 3. For Visual Basic projects, make the following change to the project properties:
 
@@ -193,9 +195,9 @@ In this tutorial, you learn how to:
 1. Build the solution, and then run the **GettingStartedHost** console application from inside Visual Studio. As an alternative, you can open a new command prompt by using **Run as administrator** and run *GettingStartedHost.exe* within it. 
 
 2. Open a web browser and browse to the service's page at `http://localhost:8000/GettingStarted/CalculatorService`.
-
-> [!NOTE]
-> Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). 
+   
+   > [!NOTE]
+   > Services such as this one require the proper permission to register HTTP addresses on the machine for listening. Administrator accounts have this permission, but non-administrator accounts must be granted permission for HTTP namespaces. For more information about how to configure namespace reservations, see [Configuring HTTP and HTTPS](feature-details/configuring-http-and-https.md). 
 
 
 ## Service hosting program steps

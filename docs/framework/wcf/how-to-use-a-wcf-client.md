@@ -12,16 +12,17 @@ ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 
 This tutorial describes the last of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-Once you've created and configured a Windows Communication Foundation (WCF) proxy, you can create a client instance and compile the client application. You then use it to communicate with the WCF service. 
+After you've created and configured a Windows Communication Foundation (WCF) proxy, create a client instance and compile the client application. You then use it to communicate with the WCF service. The client code does the following steps:
+- Instantiates the WCF client.
+- Calls the service operations from the generated proxy.
+- Closes the client after the operation call is completed.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> - Instantiate the WCF client.
-> - Call the service operations from the generated proxy.
-> - Close the client after the operation call is completed.
-> - Start the WCF service and run the WCF client.
+> - Add code to use the WCF client.
+> - Test the WCF client.
 
-## Use a Windows Communication Foundation client
+## Add code to use the WCF client
 
 Open the *Program.cs* (or *Module1.vb*) file from the **GettingStartedClient** project and replace the existing code with the following code:
 
@@ -67,9 +68,9 @@ namespace GettingStartedClient
             Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
 
             // Step 3: Close the client to gracefully close the connection and clean up resources.
+            Console.WriteLine("\nPress <Enter> to terminate client.");
+            Console.ReadLine();
             client.Close();
-
-            Console.WriteLine("\nPress <Enter> to terminate client.\n");
         }
     }
 }
@@ -114,11 +115,10 @@ Module Module1
         Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result)
 
         ' Step 3: Close the client to gracefully close the connection and clean up resources.
-        Client.Close()
-
         Console.WriteLine()
         Console.WriteLine("Press <Enter> to terminate client.")
         Console.ReadLine()
+        Client.Close()
 
     End Sub
 
@@ -127,13 +127,18 @@ End Module
 
 Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement that imports `GettingStartedClient.ServiceReference1`. This statement imports the code that Visual Studio generated with the **Add Service Reference** function. The code instantiates the WCF proxy and calls each of the service operations that the calculator service exposes. It then closes the proxy and ends the program.
 
-To test the application, first run *GettingStartedHost.exe* to start the service, and then run *GettingStartedClient.exe*.
+## Test the WCF client
+
+To test the application:
+1. Save and build the solution.
+2. Run *GettingStartedHost.exe* to start the service.
+3. Run *GettingStartedClient.exe* to start the client.
 
 *GettingStartedHost.exe* produces the following output:
 
 ```text
 The service is ready.
-Press <ENTER> to terminate service.
+Press <Enter> to terminate service.
 
 Received Add(100,15.99)
 Return: 115.99
@@ -153,7 +158,7 @@ Subtract(145,76.54) = 68.46
 Multiply(9,81.25) = 731.25
 Divide(22,7) = 3.14285714285714
 
-Press <ENTER> to terminate client.
+Press <Enter> to terminate client.
 ```
 
 ## Next steps
@@ -162,13 +167,11 @@ You've now completed all the tasks in the WCF get started tutorial. In this tuto
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> - Instantiate the WCF client.
-> - Call the service operations from the generated proxy.
-> - Close the client after the operation call is completed.
-> - Start the WCF service and run the WCF client.
+> - Add code to use the WCF client.
+> - Test the WCF client.
 
 If you have problems or errors in any of the steps, follow the steps in the troubleshooting article to fix them.
 
 > [!div class="nextstepaction"]
-> [Troubleshoot the get started with WCF applications tutorial](troubleshooting-the-getting-started-tutorial.md)
+> [Troubleshoot the Get started with WCF tutorials](troubleshooting-the-getting-started-tutorial.md)
 

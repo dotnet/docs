@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Create a Windows Communication Foundation client"
-ms.dat8: 01/23/2019
+ms.dat8: 01/25/2019
 helpviewer_keywords:
   - "clients [WCF], running"
   - "WCF clients [WCF], running"
@@ -10,7 +10,7 @@ ms.assetid: a67884cc-1c4b-416b-8c96-5c954099f19f
 
 This tutorial describes the fourth of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-The next task for creating a WCF application is to retrieve metadata from a WCF service. Use Visual Studio to add a service reference, which gets the metadata from the service’s MEX endpoint. Visual Studio then generates a managed source code file for a client proxy in the language you've chosen. It also creates a client configuration file (*App.config*). This file enables the client application to connect to the service at an endpoint. 
+The next task for creating a WCF application is to create a client by retrieving metadata from a WCF service. You use Visual Studio to add a service reference, which gets the metadata from the service’s MEX endpoint. Visual Studio then generates a managed source code file for a client proxy in the language you've chosen. It also creates a client configuration file (*App.config*). This file enables the client application to connect to the service at an endpoint. 
 
 > [!NOTE]
 > If you call a WCF service from a class library project in Visual Studio, use the **Add Service Reference** feature to automatically generate a proxy and associated configuration file. However, because class library projects don't use this configuration file, you need to add the settings in the generated configuration file to the *App.config* file for the executable that calls the class library.
@@ -18,12 +18,17 @@ The next task for creating a WCF application is to retrieve metadata from a WCF 
 > [!NOTE]
 > As an alternative, use the [ServiceModel Metadata Utility tool](#servicemodel-metadata-utility-tool) instead of Visual Studio to generate the proxy class and configuration file.
 
-
 The client application uses the generated proxy class to communicate with the service. This procedure is described in [Tutorial: Use a client](how-to-use-a-wcf-client.md).
 
-## To create a Windows Communication Foundation client
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> - Create and configure a console app project for the WCF client.
+> - Add a service reference to the WCF service to generate the proxy class and configuration files.
 
-1. Create a console application project in Visual Studio. 
+
+## Create a Windows Communication Foundation client
+
+1. Create a console app project in Visual Studio. 
 
     1. In the **Solution Explorer** window, select the **GettingStarted** solution (top node), and then select **Add** > **New Project** from the shortcut menu. 
     
@@ -58,7 +63,7 @@ The client application uses the generated proxy class to communicate with the se
 
 ### ServiceModel Metadata Utility tool
 
-The following examples show how to use the [ServiceModel Metadata Utility tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). This tool generates the proxy class file and the *App.config* file. The following examples show how to generate the proxy in C# and Visual Basic, respectively:
+The following examples show how to optionally use the [ServiceModel Metadata Utility tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy class file. This tool generates the proxy class file and the *App.config* file. The following examples show how to generate the proxy in C# and Visual Basic, respectively:
 
 ```shell
 svcutil.exe /language:cs /out:generatedProxy.cs /config:app.config http://localhost:8000/GettingStarted/CalculatorService
@@ -70,7 +75,7 @@ svcutil.exe /language:vb /out:generatedProxy.vb /config:app.config http://localh
 
 ### Client configuration file
 
-After you've created the client, Visual Studio creates an *App.config* configuration file, which should be similar to the file in this example:
+After you've created the client, Visual Studio creates an *App.config* configuration file, which should be similar to the following example:
 
 ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -100,23 +105,21 @@ After you've created the client, Visual Studio creates an *App.config* configura
     </configuration>
 ```
 
-Under the [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md) element. The **&lt;endpoint&gt;** element defines the endpoint that the client uses to access the service as follows:
+Under the [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-servicemodel.md) section, notice the [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md) element. The **&lt;endpoint&gt;** element defines the endpoint that the client uses to access the service as follows:
 - Address: `http://localhost:8000/GettingStarted/CalculatorService`. The address of the endpoint.
 - Service contract: `ServiceReference1.ICalculator`. The service contract handles communication between the WCF client and the service. Visual Studio generated this contract when you used its **Add Service Reference** function. It's essentially a copy of the contract that you defined in the GettingStartedLib project. 
 - Binding: <xref:System.ServiceModel.WSHttpBinding>. The binding specifies HTTP as the transport, interoperable security, and other configuration details.
 
 ## Next steps
 
-You've created the proxy that the client application uses to call the calculator service. In the next task, you use the generated client.
+In this tutorial, you learned how to:
+> [!div class="checklist"]
+> - Create and configure a console app project for the WCF client.
+> - Add a service reference to the WCF service to generate the proxy class and configuration files for the client application.
+
+Advance to the next tutorial to learn how to use the generated client.
 
 > [!div class="nextstepaction"]
 > [Tutorial: Use a WCF client](how-to-use-a-wcf-client.md)
 
-## See also
 
-- [ServiceModel Metadata Utility tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
-- [Getting started sample](samples/getting-started-sample.md)
-- [Self-Host](samples/self-host.md)
-- [How to: Publish metadata for a service using a configuration file](feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
-- [How to: Use Svcutil.exe to download metadata documents](feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)
-- [Using bindings to configure services and clients](using-bindings-to-configure-services-and-clients.md)

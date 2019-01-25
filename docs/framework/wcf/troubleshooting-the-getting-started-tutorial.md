@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot the Get started with Windows Communication Foundation applications tutorial
-ms.date: 01/22/2019
+ms.date: 01/25/2019
 ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
 ---
 # Troubleshoot the Get started with Windows Communication Foundation applications tutorial
@@ -89,6 +89,6 @@ To turn off security:
     ```  
 
 ## See also  
- [Get started tutorial](getting-started-tutorial.md)  
+ [Get started with WCF applications](getting-started-tutorial.md)  
  [WCF troubleshooting quickstart](wcf-troubleshooting-quickstart.md)  
  [Troubleshooting setup issues](troubleshooting-setup-issues.md)

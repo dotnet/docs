@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Use a Windows Communication Foundation client"
-ms.date: 01/21/2019
+ms.date: 01/25/2019
 helpviewer_keywords:
   - "WCF clients [WCF], using"
 dev_langs:
@@ -12,11 +12,14 @@ ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 
 This tutorial describes the last of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-Once you've created and configured a Windows Communication Foundation (WCF) proxy, you can create a client instance and compile the client application. You then use it to communicate with the WCF service. This article describes the procedures for instantiating and using a WCF client:
+Once you've created and configured a Windows Communication Foundation (WCF) proxy, you can create a client instance and compile the client application. You then use it to communicate with the WCF service. 
 
-1.  Instantiate the WCF client.
-2.  Call the service operations from the generated proxy.
-3.  Close the client after the operation call is completed.
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> - Instantiate the WCF client.
+> - Call the service operations from the generated proxy.
+> - Close the client after the operation call is completed.
+> - Start the WCF service and run the WCF client.
 
 ## Use a Windows Communication Foundation client
 
@@ -65,6 +68,8 @@ namespace GettingStartedClient
 
             // Step 3: Close the client to gracefully close the connection and clean up resources.
             client.Close();
+
+            Console.WriteLine("\nPress <Enter> to terminate client.\n");
         }
     }
 }
@@ -112,7 +117,7 @@ Module Module1
         Client.Close()
 
         Console.WriteLine()
-        Console.WriteLine("Press <ENTER> to terminate client.")
+        Console.WriteLine("Press <Enter> to terminate client.")
         Console.ReadLine()
 
     End Sub
@@ -151,22 +156,19 @@ Divide(22,7) = 3.14285714285714
 Press <ENTER> to terminate client.
 ```
 
-You've now completed the tutorial. You defined a service contract, implemented the service contract, generated a WCF proxy, configured a WCF client application, and then used the proxy to call service operations. 
-
-For troubleshooting information, see [Troubleshoot the get started tutorial](troubleshooting-the-getting-started-tutorial.md).
-
 ## Next steps
 
+You've now completed all the tasks in the WCF get started tutorial. In this tutorial, you learned how to:
+
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+> - Instantiate the WCF client.
+> - Call the service operations from the generated proxy.
+> - Close the client after the operation call is completed.
+> - Start the WCF service and run the WCF client.
+
+If you have problems or errors in any of the steps, follow the steps in the troubleshooting article to fix them.
+
 > [!div class="nextstepaction"]
-> [Troubleshoot the get started tutorial](troubleshooting-the-getting-started-tutorial.md)
+> [Troubleshoot the get started with WCF applications tutorial](troubleshooting-the-getting-started-tutorial.md)
 
-## See also
-
-- [Building clients](building-clients.md)
-- [How to: Create a client](how-to-create-a-wcf-client.md)
-- [Get started tutorial](getting-started-tutorial.md)
-- [Basic WCF programming](basic-wcf-programming.md)
-- [How to: Create a duplex contract](feature-details/how-to-create-a-duplex-contract.md)
-- [How to: Access services with a duplex contract](feature-details/how-to-access-services-with-a-duplex-contract.md)
-- [Getting started sample](samples/getting-started-sample.md)
-- [Self-Host](samples/self-host.md)

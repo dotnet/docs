@@ -476,9 +476,14 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The preinitialized value to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class that uses a preinitialized specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+An instance created with this constructor is usable by multiple threads concurrently.
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

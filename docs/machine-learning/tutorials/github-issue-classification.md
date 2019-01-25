@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a GitHub issue multiclass classification scenario
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 01/22/2018
+ms.date: 01/24/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification task so that I can understand how to classify GitHGub issues to assign them to a given area.

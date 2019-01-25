@@ -163,7 +163,7 @@ For example, in the preceding OrderAggregate code example, there are several pri
 ### Additional resources
 
 - **Vaughn Vernon. Modeling Aggregates with DDD and Entity Framework.** Note that this is *not* Entity Framework Core. \
-  [*https://vaughnvernon.co/?p=879*](https://vaughnvernon.co/?p=879)
+  <https://kalele.io/blog-posts/modeling-aggregates-with-ddd-and-entity-framework/>
 
 - **Julie Lerman. Coding for Domain-Driven Design: Tips for Data-Focused Devs** \
   [*https://msdn.microsoft.com/magazine/dn342868.aspx*](https://msdn.microsoft.com/magazine/dn342868.aspx)

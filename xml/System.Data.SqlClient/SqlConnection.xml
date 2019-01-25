@@ -758,7 +758,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 ## Examples  
  The following is a simple example of changing a password:  
   
-```  
+```csharp
 class Program {  
    static void Main(string[] args) {  
       System.Data.SqlClient.SqlConnection.ChangePassword(  
@@ -769,7 +769,7 @@ class Program {
   
 ```  
   
-```  
+```vb
 Module Module1  
     Sub Main()  
 System.Data.SqlClient.SqlConnection.ChangePassword(  

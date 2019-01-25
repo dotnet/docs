@@ -228,7 +228,7 @@ class Implemented : ICanCastToMe
 ## Virtual Internal Overrides or Overloads Overridable Friend  
   
 > [!NOTE]
->  This section warns about a security issue when declaring a method as both `virtual` and `internal` (`Overloads``Overridable``Friend` in Visual Basic). This warning applies only to the .NET Framework versions 1.0 and 1.1, it does not apply to later versions.  
+>  This section warns about a security issue when declaring a method as both `virtual` and `internal` (`Overloads` `Overridable` `Friend` in Visual Basic). This warning applies only to the .NET Framework versions 1.0 and 1.1, it does not apply to later versions.  
   
  In the .NET Framework versions 1.0 and 1.1, you must be aware of a nuance of the type system accessibility when confirming that your code is unavailable to other assemblies. A method that is declared **virtual** and **internal** (**Overloads Overridable Friend** in Visual Basic) can override the parent class's vtable entry and can be used only from within the same assembly because it is internal. However, the accessibility for overriding is determined by the **virtual** keyword, and this can be overridden from another assembly as long as that code has access to the class itself. If the possibility of an override presents a problem, use declarative security to fix it, or remove the **virtual** keyword if it is not strictly required.  
   

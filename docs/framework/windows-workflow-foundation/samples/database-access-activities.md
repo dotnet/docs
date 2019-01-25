@@ -82,7 +82,7 @@ Public class DbUpdate: AsyncCodeActivity
 
  The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
- After `DbQueryScalar` is executed, the scalar is returned in the `Result``out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity%601>).
+ After `DbQueryScalar` is executed, the scalar is returned in the `Result out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity%601>).
 
 ```
 public class DbQueryScalar<TResult> : AsyncCodeActivity<TResult>
@@ -194,7 +194,7 @@ public class DbQuery<TResult> : AsyncCodeActivity<IList<TResult>> where TResult 
 
  The query to be executed is configured in its `Sql` property and the parameters are passed through the `Parameters` collection.
 
- After the `DbQueryDataSet` is executed the `DataSet` is returned in the `Result``out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity%601>).
+ After the `DbQueryDataSet` is executed the `DataSet` is returned in the `Result out` argument (of type `TResult`, that is defined in the base class <xref:System.Activities.AsyncCodeActivity%601>).
 
 ```
 public class DbQueryDataSet : AsyncCodeActivity<DataSet>

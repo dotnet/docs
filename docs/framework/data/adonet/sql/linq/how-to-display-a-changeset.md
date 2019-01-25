@@ -16,58 +16,34 @@ You can view changes tracked by a <xref:System.Data.Linq.DataContext> by using <
  [!code-vb[DLinqDebuggingSupport#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqDebuggingSupport/vb/Module1.vb#2)]  
   
  Output from this code appears similar to the following. Note that the summary at the end shows that eight changes were made.  
-  
- `CustomerID: AROUT`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: BSBEV`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: CONSH`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: EASTC`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: NORTS`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: PARIS`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: SEVES`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- `CustomerID: SPECD`  
-  
- `Original value: London`  
-  
- `Updated value: Paris`  
-  
- ``  
-  
- `Total changes: {Added: 0, Removed: 0, Modified: 8}`  
+
+ ```console
+CustomerID: AROUT
+   Original value: London
+   Updated value: Paris
+CustomerID: BSBEV
+   Original value: London
+   Updated value: Paris
+CustomerID: CONSH
+   Original value: London
+   Updated value: Paris
+CustomerID: EASTC
+   Original value: London
+   Updated value: Paris
+CustomerID: NORTS
+    Original value: London
+    Updated value: Paris
+CustomerID: PARIS
+    Original value: London
+    Updated value: Paris
+CustomerID: SEVES
+    Original value: London
+    Updated value: Paris
+CustomerID: SPECD
+    Original value: London
+    Updated value: Paris
+Total changes: {Added: 0, Removed: 0, Modified: 8}
+```
   
 ## See also
 - [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)

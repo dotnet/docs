@@ -17,9 +17,9 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 2.  Open the Message Security project.  
   
-3.  Add `[ServiceBehavior(Namespace=``http://Microsoft.ServiceModel.Samples``)]` to the `ICalculator` interface definition.  
+3.  Add `[ServiceBehavior(Namespace="http://Microsoft.ServiceModel.Samples")]` to the `ICalculator` interface definition.  
   
-4.  Add `bindingNamespace=``http://Microsoft.ServiceModel.Samples` to the endpoint tag in the App.config for the service.  
+4.  Add `bindingNamespace="http://Microsoft.ServiceModel.Samples"` to the endpoint tag in the App.config for the service.  
   
 5.  Build the Message Security Sample and run Service.exe. Use Internet Explorer and browse to the service's URI (http://localhost:8000/ServiceModelSamples/Service) to ensure that the service is working.  
   

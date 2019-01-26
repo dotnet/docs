@@ -328,7 +328,7 @@ This method copies all of `source` to `destination` even if `source` and `destin
         <returns>Calls to this method are not supported.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-Calls to the <xref:System.Span%601.Equals%2A> method are not supported. Calls to the <xref:System.Span%601.Equals%2A methods produce either of two results:
+Calls to the <xref:System.Span%601.Equals%2A> method are not supported. Calls to the <xref:System.Span%601.Equals%2A> methods produce either of two results:
 
 - If `obj` is a <xref:System.Span%601>, the method call generates compiler error CS1503: "cannot convert from 'System.Span' to 'object'." This is because <xref:System.Span%601> is a [ref struct](~/docs/csharp/reference-semantics-with-value-types.md#ref-struct-type) that cannot be boxed and therefore cannot be converted to an <xref:System.Object>.
 

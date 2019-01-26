@@ -1,6 +1,6 @@
 ---
 title: "Retrieving Data Using a DataReader"
-ms.date: "10/259/2018"
+ms.date: "10/29/2018"
 dev_langs: 
   - "csharp"
   - "vb"

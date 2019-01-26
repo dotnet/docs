@@ -94,7 +94,8 @@ The following are intended to be examples. The exact versions and names may vary
 Ubuntu distributions require the following libraries installed:
 
 * liblttng-ust0
-* libcurl3
+* libcurl3 (for 14.x and 16.x)
+* libcurl4 (for 18.x)
 * libssl1.0.0
 * libkrb5-3
 * zlib1g

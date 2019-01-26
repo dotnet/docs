@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "configuration settings [.NET Framework], applications"
   - "configuration file reference [.NET Framework]"
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # Configuration file schema for the .NET Framework

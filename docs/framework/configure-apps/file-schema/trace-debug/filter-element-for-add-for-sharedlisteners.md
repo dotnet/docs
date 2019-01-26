@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "filters, trace listeners"
   - "trace listeners, filters"
 ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;filter&gt; Element for &lt;add&gt; for &lt;sharedListeners&gt;
 Adds a filter to a listener in the `sharedListeners` collection.  

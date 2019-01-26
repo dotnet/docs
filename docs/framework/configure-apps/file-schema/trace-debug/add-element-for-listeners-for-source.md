@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "add element for <listeners> for <source>"
   - "<add> element for <listeners> for <source>"
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;
 Adds a listener to the `Listeners` collection for a trace source.  

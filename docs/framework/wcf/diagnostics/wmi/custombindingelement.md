@@ -35,4 +35,4 @@ class CustomBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.CustomBinding>
+- <xref:System.ServiceModel.Channels.CustomBinding>

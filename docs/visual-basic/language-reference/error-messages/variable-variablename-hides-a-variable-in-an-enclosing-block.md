@@ -29,5 +29,5 @@ A variable enclosed in a block has the same name as another local variable.
 -   Another common source of this error is an attempt to access a local variable declared within a `Try` block in a separate `Catch` block. To correct this, declare the variable outside the `Try...Catch...Finally` structure.  
   
 ## See also
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)

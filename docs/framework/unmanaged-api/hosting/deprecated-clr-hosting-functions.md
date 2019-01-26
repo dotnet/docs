@@ -153,4 +153,4 @@ This section describes the unmanaged global static functions that earlier versio
  Validates managed module images, and notifies the operating system loader after they have been loaded.  
   
 ## See also
- [.NET Framework 4 Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/net-framework-4-hosting-global-static-functions.md) 
+- [.NET Framework 4 Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/net-framework-4-hosting-global-static-functions.md)

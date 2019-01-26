@@ -51,7 +51,7 @@ The following tables list the classes commonly used for .NET Framework file I/O,
 |<xref:System.IO.StringWriter?displayProperty=nameWithType>|Writes characters to a `String`. Output can be either a stream in any encoding or a `String`.|  
   
 ## See also
- [Composing Streams](../../../../standard/io/composing-streams.md)  
- [File and Stream I/O](../../../../standard/io/index.md)  
- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  
- [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)
+- [Composing Streams](../../../../standard/io/composing-streams.md)
+- [File and Stream I/O](../../../../standard/io/index.md)
+- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)
+- [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)

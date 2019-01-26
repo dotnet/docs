@@ -163,6 +163,6 @@ If you have an operation that will take a long time to complete, and you do not 
 - [Managed Threading](../../../../docs/standard/threading/index.md)
 - [Managed Threading Best Practices](../../../../docs/standard/threading/managed-threading-best-practices.md)
 - [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
-- [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)  
+- [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)
 - [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md)
 - [BackgroundWorker Component](backgroundworker-component.md)

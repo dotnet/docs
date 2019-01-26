@@ -20,6 +20,6 @@ A structure definition does not include any nonshared variables or nonshared non
 -   Define at least one variable or event that is not `Shared`. If you define only one event, it must be noncustom as well as nonshared.  
   
 ## See also
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)  
- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)

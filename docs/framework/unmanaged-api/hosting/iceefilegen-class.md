@@ -238,4 +238,4 @@ public:
  **.NET Framework Version:** 1.0  
   
 ## See also
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

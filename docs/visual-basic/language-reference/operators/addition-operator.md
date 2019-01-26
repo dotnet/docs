@@ -103,10 +103,10 @@ expression1 + expression2
  To eliminate ambiguity, you should use the `&` operator instead of `+` for concatenation.  
   
 ## See also
- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)
+- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)
+- [Arithmetic Operators](../../../visual-basic/language-reference/operators/arithmetic-operators.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Arithmetic Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)

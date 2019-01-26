@@ -120,5 +120,5 @@ If you embed type information in an application that references COM objects, you
   
 ## See also
 
-- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)  
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](../../../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md)
 - [/link (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/link-compiler-option.md)

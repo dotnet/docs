@@ -28,4 +28,4 @@ HRESULT NotAutodone ( );
 ```  
   
 ## See also
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

@@ -76,4 +76,4 @@ The following restrictions apply to collectible assemblies:
 
 ## See also
 
-[Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)
+- [Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)

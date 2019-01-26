@@ -42,5 +42,5 @@ Windows Communication Foundation (WCF) traces internal events in the Windows eve
  When you click "more information" when viewing an event in the Event Viewer, the Event Viewer may send information across the Internet. For more information, see the Event Viewer help.  
   
 ## See also
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

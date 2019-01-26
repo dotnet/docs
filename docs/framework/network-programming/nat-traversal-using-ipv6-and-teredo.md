@@ -39,11 +39,11 @@ Enhancements were made that provide support for Network Address Translation (NAT
  For applications that use the <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> and related classes, the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> and <xref:System.Net.Sockets.Socket.SetSocketOption%2A> methods can be used with the <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType> socket option to query, enable, or disable NAT traversal.  
   
 ## See also
- <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=nameWithType>  
- <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A?displayProperty=nameWithType>  
- <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A?displayProperty=nameWithType>  
- <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A?displayProperty=nameWithType>  
- <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A?displayProperty=nameWithType>
+- <xref:System.Net.IPAddress.IsIPv6Teredo%2A?displayProperty=nameWithType>
+- <xref:System.Net.NetworkInformation.IPGlobalProperties.BeginGetUnicastAddresses%2A?displayProperty=nameWithType>
+- <xref:System.Net.NetworkInformation.IPGlobalProperties.EndGetUnicastAddresses%2A?displayProperty=nameWithType>
+- <xref:System.Net.NetworkInformation.IPGlobalProperties.GetUnicastAddresses%2A?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.TcpListener.AllowNatTraversal%2A?displayProperty=nameWithType>
+- <xref:System.Net.Sockets.UdpClient.AllowNatTraversal%2A?displayProperty=nameWithType>

@@ -148,11 +148,11 @@ A resource is an object that can be reused in different places in your applicati
  <xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../../../docs/framework/xaml-services/x-type-markup-extension.md). For details, see [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md).  
   
 ## See also
- <xref:System.Windows.ResourceDictionary>  
- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)  
- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)  
- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)  
- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)  
- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)
+- <xref:System.Windows.ResourceDictionary>
+- [Application Resources](../../../../docs/framework/wpf/advanced/optimizing-performance-application-resources.md)
+- [Resources and Code](../../../../docs/framework/wpf/advanced/resources-and-code.md)
+- [Define and Reference a Resource](../../../../docs/framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)
+- [x:Type Markup Extension](../../../../docs/framework/xaml-services/x-type-markup-extension.md)
+- [StaticResource Markup Extension](../../../../docs/framework/wpf/advanced/staticresource-markup-extension.md)
+- [DynamicResource Markup Extension](../../../../docs/framework/wpf/advanced/dynamicresource-markup-extension.md)

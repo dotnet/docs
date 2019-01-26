@@ -29,7 +29,7 @@ Query and axis operations are often implemented to use deferred execution. This 
   
 ## See also
 
-- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)  
-- [Concepts and Terminology (Functional Transformation) (C#)](../../../../csharp/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)  
-- [Aggregation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)  
+- [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md)
+- [Concepts and Terminology (Functional Transformation) (C#)](../../../../csharp/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)
+- [Aggregation Operations (C#)](../../../../csharp/programming-guide/concepts/linq/aggregation-operations.md)
 - [yield](../../../../csharp/language-reference/keywords/yield.md)

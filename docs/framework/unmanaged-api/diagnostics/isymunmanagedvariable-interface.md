@@ -38,4 +38,4 @@ Represents a variable, such as a parameter, a local variable, or a field.
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

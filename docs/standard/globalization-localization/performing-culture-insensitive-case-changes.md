@@ -63,8 +63,8 @@ static object LookupKey(string key)
   
 ## See also
 
-- <xref:System.String.ToUpper%2A?displayProperty=nameWithType>  
-- <xref:System.String.ToLower%2A?displayProperty=nameWithType>  
-- <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>  
-- <xref:System.Char.ToLower%2A?displayProperty=nameWithType>  
+- <xref:System.String.ToUpper%2A?displayProperty=nameWithType>
+- <xref:System.String.ToLower%2A?displayProperty=nameWithType>
+- <xref:System.Char.ToUpper%2A?displayProperty=nameWithType>
+- <xref:System.Char.ToLower%2A?displayProperty=nameWithType>
 - [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)

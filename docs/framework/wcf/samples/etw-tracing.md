@@ -101,4 +101,4 @@ Logman stop Wcf
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\AnalyticTrace`  
   
 ## See also
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

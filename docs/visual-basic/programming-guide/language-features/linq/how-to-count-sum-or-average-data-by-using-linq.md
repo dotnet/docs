@@ -72,9 +72,9 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
 4.  Press F5 to run your project and view the results.  
   
 ## See also
- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [Queries](../../../../visual-basic/language-reference/queries/index.md)  
- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)  
- [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)  
- [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)
+- [LINQ](../../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [Queries](../../../../visual-basic/language-reference/queries/index.md)
+- [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
+- [DataContext Methods (O/R Designer)](/visualstudio/data-tools/datacontext-methods-o-r-designer)
+- [Aggregate Clause](../../../../visual-basic/language-reference/queries/aggregate-clause.md)
+- [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)

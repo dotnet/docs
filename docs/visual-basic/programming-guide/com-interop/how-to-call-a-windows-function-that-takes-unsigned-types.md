@@ -26,7 +26,7 @@ If you are consuming a class, module, or structure that has members of unsigned 
   
 3.  Consult the documentation for the Windows function you are calling to find the names and values of the constants it uses. Many of these are defined in the WinUser.h file.  
   
-4.  Declare the necessary constants in your code. Many Windows constants are 32-bit unsigned values, and you should declare these `As``UInteger`.  
+4.  Declare the necessary constants in your code. Many Windows constants are 32-bit unsigned values, and you should declare these `As UInteger`.  
   
 5.  Call the function in the normal way. The following example calls the Windows function `MessageBox`, which takes an unsigned integer argument.  
   
@@ -72,8 +72,8 @@ If you are consuming a class, module, or structure that has members of unsigned 
     >  Calling the Windows API requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
 ## See also
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [UInteger Data Type](../../../visual-basic/language-reference/data-types/uinteger-data-type.md)
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)

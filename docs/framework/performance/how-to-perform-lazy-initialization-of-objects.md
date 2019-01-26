@@ -71,5 +71,5 @@ End Sub
  [!code-vb[CDS#13](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/lazyhowto.vb#13)]  
   
 ## See also
- <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>  
- [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md)
+- <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>
+- [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md)

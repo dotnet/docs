@@ -25,5 +25,5 @@ This example shows how to use the get and set methods that are defined on <xref:
  ![a screenshot depicts a WPF user interface with two columns, the right side has a 3 x 3 grid and the left has buttons to move a colored rectangle between the columns and rows of the grid](./media/grid-methods-sample.png) 
   
 ## See also
- <xref:System.Windows.Controls.Grid>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.Grid>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

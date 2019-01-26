@@ -25,4 +25,4 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[How to: Debug Empty Query Results Sets (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
   
 ## See also
- [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)
+- [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md)

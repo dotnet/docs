@@ -150,5 +150,5 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\LooselyTypedExtensions`  
   
 ## See also
- [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)  
- [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)
+- [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)
+- [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)

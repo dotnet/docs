@@ -16,4 +16,4 @@ author: "BrucePerlerMS"
 -   [WSTrustChannelFactory and WSTrustChannel](../../../docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md)  
   
 ## See also
- [Windows Identity Foundation](../../../docs/framework/security/index.md)
+- [Windows Identity Foundation](../../../docs/framework/security/index.md)

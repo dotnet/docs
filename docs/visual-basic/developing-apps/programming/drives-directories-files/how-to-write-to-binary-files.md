@@ -36,5 +36,5 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A> method write
 -   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>  
- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes%2A>
+- [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)

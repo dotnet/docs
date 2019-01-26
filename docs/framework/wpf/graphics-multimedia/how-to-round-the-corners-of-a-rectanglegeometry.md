@@ -20,6 +20,6 @@ To round the corners of a <xref:System.Windows.Media.RectangleGeometry>, set its
 Rectangles with Rounded Corners  
   
 ## See also
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)  
- [Create a Shape by Using a PathGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)
+- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)
+- [Create a Shape by Using a PathGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-shape-by-using-a-pathgeometry.md)

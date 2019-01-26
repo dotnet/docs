@@ -136,5 +136,5 @@ ms.author: "mairaw"
 ```  
   
 ## See also
- [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)
+- [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)

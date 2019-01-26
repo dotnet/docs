@@ -22,7 +22,7 @@ The following example demonstrates how passing a [struct](../../../csharp/langua
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
-- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
+- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
 - [Passing Parameters](../../../csharp/programming-guide/classes-and-structs/passing-parameters.md)

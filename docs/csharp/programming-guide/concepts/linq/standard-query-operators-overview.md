@@ -99,9 +99,9 @@ foreach (var obj in query)
   
 ## See also
 
-- <xref:System.Linq.Enumerable>  
-- <xref:System.Linq.Queryable>  
-- [Introduction to LINQ Queries (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
-- [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)  
-- [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)  
+- <xref:System.Linq.Enumerable>
+- <xref:System.Linq.Queryable>
+- [Introduction to LINQ Queries (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [Query Expression Syntax for Standard Query Operators (C#)](../../../../csharp/programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md)
+- [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md)
 - [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)

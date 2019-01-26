@@ -135,8 +135,8 @@ End Class
  For more information, see the Binding to Collections section in the [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
   
 ## See also
- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)  
- [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md)  
- [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)
+- [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md)
+- [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

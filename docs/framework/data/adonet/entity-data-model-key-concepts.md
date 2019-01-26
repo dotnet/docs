@@ -33,4 +33,4 @@ The Entity Data Model (EDM) uses three key concepts to describe the structure of
  [!code-xml[EDM_Example_Model#EDMExampleCSDL](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#edmexamplecsdl)]  
   
 ## See also
- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
+- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)

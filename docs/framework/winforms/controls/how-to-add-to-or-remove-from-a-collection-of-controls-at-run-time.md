@@ -95,5 +95,5 @@ Common tasks in application development are adding controls to and removing cont
     ```  
   
 ## See also
- <xref:System.Windows.Forms.Panel>  
- [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)
+- <xref:System.Windows.Forms.Panel>
+- [Panel Control](../../../../docs/framework/winforms/controls/panel-control-windows-forms.md)

@@ -175,4 +175,4 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ```
 
 ## See also
- [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
+- [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)

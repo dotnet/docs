@@ -49,4 +49,4 @@ typedef struct _StackOverflowInfo {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)

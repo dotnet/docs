@@ -25,6 +25,6 @@ You can adjust image parameters, such as quality and compression level, but you 
 -   A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
- [How to: List Installed Encoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-encoders.md)  
- [Types of Bitmaps](../../../../docs/framework/winforms/advanced/types-of-bitmaps.md)  
- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)
+- [How to: List Installed Encoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-encoders.md)
+- [Types of Bitmaps](../../../../docs/framework/winforms/advanced/types-of-bitmaps.md)
+- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)

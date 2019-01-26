@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "<filter> element for <add> for <listeners> for <source>"
   - "filter element for <add> for <listeners> for <source>"
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;
 Adds a filter to a listener in the `Listeners` collection for a trace source.  
@@ -87,8 +85,8 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 ```  
   
 ## See also
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.TraceFilter>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.TraceFilter>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

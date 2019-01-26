@@ -113,5 +113,5 @@ public override BindingElementCollection CreateBindingElements()
  Instead of creating an entirely new binding class, it may be possible for you to extend one of the existing system-provided bindings. Much like the preceding case, you must override the <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method and the <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property.  
   
 ## See also
- <xref:System.ServiceModel.Channels.Binding>  
- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
+- <xref:System.ServiceModel.Channels.Binding>
+- [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)

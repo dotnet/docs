@@ -200,4 +200,4 @@ Press <ENTER> to terminate client.
         >  This command must be typed in as a single line of text.  
   
 ## See also
- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)
+- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)

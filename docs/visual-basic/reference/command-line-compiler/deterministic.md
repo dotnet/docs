@@ -45,5 +45,5 @@ The compiler considers the following inputs for the purpose of determinism:
 When sources are publicly available, deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. It can also be useful in a continuous build system for determining whether build steps that are dependent on changes to a binary need to be executed. 
 
 ## See also
-[Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
-[Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

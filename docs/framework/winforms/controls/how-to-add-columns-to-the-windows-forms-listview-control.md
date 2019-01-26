@@ -23,6 +23,6 @@ In the Details view, the <xref:System.Windows.Forms.ListView> control can displa
      [!code-vb[System.Windows.Forms.ListViewLegacyTopics#31](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewLegacyTopics/VB/Class1.vb#31)]  
   
 ## See also
- <xref:System.Windows.Forms.ListView>  
- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)
+- <xref:System.Windows.Forms.ListView>
+- [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)
+- [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)

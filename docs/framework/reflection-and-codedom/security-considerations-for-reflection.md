@@ -99,12 +99,12 @@ Reflection provides the ability to obtain information about types and members, a
 -   Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=nameWithType> flag is required.  
   
 ## See also
- <xref:System.Security.Permissions.ReflectionPermissionFlag>  
- <xref:System.Security.Permissions.ReflectionPermission>  
- <xref:System.Security.Permissions.SecurityPermission>  
- [Security Changes](../../../docs/framework/security/security-changes.md)  
- [Code Access Security](../../../docs/framework/misc/code-access-security.md)  
- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)  
- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)  
- [Applying Attributes](../../../docs/standard/attributes/applying-attributes.md)  
- [Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)
+- <xref:System.Security.Permissions.ReflectionPermissionFlag>
+- <xref:System.Security.Permissions.ReflectionPermission>
+- <xref:System.Security.Permissions.SecurityPermission>
+- [Security Changes](../../../docs/framework/security/security-changes.md)
+- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)
+- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Applying Attributes](../../../docs/standard/attributes/applying-attributes.md)
+- [Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)

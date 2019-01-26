@@ -74,4 +74,4 @@ This configuration element defines a standard endpoint that is used by services 
 ```  
   
 ## See also
- <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>
+- <xref:System.ServiceModel.Discovery.UdpAnnouncementEndpoint>

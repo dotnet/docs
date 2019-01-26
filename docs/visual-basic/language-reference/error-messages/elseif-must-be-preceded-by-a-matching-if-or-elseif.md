@@ -22,4 +22,4 @@ ms.assetid: 5215585e-2efa-485a-9efe-9833a1cc83a0
 3.  If everything else is in order, add an `#If` directive to the beginning of the conditional compilation block.  
   
 ## See also
- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
+- [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)

@@ -102,11 +102,11 @@ shape = square
 ```  
   
 ## See also
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)  
- [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)  
- [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
+- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Conversions Between Strings and Other Types](../../../../visual-basic/programming-guide/language-features/data-types/conversions-between-strings-and-other-types.md)
+- [How to: Convert an Object to Another Type in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/how-to-convert-an-object-to-another-type.md)
+- [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)

@@ -14,5 +14,5 @@ Id: 134
  COM+: An error occurred while creating a COM instance.  
   
 ## See also
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

@@ -632,9 +632,9 @@ private void stopButton_Click(object sender, System.EventArgs e)
 - <xref:System.Windows.Forms.Design.ParentControlDesigner>
 - <xref:System.Windows.Forms.Design.DocumentDesigner>
 - <xref:System.ComponentModel.Design.IRootDesigner>
-- <xref:System.ComponentModel.Design.DesignerVerb> 
+- <xref:System.ComponentModel.Design.DesignerVerb>
 - <xref:System.Drawing.Design.UITypeEditor>
 - <xref:System.ComponentModel.BackgroundWorker>
 - [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))
-- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) 
+- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
 - [Custom Designers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/h51z5c0x(v=vs.120))

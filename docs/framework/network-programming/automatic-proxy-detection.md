@@ -62,6 +62,6 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
  Requests that do not have a proxy use your application domain's default proxy, which is available in the <xref:System.Net.WebRequest.DefaultWebProxy%2A> property.  
   
 ## See also
- <xref:System.Net.WebProxy>  
- <xref:System.Net.WebRequest>  
- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)
+- <xref:System.Net.WebProxy>
+- <xref:System.Net.WebRequest>
+- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)

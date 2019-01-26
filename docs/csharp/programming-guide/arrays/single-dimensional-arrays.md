@@ -51,8 +51,8 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
 ## See also
 
-- <xref:System.Array>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)  
-- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)  
+- <xref:System.Array>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Arrays](../../../csharp/programming-guide/arrays/index.md)
+- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
 - [Jagged Arrays](../../../csharp/programming-guide/arrays/jagged-arrays.md)

@@ -41,4 +41,4 @@ Configures Windows Communication Foundation (WCF) listener's diagnostics functio
 |[\<system.serviceModel.activation>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel-activation.md)|Contains configuration settings for the listener process SMSvcHost.exe.|  
   
 ## See also
- <xref:System.ServiceModel.Activation.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Activation.Configuration.DiagnosticSection>

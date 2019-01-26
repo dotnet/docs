@@ -116,10 +116,10 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     ```  
   
 ## See also
- <xref:System.Windows.Forms.LinkLabel.LinkArea%2A>  
- <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>  
- <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>  
- <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A>  
- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)  
- [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/link-to-an-object-or-web-page-with-wf-linklabel-control.md)  
- [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)
+- <xref:System.Windows.Forms.LinkLabel.LinkArea%2A>
+- <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>
+- <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>
+- <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A>
+- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)
+- [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/link-to-an-object-or-web-page-with-wf-linklabel-control.md)
+- [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)

@@ -38,12 +38,12 @@ This topic shows how to implement your own extension methods for any .NET type. 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)  
-- [LINQ (Language-Integrated Query)](../../../csharp/linq/linq-in-csharp.md)  
-- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)  
-- [protected](../../../csharp/language-reference/keywords/protected.md)  
-- [internal](../../../csharp/language-reference/keywords/internal.md)  
-- [public](../../../csharp/language-reference/keywords/public.md)  
-- [this](../../../csharp/language-reference/keywords/this.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md)
+- [LINQ (Language-Integrated Query)](../../../csharp/linq/linq-in-csharp.md)
+- [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
+- [protected](../../../csharp/language-reference/keywords/protected.md)
+- [internal](../../../csharp/language-reference/keywords/internal.md)
+- [public](../../../csharp/language-reference/keywords/public.md)
+- [this](../../../csharp/language-reference/keywords/this.md)
 - [namespace](../../../csharp/language-reference/keywords/namespace.md)

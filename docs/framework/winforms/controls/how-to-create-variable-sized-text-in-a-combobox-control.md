@@ -62,9 +62,9 @@ End Sub
 -   References to the <xref:System.Windows.Forms?displayProperty=nameWithType> and <xref:System.Drawing?displayProperty=nameWithType> namespaces.  
   
 ## See also
- <xref:System.Windows.Forms.ComboBox.DrawItem>  
- <xref:System.Windows.Forms.DrawItemEventArgs>  
- <xref:System.Windows.Forms.ComboBox.MeasureItem>  
- [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)  
- [ListBox Control](../../../../docs/framework/winforms/controls/listbox-control-windows-forms.md)  
- [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md)
+- <xref:System.Windows.Forms.ComboBox.DrawItem>
+- <xref:System.Windows.Forms.DrawItemEventArgs>
+- <xref:System.Windows.Forms.ComboBox.MeasureItem>
+- [Controls with Built-In Owner-Drawing Support](../../../../docs/framework/winforms/controls/controls-with-built-in-owner-drawing-support.md)
+- [ListBox Control](../../../../docs/framework/winforms/controls/listbox-control-windows-forms.md)
+- [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md)

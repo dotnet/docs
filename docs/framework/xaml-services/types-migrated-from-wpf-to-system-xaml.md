@@ -120,4 +120,4 @@ In [!INCLUDE[net_v35_long](../../../includes/net-v35-long-md.md)] and [!INCLUDE[
  If you are including references to both WPF assemblies and System.Xaml, and you also are using `include` statements for both the <xref:System.Windows.Markup> and <xref:System.Xaml> namespaces, you may need to fully qualify the calls to these APIs in order to resolve the types without ambiguity.  
   
 ## See also
- [XAML Services](../../../docs/framework/xaml-services/index.md)
+- [XAML Services](../../../docs/framework/xaml-services/index.md)

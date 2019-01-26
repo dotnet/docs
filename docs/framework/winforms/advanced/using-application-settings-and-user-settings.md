@@ -37,4 +37,4 @@ Starting with the .NET Framework 2.0, you can create and access values that are 
  Details how to add multiple sets of settings to an application with C#.  
   
 ## See also
- [Application Settings for Windows Forms](../../../../docs/framework/winforms/advanced/application-settings-for-windows-forms.md)
+- [Application Settings for Windows Forms](../../../../docs/framework/winforms/advanced/application-settings-for-windows-forms.md)

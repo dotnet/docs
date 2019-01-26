@@ -60,8 +60,8 @@ ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
     ```  
   
 ## See also
- <xref:System.Windows.Forms.StatusBar>  
- <xref:System.Windows.Forms.ToolStripStatusLabel>  
- [Walkthrough: Updating Status Bar Information at Run Time](../../../../docs/framework/winforms/controls/walkthrough-updating-status-bar-information-at-run-time.md)  
- [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)  
- [StatusBar Control Overview](../../../../docs/framework/winforms/controls/statusbar-control-overview-windows-forms.md)
+- <xref:System.Windows.Forms.StatusBar>
+- <xref:System.Windows.Forms.ToolStripStatusLabel>
+- [Walkthrough: Updating Status Bar Information at Run Time](../../../../docs/framework/winforms/controls/walkthrough-updating-status-bar-information-at-run-time.md)
+- [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](../../../../docs/framework/winforms/controls/determine-which-panel-wf-statusbar-control-was-clicked.md)
+- [StatusBar Control Overview](../../../../docs/framework/winforms/controls/statusbar-control-overview-windows-forms.md)

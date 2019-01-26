@@ -45,4 +45,4 @@ Represents a configuration element that contains a namespace to prefix mapping t
 |[\<namespaceTable>](../../../../../docs/framework/configure-apps/file-schema/wcf/namespacetable.md)|Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.|  
   
 ## See also
- <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>    
+- <xref:System.ServiceModel.Routing.Configuration.NamespaceElement?displayProperty=nameWithType>

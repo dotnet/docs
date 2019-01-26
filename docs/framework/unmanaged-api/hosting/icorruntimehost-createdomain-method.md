@@ -60,6 +60,6 @@ HRESULT CreateDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

@@ -38,4 +38,4 @@ Services are defined in the `services` section of the configuration file. Each s
 |[\<system.serviceModel>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md)|The root element of all Windows Communication Foundation (WCF) configuration elements.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.ServicesSection>
+- <xref:System.ServiceModel.Configuration.ServicesSection>

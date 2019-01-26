@@ -53,8 +53,8 @@ The `DeleteFile` method of the `My.Computer.FileSystem` object allows you to del
 -   The user cancelled the operation and `onUserCancel` is set to `ThrowException` (<xref:System.OperationCanceledException>).  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileIO.UICancelOption>  
- <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
- <xref:Microsoft.VisualBasic.FileIO.UIOption>  
- <xref:Microsoft.VisualBasic.FileIO.RecycleOption>  
- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)
+- <xref:Microsoft.VisualBasic.FileIO.UICancelOption>
+- <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+- <xref:Microsoft.VisualBasic.FileIO.UIOption>
+- <xref:Microsoft.VisualBasic.FileIO.RecycleOption>
+- [How to: Get the Collection of Files in a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-get-the-collection-of-files-in-a-directory.md)

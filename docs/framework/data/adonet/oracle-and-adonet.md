@@ -72,5 +72,5 @@ csc /r:System.Data.OracleClient.dll
  Describes generic classes that allow you to write provider-independent code in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
   
 ## See also
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

@@ -42,7 +42,7 @@ Rotation in a four-dimensional color space is difficult to visualize. We can mak
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `RotationInput.bmp` with an image file name and path valid on your system.  
   
 ## See also
- <xref:System.Drawing.Imaging.ColorMatrix>  
- <xref:System.Drawing.Imaging.ImageAttributes>  
- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)  
- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)
+- <xref:System.Drawing.Imaging.ColorMatrix>
+- <xref:System.Drawing.Imaging.ImageAttributes>
+- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
+- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)

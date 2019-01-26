@@ -70,11 +70,11 @@ SetStyle(ControlStyles.ResizeRedraw, true);
 >  Use the <xref:System.Windows.Forms.Control.Region%2A?displayProperty=nameWithType> property to implement a non-rectangular control.  
   
 ## See also
- <xref:System.Windows.Forms.Control.Region%2A>  
- <xref:System.Windows.Forms.ControlStyles>  
- <xref:System.Drawing.Graphics>  
- <xref:System.Windows.Forms.Control.OnPaint%2A>  
- <xref:System.Windows.Forms.PaintEventArgs>  
- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)  
- [Constituent Controls](../../../../docs/framework/winforms/controls/constituent-controls.md)  
- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
+- <xref:System.Windows.Forms.Control.Region%2A>
+- <xref:System.Windows.Forms.ControlStyles>
+- <xref:System.Drawing.Graphics>
+- <xref:System.Windows.Forms.Control.OnPaint%2A>
+- <xref:System.Windows.Forms.PaintEventArgs>
+- [How to: Create Graphics Objects for Drawing](../../../../docs/framework/winforms/advanced/how-to-create-graphics-objects-for-drawing.md)
+- [Constituent Controls](../../../../docs/framework/winforms/controls/constituent-controls.md)
+- [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)

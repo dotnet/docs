@@ -19,9 +19,9 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
 2.  In the **Properties** window, set the form's <xref:System.Windows.Forms.Form.CancelButton%2A> property to the <xref:System.Windows.Forms.Button> control's name.  
   
 ## See also
- <xref:System.Windows.Forms.Form.CancelButton%2A>  
- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)  
- [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)  
- [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)  
- [How to: Designate a Windows Forms Button as the Accept Button Using the Designer](../../../../docs/framework/winforms/controls/designate-a-wf-button-as-the-accept-button-using-the-designer.md)  
- [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)
+- <xref:System.Windows.Forms.Form.CancelButton%2A>
+- [Button Control Overview](../../../../docs/framework/winforms/controls/button-control-overview-windows-forms.md)
+- [Ways to Select a Windows Forms Button Control](../../../../docs/framework/winforms/controls/ways-to-select-a-windows-forms-button-control.md)
+- [How to: Respond to Windows Forms Button Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-button-clicks.md)
+- [How to: Designate a Windows Forms Button as the Accept Button Using the Designer](../../../../docs/framework/winforms/controls/designate-a-wf-button-as-the-accept-button-using-the-designer.md)
+- [Button Control](../../../../docs/framework/winforms/controls/button-control-windows-forms.md)

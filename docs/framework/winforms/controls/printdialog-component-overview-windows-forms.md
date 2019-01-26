@@ -17,5 +17,5 @@ The Windows Forms [PrintDialog](../../../../docs/framework/winforms/controls/pri
  When it is added to a form, the <xref:System.Windows.Forms.PrintDialog> component appears in the tray at the bottom of the Windows Forms Designer.  
   
 ## See also
- <xref:System.Windows.Forms.PrintDialog>  
- [PrintDialog Component](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md)
+- <xref:System.Windows.Forms.PrintDialog>
+- [PrintDialog Component](../../../../docs/framework/winforms/controls/printdialog-component-windows-forms.md)

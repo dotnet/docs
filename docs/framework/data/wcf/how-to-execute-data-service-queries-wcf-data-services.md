@@ -42,4 +42,4 @@ ms.assetid: 62997821-e0c6-4c4d-9fb7-1273fb5e5d18
  [!code-vb[Astoria Northwind Client#GetAllCustomersExplicit](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#getallcustomersexplicit)]  
   
 ## See also
- [How to: Add Query Options to a Data Service Query](../../../../docs/framework/data/wcf/how-to-add-query-options-to-a-data-service-query-wcf-data-services.md)
+- [How to: Add Query Options to a Data Service Query](../../../../docs/framework/data/wcf/how-to-add-query-options-to-a-data-service-query-wcf-data-services.md)

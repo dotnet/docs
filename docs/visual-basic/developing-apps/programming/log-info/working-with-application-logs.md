@@ -95,5 +95,5 @@ The `My.Applicaton.Log` and `My.Log` objects make it easy to write logging and t
 -   **Avoid denial of service.** If your application writes too much information to the log, it could fill the log or make finding important information difficult.  
   
 ## See also
- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>  
- [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/index.md)
+- <xref:Microsoft.VisualBasic.Logging.Log?displayProperty=nameWithType>
+- [Logging Information from the Application](../../../../visual-basic/developing-apps/programming/log-info/index.md)

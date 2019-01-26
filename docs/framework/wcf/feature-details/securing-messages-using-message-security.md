@@ -58,7 +58,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
  When using both transport security and message security, the certificate used to secure the message both at the transport and the SOAP message level must be the same.  
   
 ## See also
- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)
+- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)
+- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

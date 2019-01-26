@@ -165,13 +165,13 @@ End Operator
  [!code-vb[VbVbalrStatements#44](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/operator-statement_1.vb)]  
   
 ## See also
- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)  
- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)  
- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)  
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)  
- [How to: Call an Operator Procedure](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)  
- [How to: Use a Class that Defines Operators](../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)
+- [IsFalse Operator](../../../visual-basic/language-reference/operators/isfalse-operator.md)
+- [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md)
+- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)
+- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)
+- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
+- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [How to: Call an Operator Procedure](../../../visual-basic/programming-guide/language-features/procedures/how-to-call-an-operator-procedure.md)
+- [How to: Use a Class that Defines Operators](../../../visual-basic/programming-guide/language-features/procedures/how-to-use-a-class-that-defines-operators.md)

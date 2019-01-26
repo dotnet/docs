@@ -80,4 +80,4 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  Explains how to take advantage of Windows XP-specific features that apply to the <xref:System.Windows.Forms.ListView> control.  
   
 ## See also
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)

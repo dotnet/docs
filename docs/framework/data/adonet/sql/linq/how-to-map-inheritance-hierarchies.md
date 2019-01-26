@@ -45,5 +45,5 @@ To implement inheritance mapping in [!INCLUDE[vbteclinq](../../../../../../inclu
  [!code-vb[DLinqCustomize#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#4)]  
   
 ## See also
- [Inheritance Support](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md)  
- [How to: Customize Entity Classes by Using the Code Editor](../../../../../../docs/framework/data/adonet/sql/linq/how-to-customize-entity-classes-by-using-the-code-editor.md)
+- [Inheritance Support](../../../../../../docs/framework/data/adonet/sql/linq/inheritance-support.md)
+- [How to: Customize Entity Classes by Using the Code Editor](../../../../../../docs/framework/data/adonet/sql/linq/how-to-customize-entity-classes-by-using-the-code-editor.md)

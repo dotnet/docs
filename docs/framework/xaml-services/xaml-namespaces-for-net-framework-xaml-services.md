@@ -58,4 +58,4 @@ A XAML namespace is a concept that expands on the definition of an XML namespace
  Two other API that are relevant for XAML namespace handling in .NET Framework XAML Services are the attributes <xref:System.Windows.Markup.XmlnsDefinitionAttribute> and <xref:System.Windows.Markup.XmlnsPrefixAttribute>. These attributes apply to assemblies. <xref:System.Windows.Markup.XmlnsDefinitionAttribute> is used by a XAML schema context to interpret any XAML namespace declaration that includes a URI. <xref:System.Windows.Markup.XmlnsPrefixAttribute> is used by tools that emit XAML so that a particular XAML namespace can be serialized with a predictable prefix. For more information, see [XAML-Related CLR Attributes for Custom Types and Libraries](../../../docs/framework/xaml-services/xaml-related-clr-attributes-for-custom-types-and-libraries.md).  
   
 ## See also
- [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md)
+- [Understanding XAML Node Stream Structures and Concepts](../../../docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md)

@@ -75,4 +75,4 @@ The following values returned by this function are defined in the *WinError.h* h
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

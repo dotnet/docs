@@ -39,5 +39,5 @@ Callbacks are extensibility points that allow a framework to call back into user
   
 ## See also
 
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
+- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

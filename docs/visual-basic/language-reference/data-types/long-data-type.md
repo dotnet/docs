@@ -72,10 +72,10 @@ Dim number = &H_0FAC_0326_1489_D68CL
 
 ## See also
 
-<xref:System.Int64>
-[Data Types](../../../visual-basic/language-reference/data-types/index.md)   
-[Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)   
-[Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)   
-[Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)   
-[Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)   
-[Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.Int64>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)
+- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

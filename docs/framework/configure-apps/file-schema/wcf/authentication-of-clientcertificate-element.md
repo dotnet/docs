@@ -99,11 +99,11 @@ Specifies authentication behaviors for client certificates used by a service.
 ```  
   
 ## See also
- <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>  
- <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>  
- <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication>
+- <xref:System.ServiceModel.Security.X509CertificateValidationMode>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Authentication%2A>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Authentication%2A>
+- <xref:System.ServiceModel.Configuration.X509ClientCertificateAuthenticationElement>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

@@ -48,4 +48,4 @@ HRESULT GetParameters(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

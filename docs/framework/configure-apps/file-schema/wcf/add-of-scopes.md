@@ -49,4 +49,4 @@ Adds a custom scope Uri that can be used to filter service endpoints during quer
 |[\<scopes>](../../../../../docs/framework/configure-apps/file-schema/wcf/scopes.md)|Contains a collection of configuration elements that specify custom scope Uris that can be used to filter service endpoints during query.|  
   
 ## See also
- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>
+- <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior>

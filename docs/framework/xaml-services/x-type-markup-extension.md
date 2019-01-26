@@ -74,7 +74,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
  In WPF, you can use XAML 2009 features but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features.  
   
 ## See also
- <xref:System.Windows.Style>  
- [Styling and Templating](../../../docs/framework/wpf/controls/styling-and-templating.md)  
- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)  
- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- <xref:System.Windows.Style>
+- [Styling and Templating](../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

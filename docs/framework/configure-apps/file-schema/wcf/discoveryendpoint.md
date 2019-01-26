@@ -80,4 +80,4 @@ The standard endpoint configuration is defined per service and cannot be shared 
   
 ## See also
 
-<xref:System.ServiceModel.Discovery.DiscoveryEndpoint>
+- <xref:System.ServiceModel.Discovery.DiscoveryEndpoint>

@@ -50,5 +50,5 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layou
  The <xref:System.Windows.Forms.TableLayoutPanel> control does not support visual inheritance in the Windows Forms Designer. A <xref:System.Windows.Forms.TableLayoutPanel> control in a derived class appears as "locked" at design time.  
   
 ## See also
- <xref:System.Windows.Forms.TableLayoutPanel>  
- <xref:System.Windows.Forms.FlowLayoutPanel>
+- <xref:System.Windows.Forms.TableLayoutPanel>
+- <xref:System.Windows.Forms.FlowLayoutPanel>

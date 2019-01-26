@@ -52,5 +52,5 @@ HRESULT Next(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
- [ICorDebugHeapSegmentEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugHeapSegmentEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

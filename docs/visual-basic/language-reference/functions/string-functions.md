@@ -76,6 +76,6 @@ The following table lists the functions that Visual Basic provides to search and
  [!code-vb[VbVbalrStrings#27](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/string-functions_6.vb)]  
   
 ## See also
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)  
- [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)
+- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+- [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)

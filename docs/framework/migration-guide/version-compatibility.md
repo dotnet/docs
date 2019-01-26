@@ -60,8 +60,8 @@ Backward compatibility means that an app that was developed for a particular ver
  If you cannot find a suitable workaround for your issue, remember that the .NET Framework 4.5 (or one of its point releases) runs side by side with versions 1.1, 2.0, and 3.5, and is an in-place update that replaces version 4. For apps that target versions 1.1, 2.0, and 3.5, you can install the appropriate version of the .NET Framework on the target machine to run the app in its best environment. For more information about side-by-side execution, see [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md).  
   
 ## See also
- [What's New](../../../docs/framework/whats-new/index.md)  
- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)  
- [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)  
- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/p/?LinkId=248212)  
- [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)
+- [What's New](../../../docs/framework/whats-new/index.md)
+- [What's Obsolete in the Class Library](../../../docs/framework/whats-new/whats-obsolete.md)
+- [Application Compatibility](../../../docs/framework/migration-guide/application-compatibility.md)
+- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/p/?LinkId=248212)
+- [.NET Framework 4 Migration Issues](../../../docs/framework/migration-guide/net-framework-4-migration-issues.md)

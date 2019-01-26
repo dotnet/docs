@@ -10,6 +10,6 @@ System.ServiceModel.Channels.SocketConnectionCreate
  This trace is emitted in the first Process Action activity performed by the client, and in the Receive Bytes activity on the service. It provides the local and remote IP addresses. It is emitted at Information level.  
   
 ## See also
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

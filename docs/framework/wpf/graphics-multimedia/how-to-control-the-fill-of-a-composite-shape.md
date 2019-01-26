@@ -56,5 +56,5 @@ The <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property of a <xref:Sy
 ## Example  
   
 ## See also
- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Create a Composite Shape](../../../../docs/framework/wpf/graphics-multimedia/how-to-create-a-composite-shape.md)
+- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)

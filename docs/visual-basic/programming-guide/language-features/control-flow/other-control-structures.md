@@ -16,9 +16,9 @@ Visual Basic provides control structures that help you dispose of a resource or 
  The `With...End With` construction lets you specify an object reference once and then run a series of statements that access its members. This can simplify your code and improve performance because Visual Basic does not have to re-establish the reference for each statement that accesses it. For more information, see [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md).  
   
 ## See also
- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)  
- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  
- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)  
- [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md)  
- [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+- [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
+- [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)
+- [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
+- [Nested Control Structures](../../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md)
+- [Using Statement](../../../../visual-basic/language-reference/statements/using-statement.md)
+- [With...End With Statement](../../../../visual-basic/language-reference/statements/with-end-with-statement.md)

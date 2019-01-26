@@ -15,7 +15,7 @@ The topics in this section demonstrate how to use the font features included wit
  [Use the FontSizeConverter Class](../../../../docs/framework/wpf/advanced/how-to-use-the-fontsizeconverter-class.md)  
   
 ## See also
- <xref:System.Windows.FontStyle>  
- <xref:System.Windows.SystemFonts>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)
+- <xref:System.Windows.FontStyle>
+- <xref:System.Windows.SystemFonts>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Typography in WPF](../../../../docs/framework/wpf/advanced/typography-in-wpf.md)

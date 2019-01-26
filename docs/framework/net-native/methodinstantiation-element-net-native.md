@@ -69,7 +69,7 @@ Applies runtime reflection policy to a constructed generic method.
  The `<MethodInstantiation>` element overrides the runtime reflection policy of its corresponding open generic method.  
   
 ## See also
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)

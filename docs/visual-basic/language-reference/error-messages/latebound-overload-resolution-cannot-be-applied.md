@@ -59,6 +59,6 @@ refer.s1(CType(o1, Double))
  Each of the preceding lines of code explicitly casts the `Object` variable `o1` to one of the parameter types defined for the overloads.  
   
 ## See also
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)  
- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)
+- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
+- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
+- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)

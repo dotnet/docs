@@ -17,4 +17,4 @@ Sometimes a file must be closed before another `FileOpen` or other operation can
 1.  Close the file before executing the statement.  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
+- <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>

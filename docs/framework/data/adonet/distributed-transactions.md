@@ -42,6 +42,6 @@ A transaction is a set of related tasks that either succeeds (commit) or fails (
  You may need to enable the MS DTC over the network in order to use distributed transactions. If have the Windows Firewall enabled, you must allow the MS DTC service to use the network or open the MS DTC port.  
   
 ## See also
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [System.Transactions Integration with SQL Server](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
+- [System.Transactions Integration with SQL Server](../../../../docs/framework/data/adonet/system-transactions-integration-with-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

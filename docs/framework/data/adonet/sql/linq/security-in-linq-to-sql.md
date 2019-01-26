@@ -28,5 +28,5 @@ Security risks are always present when you connect to a database. Although LINQ 
 -   Minimize lifetimes and touch points for all connection strings.  
   
 ## See also
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)  
- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Frequently Asked Questions](../../../../../../docs/framework/data/adonet/sql/linq/frequently-asked-questions.md)

@@ -27,4 +27,4 @@ The following are miscellaneous operators defined in Visual Basic.
   
 ## See also
 
- [Operators listed by functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Operators listed by functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)

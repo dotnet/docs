@@ -10,6 +10,6 @@ System.ServiceModel.Channels.ConnectionPoolIdleTimeoutReached
  A connection has exceeded the idle timeout of this connection pool and been closed.  
   
 ## See also
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

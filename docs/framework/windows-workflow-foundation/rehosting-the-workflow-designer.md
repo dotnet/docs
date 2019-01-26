@@ -18,4 +18,4 @@ The [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] can be rehosted in environmen
  [Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer](../../../docs/framework/windows-workflow-foundation/wf-features-in-the-rehosted-workflow-designer.md)
 
 ## See also
- [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)
+- [Customizing the Workflow Design Experience](../../../docs/framework/windows-workflow-foundation/customizing-the-workflow-design-experience.md)

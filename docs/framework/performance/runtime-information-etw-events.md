@@ -39,4 +39,4 @@ These ETW events log information about the runtime, including the SKU, version n
 |RuntimeDLLPath|win:UnicodeString|Path to the CLR .dll file that was loaded into the process.|  
   
 ## See also
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

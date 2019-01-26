@@ -19,6 +19,6 @@ SQL Server supports the `xml` data type, and developers can retrieve result sets
  [!code-vb[DataWorks SqlClient.GetXmlDataReader#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.GetXmlDataReader/VB/source.vb#1)]  
   
 ## See also
- <xref:System.Data.SqlTypes.SqlXml>  
- [XML Data in SQL Server](../../../../../docs/framework/data/adonet/sql/xml-data-in-sql-server.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- <xref:System.Data.SqlTypes.SqlXml>
+- [XML Data in SQL Server](../../../../../docs/framework/data/adonet/sql/xml-data-in-sql-server.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

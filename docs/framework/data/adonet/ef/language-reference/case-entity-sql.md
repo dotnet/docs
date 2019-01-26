@@ -51,6 +51,6 @@ END
  [!code-csharp[DP EntityServices Concepts 2#CASE_WHEN_THEN_ELSE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#case_when_then_else)]  
   
 ## See also
- [THEN](../../../../../../docs/framework/data/adonet/ef/language-reference/then-entity-sql.md)  
- [SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [THEN](../../../../../../docs/framework/data/adonet/ef/language-reference/then-entity-sql.md)
+- [SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

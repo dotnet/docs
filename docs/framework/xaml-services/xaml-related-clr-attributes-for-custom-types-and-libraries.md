@@ -263,5 +263,5 @@ This topic describes the common language runtime (CLR) attributes that are defin
 >  .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
   
 ## See also
- <xref:System.Attribute>  
- [Defining Custom Types for Use with .NET Framework XAML Services](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)
+- <xref:System.Attribute>
+- [Defining Custom Types for Use with .NET Framework XAML Services](../../../docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md)

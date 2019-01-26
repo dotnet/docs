@@ -170,4 +170,4 @@ namespace RawImageService
 -   When compiling the sample code reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
 ## See also
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)

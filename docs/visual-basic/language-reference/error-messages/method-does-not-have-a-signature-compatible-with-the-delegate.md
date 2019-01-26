@@ -14,7 +14,7 @@ There is an incompatibility between the signatures of the method and the delegat
  **Error ID**: BC36563  
   
 ## See also
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Overload Resolution](../../../visual-basic/programming-guide/language-features/procedures/overload-resolution.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)

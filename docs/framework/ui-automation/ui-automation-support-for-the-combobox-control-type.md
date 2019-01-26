@@ -73,6 +73,6 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.ValuePatternIdentifiers.ValueProperty> property-changed event.|Depends|If the control supports the Value pattern, it must support this event.|  
   
 ## See also
- <xref:System.Windows.Automation.ControlType.ComboBox>  
- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)  
- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- <xref:System.Windows.Automation.ControlType.ComboBox>
+- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
+- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)

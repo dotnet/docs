@@ -119,4 +119,4 @@ throw new SoapException(
 -   Do consider using ASP.NET 2.0 Role Providers for authorizing access to the resources of a service.  
   
 ## See also
- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
+- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)

@@ -15,4 +15,4 @@ Certain properties, methods, and operations can only apply to `Collection` objec
 2.  Look at the `Add` method used to add the object to the collection to be sure the syntax is correct and that any identifiers were spelled correctly.  
   
 ## See also
- <xref:Microsoft.VisualBasic.Collection>
+- <xref:Microsoft.VisualBasic.Collection>

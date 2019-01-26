@@ -69,9 +69,9 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 ```  
   
 ## See also
- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>  
- <xref:System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorServiceCredential.Certificate%2A>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement.Certificate%2A>
+- <xref:System.ServiceModel.Configuration.X509ClientCertificateCredentialsElement>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Create a Service that Employs a Custom Certificate Validator](../../../../../docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md)
+- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

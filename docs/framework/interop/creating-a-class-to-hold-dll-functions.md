@@ -31,7 +31,7 @@ Wrapping a frequently used DLL function in a managed class is an effective appro
  You can name the class and its methods as you please. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
   
 ## See also
- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)  
- [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)  
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)
+- [Identifying Functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md)
+- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)
+- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)

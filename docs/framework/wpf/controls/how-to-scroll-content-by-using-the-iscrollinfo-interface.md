@@ -24,9 +24,9 @@ This example shows how to scroll content by using the <xref:System.Windows.Contr
  [!code-vb[IScrollInfoMethods#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/IScrollInfoMethods/VisualBasic/Window1.xaml.vb#3)]  
   
 ## See also
- <xref:System.Windows.Controls.ScrollViewer>  
- <xref:System.Windows.Controls.Primitives.IScrollInfo>  
- <xref:System.Windows.Controls.StackPanel>  
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/scrollviewer-how-to-topics.md)  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.ScrollViewer>
+- <xref:System.Windows.Controls.Primitives.IScrollInfo>
+- <xref:System.Windows.Controls.StackPanel>
+- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/scrollviewer-how-to-topics.md)
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

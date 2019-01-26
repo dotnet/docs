@@ -22,7 +22,7 @@ By default, the content of each column in a <xref:System.Windows.Controls.ListVi
 [!code-xaml[ListViewHowTos#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListViewHowTos/CSharp/Window1.xaml#4)]  
   
 ## See also
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)  
- [Bind to XML Data Using an XMLDataProvider and XPath Queries](../../../../docs/framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)  
- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+- [Bind to XML Data Using an XMLDataProvider and XPath Queries](../../../../docs/framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
+- [ListView Overview](../../../../docs/framework/wpf/controls/listview-overview.md)

@@ -50,9 +50,9 @@ ms.assetid: 7924cf94-c9a6-4015-afc9-f5d22b1743bb
  ![WCF Data Services architecture diagram](../../../../docs/framework/data/wcf/media/astoriaservicearch.gif "AstoriaServiceArch")  
   
 ## See also
- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)  
- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)  
- [Accessing a Data Service (WCF Data Services)](https://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)
+- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
+- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
+- [Accessing a Data Service (WCF Data Services)](https://msdn.microsoft.com/library/1e54a2b9-2ec6-4002-b8f8-c1d8df37c350)
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)

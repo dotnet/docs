@@ -124,9 +124,9 @@ A rendering tier defines a level of graphics hardware capability and performance
 DirectX Diagnostic Tool main window  
   
 ## See also
- <xref:System.Windows.Media.RenderCapability>  
- <xref:System.Windows.Media.RenderOptions>  
- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)  
- [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)  
- [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)  
- [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)
+- <xref:System.Windows.Media.RenderCapability>
+- <xref:System.Windows.Media.RenderOptions>
+- [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
+- [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)
+- [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)
+- [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

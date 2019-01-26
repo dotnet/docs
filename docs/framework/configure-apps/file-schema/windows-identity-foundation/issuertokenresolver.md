@@ -82,4 +82,4 @@ public override void LoadCustomConfiguration(System.Xml.XmlNodeList nodelist)
 ```  
   
 ## See also
- <xref:System.IdentityModel.Tokens.IssuerTokenResolver>
+- <xref:System.IdentityModel.Tokens.IssuerTokenResolver>

@@ -268,4 +268,4 @@ class Sandboxer : MarshalByRefObject
 ```  
   
 ## See also
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

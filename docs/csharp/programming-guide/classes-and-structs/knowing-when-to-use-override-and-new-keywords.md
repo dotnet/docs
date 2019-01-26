@@ -538,8 +538,8 @@ namespace OverrideAndNew2
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)  
-- [base](../../../csharp/language-reference/keywords/base.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)
+- [base](../../../csharp/language-reference/keywords/base.md)
 - [abstract](../../../csharp/language-reference/keywords/abstract.md)

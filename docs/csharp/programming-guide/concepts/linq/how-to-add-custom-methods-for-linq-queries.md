@@ -201,5 +201,5 @@ foreach (var element in query)
   
 ## See also
 
-- <xref:System.Collections.Generic.IEnumerable%601>  
+- <xref:System.Collections.Generic.IEnumerable%601>
 - [Extension Methods](../../../../csharp/programming-guide/classes-and-structs/extension-methods.md)

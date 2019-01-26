@@ -63,5 +63,5 @@ foreach (decimal el in prices)
   
 ## See also
 
-- [Sorting Data (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)  
+- [Sorting Data (C#)](../../../../csharp/programming-guide/concepts/linq/sorting-data.md)
 - [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

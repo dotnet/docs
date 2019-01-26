@@ -19,5 +19,5 @@ The drive cannot be found. Either your network connection has been lost, or the 
 4.  Reconnect to the network and try again.  
   
 ## See also
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 

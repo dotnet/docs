@@ -69,7 +69,7 @@ An important feature of the Windows Forms <xref:System.Windows.Forms.MonthCalend
     ```  
   
 ## See also
- [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)  
- [How to: Change the Windows Forms MonthCalendar Control's Appearance](../../../../docs/framework/winforms/controls/how-to-change-monthcalendar-control-appearance.md)  
- [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-specific-days-in-bold-with-wf-monthcalendar-control.md)  
- [How to: Display More than One Month in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-more-than-one-month-wf-monthcalendar-control.md)
+- [MonthCalendar Control](../../../../docs/framework/winforms/controls/monthcalendar-control-windows-forms.md)
+- [How to: Change the Windows Forms MonthCalendar Control's Appearance](../../../../docs/framework/winforms/controls/how-to-change-monthcalendar-control-appearance.md)
+- [How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-specific-days-in-bold-with-wf-monthcalendar-control.md)
+- [How to: Display More than One Month in the Windows Forms MonthCalendar Control](../../../../docs/framework/winforms/controls/display-more-than-one-month-wf-monthcalendar-control.md)

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<cryptoClasses> element"
   - "cryptoClasses element"
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;cryptoClasses&gt; Element
 Contains a list of cryptography classes that have a mapping to a friendly name in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) element.  
@@ -73,9 +71,9 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
 ```  
   
 ## See also
-- <xref:System.Security.Cryptography>  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
-- [System.Security.Cryptography.CryptoConfig.CreateFromName](Overload:System.Security.Cryptography.CryptoConfig.CreateFromName)  
+- <xref:System.Security.Cryptography>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [System.Security.Cryptography.CryptoConfig.CreateFromName](Overload:System.Security.Cryptography.CryptoConfig.CreateFromName)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

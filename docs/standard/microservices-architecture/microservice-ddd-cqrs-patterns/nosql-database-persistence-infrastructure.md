@@ -311,7 +311,7 @@ services:
   [*https://docs.microsoft.com/azure/cosmos-db/modeling-data*](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
 
 - **Vaughn Vernon. The Ideal Domain-Driven Design Aggregate Store?** \
-  [*https://vaughnvernon.co/?p=942*](https://vaughnvernon.co/?p=942)
+  <https://kalele.io/blog-posts/the-ideal-domain-driven-design-aggregate-store/>
 
 - **Introduction to Azure Cosmos DB: API for MongoDB**  \
   [*https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction*](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)

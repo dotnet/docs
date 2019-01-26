@@ -52,14 +52,14 @@ msmqIntegrationBinding
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|The binding element of the [\<msmqIntegrationBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md).|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement.Security%2A>  
- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [\<msmqIntegrationBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationSecurityElement>
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.Security%2A>
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationBindingElement.Security%2A>
+- <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity>
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [\<msmqIntegrationBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqintegrationbinding.md)

@@ -13,5 +13,5 @@ You tried to use a `WithEvents` variable with a component that cannot work as an
 1.  You cannot sink events for a component that does not source events.  
   
 ## See also
- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)  
- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
+- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)
+- [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)

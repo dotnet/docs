@@ -69,9 +69,9 @@ This walkthrough shows you how to use the <xref:System.Security.Cryptography.DES
      When you test the application, notice that it will not decrypt the data if you provide the wrong password.  
   
 ## See also
- <xref:System.Security.Cryptography>  
- <xref:System.Security.Cryptography.DESCryptoServiceProvider>  
- <xref:System.Security.Cryptography.DES>  
- <xref:System.Security.Cryptography.TripleDES>  
- <xref:System.Security.Cryptography.Rijndael>  
- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
+- <xref:System.Security.Cryptography>
+- <xref:System.Security.Cryptography.DESCryptoServiceProvider>
+- <xref:System.Security.Cryptography.DES>
+- <xref:System.Security.Cryptography.TripleDES>
+- <xref:System.Security.Cryptography.Rijndael>
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

@@ -126,9 +126,9 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 ```  
   
 ## See also
- <xref:System.ServiceModel.WSDualHttpBinding>  
- <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- <xref:System.ServiceModel.WSDualHttpBinding>
+- <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

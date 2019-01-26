@@ -57,6 +57,6 @@ Resume [ Next | line ]
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md)  
- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)
+- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+- [Error Statement](../../../visual-basic/language-reference/statements/error-statement.md)
+- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)

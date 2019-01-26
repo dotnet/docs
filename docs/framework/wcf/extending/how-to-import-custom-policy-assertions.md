@@ -58,7 +58,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
 1.  Add the importer to the <xref:System.ServiceModel.Description.MetadataImporter.PolicyImportExtensions%2A?displayProperty=nameWithType> property (for example, if you are using the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>) prior to importing the metadata.  
   
 ## See also
- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>  
- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>  
- [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)
+- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
+- [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)

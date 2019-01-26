@@ -17,4 +17,4 @@ The topics in this section describe some basic aspects of how you establish and 
  Provides examples of how to use an existing [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] connection in a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] application.  
   
 ## See also
- [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)
+- [Programming Guide](../../../../../../docs/framework/data/adonet/sql/linq/programming-guide.md)

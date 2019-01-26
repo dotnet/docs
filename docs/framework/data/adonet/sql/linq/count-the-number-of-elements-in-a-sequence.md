@@ -26,5 +26,5 @@ Use the <xref:System.Linq.Enumerable.Count%2A> operator to count the number of e
  [!code-vb[DLinqQueryExamples#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#5)]  
   
 ## See also
- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)
+- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)

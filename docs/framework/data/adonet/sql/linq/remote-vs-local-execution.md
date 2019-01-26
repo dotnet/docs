@@ -42,4 +42,4 @@ You can decide to execute your queries either remotely (that is, the database en
  Note the important difference between a local collection that implements <xref:System.Collections.Generic.List%601> and a collection that provides remote queries executed against *unordered sets* in a relational database. <xref:System.Collections.Generic.List%601> methods such as those that use index values require list semantics, which typically cannot be obtained through a remote query against an unordered set. For this reason, such methods implicitly load the <xref:System.Data.Linq.EntitySet%601> to allow local execution.  
   
 ## See also
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

@@ -22,6 +22,6 @@ The purpose of hit testing is to determine whether the cursor is over a given ob
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
- <xref:System.Drawing.Region>  
- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)  
- [How to: Use Clipping with a Region](../../../../docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md)
+- <xref:System.Drawing.Region>
+- [Regions in GDI+](../../../../docs/framework/winforms/advanced/regions-in-gdi.md)
+- [How to: Use Clipping with a Region](../../../../docs/framework/winforms/advanced/how-to-use-clipping-with-a-region.md)

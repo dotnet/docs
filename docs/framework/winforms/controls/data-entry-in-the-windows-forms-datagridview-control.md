@@ -47,5 +47,5 @@ The `DataGridView` control provides several features that let you change how use
  Provides topics that describe how to populate the control with data either manually or from an external data source.  
   
 ## See also
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

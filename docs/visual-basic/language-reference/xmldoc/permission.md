@@ -33,4 +33,4 @@ Specifies a required permission for the member.
  [!code-vb[VbVbcnXmlDocComments#7](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/permission_1.vb)]  
   
 ## See also
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

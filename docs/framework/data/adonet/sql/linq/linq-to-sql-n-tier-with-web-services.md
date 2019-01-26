@@ -31,5 +31,5 @@ ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
  For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](../../../../../../docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md).  
   
 ## See also
- [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)  
- [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)
+- [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)
+- [NIB: LinqDataSource Web Server Control Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)

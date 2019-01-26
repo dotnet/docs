@@ -17,5 +17,5 @@ The Windows Forms <xref:System.Windows.Forms.PageSetupDialog> component is a pre
  When it is added to a form, the <xref:System.Windows.Forms.PageSetupDialog> component appears in the tray at the bottom of the Windows Forms Designer.  
   
 ## See also
- <xref:System.Windows.Forms.PageSetupDialog>  
- [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)
+- <xref:System.Windows.Forms.PageSetupDialog>
+- [PageSetupDialog Component](../../../../docs/framework/winforms/controls/pagesetupdialog-component-windows-forms.md)

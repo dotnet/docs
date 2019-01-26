@@ -54,9 +54,9 @@ public static void WriteView(DataView thisDataView)
 ```  
   
 ## See also
- <xref:System.Data.DataRowVersion>  
- <xref:System.Data.DataViewRowState>  
- <xref:System.Data.DataView>  
- <xref:System.Data.DataRowView>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- <xref:System.Data.DataRowVersion>
+- <xref:System.Data.DataViewRowState>
+- <xref:System.Data.DataView>
+- <xref:System.Data.DataRowView>
+- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

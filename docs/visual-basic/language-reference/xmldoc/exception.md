@@ -33,4 +33,4 @@ Specifies which exceptions can be thrown.
  [!code-vb[VbVbcnXmlDocComments#3](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/exception_1.vb)]  
   
 ## See also
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

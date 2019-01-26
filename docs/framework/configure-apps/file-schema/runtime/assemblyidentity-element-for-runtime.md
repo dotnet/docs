@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <assemblyIdentity> element"
   - "assemblyIdentity element"
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
 Contains identifying information about the assembly.  
@@ -116,6 +114,6 @@ culture="assembly culture"/>
 ```  
   
 ## See also
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

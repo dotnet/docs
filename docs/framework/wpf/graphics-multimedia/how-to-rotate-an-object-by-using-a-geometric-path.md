@@ -29,6 +29,6 @@ This example shows how to rotate (pivot) an object along a geometric path that i
  For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028).  
   
 ## See also
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)  
- [Path Animation How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/path-animation-how-to-topics.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
+- [Path Animation How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/path-animation-how-to-topics.md)

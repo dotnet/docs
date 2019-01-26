@@ -93,5 +93,5 @@ This topic outlines the basic steps required to create a Windows Process Activat
 6.  Compile and run the client.  
   
 ## See also
- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

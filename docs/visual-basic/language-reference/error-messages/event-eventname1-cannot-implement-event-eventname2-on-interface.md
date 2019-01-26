@@ -22,6 +22,6 @@ Visual Basic cannot implement an event because the delegate type of the event do
 -   Define the events in the interface using the `As` syntax and specify the same delegate type.  
   
 ## See also
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

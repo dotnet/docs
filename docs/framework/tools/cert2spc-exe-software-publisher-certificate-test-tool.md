@@ -50,6 +50,6 @@ cert2spc oneCertificate.cer twoCertificate.cer mySPCFile.spc
 ```  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

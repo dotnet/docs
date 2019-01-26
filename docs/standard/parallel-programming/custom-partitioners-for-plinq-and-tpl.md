@@ -116,6 +116,6 @@ To parallelize an operation on a data source, one of the essential steps is to *
   
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
-- [How to: Implement Dynamic Partitions](../../../docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md)  
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+- [How to: Implement Dynamic Partitions](../../../docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md)
 - [How to: Implement a Partitioner for Static Partitioning](../../../docs/standard/parallel-programming/how-to-implement-a-partitioner-for-static-partitioning.md)

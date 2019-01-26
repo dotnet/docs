@@ -88,10 +88,10 @@ Client applications must create, configure, and use WCF client or channel object
  Applications that use the implicit approach invoke the user-interface initializers, but if the user of the application fails to respond within the send timeout period of the binding, an exception is thrown when the user interface returns.  
   
 ## See also
- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)  
- [How to: Access Services with One-Way and Request-Reply Contracts](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)  
- [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)  
- [How to: Access a WSE 3.0 Service](../../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)  
- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)  
- [How to: Call Service Operations Asynchronously](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)  
- [Middle-Tier Client Applications](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)
+- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)
+- [How to: Access Services with One-Way and Request-Reply Contracts](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [How to: Access Services with a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [How to: Access a WSE 3.0 Service](../../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [How to: Call Service Operations Asynchronously](../../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [Middle-Tier Client Applications](../../../../docs/framework/wcf/feature-details/middle-tier-client-applications.md)

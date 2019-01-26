@@ -104,6 +104,6 @@ foreach (string company in results)
   
 ## See also
 
-- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)  
-- [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)  
+- [Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/index.md)
+- [How to: Execute Expression Trees (C#)](../../../../csharp/programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md)
 - [How to: Dynamically Specify Predicate Filters at Runtime](../../../../csharp/programming-guide/linq-query-expressions/how-to-dynamically-specify-predicate-filters-at-runtime.md)

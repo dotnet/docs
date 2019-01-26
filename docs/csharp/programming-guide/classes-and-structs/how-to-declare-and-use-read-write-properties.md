@@ -51,6 +51,6 @@ person.SetAge(person.GetAge() + 1);
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
 - [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)

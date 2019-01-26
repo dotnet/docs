@@ -39,4 +39,4 @@ HRESULT GetSymbolSearchInfoCount(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)
+- [ISymUnmanagedReaderSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreadersymbolsearchinfo-interface.md)

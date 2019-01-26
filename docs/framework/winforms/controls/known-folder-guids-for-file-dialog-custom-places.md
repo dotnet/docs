@@ -281,5 +281,5 @@ You use a <xref:System.Guid> to specify a [!INCLUDE[wiprlhext](../../../../inclu
  F38BF404-1D43-42F2-9305-67DE0B28FC23  
   
 ## See also
- <xref:System.Windows.Forms.FileDialogCustomPlace>  
- [How To: Add a Custom Place to a File Dialog Box](../../../../docs/framework/winforms/controls/how-to-add-a-custom-place-to-a-file-dialog-box.md)
+- <xref:System.Windows.Forms.FileDialogCustomPlace>
+- [How To: Add a Custom Place to a File Dialog Box](../../../../docs/framework/winforms/controls/how-to-add-a-custom-place-to-a-file-dialog-box.md)

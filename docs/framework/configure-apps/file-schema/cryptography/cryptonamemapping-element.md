@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<cryptoNameMapping> element"
   - "cryptoNameMapping element"
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;cryptoNameMapping&gt; Element
 Contains mappings of classes to friendly names.  
@@ -71,7 +69,7 @@ Contains mappings of classes to friendly names.
 ```  
   
 ## See also
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
 - [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)

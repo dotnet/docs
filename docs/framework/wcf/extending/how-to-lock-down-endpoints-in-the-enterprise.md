@@ -58,5 +58,5 @@ Large enterprises often require that applications are developed in compliance wi
  You may also want to encrypt the configuration file elements. For more information, see the See Also section.  
   
 ## See also
- [Encrypting configuration file elements using DPAPI](https://go.microsoft.com/fwlink/?LinkId=94954)  
- [Encrypting configuration file elements using RSA](https://go.microsoft.com/fwlink/?LinkId=94955)
+- [Encrypting configuration file elements using DPAPI](https://go.microsoft.com/fwlink/?LinkId=94954)
+- [Encrypting configuration file elements using RSA](https://go.microsoft.com/fwlink/?LinkId=94955)

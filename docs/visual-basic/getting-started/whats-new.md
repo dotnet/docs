@@ -247,4 +247,4 @@ End Interface
  Now the compiler will use normal overload resolution rules to choose the most appropriate `GetDetails` to call, and you can declare interface relationships in Visual Basic like those shown in the sample.  
   
 ## See also
- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)

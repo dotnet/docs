@@ -58,4 +58,4 @@ The masked text box control is an enhanced text box control that supports a decl
      The mask is entered in the **Mask** property in the **Properties** window.  
   
 ## See also
- [Walkthrough: Working with the MaskedTextBox Control](../../../../docs/framework/winforms/controls/walkthrough-working-with-the-maskedtextbox-control.md)
+- [Walkthrough: Working with the MaskedTextBox Control](../../../../docs/framework/winforms/controls/walkthrough-working-with-the-maskedtextbox-control.md)

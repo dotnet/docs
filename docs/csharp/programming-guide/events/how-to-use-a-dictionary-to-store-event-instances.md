@@ -14,6 +14,6 @@ One use for `accessor-declarations` is to expose many events without allocating 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Events](../../../csharp/programming-guide/events/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
 - [Delegates](../../../csharp/programming-guide/delegates/index.md)

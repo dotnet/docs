@@ -23,5 +23,5 @@ An error occurred while trying to access the specified file. Among the possible 
 3.  Check the file names to make sure they conform to operating system conventions.  
   
 ## See also
- <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>  
- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+- <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
+- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)

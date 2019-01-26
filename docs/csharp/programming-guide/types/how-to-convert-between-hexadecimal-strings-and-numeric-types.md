@@ -49,6 +49,6 @@ These examples show you how to perform the following tasks:
   
 ## See also
 
-- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)  
-- [Types](../../../csharp/programming-guide/types/index.md)  
+- [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
+- [Types](../../../csharp/programming-guide/types/index.md)
 - [How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

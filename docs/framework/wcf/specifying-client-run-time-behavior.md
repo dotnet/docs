@@ -38,4 +38,4 @@ Windows Communication Foundation (WCF) clients, like Windows Communication Found
  You can use the <xref:System.ServiceModel.Description.ClientViaBehavior> behavior to specify the Uniform Resource Identifier for which the transport channel should be created. Use this behavior when the immediate network destination is not the intended processor of the message. This enables multiple-hop conversations when the calling application does not necessarily know the ultimate destination or when the destination `Via` header is not an address.  
   
 ## See also
- [Specifying Service Run-Time Behavior](../../../docs/framework/wcf/specifying-service-run-time-behavior.md)
+- [Specifying Service Run-Time Behavior](../../../docs/framework/wcf/specifying-service-run-time-behavior.md)

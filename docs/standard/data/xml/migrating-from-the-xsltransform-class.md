@@ -114,5 +114,5 @@ using (XmlWriter writer = doc.CreateNavigator().AppendChild()) {
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)  
+- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
 - [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)

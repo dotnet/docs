@@ -53,8 +53,8 @@ To generate XML Schema definition language (XSD) schemas from classes that are u
  Export options affect all of these methods.  
   
 ## See also
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.XsdDataContractImporter>  
- <xref:System.Runtime.Serialization.XsdDataContractExporter>  
- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)  
- [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.XsdDataContractImporter>
+- <xref:System.Runtime.Serialization.XsdDataContractExporter>
+- [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md)
+- [Importing Schema to Generate Classes](../../../../docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md)

@@ -31,5 +31,5 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control displays a hierar
  [!code-vb[System.Windows.Forms.TreeNodeContextMenuStrip#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/system.windows.forms.TreeNodeContextMenuStrip/VB/Form1.vb#1)]  
   
 ## See also
- <xref:System.Windows.Forms.ContextMenuStrip>  
- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
+- <xref:System.Windows.Forms.ContextMenuStrip>
+- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)

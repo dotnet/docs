@@ -13,5 +13,5 @@ An internal error has occurred in the Microsoft Visual Basic runtime.
 -   Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
 ## See also
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 

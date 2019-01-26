@@ -26,6 +26,6 @@ This example illustrates several ways in which a page can be navigated to from a
 >  [!INCLUDE[TLA#tla_uri#initcap#plural](../../../../includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
 ## See also
- <xref:System.Windows.Controls.Frame>  
- <xref:System.Windows.Controls.Page>  
- <xref:System.Windows.Navigation.NavigationService>
+- <xref:System.Windows.Controls.Frame>
+- <xref:System.Windows.Controls.Page>
+- <xref:System.Windows.Navigation.NavigationService>

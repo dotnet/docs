@@ -107,4 +107,4 @@ logman stop mytrace -ets
 ```  
   
 ## See also
- [Using Windows Management Instrumentation for Diagnostics](../../../../../docs/framework/wcf/diagnostics/wmi/index.md)
+- [Using Windows Management Instrumentation for Diagnostics](../../../../../docs/framework/wcf/diagnostics/wmi/index.md)

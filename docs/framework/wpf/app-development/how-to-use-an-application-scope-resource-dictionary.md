@@ -36,7 +36,7 @@ This example shows how to define and use an application-scope custom resource di
  There are two considerations to make when using <xref:System.Windows.Application.Resources%2A>. First, the dictionary *key* is an object, so you must use exactly the same object instance when both setting and getting a property value. (Note that the key is case-sensitive when using a string.) Second, the dictionary *value* is an object, so you will have to convert the value to the desired type when getting a property value.  
   
 ## See also
- <xref:System.Windows.ResourceDictionary>  
- <xref:System.Windows.Application.Resources%2A>  
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Merged Resource Dictionaries](../../../../docs/framework/wpf/advanced/merged-resource-dictionaries.md)
+- <xref:System.Windows.ResourceDictionary>
+- <xref:System.Windows.Application.Resources%2A>
+- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
+- [Merged Resource Dictionaries](../../../../docs/framework/wpf/advanced/merged-resource-dictionaries.md)

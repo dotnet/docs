@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "cryptographySettings element"
   - "<cryptographySettings> element"
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;cryptographySettings&gt; Element
 Contains cryptography settings.  
@@ -73,6 +71,6 @@ Contains cryptography settings.
 ```  
   
 ## See also
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
 - [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)

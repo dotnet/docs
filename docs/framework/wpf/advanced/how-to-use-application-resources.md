@@ -20,6 +20,6 @@ This example shows how to use application resources.
  [!code-xaml[ResourcesApplication#ConsumingPage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ResourcesApplication/CS/page1.xaml#consumingpage)]  
   
 ## See also
- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)  
- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)
+- [XAML Resources](../../../../docs/framework/wpf/advanced/xaml-resources.md)
+- [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/resources-how-to-topics.md)

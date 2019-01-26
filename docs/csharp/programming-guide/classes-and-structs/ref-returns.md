@@ -120,5 +120,5 @@ closer to the end of the array.
 
 ## See also
 
-- [ref keyword](../../language-reference/keywords/ref.md)  
+- [ref keyword](../../language-reference/keywords/ref.md)
 - [Write safe efficient code](../../write-safe-efficient-code.md)

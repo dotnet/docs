@@ -28,12 +28,12 @@ Expression of type \<type> is not queryable. Make sure you are not missing an as
 2.  Ensure that the type that you have identified as the source of your query is a queryable type. That is, a type that implements <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Linq.IQueryable%601>.  
   
 ## See also
- <xref:System.Linq>  
- <xref:System.Data.Linq>  
- <xref:System.Xml.Linq>  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)  
- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)  
- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)  
- [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)
+- <xref:System.Linq>
+- <xref:System.Data.Linq>
+- <xref:System.Xml.Linq>
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)
+- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+- [References and the Imports Statement](../../../visual-basic/programming-guide/program-structure/references-and-the-imports-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [References Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/references-page-project-designer-visual-basic)

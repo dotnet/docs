@@ -49,6 +49,6 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 8.  Click **OK** to close the **Formatting and Advanced Binding** dialog box and return to the Properties window.  
   
 ## See also
- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)  
- [User Input Validation in Windows Forms](../../../docs/framework/winforms/user-input-validation-in-windows-forms.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [How to: Create a Simple-Bound Control on a Windows Form](../../../docs/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md)
+- [User Input Validation in Windows Forms](../../../docs/framework/winforms/user-input-validation-in-windows-forms.md)
+- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)

@@ -162,11 +162,11 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  In the preceding configuration file a data contract type called `MyCompany.Library.Shape` is declared to have `MyCompany.Library.Circle` as a known type.  
   
 ## See also
- <xref:System.Runtime.Serialization.KnownTypeAttribute>  
- <xref:System.Collections.Hashtable>  
- <xref:System.Object>  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A>  
- [Known Types](../../../../docs/framework/wcf/samples/known-types.md)  
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)
+- <xref:System.Runtime.Serialization.KnownTypeAttribute>
+- <xref:System.Collections.Hashtable>
+- <xref:System.Object>
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.DataContractSerializer.KnownTypes%2A>
+- [Known Types](../../../../docs/framework/wcf/samples/known-types.md)
+- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)

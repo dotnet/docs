@@ -33,5 +33,5 @@ A static class is defined as a class that contains only static members (of cours
   
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)  
+- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
 - [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)

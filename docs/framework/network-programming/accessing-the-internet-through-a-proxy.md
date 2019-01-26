@@ -27,5 +27,5 @@ If your site uses a proxy to provide access to the Internet, you must configure 
 -   [How to: Override a Global Proxy Selection](../../../docs/framework/network-programming/how-to-override-a-global-proxy-selection.md)  
   
 ## See also
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)

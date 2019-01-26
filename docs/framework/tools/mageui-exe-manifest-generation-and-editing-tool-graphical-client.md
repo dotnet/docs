@@ -185,6 +185,6 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Select Manifest**|Allows you to choose the application manifest. All of the other fields on this page will populate when you choose an application manifest.|  
   
 ## See also
- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
- [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)  
- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)
+- [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
+- [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
+- [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)

@@ -35,5 +35,5 @@ HRESULT GetVirtualMethodAndType (
  Gets interface pointers to the "ICorDebugFunction" and "ICorDebugType" instances that represent the most derived method and type for the specified member reference.  
   
 ## See also
-    
- 
+
+

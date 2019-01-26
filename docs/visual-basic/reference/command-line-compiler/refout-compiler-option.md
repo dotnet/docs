@@ -37,7 +37,7 @@ Reference assemblies include an assembly-level [ReferenceAssembly](xref:System.R
 The `-refout` and [`-refonly`](refonly-compiler-option.md) options are mutually exclusive.
 
 ## See also
-[-refonly](refonly-compiler-option.md)   
-[Visual Basic Command-Line Compiler](index.md)  
-[Sample Compilation Command Lines](sample-compilation-command-lines.md)  
+- [-refonly](refonly-compiler-option.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
 

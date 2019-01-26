@@ -59,11 +59,11 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
  [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
   
 ## See also
- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
- [Of](../../../visual-basic/language-reference/statements/of-clause.md)  
- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)  
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)
+- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
+- [Of](../../../visual-basic/language-reference/statements/of-clause.md)
+- [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Covariance and Contravariance](../../programming-guide/concepts/covariance-contravariance/index.md)
+- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)
+- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)

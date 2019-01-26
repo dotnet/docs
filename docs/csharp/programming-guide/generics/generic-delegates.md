@@ -30,11 +30,11 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) can define
   
 ## See also
 
-- <xref:System.Collections.Generic>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)  
-- [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)  
-- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)  
-- [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)  
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)
+- [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)
+- [Generic Classes](../../../csharp/programming-guide/generics/generic-classes.md)
+- [Generic Interfaces](../../../csharp/programming-guide/generics/generic-interfaces.md)
+- [Delegates](../../../csharp/programming-guide/delegates/index.md)
 - [Generics](~/docs/standard/generics/index.md)

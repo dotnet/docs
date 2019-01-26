@@ -48,5 +48,5 @@ Many basic behaviors of `DataGridView` cells, rows, and columns can be modified 
  Provides topics that describe how to program with cell, row, and column objects.  
   
 ## See also
- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)  
- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)
+- [DataGridView Control](../../../../docs/framework/winforms/controls/datagridview-control-windows-forms.md)
+- [Column Types in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/column-types-in-the-windows-forms-datagridview-control.md)

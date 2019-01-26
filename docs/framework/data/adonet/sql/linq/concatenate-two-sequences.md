@@ -26,5 +26,5 @@ Use the <xref:System.Linq.Queryable.Concat%2A> operator to concatenate two seque
  [!code-vb[DLinqQueryExamples#40](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#40)]  
   
 ## See also
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)

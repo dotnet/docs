@@ -58,11 +58,11 @@ The following example shows how to write text to a new file and append new lines
 
 ## See also
 
-- <xref:System.IO.StreamWriter>  
-- <xref:System.IO.Path>  
-- <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>  
-- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Read and write to a newly-created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- <xref:System.IO.StreamWriter>
+- <xref:System.IO.Path>
+- <xref:System.IO.File.CreateText%2A?displayProperty=nameWithType>
+- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
+- [How to: Read and write to a newly-created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
+- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
+- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)
 - [File and stream I/O](../../../docs/standard/io/index.md)

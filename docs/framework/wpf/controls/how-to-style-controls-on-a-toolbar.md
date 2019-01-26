@@ -35,4 +35,4 @@ The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.Resource
 [!code-xaml[ToolBar_snip#ToolBar](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbar)]  
   
 ## See also
- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)

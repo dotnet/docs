@@ -132,7 +132,7 @@ Your custom controls will sometimes expose a collection as a property. This walk
 -   [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](../../../../docs/framework/winforms/controls/creating-a-wf-control-design-time-features.md)  
   
 ## See also
- <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>  
- [Designer Serialization Overview](https://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a)  
- [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://msdn.microsoft.com/library/7829fcdd-8205-405f-8231-a1282a9835c9)  
- [Walkthrough: Automatically Populating the Toolbox with Custom Components](../../../../docs/framework/winforms/controls/walkthrough-automatically-populating-the-toolbox-with-custom-components.md)
+- <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>
+- [Designer Serialization Overview](https://msdn.microsoft.com/library/c342635a-aa5f-4281-915b-b013738af15a)
+- [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://msdn.microsoft.com/library/7829fcdd-8205-405f-8231-a1282a9835c9)
+- [Walkthrough: Automatically Populating the Toolbox with Custom Components](../../../../docs/framework/winforms/controls/walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

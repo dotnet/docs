@@ -60,8 +60,8 @@ Dim number As Byte = &H_6A
 
 ## See also
 
- <xref:System.Byte?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.Byte?displayProperty=nameWithType>
+- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

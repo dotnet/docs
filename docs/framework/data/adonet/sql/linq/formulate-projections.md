@@ -70,4 +70,4 @@ The following examples show how the `select` statement in C# and `Select` statem
  [!code-vb[DLinqQueryExamples#65](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#65)]  
   
 ## See also
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)

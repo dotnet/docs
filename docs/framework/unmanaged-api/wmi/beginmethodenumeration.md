@@ -71,4 +71,4 @@ This method call is only supported if the current object is a class definition. 
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

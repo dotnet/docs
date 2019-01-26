@@ -31,5 +31,5 @@ An array in a structure is declared with an initial size. You cannot initialize 
     ```  
   
 ## See also
- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)

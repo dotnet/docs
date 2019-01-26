@@ -89,7 +89,7 @@ public class SomeClass
  Using `IsReference` ensures compliance on message round-tripping. Without it, when a type is generated from schema, what is sent back as XML for that type is not necessarily compatible with the schema originally assumed. In other words, although the `id` and `ref` attributes were serialized, the original schema could have barred these attributes (or all attributes) from occurring in the XML. With `IsReference` applied to a data member, the member continues to be recognized as "referenceable" when roundtripped.  
   
 ## See also
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.CollectionDataContractAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>  
- <xref:System.Runtime.Serialization.CollectionDataContractAttribute.IsReference%2A>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.CollectionDataContractAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute.IsReference%2A>
+- <xref:System.Runtime.Serialization.CollectionDataContractAttribute.IsReference%2A>

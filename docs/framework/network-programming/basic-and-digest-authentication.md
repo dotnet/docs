@@ -41,5 +41,5 @@ WReq.Credentials = new NetworkCredential(UserName, SecurelyStoredPassword);
 >  Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary. Additionally, Basic Authentication credentials (user name and password) are sent in the clear and can be intercepted.  
   
 ## See also
- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)  
- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)
+- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)
+- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)

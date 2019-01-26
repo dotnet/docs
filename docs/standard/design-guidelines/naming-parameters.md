@@ -32,5 +32,5 @@ Beyond the obvious reason of readability, it is important to follow the guidelin
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Naming Guidelines](../../../docs/standard/design-guidelines/naming-guidelines.md)

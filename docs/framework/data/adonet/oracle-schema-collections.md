@@ -374,4 +374,4 @@ The Microsoft .NET Framework Data Provider for Oracle supports the following spe
 |CHAR_USED|String|Indicates whether the byte limit (B) or char limit (C) is official for the string.|  
   
 ## See also
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

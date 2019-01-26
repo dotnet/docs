@@ -44,6 +44,6 @@ Policy assertions describe the capabilities and requirements of a service endpoi
      [!code-vb[s_imperative#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/s_imperative/vb/service.vb#1)]  
   
 ## See also
- <xref:System.ServiceModel.Description.IPolicyImportExtension>  
- <xref:System.ServiceModel.Description.IPolicyExportExtension>  
- [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)
+- <xref:System.ServiceModel.Description.IPolicyImportExtension>
+- <xref:System.ServiceModel.Description.IPolicyExportExtension>
+- [How to: Import Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-import-custom-policy-assertions.md)

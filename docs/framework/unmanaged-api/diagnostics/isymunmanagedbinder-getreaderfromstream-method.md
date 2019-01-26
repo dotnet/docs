@@ -47,4 +47,4 @@ HRESULT GetReaderFromStream(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)
+- [ISymUnmanagedBinder Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder-interface.md)

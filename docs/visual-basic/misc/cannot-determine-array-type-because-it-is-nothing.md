@@ -13,5 +13,5 @@ The type of your array cannot be determined because it has been set to the value
 1.  Provide a value other than `Nothing` for the array.  
   
 ## See also
- [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Nothing](../../visual-basic/language-reference/nothing.md)
+- [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Nothing](../../visual-basic/language-reference/nothing.md)

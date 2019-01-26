@@ -61,11 +61,11 @@ Option Explicit { On | Off }
  [!code-vb[VbVbalrStatements#48](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-explicit-statement_2.vb)]  
   
 ## See also
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)  
- [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

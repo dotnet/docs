@@ -15,4 +15,4 @@ You tried to set or change a property that is read only.
 2.  Change the reference to only return the value of the property at run time.  
   
 ## See also
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

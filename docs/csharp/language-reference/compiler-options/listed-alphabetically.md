@@ -76,7 +76,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 
 ## See also
 
-- [C# Compiler Options](index.md)  
-- [C# Compiler Options Listed by Category](listed-by-category.md)  
-- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)  
+- [C# Compiler Options](index.md)
+- [C# Compiler Options Listed by Category](listed-by-category.md)
+- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

@@ -43,7 +43,7 @@ End Sub
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  
   
 ## See also
- <xref:System.IO.StreamWriter>  
- [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+- <xref:System.IO.StreamWriter>
+- [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
+- [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
+- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

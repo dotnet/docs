@@ -34,4 +34,4 @@ The <xref:System.Net.PeerToPeer.Collaboration> namespace provides classes and AP
  Typical P2P applications are: conference calls for collaborative note-taking or whiteboarding, serverless chat applications, interactive advertisements, and online gaming sessions.  
   
 ## See also
- <xref:System.Net.PeerToPeer.Collaboration>
+- <xref:System.Net.PeerToPeer.Collaboration>

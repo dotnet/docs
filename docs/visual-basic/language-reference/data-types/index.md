@@ -86,9 +86,9 @@ The following table shows the Visual Basic data types, their supporting common l
  An `Object` referring to any elementary or composite data type uses 4 bytes in addition to the data contained in the data type.  
   
 ## See also
- <xref:Microsoft.VisualBasic.Strings.StrConv%2A>  
- <xref:System.Runtime.InteropServices.StructLayoutAttribute>  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:Microsoft.VisualBasic.Strings.StrConv%2A>
+- <xref:System.Runtime.InteropServices.StructLayoutAttribute>
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
+- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)

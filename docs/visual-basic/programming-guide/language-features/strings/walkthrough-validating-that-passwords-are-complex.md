@@ -38,5 +38,5 @@ This method checks for some strong-password characteristics and updates a string
 -   Do not allow passwords in which all the symbols are entered from the keyboard's top row.  
   
 ## See also
- <xref:System.Text.RegularExpressions.Regex>  
- [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc)
+- <xref:System.Text.RegularExpressions.Regex>
+- [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc)

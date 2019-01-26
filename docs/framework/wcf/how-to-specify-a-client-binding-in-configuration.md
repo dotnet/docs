@@ -45,4 +45,4 @@ In this example, a client console application is created to use a calculator ser
 6.  Compile and run the client.  
   
 ## See also
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

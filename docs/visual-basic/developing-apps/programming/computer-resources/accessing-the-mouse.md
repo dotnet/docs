@@ -19,4 +19,4 @@ The `My.Computer.Mouse` object provides a way to find information about the comp
 |Set how much to scroll when the mouse wheel is rotated one notch.|<xref:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines>|  
   
 ## See also
- <xref:Microsoft.VisualBasic.Devices.Mouse>
+- <xref:Microsoft.VisualBasic.Devices.Mouse>

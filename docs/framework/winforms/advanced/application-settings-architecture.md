@@ -141,10 +141,10 @@ This topic describes how the Application Settings architecture works, and explor
  Your provider does not need to support all of the settings attributes defined in the <xref:System.Configuration?displayProperty=nameWithType> namespace, though it must at a minimum support <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>, and should also support <xref:System.Configuration.DefaultSettingValueAttribute>. For those attributes that it does not support, your provider should just fail without notification; it should not throw an exception. If the settings class uses an invalid combination of attributes, however — such as applying <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute> to the same setting — your provider should throw an exception and cease operation.  
   
 ## See also
- <xref:System.Configuration.ApplicationSettingsBase>  
- <xref:System.Configuration.SettingsProvider>  
- <xref:System.Configuration.LocalFileSettingsProvider>  
- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)  
- [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)  
- [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings)  
- [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md)
+- <xref:System.Configuration.ApplicationSettingsBase>
+- <xref:System.Configuration.SettingsProvider>
+- <xref:System.Configuration.LocalFileSettingsProvider>
+- [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)
+- [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)
+- [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings)
+- [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md)

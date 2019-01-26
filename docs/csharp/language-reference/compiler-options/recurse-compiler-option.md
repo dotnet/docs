@@ -47,5 +47,5 @@ csc -target:library -out:dir2.dll -recurse:dir1\dir2\*.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

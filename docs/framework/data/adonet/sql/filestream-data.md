@@ -173,8 +173,8 @@ namespace FileStreamTest
 |[FILESTREAM and Other SQL Server Features](/sql/relational-databases/blob/filestream-compatibility-with-other-sql-server-features)|Provides considerations, guidelines and limitations for using FILESTREAM data with other features of SQL Server.|  
   
 ## See also
- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)  
- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)  
- [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)  
- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [ADO.NET Overview](../../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
+- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
+- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
+- [ADO.NET Overview](../../../../../docs/framework/data/adonet/ado-net-overview.md)

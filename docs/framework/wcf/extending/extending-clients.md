@@ -109,7 +109,7 @@ In a calling application, the service model layer is responsible for translating
  For examples that demonstrate interception across a WCF client, see [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md).  
   
 ## See also
- <xref:System.ServiceModel.Dispatcher.ClientRuntime>  
- <xref:System.ServiceModel.Dispatcher.ClientOperation>  
- [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md)  
- [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)
+- <xref:System.ServiceModel.Dispatcher.ClientRuntime>
+- <xref:System.ServiceModel.Dispatcher.ClientOperation>
+- [How to: Inspect or Modify Messages on the Client](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-messages-on-the-client.md)
+- [How to: Inspect or Modify Parameters](../../../../docs/framework/wcf/extending/how-to-inspect-or-modify-parameters.md)

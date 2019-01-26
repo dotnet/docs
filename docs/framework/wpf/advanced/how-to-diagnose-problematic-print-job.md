@@ -76,10 +76,10 @@ Network administrators often field complaints from users about print jobs that d
  [!code-vb[DiagnoseProblematicPrintJob#HandlePausedJob](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#handlepausedjob)]  
   
 ## See also
- <xref:System.Printing.PrintJobStatus>  
- <xref:System.Printing.PrintSystemJobInfo>  
- <xref:System.FlagsAttribute>  
- <xref:System.Printing.PrintQueue>  
- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+- <xref:System.Printing.PrintJobStatus>
+- <xref:System.Printing.PrintSystemJobInfo>
+- <xref:System.FlagsAttribute>
+- <xref:System.Printing.PrintQueue>
+- [& Operator (C# Reference)](~/docs/csharp/language-reference/operators/and-operator.md)
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

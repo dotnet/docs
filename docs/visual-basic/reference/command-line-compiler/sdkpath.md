@@ -39,7 +39,7 @@ vbc -netcf -sdkpath:"c:\Program Files\Microsoft Visual Studio .NET 2003\CompactF
 ```  
   
 ## See also
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)  
- [-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)
+- [-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)

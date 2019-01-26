@@ -44,9 +44,9 @@ variableorproperty <<= amount
  [!code-vb[VbVbalrOperators#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/left-shift-assignment-operator_1.vb)]  
   
 ## See also
- [<< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+- [<< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

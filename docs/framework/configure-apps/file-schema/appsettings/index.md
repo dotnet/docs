@@ -67,5 +67,5 @@ The following example shows an application configuration file that consumes the 
 
 ## See also
 
-- [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md)   
+- [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md)
 - [Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md)

@@ -26,7 +26,7 @@ You define [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] q
 |Streaming versus cached querying|Not applicable in a local memory scenario||  
   
 ## See also
- [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)  
- [Basic LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)  
- [Type Relationships in LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)  
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Introduction to LINQ Queries (C#)](~/docs/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [Basic LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/basic-linq-query-operations.md)
+- [Type Relationships in LINQ Query Operations](~/docs/csharp/programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)

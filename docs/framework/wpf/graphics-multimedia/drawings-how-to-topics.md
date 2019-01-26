@@ -24,7 +24,7 @@ The topics in this section describe how to use <xref:System.Windows.Media.Drawin
   [Use a Drawing as an Image Source](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-drawing-as-an-image-source.md)  
   
 ## See also
- <xref:System.Windows.Media.Drawing>  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- <xref:System.Windows.Media.Drawing>
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

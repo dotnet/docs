@@ -57,4 +57,4 @@ HRESULT GetTypeID(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)
+- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)

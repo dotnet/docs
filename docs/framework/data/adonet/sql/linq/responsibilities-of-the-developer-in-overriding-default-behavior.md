@@ -21,4 +21,4 @@ ms.assetid: c6909ddd-e053-46a8-980c-0e12a9797be1
 -   Finally, the overriding method is expected to perform the stated operation. The semantics of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] operations such as eager loading, deferred loading, and <xref:System.Data.Linq.DataContext.SubmitChanges%2A>) require the overrides to provide the stated service. For example, a load override that just returns an empty collection without checking the contents in the database will likely lead to inconsistent data.  
   
 ## See also
- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)

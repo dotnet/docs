@@ -32,6 +32,6 @@ In order to connect to a mesh, a peer node requires the IP addresses of other no
  [Inside the CustomPeerResolverService: Client Registrations](../../../../docs/framework/wcf/feature-details/inside-the-custompeerresolverservice-client-registrations.md)  
   
 ## See also
- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)  
- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)  
- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
+- [Peer Channel Security](../../../../docs/framework/wcf/feature-details/peer-channel-security.md)
+- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

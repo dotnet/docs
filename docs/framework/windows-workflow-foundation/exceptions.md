@@ -45,6 +45,6 @@ Workflows can use the <xref:System.Activities.Statements.TryCatch> activity to h
  The difference between exception handling and compensation is that exception handling occurs during the execution of an activity. Compensation occurs after an activity has successfully completed. Exception handling provides an opportunity to clean up after the activity raises the exception, whereas compensation provides a mechanism by which the successfully completed work of a previously completed activity can be undone. For more information, see [Compensation](../../../docs/framework/windows-workflow-foundation/compensation.md).  
   
 ## See also
- <xref:System.Activities.Statements.TryCatch>  
- <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>  
- <xref:System.Activities.Statements.CompensableActivity>
+- <xref:System.Activities.Statements.TryCatch>
+- <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>
+- <xref:System.Activities.Statements.CompensableActivity>

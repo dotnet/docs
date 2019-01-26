@@ -62,7 +62,7 @@ For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) and [Th
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)  
-- [Exception Hierarchy](../../../standard/exceptions/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+- [Exception Hierarchy](../../../standard/exceptions/index.md)
 - [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)

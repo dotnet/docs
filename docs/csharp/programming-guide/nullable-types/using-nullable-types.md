@@ -106,6 +106,6 @@ Note that these two operators don't follow the rules described in the [Operators
   
 ## See also
 
-- [Nullable types](index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)  
+- [Nullable types](index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [What exactly does 'lifted' mean?](https://blogs.msdn.microsoft.com/ericlippert/2007/06/27/what-exactly-does-lifted-mean/)

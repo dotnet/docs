@@ -53,13 +53,13 @@ Specifies the channel pool settings for a custom binding.
 -   The `maxOutboundChannelsPerEndpoint` quota sets cache limits on both the server and the client and is used to improve reliability. The default value is based on a conservatively modest allocation of resources that is suitable for a development environment and small installation scenarios. Service administrators should review the value if an installation is running out of resources or if connections are being limited despite the availability of additional resources.  
   
 ## See also
- <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings%2A>  
- <xref:System.ServiceModel.Channels.ChannelPoolSettings>  
- <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>  
- <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [\<oneWay>](../../../../../docs/framework/configure-apps/file-schema/wcf/oneway.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- <xref:System.ServiceModel.Channels.OneWayBindingElement.ChannelPoolSettings%2A>
+- <xref:System.ServiceModel.Channels.ChannelPoolSettings>
+- <xref:System.ServiceModel.Configuration.OneWayElement.ChannelPoolSettings%2A>
+- <xref:System.ServiceModel.Configuration.ChannelPoolSettingsElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [\<oneWay>](../../../../../docs/framework/configure-apps/file-schema/wcf/oneway.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

@@ -39,9 +39,9 @@ Specifies the identity of a service by its Service Principal Name (SPN).
  A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity uses the SPN when performing SSPI authentication with the endpoint.  
   
 ## See also
- <xref:System.ServiceModel.Configuration.IdentityElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
- <xref:System.ServiceModel.SpnEndpointIdentity>  
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+- <xref:System.ServiceModel.Configuration.IdentityElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.SpnEndpointIdentity>
+- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)

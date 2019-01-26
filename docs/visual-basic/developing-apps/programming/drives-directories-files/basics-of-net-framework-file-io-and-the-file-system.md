@@ -93,7 +93,7 @@ Classes in the <xref:System.IO> namespace are used to work with drives, files, a
  The <xref:System.IO.FileSystemWatcher> component allows you to watch for changes in files and directories on your system or on any computer to which you have network access. For example, if a file is modified, you might want to send a user an alert that the change has taken place. When changes occur, one or more events are raised, stored in a buffer, and handed to the <xref:System.IO.FileSystemWatcher> component for processing.  
   
 ## See also
- [Composing Streams](../../../../standard/io/composing-streams.md)  
- [File and Stream I/O](../../../../standard/io/index.md)  
- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)  
- [Classes Used in .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/classes-used-in-net-framework-file-io-and-the-file-system.md)
+- [Composing Streams](../../../../standard/io/composing-streams.md)
+- [File and Stream I/O](../../../../standard/io/index.md)
+- [Asynchronous File I/O](../../../../standard/io/asynchronous-file-i-o.md)
+- [Classes Used in .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/classes-used-in-net-framework-file-io-and-the-file-system.md)

@@ -30,4 +30,4 @@ Defines the interface for server-invoked debugger auto attach.
  **Header:** DbgAutoAttach.idl  
   
 ## See also
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

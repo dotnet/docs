@@ -324,8 +324,8 @@ resgen StringResources.txt /str:vb,,StringResources
 ```  
   
 ## See also
- [Tools](../../../docs/framework/tools/index.md)  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../../docs/framework/tools/index.md)
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
+- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

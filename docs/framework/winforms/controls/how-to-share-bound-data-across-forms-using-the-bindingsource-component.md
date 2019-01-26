@@ -31,6 +31,6 @@ You can easily share data across forms using the <xref:System.Windows.Forms.Bind
  For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  Also see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](https://msdn.microsoft.com/library/Bb129228\(v=vs.110\)).  
   
 ## See also
- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [How to: Handle Errors and Exceptions that Occur with Databinding](../../../../docs/framework/winforms/controls/how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)
+- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [How to: Handle Errors and Exceptions that Occur with Databinding](../../../../docs/framework/winforms/controls/how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)

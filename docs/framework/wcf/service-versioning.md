@@ -170,15 +170,15 @@ public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2
  The service contract would be updated to include new operations that are written in terms of `PurchaseOrderV2`. Existing business logic written in terms of `IPurchaseOrderV1` would continue to work for `PurchaseOrderV2` and new business logic that needs the `OrderDate` property would be written in terms of `IPurchaseOrderV2`.  
   
 ## See also
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
- <xref:System.Runtime.Serialization.IExtensibleDataObject>  
- <xref:System.Runtime.Serialization.ExtensionDataObject>  
- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- [Data Contract Equivalence](../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
+- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>
+- <xref:System.Runtime.Serialization.IExtensibleDataObject>
+- <xref:System.Runtime.Serialization.ExtensionDataObject>
+- <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- [Data Contract Equivalence](../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)

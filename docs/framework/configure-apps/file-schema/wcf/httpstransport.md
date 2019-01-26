@@ -68,13 +68,13 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
  The `httpsTransport` element is the starting point for creating a custom binding that implements the HTTPS transport protocol. HTTPS is the primary transport used for secure interoperability purposes. HTTPS is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other Web services stacks.  
   
 ## See also
- <xref:System.ServiceModel.Configuration.HttpsTransportElement>  
- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- <xref:System.ServiceModel.Configuration.HttpsTransportElement>
+- <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

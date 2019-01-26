@@ -18,4 +18,4 @@ You did not supply a `WithEvents` variable in your `Handles` clause. The `Handle
 -   Supply the necessary `WithEvents` variable.  
   
 ## See also
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)

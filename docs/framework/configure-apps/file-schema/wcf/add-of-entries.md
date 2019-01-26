@@ -55,5 +55,5 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing mapping entries.|  
   
 ## See also
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>      
- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType> 
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>
+- <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement?displayProperty=nameWithType>

@@ -82,12 +82,12 @@ End Class
  When accessing non-services that generate faults, certain limitations exist. WCF supports only faults with detail types that the schema describes and that are compatible with data contracts. For example, as mentioned above, WCF does not support faults that use XML attributes in their detail types, or faults with more than one top-level element in the detail section.  
   
 ## See also
- <xref:System.ServiceModel.FaultContractAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)  
- [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md)  
- [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md)  
- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)  
- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)  
- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- <xref:System.ServiceModel.FaultContractAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+- [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md)
+- [How to: Declare Faults in Service Contracts](../../../docs/framework/wcf/how-to-declare-faults-in-service-contracts.md)
+- [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md)
+- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
+- [Specifying Data Transfer in Service Contracts](../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

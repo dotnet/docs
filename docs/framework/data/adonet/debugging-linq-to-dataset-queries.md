@@ -22,5 +22,5 @@ Visual Studio supports the debugging of [!INCLUDE[linq_dataset](../../../../incl
  In Visual Basic in Visual Studio, you can use Edit and Continue on non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code, even in a method that contains a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query. You can add or remove code before the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] statement, even if the changes affect line number of the [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query. Your Visual Basic debugging experience for non-[!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] code remains the same as it was before [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] was introduced. You cannot change, add, or remove a [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] query, however, unless you stop debugging to apply the changes.  
   
 ## See also
- [Debugging Managed Code](/visualstudio/debugger/debugging-managed-code)  
- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+- [Debugging Managed Code](/visualstudio/debugger/debugging-managed-code)
+- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)

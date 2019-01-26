@@ -28,7 +28,7 @@ Localization is the process of translating an application's resources into local
   
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
-- [Localizability Review](../../../docs/standard/globalization-localization/localizability-review.md)  
-- [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+- [Localizability Review](../../../docs/standard/globalization-localization/localizability-review.md)
+- [Globalization](../../../docs/standard/globalization-localization/globalization.md)
 - [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

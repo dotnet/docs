@@ -31,4 +31,4 @@ Provides methods that get symbol search information. Obtain this interface by ca
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

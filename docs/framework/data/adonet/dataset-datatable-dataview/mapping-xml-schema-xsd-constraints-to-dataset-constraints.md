@@ -38,4 +38,4 @@ The XML Schema definition language (XSD) allows constraints to be specified on t
  Describes the XML Schema elements used to create relations between table columns in a **DataSet**.  
   
 ## See also
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

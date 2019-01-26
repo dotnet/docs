@@ -95,9 +95,9 @@ An XML schema may contain `<xs:import />`, `<xs:include />`, and `<xs:redefine /
   
 ## See also
 
-- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)  
-- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)  
-- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)  
-- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)  
-- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)  
+- [XML Schema Object Model Overview](../../../../docs/standard/data/xml/xml-schema-object-model-overview.md)
+- [Reading and Writing XML Schemas](../../../../docs/standard/data/xml/reading-and-writing-xml-schemas.md)
+- [Building XML Schemas](../../../../docs/standard/data/xml/building-xml-schemas.md)
+- [Traversing XML Schemas](../../../../docs/standard/data/xml/traversing-xml-schemas.md)
+- [Editing XML Schemas](../../../../docs/standard/data/xml/editing-xml-schemas.md)
 - [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md)

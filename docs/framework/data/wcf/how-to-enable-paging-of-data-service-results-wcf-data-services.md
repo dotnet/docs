@@ -23,5 +23,5 @@ ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
      [!code-vb[Astoria Northwind Service#DataServiceConfigPaging](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind service/vb/northwind.svc.vb#dataserviceconfigpaging)]  
   
 ## See also
- [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)  
- [How to: Load Paged Results](../../../../docs/framework/data/wcf/how-to-load-paged-results-wcf-data-services.md)
+- [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)
+- [How to: Load Paged Results](../../../../docs/framework/data/wcf/how-to-load-paged-results-wcf-data-services.md)

@@ -66,13 +66,13 @@ Specifies that one or more declared programming elements are accessible only fro
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See also
- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>  
- [Public](../../../visual-basic/language-reference/modifiers/public.md)  
- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
- [Private](../../../visual-basic/language-reference/modifiers/private.md)  
- [Private Protected](./private-protected.md)   
- [Protected Friend](./protected-friend.md)   
- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>
+- [Public](../../../visual-basic/language-reference/modifiers/public.md)
+- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+- [Private](../../../visual-basic/language-reference/modifiers/private.md)
+- [Private Protected](./private-protected.md)
+- [Protected Friend](./protected-friend.md)
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
+- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

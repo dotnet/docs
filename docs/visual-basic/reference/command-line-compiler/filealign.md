@@ -34,4 +34,4 @@ Specifies where to align the sections of the output file.
 >  The `-filealign` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## See also
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)

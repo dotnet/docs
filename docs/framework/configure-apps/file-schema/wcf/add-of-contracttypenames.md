@@ -55,6 +55,6 @@ A configuration element that specifies the contract name of the services being s
 |[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of contract type names.|  
   
 ## See also
- <xref:System.ServiceModel.Discovery.FindCriteria>  
- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>  
- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement>
+- <xref:System.ServiceModel.Discovery.FindCriteria>
+- <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
+- <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement>

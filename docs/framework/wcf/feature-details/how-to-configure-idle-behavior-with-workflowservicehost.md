@@ -36,6 +36,6 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
      [!code-vb[Wf_SvcHost_Idle_persist#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/wf_svchost_idle_persist/vb/source.vb#1)]  
   
 ## See also
- [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)  
- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
+- [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)
+- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
+- [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)

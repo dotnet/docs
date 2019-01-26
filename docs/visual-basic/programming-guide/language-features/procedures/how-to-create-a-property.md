@@ -55,12 +55,12 @@ You enclose a property definition between a `Property` statement and an `End Pro
  [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/how-to-create-a-property_2.vb)]  
   
 ## See also
- [Procedures](./index.md)  
- [Property Procedures](./property-procedures.md)  
- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)  
- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)  
- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)  
- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)  
- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)  
- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)  
- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)
+- [Procedures](./index.md)
+- [Property Procedures](./property-procedures.md)
+- [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
+- [Differences Between Properties and Variables in Visual Basic](./differences-between-properties-and-variables.md)
+- [How to: Declare a Property with Mixed Access Levels](./how-to-declare-a-property-with-mixed-access-levels.md)
+- [How to: Call a Property Procedure](./how-to-call-a-property-procedure.md)
+- [How to: Declare and Call a Default Property in Visual Basic](./how-to-declare-and-call-a-default-property.md)
+- [How to: Put a Value in a Property](./how-to-put-a-value-in-a-property.md)
+- [How to: Get a Value from a Property](./how-to-get-a-value-from-a-property.md)

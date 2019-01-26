@@ -10,4 +10,4 @@ author: "BrucePerlerMS"
 -   [Building My First Claims-Aware WCF Service](../../../docs/framework/security/building-my-first-claims-aware-wcf-service.md)  
   
 ## See also
- [Windows Identity Foundation](../../../docs/framework/security/index.md)
+- [Windows Identity Foundation](../../../docs/framework/security/index.md)

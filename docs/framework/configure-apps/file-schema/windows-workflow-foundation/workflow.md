@@ -129,7 +129,7 @@ A configuration element that contains all queries for a specific workflow identi
 ```  
   
 ## See also
- <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement>  
- <xref:System.Activities.Tracking.TrackingProfile>  
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.ProfileWorkflowElement>
+- <xref:System.Activities.Tracking.TrackingProfile>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

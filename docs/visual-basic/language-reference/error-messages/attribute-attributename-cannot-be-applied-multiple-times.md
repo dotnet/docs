@@ -24,6 +24,6 @@ The attribute can only be applied once. The `AttributeUsage` attribute determine
 ```  
   
 ## See also
- <xref:System.AttributeUsageAttribute>  
- [Creating Custom Attributes](../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)  
- [AttributeUsage](../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)
+- <xref:System.AttributeUsageAttribute>
+- [Creating Custom Attributes](../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
+- [AttributeUsage](../../../visual-basic/programming-guide/concepts/attributes/attributeusage.md)

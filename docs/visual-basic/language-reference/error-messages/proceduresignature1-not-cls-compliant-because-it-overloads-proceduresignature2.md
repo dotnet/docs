@@ -36,6 +36,6 @@ A procedure or property is marked as `<CLSCompliant(True)>` when it overrides an
 -   If you require that the overloads differ only by the changes cited on this Help page, remove the <xref:System.CLSCompliantAttribute> from their definitions or mark them as `<CLSCompliant(False)>`.  
   
 ## See also
-   
- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)  
- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)
+
+- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
+- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)

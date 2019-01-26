@@ -46,5 +46,5 @@ HRESULT EnumerateVariableHomes(
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
 ## See also
- [ICorDebugCode4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugCode4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md)
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

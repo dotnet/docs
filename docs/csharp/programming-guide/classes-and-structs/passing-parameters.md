@@ -29,5 +29,5 @@ For more information, see [Argument lists](~/_csharplang/spec/expressions.md#arg
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)

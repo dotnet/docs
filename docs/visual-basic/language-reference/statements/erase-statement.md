@@ -32,5 +32,5 @@ Erase arraylist
  [!code-vb[VbVbalrStatements#19](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/erase-statement_1.vb)]  
   
 ## See also
- [Nothing](../../../visual-basic/language-reference/nothing.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Nothing](../../../visual-basic/language-reference/nothing.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)

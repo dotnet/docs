@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "clear element for <listeners> for <trace>"
   - "<clear> element for <listeners> for <trace>"
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;clear&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Clears the `Listeners` collection for trace.  
@@ -74,10 +72,10 @@ Clears the `Listeners` collection for trace.
 ```  
   
 ## See also
- <xref:System.Diagnostics.Trace.Listeners%2A>  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.Debug>  
- <xref:System.Diagnostics.TraceSource>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- <xref:System.Diagnostics.Trace.Listeners%2A>
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.Debug>
+- <xref:System.Diagnostics.TraceSource>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md)
+- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)

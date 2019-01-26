@@ -9,4 +9,4 @@ Entity SQL supports calling user-defined functions in a query. You can define th
  Entity SQL enables you to define functions in the query command itself. The [FUNCTION](../../../../../../docs/framework/data/adonet/ef/language-reference/function-entity-sql.md) operator defines inline functions. You can define multiple functions in a single command, and these functions can have the same function name, as long as the function signatures are unique. For more information, see [Function Overload Resolution](../../../../../../docs/framework/data/adonet/ef/language-reference/function-overload-resolution-entity-sql.md).  
   
 ## See also
- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)
+- [Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/functions-entity-sql.md)

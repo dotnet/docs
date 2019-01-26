@@ -9,5 +9,5 @@ ms.author: "mhopkins"
 UI Automation provides programmatic access to most user interface (UI) elements on the desktop, enabling assistive technology products such as screen readers to provide information about the UI to end users and to manipulate the UI by means other than standard input.  
   
 ## See also
- [UI Automation Specification](https://go.microsoft.com/fwlink/?LinkId=108541)  
- [UI Automation Community Promise](https://go.microsoft.com/fwlink/?LinkId=108542)
+- [UI Automation Specification](https://go.microsoft.com/fwlink/?LinkId=108541)
+- [UI Automation Community Promise](https://go.microsoft.com/fwlink/?LinkId=108542)

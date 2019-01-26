@@ -576,9 +576,9 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 ```  
   
 ## See also
- <xref:System.Windows.Annotations>  
- <xref:System.Windows.Annotations.Storage>  
- <xref:System.Windows.Annotations.Annotation>  
- <xref:System.Windows.Annotations.Storage.AnnotationStore>  
- <xref:System.Windows.Annotations.Storage.XmlStreamStore>  
- [Annotations Overview](../../../../docs/framework/wpf/advanced/annotations-overview.md)
+- <xref:System.Windows.Annotations>
+- <xref:System.Windows.Annotations.Storage>
+- <xref:System.Windows.Annotations.Annotation>
+- <xref:System.Windows.Annotations.Storage.AnnotationStore>
+- <xref:System.Windows.Annotations.Storage.XmlStreamStore>
+- [Annotations Overview](../../../../docs/framework/wpf/advanced/annotations-overview.md)

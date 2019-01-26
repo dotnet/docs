@@ -92,10 +92,10 @@ Polymorphism is often referred to as the third pillar of object-oriented program
 ## See also
 
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)  
-- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
-- [Events](../../../csharp/programming-guide/events/index.md)  
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)
+- [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
 - [Types](../../../csharp/programming-guide/types/index.md)

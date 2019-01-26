@@ -101,8 +101,8 @@ object.@<attribute>
  `Phone type: home`  
   
 ## See also
- <xref:System.Xml.Linq.XElement>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- <xref:System.Xml.Linq.XElement>
+- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

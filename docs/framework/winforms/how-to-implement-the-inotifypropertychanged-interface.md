@@ -16,7 +16,7 @@ The following code example demonstrates how to implement the <xref:System.Compon
  [!code-vb[System.ComponentModel.IPropertyChangeExample#1](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/VB/Form1.vb#1)]  
   
 ## See also
- [How to: Apply the PropertyNameChanged Pattern](../../../docs/framework/winforms/how-to-apply-the-propertynamechanged-pattern.md)  
- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](../../../docs/framework/winforms/controls/raise-change-notifications--bindingsource.md)  
- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)
+- [How to: Apply the PropertyNameChanged Pattern](../../../docs/framework/winforms/how-to-apply-the-propertynamechanged-pattern.md)
+- [Windows Forms Data Binding](../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](../../../docs/framework/winforms/controls/raise-change-notifications--bindingsource.md)
+- [Change Notification in Windows Forms Data Binding](../../../docs/framework/winforms/change-notification-in-windows-forms-data-binding.md)

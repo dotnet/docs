@@ -50,4 +50,4 @@ typedef struct {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
+- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)

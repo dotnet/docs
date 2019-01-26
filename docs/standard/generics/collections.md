@@ -46,8 +46,8 @@ ms.author: "mairaw"
   
 ## See also
 
-- <xref:System.Collections.Generic?displayProperty=nameWithType>  
-- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
-- [Generics](../../../docs/standard/generics/index.md)  
-- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [Generics](../../../docs/standard/generics/index.md)
+- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
 - [Generic Interfaces](../../../docs/standard/generics/interfaces.md)

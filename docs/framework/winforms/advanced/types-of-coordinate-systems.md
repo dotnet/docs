@@ -89,5 +89,5 @@ ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 |Device|(192, 48) to (384, 144)|  
   
 ## See also
- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)  
- [Matrix Representation of Transformations](../../../../docs/framework/winforms/advanced/matrix-representation-of-transformations.md)
+- [Coordinate Systems and Transformations](../../../../docs/framework/winforms/advanced/coordinate-systems-and-transformations.md)
+- [Matrix Representation of Transformations](../../../../docs/framework/winforms/advanced/matrix-representation-of-transformations.md)

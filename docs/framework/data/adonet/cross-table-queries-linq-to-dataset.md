@@ -24,8 +24,8 @@ In addition to querying a single table, you can also perform cross-table queries
  [!code-vb[DP LINQ to DataSet Examples#Join](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#join)]  
   
 ## See also
- [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)  
- [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)  
- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [Join Operations](https://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)  
- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)
+- [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
+- [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)
+- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [Join Operations](https://msdn.microsoft.com/library/442d176d-028c-4beb-8d22-407d4ef89107)
+- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)

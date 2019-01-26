@@ -36,8 +36,8 @@ Let variable = expression [, ...]
  [!code-vb[VbSimpleQuerySamples#16](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/let-clause_1.vb)]  
   
 ## See also
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](../../../visual-basic/language-reference/queries/index.md)
+- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
+- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)

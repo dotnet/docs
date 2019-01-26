@@ -42,6 +42,6 @@ Console.WriteLine(student.First + " " + student.Last);
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)

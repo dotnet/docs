@@ -16,4 +16,4 @@ The Visual Basic runtime and the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-m
  The Visual Basic runtime usually evaluates `Nothing` as an empty string (""). The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] does not, however, and throws an exception whenever an attempt is made to perform a string operation on `Nothing`.  
   
 ## See also
- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)
+- [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

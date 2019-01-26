@@ -26,5 +26,5 @@ The following example shows how to bind to a method using <xref:System.Windows.D
  The `InvalidationCharacterRule` is a <xref:System.Windows.Controls.ValidationRule> that checks for invalid characters. The default error template, which is a red border around the <xref:System.Windows.Controls.TextBox>, appears to notify users when the input value is not a double value.  
   
 ## See also
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)  
- [Bind to an Enumeration](../../../../docs/framework/wpf/data/how-to-bind-to-an-enumeration.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+- [Bind to an Enumeration](../../../../docs/framework/wpf/data/how-to-bind-to-an-enumeration.md)

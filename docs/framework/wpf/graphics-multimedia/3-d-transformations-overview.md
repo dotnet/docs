@@ -100,6 +100,6 @@ Rotation Example
  Because cameras are also models, it’s possible to transform camera properties as well.  While you can certainly change the appearance of the scene by transforming the camera location or plane distances—in effect, transforming the entire scene projection—note that many of the effects you achieve this way may not make as much "visual sense" to the viewer as transformations applied to the location or position of the models in the scene.  
   
 ## See also
- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)  
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
- [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)
+- [3-D Graphics Overview](../../../../docs/framework/wpf/graphics-multimedia/3-d-graphics-overview.md)
+- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)
+- [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)

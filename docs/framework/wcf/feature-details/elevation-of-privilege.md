@@ -77,9 +77,9 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
  To mitigate this, reference the X.509 certificate another way, such as using <xref:System.ServiceModel.Security.Tokens.X509KeyIdentifierClauseType.IssuerSerial>.  
   
 ## See also
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)  
- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)  
- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)  
- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)  
- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
+- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
+- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
+- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
+- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)

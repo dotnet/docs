@@ -27,4 +27,4 @@ XAML 2009 is the shorthand term for new XAML language features that extend the e
  For attributes that are backed by events, XAML 2006 presumes that markup compilation is involved and submits the events to markup compilation. XAML 2009 supports a markup form that resembles a markup extension, which defers the event wiring until run-time parsing and loading of the XAML. However, WPF applications and XAML scenarios for WPF UI generally do not use this capability. WPF and its XAML 2006 implementation uses the combination of event handler wiring for routed events defined at the <xref:System.Windows.UIElement> level and its markup compiler step for much of its event attribute processing. The markup compiler also preprocesses any event attributes found in XAML where the build actions declare that the markup compiler is used.  
   
 ## See also
- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

@@ -45,4 +45,4 @@ A service behavior that enables a service to use buffered receive processing, wh
   
 ## See also
 <!-- <xref:System.ServiceModel.Activities.Description.BufferReceiveServiceBehavior>  -->
- <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>
+- <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>

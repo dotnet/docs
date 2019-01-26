@@ -57,8 +57,8 @@ In some cases, it might appear that you can't change the value of a property aft
  This technique also works for non-storyboard animations.  
   
 ## See also
- <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>  
- <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=nameWithType>  
- <xref:System.Windows.Media.Animation.RemoveStoryboard>  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)
+- <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>
+- <xref:System.Windows.Media.Animation.Storyboard.Remove%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Media.Animation.RemoveStoryboard>
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Property Animation Techniques Overview](../../../../docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md)

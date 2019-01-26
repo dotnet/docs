@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "ASP.NET configuration system"
   - "configuration files [ASP.NET]"
 ms.assetid: 24c4cf4f-ad32-42b2-b040-8e4549e2855e
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;system.web&gt; Element (Web Settings)
 Contains information about how the ASP.NET hosting layer manages process-wide behavior.  
@@ -69,4 +67,4 @@ Contains information about how the ASP.NET hosting layer manages process-wide be
 |Can be Empty||  
   
 ## See also
- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)
+- [\<applicationPool> Element (Web Settings)](../../../../../docs/framework/configure-apps/file-schema/web/applicationpool-element-web-settings.md)

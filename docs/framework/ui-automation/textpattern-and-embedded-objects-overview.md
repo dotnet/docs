@@ -145,11 +145,11 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
 |<xref:System.Windows.Automation.TextPattern.RangeFromChild%2A> where <xref:System.Windows.Automation.AutomationElement> is the object returned by the previous `GetItem` method.|Returns "Y".|  
   
 ## See also
- <xref:System.Windows.Automation.TextPattern>  
- <xref:System.Windows.Automation.Text.TextPatternRange>  
- <xref:System.Windows.Automation.Provider.ITextProvider>  
- <xref:System.Windows.Automation.Provider.ITextRangeProvider>  
- [Access Embedded Objects Using UI Automation](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)  
- [Expose the Content of a Table Using UI Automation](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)  
- [Traverse Text Using UI Automation](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)  
- [TextPattern Search and Selection Sample](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)
+- <xref:System.Windows.Automation.TextPattern>
+- <xref:System.Windows.Automation.Text.TextPatternRange>
+- <xref:System.Windows.Automation.Provider.ITextProvider>
+- <xref:System.Windows.Automation.Provider.ITextRangeProvider>
+- [Access Embedded Objects Using UI Automation](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
+- [Expose the Content of a Table Using UI Automation](../../../docs/framework/ui-automation/expose-the-content-of-a-table-using-ui-automation.md)
+- [Traverse Text Using UI Automation](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)
+- [TextPattern Search and Selection Sample](https://msdn.microsoft.com/library/0a3bca57-8b72-489d-a57c-da85b7a22c7f)

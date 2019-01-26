@@ -77,6 +77,6 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [/doc (C# Compiler Options)](../../../csharp/language-reference/compiler-options/doc-compiler-option.md)
 - [XML Documentation Comments](../../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)

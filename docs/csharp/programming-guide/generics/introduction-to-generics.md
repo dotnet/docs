@@ -27,6 +27,6 @@ Generic classes and methods combine reusability, type safety and efficiency in a
   
 ## See also
 
-- <xref:System.Collections.Generic>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- <xref:System.Collections.Generic>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Generics](../../../csharp/programming-guide/generics/index.md)

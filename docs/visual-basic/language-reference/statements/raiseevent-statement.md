@@ -70,8 +70,8 @@ RaiseEvent eventname[( argumentlist )]
 >  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../standard/threading/index.md).  
   
 ## See also
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
+- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)

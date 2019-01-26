@@ -28,6 +28,6 @@ When you have an application that executes structurally similar queries many tim
  [!code-vb[DLinqQuerying#8](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb/Module1.vb#8)]  
   
 ## See also
- <xref:System.Data.Linq.CompiledQuery>  
- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)  
- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)
+- <xref:System.Data.Linq.CompiledQuery>
+- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+- [Querying the Database](../../../../../../docs/framework/data/adonet/sql/linq/querying-the-database.md)

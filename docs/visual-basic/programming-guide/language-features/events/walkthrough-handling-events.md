@@ -111,5 +111,5 @@ This is the second of two topics that demonstrate how to work with events. The f
 >  You can declare as many `WithEvents` variables as you need, but arrays of `WithEvents` variables are not supported.  
   
 ## See also
- [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

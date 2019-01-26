@@ -60,6 +60,6 @@ HRESULT CreateValue (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
-    
- [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)  
+
+- [CreateValueForType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-createvaluefortype-method.md)
  ICorDebugValue

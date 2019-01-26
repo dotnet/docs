@@ -24,8 +24,8 @@ ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
 2.  In your project properties, add a reference to the project that contains the assembly that defines the type you are using.  
   
 ## See also
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
-   
- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)  
- [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)
+- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)
+- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+
+- [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)
+- [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

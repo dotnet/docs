@@ -48,4 +48,4 @@ PVOID Alloc (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
- [IMethodMalloc Interface](../../../../docs/framework/unmanaged-api/profiling/imethodmalloc-interface.md)
+- [IMethodMalloc Interface](../../../../docs/framework/unmanaged-api/profiling/imethodmalloc-interface.md)

@@ -73,8 +73,8 @@ Configures the delivery format, delivery method, and from address for sending em
 ```  
   
 ## See also
-- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>  
-- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>  
-- <xref:System.Net.Mail.SmtpDeliveryFormat>  
-- <xref:System.Net.Mail.SmtpDeliveryMethod>  
+- <xref:System.Net.Configuration.SmtpSection?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpClient?displayProperty=nameWithType>
+- <xref:System.Net.Mail.SmtpDeliveryFormat>
+- <xref:System.Net.Mail.SmtpDeliveryMethod>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

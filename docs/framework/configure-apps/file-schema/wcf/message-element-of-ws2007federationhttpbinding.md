@@ -122,12 +122,12 @@ Defines settings for the message-level security for the [\<ws2007FederationHttpB
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-element-of-ws2007federationhttpbinding.md)|Defines the security settings for a binding.|  
   
 ## See also
- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>  
- <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>  
- <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>  
+- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
+- <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>
+- <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>
  `System.ServiceModel.Configuration.FederatedMessageSecurityElement` 
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

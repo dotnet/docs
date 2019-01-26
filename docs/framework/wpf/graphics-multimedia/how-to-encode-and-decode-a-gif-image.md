@@ -32,4 +32,4 @@ The following examples show how to decode and encode a [!INCLUDE[TLA#tla_gif](..
  [!code-vb[GifBitmapDecoderEncoder#4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GifBitmapDecoderEncoder/VB/GifEncoderDecoder.vb#4)]  
   
 ## See also
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

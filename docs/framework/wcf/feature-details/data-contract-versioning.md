@@ -110,16 +110,16 @@ As applications evolve, you may also have to change the data contracts the servi
 Naturally, changing the data contract of contents of a collection (for example, changing from a list of integers to a list of strings) is a breaking change.  
   
 ## See also
- <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute>  
- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>  
- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>  
- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>  
- <xref:System.Runtime.Serialization.SerializationException>  
- <xref:System.Runtime.Serialization.IExtensibleDataObject>  
- [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)  
- [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
+- <xref:System.Runtime.Serialization.DataMemberAttribute.Name%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute>
+- <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A>
+- <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A>
+- <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A>
+- <xref:System.Runtime.Serialization.SerializationException>
+- <xref:System.Runtime.Serialization.IExtensibleDataObject>
+- [Version-Tolerant Serialization Callbacks](../../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)
+- [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)

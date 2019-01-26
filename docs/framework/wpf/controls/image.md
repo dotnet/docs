@@ -22,5 +22,5 @@ The <xref:System.Windows.Controls.Image> element is used to display bitmap image
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See also
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)

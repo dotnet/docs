@@ -34,6 +34,6 @@ Function '\<procedurename>' doesn't return a value on all code paths. Are you mi
      It is easier to guarantee that every return from the procedure returns a value if you always use the `Return` statement. If you do this, the last statement before `End Function` should be a `Return` statement.  
   
 ## See also
- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
+- [Function Procedures](../../../visual-basic/programming-guide/language-features/procedures/function-procedures.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)

@@ -43,11 +43,11 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
 ```  
   
 ## See also
- <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>  
- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)  
- [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
+- <xref:System.ServiceModel.Configuration.PnrpPeerResolverElement>
+- <xref:System.ServiceModel.Channels.PnrpPeerResolverBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)

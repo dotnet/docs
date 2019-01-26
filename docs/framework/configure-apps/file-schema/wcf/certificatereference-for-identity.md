@@ -43,7 +43,7 @@ Specifies settings for X.509 certificate validation. A secure Windows Communicat
 |[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies settings that enable the authentication of an endpoint by other endpoints exchanging messages with it.|  
   
 ## See also
- <xref:System.ServiceModel.Configuration.CertificateReferenceElement>  
- <xref:System.ServiceModel.Configuration.IdentityElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.Configuration.CertificateReferenceElement>
+- <xref:System.ServiceModel.Configuration.IdentityElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.EndpointAddress.Identity%2A>

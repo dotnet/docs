@@ -58,5 +58,5 @@ Contains the settings needed by an application to participate in the service dis
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|Defines a standard endpoint that contains information to enable an application to function as a client program that can find the endpoint address dynamically at runtime.|  
   
 ## See also
- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>  
- <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>
+- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
+- <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientSettingsElement>

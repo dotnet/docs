@@ -52,7 +52,7 @@ class MathService
  After implementing a service contract, you must create one or more endpoints for the service. For more information, see [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md). For more information about how to run a service, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
   
 ## See also
- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
- [How to: Create a Service with a Contract Class](../../../docs/framework/wcf/feature-details/how-to-create-a-wcf-contract-with-a-class.md)  
- [How to: Create a Service with a Contract Interface](../../../docs/framework/wcf/feature-details/how-to-create-a-service-with-a-contract-interface.md)  
- [Specifying Service Run-Time Behavior](../../../docs/framework/wcf/specifying-service-run-time-behavior.md)
+- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)
+- [How to: Create a Service with a Contract Class](../../../docs/framework/wcf/feature-details/how-to-create-a-wcf-contract-with-a-class.md)
+- [How to: Create a Service with a Contract Interface](../../../docs/framework/wcf/feature-details/how-to-create-a-service-with-a-contract-interface.md)
+- [Specifying Service Run-Time Behavior](../../../docs/framework/wcf/specifying-service-run-time-behavior.md)

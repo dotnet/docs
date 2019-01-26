@@ -31,5 +31,5 @@ ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

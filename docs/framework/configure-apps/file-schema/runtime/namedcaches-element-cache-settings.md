@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "caching [.NET Framework], configuration"
   - "<namedCaches> element"
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;namedCaches&gt; Element (Cache Settings)
 Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.  

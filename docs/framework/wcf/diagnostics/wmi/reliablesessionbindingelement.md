@@ -91,4 +91,4 @@ class ReliableSessionBindingElement : BindingElement
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>
+- <xref:System.ServiceModel.Channels.ReliableSessionBindingElement>

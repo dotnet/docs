@@ -20,4 +20,4 @@ Microsoft SQL Server provides support for user-defined types (UDTs) implemented 
   
 ## See also
 
-[ADO.NET Overview](../ado-net-overview.md)  
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -75,7 +75,7 @@ The C# language is designed so that versioning between [base](../../../csharp/la
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
+- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
 - [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md)

@@ -44,6 +44,6 @@ HRESULT NukeDownloadedCache();
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
 ## See also
- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)  
- [GetHistoryFileDirectory Function](../../../../docs/framework/unmanaged-api/fusion/gethistoryfiledirectory-function.md)  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)
+- [GetHistoryFileDirectory Function](../../../../docs/framework/unmanaged-api/fusion/gethistoryfiledirectory-function.md)
+- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)

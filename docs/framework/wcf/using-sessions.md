@@ -140,5 +140,5 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
 >  MaxConcurrentSessions have no effect in this case because there is only one "session" available.  
   
 ## See also
- <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>  
- <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.IsInitiating%2A>
+- <xref:System.ServiceModel.OperationContractAttribute.IsTerminating%2A>

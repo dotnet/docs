@@ -247,4 +247,4 @@ TextBlock that has a Border
  <xref:System.Windows.Documents.TextElement> and its related classes allow you to format text. <xref:System.Windows.Documents.TextElement> objects contain and format text in <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects. The two primary types of <xref:System.Windows.Documents.TextElement> objects are <xref:System.Windows.Documents.Block> elements and <xref:System.Windows.Documents.Inline> elements. A <xref:System.Windows.Documents.Block> element represents a block of text, such as a paragraph or list. An <xref:System.Windows.Documents.Inline> element represents a portion of text in a block. Many <xref:System.Windows.Documents.Inline> classes specify formatting for the text to which they are applied. Each <xref:System.Windows.Documents.TextElement> has its own content model. For more information, see the [TextElement Content Model Overview](../../../../docs/framework/wpf/advanced/textelement-content-model-overview.md).  
   
 ## See also
- [Advanced](../../../../docs/framework/wpf/advanced/index.md)
+- [Advanced](../../../../docs/framework/wpf/advanced/index.md)

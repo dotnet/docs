@@ -37,4 +37,4 @@ SEVES
  [!code-vb[DLinqDebuggingSupport#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqDebuggingSupport/vb/Module1.vb#1)]  
   
 ## See also
- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)

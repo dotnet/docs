@@ -28,7 +28,7 @@ The topics in this section demonstrate how to use <xref:System.Windows.Media.Geo
  [Round the Corners of a RectangleGeometry](../../../../docs/framework/wpf/graphics-multimedia/how-to-round-the-corners-of-a-rectanglegeometry.md)  
   
 ## See also
- <xref:System.Windows.Media.Brushes>  
- <xref:System.Windows.Shapes.Shape>  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- <xref:System.Windows.Media.Brushes>
+- <xref:System.Windows.Shapes.Shape>
+- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

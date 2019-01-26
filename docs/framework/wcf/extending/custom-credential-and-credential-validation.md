@@ -50,4 +50,4 @@ Security in Windows Communication Foundation (WCF) is based on the exchange of c
  [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
   
 ## See also
- [Security](../../../../docs/framework/wcf/feature-details/security.md)
+- [Security](../../../../docs/framework/wcf/feature-details/security.md)

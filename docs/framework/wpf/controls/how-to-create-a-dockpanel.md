@@ -17,6 +17,6 @@ ms.assetid: 9194f663-e279-4f1a-86d7-125a57d05c6f
  [!code-vb[DockPanelCode#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DockPanelCode/VisualBasic/dockpanel_vb.vb#1)]  
   
 ## See also
- <xref:System.Windows.Controls.DockPanel>  
- <xref:System.Windows.Controls.Dock>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.DockPanel>
+- <xref:System.Windows.Controls.Dock>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<oidMap> element"
   - "oidMap element"
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;oidMap&gt; Element
 Contains ASN.1 object identifier (OID) mappings to classes.  
@@ -70,8 +68,8 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 ```  
   
 ## See also
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
+- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
 - [Mapping Object Identifiers to Cryptography Algorithms](../../../../../docs/framework/configure-apps/map-object-identifiers-to-cryptography-algorithms.md)

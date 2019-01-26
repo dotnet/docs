@@ -36,5 +36,5 @@ Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET
  [!code-vb[System.ReflectionWinStoreApp#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
   
 ## See also
- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)  
- [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/?LinkID=225700)
+- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
+- [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/?LinkID=225700)

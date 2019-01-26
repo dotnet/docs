@@ -14,5 +14,5 @@ Id: 174
  This event indicates that transport authentication has failed, listing the client identity, and activity ID.  
   
 ## See also
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

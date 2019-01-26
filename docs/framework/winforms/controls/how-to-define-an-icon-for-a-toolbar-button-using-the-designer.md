@@ -36,7 +36,7 @@ ms.assetid: d848f38e-67f2-49d4-8e88-01c845c06c02
 6.  In the **Properties** window that appears in the pane on the right side of the **ToolBarButton Collection Editor**, set the <xref:System.Windows.Forms.ToolBarButton.ImageIndex%2A> property of each toolbar button to one of the values in the list, which is drawn from the images you added to the <xref:System.Windows.Forms.ImageList> component.  
   
 ## See also
- <xref:System.Windows.Forms.ToolBar>  
- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)  
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)  
- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)
+- <xref:System.Windows.Forms.ToolBar>
+- [How to: Trigger Menu Events for Toolbar Buttons](../../../../docs/framework/winforms/controls/how-to-trigger-menu-events-for-toolbar-buttons.md)
+- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)
+- [ImageList Component](../../../../docs/framework/winforms/controls/imagelist-component-windows-forms.md)

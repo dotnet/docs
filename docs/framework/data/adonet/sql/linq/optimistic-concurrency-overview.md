@@ -83,4 +83,4 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
 -   <xref:System.Data.Linq.RefreshMode?displayProperty=nameWithType>  
   
 ## See also
- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
+- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)

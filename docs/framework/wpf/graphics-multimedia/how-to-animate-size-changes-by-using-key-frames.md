@@ -24,11 +24,11 @@ This example shows how to animate size changes by using key frames.
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
 ## See also
- <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames>  
- <xref:System.Windows.Media.ArcSegment.Size%2A>  
- <xref:System.Windows.Media.ArcSegment>  
- <xref:System.Windows.Media.Animation.LinearSizeKeyFrame>  
- <xref:System.Windows.Media.Animation.DiscreteSizeKeyFrame>  
- <xref:System.Windows.Media.Animation.SplineSizeKeyFrame>  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+- <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames>
+- <xref:System.Windows.Media.ArcSegment.Size%2A>
+- <xref:System.Windows.Media.ArcSegment>
+- <xref:System.Windows.Media.Animation.LinearSizeKeyFrame>
+- <xref:System.Windows.Media.Animation.DiscreteSizeKeyFrame>
+- <xref:System.Windows.Media.Animation.SplineSizeKeyFrame>
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

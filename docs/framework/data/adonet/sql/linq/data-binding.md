@@ -101,4 +101,4 @@ ms.assetid: cbec8b02-a1e8-4ae8-a83b-bb5190413ac5
 -   If an entity is bound in two separate grids (for example, one master and another detail), a `Delete` in the master grid is not propagated to the detail grid.  
   
 ## See also
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

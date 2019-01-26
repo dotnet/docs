@@ -20,5 +20,5 @@ There might be times when you want to bind a <xref:System.Windows.Controls.TreeV
  [!code-xaml[TreeViewWithUnknownDepth#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewWithUnknownDepth/CS/Window1.xaml#1)]  
   
 ## See also
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Data Templating Overview](../../../../docs/framework/wpf/data/data-templating-overview.md)

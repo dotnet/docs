@@ -36,6 +36,6 @@ In Windows Communication Foundation (WCF), metadata export is the process of des
  For more information, see [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md).  
   
 ## See also
- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)  
- [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md)  
- [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)
+- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)
+- [How to: Export Custom Policy Assertions](../../../../docs/framework/wcf/extending/how-to-export-custom-policy-assertions.md)
+- [Importing Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/importing-custom-metadata-for-a-wcf-extension.md)

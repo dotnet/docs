@@ -16,5 +16,5 @@ The following topics introduce LINQ to XML.
   
 ## See also
 
-- [Reference (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/reference-linq-to-xml.md)  
+- [Reference (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/reference-linq-to-xml.md)
 - [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)

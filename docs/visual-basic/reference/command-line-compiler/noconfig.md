@@ -30,7 +30,7 @@ Specifies that the compiler should not automatically reference the commonly used
 >  The `-noconfig` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## See also
- [-nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)  
- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+- [-nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)
+- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)

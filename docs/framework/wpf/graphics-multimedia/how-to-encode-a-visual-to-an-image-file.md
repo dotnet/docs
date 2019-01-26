@@ -22,7 +22,7 @@ This example demonstrates how to encode a <xref:System.Windows.Media.Visual> obj
  A <xref:System.Windows.Media.Imaging.PngBitmapEncoder> was used in this example but any of the derived <xref:System.Windows.Media.Imaging.BitmapEncoder> objects could have been used to create the image file.  
   
 ## See also
- <xref:System.Windows.Media.DrawingContext>  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)  
- [Using DrawingVisual Objects](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)
+- <xref:System.Windows.Media.DrawingContext>
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+- [Using DrawingVisual Objects](../../../../docs/framework/wpf/graphics-multimedia/using-drawingvisual-objects.md)

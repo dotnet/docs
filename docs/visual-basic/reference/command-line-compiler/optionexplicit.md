@@ -40,10 +40,10 @@ Causes the compiler to report errors if variables are not declared before they a
  [!code-vb[VbVbalrCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/optionexplicit_1.vb)]  
   
 ## See also
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)  
- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
+- [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

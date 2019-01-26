@@ -258,7 +258,7 @@ public class Window {
 ```  
   
 ## See also
- [Default Marshaling Behavior](default-marshaling-behavior.md)  
- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)  
- [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))  
- [Copying and Pinning](copying-and-pinning.md)
+- [Default Marshaling Behavior](default-marshaling-behavior.md)
+- [Blittable and Non-Blittable Types](blittable-and-non-blittable-types.md)
+- [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))
+- [Copying and Pinning](copying-and-pinning.md)

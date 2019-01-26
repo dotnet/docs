@@ -17,6 +17,6 @@ The `FilePut` method includes an argument of type `Object`. `FilePutObject` shou
 -   Use the functionality available in the `My.Computer.FileSystem` object.  
   
 ## See also
-   
- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)  
- [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)
+
+- [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
+- [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)

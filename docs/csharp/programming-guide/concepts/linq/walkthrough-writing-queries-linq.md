@@ -178,6 +178,6 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
 ## See also
 
-- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)  
-- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+- [Language-Integrated Query (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/index.md)
+- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [LINQ Query Expressions](../../../../csharp/programming-guide/linq-query-expressions/index.md)

@@ -20,6 +20,6 @@ The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component is a
  When it is added to a form, the <xref:System.Windows.Forms.FolderBrowserDialog> component appears in the tray at the bottom of the Windows Forms Designer.  
   
 ## See also
- <xref:System.Windows.Forms.FolderBrowserDialog>  
- [How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)  
- [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)
+- <xref:System.Windows.Forms.FolderBrowserDialog>
+- [How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)
+- [FolderBrowserDialog Component](../../../../docs/framework/winforms/controls/folderbrowserdialog-component-windows-forms.md)

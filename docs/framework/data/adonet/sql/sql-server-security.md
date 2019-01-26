@@ -34,5 +34,5 @@ Describes security considerations for SQL Server and Azure SQL Database.
 Describes security concerns to consider before installing SQL Server.
 
 ## See also
- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
+- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)

@@ -30,9 +30,9 @@ ms.assetid: fd16272e-36f2-415e-850e-8a81f2b17525
 6.  Recompile the project.  
   
 ## Example  
- The previous example returns the following result for the URI `http://myservice/``Northwind.svc/Customers('ALFKI')`.  
+ The previous example returns the following result for the URI `http://myservice/Northwind.svc/Customers('ALFKI')`.  
   
  [!code-xml[Astoria Custom Feeds#EdmFeedResult](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/edmfeedresult.xml#edmfeedresult)]  
   
 ## See also
- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)
+- [Entity Framework Provider](../../../../docs/framework/data/wcf/entity-framework-provider-wcf-data-services.md)

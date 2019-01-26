@@ -133,12 +133,12 @@ Pruning a visual tree
  [!code-vb[HitTestingOverview#108](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#108)]  
   
 ## See also
- <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>  
- <xref:System.Windows.Media.HitTestResult>  
- <xref:System.Windows.Media.HitTestResultCallback>  
- <xref:System.Windows.Media.HitTestFilterCallback>  
- <xref:System.Windows.UIElement.IsHitTestVisible%2A>  
- [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994)  
- [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995)  
- [Hit Test Geometry in a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)  
- [Hit Test Using a Win32 Host Container](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)
+- <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A>
+- <xref:System.Windows.Media.HitTestResult>
+- <xref:System.Windows.Media.HitTestResultCallback>
+- <xref:System.Windows.Media.HitTestFilterCallback>
+- <xref:System.Windows.UIElement.IsHitTestVisible%2A>
+- [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994)
+- [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995)
+- [Hit Test Geometry in a Visual](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-geometry-in-a-visual.md)
+- [Hit Test Using a Win32 Host Container](../../../../docs/framework/wpf/graphics-multimedia/how-to-hit-test-using-a-win32-host-container.md)

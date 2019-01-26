@@ -38,7 +38,7 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
  [!code-vb[VbVbalrStatements#97](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/call-statement_1.vb)]  
   
 ## See also
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)  
- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
+- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)

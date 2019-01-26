@@ -21,11 +21,11 @@ Another approach to iterating over the array is to use the [foreach](../../../cs
   
 ## See also
 
-- <xref:System.Array>  
-- <xref:System.Collections>  
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)  
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
-- [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)  
+- <xref:System.Array>
+- <xref:System.Collections>
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [foreach, in](../../../csharp/language-reference/keywords/foreach-in.md)
+- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
+- [How to: Display Command Line Arguments](../../../csharp/programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
 - [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)

@@ -13,5 +13,5 @@ You attempted a late-bound assignment that is not valid.
 -   Make the assignment early bound.  
   
 ## See also
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
 

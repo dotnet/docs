@@ -24,8 +24,8 @@ This example shows how to adjust the <xref:System.Windows.Controls.StackPanel.Or
  [!code-vb[StackPanelIntroSamp#2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StackPanelIntroSamp/VisualBasic/Window1.xaml.vb#2)]  
   
 ## See also
- <xref:System.Windows.Controls.StackPanel>  
- <xref:System.Windows.Controls.ListBox>  
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>  
- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- <xref:System.Windows.Controls.StackPanel>
+- <xref:System.Windows.Controls.ListBox>
+- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>
+- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

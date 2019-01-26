@@ -112,5 +112,5 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## See also
 
-- <xref:System.Security.Cryptography.Xml>  
+- <xref:System.Security.Cryptography.Xml>
 - [How to: Decrypt XML Elements with X.509 Certificates](../../../docs/standard/security/how-to-decrypt-xml-elements-with-x-509-certificates.md)

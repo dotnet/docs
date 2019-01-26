@@ -112,7 +112,7 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
  R1232: Outgoing `wscoor:Register` messages must use the `IssuedTokenOverTransport` authentication mode described in [Security Protocols](../../../../docs/framework/wcf/feature-details/security-protocols.md).  
   
- The `wsse:Timestamp` element must be signed using the `SecurityContextToken``STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
+ The `wsse:Timestamp` element must be signed using the `SecurityContextToken STx` issued. This signature is a proof of possession of the token associated with particular transaction and is used to authenticate a participant enlisting in the transaction. The RegistrationResponse message is sent back over HTTPS.  
   
 #### 2PC Protocol Binding Configuration  
  WCF supports one-way (datagram) messages over HTTPS. Correlation among the messages is left as an implementation detail.  

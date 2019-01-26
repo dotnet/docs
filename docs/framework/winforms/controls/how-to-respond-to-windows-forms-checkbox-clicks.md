@@ -130,7 +130,7 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
     >  When the <xref:System.Windows.Forms.CheckBox.ThreeState%2A> property is set to `true`, the <xref:System.Windows.Forms.CheckBox.Checked%2A> property returns `true` for both <xref:System.Windows.Forms.CheckState.Checked> and <xref:System.Windows.Forms.CheckState.Indeterminate>.  
   
 ## See also
- <xref:System.Windows.Forms.CheckBox>  
- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)  
- [How to: Set Options with Windows Forms CheckBox Controls](../../../../docs/framework/winforms/controls/how-to-set-options-with-windows-forms-checkbox-controls.md)  
- [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)
+- <xref:System.Windows.Forms.CheckBox>
+- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)
+- [How to: Set Options with Windows Forms CheckBox Controls](../../../../docs/framework/winforms/controls/how-to-set-options-with-windows-forms-checkbox-controls.md)
+- [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)

@@ -123,4 +123,4 @@ When working with animations in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla
  For more information about clock objects, see [Animation and Timing System Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
 ## See also
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)

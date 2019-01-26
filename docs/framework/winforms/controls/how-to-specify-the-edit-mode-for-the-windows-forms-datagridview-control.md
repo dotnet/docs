@@ -39,6 +39,6 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
 -   References to the <xref:System> and <xref:System.Windows.Forms> assemblies.  
   
 ## See also
- <xref:System.Windows.Forms.DataGridView>  
- <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>  
- [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)
+- <xref:System.Windows.Forms.DataGridView>
+- <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>
+- [Data Entry in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/data-entry-in-the-windows-forms-datagridview-control.md)

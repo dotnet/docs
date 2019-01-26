@@ -65,5 +65,5 @@ LETSS:Let's Stop N Shop:Jaime Yorres
   
 ## See also
 
-- <xref:System.Linq.Enumerable.Select%2A>  
+- <xref:System.Linq.Enumerable.Select%2A>
 - [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

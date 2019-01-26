@@ -70,7 +70,7 @@ In the previous example, the `number` variable is strongly typed as an `int`. Yo
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
 - [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)

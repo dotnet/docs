@@ -25,6 +25,6 @@ Parameters declared for a method without [in](../../../csharp/language-reference
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Keywords](../../../csharp/language-reference/keywords/index.md)

@@ -2943,17 +2943,16 @@ Task t Status: RanToCompletion, Result: 42
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether this <see cref="T:System.Threading.Tasks.Task" /> has completed.</summary>
+        <summary>Gets a value that indicates whether the task has completed.</summary>
         <value>
-          <see langword="true" /> if the task has completed; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the task has completed (that is, the task is in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Threading.Tasks.Task.IsCompleted%2A> will return `true` when the task is in one of the three final states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled>.  
   
 > [!IMPORTANT]
->  Retrieving the value of the <xref:System.Threading.Tasks.Task.IsCompleted%2A?displayProperty=nameWithType> property does not block the calling thread until the task has completed.  
+> Retrieving the value of the <xref:System.Threading.Tasks.Task.IsCompleted%2A?displayProperty=nameWithType> property does not block the calling thread until the task has completed.  
   
  ]]></format>
         </remarks>

@@ -4,7 +4,7 @@
 ## [Strong naming](strong-naming.md)
 ## [NuGet](nuget.md)
 ### [Dependencies](dependencies.md)
-### [SourceLink](sourcelink.md)
+### [Source Link](sourcelink.md)
 ### [Publishing](publish-nuget-package.md)
 ## [Versioning](versioning.md)
 ### [Breaking changes](breaking-changes.md)

@@ -63,9 +63,9 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 **✔️ DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
 
-**✔️ CONSIDER** setting up [SourceLink](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
+**✔️ CONSIDER** setting up [Source Link](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
 
-> SourceLink automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package. SourceLink also adds information about the exact source code the package was built from. For example, a package created from a Git repository will have the commit hash added as metadata.
+> Source Link automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package. Source Link also adds information about the exact source code the package was built from. For example, a package created from a Git repository will have the commit hash added as metadata.
 
 ## Pre-release packages
 

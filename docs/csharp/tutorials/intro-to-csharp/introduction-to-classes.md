@@ -157,7 +157,7 @@ Console.WriteLine(account.Balance);
 Next, test that you are catching error conditions by trying to create an account with a negative balance:
 
 ```csharp
-// Test that the initial balances must be positive:
+// Test that the initial balances must be positive.
 try
 {
     var invalidAccount = new BankAccount("invalid", -55);

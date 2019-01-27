@@ -130,7 +130,7 @@ All applications tend to share a common set of functionality that applies to app
  After <xref:System.Windows.Application.Run%2A> is called and the application is initialized, the application is ready to run. This moment is signified when the <xref:System.Windows.Application.Startup> event is raised:  
   
 [!code-csharp[Startup-event](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationStartupSnippets/CSharp/App.xaml.cs?range=3-11,31-33)]
-[!code-csharp[Startup-event](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationStartupSnippets/visualbasic/application.xaml.vb?range=5-11,30-32)]
+[!code-vb[Startup-event](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationStartupSnippets/visualbasic/application.xaml.vb?range=5-11,30-32)]
   
  At this point in an application's lifetime, the most common thing to do is to show a UI.  
   

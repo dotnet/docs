@@ -1,5 +1,5 @@
 ---
-title: "How to: Manipulate a Table&#39;s Columns through the Columns Property"
+title: "How to: Manipulate a Table's Columns through the Columns Property"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "Columns property [WPF]"
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
 ---
-# How to: Manipulate a Table&#39;s Columns through the Columns Property
+# How to: Manipulate a Table's Columns through the Columns Property
 This example demonstrates some of the more common operations that can be performed on a table's columns through the <xref:System.Windows.Documents.Table.Columns%2A> property.  
   
 ## Example  

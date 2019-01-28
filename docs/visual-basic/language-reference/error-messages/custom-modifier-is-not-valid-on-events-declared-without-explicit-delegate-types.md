@@ -1,5 +1,5 @@
 ---
-title: "&#39;Custom&#39; modifier is not valid on events declared without explicit delegate types"
+title: "'Custom' modifier is not valid on events declared without explicit delegate types"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc31122"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC31122"
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
 ---
-# &#39;Custom&#39; modifier is not valid on events declared without explicit delegate types
+# 'Custom' modifier is not valid on events declared without explicit delegate types
 Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause following the event name that explicitly specifies the delegate type for the event.  
   
  Non-custom events can be defined either with an `As` clause and an explicit delegate type, or with a parameter list immediately following the event name.  

@@ -1,5 +1,5 @@
 ---
-title: "&#39;#ElseIf&#39; must be preceded by a matching &#39;#If&#39; or &#39;#ElseIf&#39;"
+title: "'#ElseIf' must be preceded by a matching '#If' or '#ElseIf'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30014"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30014"
 ms.assetid: 5215585e-2efa-485a-9efe-9833a1cc83a0
 ---
-# &#39;#ElseIf&#39; must be preceded by a matching &#39;#If&#39; or &#39;#ElseIf&#39;
+# '#ElseIf' must be preceded by a matching '#If' or '#ElseIf'
 `#ElseIf` is a conditional compilation directive. An `#ElseIf` clause must be preceded by a matching `#If` or `#ElseIf` clause.  
   
  **Error ID:** BC30014  

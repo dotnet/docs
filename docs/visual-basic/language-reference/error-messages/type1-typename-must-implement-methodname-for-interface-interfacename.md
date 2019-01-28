@@ -1,5 +1,5 @@
 ---
-title: "<type1>&#39;<typename>&#39; must implement &#39;<methodname>&#39; for interface &#39;<interfacename>&#39;"
+title: "<type1>'<typename>' must implement '<methodname>' for interface '<interfacename>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30149"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30149"
 ms.assetid: 29d1b7f4-dca7-478c-bbe7-c657f342c183
 ---
-# \<type1>&#39;\<typename>&#39; must implement &#39;\<methodname>&#39; for interface &#39;\<interfacename>&#39;
+# \<type1>'\<typename>' must implement '\<methodname>' for interface '\<interfacename>'
 A class or structure claims to implement an interface but does not implement a procedure defined by the interface. Every member of the interface must be implemented.  
   
  **Error ID:** BC30149  

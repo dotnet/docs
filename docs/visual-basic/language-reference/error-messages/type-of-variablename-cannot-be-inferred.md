@@ -1,5 +1,5 @@
 ﻿---
-title: "Type of &#39;<variablename>&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type"
+title: "Type of '<variablename>' cannot be inferred because the loop bounds and the step variable do not widen to the same type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30982"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30982"
 ms.assetid: 741e85d9-a747-42ad-a1e1-a3f1928aaff5
 ---
-# Type of &#39;\<variablename>&#39; cannot be inferred because the loop bounds and the step variable do not widen to the same type
+# Type of '\<variablename>' cannot be inferred because the loop bounds and the step variable do not widen to the same type
 You have written a `For...Next` loop in which the compiler cannot infer a data type for the loop control variable because the following conditions are true:  
   
 -   The data type of the loop control variable is not specified with an `As` clause.  

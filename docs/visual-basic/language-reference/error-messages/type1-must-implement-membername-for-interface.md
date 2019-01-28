@@ -1,5 +1,5 @@
 ---
-title: "<type1>&#39;<typename>&#39; must implement &#39;<membername>&#39; for interface &#39;<interfacename>&#39;"
+title: "<type1>'<typename>' must implement '<membername>' for interface '<interfacename>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30154"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30154"
 ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
 ---
-# \<type1>&#39;\<typename>&#39; must implement &#39;\<membername>&#39; for interface &#39;\<interfacename>&#39;
+# \<type1>'\<typename>' must implement '\<membername>' for interface '\<interfacename>'
 '\<typename>' must implement '\<membername>' for interface '\<interfacename>'. Implementing property must have matching 'ReadOnly'/'WriteOnly' specifiers.  
   
  A class or structure claims to implement an interface but does not implement a procedure, property, or event defined by the interface. Every member of the interface must be implemented.  

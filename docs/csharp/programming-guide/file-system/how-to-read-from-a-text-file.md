@@ -35,8 +35,8 @@ This example reads the contents of a text file by using the static methods <xref
 ## .NET Framework Security  
  Do not rely on the name of a file to determine the contents of the file. For example, the file `myFile.cs` might not be a C# source file.  
   
-## See Also
+## See also
 
-- <xref:System.IO?displayProperty=nameWithType>  
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- <xref:System.IO?displayProperty=nameWithType>
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)

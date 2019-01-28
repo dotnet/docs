@@ -55,7 +55,7 @@ The Entity Data Model (EDM) is a set of concepts that describe the structure of 
   
  [referential integrity constraint](../../../../docs/framework/data/adonet/referential-integrity-constraint.md)  
   
-## See Also  
- [ADO.NET Entity Data Model  Tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)  
- [.edmx File Overview](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)  
- [CSDL Specification](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)
+## See also
+- [ADO.NET Entity Data Model  Tools](https://msdn.microsoft.com/library/91076853-0881-421b-837a-f582f36be527)
+- [.edmx File Overview](https://msdn.microsoft.com/library/f4c8e7ce-1db6-417e-9759-15f8b55155d4)
+- [CSDL Specification](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)

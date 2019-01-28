@@ -58,7 +58,7 @@ private void playSimpleSound()
 ## .NET Framework Security  
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
-## See Also  
- <xref:System.Media.SoundPlayer>  
- [How to: Load a Sound Asynchronously within a Windows Form](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)  
- 
+## See also
+- <xref:System.Media.SoundPlayer>
+- [How to: Load a Sound Asynchronously within a Windows Form](../../../../docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md)
+

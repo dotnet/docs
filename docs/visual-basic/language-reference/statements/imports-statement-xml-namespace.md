@@ -82,8 +82,8 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  `Patrick Hines`  
   
-## See Also  
- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)  
- [GetXmlNamespace Operator](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)
+## See also
+- [XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
+- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [GetXmlNamespace Operator](../../../visual-basic/language-reference/operators/getxmlnamespace-operator.md)

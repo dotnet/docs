@@ -46,7 +46,7 @@ Option Strict On
   
 5.  Make sure your `With` block is initialized by executing the `With` statement entry point.  
   
-## See Also  
- [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+## See also
+- [Object Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)

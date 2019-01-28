@@ -37,8 +37,8 @@ With the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client libr
  [!code-csharp[Astoria Northwind Client#AddOrderDetailToOrderAuto](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#addorderdetailtoorderauto)]
  [!code-vb[Astoria Northwind Client#AddOrderDetailToOrderAuto](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#addorderdetailtoorderauto)]  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [How to: Attach an Existing Entity to the DataServiceContext](../../../../docs/framework/data/wcf/attach-an-existing-entity-to-dc-wcf-data.md)  
- [How to: Define Entity Relationships](../../../../docs/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services.md)  
- [Batching Operations](../../../../docs/framework/data/wcf/batching-operations-wcf-data-services.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [How to: Attach an Existing Entity to the DataServiceContext](../../../../docs/framework/data/wcf/attach-an-existing-entity-to-dc-wcf-data.md)
+- [How to: Define Entity Relationships](../../../../docs/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services.md)
+- [Batching Operations](../../../../docs/framework/data/wcf/batching-operations-wcf-data-services.md)

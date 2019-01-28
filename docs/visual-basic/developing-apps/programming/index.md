@@ -31,8 +31,8 @@ This section discusses programming tasks that you may want to learn more about a
  [Processing Drives, Directories, and Files](../../../visual-basic/developing-apps/programming/drives-directories-files/processing.md)  
  Contains documentation on how to access the file system using the `My.Computer.FileSystem` object.  
   
-## See Also  
- [Visual Basic Language Features](../../../visual-basic/programming-guide/language-features/index.md)  
- [Programming Concepts](../../../visual-basic/programming-guide/concepts/index.md)  
- [Collections](../../../visual-basic/programming-guide/concepts/collections.md)  
- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)
+## See also
+- [Visual Basic Language Features](../../../visual-basic/programming-guide/language-features/index.md)
+- [Programming Concepts](../../../visual-basic/programming-guide/concepts/index.md)
+- [Collections](../../../visual-basic/programming-guide/concepts/collections.md)
+- [Developing Applications with Visual Basic](../../../visual-basic/developing-apps/index.md)

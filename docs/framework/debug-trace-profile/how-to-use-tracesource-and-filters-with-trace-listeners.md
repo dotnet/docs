@@ -157,7 +157,7 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
     }  
     ```  
   
-## See Also  
+## See also
 - <xref:System.Diagnostics.TraceSource>
 - <xref:System.Diagnostics.TextWriterTraceListener>
 - <xref:System.Diagnostics.ConsoleTraceListener>

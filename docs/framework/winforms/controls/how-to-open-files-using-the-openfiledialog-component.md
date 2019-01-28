@@ -167,6 +167,6 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.OpenFileDialog>  
- [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.OpenFileDialog>
+- [OpenFileDialog Component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)

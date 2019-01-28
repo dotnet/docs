@@ -67,5 +67,5 @@ The samples and walkthroughs in the [!INCLUDE[linq_dataset](../../../../includes
   
 3.  Follow the installation instructions on the Web site.  
   
-## See Also  
- [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)
+## See also
+- [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)

@@ -38,7 +38,7 @@ This example shows how to associate a method with a delegate and then invoke tha
   
 ## See also
 
-- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
-- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)  
-- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
+- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
 - [Multithreaded Applications](../../../../standard/threading/using-threads-and-threading.md)

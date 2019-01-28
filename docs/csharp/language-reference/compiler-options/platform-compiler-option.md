@@ -69,7 +69,7 @@ Specifies which version of the Common Language Runtime (CLR) can run the assembl
 csc -platform:anycpu filename.cs  
 ```  
   
-## See Also  
+## See also
 
-- [C# Compiler Options](index.md)  
+- [C# Compiler Options](index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

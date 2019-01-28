@@ -45,5 +45,5 @@ HRESULT SetVirtualMemLimit (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+## See also
+- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

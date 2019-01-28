@@ -58,5 +58,5 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
 |-------------|-----------------|  
 |[\<udpDiscoveryEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md)|A standard endpoint that has fixed discovery contract and UDP transport binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.UdpTransportSettings>
+## See also
+- <xref:System.ServiceModel.Discovery.UdpTransportSettings>

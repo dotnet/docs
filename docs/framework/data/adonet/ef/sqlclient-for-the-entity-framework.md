@@ -41,7 +41,7 @@ This section describes the .NET Framework Data Provider for SQL Server (SqlClien
   
  [Known Issues in SqlClient for Entity Framework](../../../../../docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md)  
   
-## See Also  
- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)  
- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)  
- [Known Issues in SqlClient Provider for Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)
+## See also
+- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
+- [Known Issues in SqlClient Provider for Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)

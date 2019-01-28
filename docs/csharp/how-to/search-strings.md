@@ -69,7 +69,7 @@ This single search pattern matches many valid strings. Regular expressions are b
 
 You can try these samples by looking at the code in our [GitHub repository](https://github.com/dotnet/samples/tree/master/snippets/csharp/how-to/strings). Or you can download the samples [as a zip file](https://github.com/dotnet/samples/raw/master/snippets/csharp/how-to/strings.zip).
 
-## See Also  
+## See also
 
 - [C# Programming Guide](../programming-guide/index.md)
 - [Strings](../programming-guide/strings/index.md)

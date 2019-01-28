@@ -31,23 +31,21 @@ The following code examples create a **FileStream** around the existing *MyFile.
 ## Example: Use StreamReader
 The following example creates a <xref:System.IO.StreamReader> to read characters from the **FileStream**, which is passed to the **StreamReader** as its constructor argument. <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType> then reads until <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType> finds no more characters.  
   
- [!code-cpp[System.IO.StreamReader#20](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamReader/CPP/source2.cpp#20)]
  [!code-csharp[System.IO.StreamReader#20](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS/source2.cs#20)]
  [!code-vb[System.IO.StreamReader#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamReader/VB/source2.vb#20)]  
   
 ## Example: Use BinaryReader
 The following example creates a <xref:System.IO.BinaryReader> to read bytes from the **FileStream**, which is passed to the **BinaryReader** as its constructor argument. <xref:System.IO.BinaryReader.ReadByte%2A> then reads until <xref:System.IO.BinaryReader.PeekChar%2A> finds no more bytes.  
   
- [!code-cpp[System.IO.StreamReader#21](../../../samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.StreamReader/CPP/source3.cpp#21)]
  [!code-csharp[System.IO.StreamReader#21](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.StreamReader/CS/source3.cs#21)]
  [!code-vb[System.IO.StreamReader#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.StreamReader/VB/source3.vb#21)]  
   
 ## See also
 
-- <xref:System.IO.StreamReader>  
-- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
-- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>  
-- <xref:System.IO.FileStream>  
-- <xref:System.IO.BinaryReader>  
-- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>  
+- <xref:System.IO.StreamReader>
+- <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>
+- <xref:System.IO.StreamReader.Peek%2A?displayProperty=nameWithType>
+- <xref:System.IO.FileStream>
+- <xref:System.IO.BinaryReader>
+- <xref:System.IO.BinaryReader.ReadByte%2A?displayProperty=nameWithType>
 - <xref:System.IO.BinaryReader.PeekChar%2A?displayProperty=nameWithType>

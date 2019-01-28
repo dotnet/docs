@@ -19,7 +19,7 @@ Reference required to assembly '\<assemblyname>' containing the base class '\<cl
   
 -   Include the name of the unreferenced DLL or assembly in your project references.  
   
-## See Also  
-   
- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)  
- [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)
+## See also
+
+- [Managing references in a project](/visualstudio/ide/managing-references-in-a-project)
+- [Troubleshooting Broken References](/visualstudio/ide/troubleshooting-broken-references)

@@ -126,8 +126,8 @@ using Microsoft.VisualBasic.PowerPacks;
   
 5.  Click **OK** to insert the image.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>  
- <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>  
- [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)  
- [How to: Draw Lines with the LineShape Control](../../../visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md)
+## See also
+- <xref:Microsoft.VisualBasic.PowerPacks.OvalShape>
+- <xref:Microsoft.VisualBasic.PowerPacks.RectangleShape>
+- [Introduction to the Line and Shape Controls](../../../visual-basic/developing-apps/windows-forms/introduction-to-the-line-and-shape-controls-visual-studio.md)
+- [How to: Draw Lines with the LineShape Control](../../../visual-basic/developing-apps/windows-forms/how-to-draw-lines-with-the-lineshape-control-visual-studio.md)

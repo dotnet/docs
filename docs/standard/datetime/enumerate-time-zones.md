@@ -67,6 +67,6 @@ This example requires:
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
-* [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md)
+- [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)

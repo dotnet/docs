@@ -267,5 +267,5 @@ Quantifiers specify how many instances of a character, group, or character class
   
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
 - [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

@@ -64,6 +64,6 @@ The .NET Framework version 4 introduces several new types that are useful in par
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
-- <xref:System.Threading?displayProperty=nameWithType>  
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- <xref:System.Threading?displayProperty=nameWithType>
 - [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

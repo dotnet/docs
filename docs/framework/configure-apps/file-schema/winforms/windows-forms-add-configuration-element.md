@@ -103,6 +103,6 @@ Starting with the .NET Framework 4.7, Windows Forms controls raise a number of e
 Single or multi-pass scaling influences the perceived responsiveness of the user interface and the visual appearance of user interface elements as they are scaled. Starting with the .NET Framework 4.7, Windows Forms uses single pass scaling. In previous versions of the .NET Framework, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary. Single-pass scaling should only be disabled if your app depends on the old behavior.  
 
 ## See also
- 
-[Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)   
-[High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)
+
+- [Windows Forms Configuration Section](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md)
+- [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

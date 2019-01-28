@@ -132,5 +132,5 @@ ServiceName@ServiceBaseAddress
   
  For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=95179).  
   
-## See Also  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)

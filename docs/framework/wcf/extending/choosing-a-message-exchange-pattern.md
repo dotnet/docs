@@ -86,5 +86,5 @@ The three basic message exchange patterns. Top to bottom: datagram, request-resp
   
 -   When <xref:System.ServiceModel.ICommunicationObject.Abort%2A> is called on your channel, terminate the session abruptly without performing I/O. Again, this may mean doing nothing or may involve aborting a network connection or some other resource.  
   
-## See Also  
- [Channel Model Overview](../../../../docs/framework/wcf/extending/channel-model-overview.md)
+## See also
+- [Channel Model Overview](../../../../docs/framework/wcf/extending/channel-model-overview.md)

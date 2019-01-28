@@ -172,8 +172,8 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
        }  
     ```  
   
-## See Also  
- <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>  
- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)  
- [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)  
- [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)
+## See also
+- <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType>
+- [LinkLabel Control Overview](../../../../docs/framework/winforms/controls/linklabel-control-overview-windows-forms.md)
+- [How to: Change the Appearance of the Windows Forms LinkLabel Control](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)
+- [LinkLabel Control](../../../../docs/framework/winforms/controls/linklabel-control-windows-forms.md)

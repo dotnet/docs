@@ -77,5 +77,5 @@ ms.author: "mairaw"
   
  [Back to top](#top)  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)

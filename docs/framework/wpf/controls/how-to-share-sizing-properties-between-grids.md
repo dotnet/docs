@@ -29,7 +29,7 @@ This example shows how to share the sizing data of columns and rows between <xre
  [!code-csharp[gridIssharedsizescopeProp#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/gridIssharedsizescopeProp/CSharp/Window1.xaml.cs#3)]
  [!code-vb[gridIssharedsizescopeProp#3](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/gridIssharedsizescopeProp/VisualBasic/Window1.xaml.vb#3)]  
   
-## See Also  
- <xref:System.Windows.Controls.Grid>  
- <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+## See also
+- <xref:System.Windows.Controls.Grid>
+- <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

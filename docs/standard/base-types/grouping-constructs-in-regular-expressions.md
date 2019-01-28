@@ -466,5 +466,5 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)  
+- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
 - [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)

@@ -93,10 +93,10 @@ You subscribe to an event that is published by another class when you want to wr
   
      When all subscribers have unsubscribed from an event, the event instance in the publisher class is set to `null`.  
   
-## See Also
+## See also
 
-- [Events](../../../csharp/programming-guide/events/index.md)  
-- [event](../../../csharp/language-reference/keywords/event.md)  
-- [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)  
-- [-= Operator (C# Reference)](../../language-reference/operators/subtraction-assignment-operator.md)  
+- [Events](../../../csharp/programming-guide/events/index.md)
+- [event](../../../csharp/language-reference/keywords/event.md)
+- [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+- [-= Operator (C# Reference)](../../language-reference/operators/subtraction-assignment-operator.md)
 - [+= Operator](../../../csharp/language-reference/operators/addition-assignment-operator.md)

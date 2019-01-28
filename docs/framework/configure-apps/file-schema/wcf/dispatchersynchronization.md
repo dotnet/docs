@@ -47,5 +47,5 @@ None.
 
 ## See also
 
- <xref:System.ServiceModel.Configuration.DispatcherSynchronizationElement>
- <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior>
+- <xref:System.ServiceModel.Configuration.DispatcherSynchronizationElement>
+- <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior>

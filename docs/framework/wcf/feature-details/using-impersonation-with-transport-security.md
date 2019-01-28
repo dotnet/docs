@@ -48,8 +48,8 @@ ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
   
  For more information about the HTTP transport, see [Choosing a Transport](../../../../docs/framework/wcf/feature-details/choosing-a-transport.md).  
   
-## See Also  
- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)  
- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)  
- [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)  
- [Understanding HTTP Authentication](../../../../docs/framework/wcf/feature-details/understanding-http-authentication.md)
+## See also
+- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
+- [How to: Impersonate a Client on a Service](../../../../docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md)
+- [Understanding HTTP Authentication](../../../../docs/framework/wcf/feature-details/understanding-http-authentication.md)

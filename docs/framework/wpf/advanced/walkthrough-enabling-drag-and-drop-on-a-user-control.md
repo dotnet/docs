@@ -325,6 +325,6 @@ In this section, you enable the panels that host the Circle user controls to act
 
      ![Dragging a Circle while pressing the CTRL key](../../../../docs/framework/wpf/advanced/media/dragdrop-paneldrop.png "DragDrop_PanelDrop")
 
-## See Also
+## See also
 
 - [Drag and Drop Overview](../../../../docs/framework/wpf/advanced/drag-and-drop-overview.md)

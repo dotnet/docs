@@ -72,5 +72,5 @@ This configuration element defines a standard endpoint with a fixed announcement
 </standardEndpoints>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>
+## See also
+- <xref:System.ServiceModel.Discovery.AnnouncementEndpoint>

@@ -220,14 +220,14 @@ End Sub
   
  [!code-vb[csAsyncMethod#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/VisualBasic/sub-statement_2.vb)]  
   
-## See Also  
- [Implements Statement](implements-statement.md)  
- [Function Statement](function-statement.md)  
- [Parameter List](parameter-list.md)  
- [Dim Statement](dim-statement.md)  
- [Call Statement](call-statement.md)  
- [Of](of-clause.md)  
- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)  
- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)  
- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)  
- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+## See also
+- [Implements Statement](implements-statement.md)
+- [Function Statement](function-statement.md)
+- [Parameter List](parameter-list.md)
+- [Dim Statement](dim-statement.md)
+- [Call Statement](call-statement.md)
+- [Of](of-clause.md)
+- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
+- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)

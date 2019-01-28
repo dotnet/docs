@@ -48,10 +48,10 @@ proceduredeclaration Handles eventlist
   
  [!code-vb[VbVbalrEvents#42](../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/handles-clause_4.vb)]  
   
-## See Also  
- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)  
- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)  
- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)  
- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)  
- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)  
- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)
+- [AddHandler Statement](../../../visual-basic/language-reference/statements/addhandler-statement.md)
+- [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md)
+- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
+- [Events](../../../visual-basic/programming-guide/language-features/events/index.md)

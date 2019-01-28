@@ -119,5 +119,5 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ## Markup Extensions for Events  
  WPF 4.5 supports markup extensions for events.  While WPF does not define a markup extension to be used for events, third parties are able to create a markup extension that can be used with events.  
   
-## See Also  
- [What's New in the .NET Framework](../../../../docs/framework/whats-new/index.md)
+## See also
+- [What's New in the .NET Framework](../../../../docs/framework/whats-new/index.md)

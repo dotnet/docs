@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "configuration files [.NET Framework], machine"
   - "configuration files [.NET Framework], format"
 ms.assetid: 86bd26d3-737e-4484-9782-19b17f34cd1f
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Configuring Apps by using Configuration Files
 The .NET Framework, through configuration files, gives developers and administrators control and flexibility over the way applications run. Configuration files are XML files that can be changed as needed. An administrator can control which protected resources an application can access, which versions of assemblies an application will use, and where remote applications and objects are located. Developers can put settings in configuration files, eliminating the need to recompile an application every time a setting changes. This section describes what can be configured and why configuring an application might be useful.  
@@ -115,7 +113,7 @@ The .NET Framework, through configuration files, gives developers and administra
  [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
  Describes the schema hierarchy for startup, runtime, network, and other types of configuration settings.  
   
-## See Also  
+## See also
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

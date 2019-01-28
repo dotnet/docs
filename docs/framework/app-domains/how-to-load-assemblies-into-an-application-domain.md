@@ -40,7 +40,7 @@ There are several ways to load an assembly into an application domain. The recom
  [!code-csharp[System.AppDomain.Load#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.appdomain.load/cs/source2.cs#2)]
  [!code-vb[System.AppDomain.Load#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.appdomain.load/vb/source2.vb#2)]  
   
-## See Also  
+## See also
 - <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A>
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
 - [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)

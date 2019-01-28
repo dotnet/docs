@@ -702,7 +702,7 @@ Instead, prefer returning a named type holding the aggregate data, or using out 
 
 #### Avoid the use of currying of parameters
 
-Instead, use .NET calling conventions ``Method(arg1,arg2,…,argN)``.
+Instead, use .NET calling conventions `Method(arg1,arg2,…,argN)`.
 
 ```fsharp
 member this.TupledArguments(str, num) = String.replicate num str

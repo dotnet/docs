@@ -12,5 +12,5 @@ A query expression combines many different query operators into a single syntax.
 ## Scope  
  Names defined in the FROM clause are introduced into the FROM scope in order of appearance, left to right. In the JOIN list, expressions can refer to names defined earlier in the list. Public properties of elements identified in the FROM clause are not added to the FROM scope: They must be always referenced through the alias-qualified name. Normally, all parts of the select expression are considered within the FROM scope.  
   
-## See Also  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## See also
+- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)

@@ -57,7 +57,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
   
  [How to: Navigate Relationships with the Navigate Operator](../../../../../docs/framework/data/adonet/ef/how-to-navigate-relationships-with-the-navigate-operator.md)  
   
-## See Also  
- [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)  
- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)  
- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)
+## See also
+- [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)
+- [ADO.NET Entity Framework](../../../../../docs/framework/data/adonet/ef/index.md)
+- [Language Reference](../../../../../docs/framework/data/adonet/ef/language-reference/index.md)

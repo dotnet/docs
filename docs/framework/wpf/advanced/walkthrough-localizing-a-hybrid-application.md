@@ -166,7 +166,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
      The application shows the localized strings instead of the English strings.
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

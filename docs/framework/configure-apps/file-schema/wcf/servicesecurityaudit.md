@@ -72,10 +72,10 @@ Specifies settings that enable auditing of security events during service operat
 </system.serviceModel>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
- [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
+- [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
+- [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
+- [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)

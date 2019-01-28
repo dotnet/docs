@@ -134,5 +134,5 @@ Graph view of error correlation
   
  Defining activities and propagating the activity ID enables us to perform direct error correlation across endpoints. In this way, we can locate the root cause of an error more quickly.  
   
-## See Also  
- [Extending Tracing](../../../../../docs/framework/wcf/samples/extending-tracing.md)
+## See also
+- [Extending Tracing](../../../../../docs/framework/wcf/samples/extending-tracing.md)

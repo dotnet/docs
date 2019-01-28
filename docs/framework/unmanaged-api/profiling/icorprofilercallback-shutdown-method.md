@@ -43,6 +43,6 @@ HRESULT Shutdown();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [Initialize Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md)
+## See also
+- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [Initialize Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-initialize-method.md)

@@ -31,4 +31,4 @@ This sample shows how to use scopes to categorize discoverable endpoints as well
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\DiscoveryWithScopes`  
   
-## See Also
+## See also

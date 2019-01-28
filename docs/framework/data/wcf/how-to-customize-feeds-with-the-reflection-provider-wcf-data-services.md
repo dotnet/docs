@@ -25,5 +25,5 @@ ms.assetid: 00c23dcf-9bb8-459a-a012-6c4d9bcad7e9
   
  [!code-xml[Astoria Custom Feeds#IQueryableFeedResultInline](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria custom feeds/xml/iqueryablefeedresultinline.xml#iqueryablefeedresultinline)]  
   
-## See Also  
- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)
+## See also
+- [Reflection Provider](../../../../docs/framework/data/wcf/reflection-provider-wcf-data-services.md)

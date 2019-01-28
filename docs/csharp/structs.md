@@ -60,7 +60,7 @@ The second demonstrates *binary literals*, which allow you to specify bit patter
 ## Nullable types  
 Ordinary value types cannot have a value of [null](./language-reference/keywords/null.md). However, you can create nullable value types by affixing a **?** after the type. For example, **int?** is an **int** type that can also have the value [null](./language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type <xref:System.Nullable%601>. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types (C# Programming Guide)](./programming-guide/nullable-types/index.md).
 
-## See Also
+## See also
 
 - [Classes](classes.md)
 - [Basic Types](basic-types.md)

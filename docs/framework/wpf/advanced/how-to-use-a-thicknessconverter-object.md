@@ -20,10 +20,10 @@ ms.assetid: 52682194-d7fd-499c-8005-73fcc84e7b2c
  [!code-csharp[ThicknessConverter#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ThicknessConverter/CSharp/Window1.xaml.cs#1)]
  [!code-vb[ThicknessConverter#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThicknessConverter/VisualBasic/Window1.xaml.vb#1)]  
   
-## See Also  
- <xref:System.Windows.Thickness>  
- <xref:System.Windows.ThicknessConverter>  
- <xref:System.Windows.Controls.Border>  
- [How to: Change the Margin Property](https://msdn.microsoft.com/library/8a313efd-5f99-4097-b4c1-8fa49d8379a2)  
- [How to: Convert a ListBoxItem to a new Data Type](https://msdn.microsoft.com/library/7a080b88-184e-4b27-bb61-d42bafba9727)  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+## See also
+- <xref:System.Windows.Thickness>
+- <xref:System.Windows.ThicknessConverter>
+- <xref:System.Windows.Controls.Border>
+- [How to: Change the Margin Property](https://msdn.microsoft.com/library/8a313efd-5f99-4097-b4c1-8fa49d8379a2)
+- [How to: Convert a ListBoxItem to a new Data Type](https://msdn.microsoft.com/library/7a080b88-184e-4b27-bb61-d42bafba9727)
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)

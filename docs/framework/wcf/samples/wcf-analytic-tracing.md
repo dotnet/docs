@@ -111,5 +111,5 @@ This sample demonstrates how to add your own tracing events into the stream of a
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTrace`  
   
-## See Also  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

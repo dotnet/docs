@@ -24,6 +24,6 @@ Provides properties, methods, and events related to the current application.
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Application.Info Object](../../../visual-basic/language-reference/objects/my-application-info-object.md)  
- [My.Application.Log Object](../../../visual-basic/language-reference/objects/my-application-log-object.md)
+## See also
+- [My.Application.Info Object](../../../visual-basic/language-reference/objects/my-application-info-object.md)
+- [My.Application.Log Object](../../../visual-basic/language-reference/objects/my-application-log-object.md)

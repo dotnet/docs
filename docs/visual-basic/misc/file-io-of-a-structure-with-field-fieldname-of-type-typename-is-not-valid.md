@@ -12,6 +12,6 @@ The structure you are attempting to write to a file contains an unsupported type
   
 -   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
-## See Also  
- [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)
+- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

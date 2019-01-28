@@ -17,6 +17,6 @@ The Windows Forms <xref:System.Windows.Forms.TrackBar> control (also sometimes c
   
  Two other important properties are <xref:System.Windows.Forms.TrackBar.SmallChange%2A> and <xref:System.Windows.Forms.TrackBar.LargeChange%2A>. The value of the <xref:System.Windows.Forms.TrackBar.SmallChange%2A> property is the number of positions the thumb moves in response to having the LEFT or RIGHT ARROW key pressed. The value of the <xref:System.Windows.Forms.TrackBar.LargeChange%2A> property is the number of positions the thumb moves in response to having the PAGE UP or PAGE DOWN key pressed, or in response to mouse clicks on the track bar on either side of the thumb.  
   
-## See Also  
- <xref:System.Windows.Forms.TrackBar>  
- [TrackBar Control](../../../../docs/framework/winforms/controls/trackbar-control-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.TrackBar>
+- [TrackBar Control](../../../../docs/framework/winforms/controls/trackbar-control-windows-forms.md)

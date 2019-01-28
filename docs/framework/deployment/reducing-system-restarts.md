@@ -28,7 +28,7 @@ Prompt for closing .NET Framework apps that are in use
   
  If you're using a chained installer, but you do not want to provide your own message box for closing apps, you can use the `/showrmui` and `/passive` options on the command line when you chain the .NET Framework setup process. When you use these options together, the installer shows the message box for closing apps if they can be closed to avoid a system restart. This message box behaves the same in passive mode as it does under the full user interface. See [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md) for the complete set of command-line options for the .NET Framework redistributable.  
   
-## See Also  
+## See also
 - [Deployment](../../../docs/framework/deployment/index.md)
 - [Deployment Guide for Developers](../../../docs/framework/deployment/deployment-guide-for-developers.md)
 - [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

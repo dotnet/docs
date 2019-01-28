@@ -75,7 +75,7 @@ Be sure to choose your collection class carefully. Using the wrong type can rest
   
 ## See also
 
-- <xref:System.Collections>  
-- <xref:System.Collections.Specialized>  
-- <xref:System.Collections.Generic>  
+- <xref:System.Collections>
+- <xref:System.Collections.Specialized>
+- <xref:System.Collections.Generic>
 - [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md)

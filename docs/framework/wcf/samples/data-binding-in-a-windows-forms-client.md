@@ -32,4 +32,4 @@ This sample demonstrates how to bind to data returned by a Windows Communication
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DataBinding\WindowsForms`  
   
-## See Also
+## See also

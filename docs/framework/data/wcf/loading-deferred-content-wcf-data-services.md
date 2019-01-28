@@ -51,6 +51,6 @@ By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits t
 ## Binary Data Streams  
  [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to access binary large object (BLOB) data as a data stream. Streaming defers the loading of binary data until it is needed, and the client can more efficiently process this data. In order to take advantage of this functionality, the data service must implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider. For more information, see [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md). When streaming is enabled, entity types are returned without the related binary data. In this case, you must use the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method of the <xref:System.Data.Services.Client.DataServiceContext> class to access the data stream for the binary data from the service. Similarly, use the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method to add or change binary data for an entity as a stream. For more information, see [Working with Binary Data](../../../../docs/framework/data/wcf/working-with-binary-data-wcf-data-services.md).  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)

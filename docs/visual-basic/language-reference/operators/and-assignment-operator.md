@@ -38,11 +38,11 @@ variableorproperty &= expression
   
  [!code-vb[VbVbalrOperators#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-assignment-operator_1.vb)]  
   
-## See Also  
- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)  
- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+- [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)
+- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Concatenation Operators](../../../visual-basic/language-reference/operators/concatenation-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

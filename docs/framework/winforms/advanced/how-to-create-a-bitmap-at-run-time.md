@@ -21,6 +21,6 @@ This example creates and draws in a <xref:System.Drawing.Bitmap> object and disp
   
 -   A Windows Form that imports the System, System.Drawing and System.Windows.Forms assemblies.  
   
-## See Also  
- <xref:System.Drawing.Bitmap>  
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+## See also
+- <xref:System.Drawing.Bitmap>
+- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)

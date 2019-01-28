@@ -10,6 +10,6 @@ An attempt has been made to access an event log that does not exist on this mach
   
 -   Check that you are supplying the correct file name and path.  
   
-## See Also  
- [Administering Event Logs](https://msdn.microsoft.com/library/35f53238-bdd2-417b-acd8-2fd9f7397f18)  
- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+## See also
+- [Administering Event Logs](https://msdn.microsoft.com/library/35f53238-bdd2-417b-acd8-2fd9f7397f18)
+- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

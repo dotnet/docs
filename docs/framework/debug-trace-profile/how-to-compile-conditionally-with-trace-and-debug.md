@@ -89,7 +89,7 @@ Comment out the compiler directive.
 > [!NOTE]
 >  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
-## See Also  
+## See also
 - [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
 - [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
 - [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)

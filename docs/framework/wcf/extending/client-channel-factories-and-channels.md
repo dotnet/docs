@@ -67,5 +67,5 @@ this.socket.SendTo(
 );  
 ```  
   
-## See Also  
- [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)
+## See also
+- [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)

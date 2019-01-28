@@ -11,5 +11,5 @@ In many cases, it is important for an application to monitor specific details ab
 > [!NOTE]
 >  An online event handler should first ensure that the node is open before sending any messages.  
   
-## See Also  
- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)
+## See also
+- [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

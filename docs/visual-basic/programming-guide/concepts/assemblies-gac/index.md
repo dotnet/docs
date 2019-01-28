@@ -42,12 +42,12 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
 > [!NOTE]
 >  To build an assembly in Visual Studio, on the **Build** menu choose **Build**.  
   
-## See Also  
- [Assemblies in the Common Language Runtime](../../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)  
- [Friend Assemblies (Visual Basic)](friend-assemblies.md)  
- [How to: Share an Assembly with Other Applications (Visual Basic)](how-to-share-an-assembly-with-other-applications.md)  
- [How to: Load and Unload Assemblies (Visual Basic)](how-to-load-and-unload-assemblies.md)  
- [How to: Determine If a File Is an Assembly (Visual Basic)](how-to-determine-if-a-file-is-an-assembly.md)  
- [How to: Create and Use Assemblies Using the Command Line (Visual Basic)](how-to-create-and-use-assemblies-using-the-command-line.md)  
- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-types-from-managed-assemblies-in-vs.md)  
- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)
+## See also
+- [Assemblies in the Common Language Runtime](../../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Friend Assemblies (Visual Basic)](friend-assemblies.md)
+- [How to: Share an Assembly with Other Applications (Visual Basic)](how-to-share-an-assembly-with-other-applications.md)
+- [How to: Load and Unload Assemblies (Visual Basic)](how-to-load-and-unload-assemblies.md)
+- [How to: Determine If a File Is an Assembly (Visual Basic)](how-to-determine-if-a-file-is-an-assembly.md)
+- [How to: Create and Use Assemblies Using the Command Line (Visual Basic)](how-to-create-and-use-assemblies-using-the-command-line.md)
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-types-from-managed-assemblies-in-vs.md)
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)

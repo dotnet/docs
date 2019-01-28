@@ -28,7 +28,7 @@ This section provides conceptual and how-to information about programming with [
 |[LINQ to XML Security (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-security.md)|Describes security issues associated with LINQ to XML and provides some guidance for mitigating security exposure.|  
 |[Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)|Contains the sample XML documents that are used by many examples in this documentation.|  
   
-## See Also
+## See also
 
-- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)  
+- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md)
 - [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)

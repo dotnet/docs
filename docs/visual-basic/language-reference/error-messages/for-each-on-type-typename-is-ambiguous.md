@@ -19,6 +19,6 @@ A `For Each` statement specifies an iterator variable that has more than one <xr
   
 -   Use [DirectCast Operator](../../../visual-basic/language-reference/operators/directcast-operator.md) or [TryCast Operator](../../../visual-basic/language-reference/operators/trycast-operator.md) to cast the iterator variable type to the interface defining the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method you want to use.  
   
-## See Also  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## See also
+- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

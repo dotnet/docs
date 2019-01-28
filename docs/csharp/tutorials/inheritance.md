@@ -290,7 +290,7 @@ The following example uses objects derived from `Shape`. It instantiates an arra
 
 [!code-csharp[Inheritance](../../../samples/snippets/csharp/tutorials/inheritance/shape.cs#3)]
 
-## See Also
+## See also
 
 - [Classes and objects](../tour-of-csharp/classes-and-objects.md)
 - [Inheritance (C# Programming Guide)](../programming-guide/classes-and-structs/inheritance.md)

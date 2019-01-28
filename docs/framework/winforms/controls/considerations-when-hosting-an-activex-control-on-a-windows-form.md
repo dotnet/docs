@@ -22,9 +22,9 @@ Although Windows Forms have been optimized to host Windows Forms controls, you c
     > [!NOTE]
     >  If the name of a member of the ActiveX control matches a name defined in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], then the ActiveX Control Importer will prefix the member name with **Ctl** when it creates the <xref:System.Windows.Forms.AxHost> derived class. For example, if your ActiveX control has a member named **Layout**, it is renamed **CtlLayout** in the AxHost-derived class because the **Layout** event is defined within the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)].  
   
-## See Also  
- [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)  
- [Code Access Security](../../../../docs/framework/misc/code-access-security.md)  
- [Controls and Programmable Objects Compared in Various Languages and Libraries](https://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)  
- [Putting Controls on Windows Forms](../../../../docs/framework/winforms/controls/putting-controls-on-windows-forms.md)  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)
+## See also
+- [How to: Add ActiveX Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-activex-controls-to-windows-forms.md)
+- [Code Access Security](../../../../docs/framework/misc/code-access-security.md)
+- [Controls and Programmable Objects Compared in Various Languages and Libraries](https://msdn.microsoft.com/library/021f2a1b-8247-4348-a5ad-e1d9ab23004b)
+- [Putting Controls on Windows Forms](../../../../docs/framework/winforms/controls/putting-controls-on-windows-forms.md)
+- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)

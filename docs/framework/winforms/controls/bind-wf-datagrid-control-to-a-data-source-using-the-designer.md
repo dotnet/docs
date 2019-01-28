@@ -63,9 +63,9 @@ ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
   
 3.  Write code to fill the dataset.  
   
-## See Also  
- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)  
- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)
+## See also
+- [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)
+- [How to: Add Tables and Columns to the Windows Forms DataGrid Control](../../../../docs/framework/winforms/controls/how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
+- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)
+- [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)

@@ -29,7 +29,7 @@ The computation of `0xf8 ^ 0x3f` in the previous example performs a bitwise excl
 
 The result of the exclusive-OR is `1100 0111`, which is C7 in hexadecimal.
 
-## See Also
+## See also
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)

@@ -28,7 +28,7 @@ object...<descendant>
  Required. Denotes the start of a descendant axis property.  
   
  `descendant`  
- Required. Name of the descendant nodes to access, of the form [`prefix``:`]`name`.  
+ Required. Name of the descendant nodes to access, of the form [`prefix:]name`.  
   
 |Part|Description|  
 |----------|-----------------|  
@@ -69,9 +69,9 @@ object...<descendant>
   
  `Name: Patrick Hines`  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+## See also
+- <xref:System.Xml.Linq.XElement>
+- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

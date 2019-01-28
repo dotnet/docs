@@ -215,8 +215,8 @@ Bon jour!
 ## Suggested Packaging Alternative  
  Time or budget constraints might prevent you from creating a set of resources for every subculture that your application supports. Instead, you can create a single satellite assembly for a parent culture that all related subcultures can use. For example, you can provide a single English satellite assembly (en) that is retrieved by users who request region-specific English resources, and a single German satellite assembly (de) for users who request region-specific German resources. For example, requests for German as spoken in Germany (de-DE), Austria (de-AT), and Switzerland (de-CH) would fall back to the German satellite assembly (de). The default resources are the final fallback and therefore should be the resources that will be requested by the majority of your application's users, so choose these resources carefully. This approach deploys resources that are less culturally specific, but can significantly reduce your application's localization costs.  
   
-## See Also  
- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)  
- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)  
- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  
- [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)
+## See also
+- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
+- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
+- [Creating Satellite Assemblies](../../../docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md)

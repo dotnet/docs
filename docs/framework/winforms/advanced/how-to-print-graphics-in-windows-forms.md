@@ -60,7 +60,7 @@ Frequently, you will want to print graphics in your Windows-based application. T
        (this, &Form1::printDocument1_PrintPage);  
     ```  
   
-## See Also  
- <xref:System.Drawing.Graphics>  
- <xref:System.Drawing.Brush>  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+## See also
+- <xref:System.Drawing.Graphics>
+- <xref:System.Drawing.Brush>
+- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)

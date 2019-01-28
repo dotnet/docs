@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "<compilers> element"
   - "compilers element"
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;compilers&gt; Element
 Container for compiler configuration elements; contains zero or more [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) elements.  
@@ -73,9 +71,9 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.CodeDom.Compiler.CompilerInfo>  
-- <xref:System.CodeDom.Compiler.CodeDomProvider>  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)  
+## See also
+- <xref:System.CodeDom.Compiler.CompilerInfo>
+- <xref:System.CodeDom.Compiler.CodeDomProvider>
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Compiler and Language Provider Settings Schema](../../../../../docs/framework/configure-apps/file-schema/compiler/index.md)
 - [\<compiler> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md)

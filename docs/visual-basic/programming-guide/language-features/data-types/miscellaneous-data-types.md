@@ -24,10 +24,10 @@ Visual Basic supplies several data types that are not oriented toward numbers or
   
  The advantage of the `Object` data type is that you can use it to store data of any data type. The disadvantage is that you incur extra operations that take more execution time and make your application perform slower. If you use an `Object` variable for value types, you incur *boxing* and *unboxing*. If you use it for reference types, you incur *late binding*.  
   
-## See Also  
- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)  
- [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)
+## See also
+- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
+- [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)
+- [Character Data Types](../../../../visual-basic/programming-guide/language-features/data-types/character-data-types.md)
+- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Early and Late Binding](../../../../visual-basic/programming-guide/language-features/early-late-binding/index.md)

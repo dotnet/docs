@@ -184,7 +184,7 @@ The main responsibility of this class is to generate the responses for a partici
 1. Ask for participation in the survey. If the person doesn't consent, return a missing (or null) response.
 1. Ask each question and record the answer. Each answer may also be missing (or null).
 
-Add the following code to your `SurveyRespondent` class:
+Add the following code to your `SurveyResponse` class:
 
 [!code-csharp[AnswerSurvey](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
@@ -206,7 +206,7 @@ The last step is to display survey results. You'll add code to many of the class
 
 [!code-csharp[ReportResponses](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#SurveyStatus)]
 
-Because `surveyResponses` is a non-nullable reference, type no checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so choose the overload of `GetValueOrDefault` that takes a second argument for the default value.
+Because `surveyResponses` is a non-nullable reference type, no checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so choose the overload of `GetValueOrDefault` that takes a second argument for the default value.
 
 Next, add these three expression-bodied members to the `SurveyRun` class:
 

@@ -28,14 +28,18 @@ Reading this file using `TextLoader`:
 var mlContext = new MLContext();
 
 // Create the reader: define the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new[] {
-        // We read the first 10 values as a single float vector.
-        new TextLoader.Column("FeatureVector", DataKind.R4, 0, 9),
+var reader = mlContext.Data.CreateTextReader(
+    columns: new TextLoader.Column[]
+    {
+    // We read the first 10 values as a single float vector.
+        new TextLoader.Column("FeatureVector",DataKind.R4,0,9),
         // Separately, read the target variable.
-        new TextLoader.Column("Target", DataKind.R4, 10)
+        new TextLoader.Column("Target",DataKind.R4,10)
     },
-    // Default separator is tab, but we need a comma.
-    Separator = ",");
+    // Default separator is tab, but we need a semicolon.
+    separatorChar: ';',
+    hasHeader: true
+);
 
 // Now read the file (remember though, readers are lazy, so the actual reading will happen when the data is accessed).
 var data = reader.Read(dataPath);

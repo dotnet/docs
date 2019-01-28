@@ -72,12 +72,14 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from the [Windows Update website](https://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security.
 
-- On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and native 64-bit processing.
+- On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and| native 64-bit processing.
 
 ## Supported server operating systems
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
+| Windows Server 2019 | 64-bit | .NET Framework 4.7.2 | -- |
+| Windows Server, version 1809 | 64-bit | .NET Framework 4.7.2 | -- |
 | Windows Server, version 1803 | 64-bit | .NET Framework 4.7.2 | -- |
 | Windows Server, version 1709 | 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2 | 
 | Windows Server 2016 | 64-bit | [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] | .NET Framework 4.7<br/><br/> .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2 |

@@ -270,6 +270,17 @@ match x, y with
 | x, y -> 1
 ```
 
+It is qlso accepted to omit parentheses if the tuple is the return value of a function:
+
+```fsharp
+// OK
+let f model msg =
+    match msg with
+    | 1 -> model + 1, []
+    | _ -> model, [ msg ]
+```
+
+
 ## Formatting discriminated union declarations
 
 Indent `|` in type definition by 4 spaces:

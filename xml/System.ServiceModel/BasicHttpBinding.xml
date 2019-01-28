@@ -173,7 +173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- This example initializes a new <xref:System.ServiceModel.BasicHttpBinding> class with a binding specified by the configuration name `BasicBinding`. You must create a bindings section in the service's configuration file.  
+ This example initializes a new <xref:System.ServiceModel.BasicHttpBinding> class with a binding specified by the configuration name `myBinding`. You must create a bindings section in the service's configuration file.  
   
  [!code-csharp[S_UEBasicHttpBinding#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uebasichttpbinding/cs/snippets.cs#5)]
  [!code-vb[S_UEBasicHttpBinding#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uebasichttpbinding/vb/snippets.vb#5)]  

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "filter element for <add> for <listeners> for <trace>"
   - "<filter> element for <add> for <listeners> for <trace>"
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # \<filter> Element for \<add> for \<listeners> for \<trace>
 Adds a filter to a listener in the `Listeners` collection for a trace.  

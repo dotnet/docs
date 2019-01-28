@@ -43,7 +43,7 @@ For many applications, you want to create and manage groups of related objects. 
 ## Using a Simple Collection  
  The examples in this section use the generic <xref:System.Collections.Generic.List%601> class, which enables you to work with a strongly typed list of objects.  
   
- The following example creates a list of strings and then iterates through the strings by using a or [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.  
+ The following example creates a list of strings and then iterates through the strings by using a [foreach](../../../csharp/language-reference/keywords/foreach-in.md) statement.  
   
 ```csharp  
 // Create a list of strings.  

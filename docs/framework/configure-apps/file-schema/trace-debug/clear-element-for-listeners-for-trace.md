@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "clear element for <listeners> for <trace>"
   - "<clear> element for <listeners> for <trace>"
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # \<clear> Element for \<listeners> for \<trace>
 Clears the `Listeners` collection for trace.  

@@ -150,14 +150,14 @@ The constructor should get one change so that it adds an initial transaction, ra
 ```csharp
 account.MakeWithdrawal(500, DateTime.Now, "Rent payment");
 Console.WriteLine(account.Balance);
-account.MakeDeposit(100, DateTime.Now, "friend paid me back");
+account.MakeDeposit(100, DateTime.Now, "Friend paid me back");
 Console.WriteLine(account.Balance);
 ```
 
 Next, test that you are catching error conditions by trying to create an account with a negative balance:
 
 ```csharp
-// Test that the initial balances must be positive:
+// Test that the initial balances must be positive.
 try
 {
     var invalidAccount = new BankAccount("invalid", -55);
@@ -172,7 +172,7 @@ catch (ArgumentOutOfRangeException e)
 You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance:
 
 ```csharp
-// Test for a negative balance
+// Test for a negative balance:
 try
 {
     account.MakeWithdrawal(750, DateTime.Now, "Attempt to overdraw");

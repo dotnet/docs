@@ -6,7 +6,7 @@ ms.author: mairaw
 ms.date: 04/10/2018
 ms.custom: "updateeachrelease"
 ---
-# Install the .NET Framework on Windows 10 and Windows Server 2016
+# Install the .NET Framework on Windows 10 and Windows Server 2016 and later
 
 The .NET Framework is required to run many applications on Windows. The instructions in this article should help you install the .NET Framework versions that you need. The [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472) is the latest available version.
 
@@ -21,6 +21,12 @@ The .NET Framework 4.7.2 is included with:
 * [Windows 10 October 2018 Update](https://support.microsoft.com/help/4028685/windows-10-get-the-update)
 
 * [Windows 10 April 2018 Update](https://www.microsoft.com/software-download/windows10)
+
+* Windows Server 2019
+
+* Windows Server, version 1809
+
+* Windows Server, version 1803
 
 > [!div class="button"]
 > [Download .NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework-runtime/net472)

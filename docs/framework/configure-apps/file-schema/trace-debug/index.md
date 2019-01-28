@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "configuration sections [.NET Framework]"
   - "elements [.NET Framework], trace and debug settings"
 ms.assetid: 277ca5f6-e1c4-41b6-a47f-3a67ce5b94ac
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Trace and Debug Settings Schema
 Trace and debug settings specify trace listeners that collect, store, and route messages, and the level where a trace switch is set.  

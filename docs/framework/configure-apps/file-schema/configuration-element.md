@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "configuration element"
   - "container tags, <configuration> element"
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # \<configuration> element

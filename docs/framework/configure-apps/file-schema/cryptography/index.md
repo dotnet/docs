@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "configuration sections [.NET Framework]"
   - "configuration settings [.NET Framework], cryptography"
 ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # Cryptography Settings Schema
 The cryptography settings schema contains elements that specify how to map friendly algorithm names to classes that implement cryptography algorithms.  

@@ -274,7 +274,7 @@ It is also commonly accepted to omit parentheses if the tuple is the return valu
 
 ```fsharp
 // OK
-let f model msg =
+let update model msg =
     match msg with
     | 1 -> model + 1, []
     | _ -> model, [ msg ]

@@ -270,7 +270,7 @@ match x, y with
 | x, y -> 1
 ```
 
-It is qlso accepted to omit parentheses if the tuple is the return value of a function:
+It is also commonly accepted to omit parentheses if the tuple is the return value of a function:
 
 ```fsharp
 // OK

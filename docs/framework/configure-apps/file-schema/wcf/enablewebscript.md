@@ -1,9 +1,9 @@
 ---
-title: "&lt;enableWebScript&gt;"
+title: "<enableWebScript>"
 ms.date: "03/30/2017"
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa
 ---
-# &lt;enableWebScript&gt;
+# \<enableWebScript>
 This element enables the endpoint behavior that makes it possible to consume the service from ASP.NET AJAX web pages.  
   
  \<system.ServiceModel>  

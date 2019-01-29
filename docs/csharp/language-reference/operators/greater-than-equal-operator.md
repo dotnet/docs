@@ -1,5 +1,5 @@
 ---
-title: "&gt;= Operator - C# Reference"
+title: ">= Operator - C# Reference"
 ms.custom: seodec18
 ms.date: 12/18/2018
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - ">= operator [C#]"
 ms.assetid: 0db4dcaf-56a3-4884-a7ad-35f64978a58d
 ---
-# &gt;= Operator (C# Reference)
+# >= Operator (C# Reference)
 
 The "greater than or equal" relational operator `>=` returns `true` if its first operand is greater than or equal to its second operand, `false` otherwise. All numeric and  enumeration types support the `>=` operator. For operands of the same [enum](../keywords/enum.md) type, the corresponding values of the underlying integral type are compared.
 

@@ -1,11 +1,11 @@
----
-title: "Field '&lt;fieldname&gt;' of type '&lt;typename&gt;' is 'ReadOnly'"
+﻿---
+title: "Field '<fieldname>' of type '<typename>' is 'ReadOnly'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrMissingMember_ReadOnlyField2"
 ms.assetid: fb51f54b-f12d-4aea-9a6e-6e070721c010
 ---
-# Field '&lt;fieldname&gt;' of type '&lt;typename&gt;' is 'ReadOnly'
+# Field '\<fieldname>' of type '\<typename>' is 'ReadOnly'
 You attempted to write to a field that is declared `ReadOnly`.  
   
 ## To correct this error  

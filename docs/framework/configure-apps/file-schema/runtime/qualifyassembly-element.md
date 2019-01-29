@@ -1,5 +1,5 @@
 ---
-title: "&lt;qualifyAssembly&gt; Element"
+title: "<qualifyAssembly> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#qualifyAssembly"
@@ -12,7 +12,7 @@ ms.assetid: ad6442f6-1a9d-43b6-b733-04ac1b7f9b82
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;qualifyAssembly&gt; Element
+# \<qualifyAssembly> Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  
   
  \<configuration>  

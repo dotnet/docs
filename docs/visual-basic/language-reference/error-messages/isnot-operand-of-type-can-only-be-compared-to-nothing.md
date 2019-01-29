@@ -1,5 +1,5 @@
 ---
-title: "&#39;IsNot&#39; operand of type &#39;typename&#39; can only be compared to &#39;Nothing&#39;, because &#39;typename&#39; is a nullable type"
+title: "'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc32128"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC32128"
 ms.assetid: 1155b23a-ad75-4bab-b9da-73f35c767a36
 ---
-# &#39;IsNot&#39; operand of type &#39;typename&#39; can only be compared to &#39;Nothing&#39;, because &#39;typename&#39; is a nullable type
+# 'IsNot' operand of type 'typename' can only be compared to 'Nothing', because 'typename' is a nullable type
 A variable declared as nullable has been compared to an expression other than `Nothing` using the `IsNot` operator.  
   
  **Error ID:** BC32128  

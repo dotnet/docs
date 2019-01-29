@@ -1,12 +1,12 @@
 ---
-title: "&lt;typeparam&gt; (Visual Basic)"
+title: "<typeparam> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "typeparam XML tag"
   - "<typeparam> XML tag"
 ms.assetid: 1bb5ba78-f060-478c-905c-77a2e43639af
 ---
-# &lt;typeparam&gt; (Visual Basic)
+# \<typeparam> (Visual Basic)
 Defines a type parameter name and description.  
   
 ## Syntax  

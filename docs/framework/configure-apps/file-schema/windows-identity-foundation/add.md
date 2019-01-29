@@ -1,10 +1,10 @@
 ---
-title: "&lt;add&gt;"
+title: "<add>"
 ms.date: "03/30/2017"
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: "BrucePerlerMS"
 ---
-# &lt;add&gt;
+# \<add>
 Adds the specified security token handler to the token handler collection.  
   
  \<system.identityModel>  

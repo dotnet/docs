@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;netMsmqBinding&gt;"
+title: "<message> of <netMsmqBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
 ---
-# &lt;message&gt; of &lt;netMsmqBinding&gt;
+# \<message> of \<netMsmqBinding>
 Defines the SOAP message security settings on this `netMsmqBinding` binding.  
   
  \<system.ServiceModel>  

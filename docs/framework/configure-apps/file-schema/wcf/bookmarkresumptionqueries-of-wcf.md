@@ -1,9 +1,9 @@
 ---
-title: "&lt;bookmarkResumptionQueries&gt; of WCF"
+title: "<bookmarkResumptionQueries> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: ed086712-1dc7-4932-a592-d1116a0155f3
 ---
-# &lt;bookmarkResumptionQueries&gt; of WCF
+# \<bookmarkResumptionQueries> of WCF
   
 Represents a collection of queries that are used to track resumption of a bookmark within a workflow instance. The query is necessary for a tracking participant to subscribe to bookmark resumption records.  
   

@@ -1,12 +1,12 @@
 ---
-title: "&lt;example&gt; (Visual Basic)"
+title: "<example> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "example XML tag"
   - "<example> XML tag"
 ms.assetid: 90eeda1c-3fc4-427c-879c-5046d265a97c
 ---
-# &lt;example&gt; (Visual Basic)
+# \<example> (Visual Basic)
 Specifies an example for the member.  
   
 ## Syntax  

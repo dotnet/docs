@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for bypasslist (Network Settings)"
+title: "<clear> Element for bypasslist (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/clear"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "bypasslist, clear element"
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
 ---
-# &lt;clear&gt; Element for bypasslist (Network Settings)
+# \<clear> Element for bypasslist (Network Settings)
 Clears the proxy bypass list.  
   
  \<configuration>  

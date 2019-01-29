@@ -1,11 +1,11 @@
 ---
-title: "&lt;Event&gt; Element (.NET Native)"
+title: "<Event> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: e53b029c-9d6d-4c0a-9cdc-5cfca8a5ca47
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Event&gt; Element (.NET Native)
+# \<Event> Element (.NET Native)
 Applies runtime reflection policy to an event.  
   
 ## Syntax  

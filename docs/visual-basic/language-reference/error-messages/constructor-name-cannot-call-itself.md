@@ -1,5 +1,5 @@
 ---
-title: "Constructor &#39;&lt;name&gt;&#39; cannot call itself"
+title: "Constructor '<name>' cannot call itself"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30298"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30298"
 ms.assetid: 2d77b7f4-0640-4f89-9c65-f101fd2847c0
 ---
-# Constructor &#39;&lt;name&gt;&#39; cannot call itself
+# Constructor '\<name>' cannot call itself
 A `Sub New` procedure in a class or structure calls itself.  
   
  The purpose of a constructor is to initialize an instance of a class or structure when it is first created. A class or structure can have several constructors, provided they all have different parameter lists. A constructor is permitted to call another constructor to perform its functionality in addition to its own. But it is meaningless for a constructor to call itself, and in fact it would result in infinite recursion if permitted.  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;baseAddresses&gt;"
+title: "<add> of <baseAddresses>"
 ms.date: "03/30/2017"
 ms.assetid: 1bd7426f-5f4f-43fc-b8e9-de842219aa32
 ---
-# &lt;add&gt; of &lt;baseAddresses&gt;
+# \<add> of \<baseAddresses>
 Represents a configuration element that specifies the base addresses used by the service host.  
   
  \<system.ServiceModel>  

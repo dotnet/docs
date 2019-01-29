@@ -1,5 +1,5 @@
 ---
-title: "&lt;UseRandomizedStringHashAlgorithm&gt; Element"
+title: "<UseRandomizedStringHashAlgorithm> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;UseRandomizedStringHashAlgorithm&gt; Element
+# \<UseRandomizedStringHashAlgorithm> Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
   
  \<configuration>  

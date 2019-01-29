@@ -1,9 +1,9 @@
 ---
-title: "&lt;udpBinding&gt;"
+title: "<udpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
 ---
-# &lt;udpBinding&gt;
+# \<udpBinding>
 A configuration element used to configure the <xref:System.ServiceModel.UdpBinding> binding.  
   
  \<system.ServiceModel>  

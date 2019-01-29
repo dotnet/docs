@@ -1,11 +1,11 @@
 ---
-title: "&lt;EnableAmPmParseAdjustment&gt; Element"
+title: "<EnableAmPmParseAdjustment> Element"
 ms.date: "03/30/2017"
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;EnableAmPmParseAdjustment&gt; Element
+# \<EnableAmPmParseAdjustment> Element
 Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain a day, month, hour, and AM/PM designator.  
   
  \<configuration>  

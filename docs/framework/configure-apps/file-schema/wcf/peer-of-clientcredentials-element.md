@@ -1,9 +1,9 @@
 ---
-title: "&lt;peer&gt; of &lt;clientCredentials&gt; Element"
+title: "<peer> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
 ---
-# &lt;peer&gt; of &lt;clientCredentials&gt; Element
+# \<peer> of \<clientCredentials> Element
 Specifies credentials used when authenticating peer-to-peer clients.  
   
  \<system.ServiceModel>  

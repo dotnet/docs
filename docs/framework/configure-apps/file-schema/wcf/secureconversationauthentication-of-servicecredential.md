@@ -1,9 +1,9 @@
 ---
-title: "&lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;"
+title: "<secureConversationAuthentication> of <serviceCredential>"
 ms.date: "03/30/2017"
 ms.assetid: 0bd3fac7-befd-4a45-ba51-c200b33be0fd
 ---
-# &lt;secureConversationAuthentication&gt; of &lt;serviceCredential&gt;
+# \<secureConversationAuthentication> of \<serviceCredential>
 Specifies the settings for a secure conversation service.  
   
  \<system.ServiceModel>  

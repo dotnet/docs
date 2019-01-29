@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; element of &lt;netTcpBinding&gt;"
+title: "<message> element of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
 ---
-# &lt;message&gt; element of &lt;netTcpBinding&gt;
+# \<message> element of \<netTcpBinding>
 Defines the type of message-level security requirements for an endpoint configured with the [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).  
   
  \<system.ServiceModel>  

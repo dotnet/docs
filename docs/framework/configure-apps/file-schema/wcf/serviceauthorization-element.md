@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceAuthorization&gt; element"
+title: "<serviceAuthorization> element"
 ms.date: "03/30/2017"
 ms.assetid: 18cddad5-ddcb-4839-a0ac-1d6f6ab783ca
 ---
-# &lt;serviceAuthorization&gt; element
+# \<serviceAuthorization> element
 Specifies settings that authorize access to service operations  
   
  \<system.ServiceModel>  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;namespaceTable&gt;"
+title: "<add> of <namespaceTable>"
 ms.date: "03/30/2017"
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
 ---
-# &lt;add&gt; of &lt;namespaceTable&gt;
+# \<add> of \<namespaceTable>
 Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.  
   
  \<system.serviceModel>  

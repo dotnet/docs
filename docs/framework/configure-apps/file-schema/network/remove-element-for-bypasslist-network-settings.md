@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for bypasslist (Network Settings)"
+title: "<remove> Element for bypasslist (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/remove"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "remove element, bypasslist"
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
 ---
-# &lt;remove&gt; Element for bypasslist (Network Settings)
+# \<remove> Element for bypasslist (Network Settings)
 Removes an IP address or DNS name from the proxy bypass list.  
   
  \<configuration>  

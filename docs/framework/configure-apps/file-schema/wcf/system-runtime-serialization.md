@@ -1,9 +1,9 @@
 ---
-title: "&lt;system.runtime.serialization&gt;"
+title: "<system.runtime.serialization>"
 ms.date: "03/30/2017"
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
 ---
-# &lt;system.runtime.serialization&gt;
+# \<system.runtime.serialization>
 Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  system.runtime.serialization  

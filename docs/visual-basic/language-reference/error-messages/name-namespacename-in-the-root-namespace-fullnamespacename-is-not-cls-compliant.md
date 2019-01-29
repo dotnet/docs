@@ -1,5 +1,5 @@
 ---
-title: "Name &lt;namespacename&gt; in the root namespace &lt;fullnamespacename&gt; is not CLS-compliant"
+title: "Name <namespacename> in the root namespace <fullnamespacename> is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc40039"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40039"
 ms.assetid: c5bd5914-ae71-416a-8bed-f76f644f78be
 ---
-# Name &lt;namespacename&gt; in the root namespace &lt;fullnamespacename&gt; is not CLS-compliant
+# Name \<namespacename> in the root namespace \<fullnamespacename> is not CLS-compliant
 An assembly is marked as `<CLSCompliant(True)>`, but an element of the root namespace name begins with an underscore (`_`).  
   
  A programming element can contain one or more underscores, but to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must not begin with an underscore. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  

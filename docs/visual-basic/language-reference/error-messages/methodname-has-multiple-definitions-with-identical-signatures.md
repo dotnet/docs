@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;methodname&gt;&#39; has multiple definitions with identical signatures"
+title: "'<methodname>' has multiple definitions with identical signatures"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30269"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30269"
 ms.assetid: 39489621-6617-4e5c-9b24-c2faf8273891
 ---
-# &#39;&lt;methodname&gt;&#39; has multiple definitions with identical signatures
+# '\<methodname>' has multiple definitions with identical signatures
 A `Function` or `Sub` procedure declaration uses the identical procedure name and argument list as a previous declaration. One possible cause is an attempt to overload the original procedure. Overloaded procedures must have different argument lists.  
   
  **Error ID:** BC30269  

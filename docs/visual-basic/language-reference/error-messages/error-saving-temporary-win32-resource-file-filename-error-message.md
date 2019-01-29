@@ -1,5 +1,5 @@
 ---
-title: "Error saving temporary Win32 resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;"
+title: "Error saving temporary Win32 resource file '<filename>': <error message>"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30137"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30137"
 ms.assetid: 61c23f48-0e06-42fc-be00-5598053c86dd
 ---
-# Error saving temporary Win32 resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;
+# Error saving temporary Win32 resource file '\<filename>': \<error message>
 The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker reported an error obtaining a file name for use in writing an in-memory resource.  
   
  **Error ID:** BC30137  

@@ -1,10 +1,10 @@
----
-title: "&lt;arguments&gt;"
+﻿---
+title: "<arguments>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 0f327196-f468-4be3-b6c4-68ba981a1bd6
 ---
-# &lt;arguments&gt;
+# \<arguments>
 Represents a collection of arguments associated with an activity state query.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  

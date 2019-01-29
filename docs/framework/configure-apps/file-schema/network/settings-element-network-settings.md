@@ -1,5 +1,5 @@
 ---
-title: "&lt;settings&gt; Element (Network Settings)"
+title: "<settings> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#settings"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<settings> element"
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
 ---
-# &lt;settings&gt; Element (Network Settings)
+# \<settings> Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  
   
  \<configuration>  

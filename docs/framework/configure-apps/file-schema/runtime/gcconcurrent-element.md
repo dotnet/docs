@@ -1,5 +1,5 @@
 ---
-title: "&lt;gcConcurrent&gt; Element"
+title: "<gcConcurrent> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent"
@@ -12,7 +12,7 @@ ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;gcConcurrent&gt; Element
+# \<gcConcurrent> Element
 Specifies whether the common language runtime runs garbage collection on a separate thread.  
   
  \<configuration>  

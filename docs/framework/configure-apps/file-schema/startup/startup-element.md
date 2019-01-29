@@ -1,5 +1,5 @@
 ---
-title: "&lt;startup&gt; element"
+title: "<startup> element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "startup element"
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
 ---
-# &lt;startup&gt; element
+# \<startup> element
 
 Specifies common language runtime startup information.
 

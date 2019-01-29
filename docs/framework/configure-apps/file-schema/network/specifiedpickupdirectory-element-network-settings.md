@@ -1,5 +1,5 @@
 ---
-title: "&lt;specifiedPickupDirectory&gt; Element (Network Settings)"
+title: "<specifiedPickupDirectory> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#specifiedPickupDirectory"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<specifiedPickupDirectory> element"
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
 ---
-# &lt;specifiedPickupDirectory&gt; Element (Network Settings)
+# \<specifiedPickupDirectory> Element (Network Settings)
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
   
  \<configuration>  

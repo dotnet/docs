@@ -1,10 +1,10 @@
----
-title: "&lt;cookieHandler&gt;"
+﻿---
+title: "<cookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: bfdc127f-8d94-4566-8bef-f583c6ae7398
 author: "BrucePerlerMS"
 ---
-# &lt;cookieHandler&gt;
+# \<cookieHandler>
 Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.  
   
  \<system.identityModel.services>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for authenticationModules (Network Settings)"
+title: "<clear> Element for authenticationModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/clear"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "authenticationModules, clear element"
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 ---
-# &lt;clear&gt; Element for authenticationModules (Network Settings)
+# \<clear> Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  
   
  \<configuration>  

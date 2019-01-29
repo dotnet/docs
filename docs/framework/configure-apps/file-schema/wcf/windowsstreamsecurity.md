@@ -1,9 +1,9 @@
 ---
-title: "&lt;windowsStreamSecurity&gt;"
+title: "<windowsStreamSecurity>"
 ms.date: "03/30/2017"
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
 ---
-# &lt;windowsStreamSecurity&gt;
+# \<windowsStreamSecurity>
 Specify Windows stream security settings of the custom binding.  
   
  \<system.serviceModel>  

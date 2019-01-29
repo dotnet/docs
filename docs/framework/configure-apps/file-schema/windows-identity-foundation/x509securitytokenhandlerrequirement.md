@@ -1,10 +1,10 @@
 ---
-title: "&lt;x509SecurityTokenHandlerRequirement&gt;"
+title: "<x509SecurityTokenHandlerRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce
 author: "BrucePerlerMS"
 ---
-# &lt;x509SecurityTokenHandlerRequirement&gt;
+# \<x509SecurityTokenHandlerRequirement>
 Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> class or derived classes.  
   
  \<system.identityModel>  

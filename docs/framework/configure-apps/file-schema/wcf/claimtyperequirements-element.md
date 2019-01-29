@@ -1,9 +1,9 @@
 ---
-title: "&lt;claimTypeRequirements&gt; element"
+title: "<claimTypeRequirements> element"
 ms.date: "03/30/2017"
 ms.assetid: a26efe73-4bad-4731-8cad-27f00d54354b
 ---
-# &lt;claimTypeRequirements&gt; element
+# \<claimTypeRequirements> element
 Specifies a collection of required claim types.  
   
  In a federated scenario, services state the requirements on incoming credentials. For example, the incoming credentials must possess a certain set of claim types. Each child element in this collection specifies the types of required and optional claims expected to appear in a federated credential.  

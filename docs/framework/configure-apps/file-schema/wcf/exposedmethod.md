@@ -1,9 +1,9 @@
 ---
-title: "&lt;exposedMethod&gt;"
+title: "<exposedMethod>"
 ms.date: "03/30/2017"
 ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
 ---
-# &lt;exposedMethod&gt;
+# \<exposedMethod>
 Represents a COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.  
   
  \<system.ServiceModel>  

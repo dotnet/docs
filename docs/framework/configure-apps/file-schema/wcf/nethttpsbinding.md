@@ -1,9 +1,9 @@
 ---
-title: "&lt;netHttpsBinding&gt;"
+title: "<netHttpsBinding>"
 ms.date: "03/30/2017"
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
 ---
-# &lt;netHttpsBinding&gt;
+# \<netHttpsBinding>
 Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTPS. When used with a duplex contract, Web Sockets will be used, otherwise HTTPS will be used.  
   
  Root Element  

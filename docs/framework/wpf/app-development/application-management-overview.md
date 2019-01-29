@@ -50,7 +50,7 @@ All applications tend to share a common set of functionality that applies to app
   
 <a name="The_Application_Definition"></a>   
 ## The Application Definition  
- To utilize the functionality of the <xref:System.Windows.Application> class, you must implement an application definition. A WPF application definition is a class that derives from <xref:System.Windows.Application> and is configured with a special Microsoft build engine (MSBuild) setting.  
+ To utilize the functionality of the <xref:System.Windows.Application> class, you must implement an application definition. A WPF application definition is a class that derives from <xref:System.Windows.Application> and is configured with a special MSBuild setting.  
 
 ### Implementing an Application Definition  
  A typical WPF application definition is implemented using both markup and code-behind. This allows you to use markup to declaratively set application properties, resources, and register events, while handling events and implementing application-specific behavior in code-behind.  

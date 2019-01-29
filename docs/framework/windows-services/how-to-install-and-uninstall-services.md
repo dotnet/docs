@@ -6,18 +6,18 @@ helpviewer_keywords:
   - "services, uninstalling"
   - "services, installing"
   - "installing Windows Services"
-  - "uninstalling applications, Windows Services"
-  - "installation, Windows Services"
-  - "uninstalling Windows Services"
+  - "uninstalling applications, apps, Windows services"
+  - "installation, Windows services"
+  - "uninstalling Windows services"
   - "installutil.exe tool"
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: "ghogen"
 ---
 # How to: Install and uninstall services
-If you’re developing a Windows service with the .NET Framework, you can quickly install your service application by using the *InstallUtil.exe* command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
+If you’re developing a Windows service with the .NET Framework, you can quickly install your service app by using the *InstallUtil.exe* command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
   
 > [!WARNING]
->  If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Programs and Features** in Control Panel to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.  
+>  If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Apps** in Settings to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.  
   
  To use the steps in this article, you first need to add a service installer to your Windows service. For more information, see [Walkthrough: Creating a Windows service app](../windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
   

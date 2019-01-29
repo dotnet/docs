@@ -1,5 +1,5 @@
 ---
-title: "&lt;ThrowUnobservedTaskExceptions&gt; Element"
+title: "<ThrowUnobservedTaskExceptions> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;ThrowUnobservedTaskExceptions&gt; Element
+# \<ThrowUnobservedTaskExceptions> Element
 Specifies whether unhandled task exceptions should terminate a running process.  
   
  \<configuration>  

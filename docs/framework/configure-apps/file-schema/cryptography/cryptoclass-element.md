@@ -1,5 +1,5 @@
 ---
-title: "&lt;cryptoClass&gt; Element"
+title: "<cryptoClass> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/cryptoNameMapping/cryptoClasses/cryptoClass"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<cryptoClass> element"
 ms.assetid: 03db52ef-010e-44ea-b6fd-b9c900ecad50
 ---
-# &lt;cryptoClass&gt; Element
+# \<cryptoClass> Element
 Contains a cryptography class that has a mapping to a friendly name in the [\<nameEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/nameentry-element.md) element.  
   
  \<configuration>  

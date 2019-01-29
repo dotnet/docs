@@ -1,9 +1,9 @@
 ---
-title: "&lt;diagnostics&gt;"
+title: "<diagnostics>"
 ms.date: "03/30/2017"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
 ---
-# &lt;diagnostics&gt;
+# \<diagnostics>
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  
   
  \<system.ServiceModel>  

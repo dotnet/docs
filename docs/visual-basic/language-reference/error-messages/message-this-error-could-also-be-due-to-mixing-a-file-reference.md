@@ -1,5 +1,5 @@
 ---
-title: "&lt;message&gt; This error could also be due to mixing a file reference with a project reference to assembly &#39;&lt;assemblyname&gt;&#39;"
+title: "<message> This error could also be due to mixing a file reference with a project reference to assembly '<assemblyname>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30971"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30971"
 ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
 ---
-# &lt;message&gt; This error could also be due to mixing a file reference with a project reference to assembly &#39;&lt;assemblyname&gt;&#39;
+# \<message> This error could also be due to mixing a file reference with a project reference to assembly '\<assemblyname>'
 \<message> This error could also be due to mixing a file reference with a project reference to assembly '\<assemblyname>. In this case, try replacing the file reference to '\<assemblyfilename>' in project '\<projectname1>' with a project reference to '\<projectname2>'.  
   
  Code in your project accesses a member of another project, but the configuration of your solution does not allow the Visual Basic compiler to resolve the reference.  

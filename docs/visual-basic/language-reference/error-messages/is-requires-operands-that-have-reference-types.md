@@ -1,5 +1,5 @@
 ---
-title: "&#39;Is&#39; requires operands that have reference types, but this operand has the value type &#39;&lt;typename&gt;&#39;"
+title: "'Is' requires operands that have reference types, but this operand has the value type '<typename>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30020"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30020"
 ms.assetid: 228afebd-1203-4bd3-8d7a-c5c56f3cedc4
 ---
-# &#39;Is&#39; requires operands that have reference types, but this operand has the value type &#39;&lt;typename&gt;&#39;
+# 'Is' requires operands that have reference types, but this operand has the value type '\<typename>'
 The `Is` comparison operator determines whether two object variables refer to the same instance. This comparison is not defined for value types.  
   
  **Error ID:** BC30020  

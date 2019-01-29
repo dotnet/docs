@@ -1,5 +1,5 @@
 ---
-title: "&lt;runtime&gt; Element"
+title: "<runtime> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#runtime"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "container tags, <runtime> element"
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 ---
-# &lt;runtime&gt; Element
+# \<runtime> Element
 Provides information used by the common language runtime to configure applications.  
   
  \<configuration>  

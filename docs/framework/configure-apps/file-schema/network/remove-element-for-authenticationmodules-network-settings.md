@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for authenticationModules (Network Settings)"
+title: "<remove> Element for authenticationModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/remove"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "authenticationModules, remove element"
 ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
 ---
-# &lt;remove&gt; Element for authenticationModules (Network Settings)
+# \<remove> Element for authenticationModules (Network Settings)
 Removes an authentication module from the application.  
   
  \<configuration>  

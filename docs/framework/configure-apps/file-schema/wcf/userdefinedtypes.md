@@ -1,9 +1,9 @@
 ---
-title: "&lt;userDefinedTypes&gt;"
+title: "<userDefinedTypes>"
 ms.date: "03/30/2017"
 ms.assetid: 6f69742e-5144-4115-9344-cbe175aab73d
 ---
-# &lt;userDefinedTypes&gt;
+# \<userDefinedTypes>
 This section contains a collection of `userDefinedType` elements.  
   
 ## See also

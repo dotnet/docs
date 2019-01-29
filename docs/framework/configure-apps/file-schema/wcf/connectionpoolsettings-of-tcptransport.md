@@ -1,9 +1,9 @@
 ---
-title: "&lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;"
+title: "<connectionPoolSettings> of <tcpTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 2fbc3aa7-fcc9-4193-99a3-85d31d60d3f7
 ---
-# &lt;connectionPoolSettings&gt; of &lt;tcpTransport&gt;
+# \<connectionPoolSettings> of \<tcpTransport>
 Specifies additional connection pool settings for a TCP transport.  
   
  \<system.serviceModel>  

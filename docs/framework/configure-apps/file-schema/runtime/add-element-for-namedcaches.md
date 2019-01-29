@@ -1,12 +1,12 @@
 ---
-title: "&lt;add&gt; Element for &lt;namedCaches&gt;"
+title: "<add> Element for <namedCaches>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "add element for <namedCaches>"
   - "<add> element for <namedCaches>"
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
 ---
-# &lt;add&gt; Element for &lt;namedCaches&gt;
+# \<add> Element for \<namedCaches>
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.  
   
  \<system.runtime.caching>  

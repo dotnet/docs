@@ -1,9 +1,9 @@
 ---
-title: "&lt;peerTransport&gt;"
+title: "<peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: c1a5013a-9dd4-4a27-b114-795b8b323177
 ---
-# &lt;peerTransport&gt;
+# \<peerTransport>
 Defines a peer transport for a custom binding.  
   
  \<system.serviceModel>  

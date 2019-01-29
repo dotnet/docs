@@ -1,9 +1,9 @@
 ---
-title: "&lt;comContracts&gt;"
+title: "<comContracts>"
 ms.date: "03/30/2017"
 ms.assetid: 42e74148-223d-4888-a8ed-1d928527eb09
 ---
-# &lt;comContracts&gt;
+# \<comContracts>
 The `comContracts` configuration section contains elements that allow you to specify various properties of a COM+ integration service contract.  
   
 ## Specifying Namespace and Contract  

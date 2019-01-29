@@ -1,5 +1,5 @@
 ---
-title: "&lt;dataContractSerializer&gt;"
+title: "<dataContractSerializer>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dataContractSerializer element"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "KnownTypes"
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
 ---
-# &lt;dataContractSerializer&gt;
+# \<dataContractSerializer>
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>. This element occurs in two different hierarchies. One is listed the following Schema Hierarchy section and the other is listed in the Remarks section.  
   
  \<system.ServiceModel>  

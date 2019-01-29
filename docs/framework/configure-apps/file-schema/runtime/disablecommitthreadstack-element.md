@@ -1,5 +1,5 @@
 ---
-title: "&lt;disableCommitThreadStack&gt; Element"
+title: "<disableCommitThreadStack> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/disableCommitThreadStack"
@@ -11,7 +11,7 @@ ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;disableCommitThreadStack&gt; Element
+# \<disableCommitThreadStack> Element
 Specifies whether the full thread stack is committed when a thread is started.  
   
  \<configuration>  

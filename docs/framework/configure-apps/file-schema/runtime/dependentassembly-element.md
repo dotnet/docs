@@ -1,5 +1,5 @@
 ---
-title: "&lt;dependentAssembly&gt; Element"
+title: "<dependentAssembly> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly"
@@ -12,7 +12,7 @@ ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;dependentAssembly&gt; Element
+# \<dependentAssembly> Element
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.  
   
  \<configuration>  

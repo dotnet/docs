@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for authenticationModules (Network Settings)"
+title: "<add> Element for authenticationModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "<add> element, authenticationModules"
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 ---
-# &lt;add&gt; Element for authenticationModules (Network Settings)
+# \<add> Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  
   
  \<configuration>  

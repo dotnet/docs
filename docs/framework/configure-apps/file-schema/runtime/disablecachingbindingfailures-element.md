@@ -1,5 +1,5 @@
 ---
-title: "&lt;disableCachingBindingFailures&gt; Element"
+title: "<disableCachingBindingFailures> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#disableCachingBindingFailures"
@@ -13,7 +13,7 @@ ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;disableCachingBindingFailures&gt; Element
+# \<disableCachingBindingFailures> Element
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  
   
  \<configuration> Element  

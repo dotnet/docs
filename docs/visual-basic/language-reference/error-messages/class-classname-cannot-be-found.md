@@ -1,5 +1,5 @@
 ---
-title: "Class &#39;&lt;classname&gt;&#39; cannot be found"
+title: "Class '<classname>' cannot be found"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc31098"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC31098"
 ms.assetid: 72528d02-77b7-4b4c-8b9e-d12f666f92ef
 ---
-# Class &#39;&lt;classname&gt;&#39; cannot be found
+# Class '\<classname>' cannot be found
 Class '\<classname>' cannot be found. This condition is usually the result of a mismatched 'Microsoft.VisualBasic.dll'.  
   
  A defined member could not be located.  

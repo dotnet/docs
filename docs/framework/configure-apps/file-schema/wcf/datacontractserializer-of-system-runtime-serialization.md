@@ -1,9 +1,9 @@
 ---
-title: "&lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt;"
+title: "<dataContractSerializer> of <system.runtime.serialization>"
 ms.date: "03/30/2017"
 ms.assetid: d9b3d625-be3f-4768-8e0d-1b7e6929f6a8
 ---
-# &lt;dataContractSerializer&gt; of &lt;system.runtime.serialization&gt;
+# \<dataContractSerializer> of \<system.runtime.serialization>
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  \<system.runtime.serialization>  

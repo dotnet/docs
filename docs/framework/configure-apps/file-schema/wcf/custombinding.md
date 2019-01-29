@@ -1,9 +1,9 @@
 ---
-title: "&lt;customBinding&gt;"
+title: "<customBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
 ---
-# &lt;customBinding&gt;
+# \<customBinding>
 Provides full control over the messaging stack for the user.  
   
  \<system.serviceModel>  

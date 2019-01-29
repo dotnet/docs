@@ -1,9 +1,9 @@
 ---
-title: "&lt;mtomMessageEncoding&gt;"
+title: "<mtomMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: 7865d171-cd1e-430a-8421-39cc13541d1b
 ---
-# &lt;mtomMessageEncoding&gt;
+# \<mtomMessageEncoding>
 Specifies the encoding and message versioning used for SOAP Message Transmission Optimization Mechanism (MTOM) based messages.  
   
  \<system.serviceModel>  

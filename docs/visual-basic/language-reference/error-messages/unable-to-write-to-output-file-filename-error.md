@@ -1,5 +1,5 @@
 ---
-title: "Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;"
+title: "Unable to write to output file '<filename>': <error>"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc31019"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC31019"
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
 ---
-# Unable to write to output file &#39;&lt;filename&gt;&#39;: &lt;error&gt;
+# Unable to write to output file '\<filename>': \<error>
 There was a problem creating the file.  
   
  An output file cannot be opened for writing. The file (or the folder containing the file) may be opened for exclusive use by another process, or it may have its read-only attribute set.  

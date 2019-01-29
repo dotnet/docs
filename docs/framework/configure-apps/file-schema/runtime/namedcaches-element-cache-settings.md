@@ -1,5 +1,5 @@
 ---
-title: "&lt;namedCaches&gt; Element (Cache Settings)"
+title: "<namedCaches> Element (Cache Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "namedCaches element"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "<namedCaches> element"
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
 ---
-# &lt;namedCaches&gt; Element (Cache Settings)
+# \<namedCaches> Element (Cache Settings)
 Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.  
   
  \<configuration>  

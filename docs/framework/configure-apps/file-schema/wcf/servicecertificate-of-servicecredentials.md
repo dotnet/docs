@@ -1,9 +1,9 @@
----
-title: "&lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;"
+﻿---
+title: "<serviceCertificate> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
 ---
-# &lt;serviceCertificate&gt; of &lt;serviceCredentials&gt;
+# \<serviceCertificate> of \<serviceCredentials>
 Specify an X.509 certificate that will be used to authenticate the service to clients using Message security mode.  
   
  \<system.ServiceModel>  

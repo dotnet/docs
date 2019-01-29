@@ -1,11 +1,11 @@
----
-title: "&lt;wsHttpBinding&gt;"
+﻿---
+title: "<wsHttpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wsHttpBinding Element"
 ms.assetid: 0eee8ced-ad68-427d-b95a-97260e98deed
 ---
-# &lt;wsHttpBinding&gt;
+# \<wsHttpBinding>
 Defines a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-Reliable Messaging for reliability, and WS-Security for message security and authentication. The transport is HTTP, and message encoding is Text/XML encoding.  
   
  \<system.ServiceModel>  

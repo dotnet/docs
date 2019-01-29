@@ -1,5 +1,5 @@
 ---
-title: "&lt;sources&gt; Element"
+title: "<sources> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "<sources> element"
 ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
 ---
-# &lt;sources&gt; Element
+# \<sources> Element
 Specifies trace sources that initiate tracing messages.  
   
  \<configuration>  

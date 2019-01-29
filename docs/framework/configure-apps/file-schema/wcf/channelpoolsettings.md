@@ -1,9 +1,9 @@
 ---
-title: "&lt;channelPoolSettings&gt;"
+title: "<channelPoolSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 4755f3d3-4213-4c68-ae7f-45b67d744459
 ---
-# &lt;channelPoolSettings&gt;
+# \<channelPoolSettings>
 Specifies the channel pool settings for a custom binding.  
   
  \<system.serviceModel>  

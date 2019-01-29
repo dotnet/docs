@@ -1,9 +1,9 @@
 ---
-title: "&lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;"
+title: "<udpTransportSettings> of <udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
 ---
-# &lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;
+# \<udpTransportSettings> of \<udpAnnouncementEndpoint>
 This configuration element exposes UDP transport settings for [\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md).  
   
 \<system.ServiceModel>  

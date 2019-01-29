@@ -1,9 +1,9 @@
 ---
-title: "&lt;privacyNoticeAt&gt;"
+title: "<privacyNoticeAt>"
 ms.date: "03/30/2017"
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
 ---
-# &lt;privacyNoticeAt&gt;
+# \<privacyNoticeAt>
 Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.  
   
  \<system.serviceModel>  

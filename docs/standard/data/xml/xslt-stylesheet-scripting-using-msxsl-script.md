@@ -1,5 +1,5 @@
 ---
-title: "XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;"
+title: "XSLT Stylesheet Scripting Using <msxsl:script>"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -9,7 +9,7 @@ ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# XSLT Stylesheet Scripting Using &lt;msxsl:script&gt;
+# XSLT Stylesheet Scripting Using \<msxsl:script>
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  
   
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceDebug&gt;"
+title: "<serviceDebug>"
 ms.date: "03/30/2017"
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
 ---
-# &lt;serviceDebug&gt;
+# \<serviceDebug>
 Specifies debugging and help information features for a Windows Communication Foundation (WCF) service.  
   
  \<system.ServiceModel>  

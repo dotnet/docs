@@ -184,7 +184,7 @@ The main responsibility of this class is to generate the responses for a partici
 1. Ask for participation in the survey. If the person doesn't consent, return a missing (or null) response.
 1. Ask each question and record the answer. Each answer may also be missing (or null).
 
-Add the following code to your `SurveyRespondent` class:
+Add the following code to your `SurveyResponse` class:
 
 [!code-csharp[AnswerSurvey](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
@@ -206,7 +206,7 @@ The last step is to display survey results. You'll add code to many of the class
 
 [!code-csharp[ReportResponses](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#SurveyStatus)]
 
-Because `surveyResponses` is a non-nullable reference, type no checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so choose the overload of `GetValueOrDefault` that takes a second argument for the default value.
+Because `surveyResponses` is a non-nullable reference type, no checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so choose the overload of `GetValueOrDefault` that takes a second argument for the default value.
 
 Next, add these three expression-bodied members to the `SurveyRun` class:
 
@@ -222,7 +222,7 @@ You don't need any `null` checks in this code because you've designed the underl
 
 ## Get the code
 
-You can get the code for the finished tutorial from our [samples](https://github.com/dotnet/samples) repository in the [csharp/IntroToNullables](https://github.com/dotnet/samples/tree/master/csharp/NullableIntroduction) folder.
+You can get the code for the finished tutorial from our [samples](https://github.com/dotnet/samples) repository in the [csharp/NullableIntroduction](https://github.com/dotnet/samples/tree/master/csharp/NullableIntroduction) folder.
 
 Experiment by changing the type declarations between nullable and non-nullable reference types. See how that generates different warnings to ensure you don't accidentally dereference a `null`.
 

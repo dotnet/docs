@@ -1,5 +1,5 @@
 ---
-title: "&lt;legacyImpersonationPolicy&gt; Element"
+title: "<legacyImpersonationPolicy> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#legacyImpersonationPolicy"
@@ -11,7 +11,7 @@ ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;legacyImpersonationPolicy&gt; Element
+# \<legacyImpersonationPolicy> Element
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
   
  \<configuration>  

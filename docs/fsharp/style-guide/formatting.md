@@ -279,7 +279,7 @@ let f model msg =
     | 1 -> model + 1, []
     | _ -> model, [ msg ]
 ```
-
+In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
 
 ## Formatting discriminated union declarations
 

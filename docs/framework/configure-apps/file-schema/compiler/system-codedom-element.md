@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "system.codedom element"
   - "<system.codedom> element"
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;system.codedom&gt; Element
 Specifies compiler configuration settings for available language providers.  

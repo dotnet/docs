@@ -26,7 +26,7 @@ If you are consuming a class, module, or structure that has members of unsigned 
   
 3.  Consult the documentation for the Windows function you are calling to find the names and values of the constants it uses. Many of these are defined in the WinUser.h file.  
   
-4.  Declare the necessary constants in your code. Many Windows constants are 32-bit unsigned values, and you should declare these `As``UInteger`.  
+4.  Declare the necessary constants in your code. Many Windows constants are 32-bit unsigned values, and you should declare these `As UInteger`.  
   
 5.  Call the function in the normal way. The following example calls the Windows function `MessageBox`, which takes an unsigned integer argument.  
   

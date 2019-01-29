@@ -18,7 +18,7 @@ You can make external objects available to your project by choosing the **Add Re
   
  The `Imports` statement has the following syntax:  
   
- `Imports` [`|``Aliasname` =] `Namespace`  
+ `Imports [Aliasname =] Namespace`  
   
  `Aliasname` refers to a short name you can use within code to refer to an imported namespace. `Namespace` is a namespace available through either a project reference, through a definition within the project, or through a previous `Imports` statement.  
   

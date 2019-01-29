@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "providerOptions"
   - "provideroption element"
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;providerOption&gt; Element
 Specifies the compiler version attributes for a language provider.  

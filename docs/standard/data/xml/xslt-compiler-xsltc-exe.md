@@ -43,7 +43,7 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 > [!NOTE]
 >  You must also include the compiled assembly as a reference in your application.  
   
- The xsltc.exe tool does not validate the class (`/class:``name`) or assembly (`/out:``assemblyName`) names. Errors are thrown by the common language runtime if the names are not valid.  
+ The xsltc.exe tool does not validate the class (`/class:`*name*) or assembly (`/out:`*assemblyName*) names. Errors are thrown by the common language runtime if the names are not valid.  
   
 ## Examples  
  The following command compiles the style sheet and creates an assembly named booksort.dll.  

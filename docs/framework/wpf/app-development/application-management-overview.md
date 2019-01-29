@@ -64,7 +64,7 @@ All applications tend to share a common set of functionality that applies to app
   
  To allow a markup file and code-behind file to work together, the following needs to happen:  
   
--   In markup, the `Application` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes MSBuild to create a `partial` class that derives from <xref:System.Windows.Application> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the XAML schema ( `xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"` ).  
+- In markup, the `Application` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes MSBuild to create a `partial` class that derives from <xref:System.Windows.Application> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the XAML schema (`xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`).
   
 -   In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup and must derive from <xref:System.Windows.Application>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built (see [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md)).  
   

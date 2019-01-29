@@ -18,7 +18,7 @@ Along with the <xref:System.Threading.Thread?displayProperty=nameWithType> class
 |[The managed thread pool](the-managed-thread-pool.md)|Describes the <xref:System.Threading.ThreadPool?displayProperty=nameWithType> class, which provides a pool of worker threads that are managed by .NET.|  
 |[Timers](timers.md)|Describes .NET timers that can be used in a multithreaded environment.|
 |[Overview of synchronization primitives](overview-of-synchronization-primitives.md)|Describes types that can be used to synchronize access to a shared resource or control thread interaction.|
-|[EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|Describes managed event wait handles, which are used to synchronize thread activities by signaling and waiting for signals.|
+|[EventWaitHandle, CountdownEvent, ManualResetEvent](eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)|Describes managed event wait handles, which are used to synchronize thread activities by signaling and waiting for signals.|
 |[Mutexes](mutexes.md)|Describes <xref:System.Threading.Mutex?displayProperty=nameWithType>, which grants exclusive access to a shared resource.|
 |[Semaphore and SemaphoreSlim](semaphore-and-semaphoreslim.md)|Describes the <xref:System.Threading.Semaphore?displayProperty=nameWithType> class, which limits number of threads that can access a shared resource or a pool of resources concurrently.|
 |[Barrier](barrier.md)|Describes the <xref:System.Threading.Barrier?displayProperty=nameWithType> class that implements the barrier pattern for coordination of threads in phased operations.|

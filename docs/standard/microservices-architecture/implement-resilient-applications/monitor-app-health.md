@@ -1,6 +1,6 @@
 ---
 title: Health monitoring
-description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
+description: Explore one way of implementing health monitoring.
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 01/07/2019
@@ -9,11 +9,11 @@ ms.date: 01/07/2019
 
 Health monitoring can allow near-real-time information about the state of your containers and microservices. Health monitoring is critical to multiple aspects of operating microservices and is especially important when orchestrators perform partial application upgrades in phases, as explained later.
 
-Microservices-based applications often use heartbeats or health checks to enable their performance monitors, schedulers, and orchestrators to keep track of the multitude of services. If services cannot send some sort of “I’m alive” signal, either on demand or on a schedule, your application might face risks when you deploy updates, or it might simply detect failures too late and not be able to stop cascading failures that can end up in major outages.
+Microservices-based applications often use heartbeats or health checks to enable their performance monitors, schedulers, and orchestrators to keep track of the multitude of services. If services cannot send some sort of “I’m alive” signal, either on demand or on a schedule, your application might face risks when you deploy updates, or it might just detect failures too late and not be able to stop cascading failures that can end up in major outages.
 
-In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you are using an orchestrator, you can provide health information to your orchestrator’s cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that is customized for your application, you can detect and fix issues for your running application much more easily.
+In the typical model, services send reports about their status, and that information is aggregated to provide an overall view of the state of health of your application. If you're using an orchestrator, you can provide health information to your orchestrator’s cluster, so that the cluster can act accordingly. If you invest in high-quality health reporting that's customized for your application, you can detect and fix issues for your running application much more easily.
 
-## Implementing health checks in ASP.NET Core services
+## Implement health checks in ASP.NET Core services
 
 When developing an ASP.NET Core microservice or web application, you can use the built-in health checks feature that was released in ASP .NET Core 2.2. Like many ASP.NET Core features, health checks come with a set of services and a middleware.
 
@@ -21,7 +21,7 @@ Health check services and middleware are easy to use and provide capabilities th
 
 To use this feature effectively, you need to first configure services in your microservices. Second, you need a front-end application that queries for the health reports. That front-end application could be a custom reporting application, or it could be an orchestrator itself that can react accordingly to the health states.
 
-### Using the HealthChecks feature in your back-end ASP.NET microservices
+### Use the HealthChecks feature in your back-end ASP.NET microservices
 
 In this section, you will learn how the HealthChecks feature is used in a sample ASP.NET Core 2.2 Web API application. Implementation of this feature in a large scale microservices like the eShopOnContainers is explained in the later section. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
 
@@ -119,9 +119,9 @@ The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com
 
 For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 
-![Custom Health Checks implemented using AspNetCore.Diagnostics.HealthChecks NuGet packages](./media/image6.png)
+![Solution explorer view of the Catalog.API project where AspNetCore.Diagnostics.HealthChecks NuGet packages are referenced](./media/image6.png)
 
-**Figure 10-6**. Custom Health Checks implemented in Catalog.API using AspNetCore.Diagnostics.HealthChecks
+**Figure 8-7**. Custom Health Checks implemented in Catalog.API using AspNetCore.Diagnostics.HealthChecks
 
 In the following code, the health check implementations are added for each dependent service and then the middleware is configured:
 
@@ -183,27 +183,27 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 }
 ```
 
-### Querying your microservices to report about their health status
+### Query your microservices to report about their health status
 
-When you’ve configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it’s healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through localhost, as shown in figure 10-7.
+When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `localhost`, as shown in figure 8-8.
 
-![Health Status of a ASP.NET Microservice in JSON](./media/image7.png)
+![Browser view of the JSON response returned by a health check](./media/image7.png)
 
-**Figure 10-7**. Checking health status of a single service from a browser
+**Figure 8-8**. Checking health status of a single service from a browser
 
 In that test, you can see that the `Catalog.API` microservice (running on port 5101) is healthy, returning HTTP status 200 and status information in JSON. The service also checked the health of its SQL Server database dependency and RabbitMQ, so the health check reported itself as healthy.
 
-## Using watchdogs
+## Use watchdogs
 
-A watchdog is a separate service that can watch health and load across services, and report health about the microservices by querying with the HealthChecks library introduced earlier. This can help prevent errors that would not be detected based on the view of a single service. Watchdogs also are a good place to host code that can perform remediation actions for known conditions without user interaction.
+A watchdog is a separate service that can watch health and load across services, and report health about the microservices by querying with the `HealthChecks` library introduced earlier. This can help prevent errors that would not be detected based on the view of a single service. Watchdogs also are a good place to host code that can perform remediation actions for known conditions without user interaction.
 
-The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 10-8. This is the simplest watchdog you could have, since all it does is show the state of the microservices and web applications in eShopOnContainers. Usually, a watchdog also takes actions when it detects unhealthy states.
+The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 8-9. This is the simplest watchdog you could have since it only shows the state of the microservices and web applications in eShopOnContainers. Usually a watchdog also takes actions when it detects unhealthy states.
 
 Fortunately, [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) also provides [AspNetCore.HealthChecks.UI](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI/) NuGet package that can be used to display the health check results from the configured URIs.
 
-![Health Check Status Report created using AspNetCore.HealthChecks.UI](./media/image8.png)
+![Browser view of the WebStatus app, showing the health status of all microservices from eShopOnContainers](./media/image8.png)
 
-**Figure 10-8**. Sample health check report in eShopOnContainers
+**Figure 8-9**. Sample health check report in eShopOnContainers
 
 In summary, this watchdog service queries each microservice’s "/hc" endpoint. This will execute all the health checks defined within it and return an overall health state depending on all those checks. The HealthChecksUI is easy to consume with a few configuration entries and two lines of code that needs to be added into the Startup.cs of the watchdog service.
 
@@ -249,15 +249,15 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 
 ## Health checks when using orchestrators
 
-To monitor the availability of your microservices, orchestrators like Docker Swarm, Kubernetes, and Service Fabric periodically perform health checks by sending requests to test the microservices. When an orchestrator determines that a service/container is unhealthy, it stops routing requests to that instance. It also usually creates a new instance of that container.
+To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. When an orchestrator determines that a service/container is unhealthy, it stops routing requests to that instance. It also usually creates a new instance of that container.
 
 For instance, most orchestrators can use health checks to manage zero-downtime deployments. Only when the status of a service/container changes to healthy will the orchestrator start routing traffic to service/container instances.
 
-Health monitoring is especially important when an orchestrator performs an application upgrade. Some orchestrators (like Azure Service Fabric) update services in phases—for example, they might update one-fifth of the cluster surface for each application upgrade. The set of nodes that is upgraded at the same time is referred to as an *upgrade domain*. After each upgrade domain has been upgraded and is available to users, that upgrade domain must pass health checks before the deployment moves to the next upgrade domain.
+Health monitoring is especially important when an orchestrator performs an application upgrade. Some orchestrators (like Azure Service Fabric) update services in phases—for example, they might update one-fifth of the cluster surface for each application upgrade. The set of nodes that's upgraded at the same time is referred to as an *upgrade domain*. After each upgrade domain has been upgraded and is available to users, that upgrade domain must pass health checks before the deployment moves to the next upgrade domain.
 
 Another aspect of service health is reporting metrics from the service. This is an advanced capability of the health model of some orchestrators, like Service Fabric. Metrics are important when using an orchestrator because they are used to balance resource usage. Metrics also can be an indicator of system health. For example, you might have an application that has many microservices, and each instance reports a requests-per-second (RPS) metric. If one service is using more resources (memory, processor, etc.) than another service, the orchestrator could move service instances around in the cluster to try to maintain even resource utilization.
 
-Note that if you are using Azure Service Fabric, it provides its own [Health Monitoring model](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction), which is more advanced than simple health checks.
+Note that Azure Service Fabric provides its own [Health Monitoring model](/azure/service-fabric/service-fabric-health-introduction), which is more advanced than simple health checks.
 
 ## Advanced monitoring: visualization, analysis, and alerts
 
@@ -265,7 +265,7 @@ The final part of monitoring is visualizing the event stream, reporting on servi
 
 You can use simple custom applications showing the state of your services, like the custom page shown when explaining the [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks). Or you could use more advanced tools like Azure Application Insights to raise alerts based on the stream of events.
 
-Finally, if you're storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
+Finally, if you're storing all the event streams, you can use Microsoft Power BI or other solutions like Kibana or Splunk to visualize the data.
 
 ## Additional resources
 
@@ -273,7 +273,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
     [*https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks*](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks )
 
 -   **Introduction to Service Fabric health monitoring**
-    [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction)
+    [*https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction*](/azure/service-fabric/service-fabric-health-introduction)
 
 -   **Azure Application Insights**
     [*https://azure.microsoft.com/services/application-insights/*](https://azure.microsoft.com/services/application-insights/)

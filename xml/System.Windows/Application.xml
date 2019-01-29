@@ -294,10 +294,8 @@
 ## Examples  
  The following example shows how to process unhandled exceptions by handling the <xref:System.Windows.Application.DispatcherUnhandledException> event.  
   
- [!code-csharp[ApplicationDispatcherUnhandledExceptionSnippets#HandleDispatcherUnhandledExceptionCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationDispatcherUnhandledExceptionSnippets/CSharp/App.xaml.cs#handledispatcherunhandledexceptioncodebehind1)]
- [!code-vb[ApplicationDispatcherUnhandledExceptionSnippets#HandleDispatcherUnhandledExceptionCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationDispatcherUnhandledExceptionSnippets/visualbasic/application.xaml.vb#handledispatcherunhandledexceptioncodebehind1)]  
-[!code-csharp[ApplicationDispatcherUnhandledExceptionSnippets#HandleDispatcherUnhandledExceptionCODEBEHIND2](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationDispatcherUnhandledExceptionSnippets/CSharp/App.xaml.cs#handledispatcherunhandledexceptioncodebehind2)]
-[!code-vb[ApplicationDispatcherUnhandledExceptionSnippets#HandleDispatcherUnhandledExceptionCODEBEHIND2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationDispatcherUnhandledExceptionSnippets/visualbasic/application.xaml.vb#handledispatcherunhandledexceptioncodebehind2)]  
+ [!code-csharp[handling-unhandled-exceptions](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationDispatcherUnhandledExceptionSnippets/CSharp/App.xaml.cs)]
+ [!code-vb[handling-unhandled-exceptions](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ApplicationDispatcherUnhandledExceptionSnippets/visualbasic/application.xaml.vb)]  
   
  ]]></format>
         </remarks>
@@ -1653,19 +1651,18 @@
    
   
 ## Examples  
- This example illustrates how to use [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] together with application-scope resources to create a consistent visual appearance.  
+This example illustrates how to use XAML together with application-scope resources to create a consistent visual appearance. The first example is from *App.xaml*; the second, from *MainWindow.xaml*. 
   
- [!code-xaml[ApplicationResourcesSnippets#ResourcesPropertyXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/App.xaml#resourcespropertyxaml)]  
+[!code-xaml[ApplicationResourcesSnippets#ResourcesPropertyXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/App.xaml#resourcespropertyxaml)]  
   
- [!code-xaml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml#windowbackgroundpropertyxaml1)]  
-[!code-xaml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml#windowbackgroundpropertyxaml2)]  
+[!code-xaml[ApplicationResourcesSnippets#WindowBackgroundPropertyXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ApplicationResourcesSnippets/CS/MainWindow.xaml?highlight=7)]  
   
- The following example shows how to set an application resource in code and XAML.  
+ The following example shows how to set an application resource in code and XAML (in the App.xaml file in a C# WPF project or the Application.xaml file in a Visual Basic WPF project).  
   
- [!code-csharp[HOWTOApplicationModelSnippets#SetApplicationScopeResourceCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/ApplicationPropertiesSnippet.xaml.cs#setapplicationscoperesourcecode)]
- [!code-vb[HOWTOApplicationModelSnippets#SetApplicationScopeResourceCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/visualbasic/applicationpropertiessnippet.xaml.vb#setapplicationscoperesourcecode)]  
+ [!code-csharp[Setting-an-application-resource-in-code](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/ApplicationPropertiesSnippet.xaml.cs#setapplicationscoperesourcecode)]
+ [!code-vb[Setting-an-application-resource-in-code](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/visualbasic/applicationpropertiessnippet.xaml.vb#setapplicationscoperesourcecode)]  
   
- [!code-xaml[HOWTOApplicationModelSnippets#SetApplicationScopeResourceXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/App.xaml#setapplicationscoperesourcexaml)]  
+ [!code-xaml[Setting-an-application-resource-in-XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOApplicationModelSnippets/CSharp/App.xaml?highlight=8-10)]  
   
  The following example shows how to get an application resource in code.  
   

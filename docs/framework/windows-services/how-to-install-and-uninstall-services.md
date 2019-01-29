@@ -1,5 +1,5 @@
 ---
-title: "How to: Install and Uninstall Services"
+title: "How to: Install and uninstall services"
 ms.date: 01/28/2019
 helpviewer_keywords: 
   - "Windows Service applications, deploying"
@@ -14,21 +14,21 @@ ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: "ghogen"
 ---
 # How to: Install and uninstall services
-If you’re developing a Windows service with the .NET Framework, you can quickly install your service application by using the *InstallUtil.exe* command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/en-us/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
+If you’re developing a Windows service with the .NET Framework, you can quickly install your service application by using the *InstallUtil.exe* command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
   
 > [!WARNING]
 >  If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Programs and Features** in Control Panel to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.  
   
- To use the steps in this article, you first need to add a service installer to your Windows service. For more information, see [Walkthrough: Creating a Windows service application in the Component Designer](../windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
+ To use the steps in this article, you first need to add a service installer to your Windows service. For more information, see [Walkthrough: Creating a Windows service app](../windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
   
- You can't run Windows service projects directly from the Visual Studio development environment by pressing F5. The service in the project must be installed before you can run the project.  
+ You can't run Windows service projects directly from the Visual Studio development environment by pressing F5. Before you can run the project, you must install the service in the project.  
   
 > [!TIP]
->  You can launch **Server Explorer** and verify that your service has been installed or uninstalled. For more information, see [How to use Server Explorer in Visual Studio](https://support.microsoft.com/help/316649/how-to-use-the-server-explorer-in-visual-studio-net-and-visual-studio).
+>  You can use **Server Explorer** to verify that you've installed or uninstalled your service. For more information, see [How to use Server Explorer in Visual Studio](https://support.microsoft.com/help/316649/how-to-use-the-server-explorer-in-visual-studio-net-and-visual-studio).
   
 ### Install your service manually  
   
-1.  From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**   
+1.  From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
   
      The Developer Command Prompt for Visual Studio appears. 
   
@@ -44,7 +44,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
 ### Uninstall your service manually  
   
-1. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>** 
+1. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
   
      The Developer Command Prompt for Visual Studio appears.  
   

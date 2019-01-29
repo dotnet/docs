@@ -11,7 +11,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.
 \<bindings>\
 \<netHttpBinding>\
 \<binding>\
-\<security>\
+\<security>
 
 ## Syntax
 

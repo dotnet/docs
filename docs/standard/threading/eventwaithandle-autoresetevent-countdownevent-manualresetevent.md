@@ -1,5 +1,5 @@
 ---
-title: "EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent"
+title: "EventWaitHandle, CountdownEvent, ManualResetEvent"
 ms.date: "09/14/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -10,7 +10,7 @@ ms.assetid: cd94fc34-ac15-427f-b723-a1240a4fab7d
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent
+# EventWaitHandle, CountdownEvent, ManualResetEvent
 
 Event wait handles allow threads to synchronize activities by signaling each other and by waiting on each other's signals. These synchronization events are based on operating system wait handles and can be divided into two types: those that reset automatically when signaled and those that are reset manually.  
   
@@ -20,9 +20,6 @@ Event wait handles are useful in many of the same synchronization scenarios as t
 
  [EventWaitHandle](eventwaithandle.md)  
  The <xref:System.Threading.EventWaitHandle?displayProperty=nameWithType> class can represent either automatic or manual reset events and either local events or named system events.  
-  
- [AutoResetEvent](autoresetevent.md)  
- The <xref:System.Threading.AutoResetEvent?displayProperty=nameWithType> class derives from <xref:System.Threading.EventWaitHandle> and represents a local event that resets automatically.  
   
  [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md)  
  The <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> class derives from <xref:System.Threading.EventWaitHandle> and represents a local event that must be reset manually. The <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> class is a lightweight, faster version that can be used for events within the same process.  

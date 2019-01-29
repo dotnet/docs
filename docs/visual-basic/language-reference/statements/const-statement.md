@@ -93,14 +93,14 @@ Const constantlist
   
  The preceding example uses the <xref:System.Type.ToString%2A> method on the <xref:System.Type> object returned by the [GetType Operator](../../../visual-basic/language-reference/operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.Asc%2A>  
- <xref:Microsoft.VisualBasic.Strings.AscW%2A>  
- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)  
- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)  
- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)  
- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)  
- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+## See also
+- <xref:Microsoft.VisualBasic.Strings.Asc%2A>
+- <xref:Microsoft.VisualBasic.Strings.AscW%2A>
+- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
+- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
+- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)
+- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
+- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)

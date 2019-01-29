@@ -39,8 +39,8 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
       <behaviors>  
         <serviceAuthorization serviceAuthorizationManagerType=  
                   "Samples.MyServiceAuthorizationManager" >  
-          <authorizationPolicies>         
-            <add policyType="Samples.MyAuthorizationPolicy"  
+          <authorizationPolicies>  
+            <add policyType="Samples.MyAuthorizationPolicy" />  
           </authorizationPolicies>  
         </serviceAuthorization>  
       </behaviors>  
@@ -69,8 +69,8 @@ The Identity Model infrastructure in Windows Communication Foundation (WCF) supp
  [!code-csharp[c_CustomAuthPol#5](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customauthpol/cs/c_customauthpol.cs#5)]
  [!code-vb[c_CustomAuthPol#5](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthpol/vb/source.vb#5)]  
   
-## See Also  
- <xref:System.ServiceModel.ServiceAuthorizationManager>  
- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)  
- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)  
- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)
+## See also
+- <xref:System.ServiceModel.ServiceAuthorizationManager>
+- [How to: Compare Claims](../../../../docs/framework/wcf/extending/how-to-compare-claims.md)
+- [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md)
+- [Authorization Policy](../../../../docs/framework/wcf/samples/authorization-policy.md)

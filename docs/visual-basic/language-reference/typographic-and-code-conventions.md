@@ -40,10 +40,10 @@ Visual Basic documentation uses the following typographic and code conventions.
 |`' This is a comment.`<br /><br /> `REM This is also a comment.`|Code comments are introduced by an apostrophe (') or the REM keyword.|  
 |`sampleVar = "This is an " _`<br /><br /> `& "example" _`<br /><br /> `& " of how to continue code."`|A space followed by an underscore ( _) at the end of a line indicates that the statement continues on the following line.|  
   
-## See Also  
- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)  
- [Keywords](../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)  
- [Visual Basic Naming Conventions](../../visual-basic/programming-guide/program-structure/naming-conventions.md)  
- [How to: Break and Combine Statements in Code](../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)  
- [Comments in Code](../../visual-basic/programming-guide/program-structure/comments-in-code.md)
+## See also
+- [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
+- [Keywords](../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Runtime Library Members](../../visual-basic/language-reference/runtime-library-members.md)
+- [Visual Basic Naming Conventions](../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+- [How to: Break and Combine Statements in Code](../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [Comments in Code](../../visual-basic/programming-guide/program-structure/comments-in-code.md)

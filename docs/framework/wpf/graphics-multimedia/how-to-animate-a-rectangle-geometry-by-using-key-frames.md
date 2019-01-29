@@ -28,9 +28,9 @@ This example shows how to animate the <xref:System.Windows.Media.RectangleGeomet
   
  For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012).  
   
-## See Also  
- <xref:System.Windows.Media.RectangleGeometry>  
- <xref:System.Windows.Media.RectangleGeometry.Rect%2A>  
- <xref:System.Windows.Media.Animation.RectAnimationUsingKeyFrames>  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)
+## See also
+- <xref:System.Windows.Media.RectangleGeometry>
+- <xref:System.Windows.Media.RectangleGeometry.Rect%2A>
+- <xref:System.Windows.Media.Animation.RectAnimationUsingKeyFrames>
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Key-Frame How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animation-how-to-topics.md)

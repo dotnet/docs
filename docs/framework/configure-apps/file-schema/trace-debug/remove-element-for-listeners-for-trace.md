@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "remove element"
   - "<remove> element"
 ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
 Removes a listener from the **Listeners** collection.  
@@ -66,9 +64,9 @@ Removes a listener from the **Listeners** collection.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.DefaultTraceListener>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.EventLogTraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.DefaultTraceListener>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.EventLogTraceListener>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

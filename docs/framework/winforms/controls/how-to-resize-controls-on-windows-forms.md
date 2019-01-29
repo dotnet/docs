@@ -26,10 +26,10 @@ You can resize individual controls, and you can resize multiple controls of the 
   
 2.  On the **Format** menu, choose **Make Same Size**, and select one of the four options. The first three commands change the dimensions of the controls to match the first-selected control.  
   
-## See Also  
- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)  
- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)  
- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
- [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)  
- [How to: Resize Windows Forms Using the Designer](https://msdn.microsoft.com/library/3fe57c94-851c-45d7-a6f6-6b85f3c4a104)
+## See also
+- [Windows Forms Controls](../../../../docs/framework/winforms/controls/index.md)
+- [Arranging Controls on Windows Forms](../../../../docs/framework/winforms/controls/arranging-controls-on-windows-forms.md)
+- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](../../../../docs/framework/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+- [Windows Forms Controls by Function](../../../../docs/framework/winforms/controls/windows-forms-controls-by-function.md)
+- [How to: Resize Windows Forms Using the Designer](https://msdn.microsoft.com/library/3fe57c94-851c-45d7-a6f6-6b85f3c4a104)

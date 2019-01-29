@@ -270,6 +270,17 @@ match x, y with
 | x, y -> 1
 ```
 
+It is also commonly accepted to omit parentheses if the tuple is the return value of a function:
+
+```fsharp
+// OK
+let update model msg =
+    match msg with
+    | 1 -> model + 1, []
+    | _ -> model, [ msg ]
+```
+In summary, prefer parenthesized tuple instantiations, but when using tuples for pattern matching or a return value, it is considered fine to avoid parentheses.
+
 ## Formatting discriminated union declarations
 
 Indent `|` in type definition by 4 spaces:
@@ -351,7 +362,7 @@ type PostalAddress =
     
 type MyRecord =
     {
-        SomeField : int
+        SomeField: int
     }
     interface IMyInterface
 ```
@@ -393,7 +404,7 @@ let rainbow =
     
 type MyRecord =
     {
-        SomeField : int
+        SomeField: int
     }
     interface IMyInterface
 
@@ -670,7 +681,7 @@ Object expressions and interfaces should be aligned in the same way with `member
 let comparer =
     { new IComparer<string> with
           member x.Compare(s1, s2) =
-              let rev (s : String) =
+              let rev (s: String) =
                   new String (Array.rev (s.ToCharArray()))
               let reversed = rev s1
               reversed.CompareTo (rev s2) }

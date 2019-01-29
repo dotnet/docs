@@ -32,5 +32,5 @@ In most cases, the garbage collector can determine the best time to perform a co
   
 ## See also
 
-- [Latency Modes](../../../docs/standard/garbage-collection/latency.md)  
+- [Latency Modes](../../../docs/standard/garbage-collection/latency.md)
 - [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

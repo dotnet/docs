@@ -105,5 +105,5 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
     MessageBox::Show(s);  
     ```  
   
-## See Also  
- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+## See also
+- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)

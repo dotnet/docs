@@ -67,8 +67,8 @@ Applies reflection policy to the type of the argument passed to a method.
 ## Remarks  
  The `<Parameter>` element is a child of the [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) element and is used to apply policy to a particular method parameter. The specific method parameter is specified by name rather than by type. At least one attribute that represents a policy type, such as `Activate` or `Dynamic`, must be present.  
   
-## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)

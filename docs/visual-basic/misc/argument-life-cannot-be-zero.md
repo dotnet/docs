@@ -14,5 +14,5 @@ An argument for `Life`, which must be a `Double` that specifies the length of us
   
 -   Check previous operations on variables in the expression, especially those passed into the procedure as arguments from other procedures.  
   
-## See Also  
-  [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+## See also
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

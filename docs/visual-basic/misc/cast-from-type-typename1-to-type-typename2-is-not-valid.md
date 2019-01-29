@@ -12,5 +12,5 @@ An attempt to convert a variable from one type to another is not valid.
   
 1.  Check the types involved in the conversion and make sure you are attempting to convert to a meaningful type.  
   
-## See Also  
- [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+## See also
+- [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)

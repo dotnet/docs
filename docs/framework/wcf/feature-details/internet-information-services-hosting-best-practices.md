@@ -75,6 +75,6 @@ This topic outlines some best practices for hosting Windows Communication Founda
   </system.webServer>  
 ```  
   
-## See Also  
- [Service Hosting Samples](https://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+- [Service Hosting Samples](https://msdn.microsoft.com/library/f703a3f6-0fba-418a-a92f-7ce75ccfa47e)
+- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)

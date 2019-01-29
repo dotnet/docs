@@ -16,7 +16,7 @@ ms.author: "ronpet"
 # Tlbimp.exe (Type Library Importer)
 The Type Library Importer converts the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly. The output of Tlbimp.exe is a binary file (an assembly) that contains runtime metadata for the types defined within the original type library. You can examine this file with tools such as [Ildasm.exe](ildasm-exe-il-disassembler.md).  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
@@ -119,13 +119,13 @@ bool SomeMethod();
 void SomeMethod(out bool x);  
 ```  
   
-## See Also  
- [Tools](index.md)  
- [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)  
- [Importing a Type Library as an Assembly](../interop/importing-a-type-library-as-an-assembly.md)  
- [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))  
- [Ildasm.exe (IL Disassembler)](ildasm-exe-il-disassembler.md)  
- [Sn.exe (Strong Name Tool)](sn-exe-strong-name-tool.md)  
- [Strong-Named Assemblies](../app-domains/strong-named-assemblies.md)  
- [Attributes for Importing Type Libraries into Interop Assemblies](https://msdn.microsoft.com/library/81e587b8-393f-43e1-9add-c4b05e65cbfd(v=vs.100))  
- [Command Prompts](developer-command-prompt-for-vs.md)
+## See also
+- [Tools](index.md)
+- [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)
+- [Importing a Type Library as an Assembly](../interop/importing-a-type-library-as-an-assembly.md)
+- [Type Library to Assembly Conversion Summary](https://msdn.microsoft.com/library/bf3f90c5-4770-4ab8-895c-3ba1055cc958(v=vs.100))
+- [Ildasm.exe (IL Disassembler)](ildasm-exe-il-disassembler.md)
+- [Sn.exe (Strong Name Tool)](sn-exe-strong-name-tool.md)
+- [Strong-Named Assemblies](../app-domains/strong-named-assemblies.md)
+- [Attributes for Importing Type Libraries into Interop Assemblies](https://msdn.microsoft.com/library/81e587b8-393f-43e1-9add-c4b05e65cbfd(v=vs.100))
+- [Command Prompts](developer-command-prompt-for-vs.md)

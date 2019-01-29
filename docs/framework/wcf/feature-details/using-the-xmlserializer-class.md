@@ -199,11 +199,11 @@ Windows Communication Foundation (WCF) can use two different serialization techn
 > [!NOTE]
 >  The `<xmlSerializer useLegacySerializerGeneration="true"/>` switch only works on a machine running .NET Framework 4.5 or later version. The above `appSettings` approach works on all .NET Framework versions.  
   
-## See Also  
- <xref:System.ServiceModel.DataContractFormatAttribute>  
- <xref:System.Runtime.Serialization.DataContractSerializer>  
- <xref:System.Xml.Serialization.XmlSerializer>  
- <xref:System.ServiceModel.MessageHeaderArrayAttribute>  
- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)  
- [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+## See also
+- <xref:System.ServiceModel.DataContractFormatAttribute>
+- <xref:System.Runtime.Serialization.DataContractSerializer>
+- <xref:System.Xml.Serialization.XmlSerializer>
+- <xref:System.ServiceModel.MessageHeaderArrayAttribute>
+- [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)
+- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)

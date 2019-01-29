@@ -12,6 +12,6 @@ The specified `For...Next` control values have different types, and therefore ar
   
 1.  Change the type of one or more of the values so all can be converted to a common type.  
   
-## See Also  
- [Debugging Changes in Visual Basic .NET](https://msdn.microsoft.com/library/0e82bb0d-8bb2-4fe8-87d1-75f24c7cfd75)  
- [For...Next Statement](../../visual-basic/language-reference/statements/for-next-statement.md)
+## See also
+- [Debugging Changes in Visual Basic .NET](https://msdn.microsoft.com/library/0e82bb0d-8bb2-4fe8-87d1-75f24c7cfd75)
+- [For...Next Statement](../../visual-basic/language-reference/statements/for-next-statement.md)

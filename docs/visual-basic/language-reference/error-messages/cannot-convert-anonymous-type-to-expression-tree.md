@@ -42,6 +42,6 @@ End Module
   
 ## See also
 
-[Anonymous Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)  
-[Expression Trees (Visual Basic)](../../programming-guide/concepts/expression-trees/index.md)  
-[How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)](../../programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)  
+- [Anonymous Types (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Expression Trees (Visual Basic)](../../programming-guide/concepts/expression-trees/index.md)
+- [How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)](../../programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md)

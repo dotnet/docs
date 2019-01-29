@@ -36,5 +36,5 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class is the Microsoft .NET Frame
   
 ## See also
 
-- <xref:System.Xml.Xsl.XsltSettings>  
+- <xref:System.Xml.Xsl.XsltSettings>
 - <xref:System.Xml.Xsl.XsltMessageEncounteredEventArgs>

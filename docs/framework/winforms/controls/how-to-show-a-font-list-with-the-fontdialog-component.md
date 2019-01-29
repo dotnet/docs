@@ -70,6 +70,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
     button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.FontDialog>  
- [FontDialog Component](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.FontDialog>
+- [FontDialog Component](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md)

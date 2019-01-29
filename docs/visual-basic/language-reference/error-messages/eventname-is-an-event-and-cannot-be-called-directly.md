@@ -19,5 +19,5 @@ ms.assetid: 4dcfcb8d-a9fa-46a7-a034-29d9ff3a59b3
   
 1.  Use a `RaiseEvent` statement to signal an event and invoke the procedure or procedures that handle it.  
   
-## See Also  
- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)
+## See also
+- [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)

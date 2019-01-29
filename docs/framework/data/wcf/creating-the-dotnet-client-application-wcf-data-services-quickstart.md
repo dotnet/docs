@@ -80,7 +80,7 @@ You have successfully created the client application that accesses the sample No
 
 For more information about accessing an OData feed from a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] application, see [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md).
 
-## See Also
+## See also
 
 - [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
 - [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)

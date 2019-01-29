@@ -34,5 +34,5 @@ class TransactionFlowAttribute : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.TransactionFlowAttribute>
+## See also
+- <xref:System.ServiceModel.TransactionFlowAttribute>

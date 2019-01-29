@@ -40,5 +40,5 @@ In this example, a client is created to use a calculator service and the binding
   
 5.  Compile and run the client.  
   
-## See Also  
- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+## See also
+- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)

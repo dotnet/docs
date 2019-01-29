@@ -99,7 +99,7 @@ ms.author: "mhopkins"
 |<xref:System.Windows.Automation.AutomationElement.FocusedElement%2A>|(Static property) The <xref:System.Windows.Automation.AutomationElement> that has the input focus.|  
 |<xref:System.Windows.Automation.AutomationElement.RootElement%2A>|(Static property) The root <xref:System.Windows.Automation.AutomationElement>.|  
   
-## See Also  
- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)  
- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
+## See also
+- [Caching in UI Automation Clients](../../../docs/framework/ui-automation/caching-in-ui-automation-clients.md)
+- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)

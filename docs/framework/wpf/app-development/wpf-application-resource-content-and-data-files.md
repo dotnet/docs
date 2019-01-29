@@ -53,7 +53,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
  In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], a resource file is a file that is included in an [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)] project as a `Resource` item.  
   
 ```xml  
-<Project "xmlns=http://schemas.microsoft.com/developer/msbuild/2003" ... >  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
     <Resource Include="ResourceFile.xaml" />  
@@ -232,5 +232,5 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ## Rebuilding After Changing Build Type  
  After you change the build type of an application data file, you need to rebuild the entire application to ensure those changes are applied. If you only build the application, the changes are not applied.  
   
-## See Also  
- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+## See also
+- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)

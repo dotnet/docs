@@ -18,9 +18,9 @@ ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
  [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
   
-## See Also  
- <xref:System.Windows.Media.Brushes>  
- <xref:System.Windows.Shapes.Shape>  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## See also
+- <xref:System.Windows.Media.Brushes>
+- <xref:System.Windows.Shapes.Shape>
+- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

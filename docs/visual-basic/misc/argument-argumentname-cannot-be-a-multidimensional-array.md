@@ -12,6 +12,6 @@ The rank of an array argument is greater than 1, but it can only be a one-dimens
   
 -   Change the argument rank to 1.  
   
-## See Also  
- [Arrays in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)  
- [Array dimensions in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)
+## See also
+- [Arrays in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)
+- [Array dimensions in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)

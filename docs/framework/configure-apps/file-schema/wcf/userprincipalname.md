@@ -14,7 +14,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 ## Syntax  
   
 ```xml  
-<userPrincipalName value="String" />  
+<userPrincipalName value="String" />
 ```  
   
 ## Attributes and Elements  
@@ -42,15 +42,15 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
  The following configuration code specifies the UPN of the service to be authenticated by the client.  
   
 ```xml  
-<identity>  
-  <userPrincipalName value="someone@cohowinery.com" />  
-</identity>  
+<identity>
+  <userPrincipalName value="someone@cohowinery.com" />
+</identity>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.IdentityElement>  
- <xref:System.ServiceModel.EndpointAddress>  
- <xref:System.ServiceModel.EndpointAddress.Identity%2A>  
- <xref:System.ServiceModel.UpnEndpointIdentity>  
- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)
+## See also
+- <xref:System.ServiceModel.Configuration.IdentityElement>
+- <xref:System.ServiceModel.EndpointAddress>
+- <xref:System.ServiceModel.EndpointAddress.Identity%2A>
+- <xref:System.ServiceModel.UpnEndpointIdentity>
+- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)

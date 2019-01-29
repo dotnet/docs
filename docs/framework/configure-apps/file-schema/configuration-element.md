@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "configuration element"
   - "container tags, <configuration> element"
 ms.assetid: 2ec1c9dc-2e5c-4ef0-9958-81670ab88449
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # \<configuration> element
@@ -56,4 +54,4 @@ Each configuration file must contain exactly one **\<configuration>** element.
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)

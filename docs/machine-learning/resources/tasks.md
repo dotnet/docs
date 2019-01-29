@@ -1,8 +1,8 @@
 ---
 title: Machine learning tasks - ML.NET
-description: Explore the different machine learning tasks and associated learners that are supported in ML.NET.
+description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
 ms.custom: seodec18
-ms.date: 11/29/2018
+ms.date: 01/15/2019
 author: jralexander
 ---
 # Machine learning tasks in ML.NET
@@ -39,9 +39,10 @@ The following learners are available for binary classification tasks:
 * [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
 * [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
 * [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
-* [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.Runtime.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
-* [LightGbmBinaryTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmBinaryTrainer)
-* [LinearSvm](xref:Microsoft.ML.Trainers.Online.LinearSvm)
+* [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
+* [LightGbmBinaryTrainer](xref:Microsoft.ML.LightGBM.LightGbmBinaryTrainer)
+* [LinearSvmTrainer](xref:Microsoft.ML.Trainers.Online.LinearSvmTrainer)
+* [LogisticRegression](xref:Microsoft.ML.Learners.LogisticRegression)
 * [PriorTrainer](xref:Microsoft.ML.Trainers.PriorTrainer)
 * [RandomTrainer](xref:Microsoft.ML.Trainers.RandomTrainer)
 * [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
@@ -71,9 +72,8 @@ Recommended learners for Multi-class:
 
 The following learners are available for multiclass classification tasks:
 
-* [LightGbmMulticlassTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmMulticlassTrainer)
-* [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Runtime.Learners.MetaMulticlassTrainer%602)
-* [MultiClassClassificationTrainers](xref:Microsoft.ML.Trainers.MultiClassClassificationTrainers)
+* [LightGbmMulticlassTrainer](xref:Microsoft.ML.LightGBM.LightGbmMulticlassTrainer)
+* [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Learners.MetaMulticlassTrainer%602)
 * [MultiClassNaiveBayesTrainer](xref:Microsoft.ML.Trainers.MultiClassNaiveBayesTrainer)
 * [Ova](xref:Microsoft.ML.Trainers.Ova)
 * [Pkpd](xref:Microsoft.ML.Trainers.Pkpd)
@@ -99,18 +99,15 @@ Recommended learners for regression:
 The following learners are available for regression tasks:
 
 * [FastTreeRegressionTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer)
-* [FastTreeRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRegressionFastTreeTrainer)
-* [FastTreeTweedieRegressionFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeTweedieRegressionFastTreeTrainer)
 * [FastTreeTweedieTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer)
-* [LightGbmRegressorTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRegressorTrainer)
-* [LogisticRegression](xref:Microsoft.ML.Runtime.Learners.LogisticRegression)
+* [LightGbmRegressorTrainer](xref:Microsoft.ML.LightGBM.LightGbmRegressorTrainer)
 * [OlsLinearRegressionTrainer](xref:Microsoft.ML.Trainers.HalLearners.OlsLinearRegressionTrainer)
 * [OnlineGradientDescentTrainer](xref:Microsoft.ML.Trainers.Online.OnlineGradientDescentTrainer)
 * [PoissonRegression](xref:Microsoft.ML.Trainers.PoissonRegression)
 * [RegressionGamTrainer](xref:Microsoft.ML.Trainers.FastTree.RegressionGamTrainer)
 * [SdcaRegressionTrainer](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer)
 * [FastTree.SingleTrainer](xref:Microsoft.ML.Trainers.FastTree.SingleTrainer)
-* [LightGBM.SingleTrainer](xref:Microsoft.ML.Runtime.LightGBM.SingleTrainer)
+* [LightGBM.SingleTrainer](xref:Microsoft.ML.LightGBM.SingleTrainer)
 
 ## Clustering
 
@@ -149,15 +146,14 @@ The following learners are available for anomaly detection tasks:
 
 ## Ranking
 
-A ​​​​​​​​​ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria. The ranking labels are { 0, 1, 2, 3, 4 } for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance. ML.NET ranking learners are [machine learned ranking](https://en.wikipedia.org/wiki/Learning_to_rank) based.
+A ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria. The ranking labels are { 0, 1, 2, 3, 4 } for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance. ML.NET ranking learners are [machine learned ranking](https://en.wikipedia.org/wiki/Learning_to_rank) based.
 
 ### Ranking learners
 
 The following learners are available for ranking tasks:
 
-* [FastTreeRankingFastTreeTrainer](xref:Microsoft.ML.Runtime.FastTreeRankingFastTreeTrainer)
 * [FastTreeRankingTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer)
-* [LightGbmRankingTrainer](xref:Microsoft.ML.Runtime.LightGBM.LightGbmRankingTrainer)
+* [LightGbmRankingTrainer](xref:Microsoft.ML.LightGBM.LightGbmRankingTrainer)
 
 ## Recommendation
 

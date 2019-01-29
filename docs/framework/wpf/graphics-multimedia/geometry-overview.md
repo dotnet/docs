@@ -210,14 +210,14 @@ A PathGeometry with multiple figures
   
  See the <xref:System.Windows.Media.Geometry> class for a complete listing of its methods.  
   
-## See Also  
- <xref:System.Windows.Media.Geometry>  
- <xref:System.Windows.Media.PathGeometry>  
- <xref:System.Windows.Shapes.Path>  
- <xref:System.Windows.Media.GeometryDrawing>  
- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)  
- [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)
+## See also
+- <xref:System.Windows.Media.Geometry>
+- <xref:System.Windows.Media.PathGeometry>
+- <xref:System.Windows.Shapes.Path>
+- <xref:System.Windows.Media.GeometryDrawing>
+- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
+- [Drawing Objects Overview](../../../../docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md)

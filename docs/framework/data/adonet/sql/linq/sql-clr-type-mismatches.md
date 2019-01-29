@@ -287,5 +287,5 @@ Where Col1 + Col2 > 4
   
  In addition to semantic differences, it is important to consider impacts to performance when crossing between the SQL Server and CLR type systems. For large data sets, such performance issues can determine whether an application is deployable.  
   
-## See Also  
- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+## See also
+- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)

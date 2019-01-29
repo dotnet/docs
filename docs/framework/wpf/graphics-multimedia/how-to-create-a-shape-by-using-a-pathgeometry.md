@@ -23,8 +23,8 @@ A triangle created with a PathGeometry
   
  This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
   
-## See Also  
- <xref:System.Windows.Shapes.Path>  
- <xref:System.Windows.Media.GeometryDrawing>  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989)
+## See also
+- <xref:System.Windows.Shapes.Path>
+- <xref:System.Windows.Media.GeometryDrawing>
+- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)
+- [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989)

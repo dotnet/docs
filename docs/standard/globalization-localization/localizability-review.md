@@ -69,7 +69,7 @@ The localizability review is an intermediate step in the development of a world-
   
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)  
-- [Localization](../../../docs/standard/globalization-localization/localization.md)  
-- [Globalization](../../../docs/standard/globalization-localization/globalization.md)  
+- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
+- [Localization](../../../docs/standard/globalization-localization/localization.md)
+- [Globalization](../../../docs/standard/globalization-localization/globalization.md)
 - [Resources in Desktop Apps](../../../docs/framework/resources/index.md)

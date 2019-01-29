@@ -19,9 +19,9 @@ When workflow service applications communicate with other services, it is import
  [Troubleshooting Correlation](../../../../docs/framework/wcf/feature-details/troubleshooting-correlation.md)  
  Provides methods for troubleshooting correlation.  
   
-## See Also  
+## See also
 
-- <xref:System.ServiceModel.Activities.CorrelationHandle>  
-- <xref:System.ServiceModel.Activities.Send>  
-- <xref:System.ServiceModel.Activities.Receive>  
-- <xref:System.ServiceModel.CorrelationQuery>  
+- <xref:System.ServiceModel.Activities.CorrelationHandle>
+- <xref:System.ServiceModel.Activities.Send>
+- <xref:System.ServiceModel.Activities.Receive>
+- <xref:System.ServiceModel.CorrelationQuery>

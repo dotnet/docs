@@ -49,12 +49,12 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
     Public Static newCustomer As New Customer  
     ```  
   
-## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Statements](../../../../visual-basic/language-reference/statements/index.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)  
- [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
+## See also
+- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)
+- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
+- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+- [Statements](../../../../visual-basic/language-reference/statements/index.md)
+- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)

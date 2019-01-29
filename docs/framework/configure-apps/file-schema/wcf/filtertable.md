@@ -13,10 +13,21 @@ Represents a routing table that contains a list of filters to evaluate messages 
   
 ## Syntax  
   
-```xml
-   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
-```
-
+```xml  
+<routing>
+  <filterTables>
+    <filterTable name="String">
+      <entries>
+        <add backupList="String"
+             endpointName="String"
+             filterName="String"
+             priority="Integer" />
+      </entries>
+    </filterTable>
+  </filterTables>
+</routing>
+```  
+  
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
   
@@ -38,5 +49,5 @@ Represents a routing table that contains a list of filters to evaluate messages 
 |-------------|-----------------|  
 |[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|A configuration section that contains routing tables.|  
   
-## See Also  
- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>    
+## See also
+- <xref:System.ServiceModel.Routing.Configuration.RoutingSection?displayProperty=nameWithType>

@@ -525,7 +525,7 @@ class Program {
 }
 ```
 
-## See Also
+## See also
 
 - [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
 - [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)

@@ -55,5 +55,5 @@ Registers a cache for session tokens with a service or a security token handler 
 </caches>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>
+## See also
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenCache>

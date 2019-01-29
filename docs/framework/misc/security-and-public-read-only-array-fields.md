@@ -19,5 +19,5 @@ Never use read-only public array fields from managed libraries to define the bou
   
  Note that the .NET Framework types do not use the public fields to define boundary types internally.  Instead, the .NET Framework uses separate private fields.  Changing the values of these public fields does not alter the behavior of .NET Framework types.  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

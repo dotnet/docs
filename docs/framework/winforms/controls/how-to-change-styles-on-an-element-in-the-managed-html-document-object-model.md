@@ -69,5 +69,5 @@ You can use styles in HTML to control the appearance of a document and its eleme
  [!code-csharp[ManagedDOMStyles#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/ManagedDOMStyles/CS/StyleGenerator.cs#1)]
  [!code-vb[ManagedDOMStyles#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/ManagedDOMStyles/VB/StyleGenerator.vb#1)]  
   
-## See Also  
- <xref:System.Windows.Forms.HtmlElement>
+## See also
+- <xref:System.Windows.Forms.HtmlElement>

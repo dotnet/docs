@@ -7,8 +7,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "<source> element"
   - "source element"
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;source&gt; Element
 Specifies a trace source that initiates tracing messages.  
@@ -78,6 +76,6 @@ Specifies a trace source that initiates tracing messages.
 </configuration>  
 ```  
   
-## See Also  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)
+## See also
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)

@@ -77,8 +77,8 @@ ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
     customersDataSet1.Tables["Customers"].ColumnChanging += new DataColumnChangeEventHandler(this.Customers_ColumnChanging);  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.DataGrid>  
- <xref:System.Data.DataTable.ColumnChanging>  
- <xref:System.Data.DataRow.SetColumnError%2A>  
- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.DataGrid>
+- <xref:System.Data.DataTable.ColumnChanging>
+- <xref:System.Data.DataRow.SetColumnError%2A>
+- [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)

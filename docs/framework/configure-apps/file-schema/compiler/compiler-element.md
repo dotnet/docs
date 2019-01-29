@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "compiler configuration attributes"
   - "compiler element"
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;compiler&gt; Element
 
@@ -96,7 +94,7 @@ The following example illustrates a typical compiler configuration element:
 </configuration>
 ```
 
-## See Also
+## See also
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>

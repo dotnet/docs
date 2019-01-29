@@ -31,8 +31,8 @@ Implement the <xref:System.ComponentModel.ITypedList> interface to enable discov
   
 -   References to the System.Drawing and System.Windows.Forms assemblies.  
   
-## See Also  
- <xref:System.ComponentModel.ITypedList>  
- <xref:System.ComponentModel.BindingList%601>  
- <xref:System.ComponentModel.IBindingList>  
- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)
+## See also
+- <xref:System.ComponentModel.ITypedList>
+- <xref:System.ComponentModel.BindingList%601>
+- <xref:System.ComponentModel.IBindingList>
+- [Data Binding and Windows Forms](../../../docs/framework/winforms/data-binding-and-windows-forms.md)

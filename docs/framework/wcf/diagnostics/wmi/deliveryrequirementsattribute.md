@@ -50,5 +50,5 @@ class DeliveryRequirementsAttribute : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.DeliveryRequirementsAttribute>
+## See also
+- <xref:System.ServiceModel.DeliveryRequirementsAttribute>

@@ -36,5 +36,5 @@ You can delete directories and files within an isolated storage file. Within a s
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>
 - [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

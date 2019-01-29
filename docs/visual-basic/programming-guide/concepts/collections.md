@@ -566,13 +566,13 @@ End Function
   
 ## See also
 
-- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)  
-- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)  
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
-- [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)  
-- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)  
-- [Collections and Data Structures](../../../standard/collections/index.md)  
-- [Creating and Manipulating Collections](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)  
-- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)  
-- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)  
+- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
+- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [LINQ to Objects (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+- [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)
+- [Collections and Data Structures](../../../standard/collections/index.md)
+- [Creating and Manipulating Collections](https://msdn.microsoft.com/library/2065398e-eb1a-4821-9188-75f16e42e069)
+- [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)
+- [Comparisons and Sorts Within Collections](../../../standard/collections/comparisons-and-sorts-within-collections.md)
 - [When to Use Generic Collections](../../../standard/collections/when-to-use-generic-collections.md)

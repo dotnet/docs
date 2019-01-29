@@ -136,8 +136,8 @@ OracleConnection nwindConn = new OracleConnection("Data Source=MyOracleServer;In
 nwindConn.Open();  
 ```  
   
-## See Also  
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)  
- [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
+- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
+- [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

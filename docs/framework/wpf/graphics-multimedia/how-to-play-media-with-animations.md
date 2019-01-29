@@ -18,13 +18,13 @@ This example shows how to play media and animations at the same time by using th
   
  [!code-xaml[MediaGallery_snippet#MediaTimelinePlusAnimationExampleWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MediaGallery_snippet/CSharp/MediaTimelinePlusAnimationExample.xaml#mediatimelineplusanimationexamplewholepage)]  
   
-## See Also  
- <xref:System.Windows.Media.MediaTimeline>  
- <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>  
- <xref:System.Windows.Media.Animation.Storyboard>  
- <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/audio-and-video-how-to-topics.md)  
- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)  
- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)  
- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## See also
+- <xref:System.Windows.Media.MediaTimeline>
+- <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>
+- <xref:System.Windows.Media.Animation.Storyboard>
+- <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>
+- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/audio-and-video-how-to-topics.md)
+- [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md)
+- [Key-Frame Animations Overview](../../../../docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md)
+- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

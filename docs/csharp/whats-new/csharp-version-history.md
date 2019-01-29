@@ -23,7 +23,7 @@ The C# build tools consider the latest major language release the default langua
 
 ## C# version 1.0
 
-When you go back and look, C# version 1.0 looked a lot like Java. As [part of its stated design goals for ECMA](http://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general-purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
+When you go back and look, C# version 1.0 looked a lot like Java. As [part of its stated design goals for ECMA](https://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general-purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
 
 But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacked the built-in async capabilities and some of the slick functionality around generics you take for granted. As a matter of fact, it lacked generics altogether.  And [LINQ](../linq/index.md)? Not available yet. Those additions would take some years to come out.
 
@@ -163,7 +163,6 @@ Other features included:
 
 - [Discards](./csharp-7.md#discards)
 - [Binary Literals and Digit Separators](./csharp-7.md#numeric-literal-syntax-improvements)
-- [Ref returns and locals](./csharp-7.md#ref-locals-and-returns)
 - [Throw expressions](./csharp-7.md#throw-expressions)
 
 All of these features offer cool new capabilities for developers and the opportunity to write even cleaner code than ever. A highlight is condensing the declaration of variables to use with the `out` keyword and by allowing multiple return values via tuple.

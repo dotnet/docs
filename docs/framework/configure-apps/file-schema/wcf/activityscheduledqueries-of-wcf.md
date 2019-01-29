@@ -23,8 +23,8 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
     <trackingProfile name="Name">
       <workflow>
         <activityScheduledQueries>
-          <activityScheduledQuery activityName="String"   
-                                  childActivityName="String"/>
+          <activityScheduledQuery activityName="String"
+                                  childActivityName="String" />
         </activityScheduledQueries>
       </workflow>
     </trackingProfile>
@@ -52,7 +52,7 @@ None.
 |-------------|-----------------|  
 |[\<workflow>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflow.md)|A configuration element that contains all queries for a specific workflow identified by the `activityDefinitionId` property.|  
   
-## See also  
+## See also
 
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.ActivityScheduledQueryElementCollection>
 - <xref:System.Activities.Tracking.ActivityScheduledQuery>

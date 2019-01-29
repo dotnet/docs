@@ -15,7 +15,7 @@ Specifies the timeout for a service.
 ## Syntax  
   
 ```xml  
-<serviceTimeouts transactionTimeout="TimeSpan" />  
+<serviceTimeouts transactionTimeout="TimeSpan" />
 ```  
   
 ## Type  
@@ -39,5 +39,5 @@ Specifies the timeout for a service.
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>

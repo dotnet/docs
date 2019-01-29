@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <bindingRedirect> element"
   - "bindingRedirect element"
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;bindingRedirect&gt; Element
 Redirects one assembly version to another.  
@@ -80,7 +78,7 @@ newVersion="new assembly version"/>
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
+## See also
+- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
+- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

@@ -46,8 +46,8 @@ Specifies the class or module that contains the `Sub Main` procedure.
 vbc t2.vb t3.vb -main:Test2  
 ```  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)
+## See also
+- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
+- [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
+- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Main Procedure in Visual Basic](../../../visual-basic/programming-guide/program-structure/main-procedure.md)

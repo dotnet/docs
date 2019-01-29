@@ -453,6 +453,6 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
  For more information, see the "Differences in Serializers" section in [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md).  
   
-## See Also  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)
+## See also
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)

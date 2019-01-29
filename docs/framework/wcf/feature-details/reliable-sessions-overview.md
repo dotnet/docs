@@ -122,5 +122,5 @@ If your scenario has any of the following characteristics, then you must serious
 
 ## See also
 
-[Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
-[WS Reliable Session](../../../../docs/framework/wcf/samples/ws-reliable-session.md)
+- [Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [WS Reliable Session](../../../../docs/framework/wcf/samples/ws-reliable-session.md)

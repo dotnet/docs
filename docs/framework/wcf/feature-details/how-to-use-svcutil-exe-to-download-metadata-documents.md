@@ -40,5 +40,5 @@ You can use Svcutil.exe to download metadata from running services and to save t
 svcutil /t:metadata http://service/metadataEndpoint  
 ```  
   
-## See Also  
- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
+## See also
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

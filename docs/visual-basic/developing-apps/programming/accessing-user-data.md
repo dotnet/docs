@@ -25,5 +25,5 @@ This section contains topics dealing with the `My.User` object and tasks that yo
 |Get the user's domain name, if the application uses Windows authentication|<xref:Microsoft.VisualBasic.ApplicationServices.User.CurrentPrincipal>|  
 |Determine the user's role|<xref:Microsoft.VisualBasic.ApplicationServices.User.IsInRole%2A>|  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.User>
+## See also
+- <xref:Microsoft.VisualBasic.ApplicationServices.User>

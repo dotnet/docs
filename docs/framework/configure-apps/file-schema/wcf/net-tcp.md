@@ -12,28 +12,28 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ## Syntax  
   
 ```xml  
-<configuration>  
-   <system.serviceModel.activation>  
-       <net.tcp listenBacklog="Integer"  
-          maxPendingAccepts="Integer"  
-          maxPendingConnections="Integer"  
-          receiveTimeout="TimeSpan"  
-          teredoEnabled="Boolean">  
-          <allowAccounts>  
-             <!-- LocalSystem account -->   
-             <add securityIdentifier="S-1-5-18"/>  
-             <!-- LocalService account -->   
-             <add securityIdentifier="S-1-5-19"/>  
-             <!-- Administrators account -->   
-             <add securityIdentifier="S-1-5-20"/>  
-             <!-- Network Service account -->   
-             <add securityIdentifier="S-1-5-32-544" />  
-             <!-- IIS_IUSRS account (Vista only)-->   
-             <add securityIdentifier="S-1-5-32-568"/>  
-           </allowAccounts>  
-       </net.tcp>  
-   </system.serviceModel.activation>  
-</configuration>  
+<configuration>
+  <system.serviceModel.activation>
+    <net.tcp listenBacklog="Integer"
+             maxPendingAccepts="Integer"
+             maxPendingConnections="Integer"
+             receiveTimeout="TimeSpan"
+             teredoEnabled="Boolean">
+      <allowAccounts>
+        <!-- LocalSystem account -->
+        <add securityIdentifier="S-1-5-18"/>
+        <!-- LocalService account -->
+        <add securityIdentifier="S-1-5-19"/>
+        <!-- Administrators account -->
+        <add securityIdentifier="S-1-5-20"/>
+        <!-- Network Service account -->
+        <add securityIdentifier="S-1-5-32-544" />
+        <!-- IIS_IUSRS account (Vista only)-->
+        <add securityIdentifier="S-1-5-32-568"/>
+      </allowAccounts>
+    </net.tcp>
+  </system.serviceModel.activation>
+</configuration>
 ```  
   
 ## Type  
@@ -67,7 +67,7 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ## Remarks  
  For more information on port sharing, see [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md).  
   
-## See Also  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>  
- [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)  
- [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)
+## See also
+- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>
+- [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)
+- [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)

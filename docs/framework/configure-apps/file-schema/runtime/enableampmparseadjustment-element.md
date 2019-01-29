@@ -75,6 +75,6 @@ Determines whether date and time parsing methods use an adjusted set of rules to
 |en-US|1/5/2017 4:00:00 AM|4/10/2017 6:00:00 AM|  
 |en-GB|5/1/2017 6:00:00|10/4/2017 6:00:00|  
   
-## See Also  
-- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)  
+## See also
+- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
 - [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)

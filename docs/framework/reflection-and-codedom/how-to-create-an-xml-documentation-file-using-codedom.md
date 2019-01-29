@@ -73,7 +73,7 @@ CodeDOM can be used to create code that generates XML documentation. The process
   
 -   This code example requires the `FullTrust` permission set to execute successfully.  
   
-## See Also  
- [Documenting Your Code with XML](~/docs/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)  
- [XML Documentation Comments](~/docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
- [XML Documentation](/cpp/ide/xml-documentation-visual-cpp)
+## See also
+- [Documenting Your Code with XML](~/docs/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [XML Documentation Comments](~/docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md)
+- [XML Documentation](/cpp/ide/xml-documentation-visual-cpp)

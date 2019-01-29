@@ -67,7 +67,7 @@ Specifies modules to use to request information from network hosts.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.WebRequest>  
-- <xref:System.Net.IWebRequestCreate>  
+## See also
+- <xref:System.Net.WebRequest>
+- <xref:System.Net.IWebRequestCreate>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

@@ -51,6 +51,6 @@ sgen Data.dll
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)  
-- [XML Web Services Overview](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)  
+- [Tools](../../../docs/framework/tools/index.md)
+- [XML Web Services Overview](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)
 - [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

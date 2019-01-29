@@ -56,7 +56,7 @@ This topic describes how to call a workflow service from a workflow console appl
 
 12. Press Ctrl + F5 to launch both the service and the client. The ASP.NET Development Server hosts the service, Internet Explorer displays the WCF help page, and the client workflow application is launched in a console window and displays the string returned from the service ("Hello, world").
 
-## See Also
+## See also
 
 - [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)
 - [How to: Create a Workflow Service with Messaging Activities](../../../../docs/framework/wcf/feature-details/how-to-create-a-workflow-service-with-messaging-activities.md)

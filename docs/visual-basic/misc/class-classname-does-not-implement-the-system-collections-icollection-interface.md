@@ -12,5 +12,5 @@ The class does not implement the `System.Collections.ICollection` interface, whi
   
 1.  Reinstall Visual Studio.  
   
-## See Also  
- <xref:System.Collections.ICollection>
+## See also
+- <xref:System.Collections.ICollection>

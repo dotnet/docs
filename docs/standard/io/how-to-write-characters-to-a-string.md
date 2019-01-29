@@ -31,14 +31,14 @@ The following code examples write characters synchronously and asynchronously fr
   
 ## See also
 
-- <xref:System.IO.StringWriter>  
-- <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>  
-- <xref:System.Text.StringBuilder>  
-- [File and Stream I/O](../../../docs/standard/io/index.md)  
-- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
-- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
-- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- <xref:System.IO.StringWriter>
+- <xref:System.IO.StringWriter.Write%2A?displayProperty=nameWithType>
+- <xref:System.Text.StringBuilder>
+- [File and Stream I/O](../../../docs/standard/io/index.md)
+- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)
+- [How to: Enumerate Directories and Files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)
+- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
+- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
+- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)
+- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)
 - [How to: Read Characters from a String](../../../docs/standard/io/how-to-read-characters-from-a-string.md)

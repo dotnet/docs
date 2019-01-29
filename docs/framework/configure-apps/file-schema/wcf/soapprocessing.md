@@ -13,19 +13,19 @@ Defines the client endpoint behavior used to marshal messages between different 
 &nbsp;&nbsp;&nbsp;&nbsp;**\<endpointBehaviors>**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<behavior>**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<soapProcessing>**
-
-## Syntax
-
-```xml
+  
+## Syntax  
+  
+```xml  
 <soapProcessing processMessages="true|false" />
-```
-
-## Attributes and elements
-
-The following sections describe attributes, child elements, and parent elements.
-
-### Attributes
-
+```  
+  
+## Attributes and elements  
+  
+The following sections describe attributes, child elements, and parent elements.  
+  
+### Attributes  
+  
 |                   | Description |
 | ----------------- | ----------- |
 | `processMessages` | A Boolean value that specifies whether messages should be marshaled between SOAP message versions. |

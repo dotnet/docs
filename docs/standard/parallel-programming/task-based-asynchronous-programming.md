@@ -263,5 +263,5 @@ The Task Parallel Library (TPL) is based on the concept of a *task*, which repre
   
 ## See also
 
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
+- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
 - [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)

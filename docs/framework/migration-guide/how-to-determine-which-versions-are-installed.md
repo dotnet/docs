@@ -191,7 +191,7 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
 - Use the CLR Version Tool (Clrver.exe) to determine which versions of the common language runtime are installed on a computer.
 
-     From a Visual Studio Command Prompt, enter `clrver`. This command produces output similar to the following:
+     From a Developer Command Prompt for Visual Studio, enter `clrver`. This command produces output similar to the following:
 
     ```
     Versions installed on the machine:
@@ -224,6 +224,6 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
 ## See also
 
-[How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)  
-[Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
-[Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)  
+- [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
+- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
+- [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)

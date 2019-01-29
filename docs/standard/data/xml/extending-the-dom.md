@@ -249,4 +249,4 @@ If you are overriding the <xref:System.Xml.XmlDocument.CreateElement%2A> method 
 
 ## See also
 
-- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)  
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

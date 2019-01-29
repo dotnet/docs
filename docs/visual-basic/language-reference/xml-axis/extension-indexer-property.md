@@ -49,9 +49,9 @@ object(index)
   
  `Second phone number: 425-555-0145`  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)
+## See also
+- <xref:System.Xml.Linq.XElement>
+- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
+- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
+- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [XML Value Property](../../../visual-basic/language-reference/xml-axis/xml-value-property.md)

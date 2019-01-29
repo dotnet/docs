@@ -102,7 +102,7 @@ You can access all WPF features from procedural code. Follow these steps to crea
 
 1. Build the application by pressing **F5**.
 
-## See Also
+## See also
 
 - [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)
 - [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)

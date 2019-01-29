@@ -76,8 +76,8 @@ All communication with a Windows Communication Foundation (WCF) service occurs t
   
  If endpoints are explicitly provided, the default endpoints can still be added by calling <xref:System.ServiceModel.ServiceHostBase.AddDefaultEndpoints%2A> on the <xref:System.ServiceModel.ServiceHost> before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
-## See Also  
- <xref:System.ServiceModel.EndpointAddress>  
- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.EndpointAddress>
+- [Service Identity and Authentication](../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
+- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
+- [Hosting](../../../docs/framework/wcf/feature-details/hosting.md)

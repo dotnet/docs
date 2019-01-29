@@ -256,5 +256,5 @@ if (transaction != null)
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transactions\TransactionMessagePropertyUDPTransport`  
   
-## See Also  
- [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)
+## See also
+- [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)

@@ -19,5 +19,5 @@ This section provides information about performance in [!INCLUDE[sqltecxlinq](~/
  [Statically Compiled Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md)  
  Provides performance information about statically compiled queries, in contrast to the parsing and processing that must be done by an XPath expression evaluator.  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

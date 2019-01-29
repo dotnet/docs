@@ -62,5 +62,5 @@ Sets the claim type that specifies the <xref:System.Security.Principal.IIdentity
 </add>  
 ```  
   
-## See Also  
- <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.NameClaimType%2A>
+## See also
+- <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement.NameClaimType%2A>

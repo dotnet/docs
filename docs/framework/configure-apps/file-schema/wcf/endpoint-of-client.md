@@ -13,13 +13,15 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 ## Syntax  
   
 ```xml  
-<endpoint address="String"  
-   behaviorConfiguration="String"  
-   binding="String"  
-   bindingConfiguration="String"  
-   contract="String"   endpointConfiguration="String"   kind="String"  
-   name="String"  
-</endpoint>  
+<endpoint address="String"
+          behaviorConfiguration="String"
+          binding="String"
+          bindingConfiguration="String"
+          contract="String"
+          endpointConfiguration="String"
+          kind="String"
+          name="String">
+</endpoint>
 ```  
   
 ## Attributes and Elements  
@@ -55,19 +57,19 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
  This is an example of a channel endpoint configuration.  
   
 ```xml  
-<endpoint address="/HelloWorld/"  
-    bindingConfiguration="usingDefaults"  
-    name="MyBinding"  
-    binding="customBinding"  
-    contract="HelloWorld">  
-</endpoint>  
+<endpoint address="/HelloWorld/"
+          bindingConfiguration="usingDefaults"
+          name="MyBinding"
+          binding="customBinding"
+          contract="HelloWorld">
+</endpoint>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>  
- <xref:System.ServiceModel.Configuration.ClientSection>  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>  
- <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>  
- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>  
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
+- <xref:System.ServiceModel.Configuration.ClientSection>
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElementCollection>
+- <xref:System.ServiceModel.Configuration.ClientSection.Endpoints%2A>
+- <xref:System.ServiceModel.Configuration.ChannelEndpointElement>
+- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

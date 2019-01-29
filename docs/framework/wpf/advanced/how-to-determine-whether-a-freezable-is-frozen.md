@@ -19,8 +19,8 @@ This example shows how to determine whether a <xref:System.Windows.Freezable> ob
   
  For more information about <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
-## See Also  
- <xref:System.Windows.Freezable>  
- <xref:System.Windows.Freezable.IsFrozen%2A>  
- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)
+## See also
+- <xref:System.Windows.Freezable>
+- <xref:System.Windows.Freezable.IsFrozen%2A>
+- [Freezable Objects Overview](../../../../docs/framework/wpf/advanced/freezable-objects-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)

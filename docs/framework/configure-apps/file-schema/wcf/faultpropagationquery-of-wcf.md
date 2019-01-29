@@ -19,20 +19,20 @@ For more information on tracking profile queries, see [Tracking Profiles](../../
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
       <workflow>
         <faultPropagationQueries>
           <faultPropagationQuery faultSourceActivityName="String"
-                                 faultHandlerActivityName="String"/>
+                                 faultHandlerActivityName="String" />
         </faultPropagationQueries>
       </workflow>
     </trackingProfile>
   </profiles>
 </tracking>
-```
+```  
   
 ## Attributes and elements
 
@@ -55,8 +55,8 @@ None.
 |-------------|-----------------|  
 |[\<faultPropagationQueries>](faultpropagationqueries-of-wcf.md)|Represents a list of configuration elements that are used to track the handling of faults that occur within an activity.  This event occurs each time a FaultHandler processes a fault.|
   
-## See also  
- 
+## See also
+
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.FaultPropagationQueryElement?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.FaultPropagationQuery?displayProperty=nameWithType>
 - [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)

@@ -17,7 +17,7 @@ The file name that you supplied is not a valid XML file. To specify the allowed 
 
 -   If the XML file has an associated XML Schema, check that the elements appear in the defined structure and that the content of the individual elements conforms to the declared data types specified in the schema.
 
-## See Also
+## See also
 
 - <xref:System.Xml>
 - [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

@@ -134,8 +134,8 @@ extern "C" int MessageBox(HWND hWnd,
                           unsigned int uType);  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.DllImportAttribute>  
- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)  
- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)  
- [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)
+## See also
+- <xref:System.Runtime.InteropServices.DllImportAttribute>
+- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)
+- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)
+- [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)

@@ -222,4 +222,4 @@ As in [!INCLUDE[tsql](../../../../../../includes/tsql-md.md)], group-based aggre
 
 ## See also
 
-[Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)
+- [Canonical Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md)

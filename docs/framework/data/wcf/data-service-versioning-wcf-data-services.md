@@ -67,7 +67,7 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] enables you 
 
  The `DataServices` element of the returned metadata also contains a `DataServiceVersion` attribute, which is the same value as the `DataServiceVersion` header in the response message. Client applications, such as the **Add Service Reference** dialog box in Visual Studio, use this information to generate client data service classes that work correctly with the version of WCF Data Services that host the data service. For more information, see [OData: Protocol Versioning](https://go.microsoft.com/fwlink/?LinkId=186071).
 
-## See Also
+## See also
 
 - [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
 - [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)

@@ -15,17 +15,20 @@ A configuration element for creating a custom binding that enables a client appl
 ## Syntax  
   
 ```xml  
-<discoveryClient discoveryEndpoint="String" >
-  <findCriteria duration="TimeSpan" maxResults="Integer" scopeMatchBy="Uri">
+<discoveryClient discoveryEndpoint="String">
+  <findCriteria duration="TimeSpan"
+                maxResults="Integer"
+                scopeMatchBy="Uri">
     <contractTypeNames>
-      <add name="String" namespace="String" />
-    <contractTypeNames>
+      <add name="String"
+           namespace="String" />
+    </contractTypeNames>
     <extensions />
     <scopes>
       <add scope="URI"/>
     </scopes>
   </findCriteria>
-</discoveryClient>  
+</discoveryClient>
 ```  
   
 ## Attributes and Elements  
@@ -49,6 +52,6 @@ A configuration element for creating a custom binding that enables a client appl
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>  
- <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement>
+## See also
+- <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement>
+- <xref:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement>

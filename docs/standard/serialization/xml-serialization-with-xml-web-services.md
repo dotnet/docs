@@ -253,10 +253,10 @@ public class Order {
   
 ## See also
 
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
-- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)  
-- [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)  
-- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)  
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)  
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)  
+- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
+- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)
+- [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)
+- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)
+- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
+- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)

@@ -47,5 +47,5 @@ typedef enum CorSymSearchPolicyAttributes
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+## See also
+- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)

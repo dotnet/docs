@@ -12,13 +12,13 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <webScriptEndpoint>
-      <standardEndpoint webEndpointType="String"/>
+      <standardEndpoint webEndpointType="String" />
     </webScriptEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -39,6 +39,6 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 |-------------|-----------------|  
 |[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
-## See Also  
- <xref:System.ServiceModel.Description.WebScriptEndpoint>  
- <xref:System.ServiceModel.Configuration.WebScriptEndpointElement>
+## See also
+- <xref:System.ServiceModel.Description.WebScriptEndpoint>
+- <xref:System.ServiceModel.Configuration.WebScriptEndpointElement>

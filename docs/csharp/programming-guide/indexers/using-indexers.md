@@ -69,6 +69,6 @@ The following example declares a class that stores the days of the week. A `get`
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [Indexers](../../../csharp/programming-guide/indexers/index.md)
 - [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)

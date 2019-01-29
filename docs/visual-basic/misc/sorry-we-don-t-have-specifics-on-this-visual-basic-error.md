@@ -3066,6 +3066,6 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Also see:  
  [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  
   
-## See Also  
- [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)  
- [Visual Basic Reference](../../visual-basic/reference/index.md)
+## See also
+- [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)
+- [Visual Basic Reference](../../visual-basic/reference/index.md)

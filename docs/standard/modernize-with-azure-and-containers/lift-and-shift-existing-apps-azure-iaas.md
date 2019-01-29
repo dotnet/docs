@@ -83,7 +83,7 @@ Figure 2-3 shows the execution of multiple VM migrations by using Azure Site Rec
 
 - **Azure Migrate**
 
-    [http://azuremigrationcenter.com/](http://azuremigrationcenter.com/)
+    [https://aka.ms/azuremigrate](https://aka.ms/azuremigrate)
 
 - **Migrate to Azure with Site Recovery**
 

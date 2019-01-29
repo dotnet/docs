@@ -145,8 +145,8 @@ using System.Data.OracleClient;
 |--------------|-----------|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server|Recommended for middle-tier applications that use Microsoft SQL Server.<br /><br /> Recommended for single-tier applications that use Microsoft Database Engine (MSDE) or SQL Server.<br /><br /> Recommended over use of the OLE DB provider for SQL Server (SQLOLEDB) with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for OLE DB|For SQL Server, the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server is recommended instead of this provider.<br /><br /> Recommended for single-tier applications that use Microsoft Access databases. Use of an Access database for a middle-tier application is not recommended.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ``Data Provider for ODBC|Recommended for middle and single-tier applications that use ODBC data sources.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] ``Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC|Recommended for middle and single-tier applications that use ODBC data sources.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|  
   
 ## EntityClient Provider  
  The EntityClient provider is used for accessing data based on an Entity Data Model (EDM). Unlike the other .NET Framework data providers, it does not interact directly with a data source. Instead, it uses Entity SQL to communicate with the underlying data provider. For more information, see [EntityClient and Entity SQL](https://msdn.microsoft.com/library/49202ab9-ac98-4b4b-a05c-140e422bf527).  

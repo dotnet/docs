@@ -265,7 +265,7 @@ interface ITestService
  `OnOpen` calls `innerChannel.Open` to open the inner channel.  
   
 ### OnClose  
- `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped``ManualResetEvent`, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
+ `OnClose` first sets `stopReceive` to `true` to signal the pending `ReceiveChunkLoop` to stop. It then waits for the `receiveStopped` <xref:System.Threading.ManualResetEvent>, which is set when `ReceiveChunkLoop` stops. Assuming the `ReceiveChunkLoop` stops within the specified timeout, `OnClose` calls `innerChannel.Close` with the remaining timeout.  
   
 ### OnAbort  
  `OnAbort` calls `innerChannel.Abort` to abort the inner channel. If there is a pending `ReceiveChunkLoop` it gets an exception from the pending `innerChannel.Receive` call.  

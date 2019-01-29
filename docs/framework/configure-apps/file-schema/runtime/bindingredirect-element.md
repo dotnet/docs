@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <bindingRedirect> element"
   - "bindingRedirect element"
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;bindingRedirect&gt; Element
 Redirects one assembly version to another.  

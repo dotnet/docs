@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<nameEntry> element"
   - "nameEntry element"
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
-author: "mcleblanc"
-ms.author: "markl"
 ---
 # &lt;nameEntry&gt; Element
 Maps a class name to a friendly algorithm name, which allows one class to have many friendly names.  

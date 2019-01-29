@@ -1,7 +1,7 @@
 ---
 title: Load data with many columns from a CSV file for machine learning processing - ML.NET
 description: Learn how to load data data with many columns from a CSV file for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 11/07/2018
+ms.date: 01/28/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data with large numbers of columns from a CSV file so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
@@ -43,4 +43,4 @@ var reader = mlContext.Data.CreateTextReader(
 
 // Now read the file (remember though, readers are lazy, so the actual reading will happen when the data is accessed).
 var data = reader.Read(dataPath);
-```
+```    

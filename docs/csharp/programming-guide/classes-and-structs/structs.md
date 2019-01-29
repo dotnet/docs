@@ -22,8 +22,8 @@ Structs share most of the same syntax as classes. The name of the struct must be
 - Unlike classes, structs can be instantiated without using a `new` operator.  
 - Structs can declare constructors that have parameters. 
 - A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.  
-- A struct can implement interfaces.  
-- A struct can be used as a nullable type and can be assigned a null value.  
+- A struct can implement interfaces. 
+- A struct cannot be `null`, and a struct variable cannot be assigned `null` unless the variable is declared as a nullable type.
   
 ## Related sections  
 

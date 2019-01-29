@@ -7,11 +7,11 @@ ms.assetid: dc41f6f7-cabc-4a64-9fa0-ceabf861b348
 
 Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.md).
 
-\<system.ServiceModel>
-\<bindings>
-\<netHttpBinding>
-\<binding>
-\<security>
+\<system.ServiceModel>\
+\<bindings>\
+\<netHttpBinding>\
+\<binding>\
+\<security>\
 
 ## Syntax
 

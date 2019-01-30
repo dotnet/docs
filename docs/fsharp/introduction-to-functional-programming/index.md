@@ -187,8 +187,8 @@ let addOneIfOdd input =
 
     result
 
-let res1 = addOneIffOdd 1 // Produces 2
-let res2 = addOneIffOdd 2 // Produces 2
+let res1 = addOneIfOdd 1 // Produces 2
+let res2 = addOneIfOdd 2 // Produces 2
 ```
 
 We can replace each function call with the function body, substituting the argument `input` with each value:

@@ -418,7 +418,7 @@ You can create your own authentication service, integrate with Azure AD and OAut
 
 #### Custom Security
 
-Be especially careful about "rolling your own" implementation of cryptography, user membership, or token generation system. There are many commercial and open source alternatives available which will almost certainly have better security than a custom implementation.
+Be especially careful about "rolling your own" implementation of cryptography, user membership, or token generation system. There are many commercial and open-source alternatives available, which will almost certainly have better security than a custom implementation.
 
 
 > ### References – Security

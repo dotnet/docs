@@ -3,7 +3,7 @@ title: .NET Microservices. Architecture for Containerized .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices are modular and independently deployable services. Docker containers (for Linux and Windows) simplify deployment and testing by bundling a service and its dependencies into a single unit, which is then run in an isolated environment.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 08/31/2018
+ms.date: 01/07/2019
 ---
 # .NET Microservices: Architecture for Containerized .NET Applications
 

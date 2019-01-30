@@ -76,7 +76,7 @@ Razor Pages doesn’t use attribute routing. You can specify additional route te
 @page "{id:int}"
 ```
 
-In the above example, the page in question would match a route with an integer id parameter. For example, the Products.cshtml page located in the root of `/Pages` would have this route:
+In the previous example, the page in question would match a route with an integer `id` parameter. For example, the *Products.cshtml* page located in the root of `/Pages` would have this route:
 
 ```csharp
 "/Products/123"

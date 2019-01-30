@@ -1,6 +1,6 @@
 ---
 title: "Working with calendars"
-ms.date: "03/30/2017"
+ms.date: "01/30/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -134,6 +134,38 @@ Calendars typically divide dates into eras. However, the <xref:System.Globalizat
 > [!IMPORTANT]
 >  A new era in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> begins on May 1, 2019. This change affects all applications that use these calendars. See [Handling a new era in the Japanese calendar in .NET](https://blogs.msdn.microsoft.com/dotnet/2018/11/14/handling-a-new-era-in-the-japanese-calendar-in-net/) for more information and to determine whether your applications are affected. See [Prepare your application for the Japanese era change](/windows/uwp/design/globalizing/japanese-era-change) for information on testing your applications on Windows to ensure their readiness for the era change.
 
+An era in most calendars denotes an extremely long time period. In the Gregorian calendar, for example, the current era spans more than two millenia. For the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, the two calendars that support multiple eras, this is not the case. An era corresponds to the period of an emperor's reign. Support for multiple eras, particularly when the upper limit of the current era is unknown, poses special challenges. For more information, 
+
+### Instantiating a date with an era
+
+For the two <xref:System.Globalization.Calendar> classes that support multiple eras, a date that consists of a particular year, month, and day of the month value can be ambiguous, For example, all eras supported by the <xref:System.Globalization.JapaneseCalendar> have years numbered from 1 to 15. Ordinarily, if an era is not specified, both date and time and calendar methods assume that values belong to the current era. To explicitly specify the era when instantiating a date for a <xref:System.Globalization.Calendar> class that supports multiple eras, you can call the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This method enables you to explicitly specify an era along with the calendar's year, month, day, hour, minute, second, and millisecond.
+
+The following example uses the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method to instantiate the same date, the first month of the first day of the second year, in each era supported by the <xref:System.Globalization.JapaneseCalendar> class. It then displays the date in both the Japanese and Gregorian calendars. It also calls a <xref:System.DateTime> constructor to illustrate that methods that create date values without specifying an era create dates in the current era.
+
+[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
+[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
+
+
+### Representing dates in calendars with eras
+
+If a <xref:System.Globalization.Calendar> object supports eras and is the current calendar of a <xref:System.Globalization.CultureInfo> object, the era is included in the string representation of a date and time value for the full date and time, long date, and short date patterns. The following example displays these date patterns when the current culture is Japan (Japanese) and the current calendar is the Japanese calendar.
+
+[!code-csharp[Conceptual.Calendars#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings1.cs#8)]
+[!code-vb[Conceptual.Calendars#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings1.vb#8)]
+
+> [!WARNING]
+> The <xref:System.Globalization.JapaneseCalendar> class is the only calendar class in .NET that both supports dates in more than one era and that can be the current calendar of a <xref:System.Globalization.CultureInfo> object - specifically, of a <xref:System.Globalization.CultureInfo> object that represents the Japanese (Japan) culture.
+
+For all calendars, the "g" custom format specifier includes the era in the result string. The following example uses the "MM-dd-yyyy g" custom format string to include the era in the result string when the current calendar is the Gregorian calendar.
+
+[!code-csharp[Conceptual.Calendars#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings2.cs#9)]
+[!code-vb[Conceptual.Calendars#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings2.vb#9)]
+
+In cases where the string representation of a date is expressed in a calendar that is not the current calendar, the <xref:System.Globalization.Calendar> class includes a <xref:System.Globalization.Calendar.GetEra%2A?displayProperty=nameWithType> method that can be used along with the <xref:System.Globalization.Calendar.GetYear%2A?displayProperty=nameWithType>, <xref:System.Globalization.Calendar.GetMonth%2A?displayProperty=nameWithType>, and <xref:System.Globalization.Calendar.GetDayOfMonth%2A?displayProperty=nameWithType> methods to unambiguously indicate a date as well as the era to which it belongs. The following example uses the <xref:System.Globalization.JapaneseLunisolarCalendar> class to provide an illustration. However, note that including a meaningful name or abbreviation instead of an integer for the era in the result string requires that you instantiate a <xref:System.Globalization.DateTimeFormatInfo> object and make <xref:System.Globalization.JapaneseCalendar> its current calendar. (The <xref:System.Globalization.JapaneseLunisolarCalendar> calendar cannot be the current calendar of any culture, but in this case the two calendars share the same eras.)
+
+[!code-csharp[Conceptual.Calendars#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings3.cs#10)]
+[!code-vb[Conceptual.Calendars#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings3.vb#10)]
+
 ### Eras and era names
 
 In .NET, integers that represent the eras supported by a particular calendar implementation are stored in reverse order in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array. The current era is at index zero, and for <xref:System.Globalization.Calendar> classes that support multiple eras, each successive index reflects the previous era. The static <xref:System.Globalization.Calendar.CurrentEra?displayProperty=nameWithType> property defines the index of the current era in the <xref:System.Globalization.Calendar.Eras%2A?displayProperty=nameWithType> array; it is a constant whose value is always zero. Individual <xref:System.Globalization.Calendar> classes also include static fields that return the value of the current era. They are listed in the following table.
@@ -158,35 +190,6 @@ The name that corresponds to a particular era number can be retrieved by passing
 [!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
 
 In addition, the "g" custom date and time format string includes a calendar's era name in the string representation of a date and time. For more information, see [Custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md).
-
-### Instantiating a date with an era
-
-For the two <xref:System.Globalization.Calendar> classes that support multiple eras, a date that consists of a particular year, month, and day of the month value can be ambiguous, For example, all four eras of the <xref:System.Globalization.JapaneseCalendar> have years numbered from 1 to 15. Ordinarily, if an era is not specified, both date and time and calendar methods assume that values belong to the current era. To explicitly specify the era when instantiating a date for a <xref:System.Globalization.Calendar> class that supports multiple eras, you can call the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method. This method enables you to explicitly specify an era along with the calendar's year, month, day, hour, minute, second, and millisecond.
-
-The following example uses the <xref:System.Globalization.Calendar.ToDateTime%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%29?displayProperty=nameWithType> method to instantiate the same date, the first month of the first day of the second year, in each era supported by the <xref:System.Globalization.JapaneseCalendar> class. It then displays the date in both the Japanese and Gregorian calendars. It also calls a <xref:System.DateTime> constructor to illustrate that methods that create date values without specifying an era create dates in the current era.
-
-[!code-csharp[Conceptual.Calendars#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/instantiatewithera1.cs#7)]
-[!code-vb[Conceptual.Calendars#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/instantiatewithera1.vb#7)]
-
-### Representing dates in calendars with eras
-
-If a <xref:System.Globalization.Calendar> object supports eras and is the current calendar of a <xref:System.Globalization.CultureInfo> object, the era is included in the string representation of a date and time value for the full date and time, long date, and short date patterns. The following example displays these date patterns when the current culture is Japan (Japanese) and the current calendar is the Japanese calendar.
-
-[!code-csharp[Conceptual.Calendars#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings1.cs#8)]
-[!code-vb[Conceptual.Calendars#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings1.vb#8)]
-
-> [!WARNING]
-> The <xref:System.Globalization.JapaneseCalendar> class is the only calendar class in .NET that both supports dates in more than one era and that can be the current calendar of a <xref:System.Globalization.CultureInfo> object - specifically, of a <xref:System.Globalization.CultureInfo> object that represents the Japanese (Japan) culture.
-
-For all calendars, the "g" custom format specifier includes the era in the result string. The following example uses the "MM-dd-yyyy g" custom format string to include the era in the result string when the current calendar is the Gregorian calendar.
-
-[!code-csharp[Conceptual.Calendars#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings2.cs#9)]
-[!code-vb[Conceptual.Calendars#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings2.vb#9)]
-
-In cases where the string representation of a date is expressed in a calendar that is not the current calendar, the <xref:System.Globalization.Calendar> class includes a <xref:System.Globalization.Calendar.GetEra%2A?displayProperty=nameWithType> method that can be used along with the <xref:System.Globalization.Calendar.GetYear%2A?displayProperty=nameWithType>, <xref:System.Globalization.Calendar.GetMonth%2A?displayProperty=nameWithType>, and <xref:System.Globalization.Calendar.GetDayOfMonth%2A?displayProperty=nameWithType> methods to unambiguously indicate a date as well as the era to which it belongs. The following example uses the <xref:System.Globalization.JapaneseLunisolarCalendar> class to provide an illustration. However, note that including a meaningful name or abbreviation instead of an integer for the era in the result string requires that you instantiate a <xref:System.Globalization.DateTimeFormatInfo> object and make <xref:System.Globalization.JapaneseCalendar> its current calendar. (The <xref:System.Globalization.JapaneseLunisolarCalendar> calendar cannot be the current calendar of any culture, but in this case the two calendars share the same eras.)
-
-[!code-csharp[Conceptual.Calendars#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/formatstrings3.cs#10)]
-[!code-vb[Conceptual.Calendars#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/formatstrings3.vb#10)]
 
 ## See also
 

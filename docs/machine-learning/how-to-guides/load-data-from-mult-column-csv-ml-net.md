@@ -1,7 +1,7 @@
 ---
 title: Load data with many columns from a CSV file for machine learning processing - ML.NET
 description: Learn how to load data data with many columns from a CSV file for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 01/28/2019
+ms.date: 01/29/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data with large numbers of columns from a CSV file so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
@@ -14,10 +14,10 @@ When the input file contains many columns of the same type and always used toget
 [Example file](https://github.com/dotnet/machinelearning/tree/master/test/data/generated_regression_dataset.csv):
 
 ```console
--2.75,0.77,-0.61,0.14,1.39,0.38,-0.53,-0.50,-2.13,-0.39,0.46,140.66
--0.61,-0.37,-0.12,0.55,-1.00,0.84,-0.02,1.30,-0.24,-0.50,-2.12,148.12
--0.85,-0.91,1.81,0.02,-0.78,-1.41,-1.09,-0.65,0.90,-0.37,-0.22,402.20
-0.28,1.05,-0.24,0.30,-0.99,0.19,0.32,-0.95,-1.19,-0.63,0.75,443.51
+-2.75;0.77;-0.61;0.14;1.39;0.38;-0.53;-0.50;-2.13;-0.39;0.46;140.66
+-0.61;-0.37;-0.12;0.55;-1.00;0.84;-0.02;1.30;-0.24;-0.50;-2.12;148.12
+-0.85;-0.91;1.81;0.02;-0.78;-1.41;-1.09;-0.65;0.90;-0.37;-0.22;402.20
+0.28;1.05;-0.24;0.30;-0.99;0.19;0.32;-0.95;-1.19;-0.63;0.75;443.51
 ```
 
 Reading this file using `TextLoader`:

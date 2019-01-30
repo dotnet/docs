@@ -1,5 +1,5 @@
 ---
-title: "&lt;compilers&gt; Element"
+title: "<compilers> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compilers"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "compilers element"
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
 ---
-# &lt;compilers&gt; Element
+# \<compilers> Element
 Container for compiler configuration elements; contains zero or more [\<compiler>](../../../../../docs/framework/configure-apps/file-schema/compiler/compiler-element.md) elements.  
   
  \<configuration>  

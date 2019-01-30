@@ -1,5 +1,5 @@
 ---
-title: "&lt;cryptographySettings&gt; Element"
+title: "<cryptographySettings> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<cryptographySettings> element"
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 ---
-# &lt;cryptographySettings&gt; Element
+# \<cryptographySettings> Element
 Contains cryptography settings.  
   
  \<configuration>  

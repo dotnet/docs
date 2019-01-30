@@ -1,5 +1,5 @@
 ---
-title: "&lt;permission&gt; - C# Programming Guide"
+title: "<permission> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "permission C# XML tag"
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 ---
-# &lt;permission&gt; (C# Programming Guide)
+# \<permission> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

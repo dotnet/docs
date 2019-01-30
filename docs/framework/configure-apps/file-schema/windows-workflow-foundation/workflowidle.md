@@ -1,10 +1,10 @@
 ---
-title: "&lt;workflowIdle&gt;"
+title: "<workflowIdle>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: b2ef703c-3e01-4213-9d2e-c14c7dba94d2
 ---
-# &lt;workflowIdle&gt;
+# \<workflowIdle>
 A service behavior that controls when idle workflow instances are unloaded and persisted.  
   
 \<system.ServiceModel>  

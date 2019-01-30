@@ -1,9 +1,9 @@
 ---
-title: "&lt;httpDigest&gt; Element"
+title: "<httpDigest> Element"
 ms.date: "03/30/2017"
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
 ---
-# &lt;httpDigest&gt; Element
+# \<httpDigest> Element
 Specifies a digest type credential used when authenticating the client to a service.  
   
  \<system.ServiceModel>  

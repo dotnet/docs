@@ -1,5 +1,5 @@
 ---
-title: "&lt;etwEnable&gt; Element"
+title: "<etwEnable> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "etwEnable element"
@@ -8,7 +8,7 @@ ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;etwEnable&gt; Element
+# \<etwEnable> Element
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.  
   
  \<configuration> Element  

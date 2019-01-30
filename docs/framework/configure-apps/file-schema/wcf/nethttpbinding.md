@@ -1,9 +1,9 @@
 ---
-title: "&lt;netHttpBinding&gt;"
+title: "<netHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: b0d81ca0-87c5-4090-8baa-e390fd3656d2
 ---
-# &lt;netHttpBinding&gt;
+# \<netHttpBinding>
 Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTP. When used with a duplex contract, Web Sockets will be used, otherwise HTTP will be used.  
   
  \<system.ServiceModel>  

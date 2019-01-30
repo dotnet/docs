@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;"
+title: "<add> Element for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<add> element for <listeners> for <source>"
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
 ---
-# &lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;
+# \<add> Element for \<listeners> for \<source>
 Adds a listener to the `Listeners` collection for a trace source.  
   
  \<configuration>  

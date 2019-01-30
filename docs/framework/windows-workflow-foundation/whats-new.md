@@ -1,12 +1,12 @@
 ---
-title: "What&#39;s New in Windows Workflow Foundation"
+title: "What's New in Windows Workflow Foundation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Workflow Foundation [WF], what's new"
   - "WF [WF], what's new"
 ms.assetid: 11f96014-001e-41a0-bcc2-d0684a52fa43
 ---
-# What&#39;s New in Windows Workflow Foundation
+# What's New in Windows Workflow Foundation
 Windows Workflow Foundation (WF) in [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] changes several development paradigms from previous versions. Workflows are now easier to create, execute, and maintain, and implement a host of new functionality. For more information about migrating .NET 3.0 and .NET 3.5 workflow applications to use the latest version, see [Migration Guidance](../../../docs/framework/windows-workflow-foundation/migration-guidance.md).  
   
 ## Workflow Activity Model  

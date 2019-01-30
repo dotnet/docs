@@ -1,9 +1,9 @@
 ---
-title: "&lt;xmlElement&gt;"
+title: "<xmlElement>"
 ms.date: "03/30/2017"
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
 ---
-# &lt;xmlElement&gt;
+# \<xmlElement>
 Specifies an XML element that is sent in the message body to the Security Token Service when requesting a token.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;mscorlib&gt; Element for Cryptography Settings"
+title: "<mscorlib> Element for Cryptography Settings"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#mscorlib"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<mscorlib> element"
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
 ---
-# &lt;mscorlib&gt; Element for Cryptography Settings
+# \<mscorlib> Element for Cryptography Settings
 Contains the [\<cryptographySettings> element](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptographysettings-element.md).  
   
  \<configuration>  

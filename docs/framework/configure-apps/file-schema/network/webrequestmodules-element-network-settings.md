@@ -1,5 +1,5 @@
 ---
-title: "&lt;webRequestModules&gt; Element (Network Settings)"
+title: "<webRequestModules> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<webRequestModules> element"
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 ---
-# &lt;webRequestModules&gt; Element (Network Settings)
+# \<webRequestModules> Element (Network Settings)
 Specifies modules to use to request information from network hosts.  
   
  \<configuration>  

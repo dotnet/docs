@@ -1,9 +1,9 @@
 ---
-title: "&lt;useRequestHeadersForMetadataAddress&gt;"
+title: "<useRequestHeadersForMetadataAddress>"
 ms.date: "03/30/2017"
 ms.assetid: 679f0eae-f353-44d1-b42d-a9e247509774
 ---
-# &lt;useRequestHeadersForMetadataAddress&gt;
+# \<useRequestHeadersForMetadataAddress>
 Enables the retrieval of metadata address information from the request message headers.  
   
 \<system.ServiceModel>  

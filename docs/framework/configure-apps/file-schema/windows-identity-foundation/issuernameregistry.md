@@ -1,10 +1,10 @@
----
-title: "&lt;issuerNameRegistry&gt;"
+﻿---
+title: "<issuerNameRegistry>"
 ms.date: "03/30/2017"
 ms.assetid: 58b39d12-c953-40c4-88af-d7eb3343ca28
 author: "BrucePerlerMS"
 ---
-# &lt;issuerNameRegistry&gt;
+# \<issuerNameRegistry>
 Configures the issuer name registry that is used by handlers in the token handler collection.  
   
  \<system.identityModel>  

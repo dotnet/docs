@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;filters&gt;"
+title: "<add> of <filters>"
 ms.date: "03/30/2017"
 ms.assetid: e3bf437c-dd99-49f3-9792-9a8721e6eaad
 ---
-# &lt;add&gt; of &lt;filters&gt;
+# \<add> of \<filters>
 A XPath filter that specifies the kind of message to be logged.  
   
  \<system.ServiceModel>  

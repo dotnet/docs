@@ -1,5 +1,5 @@
 ---
-title: "&lt;loadFromRemoteSources&gt; Element"
+title: "<loadFromRemoteSources> Element"
 ms.date: "05/24/2018"
 helpviewer_keywords: 
   - "loadFromRemoteSources element"
@@ -8,7 +8,7 @@ ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;loadFromRemoteSources&gt; element
+# \<loadFromRemoteSources> element
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]

@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;commonParameters&gt;"
+title: "<add> of <commonParameters>"
 ms.date: "03/30/2017"
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
 ---
-# &lt;add&gt; of &lt;commonParameters&gt;
+# \<add> of \<commonParameters>
 Specifies a name-value pair of parameters that are used globally across multiple services. Typically this parameter includes the database connection string that might be shared by durable services.  
   
  \<system.ServiceModel>  

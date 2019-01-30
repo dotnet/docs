@@ -1,9 +1,9 @@
 ---
-title: "&lt;commonParameters&gt;"
+title: "<commonParameters>"
 ms.date: "03/30/2017"
 ms.assetid: ffc20832-34d6-4622-8174-81924fd53514
 ---
-# &lt;commonParameters&gt;
+# \<commonParameters>
 Represents a collection of parameters that are used globally across multiple services. This collection will typically include the database connection string that might be shared by durable services.  
   
  \<system.ServiceModel>  

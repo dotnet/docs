@@ -1,9 +1,9 @@
 ---
-title: "&lt;custom&gt;"
+title: "<custom>"
 ms.date: "03/30/2017"
 ms.assetid: a6f65a00-bd1a-4d4a-955a-fe009ec02ab8
 ---
-# &lt;custom&gt;
+# \<custom>
 Specifies settings for a custom peer resolver service.  
   
 \<system.serviceModel>  

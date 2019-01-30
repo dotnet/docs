@@ -1,5 +1,5 @@
 ---
-title: "&lt; Operator - C# Reference"
+title: "< Operator - C# Reference"
 ms.custom: seodec18
 ms.date: 12/18/2018
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "< operator [C#]"
 ms.assetid: 38cb91e6-79a6-48ec-9c1e-7b71fd8d2b41
 ---
-# &lt; Operator (C# Reference)
+# \< Operator (C# Reference)
 
 The "less than" relational operator `<` returns `true` if its first operand is less than its second operand, `false` otherwise. All numeric and enumeration types support the `<` operator. For operands of the same [enum](../keywords/enum.md) type, the corresponding values of the underlying integral type are compared.
 

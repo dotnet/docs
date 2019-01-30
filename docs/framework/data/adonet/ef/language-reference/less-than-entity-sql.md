@@ -1,9 +1,9 @@
 ---
-title: "&lt; (Less Than) (Entity SQL)"
+title: "< (Less Than) (Entity SQL)"
 ms.date: "03/30/2017"
 ms.assetid: 1fc2a039-3ad6-4b3c-b41d-09932e803f86
 ---
-# &lt; (Less Than) (Entity SQL)
+# \< (Less Than) (Entity SQL)
 Compares two expressions to determine whether the left expression has a value less than the right expression.  
   
 ## Syntax  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceCredentials&gt;"
+title: "<serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 96db336c-4f7a-4193-81a5-910b8ffd804f
 ---
-# &lt;serviceCredentials&gt;
+# \<serviceCredentials>
 Specifies the credential to be used in authenticating the service and the client credential validation-related settings.  
   
  \<system.ServiceModel>  

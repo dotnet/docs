@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceTimeouts&gt;"
+title: "<serviceTimeouts>"
 ms.date: "03/30/2017"
 ms.assetid: ada536cf-97dc-4cd7-89ec-ed1466c1c557
 ---
-# &lt;serviceTimeouts&gt;
+# \<serviceTimeouts>
 Specifies the timeout for a service.  
   
  \<system.ServiceModel>  

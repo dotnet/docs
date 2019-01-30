@@ -1,9 +1,9 @@
----
-title: "&lt;ws2007FederationHttpBinding&gt;"
+﻿---
+title: "<ws2007FederationHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 9af4ec79-cdef-457e-9dca-09d5eb821594
 ---
-# &lt;ws2007FederationHttpBinding&gt;
+# \<ws2007FederationHttpBinding>
 A secure and interoperable binding that derives from [\<wsFederationHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and supports federated security.  
   
  \<system.ServiceModel>  

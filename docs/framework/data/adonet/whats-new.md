@@ -1,9 +1,9 @@
----
-title: "What&#39;s New in ADO.NET"
+﻿---
+title: "What's New in ADO.NET"
 ms.date: "03/30/2017"
 ms.assetid: 3bb65d38-cce2-46f5-b979-e5c505e95e10
 ---
-# What&#39;s New in ADO.NET
+# What's New in ADO.NET
 The following features are new in [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] in the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)].  
   
 ## SqlClient Data Provider  

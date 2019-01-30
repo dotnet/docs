@@ -1,5 +1,5 @@
 ---
-title: "&#39;Module&#39; statements can occur only at file or namespace level"
+title: "'Module' statements can occur only at file or namespace level"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30617"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30617"
 ms.assetid: 5e9de8e5-d26b-4fb2-9e28-814413fe9cef
 ---
-# &#39;Module&#39; statements can occur only at file or namespace level
+# 'Module' statements can occur only at file or namespace level
 `Module` statements must appear at the top of your source file immediately after `Option` and `Imports` statements, global attributes, and namespace declarations, but before all other declarations.  
   
  **Error ID:** BC30617  

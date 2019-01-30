@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for &lt;listeners&gt; for &lt;source&gt;"
+title: "<clear> Element for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/clear"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "clear element for <listeners> for <source>"
 ms.assetid: 76796bb2-9c0b-4526-8135-8bf18b16d8d9
 ---
-# &lt;clear&gt; Element for &lt;listeners&gt; for &lt;source&gt;
+# \<clear> Element for \<listeners> for \<source>
 Clears the `Listeners` collection for a trace source.  
   
  \<configuration>  

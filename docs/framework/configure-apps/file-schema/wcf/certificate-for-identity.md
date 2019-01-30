@@ -1,9 +1,9 @@
 ---
-title: "&lt;certificate&gt; for &lt;identity&gt;"
+title: "<certificate> for <identity>"
 ms.date: "03/30/2017"
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
 ---
-# &lt;certificate&gt; for &lt;identity&gt;
+# \<certificate> for \<identity>
 Specifies an X.509 certificate used to validate a server to a client.  
   
  For more information about setting the element value, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  

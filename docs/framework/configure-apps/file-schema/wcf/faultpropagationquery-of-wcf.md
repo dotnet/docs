@@ -1,9 +1,9 @@
 ---
-title: "&lt;faultPropagationQuery&gt; of WCF"
+title: "<faultPropagationQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: fabafbc8-3e45-4feb-8321-0725e9f4079c
 ---
-# &lt;faultPropagationQuery&gt; of WCF
+# \<faultPropagationQuery> of WCF
 
 Represents a query that is used to track the handling of faults that occur within an activity.  This event occurs each time a FaultHandler processes a fault. You should use such query to track the handling of faults that occur within an activity. The query is necessary for a  tracking participant to subscribe to fault propagation records.  
   

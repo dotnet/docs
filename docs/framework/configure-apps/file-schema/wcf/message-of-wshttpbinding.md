@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;wsHttpBinding&gt;"
+title: "<message> of <wsHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
 ---
-# &lt;message&gt; of &lt;wsHttpBinding&gt;
+# \<message> of \<wsHttpBinding>
 Defines settings for message-level security of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  \<system.ServiceModel>  

@@ -1,10 +1,10 @@
 ---
-title: "&lt;claimTypeRequired&gt;"
+title: "<claimTypeRequired>"
 ms.date: "03/30/2017"
 ms.assetid: c469d71f-6c77-4a24-97aa-53efa126ceef
 author: "BrucePerlerMS"
 ---
-# &lt;claimTypeRequired&gt;
+# \<claimTypeRequired>
 Specifies the set of required claims for incoming security tokens.  
   
  \<system.identityModel>  

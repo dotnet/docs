@@ -1,11 +1,11 @@
 ---
-title: "&lt;Directives&gt; Element (.NET Native)"
+title: "<Directives> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Directives&gt; Element (.NET Native)
+# \<Directives> Element (.NET Native)
 The root element in every runtime directives file for .NET Native.  
   
  `<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">` 

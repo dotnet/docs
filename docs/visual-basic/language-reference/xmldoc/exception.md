@@ -1,12 +1,12 @@
 ---
-title: "&lt;exception&gt; (Visual Basic)"
+title: "<exception> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<exception> XML tag"
   - "exception XML tag"
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
 ---
-# &lt;exception&gt; (Visual Basic)
+# \<exception> (Visual Basic)
 Specifies which exceptions can be thrown.  
   
 ## Syntax  

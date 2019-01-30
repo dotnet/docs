@@ -1,5 +1,5 @@
 ---
-title: "&lt;requestCaching&gt; Element (Network Settings)"
+title: "<requestCaching> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requestCaching"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<requestCaching> element"
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
 ---
-# &lt;requestCaching&gt; Element (Network Settings)
+# \<requestCaching> Element (Network Settings)
 Controls the caching mechanism for network requests.  
   
  \<configuration>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;param&gt; - C# Programming Guide"
+title: "<param> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "param C# XML tag"
 ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 ---
-# &lt;param&gt; (C# Programming Guide)
+# \<param> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

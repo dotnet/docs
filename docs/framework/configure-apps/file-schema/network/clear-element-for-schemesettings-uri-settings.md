@@ -1,9 +1,9 @@
 ---
-title: "&lt;clear&gt; Element for schemeSettings (Uri Settings)"
+title: "<clear> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 65098332-ce61-4542-ab8d-e7dc0257d31f
 ---
-# &lt;clear&gt; Element for schemeSettings (Uri Settings)
+# \<clear> Element for schemeSettings (Uri Settings)
 Clears all existing scheme settings.  
   
  \<configuration>  

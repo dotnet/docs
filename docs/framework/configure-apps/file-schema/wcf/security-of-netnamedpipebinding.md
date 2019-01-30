@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netNamedPipeBinding&gt;"
+title: "<security> of <netNamedPipeBinding>"
 ms.date: "03/30/2017"
 ms.assetid: bb3cb022-637e-49fd-92e8-6766038affa7
 ---
-# &lt;security&gt; of &lt;netNamedPipeBinding&gt;
+# \<security> of \<netNamedPipeBinding>
 Defines the security settings for a binding.  
   
  \<system.ServiceModel>  

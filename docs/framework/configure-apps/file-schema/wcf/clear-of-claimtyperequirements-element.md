@@ -1,9 +1,9 @@
 ---
-title: "&lt;clear&gt; of &lt;claimTypeRequirements&gt; element"
+title: "<clear> of <claimTypeRequirements> element"
 ms.date: "03/30/2017"
 ms.assetid: ef42fde7-f292-4610-9111-9fea382c3b5f
 ---
-# &lt;clear&gt; of &lt;claimTypeRequirements&gt; element
+# \<clear> of \<claimTypeRequirements> element
 Specifies that all the claim types to be removed in the federated credential. This ensures that the collection starts empty.  
   
  \<system.ServiceModel>  

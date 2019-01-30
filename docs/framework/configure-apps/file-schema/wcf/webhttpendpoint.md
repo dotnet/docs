@@ -1,9 +1,9 @@
 ---
-title: "&lt;webHttpEndpoint&gt;"
+title: "<webHttpEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
 ---
-# &lt;webHttpEndpoint&gt;
+# \<webHttpEndpoint>
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) binding that automatically adds the [\<webHttp>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md) behavior. Use this endpoint when writing a REST service.  
   
 \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;gcAllowVeryLargeObjects&gt; Element"
+title: "<gcAllowVeryLargeObjects> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "gcAllowVeryLargeObjects element"
@@ -8,7 +8,7 @@ ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;gcAllowVeryLargeObjects&gt; Element
+# \<gcAllowVeryLargeObjects> Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  
   
  \<configuration> Element  

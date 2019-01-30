@@ -1,12 +1,12 @@
 ---
-title: "&lt;code&gt; (Visual Basic)"
+title: "<code> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "code XML tag"
   - "<code> XML tag"
 ms.assetid: 925e5342-be05-45f2-bf66-7398bbd6710e
 ---
-# &lt;code&gt; (Visual Basic)
+# \<code> (Visual Basic)
 Indicates that the text is multiple lines of code.  
   
 ## Syntax  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element"
+title: "<clientCertificate> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: 3b3fa000-3434-4142-a178-11903bdd2c5d
 ---
-# &lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element
+# \<clientCertificate> of \<clientCredentials> Element
 Defines an X.509 certificate used to authenticate a client to a service.  
   
  \<system.ServiceModel>  

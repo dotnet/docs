@@ -1,5 +1,5 @@
 ---
-title: "Structure &#39;&lt;structurename&gt;&#39; must contain at least one instance member variable or at least one instance event declaration not marked &#39;Custom&#39;"
+title: "Structure '<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30941"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30941"
 ms.assetid: 7054cc1e-bac3-4c3d-82f3-35772bd8dd3b
 ---
-# Structure &#39;&lt;structurename&gt;&#39; must contain at least one instance member variable or at least one instance event declaration not marked &#39;Custom&#39;
+# Structure '\<structurename>' must contain at least one instance member variable or at least one instance event declaration not marked 'Custom'
 A structure definition does not include any nonshared variables or nonshared noncustom events.  
   
  Every structure must have either a variable or an event that applies to each specific instance (nonshared) instead of to all instances collectively ([Shared](../../../visual-basic/language-reference/modifiers/shared.md)). Nonshared constants, properties, and procedures do not satisfy this requirement. In addition, if there are no nonshared variables and only one nonshared event, that event cannot be a `Custom` event.  

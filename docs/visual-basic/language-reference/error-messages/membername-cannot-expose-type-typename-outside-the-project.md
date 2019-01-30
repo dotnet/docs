@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; cannot expose type &#39;&lt;typename&gt;&#39; outside the project through &lt;containertype&gt; &#39;&lt;containertypename&gt;&#39;"
+title: "'<membername>' cannot expose type '<typename>' outside the project through <containertype> '<containertypename>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30909"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30909"
 ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54
 ---
-# &#39;&lt;membername&gt;&#39; cannot expose type &#39;&lt;typename&gt;&#39; outside the project through &lt;containertype&gt; &#39;&lt;containertypename&gt;&#39;
+# '\<membername>' cannot expose type '\<typename>' outside the project through \<containertype> '\<containertypename>'
 A variable, procedure parameter, or function return is exposed outside its container, but it is declared as a type that must not be exposed outside the container.  
   
  The following skeleton code shows a situation that generates this error.  

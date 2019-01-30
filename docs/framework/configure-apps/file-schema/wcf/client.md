@@ -1,12 +1,12 @@
 ---
-title: "&lt;client&gt;"
+title: "<client>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.ServiceModel/client"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#client"
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
 ---
-# &lt;client&gt;
+# \<client>
 The `client` element defines a list of endpoints that a client can connect to.  
   
  \<system.ServiceModel>  

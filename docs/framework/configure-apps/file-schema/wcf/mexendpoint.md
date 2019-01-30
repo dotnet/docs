@@ -1,9 +1,9 @@
 ---
-title: "&lt;mexEndpoint&gt;"
+title: "<mexEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: c9823060-0a5d-4f9d-99d4-4d113b758247
 ---
-# &lt;mexEndpoint&gt;
+# \<mexEndpoint>
 This configuration element defines a standard endpoint with a fixed IMetadataExchange contract. Since all metadata exchange endpoints specify IMetadataExchange as their contract, you can use this standard point instead of defining one for yourself.  
   
  \<system.ServiceModel>  

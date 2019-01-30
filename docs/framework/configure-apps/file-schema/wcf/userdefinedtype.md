@@ -1,9 +1,9 @@
 ---
-title: "&lt;userDefinedType&gt;"
+title: "<userDefinedType>"
 ms.date: "03/30/2017"
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
 ---
-# &lt;userDefinedType&gt;
+# \<userDefinedType>
 Represents a User Defined Type (UDT) that is to be included in the service contract.  
   
  \<system.ServiceModel>  

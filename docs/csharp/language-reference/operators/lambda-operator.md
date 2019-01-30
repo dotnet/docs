@@ -1,5 +1,5 @@
 ---
-title: "=&gt; Operator - C# Reference"
+title: "=> Operator - C# Reference"
 ms.custom: seodec18
 ms.date: 01/22/2019
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
 ---
-# =&gt; operator (C# Reference)
+# => operator (C# Reference)
 
 The `=>` token is supported in two forms: as the lambda operator and as a separator of a member name and the member implementation in an expression body definition.
 

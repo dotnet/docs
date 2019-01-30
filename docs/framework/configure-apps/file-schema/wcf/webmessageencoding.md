@@ -1,9 +1,9 @@
 ---
-title: "&lt;webMessageEncoding&gt;"
+title: "<webMessageEncoding>"
 ms.date: "03/30/2017"
 ms.assetid: 892ca485-e21a-4a44-8e40-633161ef6796
 ---
-# &lt;webMessageEncoding&gt;
+# \<webMessageEncoding>
 Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and "raw" binary content to be read and written when used in a Windows Communication Foundation (WCF) binding.  
   
  \<system.serviceModel>  

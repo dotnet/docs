@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;wsDualHttpBinding&gt;"
+title: "<message> of <wsDualHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
 ---
-# &lt;message&gt; of &lt;wsDualHttpBinding&gt;
+# \<message> of \<wsDualHttpBinding>
 Defines message-level security for the [\<wsDualHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md).  
   
  \<system.ServiceModel>  

@@ -1,12 +1,12 @@
 ---
-title: "&lt;see&gt; (Visual Basic)"
+title: "<see> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "see XML tag"
   - "<see> XML tag"
 ms.assetid: 7e18f60b-ef4a-4678-a797-5eb918635ca9
 ---
-# &lt;see&gt; (Visual Basic)
+# \<see> (Visual Basic)
 Specifies a link to another member.  
   
 ## Syntax  

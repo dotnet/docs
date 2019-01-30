@@ -1,9 +1,9 @@
 ---
-title: "&lt;diagnostics&gt; for Activation"
+title: "<diagnostics> for Activation"
 ms.date: "03/30/2017"
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
 ---
-# &lt;diagnostics&gt; for Activation
+# \<diagnostics> for Activation
 Configures Windows Communication Foundation (WCF) listener's diagnostics functionalities.  
   
  \<system.serviceModel.activation>  

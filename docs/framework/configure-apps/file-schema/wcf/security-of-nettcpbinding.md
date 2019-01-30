@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;netTcpBinding&gt;"
+title: "<security> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 ---
-# &lt;security&gt; of &lt;netTcpBinding&gt;
+# \<security> of \<netTcpBinding>
 Defines the security settings for a binding.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;list&gt; (Visual Basic)"
+title: "<list> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "listheader XML tag"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "<term> XML tag"
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
 ---
-# &lt;list&gt; (Visual Basic)
+# \<list> (Visual Basic)
 Defines a list or table.  
   
 ## Syntax  

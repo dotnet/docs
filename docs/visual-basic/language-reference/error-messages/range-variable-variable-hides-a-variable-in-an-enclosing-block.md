@@ -1,5 +1,5 @@
 ---
-title: "Range variable &lt;variable&gt; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression"
+title: "Range variable <variable> hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc36633"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC36633"
 ms.assetid: 5d5470e4-3de5-49c2-8831-1087625f4a77
 ---
-# Range variable &lt;variable&gt; hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression
+# Range variable \<variable> hides a variable in an enclosing block, a previously defined range variable, or an implicitly declared variable in a query expression
 A range variable name specified in a `Select`, `From`, `Aggregate`, or `Let` clause duplicates the name of a range variable already specified previously in the query, or the name of a variable that is implicitly declared by the query, such as a field name or the name of an aggregate function.  
   
  **Error ID:** BC36633  

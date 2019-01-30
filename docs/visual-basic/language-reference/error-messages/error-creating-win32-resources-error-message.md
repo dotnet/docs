@@ -1,5 +1,5 @@
 ---
-title: "Error creating Win32 resources: &lt;error message&gt;"
+title: "Error creating Win32 resources: <error message>"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30136"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30136"
 ms.assetid: 05a813e4-9d65-4ce8-be8f-7ca20bbba2af
 ---
-# Error creating Win32 resources: &lt;error message&gt;
+# Error creating Win32 resources: \<error message>
 The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error creating an in-memory resource. This might be a problem with the environment, or your computer might be low on memory.  
   
  **Error ID:** BC30136  

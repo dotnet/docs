@@ -1,5 +1,5 @@
 ---
-title: "&lt;trace&gt; Element"
+title: "<trace> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "trace listener, <trace> element"
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
 ---
-# &lt;trace&gt; Element
+# \<trace> Element
 Contains listeners that collect, store, and route tracing messages.  
   
  \<configuration>  

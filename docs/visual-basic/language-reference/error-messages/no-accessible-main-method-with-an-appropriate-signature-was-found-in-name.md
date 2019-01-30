@@ -1,5 +1,5 @@
 ---
-title: "No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39;"
+title: "No accessible 'Main' method with an appropriate signature was found in '<name>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30737"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30737"
 ms.assetid: 3f40bacd-3fac-4741-b204-852f693d4340
 ---
-# No accessible &#39;Main&#39; method with an appropriate signature was found in &#39;&lt;name&gt;&#39;
+# No accessible 'Main' method with an appropriate signature was found in '\<name>'
 Command-line applications must have a `Sub Main` defined. `Main` must be declared as `Public Shared` if it is defined in a class, or as `Public` if defined in a module.  
   
  **Error ID:** BC30737  

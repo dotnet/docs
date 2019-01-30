@@ -1,9 +1,9 @@
 ---
-title: "&lt;msmqIntegration&gt;"
+title: "<msmqIntegration>"
 ms.date: "03/30/2017"
 ms.assetid: ab677405-1ffe-457a-803f-00c1770e51e2
 ---
-# &lt;msmqIntegration&gt;
+# \<msmqIntegration>
 Specifies a MSMQ transport for custom binding.  
   
  \<system.serviceModel>  

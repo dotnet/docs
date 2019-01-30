@@ -1,11 +1,11 @@
 ---
-title: "Line &lt;number&gt; cannot be parsed using the current FieldWidths"
+title: "Line <number> cannot be parsed using the current FieldWidths"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedFixedWidthLine"
 ms.assetid: 84e14245-dfdf-4b62-8b84-e83a31608899
 ---
-# Line &lt;number&gt; cannot be parsed using the current FieldWidths
+# Line \<number> cannot be parsed using the current FieldWidths
 The specified line cannot be parsed because its fields have widths other than those specified.  
   
 ## To correct this error  

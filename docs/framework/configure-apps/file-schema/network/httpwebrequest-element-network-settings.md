@@ -1,5 +1,5 @@
 ---
-title: "&lt;httpWebRequest&gt; Element (Network Settings)"
+title: "<httpWebRequest> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/httpWebRequest"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "httpWebRequest element"
 ms.assetid: 52acd9d2-5bdc-4dc4-9c2a-f0a476ccbb31
 ---
-# &lt;httpWebRequest&gt; Element (Network Settings)
+# \<httpWebRequest> Element (Network Settings)
 Customizes Web request parameters.  
   
  \<configuration>  

@@ -1,5 +1,5 @@
 ---
-title: "&gt;&gt;= operator - C# Reference"
+title: ">>= operator - C# Reference"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - ">>= operator (right-shift assignment) [C#]"
 ms.assetid: b593778c-b9b4-440d-8b29-c1ac22cb81c0
 ---
-# &gt;&gt;= operator (C# Reference)
+# >>= operator (C# Reference)
 
 The right-shift assignment operator.
 

@@ -1,9 +1,9 @@
 ---
-title: "&lt;windows&gt; of &lt;clientCredentials&gt; Element"
+title: "<windows> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
 ---
-# &lt;windows&gt; of &lt;clientCredentials&gt; Element
+# \<windows> of \<clientCredentials> Element
 Specifies the settings for a Windows credential to be used to represent the client.  
   
  \<system.ServiceModel>  

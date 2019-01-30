@@ -1,9 +1,9 @@
 ---
-title: "&lt;peerAuthentication&gt; Element"
+title: "<peerAuthentication> Element"
 ms.date: "03/30/2017"
 ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
 ---
-# &lt;peerAuthentication&gt; Element
+# \<peerAuthentication> Element
 Specifies authentication options for peer-to-peer clients.  
   
  For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md).  

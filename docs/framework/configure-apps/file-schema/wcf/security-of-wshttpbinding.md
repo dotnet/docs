@@ -1,9 +1,9 @@
----
-title: "&lt;security&gt; of &lt;wsHttpBinding&gt;"
+﻿---
+title: "<security> of <wsHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
 ---
-# &lt;security&gt; of &lt;wsHttpBinding&gt;
+# \<security> of \<wsHttpBinding>
 Represents the security capabilities of the [\<wsHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md).  
   
  \<system.ServiceModel>  

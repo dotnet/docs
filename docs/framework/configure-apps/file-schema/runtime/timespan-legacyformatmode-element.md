@@ -1,5 +1,5 @@
 ---
-title: "&lt;TimeSpan_LegacyFormatMode&gt; Element"
+title: "<TimeSpan_LegacyFormatMode> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: 865e7207-d050-4442-b574-57ea29d5e2d6
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;TimeSpan_LegacyFormatMode&gt; Element
+# \<TimeSpan_LegacyFormatMode> Element
 Determines whether the runtime preserves legacy behavior in formatting operations with <xref:System.TimeSpan?displayProperty=nameWithType> values.  
   
  \<configuration>  

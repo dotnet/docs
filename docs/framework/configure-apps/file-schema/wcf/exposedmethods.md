@@ -1,9 +1,9 @@
 ---
-title: "&lt;exposedMethods&gt;"
+title: "<exposedMethods>"
 ms.date: "03/30/2017"
 ms.assetid: 7f21d7ed-b268-498a-9b08-76c38361fd1e
 ---
-# &lt;exposedMethods&gt;
+# \<exposedMethods>
 This section contains a collection of `exposedMethod` elements.  
   
 ## See also

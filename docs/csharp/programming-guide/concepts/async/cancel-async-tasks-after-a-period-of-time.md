@@ -186,12 +186,12 @@ namespace CancelAfterTime
         {
             List<string> urls = new List<string>
             {
-                "https://msdn.microsoft.com",
-                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",
-                "https://msdn.microsoft.com/library/hh290136.aspx",
-                "https://msdn.microsoft.com/library/ee256749.aspx",
-                "https://msdn.microsoft.com/library/ms404677.aspx",
-                "https://msdn.microsoft.com/library/ff730837.aspx"
+				"https://docs.microsoft.com",
+                "https://docs.microsoft.com/previous-versions/windows/apps/br211380(v=win.10)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290136(v=vs.100)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee256749(v=vs.100)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms404677(v=vs.100)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)"
             };
             return urls;
         }

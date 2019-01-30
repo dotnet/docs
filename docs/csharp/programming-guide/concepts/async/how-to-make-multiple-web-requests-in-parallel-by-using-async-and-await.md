@@ -110,11 +110,11 @@ var result = await myTask;
         // Create and start the tasks. As each task finishes, DisplayResults   
         // displays its length.  
         Task<int> download1 =   
-            ProcessURLAsync("https://msdn.microsoft.com", client);  
+            ProcessURLAsync("https://docs.microsoft.com", client);  
         Task<int> download2 =   
-            ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
+            ProcessURLAsync("https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/hh156528(v=vs.110)", client);  
         Task<int> download3 =   
-            ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client);  
+            ProcessURLAsync("https://docs.microsoft.com/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion", client);  
   
         // Await each task.  
         int length1 = await download1;  
@@ -180,11 +180,11 @@ namespace AsyncExample_MultipleTasks
             // Create and start the tasks. As each task finishes, DisplayResults   
             // displays its length.  
             Task<int> download1 =   
-                ProcessURLAsync("https://msdn.microsoft.com", client);  
+                ProcessURLAsync("https://docs.microsoft.com", client);  
             Task<int> download2 =   
-                ProcessURLAsync("https://msdn.microsoft.com/library/hh156528(VS.110).aspx", client);  
+                ProcessURLAsync("https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/hh156528(v=vs.110)", client);  
             Task<int> download3 =   
-                ProcessURLAsync("https://msdn.microsoft.com/library/67w7t67f.aspx", client);  
+                ProcessURLAsync("https://docs.microsoft.com/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion", client);  
   
             // Await each task.  
             int length1 = await download1;  

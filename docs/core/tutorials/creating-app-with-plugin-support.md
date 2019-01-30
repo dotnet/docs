@@ -1,18 +1,18 @@
 ---
-title: Creating a .NET Core application with plugins
+title: Create a .NET Core application with plugins
 description: Learn how to create a .NET Core application that supports plugins.
 author: jkoritzinsky
 ms.author: jekoritz
 ms.date: 01/28/2019
 ---
 
-# Creating a .NET Core application with plugins
+# Create a .NET Core application with plugins
 
 This tutorial shows you how to:
 
 - Structure a project to support plugins.
-- Create a custom <xref:Sytem.Runtime.Loader.AssemblyLoadContext> to load each plugin.
-- Use the <xref:System.Runtime.Loader.AssemblyDependencyResolver> type to allow plugins to have dependencies.
+- Create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load each plugin.
+- Use the `System.Runtime.Loader.AssemblyDependencyResolver` type to allow plugins to have dependencies.
 - Author plugins that can be easily deployed by just copying the build artifacts.
 
 ## Prerequisites
@@ -21,7 +21,11 @@ This tutorial shows you how to:
 
 ## Create the application
 
-The first step is to create the application.  Create a new folder, and in that folder run `dotnet new console -o AppWithPlugin`. Also, to make building the project easier, we will create a Visual Studio Solution file. Run `dotnet new sln` in the same folder to create the solution file. Run `dotnet sln add AppWithPlugin/AppWithPlugin.csproj` to add the app project to the solution. Now we can fill in the skeleton of our application. Replace the code in the `AppWithPlugin/Program.cs` file with the following code:
+The first step is to create the application: 
+1. Create a new folder, and in that folder run `dotnet new console -o AppWithPlugin`. 
+2. To make building the project easier, create a Visual Studio solution file. Run `dotnet new sln` in the same folder. 
+3. Run `dotnet sln add AppWithPlugin/AppWithPlugin.csproj` to add the app project to the solution. 
+Now we can fill in the skeleton of our application. Replace the code in the *AppWithPlugin/Program.cs* file with the following code:
 
 ```csharp
 using PluginBase;
@@ -136,7 +140,7 @@ if (command == null)
 command.Execute();
 ```
 
-And finally, add static methods to the Program class named LoadPlugin and CreateCommands as shown here:
+And finally, add static methods to the `Program` class named `LoadPlugin` and `CreateCommands`, as shown here:
 
 ```csharp
 static Assembly LoadPlugin(string relativePath)
@@ -171,9 +175,9 @@ static IEnumerable<ICommand> CreateCommands(Assembly assembly)
 }
 ```
 
-## Loading plugins
+## Load plugins
 
-Now the application can correctly load and instantiate commands from loaded plugin assemblies, but it is still unable to load the plugin assemblies. Create a file named `PluginLoadContext.cs` in the `AppWithPlugin` folder with the following contents:
+Now the application can correctly load and instantiate commands from loaded plugin assemblies, but it is still unable to load the plugin assemblies. Create a file named *PluginLoadContext.cs* in the *AppWithPlugin* folder with the following contents:
 
 ```csharp
 using System;
@@ -217,7 +221,7 @@ namespace AppWithPlugin
 
 ```
 
-The `PluginLoadContext` type derives from `AssemblyLoadContext`. The `AssemblyLoadContext` type is a special type in the runtime that allows developers to isolate loaded assemblies into different groups to ensure that assembly versions do not conflict. Additionally, a custom `AssemblyLoadContext` can choose different paths to load assemblies from and override the default behavior. The `PluginLoadContext` uses an instance of the new `AssemblyDependencyResolver` type to resolve assembly names to paths. The `AssemblyDependencyResolver` object is constructor with the path to a .NET class library. It resolves assemblies and native libraries to their relative paths based on the `deps.json` file for the class library whose path was passed to the `AssemblyDependencyResolver` constructor. The custom `AssemblyLoadContext` enables plugins to have their own dependencies, and the `AssemblyDependencyResolver` makes it easy to correctly load the dependencies.
+The `PluginLoadContext` type derives from <xref:System.Runtime.Loader.AssemblyLoadContext>. The `AssemblyLoadContext` type is a special type in the runtime that allows developers to isolate loaded assemblies into different groups to ensure that assembly versions do not conflict. Additionally, a custom `AssemblyLoadContext` can choose different paths to load assemblies from and override the default behavior. The `PluginLoadContext` uses an instance of the `AssemblyDependencyResolver` type introduced in .NET Core 3.0 to resolve assembly names to paths. The `AssemblyDependencyResolver` object is constructed with the path to a .NET class library. It resolves assemblies and native libraries to their relative paths based on the *deps.json* file for the class library whose path was passed to the `AssemblyDependencyResolver` constructor. The custom `AssemblyLoadContext` enables plugins to have their own dependencies, and the `AssemblyDependencyResolver` makes it easy to correctly load the dependencies.
 
 Now that the `AppWithPlugin` project has the `PluginLoadContext` type, update the `Program.LoadPlugin` method with the following body:
 
@@ -243,7 +247,11 @@ By using a different `PluginLoadContext` instance for each plugin, the plugins c
 
 ## Create a simple plugin with no dependencies
 
-Back in the root folder, run `dotnet new classlib -o HelloPlugin` and `dotnet sln add HelloPlugin/HelloPlugin.csproj`. Replace the `HelloPlugin/Class1.cs` file with a file named `HelloCommand` with the following contents:
+Back in the root folder, do the following:
+
+1. Run `dotnet new classlib -o HelloPlugin` to create a new class library project named `HelloPlugin`.
+2. Run `dotnet sln add HelloPlugin/HelloPlugin.csproj` to add the project to the `AppWithPlugin` solution. 
+3. Replace the *HelloPlugin/Class1.cs* file with a file named *HelloCommand.cs* with the following contents:
 
 ```csharp
 using PluginBase;
@@ -265,7 +273,7 @@ namespace HelloPlugin
 }
 ```
 
-Now, open the `HelloPlugin.csproj` file. It should look similar to the following:
+Now, open the *HelloPlugin.csproj* file. It should look similar to the following:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -288,7 +296,7 @@ In between the `<Project>` tags, add the following elements:
 </ItemGroup>
 ```
 
-The `<Private>false</Private>` element is very important. This tells MSBuild to not copy `PluginBase.dll` to the output directory for HelloPlugin. If the `PluginBase.dll` assembly is present in the output directory, the `PluginLoadContext` will find the assembly there and load it when it loads the `HelloPlugin.dll` assembly. At this point, the `HelloPlugin.HelloCommand` type will implement the `ICommand` interface from the `PluginBase.dll` in the output directory of the `HelloPlugin` project, not the `ICommand` interface that is loaded into the default load context. Since the runtime sees these two types as different types from different assemblies, the `AppWithPlugin.Program.CreateCommands` method will not find the commands. As a result, the `<Private>false</Private>` metadata is required for the reference to the assembly containing the plugin interfaces.
+The `<Private>false</Private>` element is very important. This tells MSBuild to not copy *PluginBase.dll* to the output directory for HelloPlugin. If the *PluginBase.dll* assembly is present in the output directory, `PluginLoadContext` will find the assembly there and load it when it loads the *HelloPlugin.dll* assembly. At this point, the `HelloPlugin.HelloCommand` type will implement the `ICommand` interface from the *PluginBase.dll* in the output directory of the `HelloPlugin` project, not the `ICommand` interface that is loaded into the default load context. Since the runtime sees these two types as different types from different assemblies, the `AppWithPlugin.Program.CreateCommands` method will not find the commands. As a result, the `<Private>false</Private>` metadata is required for the reference to the assembly containing the plugin interfaces.
 
 Now that the `HelloPlugin` project is complete, we should update the `AppWithPlugin` project to know where the `HelloPlugin` plugin can be found. After the `// Paths to plugins to load` comment, add `@"HelloPlugin\bin\Debug\netcoreapp3.0\HelloPlugin.dll"` as an element of the `pluginPaths` array.
 
@@ -312,8 +320,8 @@ To correctly reference the `A.PluginBase` package, you want to change the `<Pack
 </PackageReference>
 ```
 
-This will prevent the `A.PluginBase` assemblies from being copied to the output directory of your plugin and ensure that your plugin will use A's version of `A.PluginBase`.
+This prevents the `A.PluginBase` assemblies from being copied to the output directory of your plugin and ensures that your plugin will use A's version of `A.PluginBase`.
 
 ## Plugin target framework recommendations
 
-Because plugin dependency loading uses the `deps.json` file, there are some gotchas with it. Specifically, your plugins should target a runtime such as .NET Core 3.0 instead of a version of .NET Standard. The `deps.json` file is generated based on which framework the project is targeting, and since many .NET Standard-compatible packages ship reference assemblies for building against .NET Standard and implementation assemblies for specific runtimes, the `deps.json` may incorrectly not see implementation assemblies or grab the .NET Standard version of an assembly instead of the .NET Core version you may be expecting.
+Because plugin dependency loading uses the *deps.json* file, there are some gotchas with it. Specifically, your plugins should target a runtime, such as .NET Core 3.0, instead of a version of .NET Standard. The `deps.json` file is generated based on which framework the project targets, and since many .NET Standard-compatible packages ship reference assemblies for building against .NET Standard and implementation assemblies for specific runtimes, the `deps.json` may not correctly see implementation assemblies, or it may grab the .NET Standard version of an assembly instead of the .NET Core version you expect.

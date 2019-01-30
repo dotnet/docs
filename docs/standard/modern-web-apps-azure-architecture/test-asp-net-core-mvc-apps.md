@@ -11,7 +11,7 @@ ms.date: 01/30/2019
 > *"If you don't like unit testing your product, most likely your customers won't like to test it, either."*
  > \_- Anonymous-
 
-Software of any complexity can fail in unexpected ways in response to changes. Thus, testing after making changes is required for all but the most trivial (or least critical) applications. Manual testing is the slowest, least reliable, most expensive way to test software. Unfortunately, if applications are not designed to be testable, it can be the only means available. Applications written following the architectural principles laid out in [chapter 4](architecture-principles.md) should be unit testable, and ASP.NET Core applications support automated integration and functional testing as well.
+Software of any complexity can fail in unexpected ways in response to changes. Thus, testing after making changes is required for all but the most trivial (or least critical) applications. Manual testing is the slowest, least reliable, most expensive way to test software. Unfortunately, if applications aren't designed to be testable, it can be the only means available. Applications written following the architectural principles laid out in [chapter 4](architectural-principles.md) should be unit testable, and ASP.NET Core applications support automated integration and functional testing as well.
 
 ## Kinds of automated tests
 

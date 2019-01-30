@@ -13,7 +13,7 @@ ms.author: "ronpet"
 ---
 # Managed threading basics
 
-The first five topics of this section are designed to help you determine when to use managed threading, and to explain some basic features. For information on classes that provide additional features, see [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md) and [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
+The first five topics of this section are designed to help you determine when to use managed threading and to explain some basic features. For information on classes that provide additional features, see [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md) and [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
   
  The rest of the topics in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.  
   

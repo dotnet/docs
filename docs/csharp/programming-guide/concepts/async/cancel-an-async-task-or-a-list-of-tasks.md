@@ -108,7 +108,7 @@ You can download the complete Windows Presentation Foundation (WPF) project from
 
         // GetAsync returns a Task<HttpResponseMessage>.
         // ***The ct argument carries the message if the Cancel button is chosen.
-        HttpResponseMessage response = await client.GetAsync("https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd470362(v=vs.100)", ct);
+        HttpResponseMessage response = await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct);
 
         // Retrieve the website contents from the HttpResponseMessage.
         byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
@@ -166,13 +166,13 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     {
         List<string> urls = new List<string>
         {
-            "https://docs.microsoft.com",
-            "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290138(v=vs.100)",
-            "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290140(v=vs.100)",
-            "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd470362(v=vs.100)",
-            "https://docs.microsoft.com/biztalk/core/glossary5",
-            "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms404677(v=vs.100)",
-            "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)"
+            "https://msdn.microsoft.com",
+            "https://msdn.microsoft.com/library/hh290138.aspx",
+            "https://msdn.microsoft.com/library/hh290140.aspx",
+            "https://msdn.microsoft.com/library/dd470362.aspx",
+            "https://msdn.microsoft.com/library/aa578028.aspx",
+            "https://msdn.microsoft.com/library/ms404677.aspx",
+            "https://msdn.microsoft.com/library/ff730837.aspx"
         };
         return urls;
     }
@@ -341,7 +341,7 @@ namespace CancelATask
 
             // GetAsync returns a Task<HttpResponseMessage>.
             // ***The ct argument carries the message if the Cancel button is chosen.
-            HttpResponseMessage response = await client.GetAsync("https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd470362(v=vs.100)", ct);
+            HttpResponseMessage response = await client.GetAsync("https://msdn.microsoft.com/library/dd470362.aspx", ct);
 
             // Retrieve the website contents from the HttpResponseMessage.
             byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
@@ -469,13 +469,13 @@ namespace CancelAListOfTasks
         {
             List<string> urls = new List<string>
             {
-				"https://docs.microsoft.com",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290138(v=vs.100)",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290140(v=vs.100)",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd470362(v=vs.100)",
-				"https://docs.microsoft.com/biztalk/core/glossary5",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms404677(v=vs.100)",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)"
+                "https://msdn.microsoft.com",
+                "https://msdn.microsoft.com/library/hh290138.aspx",
+                "https://msdn.microsoft.com/library/hh290140.aspx",
+                "https://msdn.microsoft.com/library/dd470362.aspx",
+                "https://msdn.microsoft.com/library/aa578028.aspx",
+                "https://msdn.microsoft.com/library/ms404677.aspx",
+                "https://msdn.microsoft.com/library/ff730837.aspx"
             };
             return urls;
         }

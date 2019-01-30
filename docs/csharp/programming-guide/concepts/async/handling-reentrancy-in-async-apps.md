@@ -673,14 +673,14 @@ private async Task FinishOneGroupAsync(List<string> urls, Task<byte[]>[] content
             {  
                 List<string> urls = new List<string>   
                 {   
-                    "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/hh191443(v=vs.120)",  
-                    "https://docs.microsoft.com/biztalk/core/glossary5",  
-                    "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/jj155761(v=vs.120)",  
-                    "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/hh290140(v=vs.120)",  
-                    "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/hh524395(v=vs.120)",  
-                    "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms404677(v=vs.120)",  
-                    "https://docs.microsoft.com",  
-                    "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)"  
+                    "https://msdn.microsoft.com/library/hh191443.aspx",  
+                    "https://msdn.microsoft.com/library/aa578028.aspx",  
+                    "https://msdn.microsoft.com/library/jj155761.aspx",  
+                    "https://msdn.microsoft.com/library/hh290140.aspx",  
+                    "https://msdn.microsoft.com/library/hh524395.aspx",  
+                    "https://msdn.microsoft.com/library/ms404677.aspx",  
+                    "https://msdn.microsoft.com",  
+                    "https://msdn.microsoft.com/library/ff730837.aspx"  
                 };  
                 return urls;  
             }  

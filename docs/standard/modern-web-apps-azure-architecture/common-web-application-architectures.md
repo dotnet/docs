@@ -81,7 +81,7 @@ As application needs grow, more complex and robust deployment solutions may be r
 
 Internally, this project's organization into multiple projects based on responsibility improves the maintainability of the application.
 
-This unit can be scaled up or out to take advantage of cloud-based on-demand scalability. Scaling up means adding additional CPU, memory, disk space, or other resources to the server(s) hosting your app. Scaling out means adding additional instances of such servers, whether these are physical servers or virtual machines or containers. When your app is hosted across multiple instances, a load balancer is used to assign requests to individual app instances.
+This unit can be scaled up or out to take advantage of cloud-based on-demand scalability. Scaling up means adding additional CPU, memory, disk space, or other resources to the server(s) hosting your app. Scaling out means adding additional instances of such servers, whether these are physical servers, virtual machines, or containers. When your app is hosted across multiple instances, a load balancer is used to assign requests to individual app instances.
 
 The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 shows the appropriate Azure dashboard screen to configure how many instances are serving an app.
 

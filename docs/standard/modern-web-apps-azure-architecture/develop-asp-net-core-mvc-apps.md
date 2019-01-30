@@ -70,7 +70,7 @@ public class ProductsController : Controller
 }
 ```
 
-Razor Pages don’t use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
+Razor Pages doesn’t use attribute routing. You can specify additional route template information for a Razor Page as part of its `@page` directive:
 
 ```csharp
 @page "{id:int}"

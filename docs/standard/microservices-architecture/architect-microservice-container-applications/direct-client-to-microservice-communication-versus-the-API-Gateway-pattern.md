@@ -3,7 +3,7 @@ title: The API gateway pattern versus the direct client-to-microservice communic
 description: Understand the differences and the uses of the API gateway pattern and the direct client-to-microservice communication.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/20/2018
+ms.date: 01/07/2019
 ---
 # The API gateway pattern versus the Direct client-to-microservice communication
 
@@ -128,7 +128,7 @@ There can be many more cross-cutting concerns offered by the API Gateways produc
 
 **Figure 4-14**. Using Azure API Management for your API Gateway
 
-In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. These products act like a reverse proxy for ingress communication, where you can also filter the APIs from the internal microservices and apply authorization to the published APIs in this single tier.
+In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. 
 
 The API Gateway products usually act like a reverse proxy for ingress communication, where you can also filter the APIs from the internal microservices plus apply authorization to the published APIs in this single tier.
 

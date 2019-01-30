@@ -3,7 +3,7 @@ title: Choose between traditional web apps and single page apps
 description: Learn how to choose between traditional web apps and single page applications (SPAs) when building web applications.
 author: ardalis
 ms.author: wiwagn
-ms.date: 6/28/2018
+ms.date: 01/30/2019
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)

@@ -251,12 +251,12 @@ namespace AsyncExampleWPF_WhenAll
                 "https://docs.microsoft.com/previous-versions/windows/apps/br211380(v=win.10)",  
                 "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290136(v=vs.100)",  
                 "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee256749(v=vs.100)",  
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290138(v=vs.100)",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290140(v=vs.100)",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd470362(v=vs.100)",
-				"https://docs.microsoft.com/biztalk/core/glossary5",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms404677(v=vs.100)",
-				"https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)"
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290138(v=vs.100)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/hh290140(v=vs.100)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd470362(v=vs.100)",
+                "https://docs.microsoft.com/biztalk/core/glossary5",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms404677(v=vs.100)",
+                "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ff730837(v=vs.100)"
             };  
             return urls;  
         }  

@@ -90,7 +90,7 @@ In the root folder of the project, run `dotnet new classlib -o PluginBase`. Also
 
 This `ICommand` interface is the interface that all of the plugins will implement.
 
-Now that the `ICommand` interface is defined, the application project can be filled in a little more. Add a reference from the `AppWithPlugin` project to the `PluginBase` project.
+Now that the `ICommand` interface is defined, the application project can be filled in a little more. Add a reference from the `AppWithPlugin` project to the `PluginBase` project with the `dotnet add AppWithPlugin\AppWithPlugin.csproj reference PluginBase\PluginBase.csproj`  command from the root folder.
 
 Replace the `// Load commands from plugins` comment with the following code snippet to enable it to load plugins from given file paths:
 

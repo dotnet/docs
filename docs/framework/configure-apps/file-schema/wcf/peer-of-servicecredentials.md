@@ -1,9 +1,9 @@
 ---
-title: "&lt;peer&gt; of &lt;serviceCredentials&gt;"
+title: "<peer> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
 ---
-# &lt;peer&gt; of &lt;serviceCredentials&gt;
+# \<peer> of \<serviceCredentials>
 Specifies the current credentials for a peer node.  
   
  \<system.ServiceModel>  

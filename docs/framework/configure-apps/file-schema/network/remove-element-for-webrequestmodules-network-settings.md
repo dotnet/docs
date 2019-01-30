@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for webRequestModules (Network Settings)"
+title: "<remove> Element for webRequestModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/remove"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "<webRequestModules>, remove element"
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
 ---
-# &lt;remove&gt; Element for webRequestModules (Network Settings)
+# \<remove> Element for webRequestModules (Network Settings)
 Removes a custom Web request module from the application.  
   
  \<configuration>  

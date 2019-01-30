@@ -1,10 +1,10 @@
----
-title: "&lt;etwTracking&gt;"
+﻿---
+title: "<etwTracking>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: cb45c82e-6ea1-4c4d-924c-118a25ae1f35
 ---
-# &lt;etwTracking&gt;
+# \<etwTracking>
 A service behavior that allows a service to utilize ETW tracking using an <xref:System.Activities.Tracking.EtwTrackingParticipant>.  
   
 \<system.ServiceModel>  

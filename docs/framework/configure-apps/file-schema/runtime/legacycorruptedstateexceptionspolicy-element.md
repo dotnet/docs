@@ -1,5 +1,5 @@
 ---
-title: "&lt;legacyCorruptedStateExceptionsPolicy&gt; Element"
+title: "<legacyCorruptedStateExceptionsPolicy> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<legacyCorruptedStateExceptionsPolicy> element"
@@ -8,7 +8,7 @@ ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;legacyCorruptedStateExceptionsPolicy&gt; Element
+# \<legacyCorruptedStateExceptionsPolicy> Element
 Specifies whether the common language runtime allows managed code to catch access violations and other corrupted state exceptions.  
   
  \<configuration>  

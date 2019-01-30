@@ -1,9 +1,9 @@
 ---
-title: "&lt;messageSenderAuthentication&gt;"
+title: "<messageSenderAuthentication>"
 ms.date: "03/30/2017"
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
 ---
-# &lt;messageSenderAuthentication&gt;
+# \<messageSenderAuthentication>
 Specifies authentication settings for peer certificate used by a message sender.  
   
  \<system.ServiceModel>  

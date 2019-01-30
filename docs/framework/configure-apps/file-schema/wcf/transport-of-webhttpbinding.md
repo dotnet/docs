@@ -1,9 +1,9 @@
----
-title: "&lt;transport&gt; of &lt;webHttpBinding&gt;"
+﻿---
+title: "<transport> of <webHttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: f150fb19-7de1-44af-81f4-86cad881cd05
 ---
-# &lt;transport&gt; of &lt;webHttpBinding&gt;
+# \<transport> of \<webHttpBinding>
 Defines the transport-level security settings for a service endpoint configured to receive HTTP requests.  
   
  \<system.ServiceModel>  

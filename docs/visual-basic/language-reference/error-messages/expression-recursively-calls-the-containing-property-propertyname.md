@@ -1,5 +1,5 @@
 ---
-title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
+title: "Expression recursively calls the containing property '<propertyname>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc42026"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC42026"
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
 ---
-# Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;
+# Expression recursively calls the containing property '\<propertyname>'
 A statement in the `Set` procedure of a property definition stores a value into the name of the property.  
   
  The recommended approach to holding the value of a property is to define a `Private` variable in the property's container and use it in both the `Get` and `Set` procedures. The `Set` procedure should then store the incoming value in this `Private` variable.  

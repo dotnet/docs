@@ -1,10 +1,10 @@
----
-title: "&lt;system.identityModel.services&gt;"
+﻿---
+title: "<system.identityModel.services>"
 ms.date: "03/30/2017"
 ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
 author: "BrucePerlerMS"
 ---
-# &lt;system.identityModel.services&gt;
+# \<system.identityModel.services>
 Configuration section for authentication using the WS-Federation protocol.  
   
  \<system.identityModel.services>  

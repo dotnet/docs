@@ -3,7 +3,7 @@ title: Implement HTTP call retries with exponential backoff with Polly
 description: Learn how to handle HTTP failures with Polly and HttpClientFactory.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/16/2018
+ms.date: 01/07/2019
 ---
 
 # Implement HTTP call retries with exponential backoff with HttpClientFactory and Polly policies
@@ -16,9 +16,9 @@ However, using Polly’s library with your own custom code with HttpClient can b
 
 The following steps show how you can use Http retries with Polly integrated into HttpClientFactory, which is explained in the previous section.
 
-**Reference the ASP.NET Core 2.1 packages**
+**Reference the ASP.NET Core 2.2 packages**
 
-Your project has to be using the ASP.NET Core 2.1 packages from NuGet. You typically need the `AspNetCore` metapackage, and the extension package `Microsoft.Extensions.Http.Polly`.
+`HttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest ASP.NET Core 2.2 packages from NuGet in your project. You typically need the `AspNetCore` metapackage, and the extension package `Microsoft.Extensions.Http.Polly`.
 
 **Configure a client with Polly’s Retry policy, in Startup**
 

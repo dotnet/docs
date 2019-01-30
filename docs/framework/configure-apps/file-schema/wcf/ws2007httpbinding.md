@@ -1,9 +1,9 @@
----
-title: "&lt;ws2007HttpBinding&gt;"
+﻿---
+title: "<ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
 ---
-# &lt;ws2007HttpBinding&gt;
+# \<ws2007HttpBinding>
 Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.  
   
  \<system.serviceModel>  

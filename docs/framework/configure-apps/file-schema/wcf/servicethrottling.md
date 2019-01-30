@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceThrottling&gt;"
+title: "<serviceThrottling>"
 ms.date: "03/30/2017"
 ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
 ---
-# &lt;serviceThrottling&gt;
+# \<serviceThrottling>
 Specifies the throttling mechanism of a Windows Communication Foundation (WCF) service.  
   
  \<system.ServiceModel>  

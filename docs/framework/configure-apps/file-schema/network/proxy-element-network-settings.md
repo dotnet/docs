@@ -1,5 +1,5 @@
 ---
-title: "&lt;proxy&gt; Element (Network Settings)"
+title: "<proxy> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/proxy"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "proxy element"
 ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
 ---
-# &lt;proxy&gt; Element (Network Settings)
+# \<proxy> Element (Network Settings)
 Defines a proxy server.  
   
  \<configuration>  

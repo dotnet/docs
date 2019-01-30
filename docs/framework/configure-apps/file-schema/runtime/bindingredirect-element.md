@@ -1,5 +1,5 @@
 ---
-title: "&lt;bindingRedirect&gt; Element"
+title: "<bindingRedirect> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/bindingRedirect"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "bindingRedirect element"
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
 ---
-# &lt;bindingRedirect&gt; Element
+# \<bindingRedirect> Element
 Redirects one assembly version to another.  
   
  \<configuration>  

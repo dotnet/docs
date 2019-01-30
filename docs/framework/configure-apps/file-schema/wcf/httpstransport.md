@@ -1,9 +1,9 @@
 ---
-title: "&lt;httpsTransport&gt;"
+title: "<httpsTransport>"
 ms.date: "03/30/2017"
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
 ---
-# &lt;httpsTransport&gt;
+# \<httpsTransport>
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
   
  \<system.serviceModel>  

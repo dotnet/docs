@@ -1,5 +1,5 @@
 ---
-title: "&lt;xmlSerializer&gt; Element"
+title: "<xmlSerializer> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<xmlSerializer> element"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "xmlSerializer element"
 ms.assetid: d129d10c-3eb7-45d9-8098-5fa853825e47
 ---
-# &lt;xmlSerializer&gt; Element
+# \<xmlSerializer> Element
 Specifies whether an additional check of progress of the <xref:System.Xml.Serialization.XmlSerializer> is done.  
   
  \<configuration>  

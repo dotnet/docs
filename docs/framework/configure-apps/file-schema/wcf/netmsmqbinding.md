@@ -1,9 +1,9 @@
 ---
-title: "&lt;netMsmqBinding&gt;"
+title: "<netMsmqBinding>"
 ms.date: "03/30/2017"
 ms.assetid: a68b44d7-7799-43a3-9e63-f07c782810a6
 ---
-# &lt;netMsmqBinding&gt;
+# \<netMsmqBinding>
 Defines a queued binding suitable for cross-machine communication.  
   
  \<system.ServiceModel>  

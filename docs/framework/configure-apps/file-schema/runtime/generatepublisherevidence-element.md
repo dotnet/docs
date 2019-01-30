@@ -1,5 +1,5 @@
 ---
-title: "&lt;generatePublisherEvidence&gt; Element"
+title: "<generatePublisherEvidence> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "generatePublisherEvidence element"
@@ -8,7 +8,7 @@ ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;generatePublisherEvidence&gt; Element
+# \<generatePublisherEvidence> Element
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).  
   
  \<configuration>  

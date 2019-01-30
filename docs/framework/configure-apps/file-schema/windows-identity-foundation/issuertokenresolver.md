@@ -1,10 +1,10 @@
 ---
-title: "&lt;issuerTokenResolver&gt;"
+title: "<issuerTokenResolver>"
 ms.date: "03/30/2017"
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65
 author: "BrucePerlerMS"
 ---
-# &lt;issuerTokenResolver&gt;
+# \<issuerTokenResolver>
 Registers the issuer token resolver that is used by handlers in the token handler collection. The issuer token resolver is used to resolve the signing token on incoming tokens and messages.  
   
  \<system.identityModel>  

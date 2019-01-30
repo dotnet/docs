@@ -1,10 +1,10 @@
 ---
-title: "&lt;activityScheduledQuery&gt;"
+title: "<activityScheduledQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: a8bcd6d4-b389-4daf-86bf-1ade85fec114
 ---
-# &lt;activityScheduledQuery&gt;
+# \<activityScheduledQuery>
 Represents a collection of queries that are used to track an activity scheduled for execution by a parent activity. The query is necessary for a tracking participant to subscribe to activity scheduled records.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

@@ -1,11 +1,11 @@
 ---
-title: "&lt;netPeerTcpBinding&gt;"
+title: "<netPeerTcpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "netPeerBinding element"
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 ---
-# &lt;netPeerTcpBinding&gt;
+# \<netPeerTcpBinding>
 Defines a binding for peer channel specific TCP messaging.  
   
  \<system.ServiceModel>  

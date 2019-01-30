@@ -1,11 +1,11 @@
 ---
-title: "&lt;MethodInstantiation&gt; Element (.NET Native)"
+title: "<MethodInstantiation> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;MethodInstantiation&gt; Element (.NET Native)
+# \<MethodInstantiation> Element (.NET Native)
 Applies runtime reflection policy to a constructed generic method.  
   
 ## Syntax  

@@ -1,9 +1,9 @@
----
-title: "&lt;serviceDiscovery&gt;"
+﻿---
+title: "<serviceDiscovery>"
 ms.date: "03/30/2017"
 ms.assetid: a3c68a4a-fc95-43c5-aacb-785936c0cf39
 ---
-# &lt;serviceDiscovery&gt;
+# \<serviceDiscovery>
 Specifies the discoverability of service endpoints.  
   
  \<system.ServiceModel>  

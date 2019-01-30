@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; Element for schemeSettings (Uri Settings)"
+title: "<add> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 ---
-# &lt;add&gt; Element for schemeSettings (Uri Settings)
+# \<add> Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  
   
  \<configuration>  

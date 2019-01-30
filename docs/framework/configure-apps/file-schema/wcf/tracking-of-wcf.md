@@ -1,9 +1,9 @@
 ---
-title: "&lt;tracking&gt; of WCF"
+title: "<tracking> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
 ---
-# &lt;tracking&gt; of WCF
+# \<tracking> of WCF
 Represents a configuration section for defining tracking settings for a workflow service.  
   
  For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  

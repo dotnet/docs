@@ -1,5 +1,5 @@
 ---
-title: "&lt;appDomainResourceMonitoring&gt; Element"
+title: "<appDomainResourceMonitoring> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "appDomainResourceMonitoring element"
@@ -8,7 +8,7 @@ ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;appDomainResourceMonitoring&gt; Element
+# \<appDomainResourceMonitoring> Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  
   
  \<configuration>  

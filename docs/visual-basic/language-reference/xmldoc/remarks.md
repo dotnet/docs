@@ -1,12 +1,12 @@
 ---
-title: "&lt;remarks&gt; (Visual Basic)"
+title: "<remarks> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<remarks> XML tag"
   - "remarks XML tag"
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
 ---
-# &lt;remarks&gt; (Visual Basic)
+# \<remarks> (Visual Basic)
 Specifies a remarks section for the member.  
   
 ## Syntax  

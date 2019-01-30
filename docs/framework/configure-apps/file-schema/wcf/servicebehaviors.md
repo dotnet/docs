@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceBehaviors&gt;"
+title: "<serviceBehaviors>"
 ms.date: "03/30/2017"
 ms.assetid: 5aed9062-cc36-4b72-b9dd-a3018b8ffafc
 ---
-# &lt;serviceBehaviors&gt;
+# \<serviceBehaviors>
 This configuration section represents all the behaviors defined for a specific service.  
   
 ## See also

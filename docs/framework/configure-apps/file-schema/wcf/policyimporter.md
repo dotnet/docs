@@ -1,9 +1,9 @@
 ---
-title: "&lt;policyImporter&gt;"
+title: "<policyImporter>"
 ms.date: "03/30/2017"
 ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
 ---
-# &lt;policyImporter&gt;
+# \<policyImporter>
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  
   
  \<system.ServiceModel>  

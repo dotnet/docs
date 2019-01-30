@@ -1,5 +1,5 @@
 ---
-title: "&lt;ipv6&gt; Element (Network Settings)"
+title: "<ipv6> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/ipv6"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "ipv6 element"
 ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
 ---
-# &lt;ipv6&gt; Element (Network Settings)
+# \<ipv6> Element (Network Settings)
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.  
   
  \<configuration>  

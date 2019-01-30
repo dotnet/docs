@@ -1,12 +1,12 @@
 ---
-title: "&lt;c&gt; (Visual Basic)"
+title: "<c> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "c XML tag"
   - "<c> XML tag"
 ms.assetid: 36ad5d1b-11f7-4012-8932-41962ac327d1
 ---
-# &lt;c&gt; (Visual Basic)
+# \<c> (Visual Basic)
 Indicates that text within a description is code.  
   
 ## Syntax  

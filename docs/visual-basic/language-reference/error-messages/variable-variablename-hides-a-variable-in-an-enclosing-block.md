@@ -1,5 +1,5 @@
 ---
-title: "Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block"
+title: "Variable '<variablename>' hides a variable in an enclosing block"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30616"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30616"
 ms.assetid: e7658ebc-da45-451b-a409-a0f8915f0beb
 ---
-# Variable &#39;&lt;variablename&gt;&#39; hides a variable in an enclosing block
+# Variable '\<variablename>' hides a variable in an enclosing block
 A variable enclosed in a block has the same name as another local variable.  
   
  **Error ID:** BC30616  

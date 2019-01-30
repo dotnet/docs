@@ -1,5 +1,5 @@
 ---
-title: "&lt;&lt; Operator (Visual Basic)"
+title: "<< Operator (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.<<"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "operator <<, Visual Basic left shift operator"
 ms.assetid: fdb93d25-81ba-417f-b808-41207bfb8440
 ---
-# &lt;&lt; Operator (Visual Basic)
+# \<\< Operator (Visual Basic)
 Performs an arithmetic left shift on a bit pattern.  
   
 ## Syntax  

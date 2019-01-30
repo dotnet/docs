@@ -1,5 +1,5 @@
 ---
-title: "Unable to load information for class &#39;&lt;classname&gt;&#39;"
+title: "Unable to load information for class '<classname>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30712"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30712"
 ms.assetid: c7ffbd6d-05c6-4261-b44b-1bcd521bb350
 ---
-# Unable to load information for class &#39;&lt;classname&gt;&#39;
+# Unable to load information for class '\<classname>'
 A reference was made to a class that is not available.  
   
  **Error ID:** BC30712  

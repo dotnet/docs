@@ -1,9 +1,9 @@
 ---
-title: "&lt;oneWay&gt;"
+title: "<oneWay>"
 ms.date: "03/30/2017"
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
 ---
-# &lt;oneWay&gt;
+# \<oneWay>
 Enables packet routing and the use of one-way methods for a custom binding.  
   
  \<system.serviceModel>  

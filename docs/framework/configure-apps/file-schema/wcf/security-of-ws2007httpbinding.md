@@ -1,9 +1,9 @@
----
-title: "&lt;security&gt; of &lt;ws2007HttpBinding&gt;"
+﻿---
+title: "<security> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
 ---
-# &lt;security&gt; of &lt;ws2007HttpBinding&gt;
+# \<security> of \<ws2007HttpBinding>
 Represents the security settings used with the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.  
   
  \<system.serviceModel>  

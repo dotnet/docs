@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename&gt;&#39; is a delegate type"
+title: "'<typename>' is a delegate type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc32008"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC32008"
 ms.assetid: dc6abba0-a9ad-450f-8899-87265bc84abc
 ---
-# &#39;&lt;typename&gt;&#39; is a delegate type
+# '\<typename>' is a delegate type
 '\<typename>' is a delegate type. Delegate construction permits only a single AddressOf expression as an argument list. Often an AddressOf expression can be used instead of a delegate construction.  
   
  A `New` clause creating an instance of a delegate class supplies an invalid argument list to the delegate constructor.  

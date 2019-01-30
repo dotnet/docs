@@ -1,11 +1,11 @@
----
-title: "&lt;wsFederationHttpBinding&gt;"
+﻿---
+title: "<wsFederationHttpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "wsFederationBinding element"
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
 ---
-# &lt;wsFederationHttpBinding&gt;
+# \<wsFederationHttpBinding>
 Defines a binding that supports WS-Federation.  
   
  \<system.ServiceModel>  

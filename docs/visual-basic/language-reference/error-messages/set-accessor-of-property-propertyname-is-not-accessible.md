@@ -1,5 +1,5 @@
 ---
-title: "&#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible"
+title: "'Set' accessor of property '<propertyname>' is not accessible"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc31102"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC31102"
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
 ---
-# &#39;Set&#39; accessor of property &#39;&lt;propertyname&gt;&#39; is not accessible
+# 'Set' accessor of property '\<propertyname>' is not accessible
 A statement attempts to store the value of a property when it does not have access to the property's `Set` procedure.  
   
  If the [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md) is marked with a more restrictive access level than its [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md), an attempt to set the property value could fail in the following cases:  

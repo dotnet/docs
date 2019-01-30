@@ -1,5 +1,5 @@
 ---
-title: "End &lt;keyword&gt; Statement (Visual Basic)"
+title: "End <keyword> Statement (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.EndDefinition"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "End keyword [Visual Basic]"
 ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f
 ---
-# End &lt;keyword&gt; Statement (Visual Basic)
+# End \<keyword> Statement (Visual Basic)
 
 When followed by an additional keyword, terminates the definition of the statement block introduced by that keyword.
 

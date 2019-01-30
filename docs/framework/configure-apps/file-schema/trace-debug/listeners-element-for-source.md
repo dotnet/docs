@@ -1,5 +1,5 @@
 ---
-title: "&lt;listeners&gt; Element for &lt;source&gt;"
+title: "<listeners> Element for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "<listeners> element for <source>"
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
 ---
-# &lt;listeners&gt; Element for &lt;source&gt;
+# \<listeners> Element for \<source>
 Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection for a <xref:System.Diagnostics.TraceSource>. A listener directs the tracing output to an appropriate target, such as a log, window, or text file.  
   
  \<configuration>  

@@ -202,25 +202,7 @@ Back in the root folder, do the following:
 2. Run `dotnet sln add HelloPlugin/HelloPlugin.csproj` to add the project to the `AppWithPlugin` solution. 
 3. Replace the *HelloPlugin/Class1.cs* file with a file named *HelloCommand.cs* with the following contents:
 
-```csharp
-using PluginBase;
-using System;
-
-namespace HelloPlugin
-{
-    public class HelloCommand : ICommand
-    {
-        public string Name { get => "hello"; }
-        public string Description { get => "Displays hello message."; }
-
-        public int Execute()
-        {
-            Console.WriteLine("Hello !!!");
-            return 0;
-        }
-    }
-}
-```
+[!code-csharp[the-hello-plugin](~/samples/core/extensions/AppWithPlugin/HelloPlugin/HelloCommand.cs)]
 
 Now, open the *HelloPlugin.csproj* file. It should look similar to the following:
 

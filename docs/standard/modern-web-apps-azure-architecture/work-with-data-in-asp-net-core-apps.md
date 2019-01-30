@@ -192,7 +192,7 @@ private void ConfigureOrder(EntityTypeBuilder<Order> builder)
 
 In this example, the `ShipToAddress` property is of type `Address`. `Address` is a value object with several properties such as `Street` and `City`. EF Core maps the `Order` object to its table with one column per `Address` property, prefixing each column name with the name of the property. In this example, the `Order` table would include columns such as `ShipToAddress_Street` and `ShipToAddress_City`.
 
-[EF Core 2.2 introduces support for collections of owned entities](https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-2.2#collections-of-owned-entities)
+[EF Core 2.2 introduces support for collections of owned entities](https://docs.microsoft.com/ef/core/what-is-new/ef-core-2.2#collections-of-owned-entities)
 
 ### Resilient connections
 

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
 ---
 # Walkthrough: Caching Application Data in a WPF Application
-Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.
+Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead of retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.
 
  The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides classes that enable you to use caching in [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
 
@@ -212,7 +212,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
     policy.AbsoluteExpiration = DateTimeOffset.Now.AddSeconds(10.0);
     ```
 
-     If no eviction or expiration information is provided, the default is <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration>, which means the cache entries never expire based only on an absolute time. Instead, cache entries expire only when there is memory pressure. As a best practice, you should always explicitly provide either an absolute or a siding expiration.
+     If no eviction or expiration information is provided, the default is <xref:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration>, which means the cache entries never expire based only on an absolute time. Instead, cache entries expire only when there is memory pressure. As a best practice, you should always explicitly provide either an absolute or a sliding expiration.
 
 7.  Inside the `if/then` block and following the code you added in the previous step, add the following code to create a collection for the file paths that you want to monitor, and to add the path of the text file to the collection:
 
@@ -248,7 +248,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
     ```
 
     ```csharp
-    fileContents = File.ReadAllText("c:\\cache\\cacheText.txt") + + "\n" + DateTime.Now;
+    fileContents = File.ReadAllText("c:\\cache\\cacheText.txt") + "\n" + DateTime.Now;
     ```
 
      The date and time timestamp is added so that you will be able to see when the cache entry expires.
@@ -290,7 +290,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
      The cached content from the text file is displayed in a message box. Notice the timestamp on the file.
 
-3.  Close the message box and then click **Get Cache** again**.**
+3.  Close the message box and then click **Get Cache** again.
 
      The timestamp is unchanged. This indicates the cached content is displayed.
 
@@ -300,7 +300,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 5.  In a text editor, open the text file that you created. Do not make any changes yet.
 
-6.  Close the message box and then click **Get Cache** again**.**
+6.  Close the message box and then click **Get Cache** again.
 
      Notice the timestamp again.
 

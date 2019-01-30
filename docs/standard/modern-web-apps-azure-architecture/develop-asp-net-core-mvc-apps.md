@@ -291,7 +291,7 @@ public class ValidateModelAttribute : ActionFilterAttribute
 }
 ```
 
-You can add the ValidateModelAttribute to your project as a Nuget dependency by including the [Ardalis.ValidateModel package](https://www.nuget.org/packages/Ardalis.ValidateModel). For APIs, you can use the [ApiController] attribute to enforce this behavior without the need for a separate [ValidateModel] filter.
+You can add the `ValidateModelAttribute` to your project as a NuGet dependency by including the [Ardalis.ValidateModel](https://www.nuget.org/packages/Ardalis.ValidateModel) package. For APIs, you can use the `ApiController` attribute to enforce this behavior without the need for a separate `ValidateModel` filter.
 
 Likewise, a filter can be used to check if a record exists and return a 404 before the action is executed, eliminating the need to perform these checks in the action. Once you've pulled out common conventions and organized your solution to separate infrastructure code and business logic from your UI, your MVC action methods should be extremely thin:
 

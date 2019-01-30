@@ -181,7 +181,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets whether <see cref="P:System.Runtime.Serialization.DataMemberAttribute.Name" /> has been explicitly set.</summary>
-        <value><see langword="true" /> if the name has been explicitly set; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the name has been explicitly set; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

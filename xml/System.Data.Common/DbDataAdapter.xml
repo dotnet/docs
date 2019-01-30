@@ -824,38 +824,6 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       </Docs>
     </Member>
     <Member MemberName="Fill">
-      <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataTable dataTable, System.Data.IDataReader dataReader);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable dataTable, class System.Data.IDataReader dataReader) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable,System.Data.IDataReader)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataTable ^ dataTable, System::Data::IDataReader ^ dataReader);" />
-      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataTable * System.Data.IDataReader -&gt; int" Usage="dbDataAdapter.Fill (dataTable, dataReader)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dataTable" Type="System.Data.DataTable" />
-        <Parameter Name="dataReader" Type="System.Data.IDataReader" />
-      </Parameters>
-      <Docs>
-        <param name="dataTable">To be added.</param>
-        <param name="dataReader">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Fill">
       <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataTable dataTable, System.Data.IDbCommand command, System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable dataTable, class System.Data.IDbCommand command, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable,System.Data.IDbCommand,System.Data.CommandBehavior)" />
@@ -1115,44 +1083,6 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       </Docs>
     </Member>
     <Member MemberName="Fill">
-      <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataSet dataSet, string srcTable, System.Data.IDataReader dataReader, int startRecord, int maxRecords);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet, string srcTable, class System.Data.IDataReader dataReader, int32 startRecord, int32 maxRecords) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataSet,System.String,System.Data.IDataReader,System.Int32,System.Int32)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet, System::String ^ srcTable, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
-      <MemberSignature Language="F#" Value="override this.Fill : System.Data.DataSet * string * System.Data.IDataReader * int * int -&gt; int" Usage="dbDataAdapter.Fill (dataSet, srcTable, dataReader, startRecord, maxRecords)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dataSet" Type="System.Data.DataSet" />
-        <Parameter Name="srcTable" Type="System.String" />
-        <Parameter Name="dataReader" Type="System.Data.IDataReader" />
-        <Parameter Name="startRecord" Type="System.Int32" />
-        <Parameter Name="maxRecords" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <param name="dataSet">To be added.</param>
-        <param name="srcTable">To be added.</param>
-        <param name="dataReader">To be added.</param>
-        <param name="startRecord">To be added.</param>
-        <param name="maxRecords">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Fill">
       <MemberSignature Language="C#" Value="protected virtual int Fill (System.Data.DataTable[] dataTables, int startRecord, int maxRecords, System.Data.IDbCommand command, System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable[] dataTables, int32 startRecord, int32 maxRecords, class System.Data.IDbCommand command, valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.Fill(System.Data.DataTable[],System.Int32,System.Int32,System.Data.IDbCommand,System.Data.CommandBehavior)" />
@@ -1382,37 +1312,6 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
-    <Member MemberName="FillError">
-      <MemberSignature Language="C#" Value="public event System.Data.FillErrorEventHandler FillError;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.Data.FillErrorEventHandler FillError" />
-      <MemberSignature Language="DocId" Value="E:System.Data.Common.DbDataAdapter.FillError" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event FillError As FillErrorEventHandler " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::FillErrorEventHandler ^ FillError;" />
-      <MemberSignature Language="F#" Value="member this.FillError : System.Data.FillErrorEventHandler " Usage="member this.FillError : System.Data.FillErrorEventHandler " />
-      <MemberType>Event</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.Data.DataSysDescription("DbDataAdapter_FillError")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Data.FillErrorEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="FillSchema">
@@ -2161,36 +2060,6 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
         <related type="Article" href="https://msdn.microsoft.com/library/2a8e2640-3a49-42a1-a3a9-b43026907ae1">DbProviderFactories (ADO.NET)</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
-      </Docs>
-    </Member>
-    <Member MemberName="OnFillError">
-      <MemberSignature Language="C#" Value="protected virtual void OnFillError (System.Data.FillErrorEventArgs value);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFillError(class System.Data.FillErrorEventArgs value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataAdapter.OnFillError(System.Data.FillErrorEventArgs)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFillError (value As FillErrorEventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFillError(System::Data::FillErrorEventArgs ^ value);" />
-      <MemberSignature Language="F#" Value="abstract member OnFillError : System.Data.FillErrorEventArgs -&gt; unit&#xA;override this.OnFillError : System.Data.FillErrorEventArgs -&gt; unit" Usage="dbDataAdapter.OnFillError value" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Data.FillErrorEventArgs" />
-      </Parameters>
-      <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="OnRowUpdated">

@@ -333,7 +333,7 @@
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (string name, object value);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object value) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.1;netcore-2.0;netcore-1.0;netcore-1.1;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, value As Object)" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ value);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
       <MemberSignature Language="C#" Value="public override void Write (string name, object parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />

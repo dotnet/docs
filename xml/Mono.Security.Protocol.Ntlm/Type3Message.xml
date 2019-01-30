@@ -30,7 +30,7 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute>
           <AttributeName>System.Obsolete("Use of this API is highly discouraged, it selects legacy-mode LM/NTLM authentication, which sends your password in very weak encryption over the wire even if the server supports the more secure NTLMv2 / NTLMv2 Session. You need to use the new `Type3Message (Type2Message)' constructor to use the more secure NTLMv2 / NTLMv2 Session authentication modes. These require the Type 2 message from the server to compute the response.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -95,7 +95,7 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute>
           <AttributeName>System.Obsolete("Use of this API is highly discouraged, it selects legacy-mode LM/NTLM authentication, which sends your password in very weak encryption over the wire even if the server supports the more secure NTLMv2 / NTLMv2 Session. You need to use the new `Type3Message (Type2Message)' constructor to use the more secure NTLMv2 / NTLMv2 Session authentication modes. These require the Type 2 message from the server to compute the response.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -145,7 +145,7 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute>
           <AttributeName>System.Obsolete("Use NtlmSettings.DefaultAuthLevel")</AttributeName>
         </Attribute>
       </Attributes>

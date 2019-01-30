@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.Serialization.DataContract(Name="ServiceProperties", Namespace="http://schemas.microsoft.com/net/2018/08/health")</AttributeName>
     </Attribute>
   </Attributes>
@@ -76,7 +76,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -102,7 +102,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -134,7 +134,7 @@ A service's concurrency mode specifies whether it supports single- or multi-thre
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -166,7 +166,7 @@ A service's instance context mode determines how service instances handle calls 
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -192,7 +192,7 @@ A service's instance context mode determines how service instances handle calls 
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -218,7 +218,7 @@ A service's instance context mode determines how service instances handle calls 
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -250,7 +250,7 @@ For more information, see <xref:System.ServiceModel.Dispatcher.ServiceThrottle?d
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>
@@ -276,7 +276,7 @@ For more information, see <xref:System.ServiceModel.Dispatcher.ServiceThrottle?d
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>

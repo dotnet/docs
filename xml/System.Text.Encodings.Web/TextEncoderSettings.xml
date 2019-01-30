@@ -89,7 +89,7 @@
       <Parameters>
         <Parameter Name="allowedRanges" Type="System.Text.Unicode.UnicodeRange[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -151,7 +151,7 @@
       <Parameters>
         <Parameter Name="characters" Type="System.Char[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -244,7 +244,7 @@
       <Parameters>
         <Parameter Name="ranges" Type="System.Text.Unicode.UnicodeRange[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -330,7 +330,7 @@
       <Parameters>
         <Parameter Name="characters" Type="System.Char[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -394,7 +394,7 @@
       <Parameters>
         <Parameter Name="ranges" Type="System.Text.Unicode.UnicodeRange[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

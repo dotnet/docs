@@ -120,7 +120,7 @@ Use override stylesheets to change the directory that Visual C++ projects get bu
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute>
           <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
         </Attribute>
       </Attributes>
@@ -146,7 +146,7 @@ Use override stylesheets to change the directory that Visual C++ projects get bu
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute>
           <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
         </Attribute>
       </Attributes>
@@ -173,7 +173,7 @@ Use override stylesheets to change the directory that Visual C++ projects get bu
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+        <Attribute>
           <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
         </Attribute>
       </Attributes>

@@ -396,7 +396,7 @@ This method can be useful if part of a managed object represents a fixed array.
       </Docs>
     </Member>
     <Member MemberName="GetReference&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T GetReference&lt;T&gt; (ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="C#" Value="public static ref T GetReference&lt;T&gt; (ReadOnlySpan&lt;T&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As ReadOnlySpan(Of T)) As T" />
@@ -433,7 +433,7 @@ If the read-only span is empty, this method returns a reference to the location 
       </Docs>
     </Member>
     <Member MemberName="GetReference&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T GetReference&lt;T&gt; (Span&lt;T&gt; span);" />
+      <MemberSignature Language="C#" Value="public static ref T GetReference&lt;T&gt; (Span&lt;T&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As Span(Of T)) As T" />

@@ -19,7 +19,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+    <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -131,7 +131,8 @@
         <param name="right">
           <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.Xml.XPath.XPathItem" />.</param>
         <summary>Determines equality between collections of type <see cref="T:System.Xml.XPath.XPathItem" />.</summary>
-        <returns><see langword="true" /> if the collections are equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the collections are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -280,7 +281,8 @@
         <param name="name">
           <see cref="T:System.Xml.XmlQualifiedName" /> name object.</param>
         <summary>Implements the <see href="https://www.w3.org/TR/xslt/all/">function-available()</see> XSLT function.</summary>
-        <returns><see langword="true" /> if the function identified by <paramref name="name" /> is available; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the function identified by <paramref name="name" /> is available; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -351,7 +353,8 @@
       </Parameters>
       <Docs>
         <param name="lang">String that indicates language.</param>
-        <param name="forwardCompatibility"><see langword="true" /> to indicate language is forward compatible; otherwise, <see langword="false" />.</param>
+        <param name="forwardCompatibility">
+          <see langword="true" /> to indicate language is forward compatible; otherwise, <see langword="false" />.</param>
         <summary>Converts the language identifier (as specified in the <see langword="xml:lang" /> attribute) to the culture identifier (LCID).</summary>
         <returns>A string that contains the culture identifier.</returns>
         <remarks>To be added.</remarks>

@@ -393,7 +393,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
       <Docs>
         <param name="ch">The character to verify as a non-colon character.</param>
         <summary>Checks whether the passed-in character is a valid non-colon character type.</summary>
-        <returns><see langword="true" /> if the character is a valid non-colon character type; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the character is a valid non-colon character type; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -958,7 +959,8 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">
           <paramref name="s" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentNullException"><paramref name="dateTimeOption" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dateTimeOption" /> is <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">
           <paramref name="s" /> is an empty string or is not in a valid format.</exception>
       </Docs>

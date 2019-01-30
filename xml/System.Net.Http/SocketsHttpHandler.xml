@@ -15,8 +15,8 @@
   <Interfaces />
   <Docs>
     <summary>Provides the default message handler used by <see cref="T:System.Net.Http.HttpClient" /> in .NET Core 2.1 and later.</summary>
-        <remarks>  
-          <format type="text/markdown"><![CDATA[  
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
 
 Starting with .NET Core 2.1, the `SocketsHttpHandler` class provides the implementation used by higher-level HTTP networking classes such as <xref:System.Net.Http.HttpClient>. The use of `SocketsHttpHandler` offers a number of advantages:
 
@@ -50,7 +50,7 @@ If this change is undesirable, you can configure your application to use the old
 - By defining an environment variable named `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` and setting it to either `false` or 0.
 
          ]]></format>
-         </remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

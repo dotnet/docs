@@ -67,7 +67,7 @@
         <Parameter Name="distinguishedName" Type="System.String" />
         <Parameter Name="modifications" Type="System.DirectoryServices.Protocols.DirectoryAttributeModification[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -100,7 +100,7 @@
         <Parameter Name="attributeName" Type="System.String" />
         <Parameter Name="values" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

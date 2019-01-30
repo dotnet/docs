@@ -1118,7 +1118,7 @@
     <Member MemberName="System.IEquatable&lt;System.IntPtr&gt;.Equals">
       <MemberSignature Language="C#" Value="bool IEquatable&lt;IntPtr&gt;.Equals (IntPtr other);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;System.IntPtr&gt;.Equals(native int other) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2" />
-      <MemberSignature Language="DocId" Value="M:System.IntPtr.System#IEquatable&lt;System#IntPtr&gt;#Equals(System.IntPtr)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.1;netcore-2.0;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.IntPtr.System#IEquatable&lt;System#IntPtr&gt;#Equals(System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Function Equals (other As IntPtr) As Boolean Implements IEquatable(Of IntPtr).Equals" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.IEquatable&lt;System.IntPtr&gt;.Equals(IntPtr other) = IEquatable&lt;IntPtr&gt;::Equals;" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberType>Method</MemberType>

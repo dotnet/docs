@@ -181,7 +181,7 @@
         <Parameter Name="syncRoot" Type="System.Object" />
         <Parameter Name="list" Type="T[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

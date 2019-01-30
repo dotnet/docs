@@ -396,10 +396,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool force);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public void ForceDeclaration (bool require);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceDeclaration(bool require) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ForceDeclaration(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ForceDeclaration (require As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ForceDeclaration(bool require);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="sectionInformation.ForceDeclaration require" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="sectionInformation.ForceDeclaration force" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.ForceDeclaration : bool -&gt; unit" Usage="sectionInformation.ForceDeclaration require" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -415,14 +416,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="force" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="force" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="require" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="force">
           <see langword="true" /> if the associated section should be written in the configuration file; otherwise, <see langword="false" />.</param>
-        <param name="require">
-          <see langword="true" /> if the associated section should be written in the configuration file; otherwise, <see langword="false" />.</param>
+        <param name="require">To be added.</param>
         <summary>Forces the associated configuration section to appear in the configuration file, or removes an existing section from the configuration file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1021,10 +1021,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ protectionProvider);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public void ProtectSection (string provider);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProtectSection(string provider) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.ProtectSection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ProtectSection (provider As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ProtectSection(System::String ^ provider);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.ProtectSection : string -&gt; unit" Usage="sectionInformation.ProtectSection provider" />
+      <MemberSignature Language="F#" Value="member this.ProtectSection : string -&gt; unit" Usage="sectionInformation.ProtectSection protectionProvider" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.ProtectSection : string -&gt; unit" Usage="sectionInformation.ProtectSection provider" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1040,12 +1041,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="protectionProvider" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="protectionProvider" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="provider" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="protectionProvider">The name of the protection provider to use.</param>
-        <param name="provider">The name of the protection provider to use.</param>
+        <param name="provider">To be added.</param>
         <summary>Marks a configuration section for protection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1288,10 +1289,11 @@ Dim apSection As AppSettingsSection = _
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ rawXml);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public void SetRawXml (string xml);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRawXml(string xml) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SectionInformation.SetRawXml(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetRawXml (xml As String)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRawXml(System::String ^ xml);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.SetRawXml : string -&gt; unit" Usage="sectionInformation.SetRawXml xml" />
+      <MemberSignature Language="F#" Value="member this.SetRawXml : string -&gt; unit" Usage="sectionInformation.SetRawXml rawXml" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.SetRawXml : string -&gt; unit" Usage="sectionInformation.SetRawXml xml" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -1307,12 +1309,12 @@ Dim apSection As AppSettingsSection = _
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rawXml" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="rawXml" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="xml" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="rawXml">The XML to use.</param>
-        <param name="xml">The XML to use.</param>
+        <param name="xml">To be added.</param>
         <summary>Sets the object to an XML representation of the associated configuration section within the configuration file.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">

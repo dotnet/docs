@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -50,7 +50,8 @@
         <param name="Pattern">The string against which <paramref name="Source" /> is being compared.</param>
         <param name="CompareOption">A <see cref="T:Microsoft.VisualBasic.CompareMethod" /> enumeration specifying whether or not to use text comparison. If <see cref="F:Microsoft.VisualBasic.CompareMethod.Text" />, this method uses text comparison; if <see cref="F:Microsoft.VisualBasic.CompareMethod.Binary" />, this method uses binary comparison.</param>
         <summary>Performs binary or text string comparison given two objects. This helper method is not meant to be called directly from your code.</summary>
-        <returns><see langword="True" /> if the strings match; otherwise, <see langword="False" />.</returns>
+        <returns>
+          <see langword="True" /> if the strings match; otherwise, <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -87,7 +88,8 @@
         <param name="Pattern">The string against which <paramref name="Source" /> is being compared.</param>
         <param name="CompareOption">A <see cref="T:Microsoft.VisualBasic.CompareMethod" /> enumeration specifying whether or not to use text comparison. If <see cref="F:Microsoft.VisualBasic.CompareMethod.Text" />, this method uses text comparison; if <see cref="F:Microsoft.VisualBasic.CompareMethod.Binary" />, this method uses binary comparison.</param>
         <summary>Performs binary or text string comparison given two strings. This helper method is not meant to be called directly from your code.</summary>
-        <returns><see langword="True" /> if the strings match; otherwise, <see langword="False" />.</returns>
+        <returns>
+          <see langword="True" /> if the strings match; otherwise, <see langword="False" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

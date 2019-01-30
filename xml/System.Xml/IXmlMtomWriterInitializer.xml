@@ -51,7 +51,8 @@
         <param name="boundary">The MIME boundary string.</param>
         <param name="startUri">The URI for MIME section.</param>
         <param name="writeMessageHeaders">If <see langword="true" />, write message headers.</param>
-        <param name="ownsStream"><see langword="true" /> to indicate the stream is closed by the writer when done; otherwise, <see langword="false" />.</param>
+        <param name="ownsStream">
+          <see langword="true" /> to indicate the stream is closed by the writer when done; otherwise, <see langword="false" />.</param>
         <summary>When implemented by an MTOM writer, initializes an MTOM writer.</summary>
         <remarks>To be added.</remarks>
       </Docs>

@@ -104,7 +104,8 @@
       </Parameters>
       <Docs>
         <param name="any">The <see langword="xsd:any" /> element found in the XML Schema Document (XSD).</param>
-        <param name="mixed"><see langword="true" /> to indicate the XSD <see langword="complex" /> attribute has been set to "mixed"; otherwise, <see langword="false" />.</param>
+        <param name="mixed">
+          <see langword="true" /> to indicate the XSD <see langword="complex" /> attribute has been set to "mixed"; otherwise, <see langword="false" />.</param>
         <param name="schemas">The collection of schemas found in the XSD.</param>
         <param name="importer">The importer being used.</param>
         <param name="compileUnit">A <see cref="T:System.CodeDom.CodeCompileUnit" /> to which you can add CodeDOM structures to generate alternative code for the XSD.</param>

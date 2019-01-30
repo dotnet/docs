@@ -1,4 +1,4 @@
-<Type Name="MethodInfo" FullName="System.Reflection.MethodInfo">
+﻿<Type Name="MethodInfo" FullName="System.Reflection.MethodInfo">
   <TypeSignature Language="C#" Value="public abstract class MethodInfo : System.Reflection.MethodBase, System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodInfo extends System.Reflection.MethodBase implements class System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodInfo" />
@@ -115,74 +115,6 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.MethodInfo" /> class.</summary>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ContainsGenericParameters">
-      <MemberSignature Language="C#" Value="public override bool ContainsGenericParameters { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool ContainsGenericParameters" />
-      <MemberSignature Language="DocId" Value="P:System.Reflection.MethodInfo.ContainsGenericParameters" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContainsGenericParameters As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ContainsGenericParameters { bool get(); };" />
-      <MemberSignature Language="F#" Value="member this.ContainsGenericParameters : bool" Usage="System.Reflection.MethodInfo.ContainsGenericParameters" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets a value indicating whether a generic method contains unassigned generic type parameters.</summary>
-        <value>
-          <see langword="true" /> if the current <see cref="T:System.Reflection.MethodInfo" /> contains unassigned generic type parameters; otherwise, <see langword="false" />.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[
-
-## Remarks  
-To invoke a generic method, there must be no generic type definitions or open constructed types in the type arguments of the method itself, or in any enclosing types. Making this recursive determination can be difficult. For convenience, and to reduce the chance of error, the `ContainsGenericParameters` property provides a standard way to distinguish between closed constructed methods, which can be invoked, and open constructed methods, which cannot. If the `ContainsGenericParameters` property returns true, the method cannot be invoked.
-
-The `ContainsGenericParameters` property searches recursively for type parameters. For example, it returns `true` for any method in an open type `A<T>` (`A(Of T)` in Visual Basic), even though the method itself is not generic. Contrast this with the behavior of the <xref:System.Reflection.MethodInfo.IsGenericMethod> property, which returns `false` for such a method.
-
-For a list of the invariant conditions for terms specific to generic methods, see the <xref:System.Reflection.MethodInfo.IsGenericMethod> property. For a list of the invariant conditions for other terms used in generic reflection, see the <xref:System.Type.IsGenericType> property.
-
-## Examples  
-The following code example uses the `ContainsGenericParameters` property to display a message indicating whether a <xref:System.Reflection.MethodInfo> is an open generic method (that is, whether it has unbound type parameters).
-
-This example is part of a larger example provided for the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A> method.
-
-```vb
-Console.WriteLine(vbTab _
-    & "Does it have unassigned generic parameters? {0}", _
-    mi.ContainsGenericParameters)
-```
-
-```csharp
-Console.WriteLine("\tDoes it have unassigned generic parameters? {0}", 
-    mi.ContainsGenericParameters);
-```
-
-```cpp
-Console::WriteLine("\tDoes it have unassigned generic parameters? {0}", 
-    mi->ContainsGenericParameters);
-```
-
-]]></format>
-        </remarks>
-        <altmember cref="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethod" />
-        <altmember cref="P:System.Reflection.MethodInfo.IsGenericMethodDefinition" />
-        <related type="Article" href="~/docs/framework/reflection-and-codedom/reflection-and-generic-types.md">Reflection and Generic Types</related>
-        <related type="Article" href="~/docs/csharp/programming-guide/generics/introduction-to-generics.md">Introduction to Generics (C# Programming Guide)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CreateDelegate">

@@ -1,4 +1,4 @@
-<Type Name="ConstReverseRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;">
+﻿<Type Name="ConstReverseRandomAccessIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class ConstReverseRandomAccessIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConstReverseRandomAccessIterator`1&lt;TValue&gt; extends System.Object implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1" />
@@ -365,7 +365,7 @@
       </Docs>
     </Member>
     <Member MemberName="get_cref">
-      <MemberSignature Language="C#" Value="public virtual TValue get_cref ();" />
+      <MemberSignature Language="C#" Value="public virtual ref TValue get_cref ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_cref() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.get_cref" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function get_cref () As TValue" />
@@ -411,7 +411,7 @@
       </Docs>
     </Member>
     <Member MemberName="get_ref">
-      <MemberSignature Language="C#" Value="public virtual TValue get_ref ();" />
+      <MemberSignature Language="C#" Value="public virtual ref TValue get_ref ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_ref() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.get_ref" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function get_ref () As TValue" />
@@ -627,7 +627,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1036,7 +1036,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
-      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="C#" Value="public static ref TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_MemberSelection(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ConstReverseRandomAccessIterator(Of TValue)) As TValue" />
@@ -1049,7 +1049,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -1070,7 +1070,7 @@
       </Docs>
     </Member>
     <Member MemberName="op_PointerDereference">
-      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="C#" Value="public static ref TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_PointerDereference(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ConstReverseRandomAccessIterator(Of TValue)) As TValue" />
@@ -1083,7 +1083,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">

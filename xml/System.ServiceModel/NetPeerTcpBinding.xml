@@ -160,7 +160,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the PNRP service is installed and available on the computer.</summary>
-        <value><see langword="true" /> if PNRP is installed and configured; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if PNRP is installed and configured; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -486,7 +487,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether incoming requests over peer channels created by this binding are handled synchronously or asynchronously.</summary>
-        <value><see langword="true" /> if incoming requests are handled synchronously; <see langword="false" /> if they are handled asynchronously. The default value is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if incoming requests are handled synchronously; <see langword="false" /> if they are handled asynchronously. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

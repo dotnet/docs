@@ -284,7 +284,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the object is synchronized (thread-safe).</summary>
-        <value><see langword="true" /> if the object is synchronized; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the object is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

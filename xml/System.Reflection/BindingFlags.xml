@@ -672,7 +672,7 @@ When the `BindingFlags.ExactBinding` binding flag is used, reflection models the
       </ReturnValue>
       <MemberValue>262144</MemberValue>
       <Docs>
-        <summary>Returns the set of members whose parameter count matches the number of supplied arguments. This binding flag is used for methods with parameters that have default values and methods with variable arguments (varargs). This flag should only be used with <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />.<br/><br/>Parameters with default values are used only in calls where trailing arguments are omitted. They must be the last arguments.</summary>
+        <summary>Returns the set of members whose parameter count matches the number of supplied arguments. This binding flag is used for methods with parameters that have default values and methods with variable arguments (varargs). This flag should only be used with <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />.<br /><br />Parameters with default values are used only in calls where trailing arguments are omitted. They must be the last arguments.</summary>
       </Docs>
     </Member>
     <Member MemberName="Public">

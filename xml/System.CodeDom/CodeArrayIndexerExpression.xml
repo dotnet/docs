@@ -113,7 +113,7 @@
         <Parameter Name="targetObject" Type="System.CodeDom.CodeExpression" />
         <Parameter Name="indices" Type="System.CodeDom.CodeExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

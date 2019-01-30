@@ -25,7 +25,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -202,7 +202,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -229,7 +229,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -279,7 +279,8 @@
       <Docs>
         <param name="other">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance to test for equality.</param>
         <summary>Compares a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance provided has matching data; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance provided has matching data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instance specified by <paramref name="other" /> has been disposed.</exception>
       </Docs>
@@ -336,7 +337,8 @@
         <param name="objA">The first <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to compare.</param>
         <param name="objB">The second <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> to compare.</param>
         <summary>Determines whether the specified <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instances are considered equal.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instances provided have matching data; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerObject" /> instances provided have matching data; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,10 +444,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>add: System.Security.SecurityCritical</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>remove: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -529,13 +531,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Description("SynchronizingObject")</AttributeName>
         </Attribute>
       </Attributes>
@@ -565,7 +567,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">

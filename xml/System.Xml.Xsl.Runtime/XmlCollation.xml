@@ -19,7 +19,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+    <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,7 +56,8 @@
         <param name="obj">
           <see cref="T:System.Object" /> with which to determine equality.</param>
         <summary>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function.</summary>
-        <returns><see langword="true" /> if this XML extension function has the same values as another XML extension function; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if this XML extension function has the same values as another XML extension function; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

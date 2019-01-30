@@ -1491,7 +1491,8 @@
       <Docs>
         <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure to locate in the <see cref="T:System.Collections.Generic.ICollection`1" />.</param>
         <summary>Determines whether the <see cref="T:System.Collections.Generic.ICollection`1" /> contains a specific key and value.</summary>
-        <returns><see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="keyValuePair" /> is found in the <see cref="T:System.Collections.Generic.ICollection`1" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1571,7 +1572,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the dictionary is read-only.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> is read-only; otherwise, <see langword="false" />. In the default implementation of <see cref="T:System.Collections.Generic.Dictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1611,7 +1613,8 @@
       <Docs>
         <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure representing the key and value to remove from the <see cref="T:System.Collections.Generic.Dictionary`2" />.</param>
         <summary>Removes a key and value from the dictionary.</summary>
-        <returns><see langword="true" /> if the key and value represented by <paramref name="keyValuePair" /> is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if <paramref name="keyValuePair" /> is not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
+        <returns>
+          <see langword="true" /> if the key and value represented by <paramref name="keyValuePair" /> is successfully found and removed; otherwise, <see langword="false" />. This method returns <see langword="false" /> if <paramref name="keyValuePair" /> is not found in the <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -886,7 +886,8 @@
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized" />.</summary>
-        <value><see langword="true" /> if the collection is synchronized.</value>
+        <value>
+          <see langword="true" /> if the collection is synchronized.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

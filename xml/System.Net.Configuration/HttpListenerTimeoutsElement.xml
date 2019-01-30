@@ -58,7 +58,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Configuration.ConfigurationProperty("drainEntityBody", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -95,7 +95,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Configuration.ConfigurationProperty("entityBody", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -132,7 +132,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Configuration.ConfigurationProperty("headerWait", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -171,7 +171,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Configuration.ConfigurationProperty("idleConnection", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -210,7 +210,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Configuration.ConfigurationProperty("minSendBytesPerSecond", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -261,7 +261,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Configuration.ConfigurationProperty("requestQueue", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>

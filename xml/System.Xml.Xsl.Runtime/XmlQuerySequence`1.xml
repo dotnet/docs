@@ -41,7 +41,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+    <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -682,7 +682,8 @@
       </ReturnValue>
       <Docs>
         <summary>If the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only, this property returns <see langword="true" />.</summary>
-        <value><see langword="true" /> if the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,7 +715,8 @@
       <Docs>
         <param name="value">The item to be removed.</param>
         <summary>Removes the specified item from the collection.</summary>
-        <returns><see langword="true" /> if the item was removed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the item was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

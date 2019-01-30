@@ -21,10 +21,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -81,7 +81,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -344,11 +344,11 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2">
           <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
+      <ReturnValue RefType="Ref">
         <ReturnType>T&amp;</ReturnType>
       </ReturnValue>
       <Parameters>
@@ -458,7 +458,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlySpan&lt;T&gt;(ArraySegment&lt;T&gt; arraySegment);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="C#" Value="public static implicit operator ReadOnlySpan&lt;T&gt; (ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.ReadOnlySpan`1&lt;!T&gt; op_Implicit(valuetype System.ArraySegment`1&lt;!T&gt; segment) cil managed" FrameworkAlternate="netcore-2.1;netcore-2.2" />
-      <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}" FrameworkAlternate="netcore-2.1;netcore-2.0;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.ReadOnlySpan`1.op_Implicit(System.ArraySegment{`0})~System.ReadOnlySpan{`0}" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (segment As ArraySegment(Of T)) As ReadOnlySpan(Of T)" FrameworkAlternate="netcore-2.1;netcore-2.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator ReadOnlySpan&lt;T&gt;(ArraySegment&lt;T&gt; segment);" FrameworkAlternate="netcore-2.1;netcore-2.2" />
       <MemberSignature Language="F#" Value="static member op_Implicit : ArraySegment&lt;'T&gt; -&gt; ReadOnlySpan&lt;'T&gt;" Usage="System.ReadOnlySpan&lt;'T&gt;.op_Implicit segment" />
@@ -476,7 +476,7 @@ A `ReadOnlySpan<T>` instance is often used to reference the elements of an array
       </ReturnValue>
       <Parameters>
         <Parameter Name="arraySegment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.0" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.2" />
       </Parameters>
       <Docs>
         <param name="arraySegment">The array segment to be converted to a <see cref="T:System.ReadOnlySpan`1" />.</param>

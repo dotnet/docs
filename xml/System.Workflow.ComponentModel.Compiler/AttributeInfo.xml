@@ -104,7 +104,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this instance can be created.</summary>
-        <value><see langword="false" /> if either of the following conditions are true:  
+        <value>
+          <see langword="false" /> if either of the following conditions are true:  
   
 -   The type defining this attribute has an <see cref="P:System.Type.Assembly" /> which is a null reference (Visual Basic <see langword="Nothing" />).  
   

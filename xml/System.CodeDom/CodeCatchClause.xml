@@ -188,7 +188,7 @@
         <Parameter Name="catchExceptionType" Type="System.CodeDom.CodeTypeReference" />
         <Parameter Name="statements" Type="System.CodeDom.CodeStatement[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

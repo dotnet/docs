@@ -110,7 +110,7 @@
         <Parameter Name="condition" Type="System.CodeDom.CodeExpression" />
         <Parameter Name="trueStatements" Type="System.CodeDom.CodeStatement[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

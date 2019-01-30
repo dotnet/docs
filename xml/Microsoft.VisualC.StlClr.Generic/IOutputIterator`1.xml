@@ -28,7 +28,7 @@
   </Docs>
   <Members>
     <Member MemberName="get_ref">
-      <MemberSignature Language="C#" Value="public TValue get_ref ();" />
+      <MemberSignature Language="C#" Value="public ref TValue get_ref ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_ref() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IOutputIterator`1.get_ref" />
       <MemberSignature Language="VB.NET" Value="Public Function get_ref () As TValue" />

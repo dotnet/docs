@@ -92,7 +92,7 @@
         <Parameter Name="memberType" Type="System.Reflection.MemberTypes" />
         <Parameter Name="accessors" Type="System.Reflection.MemberInfo[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

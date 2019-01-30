@@ -19,7 +19,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
+    <Attribute>
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -963,7 +963,8 @@
         <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
         <param name="code">An instance of the <see cref="T:System.Xml.Schema.XmlTypeCode" /> class.</param>
         <summary>Returns <see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />.</summary>
-        <returns><see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the type of the <see cref="T:System.Xml.XPath.XPathItem" /> object is a subtype of a type identified by the specified <see cref="T:System.Xml.Schema.XmlTypeCode" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -2177,7 +2177,8 @@ nav.Evaluate(expr);
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the current node has any attributes.</summary>
-        <value><see langword="true" /> if the current node has attributes; returns <see langword="false" /> if the current node has no attributes, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is not positioned on an element node.</value>
+        <value>
+          <see langword="true" /> if the current node has attributes; returns <see langword="false" /> if the current node has no attributes, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is not positioned on an element node.</value>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNextAttribute" />
         <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirstAttribute" />
@@ -3949,7 +3950,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Docs>
         <param name="other">The <see cref="T:System.Xml.XPath.XPathNavigator" /> positioned on the node that you want to move to.</param>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the same position as the specified <see cref="T:System.Xml.XPath.XPathNavigator" />.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the same position as the specified <see cref="T:System.Xml.XPath.XPathNavigator" />; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the same position as the specified <see cref="T:System.Xml.XPath.XPathNavigator" />; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4001,7 +4003,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <param name="localName">The local name of the attribute.</param>
         <param name="namespaceURI">The namespace URI of the attribute; <see langword="null" /> for an empty namespace.</param>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the attribute with the matching local name and namespace URI.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the attribute; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the attribute; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4064,7 +4067,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Docs>
         <param name="type">The <see cref="T:System.Xml.XPath.XPathNodeType" /> of the child node to move to.</param>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the child node of the <see cref="T:System.Xml.XPath.XPathNodeType" /> specified.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the child node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the child node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4121,7 +4125,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <param name="localName">The local name of the child node to move to.</param>
         <param name="namespaceURI">The namespace URI of the child node to move to.</param>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the child node with the local name and namespace URI specified.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the child node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the child node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4166,7 +4171,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the first sibling node of the current node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first sibling node of the current node; <see langword="false" /> if there is no first sibling, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If the <see cref="T:System.Xml.XPath.XPathNavigator" /> is already positioned on the first sibling, <see cref="T:System.Xml.XPath.XPathNavigator" /> will return <see langword="true" /> and will not move its position.  
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first sibling node of the current node; <see langword="false" /> if there is no first sibling, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If the <see cref="T:System.Xml.XPath.XPathNavigator" /> is already positioned on the first sibling, <see cref="T:System.Xml.XPath.XPathNavigator" /> will return <see langword="true" /> and will not move its position.  
   
  If <see cref="M:System.Xml.XPath.XPathNavigator.MoveToFirst" /> returns <see langword="false" /> because there is no first sibling, or if <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>To be added.</remarks>
@@ -4208,7 +4214,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the first attribute of the current node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first attribute of the current node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first attribute of the current node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4303,7 +4310,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the first child node of the current node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first child node of the current node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first child node of the current node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4371,7 +4379,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to first namespace node of the current node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4430,7 +4439,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Docs>
         <param name="namespaceScope">An <see cref="T:System.Xml.XPath.XPathNamespaceScope" /> value describing the namespace scope.</param>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the first namespace node that matches the <see cref="T:System.Xml.XPath.XPathNamespaceScope" /> specified.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the first namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5175,7 +5185,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <param name="localName">The local name of the next sibling node to move to.</param>
         <param name="namespaceURI">The namespace URI of the next sibling node to move to.</param>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the next sibling node with the local name and namespace URI specified.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next sibling node; <see langword="false" /> if there are no more siblings, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next sibling node; <see langword="false" /> if there are no more siblings, or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5213,7 +5224,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the next attribute.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next attribute; <see langword="false" /> if there are no more attributes. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next attribute; <see langword="false" /> if there are no more attributes. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5322,7 +5334,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>Moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the next namespace node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5381,7 +5394,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Docs>
         <param name="namespaceScope">An <see cref="T:System.Xml.XPath.XPathNamespaceScope" /> value describing the namespace scope.</param>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the next namespace node matching the <see cref="T:System.Xml.XPath.XPathNamespaceScope" /> specified.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the next namespace node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5437,7 +5451,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the parent node of the current node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the parent node of the current node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the parent node of the current node; otherwise, <see langword="false" />. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5501,7 +5516,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <Parameters />
       <Docs>
         <summary>When overridden in a derived class, moves the <see cref="T:System.Xml.XPath.XPathNavigator" /> to the previous sibling node of the current node.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the previous sibling node; otherwise, <see langword="false" /> if there is no previous sibling node or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is successful moving to the previous sibling node; otherwise, <see langword="false" /> if there is no previous sibling node or if the <see cref="T:System.Xml.XPath.XPathNavigator" /> is currently positioned on an attribute node. If <see langword="false" />, the position of the <see cref="T:System.Xml.XPath.XPathNavigator" /> is unchanged.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToNext" />
         <altmember cref="M:System.Xml.XPath.XPathNavigator.MoveToFirst" />
@@ -8698,36 +8714,6 @@ XPathNodeIterator ni = nav.Select(expr);
   
  ]]></format>
         </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public abstract string Value { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
-      <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNavigator.Value" />
-      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As String" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XPath.XPathNavigator.Value" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XPath</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Gets the value of the current node.</summary>
-        <value>The value of the current node as <see cref="T:System.String" />.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ValueAs">

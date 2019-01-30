@@ -2447,7 +2447,7 @@
       <Docs>
         <param name="dpi">The DPI value to use for scaling.</param>
         <summary>Applies the <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2X" /> and <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2Y" /> specified to scaling the arrow icon based on the specified DPI value.</summary>
-       <remarks>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The `ScaleArrowOffsetsIfNeeded` method is invoked only when an application opts into [per-monitor version 2](~/docs/framework/whats-new/whats-new-in-accessibility.md#accessibility-switches), targets .NET Framework 4.7.1 or later, and has the `EnableDpiChangedMessageHandling` and `EnableDpiChangedHighDpiImprovements` configuration switches turned on. 

@@ -215,7 +215,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the objects returned from WMI should contain amended information. Typically, amended information is localizable information attached to the WMI object, such as object and property descriptions.</summary>
-        <value><see langword="true" /> if the objects returned from WMI should contain amended information; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the objects returned from WMI should contain amended information; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

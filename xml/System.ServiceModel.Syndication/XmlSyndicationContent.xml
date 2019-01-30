@@ -431,10 +431,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Runtime::Serialization::XmlObjectSerializer ^ dataContractSerializer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public TContent ReadContent&lt;TContent&gt; (System.Runtime.Serialization.XmlObjectSerializer serializer);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TContent ReadContent&lt;TContent&gt;(class System.Runtime.Serialization.XmlObjectSerializer serializer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" FrameworkAlternate="xamarinmac-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.XmlSyndicationContent.ReadContent``1(System.Runtime.Serialization.XmlObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadContent(Of TContent) (serializer As XmlObjectSerializer) As TContent" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TContent&gt;&#xA; TContent ReadContent(System::Runtime::Serialization::XmlObjectSerializer ^ serializer);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="member this.ReadContent : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent serializer" />
+      <MemberSignature Language="F#" Value="member this.ReadContent : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent dataContractSerializer" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.ReadContent : System.Runtime.Serialization.XmlObjectSerializer -&gt; 'Content" Usage="xmlSyndicationContent.ReadContent serializer" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -456,13 +457,13 @@
         <TypeParameter Name="TContent" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="dataContractSerializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.1;netcore-2.2;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="serializer" Type="System.Runtime.Serialization.XmlObjectSerializer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TContent">The type of content to read.</typeparam>
         <param name="dataContractSerializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
-        <param name="serializer">The <see cref="T:System.Runtime.Serialization.XmlObjectSerializer" /> to use.</param>
+        <param name="serializer">To be added.</param>
         <summary>Reads the content of the specified type into the <see cref="T:System.ServiceModel.Syndication.XmlSyndicationContent" /> using the specified serializer.</summary>
         <returns>An object of the specified type.</returns>
         <remarks>

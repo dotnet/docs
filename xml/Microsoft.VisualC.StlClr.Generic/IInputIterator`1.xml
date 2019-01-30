@@ -61,7 +61,7 @@
       </Docs>
     </Member>
     <Member MemberName="get_cref">
-      <MemberSignature Language="C#" Value="public TValue get_cref ();" />
+      <MemberSignature Language="C#" Value="public ref TValue get_cref ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_cref() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IInputIterator`1.get_cref" />
       <MemberSignature Language="VB.NET" Value="Public Function get_cref () As TValue" />

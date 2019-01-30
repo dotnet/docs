@@ -22,13 +22,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Workflow.ComponentModel.Design.ActivityDesignerTheme(typeof(System.Workflow.ComponentModel.Design.AmbientTheme), Xml="&lt;AmbientTheme xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow" ApplyTo="System.Workflow.ComponentModel.Design.WorkflowView" ShowConfigErrors="True" DrawShadow="False" DrawGrayscale="False" DropIndicatorColor="0xFF006400" SelectionForeColor="0xFF0000FF" SelectionPatternColor="0xFF606060" ForeColor="0xFF808080" BackColor="0xFFFFFFFF" ShowGrid="False" GridColor="0xFFC0C0C0" TextQuality="Aliased" DrawRounded="True" ShowDesignerBorder="True" /&gt;")</AttributeName>
     </Attribute>
   </Attributes>

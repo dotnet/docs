@@ -422,7 +422,7 @@
       </Parameters>
       <Docs>
         <param name="importer">The <see cref="T:System.ServiceModel.Description.MetadataImporter" /> object in use.</param>
-        <param name="context">The <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> that contains both the policy assertions that can be imported and the collections of binding elements to which implementing binding elements can be added.</param>
+        <param name="policyContext">To be added.</param>
         <summary>Imports custom policy assertions and adds implementing binding elements.</summary>
         <remarks>To be added.</remarks>
       </Docs>

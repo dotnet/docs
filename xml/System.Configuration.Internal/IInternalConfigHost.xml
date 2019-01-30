@@ -97,10 +97,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DecryptSection(System::String ^ encryptedXml, System::Configuration::ProtectedConfigurationProvider ^ protectionProvider, System::Configuration::ProtectedConfigurationSection ^ protectedConfigSection);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public string DecryptSection (string encryptedXml, System.Configuration.ProtectedConfigurationProvider protectionProvider, System.Configuration.ProtectedConfigurationSection protectedSection);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DecryptSection(string encryptedXml, class System.Configuration.ProtectedConfigurationProvider protectionProvider, class System.Configuration.ProtectedConfigurationSection protectedSection) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.DecryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" />
       <MemberSignature Language="VB.NET" Value="Public Function DecryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DecryptSection(System::String ^ encryptedXml, System::Configuration::ProtectedConfigurationProvider ^ protectionProvider, System::Configuration::ProtectedConfigurationSection ^ protectedSection);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.DecryptSection (encryptedXml, protectionProvider, protectedSection)" />
+      <MemberSignature Language="F#" Value="abstract member DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.DecryptSection (encryptedXml, protectionProvider, protectedConfigSection)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member DecryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.DecryptSection (encryptedXml, protectionProvider, protectedSection)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -118,14 +119,14 @@
       <Parameters>
         <Parameter Name="encryptedXml" Type="System.String" Index="0" />
         <Parameter Name="protectionProvider" Type="System.Configuration.ProtectedConfigurationProvider" Index="1" />
-        <Parameter Name="protectedConfigSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="protectedConfigSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="protectedSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="encryptedXml">An encrypted XML string representing a configuration section.</param>
         <param name="protectionProvider">The <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object.</param>
         <param name="protectedConfigSection">The <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
-        <param name="protectedSection">The <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
+        <param name="protectedSection">To be added.</param>
         <summary>Decrypts an encrypted configuration section and returns it as a string.</summary>
         <returns>A decrypted configuration section as a string.</returns>
         <remarks>To be added.</remarks>
@@ -168,10 +169,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ EncryptSection(System::String ^ clearTextXml, System::Configuration::ProtectedConfigurationProvider ^ protectionProvider, System::Configuration::ProtectedConfigurationSection ^ protectedConfigSection);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public string EncryptSection (string encryptedXml, System.Configuration.ProtectedConfigurationProvider protectionProvider, System.Configuration.ProtectedConfigurationSection protectedSection);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string EncryptSection(string encryptedXml, class System.Configuration.ProtectedConfigurationProvider protectionProvider, class System.Configuration.ProtectedConfigurationSection protectedSection) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.EncryptSection(System.String,System.Configuration.ProtectedConfigurationProvider,System.Configuration.ProtectedConfigurationSection)" />
       <MemberSignature Language="VB.NET" Value="Public Function EncryptSection (encryptedXml As String, protectionProvider As ProtectedConfigurationProvider, protectedSection As ProtectedConfigurationSection) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ EncryptSection(System::String ^ encryptedXml, System::Configuration::ProtectedConfigurationProvider ^ protectionProvider, System::Configuration::ProtectedConfigurationSection ^ protectedSection);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.EncryptSection (encryptedXml, protectionProvider, protectedSection)" />
+      <MemberSignature Language="F#" Value="abstract member EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.EncryptSection (clearTextXml, protectionProvider, protectedConfigSection)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member EncryptSection : string * System.Configuration.ProtectedConfigurationProvider * System.Configuration.ProtectedConfigurationSection -&gt; string" Usage="iInternalConfigHost.EncryptSection (encryptedXml, protectionProvider, protectedSection)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -187,18 +189,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="clearTextXml" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="clearTextXml" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="encryptedXml" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="protectionProvider" Type="System.Configuration.ProtectedConfigurationProvider" Index="1" />
-        <Parameter Name="protectedConfigSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="protectedConfigSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="protectedSection" Type="System.Configuration.ProtectedConfigurationSection" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="clearTextXml">An XML string representing a configuration section to encrypt.</param>
-        <param name="encryptedXml">An XML string representing a configuration section to encrypt.</param>
+        <param name="encryptedXml">To be added.</param>
         <param name="protectionProvider">The <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object.</param>
         <param name="protectedConfigSection">The <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
-        <param name="protectedSection">The <see cref="T:System.Configuration.ProtectedConfigurationSection" /> object.</param>
+        <param name="protectedSection">To be added.</param>
         <summary>Encrypts a configuration section and returns it as a string.</summary>
         <returns>An encrypted configuration section represented as a string.</returns>
         <remarks>To be added.</remarks>
@@ -211,10 +213,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetConfigPathFromLocationSubPath(System::String ^ configPath, System::String ^ locationSubPath);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public string GetConfigPathFromLocationSubPath (string configPath, string locatinSubPath);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConfigPathFromLocationSubPath(string configPath, string locatinSubPath) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigPathFromLocationSubPath(System.String,System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.GetConfigPathFromLocationSubPath(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetConfigPathFromLocationSubPath (configPath As String, locatinSubPath As String) As String" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetConfigPathFromLocationSubPath(System::String ^ configPath, System::String ^ locatinSubPath);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromLocationSubPath : string * string -&gt; string" Usage="iInternalConfigHost.GetConfigPathFromLocationSubPath (configPath, locatinSubPath)" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromLocationSubPath : string * string -&gt; string" Usage="iInternalConfigHost.GetConfigPathFromLocationSubPath (configPath, locationSubPath)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigPathFromLocationSubPath : string * string -&gt; string" Usage="iInternalConfigHost.GetConfigPathFromLocationSubPath (configPath, locatinSubPath)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -231,13 +234,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="configPath" Type="System.String" Index="0" />
-        <Parameter Name="locationSubPath" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="locationSubPath" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="locatinSubPath" Type="System.String" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="configPath">A string representing the path of the application configuration file.</param>
         <param name="locationSubPath">The subpath location of the configuration file.</param>
-        <param name="locatinSubPath">The subpath location of the configuration file.</param>
+        <param name="locatinSubPath">To be added.</param>
         <summary>Returns the complete path to an application configuration file based on the location subpath.</summary>
         <returns>A string representing the complete path to an application configuration file.</returns>
         <remarks>To be added.</remarks>
@@ -472,10 +475,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(System::Configuration::Internal::IInternalConfigRoot ^ configRoot, ... cli::array &lt;System::Object ^&gt; ^ hostInitParams);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public void Init (System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitParams);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitParams) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.Init(System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Init (root As IInternalConfigRoot, ParamArray hostInitParams As Object())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(System::Configuration::Internal::IInternalConfigRoot ^ root, ... cli::array &lt;System::Object ^&gt; ^ hostInitParams);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.Init (root, hostInitParams)" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.Init (configRoot, hostInitParams)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member Init : System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.Init (root, hostInitParams)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -491,11 +495,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="configRoot" Type="System.Configuration.Internal.IInternalConfigRoot" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="configRoot" Type="System.Configuration.Internal.IInternalConfigRoot" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="root" Type="System.Configuration.Internal.IInternalConfigRoot" Index="0" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="hostInitParams" Type="System.Object[]" Index="1">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -503,7 +507,7 @@
       </Parameters>
       <Docs>
         <param name="configRoot">The configuration root object.</param>
-        <param name="root">The configuration root object.</param>
+        <param name="root">To be added.</param>
         <param name="hostInitParams">The parameter object containing the values used for initializing the configuration host.</param>
         <summary>Initializes a configuration host.</summary>
         <remarks>To be added.</remarks>
@@ -516,10 +520,11 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitForConfiguration(System::String ^ % locationSubPath, [Runtime::InteropServices::Out] System::String ^ % configPath, [Runtime::InteropServices::Out] System::String ^ % locationConfigPath, System::Configuration::Internal::IInternalConfigRoot ^ configRoot, ... cli::array &lt;System::Object ^&gt; ^ hostInitConfigurationParams);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public void InitForConfiguration (ref string locationSubPath, out string configPath, out string locationConfigPath, System.Configuration.Internal.IInternalConfigRoot root, params object[] hostInitConfigurationParams);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitForConfiguration(string&amp; locationSubPath, [out] string&amp; configPath, [out] string&amp; locationConfigPath, class System.Configuration.Internal.IInternalConfigRoot root, object[] hostInitConfigurationParams) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigHost.InitForConfiguration(System.String@,System.String@,System.String@,System.Configuration.Internal.IInternalConfigRoot,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub InitForConfiguration (ByRef locationSubPath As String, ByRef configPath As String, ByRef locationConfigPath As String, root As IInternalConfigRoot, ParamArray hostInitConfigurationParams As Object())" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitForConfiguration(System::String ^ % locationSubPath, [Runtime::InteropServices::Out] System::String ^ % configPath, [Runtime::InteropServices::Out] System::String ^ % locationConfigPath, System::Configuration::Internal::IInternalConfigRoot ^ root, ... cli::array &lt;System::Object ^&gt; ^ hostInitConfigurationParams);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, root, hostInitConfigurationParams)" />
+      <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, configRoot, hostInitConfigurationParams)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="abstract member InitForConfiguration :  *  *  * System.Configuration.Internal.IInternalConfigRoot * obj[] -&gt; unit" Usage="iInternalConfigHost.InitForConfiguration (locationSubPath, configPath, locationConfigPath, root, hostInitConfigurationParams)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -538,11 +543,11 @@
         <Parameter Name="locationSubPath" Type="System.String" RefType="ref" Index="0" />
         <Parameter Name="configPath" Type="System.String" RefType="out" Index="1" />
         <Parameter Name="locationConfigPath" Type="System.String" RefType="out" Index="2" />
-        <Parameter Name="configRoot" Type="System.Configuration.Internal.IInternalConfigRoot" Index="3" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="configRoot" Type="System.Configuration.Internal.IInternalConfigRoot" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="root" Type="System.Configuration.Internal.IInternalConfigRoot" Index="3" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="hostInitConfigurationParams" Type="System.Object[]" Index="4">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -553,7 +558,7 @@
         <param name="configPath">A string representing the path of the application configuration file.</param>
         <param name="locationConfigPath">A string representing the location of a configuration path.</param>
         <param name="configRoot">The <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</param>
-        <param name="root">The <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</param>
+        <param name="root">To be added.</param>
         <param name="hostInitConfigurationParams">The parameter object containing the values used for initializing the configuration host.</param>
         <summary>Initializes a configuration object.</summary>
         <remarks>To be added.</remarks>

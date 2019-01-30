@@ -79,7 +79,7 @@
       <Parameters>
         <Parameter Name="items" Type="System.Json.JsonValue[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -166,7 +166,7 @@
       <Parameters>
         <Parameter Name="items" Type="System.Json.JsonValue[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

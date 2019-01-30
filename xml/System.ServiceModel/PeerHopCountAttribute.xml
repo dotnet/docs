@@ -86,7 +86,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header.</summary>
-        <value><see langword="true" /> if the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the node acting in the <see cref="P:System.ServiceModel.PeerHopCountAttribute.Actor" /> role must understand this header; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,7 +178,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates whether this peer hop count is relayed to downstream nodes.</summary>
-        <value><see langword="true" /> if the peer hop count is relayed to downstream nodes; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the peer hop count is relayed to downstream nodes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -90,7 +90,7 @@
       <Parameters>
         <Parameter Name="providers" Type="System.ComponentModel.Composition.Hosting.ExportProvider[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

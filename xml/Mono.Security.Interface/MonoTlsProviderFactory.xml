@@ -87,7 +87,7 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute>
           <AttributeName>System.Obsolete("Use GetProvider() instead.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -277,7 +277,7 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute>
           <AttributeName>System.Obsolete("Use Initialize(string provider) instead.")</AttributeName>
         </Attribute>
       </Attributes>

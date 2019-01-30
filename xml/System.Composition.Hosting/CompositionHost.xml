@@ -71,7 +71,7 @@
       <Parameters>
         <Parameter Name="providers" Type="System.Composition.Hosting.Core.ExportDescriptorProvider[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

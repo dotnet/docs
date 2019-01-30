@@ -82,7 +82,7 @@
       <Parameters>
         <Parameter Name="items" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Json.JsonValue&gt;[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -200,7 +200,7 @@
       <Parameters>
         <Parameter Name="items" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Json.JsonValue&gt;[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

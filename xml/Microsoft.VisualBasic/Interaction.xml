@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
     </Attribute>
   </Attributes>
@@ -1325,9 +1325,6 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <Parameter Name="Timeout" Type="System.Int32" Index="3" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <paramref name="PathName" /> can also include the drive and the directory path or folder.  
-  
- If you do not know the path to the program, you can use the <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" /> to locate it. For example, you can call <c>My.Computer.FileSystem.GetFiles("C:\", True, "testFile.txt")</c>, which returns the full path of every file named <c>testFile.txt</c> anywhere on drive C:\\.</param>
         <param name="Pathname">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <paramref name="PathName" /> can also include the drive and the directory path or folder.  
   
  If you do not know the path to the program, you can use the <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" /> to locate it. For example, you can call <c>My.Computer.FileSystem.GetFiles("C:\", True, "testFile.txt")</c>, which returns the full path of every file named <c>testFile.txt</c> anywhere on drive C:\\.</param>

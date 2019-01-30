@@ -111,7 +111,7 @@
         <Parameter Name="format" Type="System.String" />
         <Parameter Name="value" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

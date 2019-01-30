@@ -47,7 +47,7 @@
       <Parameters>
         <Parameter Name="sortKeys" Type="System.DirectoryServices.Protocols.SortKey[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

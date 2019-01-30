@@ -11,7 +11,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ServiceModel.ServiceContract(Name="IWSTrust13Sync", Namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice")</AttributeName>
     </Attribute>
   </Attributes>
@@ -32,7 +32,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Cancel", Name="Trust13Cancel", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/CancelFinal")</AttributeName>
         </Attribute>
       </Attributes>
@@ -61,7 +61,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Cancel", Name="Trust13CancelResponse", ReplyAction="*")</AttributeName>
         </Attribute>
       </Attributes>
@@ -90,7 +90,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue", Name="Trust13Issue", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTRC/IssueFinal")</AttributeName>
         </Attribute>
       </Attributes>
@@ -119,7 +119,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Issue", Name="Trust13IssueResponse", ReplyAction="*")</AttributeName>
         </Attribute>
       </Attributes>
@@ -148,7 +148,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Renew", Name="Trust13Renew", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/RenewFinal")</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,7 +177,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Renew", Name="Trust13RenewResponse", ReplyAction="*")</AttributeName>
         </Attribute>
       </Attributes>
@@ -206,7 +206,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Validate", Name="Trust13Validate", ReplyAction="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/ValidateFinal")</AttributeName>
         </Attribute>
       </Attributes>
@@ -235,7 +235,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ServiceModel.OperationContract(Action="http://docs.oasis-open.org/ws-sx/ws-trust/200512/RSTR/Validate", Name="Trust13ValidateResponse", ReplyAction="*")</AttributeName>
         </Attribute>
       </Attributes>

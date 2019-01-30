@@ -143,7 +143,7 @@
         <Parameter Name="createType" Type="System.CodeDom.CodeTypeReference" />
         <Parameter Name="initializers" Type="System.CodeDom.CodeExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -239,7 +239,7 @@
         <Parameter Name="createType" Type="System.String" />
         <Parameter Name="initializers" Type="System.CodeDom.CodeExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -335,7 +335,7 @@
         <Parameter Name="createType" Type="System.Type" />
         <Parameter Name="initializers" Type="System.CodeDom.CodeExpression[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

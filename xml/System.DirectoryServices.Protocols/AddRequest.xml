@@ -74,7 +74,7 @@
         <Parameter Name="distinguishedName" Type="System.String" />
         <Parameter Name="attributes" Type="System.DirectoryServices.Protocols.DirectoryAttribute[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -17,7 +17,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
   </Attributes>
@@ -55,11 +55,11 @@ Unlike some other enumerator structures in .NET, the <xref:System.ReadOnlySpan`1
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2">
           <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
+      <ReturnValue RefType="Ref">
         <ReturnType>T&amp;</ReturnType>
       </ReturnValue>
       <Docs>

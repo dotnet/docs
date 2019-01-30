@@ -22,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,7 +64,8 @@
       <Docs>
         <param name="other">The object to compare against.</param>
         <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> to the specified object.</summary>
-        <returns><see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.Peer" />
         <altmember cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />

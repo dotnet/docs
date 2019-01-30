@@ -105,7 +105,7 @@
       <Parameters>
         <Parameter Name="catalogs" Type="System.ComponentModel.Composition.Primitives.ComposablePartCatalog[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

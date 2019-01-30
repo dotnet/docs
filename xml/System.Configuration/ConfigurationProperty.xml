@@ -127,9 +127,10 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -144,14 +145,14 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" Index="0" />
         <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="default_value">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -184,9 +185,10 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::Configuration::ConfigurationPropertyOptions options);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.Configuration.ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, valuetype System.Configuration.ConfigurationPropertyOptions flags) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.Configuration.ConfigurationPropertyOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value, System::Configuration::ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, flags)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue, options)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, flags)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -201,18 +203,18 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" Index="0" />
         <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="3" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="flags" Type="System.Configuration.ConfigurationPropertyOptions" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="default_value">To be added.</param>
         <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
-        <param name="flags">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
+        <param name="flags">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -240,9 +242,10 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::ComponentModel::TypeConverter ^ typeConverter, System::Configuration::ConfigurationValidatorBase ^ validator, System::Configuration::ConfigurationPropertyOptions options);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.ComponentModel.TypeConverter converter, System.Configuration.ConfigurationValidatorBase validation, System.Configuration.ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, class System.ComponentModel.TypeConverter converter, class System.Configuration.ConfigurationValidatorBase validation, valuetype System.Configuration.ConfigurationPropertyOptions flags) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value, System::ComponentModel::TypeConverter ^ converter, System::Configuration::ConfigurationValidatorBase ^ validation, System::Configuration::ConfigurationPropertyOptions flags);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue, typeConverter, validator, options)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -257,26 +260,26 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" Index="0" />
         <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="converter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="validation" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="flags" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="default_value">To be added.</param>
         <param name="typeConverter">The type of the converter to apply.</param>
-        <param name="converter">The type of the converter to apply.</param>
+        <param name="converter">To be added.</param>
         <param name="validator">The validator to use.</param>
-        <param name="validation">The validator to use.</param>
+        <param name="validation">To be added.</param>
         <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
-        <param name="flags">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
+        <param name="flags">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -304,9 +307,10 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ defaultValue, System::ComponentModel::TypeConverter ^ typeConverter, System::Configuration::ConfigurationValidatorBase ^ validator, System::Configuration::ConfigurationPropertyOptions options, System::String ^ description);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
       <MemberSignature Language="C#" Value="public ConfigurationProperty (string name, Type type, object default_value, System.ComponentModel.TypeConverter converter, System.Configuration.ConfigurationValidatorBase validation, System.Configuration.ConfigurationPropertyOptions flags, string description);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object default_value, class System.ComponentModel.TypeConverter converter, class System.Configuration.ConfigurationValidatorBase validation, valuetype System.Configuration.ConfigurationPropertyOptions flags, string description) cil managed" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)" FrameworkAlternate="xamarinmac-3.0;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;netcore-2.2;dotnet-plat-ext-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationProperty.#ctor(System.String,System.Type,System.Object,System.ComponentModel.TypeConverter,System.Configuration.ConfigurationValidatorBase,System.Configuration.ConfigurationPropertyOptions,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationProperty(System::String ^ name, Type ^ type, System::Object ^ default_value, System::ComponentModel::TypeConverter ^ converter, System::Configuration::ConfigurationValidatorBase ^ validation, System::Configuration::ConfigurationPropertyOptions flags, System::String ^ description);" FrameworkAlternate="xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags, description)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, defaultValue, typeConverter, validator, options, description)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationProperty : string * Type * obj * System.ComponentModel.TypeConverter * System.Configuration.ConfigurationValidatorBase * System.Configuration.ConfigurationPropertyOptions * string -&gt; System.Configuration.ConfigurationProperty" Usage="new System.Configuration.ConfigurationProperty (name, type, default_value, converter, validation, flags, description)" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -321,13 +325,13 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" Index="0" />
         <Parameter Name="type" Type="System.Type" Index="1" />
-        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="defaultValue" Type="System.Object" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="default_value" Type="System.Object" Index="2" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="converter" Type="System.ComponentModel.TypeConverter" Index="3" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="validator" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="validation" Type="System.Configuration.ConfigurationValidatorBase" Index="4" FrameworkAlternate="xamarinmac-3.0" />
-        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netcore-2.1;netframework-4.8;dotnet-plat-ext-2.1;netcore-2.2;dotnet-plat-ext-2.2" />
+        <Parameter Name="options" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="flags" Type="System.Configuration.ConfigurationPropertyOptions" Index="5" FrameworkAlternate="xamarinmac-3.0" />
         <Parameter Name="description" Type="System.String" Index="6" />
       </Parameters>
@@ -335,13 +339,13 @@
         <param name="name">The name of the configuration entity.</param>
         <param name="type">The type of the configuration entity.</param>
         <param name="defaultValue">The default value of the configuration entity.</param>
-        <param name="default_value">The default value of the configuration entity.</param>
+        <param name="default_value">To be added.</param>
         <param name="typeConverter">The type of the converter to apply.</param>
-        <param name="converter">The type of the converter to apply.</param>
+        <param name="converter">To be added.</param>
         <param name="validator">The validator to use.</param>
-        <param name="validation">The validator to use.</param>
+        <param name="validation">To be added.</param>
         <param name="options">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
-        <param name="flags">One of the <see cref="T:System.Configuration.ConfigurationPropertyOptions" /> enumeration values.</param>
+        <param name="flags">To be added.</param>
         <param name="description">The description of the configuration entity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationProperty" /> class.</summary>
         <remarks>

@@ -68,7 +68,7 @@
         <Parameter Name="searchScope" Type="System.DirectoryServices.Protocols.SearchScope" />
         <Parameter Name="attributeList" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

@@ -218,7 +218,8 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.InsertItem (index, kind)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.InsertItem (index, item)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.InsertItem (index, kind)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -235,13 +236,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" Index="0" />
-        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <paramref name="item" /> should be inserted.</param>
         <param name="item">The object to insert into the collection.</param>
-        <param name="kind">The object to insert into the collection.</param>
+        <param name="kind">To be added.</param>
         <summary>Inserts an element into the collection at a specific location.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -332,7 +333,8 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.SetItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.SetItem (index, kind)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.SetItem (index, item)" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.SetItem (index, kind)" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -349,13 +351,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" Index="0" />
-        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the <paramref name="item" /> to be replaced.</param>
         <param name="item">The object to add to the collection.</param>
-        <param name="kind">The object to add to the collection.</param>
+        <param name="kind">To be added.</param>
         <summary>Replaces the item at the specified index with a new object.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">

@@ -139,7 +139,8 @@
         <param name="expando">The Expando object.</param>
         <param name="version">The version to check.</param>
         <summary>Checks the version of the Expando object.</summary>
-        <returns><see langword="true" /> if the version is equal; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the version is equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

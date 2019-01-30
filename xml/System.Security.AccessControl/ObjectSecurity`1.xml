@@ -607,7 +607,8 @@
       <Docs>
         <param name="rule">The rule to remove.</param>
         <summary>Removes access rules that contain the same security identifier and access mask as the specified access rule from the Discretionary Access Control List (DACL) associated with this ObjectSecurity`1 object.</summary>
-        <returns><see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the access rule was successfully removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -704,7 +705,8 @@
       <Docs>
         <param name="rule">The audit rule to remove</param>
         <summary>Removes audit rules that contain the same security identifier and access mask as the specified audit rule from the System Access Control List (SACL) associated with this ObjectSecurity`1 object.</summary>
-        <returns><see langword="true" /> if the object was removed; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if the object was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

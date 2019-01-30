@@ -595,7 +595,7 @@
         <Parameter Name="regionName" Type="System.String" />
         <Parameter Name="keys" Type="System.String[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-plat-ext-2.1">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>

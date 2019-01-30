@@ -1059,7 +1059,8 @@ schemaColl.Add("urn:author", "names.xsd");
       </ReturnValue>
       <Docs>
         <summary>For a description of this member, see <see cref="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#IsSynchronized" />.</summary>
-        <value><see langword="true" /> if the collection is synchronized; otherwise, <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the collection is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

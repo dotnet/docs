@@ -1435,7 +1435,7 @@ If `comparand` and the object in `location1` are equal by reference, then `value
       <Parameters />
       <Docs>
         <summary>Provides a process-wide memory barrier that ensures that reads and writes from any CPU cannot move across the barrier.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 The `MemoryBarrierProcessWide` method differs from the "normal" <xref:System.Threading.Interlocked.MemoryBarrier%2A> method as follows:
@@ -1451,7 +1451,7 @@ The `MemoryBarrierProcessWide` method also suffers from all the subtleties of lo
 This method wraps a call to [FlushProcessWriteBuffers](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-flushprocesswritebuffers) on Windows and [sys_membarrier](https://lore.kernel.org/patchwork/patch/188708/) on Linux.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Read">

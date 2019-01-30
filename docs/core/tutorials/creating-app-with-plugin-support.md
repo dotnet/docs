@@ -17,14 +17,16 @@ This tutorial shows you how to:
 
 ## Prerequisites
 
-- Install the [.NET Core 3.0 Preview 3 SDK](https://www.microsoft.com/net/core) or a newer version.
+- Install the [.NET Core 3.0 Preview 2 SDK](https://www.microsoft.com/net/core) or a newer version.
 
 ## Create the application
 
-The first step is to create the application: 
+The first step is to create the application:
+
 1. Create a new folder, and in that folder run `dotnet new console -o AppWithPlugin`. 
 2. To make building the project easier, create a Visual Studio solution file. Run `dotnet new sln` in the same folder. 
-3. Run `dotnet sln add AppWithPlugin/AppWithPlugin.csproj` to add the app project to the solution. 
+3. Run `dotnet sln add AppWithPlugin/AppWithPlugin.csproj` to add the app project to the solution.
+
 Now we can fill in the skeleton of our application. Replace the code in the *AppWithPlugin/Program.cs* file with the following code:
 
 ```csharp

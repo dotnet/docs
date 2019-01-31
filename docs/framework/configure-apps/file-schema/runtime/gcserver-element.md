@@ -76,4 +76,4 @@ Specifies whether the common language runtime runs server garbage collection.
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How to: Disable Concurrent Garbage Collection](/previous-versions/dotnet/netframework-4.0/at1stbec(v=vs.100))
+- [To disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)

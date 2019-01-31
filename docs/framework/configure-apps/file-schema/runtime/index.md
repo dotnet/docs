@@ -127,5 +127,5 @@ Runtime settings are used by the common language runtime to configure applicatio
   
 ## See also
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How to: Disable Concurrent Garbage Collection](/previous-versions/dotnet/netframework-4.0/at1stbec(v=vs.100))
+- [To disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)
 - [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)

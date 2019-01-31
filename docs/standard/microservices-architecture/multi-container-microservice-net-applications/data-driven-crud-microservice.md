@@ -3,7 +3,7 @@ title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data driven) microservice within the context of a microservices application.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/02/2018
+ms.date: 01/07/2019
 ---
 # Creating a simple data-driven CRUD microservice
 
@@ -420,10 +420,10 @@ It is that simple. And because it is automatically generated, the Swagger metada
   [*https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger*](https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 - **Get started with Swashbuckle and ASP.NET Core** \
-  [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml*](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml)
+  [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio*](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle?tabs=visual-studio)
 
 - **Get started with NSwag and ASP.NET Core** \
-  [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-nswag?view=aspnetcore-2.1\&tabs=visual-studio%2Cvisual-studio-xml)
+  [*https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio*](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-nswag?tabs=visual-studio)
 
 >[!div class="step-by-step"]
 >[Previous](microservice-application-design.md)

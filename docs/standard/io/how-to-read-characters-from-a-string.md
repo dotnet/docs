@@ -1,6 +1,6 @@
 ---
-title: "How to: Read Characters from a String"
-ms.date: "03/30/2017"
+title: "How to: Read characters from a string"
+ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -16,31 +16,30 @@ ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# How to: Read Characters from a String
-The following code examples show how to read characters synchronously and asynchronously from a string.  
+# How to: Read characters from a string
+The following code examples show how to read characters synchronously or asynchronously from a string.  
   
-## Example  
- This example reads 13 characters synchronously from a string, stores them in an array, and displays those characters. It then reads the remaining characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.  
+## Example: Read characters synchronously 
+ This example reads 13 characters synchronously from a string, stores them in an array, and displays them. The example then reads the rest of the characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.  
   
- [!code-cpp[Conceptual.StringReader#1](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.stringreader/cpp/source.cpp#1)]
  [!code-csharp[Conceptual.StringReader#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source.cs#1)]
  [!code-vb[Conceptual.StringReader#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source.vb#1)]  
   
-## Example  
- The next example reads all the characters asynchronously from a <xref:System.Windows.Controls.TextBox> control, and stores them in an array. It then asynchronously writes each letter or white space character on a separate line followed by a line break to a <xref:System.Windows.Controls.TextBlock> control.  
+## Example: Read characters asynchronously  
+ The next example is the code behind a WPF app. On window load, the example asynchronously reads all characters from a <xref:System.Windows.Controls.TextBox> control and stores them in an array. It then asynchronously writes each letter or white-space character to a separate line of a <xref:System.Windows.Controls.TextBlock> control.  
   
- [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source2.cs#2)]
- [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.stringreader/vb/source2.vb#2)]  
+ [!code-csharp[Conceptual.StringReader#2](../../../samples/snippets/csharp/VS_Snippets_Wpf/StringReaderWriter/MainWindow.xaml.cs)]
+ [!code-vb[Conceptual.StringReader#2](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/StringReaderWriter/MainWindow.xaml.vb)]  
   
 ## See also
 
-- <xref:System.IO.StringReader>
-- <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>
-- [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)
-- [NIB: How to: Create a Directory Listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)
-- [How to: Read and Write to a Newly Created Data File](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)
-- [How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)
-- [How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)
-- [How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)
-- [How to: Write Characters to a String](../../../docs/standard/io/how-to-write-characters-to-a-string.md)
-- [File and Stream I/O](../../../docs/standard/io/index.md)
+- <xref:System.IO.StringReader>  
+- <xref:System.IO.StringReader.Read%2A?displayProperty=nameWithType>  
+- [Asynchronous file I/O](../../../docs/standard/io/asynchronous-file-i-o.md)  
+- [How to: Create a directory listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69)  
+- [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Open and append to a log file](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)  
+- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
+- [How to: Write characters to a string](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
+- [File and stream I/O](../../../docs/standard/io/index.md)

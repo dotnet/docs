@@ -3,7 +3,6 @@
 ### [Threads and Threading](threads-and-threading.md)
 ### [Exceptions in Managed Threads](exceptions-in-managed-threads.md)
 ### [Synchronizing Data for Multithreading](synchronizing-data-for-multithreading.md)
-### [Managed Thread States](managed-thread-states.md)
 ### [Foreground and Background Threads](foreground-and-background-threads.md)
 ### [Managed and Unmanaged Threading in Windows](managed-and-unmanaged-threading-in-windows.md)
 ### [Thread.Suspend, Garbage Collection, and Safe Points](thread-suspend-garbage-collection-and-safe-points.md)

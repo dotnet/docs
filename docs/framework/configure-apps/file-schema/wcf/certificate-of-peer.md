@@ -57,7 +57,7 @@ Specifies a certificate used by a peer.
 - <xref:System.ServiceModel.Security.PeerCredential>
 - [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
-- [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Peer Channel Custom Authentication](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Securing Peer Channel Applications](../../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)
 - [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)

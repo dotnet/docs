@@ -74,4 +74,4 @@ Specifies that an application can reference the same assembly in two different i
   
 ## See also
 - [/appconfig (C# Compiler Options)](../../../../../docs/csharp/language-reference/compiler-options/appconfig-compiler-option.md)
-- [.NET Framework Assembly Unification Overview](/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))
+- [.NET Framework Assembly Unification Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))

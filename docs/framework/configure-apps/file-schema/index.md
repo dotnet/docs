@@ -87,14 +87,14 @@ All elements of the Windows Identity Foundation (WIF) configuration schema.
 
 ## Related sections
 
-[Remoting Settings Schema](/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100))
+[Remoting Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/z415cf9a(v=vs.100))
 Describes the elements that configure client and server applications that implement remoting.
 
-[ASP.NET Settings Schema](/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100))
+[ASP.NET Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100))
 Describes the elements that control the behavior of ASP.NET Web applications.
 
-[Web Services Settings Schema](/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100))
+[Web Services Settings Schema](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cctwteet(v=vs.100))
 Describes the elements that control the behavior of ASP.NET Web services and their clients.
 
-[Configuring .NET Framework Apps](/previous-versions/dotnet/netframework-4.0/kza1yk3a(v=vs.100))
+[Configuring .NET Framework Apps](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kza1yk3a(v=vs.100))
 Describes how to configure security, assembly binding, and remoting in the .NET Framework.

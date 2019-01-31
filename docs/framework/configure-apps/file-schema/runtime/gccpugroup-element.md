@@ -69,5 +69,5 @@ Specifies whether garbage collection supports multiple CPU groups.
 ## See also
 - [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How to: Disable Concurrent Garbage Collection](/previous-versions/dotnet/netframework-4.0/at1stbec(v=vs.100))
+- [To disable concurrent garbage collection](gcconcurrent-element.md#to-disable-background-garbage-collection)
 - [Workstation and server garbage collection](../../../../../docs/standard/garbage-collection/fundamentals.md#workstation_and_server_garbage_collection)

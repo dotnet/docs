@@ -91,6 +91,6 @@ Giraffe g2 = (Giraffe) a;
 - [explicit](../../../csharp/language-reference/keywords/explicit.md)
 - [implicit](../../../csharp/language-reference/keywords/implicit.md)
 - [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)
-- [Generalized Type Conversion](/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
+- [Generalized Type Conversion](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
 - [Exported Type Conversion](/previous-versions/dotnet/netframework-4.0/46f8ac6z(v=vs.100))
 - [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)

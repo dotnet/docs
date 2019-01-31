@@ -40,7 +40,7 @@ A [delegate](../../../csharp/language-reference/keywords/delegate.md) is a type 
   
 -   [Using Delegates](../../../csharp/programming-guide/delegates/using-delegates.md)  
   
--   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
+-   [When to Use Delegates Instead of Interfaces (C# Programming Guide)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms173173(v=vs.100))  
   
 -   [Delegates with Named vs. Anonymous Methods](../../../csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md)  
   

@@ -43,8 +43,6 @@
 ## Examples  
  The following example creates a <xref:System.IO.FileSystemWatcher> to watch the directory that is specified at runtime. The component is set to watch for any changes in LastWrite and LastAccess time, the creation, deletion, or renaming of text files in the directory. If a file is changed, created, or deleted, the path to the file prints to the console. When a file is renamed, the old and new paths print to the console.  
   
- Use the <xref:System.Diagnostics> and <xref:System.IO> namespaces for this example.  
-  
  [!code-cpp[Classic NotifyFilters Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic NotifyFilters Example/CPP/source.cpp#1)]
  [!code-csharp[Classic NotifyFilters Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic NotifyFilters Example/CS/source.cs#1)]
  [!code-vb[Classic NotifyFilters Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic NotifyFilters Example/VB/source.vb#1)]  

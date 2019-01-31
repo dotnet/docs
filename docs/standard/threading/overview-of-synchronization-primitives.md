@@ -106,7 +106,7 @@ The behavior of an <xref:System.Threading.EventWaitHandle> that has been signale
 
 On Windows, you can use <xref:System.Threading.EventWaitHandle> for the inter-process synchronization. To do that, create a <xref:System.Threading.EventWaitHandle> instance that represents a named system synchronization event by using one of the [EventWaitHandle constructors](<xref:System.Threading.EventWaitHandle.%23ctor%2A>) that specifies a name or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> method.
 
-For more information, see the [EventWaitHandle](eventwaithandle.md) and [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md) articles. For the API reference, see <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.ManualResetEventSlim>.
+For more information, see the [EventWaitHandle](eventwaithandle.md) article. For the API reference, see <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.ManualResetEventSlim>.
 
 ### CountdownEvent class
 

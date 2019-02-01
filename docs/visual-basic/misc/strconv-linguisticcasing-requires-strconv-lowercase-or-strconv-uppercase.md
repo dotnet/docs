@@ -11,7 +11,3 @@ You have attempted to use `StrConv.LinguisticCasing`, which is only valid in com
 ## To correct this error  
   
 1.  Use `StrConv.LowerCase` or `StrConv.UpperCase` in conjunction with `StrConv.LinguisticCasing`.  
-  
-## See also
-
-- [StrConv Constant Changes in Visual Basic .NET](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/d3sz0f8a(v=vs.90))

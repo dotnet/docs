@@ -1,10 +1,10 @@
 ---
 title: Use ML.NET in a GitHub issue multiclass classification scenario
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 01/24/2019
+ms.date: 02/01/2019
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification task so that I can understand how to classify GitHGub issues to assign them to a given area.
+#Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to classify GitHGub issues to assign them to a given area.
 ---
 # Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues.
 
@@ -13,14 +13,13 @@ This sample tutorial illustrates using ML.NET to create a GitHub issue classifie
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Select the appropriate machine learning task
+> * Select the appropriate machine learning algorithm
 > * Prepare your data
-> * Create the learning pipeline
-> * Load a classifier
+> * Extract Features and transform the data
 > * Train the model
 > * Evaluate the model with a different dataset
-> * Predict a single instance of test data outcome with the model
-> * Predict the test data outcomes with a loaded model
+> * Predict a single instance of test data outcome with the trained model
+> * Predict a single instance of test data with a loaded model
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
@@ -67,7 +66,7 @@ You can break down the problem to the following:
 
 You then need to **determine** the area, which helps you with the machine learning task selection.
 
-## Select the appropriate machine learning task
+## Select the appropriate machine learning algorithm
 
 With this problem, you know the following facts:
 
@@ -86,23 +85,23 @@ Predict the **Area** of a new GitHub Issue such as in the following examples:
 * Contract.Assert vs Debug.Assert
 * Make fields readonly in System.Xml
 
-The classification machine learning task is best suited for this scenario.
+The classification machine learning algorithm is best suited for this scenario.
 
-### About the classification task
+### About the classification learning algorithm
 
-Classification is a machine learning task that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
+Classification is a machine learning algorithm that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
 
 * Identify sentiment as positive or negative.
 * Classify email as spam, junk, or good.
 * Determine whether a patient's lab sample is cancerous.
 * Categorize customers by their propensity to respond to a sales campaign.
 
-Classification tasks are frequently one of the following types:
+Classification learning algorithm use cases are frequently one of the following types:
 
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
 
-For this type of problem, use a Multiclass classification task, since your issue category prediction can be one of multiple categories (multiclass) rather than just two (binary).
+For this type of problem, use a Multiclass classification learning algorithm, since your issue category prediction can be one of multiple categories (multiclass) rather than just two (binary).
 
 ## Create a console application
 
@@ -130,7 +129,7 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddUsings)]
 
-You need to create three global fields to hold the paths to the recently downloaded files, and a global variable for the `TextLoader`:
+You need to create three global fields to hold the paths to the recently downloaded files, and global variables for the `MLContext`,`DataView`, `PredictionEngine`, and `TextLoader`:
 
 * `_trainDataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
@@ -179,7 +178,7 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext` 
 
 Next, initialize the `_trainingDataView` <xref:Microsoft.ML.Data.IDataView> global variable and load the data with the `_trainDataPath` parameter.
 
- As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
+ As the input and output of [`Transforms`](../basic-concepts-model-training-in-mldotnet#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
 In ML.NET, data is similar to a `SQL view`. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with issue titles, descriptions, and corresponding area GitHub label. The `DataView` is used to create and train the model.
 
@@ -219,11 +218,11 @@ public static EstimatorChain<ITransformer> ProcessData()
 }
 ```
 
-## Extract and transform the data
+## Extract Features and transform the data
 
 Pre-processing and cleaning data are important tasks that occur before a dataset is used effectively for machine learning. Raw data is often noisy and unreliable, and may be missing values. Using data without these modeling tasks can produce misleading results.
 
-ML.NET's transform pipelines compose a custom set of transforms that are applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
+ML.NET's transform pipelines compose a custom set of `transforms` that are applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
 In the next steps, we refer to the columns by the names defined in the `GitHubIssue` class.
 
@@ -231,8 +230,7 @@ When the model is trained and evaluated, by default, the values in the **Label**
 
 [!code-csharp[MapValueToKey](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#MapValueToKey)]
 
-The algorithm that trains the model requires **numeric** features, so you have Next, call `mlContext.Transforms.Text.FeaturizeText` which featurizes the text (`Title` and `Description`) columns into a numeric vector for each called `TitleFeaturized` and `DescriptionFeaturized`. Featurizing assigns different numeric key values to the different values in each of the columns and is used by the machine learning algorithm.
-Append the featurization for both columns to the pipeline with the following code:
+ Featurizing assigns different numeric key values to the different values in each of the columns and is used by the machine learning algorithm. Next, call `mlContext.Transforms.Text.FeaturizeText` which featurizes the text (`Title` and `Description`) columns into a numeric vector for each called `TitleFeaturized` and `DescriptionFeaturized`. Append the featurization for both columns to the pipeline with the following code:
 
 [!code-csharp[FeaturizeText](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#FeaturizeText)]
 
@@ -240,7 +238,7 @@ The last step in data preparation combines all of the feature columns into the *
 
 [!code-csharp[Concatenate](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Concatenate)]
 
- Next, append a <xref:Microsoft.ML.Data.EstimatorChain`1.AppendCacheCheckpoint%2A> to cache the DataView so when you iterate over the data multiple times using the cache might get better performance, as with the following code
+ Next, append a <xref:Microsoft.ML.Data.EstimatorChain`1.AppendCacheCheckpoint%2A> to cache the DataView so when you iterate over the data multiple times using the cache might get better performance, as with the following code:
 
 [!code-csharp[AppendCache](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AppendCache)]
 
@@ -267,7 +265,7 @@ The `BuildAndTrainModel` method executes the following tasks:
 Create the `BuildAndTrainModel` method, just after the `Main` method, using the following code:
 
 ```csharp
-public static void BuildAndTrainModel()
+public static EstimatorChain<KeyToValueMappingTransformer> BuildAndTrainModel(IDataView trainingDataView, EstimatorChain<ITransformer> pipeline)
 {
 
 }
@@ -277,15 +275,15 @@ Notice that two parameters are passed into the BuildAndTrainModel method; an `ID
 
  Add the following code as the first line of the `BuildAndTrainModel` method:
 
-### Choose a trainer algorithm
+### Choose a learning algorithm
 
-To add the trainer algorithm, call the `mlContext.Transforms.Text.FeaturizeText` wrapper method which returns a <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object. This is a decision tree learner you'll use in this pipeline. The `SdcaMultiClassTrainer` is appended to the `pipeline` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data.
+To add the learning algorithm, use the <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object. This is a decision tree learner you'll use in this pipeline. The `SdcaMultiClassTrainer` is appended to the `pipeline` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data.
 
 Add the following code to the `BuildAndTrainModel` method:
 
 [!code-csharp[SdcaMultiClassTrainer](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SdcaMultiClassTrainer)]
 
-Now that you've created a trainer algorithm, append it to the `pipeline`. You also need to map the label to the value to return to its original readable state. Do both of those actions with the following code:
+Now that you've created a learning algorithm, append it to the `pipeline`. You also need to map the label to the value to return to its original readable state. Do both of those actions with the following code:
 
 [!code-csharp[AddTrainer](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddTrainer)]
 
@@ -299,7 +297,7 @@ Add the following code to the `BuildAndTrainModel` method:
 
 While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the next line in the `BuildAndTrainModel` Method:
 
-[!code-csharp[CreatePredictionEngine](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreatePredictionEngine)]
+[!code-csharp[CreatePredictionEngine1](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreatePredictionEngine1)]
 
 Add a GitHub issue to test the trained model's prediction in the `Predict` method by creating an instance of `GitHubIssue`:
 
@@ -315,40 +313,11 @@ Display `GitHubIssue` and corresponding `Area` label prediction in order to shar
 
 [!code-csharp[OutputPrediction](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#OutputPrediction)]
 
-### Save and return the model trained to use for evaluation
-
-At this point, you have a model of type <xref:Microsoft.ML.Data.TransformerChain%601> that can be integrated into any of your existing or new .NET applications. To save your trained model to a .zip file, add the following code to call the `SaveModelAsFile` method as the next line in `BuildAndTrainModel`:
-
-[!code-csharp[CallSaveModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallSaveModel)]
+### Return the model trained to use for evaluation
 
 Return the model at the end of the `BuildAndTrainModel` method.
 
 [!code-csharp[ReturnModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#ReturnModel)]
-
-## Save the model as a.zip file
-
-Create the `SaveModelAsFile` method, just after the `BuildAndTrainModel` method, using the following code:
-
-```csharp
-private static void SaveModelAsFile(MLContext mlContext, ITransformer model)
-{
-
-}
-```
-
-The `SaveModelAsFile` method executes the following tasks:
-
-* Saves the model as a .zip file.
-
-Next, create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Data.TransformerChain%601.SaveTo(Microsoft.ML.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. To save this as a zip file, you'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
-
-[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SaveModel)]
-
-You could also display where the file was written by writing a console message with the `_modelPath`, using the following code:
-
-```csharp
-Console.WriteLine("The model is saved to {0}", _modelPath);
-```
 
 ## Evaluate the model
 
@@ -398,13 +367,44 @@ Use the following code to display the metrics, share the results, and then act o
 
 [!code-csharp[DisplayMetrics](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#DisplayMetrics)]
 
+### Save the trained and evaluated model
+
+At this point, you have a model of type <xref:Microsoft.ML.Data.TransformerChain%601> that can be integrated into any of your existing or new .NET applications. To save your trained model to a .zip file, add the following code to call the `SaveModelAsFile` method as the next line in `BuildAndTrainModel`:
+
+[!code-csharp[CallSaveModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallSaveModel)]
+
+## Save the model as a .zip file
+
+Create the `SaveModelAsFile` method, just after the `Evaluate` method, using the following code:
+
+```csharp
+private static void SaveModelAsFile(MLContext mlContext, ITransformer model)
+{
+
+}
+```
+
+The `SaveModelAsFile` method executes the following tasks:
+
+* Saves the model as a .zip file.
+
+Next, create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Data.TransformerChain%601.SaveTo(Microsoft.ML.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. To save this as a zip file, you'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+
+[!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SaveModel)]
+
+You could also display where the file was written by writing a console message with the `_modelPath`, using the following code:
+
+```csharp
+Console.WriteLine("The model is saved to {0}", _modelPath);
+```
+
 ## Predict the test data outcome with the saved model
 
 Add a call to the new method from the `Main` method, right under the `Evaluate` method call, using the following code:
 
 [!code-csharp[CallPredictIssue](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CallPredictIssue)]
 
-Create the `PredictIssue` method, just after the `Evaluate` method, using the following code:
+Create the `PredictIssue` method, just after the `Evaluate` method (and just before the `SaveModelAsFile` method), using the following code:
 
 ```csharp
 private static void PredictIssue()
@@ -465,13 +465,13 @@ Congratulations! You've now successfully built a machine learning model for clas
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Select the appropriate machine learning task
+> * Select the appropriate machine learning algorithm
 > * Prepare your data
-> * Create the learning pipeline
-> * Load a classifier
+> * Extract Features and transform the data
 > * Train the model
 > * Evaluate the model with a different dataset
-> * Predict the test data outcomes with the model
+> * Predict a single instance of test data outcome with the trained model
+> * Predict a single instance of test data with a loaded model
 
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]

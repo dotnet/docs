@@ -127,6 +127,10 @@ However, there is one important exception. The default (uninitialized) value of 
 [!code-csharp[Conceptual.Calendars#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.calendars/cs/minsupporteddatetime1.cs#11)]
 [!code-vb[Conceptual.Calendars#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.calendars/vb/minsupporteddatetime1.vb#11)]
 
+### Calendars, eras, and date ranges
+
+Two calendars, the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, support more than one era. (For more information on calendar eras, see the [Working with eras](#working-with-eras) section.) When you instantiate a date using these calendars, you either explicitly or implicitly specify the era to which the date applies. Ordinarily, if the date is not valid in that particular era, the date overflows to the following era. For example,  
+
 ## Working with eras
 
 Calendars typically divide dates into eras. However, the <xref:System.Globalization.Calendar> classes in .NET do not support every era defined by a calendar, and most of the <xref:System.Globalization.Calendar> classes support only a single era. Only the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> classes support multiple eras.
@@ -134,7 +138,7 @@ Calendars typically divide dates into eras. However, the <xref:System.Globalizat
 > [!IMPORTANT]
 >  A new era in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar> begins on May 1, 2019. This change affects all applications that use these calendars. See [Handling a new era in the Japanese calendar in .NET](https://blogs.msdn.microsoft.com/dotnet/2018/11/14/handling-a-new-era-in-the-japanese-calendar-in-net/) for more information and to determine whether your applications are affected. See [Prepare your application for the Japanese era change](/windows/uwp/design/globalizing/japanese-era-change) for information on testing your applications on Windows to ensure their readiness for the era change.
 
-An era in most calendars denotes an extremely long time period. In the Gregorian calendar, for example, the current era spans more than two millenia. For the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, the two calendars that support multiple eras, this is not the case. An era corresponds to the period of an emperor's reign. Support for multiple eras, particularly when the upper limit of the current era is unknown, poses special challenges. For more information, 
+An era in most calendars denotes an extremely long time period. In the Gregorian calendar, for example, the current era spans more than two millenia. For the <xref:System.Globalization.JapaneseCalendar> and the <xref:System.Globalization.JapaneseLunisolarCalendar>, the two calendars that support multiple eras, this is not the case. An era corresponds to the period of an emperor's reign. Support for multiple eras, particularly when the upper limit of the current era is unknown, poses special challenges. For more information, see [Handling eras in the Japanese calendars](handling-eras.md).
 
 ### Instantiating a date with an era
 

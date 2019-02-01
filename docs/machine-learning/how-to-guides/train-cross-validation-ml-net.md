@@ -1,7 +1,7 @@
 ---
 title: Train a machine learning model using cross-validation - ML.NET
 description: Discover how to train a machine learning model using cross-validation with ML.NET to have a greater level of accuracy for the model's predictions
-ms.date: 11/07/2018
+ms.date: 02/01/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model using cross-validation with ML.NET so that I can have a greater level of accuracy for my model's predictions.
 ---
@@ -20,19 +20,23 @@ var mlContext = new MLContext();
 
 // Step one: read the data as an IDataView.
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new TextLoader.Arguments
-{
-    Column = new[] {
-        // We read the first 11 values as a single float vector.
-        new TextLoader.Column("SepalLength", DataKind.R4, 0),
-        new TextLoader.Column("SepalWidth", DataKind.R4, 1),
-        new TextLoader.Column("PetalLength", DataKind.R4, 2),
-        new TextLoader.Column("PetalWidth", DataKind.R4, 3),
+var reader = mlContext.Data.CreateTextReader(
+    columns: new TextLoader.Column[]
+    {
+        // The four features of the Iris dataset will be grouped together as one Features column.
+        new TextLoader.Column("SepalLength",DataKind.R4,0),
+        new TextLoader.Column("SepalWidth",DataKind.R4,1),
+        new TextLoader.Column("PetalLength",DataKind.R4,2),
+        new TextLoader.Column("PetalWidth",DataKind.R4,3),
         // Label: kind of iris.
-        new TextLoader.Column("Label", DataKind.TX, 4),
+        new TextLoader.Column("Label",DataKind.TX,4)
     },
-    Separator = ","
-});
+    // Default separator is tab, but the dataset has semicolon.
+    separatorChar: ',',
+    // First line of the file is a header, not a data row.
+    hasHeader: true
+);
+
 
 // Read the data.
 var data = reader.Read(dataPath);
@@ -42,7 +46,7 @@ var dynamicPipeline =
     // Concatenate all the features together into one column 'Features'.
     mlContext.Transforms.Concatenate("Features", "SepalLength", "SepalWidth", "PetalLength", "PetalWidth")
     // Note that the label is text, so it needs to be converted to key.
-    .Append(mlContext.Transforms.Categorical.MapValueToKey("Label"), TransformerScope.TrainTest)
+    .Append(mlContext.Transforms.Conversion.MapValueToKey("Label"), TransformerScope.TrainTest)
     // Use the multi-class SDCA model to predict the label using features.
     .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent());
 

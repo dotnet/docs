@@ -1,6 +1,6 @@
 ---
 title: "IXCLRDataMethodInstance Interface"
-ms.date: "01/16/2019"
+ms.date: "02/01/2019"
 api.name:
   - "IXCLRDataMethodInstance Interface"
 api.location:

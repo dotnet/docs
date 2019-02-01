@@ -21,10 +21,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsByRefLike</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -133,7 +133,7 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -672,7 +672,7 @@ Two <xref:System.Span%601> objects are equal if they have the same length and th
       </ReturnValue>
       <Parameters>
         <Parameter Name="arraySegment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.0" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.2" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.2;netcore-2.1" />
       </Parameters>
       <Docs>
         <param name="arraySegment">The array segment to be converted to a <see cref="T:System.Span`1" />.</param>

@@ -1325,8 +1325,9 @@ drawObj.SaveAs("C:\Drawings\sample.drw")
         <Parameter Name="Timeout" Type="System.Int32" Index="3" />
       </Parameters>
       <Docs>
-        <param name="Pathname">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <paramref name="PathName" /> can also include the drive and the directory path or folder.  
-  
+        <param name="Pathname">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <paramref name="Pathname" /> can also include the drive and the directory path or folder.  
+ If you do not know the path to the program, you can use the <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" /> to locate it. For example, you can call <c>My.Computer.FileSystem.GetFiles("C:\", True, "testFile.txt")</c>, which returns the full path of every file named <c>testFile.txt</c> anywhere on drive C:\\.</param>
+        <param name="PathName">Required. <see langword="String" />. Name of the program to execute, together with any required arguments and command-line switches. <paramref name="PathName" /> can also include the drive and the directory path or folder.  
  If you do not know the path to the program, you can use the <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.GetFiles" /> to locate it. For example, you can call <c>My.Computer.FileSystem.GetFiles("C:\", True, "testFile.txt")</c>, which returns the full path of every file named <c>testFile.txt</c> anywhere on drive C:\\.</param>
         <param name="Style">Optional. <see langword="AppWinStyle" />. A value chosen from the <see cref="T:Microsoft.VisualBasic.AppWinStyle" /> specifying the style of the window in which the program is to run. If <paramref name="Style" /> is omitted, <see langword="Shell" /> uses <see langword="AppWinStyle.MinimizedFocus" />, which starts the program minimized and with focus.</param>
         <param name="Wait">Optional. <see langword="Boolean" />. A value indicating whether the <see langword="Shell" /> function should wait for completion of the program. If <paramref name="Wait" /> is omitted, <see langword="Shell" /> uses <see langword="False" />.</param>

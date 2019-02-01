@@ -20,7 +20,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -243,7 +243,7 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -283,7 +283,7 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

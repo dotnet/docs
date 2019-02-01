@@ -34,30 +34,28 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Notifies a waiting thread that an event has occurred. This class cannot be inherited.</summary>
+    <summary>Represents a thread synchronization event that, when signaled, resets automatically after releasing a single waiting thread. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `AutoResetEvent` allows threads to communicate with each other by signaling. Typically, you use this class when threads need exclusive access to a resource.  
+ You use `AutoResetEvent`, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.EventWaitHandle> for thread interaction (or thread signaling). For more information, see the [Thread interaction, or signaling](~/docs/standard/threading/overview-of-synchronization-primitives.md#thread-interaction-or-signaling) section of the [Overview of synchronization primitives](~/docs/standard/threading/overview-of-synchronization-primitives.md) article.  
   
 > [!IMPORTANT]
 >  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
- A thread waits for a signal by calling <xref:System.Threading.WaitHandle.WaitOne%2A> on the `AutoResetEvent`. If the `AutoResetEvent` is in the non-signaled state, the thread blocks, waiting for the thread that currently controls the resource to signal that the resource is available by calling <xref:System.Threading.EventWaitHandle.Set%2A>.  
+ A thread waits for a signal by calling [AutoResetEvent.WaitOne](xref:System.Threading.WaitHandle.WaitOne%2A). If the `AutoResetEvent` is in the non-signaled state, the thread blocks until [AutoResetEvent.Set](xref:System.Threading.EventWaitHandle.Set%2A) is called.  
   
  Calling `Set` signals `AutoResetEvent` to release a waiting thread. `AutoResetEvent` remains signaled until a single waiting thread is released, and then automatically returns to the non-signaled state. If no threads are waiting, the state remains signaled indefinitely.  
   
  If a thread calls <xref:System.Threading.WaitHandle.WaitOne%2A> while the <xref:System.Threading.AutoResetEvent> is in the signaled state, the thread does not block. The <xref:System.Threading.AutoResetEvent> releases the thread immediately and returns to the non-signaled state.  
   
 > [!IMPORTANT]
->  There is no guarantee that every call to the <xref:System.Threading.EventWaitHandle.Set%2A> method will release a thread. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released. It is as if the second call did not happen. Also, if <xref:System.Threading.EventWaitHandle.Set%2A> is called when there are no threads waiting and the <xref:System.Threading.AutoResetEvent> is already signaled, the call has no effect.  
+>  There is no guarantee that every call to the <xref:System.Threading.EventWaitHandle.Set%2A> method will release a thread. If two calls are too close together, so that the second call occurs before a thread has been released, only one thread is released. It's as if the second call did not happen. Also, if <xref:System.Threading.EventWaitHandle.Set%2A> is called when there are no threads waiting and the <xref:System.Threading.AutoResetEvent> is already signaled, the call has no effect.  
   
  You can control the initial state of an `AutoResetEvent` by passing a Boolean value to the constructor: `true` if the initial state is signaled and `false` otherwise.  
   
- `AutoResetEvent` can also be used with the `static`<xref:System.Threading.WaitHandle.WaitAll%2A> and <xref:System.Threading.WaitHandle.WaitAny%2A> methods.  
-  
- For more information about thread synchronization mechanisms, see [AutoResetEvent](~/docs/standard/threading/autoresetevent.md) in the conceptual documentation.  
+ `AutoResetEvent` can also be used with the `static` <xref:System.Threading.WaitHandle.WaitAll%2A> and <xref:System.Threading.WaitHandle.WaitAny%2A> methods.  
   
  Beginning with the .NET Framework version 2.0, <xref:System.Threading.AutoResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. An <xref:System.Threading.AutoResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode.AutoReset?displayProperty=nameWithType>.  
   
@@ -80,6 +78,7 @@
     <threadsafe>This class is thread safe.</threadsafe>
     <altmember cref="T:System.Threading.WaitHandle" />
     <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -140,6 +139,7 @@
         </remarks>
         <altmember cref="T:System.Threading.WaitHandle" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">

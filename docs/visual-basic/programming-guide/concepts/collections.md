@@ -456,7 +456,7 @@ End Class
   
 <a name="BKMK_CustomCollection"></a> 
 ## Defining a Custom Collection  
- You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](https://docs.microsoft.com/previous-versions/hwyysy67(v=vs.140)).  
+ You can define a collection by implementing the <xref:System.Collections.Generic.IEnumerable%601> or <xref:System.Collections.IEnumerable> interface. For additional information, see [Enumerating a Collection](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hwyysy67(v=vs.100)).
   
  Although you can define a custom collection, it is usually better to instead use the collections that are included in the .NET Framework, which are described in [Kinds of Collections](#kinds-of-collections) earlier in this topic.  
   

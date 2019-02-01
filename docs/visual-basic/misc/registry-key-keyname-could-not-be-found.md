@@ -14,4 +14,3 @@ A registry key cannot be found.
   
 ## See also
 - [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)
-- [Registry Access Changes in Visual Basic .NET](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/hw23w1x7(v=vs.90))

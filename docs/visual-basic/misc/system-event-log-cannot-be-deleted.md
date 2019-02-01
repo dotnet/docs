@@ -13,5 +13,5 @@ An attempt has been made to delete the system event log, which cannot be deleted
 -   Do not attempt to delete the system event log.  
   
 ## See also
-- [Administering Event Logs](https://docs.microsoft.com/previous-versions/4f69axw4(v=vs.100))
-- [How to: Create and Remove Custom Event Logs](https://docs.microsoft.com/previous-versions/49dwckkz(v=vs.100))
+- [Administering Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
+- [How to: Create and Remove Custom Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/49dwckkz(v=vs.90))

@@ -639,6 +639,7 @@
 #### [EndEnumInstances](ixclrdatamethoddefinition-endenuminstances-method.md)
 ### [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)
 #### [GetILAddressMap](ixclrdatamethodinstance-getiladdressmap-method.md)
+#### [GetRepresentativeEntryAddress](ixclrdatamethodinstance-getrepresentativeentryaddress-method.md)
 ### [IXCLRDataModule Interface](ixclrdatamodule-interface.md)
 #### [GetMethodDefinitionByToken](ixclrdatamodule-getmethoddefinitionbytoken-method.md)
 #### [Request](ixclrdatamodule-request-method.md)

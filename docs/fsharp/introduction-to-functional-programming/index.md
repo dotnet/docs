@@ -164,7 +164,7 @@ Removing the `printfn` statement makes the function pure:
 let addOneToValue x = x + 1
 ```
 
-Although this function is not inherently _better_ than the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function once or 1 billion times will still result in the same thing: just producing a value. The predictability given by purity is something many functional programmers strive for.
+Although this function is not inherently _better_ than the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function any number of times produces the same result: it just produces a value. The predictability given by purity is something many functional programmers strive for.
 
 ### Immutability
 

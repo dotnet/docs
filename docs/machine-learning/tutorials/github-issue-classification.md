@@ -178,13 +178,13 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext` 
 
 Next, initialize the `_trainingDataView` <xref:Microsoft.ML.Data.IDataView> global variable and load the data with the `_trainDataPath` parameter.
 
- As the input and output of [`Transforms`](../basic-concepts-model-training-in-mldotnet#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
+ As the input and output of [`Transforms`](../basic-concepts-model-training-in-mldotnet.md#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
 In ML.NET, data is similar to a `SQL view`. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with issue titles, descriptions, and corresponding area GitHub label. The `DataView` is used to create and train the model.
 
 Since your previously created `GitHubIssue` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code.
 
-The first part of the line (`CreateTextReader<GitHubIssue>(hasHeader: true)`) creates a <xref:Microsoft.ML.Data.TextLoader> by inferencing the dataset schema from the `GitHubIssue` data model type and using the dataset header.
+The first part of the line (`CreateTextReader<GitHubIssue>(hasHeader: true)`) creates a <xref:Microsoft.ML.Data.TextLoader> by inferring the dataset schema from the `GitHubIssue` data model type and using the dataset header.
 
 You defined the data schema previously when you created the `GitHubIssue` class. For your schema:
 

@@ -69,7 +69,7 @@ If you are consuming a class, module, or structure that has members of unsigned 
     >  Making a call to unmanaged code, such as the Windows application programming interface (API), exposes your code to potential security risks.  
   
     > [!IMPORTANT]
-    >  Calling the Windows API requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](https://docs.microsoft.com/previous-versions/h846e9b3(v=vs.110)).  
+    >  Calling the Windows API requires unmanaged code permission, which might affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/h846e9b3(v=vs.100)).  
   
 ## See also
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)

@@ -13,7 +13,7 @@ ms.date: 12/31/2018
 
 This article describes what is new in .NET Core 3.0 (preview 2). One of the biggest enhancements is support for Windows desktop applications (Windows only). By utilizing a .NET Core 3.0 SDK component called Windows Desktop, you can port your Windows Forms and Windows Presentation Foundation (WPF) applications. To be clear, the Windows Desktop component is only supported and included on Windows. For more information, see the section [Windows desktop](#windows-desktop) below.
 
-.NET Core 3.0 adds support for C# 8.0 and implements .NET Standard 2.1.
+.NET Core 3.0 adds support for C# 8.0.
 
 [Download and get started with .NET Core 3 Preview 2](https://aka.ms/netcore3download) right now on Windows, Mac and Linux. You can see complete details of the release in the [.NET Core 3 Preview 2 release notes](https://aka.ms/netcore3releasenotes).
 
@@ -49,7 +49,7 @@ var slice = a[i1..i2]; // { 3, 4, 5 }
 
 ### Async streams
 
-The `IAsyncEnumerable<T>` type is a new asynchronous version of `IEnumerable<T>`. The language lets you `await foreach` over these to consume their elements, and `yield return` to them to produce elements.
+The `IAsyncEnumerable<T>` type is a new asynchronous version of `IEnumerable<T>`. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
 
 The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
 
@@ -70,7 +70,7 @@ In addition to being able to `await foreach`, you can also create async iterator
 
 ### Using Declarations
 
-*Using declarations* are a new way to use the *using statement*. A *using declaration* still disposes of the object created, but instead of disposing at the end of the block (as a *using statement* does), the *using declaration* will dispose at the end of the scope in which it was declared.
+*Using declarations* are a new way to ensure your object is properly disposed. A *using declaration* keeps the object alive while it is still in scope. Once the object becomes out of scope, it is automatically disposed. This will reduce nested *using statements* and make your code cleaner.
 
 ```csharp
 static void Main(string[] args)
@@ -104,37 +104,9 @@ There will still be cases where *switch statements* will be a better choice than
 
 For more information, see [Do more with patterns in C# 8.0](https://blogs.msdn.microsoft.com/dotnet/2019/01/24/do-more-with-patterns-in-c-8-0/).
 
-### Pointers to Unmanaged Constructed Types
-
-You can now take a pointer to [unmanaged constructed types](https://github.com/dotnet/csharplang/issues/1744), such as `ValueTuple<int, int>`, as long as all of the elements of the generic type are unmanaged. Until now, you could only take a pointer to non-generic structs with struct-fields. Given the prevalence of generic structs in more recent .NET Core releases, this change is critical to enable performant code for common types like `ValueTask<T>`, `ValueTuple<T>` and `Span<T>`.
-
-The following is an example of an opportunity in the platform where this feature is used:
-
-**Before:** [System/Runtime/Intrinsics/Vector256.cs#L1303](https://github.com/dotnet/coreclr/blob/57fd77e6f8f7f2c37cc5c3b36df3ea4f302e143b/src/System.Private.CoreLib/shared/System/Runtime/Intrinsics/Vector256.cs#L1303)
-
-```csharp
-Vector256<short> SoftwareFallback(short x)
-{
-    var result = Vector256<short>.Zero;
-    Unsafe.WriteUnaligned(ref Unsafe.As<Vector256<short>, byte>(ref result), value);
-    return result;
-}
-```
-
-**After:**
-
-```csharp
-Vector256<int> SoftwareFallback(int x)
-{
-    var result = Vector256<int>.Zero;
-    ((int*)(&result))[0] = x;
-    return result;
-}
-```
-
 ## IEEE Floating-point improvements
 
-Floating point APIs are in the process of being updated to comply with [IEEE 754-2008 revision](https://en.wikipedia.org/wiki/IEEE_754-2008_revision). The goal of [this floating point project](https://github.com/dotnet/corefx/issues/31901) is to expose all "required" operations and ensure that they are behaviorally compliant with the IEEE spec.
+Floating point APIs are in the process of being updated to comply with [IEEE 754-2008 revision](https://en.wikipedia.org/wiki/IEEE_754-2008_revision). The goal of these changes is to expose all "required" operations and ensure that they are behaviorally compliant with the IEEE spec.
 
 Parsing and formatting fixes:
 
@@ -142,7 +114,7 @@ Parsing and formatting fixes:
 * Correctly parse and format negative zero.
 * Correctly parse Infinity and NaN by performing a case-insensitive check and allowing an optional preceding `+` where applicable.
 
-New [Math APIs](https://github.com/dotnet/corefx/issues/31903):
+New Math APIs have:
 
 * `BitIncrement/BitDecrement`\
 Corresponds to the `nextUp` and `nextDown` IEEE operations. They return the smallest floating-point number that compares greater or lesser than the input (respectively). For example, `Math.BitIncrement(0.0)` would return `double.Epsilon`.
@@ -407,7 +379,7 @@ public static void Utf8JsonReaderLoop(ReadOnlySpan<byte> dataUtf8)
 
 Here is a sample usage of the `Utf8JsonWriter` that can be used as a starting point:
 
-```C#
+```csharp
 static int WriteJson(IBufferWriter<byte> output, long[] extraData)
 {
     var json = new Utf8JsonWriter(output, state: default);
@@ -453,7 +425,7 @@ The `Utf8JsonWriter` accepts `IBufferWriter<byte>` as the output location to syn
 
 Here is a sample usage of the `JsonDocument` and `JsonElement` that can be used as a starting point:
 
-```C#
+```csharp
 static double ParseJson()
 {
     const string json = " [ { \"name\": \"John\" }, [ \"425-000-1212\", 15 ], { \"grades\": [ 90, 80, 100, 75 ] } ]";

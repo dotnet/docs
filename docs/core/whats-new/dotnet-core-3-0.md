@@ -98,7 +98,7 @@ static string Display(object o) => o switch
 
 There are two patterns at play in this example. `o` first matches with the `Point` *type pattern* and then with the *property pattern* inside the *{curly braces}*. The `_` describes the `discard pattern`, which is the same as `default` for *switch statements*.
 
-All of these patterns enable you to write declarative code that captures your intent instead of procedural code that implements tests for it. The compiler becomes responsible for implementing that boring procedural code and is guaranteed to always do it correctly.
+Patterns enable you to write declarative code that captures your intent instead of procedural code that implements tests for it. The compiler becomes responsible for implementing that boring procedural code and is guaranteed to always do it correctly.
 
 There will still be cases where *switch statements* will be a better choice than *switch expressions* and patterns can be used with both syntax styles.
 

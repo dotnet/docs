@@ -288,7 +288,7 @@ Starting with the .NET Framework 4.7.1, improvements in high contrast have been 
 For more information on WPF accessibility improvements in the .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
 
 <a name="winforms471"></a>
-## Windows Forms accessibility improvements
+### Windows Forms accessibility improvements
 
 In the .NET Framework 4.7.1, Windows Forms (WinForms) includes accessibility changes in the following areas.
 
@@ -354,7 +354,7 @@ Starting with the .NET Framework 4.7.1, Windows Forms includes:
 - Improved narrator behavior.
  
 <a name="aspnet471"></a>
-## ASP.NET web controls
+### ASP.NET web controls
 
 Starting with the .NET Framework 4.7.1 and Visual Studio 2017 15.3, ASP.NET improves how ASP.NET web controls work with accessibility technology in Visual Studio. Changes include the following:
 
@@ -365,14 +365,14 @@ Starting with the .NET Framework 4.7.1 and Visual Studio 2017 15.3, ASP.NET impr
 - Changes to improve the keyboard navigation experiences for controls, like the **Fields** dialog in the **Edit Pager Fields** wizard of the DataPager control, the **Configure ObjectContext** dialog, or the **Configure Data Selection** dialog of the **Configure Data Source** wizard.
 
 <a name="tools471"></a>
-## .NET SDK Tools
+### .NET SDK Tools
 
 The [Configuration Editor Tool (SvcConfigEditor.exe)](../wcf/configuration-editor-tool-svcconfigeditor-exe.md) and [Service Trace Viewer Tool (SvcTraceViewer.exe)](../wcf/service-trace-viewer-tool-svctraceviewer-exe.md) have been improved by fixing varied accessibility issues. Most of these were small issues, like a name not being defined or certain UI automation patterns not being implemented correctly. While many users won’t be aware of these incorrect values, customers who use assistive technologies like screen readers will find these SDK tools more accessible. 
 
 These enhancements change some previous behaviors, such as keyboard focus order.
 
 <a name="wf471"></a>
-## Windows Workflow Foundation (WF) Workflow Designer
+### Windows Workflow Foundation (WF) Workflow Designer
 
 Accessibility changes in the Workflow Designer include the following:
 

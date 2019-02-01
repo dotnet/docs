@@ -1,0 +1,3 @@
+> [!NOTE]
+>  Setting a visual property only has an effect if that property is both present in the control's default template and is set by using a [TemplateBinding](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md). You can find a list of visual properties in the [Changing the Visual Structure of a Control](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md#changing-the-visual-structure-of-a-control) section in the [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md) article.
+  

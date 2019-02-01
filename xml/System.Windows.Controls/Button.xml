@@ -33,10 +33,7 @@
   
  Dependency properties for this control might be set by the control's default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](https://go.microsoft.com/fwlink/?LinkID=158252).  
   
-> [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Button> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
-  
-   
+[!INCLUDE[setting-a-visual-property](~/includes/visual-property-note.md)]  
   
 ## Examples  
  The following example shows three buttons that respond to clicks in three different ways.  

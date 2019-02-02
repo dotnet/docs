@@ -35,7 +35,7 @@ Sentiment   SentimentText
 var mlContext = new MLContext();
 
 // Define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.TextReader(new TextLoader.Arguments
+var reader = mlContext.Data.CreateTextReader(new TextLoader.Arguments
 {
     Column = new[] {
         new TextLoader.Column("IsToxic", DataKind.BL, 0),
@@ -67,12 +67,12 @@ var pipeline =
 
     // NLP pipeline 3: bag of tri-character sequences with TF-IDF weighting.
     .Append(mlContext.Transforms.Text.TokenizeCharacters("Message", "MessageChars"))
-    .Append(new NgramEstimator(mlContext, "MessageChars", "BagOfTrichar",
-                ngramLength: 3, weighting: NgramTransform.WeightingCriteria.TfIdf))
+    .Append(mlContext.Transforms.Text.ProduceNgrams("MessageChars", "BagOfTrichar",
+                ngramLength: 3, weighting: NgramExtractingEstimator.WeightingCriteria.TfIdf))
 
     // NLP pipeline 4: word embeddings.
     .Append(mlContext.Transforms.Text.TokenizeWords("NormalizedMessage", "TokenizedMessage"))
-    .Append(mlContext.Transforms.Text.ExtractWordEmbeedings("TokenizedMessage", "Embeddings",
+    .Append(mlContext.Transforms.Text.ExtractWordEmbeddings("TokenizedMessage", "Embeddings",
                 WordEmbeddingsTransform.PretrainedModelKind.GloVeTwitter25D));
 
 // Let's train our pipeline, and then apply it to the same data.

@@ -83,7 +83,7 @@ Value types and reference types in the CTS
   
 ```csharp  
 // Static method on type Byte.  
-byte b = Byte.MaxValue;  
+byte b = byte.MaxValue;
 ```  
   
  But you declare and assign values to them as if they were simple non-aggregate types:  

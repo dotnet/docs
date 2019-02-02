@@ -41,9 +41,6 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  [Implementing Inheritance with COM Objects](../visual-basic/programming-guide/com-interop/walkthrough-implementing-inheritance-with-com-objects.md)  
  Demonstrates how to use Visual Basic 6.0 to create a COM object containing a class, and then use it as a base class in Visual Basic.  
   
- [Multithreading](https://docs.microsoft.com/previous-versions/ywkkz4s1(v=vs.140))  
- Shows how to create a multithreaded application that searches a text file for occurrences of a word.  
-  
  [Determining Where My.Application.Log Writes Information](../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md)  
  Describes the default `My.Application.Log` settings and how to determine the settings for your application.  
   

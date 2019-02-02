@@ -76,5 +76,4 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
   
 ## See also
 - [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
-- [C# Compiler Options Listed Alphabetically](../../../csharp/language-reference/compiler-options/listed-alphabetically.md)
-- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)
+- [Introduction to the Project Designer](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)

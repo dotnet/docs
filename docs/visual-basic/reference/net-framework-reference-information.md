@@ -23,8 +23,5 @@ This topic provides links to information about how to work with the [!INCLUDE[dn
  [Tools](../../framework/tools/index.md)  
  Describes the tools that you can use to develop, configure, and deploy applications by using .NET Framework technologies.  
   
- [.NET Framework Samples](https://docs.microsoft.com/previous-versions/bb400848(v=vs.110))  
- Provides links to sample applications that demonstrate .NET Framework technologies.  
-  
  [.NET API Browser](../../../api/index.md)  
  Provides syntax, code examples, and related information for each class in the .NET Framework namespaces.

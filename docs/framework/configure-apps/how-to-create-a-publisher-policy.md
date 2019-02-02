@@ -98,7 +98,7 @@ Vendors of assemblies can state that applications should use a newer version of 
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](../../../docs/framework/configure-apps/index.md)
-- [Configuring .NET Framework Apps](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+- [Configuring .NET Framework Apps](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kza1yk3a(v=vs.100))
 - [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

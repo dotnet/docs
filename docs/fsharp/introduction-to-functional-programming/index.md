@@ -156,7 +156,7 @@ let addOneToValue x =
     x + 1
 ```
 
-Although this function does not depend on a global value, it writes the value of `x` to the output of the program. Although there is nothing inherently wrong with doing this, it does mean that the function is not pure. If another part of your program depends on something such as the output buffer, then calling this function can affect that other part of your program.
+Although this function does not depend on a global value, it writes the value of `x` to the output of the program. Although there is nothing inherently wrong with doing this, it does mean that the function is not pure. If another part of your program depends on something external to the program, such as the output buffer, then calling this function can affect that other part of your program.
 
 Removing the `printfn` statement makes the function pure:
 

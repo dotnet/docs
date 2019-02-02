@@ -29,7 +29,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="TResult">The type of the result value assocatied with this <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</typeparam>
+    <typeparam name="TResult">The type of the result value associated with this <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</typeparam>
     <summary>Represents the producer side of a <see cref="T:System.Threading.Tasks.Task`1" /> unbound to a delegate, providing access to the consumer side through the <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> property.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  

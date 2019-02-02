@@ -82,6 +82,16 @@ This section describes the unmanaged structures that the debugging API uses.
  [DacpGetModuleAddress Structure](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)
  Defines the container for a module address request.
 
+ [DacpModuleData Structure](../../../../docs/framework/unmanaged-api/debugging/dacpmoduledata-structure.md)
+ Defines a transport buffer for a module's runtime information.
+
+ [DacpModuleData Structure](../../../../docs/framework/unmanaged-api/debugging/dacpmethoddescdata-structure.md)
+ Defines a transport buffer for a method's runtime information.
+
+ [DacpReJitData Structure](../../../../docs/framework/unmanaged-api/debugging/dacprejitdata-structure.md)
+ Defines the basic information about a given profiler instrumented method.
+
+
   
 ## Related Sections  
  [Debugging Coclasses](../../../../docs/framework/unmanaged-api/debugging/debugging-coclasses.md)  

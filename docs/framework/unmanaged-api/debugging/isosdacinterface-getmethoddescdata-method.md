@@ -28,9 +28,9 @@ Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-ap
 HRESULT GetMethodDescData(
     CLRDATA_ADDRESS            methodDesc,
     CLRDATA_ADDRESS            ip,
-    void                       *data,
+    struct DacpMethodDescData *data,
     ULONG                      cRevertedRejitVersions,
-    void                      *rgRevertedRejitData,
+    struct DacpReJitData      *rgRevertedRejitData,
     void                      *pcNeededRevertedRejitData
 );
 ```
@@ -44,13 +44,13 @@ HRESULT GetMethodDescData(
 [in] The IP address of the method.
 
 `data`
-[out] The data associated with the MethodDesc as returned from the internal APIs. The structure needs at least 168 bytes.
+[out] The data associated with the MethodDesc as returned from the internal APIs.
 
 `cRevertedRejitVersions`
 [out] The number of reverted rejit versions.
 
 `rgRevertedRejitData`
-[out] The data associated with the reverted rejit versions as returned from the internal APIs. The structure needs at least 24 bytes.
+[out] The data associated with the reverted rejit versions as returned from the internal APIs.
 
 `pcNeededRevertedRejitData`
 [out] The number of bytes required to store the data associated with the reverted ReJit versions.

@@ -42,4 +42,3 @@ A *recursive* procedure is one that calls itself. In general, this is not the mo
 - [Procedure Overloading](./procedure-overloading.md)
 - [Troubleshooting Procedures](./troubleshooting-procedures.md)
 - [Loop Structures](../../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [Troubleshooting Exceptions: System.StackOverflowException](https://docs.microsoft.com/previous-versions/w6sxk224(v=vs.140))

@@ -31,4 +31,3 @@ You can disassociate an object variable from any object instance by setting it t
 - [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)
 - [Nothing](../../../../visual-basic/language-reference/nothing.md)
 - [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [Troubleshooting Exceptions: System.NullReferenceException](https://docs.microsoft.com/previous-versions/sxw2ez55(v=vs.140))

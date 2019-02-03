@@ -303,7 +303,7 @@ Please share your feedback on the [dotnet/winforms](https://github.com/dotnet/wi
 
 [MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows app package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
 
-The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019 Preview 2, allows you to create MSIX packages with [self-contained](../deploying/#self-contained-deployments-scd) .NET Core applications.
+The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019 Preview 2, allows you to create MSIX packages with [self-contained](../deploying/index.md#self-contained-deployments-scd) .NET Core applications.
 
 >Note: The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
 ```xml

@@ -41,7 +41,7 @@ Specifies a name-value pair of parameters that are used globally across multiple
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<commonParameters>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)|A collection of common parameters used by services. This collection will typically include the database connection string that might be shared by durable services.|  
+|[\<commonParameters>](commonparameters.md)|A collection of common parameters used by services. This collection will typically include the database connection string that might be shared by durable services.|  
   
 ## Remarks  
  The `<commonParameters>` element defines any parameters that are used globally across multiple services, for example `ConnectionString` when using the <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
@@ -86,4 +86,4 @@ Specifies a name-value pair of parameters that are used globally across multiple
 - <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService>
 - <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>
 - [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
-- [\<commonParameters>](https://msdn.microsoft.com/library/d0e1e6fc-985a-4713-b7da-194e30dfab4c)
+- [\<commonParameters>](commonparameters.md)

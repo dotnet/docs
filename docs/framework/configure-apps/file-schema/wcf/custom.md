@@ -47,7 +47,7 @@ Specifies settings for a custom peer resolver service.
 |[\<resolver>](../../../../../docs/framework/configure-apps/file-schema/wcf/resolver.md)|A peer resolver that is used to resolve a peer mesh ID to a set of peer node addresses that represents several nodes that participate in the mesh.|  
   
 ## Remarks  
- This element defines the basic settings for a custom peer resolver service, including the endpoint address of the peer hosting the service and any specific binding settings. For more information on creating a custom resolver, see [Adding a Custom Resolver to a PeerChannel Application](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419).  
+ This element defines the basic settings for a custom peer resolver service, including the endpoint address of the peer hosting the service and any specific binding settings. For more information on creating a custom resolver, see [Adding a Custom Resolver to a PeerChannel Application](https://docs.microsoft.com/previous-versions/ms730105(v=vs.90)).  
   
 ## See also
 - <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>
@@ -55,4 +55,4 @@ Specifies settings for a custom peer resolver service.
 - <xref:System.ServiceModel.Configuration.PeerResolverElement.Custom%2A>
 - <xref:System.ServiceModel.Configuration.PeerCustomResolverElement>
 - [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
-- [Adding a Custom Resolver to a PeerChannel Application](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419)
+- [Adding a Custom Resolver to a PeerChannel Application](https://docs.microsoft.com/previous-versions/ms730105(v=vs.90))

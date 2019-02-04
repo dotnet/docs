@@ -82,8 +82,8 @@ Value types and reference types in the CTS
  The built-in numeric types are structs, and they have properties and methods that you can access:  
   
 ```csharp  
-// Static method on type Byte.  
-byte b = Byte.MaxValue;  
+// Static method on type byte.  
+byte b = byte.MaxValue;
 ```  
   
  But you declare and assign values to them as if they were simple non-aggregate types:  

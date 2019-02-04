@@ -9495,7 +9495,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
         <exception cref="T:System.Reflection.TargetException">The specified member cannot be invoked on <paramref name="target" />.</exception>
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one method matches the binding criteria.</exception>
         <exception cref="T:System.NotSupportedException">The .NET Compact Framework does not currently support this method.</exception>
-        <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodBase.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing non-public members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="T:System.String" />
@@ -9694,7 +9694,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  The current <see cref="T:System.Type" /> object represents a type that contains open type parameters, that is, <see cref="P:System.Type.ContainsGenericParameters" /> returns <see langword="true" />.</exception>
         <exception cref="T:System.Reflection.TargetException">The specified member cannot be invoked on <paramref name="target" />.</exception>
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one method matches the binding criteria.</exception>
-        <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodBase.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing non-public members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="T:System.String" />
@@ -9917,7 +9917,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  The current <see cref="T:System.Type" /> object represents a type that contains open type parameters, that is, <see cref="P:System.Type.ContainsGenericParameters" /> returns <see langword="true" />.</exception>
         <exception cref="T:System.Reflection.TargetException">The specified member cannot be invoked on <paramref name="target" />.</exception>
         <exception cref="T:System.Reflection.AmbiguousMatchException">More than one method matches the binding criteria.</exception>
-        <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodInfo.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The method represented by <paramref name="name" /> has one or more unspecified generic type parameters. That is, the method's <see cref="P:System.Reflection.MethodBase.ContainsGenericParameters" /> property returns <see langword="true" />.</exception>
         <permission cref="T:System.Security.Permissions.ReflectionPermission">for accessing non-public members regardless of their grant set. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" /></permission>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="T:System.String" />

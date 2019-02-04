@@ -65,7 +65,7 @@ struct DacpMethodDescData
 | `requestedIP`                | Used to populate the structure per request when given a native code address.                    |
 | `rejitDataCurrent`           | Information about the latest instrumented version the method.                                   |
 | `rejitDataRequested`         | Rejit information for the requested native address.                                             |
-| `cJittedRejitVersions`       | Number of                                                                                       |
+| `cJittedRejitVersions`       | Number of times the method has been rejitted through instrumentation.                           |
 
 
 ## Remarks

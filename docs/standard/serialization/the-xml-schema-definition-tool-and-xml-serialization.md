@@ -26,4 +26,4 @@ The XML Schema Definition tool ([XML Schema Definition Tool (Xsd.exe)](../../../
 - [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
 - [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
 - [How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents](../../../docs/standard/serialization/xml-schema-def-tool-gen.md)
-- [XML Schema Binding Support in the .NET Framework](https://msdn.microsoft.com/library/8f0619dd-f1fc-4895-ae21-6d45d0382cc1)
+- [XML Schema Binding Support in the .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sh1e66zd(v=vs.100))

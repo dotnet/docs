@@ -41,19 +41,19 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [PAVE Security in Native and .NET Framework Code](https://msdn.microsoft.com/library/bd61be84-c143-409a-a75a-44253724f784)  
  Provides links to security topics for Visual Studio, the .NET Framework, and cryptography.  
   
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ (Language-Integrated Query)](https://docs.microsoft.com/previous-versions/bb397926(v=vs.140))  
  Provides links to LINQ topics and samples.  
   
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
- [Core Development Technologies](https://msdn.microsoft.com/library/csxbhtye.aspx)  
+ [Core Development Technologies](https://docs.microsoft.com/previous-versions/csxbhtye(v=vs.90))  
  Provides links to information about standard development tasks in the .NET Framework.  
   
- [Advanced Development Technologies](https://msdn.microsoft.com/library/a493kdy6.aspx)  
+ [Advanced Development Technologies](https://docs.microsoft.com/previous-versions/a493kdy6(v=vs.90))  
  Provides links to information about sophisticated development tasks and techniques in the .NET Framework.  
   
- [Samples and Quickstarts](https://msdn.microsoft.com/library/ms184422.aspx)  
+ [Samples and Quickstarts](https://docs.microsoft.com/previous-versions/ms184422(v=vs.100))  
  Provides complete listings of all samples and QuickStart samples associated with the .NET Framework.  
   
 ## See also

@@ -105,5 +105,5 @@ Metadata=.\
 ## See also
 - [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
 - [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
-- [Managing Connections and Transactions](https://msdn.microsoft.com/library/b6659d2a-9a45-4e98-acaa-d7a8029e5b99)
+- [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)

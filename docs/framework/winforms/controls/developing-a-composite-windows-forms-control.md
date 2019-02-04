@@ -17,7 +17,7 @@ You can develop a composite Windows Forms control by combining other Windows For
   
 -   [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](serializing-collections-designerserializationvisibilityattribute.md)  
   
--   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](https://msdn.microsoft.com/library/09476da0-8d4c-4a4c-b969-649519dfb438))  
+-   [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](https://docs.microsoft.com/dotnet/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp))  
   
 -   [How to: Provide a Toolbox Bitmap for a Control](https://msdn.microsoft.com/library/4wk1wc0a\(v=vs.110\))  
   

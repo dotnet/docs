@@ -30,7 +30,7 @@ This topic provides information about the way in which LINQ queries are composed
 http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight gt 30  
 ```  
   
- For more general information about LINQ, see [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+ For more general information about LINQ, see [LINQ (Language-Integrated Query)](https://docs.microsoft.com/previous-versions/bb397926(v=vs.140)).  
   
  LINQ enables you to compose queries by using both the language-specific declarative query syntax, shown in the previous example, as well as a set of query methods known as standard query operators. An equivalent query to the previous example can be composed by using only the method-based syntax, as shown the following example:  
   

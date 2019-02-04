@@ -298,7 +298,7 @@ Some message processing is inherently idempotent. For example, if a system gener
 ### Additional resources
 
 -   **Honoring message idempotency** <br/>
-    [*https://msdn.microsoft.com/library/jj591565.aspx#honoring_message_idempotency*](https://msdn.microsoft.com/library/jj591565.aspx)
+    [*https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring_message_idempotency*](https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10))
 
 ## Deduplicating integration event messages
 
@@ -331,7 +331,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html*](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
 
 -   **Communicating Between Bounded Contexts** <br/>
-    [*https://msdn.microsoft.com/library/jj591572.aspx*](https://msdn.microsoft.com/library/jj591572.aspx)
+    [*https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10))
 
 -   **Eventual Consistency** <br/>
     [*https://en.wikipedia.org/wiki/Eventual\_consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
@@ -346,7 +346,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://microservices.io/patterns/data/event-sourcing.html*](https://microservices.io/patterns/data/event-sourcing.html)
 
 -   **Introducing Event Sourcing** <br/>
-    [*https://msdn.microsoft.com/library/jj591559.aspx*](https://msdn.microsoft.com/library/jj591559.aspx)
+    [*https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/jj591559(v=pandp.10))
 
 -   **Event Store database**. Official site. <br/>
     [*https://geteventstore.com/*](https://geteventstore.com/)
@@ -361,7 +361,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     [*https://www.quora.com/What-Is-CAP-Theorem-1*](https://www.quora.com/What-Is-CAP-Theorem-1)
 
 -   **Data Consistency Primer** <br/>
-    [*https://msdn.microsoft.com/library/dn589800.aspx*](https://msdn.microsoft.com/library/dn589800.aspx)
+    [*https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)*](https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10))
 
 -   **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet** <br/>
     [*https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/*](https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/)

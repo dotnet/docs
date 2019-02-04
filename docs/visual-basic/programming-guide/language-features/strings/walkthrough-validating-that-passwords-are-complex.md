@@ -39,4 +39,4 @@ This method checks for some strong-password characteristics and updates a string
   
 ## See also
 - <xref:System.Text.RegularExpressions.Regex>
-- [ASP.NET Web Application Security](https://msdn.microsoft.com/library/330a99hc)
+- [ASP.NET Web Application Security](https://docs.microsoft.com/previous-versions/330a99hc(v=vs.140))

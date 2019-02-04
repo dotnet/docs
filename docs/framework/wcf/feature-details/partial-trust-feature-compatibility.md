@@ -121,7 +121,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 -   <xref:System.IO.Log>  
 
--   [System.ServiceModel.Internal.TransactionBridge](https://msdn.microsoft.com/library/system.servicemodel.internal.transactionbridge.aspx)]
+-   [System.ServiceModel.Internal.TransactionBridge](https://docs.microsoft.com/previous-versions/aa346556(v=vs.110))]
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   

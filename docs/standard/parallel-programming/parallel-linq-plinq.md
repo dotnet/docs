@@ -48,4 +48,4 @@ Parallel LINQ (PLINQ) is a parallel implementation of LINQ to Objects. PLINQ imp
 
 - <xref:System.Linq.ParallelEnumerable>
 - [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
-- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+- [LINQ (Language-Integrated Query)](https://docs.microsoft.com/previous-versions/bb397926(v=vs.140))

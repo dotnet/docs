@@ -75,7 +75,7 @@ DLR architecture
 
  The DLR adds a set of services to the CLR for better supporting dynamic languages. These services include the following:
 
--   Expression trees. The DLR uses expression trees to represent language semantics. For this purpose, the DLR has extended LINQ expression trees to include control flow, assignment, and other language-modeling nodes. For more information, see [Expression Trees](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b).
+-   Expression trees. The DLR uses expression trees to represent language semantics. For this purpose, the DLR has extended LINQ expression trees to include control flow, assignment, and other language-modeling nodes. For more information, see [Expression Trees](https://docs.microsoft.com/previous-versions/bb397951(v=vs.140)).
 
 -   Call site caching. A *dynamic call site* is a place in the code where you perform an operation like `a + b` or `a.b()` on dynamic objects. The DLR caches the characteristics of `a` and `b` (usually the types of these objects) and information about the operation. If such an operation has been performed previously, the DLR retrieves all the necessary information from the cache for fast dispatch.
 
@@ -91,5 +91,5 @@ The DLR uses binders in call sites to communicate not only with the .NET Framewo
 - <xref:System.Dynamic.ExpandoObject>
 - <xref:System.Dynamic.DynamicObject>
 - [Common Language Runtime](../../../docs/standard/clr.md)
-- [Expression Trees](https://msdn.microsoft.com/library/fb1d3ed8-d5b0-4211-a71f-dd271529294b)
+- [Expression Trees](https://docs.microsoft.com/previous-versions/bb397951(v=vs.140))
 - [Walkthrough: Creating and Using Dynamic Objects](~/docs/csharp/programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md)

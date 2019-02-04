@@ -19,7 +19,7 @@ Using the layout features of Visual Studio, you can precisely direct where contr
   
 -   Select the **SnapToGrid** layout mode in the Windows Forms Designer **Options** dialog box.  
   
-     For more information, see [General, Windows Forms Designer, Options Dialog Box](https://msdn.microsoft.com/library/8dd170af-72f0-4212-b04b-034ceee92834). All controls now align themselves along the points on the grid.  
+     For more information, see [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100)). All controls now align themselves along the points on the grid.  
   
      You can snap individual controls to the grid by locking them in place. However, while they are locked, they cannot be moved or resized. For more information about locking controls, see [How to: Lock Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-lock-controls-to-windows-forms.md).  
   

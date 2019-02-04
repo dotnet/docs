@@ -18,7 +18,7 @@ This topic shows how to execute a parameterized stored procedure by using the <x
      [!code-csharp[DP EntityServices Concepts#Namespaces](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#namespaces)]
      [!code-vb[DP EntityServices Concepts#Namespaces](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#namespaces)]  
   
-3.  Import the `GetStudentGrades` stored procedure and specify `CourseGrade` entities as a return type. For information on how to import a stored procedure, see [How to: Import a Stored Procedure](https://msdn.microsoft.com/library/24e68bf4-bd6d-428d-bc35-92d7b8e3736d).  
+3.  Import the `GetStudentGrades` stored procedure and specify `CourseGrade` entities as a return type. For information on how to import a stored procedure, see [How to: Import a Stored Procedure](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896231(v=vs.100)).  
   
 ## Example  
  The following code executes the `GetStudentGrades` stored procedure where `StudentId` is a required parameter. The results are then read by an <xref:System.Data.EntityClient.EntityDataReader>.  

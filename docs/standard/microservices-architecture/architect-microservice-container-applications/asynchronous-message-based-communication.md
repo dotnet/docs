@@ -71,7 +71,7 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 - Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
-- Using full [Event Sourcing](https://msdn.microsoft.com/library/dn589792.aspx) pattern.
+- Using full [Event Sourcing](https://docs.microsoft.com/previous-versions/msp-n-p/dn589792(v=pandp.10)) pattern.
 
 - Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 

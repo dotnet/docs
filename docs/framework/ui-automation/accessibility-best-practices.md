@@ -128,5 +128,5 @@ ms.author: "mhopkins"
   
 ## See also
 - <xref:System.Windows.Automation.Peers>
-- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)
+- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://docs.microsoft.com/previous-versions/ms771573(v=vs.100))
 - [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

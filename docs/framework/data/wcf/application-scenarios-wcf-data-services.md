@@ -31,7 +31,7 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 -   [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
   
  Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in a Silverlight-based client application.  
- -   [WCF Data Services (Silverlight)](https://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
+ -   [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/)  
   
 -   [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
   
@@ -56,7 +56,7 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
   
 -   [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md)  
   
--   [WCF Data Services (Silverlight)](https://msdn.microsoft.com/library/c0cd9f4b-1372-48e4-9935-c8421239da30)  
+-   [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/)  
   
  Expose and consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed with a binary large object that is accessed and changed as a stream.  
  -   [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md)  

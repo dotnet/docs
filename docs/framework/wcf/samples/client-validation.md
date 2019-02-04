@@ -48,7 +48,7 @@ Services frequently publish metadata to enable automatic generation and configur
   
 10. On the client computer, run client.exe.  
   
-    1.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+    1.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   

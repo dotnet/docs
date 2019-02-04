@@ -23,7 +23,7 @@ A nonvisual control (or component) provides functionality to your application. U
   
 ### To add a component to a Windows Form  
   
-1.  Open the form. For details, see [How to: Display Windows Forms in the Designer](https://msdn.microsoft.com/library/bf3f1e5b-ea07-4529-85c6-6af3ded0cec5).  
+1.  Open the form. For details, see [How to: Display Windows Forms in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w5yd62ts(v=vs.100)).  
   
 2.  In the **Toolbox**, click a component and drag it to your form.  
   

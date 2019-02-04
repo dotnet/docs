@@ -41,7 +41,7 @@ You should always provide robust exception handling when calling filesystem meth
 
 In addition to using these classes, Visual Basic users can use the methods and properties provided by the <xref:Microsoft.VisualBasic.FileIO.FileSystem?displayProperty=nameWithType> class for file I/O.
 
-See [How to: Copy Directories](how-to-copy-directories.md), [How to: Create a Directory Listing](https://msdn.microsoft.com/library/4d2772b1-b991-4532-a8a6-6ef733277e69), and [How to: Enumerate Directories and Files](how-to-enumerate-directories-and-files.md).
+See [How to: Copy Directories](how-to-copy-directories.md), [How to: Create a Directory Listing](https://docs.microsoft.com/previous-versions/5cf8zcfh(v=vs.110)), and [How to: Enumerate Directories and Files](how-to-enumerate-directories-and-files.md).
 
 ## Streams
 

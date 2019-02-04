@@ -280,6 +280,6 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 - <xref:System.LoaderOptimizationAttribute>
 - [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [Application Domains](../../../../docs/framework/app-domains/application-domains.md)
-- [.NET Framework Remoting Overview](https://msdn.microsoft.com/library/eccb1d31-0a22-417a-97fd-f4f1f3aa4462)
-- [Making Objects Remotable](https://msdn.microsoft.com/library/01197253-3f13-43b7-894d-9683e431192a)
+- [.NET Framework Remoting Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kwdt6w2k(v=vs.100))
+- [Making Objects Remotable](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100))
 - [How-to Topics](../../../../docs/framework/wpf/app-development/how-to-topics.md)

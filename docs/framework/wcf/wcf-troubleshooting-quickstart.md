@@ -96,7 +96,7 @@ public class MyServiceHost : ServiceHost
   
 -   You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
   
--   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](https://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113).  
+-   For other possible issues, see the samples topic [Running the Samples in a Workgroup and Across Machines](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751525(v=vs.90)).  
   
 -   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   

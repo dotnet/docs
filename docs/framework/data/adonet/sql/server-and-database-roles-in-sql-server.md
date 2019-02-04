@@ -52,7 +52,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Identity and Access Control](https://msdn.microsoft.com/library/bb510418.aspx) in SQL Server Books Online|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
+|[Identity and Access Control](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb510418(v=sql.105)) in SQL Server Books Online|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
 |[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine) in SQL Server Books Online|Describes principals and contains links to topics that describe server and database roles.|  
   
 ## See also

@@ -26,4 +26,4 @@ The following topics show how to create project files for the various [!INCLUDE[
   
  [How to: Create a New WPF Application Project](https://msdn.microsoft.com/library/1f6aea7a-33e1-4d3f-8555-1daa42e95d82)  
   
- [How to: Create a New WPF Browser Application Project](https://msdn.microsoft.com/library/72ef4d90-e163-42a1-8df0-ea7ccfd1901f)
+ [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/bb628663(v=vs.110))

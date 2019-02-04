@@ -51,4 +51,4 @@ ms.author: "mhopkins"
 - [Implementing the UI Automation Selection Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-selection-control-pattern.md)
 - [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
 - [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
-- [Fragment Provider Sample](https://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+- [Fragment Provider Sample](https://docs.microsoft.com/previous-versions/ms771502(v=vs.100))

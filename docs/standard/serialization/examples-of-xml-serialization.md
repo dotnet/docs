@@ -113,7 +113,7 @@ private void SerializeNode(string filename){
 ```  
   
 ## Serializing a Class that Contains a Field Returning a Complex Object  
- If a property or field returns a complex object (such as an array or a class instance), the [XmlSerializer](https://msdn.microsoft.com/library/system.xml.serialization.xmlserializer.aspx) converts it to an element nested within the main XML document. For example, the first class in the following code example returns an instance of the second class.  
+ If a property or field returns a complex object (such as an array or a class instance), the [XmlSerializer](https://docs.microsoft.com/dotnet/api/system.xml.serialization.xmlserializer?view=netframework-4.7.2) converts it to an element nested within the main XML document. For example, the first class in the following code example returns an instance of the second class.  
   
 ```vb  
 Public Class PurchaseOrder  

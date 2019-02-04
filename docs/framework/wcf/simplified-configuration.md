@@ -112,5 +112,5 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
 - [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)
 - [Configuring System-Provided Bindings](../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
 - [Configuring Services](../../../docs/framework/wcf/configuring-services.md)
-- [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)
+- [Configuring Windows Communication Foundation Applications](https://docs.microsoft.com/previous-versions/ms730120(v=vs.90))
 - [Configuring WCF Services in Code](../../../docs/framework/wcf/configuring-wcf-services-in-code.md)

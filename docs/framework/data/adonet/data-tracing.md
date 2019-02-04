@@ -20,7 +20,7 @@ ADO.NET features built-in data tracing functionality that is supported by the .N
   
  To support different trace technologies, tracing is extensible, so a developer can trace a problem at any level of the application stack. Although tracing is not an ADO.NET-only feature, Microsoft providers take advantage of generalized tracing and instrumentation APIs.  
   
- For more information about setting and configuring managed tracing in ADO.NET, see [Tracing Data Access](https://msdn.microsoft.com/library/hh880086.aspx).  
+ For more information about setting and configuring managed tracing in ADO.NET, see [Tracing Data Access](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/hh880086(v=msdn.10)).  
   
 ## Accessing Diagnostic Information in the Extended Events Log  
  In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server, data access tracing ([Data Access Tracing](https://msdn.microsoft.com/library/hh880086.aspx)) has been updated to make it easier to easier to correlate client events with diagnostic information, such as connection failures, from the server's connectivity ring buffer and application performance information in the extended events log. For information about reading the extended events log, see [View Event Session Data](https://msdn.microsoft.com/library/hh710068\(SQL.110\).aspx).  

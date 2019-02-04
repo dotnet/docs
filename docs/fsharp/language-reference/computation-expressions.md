@@ -395,5 +395,5 @@ type Microsoft.FSharp.Linq.QueryBuilder with
 
 - [F# Language Reference](index.md)
 - [Asynchronous Workflows](asynchronous-workflows.md)
-- [Sequences](https://msdn.microsoft.com/library/6b773b6b-9c9a-4af8-bd9e-d96585c166db)
+- [Sequences](https://docs.microsoft.com/dotnet/fsharp/language-reference/sequences)
 - [Query Expressions](query-expressions.md)

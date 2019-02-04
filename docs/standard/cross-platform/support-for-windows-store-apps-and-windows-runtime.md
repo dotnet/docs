@@ -15,7 +15,7 @@ ms.author: "mairaw"
 # .NET Framework Support for Windows Store Apps and Windows Runtime
 The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] supports a number of software development scenarios with the [!INCLUDE[wrt](../../../includes/wrt-md.md)]. These scenarios fall into three categories:
 
--   Developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps with XAML controls, as described in [Roadmap for Windows Store apps using C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10)), [How tos (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10)), and [.NET for Windows Store apps overview](https://msdn.microsoft.com/library/windows/apps/br230302%28v=VS.110%29.aspx).
+-   Developing [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps with XAML controls, as described in [Roadmap for Windows Store apps using C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/br229583(v=win.10)), [How tos (XAML)](https://docs.microsoft.com/previous-versions/windows/apps/br229566(v=win.10)), and [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/br230302(v=vs.110)).
 
 -   Developing class libraries to use in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps that you create with the .NET Framework.
 

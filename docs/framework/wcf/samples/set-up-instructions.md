@@ -38,4 +38,4 @@ This set of topics describes how to set up services that are required to run a W
  Outlines the steps to install Message Queuing.  
   
 ## Related Sections  
- [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)
+ [Troubleshooting Tips](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

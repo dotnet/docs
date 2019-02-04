@@ -321,7 +321,7 @@ The following illustration shows the results of what you just added:
 
 1. Open *`ExpenseItHome.xaml`*.
 
-2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a simple event handler](https://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480).
+2. Add a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to the <xref:System.Windows.Controls.Button> element. For more information, see [How to: Create a simple event handler](https://docs.microsoft.com/previous-versions/bb675300(v=vs.110)).
 
     [!code-xaml[ExpenseIt#15](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt6/ExpenseItHome.xaml#15)]
 

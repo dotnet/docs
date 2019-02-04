@@ -124,7 +124,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 -   In code, specify a custom listening address by adding a <xref:System.ServiceModel.Description.ClientViaBehavior> class to the endpoint’s behavior collection.  
   
--   In configuration, specify a custom listening address with the `ListenUri` attribute of the service [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.  
+-   In configuration, specify a custom listening address with the `ListenUri` attribute of the service [\<endpoint>](https://docs.microsoft.com/previous-versions/ms731304(v=vs.90)) element.  
   
 ### Custom SOAP Address Filter  
  The <xref:System.ServiceModel.EndpointAddress.Uri%2A> is used in conjunction with any <xref:System.ServiceModel.EndpointAddress.Headers%2A> property to define an endpoint’s SOAP address filter (<xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A>). By default, this filter verifies that an incoming message has a `To` message header that matches the endpoint’s URI and that all of the required endpoint headers are present in the message.  

@@ -10,4 +10,4 @@ There is no literal format for spatial types. However, you can use canonical Ent
 GeometryFromText('POINT (43 -73)')  
 ```  
   
- The [SpatialEdmFunctions Methods](https://msdn.microsoft.com/library/hh749531.aspx) page lists all spatial canonical Entity Framework methods. Click on a method of interest to see what parameters should be passed to a function.
+ The [SpatialEdmFunctions Methods](https://docs.microsoft.com/dotnet/api/system.data.common.commandtrees.expressionbuilder.spatial.spatialedmfunctions?view=netframework-4.7.2#methods) page lists all spatial canonical Entity Framework methods. Click on a method of interest to see what parameters should be passed to a function.

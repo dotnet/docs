@@ -17,4 +17,4 @@ When uploading and downloading files with the [My.Computer.Network](xref:Microso
 - [My.Computer.Network.DownloadFile](xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A)
 - [How to: Upload a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)
 - [How to: Download a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)
-- [Network Operations in the .NET Framework with Visual Basic](https://msdn.microsoft.com/library/c5379021-44ef-4d6a-acf5-e951fdcab6b2)
+- [Network Operations in the .NET Framework with Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms172756(v=vs.100))

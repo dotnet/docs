@@ -111,7 +111,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Perforator|Use for analyzing rendering behavior.|  
 |Visual Profiler|Use for profiling the use of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] services, such as layout and event handling, by elements in the visual tree.|  
   
- The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e).  
+ The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](https://docs.microsoft.com/previous-versions/aa969767(v=vs.110)).  
   
 ### DirectX Diagnostic Tool  
  The [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)]-related issues. The default installation folder for the [!INCLUDE[TLA2#tla_dx](../../../../includes/tla2sharptla-dx-md.md)] Diagnostic Tool is:  
@@ -127,6 +127,6 @@ DirectX Diagnostic Tool main window
 - <xref:System.Windows.Media.RenderCapability>
 - <xref:System.Windows.Media.RenderOptions>
 - [Optimizing WPF Application Performance](../../../../docs/framework/wpf/advanced/optimizing-wpf-application-performance.md)
-- [WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)
+- [WPF Performance Suite](https://docs.microsoft.com/previous-versions/aa969767(v=vs.110))
 - [Graphics Rendering Registry Settings](../../../../docs/framework/wpf/graphics-multimedia/graphics-rendering-registry-settings.md)
 - [Animation Tips and Tricks](../../../../docs/framework/wpf/graphics-multimedia/animation-tips-and-tricks.md)

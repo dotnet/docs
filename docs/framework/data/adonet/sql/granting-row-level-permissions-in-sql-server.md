@@ -54,7 +54,7 @@ In some scenarios, there is a requirement to control access to data at a more gr
 -   Grant EXECUTE on the stored procedures to database roles. Users can only access data through the stored procedures provided.  
   
 ## See also
-- [Row-Level Security](https://msdn.microsoft.com/library/dn765131.aspx)
+- [Row-Level Security](https://docs.microsoft.com/sql/relational-databases/security/row-level-security?view=sql-server-2017)
 - [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
 - [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
 - [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)

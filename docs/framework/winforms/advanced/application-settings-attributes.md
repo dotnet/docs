@@ -35,4 +35,4 @@ The Application Settings architecture provides many attributes that can be appli
 - <xref:System.Configuration.ApplicationSettingsBase>
 - <xref:System.Configuration.SettingsProvider>
 - [Application Settings Architecture](../../../../docs/framework/winforms/advanced/application-settings-architecture.md)
-- [How to: Create Application Settings](https://msdn.microsoft.com/library/53b3af80-1c02-4e35-99c6-787663148945)
+- [How to: Create Application Settings](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/wabtadw6(v=vs.100))

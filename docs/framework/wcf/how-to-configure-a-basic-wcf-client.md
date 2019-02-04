@@ -13,7 +13,7 @@ This topic discusses the client configuration file that was generated using the 
 
 ## Configure a Windows Communication Foundation client
 
-Open the generated configuration file (App.config) from the GettingStartedClient project. The following example is a view of the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](https://msdn.microsoft.com/library/13aa23b7-2f08-4add-8dbf-a99f8127c017) element.
+Open the generated configuration file (App.config) from the GettingStartedClient project. The following example is a view of the generated configuration file. Under the [\<system.serviceModel>](../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, find the [\<endpoint>](https://docs.microsoft.com/previous-versions/ms731304(v=vs.90)) element.
 
 ```xml
     <?xml version="1.0" encoding="utf-8" ?>

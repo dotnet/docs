@@ -556,7 +556,7 @@ csc /t:module NumberUtil.cs
   
  For more information about the command-line syntax of the C# compiler, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md).  
   
- You then use the [Link tool (Link.exe)](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129) to compile the two modules into an assembly:  
+ You then use the [Link tool (Link.exe)](https://docs.microsoft.com/cpp/build/reference/linker-options?view=vs-2017) to compile the two modules into an assembly:  
   
 ```  
 link numberutil.netmodule stringutil.netmodule /out:UtilityLib.dll /dll   

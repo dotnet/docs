@@ -27,7 +27,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
 -   Create a project that uses an `IronPython` library.  
   
 ## Prerequisites  
-You need [IronPython](http://ironpython.net/) for .NET to complete this walkthrough. Go to their [Download page](http://ironpython.net/download/) to obtain the latest version.
+You need [IronPython](https://ironpython.net/) for .NET to complete this walkthrough. Go to their [Download page](https://ironpython.net/download/) to obtain the latest version.
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   

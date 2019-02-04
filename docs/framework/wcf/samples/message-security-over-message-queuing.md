@@ -67,7 +67,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
 12. On the service computer, launch Service.exe from the command prompt.  
   
-13. On the client computer, launch Client.exe from the command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+13. On the client computer, launch Client.exe from the command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   

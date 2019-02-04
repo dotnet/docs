@@ -28,4 +28,4 @@ This section provides introductory information about programming with [!INCLUDE[
   
 ## See also
 - [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)
-- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+- [LINQ (Language-Integrated Query)](https://docs.microsoft.com/previous-versions/bb397926(v=vs.140))

@@ -34,5 +34,5 @@ This section contains information about how to create and use your [!INCLUDE[vbt
  [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)  
  Includes links to topics that illustrate how to use stored procedures.  
   
- [Introduction to LINQ](https://msdn.microsoft.com/library/24dddf19-12a0-4707-a4bc-eba4fa7f219e)  
+ [Introduction to LINQ](https://docs.microsoft.com/previous-versions/bb397897(v=vs.140))  
  Provides resources to help you begin to learn about [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].

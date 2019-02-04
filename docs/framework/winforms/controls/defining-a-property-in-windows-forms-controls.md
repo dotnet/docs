@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: c2eb8277-a842-4d99-89a9-647b901a0434
 ---
 # Defining a Property in Windows Forms Controls
-For an overview of properties, see [Properties Overview](https://msdn.microsoft.com/library/8f1a1ff1-0f05-40e0-bfdf-80de8fff7d52). There are a few important considerations when defining a property:  
+For an overview of properties, see [Properties Overview](https://docs.microsoft.com/previous-versions/65zdfbdt(v=vs.140)). There are a few important considerations when defining a property:  
   
 -   You must apply attributes to the properties you define. Attributes specify how the designer should display a property. For details, see [Design-Time Attributes for Components](https://msdn.microsoft.com/library/12050fe3-9327-4509-9e21-4ee2494b95c3).  
   
@@ -19,7 +19,7 @@ For an overview of properties, see [Properties Overview](https://msdn.microsoft.
 -   The .NET Framework class library provides type converters for common data types such as integers, decimal numbers, Boolean values, and others. The purpose of a type converter is generally to provide string-to-value conversion (from string data to other data types). Common data types are associated with default type converters that convert values into strings and strings into the appropriate data types. If you define a property that is a custom (that is, nonstandard) data type, you will have to apply an attribute that specifies the type converter to associate with that property. You can also use an attribute to associate a custom UI type editor with a property. A UI type editor provides a user interface for editing a property or data type. A color picker is an example of a UI type editor. Examples of attributes are given at the end of this topic.  
   
     > [!NOTE]
-    >  If a type converter or a UI type editor is not available for your custom property, you can implement one as described in [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+    >  If a type converter or a UI type editor is not available for your custom property, you can implement one as described in [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/37899azc(v=vs.140)).  
   
  The following code fragment defines a custom property named `EndColor` for the custom control `FlashTrackBar`.  
   

@@ -110,7 +110,7 @@ public class PrimeWebDefaultRequestShould
     [*https://xunit.github.io/*](https://xunit.github.io/)
 
 -   **Unit Test Basics.** <br/>
-    [*https://msdn.microsoft.com/library/hh694602.aspx*](https://msdn.microsoft.com/library/hh694602.aspx)
+    [*https://docs.microsoft.com/visualstudio/test/unit-test-basics?view=vs-2015*](https://docs.microsoft.com/visualstudio/test/unit-test-basics?view=vs-2015)
 
 -   **Moq**. GitHub repo. <br/>
     [*https://github.com/moq/moq*](https://github.com/moq/moq)

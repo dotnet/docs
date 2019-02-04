@@ -100,4 +100,4 @@ ms.author: "mhopkins"
 ## See also
 - [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
 - [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
-- [FetchTimer Sample](https://msdn.microsoft.com/library/5b7d3294-de22-4f24-b2d6-d4785a304b90)
+- [FetchTimer Sample](https://docs.microsoft.com/previous-versions/ms771456(v=vs.100))

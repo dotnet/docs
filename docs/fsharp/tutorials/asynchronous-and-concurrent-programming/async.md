@@ -208,6 +208,6 @@ And that’s it!
 
 ## Further resources:
 
-*   [Async Workflows on MSDN](https://msdn.microsoft.com/library/dd233250.aspx)
+*   [Async Workflows on MSDN](https://docs.microsoft.com/dotnet/fsharp/language-reference/asynchronous-workflows)
 *   [Asynchronous Sequences for F#](https://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
 *   [F# Data HTTP Utilities](https://fsharp.github.io/FSharp.Data/library/Http.html)

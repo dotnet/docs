@@ -99,7 +99,7 @@ In a call to a class constructor, you can set the values of properties of the cl
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet3506.fs)]
 
-For more information, see [Constructors (F#)](https://msdn.microsoft.com/library/2cd0ed07-d214-4125-8317-4f288af99f05).
+For more information, see [Constructors (F#)](https://docs.microsoft.com/dotnet/fsharp/language-reference/members/constructors).
 
 ## Optional Parameters
 

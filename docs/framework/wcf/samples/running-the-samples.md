@@ -19,7 +19,7 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 3.  Run Client.exe from \client\bin\\, from under the language-specific folder. Client activity is displayed on the client console window.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across machines  
   
@@ -75,5 +75,5 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ## See also
 - [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)
-- [Running the Samples in a Workgroup and Across Machines](https://msdn.microsoft.com/library/a451a525-e7ce-452d-9da9-620221260113)
-- [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)
+- [Running the Samples in a Workgroup and Across Machines](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751525(v=vs.90))
+- [Troubleshooting Tips](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

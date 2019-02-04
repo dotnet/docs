@@ -24,8 +24,8 @@ See the following tables for a list of Microsoft technologies you can use to pro
   
 |**Option**|**Description**|  
 |----------------|---------------------|  
-|[XmlLite](https://msdn.microsoft.com/library/ms752872.aspx)|-   A fast, secure, non-caching, forward-only XML parser that helps you build high-performance XML apps.<br />-   Works with any language that can use dynamic link libraries (DLLs); we recommend using C++.|  
-|[MSXML](https://msdn.microsoft.com/library/ms763742.aspx)|-   COM-based technology for processing XML that is included with the Windows operating system.<br />-   Provides a native implementation of the DOM with support for XPath and XSLT.<br />-   Contains the SAX2 event-based parser.|  
+|[XmlLite](https://docs.microsoft.com/previous-versions/windows/desktop/ms752872(v=vs.85))|-   A fast, secure, non-caching, forward-only XML parser that helps you build high-performance XML apps.<br />-   Works with any language that can use dynamic link libraries (DLLs); we recommend using C++.|  
+|[MSXML](https://docs.microsoft.com/previous-versions/windows/desktop/ms763742(v=vs.85))|-   COM-based technology for processing XML that is included with the Windows operating system.<br />-   Provides a native implementation of the DOM with support for XPath and XSLT.<br />-   Contains the SAX2 event-based parser.|  
   
 ## See also
 

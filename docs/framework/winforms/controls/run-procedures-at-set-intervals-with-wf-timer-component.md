@@ -17,7 +17,7 @@ ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 # How to: Run Procedures at Set Intervals with the Windows Forms Timer Component
 You might sometimes want to create a procedure that runs at specific time intervals until a loop has finished or that runs when a set time interval has elapsed. The <xref:System.Windows.Forms.Timer> component makes such a procedure possible.  
   
- This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
+ This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](https://docs.microsoft.com/previous-versions/tb9yt5e6(v=vs.100)).  
   
 > [!NOTE]
 >  There are some limitations when using the <xref:System.Windows.Forms.Timer> component. For more information, see [Limitations of the Windows Forms Timer Component's Interval Property](../../../../docs/framework/winforms/controls/limitations-of-the-timer-component-interval-property.md).  

@@ -29,7 +29,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  Provides links to Visual Basic and C# samples.  
   
 ## Related Sections  
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+ [LINQ (Language-Integrated Query)](https://docs.microsoft.com/previous-versions/bb397926(v=vs.140))  
  Provides an overview of [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies.  
   
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
@@ -38,11 +38,11 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  [LINQ and ADO.NET](../../../../../../docs/framework/data/adonet/linq-and-ado-net.md)  
  Links to the [!INCLUDE[vstecado](../../../../../../includes/vstecado-md.md)] portal.  
   
- [LINQ to SQL Walkthroughs](https://msdn.microsoft.com/library/308e66ac-f704-4e00-9b4e-7af0045a2374)  
+ [LINQ to SQL Walkthroughs](https://docs.microsoft.com/previous-versions/bb386295(v=vs.100))  
  Lists walkthroughs available for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)  
  Describes how to download sample databases used in the documentation.  
   
- [LinqDataSource Technology Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  
+ [LinqDataSource Technology Overview](https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100))  
  Describes how the <xref:System.Web.UI.WebControls.LinqDataSource> control exposes [!INCLUDE[vbteclinqext](../../../../../../includes/vbteclinqext-md.md)] to Web developers through the [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)] data-source control architecture.

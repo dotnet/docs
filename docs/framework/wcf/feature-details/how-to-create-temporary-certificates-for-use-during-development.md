@@ -22,7 +22,7 @@ When developing a secure service or client using Windows Communication Foundatio
 The following command creates a self-signed certificate with a subject name of "RootCA" in the Current User Personal store.
 
 ```powershell
-PS $rootCert = New-SelfSignedCertificate -CertStoreLocation cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("1.3.6.1.4.1.311.21.10={text}1.3.6.1.5.5.7.3.1,1.3.6.1.5.5.7.3.2")
+PS $rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.1,1.3.6.1.5.5.7.3.2") -KeyUsage CertSign,DigitalSignature,KeyEncipherment
 ```
 
 We need to export the certificate to a PFX file so that it can be imported to where it's needed in a later step. When exporting a certificate with the private key, a password is needed to protect it. We save the password in a `SecureString` and use the [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) cmdlet to export the certificate with the associated private key to a PFX file. We also save just the public certificate into a CRT file using the [Export-Certificate](/powershell/module/pkiclient/export-certificate) cmdlet.

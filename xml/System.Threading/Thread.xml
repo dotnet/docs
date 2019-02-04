@@ -2134,7 +2134,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Interrupts a thread that is in the <see langword="WaitSleepJoin" /> thread state.</summary>
+        <summary>Interrupts a thread that is in the <see cref="F:System.Threading.ThreadState.WaitSleepJoin"/> thread state.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2158,7 +2158,6 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <altmember cref="T:System.Threading.ThreadState" />
         <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and interrupting threads</related>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
       </Docs>
     </Member>
     <Member MemberName="IsAlive">
@@ -2400,7 +2399,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.Threading.ThreadStateException">The caller attempted to join a thread that is in the <see cref="F:System.Threading.ThreadState.Unstarted" /> state.</exception>
         <exception cref="T:System.Threading.ThreadInterruptedException">The thread is interrupted while waiting.</exception>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -2463,7 +2462,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="millisecondsTimeout" /> is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> in milliseconds.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The thread has not been started.</exception>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -2529,7 +2528,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of <paramref name="timeout" /> is negative and is not equal to <see cref="F:System.Threading.Timeout.Infinite" /> in milliseconds, or is greater than <see cref="F:System.Int32.MaxValue" /> milliseconds.</exception>
         <exception cref="T:System.Threading.ThreadStateException">The caller attempted to join a thread that is in the <see cref="F:System.Threading.ThreadState.Unstarted" /> state.</exception>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="ManagedThreadId">
@@ -2812,7 +2811,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.Security.SecurityException">The caller does not have the required security permission for the current thread.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <related type="Article" href="~/docs/standard/threading/destroying-threads.md">Destroying threads</related>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -2868,7 +2867,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.Security.SecurityException">The caller does not have the appropriate <see cref="T:System.Security.Permissions.SecurityPermission" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" /></permission>
         <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and interrupting threads</related>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="SetApartmentState">
@@ -3462,7 +3461,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <exception cref="T:System.Security.SecurityException">The caller does not have the appropriate <see cref="T:System.Security.Permissions.SecurityPermission" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for advanced operations on threads. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />.</permission>
         <related type="Article" href="~/docs/standard/threading/pausing-and-resuming-threads.md">Pausing and interrupting threads</related>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
+        <altmember cref="T:System.Threading.ThreadState" />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices._Thread.GetIDsOfNames">
@@ -3694,7 +3693,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       </ReturnValue>
       <Docs>
         <summary>Gets a value containing the states of the current thread.</summary>
-        <value>One of the <see cref="T:System.Threading.ThreadState" /> values indicating the state of the current thread. The initial value is <see langword="Unstarted" />.</value>
+        <value>One of the <see cref="T:System.Threading.ThreadState" /> values indicating the state of the current thread. The initial value is <see cref="F:System.Threading.ThreadState.Unstarted" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3715,7 +3714,6 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/threading/managed-thread-states.md">Managed Thread States</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetApartmentState">

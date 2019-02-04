@@ -51,7 +51,7 @@
   
 -   The <xref:System.Threading.Mutex> class. See [Mutexes](~/docs/standard/threading/mutexes.md).  
   
--   The <xref:System.Threading.EventWaitHandle> class and its derived classes, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent>. See [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](~/docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md).  
+-   The <xref:System.Threading.EventWaitHandle> class and its derived classes, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent>.  
   
 -   The <xref:System.Threading.Semaphore> class. See [Semaphore and SemaphoreSlim](~/docs/standard/threading/semaphore-and-semaphoreslim.md).  
   
@@ -67,7 +67,7 @@
   
 -   <xref:System.Threading.WaitHandle.WaitAll%2A>, which allows a thread to wait until all the wait handles in an array receive a signal.  
   
--   <xref:System.Threading.WaitHandle.WaitAny%2A>, which allows a thread to wait until any one of a specified set of wait handles has been signaled .  
+-   <xref:System.Threading.WaitHandle.WaitAny%2A>, which allows a thread to wait until any one of a specified set of wait handles has been signaled.  
   
  The overloads of these methods provide timeout intervals for abandoning the wait, and the opportunity to exit a synchronization context before entering the wait, allowing other threads to use the synchronization context.  
   

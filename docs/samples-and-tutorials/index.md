@@ -82,6 +82,10 @@ This tutorial shows you how to build a simple .NET Core console app using Visual
 
 This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
 
+**[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
+
+This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
+
 ## Deploying to containers
 
 **[Running ASP.NET MVC Applications in Windows Docker Containers](../framework/docker/aspnetmvc.md)**

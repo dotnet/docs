@@ -38,7 +38,7 @@ All other marks and logos are property of their respective owners.
 
 Author:
 
-> **Steve Smith (@ardalis)**, Software Architecture Advisor, [Ardalis.com](https://ardalis.com)
+> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 
 Editors:
 

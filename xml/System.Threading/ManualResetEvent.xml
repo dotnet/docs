@@ -34,28 +34,29 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Notifies one or more waiting threads that an event has occurred. This class cannot be inherited.</summary>
+    <summary>Represents a thread synchronization event that, when signaled, must be reset manually. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the .NET Framework version 2.0, <xref:System.Threading.ManualResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. A <xref:System.Threading.ManualResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType>.  
+
+ You use `ManualResetEvent`, <xref:System.Threading.AutoResetEvent>, and <xref:System.Threading.EventWaitHandle> for thread interaction (or thread signaling). For more information, see the [Thread interaction, or signaling](~/docs/standard/threading/overview-of-synchronization-primitives.md#thread-interaction-or-signaling) section of the [Overview of synchronization primitives](~/docs/standard/threading/overview-of-synchronization-primitives.md) article.  
+
+ When a thread begins an activity that must complete before other threads proceed, it calls [ManualResetEvent.Reset](xref:System.Threading.EventWaitHandle.Reset%2A) to put `ManualResetEvent` in the non-signaled state. This thread can be thought of as controlling the `ManualResetEvent`. Threads that call [ManualResetEvent.WaitOne](xref:System.Threading.WaitHandle.WaitOne%2A) block, awaiting the signal. When the controlling thread completes the activity, it calls [ManualResetEvent.Set](xref:System.Threading.EventWaitHandle.Set%2A) to signal that the waiting threads can proceed. All waiting threads are released.  
+
+ Once it has been signaled, `ManualResetEvent` remains signaled until it is manually reset by calling the <xref:System.Threading.EventWaitHandle.Reset> method. That is, calls to <xref:System.Threading.WaitHandle.WaitOne%2A> return immediately.  
+
+ You can control the initial state of a `ManualResetEvent` by passing a Boolean value to the constructor: `true` if the initial state is signaled, and `false` otherwise.  
+ 
+ `ManualResetEvent` can also be used with the `static` <xref:System.Threading.WaitHandle.WaitAll%2A> and <xref:System.Threading.WaitHandle.WaitAny%2A> methods.  
+  
+ Beginning with the .NET Framework version 2.0, <xref:System.Threading.ManualResetEvent> derives from the <xref:System.Threading.EventWaitHandle> class. A <xref:System.Threading.ManualResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode.ManualReset?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  Unlike the <xref:System.Threading.ManualResetEvent> class, the <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  
-  
- <xref:System.Threading.ManualResetEvent> allows threads to communicate with each other by signaling. Typically, this communication concerns a task which one thread must complete before other threads can proceed.  
-  
- When a thread begins an activity that must complete before other threads proceed, it calls <xref:System.Threading.EventWaitHandle.Reset%2A> to put `ManualResetEvent` in the non-signaled state. This thread can be thought of as controlling the `ManualResetEvent`. Threads that call <xref:System.Threading.WaitHandle.WaitOne%2A> on the `ManualResetEvent` will block, awaiting the signal. When the controlling thread completes the activity, it calls <xref:System.Threading.EventWaitHandle.Set%2A> to signal that the waiting threads can proceed. All waiting threads are released.  
-  
- Once it has been signaled, `ManualResetEvent` remains signaled until it is manually reset. That is, calls to `WaitOne` return immediately.  
-  
- You can control the initial state of a `ManualResetEvent` by passing a Boolean value to the constructor, `true` if the initial state is signaled and `false` otherwise.  
-  
- `ManualResetEvent` can also be used with the `static`<xref:System.Threading.WaitHandle.WaitAll%2A> and <xref:System.Threading.WaitHandle.WaitAny%2A> methods.  
-  
- For more information about thread synchronization mechanisms, see [ManualResetEvent and ManualResetEventSlim](~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md) in the conceptual documentation.  
-  
+> Unlike the <xref:System.Threading.ManualResetEvent> class, the <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  
+
+ Beginning with the .NET Framework version 4.0, the <xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType> class is a lightweight alternative to <xref:System.Threading.ManualResetEvent>.    
+   
    
   
 ## Examples  
@@ -74,7 +75,7 @@
     <threadsafe>This class is thread safe.</threadsafe>
     <altmember cref="T:System.Threading.WaitHandle" />
     <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-    <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">Manual Reset Event</related>
+    <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -125,7 +126,7 @@
         </remarks>
         <altmember cref="T:System.Threading.WaitHandle" />
         <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
-        <related type="Article" href="~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md">ManualResetEvent</related>
+        <related type="Article" href="~/docs/standard/threading/overview-of-synchronization-primitives.md">Overview of synchronization primitives</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">

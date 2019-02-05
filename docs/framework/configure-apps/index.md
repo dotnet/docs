@@ -70,7 +70,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
 -   ASP.NET-hosted app.  
   
-     For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100))  
+     For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)).
   
 -   Internet Explorer-hosted app.  
   
@@ -117,9 +117,7 @@ The .NET Framework, through configuration files, gives developers and administra
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
-- [Registering Remote Objects Using Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/2fs42683(v=vs.100))
 - [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
-- [NIB: Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
+- [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
 - [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
-- [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))

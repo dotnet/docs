@@ -38,4 +38,5 @@ Developers might want to make sure that a shared assembly they are building work
 >  Use this setting only at development time. The runtime does not check the versions on strong-named assemblies found in the DEVPATH. It simply uses the first assembly it finds.  
   
 ## See also
-- [Configuring .NET Framework Apps](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kza1yk3a(v=vs.100))
+
+- [Configuring Apps by using Configuration Files](index.md)

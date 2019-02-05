@@ -34,7 +34,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
 ## Managing Transactions  
  In the Entity Framework, there are two ways to use transactions: automatic and explicit. Automatic transactions use the <xref:System.Transactions> namespace, and explicit transactions use the <xref:System.Data.EntityClient.EntityTransaction> class.  
   
- To update data that is exposed through a conceptual model; see [How to: Manage Transactions in the Entity Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).  
+ To update data that is exposed through a conceptual model, see [How to: Manage Transactions in the Entity Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).  
   
 ## In This Section  
  [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md)  

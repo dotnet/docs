@@ -125,7 +125,7 @@ wsFederationBinding element
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wsfederationhttpbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement>.|  
 |[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
+|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   

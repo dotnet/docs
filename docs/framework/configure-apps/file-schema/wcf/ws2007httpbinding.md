@@ -80,7 +80,7 @@ Defines an interoperable binding that provides support for the correct versions 
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>.|  
 |[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that endpoints configured with this binding can process. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[reliableSession](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies whether reliable sessions are established between channel endpoints.|  
+|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies whether reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   

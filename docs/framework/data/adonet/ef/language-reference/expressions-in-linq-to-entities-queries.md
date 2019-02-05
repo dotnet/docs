@@ -28,7 +28,7 @@ An expression is a fragment of code that can be evaluated to a single value, obj
   
  [Initialization Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/initialization-expressions.md)  
   
- [Navigation Properties](https://msdn.microsoft.com/library/41e1e6b9-8a57-467d-99d9-1857d2ca2ea5)  
+ [Navigation Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738520(v=vs.100))  
   
 ## See also
 - [ADO.NET Entity Framework](../../../../../../docs/framework/data/adonet/ef/index.md)

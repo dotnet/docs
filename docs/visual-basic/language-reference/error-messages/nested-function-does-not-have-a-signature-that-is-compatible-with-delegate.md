@@ -1,5 +1,5 @@
 ---
-title: "Nested function does not have a signature that is compatible with delegate &#39;&lt;delegatename&gt;&#39;"
+title: "Nested function does not have a signature that is compatible with delegate '<delegatename>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc36532"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC36532"
 ms.assetid: 493f292c-d81e-40ef-8b47-61f020571829
 ---
-# Nested function does not have a signature that is compatible with delegate &#39;&lt;delegatename&gt;&#39;
+# Nested function does not have a signature that is compatible with delegate '\<delegatename>'
 A lambda expression has been assigned to a delegate that has an incompatible signature. For example, in the following code, delegate `Del` has two integer parameters.  
   
 ```vb  

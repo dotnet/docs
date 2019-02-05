@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;"
+title: "<remove> Element for <listeners> for <trace>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/remove"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "<remove> element"
 ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
 ---
-# &lt;remove&gt; Element for &lt;listeners&gt; for &lt;trace&gt;
+# \<remove> Element for \<listeners> for \<trace>
 Removes a listener from the **Listeners** collection.  
   
  \<configuration>  

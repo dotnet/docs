@@ -1,5 +1,5 @@
 ---
-title: "Namespace or type specified in the project-level Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found"
+title: "Namespace or type specified in the project-level Imports '<qualifiedelementname>' doesn't contain any public member or cannot be found"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc40057"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40057"
 ms.assetid: 4ae3506e-2ebe-4ff3-995d-14ac60db5e9f
 ---
-# Namespace or type specified in the project-level Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found
+# Namespace or type specified in the project-level Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found
 Namespace or type specified in the project-level Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the alias name doesn't contain other aliases.  
   
  An import property of a project specifies a containing element that either cannot be found or does not define any `Public` members.  

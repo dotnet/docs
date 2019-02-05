@@ -17,4 +17,3 @@ A `ReDim` statement attempted to use the `Preserve` keyword to change a dimensio
 - [Array dimensions in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/array-dimensions.md)
 - [ReDim Statement](../../visual-basic/language-reference/statements/redim-statement.md)
 - [Dim Statement](../../visual-basic/language-reference/statements/dim-statement.md)
-- [Preserve - delete](https://msdn.microsoft.com/library/91badeab-b4e0-48b6-92c9-9f0c8f995d81)

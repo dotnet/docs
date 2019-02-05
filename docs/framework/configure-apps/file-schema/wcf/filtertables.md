@@ -1,9 +1,9 @@
 ---
-title: "&lt;filterTables&gt;"
+title: "<filterTables>"
 ms.date: "03/30/2017"
 ms.assetid: 41f1ac35-f559-473a-b2c3-8cc83a6a3831
 ---
-# &lt;filterTables&gt;
+# \<filterTables>
 Represents a configuration section for defining routing tables that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  
   
  \<system.serviceModel>  

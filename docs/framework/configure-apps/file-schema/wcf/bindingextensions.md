@@ -1,9 +1,9 @@
 ---
-title: "&lt;bindingExtensions&gt;"
+title: "<bindingExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: 8373f94d-d095-486f-8f1e-4ac2f72b58c7
 ---
-# &lt;bindingExtensions&gt;
+# \<bindingExtensions>
 This section enables the use of a user defined binding from a machine or application configuration file. You can add a user defined binding to this collection by using the `add` keyword, and setting the `type` attribute of the element to a user defined binding, as well as the `name` attribute to the name of the user defined binding.  
   
  Binding extensions enable the user to create user-defined bindings for use as part an endpoint configuration. Programmatically, a binding extension is a type that implements the abstract class <xref:System.ServiceModel.Channels.Binding>.  

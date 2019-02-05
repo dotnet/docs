@@ -1,9 +1,9 @@
 ---
-title: "&lt;udpBinding&gt;"
+title: "<udpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
 ---
-# &lt;udpBinding&gt;
+# \<udpBinding>
 A configuration element used to configure the <xref:System.ServiceModel.UdpBinding> binding.  
   
  \<system.ServiceModel>  
@@ -63,7 +63,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   

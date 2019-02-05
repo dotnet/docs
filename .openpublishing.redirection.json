@@ -1977,8 +1977,24 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
         {
+            "source_path": "docs/standard/threading/autoresetevent.md",
+            "redirect_url": "/dotnet/api/system.threading.autoresetevent"
+        },
+        {
+            "source_path": "docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives#thread-interaction-or-signaling"
+        },
+        {
             "source_path": "docs/standard/threading/interlocked-operations.md",
             "redirect_url": "/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path": "docs/standard/threading/managed-thread-states.md",
+            "redirect_url": "/dotnet/api/system.threading.threadstate"
+        },
+        {
+            "source_path": "docs/standard/threading/manualresetevent-and-manualreseteventslim.md",
+            "redirect_url": "/dotnet/api/system.threading.manualresetevent"
         },
         {
             "source_path": "docs/standard/threading/reader-writer-locks.md",

@@ -1,12 +1,12 @@
 ---
-title: "&lt;include&gt; (Visual Basic)"
+title: "<include> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "include XML tag"
   - "<include> XML tag"
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
 ---
-# &lt;include&gt; (Visual Basic)
+# \<include> (Visual Basic)
 Refers to another file that describes the types and members in your source code.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for &lt;switches&gt;"
+title: "<add> Element for <switches>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches/add"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "add element for <switches>"
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
 ---
-# &lt;add&gt; Element for &lt;switches&gt;
+# \<add> Element for \<switches>
 Specifies the level where a trace switch is set.  
   
  \<configuration>  

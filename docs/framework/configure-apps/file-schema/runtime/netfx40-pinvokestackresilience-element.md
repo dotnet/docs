@@ -1,5 +1,5 @@
 ---
-title: "&lt;NetFx40_PInvokeStackResilience&gt; Element"
+title: "<NetFx40_PInvokeStackResilience> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "<NetFx40_PInvokeStackResilience> element"
@@ -8,7 +8,7 @@ ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;NetFx40_PInvokeStackResilience&gt; Element
+# \<NetFx40_PInvokeStackResilience> Element
 Specifies whether the runtime automatically fixes incorrect platform invoke declarations at run time, at the cost of slower transitions between managed and unmanaged code.  
   
  \<configuration>  

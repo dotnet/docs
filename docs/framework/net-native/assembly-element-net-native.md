@@ -1,11 +1,11 @@
 ---
-title: "&lt;Assembly&gt; Element (.NET Native)"
+title: "<Assembly> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: cfe629eb-1106-4113-86e1-052f402d8d8b
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Assembly&gt; Element (.NET Native)
+# \<Assembly> Element (.NET Native)
 Applies runtime reflection policy to all the types in a specified assembly.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;remarks&gt; - C# Programming Guide"
+title: "<remarks> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "<remarks> C# XML tag"
 ms.assetid: f8641391-31f3-4735-af7a-c502a5b6a251
 ---
-# &lt;remarks&gt; (C# Programming Guide)
+# \<remarks> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

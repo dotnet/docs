@@ -1,10 +1,10 @@
----
-title: "&lt;activityStateQuery&gt;"
+﻿---
+title: "<activityStateQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 9f8c3e4f-e2e3-4402-9760-03bf918ece7b
 ---
-# &lt;activityStateQuery&gt;
+# \<activityStateQuery>
 Represents a query that is used to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the "Send E-Mail" activity completes within a workflow instance. This query is necessary for a tracking participant to subscribe to activity state record objects. The available states to subscribe to are specified in ActivityStates.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  

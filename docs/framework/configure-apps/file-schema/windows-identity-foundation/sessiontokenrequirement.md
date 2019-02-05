@@ -1,10 +1,10 @@
 ---
-title: "&lt;sessionTokenRequirement&gt;"
+title: "<sessionTokenRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: 496a1735-cbb7-49d5-a6aa-dd5550462073
 author: "BrucePerlerMS"
 ---
-# &lt;sessionTokenRequirement&gt;
+# \<sessionTokenRequirement>
 Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> class or derived classes.  
   
  \<system.identityModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;enforceFIPSPolicy&gt; Element"
+title: "<enforceFIPSPolicy> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "enforceFIPSPolicy element"
@@ -10,7 +10,7 @@ ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;enforceFIPSPolicy&gt; Element
+# \<enforceFIPSPolicy> Element
 Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).  
   
  \<configuration> Element  

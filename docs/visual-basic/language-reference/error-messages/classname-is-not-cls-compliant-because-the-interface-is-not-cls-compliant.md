@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;classname&gt;&#39; is not CLS-compliant because the interface &#39;&lt;interfacename&gt;&#39; it implements is not CLS-compliant"
+title: "'<classname>' is not CLS-compliant because the interface '<interfacename>' it implements is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc40029"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40029"
 ms.assetid: 178452f3-5575-4da0-9d6c-53bcddb6a338
 ---
-# &#39;&lt;classname&gt;&#39; is not CLS-compliant because the interface &#39;&lt;interfacename&gt;&#39; it implements is not CLS-compliant
+# '\<classname>' is not CLS-compliant because the interface '\<interfacename>' it implements is not CLS-compliant
 A class or interface is marked as `<CLSCompliant(True)>` when it derives from or implements a type that is marked as `<CLSCompliant(False)>` or is not marked.  
   
  For a class or interface to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), its entire inheritance hierarchy must be compliant. That means every type from which it inherits, directly or indirectly, must be compliant. Similarly, if a class implements one or more interfaces, they must all be compliant throughout their inheritance hierarchies.  

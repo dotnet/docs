@@ -1,5 +1,5 @@
 ---
-title: "First operand in a binary &#39;If&#39; expression must be nullable or a reference type"
+title: "First operand in a binary 'If' expression must be nullable or a reference type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc33107"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC33107"
 ms.assetid: 493c8899-3f6b-4471-8eb6-9284e8492768
 ---
-# First operand in a binary &#39;If&#39; expression must be nullable or a reference type
+# First operand in a binary 'If' expression must be nullable or a reference type
 An `If` expression can take either two or three arguments. When you send only two arguments, the first argument must be a reference type or a nullable type. If the first argument evaluates to anything other than `Nothing`, its value is returned. If the first argument evaluates to `Nothing`, the second argument is evaluated and returned.  
   
  For example, the following code contains two `If` expressions, one with three arguments and one with two arguments. The expressions calculate and return the same value.  

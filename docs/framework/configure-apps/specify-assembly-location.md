@@ -1,5 +1,5 @@
 ---
-title: "Specifying an Assembly&#39;s Location"
+title: "Specifying an Assembly's Location"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuration [.NET Framework], applications"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], specifying location"
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
 ---
-# Specifying an Assembly&#39;s Location
+# Specifying an Assembly's Location
 There are two ways to specify an assembly's location:  
   
 -   Using the [\<codeBase>](../../../docs/framework/configure-apps/file-schema/runtime/codebase-element.md) element.  

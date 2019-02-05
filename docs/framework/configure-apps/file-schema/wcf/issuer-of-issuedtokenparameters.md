@@ -1,9 +1,9 @@
 ---
-title: "&lt;issuer&gt; of &lt;issuedTokenParameters&gt;"
+title: "<issuer> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: d6a95f32-d58c-40fc-8658-dd92564d3c90
 ---
-# &lt;issuer&gt; of &lt;issuedTokenParameters&gt;
+# \<issuer> of \<issuedTokenParameters>
 Specifies the Security Token Service (STS) that issues security tokens.  
   
  \<system.serviceModel>  

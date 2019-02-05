@@ -1,9 +1,9 @@
 ---
-title: "&lt;rsa&gt;"
+title: "<rsa>"
 ms.date: "03/30/2017"
 ms.assetid: ae1f2267-e40d-42ff-8abf-06ab7067bdb9
 ---
-# &lt;rsa&gt;
+# \<rsa>
 A secure WCF client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
   
  \<identity>  

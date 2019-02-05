@@ -1,10 +1,10 @@
 ---
-title: "&lt;cancelRequestedQueries&gt;"
+title: "<cancelRequestedQueries>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: eab5af7e-76fa-434d-9d36-873e995cee05
 ---
-# &lt;cancelRequestedQueries&gt;
+# \<cancelRequestedQueries>
 Represents a collection of queries that are used to track requests to cancel a child activity by the parent activity. The query is necessary for a tracking participant to subscribe to cancel request record objects.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

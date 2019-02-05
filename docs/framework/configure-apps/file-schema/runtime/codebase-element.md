@@ -1,5 +1,5 @@
 ---
-title: "&lt;codeBase&gt; Element"
+title: "<codeBase> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#codeBase"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "codeBase element"
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
 ---
-# &lt;codeBase&gt; Element
+# \<codeBase> Element
 Specifies where the common language runtime can find an assembly.  
   
  \<configuration>  

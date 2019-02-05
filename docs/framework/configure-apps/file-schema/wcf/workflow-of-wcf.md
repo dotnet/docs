@@ -1,9 +1,9 @@
----
-title: "&lt;workflow&gt; of WCF"
+﻿---
+title: "<workflow> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: c0443eba-d3b4-4fae-886e-9878daf77691
 ---
-# &lt;workflow&gt; of WCF
+# \<workflow> of WCF
 Configure a tracking participant that listens to the tracking records being emitted from the runtime directly and process them in whatever way it was configured. This includes writing to a specific output (e.g., file, Console, ETW), processing/aggregating the records, or any other combination that might be required.  
   
  For more information in workflow tracking and tracking participants, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Tracking Participants](../../../../../docs/framework/windows-workflow-foundation/tracking-participants.md).  

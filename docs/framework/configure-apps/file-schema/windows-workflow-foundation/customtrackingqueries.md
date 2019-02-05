@@ -1,10 +1,10 @@
 ---
-title: "&lt;customTrackingQueries&gt;"
+title: "<customTrackingQueries>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 4e9e732d-911d-45a3-a569-4b5e9cd1ffbe
 ---
-# &lt;customTrackingQueries&gt;
+# \<customTrackingQueries>
 Represents a collection of queries that are used to track events that you define in your code activities. The query is necessary for a tracking participant to subscribe to custom tracking records.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  

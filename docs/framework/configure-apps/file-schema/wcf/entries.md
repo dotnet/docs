@@ -1,9 +1,9 @@
 ---
-title: "&lt;entries&gt;"
+title: "<entries>"
 ms.date: "03/30/2017"
 ms.assetid: 202e430c-c1b9-4343-abe2-ac78c181a3b7
 ---
-# &lt;entries&gt;
+# \<entries>
 A routing entry that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  
   
  \<system.serviceModel>  

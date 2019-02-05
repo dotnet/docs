@@ -1,5 +1,5 @@
 ---
-title: "Methods of &#39;System.Nullable(Of T)&#39; cannot be used as operands of the &#39;AddressOf&#39; operator"
+title: "Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc32126"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC32126"
 ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
 ---
-# Methods of &#39;System.Nullable(Of T)&#39; cannot be used as operands of the &#39;AddressOf&#39; operator
+# Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator
 A statement uses the `AddressOf` operator with an operand that represents a procedure of the <xref:System.Nullable%601> structure.  
   
  **Error ID:** BC32126  

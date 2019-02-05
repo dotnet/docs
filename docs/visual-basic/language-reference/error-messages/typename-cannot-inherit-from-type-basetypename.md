@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;typename&gt;&#39; cannot inherit from &lt;type&gt; &#39;&lt;basetypename&gt;&#39; because it expands the access of the base &lt;type&gt; outside the assembly"
+title: "'<typename>' cannot inherit from <type> '<basetypename>' because it expands the access of the base <type> outside the assembly"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30910"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30910"
 ms.assetid: 68fc05c5-5d55-4742-9a3b-ea04312594f4
 ---
-# &#39;&lt;typename&gt;&#39; cannot inherit from &lt;type&gt; &#39;&lt;basetypename&gt;&#39; because it expands the access of the base &lt;type&gt; outside the assembly
+# '\<typename>' cannot inherit from \<type> '\<basetypename>' because it expands the access of the base \<type> outside the assembly
 A class or interface inherits from a base class or interface but has a less restrictive access level.  
   
  For example, a `Public` interface inherits from a `Friend` interface, or a `Protected` class inherits from a `Private` class. This exposes the base class or interface to access beyond the intended level.  

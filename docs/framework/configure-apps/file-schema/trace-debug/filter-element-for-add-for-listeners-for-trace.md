@@ -1,5 +1,5 @@
 ---
-title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;trace&gt;"
+title: "<filter> Element for <add> for <listeners> for <trace>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add/filter"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<filter> element for <add> for <listeners> for <trace>"
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
 ---
-# &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;trace&gt;
+# \<filter> Element for \<add> for \<listeners> for \<trace>
 Adds a filter to a listener in the `Listeners` collection for a trace.  
   
  \<configuration>  

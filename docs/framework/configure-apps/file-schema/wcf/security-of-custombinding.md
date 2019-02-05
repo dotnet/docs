@@ -1,9 +1,9 @@
 ---
-title: "&lt;security&gt; of &lt;customBinding&gt;"
+title: "<security> of <customBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 ---
-# &lt;security&gt; of &lt;customBinding&gt;
+# \<security> of \<customBinding>
 Specifies the security options for a custom binding.  
   
  \<system.serviceModel>  

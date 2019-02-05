@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element"
+title: "<serviceCertificate> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
 ---
-# &lt;serviceCertificate&gt; of &lt;clientCredentials&gt; Element
+# \<serviceCertificate> of \<clientCredentials> Element
 Specifies a certificate to use when authenticating a service to the client.  
   
  \<system.ServiceModel>  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;knownCertificates&gt;"
+title: "<add> of <knownCertificates>"
 ms.date: "03/30/2017"
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
 ---
-# &lt;add&gt; of &lt;knownCertificates&gt;
+# \<add> of \<knownCertificates>
 Adds an X.509 certificate to the collection of known certificates.  
   
  \<system.ServiceModel>  

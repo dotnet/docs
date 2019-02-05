@@ -1,5 +1,5 @@
 ---
-title: "&lt;compiler&gt; Element"
+title: "<compiler> Element"
 ms.date: 08/14/2018
 f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#compiler"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "compiler element"
 ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 ---
-# &lt;compiler&gt; Element
+# \<compiler> Element
 
 Specifies the compiler configuration attributes for a language provider.
 
@@ -101,4 +101,4 @@ The following example illustrates a typical compiler configuration element:
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)
 - [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
-- [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/f7d6b078-5d42-4134-b3f7-62e1aba1df1e(v=vs.100))
+- [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

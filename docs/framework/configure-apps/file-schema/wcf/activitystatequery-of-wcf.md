@@ -1,9 +1,9 @@
----
-title: "&lt;activityStateQuery&gt; of WCF"
+﻿---
+title: "<activityStateQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: d6cdc04b-6f3a-4097-a623-ee4a1be3b5c4
 ---
-# &lt;activityStateQuery&gt; of WCF
+# \<activityStateQuery> of WCF
 
 Represents a query that is used to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the "Send E-Mail" activity completes within a workflow instance. This query is necessary for a tracking participant to subscribe to activity state record objects. The available states to subscribe to are specified in ActivityStates.  
   

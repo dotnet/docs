@@ -1,5 +1,5 @@
 ---
-title: "&lt;cryptoNameMapping&gt; Element"
+title: "<cryptoNameMapping> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#cryptoNameMapping"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "cryptoNameMapping element"
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 ---
-# &lt;cryptoNameMapping&gt; Element
+# \<cryptoNameMapping> Element
 Contains mappings of classes to friendly names.  
   
  \<configuration>  

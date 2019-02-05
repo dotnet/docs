@@ -1,9 +1,9 @@
 ---
-title: "&lt;synchronousReceive&gt; element"
+title: "<synchronousReceive> element"
 ms.date: "03/30/2017"
 ms.assetid: cc070387-3d11-4b02-a952-bc08ad2df05a
 ---
-# &lt;synchronousReceive&gt; element
+# \<synchronousReceive> element
 This configuration element is used to specify run-time behavior for receiving messages in either a service or client application. It does not have any attributes or child elements.  
   
  \<system.ServiceModel>  

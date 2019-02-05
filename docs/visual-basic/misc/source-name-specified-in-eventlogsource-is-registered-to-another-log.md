@@ -13,7 +13,7 @@ The `EventLog` is attempting to refer to a source that is registered to a differ
 -   Make sure the source is registered to the correct log. To do this, use the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method or one of its overloads to specify a string that uniquely identifies your component to the event log.  
   
 ## See also
-- [Administering Event Logs](https://msdn.microsoft.com/library/35f53238-bdd2-417b-acd8-2fd9f7397f18)
-- [Event Log References](https://msdn.microsoft.com/library/4af0661c-6c96-49f4-961d-b26ed9bc3e87)
-- [How to: Add Your Application as a Source of Event Log Entries](https://msdn.microsoft.com/library/948ff920-a739-4e66-a191-ee951512d42c)
-- [How to: Remove an Event Source](https://msdn.microsoft.com/library/bc66c900-4b8a-426a-b8e2-17031a20167e)
+- [Administering Event Logs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/4f69axw4(v=vs.90))
+- [Event Log References](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/k43k9z2a(v=vs.90))
+- [How to: Add Your Application as a Source of Event Log Entries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/xz73e171(v=vs.90))
+- [How to: Remove an Event Source](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/k57466fc(v=vs.90))

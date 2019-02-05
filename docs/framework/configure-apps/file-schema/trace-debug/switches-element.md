@@ -1,5 +1,5 @@
 ---
-title: "&lt;switches&gt; Element"
+title: "<switches> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "trace switches, <switches> element"
 ms.assetid: 4cf36786-b89a-40e2-a0f1-86bb9b783343
 ---
-# &lt;switches&gt; Element
+# \<switches> Element
 Contains trace switches and the level where the trace switches are set.  
   
  \<configuration>  

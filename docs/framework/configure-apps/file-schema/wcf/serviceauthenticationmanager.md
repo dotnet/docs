@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceAuthenticationManager&gt;"
+title: "<serviceAuthenticationManager>"
 ms.date: "03/30/2017"
 ms.assetid: 5d69e64f-f325-4d55-8e2d-0fb30f222dda
 ---
-# &lt;serviceAuthenticationManager&gt;
+# \<serviceAuthenticationManager>
 Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator.  
   
 \<system.ServiceModel>  

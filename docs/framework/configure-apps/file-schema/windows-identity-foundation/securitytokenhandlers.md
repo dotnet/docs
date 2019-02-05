@@ -1,10 +1,10 @@
 ---
-title: "&lt;securityTokenHandlers&gt;"
+title: "<securityTokenHandlers>"
 ms.date: "03/30/2017"
 ms.assetid: f11a631d-4094-4e11-bb03-4ede74b30281
 author: "BrucePerlerMS"
 ---
-# &lt;securityTokenHandlers&gt;
+# \<securityTokenHandlers>
 Specifies a collection of security token handlers that are registered with the endpoint.  
   
  \<system.identityModel>  

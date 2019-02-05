@@ -1,11 +1,11 @@
 ---
-title: "&lt;Subtypes&gt; Element (.NET Native)"
+title: "<Subtypes> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Subtypes&gt; Element (.NET Native)
+# \<Subtypes> Element (.NET Native)
 Applies runtime policy to all classes inherited from the containing type.  
   
 ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Manipulate a Table&#39;s Row Groups through the RowGroups Property"
+title: "How to: Manipulate a Table's Row Groups through the RowGroups Property"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "properties [WPF], RowGroups [WPF], manipulating row groups"
 ms.assetid: ea61440f-08ae-44ed-b314-5716aaaae3ed
 ---
-# How to: Manipulate a Table&#39;s Row Groups through the RowGroups Property
+# How to: Manipulate a Table's Row Groups through the RowGroups Property
 This example demonstrates some of the more common operations that can be performed on a table's row groups through the <xref:System.Windows.Documents.Table.RowGroups%2A> property.  
   
 ## Example  

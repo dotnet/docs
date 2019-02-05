@@ -1,9 +1,9 @@
 ---
-title: "&lt;mexTcpBinding&gt;"
+title: "<mexTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 01baba8d-d784-4255-9ea2-7afff1482bf0
 ---
-# &lt;mexTcpBinding&gt;
+# \<mexTcpBinding>
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over TCP.  
   
  \<system.ServiceModel>  

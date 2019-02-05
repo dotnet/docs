@@ -1,9 +1,9 @@
 ---
-title: "&lt;activityScheduledQuery&gt; of WCF"
+title: "<activityScheduledQuery> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 25f6eee1-3d98-4c39-b517-c0813f03f106
 ---
-# &lt;activityScheduledQuery&gt; of WCF
+# \<activityScheduledQuery> of WCF
 
 Represents a collection of queries that are used to track an activity scheduled for execution by a parent activity. The query is necessary for a tracking participant to subscribe to activity scheduled records.  
   

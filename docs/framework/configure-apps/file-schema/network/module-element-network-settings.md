@@ -1,5 +1,5 @@
 ---
-title: "&lt;module&gt; Element (Network Settings)"
+title: "<module> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#module"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<module> element"
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
 ---
-# &lt;module&gt; Element (Network Settings)
+# \<module> Element (Network Settings)
 Adds a new proxy module to the application.  
   
  \<configuration>  

@@ -6,7 +6,7 @@ ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to classify GitHGub issues to assign them to a given area.
 ---
-# Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues.
+# Tutorial: Use ML.NET in a multiclass classification scenario to classify GitHub issues
 
 This sample tutorial illustrates using ML.NET to create a GitHub issue classifier via a .NET Core console application using C# in Visual Studio 2017.
 
@@ -27,6 +27,8 @@ In this tutorial, you learn how to:
 ## GitHub issue sample overview
 
 The sample is a console app that uses ML.NET to train a model that classifies and predicts the Area label for a GitHub issue. It also evaluates the model with a second dataset for quality analysis. The issue datasets are from the dotnet/corefx GitHub repo.
+
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/GitHubIssueClassification) repository.
 
 ## Prerequisites
 
@@ -311,9 +313,9 @@ You can use that to predict the `Area` label of a single instance of the issue d
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Predict)]
 
-### Model operationalization: prediction
+### Using the model: prediction
 
-Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
+Display `GitHubIssue` and corresponding `Area` label prediction in order to share the results and act on them accordingly.  Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
 [!code-csharp[OutputPrediction](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#OutputPrediction)]
 
@@ -438,7 +440,7 @@ Now that you have a model, you can use that to predict the Area GitHub label of 
 
 [!code-csharp[PredictIssue](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#PredictIssue)]
 
-### Model operationalization: prediction
+### Using the loaded model for prediction
 
 Display `Area` in order to categorize the issue and act on it accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 

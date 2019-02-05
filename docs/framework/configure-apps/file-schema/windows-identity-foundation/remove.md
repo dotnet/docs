@@ -32,7 +32,7 @@ Removes the specified security token handler from the token handler collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|The CLR type name of the token handler to be removed. For more information about how to specify the `type` attribute, see [Custom Type References](https://msdn.microsoft.com/library/7286d2e3-c63d-49fd-abdc-ce2705f22c24). Required.|  
+|type|The CLR type name of the token handler to be removed. For more information about how to specify the `type` attribute, see [Custom Type References](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references). Required.|  
   
 ### Child Elements  
  None  

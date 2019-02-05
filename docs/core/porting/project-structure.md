@@ -63,7 +63,7 @@ Changes to note are:
 
 ## See also
 
-* Please see the [.NET Core porting documentation][porting-doc] for more guidance on migrating to .NET Core.
+Please see the [.NET Core porting documentation][porting-doc] for more guidance on migrating to .NET Core.
 
 [porting-doc]: index.md
 [example-initial-project]: media/project-structure/project.png "Existing project"

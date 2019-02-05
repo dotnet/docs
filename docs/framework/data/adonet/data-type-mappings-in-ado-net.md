@@ -34,5 +34,5 @@ The .NET Framework is based on the common type system, which defines how types a
 - [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
 - [Retrieving Database Schema Information](../../../../docs/framework/data/adonet/retrieving-database-schema-information.md)
 - [Common Type System](../../../../docs/standard/base-types/common-type-system.md)
-- [Converting Types](https://msdn.microsoft.com/library/6038316e-bdaf-4f55-8006-407f591ce156)
+- [Converting Types](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t8s7t9bf(v=vs.90))
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

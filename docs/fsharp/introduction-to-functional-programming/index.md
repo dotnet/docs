@@ -156,90 +156,15 @@ let addOneToValue x =
     x + 1
 ```
 
-Although this function does not depend on a global value, it writes the value of `x` to the output of the program. Although there is nothing inherently wrong with doing this, it does mean that the function is not pure.
+Although this function does not depend on a global value, it writes the value of `x` to the output of the program. Although there is nothing inherently wrong with doing this, it does mean that the function is not pure. If another part of your program depends on something external to the program, such as the output buffer, then calling this function can affect that other part of your program.
 
-Removing the `printfn` statement finally makes the function pure:
+Removing the `printfn` statement makes the function pure:
 
 ```fsharp
 let addOneToValue x = x + 1
 ```
 
-Although this function is not inherently _better_ than the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function once or 1 billion times will still result in the same thing: just producing a value. This predictability is valuable in functional programming, as it means that any pure function is referentially transparent.
-
-### Referential Transparency
-
-Referential transparency is a property of expressions and functions. For an expression to be referentially transparent, it must be able to be replaced with its resulting value without changing the program's behavior. All pure functions are referentially transparent.
-
-As with pure functions, it can be helpful to think of referential transparency from a mathematical perspective. In the mathematical expression `y = f(x)`, `f(x)` can be replaced by the result of the function and it will still be equal to `y`. This is equally true for referential transparency in functional programming.
-
-Consider calling the previously defined `addOneIfOdd` function twice:
-
-```fsharp
-// Checks if 'x' is odd by using the mod operator
-let isOdd x = x % 2 <> 0
-
-let addOneIfOdd input =
-    let result =
-        if isOdd input then
-            input + 1
-        else
-            input
-
-    result
-
-let res1 = addOneIfOdd 1 // Produces 2
-let res2 = addOneIfOdd 2 // Produces 2
-```
-
-We can replace each function call with the function body, substituting the argument `input` with each value:
-
-```fsharp
-// Checks if 'x' is odd by using the mod operator
-let isOdd x = x % 2 <> 0
-
-let addOneIfOdd input =
-    let result =
-        if isOdd input then
-            input + 1
-        else
-            input
-
-    result
-
-let res1 =
-    let result =
-        if isOdd 1 then
-            1 + 1
-        else
-            1
-
-    result
-let res2 =
-    let result =
-        if isOdd 2 then
-            2 + 1
-        else
-            2
-
-    result
-```
-
-Both `res1` and `res2` have the same value as if the function was called, indicating that `addOneIfOdd` is referentially transparent!
-
-Additionally, a function doesn't have to be pure to also be referentially transparent. Consider a previous definition of  `addOneTovalue`:
-
-```fsharp
-let addOneToValue x = 
-    printfn "x is %d" x
-    x + 1
-```
-
-Any call to this function can also be replaced by its body and the same things will happen each time:
-
-* The value, prior to being added to, is printed to the output
-* The value has 1 added to it
-
-When programming in F#, it is often referential transparency that is the goal, rather than purity. However, it is still good practice to write pure functions when you can.
+Although this function is not inherently _better_ than the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function any number of times produces the same result: it just produces a value. The predictability given by purity is something many functional programmers strive for.
 
 ### Immutability
 

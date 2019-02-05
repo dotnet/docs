@@ -1,6 +1,6 @@
 ---
 title: "How to: Install an assembly into the global assembly cache"
-ms.date: 02/04/2019
+ms.date: 02/05/2019
 helpviewer_keywords:
   - "assemblies [.NET Framework], global assembly cache"
   - "Gacutil.exe"
@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Install an assembly into the global assembly cache
 
-The global assembly cache (GAC) stores assemblies that are shared by several applications. Install an assembly into the [global assembly cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/gac) with one of the following components: 
+The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/gac) with one of the following components: 
 - [Windows Installer](#windows-installer)
 - [Global assembly cache tool](#global-assembly-cache-tool).
 
@@ -34,7 +34,7 @@ You can use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-
 
 The syntax for *gacutil.exe* is as follows:
 
-```shell
+```console
 gacutil -i <assembly name>
 ```
 
@@ -44,7 +44,7 @@ If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt fo
 
 The following example installs an assembly with the file name *hello.dll* into the global assembly cache.
 
-```shell
+```console
 gacutil -i hello.dll
 ```
 

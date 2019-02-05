@@ -34,8 +34,8 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 * [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
-* The [Github issues tab separated file (issues_train.tsv)](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
-* The [Github issues test tab separated file (issues_test.tsv)](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
+* The [GitHub issues tab separated file (issues_train.tsv)](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_train.tsv).
+* The [GitHub issues test tab separated file (issues_test.tsv)](https://raw.githubusercontent.com/dotnet/samples/master/machine-learning/tutorials/GitHubIssueClassification/Data/issues_test.tsv).
 
 ## Machine learning workflow
 
@@ -59,7 +59,7 @@ You first need to understand the problem, so you can break it down to parts that
 
 The problem for this tutorial is to understand what area incoming GitHub issues belong to in order to label them correctly for prioritization and scheduling.
 
-You can break down the problem to the following:
+You can break down the problem to the following parts:
 
 * the issue title text
 * the issue description text
@@ -135,7 +135,7 @@ Add the following additional `using` statements to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddUsings)]
 
-You need to create three global fields to hold the paths to the recently downloaded files, and global variables for the `MLContext`,`DataView`, `PredictionEngine`, and `TextLoader`:
+Create three global fields to hold the paths to the recently downloaded files, and global variables for the `MLContext`,`DataView`, `PredictionEngine`, and `TextLoader`:
 
 * `_trainDataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.
@@ -149,7 +149,7 @@ Add the following code to the line right above the `Main` method to specify thos
 
 [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#DeclareGlobalVariables)]
 
-You need to create some classes for your input data and predictions. Add a new class to your project:
+Create some classes for your input data and predictions. Add a new class to your project:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
@@ -172,7 +172,7 @@ Remove the existing class definition and add the following code, which has two c
 
 `IssuePrediction` is the class used for prediction after the model has been trained. It has a single `string` (`Area`) and a `PredictedLabel` `ColumnName` attribute. The `Label` is used to create and train the model, and it's also used with a second dataset to evaluate the model. The `PredictedLabel` is used during prediction and evaluation. For evaluation, an input with training data, the predicted values, and the model are used.
 
-When building a model with ML.NET, you start by creating an <xref:Microsoft.ML.MLContext>. This is comparable conceptually to using `DbContext` in Entity Framework. The environment provides a context for your ML job that can be used for exception tracking and logging.
+When building a model with ML.NET, you start by creating an <xref:Microsoft.ML.MLContext>. `MLContext` is comparable conceptually to using `DbContext` in Entity Framework. The environment provides a context for your ML job that can be used for exception tracking and logging.
 
 ### Initialize variables in Main
 
@@ -228,11 +228,11 @@ public static EstimatorChain<ITransformer> ProcessData()
 
 Pre-processing and cleaning data are important tasks that occur before a dataset is used effectively for machine learning. Raw data is often noisy and unreliable, and may be missing values. Using data without these modeling tasks can produce misleading results.
 
-ML.NET's transform pipelines compose a custom set of `transforms` that are applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
+ML.NET's transform pipelines compose a custom `transforms`set that is applied to your data before training or testing. The transforms' primary purpose is data [featurization](../resources/glossary.md#feature-engineering). Machine learning algorithms understand [featurized](../resources/glossary.md#feature) data, so the next step is to transform our textual data into a format that our ML algorithms recognize. That format is a [numeric vector](../resources/glossary.md#numerical-feature-vector).
 
 In the next steps, we refer to the columns by the names defined in the `GitHubIssue` class.
 
-When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the Area GitHub label for a `GitHubIssue`, copy the `Area` column into the **Label** column. To do that, use the `MLContext.Transforms.Conversion.MapValueToKey`, which is a wrapper for the <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A> transformation class.  The `MapValueToKey` returns an <xref:Microsoft.ML.Data.EstimatorChain%601> that will effectively be a pipeline. Name this `pipeline` as you will then append the trainer to the `EstimatorChain`. Add this as the next line of code:
+When the model is trained and evaluated, by default, the values in the **Label** column are considered as correct values to be predicted. As we want to predict the Area GitHub label for a `GitHubIssue`, copy the `Area` column into the **Label** column. To do that, use the `MLContext.Transforms.Conversion.MapValueToKey`, which is a wrapper for the <xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A> transformation class.  The `MapValueToKey` returns an <xref:Microsoft.ML.Data.EstimatorChain%601> that will effectively be a pipeline. Name this `pipeline` as you will then append the trainer to the `EstimatorChain`. Add the next line of code:
 
 [!code-csharp[MapValueToKey](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#MapValueToKey)]
 
@@ -283,7 +283,7 @@ Notice that two parameters are passed into the BuildAndTrainModel method; an `ID
 
 ### Choose a learning algorithm
 
-To add the learning algorithm, use the <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object. This is a decision tree learner you'll use in this pipeline. The `SdcaMultiClassTrainer` is appended to the `pipeline` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data.
+To add the learning algorithm, use the <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object.  The `SdcaMultiClassTrainer` is appended to the `pipeline` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data.
 
 Add the following code to the `BuildAndTrainModel` method:
 
@@ -295,13 +295,13 @@ Now that you've created a learning algorithm, append it to the `pipeline`. You a
 
 ### Train the model
 
-You train the model, <xref:Microsoft.ML.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This returns a model to use for predictions. `trainingPipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until this happens.
+You train the model, <xref:Microsoft.ML.Data.TransformerChain%601>, based on the dataset that has been loaded and transformed. Once the estimator has been defined, you train your model using the <xref:Microsoft.ML.Data.EstimatorChain%601.Fit%2A> while providing the already loaded training data. This  method returns a model to use for predictions. `trainingPipeline.Fit()` trains the pipeline and returns a `Transformer` based on the `DataView` passed in. The experiment is not executed until the `.Fit()` method runs.
 
 Add the following code to the `BuildAndTrainModel` method:
 
 [!code-csharp[TrainModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#TrainModel)]
 
-While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the next line in the `BuildAndTrainModel` Method:
+While the `model` is a `transformer` that operates on many rows of data, a need for predictions on individual examples is a common production scenario. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the next line in the `BuildAndTrainModel` Method:
 
 [!code-csharp[CreatePredictionEngine1](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreatePredictionEngine1)]
 
@@ -309,7 +309,7 @@ Add a GitHub issue to test the trained model's prediction in the `Predict` metho
 
 [!code-csharp[CreateTestIssue1](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreateTestIssue1)]
 
-You can use that to predict the `Area` label of a single instance of the issue data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
+You can use that to predict the `Area` label of a single instance of the issue data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. The input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions.
 
 [!code-csharp[Predict](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Predict)]
 
@@ -352,7 +352,7 @@ As you did previously with the training dataset, you can combine the initializat
 [!code-csharp[LoadTestDataset](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#LoadTestDataset)]
 
 The `MulticlassClassificationContext.Evaluate` is a wrapper for the <xref:Microsoft.ML.MulticlassClassificationContext.Evaluate%2A> method that computes the quality metrics for the model using the specified dataset. It returns a <xref:Microsoft.ML.Data.MultiClassClassifierMetrics> object that contains the overall metrics computed by multiclass classification evaluators.
-To display these to determine the quality of the model, you need to get the metrics first.
+To display the metrics to determine the quality of the model, you need to get them first.
 Notice the use of the `Transform` method of the machine learning `_trainedModel` global variable (a transformer) to input the features and return predictions. Add the following code to the `Evaluate` method as the next line:
 
 [!code-csharp[Evaluate](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Evaluate)]
@@ -394,7 +394,7 @@ The `SaveModelAsFile` method executes the following tasks:
 
 * Saves the model as a .zip file.
 
-Next, create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Data.TransformerChain%601.SaveTo(Microsoft.ML.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. To save this as a zip file, you'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
+Next, create a method to save the model so that it can be reused and consumed in other applications. The `ITransformer` has a <xref:Microsoft.ML.Data.TransformerChain%601.SaveTo(Microsoft.ML.IHostEnvironment,System.IO.Stream)> method that takes in the `_modelPath` global field, and a <xref:System.IO.Stream>. To save the model as a zip file, you'll create the `FileStream` immediately before calling the `SaveTo` method. Add the following code to the `SaveModelAsFile` method as the next line:
 
 [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SaveModel)]
 
@@ -436,19 +436,19 @@ Add a GitHub issue to test the trained model's prediction in the `Predict` metho
 
 [!code-csharp[CreatePredictionEngine](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreatePredictionEngine)]
   
-Now that you have a model, you can use that to predict the Area GitHub label of a single instance of the GitHub issue data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. Note that the input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions. Add the following code to the `PredictIssue` method for the predictions:
+Now that you have a model, you can use that to predict the Area GitHub label of a single instance of the GitHub issue data. To get a prediction, use <xref:Microsoft.ML.PredictionEngine%602.Predict%2A> on the data. The input data is a string and the model includes the featurization. Your pipeline is in sync during training and prediction. You didn’t have to write preprocessing/featurization code specifically for predictions, and the same API takes care of both batch and one-time predictions. Add the following code to the `PredictIssue` method for the predictions:
 
 [!code-csharp[PredictIssue](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#PredictIssue)]
 
 ### Using the loaded model for prediction
 
-Display `Area` in order to categorize the issue and act on it accordingly. This is called operationalization, using the returned data as part of the operational policies. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
+Display `Area` in order to categorize the issue and act on it accordingly. Create a display for the results using the following <xref:System.Console.WriteLine?displayProperty=nameWithType> code:
 
 [!code-csharp[DisplayResults](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#DisplayResults)]
 
 ## Results
 
-Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These have been removed from the following results for clarity.
+Your results should be similar to the following. As the pipeline processes, it displays messages. You may see warnings, or processing messages. These messages have been removed from the following results for clarity.
 
 ```console
 =============== Single Prediction just-trained-model - Result: area-System.Net ===============

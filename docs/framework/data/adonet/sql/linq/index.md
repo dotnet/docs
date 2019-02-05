@@ -29,8 +29,9 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  Provides links to Visual Basic and C# samples.  
   
 ## Related Sections  
- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
- Provides an overview of [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies.  
+ [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)  
+ [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ Provides overviews of [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies.  
   
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  Describes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies for Visual Basic users.  

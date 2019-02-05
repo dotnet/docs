@@ -23,7 +23,7 @@ The global assembly cache (GAC) stores assemblies that are shared by several app
 
 ## Windows Installer
 
-[Windows Installer](/windows/desktop/Msi/installation-of-assemblies-to-the-global-assembly-cache), the Windows installation engine, is the recommended way to add assemblies to the global assembly cache. Windows Installer provides reference counting of assemblies in the global assembly cache and other benefits. To create an installer package for Windows Installer, use the [WiX toolset extension for Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
+[Windows Installer](https://docs.microsoft.com/en-us/windows/desktop/Msi/installation-of-assemblies-to-the-global-assembly-cache), the Windows installation engine, is the recommended way to add assemblies to the global assembly cache. Windows Installer provides reference counting of assemblies in the global assembly cache and other benefits. To create an installer package for Windows Installer, use the [WiX toolset extension for Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension).
 
 ## Global assembly cache tool
 
@@ -32,7 +32,7 @@ You can use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-
    > [!NOTE]
    > *Gacutil.exe* is for development purposes only. Don't use it to install production assemblies into the global assembly cache.
 
-The syntax for gacutil is as follows:
+The syntax for *gacutil.exe* is as follows:
 
 ```shell
 gacutil -i <assembly name>
@@ -40,16 +40,16 @@ gacutil -i <assembly name>
 
 In this command, *\<assembly name>* is the name of the assembly to install in the global assembly cache.
 
-If *gacutil.exe* isn't in your system path, use the <Developer Command Prompt for Visual Studio>(https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs). 
+If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs). 
 
-The following example installs an assembly with the file name `hello.dll` into the global assembly cache.
+The following example installs an assembly with the file name *hello.dll* into the global assembly cache.
 
 ```shell
 gacutil -i hello.dll
 ```
 
 > [!NOTE]
-> In earlier versions of the .NET Framework, the *Shfusion.dll* Windows shell extension enabled you to install assemblies by dragging them in **File Explorer**. Beginning with .NET Framework Version 4, *Shfusion.dll* is obsolete.
+> In earlier versions of the .NET Framework, the *Shfusion.dll* Windows shell extension enabled you to install assemblies by dragging them to File Explorer. Beginning with .NET Framework Version 4, *Shfusion.dll* is obsolete.
 
 ## See also
 

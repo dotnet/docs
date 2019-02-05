@@ -14,4 +14,3 @@ The specified registry key could not be created, possibly because of insufficien
   
 ## See also
 - [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)
-- [Registry Access Changes in Visual Basic .NET](https://msdn.microsoft.com/library/b58f7687-f4db-448a-a865-07f62fd16fb2)

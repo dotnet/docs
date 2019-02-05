@@ -39,7 +39,7 @@ ASP.NET Core 3.0 introduces a new model for building rich, interactive, and comp
 
 ## When to choose traditional web apps
 
-The following is a more detailed explanation of the previously-stated reasons for picking traditional web applications.
+The following is a more detailed explanation of the previously stated reasons for picking traditional web applications.
 
 **Your application has simple, possibly read-only, client-side requirements**
 

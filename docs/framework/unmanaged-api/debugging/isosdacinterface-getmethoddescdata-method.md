@@ -18,7 +18,7 @@ ms.author: "andrewau"
 ---
 # ISOSDacInterface::GetMethodDescData Method
 
-Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md).
+Gets the data for the given MethodDesc pointer.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -28,9 +28,9 @@ Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-ap
 HRESULT GetMethodDescData(
     CLRDATA_ADDRESS            methodDesc,
     CLRDATA_ADDRESS            ip,
-    struct DacpMethodDescData *data,
+    DacpMethodDescData *data,
     ULONG                      cRevertedRejitVersions,
-    struct DacpReJitData      *rgRevertedRejitData,
+    DacpReJitData      *rgRevertedRejitData,
     void                      *pcNeededRevertedRejitData
 );
 ```
@@ -57,7 +57,7 @@ HRESULT GetMethodDescData(
 
 ## Remarks
 
-The provided method is part of the `ISOSDacInterface` interface and corresponds to the 20th slot of the virtual method table. Also the `CLRDATA_ADDRESS` are 64-bit unsigned integer.
+The provided method is part of the `ISOSDacInterface` interface and corresponds to the 20th slot of the virtual method table. To be able to use them, [`CLRDATA_ADDRESS`](../common-data-types-unmanaged-api-reference.md) must be defined as a 64-bit unsigned integer.
 
 ## Requirements
 

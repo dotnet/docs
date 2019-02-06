@@ -18,7 +18,7 @@ ms.author: "juhoyosa"
 ---
 # ISOSDacInterface::GetMethodDescPtrFromIP Method
 
-Retrieves the [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) for the method containing the given native instruction address.
+Retrieves the pointer of the MethodDesc corresponding the method containing the given native instruction address.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
@@ -34,10 +34,10 @@ HRESULT GetMethodDescPtrFromIP(
 ### Parameters
 
 `ip`
-[in] The address of the MethodDesc.
+[in] An address within the method at runtime.
 
 `ppMD`
-[out] The IP address of the method.
+[out] The address of the `MethodDesc` for the particular method.
 
 ## Remarks
 

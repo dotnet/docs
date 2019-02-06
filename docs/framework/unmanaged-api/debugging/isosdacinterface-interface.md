@@ -27,7 +27,7 @@ Provides helper methods to access data from `SOS`.
 | Method                                                                                                               | Description                                                                                                                   |
 | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | [GetMethodDescData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescdata-method.md) | Gets the data for the given [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md). |
-| [GetMethodDescPtrFromIP](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescptrfromip-method.md) | Retrieves the [MethodDesc](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) for the method containing the given native instruction address. |
+| [GetMethodDescPtrFromIP](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmethoddescptrfromip-method.md) | Retrieves the pointer of the MethodDesc corresponding the method containing the given native instruction address. |
 | [GetModuleData](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-getmoduledata-method.md)| Fetches the data corresponding to the module loaded at a given address. |
 
 ## Remarks

@@ -18,7 +18,7 @@ ms.author: "juhoyosa"
 ---
 # DacpReJitData Structure
 
-Defines the basic information about a given profiler instrumented method.
+Defines the basic information about a given profiler-instrumented method.
 
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 

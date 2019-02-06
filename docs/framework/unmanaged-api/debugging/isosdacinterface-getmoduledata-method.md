@@ -27,13 +27,13 @@ Fetches the data corresponding to the module loaded at a given address.
 ```
 HRESULT GetModuleData(
     CLRDATA_ADDRESS moduleAddr,
-    struct DacpModuleData *data
+    DacpModuleData *data
 );
 ```
 
 ### Parameters
 
-`methodDesc`
+`moduleAddr`
 [in] The address of the module to retrieve information for.
 
 `data`

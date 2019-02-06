@@ -87,4 +87,4 @@ public class MyClass
 - [C# Reference](../../../csharp/language-reference/index.md)
 - [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [C# Preprocessor Directives](index.md)
-- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md).
+- [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)

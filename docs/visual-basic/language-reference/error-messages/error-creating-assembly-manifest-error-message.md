@@ -24,5 +24,5 @@ The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink
 ## See also
 - [How to: Sign an Assembly with a Strong Name](../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md)
 - [Signing Page, Project Designer](/visualstudio/ide/reference/signing-page-project-designer)
- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md).  
+- [Al.exe](../../../framework/tools/al-exe-assembly-linker.md)
 - [Talk to Us](/visualstudio/ide/talk-to-us)

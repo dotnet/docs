@@ -62,4 +62,3 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
 - <xref:System.Threading.WaitHandle>
 - <xref:System.Threading.AutoResetEvent>
 - <xref:System.Threading.ManualResetEvent>
-- [EventWaitHandle, CountdownEvent](../../../docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md)

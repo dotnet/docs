@@ -1,7 +1,7 @@
 ---
 title: Use the PredictionEngine to make one prediction at a time - ML.NET 
 description: Learn how to use the ML.NET PredictionEngine to make one prediction at a time
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use the ML.NET PredictionEngine to run an example at a time through the prediction pipeline machine learning model so that I can use my machine learning model as part of my application to make and act on one prediction at a time.
 ---
@@ -22,19 +22,20 @@ var mlContext = new MLContext();
 
 // Step one: read the data as an IDataView.
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(new TextLoader.Arguments
-{
-    Column = new[] {
-        new TextLoader.Column("SepalLength", DataKind.R4, 0),
-        new TextLoader.Column("SepalWidth", DataKind.R4, 1),
-        new TextLoader.Column("PetalLength", DataKind.R4, 2),
-        new TextLoader.Column("PetalWidth", DataKind.R4, 3),
+var reader = mlContext.Data.CreateTextLoader(
+    columns: new TextLoader.Column[]
+    {
+        // The four features of the Iris dataset will be grouped together as one Features column.
+        new TextLoader.Column("SepalLength",DataKind.R4,0),
+        new TextLoader.Column("SepalWidth",DataKind.R4,1),
+        new TextLoader.Column("PetalLength",DataKind.R4,2),
+        new TextLoader.Column("PetalWidth",DataKind.R4,3),
         // Label: kind of iris.
-        new TextLoader.Column("Label", DataKind.TX, 4),
+        new TextLoader.Column("Label",DataKind.TX,4)
     },
-    // Default separator is tab, but the dataset has comma.
-    Separator = ","
-});
+    separatorChar: ',',
+    hasHeader: true
+);
 
 // Retrieve the training data.
 var trainData = reader.Read(irisDataPath);
@@ -48,7 +49,7 @@ var pipeline =
     // Use the multi-class SDCA model to predict the label using features.
     .Append(mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent())
     // Apply the inverse conversion from 'PredictedLabel' column back to string value.
-    .Append(mlContext.Transforms.Conversion.MapKeyToValue(("PredictedLabel", "Data")));
+    .Append(mlContext.Transforms.Conversion.MapKeyToValue(("Data", "PredictedLabel")));
 
 // Train the model.
 var model = pipeline.Fit(trainData);

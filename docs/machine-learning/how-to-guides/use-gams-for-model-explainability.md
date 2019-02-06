@@ -1,7 +1,7 @@
 ---
 title: Use Generalized Additive Models and shape functions for model explainability in ML.NET
 description: Use Generalized Additive Models and shape functions for model explainability in ML.NET
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use Generalized Additive Models in ML.NET to be able to analyze the shape function of my models so that I can understand how my machine learning models make decisions.
 ---
@@ -32,9 +32,9 @@ var myFeatureIndex = featureNames.ToList().FindIndex(str => str.Equals("MyFeatur
 // The shape functions represent the deviation from the average prediction as a function of the feature value
 // It is represented by a discrete set of bins
 // First, get the array of bin upper bounds from the model for this feature
-var myFeatureBins = gamModel.GetFeatureBinUpperBounds(myFeatureIndex);
+var myFeatureBins = gamModel.GetBinUpperBounds(myFeatureIndex);
 // Then get the array of bin weights; these are the effect size for each bin
-var myFeatureWeights = gamModel.GetFeatureWeights(myFeatureIndex);
+var myFeatureWeights = gamModel.GetBinEffects(myFeatureIndex);
 
 // Write out the shape function for the feature (see the following figure for what this looks like)
 for (int i = 0; i < myFeatureBins.Length; i++)

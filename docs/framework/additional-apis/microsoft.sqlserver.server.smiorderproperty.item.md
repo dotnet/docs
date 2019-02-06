@@ -1,7 +1,7 @@
 ---
 title: SmiOrderProperty.Item Property (Microsoft.SqlServer.Server)
-author: douglaslMS
-ms.author: douglasl
+author: stevestein
+ms.author: sstein
 ms.date: 12/20/2018
 ms.technology:
   - "dotnet-data"

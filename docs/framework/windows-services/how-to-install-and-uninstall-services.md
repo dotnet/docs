@@ -1,6 +1,6 @@
 ---
-title: "How to: Install and uninstall services"
-ms.date: 01/28/2019
+title: "How to: Install and uninstall Windows services"
+ms.date: 02/05/2019
 helpviewer_keywords: 
   - "Windows Service applications, deploying"
   - "services, uninstalling"
@@ -13,8 +13,8 @@ helpviewer_keywords:
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
 author: "ghogen"
 ---
-# How to: Install and uninstall services
-If you’re developing a Windows service with the .NET Framework, you can quickly install your service app by using the *InstallUtil.exe* command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
+# How to: Install and uninstall Windows services
+If you’re developing a Windows service with the .NET Framework, you can quickly install your service app by using the [*InstallUtil.exe*](../tools/installutil-exe-installer-tool.md) command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
   
 > [!WARNING]
 >  If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Apps** in Settings to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.  
@@ -36,15 +36,15 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
 3.  Run *InstallUtil.exe* from the command prompt with your project's executable as a parameter:  
   
-    ```  
+    ```console
     installutil <yourproject>.exe  
     ```  
-  
-     If you’re using the Developer Command Prompt for Visual Studio, *InstallUtil.exe* should be on the system path. Otherwise, you can add it to the path, or use the fully qualified path to invoke it. This tool is installed with the .NET Framework, and its path is *%WINDIR%\Microsoft.NET\Framework[64]\<framework_version>*. 
+
+     If you’re using the Developer Command Prompt for Visual Studio, *InstallUtil.exe* should be on the system path. Otherwise, you can add it to the path, or use the fully qualified path to invoke it. This tool is installed with the .NET Framework in *%WINDIR%\Microsoft.NET\Framework[64]\\<framework_version>*.
      
      For example:
-     - For the 32-bit version of the .NET Framework 4 or 4.5.*, if your Windows installation directory is *C:\Windows*, the default path is *C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe*. 
-     - For the 64-bit version of the .NET Framework 4 or 4.5.\*, the default path is *C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe*.  
+     - For the 32-bit version of the .NET Framework 4 or 4.5 and later, if your Windows installation directory is *C:\Windows*, the default path is *C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe*.
+     - For the 64-bit version of the .NET Framework 4 or 4.5 and later, the default path is *C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe*.
   
 ### Uninstall your service manually  
   
@@ -54,7 +54,7 @@ If you’re developing a Windows service with the .NET Framework, you can quickl
   
 2.  Run *InstallUtil.exe* from the command prompt with your project's output as a parameter:  
   
-    ```  
+    ```console  
     installutil /u <yourproject>.exe  
     ```  
   

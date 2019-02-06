@@ -15,7 +15,7 @@ This article describes what is new in .NET Core 3.0 (preview 2). One of the bigg
 
 .NET Core 3.0 adds support for C# 8.0.
 
-[Download and get started with .NET Core 3 Preview 2](https://aka.ms/netcore3download) right now on Windows, Mac and Linux. You can see complete details of the release in the [.NET Core 3 Preview 2 release notes](https://aka.ms/netcore3releasenotes).
+[Download and get started with .NET Core 3.0 Preview 2](https://aka.ms/netcore3download) right now on Windows, Mac and Linux. You can see complete details of the release in the [.NET Core 3.0 Preview 2 release notes](https://aka.ms/netcore3releasenotes).
 
 For more information about what was released with each version, see the following announcements:
 

@@ -47,5 +47,5 @@ Navigation properties in the [!INCLUDE[adonet_ef](../../../../../../includes/ado
  [!code-vb[DP L2E Examples#WhereNavProperty](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Examples/VB/Module1.vb#wherenavproperty)]  
   
 ## See also
-- [Navigation Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738520(v=vs.100))
+- [Relationships, navigation properties and foreign keys](/ef/ef6/fundamentals/relationships)
 - [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)

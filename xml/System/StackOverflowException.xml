@@ -39,21 +39,25 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.StackOverflowException> is thrown for execution stack overflow errors, typically in case of a very deep or unbounded recursion.  
+ `StackOverflowException` is thrown for execution stack overflow errors, typically in case of a very deep or unbounded recursion. So make sure your code doesn't have an infinite loop or infinite recursion.
   
- <xref:System.StackOverflowException> uses the HRESULT COR_E_STACKOVERFLOW, which has the value 0x800703E9. The <xref:System.Reflection.Emit.OpCodes.Localloc> intermediate language (IL) instruction throws <xref:System.StackOverflowException>. For a list of initial property values for a <xref:System.StackOverflowException> object, see the <xref:System.StackOverflowException.%23ctor%2A> constructors.  
+ `StackOverflowException` uses the HRESULT COR_E_STACKOVERFLOW, which has the value 0x800703E9. The <xref:System.Reflection.Emit.OpCodes.Localloc> intermediate language (IL) instruction throws `StackOverflowException`. For a list of initial property values for a `StackOverflowException` object, see the <xref:System.StackOverflowException.%23ctor%2A> constructors.  
   
-## Version Considerations  
- In the .NET Framework 1.0 and 1.1, you could catch a <xref:System.StackOverflowException> object (for example, to recover from unbounded recursion). Starting with the .NET Framework 2.0, you can't catch a <xref:System.StackOverflowException> object with a `try`/`catch` block, and the corresponding process is terminated by default. Consequently, you should write your code to detect and prevent a stack overflow. For example, if your app depends on recursion, use a counter or a state condition to terminate the recursive loop. The following example uses a counter to ensure that the number of recursive calls to the `Execute` method do not exceed a maximum defined by the MAX_RECURSIVE_CALLS constant.  
+ Starting with the .NET Framework 2.0, you can't catch a `StackOverflowException` object with a `try`/`catch` block, and the corresponding process is terminated by default. Consequently, you should write your code to detect and prevent a stack overflow. For example, if your app depends on recursion, use a counter or a state condition to terminate the recursive loop.
+See the (Examples)(#examples) section for an illustration of this technique.
+ 
+> [!NOTE]
+>  Applying the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to a method that throws a `StackOverflowException` has no effect. You still cannot handle the exception from user code.
+
+ If your app hosts the common language runtime (CLR), it can specify that the CLR should unload the application domain where the stack overflow exception occurs and let the corresponding process continue. For more information, see [ICLRPolicyManager Interface](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md).
+
+## Examples
+
+ The following example uses a counter to ensure that the number of recursive calls to the `Execute` method do not exceed a maximum defined by the MAX_RECURSIVE_CALLS constant.
   
  [!code-csharp[System.StackOverflowException.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.stackoverflowexception.class/cs/example1a.cs#1)]
  [!code-vb[System.StackOverflowException.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.stackoverflowexception.class/vb/example1a.vb#1)]  
-  
-> [!NOTE]
->  Applying the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to a method that throws a <xref:System.StackOverflowException> has no effect. You still cannot handle the exception from user code.  
-  
- If your app hosts the common language runtime (CLR), it can specify that the CLR should unload the application domain where the stack overflow exception occurs and let the corresponding process continue. For more information, see [ICLRPolicyManager Interface](~/docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md).  
-  
+
  ]]></format>
     </remarks>
     <altmember cref="T:System.Exception" />

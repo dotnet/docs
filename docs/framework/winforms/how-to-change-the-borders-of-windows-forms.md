@@ -37,7 +37,7 @@ You have several border styles to choose from when you are determining the appea
   
      Additionally, if you have chosen a border style for the form that provides optional **Minimize** and **Maximize** buttons, you can specify whether you want either or both of these buttons to be functional. These buttons are useful when you want to closely control the user experience. The **Minimize** and **Maximize** buttons are enabled by default, and their functionality is manipulated through the **Properties** window.  
   
-## See Also  
- <xref:System.Windows.Forms.FormBorderStyle>  
- <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>  
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.FormBorderStyle>
+- <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>
+- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)

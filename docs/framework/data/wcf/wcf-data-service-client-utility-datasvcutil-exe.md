@@ -40,7 +40,7 @@ datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/la
 |`/uri:` *\<string>*|The URI of the OData feed.|
 |`/version:`[1.0&#124;2.0]|Specifies the highest accepted version of OData. The version is determined based on the `DataServiceVersion` attribute of the DataService element in the returned data service metadata. For more information, see [Data Service Versioning](../../../../docs/framework/data/wcf/data-service-versioning-wcf-data-services.md). When you specify the `/dataservicecollection` parameter, you must also specify `/version:2.0` to enable data binding.|
 
-## See Also
+## See also
 
 - [Generating the Data Service Client Library](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md)
 - [How to: Add a Data Service Reference](../../../../docs/framework/data/wcf/how-to-add-a-data-service-reference-wcf-data-services.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;seealso&gt; - C# Programming Guide"
+title: "<seealso> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "<seealso> C# XML tag"
 ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 ---
-# &lt;seealso&gt; (C# Programming Guide)
+# \<seealso> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -35,7 +35,7 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 ## Example  
  See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<seealso>.  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

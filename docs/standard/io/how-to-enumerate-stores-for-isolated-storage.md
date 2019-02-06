@@ -27,5 +27,5 @@ You can enumerate all isolated stores for the current user by using the  <xref:S
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
 - [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

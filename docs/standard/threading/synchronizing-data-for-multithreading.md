@@ -63,8 +63,8 @@ When multiple threads can make calls to the properties and methods of a single o
   
 ## See also
 
-- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>  
-- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)  
-- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)  
-- [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)  
+- <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>
+- [Threads and Threading](../../../docs/standard/threading/threads-and-threading.md)
+- [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md)
+- [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md)
 - [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md)

@@ -29,5 +29,5 @@ Protected members by themselves do not provide any extensibility, but they can m
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)

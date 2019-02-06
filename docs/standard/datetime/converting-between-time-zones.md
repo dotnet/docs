@@ -116,6 +116,6 @@ The <xref:System.TimeZoneInfo> class also includes an overload of the <xref:Syst
 
 ## See also
 
-* <xref:System.TimeZoneInfo>
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)
+- <xref:System.TimeZoneInfo>
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Finding the time zones defined on a local system](../../../docs/standard/datetime/finding-the-time-zones-on-local-system.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;peerTransport&gt;"
+title: "<transport> of <peerTransport>"
 ms.date: "03/30/2017"
 ms.assetid: d7116240-845c-4b6f-b203-262de6b597ef
 ---
-# &lt;transport&gt; of &lt;peerTransport&gt;
+# \<transport> of \<peerTransport>
 Specifies the transport type for secured messages sent by peers configured with this binding.  
   
  \<system.serviceModel>  
@@ -17,9 +17,9 @@ Specifies the transport type for secured messages sent by peers configured with 
 ## Syntax  
   
 ```xml  
-<security>  
-   <transport credentialType="Certificate/Password" />  
-</security>         
+<security>
+  <transport credentialType="Certificate/Password" />
+</security>
 ```  
   
 ## Attributes and Elements  
@@ -50,15 +50,15 @@ Specifies the transport type for secured messages sent by peers configured with 
 ## Remarks  
  This element is set only if the mode attribute of [\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-peertransport.md) is set to `Transport` or `TransportWithMessageCredential`.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>  
- <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>  
- <xref:System.ServiceModel.PeerTransportSecuritySettings>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md)  
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
+- <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>
+- <xref:System.ServiceModel.PeerTransportSecuritySettings>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transport Security](../../../../../docs/framework/wcf/feature-details/transport-security.md)
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

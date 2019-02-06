@@ -12,5 +12,5 @@ An input or output error occurred while your program was using a device such as 
   
 -   Make sure the device is operating properly, and then retry the operation.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

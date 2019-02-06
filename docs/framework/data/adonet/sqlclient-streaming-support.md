@@ -320,7 +320,7 @@ GO
   
 -   Using the new asynchronous feature and the await keyword to transfer a large BLOB.  
   
--   Cancelling the transfer of a large BLOB..  
+-   Cancelling the transfer of a large BLOB.  
   
 -   Streaming from one SQL Server to another using the new asynchronous feature.  
   
@@ -510,5 +510,5 @@ namespace StreamingFromServerToAnother {
 }  
 ```  
   
-## See Also  
- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+## See also
+- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)

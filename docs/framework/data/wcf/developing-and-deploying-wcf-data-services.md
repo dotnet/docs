@@ -119,7 +119,7 @@ You should consider the following when deploying a data service:
 
 -   Because WCF Data Services includes a basic WCF implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. For more information about using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkID=202005).
 
-## See Also
+## See also
 
 - [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md)
 - [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)

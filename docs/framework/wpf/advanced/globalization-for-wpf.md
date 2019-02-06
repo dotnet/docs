@@ -174,5 +174,5 @@ The following example shows a hexadecimal character reference. Notice that it ha
     "de" , UltimateResourceFallbackLocation.Satellite)]
 ```
 
-## See Also
- [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
+## See also
+- [WPF Globalization and Localization Overview](../../../../docs/framework/wpf/advanced/wpf-globalization-and-localization-overview.md)

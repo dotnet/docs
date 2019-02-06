@@ -48,5 +48,5 @@ public interface IOneWayCalculator
   
  It is recommended, instead, that you examine the various controls on the service as well as on the client, and then test your application scenarios to determine the best configuration on either side. For example, if the use of sessions is blocking the processing of messages on your service, you can set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.InstanceContextMode.PerCall> so that each message can be processed by a different service instance, and set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Multiple> in order to allow more than one thread to dispatch messages at a time. Another approach is to increase the read quotas of the service and client bindings.  
   
-## See Also  
- [One-Way](../../../../docs/framework/wcf/samples/one-way.md)
+## See also
+- [One-Way](../../../../docs/framework/wcf/samples/one-way.md)

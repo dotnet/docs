@@ -54,7 +54,7 @@ Describes the ways you can develop web apps using ASP.NET.
 
 ## See also
 
-[.NET Standard](../../docs/standard/net-standard.md)  
-[Overview](../../docs/framework/get-started/overview.md)  
-[Development Guide](../../docs/framework/development-guide.md)  
-[Windows Service Applications](../../docs/framework/windows-services/index.md)  
+- [.NET Standard](../../docs/standard/net-standard.md)
+- [Overview](../../docs/framework/get-started/overview.md)
+- [Development Guide](../../docs/framework/development-guide.md)
+- [Windows Service Applications](../../docs/framework/windows-services/index.md)

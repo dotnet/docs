@@ -8,6 +8,6 @@ Client applications using Windows Communication Foundation (WCF) may be deployed
   
  For information on configuring ClickOnce applications and trusted publishers, see [Configuring ClickOnce Trusted Publishers](https://go.microsoft.com/fwlink/?LinkId=94774).  
   
-## See Also  
- [Trusted Application Deployment Overview](https://go.microsoft.com/fwlink/?LinkId=94775)  
- [ClickOnce Deployment for Windows Forms Applications](https://go.microsoft.com/fwlink/?LinkId=94776)
+## See also
+- [Trusted Application Deployment Overview](https://go.microsoft.com/fwlink/?LinkId=94775)
+- [ClickOnce Deployment for Windows Forms Applications](https://go.microsoft.com/fwlink/?LinkId=94776)

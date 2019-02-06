@@ -18,5 +18,5 @@ This section describes the basic concepts behind using strings in Visual Basic.
  [How Culture Affects Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md)  
  Discusses how Visual Basic uses culture information to perform string conversions and comparisons.  
   
-## See Also  
- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
+## See also
+- [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

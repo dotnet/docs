@@ -49,6 +49,6 @@ In the .NET Framework, the observer design pattern is implemented as a set of in
   
 ## See also
 
-- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)  
-- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)  
+- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)
+- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)
 - [How to: Implement a Provider](../../../docs/standard/events/how-to-implement-a-provider.md)

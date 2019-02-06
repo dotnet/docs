@@ -83,7 +83,7 @@ binding.ClientBaseAddress = New Uri("http://localhost:8000/DuplexTestUsingCode/C
 > [!WARNING]
 >  The duplex model does not automatically detect when a service or client closes its channel. So if a client unexpectedly terminates, by default the service will not be notified, or if a client unexpectedly terminates, the service will not be notified. Clients and services can implement their own protocol to notify each other if they so choose.  
   
-## See Also  
- [Duplex](../../../../docs/framework/wcf/samples/duplex.md)  
- [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)  
- [How to: Create a Channel Factory and Use it to Create and Manage Channels](../../../../docs/framework/wcf/feature-details/how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md)
+## See also
+- [Duplex](../../../../docs/framework/wcf/samples/duplex.md)
+- [Specifying Client Run-Time Behavior](../../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
+- [How to: Create a Channel Factory and Use it to Create and Manage Channels](../../../../docs/framework/wcf/feature-details/how-to-create-a-channel-factory-and-use-it-to-create-and-manage-channels.md)

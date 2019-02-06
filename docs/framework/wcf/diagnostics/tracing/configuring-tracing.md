@@ -174,8 +174,8 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You cannot use the `propagateActivity` attribute with user-defined trace sources. For user code activity ID propagation, make sure you do not set ServiceModel `ActivityTracing`, while still having ServiceModel `propagateActivity` attribute set to `true`.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)  
- [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648)  
- [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239)
+## See also
+- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648)
+- [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239)

@@ -355,7 +355,8 @@ public Symbol FindMatchingSymbol(string name)
  This code doesn’t use LINQ extension methods, lambdas, or enumerators, and it incurs no allocations. There are no allocations because the compiler can see that the `symbols` collection is a <xref:System.Collections.Generic.List%601> and can bind the resulting enumerator (a structure) to a local variable with the right type to avoid boxing. The original version of this function was a great example of the expressive power of C# and the productivity of the .NET Framework. This new and more efficient version preserves those qualities without adding any complex code to maintain. 
   
 ### Async method caching  
- The next example shows a common problem when you try to use cached results in an [async](https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7) method. 
+
+The next example shows a common problem when you try to use cached results in an [async](../../csharp/programming-guide/concepts/async/index.md) method.
   
  **Example 6: caching in async methods**  
   
@@ -456,12 +457,12 @@ class Compilation { /*...*/
   
 ## See also
 
-- [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)  
-- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)  
-- [Performance](../../../docs/framework/performance/index.md)  
-- [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)  
-- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)  
-- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)  
-- [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)  
+- [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)
+- [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Performance](../../../docs/framework/performance/index.md)
+- [.NET Performance Tips](https://msdn.microsoft.com/library/ms973839.aspx)
+- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)
+- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx)
+- [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

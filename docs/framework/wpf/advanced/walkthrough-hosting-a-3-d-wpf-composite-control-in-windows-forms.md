@@ -79,7 +79,7 @@ You need the following components to complete this walkthrough:
 
 4.  Press **F5** to build and run the application.
 
-## See Also
+## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>

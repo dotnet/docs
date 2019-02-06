@@ -67,5 +67,5 @@ Most data types have a common representation in both managed and unmanaged memor
   
  Class and object types are supported only by COM interop. For corresponding types in [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++, see the [Class Library Overview](../../../docs/standard/class-library-overview.md).  
   
-## See Also  
- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)
+## See also
+- [Default Marshaling Behavior](../../../docs/framework/interop/default-marshaling-behavior.md)

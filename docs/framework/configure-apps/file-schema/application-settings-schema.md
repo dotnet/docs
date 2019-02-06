@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Windows Forms, application settings schema"
   - "configuration schema [.NET Framework], application settings"
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # Application Settings schema
@@ -87,5 +85,5 @@ The following example shows an application settings file that defines two applic
 
 ## See also
 
-[Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md)   
-[Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md)
+- [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md)
+- [Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md)

@@ -1,9 +1,9 @@
 ---
-title: "&lt;unrecognizedPolicyAssertion&gt;"
+title: "<unrecognizedPolicyAssertion>"
 ms.date: "03/30/2017"
 ms.assetid: 043c3c8f-f263-4ac7-a1af-945d03413f0b
 ---
-# &lt;unrecognizedPolicyAssertion&gt;
+# \<unrecognizedPolicyAssertion>
 Represents a binding element that specifies policy assertion. This element has no attribute and is present as an empty switch.  
   
  \<system.serviceModel>  
@@ -15,7 +15,7 @@ Represents a binding element that specifies policy assertion. This element has n
 ## Syntax  
   
 ```xml  
-<unrecognizedPolicyAssertion/>  
+<unrecognizedPolicyAssertion />
 ```  
   
 ## Type  
@@ -36,9 +36,9 @@ Represents a binding element that specifies policy assertion. This element has n
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

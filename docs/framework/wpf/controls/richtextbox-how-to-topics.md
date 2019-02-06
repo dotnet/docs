@@ -18,7 +18,7 @@ This section provides examples that demonstrate how to accomplish common tasks u
  [Position a Custom Context Menu in a RichTextBox](../../../../docs/framework/wpf/controls/how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
  [How to: Replace the Default Content Host for a RichTextBox](https://msdn.microsoft.com/library/dec1b2ce-9ca5-4bb2-bf54-f8a80a3c8beb)  
   
-## See Also  
- <xref:System.Windows.Controls.TextBox>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+## See also
+- <xref:System.Windows.Controls.TextBox>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)

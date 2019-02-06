@@ -39,8 +39,8 @@ When you create an application that accepts the user's keystrokes, you may also 
      [!code-csharp[System.Windows.Forms.DetermineModifierKey#5](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DetermineModifierKey/CS/form1.cs#5)]
      [!code-vb[System.Windows.Forms.DetermineModifierKey#5](../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DetermineModifierKey/VB/form1.vb#5)]  
   
-## See Also  
- <xref:System.Windows.Forms.Keys>  
- <xref:System.Windows.Forms.Control.ModifierKeys%2A>  
- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)  
- [How to: Determine If CapsLock is On in Visual Basic](https://msdn.microsoft.com/library/91e60f5c-dd61-4222-ba5f-39af803afd8c)
+## See also
+- <xref:System.Windows.Forms.Keys>
+- <xref:System.Windows.Forms.Control.ModifierKeys%2A>
+- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)
+- [How to: Determine If CapsLock is On in Visual Basic](https://msdn.microsoft.com/library/91e60f5c-dd61-4222-ba5f-39af803afd8c)

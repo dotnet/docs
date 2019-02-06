@@ -27,5 +27,5 @@ This method supports the .NET Framework infrastructure and is not intended to be
 HRESULT NotAutodone ( );  
 ```  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

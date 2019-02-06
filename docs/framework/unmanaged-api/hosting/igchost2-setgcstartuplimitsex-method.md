@@ -49,5 +49,5 @@ HRESULT SetGCStartupLimitsEx (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [IGCHost2 Interface](../../../../docs/framework/unmanaged-api/hosting/igchost2-interface.md)
+## See also
+- [IGCHost2 Interface](../../../../docs/framework/unmanaged-api/hosting/igchost2-interface.md)

@@ -35,5 +35,5 @@ Stop
   
  [!code-vb[VbVbalrStatements#56](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/stop-statement_1.vb)]  
   
-## See Also  
- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)
+## See also
+- [End Statement](../../../visual-basic/language-reference/statements/end-statement.md)

@@ -3,7 +3,7 @@ title: NuGet and .NET libraries
 description: Best practice recommendations for packaging with NuGet for .NET libraries.
 author: jamesnk
 ms.author: mairaw
-ms.date: 10/02/2018
+ms.date: 01/15/2019
 ---
 # NuGet
 
@@ -38,7 +38,7 @@ NuGet package dependencies are covered in detail in the [Dependencies](./depende
 
 ## Important NuGet package metadata
 
-A NuGet package supports many [metadata properties](/nuget/reference/nuspec). The following table contains the core metadata that every open-source project should provide:
+A NuGet package supports many [metadata properties](/nuget/reference/nuspec). The following table contains the core metadata that every package on NuGet.org should provide:
 
 | MSBuild Property name              | Nuspec name              | Description  |
 | ---------------------------------- | ------------------------ | ------------ |
@@ -50,14 +50,12 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 | `PackageTags`                      | `tags`                     | A space-delimited list of tags and keywords that describe the package. Tags are used when searching for packages.             |
 | `PackageIconUrl`                   | `iconUrl`                  | A URL for an image to use as the icon for the package. URL should be HTTPS and the image should be 64x64 and have a transparent background.             |
 | `PackageProjectUrl`                | `projectUrl`               | A URL for the project homepage or source repository.             |
-| `PackageLicenseUrl`                | `licenseUrl`               | A URL to the project license. Can be the URL to the `LICENSE` file in source control.             |
-
-**✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
-
-**✔️ CONSIDER** using the `LICENSE` file in source control as the `LicenseUrl`. For example, [LICENSE.md](https://github.com/JamesNK/Newtonsoft.Json/blob/c4af75c8e91ca0d75aa6c335e8c106780c4f7712/LICENSE.md).
+| `PackageLicenseExpression`         | `license`                  | The project license's [SPDX identifier](https://spdx.org/licenses/). Only OSI and FSF approved licenses can use an identifier. Other licenses should use `PackageLicenseFile`. Read more about [`license` metadata](/nuget/reference/nuspec#license). |
 
 > [!IMPORTANT]
-> A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it impossible for other people to use.
+> A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it legally impossible for other people to use.
+
+**✔️ CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
 
 **✔️ DO** use an HTTPS href to your package icon.
 
@@ -65,11 +63,9 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 **✔️ DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
 
-**✔️ CONSIDER** setting up [SourceLink](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
+**✔️ CONSIDER** setting up [Source Link](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
 
-> SourceLink automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package.
-> SourceLink also adds information about the exact source code the package was built from.
-> For example, a package created from a Git repository will have the commit hash added as metadata.
+> Source Link automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package. Source Link also adds information about the exact source code the package was built from. For example, a package created from a Git repository will have the commit hash added as metadata.
 
 ## Pre-release packages
 
@@ -96,6 +92,8 @@ NuGet.org hosts its own [symbols server repository](/nuget/create-packages/symbo
 
 > [!IMPORTANT]
 > The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
+>
+> To use the NuGet.org symbol server when debugging a .NET library, developers must have Visual Studio 2017 15.9 or later.
 
 An alternative to creating a symbol package is embedding symbol files in the main NuGet package. The main NuGet package will be larger, but the embedded symbol files means developers don't need to configure the NuGet.org symbol server. If you're building your NuGet package using an SDK-style project, then you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property:
 
@@ -108,11 +106,14 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 </Project>
 ```
 
-**✔️ CONSIDER** embedding symbol files in the main NuGet package.
+The downside of embedding symbol files is that they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
-> Embedding symbol files in the main NuGet package gives developers a better debugging experience by default. They don't need to find and configure the NuGet symbol server in their IDE to get symbol files.
+**✔️ CONSIDER** publishing symbols as a symbol package (`*.snupkg`) to NuGet.org
+
+> Symbol packages (`*.snupkg`) provide developers a good on-demand debugging experience without bloating the main package size and impacting restore performance for those who don't intend to debug the NuGet package.
 >
-> The downside to embedded symbol files is they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
+> The caveat is that they would need to find and configure the NuGet symbol server in their IDE (as a one-time setup) to get symbol files. Visual Studio 2019 plans to provide the NuGet.org symbol server as one of the options out of the box. 
+
 
 >[!div class="step-by-step"]
 >[Previous](strong-naming.md)

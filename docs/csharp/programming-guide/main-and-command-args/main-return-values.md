@@ -88,7 +88,7 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 > [!NOTE]
 >If the examples used `async` modifier on the `Main` method, the compiler would generate the same code.
 
-## See Also
+## See also
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Reference](../index.md)
 - [Main() and Command-Line Arguments](index.md)

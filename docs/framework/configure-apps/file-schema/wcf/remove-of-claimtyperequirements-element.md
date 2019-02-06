@@ -1,9 +1,9 @@
 ---
-title: "&lt;remove&gt; of &lt;claimTypeRequirements&gt; element"
+title: "<remove> of <claimTypeRequirements> element"
 ms.date: "03/30/2017"
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
 ---
-# &lt;remove&gt; of &lt;claimTypeRequirements&gt; element
+# \<remove> of \<claimTypeRequirements> element
 Specifies the types of claims to be removed in the federated credential.  
   
  \<system.ServiceModel>  
@@ -17,9 +17,9 @@ Specifies the types of claims to be removed in the federated credential.
 ## Syntax  
   
 ```xml  
-<claimTypeRequirements>  
-      <remove claimType="URI" />  
-</claimTypeRequirements>  
+<claimTypeRequirements>
+  <remove claimType="URI" />
+</claimTypeRequirements>
 ```  
   
 ## Attributes and Elements  
@@ -40,9 +40,9 @@ Specifies the types of claims to be removed in the federated credential.
 |-------------|-----------------|  
 |[\<claimTypeRequirements>](../../../../../docs/framework/configure-apps/file-schema/wcf/claimtyperequirements-for-message.md)|Specifies a collection of required claim types. Each element is of type <xref:System.ServiceModel.Configuration.ClaimTypeElement>.<br /><br /> In a federated scenario, services state the requirements on incoming credentials. For example, the incoming credentials must possess a certain set of claim types. Each element in this collection specifies the types of required and optional claims expected to appear in a federated credential.|  
   
-## See Also  
- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>  
- <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>  
- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>  
- <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>  
- <xref:System.ServiceModel.Configuration.ClaimTypeElement>
+## See also
+- <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Security.Tokens.ClaimTypeRequirement>
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>
+- <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>
+- <xref:System.ServiceModel.Configuration.ClaimTypeElement>

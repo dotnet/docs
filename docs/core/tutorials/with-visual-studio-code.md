@@ -134,5 +134,5 @@ The Visual Studio Code C# extension can generate assets to build and debug for y
 
 ## See also
 
-* [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-* [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)
+- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
+- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

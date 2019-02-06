@@ -123,7 +123,7 @@ You can derive Visual Basic classes from `Public` classes in COM objects, even t
   
 -   Properties that use `ByRef` parameters cannot be overridden.  
   
-## See Also  
- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)
+## See also
+- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
+- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)
+- [Short Data Type](../../../visual-basic/language-reference/data-types/short-data-type.md)

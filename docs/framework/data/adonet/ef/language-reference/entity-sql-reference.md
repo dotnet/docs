@@ -136,4 +136,4 @@ The following table lists other Entity SQL operators:
 
 ## See also
 
-[Entity SQL Language](entity-sql-language.md)
+- [Entity SQL Language](entity-sql-language.md)

@@ -241,9 +241,8 @@ dotNetFx45_Full_x86_x64.exe /q /norestart /ChainingPackage Contoso
 
 |Version|Value of the Release DWORD|
 |-------------|--------------------------------|
-|.NET Framework 4.7.2 installed on Windows 10 October 2018 Update|461814|
 |.NET Framework 4.7.2 installed on Windows 10 April 2018 Update and on Windows Server, version 1803|461808|
-|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 October 2018 Update, Windows 10 April 2018 Update, and Windows Server, version 1803|461814|
+|.NET Framework 4.7.2 installed on all OS versions other than Windows 10 April 2018 Update, and Windows Server, version 1803. This includes Windows 10 October 2018 Update. |461814|
 |.NET Framework 4.7.1 installed on Windows 10 Fall Creators Update and on Windows Server, version 1709|461308|
 |.NET Framework 4.7.1 installed on all OS versions other than Windows 10 Fall Creators Update and Windows Server, version 1709|461310|
 |.NET Framework 4.7 installed on Windows 10 Creators Update|460798|
@@ -398,9 +397,9 @@ The following table lists .NET Framework language packs that are available for t
 |3082|Spanish - Spain (Modern Sort)|es|
 
 ## See also
-- [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)  
-- [System Requirements](../../../docs/framework/get-started/system-requirements.md)  
-- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)  
-- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)  
-- [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)  
+- [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)
+- [System Requirements](../../../docs/framework/get-started/system-requirements.md)
+- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)
 - [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

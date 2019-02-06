@@ -27,6 +27,6 @@ This example shows how to extract the contents of a <xref:System.Windows.Control
  [!code-csharp[RichTextBoxSnippets#_RTB_StringFrom](../../../../samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml.cs#_rtb_stringfrom)]
  [!code-vb[RichTextBoxSnippets#_RTB_StringFrom](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/RichTextBoxSnippets/visualbasic/window1.xaml.vb#_rtb_stringfrom)]  
   
-## See Also  
- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)  
- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
+## See also
+- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)

@@ -26,5 +26,5 @@ Metadata retrieval is the process of requesting and retrieving metadata from a m
  [How to: Use MetadataExchangeClient to Retrieve Metadata](../../../../docs/framework/wcf/feature-details/how-to-use-metadataexchangeclient-to-retrieve-metadata.md)  
  Demonstrates how to use the <xref:System.ServiceModel.Description.MetadataExchangeClient?displayProperty=nameWithType> class to download metadata files into a <xref:System.ServiceModel.Description.MetadataSet?displayProperty=nameWithType> object that contains <xref:System.ServiceModel.Description.MetadataSection?displayProperty=nameWithType> objects to write to files or for other uses.  
   
-## See Also  
- <xref:System.ServiceModel.Description.MetadataExchangeClient>
+## See also
+- <xref:System.ServiceModel.Description.MetadataExchangeClient>

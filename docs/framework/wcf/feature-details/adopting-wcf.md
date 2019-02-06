@@ -15,6 +15,6 @@ WCF clients can use ASP.NET Web services. WCF services that are configured with 
 
 Even in the few cases where it is necessary, migrating code from one technology to another is seldom the correct approach. The reason for adopting the new technology is to meet new requirements that cannot be met with the earlier technology, and in that case, the correct thing to do is to design a new solution to meet the newly-expanded set of requirements. The new design benefits from your experience with the existing system and from wisdom gained since that system was designed. The new design can also use the full capabilities of the new technologies rather than reproducing the old design on the new platform. After prototyping key elements of the new design, it becomes easier to re-use code from the existing system within the new one.
 
-## See Also
+## See also
 
 - [How to: Retrieve Metadata and Implement a Compliant Service](../../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md)

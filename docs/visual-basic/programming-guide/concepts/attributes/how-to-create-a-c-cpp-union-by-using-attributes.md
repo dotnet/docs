@@ -60,12 +60,12 @@ Structure TestExplicit
   
  The two integer fields, `i1` and `i2`, share the same memory locations as `lg`. This sort of control over struct layout is useful when using platform invocation.  
   
-## See Also  
- <xref:System.Reflection>  
- <xref:System.Attribute>  
- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
- [Attributes](../../../../standard/attributes/index.md)  
- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
- [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)  
- [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)  
- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+## See also
+- <xref:System.Reflection>
+- <xref:System.Attribute>
+- [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)
+- [Attributes](../../../../standard/attributes/index.md)
+- [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)
+- [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)
+- [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)
+- [Accessing Attributes by Using Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)

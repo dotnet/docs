@@ -1,9 +1,9 @@
 ---
-title: "&lt;metadata&gt;"
+title: "<metadata>"
 ms.date: "03/30/2017"
 ms.assetid: d09653eb-e355-4c73-b87b-28f93d56480d
 ---
-# &lt;metadata&gt;
+# \<metadata>
 Specifies how service metadata can be processed.  
   
  \<system.ServiceModel>  
@@ -12,18 +12,18 @@ Specifies how service metadata can be processed.
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-    <client>  
-        <metadata>  
-                   <policyImporters>  
-                          <policyImporter type="string" />  
-                   </policyImporters  
-                 <wsdlImporters>  
-                      <wsdlImporter type="string" />  
-                 </wsdlImporters>  
-        </metadata>  
-    </client>  
-</system.serviceModel>  
+<system.serviceModel>
+  <client>
+    <metadata>
+      <policyImporters>
+        <policyImporter type="string" />
+      </policyImporters>
+      <wsdlImporters>
+        <wsdlImporter type="string" />
+      </wsdlImporters>
+    </metadata>
+  </client>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -45,11 +45,11 @@ Specifies how service metadata can be processed.
 |-------------|-----------------|  
 |[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|The client section defines a list of endpoints that a client can connect to.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.MetadataElement>  
- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>  
- <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>  
- <xref:System.ServiceModel.Description.MetadataImporter>  
- <xref:System.ServiceModel.Description.WsdlImporter>  
- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)  
- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+## See also
+- <xref:System.ServiceModel.Configuration.MetadataElement>
+- <xref:System.ServiceModel.Configuration.PolicyImporterElementCollection>
+- <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>
+- <xref:System.ServiceModel.Description.MetadataImporter>
+- <xref:System.ServiceModel.Description.WsdlImporter>
+- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
+- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)

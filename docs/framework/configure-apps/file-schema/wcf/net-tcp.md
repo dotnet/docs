@@ -1,9 +1,9 @@
 ---
-title: "&lt;net.tcp&gt;"
+title: "<net.tcp>"
 ms.date: "03/30/2017"
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
 ---
-# &lt;net.tcp&gt;
+# \<net.tcp>
 Specifies configuration settings for the NET.TCP Port Sharing Service, which allows multiple processes to share the same TCP port.  
   
  \<system.serviceModel.activation>  
@@ -12,28 +12,28 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ## Syntax  
   
 ```xml  
-<configuration>  
-   <system.serviceModel.activation>  
-       <net.tcp listenBacklog="Integer"  
-          maxPendingAccepts="Integer"  
-          maxPendingConnections="Integer"  
-          receiveTimeout="TimeSpan"  
-          teredoEnabled="Boolean">  
-          <allowAccounts>  
-             <!-- LocalSystem account -->   
-             <add securityIdentifier="S-1-5-18"/>  
-             <!-- LocalService account -->   
-             <add securityIdentifier="S-1-5-19"/>  
-             <!-- Administrators account -->   
-             <add securityIdentifier="S-1-5-20"/>  
-             <!-- Network Service account -->   
-             <add securityIdentifier="S-1-5-32-544" />  
-             <!-- IIS_IUSRS account (Vista only)-->   
-             <add securityIdentifier="S-1-5-32-568"/>  
-           </allowAccounts>  
-       </net.tcp>  
-   </system.serviceModel.activation>  
-</configuration>  
+<configuration>
+  <system.serviceModel.activation>
+    <net.tcp listenBacklog="Integer"
+             maxPendingAccepts="Integer"
+             maxPendingConnections="Integer"
+             receiveTimeout="TimeSpan"
+             teredoEnabled="Boolean">
+      <allowAccounts>
+        <!-- LocalSystem account -->
+        <add securityIdentifier="S-1-5-18"/>
+        <!-- LocalService account -->
+        <add securityIdentifier="S-1-5-19"/>
+        <!-- Administrators account -->
+        <add securityIdentifier="S-1-5-20"/>
+        <!-- Network Service account -->
+        <add securityIdentifier="S-1-5-32-544" />
+        <!-- IIS_IUSRS account (Vista only)-->
+        <add securityIdentifier="S-1-5-32-568"/>
+      </allowAccounts>
+    </net.tcp>
+  </system.serviceModel.activation>
+</configuration>
 ```  
   
 ## Type  
@@ -67,7 +67,7 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ## Remarks  
  For more information on port sharing, see [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md). To understand how to configure the port sharing service, see [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md).  
   
-## See Also  
- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>  
- [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)  
- [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)
+## See also
+- <xref:System.ServiceModel.Activation.Configuration.NetTcpSection>
+- [Net.TCP Port Sharing](../../../../../docs/framework/wcf/feature-details/net-tcp-port-sharing.md)
+- [Configuring the Net.TCP Port Sharing Service](../../../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)

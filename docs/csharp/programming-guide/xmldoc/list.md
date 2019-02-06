@@ -1,5 +1,5 @@
 ---
-title: "&lt;list&gt; - C# Programming Guide"
+title: "<list> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "<list> C# XML tag"
 ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 ---
-# &lt;list&gt; (C# Programming Guide)
+# \<list> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -49,7 +49,7 @@ ms.assetid: c9620b1b-c2e6-43f1-ab88-8ab47308ffec
 ## Example  
  [!code-csharp[csProgGuideDocComments#6](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/list_1.cs)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

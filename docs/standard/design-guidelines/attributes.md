@@ -1,5 +1,5 @@
 ---
-title: "Attributes1"
+title: "Attributes"
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -45,5 +45,5 @@ author: "KrzysztofCwalina"
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
 - [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;AppContextSwitchOverrides&gt; Element"
+title: "<AppContextSwitchOverrides> Element"
 ms.custom: "updateeachrelease"
 ms.date: "09/19/2018"
 helpviewer_keywords: 
@@ -11,7 +11,7 @@ ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;AppContextSwitchOverrides&gt; Element
+# \<AppContextSwitchOverrides> Element
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  
   
  \<configuration>  
@@ -155,7 +155,7 @@ The following example uses the `<add>` element to add two settings to the `<appS
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.AppContext?displayProperty=nameWithType>  
- [\<runtime> Element](runtime-element.md)  
- [\<configuration> Element](../configuration-element.md)
+## See also
+- <xref:System.AppContext?displayProperty=nameWithType>
+- [\<runtime> Element](runtime-element.md)
+- [\<configuration> Element](../configuration-element.md)

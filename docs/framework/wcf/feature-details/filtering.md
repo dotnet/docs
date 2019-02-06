@@ -77,5 +77,5 @@ The Windows Communication Foundation (WCF) filtering system can use declarative 
   
 -   The rest of the endpoint parameters in the `EndpointAddress` as specified in the <xref:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter>.  
   
-## See Also  
- [Data Transfer and Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)
+## See also
+- [Data Transfer and Serialization](../../../../docs/framework/wcf/feature-details/data-transfer-and-serialization.md)

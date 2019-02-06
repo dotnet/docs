@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: the raise Function (F#)"
+title: "Exceptions: the raise Function"
 description: Learn how the F# 'raise' function is used to indicate that an error or exceptional condition has occurred.
 ms.date: 05/16/2016
 ---

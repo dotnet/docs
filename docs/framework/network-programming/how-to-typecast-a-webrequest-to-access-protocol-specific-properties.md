@@ -21,5 +21,5 @@ Dim httpreq As HttpWebRequest = _
    CType(WebRequest.Create("http://www.contoso.com/"), HttpWebRequest)  
 ```  
   
-## See Also  
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)
+## See also
+- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)

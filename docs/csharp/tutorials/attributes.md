@@ -121,7 +121,7 @@ Attributes act as metadata. Without some outward force, they won't actually do a
 To find and act on attributes, [Reflection](../programming-guide/concepts/reflection.md) is generally needed. I won't cover Reflection in-depth in this tutorial, but the basic
 idea is that Reflection allows you to write code in C# that examines other code.
 
-For instance, you can use Reflection to get information about a class: 
+For instance, you can use Reflection to get information about a class(add `using System.Reflection;` at the head of your code): 
 
 [!code-csharp[Getting type information with Reflection](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ReflectionExample1)]
 

@@ -50,6 +50,6 @@ To reclaim objects, the garbage collector must stop all the executing threads in
   
 ## See also
 
-- <xref:System.GC?displayProperty=nameWithType>  
-- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)  
+- <xref:System.GC?displayProperty=nameWithType>
+- [Induced Collections](../../../docs/standard/garbage-collection/induced.md)
 - [Garbage Collection](../../../docs/standard/garbage-collection/index.md)

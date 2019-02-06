@@ -9,6 +9,6 @@ This topic describes how you can deploy a Windows Communication Foundation (WCF)
 ## Choosing the Hosting Environment for Your Application  
  WCF services are designed to run in any Windows process that supports managed code. To become active, a service must be hosted within a run-time environment that creates it and controls its context and lifetime. Hosting options range from running inside the simplest console application to server environments like a Windows service, Internet Information Services (IIS), or within a worker process managed by the Windows Activation Service (WAS). To review the different hosting options for your WCF application, see [Hosting Services](../../../../docs/framework/wcf/hosting-services.md).  
   
-## See Also  
- [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)  
- [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)
+## See also
+- [Hosting](../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)

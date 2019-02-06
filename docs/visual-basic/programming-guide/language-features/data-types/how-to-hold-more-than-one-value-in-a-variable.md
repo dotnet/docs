@@ -35,11 +35,11 @@ A variable holds more than one value if you declare it to be of a *composite dat
   
 5.  Follow the `As` keyword with the name of the appropriate composite data type.  
   
-## See Also  
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)  
- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)  
- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)  
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)
+## See also
+- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Type Characters](../../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)
+- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)
+- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)

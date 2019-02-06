@@ -1,9 +1,9 @@
 ---
-title: "&lt;customTrackingQueries&gt; of WCF"
+title: "<customTrackingQueries> of WCF"
 ms.date: "03/30/2017"
 ms.assetid: 14cfe47e-9935-4120-84f1-8f38de8ca4c1
 ---
-# &lt;customTrackingQueries&gt; of WCF
+# \<customTrackingQueries> of WCF
 
 Represents a collection of queries that are used to track events that you define in your code activities. The query is necessary for a tracking participant to subscribe to custom tracking records.  
   
@@ -18,7 +18,7 @@ Represents a collection of queries that are used to track events that you define
   
 ## Syntax  
   
-```xml
+```xml  
 <tracking>
   <profiles>
     <trackingProfile name="Name">
@@ -30,7 +30,7 @@ Represents a collection of queries that are used to track events that you define
       </workflow>
     </trackingProfile>
   </profiles>
-</tracking>  
+</tracking>
 ```  
   
 ## Attributes and elements
@@ -55,7 +55,7 @@ None.
   
 ## See also
 
-- <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>       
-- <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>       
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.CustomTrackingQueryElementCollection?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.CustomTrackingQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
 - [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

@@ -1,5 +1,5 @@
 ---
-title: Constraints (F#)
+title: Constraints
 description: Learn about F# constraints that apply to generic type parameters to specify the requirements for a type argument in a generic type or function.
 ms.date: 05/16/2016
 ---

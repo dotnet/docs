@@ -75,7 +75,7 @@ The Windows Communication Foundation (WCF) samples can be built using the Visual
     > [!NOTE]
     > To skip the generation of client configuration add the **/noConfig** option.
 
-## See Also
+## See also
 
 - [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md)
 - [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)

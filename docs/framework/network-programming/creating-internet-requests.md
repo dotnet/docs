@@ -21,6 +21,6 @@ Applications create <xref:System.Net.WebRequest> instances through the <xref:Sys
   
  To handle requests that use other application-level protocols, you need to implement protocol-specific classes derived from **WebRequest** and **WebResponse**. For more information, see [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md).  
   
-## See Also  
- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)  
- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+## See also
+- [How to: Request Data Using the WebRequest Class](../../../docs/framework/network-programming/how-to-request-data-using-the-webrequest-class.md)
+- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)

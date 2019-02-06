@@ -89,6 +89,6 @@ This example requires:
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
-* [How to: Create time zones without adjustment rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md)
+- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
+- [How to: Create time zones without adjustment rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md)

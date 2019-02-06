@@ -67,8 +67,8 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
  Now that the `Widget` class can raise events, you can move to the next walkthrough. [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md) demonstrates how to use `WithEvents` to associate an event handler with the `PercentDone` event.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>  
- <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>  
- [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+- <xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>
+- <xref:Microsoft.VisualBasic.DateAndTime.Now%2A>
+- [Walkthrough: Handling Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)
+- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

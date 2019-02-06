@@ -27,6 +27,6 @@ This example converts a hexadecimal string to an integer using the <xref:System.
 
    If the prefix or a digit separator is present, the call to the <xref:System.Convert.ToInt32(System.String,System.Int32)> method throws a <xref:System.FormatException>.
 
-## See Also  
- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>  
- <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType>
+## See also
+- <xref:Microsoft.VisualBasic.Conversion.Hex%2A>
+- <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType>

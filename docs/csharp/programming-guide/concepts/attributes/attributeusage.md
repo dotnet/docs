@@ -6,7 +6,7 @@ ms.date: 04/25/2018
 
 Determines how a custom attribute class can be used. <xref:System.AttributeUsageAttribute> is an attribute you apply to custom attribute definitions. The `AttributeUsage` attribute enables you to control:
 
-- Which program elements attribute may be applied to. Unless you restrict is usage, an attribute may be applied to any of the following program elements:
+- Which program elements attribute may be applied to. Unless you restrict its usage, an attribute may be applied to any of the following program elements:
   - assembly
   - module
   - field
@@ -73,13 +73,13 @@ ThirdAttribute
 SecondAttribute
 ```
 
-## See Also
+## See also
 
-- <xref:System.Attribute>  
-- <xref:System.Reflection>  
-- [C# Programming Guide](../..//index.md)  
-- [Attributes](../../../..//standard/attributes/index.md)  
-- [Reflection (C#)](../reflection.md)  
-- [Attributes](index.md)  
-- [Creating Custom Attributes (C#)](creating-custom-attributes.md)  
+- <xref:System.Attribute>
+- <xref:System.Reflection>
+- [C# Programming Guide](../..//index.md)
+- [Attributes](../../../..//standard/attributes/index.md)
+- [Reflection (C#)](../reflection.md)
+- [Attributes](index.md)
+- [Creating Custom Attributes (C#)](creating-custom-attributes.md)
 - [Accessing Attributes by Using Reflection (C#)](accessing-attributes-by-using-reflection.md)

@@ -66,5 +66,5 @@ class ServiceMetadataBehavior : Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
+## See also
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>

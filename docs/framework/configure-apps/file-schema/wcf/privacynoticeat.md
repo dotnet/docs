@@ -1,9 +1,9 @@
 ---
-title: "&lt;privacyNoticeAt&gt;"
+title: "<privacyNoticeAt>"
 ms.date: "03/30/2017"
 ms.assetid: 4cc96942-4eb9-4241-b2fd-45aa239915e8
 ---
-# &lt;privacyNoticeAt&gt;
+# \<privacyNoticeAt>
 Represents a configuration element that specifies a privacy notice used in `wsFederationHttp` binding.  
   
  \<system.serviceModel>  
@@ -15,8 +15,8 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
 ## Syntax  
   
 ```xml  
-<privacyNotice url="String"  
-        version="Integer" />  
+<privacyNotice url="String"
+               version="Integer" />
 ```  
   
 ## Type  
@@ -41,11 +41,11 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PrivacyNoticeElement>  
- <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.PrivacyNoticeElement>
+- <xref:System.ServiceModel.Channels.PrivacyNoticeBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

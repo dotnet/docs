@@ -24,7 +24,7 @@ ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
   
  Note that the data type specified in the generic parameter `T` of the <xref:System.Data.DataRowExtensions.Field%2A> method and <xref:System.Data.DataRowExtensions.SetField%2A> method must match the type of the underlying value or an <xref:System.InvalidCastException> will be thrown. The specified column name must also match the name of a column in the <xref:System.Data.DataSet> or an <xref:System.ArgumentException> will be thrown. In both cases, the exception is thrown at run time data enumeration when the query is executed.  
   
-## See Also  
- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)  
- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
- [Generic Field and SetField Methods](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)
+## See also
+- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)
+- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [Generic Field and SetField Methods](../../../../docs/framework/data/adonet/generic-field-and-setfield-methods-linq-to-dataset.md)

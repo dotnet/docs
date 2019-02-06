@@ -21,6 +21,6 @@ sqlmetal /code:nwserializable.vb /language:vb "c:\northwnd.mdf" /sprocs /functio
 sqlmetal /code:nwserializable.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize /serialization:unidirectional  
 ```  
   
-## See Also  
- [Serialization](../../../../../../docs/framework/data/adonet/sql/linq/serialization.md)  
- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
+## See also
+- [Serialization](../../../../../../docs/framework/data/adonet/sql/linq/serialization.md)
+- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)

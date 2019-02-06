@@ -67,5 +67,5 @@ Because a Web page can be displayed anywhere in the world, users can input numer
   
 ## See also
 
-- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)  
+- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)
 - [Parsing Numeric Strings](../../../docs/standard/base-types/parsing-numeric.md)

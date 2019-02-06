@@ -34,5 +34,5 @@ Using tools that ship with the Windows operating system, you can enable or disab
 |`ServiceHost`|Events emitted by the service host.|  
 |`WCFMessageLogging`|WCF message logging events.|  
   
-## See Also  
- [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)
+## See also
+- [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)

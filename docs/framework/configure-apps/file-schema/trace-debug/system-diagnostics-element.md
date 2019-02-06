@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.diagnostics&gt; Element"
+title: "<system.diagnostics> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.diagnostics"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "<system.diagnostics> element"
   - "system.diagnostics element"
 ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;system.diagnostics&gt; Element
+# \<system.diagnostics> Element
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  
   
  \<configuration>  
@@ -68,7 +66,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.Debug>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.Debug>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

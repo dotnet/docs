@@ -8,7 +8,7 @@ ms.date: 08/22/2018
 
 # Create a .NET Core Global Tool using the .NET Core CLI
 
-This article teaches you how to create and package a .NET Core Global Tool. The .NET Core CLI allows you to create a console application as a Global Tool, which others can easily install and run. .NET Core Global Tools are NuGet packages that are installed from the .NET Core CLI. For more information about Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+This article teaches you how to create and package a .NET Core Global Tool. The .NET Core CLI allows you to create a console application as a Global Tool, which others can easily install and run. .NET Core Global Tools are NuGet packages that are installed from the .NET Core CLI. For more information about Global Tools, see [.NET Core Global Tools overview](global-tools.md).
 
 [!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
 
@@ -165,7 +165,7 @@ Now that you have a package, install the tool from that package:
 dotnet tool install --global --add-source ./nupkg botsay
 ```
 
-The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional source feed for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional source feed for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview](global-tools.md).
 
 If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
 
@@ -186,5 +186,3 @@ Once you're done experimenting with the tool, you can remove it with the followi
 ```console
 dotnet tool uninstall -g botsay
 ```
-
-[global-tool-info]: global-tools.md

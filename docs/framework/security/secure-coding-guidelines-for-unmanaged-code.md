@@ -45,5 +45,5 @@ Some library code needs to call into unmanaged code (for example, native code AP
 |**native**|Security-neutral; that is, unmanaged code that requires unmanaged code permission to call. Security is checked, which stops an unauthorized caller.|  
 |**unsafe**|Potentially dangerous unmanaged code entry point with security suppressed. Developers should use the greatest caution when using such unmanaged code, making sure that other protections are in place to prevent a security vulnerability. Developers must be responsible, as this keyword overrides the security system.|  
   
-## See Also  
- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)
+## See also
+- [Secure Coding Guidelines](../../../docs/standard/security/secure-coding-guidelines.md)

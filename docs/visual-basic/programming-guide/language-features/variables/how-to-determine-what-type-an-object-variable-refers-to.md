@@ -46,11 +46,11 @@ An object variable contains a pointer to data that is stored elsewhere. The type
 ## Compiling the Code  
  Note that the specified type cannot be a variable or expression. It must be the name of a defined type, such as a class, structure, or interface. This includes intrinsic types such as `Integer` and `String`.  
   
-## See Also  
- <xref:System.Object.GetType%2A>  
- <xref:System.Type?displayProperty=nameWithType>  
- <xref:System.Type.GetTypeCode%2A>  
- <xref:System.TypeCode>  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)
+## See also
+- <xref:System.Object.GetType%2A>
+- <xref:System.Type?displayProperty=nameWithType>
+- <xref:System.Type.GetTypeCode%2A>
+- <xref:System.TypeCode>
+- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
+- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)
+- [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)

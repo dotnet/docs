@@ -82,9 +82,9 @@ ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
   
  Permission to call unmanaged code allows an application to perform most anything. Therefore, permission to call unmanaged code should only be granted for applications that come from a trusted source. Alternatively, depending on the application, the piece of application functionality that makes the call to unmanaged code could be optional, or enabled in the full trust environment only. For more information about dangerous permissions, see [Dangerous Permissions and Policy Administration](../../../docs/framework/misc/dangerous-permissions-and-policy-administration.md). For more information about elevating permissions, see [NIB: General Security Policy Administration](https://msdn.microsoft.com/library/5121fe35-f0e3-402c-94ab-4f35b0a87b4b).  
   
-## See Also  
- [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)  
- [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)  
- [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)  
- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)  
- [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications)
+## See also
+- [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)
+- [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)
+- [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)
+- [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)
+- [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications)

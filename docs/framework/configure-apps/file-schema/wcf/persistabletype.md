@@ -1,9 +1,9 @@
 ---
-title: "&lt;persistableType&gt;"
+title: "<persistableType>"
 ms.date: "03/30/2017"
 ms.assetid: e5425fe6-523a-4076-aab4-2c2515b1d830
 ---
-# &lt;persistableType&gt;
+# \<persistableType>
 Specifies all the persistable types.  
   
  \<system.ServiceModel>  
@@ -13,15 +13,15 @@ Specifies all the persistable types.
 ## Syntax  
   
 ```xml  
-<comContracts>  
-  <comContract>  
-      <persistableTypes>  
-         <persistableType id="string"  
-            name="string">  
-         </persistableType>  
-      </persistableTypes>  
-  </comContract>  
-</comContracts>  
+<comContracts>
+  <comContract>
+    <persistableTypes>
+      <persistableType id="String"
+                       name="String">
+      </persistableType>
+    </persistableTypes>
+  </comContract>
+</comContracts>
 ```  
   
 ## Type  
@@ -46,9 +46,9 @@ Specifies all the persistable types.
 |-------------|-----------------|  
 |[\<persistableTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/persistabletypes.md)|A collection of `persistableType` elements.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ComPersistableTypeElementCollection>  
- <xref:System.ServiceModel.Configuration.ComPersistableTypeElement>  
- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)  
- [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)  
- [How to: Configure COM+ Service Settings](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+## See also
+- <xref:System.ServiceModel.Configuration.ComPersistableTypeElementCollection>
+- <xref:System.ServiceModel.Configuration.ComPersistableTypeElement>
+- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)
+- [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)

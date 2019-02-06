@@ -1,5 +1,5 @@
 ---
-title: "How to: Manipulate a Table&#39;s Columns through the Columns Property"
+title: "How to: Manipulate a Table's Columns through the Columns Property"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "Columns property [WPF]"
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
 ---
-# How to: Manipulate a Table&#39;s Columns through the Columns Property
+# How to: Manipulate a Table's Columns through the Columns Property
 This example demonstrates some of the more common operations that can be performed on a table's columns through the <xref:System.Windows.Documents.Table.Columns%2A> property.  
   
 ## Example  
@@ -59,10 +59,10 @@ This example demonstrates some of the more common operations that can be perform
  [!code-csharp[TableSnippets2#_Table_Columns_Clear](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_columns_clear)]
  [!code-vb[TableSnippets2#_Table_Columns_Clear](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_columns_clear)]  
   
-## See Also  
- [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)  
- [Define a Table with XAML](../../../../docs/framework/wpf/advanced/how-to-define-a-table-with-xaml.md)  
- [Build a Table Programmatically](../../../../docs/framework/wpf/advanced/how-to-build-a-table-programmatically.md)  
- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)  
- [Manipulate a FlowDocument through the Blocks Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-a-flowdocument-through-the-blocks-property.md)  
- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
+## See also
+- [Table Overview](../../../../docs/framework/wpf/advanced/table-overview.md)
+- [Define a Table with XAML](../../../../docs/framework/wpf/advanced/how-to-define-a-table-with-xaml.md)
+- [Build a Table Programmatically](../../../../docs/framework/wpf/advanced/how-to-build-a-table-programmatically.md)
+- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)
+- [Manipulate a FlowDocument through the Blocks Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-a-flowdocument-through-the-blocks-property.md)
+- [Manipulate a Table's Row Groups through the RowGroups Property](../../../../docs/framework/wpf/advanced/how-to-manipulate-table-row-groups-through-the-rowgroups-property.md)

@@ -1,4 +1,4 @@
-### ListBoxItem IsSelected binding issue with ObservableCollection&lt;T&gt;.Move
+### ListBoxItem IsSelected binding issue with ObservableCollection\<T>.Move
 
 |   |   |
 |---|---|

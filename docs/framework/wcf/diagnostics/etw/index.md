@@ -23,6 +23,6 @@ Windows Communication Foundation (WCF) analytic tracing offers a way to capture 
  [Analytic Trace Event Reference](../../../../../docs/framework/wcf/diagnostics/etw/analytic-trace-event-reference.md)  
  Shows a table of event IDs with their event levels, event messages and keywords.  
   
-## See Also  
- [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)  
- [Tracking Events into Event Tracing in Windows](../../../../../docs/framework/windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows.md)
+## See also
+- [WCF Services and Event Tracing for Windows](../../../../../docs/framework/wcf/samples/wcf-services-and-event-tracing-for-windows.md)
+- [Tracking Events into Event Tracing in Windows](../../../../../docs/framework/windows-workflow-foundation/samples/tracking-events-into-event-tracing-in-windows.md)

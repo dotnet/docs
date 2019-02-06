@@ -1,10 +1,10 @@
 ---
-title: "&lt;bufferReceive&gt;"
+title: "<bufferReceive>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: b23c3a54-10d4-4f13-ab6d-98b26b76f22a
 ---
-# &lt;bufferReceive&gt;
+# \<bufferReceive>
 A service behavior that enables a service to use buffered receive processing, which enables a workflow service to process out-of-order messages.  
   
 \<system.ServiceModel>  
@@ -43,6 +43,6 @@ A service behavior that enables a service to use buffered receive processing, wh
 |-------------|-----------------|  
 |[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
-## See Also  
-<!-- <xref:System.ServiceModel.Activities.Description.BufferReceiveServiceBehavior>  -->
- <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>
+## See also
+- <xref:System.ServiceModel.Activities.Description.BufferedReceiveServiceBehavior>
+- <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>

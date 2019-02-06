@@ -1,9 +1,9 @@
 ---
-title: "&lt;msmqIntegration&gt;"
+title: "<msmqIntegration>"
 ms.date: "03/30/2017"
 ms.assetid: ab677405-1ffe-457a-803f-00c1770e51e2
 ---
-# &lt;msmqIntegration&gt;
+# \<msmqIntegration>
 Specifies a MSMQ transport for custom binding.  
   
  \<system.serviceModel>  
@@ -15,25 +15,24 @@ Specifies a MSMQ transport for custom binding.
 ## Syntax  
   
 ```xml  
-<msmqIntegration>  
-        customDeadLetterQueue="Uri"  
-        deadLetterQueue="Custom/None/System"  
-    durable="Boolean"  
-    exactlyOnce="Boolean"  
-    manualAddressing="Boolean"  
-    maxBufferPoolSize="Integer"  
-    maxImmediateRetries="Integer"  
-    maxReceivedMessageSize="Integer"  
-    maxRetryCycles="Integer"  
-    rejectAfterLastRetry="Boolean"  
-    retryCycleDelay="TimeSpan"  
-    serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"  
-    timeToLive="TimeSpan"  
-    useSourceJournal="Boolean"  
-    useMsmqTracing="Boolean"  
-    <msmqTransportSecurity>  
-    </msmqTransportSecurity>  
-</msmqIntegration>  
+<msmqIntegration customDeadLetterQueue="Uri"
+                 deadLetterQueue="Custom/None/System"
+                 durable="Boolean"
+                 exactlyOnce="Boolean"
+                 manualAddressing="Boolean"
+                 maxBufferPoolSize="Integer"
+                 maxImmediateRetries="Integer"
+                 maxReceivedMessageSize="Integer"
+                 maxRetryCycles="Integer"
+                 rejectAfterLastRetry="Boolean"
+                 retryCycleDelay="TimeSpan"
+                 serializationFormat="XML/Binary/ActiveX/ByteArray/Stream"
+                 timeToLive="TimeSpan"
+                 useSourceJournal="Boolean"
+                 useMsmqTracing="Boolean">
+  <msmqTransportSecurity>
+  </msmqTransportSecurity>
+</msmqIntegration>
 ```  
   
 ## Type  
@@ -74,14 +73,14 @@ Specifies a MSMQ transport for custom binding.
 |-------------|-----------------|  
 |[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

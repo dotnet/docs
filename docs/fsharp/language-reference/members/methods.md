@@ -1,5 +1,5 @@
 ---
-title: Methods (F#)
+title: Methods
 description: Learn how an F# method is a function associated with a type that are used to expose and implement the functionality and behavior of objects and types.
 ms.date: 05/16/2016
 ---

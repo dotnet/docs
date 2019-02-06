@@ -75,11 +75,11 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
 ## Creating a Custom View Mode  
  Customized views like <xref:System.Windows.Controls.GridView> are derived from the <xref:System.Windows.Controls.ViewBase> abstract class, which provides the tools to display data items that are represented as <xref:System.Windows.Controls.ListViewItem> objects.    
   
-## See Also  
- <xref:System.Windows.Controls.GridView>  
- <xref:System.Windows.Controls.ListView>  
- <xref:System.Windows.Controls.ListViewItem>  
- <xref:System.Windows.Data.Binding>  
- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)  
- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+## See also
+- <xref:System.Windows.Controls.GridView>
+- <xref:System.Windows.Controls.ListView>
+- <xref:System.Windows.Controls.ListViewItem>
+- <xref:System.Windows.Data.Binding>
+- [GridView Overview](../../../../docs/framework/wpf/controls/gridview-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/listview-how-to-topics.md)
+- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)

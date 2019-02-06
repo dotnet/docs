@@ -27,13 +27,13 @@ Using reflection to itemize the properties (and the types of those properties) o
  [!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
  [!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
   
-## See Also  
- <xref:System.Printing.IndexedProperties.PrintProperty>  
- <xref:System.Printing.PrintSystemObject>  
- <xref:System.Printing.IndexedProperties>  
- <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>  
- <xref:System.Printing.LocalPrintServer>  
- <xref:System.Printing.PrintQueue>  
- <xref:System.Collections.DictionaryEntry>  
- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)  
- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+## See also
+- <xref:System.Printing.IndexedProperties.PrintProperty>
+- <xref:System.Printing.PrintSystemObject>
+- <xref:System.Printing.IndexedProperties>
+- <xref:System.Printing.IndexedProperties.PrintPropertyDictionary>
+- <xref:System.Printing.LocalPrintServer>
+- <xref:System.Printing.PrintQueue>
+- <xref:System.Collections.DictionaryEntry>
+- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
+- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)

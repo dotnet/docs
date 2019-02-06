@@ -142,6 +142,6 @@ Enhancements were made that affect how integrated Windows authentication is hand
   
  These extended protection features can also be used by server applications for authentication with other types of requests and when trusted proxies are used.  
   
-## See Also  
- <xref:System.Security.Authentication.ExtendedProtection>  
- <xref:System.Security.Authentication.ExtendedProtection.Configuration>
+## See also
+- <xref:System.Security.Authentication.ExtendedProtection>
+- <xref:System.Security.Authentication.ExtendedProtection.Configuration>

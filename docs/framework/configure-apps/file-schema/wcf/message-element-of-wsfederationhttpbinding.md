@@ -125,7 +125,7 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
 - <xref:System.ServiceModel.FederatedMessageSecurityOverHttp>
 - <xref:System.ServiceModel.Configuration.WSFederationHttpSecurityElement.Message%2A>
 - <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A>
- `System.ServiceModel.Configuration.FederatedMessageSecurityElement`
+- <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement>
 - [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
 - [Bindings](../../../../../docs/framework/wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)

@@ -44,7 +44,7 @@ For more information, see [Methods (C# Programming Guide)](../classes-and-struct
 Starting with C# 6, you can use expression body definition to implement a read-only property. To do that, use the following syntax:
 
 ```csharp
-PropertyName => expression;
+PropertyType PropertyName => expression;
 ```
 
 The following example defines a `Location` class whose read-only `Name` property is implemented as an expression body definition that returns the value of the private `locationName` field:

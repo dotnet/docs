@@ -16,7 +16,7 @@ ms.author: "ronpet"
 
 The global assembly cache (GAC) stores assemblies that several applications share. Install an assembly into the [global assembly cache](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/gac) with one of the following components: 
 - [Windows Installer](#windows-installer)
-- [Global assembly cache tool](#global-assembly-cache-tool).
+- [Global assembly cache tool](#global-assembly-cache-tool)
 
 > [!IMPORTANT]
 > You can install only strong-named assemblies into the GAC. For information about how to create a strong-named assembly, see [How to: Sign an assembly with a strong name](how-to-sign-an-assembly-with-a-strong-name.md).
@@ -32,7 +32,7 @@ You can use the [global assembly cache tool (gacutil.exe)](../tools/gacutil-exe-
    > [!NOTE]
    > *Gacutil.exe* is for development purposes only. Don't use it to install production assemblies into the global assembly cache.
 
-The syntax for *gacutil.exe* is as follows:
+The syntax for using *gacutil.exe* to install an assembly in the GAC is as follows:
 
 ```console
 gacutil -i <assembly name>
@@ -40,7 +40,7 @@ gacutil -i <assembly name>
 
 In this command, *\<assembly name>* is the name of the assembly to install in the global assembly cache.
 
-If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs). 
+If *gacutil.exe* isn't in your system path, use the [Developer Command Prompt for VS *\<version>*](https://docs.microsoft.com/en-us/dotnet/framework/tools/developer-command-prompt-for-vs).
 
 The following example installs an assembly with the file name *hello.dll* into the global assembly cache.
 
@@ -49,7 +49,7 @@ gacutil -i hello.dll
 ```
 
 > [!NOTE]
-> In earlier versions of the .NET Framework, the *Shfusion.dll* Windows shell extension enabled you to install assemblies by dragging them to File Explorer. Beginning with .NET Framework Version 4, *Shfusion.dll* is obsolete.
+> In earlier versions of the .NET Framework, the *Shfusion.dll* Windows shell extension let you install assemblies by dragging them to File Explorer. Beginning with .NET Framework 4, *Shfusion.dll* is obsolete.
 
 ## See also
 

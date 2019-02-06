@@ -89,7 +89,7 @@ This section describes the unmanaged structures that the debugging API uses.
  Defines a transport buffer for a method's runtime information.
 
  [DacpReJitData Structure](../../../../docs/framework/unmanaged-api/debugging/dacprejitdata-structure.md)
- Defines the basic information about a given profiler instrumented method.
+ Defines the basic information about a given profiler-instrumented method.
 
 
   

@@ -28,7 +28,7 @@ Defines a transport buffer for a module's runtime information.
 struct DacpModuleData
 {
     CLRDATA_ADDRESS Address;
-    CLRDATA_ADDRESS File; // A PEFile addr
+    CLRDATA_ADDRESS File; 
     CLRDATA_ADDRESS  ilBase;
     char payLoad[132];
 };
@@ -39,8 +39,8 @@ struct DacpModuleData
 | Member    | Description                                                             |
 | --------- | ----------------------------------------------------------------------- |
 | `Address` | Address of the module object.                                           |
-| `File`    | The pointer to the portable executable (PE) file.                       |
-| `ilBase`  | The address of the loaded image's base                                  |
+| `File`    | A pointer to the portable executable (PE) file.                       |
+| `ilBase`  | The address of the loaded image's base.                                 |
 | `payLoad` | A payload buffer for additional module information used by the runtime. |
 
 

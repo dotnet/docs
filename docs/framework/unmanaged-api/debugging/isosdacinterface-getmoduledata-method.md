@@ -37,7 +37,7 @@ HRESULT GetModuleData(
 [in] The address of the module to retrieve information for.
 
 `data`
-[out] The DacpModuleData structure to hold the information of the loaded module.
+[out] The [DacpModuleData structure](dacpmoduledata-structure.md) to hold the information of the loaded module.
 
 
 ## Remarks

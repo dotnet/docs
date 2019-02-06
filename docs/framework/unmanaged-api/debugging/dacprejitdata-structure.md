@@ -47,7 +47,7 @@ struct MSLAYOUT DacpReJitData
 | ---------------- | ------------------------------------------------------------------------------------------------ |
 | `rejitID`        | The ReJit revision number for a method.                                                          |
 | `flags`          | A flag indicating the current state of the method's ReJit instrumentation for the given version. |
-| `NativeCodeAddr` | The base address of the methods rejitted implementation.                                         |
+| `NativeCodeAddr` | The base address of the method's rejitted implementation.                                         |
 
 
 ## Remarks

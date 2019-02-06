@@ -37,7 +37,7 @@ HRESULT GetRepresentativeEntryAddress(
 
 ## Remarks
 
-The provided method is part of the `IXCLRDataMethodInstance` interface and corresponds to the 19th slot of the virtual method table.
+The provided method is part of the [`IXCLRDataMethodInstance` interface](ixclrdatamethodinstance-interface.md) and corresponds to the 19th slot of the virtual method table.
 
 ## Requirements
 

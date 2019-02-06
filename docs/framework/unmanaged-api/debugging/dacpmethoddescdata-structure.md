@@ -50,20 +50,20 @@ struct DacpMethodDescData
 
 | Member                       | Description                                                                                     |
 | ---------------------------- | ----------------------------------------------------------------------------------------------- |
-| `bHasNativeCode`             | Indicates if the runtime has a native code available for the given instantiation of the method. |
+| `bHasNativeCode`             | Indicates if the runtime has native code available for the given instantiation of the method. |
 | `bIsDynamic`                 | Indicates if the method is generated dynamically through lightweight code generation.           |
 | `wSlotNumber`                | The method's slot number in the method table.                                                   |
 | `NativeCodeAddr`             | The method's initial native address.                                                            |
 | `data`                       | Pointer to a buffer used internally by the runtime.                                             |
 | `MethodDescPtr`              | Pointer to the `MethodDesc` in the runtime.                                                     |
-| `nativeCodeInfo`             | Pointer to a buffer used internally by the runtime to track methods                             |
+| `nativeCodeInfo`             | Pointer to a buffer used internally by the runtime to track methods.                            |
 | `moduleInfo`                 | Pointer to a buffer used internally by the runtime for module information.                      |
 | `MDToken`                    | Token associated with the given method.                                                         |
 | `payloadGC`                  | Pointer to a garbage collection buffer used internally by the runtime.                          |
 | `payloadGC2`                 | Pointer to a garbage collection buffer used internally by the runtime.                          |
 | `managedDynamicMethodObject` | If the method is dynamic, the runtime uses this buffer internally for information tracking.     |
 | `requestedIP`                | Used to populate the structure per request when given a native code address.                    |
-| `rejitDataCurrent`           | Information about the latest instrumented version the method.                                   |
+| `rejitDataCurrent`           | Information about the latest instrumented version of the method.                                   |
 | `rejitDataRequested`         | Rejit information for the requested native address.                                             |
 | `cJittedRejitVersions`       | Number of times the method has been rejitted through instrumentation.                           |
 

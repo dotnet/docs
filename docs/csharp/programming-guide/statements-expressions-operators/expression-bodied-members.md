@@ -49,7 +49,7 @@ PropertyName => expression;
 
 The following example defines a `Location` class whose read-only `Name` property is implemented as an expression body definition that returns the value of the private `locationName` field:
 
-[!code-csharp[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]  
+[!code-csharp[expression-bodied-read-only-property](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-readonly.cs#1)]  
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 
@@ -57,7 +57,7 @@ For more information about properties, see [Properties (C# Programming Guide)](.
 
 Starting with C# 7.0, you can use expression body definitions to implement property `get` and `set` accessors. The following example demonstrates how to do that:
 
-[!code-csharp[expression-bodied-property-getter](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
+[!code-csharp[expression-bodied-property-get-set](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]
 
 For more information about properties, see [Properties (C# Programming Guide)](../classes-and-structs/properties.md).
 

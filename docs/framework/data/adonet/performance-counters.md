@@ -394,4 +394,4 @@ class Program
 - [Performance Counters for ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
 - [Runtime Profiling](../../../../docs/framework/debug-trace-profile/runtime-profiling.md)
 - [Introduction to Monitoring Performance Thresholds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -47,10 +47,10 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
- [Core Development Technologies](../../development-guide.md)  
+ [.NET Framework Development Guide](../../development-guide.md)  
  Provides links to information about standard development tasks in the .NET Framework.  
   
- [Samples and Quickstarts](../../../samples-and-tutorials/index.md)  
+ [Samples and tutorials](../../../samples-and-tutorials/index.md)  
  Provides a list of .NET samples and tutorials.
   
 ## See also

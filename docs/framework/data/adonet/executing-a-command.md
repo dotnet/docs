@@ -36,4 +36,4 @@ Each .NET Framework data provider included with the .NET Framework has its own c
 ## See also
 - [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
 - [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

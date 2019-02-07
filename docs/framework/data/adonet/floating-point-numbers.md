@@ -14,4 +14,4 @@ This topic describes some of the issues that developers frequently encounter whe
   
 ## See also
 - [Why Floating-Point Numbers May Lose Precision](/cpp/build/reference/why-floating-point-numbers-may-lose-precision)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -18,7 +18,7 @@ A *model-declared function* is a function that is declared in a conceptual model
 -   Parameter information, including parameter name and type. (Optional)  
   
 ## Example  
- The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. In CSDL, one implementation of a model-declared function is a function import (using the [FunctionImport element](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716710(v=vs.100))). The following CSDL defines an entity container with a function import definition. Note that the return type for the function is void since no return type is specified.  
+ The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. In CSDL, one implementation of a model-declared function is a function import (using the [FunctionImport element](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#functionimport-element-csdl)). The following CSDL defines an entity container with a function import definition. Note that the return type for the function is void since no return type is specified.  
   
  [!code-xml[EDM_Example_Model#FunctionImport](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books4.edmx#functionimport)]  
   

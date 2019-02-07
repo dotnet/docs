@@ -67,6 +67,10 @@ Similar to CAS, Security Transparency allows separating sandboxed code from secu
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 
+### System.EnterpriseServices
+
+System.EnterpiseServices (COM+) is not supported by .NET Core.
+
 ## Retargeting your .NET Framework code to .NET Framework 4.7.2
 
 If your code isn't targeting .NET Framework 4.7.2, we recommended that you retarget to .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where the .NET Standard doesn't support existing APIs.

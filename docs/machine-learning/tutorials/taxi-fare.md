@@ -1,19 +1,19 @@
 ---
-title: Predict New York taxi fares using a regression learner with ML.NET
-description: Predict fares using a regression learner with ML.NET.
+title: Predict prices using a regression learner with ML.NET
+description: Predict prices using a regression learner with ML.NET.
 author: aditidugar
 ms.author: johalex
 ms.date: 01/15/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
-#Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict New York taxi fares.
+#Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
 ---
-# Tutorial: Predict New York taxi fares using a regression learner with ML.NET
+# Tutorial: Predict prices using a regression learner with ML.NET
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, see the [ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
 
-This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting New York City taxi fares.
+This tutorial illustrates how to use ML.NET to build a [regression model](../resources/glossary.md#regression) for predicting prices, specifically, New York City taxi fares.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

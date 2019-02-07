@@ -170,7 +170,7 @@ class A {
 ### Using the Base Provider Model and the New Asynchronous Feature  
  You may need to create a tool that is able to connect to different databases and execute queries. You can use the base provider model and the new asynchronous feature.  
   
- The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](https://msdn.microsoft.com/library/dd327979.aspx).  
+ The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](https://docs.microsoft.com/previous-versions/commerce-server/dd327979(v=cs.90)).  
   
 ```csharp
 using System;  

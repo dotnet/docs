@@ -68,7 +68,7 @@ Annotations enable you to modify the names of the elements in your typed <xref:S
 |**Parent** Accessor|TableNameRow|typedParent|  
 |**DataSet** Events|TableNameRowChangeEvent<br /><br /> TableNameRowChangeEventHandler|typedName|  
   
- To use typed **DataSet** annotations, you must include the following **xmlns** reference in your XML Schema definition language (XSD) schema. (To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](https://msdn.microsoft.com/library/8bw9ksd6.aspx)).  
+ To use typed **DataSet** annotations, you must include the following **xmlns** reference in your XML Schema definition language (XSD) schema. To create an xsd from database tables, see <xref:System.Data.DataSet.WriteXmlSchema%2A> or [Working with Datasets in Visual Studio](/visualstudio/data-tools/dataset-tools-in-visual-studio).  
   
 ```  
 xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  

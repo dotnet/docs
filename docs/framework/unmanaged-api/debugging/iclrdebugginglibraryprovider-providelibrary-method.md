@@ -33,7 +33,7 @@ HRESULT ProvideLibrary(
   
 #### Parameters  
  `pwszFilename`  
- [in] The name of the module being requested .  
+ [in] The name of the module being requested.  
   
  `dwTimestamp`  
  [in] The date time stamp stored in the COFF file header of PE files.  

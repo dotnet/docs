@@ -371,7 +371,14 @@
 ## Remarks  
  Use this method if you need to print Abstract Syntax Notation One (ASN.1)-encoded data or output the information to a text box. Use the `multiLine` parameter to control the layout of the output.  
   
-   
+ ### OS dependency
+  Do not rely on output from this method, because it's intended for pretty-printing, and its output format is not guaranteed.
+  
+  ```csharp
+   // output "DNS Name=san1.example.com\r\nDNS Name=san2.example.com\r\n" on .NET Core 2.2 Windows
+   // output "DNS:san1.example.com, DNS:san2.example.com" on .NET Core 2.2 Linux
+   extension.Format(true);
+  ```
   
 ## Examples  
  The following code example shows how to use the <xref:System.Security.Cryptography.AsnEncodedData> class.  

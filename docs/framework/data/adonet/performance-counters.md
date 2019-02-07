@@ -196,27 +196,27 @@ Class Program
   
     Private Shared Function GetIntegratedSecurityConnectionString() As String  
         ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' you can retrieve it from a configuration file.   
         Return ("Data Source=.\SqlExpress;Integrated Security=True;" &   
           "Initial Catalog=AdventureWorks")  
     End Function  
   
     Private Shared Function GetSqlConnectionString() As String  
         ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' you can retrieve it from a configuration file.   
         Return ("Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" &   
           "Initial Catalog=AdventureWorks")  
     End Function  
   
     Private Shared Function GetSqlConnectionStringDifferent() As String  
         ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' you can retrieve it from a configuration file.   
         Return ("Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" & _  
           "User Id=LowPriv;Password=Data!05;")  
     End Function  
 End Class  
 ```  
-  
+
 ```csharp  
 using System;  
 using System.Data.SqlClient;  
@@ -366,28 +366,28 @@ class Program
     private static string GetIntegratedSecurityConnectionString()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Data Source=.\SqlExpress;Integrated Security=True;" +  
           "Initial Catalog=AdventureWorks";  
     }  
     private static string GetSqlConnectionString()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" +  
-        //  "Initial Catalog=AdventureWorks";  
+          "Initial Catalog=AdventureWorks";  
     }  
   
     private static string GetSqlConnectionStringDifferent()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" +  
           "User Id=LowPriv;Password=Data!05;";  
     }  
 }  
 ```  
-  
+
 ## See also
 - [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
 - [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)

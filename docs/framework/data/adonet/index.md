@@ -38,7 +38,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Describes features and behaviors that are specific to the .NET Framework Data Provider for Oracle.  
   
 ## Related Sections  
- [Security in Native and .NET Framework Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))  
+ [Security in Native and .NET Framework Code](../../../standard/security/index.md)  
  Provides links to security topics for Visual Studio, the .NET Framework, and cryptography.  
   
  [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
@@ -47,14 +47,10 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)  
  Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
- [Core Development Technologies](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/csxbhtye(v=vs.85))  
+ [Core Development Technologies](../../development-guide.md)  
  Provides links to information about standard development tasks in the .NET Framework.  
   
- [Advanced Development Technologies](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/a493kdy6(v=vs.85)
-)  
- Provides links to information about sophisticated development tasks and techniques in the .NET Framework.  
-  
- [Samples and Quickstarts](https://docs.microsoft.com/previous-versions/ms184422(v=vs.100))  
+ [Samples and Quickstarts](../../../samples-and-tutorials/index.md)  
  Provides a list of .NET samples and tutorials.
   
 ## See also

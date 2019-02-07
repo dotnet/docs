@@ -31,7 +31,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
 ## Related Sections  
  [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)  
  [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
- Provides overviews of [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies.  
+ Provides overviews of LINQ technologies in Visual Basic.
   
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
  Describes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies for Visual Basic users.  

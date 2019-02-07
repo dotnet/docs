@@ -61,7 +61,7 @@ In a query, you specify the information that you want to retrieve from the data 
 |`Sum`|Returns null.|Returns null.|Returns the sum of the non-null value in a sequence.|Computes the sum of a sequence of numeric values.|  
   
 ## Type Methods  
- The two LINQ methods that deal with type conversion and testing are both supported in the context of the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. This means that the only supported types are types that map to the appropriate [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] type. For a list of these types, see [Conceptual Model Types (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl). The type methods are `Convert` and `OfType`.  
+ The two LINQ methods that deal with type conversion and testing are both supported in the context of the Entity Framework. This means that the only supported types are types that map to the appropriate Entity Framework type. For a list of these types, see [Conceptual Model Types (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl). The type methods are `Convert` and `OfType`.  
   
  `OfType` is supported for entity types. `Convert` is supported for conceptual model primitive types.  The C# `is` and `as` methods are also supported.  
   

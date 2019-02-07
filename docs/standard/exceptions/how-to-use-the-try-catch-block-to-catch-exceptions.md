@@ -16,7 +16,7 @@ ms.author: "mairaw"
 ---
 # How to use the try/catch block to catch exceptions
 
-Any code statements that might raise or throw an exception are placed in a `try` block and statements used to handle the exception are set in a `catch` block, below the `try` block. The `catch` block must include the exception type and can contain additional blocks per each exception type handled.
+Place any code statements that might raise or throw an exception in a `try` block, and place statements used to handle the exception or exceptions in one or more `catch` blocks below the `try` block. Each `catch` block includes the exception type and can contain additional statements needed to handle that exception type.
 
 In the following example, the <xref:System.IO.StreamReader> statement opens a file called *data.txt* and writes a string from the file. Since the code might throw an exception, it's placed in a `try` block. Next, a `catch` block placed to catch the exception and handles it by printing the results to console.
 

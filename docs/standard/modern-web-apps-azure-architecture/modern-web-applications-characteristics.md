@@ -3,7 +3,7 @@ title: Characteristics of modern web applications
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Characteristics of modern web applications
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
+ms.date: 01/30/2019
 ---
 
 # Characteristics of Modern Web Applications
@@ -34,25 +34,25 @@ ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud)
 
 ## Cross platform
 
-ASP.NET Core is cross-platform, and can run on Linux and MacOS as well as Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers, which typically run Linux today, can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices-architecture/index.md).
+ASP.NET Core is cross-platform and can run on Linux, macOS, and Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers - both Linux and Windows - can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices-architecture/index.md).
 
 ## Modular and loosely coupled
 
 NuGet packages are first-class citizens in .NET Core, and ASP.NET Core apps are composed of many libraries through NuGet. This granularity of functionality helps ensure apps only depend on and deploy functionality they actually require, reducing their footprint and security vulnerability surface area.
 
-ASP.NET Core also fully supports dependency injection, both internally and at the application level. Interfaces can have multiple implementations that can be swapped out as needed. Dependency injection allows apps to loosely couple to those interfaces, making them easier to extend, maintain, and test.
+ASP.NET Core also fully supports [dependency injection](https://deviq.com/dependency-injection/), both internally and at the application level. Interfaces can have multiple implementations that can be swapped out as needed. Dependency injection allows apps to loosely couple to those interfaces, rather than specific implementations, making them easier to extend, maintain, and test.
 
 ## Easily tested with automated tests
 
-ASP.NET Core applications support unit testing, and their loose coupling and support for dependency injections makes it easy to swap infrastructure concerns with fake implementations for test purposes. ASP.NET Core also ships a TestServer that can be used to host apps in memory. Functional tests can then make requests to this in-memory server, exercising the full application stack (including middleware, routing, model binding, filters, etc.) and receiving a response, all in a fraction of the time it would take to host the app on a real server and make requests through the network layer. These tests are especially easy to write, and valuable, for APIs, which are increasingly important in modern web applications.
+ASP.NET Core applications support unit testing, and their loose coupling and support for dependency injection makes it easy to swap infrastructure concerns with fake implementations for test purposes. ASP.NET Core also ships a TestServer that can be used to host apps in memory. Functional tests can then make requests to this in-memory server, exercising the full application stack (including middleware, routing, model binding, filters, etc.) and receiving a response, all in a fraction of the time it would take to host the app on a real server and make requests through the network layer. These tests are especially easy to write, and valuable, for APIs, which are increasingly important in modern web applications.
 
 ## Traditional and SPA behaviors supported
 
-Traditional web applications have involved little client-side behavior, but instead have relied on the server for all navigation, queries, and updates the app might need to make. Each new operation made by the user would be translated into a new web request, with the result being a full page reload in the end user's browser. Classic Model-View-Controller (MVC) frameworks typically follow this approach, with each new request corresponding to a different controller action, which in turn would work with a model and return a view. Some individual operations on a given page might be enhanced with AJAX (Asynchronous JavaScript and XML) functionality, but the overall architecture of the app used many different MVC views and URL endpoints.
+Traditional web applications have involved little client-side behavior, but instead have relied on the server for all navigation, queries, and updates the app might need to make. Each new operation made by the user would be translated into a new web request, with the result being a full page reload in the end user's browser. Classic Model-View-Controller (MVC) frameworks typically follow this approach, with each new request corresponding to a different controller action, which in turn would work with a model and return a view. Some individual operations on a given page might be enhanced with AJAX (Asynchronous JavaScript and XML) functionality, but the overall architecture of the app used many different MVC views and URL endpoints. In addition, ASP.NET Core MVC also supports Razor Pages, a simpler way to organize MVC-style pages.
 
-Single Page Applications (SPAs), by contrast, involve very few dynamically generated server-side page loads (if any). Many SPAs are initialized within a static HTML file which loads the necessary JavaScript libraries to start and run the app. These apps make heavy usage of web APIs for their data needs, and can provide much richer user experiences.
+Single Page Applications (SPAs), by contrast, involve very few dynamically generated server-side page loads (if any). Many SPAs are initialized within a static HTML file that loads the necessary JavaScript libraries to start and run the app. These apps make heavy usage of web APIs for their data needs and can provide much richer user experiences.
 
-Many web applications involve a combination of traditional web application behavior (typically for content) and SPAs (for interactivity). ASP.NET Core supports both MVC (Views and/or Razor Pages) and web APIs in the same application, using the same set of tools and underlying framework libraries.
+Many web applications involve a combination of traditional web application behavior (typically for content) and SPAs (for interactivity). ASP.NET Core supports both MVC (Views or Page based) and web APIs in the same application, using the same set of tools and underlying framework libraries.
 
 ## Simple development and deployment
 

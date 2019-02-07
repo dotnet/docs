@@ -24,14 +24,14 @@ In the following example, the <xref:System.IO.StreamReader> statement opens a fi
  [!code-csharp[CatchException#3](../../../samples/snippets/csharp/VS_Snippets_CLR/CatchException/CS/catchexception2.cs#3)]
  [!code-vb[CatchException#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CatchException/VB/catchexception2.vb#3)]  
 
-The Common Language Runtime (CLR) will catch exceptions missed by `catch` blocks. If an exception is caught, one of the following results may occur depending on your CLR configuration:
+The Common Language Runtime (CLR) will catch exceptions missed by `catch` blocks. If an exception is caught by the CLR, one of the following results may occur depending on your CLR configuration:
 
 - a **Debug** dialog box will appear
 - the program will stop execution and a dialog box with exception information will appear
 - an error will print out to STDERR
 
 > [!NOTE]
-> Most code can cause an exception and some exceptions are thrown by the CLR itself, like <xref:System.OutOfMemoryException>. While applications aren't required to deal with these exceptions, be aware of the possibility when writing libraries to be used by others. For suggestions on when to set code in a `try` block, see [Best Practices for Exceptions](best-practices-for-exceptions.md).
+> Most code can cause an exception and some exceptions, like <xref:System.OutOfMemoryException>, are thrown by the CLR itself. While applications aren't required to deal with these exceptions, be aware of the possibility when writing libraries to be used by others. For suggestions on when to set code in a `try` block, see [Best Practices for Exceptions](best-practices-for-exceptions.md).
 
 ## See also
 

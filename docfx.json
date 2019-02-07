@@ -59,15 +59,15 @@
     },
     "fileMetadata": {
       "author": {
-        "api/Microsoft.SqlServer**.yml": "douglaslMS",
-        "api/System.Data**.yml": "douglaslMS",
+        "api/Microsoft.SqlServer**.yml": "stevestein",
+        "api/System.Data**.yml": "stevestein",
         "api/System.Net**.yml": "karelz",
         "api/System.Web**.yml": "scottaddie",
         "api/Microsoft.VisualBasic**.yml": "KathleenDollard"
       },
       "ms.author": {
-        "api/Microsoft.SqlServer**.yml": "douglasl",
-        "api/System.Data**.yml": "douglasl",
+        "api/Microsoft.SqlServer**.yml": "sstein",
+        "api/System.Data**.yml": "sstein",
         "api/System.Net**.yml": "ncldev",
         "api/Microsoft.VisualBasic**.yml": "kdollard"
       },
@@ -135,6 +135,8 @@
         "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
       },
       "feedback_system": {
+        "api/Microsoft.SqlServer**.yml": "None",
+        "api/System.Data**.yml": "None",
         "api/System.Web**.yml": "None"
       }
     },

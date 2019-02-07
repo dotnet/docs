@@ -14,3 +14,8 @@
 # In each subsection folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
+/xml/Microsoft.SqlServer**/** @stevestein
+/xml/Microsoft.VisualBasic**/** @KathleenDollard
+/xml/System.Data**/** @stevestein
+/xml/System.Net**/** @karelz
+/xml/System.Web**/** @scottaddie

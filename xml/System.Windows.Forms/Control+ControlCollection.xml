@@ -354,9 +354,9 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="dest">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="dest">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <paramref name="dest" /> at which to begin copying.</param>
+        <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -379,8 +379,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the number of elements contained in the collection.</summary>
+        <value>The number of elements contained in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -404,8 +404,8 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Specifies whether the current collection object and the specified object are equal.</summary>
+        <returns><see langword="true" /> if this instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,8 +578,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -672,8 +672,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a value that indicates whether this collection object is read-only.</summary>
+        <value><see langref="true" /> if the current instance is read-only; otherwise, <see langref="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

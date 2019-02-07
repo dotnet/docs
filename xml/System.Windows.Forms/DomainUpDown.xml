@@ -329,9 +329,9 @@
         <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
+        <param name="source">An object that contains the event data.</param>
         <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

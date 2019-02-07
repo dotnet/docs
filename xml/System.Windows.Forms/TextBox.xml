@@ -465,8 +465,8 @@
         <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the default Input Method Editor (IME) mode supported by the control.</summary>
+        <value>The default IME mode supported by the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,8 +783,8 @@
         <Parameter Name="mevent" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
-        <param name="mevent">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="mevent">An object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event. </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1042,8 +1042,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the number of characters selected in the editable portion of the text box.</summary>
+        <value>The number of characters selected in the text box.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

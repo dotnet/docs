@@ -629,8 +629,8 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background image displayed in this <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+        <value>The image to display in the background of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -658,7 +658,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ListView.BackgroundImage" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3857,8 +3857,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An object that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

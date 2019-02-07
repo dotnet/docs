@@ -153,8 +153,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the background color for this <see cref="T:System.Windows.Forms.ProgressBar" /> control.</summary>
+        <value>The background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.BackColor" /> property. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,7 +182,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ProgressBar.BackColor" /> property changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -717,8 +717,8 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the foreground color of the control.</summary>
+        <value>The foreground color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultForeColor" /> property. </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -746,7 +746,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ProgressBar.ForeColor" /> property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1597,8 +1597,8 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a value that indicates whether the control's elements are aligned to support locales using right-to-left fonts.</summary>
+        <value>An enumeration value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1626,7 +1626,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.ProgressBar.RightToLeft" /> property value changes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

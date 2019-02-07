@@ -2422,7 +2422,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Applies the <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2X" /> and <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2Y" /> specified to scaling the arrow icon, if scaling is required based on the DPI settings of the computer.</summary>
+        <summary>Applies the <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2X" /> and <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2Y" /> values to scaling the arrow icon, if scaling is required based on the DPI settings of the computer.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2446,12 +2446,12 @@
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value to use for scaling.</param>
-        <summary>Applies the <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2X" /> and <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2Y" /> specified to scaling the arrow icon based on the specified DPI value.</summary>
+        <summary>Applies the <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2X" /> and <see cref="F:System.Windows.Forms.ToolStripRenderer.Offset2Y" /> values to scaling the arrow icon based on the specified DPI value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
 
-The `ScaleArrowOffsetsIfNeeded` method is invoked only when an application opts into [per-monitor version 2](~/docs/framework/whats-new/whats-new-in-accessibility.md#accessibility-switches), targets .NET Framework 4.7.1 or later, and has the `EnableDpiChangedMessageHandling` and `EnableDpiChangedHighDpiImprovements` configuration switches turned on. 
-        
+This overload of the `ScaleArrowOffsetsIfNeeded` method should be called in a derived class only when  when an application opts into [per-monitor version 2](~/docs/framework/whats-new/whats-new-in-accessibility.md#accessibility-switches), targets .NET Framework 4.7.1 or later, and has the `EnableDpiChangedMessageHandling` and `EnableDpiChangedHighDpiImprovements` configuration switches turned on. It informs the <xref:System.Windows.Forms.ToolStripRenderer> about the new DPI and allows the offsets for rendering arrows in the right dimensions to be calculated.    
+
          ]]></format>
         </remarks>
       </Docs>

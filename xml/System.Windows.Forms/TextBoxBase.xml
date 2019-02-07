@@ -1879,8 +1879,8 @@
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An object that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TextBoxBase.AutoSizeChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

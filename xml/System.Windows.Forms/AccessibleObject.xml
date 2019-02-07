@@ -391,7 +391,7 @@
       </Parameters>
       <Docs>
         <param name="flagsSelect">A bitwise combination of the <see cref="T:System.Windows.Forms.AccessibleSelection" /> values.</param>
-        <param name="childID">The ID number of the accessible object on which to perform the selection. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <param name="childID">The ID number of the accessible object on which to change the selection. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
         <summary>Modifies the selection or moves the keyboard focus of the accessible object. For a description of this member, see <see cref="M:Accessibility.IAccessible.accSelect(System.Int32,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -478,9 +478,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the child object to retrieve.</param>
+        <summary>Retrieves a specified child object.</summary>
+        <returns>The specified child object, if it exists, or <see langword="null" /> if it does not exist.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -507,9 +507,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object for which to get the default action. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Returns a string that indicates the specified object's default action.</summary>
+        <returns>A string that indicates the default action of <paramref name="childID" />, or <see langword="name" /> if <paramref name="childID" /> has no default action.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -536,9 +536,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object for which to get a description. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Returns a string that describes the visual appearance of the specified accessible object.</summary>
+        <returns>A localized string that describes the specified accessible object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -565,9 +565,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object for which to get help information. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Retrieves the full path of the WinHelp file that is associated with the specified accessible object.</summary>
+        <returns>The full path of the WinHelp file that is associated with <paramref name="childID" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -595,10 +595,10 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="pszHelpFile">To be added.</param>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pszHelpFile">When the method returns, the full path of the WinHelp file associated with the specified object.</param>
+        <param name="childID">The ID number of the accessible object for which to retrieve a help topic. This parameter is 0 to select the object, or a child ID to select one of the object's child objects..</param>
+        <summary>Retrives the full path of a WinHelp file that is associated with the specified object along with the identifier of a specific topic in the file.</summary>
+        <returns>The identifier of a specific topic in <paramref name="pszHelpFile" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -630,9 +630,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object for which to get a keyboard shortcut. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Retrieves the specified object's keyboard shortcut or access key. </summary>
+        <returns>A localized string that identifies the keyboard shortcut, or <see langword="null" /> if no keyboard shortcut is associated with the specified object. </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,9 +664,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object whose name is to be retrieved. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Retrieves the name of the specified object.</summary>
+        <returns>The name of the specified object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -693,9 +693,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object for which to get role information. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Retrieves information that describes the role of the specified object.</summary>
+        <returns>TAn object that provides role information about the specified accessible object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,9 +722,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object for which to get state information. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Retrieves the current state of the specified accessible object.</summary>
+        <returns>An object that describes the current state of the specified accessible object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -751,9 +751,9 @@
         <Parameter Name="childID" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="childID">The ID number of the accessible object whose value is to be retrieved. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <summary>Retrieves the value of the specified accessible object. Not all objects have a value. </summary>
+        <returns>The value of <paramref name="childID" />, or <see langword="null" /> if the object has no value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -781,9 +781,9 @@
         <Parameter Name="newName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <param name="newName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="childID">The ID number of the accessible object to which to assign a new name. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <param name="newName">The new name to assign to <paramref name="childID" />.</param>
+        <summary>Assigns a new name to the specified accessible object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -811,9 +811,9 @@
         <Parameter Name="newValue" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="childID">To be added.</param>
-        <param name="newValue">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="childID">The ID number of the accessible object to which to assign a new value. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
+        <param name="newValue">The new value to assign to the specified accessible object.</param>
+        <summary>Assigns a new value to the specified accessible object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

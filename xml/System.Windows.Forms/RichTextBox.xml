@@ -722,7 +722,7 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Occurs when the user double-clicks the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1393,9 +1393,9 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <Parameter Name="pt" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="pt">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="pt">The location to search.</param>
+        <summary>Retrieves the character nearest to the specified location.</summary>
+        <returns>The character at the specified location.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2363,8 +2363,8 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.SystemColorsChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2387,8 +2387,8 @@ The <paramref name="end" /> parameter was less the <paramref name="start" /> par
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="e">An object that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

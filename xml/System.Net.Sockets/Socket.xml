@@ -182,7 +182,7 @@
  The `socketType` parameter specifies the type of the <xref:System.Net.Sockets.Socket> class and the `protocolType` parameter specifies the protocol used by <xref:System.Net.Sockets.Socket>. The two parameters are not independent. Often the <xref:System.Net.Sockets.Socket> type is implicit in the protocol. If the combination of <xref:System.Net.Sockets.Socket> type and protocol type results in an invalid <xref:System.Net.Sockets.Socket>, this constructor throws a <xref:System.Net.Sockets.SocketException>.  
   
 > [!NOTE]
->  If this constructor throws a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
+>  If this constructor throws a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=nameWithType> property to obtain the specific error code. After you have obtained this code, refer to the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation for a detailed description of the error.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  

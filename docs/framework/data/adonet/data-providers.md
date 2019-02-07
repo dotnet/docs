@@ -18,7 +18,7 @@ A [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider 
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for ODBC|For data sources exposed by using ODBC. Uses the <xref:System.Data.Odbc> namespace.|  
 |[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle|For Oracle data sources. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for Oracle supports Oracle client software version 8.1.7 and later, and uses the <xref:System.Data.OracleClient> namespace.|  
 |EntityClient Provider|Provides data access for Entity Data Model (EDM) applications. Uses the <xref:System.Data.EntityClient> namespace.|  
-|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server Compact 4.0.|Provides data access for Microsoft SQL Server Compact 4.0. Uses the [System.Data.SqlServerCe](https://msdn.microsoft.com/library/system.data.sqlserverce.aspx) namespace.|  
+|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server Compact 4.0.|Provides data access for Microsoft SQL Server Compact 4.0. Uses the [System.Data.SqlServerCe](https://docs.microsoft.com/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) namespace.|  
   
 ## Core Objects of .NET Framework Data Providers  
  The following table outlines the four core objects that make up a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data provider.  

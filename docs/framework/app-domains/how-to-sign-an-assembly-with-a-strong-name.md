@@ -37,6 +37,9 @@ There are a number of ways to sign an assembly with a strong name:
   
 4.  In the **Choose a strong name key file** box, choose **\<Browse…>**, and then navigate to the key file. To create a new key file, choose **\<New…>** and enter its name in the **Create Strong Name Key** dialog box.  
   
+> [!NOTE]
+>  In order to [delay sign an assembly](../../../docs/framework/app-domains/delay-sign-assembly.md), choose a public key file.  
+  
 ### To create and sign an assembly with a strong name by using the Assembly Linker  
   
 -   At the [Developer Command Prompt for Visual Studio](../../../docs/framework/tools/developer-command-prompt-for-vs.md), type the following command:  

@@ -71,7 +71,7 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
  For more information, see [Binding Objects to Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).  
   
  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source controls.  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [Entity Framework Data Source Control](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
+ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [EntityDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
   
 ## Other Considerations  
  The following are considerations that may apply when you migrate specific types of applications to the Entity Framework.  

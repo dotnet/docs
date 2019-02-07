@@ -14,7 +14,7 @@ There are two ways to specify an assembly's location:
   
 -   Using the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element.  
   
- You can also use the [.NET Framework Configuration Tool (Mscorcfg.msc)](https://msdn.microsoft.com/library/a7106c52-68da-490e-b129-971b2c743764) to specify assembly locations or specify locations for the common language runtime to probe for assemblies.  
+ You can also use the [.NET Framework Configuration Tool (Mscorcfg.msc)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) to specify assembly locations or specify locations for the common language runtime to probe for assemblies.  
   
 ## Using the \<codeBase> Element  
  You can use the **\<codeBase>** element only in machine configuration or publisher policy files that also redirect the assembly version. When the runtime determines which assembly version to use, it applies the code base setting from the file that determines the version. If no code base is indicated, the runtime probes for the assembly in the normal way. For details, see [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md).  
@@ -63,4 +63,4 @@ There are two ways to specify an assembly's location:
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
 - [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
 - [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Configuring .NET Framework Apps](https://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+- [Configuring Apps by using Configuration Files](index.md)

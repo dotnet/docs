@@ -46,7 +46,7 @@ The .NET Framework, through configuration files, gives developers and administra
 ```  
   
 ## Machine Configuration Files  
- The machine configuration file, Machine.config, contains settings that apply to an entire computer. This file is located in the %*runtime install path*%\Config directory. Machine.config contains configuration settings for machine-wide assembly binding, built-in [remoting channels](https://msdn.microsoft.com/library/6e9b60e0-9bc0-47b4-a8ef-3b78585f9a18), and ASP.NET.  
+ The machine configuration file, Machine.config, contains settings that apply to an entire computer. This file is located in the %*runtime install path*%\Config directory. Machine.config contains configuration settings for machine-wide assembly binding, built-in [remoting channels](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkfd3wha(v=vs.100)), and ASP.NET.  
   
  The configuration system first looks in the machine configuration file for the [**\<appSettings>** element](~/docs/framework/configure-apps/file-schema/appsettings/index.md) and other configuration sections that a developer might define. It then looks in the application configuration file. To keep the machine configuration file manageable, it is best to put these settings in the application configuration file. However, putting the settings in the machine configuration file can make your system more maintainable. For example, if you have a third-party component that both your client and server application uses, it is easier to put the settings for that component in one place. In this case, the machine configuration file is the appropriate place for the settings, so you don't have the same settings in two different files.  
   
@@ -70,7 +70,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
 -   ASP.NET-hosted app.  
   
-     For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](https://msdn.microsoft.com/library/116608f3-c03d-4413-9fc7-978703e18b0f(v=vs.100))  
+     For more information about ASP.NET configuration files, see [ASP.NET Configuration Settings](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b5ysx397(v=vs.100)).
   
 -   Internet Explorer-hosted app.  
   
@@ -117,9 +117,7 @@ The .NET Framework, through configuration files, gives developers and administra
 - [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
 - [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)
 - [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)
-- [Registering Remote Objects Using Configuration Files](https://msdn.microsoft.com/library/bc503ee1-c811-4f82-9525-470343326adc)
-- [ASP.NET Web Site Administration](https://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e)
-- [NIB: Security Policy Management](https://msdn.microsoft.com/library/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)
+- [ASP.NET Web Site Administration](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6hy1xzbw(v=vs.90))
+- [Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))
 - [Caspol.exe (Code Access Security Policy Tool)](../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)
 - [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
-- [Remote Objects](https://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58)

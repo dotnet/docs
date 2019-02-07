@@ -414,25 +414,22 @@ docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.
 
-#### Note
-
+```markdown
 > [!NOTE]
-> This is a NOTE
-
-#### Warning
-
-> [!WARNING]
-> This is a WARNING
-
-#### Tip
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
-
-#### Important
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
+```
 
 And they'll render like this:
 ![Alert styles](../images/alerts.png)

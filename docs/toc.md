@@ -1189,7 +1189,7 @@
 ## [Tutorials](machine-learning/tutorials/index.md)
 ### [Sentiment analysis (binary classification)](machine-learning/tutorials/sentiment-analysis.md)
 ### [Issue classification (multiclass classification)](machine-learning/tutorials/github-issue-classification.md)
-### [Taxi fare predictor (regression)](machine-learning/tutorials/taxi-fare.md)
+### [Price prediction (regression)](machine-learning/tutorials/taxi-fare.md)
 ### [Iris flowers (clustering)](machine-learning/tutorials/iris-clustering.md)
 ## [How-to guides](machine-learning/how-to-guides/index.md)
 ### Prepare data
@@ -1200,7 +1200,7 @@
 #### [Load data from text file](machine-learning/how-to-guides/load-data-from-text-file-ml-net.MD)
 #### [Preprocess data with normalizers](machine-learning/how-to-guides/normalizers-preprocess-data-ml-net.md)
 ### Train, evaluate, and explain the model
-#### [Train model with data not in a text file](machine-learning/how-to-guides/load-non-file-training-data-ml-net.md)
+#### [Train model with real-time data sources](machine-learning/how-to-guides/load-non-file-training-data-ml-net.md)
 #### [Train model using cross-validation](machine-learning/how-to-guides/train-cross-validation-ml-net.md)
 #### [Inspect intermediate pipeline data values](machine-learning/how-to-guides/inspect-intermediate-data-ml-net.md)
 #### [Train regression model](machine-learning/how-to-guides/train-regression-model-ml-net.md)

@@ -12,7 +12,7 @@ This section describes the .NET Framework Data Provider for SQL Server (SqlClien
  To use SqlClient, assign the string "System.Data.SqlClient" to the `Provider` attribute of the `Schema` element.  
   
 ## ProviderManifestToken Schema Attribute  
- `ProviderManifestToken` is a required attribute of the `Schema` element in SSDL. This token is used to load the provider manifest for offline scenarios. For more information about `ProviderManifestToken` attribute, see [Schema Element (SSDL)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb387166(v=vs.100)).  
+ `ProviderManifestToken` is a required attribute of the `Schema` element in SSDL. This token is used to load the provider manifest for offline scenarios. For more information about `ProviderManifestToken` attribute, see [Schema Element (SSDL)](/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec#schema-element-ssdl).  
   
  SqlClient can be used as a data provider for different versions of SQL Server. These versions have different capabilities. For example, [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)] does not support `varchar(max)` and `nvarchar(max)` types that were introduced with [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)].  
   

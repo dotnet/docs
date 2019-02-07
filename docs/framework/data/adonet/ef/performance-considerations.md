@@ -118,7 +118,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
  You can improve the overall performance of queries in the Entity Framework by using the following strategies.  
   
 #### Pre-generate views  
- Generating views based on an entity model is a significant cost the first time that an application executes a query. Use the EdmGen.exe utility to pre-generate views as a Visual Basic or C# code file that can be added to the project during design. You could also use the Text Template Transformation Toolkit to generate pre-compiled views. Pre-generated views are validated at runtime to ensure that they are consistent with the current version of the specified entity model. For more information, see [How to: Pre-Generate Views to Improve Query Performance](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100)) and [Isolating Performance with Precompiled/Pre-generated Views in the Entity Framework 4](https://go.microsoft.com/fwlink/?LinkID=201337&clcid=0x409).  
+ Generating views based on an entity model is a significant cost the first time that an application executes a query. Use the EdmGen.exe utility to pre-generate views as a Visual Basic or C# code file that can be added to the project during design. You could also use the Text Template Transformation Toolkit to generate pre-compiled views. Pre-generated views are validated at runtime to ensure that they are consistent with the current version of the specified entity model. For more information, see [How to: Pre-Generate Views to Improve Query Performance](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100)).
   
  When working with very large models, the following consideration applies:  
   

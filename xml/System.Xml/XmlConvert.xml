@@ -150,14 +150,14 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
  The names are decoded using the following rules:  
   
--   Names are decoded from left to right.  
+- Names are decoded from left to right.  
   
--   Any sequence _x `HHHH_` (where HHHH stands for a valid, four digit hexadecimal UCS-2 code) that has not been decoded is transformed into the corresponding Unicode 2.1 (Unicode 3.0 if supported by the application) character.  
+- Any sequence \_x*HHHH*\_ (where HHHH stands for a valid, four-digit hexadecimal UCS-2 code) that has not been decoded is transformed into the corresponding Unicode 2.1 (Unicode 3.0 if supported by the application) character.  
   
--   No shortforms are recognized. They are passed on without translation. For example, _x20\_ or __ are not decoded.  
+- No shortforms are recognized. They are passed on without translation. For example, \_x20\_ or \_\_ are not decoded.
   
 > [!NOTE]
->  The actual encoding of the character is application-specific. For example, Order_x0020_Details becomes Order Details. Even escaped characters that are invalid in XML names will be recognized and decoded.  
+> The actual encoding of the character is application-specific. For example, Order\_x0020\_Details becomes Order Details. Even escaped characters that are invalid in XML names will be recognized and decoded.  
   
    
   
@@ -220,9 +220,9 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
  This method is similar to the <xref:System.Xml.XmlConvert.EncodeName%2A> method except that it encodes the colon character, which guarantees that the name can be used as the local name part of a namespace qualified name.  
   
- For example, if you passed this method the invalid name a:b, it returns a_x003a_b, which is a valid local name.  
+ For example, if you passed this method the invalid name a:b, it returns a\_x003a\_b, which is a valid local name.  
   
- If `name` is `null` or `String.Empty` then you get the same value returned.  
+ If `name` is `null` or <xref:System.String.Empty?displayProperty=fullName>, the method returns the same value.  
   
    
   
@@ -287,9 +287,9 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
 ## Remarks  
  This method translates invalid characters, such as spaces or half-width Katakana, that need to be mapped to XML names without the support or presence of schemas. The invalid characters are translated into escaped numeric entity encodings.  
   
- The escape character is "_". Any XML name character that does not conform to the [XML 1.0 spec (fourth edition) recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/) is escaped as _xHHHH\_. The HHHH string stands for the four-digit hexadecimal UCS-2 code for the character in most significant bit first order. For example, the name Order Details is encoded as Order_x0020_Details.  
+ The escape character is "\_". Any XML name character that does not conform to the [XML 1.0 spec (fourth edition) recommendation](https://www.w3.org/TR/2006/REC-xml-20060816/) is escaped as \_xHHHH\_. The HHHH string stands for the four-digit hexadecimal UCS-2 code for the character in most significant bit first order. For example, the name Order Details is encoded as Order\_x0020\_Details.  
   
- The underscore character does not need to be escaped unless it is followed by a character sequence that together with the underscore can be misinterpreted as an escape sequence when decoding the name. For example, Order_Details is not encoded, but Order_x0020_ is encoded as Order_x005f_x0020_. No shortforms are allowed. For example, the forms _x20\_ and __ are not generated.  
+ The underscore character does not need to be escaped unless it is followed by a character sequence that together with the underscore can be misinterpreted as an escape sequence when decoding the name. For example, Order\_Details is not encoded, but Order\_x0020\_ is encoded as Order\_x005f\_x0020\_. No shortforms are allowed. For example, the forms _x20\_ and \_\_ are not generated.  
   
  This method guarantees the name is valid according to the XML specification. It allows colons in any position, which means the name may still be invalid according to the [W3C Namespace Specification](https://www.w3.org/TR/REC-xml-names/). To guarantee it is a valid namespace qualified name use <xref:System.Xml.XmlConvert.EncodeLocalName%2A> for the prefix and local name parts and join the result with a colon.  
   
@@ -354,7 +354,7 @@ writer.WriteElementString(XmlConvert.EncodeName("Order Detail"),"My order");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method guarantees that the name is valid according to the XML specification. For example, if you passed this method the invalid name 70+, it returns 70_x002b_ which is a valid XML name.  
+ This method guarantees that the name is valid according to the XML specification. For example, if you passed this method the invalid name 70+, it returns 70\_x002b\_ which is a valid XML name.  
   
  If `name` is `null` or String.Empty then you get the same value returned.  
   

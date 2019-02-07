@@ -320,13 +320,13 @@
 ## Remarks  
  A Destination Unreachable message can be sent to the computer that is the source of a packet for any of the following reasons:  
   
--   The computer cannot find a route to the destination address.  
+- The computer cannot find a route to the destination address.  
   
--   Communication with the destination address is administratively prohibited. For example, a firewall prevents delivery of packets to the destination.  
+- Communication with the destination address is administratively prohibited. For example, a firewall prevents delivery of packets to the destination.  
   
--   The destination address is unreachable.  
+- The destination address is unreachable.  
   
--   The destination port is unreachable. For example, there is no listener available for the packet's protocol.  
+- The destination port is unreachable. For example, there is no listener available for the packet's protocol.  
   
    
   
@@ -377,17 +377,13 @@
 ## Remarks  
  A Destination Unreachable message can be sent to the computer that is the source of a packet for any of the following reasons:  
   
--   The computer cannot find a route to the destination address.  
+- The computer cannot find a route to the destination address.  
   
--   Communication with the destination address is administratively prohibited. For example, a firewall prevents delivery of packets to the destination.  
+- Communication with the destination address is administratively prohibited. For example, a firewall prevents delivery of packets to the destination.  
   
--   The destination address is unreachable.  
+- The destination address is unreachable.  
   
--   The destination port is unreachable. For example, there is no listener available for the packet's protocol.  
-  
--  
-  
-   
+- The destination port is unreachable. For example, there is no listener available for the packet's protocol.   
   
 ## Examples  
  The following example displays the value of this property.  

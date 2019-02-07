@@ -2078,8 +2078,26 @@
   
  For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
-   
+## Notes to inheritors
+
+Inheriting from a standard Windows Forms control and changing the `StandardClick` or `StandardDoubleClick` values of <xref:System.Windows.Forms.ControlStyles> to `true` can cause unexpected behavior or have no effect at all if the control does not support the <xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.DoubleClick> events.
   
+The following table lists Windows Forms controls and which event (<xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.DoubleClick>) is raised in response to the mouse action specified.
+
+| Control | Left Mouse Click | Left Mouse Double Click | Right Mouse Click | Right Mouse Double Click | Middle Mouse Click | Middle Mouse Double Click | XButton1 Mouse Click | XButton1 Mouse Double-Click | XButton2 Mouse Click | XButton2 Mouse Double-Click | 
+| ------- | ---------------- | ----------------------- | ----------------- | ------------------------ | ------------------ | ------------------------- | -------------------- | --------------------------- | -------------------- | --------------------------- |
+| <xref:System.Windows.Forms.MonthCalendar>, <xref:System.Windows.Forms.DateTimePicker>, <xref:System.Windows.Forms.HScrollBar>, <xref:System.Windows.Forms.VScrollBar> | none | none | none | none | none | none | none | none | none | none |
+| <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.RichTextBox>, <xref:System.Windows.Forms.RadioButton> | Click | Click, Click | none | none | none | none | none | none | none | none |
+| <xref:System.Windows.Forms.ListBox>, <xref:System.Windows.Forms.CheckedListBox>, <xref:System.Windows.Forms.ComboBox> | Click | Click, DoubleClick | none | none | none | none | none | none | none | none |
+| <xref:System.Windows.Forms.TextBox>, <xref:System.Windows.Forms.DomainUpDown>, <xref:System.Windows.Forms.NumericUpDown> | Click | Click, DoubleClick | none | none | none | none | none | none | none | none |
+| \* <xref:System.Windows.Forms.TreeView>, \* <xref:System.Windows.Forms.ListView> | Click | Click, DoubleClick | Click | Click, DoubleClick | none | none | none | none | none | none |
+| <xref:System.Windows.Forms.ProgressBar>, <xref:System.Windows.Forms.TrackBar> | Click | Click, Click | Click | Click, Click | Click | Click, Click | Click | Click, Click | Click | Click, Click |
+| <xref:System.Windows.Forms.Form>, <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.Label>, <xref:System.Windows.Forms.LinkLabel>, <xref:System.Windows.Forms.Panel>, <xref:System.Windows.Forms.GroupBox>, <xref:System.Windows.Forms.PictureBox>, <xref:System.Windows.Forms.Splitter>, <xref:System.Windows.Forms.StatusBar>, <xref:System.Windows.Forms.ToolBar>, <xref:System.Windows.Forms.TabPage>, \*\* <xref:System.Windows.Forms.TabControl> | Click | Click, DoubleClick | Click | Click, DoubleClick | Click | Click, DoubleClick | Click | Click, DoubleClick | Click | Click, DoubleClick |
+
+\* The mouse pointer must be over a child object (<xref:System.Windows.Forms.TreeNode> or <xref:System.Windows.Forms.ListViewItem>).  
+  
+ ** The <xref:System.Windows.Forms.TabControl> must have at least one <xref:System.Windows.Forms.TabPage> in its <xref:System.Windows.Forms.TabControl.TabPages> collection.
+
 ## Examples  
  The following code example shows the <xref:System.Windows.Forms.Control.Click> event in an event handler.  
   
@@ -2089,225 +2107,6 @@
   
  ]]></format>
         </remarks>
-        <block subset="none" type="overrides">
-          <para>Inheriting from a standard Windows Forms control and changing the <see langword="StandardClick" /> or <see langword="StandardDoubleClick" /> values of <see cref="T:System.Windows.Forms.ControlStyles" /> to <see langword="true" /> can cause unexpected behavior or have no effect at all if the control does not support the <see cref="E:System.Windows.Forms.Control.Click" /> or <see cref="E:System.Windows.Forms.Control.DoubleClick" /> events.  
-  
- The following table lists Windows Forms controls and which event (<see cref="E:System.Windows.Forms.Control.Click" /> or <see cref="E:System.Windows.Forms.Control.DoubleClick" />) is raised in response to the mouse action specified.  
-  
- <list type="table"><listheader><term> Control  
-  
- </term><description> Left Mouse Click  
-  
- </description><description> Left Mouse Double Click  
-  
- </description><description> Right Mouse Click  
-  
- </description><description> Right Mouse Double Click  
-  
- </description><description> Middle Mouse Click  
-  
- </description><description> Middle Mouse Double Click  
-  
- </description><description> XButton1 Mouse Click  
-  
- </description><description> XButton1 Mouse Double-Click  
-  
- </description><description> XButton2 Mouse Click  
-  
- </description><description> XButton2 Mouse Double-Click  
-  
- </description></listheader><item><term><see cref="T:System.Windows.Forms.MonthCalendar" />,  
-  
- <see cref="T:System.Windows.Forms.DateTimePicker" />,  
-  
- <see cref="T:System.Windows.Forms.HScrollBar" />,  
-  
- <see cref="T:System.Windows.Forms.VScrollBar" /></term><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description></item><item><term><see cref="T:System.Windows.Forms.Button" />,  
-  
- <see cref="T:System.Windows.Forms.CheckBox" />,  
-  
- <see cref="T:System.Windows.Forms.RichTextBox" />,  
-  
- <see cref="T:System.Windows.Forms.RadioButton" /></term><description> Click  
-  
- </description><description> Click, Click  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description></item><item><term><see cref="T:System.Windows.Forms.ListBox" />,  
-  
- <see cref="T:System.Windows.Forms.CheckedListBox" />,  
-  
- <see cref="T:System.Windows.Forms.ComboBox" /></term><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description></item><item><term><see cref="T:System.Windows.Forms.TextBox" />,  
-  
- <see cref="T:System.Windows.Forms.DomainUpDown" />,  
-  
- <see cref="T:System.Windows.Forms.NumericUpDown" /></term><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description></item><item><term> * <see cref="T:System.Windows.Forms.TreeView" />,  
-  
- \* <see cref="T:System.Windows.Forms.ListView" /></term><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description><description> none  
-  
- </description></item><item><term><see cref="T:System.Windows.Forms.ProgressBar" />,  
-  
- <see cref="T:System.Windows.Forms.TrackBar" /></term><description> Click  
-  
- </description><description> Click, Click  
-  
- </description><description> Click  
-  
- </description><description> Click, Click  
-  
- </description><description> Click  
-  
- </description><description> Click, Click  
-  
- </description><description> Click  
-  
- </description><description> Click, Click  
-  
- </description><description> Click  
-  
- </description><description> Click, Click  
-  
- </description></item><item><term><see cref="T:System.Windows.Forms.Form" />,  
-  
- <see cref="T:System.Windows.Forms.DataGrid" />,  
-  
- <see cref="T:System.Windows.Forms.Label" />,  
-  
- <see cref="T:System.Windows.Forms.LinkLabel" />,  
-  
- <see cref="T:System.Windows.Forms.Panel" />,  
-  
- <see cref="T:System.Windows.Forms.GroupBox" />,  
-  
- <see cref="T:System.Windows.Forms.PictureBox" />,  
-  
- <see cref="T:System.Windows.Forms.Splitter" />,  
-  
- <see cref="T:System.Windows.Forms.StatusBar" />,  
-  
- <see cref="T:System.Windows.Forms.ToolBar" />,  
-  
- <see cref="T:System.Windows.Forms.TabPage" />,  
-  
- ** <see cref="T:System.Windows.Forms.TabControl" /></term><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description><description> Click  
-  
- </description><description> Click, DoubleClick  
-  
- </description></item></list>  
-
- \* The mouse pointer must be over a child object (<see cref="T:System.Windows.Forms.TreeNode" /> or <see cref="T:System.Windows.Forms.ListViewItem" />).  
-  
- ** The <see cref="T:System.Windows.Forms.TabControl" /> must have at least one <see cref="T:System.Windows.Forms.TabPage" /> in its <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</para>
-        </block>
         <altmember cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" />
         <altmember cref="F:System.Windows.Forms.ControlStyles.StandardClick" />
         <altmember cref="E:System.Windows.Forms.Control.MouseClick" />

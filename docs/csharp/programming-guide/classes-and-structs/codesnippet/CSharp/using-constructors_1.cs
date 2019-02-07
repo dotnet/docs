@@ -1,9 +1,9 @@
     public class Taxi
     {
-        public bool isInitialized;
+        public bool IsInitialized;
         public Taxi()
         {
-            isInitialized = true;
+            IsInitialized = true;
         }
     }
 
@@ -12,6 +12,6 @@
         static void Main()
         {
             Taxi t = new Taxi();
-            Console.WriteLine(t.isInitialized);
+            Console.WriteLine(t.IsInitialized);
         }
     }

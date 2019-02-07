@@ -1,4 +1,4 @@
-                public Manager(int initialdata)
+                public Manager(int initialData)
                 {
                     //Add further instructions here.
                 }

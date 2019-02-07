@@ -1,14 +1,14 @@
         public class Employee
         {
-            public int salary;
+            public int Salary;
 
             public Employee(int annualSalary)
             {
-                salary = annualSalary;
+                Salary = annualSalary;
             }
 
             public Employee(int weeklySalary, int numberOfWeeks)
             {
-                salary = weeklySalary * numberOfWeeks;
+                Salary = weeklySalary * numberOfWeeks;
             }
         }

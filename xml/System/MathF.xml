@@ -15,8 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides constants and static methods for trigonometric, logarithmic, and other common mathematical functions.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The static fields and methods of the `MathF` class correspond to those of the <xref:System.Math> class, except that their parameters are of type <xref:System.Single> rather than <xref:System.Double>, and they return <xref:System.Single> rather than <xref:System.Double> values.
+
+         ]]></format>
+         </remarks>
+
   </Docs>
   <Members>
     <Member MemberName="Abs">
@@ -330,11 +337,11 @@
       </Docs>
     </Member>
     <Member MemberName="E">
-      <MemberSignature Language="C#" Value="public const float E = 2.718282;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal float32 E = (2.718282)" />
+      <MemberSignature Language="C#" Value="public const float E = 2.71828175;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float32 E = (2.71828175)" />
       <MemberSignature Language="DocId" Value="F:System.MathF.E" />
-      <MemberSignature Language="VB.NET" Value="Public Const E As Single  = 2.718282" />
-      <MemberSignature Language="C++ CLI" Value="public: float E = 2.718282;" />
+      <MemberSignature Language="VB.NET" Value="Public Const E As Single  = 2.71828175" />
+      <MemberSignature Language="C++ CLI" Value="public: float E = 2.71828175;" />
       <MemberSignature Language="F#" Value="val mutable E : single" Usage="System.MathF.E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
@@ -345,10 +352,16 @@
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
-      <MemberValue>2.718282</MemberValue>
+      <MemberValue>2.71828175</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the natural logarithmic base, specified by the constant, <see langword="e" />.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The value of this constant is 2.71828175.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Exp">
@@ -568,11 +581,11 @@
       </Docs>
     </Member>
     <Member MemberName="PI">
-      <MemberSignature Language="C#" Value="public const float PI = 3.141593;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal float32 PI = (3.141593)" />
+      <MemberSignature Language="C#" Value="public const float PI = 3.14159274;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal float32 PI = (3.14159274)" />
       <MemberSignature Language="DocId" Value="F:System.MathF.PI" />
-      <MemberSignature Language="VB.NET" Value="Public Const PI As Single  = 3.141593" />
-      <MemberSignature Language="C++ CLI" Value="public: float PI = 3.141593;" />
+      <MemberSignature Language="VB.NET" Value="Public Const PI As Single  = 3.14159274" />
+      <MemberSignature Language="C++ CLI" Value="public: float PI = 3.14159274;" />
       <MemberSignature Language="F#" Value="val mutable PI : single" Usage="System.MathF.PI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
@@ -583,10 +596,16 @@
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
-      <MemberValue>3.141593</MemberValue>
+      <MemberValue>3.14159274</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Represents the ratio of the circumference of a circle to its diameter, specified by the constant, π.</summary>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+The value of this field is 3.14159274.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pow">

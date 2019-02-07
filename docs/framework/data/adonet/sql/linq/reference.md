@@ -34,8 +34,8 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)  
  Provides a portal for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics.  
   
- [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)  
- [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)  
+ [Language-Integrated Query (LINQ) - C#](../../../../../csharp/programming-guide/concepts/linq/index.md)  
+ [Language-Integrated Query (LINQ) - Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides portals for [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] topics.  
   
  [LinqDataSource Technology Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  

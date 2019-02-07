@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides extension methods for <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -49,10 +49,10 @@
         <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+        <param name="source">The source <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
+        <param name="destination">The destination <see cref="T:System.Span`1" />.</param>
+        <summary>Copies the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to the specified <see cref="T:System.Span`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,11 +90,11 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+        <param name="source">The source <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
+        <param name="value">The item to find in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</param>
+        <summary>Returns the position of the first occurrence of <paramref name="item" /> in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
+        <returns>An object whose <see cref="M:System.SequencePosition.GetInteger" /> method returns the position of the first occurrence of <paramref name="item" />, or an object whose <see langword="Nullable&lt;SequencePosition&gt;.HasValue" /> property is <see langword="false" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,9 +127,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="sequence">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+        <param name="sequence">The read-only sequence to convert to an array.</param>
+        <summary>Converts the <see cref="T:System.Buffers.ReadOnlySequence`1" /> to an array.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,10 +158,10 @@
         <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="writer">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+        <param name="writer">The buffer writer to which to write <paramref name="value" />.</param>
+        <param name="value">The read-only span to be written to <paramref name="writer" />.</param>
+        <summary>Writes the contents of <paramref name="value" /> to <paramref name="writer" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

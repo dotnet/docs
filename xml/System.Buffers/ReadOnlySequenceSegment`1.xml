@@ -19,7 +19,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <summary>Represents a linked list of <see cref="T:System.ReadOnlyMemory`1" /> nodes.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,8 +58,8 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets a <see cref="T:System.ReadOnlyMemory`1" /> value for the current node.</summary>
+        <value>A <see cref="T:System.ReadOnlyMemory`1" /> value for the current node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,8 +80,8 @@
         <ReturnType>System.Buffers.ReadOnlySequenceSegment&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the next node.</summary>
+        <value>The next node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets or sets the sum of node lengths before the current node.</summary>
+        <value>The sum of node lengths before the current node.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

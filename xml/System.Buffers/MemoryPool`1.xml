@@ -22,8 +22,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the items in the memory pool.</typeparam>
+    <summary>Represents a pool of memory blocks.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Constructs a new instance of a memory pool.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,7 +66,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Frees all resources used by the memory pool.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see paramname="false" /> to release only unmanaged resources. </param>
+        <summary>Frees the unmanaged resources used by the memory pool and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,8 +112,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the maximum buffer size supported by this pool.</summary>
+        <value>The maximum buffer size supported by this pool.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,9 +136,9 @@
         <Parameter Name="minBufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="minBufferSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="minBufferSize">The minimum number of elements of <typeparamref name="T" /> that the memory pool can hold. A value of -1 returns a memory pool set to the default size for the pool.</param>
+        <summary>Returns a memory block capable of holding at least <paramref name="minBufferSize" /> elements of T.</summary>
+         <returns>A memory block capable of holding at least <paramref name="minBufferSize" /> elements of T.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,8 +159,8 @@
         <ReturnType>System.Buffers.MemoryPool&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets a singleton instance of a memory pool based on arrays.</summary>
+        <value>A singleton instance of a memory pool.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

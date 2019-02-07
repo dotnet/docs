@@ -18,7 +18,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Represents an enumerator over a <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -45,8 +45,8 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="sequence">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sequence">The <see cref="T:System.Buffers.ReadOnlySequence`1" /> to enumerate.</param>
+        <summary>Initializes the enumerator.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,7 +67,7 @@
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the current <see cref="T:System.ReadOnlyMemory`1" />.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,7 +90,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Moves to the next <see cref="T:System.ReadOnlyMemory`1" /> in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

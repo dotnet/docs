@@ -15,8 +15,8 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+    <summary>Represents a <typeparamref name="T" /> sink.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,8 +40,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="count">The number of data items written to the <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</param>
+        <summary>Notifies the <see cref="T:System.Buffers.IBufferWriter`1" /> that <paramref name="count" /> data items were written to the <see cref="T:System.Span`1" /> or <see cref="T:System.Memory`1" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,9 +64,9 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sizeHint">The size of the memory span requested. If 0, requests currently available memory. </param>
+        <summary>Requests a memory span that is at least <paramref name="sizeHint" /> in size if possible.</summary>
+        <returns>A memory span of size <paramref name="sizeHint" />, if it is available; otherwise, a memory span with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,9 +89,9 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="sizeHint">The size of the memory span requested. If 0, requests currently available memory. </param>
+        <summary>Requests a span that is at least <paramref name="sizeHint" /> in size if possible.</summary>
+        <returns>A span of size <paramref name="sizeHint" />, if it is available; otherwise, a memory span with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

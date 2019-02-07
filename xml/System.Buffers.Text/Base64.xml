@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Converts between binary data and UTF-8 encoded text that is represented in base 64.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,14 +42,27 @@
         <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="utf8">To be added.</param>
-        <param name="bytes">To be added.</param>
-        <param name="bytesConsumed">To be added.</param>
-        <param name="bytesWritten">To be added.</param>
-        <param name="isFinalBlock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="utf8">The input span that contains UTF-8 encoded text in base 64 that needs to be decoded.</param>
+        <param name="bytes">The output span that contains the result of the operation, that is, the decoded binary data.</param>
+        <param name="bytesConsumed">The number of input bytes consumed during the operation. This can be used to slice the input for subsequent calls, if necessary.</param>
+        <param name="bytesWritten">The number of bytes written into the output span. This can be used to slice the output for subsequent calls, if necessary.</param>
+        <param name="isFinalBlock"><see langword="true" /> (default) if the input span contains the entire data to decode. <see langword="false" /> if the input span contains partial data with more data to follow.</param>
+        <summary>Decodes the span of UTF-8 encoded text represented as base 64 into binary data. If the input is not a multiple of 4, it will decode as much as it can, to the closest multiple of 4.</summary>
+        <returns>One of the enumeration values that indicates the status of the decoding operation.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The return value can be as follows:
+
+- <xref:System.Buffers.OperationStatus.Done?displayProperty=nameWithType>: Processing of the entire input span succeeded.
+- <xref:System.Buffers.OperationStatus.DestinationTooSmall?displayProperty=nameWithType>: There is not enough space in the output span to write the decoded input.
+- <xref:System.Buffers.OperationStatus.NeedMoreData?displayProperty=nameWithType>: `isFinalBlock` is `false` and the input is not a multiple of 4. Otherwise, the partial input is considered <xref:System.Buffers.OperationStatus.InvalidData>.
+- <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType>: The input contains bytes outside of the expected base 64 range, has invalid or more than two padding characters, or is incomplete (that is, not a multiple of 4) and `isFinalBlock` is `true`.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DecodeFromUtf8InPlace">
@@ -73,11 +86,24 @@
         <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="bytesWritten">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The input span that contains the base-64 text data that needs to be decoded.</param>
+        <param name="bytesWritten">The number of bytes written into the buffer.</param>
+        <summary>Decodes the span of UTF-8 encoded text in base 64 (in-place) into binary data. The decoded binary output is smaller than the text data contained in the input (the operation deflates the data). If the input is not a multiple of 4, the method will not decode any data.</summary>
+        <returns>One of the enumeration values that indicates the status of the decoding operation.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The return value can be as follows:
+
+- <xref:System.Buffers.OperationStatus.Done?displayProperty=nameWithType>: Processing of the entire input span succeeded.
+- <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType>: The input contains bytes outside of the expected base 64 range, has invalid or more than two padding characters, or is incomplete (that is, not a multiple of 4).
+
+This method cannot return the <xref:System.Buffers.OperationStatus.DestinationTooSmall?displayProperty=nameWithType> and <xref:System.Buffers.OperationStatus.NeedMoreData?displayProperty=nameWithType> values.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EncodeToUtf8">
@@ -103,14 +129,29 @@
         <Parameter Name="isFinalBlock" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <param name="utf8">To be added.</param>
-        <param name="bytesConsumed">To be added.</param>
-        <param name="bytesWritten">To be added.</param>
-        <param name="isFinalBlock">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="bytes">The input span that contains binary data that needs to be encoded.</param>
+        <param name="utf8">The output span that contains the result of the operation, that is, the UTF-8 encoded text in base 64.</param>
+        <param name="bytesConsumed">The number of input bytes consumed during the operation. This can be used to slice the input for subsequent calls, if necessary.</param>
+        <param name="bytesWritten">The number of bytes written into the output span. This can be used to slice the output for subsequent calls, if necessary.</param>
+        <param name="isFinalBlock"><see langword="true" /> (the default) if the input span contains the entire data to encode. <see langword="false" /> if the input span contains partial data with more data to follow.</param>
+        <summary>Encodes the span of binary data into UTF-8 encoded text represented as base 64.</summary>
+        <returns>One of the enumeration values that indicates the status of the encoding operation.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The return value can be as follows:
+
+- <xref:System.Buffers.OperationStatus.Done?displayProperty=nameWithType>: Processing of the entire input span succeeded.
+- <xref:System.Buffers.OperationStatus.DestinationTooSmall?displayProperty=nameWithType>: There isn't enough space in the output span to fit the encoded input.
+- <xref:System.Buffers.OperationStatus.NeedMoreData?displayProperty=nameWithType>: `isFinalBlock` is `false`. Otherwise, if `isFinalBlock` is `true`, the output is padded if the input is not a multiple of 3.
+
+This method cannot return <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType> since that is not possible for base-64 encoding.
+
+ ]]></format>
+        </remarks>
+
       </Docs>
     </Member>
     <Member MemberName="EncodeToUtf8InPlace">
@@ -135,12 +176,25 @@
         <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="dataLength">To be added.</param>
-        <param name="bytesWritten">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="buffer">The input span that contains binary data that needs to be encoded. Because the method performs an in-place conversion, it needs to be large enough to store the result of the operation.</param>
+        <param name="dataLength">The number of bytes of binary data contained within the buffer that needs to be encoded. This value must be smaller than the buffer length.</param>
+        <param name="bytesWritten">The number of bytes written into the buffer.</param>
+        <summary>Encodes the span of binary data (in-place) into UTF-8 encoded text represented as base 64. The encoded text output is larger than the binary data contained in the input (the operation inflates the data).</summary>
+        <returns>One of the enumeration values that indicates the status of the encoding operation.</returns>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+The return value can be as follows:
+
+- <xref:System.Buffers.OperationStatus.Done?displayProperty=nameWithType>: Processing of the entire buffer succeeded.
+- <xref:System.Buffers.OperationStatus.DestinationTooSmall?displayProperty=nameWithType>: There isn't enough space in the buffer beyond `dataLength` to fit the result of encoding the input.
+
+This method cannot return <xref:System.Buffers.OperationStatus.NeedMoreData?displayProperty=nameWithType> and <xref:System.Buffers.OperationStatus.InvalidData?displayProperty=nameWithType>.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetMaxDecodedFromUtf8Length">
@@ -164,9 +218,11 @@
       </Parameters>
       <Docs>
         <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the maximum length (in bytes) of the result if you were to decode base-64 encoded text within a byte span of size <paramref name="length" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is less than 0.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMaxEncodedToUtf8Length">
@@ -190,9 +246,11 @@
       </Parameters>
       <Docs>
         <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Returns the maximum length (in bytes) of the result if you were to encode binary data within a byte span of size <paramref name="length" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="length" /> is less than 0 or larger than 1610612733 (since encode inflates the data by 4/3).</exception>
       </Docs>
     </Member>
   </Members>

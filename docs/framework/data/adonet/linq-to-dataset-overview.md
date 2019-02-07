@@ -24,5 +24,6 @@ The <xref:System.Data.DataSet> is one of the more widely used components of [!IN
   
 ## See also
 - [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
-- [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)
+- [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)
+- [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)
 - [LINQ to SQL](../../../../docs/framework/data/adonet/sql/linq/index.md)

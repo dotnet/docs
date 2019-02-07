@@ -2,7 +2,7 @@
 title: Port libraries to .NET Core
 description: Learn how to port library projects from the .NET Framework to .NET Core.
 author: cartermp
-ms.date: 07/14/2017
+ms.date: 12/7/2018
 ms.custom: seodec18
 ---
 # Port .NET Framework libraries to .NET Core
@@ -161,3 +161,6 @@ Ultimately, the porting effort depends heavily on how your .NET Framework code i
 1. Pick the next layer of code to port over and repeat the prior steps.
 
 If you start with the base of your library and move outward from the base and test each layer as needed, porting is a systematic process where problems are isolated to one layer of code at a time.
+
+>[!div class="step-by-step"]
+>[Next](project-structure.md)

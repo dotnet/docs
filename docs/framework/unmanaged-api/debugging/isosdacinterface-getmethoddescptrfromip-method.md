@@ -41,7 +41,7 @@ HRESULT GetMethodDescPtrFromIP(
 
 ## Remarks
 
-The provided method is part of the [`ISOSDacInterface` interface](isodacinterface-interface.md) and corresponds to the 21st slot of the virtual method table.
+The provided method is part of the [`ISOSDacInterface` interface](isosdacinterface-interface.md) and corresponds to the 21st slot of the virtual method table.
 
 ## Requirements
 

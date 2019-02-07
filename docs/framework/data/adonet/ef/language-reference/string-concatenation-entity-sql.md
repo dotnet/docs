@@ -30,4 +30,4 @@ expression + expression
   
 ## See also
 - [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Conceptual Model Types (CSDL)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399548(v=vs.100))
+- [Conceptual Model Types (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#conceptual-model-types-csdl)

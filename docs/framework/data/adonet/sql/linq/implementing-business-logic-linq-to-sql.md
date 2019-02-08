@@ -175,7 +175,7 @@ partial class Customer
   
  [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
- [Walkthrough: Adding Validation to Entity Classes](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
+ [Walkthrough: Adding Validation to Entity Classes](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb629301(v=vs.120))  
   
 ## See also
 - [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)

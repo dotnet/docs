@@ -25,5 +25,6 @@ By using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], yo
   
 ## See also
 - [LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/index.md)
-- [Introduction to LINQ](https://msdn.microsoft.com/library/24dddf19-12a0-4707-a4bc-eba4fa7f219e)
+- [Introduction to LINQ (C#)](../../../../../csharp/programming-guide/concepts/linq/introduction-to-linq.md)
+- [Introduction to LINQ (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/introduction-to-linq.md)
 - [The LINQ to SQL Object Model](../../../../../../docs/framework/data/adonet/sql/linq/the-linq-to-sql-object-model.md)

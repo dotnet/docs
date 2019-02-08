@@ -38,5 +38,5 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  [Language-Integrated Query (LINQ) - Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides portals for [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] topics.  
   
- [LinqDataSource Technology Overview](https://msdn.microsoft.com/library/104cfc3f-7385-47d3-8a51-830dfa791136)  
+ [LinqDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100))  
  Describes how the <xref:System.Web.UI.WebControls.LinqDataSource> control exposes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] to Web developers through the [!INCLUDE[vstecasp](../../../../../../includes/vstecasp-md.md)] data-source control architecture.

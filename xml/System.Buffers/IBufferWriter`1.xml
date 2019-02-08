@@ -15,7 +15,7 @@
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+    <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.IBufferWriter`1" />.</typeparam>
     <summary>Represents a <typeparamref name="T" /> sink.</summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -64,9 +64,9 @@
         <Parameter Name="sizeHint" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="sizeHint">The size of the memory span requested. If 0, requests currently available memory. </param>
-        <summary>Requests a memory span that is at least <paramref name="sizeHint" /> in size if possible.</summary>
-        <returns>A memory span of size <paramref name="sizeHint" />, if it is available; otherwise, a memory span with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
+        <param name="sizeHint">The size of the <see cref="T:System.Memory`1" /> requested. If 0, requests currently available memory. </param>
+        <summary>Requests a <see cref="T:System.Memory`1" /> that is at least <paramref name="sizeHint" /> in size if possible.</summary>
+        <returns>A <see cref="T:System.Memory`1" /> of size <paramref name="sizeHint" />, if it's available; otherwise, a <see cref="T:System.Memory`1" /> with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,7 +91,7 @@
       <Docs>
         <param name="sizeHint">The size of the memory span requested. If 0, requests currently available memory. </param>
         <summary>Requests a span that is at least <paramref name="sizeHint" /> in size if possible.</summary>
-        <returns>A span of size <paramref name="sizeHint" />, if it is available; otherwise, a memory span with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
+        <returns>A span of size <paramref name="sizeHint" />, if it's available; otherwise, a memory span with the maximum available memory. If <paramref name="sizeHint" /> is 0, returns currently available memory.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

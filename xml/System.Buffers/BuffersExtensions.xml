@@ -158,7 +158,7 @@
         <Parameter Name="value" Type="System.ReadOnlySpan&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the items in the <see cref="T:System.Buffers.ReadOnlySequence`1" />.</typeparam>
+        <typeparam name="T">The type of the items in the <see cref="T:System.ReadOnlySpan`1" />.</typeparam>
         <param name="writer">The buffer writer to which to write <paramref name="value" />.</param>
         <param name="value">The read-only span to be written to <paramref name="writer" />.</param>
         <summary>Writes the contents of <paramref name="value" /> to <paramref name="writer" />.</summary>

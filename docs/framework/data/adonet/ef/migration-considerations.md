@@ -52,42 +52,49 @@ The [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] Entity Framewor
 ## Considerations for Applications that Use ADO.NET Providers  
  [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] providers, such as SqlClient, enable you to query a data source to return tabular data. Data can also be loaded into an [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] DataSet. The following list describes considerations for upgrading an application that uses an existing [!INCLUDE[vstecado](../../../../../includes/vstecado-md.md)] provider:  
   
- Displaying tabular data by using a data reader.  
- You may consider executing an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query using the EntityClient provider and enumerating through the returned <xref:System.Data.EntityClient.EntityDataReader> object. Do this only if your application displays tabular data using a data reader and does not require the facilities provided by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for materializing data into objects, tracking changes, and making updates. You can continue to use existing data access code that makes updates to the data source, but you can use the existing connection accessed from the <xref:System.Data.EntityClient.EntityConnection.StoreConnection%2A> property of <xref:System.Data.EntityClient.EntityConnection>. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
+- Displaying tabular data by using a data reader.  
+
+  You may consider executing an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query using the EntityClient provider and enumerating through the returned <xref:System.Data.EntityClient.EntityDataReader> object. Do this only if your application displays tabular data using a data reader and does not require the facilities provided by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for materializing data into objects, tracking changes, and making updates. You can continue to use existing data access code that makes updates to the data source, but you can use the existing connection accessed from the <xref:System.Data.EntityClient.EntityConnection.StoreConnection%2A> property of <xref:System.Data.EntityClient.EntityConnection>. For more information, see [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md).  
   
- Working with DataSets.  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provides many of the same functionalities provided by DataSet, including in-memory persistence, change tracking, data binding, and serializing objects as XML data. For more information, see [Working with Objects](../../../../../docs/framework/data/adonet/ef/working-with-objects.md).  
+- Working with DataSets.  
+
+  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] provides many of the same functionalities provided by DataSet, including in-memory persistence, change tracking, data binding, and serializing objects as XML data. For more information, see [Working with Objects](../../../../../docs/framework/data/adonet/ef/working-with-objects.md).  
   
- If the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not provide the functionality of DataSet needed by your application, you can still take advantage of the benefits of LINQ queries by using [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]. For more information, see [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md).  
+  If the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not provide the functionality of DataSet needed by your application, you can still take advantage of the benefits of LINQ queries by using [!INCLUDE[linq_dataset](../../../../../includes/linq-dataset-md.md)]. For more information, see [LINQ to DataSet](../../../../../docs/framework/data/adonet/linq-to-dataset.md).  
   
 ## Considerations for Applications that Bind Data to Controls  
  The [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] lets you encapsulate data in a data source, such as a DataSet or an [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source control, and then bind user interface elements to those data controls. The following list describes considerations for binding controls to Entity Framework data.  
   
- Binding data to controls.  
- When you query the conceptual model, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] returns the data as objects that are instances of entity types. These objects can be bound directly to controls, and this binding supports updates. This means that changes to data in a control, such as a row in a <xref:System.Windows.Forms.DataGridView>, automatically get saved to the database when the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method is called.  
+- Binding data to controls.  
+
+  When you query the conceptual model, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] returns the data as objects that are instances of entity types. These objects can be bound directly to controls, and this binding supports updates. This means that changes to data in a control, such as a row in a <xref:System.Windows.Forms.DataGridView>, automatically get saved to the database when the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method is called.  
   
- If your application enumerates the results of a query to display data in a <xref:System.Windows.Forms.DataGridView> or other type of control that supports data binding, you can modify your application to bind the control to the result of an <xref:System.Data.Objects.ObjectQuery%601>.  
+  If your application enumerates the results of a query to display data in a <xref:System.Windows.Forms.DataGridView> or other type of control that supports data binding, you can modify your application to bind the control to the result of an <xref:System.Data.Objects.ObjectQuery%601>.  
   
- For more information, see [Binding Objects to Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).  
+  For more information, see [Binding Objects to Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).  
   
- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source controls.  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [EntityDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
+- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] data source controls.  
+
+  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] includes a data source control designed to simplify data binding in [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications. For more information, see [EntityDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
   
 ## Other Considerations  
  The following are considerations that may apply when you migrate specific types of applications to the Entity Framework.  
   
- Applications that expose data services.  
- Web services and applications that are based on the Windows Communication Foundation (WCF) expose data from an underlying data source by using an XML request/response messaging format. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports the serialization of entity objects by using binary, XML, or WCF data contract serialization. Binary and WCF serialization both support full serialization of object graphs. For more information, see [Building N-Tier Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896304(v=vs.100)).  
+- Applications that expose data services.  
+
+  Web services and applications that are based on the Windows Communication Foundation (WCF) expose data from an underlying data source by using an XML request/response messaging format. The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports the serialization of entity objects by using binary, XML, or WCF data contract serialization. Binary and WCF serialization both support full serialization of object graphs. For more information, see [Building N-Tier Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896304(v=vs.100)).  
   
- Applications that use XML data.  
- Object serialization enables you to create [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] data services. These services provide data to applications that consume XML data, such as AJAX-based Internet applications. In these cases, consider using [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]. These data services are based on the Entity Data Model and provide dynamic access to entity data by using standard Representational State Transfer (REST) HTTP actions, such as GET, PUT, and POST. For more information, see [WCF Data Services 4.5](../../../../../docs/framework/data/wcf/index.md).  
+- Applications that use XML data.  
+
+  Object serialization enables you to create [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] data services. These services provide data to applications that consume XML data, such as AJAX-based Internet applications. In these cases, consider using [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]. These data services are based on the Entity Data Model and provide dynamic access to entity data by using standard Representational State Transfer (REST) HTTP actions, such as GET, PUT, and POST. For more information, see [WCF Data Services 4.5](../../../../../docs/framework/data/wcf/index.md).  
   
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100)).  
+  The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100)).  
   
- If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb387098(v=vs.110)).  
+  If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) or [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md).  
   
- Applications that maintain state.  
- [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
+- Applications that maintain state.  
+
+  [!INCLUDE[vstecasp](../../../../../includes/vstecasp-md.md)] Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
   
 ## See also
 - [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)

@@ -34,11 +34,11 @@ Starting with the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.
   
 2.  Add an existing model to your application.  
   
-    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://msdn.microsoft.com/library/beb8189e-e51c-4051-839c-9902c224abf2) topic.  
+    1.  Add an empty model named `SchoolModel`. To create an empty model, see the [How to: Create a New .edmx File](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716703(v=vs.100)) topic.  
   
      The SchoolModel.edmx file is added to your project.  
   
-    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](https://msdn.microsoft.com/library/859a9587-81ea-4a45-9bc0-f8d330e1adac) topic.  
+    1.  Copy the conceptual, storage, and mapping content for the School model from the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) topic.  
   
     2.  Open the SchoolModel.edmx file and paste the content within the `edmx:Runtime` tags.  
   

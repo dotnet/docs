@@ -33,7 +33,7 @@ Applications typically consist of many parts that must all be protected from vul
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)  
  Describes how to interact with unmanaged applications in a Windows Forms application.  
   
- [ClickOnce Deployment for Windows Forms Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/wh45kb66(v=vs.90))  
+ [ClickOnce Deployment for Windows Forms](../../winforms/clickonce-deployment-for-windows-forms.md)  
  Describes how to use `ClickOnce` deployment in a Windows Forms application and discusses the security implications.  
   
 ## ASP.NET and XML Web Services  

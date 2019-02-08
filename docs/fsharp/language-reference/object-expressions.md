@@ -1,7 +1,7 @@
 ---
 title: Object Expressions
 description: Learn how to use F# object expressions when you want to avoid the extra code and overhead required to create a new, named type.
-ms.date: 05/16/2016
+ms.date: 02/08/2019
 ---
 # Object Expressions
 
@@ -35,13 +35,15 @@ let obj1 = { new System.Object() with member x.ToString() = "F#" }
 printfn "%A" obj1
 
 // This object expression implements the IFormattable interface.
-let Delimiter(delim1 : string, delim2 : string ) =
+let delimiter(delim1: string, delim2: string, value: string) =
     { new System.IFormattable with
-        member x.ToString(format : string, provider : System.IFormatProvider) =
-            if format = "D" then delim1 + x.ToString() + delim2
-            else x.ToString() }
+        member x.ToString(format: string, provider: System.IFormatProvider) =
+            if format = "D" then
+                delim1 + value + delim2
+            else
+                value }
 
-let obj2 = Delimiter("{","}");
+let obj2 = delimiter("{","}", "Bananas!");
 
 printfn "%A" (System.String.Format("{0:D}", obj2))
 
@@ -56,11 +58,11 @@ type ISecond =
   abstract J : unit -> unit
 
 // This object expression implements an interface chain.
-let Implementer() =
+let implementer() =
     { new ISecond with
         member this.H() = ()
         member this.J() = ()
-    interface IFirst with
+      interface IFirst with
         member this.F() = ()
         member this.G() = () }
 ```

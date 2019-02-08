@@ -20,14 +20,14 @@ var gamModel = fitPipeline.LastTransformer.Model;
 var intercept = gamModel.Intercept;
 Console.WriteLine($"Average predicted cost: {intercept:0.00}");
 
-// Get the feature names from the training set
-var featureNames = data.Schema.AsEnumerable()
+// Get the column names from the training set
+var columnNames = data.Schema.AsEnumerable()
     .Select(column => column.Name) // Get the column names
     .Where(name => name != "MedianHomeValue") // Drop the Label
     .ToArray();
 
 // Get the index of a variable from the training data
-var myFeatureIndex = featureNames.ToList().FindIndex(str => str.Equals("MyFeature"));
+var myFeatureIndex = columnNames.ToList().FindIndex(str => str.Equals("MyFeature"));
 
 // The shape functions represent the deviation from the average prediction as a function of the feature value
 // It is represented by a discrete set of bins

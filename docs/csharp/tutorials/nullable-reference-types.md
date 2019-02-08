@@ -37,6 +37,10 @@ Create a new console application either in Visual Studio or from the command lin
 <NullableContextOptions>enable</NullableContextOptions>
 ```
 
+> [!NOTE]
+> When C# 8 is released (not in preview mode), the `NullableContextOptions` element will be added by new project templates. Until then, you'll need to add it manually.
+
+
 ### Design the types for the application
 
 This survey application requires creating a number of classes:
@@ -211,6 +215,6 @@ Experiment by changing the type declarations between nullable and non-nullable r
 
 ## Next steps
 
-Learn more by reading an overview of nullable reference types..
+Learn more by mirating an existing application to use nullable reference types..
 > [!div class="nextstepaction"]
-> [An overview of nullable references](../nullable-references.md)
+> [Upgrade an application to use nullable reference types](upgrade-to-nullable-references.md)

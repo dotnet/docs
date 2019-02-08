@@ -418,6 +418,42 @@ let foo a =
 
 The same rules apply for list and array elements.
 
+## Formatting copy-and-update record expressions
+
+A copy-and-update record expression is still a record, so similar guidelines apply.
+
+Short expressions can fit on one line:
+
+```fsharp
+let point2 = { point with X = 1; Y = 2 }
+```
+
+Longer expressions should use new lines:
+
+```fsharp
+let rainbow2 =
+    { rainbow with
+        Boss = "Jeffrey"
+        Lackeys = ["Zippy"; "George"; "Bungle"] }
+```
+
+And as with the record guidance, you may want to dedicate separate lines for the braces and indent one scope to the right with the expression. Note that in some special cases, such as wrapping a value with an optional without parentheses, you may need to keep a brace on one line:
+
+```fsharp    
+type S = { F1: int; F2: string }
+type State = { F:  S option }
+
+let state = { F = Some { F1 = 1; F2 = "Hello" } }
+let newState = 
+    {
+        state with
+            F = Some {
+                    F1 = 0
+                    F2 = ""
+                }
+    }
+```
+
 ## Formatting lists and arrays
 
 Write `x :: l` with spaces around the `::` operator (`::` is an infix operator, hence surrounded by spaces).

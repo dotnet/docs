@@ -50,24 +50,24 @@ This section describes general naming conventions that relate to word choice, gu
   
  **✓ DO** use a generic CLR type name, rather than a language-specific name, in the rare cases when an identifier has no semantic meaning beyond its type.  
   
- For example, a method converting to <xref:System.Int64> should be named `ToInt64`, not `ToLong` (because <xref:System.Int64> is a CLR name for the C#-specific alias `long`). The following table presents several base data types using the CLR type names (as well as the corresponding type names for C#, Visual Basic, and C++).  
+ For example, a method converting to <xref:System.Int64> should be named `ToInt64`, not `ToLong` (because <xref:System.Int64> is a CLR name for the C#-specific alias `long`). The following table presents several base data types using the CLR type names (as well as the corresponding type names for C#, Visual Basic, F#, and C++).  
   
-|C#|Visual Basic|C++|CLR|  
-|---------|------------------|-----------|---------|  
-|**sbyte**|**SByte**|**char**|**SByte**|  
-|**byte**|**Byte**|**unsigned char**|**Byte**|  
-|**short**|**Short**|**short**|**Int16**|  
-|**ushort**|**UInt16**|**unsigned short**|**UInt16**|  
-|**int**|**Integer**|**int**|**Int32**|  
-|**uint**|**UInt32**|**unsigned int**|**UInt32**|  
-|**long**|**Long**|**__int64**|**Int64**|  
-|**ulong**|**UInt64**|**unsigned __int64**|**UInt64**|  
-|**float**|**Single**|**float**|**Single**|  
-|**double**|**Double**|**double**|**Double**|  
-|**bool**|**Boolean**|**bool**|**Boolean**|  
-|**char**|**Char**|**wchar_t**|**Char**|  
-|**string**|**String**|**String**|**String**|  
-|**object**|**Object**|**Object**|**Object**|  
+|C#|Visual Basic|F#|C++|CLR|  
+|---------|------------------|------|-----------|---------|  
+|**sbyte**|**SByte**|**sbyte**|**char**|**SByte**|  
+|**byte**|**Byte**|**byte**|**unsigned char**|**Byte**|  
+|**short**|**Short**|**int16**|**short**|**Int16**|  
+|**ushort**|**UInt16**|**uint16**|**unsigned short**|**UInt16**|  
+|**int**|**Integer**|**int / int32**|**int**|**Int32**|  
+|**uint**|**UInt32**|**uint32**|**unsigned int**|**UInt32**|  
+|**long**|**Long**|**int64**|**__int64**|**Int64**|  
+|**ulong**|**UInt64**|**uint64**|**unsigned __int64**|**UInt64**|  
+|**float**|**Single**|**float32**|**float**|**Single**|  
+|**double**|**Double**|**float / double**|**double**|**Double**|  
+|**bool**|**Boolean**|**bool**|**bool**|**Boolean**|  
+|**char**|**Char**|**char**|**wchar_t**|**Char**|  
+|**string**|**String**|**string**|**String**|**String**|  
+|**object**|**Object**|**obj**|**Object**|**Object**|  
   
  **✓ DO**  use a common name, such as `value` or `item`, rather than repeating the type name, in the rare cases when an identifier has no semantic meaning and the type of the parameter is not important.  
   

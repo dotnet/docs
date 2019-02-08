@@ -348,7 +348,7 @@ type PostalAddress =
     }
 ```
 
-Placing the opening token on a new line and the closing token on a new line is preferrable if you are declaring interface implementations or members on the record:
+Placing the opening token on a new line and the closing token on a new line is preferable if you are declaring interface implementations or members on the record:
 
 ```fsharp
 // Declaring additional members on PostalAddress
@@ -383,7 +383,7 @@ let rainbow =
       Lackeys = ["Zippy"; "George"; "Bungle"] }
 ```
 
-Placing the opening token on a new line, the contents tabbed over one scope, and the closing token on a new line is preferrable if you are:
+Placing the opening token on a new line, the contents tabbed over one scope, and the closing token on a new line is preferable if you are:
 
 * Moving records around in code with different indentation scopes
 * Piping them into a function
@@ -789,7 +789,7 @@ When applied to a parameter, they must be on the same line and separated by a `;
 
 ## Formatting literals
 
-[F# literals](../language-reference/literals.md) using the `Literal` attribute should should place the attribute on its own line and use camelCase naming:
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use camelCase naming:
 
 ```fsharp
 [<Literal>]

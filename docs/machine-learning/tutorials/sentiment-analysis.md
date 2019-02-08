@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a sentiment analysis binary classification scenario
 description: Discover how to use ML.NET in a binary classification scenario to understand how to use sentiment prediction to take the appropriate action.
-ms.date: 01/15/2019
+ms.date: 02/15/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
@@ -16,18 +16,19 @@ This sample tutorial illustrates using ML.NET to create a sentiment classifier v
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Select the appropriate machine learning task
+> * Select the appropriate machine learning algorithm
 > * Prepare your data
-> * Create the learning pipeline
-> * Load a classifier
+> * Transform the data
 > * Train the model
-> * Evaluate the model with a different dataset
-> * Predict a single instance of test data outcome with the model
-> * Predict the test data outcomes with a loaded model
+> * Evaluate the model
+> * Predict with the trained model
+> * Deploy and Predict with a loaded model
 
 ## Sentiment analysis sample overview
 
 The sample is a console app that uses ML.NET to train a model that classifies and predicts sentiment as either positive or negative. It also evaluates the model with a second dataset for quality analysis. The sentiment datasets are from the WikiDetox project.
+
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/SentimentAnalysis) repository.
 
 ## Prerequisites
 
@@ -49,8 +50,8 @@ The workflow phases are as follows:
 3. **Build and train** 
    * **Train the model**
    * **Evaluate the model**
-4. **Run**
-   * **Model consumption**
+4. **Deploy Model**
+   * **Use the Model to predict**
 
 ### Understand the problem
 
@@ -62,7 +63,7 @@ You can break down the problem to the sentiment text and sentiment value for the
 
 You then need to **determine** the sentiment, which helps you with the machine learning task selection.
 
-## Select the appropriate machine learning task
+## Select the appropriate machine learning algorithm
 
 With this problem, you know the following facts:
 
@@ -72,18 +73,18 @@ Predict the **sentiment** of a new website comment, either toxic or not toxic, s
 * Please refrain from adding nonsense to Wikipedia.
 * He is the best, and the article should say that.
 
-The classification machine learning task is best suited for this scenario.
+The classification machine learning algorithm is best suited for this scenario.
 
 ### About the classification task
 
-Classification is a machine learning task that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
+Classification is a machine learning algorithm that uses data to **determine** the category, type, or class of an item or row of data. For example, you can use classification to:
 
 * Identify sentiment as positive or negative.
 * Classify email as spam, junk, or good.
 * Determine whether a patient's lab sample is cancerous.
 * Categorize customers by their propensity to respond to a sales campaign.
 
-Classification tasks are frequently one of the following types:
+Classification algorithms are frequently one of the following types:
 
 * Binary: either A or B.
 * Multiclass: multiple categories that can be predicted by using a single model.
@@ -102,7 +103,7 @@ Classification tasks are frequently one of the following types:
 
 ### Prepare your data
 
-1. Download the [WikiPedia detox-250-line-data.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv) and the [wikipedia-detox-250-line-test.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv) data sets and save them to the *Data* folder previously created. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is.
+1. Download the [Wikipedia detox-250-line-data.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-data.tsv) and the [wikipedia-detox-250-line-test.tsv](https://github.com/dotnet/machinelearning/blob/master/test/data/wikipedia-detox-250-line-test.tsv) data sets and save them to the *Data* folder previously created. The first dataset trains the machine learning model and the second can be used to evaluate how accurate your model is.
 
 2. In Solution Explorer, right-click each of the \*.tsv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -147,7 +148,7 @@ Create a variable called `mlContext` and initialize it with a new instance of `M
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#3 "Create the ML Context")]
 
-Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that you're using a `TextReader`. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization.
+Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that you're using a `TextReader`. When you create a `TextLoader` using  `MLContext.Data.CreateTextLoader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization.
 
  Specify the data schema by passing an array of <xref:Microsoft.ML.Data.TextLoader.Column> objects to the loader containing all the column names and their types. You defined the data schema previously when you created our `SentimentData` class. For our schema, the first column (Label) is a <xref:System.Boolean> (the prediction) and the second column (SentimentText) is the feature of type text/string used for predicting the sentiment.
 The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
@@ -182,7 +183,7 @@ Notice that two parameters are passed into the Train method; a `MLContext` for t
 ## Load the data
 
 You'll load the data using the `_textLoader` global variable with the `dataPath` parameter. It returns a
-<xref:Microsoft.ML.Data.IDataView>. As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
+<xref:Microsoft.Data.IDataView>. As the input and output of `Transforms`, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
 In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with comments and corresponding toxic or non toxic sentiment. This is used to create the model, and train it.
 
@@ -406,12 +407,12 @@ Sentiment: This is a very rude movie | Prediction: Toxic | Probability: 0.529704
 =============== End of training ===============
 
 
-The model is saved to: C:\Tutorial\SentimentAnalysis\bin\Debug\netcoreapp2.0\Data\Model.zip
+The model is saved to: C:\Tutorial\SentimentAnalysis\bin\Debug\netcoreapp2.1\Data\Model.zip
 
 =============== Prediction Test of loaded model with a multiple sample ===============
 
 Sentiment: This is a very rude movie | Prediction: Toxic | Probability: 0.4585565
-Sentiment: He is the best, and the article should say that. | Prediction: Not Toxic | Probability: 0.9924279
+Sentiment: I love this article. | Prediction: Not Toxic | Probability: 0.09454837
 
 ```
 
@@ -422,13 +423,13 @@ Congratulations! You've now successfully built a machine learning model for clas
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 > * Understand the problem
-> * Select the appropriate machine learning task
+> * Select the appropriate machine learning algorithm
 > * Prepare your data
-> * Create the learning pipeline
-> * Load a classifier
+> * Transform the data
 > * Train the model
-> * Evaluate the model with a different dataset
-> * Predict the test data outcomes with the model
+> * Evaluate the model
+> * Predict with the trained model
+> * Deploy and Predict with a loaded model
 
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]

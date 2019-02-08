@@ -296,7 +296,10 @@ This section describes the unmanaged interfaces that handle the debugging of a p
  A logical extension of `ICorDebugProcess`.  
   
  [ICorDebugProcess3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess3-interface.md)  
- Controls custom debugger notifications.  
+ Controls custom debugger notifications.
+
+ [ICorDebugProcess4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess4-interface.md)
+ Provides support for out of process execution control.
   
  [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)  
  Extends the [ICorDebugProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess-interface.md) interface to support access to the managed heap, to provide information about garbage collection of managed objects, and to determine whether a debugger loads images from the application's local native image cache.  

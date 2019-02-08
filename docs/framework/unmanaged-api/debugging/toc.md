@@ -447,6 +447,8 @@
 #### [SetUnmanagedBreakpoint Method](icordebugprocess2-setunmanagedbreakpoint-method.md)
 ### [ICorDebugProcess3 Interface](icordebugprocess3-interface.md)
 #### [SetEnableCustomNotification Method](icordebugprocess3-setenablecustomnotification-method.md)
+### [ICorDebugProcess4 Interface](icordebugprocess4-interface.md)
+#### [ProcessStateChanged](icordebugprocess4-processstatechanged-method.md)
 ### [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
 #### [EnableNGenPolicy Method](icordebugprocess5-enablengenpolicy-method.md)
 #### [EnumerateGCReferences Method](icordebugprocess5-enumerategcreferences-method.md)

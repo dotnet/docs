@@ -695,7 +695,7 @@
       <Docs>
         <param name="childID">The ID number of the accessible object for which to get role information. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
         <summary>Retrieves information that describes the role of the specified object.</summary>
-        <returns>TAn object that provides role information about the specified accessible object.</returns>
+        <returns>An object that provides role information about the specified accessible object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -783,7 +783,7 @@
       <Docs>
         <param name="childID">The ID number of the accessible object to which to assign a new name. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
         <param name="newName">The new name to assign to <paramref name="childID" />.</param>
-        <summary>Assigns a new name to the specified accessible object.</summary>
+        <summary>Assigns a new accessible name to the specified element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -813,7 +813,7 @@
       <Docs>
         <param name="childID">The ID number of the accessible object to which to assign a new value. This parameter is 0 to select the object, or a child ID to select one of the object's child objects.</param>
         <param name="newValue">The new value to assign to the specified accessible object.</param>
-        <summary>Assigns a new value to the specified accessible object.</summary>
+        <summary>Assigns a new value to the specified element.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

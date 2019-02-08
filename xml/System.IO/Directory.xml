@@ -3713,7 +3713,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- If you are setting the directory to a drive with removable media (for example, to "A:" for a floppy disk drive or "E:" for a CD-ROM drive), you can determine whether the drive is ready by using the <xref:System.IO.DriveInfo.IsReady%2A> property.  
+ If you are setting the directory to a drive with removable media (for example, "E:" for a USB flash drive), you can determine whether the drive is ready by using the <xref:System.IO.DriveInfo.IsReady%2A> property.  
   
    
   

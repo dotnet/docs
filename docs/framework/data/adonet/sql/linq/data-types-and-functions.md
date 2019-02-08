@@ -28,4 +28,3 @@ The topics listed in the following table describe LINQ to SQL support for member
 ## See also
 - [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
 - [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
-- [.NET Framework Class Library in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/f1yh62ef(v=vs.90))

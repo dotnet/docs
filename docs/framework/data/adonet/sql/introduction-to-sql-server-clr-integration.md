@@ -60,6 +60,5 @@ GO
 -   [Debugging CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115236)  
   
 ## See also
-- [Creating SQL Server 2005 Objects In Managed Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6s0s2at1(v=vs.90))
 - [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
 - [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

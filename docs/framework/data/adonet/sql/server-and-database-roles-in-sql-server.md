@@ -21,8 +21,8 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Server-Level Roles](/sql/relational-databases/security/authentication-access/server-level-roles) and [Permissions of Fixed Server Roles (Database Engine)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms175892(v=sql.105)) in SQL Server Books Online|Describes fixed server roles and the permissions associated with them in SQL Server.|  
-|[Database-Level Roles](/sql/relational-databases/security/authentication-access/database-level-roles) and [Permissions of Fixed Database Roles (Database Engine)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms189612(v=sql.105)) in SQL Server Books Online|Describes fixed database roles and the permissions associated with them|  
+|[Server-Level Roles](/sql/relational-databases/security/authentication-access/server-level-roles)|Describes fixed server roles and the permissions associated with them in SQL Server.|  
+|[Database-Level Roles](/sql/relational-databases/security/authentication-access/database-level-roles)|Describes fixed database roles and the permissions associated with them|  
   
 ## Database Roles and Users  
  Logins must be mapped to database user accounts in order to work with database objects. Database users can then be added to database roles, inheriting any permission sets associated with those roles. All permissions can be granted.  
@@ -53,7 +53,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
 |Resource|Description|  
 |--------------|-----------------|  
 |[Identity and Access Control (Database Engine)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb510418(v=sql.105)) in SQL Server Books Online|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
-|[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine) in SQL Server Books Online|Describes principals and contains links to topics that describe server and database roles.|  
+|[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine)|Describes principals and contains links to topics that describe server and database roles.|  
   
 ## See also
 - [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)

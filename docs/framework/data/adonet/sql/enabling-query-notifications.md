@@ -22,7 +22,7 @@ Applications that consume query notifications have a common set of requirements.
 ## Query Notifications Requirements  
  Query notifications are supported only for SELECT statements that meet a list of specific requirements. The following table provides links to the Service Broker and Query Notifications documentation in SQL Server Books Online.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
 -   [Creating a Query for Notification](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms181122(v=sql.105))  
   

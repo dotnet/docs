@@ -3,7 +3,7 @@ title: Predict prices using a regression learner with ML.NET
 description: Predict prices using a regression learner with ML.NET.
 author: aditidugar
 ms.author: johalex
-ms.date: 01/15/2019
+ms.date: 02/08/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
@@ -50,6 +50,10 @@ You want to predict the price value, which is a real value, based on the other f
 1. Install the **Microsoft.ML** NuGet Package:
 
     In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+
+1. Install the **Microsoft.Data.DataView** Nuget Package:
+
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.Data.DataView**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ## Prepare and understand the data
 
@@ -117,9 +121,9 @@ Create a variable called `mlContext` and initialize it with a new instance of `M
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#3 "Create the ML Context")]
 
-Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that we are using a `TextReader`. When you create a `TextLoader` using a `TextReader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization. Specify the data schema by passing an array of <xref:Microsoft.ML.Data.TextLoader.Column> objects to the `TextReader` containing all the column names and their types. We defined the data schema previously when we created our `TaxiTrip` class.
+Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it. When you create a `TextLoader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization. Specify the data schema by passing an array of <xref:Microsoft.ML.Data.TextLoader.Column> objects to the `TextReader` containing all the column names and their types. We defined the data schema previously when we created our `TaxiTrip` class.
 
-The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
+The `TextLoader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
 
 To initialize the `_textLoader` global variable in order to reuse it for the needed datasets, add the following code after the  `mlContext` initialization:
 

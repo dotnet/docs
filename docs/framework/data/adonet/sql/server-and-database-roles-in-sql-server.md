@@ -52,7 +52,7 @@ All versions of SQL Server use role-based security, which allows you to assign p
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Identity and Access Control (Database Engine)](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions)|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
+|[Getting Started with Database Engine Permissions](/sql/relational-databases/security/authentication-access/getting-started-with-database-engine-permissions)|Contains links to topics that describe principals, roles, credentials, securables and permissions.|  
 |[Principals](/sql/relational-databases/security/authentication-access/principals-database-engine)|Describes principals and contains links to topics that describe server and database roles.|  
   
 ## See also

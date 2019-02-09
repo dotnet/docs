@@ -73,6 +73,6 @@ Reference types passed by value and by reference
   
 ## See also
 - [Default Marshaling Behavior](default-marshaling-behavior.md)
-- [Memory Management with the Interop Marshaler](https://msdn.microsoft.com/library/417206ce-ee3e-4619-9529-0c0b686c7bee(v=vs.100))
-- [Directional Attributes](https://msdn.microsoft.com/library/241ac5b5-928e-4969-8f58-1dbc048f9ea2(v=vs.100))
+- [Memory Management with the Interop Marshaler](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1cf4kkz(v=vs.100))
+- [Directional Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100))
 - [Interop Marshaling](interop-marshaling.md)

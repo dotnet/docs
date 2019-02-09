@@ -1,12 +1,12 @@
 ---
-title: "&lt;paramref&gt; (Visual Basic)"
+title: "<paramref> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "paramref XML tag"
   - "<paramref> XML tag"
 ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
 ---
-# &lt;paramref&gt; (Visual Basic)
+# \<paramref> (Visual Basic)
 Formats a word as a parameter.  
   
 ## Syntax  
@@ -29,5 +29,5 @@ Formats a word as a parameter.
   
  [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/paramref_1.vb)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

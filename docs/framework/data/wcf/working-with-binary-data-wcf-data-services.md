@@ -60,6 +60,6 @@ The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library e
 > [!NOTE]
 >  When you call <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A>, the stream is not sent to the data service until <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called.  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)  
- [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)

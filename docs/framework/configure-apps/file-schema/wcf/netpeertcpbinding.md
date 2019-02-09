@@ -1,11 +1,11 @@
 ---
-title: "&lt;netPeerTcpBinding&gt;"
+title: "<netPeerTcpBinding>"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "netPeerBinding element"
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 ---
-# &lt;netPeerTcpBinding&gt;
+# \<netPeerTcpBinding>
 Defines a binding for peer channel specific TCP messaging.  
   
  \<system.ServiceModel>  
@@ -15,21 +15,21 @@ Defines a binding for peer channel specific TCP messaging.
 ## Syntax  
   
 ```xml  
-<netPeerBinding>  
-    <binding name="string"  
-         closeTimeout="TimeSpan"  
-         openTimeout="TimeSpan"   
-         receiveTimeout="TimeSpan"  
-         sendTimeout="TimeSpan"  
-         listenIPAddress="String"  
-          maxBufferPoolSize="integer"  
-         maxReceiveMessageSize="Integer"   
-         port="Integer"  
-         <security mode="None/Transport/Message/TransportWithMessageCredential">  
-            <transport credentialType="Certificate/Password" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
+<netPeerBinding>
+  <binding name="string"
+           closeTimeout="TimeSpan"
+           openTimeout="TimeSpan"
+           receiveTimeout="TimeSpan"
+           sendTimeout="TimeSpan"
+           listenIPAddress="String"
+           maxBufferPoolSize="integer"
+           maxReceiveMessageSize="Integer"
+           port="Integer">
+    <security mode="None/Transport/Message/TransportWithMessageCredential">
+      <transport credentialType="Certificate/Password" />
+    </security>
+  </binding>
+</netPeerBinding>
 ```  
   
 ## Attributes and Elements  
@@ -53,7 +53,7 @@ Defines a binding for peer channel specific TCP messaging.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<readerQuotas>](https://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
 |[\<resolver>](../../../../../docs/framework/configure-apps/file-schema/wcf/resolver.md)|Specifies a peer resolver used by this binding to resolve a peer mesh ID to the endpoint IP addresses of nodes within the peer mesh.|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netpeerbinding.md)|Defines the security settings for the message. This element is of type <xref:System.ServiceModel.Configuration.PeerSecurityElement>.|  
   
@@ -67,40 +67,39 @@ Defines a binding for peer channel specific TCP messaging.
  This binding provides support for the creation of peer-to-peer or multiparty applications using peer transport over TCP. Each peer node can host multiple peer channels defined with this binding type.  
   
 ## Example  
- The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](https://msdn.microsoft.com/library/31f4db66-edb2-40a6-b92a-14098e92acae).  
+ The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751426(v=vs.90)).  
   
 ```xml  
-<configuration>  
-<system.ServiceModel>  
-<bindings>  
-<netPeerBinding>  
-    <binding   
-         closeTimeout="00:00:10"  
-         openTimeout="00:00:20"   
-         receiveTimeout="00:00:30"  
-         sendTimeout="00:00:40"  
-         maxBufferSize="1001"  
-         maxConnections="123"   
-         maxReceiveMessageSize="1000">  
-        <reliableSession ordered="false"  
-            inactivityTimeout="00:02:00"  
-            enabled="true" />  
-        <security mode="TransportWithMessageCredential">  
-            <message clientCredentialType="CardSpace" />  
-        </security>  
-    </binding>  
-</netPeerBinding>  
-</bindings>  
-</system.ServiceModel>  
-</configuration>  
+<configuration>
+  <system.ServiceModel>
+    <bindings>
+      <netPeerBinding>
+        <binding closeTimeout="00:00:10"
+                 openTimeout="00:00:20"
+                 receiveTimeout="00:00:30"
+                 sendTimeout="00:00:40"
+                 maxBufferSize="1001"
+                 maxConnections="123"
+                 maxReceiveMessageSize="1000">
+          <reliableSession ordered="false"
+                           inactivityTimeout="00:02:00"
+                           enabled="true" />
+          <security mode="TransportWithMessageCredential">
+            <message clientCredentialType="CardSpace" />
+          </security>
+        </binding>
+      </netPeerBinding>
+    </bindings>
+  </system.ServiceModel>
+</configuration>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.NetPeerTcpBinding>  
- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)  
- [Net Peer TCP](https://msdn.microsoft.com/library/31f4db66-edb2-40a6-b92a-14098e92acae)  
- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)
+## See also
+- <xref:System.ServiceModel.NetPeerTcpBinding>
+- <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement>
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Net Peer TCP](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751426(v=vs.90))
+- [Peer-to-Peer Networking](../../../../../docs/framework/wcf/feature-details/peer-to-peer-networking.md)

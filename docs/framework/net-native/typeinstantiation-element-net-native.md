@@ -1,11 +1,11 @@
 ---
-title: "&lt;TypeInstantiation&gt; Element (.NET Native)"
+title: "<TypeInstantiation> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: a5eada64-075b-4162-9655-ded84e4681f2
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;TypeInstantiation&gt; Element (.NET Native)
+# \<TypeInstantiation> Element (.NET Native)
 Applies runtime reflection policy to a constructed generic type.  
   
 ## Syntax  
@@ -110,7 +110,7 @@ Applies runtime reflection policy to a constructed generic type.
 </Directives>  
 ```  
   
-## See Also  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)

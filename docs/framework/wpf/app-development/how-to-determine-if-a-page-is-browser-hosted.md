@@ -20,6 +20,6 @@ This example demonstrates how to determine if a <xref:System.Windows.Controls.Pa
  [!code-csharp[HOWTOBrowserInteropHelperSnippets#IsBrowserHostedCODE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTOBrowserInteropHelperSnippets/CSharp/Page1.xaml.cs#isbrowserhostedcode)]
  [!code-vb[HOWTOBrowserInteropHelperSnippets#IsBrowserHostedCODE](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOBrowserInteropHelperSnippets/visualbasic/page1.xaml.vb#isbrowserhostedcode)]  
   
-## See Also  
- <xref:System.Windows.Controls.Frame>  
- <xref:System.Windows.Controls.Page>
+## See also
+- <xref:System.Windows.Controls.Frame>
+- <xref:System.Windows.Controls.Page>

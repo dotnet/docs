@@ -36,15 +36,15 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  [Security](../../../../docs/standard/security/index.md)  
  Contains links to topics describing all aspects of security in .NET.  
   
- [Security Tools](https://msdn.microsoft.com/library/2a3eb98a-2de6-4fba-b41c-01a74d354c11)  
+ [Security Tools](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
  .NET Framework tools for securing and administering security policy.  
   
- [Resources for Creating Secure Applications](https://msdn.microsoft.com/library/0ebf5f69-76f2-498a-a2df-83cf3443e132)  
+ [Resources for Creating Secure Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
  Provides links to topics for creating secure applications.  
   
  [Security Bibliography](/visualstudio/ide/security-bibliography)  
  Provides links to external resources available online and in print.  
   
-## See Also  
- [ADO.NET](../../../../docs/framework/data/adonet/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)

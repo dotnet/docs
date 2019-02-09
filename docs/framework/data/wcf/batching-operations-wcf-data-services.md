@@ -18,5 +18,5 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] supports bat
   
  You can also asynchronously save batched changes. For more information, see [Asynchronous Operations](../../../../docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
   
-## See Also  
- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+## See also
+- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)

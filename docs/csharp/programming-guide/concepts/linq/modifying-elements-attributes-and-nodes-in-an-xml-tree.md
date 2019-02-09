@@ -39,6 +39,6 @@ The following table summarizes the methods and properties that you can use to mo
 |------------|-----------------|  
 |<xref:System.Xml.Linq.XContainer.ReplaceNodes%2A?displayProperty=nameWithType>|Replaces the children nodes with new content.|  
   
-## See Also
+## See also
 
 - [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

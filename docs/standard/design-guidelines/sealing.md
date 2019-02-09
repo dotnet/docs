@@ -43,6 +43,6 @@ One of the features of object-oriented frameworks is that developers can extend 
   
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)  
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)  
+- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
 - [Unsealed Classes](../../../docs/standard/design-guidelines/unsealed-classes.md)

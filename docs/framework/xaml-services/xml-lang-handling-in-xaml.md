@@ -37,5 +37,5 @@ The `xml:lang` attribute is an [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sha
 ## WPF Usage Nodes  
  For elements that are derived classes of <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, you can use the equivalent <xref:System.Windows.FrameworkElement.Language%2A> dependency property instead of the `xml:lang` attribute. By default, the <xref:System.Windows.FrameworkElement.Language%2A> property uses "en-US" if it is not otherwise set, either through the property or through processing the `xml:lang` attribute.  
   
-## See Also  
- [Globalization for WPF](../../../docs/framework/wpf/advanced/globalization-for-wpf.md)
+## See also
+- [Globalization for WPF](../../../docs/framework/wpf/advanced/globalization-for-wpf.md)

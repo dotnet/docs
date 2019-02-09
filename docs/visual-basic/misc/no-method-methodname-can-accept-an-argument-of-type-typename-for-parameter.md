@@ -1,9 +1,9 @@
 ---
-title: "No method '&lt;methodname&gt;' can accept an argument of type '&lt;typename&gt;' for parameter '&lt;parametername&gt;'"
+title: "No method '<methodname>' can accept an argument of type '<typename>' for parameter '<parametername>'"
 ms.date: 07/20/2015
 ms.assetid: 175c01dc-279c-4996-8501-d19a6671fdeb
 ---
-# No method '&lt;methodname&gt;' can accept an argument of type '&lt;typename&gt;' for parameter '&lt;parametername&gt;'
+# No method '\<methodname>' can accept an argument of type '\<typename>' for parameter '\<parametername>'
 A method call contains an argument of a type that is not valid.  
   
 ## To correct this error  
@@ -12,5 +12,5 @@ A method call contains an argument of a type that is not valid.
   
 2.  Match the argument types against the parameter types of the method to make sure they are in agreement. Alter the types as necessary.  
   
-## See Also  
- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+## See also
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

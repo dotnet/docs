@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for connectionManagement (Network Settings)"
+title: "<clear> Element for connectionManagement (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement/clear"
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "<connectionManagement>, clear element"
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 ---
-# &lt;clear&gt; Element for connectionManagement (Network Settings)
+# \<clear> Element for connectionManagement (Network Settings)
 Clears the connection management list.  
   
  \<configuration>  
@@ -61,7 +61,7 @@ Clears the connection management list.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.ServicePoint>  
-- <xref:System.Net.ServicePointManager>  
+## See also
+- <xref:System.Net.ServicePoint>
+- <xref:System.Net.ServicePointManager>
 - [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

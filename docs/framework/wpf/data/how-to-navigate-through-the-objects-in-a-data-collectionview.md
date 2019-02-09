@@ -23,9 +23,9 @@ Views allow the same data collection to be viewed in different ways, depending o
  [!code-csharp[CollectionView#OnButton](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CollectionView/CSharp/Page1.xaml.cs#onbutton)]
  [!code-vb[CollectionView#OnButton](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CollectionView/VisualBasic/Page1.xaml.vb#onbutton)]  
   
-## See Also  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)  
- [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md)  
- [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [Sort Data in a View](../../../../docs/framework/wpf/data/how-to-sort-data-in-a-view.md)
+- [Filter Data in a View](../../../../docs/framework/wpf/data/how-to-filter-data-in-a-view.md)
+- [Sort and Group Data Using a View in XAML](../../../../docs/framework/wpf/data/how-to-sort-and-group-data-using-a-view-in-xaml.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

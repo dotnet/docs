@@ -20,7 +20,7 @@ The [My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.
   
  The `My.Forms` object returns a collection of default instances for every `Form` class that exists in your project. Similarly, `My.WebServices` provides a default instance of the proxy class for every Web service that you have created a reference to in your application.  
   
-## See Also  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)  
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)  
- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+## See also
+- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
+- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)

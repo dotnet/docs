@@ -126,6 +126,6 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
-- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)  
+- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)
 - [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)

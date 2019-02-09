@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;ws2007HttpBinding&gt;"
+title: "<transport> of <ws2007HttpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 692befa3-8b0b-4ec5-b601-755874e98eb0
 ---
-# &lt;transport&gt; of &lt;ws2007HttpBinding&gt;
+# \<transport> of \<ws2007HttpBinding>
 Defines authentication settings for the HTTP transport.  
   
  \<system.serviceModel>  
@@ -15,11 +15,10 @@ Defines authentication settings for the HTTP transport.
   
 ## Syntax  
   
-```  
-transport clientCredentialType =   
-       "Basic/Certificate/Digest/None/Ntlm/Windows"  
-       proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-       realm="string"   
+```xml  
+<transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"
+           proxyCredentialType="Basic/Digest/None/Ntlm/Windows"
+           realm="string" />
 ```  
   
 ## Type  
@@ -67,13 +66,13 @@ transport clientCredentialType =
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-ws2007httpbinding.md)|Represents the security capabilities of the [\<ws2007HttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) element.|  
   
-## See Also  
- <xref:System.ServiceModel.HttpTransportSecurity>  
- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>  
- <xref:System.ServiceModel.WSHttpSecurity.Transport%2A>  
- <xref:System.ServiceModel.Configuration.WSHttpTransportSecurityElement>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.HttpTransportSecurity>
+- <xref:System.ServiceModel.Configuration.BasicHttpSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.WSHttpSecurity.Transport%2A>
+- <xref:System.ServiceModel.Configuration.WSHttpTransportSecurityElement>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

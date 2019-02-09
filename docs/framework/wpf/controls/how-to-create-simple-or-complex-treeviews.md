@@ -34,8 +34,8 @@ This example shows how to create simple or complex <xref:System.Windows.Controls
   
  [!code-xaml[TreeViewSimple#9](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TreeViewSimple/CS/Window1.xaml#9)]  
   
-## See Also  
- <xref:System.Windows.Controls.TreeView>  
- <xref:System.Windows.Controls.TreeViewItem>  
- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)
+## See also
+- <xref:System.Windows.Controls.TreeView>
+- <xref:System.Windows.Controls.TreeViewItem>
+- [TreeView Overview](../../../../docs/framework/wpf/controls/treeview-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/treeview-how-to-topics.md)

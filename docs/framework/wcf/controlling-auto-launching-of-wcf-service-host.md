@@ -22,5 +22,5 @@ You can control the auto-launching capability of Windows Communication Foundatio
   
 -   Syndication Service Library Project.  
   
-## See Also  
- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
+## See also
+- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)

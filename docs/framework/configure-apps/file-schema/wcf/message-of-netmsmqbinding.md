@@ -1,9 +1,9 @@
 ---
-title: "&lt;message&gt; of &lt;netMsmqBinding&gt;"
+title: "<message> of <netMsmqBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
 ---
-# &lt;message&gt; of &lt;netMsmqBinding&gt;
+# \<message> of \<netMsmqBinding>
 Defines the SOAP message security settings on this `netMsmqBinding` binding.  
   
  \<system.ServiceModel>  
@@ -16,14 +16,14 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
 ## Syntax  
   
 ```xml  
-<netMsmqBinding>  
-    <binding>  
-      <security>  
-         <message   
-                      algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-            clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
-    </security>  
-</netMsmqBinding>  
+<netMsmqBinding>
+  <binding>
+    <security>
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"
+               clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />
+    </security>
+  </binding>
+</netMsmqBinding>
 ```  
   
 ## Attributes and Elements  
@@ -45,14 +45,14 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the security settings for a binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>  
- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>  
- <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>  
- <xref:System.ServiceModel.MessageSecurityOverMsmq>  
- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.MessageSecurityOverMsmqElement>
+- <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>
+- <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>
+- <xref:System.ServiceModel.MessageSecurityOverMsmq>
+- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

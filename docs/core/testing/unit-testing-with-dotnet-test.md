@@ -61,7 +61,7 @@ Next, create the *PrimeService.Tests* directory. The following outline shows the
     /PrimeService.Tests
 ```
 
-Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
+Make the *PrimeService.Tests* directory the current directory and create a new project using [`dotnet new xunit`](../tools/dotnet-new.md). This command creates a test project that uses [xUnit](https://xunit.github.io/) as the test library. The generated template configures the test runner in the *PrimeServiceTests.csproj* file similar to the following code:
 
 ```xml
 <ItemGroup>
@@ -167,4 +167,5 @@ Continue to iterate by adding more tests, more theories, and more code in the ma
 
 ### Additional resources
 
+- [xUnit.net official site](https://xunit.github.io)
 - [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)

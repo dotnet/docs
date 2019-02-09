@@ -76,10 +76,10 @@ The following table shows the features that are optional for an XSLT processor t
 ## See also
 
 - <xref:System.Xml.Xsl.XslTransform>
-- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)  
-- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)  
-- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)  
-- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)  
-- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)  
-- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)  
-- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)  
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)
+- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)
+- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)
+- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)
+- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)
+- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)
+- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)

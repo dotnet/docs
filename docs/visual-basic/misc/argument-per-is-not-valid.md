@@ -12,7 +12,7 @@ An argument supplied for `Per`, which must be a `Double` specifying payment peri
   
 -   Ensure that the argument falls within the valid range.  
   
-## See Also  
-   
-   
- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
+## See also
+
+
+- [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)

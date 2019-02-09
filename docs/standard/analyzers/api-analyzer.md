@@ -107,5 +107,5 @@ The user decides how the diagnostics should be treated: as warnings, errors, sug
 
 ## See also
 
-* [Introducing API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) blog post.
-* [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.
+- [Introducing API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/) blog post.
+- [API Analyzer](https://youtu.be/eeBEahYXGd0) demo video on YouTube.

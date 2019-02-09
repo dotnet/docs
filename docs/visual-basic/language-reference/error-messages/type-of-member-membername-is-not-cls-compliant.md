@@ -1,5 +1,5 @@
 ---
-title: "Type of member &#39;&lt;membername&gt;&#39; is not CLS-compliant"
+title: "Type of member '<membername>' is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc40025"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40025"
 ms.assetid: adbd34bb-43d2-4266-90e7-cd1afaf49b4e
 ---
-# Type of member &#39;&lt;membername&gt;&#39; is not CLS-compliant
+# Type of member '\<membername>' is not CLS-compliant
 The data type specified for this member is not part of the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS). This is not an error within your component, because the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] and Visual Basic support this data type. However, another component written in strictly CLS-compliant code might not support this data type. Such a component might not be able to interact successfully with your component.  
   
  The following Visual Basic data types are not CLS-compliant:  
@@ -35,6 +35,6 @@ The data type specified for this member is not part of the [Language Independenc
   
 -   If you are interfacing with Automation or COM objects, keep in mind that some types have different data widths than in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. For example, `uint` is often 16 bits in other environments. If you are passing a 16-bit argument to such a component, declare it as `UShort` instead of `UInteger` in your managed Visual Basic code.  
   
-## See Also  
- [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
- 
+## See also
+- [Reflection](../../../framework/reflection-and-codedom/reflection.md)
+

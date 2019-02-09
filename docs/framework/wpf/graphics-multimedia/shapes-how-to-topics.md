@@ -21,6 +21,6 @@ The topics in this section demonstrate how to use <xref:System.Windows.Shapes.Sh
  [Draw a Rectangle](../../../../docs/framework/wpf/graphics-multimedia/how-to-draw-a-rectangle.md)  
  [Modify the Cap at the End of a Line or Segment](../../../../docs/framework/wpf/graphics-multimedia/how-to-modify-the-cap-at-the-end-of-a-line-or-segment.md)  
   
-## See Also  
- <xref:System.Windows.Shapes.Shape>  
- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+## See also
+- <xref:System.Windows.Shapes.Shape>
+- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)

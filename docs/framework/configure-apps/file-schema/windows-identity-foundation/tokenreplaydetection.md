@@ -1,10 +1,10 @@
 ---
-title: "&lt;tokenReplayDetection&gt;"
+title: "<tokenReplayDetection>"
 ms.date: "03/30/2017"
 ms.assetid: ac3f588e-5f75-4275-b969-2d492ecc3b47
 author: "BrucePerlerMS"
 ---
-# &lt;tokenReplayDetection&gt;
+# \<tokenReplayDetection>
 Enables token replay detection and specifies the expiration time for tokens.  
   
  \<system.identityModel>  

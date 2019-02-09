@@ -75,5 +75,5 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ## See also
 
-- <xref:System.Xml.XmlNamespaceManager>  
+- <xref:System.Xml.XmlNamespaceManager>
 - [XML Documents and Data](../../../../docs/standard/data/xml/index.md)

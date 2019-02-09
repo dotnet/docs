@@ -59,8 +59,8 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
        }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.CheckBox>  
- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)  
- [How to: Respond to Windows Forms CheckBox Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-checkbox-clicks.md)  
- [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.CheckBox>
+- [CheckBox Control Overview](../../../../docs/framework/winforms/controls/checkbox-control-overview-windows-forms.md)
+- [How to: Respond to Windows Forms CheckBox Clicks](../../../../docs/framework/winforms/controls/how-to-respond-to-windows-forms-checkbox-clicks.md)
+- [CheckBox Control](../../../../docs/framework/winforms/controls/checkbox-control-windows-forms.md)

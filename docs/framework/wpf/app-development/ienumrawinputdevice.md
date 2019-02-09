@@ -20,5 +20,5 @@ This interface enumerates the raw input devices, and is only used by Presentatio
 |[IEnumRAWINPUTDEVIC:Reset](../../../../docs/framework/wpf/app-development/ienumrawinputdevic-reset.md)|Resets the enumeration sequence to the beginning.|  
 |[IEnumRAWINPUTDEVIC:Clone](../../../../docs/framework/wpf/app-development/ienumrawinputdevic-clone.md)|Creates another raw input device enumerator with the same state as the current enumerator to iterate over the same list.|  
   
-## See Also  
- [About Raw Input](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/aboutrawinput.asp)
+## See also
+- [About Raw Input](https://msdn.microsoft.com/library/default.asp?url=/library/winui/winui/windowsuserinterface/userinput/rawinput/aboutrawinput.asp)

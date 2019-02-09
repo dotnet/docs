@@ -1,9 +1,9 @@
 ---
-title: "&lt;serviceAuthenticationManager&gt;"
+title: "<serviceAuthenticationManager>"
 ms.date: "03/30/2017"
 ms.assetid: 5d69e64f-f325-4d55-8e2d-0fb30f222dda
 ---
-# &lt;serviceAuthenticationManager&gt;
+# \<serviceAuthenticationManager>
 Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator.  
   
 \<system.ServiceModel>  
@@ -21,7 +21,7 @@ Provides a workflow configuration element that establishes at the service level 
       <serviceAuthenticationManager serviceAuthenticationManagerType="String" />
     </behavior>
   </serviceBehaviors>
-</behaviors>  
+</behaviors>
 ```  
   
 ## Attributes and Elements  
@@ -42,5 +42,5 @@ Provides a workflow configuration element that establishes at the service level 
 |-------------|-----------------|  
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceAuthenticationElement>
+## See also
+- <xref:System.ServiceModel.Configuration.ServiceAuthenticationElement>

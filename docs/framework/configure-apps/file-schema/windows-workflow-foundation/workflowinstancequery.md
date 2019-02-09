@@ -1,10 +1,10 @@
 ---
-title: "&lt;workflowInstanceQuery&gt;"
+title: "<workflowInstanceQuery>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 9096e812-626a-409a-9eda-c31a60b84c55
 ---
-# &lt;workflowInstanceQuery&gt;
+# \<workflowInstanceQuery>
 Represents a query that tracks workflow instance life cycle changes such as a started or completed event.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
@@ -78,8 +78,8 @@ Represents a query that tracks workflow instance life cycle changes such as a st
 </workflowInstanceQueries>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>       
- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>       
- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)  
- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+## See also
+- <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
+- <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
+- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)

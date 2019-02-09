@@ -15,7 +15,7 @@ ms.assetid: d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2
 ---
 # if-else (C# Reference)
 
-An `if` statement identifies which statement to run based on the value of a Boolean expression. In the following example, the `bool` variable `result` is set to `true` and then checked in the `if` statement. The output is `The variable is set to true.`.
+An `if` statement identifies which statement to run based on the value of a Boolean expression. In the following example, the `bool` variable `condition` is set to `true` and then checked in the `if` statement. The output is `The variable is set to true.`.
 
 [!code-csharp[csrefKeywordsSelection#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsSelection/CS/csrefKeywordsSelection.cs#1)]
 
@@ -130,11 +130,11 @@ if (!(m >= n || m >= p))
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## See Also
+## See also
 
-- [C# Reference](../index.md)  
-- [C# Programming Guide](../../programming-guide/index.md)  
-- [C# Keywords](index.md)  
-- [?: Operator](../operators/conditional-operator.md)  
-- [if-else Statement (C++)](/cpp/cpp/if-else-statement-cpp)  
-- [switch](switch.md)  
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](index.md)
+- [?: Operator](../operators/conditional-operator.md)
+- [if-else Statement (C++)](/cpp/cpp/if-else-statement-cpp)
+- [switch](switch.md)

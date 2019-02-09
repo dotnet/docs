@@ -34,6 +34,6 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
   
  Adding or removing a rendering <xref:System.EventHandler> delegate while the event is firing will be delayed until after the event is finished firing. This is consistent with how <xref:System.MulticastDelegate>-based events are handled in the Common Language Runtime (CLR). Also note that rendering events are not guaranteed to be called in any particular order. If you have multiple <xref:System.EventHandler> delegates that rely on a particular order, you should register a single <xref:System.Windows.Media.CompositionTarget.Rendering> event and multiplex the delegates in the correct order yourself.  
   
-## See Also  
- <xref:System.Windows.Media.CompositionTarget>  
- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
+## See also
+- <xref:System.Windows.Media.CompositionTarget>
+- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)

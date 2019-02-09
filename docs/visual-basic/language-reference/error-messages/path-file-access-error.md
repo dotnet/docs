@@ -18,5 +18,5 @@ During a file-access or disk-access operation, the operating system could not ma
   
 4.  Make sure you did not attempt to change a Visual Basic project within a database or document.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

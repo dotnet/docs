@@ -107,9 +107,9 @@ The following procedures describe the basic steps that you must complete to crea
   
 -   To compile the code, follow the instructions in the proceeding procedure that describe how to compile and run the application.  
   
-## See Also  
- <xref:System.Windows.Forms.Form>  
- <xref:System.Windows.Forms.Control>  
- [Changing the Appearance of Windows Forms](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
- [Enhancing Windows Forms Applications](../../../docs/framework/winforms/advanced/index.md)  
- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)
+## See also
+- <xref:System.Windows.Forms.Form>
+- <xref:System.Windows.Forms.Control>
+- [Changing the Appearance of Windows Forms](../../../docs/framework/winforms/changing-the-appearance-of-windows-forms.md)
+- [Enhancing Windows Forms Applications](../../../docs/framework/winforms/advanced/index.md)
+- [Getting Started with Windows Forms](../../../docs/framework/winforms/getting-started-with-windows-forms.md)

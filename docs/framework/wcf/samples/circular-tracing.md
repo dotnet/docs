@@ -53,5 +53,5 @@ This sample demonstrates the implementation of a circular buffer trace listener.
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\CircularTracing`  
   
-## See Also  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

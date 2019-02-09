@@ -21,5 +21,5 @@ Line numbers follow the same rules as other kinds of labels, and must contain a 
     400:    X += 1  
     ```  
   
-## See Also  
- [GoTo Statement](../../../visual-basic/language-reference/statements/goto-statement.md)
+## See also
+- [GoTo Statement](../../../visual-basic/language-reference/statements/goto-statement.md)

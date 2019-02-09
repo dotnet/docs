@@ -104,7 +104,7 @@ For programs built against the Windows Cryptography: Next Generation (CNG) libra
 For programs built against the older Windows Cryptographic API:
 
 - The decryption call is to [CryptDecrypt](/windows/desktop/api/wincrypt/nf-wincrypt-cryptdecrypt) with `Final=TRUE`.
-- The key handle has been initialized by calling [CryptSetKeyParam](/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetkeyparam) with [KP_MODE](https://msdn.microsoft.com/library/windows/desktop/aa379949.aspx#KP_MODE) set to `CRYPT_MODE_CBC`.
+- The key handle has been initialized by calling [CryptSetKeyParam](/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetkeyparam) with [KP_MODE](/windows/desktop/api/wincrypt/nf-wincrypt-cryptgetkeyparam) set to `CRYPT_MODE_CBC`.
   - Since `CRYPT_MODE_CBC` is the default, affected code may not have assigned any value for `KP_MODE`.
 
 ## Finding vulnerable code - managed applications

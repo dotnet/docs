@@ -25,7 +25,7 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
                     new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
 ```  
   
-## See Also  
- [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md)  
- [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md)  
- [JSON Serialization](../../../../docs/framework/wcf/samples/json-serialization.md)
+## See also
+- [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md)
+- [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md)
+- [JSON Serialization](../../../../docs/framework/wcf/samples/json-serialization.md)

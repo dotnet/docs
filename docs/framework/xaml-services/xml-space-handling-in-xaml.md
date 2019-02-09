@@ -34,6 +34,6 @@ The `xml:space` attribute is an XML-defined attribute that declares the signific
   
  For a complete discussion of white-space processing in XAML, see [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
   
-## See Also  
- [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)  
- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)
+## See also
+- [White-space processing in XAML](../../../docs/framework/xaml-services/whitespace-processing-in-xaml.md)
+- [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

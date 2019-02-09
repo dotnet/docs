@@ -719,6 +719,74 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/common-client-technologies/client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384297(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/client-application-services-overview.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384339(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-game1-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248547(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-gamepiece-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248546(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/creating-the-gamepiececollection-class.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248550(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/full-code-listings.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248551(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/how-to-configure-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384312(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb384313(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/index.md",
+            "redirect_url": "/dotnet/framework/develop-client-apps"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/manipulations-and-inertia.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248545(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/manipulations-and-inertia-overview.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248549(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/use-manipulations-and-inertia-in-an-xna-application.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee248548(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/common-client-technologies/walkthrough-using-client-application-services.md",
+            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546195(v=vs.100)"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/msl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/msl-spec"
+        },
+        {
+            "source_path": "docs/framework/data/adonet/ef/language-reference/ssdl-specification.md",
+            "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec"
+        },
+        {
             "source_path": "docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb882676(v=vs.100)"
         },
@@ -1899,6 +1967,11 @@
             "redirect_url": "/dotnet/standard/modernize-with-azure-and-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
         },
         {
+            "source_path": "docs/standard/native-interop.md",
+            "redirect_url": "/dotnet/standard/native-interop/index",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-thread-local-variables.md",
             "redirect_url": "/dotnet/standard/parallel-programming/how-to-write-a-parallel-foreach-loop-with-partition-local-variables",
             "redirect_document_id": true
@@ -1925,8 +1998,24 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
         {
+            "source_path": "docs/standard/threading/autoresetevent.md",
+            "redirect_url": "/dotnet/api/system.threading.autoresetevent"
+        },
+        {
+            "source_path": "docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md",
+            "redirect_url": "/dotnet/standard/threading/overview-of-synchronization-primitives#thread-interaction-or-signaling"
+        },
+        {
             "source_path": "docs/standard/threading/interlocked-operations.md",
             "redirect_url": "/dotnet/api/system.threading.interlocked"
+        },
+        {
+            "source_path": "docs/standard/threading/managed-thread-states.md",
+            "redirect_url": "/dotnet/api/system.threading.threadstate"
+        },
+        {
+            "source_path": "docs/standard/threading/manualresetevent-and-manualreseteventslim.md",
+            "redirect_url": "/dotnet/api/system.threading.manualresetevent"
         },
         {
             "source_path": "docs/standard/threading/reader-writer-locks.md",

@@ -37,5 +37,5 @@ End Class
   
 3.  If you want each instance to have its own individual copy of the member, do not specify `Shared` for the member declaration. Remove the `Shared` keyword from the procedure declaration.  
   
-## See Also  
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
+## See also
+- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)

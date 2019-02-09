@@ -11,10 +11,10 @@ ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
   
  [!code-xaml[CompositeCollections#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CompositeCollections/CS/Window1.xaml#1)]  
   
-## See Also  
- <xref:System.Windows.Data.CollectionContainer>  
- <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>  
- <xref:System.Windows.Data.XmlDataProvider>  
- <xref:System.Windows.DataTemplate>  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- <xref:System.Windows.Data.CollectionContainer>
+- <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>
+- <xref:System.Windows.Data.XmlDataProvider>
+- <xref:System.Windows.DataTemplate>
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

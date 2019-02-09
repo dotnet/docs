@@ -1,9 +1,9 @@
 ---
-title: "&lt;httpTransport&gt;"
+title: "<httpTransport>"
 ms.date: "03/30/2017"
 ms.assetid: 8b30c065-b32a-4fa3-8eb4-5537a9c6b897
 ---
-# &lt;httpTransport&gt;
+# \<httpTransport>
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
   
  \<system.serviceModel>  
@@ -15,20 +15,18 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 ## Syntax  
   
 ```xml  
-<httpTransport  
-    allowCookies=Boolean"  
-    authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"  
-    bypassProxyOnLocal=Boolean"  
-    hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"  
-    keepAliveEnabled="Boolean"  
-    maxBufferSize="Integer"  
-    proxyAddress="Uri"  
-    proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"  
-IntegratedWindowsAuthentication: Specifies Windows authentication"  
-    realm="String"  
-    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-        unsafeConnectionNtlmAuthentication="Boolean"  
-        useDefaultWebProxy="Boolean" />  
+<httpTransport allowCookies="Boolean"
+               authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"
+               bypassProxyOnLocal="Boolean"
+               hostnameComparisonMode="StrongWildcard/Exact/WeakWildcard"
+               keepAliveEnabled="Boolean"
+               maxBufferSize="Integer"
+               proxyAddress="Uri"
+               proxyAuthenticationScheme="None/Digest/Negotiate/Ntlm/Basic/Anonymous"
+               realm="String"
+               transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"
+               unsafeConnectionNtlmAuthentication="Boolean"
+               useDefaultWebProxy="Boolean" />
 ```  
   
 ## Attributes and Elements  
@@ -45,7 +43,7 @@ IntegratedWindowsAuthentication: Specifies Windows authentication"
 |keepAliveEnabled|A Boolean value that specifies whether to make a persistent connection to the internet resource.|  
 |maxBufferSize|A positive integer that specifies the maximum size of the buffer. The default is 524288|  
 |proxyAddress|A URI that specifies the address of the HTTP proxy. If `useSystemWebProxy` is `true`, this setting must be `null`. The default is `null`.|  
-|proxyAuthenticationScheme|Specifies the protocol used for authenticating client requests being processed by an HTTP proxy. Valid values include the following:<br /><br /> -   None: No authentication is performed.<br />-   Digest: Specifies digest authentication.<br />-   Negotiate: Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.<br />-   Ntlm: Specifies NTLM authentication.<br />-   Basic: Specifies basic authentication.<br />-   Anonymous: Specifies anonymous authentication.<br />-   IntegratedWindowsAuthentication: Specifies Windows authentication.<br /><br /> The default is Anonymous. This attribute is of type <xref:System.Net.AuthenticationSchemes>.|  
+|proxyAuthenticationScheme|Specifies the protocol used for authenticating client requests being processed by an HTTP proxy. Valid values include the following:<br /><br /> -   None: No authentication is performed.<br />-   Digest: Specifies digest authentication.<br />-   Negotiate: Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.<br />-   Ntlm: Specifies NTLM authentication.<br />-   Basic: Specifies basic authentication.<br />-   Anonymous: Specifies anonymous authentication.<br /><br /> The default is Anonymous. This attribute is of type <xref:System.Net.AuthenticationSchemes>. Note that `IntegratedWindowsAuthentication` is not supported.|  
 |realm|A string that specifies the realm to use on the proxy/server. The default is an empty string.<br /><br /> Servers use realms to partition protected resources. Each partition can have its own authentication scheme and/or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see RFC 2617 at the [IETF website](https://www.ietf.org).|  
 |transferMode|Specifies whether messages are buffered or streamed or a request or response. Valid values include the following:<br /><br /> -   Buffered: The request and response messages are buffered.<br />-   Streamed: The request and response messages are streamed.<br />-   StreamedRequest: The request message is streamed and the response message is buffered.<br />-   StreamedResponse: The request message is buffered and the response message is streamed.<br /><br /> The default is Buffered. This attribute is of type <xref:System.ServiceModel.TransferMode> .|  
 |unsafeConnectionNtlmAuthentication|A Boolean value that specifies whether Unsafe Connection Sharing is enabled on the server. The default is `false`. If enabled, NTLM authentication is performed once on each TCP connection.|  
@@ -63,14 +61,14 @@ IntegratedWindowsAuthentication: Specifies Windows authentication"
 ## Remarks  
  The `httpTransport` element is the starting point for creating a custom binding that implements the HTTP transport protocol. HTTP is the primary transport used for interoperability purposes. This transport is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other non-WCF Web services stacks.  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.HttpTransportElement>  
- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
- <xref:System.ServiceModel.Channels.TransportBindingElement>  
- <xref:System.ServiceModel.Channels.CustomBinding>  
- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)  
- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)  
- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)  
- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.HttpTransportElement>
+- <xref:System.ServiceModel.Channels.HttpTransportBindingElement>
+- <xref:System.ServiceModel.Channels.TransportBindingElement>
+- <xref:System.ServiceModel.Channels.CustomBinding>
+- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
+- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)

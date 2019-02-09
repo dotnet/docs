@@ -39,12 +39,11 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
   
   <bindings>  
     <wsHttpBinding>  
-      <!--   
-      <!--The default security for the WSHttpBinding is-->  
-      <!--Message security using Windows authentication. -->  
-      <!--This configuration explicitly defines the security mode -->  
-      <!--as Message and the clientCredentialType as Windows  -->  
-      <!--for demonstration purposes. -->  
+      <!-- The default security for the WSHttpBinding is -->  
+      <!-- Message security using Windows authentication. -->  
+      <!-- This configuration explicitly defines the security mode -->  
+      <!-- as Message and the clientCredentialType as Windows -->  
+      <!-- for demonstration purposes. -->  
       <binding name="Binding1">  
         <security mode="Message">  
           <message clientCredentialType="Windows"/>  
@@ -75,4 +74,4 @@ public string GetCallerIdentity()
   
 3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-## See Also
+## See also

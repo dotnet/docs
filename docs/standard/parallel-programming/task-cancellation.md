@@ -36,5 +36,5 @@ The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:Sy
   
 ## See also
 
-- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)  
+- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)
 - [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)

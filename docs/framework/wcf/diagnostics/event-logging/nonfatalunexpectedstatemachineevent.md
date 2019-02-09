@@ -13,6 +13,6 @@ Id: 148
 ## Description  
  This event indicates that a state machine attempted to process an unexpected event. The event is not considered fatal. The event lists the transaction ID, State machine, Current state, History, Event name, Event details, process name and process ID.  
   
-## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+## See also
+- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
+- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)

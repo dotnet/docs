@@ -21,8 +21,8 @@ This example shows how to handle the <xref:System.Windows.FrameworkElement.Loade
  [!code-csharp[FELoaded#Handler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FELoaded/CSharp/default.xaml.cs#handler)]
  [!code-vb[FELoaded#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FELoaded/VisualBasic/default.xaml.vb#handler)]  
   
-## See Also  
- <xref:System.Windows.FrameworkElement>  
- [Object Lifetime Events](../../../../docs/framework/wpf/advanced/object-lifetime-events.md)  
- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)
+## See also
+- <xref:System.Windows.FrameworkElement>
+- [Object Lifetime Events](../../../../docs/framework/wpf/advanced/object-lifetime-events.md)
+- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)

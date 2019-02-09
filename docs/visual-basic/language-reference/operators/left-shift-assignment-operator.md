@@ -1,5 +1,5 @@
 ---
-title: "&lt;&lt;= Operator (Visual Basic)"
+title: "<<= Operator (Visual Basic)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.<<="
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "compound assignment statements [Visual Basic]"
 ms.assetid: 8ad26613-faff-4e2f-89ee-63feee33bfda
 ---
-# &lt;&lt;= Operator (Visual Basic)
+# \<\<= Operator (Visual Basic)
 Performs an arithmetic left shift on the value of a variable or property and assigns the result back to the variable or property.  
   
 ## Syntax  
@@ -43,10 +43,10 @@ variableorproperty <<= amount
   
  [!code-vb[VbVbalrOperators#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/left-shift-assignment-operator_1.vb)]  
   
-## See Also  
- [<< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)  
- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)  
- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)
+## See also
+- [<< Operator](../../../visual-basic/language-reference/operators/left-shift-operator.md)
+- [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
+- [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
+- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
+- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
+- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)

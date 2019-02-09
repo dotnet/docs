@@ -1,5 +1,5 @@
 ---
-title: "&lt;permission&gt; - C# Programming Guide"
+title: "<permission> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "permission C# XML tag"
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 ---
-# &lt;permission&gt; (C# Programming Guide)
+# \<permission> (C# Programming Guide)
 ## Syntax  
   
 ```xml  
@@ -34,7 +34,7 @@ ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 ## Example  
  [!code-csharp[csProgGuideDocComments#8](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/permission_1.cs)]  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
+- [C# Programming Guide](../../../csharp/programming-guide/index.md)
 - [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)

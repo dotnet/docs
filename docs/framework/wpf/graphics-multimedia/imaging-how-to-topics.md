@@ -37,5 +37,5 @@ The topics in this section demonstrate how to use [!INCLUDE[TLA#tla_winclient](.
   
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
-## See Also  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)
+## See also
+- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)

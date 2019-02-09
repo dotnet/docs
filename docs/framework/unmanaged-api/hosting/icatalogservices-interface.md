@@ -29,5 +29,5 @@ Provides methods for cataloging services.
 |[Autodone Method](../../../../docs/framework/unmanaged-api/hosting/icatalogservices-autodone-method.md)|Reserved for internal use only.|  
 |[NotAutodone Method](../../../../docs/framework/unmanaged-api/hosting/icatalogservices-notautodone-method.md)|Reserved for internal use only.|  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

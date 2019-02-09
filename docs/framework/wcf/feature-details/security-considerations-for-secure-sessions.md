@@ -14,7 +14,7 @@ You should consider the following items that affect security when implementing s
   
  This means that if you want a custom token to be derived, you should wrap its clause type in a `SecurityTokenReference` element. There is an option to turn off derivation but the default is to derive keys. If you fail to wrap the key, serializing the derived key token succeeds, but attempting to deserialize it throws an exception.  
   
-## See Also  
- [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)  
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
- [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)
+## See also
+- [How to: Disable Secure Sessions on a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-disable-secure-sessions-on-a-wsfederationhttpbinding.md)
+- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
+- [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)

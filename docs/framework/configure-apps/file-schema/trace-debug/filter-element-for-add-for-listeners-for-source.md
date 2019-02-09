@@ -1,5 +1,5 @@
 ---
-title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;"
+title: "<filter> Element for <add> for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#filter"
@@ -9,10 +9,8 @@ helpviewer_keywords:
   - "<filter> element for <add> for <listeners> for <source>"
   - "filter element for <add> for <listeners> for <source>"
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;source&gt;
+# \<filter> Element for \<add> for \<listeners> for \<source>
 Adds a filter to a listener in the `Listeners` collection for a trace source.  
   
  \<configuration>  
@@ -86,9 +84,9 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.TraceFilter>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.TraceFilter>
+- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)

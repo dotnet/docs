@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: dfd91658-8d8a-45a4-a356-e327e809f21d
 ---
 # LINQ to DataSet Examples
-This section provides [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] programming examples that use the standard query operators. The <xref:System.Data.DataSet> used in these examples is populated by using the `FillDataSet` method, which is specified in [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md). For more information, see [Standard Query Operators Overview](https://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2).  
+This section provides LINQ to DataSet programming examples that use the standard query operators. The <xref:System.Data.DataSet> used in these examples is populated by using the `FillDataSet` method, which is specified in [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md). For more information, see [Standard Query Operators Overview (C#)](../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md) or [Standard Query Operators Overview (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md).  
   
 ## In This Section  
  [Query Expression Examples](../../../../docs/framework/data/adonet/query-expression-examples-linq-to-dataset.md)  
@@ -46,6 +46,6 @@ This section provides [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-
  [DataSet-Specific Operator Examples](../../../../docs/framework/data/adonet/dataset-specific-operator-examples-linq-to-dataset.md)  
  Contains examples that demonstrate how to use the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method and the <xref:System.Data.DataRowComparer> class.  
   
-## See Also  
- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)  
- [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)
+## See also
+- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
+- [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)

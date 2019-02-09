@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;baseAddresses&gt;"
+title: "<add> of <baseAddresses>"
 ms.date: "03/30/2017"
 ms.assetid: 1bd7426f-5f4f-43fc-b8e9-de842219aa32
 ---
-# &lt;add&gt; of &lt;baseAddresses&gt;
+# \<add> of \<baseAddresses>
 Represents a configuration element that specifies the base addresses used by the service host.  
   
  \<system.ServiceModel>  
@@ -16,7 +16,7 @@ Represents a configuration element that specifies the base addresses used by the
 ## Syntax  
   
 ```xml  
-<add baseAddress="string" />  
+<add baseAddress="string" />
 ```  
   
 ## Type  
@@ -40,8 +40,8 @@ Represents a configuration element that specifies the base addresses used by the
 |-------------|-----------------|  
 |[\<baseAddresses>](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md)|A collection of `baseAddress` elements.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.HostElement>  
- <xref:System.ServiceModel.ServiceHost>  
- <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+- <xref:System.ServiceModel.Configuration.HostElement>
+- <xref:System.ServiceModel.ServiceHost>
+- <xref:System.ServiceModel.ServiceHostBase.BaseAddresses%2A>
+- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)

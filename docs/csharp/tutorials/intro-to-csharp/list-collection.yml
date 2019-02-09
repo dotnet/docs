@@ -32,7 +32,7 @@ items:
     The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature. When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method.
 
     Let's keep exploring.
-    
+
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
@@ -40,7 +40,7 @@ items:
   durationInMinutes: 3
   content: |
     The collection you created uses the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
-    
+
     One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. Add the following code below the code you've already written:
 
     ```csharp
@@ -55,7 +55,7 @@ items:
     ```
 
     You've added two more names to the end of the list. You've also removed one as well.
-    
+
     The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code below what you've already written and try it:
 
     ```csharp
@@ -68,7 +68,7 @@ items:
     ```csharp
     Console.WriteLine($"The list has {names.Count} people in it");
     ```
-    
+
     Click **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
     > [!NOTE]
@@ -117,7 +117,7 @@ items:
     ```csharp
     var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
     var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
-    
+
     fibonacciNumbers.Add(previous + previous2);
 
     foreach(var item in fibonacciNumbers)
@@ -149,7 +149,7 @@ items:
     {
         var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
         var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
-        
+
         fibonacciNumbers.Add(previous + previous2);
     }
     foreach(var item in fibonacciNumbers)
@@ -160,7 +160,7 @@ items:
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-    
+
 - content: |
     You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials to build projects on your machine.
 

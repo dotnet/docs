@@ -1,7 +1,7 @@
 ---
 title: "How to: Compare strings - C# Guide"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
-ms.date: 03/20/2018
+ms.date: 10/03/2018
 helpviewer_keywords: 
   - "strings [C#], comparison"
   - "comparing strings [C#]"
@@ -28,8 +28,13 @@ equality, but some differences, such as case differences, may be ignored.
 
 ## Default ordinal comparisons
 
-The most common methods that test for equality, <xref:System.String.Equals%2A?displayProperty=nameWithType> and <xref:System.String.op_Equality%2A?displayProperty=nameWithType>, use
-a case-sensitive ordinal comparison. The results are shown in the following example.
+The most common operations:
+
+- <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
+- <xref:System.String.Equals%2A?displayProperty=nameWithType>
+- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> 
+
+use an ordinal comparison, a case-sensitive comparison, and use the current culture. The results are shown in the following example:
 
 [!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
 
@@ -147,8 +152,8 @@ You can intern a string or retrieve a reference to an existing interned string b
 
 ## See also
 
-- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>  
-- <xref:System.StringComparer?displayProperty=nameWithType>  
-- [Strings](../programming-guide/strings/index.md)  
-- [Comparing Strings](../../standard/base-types/comparing.md)  
+- <xref:System.Globalization.CultureInfo?displayProperty=nameWithType>
+- <xref:System.StringComparer?displayProperty=nameWithType>
+- [Strings](../programming-guide/strings/index.md)
+- [Comparing Strings](../../standard/base-types/comparing.md)
 - [Globalizing and Localizing Applications](/visualstudio/ide/globalizing-and-localizing-applications)

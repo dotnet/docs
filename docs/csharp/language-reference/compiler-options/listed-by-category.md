@@ -106,8 +106,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |---|---|
 |-incremental|Enables incremental compilation.|
 
-## See Also
+## See also
 
-- [C# Compiler Options](index.md)  
-- [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)  
+- [C# Compiler Options](index.md)
+- [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)
 - [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)

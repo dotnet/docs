@@ -19,5 +19,5 @@ The <xref:System.Windows.Forms.ToolStripStatusLabel> is a label for a <xref:Syst
 |<xref:System.Windows.Forms.ToolStripStatusLabel.BorderSides%2A>|Gets or sets a value that indicates which sides of the <xref:System.Windows.Forms.ToolStripStatusLabel> show borders.|  
 |<xref:System.Windows.Forms.ToolStripStatusLabel.BorderStyle%2A>|Gets or sets the border style of the <xref:System.Windows.Forms.ToolStripStatusLabel>.|  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStripStatusLabel>
+## See also
+- <xref:System.Windows.Forms.ToolStripStatusLabel>

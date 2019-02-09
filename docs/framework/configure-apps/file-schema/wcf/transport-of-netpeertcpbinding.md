@@ -1,9 +1,9 @@
 ---
-title: "&lt;transport&gt; of &lt;netPeerTcpBinding&gt;"
+title: "<transport> of <netPeerTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
 ---
-# &lt;transport&gt; of &lt;netPeerTcpBinding&gt;
+# \<transport> of \<netPeerTcpBinding>
 Specifies settings for transport level security when using the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md).  
   
  \<system.ServiceModel>  
@@ -16,13 +16,13 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
 ## Syntax  
   
 ```xml  
-<netPeerTcpBinding>  
-    <binding>  
-        <security>  
-            <transport credentialType="Certificate/Password" />  
-        </security>         
-    </binding>  
-</netPeerTcpBinding>  
+<netPeerTcpBinding>
+  <binding>
+    <security>
+      <transport credentialType="Certificate/Password" />
+    </security>
+  </binding>
+</netPeerTcpBinding>
 ```  
   
 ## Attributes and Elements  
@@ -50,13 +50,13 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
 |-------------|-----------------|  
 |[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netpeerbinding.md)|Defines the security settings for the [\<netPeerTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/netpeertcpbinding.md).|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>  
- <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>  
- <xref:System.ServiceModel.Configuration.PeerSecurityElement.Transport%2A>  
- <xref:System.ServiceModel.PeerTransportSecuritySettings>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [Bindings](../../../../../docs/framework/wcf/bindings.md)  
- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)  
- [\<binding>](../../../../../docs/framework/misc/binding.md)
+## See also
+- <xref:System.ServiceModel.Configuration.PeerTransportSecurityElement>
+- <xref:System.ServiceModel.PeerSecuritySettings.Transport%2A>
+- <xref:System.ServiceModel.Configuration.PeerSecurityElement.Transport%2A>
+- <xref:System.ServiceModel.PeerTransportSecuritySettings>
+- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../../../docs/framework/wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](../../../../../docs/framework/misc/binding.md)

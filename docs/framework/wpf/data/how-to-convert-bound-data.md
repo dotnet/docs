@@ -31,7 +31,7 @@ This example shows how to apply conversion to data that is used in bindings.
   
  The style resources referenced in the above example are defined in a resource section not shown in this topic.  
   
-## See Also  
- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)  
- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)
+## See also
+- [Implement Binding Validation](../../../../docs/framework/wpf/data/how-to-implement-binding-validation.md)
+- [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)

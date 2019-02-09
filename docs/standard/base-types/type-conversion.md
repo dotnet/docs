@@ -202,6 +202,6 @@ ms.author: "ronpet"
   
 ## See also
 
-- <xref:System.Convert?displayProperty=nameWithType>  
-- <xref:System.IConvertible>  
+- <xref:System.Convert?displayProperty=nameWithType>
+- <xref:System.IConvertible>
 - [Type Conversion Tables](../../../docs/standard/base-types/conversion-tables.md)

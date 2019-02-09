@@ -148,15 +148,15 @@ mc:Ignorable="PresentationOptions"
   
 -   Call the <xref:System.Windows.Freezable.WritePostscript%2A> method before exiting methods that write to non-dependency property data members.  
   
- If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change on of their values, even if you're setting the member to `null`.  
+ If your class contains non-dependency-property data members that are <xref:System.Windows.DependencyObject> objects, you must also call the <xref:System.Windows.Freezable.OnFreezablePropertyChanged%2A> method each time you change one of their values, even if you're setting the member to `null`.  
   
 > [!NOTE]
 >  It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.  
   
  For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).  
   
-## See Also  
- <xref:System.Windows.Freezable>  
- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)  
- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)  
- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
+## See also
+- <xref:System.Windows.Freezable>
+- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
+- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
+- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)

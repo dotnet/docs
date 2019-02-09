@@ -14,6 +14,6 @@ An attempt was made to write an entry to an event log where the specified source
   
 2.  Register the source with the new log.  
   
-## See Also  
- [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)  
+## See also
+- [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)
 

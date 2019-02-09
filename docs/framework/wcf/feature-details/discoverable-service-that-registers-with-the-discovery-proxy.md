@@ -278,7 +278,7 @@ namespace Microsoft.Samples.Discovery
 }  
 ```  
 
-## See Also  
- [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)  
- [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)  
- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)
+## See also
+- [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)
+- [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)
+- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)

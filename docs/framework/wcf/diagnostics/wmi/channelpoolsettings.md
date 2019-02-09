@@ -50,5 +50,5 @@ class ChannelPoolSettings
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.ChannelPoolSettings>
+## See also
+- <xref:System.ServiceModel.Channels.ChannelPoolSettings>

@@ -125,13 +125,13 @@ This sample demonstrates how to implement a business process using messaging act
 ## Data Storage  
  Data is stored in a SQL Server database called `ContosoHR` (the script for creating this database is located in the `DbSetup` folder). Workflow instances are stored in a SQL Server database called `InstanceStore` (the scripts for creating the instance store are part of the [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] distribution).  
   
- Both databases are created by running Setup.cmd script from a  Visual Studio command prompt.  
+ Both databases are created by running Setup.cmd script from a  Developer Command Prompt for Visual Studio.  
   
 ## Running the sample  
   
 #### To create the databases  
   
-1.  Open a Visual Studio command prompt.  
+1.  Open a Developer Command Prompt for Visual Studio.  
   
 2.  Navigate to the sample folder.  
   

@@ -17,5 +17,5 @@ The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[Working with Global Namespaces (Visual Basic) (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/working-with-global-namespaces-linq-to-xml.md)|Explains the semantics of global namespaces in Visual Basic, and reasons for using them.|  
 |[How to: Write Queries on XML in Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md)|Demonstrates how to specify XML namespaces in Visual Basic LINQ to XML queries.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)

@@ -1,12 +1,12 @@
 ---
-title: "&lt;remarks&gt; (Visual Basic)"
+title: "<remarks> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<remarks> XML tag"
   - "remarks XML tag"
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
 ---
-# &lt;remarks&gt; (Visual Basic)
+# \<remarks> (Visual Basic)
 Specifies a remarks section for the member.  
   
 ## Syntax  
@@ -31,5 +31,5 @@ Specifies a remarks section for the member.
   
  [!code-vb[VbVbcnXmlDocComments#6](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/remarks_1.vb)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -14,5 +14,5 @@ Either more files have been created in the root directory than the operating sys
   
 2.  Increase the number of files specified in your **files=** setting in your CONFIG.SYS file, and restart your computer.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

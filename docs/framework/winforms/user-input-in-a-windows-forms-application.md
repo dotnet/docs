@@ -24,7 +24,7 @@ In Windows Forms, user input is sent to applications in the form of Windows mess
   
  Keyboard and mouse messages are also processed by an additional set of overridable methods that are specific to those types of messages. For more information, see [How Keyboard Input Works](../../../docs/framework/winforms/how-keyboard-input-works.md) and [How Mouse Input Works in Windows Forms](../../../docs/framework/winforms/how-mouse-input-works-in-windows-forms.md).  
   
-## See Also  
- [User Input in Windows Forms](../../../docs/framework/winforms/user-input-in-windows-forms.md)  
- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)  
- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)
+## See also
+- [User Input in Windows Forms](../../../docs/framework/winforms/user-input-in-windows-forms.md)
+- [Keyboard Input in a Windows Forms Application](../../../docs/framework/winforms/keyboard-input-in-a-windows-forms-application.md)
+- [Mouse Input in a Windows Forms Application](../../../docs/framework/winforms/mouse-input-in-a-windows-forms-application.md)

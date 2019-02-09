@@ -48,10 +48,10 @@ An *XML literal* allows you to incorporate XML directly into your Visual Basic c
   
  [!code-vb[VbXMLSamples#6](../../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-literals-overview_2.vb)]  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Embedded Expressions in XML](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)  
- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)  
- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)  
- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)
+## See also
+- <xref:System.Xml.Linq.XElement>
+- [Creating XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
+- [Embedded Expressions in XML](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md)
+- [XML Document Literal](../../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)
+- [XML Element Literal](../../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)
+- [XML Literals](../../../../visual-basic/language-reference/xml-literals/index.md)

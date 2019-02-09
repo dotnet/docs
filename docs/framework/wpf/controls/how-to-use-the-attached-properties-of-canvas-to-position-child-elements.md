@@ -21,13 +21,13 @@ This example shows how to use the attached properties of <xref:System.Windows.Co
  [!code-csharp[CanvasAttachedProperties#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CanvasAttachedProperties/CSharp/CanvasAttachedProps.cs#1)]
  [!code-vb[CanvasAttachedProperties#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasAttachedProperties/VisualBasic/CanvasAttachedProps.vb#1)]  
   
-## See Also  
- <xref:System.Windows.Controls.Canvas>  
- <xref:System.Windows.Controls.Canvas.Bottom%2A>  
- <xref:System.Windows.Controls.Canvas.Left%2A>  
- <xref:System.Windows.Controls.Canvas.Right%2A>  
- <xref:System.Windows.Controls.Canvas.Top%2A>  
- <xref:System.Windows.Controls.Button>  
- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)  
- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)
+## See also
+- <xref:System.Windows.Controls.Canvas>
+- <xref:System.Windows.Controls.Canvas.Bottom%2A>
+- <xref:System.Windows.Controls.Canvas.Left%2A>
+- <xref:System.Windows.Controls.Canvas.Right%2A>
+- <xref:System.Windows.Controls.Canvas.Top%2A>
+- <xref:System.Windows.Controls.Button>
+- [Panels Overview](../../../../docs/framework/wpf/controls/panels-overview.md)
+- [How-to Topics](../../../../docs/framework/wpf/controls/canvas-how-to-topics.md)
+- [Attached Properties Overview](../../../../docs/framework/wpf/advanced/attached-properties-overview.md)

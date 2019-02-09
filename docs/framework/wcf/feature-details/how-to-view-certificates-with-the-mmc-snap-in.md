@@ -1,6 +1,6 @@
 ---
 title: "How to: View certificates with the MMC snap-in"
-ms.date: 02/07/2019
+ms.date: 02/08/2019
 helpviewer_keywords: 
   - "certificates [WCF], viewing with the MMC snap-in"
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
@@ -10,11 +10,11 @@ When you create a secure client or service, you can use a [certificate](working-
 
 There are three different types of certificate stores that you can examine with the Microsoft Management Console (MMC):
 
-- Local computer: This type of store is local to the device and global to all users on the device.
+- Local computer: Store is local to the device and global to all users on the device.
 
-- Current user: This type of store is local to the current user account on the device.
+- Current user: Store is local to the current user account on the device.
 
-- Service account: This type of store is local to a particular service on the device.
+- Service account: Store is local to a particular service on the device.
 
   
 ## To view certificates in the MMC snap-in 
@@ -23,7 +23,7 @@ The following procedure demonstrates how to examine the stores on your local dev
   
 1. Select **Run** from the **Start** menu, and then enter *mmc*. 
 
-    The MMC appears. To view certificates in the local machine store, you must have the administrator role.
+    The MMC appears. 
   
 2. From the **File** menu, select **Add/Remove Snap In**. 
     
@@ -34,6 +34,9 @@ The following procedure demonstrates how to examine the stores on your local dev
     ![Add certificate snap-in](./media/mmc-add-certificate-snap-in.png)
   
 4. In the **Certificates snap-in** window, select **Computer account**, and then select **Next**. 
+
+    > [!NOTE]
+    > To view certificates in the local computer store, you must have the administrator role.
   
     Optionally, you can select **My user account** for the current user or **Service account** for a particular service. If you're not an administrator for the computer, you can manage certificates only for your user account.
   
@@ -43,7 +46,7 @@ The following procedure demonstrates how to examine the stores on your local dev
   
     ![Add certificate snap-in](./media/mmc-certificate-snap-in-selected.png)
 
-7. Optional: From the **File** menu, select **Save** or **Save As** to save the MMC console file for later reuse.  
+7. Optional: From the **File** menu, select **Save** or **Save As** to save the MMC console file for later use.  
 
 8. To view your certificates in the MMC snap-in, select **Console Root** in the left pane, then expand **Certificates (Local Computer)**.
 

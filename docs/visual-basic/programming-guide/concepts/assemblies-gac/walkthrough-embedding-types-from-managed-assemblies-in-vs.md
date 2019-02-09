@@ -220,4 +220,4 @@ End Function
 - [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)
 - [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)
 - [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)
-- [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+- [Assemblies in .NET](../../../../standard/assembly/index.md)

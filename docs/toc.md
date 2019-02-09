@@ -519,7 +519,7 @@
 #### [Customizing Which Objects are Available in My](visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 
 ## [Programming Concepts](visual-basic/programming-guide/concepts/index.md)
-### [Assemblies and the Global Assembly Cache](visual-basic/programming-guide/concepts/assemblies-gac/index.md)
+### [Assemblies in .NET](standard/assembly/index.md)
 ### [Asynchronous Programming with Async and Await](visual-basic/programming-guide/concepts/async/index.md)
 ### [Attributes](visual-basic/programming-guide/concepts/attributes/index.md)
 ### [Expression Trees](visual-basic/programming-guide/concepts/expression-trees/index.md)

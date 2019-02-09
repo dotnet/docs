@@ -83,7 +83,7 @@ As you would expect from an object-oriented class library, the .NET Framework ty
 
 - Service-oriented apps using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../../../docs/framework/wcf/index.md).
 
-- Workflow-enabled apps using Windows Workflow Foundation (WF). See [Windows Workflow Foundation](/docs/framework/windows-workflow-foundation/index.md).
+- Workflow-enabled apps using Windows Workflow Foundation (WF). See [Windows Workflow Foundation](../windows-workflow-foundation/index.md).
 
 The Windows Forms classes are a comprehensive set of reusable types that vastly simplify Windows GUI development. If you write an ASP.NET Web Form app, you can use the Web Forms classes.
 
@@ -93,5 +93,5 @@ The Windows Forms classes are a comprehensive set of reusable types that vastly 
 - [Installation guide](../../../docs/framework/install/index.md)
 - [Development Guide](../../../docs/framework/development-guide.md)
 - [Tools](../../../docs/framework/tools/index.md)
-- [.NET Framework Samples](/docs/samples-and-tutorials/index.md)
+- [.NET Framework Samples](../../samples-and-tutorials/index.md)
 - [.NET Framework Class Library](https://go.microsoft.com/fwlink/?LinkID=227195)

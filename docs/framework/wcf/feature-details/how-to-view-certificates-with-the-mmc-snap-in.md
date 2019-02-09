@@ -34,11 +34,11 @@ The following procedure demonstrates how to examine the stores on your local dev
     ![Add certificate snap-in](./media/mmc-add-certificate-snap-in.png)
   
 4. In the **Certificates snap-in** window, select **Computer account**, and then select **Next**. 
+  
+    Optionally, you can select **My user account** for the current user or **Service account** for a particular service. 
 
     > [!NOTE]
-    > To view certificates in the local computer store, you must have the administrator role.
-  
-    Optionally, you can select **My user account** for the current user or **Service account** for a particular service. If you're not an administrator for the computer, you can manage certificates only for your user account.
+    > If you're not an administrator for your device, you can manage certificates only for your user account.
   
 5. In the **Select Computer** window, leave **Local computer** selected, and then select **Finish**.  
   

@@ -17,7 +17,7 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
  [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
  Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds.  
   
- [Visual Studio and .NET Framework Glossary](https://msdn.microsoft.com/library/6529d7c6-7e25-4426-a120-d57b239ca4eb)  
+ [Visual Studio and .NET Framework Glossary](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6c701b8w(v=vs.90))  
  Includes terms used in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] documentation.  
   
 ## External Resources  

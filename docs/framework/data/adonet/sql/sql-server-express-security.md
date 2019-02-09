@@ -25,7 +25,6 @@ Microsoft SQL Server Express Edition (SQL Server Express) is based on Microsoft 
   
 |||  
 |-|-|  
-|[SQL Server Books Online](https://msdn.microsoft.com/library/bb543165.aspx)|Contains documentation for SQL Server Express.|  
 |[Connecting to SQL Server Express](https://msdn.microsoft.com/library/ms165679.aspx) in SQL Server Books Online|Describes how to use SQL Server Express Edition on a network.|  
 |[Microsoft SQL Server 2005 Express Edition Books Online](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms165706(v=sql.90))|Complete documentation for SQL Server 2005 Express Edition.|  
 |[User Instances for Non-Administrators](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms143684(v=sql.100)) in SQL Server Books Online|Describes how to create and deploy user instances.|  

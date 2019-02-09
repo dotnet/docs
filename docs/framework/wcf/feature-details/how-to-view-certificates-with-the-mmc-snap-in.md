@@ -6,10 +6,9 @@ helpviewer_keywords:
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
 ---
 # How to: View certificates with the MMC snap-in
-When you create a secure client or service, you can use a certificate as the credential. For example, a common type of credential is the X.509 certificate, which you create with the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method. The certificate method requires various parameters, such as the certificate store and a value to use to search for the certificate. For information about how to find a certificate thumbprint, see [How to: Retrieve the thumbprint of a certificate](how-to-retrieve-the-thumbprint-of-a-certificate.md). 
+When you create a secure client or service, you can use a [certificate](working-with-certificates.md) as the credential. For example, a common type of credential is the X.509 certificate, which you create with the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method. 
 
-## Certificate stores
-There are three different types of certificate stores that you can examine:
+There are three different types of certificate stores that you can examine with the Microsoft Management Console (MMC):
 
 - Local computer: This type of store is local to the device and global to all users on the device.
 
@@ -18,13 +17,13 @@ There are three different types of certificate stores that you can examine:
 - Service account: This type of store is local to a particular service on the device.
 
   
-## To view certificates in the MMC snap-in  
+## To view certificates in the MMC snap-in 
 
-The following procedure demonstrates how to examine the stores on your local device to find an appropriate certificate. 
+The following procedure demonstrates how to examine the stores on your local device to find an appropriate certificate: 
   
 1. Select **Run** from the **Start** menu, and then enter *mmc*. 
 
-    The Microsoft Management Console (MMC) appears. To view certificates in the local machine store, you must have the administrator role.
+    The MMC appears. To view certificates in the local machine store, you must have the administrator role.
   
 2. From the **File** menu, select **Add/Remove Snap In**. 
     
@@ -52,9 +51,10 @@ The following procedure demonstrates how to examine the stores on your local dev
   
 
 ## View certificates with the Certificate Manager tool
+
 You can also view, export, import, and delete certificates by using the Certificate Manager tool.
 
-### To view certificates with certlm.msc (local device)
+### To view certificates for the local device
 
 1. Select **Run** from the **Start** menu, and then enter *certlm.msc*. 
 
@@ -62,7 +62,7 @@ You can also view, export, import, and delete certificates by using the Certific
   
 2. To view your certificates, under **Certificates - Local Computer** in the left pane, expand the directory for the type of certificate you want to view.
 
-### To view certificates with certmgr.msc (current user)
+### To view certificates for the current user
 
 1. Select **Run** from the **Start** menu, and then enter *certmgr.msc*. 
 

@@ -48,5 +48,8 @@ Assemblies form the fundamental unit of deployment, version control, reuse, acti
  - [.NET assembly file format](file-format.md)  
  - [Assemblies in the Common Language Runtime](../../framework/app-domains/assemblies-in-the-common-language-runtime.md)  
  - [Friend Assemblies (C#)](../../csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
+ - [Friend Assemblies (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md)  
  - [How to: Load and Unload Assemblies (C#)](../../csharp/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)  
+ - [How to: Load and Unload Assemblies (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md)  
  - [How to: Determine If a File Is an Assembly (C#)](../../csharp/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md)  
+ - [How to: Determine If a File Is an Assembly (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md)  

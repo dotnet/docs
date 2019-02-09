@@ -14,8 +14,11 @@ This section provides information on how to access data using ADO.NET, Language 
  [ADO.NET](../../../docs/framework/data/adonet/index.md)  
  Describes the ADO.NET architecture and how to use the ADO.NET classes to manage application data and interact with data sources, including Microsoft SQL Server, OLE DB data sources, and XML.  
   
- [LINQ Portal](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd264799(v=vs.100))  
- Provides links to relevant documentation for Language Integrated Query (LINQ).  
+ [Language Integrated Query (LINQ)](../../csharp/programming-guide/concepts/linq/index.md)  
+ Provides links to relevant documentation for Language Integrated Query (LINQ) using C#.  
+  
+ [Language-Integrated Query (LINQ) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)  
+ Provides links to relevant documentation for Language Integrated Query (LINQ) using Visual Basic.  
   
  [Transaction Processing](../../../docs/framework/data/transactions/index.md)  
  Discusses the .NET Framework support for transactions.  

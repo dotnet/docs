@@ -224,7 +224,10 @@ A semicolon-delimited list of tags that designates the package.
 Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`. 
 
 ### IncludeSymbols
-This Boolean value indicates whether the package should create an additional symbols package when the project is packed. This package will have a *.symbols.nupkg* extension and will copy the PDB files along with the DLL and other output files.
+This Boolean value indicates whether the package should create an additional symbols package when the project is packed. The symbols package's format is controlled by the `SymbolPackageFormat` property.
+
+### SymbolPackageFormat
+Specifies the format of the symbols package. If "symbols.nupkg", a legacy symbols package will be created with a *.symbols.nupkg* extension containing PDBs, DLLs, and other output files. If "snupkg", a snupkg symbol package will be created containing the portable PDBs. Default is "symbols.nupkg".
 
 ### IncludeSource
 This Boolean value indicates whether the pack process should create a source package. The source package contains the library's source code as well as PDB files. Source files are put under the `src/ProjectName` directory in the resulting package file. 

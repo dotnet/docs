@@ -1,6 +1,6 @@
 ---
 title: "CorDebugStateChange Enumeration"
-ms.date: "03/30/2017"
+ms.date: "02/07/2019"
 api_name:
   - "CorDebugStateChange"
 api_location:
@@ -14,6 +14,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CorDebugStateChange Enumeration
+
 Describes the amount of cached data that must be discarded based on changes to the process.
 
 ## Syntax
@@ -34,17 +35,20 @@ typedef enum CorDebugStateChange
 | `FLUSH_ALL`       | The process' memory may be arbitrarily different than it was previously. |
 
 ## Remarks
- A member of the `CorDebugStateChange` enumeration is provided as an argument when the debugger calls the `ProcessStateChanged` method either with [ICorDebugProcess4::ProcessStateChanged](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess4-processstatechanged-method.md) or [ICorDebugProcess6::ProcessStateChanged](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-processstatechanged-method.md)
+
+ A member of the `CorDebugStateChange` enumeration is provided as an argument when the debugger calls the `ProcessStateChanged` method either with [ICorDebugProcess4::ProcessStateChanged](icordebugprocess4-processstatechanged-method.md) or [ICorDebugProcess6::ProcessStateChanged](icordebugprocess6-processstatechanged-method.md)
 
 ## Requirements
+
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
 
  **Header:** CorDebug.idl, CorDebug.h
 
  **Library:** CorGuids.lib
 
- **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  and [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## See also
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [Debugging Enumerations](debugging-enumerations.md)
+- [Debugging](index.md)

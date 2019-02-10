@@ -17,6 +17,7 @@ author: "hoyosjs"
 ms.author: "juhoyosa"
 ---
 # ICorDebugProcess4::ProcessStateChanged Method
+
 Notifies the ICorDebug pipeline that the out of process debugger is continuing the debugee's execution.
 
 ## Syntax
@@ -28,12 +29,14 @@ HRESULT ProcessStateChanged(
 ```
 
 #### Parameters
+
  `eChange`
- [in] A member of the [CorDebugStateChange enumeration](../../../../docs/framework/unmanaged-api/debugging/cordebugstatechange-enumeration.md) describing a change in the process's execution state.
+
+ [in] A member of the [CorDebugStateChange enumeration](cordebugstatechange-enumeration.md) describing a change in the process's execution state.
 
 ## Remarks
 
-The provided method is part of the `ICorDebugProcess4` interface and corresponds to the 4th slot of the virtual method table.
+The provided method is part of the `ICorDebugProcess4` interface and corresponds to the fourth slot of the virtual method table.
 
 ## Requirements
 
@@ -46,6 +49,7 @@ The provided method is part of the `ICorDebugProcess4` interface and corresponds
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## See also
-- [ICorDebugProcess4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess4-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [ICorDebugProcess4 Interface](icordebugprocess4-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

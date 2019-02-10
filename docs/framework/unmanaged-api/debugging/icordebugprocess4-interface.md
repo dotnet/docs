@@ -17,17 +17,18 @@ author: "hoyosjs"
 ms.author: "juhoyosa"
 ---
 # ICorDebugProcess4 Interface
+
 Provides support for out of process execution control.
 
 ## Methods
 
-| Method                                                                                                                    | Description                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [ProcessStateChanged](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess4-processstatechanged-method.md) | Notifies the ICorDebug pipeline that the out of process debugger is continuing the debugee's execution. |
+| Method                                                                 | Description                                                                                             |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [ProcessStateChanged](icordebugprocess4-processstatechanged-method.md) | Notifies the ICorDebug pipeline that the out of process debugger is continuing the debugee's execution. |
 
 ## Remarks
 
-This interface lives inside the runtime and is not exposed through any headers or library files. However, it's a COM interface that derives from `IUnknown` with GUID `E930C679-78AF-4953-8AB7-B0AABF0F9F80` that can be obtained through the usual COM mechanisms.
+This interface lives inside the runtime and isn't exposed through any headers or library files. However, it's a COM interface that derives from `IUnknown` with GUID `E930C679-78AF-4953-8AB7-B0AABF0F9F80` that can be obtained through the usual COM mechanisms.
 
 ## Requirements
 
@@ -40,5 +41,6 @@ This interface lives inside the runtime and is not exposed through any headers o
 **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## See also
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

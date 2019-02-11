@@ -151,7 +151,7 @@ We are passing two parameters into the `Train` method; an `MLContext` for the co
 ## Load and transform data
 
 We'll load the data using the `_textLoader` global variable with the `dataPath` parameter. It returns a
-<xref:Microsoft.Data.DataView.IDataView>. As the input and output of Transforms, a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
+<xref:Microsoft.Data.DataView.IDataView>. As the input and output of Transforms, an `IDataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 
 In ML.NET, data is similar to a SQL view. It is lazily evaluated, schematized, and heterogenous. The object is the first part of the pipeline, and loads the data. For this tutorial, it loads a dataset with taxi trip information useful to predict fares. This is used to create the model, and train it.
 

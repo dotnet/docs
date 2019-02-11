@@ -1,6 +1,6 @@
 ---
 title: "Chaining Tasks by Using Continuation Tasks"
-ms.date: "03/30/2017"
+ms.date: "02/11/2019"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -38,7 +38,10 @@ In asynchronous programming, it is very common for one asynchronous operation, o
  A continuation is itself a <xref:System.Threading.Tasks.Task> and does not block the thread on which it is started. Call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method to block until the continuation task finishes.  
   
 ## Creating a continuation for a single antecedent  
- You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task, `taskA`, that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent completes, the continuation task, `continuation`, is passed the antecedent and displays a string that includes its result.  
+ You create a continuation that executes when its antecedent has completed by calling the <xref:System.Threading.Tasks.Task.ContinueWith%2A?displayProperty=nameWithType> method. The following example shows the basic pattern (for clarity, exception handling is omitted). It executes an antecedent task, `taskA`, that returns a <xref:System.DayOfWeek> object that indicates the name of the current day of the week. When the antecedent completes, the continuation task, `continuation`, is passed the antecedent and displays a string that includes its result. 
+
+> [!NOTE]
+> The samples in this article make use the `async` modifier on the `Main` method. That feature is available in C# 7.1 and later. Previous versions generate `CS5001` when compiling this sample code. You'll need to set the language version to C# 7.1 or newer. You can learn how to configure the language version in the article on [configure language version](../../csharp/language-reference/configure-language-version.md).
   
  [!code-csharp[TPL_Continuations#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_continuations/cs/simple1.cs#1)]
  [!code-vb[TPL_Continuations#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_continuations/vb/simple1.vb#1)]  

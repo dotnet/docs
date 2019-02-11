@@ -1,0 +1,605 @@
+﻿<Type Name="Duration" FullName="Windows.UI.Xaml.Duration">
+  <TypeSignature Language="C#" Value="public struct Duration" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Duration extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Duration" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Duration" />
+  <TypeSignature Language="C++ CLI" Value="public value class Duration" />
+  <TypeSignature Language="F#" Value="type Duration = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Duration (TimeSpan timeSpan);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan timeSpan) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Duration(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="new Windows.UI.Xaml.Duration : TimeSpan -&gt; Windows.UI.Xaml.Duration" Usage="new Windows.UI.Xaml.Duration timeSpan" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="timeSpan" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeSpan">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Duration Add (Windows.UI.Xaml.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Windows.UI.Xaml.Duration Add(valuetype Windows.UI.Xaml.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.Add(Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Windows::UI::Xaml::Duration Add(Windows::UI::Xaml::Duration duration);" />
+      <MemberSignature Language="F#" Value="member this.Add : Windows.UI.Xaml.Duration -&gt; Windows.UI.Xaml.Duration" Usage="duration.Add duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="duration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Automatic">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Duration Automatic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Windows.UI.Xaml.Duration Automatic" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Duration.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Automatic As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Windows::UI::Xaml::Duration Automatic { Windows::UI::Xaml::Duration get(); };" />
+      <MemberSignature Language="F#" Value="member this.Automatic : Windows.UI.Xaml.Duration" Usage="Windows.UI.Xaml.Duration.Automatic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public static int Compare (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.Compare(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (t1 As Duration, t2 As Duration) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member Compare : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; int" Usage="Windows.UI.Xaml.Duration.Compare (t1, t2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="duration.Equals value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Windows.UI.Xaml.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Windows.UI.Xaml.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.Equals(Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Windows::UI::Xaml::Duration duration);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Windows.UI.Xaml.Duration -&gt; bool" Usage="duration.Equals duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="duration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.Equals(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member Equals : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="Windows.UI.Xaml.Duration.Equals (t1, t2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Forever">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Duration Forever { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Windows.UI.Xaml.Duration Forever" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Duration.Forever" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Forever As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Windows::UI::Xaml::Duration Forever { Windows::UI::Xaml::Duration get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forever : Windows.UI.Xaml.Duration" Usage="Windows.UI.Xaml.Duration.Forever" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="duration.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTimeSpan">
+      <MemberSignature Language="C#" Value="public bool HasTimeSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasTimeSpan" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Duration.HasTimeSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTimeSpan As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTimeSpan { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasTimeSpan : bool" Usage="Windows.UI.Xaml.Duration.HasTimeSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Duration operator + (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Windows.UI.Xaml.Duration op_Addition(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_Addition(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (t1 As Duration, t2 As Duration) As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Xaml::Duration operator +(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; Windows.UI.Xaml.Duration" Usage="t1 + t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_Equality(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="t1 = t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThan">
+      <MemberSignature Language="C#" Value="public static bool operator &gt; (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThan(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_GreaterThan(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="t1 &gt; t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool operator &gt;= (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_GreaterThanOrEqual(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_GreaterThanOrEqual(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="t1 &gt;= t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Windows.UI.Xaml.Duration (TimeSpan timeSpan);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Windows.UI.Xaml.Duration op_Implicit(valuetype System.TimeSpan timeSpan) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_Implicit(System.TimeSpan)~Windows.UI.Xaml.Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Windows::UI::Xaml::Duration(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : TimeSpan -&gt; Windows.UI.Xaml.Duration" Usage="Windows.UI.Xaml.Duration.op_Implicit timeSpan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeSpan" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeSpan">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_Inequality(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="Windows.UI.Xaml.Duration.op_Inequality (t1, t2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThan">
+      <MemberSignature Language="C#" Value="public static bool operator &lt; (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThan(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_LessThan(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="t1 &lt; t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool operator &lt;= (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_LessThanOrEqual(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_LessThanOrEqual(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (t1 As Duration, t2 As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; bool" Usage="t1 &lt;= t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Duration operator - (Windows.UI.Xaml.Duration t1, Windows.UI.Xaml.Duration t2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Windows.UI.Xaml.Duration op_Subtraction(valuetype Windows.UI.Xaml.Duration t1, valuetype Windows.UI.Xaml.Duration t2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_Subtraction(Windows.UI.Xaml.Duration,Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (t1 As Duration, t2 As Duration) As Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Xaml::Duration operator -(Windows::UI::Xaml::Duration t1, Windows::UI::Xaml::Duration t2);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : Windows.UI.Xaml.Duration * Windows.UI.Xaml.Duration -&gt; Windows.UI.Xaml.Duration" Usage="t1 - t2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t1" Type="Windows.UI.Xaml.Duration" />
+        <Parameter Name="t2" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="t1">To be added.</param>
+        <param name="t2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryPlus">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Duration operator + (Windows.UI.Xaml.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Windows.UI.Xaml.Duration op_UnaryPlus(valuetype Windows.UI.Xaml.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.op_UnaryPlus(Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Xaml::Duration operator +(Windows::UI::Xaml::Duration duration);" />
+      <MemberSignature Language="F#" Value="static member ( ~+ ) : Windows.UI.Xaml.Duration -&gt; Windows.UI.Xaml.Duration" Usage="+ duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="duration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Duration Subtract (Windows.UI.Xaml.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Windows.UI.Xaml.Duration Subtract(valuetype Windows.UI.Xaml.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.Subtract(Windows.UI.Xaml.Duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Windows::UI::Xaml::Duration Subtract(Windows::UI::Xaml::Duration duration);" />
+      <MemberSignature Language="F#" Value="member this.Subtract : Windows.UI.Xaml.Duration -&gt; Windows.UI.Xaml.Duration" Usage="duration.Subtract duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Duration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="Windows.UI.Xaml.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="duration">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeSpan">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeSpan" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Duration.TimeSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeSpan As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeSpan { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeSpan : TimeSpan" Usage="Windows.UI.Xaml.Duration.TimeSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Duration.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="duration.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

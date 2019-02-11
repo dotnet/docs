@@ -1,0 +1,86 @@
+﻿<Type Name="DurationType" FullName="Windows.UI.Xaml.DurationType">
+  <TypeSignature Language="C#" Value="public enum DurationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DurationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.DurationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DurationType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DurationType" />
+  <TypeSignature Language="F#" Value="type DurationType = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Automatic">
+      <MemberSignature Language="C#" Value="Automatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.DurationType Automatic = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.DurationType.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Automatic" />
+      <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 0" Usage="Windows.UI.Xaml.DurationType.Automatic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DurationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forever">
+      <MemberSignature Language="C#" Value="Forever" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.DurationType Forever = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.DurationType.Forever" />
+      <MemberSignature Language="VB.NET" Value="Forever" />
+      <MemberSignature Language="C++ CLI" Value="Forever" />
+      <MemberSignature Language="F#" Value="Forever = 2" Usage="Windows.UI.Xaml.DurationType.Forever" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DurationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeSpan">
+      <MemberSignature Language="C#" Value="TimeSpan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.DurationType TimeSpan = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.DurationType.TimeSpan" />
+      <MemberSignature Language="VB.NET" Value="TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="TimeSpan" />
+      <MemberSignature Language="F#" Value="TimeSpan = 1" Usage="Windows.UI.Xaml.DurationType.TimeSpan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DurationType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

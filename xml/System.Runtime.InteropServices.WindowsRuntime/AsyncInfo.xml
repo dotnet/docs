@@ -1,0 +1,144 @@
+﻿<Type Name="AsyncInfo" FullName="System.Runtime.InteropServices.WindowsRuntime.AsyncInfo">
+  <TypeSignature Language="C#" Value="public static class AsyncInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AsyncInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsyncInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsyncInfo abstract sealed" />
+  <TypeSignature Language="F#" Value="type AsyncInfo = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncAction Run (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; taskProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncAction Run(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task&gt; taskProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Run (taskProvider As Func(Of CancellationToken, Task)) As IAsyncAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::Foundation::IAsyncAction ^ Run(Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task ^&gt; ^ taskProvider);" />
+      <MemberSignature Language="F#" Value="static member Run : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt; -&gt; Windows.Foundation.IAsyncAction" Usage="System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run taskProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskProvider" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="taskProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run&lt;TProgress&gt;">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncActionWithProgress&lt;TProgress&gt; Run&lt;TProgress&gt; (Func&lt;System.Threading.CancellationToken,IProgress&lt;TProgress&gt;,System.Threading.Tasks.Task&gt; taskProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncActionWithProgress`1&lt;!!TProgress&gt; Run&lt;TProgress&gt;(class System.Func`3&lt;valuetype System.Threading.CancellationToken, class System.IProgress`1&lt;!!TProgress&gt;, class System.Threading.Tasks.Task&gt; taskProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.IProgress{``0},System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Run(Of TProgress) (taskProvider As Func(Of CancellationToken, IProgress(Of TProgress), Task)) As IAsyncActionWithProgress(Of TProgress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TProgress&gt;&#xA; static Windows::Foundation::IAsyncActionWithProgress&lt;TProgress&gt; ^ Run(Func&lt;System::Threading::CancellationToken, IProgress&lt;TProgress&gt; ^, System::Threading::Tasks::Task ^&gt; ^ taskProvider);" />
+      <MemberSignature Language="F#" Value="static member Run : Func&lt;System.Threading.CancellationToken, IProgress&lt;'Progress&gt;, System.Threading.Tasks.Task&gt; -&gt; Windows.Foundation.IAsyncActionWithProgress&lt;'Progress&gt;" Usage="System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run taskProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncActionWithProgress&lt;TProgress&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TProgress" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="taskProvider" Type="System.Func&lt;System.Threading.CancellationToken,System.IProgress&lt;TProgress&gt;,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TProgress">To be added.</typeparam>
+        <param name="taskProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run&lt;TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperation&lt;TResult&gt; Run&lt;TResult&gt; (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;TResult&gt;&gt; taskProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperation`1&lt;!!TResult&gt; Run&lt;TResult&gt;(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;!!TResult&gt;&gt; taskProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Run(Of TResult) (taskProvider As Func(Of CancellationToken, Task(Of TResult))) As IAsyncOperation(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult&gt;&#xA; static Windows::Foundation::IAsyncOperation&lt;TResult&gt; ^ Run(Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ taskProvider);" />
+      <MemberSignature Language="F#" Value="static member Run : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;'Result&gt;&gt; -&gt; Windows.Foundation.IAsyncOperation&lt;'Result&gt;" Usage="System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run taskProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="taskProvider" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="taskProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run&lt;TResult,TProgress&gt;">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.IAsyncOperationWithProgress&lt;TResult,TProgress&gt; Run&lt;TResult,TProgress&gt; (Func&lt;System.Threading.CancellationToken,IProgress&lt;TProgress&gt;,System.Threading.Tasks.Task&lt;TResult&gt;&gt; taskProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Foundation.IAsyncOperationWithProgress`2&lt;!!TResult, !!TProgress&gt; Run&lt;TResult, TProgress&gt;(class System.Func`3&lt;valuetype System.Threading.CancellationToken, class System.IProgress`1&lt;!!TProgress&gt;, class System.Threading.Tasks.Task`1&lt;!!TResult&gt;&gt; taskProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run``2(System.Func{System.Threading.CancellationToken,System.IProgress{``1},System.Threading.Tasks.Task{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Run(Of TResult, TProgress) (taskProvider As Func(Of CancellationToken, IProgress(Of TProgress), Task(Of TResult))) As IAsyncOperationWithProgress(Of TResult, TProgress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResult, typename TProgress&gt;&#xA; static Windows::Foundation::IAsyncOperationWithProgress&lt;TResult, TProgress&gt; ^ Run(Func&lt;System::Threading::CancellationToken, IProgress&lt;TProgress&gt; ^, System::Threading::Tasks::Task&lt;TResult&gt; ^&gt; ^ taskProvider);" />
+      <MemberSignature Language="F#" Value="static member Run : Func&lt;System.Threading.CancellationToken, IProgress&lt;'Progress&gt;, System.Threading.Tasks.Task&lt;'Result&gt;&gt; -&gt; Windows.Foundation.IAsyncOperationWithProgress&lt;'Result, 'Progress&gt;" Usage="System.Runtime.InteropServices.WindowsRuntime.AsyncInfo.Run taskProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperationWithProgress&lt;TResult,TProgress&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="TProgress" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="taskProvider" Type="System.Func&lt;System.Threading.CancellationToken,System.IProgress&lt;TProgress&gt;,System.Threading.Tasks.Task&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="TProgress">To be added.</typeparam>
+        <param name="taskProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,86 @@
+﻿<Type Name="RepeatBehaviorType" FullName="Windows.UI.Xaml.Media.Animation.RepeatBehaviorType">
+  <TypeSignature Language="C#" Value="public enum RepeatBehaviorType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RepeatBehaviorType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Media.Animation.RepeatBehaviorType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RepeatBehaviorType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RepeatBehaviorType" />
+  <TypeSignature Language="F#" Value="type RepeatBehaviorType = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="Count" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.Media.Animation.RepeatBehaviorType Count = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.Media.Animation.RepeatBehaviorType.Count" />
+      <MemberSignature Language="VB.NET" Value="Count" />
+      <MemberSignature Language="C++ CLI" Value="Count" />
+      <MemberSignature Language="F#" Value="Count = 0" Usage="Windows.UI.Xaml.Media.Animation.RepeatBehaviorType.Count" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.RepeatBehaviorType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="Duration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.Media.Animation.RepeatBehaviorType Duration = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.Media.Animation.RepeatBehaviorType.Duration" />
+      <MemberSignature Language="VB.NET" Value="Duration" />
+      <MemberSignature Language="C++ CLI" Value="Duration" />
+      <MemberSignature Language="F#" Value="Duration = 1" Usage="Windows.UI.Xaml.Media.Animation.RepeatBehaviorType.Duration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.RepeatBehaviorType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forever">
+      <MemberSignature Language="C#" Value="Forever" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.Media.Animation.RepeatBehaviorType Forever = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.Media.Animation.RepeatBehaviorType.Forever" />
+      <MemberSignature Language="VB.NET" Value="Forever" />
+      <MemberSignature Language="C++ CLI" Value="Forever" />
+      <MemberSignature Language="F#" Value="Forever = 2" Usage="Windows.UI.Xaml.Media.Animation.RepeatBehaviorType.Forever" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.RepeatBehaviorType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

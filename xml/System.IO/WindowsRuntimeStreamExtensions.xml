@@ -1,0 +1,300 @@
+﻿<Type Name="WindowsRuntimeStreamExtensions" FullName="System.IO.WindowsRuntimeStreamExtensions">
+  <TypeSignature Language="C#" Value="public static class WindowsRuntimeStreamExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WindowsRuntimeStreamExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.WindowsRuntimeStreamExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module WindowsRuntimeStreamExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeStreamExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type WindowsRuntimeStreamExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsInputStream">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IInputStream AsInputStream (this System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IInputStream AsInputStream(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsInputStream(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IInputStream ^ AsInputStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member AsInputStream : System.IO.Stream -&gt; Windows.Storage.Streams.IInputStream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsInputStream stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IInputStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsOutputStream">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IOutputStream AsOutputStream (this System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IOutputStream AsOutputStream(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsOutputStream(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IOutputStream ^ AsOutputStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member AsOutputStream : System.IO.Stream -&gt; Windows.Storage.Streams.IOutputStream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsOutputStream stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IOutputStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsRandomAccessStream">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IRandomAccessStream AsRandomAccessStream (this System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IRandomAccessStream AsRandomAccessStream(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IRandomAccessStream ^ AsRandomAccessStream(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member AsRandomAccessStream : System.IO.Stream -&gt; Windows.Storage.Streams.IRandomAccessStream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IRandomAccessStream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this Windows.Storage.Streams.IRandomAccessStream windowsRuntimeStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(class Windows.Storage.Streams.IRandomAccessStream windowsRuntimeStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsStream(Windows.Storage.Streams.IRandomAccessStream)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (windowsRuntimeStream As IRandomAccessStream) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStream(Windows::Storage::Streams::IRandomAccessStream ^ windowsRuntimeStream);" />
+      <MemberSignature Language="F#" Value="static member AsStream : Windows.Storage.Streams.IRandomAccessStream -&gt; System.IO.Stream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsStream windowsRuntimeStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IRandomAccessStream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this Windows.Storage.Streams.IRandomAccessStream windowsRuntimeStream, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(class Windows.Storage.Streams.IRandomAccessStream windowsRuntimeStream, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsStream(Windows.Storage.Streams.IRandomAccessStream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (windowsRuntimeStream As IRandomAccessStream, bufferSize As Integer) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStream(Windows::Storage::Streams::IRandomAccessStream ^ windowsRuntimeStream, int bufferSize);" />
+      <MemberSignature Language="F#" Value="static member AsStream : Windows.Storage.Streams.IRandomAccessStream * int -&gt; System.IO.Stream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsStream (windowsRuntimeStream, bufferSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IRandomAccessStream" RefType="this" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeStream">To be added.</param>
+        <param name="bufferSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStreamForRead">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStreamForRead (this Windows.Storage.Streams.IInputStream windowsRuntimeStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStreamForRead(class Windows.Storage.Streams.IInputStream windowsRuntimeStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead(Windows.Storage.Streams.IInputStream)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStreamForRead (windowsRuntimeStream As IInputStream) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStreamForRead(Windows::Storage::Streams::IInputStream ^ windowsRuntimeStream);" />
+      <MemberSignature Language="F#" Value="static member AsStreamForRead : Windows.Storage.Streams.IInputStream -&gt; System.IO.Stream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead windowsRuntimeStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IInputStream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStreamForRead">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStreamForRead (this Windows.Storage.Streams.IInputStream windowsRuntimeStream, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStreamForRead(class Windows.Storage.Streams.IInputStream windowsRuntimeStream, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead(Windows.Storage.Streams.IInputStream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStreamForRead (windowsRuntimeStream As IInputStream, bufferSize As Integer) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStreamForRead(Windows::Storage::Streams::IInputStream ^ windowsRuntimeStream, int bufferSize);" />
+      <MemberSignature Language="F#" Value="static member AsStreamForRead : Windows.Storage.Streams.IInputStream * int -&gt; System.IO.Stream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead (windowsRuntimeStream, bufferSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IInputStream" RefType="this" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeStream">To be added.</param>
+        <param name="bufferSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStreamForWrite">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStreamForWrite (this Windows.Storage.Streams.IOutputStream windowsRuntimeStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStreamForWrite(class Windows.Storage.Streams.IOutputStream windowsRuntimeStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite(Windows.Storage.Streams.IOutputStream)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStreamForWrite (windowsRuntimeStream As IOutputStream) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStreamForWrite(Windows::Storage::Streams::IOutputStream ^ windowsRuntimeStream);" />
+      <MemberSignature Language="F#" Value="static member AsStreamForWrite : Windows.Storage.Streams.IOutputStream -&gt; System.IO.Stream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite windowsRuntimeStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IOutputStream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStreamForWrite">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStreamForWrite (this Windows.Storage.Streams.IOutputStream windowsRuntimeStream, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStreamForWrite(class Windows.Storage.Streams.IOutputStream windowsRuntimeStream, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite(Windows.Storage.Streams.IOutputStream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStreamForWrite (windowsRuntimeStream As IOutputStream, bufferSize As Integer) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStreamForWrite(Windows::Storage::Streams::IOutputStream ^ windowsRuntimeStream, int bufferSize);" />
+      <MemberSignature Language="F#" Value="static member AsStreamForWrite : Windows.Storage.Streams.IOutputStream * int -&gt; System.IO.Stream" Usage="System.IO.WindowsRuntimeStreamExtensions.AsStreamForWrite (windowsRuntimeStream, bufferSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IOutputStream" RefType="this" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeStream">To be added.</param>
+        <param name="bufferSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

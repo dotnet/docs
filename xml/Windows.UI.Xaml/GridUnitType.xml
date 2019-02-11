@@ -1,0 +1,86 @@
+﻿<Type Name="GridUnitType" FullName="Windows.UI.Xaml.GridUnitType">
+  <TypeSignature Language="C#" Value="public enum GridUnitType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridUnitType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.GridUnitType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridUnitType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridUnitType" />
+  <TypeSignature Language="F#" Value="type GridUnitType = " />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.GridUnitType Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.GridUnitType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="Windows.UI.Xaml.GridUnitType.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.GridUnitType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pixel">
+      <MemberSignature Language="C#" Value="Pixel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.GridUnitType Pixel = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.GridUnitType.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 1" Usage="Windows.UI.Xaml.GridUnitType.Pixel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.GridUnitType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Star">
+      <MemberSignature Language="C#" Value="Star" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.GridUnitType Star = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Windows.UI.Xaml.GridUnitType.Star" />
+      <MemberSignature Language="VB.NET" Value="Star" />
+      <MemberSignature Language="C++ CLI" Value="Star" />
+      <MemberSignature Language="F#" Value="Star = 2" Usage="Windows.UI.Xaml.GridUnitType.Star" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.GridUnitType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type IPropagatorBlock&lt;'Input, 'Output&gt; = interface&#xA;    interface IDataflowBlock&#xA;    interface ISourceBlock&lt;'Output&gt;&#xA;    interface ITargetBlock&lt;'Input&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.5.25.0</AssemblyVersion>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
     <AssemblyVersion>4.6.2.0</AssemblyVersion>

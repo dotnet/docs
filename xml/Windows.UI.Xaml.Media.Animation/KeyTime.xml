@@ -1,0 +1,286 @@
+﻿<Type Name="KeyTime" FullName="Windows.UI.Xaml.Media.Animation.KeyTime">
+  <TypeSignature Language="C#" Value="public struct KeyTime" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit KeyTime extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Media.Animation.KeyTime" />
+  <TypeSignature Language="VB.NET" Value="Public Structure KeyTime" />
+  <TypeSignature Language="C++ CLI" Value="public value class KeyTime" />
+  <TypeSignature Language="F#" Value="type KeyTime = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="keyTime.Equals value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Windows.UI.Xaml.Media.Animation.KeyTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Windows.UI.Xaml.Media.Animation.KeyTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.Equals(Windows.UI.Xaml.Media.Animation.KeyTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As KeyTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Windows::UI::Xaml::Media::Animation::KeyTime value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Windows.UI.Xaml.Media.Animation.KeyTime -&gt; bool" Usage="keyTime.Equals value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (Windows.UI.Xaml.Media.Animation.KeyTime keyTime1, Windows.UI.Xaml.Media.Animation.KeyTime keyTime2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype Windows.UI.Xaml.Media.Animation.KeyTime keyTime1, valuetype Windows.UI.Xaml.Media.Animation.KeyTime keyTime2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.Equals(Windows.UI.Xaml.Media.Animation.KeyTime,Windows.UI.Xaml.Media.Animation.KeyTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (keyTime1 As KeyTime, keyTime2 As KeyTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(Windows::UI::Xaml::Media::Animation::KeyTime keyTime1, Windows::UI::Xaml::Media::Animation::KeyTime keyTime2);" />
+      <MemberSignature Language="F#" Value="static member Equals : Windows.UI.Xaml.Media.Animation.KeyTime * Windows.UI.Xaml.Media.Animation.KeyTime -&gt; bool" Usage="Windows.UI.Xaml.Media.Animation.KeyTime.Equals (keyTime1, keyTime2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyTime1" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+        <Parameter Name="keyTime2" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="keyTime1">To be added.</param>
+        <param name="keyTime2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromTimeSpan">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Animation.KeyTime FromTimeSpan (TimeSpan timeSpan);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Xaml.Media.Animation.KeyTime FromTimeSpan(valuetype System.TimeSpan timeSpan) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.FromTimeSpan(System.TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Xaml::Media::Animation::KeyTime FromTimeSpan(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="static member FromTimeSpan : TimeSpan -&gt; Windows.UI.Xaml.Media.Animation.KeyTime" Usage="Windows.UI.Xaml.Media.Animation.KeyTime.FromTimeSpan timeSpan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.KeyTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeSpan" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeSpan">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="keyTime.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Windows.UI.Xaml.Media.Animation.KeyTime keyTime1, Windows.UI.Xaml.Media.Animation.KeyTime keyTime2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Windows.UI.Xaml.Media.Animation.KeyTime keyTime1, valuetype Windows.UI.Xaml.Media.Animation.KeyTime keyTime2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.op_Equality(Windows.UI.Xaml.Media.Animation.KeyTime,Windows.UI.Xaml.Media.Animation.KeyTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (keyTime1 As KeyTime, keyTime2 As KeyTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Windows::UI::Xaml::Media::Animation::KeyTime keyTime1, Windows::UI::Xaml::Media::Animation::KeyTime keyTime2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Windows.UI.Xaml.Media.Animation.KeyTime * Windows.UI.Xaml.Media.Animation.KeyTime -&gt; bool" Usage="keyTime1 = keyTime2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyTime1" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+        <Parameter Name="keyTime2" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="keyTime1">To be added.</param>
+        <param name="keyTime2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Windows.UI.Xaml.Media.Animation.KeyTime (TimeSpan timeSpan);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Windows.UI.Xaml.Media.Animation.KeyTime op_Implicit(valuetype System.TimeSpan timeSpan) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.op_Implicit(System.TimeSpan)~Windows.UI.Xaml.Media.Animation.KeyTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Windows::UI::Xaml::Media::Animation::KeyTime(TimeSpan timeSpan);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : TimeSpan -&gt; Windows.UI.Xaml.Media.Animation.KeyTime" Usage="Windows.UI.Xaml.Media.Animation.KeyTime.op_Implicit timeSpan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.KeyTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeSpan" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeSpan">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Windows.UI.Xaml.Media.Animation.KeyTime keyTime1, Windows.UI.Xaml.Media.Animation.KeyTime keyTime2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Windows.UI.Xaml.Media.Animation.KeyTime keyTime1, valuetype Windows.UI.Xaml.Media.Animation.KeyTime keyTime2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.op_Inequality(Windows.UI.Xaml.Media.Animation.KeyTime,Windows.UI.Xaml.Media.Animation.KeyTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (keyTime1 As KeyTime, keyTime2 As KeyTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Windows::UI::Xaml::Media::Animation::KeyTime keyTime1, Windows::UI::Xaml::Media::Animation::KeyTime keyTime2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Windows.UI.Xaml.Media.Animation.KeyTime * Windows.UI.Xaml.Media.Animation.KeyTime -&gt; bool" Usage="Windows.UI.Xaml.Media.Animation.KeyTime.op_Inequality (keyTime1, keyTime2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyTime1" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+        <Parameter Name="keyTime2" Type="Windows.UI.Xaml.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="keyTime1">To be added.</param>
+        <param name="keyTime2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeSpan">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeSpan" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Animation.KeyTime.TimeSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeSpan As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeSpan { TimeSpan get(); };" />
+      <MemberSignature Language="F#" Value="member this.TimeSpan : TimeSpan" Usage="Windows.UI.Xaml.Media.Animation.KeyTime.TimeSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Animation.KeyTime.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="keyTime.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

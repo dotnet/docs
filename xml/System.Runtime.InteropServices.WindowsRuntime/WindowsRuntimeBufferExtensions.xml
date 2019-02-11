@@ -1,0 +1,553 @@
+﻿<Type Name="WindowsRuntimeBufferExtensions" FullName="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions">
+  <TypeSignature Language="C#" Value="public static class WindowsRuntimeBufferExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WindowsRuntimeBufferExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module WindowsRuntimeBufferExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeBufferExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type WindowsRuntimeBufferExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsBuffer">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer AsBuffer (this byte[] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer AsBuffer(unsigned int8[] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsBuffer(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsBuffer (source As Byte()) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IBuffer ^ AsBuffer(cli::array &lt;System::Byte&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsBuffer : byte[] -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsBuffer source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Byte[]" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsBuffer">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer AsBuffer (this byte[] source, int offset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer AsBuffer(unsigned int8[] source, int32 offset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsBuffer(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsBuffer (source As Byte(), offset As Integer, length As Integer) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IBuffer ^ AsBuffer(cli::array &lt;System::Byte&gt; ^ source, int offset, int length);" />
+      <MemberSignature Language="F#" Value="static member AsBuffer : byte[] * int * int -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsBuffer (source, offset, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Byte[]" RefType="this" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsBuffer">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer AsBuffer (this byte[] source, int offset, int length, int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer AsBuffer(unsigned int8[] source, int32 offset, int32 length, int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsBuffer(System.Byte[],System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsBuffer (source As Byte(), offset As Integer, length As Integer, capacity As Integer) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IBuffer ^ AsBuffer(cli::array &lt;System::Byte&gt; ^ source, int offset, int length, int capacity);" />
+      <MemberSignature Language="F#" Value="static member AsBuffer : byte[] * int * int * int -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsBuffer (source, offset, length, capacity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Byte[]" RefType="this" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="length">To be added.</param>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this Windows.Storage.Streams.IBuffer source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(class Windows.Storage.Streams.IBuffer source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsStream(Windows.Storage.Streams.IBuffer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (source As IBuffer) As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::IO::Stream ^ AsStream(Windows::Storage::Streams::IBuffer ^ source);" />
+      <MemberSignature Language="F#" Value="static member AsStream : Windows.Storage.Streams.IBuffer -&gt; System.IO.Stream" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.AsStream source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public static void CopyTo (this byte[] source, Windows.Storage.Streams.IBuffer destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(unsigned int8[] source, class Windows.Storage.Streams.IBuffer destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo(System.Byte[],Windows.Storage.Streams.IBuffer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As Byte(), destination As IBuffer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(cli::array &lt;System::Byte&gt; ^ source, Windows::Storage::Streams::IBuffer ^ destination);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : byte[] * Windows.Storage.Streams.IBuffer -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo (source, destination)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Byte[]" RefType="this" />
+        <Parameter Name="destination" Type="Windows.Storage.Streams.IBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public static void CopyTo (this Windows.Storage.Streams.IBuffer source, byte[] destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(class Windows.Storage.Streams.IBuffer source, unsigned int8[] destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo(Windows.Storage.Streams.IBuffer,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As IBuffer, destination As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(Windows::Storage::Streams::IBuffer ^ source, cli::array &lt;System::Byte&gt; ^ destination);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : Windows.Storage.Streams.IBuffer * byte[] -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo (source, destination)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="destination" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public static void CopyTo (this Windows.Storage.Streams.IBuffer source, Windows.Storage.Streams.IBuffer destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(class Windows.Storage.Streams.IBuffer source, class Windows.Storage.Streams.IBuffer destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo(Windows.Storage.Streams.IBuffer,Windows.Storage.Streams.IBuffer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As IBuffer, destination As IBuffer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(Windows::Storage::Streams::IBuffer ^ source, Windows::Storage::Streams::IBuffer ^ destination);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : Windows.Storage.Streams.IBuffer * Windows.Storage.Streams.IBuffer -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo (source, destination)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="destination" Type="Windows.Storage.Streams.IBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destination">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public static void CopyTo (this byte[] source, int sourceIndex, Windows.Storage.Streams.IBuffer destination, uint destinationIndex, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(unsigned int8[] source, int32 sourceIndex, class Windows.Storage.Streams.IBuffer destination, unsigned int32 destinationIndex, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo(System.Byte[],System.Int32,Windows.Storage.Streams.IBuffer,System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As Byte(), sourceIndex As Integer, destination As IBuffer, destinationIndex As UInteger, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(cli::array &lt;System::Byte&gt; ^ source, int sourceIndex, Windows::Storage::Streams::IBuffer ^ destination, System::UInt32 destinationIndex, int count);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : byte[] * int * Windows.Storage.Streams.IBuffer * uint32 * int -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo (source, sourceIndex, destination, destinationIndex, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Byte[]" RefType="this" />
+        <Parameter Name="sourceIndex" Type="System.Int32" />
+        <Parameter Name="destination" Type="Windows.Storage.Streams.IBuffer" />
+        <Parameter Name="destinationIndex" Type="System.UInt32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="sourceIndex">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="destinationIndex">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public static void CopyTo (this Windows.Storage.Streams.IBuffer source, uint sourceIndex, byte[] destination, int destinationIndex, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(class Windows.Storage.Streams.IBuffer source, unsigned int32 sourceIndex, unsigned int8[] destination, int32 destinationIndex, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo(Windows.Storage.Streams.IBuffer,System.UInt32,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As IBuffer, sourceIndex As UInteger, destination As Byte(), destinationIndex As Integer, count As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(Windows::Storage::Streams::IBuffer ^ source, System::UInt32 sourceIndex, cli::array &lt;System::Byte&gt; ^ destination, int destinationIndex, int count);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : Windows.Storage.Streams.IBuffer * uint32 * byte[] * int * int -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo (source, sourceIndex, destination, destinationIndex, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="sourceIndex" Type="System.UInt32" />
+        <Parameter Name="destination" Type="System.Byte[]" />
+        <Parameter Name="destinationIndex" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="sourceIndex">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="destinationIndex">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public static void CopyTo (this Windows.Storage.Streams.IBuffer source, uint sourceIndex, Windows.Storage.Streams.IBuffer destination, uint destinationIndex, uint count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(class Windows.Storage.Streams.IBuffer source, unsigned int32 sourceIndex, class Windows.Storage.Streams.IBuffer destination, unsigned int32 destinationIndex, unsigned int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo(Windows.Storage.Streams.IBuffer,System.UInt32,Windows.Storage.Streams.IBuffer,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As IBuffer, sourceIndex As UInteger, destination As IBuffer, destinationIndex As UInteger, count As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(Windows::Storage::Streams::IBuffer ^ source, System::UInt32 sourceIndex, Windows::Storage::Streams::IBuffer ^ destination, System::UInt32 destinationIndex, System::UInt32 count);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : Windows.Storage.Streams.IBuffer * uint32 * Windows.Storage.Streams.IBuffer * uint32 * uint32 -&gt; unit" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.CopyTo (source, sourceIndex, destination, destinationIndex, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="sourceIndex" Type="System.UInt32" />
+        <Parameter Name="destination" Type="Windows.Storage.Streams.IBuffer" />
+        <Parameter Name="destinationIndex" Type="System.UInt32" />
+        <Parameter Name="count" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="sourceIndex">To be added.</param>
+        <param name="destination">To be added.</param>
+        <param name="destinationIndex">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public static byte GetByte (this Windows.Storage.Streams.IBuffer source, uint byteOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8 GetByte(class Windows.Storage.Streams.IBuffer source, unsigned int32 byteOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.GetByte(Windows.Storage.Streams.IBuffer,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetByte (source As IBuffer, byteOffset As UInteger) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Byte GetByte(Windows::Storage::Streams::IBuffer ^ source, System::UInt32 byteOffset);" />
+      <MemberSignature Language="F#" Value="static member GetByte : Windows.Storage.Streams.IBuffer * uint32 -&gt; byte" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.GetByte (source, byteOffset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="byteOffset" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="byteOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWindowsRuntimeBuffer">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer GetWindowsRuntimeBuffer (this System.IO.MemoryStream underlyingStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer GetWindowsRuntimeBuffer(class System.IO.MemoryStream underlyingStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.GetWindowsRuntimeBuffer(System.IO.MemoryStream)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetWindowsRuntimeBuffer (underlyingStream As MemoryStream) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IBuffer ^ GetWindowsRuntimeBuffer(System::IO::MemoryStream ^ underlyingStream);" />
+      <MemberSignature Language="F#" Value="static member GetWindowsRuntimeBuffer : System.IO.MemoryStream -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.GetWindowsRuntimeBuffer underlyingStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="underlyingStream" Type="System.IO.MemoryStream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingStream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWindowsRuntimeBuffer">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer GetWindowsRuntimeBuffer (this System.IO.MemoryStream underlyingStream, int positionInStream, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer GetWindowsRuntimeBuffer(class System.IO.MemoryStream underlyingStream, int32 positionInStream, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.GetWindowsRuntimeBuffer(System.IO.MemoryStream,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetWindowsRuntimeBuffer (underlyingStream As MemoryStream, positionInStream As Integer, length As Integer) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Windows::Storage::Streams::IBuffer ^ GetWindowsRuntimeBuffer(System::IO::MemoryStream ^ underlyingStream, int positionInStream, int length);" />
+      <MemberSignature Language="F#" Value="static member GetWindowsRuntimeBuffer : System.IO.MemoryStream * int * int -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.GetWindowsRuntimeBuffer (underlyingStream, positionInStream, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="underlyingStream" Type="System.IO.MemoryStream" RefType="this" />
+        <Parameter Name="positionInStream" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingStream">To be added.</param>
+        <param name="positionInStream">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSameData">
+      <MemberSignature Language="C#" Value="public static bool IsSameData (this Windows.Storage.Streams.IBuffer buffer, Windows.Storage.Streams.IBuffer otherBuffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSameData(class Windows.Storage.Streams.IBuffer buffer, class Windows.Storage.Streams.IBuffer otherBuffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.IsSameData(Windows.Storage.Streams.IBuffer,Windows.Storage.Streams.IBuffer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsSameData (buffer As IBuffer, otherBuffer As IBuffer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsSameData(Windows::Storage::Streams::IBuffer ^ buffer, Windows::Storage::Streams::IBuffer ^ otherBuffer);" />
+      <MemberSignature Language="F#" Value="static member IsSameData : Windows.Storage.Streams.IBuffer * Windows.Storage.Streams.IBuffer -&gt; bool" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.IsSameData (buffer, otherBuffer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="otherBuffer" Type="Windows.Storage.Streams.IBuffer" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="otherBuffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public static byte[] ToArray (this Windows.Storage.Streams.IBuffer source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] ToArray(class Windows.Storage.Streams.IBuffer source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.ToArray(Windows.Storage.Streams.IBuffer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToArray (source As IBuffer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Byte&gt; ^ ToArray(Windows::Storage::Streams::IBuffer ^ source);" />
+      <MemberSignature Language="F#" Value="static member ToArray : Windows.Storage.Streams.IBuffer -&gt; byte[]" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.ToArray source" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public static byte[] ToArray (this Windows.Storage.Streams.IBuffer source, uint sourceIndex, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] ToArray(class Windows.Storage.Streams.IBuffer source, unsigned int32 sourceIndex, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.ToArray(Windows.Storage.Streams.IBuffer,System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToArray (source As IBuffer, sourceIndex As UInteger, count As Integer) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Byte&gt; ^ ToArray(Windows::Storage::Streams::IBuffer ^ source, System::UInt32 sourceIndex, int count);" />
+      <MemberSignature Language="F#" Value="static member ToArray : Windows.Storage.Streams.IBuffer * uint32 * int -&gt; byte[]" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBufferExtensions.ToArray (source, sourceIndex, count)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Windows.Storage.Streams.IBuffer" RefType="this" />
+        <Parameter Name="sourceIndex" Type="System.UInt32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="sourceIndex">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

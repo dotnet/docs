@@ -1,0 +1,93 @@
+﻿<Type Name="WindowsRuntimeBuffer" FullName="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer">
+  <TypeSignature Language="C#" Value="public sealed class WindowsRuntimeBuffer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsRuntimeBuffer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsRuntimeBuffer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeBuffer sealed" />
+  <TypeSignature Language="F#" Value="type WindowsRuntimeBuffer = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer Create (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer Create(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer.Create(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (capacity As Integer) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::Storage::Streams::IBuffer ^ Create(int capacity);" />
+      <MemberSignature Language="F#" Value="static member Create : int -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer.Create capacity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Windows.Storage.Streams.IBuffer Create (byte[] data, int offset, int length, int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.Storage.Streams.IBuffer Create(unsigned int8[] data, int32 offset, int32 length, int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer.Create(System.Byte[],System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (data As Byte(), offset As Integer, length As Integer, capacity As Integer) As IBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::Storage::Streams::IBuffer ^ Create(cli::array &lt;System::Byte&gt; ^ data, int offset, int length, int capacity);" />
+      <MemberSignature Language="F#" Value="static member Create : byte[] * int * int * int -&gt; Windows.Storage.Streams.IBuffer" Usage="System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeBuffer.Create (data, offset, length, capacity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.Streams.IBuffer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="data">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="length">To be added.</param>
+        <param name="capacity">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

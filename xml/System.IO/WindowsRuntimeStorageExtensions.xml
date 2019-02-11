@@ -1,0 +1,152 @@
+﻿<Type Name="WindowsRuntimeStorageExtensions" FullName="System.IO.WindowsRuntimeStorageExtensions">
+  <TypeSignature Language="C#" Value="public static class WindowsRuntimeStorageExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WindowsRuntimeStorageExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.WindowsRuntimeStorageExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module WindowsRuntimeStorageExtensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsRuntimeStorageExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type WindowsRuntimeStorageExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OpenStreamForReadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenStreamForReadAsync (this Windows.Storage.IStorageFile windowsRuntimeFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenStreamForReadAsync(class Windows.Storage.IStorageFile windowsRuntimeFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.OpenStreamForReadAsync(Windows.Storage.IStorageFile)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OpenStreamForReadAsync (windowsRuntimeFile As IStorageFile) As Task(Of Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenStreamForReadAsync(Windows::Storage::IStorageFile ^ windowsRuntimeFile);" />
+      <MemberSignature Language="F#" Value="static member OpenStreamForReadAsync : Windows.Storage.IStorageFile -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="System.IO.WindowsRuntimeStorageExtensions.OpenStreamForReadAsync windowsRuntimeFile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenStreamForReadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenStreamForReadAsync (this Windows.Storage.IStorageFolder rootDirectory, string relativePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenStreamForReadAsync(class Windows.Storage.IStorageFolder rootDirectory, string relativePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.OpenStreamForReadAsync(Windows.Storage.IStorageFolder,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OpenStreamForReadAsync (rootDirectory As IStorageFolder, relativePath As String) As Task(Of Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenStreamForReadAsync(Windows::Storage::IStorageFolder ^ rootDirectory, System::String ^ relativePath);" />
+      <MemberSignature Language="F#" Value="static member OpenStreamForReadAsync : Windows.Storage.IStorageFolder * string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="System.IO.WindowsRuntimeStorageExtensions.OpenStreamForReadAsync (rootDirectory, relativePath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" RefType="this" />
+        <Parameter Name="relativePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootDirectory">To be added.</param>
+        <param name="relativePath">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenStreamForWriteAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenStreamForWriteAsync (this Windows.Storage.IStorageFile windowsRuntimeFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenStreamForWriteAsync(class Windows.Storage.IStorageFile windowsRuntimeFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.OpenStreamForWriteAsync(Windows.Storage.IStorageFile)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function OpenStreamForWriteAsync (windowsRuntimeFile As IStorageFile) As Task(Of Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenStreamForWriteAsync(Windows::Storage::IStorageFile ^ windowsRuntimeFile);" />
+      <MemberSignature Language="F#" Value="static member OpenStreamForWriteAsync : Windows.Storage.IStorageFile -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="System.IO.WindowsRuntimeStorageExtensions.OpenStreamForWriteAsync windowsRuntimeFile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="windowsRuntimeFile" Type="Windows.Storage.IStorageFile" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="windowsRuntimeFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenStreamForWriteAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; OpenStreamForWriteAsync (this Windows.Storage.IStorageFolder rootDirectory, string relativePath, Windows.Storage.CreationCollisionOption creationCollisionOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; OpenStreamForWriteAsync(class Windows.Storage.IStorageFolder rootDirectory, string relativePath, valuetype Windows.Storage.CreationCollisionOption creationCollisionOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.WindowsRuntimeStorageExtensions.OpenStreamForWriteAsync(Windows.Storage.IStorageFolder,System.String,Windows.Storage.CreationCollisionOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ OpenStreamForWriteAsync(Windows::Storage::IStorageFolder ^ rootDirectory, System::String ^ relativePath, Windows::Storage::CreationCollisionOption creationCollisionOption);" />
+      <MemberSignature Language="F#" Value="static member OpenStreamForWriteAsync : Windows.Storage.IStorageFolder * string * Windows.Storage.CreationCollisionOption -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="System.IO.WindowsRuntimeStorageExtensions.OpenStreamForWriteAsync (rootDirectory, relativePath, creationCollisionOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootDirectory" Type="Windows.Storage.IStorageFolder" RefType="this" />
+        <Parameter Name="relativePath" Type="System.String" />
+        <Parameter Name="creationCollisionOption" Type="Windows.Storage.CreationCollisionOption" />
+      </Parameters>
+      <Docs>
+        <param name="rootDirectory">To be added.</param>
+        <param name="relativePath">To be added.</param>
+        <param name="creationCollisionOption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

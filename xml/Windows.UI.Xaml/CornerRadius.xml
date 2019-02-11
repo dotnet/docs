@@ -1,0 +1,321 @@
+﻿<Type Name="CornerRadius" FullName="Windows.UI.Xaml.CornerRadius">
+  <TypeSignature Language="C#" Value="public struct CornerRadius" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CornerRadius extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.CornerRadius" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CornerRadius" />
+  <TypeSignature Language="C++ CLI" Value="public value class CornerRadius" />
+  <TypeSignature Language="F#" Value="type CornerRadius = struct" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CornerRadius (double uniformRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 uniformRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (uniformRadius As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CornerRadius(double uniformRadius);" />
+      <MemberSignature Language="F#" Value="new Windows.UI.Xaml.CornerRadius : double -&gt; Windows.UI.Xaml.CornerRadius" Usage="new Windows.UI.Xaml.CornerRadius uniformRadius" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uniformRadius" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="uniformRadius">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CornerRadius (double topLeft, double topRight, double bottomRight, double bottomLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 topLeft, float64 topRight, float64 bottomRight, float64 bottomLeft) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (topLeft As Double, topRight As Double, bottomRight As Double, bottomLeft As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CornerRadius(double topLeft, double topRight, double bottomRight, double bottomLeft);" />
+      <MemberSignature Language="F#" Value="new Windows.UI.Xaml.CornerRadius : double * double * double * double -&gt; Windows.UI.Xaml.CornerRadius" Usage="new Windows.UI.Xaml.CornerRadius (topLeft, topRight, bottomRight, bottomLeft)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="topLeft" Type="System.Double" />
+        <Parameter Name="topRight" Type="System.Double" />
+        <Parameter Name="bottomRight" Type="System.Double" />
+        <Parameter Name="bottomLeft" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="topLeft">To be added.</param>
+        <param name="topRight">To be added.</param>
+        <param name="bottomRight">To be added.</param>
+        <param name="bottomLeft">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="public double BottomLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BottomLeft" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.CornerRadius.BottomLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property BottomLeft As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BottomLeft { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.BottomLeft : double with get, set" Usage="Windows.UI.Xaml.CornerRadius.BottomLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="public double BottomRight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BottomRight" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.CornerRadius.BottomRight" />
+      <MemberSignature Language="VB.NET" Value="Public Property BottomRight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BottomRight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.BottomRight : double with get, set" Usage="Windows.UI.Xaml.CornerRadius.BottomRight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="cornerRadius.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Windows.UI.Xaml.CornerRadius cornerRadius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Windows.UI.Xaml.CornerRadius cornerRadius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.Equals(Windows.UI.Xaml.CornerRadius)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Windows::UI::Xaml::CornerRadius cornerRadius);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Windows.UI.Xaml.CornerRadius -&gt; bool" Usage="cornerRadius.Equals cornerRadius" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cornerRadius" Type="Windows.UI.Xaml.CornerRadius" />
+      </Parameters>
+      <Docs>
+        <param name="cornerRadius">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="cornerRadius.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Windows.UI.Xaml.CornerRadius cr1, Windows.UI.Xaml.CornerRadius cr2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Windows.UI.Xaml.CornerRadius cr1, valuetype Windows.UI.Xaml.CornerRadius cr2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.op_Equality(Windows.UI.Xaml.CornerRadius,Windows.UI.Xaml.CornerRadius)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (cr1 As CornerRadius, cr2 As CornerRadius) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Windows::UI::Xaml::CornerRadius cr1, Windows::UI::Xaml::CornerRadius cr2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Windows.UI.Xaml.CornerRadius * Windows.UI.Xaml.CornerRadius -&gt; bool" Usage="cr1 = cr2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr1" Type="Windows.UI.Xaml.CornerRadius" />
+        <Parameter Name="cr2" Type="Windows.UI.Xaml.CornerRadius" />
+      </Parameters>
+      <Docs>
+        <param name="cr1">To be added.</param>
+        <param name="cr2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Windows.UI.Xaml.CornerRadius cr1, Windows.UI.Xaml.CornerRadius cr2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Windows.UI.Xaml.CornerRadius cr1, valuetype Windows.UI.Xaml.CornerRadius cr2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.op_Inequality(Windows.UI.Xaml.CornerRadius,Windows.UI.Xaml.CornerRadius)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (cr1 As CornerRadius, cr2 As CornerRadius) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Windows::UI::Xaml::CornerRadius cr1, Windows::UI::Xaml::CornerRadius cr2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Windows.UI.Xaml.CornerRadius * Windows.UI.Xaml.CornerRadius -&gt; bool" Usage="Windows.UI.Xaml.CornerRadius.op_Inequality (cr1, cr2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cr1" Type="Windows.UI.Xaml.CornerRadius" />
+        <Parameter Name="cr2" Type="Windows.UI.Xaml.CornerRadius" />
+      </Parameters>
+      <Docs>
+        <param name="cr1">To be added.</param>
+        <param name="cr2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="public double TopLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TopLeft" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.CornerRadius.TopLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopLeft As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TopLeft { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.TopLeft : double with get, set" Usage="Windows.UI.Xaml.CornerRadius.TopLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="public double TopRight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TopRight" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.CornerRadius.TopRight" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopRight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TopRight { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.TopRight : double with get, set" Usage="Windows.UI.Xaml.CornerRadius.TopRight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.CornerRadius.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cornerRadius.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

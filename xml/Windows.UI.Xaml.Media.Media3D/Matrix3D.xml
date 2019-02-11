@@ -1,0 +1,751 @@
+﻿<Type Name="Matrix3D" FullName="Windows.UI.Xaml.Media.Media3D.Matrix3D">
+  <TypeSignature Language="C#" Value="public struct Matrix3D : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Matrix3D extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Matrix3D&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Matrix3D : IFormattable" />
+  <TypeSignature Language="F#" Value="type Matrix3D = struct&#xA;    interface IFormattable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Matrix3D (double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double offsetX, double offsetY, double offsetZ, double m44);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 m11, float64 m12, float64 m13, float64 m14, float64 m21, float64 m22, float64 m23, float64 m24, float64 m31, float64 m32, float64 m33, float64 m34, float64 offsetX, float64 offsetY, float64 offsetZ, float64 m44) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m11 As Double, m12 As Double, m13 As Double, m14 As Double, m21 As Double, m22 As Double, m23 As Double, m24 As Double, m31 As Double, m32 As Double, m33 As Double, m34 As Double, offsetX As Double, offsetY As Double, offsetZ As Double, m44 As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Matrix3D(double m11, double m12, double m13, double m14, double m21, double m22, double m23, double m24, double m31, double m32, double m33, double m34, double offsetX, double offsetY, double offsetZ, double m44);" />
+      <MemberSignature Language="F#" Value="new Windows.UI.Xaml.Media.Media3D.Matrix3D : double * double * double * double * double * double * double * double * double * double * double * double * double * double * double * double -&gt; Windows.UI.Xaml.Media.Media3D.Matrix3D" Usage="new Windows.UI.Xaml.Media.Media3D.Matrix3D (m11, m12, m13, m14, m21, m22, m23, m24, m31, m32, m33, m34, offsetX, offsetY, offsetZ, m44)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="m11" Type="System.Double" />
+        <Parameter Name="m12" Type="System.Double" />
+        <Parameter Name="m13" Type="System.Double" />
+        <Parameter Name="m14" Type="System.Double" />
+        <Parameter Name="m21" Type="System.Double" />
+        <Parameter Name="m22" Type="System.Double" />
+        <Parameter Name="m23" Type="System.Double" />
+        <Parameter Name="m24" Type="System.Double" />
+        <Parameter Name="m31" Type="System.Double" />
+        <Parameter Name="m32" Type="System.Double" />
+        <Parameter Name="m33" Type="System.Double" />
+        <Parameter Name="m34" Type="System.Double" />
+        <Parameter Name="offsetX" Type="System.Double" />
+        <Parameter Name="offsetY" Type="System.Double" />
+        <Parameter Name="offsetZ" Type="System.Double" />
+        <Parameter Name="m44" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="m11">To be added.</param>
+        <param name="m12">To be added.</param>
+        <param name="m13">To be added.</param>
+        <param name="m14">To be added.</param>
+        <param name="m21">To be added.</param>
+        <param name="m22">To be added.</param>
+        <param name="m23">To be added.</param>
+        <param name="m24">To be added.</param>
+        <param name="m31">To be added.</param>
+        <param name="m32">To be added.</param>
+        <param name="m33">To be added.</param>
+        <param name="m34">To be added.</param>
+        <param name="offsetX">To be added.</param>
+        <param name="offsetY">To be added.</param>
+        <param name="offsetZ">To be added.</param>
+        <param name="m44">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="matrix3D.Equals o" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Windows.UI.Xaml.Media.Media3D.Matrix3D value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.Equals(Windows.UI.Xaml.Media.Media3D.Matrix3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Matrix3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Windows::UI::Xaml::Media::Media3D::Matrix3D value);" />
+      <MemberSignature Language="F#" Value="override this.Equals : Windows.UI.Xaml.Media.Media3D.Matrix3D -&gt; bool" Usage="matrix3D.Equals value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="matrix3D.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasInverse">
+      <MemberSignature Language="C#" Value="public bool HasInverse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasInverse" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.HasInverse" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasInverse As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasInverse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasInverse : bool" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.HasInverse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Media3D.Matrix3D Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D Identity" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As Matrix3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Windows::UI::Xaml::Media::Media3D::Matrix3D Identity { Windows::UI::Xaml::Media::Media3D::Matrix3D get(); };" />
+      <MemberSignature Language="F#" Value="member this.Identity : Windows.UI.Xaml.Media.Media3D.Matrix3D" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Media3D.Matrix3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invert">
+      <MemberSignature Language="C#" Value="public void Invert ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invert() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.Invert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invert ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invert();" />
+      <MemberSignature Language="F#" Value="member this.Invert : unit -&gt; unit" Usage="matrix3D.Invert " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIdentity">
+      <MemberSignature Language="C#" Value="public bool IsIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIdentity" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.IsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsIdentity As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIdentity { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsIdentity : bool" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.IsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M11">
+      <MemberSignature Language="C#" Value="public double M11 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M11" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M11" />
+      <MemberSignature Language="VB.NET" Value="Public Property M11 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M11 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M11 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M12">
+      <MemberSignature Language="C#" Value="public double M12 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M12" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M12" />
+      <MemberSignature Language="VB.NET" Value="Public Property M12 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M12 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M12 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M12" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M13">
+      <MemberSignature Language="C#" Value="public double M13 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M13" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M13" />
+      <MemberSignature Language="VB.NET" Value="Public Property M13 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M13 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M13 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M13" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M14">
+      <MemberSignature Language="C#" Value="public double M14 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M14" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M14" />
+      <MemberSignature Language="VB.NET" Value="Public Property M14 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M14 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M14 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M14" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M21">
+      <MemberSignature Language="C#" Value="public double M21 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M21" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M21" />
+      <MemberSignature Language="VB.NET" Value="Public Property M21 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M21 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M21 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M21" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M22">
+      <MemberSignature Language="C#" Value="public double M22 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M22" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M22" />
+      <MemberSignature Language="VB.NET" Value="Public Property M22 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M22 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M22 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M22" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M23">
+      <MemberSignature Language="C#" Value="public double M23 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M23" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M23" />
+      <MemberSignature Language="VB.NET" Value="Public Property M23 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M23 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M23 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M23" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M24">
+      <MemberSignature Language="C#" Value="public double M24 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M24" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M24" />
+      <MemberSignature Language="VB.NET" Value="Public Property M24 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M24 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M24 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M24" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M31">
+      <MemberSignature Language="C#" Value="public double M31 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M31" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M31" />
+      <MemberSignature Language="VB.NET" Value="Public Property M31 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M31 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M31 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M31" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M32">
+      <MemberSignature Language="C#" Value="public double M32 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M32" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M32" />
+      <MemberSignature Language="VB.NET" Value="Public Property M32 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M32 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M32 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M33">
+      <MemberSignature Language="C#" Value="public double M33 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M33" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M33" />
+      <MemberSignature Language="VB.NET" Value="Public Property M33 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M33 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M33 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M33" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M34">
+      <MemberSignature Language="C#" Value="public double M34 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M34" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M34" />
+      <MemberSignature Language="VB.NET" Value="Public Property M34 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M34 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M34 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M34" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M44">
+      <MemberSignature Language="C#" Value="public double M44 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 M44" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.M44" />
+      <MemberSignature Language="VB.NET" Value="Public Property M44 As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double M44 { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.M44 : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.M44" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetX">
+      <MemberSignature Language="C#" Value="public double OffsetX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetX" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.OffsetX" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetX As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetX { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetX : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.OffsetX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetY">
+      <MemberSignature Language="C#" Value="public double OffsetY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetY" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.OffsetY" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetY As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetY { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetY : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.OffsetY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetZ">
+      <MemberSignature Language="C#" Value="public double OffsetZ { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetZ" />
+      <MemberSignature Language="DocId" Value="P:Windows.UI.Xaml.Media.Media3D.Matrix3D.OffsetZ" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetZ As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetZ { double get(); void set(double value); };" />
+      <MemberSignature Language="F#" Value="member this.OffsetZ : double with get, set" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.OffsetZ" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Windows.UI.Xaml.Media.Media3D.Matrix3D matrix1, Windows.UI.Xaml.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D matrix1, valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.op_Equality(Windows.UI.Xaml.Media.Media3D.Matrix3D,Windows.UI.Xaml.Media.Media3D.Matrix3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (matrix1 As Matrix3D, matrix2 As Matrix3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(Windows::UI::Xaml::Media::Media3D::Matrix3D matrix1, Windows::UI::Xaml::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Windows.UI.Xaml.Media.Media3D.Matrix3D * Windows.UI.Xaml.Media.Media3D.Matrix3D -&gt; bool" Usage="matrix1 = matrix2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">To be added.</param>
+        <param name="matrix2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Windows.UI.Xaml.Media.Media3D.Matrix3D matrix1, Windows.UI.Xaml.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D matrix1, valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.op_Inequality(Windows.UI.Xaml.Media.Media3D.Matrix3D,Windows.UI.Xaml.Media.Media3D.Matrix3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (matrix1 As Matrix3D, matrix2 As Matrix3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(Windows::UI::Xaml::Media::Media3D::Matrix3D matrix1, Windows::UI::Xaml::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Windows.UI.Xaml.Media.Media3D.Matrix3D * Windows.UI.Xaml.Media.Media3D.Matrix3D -&gt; bool" Usage="Windows.UI.Xaml.Media.Media3D.Matrix3D.op_Inequality (matrix1, matrix2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">To be added.</param>
+        <param name="matrix2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Media3D.Matrix3D operator * (Windows.UI.Xaml.Media.Media3D.Matrix3D matrix1, Windows.UI.Xaml.Media.Media3D.Matrix3D matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D op_Multiply(valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D matrix1, valuetype Windows.UI.Xaml.Media.Media3D.Matrix3D matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.op_Multiply(Windows.UI.Xaml.Media.Media3D.Matrix3D,Windows.UI.Xaml.Media.Media3D.Matrix3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (matrix1 As Matrix3D, matrix2 As Matrix3D) As Matrix3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Xaml::Media::Media3D::Matrix3D operator *(Windows::UI::Xaml::Media::Media3D::Matrix3D matrix1, Windows::UI::Xaml::Media::Media3D::Matrix3D matrix2);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : Windows.UI.Xaml.Media.Media3D.Matrix3D * Windows.UI.Xaml.Media.Media3D.Matrix3D -&gt; Windows.UI.Xaml.Media.Media3D.Matrix3D" Usage="matrix1 * matrix2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Media3D.Matrix3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+        <Parameter Name="matrix2" Type="Windows.UI.Xaml.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">To be added.</param>
+        <param name="matrix2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="matrix3D.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Windows.UI.Xaml.Media.Media3D.Matrix3D.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="matrix3D.ToString provider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -228,62 +228,6 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ innerException);" />
-      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, innerException)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Requests</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="message" Type="System.String" />
-        <Parameter Name="innerException" Type="System.Exception" />
-      </Parameters>
-      <Docs>
-        <param name="message">The text of the error message.</param>
-        <param name="innerException">A nested exception.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class with the specified error message and nested exception.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
-  
-   
-  
-## Examples  
- The following example throws a <xref:System.Net.WebException> by specifying an error message and nested exception.  
-  
- [!code-cpp[WebException_Constructor4#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor4/CPP/webexception_constructor4.cpp#1)]
- [!code-csharp[WebException_Constructor4#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor4/CS/webexception_constructor4.cs#1)]
- [!code-vb[WebException_Constructor4#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor4/VB/webexception_constructor4.vb#1)]  
-  
- ]]></format>
-        </remarks>
-        <altmember cref="T:System.Exception" />
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebException (string message, System.Net.WebExceptionStatus status);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, valuetype System.Net.WebExceptionStatus status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Net.WebExceptionStatus)" />
@@ -344,12 +288,82 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException, System.Net.WebExceptionStatus status, System.Net.WebResponse response);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, valuetype System.Net.WebExceptionStatus status, class System.Net.WebResponse response) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception,System.Net.WebExceptionStatus,System.Net.WebResponse)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, status As WebExceptionStatus, response As WebResponse)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ innerException, System::Net::WebExceptionStatus status, System::Net::WebResponse ^ response);" />
-      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception * System.Net.WebExceptionStatus * System.Net.WebResponse -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, innerException, status, response)" />
+      <MemberSignature Language="C#" Value="public WebException (string message, Exception inner);" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ inner);" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, inner)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception)" FrameworkAlternate="netcore-1.0;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ innerException);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, innerException)" FrameworkAlternate="netcore-1.0;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="inner" Type="System.Exception" Index="1" FrameworkAlternate="dotnet-uwp-10.0" />
+        <Parameter Name="innerException" Type="System.Exception" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the error message.</param>
+        <param name="inner">A nested exception.</param>
+        <param name="innerException">A nested exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class with the specified error message and nested exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
+  
+   
+  
+## Examples  
+ The following example throws a <xref:System.Net.WebException> by specifying an error message and nested exception.  
+  
+ [!code-cpp[WebException_Constructor4#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WebException_Constructor4/CPP/webexception_constructor4.cpp#1)]
+ [!code-csharp[WebException_Constructor4#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WebException_Constructor4/CS/webexception_constructor4.cs#1)]
+ [!code-vb[WebException_Constructor4#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WebException_Constructor4/VB/webexception_constructor4.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="T:System.Exception" />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebException (string message, Exception inner, System.Net.WebExceptionStatus status, System.Net.WebResponse response);" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner, valuetype System.Net.WebExceptionStatus status, class System.Net.WebResponse response) cil managed" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception,System.Net.WebExceptionStatus,System.Net.WebResponse)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception, status As WebExceptionStatus, response As WebResponse)" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ inner, System::Net::WebExceptionStatus status, System::Net::WebResponse ^ response);" FrameworkAlternate="dotnet-uwp-10.0" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception * System.Net.WebExceptionStatus * System.Net.WebResponse -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, inner, status, response)" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0" />
+      <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException, System.Net.WebExceptionStatus status, System.Net.WebResponse response);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, valuetype System.Net.WebExceptionStatus status, class System.Net.WebResponse response) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception,System.Net.WebExceptionStatus,System.Net.WebResponse)" FrameworkAlternate="netcore-1.0;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, status As WebExceptionStatus, response As WebResponse)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ innerException, System::Net::WebExceptionStatus status, System::Net::WebResponse ^ response);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception * System.Net.WebExceptionStatus * System.Net.WebResponse -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, innerException, status, response)" FrameworkAlternate="netcore-1.0;netcore-2.0;netcore-2.1;netcore-2.2;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -377,13 +391,15 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="message" Type="System.String" />
-        <Parameter Name="innerException" Type="System.Exception" />
-        <Parameter Name="status" Type="System.Net.WebExceptionStatus" />
-        <Parameter Name="response" Type="System.Net.WebResponse" />
+        <Parameter Name="message" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="inner" Type="System.Exception" Index="1" FrameworkAlternate="dotnet-uwp-10.0" />
+        <Parameter Name="innerException" Type="System.Exception" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="status" Type="System.Net.WebExceptionStatus" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="response" Type="System.Net.WebResponse" Index="3" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="message">The text of the error message.</param>
+        <param name="inner">A nested exception.</param>
         <param name="innerException">A nested exception.</param>
         <param name="status">One of the <see cref="T:System.Net.WebExceptionStatus" /> values.</param>
         <param name="response">A <see cref="T:System.Net.WebResponse" /> instance that contains the response from the remote host.</param>

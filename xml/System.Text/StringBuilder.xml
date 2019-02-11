@@ -3745,10 +3745,18 @@
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
       </Parameters>
       <Docs>
-        <param name="span">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="span">The character span to compare with the current instance.</param>
+        <summary>Returns a value indicating whether the characters in this instance are equal to the characters in a specified read-only character span.</summary>
+        <returns><see langword="true" /> if the characters in this instance and <paramref name="span" /> are the same; otherwise, <see langword="false" />.</returns>
+        <remarks>  
+          <format type="text/markdown"><![CDATA[  
+
+## Remarks
+
+The `Equals` method performs an ordinal comparison to determine whether the characters in the current instance and `span` are equal.
+
+         ]]></format>
+         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -3792,7 +3800,13 @@
           <see langword="true" /> if this instance and <paramref name="sb" /> have equal string, <see cref="P:System.Text.StringBuilder.Capacity" />, and <see cref="P:System.Text.StringBuilder.MaxCapacity" /> values; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+
+## Remarks
+
+**.NET Framework and .NET Core 2.2 and previous versions:** The current instance and `sb` are equal if they have equal string, <xref:System.Text.StringBuilder.Capacity>, and <xref:System.Text.StringBuilder.MaxCapacity> values. The `Equals` method uses ordinal comparison to determine whether the strings are equal.
+
+**.NET Core 3.0 and later versions:** The current instance and `sb` are equal if the strings assigned to both <xref:System.Text.StringBuilder> objects are the same.  To determine equality, the `Equals` method uses ordinal comparison. The <xref:System.Text.StringBuilder.Capacity> and <xref:System.Text.StringBuilder.MaxCapacity> property values are not used in the comparison.
+
 ## Examples  
  The following code uses the <xref:System.Text.StringBuilder.Equals%2A> method to check whether two <xref:System.Text.StringBuilder> objects are equal. The method is called repeatedly after small changes are made to each object, and the results are displayed to the console.  
   

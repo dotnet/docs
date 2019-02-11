@@ -110,19 +110,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>
-          <format type="text/markdown"><![CDATA[  
-  
-The parser:
-  
-- Requires an authority.
-- Converts back slashes into forward slashes.
-- Unescapes path dots, forward slashes, and back slashes.
-- Removes trailing dots, empty segments, and dots-only segments.
-  
- ]]></format>
-        </summary>
-        <remarks></remarks>
+        <summary>The parser: requires an authority; converts backslashes into forward slashes; unescapes path dots, forward slashes, and back slashes; and removes trailing dots, empty segments, and dots-only segments.</summary>
       </Docs>
     </Member>
     <Member MemberName="DontCompressPath">

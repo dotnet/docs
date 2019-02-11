@@ -386,17 +386,7 @@
       </ReturnValue>
       <MemberValue>16384</MemberValue>
       <Docs>
-        <summary>Attribute can be applied to a generic parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Currently, this attribute can be applied only in C#, Microsoft intermediate language (MSIL), and emitted code.  
-  
- ]]></format>
-        </remarks>
+        <summary>Attribute can be applied to a generic parameter. Currently, this attribute can be applied only in C#, Microsoft intermediate language (MSIL), and emitted code. </summary>
       </Docs>
     </Member>
     <Member MemberName="Interface">
@@ -504,17 +494,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Attribute can be applied to a module.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  `Module` refers to a portable executable file (.dll or.exe) and not a Visual Basic standard module.  
-  
- ]]></format>
-        </remarks>
+        <summary>Attribute can be applied to a module. <see langword="Module" /> refers to a portable executable file (.dll or.exe) and not a Visual Basic standard module.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parameter">

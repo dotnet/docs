@@ -34,12 +34,22 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.EnvironmentVariableTarget> enumeration is used by certain overloads of the <xref:System.Environment.SetEnvironmentVariable%2A>, <xref:System.Environment.GetEnvironmentVariable%2A>, and <xref:System.Environment.GetEnvironmentVariables%2A> methods to specify the location, or target, where the name and value of an environment variable is stored or retrieved.  
+ The <xref:System.EnvironmentVariableTarget> enumeration is used by certain overloads of the <xref:System.Environment.SetEnvironmentVariable%2A?displayProperty=nameWithType>, <xref:System.Environment.GetEnvironmentVariable%2A?displayProperty=nameWithType>, and <xref:System.Environment.GetEnvironmentVariables%2A?displayProperty=nameWithType> methods to specify the location, or target, where the name and value of an environment variable is stored or retrieved.  
   
- The target can be one of three locations: the environment block associated with the current process, the Windows operating system registry key reserved for environment variables associated with the current user, or the registry key reserved for environment variables associated with all users on the local machine.  
-  
+ The target can be one of three locations: 
+ 
+ - The environment block associated with the current process (`EnvironmentVariableTarget.Process`).
+
+   The user creates the environment variable in a set operation. When the process terminates, the operating system destroys the environment variable in that process.
+
+ - The Windows operating system registry key reserved for environment variables associated with the current user (`EnvironmentVariableTarget.User`).
+ 
+   When the user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If the user starts a new process, the operating system copies the environment variable from the registry to that process. When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until the user removes it programmatically or by means of an operating system tool.  
    
-  
+ - The registry key reserved for environment variables associated with all users on the local machine (`EnvironmentVariableTarget.Machine`). 
+
+    When a user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If any user on the local machine starts a new process, the operating system copies the environment variable from the registry to that process. When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until a user removes it programmatically or by means of an operating system tool.
+ 
 ## Examples  
  The following code example demonstrates the <xref:System.EnvironmentVariableTarget> enumeration in methods that create, modify, and delete environment variables.  
   
@@ -80,16 +90,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The environment variable is stored or retrieved from the <see langword="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment" /> key in the Windows operating system registry.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If any user on the local machine starts a new process, the operating system copies the environment variable from the registry to that process.  
-  
- When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until a user removes it programmatically or by means of an operating system tool.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -121,16 +121,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The environment variable is stored or retrieved from the environment block associated with the current process.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The user creates the environment variable in a set operation.  
-  
- When the process terminates, the operating system destroys the environment variable in that process.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="User">
@@ -162,16 +152,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The environment variable is stored or retrieved from the <see langword="HKEY_CURRENT_USER\Environment" /> key in the Windows operating system registry.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When the user creates the environment variable in a set operation, the operating system stores the environment variable in the system registry, but not in the current process. If the user starts a new process, the operating system copies the environment variable from the registry to that process.  
-  
- When the process terminates, the operating system destroys the environment variable in that process. However, the environment variable in the registry persists until the user removes it programmatically or by means of an operating system tool.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

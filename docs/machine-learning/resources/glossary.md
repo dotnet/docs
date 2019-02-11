@@ -10,7 +10,7 @@ The following list is a compilation of important machine learning terms that are
 
 ## Accuracy
 
-In [classification](#classification), accuracy is the number of correctly classified items divided by the total number of items in the test set. Ranges from 0 (least accurate) to 1 (most accurate). Accuracy is one of evaluation metrics of the performance of your model. Consider it in conjunction with [precision](#precision), [recall](#recall), and [F-score](#f-score).
+In [classification](#classification), accuracy is the number of correctly classified items divided by the total number of items in the test set. Ranges from 0 (least accurate) to 1 (most accurate). Accuracy is one of evaluation metrics of the model performance. Consider it in conjunction with [precision](#precision), [recall](#recall), and [F-score](#f-score).
 
 ## Area under the curve (AUC)
 

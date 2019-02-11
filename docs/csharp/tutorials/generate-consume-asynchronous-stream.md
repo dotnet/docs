@@ -34,9 +34,9 @@ You'll need to create a [GitHub access token](https://help.github.com/articles/c
 > [!WARNING]
 > Keep your personal access token secure. Any software with your personal access token could make GitHub API calls using your access rights.
 
-After creating the GitHub client, the code in `Main` creates a progress reporting object and a cancellation token. Once those are created, `Main` calls `runPagedQueryAsync` to retrieve the most recent 250 created issues. After that task has finished, the results are displayed.
+After creating the GitHub client, the code in `Main` creates a progress reporting object and a cancellation token. Once those objects are created, `Main` calls `runPagedQueryAsync` to retrieve the most recent 250 created issues. After that task has finished, the results are displayed.
 
-When you run the starter application, you can make some important observations about how this application runs.  You'll see progress reported for each page returned from GitHub. After each request you can observe a noticeable pause before GitHub returns a page of issues. Finally, the issues are displayed only after all ten pages have been retrieved from GitHub.
+When you run the starter application, you can make some important observations about how this application runs.  You'll see progress reported for each page returned from GitHub. You can observe a noticeable pause before GitHub returns each new page of issues. Finally, the issues are displayed only after all 10 pages have been retrieved from GitHub.
 
 ## Examine the implementation
 
@@ -81,7 +81,7 @@ namespace System
 }
 ```
 
-These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts: <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IEnumerator%601?displayProperty=nameWithType> and <xref:System.IDisposable?displayProperty=nameWithType>. The one other type that may be unfamiliar is <xref:System.Threading.Tasks.ValueTask?displayProperty=nameWithType>. The `ValueTask` `struct` provides a similar API to the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class. `ValueTask` is used in these interfaces for performance reasons.
+These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts: <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IEnumerator%601?displayProperty=nameWithType>, and <xref:System.IDisposable?displayProperty=nameWithType>. The one other type that may be unfamiliar is <xref:System.Threading.Tasks.ValueTask?displayProperty=nameWithType>. The `ValueTask` `struct` provides a similar API to the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class. `ValueTask` is used in these interfaces for performance reasons.
 
 ## Convert to async streams
 
@@ -97,7 +97,7 @@ Replace those three lines with the following code:
 
 [!code-csharp[FinishedPaging](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Main.cs#YieldReturnPage)]
 
-You can also remove the declaration of `finalResults` earlier in this method, and the return statement that follows the loop you just modified.
+You can also remove the declaration of `finalResults` earlier in this method, and the return statement that follows the loop you modified.
 
 You've finished the changes to generate an async stream. The finished method should resemble the code below:
 
@@ -111,10 +111,10 @@ Replace all that code with the following `await foreach` loop:
 
 [!code-csharp[FinishedEnumerateAsyncStream](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Main.cs#EnumerateAsyncStream)]
 
-Run the application again. Contrast its behavior with the behavior of the starter application. The first page of results are enumerated as soon as they are available. There's an observable pause as each new page is requested and retrieved, then the next page's results are quickly enumerated. The `try` / `catch` block is not needed to handle cancellation: the caller could simply stop enumerating the collection. Progress is clearly reported because the async stream generates results as each page is downloaded.
+Run the application again. Contrast its behavior with the behavior of the starter application. The first page of results is enumerated as soon as they are available. There's an observable pause as each new page is requested and retrieved, then the next page's results are quickly enumerated. The `try` / `catch` block is not needed to handle cancellation: the caller could stop enumerating the collection. Progress is clearly reported because the async stream generates results as each page is downloaded.
 
 You can see improvements in memory use by examining the code. You no longer need to allocate a collection to store all the results before they are enumerated. The caller can determine how to consume the results and if a storage collection is needed.
 
 You can get the code for the finished tutorial from our [samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished) folder.
 
-Run both the starter and finished applications and you can observe the differences between the implementations for yourself.
+Run both the starter and finished applications and you can observe the differences between the implementations for yourself. You can delete the GitHub access token you created when you started this tutorial after you have finished. If an attacker gained access to that token, they could access GitHub APIs using your credentials.

@@ -1,7 +1,7 @@
 ---
 title: Preprocess training data with normalizers to use in data processing - ML.NET
 description: Learn how to use normalizers to preprocess training data for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use normalizers to preprocess training data so that I can optimize it in machine learning model building, training, and scoring with ML.NET.
 ---
@@ -24,7 +24,7 @@ Here's a snippet of code that demonstrates normalization in learning pipelines. 
 var mlContext = new MLContext();
 
 // Define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // The four features of the Iris dataset will be grouped together as one Features column.
@@ -44,9 +44,9 @@ var trainData = reader.Read(dataPath);
 // Apply all kinds of standard ML.NET normalization to the raw features.
 var pipeline =
     mlContext.Transforms.Normalize(
-        new NormalizingEstimator.MinMaxColumn("Features", "MinMaxNormalized", fixZero: true),
-        new NormalizingEstimator.MeanVarColumn("Features", "MeanVarNormalized", fixZero: true),
-        new NormalizingEstimator.BinningColumn("Features", "BinNormalized", numBins: 256));
+            new NormalizingEstimator.MinMaxColumn(inputColumnName:"Features", outputColumnName:"MinMaxNormalized", fixZero: true),
+            new NormalizingEstimator.MeanVarColumn(inputColumnName: "Features", outputColumnName: "MeanVarNormalized", fixZero: true),
+            new NormalizingEstimator.BinningColumn(inputColumnName: "Features", outputColumnName: "BinNormalized", numBins: 256));
 
 // Let's train our pipeline of normalizers, and then apply it to the same data.
 var normalizedData = pipeline.Fit(trainData).Transform(trainData);

@@ -1,7 +1,7 @@
 ---
 title: Load data from multiple files for machine learning processing - ML.NET
 description: Learn how to Load data from multiple files for use in machine learning model building, training, and scoring with ML.NET
-ms.date: 01/29/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to load data from multiple files so that I can use it in machine learning model building, training, and scoring with ML.NET.
 ---
@@ -18,7 +18,7 @@ Use the `TextLoader`, and specify an array of files to the `Read` method. The fi
 var mlContext = new MLContext();
 
 // Create the reader: define the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // A boolean column depicting the 'target label'.

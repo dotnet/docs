@@ -1,7 +1,7 @@
 ---
 title: Train a machine learning model with data that's not in a text file - ML.NET 
 description: Discover how to use ML.NET to load non-file training data for machine learning model training as part of the prediction pipeline.
-ms.date: 11/07/2018
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model with data that's not in a text file as part of the prediction pipeline for later use in my applications.
 ---
@@ -49,7 +49,7 @@ IEnumerable<CustomerChurnInfo> churnData = GetChurnInfo();
 // Turn the data into the ML.NET data view.
 // We can use CreateDataView or CreateStreamingDataView, depending on whether 'churnData' is an IList,
 // or merely an IEnumerable.
-var trainData = mlContext.CreateStreamingDataView(churnData);
+var trainData = mlContext.Data.ReadFromEnumerable(churnData);
 
 // Build the learning pipeline.
 // In our case, we will one-hot encode the demographic category, and concatenate that with the number of visits.

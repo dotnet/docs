@@ -1,7 +1,7 @@
 ---
 title: Train a machine learning model using cross-validation - ML.NET
 description: Discover how to train a machine learning model using cross-validation with ML.NET to have a greater level of accuracy for the model's predictions
-ms.date: 02/01/2019
+ms.date: 02/06/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use ML.NET to train a machine learning model using cross-validation with ML.NET so that I can have a greater level of accuracy for my model's predictions.
 ---
@@ -20,7 +20,7 @@ var mlContext = new MLContext();
 
 // Step one: read the data as an IDataView.
 // First, we define the reader: specify the data columns and where to find them in the text file.
-var reader = mlContext.Data.CreateTextReader(
+var reader = mlContext.Data.CreateTextLoader(
     columns: new TextLoader.Column[]
     {
         // The four features of the Iris dataset will be grouped together as one Features column.

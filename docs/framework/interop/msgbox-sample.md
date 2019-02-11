@@ -40,7 +40,7 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 ## See also
 - [Marshaling Strings](marshaling-strings.md)
-- [Platform Invoke Data Types](https://msdn.microsoft.com/library/16014d9f-d6bd-481e-83f0-df11377c550f(v=vs.100))
+- [Platform Invoke Data Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ac7ay120(v=vs.100))
 - [Default Marshaling for Strings](default-marshaling-for-strings.md)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
 - [Specifying a Character Set](specifying-a-character-set.md)

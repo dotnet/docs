@@ -148,14 +148,14 @@ Create a variable called `mlContext` and initialize it with a new instance of `M
 
 [!code-csharp[CreateMLContext](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#3 "Create the ML Context")]
 
-Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  Notice that you're using a `TextReader`. When you create a `TextLoader` using  `MLContext.Data.CreateTextLoader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization.
+Next, to setup for data loading initialize the `_textLoader` global variable in order to reuse it.  When you create a `TextLoader` using  `MLContext.Data.CreateTextLoader`, you pass in the context needed and the <xref:Microsoft.ML.Data.TextLoader.Arguments> class which enables customization.
 
  Specify the data schema by passing an array of <xref:Microsoft.ML.Data.TextLoader.Column> objects to the loader containing all the column names and their types. You defined the data schema previously when you created our `SentimentData` class. For our schema, the first column (Label) is a <xref:System.Boolean> (the prediction) and the second column (SentimentText) is the feature of type text/string used for predicting the sentiment.
-The `TextReader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
+The `TextLoader` class returns a fully initialized <xref:Microsoft.ML.Data.TextLoader>  
 
 To initialize the `_textLoader` global variable in order to reuse it for the needed datasets, add the following code after the  `mlContext` initialization:
 
-[!code-csharp[initTextReader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#4 "Initialize the TextReader")]
+[!code-csharp[initTextLoader](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#4 "Initialize the TextLoader")]
 
 Add the following as the next line of code in the `Main` method:
 
@@ -318,7 +318,7 @@ Add a call to the new method from the `Main` method, right under the `Evaluate` 
 
 While the `model` is a `transformer` that operates on many rows of data, a very common production scenario is a need for predictions on individual examples. The <xref:Microsoft.ML.PredictionEngine%602> is a wrapper that is returned from the `CreatePredictionEngine` method. Let's add the following code to create the `PredictionEngine` as the first line in the `Predict` Method:
 
-[!code-csharp[CreatePredictionFunction](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#17 "Create the PredictionFunction")]
+[!code-csharp[CreatePredictionEngine](../../../samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#17 "Create the PredictionEngine")]
   
 Add a comment to test the trained model's prediction in the `Predict` method by creating an instance of `SentimentData`:
 

@@ -31,15 +31,18 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventOpcode> class to specify event operation codes. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+## Examples
+
+The following example shows how to use the `Start` enumeration member to specify a start operation. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.
   
- [!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
- [!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
+[!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
+[!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
   
- [!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
- [!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
+The following example shows how to use the `Stop` enumeration member to specify a stop operation. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
   
+[!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
+[!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]
+
  ]]></format>
     </remarks>
   </Docs>
@@ -348,17 +351,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>An event that is published when an application starts a new transaction or activity. This operation code can be embedded within another transaction or activity when multiple events that have the <see cref="F:System.Diagnostics.Tracing.EventOpcode.Start" /> code follow each other without an intervening event that has a <see cref="F:System.Diagnostics.Tracing.EventOpcode.Stop" /> code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Start field to specify a start operation. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#7](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#7)]
- [!code-vb[ETWTrace#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#7)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -393,17 +385,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>An event that is published when an activity or a transaction in an application ends. The event corresponds to the last unpaired event that has a <see cref="F:System.Diagnostics.Tracing.EventOpcode.Start" /> operation code.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Stop field to specify a stop operation. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
- [!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Suspend">

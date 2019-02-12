@@ -79,14 +79,6 @@
       <MemberValue>22</MemberValue>
       <Docs>
         <summary>This type is similar to <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.MultipleAggregate" />, except that instead of aggregating all instance data to one aggregated (_Total) instance, it will aggregate counter data from instances of the same name. For example, if multiple provider processes contained instances named IExplore, <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.Multiple" /> and <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.MultipleAggregate" /> CounterSet will show multiple IExplore instances (IExplore, IExplore#1, IExplore#2, and so on); however, a <see cref="F:System.Diagnostics.PerformanceData.CounterSetInstanceType.InstanceAggregate" /> instance type will publish only one IExplore instance with aggregated counter data from all instances named IExplore.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This type is not supported in Windows Vista.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Multiple">

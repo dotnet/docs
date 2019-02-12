@@ -22,7 +22,7 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
+## Remarks
  Every event log has a maximum size limit and a configurable setting that provides the rule for writing new entries at that limit. When the event log has reached its maximum size, you can specify one of the following rules:  
   
 -   New entries will be discarded.  
@@ -32,7 +32,15 @@
 -   New entries will either be discarded or will overwrite existing entries depending upon the age of the existing entries.  
   
  Use the <xref:System.Diagnostics.EventLog.ModifyOverflowPolicy%2A> method to set the overflow behavior for an <xref:System.Diagnostics.EventLog>. Check the current configured behavior of an <xref:System.Diagnostics.EventLog> through its <xref:System.Diagnostics.EventLog.OverflowAction%2A> property.  
+
+## Example
+
+The following example enumerates the event logs defined on the local computer and displays configuration details for each event log.
   
+ [!code-cpp[EventLogProperties#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogProperties/CPP/source.cpp#2)]
+ [!code-csharp[EventLogProperties#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogProperties/CS/source.cs#2)]
+ [!code-vb[EventLogProperties#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogProperties/VB/source.vb#2)]  
+    
  ]]></format>
     </remarks>
   </Docs>
@@ -113,13 +121,7 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
- The following code example enumerates the event logs defined on the local computer, and displays configuration details for each event log.  
-  
- [!code-cpp[EventLogProperties#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogProperties/CPP/source.cpp#2)]
- [!code-csharp[EventLogProperties#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogProperties/CS/source.cs#2)]
- [!code-vb[EventLogProperties#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogProperties/VB/source.vb#2)]  
-  
+
  ]]></format>
         </remarks>
         <altmember cref="T:System.Diagnostics.EventLog" />

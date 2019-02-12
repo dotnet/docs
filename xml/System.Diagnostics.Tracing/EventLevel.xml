@@ -37,17 +37,22 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Diagnostics.Tracing.EventLevel.Warning> class to specify event levels. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+
+The following example shows how to use the `Error` enumeration member to identify an error message. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.
   
  [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
  [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+
+The following example shows how to use the `Informational` enumeration member to identify an informational message. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
   
  [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
  [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
+
+The following example shows how to use the `Verbose` enumeration member to identify a verbose message. This example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
   
  [!code-csharp[ETWTrace#11](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#11)]
  [!code-vb[ETWTrace#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#11)]  
-  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -118,17 +123,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>This level adds standard errors that signify a problem.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Error field to identify an error message. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
- [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Informational">
@@ -163,17 +157,6 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>This level adds informational events or messages that are not errors. These events can help trace the progress or state of an application.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Informational field to identify an informational message. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#6](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#6)]
- [!code-vb[ETWTrace#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#6)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LogAlways">
@@ -242,17 +225,6 @@
       <MemberValue>5</MemberValue>
       <Docs>
         <summary>This level adds lengthy events or messages. It causes all events to be logged.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the Verbose field to identify a verbose message. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
-  
- [!code-csharp[ETWTrace#11](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#11)]
- [!code-vb[ETWTrace#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#11)]  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Warning">

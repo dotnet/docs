@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 01/23/2019
+ms.date: 02/08/2019
 ---
 # Type extensions
 
@@ -94,6 +94,8 @@ You can now access `RepeatElements` as if it's a member of <xref:System.Collecti
 Optional extensions do not appear on the extended type when examined by reflection. Optional extensions must be in modules, and they're only in scope when the module that contains the extension is open or is otherwise in scope.
 
 Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they're instance members or static members according to how they're declared.
+
+Optional extension members are also not visible to C# or VB consumers. They can only be consumed in other F# code.
 
 ## Generic limitation of intrinsic and optional type extensions
 

@@ -49,7 +49,7 @@ You can add the preceding pragma anywhere in a source file, and the nullable ref
 You can also turn on **nullable reference types** for an entire project by adding the following element to your .csproj file, for example, immediately following the `LangVersion` element that enabled C# 8.0:
 
 ```xml
-<NullableReferenceTypes>true</NullableReferenceTypes>
+<NullableContextOptions>enable</NullableContextOptions>
 ```
 
 ### Design the types for the application

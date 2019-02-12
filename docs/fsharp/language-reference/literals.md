@@ -1,7 +1,7 @@
 ---
 title: Literals
 description: Learn about the literal types in the F# programming language.
-ms.date: 05/16/2016
+ms.date: 02/08/2019
 ---
 # Literals
 
@@ -45,16 +45,16 @@ As of F# 3.1, you can use the `+` sign to combine string literals. You can also 
 
 ```fsharp
 [<Literal>]
-let literal1 = "a" + "b"
+let Literal1 = "a" + "b"
 
 [<Literal>]
-let fileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let FileLocation =   __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let literal2 = 1 ||| 64
+let Literal2 = 1 ||| 64
 
 [<Literal>]
-let literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
+let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
 ```
 
 The use of other bitwise operators isn't allowed.
@@ -70,8 +70,8 @@ In pattern matching expressions, identifiers that begin with lowercase character
 Signed 32-bit integers can also be specified in hexadecimal, octal, or binary using a `0x`, `0o` or `0b` prefix respectively.
 
 ```fsharp
-let Numbers = (0x9F, 0o77, 0b1010)
-// Result: Numbers : int * int * int = (159, 63, 10)
+let numbers = (0x9F, 0o77, 0b1010)
+// Result: numbers : int * int * int = (159, 63, 10)
 ```
 
 ## Underscores in Numeric Literals

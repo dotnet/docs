@@ -27,7 +27,7 @@ You can get the code for the starter application use in this tutorial from our [
 
 The starter application is a console application that uses the[GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [.NET docs](https://github.com/dotnet/docs) repository. Start by looking at the code for the starter app `Main` method as shown in the following code:
 
-[!code-csharp[StarterAppMain](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Main.cs#StarterAppMain)]
+[!code-csharp[StarterAppMain](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#StarterAppMain)]
 
 You'll need to create a [GitHub access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/#creating-a-token) so that you can access the GitHub GraphQL endpoint. You can either set a `GitHubKey` environment variable to your personal access token, or you can replace the last argument in the call to `GenEnvVariable` with your personal access token.
 
@@ -42,7 +42,7 @@ When you run the starter application, you can make some important observations a
 
 The implementation reveals why you observed the behavior discussed in the previous section. Examine the code for `runPagedQueryAsync`:
 
-[!code-csharp[RunPagedQueryStarter](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Main.cs#RunPagedQuery)]
+[!code-csharp[RunPagedQueryStarter](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#RunPagedQuery)]
 
 Let's concentrate on the paging algorithm and async structure of the preceding code. (You can consult the [GitHub GraphQL documentation](https://developer.github.com/v4/guides/) for details on the GitHub GraphQL API.) The `runPagedQueryAsync` method enumerates the issues from the most recent backwards to older issues. It requests 25 issues per page, and examines the `pageInfo` structure of the response to continue with the previous page. That follows GraphQL's standard paging support for multiple page responses. The response includes a `pageInfo` object that includes a `hasPreviousPages` value and a `startCursor` value used to request the previous page. The issues are in the `nodes` array. The `runPagedQueryAsync` method appends these nodes to an array that contains all the results from all pages.
 
@@ -87,29 +87,29 @@ These three interfaces should be familiar to most C# developers. They behave in 
 
 Next, convert the `runPagedQueryAsync` to generate an async stream. First, change the signature of `runPagedQueryAsync` to return an `IAsyncEnumerable<JToken>`, and remove the cancellation token and progress objects from the parameter list as shown in the following code:
 
-[!code-csharp[FinishedSignature](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Main.cs#UpdateSignature)]
+[!code-csharp[FinishedSignature](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#UpdateSignature)]
 
 The starter code processes each page as the page is retrieved, as shown in the following code:
 
-[!code-csharp[StarterPaging](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Main.cs#ProcessPage)]
+[!code-csharp[StarterPaging](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#ProcessPage)]
 
 Replace those three lines with the following code:
 
-[!code-csharp[FinishedPaging](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Main.cs#YieldReturnPage)]
+[!code-csharp[FinishedPaging](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#YieldReturnPage)]
 
 You can also remove the declaration of `finalResults` earlier in this method, and the return statement that follows the loop you modified.
 
 You've finished the changes to generate an async stream. The finished method should resemble the code below:
 
-[!code-csharp[FinishedGenerate](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Main.cs#GenerateAsyncStream)]
+[!code-csharp[FinishedGenerate](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#GenerateAsyncStream)]
 
 Next, you change the code that consumes the collection to consume the async stream. Find the following code in `Main` that processes the collection of issues:
 
-[!code-csharp[EnumerateOldStyle](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Main.cs#EnumerateOldStyle)]
+[!code-csharp[EnumerateOldStyle](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#EnumerateOldStyle)]
 
 Replace all that code with the following `await foreach` loop:
 
-[!code-csharp[FinishedEnumerateAsyncStream](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Main.cs#EnumerateAsyncStream)]
+[!code-csharp[FinishedEnumerateAsyncStream](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#EnumerateAsyncStream)]
 
 Run the application again. Contrast its behavior with the behavior of the starter application. The first page of results is enumerated as soon as they are available. There's an observable pause as each new page is requested and retrieved, then the next page's results are quickly enumerated. The `try` / `catch` block is not needed to handle cancellation: the caller could stop enumerating the collection. Progress is clearly reported because the async stream generates results as each page is downloaded.
 

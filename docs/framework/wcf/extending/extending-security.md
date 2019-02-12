@@ -9,7 +9,7 @@ ms.assetid: a015a040-9fdf-4147-9ea9-f83b570be1d4
 To accommodate new claim types and custom tokens, you can extend the security infrastructure of Windows Communication Foundation (WCF). The topics in this section show you how this is done.  
   
 ## In This Section  
- [Security Architecture](https://msdn.microsoft.com/library/16593476-d36a-408d-808c-ae6fd483e28f)  
+ [Security Architecture](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms788756(v=vs.100))  
  Walks through the architecture of the WCF security system.  
   
  [Custom Credential and Credential Validation](../../../../docs/framework/wcf/extending/custom-credential-and-credential-validation.md)  

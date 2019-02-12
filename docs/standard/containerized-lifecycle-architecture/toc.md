@@ -28,7 +28,7 @@
 
 ### [Orchestrate microservices and multi-container applications for high scalability and availability](design-develop-containerized-apps/orchestrate-high-scalability-availability.md)
 
-### [# Deploy to Azure Kubernetes Service (AKS)](deploy-azure-kubernetes-service.md)
+### [Deploy to Azure Kubernetes Service (AKS)](design-develop-containerized-apps/deploy-azure-kubernetes-service.md)
 
 ### [Development environment for Docker apps](design-develop-containerized-apps/docker-apps-development-environment.md)
 

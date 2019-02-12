@@ -284,6 +284,5 @@ typedef struct _MYSTRSTRUCT2
   
 ## See also
 - [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)
-- [Platform Invoke Data Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ac7ay120(v=vs.100))
 - [Marshaling Strings](marshaling-strings.md)
 - [Marshaling Arrays of Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd93y453(v=vs.100))

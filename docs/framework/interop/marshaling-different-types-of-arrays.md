@@ -109,6 +109,5 @@ typedef struct _MYPERSON
  [!code-vb[Conceptual.Interop.Marshaling#32](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.interop.marshaling/vb/arrays.vb#32)]  
   
 ## See also
-- [Marshaling Arrays of Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd93y453(v=vs.100))
-- [Platform Invoke Data Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ac7ay120(v=vs.100))
+- [Platform invoke data types](marshaling-data-with-platform-invoke.md#platform-invoke-data-types)
 - [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)

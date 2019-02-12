@@ -73,7 +73,7 @@
 Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
 
 > [!IMPORTANT]
->  We don't recommend that you use the `Hashtable` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.HashSet%601> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
+>  We don't recommend that you use the `Hashtable` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.Dictionary%602> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
   
  The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods and interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class (or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation) with the <xref:System.Collections.CaseInsensitiveComparer> class (or any case-insensitive <xref:System.Collections.IComparer> implementation).  
   

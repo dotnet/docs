@@ -115,6 +115,6 @@ Run the application again. Contrast its behavior with the behavior of the starte
 
 You can see improvements in memory use by examining the code. You no longer need to allocate a collection to store all the results before they are enumerated. The caller can determine how to consume the results and if a storage collection is needed.
 
-You can get the code for the finished tutorial from our [samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished) folder.
+You can get the code for the finished tutorial from the [dotnet/samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished) folder.
 
 Run both the starter and finished applications and you can observe the differences between the implementations for yourself. You can delete the GitHub access token you created when you started this tutorial after you've finished. If an attacker gained access to that token, they could access GitHub APIs using your credentials.

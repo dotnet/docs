@@ -144,7 +144,7 @@ You've made changes to the `NewsService` class, so turn on the `#nullable enable
 
 [!code-csharp[ServiceConstructor](../../../samples/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader/NewsService.cs#ServiceConstructor)]
 
-The `IMapper` parameter is types as a nonnullable reference. It's called by ASP.NET Core infrastructure code, so the compiler doesn't really know that the `IMapper` will never be null. The default ASP.NET dependency injection (DI) container throws an exception if it can't resolve a necessary service, so the code is correct. The compiler can't validate all calls to your public APIs, even if your code is compiled with nullable annotation contexts enabled. Furthermore your libraries may be consumed by projects that have not yet opted into using nullable reference types. Validate inputs to public APIs even though you've declared them as nonnullable types.
+The `IMapper` parameter is types as a nonnullable reference. It's called by ASP.NET Core infrastructure code, so the compiler doesn't really know that the `IMapper` will never be null. The default ASP.NET Core dependency injection (DI) container throws an exception if it can't resolve a necessary service, so the code is correct. The compiler can't validate all calls to your public APIs, even if your code is compiled with nullable annotation contexts enabled. Furthermore your libraries may be consumed by projects that have not yet opted into using nullable reference types. Validate inputs to public APIs even though you've declared them as nonnullable types.
 
 ## Get the code
 

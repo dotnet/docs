@@ -38,6 +38,5 @@ The term *performance* generally refers to the execution speed of a program. You
   
 ## See also
 - [Performance](../../../docs/framework/performance/index.md)
-- [Programming Concepts](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)
 - [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)
 - [C# Programming Guide](../../csharp/programming-guide/index.md)

@@ -26,7 +26,7 @@ The sample application that you'll migrate is an RSS feed reader web app. It rea
 
 The sample application includes a unit test library that validates the major functionality of the app. That project will make it easier to upgrade safely, if you change any of the implementation based on the warnings generated. You can download the starter code from our [samples GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/tutorials/nullable-reference-migration/start).
 
-Your goal migrating a project should be to leverage the new language features so that you clearly express your intent on the nullability of variables, and do so in such a way that the  compiler does not generate warnings when you have the nullable annotation context and nullable warning context set to `enabled`.
+Your goal migrating a project should be to leverage the new language features so that you clearly express your intent on the nullability of variables, and do so in such a way that the compiler doesn't generate warnings when you have the nullable annotation context and nullable warning context set to `enabled`.
 
 ## Upgrade the projects to C# 8
 

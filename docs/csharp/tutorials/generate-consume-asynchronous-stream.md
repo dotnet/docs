@@ -81,7 +81,7 @@ namespace System
 }
 ```
 
-These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts: <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IEnumerator%601?displayProperty=nameWithType>, and <xref:System.IDisposable?displayProperty=nameWithType>. The one other type that may be unfamiliar is <xref:System.Threading.Tasks.ValueTask?displayProperty=nameWithType>. The `ValueTask` `struct` provides a similar API to the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class. `ValueTask` is used in these interfaces for performance reasons.
+These three interfaces should be familiar to most C# developers. They behave in a manner similar to their synchronous counterparts: <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>, <xref:System.Collections.Generic.IEnumerator%601?displayProperty=nameWithType>, and <xref:System.IDisposable?displayProperty=nameWithType>. One type that may be unfamiliar is <xref:System.Threading.Tasks.ValueTask?displayProperty=nameWithType>. The `ValueTask` struct provides a similar API to the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class. `ValueTask` is used in these interfaces for performance reasons.
 
 ## Convert to async streams
 

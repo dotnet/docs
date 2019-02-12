@@ -27,7 +27,7 @@ You can get the code for the starter application use in this tutorial from our [
 
 The starter application is a console application that uses the[GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [.NET docs](https://github.com/dotnet/docs) repository. Start by looking at the code for the starter app `Main` method as shown in the following code:
 
-[!code-csharp[StarterAppMain](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#StarterAppMain)]
+[!code-csharp[StarterAppMain](~/samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#StarterAppMain)]
 
 You'll need to create a [GitHub access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/#creating-a-token) so that you can access the GitHub GraphQL endpoint. You can either set a `GitHubKey` environment variable to your personal access token, or you can replace the last argument in the call to `GenEnvVariable` with your personal access token.
 

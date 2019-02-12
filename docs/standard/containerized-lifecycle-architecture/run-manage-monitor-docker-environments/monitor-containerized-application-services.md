@@ -1,9 +1,9 @@
 ---
 title: Monitor containerized application services
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn some key aspects of monitoring container architectures
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Monitor containerized application services
 

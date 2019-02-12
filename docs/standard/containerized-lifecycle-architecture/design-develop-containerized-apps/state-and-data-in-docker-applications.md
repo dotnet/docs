@@ -1,9 +1,9 @@
 ---
 title: State and data in Docker applications
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn the available option to save state in containerized applications.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # State and data in Docker applications
 

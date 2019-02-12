@@ -73,5 +73,5 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Tools](../../docs/framework/tools/index.md)  
  Describes the tools that help you develop, configure, and deploy apps by using .NET Framework technologies.  
   
- [.NET Samples](../samples-and-tutorials/index.md)  
- Provides links to the MSDN Code Samples Gallery for sample apps that demonstrate .NET Framework technologies.
+ [.NET samples and tutorials](../samples-and-tutorials/index.md)  
+ Provides links to samples and tutorials that help you learn about .NET.

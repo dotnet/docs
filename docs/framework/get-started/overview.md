@@ -93,5 +93,5 @@ The Windows Forms classes are a comprehensive set of reusable types that vastly 
 - [Installation guide](../../../docs/framework/install/index.md)
 - [Development Guide](../../../docs/framework/development-guide.md)
 - [Tools](../../../docs/framework/tools/index.md)
-- [.NET Framework Samples](../../samples-and-tutorials/index.md)
+- [.NET samples and tutorials](../../samples-and-tutorials/index.md)
 - [.NET Framework Class Library](https://go.microsoft.com/fwlink/?LinkID=227195)

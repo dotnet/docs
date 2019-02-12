@@ -50,7 +50,7 @@ That strategy works only for the smallest projects. For any larger projects, the
 
 ## Warnings help discover original design intent
 
-There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `NullableContextOptions` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the `NewsStoryViewModel.cs` and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
+There are two classes that generate multiple warnings. Start with the `NewsStoryViewModel` class. Remove the `NullableContextOptions` element from both csproj files so that you can limit the scope of warnings to the sections of code you're working with. Open the *NewsStoryViewModel.cs* file and add the following directives to enable the nullable annotation context for the `NewsStoryViewModel` and restore it following that class definition:
 
 ```csharp
 #nullable enable

@@ -71,8 +71,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[TabPage#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage/CPP/form1.cpp#1)]
  [!code-csharp[TabPage#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage/CS/form1.cs#1)]
  [!code-vb[TabPage#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage/VB/form1.vb#1)]  
@@ -115,8 +113,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.%23ctor%2A> constructor instantiates `tabPage1`.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[TabPage_constructor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage_constructor/CPP/form1.cpp#1)]
  [!code-csharp[TabPage_constructor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage_constructor/CS/form1.cs#1)]
  [!code-vb[TabPage_constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPage_constructor/VB/form1.vb#1)]  
@@ -155,8 +151,6 @@
   
 ## Examples  
  This example creates a <xref:System.Windows.Forms.TabControl> with a <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.%23ctor%2A> constructor accepts the `myTabPage` string as <xref:System.Windows.Forms.TabPage.Text%2A> for `tabPage1`.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[TabPage_withText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage_withText/CPP/form1.cpp#1)]
  [!code-csharp[TabPage_withText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage_withText/CS/form1.cs#1)]
@@ -531,8 +525,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects, each containing one <xref:System.Windows.Forms.Button> component. The parameter `button2` is passed to the <xref:System.Windows.Forms.TabPage.GetTabPageOfComponent%2A> method, which retrieves the <xref:System.Windows.Forms.TabPage> containing `button2`. To verify that the correct tab page is retrieved, the <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property sets the <xref:System.Windows.Forms.TabPage> containing `button2` to the currently selected tab page.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[GetTabPageOfComponent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/GetTabPageOfComponent/CPP/form1.cpp#1)]
  [!code-csharp[GetTabPageOfComponent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/GetTabPageOfComponent/CS/form1.cs#1)]
  [!code-vb[GetTabPageOfComponent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/GetTabPageOfComponent/VB/form1.vb#1)]  
@@ -594,8 +586,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabPage.ImageIndex%2A> property to specify which image from `myImages` displays on the tab of `tabPage1`.  
-  
- Use the <xref:System.Drawing>, <xref:System.ComponentModel>, <xref:System.Windows.Forms>, and <xref:System.Resources> namespace for this example.  
   
  [!code-cpp[TabPage.ImageIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage.ImageIndex/CPP/form1.cpp#1)]
  [!code-csharp[TabPage.ImageIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage.ImageIndex/CS/form1.cs#1)]
@@ -1154,8 +1144,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.Text%2A> property sets the tab page text to `myTabPage`.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[TabText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabText/CPP/form1.cpp#1)]
  [!code-csharp[TabText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabText/CS/form1.cs#1)]
  [!code-vb[TabText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabText/VB/form1.vb#1)]  
@@ -1235,8 +1223,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl> is set to allow ToolTips, and the tab pages are assigned ToolTip text.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolTipText/CPP/form1.cpp#1)]
  [!code-csharp[ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolTipText/CS/form1.cs#1)]
  [!code-vb[ToolTipText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolTipText/VB/form1.vb#1)]  
@@ -1273,8 +1259,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with a <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabPage.ToString%2A> method creates a string that includes the <xref:System.Windows.Forms.TabPage.Text%2A> value for `tabPage1` and returns it to the `tabPage1`<xref:System.Windows.Forms.TabPage.ToolTipText%2A> property.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[TabPage.ToString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPage.ToString/CPP/form1.cpp#1)]
  [!code-csharp[TabPage.ToString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPage.ToString/CS/form1.cs#1)]

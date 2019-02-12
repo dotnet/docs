@@ -49,8 +49,6 @@
 > [!NOTE]
 >  The example requires that each line fits within the page width.  
   
- Use the <xref:System.ComponentModel>, <xref:System.Windows.Forms>, <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.IO> namespaces for this example.  
-  
  [!code-cpp[Classic PrintDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintDocument Example/CPP/source.cpp#1)]
  [!code-csharp[Classic PrintDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintDocument Example/CS/source.cs#1)]
  [!code-vb[Classic PrintDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintDocument Example/VB/source.vb#1)]  
@@ -95,8 +93,6 @@
   
 ## Examples  
  The following code example sets a document's page orientation to landscape, and prints the document.  
-  
- Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.IO> namespaces for this example.  
   
  [!code-cpp[Classic PrintDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintDocument Example/CPP/source.cpp#1)]
  [!code-csharp[Classic PrintDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintDocument Example/CS/source.cs#1)]
@@ -773,8 +769,6 @@
  The following code example demonstrates handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
   
  For another example, see [How to: Print a Multi-Page Text File in Windows Forms](~/docs/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md).  
-  
- Use the <xref:System.Drawing>, <xref:System.Drawing.Printing>, and <xref:System.IO> namespaces for this example.  
   
  [!code-cpp[Classic PrintDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintDocument Example/CPP/source.cpp#1)]
  [!code-csharp[Classic PrintDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintDocument Example/CS/source.cs#1)]

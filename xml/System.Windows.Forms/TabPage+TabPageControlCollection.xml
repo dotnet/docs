@@ -87,8 +87,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabPage.TabPageControlCollection.Add%2A> method to add a single control, `button1`, to the `tabPage1`. The <xref:System.Windows.Forms.Control.Controls%2A> property is used to get the `tabPage1` controls collection to add controls to the collection.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[TabPageControlCollection.Add#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPageControlCollection.Add/CPP/add.cpp#1)]
  [!code-csharp[TabPageControlCollection.Add#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPageControlCollection.Add/CS/add.cs#1)]
  [!code-vb[TabPageControlCollection.Add#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPageControlCollection.Add/VB/add.vb#1)]  

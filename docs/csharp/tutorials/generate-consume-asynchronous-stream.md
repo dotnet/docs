@@ -85,7 +85,7 @@ These three interfaces should be familiar to most C# developers. They behave in 
 
 ## Convert to async streams
 
-Next, convert the `runPagedQueryAsync` to generate an async stream. First, change the signature of `runPagedQueryAsync` to return an `IAsyncEnumerable<JToken>`, and remove the cancellation token and progress objects from the parameter list as shown in the following code:
+Next, convert the `runPagedQueryAsync` method to generate an async stream. First, change the signature of `runPagedQueryAsync` to return an `IAsyncEnumerable<JToken>`, and remove the cancellation token and progress objects from the parameter list as shown in the following code:
 
 [!code-csharp[FinishedSignature](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#UpdateSignature)]
 

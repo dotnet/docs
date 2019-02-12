@@ -19,7 +19,7 @@ This new feature provides significant benefits over the handling of reference va
 - **A reference can be null**. No warnings are issued when a reference type is initialized to null, or later assigned to null.
 - **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. (With nullable references,  the compiler issues warnings whenever you dereference a variable that may be null).
 
-With the addition of nullable reference types, you can declare your intent more clearly. The `null` value is the correct way to represent that a variable does not refer to a value. Don't use this feature to remove all `null` values from your code. Rather, you should declare your intent to the compiler and other developers that read your code. By declaring your intent, the compiler informs you when you write code that is inconsistent with that intent.
+With the addition of nullable reference types, you can declare your intent more clearly. The `null` value is the correct way to represent that a variable doesn't refer to a value. Don't use this feature to remove all `null` values from your code. Rather, you should declare your intent to the compiler and other developers that read your code. By declaring your intent, the compiler informs you when you write code that is inconsistent with that intent.
 
 A **nullable reference type** is noted using the same syntax as [nullable value types](programming-guide/nullable-types/index.md): a `?` is appended to the type of the variable. For example, the following variable declaration represents a nullable string variable, `name`:
 

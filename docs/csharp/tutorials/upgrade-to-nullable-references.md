@@ -98,7 +98,7 @@ That code maps properties of the `ISyndicationItem` object to the `NewsStoryView
 
 Notice that because this class is small, and you've examined carefully, you should turn on the `#nullable enable` directive above this class declaration. This change could have broken something, so it's worthwhile to run all the tests and test the application before moving on.
 
-The first set of changes showed you how to discover when the original design indicated that variables should not be set to null. The technique is referred to as **correct by construction**. You guarantee that an object and its properties cannot be null when it is constructed. The compiler's flow analysis provides assurance that those properties are not set to null after construction.
+The first set of changes showed you how to discover when the original design indicated that variables shouldn't be set to `null`. The technique is referred to as **correct by construction**. You guarantee that an object and its properties cannot be `null` when it's constructed. The compiler's flow analysis provides assurance that those properties aren't set to `null` after construction.
 
 Other times, the structure of a class provides different clues to the intent. Open the `Error.cshtml.cs` file in the `Pages` folder. The `ErrorViewModel` contains the following code:
 

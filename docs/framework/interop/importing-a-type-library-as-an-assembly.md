@@ -38,7 +38,7 @@ COM type definitions usually reside in a type library. In contrast, CLS-complian
   
 -   Visual Studio  
   
-     Visual Studio automatically converts COM types in a type library to metadata in an assembly. For instructions, see [How to: Add References to Type Libraries](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md) and [Walkthrough: Embedding Type Information from Microsoft Office Assemblies (C# and Visual Basic)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee317478(v=vs.100)).  
+     Visual Studio automatically converts COM types in a type library to metadata in an assembly. For instructions, see [How to: Add References to Type Libraries](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md), [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md), and [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md).  
   
 -   [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)  
   
@@ -75,4 +75,5 @@ COM type definitions usually reside in a type library. In contrast, CLS-complian
 - [Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)
 - [How to: Add References to Type Libraries](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md)
 - [How to: Generate Interop Assemblies from Type Libraries](../../../docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies (C# and Visual Basic)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee317478(v=vs.100))
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
+- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)

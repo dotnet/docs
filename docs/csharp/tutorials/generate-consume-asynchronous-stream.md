@@ -97,7 +97,7 @@ Replace those three lines with the following code:
 
 [!code-csharp[FinishedPaging](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#YieldReturnPage)]
 
-You can also remove the declaration of `finalResults` earlier in this method, and the return statement that follows the loop you modified.
+You can also remove the declaration of `finalResults` earlier in this method and the `return` statement that follows the loop you modified.
 
 You've finished the changes to generate an async stream. The finished method should resemble the code below:
 

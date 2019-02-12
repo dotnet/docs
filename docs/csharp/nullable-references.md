@@ -44,7 +44,7 @@ Any reference type can have one of four *nullabilities*, which describes when wa
 - *Nonnullable*: Null can't be assigned to variables of this type. Variables of this type don't need to be null-checked before dereferencing.
 - *Nullable*: Null can be assigned to variables of this type. Dereferencing variables of this type without first checking for `null` causes a warning.
 - *Oblivious*: This is the pre-C# 8 state. Variables of this type can be dereferenced or assigned without warnings.
-- *Unknown*: This is generally for type parameters where constraints do not tell the compiler that the type must be *nullable* or *nonnullable*.
+- *Unknown*: This is generally for type parameters where constraints don't tell the compiler that the type must be *nullable* or *nonnullable*.
 
 The nullability of a type in a variable declaration is controlled by the *nullable context* in which the variable is declared.
 

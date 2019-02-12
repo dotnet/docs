@@ -52,7 +52,7 @@ There are several elements in this code that can be improved. Most importantly, 
 
 ## Async streams provide a better way
 
-Async streams and the associated language support address all those concerns. The code that generates the sequence can now use `yield return` to return elements in a method that was declared with the `async` modifier. You can consume an async stream using a new `await foreach` loop just as you consume any sequence using a `foreach` loop.
+Async streams and the associated language support address all those concerns. The code that generates the sequence can now use `yield return` to return elements in a method that was declared with the `async` modifier. You can consume an async stream using an `await foreach` loop just as you consume any sequence using a `foreach` loop.
 
 These new language features depend on three new interfaces added to .NET Standard 2.1 and implemented in .NET Core 3.0:
 

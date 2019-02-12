@@ -41,9 +41,7 @@ If you want to create apps with great performance, you should design and plan fo
 |--------------|---------|  
 |.NET Framework apps for all platforms|[Garbage Collection and Performance](../../../docs/standard/garbage-collection/performance.md)<br /><br /> [Performance Tips](../../../docs/framework/performance/performance-tips.md)|  
 |[!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps written in C++, C#, and Visual Basic|[Performance best practices for Windows Store apps using C++, C#, and Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh750313%28v=win.10%29)|  
-|Windows Phone|[App performance considerations for Windows Phone 8](https://docs.microsoft.com/previous-versions/windows/apps/ff967560(v=vs.105))<br /><br /> [Windows Phone Application Analysis for Windows Phone 8](https://docs.microsoft.com/previous-versions/windows/apps/hh202934(v=vs.105))<br /><br /> [Get Your Windows Phone Applications in the Marketplace Faster](https://msdn.microsoft.com/magazine/hh781024.aspx)|  
 |Windows Presentation Foundation (WPF)|[WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))|  
-|Silverlight|[Performance tips](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189071(v=vs.95))|  
 |ASP.NET|[ASP.NET Performance Overview](https://docs.microsoft.com/previous-versions/aspnet/cc668225(v=vs.100))|  
 |Windows Forms|[Practical Tips for Boosting the Performance of Windows Forms Apps](https://msdn.microsoft.com/magazine/cc163630.aspx)|  
   

@@ -107,7 +107,7 @@ Next, you change the code that consumes the collection to consume the async stre
 
 [!code-csharp[EnumerateOldStyle](../../../samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#EnumerateOldStyle)]
 
-Replace all that code with the following `await foreach` loop:
+Replace that code with the following `await foreach` loop:
 
 [!code-csharp[FinishedEnumerateAsyncStream](../../../samples/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#EnumerateAsyncStream)]
 

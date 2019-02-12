@@ -25,7 +25,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 You can get the code for the starter application used in this tutorial from our [dotnet/samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/start) folder.
 
-The starter application is a console application that uses the[GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [.NET docs](https://github.com/dotnet/docs) repository. Start by looking at the code for the starter app `Main` method as shown in the following code:
+The starter application is a console application that uses the [GitHub GraphQL](https://developer.github.com/v4/) interface to retrieve recent issues written in the [dotnet/docs](https://github.com/dotnet/docs) repository. Start by looking at the following code for the starter app `Main` method:
 
 [!code-csharp[StarterAppMain](~/samples/csharp/tutorials/AsyncStreams/start/IssuePRreport/IssuePRreport/Program.cs#StarterAppMain)]
 

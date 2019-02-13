@@ -120,7 +120,7 @@ class CustomIdentityVerifier : IdentityVerifier
   
 4.  Launch Client.exe from \client\bin directory or by pressing F5 in Visual Studio to build and run. Client activity is displayed on the client console application.  
   
-5.  If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+5.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To run the sample across computers  
   
@@ -144,7 +144,7 @@ class CustomIdentityVerifier : IdentityVerifier
   
 10. On the service computer, launch the Service.exe from the command prompt.  
   
-11. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
+11. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ### To clean up after the sample  
   

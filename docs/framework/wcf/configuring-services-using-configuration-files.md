@@ -258,6 +258,6 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 ## See also
 - [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
-- [Configuring Windows Communication Foundation Applications](https://msdn.microsoft.com/library/13cb368e-88d4-4c61-8eed-2af0361c6d7a)
+- [Configuring WCF services](configuring-services.md)
 - [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
 - [\<binding>](../../../docs/framework/misc/binding.md)

@@ -39,7 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Ordinarily, types and members with `internal` scope (in C#) and `Friend` scope (in Visual Basic) are visible only in the assembly in which they are defined. The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute makes them also visible to the types in a specified assembly, which is known as a friend assembly. This only applies to `internal` (`Friend` in VB) methods only, not `private` ones.
+ Ordinarily, types and members with `internal` or `private protected` scope (in C#) and `Friend` and `Private Protected` scope (in Visual Basic) are visible only in the assembly in which they are defined. The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute makes them also visible to the types in a specified assembly, which is known as a friend assembly. This only applies to `internal` (`Friend` in VB) or `private protected`(`Private Protected` in VB) methods only, but not `private` ones.
   
  The attribute is applied at the assembly level. This means that it can be included at the beginning of a source code file, or it can be included in the AssemblyInfo file in a Visual Studio project. You can use the attribute to specify a single friend assembly that can access the internal types and members of the current assembly. You can define multiple friend assemblies in two ways. They can appear as individual assembly-level attributes, as the following example illustrates.  
   
@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor defines a friend assembly, which is an assembly that has access to the internal types and members of the current assembly.  
+ The <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute.%23ctor%2A> constructor defines a friend assembly, which is an assembly that has access to the internal and private protected types and members of the current assembly.  
   
  Both the current assembly and the friend assembly must be unsigned, or both must be signed with a strong name. (For more information about strong-named assemblies, see [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/create-and-use-strong-named-assemblies.md).) If both are unsigned, the `assemblyName` argument consists of the name of the friend assembly, specified without a directory path or file extension. If both are signed, `assemblyName` consists of the name of the friend assembly without its directory path or file name extension, along with its full public key (but not its public key token). The other components of a strong name, such as those that provide culture, version, or processor architecture information, cannot be specified in the `assemblyName` argument.  
   

@@ -5,7 +5,7 @@ ms.assetid: 69a21511-0871-4c41-9a53-93110e84d7fd
 ---
 # Troubleshoot the Get started with Windows Communication Foundation tutorials
 
-This article provides solutions for the most common problems and errors you might face when you follow the steps in the [Get started with Windows Communication Foundation applications tutorials](getting-started-tutorial.md). 
+This article provides solutions for the most common problems and errors you might face when you follow the steps in the [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md). 
   
 ## Common problems
 

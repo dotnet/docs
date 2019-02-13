@@ -1,5 +1,5 @@
 ---
-title: "Get started with Windows Communication Foundation applications tutorials"
+title: "Tutorial: Get started with Windows Communication Foundation applications"
 description: These tutorials provides an introduction for creating WCF applications. 
 ms.date: 01/25/2019
 helpviewer_keywords:
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "get started [WCF]"
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
 ---
-# Get started with Windows Communication Foundation applications tutorials
+# Tutorial: Get started with Windows Communication Foundation applications
 The following series of tutorials introduce you to the Windows Communication Foundation (WCF) programming experience. Working through these tutorials in order will give you an introductory understanding of the steps required to create WCF applications. After you finish, you'll have a running WCF service and a WCF client that calls the service. 
 
 The tutorial assumes you're using Visual Studio as the development environment. If you're using another development environment, ignore the Visual Studio-specific instructions. 

@@ -85,7 +85,9 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 -   `contract`. Specifies the interface that defines the contract. This is the interface implemented in the common language runtime (CLR) type specified by the `name` attribute of the `service` element.  
   
--   [\<endpoint> element reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731320(v=vs.100))  
+-   [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md)  
+
+-   [\<endpoint> of \<client>](../configure-apps/file-schema/wcf/endpoint-of-client.md)
   
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  

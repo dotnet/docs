@@ -16,8 +16,8 @@ There are numerous enhancements to the C# language that you can try out already 
   * Property patterns
   * positional patterns
   * Tuple patterns
-- using declarations
-- static local functions
+- [Using declarations](#using-declarations)
+- [Static local functions](#static-local-functions)
 - [Disposable ref structs](#disposable-ref-structs)
 
 The following language features first appeared in C# 8.0 preview 1:
@@ -42,7 +42,61 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## using declarations
 
+A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:
+
+```csharp
+static void WriteLinesToFile(IEnumerable<string> lines)
+{
+    using (var file = new System.IO.StreamWriter("WriteLines2.txt"))
+    {
+        foreach (string line in lines)
+        {
+            // If the line doesn't contain the word 'Second', write the line to the file.
+            if (!line.Contains("Second"))
+            {
+                file.WriteLine(line);
+            }
+        }
+    } // file is disposed here
+}
+```
+
+A few braces are removed by replacing the `using` statement with a `using` declaration:
+
+```csharp
+static void WriteLinesToFile(IEnumerable<string> lines)
+{
+    using var file = new System.IO.StreamWriter("WriteLines2.txt");
+    foreach (string line in lines)
+    {
+        // If the line doesn't contain the word 'Second', write the line to the file.
+        if (!line.Contains("Second"))
+        {
+            file.WriteLine(line);
+        }
+    }
+// file is disposed here
+}
+```
+
+Using declarations provide the same behavior when exceptions are thrown: the `Dispose()` call is in a `finally` block.s
+
 ## Static local functions
+
+You can now add the `static` modifier to local functions to ensure that local function does not capture (reference) any variables from the enclosing scope. Doing so generates `CS8421`, "A static local function cannot contain a reference to <variable>." 
+
+Consider the following code. The local function `LocalFunction` accesses the variable `y`, declared in the enclosing scope (the method `M`). Therefore, `LocalFunction` cannot be declared with the `static` modifier:
+
+```csharp
+int M()
+{
+    int y;
+    LocalFunction();
+    return y;
+
+    void LocalFunction() => y = 0;
+}
+```
 
 ## Disposable ref structs
 

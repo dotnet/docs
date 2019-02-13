@@ -6,7 +6,7 @@
 
 ## [Docker containers, images, and registries](docker-containers-images-and-registries.md)
 
-## [Road to modern applications based on containers](road-to-modern-applications-based-on-containers.md)
+## [Road to modern applications based on containers](road-modern-applications-based-containers.md)
 
 ## [Introduction to the Docker application lifecycle](Docker-application-lifecycle/index.md)
 

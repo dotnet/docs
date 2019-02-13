@@ -28,6 +28,6 @@ ms.author: "mhopkins"
  [UI Automation Specification and Community Promise](../../../docs/framework/ui-automation/ui-automation-specification-and-community-promise.md)  
   
 ## Related Sections  
- [UI Automation Provider Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa358512(v=vs.90))\
- [UI Automation Control Pattern Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa358530(v=vs.90))\
- [Other UI Automation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa358520(v=vs.90))
+- [UI Automation Provider Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa358512(v=vs.90))
+- [UI Automation Control Pattern Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa358530(v=vs.90))
+- [Other UI Automation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa358520(v=vs.90))

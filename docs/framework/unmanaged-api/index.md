@@ -58,5 +58,3 @@ This section includes information on unmanaged APIs that can be used by managed-
   
 ## Related Sections  
  [Development Guide](../../../docs/framework/development-guide.md)  
-  
- [Advanced Reading for the .NET Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/29eafad8(v=vs.100))

@@ -31,7 +31,7 @@ HRESULT OnAppDomain (
   
 #### Parameters  
  `pAppdomain`  
- [in] A pointer to an [IUnknown](/dotnet/api/iunknown) interface object that represents the new application domain.  
+ [in] A pointer to an [IUnknown](/cpp/atl/iunknown) interface object that represents the new application domain.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

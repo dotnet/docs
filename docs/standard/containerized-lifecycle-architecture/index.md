@@ -5,7 +5,7 @@ author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 11/23/2018
 ---
-# Introduction to Containers and Docker
+# Introduction to containers and Docker
 
 *Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You then can test the containerized application as a unit and deploy it as a container image instance to the host operating system (OS).*
 

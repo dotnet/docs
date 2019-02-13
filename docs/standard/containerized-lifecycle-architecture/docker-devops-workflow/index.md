@@ -1,9 +1,9 @@
 ---
-title: Docker application devops workflow with Microsoft tools
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Toolsdevops workflow with Microsoft tools
+title: Docker application DevOps workflow with Microsoft tools
+description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools DevOps workflow with Microsoft tools
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 
 # Docker application DevOps workflow with Microsoft tools
@@ -29,5 +29,5 @@ The complexity of containerized application development increases steadily depen
 -   Organizations easily can provision Docker containers from private images stored in Azure Container Registry along with any dependency on Azure components (Data, PaaS, etc.) using Azure Resource Manager templates with tools with which they are already comfortable working.
 
 >[!div class="step-by-step"]
->[Previous](../design-develop-containerized-apps/set-up-windows-containers-with-powershell.md)
+>[Previous](../design-develop-containerized-apps/build-aspnet-core-applications-linux-containers-aks-kubernetes.md)
 >[Next](docker-application-outer-loop-devops-workflow.md)

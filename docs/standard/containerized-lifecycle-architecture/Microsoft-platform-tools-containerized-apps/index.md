@@ -1,9 +1,9 @@
 ---
 title: Introduction to the Microsoft platform and tools for containerized apps
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get to know Microsoft's offerings to support Docker applications lifecycle.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
+ms.date: 11/23/2018
 ---
 # Introduction to the Microsoft platform and tools for containerized apps
 

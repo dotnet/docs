@@ -75,7 +75,7 @@ The data reader is an ML.NET component to 'create' data: it takes an instance of
 
 An interesting property to note is that you can create a data reader by attaching a transformer to an existing data reader. This way you can have a reader with transformation behavior baked in:
 
-```c#
+```csharp
 var newReader = reader.Append(transformer1).Append(transformer2)
 ```
 
@@ -118,7 +118,7 @@ Of course, you can reduce this to the batch prediction:
 
 The preceding algorithm can be implemented using the [schema comprehension](https://github.com/dotnet/machinelearning/blob/master/docs/code/SchemaComprehension.md), with two user-defined objects `InputExample` and `OutputPrediction` as follows:
 
-```c#
+```csharp
 var inputData = mlContext.Data.ReadFromEnumerable(new InputExample[] { example });
 var outputData = model.Transform(inputData);
 var output = mlContext.CreateEnumerable<OutputPrediction>(outputData,reuseRowObject:false).First();
@@ -127,7 +127,7 @@ var output = mlContext.CreateEnumerable<OutputPrediction>(outputData,reuseRowObj
 But this is cumbersome and incurs performance costs. 
 Instead, a prediction function object performs the same work, but faster and more convenient, via an extension method `CreatePredictionEngine`:
 
-```c#
+```csharp
 var predictionEngine = model.CreatePredictionEngine<InputExample,OutputPrediction>(mlContext);
 var prediction = predictionEngine.Predict(example);
 ```

@@ -1,9 +1,9 @@
 ---
 title: Run composed and microservices-based applications in production environments
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get to know the key components to run container-based applications in production
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Run composed and microservices-based applications in production environments
 

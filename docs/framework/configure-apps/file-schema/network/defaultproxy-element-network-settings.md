@@ -1,5 +1,5 @@
 ---
-title: "&lt;defaultProxy&gt; Element (Network Settings)"
+title: "<defaultProxy> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultProxy"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "<defaultProxy> element"
 ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
 ---
-# &lt;defaultProxy&gt; Element (Network Settings)
+# \<defaultProxy> Element (Network Settings)
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.  
   
  \<configuration>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;oidEntry&gt; Element"
+title: "<oidEntry> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings/oidMap/oidEntry"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "<oidEntry> element"
   - "oidEntry element"
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;oidEntry&gt; Element
+# \<oidEntry> Element
 Maps an ASN.1 object identifier (OID) to a friendly name.  
   
  \<configuration>  

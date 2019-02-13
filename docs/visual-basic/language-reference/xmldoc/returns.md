@@ -1,12 +1,12 @@
 ---
-title: "&lt;returns&gt; (Visual Basic)"
+title: "<returns> (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "returns XML tag"
   - "<returns> XML tag"
 ms.assetid: a03a6469-d907-425d-882f-083187950e7e
 ---
-# &lt;returns&gt; (Visual Basic)
+# \<returns> (Visual Basic)
 Specifies the return value of the property or function.  
   
 ## Syntax  

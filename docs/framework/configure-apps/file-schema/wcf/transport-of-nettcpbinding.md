@@ -1,9 +1,9 @@
----
-title: "&lt;transport&gt; of &lt;netTcpBinding&gt;"
+﻿---
+title: "<transport> of <netTcpBinding>"
 ms.date: "03/30/2017"
 ms.assetid: 49462e0a-66e1-463f-b3e1-c83a441673c6
 ---
-# &lt;transport&gt; of &lt;netTcpBinding&gt;
+# \<transport> of \<netTcpBinding>
 Defines the type of message-level security requirements for an endpoint configured with the [\<netTcpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md).  
   
  \<system.ServiceModel>  

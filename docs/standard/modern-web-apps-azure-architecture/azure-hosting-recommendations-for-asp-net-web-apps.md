@@ -3,7 +3,7 @@ title: Azure hosting recommendations for ASP.NET Core web apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Azure hosting recommendations for ASP.NET web apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/27/2018
+ms.date: 01/30/2019
 ---
 
 # Azure hosting recommendations for ASP.NET Core web apps

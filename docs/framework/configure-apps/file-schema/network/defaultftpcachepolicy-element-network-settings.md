@@ -1,5 +1,5 @@
 ---
-title: "&lt;defaultFtpCachePolicy&gt; Element (Network Settings)"
+title: "<defaultFtpCachePolicy> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultFtpCachePolicy"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "defaultFtpCachePolicy element"
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
 ---
-# &lt;defaultFtpCachePolicy&gt; Element (Network Settings)
+# \<defaultFtpCachePolicy> Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  
   
  \<configuration>  

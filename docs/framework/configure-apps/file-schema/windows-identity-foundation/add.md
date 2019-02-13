@@ -1,10 +1,10 @@
 ---
-title: "&lt;add&gt;"
+title: "<add>"
 ms.date: "03/30/2017"
 ms.assetid: 4712a888-f154-4395-8887-ef14a88a6497
 author: "BrucePerlerMS"
 ---
-# &lt;add&gt;
+# \<add>
 Adds the specified security token handler to the token handler collection.  
   
  \<system.identityModel>  
@@ -34,7 +34,7 @@ Adds the specified security token handler to the token handler collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|The CLR type name of the token handler to be added. For more information about how to specify the `type` attribute, see [Custom Type References](https://msdn.microsoft.com/library/7286d2e3-c63d-49fd-abdc-ce2705f22c24).|  
+|type|The CLR type name of the token handler to be added. For more information about how to specify the `type` attribute, see [Custom Type References](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
   
 ### Child Elements  
   

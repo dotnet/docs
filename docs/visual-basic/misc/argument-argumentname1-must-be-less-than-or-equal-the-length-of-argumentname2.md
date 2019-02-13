@@ -1,9 +1,9 @@
 ---
-title: "Argument '&lt;argumentname1&gt;' must be less than or equal the length of argument '&lt;argumentname2&gt;'"
+title: "Argument '<argumentname1>' must be less than or equal the length of argument '<argumentname2>'"
 ms.date: 07/20/2015
 ms.assetid: 55a2401f-a44d-4671-b35e-878f48594162
 ---
-# Argument '&lt;argumentname1&gt;' must be less than or equal the length of argument '&lt;argumentname2&gt;'
+# Argument '\<argumentname1>' must be less than or equal the length of argument '\<argumentname2>'
 The length of a supplied argument exceeds the length of the argument it is replacing.  
   
 ## To correct this error  

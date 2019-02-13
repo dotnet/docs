@@ -27,7 +27,7 @@ WCF services and clients can communicate over HTTP and HTTPS. The HTTP/HTTPS set
  The following shows the syntax of the Httpcfg command with the `set urlacl` option  
   
 ```console  
-httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /aACL  
+httpcfg set urlacl /u {http://URL:Port/ | https://URL:Port/} /a ACL  
 ```  
   
  The `/u` parameter is required when using `set urlacl`. It takes a string that contains a fully-qualified URL that serves as the record key for the reservation being made.  

@@ -1,5 +1,5 @@
 ---
-title: "Constant expression not representable in type &#39;&lt;typename&gt;&#39;"
+title: "Constant expression not representable in type '<typename>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30439"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30439"
 ms.assetid: 0a842906-3bc5-4946-8a37-3e3da883ef63
 ---
-# Constant expression not representable in type &#39;&lt;typename&gt;&#39;
+# Constant expression not representable in type '\<typename>'
 You are trying to evaluate a constant that will not fit into the target type, usually because it is overflowing the range.  
   
  **Error ID:** BC30439  

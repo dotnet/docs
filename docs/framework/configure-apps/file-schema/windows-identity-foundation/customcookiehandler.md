@@ -1,10 +1,10 @@
 ---
-title: "&lt;customCookieHandler&gt;"
+title: "<customCookieHandler>"
 ms.date: "03/30/2017"
 ms.assetid: a03b153d-5ec6-4915-9031-6f0c3fd348be
 author: "BrucePerlerMS"
 ---
-# &lt;customCookieHandler&gt;
+# \<customCookieHandler>
 Sets the custom cookie handler type. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
  \<system.identityModel.services>  

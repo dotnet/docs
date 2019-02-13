@@ -1,9 +1,9 @@
 ---
-title: "&lt;clientVia&gt;"
+title: "<clientVia>"
 ms.date: "03/30/2017"
 ms.assetid: c27ee94e-babd-459b-9574-2a6d67d11314
 ---
-# &lt;clientVia&gt;
+# \<clientVia>
 Specifies the URI for which the transport channel should be created. For more information, see <xref:System.ServiceModel.Description.ClientViaBehavior>.  
   
  \<system.ServiceModel>  

@@ -1,5 +1,5 @@
 ---
-title: "&lt;disableFusionUpdatesFromADManager&gt; Element"
+title: "<disableFusionUpdatesFromADManager> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "disableFusionUpdatesFromADManager element"
@@ -8,7 +8,7 @@ ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;disableFusionUpdatesFromADManager&gt; Element
+# \<disableFusionUpdatesFromADManager> Element
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.  
   
  \<configuration> Element  

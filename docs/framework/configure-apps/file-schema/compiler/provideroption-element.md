@@ -1,5 +1,5 @@
 ---
-title: "&lt;providerOption&gt; Element"
+title: "<providerOption> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "provideroption"
@@ -8,10 +8,8 @@ helpviewer_keywords:
   - "providerOptions"
   - "provideroption element"
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;providerOption&gt; Element
+# \<providerOption> Element
 Specifies the compiler version attributes for a language provider.  
   
  \<configuration Element>  
@@ -91,4 +89,4 @@ Specifies the compiler version attributes for a language provider.
 - [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
 - [\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)
 - [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
-- [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/f7d6b078-5d42-4134-b3f7-62e1aba1df1e)
+- [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

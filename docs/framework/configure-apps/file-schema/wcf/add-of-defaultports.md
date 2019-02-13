@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;defaultPorts&gt;"
+title: "<add> of <defaultPorts>"
 ms.date: "03/30/2017"
 ms.assetid: f162ce42-963b-4779-96a7-d6d8b4ea0d2f
 ---
-# &lt;add&gt; of &lt;defaultPorts&gt;
+# \<add> of \<defaultPorts>
 A default communications endpoint that the client application listens to.  
   
  \<system.ServiceModel>  

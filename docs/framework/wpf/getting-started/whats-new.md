@@ -1,12 +1,12 @@
----
-title: "What&#39;s New in WPF Version 4.5"
+﻿---
+title: "What's New in WPF Version 4.5"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Presentation Foundation [WPF], what's new"
   - "WPF [WPF], what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ---
-# What&#39;s New in WPF Version 4.5
+# What's New in WPF Version 4.5
 <a name="introduction"></a> This topic contains information about new and enhanced features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] version 4.5.  
   
  This topic contains the following sections:  

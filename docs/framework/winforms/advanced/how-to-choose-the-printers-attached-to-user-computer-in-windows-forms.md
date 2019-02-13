@@ -1,5 +1,5 @@
 ---
-title: "How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms"
+title: "How to: Choose the Printers Attached to a User's Computer in Windows Forms"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "printers [Windows Forms], choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf
 ---
-# How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms
+# How to: Choose the Printers Attached to a User's Computer in Windows Forms
 Often, users want to choose a printer other than the default printer to print to. You can enable users to choose a printer from among those currently installed by using the <xref:System.Windows.Forms.PrintDialog> component. Through the <xref:System.Windows.Forms.PrintDialog> component, the <xref:System.Windows.Forms.DialogResult> of the <xref:System.Windows.Forms.PrintDialog> component is captured and used to select the printer.  
   
  In the following procedure, a text file is selected to be printed to the default printer. The <xref:System.Windows.Forms.PrintDialog> class is then instantiated.  

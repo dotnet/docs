@@ -1,11 +1,11 @@
 ---
-title: "&lt;Field&gt; Element (.NET Native)"
+title: "<Field> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;Field&gt; Element (.NET Native)
+# \<Field> Element (.NET Native)
 Applies runtime reflection policy to a field.  
   
 ## Syntax  

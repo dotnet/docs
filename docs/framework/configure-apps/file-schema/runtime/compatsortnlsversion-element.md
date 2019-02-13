@@ -1,5 +1,5 @@
 ---
-title: "&lt;CompatSortNLSVersion&gt; Element"
+title: "<CompatSortNLSVersion> Element"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;CompatSortNLSVersion&gt; Element
+# \<CompatSortNLSVersion> Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  
   
  \<configuration>  

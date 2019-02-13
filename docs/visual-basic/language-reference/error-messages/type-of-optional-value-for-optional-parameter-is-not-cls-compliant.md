@@ -1,5 +1,5 @@
 ---
-title: "Type of optional value for optional parameter &lt;parametername&gt; is not CLS-compliant"
+title: "Type of optional value for optional parameter <parametername> is not CLS-compliant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "BC40042"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40042"
 ms.assetid: 1d6eae29-4ad3-4434-bde4-a53b6051adf5
 ---
-# Type of optional value for optional parameter &lt;parametername&gt; is not CLS-compliant
+# Type of optional value for optional parameter \<parametername> is not CLS-compliant
 A procedure is marked as `<CLSCompliant(True)>` but declares an [Optional](../../../visual-basic/language-reference/modifiers/optional.md) parameter with default value of a noncompliant type.  
   
  For a procedure to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types. This applies to the types of the parameters, the return type, and the types of all its local variables. It also applies to the default values of optional parameters.  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;resolver&gt;"
+title: "<resolver>"
 ms.date: "03/30/2017"
 ms.assetid: 0c00200c-f135-4e5c-a024-76b72bcbc021
 ---
-# &lt;resolver&gt;
+# \<resolver>
 Specifies a peer resolver that is used to resolve a peer mesh ID to a set of peer node addresses that represents several nodes that participate in the mesh.  
   
  \<system.ServiceModel>  
@@ -52,4 +52,4 @@ Specifies a peer resolver that is used to resolve a peer mesh ID to a set of pee
 - <xref:System.ServiceModel.Configuration.NetPeerTcpBindingElement.Resolver%2A>
 - <xref:System.ServiceModel.Configuration.PeerResolverElement>
 - [Peer Resolvers](../../../../../docs/framework/wcf/feature-details/peer-resolvers.md)
-- [Adding a Custom Resolver to a PeerChannel Application](https://msdn.microsoft.com/library/12aa3787-2962-439c-ad27-46523c8b0419)
+- [Adding a Custom Resolver to a PeerChannel Application](https://docs.microsoft.com/previous-versions/ms730105(v=vs.90))

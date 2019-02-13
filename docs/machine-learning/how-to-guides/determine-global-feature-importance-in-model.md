@@ -1,7 +1,7 @@
 ---
 title: Determine the feature importance of models with Permutation Feature Importance in ML.NET
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 12/04/2018
+ms.date: 02/01/2019
 ms.custom: mvc,how-to
 #Customer intent: As a developer, I want to use Permutation Feature Importance in ML.NET to determine the feature importance of my models so that I can understand how my machine learning models make decisions and which features contribute to their performance.
 ---
@@ -15,17 +15,20 @@ PFI is a technique to determine **global feature importance** in a trained machi
 
 ```csharp
 // Compute the feature importance using PFI
-var permutationMetrics = mlContext.Regression.PermutationFeatureImportance(model, data);
- 
+var permutationMetrics = mlContext.Regression.PermutationFeatureImportance(model.LastTransformer, model.Transform(data), "MedianHomeValue");
+
 // Get the feature names from the training set
-var featureNames = data.Schema.GetColumns()
-                .Select(tuple => tuple.column.Name) // Get the column names
-                .Where(name => name != labelName) // Drop the Label
-                .ToArray();
- 
-// Write out the feature names and their importance to the model's R-squared value
-for (int i = 0; i < featureNames.Length; i++)
-  Console.WriteLine($"{featureNames[i]}\t{permutationMetrics[i].rSquared:G4}");
+var featureNames =
+    data.Schema.AsEnumerable()
+    .Select(column => column.Name) // Get the column names
+    .Where(name => name != "MedianHomeValue") // Drop the Label
+    .ToArray();
+
+// Write out the feature names and their importance to the model's Mean R-squared value
+for (int i = 0; i < featureNames.Length;i++)
+{
+    Console.WriteLine($"{featureNames[i]}\t{permutationMetrics[i].RSquared.Mean:G4}");
+}
 ```
 
 For a sample using PFI to analyze the feature importance of a model, see [the dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/tree/master/docs/samples/Microsoft.ML.Samples/Dynamic/PermutationFeatureImportance).

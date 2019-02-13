@@ -3,7 +3,7 @@ title: Use HttpClientFactory to implement resilient HTTP requests
 description: Learn how to use HttpClientFactory, available since .NET Core 2.1, for creating `HttpClient` instances, making it easy for you to use it in your applications. 
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 10/16/2018
+ms.date: 01/07/2019
 ---
 # Use HttpClientFactory to implement resilient HTTP requests
 
@@ -19,7 +19,7 @@ Therefore, `HttpClient` is intended to be instantiated once and reused throughou
 
 But there’s a second issue with `HttpClient` that you can have when you use it as singleton or static object. In this case, a singleton or static `HttpClient` doesn't respect DNS changes, as explained in this [issue at the .NET Core GitHub repo](https://github.com/dotnet/corefx/issues/11224). 
 
-To address those mentioned issues and make the management of `HttpClient` instances easier, .NET Core 2.1 offers a new `HttpClientFactory` that can also be used to implement resilient HTTP calls by integrating Polly with it.   
+To address those mentioned issues and make the management of `HttpClient` instances easier, .NET Core 2.1 introduced a new `HttpClientFactory` that can also be used to implement resilient HTTP calls by integrating Polly with it.   
 
 ## What is HttpClientFactory
 
@@ -151,7 +151,7 @@ Up to this point, the code shown is just performing regular Http requests, but t
 
 ## Additional resources
 
-- **Using HttpClientFactory in .NET Core 2.1**\
+- **Using HttpClientFactory in .NET Core**\
   [*https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1*](/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.1)
 
 - **HttpClientFactory GitHub repo**\

@@ -1,9 +1,9 @@
 ---
 title: Development environment for Docker apps
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get to know the most important development tool options that support the Docker development life-cycle. 
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Development environment for Docker apps
 
@@ -41,5 +41,5 @@ You can develop Docker applications and Microsoft tools with most modern languag
 Basically, you can use any modern language supported by Docker in Linux or Windows.
 
 >[!div class="step-by-step"]
->[Previous](orchestrate-high-scalability-availability.md)
+>[Previous](deploy-azure-kubernetes-service.md)
 >[Next](docker-apps-inner-loop-workflow.md)

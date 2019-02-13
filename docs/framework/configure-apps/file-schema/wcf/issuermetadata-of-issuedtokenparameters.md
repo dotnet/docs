@@ -1,9 +1,9 @@
 ---
-title: "&lt;issuerMetadata&gt; of &lt;issuedTokenParameters&gt;"
+title: "<issuerMetadata> of <issuedTokenParameters>"
 ms.date: "03/30/2017"
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
 ---
-# &lt;issuerMetadata&gt; of &lt;issuedTokenParameters&gt;
+# \<issuerMetadata> of \<issuedTokenParameters>
 \<system.serviceModel>  
 \<bindings>  
 \<customBinding>  

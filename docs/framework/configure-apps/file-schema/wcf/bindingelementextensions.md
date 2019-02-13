@@ -1,9 +1,9 @@
 ---
-title: "&lt;bindingElementExtensions&gt;"
+title: "<bindingElementExtensions>"
 ms.date: "03/30/2017"
 ms.assetid: bb597fc0-c947-451c-afda-bf23d42f4f4d
 ---
-# &lt;bindingElementExtensions&gt;
+# \<bindingElementExtensions>
 This section enables the use of a custom binding element from a machine or application configuration file. You can add a custom binding element to this collection by using the `add` keyword, and setting the `type` attribute of the element to a binding element extension, as well as the `name` attribute to the custom binding element.  
   
  Binding extensions enable the user to create user-defined binding elements for use as part of custom bindings. Programmatically, a binding extension is a type that implements the abstract class <xref:System.ServiceModel.Channels.BindingElement>. In the configuration file, the `bindingElementExtensions` section is used to define an extension element.  

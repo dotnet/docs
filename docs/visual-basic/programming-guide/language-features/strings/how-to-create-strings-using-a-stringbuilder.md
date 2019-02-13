@@ -20,4 +20,3 @@ This example constructs a long string from many smaller strings using the <xref:
 - [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)
 - [Creating New Strings](../../../../standard/base-types/creating-new.md)
 - [Manipulating Strings](../../../../standard/base-types/manipulating-strings.md)
-- [Strings Sample](https://msdn.microsoft.com/library/be9e82a3-dc95-4aaa-9396-61b66e467e02(v=vs.100))

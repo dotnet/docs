@@ -1,9 +1,9 @@
 ---
-title: "&lt;net.pipe&gt;"
+title: "<net.pipe>"
 ms.date: "03/30/2017"
 ms.assetid: 6a0f0318-f8f6-466c-9fae-199d7274a82e
 ---
-# &lt;net.pipe&gt;
+# \<net.pipe>
 Specifies configuration settings for the Named Pipe Activation Service, which manages the lifetime of the named pipe connection, and handles activation requests that arrive over named pipes.  
   
  \<system.serviceModel.activation>  

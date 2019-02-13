@@ -1,5 +1,5 @@
 ---
-title: "Type &#39;&lt;typename&gt;&#39; has no constructors"
+title: "Type '<typename>' has no constructors"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30251"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC30251"
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
 ---
-# Type &#39;&lt;typename&gt;&#39; has no constructors
+# Type '\<typename>' has no constructors
 A type does not support a call to `Sub New()`. One possible cause is a corrupted compiler or binary file.  
   
  **Error ID:** BC30251  

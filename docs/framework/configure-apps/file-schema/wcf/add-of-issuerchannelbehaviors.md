@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;issuerChannelBehaviors&gt;"
+title: "<add> of <issuerChannelBehaviors>"
 ms.date: "03/30/2017"
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
 ---
-# &lt;add&gt; of &lt;issuerChannelBehaviors&gt;
+# \<add> of \<issuerChannelBehaviors>
 Adds an endpoint behavior to be used when communicating with an STS.  
   
 > [!NOTE]

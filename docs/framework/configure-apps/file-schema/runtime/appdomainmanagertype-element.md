@@ -1,5 +1,5 @@
 ---
-title: "&lt;appDomainManagerType&gt; Element"
+title: "<appDomainManagerType> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "appDomainManagerType element"
@@ -8,7 +8,7 @@ ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# &lt;appDomainManagerType&gt; Element
+# \<appDomainManagerType> Element
 Specifies the type that serves as the application domain manager for the default application domain.  
   
  \<configuration>  

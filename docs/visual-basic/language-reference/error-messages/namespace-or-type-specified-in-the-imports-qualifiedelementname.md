@@ -1,5 +1,5 @@
 ---
-title: "Namespace or type specified in the Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found"
+title: "Namespace or type specified in the Imports '<qualifiedelementname>' doesn't contain any public member or cannot be found"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc40056"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "BC40056"
 ms.assetid: b59f5754-444f-4378-9272-9678b437e84a
 ---
-# Namespace or type specified in the Imports &#39;&lt;qualifiedelementname&gt;&#39; doesn&#39;t contain any public member or cannot be found
+# Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found
 Namespace or type specified in the Imports '\<qualifiedelementname>' doesn't contain any public member or cannot be found. Make sure the namespace or the type is defined and contains at least one public member. Make sure the alias name doesn't contain other aliases.  
   
  An `Imports` statement specifies a containing element that either cannot be found or does not define any `Public` members.  

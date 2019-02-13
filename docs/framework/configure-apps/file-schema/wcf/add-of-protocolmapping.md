@@ -1,9 +1,9 @@
 ---
-title: "&lt;add&gt; of &lt;protocolMapping&gt;"
+title: "<add> of <protocolMapping>"
 ms.date: "03/30/2017"
 ms.assetid: 08e62249-1641-41d1-91b1-66d7b46244e4
 ---
-# &lt;add&gt; of &lt;protocolMapping&gt;
+# \<add> of \<protocolMapping>
 Represents a default protocol mapping between a transport protocol scheme (e.g., http, net.tcp, net.pipe, etc.) and a Windows Communication Foundation (WCF) binding. When creating default endpoints at runtime, WCF looks at the configured mappings and decides on which binding to use for a particular based address.  
   
  \<system.serviceModel>  

@@ -3,7 +3,7 @@ title: Architect modern web applications with ASP.NET Core and Azure
 description: A guide that provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
 author: ardalis
 ms.author: wiwagn
-ms.date: 06/28/2018
+ms.date: 01/30/2019
 ---
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
@@ -20,7 +20,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2018 by Microsoft Corporation
+Copyright © 2019 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -38,7 +38,7 @@ All other marks and logos are property of their respective owners.
 
 Author:
 
-> **Steve Smith (@ardalis)**, Software Architecture Advisor, [Ardalis.com](https://ardalis.com)
+> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 
 Editors:
 
@@ -58,11 +58,11 @@ Editors:
 
 - Side-by-side versioning of .NET versions by application on the same server.
 
-Traditional .NET applications can and do support these requirements, but ASP.NET Core and .NET Core have been optimized to offer improved support for the above scenarios.
+Traditional .NET applications can and do support many of these requirements, but ASP.NET Core and .NET Core have been optimized to offer improved support for the above scenarios.
 
 More and more organizations are choosing to host their web applications in the cloud using services like Microsoft Azure. You should consider hosting your application in the cloud if the following are important to your application or organization:
 
-- Reduced investment in data center costs (hardware, software, space, utilities, etc.)
+- Reduced investment in data center costs (hardware, software, space, utilities, server management, etc.)
 
 - Flexible pricing (pay based on usage, not for idle capacity).
 
@@ -76,7 +76,7 @@ Building web applications with ASP.NET Core, hosted in Azure, offers many compet
 
 ## Purpose
 
-This guide provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
+This guide provides end-to-end guidance on building *monolithic* web applications using ASP.NET Core and Azure. In this context, "monolithic" refers to the fact that these applications are deployed as a single unit, not as a collection of interacting services and applications.
 
 This guide is complementary to the ["_.NET Microservices. Architecture for Containerized .NET Applications_"](../microservices-architecture/index.md) which focuses more on Docker, Microservices, and Deployment of Containers to host enterprise applications.
 

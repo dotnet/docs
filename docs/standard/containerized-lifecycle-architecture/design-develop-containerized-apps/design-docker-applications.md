@@ -1,9 +1,9 @@
 ---
 title: Design Docker applications
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Find here a reference to an in-depth guide to microservices architecture, because that's a topic that it's not detailed in this guide.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/21/2017
+ms.date: 11/23/2018
 ---
 # Design Docker applications
 

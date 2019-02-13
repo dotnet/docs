@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.xml.serialization&gt; Element"
+title: "<system.xml.serialization> Element"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "system.xml.serialization element"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "<system.xml.serialization> element"
 ms.assetid: 3ce45919-388a-418c-8968-6df0372c73ec
 ---
-# &lt;system.xml.serialization&gt; Element
+# \<system.xml.serialization> Element
 The top-level element for controlling XML serialization. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  

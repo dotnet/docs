@@ -1,5 +1,5 @@
 ---
-title: "&lt;system.serviceModel&gt;"
+title: "<system.serviceModel>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#system.ServiceModel"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "system.serviceModel element"
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
 ---
-# &lt;system.serviceModel&gt;
+# \<system.serviceModel>
 This configuration section contains all the Windows Communication Foundation (WCF) ServiceModel configuration elements.  
   
 ## Syntax  

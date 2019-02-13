@@ -1,9 +1,9 @@
 ---
 title: Inner-loop development workflow for Docker apps
-description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Learn the "inner loop" workflow for development of Docker applications.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 09/22/2017
+ms.date: 11/23/2018
 ---
 # Inner-loop development workflow for Docker apps
 

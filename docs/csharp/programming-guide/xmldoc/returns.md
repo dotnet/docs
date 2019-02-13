@@ -1,5 +1,5 @@
 ---
-title: "&lt;returns&gt; - C# Programming Guide"
+title: "<returns> - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "returns C# XML tag"
 ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
 ---
-# &lt;returns&gt; (C# Programming Guide)
+# \<returns> (C# Programming Guide)
 ## Syntax  
   
 ```xml  

@@ -1,9 +1,9 @@
 ---
-title: "&lt;iriParsing&gt; Element (Uri Settings)"
+title: "<iriParsing> Element (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
 ---
-# &lt;iriParsing&gt; Element (Uri Settings)
+# \<iriParsing> Element (Uri Settings)
 Specifies if International Resource Identifier (IRI) parsing is applied to a <xref:System.Uri> and whether IRI parsing rules should be applied.  
   
 ## Schema Hierarchy  

@@ -55,4 +55,3 @@ typedef struct {
 ## See also
 - [StrongNameGetPublicKey Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)
 - [StrongNameSignatureGeneration Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)
-- [Strong Naming Structures](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa964878(v=vs.100))

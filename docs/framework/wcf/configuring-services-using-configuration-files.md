@@ -95,7 +95,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<binding> Element  
  The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
- For more information about configuring services and clients, see [Configuring Windows Communication Foundation Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733830(v=vs.90)).  
+For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
  [\<binding>](../../../docs/framework/misc/binding.md)  
   
@@ -258,6 +258,6 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 ## See also
 - [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
-- [Configuring Windows Communication Foundation Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms733830(v=vs.90))
+- [Configuring WCF services](configuring-services.md)
 - [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
 - [\<binding>](../../../docs/framework/misc/binding.md)

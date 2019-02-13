@@ -47,5 +47,3 @@ HRESULT StrongNameErrorInfo ();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See also
-- [Strong Naming Global Static Functions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa964998(v=vs.100))

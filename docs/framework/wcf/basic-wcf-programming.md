@@ -55,7 +55,7 @@ This section presents the fundamentals for creating Windows Communication Founda
   
  [Windows Communication Foundation Tools](../../../docs/framework/wcf/tools.md)  
   
- [Windows Communication Foundation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514(v=vs.90))  
+ [Windows Communication Foundation (WCF) samples](./samples/index.md)  
   
  [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md)  
   

@@ -81,4 +81,3 @@ This topic shows how to change the cryptographic provider used to provide an X.5
 - [How to: Create a Custom Security Token Authenticator](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-authenticator.md)
 - [How to: Create a Custom Security Token Provider](../../../../docs/framework/wcf/extending/how-to-create-a-custom-security-token-provider.md)
 - [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md)
-- [Security Architecture](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms788756(v=vs.100))

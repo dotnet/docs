@@ -20,4 +20,4 @@ The topics in this section cover the client architecture, how to access a Window
  Describes some security considerations for WCF clients.  
   
 ## See also
-- [Client Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751507(v=vs.90))
+- [Client Samples](../samples/client.md)

@@ -12,7 +12,6 @@ There are numerous enhancements to the C# language that you can try out already 
 
 - Pattern matching enhancements:
   * Switch expressions
-  * Recursive patterns
   * Property patterns
   * positional patterns
   * Tuple patterns
@@ -30,11 +29,18 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## More pattern matching
 
+<< Nice intro, work with data based on its shape>>
+
+<< describe recursive patterns here, because it spans all of them>>
+- Recursive patterns are simply patterns applied to the output of a pattern.
+ 
 ### switch expressions
 
-### recursive patterns
+<< just use an enum. The syntax is simple and clean. >>
 
 ### property patterns
+
+
 
 ### positional patterns
 

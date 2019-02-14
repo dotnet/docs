@@ -400,7 +400,5 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 ## See also
 - [Varieties of Custom Controls](../../../../docs/framework/winforms/controls/varieties-of-custom-controls.md)
-- [Programming with Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120))
-- [Component Authoring Walkthroughs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/6d4270b7(v=vs.120))
 - [How to: Display a Control in the Choose Toolbox Items Dialog Box](../../../../docs/framework/winforms/controls/how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
 - [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](../../../../docs/framework/winforms/controls/walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

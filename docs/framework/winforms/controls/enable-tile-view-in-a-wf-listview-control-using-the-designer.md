@@ -31,5 +31,4 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
   
 ## See also
 - <xref:System.Windows.Forms.ListView.TileSize%2A>
-- [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)
 - [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)

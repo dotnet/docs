@@ -48,7 +48,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 #### To create the project  
   
-1.  Create a Windows Application project called "TableLayoutPanelExample". For more information, see [Step 1: Create a Windows Forms Application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) .  
+1.  Create a Windows Application project called "TableLayoutPanelExample". For more information, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) .  
   
 2.  Select the form in the **Windows** **Forms Designer**.  
   

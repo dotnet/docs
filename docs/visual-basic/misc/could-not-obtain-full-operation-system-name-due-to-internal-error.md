@@ -18,5 +18,5 @@ Could not obtain full operation system name due to internal error. This might be
   
 ## See also
 - [My.Computer.Info.OSFullName](xref:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName)
-- [Exception and Error Handling in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s6da8809(v=vs.100))
+- [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
 - [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

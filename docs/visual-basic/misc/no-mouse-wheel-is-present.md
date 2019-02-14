@@ -19,4 +19,4 @@ The `My.Computer.Mouse.WheelScrollLines` property was called, but the mouse has 
 ## See also
 - [My.Computer.Mouse.WheelScrollLines](xref:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines)
 - [My.Computer.Mouse.WheelExists](xref:Microsoft.VisualBasic.Devices.Mouse.WheelExists)
-- [Exception and Error Handling in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s6da8809(v=vs.100))
+- [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)

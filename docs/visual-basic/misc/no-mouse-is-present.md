@@ -18,5 +18,5 @@ One of the properties of the `My.Computer.Mouse` object was called, but the comp
   
 ## See also
 - [My.Computer.Mouse](xref:Microsoft.VisualBasic.Devices.Mouse)
-- [Exception and Error Handling in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s6da8809(v=vs.100))
+- [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
 - [Try...Catch...Finally Statement](../../visual-basic/language-reference/statements/try-catch-finally-statement.md)

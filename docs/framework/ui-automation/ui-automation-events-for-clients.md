@@ -57,4 +57,4 @@ ms.author: "mhopkins"
 - [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)
 - [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
 - [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md)
-- [TrackFocus Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771428(v=vs.90))
+- [TrackFocus Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/FocusTracker)

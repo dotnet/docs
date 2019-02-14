@@ -27,4 +27,4 @@ ms.author: "mhopkins"
 [!code-vb[WindowMove#1300](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowMove/VisualBasic/windowmove.vb#1300)]  
   
 ## See also
-- [WindowPattern Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771451(v=vs.90))
+- [WindowPattern Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility/WindowMove)

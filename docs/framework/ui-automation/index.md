@@ -28,4 +28,4 @@ ms.author: "mhopkins"
  [UI Automation Specification and Community Promise](../../../docs/framework/ui-automation/ui-automation-specification-and-community-promise.md)  
   
 ## Related Sections  
- [Accessibility Samples](https://msdn.microsoft.com/library/ms771315.aspx)
+- [Accessibility Samples](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility) 

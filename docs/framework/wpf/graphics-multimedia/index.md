@@ -148,5 +148,5 @@ End Class
 - [Painting with Solid Colors and Gradients Overview](../../../../docs/framework/wpf/graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
 - [Painting with Images, Drawings, and Visuals](../../../../docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)
 - [Animation and Timing How-to Topics](animation-and-timing-how-to-topics.md)
-- [3-D Graphics How-to Topics](3-d-graphics-how-to-topics.md)
-- [Audio and Video How-to Topics](audio-and-video-how-to-topics.md)
+- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [Multimedia Overview](multimedia-overview.md)

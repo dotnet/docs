@@ -75,5 +75,4 @@ The Windows Communication Foundation (WCF) samples can be run in a single-machin
   
 ## See also
 - [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md)
-- [Running the Samples in a Workgroup and Across Machines](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751525(v=vs.90))
 - [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

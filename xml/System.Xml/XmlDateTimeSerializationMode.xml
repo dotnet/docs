@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Xml.XmlConvert.ToDateTime%2A> and <xref:System.Xml.XmlConvert.ToString%2A> methods.  
+ This enumeration is used by the <xref:System.Xml.XmlConvert.ToDateTime%2A?displayProperty=nameWithType> and <xref:System.Xml.XmlConvert.ToString%2A?displayProperty=nameWithType> methods.  
   
  ]]></format>
     </remarks>
@@ -133,15 +133,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Treat as a local time if a <see cref="T:System.DateTime" /> is being converted to a string.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a string is being converted to <xref:System.DateTime>, convert to a local time if a time zone is specified.  
-  
- ]]></format>
-        </remarks>
+        <summary>Treat as a local time if a <see cref="T:System.DateTime" /> is being converted to a string. If a string is being converted to <see cref="T:System.DateTime" />, convert to a local time if a time zone is specified. </summary>
       </Docs>
     </Member>
     <Member MemberName="Utc">

@@ -31,7 +31,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property.  
+ This enumeration is set on the <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> property or the <xref:System.Xml.XmlTextReader.DtdProcessing%2A?displayProperty=nameWithType> property.  
   
  ]]></format>
     </remarks>
@@ -67,17 +67,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  The DTD/DOCTYPE will be lost on output.  
-  
- ]]></format>
-        </remarks>
+        <summary>Causes the DOCTYPE element to be ignored. No DTD processing occurs, and the DTD/DOCTYPE is lost on output.</summary>
       </Docs>
     </Member>
     <Member MemberName="Parse">

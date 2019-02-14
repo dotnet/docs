@@ -64,15 +64,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>If the associated schema is found, the document items will be validated. No errors will be thrown otherwise.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the item is not validated, the XML processor attempts to notify the client through a validation event handler with <xref:System.Xml.Schema.ValidationEventArgs.Severity%2A> = `XmlSeverityType.Warning`. If a validation event handler has not been set up, no information is returned when the warning is produced.  
-  
- ]]></format>
-        </remarks>
+        <summary>If the associated schema is found, the document items will be validated. No errors will be thrown otherwise.
+        
+If the item is not validated, the XML processor attempts to notify the client through a validation event handler with <see cref="P:System.Xml.Schema.ValidationEventArgs.Severity" /> = <see langword="XmlSeverityType.Warning" />. If a validation event handler has not been set up, no information is returned when the warning is produced.         
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -146,15 +141,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Document items must consist of well-formed XML and are not validated by the schema.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML processor attempts to notify the client through a validation event handler with <xref:System.Xml.Schema.ValidationEventArgs.Severity%2A> = `XmlSeverityType.Warning` that no validation took place for the given item. If a validation event handler has not been set up, no information is returned when the warning is produced.  
-  
- ]]></format>
-        </remarks>
+        <summary>Document items must consist of well-formed XML and are not validated by the schema.
+        
+The XML processor attempts to notify the client through a validation event handler with <see cref="P:System.Xml.Schema.ValidationEventArgs.Severity" /> = <see langword="XmlSeverityType.Warning" /> that no validation took place for the given item. If a validation event handler has not been set up, no information is returned when the warning is produced.         
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Strict">
@@ -191,16 +181,11 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The schema processor must find a schema associated with the indicated namespace to validate the document items.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the processor cannot find a schema, or the items are not valid, the XML processor attempts to notify the client through a validation event handler with <xref:System.Xml.Schema.ValidationEventArgs.Severity%2A> = `XmlSeverityType.Warning`. If a validation error occurs and a validation event handler is not provided, an exception is thrown.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
+        <summary>The schema processor must find a schema associated with the indicated namespace to validate the document items.
+        
+If the processor cannot find a schema or if the items are not valid, the XML processor attempts to notify the client through a validation event handler with <see cref="P:System.Xml.Schema.ValidationEventArgs.Severity" /> = <see langword="XmlSeverityType.Warning" />. If a validation error occurs and a validation event handler is not provided, an exception is thrown.   
+        </summary>
+       </Docs>
     </Member>
   </Members>
 </Type>

@@ -58,15 +58,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Causes child elements to be indented according to the <see cref="P:System.Xml.XmlTextWriter.Indentation" /> and <see cref="P:System.Xml.XmlTextWriter.IndentChar" /> settings.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This option indents element content only; mixed content is not affected. For the XML 1.0 definitions of these terms, see the World Wide Web Consortium (W3C) documentation (www.w3.org/TR/1998/REC-xml-19980210#sec-element-content and www.w3.org/TR/1998/REC-xml-19980210#sec-mixed-content).  
-  
- ]]></format>
-        </remarks>
+        <summary>Causes child elements to be indented according to the <see cref="P:System.Xml.XmlTextWriter.Indentation" /> and <see cref="P:System.Xml.XmlTextWriter.IndentChar" /> settings.
+
+This option indents element content only; mixed content is not affected. For the XML 1.0 definitions of these terms, see the World Wide Web Consortium (W3C) documentation <see href="https://www.w3.org/TR/1998/REC-xml-19980210#sec-element-content">Element Content</see> and <see href="https://www.w3.org/TR/1998/REC-xml-19980210#sec-mixed-content">Mixed Content</see>.
+
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="None">

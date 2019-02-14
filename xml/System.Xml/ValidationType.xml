@@ -73,17 +73,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Validates if DTD or schema information is found.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This field is obsolete in the Microsoft .NET Framework version 2.0 and is applicable only to the <xref:System.Xml.XmlValidatingReader> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>Validates if DTD or schema information is found. 
+
+Starting with .NET Framework 2.0, this field is obsolete. It applies only to the obsolete <see cref="T:System.Xml.XmlValidatingReader" /> class.        
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="DTD">
@@ -147,17 +140,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No validation is performed. This setting creates an XML 1.0 compliant non-validating parser.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Default attributes are reported and general entities can be resolved by calling <xref:System.Xml.XmlReader.ResolveEntity%2A>. The DOCTYPE is not used for validation purposes.  
-  
- No validation errors are thrown.  
-  
- ]]></format>
-        </remarks>
+        <summary>No validation is performed, and no validation errors are thrown. This setting creates an XML 1.0 compliant non-validating parser.
+        
+Calls to <see cref="M:System.Xml.XmlReader.ResolveEntity" /> report default attributes and resolve general enttities. The DOCTYPE is not used for validation purposes.
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -226,17 +212,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Validate according to XML-Data Reduced (XDR) schemas, including inline XDR schemas. XDR schemas are recognized using the <see langword="x-schema" /> namespace prefix or the <see cref="P:System.Xml.XmlValidatingReader.Schemas" /> property.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  This field is obsolete in the Microsoft .NET Framework version 2.0 and is applicable only to the <xref:System.Xml.XmlValidatingReader> class.  
-  
- ]]></format>
-        </remarks>
+        <summary>Validate according to XML-Data Reduced (XDR) schemas, including inline XDR schemas. XDR schemas are recognized using the <see langword="x-schema" /> namespace prefix or the <see cref="P:System.Xml.XmlValidatingReader.Schemas" /> property.
+        
+Starting with .NET Framework 2.0, this field is obsolete. It applies only to the obsolete <see cref="T:System.Xml.XmlValidatingReader" /> class.             
+        </summary>
       </Docs>
     </Member>
   </Members>

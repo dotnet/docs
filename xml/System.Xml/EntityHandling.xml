@@ -59,17 +59,12 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Expands character entities and returns general entities as <see cref="F:System.Xml.XmlNodeType.EntityReference" /> nodes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
+        <summary>Expands character entities and returns general entities as <see cref="F:System.Xml.XmlNodeType.EntityReference" /> nodes. 
+        
+You must call <see cref="Overload:System.Xml.XmlReader.ResolveEntity" /> to see what the general entities expand to. This enables you to optimize entity handling by only expanding the entity the first time it is used.  
   
-## Remarks  
- You must call <xref:System.Xml.XmlReader.ResolveEntity%2A> to see what the general entities expand to. This enables you to optimize entity handling by only expanding the entity the first time it is used.  
-  
- When set to ExpandCharEntities, a reader call to the <xref:System.Xml.XmlReader.GetAttribute%2A> method expands all entities (both general and character entities).  
-  
- ]]></format>
-        </remarks>
+When set to <see langword="ExpandCharEntities" />, a reader call to the <see cref="Overload:System.Xml.XmlReader.GetAttribute" /> method expands all entities (both general and character entities).  
+        </summary>
       </Docs>
     </Member>
     <Member MemberName="ExpandEntities">
@@ -101,15 +96,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Expands all entities and returns the expanded nodes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Xml.XmlNodeType.EntityReference> nodes are not returned. The entity text is expanded in place of the entity references.  
-  
- ]]></format>
-        </remarks>
+        <summary>Expands all entities and returns the expanded nodes.
+        
+<see cref="T:System.Xml.XmlNodeType.EntityReference" /> nodes are not returned. The entity text is expanded in place of the entity references.        
+        </summary>
       </Docs>
     </Member>
   </Members>

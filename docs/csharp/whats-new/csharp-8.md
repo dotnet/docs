@@ -37,14 +37,25 @@ The remainder of this article briefly describes these features. Where in-depth a
 ### switch expressions
 
 << just use an enum. The syntax is simple and clean. >>
+- colors of the rainbow
 
 ### property patterns
 
-
+<< Type pattern followed by deconstruction >>
+- All folks with the same last name.? points in a quadrant?
+- missing properties on a type. 
 
 ### positional patterns
 
+<< Just for deconstruction>>
+- Key / Value pair in dictionary
+
 ### tuple patterns
+
+<< Tuples and multiple inputs. Think state machine.>>
+- traffic light
+- indicator
+
 
 ## using declarations
 

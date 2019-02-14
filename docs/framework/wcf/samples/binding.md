@@ -1,12 +1,13 @@
 ---
-title: "Binding1"
+title: "Binding WCF Samples"
 ms.date: "03/30/2017"
 ms.assetid: 324fa627-d012-465a-b266-95594a09dac2
 ---
 # Binding
+
 This section contains samples that demonstrate using the binding attribute of an endpoint element.  
   
-## In This Section
+## In this section
   
  [Basic Binding](../../../../docs/framework/wcf/samples/basic-binding.md)  
  Demonstrates basic binding in WCF.  

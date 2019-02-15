@@ -18,7 +18,7 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 
 ## Prerequisites
 
-* [.NET Core SDK](https://dotnet.microsoft.com/download) v1.0.4 or later versions
+* [.NET Core SDK](https://dotnet.microsoft.com/download) v2.1 or later versions
 * Your favorite code editor
 
 ## Getting started
@@ -51,34 +51,30 @@ cd HelloSvcutil
 dotnet new console
 ```
 
-3. Open the `HelloSvcutil.csproj` project file in your editor, edit the `Project` element, and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
+3. Install the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a global CLI tool using the following command:
 
-```xml
-<ItemGroup>
-  <DotNetCliToolReference Include="dotnet-svcutil" Version="1.0.*" />
-</ItemGroup>
+```console
+dotnet tool install --global dotnet-svcutil
 ```
 
-4. Restore the _dotnet-svcutil_ package using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
+4. Run the _dotnet-svcutil_ command to generate the web service reference file as follows:
+
+```console
+dotnet-svcutil http://contoso.com/SayHello.svc
+```
+The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The _dotnet-svcutil_ tool also adds to the project the appropriate WCF packages required by the proxy code as package references.
+
+## Using the Service Reference
+
+1. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 
 ```console
 dotnet restore
 ```
 
-5. Run _dotnet_ with the _svcutil_ command to generate the web service reference file as follows:
+2. Find the name of the client class and operation you want to use. `Reference.cs` will contain a class that inherits from `System.ServiceModel.ClientBase`, with methods that can be used to call operations on the service. In this example we want to call the _SayHello_ service's _Hello_ operation. `ServiceReference.SayHelloClient` is the name of the client class, and has a method called `HelloAsync` that can be used to call the operation.
 
-```console
-dotnet svcutil http://contoso.com/SayHello.svc
-```
-The generated file is saved as _HelloSvcutil/ServiceReference1/Reference.cs_. The _dotnet_svcutil_ tool also adds to the project the appropriate WCF packages required by the proxy code as package references.
-
-6. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
-
-```console
-dotnet restore
-```
-
-7. Open the `Program.cs` file in your editor, edit the `Main()` method, and replace the auto-generated code with the following code to invoke the web service:
+3. Open the `Program.cs` file in your editor, and edit the `Main()` method to invoke the web service. You do this by creating an instance of the class that inherits from `ClientBase` and calling the method on the client object:
 
 ```csharp
 static void Main(string[] args)
@@ -99,19 +95,17 @@ You should see the following output:
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
 
 ```console
-dotnet svcutil --help
+dotnet-svcutil --help
 ```
 
-## Next steps
-
-### Feedback & questions
+## Feedback & questions
 
 If you have any questions or feedback, [open an issue on GitHub](https://github.com/dotnet/wcf/issues/new). You can also review any existing questions or issues [at the WCF repo on GitHub](https://github.com/dotnet/wcf/issues?utf8=%E2%9C%93&q=is:issue%20label:tooling).
 
-### Release notes
+## Release notes
 
 * Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
 
-### Information
+## Information
 
 * [dotnet-svcutil NuGet Package](https://nuget.org/packages/dotnet-svcutil)

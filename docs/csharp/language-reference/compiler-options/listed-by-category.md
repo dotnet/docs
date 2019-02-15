@@ -48,7 +48,8 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-reference](reference-compiler-option.md)|Imports metadata from a file that contains an assembly.|
 |-analyzer|Run the analyzers from this assembly (Short form: /a)|
 |-additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|
-
+|-embed|Embed all source files in the PDB.|
+|-embed:\<file list>|Embed specific files in the PDB.|
 ## Debugging/Error Checking
 
 |Option|Purpose|

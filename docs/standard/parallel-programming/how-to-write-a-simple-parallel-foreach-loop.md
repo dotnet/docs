@@ -21,7 +21,7 @@ This example shows how to use a <xref:System.Threading.Tasks.Parallel.ForEach%2A
 
 ## Example
 
-This example assumes you have several .jpg files in the **Pictures** folder and creates a new folder named **Modified**. When you run the example, it rotates each .jpg image in **Pictures** and saves it to **Modified**.
+This example assumes you have several .jpg files in a *C:\Users\Public\Pictures\Sample Pictures* folder and creates a new subfolder named *Modified*. When you run the example, it rotates each .jpg image in *Sample Pictures* and saves it to *Modified*. You can modify the two paths as necessary.
 
 [!code-csharp[TPL_Parallel#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/simpleforeach.cs#03)]
 [!code-vb[TPL_Parallel#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/simpleforeach.vb#03)]

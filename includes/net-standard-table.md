@@ -14,7 +14,7 @@
 
 <sup>1 The versions listed for .NET Framework apply to .NET Core 2.0 SDK and later versions of the tooling. Older versions used a different mapping for .NET Standard 1.5 and higher. You can [download tooling for .NET Core tools for Visual Studio 2015](https://github.com/dotnet/core/blob/master/release-notes/download-archive.md) if you cannot upgrade to Visual Studio 2017.</sup>
 
-<sup>2 The versions listed here represent the rules that NuGet uses to determine whether a given .NET Standard library is applicable. While NuGet considers .NET Framework 4.6.1 as supporting .NET Standard 2.0, there are several issues with consuming .NET Standard libraries that were built for .NET Standard 1.5 or higher. For .NET Framework projects that need to use such libraries, we recommend that you upgrade the project to target .NET Framework 4.7.2 or higher.</sup>
+<sup>2 The versions listed here represent the rules that NuGet uses to determine whether a given .NET Standard library is applicable. While NuGet considers .NET Framework 4.6.1 as supporting .NET Standard 1.5 through 2.0, there are several issues with consuming .NET Standard libraries that were built for those versions from .NET Framework 4.6.1 projects. For .NET Framework projects that need to use such libraries, we recommend that you upgrade the project to target .NET Framework 4.7.2 or higher.</sup>
 
 - The columns represent .NET Standard versions. Each header cell is a link to a document that shows which APIs got added in that version of .NET Standard.
 - The rows represent the different .NET implementations.

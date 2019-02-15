@@ -182,7 +182,7 @@ Initialize the `_mlContext` global variable  with a new instance of `MLContext` 
 
 ## Load the data
 
-Next, initialize the `_trainingDataView` <xref:Microsoft.ML.Data.DataView.IDataView> global variable and load the data with the `_trainDataPath` parameter.
+Next, initialize the `_trainingDataView` <xref:Microsoft.Data.DataView.IDataView> global variable and load the data with the `_trainDataPath` parameter.
 
  As the input and output of [`Transforms`](../basic-concepts-model-training-in-mldotnet.md#transformer), a `DataView` is the fundamental data pipeline type, comparable to `IEnumerable` for `LINQ`.
 

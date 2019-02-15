@@ -141,7 +141,7 @@ Create three global fields to hold the paths to the recently downloaded files, a
 * `_testDataPath` has the path to the dataset used to evaluate the model.
 * `_modelPath` has the path where the trained model is saved.
 * `_mlContext` is the <xref:Microsoft.ML.MLContext> that provides processing context.
-* `_trainingDataView` is the <xref:Microsoft.ML.Data.IDataView> used to process the training dataset.
+* `_trainingDataView` is the <xref:Microsoft.Data.DataView.IDataView> used to process the training dataset.
 * `_predEngine` is the <xref:Microsoft.ML.PredictionEngine%602> used for single predictions.
 * `_reader` is the <xref:Microsoft.ML.Data.TextLoader> used to load and transform the datasets.
 

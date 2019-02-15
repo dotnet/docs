@@ -16,7 +16,7 @@ The topics contained in this section are intended to give you quick exposure to 
 
 The topics in this section assume you are using Visual Studio as the development environment. If you are using another development environment, ignore the Visual Studio-specific instructions.
 
-For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).
+For sample applications that can be downloaded to your hard disk and run, see the topics in [Windows Communication Foundation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514(v=vs.90)). For this topic, see, in particular, the [Getting Started](../../../docs/framework/wcf/samples/getting-started-sample.md).
 
 For more in-depth information about creating services and clients, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md).
 
@@ -52,7 +52,7 @@ For more in-depth information about creating services and clients, see [Basic WC
 
 ## Related Sections
 
-- [Windows Communication Foundation Samples](https://msdn.microsoft.com/library/8ec9d192-5d81-4f64-bfd3-90c5e5858c91)
+- [Windows Communication Foundation Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751514(v=vs.90))
 - [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)
 
 ## See also

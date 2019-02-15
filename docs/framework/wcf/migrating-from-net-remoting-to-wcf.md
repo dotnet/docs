@@ -201,11 +201,7 @@ public class WCFCustomer
   
  The [DataContract] attribute identifies this type as one that can be serialized and deserialized between client and server. The [DataMember] attribute identifies the individual properties or fields to serialize.  
   
- When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see the following topics:  
-  
--   [Serialization and Deserialization](./feature-details/serialization-and-deserialization.md)  
-  
--   [Serialization in Windows Communication Foundation](https://msdn.microsoft.com/magazine/cc163569.aspx)  
+ When WCF sends an object across tiers, it serializes only the values and creates a new instance of the object on the other tier. Any interactions with the values of the object occur only locally – they do not communicate with the other tier the way .NET Remoting by-reference objects do. For more information, see [Serialization and Deserialization](./feature-details/serialization-and-deserialization.md).  
   
 ### Exception Handling Capabilities  
   

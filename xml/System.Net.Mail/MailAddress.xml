@@ -72,7 +72,7 @@ The following mail address would not be allowed:
   
 `"John "Jr" Doe" <user@host>`  
   
-When the username is note quoted, all text between the start of the string (or comma) and the address are considered part of the <xref:System.Net.Mail.MailAddress.DisplayName%2A>, including comments. For example:
+When the username is not quoted, all text between the start of the string (or comma) and the address are considered part of the <xref:System.Net.Mail.MailAddress.DisplayName%2A>, including comments. For example:
   
 `(non comment) unquoted display (non comment) name (non comment) <user@host>`
   

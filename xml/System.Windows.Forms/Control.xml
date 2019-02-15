@@ -18021,7 +18021,7 @@ The following code example selects the specified <xref:System.Windows.Forms.Cont
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a wait cursor whenever you perform an operation that takes a noticeable amount of time.However, note that operations that block the UI thread will also block acursor change.Therefore, this property should only be used when performing time-consuming operations in another thread. To change the cursor globally and immediately, seethe <xref:System.Windows.Forms.Cursor.Current%2A> property.  
+ Use a wait cursor whenever you perform an operation that takes a noticeable amount of time. However, note that operations that block the UI thread will also block a cursor change. Therefore, this property should only be used when performing time-consuming operations in another thread. To change the cursor globally and immediately, see the <xref:System.Windows.Forms.Cursor.Current%2A> property.  
   
  ]]></format>
         </remarks>

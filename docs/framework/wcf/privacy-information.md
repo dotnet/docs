@@ -396,5 +396,5 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
  The Web Services Description Language (WSDL) contains a definition of the port. Each port has an endpoint address and a binding that represents the services used by the application. Exposing WSDL can be turned off using configuration. No information is retained on the machine.  
   
 ## See also
-- [Developing Service-Oriented Applications with WCF](index.md)
+- [Windows Communication Foundation](index.md)
 - [Security](../../../docs/framework/wcf/feature-details/security.md)

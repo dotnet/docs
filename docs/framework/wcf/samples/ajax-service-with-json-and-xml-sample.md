@@ -6,7 +6,7 @@ ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
 # AJAX Service with JSON and XML Sample
 This sample demonstrates how to use Windows Communication Foundation (WCF) to create an Asynchronous JavaScript and XML (AJAX) service that returns either JavaScript Object Notation (JSON) or XML data. You can access an AJAX service by using JavaScript code from a Web browser client. This sample builds on the [Basic AJAX Service](../../../../docs/framework/wcf/samples/basic-ajax-service.md) sample.  
   
- Unlike the other AJAX samples, this sample does not use ASP.NET AJAX and the <xref:System.Web.UI.ScriptManager> control. With some additional configuration, WCF AJAX services can be accessed from any HTML page through JavaScript, and this scenario is shown here. For an example of using WCF with ASP.NET AJAX, see [AJAX Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/bb410780(v=vs.90)).
+ Unlike the other AJAX samples, this sample does not use ASP.NET AJAX and the <xref:System.Web.UI.ScriptManager> control. With some additional configuration, WCF AJAX services can be accessed from any HTML page through JavaScript, and this scenario is shown here. For an example of using WCF with ASP.NET AJAX, see [AJAX Samples](ajax.md).
   
  This sample shows how to switch the response type of an operation between JSON and XML. This functionality is available regardless of whether the service is configured to be accessed by ASP.NET AJAX or by an HTML/JavaScript client page.  
   

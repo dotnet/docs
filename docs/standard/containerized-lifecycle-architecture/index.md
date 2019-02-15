@@ -3,7 +3,7 @@ title: Introduction to Containers and Docker
 description: Get a high level overview of the main benefits of using Docker.
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 11/23/2018
+ms.date: 02/15/2019
 ---
 # Introduction to containers and Docker
 

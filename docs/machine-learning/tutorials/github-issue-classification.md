@@ -1,7 +1,7 @@
 ---
 title: Use ML.NET in a GitHub issue multiclass classification scenario
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 02/01/2019
+ms.date: 02/14/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to classify GitHGub issues to assign them to a given area.
@@ -15,11 +15,11 @@ In this tutorial, you learn how to:
 > * Understand the problem
 > * Select the appropriate machine learning algorithm
 > * Prepare your data
-> * Extract Features and transform the data
+> * Transform the data
 > * Train the model
-> * Evaluate the model with a different dataset
-> * Predict a single instance of test data outcome with the trained model
-> * Predict a single instance of test data with a loaded model
+> * Evaluate the model
+> * Predict with the trained model
+> * Deploy and Predict with a loaded model
 
 > [!NOTE]
 > This topic refers to ML.NET, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
@@ -50,8 +50,8 @@ The workflow phases are as follows:
 3. **Build and train** 
    * **Train the model**
    * **Evaluate the model**
-4. **Run**
-   * **Model consumption**
+4. **Deploy Model**
+   * **Use the Model to predict**
 
 ### Understand the problem
 
@@ -190,7 +190,7 @@ In ML.NET, data is similar to a `SQL view`. It is lazily evaluated, schematized,
 
 Since your previously created `GitHubIssue` data model type matches the dataset schema, you can combine the initialization, mapping, and dataset loading into one line of code.
 
-The first part of the line (`CreateTextReader<GitHubIssue>(hasHeader: true)`) creates a <xref:Microsoft.ML.Data.TextLoader> by inferring the dataset schema from the `GitHubIssue` data model type and using the dataset header.
+The first part of the line (`CreateTextLoader<GitHubIssue>(hasHeader: true)`) creates a <xref:Microsoft.ML.Data.TextLoader> by inferring the dataset schema from the `GitHubIssue` data model type and using the dataset header.
 
 You defined the data schema previously when you created the `GitHubIssue` class. For your schema:
 
@@ -240,6 +240,9 @@ When the model is trained and evaluated, by default, the values in the **Label**
 
 [!code-csharp[FeaturizeText](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#FeaturizeText)]
 
+>[!WARNING]
+> ML.NET Version 0.10 has changed the order of the Transform parameters. This will not error out until you build. Use the parameter names for Transforms as illustrated in the previous code snippet.
+
 The last step in data preparation combines all of the feature columns into the **Features** column using the `Concatenate` transformation class. By default, a learning algorithm processes only features from the **Features** column. Append this transformation to the pipeline with the following code:
 
 [!code-csharp[Concatenate](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#Concatenate)]
@@ -283,13 +286,7 @@ Notice that two parameters are passed into the BuildAndTrainModel method; an `ID
 
 ### Choose a learning algorithm
 
-To add the learning algorithm, use the <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object.  The `SdcaMultiClassTrainer` is appended to the `pipeline` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data.
-
-Add the following code to the `BuildAndTrainModel` method:
-
-[!code-csharp[SdcaMultiClassTrainer](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#SdcaMultiClassTrainer)]
-
-Now that you've created a learning algorithm, append it to the `pipeline`. You also need to map the label to the value to return to its original readable state. Do both of those actions with the following code:
+To add the learning algorithm, call the `mlContext.MulticlassClassification.Trainers.StochasticDualCoordinateAscent` wrapper method which returns a <xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer> object.  The `SdcaMultiClassTrainer` is appended to the `pipeline` and accepts the featurized `Title` and `Description` (`Features`) and the `Label` input parameters to learn from the historic data. You also need to map the label to the value to return to its original readable state. Do both of those actions with the following code:
 
 [!code-csharp[AddTrainer](../../../samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#AddTrainer)]
 
@@ -473,11 +470,11 @@ In this tutorial, you learned how to:
 > * Understand the problem
 > * Select the appropriate machine learning algorithm
 > * Prepare your data
-> * Extract Features and transform the data
+> * Transform the data
 > * Train the model
-> * Evaluate the model with a different dataset
-> * Predict a single instance of test data outcome with the trained model
-> * Predict a single instance of test data with a loaded model
+> * Evaluate the model
+> * Predict with the trained model
+> * Deploy and Predict with a loaded model
 
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]

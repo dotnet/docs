@@ -170,13 +170,13 @@ Finally, tuples may contain nested tuples. Tuple equality compares the "shape" o
 
 [!code-csharp-interactive[NestedTuples](../../samples/snippets/csharp/tuples/tuples/program.cs#SnippetNestedTuples "Tuples may contain nested tuples that participate in tuple equality.")]
 
-It is a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler will not attempt any deconstruction of nested tuples in order to compare them.
+It's a compile time error to compare two tuples for equality (or inequality) when they have different shapes. The compiler won' attempt any deconstruction of nested tuples in order to compare them.
 
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
 the same number of elements, where each right-hand side element can be implicitly converted to its corresponding left-hand side element. Other
-conversions are not considered for assignments. It is a compile time error to assign one tuple to another when they have different shapes. The compiler will not attempt any deconstruction of nested tuples in order to assign them.
+conversions aren't considered for assignments. It's a compile time error to assign one tuple to another when they have different shapes. The compiler won't attempt any deconstruction of nested tuples in order to assign them.
 Let's look at the kinds
 of assignments that are allowed between tuple types.
 

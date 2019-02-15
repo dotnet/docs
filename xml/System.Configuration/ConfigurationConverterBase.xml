@@ -192,12 +192,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Configuration.ConfigurationConverterBase.CanConvertFrom%2A> method determines whether the strings contained in the configuration file can be converted to the related strongly typed properties.  
+ The <xref:System.Configuration.ConfigurationConverterBase.CanConvertTo%2A> method determines whether the strings contained in the configuration file can be converted to the related strongly typed properties.  
   
    
   
 ## Examples  
- The following example code shows how to override the <xref:System.Configuration.ConfigurationConverterBase.CanConvertFrom%2A> method to create a custom <xref:System.TimeSpan> converter type. Also, the example shows how to use this type in a custom section.  
+ The following example code shows how to override the <xref:System.Configuration.ConfigurationConverterBase.CanConvertTo%2A> method to create a custom <xref:System.TimeSpan> converter type. Also, the example shows how to use this type in a custom section.  
   
  [!code-csharp[System.Configuration.TimeSpanMinutesConverter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/CS/TimeSpanMinutesConverter.cs#2)]
  [!code-vb[System.Configuration.TimeSpanMinutesConverter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.TimeSpanMinutesConverter/VB/TimeSpanMinutesConverter.vb#2)]  

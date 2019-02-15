@@ -17,7 +17,7 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
  Note that this article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see the <xref:System.Resources.ResourceManager> topic.
 
 > [!WARNING]
-> There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
+> There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
 
 ## Create a .resx File
 
@@ -40,7 +40,7 @@ The following example creates a .resx file named CarResources.resx that stores s
 [!code-vb[Conceptual.Resources.ResX#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/create1.vb#1)]
 
 > [!TIP]
-> You can also use [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
+> You can also use [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
 
 You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).
 

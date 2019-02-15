@@ -6,7 +6,7 @@ ms.assetid: e6db7acd-5679-45d4-b98a-8449c6873838
 # AJAX Service Without Configuration
 This sample demonstrates how to use Windows Communication Foundation (WCF) to create a basic ASP.NET Asynchronous JavaScript and XML (AJAX) service (a service that you can access by using JavaScript code from a Web browser client) without using any configuration settings. The service uses special syntax in the .svc file to automatically enable an AJAX endpoint.  
   
- AJAX support in WCF is optimized for use with ASP.NET AJAX through the `ScriptManager` control. For an example of using WCF with ASP.NET AJAX, see the [Ajax Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/bb410780(v=vs.90)).  
+ AJAX support in WCF is optimized for use with ASP.NET AJAX through the `ScriptManager` control. For an example of using WCF with ASP.NET AJAX, see the [Ajax Samples](ajax.md).  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  

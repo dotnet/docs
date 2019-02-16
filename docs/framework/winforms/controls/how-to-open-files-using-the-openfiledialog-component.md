@@ -18,32 +18,34 @@ To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property re
 
 ## Example: Read a file as a stream with StreamReader  
   
-The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> by using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in a message box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.Read%2A>.  
+The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in a message box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.Read%2A>.  
  
 To build and run the example:
 1. Start a new Windows Forms project named *OpenFileDialogStreamReader*. 
 1. Paste the example code over the contents of the *Form1.cs* or *Form1.vb* code file. 
 1. Add and configure the Form1 button, open file dialog, and button click event handler as follows: 
    - For .NET Framework:
-     1. Use **Designer** view to add a button and an OpenFileDialog to Form1 from the **Toolbox**. 
+     1. Use **Designer** view to add a **Button** and an **OpenFileDialog** to *Form1* from the **Toolbox**. 
      1. For C# only, in *Form1.Designer.cs* under `private void InitializeComponent()`, add the line:
         ```csharp
         this.button1.Click += new System.EventHandler(this.buttonSelect_Click);
         ```
+        
    - For .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
      - In `partial class Form1`, add the line:
         ```csharp
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         ```
-     - In `private void InitializeComponent()`, add the line:
+      - In `private void InitializeComponent()`, add the line:
         ```csharp
         this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
         ```
-     - In `private void InitializeComponent()`, repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to
+     - In `private void InitializeComponent()`, repurpose the existing template button by changing the `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to
         ```csharp
         this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);
         ```
-        Change the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
+        
+        Also change the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
 
 ```csharp  
 using System;
@@ -133,11 +135,12 @@ To build and run the example:
 1. Paste the example code over the contents of the *Form1.cs* or *Form1.vb* code file. 
 1. Add and configure the Form1 button, open file dialog, button click event handler, and background worker as follows: 
    - For .NET Framework:
-     1. Use **Designer** view to add a button, an OpenFileDialog, and a BackgroundWorker component to Form1 from the **Toolbox**. 
+     1. Use **Designer** view to add a **Button**, **OpenFileDialog**, and **BackgroundWorker** to *Form1* from the **Toolbox**. 
      1. For C# only, in *Form1.Designer.cs* under `private void InitializeComponent()`, add the line:
         ```csharp
         this.button1.Click += new System.EventHandler(this.buttonSelect_Click);
         ```
+        
    - For .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
      - In `partial class Form1`, add the lines:
         ```csharp
@@ -149,11 +152,12 @@ To build and run the example:
         this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
         this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
         ```
-     - In `private void InitializeComponent()`, repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to
+     - In `private void InitializeComponent()`, repurpose the existing template button by changing the `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to
         ```csharp
         this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);
         ```
-        And change the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
+        
+        Also change the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
 
 ```csharp
 using System;

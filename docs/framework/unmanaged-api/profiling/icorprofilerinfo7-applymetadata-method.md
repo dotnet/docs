@@ -1,6 +1,6 @@
 ---
 title: "ICorProfilerInfo7::ApplyMetaData Method"
-ms.date: "03/30/2017"
+ms.date: "02/15/2019"
 dev_langs: 
   - "cpp"
 api_name: 

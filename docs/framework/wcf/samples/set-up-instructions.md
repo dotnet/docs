@@ -31,11 +31,8 @@ This set of topics describes how to set up services that are required to run a W
  [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md)  
  Outlines the steps for running the WCF samples on the same machine and across machines.  
   
- [Enabling Peer to Peer Services](https://msdn.microsoft.com/library/e7a0fcf4-b0e5-4b26-a7e3-f0f37b60a1f9)  
- Outlines the steps to install the Windows Peer-to-Peer component, the built-in resolver for peer-to-peer messaging services.  
-  
  [Installing Message Queuing (MSMQ)](../../../../docs/framework/wcf/samples/installing-message-queuing-msmq.md)  
  Outlines the steps to install Message Queuing.  
   
 ## Related Sections  
- [Troubleshooting Tips](https://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b)
+ [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90))

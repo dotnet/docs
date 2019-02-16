@@ -508,7 +508,7 @@ ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,
  For examples relating to the native image service, see [Native Image Service](#native-image-service).  
   
 ## Native Image Task  
- The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. (See [Creating Native Images](https://msdn.microsoft.com/library/2bc8b678-dd8d-4742-ad82-319e9bf52418).) It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.  
+ The native image task is a Windows task that generates and maintains native images. The native image task generates and reclaims native images automatically for supported scenarios. It also enables installers to use [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) to create and update native images at a deferred time.  
   
  The native image task is registered once for each CPU architecture supported on a computer, to allow compilation for applications that target each architecture:  
   

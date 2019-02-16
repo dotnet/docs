@@ -22,8 +22,5 @@ This section contains samples that demonstrate service contracts in Windows Comm
  [Stream](../../../../docs/framework/wcf/samples/stream.md)  
  Demonstrates the use of streaming transfer mode communication.  
   
- [Asynchronous](https://msdn.microsoft.com/library/833db946-f511-4f64-a26f-2759a11217c7)  
- Demonstrates how a client can access a service operation asynchronously and how a service can implement its operations asynchronously.  
-  
  [XmlSerializer Faults](../../../../docs/framework/wcf/samples/xmlserializer-faults.md)  
  Demonstrates how to communicate error information from a service to a client using the <xref:System.Xml.Serialization.XmlSerializer>.

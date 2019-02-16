@@ -624,7 +624,6 @@ ms.author: "ronpet"
 
 <a name="VBCompat"></a>
 ### Assembly: Microsoft.VisualBasic.Compatibility.dll
-  For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://msdn.microsoft.com/library/windows/desktop/ms788229).
   
 |Type|Message|
 |----------|-------------|

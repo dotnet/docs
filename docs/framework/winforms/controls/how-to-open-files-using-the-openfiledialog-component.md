@@ -12,24 +12,38 @@ ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 ---
 # How to: Open files with the OpenFileDialog 
 
-The <xref:System.Windows.Forms.OpenFileDialog> component opens the Windows dialog box for browsing and selecting files. To open and read the selected files, you can use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method, or create an instance of the <xref:System.IO.StreamReader> class. The following code shows examples of both approaches. 
+The <xref:System.Windows.Forms.OpenFileDialog?displayProperty=nameWithType> component opens the Windows dialog box for browsing and selecting files. To open and read the selected files, you can use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method, or create an instance of the <xref:System.IO.StreamReader?displayProperty=nameWithType> class. The following code shows examples of both approaches. 
 
 To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. The examples run a <xref:System.Security.Permissions.FileIOPermission> permission check, and can throw an exception due to insufficient privileges if run in a partial-trust context. For more information, see [Code access security basics](../../../../docs/framework/misc/code-access-security-basics.md).
 
 ## Example: Read a file as a stream with StreamReader  
   
-The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in a message box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.Read%2A>.  
+The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> by using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in a message box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.Read%2A>.  
  
 To build and run the example:
 1. Start a new Windows Forms project named *OpenFileDialogStreamReader*. 
 1. Paste the example code over the contents of the *Form1.cs* or *Form1.vb* code file. 
-1. Add and configure the Form1 button, open file dialog, and button click event handler: 
-   - In .NET Framework, use **Designer** view to add a button and an OpenFileDialog to Form1 from the **Toolbox**. 
-     In *Form1.Designer.cs*, add the line `this.button1.Click += new System.EventHandler(this.buttonSelect_Click);` to `private void InitializeComponent()`.
-   - In .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
-     - Add the line `private System.Windows.Forms.OpenFileDialog openFileDialog1;` to `partial class Form1`.
-     - Add the line `this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();` to `private void InitializeComponent()`.
-     - Repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to `this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);`, and the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
+1. Add and configure the Form1 button, open file dialog, and button click event handler as follows: 
+   - For .NET Framework:
+     1. Use **Designer** view to add a button and an OpenFileDialog to Form1 from the **Toolbox**. 
+     1. For C# only, in *Form1.Designer.cs* under `private void InitializeComponent()`, add the line:
+        ```csharp
+        this.button1.Click += new System.EventHandler(this.buttonSelect_Click);
+        ```
+   - For .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
+     - In `partial class Form1`, add the line:
+        ```csharp
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        ```
+     - In `private void InitializeComponent()`, add the line:
+        ```csharp
+        this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+        ```
+     - In `private void InitializeComponent()`, repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to
+        ```csharp
+        this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);
+        ```
+        Change the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
 
 ```csharp  
 using System;
@@ -112,18 +126,34 @@ End Class
 
 ## Example: Open a file from a filtered selection with OpenFile 
 
-The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with a filter that shows only text files. After the user chooses a text file and selects **OK**, the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method opens the file in Notepad.
+The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with a filter that shows only text files. After the user chooses a text file and selects **OK**, the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method is used to open the file in Notepad.
 
 To build and run the example:
 1. Start a new Windows Forms project named *OpenFileDialogOpenFile*. 
 1. Paste the example code over the contents of the *Form1.cs* or *Form1.vb* code file. 
-1. Add and configure the Form1 button, open file dialog, button click event handler, and background worker: 
-   - In .NET Framework, use **Designer** view to add a button, an OpenFileDialog, and a BackgroundWorker component to Form1 from the **Toolbox**. 
-     In *Form1.Designer.cs*, add the line `this.button1.Click += new System.EventHandler(this.buttonSelect_Click);` to `private void InitializeComponent()`.
-   - In .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
-     - Add the lines `private System.Windows.Forms.OpenFileDialog openFileDialog1;` and `private System.ComponentModel.BackgroundWorker backgroundWorker1;` to `partial class Form1`.
-     - Add the lines `this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();` and `this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();` to `private void InitializeComponent()`.
-     - Repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to `this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);`, and the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
+1. Add and configure the Form1 button, open file dialog, button click event handler, and background worker as follows: 
+   - For .NET Framework:
+     1. Use **Designer** view to add a button, an OpenFileDialog, and a BackgroundWorker component to Form1 from the **Toolbox**. 
+     1. For C# only, in *Form1.Designer.cs* under `private void InitializeComponent()`, add the line:
+        ```csharp
+        this.button1.Click += new System.EventHandler(this.buttonSelect_Click);
+        ```
+   - For .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
+     - In `partial class Form1`, add the lines:
+        ```csharp
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        ```
+     - In `private void InitializeComponent()`, add the lines:
+        ```csharp
+        this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+        this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+        ```
+     - In `private void InitializeComponent()`, repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to
+        ```csharp
+        this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);
+        ```
+        And change the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
 
 ```csharp
 using System;

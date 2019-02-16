@@ -473,7 +473,7 @@
   
  The <xref:System.Numerics.Complex.Atan%2A> method uses the following formula:  
   
- <xref:System.Numerics.Complex.ImaginaryOne> / new Complex(2.0, 0.0)) * (<xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> - <xref:System.Numerics.Complex.ImaginaryOne> * value) - <xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> + ImaginaryOne * value)   
+ (<xref:System.Numerics.Complex.ImaginaryOne> / new Complex(2.0, 0.0)) * (<xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> - <xref:System.Numerics.Complex.ImaginaryOne> * value) - <xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> + ImaginaryOne * value))   
   
    
   

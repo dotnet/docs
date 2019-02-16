@@ -1,5 +1,5 @@
 ---
-title: "How to: Open files by using the OpenFileDialog component"
+title: "How to: Open files with the OpenFileDialog component"
 ms.date: "02/11/2019"
 dev_langs: 
   - "csharp"
@@ -10,102 +10,211 @@ helpviewer_keywords:
   - "files [Windows Forms], opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 ---
-# How to: Open files by using OpenFileDialog 
+# How to: Open files with the OpenFileDialog 
 
-The <xref:System.Windows.Forms.OpenFileDialog> component displays a dialog box for browsing and selecting files to open. You can use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method to open the selected file, or create an instance of the <xref:System.IO.StreamReader> class to read it.  
+The <xref:System.Windows.Forms.OpenFileDialog> component opens the Windows dialog box for browsing and selecting files. To open and read the selected files, you can use the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method, or create an instance of the <xref:System.IO.StreamReader> class. The following code shows examples of both approaches. 
 
-To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. The following examples run a <xref:System.Security.Permissions.FileIOPermission> permission check. If you run them in a partial-trust context, they might throw an exception due to insufficient privileges. For more information, see [Code access security basics](../../../../docs/framework/misc/code-access-security-basics.md).
+To get or set the <xref:System.Windows.Forms.FileDialog.FileName%2A> property requires a privilege level granted by the <xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType> class. The examples run a <xref:System.Security.Permissions.FileIOPermission> permission check, and can throw an exception due to insufficient privileges if run in a partial-trust context. For more information, see [Code access security basics](../../../../docs/framework/misc/code-access-security-basics.md).
 
-The first example gives you access to the filename. You can use this technique from the local, intranet, and internet zones. The second example is better for apps in the intranet or internet zones.  
+## Example: Read a file as a stream with StreamReader  
   
-## Show file contents as a stream with OpenFileDialog and StreamReader  
-  
-The following example uses the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the **Open File** dialog box, and an instance of the <xref:System.IO.StreamReader> class to open the file and display the contents as a stream. 
+The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method. After the user chooses a file and selects **OK**, an instance of the <xref:System.IO.StreamReader> class reads the file and displays its contents in a message box. For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.Read%2A>.  
+ 
+To build and run the example:
+1. Start a new Windows Forms project named *OpenFileDialogStreamReader*. 
+1. Paste the example code over the contents of the *Form1.cs* or *Form1.vb* code file. 
+1. Add and configure the Form1 button, open file dialog, and button click event handler: 
+   - In .NET Framework, use **Designer** view to add a button and an OpenFileDialog to Form1 from the **Toolbox**. 
+     In *Form1.Designer.cs*, add the line `this.button1.Click += new System.EventHandler(this.buttonSelect_Click);` to `private void InitializeComponent()`.
+   - In .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
+     - Add the line `private System.Windows.Forms.OpenFileDialog openFileDialog1;` to `partial class Form1`.
+     - Add the line `this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();` to `private void InitializeComponent()`.
+     - Repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to `this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);`, and the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
 
-The <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens the <xref:System.Windows.Forms.OpenFileDialog>. When the user chooses a file and selects **OK**, <xref:System.IO.StreamReader> opens the file and displays its contents in a message box.  
+```csharp  
+using System;
+using System.IO;
+using System.Windows.Forms;
+using System.Security;
 
-The example assumes your form has a <xref:System.Windows.Forms.Button> control and an <xref:System.Windows.Forms.OpenFileDialog> component.  
-  
-    ```vb  
-    Private Sub Button1_Click(ByVal sender As System.Object, _  
-       ByVal e As System.EventArgs) Handles Button1.Click  
-       If OpenFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then  
-         Dim sr As New System.IO.StreamReader(OpenFileDialog1.FileName)  
-         MessageBox.Show(sr.ReadToEnd)  
-         sr.Close()  
-       End If  
-    End Sub  
-    ```  
-  
-    ```csharp  
-    private void button1_Click(object sender, System.EventArgs e)  
-    {  
-       if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)  
-       {  
-          System.IO.StreamReader sr = new   
-             System.IO.StreamReader(openFileDialog1.FileName);  
-          MessageBox.Show(sr.ReadToEnd());  
-          sr.Close();  
-       }  
-    }  
-    ```  
+namespace OpenFileDialogStreamReader
+{
+    public partial class Form1 : Form
+    {
+        public Form1() => InitializeComponent();
 
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
-  
-    ```csharp  
-    this.button1.Click += new System.EventHandler(this.button1_Click);  
-    ```  
-For more information about reading from file streams, see <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.Read%2A>.  
-  
-## Open a file from a filtered list with OpenFileDialog  
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+        private void InitializeOpenFileDialog()
+        {
+        }
+        private void SelectFileButton_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    StreamReader sr = new StreamReader(openFileDialog1.FileName);
+                    MessageBox.Show(sr.ReadToEnd(), "File contents:", MessageBoxButtons.OK);
+                }
+                catch (SecurityException ex)
+                {
+                    MessageBox.Show("Security error.\n\n" +
+                        "Error message: " + ex.Message + "\n\n" +
+                        "Details:\n\n" + ex.StackTrace);
+                }
+            }
+        }
+    }
+}
 
-The following example uses the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box and the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method to open the file. The <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method returns the bytes that compose the file and give you a stream to read from. In the example, the <xref:System.Windows.Forms.OpenFileDialog> component is instantiated with a "cursor" filter on it, showing only files with the file name extension *.cur*. If a`.cur` file is chosen, the form's cursor is set to the selected cursor.  
+```  
 
-     The example assumes your form has a <xref:System.Windows.Forms.Button> control.  
-  
-    ```vb  
-    Private Sub Button1_Click(ByVal sender As System.Object, _  
-       ByVal e As System.EventArgs) Handles Button1.Click  
-       ' Displays an OpenFileDialog so the user can select a Cursor.  
-       Dim openFileDialog1 As New OpenFileDialog()  
-       openFileDialog1.Filter = "Cursor Files|*.cur"  
-       openFileDialog1.Title = "Select a Cursor File"  
-  
-       ' Show the Dialog.  
-       ' If the user clicked OK in the dialog and   
-       ' a .CUR file was selected, open it.  
-       If openFileDialog1.ShowDialog() = System.Windows.Forms.DialogResult.OK Then  
-         ' Assign the cursor in the Stream to the Form's Cursor property.  
-         Me.Cursor = New Cursor(openFileDialog1.OpenFile())  
-       End If  
-    End Sub  
-    ```  
-  
-    ```csharp  
-    private void button1_Click(object sender, System.EventArgs e)  
-    {  
-       // Displays an OpenFileDialog so the user can select a Cursor.  
-       OpenFileDialog openFileDialog1 = new OpenFileDialog();  
-       openFileDialog1.Filter = "Cursor Files|*.cur";  
-       openFileDialog1.Title = "Select a Cursor File";  
-  
-       // Show the Dialog.  
-       // If the user clicked OK in the dialog and  
-       // a .CUR file was selected, open it.  
-        if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)  
-       {  
-          // Assign the cursor in the Stream to the Form's Cursor property.  
-          this.Cursor = new Cursor(openFileDialog1.OpenFile());  
-       }  
-    }  
-    ```  
-  
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
-  
-    ```csharp  
-    this.button1.Click += new System.EventHandler(this.button1_Click);  
-    ```  
-  
+```vb  
+Imports System.ComponentModel
+Imports System.IO
+Imports System.Security
+
+Public Class Form1
+
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
+    Public Sub New(components As IContainer, button1 As Button, openFileDialog1 As OpenFileDialog)
+        Me.components = components
+        Me.Button1 = button1
+        Me.OpenFileDialog1 = openFileDialog1
+    End Sub
+
+    Public Sub InitializeOpenFileDialog()
+    End Sub
+
+    Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+        InitializeOpenFileDialog()
+    End Sub
+
+    Private Sub SelectFileButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            Try
+                Dim sr As New StreamReader(OpenFileDialog1.FileName)
+                MessageBox.Show(sr.ReadToEnd(), "File contents:", MessageBoxButtons.OK)
+            Catch SecEx As SecurityException
+                MessageBox.Show("Security error. Please contact your administrator for details.\n\n" &
+                    "Error message: " & SecEx.Message & "\n\n" &
+                    "Details (send to Support):\n\n" & SecEx.StackTrace)
+            End Try
+        End If
+    End Sub
+End Class
+```  
+
+## Example: Open a file from a filtered selection with OpenFile 
+
+The following example uses a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler to open the <xref:System.Windows.Forms.OpenFileDialog> with a filter that shows only text files. After the user chooses a text file and selects **OK**, the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method opens the file in Notepad.
+
+To build and run the example:
+1. Start a new Windows Forms project named *OpenFileDialogOpenFile*. 
+1. Paste the example code over the contents of the *Form1.cs* or *Form1.vb* code file. 
+1. Add and configure the Form1 button, open file dialog, button click event handler, and background worker: 
+   - In .NET Framework, use **Designer** view to add a button, an OpenFileDialog, and a BackgroundWorker component to Form1 from the **Toolbox**. 
+     In *Form1.Designer.cs*, add the line `this.button1.Click += new System.EventHandler(this.buttonSelect_Click);` to `private void InitializeComponent()`.
+   - In .NET Core 3.0, add and change the following lines in *Form1.Designer.cs*:
+     - Add the lines `private System.Windows.Forms.OpenFileDialog openFileDialog1;` and `private System.ComponentModel.BackgroundWorker backgroundWorker1;` to `partial class Form1`.
+     - Add the lines `this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();` and `this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();` to `private void InitializeComponent()`.
+     - Repurpose the existing template button by changing the line `this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);` to `this.buttonExit.Click += new System.EventHandler(this.SelectFileButton_Click);`, and the line `this.buttonExit.Text = "E&xit";` to `this.buttonExit.Text = "S&elect file";`.
+
+```csharp
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
+using System.Security;
+
+namespace OpenFileDialogOpenFile
+{
+    public partial class Form1 : Form
+    {
+        public Form1() => InitializeComponent();
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+        private void InitializeOpenFileDialog()
+        {
+        }
+        private void SelectFileButton_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.FileName = "Select a text file";
+            openFileDialog1.Filter = "Text files (*.txt)|*.txt";
+            openFileDialog1.Title = "Open text file";
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    var filePath = openFileDialog1.FileName;
+                    using (FileStream fs = File.Open(filePath, FileMode.Open))
+                    {
+                        Process.Start("notepad.exe", filePath);
+                    }
+                 }
+                catch (SecurityException ex)
+                {
+                    MessageBox.Show("Security error.\n\n" +
+                        "Error message: " + ex.Message + "\n\n" +
+                        "Details:\n\n" + ex.StackTrace
+                    );
+                }
+            }
+        }
+    }
+}
+```
+
+```vb
+Imports System.ComponentModel
+Imports System.IO
+Imports System.Security
+
+Public Class Form1
+
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
+    Public Sub New(components As IContainer, Button1 As Button, OpenFileDialog1 As OpenFileDialog, BackgroundWorker1 As BackgroundWorker)
+        Me.components = components
+        Me.Button1 = Button1
+        Me.OpenFileDialog1 = OpenFileDialog1
+        Me.BackgroundWorker1 = BackgroundWorker1
+    End Sub
+
+    Public Sub InitializeOpenFileDialog()
+    End Sub
+
+    Public Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+        OpenFileDialog1.FileName = "Select a text file"
+        OpenFileDialog1.Filter = "Text files (*.txt)|*.txt"
+        OpenFileDialog1.Title = "Open text file"
+    End Sub
+
+    Private Sub SelectFileButton_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            Try
+                Dim filePath = OpenFileDialog1.FileName
+                Dim fs As FileStream = New FileStream(filePath, FileMode.Open)
+                Process.Start("notepad.exe", filePath)
+            Catch SecEx As SecurityException
+                MessageBox.Show("Security error. Please contact your administrator for details.\n\n" &
+                    "Error message: " & SecEx.Message & "\n\n" &
+                    "Details (send to Support):\n\n" & SecEx.StackTrace)
+            End Try
+        End If
+    End Sub
+End Class
+```
+
 ## See also
 - <xref:System.Windows.Forms.OpenFileDialog>
 - [OpenFileDialog component](../../../../docs/framework/winforms/controls/openfiledialog-component-windows-forms.md)

@@ -19,7 +19,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumInterfaceImpls Method
-Enumerates MethodDef tokens representing interface implementations.  
+Enumerates all interfaces implemented by the specified TypeDef. 
   
 ## Syntax  
   
@@ -55,6 +55,10 @@ HRESULT EnumInterfaceImpls (
 |-------------|-----------------|  
 |`S_OK`|`EnumInterfaceImpls` returned successfully.|  
 |`S_FALSE`|There are no MethodDef tokens to enumerate. In that case, `pcImpls` is set to zero.|  
+
+## Remarks
+
+The enumeration returns a collection of `mdInterfaceImpl` tokens for each interface implemented by the specified **TypeDef**. Interface tokens will be returned in the order the interfaces were specified (through **DefineTypeDef** or **SetTypeDefProps**). Properties of the returned `mdInterfaceImpl` tokens can be queried using **GetInterfaceImplProps**.
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
